@@ -1163,18 +1163,20 @@ export function listingViewCountByLocale(
   return listing[VIEW_COUNT_FIELD_BY_LOCALE[locale]];
 }
 
-// The business-portal listing cards' full per-language parenthetical,
-// including a trailing "Earlier" bucket for the pre-migration gap described
-// above — so what's shown always sums to the same viewCount it's breaking
-// down, instead of visibly falling short on any listing old enough to have
-// accrued views before per-locale tracking existed.
+// The business-portal listing cards' per-language breakdown, one real
+// entry per locale — never a padded/inferred "the rest" bucket. Its own
+// sum is what those cards show as the listing's total view count (see
+// callers), deliberately *not* the older, single viewCount column: that
+// column also holds views from before per-locale tracking existed, which
+// there's no record of a language for, so folding it back in would mean
+// either a total that (again) doesn't match its own breakdown, or
+// inventing a per-language split for views nobody actually attributed.
+// viewCount itself is kept only for the public listing page's own
+// separate all-time "N views" line, which isn't broken down by language.
 export function listingViewCountBreakdown(
-  listing: { viewCount: number; viewCountEn: number; viewCountZh: number; viewCountMs: number },
-): { label: string; count: number }[] {
-  const perLocale = DIRECTORY_LOCALES.map(({ code, label }) => ({ label, count: listingViewCountByLocale(listing, code) }));
-  const tracked = perLocale.reduce((sum, { count }) => sum + count, 0);
-  const untracked = listing.viewCount - tracked;
-  return untracked > 0 ? [...perLocale, { label: "Earlier", count: untracked }] : perLocale;
+  listing: { viewCountEn: number; viewCountZh: number; viewCountMs: number },
+): { locale: DirectoryLocale; label: string; count: number }[] {
+  return DIRECTORY_LOCALES.map(({ code, label }) => ({ locale: code, label, count: listingViewCountByLocale(listing, code) }));
 }
 
 // Explicit creation — unlike the old single-listing ensurePartnerListing

@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import Link from "next/link";
 import { ExternalLink, Eye, Inbox, Handshake, Plus, Store, ThumbsUp, Trophy, Wallet } from "lucide-react";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
@@ -70,6 +71,8 @@ export default async function PartnerOverviewPage() {
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {listings.map((listing) => {
                 const publicUrl = listing.publishedSnapshot ? `${siteOrigin}${directoryListingPath("en", listing.slug)}` : null;
+                const viewBreakdown = listingViewCountBreakdown(listing);
+                const trackedViewCount = viewBreakdown.reduce((sum, { count }) => sum + count, 0);
                 return (
                   <Card key={listing.id}>
                     <CardBody className="space-y-3">
@@ -101,13 +104,23 @@ export default async function PartnerOverviewPage() {
                           <span className="inline-flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-slate-500 dark:text-slate-400">
                             <span className="inline-flex items-center gap-1">
                               <Eye className="h-3.5 w-3.5" />
-                              {listing.viewCount.toLocaleString()} view{listing.viewCount === 1 ? "" : "s"}
+                              {trackedViewCount.toLocaleString()} view{trackedViewCount === 1 ? "" : "s"}
                             </span>
                             <span className="text-xs text-slate-400 dark:text-slate-500">
                               (
-                              {listingViewCountBreakdown(listing)
-                                .map(({ label, count }) => `${label} ${count.toLocaleString()}`)
-                                .join(" · ")}
+                              {viewBreakdown.map(({ locale, label, count }, i) => (
+                                <Fragment key={locale}>
+                                  {i > 0 && " · "}
+                                  <Link
+                                    href={`${siteOrigin}${directoryListingPath(locale, listing.slug)}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-petrol hover:underline dark:hover:text-petrol-light"
+                                  >
+                                    {label} {count.toLocaleString()}
+                                  </Link>
+                                </Fragment>
+                              ))}
                               )
                             </span>
                           </span>
