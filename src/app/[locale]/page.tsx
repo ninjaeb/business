@@ -9,7 +9,6 @@ import {
   directoryHomePath,
   type DirectoryLocale,
 } from "@/lib/directory-i18n";
-import { translateCategoryName } from "@/lib/directory-category-labels";
 import { DIRECTORY_HOME_COPY } from "@/lib/directory-home-copy";
 import {
   DIRECTORY_ROBOTS,
@@ -166,7 +165,6 @@ export default async function DirectoryHomePage({
       <DirectorySearch
         listings={listings}
         industryLabels={INDUSTRY_LABELS_BY_LOCALE[resolved]}
-        categories={businessCategories.map((row) => ({ value: row.name, label: translateCategoryName(row.name, resolved) }))}
         t={t}
         locale={resolved}
         initialQuery={q ?? ""}
