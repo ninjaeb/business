@@ -18,11 +18,22 @@ import {
   buildLanguageAlternates,
   directoryShareImage,
 } from "@/lib/directory-seo";
+import { stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
 import { Card, CardBody } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ListingLogo } from "@/components/directory/listing-logo";
 import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
 import { EmptyState } from "@/components/ui/empty-state";
+
+// Same dateline formatting as the listing page's own updates card (see
+// formatUpdatePostedAt in src/app/[locale]/[slug]/page.tsx) — kept as its
+// own tiny copy rather than a shared export, since it's a one-line
+// Intl.DateTimeFormat call with nothing else to factor out.
+function formatUpdatePostedAt(postedAt: string, locale: DirectoryLocale): string {
+  return new Intl.DateTimeFormat(locale, { month: "short", day: "numeric", year: "numeric" }).format(
+    new Date(`${postedAt}T00:00:00`),
+  );
+}
 
 // A directory-wide feed of every still-current update (news post, or
 // promotion that hasn't ended) across published listings — sources the same
@@ -88,6 +99,12 @@ export async function NewsFeedContent({ locale }: { locale: DirectoryLocale }) {
           <ul className="mt-6 space-y-3">
             {entries.map((entry, index) => (
               <li key={`${entry.listingSlug}-${index}`}>
+                {/* A plain-text preview, not the full renderMarkdownLite body
+                    — the whole card is itself a Link to the listing page, and
+                    a partner's post can embed its own [text](url) link, which
+                    would otherwise nest an <a> inside this one. The full
+                    formatted post (bold/lists/images) is what the listing
+                    page's own updates card renders. */}
                 <Link href={directoryListingPath(locale, entry.listingSlug)} className="block">
                   <Card className="transition-colors hover:border-petrol/40 dark:hover:border-petrol-light/30">
                     <CardBody className="space-y-2">
@@ -106,8 +123,15 @@ export async function NewsFeedContent({ locale }: { locale: DirectoryLocale }) {
                           {entry.update.kind === "PROMOTION" ? t.promotionLabel : t.newsLabel}
                         </Badge>
                         <h2 className="text-base font-semibold text-slate-900 dark:text-slate-100">{entry.update.title}</h2>
+                        {entry.update.postedAt && (
+                          <time dateTime={entry.update.postedAt} className="text-xs text-slate-400">
+                            {formatUpdatePostedAt(entry.update.postedAt, locale)}
+                          </time>
+                        )}
                       </div>
-                      <p className="whitespace-pre-wrap text-sm text-slate-600 dark:text-slate-300">{entry.update.body}</p>
+                      <p className="line-clamp-3 text-sm text-slate-600 dark:text-slate-300">
+                        {stripMarkdownLiteToPlainText(entry.update.body)}
+                      </p>
                     </CardBody>
                   </Card>
                 </Link>

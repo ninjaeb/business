@@ -46,6 +46,7 @@ import {
 } from "@/lib/directory-i18n";
 import { translateCategoryName, categoryPath } from "@/lib/directory-category-labels";
 import { locationPath } from "@/lib/directory-location-labels";
+import { industryPath } from "@/lib/directory-industry-labels";
 import { getSiteOrigin } from "@/lib/site-url";
 import { INDUSTRY_LABELS } from "@/lib/labels";
 import { cn } from "@/lib/utils";
@@ -448,7 +449,7 @@ export default async function DirectoryListingPage({
                 {(listing.industry || listing.categories.length > 0) && (
                   <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
                     {listing.industry && (
-                      <Link href={`${directoryHomePath(resolved)}?industry=${listing.industry}`}>
+                      <Link href={industryPath(listing.industry, resolved)}>
                         <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
                           {INDUSTRY_LABELS_BY_LOCALE[resolved][listing.industry]}
                         </Badge>
@@ -532,7 +533,7 @@ export default async function DirectoryListingPage({
             {(listing.industry || listing.categories.length > 0) && (
               <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
                 {listing.industry && (
-                  <Link href={`${directoryHomePath(resolved)}?industry=${listing.industry}`}>
+                  <Link href={industryPath(listing.industry, resolved)}>
                     <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
                       {INDUSTRY_LABELS_BY_LOCALE[resolved][listing.industry]}
                     </Badge>
