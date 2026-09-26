@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { Play } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Play, X } from "lucide-react";
 import { VIDEO_CATEGORIES, type VideoCategory } from "@/lib/labels";
 
 export type GalleryVideo = {
@@ -13,40 +13,29 @@ export type GalleryVideo = {
   embedUrl: string | null;
 };
 
-// One playing video at a time, keyed by its position in the original
-// (ungrouped) `videos` array — stable across grouping below, so Play always
-// swaps the right card regardless of which category section it landed in.
+// A thumbnail card — clicking one with an embed opens the lightbox below
+// rather than swapping in an inline iframe, so playing a video never
+// reflows the grid around it. A video with no embed (oEmbed had none, or
+// timed out — see fetchVideoOEmbed) falls back to a plain "Watch video"
+// link instead of a blank box.
 function VideoCard({
   video,
-  index,
-  companyName,
-  playingIndex,
-  onPlay,
+  title,
+  onOpen,
   showCategoryBadge,
 }: {
   video: GalleryVideo;
-  index: number;
-  companyName: string;
-  playingIndex: number | null;
-  onPlay: (index: number) => void;
+  title: string;
+  onOpen: () => void;
   showCategoryBadge: boolean;
 }) {
-  const title = video.title || companyName;
   return (
     <div className="space-y-1.5">
       <div className="relative aspect-video overflow-hidden rounded-md bg-slate-100 dark:bg-neutral-800">
-        {playingIndex === index && video.embedUrl ? (
-          <iframe
-            title={title}
-            src={`${video.embedUrl}${video.embedUrl.includes("?") ? "&" : "?"}autoplay=1`}
-            className="h-full w-full border-0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        ) : video.embedUrl ? (
+        {video.embedUrl ? (
           <button
             type="button"
-            onClick={() => onPlay(index)}
+            onClick={onOpen}
             className="group absolute inset-0 flex items-center justify-center"
             aria-label={`Play ${title}`}
           >
@@ -82,14 +71,54 @@ function VideoCard({
   );
 }
 
+// The lightbox itself — one live iframe at a time (autoplay), over the
+// page, closed via Escape/backdrop-click/X. Not a gallery of its own (no
+// Prev/Next between videos): each thumbnail opens straight to its own
+// video, which is all a click on a specific card should do.
+function VideoLightbox({ video, title, onClose }: { video: GalleryVideo; title: string; onClose: () => void }) {
+  useEffect(() => {
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") onClose();
+    }
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [onClose]);
+
+  if (!video.embedUrl) return null;
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+      role="dialog"
+      aria-modal="true"
+      aria-label={title}
+      onClick={onClose}
+    >
+      <button
+        type="button"
+        onClick={onClose}
+        className="absolute right-4 top-4 rounded-full p-2 text-white/80 hover:bg-white/10 hover:text-white"
+        aria-label="Close"
+      >
+        <X className="h-6 w-6" />
+      </button>
+      <div className="aspect-video w-full max-w-4xl" onClick={(event) => event.stopPropagation()}>
+        <iframe
+          title={title}
+          src={`${video.embedUrl}${video.embedUrl.includes("?") ? "&" : "?"}autoplay=1`}
+          className="h-full w-full rounded-md border-0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </div>
+    </div>
+  );
+}
+
 // Renders thumbnails, not N live third-party players at once — a gallery of
 // several embedded YouTube/Vimeo/etc. iframes all loading on page load is
 // exactly the kind of thing that tanks a page's Core Web Vitals (and so its
 // search ranking), on top of the extra weight for a visitor who never plays
-// any of them. Clicking a thumbnail swaps just that one card for its real
-// iframe, with autoplay — the common "lite embed" pattern. A video with no
-// thumbnail (oEmbed didn't have one, or timed out — see fetchVideoOEmbed)
-// falls back to a plain "Watch video" link instead of a blank box.
+// any of them.
 //
 // Grouped into a heading per category (Overview, Tour, Testimonial, …), in
 // VIDEO_CATEGORIES' own declared order, only once a listing actually has 2+
@@ -100,55 +129,47 @@ function VideoCard({
 // section heading, so it's dropped in the grouped case and kept in the
 // flat one.
 export function VideoGallery({ videos, companyName }: { videos: GalleryVideo[]; companyName: string }) {
-  const [playingIndex, setPlayingIndex] = useState<number | null>(null);
-  const indexed = videos.map((video, index) => ({ video, index }));
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  // A video with no title of its own (partner left it blank) shows the
+  // company name instead — resolved once here rather than in both VideoCard
+  // and VideoLightbox.
+  const indexed = videos.map((video, index) => ({ video, index, title: video.title || companyName }));
   const distinctCategories = new Set(videos.map((entry) => entry.category)).size;
 
-  if (distinctCategories <= 1) {
-    return (
+  const gallery =
+    distinctCategories <= 1 ? (
       <div className="grid gap-4 sm:grid-cols-2">
-        {indexed.map(({ video, index }) => (
-          <VideoCard
-            key={index}
-            video={video}
-            index={index}
-            companyName={companyName}
-            playingIndex={playingIndex}
-            onPlay={setPlayingIndex}
-            showCategoryBadge
-          />
+        {indexed.map(({ video, index, title }) => (
+          <VideoCard key={index} video={video} title={title} onOpen={() => setOpenIndex(index)} showCategoryBadge />
         ))}
       </div>
+    ) : (
+      <div className="space-y-5">
+        {VIDEO_CATEGORIES.map((category) => {
+          const items = indexed.filter(({ video }) => video.category === category);
+          if (items.length === 0) return null;
+          return (
+            <div key={category}>
+              <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500">
+                {items[0].video.categoryLabel}
+              </h4>
+              <div className="grid gap-4 sm:grid-cols-2">
+                {items.map(({ video, index, title }) => (
+                  <VideoCard key={index} video={video} title={title} onOpen={() => setOpenIndex(index)} showCategoryBadge={false} />
+                ))}
+              </div>
+            </div>
+          );
+        })}
+      </div>
     );
-  }
-
-  const groups = VIDEO_CATEGORIES.map((category) => ({
-    category,
-    items: indexed.filter(({ video }) => video.category === category),
-  })).filter((group) => group.items.length > 0);
 
   return (
-    <div className="space-y-5">
-      {groups.map((group) => (
-        <div key={group.category}>
-          <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500">
-            {group.items[0].video.categoryLabel}
-          </h4>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {group.items.map(({ video, index }) => (
-              <VideoCard
-                key={index}
-                video={video}
-                index={index}
-                companyName={companyName}
-                playingIndex={playingIndex}
-                onPlay={setPlayingIndex}
-                showCategoryBadge={false}
-              />
-            ))}
-          </div>
-        </div>
-      ))}
-    </div>
+    <>
+      {gallery}
+      {openIndex !== null && (
+        <VideoLightbox video={indexed[openIndex].video} title={indexed[openIndex].title} onClose={() => setOpenIndex(null)} />
+      )}
+    </>
   );
 }
