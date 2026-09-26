@@ -205,3 +205,16 @@ export function stripMarkdownLiteToPlainText(text: string | null | undefined): s
     .replace(/\s*\n+\s*/g, " ")
     .trim();
 }
+
+// Trims to at most maxLength characters without cutting a word in half —
+// for the meta description/JSON-LD fallback when a listing hasn't set its
+// own seoDescription, so that fallback never ends mid-word the way a plain
+// text.slice(0, n) would. Appends an ellipsis only when it actually
+// truncated something.
+export function truncateAtWordBoundary(text: string, maxLength: number): string {
+  if (text.length <= maxLength) return text;
+  const clipped = text.slice(0, maxLength);
+  const lastSpace = clipped.lastIndexOf(" ");
+  const trimmed = (lastSpace > 0 ? clipped.slice(0, lastSpace) : clipped).trimEnd();
+  return `${trimmed}…`;
+}

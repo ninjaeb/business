@@ -17,6 +17,7 @@ import { Button } from "@/components/ui/button";
 import { ConfirmSubmitButton } from "@/components/ui/confirm-submit-button";
 import { ListingLogo } from "@/components/directory/listing-logo";
 import { DirectoryApprovalSettingsForm } from "@/components/directory/directory-approval-settings-form";
+import { SeoBackfillForm } from "@/components/directory/seo-backfill-form";
 import { EmailSettingsForm } from "@/components/settings/email-settings-form";
 import { WhatsAppSettingsForm } from "@/components/settings/whatsapp-settings-form";
 import {
@@ -59,12 +60,21 @@ function formatOperatingHoursPreview(value: unknown): string[] {
 // own Settings → Team.
 export default async function AdminDirectoryPage() {
   await requireAdmin();
-  const [stats, currency, approvalMode, emailSettings, whatsAppSettings, pendingListings, allListings, partners, businessCategories, recentLeads] = await Promise.all([
+  const [stats, currency, approvalMode, emailSettings, whatsAppSettings, missingSeoCount, pendingListings, allListings, partners, businessCategories, recentLeads] = await Promise.all([
     getDirectoryOverviewStats(),
     getCurrency(),
     getDirectoryApprovalMode(),
     getEmailSettings(),
     getWhatsAppSettings(),
+    // For the SEO metadata card below — how many live listings still have
+    // no seoTitle/seoDescription of their own (see backfillListingSeoMeta's
+    // own comment in src/app/actions/directory.ts).
+    db.partnerListing.count({
+      where: {
+        status: "PUBLISHED",
+        OR: [{ seoTitle: null }, { seoTitle: "" }, { seoDescription: null }, { seoDescription: "" }],
+      },
+    }),
     db.partnerListing.findMany({
       where: { status: "PENDING_REVIEW" },
       orderBy: { submittedAt: "asc" },
@@ -159,6 +169,15 @@ export default async function AdminDirectoryPage() {
               }
             }
           />
+        </CardBody>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>SEO metadata</CardTitle>
+        </CardHeader>
+        <CardBody>
+          <SeoBackfillForm missingCount={missingSeoCount} />
         </CardBody>
       </Card>
 

@@ -44,6 +44,7 @@ import {
   type ListingTranslations,
   type ListingUpdateEntry,
   type OperatingHours,
+  type PhotoEntry,
   type ServiceEntry,
   type VideoEntry,
 } from "@/lib/directory";
@@ -65,6 +66,7 @@ import { DIRECTORY_LEAD_STATUSES, INDUSTRIES, INDUSTRY_LABELS } from "@/lib/labe
 import { getDirectoryApprovalMode, setDirectoryApprovalMode } from "@/lib/settings";
 import { Prisma, type DirectoryApprovalMode, type DirectoryLeadStatus, type Industry } from "@/generated/prisma/client";
 import { AI_NOT_CONFIGURED, callAi, isAiConfigured, type AiResult } from "@/lib/ai/client";
+import { MAX_SEO_DESCRIPTION_LENGTH, MAX_SEO_TITLE_LENGTH, servicesContextText } from "@/lib/listing-seo-limits";
 
 // ---------------------------------------------------------------------------
 // Public
@@ -195,8 +197,8 @@ const listingSchema = z.object({
   address: z.string().trim().optional(),
   state: z.string().trim().optional(),
   country: z.string().trim().optional(),
-  seoTitle: z.string().trim().max(100).optional(),
-  seoDescription: z.string().trim().max(300).optional(),
+  seoTitle: z.string().trim().max(MAX_SEO_TITLE_LENGTH).optional(),
+  seoDescription: z.string().trim().max(MAX_SEO_DESCRIPTION_LENGTH).optional(),
 });
 
 export type ListingFormValues = {
@@ -440,6 +442,38 @@ const SeoMetaSchema = z.object({
 const LISTING_SEO_SYSTEM_PROMPT =
   "You write SEO title tags and meta descriptions for a business's page on a public partner directory — the text search engines show as the blue link and snippet, and what a social platform shows when the page's link is shared. Ground everything only in what's given — never invent client names, numbers, awards, or claims that aren't present. Specific and inviting, not generic marketing filler ('Welcome to our website'). The title and description should complement each other, not repeat the same sentence twice.";
 
+// Shared by generateListingSeoMeta (partner-gated, below) and
+// backfillListingSeoMeta (admin-gated, near the other admin actions) — the
+// AI call itself has nothing to do with who's allowed to trigger it, only
+// the two callers' own auth checks differ. Always clips to the same
+// MAX_SEO_TITLE_LENGTH/MAX_SEO_DESCRIPTION_LENGTH the save action's Zod
+// schema enforces, since the model's "ideally 50-60/140-160 characters"
+// instruction is a request, not a guarantee — without this, an occasional
+// longer response would otherwise fail validation the moment it's saved.
+async function generateSeoMetaCore(
+  current: { title: string; description: string },
+  context: { companyName: string; industry: string; description: string; services: string },
+): Promise<AiResult<{ title: string; description: string }>> {
+  if (!isAiConfigured()) return AI_NOT_CONFIGURED;
+
+  const contextLines = listingContextLines({ ...context, otherField: context.services }, "Services offered");
+  const aboutLine = context.description.trim() ? `About us text: ${context.description.trim()}` : "";
+  const hasCurrent = current.title.trim() || current.description.trim();
+  const prompt = hasCurrent
+    ? `${contextLines}\n${aboutLine}\n\nCurrent SEO title: ${current.title.trim() || "(none set)"}\nCurrent SEO description: ${current.description.trim() || "(none set)"}\n\nImprove both — clearer, more compelling, better matched to each other — without inventing new claims.`
+    : `${contextLines}\n${aboutLine}\n\nWrite an SEO title and meta description for this company's page on the Gotka business directory, based only on the information above.`;
+
+  const result = await callAi(SeoMetaSchema, LISTING_SEO_SYSTEM_PROMPT, prompt);
+  if (result.status !== "ok") return result;
+  return {
+    status: "ok",
+    data: {
+      title: result.data.title.trim().slice(0, MAX_SEO_TITLE_LENGTH),
+      description: result.data.description.trim().slice(0, MAX_SEO_DESCRIPTION_LENGTH),
+    },
+  };
+}
+
 // Partner-gated — called from the "Generate with AI" button next to the
 // listing editor's Search & social preview fields. Writes both together in
 // one call since a good title and description are written as a matched
@@ -450,16 +484,7 @@ export async function generateListingSeoMeta(
   context: { companyName: string; industry: string; description: string; services: string },
 ): Promise<AiResult<{ title: string; description: string }>> {
   await requirePartnerAction();
-  if (!isAiConfigured()) return AI_NOT_CONFIGURED;
-
-  const contextLines = listingContextLines({ ...context, otherField: context.services }, "Services offered");
-  const aboutLine = context.description.trim() ? `About us text: ${context.description.trim()}` : "";
-  const hasCurrent = current.title.trim() || current.description.trim();
-  const prompt = hasCurrent
-    ? `${contextLines}\n${aboutLine}\n\nCurrent SEO title: ${current.title.trim() || "(none set)"}\nCurrent SEO description: ${current.description.trim() || "(none set)"}\n\nImprove both — clearer, more compelling, better matched to each other — without inventing new claims.`
-    : `${contextLines}\n${aboutLine}\n\nWrite an SEO title and meta description for this company's page on the Gotka business directory, based only on the information above.`;
-
-  return callAi(SeoMetaSchema, LISTING_SEO_SYSTEM_PROMPT, prompt);
+  return generateSeoMetaCore(current, context);
 }
 
 const FaqListSchema = z.object({
@@ -574,11 +599,6 @@ export async function translateListingContent(current: {
 const MAX_PLACE_QUERY_LENGTH = 200;
 const MAX_AUTO_CATEGORIES = 5;
 const MAX_TAGLINE_LENGTH = 140;
-// Same caps listingSchema itself enforces on save (seoTitle/seoDescription
-// above) — clipped here too so a save right after AI Auto Create, with
-// nothing edited by hand, never trips that validation.
-const MAX_SEO_TITLE_LENGTH = 100;
-const MAX_SEO_DESCRIPTION_LENGTH = 300;
 
 const PLACES_NOT_CONFIGURED: AiResult<never> = {
   status: "error",
@@ -1203,6 +1223,22 @@ export async function replyToDirectoryLead(
 // Admin side
 // ---------------------------------------------------------------------------
 
+// Shared by publishListing and backfillListingSeoMeta below — loads this
+// listing's own photos in photoIds order (the query result isn't
+// guaranteed to come back in that order, so it's reordered to match rather
+// than trusted as-is, same reasoning as everywhere else in this file that
+// reorders a findMany by a caller-owned id list).
+async function loadListingPhotosInOrder(photoIds: string[]): Promise<PhotoEntry[]> {
+  const photoRows = photoIds.length
+    ? await db.directoryListingImage.findMany({
+        where: { id: { in: photoIds } },
+        select: { id: true, caption: true },
+      })
+    : [];
+  const photosById = new Map(photoRows.map((row) => [row.id, row.caption ?? ""]));
+  return photoIds.filter((photoId) => photosById.has(photoId)).map((photoId) => ({ id: photoId, caption: photosById.get(photoId)! }));
+}
+
 // Builds and attaches the published snapshot — shared by the admin's own
 // Approve button below and submitDirectoryListingForReview's own
 // self-approval path above, whichever one decides a listing goes live.
@@ -1214,20 +1250,7 @@ async function publishListing(id: string) {
     where: { id },
     include: { categories: { include: { category: true } }, partner: { select: { timezone: true } } },
   });
-  // photoIds is the order of record; the query result isn't guaranteed to
-  // come back in that order, so it's reordered to match rather than trusted
-  // as-is (same reasoning as everywhere else in this file that reorders a
-  // findMany by a caller-owned id list).
-  const photoRows = listing.photoIds.length
-    ? await db.directoryListingImage.findMany({
-        where: { id: { in: listing.photoIds } },
-        select: { id: true, caption: true },
-      })
-    : [];
-  const photosById = new Map(photoRows.map((row) => [row.id, row.caption ?? ""]));
-  const photos = listing.photoIds
-    .filter((photoId) => photosById.has(photoId))
-    .map((photoId) => ({ id: photoId, caption: photosById.get(photoId)! }));
+  const photos = await loadListingPhotosInOrder(listing.photoIds);
 
   const published = await db.partnerListing.update({
     where: { id },
@@ -1330,6 +1353,84 @@ export async function unpublishDirectoryListing(id: string): Promise<void> {
     ...directoryProductsUrls(),
     ...directoryNewsUrls(),
   ]);
+}
+
+export type SeoBackfillState = { error: string } | { success: true; updated: number; failed: number } | undefined;
+
+// Admin-only — the "Generate…" button on the admin page's own SEO metadata
+// card. seoTitle/seoDescription (PartnerListing.seoTitle/seoDescription in
+// schema.prisma) start out empty and are otherwise only ever filled in by a
+// partner who opens the Search & social preview box and clicks "Generate
+// with AI" or types their own — most listings never get that far, and fall
+// back at request time to a generic "{CompanyName} | Business Directory"
+// title and a raw slice of the About text (see generateMetadata in
+// src/app/[locale]/[slug]/page.tsx) instead of anything actually written
+// for search engines or AI answer engines. This runs the same AI generator
+// (generateSeoMetaCore) against every PUBLISHED listing missing either
+// field, straight from its own content — same as if the partner had
+// clicked the button themselves — and refreshes its live publishedSnapshot
+// in place without touching status/publishedAt/reviewedAt, since this
+// isn't a new review cycle, just filling in metadata the listing was
+// already approved with. A listing an AI call fails for (rate limit, model
+// error) is simply left for the next run rather than aborting the batch.
+// Takes no arguments of its own — useActionState still calls it with
+// (prevState, formData), but there's no form input and the previous result
+// isn't needed to compute the next one, so both are simply left undeclared.
+export async function backfillListingSeoMeta(): Promise<SeoBackfillState> {
+  await requireAdminAction();
+  if (!isAiConfigured()) {
+    return { error: "AI isn't configured — set OPENROUTER_API_KEY to enable this." };
+  }
+
+  const listings = await db.partnerListing.findMany({
+    where: {
+      status: "PUBLISHED",
+      OR: [{ seoTitle: null }, { seoTitle: "" }, { seoDescription: null }, { seoDescription: "" }],
+    },
+    include: { categories: { include: { category: true } }, partner: { select: { timezone: true } } },
+  });
+
+  let updated = 0;
+  let failed = 0;
+  for (const listing of listings) {
+    const context = {
+      companyName: listing.companyName,
+      industry: listing.industry ?? "",
+      description: listing.description ?? "",
+      services: servicesContextText(servicesFromJson(listing.services)),
+    };
+    const current = { title: listing.seoTitle ?? "", description: listing.seoDescription ?? "" };
+    const result = await generateSeoMetaCore(current, context);
+    if (result.status !== "ok") {
+      failed++;
+      continue;
+    }
+
+    const photos = await loadListingPhotosInOrder(listing.photoIds);
+    const patchedListing = { ...listing, seoTitle: result.data.title, seoDescription: result.data.description };
+    await db.partnerListing.update({
+      where: { id: listing.id },
+      data: {
+        seoTitle: result.data.title,
+        seoDescription: result.data.description,
+        publishedSnapshot: buildPublishedSnapshot(
+          patchedListing,
+          listing.categories.map((entry) => entry.category.name),
+          listing.partner.timezone,
+          photos,
+        ),
+      },
+    });
+    updated++;
+  }
+
+  if (updated > 0) {
+    await regenerateLlmsTxtFile();
+    revalidatePath("/admin");
+    revalidateDirectory({ slugs: listings.map((listing) => listing.slug) });
+  }
+
+  return { success: true, updated, failed };
 }
 
 // Reassigns a listing to a different partner account — e.g. the original
