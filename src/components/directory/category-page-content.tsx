@@ -135,7 +135,6 @@ export async function CategoryPageContent({
       <DirectorySearch
         listings={listings}
         industryLabels={INDUSTRY_LABELS_BY_LOCALE[locale]}
-        categories={businessCategories.map((row) => ({ value: row.name, label: translateCategoryName(row.name, locale) }))}
         t={t}
         locale={locale}
         initialQuery={q}
