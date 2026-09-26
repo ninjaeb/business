@@ -37,7 +37,7 @@ import {
   parseServicesJson,
   parseUpdatesJson,
   parseVideosJson,
-  searchDirectorySuggestions,
+  loadDirectorySearchIndex,
   servicesFromJson,
   slugify,
   translationsFromJson,
@@ -97,12 +97,14 @@ export async function setDirectoryLocale(locale: string): Promise<void> {
 }
 
 // Public, unauthenticated — backs the header search bar's live dropdown
-// (see HeaderSearch). A thin passthrough to searchDirectorySuggestions: the
-// actual matching lives in @/lib/directory alongside every other directory
-// data loader, but a "use client" component can only call into it as a
-// Server Action, not import a module with a top-level `db` import directly.
-export async function searchDirectory(query: string, locale: string) {
-  return searchDirectorySuggestions(query, isDirectoryLocale(locale) ? locale : DEFAULT_DIRECTORY_LOCALE);
+// (see HeaderSearch), which fetches this once on first focus and then
+// filters it in the browser itself. A thin passthrough to
+// loadDirectorySearchIndex: the loader lives in @/lib/directory alongside
+// every other directory data loader, but a "use client" component can only
+// call into it as a Server Action, not import a module with a top-level
+// `db` import directly.
+export async function fetchDirectorySearchIndex(locale: string) {
+  return loadDirectorySearchIndex(isDirectoryLocale(locale) ? locale : DEFAULT_DIRECTORY_LOCALE);
 }
 
 const directoryLeadSchema = z.object({

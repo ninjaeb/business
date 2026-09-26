@@ -1,29 +1,31 @@
 "use client";
 
-import { useEffect, useRef, useState, useTransition } from "react";
+import { useEffect, useMemo, useRef, useState, useTransition } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Loader2, Megaphone, Package, Search } from "lucide-react";
-import { searchDirectory } from "@/app/actions/directory";
+import { fetchDirectorySearchIndex } from "@/app/actions/directory";
 import { Input } from "@/components/ui/field";
 import { Badge } from "@/components/ui/badge";
 import { ListingLogo } from "@/components/directory/listing-logo";
 import { directoryHomePath, directoryListingPath, formatSearchViewAllResults, type DirectoryLocale, type DirectoryStrings } from "@/lib/directory-i18n";
-import type { DirectorySearchSuggestions } from "@/lib/directory";
+import { searchDirectoryIndex, type DirectorySearchIndex } from "@/lib/directory-search";
 import { cn } from "@/lib/utils";
-
-const DEBOUNCE_MS = 200;
 
 // The header's own always-present search box (see directory-chrome.tsx) —
 // live results as the visitor types, grouped into the same three kinds of
 // content the directory holds (business, products & services, news &
-// promotions), each linking straight to the listing it's on. Distinct from
-// DirectorySearch, the home page's own big hero search: that one filters an
-// already-fetched, locally-held listing set client-side; this one calls the
-// searchDirectory server action per query since it renders on every page
-// (not just the home page) and would otherwise have to ship every listing's
-// searchable text into every single page load just for a dropdown most
-// visitors never open.
+// promotions), each linking straight to the listing it's on. Same
+// filter-locally idea as DirectorySearch, the home page's own big hero
+// search, with one difference in where the data comes from: that page has
+// its listing set in hand from its own render, whereas this box renders on
+// every page, so it fetches its own compact index (fetchDirectorySearchIndex)
+// once, the first time the box is focused — never on page load, since most
+// visitors never search — and every keystroke after that is a synchronous
+// search of that index. Not a server round trip per keystroke: Server
+// Actions from one page run one at a time, in order, so a query that takes
+// a moment stacks up behind every earlier keystroke's query and the visitor
+// waits for all of them.
 export function HeaderSearch({
   locale,
   t,
@@ -36,31 +38,27 @@ export function HeaderSearch({
   const router = useRouter();
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false);
-  const [results, setResults] = useState<DirectorySearchSuggestions | null>(null);
-  const [pending, startTransition] = useTransition();
+  // Keyed by locale: the index carries that language's taglines, industry
+  // and category labels, so one built for another language is no use here.
+  const [index, setIndex] = useState<{ locale: DirectoryLocale; entries: DirectorySearchIndex } | null>(null);
+  const [loading, startLoading] = useTransition();
   const containerRef = useRef<HTMLDivElement>(null);
-  const requestIdRef = useRef(0);
+  const requestedLocaleRef = useRef<DirectoryLocale | null>(null);
 
-  useEffect(() => {
-    const trimmed = query.trim();
-    // Nothing to fetch for an empty query — results from a previous,
-    // non-empty query are left as-is rather than cleared here (which would
-    // set state synchronously during the effect itself): they're gated
-    // behind trimmedQuery !== "" below, so they simply don't render while
-    // the box is empty, and are replaced the moment a real fetch resolves
-    // for whatever's typed next.
-    if (!trimmed) return;
-    const requestId = ++requestIdRef.current;
-    const timer = setTimeout(() => {
-      startTransition(async () => {
-        const data = await searchDirectory(trimmed, locale);
-        // A slower earlier request landing after a newer one would otherwise
-        // clobber it with stale results for whatever's currently typed.
-        if (requestId === requestIdRef.current) setResults(data);
-      });
-    }, DEBOUNCE_MS);
-    return () => clearTimeout(timer);
-  }, [query, locale]);
+  function ensureIndex() {
+    if (requestedLocaleRef.current === locale) return;
+    requestedLocaleRef.current = locale;
+    startLoading(async () => {
+      try {
+        const entries = await fetchDirectorySearchIndex(locale);
+        setIndex({ locale, entries });
+      } catch {
+        // Let the next focus try again rather than leaving the box dead for
+        // the rest of the visit.
+        requestedLocaleRef.current = null;
+      }
+    });
+  }
 
   useEffect(() => {
     if (!open) return;
@@ -86,8 +84,12 @@ export function HeaderSearch({
   }
 
   const trimmedQuery = query.trim();
+  const entries = index?.locale === locale ? index.entries : null;
+  // null until the index has arrived — the dropdown stays closed (just the
+  // spinner in the box) rather than flashing "no results" at a visitor who
+  // has simply typed faster than the first fetch.
+  const results = useMemo(() => (entries && trimmedQuery ? searchDirectoryIndex(entries, trimmedQuery) : null), [entries, trimmedQuery]);
   const hasResults = results !== null && (results.businesses.length > 0 || results.products.length > 0 || results.updates.length > 0);
-  const showEmpty = open && trimmedQuery !== "" && results !== null && !hasResults && !pending;
 
   return (
     <div ref={containerRef} className={cn("relative", className)}>
@@ -97,10 +99,12 @@ export function HeaderSearch({
           type="text"
           value={query}
           onChange={(event) => {
+            ensureIndex();
             setQuery(event.target.value);
             setOpen(true);
           }}
           onFocus={() => {
+            ensureIndex();
             if (trimmedQuery) setOpen(true);
           }}
           onKeyDown={(event) => {
@@ -113,14 +117,16 @@ export function HeaderSearch({
           aria-label={t.headerSearchPlaceholder}
           className="h-9 pl-9 pr-8 text-sm"
         />
-        {pending && <Loader2 className="pointer-events-none absolute right-2.5 top-1/2 h-4 w-4 -translate-y-1/2 animate-spin text-slate-400" />}
+        {loading && trimmedQuery !== "" && (
+          <Loader2 className="pointer-events-none absolute right-2.5 top-1/2 h-4 w-4 -translate-y-1/2 animate-spin text-slate-400" />
+        )}
       </div>
 
-      {open && trimmedQuery !== "" && (
+      {open && results && (
         <div className="absolute left-0 z-30 mt-1.5 max-h-[70vh] w-72 max-w-[calc(100vw-2rem)] overflow-y-auto rounded-lg border border-slate-200 bg-white py-1.5 shadow-lg sm:w-96 dark:border-neutral-700 dark:bg-neutral-900">
-          {showEmpty && <p className="px-3 py-4 text-center text-sm text-slate-500 dark:text-slate-400">{t.searchNoResults}</p>}
+          {!hasResults && <p className="px-3 py-4 text-center text-sm text-slate-500 dark:text-slate-400">{t.searchNoResults}</p>}
 
-          {results && results.businesses.length > 0 && (
+          {results.businesses.length > 0 && (
             <ResultGroup heading={t.searchSectionBusiness}>
               {results.businesses.map((hit) => (
                 <Link
@@ -141,7 +147,7 @@ export function HeaderSearch({
             </ResultGroup>
           )}
 
-          {results && results.products.length > 0 && (
+          {results.products.length > 0 && (
             <ResultGroup heading={t.servicesHeading}>
               {results.products.map((hit, index) => (
                 <Link
@@ -162,7 +168,7 @@ export function HeaderSearch({
             </ResultGroup>
           )}
 
-          {results && results.updates.length > 0 && (
+          {results.updates.length > 0 && (
             <ResultGroup heading={t.updatesHeading}>
               {results.updates.map((hit, index) => (
                 <Link
