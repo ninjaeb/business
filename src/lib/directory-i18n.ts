@@ -442,7 +442,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     newsLabel: "News",
     promotionLabel: "Promotion",
     promotionsHeading: "Promotions",
-    faqHeading: "Frequently asked questions",
+    faqHeading: "FAQ",
     visitHeading: "Visit us",
     hoursHeading: "Hours",
     hoursOpenLabel: "Open",

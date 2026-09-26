@@ -244,6 +244,10 @@ export default async function ListingLayout({
   // directoryListingVisitPath's own comment).
   const sectionLinks = [
     display.description && { href: directoryListingPath(resolved, slug), label: t.aboutHeading },
+    // Right after About — "where/when to visit" is core identity info a
+    // visitor wants placed next to "what this business is," not buried
+    // behind the content tabs.
+    (listing.address || listing.operatingHours) && { href: directoryListingVisitPath(resolved, slug), label: t.visitHeading },
     display.services.length > 0 && { href: directoryListingServicesPath(resolved, slug), label: t.servicesHeading },
     // Right after Products & Services (not second-to-last) — a shopper
     // deciding what to buy is exactly who wants "any questions about
@@ -256,7 +260,6 @@ export default async function ListingLayout({
       href: directoryListingPromotionsPath(resolved, slug),
       label: t.promotionsHeading,
     },
-    (listing.address || listing.operatingHours) && { href: directoryListingVisitPath(resolved, slug), label: t.visitHeading },
   ].filter((section): section is { href: string; label: string } => Boolean(section));
 
   return (
