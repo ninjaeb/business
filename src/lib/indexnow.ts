@@ -1,6 +1,14 @@
 import { slugify } from "@/lib/slug";
 import { categoryPath } from "@/lib/directory-category-labels";
-import { DIRECTORY_LOCALES, directoryHomePath, directoryListingPath } from "@/lib/directory-i18n";
+import {
+  DIRECTORY_LOCALES,
+  directoryCategoriesIndexPath,
+  directoryHomePath,
+  directoryListingPath,
+  directoryLocationsIndexPath,
+  directoryNewsPath,
+  directoryProductsPath,
+} from "@/lib/directory-i18n";
 import { STATIC_SEO_ORIGIN } from "@/lib/static-seo-origin";
 
 // IndexNow (indexnow.org): one POST tells Bing — and through it Copilot and
@@ -65,4 +73,23 @@ export function directoryCategoryUrls(categoryNames: string[]): string[] {
   return categoryNames.flatMap((name) =>
     DIRECTORY_LOCALES.map(({ code }) => `${STATIC_SEO_ORIGIN}${categoryPath(slugify(name), code)}`),
   );
+}
+
+// The four aggregate pages below change on every publish/unpublish (they're
+// each derived from every published listing at once) — same "all locales"
+// shape as directoryHomeUrls above.
+export function directoryCategoriesIndexUrls(): string[] {
+  return DIRECTORY_LOCALES.map(({ code }) => `${STATIC_SEO_ORIGIN}${directoryCategoriesIndexPath(code)}`);
+}
+
+export function directoryLocationsIndexUrls(): string[] {
+  return DIRECTORY_LOCALES.map(({ code }) => `${STATIC_SEO_ORIGIN}${directoryLocationsIndexPath(code)}`);
+}
+
+export function directoryProductsUrls(): string[] {
+  return DIRECTORY_LOCALES.map(({ code }) => `${STATIC_SEO_ORIGIN}${directoryProductsPath(code)}`);
+}
+
+export function directoryNewsUrls(): string[] {
+  return DIRECTORY_LOCALES.map(({ code }) => `${STATIC_SEO_ORIGIN}${directoryNewsPath(code)}`);
 }

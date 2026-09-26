@@ -623,6 +623,101 @@ export function relatedListingsByCategory(
   return rows.filter((row) => row.slug !== excludeSlug && row.listing.categories.includes(category)).slice(0, limit);
 }
 
+// Every BusinessCategory, including one with zero published listings — the
+// one place a visitor sees the *complete* category list, unlike the
+// populated-only pill lists on the home/category pages (see
+// DirectoryHomeSections, which deliberately filters those out).
+export type CategoryWithCount = { name: string; count: number };
+export async function listCategoriesWithCounts(): Promise<CategoryWithCount[]> {
+  const [categories, rows] = await Promise.all([
+    db.businessCategory.findMany({ orderBy: { name: "asc" }, select: { name: true } }),
+    loadPublishedListings(),
+  ]);
+  const counts = countListingsByCategory(rows);
+  return categories.map((row) => ({ name: row.name, count: counts.get(row.name) ?? 0 }));
+}
+
+// Every state at least one published listing carries, alphabetically — the
+// locations-index counterpart of listCategoriesWithCounts. No zero-count
+// case here either, for the same reason countListingsByState has none: a
+// state only exists because some listing's own address carries it.
+export type LocationWithCount = { name: string; count: number };
+export async function listLocationsWithCounts(): Promise<LocationWithCount[]> {
+  const rows = await loadPublishedListings();
+  return [...countListingsByState(rows)].map(([name, count]) => ({ name, count })).sort((a, b) => a.name.localeCompare(b.name));
+}
+
+// One entry per service across every published listing, newest-listing-first
+// (loadPublishedListings's own order) — the directory-wide "Latest Products"
+// feed. No new Product model: a service has no publish timestamp of its own,
+// so the listing's own publishedAt stands in for "when this was added."
+export type LatestProductEntry = {
+  listingSlug: string;
+  companyName: string;
+  logoUrl: string | null;
+  service: ServiceEntry;
+  publishedAt: Date | null;
+};
+
+const MAX_LATEST_PRODUCTS = 60;
+
+export async function loadLatestProducts(locale: DirectoryLocale, limit = MAX_LATEST_PRODUCTS): Promise<LatestProductEntry[]> {
+  const rows = await loadPublishedListings();
+  const entries: LatestProductEntry[] = [];
+  for (const { slug, publishedAt, listing } of rows) {
+    const translation = locale === "en" ? undefined : listing.translations[locale];
+    const services = translation?.services.length ? translation.services : listing.services;
+    for (const service of services) {
+      entries.push({
+        listingSlug: slug,
+        companyName: listing.companyName,
+        logoUrl: listing.logoUrl ? listingLogoPath(slug, publishedAt) : null,
+        service,
+        publishedAt,
+      });
+      if (entries.length >= limit) return entries;
+    }
+  }
+  return entries;
+}
+
+// One entry per still-current update (news post, or promotion that hasn't
+// ended) across every published listing, newest-listing-first — the
+// directory-wide "News & Promotions" feed. Sources the same
+// PartnerListing.updates JSON field the listing's own page already renders
+// (see isUpdateCurrent) rather than a separate model: an update has no
+// publish timestamp of its own, so the listing's own publishedAt stands in
+// for "when this was posted," same convention as loadLatestProducts above.
+export type ListingUpdateFeedEntry = {
+  listingSlug: string;
+  companyName: string;
+  logoUrl: string | null;
+  update: ListingUpdateEntry;
+  publishedAt: Date | null;
+};
+
+const MAX_LATEST_UPDATES = 60;
+
+export async function loadLatestListingUpdates(limit = MAX_LATEST_UPDATES): Promise<ListingUpdateFeedEntry[]> {
+  const rows = await loadPublishedListings();
+  const today = new Date().toISOString().slice(0, 10);
+  const entries: ListingUpdateFeedEntry[] = [];
+  for (const { slug, publishedAt, listing } of rows) {
+    for (const update of listing.updates) {
+      if (!isUpdateCurrent(update, today)) continue;
+      entries.push({
+        listingSlug: slug,
+        companyName: listing.companyName,
+        logoUrl: listing.logoUrl ? listingLogoPath(slug, publishedAt) : null,
+        update,
+        publishedAt,
+      });
+      if (entries.length >= limit) return entries;
+    }
+  }
+  return entries;
+}
+
 // A "Visit website" link needs a real absolute URL, not just a bare domain
 // — contrast Company.domain (src/lib/companies.ts), which deliberately
 // strips down to the bare form for internal matching. A partner typing

@@ -5,7 +5,16 @@ import path from "node:path";
 import { db } from "@/lib/db";
 import { slugify } from "@/lib/slug";
 import { countListingsByCategory, countListingsByState, loadPublishedListings } from "@/lib/directory";
-import { DIRECTORY_LOCALES, DIRECTORY_HOME_TITLE_BY_LOCALE, directoryHomePath, directoryListingPath } from "@/lib/directory-i18n";
+import {
+  DIRECTORY_LOCALES,
+  DIRECTORY_HOME_TITLE_BY_LOCALE,
+  directoryCategoriesIndexPath,
+  directoryHomePath,
+  directoryListingPath,
+  directoryLocationsIndexPath,
+  directoryNewsPath,
+  directoryProductsPath,
+} from "@/lib/directory-i18n";
 import { translateCategoryName, categoryPath } from "@/lib/directory-category-labels";
 import { locationPath } from "@/lib/directory-location-labels";
 import { STATIC_SEO_ORIGIN } from "@/lib/static-seo-origin";
@@ -106,6 +115,13 @@ export async function buildLlmsTxt(): Promise<string> {
     }
     lines.push("");
   }
+
+  lines.push("## More");
+  lines.push(`- [All business categories](${STATIC_SEO_ORIGIN}${directoryCategoriesIndexPath("en")}): Every category, including ones with no business yet.`);
+  lines.push(`- [All locations](${STATIC_SEO_ORIGIN}${directoryLocationsIndexPath("en")}): Every state/region with a published business.`);
+  lines.push(`- [Latest products & services](${STATIC_SEO_ORIGIN}${directoryProductsPath("en")}): Recently added products and services across the directory.`);
+  lines.push(`- [News & promotions](${STATIC_SEO_ORIGIN}${directoryNewsPath("en")}): Current news and promotions from businesses in the directory.`);
+  lines.push("");
 
   lines.push("## Full index");
   lines.push(`- [sitemap.xml](${STATIC_SEO_ORIGIN}/sitemap.xml): Every published business's page, in all three languages.`);
