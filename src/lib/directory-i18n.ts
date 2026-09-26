@@ -1,4 +1,5 @@
 import type { Industry } from "@/generated/prisma/client";
+import { BUSINESS_NAV_ITEMS } from "@/lib/business-nav-items";
 import { INDUSTRY_LABELS } from "@/lib/labels";
 
 // Same three languages as the public /lead form (src/lib/lead-form-i18n.ts)
@@ -51,8 +52,18 @@ export function directoryBenefitsPath(locale: DirectoryLocale): string {
   return `/${locale}/business/benefits`;
 }
 
+// A listing's own page drops the /business segment entirely — just
+// /en/some-company — shorter and friendlier to share than every other
+// directory URL above, since it's the one visitors actually pass around.
+// Lives at src/app/[locale]/[slug], a sibling of src/app/[locale]/business
+// rather than nested under it; Next.js resolves the static "business"
+// (and "directory") folders ahead of this dynamic one, so there's no
+// collision with the home/category/location/signup/benefits pages. Every
+// old /[locale]/business/<slug> URL still resolves — see
+// src/app/[locale]/business/[slug]/ — as a permanent redirect into here,
+// for old links/bookmarks/SEO.
 export function directoryListingPath(locale: DirectoryLocale, slug: string): string {
-  return `/${locale}/business/${slug}`;
+  return `/${locale}/${slug}`;
 }
 
 export const DEFAULT_DIRECTORY_LOCALE: DirectoryLocale = "en";
@@ -90,8 +101,6 @@ export type DirectoryStrings = {
   heroTitle: string;
   heroSubtitle: string;
   searchPlaceholder: string;
-  allIndustries: string;
-  allCategories: string;
   // A category page's "see other categories" links, below its results —
   // the only way to reach a sibling category without going back to the
   // directory home (see category-page-content.tsx).
@@ -109,6 +118,11 @@ export type DirectoryStrings = {
   // recommendMessage below, since this is localized data, not code.
   relatedListingsHeading: string;
   aboutHeading: string;
+  videoHeading: string;
+  photosHeading: string;
+  updatesHeading: string;
+  newsLabel: string;
+  promotionLabel: string;
   faqHeading: string;
   visitHeading: string;
   hoursHeading: string;
@@ -174,9 +188,24 @@ export type DirectoryStrings = {
   brandName: string;
   navLoginRegister: string;
   navMyBusiness: string;
+  navAddBusiness: string;
   navPartnership: string;
   navGoToCrm: string;
   navSignOut: string;
+  // The business-portal's own page names (BUSINESS_NAV_ITEMS, keyed by
+  // href below) — the portal itself is English-only by design (see
+  // src/app/layout.tsx), but this same list also renders inside the
+  // trilingual directory's own hamburger menu (see localizedBusinessNavItems
+  // below and DirectoryNavMenu), where it needs to match whatever language
+  // the rest of that menu is already in.
+  navOverview: string;
+  navMyListings: string;
+  navBusinessLeads: string;
+  navCompanies: string;
+  navContacts: string;
+  navDeals: string;
+  navTasks: string;
+  navProfile: string;
   listBusinessCta: string;
   benefitsNavLabel: string;
   signupHeading: string;
@@ -221,9 +250,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
   en: {
     heroTitle: "Find the right business for your project",
     heroSubtitle: "Browse trusted businesses and reach out directly.",
-    searchPlaceholder: "Search by company or service…",
-    allIndustries: "All industries",
-    allCategories: "All categories",
+    searchPlaceholder: "Search by company, service, industry or category…",
     otherCategoriesHeading: "Browse other categories",
     otherLocationsHeading: "Browse other locations",
     noResultsTitle: "No businesses found",
@@ -232,6 +259,11 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     servicesHeading: "Products & Services",
     relatedListingsHeading: "More businesses in {category}",
     aboutHeading: "About",
+    videoHeading: "Video",
+    photosHeading: "Photos",
+    updatesHeading: "News & Promotions",
+    newsLabel: "News",
+    promotionLabel: "Promotion",
     faqHeading: "Frequently asked questions",
     visitHeading: "Visit us",
     hoursHeading: "Hours",
@@ -296,6 +328,15 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     brandName: "Business Directory",
     navLoginRegister: "Business Login",
     navMyBusiness: "My business",
+    navAddBusiness: "Add Business",
+    navOverview: "Overview",
+    navMyListings: "My listings",
+    navBusinessLeads: "Business Leads",
+    navCompanies: "Companies",
+    navContacts: "Contacts",
+    navDeals: "Deals",
+    navTasks: "Tasks",
+    navProfile: "Profile",
     navPartnership: "Partnership",
     navGoToCrm: "Go to CRM",
     navSignOut: "Sign out",
@@ -340,9 +381,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
   zh: {
     heroTitle: "为您的项目寻找合适的企业",
     heroSubtitle: "浏览值得信赖的企业，并直接联系他们。",
-    searchPlaceholder: "按公司或服务搜索…",
-    allIndustries: "所有行业",
-    allCategories: "所有类别",
+    searchPlaceholder: "按公司、服务、行业或类别搜索…",
     otherCategoriesHeading: "浏览其他类别",
     otherLocationsHeading: "浏览其他地区",
     noResultsTitle: "未找到企业",
@@ -351,6 +390,11 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     servicesHeading: "产品与服务",
     relatedListingsHeading: "更多{category}企业",
     aboutHeading: "关于",
+    videoHeading: "视频",
+    photosHeading: "照片",
+    updatesHeading: "新闻与促销",
+    newsLabel: "新闻",
+    promotionLabel: "促销",
     faqHeading: "常见问题",
     visitHeading: "联系地址",
     hoursHeading: "营业时间",
@@ -414,6 +458,15 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     brandName: "企业目录",
     navLoginRegister: "企业登录",
     navMyBusiness: "我的企业",
+    navAddBusiness: "添加企业",
+    navOverview: "概览",
+    navMyListings: "我的刊登",
+    navBusinessLeads: "商业线索",
+    navCompanies: "公司",
+    navContacts: "联系人",
+    navDeals: "交易",
+    navTasks: "任务",
+    navProfile: "个人资料",
     navPartnership: "合作伙伴关系",
     navGoToCrm: "前往 CRM",
     navSignOut: "退出登录",
@@ -458,9 +511,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
   ms: {
     heroTitle: "Cari perniagaan yang sesuai untuk projek anda",
     heroSubtitle: "Semak imbas perniagaan yang dipercayai dan hubungi terus.",
-    searchPlaceholder: "Cari mengikut syarikat atau perkhidmatan…",
-    allIndustries: "Semua industri",
-    allCategories: "Semua kategori",
+    searchPlaceholder: "Cari mengikut syarikat, perkhidmatan, industri atau kategori…",
     otherCategoriesHeading: "Semak imbas kategori lain",
     otherLocationsHeading: "Semak imbas lokasi lain",
     noResultsTitle: "Tiada perniagaan dijumpai",
@@ -469,6 +520,11 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     servicesHeading: "Produk & Perkhidmatan",
     relatedListingsHeading: "Lebih banyak perniagaan dalam kategori {category}",
     aboutHeading: "Tentang",
+    videoHeading: "Video",
+    photosHeading: "Foto",
+    updatesHeading: "Berita & Promosi",
+    newsLabel: "Berita",
+    promotionLabel: "Promosi",
     faqHeading: "Soalan lazim",
     visitHeading: "Lawati kami",
     hoursHeading: "Waktu Operasi",
@@ -533,6 +589,15 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     brandName: "Direktori Perniagaan",
     navLoginRegister: "Log Masuk Perniagaan",
     navMyBusiness: "Perniagaan saya",
+    navAddBusiness: "Tambah Perniagaan",
+    navOverview: "Gambaran keseluruhan",
+    navMyListings: "Senarai saya",
+    navBusinessLeads: "Petunjuk Perniagaan",
+    navCompanies: "Syarikat",
+    navContacts: "Kenalan",
+    navDeals: "Urus Niaga",
+    navTasks: "Tugasan",
+    navProfile: "Profil",
     navPartnership: "Perkongsian",
     navGoToCrm: "Pergi ke CRM",
     navSignOut: "Log keluar",
@@ -575,6 +640,28 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     },
   },
 };
+
+// BUSINESS_NAV_ITEMS (src/lib/business-nav-items.ts) gives the portal's own
+// English page names — right for PartnerNavMenu/PartnerSidebar, which live
+// outside the locale-prefixed directory tree, but wrong for that same list
+// rendered inside DirectoryNavMenu, which does live inside it and needs to
+// match whichever of the three languages that menu is already showing.
+// Zips those hrefs (unlocalized, and never shown directly) with the
+// translated labels above, in the same fixed order.
+export function localizedBusinessNavItems(locale: DirectoryLocale): { href: string; label: string }[] {
+  const t = DIRECTORY_STRINGS[locale];
+  const labels: Record<string, string> = {
+    "/business-portal": t.navOverview,
+    "/business-portal/listings": t.navMyListings,
+    "/business-portal/business-leads": t.navBusinessLeads,
+    "/business-portal/companies": t.navCompanies,
+    "/business-portal/contacts": t.navContacts,
+    "/business-portal/deals": t.navDeals,
+    "/business-portal/tasks": t.navTasks,
+    "/business-portal/profile": t.navProfile,
+  };
+  return BUSINESS_NAV_ITEMS.map((item) => ({ href: item.href, label: labels[item.href] ?? item.label }));
+}
 
 // Industry is a fixed enum shared with the internal /system CRM (see
 // INDUSTRY_LABELS in src/lib/labels.ts, English-only — that side isn't

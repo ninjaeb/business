@@ -28,7 +28,6 @@ import {
   loadPublishedListings,
   toDirectoryGridListing,
 } from "@/lib/directory";
-import { INDUSTRIES } from "@/lib/labels";
 import { DirectorySearch } from "@/components/directory/directory-search";
 import { DirectoryHomeSections } from "@/components/directory/directory-home-sections";
 import { getSiteOrigin } from "@/lib/site-url";
@@ -162,7 +161,6 @@ export default async function DirectoryHomePage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(DIRECTORY_HOME_COPY[resolved].faqs) }} />
       <DirectorySearch
         listings={listings}
-        industries={INDUSTRIES}
         industryLabels={INDUSTRY_LABELS_BY_LOCALE[resolved]}
         categories={businessCategories.map((row) => ({ value: row.name, label: translateCategoryName(row.name, resolved) }))}
         t={t}

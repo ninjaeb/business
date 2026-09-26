@@ -27,11 +27,13 @@ import {
   normalizeWebsiteUrl,
   parseFaqsJson,
   parseServicesJson,
+  parseUpdatesJson,
   servicesFromJson,
   slugify,
   translationsFromJson,
   type FaqEntry,
   type ListingTranslations,
+  type ListingUpdateEntry,
   type OperatingHours,
   type ServiceEntry,
 } from "@/lib/directory";
@@ -174,6 +176,7 @@ const listingSchema = z.object({
     .optional()
     .refine((value) => !value || INDUSTRIES.includes(value as Industry), { message: "Invalid industry" }),
   website: z.string().trim().optional(),
+  videoUrl: z.string().trim().optional(),
   address: z.string().trim().optional(),
   state: z.string().trim().optional(),
   country: z.string().trim().optional(),
@@ -188,10 +191,12 @@ export type ListingFormValues = {
   services: ServiceEntry[];
   industry: string;
   website: string;
+  videoUrl: string;
   address: string;
   state: string;
   country: string;
   faqs: FaqEntry[];
+  updates: ListingUpdateEntry[];
   categoryIds: string[];
   translations: ListingTranslations;
   seoTitle: string;
@@ -205,7 +210,7 @@ export type ListingFormField = "companyName" | "services";
 
 export type ListingFormState =
   | { error: string; field?: ListingFormField; values: ListingFormValues }
-  | { success: true }
+  | { success: true; slug: string }
   | undefined;
 
 function stringField(formData: FormData, key: string): string {
@@ -249,10 +254,12 @@ function extractListingFormValues(formData: FormData): ListingFormValues {
     services: parseServicesJson(stringField(formData, "services")),
     industry: stringField(formData, "industry"),
     website: stringField(formData, "website"),
+    videoUrl: stringField(formData, "videoUrl"),
     address: stringField(formData, "address"),
     state: stringField(formData, "state"),
     country: stringField(formData, "country"),
     faqs: parseFaqsJson(stringField(formData, "faqs")),
+    updates: parseUpdatesJson(stringField(formData, "updates")),
     categoryIds: formData.getAll("categoryIds").filter((value): value is string => typeof value === "string"),
     translations: extractTranslations(formData),
     seoTitle: stringField(formData, "seoTitle"),
@@ -842,6 +849,25 @@ async function saveListingFields(
   }
   const resetToDraft = listing.status === "PUBLISHED" || listing.status === "REJECTED";
 
+  // A brand-new draft's slug comes from the partner's own account name (see
+  // createPartnerListing), which rarely matches the business they're actually
+  // listing — normally fixed up by hand via PartnerSlugForm's own "Update
+  // address" confirmation. That confirmation exists to protect a *live*
+  // link from disappearing out from under a visitor; nothing is live yet on
+  // a listing's first save (createdAt === updatedAt, i.e. no prior save and
+  // never published), so adopt the just-entered company name as the slug
+  // automatically here instead of leaving a stranger's name as the address.
+  // Silently skipped if that slug is already taken — the partner still has
+  // PartnerSlugForm to pick another one by hand.
+  let autoSlug: string | undefined;
+  if (listing.createdAt.getTime() === listing.updatedAt.getTime()) {
+    const candidate = slugify(parsed.data.companyName);
+    if (candidate && candidate !== listing.slug && isValidSlugFormat(candidate)) {
+      const existing = await db.partnerListing.findUnique({ where: { slug: candidate }, select: { id: true } });
+      if (!existing) autoSlug = candidate;
+    }
+  }
+
   // Reconciled against real rows rather than trusted as-is — a checkbox's
   // value is just a string an authenticated partner's own request could in
   // principle tamper with, and a stale id (its category was since deleted)
@@ -870,16 +896,19 @@ async function saveListingFields(
         services: parseServicesJson(stringField(formData, "services")),
         industry: (parsed.data.industry || null) as Industry | null,
         website: parsed.data.website ? normalizeWebsiteUrl(parsed.data.website) : null,
+        videoUrl: parsed.data.videoUrl ? normalizeWebsiteUrl(parsed.data.videoUrl) : null,
         address: parsed.data.address || null,
         state: parsed.data.state || null,
         country: parsed.data.country || null,
         operatingHours: parseOperatingHoursFormData(formData),
         faqs: parseFaqsJson(stringField(formData, "faqs")),
+        updates: parseUpdatesJson(stringField(formData, "updates")),
         translations: extractTranslations(formData),
         seoTitle: parsed.data.seoTitle || null,
         seoDescription: parsed.data.seoDescription || null,
         ...logo,
         ...(resetToDraft ? { status: "DRAFT" as const, reviewNote: null } : {}),
+        ...(autoSlug ? { slug: autoSlug } : {}),
         ...extraData,
       },
     }),
@@ -910,7 +939,7 @@ export async function saveDirectoryListing(
   revalidatePath("/business-portal/listings");
   revalidatePath(`/business-portal/listings/${listingId}`);
   if (result.listing.publishedSnapshot) revalidateDirectory({ slugs: [result.listing.slug] });
-  return { success: true };
+  return { success: true, slug: result.listing.slug };
 }
 
 export type UpdateSlugState = { error: string; slug: string } | { success: true; slug: string } | undefined;
@@ -963,7 +992,7 @@ export async function updateListingSlug(
 
 export type SubmitListingState =
   | { error: string; field?: ListingFormField }
-  | { success: true; published: boolean }
+  | { success: true; published: boolean; slug: string }
   | undefined;
 
 // Whether this listing's *next* submission needs an admin's look, per
@@ -1025,7 +1054,7 @@ export async function submitDirectoryListingForReview(
   revalidatePath("/business-portal/listings");
   revalidatePath(`/business-portal/listings/${listingId}`);
   revalidatePath("/admin");
-  return { success: true, published: !needsReview };
+  return { success: true, published: !needsReview, slug: result.listing.slug };
 }
 
 async function ownedLeadOrThrow(leadId: string, partnerId: string) {
@@ -1158,6 +1187,21 @@ async function publishListing(id: string) {
     where: { id },
     include: { categories: { include: { category: true } }, partner: { select: { timezone: true } } },
   });
+  // photoIds is the order of record; the query result isn't guaranteed to
+  // come back in that order, so it's reordered to match rather than trusted
+  // as-is (same reasoning as everywhere else in this file that reorders a
+  // findMany by a caller-owned id list).
+  const photoRows = listing.photoIds.length
+    ? await db.directoryListingImage.findMany({
+        where: { id: { in: listing.photoIds } },
+        select: { id: true, caption: true },
+      })
+    : [];
+  const photosById = new Map(photoRows.map((row) => [row.id, row.caption ?? ""]));
+  const photos = listing.photoIds
+    .filter((photoId) => photosById.has(photoId))
+    .map((photoId) => ({ id: photoId, caption: photosById.get(photoId)! }));
+
   const published = await db.partnerListing.update({
     where: { id },
     data: {
@@ -1169,6 +1213,7 @@ async function publishListing(id: string) {
         listing,
         listing.categories.map((entry) => entry.category.name),
         listing.partner.timezone,
+        photos,
       ),
     },
   });

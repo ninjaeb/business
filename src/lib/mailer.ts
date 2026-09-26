@@ -1,31 +1,17 @@
 import nodemailer from "nodemailer";
+import { getEmailSettings } from "@/lib/email-settings";
+import { decryptSecret } from "@/lib/secret-crypto";
 
-// A small, self-contained SMTP mailer — unlike the source CRM (which reads
-// a DB-backed "system sender" identity for outbound mail), this app has no
-// such concept: every outbound email in this codebase is a fixed set of
-// env vars, checked once here. No sender picker, no per-org configuration.
+// Admin-configured via /admin (see src/lib/email-settings.ts) rather than
+// env vars, unlike this app's other integrations — a non-technical admin
+// can set or change outbound email without asking a developer to redeploy.
+// A fresh transporter is built per send rather than cached: nodemailer
+// doesn't open a connection until sendMail is actually called, so this
+// costs nothing, and a cache would otherwise keep using stale credentials
+// after an admin saves new ones until the process next restarts.
 
-let cachedTransporter: ReturnType<typeof nodemailer.createTransport> | undefined;
-
-export function isMailerConfigured(): boolean {
-  return Boolean(process.env.SMTP_HOST?.trim());
-}
-
-function getTransporter() {
-  if (cachedTransporter) return cachedTransporter;
-
-  const host = process.env.SMTP_HOST;
-  if (!host) throw new Error("SMTP_HOST is not set");
-
-  cachedTransporter = nodemailer.createTransport({
-    host,
-    port: Number(process.env.SMTP_PORT) || 587,
-    auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASSWORD,
-    },
-  });
-  return cachedTransporter;
+export async function isMailerConfigured(): Promise<boolean> {
+  return (await getEmailSettings()) !== null;
 }
 
 export type SendMailInput = {
@@ -33,8 +19,8 @@ export type SendMailInput = {
   subject: string;
   text: string;
   html: string;
-  // Overrides the display name only — the from address is always
-  // MAIL_FROM_EMAIL, never a partner's or visitor's own address.
+  // Overrides the display name only — the from address is always the
+  // configured fromEmail, never a partner's or visitor's own address.
   fromName?: string;
 };
 
@@ -42,13 +28,20 @@ export type SendMailInput = {
 // rather than fail their own action (see directory-notify.ts) catch this
 // themselves instead of calling isMailerConfigured() and skipping the call.
 export async function sendMail({ to, subject, text, html, fromName }: SendMailInput): Promise<void> {
-  const transporter = getTransporter();
-  const fromEmail = process.env.MAIL_FROM_EMAIL;
-  const defaultName = process.env.MAIL_FROM_NAME;
-  const displayName = fromName || defaultName;
+  const settings = await getEmailSettings();
+  if (!settings) throw new Error("Email is not configured — set it up from /admin.");
 
+  const transporter = nodemailer.createTransport({
+    host: settings.host,
+    port: settings.port,
+    auth: settings.username
+      ? { user: settings.username, pass: settings.encryptedPassword ? decryptSecret(settings.encryptedPassword) : undefined }
+      : undefined,
+  });
+
+  const displayName = fromName || settings.fromName;
   await transporter.sendMail({
-    from: displayName ? `"${displayName}" <${fromEmail}>` : fromEmail,
+    from: displayName ? `"${displayName}" <${settings.fromEmail}>` : settings.fromEmail,
     to,
     subject,
     text,

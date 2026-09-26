@@ -3,8 +3,9 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
-import { LogOut, Menu, X } from "lucide-react";
+import { LogOut, Menu, Plus, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { createListingAction } from "@/app/actions/directory";
 import { BUSINESS_NAV_ITEMS } from "@/lib/business-nav-items";
 import { directoryHomePath, type DirectoryLocale } from "@/lib/directory-i18n";
 
@@ -75,6 +76,13 @@ export function PartnerNavMenu({
           <Link href={directoryHomePath(locale)} role="menuitem" onClick={() => setOpen(false)} className={itemClasses}>
             Business Directory
           </Link>
+
+          <form action={createListingAction}>
+            <button type="submit" role="menuitem" className={itemClasses}>
+              <Plus className="h-4 w-4 shrink-0 text-slate-400" />
+              Add Business
+            </button>
+          </form>
 
           <div className="border-t border-slate-100 px-3 pb-1 pt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:border-neutral-800 dark:text-slate-500">
             My Business

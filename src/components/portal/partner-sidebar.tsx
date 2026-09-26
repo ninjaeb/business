@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LogOut } from "lucide-react";
+import { LogOut, Plus } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { createListingAction } from "@/app/actions/directory";
 import { BUSINESS_NAV_ITEMS } from "@/lib/business-nav-items";
 import { directoryHomePath, type DirectoryLocale } from "@/lib/directory-i18n";
 
@@ -46,6 +47,13 @@ export function PartnerSidebar({
         <Link href={directoryHomePath(locale)} className={cn(itemClasses, inactiveItemClasses)}>
           Business Directory
         </Link>
+
+        <form action={createListingAction}>
+          <button type="submit" className={cn(itemClasses, "w-full", inactiveItemClasses)}>
+            <Plus className="h-4 w-4 shrink-0 text-slate-400" />
+            Add Business
+          </button>
+        </form>
 
         <div className="px-3 pb-1 pt-3 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500">
           My Business

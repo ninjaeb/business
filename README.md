@@ -14,15 +14,17 @@ extracted from).
 
 - **Public directory** (`/[locale]/business`) — search/browse listings,
   category and location hub pages, a per-listing detail page (products &
-  services, hours, location, FAQ, a spam-guarded contact form), server-
-  rendered for both traditional search engines and AI answer engines
-  (ChatGPT, Perplexity, etc.). Every page is available in English, 中文, and
-  Bahasa Malaysia.
+  services, an embedded video, a photo gallery, hours, location, FAQ, a News
+  & Promotions feed, a spam-guarded contact form), server-rendered for both
+  traditional search engines and AI answer engines (ChatGPT, Perplexity,
+  etc.). Every page is available in English, 中文, and Bahasa Malaysia.
 - **Partner self-service** (`/business-portal`) — a business creates an
   account (email/password or Google), fills in and submits a listing for
-  review, and — once approved — manages it, replies to inquiries, and runs
-  a small private CRM of its own: Companies, Contacts, Deals, Tasks,
-  strictly scoped to that one account.
+  review, and — once approved — manages it, gets emailed and (once
+  WhatsApp Business is connected) WhatsApp'd the moment a visitor's
+  inquiry comes in, replies to inquiries, and runs a small private CRM of
+  its own: Companies, Contacts, Deals, Tasks, strictly scoped to that one
+  account.
 - **AI-assisted listing content** *(optional, needs `OPENROUTER_API_KEY`)*
   — rewrite/expand the About text, generate services or FAQ entries, write
   SEO title/description, translate the whole listing into 中文/Malay, or
@@ -46,7 +48,7 @@ edits never reach the public page until approved again.
 - [Prisma ORM 7](https://www.prisma.io) with the `@prisma/adapter-pg` driver adapter
 - PostgreSQL 14+
 - `jose` for JWT session cookies, Node's `crypto` (scrypt) for password hashing
-- Optional: Google OAuth (sign-up/login), Google Places (listing autofill), OpenRouter (AI content), IndexNow, Google Search Console / Bing Webmaster Tools verification, Plausible Analytics
+- Optional: Google OAuth (sign-up/login), Google Places (listing autofill), OpenRouter (AI content), WhatsApp Business (Cloud API, new-lead alerts), IndexNow, Google Search Console / Bing Webmaster Tools verification, Plausible Analytics
 - Deploy target: a plain Node `server.js` entrypoint for cPanel/Passenger-style shared hosting — no platform lock-in, `next start` works anywhere Node runs too
 
 ## Getting started
@@ -123,9 +125,80 @@ from your browser).
 
 See `.env.example` for the full list. `DATABASE_URL`, `SESSION_SECRET`, and
 `SITE_URL` are required; everything else (Google OAuth, Google Places,
-OpenRouter, outbound email, search-console verification, IndexNow,
-Plausible, deploy automation) is optional — each feature just stays off
-until its variables are set.
+OpenRouter, search-console verification, IndexNow, Plausible, deploy
+automation) is optional — each feature just stays off until its variables
+are set. Outbound email and WhatsApp notifications aren't env vars at all —
+see below.
+
+## Email and WhatsApp notifications (optional, admin-configured)
+
+Both of a partner's new-lead notifications — the email alert and the
+WhatsApp ping — are connected from `/admin` (an **Email (SMTP)** card and a
+**WhatsApp** card), not env vars, so a non-technical admin can set up or
+change either without asking a developer to redeploy. The two are
+independent: a partner gets whichever is configured (or neither, or both),
+and connecting one is never required for the other to work. Each save
+verifies the connection first — it fails right there on a typo'd host or a
+wrong credential, rather than silently on the next lead — and a submitted
+password/access token is never redisplayed; leaving that field blank on a
+later save keeps whatever's already connected.
+
+### Email (SMTP)
+
+`/admin` → **Email (SMTP)**: host, port, an optional username/password, and
+the from-name/from-address a notification is sent as. This is also what a
+partner's reply to a lead sends from (see the *Public partner directory*
+description in Features above).
+
+### WhatsApp Business
+
+`/admin` → **WhatsApp**, using the official [Meta WhatsApp Business
+Platform (Cloud API)](https://developers.facebook.com/docs/whatsapp/cloud-api),
+never an unofficial/browser-automation integration:
+
+1. Create a [Meta App](https://developers.facebook.com/apps) (type:
+   Business), then add the **WhatsApp** product to it.
+2. In WhatsApp → API Setup, note the **Phone number ID** and add/verify a
+   phone number (the free test number Meta provides works for trying this
+   out, but can only message pre-approved recipient numbers — add a real,
+   verified business number to notify any partner). API Setup shows a
+   temporary access token that expires after 24 hours; generate a
+   permanent one instead (a System User token, from Meta Business Settings
+   → System Users).
+3. Enter both **Phone number ID** and **Access token** in `/admin` →
+   **WhatsApp** and save — it calls Meta to confirm the phone number ID
+   actually belongs to that access token before saving either, and shows
+   the connected number once it does.
+4. **Create the message template** so a partner is pinged the moment
+   someone contacts them — Meta App Dashboard → WhatsApp → Message
+   Templates → Create Template:
+   - Name: `new_directory_lead_notification` (must match exactly — this
+     app hard-codes it)
+   - Category: `Utility`
+   - Language: `English`
+   - Header (optional, static text only — no variable): anything you like,
+     e.g. "New directory inquiry"
+   - Body: `New directory inquiry from {{1}} ({{2}})` on its own line,
+     then a blank line, then `Reply here: {{3}}`
+   - Footer (optional, static text only): anything you like, e.g.
+     "Automated notification from the Gotka Business Directory"
+   - No buttons — the link is the body's own `{{3}}` variable; WhatsApp
+     renders it as tappable on its own. Sample values Meta asks for when
+     you submit: e.g. `Sarah Tan` / `Acme Corp` /
+     `https://business.gotka.com/business-portal/business-leads/abc123`.
+
+   Submit for review — Meta reviews the literal template text, so it
+   should match what's above exactly.
+5. **Nothing else to configure** — a partner with a phone number on file
+   (required on their profile) gets the WhatsApp ping automatically once
+   the template's approved; without WhatsApp connected in `/admin`, or
+   while the template's still pending review, the lead is still created
+   and still emailed (if configured) — only the WhatsApp half is silently
+   skipped.
+
+`{{1}}` is the visitor's name, `{{2}}` their company (or "No company
+given"), `{{3}}` a link straight to the lead in that partner's portal,
+built from `SITE_URL`.
 
 ## Deploying on cPanel
 

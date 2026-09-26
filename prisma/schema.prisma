@@ -192,6 +192,45 @@ model Settings {
   directoryApprovalMode DirectoryApprovalMode @default(EVERY_SUBMISSION)
 }
 
+// Admin-configured outbound email (new-lead alerts to partners, partner
+// replies to leads) — set from /admin (see src/lib/email-settings.ts),
+// unlike this app's other integrations (Google Places, OpenRouter), which
+// stay plain env vars. A non-technical admin can set or change this without
+// asking a developer to redeploy with new env vars. Singleton, same pattern
+// as Settings above. username/encryptedPassword are both nullable since
+// some SMTP relays allow unauthenticated submission.
+model EmailSettings {
+  id       String  @id @default("singleton")
+  host     String
+  port     Int     @default(587)
+  username String?
+  // AES-256-GCM ("iv:authTag:ciphertext", base64) via src/lib/secret-crypto.ts.
+  encryptedPassword String? @db.Text
+  fromName          String
+  fromEmail         String
+
+  updatedAt DateTime @updatedAt
+}
+
+// Admin-configured WhatsApp Business Platform (Cloud API) connection
+// (new-lead pings to partners) — same reasoning as EmailSettings above.
+// Unlike the source CRM's own WhatsAppAccount, there's no businessAccountId
+// or webhook verify token here: this app only ever sends a proactive
+// template message, it never receives inbound messages.
+model WhatsAppSettings {
+  id            String @id @default("singleton")
+  phoneNumberId String
+  // AES-256-GCM ("iv:authTag:ciphertext", base64) via src/lib/secret-crypto.ts.
+  encryptedAccessToken String @db.Text
+  // Fetched and cached from Meta at the moment a connection test last
+  // succeeded (see updateWhatsAppSettings) — shown in the admin form so a
+  // saved connection reads as "this real phone number", not just a
+  // hard-to-verify ID.
+  displayPhoneNumber String?
+
+  updatedAt DateTime @updatedAt
+}
+
 enum PartnerListingStatus {
   DRAFT
   PENDING_REVIEW
@@ -216,13 +255,19 @@ model PartnerListing {
   services    Json // ServiceEntry[] (src/lib/directory.ts) — {title, description, price}
   industry    Industry?
   website     String?
+  videoUrl    String? // YouTube/Vimeo/direct link — embedded on the public page, see toEmbeddableVideoUrl
   address     String? @db.Text
   state       String?
   country     String?
   operatingHours Json? // OperatingHours (src/lib/directory.ts)
   faqs        Json? // FaqEntry[] (src/lib/directory.ts) — {question, answer}
+  updates     Json? // ListingUpdateEntry[] (src/lib/directory.ts) — {kind, title, body, endDate}
   translations Json? // ListingTranslations (src/lib/directory.ts) — {zh?, ms?}
   logoUrl     String?   @db.Text // data: URL
+  // Ordered DirectoryListingImage ids selected as gallery photos (see
+  // uploadListingGalleryPhoto in src/app/actions/directory-images.ts) —
+  // display order is this array's own order.
+  photoIds       String[] @default([])
   seoTitle       String?
   seoDescription String?
 
@@ -274,12 +319,18 @@ model PartnerListingCategory {
   @@index([categoryId])
 }
 
-// About-field embedded images (markdown-lite editor), served via
-// /api/directory-images/[id].
+// Two unrelated uses share this table (and its /api/directory-images/[id]
+// route), both just "an image byte blob owned by a listing": About-field
+// embedded images (markdown-lite editor), referenced by id from inside the
+// About text itself, and gallery photos (see PartnerListing.photoIds),
+// referenced by id from that ordered array instead. `caption` is only ever
+// set for the latter — an About-embed's description lives in the
+// surrounding markdown, not on the image row.
 model DirectoryListingImage {
-  id       String @id @default(cuid())
+  id       String  @id @default(cuid())
   mimeType String
-  data     String @db.Text
+  data     String  @db.Text
+  caption  String?
 
   createdAt DateTime @default(now())
 
