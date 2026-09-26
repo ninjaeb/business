@@ -6,6 +6,7 @@ import { db } from "@/lib/db";
 import {
   currentDayInTimezone,
   DAYS_OF_WEEK,
+  directoryImagePath,
   formatOpeningHoursSchema,
   isOpenNow,
   isUpdateCurrent,
@@ -100,10 +101,17 @@ export async function generateMetadata({
     (plainDescription ? plainDescription.slice(0, 160) : undefined) ||
     `${listing.companyName} on the business directory.`;
   const title = listing.seoTitle?.trim() || `${listing.companyName} | ${DIRECTORY_SITE_NAME_BY_LOCALE[resolved]}`;
-  // No logo → the directory's own branded share image (see
-  // directoryShareImage) rather than the bare app icon.
-  const imageUrl = buildListingLogoUrl(listing, siteOrigin, slug);
-  const shareImage = imageUrl ? { url: imageUrl } : directoryShareImage(siteOrigin, resolved);
+  // No logo → a gallery photo, so a listing that skipped the logo upload
+  // but has real photos still previews as itself rather than generic
+  // branding; no photos either → the directory's own branded share image
+  // (see directoryShareImage) rather than the bare app icon.
+  const logoUrl = buildListingLogoUrl(listing, siteOrigin, slug);
+  const galleryImageUrl = listing.photos[0] ? `${siteOrigin}${directoryImagePath(listing.photos[0].id)}` : null;
+  const shareImage = logoUrl
+    ? { url: logoUrl }
+    : galleryImageUrl
+      ? { url: galleryImageUrl }
+      : directoryShareImage(siteOrigin, resolved);
 
   return {
     title,
@@ -126,9 +134,9 @@ export async function generateMetadata({
       images: [shareImage],
     },
     twitter: {
-      // A logo is roughly square, which suits the small summary card; the
-      // 1200×630 branded image wants the large one.
-      card: imageUrl ? "summary" : "summary_large_image",
+      // A logo is roughly square, which suits the small summary card; a
+      // gallery photo or the 1200×630 branded image both want the large one.
+      card: logoUrl ? "summary" : "summary_large_image",
       title,
       description,
       images: [shareImage],
@@ -155,6 +163,26 @@ function buildListingLogoUrl(
   return listing.logoUrl ? `${siteOrigin}${listingLogoPath(slug, listing.publishedAt)}` : null;
 }
 
+// Every image worth telling a crawler about, logo first — the logo alone
+// used to be all buildJsonLd/generateMetadata had to work with; the
+// gallery (PublishedListingSnapshot.photos) is just as public and, unlike
+// the logo, often carries its own caption, so it rides along here too
+// rather than needing a second, parallel image list at each call site.
+function listingImageEntries(
+  listing: NonNullable<Awaited<ReturnType<typeof getPublishedListing>>>,
+  siteOrigin: string,
+  slug: string,
+): { url: string; caption?: string }[] {
+  const logoUrl = buildListingLogoUrl(listing, siteOrigin, slug);
+  return [
+    ...(logoUrl ? [{ url: logoUrl }] : []),
+    ...listing.photos.map((photo) => ({
+      url: `${siteOrigin}${directoryImagePath(photo.id)}`,
+      caption: photo.caption || undefined,
+    })),
+  ];
+}
+
 // Schema.org LocalBusiness markup — read by both search engines (SEO) and
 // AI answer engines that crawl the page (GEO). Deliberately never includes
 // a phone number: this is public, crawlable content, and the partner's own
@@ -164,7 +192,7 @@ function buildListingLogoUrl(
 function buildJsonLd(
   listing: NonNullable<Awaited<ReturnType<typeof getPublishedListing>>>,
   url: string,
-  imageUrl: string | null,
+  images: { url: string; caption?: string }[],
 ) {
   const jsonLd: Record<string, unknown> = {
     "@context": "https://schema.org",
@@ -174,7 +202,18 @@ function buildJsonLd(
   };
   const description = listing.seoDescription?.trim() || stripMarkdownLiteToPlainText(listing.description) || listing.tagline;
   if (description) jsonLd.description = description;
-  if (imageUrl) jsonLd.image = imageUrl;
+  // A plain URL for an uncaptioned image (the logo, almost always), an
+  // ImageObject when there's a caption to carry (schema.org's `image`
+  // accepts either, and can mix both in one array) — and the single-value
+  // form rather than a 1-element array for the common case of just a logo
+  // and no gallery, so a listing with no photos gets exactly the same
+  // `image` shape it always has.
+  if (images.length > 0) {
+    const jsonLdImages = images.map((image) =>
+      image.caption ? { "@type": "ImageObject", url: image.url, caption: image.caption } : image.url,
+    );
+    jsonLd.image = jsonLdImages.length === 1 ? jsonLdImages[0] : jsonLdImages;
+  }
   // A structured PostalAddress (falling back to the free-text `address` as
   // streetAddress when state/country aren't set) reads far better to both a
   // rich-result parser and an AI crawler extracting "where is this
@@ -329,7 +368,7 @@ export default async function DirectoryListingPage({
           __html: buildJsonLd(
             { ...listing, services: displayServices },
             pageUrl,
-            buildListingLogoUrl(listing, siteOrigin, slug),
+            listingImageEntries(listing, siteOrigin, slug),
           ),
         }}
       />
@@ -669,14 +708,30 @@ export default async function DirectoryListingPage({
                 <CardBody>
                   <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
                     {listing.photos.map((photo) => (
-                      // eslint-disable-next-line @next/next/no-img-element -- served straight out of the DB by /api/directory-images, same reasoning as ListingLogo
-                      <img
-                        key={photo.id}
-                        src={`/api/directory-images/${photo.id}`}
-                        alt={photo.caption || listing.companyName}
-                        loading="lazy"
-                        className="aspect-square w-full rounded-md object-cover ring-1 ring-slate-200 dark:ring-neutral-800"
-                      />
+                      <figure key={photo.id} className="space-y-1">
+                        {/* eslint-disable-next-line @next/next/no-img-element -- served straight out of the DB by /api/directory-images, same reasoning as ListingLogo */}
+                        <img
+                          src={directoryImagePath(photo.id)}
+                          // Caption plus company name, not caption alone — a
+                          // photo with no caption still gets a distinct,
+                          // non-generic alt instead of repeating the bare
+                          // company name across every uncaptioned photo on
+                          // the page, and a photo with one gets the
+                          // business tied to it explicitly (useful to an AI
+                          // crawler that only sees this image out of
+                          // context, e.g. via Google Images).
+                          alt={photo.caption ? `${photo.caption} – ${listing.companyName}` : listing.companyName}
+                          loading="lazy"
+                          className="aspect-square w-full rounded-md object-cover ring-1 ring-slate-200 dark:ring-neutral-800"
+                        />
+                        {/* Same text as the alt above, but visible — search
+                            engines and AI crawlers both weigh on-page text
+                            more heavily than an attribute, and a sighted
+                            visitor gets the context an alt never shows them. */}
+                        {photo.caption && (
+                          <figcaption className="text-sm text-slate-600 dark:text-slate-300">{photo.caption}</figcaption>
+                        )}
+                      </figure>
                     ))}
                   </div>
                 </CardBody>
