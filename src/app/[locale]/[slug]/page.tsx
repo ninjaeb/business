@@ -32,7 +32,8 @@ import {
   directoryShareImage,
   serializeJsonLd,
 } from "@/lib/directory-seo";
-import { renderMarkdownLite, stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
+import { renderMarkdownLite, stripMarkdownLiteToPlainText, truncateAtWordBoundary } from "@/lib/markdown-lite";
+import { MAX_SEO_DESCRIPTION_LENGTH } from "@/lib/listing-seo-limits";
 import { resolveDirectoryLocale } from "@/lib/directory-locale";
 import {
   DIRECTORY_STRINGS,
@@ -109,7 +110,7 @@ export async function generateMetadata({
   const description =
     listing.seoDescription?.trim() ||
     listing.tagline ||
-    (plainDescription ? plainDescription.slice(0, 160) : undefined) ||
+    (plainDescription ? truncateAtWordBoundary(plainDescription, MAX_SEO_DESCRIPTION_LENGTH) : undefined) ||
     `${listing.companyName} on the business directory.`;
   const title = listing.seoTitle?.trim() || `${listing.companyName} | ${DIRECTORY_SITE_NAME_BY_LOCALE[resolved]}`;
   // No logo → a gallery photo, so a listing that skipped the logo upload

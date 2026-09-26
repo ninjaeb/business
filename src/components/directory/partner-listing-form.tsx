@@ -30,6 +30,7 @@ import { UpdatesEditor } from "@/components/directory/updates-editor";
 import { VideosEditor } from "@/components/directory/videos-editor";
 import { useToast } from "@/components/ui/toast";
 import { INDUSTRIES, INDUSTRY_LABELS } from "@/lib/labels";
+import { MAX_SEO_DESCRIPTION_LENGTH, MAX_SEO_TITLE_LENGTH, servicesContextText } from "@/lib/listing-seo-limits";
 import { cn } from "@/lib/utils";
 import type { PartnerListingStatus } from "@/generated/prisma/client";
 import type { OperatingHours } from "@/lib/operating-hours";
@@ -49,18 +50,19 @@ const LANGUAGE_TABS: { code: EditorTab; label: string }[] = [
   { code: "ms", label: "BM" },
 ];
 
-// The other two AI actions (description rewrite, SEO meta) just want a
-// readable summary of what services exist for grounding — not the
-// structured list itself, which rewriteListingServices below handles on
-// its own terms.
-function servicesContextText(services: ServiceEntry[]): string {
-  return services
-    .filter((service) => service.title.trim())
-    .map((service) => (service.description ? `${service.title} — ${service.description}` : service.title))
-    .join("\n");
-}
-
 const LISTING_FORM_ID = "partner-listing-form";
+
+// A soft, informational counter next to the SEO title/description fields —
+// maxLength on the input itself already stops a partner from typing past
+// the limit, this just shows how close they are to it as they type.
+function SeoCharCount({ value, max }: { value: string; max: number }) {
+  const remaining = max - value.length;
+  return (
+    <p className={cn("mt-1 text-right text-xs", remaining <= max * 0.1 ? "text-amber-600 dark:text-amber-400" : "text-slate-400")}>
+      {value.length}/{max}
+    </p>
+  );
+}
 
 export function PartnerListingForm({
   listingId,
@@ -451,8 +453,9 @@ export function PartnerListingForm({
                   value={seoTitle}
                   onChange={(event) => setSeoTitle(event.target.value)}
                   placeholder={`${companyName || "Your company"} | Business Directory`}
-                  maxLength={100}
+                  maxLength={MAX_SEO_TITLE_LENGTH}
                 />
+                <SeoCharCount value={seoTitle} max={MAX_SEO_TITLE_LENGTH} />
               </FieldGroup>
               <FieldGroup label="SEO description" htmlFor="seoDescription">
                 <Textarea
@@ -463,8 +466,9 @@ export function PartnerListingForm({
                   value={seoDescription}
                   onChange={(event) => setSeoDescription(event.target.value)}
                   placeholder="Shown in search results and when your link is shared — one or two sentences."
-                  maxLength={300}
+                  maxLength={MAX_SEO_DESCRIPTION_LENGTH}
                 />
+                <SeoCharCount value={seoDescription} max={MAX_SEO_DESCRIPTION_LENGTH} />
               </FieldGroup>
             </div>
             <p className="mt-1 text-xs text-slate-400">
