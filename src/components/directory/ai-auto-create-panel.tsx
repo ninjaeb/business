@@ -15,6 +15,17 @@ import { useToast } from "@/components/ui/toast";
 const SEARCH_DEBOUNCE_MS = 500;
 const MIN_QUERY_LENGTH = 2;
 
+function StepLabel({ step, children }: { step: number; children: React.ReactNode }) {
+  return (
+    <div className="mb-2 flex items-center gap-2">
+      <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-petrol text-[11px] font-semibold text-white dark:bg-petrol-light dark:text-petrol-ink">
+        {step}
+      </span>
+      <span className="text-xs font-semibold tracking-wide text-slate-500 uppercase dark:text-slate-400">{children}</span>
+    </div>
+  );
+}
+
 // The "AI Auto Business Details Creation" section at the top of the
 // listing editor — only ever rendered by the form when aiAvailable is true
 // (see partner-listing-form.tsx, which renders a bare Website field in its
@@ -130,119 +141,135 @@ export function AiAutoCreatePanel({
         </div>
       </div>
 
-      {placesAvailable && (
-        <div className="mt-3">
-          <Label htmlFor="places-search">Your business on Google Maps</Label>
-          <Input
-            id="places-search"
-            value={query}
-            onChange={(event) => {
-              // Not part of the listing itself, so typing here shouldn't
-              // count as an edit for the form's own "Saved" tracking.
-              event.stopPropagation();
-              const value = event.target.value;
-              setQuery(value);
-              // Clears immediately rather than waiting out the debounce —
-              // only the search request itself needs to wait.
-              if (value.trim().length < MIN_QUERY_LENGTH) setResults(null);
-            }}
-            onKeyDown={(event) => {
-              // Enter searches right away instead of waiting out the
-              // debounce — never submits the whole listing form.
-              if (event.key === "Enter") {
-                event.preventDefault();
-                if (debounceRef.current) clearTimeout(debounceRef.current);
-                runSearch(query);
-              }
-            }}
-            placeholder="Business name and city, e.g. Acme Printing Kuala Lumpur"
-            autoComplete="off"
-          />
+      <div className="mt-4 border-t border-slate-200 pt-4 dark:border-neutral-800">
+        <StepLabel step={1}>Find your business</StepLabel>
 
-          {searching && (!results || results.length === 0) && (
-            <p className="mt-2 text-sm text-slate-400">Searching…</p>
-          )}
-          {!searching && results && results.length === 0 && (
-            <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">No matches — try adding the city or area.</p>
-          )}
-          {results && results.length > 0 && (
-            <ul className="mt-2 divide-y divide-slate-200 overflow-hidden rounded-md border border-slate-200 dark:divide-neutral-800 dark:border-neutral-800">
-              {results.map((place) => (
-                <li key={place.id}>
-                  <button
-                    type="button"
-                    onClick={() => handleSelect(place)}
-                    className="flex w-full items-start gap-2 px-3 py-2 text-left text-sm hover:bg-slate-50 dark:hover:bg-neutral-800"
-                  >
-                    <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-slate-400" />
-                    <span className="min-w-0">
-                      <span className="block font-medium text-slate-900 dark:text-slate-100">{place.name}</span>
-                      {place.address && (
-                        <span className="block text-xs text-slate-500 dark:text-slate-400">{place.address}</span>
-                      )}
-                    </span>
-                  </button>
-                </li>
-              ))}
-            </ul>
-          )}
+        {placesAvailable && (
+          <div>
+            <Label htmlFor="places-search">Your business on Google Maps</Label>
+            <Input
+              id="places-search"
+              value={query}
+              onChange={(event) => {
+                // Not part of the listing itself, so typing here shouldn't
+                // count as an edit for the form's own "Saved" tracking.
+                event.stopPropagation();
+                const value = event.target.value;
+                setQuery(value);
+                // Clears immediately rather than waiting out the debounce —
+                // only the search request itself needs to wait.
+                if (value.trim().length < MIN_QUERY_LENGTH) setResults(null);
+              }}
+              onKeyDown={(event) => {
+                // Enter searches right away instead of waiting out the
+                // debounce — never submits the whole listing form.
+                if (event.key === "Enter") {
+                  event.preventDefault();
+                  if (debounceRef.current) clearTimeout(debounceRef.current);
+                  runSearch(query);
+                }
+              }}
+              placeholder="Business name and city, e.g. Acme Printing Kuala Lumpur"
+              autoComplete="off"
+            />
 
-          {selected && (
-            <div className="mt-2 flex items-start gap-2 rounded-md bg-led-soft px-3 py-2 text-sm text-slate-700 dark:bg-led-soft-dark dark:text-slate-200">
-              <Check className="mt-0.5 h-4 w-4 shrink-0 text-petrol-ink dark:text-petrol-light" />
-              <div className="min-w-0 flex-1">
-                <span className="block font-medium">{selected.name}</span>
-                {selected.address && <span className="block text-xs">{selected.address}</span>}
+            {searching && (!results || results.length === 0) && (
+              <p className="mt-2 text-sm text-slate-400">Searching…</p>
+            )}
+            {!searching && results && results.length === 0 && (
+              <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">No matches — try adding the city or area.</p>
+            )}
+            {results && results.length > 0 && (
+              <ul className="mt-2 divide-y divide-slate-200 overflow-hidden rounded-md border border-slate-200 dark:divide-neutral-800 dark:border-neutral-800">
+                {results.map((place) => (
+                  <li key={place.id}>
+                    <button
+                      type="button"
+                      onClick={() => handleSelect(place)}
+                      className="flex w-full items-start gap-2 px-3 py-2 text-left text-sm hover:bg-slate-50 dark:hover:bg-neutral-800"
+                    >
+                      <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-slate-400" />
+                      <span className="min-w-0">
+                        <span className="block font-medium text-slate-900 dark:text-slate-100">{place.name}</span>
+                        {place.address && (
+                          <span className="block text-xs text-slate-500 dark:text-slate-400">{place.address}</span>
+                        )}
+                      </span>
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
+
+            {selected && (
+              <div className="mt-2 flex items-start gap-2 rounded-md bg-led-soft px-3 py-2 text-sm text-slate-700 dark:bg-led-soft-dark dark:text-slate-200">
+                <Check className="mt-0.5 h-4 w-4 shrink-0 text-petrol-ink dark:text-petrol-light" />
+                <div className="min-w-0 flex-1">
+                  <span className="block font-medium">{selected.name}</span>
+                  {selected.address && <span className="block text-xs">{selected.address}</span>}
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setSelected(null)}
+                  className="shrink-0 text-xs text-slate-500 underline hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                >
+                  Change
+                </button>
               </div>
-              <button
-                type="button"
-                onClick={() => setSelected(null)}
-                className="shrink-0 text-xs text-slate-500 underline hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
-              >
-                Change
-              </button>
-            </div>
-          )}
+            )}
+          </div>
+        )}
+
+        <FieldGroup label="Website" htmlFor="website" className={placesAvailable ? "mt-3" : undefined}>
+          <Input
+            id="website"
+            name="website"
+            form={formId}
+            value={website}
+            onChange={(event) => onWebsiteChange(event.target.value)}
+            placeholder="acme.com"
+          />
+          <p className="mt-1 text-xs text-slate-400">
+            {placesAvailable
+              ? "Filled in automatically when you pick a business above — edit it any time."
+              : "Google Maps search isn't configured (GOOGLE_PLACES_API_KEY) — AI Auto Create reads this site directly instead."}
+          </p>
+        </FieldGroup>
+      </div>
+
+      <div className="mt-4 border-t border-slate-200 pt-4 dark:border-neutral-800">
+        <StepLabel step={2}>AI Auto Create</StepLabel>
+        <div className="flex flex-wrap items-center gap-3">
+          <Button
+            type="button"
+            onClick={handleCreate}
+            disabled={creating}
+            className="bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"
+          >
+            <Sparkles className="h-4 w-4" />
+            {creating ? "Creating…" : "AI Auto Create"}
+          </Button>
+          <p className="text-xs text-slate-400">
+            {creating
+              ? "Reading the Google listing and website, then writing — this can take up to a minute."
+              : "Drafts About, tagline, Products & services, FAQ, industry, categories, hours, address, SEO title & description, and logo from step 1 above. Review everything before saving."}
+          </p>
         </div>
-      )}
+      </div>
 
-      <FieldGroup label="Website" htmlFor="website" className="mt-3">
-        <Input
-          id="website"
-          name="website"
-          form={formId}
-          value={website}
-          onChange={(event) => onWebsiteChange(event.target.value)}
-          placeholder="acme.com"
-        />
-        <p className="mt-1 text-xs text-slate-400">
-          {placesAvailable
-            ? "Filled in automatically when you pick a business above — edit it any time."
-            : "Google Maps search isn't configured (GOOGLE_PLACES_API_KEY) — AI Auto Create reads this site directly instead."}
-        </p>
-      </FieldGroup>
-
-      <div className="mt-3 flex flex-wrap items-center gap-3">
-        <Button
-          type="button"
-          onClick={handleCreate}
-          disabled={creating}
-          className="bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"
-        >
-          <Sparkles className="h-4 w-4" />
-          {creating ? "Creating…" : "AI Auto Create"}
-        </Button>
-        <Button type="button" variant="secondary" onClick={onTranslate} disabled={translating}>
-          <Sparkles className="h-4 w-4" />
-          {translating ? "Translating…" : "AI Auto Translate"}
-        </Button>
-        <p className="text-xs text-slate-400">
-          {creating
-            ? "Reading the Google listing and website, then writing — this can take up to a minute."
-            : translating
+      <div className="mt-4 border-t border-slate-200 pt-4 dark:border-neutral-800">
+        <StepLabel step={3}>AI Auto Translate</StepLabel>
+        <div className="flex flex-wrap items-center gap-3">
+          <Button type="button" variant="secondary" onClick={onTranslate} disabled={translating}>
+            <Sparkles className="h-4 w-4" />
+            {translating ? "Translating…" : "AI Auto Translate"}
+          </Button>
+          <p className="text-xs text-slate-400">
+            {translating
               ? "Translating your English content into Chinese and Malay — this can take a moment."
-              : "AI Auto Create replaces About, tagline, Products & services, FAQ, industry, categories, hours, address, SEO title & description, and logo. AI Auto Translate fills in the Chinese and Malay tabs from your English content."}
-        </p>
+              : "Fills in the Chinese and Malay tabs from your English content above."}
+          </p>
+        </div>
       </div>
     </section>
   );
