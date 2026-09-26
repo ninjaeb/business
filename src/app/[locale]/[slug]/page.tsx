@@ -39,6 +39,7 @@ import {
   directoryHomePath,
   directoryListingPath,
   formatRecommendMessage,
+  formatViewsLabel,
   type DirectoryStrings,
 } from "@/lib/directory-i18n";
 import { translateCategoryName, categoryPath } from "@/lib/directory-category-labels";
@@ -403,7 +404,7 @@ export default async function DirectoryListingPage({
             {displayTagline && <p className="mt-1 text-base text-slate-600 dark:text-slate-300">{displayTagline}</p>}
             <p className="mt-1 flex items-center gap-1 text-sm text-slate-500 dark:text-slate-400">
               <Eye className="h-4 w-4" />
-              {t.viewsLabel(listing.viewCount)}
+              {formatViewsLabel(listing.viewCount, resolved)}
             </p>
             {/* From sm up, industry/category/state/country/website live here
                 — in the same column as the name and tagline, beside the
