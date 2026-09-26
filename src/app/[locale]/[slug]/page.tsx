@@ -1,0 +1,819 @@
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import { ChevronDown, Clock, Globe, MapPin } from "lucide-react";
+import { db } from "@/lib/db";
+import {
+  currentDayInTimezone,
+  DAYS_OF_WEEK,
+  formatOpeningHoursSchema,
+  isOpenNow,
+  isUpdateCurrent,
+  listingLogoPath,
+  loadPublishedListings,
+  readPublishedSnapshot,
+  relatedListingsByCategory,
+  slugify,
+  toDirectoryGridListing,
+  toEmbeddableVideoUrl,
+  buildBreadcrumbJsonLd,
+  type OperatingHours,
+} from "@/lib/directory";
+import {
+  DIRECTORY_ROBOTS,
+  DIRECTORY_SITE_NAME_BY_LOCALE,
+  OG_LOCALE_BY_DIRECTORY_LOCALE,
+  buildFaqJsonLd,
+  buildLanguageAlternates,
+  directoryShareImage,
+  serializeJsonLd,
+} from "@/lib/directory-seo";
+import { renderMarkdownLite, stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
+import { resolveDirectoryLocale } from "@/lib/directory-locale";
+import {
+  DIRECTORY_STRINGS,
+  DIRECTORY_HOME_TITLE_BY_LOCALE,
+  INDUSTRY_LABELS_BY_LOCALE,
+  directoryHomePath,
+  directoryListingPath,
+  formatRecommendMessage,
+  type DirectoryStrings,
+} from "@/lib/directory-i18n";
+import { translateCategoryName, categoryPath } from "@/lib/directory-category-labels";
+import { locationPath } from "@/lib/directory-location-labels";
+import { getSiteOrigin } from "@/lib/site-url";
+import { INDUSTRY_LABELS } from "@/lib/labels";
+import { cn } from "@/lib/utils";
+import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { buttonClasses } from "@/components/ui/button";
+import { ListingLogo } from "@/components/directory/listing-logo";
+import { ListingCard } from "@/components/directory/listing-card";
+import { DirectoryLeadForm } from "@/components/directory/directory-lead-form";
+import { InquiryProvider, InquiryScrollTarget } from "@/components/directory/listing-inquiry";
+import { ServiceList } from "@/components/directory/service-list";
+import { ShareButton } from "@/components/directory/share-button";
+import { RecommendBar } from "@/components/directory/recommend-bar";
+import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
+
+export const dynamic = "force-dynamic";
+
+// How many other listings in the same category to surface below this one
+// (see relatedListingsByCategory) — enough to be useful, not so many the
+// section competes with the listing's own content for attention.
+const MAX_RELATED_LISTINGS = 6;
+
+async function getPublishedListing(slug: string) {
+  const listing = await db.partnerListing.findUnique({ where: { slug } });
+  if (!listing) return null;
+  const snapshot = readPublishedSnapshot(listing.publishedSnapshot);
+  // id/partnerId ride along with the snapshot so the page can tell whose
+  // listing this is. publishedAt versions the logo URL (see
+  // listingLogoPath).
+  return snapshot ? { ...snapshot, id: listing.id, partnerId: listing.partnerId, publishedAt: listing.publishedAt } : null;
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}): Promise<Metadata> {
+  const { locale, slug } = await params;
+  const resolved = resolveDirectoryLocale(locale);
+  if (!resolved) return {};
+
+  const listing = await getPublishedListing(slug);
+  if (!listing) return {};
+
+  const siteOrigin = await getSiteOrigin();
+  const url = `${siteOrigin}${directoryListingPath(resolved, slug)}`;
+  // Meta/OG/Twitter descriptions are plain-text summaries — strip the
+  // About field's own markdown-lite syntax first so a search result or
+  // link preview never shows literal "**"/"[]()" characters. seoTitle/
+  // seoDescription (optionally AI-written — see generateListingSeoMeta)
+  // take priority when a partner has set them; everything after is the
+  // same fallback chain as before.
+  const plainDescription = stripMarkdownLiteToPlainText(listing.description);
+  const description =
+    listing.seoDescription?.trim() ||
+    listing.tagline ||
+    (plainDescription ? plainDescription.slice(0, 160) : undefined) ||
+    `${listing.companyName} on the business directory.`;
+  const title = listing.seoTitle?.trim() || `${listing.companyName} | ${DIRECTORY_SITE_NAME_BY_LOCALE[resolved]}`;
+  // No logo → the directory's own branded share image (see
+  // directoryShareImage) rather than the bare app icon.
+  const imageUrl = buildListingLogoUrl(listing, siteOrigin, slug);
+  const shareImage = imageUrl ? { url: imageUrl } : directoryShareImage(siteOrigin, resolved);
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: url,
+      // The page body itself does vary by language (see the translation
+      // lookup below, in the page component) even though this title/
+      // description stay the partner's own single-language SEO fields.
+      languages: buildLanguageAlternates(siteOrigin, (code) => directoryListingPath(code, slug)),
+    },
+    robots: DIRECTORY_ROBOTS,
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName: DIRECTORY_SITE_NAME_BY_LOCALE[resolved],
+      type: "website",
+      locale: OG_LOCALE_BY_DIRECTORY_LOCALE[resolved],
+      images: [shareImage],
+    },
+    twitter: {
+      // A logo is roughly square, which suits the small summary card; the
+      // 1200×630 branded image wants the large one.
+      card: imageUrl ? "summary" : "summary_large_image",
+      title,
+      description,
+      images: [shareImage],
+    },
+  };
+}
+
+// A listing's logo is stored as a data: URL (see photoDataUrl), which
+// Open Graph/Twitter/JSON-LD can't use directly — those are read by a
+// crawler that fetches the image URL itself, not by a browser rendering
+// the page. /api/directory-images/logo/[slug] decodes and re-serves it
+// under a real URL instead (versioned by publish time, see
+// listingLogoPath, so a replaced logo is a new URL to every cache and
+// link-preview scraper too). Returns null when the listing has no logo —
+// callers decide their own fallback (OG/Twitter inherit the directory's
+// branded share image; JSON-LD's `image` is meant to represent this
+// specific business, so it's left unset entirely rather than pointed at
+// unrelated Gotka branding).
+function buildListingLogoUrl(
+  listing: NonNullable<Awaited<ReturnType<typeof getPublishedListing>>>,
+  siteOrigin: string,
+  slug: string,
+): string | null {
+  return listing.logoUrl ? `${siteOrigin}${listingLogoPath(slug, listing.publishedAt)}` : null;
+}
+
+// Schema.org LocalBusiness markup — read by both search engines (SEO) and
+// AI answer engines that crawl the page (GEO). Deliberately never includes
+// a phone number: this is public, crawlable content, and the partner's own
+// contact details stay internal (see PublishedListingSnapshot's own
+// comment in src/lib/directory.ts) — a visitor reaches a partner only
+// through the lead form below, never directly.
+function buildJsonLd(
+  listing: NonNullable<Awaited<ReturnType<typeof getPublishedListing>>>,
+  url: string,
+  imageUrl: string | null,
+) {
+  const jsonLd: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: listing.companyName,
+    url,
+  };
+  const description = listing.seoDescription?.trim() || stripMarkdownLiteToPlainText(listing.description) || listing.tagline;
+  if (description) jsonLd.description = description;
+  if (imageUrl) jsonLd.image = imageUrl;
+  // A structured PostalAddress (falling back to the free-text `address` as
+  // streetAddress when state/country aren't set) reads far better to both a
+  // rich-result parser and an AI crawler extracting "where is this
+  // business" than the same info as one opaque string ever did.
+  if (listing.address || listing.state || listing.country) {
+    jsonLd.address = {
+      "@type": "PostalAddress",
+      ...(listing.address ? { streetAddress: listing.address } : {}),
+      ...(listing.state ? { addressRegion: listing.state } : {}),
+      ...(listing.country ? { addressCountry: listing.country } : {}),
+    };
+  }
+  if (listing.website) jsonLd.sameAs = [listing.website];
+  // English regardless of the page's own locale — schema.org's own
+  // vocabulary/consumers (search engines, AI crawlers) expect this field in
+  // a consistent language, unlike the human-visible badge below.
+  if (listing.industry) jsonLd.additionalType = INDUSTRY_LABELS[listing.industry];
+  if (listing.operatingHours) {
+    const openingHours = formatOpeningHoursSchema(listing.operatingHours);
+    if (openingHours.length > 0) jsonLd.openingHours = openingHours;
+  }
+  if (listing.services.length > 0) {
+    // service.price is deliberately left out of this Offer — it's free
+    // text a partner typed ("RM 25/day", "From RM 900/mo"), not the plain
+    // decimal plus separate priceCurrency schema.org's Offer.price expects.
+    // The visible price badge on the page itself is unaffected; this only
+    // keeps the JSON-LD from asserting an invalid price value.
+    jsonLd.makesOffer = listing.services.map((service) => ({
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: service.title,
+        ...(service.description ? { description: service.description } : {}),
+      },
+    }));
+  }
+  return serializeJsonLd(jsonLd);
+}
+
+type HoursRow = { day: string; label: string; status: string; isToday: boolean };
+
+// One row per day of the week (Monday–Sunday, always all seven) rather than
+// collapsing consecutive matching days into a range — this is the display
+// table on the detail page; buildJsonLd's own openingHours still uses the
+// compact grouped form, which is what schema.org actually wants.
+function buildHoursRows(hours: OperatingHours, t: DirectoryStrings, timezone: string | null): HoursRow[] {
+  // Prefer the listing's own timezone for "today" — an older listing with
+  // none set falls back to the server's local day rather than showing no
+  // highlight at all.
+  const jsDay = new Date().getDay(); // 0 (Sun) .. 6 (Sat)
+  const serverTodayKey = DAYS_OF_WEEK[(jsDay + 6) % 7]; // rotate to our Monday-first order
+  const todayKey = (timezone && currentDayInTimezone(timezone)) || serverTodayKey;
+  return DAYS_OF_WEEK.map((day) => {
+    const isToday = day === todayKey;
+    const dayHours = hours[day];
+    const status = dayHours
+      ? `${isToday ? t.hoursOpenTodayLabel : t.hoursOpenLabel}: ${dayHours.open} – ${dayHours.close}`
+      : isToday
+        ? t.hoursClosedTodayLabel
+        : t.hoursClosedLabel;
+    return { day, label: t.dayLabels[day], status, isToday };
+  });
+}
+
+export default async function DirectoryListingPage({
+  params,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}) {
+  const { locale, slug } = await params;
+  const resolved = resolveDirectoryLocale(locale);
+  if (!resolved) notFound();
+
+  // Reads the approved snapshot only — never the partner's live-editing
+  // draft — same invariant the listing grid enforces (see
+  // src/lib/directory.ts's PublishedListingSnapshot comment). A slug with
+  // no snapshot at all (never approved, or since unpublished) 404s exactly
+  // like one that doesn't exist.
+  const listing = await getPublishedListing(slug);
+  if (!listing) notFound();
+
+  const siteOrigin = await getSiteOrigin();
+  const t = DIRECTORY_STRINGS[resolved];
+  const mapAddress = listing.address;
+  const pageUrl = `${siteOrigin}${directoryListingPath(resolved, slug)}`;
+
+  // This app has no affiliate/referral-commission system (see the CRM this
+  // was extracted from, which tracked a "Recommend" link back to whichever
+  // partner shared it via directoryReferralUrl/getBusinessSessionPayload) —
+  // "Recommend" is just a plain, untracked share of the listing's own
+  // canonical URL, offered to every visitor rather than gated to a signed-in
+  // partner with a referral code.
+  const recommendUrl = pageUrl;
+  const recommendMessage = formatRecommendMessage(t.recommendMessage, listing.companyName, recommendUrl);
+
+  // The partner's own tagline/description/services/faqs stay the source of
+  // truth — a translation only stands in for whichever field it actually
+  // covers, so a half-filled translation (tagline only, say) still shows
+  // the primary language's About text (or services/FAQ) rather than
+  // leaving it blank. Company name is never translated — always shown
+  // exactly as the partner entered it, regardless of locale.
+  const translation = resolved === "zh" || resolved === "ms" ? listing.translations[resolved] : undefined;
+  const displayTagline = translation?.tagline || listing.tagline;
+  const displayDescription = translation?.description || listing.description;
+  const displayServices = translation?.services?.length ? translation.services : listing.services;
+  const displayFaqs = translation?.faqs?.length ? translation.faqs : listing.faqs;
+  // Not translated (see UpdatesEditor) — always the partner's own English
+  // text, regardless of locale, same as companyName.
+  const todayIso = new Date().toISOString().slice(0, 10);
+  const currentUpdates = listing.updates.filter((update) => isUpdateCurrent(update, todayIso));
+  const embeddableVideoUrl = listing.videoUrl ? toEmbeddableVideoUrl(listing.videoUrl) : null;
+
+  // Home > (first category, if any) > this business. Only the first
+  // category, not every one a listing has — a breadcrumb trail is meant to
+  // read as one path back to the root, not an exhaustive tag list.
+  const primaryCategory = listing.categories[0];
+  const breadcrumbItems = [
+    { name: DIRECTORY_HOME_TITLE_BY_LOCALE[resolved], url: `${siteOrigin}${directoryHomePath(resolved)}` },
+    ...(primaryCategory
+      ? [
+          {
+            name: translateCategoryName(primaryCategory, resolved),
+            url: `${siteOrigin}${categoryPath(slugify(primaryCategory), resolved)}`,
+          },
+        ]
+      : []),
+    { name: listing.companyName, url: pageUrl },
+  ];
+  const breadcrumbJsonLd = buildBreadcrumbJsonLd(breadcrumbItems);
+
+  // Other listings sharing this one's primary category — without this,
+  // landing on a listing page from search or an AI answer engine has no
+  // path to another business except going all the way back to the
+  // directory home. Skipped entirely (no query at all) for a listing with
+  // no category, rather than loading every published listing to find none
+  // to show.
+  const relatedListings = primaryCategory
+    ? relatedListingsByCategory(await loadPublishedListings(), primaryCategory, slug, MAX_RELATED_LISTINGS).map((row) =>
+        toDirectoryGridListing(row, resolved),
+      )
+    : [];
+
+  return (
+    // Bottom padding clears whatever is pinned over the page's foot: the
+    // mobile jump bar below (always, on small screens), plus the
+    // RecommendBar's own pill, which floats above that jump bar on mobile
+    // and becomes its own strip from sm up.
+    <div className="w-full px-4 pb-40 sm:px-8 sm:pb-28">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: buildJsonLd(
+            { ...listing, services: displayServices },
+            pageUrl,
+            buildListingLogoUrl(listing, siteOrigin, slug),
+          ),
+        }}
+      />
+      {displayFaqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(displayFaqs) }}
+        />
+      )}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbJsonLd }} />
+      <div className="mb-4">
+        <DirectoryBreadcrumbs items={breadcrumbItems} navLabel={t.breadcrumbNavLabel} />
+      </div>
+      <div className="mb-8 border-b border-slate-200 bg-white px-4 py-4 -mx-4 sm:-mx-8 sm:px-8 dark:border-neutral-800 dark:bg-neutral-900">
+        <div className="flex flex-wrap items-start gap-4">
+          {/* 96px below sm — a fixed 200px logo left too little width for
+              the name column beside it on a phone screen, to the point a
+              longer company name could clip instead of wrapping. Full
+              200px from sm up, where there's room for both. */}
+          <ListingLogo
+            name={listing.companyName}
+            logoUrl={listing.logoUrl ? listingLogoPath(slug, listing.publishedAt) : null}
+            size={200}
+            className="h-24 w-24 text-2xl sm:h-[200px] sm:w-[200px] sm:text-4xl"
+          />
+          <div className="min-w-0 flex-1">
+            <h1 className="text-3xl font-semibold text-slate-900 dark:text-slate-100">{listing.companyName}</h1>
+            {displayTagline && <p className="mt-1 text-base text-slate-600 dark:text-slate-300">{displayTagline}</p>}
+            {/* From sm up, industry/category/state/country/website live here
+                — in the same column as the name and tagline, beside the
+                logo — rather than their own full-width row further down,
+                which otherwise leaves the space below a short tagline next
+                to a 200px logo empty. Below sm there's no spare height left
+                in this column for a phone-width logo, so the sm:hidden
+                block after this row repeats the same content as its own
+                full-width row instead. Industry/category, state/country,
+                and website are three separate lines (each still its own
+                flex-wrap row, for a long combination within one group)
+                rather than one shared wrapping row. */}
+            {(listing.industry || listing.categories.length > 0 || listing.state || listing.country || listing.website) && (
+              <div className="mt-3 hidden flex-col gap-2 sm:flex">
+                {(listing.industry || listing.categories.length > 0) && (
+                  <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
+                    {listing.industry && (
+                      <Link href={`${directoryHomePath(resolved)}?industry=${listing.industry}`}>
+                        <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
+                          {INDUSTRY_LABELS_BY_LOCALE[resolved][listing.industry]}
+                        </Badge>
+                      </Link>
+                    )}
+                    {listing.categories.map((category) => (
+                      <Link key={category} href={categoryPath(slugify(category), resolved)}>
+                        <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
+                          {translateCategoryName(category, resolved)}
+                        </Badge>
+                      </Link>
+                    ))}
+                  </div>
+                )}
+                {(listing.state || listing.country) && (
+                  <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
+                    {listing.state && (
+                      <Link
+                        href={locationPath(slugify(listing.state), resolved)}
+                        className="inline-flex items-center gap-1 hover:text-petrol hover:underline dark:hover:text-petrol-light"
+                      >
+                        <MapPin className="h-4 w-4" />
+                        {listing.state}
+                      </Link>
+                    )}
+                    {listing.country && (
+                      <Link
+                        href={`${directoryHomePath(resolved)}?country=${encodeURIComponent(listing.country)}`}
+                        className="hover:text-petrol hover:underline dark:hover:text-petrol-light"
+                      >
+                        {listing.country}
+                      </Link>
+                    )}
+                  </div>
+                )}
+                {listing.website && (
+                  <a
+                    href={listing.website}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="inline-flex items-center gap-1 text-base text-petrol hover:underline dark:text-petrol-light"
+                  >
+                    <Globe className="h-4 w-4" />
+                    {t.websiteLabel}
+                  </a>
+                )}
+              </div>
+            )}
+          </div>
+          {/* Share/Recommend live in the header's top-right corner from sm
+              up — tablet has the same spare width desktop does, nothing
+              here needs lg:'s extra room, so both get the stack. Recommend
+              leads: sharing a business is the deliberate, opt-in action,
+              Share is the everyday one right below it. Below sm there's no
+              corner left beside the logo, so the same two buttons render
+              again, full-width side by side, in their own row under the
+              badges instead — see the sm:hidden block below. */}
+          <div className="hidden w-44 shrink-0 flex-col gap-2 sm:flex">
+            <ShareButton
+              title={listing.companyName}
+              url={recommendUrl}
+              message={recommendMessage}
+              label={t.recommendLabel}
+              icon="recommend"
+              variant="primary"
+              className="w-full bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"
+            />
+            <ShareButton title={listing.companyName} url={pageUrl} label={t.shareLabel} className="w-full" />
+          </div>
+        </div>
+
+        {/* Phone-width fallback for the sm:+ version tucked into the name
+            column above — same content and order, just its own full-width
+            block since there's no spare height beside the logo down here.
+            Industry/category get their own line; state/country and website
+            share the next one (there's enough width for all three on a
+            phone, unlike the desktop column squeezed beside a 200px logo,
+            which keeps them on three separate lines). */}
+        {(listing.industry || listing.categories.length > 0 || listing.state || listing.country || listing.website) && (
+          <div className="mt-3 flex flex-col gap-2 sm:hidden">
+            {(listing.industry || listing.categories.length > 0) && (
+              <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
+                {listing.industry && (
+                  <Link href={`${directoryHomePath(resolved)}?industry=${listing.industry}`}>
+                    <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
+                      {INDUSTRY_LABELS_BY_LOCALE[resolved][listing.industry]}
+                    </Badge>
+                  </Link>
+                )}
+                {listing.categories.map((category) => (
+                  <Link key={category} href={categoryPath(slugify(category), resolved)}>
+                    <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
+                      {translateCategoryName(category, resolved)}
+                    </Badge>
+                  </Link>
+                ))}
+              </div>
+            )}
+            {(listing.state || listing.country || listing.website) && (
+              <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
+                {listing.state && (
+                  <Link
+                    href={locationPath(slugify(listing.state), resolved)}
+                    className="inline-flex items-center gap-1 hover:text-petrol hover:underline dark:hover:text-petrol-light"
+                  >
+                    <MapPin className="h-4 w-4" />
+                    {listing.state}
+                  </Link>
+                )}
+                {listing.country && (
+                  <Link
+                    href={`${directoryHomePath(resolved)}?country=${encodeURIComponent(listing.country)}`}
+                    className="hover:text-petrol hover:underline dark:hover:text-petrol-light"
+                  >
+                    {listing.country}
+                  </Link>
+                )}
+                {listing.website && (
+                  <a
+                    href={listing.website}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="inline-flex items-center gap-1 text-petrol hover:underline dark:text-petrol-light"
+                  >
+                    <Globe className="h-4 w-4" />
+                    {t.websiteLabel}
+                  </a>
+                )}
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* Phone-width fallback for the corner stack above — same two
+            buttons, same order, just a full-width row since there's no
+            room beside the logo down here. flex-wrap is the safety net on
+            the narrowest phones: whitespace-nowrap label text (see
+            ShareButton) won't shrink below its own width, so if both
+            buttons together don't fit one line, the second wraps to its
+            own full-width line rather than clipping. */}
+        <div className="mt-3 flex flex-wrap items-center gap-2 sm:hidden">
+          <ShareButton
+            title={listing.companyName}
+            url={recommendUrl}
+            message={recommendMessage}
+            label={t.recommendLabel}
+            icon="recommend"
+            variant="primary"
+            className="flex-1 justify-center bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"
+          />
+          <ShareButton title={listing.companyName} url={pageUrl} label={t.shareLabel} className="flex-1 justify-center" />
+        </div>
+      </div>
+
+      <InquiryProvider>
+        <div className="grid gap-6 lg:grid-cols-3">
+          <div className="space-y-6 lg:col-span-2">
+            {displayDescription && (
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-base">{t.aboutHeading}</CardTitle>
+                </CardHeader>
+                <CardBody className="text-base text-slate-600 dark:text-slate-300">
+                  {renderMarkdownLite(displayDescription)}
+                </CardBody>
+              </Card>
+            )}
+
+            {embeddableVideoUrl ? (
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-base">{t.videoHeading}</CardTitle>
+                </CardHeader>
+                <CardBody>
+                  <div className="aspect-video overflow-hidden rounded-md">
+                    <iframe
+                      title={`${listing.companyName} video`}
+                      src={embeddableVideoUrl}
+                      className="h-full w-full border-0"
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                </CardBody>
+              </Card>
+            ) : (
+              listing.videoUrl && (
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-base">{t.videoHeading}</CardTitle>
+                  </CardHeader>
+                  <CardBody>
+                    <a
+                      href={listing.videoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      className="text-base text-petrol hover:underline dark:text-petrol-light"
+                    >
+                      {listing.videoUrl}
+                    </a>
+                  </CardBody>
+                </Card>
+              )
+            )}
+
+            {(displayServices.length > 0 || listing.operatingHours) && (
+              <div
+                className={cn(
+                  "grid gap-6",
+                  displayServices.length > 0 && listing.operatingHours ? "sm:grid-cols-2" : "",
+                )}
+              >
+                {displayServices.length > 0 && (
+                  <Card id="services" className="scroll-mt-32">
+                    <CardHeader>
+                      <CardTitle className="text-base">{t.servicesHeading}</CardTitle>
+                    </CardHeader>
+                    <CardBody>
+                      <ServiceList services={displayServices} />
+                    </CardBody>
+                  </Card>
+                )}
+                {listing.operatingHours && (
+                  <Card>
+                    <CardHeader className="gap-2">
+                      <CardTitle className="flex items-center gap-1.5 text-base">
+                        <Clock className="h-4 w-4 text-slate-400" />
+                        {t.hoursHeading}
+                      </CardTitle>
+                      {listing.timezone &&
+                        (() => {
+                          const openNow = isOpenNow(listing.operatingHours, listing.timezone);
+                          if (openNow === null) return null;
+                          return (
+                            <Badge
+                              className={
+                                openNow
+                                  ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-400"
+                                  : "bg-slate-100 text-slate-500 dark:bg-neutral-800 dark:text-slate-400"
+                              }
+                            >
+                              {openNow ? t.hoursOpenNowBadge : t.hoursClosedNowBadge}
+                            </Badge>
+                          );
+                        })()}
+                    </CardHeader>
+                    <CardBody>
+                      <div className="overflow-hidden rounded-md border border-slate-200 dark:border-neutral-800">
+                        <table className="w-full text-base">
+                          <tbody>
+                            {buildHoursRows(listing.operatingHours, t, listing.timezone).map((row) => (
+                              <tr
+                                key={row.day}
+                                className={cn(
+                                  "border-b border-slate-200 last:border-b-0 dark:border-neutral-800",
+                                  row.isToday && "bg-led-soft dark:bg-led-soft-dark",
+                                )}
+                              >
+                                <td
+                                  className={cn(
+                                    "px-3 py-2 font-semibold text-slate-700 dark:text-slate-300",
+                                    row.isToday && "text-petrol-ink dark:text-petrol-light",
+                                  )}
+                                >
+                                  {row.label}
+                                </td>
+                                <td
+                                  className={cn(
+                                    "px-3 py-2 text-slate-600 dark:text-slate-300",
+                                    row.isToday && "font-semibold text-petrol-ink dark:text-petrol-light",
+                                  )}
+                                >
+                                  {row.status}
+                                </td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    </CardBody>
+                  </Card>
+                )}
+              </div>
+            )}
+
+            {listing.photos.length > 0 && (
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-base">{t.photosHeading}</CardTitle>
+                </CardHeader>
+                <CardBody>
+                  <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+                    {listing.photos.map((photo) => (
+                      // eslint-disable-next-line @next/next/no-img-element -- served straight out of the DB by /api/directory-images, same reasoning as ListingLogo
+                      <img
+                        key={photo.id}
+                        src={`/api/directory-images/${photo.id}`}
+                        alt={photo.caption || listing.companyName}
+                        loading="lazy"
+                        className="aspect-square w-full rounded-md object-cover ring-1 ring-slate-200 dark:ring-neutral-800"
+                      />
+                    ))}
+                  </div>
+                </CardBody>
+              </Card>
+            )}
+
+            {currentUpdates.length > 0 && (
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-base">{t.updatesHeading}</CardTitle>
+                </CardHeader>
+                <CardBody className="space-y-3">
+                  {currentUpdates.map((update, index) => (
+                    <div key={index} className="rounded-md border border-slate-200 p-3 dark:border-neutral-800">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <Badge
+                          className={
+                            update.kind === "PROMOTION"
+                              ? "bg-led text-led-ink ring-0"
+                              : "bg-slate-100 text-slate-600 ring-0 dark:bg-neutral-800 dark:text-slate-300"
+                          }
+                        >
+                          {update.kind === "PROMOTION" ? t.promotionLabel : t.newsLabel}
+                        </Badge>
+                        <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">{update.title}</h3>
+                      </div>
+                      <p className="mt-1 whitespace-pre-wrap text-base text-slate-600 dark:text-slate-300">{update.body}</p>
+                    </div>
+                  ))}
+                </CardBody>
+              </Card>
+            )}
+
+            {mapAddress && (
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-base">{t.visitHeading}</CardTitle>
+                </CardHeader>
+                <CardBody className="space-y-4">
+                  {listing.address && (
+                    <a
+                      href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapAddress.replace(/\n/g, ", "))}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-start gap-2 text-base text-slate-600 hover:text-petrol hover:underline dark:text-slate-300 dark:hover:text-petrol-light"
+                    >
+                      <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-slate-400" />
+                      <span className="whitespace-pre-wrap">{listing.address}</span>
+                    </a>
+                  )}
+                  <iframe
+                    title={`${listing.companyName} on the map`}
+                    src={`https://www.google.com/maps?q=${encodeURIComponent(mapAddress.replace(/\n/g, ", "))}&output=embed`}
+                    className="h-96 w-full rounded-md border-0"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                </CardBody>
+              </Card>
+            )}
+
+            {displayFaqs.length > 0 && (
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-base">{t.faqHeading}</CardTitle>
+                </CardHeader>
+                <CardBody className="space-y-2">
+                  {displayFaqs.map((faq, index) => (
+                    <details
+                      key={index}
+                      className="group rounded-md border border-slate-200 px-3 py-2 dark:border-neutral-800"
+                    >
+                      <summary className="flex cursor-pointer list-none items-center justify-between gap-2 text-base font-semibold text-slate-900 marker:content-none dark:text-slate-100">
+                        {faq.question}
+                        <ChevronDown className="h-4 w-4 shrink-0 text-slate-400 transition-transform group-open:rotate-180" />
+                      </summary>
+                      <p className="mt-2 text-base text-slate-600 dark:text-slate-300">{faq.answer}</p>
+                    </details>
+                  ))}
+                </CardBody>
+              </Card>
+            )}
+          </div>
+
+          <InquiryScrollTarget id="contact" className="scroll-mt-32 lg:sticky lg:top-32 lg:self-start">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-base">{t.contactHeading}</CardTitle>
+              </CardHeader>
+              <CardBody>
+                <p className="mb-4 text-base text-slate-500 dark:text-slate-400">{t.contactSubheading}</p>
+                <DirectoryLeadForm slug={slug} locale={resolved} />
+              </CardBody>
+            </Card>
+          </InquiryScrollTarget>
+        </div>
+      </InquiryProvider>
+
+      {relatedListings.length > 0 && primaryCategory && (
+        <section aria-labelledby="related-listings" className="mt-10">
+          <h2 id="related-listings" className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+            {t.relatedListingsHeading.replace("{category}", translateCategoryName(primaryCategory, resolved))}
+          </h2>
+          <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {relatedListings.map((related) => (
+              <ListingCard
+                key={related.slug}
+                listing={related}
+                viewLabel={t.viewListing}
+                industryLabel={related.industry ? INDUSTRY_LABELS_BY_LOCALE[resolved][related.industry] : undefined}
+                locale={resolved}
+              />
+            ))}
+          </div>
+        </section>
+      )}
+
+      <RecommendBar title={listing.companyName} url={recommendUrl} message={recommendMessage} label={t.recommendBusinessCta} />
+
+      {/* Mobile only — on lg+ the Get in touch card is already visible in
+          the sticky right-hand column, so this would just duplicate it. */}
+      <nav
+        aria-label={t.stickyNavLabel}
+        className="fixed inset-x-0 bottom-0 z-20 flex gap-2 border-t border-slate-200 bg-white px-4 py-3 sm:hidden dark:border-neutral-800 dark:bg-neutral-900"
+      >
+        {displayServices.length > 0 && (
+          <a href="#services" className={buttonClasses("secondary", "md", "flex-1 justify-center")}>
+            {t.servicesHeading}
+          </a>
+        )}
+        <a
+          href="#contact"
+          className={buttonClasses("primary", "md", "flex-1 justify-center bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led")}
+        >
+          {t.contactHeading}
+        </a>
+      </nav>
+    </div>
+  );
+}
