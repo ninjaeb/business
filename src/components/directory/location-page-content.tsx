@@ -32,7 +32,7 @@ import { DirectorySearch } from "@/components/directory/directory-search";
 import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
 
 // Shared by every locale variant of the friendly location route (see
-// src/app/[locale]/business/location/[stateSlug]/page.tsx), same division
+// src/app/[locale]/location/[stateSlug]/page.tsx), same division
 // of labor as buildCategoryMetadata/CategoryPageContent. No noindex branch
 // here the way the category version has: a category can exist in
 // BusinessCategory with zero published listings, but a state slug only

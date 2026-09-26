@@ -20,7 +20,7 @@ export function findIndustryBySlug(slug: string): Industry | null {
 
 // Same shape as categoryPath in directory-category-labels.ts.
 export function industryPath(industry: Industry, locale: DirectoryLocale): string {
-  return `/${locale}/business/industry/${industrySlug(industry)}`;
+  return `/${locale}/industry/${industrySlug(industry)}`;
 }
 
 export function industryPageTitle(industry: Industry, locale: DirectoryLocale): string {

@@ -1,6 +1,6 @@
 import type { DirectoryLocale } from "@/lib/directory-i18n";
 
-// The public "why list here" page (src/app/[locale]/business/benefits) —
+// The public "why list here" page (src/app/[locale]/benefits) —
 // kept as its own copy file, same pattern as directory-home-copy.ts, so the
 // page component stays a plain layout and every claim below is checked in
 // one place. Every claim is something this codebase actually does (see the

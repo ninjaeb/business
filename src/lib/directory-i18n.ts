@@ -27,39 +27,44 @@ export const DIRECTORY_HOME_TITLE_BY_LOCALE: Record<DirectoryLocale, string> = {
 };
 
 // Every directory URL carries its language as a leading path segment —
-// /en/business, /zh/business/some-company, /ms/business/signup — English
-// included, rather than a bare default-locale URL, so all three languages
-// are equally real, bookmarkable, crawlable pages (see sitemap-generator.ts) instead
-// of one "canonical" version plus query-param/cookie variants. Lives under
-// /business rather than /directory (the tree's own folder name, and every
-// old link, was /directory until it was renamed for a friendlier public
-// URL). The signed-in partner portal used to share that same bare word —
-// it's since moved to its own /business-portal (src/app/business-portal/)
-// specifically so the two don't collide or read as the same thing; that
-// portal isn't locale-prefixed either way, so it was never a routing
-// conflict, just a naming one. Every old /directory/* URL, prefixed or
-// not, still resolves — see src/app/directory/ and src/app/[locale]/directory/
-// — as a permanent redirect into here, for old links/bookmarks/SEO.
+// /en, /zh/some-company, /ms/signup — English included, rather than a
+// bare default-locale URL, so all three languages are equally real,
+// bookmarkable, crawlable pages (see sitemap-generator.ts) instead of one
+// "canonical" version plus query-param/cookie variants. The whole public
+// directory sits directly under its locale segment now — no /business or
+// /directory word in between (the tree's own folder name, and every old
+// link, was /directory, then /business, until each was dropped in turn for
+// a friendlier public URL). The signed-in partner portal used to share the
+// /business word — it's since moved to its own /business-portal
+// (src/app/business-portal/), which isn't locale-prefixed either way, so
+// it was never a routing conflict, just a naming one. Every old
+// /[locale]/business/* and /directory/* URL, prefixed or not, still
+// resolves — see src/app/[locale]/business/, src/app/directory/ and
+// src/app/[locale]/directory/ — as a permanent redirect into here, for old
+// links/bookmarks/SEO.
 export function directoryHomePath(locale: DirectoryLocale): string {
-  return `/${locale}/business`;
+  return `/${locale}`;
 }
 
 export function directorySignupPath(locale: DirectoryLocale): string {
-  return `/${locale}/business/signup`;
+  return `/${locale}/signup`;
 }
 
 export function directoryBenefitsPath(locale: DirectoryLocale): string {
-  return `/${locale}/business/benefits`;
+  return `/${locale}/benefits`;
 }
 
-// A listing's own page drops the /business segment entirely — just
-// /en/some-company — shorter and friendlier to share than every other
-// directory URL above, since it's the one visitors actually pass around.
-// Lives at src/app/[locale]/[slug], a sibling of src/app/[locale]/business
-// rather than nested under it; Next.js resolves the static "business"
-// (and "directory") folders ahead of this dynamic one, so there's no
-// collision with the home/category/location/signup/benefits pages. Every
-// old /[locale]/business/<slug> URL still resolves — see
+// A listing's own page is just /en/some-company — shorter and friendlier
+// to share than every other directory URL, since it's the one visitors
+// actually pass around. Lives at src/app/[locale]/[slug], a sibling of
+// every static directory folder below (category, location, industry,
+// categories, locations, products, news, signup, benefits) rather than
+// nested under any of them; Next.js resolves those static folders ahead of
+// this dynamic one, so a listing at one of those exact slugs is the one
+// tradeoff of dropping the old /business segment — same as a listing
+// slugged "business" or "directory" already couldn't reach its own page
+// either, back when those were the static siblings doing the same job.
+// Every old /[locale]/business/<slug> URL still resolves — see
 // src/app/[locale]/business/[slug]/ — as a permanent redirect into here,
 // for old links/bookmarks/SEO.
 export function directoryListingPath(locale: DirectoryLocale, slug: string): string {
@@ -70,19 +75,19 @@ export function directoryListingPath(locale: DirectoryLocale, slug: string): str
 // index/feed pages, distinct from the existing per-category (categoryPath)
 // / per-location (locationPath) pages they each link out to.
 export function directoryCategoriesIndexPath(locale: DirectoryLocale): string {
-  return `/${locale}/business/categories`;
+  return `/${locale}/categories`;
 }
 
 export function directoryLocationsIndexPath(locale: DirectoryLocale): string {
-  return `/${locale}/business/locations`;
+  return `/${locale}/locations`;
 }
 
 export function directoryProductsPath(locale: DirectoryLocale): string {
-  return `/${locale}/business/products`;
+  return `/${locale}/products`;
 }
 
 export function directoryNewsPath(locale: DirectoryLocale): string {
-  return `/${locale}/business/news`;
+  return `/${locale}/news`;
 }
 
 export const DEFAULT_DIRECTORY_LOCALE: DirectoryLocale = "en";
@@ -171,7 +176,7 @@ export type DirectoryStrings = {
   latestProductsDescription: string;
   latestProductsEmptyTitle: string;
   latestProductsEmptyDescription: string;
-  // The /business/news feed's own subheading/empty state — its H1 reuses
+  // The /news feed's own subheading/empty state — its H1 reuses
   // updatesHeading itself (the listing page's own "News & Promotions" card
   // title), since this page is exactly that content aggregated site-wide.
   newsFeedDescription: string;

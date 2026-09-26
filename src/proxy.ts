@@ -34,7 +34,7 @@ async function proxyPrivateRoute(request: NextRequest, pathname: string) {
 // cookie name/priority, same Accept-Language fallback — but reads off a
 // NextRequest directly instead of next/headers' cookies()/headers(), which
 // aren't available in middleware. Only used for the bare "/" redirect
-// below; every /[locale]/business/... page resolves its own locale from
+// below; every /[locale]/... directory page resolves its own locale from
 // the URL itself once it gets there.
 function resolveDirectoryLocaleFromRequest(request: NextRequest): "en" | "zh" | "ms" {
   const cookieValue = request.cookies.get("directory_locale")?.value;
@@ -69,15 +69,11 @@ export async function proxy(request: NextRequest) {
   // always hands off to it. Resolved straight to a locale-prefixed URL here
   // (same cookie/Accept-Language guess as getDirectoryLocale, reimplemented
   // rather than imported since that one calls next/headers' cookies()/
-  // headers(), not available on a NextRequest in middleware).
+  // headers(), not available on a NextRequest in middleware). A bare locale
+  // (/en, /zh, /ms) needs no redirect of its own anymore — it IS the
+  // directory home page (src/app/[locale]/page.tsx, see directoryHomePath).
   if (pathname === "/") {
-    return NextResponse.redirect(new URL(`/${resolveDirectoryLocaleFromRequest(request)}/business`, request.url));
-  }
-
-  // A bare locale (/en, /zh, /ms) has no page of its own.
-  const bareLocale = /^\/(en|zh|ms)\/?$/.exec(pathname)?.[1];
-  if (bareLocale) {
-    return NextResponse.redirect(new URL(`/${bareLocale}/business`, request.url), 308);
+    return NextResponse.redirect(new URL(`/${resolveDirectoryLocaleFromRequest(request)}`, request.url));
   }
 
   if (pathname === "/business-portal" || pathname.startsWith("/business-portal/") || pathname === "/admin" || pathname.startsWith("/admin/")) {

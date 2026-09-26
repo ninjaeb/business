@@ -10,7 +10,7 @@ import { DIRECTORY_SITE_NAME_BY_LOCALE } from "@/lib/directory-seo";
 // directory-category-labels.ts. Relative — the caller prepends siteOrigin
 // for anything that needs an absolute URL.
 export function locationPath(stateSlug: string, locale: DirectoryLocale): string {
-  return `/${locale}/business/location/${stateSlug}`;
+  return `/${locale}/location/${stateSlug}`;
 }
 
 export function locationPageTitle(state: string, locale: DirectoryLocale): string {

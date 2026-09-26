@@ -1,33 +1,19 @@
-import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { resolveDirectoryLocale } from "@/lib/directory-locale";
-import { buildIndustryMetadata, IndustryPageContent } from "@/components/directory/industry-page-content";
 
-export async function generateMetadata({
+// Superseded by the bare /[locale]/industry/<slug> route (see industryPath's
+// own comment in directory-industry-labels.ts) — kept only so an old
+// bookmark or indexed link to this URL still lands somewhere real instead
+// of 404ing. Redirects on the raw slug segment rather than round-tripping
+// it through findIndustryBySlug/industryPath — an unknown slug 404s on the
+// new route exactly as it would have here.
+export default async function LegacyBusinessIndustryRedirect({
   params,
 }: {
   params: Promise<{ locale: string; industrySlug: string }>;
-}): Promise<Metadata> {
+}) {
   const { locale, industrySlug } = await params;
   const resolved = resolveDirectoryLocale(locale);
-  if (!resolved) return {};
-  return buildIndustryMetadata(industrySlug, resolved);
-}
-
-// Same reasoning as the category/location routes' own force-dynamic:
-// listings change by hand approval, not on a schedule, but a plain Prisma
-// read carries no dynamic signal of its own without this.
-export const dynamic = "force-dynamic";
-
-export default async function DirectoryIndustryPage({
-  params,
-  searchParams,
-}: {
-  params: Promise<{ locale: string; industrySlug: string }>;
-  searchParams: Promise<{ q?: string }>;
-}) {
-  const [{ locale, industrySlug }, { q }] = await Promise.all([params, searchParams]);
-  const resolved = resolveDirectoryLocale(locale);
   if (!resolved) notFound();
-  return <IndustryPageContent industrySlug={industrySlug} locale={resolved} q={q ?? ""} />;
+  permanentRedirect(`/${resolved}/industry/${industrySlug}`);
 }
