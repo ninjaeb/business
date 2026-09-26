@@ -49,7 +49,7 @@ import {
   type DirectoryStrings,
 } from "@/lib/directory-i18n";
 import { translateCategoryName, categoryPath } from "@/lib/directory-category-labels";
-import { locationPath } from "@/lib/directory-location-labels";
+import { locationLabel, locationPath } from "@/lib/directory-location-labels";
 import { industryPath } from "@/lib/directory-industry-labels";
 import { getSiteOrigin } from "@/lib/site-url";
 import { INDUSTRY_LABELS } from "@/lib/labels";
@@ -552,23 +552,21 @@ export default async function DirectoryListingPage({
                 )}
                 {(listing.city || listing.state || listing.country) && (
                   <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
-                    {listing.city && (
-                      <span className="inline-flex items-center gap-1">
-                        <MapPin className="h-4 w-4" />
-                        {listing.city}
-                      </span>
-                    )}
-                    {listing.state && (
+                    {listing.state ? (
                       <Link
-                        href={locationPath(slugify(listing.state), resolved)}
-                        className={cn(
-                          "hover:text-petrol hover:underline dark:hover:text-petrol-light",
-                          !listing.city && "inline-flex items-center gap-1",
-                        )}
+                        href={locationPath(slugify(locationLabel(listing.city, listing.state)), resolved)}
+                        className="inline-flex items-center gap-1 hover:text-petrol hover:underline dark:hover:text-petrol-light"
                       >
-                        {!listing.city && <MapPin className="h-4 w-4" />}
-                        {listing.state}
+                        <MapPin className="h-4 w-4" />
+                        {locationLabel(listing.city, listing.state)}
                       </Link>
+                    ) : (
+                      listing.city && (
+                        <span className="inline-flex items-center gap-1">
+                          <MapPin className="h-4 w-4" />
+                          {listing.city}
+                        </span>
+                      )
                     )}
                     {listing.country && (
                       <Link
@@ -645,23 +643,21 @@ export default async function DirectoryListingPage({
             )}
             {(listing.city || listing.state || listing.country || listing.website) && (
               <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
-                {listing.city && (
-                  <span className="inline-flex items-center gap-1">
-                    <MapPin className="h-4 w-4" />
-                    {listing.city}
-                  </span>
-                )}
-                {listing.state && (
+                {listing.state ? (
                   <Link
-                    href={locationPath(slugify(listing.state), resolved)}
-                    className={cn(
-                      "hover:text-petrol hover:underline dark:hover:text-petrol-light",
-                      !listing.city && "inline-flex items-center gap-1",
-                    )}
+                    href={locationPath(slugify(locationLabel(listing.city, listing.state)), resolved)}
+                    className="inline-flex items-center gap-1 hover:text-petrol hover:underline dark:hover:text-petrol-light"
                   >
-                    {!listing.city && <MapPin className="h-4 w-4" />}
-                    {listing.state}
+                    <MapPin className="h-4 w-4" />
+                    {locationLabel(listing.city, listing.state)}
                   </Link>
+                ) : (
+                  listing.city && (
+                    <span className="inline-flex items-center gap-1">
+                      <MapPin className="h-4 w-4" />
+                      {listing.city}
+                    </span>
+                  )
                 )}
                 {listing.country && (
                   <Link

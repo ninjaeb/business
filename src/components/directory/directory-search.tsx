@@ -19,6 +19,7 @@ export function DirectorySearch({
   initialQuery,
   initialIndustry,
   initialCategory,
+  initialCity,
   initialState,
   initialCountry,
   directoryUrl,
@@ -42,12 +43,21 @@ export function DirectorySearch({
   initialIndustry: string;
   // Set by a category page (see category-page-content.tsx), which already
   // has its own navigation back to the rest of the directory, so unlike
-  // industry/state/country this never needs a clear button here.
+  // industry/city/state/country this never needs a clear button here.
   initialCategory: string;
-  // Set from a listing's own State/Country pill (see the listing detail
-  // page) — no dropdown for these, since they're free text rather than a
-  // fixed enum like industry, but the URL query param still filters the
-  // same in-memory list the same way.
+  // Set from a listing's own City/State/Country pill (see the listing
+  // detail page), or from a location page narrowing to one city+state
+  // group (see location-page-content.tsx) — no dropdown for these, since
+  // they're free text rather than a fixed enum like industry, but the URL
+  // query param still filters the same in-memory list the same way.
+  // initialCity is three-valued, unlike the plain empty-string-means-off
+  // convention every other filter here uses: null disables city filtering
+  // entirely (every page but a location page), "" requires a listing to
+  // have no city at all (a state-only location group — see
+  // countListingsByCityState — where "no filter" would wrongly also match
+  // every listing that DOES have a city in that state), and any other
+  // string requires an exact match.
+  initialCity: string | null;
   initialState: string;
   initialCountry: string;
   directoryUrl: string;
@@ -83,6 +93,7 @@ export function DirectorySearch({
   // No dropdown for these (see the type comments above) — set once from the
   // URL a pill linked to, cleared only via the chip below.
   const [industry, setIndustry] = useState(initialIndustry);
+  const [city, setCity] = useState(initialCity);
   const [state, setState] = useState(initialState);
   const [country, setCountry] = useState(initialCountry);
   // Never cleared from here (see the type comment above), so this doesn't
@@ -99,6 +110,7 @@ export function DirectorySearch({
     return listings.filter((listing) => {
       if (industry && listing.industry !== industry) return false;
       if (category && !listing.categories.includes(category)) return false;
+      if (city !== null && (listing.city ?? "") !== city) return false;
       if (state && listing.state !== state) return false;
       if (country && listing.country !== country) return false;
       if (!q) return true;
@@ -113,7 +125,7 @@ export function DirectorySearch({
         listing.categories.some((cat) => (categoryLabelByValue.get(cat) ?? cat).toLowerCase().includes(q))
       );
     });
-  }, [listings, query, industry, category, state, country, industryLabels, categoryLabelByValue]);
+  }, [listings, query, industry, category, city, state, country, industryLabels, categoryLabelByValue]);
 
   return (
     <>
@@ -140,11 +152,12 @@ export function DirectorySearch({
             </div>
           </form>
 
-          {/* Only ever set by following a listing's own Industry/State/Country
-              pill (see the listing detail page) — there's no dropdown for
+          {/* Only ever set by following a listing's own Industry/City/State/
+              Country pill (see the listing detail page), or by a location
+              page's own city+state narrowing — there's no dropdown for
               these, so a plain chip with its own clear button is the only
               way back to the unfiltered list. */}
-          {(industry || state || country) && (
+          {(industry || city || state || country) && (
             <div className="mt-3 flex flex-wrap items-center justify-center gap-2 text-sm">
               {industry && (
                 <span className="inline-flex items-center gap-1.5 rounded-full bg-slate-100 py-1 pl-3 pr-1.5 text-slate-700 dark:bg-neutral-800 dark:text-slate-200">
@@ -153,6 +166,23 @@ export function DirectorySearch({
                     type="button"
                     onClick={() => setIndustry("")}
                     aria-label={`Clear ${industryLabels[industry as Industry]} filter`}
+                    className="rounded-full p-0.5 hover:bg-slate-200 dark:hover:bg-neutral-700"
+                  >
+                    <X className="h-3.5 w-3.5" />
+                  </button>
+                </span>
+              )}
+              {city && (
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-slate-100 py-1 pl-3 pr-1.5 text-slate-700 dark:bg-neutral-800 dark:text-slate-200">
+                  {city}
+                  <button
+                    type="button"
+                    // null, not "": clearing disables city filtering
+                    // entirely (see the type comment above) — "" would
+                    // instead switch to requiring no city at all, which on
+                    // a real city's own chip would just hide every result.
+                    onClick={() => setCity(null)}
+                    aria-label={`Clear ${city} filter`}
                     className="rounded-full p-0.5 hover:bg-slate-200 dark:hover:bg-neutral-700"
                   >
                     <X className="h-3.5 w-3.5" />

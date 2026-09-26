@@ -21,18 +21,20 @@ import { DIRECTORY_STRINGS, directoryBenefitsPath, directorySignupPath, type Dir
 export function DirectoryHomeSections({
   locale,
   categories,
-  states,
+  locations,
 }: {
   locale: DirectoryLocale;
   // Only categories with at least one published business (see
   // countListingsByCategory) — a link to an empty category page helps no
   // one, and those pages are noindex anyway (see buildCategoryMetadata).
   categories: { name: string; count: number }[];
-  // Every state at least one published listing carries (see
-  // countListingsByState) — there's no "empty state" case to filter out
-  // the way categories have one, since a state only exists here because a
-  // real listing carries it.
-  states: { name: string; count: number }[];
+  // Every city+state (or state-only) group at least one published listing
+  // carries (see countListingsByCityState/locationLabel) — there's no
+  // "empty location" case to filter out the way categories have one, since
+  // a group only exists here because a real listing carries it. `name` is
+  // already the combined display label ("Petaling Jaya, Selangor" or a
+  // bare state), ready to slugify for the link below.
+  locations: { name: string; count: number }[];
 }) {
   const copy = DIRECTORY_HOME_COPY[locale];
   const t = DIRECTORY_STRINGS[locale];
@@ -69,14 +71,14 @@ export function DirectoryHomeSections({
         </section>
       )}
 
-      {states.length > 0 && (
+      {locations.length > 0 && (
         <section aria-labelledby="directory-locations" className="mx-auto max-w-5xl">
           <h2 id="directory-locations" className={headingClasses}>
             {copy.browseLocationHeading}
           </h2>
           <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{copy.browseLocationIntro}</p>
           <ul className="mt-4 flex flex-wrap gap-2">
-            {states.map(({ name, count }) => (
+            {locations.map(({ name, count }) => (
               <li key={name}>
                 <Link
                   href={locationPath(slugify(name), locale)}

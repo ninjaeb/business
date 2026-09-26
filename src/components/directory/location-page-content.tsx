@@ -11,10 +11,10 @@ import {
   type DirectoryLocale,
 } from "@/lib/directory-i18n";
 import {
-  findStateBySlug,
+  findLocationBySlug,
   buildDirectoryCollectionJsonLd,
   buildBreadcrumbJsonLd,
-  countListingsByState,
+  countListingsByCityState,
   loadPublishedListings,
   toDirectoryGridListing,
 } from "@/lib/directory";
@@ -25,28 +25,35 @@ import {
   buildLanguageAlternates,
   directoryShareImage,
 } from "@/lib/directory-seo";
-import { locationPath, locationPageTitle, locationPageHeading, locationPageDescription } from "@/lib/directory-location-labels";
+import {
+  locationLabel,
+  locationPath,
+  locationPageTitle,
+  locationPageHeading,
+  locationPageDescription,
+} from "@/lib/directory-location-labels";
 import { translateCategoryName } from "@/lib/directory-category-labels";
 import { slugify } from "@/lib/slug";
 import { DirectorySearch } from "@/components/directory/directory-search";
 import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
 
 // Shared by every locale variant of the friendly location route (see
-// src/app/[locale]/location/[stateSlug]/page.tsx), same division
+// src/app/[locale]/location/[locationSlug]/page.tsx), same division
 // of labor as buildCategoryMetadata/CategoryPageContent. No noindex branch
 // here the way the category version has: a category can exist in
-// BusinessCategory with zero published listings, but a state slug only
-// ever resolves (see findStateBySlug) when at least one published listing
-// actually carries it — there's no "empty location page" to keep out of
-// the index in the first place.
-export async function buildLocationMetadata(stateSlug: string, locale: DirectoryLocale): Promise<Metadata> {
+// BusinessCategory with zero published listings, but a location slug only
+// ever resolves (see findLocationBySlug) when at least one published
+// listing actually carries it — there's no "empty location page" to keep
+// out of the index in the first place.
+export async function buildLocationMetadata(locationSlug: string, locale: DirectoryLocale): Promise<Metadata> {
   const [siteOrigin, rows] = await Promise.all([getSiteOrigin(), loadPublishedListings()]);
-  const state = findStateBySlug(rows, stateSlug);
-  if (!state) return {};
+  const location = findLocationBySlug(rows, locationSlug);
+  if (!location) return {};
 
-  const title = locationPageTitle(state, locale);
-  const description = locationPageDescription(state, locale);
-  const url = `${siteOrigin}${locationPath(stateSlug, locale)}`;
+  const label = locationLabel(location.city, location.state);
+  const title = locationPageTitle(label, locale);
+  const description = locationPageDescription(label, locale);
+  const url = `${siteOrigin}${locationPath(locationSlug, locale)}`;
   const shareImage = directoryShareImage(siteOrigin, locale);
 
   return {
@@ -54,7 +61,7 @@ export async function buildLocationMetadata(stateSlug: string, locale: Directory
     description,
     alternates: {
       canonical: url,
-      languages: buildLanguageAlternates(siteOrigin, (code) => locationPath(stateSlug, code)),
+      languages: buildLanguageAlternates(siteOrigin, (code) => locationPath(locationSlug, code)),
     },
     robots: DIRECTORY_ROBOTS,
     openGraph: {
@@ -76,11 +83,11 @@ export async function buildLocationMetadata(stateSlug: string, locale: Directory
 }
 
 export async function LocationPageContent({
-  stateSlug,
+  locationSlug,
   locale,
   q,
 }: {
-  stateSlug: string;
+  locationSlug: string;
   locale: DirectoryLocale;
   q: string;
 }) {
@@ -89,29 +96,41 @@ export async function LocationPageContent({
     loadPublishedListings(),
     db.businessCategory.findMany({ orderBy: { name: "asc" }, select: { name: true } }),
   ]);
-  const state = findStateBySlug(rows, stateSlug);
-  if (!state) notFound();
+  const location = findLocationBySlug(rows, locationSlug);
+  if (!location) notFound();
+  const { city, state } = location;
 
   const t = DIRECTORY_STRINGS[locale];
-  const pageUrl = `${siteOrigin}${locationPath(stateSlug, locale)}`;
-  const heading = locationPageHeading(state, locale);
-  const description = locationPageDescription(state, locale);
+  const pageUrl = `${siteOrigin}${locationPath(locationSlug, locale)}`;
+  const label = locationLabel(city, state);
+  const heading = locationPageHeading(label, locale);
+  const description = locationPageDescription(label, locale);
 
   const listings = rows.map((row) => toDirectoryGridListing(row, locale));
-  const locationListings = listings.filter((listing) => listing.state === state);
+  // Exact city+state match, including a state-only group's own city: null
+  // (see countListingsByCityState) — "Petaling Jaya, Selangor" never picks
+  // up a Shah Alam listing, and a plain "Selangor" (no city — an older
+  // listing from before that field existed, or one left blank) never picks
+  // up a listing that DOES have a city, matching the count
+  // listLocationsWithCounts advertised for this exact group on the index.
+  const locationListings = listings.filter((listing) => listing.city === city && listing.state === state);
   const breadcrumbItems = [
     { name: DIRECTORY_HOME_TITLE_BY_LOCALE[locale], url: `${siteOrigin}${directoryHomePath(locale)}` },
     { name: heading, url: pageUrl },
   ];
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(breadcrumbItems);
 
-  // Every other state at least one published listing carries — a location
-  // page otherwise has no on-page link to a sibling state, only reachable
-  // by going back through the home page's own "Browse by location"
-  // section (see DirectoryHomeSections). No noindex-to-avoid concern here
-  // the way category's equivalent list has: see buildLocationMetadata's
-  // own comment on why there's no such thing as an empty state.
-  const otherStates = [...countListingsByState(rows).keys()].filter((name) => name !== state).sort((a, b) => a.localeCompare(b));
+  // Every other city+state (or state-only) group at least one published
+  // listing carries — a location page otherwise has no on-page link to a
+  // sibling location, only reachable by going back through the home page's
+  // own "Browse by location" section (see DirectoryHomeSections). No
+  // noindex-to-avoid concern here the way category's equivalent list has:
+  // see buildLocationMetadata's own comment on why there's no such thing as
+  // an empty location.
+  const otherLocations = [...countListingsByCityState(rows).values()]
+    .filter((group) => !(group.city === city && group.state === state))
+    .map((group) => locationLabel(group.city, group.state))
+    .sort((a, b) => a.localeCompare(b));
 
   return (
     <>
@@ -134,19 +153,20 @@ export async function LocationPageContent({
         initialQuery={q}
         initialIndustry=""
         initialCategory=""
+        initialCity={city ?? ""}
         initialState={state}
         initialCountry=""
         directoryUrl={pageUrl}
         heading={heading}
         subheading={description}
       />
-      {otherStates.length > 0 && (
+      {otherLocations.length > 0 && (
         <section aria-labelledby="other-locations" className="mx-auto w-full max-w-5xl px-4 pb-12 sm:px-8">
           <h2 id="other-locations" className="text-lg font-semibold text-slate-900 dark:text-slate-100">
             {t.otherLocationsHeading}
           </h2>
           <ul className="mt-3 flex flex-wrap gap-2">
-            {otherStates.map((name) => (
+            {otherLocations.map((name) => (
               <li key={name}>
                 <Link
                   href={locationPath(slugify(name), locale)}

@@ -138,6 +138,7 @@ export async function IndustryPageContent({
         initialQuery={q}
         initialIndustry={industry}
         initialCategory=""
+        initialCity={null}
         initialState=""
         initialCountry=""
         directoryUrl={pageUrl}

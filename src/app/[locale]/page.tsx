@@ -24,10 +24,11 @@ import {
 import {
   buildDirectoryCollectionJsonLd,
   countListingsByCategory,
-  countListingsByState,
+  countListingsByCityState,
   loadPublishedListings,
   toDirectoryGridListing,
 } from "@/lib/directory";
+import { locationLabel } from "@/lib/directory-location-labels";
 import { DirectorySearch } from "@/components/directory/directory-search";
 import { DirectoryHomeSections } from "@/components/directory/directory-home-sections";
 import { getSiteOrigin } from "@/lib/site-url";
@@ -103,9 +104,9 @@ export default async function DirectoryHomePage({
   searchParams,
 }: {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<{ q?: string; industry?: string; category?: string; state?: string; country?: string }>;
+  searchParams: Promise<{ q?: string; industry?: string; category?: string; city?: string; state?: string; country?: string }>;
 }) {
-  const [{ locale }, { q, industry, category, state, country }, siteOrigin] = await Promise.all([
+  const [{ locale }, { q, industry, category, city, state, country }, siteOrigin] = await Promise.all([
     params,
     searchParams,
     getSiteOrigin(),
@@ -136,7 +137,10 @@ export default async function DirectoryHomePage({
     const count = countByCategory.get(row.name) ?? 0;
     return count > 0 ? [{ name: row.name, count }] : [];
   });
-  const linkedStates = [...countListingsByState(rows)].map(([name, count]) => ({ name, count }));
+  const linkedStates = [...countListingsByCityState(rows).values()].map(({ city, state, count }) => ({
+    name: locationLabel(city, state),
+    count,
+  }));
 
   return (
     <>
@@ -168,11 +172,12 @@ export default async function DirectoryHomePage({
         initialQuery={q ?? ""}
         initialIndustry={industry ?? ""}
         initialCategory={category ?? ""}
+        initialCity={city ?? null}
         initialState={state ?? ""}
         initialCountry={country ?? ""}
         directoryUrl={directoryUrl}
       />
-      <DirectoryHomeSections locale={resolved} categories={linkedCategories} states={linkedStates} />
+      <DirectoryHomeSections locale={resolved} categories={linkedCategories} locations={linkedStates} />
     </>
   );
 }

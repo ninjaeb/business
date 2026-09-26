@@ -17,7 +17,7 @@ import {
   buildLanguageAlternates,
   directoryShareImage,
 } from "@/lib/directory-seo";
-import { locationPath } from "@/lib/directory-location-labels";
+import { locationLabel, locationPath } from "@/lib/directory-location-labels";
 import { DIRECTORY_HOME_COPY } from "@/lib/directory-home-copy";
 import { slugify } from "@/lib/slug";
 import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
@@ -59,7 +59,11 @@ export async function buildLocationsIndexMetadata(locale: DirectoryLocale): Prom
 }
 
 export async function LocationsIndexContent({ locale }: { locale: DirectoryLocale }) {
-  const [siteOrigin, states] = await Promise.all([getSiteOrigin(), listLocationsWithCounts()]);
+  const [siteOrigin, locations] = await Promise.all([getSiteOrigin(), listLocationsWithCounts()]);
+  // Only worth showing at all once there's more than one country in the
+  // list — with a single country (the common case for now) every row would
+  // repeat the same word for no reason.
+  const showCountry = new Set(locations.map((location) => location.country).filter(Boolean)).size > 1;
   const t = DIRECTORY_STRINGS[locale];
   const copy = DIRECTORY_HOME_COPY[locale];
   const pageUrl = `${siteOrigin}${directoryLocationsIndexPath(locale)}`;
@@ -76,23 +80,29 @@ export async function LocationsIndexContent({ locale }: { locale: DirectoryLocal
         <h1 className="mt-3 text-2xl font-semibold text-slate-900 dark:text-slate-100">{t.locationsIndexHeading}</h1>
         <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{t.locationsIndexDescription}</p>
 
-        {states.length === 0 ? (
+        {locations.length === 0 ? (
           <div className="mt-8">
             <EmptyState icon={MapPin} title={t.locationsIndexEmptyTitle} description={t.locationsIndexEmptyDescription} />
           </div>
         ) : (
           <ul className="mt-6 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-            {states.map(({ name, count }) => (
-              <li key={name}>
-                <Link
-                  href={locationPath(slugify(name), locale)}
-                  className="flex items-center justify-between gap-2 rounded-md border border-slate-200 px-3 py-2 text-sm text-slate-700 transition-colors hover:border-petrol/40 hover:text-petrol dark:border-neutral-800 dark:text-slate-200 dark:hover:border-petrol-light/40 dark:hover:text-petrol-light"
-                >
-                  <span className="truncate">{name}</span>
-                  <span className="shrink-0 text-xs text-slate-400 dark:text-slate-500">{copy.listingCount(count)}</span>
-                </Link>
-              </li>
-            ))}
+            {locations.map(({ city, state, country, count }) => {
+              const label = locationLabel(city, state);
+              return (
+                <li key={label}>
+                  <Link
+                    href={locationPath(slugify(label), locale)}
+                    className="flex items-center justify-between gap-2 rounded-md border border-slate-200 px-3 py-2 text-sm text-slate-700 transition-colors hover:border-petrol/40 hover:text-petrol dark:border-neutral-800 dark:text-slate-200 dark:hover:border-petrol-light/40 dark:hover:text-petrol-light"
+                  >
+                    <span className="min-w-0 truncate">
+                      {label}
+                      {showCountry && country && <span className="text-slate-400 dark:text-slate-500"> · {country}</span>}
+                    </span>
+                    <span className="shrink-0 text-xs text-slate-400 dark:text-slate-500">{copy.listingCount(count)}</span>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         )}
       </div>
