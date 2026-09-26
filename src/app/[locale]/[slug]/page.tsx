@@ -8,12 +8,14 @@ import {
   DAYS_OF_WEEK,
   formatOpeningHoursSchema,
   isOpenNow,
+  isUpdateCurrent,
   listingLogoPath,
   loadPublishedListings,
   readPublishedSnapshot,
   relatedListingsByCategory,
   slugify,
   toDirectoryGridListing,
+  toEmbeddableVideoUrl,
   buildBreadcrumbJsonLd,
   type OperatingHours,
 } from "@/lib/directory";
@@ -279,6 +281,11 @@ export default async function DirectoryListingPage({
   const displayDescription = translation?.description || listing.description;
   const displayServices = translation?.services?.length ? translation.services : listing.services;
   const displayFaqs = translation?.faqs?.length ? translation.faqs : listing.faqs;
+  // Not translated (see UpdatesEditor) — always the partner's own English
+  // text, regardless of locale, same as companyName.
+  const todayIso = new Date().toISOString().slice(0, 10);
+  const currentUpdates = listing.updates.filter((update) => isUpdateCurrent(update, todayIso));
+  const embeddableVideoUrl = listing.videoUrl ? toEmbeddableVideoUrl(listing.videoUrl) : null;
 
   // Home > (first category, if any) > this business. Only the first
   // category, not every one a listing has — a breadcrumb trail is meant to
@@ -536,6 +543,44 @@ export default async function DirectoryListingPage({
               </Card>
             )}
 
+            {embeddableVideoUrl ? (
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-base">{t.videoHeading}</CardTitle>
+                </CardHeader>
+                <CardBody>
+                  <div className="aspect-video overflow-hidden rounded-md">
+                    <iframe
+                      title={`${listing.companyName} video`}
+                      src={embeddableVideoUrl}
+                      className="h-full w-full border-0"
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                </CardBody>
+              </Card>
+            ) : (
+              listing.videoUrl && (
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-base">{t.videoHeading}</CardTitle>
+                  </CardHeader>
+                  <CardBody>
+                    <a
+                      href={listing.videoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      className="text-base text-petrol hover:underline dark:text-petrol-light"
+                    >
+                      {listing.videoUrl}
+                    </a>
+                  </CardBody>
+                </Card>
+              )
+            )}
+
             {(displayServices.length > 0 || listing.operatingHours) && (
               <div
                 className={cn(
@@ -614,6 +659,55 @@ export default async function DirectoryListingPage({
                   </Card>
                 )}
               </div>
+            )}
+
+            {listing.photos.length > 0 && (
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-base">{t.photosHeading}</CardTitle>
+                </CardHeader>
+                <CardBody>
+                  <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+                    {listing.photos.map((photo) => (
+                      // eslint-disable-next-line @next/next/no-img-element -- served straight out of the DB by /api/directory-images, same reasoning as ListingLogo
+                      <img
+                        key={photo.id}
+                        src={`/api/directory-images/${photo.id}`}
+                        alt={photo.caption || listing.companyName}
+                        loading="lazy"
+                        className="aspect-square w-full rounded-md object-cover ring-1 ring-slate-200 dark:ring-neutral-800"
+                      />
+                    ))}
+                  </div>
+                </CardBody>
+              </Card>
+            )}
+
+            {currentUpdates.length > 0 && (
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-base">{t.updatesHeading}</CardTitle>
+                </CardHeader>
+                <CardBody className="space-y-3">
+                  {currentUpdates.map((update, index) => (
+                    <div key={index} className="rounded-md border border-slate-200 p-3 dark:border-neutral-800">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <Badge
+                          className={
+                            update.kind === "PROMOTION"
+                              ? "bg-led text-led-ink ring-0"
+                              : "bg-slate-100 text-slate-600 ring-0 dark:bg-neutral-800 dark:text-slate-300"
+                          }
+                        >
+                          {update.kind === "PROMOTION" ? t.promotionLabel : t.newsLabel}
+                        </Badge>
+                        <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">{update.title}</h3>
+                      </div>
+                      <p className="mt-1 whitespace-pre-wrap text-base text-slate-600 dark:text-slate-300">{update.body}</p>
+                    </div>
+                  ))}
+                </CardBody>
+              </Card>
             )}
 
             {mapAddress && (

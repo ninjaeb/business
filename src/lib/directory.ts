@@ -39,6 +39,7 @@ export type PublishedListingSnapshot = {
   services: ServiceEntry[];
   industry: Industry | null;
   website: string | null;
+  videoUrl: string | null;
   address: string | null;
   state: string | null;
   country: string | null;
@@ -47,12 +48,41 @@ export type PublishedListingSnapshot = {
   // not per-listing; see buildPublishedSnapshot's partnerTimezone parameter.
   timezone: string | null;
   faqs: FaqEntry[];
+  updates: ListingUpdateEntry[];
+  // Gallery photos, in display order — id references DirectoryListingImage
+  // (served via /api/directory-images/[id], same as an About-embedded
+  // image), caption is this snapshot's own copy of that row's caption as of
+  // publish time. Never the image bytes themselves — see buildPublishedSnapshot's
+  // photos parameter for why those stay a live reference instead.
+  photos: PhotoEntry[];
   categories: string[];
   translations: ListingTranslations;
   logoUrl: string | null;
   seoTitle: string | null;
   seoDescription: string | null;
 };
+
+export type PhotoEntry = { id: string; caption: string };
+
+// Also the cap uploadListingGalleryPhoto (src/app/actions/directory-images.ts)
+// enforces before creating a new row — exported so the two never drift apart.
+export const MAX_GALLERY_PHOTOS = 12;
+
+function sanitizePhotoEntry(entry: unknown): PhotoEntry | null {
+  if (!entry || typeof entry !== "object") return null;
+  const raw = entry as Record<string, unknown>;
+  const id = typeof raw.id === "string" ? raw.id.trim() : "";
+  if (!id) return null;
+  return { id, caption: typeof raw.caption === "string" ? raw.caption.trim() : "" };
+}
+
+export function photosFromJson(value: unknown): PhotoEntry[] {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map(sanitizePhotoEntry)
+    .filter((entry): entry is PhotoEntry => entry !== null)
+    .slice(0, MAX_GALLERY_PHOTOS);
+}
 
 // A listing's service/product catalog — see ServicesEditor. `description`
 // and `price` are both freeform and optional (price is text, not a number:
@@ -148,6 +178,73 @@ export function parseFaqsJson(raw: string): FaqEntry[] {
   return faqsFromJson(parsed);
 }
 
+// A listing's News & Promotions feed — see UpdatesEditor. Same
+// draft-until-approved lifecycle as every other listing field (services,
+// faqs, ...): posting or editing one only reaches the public page the next
+// time the listing is submitted and approved, same as everything else on
+// this form — there's no separate, unmoderated publish path for these, even
+// though that means a time-sensitive promotion isn't instant. endDate is
+// optional and mainly meaningful for a PROMOTION (a NEWS post has no natural
+// expiry); the public page hides a promotion once its endDate has passed
+// rather than requiring the partner to remember to remove it. No startDate:
+// a promotion that shouldn't show yet is simply not posted yet.
+export type ListingUpdateKind = "NEWS" | "PROMOTION";
+export type ListingUpdateEntry = {
+  kind: ListingUpdateKind;
+  title: string;
+  body: string;
+  endDate: string | null; // ISO date (YYYY-MM-DD), partner's own local date
+};
+
+const MAX_UPDATES = 20;
+const MAX_UPDATE_TITLE_LENGTH = 100;
+const MAX_UPDATE_BODY_LENGTH = 1000;
+const ISO_DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
+
+function sanitizeUpdateEntry(entry: unknown): ListingUpdateEntry | null {
+  if (!entry || typeof entry !== "object") return null;
+  const raw = entry as Record<string, unknown>;
+  const title = typeof raw.title === "string" ? raw.title.trim().slice(0, MAX_UPDATE_TITLE_LENGTH) : "";
+  const body = typeof raw.body === "string" ? raw.body.trim().slice(0, MAX_UPDATE_BODY_LENGTH) : "";
+  if (!title || !body) return null;
+  return {
+    kind: raw.kind === "PROMOTION" ? "PROMOTION" : "NEWS",
+    title,
+    body,
+    endDate: typeof raw.endDate === "string" && ISO_DATE_PATTERN.test(raw.endDate) ? raw.endDate : null,
+  };
+}
+
+export function updatesFromJson(value: unknown): ListingUpdateEntry[] {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map(sanitizeUpdateEntry)
+    .filter((entry): entry is ListingUpdateEntry => entry !== null)
+    .slice(0, MAX_UPDATES);
+}
+
+// Parses the editor's serialized JSON (see UpdatesEditor's hidden input)
+// permissively, same spirit as parseServicesJson/parseFaqsJson.
+export function parseUpdatesJson(raw: string): ListingUpdateEntry[] {
+  let parsed: unknown;
+  try {
+    parsed = JSON.parse(raw);
+  } catch {
+    return [];
+  }
+  return updatesFromJson(parsed);
+}
+
+// A promotion past its own endDate is dropped from what the public page
+// shows — a partner posting "20% off this weekend" shouldn't have to
+// remember to come back and remove it once it's stale. News posts and
+// promotions with no endDate never expire on their own. `today` is passed
+// in (rather than read via `new Date()` here) so the detail page computes it
+// once for every entry, consistently.
+export function isUpdateCurrent(entry: ListingUpdateEntry, today: string): boolean {
+  return !entry.endDate || entry.endDate >= today;
+}
+
 // AI-translated (or hand-edited) copies of tagline/description/services/
 // faqs for the directory's non-English locales — see translateListingContent
 // in src/app/actions/directory.ts. Keyed by DirectoryLocale minus "en": the
@@ -213,12 +310,15 @@ export function readPublishedSnapshot(value: unknown): PublishedListingSnapshot 
     services: servicesFromJson(raw.services),
     industry: typeof raw.industry === "string" ? (raw.industry as Industry) : null,
     website: typeof raw.website === "string" ? raw.website : null,
+    videoUrl: typeof raw.videoUrl === "string" ? raw.videoUrl : null,
     address: typeof raw.address === "string" ? raw.address : null,
     state: typeof raw.state === "string" ? raw.state : null,
     country: typeof raw.country === "string" ? raw.country : null,
     operatingHours: operatingHoursFromJson(raw.operatingHours),
     timezone: typeof raw.timezone === "string" ? raw.timezone : null,
     faqs: faqsFromJson(raw.faqs),
+    updates: updatesFromJson(raw.updates),
+    photos: photosFromJson(raw.photos),
     categories: Array.isArray(raw.categories) ? raw.categories.filter((entry): entry is string => typeof entry === "string") : [],
     translations: translationsFromJson(raw.translations),
     logoUrl: typeof raw.logoUrl === "string" ? raw.logoUrl : null,
@@ -234,10 +334,15 @@ export function readPublishedSnapshot(value: unknown): PublishedListingSnapshot 
 // src/app/actions/directory.ts) — timezone is an account-level setting now
 // (User.timezone, editable from the Profile page), not a PartnerListing
 // column, so it has to be passed in rather than read off `listing` itself.
+// photos is likewise fetched separately by the caller (a small
+// DirectoryListingImage query keyed on listing.photoIds) rather than joined
+// in here — captions live on that table, not on `listing` itself, and this
+// function stays a pure, synchronous mapper like the rest of the module.
 export function buildPublishedSnapshot(
   listing: PartnerListing,
   categoryNames: string[],
   partnerTimezone: string | null,
+  photos: PhotoEntry[],
 ): PublishedListingSnapshot {
   return {
     companyName: listing.companyName,
@@ -246,18 +351,50 @@ export function buildPublishedSnapshot(
     services: servicesFromJson(listing.services),
     industry: listing.industry,
     website: listing.website,
+    videoUrl: listing.videoUrl,
     address: listing.address,
     state: listing.state,
     country: listing.country,
     operatingHours: operatingHoursFromJson(listing.operatingHours),
     timezone: partnerTimezone,
     faqs: faqsFromJson(listing.faqs),
+    updates: updatesFromJson(listing.updates),
+    photos,
     categories: categoryNames,
     translations: translationsFromJson(listing.translations),
     logoUrl: listing.logoUrl,
     seoTitle: listing.seoTitle,
     seoDescription: listing.seoDescription,
   };
+}
+
+// Common video hosts' watch/share URLs, converted to their embeddable iframe
+// form. Returns null for anything else (including an already-embeddable
+// URL's own host) — the caller falls back to a plain "Watch video" link
+// pointing at the original URL in that case, same spirit as the map
+// embed's own address parsing never rejecting an unusual input outright.
+export function toEmbeddableVideoUrl(rawUrl: string): string | null {
+  let url: URL;
+  try {
+    url = new URL(rawUrl);
+  } catch {
+    return null;
+  }
+  const host = url.hostname.replace(/^www\./, "");
+
+  if (host === "youtube.com" || host === "m.youtube.com") {
+    const id = url.pathname === "/watch" ? url.searchParams.get("v") : url.pathname.startsWith("/shorts/") ? url.pathname.slice(8) : null;
+    return id ? `https://www.youtube.com/embed/${id}` : null;
+  }
+  if (host === "youtu.be") {
+    const id = url.pathname.slice(1);
+    return id ? `https://www.youtube.com/embed/${id}` : null;
+  }
+  if (host === "vimeo.com") {
+    const id = url.pathname.slice(1);
+    return /^\d+$/.test(id) ? `https://player.vimeo.com/video/${id}` : null;
+  }
+  return null;
 }
 
 // Only what the directory grid (the home page and each category page)

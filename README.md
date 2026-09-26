@@ -14,10 +14,10 @@ extracted from).
 
 - **Public directory** (`/[locale]/business`) — search/browse listings,
   category and location hub pages, a per-listing detail page (products &
-  services, hours, location, FAQ, a spam-guarded contact form), server-
-  rendered for both traditional search engines and AI answer engines
-  (ChatGPT, Perplexity, etc.). Every page is available in English, 中文, and
-  Bahasa Malaysia.
+  services, an embedded video, a photo gallery, hours, location, FAQ, a News
+  & Promotions feed, a spam-guarded contact form), server-rendered for both
+  traditional search engines and AI answer engines (ChatGPT, Perplexity,
+  etc.). Every page is available in English, 中文, and Bahasa Malaysia.
 - **Partner self-service** (`/business-portal`) — a business creates an
   account (email/password or Google), fills in and submits a listing for
   review, and — once approved — manages it, replies to inquiries, and runs
