@@ -6,6 +6,7 @@ import { rewriteListingUpdate } from "@/app/actions/directory";
 import { Input } from "@/components/ui/field";
 import { buttonClasses } from "@/components/ui/button";
 import { useToast } from "@/components/ui/toast";
+import { DatePicker } from "@/components/ui/date-picker";
 import { MarkdownLiteEditor } from "@/components/directory/markdown-lite-editor";
 import { cn } from "@/lib/utils";
 import type { ListingUpdateEntry, ListingUpdateKind } from "@/lib/directory";
@@ -83,11 +84,11 @@ function UpdateEntryCard({
             {entry.kind === "PROMOTION" && (
               <label className="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400">
                 Ends
-                <Input
-                  type="date"
+                <DatePicker
                   value={entry.endDate ?? ""}
-                  onChange={(event) => onChange({ endDate: event.target.value || null })}
-                  className="h-8 w-auto text-xs"
+                  onChange={(endDate) => onChange({ endDate: endDate || null })}
+                  className="w-36"
+                  buttonClassName="h-8 px-2 text-xs"
                 />
               </label>
             )}
