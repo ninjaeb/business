@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { LogIn, LogOut, Menu, Sparkles, Store, X } from "lucide-react";
-import { BUSINESS_NAV_ITEMS } from "@/lib/business-nav-items";
+import { LogIn, LogOut, Menu, Plus, Sparkles, Store, X } from "lucide-react";
+import { createListingAction } from "@/app/actions/directory";
 import { cn } from "@/lib/utils";
 
 // Who's currently browsing, as far as the hamburger menu cares — a signed-
@@ -25,6 +25,8 @@ export function DirectoryNavMenu({
   benefitsLabel,
   directoryLabel,
   myBusinessLabel,
+  addBusinessLabel,
+  businessNavItems,
   signOutLabel,
   directoryHref,
   signupHref,
@@ -37,6 +39,12 @@ export function DirectoryNavMenu({
   benefitsLabel: string;
   directoryLabel: string;
   myBusinessLabel: string;
+  addBusinessLabel: string;
+  // Already localized to whatever language this menu is currently showing
+  // (see localizedBusinessNavItems in directory-i18n.ts) — unlike
+  // PartnerNavMenu/PartnerSidebar, which import BUSINESS_NAV_ITEMS directly
+  // and stay English, matching the rest of the (English-only) portal.
+  businessNavItems: { href: string; label: string }[];
   signOutLabel: string;
   // Locale-aware (see directory-chrome.tsx) — never a bare "/directory" or
   // "/directory/signup" here, so a click from within the locale-prefixed
@@ -119,10 +127,16 @@ export function DirectoryNavMenu({
                 <Store className="h-4 w-4 shrink-0 text-slate-400" />
                 {directoryLabel}
               </Link>
+              <form action={createListingAction}>
+                <button type="submit" role="menuitem" className={itemClasses}>
+                  <Plus className="h-4 w-4 shrink-0 text-slate-400" />
+                  {addBusinessLabel}
+                </button>
+              </form>
               <div className="border-t border-slate-100 px-3 pb-1 pt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:border-neutral-800 dark:text-slate-500">
                 {myBusinessLabel}
               </div>
-              {BUSINESS_NAV_ITEMS.map((item) => (
+              {businessNavItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}

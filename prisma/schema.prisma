@@ -255,13 +255,19 @@ model PartnerListing {
   services    Json // ServiceEntry[] (src/lib/directory.ts) — {title, description, price}
   industry    Industry?
   website     String?
+  videoUrl    String? // YouTube/Vimeo/direct link — embedded on the public page, see toEmbeddableVideoUrl
   address     String? @db.Text
   state       String?
   country     String?
   operatingHours Json? // OperatingHours (src/lib/directory.ts)
   faqs        Json? // FaqEntry[] (src/lib/directory.ts) — {question, answer}
+  updates     Json? // ListingUpdateEntry[] (src/lib/directory.ts) — {kind, title, body, endDate}
   translations Json? // ListingTranslations (src/lib/directory.ts) — {zh?, ms?}
   logoUrl     String?   @db.Text // data: URL
+  // Ordered DirectoryListingImage ids selected as gallery photos (see
+  // uploadListingGalleryPhoto in src/app/actions/directory-images.ts) —
+  // display order is this array's own order.
+  photoIds       String[] @default([])
   seoTitle       String?
   seoDescription String?
 
@@ -307,12 +313,18 @@ model PartnerListingCategory {
   @@index([categoryId])
 }
 
-// About-field embedded images (markdown-lite editor), served via
-// /api/directory-images/[id].
+// Two unrelated uses share this table (and its /api/directory-images/[id]
+// route), both just "an image byte blob owned by a listing": About-field
+// embedded images (markdown-lite editor), referenced by id from inside the
+// About text itself, and gallery photos (see PartnerListing.photoIds),
+// referenced by id from that ordered array instead. `caption` is only ever
+// set for the latter — an About-embed's description lives in the
+// surrounding markdown, not on the image row.
 model DirectoryListingImage {
-  id       String @id @default(cuid())
+  id       String  @id @default(cuid())
   mimeType String
-  data     String @db.Text
+  data     String  @db.Text
+  caption  String?
 
   createdAt DateTime @default(now())
 

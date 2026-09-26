@@ -3,7 +3,14 @@ import { notFound } from "next/navigation";
 import { ExternalLink } from "lucide-react";
 import { db } from "@/lib/db";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
-import { faqsFromJson, getOwnedListing, operatingHoursFromJson, servicesFromJson, translationsFromJson } from "@/lib/directory";
+import {
+  faqsFromJson,
+  getOwnedListing,
+  operatingHoursFromJson,
+  servicesFromJson,
+  translationsFromJson,
+  updatesFromJson,
+} from "@/lib/directory";
 import { getSiteOrigin } from "@/lib/site-url";
 import { directoryListingPath } from "@/lib/directory-i18n";
 import { isAiConfigured } from "@/lib/ai/client";
@@ -20,12 +27,20 @@ export default async function PartnerListingEditorPage({ params }: { params: Pro
   const listing = await getOwnedListing(id, user.id);
   if (!listing) notFound();
 
-  const [siteOrigin, categories, selectedCategories] = await Promise.all([
+  const [siteOrigin, categories, selectedCategories, photoRows] = await Promise.all([
     getSiteOrigin(),
     db.businessCategory.findMany({ orderBy: { name: "asc" } }),
     db.partnerListingCategory.findMany({ where: { listingId: listing.id }, select: { categoryId: true } }),
+    listing.photoIds.length
+      ? db.directoryListingImage.findMany({ where: { id: { in: listing.photoIds } }, select: { id: true, caption: true } })
+      : Promise.resolve([]),
   ]);
   const selectedCategoryIds = selectedCategories.map((entry) => entry.categoryId);
+  // photoIds is the display order of record — findMany's result isn't
+  // guaranteed to come back in that order, so it's reordered to match rather
+  // than trusted as-is (same reasoning as publishListing's own photo lookup).
+  const photosById = new Map(photoRows.map((row) => [row.id, row.caption ?? ""]));
+  const photos = listing.photoIds.filter((id) => photosById.has(id)).map((id) => ({ id, caption: photosById.get(id)! }));
 
   const publicUrl = listing.publishedSnapshot ? `${siteOrigin}${directoryListingPath("en", listing.slug)}` : null;
 
@@ -72,6 +87,7 @@ export default async function PartnerListingEditorPage({ params }: { params: Pro
             listingId={listing.id}
             status={listing.status}
             logoUrl={listing.logoUrl}
+            photos={photos}
             operatingHours={operatingHoursFromJson(listing.operatingHours)}
             aiAvailable={isAiConfigured()}
             placesAvailable={isGooglePlacesConfigured()}
@@ -85,10 +101,12 @@ export default async function PartnerListingEditorPage({ params }: { params: Pro
               services: servicesFromJson(listing.services),
               industry: listing.industry ?? "",
               website: listing.website ?? "",
+              videoUrl: listing.videoUrl ?? "",
               address: listing.address ?? "",
               state: listing.state ?? "",
               country: listing.country ?? "",
               faqs: faqsFromJson(listing.faqs),
+              updates: updatesFromJson(listing.updates),
               categoryIds: selectedCategoryIds,
               translations: translationsFromJson(listing.translations),
               seoTitle: listing.seoTitle ?? "",
