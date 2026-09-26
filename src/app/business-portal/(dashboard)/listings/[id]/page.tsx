@@ -10,6 +10,7 @@ import {
   servicesFromJson,
   translationsFromJson,
   updatesFromJson,
+  videosFromJson,
 } from "@/lib/directory";
 import { getSiteOrigin } from "@/lib/site-url";
 import { directoryListingPath } from "@/lib/directory-i18n";
@@ -101,7 +102,7 @@ export default async function PartnerListingEditorPage({ params }: { params: Pro
               services: servicesFromJson(listing.services),
               industry: listing.industry ?? "",
               website: listing.website ?? "",
-              videoUrl: listing.videoUrl ?? "",
+              videos: videosFromJson(listing.videos),
               address: listing.address ?? "",
               state: listing.state ?? "",
               country: listing.country ?? "",

@@ -25,6 +25,7 @@ import {
   OG_LOCALE_BY_DIRECTORY_LOCALE,
   buildFaqJsonLd,
   buildLanguageAlternates,
+  buildVideoJsonLd,
   directoryShareImage,
   serializeJsonLd,
 } from "@/lib/directory-seo";
@@ -34,6 +35,7 @@ import {
   DIRECTORY_STRINGS,
   DIRECTORY_HOME_TITLE_BY_LOCALE,
   INDUSTRY_LABELS_BY_LOCALE,
+  VIDEO_CATEGORY_LABELS_BY_LOCALE,
   directoryHomePath,
   directoryListingPath,
   formatRecommendMessage,
@@ -55,6 +57,7 @@ import { ServiceList } from "@/components/directory/service-list";
 import { ShareButton } from "@/components/directory/share-button";
 import { RecommendBar } from "@/components/directory/recommend-bar";
 import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
+import { VideoGallery } from "@/components/directory/video-gallery";
 
 export const dynamic = "force-dynamic";
 
@@ -285,7 +288,11 @@ export default async function DirectoryListingPage({
   // text, regardless of locale, same as companyName.
   const todayIso = new Date().toISOString().slice(0, 10);
   const currentUpdates = listing.updates.filter((update) => isUpdateCurrent(update, todayIso));
-  const embeddableVideoUrl = listing.videoUrl ? toEmbeddableVideoUrl(listing.videoUrl) : null;
+  // Neither are the videos (see VideosEditor) — category labels below are
+  // looked up per-locale (VIDEO_CATEGORY_LABELS_BY_LOCALE), but a title is
+  // whatever the partner (or the oEmbed lookup) actually typed, same as
+  // companyName.
+  const videoGallery = listing.videos.map((video) => ({ ...video, embed: toEmbeddableVideoUrl(video.url) }));
 
   // Home > (first category, if any) > this business. Only the first
   // category, not every one a listing has — a breadcrumb trail is meant to
@@ -339,6 +346,13 @@ export default async function DirectoryListingPage({
           dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(displayFaqs) }}
         />
       )}
+      {videoGallery.map((video, index) => (
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: buildVideoJsonLd(video, video.embed?.embedUrl ?? null, listing.companyName) }}
+        />
+      ))}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbJsonLd }} />
       <div className="mb-4">
         <DirectoryBreadcrumbs items={breadcrumbItems} navLabel={t.breadcrumbNavLabel} />
@@ -543,42 +557,24 @@ export default async function DirectoryListingPage({
               </Card>
             )}
 
-            {embeddableVideoUrl ? (
+            {videoGallery.length > 0 && (
               <Card>
                 <CardHeader>
                   <CardTitle className="text-base">{t.videoHeading}</CardTitle>
                 </CardHeader>
                 <CardBody>
-                  <div className="aspect-video overflow-hidden rounded-md">
-                    <iframe
-                      title={`${listing.companyName} video`}
-                      src={embeddableVideoUrl}
-                      className="h-full w-full border-0"
-                      loading="lazy"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    />
-                  </div>
+                  <VideoGallery
+                    companyName={listing.companyName}
+                    videos={videoGallery.map((video) => ({
+                      url: video.url,
+                      title: video.title,
+                      categoryLabel: VIDEO_CATEGORY_LABELS_BY_LOCALE[resolved][video.category],
+                      thumbnailUrl: video.thumbnailUrl,
+                      embedUrl: video.embed?.embedUrl ?? null,
+                    }))}
+                  />
                 </CardBody>
               </Card>
-            ) : (
-              listing.videoUrl && (
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="text-base">{t.videoHeading}</CardTitle>
-                  </CardHeader>
-                  <CardBody>
-                    <a
-                      href={listing.videoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer nofollow"
-                      className="text-base text-petrol hover:underline dark:text-petrol-light"
-                    >
-                      {listing.videoUrl}
-                    </a>
-                  </CardBody>
-                </Card>
-              )
             )}
 
             {(displayServices.length > 0 || listing.operatingHours) && (

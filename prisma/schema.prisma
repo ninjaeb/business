@@ -255,7 +255,7 @@ model PartnerListing {
   services    Json // ServiceEntry[] (src/lib/directory.ts) — {title, description, price}
   industry    Industry?
   website     String?
-  videoUrl    String? // YouTube/Vimeo/direct link — embedded on the public page, see toEmbeddableVideoUrl
+  videos      Json? // VideoEntry[] (src/lib/directory.ts) — {url, title, category, thumbnailUrl}
   address     String? @db.Text
   state       String?
   country     String?

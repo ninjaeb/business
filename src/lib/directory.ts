@@ -4,6 +4,7 @@ import { operatingHoursFromJson, type OperatingHours } from "@/lib/operating-hou
 import { slugify } from "@/lib/slug";
 import { directoryListingPath, type DirectoryLocale } from "@/lib/directory-i18n";
 import { organizationJsonLdId, serializeJsonLd, websiteJsonLdId } from "@/lib/directory-seo";
+import { VIDEO_CATEGORIES, type VideoCategory } from "@/lib/labels";
 
 // Re-exported for existing server-side imports (actions, pages) that
 // already pull these from "@/lib/directory" — but a "use client" component
@@ -39,7 +40,7 @@ export type PublishedListingSnapshot = {
   services: ServiceEntry[];
   industry: Industry | null;
   website: string | null;
-  videoUrl: string | null;
+  videos: VideoEntry[];
   address: string | null;
   state: string | null;
   country: string | null;
@@ -82,6 +83,125 @@ export function photosFromJson(value: unknown): PhotoEntry[] {
     .map(sanitizePhotoEntry)
     .filter((entry): entry is PhotoEntry => entry !== null)
     .slice(0, MAX_GALLERY_PHOTOS);
+}
+
+// A listing's video gallery — see VideosEditor. Only the URL and what the
+// partner tells us (title, category) are ever partner-supplied; thumbnailUrl
+// is fetched best-effort from the host's own oEmbed endpoint at add-time
+// (see fetchVideoOEmbed in src/lib/video-oembed.ts) and stored here so the
+// public page never depends on a live third-party call to render — same
+// principle as every other external lookup in this app (Google Places,
+// website scraping) happening at edit-time, not at request-time. A host
+// oEmbed can't reach (Facebook, or any failed/timed-out lookup) just keeps
+// thumbnailUrl null — the gallery still embeds it on click, just behind a
+// plain placeholder instead of a real thumbnail (see VideoGallery). Only a
+// host toEmbeddableVideoUrl doesn't recognize at all falls back further, to
+// a plain "Watch video" link instead of an embed.
+export type VideoEntry = {
+  url: string;
+  title: string;
+  category: VideoCategory;
+  thumbnailUrl: string | null;
+};
+
+const MAX_VIDEOS = 12;
+const MAX_VIDEO_URL_LENGTH = 500;
+const MAX_VIDEO_TITLE_LENGTH = 100;
+
+function sanitizeVideoEntry(entry: unknown): VideoEntry | null {
+  if (!entry || typeof entry !== "object") return null;
+  const raw = entry as Record<string, unknown>;
+  const url = typeof raw.url === "string" ? raw.url.trim().slice(0, MAX_VIDEO_URL_LENGTH) : "";
+  if (!url) return null;
+  const category = VIDEO_CATEGORIES.includes(raw.category as VideoCategory) ? (raw.category as VideoCategory) : "OTHER";
+  return {
+    url,
+    title: typeof raw.title === "string" ? raw.title.trim().slice(0, MAX_VIDEO_TITLE_LENGTH) : "",
+    category,
+    thumbnailUrl: typeof raw.thumbnailUrl === "string" ? raw.thumbnailUrl.trim() : null,
+  };
+}
+
+export function videosFromJson(value: unknown): VideoEntry[] {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map(sanitizeVideoEntry)
+    .filter((entry): entry is VideoEntry => entry !== null)
+    .slice(0, MAX_VIDEOS);
+}
+
+// Parses the editor's serialized JSON (see VideosEditor's hidden input)
+// permissively, same spirit as parseServicesJson/parseFaqsJson.
+export function parseVideosJson(raw: string): VideoEntry[] {
+  let parsed: unknown;
+  try {
+    parsed = JSON.parse(raw);
+  } catch {
+    return [];
+  }
+  return videosFromJson(parsed);
+}
+
+export type VideoProvider = "youtube" | "vimeo" | "dailymotion" | "facebook" | "tiktok";
+
+function detectVideoProvider(host: string): VideoProvider | null {
+  if (host === "youtube.com" || host === "m.youtube.com" || host === "youtu.be") return "youtube";
+  if (host === "vimeo.com") return "vimeo";
+  if (host === "dailymotion.com" || host === "dai.ly") return "dailymotion";
+  if (host === "facebook.com" || host === "m.facebook.com" || host === "fb.watch") return "facebook";
+  if (host === "tiktok.com" || host === "vm.tiktok.com") return "tiktok";
+  return null;
+}
+
+// Common video hosts' watch/share URLs, converted to their embeddable iframe
+// form, plus which host it detected (fetchVideoOEmbed uses this to skip
+// Facebook, whose oEmbed now requires a Facebook developer app this project
+// doesn't ask for — see that file). Returns null for a host this doesn't
+// recognize; the caller falls back to a plain "Watch video" link pointing at
+// the original URL in that case, same spirit as the map embed's own address
+// parsing never rejecting an unusual input outright.
+export function toEmbeddableVideoUrl(rawUrl: string): { embedUrl: string; provider: VideoProvider } | null {
+  let url: URL;
+  try {
+    url = new URL(rawUrl);
+  } catch {
+    return null;
+  }
+  const host = url.hostname.replace(/^www\./, "");
+  const provider = detectVideoProvider(host);
+  if (!provider) return null;
+
+  if (provider === "youtube") {
+    const id =
+      host === "youtu.be"
+        ? url.pathname.slice(1)
+        : url.pathname === "/watch"
+          ? url.searchParams.get("v")
+          : url.pathname.startsWith("/shorts/")
+            ? url.pathname.slice(8)
+            : url.pathname.startsWith("/embed/")
+              ? url.pathname.slice(7)
+              : null;
+    return id ? { embedUrl: `https://www.youtube.com/embed/${id}`, provider } : null;
+  }
+  if (provider === "vimeo") {
+    const id = url.pathname.slice(1).split("/")[0];
+    return /^\d+$/.test(id) ? { embedUrl: `https://player.vimeo.com/video/${id}`, provider } : null;
+  }
+  if (provider === "dailymotion") {
+    // dai.ly/<id> (shortlink) or dailymotion.com/video/<id>[_slug]
+    const id = host === "dai.ly" ? url.pathname.slice(1) : url.pathname.startsWith("/video/") ? url.pathname.slice(7) : null;
+    return id ? { embedUrl: `https://www.dailymotion.com/embed/video/${id}`, provider } : null;
+  }
+  if (provider === "facebook") {
+    // Facebook's embed is a plugin iframe over the ORIGINAL url, not a
+    // per-video id extracted from the path — every Facebook video/watch/
+    // reel URL shape works the same way here.
+    return { embedUrl: `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(rawUrl)}&show_text=false`, provider };
+  }
+  // tiktok
+  const match = /\/video\/(\d+)/.exec(url.pathname);
+  return match ? { embedUrl: `https://www.tiktok.com/embed/v2/${match[1]}`, provider } : null;
 }
 
 // A listing's service/product catalog — see ServicesEditor. `description`
@@ -310,7 +430,7 @@ export function readPublishedSnapshot(value: unknown): PublishedListingSnapshot 
     services: servicesFromJson(raw.services),
     industry: typeof raw.industry === "string" ? (raw.industry as Industry) : null,
     website: typeof raw.website === "string" ? raw.website : null,
-    videoUrl: typeof raw.videoUrl === "string" ? raw.videoUrl : null,
+    videos: videosFromJson(raw.videos),
     address: typeof raw.address === "string" ? raw.address : null,
     state: typeof raw.state === "string" ? raw.state : null,
     country: typeof raw.country === "string" ? raw.country : null,
@@ -351,7 +471,7 @@ export function buildPublishedSnapshot(
     services: servicesFromJson(listing.services),
     industry: listing.industry,
     website: listing.website,
-    videoUrl: listing.videoUrl,
+    videos: videosFromJson(listing.videos),
     address: listing.address,
     state: listing.state,
     country: listing.country,
@@ -366,35 +486,6 @@ export function buildPublishedSnapshot(
     seoTitle: listing.seoTitle,
     seoDescription: listing.seoDescription,
   };
-}
-
-// Common video hosts' watch/share URLs, converted to their embeddable iframe
-// form. Returns null for anything else (including an already-embeddable
-// URL's own host) — the caller falls back to a plain "Watch video" link
-// pointing at the original URL in that case, same spirit as the map
-// embed's own address parsing never rejecting an unusual input outright.
-export function toEmbeddableVideoUrl(rawUrl: string): string | null {
-  let url: URL;
-  try {
-    url = new URL(rawUrl);
-  } catch {
-    return null;
-  }
-  const host = url.hostname.replace(/^www\./, "");
-
-  if (host === "youtube.com" || host === "m.youtube.com") {
-    const id = url.pathname === "/watch" ? url.searchParams.get("v") : url.pathname.startsWith("/shorts/") ? url.pathname.slice(8) : null;
-    return id ? `https://www.youtube.com/embed/${id}` : null;
-  }
-  if (host === "youtu.be") {
-    const id = url.pathname.slice(1);
-    return id ? `https://www.youtube.com/embed/${id}` : null;
-  }
-  if (host === "vimeo.com") {
-    const id = url.pathname.slice(1);
-    return /^\d+$/.test(id) ? `https://player.vimeo.com/video/${id}` : null;
-  }
-  return null;
 }
 
 // Only what the directory grid (the home page and each category page)
