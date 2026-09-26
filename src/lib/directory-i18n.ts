@@ -90,8 +90,6 @@ export type DirectoryStrings = {
   heroTitle: string;
   heroSubtitle: string;
   searchPlaceholder: string;
-  allIndustries: string;
-  allCategories: string;
   // A category page's "see other categories" links, below its results —
   // the only way to reach a sibling category without going back to the
   // directory home (see category-page-content.tsx).
@@ -218,9 +216,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
   en: {
     heroTitle: "Find the right business for your project",
     heroSubtitle: "Browse trusted businesses and reach out directly.",
-    searchPlaceholder: "Search by company or service…",
-    allIndustries: "All industries",
-    allCategories: "All categories",
+    searchPlaceholder: "Search by company, service, industry or category…",
     otherCategoriesHeading: "Browse other categories",
     otherLocationsHeading: "Browse other locations",
     noResultsTitle: "No businesses found",
@@ -337,9 +333,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
   zh: {
     heroTitle: "为您的项目寻找合适的企业",
     heroSubtitle: "浏览值得信赖的企业，并直接联系他们。",
-    searchPlaceholder: "按公司或服务搜索…",
-    allIndustries: "所有行业",
-    allCategories: "所有类别",
+    searchPlaceholder: "按公司、服务、行业或类别搜索…",
     otherCategoriesHeading: "浏览其他类别",
     otherLocationsHeading: "浏览其他地区",
     noResultsTitle: "未找到企业",
@@ -455,9 +449,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
   ms: {
     heroTitle: "Cari perniagaan yang sesuai untuk projek anda",
     heroSubtitle: "Semak imbas perniagaan yang dipercayai dan hubungi terus.",
-    searchPlaceholder: "Cari mengikut syarikat atau perkhidmatan…",
-    allIndustries: "Semua industri",
-    allCategories: "Semua kategori",
+    searchPlaceholder: "Cari mengikut syarikat, perkhidmatan, industri atau kategori…",
     otherCategoriesHeading: "Semak imbas kategori lain",
     otherLocationsHeading: "Semak imbas lokasi lain",
     noResultsTitle: "Tiada perniagaan dijumpai",
