@@ -32,6 +32,12 @@ function facebookGraphId(url: URL): string | null {
   if (segments.length === 0) return null;
   const first = segments[0].toLowerCase();
   if (first === "pages" && segments.length >= 3) return segments[2];
+  // Facebook's newer share-link format: /p/<readable-name>-<numeric-id>/ —
+  // the trailing digits after the last hyphen are the real page/post id;
+  // the slug itself (unlike a plain vanity username) isn't one Graph accepts.
+  if (first === "p" && segments.length >= 2) {
+    return segments[1].match(/-(\d+)$/)?.[1] ?? null;
+  }
   if (/^(profile\.php|people|pg|groups|events|photo|photo\.php|watch|share|reel|permalink\.php|posts|videos)$/.test(first)) {
     return null;
   }
