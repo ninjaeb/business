@@ -192,6 +192,20 @@ const BUSINESS_CATEGORIES: [id: string, name: string][] = [
   ["category-curtain-blinds-upholstery", "Curtain, Blinds & Upholstery"],
   ["category-swimming-pool-services", "Swimming Pool Services"],
   ["category-party-event-rental", "Party & Event Rental"],
+  // Round 2 of the Google Business Profile gap analysis — specialty
+  // retail/trade/professional types the seed was still missing, plus one
+  // more Malaysia-specific addition (religious schools).
+  ["category-butcher-meat-shop", "Butcher & Meat Shop"],
+  ["category-seafood-wet-market", "Seafood & Wet Market"],
+  ["category-tailor-alteration-services", "Tailor & Alteration Services"],
+  ["category-phone-computer-repair-shop", "Phone & Computer Repair Shop"],
+  ["category-property-developer", "Property Developer"],
+  ["category-property-valuation-services", "Property Valuation Services"],
+  ["category-musical-instrument-store", "Musical Instrument Store"],
+  ["category-art-gallery", "Art Gallery"],
+  ["category-art-supplies-store", "Art Supplies Store"],
+  ["category-licensed-moneylender", "Licensed Moneylender"],
+  ["category-religious-school-tahfiz-madrasah", "Religious School (Tahfiz/Madrasah)"],
 ];
 
 async function main() {
