@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Eye } from "lucide-react";
 import { Card, CardBody } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ListingLogo } from "@/components/directory/listing-logo";
@@ -72,10 +72,16 @@ export function ListingCard({
             </div>
           )}
 
-          <span className="mt-auto inline-flex items-center gap-1 pt-1 text-xs font-medium text-petrol dark:text-petrol-light">
-            {viewLabel}
-            <ChevronRight className="h-3.5 w-3.5" />
-          </span>
+          <div className="mt-auto flex items-center justify-between gap-2 pt-1">
+            <span className="inline-flex items-center gap-1 text-xs text-slate-400 dark:text-slate-500">
+              <Eye className="h-3.5 w-3.5" />
+              {listing.viewsLabel}
+            </span>
+            <span className="inline-flex items-center gap-1 text-xs font-medium text-petrol dark:text-petrol-light">
+              {viewLabel}
+              <ChevronRight className="h-3.5 w-3.5" />
+            </span>
+          </div>
         </CardBody>
       </Card>
     </Link>
