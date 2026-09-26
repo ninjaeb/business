@@ -105,22 +105,26 @@ export async function DirectoryChrome({
           {/* Right after the logo at every width — the header's own search
               entry point, ahead of the nav links rather than trailing them,
               so it reads as the header's second-most prominent thing after
-              the brand itself. flex-1 (capped by its own max-width classes)
-              lets it grow into whatever space the nav/hamburger group below
-              doesn't claim, rather than sitting at a fixed width that would
-              leave dead space on a narrow screen or crowd the nav on a wide
-              one. Live results as the visitor types, grouped into business/
-              products & services/news & promotions (see HeaderSearch's own
-              dropdown) — Enter, or its "see all results" link, still lands
-              on the same directoryHref?q= search a plain form submit would.
-              The dropdown itself (see header-search.tsx) doesn't stretch to
-              match this box's own narrow mobile width — it's anchored to
-              the box's left edge but sized independently, wide enough to
-              stay readable even down at the max-w-[11rem] cap below. */}
+              the brand itself. flex-1 lets it grow into whatever space the
+              nav/hamburger group doesn't claim, rather than sitting at a
+              fixed width that would leave dead space on a narrow screen or
+              crowd the nav on a wide one — uncapped below sm, where the
+              logo shrinks to just its icon and the hamburger is the only
+              other thing sharing the row, so the box may as well take the
+              rest of it; capped from sm up, once the wordmark and inline
+              nav links are also competing for the same row. Live results as
+              the visitor types, grouped into business/products & services/
+              news & promotions (see HeaderSearch's own dropdown) — Enter,
+              or its "see all results" link, still lands on the same
+              directoryHref?q= search a plain form submit would. The
+              dropdown itself (see header-search.tsx) doesn't stretch to
+              match this box's own width — it's anchored to the box's left
+              edge but sized independently, wide enough to stay readable
+              even at a narrow width. */}
           <HeaderSearch
             locale={locale}
             t={t}
-            className="min-w-0 flex-1 max-w-[11rem] sm:max-w-xs lg:max-w-sm"
+            className="min-w-0 flex-1 sm:max-w-xs lg:max-w-sm"
           />
           {/* This wrapper — not DirectoryTopNav itself — carries the ml-auto
               that pushes the nav+hamburger group flush right against the
