@@ -1,6 +1,5 @@
 import "server-only";
-import { lookup } from "node:dns/promises";
-import { isIP } from "node:net";
+import { assertPublicHttpUrl } from "@/lib/ssrf-guard";
 
 // Fetches a business's own website and boils it down to plain text for the
 // AI to read (see autoCreateListingDetails in src/app/actions/directory.ts).
@@ -24,61 +23,6 @@ const NON_HTML_EXTENSION_PATTERN = /\.(pdf|jpe?g|png|gif|webp|svg|zip|docx?|xlsx
 export type WebsitePage = { url: string; title: string; text: string };
 
 // ---------------------------------------------------------------------------
-// SSRF guard
-// ---------------------------------------------------------------------------
-
-function isPrivateIPv4(address: string): boolean {
-  const [a, b] = address.split(".").map(Number);
-  return (
-    a === 0 ||
-    a === 10 ||
-    a === 127 ||
-    (a === 100 && b >= 64 && b <= 127) ||
-    (a === 169 && b === 254) ||
-    (a === 172 && b >= 16 && b <= 31) ||
-    (a === 192 && b === 168) ||
-    a >= 224
-  );
-}
-
-function isPrivateIPv6(address: string): boolean {
-  const lower = address.toLowerCase();
-  if (lower === "::" || lower === "::1") return true;
-  if (lower.startsWith("fe80:") || lower.startsWith("fc") || lower.startsWith("fd")) return true;
-  const mapped = lower.match(/^::ffff:(\d+\.\d+\.\d+\.\d+)$/);
-  return mapped ? isPrivateIPv4(mapped[1]) : false;
-}
-
-function isPrivateAddress(address: string): boolean {
-  const version = isIP(address);
-  if (version === 4) return isPrivateIPv4(address);
-  if (version === 6) return isPrivateIPv6(address);
-  return true;
-}
-
-// The server fetches whatever URL a partner typed, so anything that could
-// reach this host's own network — localhost, a private IP, or a hostname
-// that resolves to one — is refused before a single byte is requested,
-// and again on every redirect hop (see fetchHtml).
-async function assertPublicHttpUrl(url: URL): Promise<void> {
-  if (url.protocol !== "http:" && url.protocol !== "https:") {
-    throw new Error("Only http(s) URLs can be fetched.");
-  }
-  const host = url.hostname.toLowerCase().replace(/^\[|\]$/g, "");
-  if (!host || host === "localhost" || host.endsWith(".localhost") || host.endsWith(".local") || host.endsWith(".internal")) {
-    throw new Error("Refusing to fetch a local address.");
-  }
-  if (isIP(host)) {
-    if (isPrivateAddress(host)) throw new Error("Refusing to fetch a private address.");
-    return;
-  }
-  const addresses = await lookup(host, { all: true });
-  if (addresses.length === 0 || addresses.some((entry) => isPrivateAddress(entry.address))) {
-    throw new Error("Refusing to fetch a private address.");
-  }
-}
-
-// ---------------------------------------------------------------------------
 // Fetching
 // ---------------------------------------------------------------------------
 
@@ -99,7 +43,9 @@ async function readLimited(response: Response, maxBytes: number): Promise<string
 
 // Redirects are followed by hand rather than letting fetch do it, so each
 // hop's target goes through the same public-address check as the first URL.
-async function fetchHtml(startUrl: URL): Promise<{ url: URL; html: string } | null> {
+// Exported for logo-fetch.ts, which reuses this to find a website's
+// og:image/icon tags before fetching whichever one it picks.
+export async function fetchHtml(startUrl: URL): Promise<{ url: URL; html: string } | null> {
   let url = startUrl;
   for (let hop = 0; hop <= MAX_REDIRECTS; hop++) {
     await assertPublicHttpUrl(url);
