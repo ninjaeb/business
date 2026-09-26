@@ -804,12 +804,11 @@ export async function autoCreateListingDetails(input: {
   };
 }
 
-// Partner-gated — the Logo section's "Fetch from Facebook or website"
-// button. Google Maps is already covered by AI Auto Create's own photo
-// (see logoFromPlace above); this is the other two sources named in the
-// same request. Returns a data: URL the same way logoFromPlace does, so
-// the caller can route it through LogoCropDialog exactly like a manual
-// upload.
+// Partner-gated — the Logo section's "Fetch logo" button, for a plain
+// business website. Google Maps is already covered by AI Auto Create's
+// own photo (see logoFromPlace above). Returns a data: URL the same way
+// logoFromPlace does, so the caller can route it through LogoCropDialog
+// exactly like a manual upload.
 export async function fetchListingLogoFromUrl(rawUrl: string): Promise<AiResult<{ dataUrl: string }>> {
   await requirePartnerAction();
   const result = await fetchLogoFromUrl(String(rawUrl ?? ""));

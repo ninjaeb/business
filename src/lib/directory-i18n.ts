@@ -155,6 +155,10 @@ export type DirectoryStrings = {
   // defaults to unlocalized English "Share", so every caller that isn't
   // fine with that (this one included) passes this instead.
   shareLabel: string;
+  // Public page-view counter shown under the listing's tagline (see
+  // incrementListingViewCount) — plural-aware, same pattern as
+  // DirectoryHomeCopy.listingCount.
+  viewsLabel: (count: number) => string;
   contactHeading: string;
   contactSubheading: string;
   formNameLabel: string;
@@ -284,6 +288,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     recommendBusinessCta: "Recommend the Business",
     recommendMessage: "I recommend {business} — check them out on the Business Directory: {url}",
     shareLabel: "Share Business",
+    viewsLabel: (count) => (count === 1 ? "1 view" : `${count.toLocaleString()} views`),
     contactHeading: "Get in touch",
     contactSubheading: "Send a message directly to this business — they'll reply to the email address you provide.",
     formNameLabel: "Name",
@@ -413,6 +418,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     recommendBusinessCta: "推荐这家企业",
     recommendMessage: "我推荐 {business}——快来企业目录看看：{url}",
     shareLabel: "分享企业",
+    viewsLabel: (count) => `${count.toLocaleString()} 次浏览`,
     locationLabel: "地点",
     contactHeading: "联系我们",
     contactSubheading: "直接给这家企业发送信息——他们会回复您提供的电子邮件地址。",
@@ -542,6 +548,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     recommendBusinessCta: "Syorkan Perniagaan Ini",
     recommendMessage: "Saya syorkan {business} — lihat mereka di Direktori Perniagaan: {url}",
     shareLabel: "Kongsi Perniagaan",
+    viewsLabel: (count) => `${count.toLocaleString()} paparan`,
     locationLabel: "Lokasi",
     contactHeading: "Hubungi kami",
     contactSubheading: "Hantar mesej terus kepada perniagaan ini — mereka akan membalas ke alamat e-mel yang anda berikan.",
