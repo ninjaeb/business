@@ -264,6 +264,7 @@ model PartnerListing {
   website        String?
   videos         Json? // VideoEntry[] (src/lib/directory.ts) — {url, title, category, thumbnailUrl}
   address        String?   @db.Text
+  city           String?
   state          String?
   country        String?
   operatingHours Json? // OperatingHours (src/lib/directory.ts)

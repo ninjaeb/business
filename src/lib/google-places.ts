@@ -52,8 +52,9 @@ export type PlaceDetails = {
   // below) rather than sliced out of the formatted address string — more
   // reliable across countries whose address formats order these
   // differently, and lets the editor auto-fill its own separate
-  // State/Country fields (see handleAutoCreated in
+  // City/State/Country fields (see handleAutoCreated in
   // partner-listing-form.tsx) without a partner having to type them by hand.
+  city: string | null;
   state: string | null;
   country: string | null;
   website: string | null;
@@ -197,6 +198,7 @@ export async function getPlaceDetails(placeId: string): Promise<PlaceDetails> {
     id: raw.id ?? placeId,
     name: raw.displayName?.text?.trim() || "Unnamed place",
     address: raw.formattedAddress?.trim() || null,
+    city: findAddressComponent(raw.addressComponents ?? [], "locality"),
     state: findAddressComponent(raw.addressComponents ?? [], "administrative_area_level_1"),
     country: findAddressComponent(raw.addressComponents ?? [], "country"),
     website: raw.websiteUri?.trim() || null,

@@ -219,13 +219,14 @@ function buildJsonLd(
     jsonLd.image = jsonLdImages.length === 1 ? jsonLdImages[0] : jsonLdImages;
   }
   // A structured PostalAddress (falling back to the free-text `address` as
-  // streetAddress when state/country aren't set) reads far better to both a
-  // rich-result parser and an AI crawler extracting "where is this
+  // streetAddress when city/state/country aren't set) reads far better to
+  // both a rich-result parser and an AI crawler extracting "where is this
   // business" than the same info as one opaque string ever did.
-  if (listing.address || listing.state || listing.country) {
+  if (listing.address || listing.city || listing.state || listing.country) {
     jsonLd.address = {
       "@type": "PostalAddress",
       ...(listing.address ? { streetAddress: listing.address } : {}),
+      ...(listing.city ? { addressLocality: listing.city } : {}),
       ...(listing.state ? { addressRegion: listing.state } : {}),
       ...(listing.country ? { addressCountry: listing.country } : {}),
     };
@@ -525,7 +526,7 @@ export default async function DirectoryListingPage({
                 and website are three separate lines (each still its own
                 flex-wrap row, for a long combination within one group)
                 rather than one shared wrapping row. */}
-            {(listing.industry || listing.categories.length > 0 || listing.state || listing.country || listing.website) && (
+            {(listing.industry || listing.categories.length > 0 || listing.city || listing.state || listing.country || listing.website) && (
               <div className="mt-3 hidden flex-col gap-2 sm:flex">
                 {(listing.industry || listing.categories.length > 0) && (
                   <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
@@ -545,14 +546,23 @@ export default async function DirectoryListingPage({
                     ))}
                   </div>
                 )}
-                {(listing.state || listing.country) && (
+                {(listing.city || listing.state || listing.country) && (
                   <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
+                    {listing.city && (
+                      <span className="inline-flex items-center gap-1">
+                        <MapPin className="h-4 w-4" />
+                        {listing.city}
+                      </span>
+                    )}
                     {listing.state && (
                       <Link
                         href={locationPath(slugify(listing.state), resolved)}
-                        className="inline-flex items-center gap-1 hover:text-petrol hover:underline dark:hover:text-petrol-light"
+                        className={cn(
+                          "hover:text-petrol hover:underline dark:hover:text-petrol-light",
+                          !listing.city && "inline-flex items-center gap-1",
+                        )}
                       >
-                        <MapPin className="h-4 w-4" />
+                        {!listing.city && <MapPin className="h-4 w-4" />}
                         {listing.state}
                       </Link>
                     )}
@@ -609,7 +619,7 @@ export default async function DirectoryListingPage({
             share the next one (there's enough width for all three on a
             phone, unlike the desktop column squeezed beside a 200px logo,
             which keeps them on three separate lines). */}
-        {(listing.industry || listing.categories.length > 0 || listing.state || listing.country || listing.website) && (
+        {(listing.industry || listing.categories.length > 0 || listing.city || listing.state || listing.country || listing.website) && (
           <div className="mt-3 flex flex-col gap-2 sm:hidden">
             {(listing.industry || listing.categories.length > 0) && (
               <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
@@ -629,14 +639,23 @@ export default async function DirectoryListingPage({
                 ))}
               </div>
             )}
-            {(listing.state || listing.country || listing.website) && (
+            {(listing.city || listing.state || listing.country || listing.website) && (
               <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
+                {listing.city && (
+                  <span className="inline-flex items-center gap-1">
+                    <MapPin className="h-4 w-4" />
+                    {listing.city}
+                  </span>
+                )}
                 {listing.state && (
                   <Link
                     href={locationPath(slugify(listing.state), resolved)}
-                    className="inline-flex items-center gap-1 hover:text-petrol hover:underline dark:hover:text-petrol-light"
+                    className={cn(
+                      "hover:text-petrol hover:underline dark:hover:text-petrol-light",
+                      !listing.city && "inline-flex items-center gap-1",
+                    )}
                   >
-                    <MapPin className="h-4 w-4" />
+                    {!listing.city && <MapPin className="h-4 w-4" />}
                     {listing.state}
                   </Link>
                 )}
