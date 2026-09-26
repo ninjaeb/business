@@ -72,17 +72,29 @@ export function DirectoryLeadForm({ slug, locale }: { slug: string; locale: Dire
       </div>
       <input type="hidden" name="renderedAt" value={renderedAt} />
 
-      <FieldGroup label={t.formNameLabel} htmlFor="directory-name" required>
-        <Input
-          id="directory-name"
-          name="name"
-          required
-          placeholder={t.formNamePlaceholder}
-          value={name}
-          onChange={(event) => setName(event.target.value)}
-          className="text-base"
-        />
-      </FieldGroup>
+      <div className="grid gap-4 sm:grid-cols-2">
+        <FieldGroup label={t.formNameLabel} htmlFor="directory-name" required>
+          <Input
+            id="directory-name"
+            name="name"
+            required
+            placeholder={t.formNamePlaceholder}
+            value={name}
+            onChange={(event) => setName(event.target.value)}
+            className="text-base"
+          />
+        </FieldGroup>
+        <FieldGroup label={t.formCompanyLabel} htmlFor="directory-company">
+          <Input
+            id="directory-company"
+            name="company"
+            placeholder={t.formCompanyPlaceholder}
+            value={company}
+            onChange={(event) => setCompany(event.target.value)}
+            className="text-base"
+          />
+        </FieldGroup>
+      </div>
       <div className="grid gap-4 sm:grid-cols-2">
         <FieldGroup label={t.formEmailLabel} htmlFor="directory-email" required>
           <Input
@@ -102,24 +114,14 @@ export function DirectoryLeadForm({ slug, locale }: { slug: string; locale: Dire
             name="phone"
             type="tel"
             required
+            title={t.formPhoneHint}
             placeholder={t.formPhonePlaceholder}
             value={phone}
             onChange={(event) => setPhone(event.target.value)}
             className="text-base"
           />
-          <p className="mt-1 text-xs text-slate-400">{t.formPhoneHint}</p>
         </FieldGroup>
       </div>
-      <FieldGroup label={t.formCompanyLabel} htmlFor="directory-company">
-        <Input
-          id="directory-company"
-          name="company"
-          placeholder={t.formCompanyPlaceholder}
-          value={company}
-          onChange={(event) => setCompany(event.target.value)}
-          className="text-base"
-        />
-      </FieldGroup>
       <FieldGroup label={t.formMessageLabel} htmlFor="directory-message" required>
         <Textarea
           id="directory-message"
