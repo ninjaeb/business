@@ -1052,7 +1052,8 @@ export function PartnerListingForm({
           <h3 className="mb-1.5 text-sm font-semibold text-slate-900 dark:text-slate-100">Photos</h3>
           <ListingPhotosEditor listingId={listingId} initialPhotos={photos} />
           <p className="mt-1 text-xs text-slate-400">
-            Up to 12 — added to your gallery right away, but only shown publicly once you save and the listing is
+            Up to 12 — group photos into an album (e.g. &quot;Team Building 2026&quot;) and they&apos;ll show as an
+            album on your public page. Added right away, but only shown publicly once you save and the listing is
             (re)approved, same as everything else here.
           </p>
         </div>
