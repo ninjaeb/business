@@ -57,8 +57,16 @@ export default async function PartnerLayout({ children }: { children: React.Reac
         <header className="sticky top-0 z-20 border-b border-slate-200 bg-white dark:border-neutral-800 dark:bg-neutral-900 sm:hidden">
           <div className="flex w-full items-center gap-3 px-4 py-3">
             <Link href="/business-portal" className="flex shrink-0 items-center gap-2">
-              <img src="/icon-192.png" alt="" className="h-8 w-8 shrink-0" />
-              <span className="text-lg font-semibold text-slate-900 dark:text-slate-100">Business Portal</span>
+              {/* Below sm the wordmark beside it is hidden, so this alt is
+                  the whole link's name there — same treatment as the public
+                  directory's own header (directory-chrome.tsx). Without it,
+                  "Business Portal" plus the language switcher/theme/menu
+                  group don't fit in one row on a narrow phone and overflow
+                  the viewport. */}
+              <img src="/icon-192.png" alt="Business Portal" className="h-8 w-8 shrink-0" />
+              <span className="hidden text-lg font-semibold text-slate-900 dark:text-slate-100 sm:inline">
+                Business Portal
+              </span>
             </Link>
             <div className="ml-auto flex shrink-0 items-center gap-1">
               <DirectoryLanguageSwitcher current={locale} />

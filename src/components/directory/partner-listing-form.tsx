@@ -440,7 +440,7 @@ export function PartnerListingForm({
           />
         )}
 
-        <div className="rounded-md border border-slate-200 p-4 dark:border-neutral-800">
+        <div className="min-w-0 rounded-md border border-slate-200 p-4 dark:border-neutral-800">
           <h3 className="mb-3 text-sm font-semibold text-slate-900 dark:text-slate-100">Public URL</h3>
           <PartnerSlugForm listingId={listingId} slug={currentSlug} siteOrigin={siteOrigin} autoSlugSource={autoSlugSource} />
 

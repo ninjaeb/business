@@ -13,7 +13,12 @@ export function Card({
     <div
       id={id}
       className={cn(
-        "rounded-lg border border-slate-200 bg-white dark:border-neutral-800 dark:bg-neutral-900",
+        // min-w-0: without it, a Card sitting in a grid/flex row (e.g. the
+        // dashboard's lg:grid-cols-2 pairs) defaults to min-width: auto —
+        // its own content's min-content size — and forces that whole
+        // row/track wider than the viewport on mobile instead of letting
+        // the Card's text wrap down to fit.
+        "min-w-0 rounded-lg border border-slate-200 bg-white dark:border-neutral-800 dark:bg-neutral-900",
         className,
       )}
     >
