@@ -557,8 +557,62 @@ export async function getPublishedListingBySlug(slug: string) {
   if (!listing) return null;
   const snapshot = readPublishedSnapshot(listing.publishedSnapshot);
   return snapshot
-    ? { ...snapshot, id: listing.id, partnerId: listing.partnerId, publishedAt: listing.publishedAt, viewCount: listing.viewCount }
+    ? {
+        ...snapshot,
+        id: listing.id,
+        partnerId: listing.partnerId,
+        publishedAt: listing.publishedAt,
+        viewCount: listing.viewCount,
+        // Read-only here — null until the listing detail page itself (never
+        // the opengraph-image route, which shares this same fetch but has no
+        // reason to write anything) calls getOrCreateReferralCode below.
+        referralCode: listing.referralCode,
+      }
     : null;
+}
+
+const REFERRAL_CODE_LENGTH = 7;
+
+// Two random base36 strings concatenated rather than one sliced to length —
+// Math.random().toString(36) can come back short (occasionally far short)
+// of REFERRAL_CODE_LENGTH characters after the "0." prefix, the same
+// imprecision generateListingSlug's own disambiguation suffix accepts at a
+// shorter length; concatenating first guarantees enough characters to slice
+// from every time.
+function randomReferralCode(): string {
+  return (Math.random().toString(36) + Math.random().toString(36)).replace(/[^a-z0-9]/g, "").slice(0, REFERRAL_CODE_LENGTH);
+}
+
+async function generateReferralCode(): Promise<string> {
+  for (let attempt = 0; attempt < 20; attempt++) {
+    const candidate = randomReferralCode();
+    const existing = await db.partnerListing.findUnique({ where: { referralCode: candidate }, select: { id: true } });
+    if (!existing) return candidate;
+  }
+  throw new Error("Could not generate a unique referral code — please try again.");
+}
+
+// Lazily assigns a listing's referralCode the first time it's actually
+// needed (see recommendUrl in src/app/[locale]/[slug]/page.tsx) — nothing
+// needs one before a visitor first lands on the listing's own public page,
+// so there's no migration to backfill every existing row up front. Once
+// set, it never changes (same "generated once" contract as the slug this
+// listing started with — see generateListingSlug).
+export async function getOrCreateReferralCode(listing: { id: string; referralCode: string | null }): Promise<string> {
+  if (listing.referralCode) return listing.referralCode;
+  const referralCode = await generateReferralCode();
+  try {
+    await db.partnerListing.update({ where: { id: listing.id }, data: { referralCode } });
+    return referralCode;
+  } catch {
+    // Only realistic cause: another concurrent first-ever visit to this
+    // same listing won the race and already set one. Read back whatever
+    // actually landed so this page's own link matches exactly what
+    // submitDirectoryLead will later check it against, rather than handing
+    // out a value that was never actually saved.
+    const current = await db.partnerListing.findUnique({ where: { id: listing.id }, select: { referralCode: true } });
+    return current?.referralCode ?? referralCode;
+  }
 }
 
 // The logo's real URL (served by /api/directory-images/logo/[slug]). The
@@ -652,18 +706,39 @@ export function findStateBySlug(rows: PublishedListingRow[], stateSlug: string):
   return null;
 }
 
-// Other published listings sharing a category, for the detail page's "More
-// businesses in [category]" section — the only place on a listing page a
-// visitor (or a crawler) could otherwise reach another listing without
-// going all the way back to search. Newest-first, same order
-// loadPublishedListings already returns; the caller caps how many to show.
-export function relatedListingsByCategory(
+// The newest published listings overall, for the detail page's "Latest
+// Businesses" section — the only place on a listing page a visitor (or a
+// crawler) could otherwise reach another listing without going all the way
+// back to search. Newest-first, same order loadPublishedListings already
+// returns; the caller caps how many to show. Deliberately not filtered by
+// this listing's own category or industry — "what's new," not "what's
+// similar."
+export function latestListings(rows: PublishedListingRow[], excludeSlug: string, limit: number): PublishedListingRow[] {
+  return rows.filter((row) => row.slug !== excludeSlug).slice(0, limit);
+}
+
+// Other published listings in the same state but a DIFFERENT industry, for
+// the detail page's "Businesses Near You" section — deliberately excludes
+// this listing's own industry so it reads as "other businesses near you,"
+// not a list of local competitors in the same line of work. A listing (or
+// a candidate) with no industry set has nothing to compare, so it's never
+// excluded by this rule. Newest-first, same order loadPublishedListings
+// already returns.
+export function nearbyListingsExcludingIndustry(
   rows: PublishedListingRow[],
-  category: string,
+  state: string,
   excludeSlug: string,
+  excludeIndustry: Industry | null,
   limit: number,
 ): PublishedListingRow[] {
-  return rows.filter((row) => row.slug !== excludeSlug && row.listing.categories.includes(category)).slice(0, limit);
+  return rows
+    .filter(
+      (row) =>
+        row.slug !== excludeSlug &&
+        row.listing.state === state &&
+        (!excludeIndustry || row.listing.industry !== excludeIndustry),
+    )
+    .slice(0, limit);
 }
 
 // Every BusinessCategory, including one with zero published listings — the
