@@ -108,11 +108,17 @@ export async function DirectoryChrome({
               own) — DirectoryNavMenu's own hamburger carries the same four
               links at that width instead. */}
           <DirectoryTopNav navLabel={t.topNavLabel} items={topNavItems} className="hidden lg:flex" />
-          {/* ml-auto here (rather than on the nav above) so the search box
-              is what actually claims the header's free space: full-width
-              between the logo and the hamburger below lg (nothing else on
-              that row to share it with), capped to a fixed width at lg+
-              where the nav to its left already fills that space. */}
+          {/* ml-auto here (rather than on the nav above, where an earlier
+              version of the header had it, and which briefly needed a
+              wrapper div of its own to keep it working once DirectoryTopNav
+              could collapse to hidden below lg) so the search box is what
+              actually claims the header's free space: full-width between
+              the logo and the hamburger below lg (nothing else on that row
+              to share it with), capped to a fixed width at lg+ where the
+              nav to its left already fills that space. Unlike DirectoryTopNav,
+              this never collapses to hidden at any width, so it alone is
+              enough to keep everything after it pushed flush right — no
+              wrapper needed. */}
           <HeaderSearch
             action={directoryHref}
             placeholder={t.searchPlaceholder}
