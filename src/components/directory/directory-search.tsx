@@ -7,6 +7,7 @@ import { ShareButton } from "@/components/directory/share-button";
 import { EmptyState } from "@/components/ui/empty-state";
 import { Input } from "@/components/ui/field";
 import type { DirectoryGridListing } from "@/lib/directory";
+import { normalizeSearchText } from "@/lib/directory-search";
 import type { Industry } from "@/generated/prisma/client";
 import type { DirectoryLocale, DirectoryStrings } from "@/lib/directory-i18n";
 
@@ -95,7 +96,9 @@ export function DirectorySearch({
   const categoryLabelByValue = useMemo(() => new Map(categories.map((cat) => [cat.value, cat.label])), [categories]);
 
   const filtered = useMemo(() => {
-    const q = query.trim().toLowerCase();
+    // Same normalization as the header dropdown (see normalizeSearchText),
+    // so its "see all results" hand-off to this page finds what it found.
+    const q = normalizeSearchText(query);
     return listings.filter((listing) => {
       if (industry && listing.industry !== industry) return false;
       if (category && !listing.categories.includes(category)) return false;
@@ -104,13 +107,13 @@ export function DirectorySearch({
       if (!q) return true;
       const industryLabel = listing.industry ? industryLabels[listing.industry] : undefined;
       return (
-        listing.companyName.toLowerCase().includes(q) ||
-        listing.description.toLowerCase().includes(q) ||
+        normalizeSearchText(listing.companyName).includes(q) ||
+        normalizeSearchText(listing.description).includes(q) ||
         listing.services.some(
-          (service) => service.title.toLowerCase().includes(q) || service.description.toLowerCase().includes(q),
+          (service) => normalizeSearchText(service.title).includes(q) || normalizeSearchText(service.description).includes(q),
         ) ||
-        (industryLabel?.toLowerCase().includes(q) ?? false) ||
-        listing.categories.some((cat) => (categoryLabelByValue.get(cat) ?? cat).toLowerCase().includes(q))
+        (industryLabel ? normalizeSearchText(industryLabel).includes(q) : false) ||
+        listing.categories.some((cat) => normalizeSearchText(categoryLabelByValue.get(cat) ?? cat).includes(q))
       );
     });
   }, [listings, query, industry, category, state, country, industryLabels, categoryLabelByValue]);

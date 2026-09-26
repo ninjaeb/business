@@ -7,7 +7,7 @@ import { translateCategoryName } from "@/lib/directory-category-labels";
 import { organizationJsonLdId, serializeJsonLd, websiteJsonLdId } from "@/lib/directory-seo";
 import { VIDEO_CATEGORIES, type VideoCategory } from "@/lib/labels";
 import { stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
-import type { DirectorySearchIndex } from "@/lib/directory-search";
+import { normalizeSearchText, type DirectorySearchIndex } from "@/lib/directory-search";
 
 // Re-exported for existing server-side imports (actions, pages) that
 // already pull these from "@/lib/directory" — but a "use client" component
@@ -868,11 +868,11 @@ export async function loadLatestListingUpdates(limit = MAX_LATEST_UPDATES): Prom
 }
 
 // The header search bar's searchable index (see HeaderSearch and the
-// fetchDirectorySearchIndex server action) — every published listing,
-// reduced to just the text a search matches against and the few fields a
-// result row shows, with each haystack already lowercased plain text so
-// the browser-side filter (searchDirectoryIndex in directory-search.ts) is
-// a bare substring check per keystroke.
+// /api/directory-search-index route) — every published listing, reduced
+// to just the text a search matches against and the few fields a result
+// row shows, with each haystack already normalized (see
+// normalizeSearchText) so the browser-side filter (searchDirectoryIndex in
+// directory-search.ts) is a bare substring check per keystroke.
 //
 // Deliberately not loadPublishedListings: the snapshot's logoUrl is the
 // whole logo image as a base64 data: URL (see PartnerListing.logoUrl in
@@ -921,21 +921,22 @@ export async function loadDirectorySearchIndex(locale: DirectoryLocale): Promise
       tagline,
       industryLabel,
       logoUrl: row.hasLogo ? listingLogoPath(row.slug, publishedAt) : null,
-      haystack: [
-        listing.companyName,
-        tagline,
-        stripMarkdownLiteToPlainText(translation?.description || listing.description),
-        industryLabel,
-        // Both the stored English name and its translation, so a visitor
-        // typing in either language finds it.
-        ...listing.categories.flatMap((cat) => [cat, translateCategoryName(cat, locale)]),
-      ]
-        .filter(Boolean)
-        .join("\n")
-        .toLowerCase(),
+      haystack: normalizeSearchText(
+        [
+          listing.companyName,
+          tagline,
+          stripMarkdownLiteToPlainText(translation?.description || listing.description),
+          industryLabel,
+          // Both the stored English name and its translation, so a visitor
+          // typing in either language finds it.
+          ...listing.categories.flatMap((cat) => [cat, translateCategoryName(cat, locale)]),
+        ]
+          .filter(Boolean)
+          .join(" "),
+      ),
       services: services.map((service) => ({
         title: service.title,
-        haystack: `${service.title}\n${service.description}`.toLowerCase(),
+        haystack: normalizeSearchText(`${service.title} ${service.description}`),
       })),
       // Never translated (see ListingUpdateEntry's own comment) — matched
       // in whatever language a partner actually wrote it in, and only while
@@ -945,7 +946,7 @@ export async function loadDirectorySearchIndex(locale: DirectoryLocale): Promise
         .map((update) => ({
           kind: update.kind,
           title: update.title,
-          haystack: `${update.title}\n${stripMarkdownLiteToPlainText(update.body)}`.toLowerCase(),
+          haystack: normalizeSearchText(`${update.title} ${stripMarkdownLiteToPlainText(update.body)}`),
         })),
     });
   }
