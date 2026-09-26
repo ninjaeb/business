@@ -20,7 +20,14 @@ import {
   DIRECTORY_LOCALES,
   directoryCategoriesIndexPath,
   directoryHomePath,
+  directoryListingFaqPath,
+  directoryListingNewsPath,
   directoryListingPath,
+  directoryListingPhotosPath,
+  directoryListingPromotionsPath,
+  directoryListingServicesPath,
+  directoryListingVideosPath,
+  directoryListingVisitPath,
   directoryLocationsIndexPath,
   directoryNewsPath,
   directoryProductsPath,
@@ -297,6 +304,42 @@ export async function buildSitemapXml(): Promise<string> {
           images,
         }),
       );
+    }
+
+    // Each of this listing's own sections is its own real page now (see
+    // src/app/[locale]/[slug]/layout.tsx) — one entry per section per
+    // locale, same as the listing's own About page above, just at a lower
+    // priority (a sub-page of a listing, not the listing itself) and only
+    // for a section this listing actually has something in (matching that
+    // page's own notFound() guard — a sitemap entry for a page that 404s is
+    // worse than no entry at all). News/Promotions presence ignores each
+    // post's own current-vs-expired date (unlike the pages themselves,
+    // which do filter by it): the sitemap only regenerates on
+    // publish/unpublish, so it can't track an expiry date rolling over
+    // between regenerations any more precisely than that.
+    const hasNews = listing.updates.some((update) => update.kind === "NEWS");
+    const hasPromotions = listing.updates.some((update) => update.kind === "PROMOTION");
+    const sectionEntries: [boolean, (locale: DirectoryLocale) => string][] = [
+      [listing.services.length > 0, (locale) => directoryListingServicesPath(locale, slug)],
+      [listing.photos.length > 0, (locale) => directoryListingPhotosPath(locale, slug)],
+      [listing.videos.length > 0, (locale) => directoryListingVideosPath(locale, slug)],
+      [hasNews, (locale) => directoryListingNewsPath(locale, slug)],
+      [hasPromotions, (locale) => directoryListingPromotionsPath(locale, slug)],
+      [Boolean(listing.address || listing.operatingHours), (locale) => directoryListingVisitPath(locale, slug)],
+      [listing.faqs.length > 0, (locale) => directoryListingFaqPath(locale, slug)],
+    ];
+    for (const [hasContent, pathFor] of sectionEntries) {
+      if (!hasContent) continue;
+      for (const { code } of DIRECTORY_LOCALES) {
+        entries.push(
+          urlEntry(`${STATIC_SEO_ORIGIN}${pathFor(code)}`, {
+            alternates: languageAlternates(pathFor),
+            lastModified: publishedAt ?? updatedAt,
+            changeFrequency: "weekly",
+            priority: 0.5,
+          }),
+        );
+      }
     }
   }
 

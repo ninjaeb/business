@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { DEFAULT_DIRECTORY_LOCALE, DIRECTORY_LOCALES, directoryHomePath, type DirectoryLocale } from "@/lib/directory-i18n";
-import type { FaqEntry, ListingUpdateEntry, VideoEntry } from "@/lib/directory";
-import { firstMarkdownLiteImageUrl, stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
+import type { FaqEntry, ListingUpdateEntry, PublishedListingSnapshot, VideoEntry } from "@/lib/directory";
+import { firstMarkdownLiteImageUrl, stripMarkdownLiteToPlainText, truncateAtWordBoundary } from "@/lib/markdown-lite";
+import { MAX_SEO_DESCRIPTION_LENGTH } from "@/lib/listing-seo-limits";
 
 // What every public directory page shares for search engines (SEO) and AI
 // answer engines (GEO) that isn't a translated UI string: the brand the
@@ -87,6 +88,73 @@ export function buildLanguageAlternates(
   return {
     ...Object.fromEntries(DIRECTORY_LOCALES.map(({ code }) => [code, `${siteOrigin}${pathFor(code)}`])),
     "x-default": `${siteOrigin}${pathFor(DEFAULT_DIRECTORY_LOCALE)}`,
+  };
+}
+
+// Shared by the listing's own About page and each of its section pages
+// (Products & Services, Photos, Videos, News, Promotions, Visit us, FAQ —
+// see src/app/[locale]/[slug]/) — every one of them wants the same title/
+// description fallback chain and the same OG/Twitter/robots/hreflang shape,
+// differing only in which page's own URL is canonical and (past About)
+// which section name reads after the title's own em dash. The partner's
+// seoTitle/seoDescription (or their fallbacks) describe the whole listing,
+// not any one section, so they're reused as-is rather than rewritten per
+// page — only the title gets a suffix, so a share of the Products &
+// Services page still reads as "Acme Co | Gotka Business Directory –
+// Products & Services" rather than losing the business's own name entirely.
+export function buildListingMetadata({
+  listing,
+  siteOrigin,
+  locale,
+  pageUrl,
+  pathFor,
+  sectionHeading,
+  shareImagePath,
+}: {
+  listing: Pick<PublishedListingSnapshot, "seoTitle" | "seoDescription" | "tagline" | "description" | "companyName">;
+  siteOrigin: string;
+  locale: DirectoryLocale;
+  pageUrl: string;
+  pathFor: (locale: DirectoryLocale) => string;
+  // Omitted for the About page — the bare listing URL needs no suffix,
+  // same as it never had one before it had siblings to distinguish itself
+  // from.
+  sectionHeading?: string;
+  shareImagePath: string;
+}): Metadata {
+  const plainDescription = stripMarkdownLiteToPlainText(listing.description);
+  const description =
+    listing.seoDescription?.trim() ||
+    listing.tagline ||
+    (plainDescription ? truncateAtWordBoundary(plainDescription, MAX_SEO_DESCRIPTION_LENGTH) : undefined) ||
+    `${listing.companyName} on the business directory.`;
+  const baseTitle = listing.seoTitle?.trim() || `${listing.companyName} | ${DIRECTORY_SITE_NAME_BY_LOCALE[locale]}`;
+  const title = sectionHeading ? `${baseTitle} – ${sectionHeading}` : baseTitle;
+  const shareImage = { url: `${siteOrigin}${shareImagePath}` };
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: pageUrl,
+      languages: buildLanguageAlternates(siteOrigin, pathFor),
+    },
+    robots: DIRECTORY_ROBOTS,
+    openGraph: {
+      title,
+      description,
+      url: pageUrl,
+      siteName: DIRECTORY_SITE_NAME_BY_LOCALE[locale],
+      type: "website",
+      locale: OG_LOCALE_BY_DIRECTORY_LOCALE[locale],
+      images: [shareImage],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [shareImage],
+    },
   };
 }
 
