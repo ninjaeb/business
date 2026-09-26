@@ -15,7 +15,9 @@ const MAX_HOME_CHARS = 8_000;
 const MAX_SUBPAGE_CHARS = 5_000;
 const MAX_SUBPAGES = 3;
 const MAX_COMPANY_NAME_LENGTH = 200;
-const USER_AGENT = "Mozilla/5.0 (compatible; GotkaCRM/1.0; +https://gotka.com)";
+// Exported for video-oembed.ts, which needs the same realistic UA to avoid
+// TikTok's oEmbed endpoint blocking bare/bot-like requests.
+export const USER_AGENT = "Mozilla/5.0 (compatible; GotkaCRM/1.0; +https://gotka.com)";
 
 // The homepage links worth following for more detail — the pages that
 // typically spell out what a business actually offers.

@@ -105,9 +105,10 @@ export function photosFromJson(value: unknown): PhotoEntry[] {
 // website scraping) happening at edit-time, not at request-time. A host
 // oEmbed can't reach (Facebook, or any failed/timed-out lookup) just keeps
 // thumbnailUrl null — the gallery still embeds it on click, just behind a
-// plain placeholder instead of a real thumbnail (see VideoGallery). Only a
-// host toEmbeddableVideoUrl doesn't recognize at all falls back further, to
-// a plain "Watch video" link instead of an embed.
+// plain placeholder instead of a real thumbnail (see VideoGallery). A host
+// toEmbeddableVideoUrl doesn't recognize at all, or a Facebook Reel (which
+// that function deliberately returns null for — see toEmbeddableVideoUrl),
+// falls back further, to a plain "Watch video" link instead of an embed.
 export type VideoEntry = {
   url: string;
   title: string;
@@ -209,9 +210,17 @@ export function toEmbeddableVideoUrl(rawUrl: string): { embedUrl: string; provid
     return id ? { embedUrl: `https://www.dailymotion.com/embed/video/${id}`, provider } : null;
   }
   if (provider === "facebook") {
-    // Facebook's embed is a plugin iframe over the ORIGINAL url, not a
-    // per-video id extracted from the path — every Facebook video/watch/
-    // reel URL shape works the same way here.
+    // Reels (/reel/<id> and /share/r/<code> share links) consistently come
+    // back "Video Unavailable" from this plugin — verified directly against
+    // both the share link and its resolved canonical /reel/ URL, and Meta's
+    // own embedded-video-player plugin doesn't officially cover Reels at
+    // all, only Page/video-post URLs. No iframe URL is worth generating for
+    // those; falling back to a plain "Watch video" link (the null case
+    // below) is what actually plays for the visitor. Other Facebook video
+    // shapes (/watch/?v=, /<page>/videos/<id>/) still go through the plugin
+    // as before — the embed is over the ORIGINAL url, not a per-video id
+    // extracted from the path.
+    if (/^\/(reel|share\/r)\//.test(url.pathname)) return null;
     return { embedUrl: `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(rawUrl)}&show_text=false`, provider };
   }
   // tiktok
