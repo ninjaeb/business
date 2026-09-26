@@ -652,18 +652,39 @@ export function findStateBySlug(rows: PublishedListingRow[], stateSlug: string):
   return null;
 }
 
-// Other published listings sharing a category, for the detail page's "More
-// businesses in [category]" section — the only place on a listing page a
-// visitor (or a crawler) could otherwise reach another listing without
-// going all the way back to search. Newest-first, same order
-// loadPublishedListings already returns; the caller caps how many to show.
-export function relatedListingsByCategory(
+// The newest published listings overall, for the detail page's "Latest
+// Businesses" section — the only place on a listing page a visitor (or a
+// crawler) could otherwise reach another listing without going all the way
+// back to search. Newest-first, same order loadPublishedListings already
+// returns; the caller caps how many to show. Deliberately not filtered by
+// this listing's own category or industry — "what's new," not "what's
+// similar."
+export function latestListings(rows: PublishedListingRow[], excludeSlug: string, limit: number): PublishedListingRow[] {
+  return rows.filter((row) => row.slug !== excludeSlug).slice(0, limit);
+}
+
+// Other published listings in the same state but a DIFFERENT industry, for
+// the detail page's "Businesses Near You" section — deliberately excludes
+// this listing's own industry so it reads as "other businesses near you,"
+// not a list of local competitors in the same line of work. A listing (or
+// a candidate) with no industry set has nothing to compare, so it's never
+// excluded by this rule. Newest-first, same order loadPublishedListings
+// already returns.
+export function nearbyListingsExcludingIndustry(
   rows: PublishedListingRow[],
-  category: string,
+  state: string,
   excludeSlug: string,
+  excludeIndustry: Industry | null,
   limit: number,
 ): PublishedListingRow[] {
-  return rows.filter((row) => row.slug !== excludeSlug && row.listing.categories.includes(category)).slice(0, limit);
+  return rows
+    .filter(
+      (row) =>
+        row.slug !== excludeSlug &&
+        row.listing.state === state &&
+        (!excludeIndustry || row.listing.industry !== excludeIndustry),
+    )
+    .slice(0, limit);
 }
 
 // Every BusinessCategory, including one with zero published listings — the

@@ -182,11 +182,13 @@ export type DirectoryStrings = {
   newsFeedDescription: string;
   newsFeedEmptyTitle: string;
   newsFeedEmptyDescription: string;
-  // "More businesses in {category}" on a listing's own page — {category}
-  // is replaced with that category's translated name (see
-  // translateCategoryName). Plain substitution, same pattern as
-  // recommendMessage below, since this is localized data, not code.
-  relatedListingsHeading: string;
+  // The listing page's two "other businesses" sections — newest published
+  // listings overall, and other listings in the same state but a different
+  // industry (see latestListings/nearbyListingsExcludingIndustry in
+  // src/lib/directory.ts). Deliberately not grouped by this listing's own
+  // category/industry, unlike the section these replaced.
+  latestBusinessesHeading: string;
+  nearbyBusinessesHeading: string;
   aboutHeading: string;
   // The section wrapping Video and Photos together (see VideoGallery's own
   // placement in [locale]/[slug]/page.tsx) — videoHeading/photosHeading
@@ -347,7 +349,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     newsFeedDescription: "Current news and promotions from businesses across the directory.",
     newsFeedEmptyTitle: "No news or promotions yet",
     newsFeedEmptyDescription: "Check back soon for updates from businesses in the directory.",
-    relatedListingsHeading: "More businesses in {category}",
+    latestBusinessesHeading: "Latest Businesses",
+    nearbyBusinessesHeading: "Businesses Near You",
     aboutHeading: "About",
     mediaHeading: "Media",
     videoHeading: "Videos",
@@ -498,7 +501,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     newsFeedDescription: "来自目录中各企业的最新新闻与促销信息。",
     newsFeedEmptyTitle: "暂无新闻或促销",
     newsFeedEmptyDescription: "请稍后再来查看目录中企业的最新动态。",
-    relatedListingsHeading: "更多{category}企业",
+    latestBusinessesHeading: "最新企业",
+    nearbyBusinessesHeading: "附近企业",
     aboutHeading: "关于",
     mediaHeading: "媒体",
     videoHeading: "视频",
@@ -648,7 +652,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     newsFeedDescription: "Berita dan promosi terkini daripada perniagaan di seluruh direktori.",
     newsFeedEmptyTitle: "Belum ada berita atau promosi",
     newsFeedEmptyDescription: "Sila semak semula tidak lama lagi untuk kemas kini daripada perniagaan dalam direktori.",
-    relatedListingsHeading: "Lebih banyak perniagaan dalam kategori {category}",
+    latestBusinessesHeading: "Perniagaan Terkini",
+    nearbyBusinessesHeading: "Perniagaan Berhampiran",
     aboutHeading: "Tentang",
     mediaHeading: "Media",
     videoHeading: "Video",
