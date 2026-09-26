@@ -4,6 +4,7 @@ import { DirectoryLanguageSwitcher } from "@/components/directory/directory-lang
 import { DirectoryNavMenu, type DirectoryViewer } from "@/components/directory/directory-nav-menu";
 import { DirectoryTopNav } from "@/components/directory/directory-top-nav";
 import { HeaderSearch } from "@/components/directory/header-search";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { logout } from "@/app/actions/auth";
 import { getSessionPayload } from "@/lib/session";
 import { db } from "@/lib/db";
@@ -35,10 +36,35 @@ async function getDirectoryViewer(): Promise<DirectoryViewer> {
   return user?.role === "PARTNER" ? "business" : null;
 }
 
-// The site-like header/footer (sticky nav, search box, hamburger menu with
-// language + theme switches tucked inside it, footer tagline) shared by
-// every public-facing partner page — the directory itself, its listing
-// pages, and the two forms that
+// Shared by both places the switcher renders below (inline in the header at
+// sm+, inside DirectoryNavMenu's dropdown below sm) — one definition of its
+// useSearchParams() Suspense boundary and fallback rather than two drifting
+// copies. useSearchParams() needs this (see DirectoryLanguageSwitcher's own
+// comment, for preserving the query string across a language swap); the
+// fallback is sized/styled the same as the real switcher so there's no
+// visible flash the moment either copy first mounts.
+function LocalizedLanguageSwitcher({ locale }: { locale: DirectoryLocale }) {
+  return (
+    <Suspense
+      fallback={
+        <div className="flex gap-1" aria-hidden="true">
+          {DIRECTORY_LOCALES.map((option) => (
+            <span key={option.code} className="rounded-md px-2 py-1 text-xs font-medium text-slate-500 dark:text-slate-400">
+              {option.label}
+            </span>
+          ))}
+        </div>
+      }
+    >
+      <DirectoryLanguageSwitcher current={locale} />
+    </Suspense>
+  );
+}
+
+// The site-like header/footer (sticky nav, search box, language + theme
+// switches, hamburger menu, footer tagline) shared by every public-facing
+// partner page — the directory itself, its listing pages, and the two forms
+// that
 // sit outside it (the locale-prefixed .../signup and the bare
 // /business/login) — rather than the minimal centered-card wrapper an
 // internal admin form might use. A partner filling in a form should feel
@@ -136,6 +162,15 @@ export async function DirectoryChrome({
               `hidden` and contributes no box at all below lg. */}
           <div className="ml-auto flex shrink-0 items-center gap-3">
             <DirectoryTopNav navLabel={t.topNavLabel} items={topNavItems} className="hidden lg:flex" />
+            {/* Language + theme, inline from sm up (tablet and laptop/
+                desktop both have the room) — ahead of the hamburger, same
+                order they render in inside its dropdown below. Hidden below
+                sm, where DirectoryNavMenu's own copy takes over instead;
+                see its own comment for why that copy only shows there now. */}
+            <div className="hidden items-center gap-2 sm:flex">
+              <LocalizedLanguageSwitcher locale={locale} />
+              <ThemeToggle className="text-slate-500 hover:bg-slate-100 hover:text-slate-900 dark:hover:bg-neutral-800 dark:hover:text-slate-100" />
+            </div>
             <DirectoryNavMenu
               viewer={viewer}
               logoutAction={logout}
@@ -147,27 +182,7 @@ export async function DirectoryChrome({
               addBusinessLabel={t.navAddBusiness}
               businessNavItems={localizedBusinessNavItems(locale)}
               topNavItems={topNavItems}
-              languageSwitcher={
-                // useSearchParams() (see directory-language-switcher.tsx, for
-                // preserving the query string across a language swap)
-                // requires a Suspense boundary around anything that might
-                // otherwise be statically prerendered — the fallback is
-                // sized/styled the same as the real switcher so there's no
-                // visible flash the moment the dropdown first opens.
-                <Suspense
-                  fallback={
-                    <div className="flex gap-1" aria-hidden="true">
-                      {DIRECTORY_LOCALES.map((option) => (
-                        <span key={option.code} className="rounded-md px-2 py-1 text-xs font-medium text-slate-500 dark:text-slate-400">
-                          {option.label}
-                        </span>
-                      ))}
-                    </div>
-                  }
-                >
-                  <DirectoryLanguageSwitcher current={locale} />
-                </Suspense>
-              }
+              languageSwitcher={<LocalizedLanguageSwitcher locale={locale} />}
               signOutLabel={t.navSignOut}
               directoryHref={directoryHref}
               signupHref={signupHref}

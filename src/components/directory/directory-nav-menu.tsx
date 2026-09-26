@@ -57,9 +57,9 @@ export function DirectoryNavMenu({
   // Rendered as-is, already wrapped in whatever Suspense boundary
   // useSearchParams() needs (see directory-chrome.tsx) — DirectoryNavMenu
   // itself has no reason to know that requirement, only to place the
-  // result next to ThemeToggle at the bottom of the dropdown, where both
-  // used to sit inline in the header before there was no longer room for
-  // them there either (see DirectoryTopNav's own move into this same menu).
+  // result next to ThemeToggle at the bottom of the dropdown, this
+  // component's own mobile-only copy of the pair that otherwise renders
+  // inline in the header at sm and up (see directory-chrome.tsx).
   languageSwitcher: React.ReactNode;
   signOutLabel: string;
   // Locale-aware (see directory-chrome.tsx) — never a bare "/directory" or
@@ -180,15 +180,17 @@ export function DirectoryNavMenu({
               </button>
             </form>
           )}
-          {/* Language + theme, moved here from the header row they used to
-              sit in inline next to this same hamburger button — freeing
-              that space up for the header's own search box. Not menuitems:
-              neither navigates or closes the menu on click (switching
-              language re-renders this same open menu in the new language;
-              toggling theme is a preference flip a visitor might want to
-              try more than once in a row), so this row is excluded from
-              the role="menu" semantics above it. */}
-          <div className="flex items-center justify-between gap-2 border-t border-slate-100 px-3 pb-1 pt-2 dark:border-neutral-800">
+          {/* Language + theme — only below sm now; at sm and up both render
+              inline in the header instead, ahead of this same hamburger
+              button (see directory-chrome.tsx), where there's room for them
+              without crowding the header's own search box. Below sm this
+              dropdown is their only way in. Not menuitems: neither
+              navigates or closes the menu on click (switching language
+              re-renders this same open menu in the new language; toggling
+              theme is a preference flip a visitor might want to try more
+              than once in a row), so this row is excluded from the
+              role="menu" semantics above it. */}
+          <div className="flex items-center justify-between gap-2 border-t border-slate-100 px-3 pb-1 pt-2 dark:border-neutral-800 sm:hidden">
             {languageSwitcher}
             <ThemeToggle className="text-slate-500 hover:bg-slate-100 hover:text-slate-900 dark:hover:bg-neutral-800 dark:hover:text-slate-100" />
           </div>
