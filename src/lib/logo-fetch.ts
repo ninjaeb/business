@@ -3,46 +3,17 @@ import { assertPublicHttpUrl } from "@/lib/ssrf-guard";
 import { fetchHtml } from "@/lib/website-text";
 import { ALLOWED_PHOTO_TYPES, MAX_PHOTO_BYTES, photoDataUrl } from "@/lib/photo";
 
-// Lets a partner point at a Facebook page or a plain business website
-// instead of uploading a logo file by hand — the Google Maps case (AI Auto
-// Create's own photo, see logoFromPlace in src/app/actions/directory.ts)
-// already covers the third source named in the request. Both paths here
-// end the same way: a same-origin `data:` URL, so the result can go
-// straight into LogoCropDialog without tripping its canvas's CORS check.
+// Lets a partner point at a plain business website instead of uploading a
+// logo file by hand — the Google Maps case (AI Auto Create's own photo, see
+// logoFromPlace in src/app/actions/directory.ts) already covers the other
+// source named in the request. Ends the same way: a same-origin `data:`
+// URL, so the result can go straight into LogoCropDialog without tripping
+// its canvas's CORS check.
 const FETCH_TIMEOUT_MS = 8_000;
 const MAX_REDIRECTS = 5;
 const USER_AGENT = "Mozilla/5.0 (compatible; GotkaCRM/1.0; +https://gotka.com)";
 
 export type LogoFetchResult = { status: "ok"; dataUrl: string } | { status: "error"; message: string };
-
-function isFacebookHost(hostname: string): boolean {
-  const host = hostname.toLowerCase();
-  return host === "facebook.com" || host.endsWith(".facebook.com") || host === "fb.com" || host.endsWith(".fb.com");
-}
-
-// Facebook's public Graph "picture" endpoint takes either a numeric id or a
-// page's vanity username — no access token needed for a page's own profile
-// photo. Pulls that identifier out of the handful of URL shapes a partner
-// is likely to paste; anything that isn't clearly a page (a post, a photo,
-// a group, a personal timeline) is left alone rather than guessed at.
-function facebookGraphId(url: URL): string | null {
-  const idParam = url.searchParams.get("id");
-  if (idParam) return idParam;
-  const segments = url.pathname.split("/").filter(Boolean);
-  if (segments.length === 0) return null;
-  const first = segments[0].toLowerCase();
-  if (first === "pages" && segments.length >= 3) return segments[2];
-  // Facebook's newer share-link format: /p/<readable-name>-<numeric-id>/ —
-  // the trailing digits after the last hyphen are the real page/post id;
-  // the slug itself (unlike a plain vanity username) isn't one Graph accepts.
-  if (first === "p" && segments.length >= 2) {
-    return segments[1].match(/-(\d+)$/)?.[1] ?? null;
-  }
-  if (/^(profile\.php|people|pg|groups|events|photo|photo\.php|watch|share|reel|permalink\.php|posts|videos)$/.test(first)) {
-    return null;
-  }
-  return segments[0];
-}
 
 // Follows redirects itself (fetch's own follower would skip the guard on
 // every hop) and enforces the same JPEG/PNG/WebP/GIF + 3MB rules a manual
@@ -161,7 +132,7 @@ async function fetchWebsiteLogoDataUrl(url: URL): Promise<string | null> {
 // "who's allowed to ask for it."
 export async function fetchLogoFromUrl(rawUrl: string): Promise<LogoFetchResult> {
   const trimmed = rawUrl.trim().slice(0, 500);
-  if (!trimmed) return { status: "error", message: "Enter a Facebook page or website URL." };
+  if (!trimmed) return { status: "error", message: "Enter a website URL." };
 
   let url: URL;
   try {
@@ -171,15 +142,6 @@ export async function fetchLogoFromUrl(rawUrl: string): Promise<LogoFetchResult>
   }
 
   try {
-    if (isFacebookHost(url.hostname)) {
-      const id = facebookGraphId(url);
-      if (!id) return { status: "error", message: "Couldn't find a page in that Facebook link — try the page's own URL." };
-      const dataUrl = await fetchImageAsDataUrl(
-        new URL(`https://graph.facebook.com/${encodeURIComponent(id)}/picture?type=large&width=512&height=512`),
-      );
-      return dataUrl ? { status: "ok", dataUrl } : { status: "error", message: "Couldn't fetch that Facebook page's photo." };
-    }
-
     const dataUrl = await fetchWebsiteLogoDataUrl(url);
     return dataUrl ? { status: "ok", dataUrl } : { status: "error", message: "Couldn't find a usable logo image on that website." };
   } catch {

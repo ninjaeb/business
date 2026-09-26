@@ -206,8 +206,8 @@ export function PartnerListingForm({
   // Fetched server-side (see fetchListingLogoFromUrl), then opens the same
   // crop dialog a manual upload goes through — unlike AI Auto Create's own
   // Google Maps photo (already reasonably square, applied directly in
-  // handleAutoCreated), a Facebook profile photo or a website's og:image
-  // can be any shape, so it's worth letting the partner confirm/crop it.
+  // handleAutoCreated), a website's og:image can be any shape, so it's
+  // worth letting the partner confirm/crop it.
   function handleFetchLogoFromUrl() {
     const url = logoUrlInput.trim();
     if (!url) return;
@@ -527,7 +527,7 @@ export function PartnerListingForm({
                 type="url"
                 value={logoUrlInput}
                 onChange={(event) => setLogoUrlInput(event.target.value)}
-                placeholder="Or paste a Facebook page or website URL"
+                placeholder="Or paste a website URL"
                 className="flex-1"
               />
               <button

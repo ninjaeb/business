@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ExternalLink, Inbox, Handshake, Plus, Store, Trophy, Wallet } from "lucide-react";
+import { ExternalLink, Eye, Inbox, Handshake, Plus, Store, Trophy, Wallet } from "lucide-react";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { createListingAction } from "@/app/actions/directory";
 import { listPartnerListings, getDirectoryLeadStatsForPartner } from "@/lib/directory";
@@ -88,6 +88,12 @@ export default async function PartnerOverviewPage() {
                             View public listing
                             <ExternalLink className="h-3.5 w-3.5" />
                           </Link>
+                        )}
+                        {publicUrl && (
+                          <span className="inline-flex items-center gap-1 text-slate-500 dark:text-slate-400">
+                            <Eye className="h-3.5 w-3.5" />
+                            {listing.viewCount.toLocaleString()} view{listing.viewCount === 1 ? "" : "s"}
+                          </span>
                         )}
                       </div>
                     </CardBody>

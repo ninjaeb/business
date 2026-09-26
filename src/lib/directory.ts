@@ -517,6 +517,15 @@ export async function getOwnedListing(listingId: string, partnerId: string): Pro
   return db.partnerListing.findFirst({ where: { id: listingId, partnerId } });
 }
 
+// Bumped once per real page load of the public listing page (see
+// DirectoryListingPage in src/app/[locale]/business/[slug]/page.tsx),
+// which is server-rendered on every request — never on a cached/static
+// hit. Swallows its own errors: a missed view count is never worth
+// failing, or slowing, that page's render for.
+export async function incrementListingViewCount(id: string): Promise<void> {
+  await db.partnerListing.update({ where: { id }, data: { viewCount: { increment: 1 } } }).catch(() => {});
+}
+
 // Explicit creation — unlike the old single-listing ensurePartnerListing
 // (which silently created one the first time any listing page was visited),
 // a partner who can have several listings needs "create another one" to be
