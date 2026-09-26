@@ -102,65 +102,67 @@ export async function DirectoryChrome({
               {t.brandName}
             </span>
           </Link>
-          {/* Inline on lg+ screens only, right after the logo — below lg
-              there's no second row for these to spill into anymore (that
-              used to overflow into a cramped horizontal scroll bar of its
-              own) — DirectoryNavMenu's own hamburger carries the same four
-              links at that width instead. */}
-          <DirectoryTopNav navLabel={t.topNavLabel} items={topNavItems} className="hidden lg:flex" />
-          {/* ml-auto here (rather than on the nav above, where an earlier
-              version of the header had it, and which briefly needed a
-              wrapper div of its own to keep it working once DirectoryTopNav
-              could collapse to hidden below lg) so the search box is what
-              actually claims the header's free space: full-width between
-              the logo and the hamburger below lg (nothing else on that row
-              to share it with), capped to a fixed width at lg+ where the
-              nav to its left already fills that space. Unlike DirectoryTopNav,
-              this never collapses to hidden at any width, so it alone is
-              enough to keep everything after it pushed flush right — no
-              wrapper needed. */}
+          {/* Right after the logo at every width — the header's own search
+              entry point, ahead of the nav links rather than trailing them,
+              so it reads as the header's second-most prominent thing after
+              the brand itself. flex-1 (capped by its own max-width classes)
+              lets it grow into whatever space the nav/hamburger group below
+              doesn't claim, rather than sitting at a fixed width that would
+              leave dead space on a narrow screen or crowd the nav on a wide
+              one. */}
           <HeaderSearch
             action={directoryHref}
             placeholder={t.searchPlaceholder}
-            className="ml-auto w-full max-w-[11rem] flex-1 sm:max-w-xs lg:max-w-sm"
+            className="min-w-0 flex-1 max-w-[11rem] sm:max-w-xs lg:max-w-sm"
           />
-          <DirectoryNavMenu
-            viewer={viewer}
-            logoutAction={logout}
-            loginLabel={t.navLoginRegister}
-            listBusinessLabel={t.listBusinessCta}
-            benefitsLabel={t.benefitsNavLabel}
-            directoryLabel={t.brandName}
-            myBusinessLabel={t.navMyBusiness}
-            addBusinessLabel={t.navAddBusiness}
-            businessNavItems={localizedBusinessNavItems(locale)}
-            topNavItems={topNavItems}
-            languageSwitcher={
-              // useSearchParams() (see directory-language-switcher.tsx, for
-              // preserving the query string across a language swap)
-              // requires a Suspense boundary around anything that might
-              // otherwise be statically prerendered — the fallback is
-              // sized/styled the same as the real switcher so there's no
-              // visible flash the moment the dropdown first opens.
-              <Suspense
-                fallback={
-                  <div className="flex gap-1" aria-hidden="true">
-                    {DIRECTORY_LOCALES.map((option) => (
-                      <span key={option.code} className="rounded-md px-2 py-1 text-xs font-medium text-slate-500 dark:text-slate-400">
-                        {option.label}
-                      </span>
-                    ))}
-                  </div>
-                }
-              >
-                <DirectoryLanguageSwitcher current={locale} />
-              </Suspense>
-            }
-            signOutLabel={t.navSignOut}
-            directoryHref={directoryHref}
-            signupHref={signupHref}
-            benefitsHref={benefitsHref}
-          />
+          {/* This wrapper — not DirectoryTopNav itself — carries the ml-auto
+              that pushes the nav+hamburger group flush right against the
+              header's trailing edge. DirectoryTopNav is inline on lg+
+              screens only (below lg its own four links live in
+              DirectoryNavMenu's hamburger instead — see its own comment
+              there); putting the margin on it directly would leave nothing
+              to push the hamburger right once DirectoryTopNav collapses to
+              `hidden` and contributes no box at all below lg. */}
+          <div className="ml-auto flex shrink-0 items-center gap-3">
+            <DirectoryTopNav navLabel={t.topNavLabel} items={topNavItems} className="hidden lg:flex" />
+            <DirectoryNavMenu
+              viewer={viewer}
+              logoutAction={logout}
+              loginLabel={t.navLoginRegister}
+              listBusinessLabel={t.listBusinessCta}
+              benefitsLabel={t.benefitsNavLabel}
+              directoryLabel={t.brandName}
+              myBusinessLabel={t.navMyBusiness}
+              addBusinessLabel={t.navAddBusiness}
+              businessNavItems={localizedBusinessNavItems(locale)}
+              topNavItems={topNavItems}
+              languageSwitcher={
+                // useSearchParams() (see directory-language-switcher.tsx, for
+                // preserving the query string across a language swap)
+                // requires a Suspense boundary around anything that might
+                // otherwise be statically prerendered — the fallback is
+                // sized/styled the same as the real switcher so there's no
+                // visible flash the moment the dropdown first opens.
+                <Suspense
+                  fallback={
+                    <div className="flex gap-1" aria-hidden="true">
+                      {DIRECTORY_LOCALES.map((option) => (
+                        <span key={option.code} className="rounded-md px-2 py-1 text-xs font-medium text-slate-500 dark:text-slate-400">
+                          {option.label}
+                        </span>
+                      ))}
+                    </div>
+                  }
+                >
+                  <DirectoryLanguageSwitcher current={locale} />
+                </Suspense>
+              }
+              signOutLabel={t.navSignOut}
+              directoryHref={directoryHref}
+              signupHref={signupHref}
+              benefitsHref={benefitsHref}
+            />
+          </div>
         </div>
       </header>
 
