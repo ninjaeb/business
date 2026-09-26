@@ -10,6 +10,7 @@ import {
   type DirectoryLocale,
 } from "@/lib/directory-i18n";
 import { translateCategoryName } from "@/lib/directory-category-labels";
+import { locationLabel } from "@/lib/directory-location-labels";
 import { organizationJsonLdId, serializeJsonLd, websiteJsonLdId } from "@/lib/directory-seo";
 import { VIDEO_CATEGORIES, type VideoCategory } from "@/lib/labels";
 import { stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
@@ -541,6 +542,7 @@ export type DirectoryGridListing = {
   services: { title: string; description: string }[];
   industry: Industry | null;
   categories: string[];
+  city: string | null;
   state: string | null;
   country: string | null;
   logoUrl: string | null;
@@ -685,6 +687,7 @@ export function toDirectoryGridListing(
     services: services.map(({ title, description }) => ({ title, description })),
     industry: listing.industry,
     categories: listing.categories,
+    city: listing.city,
     state: listing.state,
     country: listing.country,
     logoUrl: listing.logoUrl ? listingLogoPath(slug, publishedAt) : null,
@@ -705,21 +708,42 @@ export function countListingsByCategory(rows: { listing: Pick<PublishedListingSn
   return counts;
 }
 
-// How many published listings carry each state — the location-page
-// counterpart of countListingsByCategory above. Unlike category, state has
-// no separate admin-managed table (BusinessCategory): a state only exists
-// at all because some listing's own address carries it, so — unlike a
-// category — there's no such thing as a state with zero listings.
-export function countListingsByState(rows: { listing: Pick<PublishedListingSnapshot, "state"> }[]): Map<string, number> {
-  const counts = new Map<string, number>();
+// One entry per distinct city+state a published listing carries — the
+// location-page counterpart of countListingsByCategory above, grouped
+// finer than state alone so a page for "Petaling Jaya, Selangor" doesn't
+// lump in every other city in the same state. A listing with no city set
+// (an older one, from before that field existed, or one whose partner left
+// it blank) falls back to its own state-only group, same as before city
+// existed at all — grouping key is city+state, never city alone, since two
+// same-named cities in different states are different places. country is
+// carried along only for display (see listLocationsWithCounts's own
+// comment on when it's actually shown) — not part of the grouping key,
+// since every business in the same city/state pair is expected to share
+// one; the first non-null value seen wins if they ever don't agree. Unlike
+// category, state has no separate admin-managed table (BusinessCategory):
+// a group only exists at all because some listing's own address carries
+// it, so there's no such thing as a location with zero listings.
+export type LocationGroup = { city: string | null; state: string; country: string | null; count: number };
+export function countListingsByCityState(
+  rows: { listing: Pick<PublishedListingSnapshot, "city" | "state" | "country"> }[],
+): Map<string, LocationGroup> {
+  const groups = new Map<string, LocationGroup>();
   for (const { listing } of rows) {
-    if (listing.state) counts.set(listing.state, (counts.get(listing.state) ?? 0) + 1);
+    if (!listing.state) continue;
+    const key = `${listing.city ?? ""}\u0000${listing.state}`;
+    const existing = groups.get(key);
+    if (existing) {
+      existing.count += 1;
+      if (!existing.country && listing.country) existing.country = listing.country;
+    } else {
+      groups.set(key, { city: listing.city, state: listing.state, country: listing.country, count: 1 });
+    }
   }
-  return counts;
+  return groups;
 }
 
 // How many published listings carry each industry — the industry-page
-// counterpart of countListingsByCategory/countListingsByState above.
+// counterpart of countListingsByCategory/countListingsByCityState above.
 // Industry has a fixed, known set of possible values (see INDUSTRIES in
 // src/lib/labels.ts), so — like category, unlike state — a value can have
 // zero listings; see buildIndustryMetadata's noindex-when-empty handling.
@@ -731,14 +755,19 @@ export function countListingsByIndustry(rows: { listing: Pick<PublishedListingSn
   return counts;
 }
 
-// Resolves a location page's URL slug back to the exact state string its
-// listings carry (same slugify-at-request-time approach as
-// findCategoryBySlug, since state isn't a separate table with its own slug
-// column either) — null when no published listing has a state that
-// slugifies to this.
-export function findStateBySlug(rows: PublishedListingRow[], stateSlug: string): string | null {
+// Resolves a location page's URL slug back to the exact city+state (or
+// state-only) group its listings carry (same slugify-at-request-time
+// approach as findCategoryBySlug, since neither is a separate table with
+// its own slug column) — null when no published listing's location
+// slugifies to this. slugify collapses ", " and " " identically, so this
+// stays in sync with every caller that builds a link via
+// slugify(locationLabel(city, state)) without a dedicated slug function of
+// its own.
+export function findLocationBySlug(rows: PublishedListingRow[], slug: string): { city: string | null; state: string } | null {
   for (const { listing } of rows) {
-    if (listing.state && slugify(listing.state) === stateSlug) return listing.state;
+    if (listing.state && slugify(locationLabel(listing.city, listing.state)) === slug) {
+      return { city: listing.city, state: listing.state };
+    }
   }
   return null;
 }
@@ -792,14 +821,20 @@ export async function listCategoriesWithCounts(): Promise<CategoryWithCount[]> {
   return categories.map((row) => ({ name: row.name, count: counts.get(row.name) ?? 0 }));
 }
 
-// Every state at least one published listing carries, alphabetically — the
-// locations-index counterpart of listCategoriesWithCounts. No zero-count
-// case here either, for the same reason countListingsByState has none: a
-// state only exists because some listing's own address carries it.
-export type LocationWithCount = { name: string; count: number };
+// Every city+state (or state-only) group at least one published listing
+// carries, sorted by state then city — the locations-index counterpart of
+// listCategoriesWithCounts. No zero-count case here either, for the same
+// reason countListingsByCityState has none: a group only exists because
+// some listing's own address carries it. country only matters for display
+// when it isn't the same for every group (see LocationsIndexContent) —
+// this just carries it through unfiltered.
+export type LocationWithCount = LocationGroup;
 export async function listLocationsWithCounts(): Promise<LocationWithCount[]> {
   const rows = await loadPublishedListings();
-  return [...countListingsByState(rows)].map(([name, count]) => ({ name, count })).sort((a, b) => a.name.localeCompare(b.name));
+  return [...countListingsByCityState(rows).values()].sort((a, b) => {
+    const stateCompare = a.state.localeCompare(b.state);
+    return stateCompare !== 0 ? stateCompare : (a.city ?? "").localeCompare(b.city ?? "");
+  });
 }
 
 // One entry per service across every published listing, newest-listing-first

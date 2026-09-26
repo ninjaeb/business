@@ -6,12 +6,12 @@ import { buildLocationMetadata, LocationPageContent } from "@/components/directo
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ locale: string; stateSlug: string }>;
+  params: Promise<{ locale: string; locationSlug: string }>;
 }): Promise<Metadata> {
-  const { locale, stateSlug } = await params;
+  const { locale, locationSlug } = await params;
   const resolved = resolveDirectoryLocale(locale);
   if (!resolved) return {};
-  return buildLocationMetadata(stateSlug, resolved);
+  return buildLocationMetadata(locationSlug, resolved);
 }
 
 // Same reasoning as the category route's own force-dynamic: listings
@@ -23,11 +23,11 @@ export default async function DirectoryLocationPage({
   params,
   searchParams,
 }: {
-  params: Promise<{ locale: string; stateSlug: string }>;
+  params: Promise<{ locale: string; locationSlug: string }>;
   searchParams: Promise<{ q?: string }>;
 }) {
-  const [{ locale, stateSlug }, { q }] = await Promise.all([params, searchParams]);
+  const [{ locale, locationSlug }, { q }] = await Promise.all([params, searchParams]);
   const resolved = resolveDirectoryLocale(locale);
   if (!resolved) notFound();
-  return <LocationPageContent stateSlug={stateSlug} locale={resolved} q={q ?? ""} />;
+  return <LocationPageContent locationSlug={locationSlug} locale={resolved} q={q ?? ""} />;
 }

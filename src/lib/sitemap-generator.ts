@@ -5,15 +5,15 @@ import path from "node:path";
 import { db } from "@/lib/db";
 import {
   countListingsByCategory,
+  countListingsByCityState,
   countListingsByIndustry,
-  countListingsByState,
   directoryImagePath,
   listingLogoPath,
   loadPublishedListings,
   slugify,
 } from "@/lib/directory";
 import { categoryPath } from "@/lib/directory-category-labels";
-import { locationPath } from "@/lib/directory-location-labels";
+import { locationLabel, locationPath } from "@/lib/directory-location-labels";
 import { industryPath } from "@/lib/directory-industry-labels";
 import {
   DEFAULT_DIRECTORY_LOCALE,
@@ -132,10 +132,12 @@ export async function buildSitemapXml(): Promise<string> {
   // is the honest lastmod for the category page itself, same reasoning as
   // a listing's own lastmod below.
   const latestPublishedByCategory = new Map<string, Date>();
-  // Same idea, per state, for the location pages below — see
-  // findStateBySlug/countListingsByState for why there's no "empty state"
-  // case to skip the way the category loop below has to.
-  const latestPublishedByState = new Map<string, Date>();
+  // Same idea, per city+state (or state-only) group, for the location pages
+  // below — see findLocationBySlug/countListingsByCityState for why there's
+  // no "empty location" case to skip the way the category loop below has
+  // to. Keyed by the same combined label locationPath's own slug is built
+  // from, so a listing with no city set still gets its own state-only key.
+  const latestPublishedByLocation = new Map<string, Date>();
   // Same idea, per industry — like category, an industry can have zero
   // listings (see countListingsByIndustry), so the loop below skips those.
   const latestPublishedByIndustry = new Map<string, Date>();
@@ -146,8 +148,9 @@ export async function buildSitemapXml(): Promise<string> {
       if (!latest || date > latest) latestPublishedByCategory.set(category, date);
     }
     if (listing.state) {
-      const latest = latestPublishedByState.get(listing.state);
-      if (!latest || date > latest) latestPublishedByState.set(listing.state, date);
+      const label = locationLabel(listing.city, listing.state);
+      const latest = latestPublishedByLocation.get(label);
+      if (!latest || date > latest) latestPublishedByLocation.set(label, date);
     }
     if (listing.industry) {
       const latest = latestPublishedByIndustry.get(listing.industry);
@@ -233,17 +236,19 @@ export async function buildSitemapXml(): Promise<string> {
     }
   }
 
-  // Every state at least one published listing carries. Unlike categories,
-  // there's no separate admin-managed table to iterate and no "nobody's
-  // published into it yet" case to skip (see countListingsByState) — the
-  // set of states below IS the count map's own keys.
-  for (const state of countListingsByState(listings).keys()) {
-    const stateSlug = slugify(state);
+  // Every city+state (or state-only) group at least one published listing
+  // carries. Unlike categories, there's no separate admin-managed table to
+  // iterate and no "nobody's published into it yet" case to skip (see
+  // countListingsByCityState) — the set of groups below IS the count map's
+  // own values.
+  for (const { city, state } of countListingsByCityState(listings).values()) {
+    const label = locationLabel(city, state);
+    const locationSlug = slugify(label);
     for (const { code } of DIRECTORY_LOCALES) {
       entries.push(
-        urlEntry(`${STATIC_SEO_ORIGIN}${locationPath(stateSlug, code)}`, {
-          alternates: languageAlternates((locale) => locationPath(stateSlug, locale)),
-          lastModified: latestPublishedByState.get(state),
+        urlEntry(`${STATIC_SEO_ORIGIN}${locationPath(locationSlug, code)}`, {
+          alternates: languageAlternates((locale) => locationPath(locationSlug, locale)),
+          lastModified: latestPublishedByLocation.get(label),
           changeFrequency: "daily",
           priority: 0.7,
         }),
