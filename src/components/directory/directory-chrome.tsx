@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { DirectoryLanguageSwitcher } from "@/components/directory/directory-language-switcher";
 import { DirectoryNavMenu, type DirectoryViewer } from "@/components/directory/directory-nav-menu";
+import { DirectoryTopNav } from "@/components/directory/directory-top-nav";
 import { logout } from "@/app/actions/auth";
 import { getSessionPayload } from "@/lib/session";
 import { db } from "@/lib/db";
@@ -11,7 +12,11 @@ import {
   DIRECTORY_LOCALES,
   DIRECTORY_STRINGS,
   directoryBenefitsPath,
+  directoryCategoriesIndexPath,
   directoryHomePath,
+  directoryLocationsIndexPath,
+  directoryNewsPath,
+  directoryProductsPath,
   directorySignupPath,
   localizedBusinessNavItems,
   type DirectoryLocale,
@@ -67,6 +72,17 @@ export async function DirectoryChrome({
   const directoryHref = localeProp ? directoryHomePath(localeProp) : "/directory";
   const signupHref = localeProp ? directorySignupPath(localeProp) : "/directory/signup";
   const benefitsHref = localeProp ? directoryBenefitsPath(localeProp) : "/directory/benefits";
+  // Always built off the resolved `locale` (not localeProp) — unlike the
+  // links above, these four pages have no bare-URL fallback to redirect
+  // through, so even a page outside the locale-prefixed tree (e.g.
+  // /business/login) still gets working links, in whatever language the
+  // cookie/Accept-Language guess landed on.
+  const topNavItems = [
+    { href: directoryCategoriesIndexPath(locale), label: t.navAllBusiness },
+    { href: directoryLocationsIndexPath(locale), label: t.navLocations },
+    { href: directoryProductsPath(locale), label: t.navLatestProducts },
+    { href: directoryNewsPath(locale), label: t.updatesHeading },
+  ];
 
   return (
     <div className="flex min-h-full flex-col bg-slate-50 dark:bg-neutral-950">
@@ -122,6 +138,7 @@ export async function DirectoryChrome({
             />
           </div>
         </div>
+        <DirectoryTopNav navLabel={t.topNavLabel} items={topNavItems} />
       </header>
 
       <main className="flex-1">{children}</main>

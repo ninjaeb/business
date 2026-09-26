@@ -16,8 +16,12 @@ import { locationPath } from "@/lib/directory-location-labels";
 import {
   DEFAULT_DIRECTORY_LOCALE,
   DIRECTORY_LOCALES,
+  directoryCategoriesIndexPath,
   directoryHomePath,
   directoryListingPath,
+  directoryLocationsIndexPath,
+  directoryNewsPath,
+  directoryProductsPath,
   type DirectoryLocale,
 } from "@/lib/directory-i18n";
 import { STATIC_SEO_ORIGIN } from "@/lib/static-seo-origin";
@@ -149,6 +153,53 @@ export async function buildSitemapXml(): Promise<string> {
         alternates: languageAlternates(directoryHomePath),
         changeFrequency: "daily",
         priority: 0.8,
+      }),
+    );
+  }
+
+  // Shared lastmod for the four new aggregate pages below (categories/
+  // locations index, products feed, news feed): each one's content is
+  // derived from every published listing at once, so the most recent
+  // publish/update across all of them is the honest lastmod for all four —
+  // there's no single listing each page belongs to the way a category or
+  // location page has one.
+  let latestOverall: Date | undefined;
+  for (const { publishedAt, updatedAt } of listings) {
+    const date = publishedAt ?? updatedAt;
+    if (!latestOverall || date > latestOverall) latestOverall = date;
+  }
+
+  for (const { code } of DIRECTORY_LOCALES) {
+    entries.push(
+      urlEntry(`${STATIC_SEO_ORIGIN}${directoryCategoriesIndexPath(code)}`, {
+        alternates: languageAlternates(directoryCategoriesIndexPath),
+        lastModified: latestOverall,
+        changeFrequency: "daily",
+        priority: 0.6,
+      }),
+    );
+    entries.push(
+      urlEntry(`${STATIC_SEO_ORIGIN}${directoryLocationsIndexPath(code)}`, {
+        alternates: languageAlternates(directoryLocationsIndexPath),
+        lastModified: latestOverall,
+        changeFrequency: "daily",
+        priority: 0.6,
+      }),
+    );
+    entries.push(
+      urlEntry(`${STATIC_SEO_ORIGIN}${directoryProductsPath(code)}`, {
+        alternates: languageAlternates(directoryProductsPath),
+        lastModified: latestOverall,
+        changeFrequency: "daily",
+        priority: 0.6,
+      }),
+    );
+    entries.push(
+      urlEntry(`${STATIC_SEO_ORIGIN}${directoryNewsPath(code)}`, {
+        alternates: languageAlternates(directoryNewsPath),
+        lastModified: latestOverall,
+        changeFrequency: "daily",
+        priority: 0.6,
       }),
     );
   }

@@ -27,6 +27,7 @@ import {
   OG_LOCALE_BY_DIRECTORY_LOCALE,
   buildFaqJsonLd,
   buildLanguageAlternates,
+  buildUpdatesJsonLd,
   buildVideoJsonLd,
   directoryShareImage,
   serializeJsonLd,
@@ -42,6 +43,7 @@ import {
   directoryListingPath,
   formatRecommendMessage,
   formatViewsLabel,
+  type DirectoryLocale,
   type DirectoryStrings,
 } from "@/lib/directory-i18n";
 import { translateCategoryName, categoryPath } from "@/lib/directory-category-labels";
@@ -261,6 +263,16 @@ function buildJsonLd(
   return serializeJsonLd(jsonLd);
 }
 
+// A News/Promotion post's own dateline (see ListingUpdateEntry.postedAt),
+// shown next to its title the way a news feed or blog normally dates its
+// posts — matches the visiting locale, unlike the post's own English-only
+// title/body (see UpdatesEditor's own "not translated" note).
+function formatUpdatePostedAt(postedAt: string, locale: DirectoryLocale): string {
+  return new Intl.DateTimeFormat(locale, { month: "short", day: "numeric", year: "numeric" }).format(
+    new Date(`${postedAt}T00:00:00`),
+  );
+}
+
 type HoursRow = { day: string; label: string; status: string; isToday: boolean };
 
 // One row per day of the week (Monday–Sunday, always all seven) rather than
@@ -400,6 +412,12 @@ export default async function DirectoryListingPage({
           dangerouslySetInnerHTML={{ __html: buildVideoJsonLd(video, video.embed?.embedUrl ?? null, listing.companyName) }}
         />
       ))}
+      {currentUpdates.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: buildUpdatesJsonLd(currentUpdates, siteOrigin, pageUrl) }}
+        />
+      )}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbJsonLd }} />
       <div className="mb-4">
         <DirectoryBreadcrumbs items={breadcrumbItems} navLabel={t.breadcrumbNavLabel} />
@@ -774,8 +792,13 @@ export default async function DirectoryListingPage({
                           {update.kind === "PROMOTION" ? t.promotionLabel : t.newsLabel}
                         </Badge>
                         <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">{update.title}</h3>
+                        {update.postedAt && (
+                          <time dateTime={update.postedAt} className="text-xs text-slate-400">
+                            {formatUpdatePostedAt(update.postedAt, resolved)}
+                          </time>
+                        )}
                       </div>
-                      <p className="mt-1 whitespace-pre-wrap text-base text-slate-600 dark:text-slate-300">{update.body}</p>
+                      <div className="mt-1 text-base text-slate-600 dark:text-slate-300">{renderMarkdownLite(update.body)}</div>
                     </div>
                   ))}
                 </CardBody>

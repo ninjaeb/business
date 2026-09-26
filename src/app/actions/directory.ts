@@ -14,7 +14,16 @@ import { ALLOWED_PHOTO_TYPES, MAX_PHOTO_BYTES, photoDataUrl } from "@/lib/photo"
 import { regenerateSitemapFile } from "@/lib/sitemap-generator";
 import { regenerateLlmsTxtFile } from "@/lib/llms-txt-generator";
 import { revalidateDirectory } from "@/lib/directory-revalidate";
-import { directoryCategoryUrls, directoryHomeUrls, directoryListingUrls, notifyIndexNow } from "@/lib/indexnow";
+import {
+  directoryCategoriesIndexUrls,
+  directoryCategoryUrls,
+  directoryHomeUrls,
+  directoryListingUrls,
+  directoryLocationsIndexUrls,
+  directoryNewsUrls,
+  directoryProductsUrls,
+  notifyIndexNow,
+} from "@/lib/indexnow";
 import {
   buildPublishedSnapshot,
   createPartnerListing,
@@ -1222,11 +1231,17 @@ async function publishListing(id: string) {
   });
   await Promise.all([regenerateSitemapFile(), regenerateLlmsTxtFile()]);
   // Every page whose content this changes, in all three languages: the
-  // listing itself, the home grid, and each category page it now sits in.
+  // listing itself, the home grid, each category page it now sits in, and
+  // the four aggregate pages (categories/locations index, products, news)
+  // that are each derived from every published listing at once.
   void notifyIndexNow([
     ...directoryHomeUrls(),
     ...directoryListingUrls(published.slug),
     ...directoryCategoryUrls(listing.categories.map((entry) => entry.category.name)),
+    ...directoryCategoriesIndexUrls(),
+    ...directoryLocationsIndexUrls(),
+    ...directoryProductsUrls(),
+    ...directoryNewsUrls(),
   ]);
   return published;
 }
@@ -1292,7 +1307,14 @@ export async function unpublishDirectoryListing(id: string): Promise<void> {
   await Promise.all([regenerateSitemapFile(), regenerateLlmsTxtFile()]);
   revalidatePath("/admin");
   revalidateDirectory({ slugs: [listing.slug] });
-  void notifyIndexNow([...directoryHomeUrls(), ...directoryListingUrls(listing.slug)]);
+  void notifyIndexNow([
+    ...directoryHomeUrls(),
+    ...directoryListingUrls(listing.slug),
+    ...directoryCategoriesIndexUrls(),
+    ...directoryLocationsIndexUrls(),
+    ...directoryProductsUrls(),
+    ...directoryNewsUrls(),
+  ]);
 }
 
 // Reassigns a listing to a different partner account — e.g. the original

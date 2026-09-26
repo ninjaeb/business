@@ -307,18 +307,31 @@ export function parseFaqsJson(raw: string): FaqEntry[] {
 // optional and mainly meaningful for a PROMOTION (a NEWS post has no natural
 // expiry); the public page hides a promotion once its endDate has passed
 // rather than requiring the partner to remember to remove it. No startDate:
-// a promotion that shouldn't show yet is simply not posted yet.
+// a promotion that shouldn't show yet is simply not posted yet. body is
+// markdown-lite (see src/lib/markdown-lite.tsx), same grammar and image
+// embedding as the About field, rendered with renderMarkdownLite rather than
+// as plain text — and, unlike About, feeds a per-post Article JSON-LD node
+// (see buildUpdatesJsonLd in src/lib/directory-seo.ts) for SEO/GEO. postedAt
+// is stamped once, the first time an entry is actually edited (see
+// UpdatesEditor's updateEntry) — an original-publish date, never bumped by a
+// later edit, same spirit as a blog post's own dateline; null on an entry
+// saved before this field existed, which just omits datePublished from its
+// JSON-LD rather than fabricating one.
 export type ListingUpdateKind = "NEWS" | "PROMOTION";
 export type ListingUpdateEntry = {
   kind: ListingUpdateKind;
   title: string;
   body: string;
+  postedAt: string | null; // ISO date (YYYY-MM-DD), stamped client-side on first edit
   endDate: string | null; // ISO date (YYYY-MM-DD), partner's own local date
 };
 
 const MAX_UPDATES = 20;
 const MAX_UPDATE_TITLE_LENGTH = 100;
-const MAX_UPDATE_BODY_LENGTH = 1000;
+// Well above the old plain-text cap — a post's body is now markdown-lite,
+// so this needs headroom for **bold**/list syntax and a couple of embedded
+// ![alt](/api/directory-images/…) images on top of the visible text.
+const MAX_UPDATE_BODY_LENGTH = 4000;
 const ISO_DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
 
 function sanitizeUpdateEntry(entry: unknown): ListingUpdateEntry | null {
@@ -331,6 +344,7 @@ function sanitizeUpdateEntry(entry: unknown): ListingUpdateEntry | null {
     kind: raw.kind === "PROMOTION" ? "PROMOTION" : "NEWS",
     title,
     body,
+    postedAt: typeof raw.postedAt === "string" && ISO_DATE_PATTERN.test(raw.postedAt) ? raw.postedAt : null,
     endDate: typeof raw.endDate === "string" && ISO_DATE_PATTERN.test(raw.endDate) ? raw.endDate : null,
   };
 }
@@ -621,6 +635,101 @@ export function relatedListingsByCategory(
   limit: number,
 ): PublishedListingRow[] {
   return rows.filter((row) => row.slug !== excludeSlug && row.listing.categories.includes(category)).slice(0, limit);
+}
+
+// Every BusinessCategory, including one with zero published listings — the
+// one place a visitor sees the *complete* category list, unlike the
+// populated-only pill lists on the home/category pages (see
+// DirectoryHomeSections, which deliberately filters those out).
+export type CategoryWithCount = { name: string; count: number };
+export async function listCategoriesWithCounts(): Promise<CategoryWithCount[]> {
+  const [categories, rows] = await Promise.all([
+    db.businessCategory.findMany({ orderBy: { name: "asc" }, select: { name: true } }),
+    loadPublishedListings(),
+  ]);
+  const counts = countListingsByCategory(rows);
+  return categories.map((row) => ({ name: row.name, count: counts.get(row.name) ?? 0 }));
+}
+
+// Every state at least one published listing carries, alphabetically — the
+// locations-index counterpart of listCategoriesWithCounts. No zero-count
+// case here either, for the same reason countListingsByState has none: a
+// state only exists because some listing's own address carries it.
+export type LocationWithCount = { name: string; count: number };
+export async function listLocationsWithCounts(): Promise<LocationWithCount[]> {
+  const rows = await loadPublishedListings();
+  return [...countListingsByState(rows)].map(([name, count]) => ({ name, count })).sort((a, b) => a.name.localeCompare(b.name));
+}
+
+// One entry per service across every published listing, newest-listing-first
+// (loadPublishedListings's own order) — the directory-wide "Latest Products"
+// feed. No new Product model: a service has no publish timestamp of its own,
+// so the listing's own publishedAt stands in for "when this was added."
+export type LatestProductEntry = {
+  listingSlug: string;
+  companyName: string;
+  logoUrl: string | null;
+  service: ServiceEntry;
+  publishedAt: Date | null;
+};
+
+const MAX_LATEST_PRODUCTS = 60;
+
+export async function loadLatestProducts(locale: DirectoryLocale, limit = MAX_LATEST_PRODUCTS): Promise<LatestProductEntry[]> {
+  const rows = await loadPublishedListings();
+  const entries: LatestProductEntry[] = [];
+  for (const { slug, publishedAt, listing } of rows) {
+    const translation = locale === "en" ? undefined : listing.translations[locale];
+    const services = translation?.services.length ? translation.services : listing.services;
+    for (const service of services) {
+      entries.push({
+        listingSlug: slug,
+        companyName: listing.companyName,
+        logoUrl: listing.logoUrl ? listingLogoPath(slug, publishedAt) : null,
+        service,
+        publishedAt,
+      });
+      if (entries.length >= limit) return entries;
+    }
+  }
+  return entries;
+}
+
+// One entry per still-current update (news post, or promotion that hasn't
+// ended) across every published listing, newest-listing-first — the
+// directory-wide "News & Promotions" feed. Sources the same
+// PartnerListing.updates JSON field the listing's own page already renders
+// (see isUpdateCurrent) rather than a separate model: an update has no
+// publish timestamp of its own, so the listing's own publishedAt stands in
+// for "when this was posted," same convention as loadLatestProducts above.
+export type ListingUpdateFeedEntry = {
+  listingSlug: string;
+  companyName: string;
+  logoUrl: string | null;
+  update: ListingUpdateEntry;
+  publishedAt: Date | null;
+};
+
+const MAX_LATEST_UPDATES = 60;
+
+export async function loadLatestListingUpdates(limit = MAX_LATEST_UPDATES): Promise<ListingUpdateFeedEntry[]> {
+  const rows = await loadPublishedListings();
+  const today = new Date().toISOString().slice(0, 10);
+  const entries: ListingUpdateFeedEntry[] = [];
+  for (const { slug, publishedAt, listing } of rows) {
+    for (const update of listing.updates) {
+      if (!isUpdateCurrent(update, today)) continue;
+      entries.push({
+        listingSlug: slug,
+        companyName: listing.companyName,
+        logoUrl: listing.logoUrl ? listingLogoPath(slug, publishedAt) : null,
+        update,
+        publishedAt,
+      });
+      if (entries.length >= limit) return entries;
+    }
+  }
+  return entries;
 }
 
 // A "Visit website" link needs a real absolute URL, not just a bare domain

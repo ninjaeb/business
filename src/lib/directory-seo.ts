@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DEFAULT_DIRECTORY_LOCALE, DIRECTORY_LOCALES, directoryHomePath, type DirectoryLocale } from "@/lib/directory-i18n";
-import type { FaqEntry, VideoEntry } from "@/lib/directory";
+import type { FaqEntry, ListingUpdateEntry, VideoEntry } from "@/lib/directory";
+import { firstMarkdownLiteImageUrl, stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
 
 // What every public directory page shares for search engines (SEO) and AI
 // answer engines (GEO) that isn't a translated UI string: the brand the
@@ -183,5 +184,44 @@ export function buildVideoJsonLd(video: VideoEntry, embedUrl: string | null, com
     ...(video.thumbnailUrl ? { thumbnailUrl: [video.thumbnailUrl] } : {}),
     contentUrl: video.url,
     ...(embedUrl ? { embedUrl } : {}),
+  });
+}
+
+// Each current News/Promotion post as its own Article node — the same
+// "directly quotable, dated, structured" GEO payoff buildFaqJsonLd already
+// gives FAQ entries. Always Article rather than splitting News into
+// NewsArticle/Promotion into Offer: a bare Offer has no honest price to give
+// (see buildJsonLd's own makesOffer comment on why a partner's free-text
+// price never becomes a schema.org price), and NewsArticle carries stricter
+// Google eligibility expectations that don't fit a partner's short post.
+// Article's own inherited CreativeWork.expires — "date the content is no
+// longer useful or available" — is exactly a Promotion's endDate, and gives
+// a crawler or AI answer engine the freshness signal to stop citing a lapsed
+// deal; a News post has no endDate and simply never expires. `image` is
+// whichever image (if any) the partner embedded in the post's own body,
+// resolved to an absolute URL — a free rich-result/GEO win straight from the
+// same upload the editor's image button already produces. Wrapped in one
+// @graph (rather than one <script> per post, the way the page's other
+// JSON-LD blocks are split) since every node here shares one @context and
+// none needs to stand alone the way LocalBusiness/FAQPage do.
+export function buildUpdatesJsonLd(updates: ListingUpdateEntry[], siteOrigin: string, pageUrl: string): string {
+  const organizationId = organizationJsonLdId(siteOrigin);
+  return serializeJsonLd({
+    "@context": "https://schema.org",
+    "@graph": updates.map((update) => {
+      const imageUrl = firstMarkdownLiteImageUrl(update.body);
+      const node: Record<string, unknown> = {
+        "@type": "Article",
+        headline: update.title,
+        articleBody: stripMarkdownLiteToPlainText(update.body),
+        author: { "@id": organizationId },
+        publisher: { "@id": organizationId },
+        mainEntityOfPage: pageUrl,
+      };
+      if (update.postedAt) node.datePublished = update.postedAt;
+      if (update.endDate) node.expires = update.endDate;
+      if (imageUrl) node.image = new URL(imageUrl, siteOrigin).toString();
+      return node;
+    }),
   });
 }

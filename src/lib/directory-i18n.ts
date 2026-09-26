@@ -66,6 +66,25 @@ export function directoryListingPath(locale: DirectoryLocale, slug: string): str
   return `/${locale}/${slug}`;
 }
 
+// The main top-nav's four destinations (directory-top-nav.tsx) — real
+// index/feed pages, distinct from the existing per-category (categoryPath)
+// / per-location (locationPath) pages they each link out to.
+export function directoryCategoriesIndexPath(locale: DirectoryLocale): string {
+  return `/${locale}/business/categories`;
+}
+
+export function directoryLocationsIndexPath(locale: DirectoryLocale): string {
+  return `/${locale}/business/locations`;
+}
+
+export function directoryProductsPath(locale: DirectoryLocale): string {
+  return `/${locale}/business/products`;
+}
+
+export function directoryNewsPath(locale: DirectoryLocale): string {
+  return `/${locale}/business/news`;
+}
+
 export const DEFAULT_DIRECTORY_LOCALE: DirectoryLocale = "en";
 
 // Fills in DirectoryStrings.recommendMessage's {business}/{url} tokens —
@@ -128,6 +147,33 @@ export type DirectoryStrings = {
   noResultsDescription: string;
   viewListing: string;
   servicesHeading: string;
+  // The new top nav bar (directory-top-nav.tsx) and the index/feed pages
+  // it links to — All Business (categories index), Location (locations
+  // index), Latest Products. The fourth item, News & Promotions, reuses
+  // updatesHeading/newsLabel/promotionLabel below rather than duplicating
+  // near-identical strings.
+  topNavLabel: string;
+  navAllBusiness: string;
+  navLocations: string;
+  navLatestProducts: string;
+  categoriesIndexHeading: string;
+  categoriesIndexDescription: string;
+  categoriesIndexEmptyTitle: string;
+  categoriesIndexEmptyDescription: string;
+  locationsIndexHeading: string;
+  locationsIndexDescription: string;
+  locationsIndexEmptyTitle: string;
+  locationsIndexEmptyDescription: string;
+  latestProductsHeading: string;
+  latestProductsDescription: string;
+  latestProductsEmptyTitle: string;
+  latestProductsEmptyDescription: string;
+  // The /business/news feed's own subheading/empty state — its H1 reuses
+  // updatesHeading itself (the listing page's own "News & Promotions" card
+  // title), since this page is exactly that content aggregated site-wide.
+  newsFeedDescription: string;
+  newsFeedEmptyTitle: string;
+  newsFeedEmptyDescription: string;
   // "More businesses in {category}" on a listing's own page — {category}
   // is replaced with that category's translated name (see
   // translateCategoryName). Plain substitution, same pattern as
@@ -273,6 +319,25 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     noResultsDescription: "Try a different search or industry filter.",
     viewListing: "View details",
     servicesHeading: "Products & Services",
+    topNavLabel: "Browse",
+    navAllBusiness: "All Business",
+    navLocations: "Location",
+    navLatestProducts: "Latest Products",
+    categoriesIndexHeading: "All Business Categories",
+    categoriesIndexDescription: "Every category in the Gotka Business Directory, with how many businesses are listed in each.",
+    categoriesIndexEmptyTitle: "No categories yet",
+    categoriesIndexEmptyDescription: "Check back soon — categories will appear here.",
+    locationsIndexHeading: "All Locations",
+    locationsIndexDescription: "Every state and region with a business listed in the Gotka Business Directory.",
+    locationsIndexEmptyTitle: "No locations yet",
+    locationsIndexEmptyDescription: "Check back soon — locations will appear here as businesses join the directory.",
+    latestProductsHeading: "Latest Products & Services",
+    latestProductsDescription: "Recently added products and services from businesses across the directory.",
+    latestProductsEmptyTitle: "No products yet",
+    latestProductsEmptyDescription: "Check back soon — businesses are adding their products and services.",
+    newsFeedDescription: "Current news and promotions from businesses across the directory.",
+    newsFeedEmptyTitle: "No news or promotions yet",
+    newsFeedEmptyDescription: "Check back soon for updates from businesses in the directory.",
     relatedListingsHeading: "More businesses in {category}",
     aboutHeading: "About",
     mediaHeading: "Media",
@@ -404,6 +469,25 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     noResultsDescription: "请尝试其他搜索词或行业筛选。",
     viewListing: "查看详情",
     servicesHeading: "产品与服务",
+    topNavLabel: "浏览",
+    navAllBusiness: "所有企业",
+    navLocations: "地区",
+    navLatestProducts: "最新产品",
+    categoriesIndexHeading: "所有企业类别",
+    categoriesIndexDescription: "Gotka 商业目录中的每一个类别，以及各类别下的企业数量。",
+    categoriesIndexEmptyTitle: "暂无类别",
+    categoriesIndexEmptyDescription: "请稍后再来查看——类别将显示在这里。",
+    locationsIndexHeading: "所有地区",
+    locationsIndexDescription: "Gotka 商业目录中每个有企业上榜的州属与地区。",
+    locationsIndexEmptyTitle: "暂无地区",
+    locationsIndexEmptyDescription: "请稍后再来查看——随着企业加入目录，地区将显示在这里。",
+    latestProductsHeading: "最新产品与服务",
+    latestProductsDescription: "来自目录中各企业最新添加的产品与服务。",
+    latestProductsEmptyTitle: "暂无产品",
+    latestProductsEmptyDescription: "请稍后再来查看——企业正在添加产品与服务。",
+    newsFeedDescription: "来自目录中各企业的最新新闻与促销信息。",
+    newsFeedEmptyTitle: "暂无新闻或促销",
+    newsFeedEmptyDescription: "请稍后再来查看目录中企业的最新动态。",
     relatedListingsHeading: "更多{category}企业",
     aboutHeading: "关于",
     mediaHeading: "媒体",
@@ -534,6 +618,25 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     noResultsDescription: "Cuba carian atau penapis industri yang lain.",
     viewListing: "Lihat butiran",
     servicesHeading: "Produk & Perkhidmatan",
+    topNavLabel: "Semak Imbas",
+    navAllBusiness: "Semua Perniagaan",
+    navLocations: "Lokasi",
+    navLatestProducts: "Produk Terkini",
+    categoriesIndexHeading: "Semua Kategori Perniagaan",
+    categoriesIndexDescription: "Setiap kategori dalam Direktori Perniagaan Gotka, berserta bilangan perniagaan yang tersenarai dalam setiap satu.",
+    categoriesIndexEmptyTitle: "Belum ada kategori",
+    categoriesIndexEmptyDescription: "Sila semak semula tidak lama lagi — kategori akan dipaparkan di sini.",
+    locationsIndexHeading: "Semua Lokasi",
+    locationsIndexDescription: "Setiap negeri dan kawasan yang mempunyai perniagaan tersenarai dalam Direktori Perniagaan Gotka.",
+    locationsIndexEmptyTitle: "Belum ada lokasi",
+    locationsIndexEmptyDescription: "Sila semak semula tidak lama lagi — lokasi akan dipaparkan di sini apabila perniagaan menyertai direktori.",
+    latestProductsHeading: "Produk & Perkhidmatan Terkini",
+    latestProductsDescription: "Produk dan perkhidmatan yang baru ditambah oleh perniagaan di seluruh direktori.",
+    latestProductsEmptyTitle: "Belum ada produk",
+    latestProductsEmptyDescription: "Sila semak semula tidak lama lagi — perniagaan sedang menambah produk dan perkhidmatan mereka.",
+    newsFeedDescription: "Berita dan promosi terkini daripada perniagaan di seluruh direktori.",
+    newsFeedEmptyTitle: "Belum ada berita atau promosi",
+    newsFeedEmptyDescription: "Sila semak semula tidak lama lagi untuk kemas kini daripada perniagaan dalam direktori.",
     relatedListingsHeading: "Lebih banyak perniagaan dalam kategori {category}",
     aboutHeading: "Tentang",
     mediaHeading: "Media",
