@@ -439,7 +439,12 @@ export default async function DirectoryListingPage({
             {displayTagline && <p className="mt-1 text-base text-slate-600 dark:text-slate-300">{displayTagline}</p>}
             <p className="mt-1 flex items-center gap-1 text-sm text-slate-500 dark:text-slate-400">
               <Eye className="h-4 w-4" />
-              {formatViewsLabel(listing.viewCount, resolved)}
+              {/* listing.viewCount is the count from before this load — the
+                  increment above runs in parallel rather than being awaited
+                  first, so it hasn't landed yet. +1 so this visitor's own
+                  view is reflected immediately instead of showing up only on
+                  the next page load. */}
+              {formatViewsLabel(listing.viewCount + 1, resolved)}
             </p>
             {/* From sm up, industry/category/state/country/website live here
                 — in the same column as the name and tagline, beside the

@@ -2,11 +2,11 @@ import "server-only";
 import { lookup } from "node:dns/promises";
 import { isIP } from "node:net";
 
-// Shared by every place that fetches a URL a partner typed in (website
-// scraping for AI Auto Create — see website-text.ts — and logo fetching —
-// see logo-fetch.ts): anything that could reach this host's own network —
-// localhost, a private IP, or a hostname that resolves to one — is refused
-// before a single byte is requested, and again on every redirect hop.
+// Used by every place that fetches a URL a partner typed in (website
+// scraping for AI Auto Create — see website-text.ts): anything that could
+// reach this host's own network — localhost, a private IP, or a hostname
+// that resolves to one — is refused before a single byte is requested, and
+// again on every redirect hop.
 
 function isPrivateIPv4(address: string): boolean {
   const [a, b] = address.split(".").map(Number);
