@@ -216,6 +216,13 @@ export type DirectoryStrings = {
   // still exist as the two sub-headings shown when a listing has both.
   mediaHeading: string;
   videoHeading: string;
+  // A persistent escape hatch inside the video lightbox, alongside the
+  // embedded iframe — not a fallback shown only when the embed fails (an
+  // embed failing, like YouTube's "Sign in to confirm you're not a bot"
+  // gate some visitors' networks trigger, isn't detectable from a
+  // cross-origin iframe), so a visitor whose embed doesn't play always has
+  // a working way to actually watch it.
+  watchOnOriginalSiteLabel: string;
   photosHeading: string;
   updatesHeading: string;
   newsLabel: string;
@@ -383,6 +390,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     aboutHeading: "About",
     mediaHeading: "Photo and Video",
     videoHeading: "Videos",
+    watchOnOriginalSiteLabel: "Watch on the original site",
     photosHeading: "Photos",
     updatesHeading: "News & Promotions",
     newsLabel: "News",
@@ -540,6 +548,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     aboutHeading: "关于",
     mediaHeading: "照片与视频",
     videoHeading: "视频",
+    watchOnOriginalSiteLabel: "在原网站观看",
     photosHeading: "照片",
     updatesHeading: "新闻与促销",
     newsLabel: "新闻",
@@ -696,6 +705,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     aboutHeading: "Tentang",
     mediaHeading: "Foto & Video",
     videoHeading: "Video",
+    watchOnOriginalSiteLabel: "Tonton di laman asal",
     photosHeading: "Foto",
     updatesHeading: "Berita & Promosi",
     newsLabel: "Berita",

@@ -75,7 +75,17 @@ function VideoCard({
 // page, closed via Escape/backdrop-click/X. Not a gallery of its own (no
 // Prev/Next between videos): each thumbnail opens straight to its own
 // video, which is all a click on a specific card should do.
-function VideoLightbox({ video, title, onClose }: { video: GalleryVideo; title: string; onClose: () => void }) {
+function VideoLightbox({
+  video,
+  title,
+  watchOnOriginalSiteLabel,
+  onClose,
+}: {
+  video: GalleryVideo;
+  title: string;
+  watchOnOriginalSiteLabel: string;
+  onClose: () => void;
+}) {
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") onClose();
@@ -101,14 +111,32 @@ function VideoLightbox({ video, title, onClose }: { video: GalleryVideo; title: 
       >
         <X className="h-6 w-6" />
       </button>
-      <div className="aspect-video w-full max-w-4xl" onClick={(event) => event.stopPropagation()}>
-        <iframe
-          title={title}
-          src={`${video.embedUrl}${video.embedUrl.includes("?") ? "&" : "?"}autoplay=1`}
-          className="h-full w-full rounded-md border-0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
+      <div className="w-full max-w-4xl" onClick={(event) => event.stopPropagation()}>
+        <div className="aspect-video">
+          <iframe
+            title={title}
+            src={`${video.embedUrl}${video.embedUrl.includes("?") ? "&" : "?"}autoplay=1`}
+            className="h-full w-full rounded-md border-0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+        {/* A cross-origin iframe can't be inspected, so there's no way to
+            detect an embed that's silently failing to play — a video that's
+            region-locked, age-restricted, or (YouTube specifically) stuck
+            behind its "Sign in to confirm you're not a bot" gate on some
+            visitors' networks even after switching to youtube-nocookie.com
+            (see toEmbeddableVideoUrl). This link is always there instead of
+            only appearing on failure, so it's a working way out whatever
+            the actual cause turns out to be. */}
+        <a
+          href={video.url}
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          className="mt-2 inline-block text-sm text-white/70 hover:text-white hover:underline"
+        >
+          {watchOnOriginalSiteLabel} ↗
+        </a>
       </div>
     </div>
   );
@@ -128,7 +156,15 @@ function VideoLightbox({ video, title, onClose }: { video: GalleryVideo; title: 
 // noise. The per-card category badge is then redundant with its own
 // section heading, so it's dropped in the grouped case and kept in the
 // flat one.
-export function VideoGallery({ videos, companyName }: { videos: GalleryVideo[]; companyName: string }) {
+export function VideoGallery({
+  videos,
+  companyName,
+  watchOnOriginalSiteLabel,
+}: {
+  videos: GalleryVideo[];
+  companyName: string;
+  watchOnOriginalSiteLabel: string;
+}) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   // A video with no title of its own (partner left it blank) shows the
   // company name instead — resolved once here rather than in both VideoCard
@@ -168,7 +204,12 @@ export function VideoGallery({ videos, companyName }: { videos: GalleryVideo[]; 
     <>
       {gallery}
       {openIndex !== null && (
-        <VideoLightbox video={indexed[openIndex].video} title={indexed[openIndex].title} onClose={() => setOpenIndex(null)} />
+        <VideoLightbox
+          video={indexed[openIndex].video}
+          title={indexed[openIndex].title}
+          watchOnOriginalSiteLabel={watchOnOriginalSiteLabel}
+          onClose={() => setOpenIndex(null)}
+        />
       )}
     </>
   );
