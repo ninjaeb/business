@@ -545,6 +545,22 @@ export async function loadPublishedListings(): Promise<PublishedListingRow[]> {
   });
 }
 
+// A single published listing by its slug, snapshot fields flattened
+// alongside the few live/row-level ones a caller also needs (id/partnerId
+// to tell whose listing this is, publishedAt to version the logo URL — see
+// listingLogoPath — and viewCount, which lives on the row, not the
+// snapshot). Shared by the listing detail page's own metadata/body and its
+// opengraph-image route (src/app/[locale]/[slug]/opengraph-image.tsx),
+// which needs the same company name/services/description a visitor sees.
+export async function getPublishedListingBySlug(slug: string) {
+  const listing = await db.partnerListing.findUnique({ where: { slug } });
+  if (!listing) return null;
+  const snapshot = readPublishedSnapshot(listing.publishedSnapshot);
+  return snapshot
+    ? { ...snapshot, id: listing.id, partnerId: listing.partnerId, publishedAt: listing.publishedAt, viewCount: listing.viewCount }
+    : null;
+}
+
 // The logo's real URL (served by /api/directory-images/logo/[slug]). The
 // publish timestamp rides along as a cache-buster: the slug outlives any
 // number of logo replacements, but every replacement is re-approved, which
