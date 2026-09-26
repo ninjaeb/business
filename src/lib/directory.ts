@@ -307,18 +307,31 @@ export function parseFaqsJson(raw: string): FaqEntry[] {
 // optional and mainly meaningful for a PROMOTION (a NEWS post has no natural
 // expiry); the public page hides a promotion once its endDate has passed
 // rather than requiring the partner to remember to remove it. No startDate:
-// a promotion that shouldn't show yet is simply not posted yet.
+// a promotion that shouldn't show yet is simply not posted yet. body is
+// markdown-lite (see src/lib/markdown-lite.tsx), same grammar and image
+// embedding as the About field, rendered with renderMarkdownLite rather than
+// as plain text — and, unlike About, feeds a per-post Article JSON-LD node
+// (see buildUpdatesJsonLd in src/lib/directory-seo.ts) for SEO/GEO. postedAt
+// is stamped once, the first time an entry is actually edited (see
+// UpdatesEditor's updateEntry) — an original-publish date, never bumped by a
+// later edit, same spirit as a blog post's own dateline; null on an entry
+// saved before this field existed, which just omits datePublished from its
+// JSON-LD rather than fabricating one.
 export type ListingUpdateKind = "NEWS" | "PROMOTION";
 export type ListingUpdateEntry = {
   kind: ListingUpdateKind;
   title: string;
   body: string;
+  postedAt: string | null; // ISO date (YYYY-MM-DD), stamped client-side on first edit
   endDate: string | null; // ISO date (YYYY-MM-DD), partner's own local date
 };
 
 const MAX_UPDATES = 20;
 const MAX_UPDATE_TITLE_LENGTH = 100;
-const MAX_UPDATE_BODY_LENGTH = 1000;
+// Well above the old plain-text cap — a post's body is now markdown-lite,
+// so this needs headroom for **bold**/list syntax and a couple of embedded
+// ![alt](/api/directory-images/…) images on top of the visible text.
+const MAX_UPDATE_BODY_LENGTH = 4000;
 const ISO_DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
 
 function sanitizeUpdateEntry(entry: unknown): ListingUpdateEntry | null {
@@ -331,6 +344,7 @@ function sanitizeUpdateEntry(entry: unknown): ListingUpdateEntry | null {
     kind: raw.kind === "PROMOTION" ? "PROMOTION" : "NEWS",
     title,
     body,
+    postedAt: typeof raw.postedAt === "string" && ISO_DATE_PATTERN.test(raw.postedAt) ? raw.postedAt : null,
     endDate: typeof raw.endDate === "string" && ISO_DATE_PATTERN.test(raw.endDate) ? raw.endDate : null,
   };
 }

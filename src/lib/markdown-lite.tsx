@@ -174,6 +174,22 @@ export function renderMarkdownLite(text: string | null | undefined, className?: 
   );
 }
 
+// The first embedded image in a body of markdown-lite text, if any — gives
+// a News/Promotion post's JSON-LD (see buildUpdatesJsonLd in
+// src/lib/directory-seo.ts) a representative `image` for free, straight from
+// whatever the partner already attached via markdown-lite-editor.tsx's own
+// Image button. Same safe-URL rule as renderMarkdownLite's own isSafeUrl (an
+// http(s) URL, or a same-origin root-relative one like
+// /api/directory-images/xyz) — anything else yields no image rather than
+// handing a crawler a javascript:/data: string.
+const FIRST_IMAGE_PATTERN = /!\[[^\]]*\]\(([^)\s]+)\)/;
+export function firstMarkdownLiteImageUrl(text: string | null | undefined): string | null {
+  const match = FIRST_IMAGE_PATTERN.exec(text ?? "");
+  if (!match) return null;
+  const url = match[1].trim();
+  return isSafeUrl(url) ? url : null;
+}
+
 // For contexts that need a single plain-text line — <meta name="description">
 // and the JSON-LD description — where literal "**"/"[]()" syntax would
 // otherwise leak into a search result snippet or AI answer-engine summary.
