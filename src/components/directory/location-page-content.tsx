@@ -22,7 +22,7 @@ import {
   DIRECTORY_SITE_NAME_BY_LOCALE,
   OG_LOCALE_BY_DIRECTORY_LOCALE,
   buildLanguageAlternates,
-  directoryShareImage,
+  pageShareImage,
 } from "@/lib/directory-seo";
 import {
   locationLabel,
@@ -52,7 +52,7 @@ export async function buildLocationMetadata(locationSlug: string, locale: Direct
   const title = locationPageTitle(label, locale);
   const description = locationPageDescription(label, locale);
   const url = `${siteOrigin}${locationPath(locationSlug, locale)}`;
-  const shareImage = directoryShareImage(siteOrigin, locale);
+  const shareImage = pageShareImage(url, locationPageHeading(label, locale));
 
   return {
     title,

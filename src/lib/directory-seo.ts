@@ -61,21 +61,31 @@ export const DIRECTORY_NOINDEX_ROBOTS: NonNullable<Metadata["robots"]> = {
 };
 
 // The directory's branded 1200×630 share image, rendered by
-// src/app/[locale]/business/opengraph-image.tsx. Every directory page
-// references it explicitly, as an absolute URL, rather than leaning on that
-// file convention's own inheritance: a nested page that sets its own
-// openGraph block — every one of them does, for title/description/url —
-// replaces the segment's block wholesale, images included, which silently
-// left the category, sign-up and logo-less listing pages with no image.
+// src/app/[locale]/opengraph-image.tsx. Every directory page references it
+// explicitly, as an absolute URL, rather than leaning on that file
+// convention's own inheritance: a nested page that sets its own openGraph
+// block — every one of them does, for title/description/url — replaces the
+// segment's block wholesale, images included, which silently left the
+// category, sign-up and logo-less listing pages with no image.
 export const DIRECTORY_SHARE_IMAGE_ALT = "Gotka Business Directory";
 export const DIRECTORY_SHARE_IMAGE_SIZE = { width: 1200, height: 630 };
 
-export function directoryShareImage(siteOrigin: string, locale: DirectoryLocale) {
+// Same shape, for a page whose own opengraph-image route renders something
+// more specific than the generic card above (see category/industry/
+// location's own opengraph-image.tsx, via directory-og-image.tsx) —
+// `pageUrl` is the page's own absolute URL, already computed by every
+// caller, so this just points at its opengraph-image sibling route instead
+// of the home page's.
+export function pageShareImage(pageUrl: string, alt: string) {
   return {
-    url: `${siteOrigin}${directoryHomePath(locale)}/opengraph-image`,
+    url: `${pageUrl}/opengraph-image`,
     ...DIRECTORY_SHARE_IMAGE_SIZE,
-    alt: DIRECTORY_SHARE_IMAGE_ALT,
+    alt,
   };
+}
+
+export function directoryShareImage(siteOrigin: string, locale: DirectoryLocale) {
+  return pageShareImage(`${siteOrigin}${directoryHomePath(locale)}`, DIRECTORY_SHARE_IMAGE_ALT);
 }
 
 // Every language version of one page, plus x-default pointing at English —
