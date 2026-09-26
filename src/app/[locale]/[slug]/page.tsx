@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { ChevronDown, Clock, Globe, MapPin } from "lucide-react";
+import { ChevronDown, Clock, Eye, Globe, MapPin } from "lucide-react";
 import { db } from "@/lib/db";
 import {
   currentDayInTimezone,
   DAYS_OF_WEEK,
   directoryImagePath,
   formatOpeningHoursSchema,
+  incrementListingViewCount,
   isOpenNow,
   isUpdateCurrent,
   listingLogoPath,
@@ -70,8 +71,11 @@ async function getPublishedListing(slug: string) {
   const snapshot = readPublishedSnapshot(listing.publishedSnapshot);
   // id/partnerId ride along with the snapshot so the page can tell whose
   // listing this is. publishedAt versions the logo URL (see
-  // listingLogoPath).
-  return snapshot ? { ...snapshot, id: listing.id, partnerId: listing.partnerId, publishedAt: listing.publishedAt } : null;
+  // listingLogoPath). viewCount is a live column, not part of the
+  // snapshot, so it rides along the same way.
+  return snapshot
+    ? { ...snapshot, id: listing.id, partnerId: listing.partnerId, publishedAt: listing.publishedAt, viewCount: listing.viewCount }
+    : null;
 }
 
 export async function generateMetadata({
@@ -295,7 +299,7 @@ export default async function DirectoryListingPage({
   const listing = await getPublishedListing(slug);
   if (!listing) notFound();
 
-  const siteOrigin = await getSiteOrigin();
+  const [siteOrigin] = await Promise.all([getSiteOrigin(), incrementListingViewCount(listing.id)]);
   const t = DIRECTORY_STRINGS[resolved];
   const mapAddress = listing.address;
   const pageUrl = `${siteOrigin}${directoryListingPath(resolved, slug)}`;
@@ -397,6 +401,10 @@ export default async function DirectoryListingPage({
           <div className="min-w-0 flex-1">
             <h1 className="text-3xl font-semibold text-slate-900 dark:text-slate-100">{listing.companyName}</h1>
             {displayTagline && <p className="mt-1 text-base text-slate-600 dark:text-slate-300">{displayTagline}</p>}
+            <p className="mt-1 flex items-center gap-1 text-sm text-slate-500 dark:text-slate-400">
+              <Eye className="h-4 w-4" />
+              {t.viewsLabel(listing.viewCount)}
+            </p>
             {/* From sm up, industry/category/state/country/website live here
                 — in the same column as the name and tagline, beside the
                 logo — rather than their own full-width row further down,
