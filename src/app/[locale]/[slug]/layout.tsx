@@ -274,7 +274,11 @@ export default async function ListingLayout({
         }}
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbJsonLd }} />
-      <div className="mb-4">
+      {/* Hidden below sm — the JSON-LD above still carries the same trail
+          for search results; a phone screen just doesn't have the spare
+          width for it above the header, and the tab strip further down
+          already covers "get back to a section of this page." */}
+      <div className="hidden sm:mb-4 sm:block">
         <DirectoryBreadcrumbs items={breadcrumbItems} navLabel={t.breadcrumbNavLabel} />
       </div>
       <div className="mb-8 border-b border-slate-200 bg-white px-4 py-4 -mx-4 sm:-mx-8 sm:px-8 dark:border-neutral-800 dark:bg-neutral-900">
@@ -293,140 +297,40 @@ export default async function ListingLayout({
           <div className="min-w-0 flex-1">
             <h1 className="text-3xl font-semibold text-slate-900 dark:text-slate-100">{listing.companyName}</h1>
             {display.tagline && <p className="mt-1 text-base text-slate-600 dark:text-slate-300">{display.tagline}</p>}
-            <p className="mt-1 flex items-center gap-1 text-sm text-slate-500 dark:text-slate-400">
-              <Eye className="h-4 w-4" />
-              {/* This page's own language's count (not the listing's
-                  all-time total across all three) — the count from before
-                  this load, since the increment above runs in parallel
-                  rather than being awaited first, so it hasn't landed yet.
-                  +1 so this visitor's own view is reflected immediately
-                  instead of showing up only on the next page load. */}
-              {formatViewsLabel(listingViewCountByLocale(listing, resolved) + 1, resolved)}
-            </p>
-            {/* From sm up, industry/category/state/country/website live here
-                — in the same column as the name and tagline, beside the
-                logo — rather than their own full-width row further down,
-                which otherwise leaves the space below a short tagline next
-                to a 200px logo empty. Below sm there's no spare height left
-                in this column for a phone-width logo, so the sm:hidden
-                block after this row repeats the same content as its own
-                full-width row instead. Industry/category, state/country,
-                and website are three separate lines (each still its own
-                flex-wrap row, for a long combination within one group)
-                rather than one shared wrapping row. */}
-            {(listing.industry || listing.categories.length > 0 || listing.city || listing.state || listing.country || listing.website) && (
-              <div className="mt-3 hidden flex-col gap-2 sm:flex">
-                {(listing.industry || listing.categories.length > 0) && (
-                  <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
-                    {listing.industry && (
-                      <Link href={industryPath(listing.industry, resolved)}>
-                        <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
-                          {INDUSTRY_LABELS_BY_LOCALE[resolved][listing.industry]}
-                        </Badge>
-                      </Link>
-                    )}
-                    {listing.categories.map((category) => (
-                      <Link key={category} href={categoryPath(slugify(category), resolved)}>
-                        <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
-                          {translateCategoryName(category, resolved)}
-                        </Badge>
-                      </Link>
-                    ))}
-                  </div>
-                )}
-                {(listing.city || listing.state || listing.country) && (
-                  <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
-                    {listing.state ? (
-                      <Link
-                        href={locationPath(slugify(locationLabel(listing.city, listing.state)), resolved)}
-                        className="inline-flex items-center gap-1 hover:text-petrol hover:underline dark:hover:text-petrol-light"
-                      >
-                        <MapPin className="h-4 w-4" />
-                        {locationLabel(listing.city, listing.state)}
-                      </Link>
-                    ) : (
-                      listing.city && (
-                        <span className="inline-flex items-center gap-1">
-                          <MapPin className="h-4 w-4" />
-                          {listing.city}
-                        </span>
-                      )
-                    )}
-                    {listing.country && (
-                      <Link
-                        href={`${directoryHomePath(resolved)}?country=${encodeURIComponent(listing.country)}`}
-                        className="hover:text-petrol hover:underline dark:hover:text-petrol-light"
-                      >
-                        {listing.country}
-                      </Link>
-                    )}
-                  </div>
-                )}
-                {listing.website && (
-                  <a
-                    href={listing.website}
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    className="inline-flex items-center gap-1 text-base text-petrol hover:underline dark:text-petrol-light"
-                  >
-                    <Globe className="h-4 w-4" />
-                    {t.websiteLabel}
-                  </a>
-                )}
-              </div>
-            )}
-          </div>
-          {/* Share/Recommend live in the header's top-right corner from sm
-              up — tablet has the same spare width desktop does, nothing
-              here needs lg:'s extra room, so both get the stack. Recommend
-              leads: sharing a business is the deliberate, opt-in action,
-              Share is the everyday one right below it. Below sm there's no
-              corner left beside the logo, so the same two buttons render
-              again, full-width side by side, in their own row under the
-              badges instead — see the sm:hidden block below. */}
-          <div className="hidden w-44 shrink-0 flex-col gap-2 sm:flex">
-            <ShareButton
-              title={listing.companyName}
-              url={recommendUrl}
-              message={recommendMessage}
-              label={t.recommendLabel}
-              icon="recommend"
-              variant="primary"
-              className="w-full bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"
-            />
-            <ShareButton title={listing.companyName} url={pageUrl} label={t.shareLabel} className="w-full" />
-          </div>
-        </div>
-
-        {/* Phone-width fallback for the sm:+ version tucked into the name
-            column above — same content and order, just its own full-width
-            block since there's no spare height beside the logo down here.
-            Industry/category get their own line; state/country and website
-            share the next one (there's enough width for all three on a
-            phone, unlike the desktop column squeezed beside a 200px logo,
-            which keeps them on three separate lines). */}
-        {(listing.industry || listing.categories.length > 0 || listing.city || listing.state || listing.country || listing.website) && (
-          <div className="mt-3 flex flex-col gap-2 sm:hidden">
-            {(listing.industry || listing.categories.length > 0) && (
-              <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
-                {listing.industry && (
-                  <Link href={industryPath(listing.industry, resolved)}>
-                    <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
-                      {INDUSTRY_LABELS_BY_LOCALE[resolved][listing.industry]}
-                    </Badge>
-                  </Link>
-                )}
-                {listing.categories.map((category) => (
-                  <Link key={category} href={categoryPath(slugify(category), resolved)}>
-                    <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
-                      {translateCategoryName(category, resolved)}
-                    </Badge>
-                  </Link>
-                ))}
-              </div>
-            )}
-            {(listing.city || listing.state || listing.country || listing.website) && (
-              <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
+            {/* From sm up, industry/category/state/country/website/views
+                live here — in the same column as the name and tagline,
+                beside the logo — rather than their own full-width row
+                further down, which otherwise leaves the space below a short
+                tagline next to a 200px logo empty. Below sm there's no
+                spare height left in this column for a phone-width logo, so
+                this whole group is hidden here and instead repeats,
+                full-width, at the top of the content column below (ahead
+                of whichever section a page renders there) — see the
+                sm:hidden block there. Industry/category is its own line;
+                location, website and the view count share the next one —
+                the view count rides along next to the website link (rather
+                than its own separate line above) since it's always present
+                regardless of which of the others are. */}
+            <div className="mt-3 hidden flex-col gap-2 sm:flex">
+              {(listing.industry || listing.categories.length > 0) && (
+                <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
+                  {listing.industry && (
+                    <Link href={industryPath(listing.industry, resolved)}>
+                      <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
+                        {INDUSTRY_LABELS_BY_LOCALE[resolved][listing.industry]}
+                      </Badge>
+                    </Link>
+                  )}
+                  {listing.categories.map((category) => (
+                    <Link key={category} href={categoryPath(slugify(category), resolved)}>
+                      <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
+                        {translateCategoryName(category, resolved)}
+                      </Badge>
+                    </Link>
+                  ))}
+                </div>
+              )}
+              <div className="flex flex-wrap items-center gap-3 text-base text-slate-500 dark:text-slate-400">
                 {listing.state ? (
                   <Link
                     href={locationPath(slugify(locationLabel(listing.city, listing.state)), resolved)}
@@ -462,10 +366,41 @@ export default async function ListingLayout({
                     {t.websiteLabel}
                   </a>
                 )}
+                <span className="inline-flex items-center gap-1 text-sm text-slate-400">
+                  <Eye className="h-4 w-4" />
+                  {/* This page's own language's count (not the listing's
+                      all-time total across all three) — the count from
+                      before this load, since the increment above runs in
+                      parallel rather than being awaited first, so it hasn't
+                      landed yet. +1 so this visitor's own view is reflected
+                      immediately instead of showing up only on the next page
+                      load. */}
+                  {formatViewsLabel(listingViewCountByLocale(listing, resolved) + 1, resolved)}
+                </span>
               </div>
-            )}
+            </div>
           </div>
-        )}
+          {/* Share/Recommend live in the header's top-right corner from sm
+              up — tablet has the same spare width desktop does, nothing
+              here needs lg:'s extra room, so both get the stack. Recommend
+              leads: sharing a business is the deliberate, opt-in action,
+              Share is the everyday one right below it. Below sm there's no
+              corner left beside the logo, so the same two buttons render
+              again, full-width side by side, in their own row under the
+              badges instead — see the sm:hidden block below. */}
+          <div className="hidden w-44 shrink-0 flex-col gap-2 sm:flex">
+            <ShareButton
+              title={listing.companyName}
+              url={recommendUrl}
+              message={recommendMessage}
+              label={t.recommendLabel}
+              icon="recommend"
+              variant="primary"
+              className="w-full bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"
+            />
+            <ShareButton title={listing.companyName} url={pageUrl} label={t.shareLabel} className="w-full" />
+          </div>
+        </div>
 
         {/* Phone-width fallback for the corner stack above — same two
             buttons, same order, just a full-width row since there's no
@@ -492,7 +427,83 @@ export default async function ListingLayout({
 
       <InquiryProvider>
         <div className="grid gap-6 lg:grid-cols-3">
-          <div className="space-y-6 lg:col-span-2">{children}</div>
+          <div className="space-y-6 lg:col-span-2">
+            {/* Phone-width fallback for the sm:+ version tucked into the name
+                column in the header above — same content and order, just
+                moved down here (ahead of whichever section this page
+                renders) rather than crowded into the header, which on a
+                phone screen only has room for the logo and name before it.
+                Industry/category get their own line; location, website and
+                the view count share the next one — the view count rides
+                along next to the website link (rather than its own separate
+                line) since it's always present regardless of which of the
+                others are. Rendered here regardless of which page this is,
+                so a listing with no About text (or a visitor on any of its
+                other pages) doesn't lose these on mobile. */}
+            <div className="flex flex-col gap-2 sm:hidden">
+              {(listing.industry || listing.categories.length > 0) && (
+                <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
+                  {listing.industry && (
+                    <Link href={industryPath(listing.industry, resolved)}>
+                      <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
+                        {INDUSTRY_LABELS_BY_LOCALE[resolved][listing.industry]}
+                      </Badge>
+                    </Link>
+                  )}
+                  {listing.categories.map((category) => (
+                    <Link key={category} href={categoryPath(slugify(category), resolved)}>
+                      <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
+                        {translateCategoryName(category, resolved)}
+                      </Badge>
+                    </Link>
+                  ))}
+                </div>
+              )}
+              <div className="flex flex-wrap items-center gap-3 text-base text-slate-500 dark:text-slate-400">
+                {listing.state ? (
+                  <Link
+                    href={locationPath(slugify(locationLabel(listing.city, listing.state)), resolved)}
+                    className="inline-flex items-center gap-1 hover:text-petrol hover:underline dark:hover:text-petrol-light"
+                  >
+                    <MapPin className="h-4 w-4" />
+                    {locationLabel(listing.city, listing.state)}
+                  </Link>
+                ) : (
+                  listing.city && (
+                    <span className="inline-flex items-center gap-1">
+                      <MapPin className="h-4 w-4" />
+                      {listing.city}
+                    </span>
+                  )
+                )}
+                {listing.country && (
+                  <Link
+                    href={`${directoryHomePath(resolved)}?country=${encodeURIComponent(listing.country)}`}
+                    className="hover:text-petrol hover:underline dark:hover:text-petrol-light"
+                  >
+                    {listing.country}
+                  </Link>
+                )}
+                {listing.website && (
+                  <a
+                    href={listing.website}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="inline-flex items-center gap-1 text-petrol hover:underline dark:text-petrol-light"
+                  >
+                    <Globe className="h-4 w-4" />
+                    {t.websiteLabel}
+                  </a>
+                )}
+                <span className="inline-flex items-center gap-1 text-sm text-slate-400">
+                  <Eye className="h-4 w-4" />
+                  {formatViewsLabel(listingViewCountByLocale(listing, resolved) + 1, resolved)}
+                </span>
+              </div>
+            </div>
+
+            {children}
+          </div>
 
           <InquiryScrollTarget id="contact" className="scroll-mt-32 lg:sticky lg:top-32 lg:self-start">
             <Card>

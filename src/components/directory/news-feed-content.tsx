@@ -6,7 +6,8 @@ import {
   DIRECTORY_STRINGS,
   DIRECTORY_HOME_TITLE_BY_LOCALE,
   directoryHomePath,
-  directoryListingPath,
+  directoryListingNewsPath,
+  directoryListingPromotionsPath,
   directoryNewsPath,
   type DirectoryLocale,
 } from "@/lib/directory-i18n";
@@ -105,7 +106,14 @@ export async function NewsFeedContent({ locale }: { locale: DirectoryLocale }) {
                     would otherwise nest an <a> inside this one. The full
                     formatted post (bold/lists/images) is what the listing
                     page's own updates card renders. */}
-                <Link href={directoryListingPath(locale, entry.listingSlug)} className="block">
+                <Link
+                  href={
+                    entry.update.kind === "PROMOTION"
+                      ? directoryListingPromotionsPath(locale, entry.listingSlug)
+                      : directoryListingNewsPath(locale, entry.listingSlug)
+                  }
+                  className="block"
+                >
                   <Card className="transition-colors hover:border-petrol/40 dark:hover:border-petrol-light/30">
                     <CardBody className="space-y-2">
                       <div className="flex items-center gap-2">

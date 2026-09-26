@@ -33,15 +33,15 @@ export default async function PartnerListingEditorPage({ params }: { params: Pro
     db.businessCategory.findMany({ orderBy: { name: "asc" } }),
     db.partnerListingCategory.findMany({ where: { listingId: listing.id }, select: { categoryId: true } }),
     listing.photoIds.length
-      ? db.directoryListingImage.findMany({ where: { id: { in: listing.photoIds } }, select: { id: true, caption: true } })
+      ? db.directoryListingImage.findMany({ where: { id: { in: listing.photoIds } }, select: { id: true, caption: true, gallery: true } })
       : Promise.resolve([]),
   ]);
   const selectedCategoryIds = selectedCategories.map((entry) => entry.categoryId);
   // photoIds is the display order of record — findMany's result isn't
   // guaranteed to come back in that order, so it's reordered to match rather
   // than trusted as-is (same reasoning as publishListing's own photo lookup).
-  const photosById = new Map(photoRows.map((row) => [row.id, row.caption ?? ""]));
-  const photos = listing.photoIds.filter((id) => photosById.has(id)).map((id) => ({ id, caption: photosById.get(id)! }));
+  const photosById = new Map(photoRows.map((row) => [row.id, { caption: row.caption ?? "", gallery: row.gallery ?? "" }]));
+  const photos = listing.photoIds.filter((id) => photosById.has(id)).map((id) => ({ id, ...photosById.get(id)! }));
 
   const publicUrl = listing.publishedSnapshot ? `${siteOrigin}${directoryListingPath("en", listing.slug)}` : null;
 

@@ -62,6 +62,7 @@ export default async function PhotosPage({
             id: photo.id,
             src: directoryImagePath(photo.id),
             caption: photo.caption,
+            gallery: photo.gallery,
             // Caption plus company name, not caption alone — a photo with
             // no caption still gets a distinct, non-generic alt instead of
             // repeating the bare company name across every uncaptioned

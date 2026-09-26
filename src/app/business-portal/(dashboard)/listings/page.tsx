@@ -5,7 +5,7 @@ import { createListingAction } from "@/app/actions/directory";
 import { isUpdateCurrent, listPartnerListings, listingViewCountBreakdown, readPublishedSnapshot } from "@/lib/directory";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { getSiteOrigin } from "@/lib/site-url";
-import { directoryListingPath } from "@/lib/directory-i18n";
+import { directoryListingNewsPath, directoryListingPath, directoryListingPromotionsPath } from "@/lib/directory-i18n";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -58,8 +58,19 @@ export default async function PartnerListingsPage() {
             // the News & Promotions card itself only renders when the
             // published snapshot has at least one current (not-yet-expired)
             // post, same condition as [slug]/page.tsx's own currentUpdates.
-            const publishedUpdates = readPublishedSnapshot(listing.publishedSnapshot)?.updates ?? [];
-            const hasCurrentUpdates = publishedUpdates.some((update) => isUpdateCurrent(update, todayIso));
+            const currentUpdates = (readPublishedSnapshot(listing.publishedSnapshot)?.updates ?? []).filter((update) =>
+              isUpdateCurrent(update, todayIso),
+            );
+            // News and Promotions are each their own page now (see
+            // src/app/[locale]/[slug]/), so this one shortcut link points at
+            // whichever of the two actually has something current — the
+            // Promotion, when there's one, same priority as the two used to
+            // render in on the single combined card.
+            const currentUpdatesPath = currentUpdates.some((update) => update.kind === "PROMOTION")
+              ? directoryListingPromotionsPath("en", listing.slug)
+              : currentUpdates.length > 0
+                ? directoryListingNewsPath("en", listing.slug)
+                : null;
             const viewBreakdown = listingViewCountBreakdown(listing);
             const trackedViewCount = viewBreakdown.reduce((sum, { count }) => sum + count, 0);
             return (
@@ -92,9 +103,9 @@ export default async function PartnerListingsPage() {
                         <ExternalLink className="h-3.5 w-3.5" />
                       </Link>
                     )}
-                    {publicUrl && hasCurrentUpdates && (
+                    {currentUpdatesPath && (
                       <Link
-                        href={`${publicUrl}#news`}
+                        href={`${siteOrigin}${currentUpdatesPath}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-1 text-petrol hover:underline dark:text-petrol-light"
