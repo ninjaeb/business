@@ -103,15 +103,13 @@ export default async function PartnerOverviewPage() {
                               <Eye className="h-3.5 w-3.5" />
                               {listing.viewCount.toLocaleString()} view{listing.viewCount === 1 ? "" : "s"}
                             </span>
-                            {listing.viewCount > 0 && (
-                              <span className="text-xs text-slate-400 dark:text-slate-500">
-                                (
-                                {DIRECTORY_LOCALES.map(
-                                  ({ code, label }) => `${label} ${listingViewCountByLocale(listing, code).toLocaleString()}`,
-                                ).join(" · ")}
-                                )
-                              </span>
-                            )}
+                            <span className="text-xs text-slate-400 dark:text-slate-500">
+                              (
+                              {DIRECTORY_LOCALES.map(
+                                ({ code, label }) => `${label} ${listingViewCountByLocale(listing, code).toLocaleString()}`,
+                              ).join(" · ")}
+                              )
+                            </span>
                           </span>
                         )}
                       </div>
