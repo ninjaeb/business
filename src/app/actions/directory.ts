@@ -809,6 +809,34 @@ type ListingSaveResult =
   | { ok: false; error: string; field?: ListingFormField; values: ListingFormValues }
   | { ok: true; listing: Awaited<ReturnType<typeof db.partnerListing.update>> };
 
+// Only ever called while listing.slugConfirmed is still false — i.e. the
+// listing's web address is still whatever generateListingSlug picked from
+// the partner's own account name at creation, which rarely matches the
+// actual business (see its own comment in src/lib/directory.ts). The first
+// Save draft/Submit for review after that adopts a slug matching the real
+// company name instead, the same value PartnerSlugForm's own "suggested"
+// preview shows (see autoSlugSource in partner-listing-form.tsx) — sparing
+// most partners a separate trip to that form's own "Update address" button.
+// Never touches an already-confirmed slug: once true, slugConfirmed locks
+// this out for good, so a listing that's already live never has its address
+// silently rewritten out from under it. If the suggested slug isn't usable
+// yet (empty, or already taken by another listing), slugConfirmed stays
+// false so the next save tries again with whatever the company name is by
+// then, rather than giving up after one attempt.
+async function suggestConfirmedSlug(
+  listing: { id: string; slug: string },
+  companyName: string,
+): Promise<{ slug: string; slugConfirmed: boolean }> {
+  const candidate = slugify(companyName);
+  if (candidate === listing.slug) return { slug: listing.slug, slugConfirmed: true };
+  if (!isValidSlugFormat(candidate)) return { slug: listing.slug, slugConfirmed: false };
+
+  const taken = await db.partnerListing.findUnique({ where: { slug: candidate }, select: { id: true } });
+  if (taken) return { slug: listing.slug, slugConfirmed: false };
+
+  return { slug: candidate, slugConfirmed: true };
+}
+
 // Shared by saveDirectoryListing and submitDirectoryListingForReview below,
 // so "Submit for review" always validates and saves exactly what's
 // currently in the form. `extraData` lets the submit flow fold its own
@@ -842,6 +870,7 @@ async function saveListingFields(
     return { ok: false, error: "Listing not found.", values };
   }
   const resetToDraft = listing.status === "PUBLISHED" || listing.status === "REJECTED";
+  const slugUpdate = listing.slugConfirmed ? null : await suggestConfirmedSlug(listing, parsed.data.companyName);
 
   // Reconciled against real rows rather than trusted as-is — a checkbox's
   // value is just a string an authenticated partner's own request could in
@@ -881,6 +910,7 @@ async function saveListingFields(
         seoDescription: parsed.data.seoDescription || null,
         ...logo,
         ...(resetToDraft ? { status: "DRAFT" as const, reviewNote: null } : {}),
+        ...(slugUpdate ? { slug: slugUpdate.slug, slugConfirmed: slugUpdate.slugConfirmed } : {}),
         ...extraData,
       },
     }),
@@ -940,6 +970,13 @@ export async function updateListingSlug(
     return { error: "Listing not found.", slug: raw };
   }
   if (normalized === listing.slug) {
+    // Submitting unchanged still counts as the partner's own explicit
+    // confirmation — e.g. the first Save draft/Submit for review already
+    // auto-adopted this exact value (see suggestConfirmedSlug), and clicking
+    // Update address here on top of that is otherwise a silent no-op.
+    if (!listing.slugConfirmed) {
+      await db.partnerListing.update({ where: { id: listing.id }, data: { slugConfirmed: true } });
+    }
     return { success: true, slug: normalized };
   }
 
@@ -948,7 +985,7 @@ export async function updateListingSlug(
     return { error: "That URL is already taken — try a different one.", slug: raw };
   }
 
-  await db.partnerListing.update({ where: { id: listing.id }, data: { slug: normalized } });
+  await db.partnerListing.update({ where: { id: listing.id }, data: { slug: normalized, slugConfirmed: true } });
   revalidatePath(`/business-portal/listings/${listingId}`);
   revalidateDirectory({ slugs: [listing.slug, normalized] });
   if (listing.publishedSnapshot) {

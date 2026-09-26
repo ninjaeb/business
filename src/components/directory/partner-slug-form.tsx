@@ -46,6 +46,19 @@ export function PartnerSlugForm({
     if (autoSlugSource) setValue(slugify(autoSlugSource));
   }
 
+  // Catches the other way this listing's own slug can change server-side
+  // without going through this form's own action: the main listing form's
+  // Save draft/Submit for review auto-adopting a suggested address the first
+  // time (see suggestConfirmedSlug in src/app/actions/directory.ts) lands
+  // here only once Next.js's own revalidation brings a fresh `slug` prop
+  // down — this shows that update right away instead of leaving the field
+  // stuck on the placeholder until the partner happens to reload the page.
+  const [lastSyncedSlug, setLastSyncedSlug] = useState(slug);
+  if (slug !== lastSyncedSlug) {
+    setLastSyncedSlug(slug);
+    setValue(slug);
+  }
+
   const prefix = `${siteOrigin}${directoryListingPath("en", "")}`;
 
   return (

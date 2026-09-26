@@ -206,23 +206,30 @@ enum PartnerListingStatus {
 // never part of the snapshot: visitors reach a partner only through the
 // lead form (DirectoryLead), never directly.
 model PartnerListing {
-  id     String               @id @default(cuid())
-  slug   String               @unique
-  status PartnerListingStatus @default(DRAFT)
+  id            String               @id @default(cuid())
+  slug          String               @unique
+  // False only for a brand-new listing whose slug is still the placeholder
+  // generated from the partner's own account name (see createPartnerListing)
+  // — set true the moment a partner explicitly updates it (updateListingSlug)
+  // or the first Save draft/Submit for review auto-adopts a suggestion from
+  // the company name (see saveListingFields), whichever comes first. Once
+  // true, the slug is never silently rewritten again.
+  slugConfirmed Boolean              @default(false)
+  status        PartnerListingStatus @default(DRAFT)
 
-  companyName String
-  tagline     String?
-  description String? @db.Text
-  services    Json // ServiceEntry[] (src/lib/directory.ts) — {title, description, price}
-  industry    Industry?
-  website     String?
-  address     String? @db.Text
-  state       String?
-  country     String?
+  companyName    String
+  tagline        String?
+  description    String?   @db.Text
+  services       Json // ServiceEntry[] (src/lib/directory.ts) — {title, description, price}
+  industry       Industry?
+  website        String?
+  address        String?   @db.Text
+  state          String?
+  country        String?
   operatingHours Json? // OperatingHours (src/lib/directory.ts)
-  faqs        Json? // FaqEntry[] (src/lib/directory.ts) — {question, answer}
-  translations Json? // ListingTranslations (src/lib/directory.ts) — {zh?, ms?}
-  logoUrl     String?   @db.Text // data: URL
+  faqs           Json? // FaqEntry[] (src/lib/directory.ts) — {question, answer}
+  translations   Json? // ListingTranslations (src/lib/directory.ts) — {zh?, ms?}
+  logoUrl        String?   @db.Text // data: URL
   seoTitle       String?
   seoDescription String?
 
