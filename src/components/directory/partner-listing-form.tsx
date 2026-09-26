@@ -179,6 +179,7 @@ export function PartnerListingForm({
   const [videos, setVideos] = useState<VideoEntry[]>(current.videos);
   const [industry, setIndustry] = useState(current.industry);
   const [address, setAddress] = useState(current.address);
+  const [city, setCity] = useState(current.city);
   const [addrState, setAddrState] = useState(current.state);
   const [country, setCountry] = useState(current.country);
   const [categoryIds, setCategoryIds] = useState<string[]>(current.categoryIds);
@@ -390,6 +391,7 @@ export function PartnerListingForm({
     if (details.faqs.length > 0) setFaqs(details.faqs);
     if (details.website) setWebsite(details.website);
     if (details.address) setAddress(details.address);
+    if (details.city) setCity(details.city);
     if (details.state) setAddrState(details.state);
     if (details.country) setCountry(details.country);
     if (details.operatingHours) {
@@ -729,6 +731,16 @@ export function PartnerListingForm({
           placeholder={"123 Jalan Bukit Bintang\n50200 Kuala Lumpur, Malaysia"}
         />
         <p className="mt-1 text-xs text-slate-400">Shown on your listing with a map. Leave blank to skip the map.</p>
+      </FieldGroup>
+
+      <FieldGroup label="City" htmlFor="city">
+        <Input
+          id="city"
+          name="city"
+          value={city}
+          onChange={(event) => setCity(event.target.value)}
+          placeholder="Kuala Lumpur"
+        />
       </FieldGroup>
 
       <div className="grid gap-4 sm:grid-cols-2">

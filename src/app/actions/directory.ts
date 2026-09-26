@@ -203,6 +203,7 @@ const listingSchema = z.object({
     .refine((value) => !value || INDUSTRIES.includes(value as Industry), { message: "Invalid industry" }),
   website: z.string().trim().optional(),
   address: z.string().trim().optional(),
+  city: z.string().trim().optional(),
   state: z.string().trim().optional(),
   country: z.string().trim().optional(),
   // Clipped, never rejected — same treatment generateSeoMetaCore's own
@@ -233,6 +234,7 @@ export type ListingFormValues = {
   industry: string;
   website: string;
   address: string;
+  city: string;
   state: string;
   country: string;
   faqs: FaqEntry[];
@@ -296,6 +298,7 @@ function extractListingFormValues(formData: FormData): ListingFormValues {
     industry: stringField(formData, "industry"),
     website: stringField(formData, "website"),
     address: stringField(formData, "address"),
+    city: stringField(formData, "city"),
     state: stringField(formData, "state"),
     country: stringField(formData, "country"),
     faqs: parseFaqsJson(stringField(formData, "faqs")),
@@ -700,6 +703,7 @@ export type AutoCreatedListingDetails = {
   faqs: FaqEntry[];
   website: string | null;
   address: string | null;
+  city: string | null;
   state: string | null;
   country: string | null;
   operatingHours: OperatingHours | null;
@@ -898,6 +902,7 @@ export async function autoCreateListingDetails(input: {
       faqs: faqsFromJson(result.data.faqs),
       website,
       address: place?.address ?? null,
+      city: place?.city ?? null,
       state: place?.state ?? null,
       country: place?.country ?? null,
       operatingHours: place?.operatingHours ?? null,
@@ -1006,6 +1011,7 @@ async function saveListingFields(
         industry: (parsed.data.industry || null) as Industry | null,
         website: parsed.data.website ? normalizeWebsiteUrl(parsed.data.website) : null,
         address: parsed.data.address || null,
+        city: parsed.data.city || null,
         state: parsed.data.state || null,
         country: parsed.data.country || null,
         operatingHours: parseOperatingHoursFormData(formData),
