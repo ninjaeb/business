@@ -369,11 +369,14 @@ export default async function DirectoryListingPage({
     : [];
 
   return (
-    // Bottom padding clears whatever is pinned over the page's foot: the
-    // mobile jump bar below (always, on small screens), plus the
-    // RecommendBar's own pill, which floats above that jump bar on mobile
-    // and becomes its own strip from sm up.
-    <div className="w-full px-4 pb-40 sm:px-8 sm:pb-28">
+    // Top padding matches the category/location pages' own breadcrumb
+    // spacing (see category-page-content.tsx/location-page-content.tsx) so
+    // it doesn't sit flush against the sticky header. Bottom padding clears
+    // whatever is pinned over the page's foot: the mobile jump bar below
+    // (always, on small screens), plus the RecommendBar's own pill, which
+    // floats above that jump bar on mobile and becomes its own strip from
+    // sm up.
+    <div className="w-full px-4 pt-4 pb-40 sm:px-8 sm:pb-28">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
