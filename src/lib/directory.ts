@@ -545,6 +545,22 @@ export async function loadPublishedListings(): Promise<PublishedListingRow[]> {
   });
 }
 
+// A single published listing by its slug, snapshot fields flattened
+// alongside the few live/row-level ones a caller also needs (id/partnerId
+// to tell whose listing this is, publishedAt to version the logo URL — see
+// listingLogoPath — and viewCount, which lives on the row, not the
+// snapshot). Shared by the listing detail page's own metadata/body and its
+// opengraph-image route (src/app/[locale]/[slug]/opengraph-image.tsx),
+// which needs the same company name/services/description a visitor sees.
+export async function getPublishedListingBySlug(slug: string) {
+  const listing = await db.partnerListing.findUnique({ where: { slug } });
+  if (!listing) return null;
+  const snapshot = readPublishedSnapshot(listing.publishedSnapshot);
+  return snapshot
+    ? { ...snapshot, id: listing.id, partnerId: listing.partnerId, publishedAt: listing.publishedAt, viewCount: listing.viewCount }
+    : null;
+}
+
 // The logo's real URL (served by /api/directory-images/logo/[slug]). The
 // publish timestamp rides along as a cache-buster: the slug outlives any
 // number of logo replacements, but every replacement is re-approved, which
@@ -908,13 +924,18 @@ export type DirectoryLeadStats = {
   won: number;
   lost: number;
   wonValue: number;
+  // How many of the above came in through the listing's Recommend link
+  // (DirectoryLead.viaReferral) — a subset of total, not a separate
+  // funnel stage, so it's not folded into new/open/won/lost above.
+  referred: number;
 };
 
 async function computeDirectoryLeadStats(where: Prisma.DirectoryLeadWhereInput): Promise<DirectoryLeadStats> {
-  const [total, byStatus, wonAgg] = await Promise.all([
+  const [total, byStatus, wonAgg, referred] = await Promise.all([
     db.directoryLead.count({ where }),
     db.directoryLead.groupBy({ by: ["status"], where, _count: { _all: true } }),
     db.directoryLead.aggregate({ where: { ...where, status: "WON" }, _sum: { value: true } }),
+    db.directoryLead.count({ where: { ...where, viaReferral: true } }),
   ]);
   const counts = new Map<string, number>(byStatus.map((row) => [row.status, row._count._all]));
   const won = counts.get("WON") ?? 0;
@@ -926,6 +947,7 @@ async function computeDirectoryLeadStats(where: Prisma.DirectoryLeadWhereInput):
     won,
     lost,
     wonValue: Number(wonAgg._sum.value ?? 0),
+    referred,
   };
 }
 

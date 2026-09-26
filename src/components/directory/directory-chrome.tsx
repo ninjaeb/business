@@ -101,6 +101,11 @@ export async function DirectoryChrome({
               {t.brandName}
             </span>
           </Link>
+          {/* Inline next to the title on lg+ screens, where there's room
+              for it alongside the language/theme/menu group — the second,
+              bordered row below the header (also DirectoryTopNav, hidden
+              at this breakpoint) takes over below lg instead. */}
+          <DirectoryTopNav navLabel={t.topNavLabel} items={topNavItems} className="hidden lg:flex" />
           <div className="ml-auto flex shrink-0 items-center gap-1">
             {/* useSearchParams() (see directory-language-switcher.tsx, for
                 preserving the query string across a language swap) requires
@@ -138,7 +143,11 @@ export async function DirectoryChrome({
             />
           </div>
         </div>
-        <DirectoryTopNav navLabel={t.topNavLabel} items={topNavItems} />
+        <DirectoryTopNav
+          navLabel={t.topNavLabel}
+          items={topNavItems}
+          className="border-t border-slate-100 px-4 py-2 dark:border-neutral-800 sm:px-8 lg:hidden"
+        />
       </header>
 
       <main className="flex-1">{children}</main>

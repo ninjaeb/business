@@ -209,14 +209,14 @@ export type DirectoryStrings = {
   dayLabels: DirectoryDayLabels;
   websiteLabel: string;
   locationLabel: string;
-  // The listing page's "Recommend" affordances for a signed-in business
-  // owner — the header button, and the floating bottom-bar pill (see
-  // RecommendBar). Both share one referral-tracking link and this same
-  // pre-written message for the email/WhatsApp/native-share options (Copy
-  // link still copies the bare URL). {business} and {url} are replaced
-  // with the listing's name and the tracking link itself — plain string
-  // substitution, not a template literal, since this is localized data,
-  // not code.
+  // The listing page's "Recommend" affordances, open to every visitor —
+  // the header button, and the floating bottom-bar pill (see
+  // RecommendBar). Both share one referral-tracking link (?ref=recommend,
+  // see recommendUrl) and this same pre-written message for the
+  // email/WhatsApp/native-share options (Copy link still copies that same
+  // tracking link). {business} and {url} are replaced with the listing's
+  // name and the tracking link itself — plain string substitution, not a
+  // template literal, since this is localized data, not code.
   recommendLabel: string;
   recommendBusinessCta: string;
   recommendMessage: string;
@@ -375,7 +375,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     recommendMessage: "I recommend {business} — check them out on the Business Directory: {url}",
     shareLabel: "Share Business",
     contactHeading: "Get in touch",
-    contactSubheading: "Send a message directly to this business — they'll reply to the email address you provide.",
+    contactSubheading: "Send a message directly to this business — they'll reply to the email address and contact number you provide.",
     formNameLabel: "Name",
     formNamePlaceholder: "Jane Smith",
     formEmailLabel: "Email",
@@ -526,7 +526,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     shareLabel: "分享企业",
     locationLabel: "地点",
     contactHeading: "联系我们",
-    contactSubheading: "直接给这家企业发送信息——他们会回复您提供的电子邮件地址。",
+    contactSubheading: "直接给这家企业发送信息——他们会回复您提供的电子邮件地址和联系电话。",
     formNameLabel: "姓名",
     formNamePlaceholder: "Jane Smith",
     formEmailLabel: "电子邮件",
@@ -676,7 +676,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     shareLabel: "Kongsi Perniagaan",
     locationLabel: "Lokasi",
     contactHeading: "Hubungi kami",
-    contactSubheading: "Hantar mesej terus kepada perniagaan ini — mereka akan membalas ke alamat e-mel yang anda berikan.",
+    contactSubheading: "Hantar mesej terus kepada perniagaan ini — mereka akan membalas ke alamat e-mel dan nombor telefon yang anda berikan.",
     formNameLabel: "Nama",
     formNamePlaceholder: "Jane Smith",
     formEmailLabel: "E-mel",

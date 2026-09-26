@@ -2,18 +2,17 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { ChevronDown, Clock, Eye, Globe, MapPin } from "lucide-react";
-import { db } from "@/lib/db";
 import {
   currentDayInTimezone,
   DAYS_OF_WEEK,
   directoryImagePath,
   formatOpeningHoursSchema,
+  getPublishedListingBySlug,
   incrementListingViewCount,
   isOpenNow,
   isUpdateCurrent,
   listingLogoPath,
   loadPublishedListings,
-  readPublishedSnapshot,
   relatedListingsByCategory,
   slugify,
   toDirectoryGridListing,
@@ -29,7 +28,6 @@ import {
   buildLanguageAlternates,
   buildUpdatesJsonLd,
   buildVideoJsonLd,
-  directoryShareImage,
   serializeJsonLd,
 } from "@/lib/directory-seo";
 import { renderMarkdownLite, stripMarkdownLiteToPlainText, truncateAtWordBoundary } from "@/lib/markdown-lite";
@@ -73,17 +71,11 @@ export const dynamic = "force-dynamic";
 // section competes with the listing's own content for attention.
 const MAX_RELATED_LISTINGS = 6;
 
+// Thin local alias so this file's several `typeof getPublishedListing`
+// type references (below) stay put — the actual fetch now lives in
+// src/lib/directory.ts, shared with this route's own opengraph-image.tsx.
 async function getPublishedListing(slug: string) {
-  const listing = await db.partnerListing.findUnique({ where: { slug } });
-  if (!listing) return null;
-  const snapshot = readPublishedSnapshot(listing.publishedSnapshot);
-  // id/partnerId ride along with the snapshot so the page can tell whose
-  // listing this is. publishedAt versions the logo URL (see
-  // listingLogoPath). viewCount is a live column, not part of the
-  // snapshot, so it rides along the same way.
-  return snapshot
-    ? { ...snapshot, id: listing.id, partnerId: listing.partnerId, publishedAt: listing.publishedAt, viewCount: listing.viewCount }
-    : null;
+  return getPublishedListingBySlug(slug);
 }
 
 export async function generateMetadata({
@@ -113,17 +105,13 @@ export async function generateMetadata({
     (plainDescription ? truncateAtWordBoundary(plainDescription, MAX_SEO_DESCRIPTION_LENGTH) : undefined) ||
     `${listing.companyName} on the business directory.`;
   const title = listing.seoTitle?.trim() || `${listing.companyName} | ${DIRECTORY_SITE_NAME_BY_LOCALE[resolved]}`;
-  // No logo → a gallery photo, so a listing that skipped the logo upload
-  // but has real photos still previews as itself rather than generic
-  // branding; no photos either → the directory's own branded share image
-  // (see directoryShareImage) rather than the bare app icon.
-  const logoUrl = buildListingLogoUrl(listing, siteOrigin, slug);
-  const galleryImageUrl = listing.photos[0] ? `${siteOrigin}${directoryImagePath(listing.photos[0].id)}` : null;
-  const shareImage = logoUrl
-    ? { url: logoUrl }
-    : galleryImageUrl
-      ? { url: galleryImageUrl }
-      : directoryShareImage(siteOrigin, resolved);
+  // Every listing gets the same branded card (company name, its services,
+  // and this same description, in the gotka.com house style) as its link
+  // preview, rather than a partner's own logo/photo — consistent quality
+  // across the whole directory regardless of what a partner did or didn't
+  // upload. Rendered by this route's own opengraph-image.tsx, which reads
+  // the same published snapshot this function does.
+  const shareImage = { url: `${siteOrigin}${directoryListingPath(resolved, slug)}/opengraph-image` };
 
   return {
     title,
@@ -146,9 +134,7 @@ export async function generateMetadata({
       images: [shareImage],
     },
     twitter: {
-      // A logo is roughly square, which suits the small summary card; a
-      // gallery photo or the 1200×630 branded image both want the large one.
-      card: logoUrl ? "summary" : "summary_large_image",
+      card: "summary_large_image",
       title,
       description,
       images: [shareImage],
@@ -322,13 +308,17 @@ export default async function DirectoryListingPage({
   const mapAddress = listing.address;
   const pageUrl = `${siteOrigin}${directoryListingPath(resolved, slug)}`;
 
-  // This app has no affiliate/referral-commission system (see the CRM this
-  // was extracted from, which tracked a "Recommend" link back to whichever
-  // partner shared it via directoryReferralUrl/getBusinessSessionPayload) —
-  // "Recommend" is just a plain, untracked share of the listing's own
-  // canonical URL, offered to every visitor rather than gated to a signed-in
-  // partner with a referral code.
-  const recommendUrl = pageUrl;
+  // No commission/payout system (this app doesn't pay anyone for a
+  // referral, unlike the CRM it was extracted from) — just attribution: a
+  // `ref=recommend` tag on the Recommend link's own URL, distinct from
+  // pageUrl (which the plain Share button still uses untagged). A visitor
+  // who lands here via that link and then submits the lead form gets
+  // DirectoryLead.viaReferral set (see directory-lead-form.tsx and
+  // submitDirectoryLead), which is what the business portal's "Referred"
+  // stat counts. Offered to every visitor, not gated to a signed-in
+  // partner — anyone recommending a business they like generates the same
+  // tag, not just its own owner.
+  const recommendUrl = `${pageUrl}?ref=recommend`;
   const recommendMessage = formatRecommendMessage(t.recommendMessage, listing.companyName, recommendUrl);
 
   // The partner's own tagline/description/services/faqs stay the source of
@@ -386,11 +376,9 @@ export default async function DirectoryListingPage({
     // Top padding matches the category/location pages' own breadcrumb
     // spacing (see category-page-content.tsx/location-page-content.tsx) so
     // it doesn't sit flush against the sticky header. Bottom padding clears
-    // whatever is pinned over the page's foot: the mobile jump bar below
-    // (always, on small screens), plus the RecommendBar's own pill, which
-    // floats above that jump bar on mobile and becomes its own strip from
-    // sm up.
-    <div className="w-full px-4 pt-4 pb-40 sm:px-8 sm:pb-28">
+    // whatever is pinned over the page's foot at every width: the jump bar
+    // below, plus the RecommendBar pill floating just above it.
+    <div className="w-full px-4 pt-4 pb-40 sm:px-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -893,23 +881,35 @@ export default async function DirectoryListingPage({
 
       <RecommendBar title={listing.companyName} url={recommendUrl} message={recommendMessage} label={t.recommendBusinessCta} />
 
-      {/* Mobile only — on lg+ the Get in touch card is already visible in
-          the sticky right-hand column, so this would just duplicate it. */}
+      {/* Shown at every width, not just mobile: on lg+ the Get in touch card
+          is a sticky right-hand column (see its own lg:sticky lg:top-32
+          below), but it's only sticky within that column's own height — once
+          a visitor scrolls far enough that the column runs out (past the
+          FAQ, near the related listings/footer), the card scrolls away with
+          the rest of the page. This bar stays truly fixed the whole way
+          down, so "get in touch" is always one tap away regardless of scroll
+          position or screen width. */}
       <nav
         aria-label={t.stickyNavLabel}
-        className="fixed inset-x-0 bottom-0 z-20 flex gap-2 border-t border-slate-200 bg-white px-4 py-3 sm:hidden dark:border-neutral-800 dark:bg-neutral-900"
+        className="fixed inset-x-0 bottom-0 z-20 border-t border-slate-200 bg-white px-4 py-3 dark:border-neutral-800 dark:bg-neutral-900"
       >
-        {displayServices.length > 0 && (
-          <a href="#services" className={buttonClasses("secondary", "md", "flex-1 justify-center")}>
-            {t.servicesHeading}
+        {/* Constrained and centered rather than edge-to-edge — full-width
+            flex-1 buttons read fine as a phone-width bar, but would stretch
+            into two oversized buttons on a wide desktop screen now that this
+            bar shows at every width. */}
+        <div className="mx-auto flex max-w-sm gap-2">
+          {displayServices.length > 0 && (
+            <a href="#services" className={buttonClasses("secondary", "md", "flex-1 justify-center")}>
+              {t.servicesHeading}
+            </a>
+          )}
+          <a
+            href="#contact"
+            className={buttonClasses("primary", "md", "flex-1 justify-center bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led")}
+          >
+            {t.contactHeading}
           </a>
-        )}
-        <a
-          href="#contact"
-          className={buttonClasses("primary", "md", "flex-1 justify-center bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led")}
-        >
-          {t.contactHeading}
-        </a>
+        </div>
       </nav>
     </div>
   );

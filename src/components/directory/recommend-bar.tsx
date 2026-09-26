@@ -1,17 +1,15 @@
 import { ShareButton } from "@/components/directory/share-button";
 
-// The "Recommend the Business" pill pinned to the foot of a listing page
-// for a signed-in business owner: one floating button that opens the same
-// share menu as the header's Recommend button, with the same referral-
-// tracking link. It's the always-in-reach version of that button — a
-// partner reading down a long listing shouldn't have to scroll back up to
-// pass it on. Rendered only when there's a partner to credit (see the
-// listing page), so anonymous visitors never see it.
+// The "Recommend the Business" pill pinned to the foot of a listing page,
+// shown to every visitor: one floating button that opens the same share
+// menu as the header's Recommend button, with the same referral-tracking
+// link (?ref=recommend, see recommendUrl). It's the always-in-reach
+// version of that button — a visitor reading down a long listing
+// shouldn't have to scroll back up to recommend it to a friend.
 //
-// On phones the page already has its own fixed bottom jump bar (Services /
-// Get in touch — see the listing page), so the pill floats just above that
-// rather than covering it; from sm up that jump bar is gone and the pill
-// gets a proper strip of its own along the bottom edge.
+// The page's own fixed bottom jump bar (Services / Get in touch — see the
+// listing page) is shown at every width now, so this pill always floats
+// just above it rather than covering it.
 export function RecommendBar({
   title,
   url,
@@ -24,7 +22,7 @@ export function RecommendBar({
   label: string;
 }) {
   return (
-    <div className="pointer-events-none fixed inset-x-0 bottom-20 z-30 flex justify-center px-4 sm:bottom-0 sm:border-t sm:border-slate-200 sm:bg-white/95 sm:py-3 sm:backdrop-blur dark:sm:border-neutral-800 dark:sm:bg-neutral-900/95">
+    <div className="pointer-events-none fixed inset-x-0 bottom-20 z-30 flex justify-center px-4">
       <div className="pointer-events-auto">
         <ShareButton
           title={title}
