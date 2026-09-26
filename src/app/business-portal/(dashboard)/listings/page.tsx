@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { ExternalLink, Eye, Plus, Store } from "lucide-react";
+import { ExternalLink, Eye, Megaphone, Plus, Store } from "lucide-react";
 import { createListingAction } from "@/app/actions/directory";
-import { listPartnerListings, listingViewCountByLocale } from "@/lib/directory";
+import { isUpdateCurrent, listPartnerListings, listingViewCountByLocale, readPublishedSnapshot } from "@/lib/directory";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { getSiteOrigin } from "@/lib/site-url";
 import { DIRECTORY_LOCALES, directoryListingPath } from "@/lib/directory-i18n";
@@ -22,6 +22,7 @@ import { PARTNER_LISTING_STATUS_BADGE_CLASSES, PARTNER_LISTING_STATUS_LABELS } f
 export default async function PartnerListingsPage() {
   const user = await requireCompletePartnerProfile();
   const [listings, siteOrigin] = await Promise.all([listPartnerListings(user.id), getSiteOrigin()]);
+  const todayIso = new Date().toISOString().slice(0, 10);
 
   return (
     <div className="space-y-6">
@@ -52,6 +53,12 @@ export default async function PartnerListingsPage() {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {listings.map((listing) => {
             const publicUrl = listing.publishedSnapshot ? `${siteOrigin}${directoryListingPath("en", listing.slug)}` : null;
+            // Only a shortcut into a section actually on the live page —
+            // the News & Promotions card itself only renders when the
+            // published snapshot has at least one current (not-yet-expired)
+            // post, same condition as [slug]/page.tsx's own currentUpdates.
+            const publishedUpdates = readPublishedSnapshot(listing.publishedSnapshot)?.updates ?? [];
+            const hasCurrentUpdates = publishedUpdates.some((update) => isUpdateCurrent(update, todayIso));
             return (
               <Card key={listing.id}>
                 <CardBody className="space-y-3">
@@ -80,6 +87,17 @@ export default async function PartnerListingsPage() {
                       >
                         View public listing
                         <ExternalLink className="h-3.5 w-3.5" />
+                      </Link>
+                    )}
+                    {publicUrl && hasCurrentUpdates && (
+                      <Link
+                        href={`${publicUrl}#news`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-petrol hover:underline dark:text-petrol-light"
+                      >
+                        <Megaphone className="h-3.5 w-3.5" />
+                        News & Promotions
                       </Link>
                     )}
                     {publicUrl && (
