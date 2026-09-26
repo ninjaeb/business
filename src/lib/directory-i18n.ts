@@ -99,16 +99,24 @@ export function formatRecommendMessage(template: string, business: string, url: 
   return template.replace("{business}", business).replace("{url}", url);
 }
 
-// The listing page's view-count line — plural-aware (English needs "1
-// view" vs "N views"), which is exactly why this can't be a plain
-// DIRECTORY_STRINGS template string the way recommendMessage above is: it
-// has to branch on count, and DIRECTORY_STRINGS itself gets passed whole
-// into "use client" components (DirectorySearch) on the home/category/
-// location pages, where a function value in that object throws at render
-// ("Functions cannot be passed directly to Client Components"). Kept as
-// its own plain function instead, called only from the (server-only)
-// listing detail page — same reasoning as DirectoryHomeCopy.listingCount,
-// which lives outside DIRECTORY_STRINGS for the same reason.
+// Fills in DirectoryStrings.searchViewAllResults's {query} token — see that
+// field's own comment for why this is plain substitution, not a template
+// literal built where the message is used.
+export function formatSearchViewAllResults(template: string, query: string): string {
+  return template.replace("{query}", query);
+}
+
+// A listing's view-count line — plural-aware (English needs "1 view" vs
+// "N views"), which is exactly why this can't be a plain DIRECTORY_STRINGS
+// template string the way recommendMessage above is: it has to branch on
+// count, and DIRECTORY_STRINGS itself gets passed whole into "use client"
+// components (DirectorySearch) on the home/category/location pages, where a
+// function value in that object throws at render ("Functions cannot be
+// passed directly to Client Components"). Kept as its own plain function
+// instead, called only from server-only contexts — the listing detail page
+// directly, and toDirectoryGridListing (src/lib/directory.ts) on behalf of
+// every card grid — same reasoning as DirectoryHomeCopy.listingCount, which
+// lives outside DIRECTORY_STRINGS for the same reason.
 export function formatViewsLabel(count: number, locale: DirectoryLocale): string {
   if (locale === "zh") return `${count.toLocaleString()} 次浏览`;
   if (locale === "ms") return `${count.toLocaleString()} paparan`;
@@ -141,6 +149,19 @@ export type DirectoryStrings = {
   heroTitle: string;
   heroSubtitle: string;
   searchPlaceholder: string;
+  // The header's own always-present search box (directory-chrome.tsx /
+  // header-search.tsx) — shorter than searchPlaceholder above, which fills
+  // the whole width of the home page's big hero search instead.
+  headerSearchPlaceholder: string;
+  // The header search dropdown's three result groups — Business, then
+  // servicesHeading/updatesHeading below reused as the other two group
+  // headings rather than duplicating near-identical strings.
+  searchSectionBusiness: string;
+  searchNoResults: string;
+  // The dropdown's "see all results" link, {query} replaced with what was
+  // typed — see formatSearchViewAllResults below (plain string
+  // substitution, not a template literal, since this is localized data).
+  searchViewAllResults: string;
   // A category page's "see other categories" links, below its results —
   // the only way to reach a sibling category without going back to the
   // directory home (see category-page-content.tsx).
@@ -327,6 +348,10 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     heroTitle: "Find the right business for your project",
     heroSubtitle: "Browse trusted businesses and reach out directly.",
     searchPlaceholder: "Search by company, service, industry or category…",
+    headerSearchPlaceholder: "Search businesses, products, news…",
+    searchSectionBusiness: "Business",
+    searchNoResults: "No results found",
+    searchViewAllResults: "See all results for “{query}”",
     otherCategoriesHeading: "Browse other categories",
     otherLocationsHeading: "Browse other locations",
     otherIndustriesHeading: "Browse other industries",
@@ -480,6 +505,10 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     heroTitle: "为您的项目寻找合适的企业",
     heroSubtitle: "浏览值得信赖的企业，并直接联系他们。",
     searchPlaceholder: "按公司、服务、行业或类别搜索…",
+    headerSearchPlaceholder: "搜索企业、产品、新闻…",
+    searchSectionBusiness: "企业",
+    searchNoResults: "未找到结果",
+    searchViewAllResults: "查看“{query}”的所有结果",
     otherCategoriesHeading: "浏览其他类别",
     otherLocationsHeading: "浏览其他地区",
     otherIndustriesHeading: "浏览其他行业",
@@ -632,6 +661,10 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     heroTitle: "Cari perniagaan yang sesuai untuk projek anda",
     heroSubtitle: "Semak imbas perniagaan yang dipercayai dan hubungi terus.",
     searchPlaceholder: "Cari mengikut syarikat, perkhidmatan, industri atau kategori…",
+    headerSearchPlaceholder: "Cari perniagaan, produk, berita…",
+    searchSectionBusiness: "Perniagaan",
+    searchNoResults: "Tiada hasil dijumpai",
+    searchViewAllResults: "Lihat semua hasil untuk “{query}”",
     otherCategoriesHeading: "Semak imbas kategori lain",
     otherLocationsHeading: "Semak imbas lokasi lain",
     otherIndustriesHeading: "Semak imbas industri lain",

@@ -10,6 +10,7 @@ import {
   saveDirectoryListing,
   submitDirectoryListingForReview,
   translateListingContent,
+  type AddressFromPlace,
   type AutoCreatedListingDetails,
   type ListingFormField,
   type ListingFormValues,
@@ -17,6 +18,7 @@ import {
 import { Button, buttonClasses } from "@/components/ui/button";
 import { FieldGroup, Input, Label, RequiredMark, Select, Textarea } from "@/components/ui/field";
 import { MultiCombobox } from "@/components/ui/multi-combobox";
+import { AddressSearch } from "@/components/directory/address-search";
 import { AiAutoCreatePanel } from "@/components/directory/ai-auto-create-panel";
 import { FaqEditor } from "@/components/directory/faq-editor";
 import { ListingLogo } from "@/components/directory/listing-logo";
@@ -409,20 +411,66 @@ export function PartnerListingForm({
     setJustSaved(false);
   }
 
+  // Only fields the selected Google Maps place actually has are replaced —
+  // same "don't wipe what's already there" treatment as handleAutoCreated
+  // above, since Google doesn't always return every component (a place with
+  // no locality, say, shouldn't blank out a City the partner already typed).
+  function handleAddressSelected(result: AddressFromPlace) {
+    if (result.address) setAddress(result.address);
+    if (result.city) setCity(result.city);
+    if (result.state) setAddrState(result.state);
+    if (result.country) setCountry(result.country);
+    setJustSaved(false);
+  }
+
   return (
     <>
+      {/* Renders first — right below the Published/View public listing
+          status card in the page above — so the tab a partner picks here
+          governs everything that follows: the AI Auto Create/Public URL box
+          right below (Listing Details only) and the tabbed form content
+          further down. */}
+      <div className="flex flex-wrap items-center gap-2 rounded-md border border-slate-200 p-2 dark:border-neutral-800">
+        <div className="inline-flex rounded-md bg-slate-100 p-0.5 dark:bg-neutral-800">
+          {SECTION_TABS.map((tab) => (
+            <button
+              key={tab.value}
+              type="button"
+              onClick={() => setActiveSection(tab.value)}
+              aria-pressed={activeSection === tab.value}
+              className={cn(
+                "rounded px-3 py-1.5 text-sm font-medium transition-colors",
+                activeSection === tab.value
+                  ? "bg-white text-petrol-ink shadow-sm dark:bg-neutral-700 dark:text-petrol-light"
+                  : "text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200",
+              )}
+            >
+              {tab.label}
+              {tab.value === "updates" && updates.length > 0 && (
+                <span className="ml-1.5 text-xs text-slate-400 dark:text-slate-500">({updates.length})</span>
+              )}
+            </button>
+          ))}
+        </div>
+      </div>
+
       {/* AI Auto Create and the Public URL/Search & social preview box sit
-          side by side as the editor's first row, AI on the left. Public URL
-          and Search & social preview share this one box (rather than being
-          two stacked boxes) since they're both about how the listing is
-          found/shared, not its content. Neither can nest inside the listing
-          <form> below: PartnerSlugForm is its own independent <form> (a
-          separate server action), and the SEO fields, though logically part
-          of the listing, need to live outside that form's DOM subtree to
-          sit next to it here — both submit via the `form` attribute (see
-          LISTING_FORM_ID) instead, same trick AiAutoCreatePanel's Website
-          field below uses for the same reason. */}
-      <div className={cn("mb-5 grid items-start gap-6", aiAvailable && "lg:grid-cols-2")}>
+          side by side, AI on the left. Only shown under Listing Details —
+          both are about that tab's content, not News & Promotions. Public
+          URL and Search & social preview share this one box (rather than
+          being two stacked boxes) since they're both about how the listing
+          is found/shared, not its content. Neither can nest inside the
+          listing <form> below: PartnerSlugForm is its own independent
+          <form> (a separate server action), and the SEO fields, though
+          logically part of the listing, need to live outside that form's
+          DOM subtree to sit next to it here — both submit via the `form`
+          attribute (see LISTING_FORM_ID) instead, same trick
+          AiAutoCreatePanel's Website field below uses for the same reason.
+          Kept mounted (just hidden) rather than conditionally rendered when
+          switching tabs, same reasoning as the tabbed content further down
+          — the SEO fields stay part of the one <form> submit regardless of
+          which tab a partner last looked at. */}
+      <div className={cn("mb-5 grid items-start gap-6", aiAvailable && "lg:grid-cols-2", activeSection !== "details" && "hidden")}>
         {aiAvailable && (
           <AiAutoCreatePanel
             formId={LISTING_FORM_ID}
@@ -511,30 +559,6 @@ export function PartnerListingForm({
         // touch alone without also editing a plain field nearby.
         onChange={() => setJustSaved(false)}
       >
-
-      <div className="flex flex-wrap items-center gap-2 rounded-md border border-slate-200 p-2 dark:border-neutral-800">
-        <div className="inline-flex rounded-md bg-slate-100 p-0.5 dark:bg-neutral-800">
-          {SECTION_TABS.map((tab) => (
-            <button
-              key={tab.value}
-              type="button"
-              onClick={() => setActiveSection(tab.value)}
-              aria-pressed={activeSection === tab.value}
-              className={cn(
-                "rounded px-3 py-1.5 text-sm font-medium transition-colors",
-                activeSection === tab.value
-                  ? "bg-white text-petrol-ink shadow-sm dark:bg-neutral-700 dark:text-petrol-light"
-                  : "text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200",
-              )}
-            >
-              {tab.label}
-              {tab.value === "updates" && updates.length > 0 && (
-                <span className="ml-1.5 text-xs text-slate-400 dark:text-slate-500">({updates.length})</span>
-              )}
-            </button>
-          ))}
-        </div>
-      </div>
 
       {/* Kept mounted (just hidden) rather than conditionally rendered, same
           reasoning as the language tabs below — every field inside stays
@@ -720,6 +744,8 @@ export function PartnerListingForm({
           <p className="mt-1 text-xs text-slate-400">Optional — helps visitors filter the directory by what you do.</p>
         </FieldGroup>
       </div>
+
+      <AddressSearch placesAvailable={placesAvailable} onSelect={handleAddressSelected} />
 
       <div className="grid gap-4 sm:grid-cols-2">
         <FieldGroup label="Address" htmlFor="address">

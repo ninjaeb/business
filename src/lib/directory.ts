@@ -2,7 +2,8 @@ import { db } from "@/lib/db";
 import type { Industry, PartnerListing, Prisma } from "@/generated/prisma/client";
 import { operatingHoursFromJson, type OperatingHours } from "@/lib/operating-hours";
 import { slugify } from "@/lib/slug";
-import { directoryListingPath, type DirectoryLocale } from "@/lib/directory-i18n";
+import { directoryListingPath, formatViewsLabel, INDUSTRY_LABELS_BY_LOCALE, type DirectoryLocale } from "@/lib/directory-i18n";
+import { translateCategoryName } from "@/lib/directory-category-labels";
 import { organizationJsonLdId, serializeJsonLd, websiteJsonLdId } from "@/lib/directory-seo";
 import { VIDEO_CATEGORIES, type VideoCategory } from "@/lib/labels";
 import { stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
@@ -536,12 +537,19 @@ export type DirectoryGridListing = {
   state: string | null;
   country: string | null;
   logoUrl: string | null;
+  // Pre-formatted for the grid's own locale (see formatViewsLabel) — same
+  // "computed once, server-side, where the locale is already in scope"
+  // reasoning toDirectoryGridListing's other locale-dependent fields use,
+  // since every card grid is rendered by a "use client" component
+  // (DirectorySearch) that formatViewsLabel itself can't be called from.
+  viewsLabel: string;
 };
 
 export type PublishedListingRow = {
   slug: string;
   publishedAt: Date | null;
   updatedAt: Date;
+  viewCount: number;
   listing: PublishedListingSnapshot;
 };
 
@@ -551,12 +559,14 @@ export type PublishedListingRow = {
 // snapshot is the test (same as the detail page), not the row's status.
 export async function loadPublishedListings(): Promise<PublishedListingRow[]> {
   const rows = await db.partnerListing.findMany({
-    select: { slug: true, publishedAt: true, updatedAt: true, publishedSnapshot: true },
+    select: { slug: true, publishedAt: true, updatedAt: true, viewCount: true, publishedSnapshot: true },
     orderBy: { publishedAt: "desc" },
   });
   return rows.flatMap((row) => {
     const listing = readPublishedSnapshot(row.publishedSnapshot);
-    return listing ? [{ slug: row.slug, publishedAt: row.publishedAt, updatedAt: row.updatedAt, listing }] : [];
+    return listing
+      ? [{ slug: row.slug, publishedAt: row.publishedAt, updatedAt: row.updatedAt, viewCount: row.viewCount, listing }]
+      : [];
   });
 }
 
@@ -652,7 +662,10 @@ export function directoryImagePath(id: string): string {
   return `/api/directory-images/${encodeURIComponent(id)}`;
 }
 
-export function toDirectoryGridListing({ slug, publishedAt, listing }: PublishedListingRow, locale: DirectoryLocale): DirectoryGridListing {
+export function toDirectoryGridListing(
+  { slug, publishedAt, viewCount, listing }: PublishedListingRow,
+  locale: DirectoryLocale,
+): DirectoryGridListing {
   // Same fallback rule as the detail page: a translation only stands in
   // for the field it actually covers; the company name is never translated.
   const translation = locale === "en" ? undefined : listing.translations[locale];
@@ -668,6 +681,7 @@ export function toDirectoryGridListing({ slug, publishedAt, listing }: Published
     state: listing.state,
     country: listing.country,
     logoUrl: listing.logoUrl ? listingLogoPath(slug, publishedAt) : null,
+    viewsLabel: formatViewsLabel(viewCount, locale),
   };
 }
 
@@ -850,6 +864,104 @@ export async function loadLatestListingUpdates(limit = MAX_LATEST_UPDATES): Prom
     }
   }
   return entries;
+}
+
+// The header search bar's live dropdown (see HeaderSearch and the
+// searchDirectory server action) — up to a handful of matches in each of
+// three groups (business, products & services, news & promotions) for one
+// query, case-insensitive substring matching against the same fields
+// DirectorySearch's own free-text filter already uses. One
+// loadPublishedListings call backs all three groups, same as
+// loadLatestProducts/loadLatestListingUpdates above, since products/updates
+// are already just per-listing arrays inside that same snapshot. This is a
+// dropdown of suggestions, not the authoritative filter — the "see all
+// results" link below it re-runs the real thing (DirectorySearch, on the
+// home page) rather than this trying to match its translated-category
+// matching exactly.
+export type DirectorySearchListingHit = {
+  slug: string;
+  companyName: string;
+  tagline: string | null;
+  logoUrl: string | null;
+  industryLabel: string | null;
+};
+export type DirectorySearchProductHit = {
+  listingSlug: string;
+  companyName: string;
+  logoUrl: string | null;
+  title: string;
+  description: string;
+};
+export type DirectorySearchUpdateHit = {
+  listingSlug: string;
+  companyName: string;
+  logoUrl: string | null;
+  kind: ListingUpdateKind;
+  title: string;
+};
+export type DirectorySearchSuggestions = {
+  businesses: DirectorySearchListingHit[];
+  products: DirectorySearchProductHit[];
+  updates: DirectorySearchUpdateHit[];
+};
+
+const MAX_SEARCH_SUGGESTIONS_PER_GROUP = 5;
+
+export async function searchDirectorySuggestions(query: string, locale: DirectoryLocale): Promise<DirectorySearchSuggestions> {
+  const q = query.trim().toLowerCase();
+  const empty: DirectorySearchSuggestions = { businesses: [], products: [], updates: [] };
+  if (!q) return empty;
+
+  const rows = await loadPublishedListings();
+  const industryLabels = INDUSTRY_LABELS_BY_LOCALE[locale];
+  const today = new Date().toISOString().slice(0, 10);
+  const businesses: DirectorySearchListingHit[] = [];
+  const products: DirectorySearchProductHit[] = [];
+  const updates: DirectorySearchUpdateHit[] = [];
+
+  for (const { slug, publishedAt, listing } of rows) {
+    if (businesses.length >= MAX_SEARCH_SUGGESTIONS_PER_GROUP && products.length >= MAX_SEARCH_SUGGESTIONS_PER_GROUP && updates.length >= MAX_SEARCH_SUGGESTIONS_PER_GROUP) {
+      break;
+    }
+
+    const translation = locale === "en" ? undefined : listing.translations[locale];
+    const companyName = listing.companyName;
+    const logoUrl = listing.logoUrl ? listingLogoPath(slug, publishedAt) : null;
+    const industryLabel = listing.industry ? industryLabels[listing.industry] : null;
+
+    if (businesses.length < MAX_SEARCH_SUGGESTIONS_PER_GROUP) {
+      const tagline = translation?.tagline || listing.tagline;
+      const description = stripMarkdownLiteToPlainText(translation?.description || listing.description);
+      const matches =
+        companyName.toLowerCase().includes(q) ||
+        (tagline?.toLowerCase().includes(q) ?? false) ||
+        description.toLowerCase().includes(q) ||
+        (industryLabel?.toLowerCase().includes(q) ?? false) ||
+        listing.categories.some((cat) => cat.toLowerCase().includes(q) || translateCategoryName(cat, locale).toLowerCase().includes(q));
+      if (matches) businesses.push({ slug, companyName, tagline: tagline || null, logoUrl, industryLabel });
+    }
+
+    const services = translation?.services.length ? translation.services : listing.services;
+    for (const service of services) {
+      if (products.length >= MAX_SEARCH_SUGGESTIONS_PER_GROUP) break;
+      if (service.title.toLowerCase().includes(q) || service.description.toLowerCase().includes(q)) {
+        products.push({ listingSlug: slug, companyName, logoUrl, title: service.title, description: service.description });
+      }
+    }
+
+    // Never translated (see ListingUpdateEntry's own comment) — matched in
+    // whatever language a partner actually wrote it in, same as
+    // loadLatestListingUpdates above.
+    for (const update of listing.updates) {
+      if (updates.length >= MAX_SEARCH_SUGGESTIONS_PER_GROUP) break;
+      if (!isUpdateCurrent(update, today)) continue;
+      if (update.title.toLowerCase().includes(q) || stripMarkdownLiteToPlainText(update.body).toLowerCase().includes(q)) {
+        updates.push({ listingSlug: slug, companyName, logoUrl, kind: update.kind, title: update.title });
+      }
+    }
+  }
+
+  return { businesses, products, updates };
 }
 
 // A "Visit website" link needs a real absolute URL, not just a bare domain

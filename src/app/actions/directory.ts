@@ -37,6 +37,7 @@ import {
   parseServicesJson,
   parseUpdatesJson,
   parseVideosJson,
+  searchDirectorySuggestions,
   servicesFromJson,
   slugify,
   translationsFromJson,
@@ -93,6 +94,15 @@ export async function setDirectoryLocale(locale: string): Promise<void> {
     maxAge: 60 * 60 * 24 * 365,
     sameSite: "lax",
   });
+}
+
+// Public, unauthenticated — backs the header search bar's live dropdown
+// (see HeaderSearch). A thin passthrough to searchDirectorySuggestions: the
+// actual matching lives in @/lib/directory alongside every other directory
+// data loader, but a "use client" component can only call into it as a
+// Server Action, not import a module with a top-level `db` import directly.
+export async function searchDirectory(query: string, locale: string) {
+  return searchDirectorySuggestions(query, isDirectoryLocale(locale) ? locale : DEFAULT_DIRECTORY_LOCALE);
 }
 
 const directoryLeadSchema = z.object({
@@ -684,6 +694,26 @@ export async function searchBusinessOnGoogleMaps(query: string): Promise<AiResul
     return { status: "ok", data: { places: await searchPlaces(trimmed) } };
   } catch (error) {
     return { status: "error", message: error instanceof Error ? error.message : "Google Maps search failed." };
+  }
+}
+
+export type AddressFromPlace = { address: string | null; city: string | null; state: string | null; country: string | null };
+
+// Partner-gated — the standalone address search box (see AddressSearch)
+// above the Address/City/State/Country fields. A single Place Details call
+// per selection, same source as autoCreateListingDetails' own address fill
+// but without the AI pass or anything else that call does — just the
+// parsed address facts, so filling in an address never needs OPENROUTER_API_KEY.
+export async function getAddressFromGooglePlace(placeId: string): Promise<AiResult<AddressFromPlace>> {
+  await requirePartnerAction();
+  if (!isGooglePlacesConfigured()) return PLACES_NOT_CONFIGURED;
+  if (!isValidPlaceId(placeId)) return { status: "error", message: "Invalid Google Maps place." };
+
+  try {
+    const place = await getPlaceDetails(placeId);
+    return { status: "ok", data: { address: place.address, city: place.city, state: place.state, country: place.country } };
+  } catch (error) {
+    return { status: "error", message: error instanceof Error ? error.message : "Couldn't load that address." };
   }
 }
 
