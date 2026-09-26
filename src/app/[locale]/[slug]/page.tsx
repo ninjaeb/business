@@ -813,6 +813,7 @@ export default async function DirectoryListingPage({
                       )}
                       <VideoGallery
                         companyName={listing.companyName}
+                        watchOnOriginalSiteLabel={t.watchOnOriginalSiteLabel}
                         videos={videoGallery.map((video) => ({
                           url: video.url,
                           title: video.title,
