@@ -5,6 +5,7 @@ import { slugify } from "@/lib/slug";
 import { directoryListingPath, type DirectoryLocale } from "@/lib/directory-i18n";
 import { organizationJsonLdId, serializeJsonLd, websiteJsonLdId } from "@/lib/directory-seo";
 import { VIDEO_CATEGORIES, type VideoCategory } from "@/lib/labels";
+import { stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
 
 // Re-exported for existing server-side imports (actions, pages) that
 // already pull these from "@/lib/directory" — but a "use client" component
@@ -505,16 +506,23 @@ export function buildPublishedSnapshot(
 // Only what the directory grid (the home page and each category page)
 // actually renders and filters on, in the visitor's own language. This is
 // what crosses the wire to the client-side search (see DirectorySearch), so
-// it deliberately drops everything the grid never shows — the full About
-// text, hours, FAQ, every other language's translation — and, above all,
-// the stored logo: that's a data: URL of the whole image (see photoDataUrl),
-// which inlined into the HTML and again into React's payload made the home
-// page ~870KB for five listings. logoUrl here is a real, cacheable path
-// instead (see listingLogoPath).
+// it deliberately drops everything the grid never shows — hours, FAQ, every
+// other language's translation — and, above all, the stored logo: that's a
+// data: URL of the whole image (see photoDataUrl), which inlined into the
+// HTML and again into React's payload made the home page ~870KB for five
+// listings. logoUrl here is a real, cacheable path instead (see
+// listingLogoPath). `description` is the one exception to "only what the
+// grid renders" — DirectorySearch's free-text query matches against it even
+// though the grid's own cards never show it, so a business searchable by
+// what it actually does (not just its services/industry/category) doesn't
+// need its own card redesigned first. Plain text (see
+// stripMarkdownLiteToPlainText), not the raw markdown-lite the About field
+// stores, so literal "**"/"[]()" syntax never causes a false mismatch.
 export type DirectoryGridListing = {
   slug: string;
   companyName: string;
   tagline: string | null;
+  description: string;
   services: { title: string; description: string }[];
   industry: Industry | null;
   categories: string[];
@@ -646,6 +654,7 @@ export function toDirectoryGridListing({ slug, publishedAt, listing }: Published
     slug,
     companyName: listing.companyName,
     tagline: translation?.tagline || listing.tagline,
+    description: stripMarkdownLiteToPlainText(translation?.description || listing.description),
     services: services.map(({ title, description }) => ({ title, description })),
     industry: listing.industry,
     categories: listing.categories,
