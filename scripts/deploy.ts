@@ -68,21 +68,38 @@ function isTransientConnectionError(message: string): boolean {
   return /too many (clients|connections)|remaining connection slots are reserved/i.test(message);
 }
 
-const MIGRATE_RETRY_DELAYS_MS = [5_000, 15_000];
+const DB_COMMAND_RETRY_DELAYS_MS = [5_000, 15_000];
 
-async function runMigrateDeploy(): Promise<string> {
-  const attempts = MIGRATE_RETRY_DELAYS_MS.length + 1;
+// Shared by runMigrateDeploy and runSeed below — both are one-shot Prisma
+// CLI commands against the same shared-hosting connection budget, so both
+// hit the exact same transient "too many connections" failure the same way.
+async function runDbCommand(label: string, command: string, args: string[]): Promise<string> {
+  const attempts = DB_COMMAND_RETRY_DELAYS_MS.length + 1;
   for (let attempt = 1; attempt <= attempts; attempt++) {
     try {
-      return run("npx", ["prisma", "migrate", "deploy"]);
+      return run(command, args);
     } catch (error) {
-      const delay = MIGRATE_RETRY_DELAYS_MS[attempt - 1];
+      const delay = DB_COMMAND_RETRY_DELAYS_MS[attempt - 1];
       if (delay === undefined || !isTransientConnectionError(errorText(error))) throw error;
-      console.log(`migrate deploy hit a connection limit (attempt ${attempt}/${attempts}) — retrying in ${delay / 1000}s...`);
+      console.log(`${label} hit a connection limit (attempt ${attempt}/${attempts}) — retrying in ${delay / 1000}s...`);
       await sleep(delay);
     }
   }
   throw new Error("unreachable");
+}
+
+function runMigrateDeploy(): Promise<string> {
+  return runDbCommand("migrate deploy", "npx", ["prisma", "migrate", "deploy"]);
+}
+
+// prisma/seed.ts is a plain upsert by fixed id (see its own comment) — always
+// safe to re-run, and re-running it on every deploy (not just once at setup,
+// as the README's manual instructions describe) is what keeps the business
+// category picker in sync automatically the moment a future PR adds more
+// categories to that file, instead of relying on someone remembering to
+// re-run the seed command by hand.
+function runSeed(): Promise<string> {
+  return runDbCommand("database seed", "npx", ["tsx", "prisma/seed.ts"]);
 }
 
 // ---------------------------------------------------------------------------
@@ -249,6 +266,9 @@ async function main() {
 
   console.log("Running prisma migrate deploy...");
   console.log(await runMigrateDeploy());
+
+  console.log("Running database seed...");
+  console.log(await runSeed());
 
   signalRestart();
   console.log("Signaled a restart (tmp/restart.txt) — the app rebuilds and picks up the new commit on its next request.");

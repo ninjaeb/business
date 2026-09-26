@@ -43,6 +43,7 @@ export type PublishedListingSnapshot = {
   website: string | null;
   videos: VideoEntry[];
   address: string | null;
+  city: string | null;
   state: string | null;
   country: string | null;
   operatingHours: OperatingHours | null;
@@ -313,17 +314,17 @@ export function parseFaqsJson(raw: string): FaqEntry[] {
 // embedding as the About field, rendered with renderMarkdownLite rather than
 // as plain text — and, unlike About, feeds a per-post Article JSON-LD node
 // (see buildUpdatesJsonLd in src/lib/directory-seo.ts) for SEO/GEO. postedAt
-// is stamped once, the first time an entry is actually edited (see
-// UpdatesEditor's updateEntry) — an original-publish date, never bumped by a
-// later edit, same spirit as a blog post's own dateline; null on an entry
-// saved before this field existed, which just omits datePublished from its
-// JSON-LD rather than fabricating one.
+// is stamped once, the moment a post is actually added (see UpdatesEditor's
+// commit) — an original-publish date, never bumped by a later edit, same
+// spirit as a blog post's own dateline; null on an entry saved before this
+// field existed, which just omits datePublished from its JSON-LD rather
+// than fabricating one.
 export type ListingUpdateKind = "NEWS" | "PROMOTION";
 export type ListingUpdateEntry = {
   kind: ListingUpdateKind;
   title: string;
   body: string;
-  postedAt: string | null; // ISO date (YYYY-MM-DD), stamped client-side on first edit
+  postedAt: string | null; // ISO date (YYYY-MM-DD), stamped client-side when the post is added
   endDate: string | null; // ISO date (YYYY-MM-DD), partner's own local date
 };
 
@@ -447,6 +448,7 @@ export function readPublishedSnapshot(value: unknown): PublishedListingSnapshot 
     website: typeof raw.website === "string" ? raw.website : null,
     videos: videosFromJson(raw.videos),
     address: typeof raw.address === "string" ? raw.address : null,
+    city: typeof raw.city === "string" ? raw.city : null,
     state: typeof raw.state === "string" ? raw.state : null,
     country: typeof raw.country === "string" ? raw.country : null,
     operatingHours: operatingHoursFromJson(raw.operatingHours),
@@ -488,6 +490,7 @@ export function buildPublishedSnapshot(
     website: listing.website,
     videos: videosFromJson(listing.videos),
     address: listing.address,
+    city: listing.city,
     state: listing.state,
     country: listing.country,
     operatingHours: operatingHoursFromJson(listing.operatingHours),

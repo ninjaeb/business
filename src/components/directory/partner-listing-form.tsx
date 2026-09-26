@@ -50,6 +50,18 @@ const LANGUAGE_TABS: { code: EditorTab; label: string }[] = [
   { code: "ms", label: "BM" },
 ];
 
+type EditorSection = "details" | "updates";
+
+// A second, independent tab switch from the language one above — this one
+// picks which section of the editor is visible at all (Details vs. News &
+// Promotions), not which language's translatable fields are shown within
+// it. News & Promotions isn't translated (see its own section below), so
+// it has no reason to share the language tabs' state.
+const SECTION_TABS: { value: EditorSection; label: string }[] = [
+  { value: "details", label: "Listing Details" },
+  { value: "updates", label: "News & Promotions" },
+];
+
 const LISTING_FORM_ID = "partner-listing-form";
 
 // A soft, informational counter next to the SEO title/description fields —
@@ -167,6 +179,7 @@ export function PartnerListingForm({
   const [videos, setVideos] = useState<VideoEntry[]>(current.videos);
   const [industry, setIndustry] = useState(current.industry);
   const [address, setAddress] = useState(current.address);
+  const [city, setCity] = useState(current.city);
   const [addrState, setAddrState] = useState(current.state);
   const [country, setCountry] = useState(current.country);
   const [categoryIds, setCategoryIds] = useState<string[]>(current.categoryIds);
@@ -183,6 +196,7 @@ export function PartnerListingForm({
   const [seoDescription, setSeoDescription] = useState(current.seoDescription);
   const [translations, setTranslations] = useState<ListingTranslations>(current.translations);
   const [activeTab, setActiveTab] = useState<EditorTab>("en");
+  const [activeSection, setActiveSection] = useState<EditorSection>("details");
   const [rewritingDescription, startRewriteDescription] = useTransition();
   const [rewritingServices, startRewriteServices] = useTransition();
   const [generatingFaqs, startGenerateFaqs] = useTransition();
@@ -377,6 +391,7 @@ export function PartnerListingForm({
     if (details.faqs.length > 0) setFaqs(details.faqs);
     if (details.website) setWebsite(details.website);
     if (details.address) setAddress(details.address);
+    if (details.city) setCity(details.city);
     if (details.state) setAddrState(details.state);
     if (details.country) setCountry(details.country);
     if (details.operatingHours) {
@@ -496,6 +511,36 @@ export function PartnerListingForm({
         // touch alone without also editing a plain field nearby.
         onChange={() => setJustSaved(false)}
       >
+
+      <div className="flex flex-wrap items-center gap-2 rounded-md border border-slate-200 p-2 dark:border-neutral-800">
+        <div className="inline-flex rounded-md bg-slate-100 p-0.5 dark:bg-neutral-800">
+          {SECTION_TABS.map((tab) => (
+            <button
+              key={tab.value}
+              type="button"
+              onClick={() => setActiveSection(tab.value)}
+              aria-pressed={activeSection === tab.value}
+              className={cn(
+                "rounded px-3 py-1.5 text-sm font-medium transition-colors",
+                activeSection === tab.value
+                  ? "bg-white text-petrol-ink shadow-sm dark:bg-neutral-700 dark:text-petrol-light"
+                  : "text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200",
+              )}
+            >
+              {tab.label}
+              {tab.value === "updates" && updates.length > 0 && (
+                <span className="ml-1.5 text-xs text-slate-400 dark:text-slate-500">({updates.length})</span>
+              )}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Kept mounted (just hidden) rather than conditionally rendered, same
+          reasoning as the language tabs below — every field inside stays
+          part of the one <form> submit regardless of which tab a partner
+          last looked at. */}
+      <div className={cn("space-y-5", activeSection !== "details" && "hidden")}>
 
       <div>
         <Label htmlFor="logo">Logo</Label>
@@ -676,17 +721,28 @@ export function PartnerListingForm({
         </FieldGroup>
       </div>
 
-      <FieldGroup label="Address" htmlFor="address">
-        <Textarea
-          id="address"
-          name="address"
-          rows={2}
-          value={address}
-          onChange={(event) => setAddress(event.target.value)}
-          placeholder={"123 Jalan Bukit Bintang\n50200 Kuala Lumpur, Malaysia"}
-        />
-        <p className="mt-1 text-xs text-slate-400">Shown on your listing with a map. Leave blank to skip the map.</p>
-      </FieldGroup>
+      <div className="grid gap-4 sm:grid-cols-2">
+        <FieldGroup label="Address" htmlFor="address">
+          <Textarea
+            id="address"
+            name="address"
+            rows={2}
+            value={address}
+            onChange={(event) => setAddress(event.target.value)}
+            placeholder={"123 Jalan Bukit Bintang\n50200 Kuala Lumpur, Malaysia"}
+          />
+          <p className="mt-1 text-xs text-slate-400">Shown on your listing with a map. Leave blank to skip the map.</p>
+        </FieldGroup>
+        <FieldGroup label="City" htmlFor="city">
+          <Input
+            id="city"
+            name="city"
+            value={city}
+            onChange={(event) => setCity(event.target.value)}
+            placeholder="Kuala Lumpur"
+          />
+        </FieldGroup>
+      </div>
 
       <div className="grid gap-4 sm:grid-cols-2">
         <FieldGroup label="State / province" htmlFor="state">
@@ -891,18 +947,18 @@ export function PartnerListingForm({
         </div>
       </div>
 
-      <div>
-        <Label className="mb-1.5">News &amp; Promotions</Label>
-        <div hidden={activeTab !== "en"}>
-          <UpdatesEditor name="updates" value={updates} onChange={setUpdates} listingId={listingId} aiAvailable={aiAvailable} />
-        </div>
-        {activeTab !== "en" && (
-          <p className="text-sm text-slate-400">News &amp; Promotions aren&apos;t translated — switch to EN to edit.</p>
-        )}
-        <p className="mt-1 text-xs text-slate-400">
+      </div>
+
+      {/* News & Promotions isn't translated (never was — see the removed
+          "switch to EN to edit" message this replaced), so it has no use
+          for the language tabs above and lives entirely outside that
+          "details" wrapper, in its own top-level section instead. */}
+      <div className={cn("space-y-3", activeSection !== "updates" && "hidden")}>
+        <p className="text-sm text-slate-500 dark:text-slate-400">
           Optional — shown on your listing in a News &amp; Promotions section. A promotion disappears on its own
           once its end date passes.
         </p>
+        <UpdatesEditor name="updates" value={updates} onChange={setUpdates} listingId={listingId} aiAvailable={aiAvailable} />
       </div>
 
       {generalError && <p className="text-sm text-rose-600 dark:text-rose-400">{generalError}</p>}
