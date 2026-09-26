@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { db } from "@/lib/db";
 import { getSiteOrigin } from "@/lib/site-url";
 import {
   DIRECTORY_STRINGS,
@@ -32,7 +31,6 @@ import {
   locationPageHeading,
   locationPageDescription,
 } from "@/lib/directory-location-labels";
-import { translateCategoryName } from "@/lib/directory-category-labels";
 import { slugify } from "@/lib/slug";
 import { DirectorySearch } from "@/components/directory/directory-search";
 import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
@@ -91,11 +89,7 @@ export async function LocationPageContent({
   locale: DirectoryLocale;
   q: string;
 }) {
-  const [siteOrigin, rows, businessCategories] = await Promise.all([
-    getSiteOrigin(),
-    loadPublishedListings(),
-    db.businessCategory.findMany({ orderBy: { name: "asc" }, select: { name: true } }),
-  ]);
+  const [siteOrigin, rows] = await Promise.all([getSiteOrigin(), loadPublishedListings()]);
   const location = findLocationBySlug(rows, locationSlug);
   if (!location) notFound();
   const { city, state } = location;
@@ -147,7 +141,6 @@ export async function LocationPageContent({
       <DirectorySearch
         listings={listings}
         industryLabels={INDUSTRY_LABELS_BY_LOCALE[locale]}
-        categories={businessCategories.map((row) => ({ value: row.name, label: translateCategoryName(row.name, locale) }))}
         t={t}
         locale={locale}
         initialQuery={q}
