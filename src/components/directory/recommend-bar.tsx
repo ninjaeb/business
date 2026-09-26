@@ -8,10 +8,9 @@ import { ShareButton } from "@/components/directory/share-button";
 // pass it on. Rendered only when there's a partner to credit (see the
 // listing page), so anonymous visitors never see it.
 //
-// On phones the page already has its own fixed bottom jump bar (Services /
-// Get in touch — see the listing page), so the pill floats just above that
-// rather than covering it; from sm up that jump bar is gone and the pill
-// gets a proper strip of its own along the bottom edge.
+// The page's own fixed bottom jump bar (Services / Get in touch — see the
+// listing page) is shown at every width now, so this pill always floats
+// just above it rather than covering it.
 export function RecommendBar({
   title,
   url,
@@ -24,7 +23,7 @@ export function RecommendBar({
   label: string;
 }) {
   return (
-    <div className="pointer-events-none fixed inset-x-0 bottom-20 z-30 flex justify-center px-4 sm:bottom-0 sm:border-t sm:border-slate-200 sm:bg-white/95 sm:py-3 sm:backdrop-blur dark:sm:border-neutral-800 dark:sm:bg-neutral-900/95">
+    <div className="pointer-events-none fixed inset-x-0 bottom-20 z-30 flex justify-center px-4">
       <div className="pointer-events-auto">
         <ShareButton
           title={title}

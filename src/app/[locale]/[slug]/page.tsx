@@ -385,11 +385,9 @@ export default async function DirectoryListingPage({
     // Top padding matches the category/location pages' own breadcrumb
     // spacing (see category-page-content.tsx/location-page-content.tsx) so
     // it doesn't sit flush against the sticky header. Bottom padding clears
-    // whatever is pinned over the page's foot: the mobile jump bar below
-    // (always, on small screens), plus the RecommendBar's own pill, which
-    // floats above that jump bar on mobile and becomes its own strip from
-    // sm up.
-    <div className="w-full px-4 pt-4 pb-40 sm:px-8 sm:pb-28">
+    // whatever is pinned over the page's foot at every width: the jump bar
+    // below, plus the RecommendBar pill floating just above it.
+    <div className="w-full px-4 pt-4 pb-40 sm:px-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -892,23 +890,35 @@ export default async function DirectoryListingPage({
 
       <RecommendBar title={listing.companyName} url={recommendUrl} message={recommendMessage} label={t.recommendBusinessCta} />
 
-      {/* Mobile only — on lg+ the Get in touch card is already visible in
-          the sticky right-hand column, so this would just duplicate it. */}
+      {/* Shown at every width, not just mobile: on lg+ the Get in touch card
+          is a sticky right-hand column (see its own lg:sticky lg:top-32
+          below), but it's only sticky within that column's own height — once
+          a visitor scrolls far enough that the column runs out (past the
+          FAQ, near the related listings/footer), the card scrolls away with
+          the rest of the page. This bar stays truly fixed the whole way
+          down, so "get in touch" is always one tap away regardless of scroll
+          position or screen width. */}
       <nav
         aria-label={t.stickyNavLabel}
-        className="fixed inset-x-0 bottom-0 z-20 flex gap-2 border-t border-slate-200 bg-white px-4 py-3 sm:hidden dark:border-neutral-800 dark:bg-neutral-900"
+        className="fixed inset-x-0 bottom-0 z-20 border-t border-slate-200 bg-white px-4 py-3 dark:border-neutral-800 dark:bg-neutral-900"
       >
-        {displayServices.length > 0 && (
-          <a href="#services" className={buttonClasses("secondary", "md", "flex-1 justify-center")}>
-            {t.servicesHeading}
+        {/* Constrained and centered rather than edge-to-edge — full-width
+            flex-1 buttons read fine as a phone-width bar, but would stretch
+            into two oversized buttons on a wide desktop screen now that this
+            bar shows at every width. */}
+        <div className="mx-auto flex max-w-sm gap-2">
+          {displayServices.length > 0 && (
+            <a href="#services" className={buttonClasses("secondary", "md", "flex-1 justify-center")}>
+              {t.servicesHeading}
+            </a>
+          )}
+          <a
+            href="#contact"
+            className={buttonClasses("primary", "md", "flex-1 justify-center bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led")}
+          >
+            {t.contactHeading}
           </a>
-        )}
-        <a
-          href="#contact"
-          className={buttonClasses("primary", "md", "flex-1 justify-center bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led")}
-        >
-          {t.contactHeading}
-        </a>
+        </div>
       </nav>
     </div>
   );

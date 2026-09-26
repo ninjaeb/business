@@ -126,7 +126,7 @@ export function DirectoryLeadForm({ slug, locale }: { slug: string; locale: Dire
         <Textarea
           id="directory-message"
           name="message"
-          rows={4}
+          rows={6}
           required
           placeholder={t.formMessagePlaceholder}
           value={message}
