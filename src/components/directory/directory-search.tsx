@@ -7,7 +7,7 @@ import { ShareButton } from "@/components/directory/share-button";
 import { EmptyState } from "@/components/ui/empty-state";
 import { Input } from "@/components/ui/field";
 import type { DirectoryGridListing } from "@/lib/directory";
-import { normalizeSearchText } from "@/lib/directory-search";
+import { matchesSearchTerms, searchTerms } from "@/lib/directory-search";
 import type { Industry } from "@/generated/prisma/client";
 import type { DirectoryLocale, DirectoryStrings } from "@/lib/directory-i18n";
 
@@ -96,17 +96,17 @@ export function DirectorySearch({
   const category = initialCategory;
 
   const filtered = useMemo(() => {
-    // Same normalization as the header dropdown (see normalizeSearchText),
-    // and the same haystack (see listingSearchText), so its "see all
-    // results" hand-off to this page finds exactly what it found.
-    const q = normalizeSearchText(query);
+    // Same term matching as the header dropdown (see searchTerms), and the
+    // same haystack (see listingSearchText), so its "see all results"
+    // hand-off to this page finds exactly what it found.
+    const terms = searchTerms(query);
     return listings.filter((listing) => {
       if (industry && listing.industry !== industry) return false;
       if (category && !listing.categories.includes(category)) return false;
       if (city !== null && (listing.city ?? "") !== city) return false;
       if (state && listing.state !== state) return false;
       if (country && listing.country !== country) return false;
-      return !q || listing.searchText.includes(q);
+      return matchesSearchTerms(listing.searchText, terms);
     });
   }, [listings, query, industry, category, city, state, country]);
 
