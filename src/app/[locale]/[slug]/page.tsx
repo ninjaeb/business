@@ -369,11 +369,14 @@ export default async function DirectoryListingPage({
     : [];
 
   return (
-    // Bottom padding clears whatever is pinned over the page's foot: the
-    // mobile jump bar below (always, on small screens), plus the
-    // RecommendBar's own pill, which floats above that jump bar on mobile
-    // and becomes its own strip from sm up.
-    <div className="w-full px-4 pb-40 pt-4 sm:px-8 sm:pb-28">
+    // Top padding matches the category/location pages' own breadcrumb
+    // spacing (see category-page-content.tsx/location-page-content.tsx) so
+    // it doesn't sit flush against the sticky header. Bottom padding clears
+    // whatever is pinned over the page's foot: the mobile jump bar below
+    // (always, on small screens), plus the RecommendBar's own pill, which
+    // floats above that jump bar on mobile and becomes its own strip from
+    // sm up.
+    <div className="w-full px-4 pt-4 pb-40 sm:px-8 sm:pb-28">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -610,22 +613,64 @@ export default async function DirectoryListingPage({
               </Card>
             )}
 
-            {videoGallery.length > 0 && (
+            {(videoGallery.length > 0 || listing.photos.length > 0) && (
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-base">{t.videoHeading}</CardTitle>
+                  <CardTitle className="text-base">{t.mediaHeading}</CardTitle>
                 </CardHeader>
-                <CardBody>
-                  <VideoGallery
-                    companyName={listing.companyName}
-                    videos={videoGallery.map((video) => ({
-                      url: video.url,
-                      title: video.title,
-                      categoryLabel: VIDEO_CATEGORY_LABELS_BY_LOCALE[resolved][video.category],
-                      thumbnailUrl: video.thumbnailUrl,
-                      embedUrl: video.embed?.embedUrl ?? null,
-                    }))}
-                  />
+                <CardBody className="space-y-6">
+                  {videoGallery.length > 0 && (
+                    <div>
+                      {listing.photos.length > 0 && (
+                        <h3 className="mb-2 text-sm font-semibold text-slate-500 dark:text-slate-400">{t.videoHeading}</h3>
+                      )}
+                      <VideoGallery
+                        companyName={listing.companyName}
+                        videos={videoGallery.map((video) => ({
+                          url: video.url,
+                          title: video.title,
+                          categoryLabel: VIDEO_CATEGORY_LABELS_BY_LOCALE[resolved][video.category],
+                          thumbnailUrl: video.thumbnailUrl,
+                          embedUrl: video.embed?.embedUrl ?? null,
+                        }))}
+                      />
+                    </div>
+                  )}
+                  {listing.photos.length > 0 && (
+                    <div>
+                      {videoGallery.length > 0 && (
+                        <h3 className="mb-2 text-sm font-semibold text-slate-500 dark:text-slate-400">{t.photosHeading}</h3>
+                      )}
+                      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+                        {listing.photos.map((photo) => (
+                          <figure key={photo.id} className="space-y-1">
+                            {/* eslint-disable-next-line @next/next/no-img-element -- served straight out of the DB by /api/directory-images, same reasoning as ListingLogo */}
+                            <img
+                              src={directoryImagePath(photo.id)}
+                              // Caption plus company name, not caption alone — a
+                              // photo with no caption still gets a distinct,
+                              // non-generic alt instead of repeating the bare
+                              // company name across every uncaptioned photo on
+                              // the page, and a photo with one gets the
+                              // business tied to it explicitly (useful to an AI
+                              // crawler that only sees this image out of
+                              // context, e.g. via Google Images).
+                              alt={photo.caption ? `${photo.caption} – ${listing.companyName}` : listing.companyName}
+                              loading="lazy"
+                              className="aspect-square w-full rounded-md object-cover ring-1 ring-slate-200 dark:ring-neutral-800"
+                            />
+                            {/* Same text as the alt above, but visible — search
+                                engines and AI crawlers both weigh on-page text
+                                more heavily than an attribute, and a sighted
+                                visitor gets the context an alt never shows them. */}
+                            {photo.caption && (
+                              <figcaption className="text-sm text-slate-600 dark:text-slate-300">{photo.caption}</figcaption>
+                            )}
+                          </figure>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </CardBody>
               </Card>
             )}
@@ -708,44 +753,6 @@ export default async function DirectoryListingPage({
                   </Card>
                 )}
               </div>
-            )}
-
-            {listing.photos.length > 0 && (
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-base">{t.photosHeading}</CardTitle>
-                </CardHeader>
-                <CardBody>
-                  <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-                    {listing.photos.map((photo) => (
-                      <figure key={photo.id} className="space-y-1">
-                        {/* eslint-disable-next-line @next/next/no-img-element -- served straight out of the DB by /api/directory-images, same reasoning as ListingLogo */}
-                        <img
-                          src={directoryImagePath(photo.id)}
-                          // Caption plus company name, not caption alone — a
-                          // photo with no caption still gets a distinct,
-                          // non-generic alt instead of repeating the bare
-                          // company name across every uncaptioned photo on
-                          // the page, and a photo with one gets the
-                          // business tied to it explicitly (useful to an AI
-                          // crawler that only sees this image out of
-                          // context, e.g. via Google Images).
-                          alt={photo.caption ? `${photo.caption} – ${listing.companyName}` : listing.companyName}
-                          loading="lazy"
-                          className="aspect-square w-full rounded-md object-cover ring-1 ring-slate-200 dark:ring-neutral-800"
-                        />
-                        {/* Same text as the alt above, but visible — search
-                            engines and AI crawlers both weigh on-page text
-                            more heavily than an attribute, and a sighted
-                            visitor gets the context an alt never shows them. */}
-                        {photo.caption && (
-                          <figcaption className="text-sm text-slate-600 dark:text-slate-300">{photo.caption}</figcaption>
-                        )}
-                      </figure>
-                    ))}
-                  </div>
-                </CardBody>
-              </Card>
             )}
 
             {currentUpdates.length > 0 && (
