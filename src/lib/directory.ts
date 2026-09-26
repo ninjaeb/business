@@ -895,13 +895,39 @@ export async function getOwnedListing(listingId: string, partnerId: string): Pro
   return db.partnerListing.findFirst({ where: { id: listingId, partnerId } });
 }
 
+const VIEW_COUNT_FIELD_BY_LOCALE = {
+  en: "viewCountEn",
+  zh: "viewCountZh",
+  ms: "viewCountMs",
+} as const satisfies Record<DirectoryLocale, string>;
+
 // Bumped once per real page load of the public listing page (see
 // DirectoryListingPage in src/app/[locale]/business/[slug]/page.tsx),
 // which is server-rendered on every request — never on a cached/static
 // hit. Swallows its own errors: a missed view count is never worth
-// failing, or slowing, that page's render for.
-export async function incrementListingViewCount(id: string): Promise<void> {
-  await db.partnerListing.update({ where: { id }, data: { viewCount: { increment: 1 } } }).catch(() => {});
+// failing, or slowing, that page's render for. Also bumps the matching
+// per-locale column (see PartnerListing.viewCountEn/Zh/Ms) in the same
+// write, atomically — viewCount stays their running sum rather than
+// something computed on every read.
+export async function incrementListingViewCount(id: string, locale: DirectoryLocale): Promise<void> {
+  const localeField = VIEW_COUNT_FIELD_BY_LOCALE[locale];
+  await db.partnerListing
+    .update({ where: { id }, data: { viewCount: { increment: 1 }, [localeField]: { increment: 1 } } })
+    .catch(() => {});
+}
+
+// Reads whichever of viewCountEn/Zh/Ms matches — for the business-portal
+// listing cards' per-language breakdown, so that UI never has to know the
+// column names itself. Views from before this breakdown existed are only
+// ever reflected in the older, single viewCount total (see its own
+// comment) — there's no way to attribute them to a language after the
+// fact, so an older listing's three per-locale counts simply undercount
+// its all-time total until enough new views come in.
+export function listingViewCountByLocale(
+  listing: { viewCountEn: number; viewCountZh: number; viewCountMs: number },
+  locale: DirectoryLocale,
+): number {
+  return listing[VIEW_COUNT_FIELD_BY_LOCALE[locale]];
 }
 
 // Explicit creation — unlike the old single-listing ensurePartnerListing

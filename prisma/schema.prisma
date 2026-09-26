@@ -200,10 +200,10 @@ model Settings {
 // as Settings above. username/encryptedPassword are both nullable since
 // some SMTP relays allow unauthenticated submission.
 model EmailSettings {
-  id       String  @id @default("singleton")
-  host     String
-  port     Int     @default(587)
-  username String?
+  id                String  @id @default("singleton")
+  host              String
+  port              Int     @default(587)
+  username          String?
   // AES-256-GCM ("iv:authTag:ciphertext", base64) via src/lib/secret-crypto.ts.
   encryptedPassword String? @db.Text
   fromName          String
@@ -218,15 +218,15 @@ model EmailSettings {
 // or webhook verify token here: this app only ever sends a proactive
 // template message, it never receives inbound messages.
 model WhatsAppSettings {
-  id            String @id @default("singleton")
-  phoneNumberId String
+  id                   String  @id @default("singleton")
+  phoneNumberId        String
   // AES-256-GCM ("iv:authTag:ciphertext", base64) via src/lib/secret-crypto.ts.
-  encryptedAccessToken String @db.Text
+  encryptedAccessToken String  @db.Text
   // Fetched and cached from Meta at the moment a connection test last
   // succeeded (see updateWhatsAppSettings) — shown in the admin form so a
   // saved connection reads as "this real phone number", not just a
   // hard-to-verify ID.
-  displayPhoneNumber String?
+  displayPhoneNumber   String?
 
   updatedAt DateTime @updatedAt
 }
@@ -249,25 +249,25 @@ model PartnerListing {
   slug   String               @unique
   status PartnerListingStatus @default(DRAFT)
 
-  companyName String
-  tagline     String?
-  description String? @db.Text
-  services    Json // ServiceEntry[] (src/lib/directory.ts) — {title, description, price}
-  industry    Industry?
-  website     String?
-  videos      Json? // VideoEntry[] (src/lib/directory.ts) — {url, title, category, thumbnailUrl}
-  address     String? @db.Text
-  state       String?
-  country     String?
+  companyName    String
+  tagline        String?
+  description    String?   @db.Text
+  services       Json // ServiceEntry[] (src/lib/directory.ts) — {title, description, price}
+  industry       Industry?
+  website        String?
+  videos         Json? // VideoEntry[] (src/lib/directory.ts) — {url, title, category, thumbnailUrl}
+  address        String?   @db.Text
+  state          String?
+  country        String?
   operatingHours Json? // OperatingHours (src/lib/directory.ts)
-  faqs        Json? // FaqEntry[] (src/lib/directory.ts) — {question, answer}
-  updates     Json? // ListingUpdateEntry[] (src/lib/directory.ts) — {kind, title, body, endDate}
-  translations Json? // ListingTranslations (src/lib/directory.ts) — {zh?, ms?}
-  logoUrl     String?   @db.Text // data: URL
+  faqs           Json? // FaqEntry[] (src/lib/directory.ts) — {question, answer}
+  updates        Json? // ListingUpdateEntry[] (src/lib/directory.ts) — {kind, title, body, endDate}
+  translations   Json? // ListingTranslations (src/lib/directory.ts) — {zh?, ms?}
+  logoUrl        String?   @db.Text // data: URL
   // Ordered DirectoryListingImage ids selected as gallery photos (see
   // uploadListingGalleryPhoto in src/app/actions/directory-images.ts) —
   // display order is this array's own order.
-  photoIds       String[] @default([])
+  photoIds       String[]  @default([])
   seoTitle       String?
   seoDescription String?
 
@@ -280,8 +280,16 @@ model PartnerListing {
   // Bumped once per real page load of the public listing page (see
   // incrementListingViewCount) — never reset on unpublish/republish, so it
   // reads as the listing's all-time total rather than "since it last went
-  // live".
-  viewCount Int @default(0)
+  // live". viewCountEn/Zh/Ms is the same count broken down by which
+  // language page was actually loaded (DirectoryLocale in
+  // src/lib/directory-i18n.ts) — viewCount itself is their sum, kept as its
+  // own column rather than computed on read since it's already what every
+  // existing view (the public page's own counter, the business-portal
+  // listing cards) shows today.
+  viewCount   Int @default(0)
+  viewCountEn Int @default(0)
+  viewCountZh Int @default(0)
+  viewCountMs Int @default(0)
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -359,8 +367,8 @@ model DirectoryLead {
   email   String
   phone   String?
   company String?
-  message String @db.Text
-  locale  String @default("en")
+  message String  @db.Text
+  locale  String  @default("en")
 
   value Decimal? @db.Decimal(12, 2)
   notes String?  @db.Text
