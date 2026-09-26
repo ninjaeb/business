@@ -4,10 +4,11 @@ import { mkdir, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { db } from "@/lib/db";
 import { slugify } from "@/lib/slug";
-import { countListingsByCategory, countListingsByState, loadPublishedListings } from "@/lib/directory";
+import { countListingsByCategory, countListingsByIndustry, countListingsByState, loadPublishedListings } from "@/lib/directory";
 import {
   DIRECTORY_LOCALES,
   DIRECTORY_HOME_TITLE_BY_LOCALE,
+  INDUSTRY_LABELS_BY_LOCALE,
   directoryCategoriesIndexPath,
   directoryHomePath,
   directoryListingPath,
@@ -17,6 +18,7 @@ import {
 } from "@/lib/directory-i18n";
 import { translateCategoryName, categoryPath } from "@/lib/directory-category-labels";
 import { locationPath } from "@/lib/directory-location-labels";
+import { industryPath } from "@/lib/directory-industry-labels";
 import { STATIC_SEO_ORIGIN } from "@/lib/static-seo-origin";
 
 // This used to be src/app/llms.txt/route.ts, a Next.js route rendering
@@ -95,6 +97,20 @@ export async function buildLlmsTxt(): Promise<string> {
     for (const [state, count] of countByState) {
       const slug = slugify(state);
       lines.push(`- [${inline(state)}](${STATIC_SEO_ORIGIN}${locationPath(slug, "en")}): ${count} ${count === 1 ? "business" : "businesses"}`);
+    }
+    lines.push("");
+  }
+
+  // Every industry at least one published listing carries — same shape as
+  // Locations above (countListingsByIndustry only ever holds a populated
+  // key), unlike Categories, which has to filter an "empty" case out.
+  const countByIndustry = countListingsByIndustry(listings);
+  if (countByIndustry.size > 0) {
+    lines.push("## Industries");
+    for (const [industry, count] of countByIndustry) {
+      lines.push(
+        `- [${INDUSTRY_LABELS_BY_LOCALE.en[industry]}](${STATIC_SEO_ORIGIN}${industryPath(industry, "en")}): ${count} ${count === 1 ? "business" : "businesses"}`,
+      );
     }
     lines.push("");
   }

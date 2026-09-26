@@ -597,6 +597,19 @@ export function countListingsByState(rows: { listing: Pick<PublishedListingSnaps
   return counts;
 }
 
+// How many published listings carry each industry — the industry-page
+// counterpart of countListingsByCategory/countListingsByState above.
+// Industry has a fixed, known set of possible values (see INDUSTRIES in
+// src/lib/labels.ts), so — like category, unlike state — a value can have
+// zero listings; see buildIndustryMetadata's noindex-when-empty handling.
+export function countListingsByIndustry(rows: { listing: Pick<PublishedListingSnapshot, "industry"> }[]): Map<Industry, number> {
+  const counts = new Map<Industry, number>();
+  for (const { listing } of rows) {
+    if (listing.industry) counts.set(listing.industry, (counts.get(listing.industry) ?? 0) + 1);
+  }
+  return counts;
+}
+
 // Resolves a location page's URL slug back to the exact state string its
 // listings carry (same slugify-at-request-time approach as
 // findCategoryBySlug, since state isn't a separate table with its own slug
