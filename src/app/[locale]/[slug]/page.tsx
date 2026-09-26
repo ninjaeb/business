@@ -445,10 +445,10 @@ export default async function DirectoryListingPage({
     displayDescription && { href: "#about", label: t.aboutHeading },
     displayServices.length > 0 && { href: "#services", label: t.servicesHeading },
     listing.operatingHours && { href: "#hours", label: t.hoursHeading },
+    hasMedia && { href: "#media", label: t.mediaHeading },
     currentUpdates.length > 0 && { href: "#news", label: t.updatesHeading },
     mapAddress && { href: "#visit", label: t.visitHeading },
     displayFaqs.length > 0 && { href: "#faq", label: t.faqHeading },
-    hasMedia && { href: "#media", label: t.mediaHeading },
     { href: "#contact", label: t.contactHeading },
   ].filter((section): section is { href: string; label: string } => Boolean(section));
 
@@ -801,6 +801,58 @@ export default async function DirectoryListingPage({
               </div>
             )}
 
+            {hasMedia && (
+              <Card id="media" className="scroll-mt-32">
+                <CardHeader>
+                  <CardTitle className="text-base">{t.mediaHeading}</CardTitle>
+                </CardHeader>
+                <CardBody className="space-y-6">
+                  {videoGallery.length > 0 && (
+                    <div>
+                      {listing.photos.length > 0 && (
+                        <h3 className="mb-2 text-sm font-semibold text-slate-500 dark:text-slate-400">{t.videoHeading}</h3>
+                      )}
+                      <VideoGallery
+                        companyName={listing.companyName}
+                        videos={videoGallery.map((video) => ({
+                          url: video.url,
+                          title: video.title,
+                          category: video.category,
+                          categoryLabel: VIDEO_CATEGORY_LABELS_BY_LOCALE[resolved][video.category],
+                          thumbnailUrl: video.thumbnailUrl,
+                          embedUrl: video.embed?.embedUrl ?? null,
+                        }))}
+                      />
+                    </div>
+                  )}
+                  {listing.photos.length > 0 && (
+                    <div>
+                      {videoGallery.length > 0 && (
+                        <h3 className="mb-2 text-sm font-semibold text-slate-500 dark:text-slate-400">{t.photosHeading}</h3>
+                      )}
+                      <PhotoLightbox
+                        companyName={listing.companyName}
+                        photos={listing.photos.map((photo) => ({
+                          id: photo.id,
+                          src: directoryImagePath(photo.id),
+                          caption: photo.caption,
+                          // Caption plus company name, not caption alone — a
+                          // photo with no caption still gets a distinct,
+                          // non-generic alt instead of repeating the bare
+                          // company name across every uncaptioned photo on
+                          // the page, and a photo with one gets the
+                          // business tied to it explicitly (useful to an AI
+                          // crawler that only sees this image out of
+                          // context, e.g. via Google Images).
+                          alt: photo.caption ? `${photo.caption} – ${listing.companyName}` : listing.companyName,
+                        }))}
+                      />
+                    </div>
+                  )}
+                </CardBody>
+              </Card>
+            )}
+
             {currentUpdates.length > 0 && (
               <Card id="news" className="scroll-mt-32">
                 <CardHeader>
@@ -877,58 +929,6 @@ export default async function DirectoryListingPage({
                       <p className="mt-2 text-base text-slate-600 dark:text-slate-300">{faq.answer}</p>
                     </details>
                   ))}
-                </CardBody>
-              </Card>
-            )}
-
-            {hasMedia && (
-              <Card id="media" className="scroll-mt-32">
-                <CardHeader>
-                  <CardTitle className="text-base">{t.mediaHeading}</CardTitle>
-                </CardHeader>
-                <CardBody className="space-y-6">
-                  {videoGallery.length > 0 && (
-                    <div>
-                      {listing.photos.length > 0 && (
-                        <h3 className="mb-2 text-sm font-semibold text-slate-500 dark:text-slate-400">{t.videoHeading}</h3>
-                      )}
-                      <VideoGallery
-                        companyName={listing.companyName}
-                        videos={videoGallery.map((video) => ({
-                          url: video.url,
-                          title: video.title,
-                          category: video.category,
-                          categoryLabel: VIDEO_CATEGORY_LABELS_BY_LOCALE[resolved][video.category],
-                          thumbnailUrl: video.thumbnailUrl,
-                          embedUrl: video.embed?.embedUrl ?? null,
-                        }))}
-                      />
-                    </div>
-                  )}
-                  {listing.photos.length > 0 && (
-                    <div>
-                      {videoGallery.length > 0 && (
-                        <h3 className="mb-2 text-sm font-semibold text-slate-500 dark:text-slate-400">{t.photosHeading}</h3>
-                      )}
-                      <PhotoLightbox
-                        companyName={listing.companyName}
-                        photos={listing.photos.map((photo) => ({
-                          id: photo.id,
-                          src: directoryImagePath(photo.id),
-                          caption: photo.caption,
-                          // Caption plus company name, not caption alone — a
-                          // photo with no caption still gets a distinct,
-                          // non-generic alt instead of repeating the bare
-                          // company name across every uncaptioned photo on
-                          // the page, and a photo with one gets the
-                          // business tied to it explicitly (useful to an AI
-                          // crawler that only sees this image out of
-                          // context, e.g. via Google Images).
-                          alt: photo.caption ? `${photo.caption} – ${listing.companyName}` : listing.companyName,
-                        }))}
-                      />
-                    </div>
-                  )}
                 </CardBody>
               </Card>
             )}
