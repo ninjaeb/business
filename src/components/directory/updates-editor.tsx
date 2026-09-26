@@ -1,35 +1,53 @@
 "use client";
 
 import { Plus, Trash2 } from "lucide-react";
-import { Input, Textarea } from "@/components/ui/field";
+import { Input } from "@/components/ui/field";
 import { buttonClasses } from "@/components/ui/button";
+import { MarkdownLiteEditor } from "@/components/directory/markdown-lite-editor";
 import { cn } from "@/lib/utils";
 import type { ListingUpdateEntry, ListingUpdateKind } from "@/lib/directory";
 
-const EMPTY_UPDATE: ListingUpdateEntry = { kind: "NEWS", title: "", body: "", endDate: null };
+const EMPTY_UPDATE: ListingUpdateEntry = { kind: "NEWS", title: "", body: "", postedAt: null, endDate: null };
 const MAX_UPDATES = 20;
 const KIND_OPTIONS: { value: ListingUpdateKind; label: string }[] = [
   { value: "NEWS", label: "News" },
   { value: "PROMOTION", label: "Promotion" },
 ];
 
+const POST_DATE_FORMAT = new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric" });
+
+function formatPostedAt(postedAt: string): string {
+  return POST_DATE_FORMAT.format(new Date(`${postedAt}T00:00:00`));
+}
+
 // A repeatable list of News & Promotions posts — same controlled,
 // serialize-to-hidden-JSON pattern as FaqEditor/ServicesEditor. Unlike
-// those, an entry also carries a kind (News/Promotion) and an optional
-// expiry date, shown only for a Promotion — a News post has no natural end.
+// those, an entry also carries a kind (News/Promotion), a post date, and an
+// optional expiry date, shown only for a Promotion — a News post has no
+// natural end. `listingId` is only for its body's own MarkdownLiteEditor —
+// the same image-upload store the About field already uses (see
+// DirectoryListingImage), not anything specific to updates.
 export function UpdatesEditor({
   name,
   value,
   onChange,
+  listingId,
 }: {
   name: string;
   value: ListingUpdateEntry[];
   onChange: (updates: ListingUpdateEntry[]) => void;
+  listingId: string;
 }) {
   const updates = value.length > 0 ? value : [EMPTY_UPDATE];
 
+  // postedAt is stamped here, once, the moment an entry is first actually
+  // touched — never on the untouched phantom row a fresh/empty list falls
+  // back to above, and never bumped again by a later edit, same as a blog
+  // post's own original dateline. `?? todayIso()` only ever fires on that
+  // first edit, since every subsequent patch already has a postedAt to keep.
   function updateEntry(index: number, patch: Partial<ListingUpdateEntry>) {
-    onChange(updates.map((entry, i) => (i === index ? { ...entry, ...patch } : entry)));
+    const todayIso = () => new Date().toISOString().slice(0, 10);
+    onChange(updates.map((entry, i) => (i === index ? { ...entry, ...patch, postedAt: entry.postedAt ?? todayIso() } : entry)));
   }
 
   function addEntry() {
@@ -77,6 +95,10 @@ export function UpdatesEditor({
                     />
                   </label>
                 )}
+                {/* Read-only — postedAt is stamped automatically (see
+                    updateEntry above), never something a partner sets by
+                    hand, same as a blog post's dateline isn't backdatable. */}
+                {entry.postedAt && <span className="text-xs text-slate-400">Posted {formatPostedAt(entry.postedAt)}</span>}
               </div>
               <Input
                 value={entry.title}
@@ -84,12 +106,14 @@ export function UpdatesEditor({
                 placeholder={entry.kind === "PROMOTION" ? "e.g. 20% off this weekend" : "e.g. Now open on Sundays"}
                 maxLength={100}
               />
-              <Textarea
+              <MarkdownLiteEditor
+                id={`${name}-body-${index}`}
+                name={`${name}-body-${index}`}
                 value={entry.body}
-                onChange={(event) => updateEntry(index, { body: event.target.value })}
-                rows={2}
-                placeholder="Details"
-                maxLength={1000}
+                onChange={(body) => updateEntry(index, { body })}
+                listingId={listingId}
+                rows={3}
+                placeholder="Details — select text and use the toolbar for bold, lists, links, and images."
               />
             </div>
             <button

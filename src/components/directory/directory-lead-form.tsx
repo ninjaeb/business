@@ -83,31 +83,33 @@ export function DirectoryLeadForm({ slug, locale }: { slug: string; locale: Dire
           className="text-base"
         />
       </FieldGroup>
-      <FieldGroup label={t.formEmailLabel} htmlFor="directory-email" required>
-        <Input
-          id="directory-email"
-          name="email"
-          type="email"
-          required
-          placeholder={t.formEmailPlaceholder}
-          value={email}
-          onChange={(event) => setEmail(event.target.value)}
-          className="text-base"
-        />
-      </FieldGroup>
-      <FieldGroup label={t.formPhoneLabel} htmlFor="directory-phone" required>
-        <Input
-          id="directory-phone"
-          name="phone"
-          type="tel"
-          required
-          placeholder={t.formPhonePlaceholder}
-          value={phone}
-          onChange={(event) => setPhone(event.target.value)}
-          className="text-base"
-        />
-        <p className="mt-1 text-xs text-slate-400">{t.formPhoneHint}</p>
-      </FieldGroup>
+      <div className="grid gap-4 sm:grid-cols-2">
+        <FieldGroup label={t.formEmailLabel} htmlFor="directory-email" required>
+          <Input
+            id="directory-email"
+            name="email"
+            type="email"
+            required
+            placeholder={t.formEmailPlaceholder}
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
+            className="text-base"
+          />
+        </FieldGroup>
+        <FieldGroup label={t.formPhoneLabel} htmlFor="directory-phone" required>
+          <Input
+            id="directory-phone"
+            name="phone"
+            type="tel"
+            required
+            placeholder={t.formPhonePlaceholder}
+            value={phone}
+            onChange={(event) => setPhone(event.target.value)}
+            className="text-base"
+          />
+          <p className="mt-1 text-xs text-slate-400">{t.formPhoneHint}</p>
+        </FieldGroup>
+      </div>
       <FieldGroup label={t.formCompanyLabel} htmlFor="directory-company">
         <Input
           id="directory-company"
