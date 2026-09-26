@@ -263,8 +263,12 @@ hosting.
 ### Auto-deploy from GitHub
 
 A push to one branch does everything the manual redeploy steps above do —
-pull, install (only if `package-lock.json` changed), migrate, restart —
-without touching cPanel. This only works when the Application root *is*
+pull, install (only if `package-lock.json` changed), migrate, seed, restart
+— without touching cPanel. Re-running `prisma/seed.ts` on every deploy (not
+just the one-off setup command above) is what keeps the business-category
+list in sync automatically as soon as a future change adds more to it — the
+seed is a plain upsert by fixed id, so re-running it is always safe. This
+only works when the Application root *is*
 the Git checkout directory itself — the deploy script runs `git reset
 --hard` directly on the Application root.
 
