@@ -29,28 +29,41 @@ const MAX_GALLERY_PHOTOS = 12;
 // publishedSnapshot.
 export function ListingPhotosEditor({ listingId, initialPhotos }: { listingId: string; initialPhotos: PhotoEntry[] }) {
   const [photos, setPhotos] = useState<PhotoEntry[]>(initialPhotos);
-  const [uploading, setUploading] = useState(false);
+  // { done, total } while a batch is uploading — null the rest of the time.
+  // Shown as "Uploading 2/5…" so picking several files at once still reads
+  // as one action with visible progress, not a frozen button.
+  const [uploadProgress, setUploadProgress] = useState<{ done: number; total: number } | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [, startTransition] = useTransition();
 
-  async function handleFileSelected(event: React.ChangeEvent<HTMLInputElement>) {
-    const file = event.target.files?.[0];
+  // Uploads run one at a time, in the order picked, rather than in parallel
+  // — uploadListingGalleryPhoto reads the listing's current photoIds and
+  // writes back photoIds + the new id, so two calls in flight together would
+  // each read the same starting array and the second write would silently
+  // drop the first's photo. Sequential avoids that at the cost of a little
+  // wall-clock time, which a progress count makes tolerable.
+  async function handleFilesSelected(event: React.ChangeEvent<HTMLInputElement>) {
+    const files = Array.from(event.target.files ?? []);
     event.target.value = "";
-    if (!file) return;
+    if (files.length === 0) return;
 
-    setError(null);
-    setUploading(true);
-    const compressed = await compressImage(file);
-    const formData = new FormData();
-    formData.set("image", compressed);
-    const result = await uploadListingGalleryPhoto(listingId, formData);
-    setUploading(false);
+    const room = MAX_GALLERY_PHOTOS - photos.length;
+    const toUpload = files.slice(0, room);
+    setError(files.length > toUpload.length ? `Only added ${toUpload.length} — up to ${MAX_GALLERY_PHOTOS} photos per listing.` : null);
 
-    if (result.status !== "ok") {
-      setError(result.message);
-      return;
+    for (let i = 0; i < toUpload.length; i++) {
+      setUploadProgress({ done: i, total: toUpload.length });
+      const compressed = await compressImage(toUpload[i]);
+      const formData = new FormData();
+      formData.set("image", compressed);
+      const result = await uploadListingGalleryPhoto(listingId, formData);
+      if (result.status !== "ok") {
+        setError(result.message);
+        break;
+      }
+      setPhotos((prev) => [...prev, result.photo]);
     }
-    setPhotos((prev) => [...prev, result.photo]);
+    setUploadProgress(null);
   }
 
   function handleRemove(photoId: string) {
@@ -150,9 +163,16 @@ export function ListingPhotosEditor({ listingId, initialPhotos }: { listingId: s
       )}
       {photos.length < MAX_GALLERY_PHOTOS && (
         <label className={buttonClasses("ghost", "sm", "w-fit cursor-pointer")}>
-          {uploading ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <Upload className="h-3.5 w-3.5" />}
-          {uploading ? "Uploading…" : "Add photo"}
-          <input type="file" accept="image/*" onChange={handleFileSelected} disabled={uploading} className="hidden" />
+          {uploadProgress ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <Upload className="h-3.5 w-3.5" />}
+          {uploadProgress ? `Uploading ${uploadProgress.done + 1}/${uploadProgress.total}…` : "Add photos"}
+          <input
+            type="file"
+            accept="image/*"
+            multiple
+            onChange={handleFilesSelected}
+            disabled={uploadProgress !== null}
+            className="hidden"
+          />
         </label>
       )}
       {error && <p className="text-sm text-rose-600 dark:text-rose-400">{error}</p>}
