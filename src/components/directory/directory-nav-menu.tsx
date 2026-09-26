@@ -27,6 +27,7 @@ export function DirectoryNavMenu({
   myBusinessLabel,
   addBusinessLabel,
   businessNavItems,
+  topNavItems,
   signOutLabel,
   directoryHref,
   signupHref,
@@ -45,6 +46,12 @@ export function DirectoryNavMenu({
   // PartnerNavMenu/PartnerSidebar, which import BUSINESS_NAV_ITEMS directly
   // and stay English, matching the rest of the (English-only) portal.
   businessNavItems: { href: string; label: string }[];
+  // The same four items DirectoryTopNav renders inline at lg+ (categories,
+  // locations, latest products, news & promotions) — see this component's
+  // own lg:hidden wrapper below for why they're repeated here rather than
+  // just left to that inline nav: below lg there's no second row for them
+  // to live in anymore, so the hamburger is their only way in at that width.
+  topNavItems: { href: string; label: string }[];
   signOutLabel: string;
   // Locale-aware (see directory-chrome.tsx) — never a bare "/directory" or
   // "/directory/signup" here, so a click from within the locale-prefixed
@@ -96,17 +103,28 @@ export function DirectoryNavMenu({
           role="menu"
           className="absolute right-0 z-30 mt-2 w-56 overflow-hidden rounded-lg border border-slate-200 bg-white py-1 shadow-lg dark:border-neutral-700 dark:bg-neutral-900"
         >
+          {/* Same directoryLabel/Store combination both viewer states used
+              to render separately — this is the state that link was
+              missing from: a visitor browsing an outside-the-shell page
+              like /directory/signup or /business-portal/login had no way
+              back into the directory itself. */}
+          <Link href={directoryHref} role="menuitem" onClick={() => setOpen(false)} className={itemClasses}>
+            <Store className="h-4 w-4 shrink-0 text-slate-400" />
+            {directoryLabel}
+          </Link>
+          {/* Only below lg: at lg+ these same four destinations already
+              show inline next to the logo (DirectoryTopNav), so repeating
+              them here too would just be a redundant second copy for a
+              visitor who can already see them. */}
+          <div className="lg:hidden">
+            {topNavItems.map((item) => (
+              <Link key={item.href} href={item.href} role="menuitem" onClick={() => setOpen(false)} className={itemClasses}>
+                {item.label}
+              </Link>
+            ))}
+          </div>
           {viewer === null && (
             <>
-              {/* Same directoryLabel/Store combination the signed-in
-              business viewer's own "back to directory" link uses below —
-              this is the state that link was missing from: a visitor
-              browsing an outside-the-shell page like /directory/signup or
-              /business-portal/login had no way back into the directory itself. */}
-              <Link href={directoryHref} role="menuitem" onClick={() => setOpen(false)} className={itemClasses}>
-                <Store className="h-4 w-4 shrink-0 text-slate-400" />
-                {directoryLabel}
-              </Link>
               <Link href="/business-portal/login" role="menuitem" onClick={() => setOpen(false)} className={itemClasses}>
                 <LogIn className="h-4 w-4 shrink-0 text-slate-400" />
                 {loginLabel}
@@ -123,10 +141,6 @@ export function DirectoryNavMenu({
           )}
           {viewer === "business" && (
             <>
-              <Link href={directoryHref} role="menuitem" onClick={() => setOpen(false)} className={itemClasses}>
-                <Store className="h-4 w-4 shrink-0 text-slate-400" />
-                {directoryLabel}
-              </Link>
               <form action={createListingAction}>
                 <button type="submit" role="menuitem" className={itemClasses}>
                   <Plus className="h-4 w-4 shrink-0 text-slate-400" />
