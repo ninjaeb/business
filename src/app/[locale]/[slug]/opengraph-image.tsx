@@ -7,13 +7,16 @@ import { DIRECTORY_SHARE_IMAGE_SIZE } from "@/lib/directory-seo";
 
 // Every listing's own share image (see the `shareImage` in this route's
 // page.tsx) — the same gotka.com house style as the directory's site-wide
-// opengraph-image.tsx (dark navy, the green corner glow, the G/GOTKA
-// lockup), but built from this specific business's own company name,
-// services, and description rather than generic directory branding, plus
-// its own logo alongside them when the partner uploaded one. A consistent,
-// always-informative link preview whether or not a partner bothered
-// uploading a logo or photos — this never falls back to those directly the
-// way the old shareImage priority chain did.
+// opengraph-image.tsx (dark navy, the green corner glow), but built from
+// this specific business's own company name, services, and description
+// rather than generic directory branding, plus its own logo alongside them
+// when the partner uploaded one. The top-left lockup reads "Business
+// Directory" rather than "Gotka" — this card is about the listed business,
+// not the parent brand, which still gets its G icon plus the
+// business.gotka.com domain at the bottom. A consistent, always-informative
+// link preview whether or not a partner bothered uploading a logo or
+// photos — this never falls back to those directly the way the old
+// shareImage priority chain did.
 export const size = DIRECTORY_SHARE_IMAGE_SIZE;
 export const contentType = "image/png";
 
@@ -98,12 +101,7 @@ export default async function Image({ params }: { params: Promise<{ slug: string
         >
           <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
             <img src={iconSrc} width={56} height={56} alt="" style={{ borderRadius: 13 }} />
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <div style={{ fontSize: 30, fontWeight: 800, color: "#fff", letterSpacing: -0.5 }}>GOTKA</div>
-              <div style={{ fontSize: 12, fontWeight: 600, letterSpacing: 4, color: MUTED, marginTop: 2 }}>
-                BUSINESS DIRECTORY
-              </div>
-            </div>
+            <div style={{ fontSize: 22, fontWeight: 800, color: "#fff", letterSpacing: 1 }}>BUSINESS DIRECTORY</div>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 28 }}>
             {listing?.logoUrl && (
