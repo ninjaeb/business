@@ -300,7 +300,9 @@ function UpdateItem({ update, locale }: { update: ListingUpdateEntry; locale: Di
           </time>
         )}
       </div>
-      <div className="mt-1 text-base text-slate-600 dark:text-slate-300">{renderMarkdownLite(update.body)}</div>
+      <div className="mt-1 text-base text-slate-600 dark:text-slate-300">
+        {renderMarkdownLite(update.body, undefined, { zoomableImages: true })}
+      </div>
     </div>
   );
 }
@@ -503,6 +505,7 @@ export default async function DirectoryListingPage({
             logoUrl={listing.logoUrl ? listingLogoPath(slug, listing.publishedAt) : null}
             size={200}
             className="h-24 w-24 text-2xl sm:h-[200px] sm:w-[200px] sm:text-4xl"
+            zoomable
           />
           <div className="min-w-0 flex-1">
             <h1 className="text-3xl font-semibold text-slate-900 dark:text-slate-100">{listing.companyName}</h1>
@@ -716,7 +719,7 @@ export default async function DirectoryListingPage({
                   <CardTitle className="text-base">{t.aboutHeading}</CardTitle>
                 </CardHeader>
                 <CardBody className="text-base text-slate-600 dark:text-slate-300">
-                  {renderMarkdownLite(displayDescription)}
+                  {renderMarkdownLite(displayDescription, undefined, { zoomableImages: true })}
                 </CardBody>
               </Card>
             )}
