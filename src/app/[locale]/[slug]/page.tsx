@@ -260,7 +260,8 @@ function buildJsonLd(
 // A News/Promotion post's own dateline (see ListingUpdateEntry.postedAt),
 // shown next to its title the way a news feed or blog normally dates its
 // posts — matches the visiting locale, unlike the post's own English-only
-// title/body (see UpdatesEditor's own "not translated" note).
+// title/body (posts aren't translated at all — see ListingUpdateEntry's
+// own comment in src/lib/directory.ts).
 function formatUpdatePostedAt(postedAt: string, locale: DirectoryLocale): string {
   return new Intl.DateTimeFormat(locale, { month: "short", day: "numeric", year: "numeric" }).format(
     new Date(`${postedAt}T00:00:00`),
