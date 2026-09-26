@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { Suspense } from "react";
-import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { DirectoryLanguageSwitcher } from "@/components/directory/directory-language-switcher";
 import { DirectoryNavMenu, type DirectoryViewer } from "@/components/directory/directory-nav-menu";
 import { DirectoryTopNav } from "@/components/directory/directory-top-nav";
+import { HeaderSearch } from "@/components/directory/header-search";
 import { logout } from "@/app/actions/auth";
 import { getSessionPayload } from "@/lib/session";
 import { db } from "@/lib/db";
@@ -35,9 +35,10 @@ async function getDirectoryViewer(): Promise<DirectoryViewer> {
   return user?.role === "PARTNER" ? "business" : null;
 }
 
-// The site-like header/footer (sticky nav, language + theme switches,
-// hamburger menu, footer tagline) shared by every public-facing partner
-// page — the directory itself, its listing pages, and the two forms that
+// The site-like header/footer (sticky nav, search box, hamburger menu with
+// language + theme switches tucked inside it, footer tagline) shared by
+// every public-facing partner page — the directory itself, its listing
+// pages, and the two forms that
 // sit outside it (the locale-prefixed .../signup and the bare
 // /business/login) — rather than the minimal centered-card wrapper an
 // internal admin form might use. A partner filling in a form should feel
@@ -101,52 +102,59 @@ export async function DirectoryChrome({
               {t.brandName}
             </span>
           </Link>
-          {/* Inline on lg+ screens only, pushed flush against the language/
-              theme/menu group on the right (ml-auto) rather than hugging
-              the logo — the free space this leaves next to the logo reads
-              better than free space stranded between the nav and that
-              group. Below lg there's no second row for these to spill into
-              anymore (that used to overflow into a cramped horizontal
-              scroll bar of its own) — DirectoryNavMenu's own hamburger
-              carries the same four links at that width instead. */}
-          <DirectoryTopNav navLabel={t.topNavLabel} items={topNavItems} className="ml-auto hidden lg:flex" />
-          <div className="flex shrink-0 items-center gap-1">
-            {/* useSearchParams() (see directory-language-switcher.tsx, for
-                preserving the query string across a language swap) requires
-                a Suspense boundary around anything that might otherwise be
-                statically prerendered — the fallback is sized/styled the
-                same as the real switcher so there's no visible flash. */}
-            <Suspense
-              fallback={
-                <div className="flex gap-1" aria-hidden="true">
-                  {DIRECTORY_LOCALES.map((option) => (
-                    <span key={option.code} className="rounded-md px-2 py-1 text-xs font-medium text-slate-500 dark:text-slate-400">
-                      {option.label}
-                    </span>
-                  ))}
-                </div>
-              }
-            >
-              <DirectoryLanguageSwitcher current={locale} />
-            </Suspense>
-            <ThemeToggle />
-            <DirectoryNavMenu
-              viewer={viewer}
-              logoutAction={logout}
-              loginLabel={t.navLoginRegister}
-              listBusinessLabel={t.listBusinessCta}
-              benefitsLabel={t.benefitsNavLabel}
-              directoryLabel={t.brandName}
-              myBusinessLabel={t.navMyBusiness}
-              addBusinessLabel={t.navAddBusiness}
-              businessNavItems={localizedBusinessNavItems(locale)}
-              topNavItems={topNavItems}
-              signOutLabel={t.navSignOut}
-              directoryHref={directoryHref}
-              signupHref={signupHref}
-              benefitsHref={benefitsHref}
-            />
-          </div>
+          {/* Inline on lg+ screens only, right after the logo — below lg
+              there's no second row for these to spill into anymore (that
+              used to overflow into a cramped horizontal scroll bar of its
+              own) — DirectoryNavMenu's own hamburger carries the same four
+              links at that width instead. */}
+          <DirectoryTopNav navLabel={t.topNavLabel} items={topNavItems} className="hidden lg:flex" />
+          {/* ml-auto here (rather than on the nav above) so the search box
+              is what actually claims the header's free space: full-width
+              between the logo and the hamburger below lg (nothing else on
+              that row to share it with), capped to a fixed width at lg+
+              where the nav to its left already fills that space. */}
+          <HeaderSearch
+            action={directoryHref}
+            placeholder={t.searchPlaceholder}
+            className="ml-auto w-full max-w-[11rem] flex-1 sm:max-w-xs lg:max-w-sm"
+          />
+          <DirectoryNavMenu
+            viewer={viewer}
+            logoutAction={logout}
+            loginLabel={t.navLoginRegister}
+            listBusinessLabel={t.listBusinessCta}
+            benefitsLabel={t.benefitsNavLabel}
+            directoryLabel={t.brandName}
+            myBusinessLabel={t.navMyBusiness}
+            addBusinessLabel={t.navAddBusiness}
+            businessNavItems={localizedBusinessNavItems(locale)}
+            topNavItems={topNavItems}
+            languageSwitcher={
+              // useSearchParams() (see directory-language-switcher.tsx, for
+              // preserving the query string across a language swap)
+              // requires a Suspense boundary around anything that might
+              // otherwise be statically prerendered — the fallback is
+              // sized/styled the same as the real switcher so there's no
+              // visible flash the moment the dropdown first opens.
+              <Suspense
+                fallback={
+                  <div className="flex gap-1" aria-hidden="true">
+                    {DIRECTORY_LOCALES.map((option) => (
+                      <span key={option.code} className="rounded-md px-2 py-1 text-xs font-medium text-slate-500 dark:text-slate-400">
+                        {option.label}
+                      </span>
+                    ))}
+                  </div>
+                }
+              >
+                <DirectoryLanguageSwitcher current={locale} />
+              </Suspense>
+            }
+            signOutLabel={t.navSignOut}
+            directoryHref={directoryHref}
+            signupHref={signupHref}
+            benefitsHref={benefitsHref}
+          />
         </div>
       </header>
 

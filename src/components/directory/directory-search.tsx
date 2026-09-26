@@ -63,6 +63,23 @@ export function DirectorySearch({
   // the same reasoning the server-side filter this replaced already relied
   // on (see the page's own fetch comment).
   const [query, setQuery] = useState(initialQuery);
+  // Unlike the other initial* props below (only ever set by a fresh
+  // navigation from a different page — a listing's own pill, a category
+  // page), initialQuery can now also change while this exact component
+  // stays mounted: the header's own HeaderSearch submits a new ?q= from
+  // wherever a visitor already is, including this same page. A prop change
+  // alone doesn't reset useState's initial value, so without the block
+  // below the address bar would update but the results and input text
+  // would not. Adjusted during render rather than in an effect — React's
+  // own recommended pattern for state that needs to reset when a prop
+  // changes (see "Adjusting state when a prop changes" in the React docs) —
+  // so the mismatched render this would otherwise briefly show never
+  // happens instead of merely getting corrected a tick later.
+  const [prevInitialQuery, setPrevInitialQuery] = useState(initialQuery);
+  if (initialQuery !== prevInitialQuery) {
+    setPrevInitialQuery(initialQuery);
+    setQuery(initialQuery);
+  }
   // No dropdown for these (see the type comments above) — set once from the
   // URL a pill linked to, cleared only via the chip below.
   const [industry, setIndustry] = useState(initialIndustry);
