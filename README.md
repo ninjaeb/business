@@ -161,13 +161,20 @@ Node selector (Prisma 7 requires one of those).
 4. **Set environment variables** in that same Node app screen —
    `DATABASE_URL`, `SESSION_SECRET`, `SITE_URL` at minimum (see
    `.env.example` for the rest).
-5. **Install and migrate.** Click *Run NPM Install* in the Node app UI.
-   Then open the app's terminal and run:
+5. **Install, generate, and migrate.** Click *Run NPM Install* in the Node
+   app UI. Then open the app's terminal and run:
    ```bash
+   npx prisma generate
    npx prisma migrate deploy
    npx tsx prisma/seed.ts
    npm run create-admin -- --email="you@example.com" --name="Your Name"
    ```
+   `npx prisma generate` is required here — unlike `prisma migrate dev`,
+   `migrate deploy` does **not** regenerate the Prisma Client, and this repo
+   has no `postinstall` script to do it automatically either (see
+   "No `postinstall` step" below). Skipping it fails every one of the
+   commands above (and the app itself, until its first restart) with
+   `Cannot find module '@/generated/prisma/client'`.
 6. **Restart** the app from the Node.js Selector UI, then visit the
    Application URL. `server.js` builds the production bundle itself on
    every start (there's no separate "build" step to run) — the app takes
