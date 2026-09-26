@@ -721,27 +721,28 @@ export function PartnerListingForm({
         </FieldGroup>
       </div>
 
-      <FieldGroup label="Address" htmlFor="address">
-        <Textarea
-          id="address"
-          name="address"
-          rows={2}
-          value={address}
-          onChange={(event) => setAddress(event.target.value)}
-          placeholder={"123 Jalan Bukit Bintang\n50200 Kuala Lumpur, Malaysia"}
-        />
-        <p className="mt-1 text-xs text-slate-400">Shown on your listing with a map. Leave blank to skip the map.</p>
-      </FieldGroup>
-
-      <FieldGroup label="City" htmlFor="city">
-        <Input
-          id="city"
-          name="city"
-          value={city}
-          onChange={(event) => setCity(event.target.value)}
-          placeholder="Kuala Lumpur"
-        />
-      </FieldGroup>
+      <div className="grid gap-4 sm:grid-cols-2">
+        <FieldGroup label="Address" htmlFor="address">
+          <Textarea
+            id="address"
+            name="address"
+            rows={2}
+            value={address}
+            onChange={(event) => setAddress(event.target.value)}
+            placeholder={"123 Jalan Bukit Bintang\n50200 Kuala Lumpur, Malaysia"}
+          />
+          <p className="mt-1 text-xs text-slate-400">Shown on your listing with a map. Leave blank to skip the map.</p>
+        </FieldGroup>
+        <FieldGroup label="City" htmlFor="city">
+          <Input
+            id="city"
+            name="city"
+            value={city}
+            onChange={(event) => setCity(event.target.value)}
+            placeholder="Kuala Lumpur"
+          />
+        </FieldGroup>
+      </div>
 
       <div className="grid gap-4 sm:grid-cols-2">
         <FieldGroup label="State / province" htmlFor="state">
