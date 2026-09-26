@@ -199,8 +199,24 @@ const listingSchema = z.object({
   address: z.string().trim().optional(),
   state: z.string().trim().optional(),
   country: z.string().trim().optional(),
-  seoTitle: z.string().trim().max(MAX_SEO_TITLE_LENGTH).optional(),
-  seoDescription: z.string().trim().max(MAX_SEO_DESCRIPTION_LENGTH).optional(),
+  // Clipped, never rejected — same treatment generateSeoMetaCore's own
+  // clip already gives an AI response that runs over (see its comment):
+  // a partner's manually-typed text, or a value saved back when this cap
+  // was higher (or nonexistent), must still be savable on every later
+  // edit, not just the one that first goes over. A hard .max() here once
+  // meant a partner could get permanently stuck re-submitting the very
+  // value already sitting in their own listing, on every field's save,
+  // with nothing telling them which field or how to fix it.
+  seoTitle: z
+    .string()
+    .trim()
+    .transform((value) => value.slice(0, MAX_SEO_TITLE_LENGTH))
+    .optional(),
+  seoDescription: z
+    .string()
+    .trim()
+    .transform((value) => value.slice(0, MAX_SEO_DESCRIPTION_LENGTH))
+    .optional(),
 });
 
 export type ListingFormValues = {
