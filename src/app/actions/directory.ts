@@ -58,7 +58,7 @@ import {
   type PlaceDetails,
   type PlaceSearchResult,
 } from "@/lib/google-places";
-import { fetchWebsiteText, type WebsitePage } from "@/lib/website-text";
+import { fetchWebsiteLogo, fetchWebsiteText, type WebsitePage } from "@/lib/website-text";
 import { DIRECTORY_LOCALE_COOKIE } from "@/lib/directory-locale";
 import { DEFAULT_DIRECTORY_LOCALE, type DirectoryLeadFormErrorCode, type DirectoryLocale } from "@/lib/directory-i18n";
 import { DIRECTORY_LEAD_STATUSES, INDUSTRIES, INDUSTRY_LABELS } from "@/lib/labels";
@@ -598,10 +598,12 @@ export async function searchBusinessOnGoogleMaps(query: string): Promise<AiResul
 }
 
 export type AutoCreatedListingDetails = {
-  // From the selected Google Maps listing's own name — never AI-written,
-  // same "copy the fact, don't have the model write it" treatment as
-  // address/operatingHours below. Unset when the partner typed a website
-  // instead of picking a place.
+  // The selected Google Maps listing's own name, else (when the partner
+  // typed a website instead of picking a place) whatever name the website
+  // itself gives (og:site_name, or a best-effort read of its <title> — see
+  // extractCompanyName) — never AI-written, same "copy the fact, don't have
+  // the model write it" treatment as address/operatingHours below. Null
+  // when neither source has one.
   companyName: string | null;
   tagline: string;
   description: string;
@@ -616,11 +618,12 @@ export type AutoCreatedListingDetails = {
   operatingHours: OperatingHours | null;
   seoTitle: string;
   seoDescription: string;
-  // The Google Maps listing's own cover photo, already fetched and encoded
-  // as a data: URL (see fetchPlacePhoto) — a fact to copy, like address/
-  // operatingHours, never AI-generated. Null when there's no place, the
-  // place has no photo, or the fetch failed; either way the editor's
-  // existing logo (if any) is left alone rather than cleared.
+  // The Google Maps listing's own cover photo (see fetchPlacePhoto), else
+  // the website's own logo image (og:image/favicon — see fetchWebsiteLogo),
+  // already fetched and encoded as a data: URL either way — a fact to copy,
+  // like address/operatingHours, never AI-generated. Null when neither
+  // source has a usable image; either way the editor's existing logo (if
+  // any) is left alone rather than cleared.
   logoUrl: string | null;
   // Which inputs actually contributed, so the editor can say so when a
   // website was given but couldn't be read.
@@ -747,7 +750,11 @@ export async function autoCreateListingDetails(input: {
       message: "Pick your business on Google Maps, or fill in the Website field, so there's something to create from.",
     };
   }
-  const pages = website ? await fetchWebsiteText(website) : [];
+  const {
+    pages,
+    companyName: websiteCompanyName,
+    logoCandidates,
+  } = website ? await fetchWebsiteText(website) : { pages: [], companyName: null, logoCandidates: [] };
   if (!place && pages.length === 0) {
     return {
       status: "error",
@@ -756,7 +763,7 @@ export async function autoCreateListingDetails(input: {
   }
 
   const categories = await db.businessCategory.findMany({ orderBy: { name: "asc" }, select: { id: true, name: true } });
-  const companyName = String(input.companyName ?? "").trim().slice(0, 200) || place?.name || "";
+  const companyName = String(input.companyName ?? "").trim().slice(0, 200) || place?.name || websiteCompanyName || "";
 
   const lines = [`Company name: ${companyName || "(not set)"}`, ""];
   if (place) lines.push(...placeContextLines(place), "");
@@ -774,9 +781,12 @@ export async function autoCreateListingDetails(input: {
   // Run together rather than one after the other — the AI call is the slow
   // part (up to a minute) and the logo fetch doesn't depend on its result,
   // so there's no reason to make the partner wait for both in sequence.
+  // Google Maps' own photo wins when there is one; the website's own logo
+  // (og:image/favicon) only comes into play when there's no place, or its
+  // photo couldn't be fetched.
   const [result, logoUrl] = await Promise.all([
     callAi(AutoListingSchema, AUTO_LISTING_SYSTEM_PROMPT, lines.join("\n")),
-    logoFromPlace(place),
+    logoFromPlace(place).then((url) => url ?? fetchWebsiteLogo(logoCandidates)),
   ]);
   if (result.status !== "ok") return result;
 
@@ -792,7 +802,7 @@ export async function autoCreateListingDetails(input: {
   return {
     status: "ok",
     data: {
-      companyName: place?.name ?? null,
+      companyName: place?.name ?? websiteCompanyName ?? null,
       tagline: result.data.tagline.trim().slice(0, MAX_TAGLINE_LENGTH),
       description: result.data.description.trim(),
       industry: INDUSTRIES.includes(result.data.industry.trim() as Industry) ? result.data.industry.trim() : "",
