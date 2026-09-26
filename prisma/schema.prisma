@@ -339,14 +339,19 @@ model PartnerListingCategory {
 // route), both just "an image byte blob owned by a listing": About-field
 // embedded images (markdown-lite editor), referenced by id from inside the
 // About text itself, and gallery photos (see PartnerListing.photoIds),
-// referenced by id from that ordered array instead. `caption` is only ever
-// set for the latter — an About-embed's description lives in the
-// surrounding markdown, not on the image row.
+// referenced by id from that ordered array instead. `caption` and `gallery`
+// are only ever set for the latter — an About-embed's description lives in
+// the surrounding markdown, not on the image row, and has no grouping of
+// its own either. `gallery` is a partner's own free-text label (e.g.
+// "Office", "Team", "2024 Event"), not a fixed enum like a video's
+// category — the public page groups photos under it (see PhotoLightbox)
+// once a listing has more than one distinct value among its photos.
 model DirectoryListingImage {
   id       String  @id @default(cuid())
   mimeType String
   data     String  @db.Text
   caption  String?
+  gallery  String?
 
   createdAt DateTime @default(now())
 

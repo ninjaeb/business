@@ -1347,11 +1347,13 @@ async function loadListingPhotosInOrder(photoIds: string[]): Promise<PhotoEntry[
   const photoRows = photoIds.length
     ? await db.directoryListingImage.findMany({
         where: { id: { in: photoIds } },
-        select: { id: true, caption: true },
+        select: { id: true, caption: true, gallery: true },
       })
     : [];
-  const photosById = new Map(photoRows.map((row) => [row.id, row.caption ?? ""]));
-  return photoIds.filter((photoId) => photosById.has(photoId)).map((photoId) => ({ id: photoId, caption: photosById.get(photoId)! }));
+  const photosById = new Map(photoRows.map((row) => [row.id, { caption: row.caption ?? "", gallery: row.gallery ?? "" }]));
+  return photoIds
+    .filter((photoId) => photosById.has(photoId))
+    .map((photoId) => ({ id: photoId, ...photosById.get(photoId)! }));
 }
 
 // Builds and attaches the published snapshot — shared by the admin's own
