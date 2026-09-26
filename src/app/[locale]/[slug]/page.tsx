@@ -7,6 +7,7 @@ import {
   DAYS_OF_WEEK,
   directoryImagePath,
   formatOpeningHoursSchema,
+  getOrCreateReferralCode,
   getPublishedListingBySlug,
   incrementListingViewCount,
   isOpenNow,
@@ -343,24 +344,30 @@ export default async function DirectoryListingPage({
   const listing = await getPublishedListing(slug);
   if (!listing) notFound();
 
-  const [siteOrigin] = await Promise.all([getSiteOrigin(), incrementListingViewCount(listing.id, resolved)]);
+  const [siteOrigin, , referralCode] = await Promise.all([
+    getSiteOrigin(),
+    incrementListingViewCount(listing.id, resolved),
+    getOrCreateReferralCode(listing),
+  ]);
   const t = DIRECTORY_STRINGS[resolved];
   const mapAddress = listing.address;
   const pageUrl = `${siteOrigin}${directoryListingPath(resolved, slug)}`;
 
   // No commission/payout system (this app doesn't pay anyone for a
   // referral, unlike the CRM it was extracted from) — just attribution: a
-  // `r=<listing id>` tag on the Recommend link's own URL, distinct from
-  // pageUrl (which the plain Share button still uses untagged). The id
-  // (not a fixed marker string) lets submitDirectoryLead confirm the tag
-  // actually names the listing the lead is being submitted to, rather
-  // than trusting any `r` value present. A visitor who lands here via
-  // that link and then submits the lead form gets DirectoryLead.viaReferral
-  // set (see directory-lead-form.tsx and submitDirectoryLead), which is
-  // what the business portal's "Referred" stat counts. Offered to every
-  // visitor, not gated to a signed-in partner — anyone recommending a
-  // business they like generates the same tag, not just its own owner.
-  const recommendUrl = `${pageUrl}?r=${listing.id}`;
+  // `r=<referral code>` tag on the Recommend link's own URL, distinct from
+  // pageUrl (which the plain Share button still uses untagged). A short,
+  // generated-once code (see getOrCreateReferralCode) rather than this
+  // listing's own id, so the shared link stays short and doesn't leak the
+  // cuid — but still lets submitDirectoryLead confirm the tag actually
+  // names the listing the lead is being submitted to, rather than trusting
+  // any `r` value present. A visitor who lands here via that link and then
+  // submits the lead form gets DirectoryLead.viaReferral set (see
+  // directory-lead-form.tsx and submitDirectoryLead), which is what the
+  // business portal's "Referred" stat counts. Offered to every visitor, not
+  // gated to a signed-in partner — anyone recommending a business they like
+  // generates the same tag, not just its own owner.
+  const recommendUrl = `${pageUrl}?r=${referralCode}`;
   const recommendMessage = formatRecommendMessage(t.recommendMessage, listing.companyName, recommendUrl);
 
   // The partner's own tagline/description/services/faqs stay the source of

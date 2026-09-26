@@ -245,9 +245,16 @@ enum PartnerListingStatus {
 // never part of the snapshot: visitors reach a partner only through the
 // lead form (DirectoryLead), never directly.
 model PartnerListing {
-  id     String               @id @default(cuid())
-  slug   String               @unique
-  status PartnerListingStatus @default(DRAFT)
+  id           String               @id @default(cuid())
+  slug         String               @unique
+  // The Recommend link's own `?r=` tag (see recommendUrl in
+  // src/app/[locale]/[slug]/page.tsx) — a short, generated-once code, not
+  // this row's own id, so a shared link stays short and doesn't leak the
+  // cuid. Nullable rather than backfilled: generated lazily, the first time
+  // a listing's public page is actually rendered (see
+  // getOrCreateReferralCode), since nothing needs one before that.
+  referralCode String?              @unique
+  status       PartnerListingStatus @default(DRAFT)
 
   companyName    String
   tagline        String?

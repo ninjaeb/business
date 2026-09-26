@@ -73,13 +73,13 @@ export function DirectoryLeadForm({ slug, locale }: { slug: string; locale: Dire
       <input type="hidden" name="renderedAt" value={renderedAt} />
       {/* Set only when the visitor arrived via the Recommend button's own
           link (see recommendUrl in the listing page) — its value is that
-          listing's own id, which submitDirectoryLead checks against the
-          listing the lead is actually being submitted to. Read straight
-          off the URL rather than a cookie, since this form lives on the
-          same page load the ?r=<listing id> query param arrives on.
-          window is always defined here (a real click/submit can't happen
-          before hydration), so no effect/state round-trip is needed just
-          to read it once. */}
+          listing's own short referral code, which submitDirectoryLead
+          checks against the listing the lead is actually being submitted
+          to. Read straight off the URL rather than a cookie, since this
+          form lives on the same page load the ?r=<referral code> query
+          param arrives on. window is always defined here (a real
+          click/submit can't happen before hydration), so no effect/state
+          round-trip is needed just to read it once. */}
       <input
         type="hidden"
         name="r"
