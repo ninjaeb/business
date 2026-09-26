@@ -1,16 +1,26 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState, useTransition } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, useTransition } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Loader2, Megaphone, Package, Search } from "lucide-react";
-import { fetchDirectorySearchIndex } from "@/app/actions/directory";
 import { Input } from "@/components/ui/field";
 import { Badge } from "@/components/ui/badge";
 import { ListingLogo } from "@/components/directory/listing-logo";
 import { directoryHomePath, directoryListingPath, formatSearchViewAllResults, type DirectoryLocale, type DirectoryStrings } from "@/lib/directory-i18n";
 import { searchDirectoryIndex, type DirectorySearchIndex } from "@/lib/directory-search";
 import { cn } from "@/lib/utils";
+
+// Long enough for the page's own resources to settle first, short enough
+// that the index is normally in hand before anyone has read the page and
+// reached for the box.
+const INDEX_PREFETCH_DELAY_MS = 1500;
+
+async function fetchIndex(locale: DirectoryLocale): Promise<DirectorySearchIndex> {
+  const response = await fetch(`/api/directory-search-index?locale=${encodeURIComponent(locale)}`);
+  if (!response.ok) throw new Error(`Search index request failed: ${response.status}`);
+  return response.json();
+}
 
 // The header's own always-present search box (see directory-chrome.tsx) —
 // live results as the visitor types, grouped into the same three kinds of
@@ -19,13 +29,17 @@ import { cn } from "@/lib/utils";
 // filter-locally idea as DirectorySearch, the home page's own big hero
 // search, with one difference in where the data comes from: that page has
 // its listing set in hand from its own render, whereas this box renders on
-// every page, so it fetches its own compact index (fetchDirectorySearchIndex)
-// once, the first time the box is focused — never on page load, since most
-// visitors never search — and every keystroke after that is a synchronous
-// search of that index. Not a server round trip per keystroke: Server
-// Actions from one page run one at a time, in order, so a query that takes
-// a moment stacks up behind every earlier keystroke's query and the visitor
-// waits for all of them.
+// every page, so it fetches its own compact index from
+// /api/directory-search-index — once, a moment after the page has settled
+// (or on focus, whichever comes first) — and every keystroke after that is
+// a synchronous search of that index. Not fetched on demand at the first
+// keystroke, and not a round trip per keystroke: on the shared host this
+// runs on, an app process that has sat idle is stopped and re-booted by
+// the next request, a cold start of many seconds — the fetch is best made
+// right after the page render that just proved the process warm, while
+// the visitor is still reading, rather than at the moment they start
+// typing. The browser then caches it for the rest of the visit (see the
+// route's own Cache-Control).
 export function HeaderSearch({
   locale,
   t,
@@ -45,12 +59,12 @@ export function HeaderSearch({
   const containerRef = useRef<HTMLDivElement>(null);
   const requestedLocaleRef = useRef<DirectoryLocale | null>(null);
 
-  function ensureIndex() {
+  const ensureIndex = useCallback(() => {
     if (requestedLocaleRef.current === locale) return;
     requestedLocaleRef.current = locale;
     startLoading(async () => {
       try {
-        const entries = await fetchDirectorySearchIndex(locale);
+        const entries = await fetchIndex(locale);
         setIndex({ locale, entries });
       } catch {
         // Let the next focus try again rather than leaving the box dead for
@@ -58,7 +72,12 @@ export function HeaderSearch({
         requestedLocaleRef.current = null;
       }
     });
-  }
+  }, [locale]);
+
+  useEffect(() => {
+    const timer = setTimeout(ensureIndex, INDEX_PREFETCH_DELAY_MS);
+    return () => clearTimeout(timer);
+  }, [ensureIndex]);
 
   useEffect(() => {
     if (!open) return;
