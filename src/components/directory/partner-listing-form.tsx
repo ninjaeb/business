@@ -20,17 +20,19 @@ import { MultiCombobox } from "@/components/ui/multi-combobox";
 import { AiAutoCreatePanel } from "@/components/directory/ai-auto-create-panel";
 import { FaqEditor } from "@/components/directory/faq-editor";
 import { ListingLogo } from "@/components/directory/listing-logo";
+import { ListingPhotosEditor } from "@/components/directory/listing-photos-editor";
 import { LogoCropDialog } from "@/components/directory/logo-crop-dialog";
 import { MarkdownLiteEditor } from "@/components/directory/markdown-lite-editor";
 import { OperatingHoursEditor } from "@/components/directory/operating-hours-editor";
 import { PartnerSlugForm } from "@/components/directory/partner-slug-form";
 import { ServicesEditor } from "@/components/directory/services-editor";
+import { UpdatesEditor } from "@/components/directory/updates-editor";
 import { useToast } from "@/components/ui/toast";
 import { INDUSTRIES, INDUSTRY_LABELS } from "@/lib/labels";
 import { cn } from "@/lib/utils";
 import type { PartnerListingStatus } from "@/generated/prisma/client";
 import type { OperatingHours } from "@/lib/operating-hours";
-import type { FaqEntry, ListingTranslations, ServiceEntry } from "@/lib/directory";
+import type { FaqEntry, ListingTranslations, ListingUpdateEntry, PhotoEntry, ServiceEntry } from "@/lib/directory";
 
 type TranslationLocale = "zh" | "ms";
 type EditorTab = "en" | TranslationLocale;
@@ -63,6 +65,7 @@ export function PartnerListingForm({
   listingId,
   values,
   logoUrl,
+  photos,
   operatingHours,
   status,
   aiAvailable,
@@ -74,6 +77,7 @@ export function PartnerListingForm({
   listingId: string;
   values: ListingFormValues;
   logoUrl: string | null;
+  photos: PhotoEntry[];
   operatingHours: OperatingHours | null;
   status: PartnerListingStatus;
   aiAvailable: boolean;
@@ -149,6 +153,7 @@ export function PartnerListingForm({
   const [autoSlugSource, setAutoSlugSource] = useState<string | undefined>(undefined);
   const [tagline, setTagline] = useState(current.tagline);
   const [website, setWebsite] = useState(current.website);
+  const [videoUrl, setVideoUrl] = useState(current.videoUrl);
   const [industry, setIndustry] = useState(current.industry);
   const [address, setAddress] = useState(current.address);
   const [addrState, setAddrState] = useState(current.state);
@@ -157,6 +162,7 @@ export function PartnerListingForm({
   const [description, setDescription] = useState(current.description);
   const [services, setServices] = useState<ServiceEntry[]>(current.services);
   const [faqs, setFaqs] = useState<FaqEntry[]>(current.faqs);
+  const [updates, setUpdates] = useState<ListingUpdateEntry[]>(current.updates);
   // OperatingHoursEditor seeds its own per-day state from initialHours once,
   // on mount — bumping the key remounts it so a fresh set of hours from AI
   // Auto Create actually shows, instead of being ignored as a prop change.
@@ -620,6 +626,19 @@ export function PartnerListingForm({
         )}
       </div>
 
+      <FieldGroup label="Video" htmlFor="videoUrl">
+        <Input
+          id="videoUrl"
+          name="videoUrl"
+          value={videoUrl}
+          onChange={(event) => setVideoUrl(event.target.value)}
+          placeholder="https://www.youtube.com/watch?v=… or a Vimeo link"
+        />
+        <p className="mt-1 text-xs text-slate-400">
+          A YouTube or Vimeo link — embedded on your listing. Optional.
+        </p>
+      </FieldGroup>
+
       <div className="grid gap-4 sm:grid-cols-2">
         <FieldGroup label="Industry" htmlFor="industry">
           <Select
@@ -844,6 +863,31 @@ export function PartnerListingForm({
           </div>
           <p className="mt-1 text-xs text-slate-400">
             Optional — shown on your listing as a Q&amp;A section, and helps your page surface in AI search answers.
+          </p>
+        </div>
+      </div>
+
+      <div className="grid gap-4 sm:grid-cols-2">
+        <div>
+          <Label className="mb-1.5">Photos</Label>
+          <ListingPhotosEditor listingId={listingId} initialPhotos={photos} />
+          <p className="mt-1 text-xs text-slate-400">
+            Up to 12 — added to your gallery right away, but only shown publicly once you save and the listing is
+            (re)approved, same as everything else here.
+          </p>
+        </div>
+
+        <div>
+          <Label className="mb-1.5">News &amp; Promotions</Label>
+          <div hidden={activeTab !== "en"}>
+            <UpdatesEditor name="updates" value={updates} onChange={setUpdates} />
+          </div>
+          {activeTab !== "en" && (
+            <p className="text-sm text-slate-400">News &amp; Promotions aren&apos;t translated — switch to EN to edit.</p>
+          )}
+          <p className="mt-1 text-xs text-slate-400">
+            Optional — shown on your listing in a News &amp; Promotions section. A promotion disappears on its own
+            once its end date passes.
           </p>
         </div>
       </div>

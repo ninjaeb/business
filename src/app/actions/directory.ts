@@ -26,11 +26,13 @@ import {
   normalizeWebsiteUrl,
   parseFaqsJson,
   parseServicesJson,
+  parseUpdatesJson,
   servicesFromJson,
   slugify,
   translationsFromJson,
   type FaqEntry,
   type ListingTranslations,
+  type ListingUpdateEntry,
   type OperatingHours,
   type ServiceEntry,
 } from "@/lib/directory";
@@ -173,6 +175,7 @@ const listingSchema = z.object({
     .optional()
     .refine((value) => !value || INDUSTRIES.includes(value as Industry), { message: "Invalid industry" }),
   website: z.string().trim().optional(),
+  videoUrl: z.string().trim().optional(),
   address: z.string().trim().optional(),
   state: z.string().trim().optional(),
   country: z.string().trim().optional(),
@@ -187,10 +190,12 @@ export type ListingFormValues = {
   services: ServiceEntry[];
   industry: string;
   website: string;
+  videoUrl: string;
   address: string;
   state: string;
   country: string;
   faqs: FaqEntry[];
+  updates: ListingUpdateEntry[];
   categoryIds: string[];
   translations: ListingTranslations;
   seoTitle: string;
@@ -248,10 +253,12 @@ function extractListingFormValues(formData: FormData): ListingFormValues {
     services: parseServicesJson(stringField(formData, "services")),
     industry: stringField(formData, "industry"),
     website: stringField(formData, "website"),
+    videoUrl: stringField(formData, "videoUrl"),
     address: stringField(formData, "address"),
     state: stringField(formData, "state"),
     country: stringField(formData, "country"),
     faqs: parseFaqsJson(stringField(formData, "faqs")),
+    updates: parseUpdatesJson(stringField(formData, "updates")),
     categoryIds: formData.getAll("categoryIds").filter((value): value is string => typeof value === "string"),
     translations: extractTranslations(formData),
     seoTitle: stringField(formData, "seoTitle"),
@@ -858,11 +865,13 @@ async function saveListingFields(
         services: parseServicesJson(stringField(formData, "services")),
         industry: (parsed.data.industry || null) as Industry | null,
         website: parsed.data.website ? normalizeWebsiteUrl(parsed.data.website) : null,
+        videoUrl: parsed.data.videoUrl ? normalizeWebsiteUrl(parsed.data.videoUrl) : null,
         address: parsed.data.address || null,
         state: parsed.data.state || null,
         country: parsed.data.country || null,
         operatingHours: parseOperatingHoursFormData(formData),
         faqs: parseFaqsJson(stringField(formData, "faqs")),
+        updates: parseUpdatesJson(stringField(formData, "updates")),
         translations: extractTranslations(formData),
         seoTitle: parsed.data.seoTitle || null,
         seoDescription: parsed.data.seoDescription || null,
@@ -1146,6 +1155,21 @@ async function publishListing(id: string) {
     where: { id },
     include: { categories: { include: { category: true } }, partner: { select: { timezone: true } } },
   });
+  // photoIds is the order of record; the query result isn't guaranteed to
+  // come back in that order, so it's reordered to match rather than trusted
+  // as-is (same reasoning as everywhere else in this file that reorders a
+  // findMany by a caller-owned id list).
+  const photoRows = listing.photoIds.length
+    ? await db.directoryListingImage.findMany({
+        where: { id: { in: listing.photoIds } },
+        select: { id: true, caption: true },
+      })
+    : [];
+  const photosById = new Map(photoRows.map((row) => [row.id, row.caption ?? ""]));
+  const photos = listing.photoIds
+    .filter((photoId) => photosById.has(photoId))
+    .map((photoId) => ({ id: photoId, caption: photosById.get(photoId)! }));
+
   const published = await db.partnerListing.update({
     where: { id },
     data: {
@@ -1157,6 +1181,7 @@ async function publishListing(id: string) {
         listing,
         listing.categories.map((entry) => entry.category.name),
         listing.partner.timezone,
+        photos,
       ),
     },
   });
