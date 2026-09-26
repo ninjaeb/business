@@ -894,7 +894,7 @@ export function PartnerListingForm({
       <div>
         <Label className="mb-1.5">News &amp; Promotions</Label>
         <div hidden={activeTab !== "en"}>
-          <UpdatesEditor name="updates" value={updates} onChange={setUpdates} listingId={listingId} />
+          <UpdatesEditor name="updates" value={updates} onChange={setUpdates} listingId={listingId} aiAvailable={aiAvailable} />
         </div>
         {activeTab !== "en" && (
           <p className="text-sm text-slate-400">News &amp; Promotions aren&apos;t translated — switch to EN to edit.</p>

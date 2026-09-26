@@ -7,13 +7,15 @@ import {
   DAYS_OF_WEEK,
   directoryImagePath,
   formatOpeningHoursSchema,
+  getOrCreateReferralCode,
   getPublishedListingBySlug,
   incrementListingViewCount,
   isOpenNow,
   isUpdateCurrent,
+  latestListings,
   listingLogoPath,
   loadPublishedListings,
-  relatedListingsByCategory,
+  nearbyListingsExcludingIndustry,
   slugify,
   toDirectoryGridListing,
   toEmbeddableVideoUrl,
@@ -68,9 +70,10 @@ import { PhotoLightbox } from "@/components/directory/photo-lightbox";
 
 export const dynamic = "force-dynamic";
 
-// How many other listings in the same category to surface below this one
-// (see relatedListingsByCategory) — enough to be useful, not so many the
-// section competes with the listing's own content for attention.
+// How many other listings to surface in each of the two "other businesses"
+// sections below this one (see latestListings/nearbyListingsExcludingIndustry)
+// — enough to be useful, not so many the section competes with the
+// listing's own content for attention.
 const MAX_RELATED_LISTINGS = 6;
 
 // Thin local alias so this file's several `typeof getPublishedListing`
@@ -341,24 +344,30 @@ export default async function DirectoryListingPage({
   const listing = await getPublishedListing(slug);
   if (!listing) notFound();
 
-  const [siteOrigin] = await Promise.all([getSiteOrigin(), incrementListingViewCount(listing.id, resolved)]);
+  const [siteOrigin, , referralCode] = await Promise.all([
+    getSiteOrigin(),
+    incrementListingViewCount(listing.id, resolved),
+    getOrCreateReferralCode(listing),
+  ]);
   const t = DIRECTORY_STRINGS[resolved];
   const mapAddress = listing.address;
   const pageUrl = `${siteOrigin}${directoryListingPath(resolved, slug)}`;
 
   // No commission/payout system (this app doesn't pay anyone for a
   // referral, unlike the CRM it was extracted from) — just attribution: a
-  // `r=<listing id>` tag on the Recommend link's own URL, distinct from
-  // pageUrl (which the plain Share button still uses untagged). The id
-  // (not a fixed marker string) lets submitDirectoryLead confirm the tag
-  // actually names the listing the lead is being submitted to, rather
-  // than trusting any `r` value present. A visitor who lands here via
-  // that link and then submits the lead form gets DirectoryLead.viaReferral
-  // set (see directory-lead-form.tsx and submitDirectoryLead), which is
-  // what the business portal's "Referred" stat counts. Offered to every
-  // visitor, not gated to a signed-in partner — anyone recommending a
-  // business they like generates the same tag, not just its own owner.
-  const recommendUrl = `${pageUrl}?r=${listing.id}`;
+  // `r=<referral code>` tag on the Recommend link's own URL, distinct from
+  // pageUrl (which the plain Share button still uses untagged). A short,
+  // generated-once code (see getOrCreateReferralCode) rather than this
+  // listing's own id, so the shared link stays short and doesn't leak the
+  // cuid — but still lets submitDirectoryLead confirm the tag actually
+  // names the listing the lead is being submitted to, rather than trusting
+  // any `r` value present. A visitor who lands here via that link and then
+  // submits the lead form gets DirectoryLead.viaReferral set (see
+  // directory-lead-form.tsx and submitDirectoryLead), which is what the
+  // business portal's "Referred" stat counts. Offered to every visitor, not
+  // gated to a signed-in partner — anyone recommending a business they like
+  // generates the same tag, not just its own owner.
+  const recommendUrl = `${pageUrl}?r=${referralCode}`;
   const recommendMessage = formatRecommendMessage(t.recommendMessage, listing.companyName, recommendUrl);
 
   // The partner's own tagline/description/services/faqs stay the source of
@@ -406,15 +415,21 @@ export default async function DirectoryListingPage({
   ];
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(breadcrumbItems);
 
-  // Other listings sharing this one's primary category — without this,
-  // landing on a listing page from search or an AI answer engine has no
-  // path to another business except going all the way back to the
-  // directory home. Skipped entirely (no query at all) for a listing with
-  // no category, rather than loading every published listing to find none
-  // to show.
-  const relatedListings = primaryCategory
-    ? relatedListingsByCategory(await loadPublishedListings(), primaryCategory, slug, MAX_RELATED_LISTINGS).map((row) =>
-        toDirectoryGridListing(row, resolved),
+  // Two ways to reach another business from this page — without these,
+  // landing here from search or an AI answer engine has no path to another
+  // listing except going all the way back to the directory home.
+  // Deliberately NOT grouped by this listing's own category/industry (the
+  // section this replaced): the newest published listings overall, and
+  // other listings in the same state but a different industry, so a
+  // visitor sees fresh and nearby businesses rather than a list of this
+  // one's direct competitors.
+  const publishedRows = await loadPublishedListings();
+  const latestBusinesses = latestListings(publishedRows, slug, MAX_RELATED_LISTINGS).map((row) =>
+    toDirectoryGridListing(row, resolved),
+  );
+  const nearbyBusinesses = listing.state
+    ? nearbyListingsExcludingIndustry(publishedRows, listing.state, slug, listing.industry, MAX_RELATED_LISTINGS).map(
+        (row) => toDirectoryGridListing(row, resolved),
       )
     : [];
 
@@ -894,13 +909,32 @@ export default async function DirectoryListingPage({
         </div>
       </InquiryProvider>
 
-      {relatedListings.length > 0 && primaryCategory && (
-        <section aria-labelledby="related-listings" className="mt-10">
-          <h2 id="related-listings" className="text-lg font-semibold text-slate-900 dark:text-slate-100">
-            {t.relatedListingsHeading.replace("{category}", translateCategoryName(primaryCategory, resolved))}
+      {latestBusinesses.length > 0 && (
+        <section aria-labelledby="latest-businesses" className="mt-10">
+          <h2 id="latest-businesses" className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+            {t.latestBusinessesHeading}
           </h2>
           <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {relatedListings.map((related) => (
+            {latestBusinesses.map((related) => (
+              <ListingCard
+                key={related.slug}
+                listing={related}
+                viewLabel={t.viewListing}
+                industryLabel={related.industry ? INDUSTRY_LABELS_BY_LOCALE[resolved][related.industry] : undefined}
+                locale={resolved}
+              />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {nearbyBusinesses.length > 0 && (
+        <section aria-labelledby="nearby-businesses" className="mt-10">
+          <h2 id="nearby-businesses" className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+            {t.nearbyBusinessesHeading}
+          </h2>
+          <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {nearbyBusinesses.map((related) => (
               <ListingCard
                 key={related.slug}
                 listing={related}
