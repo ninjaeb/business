@@ -67,6 +67,7 @@ import { RecommendBar } from "@/components/directory/recommend-bar";
 import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
 import { VideoGallery } from "@/components/directory/video-gallery";
 import { PhotoLightbox } from "@/components/directory/photo-lightbox";
+import { ListingSectionNav } from "@/components/directory/listing-section-nav";
 
 export const dynamic = "force-dynamic";
 
@@ -433,6 +434,22 @@ export default async function DirectoryListingPage({
       )
     : [];
 
+  // The header's own jump-to-section tab strip (see ListingSectionNav) —
+  // same conditions as each section's own Card below, in the same order
+  // they appear on the page, so a tab only ever points at something that's
+  // actually there to scroll to.
+  const hasMedia = videoGallery.length > 0 || listing.photos.length > 0;
+  const sectionLinks = [
+    displayDescription && { href: "#about", label: t.aboutHeading },
+    displayServices.length > 0 && { href: "#services", label: t.servicesHeading },
+    listing.operatingHours && { href: "#hours", label: t.hoursHeading },
+    currentUpdates.length > 0 && { href: "#news", label: t.updatesHeading },
+    mapAddress && { href: "#visit", label: t.visitHeading },
+    displayFaqs.length > 0 && { href: "#faq", label: t.faqHeading },
+    hasMedia && { href: "#media", label: t.mediaHeading },
+    { href: "#contact", label: t.contactHeading },
+  ].filter((section): section is { href: string; label: string } => Boolean(section));
+
   return (
     // Top padding matches the category/location pages' own breadcrumb
     // spacing (see category-page-content.tsx/location-page-content.tsx) so
@@ -666,13 +683,15 @@ export default async function DirectoryListingPage({
           />
           <ShareButton title={listing.companyName} url={pageUrl} label={t.shareLabel} className="flex-1 justify-center" />
         </div>
+
+        <ListingSectionNav sections={sectionLinks} navLabel={t.sectionNavLabel} />
       </div>
 
       <InquiryProvider>
         <div className="grid gap-6 lg:grid-cols-3">
           <div className="space-y-6 lg:col-span-2">
             {displayDescription && (
-              <Card>
+              <Card id="about" className="scroll-mt-32">
                 <CardHeader>
                   <CardTitle className="text-base">{t.aboutHeading}</CardTitle>
                 </CardHeader>
@@ -700,7 +719,7 @@ export default async function DirectoryListingPage({
                   </Card>
                 )}
                 {listing.operatingHours && (
-                  <Card>
+                  <Card id="hours" className="scroll-mt-32">
                     <CardHeader className="gap-2">
                       <CardTitle className="flex items-center gap-1.5 text-base">
                         <Clock className="h-4 w-4 text-slate-400" />
@@ -763,7 +782,7 @@ export default async function DirectoryListingPage({
             )}
 
             {currentUpdates.length > 0 && (
-              <Card>
+              <Card id="news" className="scroll-mt-32">
                 <CardHeader>
                   <CardTitle className="text-base">{t.updatesHeading}</CardTitle>
                 </CardHeader>
@@ -793,7 +812,7 @@ export default async function DirectoryListingPage({
             )}
 
             {mapAddress && (
-              <Card>
+              <Card id="visit" className="scroll-mt-32">
                 <CardHeader>
                   <CardTitle className="text-base">{t.visitHeading}</CardTitle>
                 </CardHeader>
@@ -821,7 +840,7 @@ export default async function DirectoryListingPage({
             )}
 
             {displayFaqs.length > 0 && (
-              <Card>
+              <Card id="faq" className="scroll-mt-32">
                 <CardHeader>
                   <CardTitle className="text-base">{t.faqHeading}</CardTitle>
                 </CardHeader>
@@ -842,8 +861,8 @@ export default async function DirectoryListingPage({
               </Card>
             )}
 
-            {(videoGallery.length > 0 || listing.photos.length > 0) && (
-              <Card>
+            {hasMedia && (
+              <Card id="media" className="scroll-mt-32">
                 <CardHeader>
                   <CardTitle className="text-base">{t.mediaHeading}</CardTitle>
                 </CardHeader>

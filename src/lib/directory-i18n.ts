@@ -249,6 +249,10 @@ export type DirectoryStrings = {
   formSuccess: string;
   errors: Record<DirectoryLeadFormErrorCode, string>;
   stickyNavLabel: string;
+  // aria-label for the header's own jump-to-section tab strip (see
+  // ListingSectionNav) — same "read by assistive tech, not shown as text"
+  // role as breadcrumbNavLabel below.
+  sectionNavLabel: string;
   // aria-label for the visible breadcrumb trail (see
   // directory-breadcrumbs.tsx) — read by assistive tech, not shown as text.
   breadcrumbNavLabel: string;
@@ -411,6 +415,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       generic: "Something went wrong. Please try again.",
     },
     stickyNavLabel: "Quick links",
+    sectionNavLabel: "Page sections",
     breadcrumbNavLabel: "Breadcrumb",
     notFoundTitle: "This page isn't in the directory",
     notFoundDescription:
@@ -563,6 +568,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       generic: "出现错误，请重试。",
     },
     stickyNavLabel: "快捷链接",
+    sectionNavLabel: "页面导航",
     breadcrumbNavLabel: "面包屑导航",
     notFoundTitle: "目录中没有这个页面",
     notFoundDescription: "您查找的企业或类别可能已迁移、已下架，或从未存在。请检查链接，或从头浏览目录。",
@@ -714,6 +720,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       generic: "Berlaku ralat. Sila cuba lagi.",
     },
     stickyNavLabel: "Pautan pantas",
+    sectionNavLabel: "Bahagian halaman",
     breadcrumbNavLabel: "Navigasi laluan",
     notFoundTitle: "Halaman ini tiada dalam direktori",
     notFoundDescription:
