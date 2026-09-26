@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { Suspense } from "react";
-import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { DirectoryLanguageSwitcher } from "@/components/directory/directory-language-switcher";
 import { DirectoryNavMenu, type DirectoryViewer } from "@/components/directory/directory-nav-menu";
 import { DirectoryTopNav } from "@/components/directory/directory-top-nav";
+import { HeaderSearch } from "@/components/directory/header-search";
 import { logout } from "@/app/actions/auth";
 import { getSessionPayload } from "@/lib/session";
 import { db } from "@/lib/db";
@@ -35,9 +35,10 @@ async function getDirectoryViewer(): Promise<DirectoryViewer> {
   return user?.role === "PARTNER" ? "business" : null;
 }
 
-// The site-like header/footer (sticky nav, language + theme switches,
-// hamburger menu, footer tagline) shared by every public-facing partner
-// page — the directory itself, its listing pages, and the two forms that
+// The site-like header/footer (sticky nav, search box, hamburger menu with
+// language + theme switches tucked inside it, footer tagline) shared by
+// every public-facing partner page — the directory itself, its listing
+// pages, and the two forms that
 // sit outside it (the locale-prefixed .../signup and the bare
 // /business/login) — rather than the minimal centered-card wrapper an
 // internal admin form might use. A partner filling in a form should feel
@@ -101,57 +102,66 @@ export async function DirectoryChrome({
               {t.brandName}
             </span>
           </Link>
+          {/* Right after the logo at every width — the header's own search
+              entry point, ahead of the nav links rather than trailing them,
+              so it reads as the header's second-most prominent thing after
+              the brand itself. flex-1 (capped by its own max-width classes)
+              lets it grow into whatever space the nav/hamburger group below
+              doesn't claim, rather than sitting at a fixed width that would
+              leave dead space on a narrow screen or crowd the nav on a wide
+              one. */}
+          <HeaderSearch
+            action={directoryHref}
+            placeholder={t.searchPlaceholder}
+            className="min-w-0 flex-1 max-w-[11rem] sm:max-w-xs lg:max-w-sm"
+          />
           {/* This wrapper — not DirectoryTopNav itself — carries the ml-auto
-              that pushes everything here flush right against the header's
-              trailing edge. DirectoryTopNav is inline on lg+ screens only
-              (below lg its own four links live in DirectoryNavMenu's
-              hamburger instead — see its own comment there); putting the
-              margin on it directly meant that below lg, once it collapsed
-              to `hidden` and contributed no box at all, nothing was left to
-              push the language/theme/menu group away from the logo, and it
-              fell back to sitting flush left instead. Wrapping both in one
-              flex container keeps the group right-aligned at every width,
-              lg+ included, where DirectoryTopNav still sits flush against
-              it exactly as before. */}
-          <div className="ml-auto flex items-center gap-3">
+              that pushes the nav+hamburger group flush right against the
+              header's trailing edge. DirectoryTopNav is inline on lg+
+              screens only (below lg its own four links live in
+              DirectoryNavMenu's hamburger instead — see its own comment
+              there); putting the margin on it directly would leave nothing
+              to push the hamburger right once DirectoryTopNav collapses to
+              `hidden` and contributes no box at all below lg. */}
+          <div className="ml-auto flex shrink-0 items-center gap-3">
             <DirectoryTopNav navLabel={t.topNavLabel} items={topNavItems} className="hidden lg:flex" />
-            <div className="flex shrink-0 items-center gap-1">
-              {/* useSearchParams() (see directory-language-switcher.tsx, for
-                  preserving the query string across a language swap) requires
-                  a Suspense boundary around anything that might otherwise be
-                  statically prerendered — the fallback is sized/styled the
-                  same as the real switcher so there's no visible flash. */}
-              <Suspense
-                fallback={
-                  <div className="flex gap-1" aria-hidden="true">
-                    {DIRECTORY_LOCALES.map((option) => (
-                      <span key={option.code} className="rounded-md px-2 py-1 text-xs font-medium text-slate-500 dark:text-slate-400">
-                        {option.label}
-                      </span>
-                    ))}
-                  </div>
-                }
-              >
-                <DirectoryLanguageSwitcher current={locale} />
-              </Suspense>
-              <ThemeToggle />
-              <DirectoryNavMenu
-                viewer={viewer}
-                logoutAction={logout}
-                loginLabel={t.navLoginRegister}
-                listBusinessLabel={t.listBusinessCta}
-                benefitsLabel={t.benefitsNavLabel}
-                directoryLabel={t.brandName}
-                myBusinessLabel={t.navMyBusiness}
-                addBusinessLabel={t.navAddBusiness}
-                businessNavItems={localizedBusinessNavItems(locale)}
-                topNavItems={topNavItems}
-                signOutLabel={t.navSignOut}
-                directoryHref={directoryHref}
-                signupHref={signupHref}
-                benefitsHref={benefitsHref}
-              />
-            </div>
+            <DirectoryNavMenu
+              viewer={viewer}
+              logoutAction={logout}
+              loginLabel={t.navLoginRegister}
+              listBusinessLabel={t.listBusinessCta}
+              benefitsLabel={t.benefitsNavLabel}
+              directoryLabel={t.brandName}
+              myBusinessLabel={t.navMyBusiness}
+              addBusinessLabel={t.navAddBusiness}
+              businessNavItems={localizedBusinessNavItems(locale)}
+              topNavItems={topNavItems}
+              languageSwitcher={
+                // useSearchParams() (see directory-language-switcher.tsx, for
+                // preserving the query string across a language swap)
+                // requires a Suspense boundary around anything that might
+                // otherwise be statically prerendered — the fallback is
+                // sized/styled the same as the real switcher so there's no
+                // visible flash the moment the dropdown first opens.
+                <Suspense
+                  fallback={
+                    <div className="flex gap-1" aria-hidden="true">
+                      {DIRECTORY_LOCALES.map((option) => (
+                        <span key={option.code} className="rounded-md px-2 py-1 text-xs font-medium text-slate-500 dark:text-slate-400">
+                          {option.label}
+                        </span>
+                      ))}
+                    </div>
+                  }
+                >
+                  <DirectoryLanguageSwitcher current={locale} />
+                </Suspense>
+              }
+              signOutLabel={t.navSignOut}
+              directoryHref={directoryHref}
+              signupHref={signupHref}
+              benefitsHref={benefitsHref}
+            />
           </div>
         </div>
       </header>

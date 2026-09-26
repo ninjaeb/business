@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { LogIn, LogOut, Menu, Plus, Sparkles, Store, X } from "lucide-react";
 import { createListingAction } from "@/app/actions/directory";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { cn } from "@/lib/utils";
 
 // Who's currently browsing, as far as the hamburger menu cares — a signed-
@@ -28,6 +29,7 @@ export function DirectoryNavMenu({
   addBusinessLabel,
   businessNavItems,
   topNavItems,
+  languageSwitcher,
   signOutLabel,
   directoryHref,
   signupHref,
@@ -52,6 +54,13 @@ export function DirectoryNavMenu({
   // just left to that inline nav: below lg there's no second row for them
   // to live in anymore, so the hamburger is their only way in at that width.
   topNavItems: { href: string; label: string }[];
+  // Rendered as-is, already wrapped in whatever Suspense boundary
+  // useSearchParams() needs (see directory-chrome.tsx) — DirectoryNavMenu
+  // itself has no reason to know that requirement, only to place the
+  // result next to ThemeToggle at the bottom of the dropdown, where both
+  // used to sit inline in the header before there was no longer room for
+  // them there either (see DirectoryTopNav's own move into this same menu).
+  languageSwitcher: React.ReactNode;
   signOutLabel: string;
   // Locale-aware (see directory-chrome.tsx) — never a bare "/directory" or
   // "/directory/signup" here, so a click from within the locale-prefixed
@@ -171,6 +180,18 @@ export function DirectoryNavMenu({
               </button>
             </form>
           )}
+          {/* Language + theme, moved here from the header row they used to
+              sit in inline next to this same hamburger button — freeing
+              that space up for the header's own search box. Not menuitems:
+              neither navigates or closes the menu on click (switching
+              language re-renders this same open menu in the new language;
+              toggling theme is a preference flip a visitor might want to
+              try more than once in a row), so this row is excluded from
+              the role="menu" semantics above it. */}
+          <div className="flex items-center justify-between gap-2 border-t border-slate-100 px-3 pb-1 pt-2 dark:border-neutral-800">
+            {languageSwitcher}
+            <ThemeToggle className="text-slate-500 hover:bg-slate-100 hover:text-slate-900 dark:hover:bg-neutral-800 dark:hover:text-slate-100" />
+          </div>
         </div>
       )}
     </div>
