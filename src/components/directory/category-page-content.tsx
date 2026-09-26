@@ -28,7 +28,6 @@ import {
   directoryShareImage,
 } from "@/lib/directory-seo";
 import { translateCategoryName, categoryPath, categoryPageTitle, categoryPageHeading, categoryPageDescription } from "@/lib/directory-category-labels";
-import { INDUSTRIES } from "@/lib/labels";
 import { DirectorySearch } from "@/components/directory/directory-search";
 import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
 
@@ -135,7 +134,6 @@ export async function CategoryPageContent({
       </div>
       <DirectorySearch
         listings={listings}
-        industries={INDUSTRIES}
         industryLabels={INDUSTRY_LABELS_BY_LOCALE[locale]}
         categories={businessCategories.map((row) => ({ value: row.name, label: translateCategoryName(row.name, locale) }))}
         t={t}

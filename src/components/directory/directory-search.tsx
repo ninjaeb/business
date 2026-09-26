@@ -5,14 +5,13 @@ import { Search, Handshake, X } from "lucide-react";
 import { ListingCard } from "@/components/directory/listing-card";
 import { ShareButton } from "@/components/directory/share-button";
 import { EmptyState } from "@/components/ui/empty-state";
-import { Input, Select } from "@/components/ui/field";
+import { Input } from "@/components/ui/field";
 import type { DirectoryGridListing } from "@/lib/directory";
 import type { Industry } from "@/generated/prisma/client";
 import type { DirectoryLocale, DirectoryStrings } from "@/lib/directory-i18n";
 
 export function DirectorySearch({
   listings,
-  industries,
   industryLabels,
   categories,
   t,
@@ -27,7 +26,6 @@ export function DirectorySearch({
   subheading,
 }: {
   listings: DirectoryGridListing[];
-  industries: Industry[];
   industryLabels: Record<Industry, string>;
   // value stays the English category name a listing's snapshot actually
   // stores (see readPublishedSnapshot) so filtering/the URL query param
@@ -37,7 +35,14 @@ export function DirectorySearch({
   t: DirectoryStrings;
   locale: DirectoryLocale;
   initialQuery: string;
+  // Set from a listing's own Industry pill (see the listing detail page) —
+  // there's no dropdown to pick one from, so a plain chip with its own
+  // clear button (grouped with State/Country below) is the only way back
+  // to the unfiltered list.
   initialIndustry: string;
+  // Set by a category page (see category-page-content.tsx), which already
+  // has its own navigation back to the rest of the directory, so unlike
+  // industry/state/country this never needs a clear button here.
   initialCategory: string;
   // Set from a listing's own State/Country pill (see the listing detail
   // page) — no dropdown for these, since they're free text rather than a
@@ -58,12 +63,19 @@ export function DirectorySearch({
   // the same reasoning the server-side filter this replaced already relied
   // on (see the page's own fetch comment).
   const [query, setQuery] = useState(initialQuery);
+  // No dropdown for these (see the type comments above) — set once from the
+  // URL a pill linked to, cleared only via the chip below.
   const [industry, setIndustry] = useState(initialIndustry);
-  const [category, setCategory] = useState(initialCategory);
-  // No dropdown for these (see the type comment above) — set once from the
-  // URL a State/Country pill linked to, cleared only via the chip below.
   const [state, setState] = useState(initialState);
   const [country, setCountry] = useState(initialCountry);
+  // Never cleared from here (see the type comment above), so this doesn't
+  // need to be state at all.
+  const category = initialCategory;
+
+  // Maps a listing's stored (English) category name to its translated
+  // label, so free text search matches what's actually shown on screen
+  // (see the categories prop comment above).
+  const categoryLabelByValue = useMemo(() => new Map(categories.map((cat) => [cat.value, cat.label])), [categories]);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -73,14 +85,17 @@ export function DirectorySearch({
       if (state && listing.state !== state) return false;
       if (country && listing.country !== country) return false;
       if (!q) return true;
+      const industryLabel = listing.industry ? industryLabels[listing.industry] : undefined;
       return (
         listing.companyName.toLowerCase().includes(q) ||
         listing.services.some(
           (service) => service.title.toLowerCase().includes(q) || service.description.toLowerCase().includes(q),
-        )
+        ) ||
+        (industryLabel?.toLowerCase().includes(q) ?? false) ||
+        listing.categories.some((cat) => (categoryLabelByValue.get(cat) ?? cat).toLowerCase().includes(q))
       );
     });
-  }, [listings, query, industry, category, state, country]);
+  }, [listings, query, industry, category, state, country, industryLabels, categoryLabelByValue]);
 
   return (
     <>
@@ -105,35 +120,27 @@ export function DirectorySearch({
                 className="pl-9"
               />
             </div>
-            <div className="mt-3 flex flex-col flex-wrap justify-center gap-2 sm:flex-row">
-              <Select value={industry} onChange={(event) => setIndustry(event.target.value)} className="sm:w-56">
-                <option value="">{t.allIndustries}</option>
-                {industries.map((code) => (
-                  <option key={code} value={code}>
-                    {industryLabels[code]}
-                  </option>
-                ))}
-              </Select>
-              {categories.length > 0 && (
-                <Select value={category} onChange={(event) => setCategory(event.target.value)} className="sm:w-56">
-                  <option value="">{t.allCategories}</option>
-                  {categories.map((cat) => (
-                    <option key={cat.value} value={cat.value}>
-                      {cat.label}
-                    </option>
-                  ))}
-                </Select>
-              )}
-            </div>
           </form>
 
-          {/* Only ever set by following a listing's own State/Country pill
-              (see the listing detail page) — there's no dropdown for these
-              (free text, not a fixed enum like industry), so a plain chip
-              with its own clear button is the only way back to the
-              unfiltered list. */}
-          {(state || country) && (
+          {/* Only ever set by following a listing's own Industry/State/Country
+              pill (see the listing detail page) — there's no dropdown for
+              these, so a plain chip with its own clear button is the only
+              way back to the unfiltered list. */}
+          {(industry || state || country) && (
             <div className="mt-3 flex flex-wrap items-center justify-center gap-2 text-sm">
+              {industry && (
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-slate-100 py-1 pl-3 pr-1.5 text-slate-700 dark:bg-neutral-800 dark:text-slate-200">
+                  {industryLabels[industry as Industry]}
+                  <button
+                    type="button"
+                    onClick={() => setIndustry("")}
+                    aria-label={`Clear ${industryLabels[industry as Industry]} filter`}
+                    className="rounded-full p-0.5 hover:bg-slate-200 dark:hover:bg-neutral-700"
+                  >
+                    <X className="h-3.5 w-3.5" />
+                  </button>
+                </span>
+              )}
               {state && (
                 <span className="inline-flex items-center gap-1.5 rounded-full bg-slate-100 py-1 pl-3 pr-1.5 text-slate-700 dark:bg-neutral-800 dark:text-slate-200">
                   {state}

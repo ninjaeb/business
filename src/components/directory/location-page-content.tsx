@@ -28,7 +28,6 @@ import {
 import { locationPath, locationPageTitle, locationPageHeading, locationPageDescription } from "@/lib/directory-location-labels";
 import { translateCategoryName } from "@/lib/directory-category-labels";
 import { slugify } from "@/lib/slug";
-import { INDUSTRIES } from "@/lib/labels";
 import { DirectorySearch } from "@/components/directory/directory-search";
 import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
 
@@ -128,7 +127,6 @@ export async function LocationPageContent({
       </div>
       <DirectorySearch
         listings={listings}
-        industries={INDUSTRIES}
         industryLabels={INDUSTRY_LABELS_BY_LOCALE[locale]}
         categories={businessCategories.map((row) => ({ value: row.name, label: translateCategoryName(row.name, locale) }))}
         t={t}
