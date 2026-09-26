@@ -447,10 +447,10 @@ export default async function DirectoryListingPage({
     displayDescription && { href: "#about", label: t.aboutHeading },
     displayServices.length > 0 && { href: "#services", label: t.servicesHeading },
     listing.operatingHours && { href: "#hours", label: t.hoursHeading },
+    displayFaqs.length > 0 && { href: "#faq", label: t.faqHeading },
     hasMedia && { href: "#media", label: t.mediaHeading },
     currentUpdates.length > 0 && { href: "#news", label: t.updatesHeading },
     mapAddress && { href: "#visit", label: t.visitHeading },
-    displayFaqs.length > 0 && { href: "#faq", label: t.faqHeading },
     { href: "#contact", label: t.contactHeading },
   ].filter((section): section is { href: string; label: string } => Boolean(section));
 
@@ -809,6 +809,28 @@ export default async function DirectoryListingPage({
               </div>
             )}
 
+            {displayFaqs.length > 0 && (
+              <Card id="faq" className="scroll-mt-32">
+                <CardHeader>
+                  <CardTitle className="text-base">{t.faqHeading}</CardTitle>
+                </CardHeader>
+                <CardBody className="space-y-2">
+                  {displayFaqs.map((faq, index) => (
+                    <details
+                      key={index}
+                      className="group rounded-md border border-slate-200 px-3 py-2 dark:border-neutral-800"
+                    >
+                      <summary className="flex cursor-pointer list-none items-center justify-between gap-2 text-base font-semibold text-slate-900 marker:content-none dark:text-slate-100">
+                        {faq.question}
+                        <ChevronDown className="h-4 w-4 shrink-0 text-slate-400 transition-transform group-open:rotate-180" />
+                      </summary>
+                      <p className="mt-2 text-base text-slate-600 dark:text-slate-300">{faq.answer}</p>
+                    </details>
+                  ))}
+                </CardBody>
+              </Card>
+            )}
+
             {hasMedia && (
               <Card id="media" className="scroll-mt-32">
                 <CardHeader>
@@ -918,28 +940,6 @@ export default async function DirectoryListingPage({
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                   />
-                </CardBody>
-              </Card>
-            )}
-
-            {displayFaqs.length > 0 && (
-              <Card id="faq" className="scroll-mt-32">
-                <CardHeader>
-                  <CardTitle className="text-base">{t.faqHeading}</CardTitle>
-                </CardHeader>
-                <CardBody className="space-y-2">
-                  {displayFaqs.map((faq, index) => (
-                    <details
-                      key={index}
-                      className="group rounded-md border border-slate-200 px-3 py-2 dark:border-neutral-800"
-                    >
-                      <summary className="flex cursor-pointer list-none items-center justify-between gap-2 text-base font-semibold text-slate-900 marker:content-none dark:text-slate-100">
-                        {faq.question}
-                        <ChevronDown className="h-4 w-4 shrink-0 text-slate-400 transition-transform group-open:rotate-180" />
-                      </summary>
-                      <p className="mt-2 text-base text-slate-600 dark:text-slate-300">{faq.answer}</p>
-                    </details>
-                  ))}
                 </CardBody>
               </Card>
             )}
