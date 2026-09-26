@@ -165,3 +165,22 @@ export const VIDEO_CATEGORY_LABELS: Record<VideoCategory, string> = {
   EVENT: "Event",
   OTHER: "Other",
 };
+
+// Which host a listing video's URL resolves to (see toEmbeddableVideoUrl in
+// directory.ts, which detects and uses this) — kept here rather than there
+// for the same reason as VideoCategory above: the video lightbox
+// (video-gallery.tsx, a "use client" component) needs the display names
+// below at runtime to build its "Watch on {provider}" link, and directory.ts
+// itself imports "@/lib/db", which can't be bundled for the browser.
+export type VideoProvider = "youtube" | "vimeo" | "dailymotion" | "facebook" | "tiktok";
+
+// Brand names, not translated — same spelling in every locale, unlike the
+// surrounding "Watch on ___" phrase itself (see watchOnProviderLabel in
+// directory-i18n.ts).
+export const VIDEO_PROVIDER_DISPLAY_NAMES: Record<VideoProvider, string> = {
+  youtube: "YouTube",
+  vimeo: "Vimeo",
+  dailymotion: "Dailymotion",
+  facebook: "Facebook",
+  tiktok: "TikTok",
+};

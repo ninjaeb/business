@@ -221,8 +221,13 @@ export type DirectoryStrings = {
   // embed failing, like YouTube's "Sign in to confirm you're not a bot"
   // gate some visitors' networks trigger, isn't detectable from a
   // cross-origin iframe), so a visitor whose embed doesn't play always has
-  // a working way to actually watch it.
-  watchOnOriginalSiteLabel: string;
+  // a working way to actually watch it. A "{provider}" token gets replaced
+  // with the actual brand name (VIDEO_PROVIDER_DISPLAY_NAMES in
+  // lib/directory.ts, never itself translated) — its own word order in the
+  // phrase is written to read naturally in this language, which isn't the
+  // same order in every locale (contrast "Watch on {provider}" with
+  // Chinese's "在{provider}观看", verb last).
+  watchOnProviderLabel: string;
   photosHeading: string;
   updatesHeading: string;
   newsLabel: string;
@@ -390,7 +395,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     aboutHeading: "About",
     mediaHeading: "Photo and Video",
     videoHeading: "Videos",
-    watchOnOriginalSiteLabel: "Watch on the original site",
+    watchOnProviderLabel: "Watch on {provider}",
     photosHeading: "Photos",
     updatesHeading: "News & Promotions",
     newsLabel: "News",
@@ -548,7 +553,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     aboutHeading: "关于",
     mediaHeading: "照片与视频",
     videoHeading: "视频",
-    watchOnOriginalSiteLabel: "在原网站观看",
+    watchOnProviderLabel: "在{provider}观看",
     photosHeading: "照片",
     updatesHeading: "新闻与促销",
     newsLabel: "新闻",
@@ -705,7 +710,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     aboutHeading: "Tentang",
     mediaHeading: "Foto & Video",
     videoHeading: "Video",
-    watchOnOriginalSiteLabel: "Tonton di laman asal",
+    watchOnProviderLabel: "Tonton di {provider}",
     photosHeading: "Foto",
     updatesHeading: "Berita & Promosi",
     newsLabel: "Berita",
