@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import Link from "next/link";
 import { ExternalLink, Eye, Megaphone, Plus, Store } from "lucide-react";
 import { createListingAction } from "@/app/actions/directory";
@@ -59,6 +60,8 @@ export default async function PartnerListingsPage() {
             // post, same condition as [slug]/page.tsx's own currentUpdates.
             const publishedUpdates = readPublishedSnapshot(listing.publishedSnapshot)?.updates ?? [];
             const hasCurrentUpdates = publishedUpdates.some((update) => isUpdateCurrent(update, todayIso));
+            const viewBreakdown = listingViewCountBreakdown(listing);
+            const trackedViewCount = viewBreakdown.reduce((sum, { count }) => sum + count, 0);
             return (
               <Card key={listing.id}>
                 <CardBody className="space-y-3">
@@ -104,13 +107,23 @@ export default async function PartnerListingsPage() {
                       <span className="inline-flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-slate-500 dark:text-slate-400">
                         <span className="inline-flex items-center gap-1">
                           <Eye className="h-3.5 w-3.5" />
-                          {listing.viewCount.toLocaleString()} view{listing.viewCount === 1 ? "" : "s"}
+                          {trackedViewCount.toLocaleString()} view{trackedViewCount === 1 ? "" : "s"}
                         </span>
                         <span className="text-xs text-slate-400 dark:text-slate-500">
                           (
-                          {listingViewCountBreakdown(listing)
-                            .map(({ label, count }) => `${label} ${count.toLocaleString()}`)
-                            .join(" · ")}
+                          {viewBreakdown.map(({ locale, label, count }, i) => (
+                            <Fragment key={locale}>
+                              {i > 0 && " · "}
+                              <Link
+                                href={`${siteOrigin}${directoryListingPath(locale, listing.slug)}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:text-petrol hover:underline dark:hover:text-petrol-light"
+                              >
+                                {label} {count.toLocaleString()}
+                              </Link>
+                            </Fragment>
+                          ))}
                           )
                         </span>
                       </span>
