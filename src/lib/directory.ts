@@ -1,3 +1,4 @@
+import { cache } from "react";
 import { db } from "@/lib/db";
 import type { Industry, PartnerListing, Prisma } from "@/generated/prisma/client";
 import { operatingHoursFromJson, type OperatingHours } from "@/lib/operating-hours";
@@ -598,7 +599,13 @@ export async function loadPublishedListings(): Promise<PublishedListingRow[]> {
 // snapshot). Shared by the listing detail page's own metadata/body and its
 // opengraph-image route (src/app/[locale]/[slug]/opengraph-image.tsx),
 // which needs the same company name/services/description a visitor sees.
-export async function getPublishedListingBySlug(slug: string) {
+// Wrapped in React's cache() since the listing now also has its own shared
+// layout (src/app/[locale]/[slug]/layout.tsx) plus one route per section
+// (products-services/, photos/, videos/, news/, promotions/, visit/, faq/)
+// — every one of those, and each one's own generateMetadata, calls this
+// with the same slug for the same request, and this dedupes them to a
+// single DB round trip rather than one per file.
+export const getPublishedListingBySlug = cache(async (slug: string) => {
   const listing = await db.partnerListing.findUnique({ where: { slug } });
   if (!listing) return null;
   const snapshot = readPublishedSnapshot(listing.publishedSnapshot);
@@ -618,6 +625,56 @@ export async function getPublishedListingBySlug(slug: string) {
         referralCode: listing.referralCode,
       }
     : null;
+});
+
+export type ListingDisplay = {
+  tagline: string;
+  description: string;
+  services: ServiceEntry[];
+  faqs: FaqEntry[];
+  videoGallery: { url: string; title: string; category: VideoCategory; thumbnailUrl: string | null; embed: { embedUrl: string; provider: VideoProvider } | null }[];
+  hasMedia: boolean;
+  currentUpdates: ListingUpdateEntry[];
+  currentNews: ListingUpdateEntry[];
+  currentPromotions: ListingUpdateEntry[];
+};
+
+// Resolves which language's Tagline/About/Products & services/FAQ/Updates
+// actually show for a given locale — the partner's own primary-language
+// fields, unless a translation covers that particular one (see
+// ListingTranslations) — plus the small amount of further derived data
+// several section pages need (which updates are still current, split by
+// kind; which videos have a working embed). Kept as one function rather
+// than duplicated across the shared layout and each of the listing's own
+// section pages: every one of those independently calls this on the exact
+// same already-fetched (and cache()d, see above) listing object, so
+// nothing re-hits the database, only this plain derivation re-runs.
+export function resolveListingDisplay(
+  listing: NonNullable<Awaited<ReturnType<typeof getPublishedListingBySlug>>>,
+  locale: DirectoryLocale,
+): ListingDisplay {
+  const translation = locale === "zh" || locale === "ms" ? listing.translations[locale] : undefined;
+  const tagline = translation?.tagline || listing.tagline || "";
+  const description = translation?.description || listing.description || "";
+  const services = translation?.services?.length ? translation.services : listing.services;
+  const faqs = translation?.faqs?.length ? translation.faqs : listing.faqs;
+  const updates = translation?.updates?.length ? translation.updates : listing.updates;
+  const todayIso = new Date().toISOString().slice(0, 10);
+  const currentUpdates = updates.filter((update) => isUpdateCurrent(update, todayIso));
+  const currentPromotions = currentUpdates.filter((update) => update.kind === "PROMOTION");
+  const currentNews = currentUpdates.filter((update) => update.kind === "NEWS");
+  const videoGallery = listing.videos.map((video) => ({ ...video, embed: toEmbeddableVideoUrl(video.url) }));
+  return {
+    tagline,
+    description,
+    services,
+    faqs,
+    videoGallery,
+    hasMedia: videoGallery.length > 0 || listing.photos.length > 0,
+    currentUpdates,
+    currentNews,
+    currentPromotions,
+  };
 }
 
 const REFERRAL_CODE_LENGTH = 7;

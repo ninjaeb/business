@@ -71,6 +71,43 @@ export function directoryListingPath(locale: DirectoryLocale, slug: string): str
   return `/${locale}/${slug}`;
 }
 
+// A listing's own sections, each its own real page/route (see
+// src/app/[locale]/[slug]/layout.tsx and its sibling section folders)
+// rather than an anchor within the single page they used to be — a
+// visitor, a search engine, and an AI crawler can all now link straight
+// to (say) just this business's Products & Services instead of the whole
+// listing. About has no path of its own: it's what the bare listing URL
+// above already shows, same as it always has. Hours has no path of its
+// own either — folded into Visit us below, since a "when/where to visit"
+// page reads more naturally with both than as two separate one-fact pages.
+export function directoryListingServicesPath(locale: DirectoryLocale, slug: string): string {
+  return `${directoryListingPath(locale, slug)}/products-services`;
+}
+
+export function directoryListingPhotosPath(locale: DirectoryLocale, slug: string): string {
+  return `${directoryListingPath(locale, slug)}/photos`;
+}
+
+export function directoryListingVideosPath(locale: DirectoryLocale, slug: string): string {
+  return `${directoryListingPath(locale, slug)}/videos`;
+}
+
+export function directoryListingNewsPath(locale: DirectoryLocale, slug: string): string {
+  return `${directoryListingPath(locale, slug)}/news`;
+}
+
+export function directoryListingPromotionsPath(locale: DirectoryLocale, slug: string): string {
+  return `${directoryListingPath(locale, slug)}/promotions`;
+}
+
+export function directoryListingVisitPath(locale: DirectoryLocale, slug: string): string {
+  return `${directoryListingPath(locale, slug)}/visit`;
+}
+
+export function directoryListingFaqPath(locale: DirectoryLocale, slug: string): string {
+  return `${directoryListingPath(locale, slug)}/faq`;
+}
+
 // The main top-nav's four destinations (directory-top-nav.tsx) — real
 // index/feed pages, distinct from the existing per-category (categoryPath)
 // / per-location (locationPath) pages they each link out to.
@@ -232,6 +269,10 @@ export type DirectoryStrings = {
   updatesHeading: string;
   newsLabel: string;
   promotionLabel: string;
+  // The Promotions page's own heading (English pluralizes; newsLabel above
+  // doubles as the News page's heading unchanged, since "News" is already
+  // the same word singular or plural).
+  promotionsHeading: string;
   faqHeading: string;
   visitHeading: string;
   hoursHeading: string;
@@ -400,6 +441,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     updatesHeading: "News & Promotions",
     newsLabel: "News",
     promotionLabel: "Promotion",
+    promotionsHeading: "Promotions",
     faqHeading: "Frequently asked questions",
     visitHeading: "Visit us",
     hoursHeading: "Hours",
@@ -558,6 +600,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     updatesHeading: "新闻与促销",
     newsLabel: "新闻",
     promotionLabel: "促销",
+    promotionsHeading: "促销",
     faqHeading: "常见问题",
     visitHeading: "联系地址",
     hoursHeading: "营业时间",
@@ -715,6 +758,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     updatesHeading: "Berita & Promosi",
     newsLabel: "Berita",
     promotionLabel: "Promosi",
+    promotionsHeading: "Promosi",
     faqHeading: "Soalan lazim",
     visitHeading: "Lawati kami",
     hoursHeading: "Waktu Operasi",

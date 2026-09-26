@@ -1,11 +1,16 @@
-// A tab-like row of jump links to this listing's own sections (About,
-// Services, News & Promotions, etc.) — plain anchors to each section's own
-// id (see the Card ids in [slug]/page.tsx), not real show/hide tabs: every
-// section still renders (and stays crawlable/scrollable) all the time, this
-// just gives a visitor already on the page a fast way to a specific one.
-// Server-rendered, like the rest of the header — no active-section
-// highlighting, which would need scroll-spy JS this page doesn't otherwise
-// need.
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
+
+// A tab-like row of links to this listing's own sections (About, Products &
+// Services, News, etc.) — each its own real page now (see
+// src/app/[locale]/[slug]/layout.tsx and its section route folders), not an
+// anchor within one single page the way this used to work, so "use client"
+// + usePathname() here just tells the current page's own tab apart from the
+// rest; no scroll-spy needed since there's nothing to scroll past on another
+// tab's page anymore.
 export function ListingSectionNav({
   sections,
   navLabel,
@@ -13,6 +18,7 @@ export function ListingSectionNav({
   sections: { href: string; label: string }[];
   navLabel: string;
 }) {
+  const pathname = usePathname();
   if (sections.length < 2) return null;
 
   return (
@@ -20,15 +26,24 @@ export function ListingSectionNav({
       aria-label={navLabel}
       className="mt-4 -mb-4 flex gap-5 overflow-x-auto border-t border-slate-200 pt-0.5 dark:border-neutral-800"
     >
-      {sections.map((section) => (
-        <a
-          key={section.href}
-          href={section.href}
-          className="shrink-0 whitespace-nowrap border-b-2 border-transparent py-3 text-sm font-medium text-slate-500 transition-colors hover:border-petrol/40 hover:text-petrol-ink dark:text-slate-400 dark:hover:text-petrol-light"
-        >
-          {section.label}
-        </a>
-      ))}
+      {sections.map((section) => {
+        const isActive = pathname === section.href;
+        return (
+          <Link
+            key={section.href}
+            href={section.href}
+            aria-current={isActive ? "page" : undefined}
+            className={cn(
+              "shrink-0 whitespace-nowrap border-b-2 py-3 text-sm font-medium transition-colors",
+              isActive
+                ? "border-petrol text-petrol-ink dark:border-petrol-light dark:text-petrol-light"
+                : "border-transparent text-slate-500 hover:border-petrol/40 hover:text-petrol-ink dark:text-slate-400 dark:hover:text-petrol-light",
+            )}
+          >
+            {section.label}
+          </Link>
+        );
+      })}
     </nav>
   );
 }
