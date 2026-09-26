@@ -134,6 +134,10 @@ export type DirectoryStrings = {
   // recommendMessage below, since this is localized data, not code.
   relatedListingsHeading: string;
   aboutHeading: string;
+  // The section wrapping Video and Photos together (see VideoGallery's own
+  // placement in [locale]/[slug]/page.tsx) — videoHeading/photosHeading
+  // still exist as the two sub-headings shown when a listing has both.
+  mediaHeading: string;
   videoHeading: string;
   photosHeading: string;
   updatesHeading: string;
@@ -271,6 +275,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     servicesHeading: "Products & Services",
     relatedListingsHeading: "More businesses in {category}",
     aboutHeading: "About",
+    mediaHeading: "Media",
     videoHeading: "Videos",
     photosHeading: "Photos",
     updatesHeading: "News & Promotions",
@@ -401,6 +406,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     servicesHeading: "产品与服务",
     relatedListingsHeading: "更多{category}企业",
     aboutHeading: "关于",
+    mediaHeading: "媒体",
     videoHeading: "视频",
     photosHeading: "照片",
     updatesHeading: "新闻与促销",
@@ -530,6 +536,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     servicesHeading: "Produk & Perkhidmatan",
     relatedListingsHeading: "Lebih banyak perniagaan dalam kategori {category}",
     aboutHeading: "Tentang",
+    mediaHeading: "Media",
     videoHeading: "Video",
     photosHeading: "Foto",
     updatesHeading: "Berita & Promosi",
