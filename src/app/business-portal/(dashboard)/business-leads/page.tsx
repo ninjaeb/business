@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Inbox, Handshake, Trophy, Wallet } from "lucide-react";
+import { Inbox, Handshake, ThumbsUp, Trophy, Wallet } from "lucide-react";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { db } from "@/lib/db";
 import { getDirectoryLeadStatsForPartner } from "@/lib/directory";
@@ -30,6 +30,7 @@ export default async function PartnerDirectoryLeadsPage() {
         company: true,
         status: true,
         value: true,
+        viaReferral: true,
         createdAt: true,
         closedAt: true,
         listing: { select: { companyName: true } },
@@ -41,11 +42,12 @@ export default async function PartnerDirectoryLeadsPage() {
     <div className="space-y-6">
       <PageHeader title="Business Leads" description="Inquiries sent through your public listings" />
 
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
         <StatCard label="New" value={stats.new.toString()} icon={Inbox} accent="sky" />
         <StatCard label="Open" value={stats.open.toString()} icon={Handshake} accent="amber" />
         <StatCard label="Won" value={stats.won.toString()} icon={Trophy} accent="emerald" />
         <StatCard label="Won value" value={formatCurrencyExact(stats.wonValue, currency)} icon={Wallet} accent="indigo" />
+        <StatCard label="Referred" value={stats.referred.toString()} description="Via your Recommend link" icon={ThumbsUp} accent="orange" />
       </div>
 
       <Card>
@@ -78,9 +80,19 @@ export default async function PartnerDirectoryLeadsPage() {
                   {leads.map((lead) => (
                     <tr key={lead.id}>
                       <td className="py-2.5 pr-3">
-                        <Link href={`/business-portal/business-leads/${lead.id}`} className="hover:text-petrol dark:hover:text-petrol-light">
-                          <p className="font-medium text-slate-800 dark:text-slate-200">{lead.name}</p>
-                          {lead.company && <p className="text-xs text-slate-400">{lead.company}</p>}
+                        <Link
+                          href={`/business-portal/business-leads/${lead.id}`}
+                          className="inline-flex items-start gap-1.5 hover:text-petrol dark:hover:text-petrol-light"
+                        >
+                          {lead.viaReferral && (
+                            <span className="mt-0.5 shrink-0" title="Came in through your Recommend link">
+                              <ThumbsUp className="h-3.5 w-3.5 text-orange-500 dark:text-orange-400" aria-hidden="true" />
+                            </span>
+                          )}
+                          <span>
+                            <p className="font-medium text-slate-800 dark:text-slate-200">{lead.name}</p>
+                            {lead.company && <p className="text-xs text-slate-400">{lead.company}</p>}
+                          </span>
                         </Link>
                       </td>
                       <td className="py-2.5 pr-3 whitespace-nowrap text-slate-600 dark:text-slate-300">

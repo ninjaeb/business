@@ -908,13 +908,18 @@ export type DirectoryLeadStats = {
   won: number;
   lost: number;
   wonValue: number;
+  // How many of the above came in through the listing's Recommend link
+  // (DirectoryLead.viaReferral) — a subset of total, not a separate
+  // funnel stage, so it's not folded into new/open/won/lost above.
+  referred: number;
 };
 
 async function computeDirectoryLeadStats(where: Prisma.DirectoryLeadWhereInput): Promise<DirectoryLeadStats> {
-  const [total, byStatus, wonAgg] = await Promise.all([
+  const [total, byStatus, wonAgg, referred] = await Promise.all([
     db.directoryLead.count({ where }),
     db.directoryLead.groupBy({ by: ["status"], where, _count: { _all: true } }),
     db.directoryLead.aggregate({ where: { ...where, status: "WON" }, _sum: { value: true } }),
+    db.directoryLead.count({ where: { ...where, viaReferral: true } }),
   ]);
   const counts = new Map<string, number>(byStatus.map((row) => [row.status, row._count._all]));
   const won = counts.get("WON") ?? 0;
@@ -926,6 +931,7 @@ async function computeDirectoryLeadStats(where: Prisma.DirectoryLeadWhereInput):
     won,
     lost,
     wonValue: Number(wonAgg._sum.value ?? 0),
+    referred,
   };
 }
 

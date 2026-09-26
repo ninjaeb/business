@@ -165,6 +165,11 @@ export async function submitDirectoryLead(
       company: parsed.data.company || null,
       message: parsed.data.message,
       locale: isDirectoryLocale(locale) ? locale : DEFAULT_DIRECTORY_LOCALE,
+      // Set by the Recommend button's own link (see recommendUrl in
+      // src/app/[locale]/[slug]/page.tsx), carried through as a hidden
+      // field (see directory-lead-form.tsx) — never trust it beyond this
+      // one exact-match check, since it's unauthenticated visitor input.
+      viaReferral: formData.get("ref") === "recommend",
     },
   });
 
