@@ -1036,7 +1036,7 @@ export function PartnerListingForm({
       {/* Videos and Photos aren't per-language either (same reasoning as
           News & Promotions above), so this has no use for the language
           tabs and lives in its own top-level section too. */}
-      <div className={cn("grid gap-4 sm:grid-cols-2", activeSection !== "media" && "hidden")}>
+      <div className={cn("mt-4 grid gap-4 sm:grid-cols-2", activeSection !== "media" && "hidden")}>
         <div>
           <h3 className="mb-1.5 text-sm font-semibold text-slate-900 dark:text-slate-100">Photos</h3>
           <ListingPhotosEditor listingId={listingId} initialPhotos={photos} />

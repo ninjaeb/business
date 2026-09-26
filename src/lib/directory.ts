@@ -74,7 +74,11 @@ export type PublishedListingSnapshot = {
   seoDescription: string | null;
 };
 
-export type PhotoEntry = { id: string; caption: string };
+// `gallery` is the partner's own free-text label for grouping this photo
+// with others (e.g. "Office", "Team") — empty string, like caption, when
+// they haven't set one. See PhotoLightbox for how the public page groups by
+// it once a listing has more than one distinct value among its photos.
+export type PhotoEntry = { id: string; caption: string; gallery: string };
 
 // Also the cap uploadListingGalleryPhoto (src/app/actions/directory-images.ts)
 // enforces before creating a new row — exported so the two never drift apart.
@@ -85,7 +89,11 @@ function sanitizePhotoEntry(entry: unknown): PhotoEntry | null {
   const raw = entry as Record<string, unknown>;
   const id = typeof raw.id === "string" ? raw.id.trim() : "";
   if (!id) return null;
-  return { id, caption: typeof raw.caption === "string" ? raw.caption.trim() : "" };
+  return {
+    id,
+    caption: typeof raw.caption === "string" ? raw.caption.trim() : "",
+    gallery: typeof raw.gallery === "string" ? raw.gallery.trim() : "",
+  };
 }
 
 export function photosFromJson(value: unknown): PhotoEntry[] {

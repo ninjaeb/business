@@ -6,6 +6,7 @@ import {
   removeListingGalleryPhoto,
   reorderListingGalleryPhotos,
   updateListingGalleryPhotoCaption,
+  updateListingGalleryPhotoGallery,
   uploadListingGalleryPhoto,
 } from "@/app/actions/directory-images";
 import { compressImage } from "@/lib/image-compression";
@@ -86,6 +87,13 @@ export function ListingPhotosEditor({ listingId, initialPhotos }: { listingId: s
     });
   }
 
+  function handleGalleryBlur(photoId: string, gallery: string) {
+    startTransition(async () => {
+      const result = await updateListingGalleryPhotoGallery(listingId, photoId, gallery);
+      if (result.status !== "ok") setError(result.message);
+    });
+  }
+
   function handleMove(index: number, direction: -1 | 1) {
     const target = index + direction;
     if (target < 0 || target >= photos.length) return;
@@ -106,8 +114,22 @@ export function ListingPhotosEditor({ listingId, initialPhotos }: { listingId: s
     });
   }
 
+  // Existing gallery names a partner already used on this listing's other
+  // photos, offered back through the input's own datalist so grouping two
+  // photos together is picking the same name from a list, not remembering
+  // and retyping it exactly (a typo like "Office"/"office" would otherwise
+  // silently create two separate galleries — see PhotoLightbox's grouping).
+  const galleryNames = [...new Set(photos.map((photo) => photo.gallery).filter(Boolean))];
+
   return (
     <div className="space-y-3">
+      {galleryNames.length > 0 && (
+        <datalist id="photo-gallery-names">
+          {galleryNames.map((name) => (
+            <option key={name} value={name} />
+          ))}
+        </datalist>
+      )}
       {photos.length > 0 && (
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
           {photos.map((photo, index) => (
@@ -122,6 +144,13 @@ export function ListingPhotosEditor({ listingId, initialPhotos }: { listingId: s
                 defaultValue={photo.caption}
                 onBlur={(event) => handleCaptionBlur(photo.id, event.target.value)}
                 placeholder="Caption (optional)"
+                className="h-8 text-xs"
+              />
+              <Input
+                defaultValue={photo.gallery}
+                onBlur={(event) => handleGalleryBlur(photo.id, event.target.value)}
+                placeholder="Gallery (optional)"
+                list="photo-gallery-names"
                 className="h-8 text-xs"
               />
               <div className="flex items-center justify-between gap-1">

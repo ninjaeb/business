@@ -6,6 +6,7 @@ import { getOwnedListing, MAX_GALLERY_PHOTOS, type PhotoEntry } from "@/lib/dire
 
 const MAX_IMAGE_SIZE = 5 * 1024 * 1024;
 const MAX_CAPTION_LENGTH = 140;
+const MAX_GALLERY_NAME_LENGTH = 60;
 
 export type UploadDirectoryImageResult = { status: "ok"; url: string } | { status: "error"; message: string };
 
@@ -81,6 +82,7 @@ export async function uploadListingGalleryPhoto(listingId: string, formData: For
   }
 
   const caption = String(formData.get("caption") ?? "").trim().slice(0, MAX_CAPTION_LENGTH);
+  const gallery = String(formData.get("gallery") ?? "").trim().slice(0, MAX_GALLERY_NAME_LENGTH);
   const data = Buffer.from(await file.arrayBuffer()).toString("base64");
   // The interactive form (a callback, not the array form used elsewhere in
   // this file) because the second write needs the first write's own result
@@ -88,7 +90,7 @@ export async function uploadListingGalleryPhoto(listingId: string, formData: For
   // and can't thread a value between them.
   const image = await db.$transaction(async (tx) => {
     const created = await tx.directoryListingImage.create({
-      data: { mimeType: file.type, data, caption: caption || null, listingId: listing.id },
+      data: { mimeType: file.type, data, caption: caption || null, gallery: gallery || null, listingId: listing.id },
       select: { id: true },
     });
     await tx.partnerListing.update({
@@ -98,7 +100,7 @@ export async function uploadListingGalleryPhoto(listingId: string, formData: For
     return created;
   });
 
-  return { status: "ok", photo: { id: image.id, caption } };
+  return { status: "ok", photo: { id: image.id, caption, gallery } };
 }
 
 export async function removeListingGalleryPhoto(listingId: string, photoId: string): Promise<GalleryActionResult> {
@@ -154,9 +156,33 @@ export async function updateListingGalleryPhotoCaption(
   }
 
   const trimmed = caption.trim().slice(0, MAX_CAPTION_LENGTH);
-  await db.directoryListingImage.update({
+  // select: gallery — this write only touches caption, but the result still
+  // needs to be a complete PhotoEntry (the caller doesn't use it today, but
+  // a stale/blank gallery here would be wrong if it ever does).
+  const updated = await db.directoryListingImage.update({
     where: { id: photoId },
     data: { caption: trimmed || null },
+    select: { gallery: true },
   });
-  return { status: "ok", photo: { id: photoId, caption: trimmed } };
+  return { status: "ok", photo: { id: photoId, caption: trimmed, gallery: updated.gallery ?? "" } };
+}
+
+export async function updateListingGalleryPhotoGallery(
+  listingId: string,
+  photoId: string,
+  gallery: string,
+): Promise<GalleryPhotoResult> {
+  const partner = await requirePartnerAction();
+  const listing = await getOwnedListing(listingId, partner.id);
+  if (!listing || !listing.photoIds.includes(photoId)) {
+    return { status: "error", message: "Photo not found." };
+  }
+
+  const trimmed = gallery.trim().slice(0, MAX_GALLERY_NAME_LENGTH);
+  const updated = await db.directoryListingImage.update({
+    where: { id: photoId },
+    data: { gallery: trimmed || null },
+    select: { caption: true },
+  });
+  return { status: "ok", photo: { id: photoId, caption: updated.caption ?? "", gallery: trimmed } };
 }
