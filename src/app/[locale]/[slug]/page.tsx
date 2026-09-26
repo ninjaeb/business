@@ -814,7 +814,7 @@ export default async function DirectoryListingPage({
                       )}
                       <VideoGallery
                         companyName={listing.companyName}
-                        watchOnOriginalSiteLabel={t.watchOnOriginalSiteLabel}
+                        watchOnProviderLabel={t.watchOnProviderLabel}
                         videos={videoGallery.map((video) => ({
                           url: video.url,
                           title: video.title,
@@ -822,6 +822,7 @@ export default async function DirectoryListingPage({
                           categoryLabel: VIDEO_CATEGORY_LABELS_BY_LOCALE[resolved][video.category],
                           thumbnailUrl: video.thumbnailUrl,
                           embedUrl: video.embed?.embedUrl ?? null,
+                          provider: video.embed?.provider ?? null,
                         }))}
                       />
                     </div>

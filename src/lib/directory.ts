@@ -12,7 +12,7 @@ import {
 import { translateCategoryName } from "@/lib/directory-category-labels";
 import { locationLabel } from "@/lib/directory-location-labels";
 import { organizationJsonLdId, serializeJsonLd, websiteJsonLdId } from "@/lib/directory-seo";
-import { VIDEO_CATEGORIES, type VideoCategory } from "@/lib/labels";
+import { VIDEO_CATEGORIES, type VideoCategory, type VideoProvider } from "@/lib/labels";
 import { stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
 import { normalizeSearchText, type DirectorySearchIndex } from "@/lib/directory-search";
 
@@ -152,8 +152,6 @@ export function parseVideosJson(raw: string): VideoEntry[] {
   }
   return videosFromJson(parsed);
 }
-
-export type VideoProvider = "youtube" | "vimeo" | "dailymotion" | "facebook" | "tiktok";
 
 function detectVideoProvider(host: string): VideoProvider | null {
   if (host === "youtube.com" || host === "m.youtube.com" || host === "youtu.be") return "youtube";
