@@ -245,6 +245,10 @@ export default async function ListingLayout({
   const sectionLinks = [
     display.description && { href: directoryListingPath(resolved, slug), label: t.aboutHeading },
     display.services.length > 0 && { href: directoryListingServicesPath(resolved, slug), label: t.servicesHeading },
+    // Right after Products & Services (not second-to-last) — a shopper
+    // deciding what to buy is exactly who wants "any questions about
+    // this?" right next to it.
+    display.faqs.length > 0 && { href: directoryListingFaqPath(resolved, slug), label: t.faqHeading },
     listing.photos.length > 0 && { href: directoryListingPhotosPath(resolved, slug), label: t.photosHeading },
     display.videoGallery.length > 0 && { href: directoryListingVideosPath(resolved, slug), label: t.videoHeading },
     display.currentNews.length > 0 && { href: directoryListingNewsPath(resolved, slug), label: t.newsLabel },
@@ -253,7 +257,6 @@ export default async function ListingLayout({
       label: t.promotionsHeading,
     },
     (listing.address || listing.operatingHours) && { href: directoryListingVisitPath(resolved, slug), label: t.visitHeading },
-    display.faqs.length > 0 && { href: directoryListingFaqPath(resolved, slug), label: t.faqHeading },
   ].filter((section): section is { href: string; label: string } => Boolean(section));
 
   return (
