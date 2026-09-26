@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { ZoomableImage } from "@/components/directory/zoomable-image";
 
 // A partner listing without an uploaded logo falls back to a plain
 // initial-letter badge — same idea as ContactAvatar for a contact with no
@@ -16,6 +17,7 @@ export function ListingLogo({
   size = 40,
   loading = "eager",
   className,
+  zoomable = false,
 }: {
   name: string;
   logoUrl: string | null;
@@ -26,8 +28,27 @@ export function ListingLogo({
   // page's own header logo is above it and wants the default.
   loading?: "eager" | "lazy";
   className?: string;
+  // Click-to-zoom — only ever passed by the listing detail page's own
+  // (much bigger) header logo, never the small thumbnails this component
+  // renders everywhere else (grid cards, admin rows, the editor's own
+  // preview), where a full-page lightbox on a 24-40px icon would be more
+  // surprising than useful.
+  zoomable?: boolean;
 }) {
   if (logoUrl) {
+    const imageClassName = cn("shrink-0 rounded-lg object-cover ring-1 ring-slate-200 dark:ring-neutral-800", className);
+    if (zoomable) {
+      return (
+        <ZoomableImage
+          src={logoUrl}
+          alt={`${name} logo`}
+          width={size}
+          height={size}
+          loading={loading}
+          className={imageClassName}
+        />
+      );
+    }
     return (
       // eslint-disable-next-line @next/next/no-img-element -- served straight out of the DB by /api/directory-images/logo, already sized down by the partner's upload (see photoDataUrl); next/image would add an optimizer round trip per logo on the shared host for no visible gain
       <img
@@ -37,7 +58,7 @@ export function ListingLogo({
         height={size}
         loading={loading}
         decoding="async"
-        className={cn("shrink-0 rounded-lg object-cover ring-1 ring-slate-200 dark:ring-neutral-800", className)}
+        className={imageClassName}
       />
     );
   }

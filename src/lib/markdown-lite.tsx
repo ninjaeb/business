@@ -1,5 +1,6 @@
 import { Fragment, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
+import { ZoomableImage } from "@/components/directory/zoomable-image";
 
 // A deliberately small formatting grammar for the partner directory's
 // About field — bold, bullet/numbered lists, links, and images. Not a
@@ -31,7 +32,7 @@ function isSafeUrl(url: string): boolean {
 // link first would still match an image's "[alt](url)" tail), bold last.
 const INLINE_PATTERN = /!\[([^\]]*)\]\(([^)\s]+)\)|\[([^\]]*)\]\(([^)\s]+)\)|\*\*([^*]+)\*\*/g;
 
-function renderInline(text: string, keyPrefix: string): ReactNode[] {
+function renderInline(text: string, keyPrefix: string, zoomableImages: boolean): ReactNode[] {
   const nodes: ReactNode[] = [];
   let lastIndex = 0;
   let count = 0;
@@ -44,8 +45,12 @@ function renderInline(text: string, keyPrefix: string): ReactNode[] {
     if (imageUrl !== undefined) {
       nodes.push(
         isSafeUrl(imageUrl) ? (
-          // eslint-disable-next-line @next/next/no-img-element -- an arbitrary partner-supplied external URL, not a domain next/image could be configured to optimize
-          <img key={key} src={imageUrl} alt={imageAlt} loading="lazy" className="my-2 max-w-full rounded-md" />
+          zoomableImages ? (
+            <ZoomableImage key={key} src={imageUrl} alt={imageAlt} className="my-2 max-w-full rounded-md" />
+          ) : (
+            // eslint-disable-next-line @next/next/no-img-element -- an arbitrary partner-supplied external URL, not a domain next/image could be configured to optimize
+            <img key={key} src={imageUrl} alt={imageAlt} loading="lazy" className="my-2 max-w-full rounded-md" />
+          )
         ) : (
           full
         ),
@@ -134,9 +139,14 @@ function parseBlocks(text: string): Block[] {
 // ![alt](url) images as real React elements — never dangerouslySetInnerHTML,
 // so there's no HTML-string XSS surface: everything but a validated
 // http(s) href/src is plain escaped text by construction.
-export function renderMarkdownLite(text: string | null | undefined, className?: string): ReactNode {
+export function renderMarkdownLite(
+  text: string | null | undefined,
+  className?: string,
+  options?: { zoomableImages?: boolean },
+): ReactNode {
   const trimmed = (text ?? "").trim();
   if (!trimmed) return null;
+  const zoomableImages = options?.zoomableImages ?? false;
   const blocks = parseBlocks(trimmed);
   return (
     <div className={cn("space-y-3", className)}>
@@ -145,7 +155,7 @@ export function renderMarkdownLite(text: string | null | undefined, className?: 
           return (
             <ul key={i} className="list-disc space-y-1 pl-5">
               {block.lines.map((item, j) => (
-                <li key={j}>{renderInline(item, `${i}-${j}`)}</li>
+                <li key={j}>{renderInline(item, `${i}-${j}`, zoomableImages)}</li>
               ))}
             </ul>
           );
@@ -154,7 +164,7 @@ export function renderMarkdownLite(text: string | null | undefined, className?: 
           return (
             <ol key={i} className="list-decimal space-y-1 pl-5">
               {block.lines.map((item, j) => (
-                <li key={j}>{renderInline(item, `${i}-${j}`)}</li>
+                <li key={j}>{renderInline(item, `${i}-${j}`, zoomableImages)}</li>
               ))}
             </ol>
           );
@@ -164,7 +174,7 @@ export function renderMarkdownLite(text: string | null | undefined, className?: 
             {block.lines.map((line, j) => (
               <Fragment key={j}>
                 {j > 0 && <br />}
-                {renderInline(line, `${i}-${j}`)}
+                {renderInline(line, `${i}-${j}`, zoomableImages)}
               </Fragment>
             ))}
           </p>
