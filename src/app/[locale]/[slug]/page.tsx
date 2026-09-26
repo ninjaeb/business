@@ -514,89 +514,87 @@ export default async function DirectoryListingPage({
           <div className="min-w-0 flex-1">
             <h1 className="text-3xl font-semibold text-slate-900 dark:text-slate-100">{listing.companyName}</h1>
             {displayTagline && <p className="mt-1 text-base text-slate-600 dark:text-slate-300">{displayTagline}</p>}
-            <p className="mt-1 flex items-center gap-1 text-sm text-slate-500 dark:text-slate-400">
-              <Eye className="h-4 w-4" />
-              {/* This page's own language's count (not the listing's
-                  all-time total across all three) — the count from before
-                  this load, since the increment above runs in parallel
-                  rather than being awaited first, so it hasn't landed yet.
-                  +1 so this visitor's own view is reflected immediately
-                  instead of showing up only on the next page load. */}
-              {formatViewsLabel(listingViewCountByLocale(listing, resolved) + 1, resolved)}
-            </p>
-            {/* From sm up, industry/category/state/country/website live here
-                — in the same column as the name and tagline, beside the
-                logo — rather than their own full-width row further down,
-                which otherwise leaves the space below a short tagline next
-                to a 200px logo empty. Below sm there's no spare height left
-                in this column for a phone-width logo, so this whole group
-                is hidden here and instead repeats, full-width, at the top
-                of the content column below (ahead of About) — see the
-                sm:hidden block there. Industry/category, state/country,
-                and website are three separate lines (each still its own
-                flex-wrap row, for a long combination within one group)
-                rather than one shared wrapping row. */}
-            {(listing.industry || listing.categories.length > 0 || listing.city || listing.state || listing.country || listing.website) && (
-              <div className="mt-3 hidden flex-col gap-2 sm:flex">
-                {(listing.industry || listing.categories.length > 0) && (
-                  <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
-                    {listing.industry && (
-                      <Link href={industryPath(listing.industry, resolved)}>
-                        <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
-                          {INDUSTRY_LABELS_BY_LOCALE[resolved][listing.industry]}
-                        </Badge>
-                      </Link>
-                    )}
-                    {listing.categories.map((category) => (
-                      <Link key={category} href={categoryPath(slugify(category), resolved)}>
-                        <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
-                          {translateCategoryName(category, resolved)}
-                        </Badge>
-                      </Link>
-                    ))}
-                  </div>
+            {/* From sm up, industry/category/state/country/website/views
+                live here — in the same column as the name and tagline,
+                beside the logo — rather than their own full-width row
+                further down, which otherwise leaves the space below a short
+                tagline next to a 200px logo empty. Below sm there's no spare
+                height left in this column for a phone-width logo, so this
+                whole group is hidden here and instead repeats, full-width,
+                at the top of the content column below (ahead of About) —
+                see the sm:hidden block there. Industry/category is its own
+                line; location, website and the view count share the next
+                one — the view count rides along next to the website link
+                (rather than its own separate line above) since it's always
+                present regardless of which of the others are. */}
+            <div className="mt-3 hidden flex-col gap-2 sm:flex">
+              {(listing.industry || listing.categories.length > 0) && (
+                <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
+                  {listing.industry && (
+                    <Link href={industryPath(listing.industry, resolved)}>
+                      <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
+                        {INDUSTRY_LABELS_BY_LOCALE[resolved][listing.industry]}
+                      </Badge>
+                    </Link>
+                  )}
+                  {listing.categories.map((category) => (
+                    <Link key={category} href={categoryPath(slugify(category), resolved)}>
+                      <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
+                        {translateCategoryName(category, resolved)}
+                      </Badge>
+                    </Link>
+                  ))}
+                </div>
+              )}
+              <div className="flex flex-wrap items-center gap-3 text-base text-slate-500 dark:text-slate-400">
+                {listing.state ? (
+                  <Link
+                    href={locationPath(slugify(locationLabel(listing.city, listing.state)), resolved)}
+                    className="inline-flex items-center gap-1 hover:text-petrol hover:underline dark:hover:text-petrol-light"
+                  >
+                    <MapPin className="h-4 w-4" />
+                    {locationLabel(listing.city, listing.state)}
+                  </Link>
+                ) : (
+                  listing.city && (
+                    <span className="inline-flex items-center gap-1">
+                      <MapPin className="h-4 w-4" />
+                      {listing.city}
+                    </span>
+                  )
                 )}
-                {(listing.city || listing.state || listing.country) && (
-                  <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
-                    {listing.state ? (
-                      <Link
-                        href={locationPath(slugify(locationLabel(listing.city, listing.state)), resolved)}
-                        className="inline-flex items-center gap-1 hover:text-petrol hover:underline dark:hover:text-petrol-light"
-                      >
-                        <MapPin className="h-4 w-4" />
-                        {locationLabel(listing.city, listing.state)}
-                      </Link>
-                    ) : (
-                      listing.city && (
-                        <span className="inline-flex items-center gap-1">
-                          <MapPin className="h-4 w-4" />
-                          {listing.city}
-                        </span>
-                      )
-                    )}
-                    {listing.country && (
-                      <Link
-                        href={`${directoryHomePath(resolved)}?country=${encodeURIComponent(listing.country)}`}
-                        className="hover:text-petrol hover:underline dark:hover:text-petrol-light"
-                      >
-                        {listing.country}
-                      </Link>
-                    )}
-                  </div>
+                {listing.country && (
+                  <Link
+                    href={`${directoryHomePath(resolved)}?country=${encodeURIComponent(listing.country)}`}
+                    className="hover:text-petrol hover:underline dark:hover:text-petrol-light"
+                  >
+                    {listing.country}
+                  </Link>
                 )}
                 {listing.website && (
                   <a
                     href={listing.website}
                     target="_blank"
                     rel="noopener noreferrer nofollow"
-                    className="inline-flex items-center gap-1 text-base text-petrol hover:underline dark:text-petrol-light"
+                    className="inline-flex items-center gap-1 text-petrol hover:underline dark:text-petrol-light"
                   >
                     <Globe className="h-4 w-4" />
                     {t.websiteLabel}
                   </a>
                 )}
+                <span className="inline-flex items-center gap-1 text-sm text-slate-400">
+                  <Eye className="h-4 w-4" />
+                  {/* This page's own language's count (not the listing's
+                      all-time total across all three) — the count from
+                      before this load, since the increment above runs in
+                      parallel rather than being awaited first, so it hasn't
+                      landed yet. +1 so this visitor's own view is reflected
+                      immediately instead of showing up only on the next page
+                      load. */}
+                  {formatViewsLabel(listingViewCountByLocale(listing, resolved) + 1, resolved)}
+                </span>
               </div>
-            )}
+            </div>
           </div>
           {/* Share/Recommend live in the header's top-right corner from sm
               up — tablet has the same spare width desktop does, nothing
@@ -650,75 +648,75 @@ export default async function DirectoryListingPage({
                 column in the header above — same content and order, just
                 moved down here (ahead of About, the first card in this
                 column) rather than crowded into the header, which on a
-                phone screen only has room for the logo, name, and view
-                count before it. Industry/category get their own line;
-                state/country and website share the next one (there's
-                enough width for all three on a phone, unlike the desktop
-                column squeezed beside a 200px logo, which keeps them on
-                three separate lines). Rendered here regardless of whether
-                an About card follows, so a listing with no description
-                doesn't lose these on mobile. */}
-            {(listing.industry || listing.categories.length > 0 || listing.city || listing.state || listing.country || listing.website) && (
-              <div className="flex flex-col gap-2 sm:hidden">
-                {(listing.industry || listing.categories.length > 0) && (
-                  <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
-                    {listing.industry && (
-                      <Link href={industryPath(listing.industry, resolved)}>
-                        <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
-                          {INDUSTRY_LABELS_BY_LOCALE[resolved][listing.industry]}
-                        </Badge>
-                      </Link>
-                    )}
-                    {listing.categories.map((category) => (
-                      <Link key={category} href={categoryPath(slugify(category), resolved)}>
-                        <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
-                          {translateCategoryName(category, resolved)}
-                        </Badge>
-                      </Link>
-                    ))}
-                  </div>
+                phone screen only has room for the logo and name before it.
+                Industry/category get their own line; location, website and
+                the view count share the next one — the view count rides
+                along next to the website link (rather than its own separate
+                line) since it's always present regardless of which of the
+                others are. Rendered here regardless of whether an About
+                card follows, so a listing with no description doesn't lose
+                these on mobile. */}
+            <div className="flex flex-col gap-2 sm:hidden">
+              {(listing.industry || listing.categories.length > 0) && (
+                <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
+                  {listing.industry && (
+                    <Link href={industryPath(listing.industry, resolved)}>
+                      <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
+                        {INDUSTRY_LABELS_BY_LOCALE[resolved][listing.industry]}
+                      </Badge>
+                    </Link>
+                  )}
+                  {listing.categories.map((category) => (
+                    <Link key={category} href={categoryPath(slugify(category), resolved)}>
+                      <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
+                        {translateCategoryName(category, resolved)}
+                      </Badge>
+                    </Link>
+                  ))}
+                </div>
+              )}
+              <div className="flex flex-wrap items-center gap-3 text-base text-slate-500 dark:text-slate-400">
+                {listing.state ? (
+                  <Link
+                    href={locationPath(slugify(locationLabel(listing.city, listing.state)), resolved)}
+                    className="inline-flex items-center gap-1 hover:text-petrol hover:underline dark:hover:text-petrol-light"
+                  >
+                    <MapPin className="h-4 w-4" />
+                    {locationLabel(listing.city, listing.state)}
+                  </Link>
+                ) : (
+                  listing.city && (
+                    <span className="inline-flex items-center gap-1">
+                      <MapPin className="h-4 w-4" />
+                      {listing.city}
+                    </span>
+                  )
                 )}
-                {(listing.city || listing.state || listing.country || listing.website) && (
-                  <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
-                    {listing.state ? (
-                      <Link
-                        href={locationPath(slugify(locationLabel(listing.city, listing.state)), resolved)}
-                        className="inline-flex items-center gap-1 hover:text-petrol hover:underline dark:hover:text-petrol-light"
-                      >
-                        <MapPin className="h-4 w-4" />
-                        {locationLabel(listing.city, listing.state)}
-                      </Link>
-                    ) : (
-                      listing.city && (
-                        <span className="inline-flex items-center gap-1">
-                          <MapPin className="h-4 w-4" />
-                          {listing.city}
-                        </span>
-                      )
-                    )}
-                    {listing.country && (
-                      <Link
-                        href={`${directoryHomePath(resolved)}?country=${encodeURIComponent(listing.country)}`}
-                        className="hover:text-petrol hover:underline dark:hover:text-petrol-light"
-                      >
-                        {listing.country}
-                      </Link>
-                    )}
-                    {listing.website && (
-                      <a
-                        href={listing.website}
-                        target="_blank"
-                        rel="noopener noreferrer nofollow"
-                        className="inline-flex items-center gap-1 text-petrol hover:underline dark:text-petrol-light"
-                      >
-                        <Globe className="h-4 w-4" />
-                        {t.websiteLabel}
-                      </a>
-                    )}
-                  </div>
+                {listing.country && (
+                  <Link
+                    href={`${directoryHomePath(resolved)}?country=${encodeURIComponent(listing.country)}`}
+                    className="hover:text-petrol hover:underline dark:hover:text-petrol-light"
+                  >
+                    {listing.country}
+                  </Link>
                 )}
+                {listing.website && (
+                  <a
+                    href={listing.website}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="inline-flex items-center gap-1 text-petrol hover:underline dark:text-petrol-light"
+                  >
+                    <Globe className="h-4 w-4" />
+                    {t.websiteLabel}
+                  </a>
+                )}
+                <span className="inline-flex items-center gap-1 text-sm text-slate-400">
+                  <Eye className="h-4 w-4" />
+                  {formatViewsLabel(listingViewCountByLocale(listing, resolved) + 1, resolved)}
+                </span>
               </div>
-            )}
+            </div>
 
             {displayDescription && (
               <Card id="about" className="scroll-mt-32">
