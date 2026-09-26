@@ -1,6 +1,6 @@
 import type { Industry } from "@/generated/prisma/client";
 import { BUSINESS_NAV_ITEMS } from "@/lib/business-nav-items";
-import { INDUSTRY_LABELS } from "@/lib/labels";
+import { INDUSTRY_LABELS, VIDEO_CATEGORY_LABELS, type VideoCategory } from "@/lib/labels";
 
 // Same three languages as the public /lead form (src/lib/lead-form-i18n.ts)
 // but kept as its own copy rather than shared — that file's locale type and
@@ -73,6 +73,22 @@ export const DEFAULT_DIRECTORY_LOCALE: DirectoryLocale = "en";
 // than a template literal built where the message is used.
 export function formatRecommendMessage(template: string, business: string, url: string): string {
   return template.replace("{business}", business).replace("{url}", url);
+}
+
+// The listing page's view-count line — plural-aware (English needs "1
+// view" vs "N views"), which is exactly why this can't be a plain
+// DIRECTORY_STRINGS template string the way recommendMessage above is: it
+// has to branch on count, and DIRECTORY_STRINGS itself gets passed whole
+// into "use client" components (DirectorySearch) on the home/category/
+// location pages, where a function value in that object throws at render
+// ("Functions cannot be passed directly to Client Components"). Kept as
+// its own plain function instead, called only from the (server-only)
+// listing detail page — same reasoning as DirectoryHomeCopy.listingCount,
+// which lives outside DIRECTORY_STRINGS for the same reason.
+export function formatViewsLabel(count: number, locale: DirectoryLocale): string {
+  if (locale === "zh") return `${count.toLocaleString()} 次浏览`;
+  if (locale === "ms") return `${count.toLocaleString()} paparan`;
+  return count === 1 ? "1 view" : `${count.toLocaleString()} views`;
 }
 
 export type DirectoryLeadFormErrorCode =
@@ -155,10 +171,6 @@ export type DirectoryStrings = {
   // defaults to unlocalized English "Share", so every caller that isn't
   // fine with that (this one included) passes this instead.
   shareLabel: string;
-  // Public page-view counter shown under the listing's tagline (see
-  // incrementListingViewCount) — plural-aware, same pattern as
-  // DirectoryHomeCopy.listingCount.
-  viewsLabel: (count: number) => string;
   contactHeading: string;
   contactSubheading: string;
   formNameLabel: string;
@@ -259,7 +271,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     servicesHeading: "Products & Services",
     relatedListingsHeading: "More businesses in {category}",
     aboutHeading: "About",
-    videoHeading: "Video",
+    videoHeading: "Videos",
     photosHeading: "Photos",
     updatesHeading: "News & Promotions",
     newsLabel: "News",
@@ -288,7 +300,6 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     recommendBusinessCta: "Recommend the Business",
     recommendMessage: "I recommend {business} — check them out on the Business Directory: {url}",
     shareLabel: "Share Business",
-    viewsLabel: (count) => (count === 1 ? "1 view" : `${count.toLocaleString()} views`),
     contactHeading: "Get in touch",
     contactSubheading: "Send a message directly to this business — they'll reply to the email address you provide.",
     formNameLabel: "Name",
@@ -418,7 +429,6 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     recommendBusinessCta: "推荐这家企业",
     recommendMessage: "我推荐 {business}——快来企业目录看看：{url}",
     shareLabel: "分享企业",
-    viewsLabel: (count) => `${count.toLocaleString()} 次浏览`,
     locationLabel: "地点",
     contactHeading: "联系我们",
     contactSubheading: "直接给这家企业发送信息——他们会回复您提供的电子邮件地址。",
@@ -548,7 +558,6 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     recommendBusinessCta: "Syorkan Perniagaan Ini",
     recommendMessage: "Saya syorkan {business} — lihat mereka di Direktori Perniagaan: {url}",
     shareLabel: "Kongsi Perniagaan",
-    viewsLabel: (count) => `${count.toLocaleString()} paparan`,
     locationLabel: "Lokasi",
     contactHeading: "Hubungi kami",
     contactSubheading: "Hantar mesej terus kepada perniagaan ini — mereka akan membalas ke alamat e-mel yang anda berikan.",
@@ -713,6 +722,31 @@ export const INDUSTRY_LABELS_BY_LOCALE: Record<DirectoryLocale, Record<Industry,
     FOOD_BEVERAGE: "Makanan & Minuman",
     LEGAL: "Undang-undang",
     MARKETING_ADVERTISING: "Pemasaran & Pengiklanan",
+    OTHER: "Lain-lain",
+  },
+};
+
+// Same reasoning as INDUSTRY_LABELS_BY_LOCALE just above: "en" reuses
+// VIDEO_CATEGORY_LABELS (src/lib/labels.ts) directly rather than duplicating
+// those strings a second time.
+export const VIDEO_CATEGORY_LABELS_BY_LOCALE: Record<DirectoryLocale, Record<VideoCategory, string>> = {
+  en: VIDEO_CATEGORY_LABELS,
+  zh: {
+    OVERVIEW: "概览",
+    TOUR: "导览",
+    PRODUCT_SERVICE: "产品/服务",
+    TESTIMONIAL: "客户评价",
+    PROMOTIONAL: "宣传",
+    EVENT: "活动",
+    OTHER: "其他",
+  },
+  ms: {
+    OVERVIEW: "Gambaran Keseluruhan",
+    TOUR: "Lawatan",
+    PRODUCT_SERVICE: "Produk/Perkhidmatan",
+    TESTIMONIAL: "Testimoni",
+    PROMOTIONAL: "Promosi",
+    EVENT: "Acara",
     OTHER: "Lain-lain",
   },
 };

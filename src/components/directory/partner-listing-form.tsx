@@ -28,12 +28,13 @@ import { OperatingHoursEditor } from "@/components/directory/operating-hours-edi
 import { PartnerSlugForm } from "@/components/directory/partner-slug-form";
 import { ServicesEditor } from "@/components/directory/services-editor";
 import { UpdatesEditor } from "@/components/directory/updates-editor";
+import { VideosEditor } from "@/components/directory/videos-editor";
 import { useToast } from "@/components/ui/toast";
 import { INDUSTRIES, INDUSTRY_LABELS } from "@/lib/labels";
 import { cn } from "@/lib/utils";
 import type { PartnerListingStatus } from "@/generated/prisma/client";
 import type { OperatingHours } from "@/lib/operating-hours";
-import type { FaqEntry, ListingTranslations, ListingUpdateEntry, PhotoEntry, ServiceEntry } from "@/lib/directory";
+import type { FaqEntry, ListingTranslations, ListingUpdateEntry, PhotoEntry, ServiceEntry, VideoEntry } from "@/lib/directory";
 
 type TranslationLocale = "zh" | "ms";
 type EditorTab = "en" | TranslationLocale;
@@ -164,7 +165,7 @@ export function PartnerListingForm({
   const [autoSlugSource, setAutoSlugSource] = useState<string | undefined>(undefined);
   const [tagline, setTagline] = useState(current.tagline);
   const [website, setWebsite] = useState(current.website);
-  const [videoUrl, setVideoUrl] = useState(current.videoUrl);
+  const [videos, setVideos] = useState<VideoEntry[]>(current.videos);
   const [industry, setIndustry] = useState(current.industry);
   const [address, setAddress] = useState(current.address);
   const [addrState, setAddrState] = useState(current.state);
@@ -673,18 +674,14 @@ export function PartnerListingForm({
         )}
       </div>
 
-      <FieldGroup label="Video" htmlFor="videoUrl">
-        <Input
-          id="videoUrl"
-          name="videoUrl"
-          value={videoUrl}
-          onChange={(event) => setVideoUrl(event.target.value)}
-          placeholder="https://www.youtube.com/watch?v=… or a Vimeo link"
-        />
+      <div>
+        <Label className="mb-1.5">Videos</Label>
+        <VideosEditor name="videos" value={videos} onChange={setVideos} />
         <p className="mt-1 text-xs text-slate-400">
-          A YouTube or Vimeo link — embedded on your listing. Optional.
+          Up to 12 — YouTube, Vimeo, Dailymotion, Facebook, or TikTok links, each with a title and category. Shown
+          on your listing as a gallery, optimized for search and AI answer engines.
         </p>
-      </FieldGroup>
+      </div>
 
       <div className="grid gap-4 sm:grid-cols-2">
         <FieldGroup label="Industry" htmlFor="industry">
