@@ -19,6 +19,7 @@ import {
   toDirectoryGridListing,
   toEmbeddableVideoUrl,
   buildBreadcrumbJsonLd,
+  type ListingUpdateEntry,
   type OperatingHours,
 } from "@/lib/directory";
 import {
@@ -64,6 +65,7 @@ import { ShareButton } from "@/components/directory/share-button";
 import { RecommendBar } from "@/components/directory/recommend-bar";
 import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
 import { VideoGallery } from "@/components/directory/video-gallery";
+import { PhotoLightbox } from "@/components/directory/photo-lightbox";
 
 export const dynamic = "force-dynamic";
 
@@ -263,6 +265,42 @@ function formatUpdatePostedAt(postedAt: string, locale: DirectoryLocale): string
   );
 }
 
+// A single News/Promotion card — a promotion gets a soft brand-tinted card
+// (same bg-led-soft token the Hours table's own "today" row highlight
+// uses) rather than relying on its small badge alone to read as the more
+// time-sensitive, actionable kind of the two.
+function UpdateItem({ update, locale }: { update: ListingUpdateEntry; locale: DirectoryLocale }) {
+  const t = DIRECTORY_STRINGS[locale];
+  const isPromotion = update.kind === "PROMOTION";
+  return (
+    <div
+      className={cn(
+        "rounded-md border p-3",
+        isPromotion
+          ? "border-led/30 bg-led-soft dark:border-led/20 dark:bg-led-soft-dark"
+          : "border-slate-200 dark:border-neutral-800",
+      )}
+    >
+      <div className="flex flex-wrap items-center gap-2">
+        <Badge
+          className={
+            isPromotion ? "bg-led text-led-ink ring-0" : "bg-slate-100 text-slate-600 ring-0 dark:bg-neutral-800 dark:text-slate-300"
+          }
+        >
+          {isPromotion ? t.promotionLabel : t.newsLabel}
+        </Badge>
+        <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">{update.title}</h3>
+        {update.postedAt && (
+          <time dateTime={update.postedAt} className="text-xs text-slate-400">
+            {formatUpdatePostedAt(update.postedAt, locale)}
+          </time>
+        )}
+      </div>
+      <div className="mt-1 text-base text-slate-600 dark:text-slate-300">{renderMarkdownLite(update.body)}</div>
+    </div>
+  );
+}
+
 type HoursRow = { day: string; label: string; status: string; isToday: boolean };
 
 // One row per day of the week (Monday–Sunday, always all seven) rather than
@@ -340,6 +378,12 @@ export default async function DirectoryListingPage({
   // text, regardless of locale, same as companyName.
   const todayIso = new Date().toISOString().slice(0, 10);
   const currentUpdates = listing.updates.filter((update) => isUpdateCurrent(update, todayIso));
+  // Promotions surface above news (more time-sensitive/actionable), each
+  // under its own subheading — only shown when both kinds are present, same
+  // as the Media card's Videos/Photos split above, so a listing with only
+  // one kind still reads as a single plain list under "News & Promotions".
+  const currentPromotions = currentUpdates.filter((update) => update.kind === "PROMOTION");
+  const currentNews = currentUpdates.filter((update) => update.kind === "NEWS");
   // Neither are the videos (see VideosEditor) — category labels below are
   // looked up per-locale (VIDEO_CATEGORY_LABELS_BY_LOCALE), but a title is
   // whatever the partner (or the oEmbed lookup) actually typed, same as
@@ -631,68 +675,6 @@ export default async function DirectoryListingPage({
               </Card>
             )}
 
-            {(videoGallery.length > 0 || listing.photos.length > 0) && (
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-base">{t.mediaHeading}</CardTitle>
-                </CardHeader>
-                <CardBody className="space-y-6">
-                  {videoGallery.length > 0 && (
-                    <div>
-                      {listing.photos.length > 0 && (
-                        <h3 className="mb-2 text-sm font-semibold text-slate-500 dark:text-slate-400">{t.videoHeading}</h3>
-                      )}
-                      <VideoGallery
-                        companyName={listing.companyName}
-                        videos={videoGallery.map((video) => ({
-                          url: video.url,
-                          title: video.title,
-                          categoryLabel: VIDEO_CATEGORY_LABELS_BY_LOCALE[resolved][video.category],
-                          thumbnailUrl: video.thumbnailUrl,
-                          embedUrl: video.embed?.embedUrl ?? null,
-                        }))}
-                      />
-                    </div>
-                  )}
-                  {listing.photos.length > 0 && (
-                    <div>
-                      {videoGallery.length > 0 && (
-                        <h3 className="mb-2 text-sm font-semibold text-slate-500 dark:text-slate-400">{t.photosHeading}</h3>
-                      )}
-                      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-                        {listing.photos.map((photo) => (
-                          <figure key={photo.id} className="space-y-1">
-                            {/* eslint-disable-next-line @next/next/no-img-element -- served straight out of the DB by /api/directory-images, same reasoning as ListingLogo */}
-                            <img
-                              src={directoryImagePath(photo.id)}
-                              // Caption plus company name, not caption alone — a
-                              // photo with no caption still gets a distinct,
-                              // non-generic alt instead of repeating the bare
-                              // company name across every uncaptioned photo on
-                              // the page, and a photo with one gets the
-                              // business tied to it explicitly (useful to an AI
-                              // crawler that only sees this image out of
-                              // context, e.g. via Google Images).
-                              alt={photo.caption ? `${photo.caption} – ${listing.companyName}` : listing.companyName}
-                              loading="lazy"
-                              className="aspect-square w-full rounded-md object-cover ring-1 ring-slate-200 dark:ring-neutral-800"
-                            />
-                            {/* Same text as the alt above, but visible — search
-                                engines and AI crawlers both weigh on-page text
-                                more heavily than an attribute, and a sighted
-                                visitor gets the context an alt never shows them. */}
-                            {photo.caption && (
-                              <figcaption className="text-sm text-slate-600 dark:text-slate-300">{photo.caption}</figcaption>
-                            )}
-                          </figure>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </CardBody>
-              </Card>
-            )}
-
             {(displayServices.length > 0 || listing.operatingHours) && (
               <div
                 className={cn(
@@ -778,29 +760,27 @@ export default async function DirectoryListingPage({
                 <CardHeader>
                   <CardTitle className="text-base">{t.updatesHeading}</CardTitle>
                 </CardHeader>
-                <CardBody className="space-y-3">
-                  {currentUpdates.map((update, index) => (
-                    <div key={index} className="rounded-md border border-slate-200 p-3 dark:border-neutral-800">
-                      <div className="flex flex-wrap items-center gap-2">
-                        <Badge
-                          className={
-                            update.kind === "PROMOTION"
-                              ? "bg-led text-led-ink ring-0"
-                              : "bg-slate-100 text-slate-600 ring-0 dark:bg-neutral-800 dark:text-slate-300"
-                          }
-                        >
-                          {update.kind === "PROMOTION" ? t.promotionLabel : t.newsLabel}
-                        </Badge>
-                        <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">{update.title}</h3>
-                        {update.postedAt && (
-                          <time dateTime={update.postedAt} className="text-xs text-slate-400">
-                            {formatUpdatePostedAt(update.postedAt, resolved)}
-                          </time>
-                        )}
-                      </div>
-                      <div className="mt-1 text-base text-slate-600 dark:text-slate-300">{renderMarkdownLite(update.body)}</div>
+                <CardBody className="space-y-5">
+                  {currentPromotions.length > 0 && (
+                    <div className="space-y-3">
+                      {currentNews.length > 0 && (
+                        <h3 className="text-sm font-semibold text-slate-500 dark:text-slate-400">{t.promotionLabel}</h3>
+                      )}
+                      {currentPromotions.map((update, index) => (
+                        <UpdateItem key={index} update={update} locale={resolved} />
+                      ))}
                     </div>
-                  ))}
+                  )}
+                  {currentNews.length > 0 && (
+                    <div className="space-y-3">
+                      {currentPromotions.length > 0 && (
+                        <h3 className="text-sm font-semibold text-slate-500 dark:text-slate-400">{t.newsLabel}</h3>
+                      )}
+                      {currentNews.map((update, index) => (
+                        <UpdateItem key={index} update={update} locale={resolved} />
+                      ))}
+                    </div>
+                  )}
                 </CardBody>
               </Card>
             )}
@@ -851,6 +831,58 @@ export default async function DirectoryListingPage({
                       <p className="mt-2 text-base text-slate-600 dark:text-slate-300">{faq.answer}</p>
                     </details>
                   ))}
+                </CardBody>
+              </Card>
+            )}
+
+            {(videoGallery.length > 0 || listing.photos.length > 0) && (
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-base">{t.mediaHeading}</CardTitle>
+                </CardHeader>
+                <CardBody className="space-y-6">
+                  {videoGallery.length > 0 && (
+                    <div>
+                      {listing.photos.length > 0 && (
+                        <h3 className="mb-2 text-sm font-semibold text-slate-500 dark:text-slate-400">{t.videoHeading}</h3>
+                      )}
+                      <VideoGallery
+                        companyName={listing.companyName}
+                        videos={videoGallery.map((video) => ({
+                          url: video.url,
+                          title: video.title,
+                          category: video.category,
+                          categoryLabel: VIDEO_CATEGORY_LABELS_BY_LOCALE[resolved][video.category],
+                          thumbnailUrl: video.thumbnailUrl,
+                          embedUrl: video.embed?.embedUrl ?? null,
+                        }))}
+                      />
+                    </div>
+                  )}
+                  {listing.photos.length > 0 && (
+                    <div>
+                      {videoGallery.length > 0 && (
+                        <h3 className="mb-2 text-sm font-semibold text-slate-500 dark:text-slate-400">{t.photosHeading}</h3>
+                      )}
+                      <PhotoLightbox
+                        companyName={listing.companyName}
+                        photos={listing.photos.map((photo) => ({
+                          id: photo.id,
+                          src: directoryImagePath(photo.id),
+                          caption: photo.caption,
+                          // Caption plus company name, not caption alone — a
+                          // photo with no caption still gets a distinct,
+                          // non-generic alt instead of repeating the bare
+                          // company name across every uncaptioned photo on
+                          // the page, and a photo with one gets the
+                          // business tied to it explicitly (useful to an AI
+                          // crawler that only sees this image out of
+                          // context, e.g. via Google Images).
+                          alt: photo.caption ? `${photo.caption} – ${listing.companyName}` : listing.companyName,
+                        }))}
+                      />
+                    </div>
+                  )}
                 </CardBody>
               </Card>
             )}
