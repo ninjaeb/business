@@ -48,7 +48,7 @@ function sleep(ms: number): Promise<void> {
 // execFileSync (with encoding set, as `run` passes) attaches the child's
 // captured stdout/stderr to the thrown error as string properties — this
 // pulls all of it together so a pattern match below sees the actual
-// Prisma/MySQL error text, not just Node's generic "Command failed: ...".
+// Prisma/Postgres error text, not just Node's generic "Command failed: ...".
 function errorText(error: unknown): string {
   if (!(error instanceof Error)) return String(error);
   const withOutput = error as Error & { stdout?: string; stderr?: string };
@@ -57,7 +57,7 @@ function errorText(error: unknown): string {
 
 // The previous app process (still running — signalRestart only happens
 // once this whole script succeeds) or a concurrent cron script can
-// transiently eat the shared-hosting account's whole `max_user_connections`
+// transiently eat the shared-hosting account's whole `max_connections`
 // budget, leaving nothing free for this command's own connection even
 // though prisma.config.ts already caps how much it asks for (see the
 // connection_limit comment there). Retrying blindly on any migrate failure
@@ -65,7 +65,7 @@ function errorText(error: unknown): string {
 // anything, so this only retries the one condition that's actually expected
 // to clear on its own.
 function isTransientConnectionError(message: string): boolean {
-  return /max_user_connections|too many connections/i.test(message);
+  return /too many (clients|connections)|remaining connection slots are reserved/i.test(message);
 }
 
 const MIGRATE_RETRY_DELAYS_MS = [5_000, 15_000];

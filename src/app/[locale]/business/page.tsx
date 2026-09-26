@@ -122,10 +122,9 @@ export default async function DirectoryHomePage({
   // the visitor types (see DirectorySearch) — not filtered here anymore,
   // since a server round trip per keystroke isn't needed at this scale (a
   // partner network is small by nature: dozens, not thousands) and the
-  // searchable text lives inside publishedSnapshot's JSON, which
-  // MySQL/Prisma can't cheaply query into either way. Only the grid's own
-  // slice of each snapshot goes over the wire, though (see
-  // toDirectoryGridListing).
+  // searchable text lives inside publishedSnapshot's JSON, which Prisma
+  // can't cheaply query into either way. Only the grid's own slice of each
+  // snapshot goes over the wire, though (see toDirectoryGridListing).
   const [rows, businessCategories] = await Promise.all([
     loadPublishedListings(),
     db.businessCategory.findMany({ orderBy: { name: "asc" }, select: { name: true } }),

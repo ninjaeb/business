@@ -7,7 +7,7 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
+  provider = "postgresql"
 }
 
 enum Role {
@@ -222,7 +222,7 @@ model PartnerListing {
   operatingHours Json? // OperatingHours (src/lib/directory.ts)
   faqs        Json? // FaqEntry[] (src/lib/directory.ts) — {question, answer}
   translations Json? // ListingTranslations (src/lib/directory.ts) — {zh?, ms?}
-  logoUrl     String?   @db.LongText // data: URL
+  logoUrl     String?   @db.Text // data: URL
   seoTitle       String?
   seoDescription String?
 
@@ -273,7 +273,7 @@ model PartnerListingCategory {
 model DirectoryListingImage {
   id       String @id @default(cuid())
   mimeType String
-  data     String @db.LongText
+  data     String @db.Text
 
   createdAt DateTime @default(now())
 

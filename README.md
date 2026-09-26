@@ -2,7 +2,7 @@
 
 A public, trilingual (English / 中文 / Bahasa Malaysia) directory of businesses,
 plus a self-service partner portal, built with Next.js (App Router),
-TypeScript, Tailwind CSS, and Prisma on MySQL/MariaDB. Deployed at
+TypeScript, Tailwind CSS, and Prisma on PostgreSQL. Deployed at
 [business.gotka.com](https://business.gotka.com).
 
 This is a standalone app — it has its own database, its own login/session
@@ -43,8 +43,8 @@ edits never reach the public page until approved again.
 
 - [Next.js 16](https://nextjs.org) (App Router, Server Actions, Turbopack build)
 - TypeScript, Tailwind CSS v4
-- [Prisma ORM 7](https://www.prisma.io) with the `@prisma/adapter-mariadb` driver adapter (WASM query engine — no native binary)
-- MySQL 8+ / MariaDB 10.4+
+- [Prisma ORM 7](https://www.prisma.io) with the `@prisma/adapter-pg` driver adapter
+- PostgreSQL 14+
 - `jose` for JWT session cookies, Node's `crypto` (scrypt) for password hashing
 - Optional: Google OAuth (sign-up/login), Google Places (listing autofill), OpenRouter (AI content), IndexNow, Google Search Console / Bing Webmaster Tools verification, Plausible Analytics
 - Deploy target: a plain Node `server.js` entrypoint for cPanel/Passenger-style shared hosting — no platform lock-in, `next start` works anywhere Node runs too
@@ -57,17 +57,17 @@ edits never reach the public page until approved again.
 npm install
 ```
 
-### 2. Set up a MySQL database
+### 2. Set up a PostgreSQL database
 
-Point `DATABASE_URL` at any MySQL 8+ or MariaDB 10.4+ database. Copy the
-example env file and fill in your connection string:
+Point `DATABASE_URL` at any PostgreSQL 14+ database. Copy the example env
+file and fill in your connection string:
 
 ```bash
 cp .env.example .env
 ```
 
 ```env
-DATABASE_URL="mysql://user:password@localhost:3306/business_directory"
+DATABASE_URL="postgresql://user:password@localhost:5432/business_directory"
 ```
 
 Also set `SESSION_SECRET` (required — signs the login session cookie):
@@ -80,8 +80,8 @@ If you don't already have a database, the quickest way to get one locally
 is Docker:
 
 ```bash
-docker run -d --name business-directory-mysql -e MYSQL_ROOT_PASSWORD=root \
-  -e MYSQL_DATABASE=business_directory -p 3306:3306 mysql:8
+docker run -d --name business-directory-postgres -e POSTGRES_PASSWORD=postgres \
+  -e POSTGRES_DB=business_directory -p 5432:5432 postgres:16
 ```
 
 ### 3. Run migrations and seed
@@ -135,11 +135,13 @@ regenerates the Prisma Client and rebuilds the app itself on every start
 (see "No `postinstall` step" under Troubleshooting for why that isn't
 handled by `npm install`).
 
-**Requirements:** a cPanel account with "Setup Node.js App" and "MySQL
-Databases", and a Node.js version of 20.19+, 22.12+, or 24+ available in
-the Node selector (Prisma 7 requires one of those).
+**Requirements:** a cPanel account with "Setup Node.js App" and
+"PostgreSQL Databases" (not every cPanel install shows this by default —
+ask your host to enable the `postgresql` feature on the account if it's
+missing), and a Node.js version of 20.19+, 22.12+, or 24+ available in the
+Node selector (Prisma 7 requires one of those).
 
-1. **Create the database.** In cPanel → *MySQL Databases*, create a
+1. **Create the database.** In cPanel → *PostgreSQL Databases*, create a
    database and a user, add the user to the database with all privileges.
 2. **Get the code onto the server**, either:
    - cPanel → *Git Version Control* → clone this repo, then use
@@ -173,8 +175,8 @@ the Node selector (Prisma 7 requires one of those).
    Application root if it doesn't come up.
 
 No native binaries to worry about: Prisma 7's driver-adapter architecture
-(`@prisma/adapter-mariadb`, already configured in `src/lib/db.ts`) talks to
-MySQL through a pure JS/WASM query engine instead of a platform-specific
+(`@prisma/adapter-pg`, already configured in `src/lib/db.ts`) talks to
+Postgres through the pure-JS `pg` driver instead of a platform-specific
 compiled binary, which tends to be the main source of pain on shared
 hosting.
 
@@ -322,12 +324,13 @@ serving silently.
   Action` on its first submission afterward — refreshing it clears that
   up.
 - **A CLI script fails with `pool timeout: failed to retrieve a
-  connection from pool` (`P2039`)** — the shared hosting account's MySQL
-  `max_user_connections` is close to exhausted, usually by the
-  always-running app's own connection pool. `src/lib/db.ts` already
-  defaults to a conservative pool size (`connectionLimit=5`); lower it
-  further by adding `?connectionLimit=2` to `DATABASE_URL`, or ask your
-  host to raise `max_user_connections` for the account.
+  connection from pool` (`P2039`), or Postgres logs `sorry, too many
+  clients already` / `remaining connection slots are reserved`** — the
+  shared hosting account's Postgres `max_connections` is close to
+  exhausted, usually by the always-running app's own connection pool.
+  `src/lib/db.ts` already defaults to a conservative pool size (`max=5`);
+  lower it further by adding `?max=2` to `DATABASE_URL`, or ask your host
+  to raise `max_connections` for the account.
 
 ## Project structure
 

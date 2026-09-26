@@ -1,27 +1,27 @@
 import { PrismaClient } from "@/generated/prisma/client";
-import { PrismaMariaDb } from "@prisma/adapter-mariadb";
+import { PrismaPg } from "@prisma/adapter-pg";
 
 declare global {
   var prismaGlobal: PrismaClient | undefined;
 }
 
-// Pool defaults, applied as connection-string query params (the mariadb
-// driver's own syntax) — each is only a default, so a DATABASE_URL that sets
-// one keeps its own value.
+// Pool defaults, applied as connection-string query params (node-postgres's
+// own syntax) — each is only a default, so a DATABASE_URL that sets one
+// keeps its own value.
 const POOL_DEFAULTS: Record<string, string> = {
-  // Shared hosting caps MySQL connections per account well below the
+  // Shared hosting caps Postgres connections per account well below the
   // driver's default pool of 10 — and the app's pool isn't the only one on
-  // the account (a deploy's `prisma migrate deploy`, cron scripts).
-  connectionLimit: "5",
-  // How long a query waits for a free connection before giving up. The
-  // driver's 10 s default is what turns a starved pool into route handlers
-  // that hang for ~10.5 s and then 500; 5 s surfaces the same failure
-  // twice as fast without abandoning a merely busy pool.
-  acquireTimeout: "5000",
-  // The driver keeps this many connections open even when idle, and
-  // defaults it to connectionLimit — so an idle pool still pins its whole
-  // allowance against the account's cap. One warm connection is enough.
-  minimumIdle: "1",
+  // the account (a deploy's `prisma migrate deploy`, cron scripts; see the
+  // README's troubleshooting notes on `max_connections`/`too many clients`).
+  max: "5",
+  // How long a query waits for a free connection before giving up. Surfaces
+  // a starved pool as a fast, clear failure instead of a route handler that
+  // hangs for the driver's much longer default.
+  connectionTimeoutMillis: "5000",
+  // How long an idle connection stays open before the pool closes it —
+  // keeps an idle pool from pinning its whole allowance against the
+  // account's connection cap indefinitely.
+  idleTimeoutMillis: "10000",
 };
 
 function createPrismaClient() {
@@ -35,7 +35,7 @@ function createPrismaClient() {
     if (!url.searchParams.has(key)) url.searchParams.set(key, value);
   }
 
-  const adapter = new PrismaMariaDb(url.toString());
+  const adapter = new PrismaPg({ connectionString: url.toString() });
   return new PrismaClient({ adapter });
 }
 
