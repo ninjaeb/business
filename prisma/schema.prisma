@@ -192,6 +192,45 @@ model Settings {
   directoryApprovalMode DirectoryApprovalMode @default(EVERY_SUBMISSION)
 }
 
+// Admin-configured outbound email (new-lead alerts to partners, partner
+// replies to leads) — set from /admin (see src/lib/email-settings.ts),
+// unlike this app's other integrations (Google Places, OpenRouter), which
+// stay plain env vars. A non-technical admin can set or change this without
+// asking a developer to redeploy with new env vars. Singleton, same pattern
+// as Settings above. username/encryptedPassword are both nullable since
+// some SMTP relays allow unauthenticated submission.
+model EmailSettings {
+  id       String  @id @default("singleton")
+  host     String
+  port     Int     @default(587)
+  username String?
+  // AES-256-GCM ("iv:authTag:ciphertext", base64) via src/lib/secret-crypto.ts.
+  encryptedPassword String? @db.Text
+  fromName          String
+  fromEmail         String
+
+  updatedAt DateTime @updatedAt
+}
+
+// Admin-configured WhatsApp Business Platform (Cloud API) connection
+// (new-lead pings to partners) — same reasoning as EmailSettings above.
+// Unlike the source CRM's own WhatsAppAccount, there's no businessAccountId
+// or webhook verify token here: this app only ever sends a proactive
+// template message, it never receives inbound messages.
+model WhatsAppSettings {
+  id            String @id @default("singleton")
+  phoneNumberId String
+  // AES-256-GCM ("iv:authTag:ciphertext", base64) via src/lib/secret-crypto.ts.
+  encryptedAccessToken String @db.Text
+  // Fetched and cached from Meta at the moment a connection test last
+  // succeeded (see updateWhatsAppSettings) — shown in the admin form so a
+  // saved connection reads as "this real phone number", not just a
+  // hard-to-verify ID.
+  displayPhoneNumber String?
+
+  updatedAt DateTime @updatedAt
+}
+
 enum PartnerListingStatus {
   DRAFT
   PENDING_REVIEW

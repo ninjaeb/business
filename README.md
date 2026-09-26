@@ -125,22 +125,36 @@ from your browser).
 
 See `.env.example` for the full list. `DATABASE_URL`, `SESSION_SECRET`, and
 `SITE_URL` are required; everything else (Google OAuth, Google Places,
-OpenRouter, outbound email, WhatsApp notifications, search-console
-verification, IndexNow, Plausible, deploy automation) is optional — each
-feature just stays off until its variables are set.
+OpenRouter, search-console verification, IndexNow, Plausible, deploy
+automation) is optional — each feature just stays off until its variables
+are set. Outbound email and WhatsApp notifications aren't env vars at all —
+see below.
 
-## WhatsApp notifications (optional)
+## Email and WhatsApp notifications (optional, admin-configured)
 
-When a visitor submits an inquiry through a partner's listing, the partner
-is emailed (if `SMTP_HOST` etc. are set — see above) and, if WhatsApp
-Business is connected, WhatsApp'd too — the two are independent, and
-either can be left unset without affecting the other. This uses the
-official [Meta WhatsApp Business Platform (Cloud
-API)](https://developers.facebook.com/docs/whatsapp/cloud-api), never an
-unofficial/browser-automation integration, and — unlike the source CRM
-this app was extracted from — is a single, plain env-var connection
-(`WHATSAPP_PHONE_NUMBER_ID`/`WHATSAPP_ACCESS_TOKEN`), not a
-Settings-configured account.
+Both of a partner's new-lead notifications — the email alert and the
+WhatsApp ping — are connected from `/admin` (an **Email (SMTP)** card and a
+**WhatsApp** card), not env vars, so a non-technical admin can set up or
+change either without asking a developer to redeploy. The two are
+independent: a partner gets whichever is configured (or neither, or both),
+and connecting one is never required for the other to work. Each save
+verifies the connection first — it fails right there on a typo'd host or a
+wrong credential, rather than silently on the next lead — and a submitted
+password/access token is never redisplayed; leaving that field blank on a
+later save keeps whatever's already connected.
+
+### Email (SMTP)
+
+`/admin` → **Email (SMTP)**: host, port, an optional username/password, and
+the from-name/from-address a notification is sent as. This is also what a
+partner's reply to a lead sends from (see the *Public partner directory*
+description in Features above).
+
+### WhatsApp Business
+
+`/admin` → **WhatsApp**, using the official [Meta WhatsApp Business
+Platform (Cloud API)](https://developers.facebook.com/docs/whatsapp/cloud-api),
+never an unofficial/browser-automation integration:
 
 1. Create a [Meta App](https://developers.facebook.com/apps) (type:
    Business), then add the **WhatsApp** product to it.
@@ -150,9 +164,12 @@ Settings-configured account.
    verified business number to notify any partner). API Setup shows a
    temporary access token that expires after 24 hours; generate a
    permanent one instead (a System User token, from Meta Business Settings
-   → System Users) and set both as `WHATSAPP_PHONE_NUMBER_ID` /
-   `WHATSAPP_ACCESS_TOKEN`.
-3. **Create the message template** so a partner is pinged the moment
+   → System Users).
+3. Enter both **Phone number ID** and **Access token** in `/admin` →
+   **WhatsApp** and save — it calls Meta to confirm the phone number ID
+   actually belongs to that access token before saving either, and shows
+   the connected number once it does.
+4. **Create the message template** so a partner is pinged the moment
    someone contacts them — Meta App Dashboard → WhatsApp → Message
    Templates → Create Template:
    - Name: `new_directory_lead_notification` (must match exactly — this
@@ -172,11 +189,11 @@ Settings-configured account.
 
    Submit for review — Meta reviews the literal template text, so it
    should match what's above exactly.
-4. **Nothing else to configure** — a partner with a phone number on file
+5. **Nothing else to configure** — a partner with a phone number on file
    (required on their profile) gets the WhatsApp ping automatically once
-   the template's approved; without WhatsApp Business connected, or while
-   the template's still pending review, the lead is still created and
-   still emailed (if configured) — only the WhatsApp half is silently
+   the template's approved; without WhatsApp connected in `/admin`, or
+   while the template's still pending review, the lead is still created
+   and still emailed (if configured) — only the WhatsApp half is silently
    skipped.
 
 `{{1}}` is the visitor's name, `{{2}}` their company (or "No company

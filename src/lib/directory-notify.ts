@@ -8,9 +8,9 @@ import type { DirectoryLead, PartnerListing } from "@/generated/prisma/client";
 // A rewrite of the source CRM's src/lib/directory-notify.ts for this
 // standalone app: same two exports and signatures, and — like the source
 // CRM's own notifyDirectoryLeadViaWhatsApp — a WhatsApp ping alongside the
-// email one, but here both are plain env-var-gated (see src/lib/mailer.ts
-// and src/lib/whatsapp.ts) rather than a DB-backed "system sender"/
-// WhatsAppAccount.
+// email one. Both channels are admin-configured from /admin (see
+// src/lib/email-settings.ts and src/lib/whatsapp-settings.ts) rather than
+// env vars.
 
 // Must match a template already approved in Meta Business Manager exactly
 // — see the README's WhatsApp section for the exact text to submit. A
@@ -34,7 +34,7 @@ export async function notifyPartnerOfNewLead(listing: PartnerListing, lead: Dire
   const path = `/business-portal/business-leads/${lead.id}`;
   const link = `${await getSiteOrigin()}${path}`;
 
-  if (isMailerConfigured()) {
+  if (await isMailerConfigured()) {
     const text =
       `${lead.name}${lead.company ? ` (${lead.company})` : ""} sent an inquiry through your ` +
       `${listing.companyName} listing:\n\n"${lead.message}"\n\nReply from your business portal: ${link}`;
@@ -53,7 +53,7 @@ export async function notifyPartnerOfNewLead(listing: PartnerListing, lead: Dire
     }
   }
 
-  if (isWhatsAppConfigured() && partner.phone) {
+  if (partner.phone && (await isWhatsAppConfigured())) {
     try {
       await sendWhatsAppTemplateMessage(partner.phone, NEW_LEAD_WHATSAPP_TEMPLATE_NAME, NEW_LEAD_WHATSAPP_TEMPLATE_LANGUAGE, [
         lead.name,
@@ -82,10 +82,10 @@ export async function sendDirectoryLeadReply(
   lead: DirectoryLead,
   body: string,
 ): Promise<ReplyEmailResult> {
-  if (!isMailerConfigured()) {
+  if (!(await isMailerConfigured())) {
     return {
       sent: false,
-      error: "No outbound email is configured — set SMTP_HOST etc.",
+      error: "No outbound email is configured — set it up from /admin.",
     };
   }
 

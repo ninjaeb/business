@@ -1,15 +1,19 @@
+import { getWhatsAppSettings } from "@/lib/whatsapp-settings";
+import { decryptSecret } from "@/lib/secret-crypto";
+
 // A single business-initiated notification only — never a two-way
 // conversation, an inbox, or a broadcast — so this is a minimal Meta
-// WhatsApp Business Platform (Cloud API) sender: no DB-backed account or
-// settings UI, just env vars checked once, same "no DB-backed
-// configuration" convention as src/lib/mailer.ts, rather than the source
-// CRM's Settings-configured WhatsAppAccount.
+// WhatsApp Business Platform (Cloud API) sender. Admin-configured via
+// /admin (see src/lib/whatsapp-settings.ts) rather than an env var, unlike
+// the source CRM's own Settings-configured WhatsAppAccount (which also
+// carries a businessAccountId and webhook verify token this app has no use
+// for, since it never receives inbound messages).
 
-const GRAPH_API_VERSION = "v21.0";
-const GRAPH_API_BASE = `https://graph.facebook.com/${GRAPH_API_VERSION}`;
+export const GRAPH_API_VERSION = "v21.0";
+export const GRAPH_API_BASE = `https://graph.facebook.com/${GRAPH_API_VERSION}`;
 
-export function isWhatsAppConfigured(): boolean {
-  return Boolean(process.env.WHATSAPP_PHONE_NUMBER_ID?.trim() && process.env.WHATSAPP_ACCESS_TOKEN?.trim());
+export async function isWhatsAppConfigured(): Promise<boolean> {
+  return (await getWhatsAppSettings()) !== null;
 }
 
 // Digits only, country code included, no "+" — the wire format Meta's
@@ -40,11 +44,11 @@ export async function sendWhatsAppTemplateMessage(
   languageCode: string,
   bodyParameters: string[],
 ): Promise<void> {
-  const phoneNumberId = process.env.WHATSAPP_PHONE_NUMBER_ID;
-  const accessToken = process.env.WHATSAPP_ACCESS_TOKEN;
-  if (!phoneNumberId || !accessToken) throw new WhatsAppSendError("WhatsApp is not configured.");
+  const settings = await getWhatsAppSettings();
+  if (!settings) throw new WhatsAppSendError("WhatsApp is not configured — set it up from /admin.");
+  const accessToken = decryptSecret(settings.encryptedAccessToken);
 
-  const response = await fetch(`${GRAPH_API_BASE}/${phoneNumberId}/messages`, {
+  const response = await fetch(`${GRAPH_API_BASE}/${settings.phoneNumberId}/messages`, {
     method: "POST",
     headers: { Authorization: `Bearer ${accessToken}`, "Content-Type": "application/json" },
     body: JSON.stringify({
