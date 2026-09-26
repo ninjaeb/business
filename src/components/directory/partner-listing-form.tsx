@@ -52,16 +52,22 @@ const LANGUAGE_TABS: { code: EditorTab; label: string }[] = [
   { code: "ms", label: "BM" },
 ];
 
-type EditorSection = "details" | "updates";
+type EditorSection = "details" | "services" | "updates" | "media";
 
 // A second, independent tab switch from the language one above — this one
-// picks which section of the editor is visible at all (Details vs. News &
-// Promotions), not which language's translatable fields are shown within
-// it. News & Promotions isn't translated (see its own section below), so
-// it has no reason to share the language tabs' state.
+// picks which section of the editor is visible at all (Business Details vs.
+// Products & Services vs. News & Promotions vs. Photos and Videos), not
+// which language's translatable fields are shown within it. News &
+// Promotions and Photos and Videos aren't translated (see their own
+// sections below), so they have no reason to share the language tabs'
+// state — but Business Details and Products & Services both do, and each
+// renders its own copy of that language switcher (see languageSwitcher
+// below) since only one of these sections is ever visible at a time.
 const SECTION_TABS: { value: EditorSection; label: string }[] = [
-  { value: "details", label: "Listing Details" },
+  { value: "details", label: "Business Details" },
+  { value: "services", label: "Products & Services" },
   { value: "updates", label: "News & Promotions" },
+  { value: "media", label: "Photos and Videos" },
 ];
 
 const LISTING_FORM_ID = "partner-listing-form";
@@ -423,15 +429,57 @@ export function PartnerListingForm({
     setJustSaved(false);
   }
 
+  // Rendered once per section that has per-language fields (Business
+  // Details and Products & Services, below) — never both at once, since
+  // only one section is visible at a time, but each needs its own copy
+  // since only one of the two ever renders. Translate with AI always
+  // translates everything (tagline, about, services, and FAQ) in one go
+  // regardless of which section it's clicked from — see handleTranslate.
+  const languageSwitcher = (
+    <div className="flex flex-wrap items-center gap-2 rounded-md border border-slate-200 p-2 dark:border-neutral-800">
+      <div className="inline-flex rounded-md bg-slate-100 p-0.5 dark:bg-neutral-800">
+        {LANGUAGE_TABS.map((tab) => (
+          <button
+            key={tab.code}
+            type="button"
+            onClick={() => setActiveTab(tab.code)}
+            aria-pressed={activeTab === tab.code}
+            className={cn(
+              "rounded px-3 py-1.5 text-sm font-medium transition-colors",
+              activeTab === tab.code
+                ? "bg-white text-petrol-ink shadow-sm dark:bg-neutral-700 dark:text-petrol-light"
+                : "text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200",
+            )}
+          >
+            {tab.label}
+          </button>
+        ))}
+      </div>
+      {aiAvailable && (
+        <button
+          type="button"
+          onClick={handleTranslate}
+          disabled={translating}
+          className={buttonClasses("ghost", "sm", "shrink-0")}
+        >
+          <Sparkles className="h-3.5 w-3.5" />
+          {translating ? "Translating…" : "Translate with AI"}
+        </button>
+      )}
+    </div>
+  );
+
   return (
     <>
       {/* Renders first — right below the Published/View public listing
           status card in the page above — so the tab a partner picks here
           governs everything that follows: the AI Auto Create/Public URL box
-          right below (Listing Details only) and the tabbed form content
-          further down. */}
+          right below (Business Details only) and the tabbed form content
+          further down. flex-wrap on the tab row itself (not just its
+          container) since four tabs' worth of labels no longer fit on one
+          line on a narrow phone screen the way the original two did. */}
       <div className="flex flex-wrap items-center gap-2 rounded-md border border-slate-200 p-2 dark:border-neutral-800">
-        <div className="inline-flex rounded-md bg-slate-100 p-0.5 dark:bg-neutral-800">
+        <div className="flex flex-wrap rounded-md bg-slate-100 p-0.5 dark:bg-neutral-800">
           {SECTION_TABS.map((tab) => (
             <button
               key={tab.value}
@@ -455,7 +503,7 @@ export function PartnerListingForm({
       </div>
 
       {/* AI Auto Create and the Public URL/Search & social preview box sit
-          side by side, AI on the left. Only shown under Listing Details —
+          side by side, AI on the left. Only shown under Business Details —
           both are about that tab's content, not News & Promotions. Public
           URL and Search & social preview share this one box (rather than
           being two stacked boxes) since they're both about how the listing
@@ -608,41 +656,11 @@ export function PartnerListingForm({
 
       {cropImageUrl && <LogoCropDialog imageUrl={cropImageUrl} onCancel={handleCropCancel} onApply={handleCropApply} />}
 
-      <div className="flex flex-wrap items-center gap-2 rounded-md border border-slate-200 p-2 dark:border-neutral-800">
-        <div className="inline-flex rounded-md bg-slate-100 p-0.5 dark:bg-neutral-800">
-          {LANGUAGE_TABS.map((tab) => (
-            <button
-              key={tab.code}
-              type="button"
-              onClick={() => setActiveTab(tab.code)}
-              aria-pressed={activeTab === tab.code}
-              className={cn(
-                "rounded px-3 py-1.5 text-sm font-medium transition-colors",
-                activeTab === tab.code
-                  ? "bg-white text-petrol-ink shadow-sm dark:bg-neutral-700 dark:text-petrol-light"
-                  : "text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200",
-              )}
-            >
-              {tab.label}
-            </button>
-          ))}
-        </div>
-        {aiAvailable && (
-          <button
-            type="button"
-            onClick={handleTranslate}
-            disabled={translating}
-            className={buttonClasses("ghost", "sm", "shrink-0")}
-          >
-            <Sparkles className="h-3.5 w-3.5" />
-            {translating ? "Translating…" : "Translate with AI"}
-          </button>
-        )}
-      </div>
+      {languageSwitcher}
       <p className="-mt-3 text-xs text-slate-400">
-        Tagline, About, Products &amp; services, and FAQ are per-language — switch tabs to edit each, or use
-        Translate with AI to fill in Chinese and Malay from your English content. Everything else (company name,
-        industry, categories, hours, and more) applies to all languages.
+        Tagline and About are per-language — switch tabs to edit each, or use Translate with AI to fill in Chinese
+        and Malay from your English content. Everything else on this tab (company name, industry, categories, hours,
+        and more) applies to all languages.
       </p>
 
       {/* Website is normally a field inside AiAutoCreatePanel above (it's
@@ -874,6 +892,16 @@ export function PartnerListingForm({
         </div>
       </div>
 
+      </div>
+
+      <div className={cn("space-y-5", activeSection !== "services" && "hidden")}>
+
+      {languageSwitcher}
+      <p className="-mt-3 text-xs text-slate-400">
+        Products &amp; services and FAQ are per-language — switch tabs to edit each, or use Translate with AI to
+        fill in Chinese and Malay from your English content.
+      </p>
+
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
           <div className="mb-1.5 flex items-center justify-between gap-2">
@@ -950,41 +978,41 @@ export function PartnerListingForm({
         </div>
       </div>
 
-      <div>
-        <Label className="mb-1.5">Media</Label>
-        <div className="grid gap-4 sm:grid-cols-2">
-          <div>
-            <p className="mb-1.5 text-xs font-medium text-slate-500 dark:text-slate-400">Videos</p>
-            <VideosEditor name="videos" value={videos} onChange={setVideos} />
-            <p className="mt-1 text-xs text-slate-400">
-              Up to 12 — YouTube, Vimeo, Dailymotion, Facebook, or TikTok links, each with a title and category.
-              Optimized for search and AI answer engines.
-            </p>
-          </div>
-
-          <div>
-            <p className="mb-1.5 text-xs font-medium text-slate-500 dark:text-slate-400">Photos</p>
-            <ListingPhotosEditor listingId={listingId} initialPhotos={photos} />
-            <p className="mt-1 text-xs text-slate-400">
-              Up to 12 — added to your gallery right away, but only shown publicly once you save and the listing is
-              (re)approved, same as everything else here.
-            </p>
-          </div>
-        </div>
-      </div>
-
       </div>
 
       {/* News & Promotions isn't translated (never was — see the removed
           "switch to EN to edit" message this replaced), so it has no use
-          for the language tabs above and lives entirely outside that
-          "details" wrapper, in its own top-level section instead. */}
+          for the language tabs above and lives entirely outside the
+          per-language sections, in its own top-level section instead. */}
       <div className={cn("space-y-3", activeSection !== "updates" && "hidden")}>
         <p className="text-sm text-slate-500 dark:text-slate-400">
           Optional — shown on your listing in a News &amp; Promotions section. A promotion disappears on its own
           once its end date passes.
         </p>
         <UpdatesEditor name="updates" value={updates} onChange={setUpdates} listingId={listingId} aiAvailable={aiAvailable} />
+      </div>
+
+      {/* Videos and Photos aren't per-language either (same reasoning as
+          News & Promotions above), so this has no use for the language
+          tabs and lives in its own top-level section too. */}
+      <div className={cn("grid gap-4 sm:grid-cols-2", activeSection !== "media" && "hidden")}>
+        <div>
+          <p className="mb-1.5 text-xs font-medium text-slate-500 dark:text-slate-400">Videos</p>
+          <VideosEditor name="videos" value={videos} onChange={setVideos} />
+          <p className="mt-1 text-xs text-slate-400">
+            Up to 12 — YouTube, Vimeo, Dailymotion, Facebook, or TikTok links, each with a title and category.
+            Optimized for search and AI answer engines.
+          </p>
+        </div>
+
+        <div>
+          <p className="mb-1.5 text-xs font-medium text-slate-500 dark:text-slate-400">Photos</p>
+          <ListingPhotosEditor listingId={listingId} initialPhotos={photos} />
+          <p className="mt-1 text-xs text-slate-400">
+            Up to 12 — added to your gallery right away, but only shown publicly once you save and the listing is
+            (re)approved, same as everything else here.
+          </p>
+        </div>
       </div>
 
       {generalError && <p className="text-sm text-rose-600 dark:text-rose-400">{generalError}</p>}
