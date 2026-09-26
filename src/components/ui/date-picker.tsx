@@ -51,29 +51,56 @@ export function DatePicker({
   name,
   id,
   defaultValue,
+  value: controlledValue,
+  onChange,
   className,
+  buttonClassName,
   placeholder = "Select date",
 }: {
-  name: string;
+  // Uncontrolled (the original, still how every CRM quick-add form uses
+  // this): give it a form field `name` and it manages its own state,
+  // submitted the same way a native <input> would be. Controlled (for a
+  // field whose value the parent already tracks — e.g. one row of
+  // UpdatesEditor's own list, which serializes its whole array into a
+  // single hidden JSON field rather than submitting each entry by its own
+  // form field name): pass `value`/`onChange` instead and omit `name`.
+  name?: string;
   id?: string;
   defaultValue?: string;
+  value?: string;
+  onChange?: (value: string) => void;
   className?: string;
+  // Overrides the trigger button's own size/spacing classes (h-11 w-full
+  // by default) — e.g. a compact inline row like UpdatesEditor's "Ends"
+  // field, which sits next to a News/Promotion toggle no taller than this.
+  buttonClassName?: string;
   placeholder?: string;
 }) {
-  const [value, setValue] = useState(defaultValue ?? "");
+  const [uncontrolledValue, setUncontrolledValue] = useState(defaultValue ?? "");
+  const value = controlledValue ?? uncontrolledValue;
+  const setValue = onChange ?? setUncontrolledValue;
   const [open, setOpen] = useState(false);
-  const initial = parseISODate(defaultValue ?? "") ?? new Date();
+  const initial = parseISODate(defaultValue ?? controlledValue ?? "") ?? new Date();
   const [viewYear, setViewYear] = useState(initial.getFullYear());
   const [viewMonth, setViewMonth] = useState(initial.getMonth());
   const containerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  // setValue is onChange in controlled mode — a new function identity on
+  // every render for an inline caller like UpdatesEditor's — so the reset
+  // listener below reads it through a ref kept current each render, rather
+  // than reattaching the DOM listener whenever the parent re-renders.
+  const setValueRef = useRef(setValue);
+  useEffect(() => {
+    setValueRef.current = setValue;
+  });
 
   // Native form.reset() (used by quick-add forms after submit) won't touch
   // our React state on its own — sync it back explicitly.
   useEffect(() => {
     const form = inputRef.current?.form;
     if (!form) return;
-    const handleReset = () => setValue("");
+    const handleReset = () => setValueRef.current("");
     form.addEventListener("reset", handleReset);
     return () => form.removeEventListener("reset", handleReset);
   }, []);
@@ -116,7 +143,10 @@ export function DatePicker({
       <button
         type="button"
         onClick={() => setOpen((o) => !o)}
-        className="flex h-11 w-full items-center justify-between gap-2 rounded-md border-0 px-3 text-left text-sm text-slate-900 ring-1 ring-inset ring-slate-300 focus:ring-2 focus:ring-inset focus:ring-indigo-500 dark:bg-neutral-900 dark:text-slate-100 dark:ring-neutral-700"
+        className={cn(
+          "flex h-11 w-full items-center justify-between gap-2 rounded-md border-0 px-3 text-left text-sm text-slate-900 ring-1 ring-inset ring-slate-300 focus:ring-2 focus:ring-inset focus:ring-indigo-500 dark:bg-neutral-900 dark:text-slate-100 dark:ring-neutral-700",
+          buttonClassName,
+        )}
       >
         <span className={value ? undefined : "text-slate-400 dark:text-slate-500"}>
           {value ? formatDisplay(value) : placeholder}
