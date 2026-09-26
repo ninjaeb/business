@@ -109,10 +109,17 @@ export async function DirectoryChrome({
               lets it grow into whatever space the nav/hamburger group below
               doesn't claim, rather than sitting at a fixed width that would
               leave dead space on a narrow screen or crowd the nav on a wide
-              one. */}
+              one. Live results as the visitor types, grouped into business/
+              products & services/news & promotions (see HeaderSearch's own
+              dropdown) — Enter, or its "see all results" link, still lands
+              on the same directoryHref?q= search a plain form submit would.
+              The dropdown itself (see header-search.tsx) doesn't stretch to
+              match this box's own narrow mobile width — it's anchored to
+              the box's left edge but sized independently, wide enough to
+              stay readable even down at the max-w-[11rem] cap below. */}
           <HeaderSearch
-            action={directoryHref}
-            placeholder={t.searchPlaceholder}
+            locale={locale}
+            t={t}
             className="min-w-0 flex-1 max-w-[11rem] sm:max-w-xs lg:max-w-sm"
           />
           {/* This wrapper — not DirectoryTopNav itself — carries the ml-auto
