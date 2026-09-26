@@ -121,6 +121,13 @@ export function PartnerListingForm({
   // swaps its label to "Saved" so a click clearly did something, until the
   // next edit (see the form's onChange below) or resubmit makes it stale.
   const [justSaved, setJustSaved] = useState(false);
+  // A listing's first save can auto-adopt the just-entered company name as
+  // its slug (see saveListingFields) — tracked here, separately from the
+  // `slug` prop itself, so PartnerSlugForm reflects that immediately
+  // without waiting on this page's own server-side props to catch up.
+  // handleSubmitForReview (its own useTransition, not this action's state)
+  // updates it the same way for that path.
+  const [currentSlug, setCurrentSlug] = useState(slug);
   const [lastSyncedState, setLastSyncedState] = useState(state);
   if (state !== lastSyncedState) {
     setLastSyncedState(state);
@@ -130,6 +137,7 @@ export function PartnerListingForm({
     } else if (state && "success" in state) {
       setDisplayError(null);
       setJustSaved(true);
+      setCurrentSlug(state.slug);
     }
   }
   const companyNameError = displayError?.field === "companyName" ? displayError.error : null;
@@ -235,6 +243,7 @@ export function PartnerListingForm({
         setDisplayError({ error: result.error, field: result.field });
       } else {
         setDisplayError(null);
+        if (result) setCurrentSlug(result.slug);
         toast.success(
           result?.published ? "Published — your listing is now live." : "Submitted — an admin will review it shortly.",
         );
@@ -436,7 +445,7 @@ export function PartnerListingForm({
 
         <div className="rounded-md border border-slate-200 p-4 dark:border-neutral-800">
           <h3 className="mb-3 text-sm font-semibold text-slate-900 dark:text-slate-100">Public URL</h3>
-          <PartnerSlugForm listingId={listingId} slug={slug} siteOrigin={siteOrigin} autoSlugSource={autoSlugSource} />
+          <PartnerSlugForm listingId={listingId} slug={currentSlug} siteOrigin={siteOrigin} autoSlugSource={autoSlugSource} />
 
           <div className="mt-4 border-t border-slate-200 pt-4 dark:border-neutral-800">
             <div className="mb-1.5 flex items-center justify-between gap-2">

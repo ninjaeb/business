@@ -5,6 +5,8 @@ import { db } from "@/lib/db";
 import { getDirectoryOverviewStats, groupOperatingHours, operatingHoursFromJson, servicesFromJson } from "@/lib/directory";
 import { DEFAULT_DIRECTORY_LOCALE, DIRECTORY_STRINGS, directoryHomePath, directoryListingPath, directorySignupPath } from "@/lib/directory-i18n";
 import { getCurrency, getDirectoryApprovalMode } from "@/lib/settings";
+import { getEmailSettings } from "@/lib/email-settings";
+import { getWhatsAppSettings } from "@/lib/whatsapp-settings";
 import { formatCurrencyExact, formatDate, formatDuration } from "@/lib/format";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
@@ -15,6 +17,8 @@ import { Button } from "@/components/ui/button";
 import { ConfirmSubmitButton } from "@/components/ui/confirm-submit-button";
 import { ListingLogo } from "@/components/directory/listing-logo";
 import { DirectoryApprovalSettingsForm } from "@/components/directory/directory-approval-settings-form";
+import { EmailSettingsForm } from "@/components/settings/email-settings-form";
+import { WhatsAppSettingsForm } from "@/components/settings/whatsapp-settings-form";
 import {
   approveDirectoryListing,
   rejectDirectoryListing,
@@ -55,10 +59,12 @@ function formatOperatingHoursPreview(value: unknown): string[] {
 // own Settings → Team.
 export default async function AdminDirectoryPage() {
   await requireAdmin();
-  const [stats, currency, approvalMode, pendingListings, allListings, partners, businessCategories, recentLeads] = await Promise.all([
+  const [stats, currency, approvalMode, emailSettings, whatsAppSettings, pendingListings, allListings, partners, businessCategories, recentLeads] = await Promise.all([
     getDirectoryOverviewStats(),
     getCurrency(),
     getDirectoryApprovalMode(),
+    getEmailSettings(),
+    getWhatsAppSettings(),
     db.partnerListing.findMany({
       where: { status: "PENDING_REVIEW" },
       orderBy: { submittedAt: "asc" },
@@ -117,6 +123,42 @@ export default async function AdminDirectoryPage() {
         </CardHeader>
         <CardBody>
           <DirectoryApprovalSettingsForm mode={approvalMode} />
+        </CardBody>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Email (SMTP)</CardTitle>
+        </CardHeader>
+        <CardBody>
+          <EmailSettingsForm
+            settings={
+              emailSettings && {
+                host: emailSettings.host,
+                port: emailSettings.port,
+                username: emailSettings.username ?? "",
+                fromName: emailSettings.fromName,
+                fromEmail: emailSettings.fromEmail,
+                hasPassword: Boolean(emailSettings.encryptedPassword),
+              }
+            }
+          />
+        </CardBody>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>WhatsApp</CardTitle>
+        </CardHeader>
+        <CardBody>
+          <WhatsAppSettingsForm
+            settings={
+              whatsAppSettings && {
+                phoneNumberId: whatsAppSettings.phoneNumberId,
+                displayPhoneNumber: whatsAppSettings.displayPhoneNumber,
+              }
+            }
+          />
         </CardBody>
       </Card>
 

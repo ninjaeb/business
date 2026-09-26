@@ -46,6 +46,19 @@ export function PartnerSlugForm({
     if (autoSlugSource) setValue(slugify(autoSlugSource));
   }
 
+  // `slug` itself can also move without a click here — a listing's first
+  // save auto-adopts the company name as its slug (see saveListingFields),
+  // and the parent passes that new value straight through. Only follows it
+  // when the input still shows the previous persisted slug verbatim — a
+  // partner already mid-edit here keeps what they typed, same as any other
+  // unsaved change.
+  const [lastSyncedSlug, setLastSyncedSlug] = useState(slug);
+  if (slug !== lastSyncedSlug) {
+    const previousSlug = lastSyncedSlug;
+    setLastSyncedSlug(slug);
+    if (value === previousSlug) setValue(slug);
+  }
+
   const prefix = `${siteOrigin}${directoryListingPath("en", "")}`;
 
   return (
