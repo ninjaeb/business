@@ -893,6 +893,52 @@ export default async function DirectoryListingPage({
                 </CardBody>
               </Card>
             )}
+
+            {/* Both kept inside this column (rather than full-width
+                sections below the grid, where they used to live) so the
+                grid itself — and with it the "Get in touch" card's sticky
+                containing block — extends the whole way down through them.
+                Sticky only holds while its own column has room left to move
+                within; ending the grid right after the last card left the
+                contact card scrolling away well before the page's actual
+                end. */}
+            {latestBusinesses.length > 0 && (
+              <section aria-labelledby="latest-businesses">
+                <h2 id="latest-businesses" className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+                  {t.latestBusinessesHeading}
+                </h2>
+                <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                  {latestBusinesses.map((related) => (
+                    <ListingCard
+                      key={related.slug}
+                      listing={related}
+                      viewLabel={t.viewListing}
+                      industryLabel={related.industry ? INDUSTRY_LABELS_BY_LOCALE[resolved][related.industry] : undefined}
+                      locale={resolved}
+                    />
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {nearbyBusinesses.length > 0 && (
+              <section aria-labelledby="nearby-businesses">
+                <h2 id="nearby-businesses" className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+                  {t.nearbyBusinessesHeading}
+                </h2>
+                <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                  {nearbyBusinesses.map((related) => (
+                    <ListingCard
+                      key={related.slug}
+                      listing={related}
+                      viewLabel={t.viewListing}
+                      industryLabel={related.industry ? INDUSTRY_LABELS_BY_LOCALE[resolved][related.industry] : undefined}
+                      locale={resolved}
+                    />
+                  ))}
+                </div>
+              </section>
+            )}
           </div>
 
           <InquiryScrollTarget id="contact" className="scroll-mt-32 lg:sticky lg:top-32 lg:self-start">
@@ -909,54 +955,17 @@ export default async function DirectoryListingPage({
         </div>
       </InquiryProvider>
 
-      {latestBusinesses.length > 0 && (
-        <section aria-labelledby="latest-businesses" className="mt-10">
-          <h2 id="latest-businesses" className="text-lg font-semibold text-slate-900 dark:text-slate-100">
-            {t.latestBusinessesHeading}
-          </h2>
-          <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {latestBusinesses.map((related) => (
-              <ListingCard
-                key={related.slug}
-                listing={related}
-                viewLabel={t.viewListing}
-                industryLabel={related.industry ? INDUSTRY_LABELS_BY_LOCALE[resolved][related.industry] : undefined}
-                locale={resolved}
-              />
-            ))}
-          </div>
-        </section>
-      )}
-
-      {nearbyBusinesses.length > 0 && (
-        <section aria-labelledby="nearby-businesses" className="mt-10">
-          <h2 id="nearby-businesses" className="text-lg font-semibold text-slate-900 dark:text-slate-100">
-            {t.nearbyBusinessesHeading}
-          </h2>
-          <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {nearbyBusinesses.map((related) => (
-              <ListingCard
-                key={related.slug}
-                listing={related}
-                viewLabel={t.viewListing}
-                industryLabel={related.industry ? INDUSTRY_LABELS_BY_LOCALE[resolved][related.industry] : undefined}
-                locale={resolved}
-              />
-            ))}
-          </div>
-        </section>
-      )}
-
       <RecommendBar title={listing.companyName} url={recommendUrl} message={recommendMessage} label={t.recommendBusinessCta} />
 
       {/* Shown at every width, not just mobile: on lg+ the Get in touch card
           is a sticky right-hand column (see its own lg:sticky lg:top-32
-          below), but it's only sticky within that column's own height — once
-          a visitor scrolls far enough that the column runs out (past the
-          FAQ, near the related listings/footer), the card scrolls away with
-          the rest of the page. This bar stays truly fixed the whole way
-          down, so "get in touch" is always one tap away regardless of scroll
-          position or screen width. */}
+          above, and the latest/nearby-businesses sections' own comment on
+          why they're inside that same grid) — sticky only through the grid's own
+          height, which now runs the whole way down the left column's real
+          content, but still ends before this bar's own row and RecommendBar
+          above it. This bar stays truly fixed the whole way down, so "get
+          in touch" is always one tap away regardless of scroll position or
+          screen width. */}
       <nav
         aria-label={t.stickyNavLabel}
         className="fixed inset-x-0 bottom-0 z-20 border-t border-slate-200 bg-white px-4 py-3 dark:border-neutral-800 dark:bg-neutral-900"
