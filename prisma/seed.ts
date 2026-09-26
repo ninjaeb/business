@@ -168,6 +168,30 @@ const BUSINESS_CATEGORIES: [id: string, name: string][] = [
   ["category-market-research", "Market Research"],
   ["category-business-process-outsourcing", "Business Process Outsourcing (BPO)"],
   ["category-talent-influencer-agency", "Talent & Influencer Agency"],
+  // Added after a gap-analysis against Google Business Profile's own
+  // category taxonomy — everyday consumer-facing local business types this
+  // list was thin on (this seed otherwise skews heavily B2B/professional),
+  // plus one Malaysia-specific addition (confinement centers).
+  ["category-laundry-dry-cleaning", "Laundry & Dry Cleaning"],
+  ["category-self-storage", "Self-Storage"],
+  ["category-coworking-space", "Co-working Space"],
+  ["category-ice-cream-dessert-shop", "Ice Cream & Dessert Shop"],
+  ["category-florist", "Florist"],
+  ["category-mobile-phone-accessories-store", "Mobile Phone & Accessories Store"],
+  ["category-toy-store", "Toy Store"],
+  ["category-baby-kids-store", "Baby & Kids Store"],
+  ["category-vape-shop", "Vape Shop"],
+  ["category-sporting-goods-store", "Sporting Goods Store"],
+  ["category-petrol-gas-station", "Petrol & Gas Station"],
+  ["category-ev-charging-sales", "EV Charging & Sales"],
+  ["category-auto-glass-windscreen", "Auto Glass & Windscreen"],
+  ["category-chiropractor", "Chiropractor"],
+  ["category-confinement-maternity-center", "Confinement & Maternity Center"],
+  ["category-fertility-clinic", "Fertility Clinic"],
+  ["category-kitchen-cabinet-carpentry", "Kitchen Cabinet & Carpentry"],
+  ["category-curtain-blinds-upholstery", "Curtain, Blinds & Upholstery"],
+  ["category-swimming-pool-services", "Swimming Pool Services"],
+  ["category-party-event-rental", "Party & Event Rental"],
 ];
 
 async function main() {
