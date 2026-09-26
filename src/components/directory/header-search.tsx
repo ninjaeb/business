@@ -102,6 +102,31 @@ export function HeaderSearch({
     router.push(`${directoryHomePath(locale)}?q=${encodeURIComponent(trimmed)}`);
   }
 
+  // A result on the page the visitor is already on is handled by the
+  // browser itself, not the router: Next 16's client router builds a
+  // same-route hash navigation's URL as the route's stored canonical URL
+  // plus the new fragment, and that stored URL can still carry the
+  // fragment the visitor arrived with (a section-nav click, say), so a
+  // Link to "…#news" from "…#media" lands on "…#media#news" — and a Link
+  // with no fragment at all keeps the stale "#media" (see
+  // navigateUsingPrefetchedRouteTree in next/dist/client/components/
+  // segment-cache/navigation.js). A plain hash change scrolls to the
+  // section and records the fragment correctly; a result with no section
+  // just scrolls to the top and drops the stale one. Any other page is a
+  // normal Link navigation.
+  function followResult(event: React.MouseEvent<HTMLAnchorElement>, href: string) {
+    setOpen(false);
+    const target = new URL(href, window.location.href);
+    if (target.pathname !== window.location.pathname) return;
+    event.preventDefault();
+    if (target.hash) {
+      window.location.assign(target.hash);
+    } else {
+      window.history.replaceState(null, "", target.pathname + target.search);
+      window.scrollTo({ top: 0 });
+    }
+  }
+
   const trimmedQuery = query.trim();
   const entries = index?.locale === locale ? index.entries : null;
   // null until the index has arrived — the dropdown stays closed (just the
@@ -151,7 +176,7 @@ export function HeaderSearch({
                 <Link
                   key={hit.slug}
                   href={directoryListingPath(locale, hit.slug)}
-                  onClick={() => setOpen(false)}
+                  onClick={(event) => followResult(event, directoryListingPath(locale, hit.slug))}
                   className="flex items-center gap-2.5 px-3 py-2 hover:bg-slate-50 dark:hover:bg-neutral-800"
                 >
                   <ListingLogo name={hit.companyName} logoUrl={hit.logoUrl} size={28} loading="lazy" className="h-7 w-7 text-xs" />
@@ -172,7 +197,7 @@ export function HeaderSearch({
                 <Link
                   key={`${hit.listingSlug}-${index}`}
                   href={`${directoryListingPath(locale, hit.listingSlug)}#services`}
-                  onClick={() => setOpen(false)}
+                  onClick={(event) => followResult(event, `${directoryListingPath(locale, hit.listingSlug)}#services`)}
                   className="flex items-center gap-2.5 px-3 py-2 hover:bg-slate-50 dark:hover:bg-neutral-800"
                 >
                   <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-500 dark:bg-neutral-800 dark:text-slate-400">
@@ -192,8 +217,8 @@ export function HeaderSearch({
               {results.updates.map((hit, index) => (
                 <Link
                   key={`${hit.listingSlug}-${index}`}
-                  href={directoryListingPath(locale, hit.listingSlug)}
-                  onClick={() => setOpen(false)}
+                  href={`${directoryListingPath(locale, hit.listingSlug)}#news`}
+                  onClick={(event) => followResult(event, `${directoryListingPath(locale, hit.listingSlug)}#news`)}
                   className="flex items-center gap-2.5 px-3 py-2 hover:bg-slate-50 dark:hover:bg-neutral-800"
                 >
                   <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-500 dark:bg-neutral-800 dark:text-slate-400">
