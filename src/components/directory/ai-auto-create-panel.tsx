@@ -127,7 +127,7 @@ export function AiAutoCreatePanel({
   }
 
   return (
-    <section className="rounded-md border border-slate-200 p-4 dark:border-neutral-800">
+    <section className="min-w-0 rounded-md border border-slate-200 p-4 dark:border-neutral-800">
       <div className="flex items-start gap-2">
         <Sparkles className="mt-0.5 h-4 w-4 shrink-0 text-petrol dark:text-petrol-light" />
         <div>

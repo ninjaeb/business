@@ -25,7 +25,11 @@ export function ListingCard({
   const extraServices = listing.services.length - MAX_VISIBLE_SERVICES;
 
   return (
-    <Link href={directoryListingPath(locale, listing.slug)} className="block h-full">
+    // min-w-0: this Link is the actual grid item in the results grid
+    // (directory-search.tsx's grid is a single column below sm) — without
+    // it, it defaults to min-width: auto and the grid track sizes to this
+    // card's own content instead of shrinking to fit the viewport.
+    <Link href={directoryListingPath(locale, listing.slug)} className="block h-full min-w-0">
       <Card className="flex h-full flex-col transition-colors hover:border-petrol/40 dark:hover:border-petrol-light/30">
         <CardBody className="flex flex-1 flex-col gap-3">
           <div className="flex items-center gap-3">
@@ -48,7 +52,15 @@ export function ListingCard({
           {listing.services.length > 0 && (
             <div className="flex flex-wrap gap-1.5">
               {listing.services.slice(0, MAX_VISIBLE_SERVICES).map((service, index) => (
-                <Badge key={index} className="bg-led-soft text-petrol-ink ring-led/30 dark:bg-led-soft-dark dark:text-petrol-light dark:ring-led/20">
+                // max-w + truncate: a service title is free text a partner
+                // wrote themselves and can run long — without a cap, one
+                // long title (no internal wrap points a flex-wrap row can
+                // break on) renders at its full width and pushes the whole
+                // card wider than the viewport on mobile.
+                <Badge
+                  key={index}
+                  className="max-w-[9rem] truncate bg-led-soft text-petrol-ink ring-led/30 sm:max-w-[14rem] dark:bg-led-soft-dark dark:text-petrol-light dark:ring-led/20"
+                >
                   {service.title}
                 </Badge>
               ))}

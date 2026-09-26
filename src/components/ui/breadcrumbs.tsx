@@ -12,14 +12,24 @@ export function Breadcrumbs({ items }: { items: Crumb[] }) {
           <span key={i} className="flex items-center gap-1">
             {i > 0 && <ChevronRight className="h-3.5 w-3.5 shrink-0 text-slate-300 dark:text-neutral-700" />}
             {item.href && !isLast ? (
+              // min-w-0: as a flex item, truncate's white-space: nowrap
+              // makes its content-based minimum size equal its full
+              // (unwrapped) width — without min-w-0 that wins over max-w
+              // and the crumb never actually truncates. The max-w itself
+              // is smaller below sm: this app's root font-size is 18px
+              // (see globals.css), not the usual 16px, so these rem
+              // values already render 12.5% wider than they look — at
+              // the un-prefixed size a single crumb can eat the whole
+              // width of a narrow phone screen and push the page wider
+              // than the viewport.
               <Link
                 href={item.href}
-                className="max-w-[16rem] truncate text-slate-500 hover:text-indigo-600 hover:underline dark:text-slate-400"
+                className="min-w-0 max-w-[10rem] truncate text-slate-500 hover:text-indigo-600 hover:underline sm:max-w-[16rem] dark:text-slate-400"
               >
                 {item.label}
               </Link>
             ) : (
-              <span className="max-w-[20rem] truncate text-slate-500 dark:text-slate-400">
+              <span className="min-w-0 max-w-[12rem] truncate text-slate-500 sm:max-w-[20rem] dark:text-slate-400">
                 {item.label}
               </span>
             )}
