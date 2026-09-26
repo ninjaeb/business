@@ -697,6 +697,26 @@ export async function searchBusinessOnGoogleMaps(query: string): Promise<AiResul
   }
 }
 
+export type AddressFromPlace = { address: string | null; city: string | null; state: string | null; country: string | null };
+
+// Partner-gated — the standalone address search box (see AddressSearch)
+// above the Address/City/State/Country fields. A single Place Details call
+// per selection, same source as autoCreateListingDetails' own address fill
+// but without the AI pass or anything else that call does — just the
+// parsed address facts, so filling in an address never needs OPENROUTER_API_KEY.
+export async function getAddressFromGooglePlace(placeId: string): Promise<AiResult<AddressFromPlace>> {
+  await requirePartnerAction();
+  if (!isGooglePlacesConfigured()) return PLACES_NOT_CONFIGURED;
+  if (!isValidPlaceId(placeId)) return { status: "error", message: "Invalid Google Maps place." };
+
+  try {
+    const place = await getPlaceDetails(placeId);
+    return { status: "ok", data: { address: place.address, city: place.city, state: place.state, country: place.country } };
+  } catch (error) {
+    return { status: "error", message: error instanceof Error ? error.message : "Couldn't load that address." };
+  }
+}
+
 export type AutoCreatedListingDetails = {
   // The selected Google Maps listing's own name, else (when the partner
   // typed a website instead of picking a place) whatever name the website

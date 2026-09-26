@@ -10,6 +10,7 @@ import {
   saveDirectoryListing,
   submitDirectoryListingForReview,
   translateListingContent,
+  type AddressFromPlace,
   type AutoCreatedListingDetails,
   type ListingFormField,
   type ListingFormValues,
@@ -17,6 +18,7 @@ import {
 import { Button, buttonClasses } from "@/components/ui/button";
 import { FieldGroup, Input, Label, RequiredMark, Select, Textarea } from "@/components/ui/field";
 import { MultiCombobox } from "@/components/ui/multi-combobox";
+import { AddressSearch } from "@/components/directory/address-search";
 import { AiAutoCreatePanel } from "@/components/directory/ai-auto-create-panel";
 import { FaqEditor } from "@/components/directory/faq-editor";
 import { ListingLogo } from "@/components/directory/listing-logo";
@@ -409,6 +411,18 @@ export function PartnerListingForm({
     setJustSaved(false);
   }
 
+  // Only fields the selected Google Maps place actually has are replaced —
+  // same "don't wipe what's already there" treatment as handleAutoCreated
+  // above, since Google doesn't always return every component (a place with
+  // no locality, say, shouldn't blank out a City the partner already typed).
+  function handleAddressSelected(result: AddressFromPlace) {
+    if (result.address) setAddress(result.address);
+    if (result.city) setCity(result.city);
+    if (result.state) setAddrState(result.state);
+    if (result.country) setCountry(result.country);
+    setJustSaved(false);
+  }
+
   return (
     <>
       {/* Renders first — right below the Published/View public listing
@@ -730,6 +744,8 @@ export function PartnerListingForm({
           <p className="mt-1 text-xs text-slate-400">Optional — helps visitors filter the directory by what you do.</p>
         </FieldGroup>
       </div>
+
+      <AddressSearch placesAvailable={placesAvailable} onSelect={handleAddressSelected} />
 
       <div className="grid gap-4 sm:grid-cols-2">
         <FieldGroup label="Address" htmlFor="address">
