@@ -450,6 +450,18 @@ export function listingLogoPath(slug: string, publishedAt: Date | null): string 
   return publishedAt ? `${path}?v=${publishedAt.getTime()}` : path;
 }
 
+// A gallery photo's (or an About-embed's) real URL — the same
+// DirectoryListingImage row and /api/directory-images/[id] route
+// PhotoEntry.id and the About field's own embeds both reference (see that
+// model's comment in schema.prisma). No cache-buster needed the way the
+// logo's own path carries one: unlike a logo, which is replaced in place,
+// a gallery photo is a whole new row (and so a new id) every time a
+// partner uploads one — this route already serves each id immutably (see
+// src/app/api/directory-images/[id]/route.ts).
+export function directoryImagePath(id: string): string {
+  return `/api/directory-images/${encodeURIComponent(id)}`;
+}
+
 export function toDirectoryGridListing({ slug, publishedAt, listing }: PublishedListingRow, locale: DirectoryLocale): DirectoryGridListing {
   // Same fallback rule as the detail page: a translation only stands in
   // for the field it actually covers; the company name is never translated.

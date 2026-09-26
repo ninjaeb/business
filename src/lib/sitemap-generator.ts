@@ -3,7 +3,14 @@ import "server-only";
 import { mkdir, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { db } from "@/lib/db";
-import { countListingsByCategory, countListingsByState, listingLogoPath, loadPublishedListings, slugify } from "@/lib/directory";
+import {
+  countListingsByCategory,
+  countListingsByState,
+  directoryImagePath,
+  listingLogoPath,
+  loadPublishedListings,
+  slugify,
+} from "@/lib/directory";
 import { categoryPath } from "@/lib/directory-category-labels";
 import { locationPath } from "@/lib/directory-location-labels";
 import {
@@ -49,16 +56,49 @@ function languageAlternates(pathFor: (locale: DirectoryLocale) => string): strin
     .join("");
 }
 
+// Partner-entered free text (a gallery photo's caption) landing in
+// hand-built XML for the first time here — <loc> below is always a URL
+// this module built itself from known-safe pieces (site origin, a known
+// path shape, an id/slug), never free text, so nothing else in this file
+// has needed escaping until now.
+function escapeXml(text: string): string {
+  return text.replace(/[&<>"']/g, (char) => {
+    switch (char) {
+      case "&":
+        return "&amp;";
+      case "<":
+        return "&lt;";
+      case ">":
+        return "&gt;";
+      case '"':
+        return "&quot;";
+      default:
+        return "&apos;";
+    }
+  });
+}
+
 function urlEntry(
   url: string,
-  options: { alternates?: string; lastModified?: Date; changeFrequency: string; priority: number; imageUrl?: string },
+  options: {
+    alternates?: string;
+    lastModified?: Date;
+    changeFrequency: string;
+    priority: number;
+    images?: { url: string; caption?: string }[];
+  },
 ): string {
   const parts = [`<loc>${url}</loc>`];
   if (options.alternates) parts.push(options.alternates);
   // The Google Images sitemap extension (see the xmlns:image declaration
-  // below) — a listing's logo otherwise has no dedicated discovery path
-  // into Google Images at all, only whatever a page crawl happens to find.
-  if (options.imageUrl) parts.push(`<image:image><image:loc>${options.imageUrl}</image:loc></image:image>`);
+  // below) — a listing's logo/gallery photos otherwise have no dedicated
+  // discovery path into Google Images at all, only whatever a page crawl
+  // happens to find. One <image:image> per photo — the extension allows
+  // repeating it, unlike <image:loc> within one.
+  for (const image of options.images ?? []) {
+    const caption = image.caption ? `<image:caption>${escapeXml(image.caption)}</image:caption>` : "";
+    parts.push(`<image:image><image:loc>${image.url}</image:loc>${caption}</image:image>`);
+  }
   if (options.lastModified) parts.push(`<lastmod>${options.lastModified.toISOString()}</lastmod>`);
   parts.push(`<changefreq>${options.changeFrequency}</changefreq>`);
   parts.push(`<priority>${options.priority}</priority>`);
@@ -154,7 +194,16 @@ export async function buildSitemapXml(): Promise<string> {
   // publish time is the honest lastmod; updatedAt moves on every draft save
   // the public never sees, and a lastmod that lies gets ignored.
   for (const { slug, publishedAt, updatedAt, listing } of listings) {
-    const imageUrl = listing.logoUrl ? `${STATIC_SEO_ORIGIN}${listingLogoPath(slug, publishedAt)}` : undefined;
+    // Logo first (uncaptioned — it represents the business, not a specific
+    // photo), then the gallery in its own display order, each with
+    // whatever caption the partner gave it.
+    const images: { url: string; caption?: string }[] = [
+      ...(listing.logoUrl ? [{ url: `${STATIC_SEO_ORIGIN}${listingLogoPath(slug, publishedAt)}` }] : []),
+      ...listing.photos.map((photo) => ({
+        url: `${STATIC_SEO_ORIGIN}${directoryImagePath(photo.id)}`,
+        caption: photo.caption || undefined,
+      })),
+    ];
     for (const { code } of DIRECTORY_LOCALES) {
       entries.push(
         urlEntry(`${STATIC_SEO_ORIGIN}${directoryListingPath(code, slug)}`, {
@@ -162,7 +211,7 @@ export async function buildSitemapXml(): Promise<string> {
           lastModified: publishedAt ?? updatedAt,
           changeFrequency: "weekly",
           priority: 0.6,
-          imageUrl,
+          images,
         }),
       );
     }
