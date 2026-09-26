@@ -2,16 +2,11 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 // These four destinations (browse by category, browse by location, latest
-// products, news & promotions) are core enough to the directory that they
-// shouldn't be hidden behind DirectoryNavMenu's hamburger — rendered twice
-// by DirectoryChrome at two different breakpoints instead: inline next to
-// the logo on lg+ screens (room for everything on one line), and as its own
-// second row below that (see the lg:hidden/hidden lg:flex split there).
-// Plain server-rendered links, no client state either way. Only one of the
-// two ever renders visibly at a given width — the other is `display: none`
-// via Tailwind's responsive classes, which also removes it from the
-// accessibility tree, so there's never two competing landmarks for a
-// screen reader despite two <nav> elements existing in the DOM.
+// products, news & promotions) — rendered by DirectoryChrome inline next to
+// the logo, but only at lg+ (hidden below that breakpoint, where there's no
+// longer room for a whole extra nav row — see DirectoryNavMenu's own
+// lg:hidden block for the same four links below lg instead). Plain
+// server-rendered links, no client state.
 export function DirectoryTopNav({
   navLabel,
   items,

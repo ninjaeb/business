@@ -7,13 +7,15 @@ import {
   DAYS_OF_WEEK,
   directoryImagePath,
   formatOpeningHoursSchema,
+  getOrCreateReferralCode,
   getPublishedListingBySlug,
   incrementListingViewCount,
   isOpenNow,
   isUpdateCurrent,
+  latestListings,
   listingLogoPath,
   loadPublishedListings,
-  relatedListingsByCategory,
+  nearbyListingsExcludingIndustry,
   slugify,
   toDirectoryGridListing,
   toEmbeddableVideoUrl,
@@ -65,12 +67,14 @@ import { RecommendBar } from "@/components/directory/recommend-bar";
 import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
 import { VideoGallery } from "@/components/directory/video-gallery";
 import { PhotoLightbox } from "@/components/directory/photo-lightbox";
+import { ListingSectionNav } from "@/components/directory/listing-section-nav";
 
 export const dynamic = "force-dynamic";
 
-// How many other listings in the same category to surface below this one
-// (see relatedListingsByCategory) — enough to be useful, not so many the
-// section competes with the listing's own content for attention.
+// How many other listings to surface in each of the two "other businesses"
+// sections below this one (see latestListings/nearbyListingsExcludingIndustry)
+// — enough to be useful, not so many the section competes with the
+// listing's own content for attention.
 const MAX_RELATED_LISTINGS = 6;
 
 // Thin local alias so this file's several `typeof getPublishedListing`
@@ -256,7 +260,8 @@ function buildJsonLd(
 // A News/Promotion post's own dateline (see ListingUpdateEntry.postedAt),
 // shown next to its title the way a news feed or blog normally dates its
 // posts — matches the visiting locale, unlike the post's own English-only
-// title/body (see UpdatesEditor's own "not translated" note).
+// title/body (posts aren't translated at all — see ListingUpdateEntry's
+// own comment in src/lib/directory.ts).
 function formatUpdatePostedAt(postedAt: string, locale: DirectoryLocale): string {
   return new Intl.DateTimeFormat(locale, { month: "short", day: "numeric", year: "numeric" }).format(
     new Date(`${postedAt}T00:00:00`),
@@ -341,24 +346,30 @@ export default async function DirectoryListingPage({
   const listing = await getPublishedListing(slug);
   if (!listing) notFound();
 
-  const [siteOrigin] = await Promise.all([getSiteOrigin(), incrementListingViewCount(listing.id, resolved)]);
+  const [siteOrigin, , referralCode] = await Promise.all([
+    getSiteOrigin(),
+    incrementListingViewCount(listing.id, resolved),
+    getOrCreateReferralCode(listing),
+  ]);
   const t = DIRECTORY_STRINGS[resolved];
   const mapAddress = listing.address;
   const pageUrl = `${siteOrigin}${directoryListingPath(resolved, slug)}`;
 
   // No commission/payout system (this app doesn't pay anyone for a
   // referral, unlike the CRM it was extracted from) — just attribution: a
-  // `r=<listing id>` tag on the Recommend link's own URL, distinct from
-  // pageUrl (which the plain Share button still uses untagged). The id
-  // (not a fixed marker string) lets submitDirectoryLead confirm the tag
-  // actually names the listing the lead is being submitted to, rather
-  // than trusting any `r` value present. A visitor who lands here via
-  // that link and then submits the lead form gets DirectoryLead.viaReferral
-  // set (see directory-lead-form.tsx and submitDirectoryLead), which is
-  // what the business portal's "Referred" stat counts. Offered to every
-  // visitor, not gated to a signed-in partner — anyone recommending a
-  // business they like generates the same tag, not just its own owner.
-  const recommendUrl = `${pageUrl}?r=${listing.id}`;
+  // `r=<referral code>` tag on the Recommend link's own URL, distinct from
+  // pageUrl (which the plain Share button still uses untagged). A short,
+  // generated-once code (see getOrCreateReferralCode) rather than this
+  // listing's own id, so the shared link stays short and doesn't leak the
+  // cuid — but still lets submitDirectoryLead confirm the tag actually
+  // names the listing the lead is being submitted to, rather than trusting
+  // any `r` value present. A visitor who lands here via that link and then
+  // submits the lead form gets DirectoryLead.viaReferral set (see
+  // directory-lead-form.tsx and submitDirectoryLead), which is what the
+  // business portal's "Referred" stat counts. Offered to every visitor, not
+  // gated to a signed-in partner — anyone recommending a business they like
+  // generates the same tag, not just its own owner.
+  const recommendUrl = `${pageUrl}?r=${referralCode}`;
   const recommendMessage = formatRecommendMessage(t.recommendMessage, listing.companyName, recommendUrl);
 
   // The partner's own tagline/description/services/faqs stay the source of
@@ -406,17 +417,39 @@ export default async function DirectoryListingPage({
   ];
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(breadcrumbItems);
 
-  // Other listings sharing this one's primary category — without this,
-  // landing on a listing page from search or an AI answer engine has no
-  // path to another business except going all the way back to the
-  // directory home. Skipped entirely (no query at all) for a listing with
-  // no category, rather than loading every published listing to find none
-  // to show.
-  const relatedListings = primaryCategory
-    ? relatedListingsByCategory(await loadPublishedListings(), primaryCategory, slug, MAX_RELATED_LISTINGS).map((row) =>
-        toDirectoryGridListing(row, resolved),
+  // Two ways to reach another business from this page — without these,
+  // landing here from search or an AI answer engine has no path to another
+  // listing except going all the way back to the directory home.
+  // Deliberately NOT grouped by this listing's own category/industry (the
+  // section this replaced): the newest published listings overall, and
+  // other listings in the same state but a different industry, so a
+  // visitor sees fresh and nearby businesses rather than a list of this
+  // one's direct competitors.
+  const publishedRows = await loadPublishedListings();
+  const latestBusinesses = latestListings(publishedRows, slug, MAX_RELATED_LISTINGS).map((row) =>
+    toDirectoryGridListing(row, resolved),
+  );
+  const nearbyBusinesses = listing.state
+    ? nearbyListingsExcludingIndustry(publishedRows, listing.state, slug, listing.industry, MAX_RELATED_LISTINGS).map(
+        (row) => toDirectoryGridListing(row, resolved),
       )
     : [];
+
+  // The header's own jump-to-section tab strip (see ListingSectionNav) —
+  // same conditions as each section's own Card below, in the same order
+  // they appear on the page, so a tab only ever points at something that's
+  // actually there to scroll to.
+  const hasMedia = videoGallery.length > 0 || listing.photos.length > 0;
+  const sectionLinks = [
+    displayDescription && { href: "#about", label: t.aboutHeading },
+    displayServices.length > 0 && { href: "#services", label: t.servicesHeading },
+    listing.operatingHours && { href: "#hours", label: t.hoursHeading },
+    currentUpdates.length > 0 && { href: "#news", label: t.updatesHeading },
+    mapAddress && { href: "#visit", label: t.visitHeading },
+    displayFaqs.length > 0 && { href: "#faq", label: t.faqHeading },
+    hasMedia && { href: "#media", label: t.mediaHeading },
+    { href: "#contact", label: t.contactHeading },
+  ].filter((section): section is { href: string; label: string } => Boolean(section));
 
   return (
     // Top padding matches the category/location pages' own breadcrumb
@@ -651,13 +684,15 @@ export default async function DirectoryListingPage({
           />
           <ShareButton title={listing.companyName} url={pageUrl} label={t.shareLabel} className="flex-1 justify-center" />
         </div>
+
+        <ListingSectionNav sections={sectionLinks} navLabel={t.sectionNavLabel} />
       </div>
 
       <InquiryProvider>
         <div className="grid gap-6 lg:grid-cols-3">
           <div className="space-y-6 lg:col-span-2">
             {displayDescription && (
-              <Card>
+              <Card id="about" className="scroll-mt-32">
                 <CardHeader>
                   <CardTitle className="text-base">{t.aboutHeading}</CardTitle>
                 </CardHeader>
@@ -685,7 +720,7 @@ export default async function DirectoryListingPage({
                   </Card>
                 )}
                 {listing.operatingHours && (
-                  <Card>
+                  <Card id="hours" className="scroll-mt-32">
                     <CardHeader className="gap-2">
                       <CardTitle className="flex items-center gap-1.5 text-base">
                         <Clock className="h-4 w-4 text-slate-400" />
@@ -748,7 +783,7 @@ export default async function DirectoryListingPage({
             )}
 
             {currentUpdates.length > 0 && (
-              <Card>
+              <Card id="news" className="scroll-mt-32">
                 <CardHeader>
                   <CardTitle className="text-base">{t.updatesHeading}</CardTitle>
                 </CardHeader>
@@ -778,7 +813,7 @@ export default async function DirectoryListingPage({
             )}
 
             {mapAddress && (
-              <Card>
+              <Card id="visit" className="scroll-mt-32">
                 <CardHeader>
                   <CardTitle className="text-base">{t.visitHeading}</CardTitle>
                 </CardHeader>
@@ -806,7 +841,7 @@ export default async function DirectoryListingPage({
             )}
 
             {displayFaqs.length > 0 && (
-              <Card>
+              <Card id="faq" className="scroll-mt-32">
                 <CardHeader>
                   <CardTitle className="text-base">{t.faqHeading}</CardTitle>
                 </CardHeader>
@@ -827,8 +862,8 @@ export default async function DirectoryListingPage({
               </Card>
             )}
 
-            {(videoGallery.length > 0 || listing.photos.length > 0) && (
-              <Card>
+            {hasMedia && (
+              <Card id="media" className="scroll-mt-32">
                 <CardHeader>
                   <CardTitle className="text-base">{t.mediaHeading}</CardTitle>
                 </CardHeader>
@@ -878,6 +913,52 @@ export default async function DirectoryListingPage({
                 </CardBody>
               </Card>
             )}
+
+            {/* Both kept inside this column (rather than full-width
+                sections below the grid, where they used to live) so the
+                grid itself — and with it the "Get in touch" card's sticky
+                containing block — extends the whole way down through them.
+                Sticky only holds while its own column has room left to move
+                within; ending the grid right after the last card left the
+                contact card scrolling away well before the page's actual
+                end. */}
+            {latestBusinesses.length > 0 && (
+              <section aria-labelledby="latest-businesses">
+                <h2 id="latest-businesses" className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+                  {t.latestBusinessesHeading}
+                </h2>
+                <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                  {latestBusinesses.map((related) => (
+                    <ListingCard
+                      key={related.slug}
+                      listing={related}
+                      viewLabel={t.viewListing}
+                      industryLabel={related.industry ? INDUSTRY_LABELS_BY_LOCALE[resolved][related.industry] : undefined}
+                      locale={resolved}
+                    />
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {nearbyBusinesses.length > 0 && (
+              <section aria-labelledby="nearby-businesses">
+                <h2 id="nearby-businesses" className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+                  {t.nearbyBusinessesHeading}
+                </h2>
+                <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                  {nearbyBusinesses.map((related) => (
+                    <ListingCard
+                      key={related.slug}
+                      listing={related}
+                      viewLabel={t.viewListing}
+                      industryLabel={related.industry ? INDUSTRY_LABELS_BY_LOCALE[resolved][related.industry] : undefined}
+                      locale={resolved}
+                    />
+                  ))}
+                </div>
+              </section>
+            )}
           </div>
 
           <InquiryScrollTarget id="contact" className="scroll-mt-32 lg:sticky lg:top-32 lg:self-start">
@@ -894,35 +975,17 @@ export default async function DirectoryListingPage({
         </div>
       </InquiryProvider>
 
-      {relatedListings.length > 0 && primaryCategory && (
-        <section aria-labelledby="related-listings" className="mt-10">
-          <h2 id="related-listings" className="text-lg font-semibold text-slate-900 dark:text-slate-100">
-            {t.relatedListingsHeading.replace("{category}", translateCategoryName(primaryCategory, resolved))}
-          </h2>
-          <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {relatedListings.map((related) => (
-              <ListingCard
-                key={related.slug}
-                listing={related}
-                viewLabel={t.viewListing}
-                industryLabel={related.industry ? INDUSTRY_LABELS_BY_LOCALE[resolved][related.industry] : undefined}
-                locale={resolved}
-              />
-            ))}
-          </div>
-        </section>
-      )}
-
       <RecommendBar title={listing.companyName} url={recommendUrl} message={recommendMessage} label={t.recommendBusinessCta} />
 
       {/* Shown at every width, not just mobile: on lg+ the Get in touch card
           is a sticky right-hand column (see its own lg:sticky lg:top-32
-          below), but it's only sticky within that column's own height — once
-          a visitor scrolls far enough that the column runs out (past the
-          FAQ, near the related listings/footer), the card scrolls away with
-          the rest of the page. This bar stays truly fixed the whole way
-          down, so "get in touch" is always one tap away regardless of scroll
-          position or screen width. */}
+          above, and the latest/nearby-businesses sections' own comment on
+          why they're inside that same grid) — sticky only through the grid's own
+          height, which now runs the whole way down the left column's real
+          content, but still ends before this bar's own row and RecommendBar
+          above it. This bar stays truly fixed the whole way down, so "get
+          in touch" is always one tap away regardless of scroll position or
+          screen width. */}
       <nav
         aria-label={t.stickyNavLabel}
         className="fixed inset-x-0 bottom-0 z-20 border-t border-slate-200 bg-white px-4 py-3 dark:border-neutral-800 dark:bg-neutral-900"

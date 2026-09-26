@@ -43,6 +43,7 @@ import {
   type FaqEntry,
   type ListingTranslations,
   type ListingUpdateEntry,
+  type ListingUpdateKind,
   type OperatingHours,
   type PhotoEntry,
   type ServiceEntry,
@@ -168,12 +169,17 @@ export async function submitDirectoryLead(
       message: parsed.data.message,
       locale: isDirectoryLocale(locale) ? locale : DEFAULT_DIRECTORY_LOCALE,
       // Set by the Recommend button's own link (see recommendUrl in
-      // src/app/[locale]/[slug]/page.tsx: ?r=<listing id>), carried
+      // src/app/[locale]/[slug]/page.tsx: ?r=<referral code>), carried
       // through as a hidden field (see directory-lead-form.tsx). Checked
-      // against this exact listing's own id, not just "some r value was
-      // present" — unauthenticated visitor input, so a stray or copied-
-      // from-elsewhere `r` naming a different listing doesn't count.
-      viaReferral: formData.get("r") === listing.id,
+      // against this exact listing's own referralCode, not just "some r
+      // value was present" — unauthenticated visitor input, so a stray or
+      // copied-from-elsewhere `r` naming a different listing doesn't count.
+      // A listing with no referralCode yet (its public page was never
+      // rendered before this lead) can't have a legitimate `r` to match
+      // either way — formData.get("r") is never actually null here (see
+      // directory-lead-form.tsx's own `?? ""` fallback), so this simply
+      // reads false rather than a stray true.
+      viaReferral: listing.referralCode !== null && formData.get("r") === listing.referralCode,
     },
   });
 
@@ -540,6 +546,44 @@ export async function generateListingFaqs(
     : `${contextLines}\n${aboutLine}\n\nWrite 4-6 FAQ entries for this company's page on the Gotka business directory, based only on the information above.`;
 
   return callAi(FaqListSchema, LISTING_FAQ_SYSTEM_PROMPT, prompt);
+}
+
+const UpdateRewriteSchema = z.object({
+  title: z.string().describe("A short, clear headline for the post, under 100 characters."),
+  body: z.string().describe("The rewritten post body, ready to use as-is — no surrounding quotes or commentary."),
+});
+
+// Unlike the About/Services/FAQ system prompts above, there's no "draft
+// fresh from company context" case: a News or Promotion post is about a
+// specific real event or offer the AI has no way to know about, so it can
+// only ever polish a partner's own draft, never invent one — see
+// rewriteListingUpdate's own empty-draft check below.
+const LISTING_UPDATE_SYSTEM_PROMPT_BY_KIND: Record<ListingUpdateKind, string> = {
+  NEWS: "You write short News posts for a business's page on a public partner directory — real updates and announcements (new hours, a new location, a milestone, a policy change) shown to visitors. Ground everything only in the current draft — never invent a date, number, location, or claim that isn't already there. Clear and factual, not vague marketing filler. The body supports a small formatting syntax: **bold** for emphasis, bullet/numbered lists, and [link text](https://example.com) for a link — no headings; use sparingly, and only if the current draft already uses it or it clearly helps.",
+  PROMOTION: "You write short Promotion posts for a business's page on a public partner directory — a specific offer or deal shown to visitors. Ground everything only in the current draft — never invent or change a discount amount, price, date, or condition; keep every specific number and date exactly as given. Clear and compelling, not vague marketing filler. The body supports a small formatting syntax: **bold** for emphasis, bullet/numbered lists, and [link text](https://example.com) for a link — no headings; use sparingly, and only if the current draft already uses it or it clearly helps.",
+};
+
+// Partner-gated — called from the "Rewrite with AI" button on one News &
+// Promotions post (see UpdatesEditor). Scoped to a single entry, unlike the
+// other rewrite/generate actions above: each post is its own distinct,
+// dated announcement, not a list an AI could usefully regenerate or draft
+// fresh as a batch.
+export async function rewriteListingUpdate(
+  current: { title: string; body: string },
+  kind: ListingUpdateKind,
+): Promise<AiResult<{ title: string; body: string }>> {
+  await requirePartnerAction();
+  if (!isAiConfigured()) return AI_NOT_CONFIGURED;
+
+  const title = current.title.trim();
+  const body = current.body.trim();
+  if (!title && !body) {
+    return { status: "error", message: "Write a draft first — there's nothing yet to rewrite." };
+  }
+
+  const prompt = `Here is the current ${kind === "PROMOTION" ? "promotion" : "news"} post draft:\n\nTitle: ${title || "(none yet)"}\nBody: ${body || "(none yet)"}\n\nRewrite it — a clearer headline and a clearer, more polished body — without inventing new claims, numbers, or dates that aren't already there.`;
+
+  return callAi(UpdateRewriteSchema, LISTING_UPDATE_SYSTEM_PROMPT_BY_KIND[kind], prompt);
 }
 
 const TranslatedServiceSchema = z.object({

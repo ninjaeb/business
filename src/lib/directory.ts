@@ -5,6 +5,7 @@ import { slugify } from "@/lib/slug";
 import { directoryListingPath, type DirectoryLocale } from "@/lib/directory-i18n";
 import { organizationJsonLdId, serializeJsonLd, websiteJsonLdId } from "@/lib/directory-seo";
 import { VIDEO_CATEGORIES, type VideoCategory } from "@/lib/labels";
+import { stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
 
 // Re-exported for existing server-side imports (actions, pages) that
 // already pull these from "@/lib/directory" — but a "use client" component
@@ -312,17 +313,17 @@ export function parseFaqsJson(raw: string): FaqEntry[] {
 // embedding as the About field, rendered with renderMarkdownLite rather than
 // as plain text — and, unlike About, feeds a per-post Article JSON-LD node
 // (see buildUpdatesJsonLd in src/lib/directory-seo.ts) for SEO/GEO. postedAt
-// is stamped once, the first time an entry is actually edited (see
-// UpdatesEditor's updateEntry) — an original-publish date, never bumped by a
-// later edit, same spirit as a blog post's own dateline; null on an entry
-// saved before this field existed, which just omits datePublished from its
-// JSON-LD rather than fabricating one.
+// is stamped once, the moment a post is actually added (see UpdatesEditor's
+// commit) — an original-publish date, never bumped by a later edit, same
+// spirit as a blog post's own dateline; null on an entry saved before this
+// field existed, which just omits datePublished from its JSON-LD rather
+// than fabricating one.
 export type ListingUpdateKind = "NEWS" | "PROMOTION";
 export type ListingUpdateEntry = {
   kind: ListingUpdateKind;
   title: string;
   body: string;
-  postedAt: string | null; // ISO date (YYYY-MM-DD), stamped client-side on first edit
+  postedAt: string | null; // ISO date (YYYY-MM-DD), stamped client-side when the post is added
   endDate: string | null; // ISO date (YYYY-MM-DD), partner's own local date
 };
 
@@ -505,16 +506,23 @@ export function buildPublishedSnapshot(
 // Only what the directory grid (the home page and each category page)
 // actually renders and filters on, in the visitor's own language. This is
 // what crosses the wire to the client-side search (see DirectorySearch), so
-// it deliberately drops everything the grid never shows — the full About
-// text, hours, FAQ, every other language's translation — and, above all,
-// the stored logo: that's a data: URL of the whole image (see photoDataUrl),
-// which inlined into the HTML and again into React's payload made the home
-// page ~870KB for five listings. logoUrl here is a real, cacheable path
-// instead (see listingLogoPath).
+// it deliberately drops everything the grid never shows — hours, FAQ, every
+// other language's translation — and, above all, the stored logo: that's a
+// data: URL of the whole image (see photoDataUrl), which inlined into the
+// HTML and again into React's payload made the home page ~870KB for five
+// listings. logoUrl here is a real, cacheable path instead (see
+// listingLogoPath). `description` is the one exception to "only what the
+// grid renders" — DirectorySearch's free-text query matches against it even
+// though the grid's own cards never show it, so a business searchable by
+// what it actually does (not just its services/industry/category) doesn't
+// need its own card redesigned first. Plain text (see
+// stripMarkdownLiteToPlainText), not the raw markdown-lite the About field
+// stores, so literal "**"/"[]()" syntax never causes a false mismatch.
 export type DirectoryGridListing = {
   slug: string;
   companyName: string;
   tagline: string | null;
+  description: string;
   services: { title: string; description: string }[];
   industry: Industry | null;
   categories: string[];
@@ -557,8 +565,62 @@ export async function getPublishedListingBySlug(slug: string) {
   if (!listing) return null;
   const snapshot = readPublishedSnapshot(listing.publishedSnapshot);
   return snapshot
-    ? { ...snapshot, id: listing.id, partnerId: listing.partnerId, publishedAt: listing.publishedAt, viewCount: listing.viewCount }
+    ? {
+        ...snapshot,
+        id: listing.id,
+        partnerId: listing.partnerId,
+        publishedAt: listing.publishedAt,
+        viewCount: listing.viewCount,
+        // Read-only here — null until the listing detail page itself (never
+        // the opengraph-image route, which shares this same fetch but has no
+        // reason to write anything) calls getOrCreateReferralCode below.
+        referralCode: listing.referralCode,
+      }
     : null;
+}
+
+const REFERRAL_CODE_LENGTH = 7;
+
+// Two random base36 strings concatenated rather than one sliced to length —
+// Math.random().toString(36) can come back short (occasionally far short)
+// of REFERRAL_CODE_LENGTH characters after the "0." prefix, the same
+// imprecision generateListingSlug's own disambiguation suffix accepts at a
+// shorter length; concatenating first guarantees enough characters to slice
+// from every time.
+function randomReferralCode(): string {
+  return (Math.random().toString(36) + Math.random().toString(36)).replace(/[^a-z0-9]/g, "").slice(0, REFERRAL_CODE_LENGTH);
+}
+
+async function generateReferralCode(): Promise<string> {
+  for (let attempt = 0; attempt < 20; attempt++) {
+    const candidate = randomReferralCode();
+    const existing = await db.partnerListing.findUnique({ where: { referralCode: candidate }, select: { id: true } });
+    if (!existing) return candidate;
+  }
+  throw new Error("Could not generate a unique referral code — please try again.");
+}
+
+// Lazily assigns a listing's referralCode the first time it's actually
+// needed (see recommendUrl in src/app/[locale]/[slug]/page.tsx) — nothing
+// needs one before a visitor first lands on the listing's own public page,
+// so there's no migration to backfill every existing row up front. Once
+// set, it never changes (same "generated once" contract as the slug this
+// listing started with — see generateListingSlug).
+export async function getOrCreateReferralCode(listing: { id: string; referralCode: string | null }): Promise<string> {
+  if (listing.referralCode) return listing.referralCode;
+  const referralCode = await generateReferralCode();
+  try {
+    await db.partnerListing.update({ where: { id: listing.id }, data: { referralCode } });
+    return referralCode;
+  } catch {
+    // Only realistic cause: another concurrent first-ever visit to this
+    // same listing won the race and already set one. Read back whatever
+    // actually landed so this page's own link matches exactly what
+    // submitDirectoryLead will later check it against, rather than handing
+    // out a value that was never actually saved.
+    const current = await db.partnerListing.findUnique({ where: { id: listing.id }, select: { referralCode: true } });
+    return current?.referralCode ?? referralCode;
+  }
 }
 
 // The logo's real URL (served by /api/directory-images/logo/[slug]). The
@@ -592,6 +654,7 @@ export function toDirectoryGridListing({ slug, publishedAt, listing }: Published
     slug,
     companyName: listing.companyName,
     tagline: translation?.tagline || listing.tagline,
+    description: stripMarkdownLiteToPlainText(translation?.description || listing.description),
     services: services.map(({ title, description }) => ({ title, description })),
     industry: listing.industry,
     categories: listing.categories,
@@ -652,18 +715,39 @@ export function findStateBySlug(rows: PublishedListingRow[], stateSlug: string):
   return null;
 }
 
-// Other published listings sharing a category, for the detail page's "More
-// businesses in [category]" section — the only place on a listing page a
-// visitor (or a crawler) could otherwise reach another listing without
-// going all the way back to search. Newest-first, same order
-// loadPublishedListings already returns; the caller caps how many to show.
-export function relatedListingsByCategory(
+// The newest published listings overall, for the detail page's "Latest
+// Businesses" section — the only place on a listing page a visitor (or a
+// crawler) could otherwise reach another listing without going all the way
+// back to search. Newest-first, same order loadPublishedListings already
+// returns; the caller caps how many to show. Deliberately not filtered by
+// this listing's own category or industry — "what's new," not "what's
+// similar."
+export function latestListings(rows: PublishedListingRow[], excludeSlug: string, limit: number): PublishedListingRow[] {
+  return rows.filter((row) => row.slug !== excludeSlug).slice(0, limit);
+}
+
+// Other published listings in the same state but a DIFFERENT industry, for
+// the detail page's "Businesses Near You" section — deliberately excludes
+// this listing's own industry so it reads as "other businesses near you,"
+// not a list of local competitors in the same line of work. A listing (or
+// a candidate) with no industry set has nothing to compare, so it's never
+// excluded by this rule. Newest-first, same order loadPublishedListings
+// already returns.
+export function nearbyListingsExcludingIndustry(
   rows: PublishedListingRow[],
-  category: string,
+  state: string,
   excludeSlug: string,
+  excludeIndustry: Industry | null,
   limit: number,
 ): PublishedListingRow[] {
-  return rows.filter((row) => row.slug !== excludeSlug && row.listing.categories.includes(category)).slice(0, limit);
+  return rows
+    .filter(
+      (row) =>
+        row.slug !== excludeSlug &&
+        row.listing.state === state &&
+        (!excludeIndustry || row.listing.industry !== excludeIndustry),
+    )
+    .slice(0, limit);
 }
 
 // Every BusinessCategory, including one with zero published listings — the
