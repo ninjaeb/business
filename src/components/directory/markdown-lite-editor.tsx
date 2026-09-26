@@ -1,7 +1,18 @@
 "use client";
 
 import { useLayoutEffect, useRef, useState } from "react";
-import { Bold, Image as ImageIcon, Link2, List, ListOrdered } from "lucide-react";
+import {
+  Bold,
+  Heading2,
+  Heading3,
+  Image as ImageIcon,
+  Italic,
+  Link2,
+  List,
+  ListOrdered,
+  Quote,
+  Strikethrough,
+} from "lucide-react";
 import { uploadDirectoryListingImage } from "@/app/actions/directory-images";
 import { compressImage } from "@/lib/image-compression";
 import { BULLET_RE, NUMBERED_RE, renderMarkdownLite } from "@/lib/markdown-lite";
@@ -195,6 +206,27 @@ export function MarkdownLiteEditor({
         <div className="flex items-center gap-0.5">
           <button type="button" title="Bold" aria-label="Bold" onClick={() => wrapSelection("**", "**", "bold text")} className={TOOLBAR_BUTTON_CLASS}>
             <Bold className="h-4 w-4" />
+          </button>
+          <button type="button" title="Italic" aria-label="Italic" onClick={() => wrapSelection("*", "*", "italic text")} className={TOOLBAR_BUTTON_CLASS}>
+            <Italic className="h-4 w-4" />
+          </button>
+          <button
+            type="button"
+            title="Strikethrough"
+            aria-label="Strikethrough"
+            onClick={() => wrapSelection("~~", "~~", "strikethrough text")}
+            className={TOOLBAR_BUTTON_CLASS}
+          >
+            <Strikethrough className="h-4 w-4" />
+          </button>
+          <button type="button" title="Heading" aria-label="Heading" onClick={() => prefixLines(() => "## ")} className={TOOLBAR_BUTTON_CLASS}>
+            <Heading2 className="h-4 w-4" />
+          </button>
+          <button type="button" title="Subheading" aria-label="Subheading" onClick={() => prefixLines(() => "### ")} className={TOOLBAR_BUTTON_CLASS}>
+            <Heading3 className="h-4 w-4" />
+          </button>
+          <button type="button" title="Quote" aria-label="Quote" onClick={() => prefixLines(() => "> ")} className={TOOLBAR_BUTTON_CLASS}>
+            <Quote className="h-4 w-4" />
           </button>
           <button type="button" title="Bullet list" aria-label="Bullet list" onClick={() => prefixLines(() => "- ")} className={TOOLBAR_BUTTON_CLASS}>
             <List className="h-4 w-4" />
