@@ -597,6 +597,9 @@ export async function getPublishedListingBySlug(slug: string) {
         partnerId: listing.partnerId,
         publishedAt: listing.publishedAt,
         viewCount: listing.viewCount,
+        viewCountEn: listing.viewCountEn,
+        viewCountZh: listing.viewCountZh,
+        viewCountMs: listing.viewCountMs,
         // Read-only here — null until the listing detail page itself (never
         // the opengraph-image route, which shares this same fetch but has no
         // reason to write anything) calls getOrCreateReferralCode below.
