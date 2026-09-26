@@ -386,10 +386,9 @@ export default async function DirectoryListingPage({
   const displayDescription = translation?.description || listing.description;
   const displayServices = translation?.services?.length ? translation.services : listing.services;
   const displayFaqs = translation?.faqs?.length ? translation.faqs : listing.faqs;
-  // Not translated (see UpdatesEditor) — always the partner's own English
-  // text, regardless of locale, same as companyName.
+  const displayUpdates = translation?.updates?.length ? translation.updates : listing.updates;
   const todayIso = new Date().toISOString().slice(0, 10);
-  const currentUpdates = listing.updates.filter((update) => isUpdateCurrent(update, todayIso));
+  const currentUpdates = displayUpdates.filter((update) => isUpdateCurrent(update, todayIso));
   // Promotions surface above news (more time-sensitive/actionable), each
   // under its own subheading — only shown when both kinds are present, same
   // as the Media card's Videos/Photos split above, so a listing with only

@@ -395,15 +395,20 @@ export function isUpdateCurrent(entry: ListingUpdateEntry, today: string): boole
 }
 
 // AI-translated (or hand-edited) copies of tagline/description/services/
-// faqs for the directory's non-English locales — see translateListingContent
-// in src/app/actions/directory.ts. Keyed by DirectoryLocale minus "en": the
-// English fields are the primary tagline/description/services/faqs
-// themselves, never duplicated in here. A translated service keeps the
-// same price as its English counterpart (price isn't language-specific) —
-// see handleTranslate in partner-listing-form.tsx, which re-attaches it by
-// index right after the AI call returns.
+// faqs/updates for the directory's non-English locales — see
+// translateListingContent in src/app/actions/directory.ts. Keyed by
+// DirectoryLocale minus "en": the English fields are the primary
+// tagline/description/services/faqs/updates themselves, never duplicated
+// in here. A translated service keeps the same price as its English
+// counterpart, and a translated update keeps the same kind/postedAt/
+// endDate as its English counterpart (none of those are language-specific)
+// — see handleTranslate in partner-listing-form.tsx, which re-attaches
+// them by index right after the AI call returns.
 export type ListingTranslations = Partial<
-  Record<Exclude<DirectoryLocale, "en">, { tagline: string; description: string; services: ServiceEntry[]; faqs: FaqEntry[] }>
+  Record<
+    Exclude<DirectoryLocale, "en">,
+    { tagline: string; description: string; services: ServiceEntry[]; faqs: FaqEntry[]; updates: ListingUpdateEntry[] }
+  >
 >;
 
 const TRANSLATION_LOCALES: Exclude<DirectoryLocale, "en">[] = ["zh", "ms"];
@@ -411,15 +416,16 @@ const MAX_TRANSLATED_TAGLINE_LENGTH = 140;
 
 function sanitizeTranslationEntry(
   entry: unknown,
-): { tagline: string; description: string; services: ServiceEntry[]; faqs: FaqEntry[] } | null {
+): { tagline: string; description: string; services: ServiceEntry[]; faqs: FaqEntry[]; updates: ListingUpdateEntry[] } | null {
   if (!entry || typeof entry !== "object") return null;
   const raw = entry as Record<string, unknown>;
   const tagline = typeof raw.tagline === "string" ? raw.tagline.trim().slice(0, MAX_TRANSLATED_TAGLINE_LENGTH) : "";
   const description = typeof raw.description === "string" ? raw.description.trim() : "";
   const services = servicesFromJson(raw.services);
   const faqs = faqsFromJson(raw.faqs);
-  if (!tagline && !description && services.length === 0 && faqs.length === 0) return null;
-  return { tagline, description, services, faqs };
+  const updates = updatesFromJson(raw.updates);
+  if (!tagline && !description && services.length === 0 && faqs.length === 0 && updates.length === 0) return null;
+  return { tagline, description, services, faqs, updates };
 }
 
 export function translationsFromJson(value: unknown): ListingTranslations {
@@ -878,6 +884,9 @@ export async function loadLatestProducts(locale: DirectoryLocale, limit = MAX_LA
 // (see isUpdateCurrent) rather than a separate model: an update has no
 // publish timestamp of its own, so the listing's own publishedAt stands in
 // for "when this was posted," same convention as loadLatestProducts above.
+// Same translation fallback as toDirectoryGridListing: a listing's
+// translated updates stand in only when it has some, otherwise the
+// English list shows through.
 export type ListingUpdateFeedEntry = {
   listingSlug: string;
   companyName: string;
@@ -888,12 +897,17 @@ export type ListingUpdateFeedEntry = {
 
 const MAX_LATEST_UPDATES = 60;
 
-export async function loadLatestListingUpdates(limit = MAX_LATEST_UPDATES): Promise<ListingUpdateFeedEntry[]> {
+export async function loadLatestListingUpdates(
+  locale: DirectoryLocale,
+  limit = MAX_LATEST_UPDATES,
+): Promise<ListingUpdateFeedEntry[]> {
   const rows = await loadPublishedListings();
   const today = new Date().toISOString().slice(0, 10);
   const entries: ListingUpdateFeedEntry[] = [];
   for (const { slug, publishedAt, listing } of rows) {
-    for (const update of listing.updates) {
+    const translation = locale === "en" ? undefined : listing.translations[locale];
+    const updates = translation?.updates.length ? translation.updates : listing.updates;
+    for (const update of updates) {
       if (!isUpdateCurrent(update, today)) continue;
       entries.push({
         listingSlug: slug,

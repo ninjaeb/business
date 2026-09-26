@@ -75,7 +75,7 @@ export async function buildNewsFeedMetadata(locale: DirectoryLocale): Promise<Me
 }
 
 export async function NewsFeedContent({ locale }: { locale: DirectoryLocale }) {
-  const [siteOrigin, entries] = await Promise.all([getSiteOrigin(), loadLatestListingUpdates()]);
+  const [siteOrigin, entries] = await Promise.all([getSiteOrigin(), loadLatestListingUpdates(locale)]);
   const t = DIRECTORY_STRINGS[locale];
   const pageUrl = `${siteOrigin}${directoryNewsPath(locale)}`;
   const breadcrumbItems = [

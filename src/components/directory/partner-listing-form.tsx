@@ -57,12 +57,12 @@ type EditorSection = "details" | "services" | "updates" | "media";
 // A second, independent tab switch from the language one above — this one
 // picks which section of the editor is visible at all (Business Details vs.
 // Products & Services vs. News & Promotions vs. Photos and Videos), not
-// which language's translatable fields are shown within it. News &
-// Promotions and Photos and Videos aren't translated (see their own
-// sections below), so they have no reason to share the language tabs'
-// state — but Business Details and Products & Services both do, and each
-// renders its own copy of that language switcher (see languageSwitcher
-// below) since only one of these sections is ever visible at a time.
+// which language's translatable fields are shown within it. Photos and
+// Videos aren't translated (media has no text of its own to translate), so
+// it has no reason to share the language tabs' state — but the other three
+// sections do, and each renders its own copy of that language switcher
+// (see languageSwitcher below) since only one section is ever visible at
+// a time.
 const SECTION_TABS: { value: EditorSection; label: string }[] = [
   { value: "details", label: "Business Details" },
   { value: "services", label: "Products & Services" },
@@ -334,6 +334,7 @@ export function PartnerListingForm({
       description: prev[locale]?.description ?? "",
       services: prev[locale]?.services ?? [],
       faqs: prev[locale]?.faqs ?? [],
+      updates: prev[locale]?.updates ?? [],
     };
   }
 
@@ -352,13 +353,20 @@ export function PartnerListingForm({
     setJustSaved(false);
   }
 
-  // Translates the primary tagline/description/services/faqs together, into
-  // both target languages at once — unlike the rewrite/generate actions
-  // above there's no existing translation to "improve"; the English fields
-  // are always the source of truth, so every call starts fresh from them.
-  // Services come back title/description only (see translateListingContent)
-  // — each entry's price is re-attached by index right after, same as
-  // handleRewriteServices does for the English list.
+  function updateTranslatedUpdates(locale: TranslationLocale, newUpdates: ListingUpdateEntry[]) {
+    setTranslations((prev) => ({ ...prev, [locale]: { ...emptyTranslationEntry(prev, locale), updates: newUpdates } }));
+    setJustSaved(false);
+  }
+
+  // Translates the primary tagline/description/services/faqs/updates
+  // together, into both target languages at once — unlike the rewrite/
+  // generate actions above there's no existing translation to "improve";
+  // the English fields are always the source of truth, so every call
+  // starts fresh from them. Services come back title/description only, and
+  // updates come back title/body only (see translateListingContent) — each
+  // service's price and each update's kind/postedAt/endDate is re-attached
+  // by index right after, same as handleRewriteServices does for the
+  // English services list.
   function handleTranslate() {
     const formData = new FormData(formRef.current ?? undefined);
     const tagline = String(formData.get("tagline") || "");
@@ -368,13 +376,21 @@ export function PartnerListingForm({
         description,
         services: services.map(({ title, description: serviceDescription }) => ({ title, description: serviceDescription })),
         faqs: faqs.map(({ question, answer }) => ({ question, answer })),
+        updates: updates.map(({ title, body }) => ({ title, body })),
       });
       if (result.status === "ok") {
         const attachPrices = (translated: { title: string; description: string }[]) =>
           translated.map((entry, i) => ({ ...entry, price: services[i]?.price ?? "" }));
+        const attachUpdateFields = (translated: { title: string; body: string }[]) =>
+          translated.map((entry, i) => ({
+            ...entry,
+            kind: updates[i]?.kind ?? "NEWS",
+            postedAt: updates[i]?.postedAt ?? null,
+            endDate: updates[i]?.endDate ?? null,
+          }));
         setTranslations({
-          zh: { ...result.data.zh, services: attachPrices(result.data.zh.services) },
-          ms: { ...result.data.ms, services: attachPrices(result.data.ms.services) },
+          zh: { ...result.data.zh, services: attachPrices(result.data.zh.services), updates: attachUpdateFields(result.data.zh.updates) },
+          ms: { ...result.data.ms, services: attachPrices(result.data.ms.services), updates: attachUpdateFields(result.data.ms.updates) },
         });
         setJustSaved(false);
       } else {
@@ -430,11 +446,12 @@ export function PartnerListingForm({
   }
 
   // Rendered once per section that has per-language fields (Business
-  // Details and Products & Services, below) — never both at once, since
-  // only one section is visible at a time, but each needs its own copy
-  // since only one of the two ever renders. Translate with AI always
-  // translates everything (tagline, about, services, and FAQ) in one go
-  // regardless of which section it's clicked from — see handleTranslate.
+  // Details, Products & Services, and News & Promotions, below) — never
+  // more than one at once, since only one section is visible at a time,
+  // but each needs its own copy since only one of the three ever renders.
+  // Translate with AI always translates everything (tagline, about,
+  // services, FAQ, and News/Promotions posts) in one go regardless of
+  // which section it's clicked from — see handleTranslate.
   const languageSwitcher = (
     <div className="flex flex-wrap items-center gap-2 rounded-md border border-slate-200 p-2 dark:border-neutral-800">
       <div className="inline-flex rounded-md bg-slate-100 p-0.5 dark:bg-neutral-800">
@@ -980,16 +997,40 @@ export function PartnerListingForm({
 
       </div>
 
-      {/* News & Promotions isn't translated (never was — see the removed
-          "switch to EN to edit" message this replaced), so it has no use
-          for the language tabs above and lives entirely outside the
-          per-language sections, in its own top-level section instead. */}
       <div className={cn("space-y-3", activeSection !== "updates" && "hidden")}>
         <p className="text-sm text-slate-500 dark:text-slate-400">
           Optional — shown on your listing in a News &amp; Promotions section. A promotion disappears on its own
           once its end date passes.
         </p>
-        <UpdatesEditor name="updates" value={updates} onChange={setUpdates} listingId={listingId} aiAvailable={aiAvailable} />
+
+        {languageSwitcher}
+        <p className="-mt-1 text-xs text-slate-400">
+          Posts are per-language — switch tabs to edit each, or use Translate with AI to fill in Chinese and Malay
+          from your English posts. Kind, post date, and end date always come from the English post and aren&apos;t
+          set separately per language.
+        </p>
+
+        <div hidden={activeTab !== "en"}>
+          <UpdatesEditor name="updates" value={updates} onChange={setUpdates} listingId={listingId} aiAvailable={aiAvailable} />
+        </div>
+        <div hidden={activeTab !== "zh"}>
+          <UpdatesEditor
+            name="zhUpdates"
+            value={translations.zh?.updates ?? []}
+            onChange={(value) => updateTranslatedUpdates("zh", value)}
+            listingId={listingId}
+            aiAvailable={aiAvailable}
+          />
+        </div>
+        <div hidden={activeTab !== "ms"}>
+          <UpdatesEditor
+            name="msUpdates"
+            value={translations.ms?.updates ?? []}
+            onChange={(value) => updateTranslatedUpdates("ms", value)}
+            listingId={listingId}
+            aiAvailable={aiAvailable}
+          />
+        </div>
       </div>
 
       {/* Videos and Photos aren't per-language either (same reasoning as

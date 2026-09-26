@@ -286,12 +286,14 @@ function extractTranslations(formData: FormData): ListingTranslations {
       description: stringField(formData, "zhDescription"),
       services: parseServicesJson(stringField(formData, "zhServices")),
       faqs: parseFaqsJson(stringField(formData, "zhFaqs")),
+      updates: parseUpdatesJson(stringField(formData, "zhUpdates")),
     },
     ms: {
       tagline: stringField(formData, "msTagline"),
       description: stringField(formData, "msDescription"),
       services: parseServicesJson(stringField(formData, "msServices")),
       faqs: parseFaqsJson(stringField(formData, "msFaqs")),
+      updates: parseUpdatesJson(stringField(formData, "msUpdates")),
     },
   });
 }
@@ -609,6 +611,10 @@ const TranslatedFaqSchema = z.object({
   question: z.string().describe("Translation of the FAQ question."),
   answer: z.string().describe("Translation of the FAQ answer."),
 });
+const TranslatedUpdateSchema = z.object({
+  title: z.string().describe("Translation of the News/Promotion post's title."),
+  body: z.string().describe("Translation of the post's body."),
+});
 const TranslationLocaleSchema = z.object({
   tagline: z.string().describe("Translation of the tagline. Empty string if the tagline is empty."),
   description: z.string().describe("Translation of the About text. Empty string if it's empty."),
@@ -618,6 +624,9 @@ const TranslationLocaleSchema = z.object({
   faqs: z
     .array(TranslatedFaqSchema)
     .describe("Translation of each FAQ entry, in the same order as given — one entry per source entry."),
+  updates: z
+    .array(TranslatedUpdateSchema)
+    .describe("Translation of each News/Promotion post, in the same order as given — one entry per source entry."),
 });
 const TranslationSchema = z.object({
   zh: TranslationLocaleSchema.describe("Simplified Chinese translation of everything below."),
@@ -625,33 +634,49 @@ const TranslationSchema = z.object({
 });
 
 const LISTING_TRANSLATION_SYSTEM_PROMPT =
-  "You translate a business's partner directory listing — its tagline, 'About us' text, list of services/products, and FAQ entries — into Simplified Chinese and Malay (Bahasa Malaysia), for a multi-language public directory. Translate faithfully — never invent, drop, embellish, or add claims that aren't in the source text — but write naturally and idiomatically in each target language rather than a stiff word-for-word rendering. The About text may use a small formatting syntax: **bold**, bullet/numbered lists ('- item' / '1. item'), and [link text](url) links — preserve this syntax exactly around the translated text, never strip or alter it. The services and FAQ lists must come back in the same order and count as given — exactly one translated entry per source entry, never merged, split, added, or dropped. The company name itself is never translated and isn't part of what you're given. If a field is empty (or a list has no entries) in the source, return an empty string (or empty list) for it in both languages.";
+  "You translate a business's partner directory listing — its tagline, 'About us' text, list of services/products, FAQ entries, and News & Promotions posts — into Simplified Chinese and Malay (Bahasa Malaysia), for a multi-language public directory. Translate faithfully — never invent, drop, embellish, or add claims that aren't in the source text — but write naturally and idiomatically in each target language rather than a stiff word-for-word rendering. The About text and each post's body may use a small formatting syntax: **bold**, bullet/numbered lists ('- item' / '1. item'), and [link text](url) links — preserve this syntax exactly around the translated text, never strip or alter it. Never change a number, date, or discount amount in a Promotion post. The services, FAQ, and News/Promotions lists must each come back in the same order and count as given — exactly one translated entry per source entry, never merged, split, added, or dropped. The company name itself is never translated and isn't part of what you're given. If a field is empty (or a list has no entries) in the source, return an empty string (or empty list) for it in both languages.";
 
 // Partner-gated — called from the "Translate with AI" button next to the
 // listing editor's language tabs. Unlike the other rewrite/generate
 // actions, there's no "current translation" to improve: the source of
-// truth is always the primary (English) tagline/description/services/faqs,
-// so every call is a fresh translation from those, in both target languages
-// at once. Services go through title/description only — like
-// rewriteListingServices, price is a partner-only manual field the AI never
-// sees; the caller (handleTranslate in partner-listing-form.tsx)
-// re-attaches each existing entry's price by index once this returns.
+// truth is always the primary (English) tagline/description/services/
+// faqs/updates, so every call is a fresh translation from those, in both
+// target languages at once. Services go through title/description only —
+// like rewriteListingServices, price is a partner-only manual field the AI
+// never sees; updates go through title/body only — kind/postedAt/endDate
+// aren't language-specific either; the caller (handleTranslate in
+// partner-listing-form.tsx) re-attaches each existing entry's price (or
+// kind/postedAt/endDate) by index once this returns.
 export async function translateListingContent(current: {
   tagline: string;
   description: string;
   services: { title: string; description: string }[];
   faqs: { question: string; answer: string }[];
+  updates: { title: string; body: string }[];
 }): Promise<
   AiResult<{
-    zh: { tagline: string; description: string; services: { title: string; description: string }[]; faqs: { question: string; answer: string }[] };
-    ms: { tagline: string; description: string; services: { title: string; description: string }[]; faqs: { question: string; answer: string }[] };
+    zh: {
+      tagline: string;
+      description: string;
+      services: { title: string; description: string }[];
+      faqs: { question: string; answer: string }[];
+      updates: { title: string; body: string }[];
+    };
+    ms: {
+      tagline: string;
+      description: string;
+      services: { title: string; description: string }[];
+      faqs: { question: string; answer: string }[];
+      updates: { title: string; body: string }[];
+    };
   }>
 > {
   await requirePartnerAction();
   if (!isAiConfigured()) return AI_NOT_CONFIGURED;
   const services = current.services.filter((entry) => entry.title.trim());
   const faqs = current.faqs.filter((entry) => entry.question.trim());
-  if (!current.tagline.trim() && !current.description.trim() && services.length === 0 && faqs.length === 0) {
+  const updates = current.updates.filter((entry) => entry.title.trim());
+  if (!current.tagline.trim() && !current.description.trim() && services.length === 0 && faqs.length === 0 && updates.length === 0) {
     return { status: "error", message: "Add some listing content before translating." };
   }
 
@@ -659,12 +684,14 @@ export async function translateListingContent(current: {
     .map((entry, i) => `${i + 1}. ${entry.title}${entry.description ? `: ${entry.description}` : ""}`)
     .join("\n");
   const faqsList = faqs.map((entry, i) => `${i + 1}. Q: ${entry.question}\n   A: ${entry.answer}`).join("\n");
+  const updatesList = updates.map((entry, i) => `${i + 1}. Title: ${entry.title}\n   Body: ${entry.body}`).join("\n");
   const prompt = [
     `Tagline: ${current.tagline.trim() || "(none)"}`,
     `About us:\n${current.description.trim() || "(none)"}`,
     `Services/products (${services.length}):\n${servicesList || "(none)"}`,
     `FAQ (${faqs.length}):\n${faqsList || "(none)"}`,
-    "Translate all of the above into Simplified Chinese and Malay, keeping the services and FAQ lists in the same order and count as given.",
+    `News & Promotions posts (${updates.length}):\n${updatesList || "(none)"}`,
+    "Translate all of the above into Simplified Chinese and Malay, keeping the services, FAQ, and News/Promotions lists in the same order and count as given.",
   ].join("\n\n");
   return callAi(TranslationSchema, LISTING_TRANSLATION_SYSTEM_PROMPT, prompt);
 }
