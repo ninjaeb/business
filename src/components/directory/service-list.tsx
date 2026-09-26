@@ -42,7 +42,7 @@ export function ServiceList({ services }: { services: ServiceEntry[] }) {
                     selected ? "bg-led-soft dark:bg-led-soft-dark" : "hover:bg-slate-50 dark:hover:bg-neutral-800/60",
                   )}
                 >
-                  <td className="w-9 py-3 pl-3">
+                  <td className="w-9 py-3 pl-3 pr-2">
                     {selected ? (
                       <CheckCircle2 className="h-5 w-5 text-petrol dark:text-petrol-light" />
                     ) : (
