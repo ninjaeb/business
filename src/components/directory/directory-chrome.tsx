@@ -38,7 +38,7 @@ async function getDirectoryViewer(): Promise<DirectoryViewer> {
 // The site-like header/footer (sticky nav, language + theme switches,
 // hamburger menu, footer tagline) shared by every public-facing partner
 // page — the directory itself, its listing pages, and the two forms that
-// sit outside it (the locale-prefixed .../business/signup and the bare
+// sit outside it (the locale-prefixed .../signup and the bare
 // /business/login) — rather than the minimal centered-card wrapper an
 // internal admin form might use. A partner filling in a form should feel
 // like they're on the same site the whole way through, not dropped onto a
@@ -49,7 +49,7 @@ export async function DirectoryChrome({
   forceAnonymousNav = false,
 }: {
   children: React.ReactNode;
-  // Every /[locale]/business/... page passes its own already-validated URL
+  // Every /[locale]/... directory page passes its own already-validated URL
   // segment here, so the header renders in exactly that language with no
   // extra cookie lookup. Omitted by pages outside the locale-prefixed tree
   // (currently just /business/login, which still shares this same header)

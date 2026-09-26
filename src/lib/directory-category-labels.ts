@@ -186,7 +186,7 @@ export function translateCategoryName(name: string, locale: DirectoryLocale): st
 // prepends siteOrigin for anything that needs an absolute URL (metadata,
 // JSON-LD); an on-page <Link> uses it as-is.
 export function categoryPath(categorySlug: string, locale: DirectoryLocale): string {
-  return `/${locale}/business/category/${categorySlug}`;
+  return `/${locale}/category/${categorySlug}`;
 }
 
 // Category-page copy templates — kept beside translateCategoryName since

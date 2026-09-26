@@ -38,7 +38,7 @@ import { DirectorySearch } from "@/components/directory/directory-search";
 import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
 
 // Shared by every locale variant of the friendly industry route (see
-// src/app/[locale]/business/industry/[industrySlug]/page.tsx), same
+// src/app/[locale]/industry/[industrySlug]/page.tsx), same
 // division of labor as buildCategoryMetadata/CategoryPageContent.
 export async function buildIndustryMetadata(industrySlugParam: string, locale: DirectoryLocale): Promise<Metadata> {
   const industry = findIndustryBySlug(industrySlugParam);

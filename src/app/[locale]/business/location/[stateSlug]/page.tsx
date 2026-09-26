@@ -1,33 +1,18 @@
-import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { resolveDirectoryLocale } from "@/lib/directory-locale";
-import { buildLocationMetadata, LocationPageContent } from "@/components/directory/location-page-content";
+import { locationPath } from "@/lib/directory-location-labels";
 
-export async function generateMetadata({
+// Superseded by the bare /[locale]/location/<slug> route (see locationPath's
+// own comment in directory-location-labels.ts) — kept only so an old
+// bookmark or indexed link to this URL still lands somewhere real instead
+// of 404ing.
+export default async function LegacyBusinessLocationRedirect({
   params,
 }: {
   params: Promise<{ locale: string; stateSlug: string }>;
-}): Promise<Metadata> {
+}) {
   const { locale, stateSlug } = await params;
   const resolved = resolveDirectoryLocale(locale);
-  if (!resolved) return {};
-  return buildLocationMetadata(stateSlug, resolved);
-}
-
-// Same reasoning as the category route's own force-dynamic: listings
-// change by hand approval, not on a schedule, but a plain Prisma read
-// carries no dynamic signal of its own without this.
-export const dynamic = "force-dynamic";
-
-export default async function DirectoryLocationPage({
-  params,
-  searchParams,
-}: {
-  params: Promise<{ locale: string; stateSlug: string }>;
-  searchParams: Promise<{ q?: string }>;
-}) {
-  const [{ locale, stateSlug }, { q }] = await Promise.all([params, searchParams]);
-  const resolved = resolveDirectoryLocale(locale);
   if (!resolved) notFound();
-  return <LocationPageContent stateSlug={stateSlug} locale={resolved} q={q ?? ""} />;
+  permanentRedirect(locationPath(stateSlug, resolved));
 }

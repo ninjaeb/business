@@ -32,7 +32,7 @@ import { DirectorySearch } from "@/components/directory/directory-search";
 import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
 
 // Shared by every locale variant of the friendly category route (see
-// src/app/[locale]/business/category/[categorySlug]/page.tsx) so the
+// src/app/[locale]/category/[categorySlug]/page.tsx) so the
 // fetch/render logic — and the metadata it produces — exists exactly once
 // regardless of which language a visitor lands on.
 export async function buildCategoryMetadata(categorySlug: string, locale: DirectoryLocale): Promise<Metadata> {
