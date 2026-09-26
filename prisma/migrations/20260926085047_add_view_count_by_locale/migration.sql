@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE "PartnerListing" ADD COLUMN     "viewCountEn" INTEGER NOT NULL DEFAULT 0,
+ADD COLUMN     "viewCountMs" INTEGER NOT NULL DEFAULT 0,
+ADD COLUMN     "viewCountZh" INTEGER NOT NULL DEFAULT 0;

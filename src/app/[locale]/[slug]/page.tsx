@@ -316,7 +316,7 @@ export default async function DirectoryListingPage({
   const listing = await getPublishedListing(slug);
   if (!listing) notFound();
 
-  const [siteOrigin] = await Promise.all([getSiteOrigin(), incrementListingViewCount(listing.id)]);
+  const [siteOrigin] = await Promise.all([getSiteOrigin(), incrementListingViewCount(listing.id, resolved)]);
   const t = DIRECTORY_STRINGS[resolved];
   const mapAddress = listing.address;
   const pageUrl = `${siteOrigin}${directoryListingPath(resolved, slug)}`;
