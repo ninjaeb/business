@@ -6,7 +6,7 @@ import {
   DIRECTORY_STRINGS,
   DIRECTORY_HOME_TITLE_BY_LOCALE,
   directoryHomePath,
-  directoryListingPath,
+  directoryListingServicesPath,
   directoryProductsPath,
   type DirectoryLocale,
 } from "@/lib/directory-i18n";
@@ -82,7 +82,7 @@ export async function LatestProductsContent({ locale }: { locale: DirectoryLocal
           <ul className="mt-6 grid gap-3 sm:grid-cols-2">
             {products.map((product, index) => (
               <li key={`${product.listingSlug}-${index}`}>
-                <Link href={`${directoryListingPath(locale, product.listingSlug)}#services`} className="block h-full">
+                <Link href={directoryListingServicesPath(locale, product.listingSlug)} className="block h-full">
                   <Card className="flex h-full flex-col transition-colors hover:border-petrol/40 dark:hover:border-petrol-light/30">
                     <CardBody className="flex flex-1 flex-col gap-2">
                       <div className="flex items-center gap-3">

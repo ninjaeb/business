@@ -7,14 +7,13 @@ import { ShareButton } from "@/components/directory/share-button";
 import { EmptyState } from "@/components/ui/empty-state";
 import { Input } from "@/components/ui/field";
 import type { DirectoryGridListing } from "@/lib/directory";
-import { normalizeSearchText } from "@/lib/directory-search";
+import { matchesSearchTerms, searchTerms } from "@/lib/directory-search";
 import type { Industry } from "@/generated/prisma/client";
 import type { DirectoryLocale, DirectoryStrings } from "@/lib/directory-i18n";
 
 export function DirectorySearch({
   listings,
   industryLabels,
-  categories,
   t,
   locale,
   initialQuery,
@@ -29,11 +28,6 @@ export function DirectorySearch({
 }: {
   listings: DirectoryGridListing[];
   industryLabels: Record<Industry, string>;
-  // value stays the English category name a listing's snapshot actually
-  // stores (see readPublishedSnapshot) so filtering/the URL query param
-  // keep matching regardless of locale; label is that name translated for
-  // display (see translateCategoryName).
-  categories: { value: string; label: string }[];
   t: DirectoryStrings;
   locale: DirectoryLocale;
   initialQuery: string;
@@ -101,34 +95,20 @@ export function DirectorySearch({
   // need to be state at all.
   const category = initialCategory;
 
-  // Maps a listing's stored (English) category name to its translated
-  // label, so free text search matches what's actually shown on screen
-  // (see the categories prop comment above).
-  const categoryLabelByValue = useMemo(() => new Map(categories.map((cat) => [cat.value, cat.label])), [categories]);
-
   const filtered = useMemo(() => {
-    // Same normalization as the header dropdown (see normalizeSearchText),
-    // so its "see all results" hand-off to this page finds what it found.
-    const q = normalizeSearchText(query);
+    // Same term matching as the header dropdown (see searchTerms), and the
+    // same haystack (see listingSearchText), so its "see all results"
+    // hand-off to this page finds exactly what it found.
+    const terms = searchTerms(query);
     return listings.filter((listing) => {
       if (industry && listing.industry !== industry) return false;
       if (category && !listing.categories.includes(category)) return false;
       if (city !== null && (listing.city ?? "") !== city) return false;
       if (state && listing.state !== state) return false;
       if (country && listing.country !== country) return false;
-      if (!q) return true;
-      const industryLabel = listing.industry ? industryLabels[listing.industry] : undefined;
-      return (
-        normalizeSearchText(listing.companyName).includes(q) ||
-        normalizeSearchText(listing.description).includes(q) ||
-        listing.services.some(
-          (service) => normalizeSearchText(service.title).includes(q) || normalizeSearchText(service.description).includes(q),
-        ) ||
-        (industryLabel ? normalizeSearchText(industryLabel).includes(q) : false) ||
-        listing.categories.some((cat) => normalizeSearchText(categoryLabelByValue.get(cat) ?? cat).includes(q))
-      );
+      return matchesSearchTerms(listing.searchText, terms);
     });
-  }, [listings, query, industry, category, city, state, country, industryLabels, categoryLabelByValue]);
+  }, [listings, query, industry, category, city, state, country]);
 
   return (
     <>

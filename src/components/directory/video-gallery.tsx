@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Play, X } from "lucide-react";
-import { VIDEO_CATEGORIES, type VideoCategory } from "@/lib/labels";
+import { ExternalLink, Play, X } from "lucide-react";
+import { VIDEO_CATEGORIES, VIDEO_PROVIDER_DISPLAY_NAMES, type VideoCategory, type VideoProvider } from "@/lib/labels";
 
 export type GalleryVideo = {
   url: string;
@@ -11,6 +11,10 @@ export type GalleryVideo = {
   categoryLabel: string;
   thumbnailUrl: string | null;
   embedUrl: string | null;
+  // Always set together with embedUrl (see toEmbeddableVideoUrl) — separate
+  // fields only because GalleryVideo isn't a discriminated union. Drives the
+  // brand name in the lightbox's "Watch on {provider}" link below.
+  provider: VideoProvider | null;
 };
 
 // A thumbnail card — clicking one with an embed opens the lightbox below
@@ -78,12 +82,12 @@ function VideoCard({
 function VideoLightbox({
   video,
   title,
-  watchOnOriginalSiteLabel,
+  watchOnProviderLabel,
   onClose,
 }: {
   video: GalleryVideo;
   title: string;
-  watchOnOriginalSiteLabel: string;
+  watchOnProviderLabel: string;
   onClose: () => void;
 }) {
   useEffect(() => {
@@ -95,6 +99,11 @@ function VideoLightbox({
   }, [onClose]);
 
   if (!video.embedUrl) return null;
+  // Falls back to the raw provider id on the (should-never-happen) chance
+  // embedUrl exists without a matching provider — see GalleryVideo's own
+  // comment on why the two aren't a discriminated union.
+  const providerName = video.provider ? VIDEO_PROVIDER_DISPLAY_NAMES[video.provider] : video.url;
+  const watchOnLabel = watchOnProviderLabel.replace("{provider}", providerName);
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
@@ -126,16 +135,20 @@ function VideoLightbox({
             region-locked, age-restricted, or (YouTube specifically) stuck
             behind its "Sign in to confirm you're not a bot" gate on some
             visitors' networks even after switching to youtube-nocookie.com
-            (see toEmbeddableVideoUrl). This link is always there instead of
-            only appearing on failure, so it's a working way out whatever
-            the actual cause turns out to be. */}
+            (see toEmbeddableVideoUrl). This is a real button, not a small
+            text link easy to miss against the black overlay, and it's
+            always there instead of only appearing on failure — a working
+            way out whatever the actual cause turns out to be, for a
+            visitor who has no way to tell "this one's broken" from "this
+            one's just slow to load" while staring at a stalled embed. */}
         <a
           href={video.url}
           target="_blank"
           rel="noopener noreferrer nofollow"
-          className="mt-2 inline-block text-sm text-white/70 hover:text-white hover:underline"
+          className="mt-3 inline-flex items-center gap-1.5 rounded-md bg-white/10 px-3 py-2 text-sm font-medium text-white hover:bg-white/20"
         >
-          {watchOnOriginalSiteLabel} ↗
+          {watchOnLabel}
+          <ExternalLink className="h-4 w-4" />
         </a>
       </div>
     </div>
@@ -159,11 +172,11 @@ function VideoLightbox({
 export function VideoGallery({
   videos,
   companyName,
-  watchOnOriginalSiteLabel,
+  watchOnProviderLabel,
 }: {
   videos: GalleryVideo[];
   companyName: string;
-  watchOnOriginalSiteLabel: string;
+  watchOnProviderLabel: string;
 }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   // A video with no title of its own (partner left it blank) shows the
@@ -207,7 +220,7 @@ export function VideoGallery({
         <VideoLightbox
           video={indexed[openIndex].video}
           title={indexed[openIndex].title}
-          watchOnOriginalSiteLabel={watchOnOriginalSiteLabel}
+          watchOnProviderLabel={watchOnProviderLabel}
           onClose={() => setOpenIndex(null)}
         />
       )}

@@ -7,7 +7,16 @@ import { Loader2, Megaphone, Package, Search } from "lucide-react";
 import { Input } from "@/components/ui/field";
 import { Badge } from "@/components/ui/badge";
 import { ListingLogo } from "@/components/directory/listing-logo";
-import { directoryHomePath, directoryListingPath, formatSearchViewAllResults, type DirectoryLocale, type DirectoryStrings } from "@/lib/directory-i18n";
+import {
+  directoryHomePath,
+  directoryListingNewsPath,
+  directoryListingPath,
+  directoryListingPromotionsPath,
+  directoryListingServicesPath,
+  formatSearchViewAllResults,
+  type DirectoryLocale,
+  type DirectoryStrings,
+} from "@/lib/directory-i18n";
 import { searchDirectoryIndex, type DirectorySearchIndex } from "@/lib/directory-search";
 import { cn } from "@/lib/utils";
 
@@ -102,6 +111,29 @@ export function HeaderSearch({
     router.push(`${directoryHomePath(locale)}?q=${encodeURIComponent(trimmed)}`);
   }
 
+  // Every result below is a real page now (About/Products & Services/News/
+  // Promotions/... each their own route — see src/app/[locale]/[slug]/),
+  // not an anchor within one single page the way "#services"/"#news" used
+  // to work, so there's no fragment-navigation quirk left to work around.
+  // Kept for the case a result points at the exact page the visitor is
+  // already on (searching from within a business's own Products & Services
+  // page, say): a plain Link there would still navigate, remounting the
+  // page for no visible change, so this intercepts that one case and just
+  // closes the dropdown and scrolls to the top instead. Any other page is a
+  // normal Link navigation.
+  function followResult(event: React.MouseEvent<HTMLAnchorElement>, href: string) {
+    setOpen(false);
+    const target = new URL(href, window.location.href);
+    if (target.pathname !== window.location.pathname) return;
+    event.preventDefault();
+    if (target.hash) {
+      window.location.assign(target.hash);
+    } else {
+      window.history.replaceState(null, "", target.pathname + target.search);
+      window.scrollTo({ top: 0 });
+    }
+  }
+
   const trimmedQuery = query.trim();
   const entries = index?.locale === locale ? index.entries : null;
   // null until the index has arrived — the dropdown stays closed (just the
@@ -151,7 +183,7 @@ export function HeaderSearch({
                 <Link
                   key={hit.slug}
                   href={directoryListingPath(locale, hit.slug)}
-                  onClick={() => setOpen(false)}
+                  onClick={(event) => followResult(event, directoryListingPath(locale, hit.slug))}
                   className="flex items-center gap-2.5 px-3 py-2 hover:bg-slate-50 dark:hover:bg-neutral-800"
                 >
                   <ListingLogo name={hit.companyName} logoUrl={hit.logoUrl} size={28} loading="lazy" className="h-7 w-7 text-xs" />
@@ -171,8 +203,8 @@ export function HeaderSearch({
               {results.products.map((hit, index) => (
                 <Link
                   key={`${hit.listingSlug}-${index}`}
-                  href={`${directoryListingPath(locale, hit.listingSlug)}#services`}
-                  onClick={() => setOpen(false)}
+                  href={directoryListingServicesPath(locale, hit.listingSlug)}
+                  onClick={(event) => followResult(event, directoryListingServicesPath(locale, hit.listingSlug))}
                   className="flex items-center gap-2.5 px-3 py-2 hover:bg-slate-50 dark:hover:bg-neutral-800"
                 >
                   <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-500 dark:bg-neutral-800 dark:text-slate-400">
@@ -189,11 +221,16 @@ export function HeaderSearch({
 
           {results.updates.length > 0 && (
             <ResultGroup heading={t.updatesHeading}>
-              {results.updates.map((hit, index) => (
+              {results.updates.map((hit, index) => {
+                const href =
+                  hit.kind === "PROMOTION"
+                    ? directoryListingPromotionsPath(locale, hit.listingSlug)
+                    : directoryListingNewsPath(locale, hit.listingSlug);
+                return (
                 <Link
                   key={`${hit.listingSlug}-${index}`}
-                  href={directoryListingPath(locale, hit.listingSlug)}
-                  onClick={() => setOpen(false)}
+                  href={href}
+                  onClick={(event) => followResult(event, href)}
                   className="flex items-center gap-2.5 px-3 py-2 hover:bg-slate-50 dark:hover:bg-neutral-800"
                 >
                   <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-500 dark:bg-neutral-800 dark:text-slate-400">
@@ -215,7 +252,8 @@ export function HeaderSearch({
                     </span>
                   </span>
                 </Link>
-              ))}
+                );
+              })}
             </ResultGroup>
           )}
 

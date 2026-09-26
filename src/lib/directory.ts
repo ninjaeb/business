@@ -1,3 +1,4 @@
+import { cache } from "react";
 import { db } from "@/lib/db";
 import type { Industry, PartnerListing, Prisma } from "@/generated/prisma/client";
 import { operatingHoursFromJson, type OperatingHours } from "@/lib/operating-hours";
@@ -7,12 +8,13 @@ import {
   directoryListingPath,
   formatViewsLabel,
   INDUSTRY_LABELS_BY_LOCALE,
+  VIDEO_CATEGORY_LABELS_BY_LOCALE,
   type DirectoryLocale,
 } from "@/lib/directory-i18n";
 import { translateCategoryName } from "@/lib/directory-category-labels";
 import { locationLabel } from "@/lib/directory-location-labels";
 import { organizationJsonLdId, serializeJsonLd, websiteJsonLdId } from "@/lib/directory-seo";
-import { VIDEO_CATEGORIES, type VideoCategory } from "@/lib/labels";
+import { VIDEO_CATEGORIES, type VideoCategory, type VideoProvider } from "@/lib/labels";
 import { stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
 import { normalizeSearchText, type DirectorySearchIndex } from "@/lib/directory-search";
 
@@ -74,7 +76,11 @@ export type PublishedListingSnapshot = {
   seoDescription: string | null;
 };
 
-export type PhotoEntry = { id: string; caption: string };
+// `gallery` is the partner's own free-text label for grouping this photo
+// with others (e.g. "Office", "Team") — empty string, like caption, when
+// they haven't set one. See PhotoLightbox for how the public page groups by
+// it once a listing has more than one distinct value among its photos.
+export type PhotoEntry = { id: string; caption: string; gallery: string };
 
 // Also the cap uploadListingGalleryPhoto (src/app/actions/directory-images.ts)
 // enforces before creating a new row — exported so the two never drift apart.
@@ -85,7 +91,11 @@ function sanitizePhotoEntry(entry: unknown): PhotoEntry | null {
   const raw = entry as Record<string, unknown>;
   const id = typeof raw.id === "string" ? raw.id.trim() : "";
   if (!id) return null;
-  return { id, caption: typeof raw.caption === "string" ? raw.caption.trim() : "" };
+  return {
+    id,
+    caption: typeof raw.caption === "string" ? raw.caption.trim() : "",
+    gallery: typeof raw.gallery === "string" ? raw.gallery.trim() : "",
+  };
 }
 
 export function photosFromJson(value: unknown): PhotoEntry[] {
@@ -153,8 +163,6 @@ export function parseVideosJson(raw: string): VideoEntry[] {
   }
   return videosFromJson(parsed);
 }
-
-export type VideoProvider = "youtube" | "vimeo" | "dailymotion" | "facebook" | "tiktok";
 
 function detectVideoProvider(host: string): VideoProvider | null {
   if (host === "youtube.com" || host === "m.youtube.com" || host === "youtu.be") return "youtube";
@@ -542,18 +550,17 @@ export function buildPublishedSnapshot(
 // data: URL of the whole image (see photoDataUrl), which inlined into the
 // HTML and again into React's payload made the home page ~870KB for five
 // listings. logoUrl here is a real, cacheable path instead (see
-// listingLogoPath). `description` is the one exception to "only what the
-// grid renders" — DirectorySearch's free-text query matches against it even
-// though the grid's own cards never show it, so a business searchable by
-// what it actually does (not just its services/industry/category) doesn't
-// need its own card redesigned first. Plain text (see
-// stripMarkdownLiteToPlainText), not the raw markdown-lite the About field
-// stores, so literal "**"/"[]()" syntax never causes a false mismatch.
+// listingLogoPath). `searchText` is the one exception to "only what the
+// grid renders": every piece of text the listing carries (see
+// listingSearchText), already normalized, so DirectorySearch's free-text
+// query can match a business by anything about it — its About text, an
+// FAQ, its address, a post — without the grid shipping each of those
+// fields, or its cards showing them.
 export type DirectoryGridListing = {
   slug: string;
   companyName: string;
   tagline: string | null;
-  description: string;
+  searchText: string;
   services: { title: string; description: string }[];
   industry: Industry | null;
   categories: string[];
@@ -601,7 +608,13 @@ export async function loadPublishedListings(): Promise<PublishedListingRow[]> {
 // snapshot). Shared by the listing detail page's own metadata/body and its
 // opengraph-image route (src/app/[locale]/[slug]/opengraph-image.tsx),
 // which needs the same company name/services/description a visitor sees.
-export async function getPublishedListingBySlug(slug: string) {
+// Wrapped in React's cache() since the listing now also has its own shared
+// layout (src/app/[locale]/[slug]/layout.tsx) plus one route per section
+// (products-services/, photos/, videos/, news/, promotions/, visit/, faq/)
+// — every one of those, and each one's own generateMetadata, calls this
+// with the same slug for the same request, and this dedupes them to a
+// single DB round trip rather than one per file.
+export const getPublishedListingBySlug = cache(async (slug: string) => {
   const listing = await db.partnerListing.findUnique({ where: { slug } });
   if (!listing) return null;
   const snapshot = readPublishedSnapshot(listing.publishedSnapshot);
@@ -612,12 +625,65 @@ export async function getPublishedListingBySlug(slug: string) {
         partnerId: listing.partnerId,
         publishedAt: listing.publishedAt,
         viewCount: listing.viewCount,
+        viewCountEn: listing.viewCountEn,
+        viewCountZh: listing.viewCountZh,
+        viewCountMs: listing.viewCountMs,
         // Read-only here — null until the listing detail page itself (never
         // the opengraph-image route, which shares this same fetch but has no
         // reason to write anything) calls getOrCreateReferralCode below.
         referralCode: listing.referralCode,
       }
     : null;
+});
+
+export type ListingDisplay = {
+  tagline: string;
+  description: string;
+  services: ServiceEntry[];
+  faqs: FaqEntry[];
+  videoGallery: { url: string; title: string; category: VideoCategory; thumbnailUrl: string | null; embed: { embedUrl: string; provider: VideoProvider } | null }[];
+  hasMedia: boolean;
+  currentUpdates: ListingUpdateEntry[];
+  currentNews: ListingUpdateEntry[];
+  currentPromotions: ListingUpdateEntry[];
+};
+
+// Resolves which language's Tagline/About/Products & services/FAQ/Updates
+// actually show for a given locale — the partner's own primary-language
+// fields, unless a translation covers that particular one (see
+// ListingTranslations) — plus the small amount of further derived data
+// several section pages need (which updates are still current, split by
+// kind; which videos have a working embed). Kept as one function rather
+// than duplicated across the shared layout and each of the listing's own
+// section pages: every one of those independently calls this on the exact
+// same already-fetched (and cache()d, see above) listing object, so
+// nothing re-hits the database, only this plain derivation re-runs.
+export function resolveListingDisplay(
+  listing: NonNullable<Awaited<ReturnType<typeof getPublishedListingBySlug>>>,
+  locale: DirectoryLocale,
+): ListingDisplay {
+  const translation = locale === "zh" || locale === "ms" ? listing.translations[locale] : undefined;
+  const tagline = translation?.tagline || listing.tagline || "";
+  const description = translation?.description || listing.description || "";
+  const services = translation?.services?.length ? translation.services : listing.services;
+  const faqs = translation?.faqs?.length ? translation.faqs : listing.faqs;
+  const updates = translation?.updates?.length ? translation.updates : listing.updates;
+  const todayIso = new Date().toISOString().slice(0, 10);
+  const currentUpdates = updates.filter((update) => isUpdateCurrent(update, todayIso));
+  const currentPromotions = currentUpdates.filter((update) => update.kind === "PROMOTION");
+  const currentNews = currentUpdates.filter((update) => update.kind === "NEWS");
+  const videoGallery = listing.videos.map((video) => ({ ...video, embed: toEmbeddableVideoUrl(video.url) }));
+  return {
+    tagline,
+    description,
+    services,
+    faqs,
+    videoGallery,
+    hasMedia: videoGallery.length > 0 || listing.photos.length > 0,
+    currentUpdates,
+    currentNews,
+    currentPromotions,
+  };
 }
 
 const REFERRAL_CODE_LENGTH = 7;
@@ -686,6 +752,53 @@ export function directoryImagePath(id: string): string {
   return `/api/directory-images/${encodeURIComponent(id)}`;
 }
 
+// Everything a visitor could know a listing by, in their own language, as
+// one normalized haystack (see normalizeSearchText) — what both the home
+// page's free-text search (DirectoryGridListing.searchText) and the header
+// dropdown's business group (loadDirectorySearchIndex) match against, so
+// the two can never disagree about which businesses a query finds. Every
+// text field of the snapshot is in here, not just the obvious ones: a
+// business is as findable by its street, its website, an FAQ it answers,
+// a photo caption or a post as by its name. What the page itself would
+// never show is left out too — a promotion past its end date, which the
+// listing page no longer renders (see isUpdateCurrent). Same fallback rule
+// as the detail page for translations: one only stands in for the field
+// it actually covers; the company name is never translated.
+export function listingSearchText(slug: string, listing: PublishedListingSnapshot, locale: DirectoryLocale): string {
+  const translation = locale === "en" ? undefined : listing.translations[locale];
+  const services = translation?.services.length ? translation.services : listing.services;
+  const faqs = translation?.faqs.length ? translation.faqs : listing.faqs;
+  const updates = translation?.updates.length ? translation.updates : listing.updates;
+  const videoCategoryLabels = VIDEO_CATEGORY_LABELS_BY_LOCALE[locale];
+  const today = new Date().toISOString().slice(0, 10);
+  return normalizeSearchText(
+    [
+      slug,
+      listing.companyName,
+      translation?.tagline || listing.tagline,
+      stripMarkdownLiteToPlainText(translation?.description || listing.description),
+      listing.industry ? INDUSTRY_LABELS_BY_LOCALE[locale][listing.industry] : null,
+      // Both the stored English name and its translation, so a visitor
+      // typing in either language finds it.
+      ...listing.categories.flatMap((cat) => [cat, translateCategoryName(cat, locale)]),
+      listing.address,
+      listing.city,
+      listing.state,
+      listing.country,
+      listing.website,
+      ...services.flatMap((service) => [service.title, service.description, service.price]),
+      ...faqs.flatMap((faq) => [faq.question, faq.answer]),
+      ...updates.filter((update) => isUpdateCurrent(update, today)).flatMap((update) => [update.title, stripMarkdownLiteToPlainText(update.body)]),
+      ...listing.videos.flatMap((video) => [video.title, videoCategoryLabels[video.category]]),
+      ...listing.photos.map((photo) => photo.caption),
+      listing.seoTitle,
+      listing.seoDescription,
+    ]
+      .filter(Boolean)
+      .join(" "),
+  );
+}
+
 export function toDirectoryGridListing(
   { slug, publishedAt, viewCount, listing }: PublishedListingRow,
   locale: DirectoryLocale,
@@ -698,7 +811,7 @@ export function toDirectoryGridListing(
     slug,
     companyName: listing.companyName,
     tagline: translation?.tagline || listing.tagline,
-    description: stripMarkdownLiteToPlainText(translation?.description || listing.description),
+    searchText: listingSearchText(slug, listing, locale),
     services: services.map(({ title, description }) => ({ title, description })),
     industry: listing.industry,
     categories: listing.categories,
@@ -974,38 +1087,26 @@ export async function loadDirectorySearchIndex(locale: DirectoryLocale): Promise
     // stands in for the field it actually covers; the company name is never
     // translated.
     const translation = locale === "en" ? undefined : listing.translations[locale];
-    const tagline = translation?.tagline || listing.tagline || null;
-    const industryLabel = listing.industry ? industryLabels[listing.industry] : null;
     const services = translation?.services.length ? translation.services : listing.services;
+    const updates = translation?.updates.length ? translation.updates : listing.updates;
     const publishedAt = row.publishedAt ? new Date(row.publishedAt) : null;
 
     index.push({
       slug: row.slug,
       companyName: listing.companyName,
-      tagline,
-      industryLabel,
+      tagline: translation?.tagline || listing.tagline || null,
+      industryLabel: listing.industry ? industryLabels[listing.industry] : null,
       logoUrl: row.hasLogo ? listingLogoPath(row.slug, publishedAt) : null,
-      haystack: normalizeSearchText(
-        [
-          listing.companyName,
-          tagline,
-          stripMarkdownLiteToPlainText(translation?.description || listing.description),
-          industryLabel,
-          // Both the stored English name and its translation, so a visitor
-          // typing in either language finds it.
-          ...listing.categories.flatMap((cat) => [cat, translateCategoryName(cat, locale)]),
-        ]
-          .filter(Boolean)
-          .join(" "),
-      ),
+      // The whole listing (see listingSearchText) — so a query that matches
+      // one of its products or posts lists the business itself too, beside
+      // that product's or post's own row below.
+      haystack: listingSearchText(row.slug, listing, locale),
       services: services.map((service) => ({
         title: service.title,
-        haystack: normalizeSearchText(`${service.title} ${service.description}`),
+        haystack: normalizeSearchText(`${service.title} ${service.description} ${service.price}`),
       })),
-      // Never translated (see ListingUpdateEntry's own comment) — matched
-      // in whatever language a partner actually wrote it in, and only while
-      // still current, same as loadLatestListingUpdates above.
-      updates: listing.updates
+      // Only while still current, same as loadLatestListingUpdates above.
+      updates: updates
         .filter((update) => isUpdateCurrent(update, today))
         .map((update) => ({
           kind: update.kind,

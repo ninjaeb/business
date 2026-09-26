@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { db } from "@/lib/db";
 import { getSiteOrigin } from "@/lib/site-url";
 import {
   DIRECTORY_STRINGS,
@@ -32,7 +31,6 @@ import {
   industryPageHeading,
   industryPageDescription,
 } from "@/lib/directory-industry-labels";
-import { translateCategoryName } from "@/lib/directory-category-labels";
 import { INDUSTRIES } from "@/lib/labels";
 import { DirectorySearch } from "@/components/directory/directory-search";
 import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
@@ -98,10 +96,7 @@ export async function IndustryPageContent({
   const heading = industryPageHeading(industry, locale);
   const description = industryPageDescription(industry, locale);
 
-  const [rows, businessCategories] = await Promise.all([
-    loadPublishedListings(),
-    db.businessCategory.findMany({ orderBy: { name: "asc" }, select: { name: true } }),
-  ]);
+  const rows = await loadPublishedListings();
   const listings = rows.map((row) => toDirectoryGridListing(row, locale));
   const industryListings = listings.filter((listing) => listing.industry === industry);
   const breadcrumbItems = [
@@ -132,7 +127,6 @@ export async function IndustryPageContent({
       <DirectorySearch
         listings={listings}
         industryLabels={INDUSTRY_LABELS_BY_LOCALE[locale]}
-        categories={businessCategories.map((row) => ({ value: row.name, label: translateCategoryName(row.name, locale) }))}
         t={t}
         locale={locale}
         initialQuery={q}

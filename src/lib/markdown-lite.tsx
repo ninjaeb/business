@@ -3,11 +3,13 @@ import { cn } from "@/lib/utils";
 import { ZoomableImage } from "@/components/directory/zoomable-image";
 
 // A deliberately small formatting grammar for the partner directory's
-// About field — bold, bullet/numbered lists, links, and images. Not a
-// general markdown parser: no headings, tables, nesting, or escaping, by
-// design ("simple formatting" is what was asked for). Zero `db` (or any
-// other server-only) dependency — safe to import from a "use client"
-// component's live preview, same reasoning as src/lib/operating-hours.ts.
+// About field and News/Promotion posts — bold, italic, strikethrough,
+// bullet/numbered lists, headings (##/###), blockquotes, links, and
+// images. Still not a general markdown parser: no tables, nesting, or
+// escaping, by design ("simple formatting" is what was asked for). Zero
+// `db` (or any other server-only) dependency — safe to import from a
+// "use client" component's live preview, same reasoning as
+// src/lib/operating-hours.ts.
 
 const SAFE_URL_PATTERN = /^https?:\/\//i;
 // A root-relative path ("/api/directory-images/xyz") is same-origin and
@@ -29,8 +31,13 @@ function isSafeUrl(url: string): boolean {
 }
 
 // Image before link (its leading "!" is what tells them apart — trying
-// link first would still match an image's "[alt](url)" tail), bold last.
-const INLINE_PATTERN = /!\[([^\]]*)\]\(([^)\s]+)\)|\[([^\]]*)\]\(([^)\s]+)\)|\*\*([^*]+)\*\*/g;
+// link first would still match an image's "[alt](url)" tail); bold before
+// italic, since both use "*" and a leading "**" must win over "*" at the
+// same position (the engine takes the first alternative that matches, not
+// the longest, so order here is what makes "**bold**" not parse as
+// "*" + "bold" wrapped by two stray italics).
+const INLINE_PATTERN =
+  /!\[([^\]]*)\]\(([^)\s]+)\)|\[([^\]]*)\]\(([^)\s]+)\)|\*\*([^*]+)\*\*|~~([^~]+)~~|\*([^*]+)\*/g;
 
 function renderInline(text: string, keyPrefix: string, zoomableImages: boolean): ReactNode[] {
   const nodes: ReactNode[] = [];
@@ -40,7 +47,7 @@ function renderInline(text: string, keyPrefix: string, zoomableImages: boolean):
   let match: RegExpExecArray | null;
   while ((match = pattern.exec(text))) {
     if (match.index > lastIndex) nodes.push(text.slice(lastIndex, match.index));
-    const [full, imageAlt, imageUrl, linkText, linkUrl, boldText] = match;
+    const [full, imageAlt, imageUrl, linkText, linkUrl, boldText, strikeText, italicText] = match;
     const key = `${keyPrefix}-${count++}`;
     if (imageUrl !== undefined) {
       nodes.push(
@@ -73,6 +80,10 @@ function renderInline(text: string, keyPrefix: string, zoomableImages: boolean):
       );
     } else if (boldText !== undefined) {
       nodes.push(<strong key={key}>{boldText}</strong>);
+    } else if (strikeText !== undefined) {
+      nodes.push(<del key={key}>{strikeText}</del>);
+    } else if (italicText !== undefined) {
+      nodes.push(<em key={key}>{italicText}</em>);
     }
     lastIndex = match.index + full.length;
   }
@@ -80,18 +91,29 @@ function renderInline(text: string, keyPrefix: string, zoomableImages: boolean):
   return nodes;
 }
 
-type Block = { type: "paragraph" | "bullet-list" | "numbered-list"; lines: string[] };
+type Block = {
+  type: "paragraph" | "bullet-list" | "numbered-list" | "heading" | "blockquote";
+  lines: string[];
+  // Only set for "heading" — 2 or 3, matching HEADING_RE's "##"/"###".
+  level?: number;
+};
 
 // Exported for markdown-lite-editor.tsx's Enter-key handling, which needs to
 // recognize "the cursor is on a list line" using the exact same grammar this
 // parses with, rather than a second, potentially-drifting copy of it.
 export const BULLET_RE = /^[-*]\s+(.*)$/;
 export const NUMBERED_RE = /^\d+\.\s+(.*)$/;
+// Two levels only (## and ###) — a partner's About/post body is a few
+// paragraphs, not a document that needs a full h1-h6 outline, and h1 is
+// reserved for the page's own listing-name heading.
+const HEADING_RE = /^(#{2,3})\s+(.*)$/;
+const BLOCKQUOTE_RE = /^>\s?(.*)$/;
 
-// Blank lines separate paragraphs; a run of consecutive list-marker lines
-// becomes one list. Everything else is a paragraph, with single line
-// breaks kept as <br> (not collapsed) — the closest match to how this text
-// rendered before (plain whitespace-pre-wrap) now that it's real markup.
+// Blank lines separate paragraphs; a run of consecutive list-marker or
+// blockquote-marker lines becomes one block, a heading line is always its
+// own block. Everything else is a paragraph, with single line breaks kept
+// as <br> (not collapsed) — the closest match to how this text rendered
+// before (plain whitespace-pre-wrap) now that it's real markup.
 function parseBlocks(text: string): Block[] {
   const blocks: Block[] = [];
   const rawLines = text.replace(/\r\n/g, "\n").split("\n");
@@ -99,6 +121,24 @@ function parseBlocks(text: string): Block[] {
   while (i < rawLines.length) {
     if (rawLines[i].trim() === "") {
       i++;
+      continue;
+    }
+    const heading = HEADING_RE.exec(rawLines[i]);
+    if (heading) {
+      blocks.push({ type: "heading", level: heading[1].length, lines: [heading[2]] });
+      i++;
+      continue;
+    }
+    const blockquote = BLOCKQUOTE_RE.exec(rawLines[i]);
+    if (blockquote) {
+      const items: string[] = [];
+      while (i < rawLines.length) {
+        const m = BLOCKQUOTE_RE.exec(rawLines[i]);
+        if (!m) break;
+        items.push(m[1]);
+        i++;
+      }
+      blocks.push({ type: "blockquote", lines: items });
       continue;
     }
     const bullet = BULLET_RE.exec(rawLines[i]);
@@ -126,7 +166,14 @@ function parseBlocks(text: string): Block[] {
       continue;
     }
     const lines: string[] = [];
-    while (i < rawLines.length && rawLines[i].trim() !== "" && !BULLET_RE.test(rawLines[i]) && !NUMBERED_RE.test(rawLines[i])) {
+    while (
+      i < rawLines.length &&
+      rawLines[i].trim() !== "" &&
+      !HEADING_RE.test(rawLines[i]) &&
+      !BLOCKQUOTE_RE.test(rawLines[i]) &&
+      !BULLET_RE.test(rawLines[i]) &&
+      !NUMBERED_RE.test(rawLines[i])
+    ) {
       lines.push(rawLines[i]);
       i++;
     }
@@ -135,7 +182,8 @@ function parseBlocks(text: string): Block[] {
   return blocks;
 }
 
-// Renders **bold**, "- "/"* " and "1. " lists, [text](url) links, and
+// Renders **bold**, *italic*, ~~strikethrough~~, "- "/"* " and "1. " lists,
+// "##"/"###" headings, "> " blockquotes, [text](url) links, and
 // ![alt](url) images as real React elements — never dangerouslySetInnerHTML,
 // so there's no HTML-string XSS surface: everything but a validated
 // http(s) href/src is plain escaped text by construction.
@@ -151,6 +199,33 @@ export function renderMarkdownLite(
   return (
     <div className={cn("space-y-3", className)}>
       {blocks.map((block, i) => {
+        if (block.type === "heading") {
+          // Only ever h2/h3 (see HEADING_RE) — sized/weighted the same way
+          // the rest of the directory's own section headings are, so a
+          // heading a partner types in here doesn't look out of place next
+          // to e.g. the "About"/"Services" Card titles around it.
+          const HeadingTag = block.level === 3 ? "h3" : "h2";
+          return (
+            <HeadingTag key={i} className={block.level === 3 ? "text-base font-semibold" : "text-lg font-semibold"}>
+              {renderInline(block.lines[0], `${i}-0`, zoomableImages)}
+            </HeadingTag>
+          );
+        }
+        if (block.type === "blockquote") {
+          return (
+            <blockquote
+              key={i}
+              className="border-l-2 border-slate-300 pl-3 italic text-slate-600 dark:border-neutral-700 dark:text-slate-400"
+            >
+              {block.lines.map((line, j) => (
+                <Fragment key={j}>
+                  {j > 0 && <br />}
+                  {renderInline(line, `${i}-${j}`, zoomableImages)}
+                </Fragment>
+              ))}
+            </blockquote>
+          );
+        }
         if (block.type === "bullet-list") {
           return (
             <ul key={i} className="list-disc space-y-1 pl-5">
@@ -210,6 +285,10 @@ export function stripMarkdownLiteToPlainText(text: string | null | undefined): s
     .replace(/!\[([^\]]*)\]\(([^)\s]+)\)/g, "$1")
     .replace(/\[([^\]]*)\]\(([^)\s]+)\)/g, "$1")
     .replace(/\*\*([^*]+)\*\*/g, "$1")
+    .replace(/~~([^~]+)~~/g, "$1")
+    .replace(/\*([^*]+)\*/g, "$1")
+    .replace(/^#{2,3}\s+/gm, "")
+    .replace(/^>\s?/gm, "")
     .replace(/^[-*]\s+/gm, "")
     .replace(/^\d+\.\s+/gm, "")
     .replace(/\s*\n+\s*/g, " ")

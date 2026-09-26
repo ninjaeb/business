@@ -13,6 +13,24 @@ export function normalizeSearchText(text: string): string {
   return text.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
 }
 
+// A query as the terms it has to satisfy, split at every space and every
+// piece of punctuation and lowercased — "web development" is `web` and
+// `development`, and so is "web-development". Each term then only has to
+// turn up somewhere in a haystack (see matchesSearchTerms), in any order
+// and at any distance, so "web development" finds "Web Design &
+// Development" and "day pass hot" finds "Hot-desk day pass". Splitting at
+// hyphens too is what keeps "co-working" finding "coworking": its terms
+// `co` and `working` are both inside the haystack's own "coworking".
+export function searchTerms(query: string): string[] {
+  return query.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean);
+}
+
+// Every term, anywhere in the haystack — an AND across terms, each one a
+// bare substring test against text normalizeSearchText already reduced.
+export function matchesSearchTerms(haystack: string, terms: string[]): boolean {
+  return terms.every((term) => haystack.includes(term));
+}
+
 // The header search bar's own searchable index (see HeaderSearch) — one
 // compact entry per published listing, built server-side by
 // loadDirectorySearchIndex (src/lib/directory.ts) and filtered in the
@@ -62,17 +80,17 @@ export type DirectorySearchResults = {
 const MAX_RESULTS_PER_GROUP = 5;
 
 // Up to a handful of matches in each of three groups (business, products &
-// services, news & promotions) — normalized substring matching (see
-// normalizeSearchText), the same rule DirectorySearch's own free-text
-// filter uses. A dropdown of suggestions, not the authoritative filter:
-// the "see all results" link below it re-runs the real thing
-// (DirectorySearch, on the home page).
+// services, news & promotions) — every term of the query somewhere in the
+// haystack (see searchTerms/matchesSearchTerms), the same rule
+// DirectorySearch's own free-text filter uses. A dropdown of suggestions,
+// not the authoritative filter: the "see all results" link below it
+// re-runs the real thing (DirectorySearch, on the home page).
 export function searchDirectoryIndex(index: DirectorySearchIndex, query: string): DirectorySearchResults {
-  const q = normalizeSearchText(query);
+  const terms = searchTerms(query);
   const businesses: DirectorySearchListingHit[] = [];
   const products: DirectorySearchProductHit[] = [];
   const updates: DirectorySearchUpdateHit[] = [];
-  if (!q) return { businesses, products, updates };
+  if (terms.length === 0) return { businesses, products, updates };
 
   for (const entry of index) {
     if (businesses.length >= MAX_RESULTS_PER_GROUP && products.length >= MAX_RESULTS_PER_GROUP && updates.length >= MAX_RESULTS_PER_GROUP) {
@@ -80,16 +98,18 @@ export function searchDirectoryIndex(index: DirectorySearchIndex, query: string)
     }
     const { slug, companyName, logoUrl } = entry;
 
-    if (businesses.length < MAX_RESULTS_PER_GROUP && entry.haystack.includes(q)) {
+    if (businesses.length < MAX_RESULTS_PER_GROUP && matchesSearchTerms(entry.haystack, terms)) {
       businesses.push({ slug, companyName, tagline: entry.tagline, logoUrl, industryLabel: entry.industryLabel });
     }
     for (const service of entry.services) {
       if (products.length >= MAX_RESULTS_PER_GROUP) break;
-      if (service.haystack.includes(q)) products.push({ listingSlug: slug, companyName, logoUrl, title: service.title });
+      if (matchesSearchTerms(service.haystack, terms)) products.push({ listingSlug: slug, companyName, logoUrl, title: service.title });
     }
     for (const update of entry.updates) {
       if (updates.length >= MAX_RESULTS_PER_GROUP) break;
-      if (update.haystack.includes(q)) updates.push({ listingSlug: slug, companyName, logoUrl, kind: update.kind, title: update.title });
+      if (matchesSearchTerms(update.haystack, terms)) {
+        updates.push({ listingSlug: slug, companyName, logoUrl, kind: update.kind, title: update.title });
+      }
     }
   }
 
