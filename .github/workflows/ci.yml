@@ -1,0 +1,37 @@
+name: CI
+
+# Runs on every pull request regardless of its base branch, since this repo's
+# default branch gets renamed/replaced across sessions (see git history) —
+# a fixed `branches:` filter would silently stop running.
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # Dummy but well-formed values: no route reaches the database at build
+    # time (every page is server-rendered on demand, not statically
+    # generated — see the `dynamic = "force-dynamic"` pages and the app's
+    # general reliance on live data), so `next build` never needs a real
+    # Postgres instance, only for the Prisma client module to construct
+    # without throwing on a missing/malformed DATABASE_URL.
+    env:
+      DATABASE_URL: postgresql://ci:ci@localhost:5432/ci
+      SESSION_SECRET: ci-secret-ci-secret-ci-secret-ci
+      SITE_URL: http://localhost:3000
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npx prisma generate
+
+      - run: npm run lint
+
+      - run: npx next build
