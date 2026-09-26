@@ -13,6 +13,7 @@ import {
   directoryBenefitsPath,
   directoryHomePath,
   directorySignupPath,
+  localizedBusinessNavItems,
   type DirectoryLocale,
 } from "@/lib/directory-i18n";
 
@@ -113,6 +114,7 @@ export async function DirectoryChrome({
               directoryLabel={t.brandName}
               myBusinessLabel={t.navMyBusiness}
               addBusinessLabel={t.navAddBusiness}
+              businessNavItems={localizedBusinessNavItems(locale)}
               signOutLabel={t.navSignOut}
               directoryHref={directoryHref}
               signupHref={signupHref}

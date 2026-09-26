@@ -1,4 +1,5 @@
 import type { Industry } from "@/generated/prisma/client";
+import { BUSINESS_NAV_ITEMS } from "@/lib/business-nav-items";
 import { INDUSTRY_LABELS } from "@/lib/labels";
 
 // Same three languages as the public /lead form (src/lib/lead-form-i18n.ts)
@@ -174,6 +175,20 @@ export type DirectoryStrings = {
   navPartnership: string;
   navGoToCrm: string;
   navSignOut: string;
+  // The business-portal's own page names (BUSINESS_NAV_ITEMS, keyed by
+  // href below) — the portal itself is English-only by design (see
+  // src/app/layout.tsx), but this same list also renders inside the
+  // trilingual directory's own hamburger menu (see localizedBusinessNavItems
+  // below and DirectoryNavMenu), where it needs to match whatever language
+  // the rest of that menu is already in.
+  navOverview: string;
+  navMyListings: string;
+  navBusinessLeads: string;
+  navCompanies: string;
+  navContacts: string;
+  navDeals: string;
+  navTasks: string;
+  navProfile: string;
   listBusinessCta: string;
   benefitsNavLabel: string;
   signupHeading: string;
@@ -293,6 +308,14 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navLoginRegister: "Business Login",
     navMyBusiness: "My business",
     navAddBusiness: "Add Business",
+    navOverview: "Overview",
+    navMyListings: "My listings",
+    navBusinessLeads: "Business Leads",
+    navCompanies: "Companies",
+    navContacts: "Contacts",
+    navDeals: "Deals",
+    navTasks: "Tasks",
+    navProfile: "Profile",
     navPartnership: "Partnership",
     navGoToCrm: "Go to CRM",
     navSignOut: "Sign out",
@@ -411,6 +434,14 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navLoginRegister: "企业登录",
     navMyBusiness: "我的企业",
     navAddBusiness: "添加企业",
+    navOverview: "概览",
+    navMyListings: "我的刊登",
+    navBusinessLeads: "商业线索",
+    navCompanies: "公司",
+    navContacts: "联系人",
+    navDeals: "交易",
+    navTasks: "任务",
+    navProfile: "个人资料",
     navPartnership: "合作伙伴关系",
     navGoToCrm: "前往 CRM",
     navSignOut: "退出登录",
@@ -530,6 +561,14 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navLoginRegister: "Log Masuk Perniagaan",
     navMyBusiness: "Perniagaan saya",
     navAddBusiness: "Tambah Perniagaan",
+    navOverview: "Gambaran keseluruhan",
+    navMyListings: "Senarai saya",
+    navBusinessLeads: "Petunjuk Perniagaan",
+    navCompanies: "Syarikat",
+    navContacts: "Kenalan",
+    navDeals: "Urus Niaga",
+    navTasks: "Tugasan",
+    navProfile: "Profil",
     navPartnership: "Perkongsian",
     navGoToCrm: "Pergi ke CRM",
     navSignOut: "Log keluar",
@@ -572,6 +611,28 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     },
   },
 };
+
+// BUSINESS_NAV_ITEMS (src/lib/business-nav-items.ts) gives the portal's own
+// English page names — right for PartnerNavMenu/PartnerSidebar, which live
+// outside the locale-prefixed directory tree, but wrong for that same list
+// rendered inside DirectoryNavMenu, which does live inside it and needs to
+// match whichever of the three languages that menu is already showing.
+// Zips those hrefs (unlocalized, and never shown directly) with the
+// translated labels above, in the same fixed order.
+export function localizedBusinessNavItems(locale: DirectoryLocale): { href: string; label: string }[] {
+  const t = DIRECTORY_STRINGS[locale];
+  const labels: Record<string, string> = {
+    "/business-portal": t.navOverview,
+    "/business-portal/listings": t.navMyListings,
+    "/business-portal/business-leads": t.navBusinessLeads,
+    "/business-portal/companies": t.navCompanies,
+    "/business-portal/contacts": t.navContacts,
+    "/business-portal/deals": t.navDeals,
+    "/business-portal/tasks": t.navTasks,
+    "/business-portal/profile": t.navProfile,
+  };
+  return BUSINESS_NAV_ITEMS.map((item) => ({ href: item.href, label: labels[item.href] ?? item.label }));
+}
 
 // Industry is a fixed enum shared with the internal /system CRM (see
 // INDUSTRY_LABELS in src/lib/labels.ts, English-only — that side isn't
