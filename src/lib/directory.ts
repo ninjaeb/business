@@ -2,7 +2,7 @@ import { db } from "@/lib/db";
 import type { Industry, PartnerListing, Prisma } from "@/generated/prisma/client";
 import { operatingHoursFromJson, type OperatingHours } from "@/lib/operating-hours";
 import { slugify } from "@/lib/slug";
-import { directoryListingPath, type DirectoryLocale } from "@/lib/directory-i18n";
+import { directoryListingPath, formatViewsLabel, type DirectoryLocale } from "@/lib/directory-i18n";
 import { organizationJsonLdId, serializeJsonLd, websiteJsonLdId } from "@/lib/directory-seo";
 import { VIDEO_CATEGORIES, type VideoCategory } from "@/lib/labels";
 import { stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
@@ -532,12 +532,19 @@ export type DirectoryGridListing = {
   state: string | null;
   country: string | null;
   logoUrl: string | null;
+  // Pre-formatted for the grid's own locale (see formatViewsLabel) — same
+  // "computed once, server-side, where the locale is already in scope"
+  // reasoning toDirectoryGridListing's other locale-dependent fields use,
+  // since every card grid is rendered by a "use client" component
+  // (DirectorySearch) that formatViewsLabel itself can't be called from.
+  viewsLabel: string;
 };
 
 export type PublishedListingRow = {
   slug: string;
   publishedAt: Date | null;
   updatedAt: Date;
+  viewCount: number;
   listing: PublishedListingSnapshot;
 };
 
@@ -547,12 +554,14 @@ export type PublishedListingRow = {
 // snapshot is the test (same as the detail page), not the row's status.
 export async function loadPublishedListings(): Promise<PublishedListingRow[]> {
   const rows = await db.partnerListing.findMany({
-    select: { slug: true, publishedAt: true, updatedAt: true, publishedSnapshot: true },
+    select: { slug: true, publishedAt: true, updatedAt: true, viewCount: true, publishedSnapshot: true },
     orderBy: { publishedAt: "desc" },
   });
   return rows.flatMap((row) => {
     const listing = readPublishedSnapshot(row.publishedSnapshot);
-    return listing ? [{ slug: row.slug, publishedAt: row.publishedAt, updatedAt: row.updatedAt, listing }] : [];
+    return listing
+      ? [{ slug: row.slug, publishedAt: row.publishedAt, updatedAt: row.updatedAt, viewCount: row.viewCount, listing }]
+      : [];
   });
 }
 
@@ -648,7 +657,10 @@ export function directoryImagePath(id: string): string {
   return `/api/directory-images/${encodeURIComponent(id)}`;
 }
 
-export function toDirectoryGridListing({ slug, publishedAt, listing }: PublishedListingRow, locale: DirectoryLocale): DirectoryGridListing {
+export function toDirectoryGridListing(
+  { slug, publishedAt, viewCount, listing }: PublishedListingRow,
+  locale: DirectoryLocale,
+): DirectoryGridListing {
   // Same fallback rule as the detail page: a translation only stands in
   // for the field it actually covers; the company name is never translated.
   const translation = locale === "en" ? undefined : listing.translations[locale];
@@ -664,6 +676,7 @@ export function toDirectoryGridListing({ slug, publishedAt, listing }: Published
     state: listing.state,
     country: listing.country,
     logoUrl: listing.logoUrl ? listingLogoPath(slug, publishedAt) : null,
+    viewsLabel: formatViewsLabel(viewCount, locale),
   };
 }
 

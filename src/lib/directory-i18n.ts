@@ -99,16 +99,17 @@ export function formatRecommendMessage(template: string, business: string, url: 
   return template.replace("{business}", business).replace("{url}", url);
 }
 
-// The listing page's view-count line — plural-aware (English needs "1
-// view" vs "N views"), which is exactly why this can't be a plain
-// DIRECTORY_STRINGS template string the way recommendMessage above is: it
-// has to branch on count, and DIRECTORY_STRINGS itself gets passed whole
-// into "use client" components (DirectorySearch) on the home/category/
-// location pages, where a function value in that object throws at render
-// ("Functions cannot be passed directly to Client Components"). Kept as
-// its own plain function instead, called only from the (server-only)
-// listing detail page — same reasoning as DirectoryHomeCopy.listingCount,
-// which lives outside DIRECTORY_STRINGS for the same reason.
+// A listing's view-count line — plural-aware (English needs "1 view" vs
+// "N views"), which is exactly why this can't be a plain DIRECTORY_STRINGS
+// template string the way recommendMessage above is: it has to branch on
+// count, and DIRECTORY_STRINGS itself gets passed whole into "use client"
+// components (DirectorySearch) on the home/category/location pages, where a
+// function value in that object throws at render ("Functions cannot be
+// passed directly to Client Components"). Kept as its own plain function
+// instead, called only from server-only contexts — the listing detail page
+// directly, and toDirectoryGridListing (src/lib/directory.ts) on behalf of
+// every card grid — same reasoning as DirectoryHomeCopy.listingCount, which
+// lives outside DIRECTORY_STRINGS for the same reason.
 export function formatViewsLabel(count: number, locale: DirectoryLocale): string {
   if (locale === "zh") return `${count.toLocaleString()} 次浏览`;
   if (locale === "ms") return `${count.toLocaleString()} paparan`;
