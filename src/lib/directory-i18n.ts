@@ -143,6 +143,9 @@ export type DirectoryStrings = {
   // Same idea, for a location page's sibling states (see
   // location-page-content.tsx).
   otherLocationsHeading: string;
+  // Same idea, for an industry page's sibling industries (see
+  // industry-page-content.tsx).
+  otherIndustriesHeading: string;
   noResultsTitle: string;
   noResultsDescription: string;
   viewListing: string;
@@ -315,6 +318,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     searchPlaceholder: "Search by company, service, industry or category…",
     otherCategoriesHeading: "Browse other categories",
     otherLocationsHeading: "Browse other locations",
+    otherIndustriesHeading: "Browse other industries",
     noResultsTitle: "No businesses found",
     noResultsDescription: "Try a different search or industry filter.",
     viewListing: "View details",
@@ -465,6 +469,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     searchPlaceholder: "按公司、服务、行业或类别搜索…",
     otherCategoriesHeading: "浏览其他类别",
     otherLocationsHeading: "浏览其他地区",
+    otherIndustriesHeading: "浏览其他行业",
     noResultsTitle: "未找到企业",
     noResultsDescription: "请尝试其他搜索词或行业筛选。",
     viewListing: "查看详情",
@@ -614,6 +619,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     searchPlaceholder: "Cari mengikut syarikat, perkhidmatan, industri atau kategori…",
     otherCategoriesHeading: "Semak imbas kategori lain",
     otherLocationsHeading: "Semak imbas lokasi lain",
+    otherIndustriesHeading: "Semak imbas industri lain",
     noResultsTitle: "Tiada perniagaan dijumpai",
     noResultsDescription: "Cuba carian atau penapis industri yang lain.",
     viewListing: "Lihat butiran",

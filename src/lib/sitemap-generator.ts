@@ -5,6 +5,7 @@ import path from "node:path";
 import { db } from "@/lib/db";
 import {
   countListingsByCategory,
+  countListingsByIndustry,
   countListingsByState,
   directoryImagePath,
   listingLogoPath,
@@ -13,6 +14,7 @@ import {
 } from "@/lib/directory";
 import { categoryPath } from "@/lib/directory-category-labels";
 import { locationPath } from "@/lib/directory-location-labels";
+import { industryPath } from "@/lib/directory-industry-labels";
 import {
   DEFAULT_DIRECTORY_LOCALE,
   DIRECTORY_LOCALES,
@@ -124,6 +126,7 @@ export async function buildSitemapXml(): Promise<string> {
     db.businessCategory.findMany({ orderBy: { name: "asc" }, select: { name: true } }),
   ]);
   const countByCategory = countListingsByCategory(listings);
+  const countByIndustry = countListingsByIndustry(listings);
   // A category page's own content changes whenever any listing carrying it
   // is published or unpublished — the latest such date among its listings
   // is the honest lastmod for the category page itself, same reasoning as
@@ -133,6 +136,9 @@ export async function buildSitemapXml(): Promise<string> {
   // findStateBySlug/countListingsByState for why there's no "empty state"
   // case to skip the way the category loop below has to.
   const latestPublishedByState = new Map<string, Date>();
+  // Same idea, per industry — like category, an industry can have zero
+  // listings (see countListingsByIndustry), so the loop below skips those.
+  const latestPublishedByIndustry = new Map<string, Date>();
   for (const { publishedAt, updatedAt, listing } of listings) {
     const date = publishedAt ?? updatedAt;
     for (const category of new Set(listing.categories)) {
@@ -142,6 +148,10 @@ export async function buildSitemapXml(): Promise<string> {
     if (listing.state) {
       const latest = latestPublishedByState.get(listing.state);
       if (!latest || date > latest) latestPublishedByState.set(listing.state, date);
+    }
+    if (listing.industry) {
+      const latest = latestPublishedByIndustry.get(listing.industry);
+      if (!latest || date > latest) latestPublishedByIndustry.set(listing.industry, date);
     }
   }
 
@@ -234,6 +244,23 @@ export async function buildSitemapXml(): Promise<string> {
         urlEntry(`${STATIC_SEO_ORIGIN}${locationPath(stateSlug, code)}`, {
           alternates: languageAlternates((locale) => locationPath(stateSlug, locale)),
           lastModified: latestPublishedByState.get(state),
+          changeFrequency: "daily",
+          priority: 0.7,
+        }),
+      );
+    }
+  }
+
+  // Every industry at least one published listing carries. Like state
+  // (and unlike category), countByIndustry only ever holds a key once some
+  // listing actually carries it — nothing to skip here the way the empty-
+  // category case above needs to.
+  for (const industry of countByIndustry.keys()) {
+    for (const { code } of DIRECTORY_LOCALES) {
+      entries.push(
+        urlEntry(`${STATIC_SEO_ORIGIN}${industryPath(industry, code)}`, {
+          alternates: languageAlternates((locale) => industryPath(industry, locale)),
+          lastModified: latestPublishedByIndustry.get(industry),
           changeFrequency: "daily",
           priority: 0.7,
         }),
