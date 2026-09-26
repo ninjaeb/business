@@ -11,7 +11,6 @@ import { isValidPhoneFormat, normalizePhone } from "@/lib/phone";
 import { isRateLimited, isSuspiciouslyFast } from "@/lib/lead-spam-guard";
 import { firstHopValue } from "@/lib/site-url";
 import { ALLOWED_PHOTO_TYPES, MAX_PHOTO_BYTES, photoDataUrl } from "@/lib/photo";
-import { fetchLogoFromUrl } from "@/lib/logo-fetch";
 import { regenerateSitemapFile } from "@/lib/sitemap-generator";
 import { regenerateLlmsTxtFile } from "@/lib/llms-txt-generator";
 import { revalidateDirectory } from "@/lib/directory-revalidate";
@@ -802,17 +801,6 @@ export async function autoCreateListingDetails(input: {
       sources: { googleMaps: place !== null, website: pages.length > 0 },
     },
   };
-}
-
-// Partner-gated — the Logo section's "Fetch logo" button, for a plain
-// business website. Google Maps is already covered by AI Auto Create's
-// own photo (see logoFromPlace above). Returns a data: URL the same way
-// logoFromPlace does, so the caller can route it through LogoCropDialog
-// exactly like a manual upload.
-export async function fetchListingLogoFromUrl(rawUrl: string): Promise<AiResult<{ dataUrl: string }>> {
-  await requirePartnerAction();
-  const result = await fetchLogoFromUrl(String(rawUrl ?? ""));
-  return result.status === "ok" ? { status: "ok", data: { dataUrl: result.dataUrl } } : result;
 }
 
 // Creates a blank draft listing and drops the partner straight into its

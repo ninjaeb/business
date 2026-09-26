@@ -43,8 +43,6 @@ async function readLimited(response: Response, maxBytes: number): Promise<string
 
 // Redirects are followed by hand rather than letting fetch do it, so each
 // hop's target goes through the same public-address check as the first URL.
-// Exported for logo-fetch.ts, which reuses this to find a website's
-// og:image/icon tags before fetching whichever one it picks.
 export async function fetchHtml(startUrl: URL): Promise<{ url: URL; html: string } | null> {
   let url = startUrl;
   for (let hop = 0; hop <= MAX_REDIRECTS; hop++) {

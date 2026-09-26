@@ -3,7 +3,6 @@
 import { useActionState, useEffect, useRef, useState, useTransition } from "react";
 import { Sparkles } from "lucide-react";
 import {
-  fetchListingLogoFromUrl,
   generateListingFaqs,
   generateListingSeoMeta,
   rewriteListingDescription,
@@ -101,8 +100,6 @@ export function PartnerListingForm({
   // along for Save.
   const [pendingLogoDataUrl, setPendingLogoDataUrl] = useState<string | null>(null);
   const [cropImageUrl, setCropImageUrl] = useState<string | null>(null);
-  const [logoUrlInput, setLogoUrlInput] = useState("");
-  const [fetchingLogo, startFetchLogo] = useTransition();
   const [submitPending, startSubmitTransition] = useTransition();
   const toast = useToast();
 
@@ -216,24 +213,6 @@ export function PartnerListingForm({
     setLogoPreview(dataUrl);
     setPendingLogoDataUrl(dataUrl);
     setJustSaved(false);
-  }
-
-  // Fetched server-side (see fetchListingLogoFromUrl), then opens the same
-  // crop dialog a manual upload goes through — unlike AI Auto Create's own
-  // Google Maps photo (already reasonably square, applied directly in
-  // handleAutoCreated), a website's og:image can be any shape, so it's
-  // worth letting the partner confirm/crop it.
-  function handleFetchLogoFromUrl() {
-    const url = logoUrlInput.trim();
-    if (!url) return;
-    startFetchLogo(async () => {
-      const result = await fetchListingLogoFromUrl(url);
-      if (result.status === "ok") {
-        setCropImageUrl(result.data.dataUrl);
-      } else {
-        toast.error(result.message);
-      }
-    });
   }
 
   function handleSubmitForReview() {
@@ -538,23 +517,6 @@ export function PartnerListingForm({
             <p className="text-xs text-slate-500 dark:text-slate-400">
               JPEG, PNG, WebP, or GIF, under 3MB — crop, zoom, and rotate it before it&apos;s saved.
             </p>
-            <div className="flex items-center gap-2">
-              <Input
-                type="url"
-                value={logoUrlInput}
-                onChange={(event) => setLogoUrlInput(event.target.value)}
-                placeholder="Or paste a website URL"
-                className="flex-1"
-              />
-              <button
-                type="button"
-                onClick={handleFetchLogoFromUrl}
-                disabled={fetchingLogo || !logoUrlInput.trim()}
-                className={buttonClasses("secondary", "sm", "shrink-0")}
-              >
-                {fetchingLogo ? "Fetching…" : "Fetch logo"}
-              </button>
-            </div>
             {logoPreview && !removeLogo && (
               <label className="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
                 <input
