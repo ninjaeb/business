@@ -744,6 +744,16 @@ export function PartnerListingForm({
         </FieldGroup>
       </div>
 
+      <FieldGroup label="City" htmlFor="city">
+        <Input
+          id="city"
+          name="city"
+          value={city}
+          onChange={(event) => setCity(event.target.value)}
+          placeholder="Kuala Lumpur"
+        />
+      </FieldGroup>
+
       <div className="grid gap-4 sm:grid-cols-2">
         <FieldGroup label="State / province" htmlFor="state">
           <Input
