@@ -51,8 +51,18 @@ export function directoryBenefitsPath(locale: DirectoryLocale): string {
   return `/${locale}/business/benefits`;
 }
 
+// A listing's own page drops the /business segment entirely — just
+// /en/some-company — shorter and friendlier to share than every other
+// directory URL above, since it's the one visitors actually pass around.
+// Lives at src/app/[locale]/[slug], a sibling of src/app/[locale]/business
+// rather than nested under it; Next.js resolves the static "business"
+// (and "directory") folders ahead of this dynamic one, so there's no
+// collision with the home/category/location/signup/benefits pages. Every
+// old /[locale]/business/<slug> URL still resolves — see
+// src/app/[locale]/business/[slug]/ — as a permanent redirect into here,
+// for old links/bookmarks/SEO.
 export function directoryListingPath(locale: DirectoryLocale, slug: string): string {
-  return `/${locale}/business/${slug}`;
+  return `/${locale}/${slug}`;
 }
 
 export const DEFAULT_DIRECTORY_LOCALE: DirectoryLocale = "en";
