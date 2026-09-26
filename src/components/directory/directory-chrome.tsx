@@ -1,0 +1,159 @@
+import Link from "next/link";
+import { Suspense } from "react";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
+import { DirectoryLanguageSwitcher } from "@/components/directory/directory-language-switcher";
+import { DirectoryNavMenu, type DirectoryViewer } from "@/components/directory/directory-nav-menu";
+import { logout } from "@/app/actions/auth";
+import { getSessionPayload } from "@/lib/session";
+import { db } from "@/lib/db";
+import { getDirectoryLocale } from "@/lib/directory-locale";
+import {
+  DIRECTORY_LOCALES,
+  DIRECTORY_STRINGS,
+  directoryBenefitsPath,
+  directoryHomePath,
+  directorySignupPath,
+  type DirectoryLocale,
+} from "@/lib/directory-i18n";
+
+// This app has a single session cookie (business_session, @/lib/session) —
+// unlike the source CRM's three separate session types, there's no staff
+// app here to detect a signed-in staff member for. A visitor is either
+// signed in as a partner (business viewer) or not signed in at all; an
+// admin session exists but isn't a "viewer" this public-facing chrome
+// distinguishes.
+async function getDirectoryViewer(): Promise<DirectoryViewer> {
+  const session = await getSessionPayload();
+  if (!session?.userId) return null;
+  const user = await db.user.findUnique({ where: { id: session.userId }, select: { role: true } });
+  return user?.role === "PARTNER" ? "business" : null;
+}
+
+// The site-like header/footer (sticky nav, language + theme switches,
+// hamburger menu, footer tagline) shared by every public-facing partner
+// page — the directory itself, its listing pages, and the two forms that
+// sit outside it (the locale-prefixed .../business/signup and the bare
+// /business/login) — rather than the minimal centered-card wrapper an
+// internal admin form might use. A partner filling in a form should feel
+// like they're on the same site the whole way through, not dropped onto a
+// bare page.
+export async function DirectoryChrome({
+  children,
+  locale: localeProp,
+  forceAnonymousNav = false,
+}: {
+  children: React.ReactNode;
+  // Every /[locale]/business/... page passes its own already-validated URL
+  // segment here, so the header renders in exactly that language with no
+  // extra cookie lookup. Omitted by pages outside the locale-prefixed tree
+  // (currently just /business/login, which still shares this same header)
+  // — those fall back to the cookie/Accept-Language guess as before.
+  locale?: DirectoryLocale;
+  // /business/login sets this — a page that's specifically asking someone
+  // to sign in should never look like it already thinks you're signed in.
+  forceAnonymousNav?: boolean;
+}) {
+  const [locale, viewer] = await Promise.all([
+    localeProp ? Promise.resolve(localeProp) : getDirectoryLocale(),
+    forceAnonymousNav ? Promise.resolve(null) : getDirectoryViewer(),
+  ]);
+  const t = DIRECTORY_STRINGS[locale];
+  // Points into the real /[locale]/business/... tree when the current page
+  // already knows its locale; otherwise the old bare /directory/* URL,
+  // which now just permanently redirects there anyway (see
+  // src/app/directory/page.tsx) — one extra hop only from a page like
+  // /business/login that isn't part of the locale-prefixed tree itself.
+  const directoryHref = localeProp ? directoryHomePath(localeProp) : "/directory";
+  const signupHref = localeProp ? directorySignupPath(localeProp) : "/directory/signup";
+  const benefitsHref = localeProp ? directoryBenefitsPath(localeProp) : "/directory/benefits";
+
+  return (
+    <div className="flex min-h-full flex-col bg-slate-50 dark:bg-neutral-950">
+      <header className="sticky top-0 z-20 border-b border-slate-200 bg-white dark:border-neutral-800 dark:bg-neutral-900">
+        <div className="flex w-full items-center gap-3 px-4 py-3 sm:px-8">
+          <Link href={directoryHref} className="flex shrink-0 items-center gap-2">
+            {/* Below sm the wordmark beside it is hidden, so this alt is
+                the whole link's name there; from sm up the two together
+                read "Gotka Business Directory". */}
+            <img src="/icon-192.png" alt="Gotka" className="h-8 w-8 shrink-0" />
+            {/* "Gotka" only ever showed the wordmark, not what this page
+                actually is — dropped entirely on mobile to save space
+                (the icon alone is enough there), and replaced with the
+                localized "Business Directory" name on wider screens. */}
+            <span className="hidden text-lg font-semibold text-slate-900 dark:text-slate-100 sm:inline">
+              {t.brandName}
+            </span>
+          </Link>
+          <div className="ml-auto flex shrink-0 items-center gap-1">
+            {/* useSearchParams() (see directory-language-switcher.tsx, for
+                preserving the query string across a language swap) requires
+                a Suspense boundary around anything that might otherwise be
+                statically prerendered — the fallback is sized/styled the
+                same as the real switcher so there's no visible flash. */}
+            <Suspense
+              fallback={
+                <div className="flex gap-1" aria-hidden="true">
+                  {DIRECTORY_LOCALES.map((option) => (
+                    <span key={option.code} className="rounded-md px-2 py-1 text-xs font-medium text-slate-500 dark:text-slate-400">
+                      {option.label}
+                    </span>
+                  ))}
+                </div>
+              }
+            >
+              <DirectoryLanguageSwitcher current={locale} />
+            </Suspense>
+            <ThemeToggle />
+            <DirectoryNavMenu
+              viewer={viewer}
+              logoutAction={logout}
+              loginLabel={t.navLoginRegister}
+              listBusinessLabel={t.listBusinessCta}
+              benefitsLabel={t.benefitsNavLabel}
+              directoryLabel={t.brandName}
+              myBusinessLabel={t.navMyBusiness}
+              signOutLabel={t.navSignOut}
+              directoryHref={directoryHref}
+              signupHref={signupHref}
+              benefitsHref={benefitsHref}
+            />
+          </div>
+        </div>
+      </header>
+
+      <main className="flex-1">{children}</main>
+
+      <footer className="border-t border-slate-200 bg-white py-8 dark:border-neutral-800 dark:bg-neutral-900">
+        <div className="w-full px-4 text-center text-sm text-slate-500 dark:text-slate-400 sm:px-8">
+          {/* Plain links, server-rendered: the header's hamburger menu only
+              builds its links in the browser once opened, so until this
+              existed the sign-up and sign-in pages had no crawlable link
+              anywhere in the directory's HTML. */}
+          <nav aria-label={t.stickyNavLabel} className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+            <Link href={directoryHref} className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
+              {t.brandName}
+            </Link>
+            <Link href={signupHref} className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
+              {t.listBusinessCta}
+            </Link>
+            <Link href={benefitsHref} className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
+              {t.benefitsNavLabel}
+            </Link>
+            <Link href="/business-portal/login" className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
+              {t.navLoginRegister}
+            </Link>
+            <a
+              href="https://gotka.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-petrol hover:underline dark:text-petrol-light"
+            >
+              gotka.com
+            </a>
+          </nav>
+          <p className="mt-3">{t.footerTagline}</p>
+        </div>
+      </footer>
+    </div>
+  );
+}

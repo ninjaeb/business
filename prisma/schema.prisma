@@ -1,0 +1,365 @@
+// Prisma schema for the Gotka Business Directory (business.gotka.com)
+// Learn more: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+enum Role {
+  PARTNER
+  ADMIN
+}
+
+model User {
+  id           String   @id @default(cuid())
+  name         String
+  email        String   @unique
+  passwordHash String
+  title        String?
+  role         Role     @default(PARTNER)
+  phone        String?
+  companyName  String?
+  timezone     String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  partnerListings      PartnerListing[]
+  directoryLeadReplies DirectoryLeadReply[]
+
+  // Business-portal CRM — see the models below.
+  partnerCompanies     PartnerCompany[]
+  partnerContacts      PartnerContact[]
+  partnerDeals         PartnerDeal[]
+  partnerTasks         PartnerTask[]
+  assignedPartnerTasks PartnerTaskAssignee[]
+}
+
+// ============================================================================
+// Business-portal CRM — a lightweight Companies/Contacts/Deals/Tasks module
+// for partner accounts to run their own client-management workflow from
+// /business-portal. Every model below is scoped to exactly one partner
+// account via `partnerId` and must never be visible to another account
+// (enforced by filtering every query on partnerId — see requirePartnerAction
+// in src/lib/auth/dal.ts — not by the schema itself). Unrelated to the
+// directory listing models above except sharing the same User/login.
+// ============================================================================
+
+enum PartnerDealStatus {
+  OPEN
+  WON
+  LOST
+}
+
+model PartnerCompany {
+  id        String    @id @default(cuid())
+  name      String
+  industry  Industry?
+  phone     String?
+  website   String?
+  address   String?
+  notes     String?   @db.Text
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  partner   User   @relation(fields: [partnerId], references: [id], onDelete: Cascade)
+  partnerId String
+
+  contacts PartnerContact[]
+  deals    PartnerDeal[]
+  tasks    PartnerTask[]
+
+  @@index([partnerId])
+  @@index([partnerId, name])
+}
+
+model PartnerContact {
+  id        String   @id @default(cuid())
+  firstName String
+  lastName  String?
+  email     String?
+  phone     String?
+  title     String?
+  notes     String?  @db.Text
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  partner   User   @relation(fields: [partnerId], references: [id], onDelete: Cascade)
+  partnerId String
+
+  company   PartnerCompany? @relation(fields: [companyId], references: [id], onDelete: SetNull)
+  companyId String?
+
+  deals PartnerDeal[]
+  tasks PartnerTask[]
+
+  @@index([partnerId])
+  @@index([companyId])
+  @@index([partnerId, lastName, firstName])
+}
+
+model PartnerDeal {
+  id                String            @id @default(cuid())
+  title             String
+  value             Decimal           @default(0) @db.Decimal(12, 2)
+  status            PartnerDealStatus @default(OPEN)
+  expectedCloseDate DateTime?
+  notes             String?           @db.Text
+  wonAt             DateTime?
+  lostAt            DateTime?
+  createdAt         DateTime          @default(now())
+  updatedAt         DateTime          @updatedAt
+
+  partner   User   @relation(fields: [partnerId], references: [id], onDelete: Cascade)
+  partnerId String
+
+  company   PartnerCompany? @relation(fields: [companyId], references: [id], onDelete: SetNull)
+  companyId String?
+
+  contact   PartnerContact? @relation(fields: [contactId], references: [id], onDelete: SetNull)
+  contactId String?
+
+  tasks PartnerTask[]
+
+  @@index([partnerId])
+  @@index([companyId])
+  @@index([contactId])
+  @@index([partnerId, status])
+}
+
+model PartnerTask {
+  id          String    @id @default(cuid())
+  title       String
+  description String?   @db.Text
+  dueDate     DateTime?
+  completed   Boolean   @default(false)
+  completedAt DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  partner   User   @relation(fields: [partnerId], references: [id], onDelete: Cascade)
+  partnerId String
+
+  company   PartnerCompany? @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  companyId String?
+
+  contact   PartnerContact? @relation(fields: [contactId], references: [id], onDelete: Cascade)
+  contactId String?
+
+  deal   PartnerDeal? @relation(fields: [dealId], references: [id], onDelete: Cascade)
+  dealId String?
+
+  assignees PartnerTaskAssignee[]
+
+  @@index([partnerId])
+  @@index([companyId])
+  @@index([contactId])
+  @@index([dealId])
+  @@index([partnerId, dueDate])
+}
+
+// Who's responsible for a PartnerTask — a join table from day one even
+// though a business-portal account is a single login today, so a future
+// teammate added under the same account can be assigned without a breaking
+// migration later. Every assignee must belong to the task's own partner
+// account; enforced in the server actions, not the schema.
+model PartnerTaskAssignee {
+  id String @id @default(cuid())
+
+  task   PartnerTask @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  taskId String
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId String
+
+  @@unique([taskId, userId])
+  @@index([userId])
+}
+
+enum DirectoryApprovalMode {
+  EVERY_SUBMISSION
+  FIRST_SUBMISSION_ONLY
+  NONE
+}
+
+model Settings {
+  id                    String                @id @default("singleton")
+  currency              String                @default("USD")
+  directoryApprovalMode DirectoryApprovalMode @default(EVERY_SUBMISSION)
+}
+
+enum PartnerListingStatus {
+  DRAFT
+  PENDING_REVIEW
+  PUBLISHED
+  REJECTED
+}
+
+// publishedSnapshot is a JSON copy of the public fields as they were the
+// last time an admin approved them, and is the only thing the public
+// directory ever renders — a partner's live edits never reach the public
+// page until approved again. The partner's own User.email/User.phone are
+// never part of the snapshot: visitors reach a partner only through the
+// lead form (DirectoryLead), never directly.
+model PartnerListing {
+  id     String               @id @default(cuid())
+  slug   String               @unique
+  status PartnerListingStatus @default(DRAFT)
+
+  companyName String
+  tagline     String?
+  description String? @db.Text
+  services    Json // ServiceEntry[] (src/lib/directory.ts) — {title, description, price}
+  industry    Industry?
+  website     String?
+  address     String? @db.Text
+  state       String?
+  country     String?
+  operatingHours Json? // OperatingHours (src/lib/directory.ts)
+  faqs        Json? // FaqEntry[] (src/lib/directory.ts) — {question, answer}
+  translations Json? // ListingTranslations (src/lib/directory.ts) — {zh?, ms?}
+  logoUrl     String?   @db.LongText // data: URL
+  seoTitle       String?
+  seoDescription String?
+
+  reviewNote        String?   @db.Text
+  submittedAt       DateTime?
+  reviewedAt        DateTime?
+  publishedAt       DateTime?
+  publishedSnapshot Json?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  partner   User   @relation(fields: [partnerId], references: [id], onDelete: Cascade)
+  partnerId String
+
+  leads      DirectoryLead[]
+  images     DirectoryListingImage[]
+  categories PartnerListingCategory[]
+
+  @@index([status])
+  @@index([partnerId])
+}
+
+model BusinessCategory {
+  id   String @id @default(cuid())
+  name String @unique
+
+  createdAt DateTime @default(now())
+
+  listings PartnerListingCategory[]
+}
+
+model PartnerListingCategory {
+  id String @id @default(cuid())
+
+  listing   PartnerListing @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  listingId String
+
+  category   BusinessCategory @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  categoryId String
+
+  @@unique([listingId, categoryId])
+  @@index([categoryId])
+}
+
+// About-field embedded images (markdown-lite editor), served via
+// /api/directory-images/[id].
+model DirectoryListingImage {
+  id       String @id @default(cuid())
+  mimeType String
+  data     String @db.LongText
+
+  createdAt DateTime @default(now())
+
+  listing   PartnerListing @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  listingId String
+
+  @@index([listingId])
+}
+
+// Declared in workflow order so the partner-facing status picker can list
+// them as-is.
+enum DirectoryLeadStatus {
+  NEW
+  PICKED_UP
+  CONTACTED
+  QUOTED
+  WON
+  LOST
+}
+
+model DirectoryLead {
+  id     String              @id @default(cuid())
+  status DirectoryLeadStatus @default(NEW)
+
+  name    String
+  email   String
+  phone   String?
+  company String?
+  message String @db.Text
+  locale  String @default("en")
+
+  value Decimal? @db.Decimal(12, 2)
+  notes String?  @db.Text
+
+  pickedUpAt     DateTime?
+  firstRepliedAt DateTime?
+  closedAt       DateTime?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+
+  listing   PartnerListing @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  listingId String
+
+  replies DirectoryLeadReply[]
+
+  @@index([listingId, status])
+  @@index([createdAt])
+}
+
+// author is always the partner user replying from the business portal —
+// delivered by email from a system sender, never the partner's own address.
+model DirectoryLeadReply {
+  id        String    @id @default(cuid())
+  body      String    @db.Text
+  createdAt DateTime  @default(now())
+  sentAt    DateTime?
+  sendError String?   @db.Text
+
+  lead   DirectoryLead @relation(fields: [leadId], references: [id], onDelete: Cascade)
+  leadId String
+
+  author   User   @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  authorId String
+
+  @@index([leadId])
+}
+
+enum Industry {
+  TECHNOLOGY
+  RETAIL_ECOMMERCE
+  HEALTHCARE
+  FINANCE_BANKING
+  MANUFACTURING
+  CONSTRUCTION_REAL_ESTATE
+  EDUCATION
+  HOSPITALITY_TOURISM
+  PROFESSIONAL_SERVICES
+  MEDIA_ENTERTAINMENT
+  TRANSPORTATION_LOGISTICS
+  AGRICULTURE
+  ENERGY_UTILITIES
+  GOVERNMENT_NONPROFIT
+  TELECOMMUNICATIONS
+  AUTOMOTIVE
+  FOOD_BEVERAGE
+  LEGAL
+  MARKETING_ADVERTISING
+  OTHER
+}

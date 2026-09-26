@@ -1,0 +1,61 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/.next.last-good/
+/out/
+
+# server.js's persisted, auto-generated Server Actions encryption key —
+# see getOrCreateServerActionsKey in server.js. Machine-specific, not a
+# secret meant to be shared/committed.
+/.server-actions-key
+.next-build-retry.json
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+!.env.example
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+/src/generated/prisma
+
+# cPanel "Setup Node.js App" (Phusion Passenger / LiteSpeed lsnode) — files
+# it generates directly in the Application root at runtime. Only relevant
+# when the Application root is the same directory as the Git checkout;
+# harmless to ignore otherwise.
+/.htaccess
+/tmp/
+/stderr.log
+/stdout.log
+/deploy.log
