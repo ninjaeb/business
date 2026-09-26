@@ -10,8 +10,9 @@ import { DIRECTORY_SITE_NAME_BY_LOCALE } from "@/lib/directory-seo";
 // discarding the row's id) — so translating a category for display can only
 // key off that English string, not an id. Keyed by the exact name seeded in
 // those migrations; a category name with no entry here (shouldn't happen —
-// the list is fixed, not admin-editable, see business-categories.ts) just
-// falls back to its English name rather than showing nothing.
+// the list is fixed, seeded by prisma/seed.ts, with no admin UI to add,
+// edit, or remove one) just falls back to its English name rather than
+// showing nothing.
 const CATEGORY_TRANSLATIONS: Record<string, { zh: string; ms: string }> = {
   "Accounting & Bookkeeping": { zh: "会计与簿记", ms: "Perakaunan & Pembukuan" },
   "Advertising Agency": { zh: "广告代理", ms: "Agensi Pengiklanan" },
