@@ -101,12 +101,15 @@ export async function DirectoryChrome({
               {t.brandName}
             </span>
           </Link>
-          {/* Inline next to the title on lg+ screens, where there's room
-              for it alongside the language/theme/menu group — the second,
-              bordered row below the header (also DirectoryTopNav, hidden
-              at this breakpoint) takes over below lg instead. */}
-          <DirectoryTopNav navLabel={t.topNavLabel} items={topNavItems} className="hidden lg:flex" />
-          <div className="ml-auto flex shrink-0 items-center gap-1">
+          {/* Inline on lg+ screens, pushed flush against the language/
+              theme/menu group on the right (ml-auto) rather than hugging
+              the logo — the free space this leaves next to the logo reads
+              better than free space stranded between the nav and that
+              group. The second, bordered row below the header (also
+              DirectoryTopNav, hidden at this breakpoint) takes over below
+              lg instead, full-width there since it has its own row. */}
+          <DirectoryTopNav navLabel={t.topNavLabel} items={topNavItems} className="ml-auto hidden lg:flex" />
+          <div className="flex shrink-0 items-center gap-1">
             {/* useSearchParams() (see directory-language-switcher.tsx, for
                 preserving the query string across a language swap) requires
                 a Suspense boundary around anything that might otherwise be
