@@ -16,6 +16,7 @@ import {
   countListingsByCityState,
   loadPublishedListings,
   toDirectoryGridListing,
+  topCategoryNames,
 } from "@/lib/directory";
 import {
   DIRECTORY_ROBOTS,
@@ -48,9 +49,12 @@ export async function buildLocationMetadata(locationSlug: string, locale: Direct
   const location = findLocationBySlug(rows, locationSlug);
   if (!location) return {};
 
+  // Same exact-city+state match LocationPageContent's own locationListings
+  // uses — see that filter's comment for why it's never city or state alone.
+  const locationRows = rows.filter((row) => row.listing.city === location.city && row.listing.state === location.state);
   const label = locationLabel(location.city, location.state);
   const title = locationPageTitle(label, locale);
-  const description = locationPageDescription(label, locale);
+  const description = locationPageDescription(label, locale, locationRows.length, topCategoryNames(locationRows));
   const url = `${siteOrigin}${locationPath(locationSlug, locale)}`;
   const shareImage = pageShareImage(url, locationPageHeading(label, locale));
 
@@ -98,7 +102,12 @@ export async function LocationPageContent({
   const pageUrl = `${siteOrigin}${locationPath(locationSlug, locale)}`;
   const label = locationLabel(city, state);
   const heading = locationPageHeading(label, locale);
-  const description = locationPageDescription(label, locale);
+  // Same exact-city+state match as locationListings below (over the raw
+  // rows rather than the locale-mapped grid listings — see
+  // buildLocationMetadata's identical filter, which needs it before any
+  // locale-specific mapping happens).
+  const locationRows = rows.filter((row) => row.listing.city === city && row.listing.state === state);
+  const description = locationPageDescription(label, locale, locationRows.length, topCategoryNames(locationRows));
 
   const listings = rows.map((row) => toDirectoryGridListing(row, locale));
   // Exact city+state match, including a state-only group's own city: null

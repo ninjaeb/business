@@ -783,7 +783,7 @@ export function PartnerListingForm({
         </FieldGroup>
       </div>
 
-      <AddressSearch placesAvailable={placesAvailable} onSelect={handleAddressSelected} />
+      <AddressSearch placesAvailable={placesAvailable} defaultQuery={companyName} onSelect={handleAddressSelected} />
 
       <div className="grid gap-4 sm:grid-cols-2">
         <FieldGroup label="Address" htmlFor="address">

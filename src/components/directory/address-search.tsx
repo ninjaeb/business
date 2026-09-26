@@ -24,12 +24,18 @@ const MIN_QUERY_LENGTH = 2;
 // slightly different suburb name.
 export function AddressSearch({
   placesAvailable,
+  defaultQuery,
   onSelect,
 }: {
   placesAvailable: boolean;
+  // The company name already on the listing (see AiAutoCreatePanel's own
+  // Google Maps search box, which seeds the same way) — a partner searching
+  // for their own business shouldn't have to retype a name they've already
+  // entered elsewhere on this same form.
+  defaultQuery: string;
   onSelect: (address: AddressFromPlace) => void;
 }) {
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(defaultQuery);
   const [results, setResults] = useState<PlaceSearchResult[] | null>(null);
   const [selectedName, setSelectedName] = useState<string | null>(null);
   const [searching, startSearch] = useTransition();
