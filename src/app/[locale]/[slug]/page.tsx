@@ -491,7 +491,11 @@ export default async function DirectoryListingPage({
         />
       )}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbJsonLd }} />
-      <div className="mb-4">
+      {/* Hidden below sm — the JSON-LD above still carries the same trail
+          for search results; a phone screen just doesn't have the spare
+          width for it above the header, and the tab strip further down
+          already covers "get back to a section of this page." */}
+      <div className="hidden sm:mb-4 sm:block">
         <DirectoryBreadcrumbs items={breadcrumbItems} navLabel={t.breadcrumbNavLabel} />
       </div>
       <div className="mb-8 border-b border-slate-200 bg-white px-4 py-4 -mx-4 sm:-mx-8 sm:px-8 dark:border-neutral-800 dark:bg-neutral-900">
@@ -525,9 +529,10 @@ export default async function DirectoryListingPage({
                 logo — rather than their own full-width row further down,
                 which otherwise leaves the space below a short tagline next
                 to a 200px logo empty. Below sm there's no spare height left
-                in this column for a phone-width logo, so the sm:hidden
-                block after this row repeats the same content as its own
-                full-width row instead. Industry/category, state/country,
+                in this column for a phone-width logo, so this whole group
+                is hidden here and instead repeats, full-width, at the top
+                of the content column below (ahead of About) — see the
+                sm:hidden block there. Industry/category, state/country,
                 and website are three separate lines (each still its own
                 flex-wrap row, for a long combination within one group)
                 rather than one shared wrapping row. */}
@@ -615,75 +620,6 @@ export default async function DirectoryListingPage({
           </div>
         </div>
 
-        {/* Phone-width fallback for the sm:+ version tucked into the name
-            column above — same content and order, just its own full-width
-            block since there's no spare height beside the logo down here.
-            Industry/category get their own line; state/country and website
-            share the next one (there's enough width for all three on a
-            phone, unlike the desktop column squeezed beside a 200px logo,
-            which keeps them on three separate lines). */}
-        {(listing.industry || listing.categories.length > 0 || listing.city || listing.state || listing.country || listing.website) && (
-          <div className="mt-3 flex flex-col gap-2 sm:hidden">
-            {(listing.industry || listing.categories.length > 0) && (
-              <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
-                {listing.industry && (
-                  <Link href={industryPath(listing.industry, resolved)}>
-                    <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
-                      {INDUSTRY_LABELS_BY_LOCALE[resolved][listing.industry]}
-                    </Badge>
-                  </Link>
-                )}
-                {listing.categories.map((category) => (
-                  <Link key={category} href={categoryPath(slugify(category), resolved)}>
-                    <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
-                      {translateCategoryName(category, resolved)}
-                    </Badge>
-                  </Link>
-                ))}
-              </div>
-            )}
-            {(listing.city || listing.state || listing.country || listing.website) && (
-              <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
-                {listing.state ? (
-                  <Link
-                    href={locationPath(slugify(locationLabel(listing.city, listing.state)), resolved)}
-                    className="inline-flex items-center gap-1 hover:text-petrol hover:underline dark:hover:text-petrol-light"
-                  >
-                    <MapPin className="h-4 w-4" />
-                    {locationLabel(listing.city, listing.state)}
-                  </Link>
-                ) : (
-                  listing.city && (
-                    <span className="inline-flex items-center gap-1">
-                      <MapPin className="h-4 w-4" />
-                      {listing.city}
-                    </span>
-                  )
-                )}
-                {listing.country && (
-                  <Link
-                    href={`${directoryHomePath(resolved)}?country=${encodeURIComponent(listing.country)}`}
-                    className="hover:text-petrol hover:underline dark:hover:text-petrol-light"
-                  >
-                    {listing.country}
-                  </Link>
-                )}
-                {listing.website && (
-                  <a
-                    href={listing.website}
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    className="inline-flex items-center gap-1 text-petrol hover:underline dark:text-petrol-light"
-                  >
-                    <Globe className="h-4 w-4" />
-                    {t.websiteLabel}
-                  </a>
-                )}
-              </div>
-            )}
-          </div>
-        )}
-
         {/* Phone-width fallback for the corner stack above — same two
             buttons, same order, just a full-width row since there's no
             room beside the logo down here. flex-wrap is the safety net on
@@ -710,6 +646,80 @@ export default async function DirectoryListingPage({
       <InquiryProvider>
         <div className="grid gap-6 lg:grid-cols-3">
           <div className="space-y-6 lg:col-span-2">
+            {/* Phone-width fallback for the sm:+ version tucked into the name
+                column in the header above — same content and order, just
+                moved down here (ahead of About, the first card in this
+                column) rather than crowded into the header, which on a
+                phone screen only has room for the logo, name, and view
+                count before it. Industry/category get their own line;
+                state/country and website share the next one (there's
+                enough width for all three on a phone, unlike the desktop
+                column squeezed beside a 200px logo, which keeps them on
+                three separate lines). Rendered here regardless of whether
+                an About card follows, so a listing with no description
+                doesn't lose these on mobile. */}
+            {(listing.industry || listing.categories.length > 0 || listing.city || listing.state || listing.country || listing.website) && (
+              <div className="flex flex-col gap-2 sm:hidden">
+                {(listing.industry || listing.categories.length > 0) && (
+                  <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
+                    {listing.industry && (
+                      <Link href={industryPath(listing.industry, resolved)}>
+                        <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
+                          {INDUSTRY_LABELS_BY_LOCALE[resolved][listing.industry]}
+                        </Badge>
+                      </Link>
+                    )}
+                    {listing.categories.map((category) => (
+                      <Link key={category} href={categoryPath(slugify(category), resolved)}>
+                        <Badge className="bg-petrol px-2.5 py-1 text-sm font-semibold text-white ring-0 transition-colors hover:bg-petrol-ink dark:bg-petrol/70 dark:hover:bg-petrol">
+                          {translateCategoryName(category, resolved)}
+                        </Badge>
+                      </Link>
+                    ))}
+                  </div>
+                )}
+                {(listing.city || listing.state || listing.country || listing.website) && (
+                  <div className="flex flex-wrap items-center gap-2 text-base text-slate-500 dark:text-slate-400">
+                    {listing.state ? (
+                      <Link
+                        href={locationPath(slugify(locationLabel(listing.city, listing.state)), resolved)}
+                        className="inline-flex items-center gap-1 hover:text-petrol hover:underline dark:hover:text-petrol-light"
+                      >
+                        <MapPin className="h-4 w-4" />
+                        {locationLabel(listing.city, listing.state)}
+                      </Link>
+                    ) : (
+                      listing.city && (
+                        <span className="inline-flex items-center gap-1">
+                          <MapPin className="h-4 w-4" />
+                          {listing.city}
+                        </span>
+                      )
+                    )}
+                    {listing.country && (
+                      <Link
+                        href={`${directoryHomePath(resolved)}?country=${encodeURIComponent(listing.country)}`}
+                        className="hover:text-petrol hover:underline dark:hover:text-petrol-light"
+                      >
+                        {listing.country}
+                      </Link>
+                    )}
+                    {listing.website && (
+                      <a
+                        href={listing.website}
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        className="inline-flex items-center gap-1 text-petrol hover:underline dark:text-petrol-light"
+                      >
+                        <Globe className="h-4 w-4" />
+                        {t.websiteLabel}
+                      </a>
+                    )}
+                  </div>
+                )}
+              </div>
+            )}
+
             {displayDescription && (
               <Card id="about" className="scroll-mt-32">
                 <CardHeader>
