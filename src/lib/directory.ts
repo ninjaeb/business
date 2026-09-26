@@ -2,7 +2,8 @@ import { db } from "@/lib/db";
 import type { Industry, PartnerListing, Prisma } from "@/generated/prisma/client";
 import { operatingHoursFromJson, type OperatingHours } from "@/lib/operating-hours";
 import { slugify } from "@/lib/slug";
-import { directoryListingPath, formatViewsLabel, type DirectoryLocale } from "@/lib/directory-i18n";
+import { directoryListingPath, formatViewsLabel, INDUSTRY_LABELS_BY_LOCALE, type DirectoryLocale } from "@/lib/directory-i18n";
+import { translateCategoryName } from "@/lib/directory-category-labels";
 import { organizationJsonLdId, serializeJsonLd, websiteJsonLdId } from "@/lib/directory-seo";
 import { VIDEO_CATEGORIES, type VideoCategory } from "@/lib/labels";
 import { stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
@@ -184,7 +185,11 @@ export function toEmbeddableVideoUrl(rawUrl: string): { embedUrl: string; provid
             : url.pathname.startsWith("/embed/")
               ? url.pathname.slice(7)
               : null;
-    return id ? { embedUrl: `https://www.youtube.com/embed/${id}`, provider } : null;
+    // youtube-nocookie.com, not youtube.com: the privacy-enhanced embed
+    // domain skips the session/cookie handshake that otherwise triggers
+    // YouTube's "Sign in to confirm you're not a bot" overlay inside the
+    // iframe on some videos/networks.
+    return id ? { embedUrl: `https://www.youtube-nocookie.com/embed/${id}`, provider } : null;
   }
   if (provider === "vimeo") {
     const id = url.pathname.slice(1).split("/")[0];
@@ -859,6 +864,104 @@ export async function loadLatestListingUpdates(limit = MAX_LATEST_UPDATES): Prom
     }
   }
   return entries;
+}
+
+// The header search bar's live dropdown (see HeaderSearch and the
+// searchDirectory server action) — up to a handful of matches in each of
+// three groups (business, products & services, news & promotions) for one
+// query, case-insensitive substring matching against the same fields
+// DirectorySearch's own free-text filter already uses. One
+// loadPublishedListings call backs all three groups, same as
+// loadLatestProducts/loadLatestListingUpdates above, since products/updates
+// are already just per-listing arrays inside that same snapshot. This is a
+// dropdown of suggestions, not the authoritative filter — the "see all
+// results" link below it re-runs the real thing (DirectorySearch, on the
+// home page) rather than this trying to match its translated-category
+// matching exactly.
+export type DirectorySearchListingHit = {
+  slug: string;
+  companyName: string;
+  tagline: string | null;
+  logoUrl: string | null;
+  industryLabel: string | null;
+};
+export type DirectorySearchProductHit = {
+  listingSlug: string;
+  companyName: string;
+  logoUrl: string | null;
+  title: string;
+  description: string;
+};
+export type DirectorySearchUpdateHit = {
+  listingSlug: string;
+  companyName: string;
+  logoUrl: string | null;
+  kind: ListingUpdateKind;
+  title: string;
+};
+export type DirectorySearchSuggestions = {
+  businesses: DirectorySearchListingHit[];
+  products: DirectorySearchProductHit[];
+  updates: DirectorySearchUpdateHit[];
+};
+
+const MAX_SEARCH_SUGGESTIONS_PER_GROUP = 5;
+
+export async function searchDirectorySuggestions(query: string, locale: DirectoryLocale): Promise<DirectorySearchSuggestions> {
+  const q = query.trim().toLowerCase();
+  const empty: DirectorySearchSuggestions = { businesses: [], products: [], updates: [] };
+  if (!q) return empty;
+
+  const rows = await loadPublishedListings();
+  const industryLabels = INDUSTRY_LABELS_BY_LOCALE[locale];
+  const today = new Date().toISOString().slice(0, 10);
+  const businesses: DirectorySearchListingHit[] = [];
+  const products: DirectorySearchProductHit[] = [];
+  const updates: DirectorySearchUpdateHit[] = [];
+
+  for (const { slug, publishedAt, listing } of rows) {
+    if (businesses.length >= MAX_SEARCH_SUGGESTIONS_PER_GROUP && products.length >= MAX_SEARCH_SUGGESTIONS_PER_GROUP && updates.length >= MAX_SEARCH_SUGGESTIONS_PER_GROUP) {
+      break;
+    }
+
+    const translation = locale === "en" ? undefined : listing.translations[locale];
+    const companyName = listing.companyName;
+    const logoUrl = listing.logoUrl ? listingLogoPath(slug, publishedAt) : null;
+    const industryLabel = listing.industry ? industryLabels[listing.industry] : null;
+
+    if (businesses.length < MAX_SEARCH_SUGGESTIONS_PER_GROUP) {
+      const tagline = translation?.tagline || listing.tagline;
+      const description = stripMarkdownLiteToPlainText(translation?.description || listing.description);
+      const matches =
+        companyName.toLowerCase().includes(q) ||
+        (tagline?.toLowerCase().includes(q) ?? false) ||
+        description.toLowerCase().includes(q) ||
+        (industryLabel?.toLowerCase().includes(q) ?? false) ||
+        listing.categories.some((cat) => cat.toLowerCase().includes(q) || translateCategoryName(cat, locale).toLowerCase().includes(q));
+      if (matches) businesses.push({ slug, companyName, tagline: tagline || null, logoUrl, industryLabel });
+    }
+
+    const services = translation?.services.length ? translation.services : listing.services;
+    for (const service of services) {
+      if (products.length >= MAX_SEARCH_SUGGESTIONS_PER_GROUP) break;
+      if (service.title.toLowerCase().includes(q) || service.description.toLowerCase().includes(q)) {
+        products.push({ listingSlug: slug, companyName, logoUrl, title: service.title, description: service.description });
+      }
+    }
+
+    // Never translated (see ListingUpdateEntry's own comment) — matched in
+    // whatever language a partner actually wrote it in, same as
+    // loadLatestListingUpdates above.
+    for (const update of listing.updates) {
+      if (updates.length >= MAX_SEARCH_SUGGESTIONS_PER_GROUP) break;
+      if (!isUpdateCurrent(update, today)) continue;
+      if (update.title.toLowerCase().includes(q) || stripMarkdownLiteToPlainText(update.body).toLowerCase().includes(q)) {
+        updates.push({ listingSlug: slug, companyName, logoUrl, kind: update.kind, title: update.title });
+      }
+    }
+  }
+
+  return { businesses, products, updates };
 }
 
 // A "Visit website" link needs a real absolute URL, not just a bare domain
