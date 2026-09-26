@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { ExternalLink, Eye, Megaphone, Plus, Store } from "lucide-react";
 import { createListingAction } from "@/app/actions/directory";
-import { isUpdateCurrent, listPartnerListings, listingViewCountByLocale, readPublishedSnapshot } from "@/lib/directory";
+import { isUpdateCurrent, listPartnerListings, listingViewCountBreakdown, readPublishedSnapshot } from "@/lib/directory";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { getSiteOrigin } from "@/lib/site-url";
-import { DIRECTORY_LOCALES, directoryListingPath } from "@/lib/directory-i18n";
+import { directoryListingPath } from "@/lib/directory-i18n";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -108,9 +108,9 @@ export default async function PartnerListingsPage() {
                         </span>
                         <span className="text-xs text-slate-400 dark:text-slate-500">
                           (
-                          {DIRECTORY_LOCALES.map(
-                            ({ code, label }) => `${label} ${listingViewCountByLocale(listing, code).toLocaleString()}`,
-                          ).join(" · ")}
+                          {listingViewCountBreakdown(listing)
+                            .map(({ label, count }) => `${label} ${count.toLocaleString()}`)
+                            .join(" · ")}
                           )
                         </span>
                       </span>

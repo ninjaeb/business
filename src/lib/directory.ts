@@ -2,7 +2,13 @@ import { db } from "@/lib/db";
 import type { Industry, PartnerListing, Prisma } from "@/generated/prisma/client";
 import { operatingHoursFromJson, type OperatingHours } from "@/lib/operating-hours";
 import { slugify } from "@/lib/slug";
-import { directoryListingPath, formatViewsLabel, INDUSTRY_LABELS_BY_LOCALE, type DirectoryLocale } from "@/lib/directory-i18n";
+import {
+  DIRECTORY_LOCALES,
+  directoryListingPath,
+  formatViewsLabel,
+  INDUSTRY_LABELS_BY_LOCALE,
+  type DirectoryLocale,
+} from "@/lib/directory-i18n";
 import { translateCategoryName } from "@/lib/directory-category-labels";
 import { organizationJsonLdId, serializeJsonLd, websiteJsonLdId } from "@/lib/directory-seo";
 import { VIDEO_CATEGORIES, type VideoCategory } from "@/lib/labels";
@@ -1131,6 +1137,20 @@ export function listingViewCountByLocale(
   locale: DirectoryLocale,
 ): number {
   return listing[VIEW_COUNT_FIELD_BY_LOCALE[locale]];
+}
+
+// The business-portal listing cards' full per-language parenthetical,
+// including a trailing "Earlier" bucket for the pre-migration gap described
+// above — so what's shown always sums to the same viewCount it's breaking
+// down, instead of visibly falling short on any listing old enough to have
+// accrued views before per-locale tracking existed.
+export function listingViewCountBreakdown(
+  listing: { viewCount: number; viewCountEn: number; viewCountZh: number; viewCountMs: number },
+): { label: string; count: number }[] {
+  const perLocale = DIRECTORY_LOCALES.map(({ code, label }) => ({ label, count: listingViewCountByLocale(listing, code) }));
+  const tracked = perLocale.reduce((sum, { count }) => sum + count, 0);
+  const untracked = listing.viewCount - tracked;
+  return untracked > 0 ? [...perLocale, { label: "Earlier", count: untracked }] : perLocale;
 }
 
 // Explicit creation — unlike the old single-listing ensurePartnerListing
