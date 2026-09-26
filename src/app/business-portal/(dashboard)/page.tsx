@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ExternalLink, Eye, Inbox, Handshake, Plus, Store, Trophy, Wallet } from "lucide-react";
+import { ExternalLink, Eye, Inbox, Handshake, Plus, Store, ThumbsUp, Trophy, Wallet } from "lucide-react";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { createListingAction } from "@/app/actions/directory";
 import { listPartnerListings, getDirectoryLeadStatsForPartner } from "@/lib/directory";
@@ -16,10 +16,10 @@ import { EmptyState } from "@/components/ui/empty-state";
 import { ListingLogo } from "@/components/directory/listing-logo";
 import { PARTNER_LISTING_STATUS_BADGE_CLASSES, PARTNER_LISTING_STATUS_LABELS } from "@/lib/labels";
 
-// This app has no affiliate/referral-commission system (see the CRM this
-// was extracted from, whose own overview page mixed referral-link stats
-// with directory stats) — a partner's home page here is just their own
-// listings and how their directory leads are going.
+// No commission/payout system (unlike the CRM this was extracted from,
+// whose own overview page mixed referral-link stats with directory
+// stats) — just the one "Referred" stat below, alongside the rest of how
+// this partner's directory leads are going.
 export default async function PartnerOverviewPage() {
   const user = await requireCompletePartnerProfile();
   const [listings, directoryStats, currency, siteOrigin] = await Promise.all([
@@ -34,11 +34,19 @@ export default async function PartnerOverviewPage() {
     <div className="space-y-6">
       <PageHeader title={`Welcome, ${user.name.split(" ")[0]}`} description="Your listings and directory leads at a glance." />
 
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
         <StatCard label="New leads" value={directoryStats.new.toString()} icon={Inbox} accent="sky" href="/business-portal/business-leads" />
         <StatCard label="Open" value={directoryStats.open.toString()} icon={Handshake} accent="amber" href="/business-portal/business-leads" />
         <StatCard label="Won" value={directoryStats.won.toString()} icon={Trophy} accent="emerald" />
         <StatCard label="Won value" value={formatCurrencyExact(directoryStats.wonValue, currency)} icon={Wallet} accent="indigo" />
+        <StatCard
+          label="Referred"
+          value={directoryStats.referred.toString()}
+          description="Via your Recommend link"
+          icon={ThumbsUp}
+          accent="orange"
+          href="/business-portal/business-leads"
+        />
       </div>
 
       <Card>

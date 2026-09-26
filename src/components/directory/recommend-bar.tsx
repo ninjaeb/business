@@ -1,12 +1,11 @@
 import { ShareButton } from "@/components/directory/share-button";
 
-// The "Recommend the Business" pill pinned to the foot of a listing page
-// for a signed-in business owner: one floating button that opens the same
-// share menu as the header's Recommend button, with the same referral-
-// tracking link. It's the always-in-reach version of that button — a
-// partner reading down a long listing shouldn't have to scroll back up to
-// pass it on. Rendered only when there's a partner to credit (see the
-// listing page), so anonymous visitors never see it.
+// The "Recommend the Business" pill pinned to the foot of a listing page,
+// shown to every visitor: one floating button that opens the same share
+// menu as the header's Recommend button, with the same referral-tracking
+// link (?ref=recommend, see recommendUrl). It's the always-in-reach
+// version of that button — a visitor reading down a long listing
+// shouldn't have to scroll back up to recommend it to a friend.
 //
 // On phones the page already has its own fixed bottom jump bar (Services /
 // Get in touch — see the listing page), so the pill floats just above that

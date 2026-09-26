@@ -1,11 +1,12 @@
 import { notFound } from "next/navigation";
-import { AlertTriangle, Mail, Phone } from "lucide-react";
+import { AlertTriangle, Mail, Phone, ThumbsUp } from "lucide-react";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { db } from "@/lib/db";
 import { getCurrency } from "@/lib/settings";
 import { formatDate, formatDateTime, formatDuration } from "@/lib/format";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { DirectoryLeadStatusSelect } from "@/components/directory/directory-lead-status-select";
 import { DirectoryLeadValueForm } from "@/components/directory/directory-lead-value-form";
 import { DirectoryLeadReplyForm } from "@/components/directory/directory-lead-reply-form";
@@ -34,9 +35,21 @@ export default async function PartnerDirectoryLeadPage({ params }: { params: Pro
           { label: lead.name },
         ]}
         title={lead.name}
-        description={`Sent ${formatDateTime(lead.createdAt)} · ${
-          lead.closedAt ? `Closed after ${formatDuration(lead.createdAt, lead.closedAt)}` : `Open for ${formatDuration(lead.createdAt)}`
-        }`}
+        description={
+          <>
+            {`Sent ${formatDateTime(lead.createdAt)} · ${
+              lead.closedAt
+                ? `Closed after ${formatDuration(lead.createdAt, lead.closedAt)}`
+                : `Open for ${formatDuration(lead.createdAt)}`
+            }`}
+            {lead.viaReferral && (
+              <Badge className="ml-2 bg-orange-50 text-orange-700 ring-orange-600/20 dark:bg-orange-950 dark:text-orange-400 dark:ring-orange-500/30">
+                <ThumbsUp className="mr-1 h-3 w-3" aria-hidden="true" />
+                Referred
+              </Badge>
+            )}
+          </>
+        }
         actions={<DirectoryLeadStatusSelect leadId={lead.id} status={lead.status} />}
       />
 

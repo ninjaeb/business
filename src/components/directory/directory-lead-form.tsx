@@ -71,6 +71,18 @@ export function DirectoryLeadForm({ slug, locale }: { slug: string; locale: Dire
         <input id="directory-website" name="website" type="text" tabIndex={-1} autoComplete="off" />
       </div>
       <input type="hidden" name="renderedAt" value={renderedAt} />
+      {/* Set only when the visitor arrived via the Recommend button's own
+          link (see recommendUrl in the listing page) — read straight off
+          the URL rather than a cookie, since this form lives on the same
+          page load the ?ref=recommend query param arrives on. window is
+          always defined here (a real click/submit can't happen before
+          hydration), so no effect/state round-trip is needed just to read
+          it once. */}
+      <input
+        type="hidden"
+        name="ref"
+        value={typeof window !== "undefined" ? new URLSearchParams(window.location.search).get("ref") ?? "" : ""}
+      />
 
       <div className="grid gap-4 sm:grid-cols-2">
         <FieldGroup label={t.formNameLabel} htmlFor="directory-name" required>

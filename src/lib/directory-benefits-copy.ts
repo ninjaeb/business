@@ -70,8 +70,8 @@ export const DIRECTORY_BENEFITS_COPY: Record<DirectoryLocale, DirectoryBenefitsC
             body: "A visitor can message you straight from your listing page. It shows up in your business portal's leads dashboard — tracked from New through Won — not buried in a shared inbox.",
           },
           {
-            title: "Trackable referral links",
-            body: "The Recommend and Share buttons on your listing carry a referral link, so you can see when someone's sharing your page and how much traffic it sends you.",
+            title: "A trackable referral link",
+            body: "The Recommend button on your listing carries a referral link — any inquiry that comes in through it is flagged as referred in your leads dashboard, from New through Won.",
           },
         ],
       },
@@ -143,7 +143,7 @@ export const DIRECTORY_BENEFITS_COPY: Record<DirectoryLocale, DirectoryBenefitsC
           },
           {
             title: "可追踪的推荐链接",
-            body: "刊登页面上的「推荐」与「分享」按钮都带有推荐链接，让您能看到何时有人分享您的页面，以及它为您带来了多少流量。",
+            body: "刊登页面上的「推荐」按钮带有推荐链接——通过该链接进来的咨询会在您的潜在客户仪表板中标记为「推荐」，从「新」一路追踪到「成交」。",
           },
         ],
       },
@@ -216,7 +216,7 @@ export const DIRECTORY_BENEFITS_COPY: Record<DirectoryLocale, DirectoryBenefitsC
           },
           {
             title: "Pautan rujukan yang boleh dijejaki",
-            body: "Butang Syorkan dan Kongsi pada penyenaraian anda membawa pautan rujukan, jadi anda dapat melihat bila seseorang berkongsi halaman anda dan berapa banyak trafik yang dibawanya.",
+            body: "Butang Syorkan pada penyenaraian anda membawa pautan rujukan — sebarang pertanyaan yang masuk melaluinya akan ditandakan sebagai rujukan dalam papan pemuka prospek anda, dari Baharu hingga Menang.",
           },
         ],
       },

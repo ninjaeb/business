@@ -209,14 +209,14 @@ export type DirectoryStrings = {
   dayLabels: DirectoryDayLabels;
   websiteLabel: string;
   locationLabel: string;
-  // The listing page's "Recommend" affordances for a signed-in business
-  // owner — the header button, and the floating bottom-bar pill (see
-  // RecommendBar). Both share one referral-tracking link and this same
-  // pre-written message for the email/WhatsApp/native-share options (Copy
-  // link still copies the bare URL). {business} and {url} are replaced
-  // with the listing's name and the tracking link itself — plain string
-  // substitution, not a template literal, since this is localized data,
-  // not code.
+  // The listing page's "Recommend" affordances, open to every visitor —
+  // the header button, and the floating bottom-bar pill (see
+  // RecommendBar). Both share one referral-tracking link (?ref=recommend,
+  // see recommendUrl) and this same pre-written message for the
+  // email/WhatsApp/native-share options (Copy link still copies that same
+  // tracking link). {business} and {url} are replaced with the listing's
+  // name and the tracking link itself — plain string substitution, not a
+  // template literal, since this is localized data, not code.
   recommendLabel: string;
   recommendBusinessCta: string;
   recommendMessage: string;
