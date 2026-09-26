@@ -1038,20 +1038,20 @@ export function PartnerListingForm({
           tabs and lives in its own top-level section too. */}
       <div className={cn("grid gap-4 sm:grid-cols-2", activeSection !== "media" && "hidden")}>
         <div>
-          <p className="mb-1.5 text-xs font-medium text-slate-500 dark:text-slate-400">Videos</p>
-          <VideosEditor name="videos" value={videos} onChange={setVideos} />
-          <p className="mt-1 text-xs text-slate-400">
-            Up to 12 — YouTube, Vimeo, Dailymotion, Facebook, or TikTok links, each with a title and category.
-            Optimized for search and AI answer engines.
-          </p>
-        </div>
-
-        <div>
-          <p className="mb-1.5 text-xs font-medium text-slate-500 dark:text-slate-400">Photos</p>
+          <h3 className="mb-1.5 text-sm font-semibold text-slate-900 dark:text-slate-100">Photos</h3>
           <ListingPhotosEditor listingId={listingId} initialPhotos={photos} />
           <p className="mt-1 text-xs text-slate-400">
             Up to 12 — added to your gallery right away, but only shown publicly once you save and the listing is
             (re)approved, same as everything else here.
+          </p>
+        </div>
+
+        <div>
+          <h3 className="mb-1.5 text-sm font-semibold text-slate-900 dark:text-slate-100">Videos</h3>
+          <VideosEditor name="videos" value={videos} onChange={setVideos} />
+          <p className="mt-1 text-xs text-slate-400">
+            Up to 12 — YouTube, Vimeo, Dailymotion, Facebook, or TikTok links, each with a title and category.
+            Optimized for search and AI answer engines.
           </p>
         </div>
       </div>
