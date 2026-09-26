@@ -9,9 +9,11 @@ import { DIRECTORY_SHARE_IMAGE_SIZE } from "@/lib/directory-seo";
 // page.tsx) — the same gotka.com house style as the directory's site-wide
 // opengraph-image.tsx (dark navy, the green corner glow, the G/GOTKA
 // lockup), but built from this specific business's own company name,
-// services, and description rather than generic directory branding. A
-// consistent, always-informative link preview regardless of whether a
-// partner bothered uploading a logo or photos.
+// services, and description rather than generic directory branding, plus
+// its own logo alongside them when the partner uploaded one. A consistent,
+// always-informative link preview whether or not a partner bothered
+// uploading a logo or photos — this never falls back to those directly the
+// way the old shareImage priority chain did.
 export const size = DIRECTORY_SHARE_IMAGE_SIZE;
 export const contentType = "image/png";
 
@@ -103,42 +105,64 @@ export default async function Image({ params }: { params: Promise<{ slug: string
               </div>
             </div>
           </div>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            {servicesLine && (
+          <div style={{ display: "flex", alignItems: "center", gap: 28 }}>
+            {listing?.logoUrl && (
+              // A white tile behind it — a partner's own logo can be any
+              // color, including one that would otherwise vanish against
+              // this card's dark navy background — sized generously enough
+              // (100px) to read clearly at social-preview thumbnail sizes.
               <div
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  gap: 10,
-                  fontSize: 17,
-                  fontWeight: 600,
-                  letterSpacing: 2,
-                  textTransform: "uppercase",
-                  color: GREEN,
-                  marginBottom: 22,
+                  justifyContent: "center",
+                  width: 100,
+                  height: 100,
+                  borderRadius: 20,
+                  background: "#fff",
+                  padding: 10,
+                  flexShrink: 0,
                 }}
               >
-                <div style={{ width: 10, height: 10, borderRadius: 2, background: GREEN }} />
-                {servicesLine}
+                <img src={listing.logoUrl} width={80} height={80} alt="" style={{ objectFit: "contain", borderRadius: 8 }} />
               </div>
             )}
-            <div
-              style={{
-                fontSize: titleSize(companyName),
-                fontWeight: 800,
-                lineHeight: 1.14,
-                color: "#fff",
-                letterSpacing: -1,
-                maxWidth: 1000,
-              }}
-            >
-              {companyName}
+            <div style={{ display: "flex", flexDirection: "column", flex: 1, minWidth: 0 }}>
+              {servicesLine && (
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 10,
+                    fontSize: 17,
+                    fontWeight: 600,
+                    letterSpacing: 2,
+                    textTransform: "uppercase",
+                    color: GREEN,
+                    marginBottom: 22,
+                  }}
+                >
+                  <div style={{ width: 10, height: 10, borderRadius: 2, background: GREEN }} />
+                  {servicesLine}
+                </div>
+              )}
+              <div
+                style={{
+                  fontSize: titleSize(companyName),
+                  fontWeight: 800,
+                  lineHeight: 1.14,
+                  color: "#fff",
+                  letterSpacing: -1,
+                }}
+              >
+                {companyName}
+              </div>
+              {descriptionLine && (
+                <div style={{ marginTop: 20, fontSize: 24, color: MUTED, maxWidth: 900, lineHeight: 1.4 }}>
+                  {descriptionLine}
+                </div>
+              )}
             </div>
-            {descriptionLine && (
-              <div style={{ marginTop: 20, fontSize: 24, color: MUTED, maxWidth: 920, lineHeight: 1.4 }}>
-                {descriptionLine}
-              </div>
-            )}
           </div>
           <div style={{ display: "flex", fontSize: 19, color: MUTED }}>business.gotka.com</div>
         </div>
