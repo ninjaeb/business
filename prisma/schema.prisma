@@ -379,14 +379,15 @@ model DirectoryLead {
   createdAt      DateTime  @default(now())
   updatedAt      DateTime  @updatedAt
 
-  // Set from the `ref=recommend` query param the listing page's own
+  // Set from the `r=<listing id>` query param the listing page's own
   // Recommend button appends to its share link (see recommendUrl in
   // src/app/[locale]/[slug]/page.tsx) — true when this lead arrived
-  // through that link, carried into submitDirectoryLead via a hidden
-  // form field (see directory-lead-form.tsx) rather than a cookie, since
-  // the lead form lives on the same page load the query param arrives
-  // on. The plain Share button's link is never tagged, so this is
-  // specifically "referred", not "arrived with any query string".
+  // through that link AND `r` names this exact listing (checked in
+  // submitDirectoryLead, which is also where the value is carried in,
+  // via a hidden form field — see directory-lead-form.tsx — rather than
+  // a cookie, since the lead form lives on the same page load the query
+  // param arrives on). The plain Share button's link is never tagged, so
+  // this is specifically "referred", not "arrived with any query string".
   viaReferral Boolean @default(false)
 
   listing   PartnerListing @relation(fields: [listingId], references: [id], onDelete: Cascade)

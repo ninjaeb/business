@@ -3,7 +3,7 @@ import { ShareButton } from "@/components/directory/share-button";
 // The "Recommend the Business" pill pinned to the foot of a listing page,
 // shown to every visitor: one floating button that opens the same share
 // menu as the header's Recommend button, with the same referral-tracking
-// link (?ref=recommend, see recommendUrl). It's the always-in-reach
+// link (?r=<listing id>, see recommendUrl). It's the always-in-reach
 // version of that button — a visitor reading down a long listing
 // shouldn't have to scroll back up to recommend it to a friend.
 //

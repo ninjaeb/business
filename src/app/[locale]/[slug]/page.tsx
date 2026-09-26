@@ -309,15 +309,17 @@ export default async function DirectoryListingPage({
 
   // No commission/payout system (this app doesn't pay anyone for a
   // referral, unlike the CRM it was extracted from) — just attribution: a
-  // `ref=recommend` tag on the Recommend link's own URL, distinct from
-  // pageUrl (which the plain Share button still uses untagged). A visitor
-  // who lands here via that link and then submits the lead form gets
-  // DirectoryLead.viaReferral set (see directory-lead-form.tsx and
-  // submitDirectoryLead), which is what the business portal's "Referred"
-  // stat counts. Offered to every visitor, not gated to a signed-in
-  // partner — anyone recommending a business they like generates the same
-  // tag, not just its own owner.
-  const recommendUrl = `${pageUrl}?ref=recommend`;
+  // `r=<listing id>` tag on the Recommend link's own URL, distinct from
+  // pageUrl (which the plain Share button still uses untagged). The id
+  // (not a fixed marker string) lets submitDirectoryLead confirm the tag
+  // actually names the listing the lead is being submitted to, rather
+  // than trusting any `r` value present. A visitor who lands here via
+  // that link and then submits the lead form gets DirectoryLead.viaReferral
+  // set (see directory-lead-form.tsx and submitDirectoryLead), which is
+  // what the business portal's "Referred" stat counts. Offered to every
+  // visitor, not gated to a signed-in partner — anyone recommending a
+  // business they like generates the same tag, not just its own owner.
+  const recommendUrl = `${pageUrl}?r=${listing.id}`;
   const recommendMessage = formatRecommendMessage(t.recommendMessage, listing.companyName, recommendUrl);
 
   // The partner's own tagline/description/services/faqs stay the source of
