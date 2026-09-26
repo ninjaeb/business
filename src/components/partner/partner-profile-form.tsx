@@ -84,8 +84,11 @@ export function PartnerProfileForm({
       </div>
 
       <div>
-        <Label htmlFor="phone">Contact phone</Label>
-        <Input id="phone" name="phone" type="tel" defaultValue={phone ?? ""} placeholder="+60 12 345 6789" />
+        <Label htmlFor="phone">
+          Contact phone
+          <RequiredMark />
+        </Label>
+        <Input id="phone" name="phone" type="tel" required defaultValue={phone ?? ""} placeholder="+60 12 345 6789" />
         <p className="mt-1 text-xs text-slate-400">
           {PHONE_FORMAT_HINT} Used to WhatsApp you when a directory inquiry comes in — never shown on your public
           listing, and never given to visitors.

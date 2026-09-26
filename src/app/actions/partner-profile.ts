@@ -17,8 +17,8 @@ const partnerProfileSchema = z.object({
   phone: z
     .string()
     .trim()
-    .optional()
-    .refine((value) => !value || isValidPhoneFormat(value), { message: PHONE_FORMAT_HINT }),
+    .min(1, "Contact phone is required")
+    .refine(isValidPhoneFormat, { message: PHONE_FORMAT_HINT }),
   timezone: z.string().trim().optional(),
 });
 
@@ -47,7 +47,7 @@ export async function updatePartnerProfile(
     companyName: formData.get("companyName"),
     email: formData.get("email"),
     title: formData.get("title"),
-    phone: formData.get("phone") || undefined,
+    phone: formData.get("phone"),
     timezone: formData.get("timezone") || undefined,
   });
   if (!parsed.success) {
