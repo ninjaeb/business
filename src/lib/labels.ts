@@ -136,3 +136,32 @@ export const PARTNER_DEAL_STATUS_BADGE_CLASSES: Record<PartnerDealStatus, string
   WON: "bg-emerald-50 text-emerald-700 ring-emerald-600/20 dark:bg-emerald-950 dark:text-emerald-300 dark:ring-emerald-500/30",
   LOST: "bg-slate-100 text-slate-700 ring-slate-600/20 dark:bg-slate-800 dark:text-slate-300 dark:ring-slate-500/30",
 };
+
+// A listing gallery video's category (see VideoEntry in src/lib/directory.ts)
+// — not a Prisma enum (it's stored inside a JSON field, not its own DB
+// column), but kept here rather than in directory.ts for the same reason
+// Industry's labels are: directory-i18n.ts needs these labels too (for the
+// public page's per-locale VIDEO_CATEGORY_LABELS_BY_LOCALE), and directory.ts
+// itself imports from directory-i18n.ts — defining them in directory.ts would
+// make that a circular import.
+export type VideoCategory = "OVERVIEW" | "TOUR" | "PRODUCT_SERVICE" | "TESTIMONIAL" | "PROMOTIONAL" | "EVENT" | "OTHER";
+
+export const VIDEO_CATEGORIES: VideoCategory[] = [
+  "OVERVIEW",
+  "TOUR",
+  "PRODUCT_SERVICE",
+  "TESTIMONIAL",
+  "PROMOTIONAL",
+  "EVENT",
+  "OTHER",
+];
+
+export const VIDEO_CATEGORY_LABELS: Record<VideoCategory, string> = {
+  OVERVIEW: "Overview",
+  TOUR: "Tour",
+  PRODUCT_SERVICE: "Product/Service",
+  TESTIMONIAL: "Testimonial",
+  PROMOTIONAL: "Promotional",
+  EVENT: "Event",
+  OTHER: "Other",
+};

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { DEFAULT_DIRECTORY_LOCALE, DIRECTORY_LOCALES, directoryHomePath, type DirectoryLocale } from "@/lib/directory-i18n";
-import type { FaqEntry } from "@/lib/directory";
+import type { FaqEntry, VideoEntry } from "@/lib/directory";
 
 // What every public directory page shares for search engines (SEO) and AI
 // answer engines (GEO) that isn't a translated UI string: the brand the
@@ -158,5 +158,30 @@ export function buildFaqJsonLd(faqs: FaqEntry[]): string {
       name: faq.question,
       acceptedAnswer: { "@type": "Answer", text: faq.answer },
     })),
+  });
+}
+
+// One VideoObject per video, its own <script> tag (Google's own examples
+// place several standalone VideoObject blocks this way, rather than one
+// array or an ItemList wrapper) — the SEO payoff is Google's video rich
+// result/carousel, the GEO one is an AI crawler being able to tell what
+// each embedded video actually is without having to load the iframe itself.
+// Deliberately has no uploadDate: this app never asks a partner for one,
+// and oEmbed doesn't reliably return one either, so making one up would be
+// wrong rather than merely incomplete — Google's rich-result eligibility
+// wants it, but a fabricated date is worse than an eligibility that never
+// triggers. thumbnailUrl is only ever included when fetchVideoOEmbed
+// actually found one (see VideoEntry) — omitted, never a placeholder, when
+// it didn't.
+export function buildVideoJsonLd(video: VideoEntry, embedUrl: string | null, companyName: string): string {
+  const name = video.title || companyName;
+  return serializeJsonLd({
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name,
+    description: video.title ? `${video.title} — ${companyName}` : companyName,
+    ...(video.thumbnailUrl ? { thumbnailUrl: [video.thumbnailUrl] } : {}),
+    contentUrl: video.url,
+    ...(embedUrl ? { embedUrl } : {}),
   });
 }

@@ -1,6 +1,6 @@
 import type { Industry } from "@/generated/prisma/client";
 import { BUSINESS_NAV_ITEMS } from "@/lib/business-nav-items";
-import { INDUSTRY_LABELS } from "@/lib/labels";
+import { INDUSTRY_LABELS, VIDEO_CATEGORY_LABELS, type VideoCategory } from "@/lib/labels";
 
 // Same three languages as the public /lead form (src/lib/lead-form-i18n.ts)
 // but kept as its own copy rather than shared — that file's locale type and
@@ -271,7 +271,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     servicesHeading: "Products & Services",
     relatedListingsHeading: "More businesses in {category}",
     aboutHeading: "About",
-    videoHeading: "Video",
+    videoHeading: "Videos",
     photosHeading: "Photos",
     updatesHeading: "News & Promotions",
     newsLabel: "News",
@@ -722,6 +722,31 @@ export const INDUSTRY_LABELS_BY_LOCALE: Record<DirectoryLocale, Record<Industry,
     FOOD_BEVERAGE: "Makanan & Minuman",
     LEGAL: "Undang-undang",
     MARKETING_ADVERTISING: "Pemasaran & Pengiklanan",
+    OTHER: "Lain-lain",
+  },
+};
+
+// Same reasoning as INDUSTRY_LABELS_BY_LOCALE just above: "en" reuses
+// VIDEO_CATEGORY_LABELS (src/lib/labels.ts) directly rather than duplicating
+// those strings a second time.
+export const VIDEO_CATEGORY_LABELS_BY_LOCALE: Record<DirectoryLocale, Record<VideoCategory, string>> = {
+  en: VIDEO_CATEGORY_LABELS,
+  zh: {
+    OVERVIEW: "概览",
+    TOUR: "导览",
+    PRODUCT_SERVICE: "产品/服务",
+    TESTIMONIAL: "客户评价",
+    PROMOTIONAL: "宣传",
+    EVENT: "活动",
+    OTHER: "其他",
+  },
+  ms: {
+    OVERVIEW: "Gambaran Keseluruhan",
+    TOUR: "Lawatan",
+    PRODUCT_SERVICE: "Produk/Perkhidmatan",
+    TESTIMONIAL: "Testimoni",
+    PROMOTIONAL: "Promosi",
+    EVENT: "Acara",
     OTHER: "Lain-lain",
   },
 };

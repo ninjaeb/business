@@ -28,6 +28,7 @@ import {
   parseFaqsJson,
   parseServicesJson,
   parseUpdatesJson,
+  parseVideosJson,
   servicesFromJson,
   slugify,
   translationsFromJson,
@@ -36,8 +37,10 @@ import {
   type ListingUpdateEntry,
   type OperatingHours,
   type ServiceEntry,
+  type VideoEntry,
 } from "@/lib/directory";
 import { notifyPartnerOfNewLead, sendDirectoryLeadReply } from "@/lib/directory-notify";
+import { fetchVideoOEmbed } from "@/lib/video-oembed";
 import {
   fetchPlacePhoto,
   getPlaceDetails,
@@ -176,7 +179,6 @@ const listingSchema = z.object({
     .optional()
     .refine((value) => !value || INDUSTRIES.includes(value as Industry), { message: "Invalid industry" }),
   website: z.string().trim().optional(),
-  videoUrl: z.string().trim().optional(),
   address: z.string().trim().optional(),
   state: z.string().trim().optional(),
   country: z.string().trim().optional(),
@@ -191,12 +193,12 @@ export type ListingFormValues = {
   services: ServiceEntry[];
   industry: string;
   website: string;
-  videoUrl: string;
   address: string;
   state: string;
   country: string;
   faqs: FaqEntry[];
   updates: ListingUpdateEntry[];
+  videos: VideoEntry[];
   categoryIds: string[];
   translations: ListingTranslations;
   seoTitle: string;
@@ -254,12 +256,12 @@ function extractListingFormValues(formData: FormData): ListingFormValues {
     services: parseServicesJson(stringField(formData, "services")),
     industry: stringField(formData, "industry"),
     website: stringField(formData, "website"),
-    videoUrl: stringField(formData, "videoUrl"),
     address: stringField(formData, "address"),
     state: stringField(formData, "state"),
     country: stringField(formData, "country"),
     faqs: parseFaqsJson(stringField(formData, "faqs")),
     updates: parseUpdatesJson(stringField(formData, "updates")),
+    videos: parseVideosJson(stringField(formData, "videos")),
     categoryIds: formData.getAll("categoryIds").filter((value): value is string => typeof value === "string"),
     translations: extractTranslations(formData),
     seoTitle: stringField(formData, "seoTitle"),
@@ -364,6 +366,19 @@ export async function rewriteListingDescription(
     : `${contextLines}\n\nWrite a thorough "About us" description for this company's partner directory listing, optimized for SEO and GEO, based only on the information above.`;
 
   return callAi(RewrittenTextSchema, LISTING_DESCRIPTION_SYSTEM_PROMPT, prompt);
+}
+
+export type VideoDetailsResult = { title: string | null; thumbnailUrl: string | null };
+
+// Partner-gated — called when a partner adds a video URL to the gallery
+// (see VideosEditor), so its title/thumbnail can be suggested and stored
+// right away rather than the public page ever calling out to YouTube/
+// Vimeo/etc. itself. Best-effort: a host this can't reach (Facebook, or any
+// failed/timed-out lookup) just comes back empty — see fetchVideoOEmbed.
+export async function fetchVideoDetails(url: string): Promise<VideoDetailsResult> {
+  await requirePartnerAction();
+  const result = await fetchVideoOEmbed(url);
+  return result ?? { title: null, thumbnailUrl: null };
 }
 
 const ServiceListSchema = z.object({
@@ -896,13 +911,13 @@ async function saveListingFields(
         services: parseServicesJson(stringField(formData, "services")),
         industry: (parsed.data.industry || null) as Industry | null,
         website: parsed.data.website ? normalizeWebsiteUrl(parsed.data.website) : null,
-        videoUrl: parsed.data.videoUrl ? normalizeWebsiteUrl(parsed.data.videoUrl) : null,
         address: parsed.data.address || null,
         state: parsed.data.state || null,
         country: parsed.data.country || null,
         operatingHours: parseOperatingHoursFormData(formData),
         faqs: parseFaqsJson(stringField(formData, "faqs")),
         updates: parseUpdatesJson(stringField(formData, "updates")),
+        videos: parseVideosJson(stringField(formData, "videos")),
         translations: extractTranslations(formData),
         seoTitle: parsed.data.seoTitle || null,
         seoDescription: parsed.data.seoDescription || null,
