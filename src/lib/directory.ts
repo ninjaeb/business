@@ -184,7 +184,11 @@ export function toEmbeddableVideoUrl(rawUrl: string): { embedUrl: string; provid
             : url.pathname.startsWith("/embed/")
               ? url.pathname.slice(7)
               : null;
-    return id ? { embedUrl: `https://www.youtube.com/embed/${id}`, provider } : null;
+    // youtube-nocookie.com, not youtube.com: the privacy-enhanced embed
+    // domain skips the session/cookie handshake that otherwise triggers
+    // YouTube's "Sign in to confirm you're not a bot" overlay inside the
+    // iframe on some videos/networks.
+    return id ? { embedUrl: `https://www.youtube-nocookie.com/embed/${id}`, provider } : null;
   }
   if (provider === "vimeo") {
     const id = url.pathname.slice(1).split("/")[0];
