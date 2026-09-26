@@ -9,7 +9,7 @@ import { directoryListingPath } from "@/lib/directory-i18n";
 import { isAiConfigured } from "@/lib/ai/client";
 import { isGooglePlacesConfigured } from "@/lib/google-places";
 import { PageHeader } from "@/components/ui/page-header";
-import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardBody } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { PartnerListingForm } from "@/components/directory/partner-listing-form";
 import { PARTNER_LISTING_STATUS_BADGE_CLASSES, PARTNER_LISTING_STATUS_LABELS } from "@/lib/labels";

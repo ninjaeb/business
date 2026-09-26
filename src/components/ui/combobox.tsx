@@ -82,9 +82,15 @@ export function Combobox({
       .slice(0, MAX_VISIBLE_OPTIONS);
   }, [options, query]);
 
-  useEffect(() => {
+  // Resets the highlighted row whenever the query or open state changes —
+  // adjusted during render (React's recommended pattern for state derived
+  // from another value) rather than in an effect, which would cause an
+  // extra render pass on every keystroke/open.
+  const [prevQueryOpen, setPrevQueryOpen] = useState<[string, boolean]>([query, open]);
+  if (prevQueryOpen[0] !== query || prevQueryOpen[1] !== open) {
+    setPrevQueryOpen([query, open]);
     setHighlightedIndex(0);
-  }, [query, open]);
+  }
 
   // Native form.reset() (quick-add forms that reset after submit) won't
   // touch our React state on its own — sync it back explicitly, same

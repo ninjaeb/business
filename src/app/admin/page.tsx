@@ -200,7 +200,7 @@ export default async function AdminDirectoryPage() {
                 rel="noopener noreferrer"
                 className="text-indigo-600 hover:underline dark:text-indigo-400"
               >
-                the business directory's sign-up page
+                the business directory&apos;s sign-up page
               </Link>
               .
             </p>
