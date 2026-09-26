@@ -52,20 +52,23 @@ const LANGUAGE_TABS: { code: EditorTab; label: string }[] = [
   { code: "ms", label: "BM" },
 ];
 
-type EditorSection = "details" | "services" | "updates" | "media";
+type EditorSection = "details" | "services" | "faq" | "updates" | "media";
 
 // A second, independent tab switch from the language one above — this one
 // picks which section of the editor is visible at all (Business Details vs.
-// Products & Services vs. News & Promotions vs. Photos and Videos), not
-// which language's translatable fields are shown within it. Photos and
+// Products & Services vs. FAQ vs. News & Promotions vs. Photos and Videos),
+// not which language's translatable fields are shown within it. Photos and
 // Videos aren't translated (media has no text of its own to translate), so
-// it has no reason to share the language tabs' state — but the other three
+// it has no reason to share the language tabs' state — but the other four
 // sections do, and each renders its own copy of that language switcher
 // (see languageSwitcher below) since only one section is ever visible at
-// a time.
+// a time. FAQ sits right after Products & Services (rather than off with
+// News & Promotions/Media) since it used to live right beside it, in the
+// same section, before getting its own tab.
 const SECTION_TABS: { value: EditorSection; label: string }[] = [
   { value: "details", label: "Business Details" },
   { value: "services", label: "Products & Services" },
+  { value: "faq", label: "FAQ" },
   { value: "updates", label: "News & Promotions" },
   { value: "media", label: "Photos and Videos" },
 ];
@@ -446,12 +449,12 @@ export function PartnerListingForm({
   }
 
   // Rendered once per section that has per-language fields (Business
-  // Details, Products & Services, and News & Promotions, below) — never
-  // more than one at once, since only one section is visible at a time,
-  // but each needs its own copy since only one of the three ever renders.
-  // Translate with AI always translates everything (tagline, about,
-  // services, FAQ, and News/Promotions posts) in one go regardless of
-  // which section it's clicked from — see handleTranslate.
+  // Details, Products & Services, FAQ, and News & Promotions, below) —
+  // never more than one at once, since only one section is visible at a
+  // time, but each needs its own copy since only one of the four ever
+  // renders. Translate with AI always translates everything (tagline,
+  // about, services, FAQ, and News/Promotions posts) in one go regardless
+  // of which section it's clicked from — see handleTranslate.
   const languageSwitcher = (
     <div className="flex flex-wrap items-center gap-2 rounded-md border border-slate-200 p-2 dark:border-neutral-800">
       <div className="inline-flex rounded-md bg-slate-100 p-0.5 dark:bg-neutral-800">
@@ -915,84 +918,92 @@ export function PartnerListingForm({
 
       {languageSwitcher}
       <p className="-mt-3 text-xs text-slate-400">
-        Products &amp; services and FAQ are per-language — switch tabs to edit each, or use Translate with AI to
-        fill in Chinese and Malay from your English content.
+        Products &amp; services are per-language — switch tabs to edit each, or use Translate with AI to fill in
+        Chinese and Malay from your English content.
       </p>
 
-      <div className="grid gap-4 sm:grid-cols-2">
-        <div>
-          <div className="mb-1.5 flex items-center justify-between gap-2">
-            <Label className="mb-0">
-              Products &amp; services
-              <RequiredMark />
-            </Label>
-            {aiAvailable && activeTab === "en" && (
-              <button
-                type="button"
-                onClick={handleRewriteServices}
-                disabled={rewritingServices}
-                className={buttonClasses("ghost", "sm", "shrink-0")}
-              >
-                <Sparkles className="h-3.5 w-3.5" />
-                {rewritingServices ? "Rewriting…" : "Rewrite with AI"}
-              </button>
-            )}
-          </div>
-          <div hidden={activeTab !== "en"}>
-            <ServicesEditor name="services" value={services} onChange={setServices} />
-          </div>
-          <div hidden={activeTab !== "zh"}>
-            <ServicesEditor
-              name="zhServices"
-              value={translations.zh?.services ?? []}
-              onChange={(value) => updateTranslatedServices("zh", value)}
-            />
-          </div>
-          <div hidden={activeTab !== "ms"}>
-            <ServicesEditor
-              name="msServices"
-              value={translations.ms?.services ?? []}
-              onChange={(value) => updateTranslatedServices("ms", value)}
-            />
-          </div>
-          {servicesError ? (
-            <p className="mt-1 text-sm text-rose-600 dark:text-rose-400">{servicesError}</p>
-          ) : (
-            <p className="mt-1 text-xs text-slate-400">
-              A title, an optional description, and an optional price for each — shown on your listing. At least one
-              is required (in English) before you can submit for review.
-            </p>
+      <div>
+        <div className="mb-1.5 flex items-center justify-between gap-2">
+          <Label className="mb-0">
+            Products &amp; services
+            <RequiredMark />
+          </Label>
+          {aiAvailable && activeTab === "en" && (
+            <button
+              type="button"
+              onClick={handleRewriteServices}
+              disabled={rewritingServices}
+              className={buttonClasses("ghost", "sm", "shrink-0")}
+            >
+              <Sparkles className="h-3.5 w-3.5" />
+              {rewritingServices ? "Rewriting…" : "Rewrite with AI"}
+            </button>
           )}
         </div>
-
-        <div>
-          <div className="mb-1.5 flex items-center justify-between gap-2">
-            <Label className="mb-0">FAQ</Label>
-            {aiAvailable && activeTab === "en" && (
-              <button
-                type="button"
-                onClick={handleGenerateFaqs}
-                disabled={generatingFaqs}
-                className={buttonClasses("ghost", "sm", "shrink-0")}
-              >
-                <Sparkles className="h-3.5 w-3.5" />
-                {generatingFaqs ? "Generating…" : "Generate with AI"}
-              </button>
-            )}
-          </div>
-          <div hidden={activeTab !== "en"}>
-            <FaqEditor name="faqs" value={faqs} onChange={setFaqs} />
-          </div>
-          <div hidden={activeTab !== "zh"}>
-            <FaqEditor name="zhFaqs" value={translations.zh?.faqs ?? []} onChange={(value) => updateTranslatedFaqs("zh", value)} />
-          </div>
-          <div hidden={activeTab !== "ms"}>
-            <FaqEditor name="msFaqs" value={translations.ms?.faqs ?? []} onChange={(value) => updateTranslatedFaqs("ms", value)} />
-          </div>
-          <p className="mt-1 text-xs text-slate-400">
-            Optional — shown on your listing as a Q&amp;A section, and helps your page surface in AI search answers.
-          </p>
+        <div hidden={activeTab !== "en"}>
+          <ServicesEditor name="services" value={services} onChange={setServices} />
         </div>
+        <div hidden={activeTab !== "zh"}>
+          <ServicesEditor
+            name="zhServices"
+            value={translations.zh?.services ?? []}
+            onChange={(value) => updateTranslatedServices("zh", value)}
+          />
+        </div>
+        <div hidden={activeTab !== "ms"}>
+          <ServicesEditor
+            name="msServices"
+            value={translations.ms?.services ?? []}
+            onChange={(value) => updateTranslatedServices("ms", value)}
+          />
+        </div>
+        {servicesError ? (
+          <p className="mt-1 text-sm text-rose-600 dark:text-rose-400">{servicesError}</p>
+        ) : (
+          <p className="mt-1 text-xs text-slate-400">
+            A title, an optional description, and an optional price for each — shown on your listing. At least one
+            is required (in English) before you can submit for review.
+          </p>
+        )}
+      </div>
+
+      </div>
+
+      <div className={cn("space-y-5", activeSection !== "faq" && "hidden")}>
+
+      {languageSwitcher}
+      <p className="-mt-3 text-xs text-slate-400">
+        FAQ is per-language — switch tabs to edit each, or use Translate with AI to fill in Chinese and Malay from
+        your English content.
+      </p>
+
+      <div>
+        <div className="mb-1.5 flex items-center justify-between gap-2">
+          <Label className="mb-0">FAQ</Label>
+          {aiAvailable && activeTab === "en" && (
+            <button
+              type="button"
+              onClick={handleGenerateFaqs}
+              disabled={generatingFaqs}
+              className={buttonClasses("ghost", "sm", "shrink-0")}
+            >
+              <Sparkles className="h-3.5 w-3.5" />
+              {generatingFaqs ? "Generating…" : "Generate with AI"}
+            </button>
+          )}
+        </div>
+        <div hidden={activeTab !== "en"}>
+          <FaqEditor name="faqs" value={faqs} onChange={setFaqs} />
+        </div>
+        <div hidden={activeTab !== "zh"}>
+          <FaqEditor name="zhFaqs" value={translations.zh?.faqs ?? []} onChange={(value) => updateTranslatedFaqs("zh", value)} />
+        </div>
+        <div hidden={activeTab !== "ms"}>
+          <FaqEditor name="msFaqs" value={translations.ms?.faqs ?? []} onChange={(value) => updateTranslatedFaqs("ms", value)} />
+        </div>
+        <p className="mt-1 text-xs text-slate-400">
+          Optional — shown on your listing as a Q&amp;A section, and helps your page surface in AI search answers.
+        </p>
       </div>
 
       </div>
