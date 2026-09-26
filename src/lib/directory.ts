@@ -7,6 +7,7 @@ import { translateCategoryName } from "@/lib/directory-category-labels";
 import { organizationJsonLdId, serializeJsonLd, websiteJsonLdId } from "@/lib/directory-seo";
 import { VIDEO_CATEGORIES, type VideoCategory } from "@/lib/labels";
 import { stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
+import type { DirectorySearchIndex } from "@/lib/directory-search";
 
 // Re-exported for existing server-side imports (actions, pages) that
 // already pull these from "@/lib/directory" — but a "use client" component
@@ -866,102 +867,90 @@ export async function loadLatestListingUpdates(limit = MAX_LATEST_UPDATES): Prom
   return entries;
 }
 
-// The header search bar's live dropdown (see HeaderSearch and the
-// searchDirectory server action) — up to a handful of matches in each of
-// three groups (business, products & services, news & promotions) for one
-// query, case-insensitive substring matching against the same fields
-// DirectorySearch's own free-text filter already uses. One
-// loadPublishedListings call backs all three groups, same as
-// loadLatestProducts/loadLatestListingUpdates above, since products/updates
-// are already just per-listing arrays inside that same snapshot. This is a
-// dropdown of suggestions, not the authoritative filter — the "see all
-// results" link below it re-runs the real thing (DirectorySearch, on the
-// home page) rather than this trying to match its translated-category
-// matching exactly.
-export type DirectorySearchListingHit = {
-  slug: string;
-  companyName: string;
-  tagline: string | null;
-  logoUrl: string | null;
-  industryLabel: string | null;
-};
-export type DirectorySearchProductHit = {
-  listingSlug: string;
-  companyName: string;
-  logoUrl: string | null;
-  title: string;
-  description: string;
-};
-export type DirectorySearchUpdateHit = {
-  listingSlug: string;
-  companyName: string;
-  logoUrl: string | null;
-  kind: ListingUpdateKind;
-  title: string;
-};
-export type DirectorySearchSuggestions = {
-  businesses: DirectorySearchListingHit[];
-  products: DirectorySearchProductHit[];
-  updates: DirectorySearchUpdateHit[];
-};
-
-const MAX_SEARCH_SUGGESTIONS_PER_GROUP = 5;
-
-export async function searchDirectorySuggestions(query: string, locale: DirectoryLocale): Promise<DirectorySearchSuggestions> {
-  const q = query.trim().toLowerCase();
-  const empty: DirectorySearchSuggestions = { businesses: [], products: [], updates: [] };
-  if (!q) return empty;
-
-  const rows = await loadPublishedListings();
+// The header search bar's searchable index (see HeaderSearch and the
+// fetchDirectorySearchIndex server action) — every published listing,
+// reduced to just the text a search matches against and the few fields a
+// result row shows, with each haystack already lowercased plain text so
+// the browser-side filter (searchDirectoryIndex in directory-search.ts) is
+// a bare substring check per keystroke.
+//
+// Deliberately not loadPublishedListings: the snapshot's logoUrl is the
+// whole logo image as a base64 data: URL (see PartnerListing.logoUrl in
+// schema.prisma), so that query drags every listing's logo — megabytes,
+// across the wire and through JSON.parse — into a read that then throws
+// them all away. The `- 'logoUrl'` here drops that key inside Postgres
+// instead, before the row ever leaves it; the separate boolean keeps just
+// the one fact a result row needs (whether there's a logo at all, so
+// listingLogoPath can point at it). Same reason this isn't queried per
+// keystroke either: it's fetched once per visit, on first focus, and
+// searched locally from then on.
+export async function loadDirectorySearchIndex(locale: DirectoryLocale): Promise<DirectorySearchIndex> {
+  const rows = await db.$queryRaw<{ slug: string; publishedAt: Date | null; snapshot: unknown; hasLogo: boolean }[]>`
+    SELECT
+      "slug",
+      "publishedAt",
+      "publishedSnapshot" - 'logoUrl' AS "snapshot",
+      jsonb_typeof("publishedSnapshot" -> 'logoUrl') = 'string' AS "hasLogo"
+    FROM "PartnerListing"
+    WHERE "publishedSnapshot" IS NOT NULL
+    ORDER BY "publishedAt" DESC
+  `;
   const industryLabels = INDUSTRY_LABELS_BY_LOCALE[locale];
   const today = new Date().toISOString().slice(0, 10);
-  const businesses: DirectorySearchListingHit[] = [];
-  const products: DirectorySearchProductHit[] = [];
-  const updates: DirectorySearchUpdateHit[] = [];
+  const index: DirectorySearchIndex = [];
 
-  for (const { slug, publishedAt, listing } of rows) {
-    if (businesses.length >= MAX_SEARCH_SUGGESTIONS_PER_GROUP && products.length >= MAX_SEARCH_SUGGESTIONS_PER_GROUP && updates.length >= MAX_SEARCH_SUGGESTIONS_PER_GROUP) {
-      break;
-    }
-
+  for (const row of rows) {
+    // The pg adapter hands jsonb back already parsed, but a driver that
+    // returned it as text would otherwise make every row read as
+    // unpublished (readPublishedSnapshot rejects non-objects) — so accept
+    // either.
+    const listing = readPublishedSnapshot(typeof row.snapshot === "string" ? JSON.parse(row.snapshot) : row.snapshot);
+    if (!listing) continue;
+    // Same fallback rule as toDirectoryGridListing: a translation only
+    // stands in for the field it actually covers; the company name is never
+    // translated.
     const translation = locale === "en" ? undefined : listing.translations[locale];
-    const companyName = listing.companyName;
-    const logoUrl = listing.logoUrl ? listingLogoPath(slug, publishedAt) : null;
+    const tagline = translation?.tagline || listing.tagline || null;
     const industryLabel = listing.industry ? industryLabels[listing.industry] : null;
-
-    if (businesses.length < MAX_SEARCH_SUGGESTIONS_PER_GROUP) {
-      const tagline = translation?.tagline || listing.tagline;
-      const description = stripMarkdownLiteToPlainText(translation?.description || listing.description);
-      const matches =
-        companyName.toLowerCase().includes(q) ||
-        (tagline?.toLowerCase().includes(q) ?? false) ||
-        description.toLowerCase().includes(q) ||
-        (industryLabel?.toLowerCase().includes(q) ?? false) ||
-        listing.categories.some((cat) => cat.toLowerCase().includes(q) || translateCategoryName(cat, locale).toLowerCase().includes(q));
-      if (matches) businesses.push({ slug, companyName, tagline: tagline || null, logoUrl, industryLabel });
-    }
-
     const services = translation?.services.length ? translation.services : listing.services;
-    for (const service of services) {
-      if (products.length >= MAX_SEARCH_SUGGESTIONS_PER_GROUP) break;
-      if (service.title.toLowerCase().includes(q) || service.description.toLowerCase().includes(q)) {
-        products.push({ listingSlug: slug, companyName, logoUrl, title: service.title, description: service.description });
-      }
-    }
+    const publishedAt = row.publishedAt ? new Date(row.publishedAt) : null;
 
-    // Never translated (see ListingUpdateEntry's own comment) — matched in
-    // whatever language a partner actually wrote it in, same as
-    // loadLatestListingUpdates above.
-    for (const update of listing.updates) {
-      if (updates.length >= MAX_SEARCH_SUGGESTIONS_PER_GROUP) break;
-      if (!isUpdateCurrent(update, today)) continue;
-      if (update.title.toLowerCase().includes(q) || stripMarkdownLiteToPlainText(update.body).toLowerCase().includes(q)) {
-        updates.push({ listingSlug: slug, companyName, logoUrl, kind: update.kind, title: update.title });
-      }
-    }
+    index.push({
+      slug: row.slug,
+      companyName: listing.companyName,
+      tagline,
+      industryLabel,
+      logoUrl: row.hasLogo ? listingLogoPath(row.slug, publishedAt) : null,
+      haystack: [
+        listing.companyName,
+        tagline,
+        stripMarkdownLiteToPlainText(translation?.description || listing.description),
+        industryLabel,
+        // Both the stored English name and its translation, so a visitor
+        // typing in either language finds it.
+        ...listing.categories.flatMap((cat) => [cat, translateCategoryName(cat, locale)]),
+      ]
+        .filter(Boolean)
+        .join("\n")
+        .toLowerCase(),
+      services: services.map((service) => ({
+        title: service.title,
+        haystack: `${service.title}\n${service.description}`.toLowerCase(),
+      })),
+      // Never translated (see ListingUpdateEntry's own comment) — matched
+      // in whatever language a partner actually wrote it in, and only while
+      // still current, same as loadLatestListingUpdates above.
+      updates: listing.updates
+        .filter((update) => isUpdateCurrent(update, today))
+        .map((update) => ({
+          kind: update.kind,
+          title: update.title,
+          haystack: `${update.title}\n${stripMarkdownLiteToPlainText(update.body)}`.toLowerCase(),
+        })),
+    });
   }
 
-  return { businesses, products, updates };
+  return index;
 }
 
 // A "Visit website" link needs a real absolute URL, not just a bare domain
