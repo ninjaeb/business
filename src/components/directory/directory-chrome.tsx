@@ -101,13 +101,14 @@ export async function DirectoryChrome({
               {t.brandName}
             </span>
           </Link>
-          {/* Inline on lg+ screens, pushed flush against the language/
+          {/* Inline on lg+ screens only, pushed flush against the language/
               theme/menu group on the right (ml-auto) rather than hugging
               the logo — the free space this leaves next to the logo reads
               better than free space stranded between the nav and that
-              group. The second, bordered row below the header (also
-              DirectoryTopNav, hidden at this breakpoint) takes over below
-              lg instead, full-width there since it has its own row. */}
+              group. Below lg there's no second row for these to spill into
+              anymore (that used to overflow into a cramped horizontal
+              scroll bar of its own) — DirectoryNavMenu's own hamburger
+              carries the same four links at that width instead. */}
           <DirectoryTopNav navLabel={t.topNavLabel} items={topNavItems} className="ml-auto hidden lg:flex" />
           <div className="flex shrink-0 items-center gap-1">
             {/* useSearchParams() (see directory-language-switcher.tsx, for
@@ -139,6 +140,7 @@ export async function DirectoryChrome({
               myBusinessLabel={t.navMyBusiness}
               addBusinessLabel={t.navAddBusiness}
               businessNavItems={localizedBusinessNavItems(locale)}
+              topNavItems={topNavItems}
               signOutLabel={t.navSignOut}
               directoryHref={directoryHref}
               signupHref={signupHref}
@@ -146,11 +148,6 @@ export async function DirectoryChrome({
             />
           </div>
         </div>
-        <DirectoryTopNav
-          navLabel={t.topNavLabel}
-          items={topNavItems}
-          className="border-t border-slate-100 px-4 py-2 dark:border-neutral-800 sm:px-8 lg:hidden"
-        />
       </header>
 
       <main className="flex-1">{children}</main>
