@@ -88,6 +88,7 @@ export function DirectorySearch({
       const industryLabel = listing.industry ? industryLabels[listing.industry] : undefined;
       return (
         listing.companyName.toLowerCase().includes(q) ||
+        listing.description.toLowerCase().includes(q) ||
         listing.services.some(
           (service) => service.title.toLowerCase().includes(q) || service.description.toLowerCase().includes(q),
         ) ||
