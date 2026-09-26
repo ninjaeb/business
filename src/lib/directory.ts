@@ -844,6 +844,17 @@ export function countListingsByCategory(rows: { listing: Pick<PublishedListingSn
   return counts;
 }
 
+// The top few category names among a set of rows, most-common first — used
+// by locationPageDescription (directory-location-labels.ts) to say what a
+// location's businesses actually do instead of a generic "browse trusted
+// businesses" line.
+export function topCategoryNames(rows: { listing: Pick<PublishedListingSnapshot, "categories"> }[], limit = 3): string[] {
+  return [...countListingsByCategory(rows).entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, limit)
+    .map(([name]) => name);
+}
+
 // One entry per distinct city+state a published listing carries — the
 // location-page counterpart of countListingsByCategory above, grouped
 // finer than state alone so a page for "Petaling Jaya, Selangor" doesn't
