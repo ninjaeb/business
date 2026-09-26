@@ -674,15 +674,6 @@ export function PartnerListingForm({
         )}
       </div>
 
-      <div>
-        <Label className="mb-1.5">Videos</Label>
-        <VideosEditor name="videos" value={videos} onChange={setVideos} />
-        <p className="mt-1 text-xs text-slate-400">
-          Up to 12 — YouTube, Vimeo, Dailymotion, Facebook, or TikTok links, each with a title and category. Shown
-          on your listing as a gallery, optimized for search and AI answer engines.
-        </p>
-      </div>
-
       <div className="grid gap-4 sm:grid-cols-2">
         <FieldGroup label="Industry" htmlFor="industry">
           <Select
@@ -911,29 +902,41 @@ export function PartnerListingForm({
         </div>
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-2">
-        <div>
-          <Label className="mb-1.5">Photos</Label>
-          <ListingPhotosEditor listingId={listingId} initialPhotos={photos} />
-          <p className="mt-1 text-xs text-slate-400">
-            Up to 12 — added to your gallery right away, but only shown publicly once you save and the listing is
-            (re)approved, same as everything else here.
-          </p>
-        </div>
-
-        <div>
-          <Label className="mb-1.5">News &amp; Promotions</Label>
-          <div hidden={activeTab !== "en"}>
-            <UpdatesEditor name="updates" value={updates} onChange={setUpdates} />
+      <div>
+        <Label className="mb-1.5">Media</Label>
+        <div className="grid gap-4 sm:grid-cols-2">
+          <div>
+            <p className="mb-1.5 text-xs font-medium text-slate-500 dark:text-slate-400">Videos</p>
+            <VideosEditor name="videos" value={videos} onChange={setVideos} />
+            <p className="mt-1 text-xs text-slate-400">
+              Up to 12 — YouTube, Vimeo, Dailymotion, Facebook, or TikTok links, each with a title and category.
+              Optimized for search and AI answer engines.
+            </p>
           </div>
-          {activeTab !== "en" && (
-            <p className="text-sm text-slate-400">News &amp; Promotions aren&apos;t translated — switch to EN to edit.</p>
-          )}
-          <p className="mt-1 text-xs text-slate-400">
-            Optional — shown on your listing in a News &amp; Promotions section. A promotion disappears on its own
-            once its end date passes.
-          </p>
+
+          <div>
+            <p className="mb-1.5 text-xs font-medium text-slate-500 dark:text-slate-400">Photos</p>
+            <ListingPhotosEditor listingId={listingId} initialPhotos={photos} />
+            <p className="mt-1 text-xs text-slate-400">
+              Up to 12 — added to your gallery right away, but only shown publicly once you save and the listing is
+              (re)approved, same as everything else here.
+            </p>
+          </div>
         </div>
+      </div>
+
+      <div>
+        <Label className="mb-1.5">News &amp; Promotions</Label>
+        <div hidden={activeTab !== "en"}>
+          <UpdatesEditor name="updates" value={updates} onChange={setUpdates} />
+        </div>
+        {activeTab !== "en" && (
+          <p className="text-sm text-slate-400">News &amp; Promotions aren&apos;t translated — switch to EN to edit.</p>
+        )}
+        <p className="mt-1 text-xs text-slate-400">
+          Optional — shown on your listing in a News &amp; Promotions section. A promotion disappears on its own
+          once its end date passes.
+        </p>
       </div>
 
       {generalError && <p className="text-sm text-rose-600 dark:text-rose-400">{generalError}</p>}
