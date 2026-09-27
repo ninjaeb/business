@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import Link from "next/link";
-import { ExternalLink, Eye, Megaphone, Plus, Store } from "lucide-react";
-import { createListingAction } from "@/app/actions/directory";
+import { ExternalLink, Eye, Megaphone, Plus, Store, Trash2 } from "lucide-react";
+import { createListingAction, deleteListingAction } from "@/app/actions/directory";
 import { isUpdateCurrent, listPartnerListings, listingViewCountBreakdown, readPublishedSnapshot } from "@/lib/directory";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { getSiteOrigin } from "@/lib/site-url";
@@ -10,6 +10,7 @@ import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button, buttonClasses } from "@/components/ui/button";
+import { ConfirmSubmitButton } from "@/components/ui/confirm-submit-button";
 import { EmptyState } from "@/components/ui/empty-state";
 import { ListingLogo } from "@/components/directory/listing-logo";
 import { PARTNER_LISTING_STATUS_BADGE_CLASSES, PARTNER_LISTING_STATUS_LABELS } from "@/lib/labels";
@@ -92,6 +93,22 @@ export default async function PartnerListingsPage() {
                     >
                       Edit
                     </Link>
+                    {/* Never-published drafts only — !publicUrl is the
+                        same "no publishedSnapshot yet" check
+                        deleteListingAction itself makes: a listing that's
+                        been live before keeps its last snapshot (and
+                        tracked views) public even after an edit reverts its
+                        status back to DRAFT pending re-approval, so status
+                        alone isn't enough to tell "never published" apart
+                        from "published, now mid-edit". */}
+                    {listing.status === "DRAFT" && !publicUrl && (
+                      <form action={deleteListingAction.bind(null, listing.id)}>
+                        <ConfirmSubmitButton confirmMessage={`Delete the draft "${listing.companyName}"? This can't be undone.`}>
+                          <Trash2 className="h-3.5 w-3.5" />
+                          Delete
+                        </ConfirmSubmitButton>
+                      </form>
+                    )}
                     {publicUrl && (
                       <Link
                         href={publicUrl}
