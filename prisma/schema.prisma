@@ -132,6 +132,11 @@ model PartnerDeal {
 
   tasks PartnerTask[]
 
+  // The directory lead(s) this deal was created from, if any — see
+  // DirectoryLead.convertedDeal above. A deal created directly in the CRM
+  // (not via a lead conversion) simply has none.
+  convertedFromLeads DirectoryLead[]
+
   @@index([partnerId])
   @@index([companyId])
   @@index([contactId])
@@ -376,14 +381,16 @@ model DirectoryListingImage {
 }
 
 // Declared in workflow order so the partner-facing status picker can list
-// them as-is.
+// them as-is. Picking "Qualified Deal" in that picker (see
+// DirectoryLeadStatusSelect/convertDirectoryLeadToDeal) creates a
+// PartnerDeal from this lead's own name/email/phone/company and moves it
+// straight to CLOSED_CONVERTED — there's no persisted QUALIFIED_DEAL value
+// to land on in between.
 enum DirectoryLeadStatus {
   NEW
   PICKED_UP
   CONTACTED
-  QUOTED
-  WON
-  LOST
+  CLOSED_CONVERTED
 }
 
 model DirectoryLead {
@@ -431,11 +438,20 @@ model DirectoryLead {
   listing   PartnerListing @relation(fields: [listingId], references: [id], onDelete: Cascade)
   listingId String
 
+  // Set once, by convertDirectoryLeadToDeal, the moment this lead is
+  // qualified — a plain link back to the CRM record it turned into, so its
+  // own page can offer a "View deal" link rather than leaving a partner to
+  // go find it. SetNull (not Cascade): deleting the deal later shouldn't
+  // take this lead's own history with it.
+  convertedDeal   PartnerDeal? @relation(fields: [convertedDealId], references: [id], onDelete: SetNull)
+  convertedDealId String?
+
   replies DirectoryLeadReply[]
 
   @@index([listingId, status])
   @@index([createdAt])
   @@index([referrerId])
+  @@index([convertedDealId])
 }
 
 // author is always the partner user replying from the business portal —

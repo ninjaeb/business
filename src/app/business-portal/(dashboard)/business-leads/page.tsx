@@ -44,8 +44,8 @@ export default async function PartnerDirectoryLeadsPage() {
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
         <StatCard label="New" value={stats.new.toString()} icon={Inbox} accent="sky" />
         <StatCard label="Open" value={stats.open.toString()} icon={Handshake} accent="amber" />
-        <StatCard label="Won" value={stats.won.toString()} icon={Trophy} accent="emerald" />
-        <StatCard label="Won value" value={formatCurrencyExact(stats.wonValue, currency)} icon={Wallet} accent="indigo" />
+        <StatCard label="Converted" value={stats.converted.toString()} icon={Trophy} accent="emerald" />
+        <StatCard label="Converted value" value={formatCurrencyExact(stats.convertedValue, currency)} icon={Wallet} accent="indigo" />
         <StatCard label="Referred" value={stats.referred.toString()} description="Via your Recommend link" icon={ThumbsUp} accent="orange" />
       </div>
 
