@@ -85,6 +85,16 @@ export function DirectoryLeadForm({ slug, locale }: { slug: string; locale: Dire
         name="r"
         value={typeof window !== "undefined" ? new URLSearchParams(window.location.search).get("r") ?? "" : ""}
       />
+      {/* Only present on a signed-in partner's own personalized copy of the
+          Recommend link (see recommendUrl's `via` tag) — the referring
+          partner's own User.id, checked by submitDirectoryLead the same
+          way `r` is: real input, trusted no further than "does this name
+          an actual PARTNER account." */}
+      <input
+        type="hidden"
+        name="via"
+        value={typeof window !== "undefined" ? new URLSearchParams(window.location.search).get("via") ?? "" : ""}
+      />
 
       <div className="grid gap-4 sm:grid-cols-2">
         <FieldGroup label={t.formNameLabel} htmlFor="directory-name" required>

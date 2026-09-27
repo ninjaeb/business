@@ -31,6 +31,12 @@ model User {
   partnerListings      PartnerListing[]
   directoryLeadReplies DirectoryLeadReply[]
 
+  // Leads/views attributed to this partner's own Recommend link for
+  // someone else's (or their own) listing — see DirectoryLead.referrerId
+  // and ListingReferralView.
+  referredDirectoryLeads DirectoryLead[]
+  listingReferralViews   ListingReferralView[]
+
   // Business-portal CRM — see the models below.
   partnerCompanies     PartnerCompany[]
   partnerContacts      PartnerContact[]
@@ -299,15 +305,22 @@ model PartnerListing {
   viewCountZh Int @default(0)
   viewCountMs Int @default(0)
 
+  // Lets a listing opt into showing the total value of its own WON leads
+  // to whoever referred them (see DirectoryLead.referrerId) — off by
+  // default, since a deal's value is otherwise only ever shown to the
+  // listing's own owner (see getDirectoryLeadStatsForPartner's wonValue).
+  shareWonValueWithReferrers Boolean @default(false)
+
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
   partner   User   @relation(fields: [partnerId], references: [id], onDelete: Cascade)
   partnerId String
 
-  leads      DirectoryLead[]
-  images     DirectoryListingImage[]
-  categories PartnerListingCategory[]
+  leads         DirectoryLead[]
+  images        DirectoryListingImage[]
+  categories    PartnerListingCategory[]
+  referralViews ListingReferralView[]
 
   @@index([status])
   @@index([partnerId])
@@ -392,9 +405,9 @@ model DirectoryLead {
   createdAt      DateTime  @default(now())
   updatedAt      DateTime  @updatedAt
 
-  // Set from the `r=<listing id>` query param the listing page's own
+  // Set from the `r=<referral code>` query param the listing page's own
   // Recommend button appends to its share link (see recommendUrl in
-  // src/app/[locale]/[slug]/page.tsx) — true when this lead arrived
+  // src/app/[locale]/[slug]/layout.tsx) — true when this lead arrived
   // through that link AND `r` names this exact listing (checked in
   // submitDirectoryLead, which is also where the value is carried in,
   // via a hidden form field — see directory-lead-form.tsx — rather than
@@ -403,6 +416,17 @@ model DirectoryLead {
   // this is specifically "referred", not "arrived with any query string".
   viaReferral Boolean @default(false)
 
+  // The signed-in partner who shared the Recommend link this lead arrived
+  // through, if any (see the link's own `via=<User.id>` companion param,
+  // added alongside `r` only when the sharer was signed in). Always a
+  // strict subset of viaReferral leads — never set on a lead that isn't
+  // also viaReferral, and never trusted beyond "this really is a PARTNER
+  // account" (see submitDirectoryLead). SetNull rather than Cascade: this
+  // lead is the listing owner's own business record and outlives the
+  // referring partner's account.
+  referrer   User?   @relation(fields: [referrerId], references: [id], onDelete: SetNull)
+  referrerId String?
+
   listing   PartnerListing @relation(fields: [listingId], references: [id], onDelete: Cascade)
   listingId String
 
@@ -410,6 +434,7 @@ model DirectoryLead {
 
   @@index([listingId, status])
   @@index([createdAt])
+  @@index([referrerId])
 }
 
 // author is always the partner user replying from the business portal —
@@ -428,6 +453,30 @@ model DirectoryLeadReply {
   authorId String
 
   @@index([leadId])
+}
+
+// How many times a specific signed-in partner's own copy of a listing's
+// Recommend link (see the `via=<User.id>` param described on
+// DirectoryLead.referrerId) has been opened — one row per (listing,
+// referrer) pair, upserted by recordListingReferralView on every matching
+// page view. Unlike a lead, a view creates no row of its own to carry this
+// on, so it needs its own table rather than a column somewhere. Cascade
+// both sides (unlike DirectoryLead.referrer): this row's only reason to
+// exist is the pair itself, so either side disappearing leaves nothing
+// worth keeping.
+model ListingReferralView {
+  id        String   @id @default(cuid())
+  viewCount Int      @default(0)
+  updatedAt DateTime @updatedAt
+
+  listing   PartnerListing @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  listingId String
+
+  referrer   User   @relation(fields: [referrerId], references: [id], onDelete: Cascade)
+  referrerId String
+
+  @@unique([listingId, referrerId])
+  @@index([referrerId])
 }
 
 enum Industry {

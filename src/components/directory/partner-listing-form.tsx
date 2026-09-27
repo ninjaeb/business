@@ -205,6 +205,7 @@ export function PartnerListingForm({
   const [hoursKey, setHoursKey] = useState(0);
   const [seoTitle, setSeoTitle] = useState(current.seoTitle);
   const [seoDescription, setSeoDescription] = useState(current.seoDescription);
+  const [shareWonValueWithReferrers, setShareWonValueWithReferrers] = useState(current.shareWonValueWithReferrers);
   const [translations, setTranslations] = useState<ListingTranslations>(current.translations);
   const [activeTab, setActiveTab] = useState<EditorTab>("en");
   const [activeSection, setActiveSection] = useState<EditorSection>("details");
@@ -604,6 +605,23 @@ export function PartnerListingForm({
             </div>
             <p className="mt-1 text-xs text-slate-400">
               Optional — leave blank to use your tagline and About text automatically.
+            </p>
+          </div>
+
+          <div className="mt-4 border-t border-slate-200 pt-4 dark:border-neutral-800">
+            <label className="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+              <input
+                type="checkbox"
+                name="shareWonValueWithReferrers"
+                form={LISTING_FORM_ID}
+                checked={shareWonValueWithReferrers}
+                onChange={(event) => setShareWonValueWithReferrers(event.target.checked)}
+                className="h-4 w-4 rounded border-slate-300 text-led focus:ring-led"
+              />
+              Let people who refer you leads see how much those deals are worth
+            </label>
+            <p className="mt-1 text-xs text-slate-400">
+              Off by default — a deal&apos;s value is otherwise only ever shown on your own Dashboard.
             </p>
           </div>
         </div>

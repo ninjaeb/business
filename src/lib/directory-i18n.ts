@@ -374,7 +374,7 @@ export type DirectoryStrings = {
   // trilingual directory's own hamburger menu (see localizedBusinessNavItems
   // below and DirectoryNavMenu), where it needs to match whatever language
   // the rest of that menu is already in.
-  navOverview: string;
+  navDashboard: string;
   navMyListings: string;
   navBusinessLeads: string;
   navCompanies: string;
@@ -540,7 +540,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navLoginRegister: "Business Login",
     navMyBusiness: "My business",
     navAddBusiness: "Add Business",
-    navOverview: "Overview",
+    navDashboard: "Dashboard",
     navMyListings: "My Business",
     navBusinessLeads: "Business Leads",
     navCompanies: "Companies",
@@ -705,7 +705,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navLoginRegister: "企业登录",
     navMyBusiness: "我的企业",
     navAddBusiness: "添加企业",
-    navOverview: "概览",
+    navDashboard: "仪表盘",
     navMyListings: "我的企业",
     navBusinessLeads: "商业线索",
     navCompanies: "公司",
@@ -871,7 +871,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navLoginRegister: "Log Masuk Perniagaan",
     navMyBusiness: "Perniagaan saya",
     navAddBusiness: "Tambah Perniagaan",
-    navOverview: "Gambaran keseluruhan",
+    navDashboard: "Papan Pemuka",
     navMyListings: "Perniagaan saya",
     navBusinessLeads: "Petunjuk Perniagaan",
     navCompanies: "Syarikat",
@@ -932,7 +932,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
 export function localizedBusinessNavItems(locale: DirectoryLocale): { href: string; label: string }[] {
   const t = DIRECTORY_STRINGS[locale];
   const labels: Record<string, string> = {
-    "/business-portal": t.navOverview,
+    "/business-portal": t.navDashboard,
     "/business-portal/listings": t.navMyListings,
     "/business-portal/business-leads": t.navBusinessLeads,
     "/business-portal/companies": t.navCompanies,
