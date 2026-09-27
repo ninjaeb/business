@@ -48,7 +48,7 @@ edits never reach the public page until approved again.
 - [Prisma ORM 7](https://www.prisma.io) with the `@prisma/adapter-pg` driver adapter
 - PostgreSQL 14+
 - `jose` for JWT session cookies, Node's `crypto` (scrypt) for password hashing
-- Optional: Google OAuth (sign-up/login), Google Places (listing autofill), OpenRouter (AI content), WhatsApp Business (Cloud API, new-lead alerts), IndexNow, Google Search Console / Bing Webmaster Tools verification, Plausible Analytics
+- Optional: Google OAuth (sign-up/login), Google Places (listing autofill), OpenRouter (AI content), WhatsApp Business (Cloud API, new-lead alerts), IndexNow, Google Search Console / Bing Webmaster Tools verification, Plausible Analytics, Google Analytics (GA4)
 - Deploy target: a plain Node `server.js` entrypoint for cPanel/Passenger-style shared hosting — no platform lock-in, `next start` works anywhere Node runs too
 
 ## Getting started
@@ -125,10 +125,10 @@ from your browser).
 
 See `.env.example` for the full list. `DATABASE_URL`, `SESSION_SECRET`, and
 `SITE_URL` are required; everything else (Google OAuth, Google Places,
-OpenRouter, search-console verification, IndexNow, Plausible, deploy
-automation) is optional — each feature just stays off until its variables
-are set. Outbound email and WhatsApp notifications aren't env vars at all —
-see below.
+OpenRouter, search-console verification, IndexNow, Plausible, Google
+Analytics, deploy automation) is optional — each feature just stays off
+until its variables are set. Outbound email and WhatsApp notifications
+aren't env vars at all — see below.
 
 ## Email and WhatsApp notifications (optional, admin-configured)
 

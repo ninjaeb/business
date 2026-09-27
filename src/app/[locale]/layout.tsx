@@ -47,6 +47,26 @@ function plausibleScript() {
   return <Script defer data-domain={domain} src={src} strategy="afterInteractive" />;
 }
 
+// Google Analytics (GA4), same scoping and same off-until-configured
+// convention as plausibleScript above — the two aren't mutually exclusive,
+// a site can run either, both, or neither. GA_MEASUREMENT_ID is the
+// "G-XXXXXXXXXX" id from the GA4 property's Data Streams settings.
+function googleAnalyticsScripts() {
+  const measurementId = process.env.GA_MEASUREMENT_ID?.trim();
+  if (!measurementId) return null;
+  return (
+    <>
+      <Script src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`} strategy="afterInteractive" />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${measurementId}');`}
+      </Script>
+    </>
+  );
+}
+
 export default async function LocalizedDirectoryLayout({
   children,
   params,
@@ -62,6 +82,7 @@ export default async function LocalizedDirectoryLayout({
     <>
       <DirectoryChrome locale={resolved}>{children}</DirectoryChrome>
       {plausibleScript()}
+      {googleAnalyticsScripts()}
     </>
   );
 }
