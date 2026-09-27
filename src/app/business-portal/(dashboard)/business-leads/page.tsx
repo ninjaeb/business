@@ -3,8 +3,7 @@ import { Inbox, Handshake, ThumbsUp, Trophy, Wallet } from "lucide-react";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { db } from "@/lib/db";
 import { getDirectoryLeadStatsForPartner } from "@/lib/directory";
-import { getCurrency } from "@/lib/settings";
-import { formatCurrencyExact, formatDate, formatDuration } from "@/lib/format";
+import { DEFAULT_PARTNER_CURRENCY, formatCurrencyExact, formatDate, formatDuration } from "@/lib/format";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -18,9 +17,9 @@ import { DIRECTORY_LEAD_STATUS_BADGE_CLASSES, DIRECTORY_LEAD_STATUS_LABELS } fro
 // per-listing inbox pages to see all their inquiries.
 export default async function PartnerDirectoryLeadsPage() {
   const user = await requireCompletePartnerProfile();
-  const [stats, currency, leads] = await Promise.all([
+  const currency = user.currency ?? DEFAULT_PARTNER_CURRENCY;
+  const [stats, leads] = await Promise.all([
     getDirectoryLeadStatsForPartner(user.id),
-    getCurrency(),
     db.directoryLead.findMany({
       where: { listing: { partnerId: user.id } },
       orderBy: { createdAt: "desc" },

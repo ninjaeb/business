@@ -5,13 +5,13 @@ import { PartnerDealForm } from "@/components/business-crm/partner-deal-form";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody } from "@/components/ui/card";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
-import { getCurrency } from "@/lib/settings";
+import { DEFAULT_PARTNER_CURRENCY } from "@/lib/format";
 
 export default async function EditPartnerDealPage({ params }: { params: Promise<{ id: string }> }) {
   const user = await requireCompletePartnerProfile();
   const { id } = await params;
-  const [currency, deal, companies, contacts] = await Promise.all([
-    getCurrency(),
+  const currency = user.currency ?? DEFAULT_PARTNER_CURRENCY;
+  const [deal, companies, contacts] = await Promise.all([
     db.partnerDeal.findFirst({ where: { id, partnerId: user.id } }),
     db.partnerCompany.findMany({ where: { partnerId: user.id }, orderBy: { name: "asc" } }),
     db.partnerContact.findMany({

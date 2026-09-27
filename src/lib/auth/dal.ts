@@ -14,6 +14,7 @@ const CURRENT_USER_SELECT = {
   role: true,
   phone: true,
   companyName: true,
+  currency: true,
 } as const;
 
 export const verifySession = cache(async () => {

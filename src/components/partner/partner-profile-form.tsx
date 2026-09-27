@@ -5,6 +5,7 @@ import { updatePartnerProfile } from "@/app/actions/partner-profile";
 import { Label, Input, RequiredMark, Select } from "@/components/ui/field";
 import { Button } from "@/components/ui/button";
 import { PHONE_FORMAT_HINT } from "@/lib/phone";
+import { DEFAULT_PARTNER_CURRENCY } from "@/lib/format";
 import { useActionToast } from "@/components/ui/toast";
 
 // A fixed list of IANA zone names, the same in every environment (unlike
@@ -13,6 +14,49 @@ import { useActionToast } from "@/components/ui/toast";
 // the client, so it can never cause a hydration mismatch.
 const TIMEZONES = typeof Intl.supportedValuesOf === "function" ? Intl.supportedValuesOf("timeZone") : [];
 
+// Unlike TIMEZONES, this can't be Intl.supportedValuesOf("currency") — that
+// list isn't guaranteed identical between Node's ICU data (server render)
+// and the browser's own (client render); Sierra Leone's code alone renders
+// as "SLL" on one and "SLE" on the other, which is a real hydration
+// mismatch, not a hypothetical one. A short, hand-picked list sidesteps
+// that entirely, and doubles as a much more usable dropdown than every
+// ISO 4217 code for a directory whose partners are all in or trading with
+// this one region.
+const CURRENCIES = ["MYR", "SGD", "IDR", "THB", "PHP", "VND", "BND", "CNY", "HKD", "TWD", "JPY", "KRW", "INR", "GBP", "AUD", "USD", "EUR"];
+
+// The browser's own region only ever narrows down to a currency for the
+// handful of countries this directory actually does business in — anything
+// else (or a region Intl can't resolve) falls back to MYR, this directory's
+// home-market currency, same spirit as the account-wide Settings.currency
+// default (src/lib/settings.ts) but scoped to one partner's own CRM values.
+const CURRENCY_BY_REGION: Record<string, string> = {
+  MY: "MYR",
+  SG: "SGD",
+  ID: "IDR",
+  TH: "THB",
+  PH: "PHP",
+  VN: "VND",
+  BN: "BND",
+  CN: "CNY",
+  HK: "HKD",
+  TW: "TWD",
+  JP: "JPY",
+  KR: "KRW",
+  IN: "INR",
+  GB: "GBP",
+  AU: "AUD",
+  US: "USD",
+};
+
+function detectBrowserCurrency(): string {
+  try {
+    const region = new Intl.Locale(navigator.language).maximize().region;
+    return (region && CURRENCY_BY_REGION[region]) || DEFAULT_PARTNER_CURRENCY;
+  } catch {
+    return DEFAULT_PARTNER_CURRENCY;
+  }
+}
+
 export function PartnerProfileForm({
   name,
   companyName,
@@ -20,6 +64,7 @@ export function PartnerProfileForm({
   title,
   phone,
   timezone,
+  currency,
 }: {
   name: string;
   companyName: string | null;
@@ -27,6 +72,7 @@ export function PartnerProfileForm({
   title: string | null;
   phone: string | null;
   timezone: string | null;
+  currency: string | null;
 }) {
   const [state, formAction, pending] = useActionState(updatePartnerProfile, undefined);
   useActionToast(state, "Profile updated.", { toastErrors: false });
@@ -50,6 +96,18 @@ export function PartnerProfileForm({
     () => "",
   );
   const timezoneDefault = savedTimezone || detectedTimezone;
+
+  // Same fallback shape as timezone above, but detectBrowserCurrency
+  // already resolves to a real currency (never "") — there's no IANA
+  // zone name it could get wrong, just a best-guess mapping that always
+  // has MYR to fall back on.
+  const savedCurrency = state && "success" in state ? state.currency : currency;
+  const detectedCurrency = useSyncExternalStore(
+    () => () => {},
+    detectBrowserCurrency,
+    () => DEFAULT_PARTNER_CURRENCY,
+  );
+  const currencyDefault = savedCurrency || detectedCurrency;
 
   return (
     <form action={formAction} className="space-y-4">
@@ -122,6 +180,26 @@ export function PartnerProfileForm({
         <p className="mt-1 text-xs text-slate-400">
           Detected from your browser — correct it if you&apos;re somewhere else. Used to show visitors whether your
           listings are open right now.
+        </p>
+      </div>
+
+      <div>
+        <Label htmlFor="currency">Currency</Label>
+        {/* Uncontrolled + keyed on currencyDefault, same reasoning as
+            Timezone above. */}
+        <Select key={currencyDefault} id="currency" name="currency" defaultValue={currencyDefault}>
+          {!CURRENCIES.includes(currencyDefault) && (
+            <option value={currencyDefault}>{currencyDefault}</option>
+          )}
+          {CURRENCIES.map((code) => (
+            <option key={code} value={code}>
+              {code}
+            </option>
+          ))}
+        </Select>
+        <p className="mt-1 text-xs text-slate-400">
+          Guessed from your browser — correct it if you bill in something else. Used for deal and lead values across
+          your CRM.
         </p>
       </div>
 
