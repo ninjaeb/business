@@ -359,15 +359,14 @@ export type DirectoryStrings = {
   websiteLabel: string;
   locationLabel: string;
   // The listing page's "Recommend" affordances, open to every visitor —
-  // the header button, and the floating bottom-bar pill (see
-  // RecommendBar). Both share one referral-tracking link (?r=<referral
+  // the header button, and the sticky bottom-bar button (see the listing
+  // layout's own nav). Both share one referral-tracking link (?r=<referral
   // code>, see recommendUrl) and this same pre-written message for the
   // email/WhatsApp/native-share options (Copy link still copies that same
   // tracking link). {business} and {url} are replaced with the listing's
   // name and the tracking link itself — plain string substitution, not a
   // template literal, since this is localized data, not code.
   recommendLabel: string;
-  recommendBusinessCta: string;
   recommendMessage: string;
   // The header's plain Share button — ShareButton's own `label` prop
   // defaults to unlocalized English "Share", so every caller that isn't
@@ -562,7 +561,6 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     websiteLabel: "Website",
     locationLabel: "Location",
     recommendLabel: "Recommend Business",
-    recommendBusinessCta: "Recommend the Business",
     recommendMessage: "I recommend {business} — check them out on the Business Directory: {url}",
     shareLabel: "Share Business",
     contactHeading: "Get in touch",
@@ -741,7 +739,6 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     },
     websiteLabel: "网站",
     recommendLabel: "推荐企业",
-    recommendBusinessCta: "推荐这家企业",
     recommendMessage: "我推荐 {business}——快来企业目录看看：{url}",
     shareLabel: "分享企业",
     locationLabel: "地点",
@@ -920,7 +917,6 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     },
     websiteLabel: "Laman web",
     recommendLabel: "Syorkan Perniagaan",
-    recommendBusinessCta: "Syorkan Perniagaan Ini",
     recommendMessage: "Saya syorkan {business} — lihat mereka di Direktori Perniagaan: {url}",
     shareLabel: "Kongsi Perniagaan",
     locationLabel: "Lokasi",
