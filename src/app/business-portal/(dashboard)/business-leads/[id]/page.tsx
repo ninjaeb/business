@@ -2,8 +2,7 @@ import { notFound } from "next/navigation";
 import { AlertTriangle, Mail, Phone, ThumbsUp } from "lucide-react";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { db } from "@/lib/db";
-import { getCurrency } from "@/lib/settings";
-import { formatDate, formatDateTime, formatDuration } from "@/lib/format";
+import { DEFAULT_PARTNER_CURRENCY, formatDate, formatDateTime, formatDuration } from "@/lib/format";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -14,16 +13,14 @@ import { DirectoryLeadReplyForm } from "@/components/directory/directory-lead-re
 export default async function PartnerDirectoryLeadPage({ params }: { params: Promise<{ id: string }> }) {
   const user = await requireCompletePartnerProfile();
   const { id } = await params;
-  const [currency, lead] = await Promise.all([
-    getCurrency(),
-    db.directoryLead.findFirst({
-      where: { id, listing: { partnerId: user.id } },
-      include: {
-        replies: { include: { author: { select: { name: true } } }, orderBy: { createdAt: "asc" } },
-        listing: { select: { companyName: true } },
-      },
-    }),
-  ]);
+  const currency = user.currency ?? DEFAULT_PARTNER_CURRENCY;
+  const lead = await db.directoryLead.findFirst({
+    where: { id, listing: { partnerId: user.id } },
+    include: {
+      replies: { include: { author: { select: { name: true } } }, orderBy: { createdAt: "asc" } },
+      listing: { select: { companyName: true } },
+    },
+  });
   if (!lead) notFound();
 
   return (
