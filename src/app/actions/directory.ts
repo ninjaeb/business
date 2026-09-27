@@ -999,13 +999,17 @@ export async function autoCreateListingDetails(input: {
   );
 
   // Run together rather than one after the other — the AI call is the slow
-  // part (up to a minute) and the logo fetch doesn't depend on its result,
-  // so there's no reason to make the partner wait for both in sequence.
-  // Google Maps' own photo wins when there is one; the website's own logo
-  // (og:image/favicon) only comes into play when there's no place, or its
-  // photo couldn't be fetched.
+  // part (up to a minute — up to ~23K characters of scraped website text
+  // plus Google Maps reviews as input, a full tagline/description/services/
+  // FAQ/categories/SEO draft as output, the single biggest prompt and
+  // response in this app — hence the longer explicit timeout, well beyond
+  // callAi's normal default) and the logo fetch doesn't depend on its
+  // result, so there's no reason to make the partner wait for both in
+  // sequence. Google Maps' own photo wins when there is one; the website's
+  // own logo (og:image/favicon) only comes into play when there's no
+  // place, or its photo couldn't be fetched.
   const [result, logoUrl] = await Promise.all([
-    callAi(AutoListingSchema, AUTO_LISTING_SYSTEM_PROMPT, lines.join("\n")),
+    callAi(AutoListingSchema, AUTO_LISTING_SYSTEM_PROMPT, lines.join("\n"), { timeoutMs: 60_000 }),
     logoFromPlace(place).then((url) => url ?? fetchWebsiteLogo(logoCandidates)),
   ]);
   if (result.status !== "ok") return result;

@@ -99,7 +99,12 @@ export function isAiConfigured() {
 // failure page instead of the graceful "AI request failed" toast callAi
 // would otherwise produce — reported in production 2026-09-27 as
 // "This page couldn't load" while using Translate with AI. Set well under
-// a typical proxy timeout so this app's own error handling gets there first.
+// a typical proxy timeout so this app's own error handling gets there
+// first. This is the default for every callAi() call; a caller whose
+// prompt is unusually large in either direction (a lot of input to read,
+// a lot of output to write — see autoCreateListingDetails's own comment)
+// can ask for more time via callAi's own timeoutMs option instead of this
+// number being raised for everyone.
 const REQUEST_TIMEOUT_MS = 20_000;
 
 export function getOpenRouterClient() {
@@ -184,10 +189,20 @@ export const AI_NOT_CONFIGURED: AiResult<never> = {
 // to, so the schema is instead spelled out in the prompt and enforced by
 // parsing + Zod validation afterward, same as before the JSON came back
 // pre-validated by the provider.
+//
+// options.timeoutMs overrides REQUEST_TIMEOUT_MS for this one call — for a
+// caller whose prompt is unusually large either way (see
+// autoCreateListingDetails, the one caller that currently uses this).
+// Retries are turned off whenever this is set: a retry re-adds the full
+// timeout on top, and doubling an already-long wait risks the same
+// hung-connection failure REQUEST_TIMEOUT_MS exists to prevent in the
+// first place — better to surface one clear timeout error than make the
+// partner wait through two.
 export async function callAi<T>(
   schema: z.ZodType<T>,
   systemPrompt: string,
   userContent: string | ChatCompletionContentPart[],
+  options?: { timeoutMs?: number },
 ): Promise<AiResult<T>> {
   try {
     const client = getOpenRouterClient();
@@ -205,7 +220,10 @@ export async function callAi<T>(
         { role: "user", content: userContent },
       ],
     };
-    const response = await client.chat.completions.create(params);
+    const response = await client.chat.completions.create(
+      params,
+      options?.timeoutMs ? { timeout: options.timeoutMs, maxRetries: 0 } : undefined,
+    );
 
     const choice = response.choices[0];
     const finishReason = choice?.finish_reason;
