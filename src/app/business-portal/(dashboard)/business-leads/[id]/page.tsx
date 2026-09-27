@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { AlertTriangle, Mail, Phone, ThumbsUp } from "lucide-react";
+import { AlertTriangle, ThumbsUp } from "lucide-react";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { db } from "@/lib/db";
 import { getCurrency } from "@/lib/settings";
@@ -8,6 +8,7 @@ import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { DirectoryLeadStatusSelect } from "@/components/directory/directory-lead-status-select";
+import { DirectoryLeadContactLinks } from "@/components/directory/directory-lead-contact-links";
 import { DirectoryLeadValueForm } from "@/components/directory/directory-lead-value-form";
 import { DirectoryLeadReplyForm } from "@/components/directory/directory-lead-reply-form";
 
@@ -25,6 +26,11 @@ export default async function PartnerDirectoryLeadPage({ params }: { params: Pro
     }),
   ]);
   if (!lead) notFound();
+
+  // Pre-fills the chat, quoting their own inquiry back to them for context
+  // — still just a draft in WhatsApp's own composer until the partner
+  // edits and sends it themselves, never sent automatically from here.
+  const whatsAppMessage = `Hi ${lead.name}, thanks for reaching out to ${lead.listing.companyName}! Regarding your inquiry: "${lead.message}"`;
 
   return (
     <div className="space-y-6">
@@ -61,16 +67,7 @@ export default async function PartnerDirectoryLeadPage({ params }: { params: Pro
           <CardBody className="space-y-3">
             <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-slate-500 dark:text-slate-400">
               {lead.company && <span>{lead.company}</span>}
-              <a href={`mailto:${lead.email}`} className="inline-flex items-center gap-1 hover:text-petrol dark:hover:text-petrol-light">
-                <Mail className="h-3.5 w-3.5" />
-                {lead.email}
-              </a>
-              {lead.phone && (
-                <a href={`tel:${lead.phone}`} className="inline-flex items-center gap-1 hover:text-petrol dark:hover:text-petrol-light">
-                  <Phone className="h-3.5 w-3.5" />
-                  {lead.phone}
-                </a>
-              )}
+              <DirectoryLeadContactLinks leadId={lead.id} email={lead.email} phone={lead.phone} whatsAppMessage={whatsAppMessage} />
             </div>
             <p className="whitespace-pre-wrap text-sm text-slate-700 dark:text-slate-300">{lead.message}</p>
           </CardBody>

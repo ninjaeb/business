@@ -1293,6 +1293,29 @@ export async function updateDirectoryLeadStatus(leadId: string, formData: FormDa
   revalidatePath(`/business-portal/business-leads/${lead.id}`);
 }
 
+// Fired alongside a genuine contact attempt — clicking the lead's email,
+// phone, or WhatsApp link (see DirectoryLeadContactLinks) — so a lead
+// doesn't sit at "New" forever just because the partner reached out
+// outside this app rather than through the in-app reply form (which
+// already advances status via replyToDirectoryLead below). Unlike
+// updateDirectoryLeadStatus, this never overrides a status the partner
+// already set further along (Quoted/Won/Lost) — a stray second click on
+// the phone number for an already-quoted lead shouldn't silently bump it
+// backward.
+export async function markDirectoryLeadContacted(leadId: string): Promise<void> {
+  const partner = await requirePartnerAction();
+  const lead = await ownedLeadOrThrow(leadId, partner.id);
+  if (lead.status !== "NEW" && lead.status !== "PICKED_UP") return;
+
+  await db.directoryLead.update({
+    where: { id: lead.id },
+    data: { status: "CONTACTED", pickedUpAt: lead.pickedUpAt ?? new Date() },
+  });
+  revalidatePath("/business-portal");
+  revalidatePath("/business-portal/business-leads");
+  revalidatePath(`/business-portal/business-leads/${lead.id}`);
+}
+
 const leadDetailsSchema = z.object({
   value: z
     .string()
@@ -1348,6 +1371,9 @@ export async function replyToDirectoryLead(
   const lead = await ownedLeadOrThrow(leadId, partner.id);
 
   const result = await sendDirectoryLeadReply(lead.listing, lead, parsed.data.body);
+  // Same forward-only rule as markDirectoryLeadContacted — a reply on a
+  // Quoted/Won/Lost lead shouldn't silently drag its status backward.
+  const shouldMarkContacted = lead.status === "NEW" || lead.status === "PICKED_UP";
 
   await db.$transaction([
     db.directoryLeadReply.create({
@@ -1361,11 +1387,18 @@ export async function replyToDirectoryLead(
     }),
     db.directoryLead.update({
       where: { id: lead.id },
-      data: { firstRepliedAt: lead.firstRepliedAt ?? new Date() },
+      data: {
+        firstRepliedAt: lead.firstRepliedAt ?? new Date(),
+        ...(shouldMarkContacted ? { status: "CONTACTED" as const, pickedUpAt: lead.pickedUpAt ?? new Date() } : {}),
+      },
     }),
   ]);
 
   revalidatePath(`/business-portal/business-leads/${lead.id}`);
+  if (shouldMarkContacted) {
+    revalidatePath("/business-portal");
+    revalidatePath("/business-portal/business-leads");
+  }
   if (!result.sent) return { error: `Saved, but the email didn't send: ${result.error}` };
   return { success: true };
 }

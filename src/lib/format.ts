@@ -82,10 +82,12 @@ export function formatDateInput(value: Date | string | null | undefined) {
 }
 
 // WhatsApp's click-to-chat scheme wants the number as bare digits
-// (country code included, no "+", spaces, or punctuation).
-export function whatsAppUrl(phone: string) {
+// (country code included, no "+", spaces, or punctuation). `text`, when
+// given, pre-fills the chat's message box — still editable by whoever
+// sends it, never sent automatically.
+export function whatsAppUrl(phone: string, text?: string) {
   const digits = phone.replace(/\D/g, "");
-  return `https://wa.me/${digits}`;
+  return text ? `https://wa.me/${digits}?text=${encodeURIComponent(text)}` : `https://wa.me/${digits}`;
 }
 
 export function fullName(firstName: string, lastName?: string | null) {
