@@ -48,7 +48,6 @@ import { ListingLogo } from "@/components/directory/listing-logo";
 import { DirectoryLeadForm } from "@/components/directory/directory-lead-form";
 import { InquiryProvider, InquiryScrollTarget } from "@/components/directory/listing-inquiry";
 import { ShareButton } from "@/components/directory/share-button";
-import { RecommendBar } from "@/components/directory/recommend-bar";
 import { ReferralViewBeacon } from "@/components/directory/referral-view-beacon";
 import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
 import { ListingSectionNav } from "@/components/directory/listing-section-nav";
@@ -296,8 +295,11 @@ export default async function ListingLayout({
     // Top padding matches the category/location pages' own breadcrumb
     // spacing (see category-page-content.tsx/location-page-content.tsx) so
     // it doesn't sit flush against the sticky header. Bottom padding clears
-    // whatever is pinned over the page's foot at every width: the jump bar
-    // below, plus the RecommendBar pill floating just above it.
+    // the sticky Services/Recommend/Get in touch bar pinned over the page's
+    // foot at every width — generous on purpose (the bar itself is nowhere
+    // near this tall) rather than trimmed to its exact height, since too
+    // little here means the bar covers real content and too much is just
+    // some extra whitespace.
     <div className="w-full px-4 pt-4 pb-40 sm:px-8">
       <script
         type="application/ld+json"
