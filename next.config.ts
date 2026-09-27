@@ -19,7 +19,36 @@ function turbopackRoot(): string | undefined {
 
 const root = turbopackRoot();
 
+// Sitewide response headers an SEO/security audit checks for that Next.js
+// doesn't set on its own. A Content-Security-Policy is deliberately NOT
+// included here: this app embeds third-party iframes (YouTube, Vimeo,
+// Dailymotion, TikTok, Facebook's video plugin — see toEmbeddableVideoUrl in
+// src/lib/directory.ts) and loads Google Places photos, so a CSP tight
+// enough to be worth having would need every one of those origins allowlisted
+// and testing across the whole app to avoid silently breaking video/image
+// embeds in production — worth doing as its own follow-up, not bundled into
+// a header pass that should otherwise carry zero functional risk.
+const SECURITY_HEADERS = [
+  // HTTPS-only is already true in production (see Cloudflare/LiteSpeed in
+  // front of this app) — this just tells browsers to enforce it themselves
+  // too, including on subdomains, without re-checking on every request.
+  { key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains" },
+  { key: "X-Content-Type-Options", value: "nosniff" },
+  // Superseded by CSP's frame-ancestors in browsers that support it, but
+  // still worth sending for the ones that don't — this app never needs to
+  // be framed by another origin.
+  { key: "X-Frame-Options", value: "SAMEORIGIN" },
+  { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+  // Disables browser features this app never uses (confirmed no
+  // navigator.geolocation/getUserMedia calls anywhere in src/) rather than
+  // leaving them at the browser's own default-on posture.
+  { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(), browsing-topics=()" },
+];
+
 const nextConfig: NextConfig = {
+  async headers() {
+    return [{ source: "/:path*", headers: SECURITY_HEADERS }];
+  },
   async rewrites() {
     return [
       {
