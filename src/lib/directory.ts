@@ -1295,8 +1295,10 @@ export async function getOwnedListing(listingId: string, partnerId: string): Pro
 
 // PartnerListingBranchLink stores each pair once, smaller id first — lets
 // "branches of X" be a single OR query below instead of needing a link
-// written in both directions.
-function branchLinkPairKey(a: string, b: string): [string, string] {
+// written in both directions. Exported so linkListingsAsBranches below (and
+// bulkLinkListingsAsBranches in src/app/actions/directory.ts) can build the
+// same canonical pairs when linking several listings at once.
+export function branchLinkPairKey(a: string, b: string): [string, string] {
   return a < b ? [a, b] : [b, a];
 }
 
@@ -1347,6 +1349,32 @@ export async function setListingBranchIds(listingId: string, branchIds: string[]
       return db.partnerListingBranchLink.create({ data: { listingAId, listingBId } });
     }),
   ]);
+}
+
+// Fully connects every listing in listingIds to every other one, as
+// branches of each other — for the "My Business" grid's own bulk selection
+// (a partner ticking several of their locations at once, rather than
+// opening each one's editor to link it by hand). Purely additive: an
+// already-linked pair is left alone (skipDuplicates), never unlinked —
+// unlike setListingBranchIds above, which reconciles one listing's full
+// set and so can also remove links. Returns how many new pairs were
+// actually created, for the caller's own confirmation message.
+export async function linkListingsAsBranches(listingIds: string[], partnerId: string): Promise<number> {
+  const uniqueIds = [...new Set(listingIds)];
+  if (uniqueIds.length < 2) return 0;
+  const owned = await db.partnerListing.findMany({ where: { id: { in: uniqueIds }, partnerId }, select: { id: true } });
+  const validIds = owned.map((listing) => listing.id);
+  if (validIds.length < 2) return 0;
+
+  const pairs: { listingAId: string; listingBId: string }[] = [];
+  for (let i = 0; i < validIds.length; i++) {
+    for (let j = i + 1; j < validIds.length; j++) {
+      const [listingAId, listingBId] = branchLinkPairKey(validIds[i], validIds[j]);
+      pairs.push({ listingAId, listingBId });
+    }
+  }
+  const result = await db.partnerListingBranchLink.createMany({ data: pairs, skipDuplicates: true });
+  return result.count;
 }
 
 export type ListingBranchSummary = { companyName: string; slug: string; address: string | null; city: string | null; state: string | null };
