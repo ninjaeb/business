@@ -128,6 +128,7 @@ export function buildListingMetadata({
   pathFor,
   sectionHeading,
   shareImagePath,
+  descriptionOverride,
 }: {
   listing: Pick<PublishedListingSnapshot, "seoTitle" | "seoDescription" | "tagline" | "description" | "companyName">;
   siteOrigin: string;
@@ -139,9 +140,18 @@ export function buildListingMetadata({
   // from.
   sectionHeading?: string;
   shareImagePath: string;
+  // A page whose own content is more specific than "this listing" — one
+  // named photo album, so far (see photos/page.tsx) — can describe exactly
+  // what's actually on it instead of the whole listing's own tagline/About
+  // text, which is what every other section page still falls back to.
+  // Applied everywhere `description` below would otherwise go (top-level,
+  // openGraph, twitter) so all three stay in sync, same as the fallback
+  // chain already keeps them.
+  descriptionOverride?: string;
 }): Metadata {
   const plainDescription = stripMarkdownLiteToPlainText(listing.description);
   const description =
+    descriptionOverride ||
     listing.seoDescription?.trim() ||
     listing.tagline ||
     (plainDescription ? truncateAtWordBoundary(plainDescription, MAX_SEO_DESCRIPTION_LENGTH) : undefined) ||
@@ -270,6 +280,26 @@ export function buildVideoJsonLd(video: VideoEntry, embedUrl: string | null, com
     ...(video.thumbnailUrl ? { thumbnailUrl: [video.thumbnailUrl] } : {}),
     contentUrl: video.url,
     ...(embedUrl ? { embedUrl } : {}),
+  });
+}
+
+// One ImageObject per photo actually shown on the page (see
+// photos/page.tsx — the flat grid, one album's own photos, or the "other
+// photos" section, never the album-grid's own cover thumbnails, which
+// stand for a whole album rather than being content in their own right).
+// Same "@graph of one node type, none needing to stand alone" shape as
+// buildUpdatesJsonLd. name/caption both fall back to companyName, same
+// "distinct, non-generic" reasoning the page's own <img alt> already uses,
+// since an uncaptioned photo would otherwise have no name at all here.
+export function buildPhotoGalleryJsonLd(photos: { url: string; caption: string }[], companyName: string): string {
+  return serializeJsonLd({
+    "@context": "https://schema.org",
+    "@graph": photos.map((photo) => ({
+      "@type": "ImageObject",
+      contentUrl: photo.url,
+      name: photo.caption || companyName,
+      ...(photo.caption ? { caption: photo.caption } : {}),
+    })),
   });
 }
 

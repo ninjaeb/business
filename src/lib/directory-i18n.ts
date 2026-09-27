@@ -189,6 +189,19 @@ export function formatPhotoCountLabel(count: number, locale: DirectoryLocale): s
   return count === 1 ? "1 photo" : `${count.toLocaleString()} photos`;
 }
 
+// The Photos page's own meta description for one named album (see
+// generateMetadata in photos/page.tsx) — describes exactly what's on that
+// page instead of falling back to the whole listing's tagline/About text,
+// the way every other section page still does. Kept as its own function
+// for the same reason as formatPhotoCountLabel above: it interpolates the
+// album and company name, which DIRECTORY_STRINGS can't hold as a function
+// once passed whole into a "use client" component.
+export function formatAlbumMetaDescription(albumName: string, photoCount: number, companyName: string, locale: DirectoryLocale): string {
+  if (locale === "zh") return `查看 ${companyName} 的「${albumName}」相册中的 ${photoCount.toLocaleString()} 张照片。`;
+  if (locale === "ms") return `Lihat ${photoCount.toLocaleString()} foto dalam album "${albumName}" oleh ${companyName}.`;
+  return `View ${photoCount.toLocaleString()} photo${photoCount === 1 ? "" : "s"} from ${companyName}'s "${albumName}" album.`;
+}
+
 export type DirectoryLeadFormErrorCode =
   | "name_required"
   | "email_required"
