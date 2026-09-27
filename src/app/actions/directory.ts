@@ -11,6 +11,7 @@ import { isValidPhoneFormat, normalizePhone } from "@/lib/phone";
 import { isRateLimited, isSuspiciouslyFast } from "@/lib/lead-spam-guard";
 import { firstHopValue } from "@/lib/site-url";
 import { ALLOWED_PHOTO_TYPES, MAX_PHOTO_BYTES, photoDataUrl } from "@/lib/photo";
+import { LOGO_MAX_DIMENSION, optimizeImageForWeb } from "@/lib/image-optimize";
 import { regenerateSitemapFile } from "@/lib/sitemap-generator";
 import { regenerateLlmsTxtFile } from "@/lib/llms-txt-generator";
 import { revalidateDirectory } from "@/lib/directory-revalidate";
@@ -349,7 +350,8 @@ async function parseListingLogo(formData: FormData): Promise<{ logoUrl?: string 
       throw new Error("Logo must be under 3MB.");
     }
     const buffer = Buffer.from(await file.arrayBuffer());
-    return { logoUrl: photoDataUrl(buffer, file.type) };
+    const optimized = await optimizeImageForWeb(buffer, file.type, LOGO_MAX_DIMENSION, "png");
+    return { logoUrl: photoDataUrl(optimized.buffer, optimized.contentType) };
   }
   if (formData.get("removeLogo") === "on") {
     return { logoUrl: null };
@@ -370,7 +372,8 @@ async function parseListingLogo(formData: FormData): Promise<{ logoUrl?: string 
     const match = DATA_URL_PATTERN.exec(logoDataUrl);
     const buffer = match ? Buffer.from(match[2], "base64") : null;
     if (match && buffer && buffer.length > 0 && buffer.length <= MAX_PHOTO_BYTES && ALLOWED_PHOTO_TYPES.has(match[1])) {
-      return { logoUrl: logoDataUrl };
+      const optimized = await optimizeImageForWeb(buffer, match[1], LOGO_MAX_DIMENSION, "png");
+      return { logoUrl: photoDataUrl(optimized.buffer, optimized.contentType) };
     }
   }
   return {};
@@ -841,7 +844,8 @@ async function logoFromPlace(place: PlaceDetails | null): Promise<string | null>
   if (!place?.photoName) return null;
   const photo = await fetchPlacePhoto(place.photoName);
   if (!photo || !ALLOWED_PHOTO_TYPES.has(photo.contentType) || photo.buffer.length > MAX_PHOTO_BYTES) return null;
-  return photoDataUrl(photo.buffer, photo.contentType);
+  const optimized = await optimizeImageForWeb(photo.buffer, photo.contentType, LOGO_MAX_DIMENSION, "png");
+  return photoDataUrl(optimized.buffer, optimized.contentType);
 }
 
 function websiteContextLines(pages: WebsitePage[]): string[] {
