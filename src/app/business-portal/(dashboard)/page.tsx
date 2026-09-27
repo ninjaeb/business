@@ -56,7 +56,7 @@ export default async function PartnerOverviewPage() {
           <form action={createListingAction}>
             <Button type="submit" size="sm">
               <Plus className="h-4 w-4" />
-              New listing
+              New Business
             </Button>
           </form>
         </CardHeader>
