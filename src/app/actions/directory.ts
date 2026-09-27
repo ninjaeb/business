@@ -674,20 +674,26 @@ const TranslationLocaleSchema = z.object({
     .array(TranslatedUpdateSchema)
     .describe("Translation of each News/Promotion post, in the same order as given — one entry per source entry."),
 });
-const TranslationSchema = z.object({
-  zh: TranslationLocaleSchema.describe("Simplified Chinese translation of everything below."),
-  ms: TranslationLocaleSchema.describe("Malay (Bahasa Malaysia) translation of everything below."),
-});
-
-const LISTING_TRANSLATION_SYSTEM_PROMPT =
-  "You translate a business's partner directory listing — its tagline, 'About us' text, list of services/products, FAQ entries, and News & Promotions posts — into Simplified Chinese and Malay (Bahasa Malaysia), for a multi-language public directory. Translate faithfully — never invent, drop, embellish, or add claims that aren't in the source text — but write naturally and idiomatically in each target language rather than a stiff word-for-word rendering. The About text and each post's body may use a small formatting syntax: **bold**, bullet/numbered lists ('- item' / '1. item'), and [link text](url) links — preserve this syntax exactly around the translated text, never strip or alter it. Never change a number, date, or discount amount in a Promotion post. The services, FAQ, and News/Promotions lists must each come back in the same order and count as given — exactly one translated entry per source entry, never merged, split, added, or dropped. The company name itself is never translated and isn't part of what you're given. If a field is empty (or a list has no entries) in the source, return an empty string (or empty list) for it in both languages.";
+// Building the system prompt per target language (see translateListingContent
+// below) rather than translating to both at once in a single call: the
+// combined call's response (two full languages of tagline/About/services/
+// FAQ/updates) could be large enough on this app's free-tier models to run
+// past REQUEST_TIMEOUT_MS (src/lib/ai/client.ts) — reported in production
+// as the whole page failing to load rather than a graceful error. Two
+// smaller parallel calls each finish faster individually, and running them
+// with Promise.all means the wall-clock cost is whichever one is slower,
+// not their sum.
+function listingTranslationSystemPrompt(targetLanguage: string): string {
+  return `You translate a business's partner directory listing — its tagline, 'About us' text, list of services/products, FAQ entries, and News & Promotions posts — into ${targetLanguage}, for a multi-language public directory. Translate faithfully — never invent, drop, embellish, or add claims that aren't in the source text — but write naturally and idiomatically in the target language rather than a stiff word-for-word rendering. The About text and each post's body may use a small formatting syntax: **bold**, bullet/numbered lists ('- item' / '1. item'), and [link text](url) links — preserve this syntax exactly around the translated text, never strip or alter it. Never change a number, date, or discount amount in a Promotion post. The services, FAQ, and News/Promotions lists must each come back in the same order and count as given — exactly one translated entry per source entry, never merged, split, added, or dropped. The company name itself is never translated and isn't part of what you're given. If a field is empty (or a list has no entries) in the source, return an empty string (or empty list) for it.`;
+}
 
 // Partner-gated — called from the "Translate with AI" button next to the
 // listing editor's language tabs. Unlike the other rewrite/generate
 // actions, there's no "current translation" to improve: the source of
 // truth is always the primary (English) tagline/description/services/
-// faqs/updates, so every call is a fresh translation from those, in both
-// target languages at once. Services go through title/description only —
+// faqs/updates, so every call is a fresh translation from those, run as two
+// parallel per-language calls (see listingTranslationSystemPrompt's own
+// comment for why). Services go through title/description only —
 // like rewriteListingServices, price is a partner-only manual field the AI
 // never sees; updates go through title/body only — kind/postedAt/endDate
 // aren't language-specific either; the caller (handleTranslate in
@@ -737,9 +743,16 @@ export async function translateListingContent(current: {
     `Services/products (${services.length}):\n${servicesList || "(none)"}`,
     `FAQ (${faqs.length}):\n${faqsList || "(none)"}`,
     `News & Promotions posts (${updates.length}):\n${updatesList || "(none)"}`,
-    "Translate all of the above into Simplified Chinese and Malay, keeping the services, FAQ, and News/Promotions lists in the same order and count as given.",
+    "Translate all of the above, keeping the services, FAQ, and News/Promotions lists in the same order and count as given.",
   ].join("\n\n");
-  return callAi(TranslationSchema, LISTING_TRANSLATION_SYSTEM_PROMPT, prompt);
+
+  const [zh, ms] = await Promise.all([
+    callAi(TranslationLocaleSchema, listingTranslationSystemPrompt("Simplified Chinese"), prompt),
+    callAi(TranslationLocaleSchema, listingTranslationSystemPrompt("Malay (Bahasa Malaysia)"), prompt),
+  ]);
+  if (zh.status === "error") return zh;
+  if (ms.status === "error") return ms;
+  return { status: "ok", data: { zh: zh.data, ms: ms.data } };
 }
 
 // ---------------------------------------------------------------------------

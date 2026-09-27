@@ -1,4 +1,4 @@
-import OpenAI, { APIError } from "openai";
+import OpenAI, { APIConnectionTimeoutError, APIError } from "openai";
 import type { ChatCompletionContentPart } from "openai/resources/chat/completions";
 import { z } from "zod";
 import { getConfiguredSiteOrigin } from "@/lib/site-url";
@@ -90,6 +90,18 @@ export function isAiConfigured() {
   return Boolean(process.env.OPENROUTER_API_KEY);
 }
 
+// The openai SDK's own default is 10 minutes, retried up to maxRetries
+// times on top of that — a slow/overloaded free model (or OpenRouter
+// working through this app's own multi-model fallback list server-side
+// within that one HTTP call) could then hang far longer than the shared
+// hosting stack's own reverse-proxy timeout, which kills the connection
+// out from under it. The browser then shows its own generic connection-
+// failure page instead of the graceful "AI request failed" toast callAi
+// would otherwise produce — reported in production 2026-09-27 as
+// "This page couldn't load" while using Translate with AI. Set well under
+// a typical proxy timeout so this app's own error handling gets there first.
+const REQUEST_TIMEOUT_MS = 20_000;
+
 export function getOpenRouterClient() {
   if (!process.env.OPENROUTER_API_KEY) {
     throw new Error("OPENROUTER_API_KEY is not set");
@@ -98,7 +110,12 @@ export function getOpenRouterClient() {
     globalThis.openRouterClientGlobal = new OpenAI({
       baseURL: "https://openrouter.ai/api/v1",
       apiKey: process.env.OPENROUTER_API_KEY,
-      maxRetries: 2,
+      timeout: REQUEST_TIMEOUT_MS,
+      // Halved from the SDK's own default of 2 — a retry re-adds the full
+      // REQUEST_TIMEOUT_MS on top, so worst case here is two attempts
+      // (~40s) rather than three (~60s), still comfortably inside a
+      // typical proxy timeout while keeping one retry for a genuine blip.
+      maxRetries: 1,
       // Both optional and purely cosmetic on OpenRouter's own dashboard/
       // rankings — never read by this app, safe to omit if SITE_URL isn't set.
       defaultHeaders: {
@@ -114,6 +131,13 @@ export function getOpenRouterClient() {
 // than in one of them since a "use server" module can only export async
 // functions.
 export function describeAiError(error: unknown): string {
+  // Checked ahead of the generic APIError branch below (which it's also an
+  // instance of, just with no .status) for a message that names the actual
+  // problem — see REQUEST_TIMEOUT_MS's own comment for why this is common
+  // on the free models this app defaults to.
+  if (error instanceof APIConnectionTimeoutError) {
+    return "The AI took too long to respond — try again, or try a shorter piece of content.";
+  }
   if (error instanceof APIError) {
     if (error.status === 401 || error.status === 403) {
       return "AI request failed: check that OPENROUTER_API_KEY is set correctly.";
