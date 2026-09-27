@@ -3,6 +3,7 @@
 import { db } from "@/lib/db";
 import { requirePartnerAction } from "@/lib/auth/dal";
 import { getOwnedListing, MAX_GALLERY_PHOTOS, type PhotoEntry } from "@/lib/directory";
+import { GALLERY_PHOTO_MAX_DIMENSION, optimizeImageForWeb } from "@/lib/image-optimize";
 
 const MAX_IMAGE_SIZE = 5 * 1024 * 1024;
 const MAX_CAPTION_LENGTH = 140;
@@ -38,9 +39,11 @@ export async function uploadDirectoryListingImage(
   if (!listing) {
     return { status: "error", message: "Listing not found." };
   }
-  const data = Buffer.from(await file.arrayBuffer()).toString("base64");
+  const rawBuffer = Buffer.from(await file.arrayBuffer());
+  const optimized = await optimizeImageForWeb(rawBuffer, file.type, GALLERY_PHOTO_MAX_DIMENSION);
+  const data = optimized.buffer.toString("base64");
   const image = await db.directoryListingImage.create({
-    data: { mimeType: file.type, data, listingId: listing.id },
+    data: { mimeType: optimized.contentType, data, listingId: listing.id },
     select: { id: true },
   });
 
@@ -83,14 +86,16 @@ export async function uploadListingGalleryPhoto(listingId: string, formData: For
 
   const caption = String(formData.get("caption") ?? "").trim().slice(0, MAX_CAPTION_LENGTH);
   const gallery = String(formData.get("gallery") ?? "").trim().slice(0, MAX_GALLERY_NAME_LENGTH);
-  const data = Buffer.from(await file.arrayBuffer()).toString("base64");
+  const rawBuffer = Buffer.from(await file.arrayBuffer());
+  const optimized = await optimizeImageForWeb(rawBuffer, file.type, GALLERY_PHOTO_MAX_DIMENSION);
+  const data = optimized.buffer.toString("base64");
   // The interactive form (a callback, not the array form used elsewhere in
   // this file) because the second write needs the first write's own result
   // (the new row's id) — the array form runs every statement independently
   // and can't thread a value between them.
   const image = await db.$transaction(async (tx) => {
     const created = await tx.directoryListingImage.create({
-      data: { mimeType: file.type, data, caption: caption || null, gallery: gallery || null, listingId: listing.id },
+      data: { mimeType: optimized.contentType, data, caption: caption || null, gallery: gallery || null, listingId: listing.id },
       select: { id: true },
     });
     await tx.partnerListing.update({
