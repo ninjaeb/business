@@ -14,9 +14,9 @@ declare global {
 //
 // OPENROUTER_MODEL (text-only requests: ai-insights.ts, testimonials.ts,
 // autoCreateListingDetails's tagline/description/services/faqs generation)
-// defaults to a few of OpenRouter's own top-ranked free models, verified
-// against its /rankings (real-world usage, free or paid) and /models
-// (capabilities) on 2026-09-27:
+// defaults to 10 of OpenRouter's own top free models, verified against its
+// /rankings (real-world usage, free or paid) and /models (capabilities) on
+// 2026-09-27, ordered as a priority list:
 //   1. nvidia/nemotron-3-ultra-550b-a55b:free — OpenRouter's #7
 //      highest-usage model platform-wide, and the top-ranked free one.
 //      Doesn't advertise json_object/response_format support in its
@@ -28,10 +28,22 @@ declare global {
 //   3. google/gemma-4-31b-it:free — different provider (spreads risk if
 //      NVIDIA's free endpoints get rate-limited), also advertises
 //      response_format support.
+//   4. google/gemma-4-26b-a4b-it:free — slightly smaller Gemma sibling,
+//      same response_format support.
+//   5. qwen/qwen3.8-27b:free — different provider again, response_format
+//      support.
+//   6. nvidia/nemotron-3.5-lightning:free — newer, lighter NVIDIA tier.
+//   7. thinkingmachines/inkling:free — 1M+ context, multimodal.
+//   8. thinkingmachines/inkling-small:free — same family, smaller/faster.
+//   9. nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free — omni-modal,
+//      reasoning-tuned.
+//   10. dots-studio/dots-3-note-preview:free — 512K context, vision,
+//       response_format support.
 // Listed as a priority list, not a single pin, precisely so this app isn't
 // betting everything on one free model staying available: if the first is
 // down, deprecated, or rate-limited, OpenRouter's own model-fallback
-// feature (see callAi's `models` field) automatically tries the next.
+// feature (see callAi's `models` field) automatically tries the next, all
+// the way down this list.
 //
 // OPENROUTER_VISION_MODEL (image-bearing requests: scan-business-card.ts,
 // scan-partner-business-card.ts) stays on "openrouter/free", OpenRouter's
@@ -47,7 +59,18 @@ declare global {
 // OpenRouter could route to, free or otherwise.
 export const OPENROUTER_MODEL =
   process.env.OPENROUTER_MODEL ||
-  "nvidia/nemotron-3-ultra-550b-a55b:free,nvidia/nemotron-3-super-120b-a12b:free,google/gemma-4-31b-it:free";
+  [
+    "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "nvidia/nemotron-3-super-120b-a12b:free",
+    "google/gemma-4-31b-it:free",
+    "google/gemma-4-26b-a4b-it:free",
+    "qwen/qwen3.8-27b:free",
+    "nvidia/nemotron-3.5-lightning:free",
+    "thinkingmachines/inkling:free",
+    "thinkingmachines/inkling-small:free",
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "dots-studio/dots-3-note-preview:free",
+  ].join(",");
 export const OPENROUTER_VISION_MODEL = process.env.OPENROUTER_VISION_MODEL || "openrouter/free";
 
 // Splits one of the constants above (or their env override) into a primary
