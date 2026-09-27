@@ -231,9 +231,17 @@ export function toEmbeddableVideoUrl(rawUrl: string): { embedUrl: string; provid
     if (/^\/(reel|share\/r)\//.test(url.pathname)) return null;
     return { embedUrl: `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(rawUrl)}&show_text=false`, provider };
   }
-  // tiktok
+  // tiktok — player/v1 is TikTok's own documented embed-player endpoint
+  // (developers.tiktok.com/docs/en/embed-player), a lightweight dedicated
+  // player app. embed/v2 (the URL TikTok's oEmbed response's HTML snippet
+  // points at) instead loads a cut-down copy of the full TikTok web app,
+  // which is far more prone to showing an internal "overload-protect
+  // triggered" wall in place of the video — a known, broadly-reported
+  // TikTok-side embed reliability issue, not something specific to this
+  // site. Same query-string convention as every other provider here, so
+  // the lightbox's shared `?autoplay=1` append still works unchanged.
   const match = /\/video\/(\d+)/.exec(url.pathname);
-  return match ? { embedUrl: `https://www.tiktok.com/embed/v2/${match[1]}`, provider } : null;
+  return match ? { embedUrl: `https://www.tiktok.com/player/v1/${match[1]}`, provider } : null;
 }
 
 // A listing's service/product catalog — see ServicesEditor. `description`
@@ -834,6 +842,17 @@ export function countListingsByCategory(rows: { listing: Pick<PublishedListingSn
     }
   }
   return counts;
+}
+
+// The top few category names among a set of rows, most-common first — used
+// by locationPageDescription (directory-location-labels.ts) to say what a
+// location's businesses actually do instead of a generic "browse trusted
+// businesses" line.
+export function topCategoryNames(rows: { listing: Pick<PublishedListingSnapshot, "categories"> }[], limit = 3): string[] {
+  return [...countListingsByCategory(rows).entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, limit)
+    .map(([name]) => name);
 }
 
 // One entry per distinct city+state a published listing carries — the

@@ -22,7 +22,7 @@ import {
   DIRECTORY_SITE_NAME_BY_LOCALE,
   OG_LOCALE_BY_DIRECTORY_LOCALE,
   buildLanguageAlternates,
-  directoryShareImage,
+  pageShareImage,
 } from "@/lib/directory-seo";
 import {
   findIndustryBySlug,
@@ -47,7 +47,7 @@ export async function buildIndustryMetadata(industrySlugParam: string, locale: D
   const title = industryPageTitle(industry, locale);
   const description = industryPageDescription(industry, locale);
   const url = `${siteOrigin}${industryPath(industry, locale)}`;
-  const shareImage = directoryShareImage(siteOrigin, locale);
+  const shareImage = pageShareImage(url, industryPageHeading(industry, locale));
 
   return {
     title,

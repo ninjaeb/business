@@ -160,6 +160,17 @@ export function formatViewsLabel(count: number, locale: DirectoryLocale): string
   return count === 1 ? "1 view" : `${count.toLocaleString()} views`;
 }
 
+// An album's photo count, shown on its cover card in the album grid (see
+// AlbumGrid) — plural-aware and kept as its own function for the same
+// reason as formatViewsLabel above: it branches on count, and
+// DIRECTORY_STRINGS can't hold a function value once it's passed whole into
+// a "use client" component.
+export function formatPhotoCountLabel(count: number, locale: DirectoryLocale): string {
+  if (locale === "zh") return `${count.toLocaleString()} 张照片`;
+  if (locale === "ms") return `${count.toLocaleString()} foto`;
+  return count === 1 ? "1 photo" : `${count.toLocaleString()} photos`;
+}
+
 export type DirectoryLeadFormErrorCode =
   | "name_required"
   | "email_required"
@@ -266,6 +277,12 @@ export type DirectoryStrings = {
   // Chinese's "在{provider}观看", verb last).
   watchOnProviderLabel: string;
   photosHeading: string;
+  // The Photos page's own album-grid view (see AlbumGrid) — the link back
+  // out of one album's own photos, and the fallback heading over any photos
+  // that aren't in a named album (see DirectoryListingImage.gallery), shown
+  // beneath the album grid rather than left unreachable.
+  backToAlbumsLabel: string;
+  otherPhotosLabel: string;
   updatesHeading: string;
   newsLabel: string;
   promotionLabel: string;
@@ -438,6 +455,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     videoHeading: "Videos",
     watchOnProviderLabel: "Watch on {provider}",
     photosHeading: "Photos",
+    backToAlbumsLabel: "Back to albums",
+    otherPhotosLabel: "Other photos",
     updatesHeading: "News & Promotions",
     newsLabel: "News",
     promotionLabel: "Promotion",
@@ -597,6 +616,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     videoHeading: "视频",
     watchOnProviderLabel: "在{provider}观看",
     photosHeading: "照片",
+    backToAlbumsLabel: "返回相册",
+    otherPhotosLabel: "其他照片",
     updatesHeading: "新闻与促销",
     newsLabel: "新闻",
     promotionLabel: "促销",
@@ -755,6 +776,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     videoHeading: "Video",
     watchOnProviderLabel: "Tonton di {provider}",
     photosHeading: "Foto",
+    backToAlbumsLabel: "Kembali ke album",
+    otherPhotosLabel: "Foto lain",
     updatesHeading: "Berita & Promosi",
     newsLabel: "Berita",
     promotionLabel: "Promosi",
