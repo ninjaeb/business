@@ -25,7 +25,7 @@ extracted from).
   inquiry comes in, replies to inquiries, and runs a small private CRM of
   its own: Companies, Contacts, Deals, Tasks, strictly scoped to that one
   account.
-- **AI-assisted listing content** *(optional, needs `GEMINI_API_KEY`)*
+- **AI-assisted listing content** *(optional, needs `OPENROUTER_API_KEY`)*
   — rewrite/expand the About text, generate services or FAQ entries, write
   SEO title/description, translate the whole listing into 中文/Malay, or
   auto-create an entire draft listing from a Google Maps listing + website
