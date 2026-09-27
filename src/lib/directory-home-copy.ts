@@ -11,7 +11,14 @@ import type { FaqEntry } from "@/lib/directory";
 // aspirational. The FAQ doubles as FAQPage JSON-LD (see buildFaqJsonLd).
 export type DirectoryHomeCopy = {
   aboutHeading: string;
-  aboutBody: string;
+  // Split rather than one dense paragraph: aboutIntro is the direct,
+  // one-sentence answer to "what is this" right under the heading (what an
+  // AI answer engine actually quotes when asked), aboutPoints turns the
+  // rest ("what's on every listing page") into a scannable list instead of
+  // burying it in prose — AI extraction tools prefer a structured list over
+  // one long sentence carrying five facts at once.
+  aboutIntro: string;
+  aboutPoints: string[];
   browseHeading: string;
   browseIntro: string;
   listingCount: (count: number) => string;
@@ -29,8 +36,14 @@ export type DirectoryHomeCopy = {
 export const DIRECTORY_HOME_COPY: Record<DirectoryLocale, DirectoryHomeCopy> = {
   en: {
     aboutHeading: "About the Gotka Business Directory",
-    aboutBody:
-      "The Gotka Business Directory is a curated list of businesses in the Gotka partner network, published by Gotka Technologies. Every listing is reviewed before it goes live and has its own page covering the business's products and services, location, opening hours, and frequently asked questions — plus a contact form that reaches the business directly. The directory is free to browse and available in English, Chinese, and Malay.",
+    aboutIntro:
+      "The Gotka Business Directory is a free, curated directory of businesses in the Gotka partner network, published by Gotka Technologies.",
+    aboutPoints: [
+      "Every listing is reviewed and approved by the Gotka team before it goes live.",
+      "Each business has its own page: products and services, location, opening hours, and FAQs.",
+      "A contact form on every listing sends your message straight to that business.",
+      "Available in English, Chinese, and Malay, each with its own URL.",
+    ],
     browseHeading: "Browse by category",
     browseIntro: "Jump straight to the businesses in a category.",
     listingCount: (count) => (count === 1 ? "1 business" : `${count} businesses`),
@@ -86,8 +99,13 @@ export const DIRECTORY_HOME_COPY: Record<DirectoryLocale, DirectoryHomeCopy> = {
   },
   zh: {
     aboutHeading: "关于 Gotka 企业目录",
-    aboutBody:
-      "Gotka 企业目录由 Gotka Technologies 发布，收录 Gotka 合作伙伴网络中经过筛选的企业。每个企业在上线前都会经过审核，并拥有自己的页面，介绍其产品与服务、地点、营业时间和常见问题，还提供可直接联系该企业的联系表单。目录可免费浏览，提供英文、中文和马来文版本。",
+    aboutIntro: "Gotka 企业目录是由 Gotka Technologies 发布的免费企业目录，收录 Gotka 合作伙伴网络中经过筛选的企业。",
+    aboutPoints: [
+      "每个企业在上线前都会经过 Gotka 团队审核并批准。",
+      "每个企业都有自己的页面：产品与服务、地点、营业时间和常见问题。",
+      "每个企业页面的联系表单会将您的信息直接发送给该企业。",
+      "提供英文、中文和马来文版本，各自拥有独立网址。",
+    ],
     browseHeading: "按类别浏览",
     browseIntro: "直接查看某个类别下的企业。",
     listingCount: (count) => `${count} 家企业`,
@@ -139,8 +157,14 @@ export const DIRECTORY_HOME_COPY: Record<DirectoryLocale, DirectoryHomeCopy> = {
   },
   ms: {
     aboutHeading: "Tentang Direktori Perniagaan Gotka",
-    aboutBody:
-      "Direktori Perniagaan Gotka ialah senarai terpilih perniagaan dalam rangkaian rakan kongsi Gotka, diterbitkan oleh Gotka Technologies. Setiap penyenaraian disemak sebelum disiarkan dan mempunyai halaman sendiri yang merangkumi produk dan perkhidmatan, lokasi, waktu operasi dan soalan lazim perniagaan itu — serta borang hubungan yang terus sampai kepada perniagaan tersebut. Direktori ini percuma untuk dilayari dan tersedia dalam Bahasa Inggeris, Cina dan Melayu.",
+    aboutIntro:
+      "Direktori Perniagaan Gotka ialah direktori percuma dan terpilih bagi perniagaan dalam rangkaian rakan kongsi Gotka, diterbitkan oleh Gotka Technologies.",
+    aboutPoints: [
+      "Setiap penyenaraian disemak dan diluluskan oleh pasukan Gotka sebelum disiarkan.",
+      "Setiap perniagaan mempunyai halaman sendiri: produk dan perkhidmatan, lokasi, waktu operasi dan soalan lazim.",
+      "Borang hubungan pada setiap penyenaraian menghantar mesej anda terus kepada perniagaan itu.",
+      "Tersedia dalam Bahasa Inggeris, Cina dan Melayu, setiap satu dengan URL sendiri.",
+    ],
     browseHeading: "Layari mengikut kategori",
     browseIntro: "Terus ke perniagaan dalam sesuatu kategori.",
     listingCount: (count) => `${count} perniagaan`,
