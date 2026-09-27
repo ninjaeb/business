@@ -269,7 +269,19 @@ export async function callAi<T>(
       return { status: "error", message: "The model didn't return a usable response." };
     }
 
-    const parsed = schema.safeParse(JSON.parse(text));
+    // A free/lite model under json_object mode isn't guaranteed to emit
+    // valid JSON the way native structured-output modes are — parsed here
+    // rather than left to throw into the outer catch below, which would
+    // otherwise surface as the unhelpful generic "AI request failed
+    // unexpectedly." instead of this same "didn't return a usable
+    // response" message a failed schema check already gives.
+    let json: unknown;
+    try {
+      json = JSON.parse(text);
+    } catch {
+      return { status: "error", message: "The model didn't return a usable response." };
+    }
+    const parsed = schema.safeParse(json);
     if (!parsed.success) {
       return { status: "error", message: "The model didn't return a usable response." };
     }
