@@ -796,7 +796,7 @@ export type AddressFromPlace = { address: string | null; city: string | null; st
 // above the Address/City/State/Country fields. A single Place Details call
 // per selection, same source as autoCreateListingDetails' own address fill
 // but without the AI pass or anything else that call does — just the
-// parsed address facts, so filling in an address never needs OPENROUTER_API_KEY.
+// parsed address facts, so filling in an address never needs GEMINI_API_KEY.
 export async function getAddressFromGooglePlace(placeId: string): Promise<AiResult<AddressFromPlace>> {
   await requirePartnerAction();
   if (!isGooglePlacesConfigured()) return PLACES_NOT_CONFIGURED;
@@ -1756,7 +1756,7 @@ export type SeoBackfillState = { error: string } | { success: true; updated: num
 export async function backfillListingSeoMeta(): Promise<SeoBackfillState> {
   await requireAdminAction();
   if (!isAiConfigured()) {
-    return { error: "AI isn't configured — set OPENROUTER_API_KEY to enable this." };
+    return { error: "AI isn't configured — set GEMINI_API_KEY to enable this." };
   }
 
   const listings = await db.partnerListing.findMany({

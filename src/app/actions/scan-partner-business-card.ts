@@ -45,7 +45,7 @@ export type ScanCardResult = { status: "ok"; data: ContactDraft } | { status: "e
 export async function scanPartnerBusinessCard(formData: FormData): Promise<ScanCardResult> {
   const partner = await requirePartnerAction();
   if (!isAiConfigured()) {
-    return { status: "error", message: "AI features aren't configured — set OPENROUTER_API_KEY to enable them." };
+    return { status: "error", message: "AI features aren't configured — set GEMINI_API_KEY to enable them." };
   }
 
   const file = formData.get("photo");

@@ -28,7 +28,10 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
     (variant: ToastVariant, message: string) => {
       const id = nextId.current++;
       setToasts((current) => [...current, { id, message, variant }]);
-      setTimeout(() => dismiss(id), AUTO_DISMISS_MS);
+      // Errors stay until the user dismisses them (via the X button below)
+      // — an auto-dismissed error is easy to miss entirely, unlike a
+      // success toast that's just confirming something already visible.
+      if (variant === "success") setTimeout(() => dismiss(id), AUTO_DISMISS_MS);
     },
     [dismiss],
   );
