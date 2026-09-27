@@ -8,35 +8,59 @@ declare global {
 }
 
 // Both overridable per deployment (e.g. to a stronger or paid model) without
-// a code change — see callAi below for which one a given request uses.
+// a code change — see callAi below for which one a given request uses and
+// how a comma-separated value becomes a primary model plus OpenRouter
+// fallbacks.
 //
 // OPENROUTER_MODEL (text-only requests: ai-insights.ts, testimonials.ts,
 // autoCreateListingDetails's tagline/description/services/faqs generation)
-// defaults to nvidia/nemotron-3-ultra-550b-a55b:free — OpenRouter's #7
-// highest-usage model platform-wide (free or paid) as of 2026-09-27's
-// /rankings, and the top-ranked free one specifically. Pinned rather than
-// left on the dynamic router below for more predictable output quality,
-// at the cost of breaking if OpenRouter later removes it from the free
-// tier. It doesn't advertise json_object / response_format support in its
-// OpenRouter model listing, so a reply that isn't valid JSON is possible —
-// callAi's existing JSON.parse/Zod validation already surfaces that as a
-// normal "AI request failed" error rather than crashing, so this is a
-// quality/reliability tradeoff, not a correctness one.
+// defaults to a few of OpenRouter's own top-ranked free models, verified
+// against its /rankings (real-world usage, free or paid) and /models
+// (capabilities) on 2026-09-27:
+//   1. nvidia/nemotron-3-ultra-550b-a55b:free — OpenRouter's #7
+//      highest-usage model platform-wide, and the top-ranked free one.
+//      Doesn't advertise json_object/response_format support in its
+//      OpenRouter listing, so a reply that isn't valid JSON is possible —
+//      callAi's existing JSON.parse/Zod validation already surfaces that
+//      as a normal "AI request failed" error rather than crashing.
+//   2. nvidia/nemotron-3-super-120b-a12b:free — smaller sibling of #1,
+//      explicitly advertises response_format support.
+//   3. google/gemma-4-31b-it:free — different provider (spreads risk if
+//      NVIDIA's free endpoints get rate-limited), also advertises
+//      response_format support.
+// Listed as a priority list, not a single pin, precisely so this app isn't
+// betting everything on one free model staying available: if the first is
+// down, deprecated, or rate-limited, OpenRouter's own model-fallback
+// feature (see callAi's `models` field) automatically tries the next.
 //
 // OPENROUTER_VISION_MODEL (image-bearing requests: scan-business-card.ts,
 // scan-partner-business-card.ts) stays on "openrouter/free", OpenRouter's
-// own dynamic free-tier router — Nemotron 3 Ultra above is text-only and
-// can't take the image_url content those two callers send. The router
-// picks whichever free backend model is currently available and capable
-// of the request, including vision and tool calling, rather than pinning
-// this app to one specific free vision model that might get deprecated or
-// rate-limited on its own.
+// own dynamic free-tier router — every model above is text-only and can't
+// take the image_url content those two callers send. The router picks
+// whichever free backend model is currently available and capable of the
+// request, including vision and tool calling, rather than pinning this app
+// to one specific free vision model that might get deprecated or rate-
+// limited on its own.
 //
 // Both use plain json_object mode (not OpenAI's stricter json_schema mode)
 // for structured output, since it's supported by virtually every model
 // OpenRouter could route to, free or otherwise.
-export const OPENROUTER_MODEL = process.env.OPENROUTER_MODEL || "nvidia/nemotron-3-ultra-550b-a55b:free";
+export const OPENROUTER_MODEL =
+  process.env.OPENROUTER_MODEL ||
+  "nvidia/nemotron-3-ultra-550b-a55b:free,nvidia/nemotron-3-super-120b-a12b:free,google/gemma-4-31b-it:free";
 export const OPENROUTER_VISION_MODEL = process.env.OPENROUTER_VISION_MODEL || "openrouter/free";
+
+// Splits one of the constants above (or their env override) into a primary
+// model plus fallbacks for OpenRouter's model-fallback feature — a single
+// value with no comma is just a one-element priority list, so this also
+// covers OPENROUTER_VISION_MODEL's plain "openrouter/free" default.
+function parseModelPriorityList(value: string): { model: string; fallbacks: string[] } {
+  const [model, ...fallbacks] = value
+    .split(",")
+    .map((id) => id.trim())
+    .filter(Boolean);
+  return { model, fallbacks };
+}
 
 export function isAiConfigured() {
   return Boolean(process.env.OPENROUTER_API_KEY);
@@ -100,7 +124,12 @@ export const AI_NOT_CONFIGURED: AiResult<never> = {
 // Which one it is also picks OPENROUTER_MODEL vs OPENROUTER_VISION_MODEL
 // (see their own comments above) — an image_url part means the request
 // needs a vision-capable model, which OPENROUTER_MODEL's pinned default
-// isn't.
+// isn't. Each constant's own priority list becomes a primary `model` plus
+// an OpenRouter `models` fallback array (see parseModelPriorityList) — an
+// OpenRouter extension the official chat-completions type doesn't declare,
+// so the params object is typed loosely enough to carry it; the openai SDK
+// just serializes whatever's on this object into the request body, so the
+// extra field reaches OpenRouter same as it would over a raw HTTP call.
 //
 // There's no cross-provider equivalent of Gemini's native responseJsonSchema
 // reliable enough to depend on for every model these constants might be set
@@ -115,8 +144,10 @@ export async function callAi<T>(
   try {
     const client = getOpenRouterClient();
     const hasImage = Array.isArray(userContent) && userContent.some((part) => part.type === "image_url");
-    const response = await client.chat.completions.create({
-      model: hasImage ? OPENROUTER_VISION_MODEL : OPENROUTER_MODEL,
+    const { model, fallbacks } = parseModelPriorityList(hasImage ? OPENROUTER_VISION_MODEL : OPENROUTER_MODEL);
+    const params: OpenAI.Chat.Completions.ChatCompletionCreateParamsNonStreaming & { models?: string[] } = {
+      model,
+      ...(fallbacks.length > 0 ? { models: fallbacks } : {}),
       response_format: { type: "json_object" },
       messages: [
         {
@@ -125,7 +156,8 @@ export async function callAi<T>(
         },
         { role: "user", content: userContent },
       ],
-    });
+    };
+    const response = await client.chat.completions.create(params);
 
     const choice = response.choices[0];
     const finishReason = choice?.finish_reason;
