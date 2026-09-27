@@ -980,6 +980,31 @@ export async function createListingAction(): Promise<never> {
   redirect(`/business-portal/listings/${listing.id}`);
 }
 
+// Deletes a listing outright — offered only for one that's still a draft
+// AND has never been published (see PartnerListingsPage's own Delete
+// button). status alone isn't enough: an already-published listing that's
+// since been edited reverts to DRAFT pending its next approval but keeps
+// its last publishedSnapshot live on the public site the whole time (see
+// buildPublishedSnapshot) — deleting one of those would silently take down
+// a real, possibly-indexed public page and its tracked view history. A
+// listing that's genuinely never been live has no snapshot at all yet, so
+// checking for one is exactly the distinction that matters, not merely
+// mirroring status's own name. Ownership is checked the same way every
+// other listing action does. PartnerListingCategory/DirectoryListingImage/
+// DirectoryLead rows all cascade with it (see schema.prisma) — nothing else
+// to clean up by hand.
+export async function deleteListingAction(id: string, formData: FormData): Promise<void> {
+  void formData;
+  const partner = await requirePartnerAction();
+  const listing = await getOwnedListing(id, partner.id);
+  if (!listing) throw new Error("Listing not found.");
+  if (listing.status !== "DRAFT" || listing.publishedSnapshot !== null) {
+    throw new Error("Only a listing that's never been published can be deleted.");
+  }
+  await db.partnerListing.delete({ where: { id } });
+  revalidatePath("/business-portal/listings");
+}
+
 type ListingSaveResult =
   | { ok: false; error: string; field?: ListingFormField; values: ListingFormValues }
   | { ok: true; listing: Awaited<ReturnType<typeof db.partnerListing.update>> };
