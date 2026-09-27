@@ -7,14 +7,16 @@ declare global {
   var openRouterClientGlobal: OpenAI | undefined;
 }
 
-// Overridable per deployment (e.g. to a stronger or cheaper model) without a
-// code change. gpt-4o-mini is the default: cheap, fast, supports vision (for
-// scan-business-card.ts) and follows a JSON-shape instruction reliably —
-// unlike OpenAI's own "strict" json_schema mode, plain json_object mode is
-// supported by virtually every model OpenRouter routes to, so switching
-// OPENROUTER_MODEL to a different provider's model doesn't risk breaking
-// structured output.
-export const OPENROUTER_MODEL = process.env.OPENROUTER_MODEL || "openai/gpt-4o-mini";
+// Overridable per deployment (e.g. to a stronger or paid model) without a
+// code change. "openrouter/free" is the default: OpenRouter's own dynamic
+// free-tier router, which picks whichever free backend model is currently
+// available and capable of the request — including vision (for
+// scan-business-card.ts) and tool calling — at no cost, rather than pinning
+// this app to one specific free model that might get deprecated or rate-
+// limited on its own. Plain json_object mode (not OpenAI's stricter
+// json_schema mode) is used for structured output since it's supported by
+// virtually every model OpenRouter could route to, free or otherwise.
+export const OPENROUTER_MODEL = process.env.OPENROUTER_MODEL || "openrouter/free";
 
 export function isAiConfigured() {
   return Boolean(process.env.OPENROUTER_API_KEY);
