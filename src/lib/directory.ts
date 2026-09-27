@@ -1288,6 +1288,90 @@ export async function getOwnedListing(listingId: string, partnerId: string): Pro
   return db.partnerListing.findFirst({ where: { id: listingId, partnerId } });
 }
 
+// PartnerListingBranchLink stores each pair once, smaller id first — lets
+// "branches of X" be a single OR query below instead of needing a link
+// written in both directions.
+function branchLinkPairKey(a: string, b: string): [string, string] {
+  return a < b ? [a, b] : [b, a];
+}
+
+// Every listing linked to this one as a branch, in either direction —
+// symmetric regardless of which listing's editor originally created the
+// link (see the model's own comment in schema.prisma).
+export async function getListingBranchIds(listingId: string): Promise<string[]> {
+  const links = await db.partnerListingBranchLink.findMany({
+    where: { OR: [{ listingAId: listingId }, { listingBId: listingId }] },
+    select: { listingAId: true, listingBId: true },
+  });
+  return links.map((link) => (link.listingAId === listingId ? link.listingBId : link.listingAId));
+}
+
+// Reconciles listingId's branch links to exactly branchIds — same
+// "validate against rows the partner actually owns, then diff and write"
+// shape as categoryIds in saveListingFields, just against PartnerListing
+// instead of BusinessCategory. Silently drops any id that isn't one of the
+// partner's own other listings rather than erroring, same as a stale
+// category id would be.
+export async function setListingBranchIds(listingId: string, branchIds: string[], partnerId: string): Promise<void> {
+  const validBranches = branchIds.length
+    ? await db.partnerListing.findMany({
+        where: { id: { in: branchIds }, partnerId, NOT: { id: listingId } },
+        select: { id: true },
+      })
+    : [];
+  const validIds = new Set(validBranches.map((branch) => branch.id));
+
+  const existingLinks = await db.partnerListingBranchLink.findMany({
+    where: { OR: [{ listingAId: listingId }, { listingBId: listingId }] },
+  });
+  const existingOtherIds = new Set(
+    existingLinks.map((link) => (link.listingAId === listingId ? link.listingBId : link.listingAId)),
+  );
+
+  const toDelete = existingLinks.filter((link) => {
+    const otherId = link.listingAId === listingId ? link.listingBId : link.listingAId;
+    return !validIds.has(otherId);
+  });
+  const toCreate = [...validIds].filter((id) => !existingOtherIds.has(id));
+  if (toDelete.length === 0 && toCreate.length === 0) return;
+
+  await db.$transaction([
+    ...(toDelete.length ? [db.partnerListingBranchLink.deleteMany({ where: { id: { in: toDelete.map((link) => link.id) } } })] : []),
+    ...toCreate.map((otherId) => {
+      const [listingAId, listingBId] = branchLinkPairKey(listingId, otherId);
+      return db.partnerListingBranchLink.create({ data: { listingAId, listingBId } });
+    }),
+  ]);
+}
+
+export type ListingBranchSummary = { companyName: string; slug: string; address: string | null; city: string | null; state: string | null };
+
+// For the public Visit us page — every linked branch that's actually live,
+// with just enough of its own current publishedSnapshot to show and link
+// to it. A branch that's since been unpublished or deleted simply drops
+// out here rather than needing its link cleaned up separately.
+export async function getPublishedBranchListings(listingId: string): Promise<ListingBranchSummary[]> {
+  const branchIds = await getListingBranchIds(listingId);
+  if (branchIds.length === 0) return [];
+  // Not filtered by status: "PUBLISHED" — same reasoning as
+  // loadPublishedListings, which reads every row and keeps whichever have
+  // a snapshot. A listing mid-edit (back to DRAFT until re-approved, see
+  // saveListingFields) still shows its last-approved snapshot everywhere
+  // else on the public site, so a branch link to it shouldn't disappear
+  // just because its owner is currently editing something else on it.
+  const rows = await db.partnerListing.findMany({
+    where: { id: { in: branchIds } },
+    select: { slug: true, publishedSnapshot: true },
+  });
+  return rows
+    .map((row) => {
+      const snapshot = readPublishedSnapshot(row.publishedSnapshot);
+      if (!snapshot) return null;
+      return { companyName: snapshot.companyName, slug: row.slug, address: snapshot.address, city: snapshot.city, state: snapshot.state };
+    })
+    .filter((entry): entry is ListingBranchSummary => entry !== null);
+}
+
 const VIEW_COUNT_FIELD_BY_LOCALE = {
   en: "viewCountEn",
   zh: "viewCountZh",

@@ -6,6 +6,7 @@ import {
   directoryImagePath,
   formatOpeningHoursSchema,
   getOrCreateReferralCode,
+  getPublishedBranchListings,
   getPublishedListingBySlug,
   incrementListingViewCount,
   listingLogoPath,
@@ -185,7 +186,7 @@ export default async function ListingLayout({
   const listing = await getPublishedListingBySlug(slug);
   if (!listing) notFound();
 
-  const [siteOrigin, , referralCode, viewer] = await Promise.all([
+  const [siteOrigin, , referralCode, viewer, branches] = await Promise.all([
     getSiteOrigin(),
     // Runs once per visit to this listing, not once per page: Next.js keeps
     // a layout mounted across client-side navigation between its own child
@@ -200,6 +201,12 @@ export default async function ListingLayout({
     // whether recommendUrl below gets a personalized `via` tag; never
     // gates the Recommend button itself (see its own comment).
     getVerifiedPartnerOrNull(),
+    // Only to decide whether the Visit us tab below should show at all for
+    // a listing with no address/hours of its own but at least one live
+    // branch — the Visit page itself re-fetches this same list (same
+    // "every section page re-queries the same request-scoped listing"
+    // pattern getPublishedListingBySlug's own comment describes).
+    getPublishedBranchListings(listing.id),
   ]);
   const t = DIRECTORY_STRINGS[resolved];
   const display = resolveListingDisplay(listing, resolved);
@@ -267,7 +274,10 @@ export default async function ListingLayout({
     // Right after About — "where/when to visit" is core identity info a
     // visitor wants placed next to "what this business is," not buried
     // behind the content tabs.
-    (listing.address || listing.operatingHours) && { href: directoryListingVisitPath(resolved, slug), label: t.visitHeading },
+    (listing.address || listing.operatingHours || branches.length > 0) && {
+      href: directoryListingVisitPath(resolved, slug),
+      label: t.visitHeading,
+    },
     display.services.length > 0 && { href: directoryListingServicesPath(resolved, slug), label: t.servicesHeading },
     // Right after Products & Services (not second-to-last) — a shopper
     // deciding what to buy is exactly who wants "any questions about
