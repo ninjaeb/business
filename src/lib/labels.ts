@@ -99,16 +99,18 @@ export const PARTNER_LISTING_STATUS_BADGE_CLASSES: Record<PartnerListingStatus, 
   REJECTED: "bg-rose-50 text-rose-700 ring-rose-600/20 dark:bg-rose-950 dark:text-rose-300 dark:ring-rose-500/30",
 };
 
-// Declared in the order the partner's status picker lists them.
-export const DIRECTORY_LEAD_STATUSES: DirectoryLeadStatus[] = ["NEW", "PICKED_UP", "CONTACTED", "QUOTED", "WON", "LOST"];
+// Declared in the order the partner's status picker lists them. Picking
+// "Qualified Deal" there isn't one of these — it's a picker-only action
+// (see DirectoryLeadStatusSelect) that lands the lead on CLOSED_CONVERTED,
+// so it never needs to be a value this list, or the database column, can
+// actually hold.
+export const DIRECTORY_LEAD_STATUSES: DirectoryLeadStatus[] = ["NEW", "PICKED_UP", "CONTACTED", "CLOSED_CONVERTED"];
 
 export const DIRECTORY_LEAD_STATUS_LABELS: Record<DirectoryLeadStatus, string> = {
   NEW: "New",
   PICKED_UP: "Picked up",
   CONTACTED: "Contacted",
-  QUOTED: "Quoted",
-  WON: "Won",
-  LOST: "Lost",
+  CLOSED_CONVERTED: "Closed - Converted to Deal",
 };
 
 export const DIRECTORY_LEAD_STATUS_BADGE_CLASSES: Record<DirectoryLeadStatus, string> = {
@@ -117,10 +119,8 @@ export const DIRECTORY_LEAD_STATUS_BADGE_CLASSES: Record<DirectoryLeadStatus, st
     "bg-violet-50 text-violet-700 ring-violet-600/20 dark:bg-violet-950 dark:text-violet-300 dark:ring-violet-500/30",
   CONTACTED:
     "bg-amber-50 text-amber-700 ring-amber-600/20 dark:bg-amber-950 dark:text-amber-300 dark:ring-amber-500/30",
-  QUOTED:
-    "bg-orange-50 text-orange-700 ring-orange-600/20 dark:bg-orange-950 dark:text-orange-300 dark:ring-orange-500/30",
-  WON: "bg-emerald-50 text-emerald-700 ring-emerald-600/20 dark:bg-emerald-950 dark:text-emerald-300 dark:ring-emerald-500/30",
-  LOST: "bg-slate-100 text-slate-700 ring-slate-600/20 dark:bg-slate-800 dark:text-slate-300 dark:ring-slate-500/30",
+  CLOSED_CONVERTED:
+    "bg-emerald-50 text-emerald-700 ring-emerald-600/20 dark:bg-emerald-950 dark:text-emerald-300 dark:ring-emerald-500/30",
 };
 
 export const PARTNER_DEAL_STATUSES: PartnerDealStatus[] = ["OPEN", "WON", "LOST"];
