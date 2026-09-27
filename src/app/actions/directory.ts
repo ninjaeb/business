@@ -746,9 +746,14 @@ export async function translateListingContent(current: {
     "Translate all of the above, keeping the services, FAQ, and News/Promotions lists in the same order and count as given.",
   ].join("\n\n");
 
+  // Same longer budget as autoCreateListingDetails's own callAi (see its
+  // comment) — callAi's 20s default kept timing out here even after
+  // splitting into these two smaller per-language calls and forcing
+  // reasoning off, on the free models this app defaults to. Run in
+  // parallel, so this doesn't double the wait versus one call.
   const [zh, ms] = await Promise.all([
-    callAi(TranslationLocaleSchema, listingTranslationSystemPrompt("Simplified Chinese"), prompt),
-    callAi(TranslationLocaleSchema, listingTranslationSystemPrompt("Malay (Bahasa Malaysia)"), prompt),
+    callAi(TranslationLocaleSchema, listingTranslationSystemPrompt("Simplified Chinese"), prompt, { timeoutMs: 60_000 }),
+    callAi(TranslationLocaleSchema, listingTranslationSystemPrompt("Malay (Bahasa Malaysia)"), prompt, { timeoutMs: 60_000 }),
   ]);
   if (zh.status === "error") return zh;
   if (ms.status === "error") return ms;
