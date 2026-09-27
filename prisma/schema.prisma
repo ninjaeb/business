@@ -290,12 +290,19 @@ model PartnerListing {
   // "Post to Google" on a News/Promotion entry — never shown publicly.
   googleBusinessProfileUrl String?
   // The business's own public contact number — shown on the public listing
-  // page as click-to-call/WhatsApp buttons (see PublishedListingSnapshot's
-  // own comment on why this is a different thing from User.phone). Stored
+  // page as a click-to-call button (see PublishedListingSnapshot's own
+  // comment on why this is a different thing from User.phone). Stored
   // normalized (leading "+", no spaces/dashes — see normalizePhone in
   // src/lib/phone.ts), same convention as every other phone field in this
   // app (DirectoryLead.phone, User.phone).
   phone                    String?
+  // A separate number for the public WhatsApp button — deliberately not the
+  // same field as `phone` above, since a business's WhatsApp Business
+  // number is often different from the one it takes calls on. No Google
+  // Places field maps to this (Google Business Profile has no WhatsApp
+  // concept), so AI Auto Create never fills it in — a partner sets it by
+  // hand. Same normalized-string convention as `phone`.
+  whatsAppNumber           String?
   videos                   Json? // VideoEntry[] (src/lib/directory.ts) — {url, title, category, thumbnailUrl}
   address                  String?   @db.Text
   city                     String?

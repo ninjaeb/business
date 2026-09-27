@@ -399,6 +399,11 @@ export type DirectoryStrings = {
   formSubmitting: string;
   formSuccess: string;
   errors: Record<DirectoryLeadFormErrorCode, string>;
+  // The header's "Skip to main content" link (see DirectoryChrome) — visible
+  // only once focused (first Tab stop on the page), so a keyboard/screen
+  // reader visitor can jump past the header's nav links straight to the
+  // page's own content instead of tabbing through all of them first.
+  skipToContentLabel: string;
   stickyNavLabel: string;
   // aria-label for the header's own jump-to-section tab strip (see
   // ListingSectionNav) — same "read by assistive tech, not shown as text"
@@ -591,6 +596,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       invalid_submission: "Please check the form and try again.",
       generic: "Something went wrong. Please try again.",
     },
+    skipToContentLabel: "Skip to main content",
     stickyNavLabel: "Quick links",
     sectionNavLabel: "Page sections",
     breadcrumbNavLabel: "Breadcrumb",
@@ -770,6 +776,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       invalid_submission: "请检查表单内容后重试。",
       generic: "出现错误，请重试。",
     },
+    skipToContentLabel: "跳到主要内容",
     stickyNavLabel: "快捷链接",
     sectionNavLabel: "页面导航",
     breadcrumbNavLabel: "面包屑导航",
@@ -948,6 +955,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       invalid_submission: "Sila semak borang dan cuba lagi.",
       generic: "Berlaku ralat. Sila cuba lagi.",
     },
+    skipToContentLabel: "Langkau ke kandungan utama",
     stickyNavLabel: "Pautan pantas",
     sectionNavLabel: "Bahagian halaman",
     breadcrumbNavLabel: "Navigasi laluan",

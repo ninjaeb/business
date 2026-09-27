@@ -44,9 +44,11 @@ export { isValidSlugFormat, slugify } from "@/lib/slug";
 // them (see PartnerListing.publishedSnapshot in schema.prisma). Nothing a
 // partner is still editing, and nothing that's never been approved, is ever
 // visible here. Deliberately excludes the partner ACCOUNT's own
-// User.email/phone (private login contact info) — `phone` below is a
-// different thing: a business's own contact number the partner explicitly
-// sets on the listing itself, same opt-in-public convention as `website`.
+// User.email/phone (private login contact info) — `phone`/`whatsAppNumber`
+// below are a different thing: a business's own contact numbers the partner
+// explicitly sets on the listing itself, same opt-in-public convention as
+// `website`. Two separate fields, not one — see PartnerListing.whatsAppNumber's
+// own comment for why.
 export type PublishedListingSnapshot = {
   companyName: string;
   tagline: string | null;
@@ -55,6 +57,7 @@ export type PublishedListingSnapshot = {
   industry: Industry | null;
   website: string | null;
   phone: string | null;
+  whatsAppNumber: string | null;
   videos: VideoEntry[];
   address: string | null;
   city: string | null;
@@ -494,6 +497,7 @@ export function readPublishedSnapshot(value: unknown): PublishedListingSnapshot 
     industry: typeof raw.industry === "string" ? (raw.industry as Industry) : null,
     website: typeof raw.website === "string" ? raw.website : null,
     phone: typeof raw.phone === "string" ? raw.phone : null,
+    whatsAppNumber: typeof raw.whatsAppNumber === "string" ? raw.whatsAppNumber : null,
     videos: videosFromJson(raw.videos),
     address: typeof raw.address === "string" ? raw.address : null,
     city: typeof raw.city === "string" ? raw.city : null,
@@ -537,6 +541,7 @@ export function buildPublishedSnapshot(
     industry: listing.industry,
     website: listing.website,
     phone: listing.phone,
+    whatsAppNumber: listing.whatsAppNumber,
     videos: videosFromJson(listing.videos),
     address: listing.address,
     city: listing.city,
