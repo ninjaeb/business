@@ -48,7 +48,7 @@ export default async function PartnerListingEditorPage({ params }: { params: Pro
   return (
     <div className="space-y-6">
       <PageHeader
-        breadcrumbs={[{ label: "My listings", href: "/business-portal/listings" }, { label: listing.companyName }]}
+        breadcrumbs={[{ label: "My Business", href: "/business-portal/listings" }, { label: listing.companyName }]}
         title={listing.companyName}
         description="What visitors see on the business directory, and the form they use to reach you."
       />
