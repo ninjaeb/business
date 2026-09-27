@@ -276,42 +276,49 @@ model PartnerListing {
   referralCode String?              @unique
   status       PartnerListingStatus @default(DRAFT)
 
-  companyName    String
-  tagline        String?
-  description    String?   @db.Text
-  services       Json // ServiceEntry[] (src/lib/directory.ts) — {title, description, price}
-  industry       Industry?
-  website        String?
+  companyName              String
+  tagline                  String?
+  description              String?   @db.Text
+  services                 Json // ServiceEntry[] (src/lib/directory.ts) — {title, description, price}
+  industry                 Industry?
+  website                  String?
+  // The partner's own Google Business Profile share link (Profile > Share)
+  // — pasted in by hand, not fetched via any Google API (see
+  // formatUpdateForGoogleBusinessProfile in src/lib/google-business-profile.ts
+  // for why: Google restricts programmatic posting to approved partners).
+  // Used only to open the partner's own profile in a new tab when they use
+  // "Post to Google" on a News/Promotion entry — never shown publicly.
+  googleBusinessProfileUrl String?
   // The business's own public contact number — shown on the public listing
   // page as a click-to-call button (see PublishedListingSnapshot's own
   // comment on why this is a different thing from User.phone). Stored
   // normalized (leading "+", no spaces/dashes — see normalizePhone in
   // src/lib/phone.ts), same convention as every other phone field in this
   // app (DirectoryLead.phone, User.phone).
-  phone          String?
+  phone                    String?
   // A separate number for the public WhatsApp button — deliberately not the
   // same field as `phone` above, since a business's WhatsApp Business
   // number is often different from the one it takes calls on. No Google
   // Places field maps to this (Google Business Profile has no WhatsApp
   // concept), so AI Auto Create never fills it in — a partner sets it by
   // hand. Same normalized-string convention as `phone`.
-  whatsAppNumber String?
-  videos         Json? // VideoEntry[] (src/lib/directory.ts) — {url, title, category, thumbnailUrl}
-  address        String?   @db.Text
-  city           String?
-  state          String?
-  country        String?
-  operatingHours Json? // OperatingHours (src/lib/directory.ts)
-  faqs           Json? // FaqEntry[] (src/lib/directory.ts) — {question, answer}
-  updates        Json? // ListingUpdateEntry[] (src/lib/directory.ts) — {kind, title, body, endDate}
-  translations   Json? // ListingTranslations (src/lib/directory.ts) — {zh?, ms?}
-  logoUrl        String?   @db.Text // data: URL
+  whatsAppNumber           String?
+  videos                   Json? // VideoEntry[] (src/lib/directory.ts) — {url, title, category, thumbnailUrl}
+  address                  String?   @db.Text
+  city                     String?
+  state                    String?
+  country                  String?
+  operatingHours           Json? // OperatingHours (src/lib/directory.ts)
+  faqs                     Json? // FaqEntry[] (src/lib/directory.ts) — {question, answer}
+  updates                  Json? // ListingUpdateEntry[] (src/lib/directory.ts) — {kind, title, body, endDate}
+  translations             Json? // ListingTranslations (src/lib/directory.ts) — {zh?, ms?}
+  logoUrl                  String?   @db.Text // data: URL
   // Ordered DirectoryListingImage ids selected as gallery photos (see
   // uploadListingGalleryPhoto in src/app/actions/directory-images.ts) —
   // display order is this array's own order.
-  photoIds       String[]  @default([])
-  seoTitle       String?
-  seoDescription String?
+  photoIds                 String[]  @default([])
+  seoTitle                 String?
+  seoDescription           String?
 
   reviewNote        String?   @db.Text
   submittedAt       DateTime?

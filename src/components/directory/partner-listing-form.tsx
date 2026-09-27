@@ -190,6 +190,7 @@ export function PartnerListingForm({
   const [autoSlugSource, setAutoSlugSource] = useState<string | undefined>(undefined);
   const [tagline, setTagline] = useState(current.tagline);
   const [website, setWebsite] = useState(current.website);
+  const [googleBusinessProfileUrl, setGoogleBusinessProfileUrl] = useState(current.googleBusinessProfileUrl);
   const [phone, setPhone] = useState(current.phone);
   const [whatsAppNumber, setWhatsAppNumber] = useState(current.whatsAppNumber);
   const [videos, setVideos] = useState<VideoEntry[]>(current.videos);
@@ -1104,6 +1105,20 @@ export function PartnerListingForm({
           once its end date passes.
         </p>
 
+        <FieldGroup label="Google Business Profile link" htmlFor="googleBusinessProfileUrl">
+          <Input
+            id="googleBusinessProfileUrl"
+            name="googleBusinessProfileUrl"
+            value={googleBusinessProfileUrl}
+            onChange={(event) => setGoogleBusinessProfileUrl(event.target.value)}
+            placeholder="https://g.page/r/..."
+          />
+          <p className="mt-1 text-xs text-slate-400">
+            Optional — open your Google Business Profile, tap Share, and paste the link here. Each post below then
+            gets a &quot;Post to Google&quot; button that copies it and opens your profile to paste it in.
+          </p>
+        </FieldGroup>
+
         {languageSwitcher}
         <p className="-mt-1 text-xs text-slate-400">
           Posts are per-language — switch tabs to edit each, or use Translate with AI to fill in Chinese and Malay
@@ -1112,7 +1127,14 @@ export function PartnerListingForm({
         </p>
 
         <div hidden={activeTab !== "en"}>
-          <UpdatesEditor name="updates" value={updates} onChange={setUpdates} listingId={listingId} aiAvailable={aiAvailable} />
+          <UpdatesEditor
+            name="updates"
+            value={updates}
+            onChange={setUpdates}
+            listingId={listingId}
+            aiAvailable={aiAvailable}
+            googleBusinessProfileUrl={googleBusinessProfileUrl}
+          />
         </div>
         <div hidden={activeTab !== "zh"}>
           <UpdatesEditor
@@ -1121,6 +1143,7 @@ export function PartnerListingForm({
             onChange={(value) => updateTranslatedUpdates("zh", value)}
             listingId={listingId}
             aiAvailable={aiAvailable}
+            googleBusinessProfileUrl={googleBusinessProfileUrl}
           />
         </div>
         <div hidden={activeTab !== "ms"}>
@@ -1130,6 +1153,7 @@ export function PartnerListingForm({
             onChange={(value) => updateTranslatedUpdates("ms", value)}
             listingId={listingId}
             aiAvailable={aiAvailable}
+            googleBusinessProfileUrl={googleBusinessProfileUrl}
           />
         </div>
       </div>
