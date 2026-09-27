@@ -3,6 +3,8 @@ import { categoryPath } from "@/lib/directory-category-labels";
 import {
   DIRECTORY_LOCALES,
   directoryCategoriesIndexPath,
+  directoryGuidePath,
+  directoryGuidesPath,
   directoryHomePath,
   directoryListingPath,
   directoryLocationsIndexPath,
@@ -92,4 +94,12 @@ export function directoryProductsUrls(): string[] {
 
 export function directoryNewsUrls(): string[] {
   return DIRECTORY_LOCALES.map(({ code }) => `${STATIC_SEO_ORIGIN}${directoryNewsPath(code)}`);
+}
+
+export function directoryGuidesIndexUrls(): string[] {
+  return DIRECTORY_LOCALES.map(({ code }) => `${STATIC_SEO_ORIGIN}${directoryGuidesPath(code)}`);
+}
+
+export function directoryGuideUrls(slug: string): string[] {
+  return DIRECTORY_LOCALES.map(({ code }) => `${STATIC_SEO_ORIGIN}${directoryGuidePath(code, slug)}`);
 }

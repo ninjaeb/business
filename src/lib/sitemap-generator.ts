@@ -19,6 +19,8 @@ import {
   DEFAULT_DIRECTORY_LOCALE,
   DIRECTORY_LOCALES,
   directoryCategoriesIndexPath,
+  directoryGuidePath,
+  directoryGuidesPath,
   directoryHomePath,
   directoryIndustriesIndexPath,
   directoryListingFaqPath,
@@ -128,9 +130,13 @@ function urlEntry(
 // both sit behind a login (and the portal declares itself noindex), so
 // naming them here would only send crawlers to a sign-in form.
 export async function buildSitemapXml(): Promise<string> {
-  const [listings, categories] = await Promise.all([
+  const [listings, categories, guides] = await Promise.all([
     loadPublishedListings(),
     db.businessCategory.findMany({ orderBy: { name: "asc" }, select: { name: true } }),
+    db.directoryGuide.findMany({
+      where: { status: "PUBLISHED" },
+      select: { slug: true, publishedAt: true, updatedAt: true },
+    }),
   ]);
   const countByCategory = countListingsByCategory(listings);
   const countByIndustry = countListingsByIndustry(listings);
@@ -227,6 +233,13 @@ export async function buildSitemapXml(): Promise<string> {
         alternates: languageAlternates(directoryNewsPath),
         lastModified: latestOverall,
         changeFrequency: "daily",
+        priority: 0.6,
+      }),
+    );
+    entries.push(
+      urlEntry(`${STATIC_SEO_ORIGIN}${directoryGuidesPath(code)}`, {
+        alternates: languageAlternates(directoryGuidesPath),
+        changeFrequency: "weekly",
         priority: 0.6,
       }),
     );
@@ -348,6 +361,19 @@ export async function buildSitemapXml(): Promise<string> {
           }),
         );
       }
+    }
+  }
+
+  for (const { slug, publishedAt, updatedAt } of guides) {
+    for (const { code } of DIRECTORY_LOCALES) {
+      entries.push(
+        urlEntry(`${STATIC_SEO_ORIGIN}${directoryGuidePath(code, slug)}`, {
+          alternates: languageAlternates((locale) => directoryGuidePath(locale, slug)),
+          lastModified: publishedAt ?? updatedAt,
+          changeFrequency: "monthly",
+          priority: 0.6,
+        }),
+      );
     }
   }
 
