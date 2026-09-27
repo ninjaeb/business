@@ -232,6 +232,7 @@ const listingSchema = z.object({
     .optional()
     .refine((value) => !value || INDUSTRIES.includes(value as Industry), { message: "Invalid industry" }),
   website: z.string().trim().optional(),
+  googleBusinessProfileUrl: z.string().trim().optional(),
   address: z.string().trim().optional(),
   city: z.string().trim().optional(),
   state: z.string().trim().optional(),
@@ -263,6 +264,7 @@ export type ListingFormValues = {
   services: ServiceEntry[];
   industry: string;
   website: string;
+  googleBusinessProfileUrl: string;
   address: string;
   city: string;
   state: string;
@@ -330,6 +332,7 @@ function extractListingFormValues(formData: FormData): ListingFormValues {
     services: parseServicesJson(stringField(formData, "services")),
     industry: stringField(formData, "industry"),
     website: stringField(formData, "website"),
+    googleBusinessProfileUrl: stringField(formData, "googleBusinessProfileUrl"),
     address: stringField(formData, "address"),
     city: stringField(formData, "city"),
     state: stringField(formData, "state"),
@@ -1124,6 +1127,9 @@ async function saveListingFields(
         services: parseServicesJson(stringField(formData, "services")),
         industry: (parsed.data.industry || null) as Industry | null,
         website: parsed.data.website ? normalizeWebsiteUrl(parsed.data.website) : null,
+        googleBusinessProfileUrl: parsed.data.googleBusinessProfileUrl
+          ? normalizeWebsiteUrl(parsed.data.googleBusinessProfileUrl)
+          : null,
         address: parsed.data.address || null,
         city: parsed.data.city || null,
         state: parsed.data.state || null,

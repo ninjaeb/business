@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { Megaphone, Pencil, Plus, Sparkles, Trash2, X } from "lucide-react";
+import { Megaphone, Pencil, Plus, Share2, Sparkles, Trash2, X } from "lucide-react";
 import { rewriteListingUpdate } from "@/app/actions/directory";
 import { Input } from "@/components/ui/field";
 import { Badge } from "@/components/ui/badge";
@@ -12,6 +12,7 @@ import { EmptyState } from "@/components/ui/empty-state";
 import { MarkdownLiteEditor } from "@/components/directory/markdown-lite-editor";
 import { cn } from "@/lib/utils";
 import type { ListingUpdateEntry, ListingUpdateKind } from "@/lib/directory";
+import { formatUpdateForGoogleBusinessProfile, GOOGLE_BUSINESS_PROFILE_POSTS_URL } from "@/lib/google-business-profile";
 
 const EMPTY_DRAFT: ListingUpdateEntry = { kind: "NEWS", title: "", body: "", postedAt: null, endDate: null };
 const MAX_UPDATES = 20;
@@ -181,17 +182,37 @@ export function UpdatesEditor({
   onChange,
   listingId,
   aiAvailable,
+  googleBusinessProfileUrl,
 }: {
   name: string;
   value: ListingUpdateEntry[];
   onChange: (updates: ListingUpdateEntry[]) => void;
   listingId: string;
   aiAvailable: boolean;
+  // The partner's own Google Business Profile link, if they've pasted one
+  // in (see the field above this editor in PartnerListingForm) — falls
+  // back to Google's generic posts page when empty.
+  googleBusinessProfileUrl: string;
 }) {
   // null: the form above is building a fresh post. A number: it's editing
   // the existing post at that index instead — see startEdit/commit below.
   const [editingIndex, setEditingIndex] = useState<number | null>(null);
   const [draft, setDraft] = useState<ListingUpdateEntry>(EMPTY_DRAFT);
+  const toast = useToast();
+
+  // Posting straight to Google Business Profile via API is restricted to
+  // partners Google has separately approved (see
+  // src/lib/google-business-profile.ts) — this copies the post's text and
+  // opens the partner's own profile so they can paste it in by hand.
+  async function postToGoogle(entry: ListingUpdateEntry) {
+    try {
+      await navigator.clipboard.writeText(formatUpdateForGoogleBusinessProfile(entry));
+      toast.success("Copied — paste it into the post box that just opened.");
+    } catch {
+      toast.error("Couldn't copy to your clipboard — copy the post's title and body by hand instead.");
+    }
+    window.open(googleBusinessProfileUrl || GOOGLE_BUSINESS_PROFILE_POSTS_URL, "_blank", "noopener,noreferrer");
+  }
 
   function patchDraft(patch: Partial<ListingUpdateEntry>) {
     setDraft((current) => ({ ...current, ...patch }));
@@ -275,6 +296,15 @@ export function UpdatesEditor({
                   </td>
                   <td className="py-2.5 pr-3">
                     <div className="flex items-center gap-1">
+                      <button
+                        type="button"
+                        onClick={() => postToGoogle(entry)}
+                        aria-label="Post to Google"
+                        title="Copy this post and open Google Business Profile to paste it in"
+                        className="inline-flex h-8 w-8 items-center justify-center rounded-md text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-700 dark:hover:bg-neutral-800 dark:hover:text-slate-200"
+                      >
+                        <Share2 className="h-3.5 w-3.5" />
+                      </button>
                       <button
                         type="button"
                         onClick={() => startEdit(index)}
