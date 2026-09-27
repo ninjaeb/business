@@ -1,7 +1,7 @@
 "use server";
 
 import { db } from "@/lib/db";
-import { requirePartnerAction } from "@/lib/auth/dal";
+import { requireAdminAction, requirePartnerAction } from "@/lib/auth/dal";
 import { getOwnedListing, MAX_GALLERY_PHOTOS, type PhotoEntry } from "@/lib/directory";
 import { GALLERY_PHOTO_MAX_DIMENSION, optimizeImageForWeb } from "@/lib/image-optimize";
 
@@ -44,6 +44,41 @@ export async function uploadDirectoryListingImage(
   const data = optimized.buffer.toString("base64");
   const image = await db.directoryListingImage.create({
     data: { mimeType: optimized.contentType, data, listingId: listing.id },
+    select: { id: true },
+  });
+
+  return { status: "ok", url: `/api/directory-images/${image.id}` };
+}
+
+// Same as uploadDirectoryListingImage above, for a DirectoryGuide's own
+// About-style body instead of a listing's — admin-gated rather than
+// partner-owned, since a guide has no owning partner at all.
+export async function uploadDirectoryGuideImage(
+  guideId: string,
+  formData: FormData,
+): Promise<UploadDirectoryImageResult> {
+  await requireAdminAction();
+
+  const file = formData.get("image");
+  if (!(file instanceof File) || file.size === 0) {
+    return { status: "error", message: "Choose an image." };
+  }
+  if (!file.type.startsWith("image/")) {
+    return { status: "error", message: "That doesn't look like an image." };
+  }
+  if (file.size > MAX_IMAGE_SIZE) {
+    return { status: "error", message: "That image is too large (max 5MB)." };
+  }
+
+  const guide = await db.directoryGuide.findUnique({ where: { id: guideId }, select: { id: true } });
+  if (!guide) {
+    return { status: "error", message: "Guide not found." };
+  }
+  const rawBuffer = Buffer.from(await file.arrayBuffer());
+  const optimized = await optimizeImageForWeb(rawBuffer, file.type, GALLERY_PHOTO_MAX_DIMENSION);
+  const data = optimized.buffer.toString("base64");
+  const image = await db.directoryListingImage.create({
+    data: { mimeType: optimized.contentType, data, guideId: guide.id },
     select: { id: true },
   });
 

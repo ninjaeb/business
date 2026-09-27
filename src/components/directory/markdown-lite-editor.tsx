@@ -13,10 +13,10 @@ import {
   Quote,
   Strikethrough,
 } from "lucide-react";
-import { uploadDirectoryListingImage } from "@/app/actions/directory-images";
 import { compressImage } from "@/lib/image-compression";
 import { BULLET_RE, NUMBERED_RE, renderMarkdownLite } from "@/lib/markdown-lite";
 import { cn } from "@/lib/utils";
+import type { UploadDirectoryImageResult } from "@/app/actions/directory-images";
 
 type Range = { start: number; end: number };
 
@@ -41,7 +41,7 @@ export function MarkdownLiteEditor({
   name,
   value,
   onChange,
-  listingId,
+  onUploadImage,
   rows = 5,
   placeholder,
 }: {
@@ -49,7 +49,13 @@ export function MarkdownLiteEditor({
   name: string;
   value: string;
   onChange: (value: string) => void;
-  listingId: string;
+  // Decoupled from any one owner (a listing, a guide, ...) — the caller
+  // already knows which id to upload against and which server action to
+  // call; this just needs something that turns a picked file into a
+  // servable URL. Every current caller builds this as
+  // `(file) => { const formData = new FormData(); formData.set("image",
+  // file); return uploadDirectoryXImage(ownerId, formData); }`.
+  onUploadImage: (file: File) => Promise<UploadDirectoryImageResult>;
   rows?: number;
   placeholder?: string;
 }) {
@@ -186,9 +192,7 @@ export function MarkdownLiteEditor({
     setUploadError(null);
     setUploading(true);
     const compressed = await compressImage(file);
-    const formData = new FormData();
-    formData.set("image", compressed);
-    const result = await uploadDirectoryListingImage(listingId, formData);
+    const result = await onUploadImage(compressed);
     setUploading(false);
 
     if (result.status !== "ok") {

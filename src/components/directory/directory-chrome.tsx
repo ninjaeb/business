@@ -14,6 +14,7 @@ import {
   DIRECTORY_STRINGS,
   directoryBenefitsPath,
   directoryCategoriesIndexPath,
+  directoryGuidesPath,
   directoryHomePath,
   directoryIndustriesIndexPath,
   directoryLocationsIndexPath,
@@ -111,6 +112,7 @@ export async function DirectoryChrome({
     { href: directoryLocationsIndexPath(locale), label: t.navLocations },
     { href: directoryProductsPath(locale), label: t.navLatestProducts },
     { href: directoryNewsPath(locale), label: t.updatesHeading },
+    { href: directoryGuidesPath(locale), label: t.navGuides },
   ];
 
   return (

@@ -32,6 +32,9 @@ import {
   industryPageDescription,
 } from "@/lib/directory-industry-labels";
 import { INDUSTRIES } from "@/lib/labels";
+import { directoryGuidePath } from "@/lib/directory-i18n";
+import { listPublishedGuidesByIndustry } from "@/lib/directory-guides";
+import { Card, CardBody } from "@/components/ui/card";
 import { DirectorySearch } from "@/components/directory/directory-search";
 import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
 
@@ -96,7 +99,7 @@ export async function IndustryPageContent({
   const heading = industryPageHeading(industry, locale);
   const description = industryPageDescription(industry, locale);
 
-  const rows = await loadPublishedListings();
+  const [rows, relatedGuides] = await Promise.all([loadPublishedListings(), listPublishedGuidesByIndustry(industry)]);
   const listings = rows.map((row) => toDirectoryGridListing(row, locale));
   const industryListings = listings.filter((listing) => listing.industry === industry);
   const breadcrumbItems = [
@@ -139,6 +142,27 @@ export async function IndustryPageContent({
         heading={heading}
         subheading={description}
       />
+      {relatedGuides.length > 0 && (
+        <section aria-labelledby="related-guides" className="mx-auto w-full max-w-5xl px-4 pb-8 sm:px-8">
+          <h2 id="related-guides" className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+            {t.guideRelatedHeading}
+          </h2>
+          <ul className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {relatedGuides.map((guide) => (
+              <li key={guide.id}>
+                <Link href={directoryGuidePath(locale, guide.slug)} className="block">
+                  <Card className="h-full transition-colors hover:border-petrol/40 dark:hover:border-petrol-light/30">
+                    <CardBody className="space-y-1">
+                      <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-100">{guide.title}</h3>
+                      <p className="line-clamp-2 text-xs text-slate-500 dark:text-slate-400">{guide.excerpt}</p>
+                    </CardBody>
+                  </Card>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
       {otherIndustries.length > 0 && (
         <section aria-labelledby="other-industries" className="mx-auto w-full max-w-5xl px-4 pb-12 sm:px-8">
           <h2 id="other-industries" className="text-lg font-semibold text-slate-900 dark:text-slate-100">

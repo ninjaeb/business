@@ -131,6 +131,14 @@ export function directoryIndustriesIndexPath(locale: DirectoryLocale): string {
   return `/${locale}/industries`;
 }
 
+export function directoryGuidesPath(locale: DirectoryLocale): string {
+  return `/${locale}/guides`;
+}
+
+export function directoryGuidePath(locale: DirectoryLocale, slug: string): string {
+  return `${directoryGuidesPath(locale)}/${slug}`;
+}
+
 export const DEFAULT_DIRECTORY_LOCALE: DirectoryLocale = "en";
 
 // Fills in DirectoryStrings.recommendMessage's {business}/{url} tokens —
@@ -238,6 +246,7 @@ export type DirectoryStrings = {
   navLocations: string;
   navLatestProducts: string;
   navIndustries: string;
+  navGuides: string;
   categoriesIndexHeading: string;
   categoriesIndexDescription: string;
   categoriesIndexEmptyTitle: string;
@@ -260,6 +269,16 @@ export type DirectoryStrings = {
   newsFeedDescription: string;
   newsFeedEmptyTitle: string;
   newsFeedEmptyDescription: string;
+  // The /guides index and each guide's own detail page (src/app/[locale]/
+  // guides) — admin-authored pillar content, unlike every other nav
+  // destination above which is generated straight from listing data.
+  guidesIndexHeading: string;
+  guidesIndexDescription: string;
+  guidesIndexEmptyTitle: string;
+  guidesIndexEmptyDescription: string;
+  guidePublishedOnLabel: string;
+  guideReadMoreLabel: string;
+  guideRelatedHeading: string;
   // The listing page's two "other businesses" sections — newest published
   // listings overall, and other listings in the same state but a different
   // industry (see latestListings/nearbyListingsExcludingIndustry in
@@ -447,6 +466,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navLocations: "Location",
     navLatestProducts: "Latest Products",
     navIndustries: "Industries",
+    navGuides: "Guides",
     categoriesIndexHeading: "All Business Categories",
     categoriesIndexDescription: "Every category in the Gotka Business Directory, with how many businesses are listed in each.",
     categoriesIndexEmptyTitle: "No categories yet",
@@ -466,6 +486,13 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     newsFeedDescription: "Current news and promotions from businesses across the directory.",
     newsFeedEmptyTitle: "No news or promotions yet",
     newsFeedEmptyDescription: "Check back soon for updates from businesses in the directory.",
+    guidesIndexHeading: "Guides",
+    guidesIndexDescription: "In-depth guides to help you choose and compare businesses in the Gotka network.",
+    guidesIndexEmptyTitle: "No guides yet",
+    guidesIndexEmptyDescription: "Check back soon — guides will appear here.",
+    guidePublishedOnLabel: "Published",
+    guideReadMoreLabel: "Read guide",
+    guideRelatedHeading: "Related guides",
     latestBusinessesHeading: "Latest Businesses",
     nearbyBusinessesHeading: "Businesses Near You",
     aboutHeading: "About",
@@ -615,6 +642,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navLocations: "地区",
     navLatestProducts: "最新产品",
     navIndustries: "行业",
+    navGuides: "指南",
     categoriesIndexHeading: "所有企业类别",
     categoriesIndexDescription: "Gotka 商业目录中的每一个类别，以及各类别下的企业数量。",
     categoriesIndexEmptyTitle: "暂无类别",
@@ -634,6 +662,13 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     newsFeedDescription: "来自目录中各企业的最新新闻与促销信息。",
     newsFeedEmptyTitle: "暂无新闻或促销",
     newsFeedEmptyDescription: "请稍后再来查看目录中企业的最新动态。",
+    guidesIndexHeading: "指南",
+    guidesIndexDescription: "深入指南，助您在 Gotka 网络中选择和比较企业。",
+    guidesIndexEmptyTitle: "暂无指南",
+    guidesIndexEmptyDescription: "请稍后再来查看——指南将显示在这里。",
+    guidePublishedOnLabel: "发布于",
+    guideReadMoreLabel: "阅读指南",
+    guideRelatedHeading: "相关指南",
     latestBusinessesHeading: "最新企业",
     nearbyBusinessesHeading: "附近企业",
     aboutHeading: "关于",
@@ -782,6 +817,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navLocations: "Lokasi",
     navLatestProducts: "Produk Terkini",
     navIndustries: "Industri",
+    navGuides: "Panduan",
     categoriesIndexHeading: "Semua Kategori Perniagaan",
     categoriesIndexDescription: "Setiap kategori dalam Direktori Perniagaan Gotka, berserta bilangan perniagaan yang tersenarai dalam setiap satu.",
     categoriesIndexEmptyTitle: "Belum ada kategori",
@@ -801,6 +837,13 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     newsFeedDescription: "Berita dan promosi terkini daripada perniagaan di seluruh direktori.",
     newsFeedEmptyTitle: "Belum ada berita atau promosi",
     newsFeedEmptyDescription: "Sila semak semula tidak lama lagi untuk kemas kini daripada perniagaan dalam direktori.",
+    guidesIndexHeading: "Panduan",
+    guidesIndexDescription: "Panduan mendalam untuk membantu anda memilih dan membandingkan perniagaan dalam rangkaian Gotka.",
+    guidesIndexEmptyTitle: "Belum ada panduan",
+    guidesIndexEmptyDescription: "Sila semak semula tidak lama lagi — panduan akan dipaparkan di sini.",
+    guidePublishedOnLabel: "Diterbitkan",
+    guideReadMoreLabel: "Baca panduan",
+    guideRelatedHeading: "Panduan berkaitan",
     latestBusinessesHeading: "Perniagaan Terkini",
     nearbyBusinessesHeading: "Perniagaan Berhampiran",
     aboutHeading: "Tentang",
