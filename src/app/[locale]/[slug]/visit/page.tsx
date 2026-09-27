@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { Clock, MapPin } from "lucide-react";
+import { Clock, MapPin, Navigation } from "lucide-react";
 import { currentDayInTimezone, DAYS_OF_WEEK, getPublishedListingBySlug, isOpenNow, type OperatingHours } from "@/lib/directory";
 import { buildListingMetadata } from "@/lib/directory-seo";
 import { resolveDirectoryLocale } from "@/lib/directory-locale";
@@ -9,6 +9,7 @@ import { getSiteOrigin } from "@/lib/site-url";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
+import { buttonClasses } from "@/components/ui/button";
 
 export const dynamic = "force-dynamic";
 
@@ -63,6 +64,18 @@ function buildHoursRows(hours: OperatingHours, t: DirectoryStrings, timezone: st
   });
 }
 
+// Directions, not just a pin — google.com/maps/dir (unlike the address
+// link's own /maps/search) and waze.com/ul?navigate=yes both drop a visitor
+// straight into turn-by-turn navigation, on mobile handing off to each
+// app's own native client the same way a tel:/mailto: link would.
+function googleMapsDirectionsUrl(address: string): string {
+  return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(address.replace(/\n/g, ", "))}`;
+}
+
+function wazeDirectionsUrl(address: string): string {
+  return `https://waze.com/ul?q=${encodeURIComponent(address.replace(/\n/g, ", "))}&navigate=yes`;
+}
+
 export default async function VisitPage({
   params,
 }: {
@@ -96,6 +109,26 @@ export default async function VisitPage({
               <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-slate-400" />
               <span className="whitespace-pre-wrap">{listing.address}</span>
             </a>
+            <div className="flex flex-wrap gap-2">
+              <a
+                href={googleMapsDirectionsUrl(mapAddress)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={buttonClasses("secondary", "sm")}
+              >
+                <Navigation className="h-4 w-4" />
+                {t.navigateGoogleMapsLabel}
+              </a>
+              <a
+                href={wazeDirectionsUrl(mapAddress)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={buttonClasses("secondary", "sm")}
+              >
+                <Navigation className="h-4 w-4" />
+                {t.navigateWazeLabel}
+              </a>
+            </div>
             <iframe
               title={`${listing.companyName} on the map`}
               src={`https://www.google.com/maps?q=${encodeURIComponent(mapAddress.replace(/\n/g, ", "))}&output=embed`}
