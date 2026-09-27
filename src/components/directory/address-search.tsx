@@ -41,6 +41,21 @@ export function AddressSearch({
   const [searching, startSearch] = useTransition();
   const [loadingDetails, startLoadDetails] = useTransition();
   const toast = useToast();
+
+  // useState(defaultQuery) above only seeds the query on first mount — a
+  // partner typing their company name into the Company name field *after*
+  // this box has already rendered wouldn't otherwise be reflected here at
+  // all. Follows defaultQuery on every change, but only while the query
+  // still shows the previously-synced default verbatim — a partner already
+  // mid-edit in this box keeps what they typed, same treatment as
+  // PartnerSlugForm's own lastSyncedSlug (and AiAutoCreatePanel's own copy
+  // of this same fix for its own Google Maps search box).
+  const [lastSyncedDefaultQuery, setLastSyncedDefaultQuery] = useState(defaultQuery);
+  if (defaultQuery !== lastSyncedDefaultQuery) {
+    const previousDefault = lastSyncedDefaultQuery;
+    setLastSyncedDefaultQuery(defaultQuery);
+    if (query === previousDefault) setQuery(defaultQuery);
+  }
   // Guards against an earlier (slower) debounced search's result landing
   // after a newer one's — only the most recently *started* search may write
   // to `results`.
