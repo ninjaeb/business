@@ -7,16 +7,36 @@ declare global {
   var openRouterClientGlobal: OpenAI | undefined;
 }
 
-// Overridable per deployment (e.g. to a stronger or paid model) without a
-// code change. "openrouter/free" is the default: OpenRouter's own dynamic
-// free-tier router, which picks whichever free backend model is currently
-// available and capable of the request — including vision (for
-// scan-business-card.ts) and tool calling — at no cost, rather than pinning
-// this app to one specific free model that might get deprecated or rate-
-// limited on its own. Plain json_object mode (not OpenAI's stricter
-// json_schema mode) is used for structured output since it's supported by
-// virtually every model OpenRouter could route to, free or otherwise.
-export const OPENROUTER_MODEL = process.env.OPENROUTER_MODEL || "openrouter/free";
+// Both overridable per deployment (e.g. to a stronger or paid model) without
+// a code change — see callAi below for which one a given request uses.
+//
+// OPENROUTER_MODEL (text-only requests: ai-insights.ts, testimonials.ts,
+// autoCreateListingDetails's tagline/description/services/faqs generation)
+// defaults to nvidia/nemotron-3-ultra-550b-a55b:free — OpenRouter's #7
+// highest-usage model platform-wide (free or paid) as of 2026-09-27's
+// /rankings, and the top-ranked free one specifically. Pinned rather than
+// left on the dynamic router below for more predictable output quality,
+// at the cost of breaking if OpenRouter later removes it from the free
+// tier. It doesn't advertise json_object / response_format support in its
+// OpenRouter model listing, so a reply that isn't valid JSON is possible —
+// callAi's existing JSON.parse/Zod validation already surfaces that as a
+// normal "AI request failed" error rather than crashing, so this is a
+// quality/reliability tradeoff, not a correctness one.
+//
+// OPENROUTER_VISION_MODEL (image-bearing requests: scan-business-card.ts,
+// scan-partner-business-card.ts) stays on "openrouter/free", OpenRouter's
+// own dynamic free-tier router — Nemotron 3 Ultra above is text-only and
+// can't take the image_url content those two callers send. The router
+// picks whichever free backend model is currently available and capable
+// of the request, including vision and tool calling, rather than pinning
+// this app to one specific free vision model that might get deprecated or
+// rate-limited on its own.
+//
+// Both use plain json_object mode (not OpenAI's stricter json_schema mode)
+// for structured output, since it's supported by virtually every model
+// OpenRouter could route to, free or otherwise.
+export const OPENROUTER_MODEL = process.env.OPENROUTER_MODEL || "nvidia/nemotron-3-ultra-550b-a55b:free";
+export const OPENROUTER_VISION_MODEL = process.env.OPENROUTER_VISION_MODEL || "openrouter/free";
 
 export function isAiConfigured() {
   return Boolean(process.env.OPENROUTER_API_KEY);
@@ -77,9 +97,13 @@ export const AI_NOT_CONFIGURED: AiResult<never> = {
 // `userContent` is a plain string for text-only callers, or an array of
 // OpenAI-style content parts (text + image_url) for scan-business-card.ts's
 // vision request — the Chat Completions message format both routes through.
+// Which one it is also picks OPENROUTER_MODEL vs OPENROUTER_VISION_MODEL
+// (see their own comments above) — an image_url part means the request
+// needs a vision-capable model, which OPENROUTER_MODEL's pinned default
+// isn't.
 //
 // There's no cross-provider equivalent of Gemini's native responseJsonSchema
-// reliable enough to depend on for every model OPENROUTER_MODEL might be set
+// reliable enough to depend on for every model these constants might be set
 // to, so the schema is instead spelled out in the prompt and enforced by
 // parsing + Zod validation afterward, same as before the JSON came back
 // pre-validated by the provider.
@@ -90,8 +114,9 @@ export async function callAi<T>(
 ): Promise<AiResult<T>> {
   try {
     const client = getOpenRouterClient();
+    const hasImage = Array.isArray(userContent) && userContent.some((part) => part.type === "image_url");
     const response = await client.chat.completions.create({
-      model: OPENROUTER_MODEL,
+      model: hasImage ? OPENROUTER_VISION_MODEL : OPENROUTER_MODEL,
       response_format: { type: "json_object" },
       messages: [
         {
