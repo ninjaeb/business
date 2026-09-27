@@ -14,22 +14,27 @@ declare global {
 //
 // OPENROUTER_MODEL (text-only requests: ai-insights.ts, testimonials.ts,
 // autoCreateListingDetails's tagline/description/services/faqs generation)
-// defaults to 4 of OpenRouter's own top free models, verified against its
-// /rankings (real-world usage, free or paid) and /models (capabilities) on
-// 2026-09-27, ordered as a priority list:
-//   1. nvidia/nemotron-3-ultra-550b-a55b:free — OpenRouter's #7
-//      highest-usage model platform-wide, and the top-ranked free one.
-//      Doesn't advertise json_object/response_format support in its
-//      OpenRouter listing, so a reply that isn't valid JSON is possible —
-//      callAi's existing JSON.parse/Zod validation already surfaces that
-//      as a normal "AI request failed" error rather than crashing.
-//   2. nvidia/nemotron-3-super-120b-a12b:free — smaller sibling of #1,
-//      explicitly advertises response_format support.
-//   3. google/gemma-4-31b-it:free — different provider (spreads risk if
-//      NVIDIA's free endpoints get rate-limited), also advertises
-//      response_format support.
-//   4. qwen/qwen3.8-27b:free — yet another provider, also advertises
-//      response_format support.
+// defaults to 4 of OpenRouter's own top free models, ordered by SPEED
+// first rather than raw usage rank — an earlier version led with Nemotron
+// 3 Ultra (OpenRouter's #7 highest-usage model platform-wide, the top-
+// ranked free one by usage), but that model — and every other candidate
+// except the two below — has "reasoning" ON by default per OpenRouter's
+// /models data (its own hidden chain-of-thought pass before answering),
+// which made every AI-assisted feature noticeably slow in practice. These
+// two are the only free models in OpenRouter's catalog that are both
+// confirmed non-reasoning (reasoning.default_enabled: false) AND support
+// response_format/JSON mode, verified 2026-09-27:
+//   1. google/gemma-4-31b-it:free — no reasoning overhead, JSON mode.
+//   2. google/gemma-4-26b-a4b-it:free — same family, slightly smaller/
+//      faster, same JSON mode support.
+// The remaining two slots trade some of that speed guarantee for provider
+// diversity (both above are Google) — neither advertises reasoning in its
+// listing either (no `reasoning` field at all, vs. an explicit "on"), and
+// neither is from NVIDIA:
+//   3. nvidia/nemotron-3.5-lightning:free — no `reasoning` field, "Lightning"
+//      branding, but no confirmed JSON mode.
+//   4. cohere/north-mini-code:free — no `reasoning` field, "mini" branding,
+//      no confirmed JSON mode.
 // Only 4 total (not more of OpenRouter's other top free models) because
 // OpenRouter's model-fallback feature caps the `models` field itself (see
 // MAX_MODEL_FALLBACKS below) at 3 entries beyond the primary — a longer
@@ -55,10 +60,10 @@ declare global {
 export const OPENROUTER_MODEL =
   process.env.OPENROUTER_MODEL ||
   [
-    "nvidia/nemotron-3-ultra-550b-a55b:free",
-    "nvidia/nemotron-3-super-120b-a12b:free",
     "google/gemma-4-31b-it:free",
-    "qwen/qwen3.8-27b:free",
+    "google/gemma-4-26b-a4b-it:free",
+    "nvidia/nemotron-3.5-lightning:free",
+    "cohere/north-mini-code:free",
   ].join(",");
 export const OPENROUTER_VISION_MODEL = process.env.OPENROUTER_VISION_MODEL || "openrouter/free";
 
