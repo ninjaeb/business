@@ -140,6 +140,12 @@ export function formatRecommendMessage(template: string, business: string, url: 
   return template.replace("{business}", business).replace("{url}", url);
 }
 
+// Fills in DirectoryStrings.contactWhatsAppMessage's {business} token — see
+// that field's own comment.
+export function formatContactWhatsAppMessage(template: string, business: string): string {
+  return template.replace("{business}", business);
+}
+
 // Fills in DirectoryStrings.searchViewAllResults's {query} token — see that
 // field's own comment for why this is plain substitution, not a template
 // literal built where the message is used.
@@ -350,6 +356,15 @@ export type DirectoryStrings = {
   shareLabel: string;
   contactHeading: string;
   contactSubheading: string;
+  // The "Get in touch" card's Call/WhatsApp buttons — only rendered when the
+  // listing has its own PartnerListing.phone set (see that field's own
+  // comment for why it's separate from the account-level User.phone that's
+  // deliberately never shown). contactWhatsAppMessage's {business} token is
+  // filled in with the listing's own name via formatContactWhatsAppMessage
+  // below, same plain-substitution convention as recommendMessage.
+  contactCallCta: string;
+  contactWhatsAppCta: string;
+  contactWhatsAppMessage: string;
   formNameLabel: string;
   formNamePlaceholder: string;
   formEmailLabel: string;
@@ -520,6 +535,9 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     shareLabel: "Share Business",
     contactHeading: "Get in touch",
     contactSubheading: "Send a message directly to this business — they'll reply to the email address and contact number you provide.",
+    contactCallCta: "Call",
+    contactWhatsAppCta: "WhatsApp",
+    contactWhatsAppMessage: "Hi, I'm interested in {business}. Could you share more details?",
     formNameLabel: "Name",
     formNamePlaceholder: "Jane Smith",
     formEmailLabel: "Email",
@@ -688,6 +706,9 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     locationLabel: "地点",
     contactHeading: "联系我们",
     contactSubheading: "直接给这家企业发送信息——他们会回复您提供的电子邮件地址和联系电话。",
+    contactCallCta: "致电",
+    contactWhatsAppCta: "WhatsApp",
+    contactWhatsAppMessage: "您好，我对 {business} 感兴趣，可以提供更多详情吗？",
     formNameLabel: "姓名",
     formNamePlaceholder: "Jane Smith",
     formEmailLabel: "电子邮件",
@@ -855,6 +876,9 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     locationLabel: "Lokasi",
     contactHeading: "Hubungi kami",
     contactSubheading: "Hantar mesej terus kepada perniagaan ini — mereka akan membalas ke alamat e-mel dan nombor telefon yang anda berikan.",
+    contactCallCta: "Hubungi",
+    contactWhatsAppCta: "WhatsApp",
+    contactWhatsAppMessage: "Hai, saya berminat dengan {business}. Bolehkah anda kongsikan maklumat lanjut?",
     formNameLabel: "Nama",
     formNamePlaceholder: "Jane Smith",
     formEmailLabel: "E-mel",

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Eye, Globe, MapPin } from "lucide-react";
+import { Eye, Globe, MapPin, MessageCircle, Phone } from "lucide-react";
 import {
   buildBreadcrumbJsonLd,
   directoryImagePath,
@@ -30,9 +30,11 @@ import {
   directoryListingServicesPath,
   directoryListingVideosPath,
   directoryListingVisitPath,
+  formatContactWhatsAppMessage,
   formatRecommendMessage,
   formatViewsLabel,
 } from "@/lib/directory-i18n";
+import { whatsAppUrl } from "@/lib/format";
 import { translateCategoryName, categoryPath } from "@/lib/directory-category-labels";
 import { locationLabel, locationPath } from "@/lib/directory-location-labels";
 import { industryPath } from "@/lib/directory-industry-labels";
@@ -90,11 +92,11 @@ function listingImageEntries(
 // Services, Photos, ...) carries it, always pointed at the listing's own
 // canonical URL (the About page, `url` below) regardless of which of its
 // pages a crawler actually fetched — this describes the business, not "this
-// specific page". Deliberately never includes a phone number: this is
-// public, crawlable content, and the partner's own contact details stay
-// internal (see PublishedListingSnapshot's own comment in
-// src/lib/directory.ts) — a visitor reaches a partner only through the lead
-// form, never directly.
+// specific page". `telephone` only appears when the partner has set one on
+// the listing itself (see PublishedListingSnapshot's own comment in
+// src/lib/directory.ts on why that's a different thing from the partner
+// ACCOUNT's own private phone, which never appears here) — it's opt-in
+// public info, same as `website` below.
 function buildJsonLd(
   listing: ListingWithMeta,
   url: string,
@@ -134,6 +136,7 @@ function buildJsonLd(
     };
   }
   if (listing.website) jsonLd.sameAs = [listing.website];
+  if (listing.phone) jsonLd.telephone = listing.phone;
   // English regardless of the page's own locale — schema.org's own
   // vocabulary/consumers (search engines, AI crawlers) expect this field in
   // a consistent language, unlike the human-visible badge below.
@@ -540,6 +543,23 @@ export default async function ListingLayout({
               </CardHeader>
               <CardBody>
                 <p className="mb-4 text-base text-slate-500 dark:text-slate-400">{t.contactSubheading}</p>
+                {listing.phone && (
+                  <div className="mb-4 flex gap-2">
+                    <a href={`tel:${listing.phone}`} className={buttonClasses("secondary", "md", "flex-1 justify-center gap-2")}>
+                      <Phone className="h-4 w-4" />
+                      {t.contactCallCta}
+                    </a>
+                    <a
+                      href={whatsAppUrl(listing.phone, formatContactWhatsAppMessage(t.contactWhatsAppMessage, listing.companyName))}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={buttonClasses("secondary", "md", "flex-1 justify-center gap-2")}
+                    >
+                      <MessageCircle className="h-4 w-4" />
+                      {t.contactWhatsAppCta}
+                    </a>
+                  </div>
+                )}
                 <DirectoryLeadForm slug={slug} locale={resolved} />
               </CardBody>
             </Card>

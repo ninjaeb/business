@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { Clock, MapPin, Navigation } from "lucide-react";
+import { Clock, MapPin } from "lucide-react";
 import { currentDayInTimezone, DAYS_OF_WEEK, getPublishedListingBySlug, isOpenNow, type OperatingHours } from "@/lib/directory";
 import { buildListingMetadata } from "@/lib/directory-seo";
 import { resolveDirectoryLocale } from "@/lib/directory-locale";
@@ -10,6 +10,8 @@ import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
 import { buttonClasses } from "@/components/ui/button";
+import { GoogleMapsIcon } from "@/components/directory/google-maps-icon";
+import { WazeIcon } from "@/components/directory/waze-icon";
 
 export const dynamic = "force-dynamic";
 
@@ -116,7 +118,7 @@ export default async function VisitPage({
                 rel="noopener noreferrer"
                 className={buttonClasses("secondary", "sm")}
               >
-                <Navigation className="h-4 w-4" />
+                <GoogleMapsIcon className="h-4 w-4" />
                 {t.navigateGoogleMapsLabel}
               </a>
               <a
@@ -125,7 +127,7 @@ export default async function VisitPage({
                 rel="noopener noreferrer"
                 className={buttonClasses("secondary", "sm")}
               >
-                <Navigation className="h-4 w-4" />
+                <WazeIcon className="h-4 w-4" />
                 {t.navigateWazeLabel}
               </a>
             </div>
