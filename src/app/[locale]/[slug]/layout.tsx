@@ -48,6 +48,7 @@ import { ListingLogo } from "@/components/directory/listing-logo";
 import { DirectoryLeadForm } from "@/components/directory/directory-lead-form";
 import { InquiryProvider, InquiryScrollTarget } from "@/components/directory/listing-inquiry";
 import { ShareButton } from "@/components/directory/share-button";
+import { RecommendBar } from "@/components/directory/recommend-bar";
 import { ReferralViewBeacon } from "@/components/directory/referral-view-beacon";
 import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
 import { ListingSectionNav } from "@/components/directory/listing-section-nav";
@@ -295,11 +296,8 @@ export default async function ListingLayout({
     // Top padding matches the category/location pages' own breadcrumb
     // spacing (see category-page-content.tsx/location-page-content.tsx) so
     // it doesn't sit flush against the sticky header. Bottom padding clears
-    // the sticky Services/Recommend/Get in touch bar pinned over the page's
-    // foot at every width — generous on purpose (the bar itself is nowhere
-    // near this tall) rather than trimmed to its exact height, since too
-    // little here means the bar covers real content and too much is just
-    // some extra whitespace.
+    // whatever is pinned over the page's foot at every width: the jump bar
+    // below, plus the RecommendBar pill floating just above it.
     <div className="w-full px-4 pt-4 pb-40 sm:px-8">
       <script
         type="application/ld+json"
@@ -586,70 +584,40 @@ export default async function ListingLayout({
         </div>
       </InquiryProvider>
 
+      <RecommendBar title={listing.companyName} url={recommendUrl} message={recommendMessage} label={t.recommendLabel} />
+
       {/* Shown at every width, not just mobile: on md+ the Get in touch card
           is a sticky right-hand column (see its own md:sticky md:top-32
           above) — sticky only through the grid's own height, which runs the
           whole way down the left column's real content, but still ends
-          before this bar's own row. This bar stays truly fixed the whole way
-          down, so "get in touch" is always one tap away regardless of scroll
-          position, screen width, or which of this listing's pages a visitor
-          is on — Contact is the one section every page still carries in its
-          own right column, so "#contact" always resolves on the current page
-          rather than needing a cross-page link the way Products & Services
-          now does.
-
-          Recommend used to be its own pill floating just above this bar
-          (see the old RecommendBar), but a `fixed` pill ignores scroll
-          entirely — once a visitor scrolled down into the page's own
-          content (e.g. the Get in touch form), it sat on top of whatever
-          happened to be there. Folding it into this bar as a third button
-          keeps it always-in-reach without ever covering anything. Recommend
-          gets the neutral `secondary` look (same as Products & Services) so
-          Get in touch stays the one button that visually reads as "the"
-          call to action; min-h-12 (up from the default h-9) makes all three
-          easier to tap now that a phone screen's whole bottom edge is spoken
-          for either way. */}
+          before this bar's own row and RecommendBar above it. This bar
+          stays truly fixed the whole way down, so "get in touch" is always
+          one tap away regardless of scroll position, screen width, or which
+          of this listing's pages a visitor is on — Contact is the one
+          section every page still carries in its own right column, so
+          "#contact" always resolves on the current page rather than needing
+          a cross-page link the way Products & Services now does. Both
+          buttons get the neutral `secondary` look — Recommend, floating
+          above as its own solid-green pill, is the one that stands out.
+          min-h-12 (up from the default h-9) makes both easier to tap. */}
       <nav
         aria-label={t.stickyNavLabel}
         className="fixed inset-x-0 bottom-0 z-20 border-t border-slate-200 bg-white px-4 py-4 dark:border-neutral-800 dark:bg-neutral-900"
       >
         {/* Constrained and centered rather than edge-to-edge — full-width
             flex-1 buttons read fine as a phone-width bar, but would stretch
-            into oversized buttons on a wide desktop screen now that this bar
-            shows at every width. max-w-md, not max-w-sm, now that there are
-            three buttons instead of two. */}
-        <div className="mx-auto flex max-w-md gap-2">
+            into two oversized buttons on a wide desktop screen now that this
+            bar shows at every width. */}
+        <div className="mx-auto flex max-w-sm gap-2">
           {display.services.length > 0 && (
             <Link
               href={directoryListingServicesPath(resolved, slug)}
-              className={buttonClasses("secondary", "md", "min-h-12 flex-1 justify-center text-center leading-tight")}
+              className={buttonClasses("secondary", "md", "min-h-12 flex-1 justify-center")}
             >
               {t.servicesHeading}
             </Link>
           )}
-          {/* ShareButton's own root element is a plain `relative` div (for
-              its dropdown menu's positioning), not a flex item with sizing
-              of its own — wrapped in a flex-1 div, with the button itself
-              filling it via w-full, rather than passing flex-1 straight
-              into its className the way the plain Link/anchor here can. */}
-          <div className="flex-1">
-            <ShareButton
-              title={listing.companyName}
-              url={recommendUrl}
-              message={recommendMessage}
-              label={t.recommendLabel}
-              icon="recommend"
-              variant="secondary"
-              size="md"
-              menuPlacement="above"
-              menuAlign="center"
-              className="min-h-12 w-full justify-center text-center leading-tight"
-            />
-          </div>
-          <a
-            href="#contact"
-            className={buttonClasses("primary", "md", "min-h-12 flex-1 justify-center bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led")}
-          >
+          <a href="#contact" className={buttonClasses("secondary", "md", "min-h-12 flex-1 justify-center")}>
             {t.contactHeading}
           </a>
         </div>

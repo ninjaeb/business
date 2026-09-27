@@ -12,12 +12,12 @@ import { cn } from "@/lib/utils";
 // without navigator.share, so there's no reason to hide them just because
 // the native sheet is also on offer.
 //
-// The same menu doubles as the listing page's "Recommend" button (see the
-// listing layout's header and sticky bottom bar): identical options, just
-// a different label/icon, a referral-tracking URL instead of the plain
-// page URL, and (via `message`) a pre-written recommendation instead of
-// the generic "<title> <url>" — so the only difference between "share" and
-// "recommend" is which link and wording go out.
+// The same menu doubles as the listing page's "Recommend" button (see
+// RecommendBar): identical options, just a different label/icon, a
+// referral-tracking URL instead of the plain page URL, and (via `message`)
+// a pre-written recommendation instead of the generic "<title> <url>" —
+// so the only difference between "share" and "recommend" is which link
+// and wording go out.
 export function ShareButton({
   title,
   url,
