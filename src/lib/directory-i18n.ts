@@ -313,6 +313,10 @@ export type DirectoryStrings = {
   // set, since isOpenNow can't tell without one.
   hoursOpenNowBadge: string;
   hoursClosedNowBadge: string;
+  // The Visit us page's turn-by-turn directions buttons — "Google Maps" and
+  // "Waze" are brand names left untranslated, same as elsewhere in this file.
+  navigateGoogleMapsLabel: string;
+  navigateWazeLabel: string;
   dayLabels: DirectoryDayLabels;
   websiteLabel: string;
   locationLabel: string;
@@ -484,6 +488,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     hoursClosedTodayLabel: "Closed today",
     hoursOpenNowBadge: "Open now",
     hoursClosedNowBadge: "Closed now",
+    navigateGoogleMapsLabel: "Navigate with Google Maps",
+    navigateWazeLabel: "Navigate with Waze",
     dayLabels: {
       monday: "Monday",
       tuesday: "Tuesday",
@@ -650,6 +656,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     hoursClosedTodayLabel: "今日休息",
     hoursOpenNowBadge: "营业中",
     hoursClosedNowBadge: "已休息",
+    navigateGoogleMapsLabel: "使用谷歌地图导航",
+    navigateWazeLabel: "使用 Waze 导航",
     dayLabels: {
       monday: "星期一",
       tuesday: "星期二",
@@ -815,6 +823,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     hoursClosedTodayLabel: "Tutup hari ini",
     hoursOpenNowBadge: "Buka sekarang",
     hoursClosedNowBadge: "Tutup sekarang",
+    navigateGoogleMapsLabel: "Navigasi dengan Google Maps",
+    navigateWazeLabel: "Navigasi dengan Waze",
     dayLabels: {
       monday: "Isnin",
       tuesday: "Selasa",
