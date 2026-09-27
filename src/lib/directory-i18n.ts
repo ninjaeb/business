@@ -54,6 +54,10 @@ export function directoryBenefitsPath(locale: DirectoryLocale): string {
   return `/${locale}/benefits`;
 }
 
+export function directoryAboutPath(locale: DirectoryLocale): string {
+  return `/${locale}/about`;
+}
+
 // A listing's own page is just /en/some-company — shorter and friendlier
 // to share than every other directory URL, since it's the one visitors
 // actually pass around. Lives at src/app/[locale]/[slug], a sibling of
@@ -296,6 +300,12 @@ export type DirectoryStrings = {
   guidesIndexEmptyTitle: string;
   guidesIndexEmptyDescription: string;
   guidePublishedOnLabel: string;
+  // A visible counterpart to buildGuideJsonLd's own organization-level
+  // author/publisher — the same "attributed to the team, not an invented
+  // personal byline" choice, just readable on the page itself rather than
+  // only in structured data. Links to /about, which spells out who that
+  // team is and how a guide's own content gets reviewed.
+  guideByLabel: string;
   guideReadMoreLabel: string;
   guideRelatedHeading: string;
   // The listing page's two "other businesses" sections — newest published
@@ -362,15 +372,14 @@ export type DirectoryStrings = {
   websiteLabel: string;
   locationLabel: string;
   // The listing page's "Recommend" affordances, open to every visitor —
-  // the header button, and the floating bottom-bar pill (see
-  // RecommendBar). Both share one referral-tracking link (?r=<referral
+  // the header button, and the sticky bottom-bar button (see the listing
+  // layout's own nav). Both share one referral-tracking link (?r=<referral
   // code>, see recommendUrl) and this same pre-written message for the
   // email/WhatsApp/native-share options (Copy link still copies that same
   // tracking link). {business} and {url} are replaced with the listing's
   // name and the tracking link itself — plain string substitution, not a
   // template literal, since this is localized data, not code.
   recommendLabel: string;
-  recommendBusinessCta: string;
   recommendMessage: string;
   // The header's plain Share button — ShareButton's own `label` prop
   // defaults to unlocalized English "Share", so every caller that isn't
@@ -443,6 +452,7 @@ export type DirectoryStrings = {
   navProfile: string;
   listBusinessCta: string;
   benefitsNavLabel: string;
+  aboutNavLabel: string;
   signupHeading: string;
   signupSubheading: string;
   signupCompanyLabel: string;
@@ -527,6 +537,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     guidesIndexEmptyTitle: "No guides yet",
     guidesIndexEmptyDescription: "Check back soon — guides will appear here.",
     guidePublishedOnLabel: "Published",
+    guideByLabel: "By the Gotka Business Directory team",
     guideReadMoreLabel: "Read guide",
     guideRelatedHeading: "Related guides",
     latestBusinessesHeading: "Latest Businesses",
@@ -566,7 +577,6 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     websiteLabel: "Website",
     locationLabel: "Location",
     recommendLabel: "Recommend Business",
-    recommendBusinessCta: "Recommend the Business",
     recommendMessage: "I recommend {business} — check them out on the Business Directory: {url}",
     shareLabel: "Share Business",
     contactHeading: "Get in touch",
@@ -627,6 +637,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navSignOut: "Sign out",
     listBusinessCta: "List your business",
     benefitsNavLabel: "Why list your business",
+    aboutNavLabel: "About",
     signupHeading: "List your business",
     signupSubheading: "Join the business directory and start receiving inquiries directly from visitors.",
     signupCompanyLabel: "Business name",
@@ -708,6 +719,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     guidesIndexEmptyTitle: "暂无指南",
     guidesIndexEmptyDescription: "请稍后再来查看——指南将显示在这里。",
     guidePublishedOnLabel: "发布于",
+    guideByLabel: "作者：Gotka 企业目录团队",
     guideReadMoreLabel: "阅读指南",
     guideRelatedHeading: "相关指南",
     latestBusinessesHeading: "最新企业",
@@ -746,7 +758,6 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     },
     websiteLabel: "网站",
     recommendLabel: "推荐企业",
-    recommendBusinessCta: "推荐这家企业",
     recommendMessage: "我推荐 {business}——快来企业目录看看：{url}",
     shareLabel: "分享企业",
     locationLabel: "地点",
@@ -807,6 +818,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navSignOut: "退出登录",
     listBusinessCta: "刊登您的企业",
     benefitsNavLabel: "为什么要刊登您的企业",
+    aboutNavLabel: "关于我们",
     signupHeading: "刊登您的企业",
     signupSubheading: "加入企业目录，直接从访客那里获得咨询。",
     signupCompanyLabel: "企业名称",
@@ -888,6 +900,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     guidesIndexEmptyTitle: "Belum ada panduan",
     guidesIndexEmptyDescription: "Sila semak semula tidak lama lagi — panduan akan dipaparkan di sini.",
     guidePublishedOnLabel: "Diterbitkan",
+    guideByLabel: "Oleh pasukan Direktori Perniagaan Gotka",
     guideReadMoreLabel: "Baca panduan",
     guideRelatedHeading: "Panduan berkaitan",
     latestBusinessesHeading: "Perniagaan Terkini",
@@ -926,7 +939,6 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     },
     websiteLabel: "Laman web",
     recommendLabel: "Syorkan Perniagaan",
-    recommendBusinessCta: "Syorkan Perniagaan Ini",
     recommendMessage: "Saya syorkan {business} — lihat mereka di Direktori Perniagaan: {url}",
     shareLabel: "Kongsi Perniagaan",
     locationLabel: "Lokasi",
@@ -988,6 +1000,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navSignOut: "Log keluar",
     listBusinessCta: "Senaraikan perniagaan anda",
     benefitsNavLabel: "Kenapa senaraikan perniagaan anda",
+    aboutNavLabel: "Tentang kami",
     signupHeading: "Senaraikan perniagaan anda",
     signupSubheading: "Sertai direktori perniagaan dan mula menerima pertanyaan terus daripada pelawat.",
     signupCompanyLabel: "Nama perniagaan",

@@ -12,6 +12,7 @@ import { getDirectoryLocale } from "@/lib/directory-locale";
 import {
   DIRECTORY_LOCALES,
   DIRECTORY_STRINGS,
+  directoryAboutPath,
   directoryBenefitsPath,
   directoryCategoriesIndexPath,
   directoryGuidesPath,
@@ -101,6 +102,7 @@ export async function DirectoryChrome({
   const directoryHref = localeProp ? directoryHomePath(localeProp) : "/directory";
   const signupHref = localeProp ? directorySignupPath(localeProp) : "/directory/signup";
   const benefitsHref = localeProp ? directoryBenefitsPath(localeProp) : "/directory/benefits";
+  const aboutHref = localeProp ? directoryAboutPath(localeProp) : "/directory/about";
   // Always built off the resolved `locale` (not localeProp) — unlike the
   // links above, these four pages have no bare-URL fallback to redirect
   // through, so even a page outside the locale-prefixed tree (e.g.
@@ -212,16 +214,14 @@ export async function DirectoryChrome({
       </main>
 
       {/* pb-40, not py-8's own 32px, on this specific side: a listing page
-          renders two fixed-position bars pinned to the viewport bottom (the
-          Services/Get in touch jump bar, and the RecommendBar pill floating
-          above it — see recommend-bar.tsx) that together reach ~116px up
-          from the viewport's bottom edge. "fixed" ignores scroll entirely,
-          so once a visitor scrolls this footer into view — the page's own
-          pb-40 (see the listing page) only delays that, it can't prevent it
-          — those bars would otherwise sit on top of this footer's own links
-          with nothing below to separate them. Harmless on every other page,
-          which has no such bars and just gets a bit more empty space at the
-          very bottom. */}
+          renders its own Services/Recommend/Get in touch bar pinned fixed to
+          the viewport bottom (see the listing layout's own nav). "fixed"
+          ignores scroll entirely, so once a visitor scrolls this footer into
+          view — the page's own pb-40 (see the listing page) only delays
+          that, it can't prevent it — that bar would otherwise sit on top of
+          this footer's own links with nothing below to separate them.
+          Harmless on every other page, which has no such bar and just gets
+          a bit more empty space at the very bottom. */}
       <footer className="border-t border-slate-200 bg-white pt-8 pb-40 dark:border-neutral-800 dark:bg-neutral-900">
         <div className="w-full px-4 text-center text-sm text-slate-500 dark:text-slate-400 sm:px-8">
           {/* Plain links, server-rendered: the header's hamburger menu only
@@ -237,6 +237,9 @@ export async function DirectoryChrome({
             </Link>
             <Link href={benefitsHref} className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
               {t.benefitsNavLabel}
+            </Link>
+            <Link href={aboutHref} className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
+              {t.aboutNavLabel}
             </Link>
             <Link href="/business-portal/login" className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
               {t.navLoginRegister}

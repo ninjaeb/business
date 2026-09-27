@@ -4,6 +4,7 @@ import {
   DIRECTORY_STRINGS,
   DIRECTORY_HOME_TITLE_BY_LOCALE,
   INDUSTRY_LABELS_BY_LOCALE,
+  directoryAboutPath,
   directoryGuidePath,
   directoryGuidesPath,
   directoryHomePath,
@@ -68,6 +69,12 @@ export async function GuideDetailContent({ guide, locale }: { guide: Guide; loca
         </div>
         <h1 className="mt-1 text-2xl font-semibold text-slate-900 dark:text-slate-100">{guide.title}</h1>
         <p className="mt-2 text-base text-slate-600 dark:text-slate-300">{guide.excerpt}</p>
+        <Link
+          href={directoryAboutPath(locale)}
+          className="mt-1 inline-block text-xs text-slate-400 hover:text-petrol hover:underline dark:text-slate-500 dark:hover:text-petrol-light"
+        >
+          {t.guideByLabel}
+        </Link>
 
         <div className="mt-6 text-base text-slate-600 dark:text-slate-300">
           {renderMarkdownLite(guide.body, undefined, { zoomableImages: true })}
