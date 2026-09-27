@@ -96,7 +96,7 @@ export function DirectoryLeadForm({ slug, locale }: { slug: string; locale: Dire
         value={typeof window !== "undefined" ? new URLSearchParams(window.location.search).get("via") ?? "" : ""}
       />
 
-      <div className="grid gap-4 sm:grid-cols-2">
+      <div className="grid gap-4 lg:grid-cols-2">
         <FieldGroup label={t.formNameLabel} htmlFor="directory-name" required>
           <Input
             id="directory-name"
@@ -119,7 +119,7 @@ export function DirectoryLeadForm({ slug, locale }: { slug: string; locale: Dire
           />
         </FieldGroup>
       </div>
-      <div className="grid gap-4 sm:grid-cols-2">
+      <div className="grid gap-4 lg:grid-cols-2">
         <FieldGroup label={t.formEmailLabel} htmlFor="directory-email" required>
           <Input
             id="directory-email"
