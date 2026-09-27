@@ -43,8 +43,10 @@ export { isValidSlugFormat, slugify } from "@/lib/slug";
 // listing's public fields as they were the last time an admin approved
 // them (see PartnerListing.publishedSnapshot in schema.prisma). Nothing a
 // partner is still editing, and nothing that's never been approved, is ever
-// visible here. Deliberately excludes the partner's own User.email/phone —
-// a visitor only ever reaches a partner through the lead form.
+// visible here. Deliberately excludes the partner ACCOUNT's own
+// User.email/phone (private login contact info) — `phone` below is a
+// different thing: a business's own contact number the partner explicitly
+// sets on the listing itself, same opt-in-public convention as `website`.
 export type PublishedListingSnapshot = {
   companyName: string;
   tagline: string | null;
@@ -52,6 +54,7 @@ export type PublishedListingSnapshot = {
   services: ServiceEntry[];
   industry: Industry | null;
   website: string | null;
+  phone: string | null;
   videos: VideoEntry[];
   address: string | null;
   city: string | null;
@@ -490,6 +493,7 @@ export function readPublishedSnapshot(value: unknown): PublishedListingSnapshot 
     services: servicesFromJson(raw.services),
     industry: typeof raw.industry === "string" ? (raw.industry as Industry) : null,
     website: typeof raw.website === "string" ? raw.website : null,
+    phone: typeof raw.phone === "string" ? raw.phone : null,
     videos: videosFromJson(raw.videos),
     address: typeof raw.address === "string" ? raw.address : null,
     city: typeof raw.city === "string" ? raw.city : null,
@@ -532,6 +536,7 @@ export function buildPublishedSnapshot(
     services: servicesFromJson(listing.services),
     industry: listing.industry,
     website: listing.website,
+    phone: listing.phone,
     videos: videosFromJson(listing.videos),
     address: listing.address,
     city: listing.city,
@@ -1369,32 +1374,29 @@ export type DirectoryLeadStats = {
   total: number;
   new: number;
   open: number;
-  won: number;
-  lost: number;
-  wonValue: number;
+  converted: number;
+  convertedValue: number;
   // How many of the above came in through the listing's Recommend link
   // (DirectoryLead.viaReferral) — a subset of total, not a separate
-  // funnel stage, so it's not folded into new/open/won/lost above.
+  // funnel stage, so it's not folded into new/open/converted above.
   referred: number;
 };
 
 async function computeDirectoryLeadStats(where: Prisma.DirectoryLeadWhereInput): Promise<DirectoryLeadStats> {
-  const [total, byStatus, wonAgg, referred] = await Promise.all([
+  const [total, byStatus, convertedAgg, referred] = await Promise.all([
     db.directoryLead.count({ where }),
     db.directoryLead.groupBy({ by: ["status"], where, _count: { _all: true } }),
-    db.directoryLead.aggregate({ where: { ...where, status: "WON" }, _sum: { value: true } }),
+    db.directoryLead.aggregate({ where: { ...where, status: "CLOSED_CONVERTED" }, _sum: { value: true } }),
     db.directoryLead.count({ where: { ...where, viaReferral: true } }),
   ]);
   const counts = new Map<string, number>(byStatus.map((row) => [row.status, row._count._all]));
-  const won = counts.get("WON") ?? 0;
-  const lost = counts.get("LOST") ?? 0;
+  const converted = counts.get("CLOSED_CONVERTED") ?? 0;
   return {
     total,
     new: counts.get("NEW") ?? 0,
-    open: total - won - lost,
-    won,
-    lost,
-    wonValue: Number(wonAgg._sum.value ?? 0),
+    open: total - converted,
+    converted,
+    convertedValue: Number(convertedAgg._sum.value ?? 0),
     referred,
   };
 }
@@ -1484,7 +1486,7 @@ export async function getReferralActivityForPartner(referrerId: string): Promise
     const entry = activity.get(row.listingId);
     if (!entry) continue;
     entry.leadCount += row._count._all;
-    if (row.status === "WON" && entry.wonValue !== null) entry.wonValue += Number(row._sum.value ?? 0);
+    if (row.status === "CLOSED_CONVERTED" && entry.wonValue !== null) entry.wonValue += Number(row._sum.value ?? 0);
   }
 
   return [...activity.values()].sort((a, b) => b.leadCount - a.leadCount || b.viewCount - a.viewCount);
@@ -1495,7 +1497,7 @@ export type DirectoryOverviewStats = {
   pendingListings: number;
   totalLeads: number;
   leadsLast30Days: number;
-  wonValue: number;
+  convertedValue: number;
 };
 
 // For Settings → Directory (admin) — across every partner's listing, not
@@ -1504,12 +1506,12 @@ export async function getDirectoryOverviewStats(): Promise<DirectoryOverviewStat
   const thirtyDaysAgo = new Date();
   thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
 
-  const [publishedListings, pendingListings, totalLeads, leadsLast30Days, wonAgg] = await Promise.all([
+  const [publishedListings, pendingListings, totalLeads, leadsLast30Days, convertedAgg] = await Promise.all([
     db.partnerListing.count({ where: { status: "PUBLISHED" } }),
     db.partnerListing.count({ where: { status: "PENDING_REVIEW" } }),
     db.directoryLead.count(),
     db.directoryLead.count({ where: { createdAt: { gte: thirtyDaysAgo } } }),
-    db.directoryLead.aggregate({ where: { status: "WON" }, _sum: { value: true } }),
+    db.directoryLead.aggregate({ where: { status: "CLOSED_CONVERTED" }, _sum: { value: true } }),
   ]);
 
   return {
@@ -1517,6 +1519,6 @@ export async function getDirectoryOverviewStats(): Promise<DirectoryOverviewStat
     pendingListings,
     totalLeads,
     leadsLast30Days,
-    wonValue: Number(wonAgg._sum.value ?? 0),
+    convertedValue: Number(convertedAgg._sum.value ?? 0),
   };
 }

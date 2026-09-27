@@ -20,15 +20,19 @@ const partnerProfileSchema = z.object({
     .min(1, "Contact phone is required")
     .refine(isValidPhoneFormat, { message: PHONE_FORMAT_HINT }),
   timezone: z.string().trim().optional(),
+  currency: z.string().trim().optional(),
 });
 
-// success carries the timezone just saved — the one field the form shows
-// through a controlled input, so it needs a value to sync to right after a
-// save. Next's own action-triggered page refresh (revalidatePath) resolves
-// too late for that: it can still hand the client a render generated just
-// before this mutation landed, one save behind. Returning it directly here
-// sidesteps that race entirely.
-export type PartnerProfileState = { error: string } | { success: true; timezone: string | null } | undefined;
+// success carries the timezone and currency just saved — the two fields the
+// form shows through a controlled input, so they need a value to sync to
+// right after a save. Next's own action-triggered page refresh
+// (revalidatePath) resolves too late for that: it can still hand the client
+// a render generated just before this mutation landed, one save behind.
+// Returning them directly here sidesteps that race entirely.
+export type PartnerProfileState =
+  | { error: string }
+  | { success: true; timezone: string | null; currency: string | null }
+  | undefined;
 
 // Self-service, scoped to the caller's own row only — never takes a
 // userId, unlike updateUserDetails (which is how an admin edits anyone
@@ -49,6 +53,7 @@ export async function updatePartnerProfile(
     title: formData.get("title"),
     phone: formData.get("phone"),
     timezone: formData.get("timezone") || undefined,
+    currency: formData.get("currency") || undefined,
   });
   if (!parsed.success) {
     return { error: parsed.error.issues[0]?.message ?? "Invalid input" };
@@ -68,9 +73,10 @@ export async function updatePartnerProfile(
       title: parsed.data.title || null,
       phone: parsed.data.phone ? normalizePhone(parsed.data.phone) : null,
       timezone: parsed.data.timezone || null,
+      currency: parsed.data.currency || null,
     },
   });
 
   revalidatePath("/business-portal/profile");
-  return { success: true, timezone: parsed.data.timezone || null };
+  return { success: true, timezone: parsed.data.timezone || null, currency: parsed.data.currency || null };
 }

@@ -3,8 +3,7 @@ import { Inbox, Handshake, ThumbsUp, Trophy, Wallet } from "lucide-react";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { db } from "@/lib/db";
 import { getDirectoryLeadStatsForPartner } from "@/lib/directory";
-import { getCurrency } from "@/lib/settings";
-import { formatCurrencyExact, formatDate, formatDuration } from "@/lib/format";
+import { DEFAULT_PARTNER_CURRENCY, formatCurrencyExact, formatDate, formatDuration } from "@/lib/format";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -18,9 +17,9 @@ import { DIRECTORY_LEAD_STATUS_BADGE_CLASSES, DIRECTORY_LEAD_STATUS_LABELS } fro
 // per-listing inbox pages to see all their inquiries.
 export default async function PartnerDirectoryLeadsPage() {
   const user = await requireCompletePartnerProfile();
-  const [stats, currency, leads] = await Promise.all([
+  const currency = user.currency ?? DEFAULT_PARTNER_CURRENCY;
+  const [stats, leads] = await Promise.all([
     getDirectoryLeadStatsForPartner(user.id),
-    getCurrency(),
     db.directoryLead.findMany({
       where: { listing: { partnerId: user.id } },
       orderBy: { createdAt: "desc" },
@@ -45,8 +44,8 @@ export default async function PartnerDirectoryLeadsPage() {
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
         <StatCard label="New" value={stats.new.toString()} icon={Inbox} accent="sky" />
         <StatCard label="Open" value={stats.open.toString()} icon={Handshake} accent="amber" />
-        <StatCard label="Won" value={stats.won.toString()} icon={Trophy} accent="emerald" />
-        <StatCard label="Won value" value={formatCurrencyExact(stats.wonValue, currency)} icon={Wallet} accent="indigo" />
+        <StatCard label="Converted" value={stats.converted.toString()} icon={Trophy} accent="emerald" />
+        <StatCard label="Converted value" value={formatCurrencyExact(stats.convertedValue, currency)} icon={Wallet} accent="indigo" />
         <StatCard label="Referred" value={stats.referred.toString()} description="Via your Recommend link" icon={ThumbsUp} accent="orange" />
       </div>
 

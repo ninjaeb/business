@@ -1,30 +1,35 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AlertTriangle, Mail, Phone, ThumbsUp } from "lucide-react";
+import { AlertTriangle, Handshake, ThumbsUp } from "lucide-react";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { db } from "@/lib/db";
-import { getCurrency } from "@/lib/settings";
-import { formatDate, formatDateTime, formatDuration } from "@/lib/format";
+import { DEFAULT_PARTNER_CURRENCY, formatDate, formatDateTime, formatDuration } from "@/lib/format";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { DirectoryLeadStatusSelect } from "@/components/directory/directory-lead-status-select";
+import { DirectoryLeadContactLinks } from "@/components/directory/directory-lead-contact-links";
 import { DirectoryLeadValueForm } from "@/components/directory/directory-lead-value-form";
 import { DirectoryLeadReplyForm } from "@/components/directory/directory-lead-reply-form";
 
 export default async function PartnerDirectoryLeadPage({ params }: { params: Promise<{ id: string }> }) {
   const user = await requireCompletePartnerProfile();
   const { id } = await params;
-  const [currency, lead] = await Promise.all([
-    getCurrency(),
-    db.directoryLead.findFirst({
-      where: { id, listing: { partnerId: user.id } },
-      include: {
-        replies: { include: { author: { select: { name: true } } }, orderBy: { createdAt: "asc" } },
-        listing: { select: { companyName: true } },
-      },
-    }),
-  ]);
+  const currency = user.currency ?? DEFAULT_PARTNER_CURRENCY;
+  const lead = await db.directoryLead.findFirst({
+    where: { id, listing: { partnerId: user.id } },
+    include: {
+      replies: { include: { author: { select: { name: true } } }, orderBy: { createdAt: "asc" } },
+      listing: { select: { companyName: true } },
+      convertedDeal: { select: { id: true } },
+    },
+  });
   if (!lead) notFound();
+
+  // Pre-fills the chat, quoting their own inquiry back to them for context
+  // — still just a draft in WhatsApp's own composer until the partner
+  // edits and sends it themselves, never sent automatically from here.
+  const whatsAppMessage = `Hi ${lead.name}, thanks for reaching out to ${lead.listing.companyName}! Regarding your inquiry: "${lead.message}"`;
 
   return (
     <div className="space-y-6">
@@ -50,7 +55,20 @@ export default async function PartnerDirectoryLeadPage({ params }: { params: Pro
             )}
           </>
         }
-        actions={<DirectoryLeadStatusSelect leadId={lead.id} status={lead.status} />}
+        actions={
+          <>
+            {lead.convertedDeal && (
+              <Link
+                href={`/business-portal/deals/${lead.convertedDeal.id}`}
+                className="inline-flex items-center gap-1.5 rounded-md border border-slate-200 px-3 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-50 dark:border-neutral-700 dark:text-slate-300 dark:hover:bg-neutral-800"
+              >
+                <Handshake className="h-3.5 w-3.5" />
+                View deal
+              </Link>
+            )}
+            <DirectoryLeadStatusSelect leadId={lead.id} status={lead.status} />
+          </>
+        }
       />
 
       <div className="grid items-start gap-6 lg:grid-cols-2">
@@ -61,16 +79,7 @@ export default async function PartnerDirectoryLeadPage({ params }: { params: Pro
           <CardBody className="space-y-3">
             <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-slate-500 dark:text-slate-400">
               {lead.company && <span>{lead.company}</span>}
-              <a href={`mailto:${lead.email}`} className="inline-flex items-center gap-1 hover:text-petrol dark:hover:text-petrol-light">
-                <Mail className="h-3.5 w-3.5" />
-                {lead.email}
-              </a>
-              {lead.phone && (
-                <a href={`tel:${lead.phone}`} className="inline-flex items-center gap-1 hover:text-petrol dark:hover:text-petrol-light">
-                  <Phone className="h-3.5 w-3.5" />
-                  {lead.phone}
-                </a>
-              )}
+              <DirectoryLeadContactLinks leadId={lead.id} email={lead.email} phone={lead.phone} whatsAppMessage={whatsAppMessage} />
             </div>
             <p className="whitespace-pre-wrap text-sm text-slate-700 dark:text-slate-300">{lead.message}</p>
           </CardBody>

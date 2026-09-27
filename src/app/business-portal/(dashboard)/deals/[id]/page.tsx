@@ -5,8 +5,7 @@ import { Pencil, Plus, Trash2 } from "lucide-react";
 import { db } from "@/lib/db";
 import { deletePartnerDeal } from "@/app/actions/partner-deals";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
-import { getCurrency } from "@/lib/settings";
-import { formatCurrency, formatDate, fullName } from "@/lib/format";
+import { DEFAULT_PARTNER_CURRENCY, formatCurrency, formatDate, fullName } from "@/lib/format";
 import { PARTNER_DEAL_STATUS_BADGE_CLASSES, PARTNER_DEAL_STATUS_LABELS } from "@/lib/labels";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
@@ -18,17 +17,15 @@ import { EmptyState } from "@/components/ui/empty-state";
 export default async function PartnerDealDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const user = await requireCompletePartnerProfile();
   const { id } = await params;
-  const [currency, deal] = await Promise.all([
-    getCurrency(),
-    db.partnerDeal.findFirst({
-      where: { id, partnerId: user.id },
-      include: {
-        company: { select: { id: true, name: true } },
-        contact: { select: { id: true, firstName: true, lastName: true } },
-        tasks: { where: { completed: false }, orderBy: { dueDate: "asc" } },
-      },
-    }),
-  ]);
+  const currency = user.currency ?? DEFAULT_PARTNER_CURRENCY;
+  const deal = await db.partnerDeal.findFirst({
+    where: { id, partnerId: user.id },
+    include: {
+      company: { select: { id: true, name: true } },
+      contact: { select: { id: true, firstName: true, lastName: true } },
+      tasks: { where: { completed: false }, orderBy: { dueDate: "asc" } },
+    },
+  });
   if (!deal) notFound();
 
   return (

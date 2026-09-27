@@ -9,10 +9,9 @@ import {
   getReferralActivityForPartner,
   listingViewCountBreakdown,
 } from "@/lib/directory";
-import { getCurrency } from "@/lib/settings";
 import { getSiteOrigin } from "@/lib/site-url";
 import { directoryListingPath } from "@/lib/directory-i18n";
-import { formatCurrencyExact } from "@/lib/format";
+import { DEFAULT_PARTNER_CURRENCY, formatCurrencyExact } from "@/lib/format";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -31,13 +30,13 @@ import { PARTNER_LISTING_STATUS_BADGE_CLASSES, PARTNER_LISTING_STATUS_LABELS } f
 // (possibly someone else's) — see getReferralActivityForPartner.
 export default async function PartnerDashboardPage() {
   const user = await requireCompletePartnerProfile();
-  const [listings, directoryStats, referralActivity, currency, siteOrigin] = await Promise.all([
+  const [listings, directoryStats, referralActivity, siteOrigin] = await Promise.all([
     listPartnerListings(user.id),
     getDirectoryLeadStatsForPartner(user.id),
     getReferralActivityForPartner(user.id),
-    getCurrency(),
     getSiteOrigin(),
   ]);
+  const currency = user.currency ?? DEFAULT_PARTNER_CURRENCY;
   const publishedListingCount = listings.filter((listing) => listing.publishedSnapshot).length;
 
   return (
@@ -47,8 +46,8 @@ export default async function PartnerDashboardPage() {
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
         <StatCard label="New leads" value={directoryStats.new.toString()} icon={Inbox} accent="sky" href="/business-portal/business-leads" />
         <StatCard label="Open" value={directoryStats.open.toString()} icon={Handshake} accent="amber" href="/business-portal/business-leads" />
-        <StatCard label="Won" value={directoryStats.won.toString()} icon={Trophy} accent="emerald" />
-        <StatCard label="Won value" value={formatCurrencyExact(directoryStats.wonValue, currency)} icon={Wallet} accent="indigo" />
+        <StatCard label="Converted" value={directoryStats.converted.toString()} icon={Trophy} accent="emerald" />
+        <StatCard label="Converted value" value={formatCurrencyExact(directoryStats.convertedValue, currency)} icon={Wallet} accent="indigo" />
         <StatCard
           label="Referred"
           value={directoryStats.referred.toString()}

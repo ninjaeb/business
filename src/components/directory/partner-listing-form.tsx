@@ -15,6 +15,7 @@ import {
   type ListingFormField,
   type ListingFormValues,
 } from "@/app/actions/directory";
+import { uploadDirectoryListingImage } from "@/app/actions/directory-images";
 import { Button, buttonClasses } from "@/components/ui/button";
 import { FieldGroup, Input, Label, RequiredMark, Select, Textarea } from "@/components/ui/field";
 import { MultiCombobox } from "@/components/ui/multi-combobox";
@@ -188,6 +189,7 @@ export function PartnerListingForm({
   const [tagline, setTagline] = useState(current.tagline);
   const [website, setWebsite] = useState(current.website);
   const [googleBusinessProfileUrl, setGoogleBusinessProfileUrl] = useState(current.googleBusinessProfileUrl);
+  const [phone, setPhone] = useState(current.phone);
   const [videos, setVideos] = useState<VideoEntry[]>(current.videos);
   const [industry, setIndustry] = useState(current.industry);
   const [address, setAddress] = useState(current.address);
@@ -215,6 +217,15 @@ export function PartnerListingForm({
   const [generatingFaqs, startGenerateFaqs] = useTransition();
   const [generatingSeoMeta, startGenerateSeoMeta] = useTransition();
   const [translating, startTranslate] = useTransition();
+
+  // Passed to every MarkdownLiteEditor on this form (the About field, in
+  // each language) — builds the FormData that action actually wants from
+  // the file the editor's own toolbar already compressed.
+  function uploadImage(file: File) {
+    const formData = new FormData();
+    formData.set("image", file);
+    return uploadDirectoryListingImage(listingId, formData);
+  }
 
   // Opens the crop dialog on the picked file rather than using it as-is —
   // see handleCropApply/handleCropCancel below for what happens next. The
@@ -419,6 +430,7 @@ export function PartnerListingForm({
     if (details.services.length > 0) setServices(details.services);
     if (details.faqs.length > 0) setFaqs(details.faqs);
     if (details.website) setWebsite(details.website);
+    if (details.phone) setPhone(details.phone);
     if (details.address) setAddress(details.address);
     if (details.city) setCity(details.city);
     if (details.state) setAddrState(details.state);
@@ -849,6 +861,23 @@ export function PartnerListingForm({
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2">
+        <FieldGroup label="Contact number" htmlFor="phone">
+          <Input
+            id="phone"
+            name="phone"
+            type="tel"
+            value={phone}
+            onChange={(event) => setPhone(event.target.value)}
+            placeholder="+60 12 345 6789"
+          />
+          <p className="mt-1 text-xs text-slate-400">
+            Shown on your listing as Call and WhatsApp buttons. Include the country code with a + sign. Leave blank to hide
+            both.
+          </p>
+        </FieldGroup>
+      </div>
+
+      <div className="grid gap-4 sm:grid-cols-2">
         <div hidden={activeTab !== "en"}>
           <div className="mb-1.5 flex items-center justify-between gap-2">
             <Label htmlFor="description" className="mb-0">
@@ -869,7 +898,7 @@ export function PartnerListingForm({
           <MarkdownLiteEditor
             id="description"
             name="description"
-            listingId={listingId}
+            onUploadImage={uploadImage}
             rows={5}
             value={description}
             onChange={(value) => {
@@ -892,7 +921,7 @@ export function PartnerListingForm({
           <MarkdownLiteEditor
             id="zhDescription"
             name="zhDescription"
-            listingId={listingId}
+            onUploadImage={uploadImage}
             rows={5}
             value={translations.zh?.description ?? ""}
             onChange={(value) => updateTranslation("zh", "description", value)}
@@ -912,7 +941,7 @@ export function PartnerListingForm({
           <MarkdownLiteEditor
             id="msDescription"
             name="msDescription"
-            listingId={listingId}
+            onUploadImage={uploadImage}
             rows={5}
             value={translations.ms?.description ?? ""}
             onChange={(value) => updateTranslation("ms", "description", value)}

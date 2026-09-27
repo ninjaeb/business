@@ -103,9 +103,14 @@ export default async function AdminDirectoryPage() {
         title="Partner directory"
         description="Review partner listings and see how their inquiries are going"
         actions={
-          <Link href={directoryHomePath(DEFAULT_DIRECTORY_LOCALE)} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-indigo-600 hover:underline dark:text-indigo-400">
-            View public directory
-          </Link>
+          <>
+            <Link href="/admin/guides" className="text-sm font-medium text-indigo-600 hover:underline dark:text-indigo-400">
+              Manage guides
+            </Link>
+            <Link href={directoryHomePath(DEFAULT_DIRECTORY_LOCALE)} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-indigo-600 hover:underline dark:text-indigo-400">
+              View public directory
+            </Link>
+          </>
         }
       />
 
@@ -119,7 +124,7 @@ export default async function AdminDirectoryPage() {
           icon={Handshake}
           accent="sky"
         />
-        <StatCard label="Won value" value={formatCurrencyExact(stats.wonValue, currency)} icon={Banknote} accent="indigo" />
+        <StatCard label="Converted value" value={formatCurrencyExact(stats.convertedValue, currency)} icon={Banknote} accent="indigo" />
       </div>
 
       <Card>
