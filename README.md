@@ -125,10 +125,13 @@ from your browser).
 
 See `.env.example` for the full list. `DATABASE_URL`, `SESSION_SECRET`, and
 `SITE_URL` are required; everything else (Google OAuth, Google Places,
-OpenRouter, search-console verification, IndexNow, Plausible, Google
-Analytics, deploy automation) is optional — each feature just stays off
-until its variables are set. Outbound email and WhatsApp notifications
-aren't env vars at all — see below.
+OpenRouter, search-console verification, IndexNow, Plausible, deploy
+automation) is optional — each feature just stays off until its variables
+are set. Google Analytics (GA4) is the one exception: it ships on by
+default, hardcoded to business.gotka.com's own property in
+`src/app/[locale]/layout.tsx`; `GA_MEASUREMENT_ID` only needs setting to
+override it with a different property. Outbound email and WhatsApp
+notifications aren't env vars at all — see below.
 
 ## Email and WhatsApp notifications (optional, admin-configured)
 

@@ -47,13 +47,13 @@ function plausibleScript() {
   return <Script defer data-domain={domain} src={src} strategy="afterInteractive" />;
 }
 
-// Google Analytics (GA4), same scoping and same off-until-configured
-// convention as plausibleScript above — the two aren't mutually exclusive,
-// a site can run either, both, or neither. GA_MEASUREMENT_ID is the
-// "G-XXXXXXXXXX" id from the GA4 property's Data Streams settings.
+// Google Analytics (GA4), scoped the same as plausibleScript above — the
+// two aren't mutually exclusive, a site can run either, both, or neither.
+// Defaults to this site's own GA4 property (business.gotka.com's Data
+// Stream) so it's live without any env var to set; GA_MEASUREMENT_ID still
+// overrides it if the property ever changes.
 function googleAnalyticsScripts() {
-  const measurementId = process.env.GA_MEASUREMENT_ID?.trim();
-  if (!measurementId) return null;
+  const measurementId = process.env.GA_MEASUREMENT_ID?.trim() || "G-RCEL949R1J";
   return (
     <>
       <Script src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`} strategy="afterInteractive" />
