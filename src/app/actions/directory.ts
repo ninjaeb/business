@@ -967,7 +967,7 @@ export async function autoCreateListingDetails(input: {
 
 // Creates a blank draft listing and drops the partner straight into its
 // editor. A plain action (no useActionState) since there's no form input to
-// validate: the "+ New listing" button just needs a row to exist before it
+// validate: the "+ New Business" button just needs a row to exist before it
 // can navigate to it.
 export async function createListingAction(): Promise<never> {
   const partner = await requirePartnerAction();

@@ -17,7 +17,7 @@ import { PARTNER_LISTING_STATUS_BADGE_CLASSES, PARTNER_LISTING_STATUS_LABELS } f
 
 // A partner account can list more than one business — each card here is
 // its own PartnerListing row, independently drafted, submitted, and
-// reviewed. "+ New listing" creates a blank draft and drops straight into
+// reviewed. "+ New Business" creates a blank draft and drops straight into
 // its editor (see createListingAction); there's no separate "new listing"
 // form to fill in first, same as the very first listing a partner ever
 // gets started with.
@@ -35,7 +35,7 @@ export default async function PartnerListingsPage() {
           <form action={createListingAction}>
             <Button type="submit">
               <Plus className="h-4 w-4" />
-              New listing
+              New Business
             </Button>
           </form>
         }

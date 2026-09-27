@@ -1337,7 +1337,7 @@ export function listingViewCountBreakdown(
 // Explicit creation — unlike the old single-listing ensurePartnerListing
 // (which silently created one the first time any listing page was visited),
 // a partner who can have several listings needs "create another one" to be
-// a visible, deliberate action (the "+ New listing" button on
+// a visible, deliberate action (the "+ New Business" button on
 // /business/listings), not something that happens as a side effect of
 // loading a page.
 export async function createPartnerListing(partnerId: string, companyName: string): Promise<PartnerListing> {
