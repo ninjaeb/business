@@ -92,7 +92,7 @@ export function PartnerDealForm({
           />
         </FieldGroup>
         <FieldGroup label="Status" htmlFor="status">
-          <Select id="status" name="status" defaultValue={values?.status ?? deal?.status ?? "DISCOVERY"}>
+          <Select id="status" name="status" defaultValue={values?.status ?? deal?.status ?? "NEW"}>
             {PARTNER_DEAL_STATUSES.map((status) => (
               <option key={status} value={status}>
                 {PARTNER_DEAL_STATUS_LABELS[status]}

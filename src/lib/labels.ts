@@ -123,13 +123,23 @@ export const DIRECTORY_LEAD_STATUS_BADGE_CLASSES: Record<DirectoryLeadStatus, st
   LOST: "bg-slate-100 text-slate-700 ring-slate-600/20 dark:bg-slate-800 dark:text-slate-300 dark:ring-slate-500/30",
 };
 
-// Declared in pipeline order — Discovery through Negotiation are all "open"
-// (see PARTNER_DEAL_OPEN_STATUSES below), Closed Won/Lost end the deal.
-export const PARTNER_DEAL_STATUSES: PartnerDealStatus[] = ["DISCOVERY", "PROPOSAL", "NEGOTIATION", "CLOSED_WON", "CLOSED_LOST"];
+// Declared in pipeline order — New through Negotiation are all "open" (see
+// PARTNER_DEAL_OPEN_STATUSES below), Closed Won/Lost end the deal.
+export const PARTNER_DEAL_STATUSES: PartnerDealStatus[] = [
+  "NEW",
+  "CONTACTED",
+  "DISCOVERY",
+  "PROPOSAL",
+  "NEGOTIATION",
+  "CLOSED_WON",
+  "CLOSED_LOST",
+];
 
-export const PARTNER_DEAL_OPEN_STATUSES: PartnerDealStatus[] = ["DISCOVERY", "PROPOSAL", "NEGOTIATION"];
+export const PARTNER_DEAL_OPEN_STATUSES: PartnerDealStatus[] = ["NEW", "CONTACTED", "DISCOVERY", "PROPOSAL", "NEGOTIATION"];
 
 export const PARTNER_DEAL_STATUS_LABELS: Record<PartnerDealStatus, string> = {
+  NEW: "New / Lead In",
+  CONTACTED: "Contacted / Qualifying",
   DISCOVERY: "Discovery / Meeting Scheduled",
   PROPOSAL: "Proposal / Quote Sent",
   NEGOTIATION: "Negotiation / In Review",
@@ -138,11 +148,13 @@ export const PARTNER_DEAL_STATUS_LABELS: Record<PartnerDealStatus, string> = {
 };
 
 export const PARTNER_DEAL_STATUS_BADGE_CLASSES: Record<PartnerDealStatus, string> = {
-  DISCOVERY: "bg-sky-50 text-sky-700 ring-sky-600/20 dark:bg-sky-950 dark:text-sky-300 dark:ring-sky-500/30",
-  PROPOSAL:
+  NEW: "bg-sky-50 text-sky-700 ring-sky-600/20 dark:bg-sky-950 dark:text-sky-300 dark:ring-sky-500/30",
+  CONTACTED: "bg-cyan-50 text-cyan-700 ring-cyan-600/20 dark:bg-cyan-950 dark:text-cyan-300 dark:ring-cyan-500/30",
+  DISCOVERY:
     "bg-violet-50 text-violet-700 ring-violet-600/20 dark:bg-violet-950 dark:text-violet-300 dark:ring-violet-500/30",
+  PROPOSAL: "bg-amber-50 text-amber-700 ring-amber-600/20 dark:bg-amber-950 dark:text-amber-300 dark:ring-amber-500/30",
   NEGOTIATION:
-    "bg-amber-50 text-amber-700 ring-amber-600/20 dark:bg-amber-950 dark:text-amber-300 dark:ring-amber-500/30",
+    "bg-orange-50 text-orange-700 ring-orange-600/20 dark:bg-orange-950 dark:text-orange-300 dark:ring-orange-500/30",
   CLOSED_WON:
     "bg-emerald-50 text-emerald-700 ring-emerald-600/20 dark:bg-emerald-950 dark:text-emerald-300 dark:ring-emerald-500/30",
   CLOSED_LOST: "bg-slate-100 text-slate-700 ring-slate-600/20 dark:bg-slate-800 dark:text-slate-300 dark:ring-slate-500/30",

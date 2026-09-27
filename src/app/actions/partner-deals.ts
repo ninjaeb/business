@@ -45,7 +45,7 @@ function extractDealFormValues(formData: FormData): PartnerDealFormValues {
   return {
     title: stringField(formData, "title"),
     value: stringField(formData, "value"),
-    status: stringField(formData, "status") || "DISCOVERY",
+    status: stringField(formData, "status") || "NEW",
     companyId: stringField(formData, "companyId"),
     contactId: stringField(formData, "contactId"),
     expectedCloseDate: stringField(formData, "expectedCloseDate"),
@@ -77,7 +77,7 @@ async function parseDealForm(formData: FormData, partnerId: string): Promise<Par
   const parsed = dealSchema.safeParse({
     title: formData.get("title"),
     value: formData.get("value"),
-    status: formData.get("status") || "DISCOVERY",
+    status: formData.get("status") || "NEW",
     companyId: formData.get("companyId"),
     contactId: formData.get("contactId"),
     expectedCloseDate: formData.get("expectedCloseDate"),
