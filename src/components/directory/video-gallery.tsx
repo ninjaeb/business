@@ -45,7 +45,7 @@ function VideoCard({
           >
             {video.thumbnailUrl ? (
               // eslint-disable-next-line @next/next/no-img-element -- an external third-party thumbnail (YouTube/Vimeo/etc.), not one this app serves itself
-              <img src={video.thumbnailUrl} alt="" loading="lazy" className="h-full w-full object-cover" />
+              <img src={video.thumbnailUrl} alt={title} loading="lazy" className="h-full w-full object-cover" />
             ) : (
               <div className="h-full w-full bg-slate-200 dark:bg-neutral-700" />
             )}

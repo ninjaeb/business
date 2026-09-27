@@ -1,5 +1,6 @@
 import "server-only";
 import { toEmbeddableVideoUrl } from "@/lib/directory";
+import { USER_AGENT } from "@/lib/website-text";
 
 // Best-effort thumbnail/title lookup for a video URL a partner just pasted
 // into the gallery editor (see VideosEditor, fetchVideoDetails in
@@ -18,7 +19,15 @@ type OEmbedResult = { title: string | null; thumbnailUrl: string | null };
 
 async function fetchOEmbedJson(endpoint: string): Promise<{ title?: unknown; thumbnail_url?: unknown } | null> {
   try {
-    const response = await fetch(endpoint, { signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS), cache: "no-store" });
+    // TikTok's oEmbed endpoint in particular blocks requests that don't look
+    // like they come from a real client — a bare fetch() with no headers
+    // reliably fails against it in production even though the endpoint
+    // itself is fine (verified directly).
+    const response = await fetch(endpoint, {
+      headers: { "User-Agent": USER_AGENT, Accept: "application/json" },
+      signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
+      cache: "no-store",
+    });
     if (!response.ok) return null;
     return (await response.json()) as { title?: unknown; thumbnail_url?: unknown };
   } catch {

@@ -2,29 +2,26 @@ import Link from "next/link";
 import { Handshake, Plus, Trophy, Wallet } from "lucide-react";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { db } from "@/lib/db";
-import { getCurrency } from "@/lib/settings";
-import { formatCurrency, formatCurrencyExact } from "@/lib/format";
+import { DEFAULT_PARTNER_CURRENCY, formatCurrency, formatCurrencyExact } from "@/lib/format";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { StatCard } from "@/components/ui/stat-card";
 import { EmptyState } from "@/components/ui/empty-state";
 import { buttonClasses } from "@/components/ui/button";
-import { PARTNER_DEAL_STATUS_BADGE_CLASSES, PARTNER_DEAL_STATUS_LABELS } from "@/lib/labels";
+import { PARTNER_DEAL_OPEN_STATUSES, PARTNER_DEAL_STATUS_BADGE_CLASSES, PARTNER_DEAL_STATUS_LABELS } from "@/lib/labels";
 
 export default async function PartnerDealsPage() {
   const user = await requireCompletePartnerProfile();
-  const [currency, deals] = await Promise.all([
-    getCurrency(),
-    db.partnerDeal.findMany({
-      where: { partnerId: user.id },
-      orderBy: { createdAt: "desc" },
-      include: { company: { select: { name: true } }, contact: { select: { firstName: true, lastName: true } } },
-    }),
-  ]);
+  const currency = user.currency ?? DEFAULT_PARTNER_CURRENCY;
+  const deals = await db.partnerDeal.findMany({
+    where: { partnerId: user.id },
+    orderBy: { createdAt: "desc" },
+    include: { company: { select: { name: true } }, contact: { select: { firstName: true, lastName: true } } },
+  });
 
-  const open = deals.filter((deal) => deal.status === "OPEN").length;
-  const won = deals.filter((deal) => deal.status === "WON");
+  const open = deals.filter((deal) => PARTNER_DEAL_OPEN_STATUSES.includes(deal.status)).length;
+  const won = deals.filter((deal) => deal.status === "CLOSED_WON");
   const wonValue = won.reduce((sum, deal) => sum + Number(deal.value), 0);
 
   return (

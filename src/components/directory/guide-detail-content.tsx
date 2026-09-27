@@ -1,0 +1,98 @@
+import Link from "next/link";
+import { getSiteOrigin } from "@/lib/site-url";
+import {
+  DIRECTORY_STRINGS,
+  DIRECTORY_HOME_TITLE_BY_LOCALE,
+  INDUSTRY_LABELS_BY_LOCALE,
+  directoryGuidePath,
+  directoryGuidesPath,
+  directoryHomePath,
+  type DirectoryLocale,
+} from "@/lib/directory-i18n";
+import { buildBreadcrumbJsonLd } from "@/lib/directory";
+import { buildGuideJsonLd } from "@/lib/directory-seo";
+import { listPublishedGuidesByIndustry } from "@/lib/directory-guides";
+import { renderMarkdownLite } from "@/lib/markdown-lite";
+import { formatDate } from "@/lib/format";
+import { Card, CardBody } from "@/components/ui/card";
+import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
+import type { Industry } from "@/generated/prisma/client";
+
+type Guide = {
+  id: string;
+  slug: string;
+  title: string;
+  excerpt: string;
+  body: string;
+  industry: Industry | null;
+  publishedAt: Date | null;
+  updatedAt: Date;
+};
+
+// A guide's own detail page — top-level (not nested under a listing's own
+// layout the way About/Products/FAQ are), so this owns its full chrome:
+// breadcrumbs, H1, and a "Related guides" rail once the industry pages
+// have somewhere to link back from (see listPublishedGuidesByIndustry) —
+// the actual pillar-to-cluster link this content type exists to make, not
+// just a page that happens to exist.
+export async function GuideDetailContent({ guide, locale }: { guide: Guide; locale: DirectoryLocale }) {
+  const [siteOrigin, relatedGuides] = await Promise.all([
+    getSiteOrigin(),
+    guide.industry ? listPublishedGuidesByIndustry(guide.industry, { excludeId: guide.id }) : Promise.resolve([]),
+  ]);
+  const t = DIRECTORY_STRINGS[locale];
+  const pageUrl = `${siteOrigin}${directoryGuidePath(locale, guide.slug)}`;
+  const breadcrumbItems = [
+    { name: DIRECTORY_HOME_TITLE_BY_LOCALE[locale], url: `${siteOrigin}${directoryHomePath(locale)}` },
+    { name: t.guidesIndexHeading, url: `${siteOrigin}${directoryGuidesPath(locale)}` },
+    { name: guide.title, url: pageUrl },
+  ];
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildBreadcrumbJsonLd(breadcrumbItems) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildGuideJsonLd(guide, siteOrigin, pageUrl) }} />
+      <div className="mx-auto w-full max-w-3xl px-4 py-8 sm:px-8">
+        <DirectoryBreadcrumbs items={breadcrumbItems} navLabel={t.breadcrumbNavLabel} />
+        <div className="mt-3 flex flex-wrap items-center gap-2">
+          {guide.industry && (
+            <span className="text-xs font-medium text-petrol dark:text-petrol-light">
+              {INDUSTRY_LABELS_BY_LOCALE[locale][guide.industry]}
+            </span>
+          )}
+          {guide.publishedAt && (
+            <span className="text-xs text-slate-400 dark:text-slate-500">
+              {t.guidePublishedOnLabel} {formatDate(guide.publishedAt)}
+            </span>
+          )}
+        </div>
+        <h1 className="mt-1 text-2xl font-semibold text-slate-900 dark:text-slate-100">{guide.title}</h1>
+        <p className="mt-2 text-base text-slate-600 dark:text-slate-300">{guide.excerpt}</p>
+
+        <div className="mt-6 text-base text-slate-600 dark:text-slate-300">
+          {renderMarkdownLite(guide.body, undefined, { zoomableImages: true })}
+        </div>
+
+        {relatedGuides.length > 0 && (
+          <div className="mt-10 border-t border-slate-200 pt-6 dark:border-neutral-800">
+            <h2 className="text-base font-semibold text-slate-900 dark:text-slate-100">{t.guideRelatedHeading}</h2>
+            <ul className="mt-3 space-y-2">
+              {relatedGuides.map((related) => (
+                <li key={related.id}>
+                  <Link href={directoryGuidePath(locale, related.slug)} className="block">
+                    <Card className="transition-colors hover:border-petrol/40 dark:hover:border-petrol-light/30">
+                      <CardBody className="space-y-1">
+                        <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-100">{related.title}</h3>
+                        <p className="line-clamp-2 text-xs text-slate-500 dark:text-slate-400">{related.excerpt}</p>
+                      </CardBody>
+                    </Card>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    </>
+  );
+}

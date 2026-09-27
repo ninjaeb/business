@@ -3,11 +3,15 @@ import Link from "next/link";
 import { ExternalLink, Eye, Inbox, Handshake, Plus, Store, ThumbsUp, Trophy, Wallet } from "lucide-react";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { createListingAction } from "@/app/actions/directory";
-import { listPartnerListings, getDirectoryLeadStatsForPartner, listingViewCountBreakdown } from "@/lib/directory";
-import { getCurrency } from "@/lib/settings";
+import {
+  listPartnerListings,
+  getDirectoryLeadStatsForPartner,
+  getReferralActivityForPartner,
+  listingViewCountBreakdown,
+} from "@/lib/directory";
 import { getSiteOrigin } from "@/lib/site-url";
 import { directoryListingPath } from "@/lib/directory-i18n";
-import { formatCurrencyExact } from "@/lib/format";
+import { DEFAULT_PARTNER_CURRENCY, formatCurrencyExact } from "@/lib/format";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -15,20 +19,24 @@ import { Button, buttonClasses } from "@/components/ui/button";
 import { StatCard } from "@/components/ui/stat-card";
 import { EmptyState } from "@/components/ui/empty-state";
 import { ListingLogo } from "@/components/directory/listing-logo";
+import { ShareButton } from "@/components/directory/share-button";
 import { PARTNER_LISTING_STATUS_BADGE_CLASSES, PARTNER_LISTING_STATUS_LABELS } from "@/lib/labels";
 
 // No commission/payout system (unlike the CRM this was extracted from,
 // whose own overview page mixed referral-link stats with directory
-// stats) — just the one "Referred" stat below, alongside the rest of how
-// this partner's directory leads are going.
-export default async function PartnerOverviewPage() {
+// stats) — the "Referred" stat below is about leads that came into a
+// listing THIS partner owns; "Businesses You've Referred" further down is
+// the mirror image, this partner's own referral activity for a listing
+// (possibly someone else's) — see getReferralActivityForPartner.
+export default async function PartnerDashboardPage() {
   const user = await requireCompletePartnerProfile();
-  const [listings, directoryStats, currency, siteOrigin] = await Promise.all([
+  const [listings, directoryStats, referralActivity, siteOrigin] = await Promise.all([
     listPartnerListings(user.id),
     getDirectoryLeadStatsForPartner(user.id),
-    getCurrency(),
+    getReferralActivityForPartner(user.id),
     getSiteOrigin(),
   ]);
+  const currency = user.currency ?? DEFAULT_PARTNER_CURRENCY;
   const publishedListingCount = listings.filter((listing) => listing.publishedSnapshot).length;
 
   return (
@@ -38,8 +46,8 @@ export default async function PartnerOverviewPage() {
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
         <StatCard label="New leads" value={directoryStats.new.toString()} icon={Inbox} accent="sky" href="/business-portal/business-leads" />
         <StatCard label="Open" value={directoryStats.open.toString()} icon={Handshake} accent="amber" href="/business-portal/business-leads" />
-        <StatCard label="Won" value={directoryStats.won.toString()} icon={Trophy} accent="emerald" />
-        <StatCard label="Won value" value={formatCurrencyExact(directoryStats.wonValue, currency)} icon={Wallet} accent="indigo" />
+        <StatCard label="Converted" value={directoryStats.converted.toString()} icon={Trophy} accent="emerald" />
+        <StatCard label="Converted value" value={formatCurrencyExact(directoryStats.convertedValue, currency)} icon={Wallet} accent="indigo" />
         <StatCard
           label="Referred"
           value={directoryStats.referred.toString()}
@@ -52,11 +60,11 @@ export default async function PartnerOverviewPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>My listings</CardTitle>
+          <CardTitle>My Business</CardTitle>
           <form action={createListingAction}>
             <Button type="submit" size="sm">
               <Plus className="h-4 w-4" />
-              New listing
+              New Business
             </Button>
           </form>
         </CardHeader>
@@ -140,6 +148,70 @@ export default async function PartnerOverviewPage() {
                 Manage listings
               </Link>
             </p>
+          )}
+        </CardBody>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Businesses You&apos;ve Referred</CardTitle>
+        </CardHeader>
+        <CardBody>
+          {referralActivity.length === 0 ? (
+            <EmptyState
+              icon={ThumbsUp}
+              title="No referrals yet"
+              description="Open any business's public page and click Recommend Business to start tracking what your own link brings in."
+            />
+          ) : (
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {referralActivity.map((activity) => {
+                const referralUrl = activity.referralCode
+                  ? `${siteOrigin}${directoryListingPath("en", activity.slug)}?r=${activity.referralCode}&via=${user.id}`
+                  : null;
+                return (
+                  <Card key={activity.listingId}>
+                    <CardBody className="space-y-3">
+                      <div className="flex items-start justify-between gap-2">
+                        {activity.isPublished ? (
+                          <Link
+                            href={`${siteOrigin}${directoryListingPath("en", activity.slug)}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="truncate font-medium text-petrol hover:underline dark:text-petrol-light"
+                          >
+                            {activity.companyName}
+                          </Link>
+                        ) : (
+                          <p className="truncate font-medium text-slate-800 dark:text-slate-200">{activity.companyName}</p>
+                        )}
+                        {referralUrl && (
+                          <ShareButton title={activity.companyName} url={referralUrl} label="Share your link" icon="share" size="sm" />
+                        )}
+                      </div>
+                      <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-slate-500 dark:text-slate-400">
+                        <span className="inline-flex items-center gap-1">
+                          <Eye className="h-3.5 w-3.5" />
+                          {activity.viewCount.toLocaleString()} view{activity.viewCount === 1 ? "" : "s"}
+                        </span>
+                        <span className="inline-flex items-center gap-1">
+                          <ThumbsUp className="h-3.5 w-3.5" />
+                          {activity.leadCount.toLocaleString()} lead{activity.leadCount === 1 ? "" : "s"}
+                        </span>
+                      </div>
+                      <p className="flex items-center gap-1 text-sm text-slate-500 dark:text-slate-400">
+                        <Wallet className="h-3.5 w-3.5 shrink-0" />
+                        {activity.wonValue === null ? (
+                          <span className="text-slate-400 dark:text-slate-500">Won value not shared by this business</span>
+                        ) : (
+                          `${formatCurrencyExact(activity.wonValue, currency)} won`
+                        )}
+                      </p>
+                    </CardBody>
+                  </Card>
+                );
+              })}
+            </div>
           )}
         </CardBody>
       </Card>

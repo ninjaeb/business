@@ -1,7 +1,16 @@
 import type { Metadata } from "next";
-import { DEFAULT_DIRECTORY_LOCALE, DIRECTORY_LOCALES, directoryHomePath, type DirectoryLocale } from "@/lib/directory-i18n";
-import type { FaqEntry, ListingUpdateEntry, VideoEntry } from "@/lib/directory";
-import { firstMarkdownLiteImageUrl, stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
+import {
+  DEFAULT_DIRECTORY_LOCALE,
+  DIRECTORY_LOCALES,
+  DIRECTORY_STRINGS,
+  directoryGuidePath,
+  directoryGuidesPath,
+  directoryHomePath,
+  type DirectoryLocale,
+} from "@/lib/directory-i18n";
+import type { FaqEntry, ListingUpdateEntry, PublishedListingSnapshot, VideoEntry } from "@/lib/directory";
+import { firstMarkdownLiteImageUrl, stripMarkdownLiteToPlainText, truncateAtWordBoundary } from "@/lib/markdown-lite";
+import { MAX_SEO_DESCRIPTION_LENGTH } from "@/lib/listing-seo-limits";
 
 // What every public directory page shares for search engines (SEO) and AI
 // answer engines (GEO) that isn't a translated UI string: the brand the
@@ -60,21 +69,31 @@ export const DIRECTORY_NOINDEX_ROBOTS: NonNullable<Metadata["robots"]> = {
 };
 
 // The directory's branded 1200×630 share image, rendered by
-// src/app/[locale]/business/opengraph-image.tsx. Every directory page
-// references it explicitly, as an absolute URL, rather than leaning on that
-// file convention's own inheritance: a nested page that sets its own
-// openGraph block — every one of them does, for title/description/url —
-// replaces the segment's block wholesale, images included, which silently
-// left the category, sign-up and logo-less listing pages with no image.
+// src/app/[locale]/opengraph-image.tsx. Every directory page references it
+// explicitly, as an absolute URL, rather than leaning on that file
+// convention's own inheritance: a nested page that sets its own openGraph
+// block — every one of them does, for title/description/url — replaces the
+// segment's block wholesale, images included, which silently left the
+// category, sign-up and logo-less listing pages with no image.
 export const DIRECTORY_SHARE_IMAGE_ALT = "Gotka Business Directory";
 export const DIRECTORY_SHARE_IMAGE_SIZE = { width: 1200, height: 630 };
 
-export function directoryShareImage(siteOrigin: string, locale: DirectoryLocale) {
+// Same shape, for a page whose own opengraph-image route renders something
+// more specific than the generic card above (see category/industry/
+// location's own opengraph-image.tsx, via directory-og-image.tsx) —
+// `pageUrl` is the page's own absolute URL, already computed by every
+// caller, so this just points at its opengraph-image sibling route instead
+// of the home page's.
+export function pageShareImage(pageUrl: string, alt: string) {
   return {
-    url: `${siteOrigin}${directoryHomePath(locale)}/opengraph-image`,
+    url: `${pageUrl}/opengraph-image`,
     ...DIRECTORY_SHARE_IMAGE_SIZE,
-    alt: DIRECTORY_SHARE_IMAGE_ALT,
+    alt,
   };
+}
+
+export function directoryShareImage(siteOrigin: string, locale: DirectoryLocale) {
+  return pageShareImage(`${siteOrigin}${directoryHomePath(locale)}`, DIRECTORY_SHARE_IMAGE_ALT);
 }
 
 // Every language version of one page, plus x-default pointing at English —
@@ -87,6 +106,83 @@ export function buildLanguageAlternates(
   return {
     ...Object.fromEntries(DIRECTORY_LOCALES.map(({ code }) => [code, `${siteOrigin}${pathFor(code)}`])),
     "x-default": `${siteOrigin}${pathFor(DEFAULT_DIRECTORY_LOCALE)}`,
+  };
+}
+
+// Shared by the listing's own About page and each of its section pages
+// (Products & Services, Photos, Videos, News, Promotions, Visit us, FAQ —
+// see src/app/[locale]/[slug]/) — every one of them wants the same title/
+// description fallback chain and the same OG/Twitter/robots/hreflang shape,
+// differing only in which page's own URL is canonical and (past About)
+// which section name reads after the title's own em dash. The partner's
+// seoTitle/seoDescription (or their fallbacks) describe the whole listing,
+// not any one section, so they're reused as-is rather than rewritten per
+// page — only the title gets a suffix, so a share of the Products &
+// Services page still reads as "Acme Co | Gotka Business Directory –
+// Products & Services" rather than losing the business's own name entirely.
+export function buildListingMetadata({
+  listing,
+  siteOrigin,
+  locale,
+  pageUrl,
+  pathFor,
+  sectionHeading,
+  shareImagePath,
+  descriptionOverride,
+}: {
+  listing: Pick<PublishedListingSnapshot, "seoTitle" | "seoDescription" | "tagline" | "description" | "companyName">;
+  siteOrigin: string;
+  locale: DirectoryLocale;
+  pageUrl: string;
+  pathFor: (locale: DirectoryLocale) => string;
+  // Omitted for the About page — the bare listing URL needs no suffix,
+  // same as it never had one before it had siblings to distinguish itself
+  // from.
+  sectionHeading?: string;
+  shareImagePath: string;
+  // A page whose own content is more specific than "this listing" — one
+  // named photo album, so far (see photos/page.tsx) — can describe exactly
+  // what's actually on it instead of the whole listing's own tagline/About
+  // text, which is what every other section page still falls back to.
+  // Applied everywhere `description` below would otherwise go (top-level,
+  // openGraph, twitter) so all three stay in sync, same as the fallback
+  // chain already keeps them.
+  descriptionOverride?: string;
+}): Metadata {
+  const plainDescription = stripMarkdownLiteToPlainText(listing.description);
+  const description =
+    descriptionOverride ||
+    listing.seoDescription?.trim() ||
+    listing.tagline ||
+    (plainDescription ? truncateAtWordBoundary(plainDescription, MAX_SEO_DESCRIPTION_LENGTH) : undefined) ||
+    `${listing.companyName} on the business directory.`;
+  const baseTitle = listing.seoTitle?.trim() || `${listing.companyName} | ${DIRECTORY_SITE_NAME_BY_LOCALE[locale]}`;
+  const title = sectionHeading ? `${baseTitle} – ${sectionHeading}` : baseTitle;
+  const shareImage = { url: `${siteOrigin}${shareImagePath}` };
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: pageUrl,
+      languages: buildLanguageAlternates(siteOrigin, pathFor),
+    },
+    robots: DIRECTORY_ROBOTS,
+    openGraph: {
+      title,
+      description,
+      url: pageUrl,
+      siteName: DIRECTORY_SITE_NAME_BY_LOCALE[locale],
+      type: "website",
+      locale: OG_LOCALE_BY_DIRECTORY_LOCALE[locale],
+      images: [shareImage],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [shareImage],
+    },
   };
 }
 
@@ -187,6 +283,26 @@ export function buildVideoJsonLd(video: VideoEntry, embedUrl: string | null, com
   });
 }
 
+// One ImageObject per photo actually shown on the page (see
+// photos/page.tsx — the flat grid, one album's own photos, or the "other
+// photos" section, never the album-grid's own cover thumbnails, which
+// stand for a whole album rather than being content in their own right).
+// Same "@graph of one node type, none needing to stand alone" shape as
+// buildUpdatesJsonLd. name/caption both fall back to companyName, same
+// "distinct, non-generic" reasoning the page's own <img alt> already uses,
+// since an uncaptioned photo would otherwise have no name at all here.
+export function buildPhotoGalleryJsonLd(photos: { url: string; caption: string }[], companyName: string): string {
+  return serializeJsonLd({
+    "@context": "https://schema.org",
+    "@graph": photos.map((photo) => ({
+      "@type": "ImageObject",
+      contentUrl: photo.url,
+      name: photo.caption || companyName,
+      ...(photo.caption ? { caption: photo.caption } : {}),
+    })),
+  });
+}
+
 // Each current News/Promotion post as its own Article node — the same
 // "directly quotable, dated, structured" GEO payoff buildFaqJsonLd already
 // gives FAQ entries. Always Article rather than splitting News into
@@ -224,4 +340,106 @@ export function buildUpdatesJsonLd(updates: ListingUpdateEntry[], siteOrigin: st
       return node;
     }),
   });
+}
+
+// Metadata for /guides — a plain aggregate index, same shape as
+// buildNewsFeedMetadata/buildLatestProductsMetadata (no per-page data to
+// read, unlike buildListingMetadata).
+export function buildGuidesIndexMetadata(siteOrigin: string, locale: DirectoryLocale): Metadata {
+  const t = DIRECTORY_STRINGS[locale];
+  const title = `${t.guidesIndexHeading} | ${DIRECTORY_SITE_NAME_BY_LOCALE[locale]}`;
+  const pageUrl = `${siteOrigin}${directoryGuidesPath(locale)}`;
+  const shareImage = directoryShareImage(siteOrigin, locale);
+  return {
+    title,
+    description: t.guidesIndexDescription,
+    alternates: {
+      canonical: pageUrl,
+      languages: buildLanguageAlternates(siteOrigin, directoryGuidesPath),
+    },
+    robots: DIRECTORY_ROBOTS,
+    openGraph: {
+      title,
+      description: t.guidesIndexDescription,
+      url: pageUrl,
+      siteName: DIRECTORY_SITE_NAME_BY_LOCALE[locale],
+      type: "website",
+      locale: OG_LOCALE_BY_DIRECTORY_LOCALE[locale],
+      images: [shareImage],
+    },
+    twitter: { card: "summary_large_image", title, description: t.guidesIndexDescription, images: [shareImage] },
+  };
+}
+
+// A single guide's own detail page — same seoTitle/seoDescription fallback
+// chain as buildListingMetadata, just against a guide's own fields (no
+// tagline, no markdown `description` to strip — `excerpt` already is the
+// short, plain-text summary).
+export function buildGuideMetadata({
+  guide,
+  siteOrigin,
+  locale,
+}: {
+  guide: { slug: string; title: string; excerpt: string; seoTitle: string | null; seoDescription: string | null };
+  siteOrigin: string;
+  locale: DirectoryLocale;
+}): Metadata {
+  const description = guide.seoDescription?.trim() || truncateAtWordBoundary(guide.excerpt, MAX_SEO_DESCRIPTION_LENGTH);
+  const title = guide.seoTitle?.trim() || `${guide.title} | ${DIRECTORY_SITE_NAME_BY_LOCALE[locale]}`;
+  const pageUrl = `${siteOrigin}${directoryGuidePath(locale, guide.slug)}`;
+  // The generic directory share image, not a per-guide dynamic render —
+  // same choice the news feed's own cards make (see directoryShareImage),
+  // rather than standing up a whole opengraph-image route for a content
+  // type this pass is deliberately keeping to a working scaffold.
+  const shareImage = directoryShareImage(siteOrigin, locale);
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: pageUrl,
+      languages: buildLanguageAlternates(siteOrigin, (code) => directoryGuidePath(code, guide.slug)),
+    },
+    robots: DIRECTORY_ROBOTS,
+    openGraph: {
+      title,
+      description,
+      url: pageUrl,
+      siteName: DIRECTORY_SITE_NAME_BY_LOCALE[locale],
+      type: "article",
+      locale: OG_LOCALE_BY_DIRECTORY_LOCALE[locale],
+      images: [shareImage],
+    },
+    twitter: { card: "summary_large_image", title, description, images: [shareImage] },
+  };
+}
+
+// Schema.org Article for a single guide — same shape as one node of
+// buildUpdatesJsonLd's own @graph (author/publisher both point at the
+// same site-level Organization entity — see that function's own comment
+// for why this is deliberately not a personal byline), but standalone (a
+// guide's detail page has exactly one) and carries dateModified alongside
+// datePublished: an editorial guide is exactly the kind of content that
+// gets revised after it first goes up, and AI overviews are said to
+// weight a recently modified source over a stale one — the freshness
+// signal this whole content type exists to serve.
+export function buildGuideJsonLd(
+  guide: { title: string; body: string; publishedAt: Date | null; updatedAt: Date },
+  siteOrigin: string,
+  pageUrl: string,
+): string {
+  const organizationId = organizationJsonLdId(siteOrigin);
+  const imageUrl = firstMarkdownLiteImageUrl(guide.body);
+  const node: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: guide.title,
+    articleBody: stripMarkdownLiteToPlainText(guide.body),
+    author: { "@id": organizationId },
+    publisher: { "@id": organizationId },
+    mainEntityOfPage: pageUrl,
+    dateModified: guide.updatedAt,
+  };
+  if (guide.publishedAt) node.datePublished = guide.publishedAt;
+  if (imageUrl) node.image = new URL(imageUrl, siteOrigin).toString();
+  return serializeJsonLd(node);
 }

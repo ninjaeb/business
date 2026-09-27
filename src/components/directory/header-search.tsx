@@ -7,7 +7,16 @@ import { Loader2, Megaphone, Package, Search } from "lucide-react";
 import { Input } from "@/components/ui/field";
 import { Badge } from "@/components/ui/badge";
 import { ListingLogo } from "@/components/directory/listing-logo";
-import { directoryHomePath, directoryListingPath, formatSearchViewAllResults, type DirectoryLocale, type DirectoryStrings } from "@/lib/directory-i18n";
+import {
+  directoryHomePath,
+  directoryListingNewsPath,
+  directoryListingPath,
+  directoryListingPromotionsPath,
+  directoryListingServicesPath,
+  formatSearchViewAllResults,
+  type DirectoryLocale,
+  type DirectoryStrings,
+} from "@/lib/directory-i18n";
 import { searchDirectoryIndex, type DirectorySearchIndex } from "@/lib/directory-search";
 import { cn } from "@/lib/utils";
 
@@ -102,17 +111,15 @@ export function HeaderSearch({
     router.push(`${directoryHomePath(locale)}?q=${encodeURIComponent(trimmed)}`);
   }
 
-  // A result on the page the visitor is already on is handled by the
-  // browser itself, not the router: Next 16's client router builds a
-  // same-route hash navigation's URL as the route's stored canonical URL
-  // plus the new fragment, and that stored URL can still carry the
-  // fragment the visitor arrived with (a section-nav click, say), so a
-  // Link to "…#news" from "…#media" lands on "…#media#news" — and a Link
-  // with no fragment at all keeps the stale "#media" (see
-  // navigateUsingPrefetchedRouteTree in next/dist/client/components/
-  // segment-cache/navigation.js). A plain hash change scrolls to the
-  // section and records the fragment correctly; a result with no section
-  // just scrolls to the top and drops the stale one. Any other page is a
+  // Every result below is a real page now (About/Products & Services/News/
+  // Promotions/... each their own route — see src/app/[locale]/[slug]/),
+  // not an anchor within one single page the way "#services"/"#news" used
+  // to work, so there's no fragment-navigation quirk left to work around.
+  // Kept for the case a result points at the exact page the visitor is
+  // already on (searching from within a business's own Products & Services
+  // page, say): a plain Link there would still navigate, remounting the
+  // page for no visible change, so this intercepts that one case and just
+  // closes the dropdown and scrolls to the top instead. Any other page is a
   // normal Link navigation.
   function followResult(event: React.MouseEvent<HTMLAnchorElement>, href: string) {
     setOpen(false);
@@ -196,8 +203,8 @@ export function HeaderSearch({
               {results.products.map((hit, index) => (
                 <Link
                   key={`${hit.listingSlug}-${index}`}
-                  href={`${directoryListingPath(locale, hit.listingSlug)}#services`}
-                  onClick={(event) => followResult(event, `${directoryListingPath(locale, hit.listingSlug)}#services`)}
+                  href={directoryListingServicesPath(locale, hit.listingSlug)}
+                  onClick={(event) => followResult(event, directoryListingServicesPath(locale, hit.listingSlug))}
                   className="flex items-center gap-2.5 px-3 py-2 hover:bg-slate-50 dark:hover:bg-neutral-800"
                 >
                   <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-500 dark:bg-neutral-800 dark:text-slate-400">
@@ -214,11 +221,16 @@ export function HeaderSearch({
 
           {results.updates.length > 0 && (
             <ResultGroup heading={t.updatesHeading}>
-              {results.updates.map((hit, index) => (
+              {results.updates.map((hit, index) => {
+                const href =
+                  hit.kind === "PROMOTION"
+                    ? directoryListingPromotionsPath(locale, hit.listingSlug)
+                    : directoryListingNewsPath(locale, hit.listingSlug);
+                return (
                 <Link
                   key={`${hit.listingSlug}-${index}`}
-                  href={`${directoryListingPath(locale, hit.listingSlug)}#news`}
-                  onClick={(event) => followResult(event, `${directoryListingPath(locale, hit.listingSlug)}#news`)}
+                  href={href}
+                  onClick={(event) => followResult(event, href)}
                   className="flex items-center gap-2.5 px-3 py-2 hover:bg-slate-50 dark:hover:bg-neutral-800"
                 >
                   <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-500 dark:bg-neutral-800 dark:text-slate-400">
@@ -240,7 +252,8 @@ export function HeaderSearch({
                     </span>
                   </span>
                 </Link>
-              ))}
+                );
+              })}
             </ResultGroup>
           )}
 

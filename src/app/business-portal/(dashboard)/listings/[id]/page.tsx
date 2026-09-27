@@ -48,7 +48,7 @@ export default async function PartnerListingEditorPage({ params }: { params: Pro
   return (
     <div className="space-y-6">
       <PageHeader
-        breadcrumbs={[{ label: "My listings", href: "/business-portal/listings" }, { label: listing.companyName }]}
+        breadcrumbs={[{ label: "My Business", href: "/business-portal/listings" }, { label: listing.companyName }]}
         title={listing.companyName}
         description="What visitors see on the business directory, and the form they use to reach you."
       />
@@ -102,6 +102,7 @@ export default async function PartnerListingEditorPage({ params }: { params: Pro
               services: servicesFromJson(listing.services),
               industry: listing.industry ?? "",
               website: listing.website ?? "",
+              phone: listing.phone ?? "",
               videos: videosFromJson(listing.videos),
               address: listing.address ?? "",
               city: listing.city ?? "",
@@ -113,6 +114,7 @@ export default async function PartnerListingEditorPage({ params }: { params: Pro
               translations: translationsFromJson(listing.translations),
               seoTitle: listing.seoTitle ?? "",
               seoDescription: listing.seoDescription ?? "",
+              shareWonValueWithReferrers: listing.shareWonValueWithReferrers,
             }}
           />
         </CardBody>

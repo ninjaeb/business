@@ -3,6 +3,7 @@
 import { useState, useTransition } from "react";
 import { Megaphone, Pencil, Plus, Sparkles, Trash2, X } from "lucide-react";
 import { rewriteListingUpdate } from "@/app/actions/directory";
+import { uploadDirectoryListingImage } from "@/app/actions/directory-images";
 import { Input } from "@/components/ui/field";
 import { Badge } from "@/components/ui/badge";
 import { buttonClasses } from "@/components/ui/button";
@@ -60,6 +61,12 @@ function UpdateEntryForm({
   const toast = useToast();
   const isEditing = onCancel !== undefined;
   const canSubmit = draft.title.trim() !== "" && draft.body.trim() !== "";
+
+  function uploadImage(file: File) {
+    const formData = new FormData();
+    formData.set("image", file);
+    return uploadDirectoryListingImage(listingId, formData);
+  }
 
   function handleRewrite() {
     startRewrite(async () => {
@@ -128,7 +135,7 @@ function UpdateEntryForm({
           name="updates-draft-body"
           value={draft.body}
           onChange={(body) => onDraftChange({ body })}
-          listingId={listingId}
+          onUploadImage={uploadImage}
           rows={3}
           placeholder="Details — select text and use the toolbar for bold, lists, links, and images."
         />

@@ -71,6 +71,43 @@ export function directoryListingPath(locale: DirectoryLocale, slug: string): str
   return `/${locale}/${slug}`;
 }
 
+// A listing's own sections, each its own real page/route (see
+// src/app/[locale]/[slug]/layout.tsx and its sibling section folders)
+// rather than an anchor within the single page they used to be — a
+// visitor, a search engine, and an AI crawler can all now link straight
+// to (say) just this business's Products & Services instead of the whole
+// listing. About has no path of its own: it's what the bare listing URL
+// above already shows, same as it always has. Hours has no path of its
+// own either — folded into Visit us below, since a "when/where to visit"
+// page reads more naturally with both than as two separate one-fact pages.
+export function directoryListingServicesPath(locale: DirectoryLocale, slug: string): string {
+  return `${directoryListingPath(locale, slug)}/products-services`;
+}
+
+export function directoryListingPhotosPath(locale: DirectoryLocale, slug: string): string {
+  return `${directoryListingPath(locale, slug)}/photos`;
+}
+
+export function directoryListingVideosPath(locale: DirectoryLocale, slug: string): string {
+  return `${directoryListingPath(locale, slug)}/videos`;
+}
+
+export function directoryListingNewsPath(locale: DirectoryLocale, slug: string): string {
+  return `${directoryListingPath(locale, slug)}/news`;
+}
+
+export function directoryListingPromotionsPath(locale: DirectoryLocale, slug: string): string {
+  return `${directoryListingPath(locale, slug)}/promotions`;
+}
+
+export function directoryListingVisitPath(locale: DirectoryLocale, slug: string): string {
+  return `${directoryListingPath(locale, slug)}/visit`;
+}
+
+export function directoryListingFaqPath(locale: DirectoryLocale, slug: string): string {
+  return `${directoryListingPath(locale, slug)}/faq`;
+}
+
 // The main top-nav's four destinations (directory-top-nav.tsx) — real
 // index/feed pages, distinct from the existing per-category (categoryPath)
 // / per-location (locationPath) pages they each link out to.
@@ -90,6 +127,18 @@ export function directoryNewsPath(locale: DirectoryLocale): string {
   return `/${locale}/news`;
 }
 
+export function directoryIndustriesIndexPath(locale: DirectoryLocale): string {
+  return `/${locale}/industries`;
+}
+
+export function directoryGuidesPath(locale: DirectoryLocale): string {
+  return `/${locale}/guides`;
+}
+
+export function directoryGuidePath(locale: DirectoryLocale, slug: string): string {
+  return `${directoryGuidesPath(locale)}/${slug}`;
+}
+
 export const DEFAULT_DIRECTORY_LOCALE: DirectoryLocale = "en";
 
 // Fills in DirectoryStrings.recommendMessage's {business}/{url} tokens —
@@ -97,6 +146,12 @@ export const DEFAULT_DIRECTORY_LOCALE: DirectoryLocale = "en";
 // than a template literal built where the message is used.
 export function formatRecommendMessage(template: string, business: string, url: string): string {
   return template.replace("{business}", business).replace("{url}", url);
+}
+
+// Fills in DirectoryStrings.contactWhatsAppMessage's {business} token — see
+// that field's own comment.
+export function formatContactWhatsAppMessage(template: string, business: string): string {
+  return template.replace("{business}", business);
 }
 
 // Fills in DirectoryStrings.searchViewAllResults's {query} token — see that
@@ -121,6 +176,30 @@ export function formatViewsLabel(count: number, locale: DirectoryLocale): string
   if (locale === "zh") return `${count.toLocaleString()} 次浏览`;
   if (locale === "ms") return `${count.toLocaleString()} paparan`;
   return count === 1 ? "1 view" : `${count.toLocaleString()} views`;
+}
+
+// An album's photo count, shown on its cover card in the album grid (see
+// AlbumGrid) — plural-aware and kept as its own function for the same
+// reason as formatViewsLabel above: it branches on count, and
+// DIRECTORY_STRINGS can't hold a function value once it's passed whole into
+// a "use client" component.
+export function formatPhotoCountLabel(count: number, locale: DirectoryLocale): string {
+  if (locale === "zh") return `${count.toLocaleString()} 张照片`;
+  if (locale === "ms") return `${count.toLocaleString()} foto`;
+  return count === 1 ? "1 photo" : `${count.toLocaleString()} photos`;
+}
+
+// The Photos page's own meta description for one named album (see
+// generateMetadata in photos/page.tsx) — describes exactly what's on that
+// page instead of falling back to the whole listing's tagline/About text,
+// the way every other section page still does. Kept as its own function
+// for the same reason as formatPhotoCountLabel above: it interpolates the
+// album and company name, which DIRECTORY_STRINGS can't hold as a function
+// once passed whole into a "use client" component.
+export function formatAlbumMetaDescription(albumName: string, photoCount: number, companyName: string, locale: DirectoryLocale): string {
+  if (locale === "zh") return `查看 ${companyName} 的「${albumName}」相册中的 ${photoCount.toLocaleString()} 张照片。`;
+  if (locale === "ms") return `Lihat ${photoCount.toLocaleString()} foto dalam album "${albumName}" oleh ${companyName}.`;
+  return `View ${photoCount.toLocaleString()} photo${photoCount === 1 ? "" : "s"} from ${companyName}'s "${albumName}" album.`;
 }
 
 export type DirectoryLeadFormErrorCode =
@@ -185,10 +264,16 @@ export type DirectoryStrings = {
   navAllBusiness: string;
   navLocations: string;
   navLatestProducts: string;
+  navIndustries: string;
+  navGuides: string;
   categoriesIndexHeading: string;
   categoriesIndexDescription: string;
   categoriesIndexEmptyTitle: string;
   categoriesIndexEmptyDescription: string;
+  industriesIndexHeading: string;
+  industriesIndexDescription: string;
+  industriesIndexEmptyTitle: string;
+  industriesIndexEmptyDescription: string;
   locationsIndexHeading: string;
   locationsIndexDescription: string;
   locationsIndexEmptyTitle: string;
@@ -203,6 +288,16 @@ export type DirectoryStrings = {
   newsFeedDescription: string;
   newsFeedEmptyTitle: string;
   newsFeedEmptyDescription: string;
+  // The /guides index and each guide's own detail page (src/app/[locale]/
+  // guides) — admin-authored pillar content, unlike every other nav
+  // destination above which is generated straight from listing data.
+  guidesIndexHeading: string;
+  guidesIndexDescription: string;
+  guidesIndexEmptyTitle: string;
+  guidesIndexEmptyDescription: string;
+  guidePublishedOnLabel: string;
+  guideReadMoreLabel: string;
+  guideRelatedHeading: string;
   // The listing page's two "other businesses" sections — newest published
   // listings overall, and other listings in the same state but a different
   // industry (see latestListings/nearbyListingsExcludingIndustry in
@@ -229,9 +324,19 @@ export type DirectoryStrings = {
   // Chinese's "在{provider}观看", verb last).
   watchOnProviderLabel: string;
   photosHeading: string;
+  // The Photos page's own album-grid view (see AlbumGrid) — the link back
+  // out of one album's own photos, and the fallback heading over any photos
+  // that aren't in a named album (see DirectoryListingImage.gallery), shown
+  // beneath the album grid rather than left unreachable.
+  backToAlbumsLabel: string;
+  otherPhotosLabel: string;
   updatesHeading: string;
   newsLabel: string;
   promotionLabel: string;
+  // The Promotions page's own heading (English pluralizes; newsLabel above
+  // doubles as the News page's heading unchanged, since "News" is already
+  // the same word singular or plural).
+  promotionsHeading: string;
   faqHeading: string;
   visitHeading: string;
   hoursHeading: string;
@@ -246,6 +351,10 @@ export type DirectoryStrings = {
   // set, since isOpenNow can't tell without one.
   hoursOpenNowBadge: string;
   hoursClosedNowBadge: string;
+  // The Visit us page's turn-by-turn directions buttons — "Google Maps" and
+  // "Waze" are brand names left untranslated, same as elsewhere in this file.
+  navigateGoogleMapsLabel: string;
+  navigateWazeLabel: string;
   dayLabels: DirectoryDayLabels;
   websiteLabel: string;
   locationLabel: string;
@@ -266,6 +375,15 @@ export type DirectoryStrings = {
   shareLabel: string;
   contactHeading: string;
   contactSubheading: string;
+  // The "Get in touch" card's Call/WhatsApp buttons — only rendered when the
+  // listing has its own PartnerListing.phone set (see that field's own
+  // comment for why it's separate from the account-level User.phone that's
+  // deliberately never shown). contactWhatsAppMessage's {business} token is
+  // filled in with the listing's own name via formatContactWhatsAppMessage
+  // below, same plain-substitution convention as recommendMessage.
+  contactCallCta: string;
+  contactWhatsAppCta: string;
+  contactWhatsAppMessage: string;
   formNameLabel: string;
   formNamePlaceholder: string;
   formEmailLabel: string;
@@ -307,7 +425,7 @@ export type DirectoryStrings = {
   // trilingual directory's own hamburger menu (see localizedBusinessNavItems
   // below and DirectoryNavMenu), where it needs to match whatever language
   // the rest of that menu is already in.
-  navOverview: string;
+  navDashboard: string;
   navMyListings: string;
   navBusinessLeads: string;
   navCompanies: string;
@@ -375,10 +493,16 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navAllBusiness: "All Business",
     navLocations: "Location",
     navLatestProducts: "Latest Products",
+    navIndustries: "Industries",
+    navGuides: "Guides",
     categoriesIndexHeading: "All Business Categories",
     categoriesIndexDescription: "Every category in the Gotka Business Directory, with how many businesses are listed in each.",
     categoriesIndexEmptyTitle: "No categories yet",
     categoriesIndexEmptyDescription: "Check back soon — categories will appear here.",
+    industriesIndexHeading: "All Industries",
+    industriesIndexDescription: "Every industry in the Gotka Business Directory, with how many businesses are listed in each.",
+    industriesIndexEmptyTitle: "No industries yet",
+    industriesIndexEmptyDescription: "Check back soon — industries will appear here.",
     locationsIndexHeading: "All Locations",
     locationsIndexDescription: "Every state and region with a business listed in the Gotka Business Directory.",
     locationsIndexEmptyTitle: "No locations yet",
@@ -390,6 +514,13 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     newsFeedDescription: "Current news and promotions from businesses across the directory.",
     newsFeedEmptyTitle: "No news or promotions yet",
     newsFeedEmptyDescription: "Check back soon for updates from businesses in the directory.",
+    guidesIndexHeading: "Guides",
+    guidesIndexDescription: "In-depth guides to help you choose and compare businesses in the Gotka network.",
+    guidesIndexEmptyTitle: "No guides yet",
+    guidesIndexEmptyDescription: "Check back soon — guides will appear here.",
+    guidePublishedOnLabel: "Published",
+    guideReadMoreLabel: "Read guide",
+    guideRelatedHeading: "Related guides",
     latestBusinessesHeading: "Latest Businesses",
     nearbyBusinessesHeading: "Businesses Near You",
     aboutHeading: "About",
@@ -397,10 +528,13 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     videoHeading: "Videos",
     watchOnProviderLabel: "Watch on {provider}",
     photosHeading: "Photos",
+    backToAlbumsLabel: "Back to albums",
+    otherPhotosLabel: "Other photos",
     updatesHeading: "News & Promotions",
     newsLabel: "News",
     promotionLabel: "Promotion",
-    faqHeading: "Frequently asked questions",
+    promotionsHeading: "Promotions",
+    faqHeading: "FAQ",
     visitHeading: "Visit us",
     hoursHeading: "Hours",
     hoursOpenLabel: "Open",
@@ -409,6 +543,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     hoursClosedTodayLabel: "Closed today",
     hoursOpenNowBadge: "Open now",
     hoursClosedNowBadge: "Closed now",
+    navigateGoogleMapsLabel: "Navigate with Google Maps",
+    navigateWazeLabel: "Navigate with Waze",
     dayLabels: {
       monday: "Monday",
       tuesday: "Tuesday",
@@ -426,6 +562,9 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     shareLabel: "Share Business",
     contactHeading: "Get in touch",
     contactSubheading: "Send a message directly to this business — they'll reply to the email address and contact number you provide.",
+    contactCallCta: "Call",
+    contactWhatsAppCta: "WhatsApp",
+    contactWhatsAppMessage: "Hi, I'm interested in {business}. Could you share more details?",
     formNameLabel: "Name",
     formNamePlaceholder: "Jane Smith",
     formEmailLabel: "Email",
@@ -465,8 +604,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navLoginRegister: "Business Login",
     navMyBusiness: "My business",
     navAddBusiness: "Add Business",
-    navOverview: "Overview",
-    navMyListings: "My listings",
+    navDashboard: "Dashboard",
+    navMyListings: "My Business",
     navBusinessLeads: "Business Leads",
     navCompanies: "Companies",
     navContacts: "Contacts",
@@ -533,10 +672,16 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navAllBusiness: "所有企业",
     navLocations: "地区",
     navLatestProducts: "最新产品",
+    navIndustries: "行业",
+    navGuides: "指南",
     categoriesIndexHeading: "所有企业类别",
     categoriesIndexDescription: "Gotka 商业目录中的每一个类别，以及各类别下的企业数量。",
     categoriesIndexEmptyTitle: "暂无类别",
     categoriesIndexEmptyDescription: "请稍后再来查看——类别将显示在这里。",
+    industriesIndexHeading: "所有行业",
+    industriesIndexDescription: "Gotka 商业目录中的每一个行业，以及各行业下的企业数量。",
+    industriesIndexEmptyTitle: "暂无行业",
+    industriesIndexEmptyDescription: "请稍后再来查看——行业将显示在这里。",
     locationsIndexHeading: "所有地区",
     locationsIndexDescription: "Gotka 商业目录中每个有企业上榜的州属与地区。",
     locationsIndexEmptyTitle: "暂无地区",
@@ -548,6 +693,13 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     newsFeedDescription: "来自目录中各企业的最新新闻与促销信息。",
     newsFeedEmptyTitle: "暂无新闻或促销",
     newsFeedEmptyDescription: "请稍后再来查看目录中企业的最新动态。",
+    guidesIndexHeading: "指南",
+    guidesIndexDescription: "深入指南，助您在 Gotka 网络中选择和比较企业。",
+    guidesIndexEmptyTitle: "暂无指南",
+    guidesIndexEmptyDescription: "请稍后再来查看——指南将显示在这里。",
+    guidePublishedOnLabel: "发布于",
+    guideReadMoreLabel: "阅读指南",
+    guideRelatedHeading: "相关指南",
     latestBusinessesHeading: "最新企业",
     nearbyBusinessesHeading: "附近企业",
     aboutHeading: "关于",
@@ -555,9 +707,12 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     videoHeading: "视频",
     watchOnProviderLabel: "在{provider}观看",
     photosHeading: "照片",
+    backToAlbumsLabel: "返回相册",
+    otherPhotosLabel: "其他照片",
     updatesHeading: "新闻与促销",
     newsLabel: "新闻",
     promotionLabel: "促销",
+    promotionsHeading: "促销",
     faqHeading: "常见问题",
     visitHeading: "联系地址",
     hoursHeading: "营业时间",
@@ -567,6 +722,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     hoursClosedTodayLabel: "今日休息",
     hoursOpenNowBadge: "营业中",
     hoursClosedNowBadge: "已休息",
+    navigateGoogleMapsLabel: "使用谷歌地图导航",
+    navigateWazeLabel: "使用 Waze 导航",
     dayLabels: {
       monday: "星期一",
       tuesday: "星期二",
@@ -584,6 +741,9 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     locationLabel: "地点",
     contactHeading: "联系我们",
     contactSubheading: "直接给这家企业发送信息——他们会回复您提供的电子邮件地址和联系电话。",
+    contactCallCta: "致电",
+    contactWhatsAppCta: "WhatsApp",
+    contactWhatsAppMessage: "您好，我对 {business} 感兴趣，可以提供更多详情吗？",
     formNameLabel: "姓名",
     formNamePlaceholder: "Jane Smith",
     formEmailLabel: "电子邮件",
@@ -622,8 +782,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navLoginRegister: "企业登录",
     navMyBusiness: "我的企业",
     navAddBusiness: "添加企业",
-    navOverview: "概览",
-    navMyListings: "我的刊登",
+    navDashboard: "仪表盘",
+    navMyListings: "我的企业",
     navBusinessLeads: "商业线索",
     navCompanies: "公司",
     navContacts: "联系人",
@@ -690,10 +850,16 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navAllBusiness: "Semua Perniagaan",
     navLocations: "Lokasi",
     navLatestProducts: "Produk Terkini",
+    navIndustries: "Industri",
+    navGuides: "Panduan",
     categoriesIndexHeading: "Semua Kategori Perniagaan",
     categoriesIndexDescription: "Setiap kategori dalam Direktori Perniagaan Gotka, berserta bilangan perniagaan yang tersenarai dalam setiap satu.",
     categoriesIndexEmptyTitle: "Belum ada kategori",
     categoriesIndexEmptyDescription: "Sila semak semula tidak lama lagi — kategori akan dipaparkan di sini.",
+    industriesIndexHeading: "Semua Industri",
+    industriesIndexDescription: "Setiap industri dalam Direktori Perniagaan Gotka, berserta bilangan perniagaan yang tersenarai dalam setiap satu.",
+    industriesIndexEmptyTitle: "Belum ada industri",
+    industriesIndexEmptyDescription: "Sila semak semula tidak lama lagi — industri akan dipaparkan di sini.",
     locationsIndexHeading: "Semua Lokasi",
     locationsIndexDescription: "Setiap negeri dan kawasan yang mempunyai perniagaan tersenarai dalam Direktori Perniagaan Gotka.",
     locationsIndexEmptyTitle: "Belum ada lokasi",
@@ -705,6 +871,13 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     newsFeedDescription: "Berita dan promosi terkini daripada perniagaan di seluruh direktori.",
     newsFeedEmptyTitle: "Belum ada berita atau promosi",
     newsFeedEmptyDescription: "Sila semak semula tidak lama lagi untuk kemas kini daripada perniagaan dalam direktori.",
+    guidesIndexHeading: "Panduan",
+    guidesIndexDescription: "Panduan mendalam untuk membantu anda memilih dan membandingkan perniagaan dalam rangkaian Gotka.",
+    guidesIndexEmptyTitle: "Belum ada panduan",
+    guidesIndexEmptyDescription: "Sila semak semula tidak lama lagi — panduan akan dipaparkan di sini.",
+    guidePublishedOnLabel: "Diterbitkan",
+    guideReadMoreLabel: "Baca panduan",
+    guideRelatedHeading: "Panduan berkaitan",
     latestBusinessesHeading: "Perniagaan Terkini",
     nearbyBusinessesHeading: "Perniagaan Berhampiran",
     aboutHeading: "Tentang",
@@ -712,9 +885,12 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     videoHeading: "Video",
     watchOnProviderLabel: "Tonton di {provider}",
     photosHeading: "Foto",
+    backToAlbumsLabel: "Kembali ke album",
+    otherPhotosLabel: "Foto lain",
     updatesHeading: "Berita & Promosi",
     newsLabel: "Berita",
     promotionLabel: "Promosi",
+    promotionsHeading: "Promosi",
     faqHeading: "Soalan lazim",
     visitHeading: "Lawati kami",
     hoursHeading: "Waktu Operasi",
@@ -724,6 +900,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     hoursClosedTodayLabel: "Tutup hari ini",
     hoursOpenNowBadge: "Buka sekarang",
     hoursClosedNowBadge: "Tutup sekarang",
+    navigateGoogleMapsLabel: "Navigasi dengan Google Maps",
+    navigateWazeLabel: "Navigasi dengan Waze",
     dayLabels: {
       monday: "Isnin",
       tuesday: "Selasa",
@@ -741,6 +919,9 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     locationLabel: "Lokasi",
     contactHeading: "Hubungi kami",
     contactSubheading: "Hantar mesej terus kepada perniagaan ini — mereka akan membalas ke alamat e-mel dan nombor telefon yang anda berikan.",
+    contactCallCta: "Hubungi",
+    contactWhatsAppCta: "WhatsApp",
+    contactWhatsAppMessage: "Hai, saya berminat dengan {business}. Bolehkah anda kongsikan maklumat lanjut?",
     formNameLabel: "Nama",
     formNamePlaceholder: "Jane Smith",
     formEmailLabel: "E-mel",
@@ -780,8 +961,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navLoginRegister: "Log Masuk Perniagaan",
     navMyBusiness: "Perniagaan saya",
     navAddBusiness: "Tambah Perniagaan",
-    navOverview: "Gambaran keseluruhan",
-    navMyListings: "Senarai saya",
+    navDashboard: "Papan Pemuka",
+    navMyListings: "Perniagaan saya",
     navBusinessLeads: "Petunjuk Perniagaan",
     navCompanies: "Syarikat",
     navContacts: "Kenalan",
@@ -841,7 +1022,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
 export function localizedBusinessNavItems(locale: DirectoryLocale): { href: string; label: string }[] {
   const t = DIRECTORY_STRINGS[locale];
   const labels: Record<string, string> = {
-    "/business-portal": t.navOverview,
+    "/business-portal": t.navDashboard,
     "/business-portal/listings": t.navMyListings,
     "/business-portal/business-leads": t.navBusinessLeads,
     "/business-portal/companies": t.navCompanies,

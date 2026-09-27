@@ -1,3 +1,4 @@
+import { cache } from "react";
 import { db } from "@/lib/db";
 import type { Industry, PartnerListing, Prisma } from "@/generated/prisma/client";
 import { operatingHoursFromJson, type OperatingHours } from "@/lib/operating-hours";
@@ -13,7 +14,7 @@ import {
 import { translateCategoryName } from "@/lib/directory-category-labels";
 import { locationLabel } from "@/lib/directory-location-labels";
 import { organizationJsonLdId, serializeJsonLd, websiteJsonLdId } from "@/lib/directory-seo";
-import { VIDEO_CATEGORIES, type VideoCategory, type VideoProvider } from "@/lib/labels";
+import { INDUSTRIES, VIDEO_CATEGORIES, type VideoCategory, type VideoProvider } from "@/lib/labels";
 import { stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
 import { normalizeSearchText, type DirectorySearchIndex } from "@/lib/directory-search";
 
@@ -42,8 +43,10 @@ export { isValidSlugFormat, slugify } from "@/lib/slug";
 // listing's public fields as they were the last time an admin approved
 // them (see PartnerListing.publishedSnapshot in schema.prisma). Nothing a
 // partner is still editing, and nothing that's never been approved, is ever
-// visible here. Deliberately excludes the partner's own User.email/phone —
-// a visitor only ever reaches a partner through the lead form.
+// visible here. Deliberately excludes the partner ACCOUNT's own
+// User.email/phone (private login contact info) — `phone` below is a
+// different thing: a business's own contact number the partner explicitly
+// sets on the listing itself, same opt-in-public convention as `website`.
 export type PublishedListingSnapshot = {
   companyName: string;
   tagline: string | null;
@@ -51,6 +54,7 @@ export type PublishedListingSnapshot = {
   services: ServiceEntry[];
   industry: Industry | null;
   website: string | null;
+  phone: string | null;
   videos: VideoEntry[];
   address: string | null;
   city: string | null;
@@ -114,9 +118,10 @@ export function photosFromJson(value: unknown): PhotoEntry[] {
 // website scraping) happening at edit-time, not at request-time. A host
 // oEmbed can't reach (Facebook, or any failed/timed-out lookup) just keeps
 // thumbnailUrl null — the gallery still embeds it on click, just behind a
-// plain placeholder instead of a real thumbnail (see VideoGallery). Only a
-// host toEmbeddableVideoUrl doesn't recognize at all falls back further, to
-// a plain "Watch video" link instead of an embed.
+// plain placeholder instead of a real thumbnail (see VideoGallery). A host
+// toEmbeddableVideoUrl doesn't recognize at all, or a Facebook Reel (which
+// that function deliberately returns null for — see toEmbeddableVideoUrl),
+// falls back further, to a plain "Watch video" link instead of an embed.
 export type VideoEntry = {
   url: string;
   title: string;
@@ -216,14 +221,30 @@ export function toEmbeddableVideoUrl(rawUrl: string): { embedUrl: string; provid
     return id ? { embedUrl: `https://www.dailymotion.com/embed/video/${id}`, provider } : null;
   }
   if (provider === "facebook") {
-    // Facebook's embed is a plugin iframe over the ORIGINAL url, not a
-    // per-video id extracted from the path — every Facebook video/watch/
-    // reel URL shape works the same way here.
+    // Reels (/reel/<id> and /share/r/<code> share links) consistently come
+    // back "Video Unavailable" from this plugin — verified directly against
+    // both the share link and its resolved canonical /reel/ URL, and Meta's
+    // own embedded-video-player plugin doesn't officially cover Reels at
+    // all, only Page/video-post URLs. No iframe URL is worth generating for
+    // those; falling back to a plain "Watch video" link (the null case
+    // below) is what actually plays for the visitor. Other Facebook video
+    // shapes (/watch/?v=, /<page>/videos/<id>/) still go through the plugin
+    // as before — the embed is over the ORIGINAL url, not a per-video id
+    // extracted from the path.
+    if (/^\/(reel|share\/r)\//.test(url.pathname)) return null;
     return { embedUrl: `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(rawUrl)}&show_text=false`, provider };
   }
-  // tiktok
+  // tiktok — player/v1 is TikTok's own documented embed-player endpoint
+  // (developers.tiktok.com/docs/en/embed-player), a lightweight dedicated
+  // player app. embed/v2 (the URL TikTok's oEmbed response's HTML snippet
+  // points at) instead loads a cut-down copy of the full TikTok web app,
+  // which is far more prone to showing an internal "overload-protect
+  // triggered" wall in place of the video — a known, broadly-reported
+  // TikTok-side embed reliability issue, not something specific to this
+  // site. Same query-string convention as every other provider here, so
+  // the lightbox's shared `?autoplay=1` append still works unchanged.
   const match = /\/video\/(\d+)/.exec(url.pathname);
-  return match ? { embedUrl: `https://www.tiktok.com/embed/v2/${match[1]}`, provider } : null;
+  return match ? { embedUrl: `https://www.tiktok.com/player/v1/${match[1]}`, provider } : null;
 }
 
 // A listing's service/product catalog — see ServicesEditor. `description`
@@ -472,6 +493,7 @@ export function readPublishedSnapshot(value: unknown): PublishedListingSnapshot 
     services: servicesFromJson(raw.services),
     industry: typeof raw.industry === "string" ? (raw.industry as Industry) : null,
     website: typeof raw.website === "string" ? raw.website : null,
+    phone: typeof raw.phone === "string" ? raw.phone : null,
     videos: videosFromJson(raw.videos),
     address: typeof raw.address === "string" ? raw.address : null,
     city: typeof raw.city === "string" ? raw.city : null,
@@ -514,6 +536,7 @@ export function buildPublishedSnapshot(
     services: servicesFromJson(listing.services),
     industry: listing.industry,
     website: listing.website,
+    phone: listing.phone,
     videos: videosFromJson(listing.videos),
     address: listing.address,
     city: listing.city,
@@ -598,7 +621,13 @@ export async function loadPublishedListings(): Promise<PublishedListingRow[]> {
 // snapshot). Shared by the listing detail page's own metadata/body and its
 // opengraph-image route (src/app/[locale]/[slug]/opengraph-image.tsx),
 // which needs the same company name/services/description a visitor sees.
-export async function getPublishedListingBySlug(slug: string) {
+// Wrapped in React's cache() since the listing now also has its own shared
+// layout (src/app/[locale]/[slug]/layout.tsx) plus one route per section
+// (products-services/, photos/, videos/, news/, promotions/, visit/, faq/)
+// — every one of those, and each one's own generateMetadata, calls this
+// with the same slug for the same request, and this dedupes them to a
+// single DB round trip rather than one per file.
+export const getPublishedListingBySlug = cache(async (slug: string) => {
   const listing = await db.partnerListing.findUnique({ where: { slug } });
   if (!listing) return null;
   const snapshot = readPublishedSnapshot(listing.publishedSnapshot);
@@ -618,6 +647,56 @@ export async function getPublishedListingBySlug(slug: string) {
         referralCode: listing.referralCode,
       }
     : null;
+});
+
+export type ListingDisplay = {
+  tagline: string;
+  description: string;
+  services: ServiceEntry[];
+  faqs: FaqEntry[];
+  videoGallery: { url: string; title: string; category: VideoCategory; thumbnailUrl: string | null; embed: { embedUrl: string; provider: VideoProvider } | null }[];
+  hasMedia: boolean;
+  currentUpdates: ListingUpdateEntry[];
+  currentNews: ListingUpdateEntry[];
+  currentPromotions: ListingUpdateEntry[];
+};
+
+// Resolves which language's Tagline/About/Products & services/FAQ/Updates
+// actually show for a given locale — the partner's own primary-language
+// fields, unless a translation covers that particular one (see
+// ListingTranslations) — plus the small amount of further derived data
+// several section pages need (which updates are still current, split by
+// kind; which videos have a working embed). Kept as one function rather
+// than duplicated across the shared layout and each of the listing's own
+// section pages: every one of those independently calls this on the exact
+// same already-fetched (and cache()d, see above) listing object, so
+// nothing re-hits the database, only this plain derivation re-runs.
+export function resolveListingDisplay(
+  listing: NonNullable<Awaited<ReturnType<typeof getPublishedListingBySlug>>>,
+  locale: DirectoryLocale,
+): ListingDisplay {
+  const translation = locale === "zh" || locale === "ms" ? listing.translations[locale] : undefined;
+  const tagline = translation?.tagline || listing.tagline || "";
+  const description = translation?.description || listing.description || "";
+  const services = translation?.services?.length ? translation.services : listing.services;
+  const faqs = translation?.faqs?.length ? translation.faqs : listing.faqs;
+  const updates = translation?.updates?.length ? translation.updates : listing.updates;
+  const todayIso = new Date().toISOString().slice(0, 10);
+  const currentUpdates = updates.filter((update) => isUpdateCurrent(update, todayIso));
+  const currentPromotions = currentUpdates.filter((update) => update.kind === "PROMOTION");
+  const currentNews = currentUpdates.filter((update) => update.kind === "NEWS");
+  const videoGallery = listing.videos.map((video) => ({ ...video, embed: toEmbeddableVideoUrl(video.url) }));
+  return {
+    tagline,
+    description,
+    services,
+    faqs,
+    videoGallery,
+    hasMedia: videoGallery.length > 0 || listing.photos.length > 0,
+    currentUpdates,
+    currentNews,
+    currentPromotions,
+  };
 }
 
 const REFERRAL_CODE_LENGTH = 7;
@@ -770,6 +849,17 @@ export function countListingsByCategory(rows: { listing: Pick<PublishedListingSn
   return counts;
 }
 
+// The top few category names among a set of rows, most-common first — used
+// by locationPageDescription (directory-location-labels.ts) to say what a
+// location's businesses actually do instead of a generic "browse trusted
+// businesses" line.
+export function topCategoryNames(rows: { listing: Pick<PublishedListingSnapshot, "categories"> }[], limit = 3): string[] {
+  return [...countListingsByCategory(rows).entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, limit)
+    .map(([name]) => name);
+}
+
 // One entry per distinct city+state a published listing carries — the
 // location-page counterpart of countListingsByCategory above, grouped
 // finer than state alone so a page for "Petaling Jaya, Selangor" doesn't
@@ -897,6 +987,17 @@ export async function listLocationsWithCounts(): Promise<LocationWithCount[]> {
     const stateCompare = a.state.localeCompare(b.state);
     return stateCompare !== 0 ? stateCompare : (a.city ?? "").localeCompare(b.city ?? "");
   });
+}
+
+// Every Industry, including one with zero published listings — the
+// industries-index counterpart of listCategoriesWithCounts. Industry is a
+// fixed enum (see INDUSTRIES in src/lib/labels.ts), not a DB table, so this
+// needs no query of its own the way the category version does.
+export type IndustryWithCount = { industry: Industry; count: number };
+export async function listIndustriesWithCounts(): Promise<IndustryWithCount[]> {
+  const rows = await loadPublishedListings();
+  const counts = countListingsByIndustry(rows);
+  return INDUSTRIES.map((industry) => ({ industry, count: counts.get(industry) ?? 0 }));
 }
 
 // One entry per service across every published listing, newest-listing-first
@@ -1208,6 +1309,24 @@ export async function incrementListingViewCount(id: string, locale: DirectoryLoc
     .catch(() => {});
 }
 
+// Bumped once per real page load that arrived through a specific signed-in
+// partner's own copy of a listing's Recommend link (see recommendUrl's
+// `via=<User.id>` tag in src/app/[locale]/[slug]/layout.tsx, and
+// ReferralViewBeacon, the only caller — via the recordReferralView server
+// action, which is what actually validates referrerId names a real
+// PARTNER). One row per (listing, referrer) pair; same swallow-its-own-
+// errors reasoning as incrementListingViewCount above — a missed count
+// here is never worth surfacing an error to a visitor for.
+export async function recordListingReferralView(listingId: string, referrerId: string): Promise<void> {
+  await db.listingReferralView
+    .upsert({
+      where: { listingId_referrerId: { listingId, referrerId } },
+      create: { listingId, referrerId, viewCount: 1 },
+      update: { viewCount: { increment: 1 } },
+    })
+    .catch(() => {});
+}
+
 // Reads whichever of viewCountEn/Zh/Ms matches — for the business-portal
 // listing cards' per-language breakdown, so that UI never has to know the
 // column names itself. Views from before this breakdown existed are only
@@ -1241,13 +1360,13 @@ export function listingViewCountBreakdown(
 // Explicit creation — unlike the old single-listing ensurePartnerListing
 // (which silently created one the first time any listing page was visited),
 // a partner who can have several listings needs "create another one" to be
-// a visible, deliberate action (the "+ New listing" button on
+// a visible, deliberate action (the "+ New Business" button on
 // /business/listings), not something that happens as a side effect of
 // loading a page.
-export async function createPartnerListing(partnerId: string, partnerName: string): Promise<PartnerListing> {
-  const slug = await generateListingSlug(partnerName);
+export async function createPartnerListing(partnerId: string, companyName: string): Promise<PartnerListing> {
+  const slug = await generateListingSlug(companyName);
   return db.partnerListing.create({
-    data: { partnerId, slug, companyName: partnerName, services: [] },
+    data: { partnerId, slug, companyName, services: [] },
   });
 }
 
@@ -1255,32 +1374,29 @@ export type DirectoryLeadStats = {
   total: number;
   new: number;
   open: number;
-  won: number;
-  lost: number;
-  wonValue: number;
+  converted: number;
+  convertedValue: number;
   // How many of the above came in through the listing's Recommend link
   // (DirectoryLead.viaReferral) — a subset of total, not a separate
-  // funnel stage, so it's not folded into new/open/won/lost above.
+  // funnel stage, so it's not folded into new/open/converted above.
   referred: number;
 };
 
 async function computeDirectoryLeadStats(where: Prisma.DirectoryLeadWhereInput): Promise<DirectoryLeadStats> {
-  const [total, byStatus, wonAgg, referred] = await Promise.all([
+  const [total, byStatus, convertedAgg, referred] = await Promise.all([
     db.directoryLead.count({ where }),
     db.directoryLead.groupBy({ by: ["status"], where, _count: { _all: true } }),
-    db.directoryLead.aggregate({ where: { ...where, status: "WON" }, _sum: { value: true } }),
+    db.directoryLead.aggregate({ where: { ...where, status: "CLOSED_CONVERTED" }, _sum: { value: true } }),
     db.directoryLead.count({ where: { ...where, viaReferral: true } }),
   ]);
   const counts = new Map<string, number>(byStatus.map((row) => [row.status, row._count._all]));
-  const won = counts.get("WON") ?? 0;
-  const lost = counts.get("LOST") ?? 0;
+  const converted = counts.get("CLOSED_CONVERTED") ?? 0;
   return {
     total,
     new: counts.get("NEW") ?? 0,
-    open: total - won - lost,
-    won,
-    lost,
-    wonValue: Number(wonAgg._sum.value ?? 0),
+    open: total - converted,
+    converted,
+    convertedValue: Number(convertedAgg._sum.value ?? 0),
     referred,
   };
 }
@@ -1296,12 +1412,92 @@ export async function getDirectoryLeadStatsForPartner(partnerId: string): Promis
   return computeDirectoryLeadStats({ listing: { partnerId } });
 }
 
+export type ReferredListingActivity = {
+  listingId: string;
+  companyName: string;
+  slug: string;
+  referralCode: string | null;
+  isPublished: boolean;
+  viewCount: number;
+  leadCount: number;
+  // null means the listing's own owner hasn't opted in to share it (see
+  // PartnerListing.shareWonValueWithReferrers) — never 0 for that reason;
+  // 0 here means "opted in, but nothing WON yet."
+  wonValue: number | null;
+};
+
+const REFERRAL_ACTIVITY_LISTING_SELECT = {
+  id: true,
+  companyName: true,
+  slug: true,
+  referralCode: true,
+  publishedSnapshot: true,
+  shareWonValueWithReferrers: true,
+} as const;
+
+// Every listing a specific partner has personally referred — i.e. has at
+// least one ListingReferralView or DirectoryLead attributed to them (see
+// both models' own referrerId/DirectoryLead.referrerId) — for that
+// partner's own Dashboard (see getReferralActivityForPartner's caller).
+// Deliberately keyed off referrerId, not partnerId: this is about referral
+// activity this account generated for (possibly someone else's) listing,
+// the mirror image of getDirectoryLeadStatsForPartner's "leads on my own
+// listing(s)."
+export async function getReferralActivityForPartner(referrerId: string): Promise<ReferredListingActivity[]> {
+  const [viewRows, leadRows] = await Promise.all([
+    db.listingReferralView.findMany({
+      where: { referrerId },
+      select: { viewCount: true, listing: { select: REFERRAL_ACTIVITY_LISTING_SELECT } },
+    }),
+    db.directoryLead.groupBy({
+      by: ["listingId", "status"],
+      where: { referrerId },
+      _count: { _all: true },
+      _sum: { value: true },
+    }),
+  ]);
+
+  function toEntry(listing: { id: string; companyName: string; slug: string; referralCode: string | null; publishedSnapshot: unknown; shareWonValueWithReferrers: boolean }, viewCount: number): ReferredListingActivity {
+    return {
+      listingId: listing.id,
+      companyName: listing.companyName,
+      slug: listing.slug,
+      referralCode: listing.referralCode,
+      isPublished: listing.publishedSnapshot !== null,
+      viewCount,
+      leadCount: 0,
+      wonValue: listing.shareWonValueWithReferrers ? 0 : null,
+    };
+  }
+
+  const activity = new Map<string, ReferredListingActivity>();
+  for (const row of viewRows) activity.set(row.listing.id, toEntry(row.listing, row.viewCount));
+
+  // A lead can exist with no matching view row (e.g. an ad-blocked or
+  // JS-disabled visit never reached ReferralViewBeacon) — fetch those
+  // listings separately so this list is really "at least one view or lead."
+  const missingListingIds = [...new Set(leadRows.map((row) => row.listingId))].filter((id) => !activity.has(id));
+  const missingListings = missingListingIds.length
+    ? await db.partnerListing.findMany({ where: { id: { in: missingListingIds } }, select: REFERRAL_ACTIVITY_LISTING_SELECT })
+    : [];
+  for (const listing of missingListings) activity.set(listing.id, toEntry(listing, 0));
+
+  for (const row of leadRows) {
+    const entry = activity.get(row.listingId);
+    if (!entry) continue;
+    entry.leadCount += row._count._all;
+    if (row.status === "CLOSED_CONVERTED" && entry.wonValue !== null) entry.wonValue += Number(row._sum.value ?? 0);
+  }
+
+  return [...activity.values()].sort((a, b) => b.leadCount - a.leadCount || b.viewCount - a.viewCount);
+}
+
 export type DirectoryOverviewStats = {
   publishedListings: number;
   pendingListings: number;
   totalLeads: number;
   leadsLast30Days: number;
-  wonValue: number;
+  convertedValue: number;
 };
 
 // For Settings → Directory (admin) — across every partner's listing, not
@@ -1310,12 +1506,12 @@ export async function getDirectoryOverviewStats(): Promise<DirectoryOverviewStat
   const thirtyDaysAgo = new Date();
   thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
 
-  const [publishedListings, pendingListings, totalLeads, leadsLast30Days, wonAgg] = await Promise.all([
+  const [publishedListings, pendingListings, totalLeads, leadsLast30Days, convertedAgg] = await Promise.all([
     db.partnerListing.count({ where: { status: "PUBLISHED" } }),
     db.partnerListing.count({ where: { status: "PENDING_REVIEW" } }),
     db.directoryLead.count(),
     db.directoryLead.count({ where: { createdAt: { gte: thirtyDaysAgo } } }),
-    db.directoryLead.aggregate({ where: { status: "WON" }, _sum: { value: true } }),
+    db.directoryLead.aggregate({ where: { status: "CLOSED_CONVERTED" }, _sum: { value: true } }),
   ]);
 
   return {
@@ -1323,6 +1519,6 @@ export async function getDirectoryOverviewStats(): Promise<DirectoryOverviewStat
     pendingListings,
     totalLeads,
     leadsLast30Days,
-    wonValue: Number(wonAgg._sum.value ?? 0),
+    convertedValue: Number(convertedAgg._sum.value ?? 0),
   };
 }

@@ -25,7 +25,7 @@ import {
   DIRECTORY_SITE_NAME_BY_LOCALE,
   OG_LOCALE_BY_DIRECTORY_LOCALE,
   buildLanguageAlternates,
-  directoryShareImage,
+  pageShareImage,
 } from "@/lib/directory-seo";
 import { translateCategoryName, categoryPath, categoryPageTitle, categoryPageHeading, categoryPageDescription } from "@/lib/directory-category-labels";
 import { DirectorySearch } from "@/components/directory/directory-search";
@@ -45,7 +45,7 @@ export async function buildCategoryMetadata(categorySlug: string, locale: Direct
   const description = categoryPageDescription(category, locale);
   const url = `${siteOrigin}${categoryPath(categorySlug, locale)}`;
 
-  const shareImage = directoryShareImage(siteOrigin, locale);
+  const shareImage = pageShareImage(url, categoryPageHeading(category, locale));
 
   return {
     title,

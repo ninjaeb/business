@@ -26,7 +26,6 @@ import {
   transferDirectoryListing,
   unpublishDirectoryListing,
 } from "@/app/actions/directory";
-import { deleteBusinessCategory } from "@/app/actions/business-categories";
 import {
   DIRECTORY_LEAD_STATUS_BADGE_CLASSES,
   DIRECTORY_LEAD_STATUS_LABELS,
@@ -60,7 +59,7 @@ function formatOperatingHoursPreview(value: unknown): string[] {
 // own Settings → Team.
 export default async function AdminDirectoryPage() {
   await requireAdmin();
-  const [stats, currency, approvalMode, emailSettings, whatsAppSettings, missingSeoCount, pendingListings, allListings, partners, businessCategories, recentLeads] = await Promise.all([
+  const [stats, currency, approvalMode, emailSettings, whatsAppSettings, missingSeoCount, pendingListings, allListings, partners, recentLeads] = await Promise.all([
     getDirectoryOverviewStats(),
     getCurrency(),
     getDirectoryApprovalMode(),
@@ -91,10 +90,6 @@ export default async function AdminDirectoryPage() {
       orderBy: { name: "asc" },
       select: { id: true, name: true, email: true },
     }),
-    db.businessCategory.findMany({
-      orderBy: { name: "asc" },
-      include: { _count: { select: { listings: true } } },
-    }),
     db.directoryLead.findMany({
       orderBy: { createdAt: "desc" },
       take: 10,
@@ -108,9 +103,14 @@ export default async function AdminDirectoryPage() {
         title="Partner directory"
         description="Review partner listings and see how their inquiries are going"
         actions={
-          <Link href={directoryHomePath(DEFAULT_DIRECTORY_LOCALE)} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-indigo-600 hover:underline dark:text-indigo-400">
-            View public directory
-          </Link>
+          <>
+            <Link href="/admin/guides" className="text-sm font-medium text-indigo-600 hover:underline dark:text-indigo-400">
+              Manage guides
+            </Link>
+            <Link href={directoryHomePath(DEFAULT_DIRECTORY_LOCALE)} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-indigo-600 hover:underline dark:text-indigo-400">
+              View public directory
+            </Link>
+          </>
         }
       />
 
@@ -124,7 +124,7 @@ export default async function AdminDirectoryPage() {
           icon={Handshake}
           accent="sky"
         />
-        <StatCard label="Won value" value={formatCurrencyExact(stats.wonValue, currency)} icon={Banknote} accent="indigo" />
+        <StatCard label="Converted value" value={formatCurrencyExact(stats.convertedValue, currency)} icon={Banknote} accent="indigo" />
       </div>
 
       <Card>
@@ -353,40 +353,6 @@ export default async function AdminDirectoryPage() {
                 </tbody>
               </table>
             </div>
-          )}
-        </CardBody>
-      </Card>
-
-      <Card>
-        <CardHeader>
-          <CardTitle>Business categories</CardTitle>
-        </CardHeader>
-        <CardBody className="space-y-4">
-          {businessCategories.length === 0 ? (
-            <p className="text-sm text-slate-500 dark:text-slate-400">No categories yet.</p>
-          ) : (
-            <ul className="divide-y divide-slate-100 dark:divide-neutral-800">
-              {businessCategories.map((category) => (
-                <li key={category.id} className="flex items-center justify-between gap-2 py-2 text-sm">
-                  <span className="text-slate-700 dark:text-slate-300">
-                    {category.name}
-                    <span className="ml-2 text-xs text-slate-400">
-                      {category._count.listings} {category._count.listings === 1 ? "listing" : "listings"}
-                    </span>
-                  </span>
-                  <form action={deleteBusinessCategory.bind(null, category.id)}>
-                    <ConfirmSubmitButton
-                      confirmMessage={`Delete "${category.name}"? Listings using it will lose that selection.`}
-                      variant="ghost"
-                      size="sm"
-                      className="!h-auto !p-0 text-xs font-medium text-rose-600 hover:text-rose-700 dark:text-rose-400"
-                    >
-                      Delete
-                    </ConfirmSubmitButton>
-                  </form>
-                </li>
-              ))}
-            </ul>
           )}
         </CardBody>
       </Card>

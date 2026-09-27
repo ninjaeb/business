@@ -1,5 +1,14 @@
 import type { DirectoryLocale } from "@/lib/directory-i18n";
 import { DIRECTORY_SITE_NAME_BY_LOCALE } from "@/lib/directory-seo";
+import { translateCategoryName } from "@/lib/directory-category-labels";
+
+// Intl.ListFormat's own locale codes match DirectoryLocale exactly (en/zh/ms
+// are all valid BCP 47 tags), and its conjunction form gives each language
+// its own natural "A, B and C" (Latin locales) / "A、B和C" (zh, no commas)
+// joining for free rather than hand-rolling comma/and logic per locale.
+function joinLocalized(names: string[], locale: DirectoryLocale): string {
+  return new Intl.ListFormat(locale, { style: "long", type: "conjunction" }).format(names);
+}
 
 // A city/state/country name is shown exactly as the partner typed it, the
 // same way the listing detail page's own city/state/country pills already
@@ -39,8 +48,24 @@ export function locationPageHeading(label: string, locale: DirectoryLocale): str
   return `Businesses in ${label}`;
 }
 
-export function locationPageDescription(label: string, locale: DirectoryLocale): string {
-  if (locale === "zh") return `浏览 Gotka 网络中位于 ${label} 的值得信赖企业，并直接联系他们。`;
-  if (locale === "ms") return `Semak imbas perniagaan yang dipercayai di ${label} dalam rangkaian Gotka dan hubungi terus.`;
-  return `Browse trusted businesses in ${label} in the Gotka network and reach out directly.`;
+// A location has no fixed, enumerable identity the way a category or
+// industry does (see this file's own top comment) — nothing to hand-write a
+// description for ahead of time. Instead this explains what's actually
+// there: how many published businesses, and (once there are any to name)
+// the handful of categories most of them fall under, translated and
+// list-joined per locale. Falls back to the old generic line only when a
+// location's listings carry no category at all (categories are optional on
+// a listing), so the sentence is never left half-built.
+export function locationPageDescription(label: string, locale: DirectoryLocale, businessCount: number, topCategories: string[]): string {
+  const names = topCategories.map((name) => translateCategoryName(name, locale));
+  if (names.length === 0) {
+    if (locale === "zh") return `浏览 Gotka 网络中位于 ${label} 的值得信赖企业，并直接联系他们。`;
+    if (locale === "ms") return `Semak imbas perniagaan yang dipercayai di ${label} dalam rangkaian Gotka dan hubungi terus.`;
+    return `Browse trusted businesses in ${label} in the Gotka network and reach out directly.`;
+  }
+  const list = joinLocalized(names, locale);
+  if (locale === "zh") return `${label} 共有 ${businessCount} 家注册企业，涵盖 ${list} 等行业，可直接联系当地商家。`;
+  if (locale === "ms") return `${label} mempunyai ${businessCount} perniagaan berdaftar merangkumi ${list} — hubungi terus peniaga tempatan.`;
+  const businessNoun = businessCount === 1 ? "registered business" : "registered businesses";
+  return `${label} is home to ${businessCount} ${businessNoun} spanning ${list} — connect directly with local providers.`;
 }
