@@ -45,7 +45,7 @@ function extractDealFormValues(formData: FormData): PartnerDealFormValues {
   return {
     title: stringField(formData, "title"),
     value: stringField(formData, "value"),
-    status: stringField(formData, "status") || "OPEN",
+    status: stringField(formData, "status") || "DISCOVERY",
     companyId: stringField(formData, "companyId"),
     contactId: stringField(formData, "contactId"),
     expectedCloseDate: stringField(formData, "expectedCloseDate"),
@@ -77,7 +77,7 @@ async function parseDealForm(formData: FormData, partnerId: string): Promise<Par
   const parsed = dealSchema.safeParse({
     title: formData.get("title"),
     value: formData.get("value"),
-    status: formData.get("status") || "OPEN",
+    status: formData.get("status") || "DISCOVERY",
     companyId: formData.get("companyId"),
     contactId: formData.get("contactId"),
     expectedCloseDate: formData.get("expectedCloseDate"),
@@ -107,10 +107,10 @@ async function parseDealForm(formData: FormData, partnerId: string): Promise<Par
 
 // wonAt/lostAt are set once (not overwritten if already set) the same way
 // Deal.wonAt is only ever refreshed by an actual stage change, so re-saving
-// a still-WON deal doesn't silently move its close date forward.
+// a still-Closed-Won deal doesn't silently move its close date forward.
 function closeDatesFor(status: PartnerDealStatus, existing?: { wonAt: Date | null; lostAt: Date | null }) {
-  if (status === "WON") return { wonAt: existing?.wonAt ?? new Date(), lostAt: null };
-  if (status === "LOST") return { wonAt: null, lostAt: existing?.lostAt ?? new Date() };
+  if (status === "CLOSED_WON") return { wonAt: existing?.wonAt ?? new Date(), lostAt: null };
+  if (status === "CLOSED_LOST") return { wonAt: null, lostAt: existing?.lostAt ?? new Date() };
   return { wonAt: null, lostAt: null };
 }
 

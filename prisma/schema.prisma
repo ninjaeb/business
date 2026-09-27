@@ -57,9 +57,11 @@ model User {
 // ============================================================================
 
 enum PartnerDealStatus {
-  OPEN
-  WON
-  LOST
+  DISCOVERY
+  PROPOSAL
+  NEGOTIATION
+  CLOSED_WON
+  CLOSED_LOST
 }
 
 model PartnerCompany {
@@ -113,7 +115,7 @@ model PartnerDeal {
   id                String            @id @default(cuid())
   title             String
   value             Decimal           @default(0) @db.Decimal(12, 2)
-  status            PartnerDealStatus @default(OPEN)
+  status            PartnerDealStatus @default(DISCOVERY)
   expectedCloseDate DateTime?
   notes             String?           @db.Text
   wonAt             DateTime?

@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { StatCard } from "@/components/ui/stat-card";
 import { EmptyState } from "@/components/ui/empty-state";
 import { buttonClasses } from "@/components/ui/button";
-import { PARTNER_DEAL_STATUS_BADGE_CLASSES, PARTNER_DEAL_STATUS_LABELS } from "@/lib/labels";
+import { PARTNER_DEAL_OPEN_STATUSES, PARTNER_DEAL_STATUS_BADGE_CLASSES, PARTNER_DEAL_STATUS_LABELS } from "@/lib/labels";
 
 export default async function PartnerDealsPage() {
   const user = await requireCompletePartnerProfile();
@@ -20,8 +20,8 @@ export default async function PartnerDealsPage() {
     include: { company: { select: { name: true } }, contact: { select: { firstName: true, lastName: true } } },
   });
 
-  const open = deals.filter((deal) => deal.status === "OPEN").length;
-  const won = deals.filter((deal) => deal.status === "WON");
+  const open = deals.filter((deal) => PARTNER_DEAL_OPEN_STATUSES.includes(deal.status)).length;
+  const won = deals.filter((deal) => deal.status === "CLOSED_WON");
   const wonValue = won.reduce((sum, deal) => sum + Number(deal.value), 0);
 
   return (
