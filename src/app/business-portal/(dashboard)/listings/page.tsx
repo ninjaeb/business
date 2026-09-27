@@ -28,7 +28,7 @@ export default async function PartnerListingsPage() {
   return (
     <div className="space-y-6">
       <PageHeader
-        title="My listings"
+        title="My Business"
         description="Every business you have on the partner directory."
         actions={
           <form action={createListingAction}>

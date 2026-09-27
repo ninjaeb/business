@@ -59,7 +59,7 @@ export default async function PartnerDirectoryLeadsPage() {
               description="Once someone sends an inquiry through one of your listings, it shows up here."
               action={
                 <Link href="/business-portal/listings" className="text-sm font-medium text-petrol hover:underline dark:text-petrol-light">
-                  Go to My listings
+                  Go to My Business
                 </Link>
               }
             />

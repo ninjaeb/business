@@ -7,7 +7,7 @@
 // second nav group about.
 export const BUSINESS_NAV_ITEMS = [
   { href: "/business-portal", label: "Overview" },
-  { href: "/business-portal/listings", label: "My listings" },
+  { href: "/business-portal/listings", label: "My Business" },
   { href: "/business-portal/business-leads", label: "Business Leads" },
   { href: "/business-portal/companies", label: "Companies" },
   { href: "/business-portal/contacts", label: "Contacts" },
