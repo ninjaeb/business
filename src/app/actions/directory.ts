@@ -1394,7 +1394,7 @@ export async function convertDirectoryLeadToDeal(leadId: string): Promise<void> 
     data: {
       title: lead.company?.trim() || lead.name,
       value: lead.value ?? 0,
-      status: "OPEN",
+      status: "NEW",
       partnerId: partner.id,
       companyId: company?.id ?? null,
       contactId: contact.id,
