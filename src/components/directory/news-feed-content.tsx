@@ -130,7 +130,7 @@ export async function NewsFeedContent({ locale }: { locale: DirectoryLocale }) {
                         >
                           {entry.update.kind === "PROMOTION" ? t.promotionLabel : t.newsLabel}
                         </Badge>
-                        <h2 className="text-base font-semibold text-slate-900 dark:text-slate-100">{entry.update.title}</h2>
+                        <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">{entry.update.title}</h3>
                         {entry.update.postedAt && (
                           <time dateTime={entry.update.postedAt} className="text-xs text-slate-400">
                             {formatUpdatePostedAt(entry.update.postedAt, locale)}

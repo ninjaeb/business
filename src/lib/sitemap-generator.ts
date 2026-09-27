@@ -20,6 +20,7 @@ import {
   DIRECTORY_LOCALES,
   directoryCategoriesIndexPath,
   directoryHomePath,
+  directoryIndustriesIndexPath,
   directoryListingFaqPath,
   directoryListingNewsPath,
   directoryListingPath,
@@ -192,6 +193,14 @@ export async function buildSitemapXml(): Promise<string> {
     entries.push(
       urlEntry(`${STATIC_SEO_ORIGIN}${directoryCategoriesIndexPath(code)}`, {
         alternates: languageAlternates(directoryCategoriesIndexPath),
+        lastModified: latestOverall,
+        changeFrequency: "daily",
+        priority: 0.6,
+      }),
+    );
+    entries.push(
+      urlEntry(`${STATIC_SEO_ORIGIN}${directoryIndustriesIndexPath(code)}`, {
+        alternates: languageAlternates(directoryIndustriesIndexPath),
         lastModified: latestOverall,
         changeFrequency: "daily",
         priority: 0.6,

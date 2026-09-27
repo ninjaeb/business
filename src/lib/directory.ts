@@ -14,7 +14,7 @@ import {
 import { translateCategoryName } from "@/lib/directory-category-labels";
 import { locationLabel } from "@/lib/directory-location-labels";
 import { organizationJsonLdId, serializeJsonLd, websiteJsonLdId } from "@/lib/directory-seo";
-import { VIDEO_CATEGORIES, type VideoCategory, type VideoProvider } from "@/lib/labels";
+import { INDUSTRIES, VIDEO_CATEGORIES, type VideoCategory, type VideoProvider } from "@/lib/labels";
 import { stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
 import { normalizeSearchText, type DirectorySearchIndex } from "@/lib/directory-search";
 
@@ -982,6 +982,17 @@ export async function listLocationsWithCounts(): Promise<LocationWithCount[]> {
     const stateCompare = a.state.localeCompare(b.state);
     return stateCompare !== 0 ? stateCompare : (a.city ?? "").localeCompare(b.city ?? "");
   });
+}
+
+// Every Industry, including one with zero published listings — the
+// industries-index counterpart of listCategoriesWithCounts. Industry is a
+// fixed enum (see INDUSTRIES in src/lib/labels.ts), not a DB table, so this
+// needs no query of its own the way the category version does.
+export type IndustryWithCount = { industry: Industry; count: number };
+export async function listIndustriesWithCounts(): Promise<IndustryWithCount[]> {
+  const rows = await loadPublishedListings();
+  const counts = countListingsByIndustry(rows);
+  return INDUSTRIES.map((industry) => ({ industry, count: counts.get(industry) ?? 0 }));
 }
 
 // One entry per service across every published listing, newest-listing-first

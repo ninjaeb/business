@@ -24,10 +24,12 @@ import {
   buildDirectoryCollectionJsonLd,
   countListingsByCategory,
   countListingsByCityState,
+  countListingsByIndustry,
   loadPublishedListings,
   toDirectoryGridListing,
 } from "@/lib/directory";
 import { locationLabel } from "@/lib/directory-location-labels";
+import { INDUSTRIES } from "@/lib/labels";
 import { DirectorySearch } from "@/components/directory/directory-search";
 import { DirectoryHomeSections } from "@/components/directory/directory-home-sections";
 import { getSiteOrigin } from "@/lib/site-url";
@@ -140,6 +142,11 @@ export default async function DirectoryHomePage({
     name: locationLabel(city, state),
     count,
   }));
+  const countByIndustry = countListingsByIndustry(rows);
+  const linkedIndustries = INDUSTRIES.flatMap((ind) => {
+    const count = countByIndustry.get(ind) ?? 0;
+    return count > 0 ? [{ industry: ind, count }] : [];
+  });
 
   return (
     <>
@@ -175,7 +182,7 @@ export default async function DirectoryHomePage({
         initialCountry={country ?? ""}
         directoryUrl={directoryUrl}
       />
-      <DirectoryHomeSections locale={resolved} categories={linkedCategories} locations={linkedStates} />
+      <DirectoryHomeSections locale={resolved} categories={linkedCategories} industries={linkedIndustries} locations={linkedStates} />
     </>
   );
 }

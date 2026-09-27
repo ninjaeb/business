@@ -15,6 +15,7 @@ import {
   directoryBenefitsPath,
   directoryCategoriesIndexPath,
   directoryHomePath,
+  directoryIndustriesIndexPath,
   directoryLocationsIndexPath,
   directoryNewsPath,
   directoryProductsPath,
@@ -106,6 +107,7 @@ export async function DirectoryChrome({
   // cookie/Accept-Language guess landed on.
   const topNavItems = [
     { href: directoryCategoriesIndexPath(locale), label: t.navAllBusiness },
+    { href: directoryIndustriesIndexPath(locale), label: t.navIndustries },
     { href: directoryLocationsIndexPath(locale), label: t.navLocations },
     { href: directoryProductsPath(locale), label: t.navLatestProducts },
     { href: directoryNewsPath(locale), label: t.updatesHeading },

@@ -127,6 +127,10 @@ export function directoryNewsPath(locale: DirectoryLocale): string {
   return `/${locale}/news`;
 }
 
+export function directoryIndustriesIndexPath(locale: DirectoryLocale): string {
+  return `/${locale}/industries`;
+}
+
 export const DEFAULT_DIRECTORY_LOCALE: DirectoryLocale = "en";
 
 // Fills in DirectoryStrings.recommendMessage's {business}/{url} tokens —
@@ -233,10 +237,15 @@ export type DirectoryStrings = {
   navAllBusiness: string;
   navLocations: string;
   navLatestProducts: string;
+  navIndustries: string;
   categoriesIndexHeading: string;
   categoriesIndexDescription: string;
   categoriesIndexEmptyTitle: string;
   categoriesIndexEmptyDescription: string;
+  industriesIndexHeading: string;
+  industriesIndexDescription: string;
+  industriesIndexEmptyTitle: string;
+  industriesIndexEmptyDescription: string;
   locationsIndexHeading: string;
   locationsIndexDescription: string;
   locationsIndexEmptyTitle: string;
@@ -433,10 +442,15 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navAllBusiness: "All Business",
     navLocations: "Location",
     navLatestProducts: "Latest Products",
+    navIndustries: "Industries",
     categoriesIndexHeading: "All Business Categories",
     categoriesIndexDescription: "Every category in the Gotka Business Directory, with how many businesses are listed in each.",
     categoriesIndexEmptyTitle: "No categories yet",
     categoriesIndexEmptyDescription: "Check back soon — categories will appear here.",
+    industriesIndexHeading: "All Industries",
+    industriesIndexDescription: "Every industry in the Gotka Business Directory, with how many businesses are listed in each.",
+    industriesIndexEmptyTitle: "No industries yet",
+    industriesIndexEmptyDescription: "Check back soon — industries will appear here.",
     locationsIndexHeading: "All Locations",
     locationsIndexDescription: "Every state and region with a business listed in the Gotka Business Directory.",
     locationsIndexEmptyTitle: "No locations yet",
@@ -594,10 +608,15 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navAllBusiness: "所有企业",
     navLocations: "地区",
     navLatestProducts: "最新产品",
+    navIndustries: "行业",
     categoriesIndexHeading: "所有企业类别",
     categoriesIndexDescription: "Gotka 商业目录中的每一个类别，以及各类别下的企业数量。",
     categoriesIndexEmptyTitle: "暂无类别",
     categoriesIndexEmptyDescription: "请稍后再来查看——类别将显示在这里。",
+    industriesIndexHeading: "所有行业",
+    industriesIndexDescription: "Gotka 商业目录中的每一个行业，以及各行业下的企业数量。",
+    industriesIndexEmptyTitle: "暂无行业",
+    industriesIndexEmptyDescription: "请稍后再来查看——行业将显示在这里。",
     locationsIndexHeading: "所有地区",
     locationsIndexDescription: "Gotka 商业目录中每个有企业上榜的州属与地区。",
     locationsIndexEmptyTitle: "暂无地区",
@@ -754,10 +773,15 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navAllBusiness: "Semua Perniagaan",
     navLocations: "Lokasi",
     navLatestProducts: "Produk Terkini",
+    navIndustries: "Industri",
     categoriesIndexHeading: "Semua Kategori Perniagaan",
     categoriesIndexDescription: "Setiap kategori dalam Direktori Perniagaan Gotka, berserta bilangan perniagaan yang tersenarai dalam setiap satu.",
     categoriesIndexEmptyTitle: "Belum ada kategori",
     categoriesIndexEmptyDescription: "Sila semak semula tidak lama lagi — kategori akan dipaparkan di sini.",
+    industriesIndexHeading: "Semua Industri",
+    industriesIndexDescription: "Setiap industri dalam Direktori Perniagaan Gotka, berserta bilangan perniagaan yang tersenarai dalam setiap satu.",
+    industriesIndexEmptyTitle: "Belum ada industri",
+    industriesIndexEmptyDescription: "Sila semak semula tidak lama lagi — industri akan dipaparkan di sini.",
     locationsIndexHeading: "Semua Lokasi",
     locationsIndexDescription: "Setiap negeri dan kawasan yang mempunyai perniagaan tersenarai dalam Direktori Perniagaan Gotka.",
     locationsIndexEmptyTitle: "Belum ada lokasi",

@@ -11,6 +11,7 @@ import {
   INDUSTRY_LABELS_BY_LOCALE,
   directoryCategoriesIndexPath,
   directoryHomePath,
+  directoryIndustriesIndexPath,
   directoryListingPath,
   directoryLocationsIndexPath,
   directoryNewsPath,
@@ -134,6 +135,7 @@ export async function buildLlmsTxt(): Promise<string> {
 
   lines.push("## More");
   lines.push(`- [All business categories](${STATIC_SEO_ORIGIN}${directoryCategoriesIndexPath("en")}): Every category, including ones with no business yet.`);
+  lines.push(`- [All industries](${STATIC_SEO_ORIGIN}${directoryIndustriesIndexPath("en")}): Every industry, including ones with no business yet.`);
   lines.push(`- [All locations](${STATIC_SEO_ORIGIN}${directoryLocationsIndexPath("en")}): Every state/region with a published business.`);
   lines.push(`- [Latest products & services](${STATIC_SEO_ORIGIN}${directoryProductsPath("en")}): Recently added products and services across the directory.`);
   lines.push(`- [News & promotions](${STATIC_SEO_ORIGIN}${directoryNewsPath("en")}): Current news and promotions from businesses in the directory.`);

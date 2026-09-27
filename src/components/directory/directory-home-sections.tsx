@@ -1,11 +1,19 @@
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
+import type { Industry } from "@/generated/prisma/client";
 import { buttonClasses } from "@/components/ui/button";
 import { slugify } from "@/lib/slug";
 import { categoryPath, translateCategoryName } from "@/lib/directory-category-labels";
+import { industryPath } from "@/lib/directory-industry-labels";
 import { locationPath } from "@/lib/directory-location-labels";
 import { DIRECTORY_HOME_COPY } from "@/lib/directory-home-copy";
-import { DIRECTORY_STRINGS, directoryBenefitsPath, directorySignupPath, type DirectoryLocale } from "@/lib/directory-i18n";
+import {
+  DIRECTORY_STRINGS,
+  INDUSTRY_LABELS_BY_LOCALE,
+  directoryBenefitsPath,
+  directorySignupPath,
+  type DirectoryLocale,
+} from "@/lib/directory-i18n";
 
 // The directory home page below its grid: what this directory is, real
 // links into every category that has a business in it, how it works, the
@@ -21,6 +29,7 @@ import { DIRECTORY_STRINGS, directoryBenefitsPath, directorySignupPath, type Dir
 export function DirectoryHomeSections({
   locale,
   categories,
+  industries,
   locations,
 }: {
   locale: DirectoryLocale;
@@ -28,6 +37,11 @@ export function DirectoryHomeSections({
   // countListingsByCategory) — a link to an empty category page helps no
   // one, and those pages are noindex anyway (see buildCategoryMetadata).
   categories: { name: string; count: number }[];
+  // Same "populated only" filtering as categories, but keyed by the fixed
+  // Industry enum rather than a free-text name — translated at render time
+  // via INDUSTRY_LABELS_BY_LOCALE, same as the category pills do via
+  // translateCategoryName.
+  industries: { industry: Industry; count: number }[];
   // Every city+state (or state-only) group at least one published listing
   // carries (see countListingsByCityState/locationLabel) — there's no
   // "empty location" case to filter out the way categories have one, since
@@ -63,6 +77,28 @@ export function DirectoryHomeSections({
                   className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm text-slate-700 transition-colors hover:border-petrol/40 hover:text-petrol dark:border-neutral-700 dark:bg-neutral-800 dark:text-slate-200 dark:hover:border-petrol-light/40 dark:hover:text-petrol-light"
                 >
                   {translateCategoryName(name, locale)}
+                  <span className="text-xs text-slate-400 dark:text-slate-500">{copy.listingCount(count)}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {industries.length > 0 && (
+        <section aria-labelledby="directory-industries" className="mx-auto max-w-5xl">
+          <h2 id="directory-industries" className={headingClasses}>
+            {copy.browseIndustryHeading}
+          </h2>
+          <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{copy.browseIndustryIntro}</p>
+          <ul className="mt-4 flex flex-wrap gap-2">
+            {industries.map(({ industry, count }) => (
+              <li key={industry}>
+                <Link
+                  href={industryPath(industry, locale)}
+                  className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm text-slate-700 transition-colors hover:border-petrol/40 hover:text-petrol dark:border-neutral-700 dark:bg-neutral-800 dark:text-slate-200 dark:hover:border-petrol-light/40 dark:hover:text-petrol-light"
+                >
+                  {INDUSTRY_LABELS_BY_LOCALE[locale][industry]}
                   <span className="text-xs text-slate-400 dark:text-slate-500">{copy.listingCount(count)}</span>
                 </Link>
               </li>
