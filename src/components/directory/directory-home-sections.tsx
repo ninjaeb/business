@@ -60,7 +60,15 @@ export function DirectoryHomeSections({
         <h2 id="directory-about" className="text-2xl font-semibold text-slate-900 dark:text-slate-100">
           {copy.aboutHeading}
         </h2>
-        <p className="mt-3 text-base text-slate-600 dark:text-slate-300">{copy.aboutBody}</p>
+        <p className="mt-3 text-base text-slate-600 dark:text-slate-300">{copy.aboutIntro}</p>
+        <ul className="mt-3 space-y-1.5 text-left text-sm text-slate-600 dark:text-slate-300">
+          {copy.aboutPoints.map((point) => (
+            <li key={point} className="flex gap-2">
+              <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-slate-400 dark:bg-slate-500" aria-hidden="true" />
+              {point}
+            </li>
+          ))}
+        </ul>
       </section>
 
       {categories.length > 0 && (
