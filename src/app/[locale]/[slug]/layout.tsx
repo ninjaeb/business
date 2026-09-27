@@ -556,9 +556,9 @@ export default async function ListingLayout({
               <CardBody>
                 <p className="mb-4 text-base text-slate-500 dark:text-slate-400">{t.contactSubheading}</p>
                 {(listing.phone || listing.whatsAppNumber) && (
-                  <div className="mb-4 flex flex-col gap-2 lg:flex-row">
+                  <div className="mb-4 flex gap-2">
                     {listing.phone && (
-                      <a href={`tel:${listing.phone}`} className={buttonClasses("secondary", "md", "flex-1 justify-center gap-2")}>
+                      <a href={`tel:${listing.phone}`} className={buttonClasses("secondary", "md", "min-h-12 flex-1 justify-center gap-2")}>
                         <Phone className="h-4 w-4" />
                         {t.contactCallCta}
                       </a>
@@ -571,7 +571,7 @@ export default async function ListingLayout({
                         )}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={buttonClasses("secondary", "md", "flex-1 justify-center gap-2")}
+                        className={buttonClasses("secondary", "md", "min-h-12 flex-1 justify-center gap-2")}
                       >
                         <MessageCircle className="h-4 w-4" />
                         {t.contactWhatsAppCta}
