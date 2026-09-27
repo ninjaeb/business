@@ -189,6 +189,7 @@ export function PartnerListingForm({
   const [tagline, setTagline] = useState(current.tagline);
   const [website, setWebsite] = useState(current.website);
   const [phone, setPhone] = useState(current.phone);
+  const [whatsAppNumber, setWhatsAppNumber] = useState(current.whatsAppNumber);
   const [videos, setVideos] = useState<VideoEntry[]>(current.videos);
   const [industry, setIndustry] = useState(current.industry);
   const [address, setAddress] = useState(current.address);
@@ -870,8 +871,21 @@ export function PartnerListingForm({
             placeholder="+60 12 345 6789"
           />
           <p className="mt-1 text-xs text-slate-400">
-            Shown on your listing as Call and WhatsApp buttons. Include the country code with a + sign. Leave blank to hide
-            both.
+            Shown on your listing as a Call button. Include the country code with a + sign. Leave blank to hide it.
+          </p>
+        </FieldGroup>
+        <FieldGroup label="WhatsApp number" htmlFor="whatsAppNumber">
+          <Input
+            id="whatsAppNumber"
+            name="whatsAppNumber"
+            type="tel"
+            value={whatsAppNumber}
+            onChange={(event) => setWhatsAppNumber(event.target.value)}
+            placeholder="+60 12 345 6789"
+          />
+          <p className="mt-1 text-xs text-slate-400">
+            Shown on your listing as a WhatsApp button, for calls and messages. Can be different from your Contact number.
+            Leave blank to hide it.
           </p>
         </FieldGroup>
       </div>

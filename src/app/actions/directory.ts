@@ -239,6 +239,11 @@ const listingSchema = z.object({
     .trim()
     .optional()
     .refine((value) => !value || isValidPhoneFormat(value), { message: PHONE_FORMAT_HINT }),
+  whatsAppNumber: z
+    .string()
+    .trim()
+    .optional()
+    .refine((value) => !value || isValidPhoneFormat(value), { message: PHONE_FORMAT_HINT }),
   address: z.string().trim().optional(),
   city: z.string().trim().optional(),
   state: z.string().trim().optional(),
@@ -271,6 +276,7 @@ export type ListingFormValues = {
   industry: string;
   website: string;
   phone: string;
+  whatsAppNumber: string;
   address: string;
   city: string;
   state: string;
@@ -339,6 +345,7 @@ function extractListingFormValues(formData: FormData): ListingFormValues {
     industry: stringField(formData, "industry"),
     website: stringField(formData, "website"),
     phone: stringField(formData, "phone"),
+    whatsAppNumber: stringField(formData, "whatsAppNumber"),
     address: stringField(formData, "address"),
     city: stringField(formData, "city"),
     state: stringField(formData, "state"),
@@ -795,7 +802,10 @@ export type AutoCreatedListingDetails = {
   // Straight from Google's own field (PlaceDetails.phone), never through
   // the model — same "fact to copy, not prose to write" treatment as
   // address/operatingHours below. Null when there's no place, or Google
-  // has none on file.
+  // has none on file. This is the Call number only — there's no
+  // PlaceDetails equivalent for PartnerListing.whatsAppNumber (Google
+  // Business Profile has no WhatsApp concept), so that field is never
+  // part of AI Auto Create and stays purely partner-entered.
   phone: string | null;
   address: string | null;
   city: string | null;
@@ -1142,6 +1152,7 @@ async function saveListingFields(
         industry: (parsed.data.industry || null) as Industry | null,
         website: parsed.data.website ? normalizeWebsiteUrl(parsed.data.website) : null,
         phone: parsed.data.phone ? normalizePhone(parsed.data.phone) : null,
+        whatsAppNumber: parsed.data.whatsAppNumber ? normalizePhone(parsed.data.whatsAppNumber) : null,
         address: parsed.data.address || null,
         city: parsed.data.city || null,
         state: parsed.data.state || null,

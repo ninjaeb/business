@@ -543,21 +543,28 @@ export default async function ListingLayout({
               </CardHeader>
               <CardBody>
                 <p className="mb-4 text-base text-slate-500 dark:text-slate-400">{t.contactSubheading}</p>
-                {listing.phone && (
+                {(listing.phone || listing.whatsAppNumber) && (
                   <div className="mb-4 flex gap-2">
-                    <a href={`tel:${listing.phone}`} className={buttonClasses("secondary", "md", "flex-1 justify-center gap-2")}>
-                      <Phone className="h-4 w-4" />
-                      {t.contactCallCta}
-                    </a>
-                    <a
-                      href={whatsAppUrl(listing.phone, formatContactWhatsAppMessage(t.contactWhatsAppMessage, listing.companyName))}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={buttonClasses("secondary", "md", "flex-1 justify-center gap-2")}
-                    >
-                      <MessageCircle className="h-4 w-4" />
-                      {t.contactWhatsAppCta}
-                    </a>
+                    {listing.phone && (
+                      <a href={`tel:${listing.phone}`} className={buttonClasses("secondary", "md", "flex-1 justify-center gap-2")}>
+                        <Phone className="h-4 w-4" />
+                        {t.contactCallCta}
+                      </a>
+                    )}
+                    {listing.whatsAppNumber && (
+                      <a
+                        href={whatsAppUrl(
+                          listing.whatsAppNumber,
+                          formatContactWhatsAppMessage(t.contactWhatsAppMessage, listing.companyName),
+                        )}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={buttonClasses("secondary", "md", "flex-1 justify-center gap-2")}
+                      >
+                        <MessageCircle className="h-4 w-4" />
+                        {t.contactWhatsAppCta}
+                      </a>
+                    )}
                   </div>
                 )}
                 <DirectoryLeadForm slug={slug} locale={resolved} />
