@@ -467,8 +467,8 @@ export default async function ListingLayout({
       </div>
 
       <InquiryProvider>
-        <div className="grid gap-6 lg:grid-cols-3">
-          <div className="space-y-6 lg:col-span-2">
+        <div className="grid gap-6 md:grid-cols-3">
+          <div className="space-y-6 md:col-span-2">
             {/* Phone-width fallback for the sm:+ version tucked into the name
                 column in the header above — same content and order, just
                 moved down here (ahead of whichever section this page
@@ -546,7 +546,7 @@ export default async function ListingLayout({
             {children}
           </div>
 
-          <InquiryScrollTarget id="contact" className="scroll-mt-32 lg:sticky lg:top-32 lg:self-start">
+          <InquiryScrollTarget id="contact" className="scroll-mt-32 md:sticky md:top-32 md:self-start">
             <Card>
               <CardHeader>
                 <CardTitle className="text-base">{t.contactHeading}</CardTitle>
@@ -554,7 +554,7 @@ export default async function ListingLayout({
               <CardBody>
                 <p className="mb-4 text-base text-slate-500 dark:text-slate-400">{t.contactSubheading}</p>
                 {(listing.phone || listing.whatsAppNumber) && (
-                  <div className="mb-4 flex gap-2">
+                  <div className="mb-4 flex flex-col gap-2 lg:flex-row">
                     {listing.phone && (
                       <a href={`tel:${listing.phone}`} className={buttonClasses("secondary", "md", "flex-1 justify-center gap-2")}>
                         <Phone className="h-4 w-4" />
@@ -586,8 +586,8 @@ export default async function ListingLayout({
 
       <RecommendBar title={listing.companyName} url={recommendUrl} message={recommendMessage} label={t.recommendBusinessCta} />
 
-      {/* Shown at every width, not just mobile: on lg+ the Get in touch card
-          is a sticky right-hand column (see its own lg:sticky lg:top-32
+      {/* Shown at every width, not just mobile: on md+ the Get in touch card
+          is a sticky right-hand column (see its own md:sticky md:top-32
           above) — sticky only through the grid's own height, which runs the
           whole way down the left column's real content, but still ends
           before this bar's own row and RecommendBar above it. This bar
