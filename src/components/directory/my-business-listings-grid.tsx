@@ -6,6 +6,7 @@ import { ExternalLink, Eye, Link2, Megaphone, Trash2 } from "lucide-react";
 import { bulkLinkListingsAsBranches, deleteListingAction } from "@/app/actions/directory";
 import type { PartnerListingStatus } from "@/generated/prisma/client";
 import type { DirectoryLocale } from "@/lib/directory-i18n";
+import { cn } from "@/lib/utils";
 import { Card, CardBody } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button, buttonClasses } from "@/components/ui/button";
@@ -66,8 +67,14 @@ export function MyBusinessListingsGrid({ listings }: { listings: MyBusinessListi
 
   return (
     <div className="space-y-3">
+      {/* Floating rather than inline so it stays reachable without scrolling
+          back up, however far down the grid the selected cards are — fixed
+          to the viewport (not sticky) so it never shifts the grid above it.
+          The sm:left offset clears PartnerLayout's persistent sidebar
+          (w-60 = 15rem) plus <main>'s own sm:px-8 (2rem) so the bar lines up
+          with the grid's own left edge instead of hiding behind the rail. */}
       {selected.size > 0 && (
-        <div className="flex items-center justify-between gap-3 rounded-md border border-petrol/30 bg-led-soft px-4 py-2.5 text-sm dark:bg-led-soft-dark">
+        <div className="fixed inset-x-4 bottom-6 z-30 flex items-center justify-between gap-3 rounded-md border border-petrol/30 bg-led-soft px-4 py-2.5 text-sm shadow-lg dark:bg-led-soft-dark sm:inset-x-8 sm:left-[17rem]">
           <span className="font-medium text-petrol-ink dark:text-petrol-light">{selected.size} selected</span>
           <div className="flex items-center gap-2">
             <button
@@ -85,7 +92,7 @@ export function MyBusinessListingsGrid({ listings }: { listings: MyBusinessListi
         </div>
       )}
 
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className={cn("grid gap-4 sm:grid-cols-2 lg:grid-cols-3", selected.size > 0 && "pb-20")}>
         {listings.map((listing) => (
           <Card key={listing.id} className="relative">
             <label className="absolute right-4 top-4 flex h-5 w-5 cursor-pointer items-center justify-center">
