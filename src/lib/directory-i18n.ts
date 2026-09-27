@@ -131,6 +131,14 @@ export function directoryIndustriesIndexPath(locale: DirectoryLocale): string {
   return `/${locale}/industries`;
 }
 
+export function directoryGuidesPath(locale: DirectoryLocale): string {
+  return `/${locale}/guides`;
+}
+
+export function directoryGuidePath(locale: DirectoryLocale, slug: string): string {
+  return `${directoryGuidesPath(locale)}/${slug}`;
+}
+
 export const DEFAULT_DIRECTORY_LOCALE: DirectoryLocale = "en";
 
 // Fills in DirectoryStrings.recommendMessage's {business}/{url} tokens —
@@ -179,6 +187,19 @@ export function formatPhotoCountLabel(count: number, locale: DirectoryLocale): s
   if (locale === "zh") return `${count.toLocaleString()} 张照片`;
   if (locale === "ms") return `${count.toLocaleString()} foto`;
   return count === 1 ? "1 photo" : `${count.toLocaleString()} photos`;
+}
+
+// The Photos page's own meta description for one named album (see
+// generateMetadata in photos/page.tsx) — describes exactly what's on that
+// page instead of falling back to the whole listing's tagline/About text,
+// the way every other section page still does. Kept as its own function
+// for the same reason as formatPhotoCountLabel above: it interpolates the
+// album and company name, which DIRECTORY_STRINGS can't hold as a function
+// once passed whole into a "use client" component.
+export function formatAlbumMetaDescription(albumName: string, photoCount: number, companyName: string, locale: DirectoryLocale): string {
+  if (locale === "zh") return `查看 ${companyName} 的「${albumName}」相册中的 ${photoCount.toLocaleString()} 张照片。`;
+  if (locale === "ms") return `Lihat ${photoCount.toLocaleString()} foto dalam album "${albumName}" oleh ${companyName}.`;
+  return `View ${photoCount.toLocaleString()} photo${photoCount === 1 ? "" : "s"} from ${companyName}'s "${albumName}" album.`;
 }
 
 export type DirectoryLeadFormErrorCode =
@@ -244,6 +265,7 @@ export type DirectoryStrings = {
   navLocations: string;
   navLatestProducts: string;
   navIndustries: string;
+  navGuides: string;
   categoriesIndexHeading: string;
   categoriesIndexDescription: string;
   categoriesIndexEmptyTitle: string;
@@ -266,6 +288,16 @@ export type DirectoryStrings = {
   newsFeedDescription: string;
   newsFeedEmptyTitle: string;
   newsFeedEmptyDescription: string;
+  // The /guides index and each guide's own detail page (src/app/[locale]/
+  // guides) — admin-authored pillar content, unlike every other nav
+  // destination above which is generated straight from listing data.
+  guidesIndexHeading: string;
+  guidesIndexDescription: string;
+  guidesIndexEmptyTitle: string;
+  guidesIndexEmptyDescription: string;
+  guidePublishedOnLabel: string;
+  guideReadMoreLabel: string;
+  guideRelatedHeading: string;
   // The listing page's two "other businesses" sections — newest published
   // listings overall, and other listings in the same state but a different
   // industry (see latestListings/nearbyListingsExcludingIndustry in
@@ -370,6 +402,11 @@ export type DirectoryStrings = {
   formSubmitting: string;
   formSuccess: string;
   errors: Record<DirectoryLeadFormErrorCode, string>;
+  // The header's "Skip to main content" link (see DirectoryChrome) — visible
+  // only once focused (first Tab stop on the page), so a keyboard/screen
+  // reader visitor can jump past the header's nav links straight to the
+  // page's own content instead of tabbing through all of them first.
+  skipToContentLabel: string;
   stickyNavLabel: string;
   // aria-label for the header's own jump-to-section tab strip (see
   // ListingSectionNav) — same "read by assistive tech, not shown as text"
@@ -465,6 +502,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navLocations: "Location",
     navLatestProducts: "Latest Products",
     navIndustries: "Industries",
+    navGuides: "Guides",
     categoriesIndexHeading: "All Business Categories",
     categoriesIndexDescription: "Every category in the Gotka Business Directory, with how many businesses are listed in each.",
     categoriesIndexEmptyTitle: "No categories yet",
@@ -484,6 +522,13 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     newsFeedDescription: "Current news and promotions from businesses across the directory.",
     newsFeedEmptyTitle: "No news or promotions yet",
     newsFeedEmptyDescription: "Check back soon for updates from businesses in the directory.",
+    guidesIndexHeading: "Guides",
+    guidesIndexDescription: "In-depth guides to help you choose and compare businesses in the Gotka network.",
+    guidesIndexEmptyTitle: "No guides yet",
+    guidesIndexEmptyDescription: "Check back soon — guides will appear here.",
+    guidePublishedOnLabel: "Published",
+    guideReadMoreLabel: "Read guide",
+    guideRelatedHeading: "Related guides",
     latestBusinessesHeading: "Latest Businesses",
     nearbyBusinessesHeading: "Businesses Near You",
     aboutHeading: "About",
@@ -555,6 +600,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       invalid_submission: "Please check the form and try again.",
       generic: "Something went wrong. Please try again.",
     },
+    skipToContentLabel: "Skip to main content",
     stickyNavLabel: "Quick links",
     sectionNavLabel: "Page sections",
     breadcrumbNavLabel: "Breadcrumb",
@@ -637,6 +683,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navLocations: "地区",
     navLatestProducts: "最新产品",
     navIndustries: "行业",
+    navGuides: "指南",
     categoriesIndexHeading: "所有企业类别",
     categoriesIndexDescription: "Gotka 商业目录中的每一个类别，以及各类别下的企业数量。",
     categoriesIndexEmptyTitle: "暂无类别",
@@ -656,6 +703,13 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     newsFeedDescription: "来自目录中各企业的最新新闻与促销信息。",
     newsFeedEmptyTitle: "暂无新闻或促销",
     newsFeedEmptyDescription: "请稍后再来查看目录中企业的最新动态。",
+    guidesIndexHeading: "指南",
+    guidesIndexDescription: "深入指南，助您在 Gotka 网络中选择和比较企业。",
+    guidesIndexEmptyTitle: "暂无指南",
+    guidesIndexEmptyDescription: "请稍后再来查看——指南将显示在这里。",
+    guidePublishedOnLabel: "发布于",
+    guideReadMoreLabel: "阅读指南",
+    guideRelatedHeading: "相关指南",
     latestBusinessesHeading: "最新企业",
     nearbyBusinessesHeading: "附近企业",
     aboutHeading: "关于",
@@ -727,6 +781,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       invalid_submission: "请检查表单内容后重试。",
       generic: "出现错误，请重试。",
     },
+    skipToContentLabel: "跳到主要内容",
     stickyNavLabel: "快捷链接",
     sectionNavLabel: "页面导航",
     breadcrumbNavLabel: "面包屑导航",
@@ -808,6 +863,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navLocations: "Lokasi",
     navLatestProducts: "Produk Terkini",
     navIndustries: "Industri",
+    navGuides: "Panduan",
     categoriesIndexHeading: "Semua Kategori Perniagaan",
     categoriesIndexDescription: "Setiap kategori dalam Direktori Perniagaan Gotka, berserta bilangan perniagaan yang tersenarai dalam setiap satu.",
     categoriesIndexEmptyTitle: "Belum ada kategori",
@@ -827,6 +883,13 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     newsFeedDescription: "Berita dan promosi terkini daripada perniagaan di seluruh direktori.",
     newsFeedEmptyTitle: "Belum ada berita atau promosi",
     newsFeedEmptyDescription: "Sila semak semula tidak lama lagi untuk kemas kini daripada perniagaan dalam direktori.",
+    guidesIndexHeading: "Panduan",
+    guidesIndexDescription: "Panduan mendalam untuk membantu anda memilih dan membandingkan perniagaan dalam rangkaian Gotka.",
+    guidesIndexEmptyTitle: "Belum ada panduan",
+    guidesIndexEmptyDescription: "Sila semak semula tidak lama lagi — panduan akan dipaparkan di sini.",
+    guidePublishedOnLabel: "Diterbitkan",
+    guideReadMoreLabel: "Baca panduan",
+    guideRelatedHeading: "Panduan berkaitan",
     latestBusinessesHeading: "Perniagaan Terkini",
     nearbyBusinessesHeading: "Perniagaan Berhampiran",
     aboutHeading: "Tentang",
@@ -898,6 +961,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       invalid_submission: "Sila semak borang dan cuba lagi.",
       generic: "Berlaku ralat. Sila cuba lagi.",
     },
+    skipToContentLabel: "Langkau ke kandungan utama",
     stickyNavLabel: "Pautan pantas",
     sectionNavLabel: "Bahagian halaman",
     breadcrumbNavLabel: "Navigasi laluan",

@@ -15,6 +15,7 @@ import {
   type ListingFormField,
   type ListingFormValues,
 } from "@/app/actions/directory";
+import { uploadDirectoryListingImage } from "@/app/actions/directory-images";
 import { Button, buttonClasses } from "@/components/ui/button";
 import { FieldGroup, Input, Label, RequiredMark, Select, Textarea } from "@/components/ui/field";
 import { MultiCombobox } from "@/components/ui/multi-combobox";
@@ -218,6 +219,15 @@ export function PartnerListingForm({
   const [generatingFaqs, startGenerateFaqs] = useTransition();
   const [generatingSeoMeta, startGenerateSeoMeta] = useTransition();
   const [translating, startTranslate] = useTransition();
+
+  // Passed to every MarkdownLiteEditor on this form (the About field, in
+  // each language) — builds the FormData that action actually wants from
+  // the file the editor's own toolbar already compressed.
+  function uploadImage(file: File) {
+    const formData = new FormData();
+    formData.set("image", file);
+    return uploadDirectoryListingImage(listingId, formData);
+  }
 
   // Opens the crop dialog on the picked file rather than using it as-is —
   // see handleCropApply/handleCropCancel below for what happens next. The
@@ -916,7 +926,7 @@ export function PartnerListingForm({
           <MarkdownLiteEditor
             id="description"
             name="description"
-            listingId={listingId}
+            onUploadImage={uploadImage}
             rows={5}
             value={description}
             onChange={(value) => {
@@ -939,7 +949,7 @@ export function PartnerListingForm({
           <MarkdownLiteEditor
             id="zhDescription"
             name="zhDescription"
-            listingId={listingId}
+            onUploadImage={uploadImage}
             rows={5}
             value={translations.zh?.description ?? ""}
             onChange={(value) => updateTranslation("zh", "description", value)}
@@ -959,7 +969,7 @@ export function PartnerListingForm({
           <MarkdownLiteEditor
             id="msDescription"
             name="msDescription"
-            listingId={listingId}
+            onUploadImage={uploadImage}
             rows={5}
             value={translations.ms?.description ?? ""}
             onChange={(value) => updateTranslation("ms", "description", value)}

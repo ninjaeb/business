@@ -44,6 +44,10 @@ model User {
   partnerDeals         PartnerDeal[]
   partnerTasks         PartnerTask[]
   assignedPartnerTasks PartnerTaskAssignee[]
+
+  // Editorial pillar/guide content this account (an admin) has authored —
+  // see DirectoryGuide.
+  directoryGuides DirectoryGuide[]
 }
 
 // ============================================================================
@@ -388,17 +392,22 @@ model PartnerListingCategory {
   @@index([categoryId])
 }
 
-// Two unrelated uses share this table (and its /api/directory-images/[id]
-// route), both just "an image byte blob owned by a listing": About-field
-// embedded images (markdown-lite editor), referenced by id from inside the
-// About text itself, and gallery photos (see PartnerListing.photoIds),
-// referenced by id from that ordered array instead. `caption` and `gallery`
-// are only ever set for the latter — an About-embed's description lives in
-// the surrounding markdown, not on the image row, and has no grouping of
-// its own either. `gallery` is a partner's own free-text label (e.g.
-// "Office", "Team", "2024 Event"), not a fixed enum like a video's
-// category — the public page groups photos under it (see PhotoLightbox)
-// once a listing has more than one distinct value among its photos.
+// Three unrelated uses share this table (and its /api/directory-images/[id]
+// route), all just "an image byte blob owned by a listing or a guide":
+// About-field embedded images (markdown-lite editor) on a listing,
+// gallery photos (see PartnerListing.photoIds), and About-field embedded
+// images on a DirectoryGuide below — referenced by id from inside the
+// relevant markdown body, or (gallery photos only) from that ordered
+// array instead. `caption` and `gallery` are only ever set for gallery
+// photos — an embed's description lives in the surrounding markdown, not
+// on the image row, and has no grouping of its own either. `gallery` is a
+// partner's own free-text label (e.g. "Office", "Team", "2024 Event"), not
+// a fixed enum like a video's category — the public page groups photos
+// under it (see PhotoLightbox) once a listing has more than one distinct
+// value among its photos. Exactly one of listingId/guideId is set on any
+// row — enforced in the two upload actions (uploadDirectoryListingImage/
+// uploadDirectoryGuideImage), not the schema itself, same convention as
+// every other cross-table invariant in this file.
 model DirectoryListingImage {
   id       String  @id @default(cuid())
   mimeType String
@@ -408,10 +417,59 @@ model DirectoryListingImage {
 
   createdAt DateTime @default(now())
 
-  listing   PartnerListing @relation(fields: [listingId], references: [id], onDelete: Cascade)
-  listingId String
+  listing   PartnerListing? @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  listingId String?
+
+  guide   DirectoryGuide? @relation(fields: [guideId], references: [id], onDelete: Cascade)
+  guideId String?
 
   @@index([listingId])
+  @@index([guideId])
+}
+
+enum DirectoryGuideStatus {
+  DRAFT
+  PUBLISHED
+}
+
+// A long-form editorial "pillar" guide (e.g. "The Complete Guide to
+// Coworking Spaces in Malaysia") published by Gotka itself — see
+// src/app/admin/guides (write, admin-only) and src/app/[locale]/guides
+// (read, public). Unlike a PartnerListing, there's no owning partner and
+// no separate review/approve step: an admin drafts it and publishes it
+// directly, so `status` alone (not a snapshot) gates what the public
+// pages read. `industry` is optional and only ever used to cross-link a
+// guide from the matching industry page (see industry-page-content.tsx) —
+// a guide with no clear industry fit is simply never cross-linked.
+// English-only for now — no per-locale translations table like
+// PartnerListing.translations, a deliberate scope cut to ship a working
+// pillar-content type without also building trilingual long-form
+// authoring in the same pass.
+model DirectoryGuide {
+  id       String               @id @default(cuid())
+  slug     String               @unique
+  title    String
+  // A short, direct definition/summary — doubles as the meta description
+  // and the index page's own "definition-first" excerpt under the title.
+  excerpt  String               @db.Text
+  body     String               @db.Text
+  status   DirectoryGuideStatus @default(DRAFT)
+  industry Industry?
+
+  seoTitle       String?
+  seoDescription String?
+
+  publishedAt DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  author   User   @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  authorId String
+
+  images DirectoryListingImage[]
+
+  @@index([status])
+  @@index([industry])
 }
 
 // Declared in workflow order so the partner-facing status picker can list

@@ -14,6 +14,7 @@ import {
   DIRECTORY_STRINGS,
   directoryBenefitsPath,
   directoryCategoriesIndexPath,
+  directoryGuidesPath,
   directoryHomePath,
   directoryIndustriesIndexPath,
   directoryLocationsIndexPath,
@@ -111,10 +112,22 @@ export async function DirectoryChrome({
     { href: directoryLocationsIndexPath(locale), label: t.navLocations },
     { href: directoryProductsPath(locale), label: t.navLatestProducts },
     { href: directoryNewsPath(locale), label: t.updatesHeading },
+    { href: directoryGuidesPath(locale), label: t.navGuides },
   ];
 
   return (
     <div className="flex min-h-full flex-col bg-slate-50 dark:bg-neutral-950">
+      {/* First focusable element on every page — invisible until it
+          receives keyboard focus (Tab from a fresh page load), so a
+          keyboard or screen-reader visitor can jump straight to #main-content
+          instead of tabbing through every header link first. z-30: above the
+          header's own sticky z-20 once focused, so it isn't drawn under it. */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-30 focus:rounded-md focus:bg-petrol focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-white focus:outline-none dark:focus:bg-petrol-light dark:focus:text-petrol-ink"
+      >
+        {t.skipToContentLabel}
+      </a>
       <header className="sticky top-0 z-20 border-b border-slate-200 bg-white dark:border-neutral-800 dark:bg-neutral-900">
         <div className="flex w-full items-center gap-3 px-4 py-3 sm:px-8">
           <Link href={directoryHref} className="flex shrink-0 items-center gap-2">
@@ -194,7 +207,9 @@ export async function DirectoryChrome({
         </div>
       </header>
 
-      <main className="flex-1">{children}</main>
+      <main id="main-content" className="flex-1">
+        {children}
+      </main>
 
       {/* pb-40, not py-8's own 32px, on this specific side: a listing page
           renders two fixed-position bars pinned to the viewport bottom (the
