@@ -1009,7 +1009,7 @@ export async function autoCreateListingDetails(input: {
   // own logo (og:image/favicon) only comes into play when there's no
   // place, or its photo couldn't be fetched.
   const [result, logoUrl] = await Promise.all([
-    callAi(AutoListingSchema, AUTO_LISTING_SYSTEM_PROMPT, lines.join("\n"), { timeoutMs: 60_000 }),
+    callAi(AutoListingSchema, AUTO_LISTING_SYSTEM_PROMPT, lines.join("\n"), { timeoutMs: 60_000, maxTokens: 8000 }),
     logoFromPlace(place).then((url) => url ?? fetchWebsiteLogo(logoCandidates)),
   ]);
   if (result.status !== "ok") return result;

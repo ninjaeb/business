@@ -107,6 +107,19 @@ export function isAiConfigured() {
 // number being raised for everyone.
 const REQUEST_TIMEOUT_MS = 20_000;
 
+// Every model this app's OPENROUTER_MODEL/OPENROUTER_VISION_MODEL could
+// route to defaults to a much larger completion budget left unset (up to
+// 32K-65K tokens per OpenRouter's own /models data) — generous for open-
+// ended chat, but this app only ever wants one JSON object built from a
+// known, bounded schema. An unbounded budget is itself a latency risk
+// independent of reasoning (see callAi's own reasoning: {effort: "none"}
+// comment) — nothing stops a model from generating a long, rambling
+// response before finally emitting valid JSON. 4000 tokens comfortably
+// covers every schema in this file except autoCreateListingDetails's
+// (tagline+description+up to 12 services+6 FAQs+SEO fields at once), which
+// passes its own larger override via callAi's maxTokens option.
+const DEFAULT_MAX_TOKENS = 4000;
+
 export function getOpenRouterClient() {
   if (!process.env.OPENROUTER_API_KEY) {
     throw new Error("OPENROUTER_API_KEY is not set");
@@ -197,21 +210,41 @@ export const AI_NOT_CONFIGURED: AiResult<never> = {
 // timeout on top, and doubling an already-long wait risks the same
 // hung-connection failure REQUEST_TIMEOUT_MS exists to prevent in the
 // first place — better to surface one clear timeout error than make the
-// partner wait through two.
+// partner wait through two. options.maxTokens overrides DEFAULT_MAX_TOKENS
+// below, for a caller whose expected JSON is unusually large (also
+// autoCreateListingDetails).
 export async function callAi<T>(
   schema: z.ZodType<T>,
   systemPrompt: string,
   userContent: string | ChatCompletionContentPart[],
-  options?: { timeoutMs?: number },
+  options?: { timeoutMs?: number; maxTokens?: number },
 ): Promise<AiResult<T>> {
   try {
     const client = getOpenRouterClient();
     const hasImage = Array.isArray(userContent) && userContent.some((part) => part.type === "image_url");
     const { model, fallbacks } = parseModelPriorityList(hasImage ? OPENROUTER_VISION_MODEL : OPENROUTER_MODEL);
-    const params: OpenAI.Chat.Completions.ChatCompletionCreateParamsNonStreaming & { models?: string[] } = {
+    const params: OpenAI.Chat.Completions.ChatCompletionCreateParamsNonStreaming & {
+      models?: string[];
+      reasoning?: { effort: "none" };
+    } = {
       model,
       ...(fallbacks.length > 0 ? { models: fallbacks } : {}),
       response_format: { type: "json_object" },
+      max_tokens: options?.maxTokens ?? DEFAULT_MAX_TOKENS,
+      // Structured JSON output never needs a model's hidden chain-of-
+      // thought pass — this app parses+validates the final answer either
+      // way — and reasoning tokens run up the same wall-clock time (and
+      // count against max_tokens above) whether or not the model's own
+      // default has reasoning on. Explicit here rather than left to each
+      // model's default: relying on OPENROUTER_MODEL's picks defaulting to
+      // reasoning off (see that constant's own comment) didn't reliably
+      // keep every request fast in production, most likely because a
+      // fallback deeper in the priority list doesn't share the primary's
+      // default. "none" is OpenRouter's own documented effort level for
+      // fully disabling reasoning, honored (or harmlessly ignored, for a
+      // model with no reasoning mode at all) across every model this could
+      // route to.
+      reasoning: { effort: "none" },
       messages: [
         {
           role: "system",
