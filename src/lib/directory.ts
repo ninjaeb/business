@@ -1329,10 +1329,10 @@ export function listingViewCountBreakdown(
 // a visible, deliberate action (the "+ New listing" button on
 // /business/listings), not something that happens as a side effect of
 // loading a page.
-export async function createPartnerListing(partnerId: string, partnerName: string): Promise<PartnerListing> {
-  const slug = await generateListingSlug(partnerName);
+export async function createPartnerListing(partnerId: string, companyName: string): Promise<PartnerListing> {
+  const slug = await generateListingSlug(companyName);
   return db.partnerListing.create({
-    data: { partnerId, slug, companyName: partnerName, services: [] },
+    data: { partnerId, slug, companyName, services: [] },
   });
 }
 
