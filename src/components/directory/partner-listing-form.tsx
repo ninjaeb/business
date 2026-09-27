@@ -188,6 +188,7 @@ export function PartnerListingForm({
   const [autoSlugSource, setAutoSlugSource] = useState<string | undefined>(undefined);
   const [tagline, setTagline] = useState(current.tagline);
   const [website, setWebsite] = useState(current.website);
+  const [phone, setPhone] = useState(current.phone);
   const [videos, setVideos] = useState<VideoEntry[]>(current.videos);
   const [industry, setIndustry] = useState(current.industry);
   const [address, setAddress] = useState(current.address);
@@ -428,6 +429,7 @@ export function PartnerListingForm({
     if (details.services.length > 0) setServices(details.services);
     if (details.faqs.length > 0) setFaqs(details.faqs);
     if (details.website) setWebsite(details.website);
+    if (details.phone) setPhone(details.phone);
     if (details.address) setAddress(details.address);
     if (details.city) setCity(details.city);
     if (details.state) setAddrState(details.state);
@@ -854,6 +856,23 @@ export function PartnerListingForm({
             onChange={(event) => setCountry(event.target.value)}
             placeholder="Malaysia"
           />
+        </FieldGroup>
+      </div>
+
+      <div className="grid gap-4 sm:grid-cols-2">
+        <FieldGroup label="Contact number" htmlFor="phone">
+          <Input
+            id="phone"
+            name="phone"
+            type="tel"
+            value={phone}
+            onChange={(event) => setPhone(event.target.value)}
+            placeholder="+60 12 345 6789"
+          />
+          <p className="mt-1 text-xs text-slate-400">
+            Shown on your listing as Call and WhatsApp buttons. Include the country code with a + sign. Leave blank to hide
+            both.
+          </p>
         </FieldGroup>
       </div>
 

@@ -282,6 +282,13 @@ model PartnerListing {
   services       Json // ServiceEntry[] (src/lib/directory.ts) — {title, description, price}
   industry       Industry?
   website        String?
+  // The business's own public contact number — shown on the public listing
+  // page as click-to-call/WhatsApp buttons (see PublishedListingSnapshot's
+  // own comment on why this is a different thing from User.phone). Stored
+  // normalized (leading "+", no spaces/dashes — see normalizePhone in
+  // src/lib/phone.ts), same convention as every other phone field in this
+  // app (DirectoryLead.phone, User.phone).
+  phone          String?
   videos         Json? // VideoEntry[] (src/lib/directory.ts) — {url, title, category, thumbnailUrl}
   address        String?   @db.Text
   city           String?
