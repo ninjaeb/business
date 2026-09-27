@@ -1,5 +1,5 @@
 import { execFileSync } from "node:child_process";
-import { existsSync, mkdirSync, utimesSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, utimesSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
 // Runs the same sequence the README's manual redeploy steps describe (see
@@ -43,6 +43,38 @@ function signalRestart() {
 
 function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+// public/sitemap.xml and public/llms.txt are committed only as 0-URL
+// placeholders for a brand-new environment's very first boot, before
+// instrumentation.ts has ever run (see that file's own comment) — every
+// deploy since the first, `git reset --hard` below would otherwise
+// overwrite whatever real, already-generated file is on disk with that
+// same placeholder. The previous app process is still running at that
+// point (see the comment above signalRestart) and serves both files
+// straight off disk on every request, so it starts serving the placeholder
+// the instant the reset runs, for however long the new process then takes
+// to rebuild and regenerate them — the exact gap that got an empty
+// /sitemap.xml served to Googlebot and flagged as broken in Search
+// Console. Snapshotting each file's current bytes before the reset and
+// writing them straight back after preserves whatever was really being
+// served through the reset instead; the new process's own instrumentation
+// still replaces them with fully current content moments later.
+const GENERATED_PUBLIC_FILES = ["public/sitemap.xml", "public/llms.txt"];
+
+function snapshotGeneratedFiles(): Map<string, Buffer> {
+  const snapshot = new Map<string, Buffer>();
+  for (const file of GENERATED_PUBLIC_FILES) {
+    const filePath = path.join(REPO_ROOT, file);
+    if (existsSync(filePath)) snapshot.set(file, readFileSync(filePath));
+  }
+  return snapshot;
+}
+
+function restoreGeneratedFiles(snapshot: Map<string, Buffer>) {
+  for (const [file, contents] of snapshot) {
+    writeFileSync(path.join(REPO_ROOT, file), contents);
+  }
 }
 
 // execFileSync (with encoding set, as `run` passes) attaches the child's
@@ -248,7 +280,9 @@ async function main() {
 
   const before = run("git", ["rev-parse", "HEAD"]);
   run("git", ["fetch", "origin", BRANCH]);
+  const generatedFilesSnapshot = snapshotGeneratedFiles();
   run("git", ["reset", "--hard", `origin/${BRANCH}`]);
+  restoreGeneratedFiles(generatedFilesSnapshot);
   const after = run("git", ["rev-parse", "HEAD"]);
 
   if (before === after) {
