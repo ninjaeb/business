@@ -48,6 +48,7 @@ import { ListingLogo } from "@/components/directory/listing-logo";
 import { DirectoryLeadForm } from "@/components/directory/directory-lead-form";
 import { InquiryProvider, InquiryScrollTarget } from "@/components/directory/listing-inquiry";
 import { ShareButton } from "@/components/directory/share-button";
+import { RecommendBar } from "@/components/directory/recommend-bar";
 import { ReferralViewBeacon } from "@/components/directory/referral-view-beacon";
 import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
 import { ListingSectionNav } from "@/components/directory/listing-section-nav";
