@@ -33,6 +33,7 @@ import {
   getOwnedListing,
   isValidSlugFormat,
   isValidTimeString,
+  linkListingsAsBranches,
   normalizeWebsiteUrl,
   parseFaqsJson,
   parseServicesJson,
@@ -1065,6 +1066,26 @@ export async function deleteListingAction(id: string, formData: FormData): Promi
   }
   await db.partnerListing.delete({ where: { id } });
   revalidatePath("/business-portal/listings");
+}
+
+export type BulkLinkBranchesResult = { error: string } | { success: true; linkedCount: number };
+
+// Called directly from MyBusinessListingsGrid (a plain async function, not
+// a <form action>, since the set of selected listing ids is dynamic
+// client-side state) — a partner ticking several of their own locations at
+// once on the My Business grid and linking them all together, rather than
+// opening each one's editor to add the others one at a time (see
+// PartnerListingForm's own "Linked branches" field for that path).
+// Ownership of every id is re-checked inside linkListingsAsBranches itself,
+// same as every other listing action.
+export async function bulkLinkListingsAsBranches(listingIds: string[]): Promise<BulkLinkBranchesResult> {
+  const partner = await requirePartnerAction();
+  if (listingIds.length < 2) {
+    return { error: "Select at least two listings to link." };
+  }
+  const linkedCount = await linkListingsAsBranches(listingIds, partner.id);
+  revalidatePath("/business-portal/listings");
+  return { success: true, linkedCount };
 }
 
 type ListingSaveResult =
