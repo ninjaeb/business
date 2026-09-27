@@ -23,6 +23,7 @@ import {
   DIRECTORY_SITE_NAME_BY_LOCALE,
   OG_LOCALE_BY_DIRECTORY_LOCALE,
   buildLanguageAlternates,
+  buildPlaceJsonLd,
   pageShareImage,
 } from "@/lib/directory-seo";
 import {
@@ -117,6 +118,13 @@ export async function LocationPageContent({
   // up a listing that DOES have a city, matching the count
   // listLocationsWithCounts advertised for this exact group on the index.
   const locationListings = listings.filter((listing) => listing.city === city && listing.state === state);
+  // Same "first one any listing in the group actually set" reasoning as
+  // countListingsByCityState's own country field — never guessed from
+  // city/state alone, and every listing here already matched on the exact
+  // same city+state pair, so whichever one set a country describes this
+  // whole group correctly.
+  const country = locationRows.find((row) => row.listing.country)?.listing.country ?? null;
+  const placeJsonLd = buildPlaceJsonLd(heading, city, state, country, pageUrl);
   const breadcrumbItems = [
     { name: DIRECTORY_HOME_TITLE_BY_LOCALE[locale], url: `${siteOrigin}${directoryHomePath(locale)}` },
     { name: heading, url: pageUrl },
@@ -144,6 +152,7 @@ export async function LocationPageContent({
         }}
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbJsonLd }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: placeJsonLd }} />
       <div className="w-full px-4 pt-4 sm:px-8">
         <DirectoryBreadcrumbs items={breadcrumbItems} navLabel={t.breadcrumbNavLabel} />
       </div>
