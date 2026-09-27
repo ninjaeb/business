@@ -12,6 +12,7 @@ import { getDirectoryLocale } from "@/lib/directory-locale";
 import {
   DIRECTORY_LOCALES,
   DIRECTORY_STRINGS,
+  directoryAboutPath,
   directoryBenefitsPath,
   directoryCategoriesIndexPath,
   directoryGuidesPath,
@@ -101,6 +102,7 @@ export async function DirectoryChrome({
   const directoryHref = localeProp ? directoryHomePath(localeProp) : "/directory";
   const signupHref = localeProp ? directorySignupPath(localeProp) : "/directory/signup";
   const benefitsHref = localeProp ? directoryBenefitsPath(localeProp) : "/directory/benefits";
+  const aboutHref = localeProp ? directoryAboutPath(localeProp) : "/directory/about";
   // Always built off the resolved `locale` (not localeProp) — unlike the
   // links above, these four pages have no bare-URL fallback to redirect
   // through, so even a page outside the locale-prefixed tree (e.g.
@@ -237,6 +239,9 @@ export async function DirectoryChrome({
             </Link>
             <Link href={benefitsHref} className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
               {t.benefitsNavLabel}
+            </Link>
+            <Link href={aboutHref} className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
+              {t.aboutNavLabel}
             </Link>
             <Link href="/business-portal/login" className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
               {t.navLoginRegister}
