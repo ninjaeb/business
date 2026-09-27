@@ -38,6 +38,7 @@ import {
   parseServicesJson,
   parseUpdatesJson,
   parseVideosJson,
+  recordListingReferralView,
   servicesFromJson,
   slugify,
   translationsFromJson,
@@ -94,6 +95,17 @@ export async function setDirectoryLocale(locale: string): Promise<void> {
     maxAge: 60 * 60 * 24 * 365,
     sameSite: "lax",
   });
+}
+
+// Called directly from ReferralViewBeacon's mount effect (wrapped in
+// startTransition), with whatever `via` value it read off the URL —
+// unauthenticated, client-submitted input, so this is where "is that
+// really a signed-in partner's own id" gets checked before it's allowed to
+// bump anything, same trust boundary submitDirectoryLead applies to `via`
+// on the lead-creation path below.
+export async function recordReferralView(listingId: string, referrerId: string): Promise<void> {
+  const referrer = await db.user.findUnique({ where: { id: referrerId }, select: { role: true } });
+  if (referrer?.role === "PARTNER") await recordListingReferralView(listingId, referrerId);
 }
 
 const directoryLeadSchema = z.object({
@@ -160,6 +172,33 @@ export async function submitDirectoryLead(
   const formLocale = formData.get("locale");
   const locale = isDirectoryLocale(formLocale) ? formLocale : cookieStore.get(DIRECTORY_LOCALE_COOKIE)?.value;
 
+  // Set by the Recommend button's own link (see recommendUrl in
+  // src/app/[locale]/[slug]/layout.tsx: ?r=<referral code>), carried
+  // through as a hidden field (see directory-lead-form.tsx). Checked
+  // against this exact listing's own referralCode, not just "some r
+  // value was present" — unauthenticated visitor input, so a stray or
+  // copied-from-elsewhere `r` naming a different listing doesn't count.
+  // A listing with no referralCode yet (its public page was never
+  // rendered before this lead) can't have a legitimate `r` to match
+  // either way — formData.get("r") is never actually null here (see
+  // directory-lead-form.tsx's own `?? ""` fallback), so this simply
+  // reads false rather than a stray true.
+  const viaReferral = listing.referralCode !== null && formData.get("r") === listing.referralCode;
+
+  // Only looked up when this really is a referred lead — referrerId is
+  // always a strict subset of viaReferral (see its own schema comment), so
+  // the two can never disagree about which leads count as "referred."
+  // `via` is the same kind of unauthenticated input `r` is, so it's
+  // trusted no further than "this names a real PARTNER account."
+  let referrerId: string | null = null;
+  if (viaReferral) {
+    const via = formData.get("via");
+    if (typeof via === "string" && via) {
+      const referrer = await db.user.findUnique({ where: { id: via }, select: { role: true } });
+      if (referrer?.role === "PARTNER") referrerId = via;
+    }
+  }
+
   const lead = await db.directoryLead.create({
     data: {
       listingId: listing.id,
@@ -169,18 +208,8 @@ export async function submitDirectoryLead(
       company: parsed.data.company || null,
       message: parsed.data.message,
       locale: isDirectoryLocale(locale) ? locale : DEFAULT_DIRECTORY_LOCALE,
-      // Set by the Recommend button's own link (see recommendUrl in
-      // src/app/[locale]/[slug]/page.tsx: ?r=<referral code>), carried
-      // through as a hidden field (see directory-lead-form.tsx). Checked
-      // against this exact listing's own referralCode, not just "some r
-      // value was present" — unauthenticated visitor input, so a stray or
-      // copied-from-elsewhere `r` naming a different listing doesn't count.
-      // A listing with no referralCode yet (its public page was never
-      // rendered before this lead) can't have a legitimate `r` to match
-      // either way — formData.get("r") is never actually null here (see
-      // directory-lead-form.tsx's own `?? ""` fallback), so this simply
-      // reads false rather than a stray true.
-      viaReferral: listing.referralCode !== null && formData.get("r") === listing.referralCode,
+      viaReferral,
+      referrerId,
     },
   });
 
@@ -245,6 +274,7 @@ export type ListingFormValues = {
   translations: ListingTranslations;
   seoTitle: string;
   seoDescription: string;
+  shareWonValueWithReferrers: boolean;
 };
 
 // Which field an error belongs to, so the UI can show it right under that
@@ -311,6 +341,7 @@ function extractListingFormValues(formData: FormData): ListingFormValues {
     translations: extractTranslations(formData),
     seoTitle: stringField(formData, "seoTitle"),
     seoDescription: stringField(formData, "seoDescription"),
+    shareWonValueWithReferrers: formData.get("shareWonValueWithReferrers") === "on",
   };
 }
 
@@ -1104,6 +1135,7 @@ async function saveListingFields(
         translations: extractTranslations(formData),
         seoTitle: parsed.data.seoTitle || null,
         seoDescription: parsed.data.seoDescription || null,
+        shareWonValueWithReferrers: formData.get("shareWonValueWithReferrers") === "on",
         ...logo,
         ...(resetToDraft ? { status: "DRAFT" as const, reviewNote: null } : {}),
         ...(autoSlug ? { slug: autoSlug } : {}),

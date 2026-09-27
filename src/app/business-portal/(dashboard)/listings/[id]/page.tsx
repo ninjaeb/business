@@ -113,6 +113,7 @@ export default async function PartnerListingEditorPage({ params }: { params: Pro
               translations: translationsFromJson(listing.translations),
               seoTitle: listing.seoTitle ?? "",
               seoDescription: listing.seoDescription ?? "",
+              shareWonValueWithReferrers: listing.shareWonValueWithReferrers,
             }}
           />
         </CardBody>

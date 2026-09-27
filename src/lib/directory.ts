@@ -1293,6 +1293,24 @@ export async function incrementListingViewCount(id: string, locale: DirectoryLoc
     .catch(() => {});
 }
 
+// Bumped once per real page load that arrived through a specific signed-in
+// partner's own copy of a listing's Recommend link (see recommendUrl's
+// `via=<User.id>` tag in src/app/[locale]/[slug]/layout.tsx, and
+// ReferralViewBeacon, the only caller — via the recordReferralView server
+// action, which is what actually validates referrerId names a real
+// PARTNER). One row per (listing, referrer) pair; same swallow-its-own-
+// errors reasoning as incrementListingViewCount above — a missed count
+// here is never worth surfacing an error to a visitor for.
+export async function recordListingReferralView(listingId: string, referrerId: string): Promise<void> {
+  await db.listingReferralView
+    .upsert({
+      where: { listingId_referrerId: { listingId, referrerId } },
+      create: { listingId, referrerId, viewCount: 1 },
+      update: { viewCount: { increment: 1 } },
+    })
+    .catch(() => {});
+}
+
 // Reads whichever of viewCountEn/Zh/Ms matches — for the business-portal
 // listing cards' per-language breakdown, so that UI never has to know the
 // column names itself. Views from before this breakdown existed are only
@@ -1379,6 +1397,86 @@ export async function getDirectoryLeadStats(listingId: string): Promise<Director
 // has one single listing to point getDirectoryLeadStats at.
 export async function getDirectoryLeadStatsForPartner(partnerId: string): Promise<DirectoryLeadStats> {
   return computeDirectoryLeadStats({ listing: { partnerId } });
+}
+
+export type ReferredListingActivity = {
+  listingId: string;
+  companyName: string;
+  slug: string;
+  referralCode: string | null;
+  isPublished: boolean;
+  viewCount: number;
+  leadCount: number;
+  // null means the listing's own owner hasn't opted in to share it (see
+  // PartnerListing.shareWonValueWithReferrers) — never 0 for that reason;
+  // 0 here means "opted in, but nothing WON yet."
+  wonValue: number | null;
+};
+
+const REFERRAL_ACTIVITY_LISTING_SELECT = {
+  id: true,
+  companyName: true,
+  slug: true,
+  referralCode: true,
+  publishedSnapshot: true,
+  shareWonValueWithReferrers: true,
+} as const;
+
+// Every listing a specific partner has personally referred — i.e. has at
+// least one ListingReferralView or DirectoryLead attributed to them (see
+// both models' own referrerId/DirectoryLead.referrerId) — for that
+// partner's own Dashboard (see getReferralActivityForPartner's caller).
+// Deliberately keyed off referrerId, not partnerId: this is about referral
+// activity this account generated for (possibly someone else's) listing,
+// the mirror image of getDirectoryLeadStatsForPartner's "leads on my own
+// listing(s)."
+export async function getReferralActivityForPartner(referrerId: string): Promise<ReferredListingActivity[]> {
+  const [viewRows, leadRows] = await Promise.all([
+    db.listingReferralView.findMany({
+      where: { referrerId },
+      select: { viewCount: true, listing: { select: REFERRAL_ACTIVITY_LISTING_SELECT } },
+    }),
+    db.directoryLead.groupBy({
+      by: ["listingId", "status"],
+      where: { referrerId },
+      _count: { _all: true },
+      _sum: { value: true },
+    }),
+  ]);
+
+  function toEntry(listing: { id: string; companyName: string; slug: string; referralCode: string | null; publishedSnapshot: unknown; shareWonValueWithReferrers: boolean }, viewCount: number): ReferredListingActivity {
+    return {
+      listingId: listing.id,
+      companyName: listing.companyName,
+      slug: listing.slug,
+      referralCode: listing.referralCode,
+      isPublished: listing.publishedSnapshot !== null,
+      viewCount,
+      leadCount: 0,
+      wonValue: listing.shareWonValueWithReferrers ? 0 : null,
+    };
+  }
+
+  const activity = new Map<string, ReferredListingActivity>();
+  for (const row of viewRows) activity.set(row.listing.id, toEntry(row.listing, row.viewCount));
+
+  // A lead can exist with no matching view row (e.g. an ad-blocked or
+  // JS-disabled visit never reached ReferralViewBeacon) — fetch those
+  // listings separately so this list is really "at least one view or lead."
+  const missingListingIds = [...new Set(leadRows.map((row) => row.listingId))].filter((id) => !activity.has(id));
+  const missingListings = missingListingIds.length
+    ? await db.partnerListing.findMany({ where: { id: { in: missingListingIds } }, select: REFERRAL_ACTIVITY_LISTING_SELECT })
+    : [];
+  for (const listing of missingListings) activity.set(listing.id, toEntry(listing, 0));
+
+  for (const row of leadRows) {
+    const entry = activity.get(row.listingId);
+    if (!entry) continue;
+    entry.leadCount += row._count._all;
+    if (row.status === "WON" && entry.wonValue !== null) entry.wonValue += Number(row._sum.value ?? 0);
+  }
+
+  return [...activity.values()].sort((a, b) => b.leadCount - a.leadCount || b.viewCount - a.viewCount);
 }
 
 export type DirectoryOverviewStats = {

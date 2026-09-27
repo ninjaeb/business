@@ -16,6 +16,7 @@ import {
 import { serializeJsonLd } from "@/lib/directory-seo";
 import { stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
 import { resolveDirectoryLocale } from "@/lib/directory-locale";
+import { getVerifiedPartnerOrNull } from "@/lib/auth/dal";
 import {
   DIRECTORY_STRINGS,
   DIRECTORY_HOME_TITLE_BY_LOCALE,
@@ -45,6 +46,7 @@ import { DirectoryLeadForm } from "@/components/directory/directory-lead-form";
 import { InquiryProvider, InquiryScrollTarget } from "@/components/directory/listing-inquiry";
 import { ShareButton } from "@/components/directory/share-button";
 import { RecommendBar } from "@/components/directory/recommend-bar";
+import { ReferralViewBeacon } from "@/components/directory/referral-view-beacon";
 import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
 import { ListingSectionNav } from "@/components/directory/listing-section-nav";
 
@@ -180,7 +182,7 @@ export default async function ListingLayout({
   const listing = await getPublishedListingBySlug(slug);
   if (!listing) notFound();
 
-  const [siteOrigin, , referralCode] = await Promise.all([
+  const [siteOrigin, , referralCode, viewer] = await Promise.all([
     getSiteOrigin(),
     // Runs once per visit to this listing, not once per page: Next.js keeps
     // a layout mounted across client-side navigation between its own child
@@ -191,6 +193,10 @@ export default async function ListingLayout({
     // had, preserved now that a visit might start on any one of its pages.
     incrementListingViewCount(listing.id, resolved),
     getOrCreateReferralCode(listing),
+    // Who's viewing, if anyone signed in as a partner — purely to decide
+    // whether recommendUrl below gets a personalized `via` tag; never
+    // gates the Recommend button itself (see its own comment).
+    getVerifiedPartnerOrNull(),
   ]);
   const t = DIRECTORY_STRINGS[resolved];
   const display = resolveListingDisplay(listing, resolved);
@@ -210,7 +216,18 @@ export default async function ListingLayout({
   // business portal's "Referred" stat counts. Offered to every visitor, not
   // gated to a signed-in partner — anyone recommending a business they like
   // generates the same tag, not just its own owner.
-  const recommendUrl = `${pageUrl}?r=${referralCode}`;
+  //
+  // A signed-in partner's own copy of this link additionally carries
+  // `via=<their User.id>` — same non-secret, exact-match trust level as
+  // `r` itself (see submitDirectoryLead and recordReferralView), not a
+  // cryptographic proof of anything. It's what lets ReferralViewBeacon and
+  // a lead's own DirectoryLead.referrerId attribute this specific visit or
+  // lead back to whoever shared it, surfaced on that partner's own
+  // Dashboard (see getReferralActivityForPartner) — no special-casing
+  // "is this their own listing," recommending your own business is a
+  // harmless case of this same path. Anonymous/admin visitors get the
+  // plain, untagged link exactly as before.
+  const recommendUrl = viewer ? `${pageUrl}?r=${referralCode}&via=${viewer.id}` : `${pageUrl}?r=${referralCode}`;
   const recommendMessage = formatRecommendMessage(t.recommendMessage, listing.companyName, recommendUrl);
 
   // Home > (first category, if any) > this business. Only the first
@@ -280,6 +297,11 @@ export default async function ListingLayout({
         }}
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbJsonLd }} />
+      {/* Renders nothing — mounted here (layout level, not a child page)
+          for the exact same "once per visit, not once per child page"
+          lifetime incrementListingViewCount above already relies on. See
+          its own comment for why a `via` tag can't be read here directly. */}
+      <ReferralViewBeacon listingId={listing.id} />
       {/* Hidden below sm — the JSON-LD above still carries the same trail
           for search results; a phone screen just doesn't have the spare
           width for it above the header, and the tab strip further down
