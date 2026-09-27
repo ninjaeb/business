@@ -5,6 +5,7 @@ import { db } from "@/lib/db";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import {
   faqsFromJson,
+  getListingBranchIds,
   getOwnedListing,
   operatingHoursFromJson,
   servicesFromJson,
@@ -28,13 +29,19 @@ export default async function PartnerListingEditorPage({ params }: { params: Pro
   const listing = await getOwnedListing(id, user.id);
   if (!listing) notFound();
 
-  const [siteOrigin, categories, selectedCategories, photoRows] = await Promise.all([
+  const [siteOrigin, categories, selectedCategories, photoRows, otherListings, branchIds] = await Promise.all([
     getSiteOrigin(),
     db.businessCategory.findMany({ orderBy: { name: "asc" } }),
     db.partnerListingCategory.findMany({ where: { listingId: listing.id }, select: { categoryId: true } }),
     listing.photoIds.length
       ? db.directoryListingImage.findMany({ where: { id: { in: listing.photoIds } }, select: { id: true, caption: true, gallery: true } })
       : Promise.resolve([]),
+    db.partnerListing.findMany({
+      where: { partnerId: user.id, NOT: { id: listing.id } },
+      select: { id: true, companyName: true, city: true, state: true },
+      orderBy: { companyName: "asc" },
+    }),
+    getListingBranchIds(listing.id),
   ]);
   const selectedCategoryIds = selectedCategories.map((entry) => entry.categoryId);
   // photoIds is the display order of record — findMany's result isn't
@@ -93,6 +100,7 @@ export default async function PartnerListingEditorPage({ params }: { params: Pro
             aiAvailable={isAiConfigured()}
             placesAvailable={isGooglePlacesConfigured()}
             categories={categories}
+            otherListings={otherListings}
             slug={listing.slug}
             siteOrigin={siteOrigin}
             values={{
@@ -113,6 +121,7 @@ export default async function PartnerListingEditorPage({ params }: { params: Pro
               faqs: faqsFromJson(listing.faqs),
               updates: updatesFromJson(listing.updates),
               categoryIds: selectedCategoryIds,
+              branchIds,
               translations: translationsFromJson(listing.translations),
               seoTitle: listing.seoTitle ?? "",
               seoDescription: listing.seoDescription ?? "",

@@ -6,6 +6,7 @@ import {
   directoryImagePath,
   formatOpeningHoursSchema,
   getOrCreateReferralCode,
+  getPublishedBranchListings,
   getPublishedListingBySlug,
   incrementListingViewCount,
   listingLogoPath,
@@ -184,7 +185,7 @@ export default async function ListingLayout({
   const listing = await getPublishedListingBySlug(slug);
   if (!listing) notFound();
 
-  const [siteOrigin, , referralCode, viewer] = await Promise.all([
+  const [siteOrigin, , referralCode, viewer, branches] = await Promise.all([
     getSiteOrigin(),
     // Runs once per visit to this listing, not once per page: Next.js keeps
     // a layout mounted across client-side navigation between its own child
@@ -199,6 +200,12 @@ export default async function ListingLayout({
     // whether recommendUrl below gets a personalized `via` tag; never
     // gates the Recommend button itself (see its own comment).
     getVerifiedPartnerOrNull(),
+    // Only to decide whether the Visit us tab below should show at all for
+    // a listing with no address/hours of its own but at least one live
+    // branch — the Visit page itself re-fetches this same list (same
+    // "every section page re-queries the same request-scoped listing"
+    // pattern getPublishedListingBySlug's own comment describes).
+    getPublishedBranchListings(listing.id),
   ]);
   const t = DIRECTORY_STRINGS[resolved];
   const display = resolveListingDisplay(listing, resolved);
@@ -266,7 +273,10 @@ export default async function ListingLayout({
     // Right after About — "where/when to visit" is core identity info a
     // visitor wants placed next to "what this business is," not buried
     // behind the content tabs.
-    (listing.address || listing.operatingHours) && { href: directoryListingVisitPath(resolved, slug), label: t.visitHeading },
+    (listing.address || listing.operatingHours || branches.length > 0) && {
+      href: directoryListingVisitPath(resolved, slug),
+      label: t.visitHeading,
+    },
     display.services.length > 0 && { href: directoryListingServicesPath(resolved, slug), label: t.servicesHeading },
     // Right after Products & Services (not second-to-last) — a shopper
     // deciding what to buy is exactly who wants "any questions about
@@ -459,8 +469,8 @@ export default async function ListingLayout({
       </div>
 
       <InquiryProvider>
-        <div className="grid gap-6 lg:grid-cols-3">
-          <div className="space-y-6 lg:col-span-2">
+        <div className="grid gap-6 md:grid-cols-3">
+          <div className="space-y-6 md:col-span-2">
             {/* Phone-width fallback for the sm:+ version tucked into the name
                 column in the header above — same content and order, just
                 moved down here (ahead of whichever section this page
@@ -538,7 +548,7 @@ export default async function ListingLayout({
             {children}
           </div>
 
-          <InquiryScrollTarget id="contact" className="scroll-mt-32 lg:sticky lg:top-32 lg:self-start">
+          <InquiryScrollTarget id="contact" className="scroll-mt-32 md:sticky md:top-32 md:self-start">
             <Card>
               <CardHeader>
                 <CardTitle className="text-base">{t.contactHeading}</CardTitle>
@@ -546,7 +556,7 @@ export default async function ListingLayout({
               <CardBody>
                 <p className="mb-4 text-base text-slate-500 dark:text-slate-400">{t.contactSubheading}</p>
                 {(listing.phone || listing.whatsAppNumber) && (
-                  <div className="mb-4 flex gap-2">
+                  <div className="mb-4 flex flex-col gap-2 lg:flex-row">
                     {listing.phone && (
                       <a href={`tel:${listing.phone}`} className={buttonClasses("secondary", "md", "flex-1 justify-center gap-2")}>
                         <Phone className="h-4 w-4" />
@@ -576,8 +586,8 @@ export default async function ListingLayout({
         </div>
       </InquiryProvider>
 
-      {/* Shown at every width, not just mobile: on lg+ the Get in touch card
-          is a sticky right-hand column (see its own lg:sticky lg:top-32
+      {/* Shown at every width, not just mobile: on md+ the Get in touch card
+          is a sticky right-hand column (see its own md:sticky md:top-32
           above) — sticky only through the grid's own height, which runs the
           whole way down the left column's real content, but still ends
           before this bar's own row. This bar stays truly fixed the whole way

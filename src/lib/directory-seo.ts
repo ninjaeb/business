@@ -227,6 +227,16 @@ export function buildDirectoryWebSiteJsonLd(siteOrigin: string, locale: Director
   });
 }
 
+// The publisher's own other official profiles — sameAs is what tells a
+// search engine's Knowledge Graph (and an AI answer engine resolving who
+// "Gotka" is) that these are the same entity as the Organization node
+// below, not a coincidentally-named lookalike. Each one is a page Gotka
+// itself controls, not a mention of the brand elsewhere.
+const DIRECTORY_SAME_AS = [
+  "https://www.facebook.com/p/Gotka-Technologies-61564390635502/",
+  "https://www.linkedin.com/company/gotka-technologies/",
+];
+
 // Who publishes the directory — the entity an AI answer engine attributes
 // the whole thing to. gotka.com (the marketing site) is the organization's
 // own URL; this app's icon stands in for a logo.
@@ -239,6 +249,31 @@ export function buildDirectoryOrganizationJsonLd(siteOrigin: string): string {
     alternateName: DIRECTORY_PUBLISHER.alternateName,
     url: DIRECTORY_PUBLISHER.url,
     logo: `${siteOrigin}/icon-512.png`,
+    sameAs: DIRECTORY_SAME_AS,
+  });
+}
+
+// A Place entity for one city+state grouping on the location page (see
+// LocationPageContent) — schema.org's CollectionPage (what that page's own
+// buildDirectoryCollectionJsonLd already emits, shared with category/
+// industry/home) has no "this page is about a place" slot of its own, so
+// this rides alongside it as its own top-level entity instead, same
+// "stands alone" shape as every other JSON-LD block in this file.
+// addressCountry is only ever included when at least one listing in the
+// group actually carries a country (see countListingsByCityState) — never
+// guessed from city/state alone.
+export function buildPlaceJsonLd(name: string, city: string | null, state: string, country: string | null, url: string): string {
+  return serializeJsonLd({
+    "@context": "https://schema.org",
+    "@type": "Place",
+    name,
+    url,
+    address: {
+      "@type": "PostalAddress",
+      ...(city ? { addressLocality: city } : {}),
+      addressRegion: state,
+      ...(country ? { addressCountry: country } : {}),
+    },
   });
 }
 

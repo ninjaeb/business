@@ -33,6 +33,7 @@ import {
   getOwnedListing,
   isValidSlugFormat,
   isValidTimeString,
+  linkListingsAsBranches,
   normalizeWebsiteUrl,
   parseFaqsJson,
   parseServicesJson,
@@ -40,6 +41,7 @@ import {
   parseVideosJson,
   recordListingReferralView,
   servicesFromJson,
+  setListingBranchIds,
   slugify,
   translationsFromJson,
   type FaqEntry,
@@ -287,6 +289,7 @@ export type ListingFormValues = {
   updates: ListingUpdateEntry[];
   videos: VideoEntry[];
   categoryIds: string[];
+  branchIds: string[];
   translations: ListingTranslations;
   seoTitle: string;
   seoDescription: string;
@@ -336,8 +339,9 @@ function extractTranslations(formData: FormData): ListingTranslations {
 // services isn't part of listingSchema below — like operatingHours, it's
 // structured data (see ServicesEditor's hidden JSON input), sanitized by
 // parseServicesJson itself rather than a plain string Zod rule. categoryIds
-// is a checkbox group (see PartnerListingForm) — reconciled against real
-// BusinessCategory rows in saveListingFields, not validated here.
+// and branchIds are both checkbox-style groups (see PartnerListingForm) —
+// reconciled against real rows (BusinessCategory, the partner's own other
+// PartnerListing rows) in saveListingFields, not validated here.
 function extractListingFormValues(formData: FormData): ListingFormValues {
   return {
     companyName: stringField(formData, "companyName"),
@@ -357,6 +361,7 @@ function extractListingFormValues(formData: FormData): ListingFormValues {
     updates: parseUpdatesJson(stringField(formData, "updates")),
     videos: parseVideosJson(stringField(formData, "videos")),
     categoryIds: formData.getAll("categoryIds").filter((value): value is string => typeof value === "string"),
+    branchIds: formData.getAll("branchIds").filter((value): value is string => typeof value === "string"),
     translations: extractTranslations(formData),
     seoTitle: stringField(formData, "seoTitle"),
     seoDescription: stringField(formData, "seoDescription"),
@@ -1066,6 +1071,26 @@ export async function deleteListingAction(id: string, formData: FormData): Promi
   revalidatePath("/business-portal/listings");
 }
 
+export type BulkLinkBranchesResult = { error: string } | { success: true; linkedCount: number };
+
+// Called directly from MyBusinessListingsGrid (a plain async function, not
+// a <form action>, since the set of selected listing ids is dynamic
+// client-side state) — a partner ticking several of their own locations at
+// once on the My Business grid and linking them all together, rather than
+// opening each one's editor to add the others one at a time (see
+// PartnerListingForm's own "Linked branches" field for that path).
+// Ownership of every id is re-checked inside linkListingsAsBranches itself,
+// same as every other listing action.
+export async function bulkLinkListingsAsBranches(listingIds: string[]): Promise<BulkLinkBranchesResult> {
+  const partner = await requirePartnerAction();
+  if (listingIds.length < 2) {
+    return { error: "Select at least two listings to link." };
+  }
+  const linkedCount = await linkListingsAsBranches(listingIds, partner.id);
+  revalidatePath("/business-portal/listings");
+  return { success: true, linkedCount };
+}
+
 type ListingSaveResult =
   | { ok: false; error: string; field?: ListingFormField; values: ListingFormValues }
   | { ok: true; listing: Awaited<ReturnType<typeof db.partnerListing.update>> };
@@ -1180,6 +1205,13 @@ async function saveListingFields(
     db.partnerListingCategory.deleteMany({ where: { listingId: listing.id } }),
     db.partnerListingCategory.createMany({ data: categoryIds.map((categoryId) => ({ listingId: listing.id, categoryId })) }),
   ]);
+
+  // Its own separate write, not part of the transaction above — branch
+  // links are a relation between two listings' rows, not a field on this
+  // one, and setListingBranchIds already reconciles them (diff + write) in
+  // its own transaction.
+  await setListingBranchIds(listing.id, values.branchIds, partner.id);
+
   return { ok: true, listing: updated };
 }
 

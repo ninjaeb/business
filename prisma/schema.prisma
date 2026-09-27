@@ -356,9 +356,32 @@ model PartnerListing {
   images        DirectoryListingImage[]
   categories    PartnerListingCategory[]
   referralViews ListingReferralView[]
+  branchLinksA  PartnerListingBranchLink[] @relation("BranchLinkA")
+  branchLinksB  PartnerListingBranchLink[] @relation("BranchLinkB")
 
   @@index([status])
   @@index([partnerId])
+}
+
+// One row per linked pair of branches (same partner's other locations of
+// the same business) — undirected, so listingAId/listingBId are always
+// stored with the lexicographically smaller id first (see
+// branchLinkPairKey in src/lib/directory.ts) rather than as a hub-and-spoke
+// tree or a duplicated pair of rows in each direction. "Branches of X" is
+// then just every row where X appears on either side, read from whichever
+// listing's editor a partner opens — linking is symmetric by construction,
+// not something each side has to set up separately.
+model PartnerListingBranchLink {
+  id         String   @id @default(cuid())
+  listingAId String
+  listingBId String
+  createdAt  DateTime @default(now())
+
+  listingA PartnerListing @relation("BranchLinkA", fields: [listingAId], references: [id], onDelete: Cascade)
+  listingB PartnerListing @relation("BranchLinkB", fields: [listingBId], references: [id], onDelete: Cascade)
+
+  @@unique([listingAId, listingBId])
+  @@index([listingBId])
 }
 
 model BusinessCategory {

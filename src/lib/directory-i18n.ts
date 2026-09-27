@@ -339,6 +339,9 @@ export type DirectoryStrings = {
   promotionsHeading: string;
   faqHeading: string;
   visitHeading: string;
+  // Other locations of the same business, linked from the partner side —
+  // only shown on the Visit us page when at least one exists.
+  branchesHeading: string;
   hoursHeading: string;
   hoursOpenLabel: string;
   hoursOpenTodayLabel: string;
@@ -540,6 +543,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     promotionsHeading: "Promotions",
     faqHeading: "FAQ",
     visitHeading: "Visit us",
+    branchesHeading: "Other locations",
     hoursHeading: "Hours",
     hoursOpenLabel: "Open",
     hoursOpenTodayLabel: "Open today",
@@ -567,7 +571,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     contactSubheading: "Send a message directly to this business — they'll reply to the email address and contact number you provide.",
     contactCallCta: "Call",
     contactWhatsAppCta: "WhatsApp",
-    contactWhatsAppMessage: "Hi, I'm interested in {business}. Could you share more details?",
+    contactWhatsAppMessage: "Sending from Gotka Business Directory. Hi, I'm interested in {business}. Could you share more details?",
     formNameLabel: "Name",
     formNamePlaceholder: "Jane Smith",
     formEmailLabel: "Email",
@@ -719,6 +723,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     promotionsHeading: "促销",
     faqHeading: "常见问题",
     visitHeading: "联系地址",
+    branchesHeading: "其他分店",
     hoursHeading: "营业时间",
     hoursOpenLabel: "营业",
     hoursOpenTodayLabel: "今日营业",
@@ -746,7 +751,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     contactSubheading: "直接给这家企业发送信息——他们会回复您提供的电子邮件地址和联系电话。",
     contactCallCta: "致电",
     contactWhatsAppCta: "WhatsApp",
-    contactWhatsAppMessage: "您好，我对 {business} 感兴趣，可以提供更多详情吗？",
+    contactWhatsAppMessage: "发自 Gotka 商业目录。您好，我对 {business} 感兴趣，可以提供更多详情吗？",
     formNameLabel: "姓名",
     formNamePlaceholder: "Jane Smith",
     formEmailLabel: "电子邮件",
@@ -897,6 +902,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     promotionsHeading: "Promosi",
     faqHeading: "Soalan lazim",
     visitHeading: "Lawati kami",
+    branchesHeading: "Lokasi lain",
     hoursHeading: "Waktu Operasi",
     hoursOpenLabel: "Buka",
     hoursOpenTodayLabel: "Buka hari ini",
@@ -924,7 +930,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     contactSubheading: "Hantar mesej terus kepada perniagaan ini — mereka akan membalas ke alamat e-mel dan nombor telefon yang anda berikan.",
     contactCallCta: "Hubungi",
     contactWhatsAppCta: "WhatsApp",
-    contactWhatsAppMessage: "Hai, saya berminat dengan {business}. Bolehkah anda kongsikan maklumat lanjut?",
+    contactWhatsAppMessage: "Dihantar dari Direktori Perniagaan Gotka. Hai, saya berminat dengan {business}. Bolehkah anda kongsikan maklumat lanjut?",
     formNameLabel: "Nama",
     formNamePlaceholder: "Jane Smith",
     formEmailLabel: "E-mel",
