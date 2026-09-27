@@ -339,6 +339,9 @@ export type DirectoryStrings = {
   promotionsHeading: string;
   faqHeading: string;
   visitHeading: string;
+  // Other locations of the same business, linked from the partner side —
+  // only shown on the Visit us page when at least one exists.
+  branchesHeading: string;
   hoursHeading: string;
   hoursOpenLabel: string;
   hoursOpenTodayLabel: string;
@@ -541,6 +544,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     promotionsHeading: "Promotions",
     faqHeading: "FAQ",
     visitHeading: "Visit us",
+    branchesHeading: "Other locations",
     hoursHeading: "Hours",
     hoursOpenLabel: "Open",
     hoursOpenTodayLabel: "Open today",
@@ -721,6 +725,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     promotionsHeading: "促销",
     faqHeading: "常见问题",
     visitHeading: "联系地址",
+    branchesHeading: "其他分店",
     hoursHeading: "营业时间",
     hoursOpenLabel: "营业",
     hoursOpenTodayLabel: "今日营业",
@@ -900,6 +905,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     promotionsHeading: "Promosi",
     faqHeading: "Soalan lazim",
     visitHeading: "Lawati kami",
+    branchesHeading: "Lokasi lain",
     hoursHeading: "Waktu Operasi",
     hoursOpenLabel: "Buka",
     hoursOpenTodayLabel: "Buka hari ini",

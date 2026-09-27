@@ -98,6 +98,7 @@ export function PartnerListingForm({
   aiAvailable,
   placesAvailable,
   categories,
+  otherListings,
   slug,
   siteOrigin,
 }: {
@@ -110,6 +111,7 @@ export function PartnerListingForm({
   aiAvailable: boolean;
   placesAvailable: boolean;
   categories: { id: string; name: string }[];
+  otherListings: { id: string; companyName: string; city: string | null; state: string | null }[];
   slug: string;
   siteOrigin: string;
 }) {
@@ -188,6 +190,7 @@ export function PartnerListingForm({
   const [autoSlugSource, setAutoSlugSource] = useState<string | undefined>(undefined);
   const [tagline, setTagline] = useState(current.tagline);
   const [website, setWebsite] = useState(current.website);
+  const [googleBusinessProfileUrl, setGoogleBusinessProfileUrl] = useState(current.googleBusinessProfileUrl);
   const [phone, setPhone] = useState(current.phone);
   const [whatsAppNumber, setWhatsAppNumber] = useState(current.whatsAppNumber);
   const [videos, setVideos] = useState<VideoEntry[]>(current.videos);
@@ -197,6 +200,7 @@ export function PartnerListingForm({
   const [addrState, setAddrState] = useState(current.state);
   const [country, setCountry] = useState(current.country);
   const [categoryIds, setCategoryIds] = useState<string[]>(current.categoryIds);
+  const [branchIds, setBranchIds] = useState<string[]>(current.branchIds);
   const [description, setDescription] = useState(current.description);
   const [services, setServices] = useState<ServiceEntry[]>(current.services);
   const [faqs, setFaqs] = useState<FaqEntry[]>(current.faqs);
@@ -860,6 +864,32 @@ export function PartnerListingForm({
         </FieldGroup>
       </div>
 
+      <FieldGroup label="Linked branches" htmlFor="branchIds">
+        {otherListings.length === 0 ? (
+          <p className="text-sm text-slate-400">
+            No other listings on your account yet — add another location&apos;s listing first, then link it here.
+          </p>
+        ) : (
+          <MultiCombobox
+            id="branchIds"
+            name="branchIds"
+            options={otherListings.map((listing) => ({
+              value: listing.id,
+              label: [listing.companyName, [listing.city, listing.state].filter(Boolean).join(", ")].filter(Boolean).join(" — "),
+            }))}
+            value={branchIds}
+            onValueChange={setBranchIds}
+            placeholder="Search your other listings…"
+            emptyMessage="No matching listings"
+            size="lg"
+          />
+        )}
+        <p className="mt-1 text-xs text-slate-400">
+          Other locations of this same business — shown as a linked list on this listing&apos;s Visit us page once
+          they&apos;re published, and vice versa. Linking works both ways, so you only need to set it up on one side.
+        </p>
+      </FieldGroup>
+
       <div className="grid gap-4 sm:grid-cols-2">
         <FieldGroup label="Contact number" htmlFor="phone">
           <Input
@@ -1075,6 +1105,20 @@ export function PartnerListingForm({
           once its end date passes.
         </p>
 
+        <FieldGroup label="Google Business Profile link" htmlFor="googleBusinessProfileUrl">
+          <Input
+            id="googleBusinessProfileUrl"
+            name="googleBusinessProfileUrl"
+            value={googleBusinessProfileUrl}
+            onChange={(event) => setGoogleBusinessProfileUrl(event.target.value)}
+            placeholder="https://g.page/r/..."
+          />
+          <p className="mt-1 text-xs text-slate-400">
+            Optional — open your Google Business Profile, tap Share, and paste the link here. Each post below then
+            gets a &quot;Post to Google&quot; button that copies it and opens your profile to paste it in.
+          </p>
+        </FieldGroup>
+
         {languageSwitcher}
         <p className="-mt-1 text-xs text-slate-400">
           Posts are per-language — switch tabs to edit each, or use Translate with AI to fill in Chinese and Malay
@@ -1083,7 +1127,14 @@ export function PartnerListingForm({
         </p>
 
         <div hidden={activeTab !== "en"}>
-          <UpdatesEditor name="updates" value={updates} onChange={setUpdates} listingId={listingId} aiAvailable={aiAvailable} />
+          <UpdatesEditor
+            name="updates"
+            value={updates}
+            onChange={setUpdates}
+            listingId={listingId}
+            aiAvailable={aiAvailable}
+            googleBusinessProfileUrl={googleBusinessProfileUrl}
+          />
         </div>
         <div hidden={activeTab !== "zh"}>
           <UpdatesEditor
@@ -1092,6 +1143,7 @@ export function PartnerListingForm({
             onChange={(value) => updateTranslatedUpdates("zh", value)}
             listingId={listingId}
             aiAvailable={aiAvailable}
+            googleBusinessProfileUrl={googleBusinessProfileUrl}
           />
         </div>
         <div hidden={activeTab !== "ms"}>
@@ -1101,6 +1153,7 @@ export function PartnerListingForm({
             onChange={(value) => updateTranslatedUpdates("ms", value)}
             listingId={listingId}
             aiAvailable={aiAvailable}
+            googleBusinessProfileUrl={googleBusinessProfileUrl}
           />
         </div>
       </div>

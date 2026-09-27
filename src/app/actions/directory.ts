@@ -40,6 +40,7 @@ import {
   parseVideosJson,
   recordListingReferralView,
   servicesFromJson,
+  setListingBranchIds,
   slugify,
   translationsFromJson,
   type FaqEntry,
@@ -234,6 +235,7 @@ const listingSchema = z.object({
     .optional()
     .refine((value) => !value || INDUSTRIES.includes(value as Industry), { message: "Invalid industry" }),
   website: z.string().trim().optional(),
+  googleBusinessProfileUrl: z.string().trim().optional(),
   phone: z
     .string()
     .trim()
@@ -275,6 +277,7 @@ export type ListingFormValues = {
   services: ServiceEntry[];
   industry: string;
   website: string;
+  googleBusinessProfileUrl: string;
   phone: string;
   whatsAppNumber: string;
   address: string;
@@ -285,6 +288,7 @@ export type ListingFormValues = {
   updates: ListingUpdateEntry[];
   videos: VideoEntry[];
   categoryIds: string[];
+  branchIds: string[];
   translations: ListingTranslations;
   seoTitle: string;
   seoDescription: string;
@@ -334,8 +338,9 @@ function extractTranslations(formData: FormData): ListingTranslations {
 // services isn't part of listingSchema below — like operatingHours, it's
 // structured data (see ServicesEditor's hidden JSON input), sanitized by
 // parseServicesJson itself rather than a plain string Zod rule. categoryIds
-// is a checkbox group (see PartnerListingForm) — reconciled against real
-// BusinessCategory rows in saveListingFields, not validated here.
+// and branchIds are both checkbox-style groups (see PartnerListingForm) —
+// reconciled against real rows (BusinessCategory, the partner's own other
+// PartnerListing rows) in saveListingFields, not validated here.
 function extractListingFormValues(formData: FormData): ListingFormValues {
   return {
     companyName: stringField(formData, "companyName"),
@@ -344,6 +349,7 @@ function extractListingFormValues(formData: FormData): ListingFormValues {
     services: parseServicesJson(stringField(formData, "services")),
     industry: stringField(formData, "industry"),
     website: stringField(formData, "website"),
+    googleBusinessProfileUrl: stringField(formData, "googleBusinessProfileUrl"),
     phone: stringField(formData, "phone"),
     whatsAppNumber: stringField(formData, "whatsAppNumber"),
     address: stringField(formData, "address"),
@@ -354,6 +360,7 @@ function extractListingFormValues(formData: FormData): ListingFormValues {
     updates: parseUpdatesJson(stringField(formData, "updates")),
     videos: parseVideosJson(stringField(formData, "videos")),
     categoryIds: formData.getAll("categoryIds").filter((value): value is string => typeof value === "string"),
+    branchIds: formData.getAll("branchIds").filter((value): value is string => typeof value === "string"),
     translations: extractTranslations(formData),
     seoTitle: stringField(formData, "seoTitle"),
     seoDescription: stringField(formData, "seoDescription"),
@@ -1151,6 +1158,9 @@ async function saveListingFields(
         services: parseServicesJson(stringField(formData, "services")),
         industry: (parsed.data.industry || null) as Industry | null,
         website: parsed.data.website ? normalizeWebsiteUrl(parsed.data.website) : null,
+        googleBusinessProfileUrl: parsed.data.googleBusinessProfileUrl
+          ? normalizeWebsiteUrl(parsed.data.googleBusinessProfileUrl)
+          : null,
         phone: parsed.data.phone ? normalizePhone(parsed.data.phone) : null,
         whatsAppNumber: parsed.data.whatsAppNumber ? normalizePhone(parsed.data.whatsAppNumber) : null,
         address: parsed.data.address || null,
@@ -1174,6 +1184,13 @@ async function saveListingFields(
     db.partnerListingCategory.deleteMany({ where: { listingId: listing.id } }),
     db.partnerListingCategory.createMany({ data: categoryIds.map((categoryId) => ({ listingId: listing.id, categoryId })) }),
   ]);
+
+  // Its own separate write, not part of the transaction above — branch
+  // links are a relation between two listings' rows, not a field on this
+  // one, and setListingBranchIds already reconciles them (diff + write) in
+  // its own transaction.
+  await setListingBranchIds(listing.id, values.branchIds, partner.id);
+
   return { ok: true, listing: updated };
 }
 
