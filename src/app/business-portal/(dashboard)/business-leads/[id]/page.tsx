@@ -1,5 +1,6 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AlertTriangle, ThumbsUp } from "lucide-react";
+import { AlertTriangle, Handshake, ThumbsUp } from "lucide-react";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { db } from "@/lib/db";
 import { DEFAULT_PARTNER_CURRENCY, formatDate, formatDateTime, formatDuration } from "@/lib/format";
@@ -20,6 +21,7 @@ export default async function PartnerDirectoryLeadPage({ params }: { params: Pro
     include: {
       replies: { include: { author: { select: { name: true } } }, orderBy: { createdAt: "asc" } },
       listing: { select: { companyName: true } },
+      convertedDeal: { select: { id: true } },
     },
   });
   if (!lead) notFound();
@@ -53,7 +55,20 @@ export default async function PartnerDirectoryLeadPage({ params }: { params: Pro
             )}
           </>
         }
-        actions={<DirectoryLeadStatusSelect leadId={lead.id} status={lead.status} />}
+        actions={
+          <>
+            {lead.convertedDeal && (
+              <Link
+                href={`/business-portal/deals/${lead.convertedDeal.id}`}
+                className="inline-flex items-center gap-1.5 rounded-md border border-slate-200 px-3 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-50 dark:border-neutral-700 dark:text-slate-300 dark:hover:bg-neutral-800"
+              >
+                <Handshake className="h-3.5 w-3.5" />
+                View deal
+              </Link>
+            )}
+            <DirectoryLeadStatusSelect leadId={lead.id} status={lead.status} />
+          </>
+        }
       />
 
       <div className="grid items-start gap-6 lg:grid-cols-2">

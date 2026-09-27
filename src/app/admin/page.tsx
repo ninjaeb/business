@@ -119,7 +119,7 @@ export default async function AdminDirectoryPage() {
           icon={Handshake}
           accent="sky"
         />
-        <StatCard label="Won value" value={formatCurrencyExact(stats.wonValue, currency)} icon={Banknote} accent="indigo" />
+        <StatCard label="Converted value" value={formatCurrencyExact(stats.convertedValue, currency)} icon={Banknote} accent="indigo" />
       </div>
 
       <Card>

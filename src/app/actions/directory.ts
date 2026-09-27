@@ -52,6 +52,8 @@ import {
   type VideoEntry,
 } from "@/lib/directory";
 import { notifyPartnerOfNewLead, sendDirectoryLeadReply } from "@/lib/directory-notify";
+import { findOrCreatePartnerCompanyByName } from "@/lib/partner-companies";
+import { splitFullName } from "@/lib/format";
 import { fetchVideoOEmbed } from "@/lib/video-oembed";
 import {
   fetchPlacePhoto,
@@ -1304,7 +1306,7 @@ export async function updateDirectoryLeadStatus(leadId: string, formData: FormDa
   }
   const lead = await ownedLeadOrThrow(leadId, partner.id);
 
-  const isClosing = status === "WON" || status === "LOST";
+  const isClosing = status === "CLOSED_CONVERTED";
   // undefined leaves the column untouched (Prisma omits it); only the two
   // real transitions — first closing, and reopening a previously-closed
   // lead — actually need to write a new value.
@@ -1331,9 +1333,9 @@ export async function updateDirectoryLeadStatus(leadId: string, formData: FormDa
 // outside this app rather than through the in-app reply form (which
 // already advances status via replyToDirectoryLead below). Unlike
 // updateDirectoryLeadStatus, this never overrides a status the partner
-// already set further along (Quoted/Won/Lost) — a stray second click on
-// the phone number for an already-quoted lead shouldn't silently bump it
-// backward.
+// already set further along (Closed - Converted to Deal) — a stray second
+// click on the phone number for an already-converted lead shouldn't
+// silently bump it backward.
 export async function markDirectoryLeadContacted(leadId: string): Promise<void> {
   const partner = await requirePartnerAction();
   const lead = await ownedLeadOrThrow(leadId, partner.id);
@@ -1346,6 +1348,76 @@ export async function markDirectoryLeadContacted(leadId: string): Promise<void> 
   revalidatePath("/business-portal");
   revalidatePath("/business-portal/business-leads");
   revalidatePath(`/business-portal/business-leads/${lead.id}`);
+}
+
+// Picking "Qualified Deal" in DirectoryLeadStatusSelect lands here instead
+// of updateDirectoryLeadStatus above — this lead becomes a CRM deal, not
+// just a status label. A PartnerCompany/PartnerContact matching this lead's
+// own company/name/email/phone is found or created (same
+// find-or-create-by-name convention as findOrCreatePartnerCompanyByName;
+// the contact side dedupes by email since that's what a returning inquiry
+// is most likely to repeat), the deal is created from them, and only then
+// does the lead itself move to CLOSED_CONVERTED — so a failure partway
+// through (a bad email, say) never leaves the lead closed with no deal to
+// show for it.
+export async function convertDirectoryLeadToDeal(leadId: string): Promise<void> {
+  const partner = await requirePartnerAction();
+  const lead = await ownedLeadOrThrow(leadId, partner.id);
+
+  const company = lead.company ? await findOrCreatePartnerCompanyByName(partner.id, lead.company) : null;
+
+  let contact = lead.email
+    ? await db.partnerContact.findFirst({ where: { partnerId: partner.id, email: lead.email } })
+    : null;
+  if (contact) {
+    const fill: { phone?: string; companyId?: string } = {};
+    if (!contact.phone && lead.phone) fill.phone = lead.phone;
+    if (!contact.companyId && company) fill.companyId = company.id;
+    if (Object.keys(fill).length > 0) {
+      contact = await db.partnerContact.update({ where: { id: contact.id }, data: fill });
+    }
+  } else {
+    const { firstName, lastName } = splitFullName(lead.name);
+    contact = await db.partnerContact.create({
+      data: {
+        partnerId: partner.id,
+        firstName: firstName || lead.name,
+        lastName: lastName || null,
+        email: lead.email || null,
+        phone: lead.phone,
+        companyId: company?.id ?? null,
+      },
+    });
+  }
+
+  const deal = await db.partnerDeal.create({
+    data: {
+      title: lead.company?.trim() || lead.name,
+      value: lead.value ?? 0,
+      status: "OPEN",
+      partnerId: partner.id,
+      companyId: company?.id ?? null,
+      contactId: contact.id,
+      notes: `Converted from a directory lead sent through ${lead.listing.companyName}.\n\n${lead.message}`,
+    },
+  });
+
+  await db.directoryLead.update({
+    where: { id: lead.id },
+    data: {
+      status: "CLOSED_CONVERTED",
+      pickedUpAt: lead.pickedUpAt ?? new Date(),
+      closedAt: lead.closedAt ?? new Date(),
+      convertedDealId: deal.id,
+    },
+  });
+
+  revalidatePath("/business-portal");
+  revalidatePath("/business-portal/business-leads");
+  revalidatePath(`/business-portal/business-leads/${lead.id}`);
+  revalidatePath("/business-portal/deals");
+  revalidatePath("/business-portal/companies");
+  revalidatePath("/business-portal/contacts");
 }
 
 const leadDetailsSchema = z.object({
