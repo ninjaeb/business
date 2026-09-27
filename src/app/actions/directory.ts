@@ -971,7 +971,11 @@ export async function autoCreateListingDetails(input: {
 // can navigate to it.
 export async function createListingAction(): Promise<never> {
   const partner = await requirePartnerAction();
-  const listing = await createPartnerListing(partner.id, partner.name);
+  // Every page that renders this action's form gates on
+  // requireCompletePartnerProfile, which requires companyName to be set — so
+  // the `|| partner.name` fallback is only ever exercised if that guard is
+  // ever bypassed, not the normal path.
+  const listing = await createPartnerListing(partner.id, partner.companyName || partner.name);
   revalidatePath("/business-portal/listings");
   redirect(`/business-portal/listings/${listing.id}`);
 }
@@ -1014,16 +1018,19 @@ async function saveListingFields(
   }
   const resetToDraft = listing.status === "PUBLISHED" || listing.status === "REJECTED";
 
-  // A brand-new draft's slug comes from the partner's own account name (see
-  // createPartnerListing), which rarely matches the business they're actually
-  // listing — normally fixed up by hand via PartnerSlugForm's own "Update
-  // address" confirmation. That confirmation exists to protect a *live*
-  // link from disappearing out from under a visitor; nothing is live yet on
-  // a listing's first save (createdAt === updatedAt, i.e. no prior save and
-  // never published), so adopt the just-entered company name as the slug
-  // automatically here instead of leaving a stranger's name as the address.
-  // Silently skipped if that slug is already taken — the partner still has
-  // PartnerSlugForm to pick another one by hand.
+  // A brand-new draft's slug comes from the partner's own account
+  // companyName (see createPartnerListing) at creation time, which may
+  // already differ from what they've since typed into this very save (a
+  // partner managing several listings under one account often adjusts
+  // Company name per listing) — normally fixed up by hand via
+  // PartnerSlugForm's own "Update address" confirmation. That confirmation
+  // exists to protect a *live* link from disappearing out from under a
+  // visitor; nothing is live yet on a listing's first save (createdAt ===
+  // updatedAt, i.e. no prior save and never published), so adopt the
+  // just-entered company name as the slug automatically here instead of
+  // leaving the account's original one as the address. Silently skipped if
+  // that slug is already taken — the partner still has PartnerSlugForm to
+  // pick another one by hand.
   let autoSlug: string | undefined;
   if (listing.createdAt.getTime() === listing.updatedAt.getTime()) {
     const candidate = slugify(parsed.data.companyName);
