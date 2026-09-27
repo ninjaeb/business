@@ -14,7 +14,7 @@ declare global {
 //
 // OPENROUTER_MODEL (text-only requests: ai-insights.ts, testimonials.ts,
 // autoCreateListingDetails's tagline/description/services/faqs generation)
-// defaults to 10 of OpenRouter's own top free models, verified against its
+// defaults to 4 of OpenRouter's own top free models, verified against its
 // /rankings (real-world usage, free or paid) and /models (capabilities) on
 // 2026-09-27, ordered as a priority list:
 //   1. nvidia/nemotron-3-ultra-550b-a55b:free — OpenRouter's #7
@@ -28,22 +28,17 @@ declare global {
 //   3. google/gemma-4-31b-it:free — different provider (spreads risk if
 //      NVIDIA's free endpoints get rate-limited), also advertises
 //      response_format support.
-//   4. google/gemma-4-26b-a4b-it:free — slightly smaller Gemma sibling,
-//      same response_format support.
-//   5. qwen/qwen3.8-27b:free — different provider again, response_format
-//      support.
-//   6. nvidia/nemotron-3.5-lightning:free — newer, lighter NVIDIA tier.
-//   7. thinkingmachines/inkling:free — 1M+ context, multimodal.
-//   8. thinkingmachines/inkling-small:free — same family, smaller/faster.
-//   9. nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free — omni-modal,
-//      reasoning-tuned.
-//   10. dots-studio/dots-3-note-preview:free — 512K context, vision,
-//       response_format support.
-// Listed as a priority list, not a single pin, precisely so this app isn't
-// betting everything on one free model staying available: if the first is
-// down, deprecated, or rate-limited, OpenRouter's own model-fallback
-// feature (see callAi's `models` field) automatically tries the next, all
-// the way down this list.
+//   4. qwen/qwen3.8-27b:free — yet another provider, also advertises
+//      response_format support.
+// Only 4 total (not more of OpenRouter's other top free models) because
+// OpenRouter's model-fallback feature caps the `models` field itself (see
+// MAX_MODEL_FALLBACKS below) at 3 entries beyond the primary — a longer
+// list was tried in production on 2026-09-27 and every request failed with
+// "400 'models' array must have 3 items or fewer", contradicting what
+// OpenRouter's own docs for this feature say elsewhere. Listed as a
+// priority list, not a single pin, precisely so this app isn't betting
+// everything on one free model staying available: if the first is down,
+// deprecated, or rate-limited, OpenRouter tries the next automatically.
 //
 // OPENROUTER_VISION_MODEL (image-bearing requests: scan-business-card.ts,
 // scan-partner-business-card.ts) stays on "openrouter/free", OpenRouter's
@@ -63,15 +58,16 @@ export const OPENROUTER_MODEL =
     "nvidia/nemotron-3-ultra-550b-a55b:free",
     "nvidia/nemotron-3-super-120b-a12b:free",
     "google/gemma-4-31b-it:free",
-    "google/gemma-4-26b-a4b-it:free",
     "qwen/qwen3.8-27b:free",
-    "nvidia/nemotron-3.5-lightning:free",
-    "thinkingmachines/inkling:free",
-    "thinkingmachines/inkling-small:free",
-    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-    "dots-studio/dots-3-note-preview:free",
   ].join(",");
 export const OPENROUTER_VISION_MODEL = process.env.OPENROUTER_VISION_MODEL || "openrouter/free";
+
+// OpenRouter's own real limit on its `models` fallback field — see
+// OPENROUTER_MODEL's own comment above for how this was discovered. Applied
+// defensively in parseModelPriorityList so a misconfigured/overlong
+// OPENROUTER_MODEL or OPENROUTER_VISION_MODEL env override degrades to
+// "extra entries ignored" instead of a hard 400 on every AI request.
+const MAX_MODEL_FALLBACKS = 3;
 
 // Splits one of the constants above (or their env override) into a primary
 // model plus fallbacks for OpenRouter's model-fallback feature — a single
@@ -82,7 +78,7 @@ function parseModelPriorityList(value: string): { model: string; fallbacks: stri
     .split(",")
     .map((id) => id.trim())
     .filter(Boolean);
-  return { model, fallbacks };
+  return { model, fallbacks: fallbacks.slice(0, MAX_MODEL_FALLBACKS) };
 }
 
 export function isAiConfigured() {
