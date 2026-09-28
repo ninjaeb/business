@@ -72,8 +72,11 @@ export async function proxy(request: NextRequest) {
   // headers(), not available on a NextRequest in middleware). A bare locale
   // (/en, /zh, /ms) needs no redirect of its own anymore — it IS the
   // directory home page (src/app/[locale]/page.tsx, see directoryHomePath).
+  // 308 (permanent), not the 307 default — "/" always forwards somewhere,
+  // never serves its own content, so this is permanent by design; matches
+  // the legacy src/app/directory/* stubs, which already use permanentRedirect.
   if (pathname === "/") {
-    return NextResponse.redirect(new URL(`/${resolveDirectoryLocaleFromRequest(request)}`, request.url));
+    return NextResponse.redirect(new URL(`/${resolveDirectoryLocaleFromRequest(request)}`, request.url), 308);
   }
 
   if (pathname === "/business-portal" || pathname.startsWith("/business-portal/") || pathname === "/admin" || pathname.startsWith("/admin/")) {

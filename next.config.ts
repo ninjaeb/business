@@ -19,15 +19,69 @@ function turbopackRoot(): string | undefined {
 
 const root = turbopackRoot();
 
+// Plausible's own env var (see plausibleScript in src/app/[locale]/layout.tsx)
+// may point a self-hosted instance at any domain, so the CSP origin is read
+// from it too rather than hardcoded to plausible.io — used whether or not
+// PLAUSIBLE_DOMAIN is actually set; allowlisting an unused origin is harmless.
+function plausibleOrigin(): string {
+  const scriptUrl = process.env.PLAUSIBLE_SCRIPT_URL?.trim() || "https://plausible.io/js/script.js";
+  try {
+    return new URL(scriptUrl).origin;
+  } catch {
+    return "https://plausible.io";
+  }
+}
+
+// Every origin below is grounded in an actual resource this app loads,
+// confirmed by grepping the codebase rather than guessed — see each
+// directive's own comment. Not nonce-based: nonces need every page to
+// render dynamically (Next's CSP guide, "Static vs Dynamic Rendering"),
+// a much bigger change than this header deserves on its own.
+function contentSecurityPolicy(): string {
+  const plausible = plausibleOrigin();
+  const isDev = process.env.NODE_ENV === "development";
+  const directives = [
+    "default-src 'self'",
+    // 'unsafe-inline': the GA config snippet embeds a per-deploy measurement
+    // ID (googleAnalyticsScripts, src/app/[locale]/layout.tsx) generated
+    // fresh per request, so it can't be hashed like a static asset; nonces
+    // are the alternative but require dynamic rendering everywhere (see
+    // above). googletagmanager.com loads gtag.js itself; the Plausible
+    // origin loads its tracking script.
+    `script-src 'self' 'unsafe-inline' https://www.googletagmanager.com ${plausible}${isDev ? " 'unsafe-eval'" : ""}`,
+    // 'unsafe-inline': five components use inline style={{}} props (grepped
+    // for `style={{` across src/), which CSP's style-src-attr governs the
+    // same way as script-src-attr above.
+    "style-src 'self' 'unsafe-inline'",
+    // blob: — the logo-crop preview (URL.createObjectURL in
+    // partner-listing-form.tsx). data: — a few inline SVG placeholders
+    // (src/components/ui/field.tsx). Nothing else: every business photo and
+    // logo, including ones sourced from Google Places, is proxied through
+    // this app's own /api/directory-images/* routes (see
+    // listingLogoUrl/listingImageUrl in src/lib/directory.ts) — never linked
+    // to an external host directly, so no external image origin is needed.
+    "img-src 'self' data: blob:",
+    "font-src 'self'",
+    // Where gtag.js and Plausible's script actually send their beacons.
+    `connect-src 'self' https://www.google-analytics.com ${plausible}`,
+    // Exactly the five video providers toEmbeddableVideoUrl
+    // (src/lib/directory.ts) embeds, plus google.com for the "visit" page's
+    // Maps embed (src/app/[locale]/[slug]/visit/page.tsx).
+    "frame-src https://www.youtube-nocookie.com https://player.vimeo.com https://www.dailymotion.com https://www.facebook.com https://www.tiktok.com https://www.google.com",
+    "object-src 'none'",
+    "base-uri 'self'",
+    "form-action 'self'",
+    // Matches X-Frame-Options: SAMEORIGIN below, not the stricter 'none' —
+    // this app never needs to be framed by *another* origin, but nothing
+    // rules out framing itself.
+    "frame-ancestors 'self'",
+    "upgrade-insecure-requests",
+  ];
+  return directives.join("; ");
+}
+
 // Sitewide response headers an SEO/security audit checks for that Next.js
-// doesn't set on its own. A Content-Security-Policy is deliberately NOT
-// included here: this app embeds third-party iframes (YouTube, Vimeo,
-// Dailymotion, TikTok, Facebook's video plugin — see toEmbeddableVideoUrl in
-// src/lib/directory.ts) and loads Google Places photos, so a CSP tight
-// enough to be worth having would need every one of those origins allowlisted
-// and testing across the whole app to avoid silently breaking video/image
-// embeds in production — worth doing as its own follow-up, not bundled into
-// a header pass that should otherwise carry zero functional risk.
+// doesn't set on its own.
 const SECURITY_HEADERS = [
   // HTTPS-only is already true in production (see Cloudflare/LiteSpeed in
   // front of this app) — this just tells browsers to enforce it themselves
@@ -43,6 +97,7 @@ const SECURITY_HEADERS = [
   // navigator.geolocation/getUserMedia calls anywhere in src/) rather than
   // leaving them at the browser's own default-on posture.
   { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(), browsing-topics=()" },
+  { key: "Content-Security-Policy", value: contentSecurityPolicy() },
 ];
 
 const nextConfig: NextConfig = {
