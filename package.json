@@ -21,6 +21,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "clsx": "^2.1.1",
+    "compression": "^1.8.2",
     "csv-parse": "^7.0.2",
     "dotenv": "^17.4.2",
     "exceljs": "^4.4.0",
