@@ -9,6 +9,7 @@ import { logout } from "@/app/actions/auth";
 import { getSessionPayload } from "@/lib/session";
 import { db } from "@/lib/db";
 import { getDirectoryLocale } from "@/lib/directory-locale";
+import { DIRECTORY_SAME_AS } from "@/lib/directory-seo";
 import {
   DIRECTORY_LOCALES,
   DIRECTORY_STRINGS,
@@ -254,6 +255,21 @@ export async function DirectoryChrome({
             >
               gotka.com
             </a>
+            {/* Real, crawlable links to the same profiles the Organization
+                JSON-LD's own sameAs already names — see DIRECTORY_SAME_AS's
+                own comment for why a link inside a JSON-LD script tag isn't
+                enough on its own. */}
+            {DIRECTORY_SAME_AS.map((profile) => (
+              <a
+                key={profile.url}
+                href={profile.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-petrol hover:underline dark:hover:text-petrol-light"
+              >
+                {profile.label}
+              </a>
+            ))}
           </nav>
           <p className="mt-3">{t.footerTagline}</p>
         </div>

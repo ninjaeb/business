@@ -231,10 +231,15 @@ export function buildDirectoryWebSiteJsonLd(siteOrigin: string, locale: Director
 // search engine's Knowledge Graph (and an AI answer engine resolving who
 // "Gotka" is) that these are the same entity as the Organization node
 // below, not a coincidentally-named lookalike. Each one is a page Gotka
-// itself controls, not a mention of the brand elsewhere.
-const DIRECTORY_SAME_AS = [
-  "https://www.facebook.com/p/Gotka-Technologies-61564390635502/",
-  "https://www.linkedin.com/company/gotka-technologies/",
+// itself controls, not a mention of the brand elsewhere. Exported (with a
+// label, not just the bare URL list sameAs itself needs) so
+// DirectoryChrome's footer can render these as real, crawlable <a> links
+// too — a search/AI crawler reading the DOM for social profile links never
+// sees inside a JSON-LD script tag, only this list's own use in
+// buildDirectoryOrganizationJsonLd's sameAs did before that.
+export const DIRECTORY_SAME_AS = [
+  { label: "Facebook", url: "https://www.facebook.com/p/Gotka-Technologies-61564390635502/" },
+  { label: "LinkedIn", url: "https://www.linkedin.com/company/gotka-technologies/" },
 ];
 
 // Who publishes the directory — the entity an AI answer engine attributes
@@ -249,7 +254,7 @@ export function buildDirectoryOrganizationJsonLd(siteOrigin: string): string {
     alternateName: DIRECTORY_PUBLISHER.alternateName,
     url: DIRECTORY_PUBLISHER.url,
     logo: `${siteOrigin}/icon-512.png`,
-    sameAs: DIRECTORY_SAME_AS,
+    sameAs: DIRECTORY_SAME_AS.map((profile) => profile.url),
   });
 }
 
