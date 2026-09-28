@@ -86,12 +86,12 @@ const SECURITY_HEADERS = [
   // HTTPS-only is already true in production (see Cloudflare/LiteSpeed in
   // front of this app) — this just tells browsers to enforce it themselves
   // too, including on subdomains, without re-checking on every request.
-  // preload is safe to send unconditionally (it's a plain no-op until the
-  // domain is actually submitted to hstspreload.org) and the max-age/
-  // includeSubDomains values here already meet that list's own eligibility
-  // requirements (1 year minimum, HTTPS valid on every subdomain) if this
-  // domain ever is submitted.
-  { key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains; preload" },
+  // Deliberately no `preload`: submitting to browsers' built-in HSTS
+  // preload list is a much harder-to-reverse commitment (removal can take
+  // months to propagate once shipped) and requires being certain every
+  // subdomain under gotka.com will always serve HTTPS — a call the site
+  // owner should make explicitly, not something to default to here.
+  { key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains" },
   { key: "X-Content-Type-Options", value: "nosniff" },
   // Superseded by CSP's frame-ancestors in browsers that support it, but
   // still worth sending for the ones that don't — this app never needs to
