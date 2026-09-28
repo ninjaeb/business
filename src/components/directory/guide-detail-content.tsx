@@ -66,6 +66,19 @@ export async function GuideDetailContent({ guide, locale }: { guide: Guide; loca
               {t.guidePublishedOnLabel} {formatDate(guide.publishedAt)}
             </span>
           )}
+          {/* Same freshness signal buildGuideJsonLd's own dateModified
+              already gives a crawler, now visible to a reader too — only
+              once updatedAt has actually moved past publishedAt by more
+              than the publish action's own datePublished/updatedAt skew
+              (two separate now() calls in the same request; see
+              publishGuideAction), so a guide that's never been revised
+              since it first went live doesn't show a redundant second date
+              a few milliseconds after the first. */}
+          {guide.publishedAt && guide.updatedAt.getTime() - guide.publishedAt.getTime() > 60_000 && (
+            <span className="text-xs text-slate-400 dark:text-slate-500">
+              {t.guideUpdatedOnLabel} {formatDate(guide.updatedAt)}
+            </span>
+          )}
         </div>
         <h1 className="mt-1 text-2xl font-semibold text-slate-900 dark:text-slate-100">{guide.title}</h1>
         <p className="mt-2 text-base text-slate-600 dark:text-slate-300">{guide.excerpt}</p>

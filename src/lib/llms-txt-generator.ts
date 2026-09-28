@@ -9,13 +9,19 @@ import {
   DIRECTORY_LOCALES,
   DIRECTORY_HOME_TITLE_BY_LOCALE,
   INDUSTRY_LABELS_BY_LOCALE,
+  directoryAboutPath,
   directoryCategoriesIndexPath,
+  directoryContactPath,
+  directoryEditorialPolicyPath,
+  directoryGuidesPath,
   directoryHomePath,
   directoryIndustriesIndexPath,
   directoryListingPath,
   directoryLocationsIndexPath,
   directoryNewsPath,
+  directoryPrivacyPath,
   directoryProductsPath,
+  directoryTermsPath,
 } from "@/lib/directory-i18n";
 import { translateCategoryName, categoryPath } from "@/lib/directory-category-labels";
 import { locationLabel, locationPath } from "@/lib/directory-location-labels";
@@ -139,6 +145,19 @@ export async function buildLlmsTxt(): Promise<string> {
   lines.push(`- [All locations](${STATIC_SEO_ORIGIN}${directoryLocationsIndexPath("en")}): Every state/region with a published business.`);
   lines.push(`- [Latest products & services](${STATIC_SEO_ORIGIN}${directoryProductsPath("en")}): Recently added products and services across the directory.`);
   lines.push(`- [News & promotions](${STATIC_SEO_ORIGIN}${directoryNewsPath("en")}): Current news and promotions from businesses in the directory.`);
+  lines.push(`- [Guides](${STATIC_SEO_ORIGIN}${directoryGuidesPath("en")}): In-depth guides to help you choose and compare businesses in the directory.`);
+  lines.push("");
+
+  // Who publishes this and how to reach them — the same trust signals an
+  // AI answer engine's own E-E-A-T checks look for when deciding whether
+  // to cite a source, now spelled out in plain language here too, not just
+  // as page metadata a crawler would have to visit each page to find.
+  lines.push("## About this directory");
+  lines.push(`- [About](${STATIC_SEO_ORIGIN}${directoryAboutPath("en")}): Who publishes this directory and how listings are reviewed.`);
+  lines.push(`- [Contact](${STATIC_SEO_ORIGIN}${directoryContactPath("en")}): How to reach Gotka Technologies directly.`);
+  lines.push(`- [Editorial policy](${STATIC_SEO_ORIGIN}${directoryEditorialPolicyPath("en")}): How this directory's guides are written, sourced, and corrected.`);
+  lines.push(`- [Privacy policy](${STATIC_SEO_ORIGIN}${directoryPrivacyPath("en")})`);
+  lines.push(`- [Terms of service](${STATIC_SEO_ORIGIN}${directoryTermsPath("en")})`);
   lines.push("");
 
   lines.push("## Full index");
