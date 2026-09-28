@@ -18,7 +18,10 @@ import { industryPath } from "@/lib/directory-industry-labels";
 import {
   DEFAULT_DIRECTORY_LOCALE,
   DIRECTORY_LOCALES,
+  directoryAboutPath,
   directoryCategoriesIndexPath,
+  directoryContactPath,
+  directoryEditorialPolicyPath,
   directoryGuidePath,
   directoryGuidesPath,
   directoryHomePath,
@@ -33,7 +36,9 @@ import {
   directoryListingVisitPath,
   directoryLocationsIndexPath,
   directoryNewsPath,
+  directoryPrivacyPath,
   directoryProductsPath,
+  directoryTermsPath,
   type DirectoryLocale,
 } from "@/lib/directory-i18n";
 import { STATIC_SEO_ORIGIN } from "@/lib/static-seo-origin";
@@ -241,6 +246,47 @@ export async function buildSitemapXml(): Promise<string> {
         alternates: languageAlternates(directoryGuidesPath),
         changeFrequency: "weekly",
         priority: 0.6,
+      }),
+    );
+    // The site's own trust/E-E-A-T pages — About, Contact, Editorial
+    // Policy, Privacy, Terms. Privacy/Terms render the same English text
+    // at every locale (see directory-legal-copy.ts's own comment on why),
+    // but each locale is still a real, distinct, indexable page, so it
+    // gets its own entry and hreflang set the same as everything else here
+    // rather than being left out for "not really translated."
+    entries.push(
+      urlEntry(`${STATIC_SEO_ORIGIN}${directoryAboutPath(code)}`, {
+        alternates: languageAlternates(directoryAboutPath),
+        changeFrequency: "monthly",
+        priority: 0.4,
+      }),
+    );
+    entries.push(
+      urlEntry(`${STATIC_SEO_ORIGIN}${directoryContactPath(code)}`, {
+        alternates: languageAlternates(directoryContactPath),
+        changeFrequency: "monthly",
+        priority: 0.4,
+      }),
+    );
+    entries.push(
+      urlEntry(`${STATIC_SEO_ORIGIN}${directoryEditorialPolicyPath(code)}`, {
+        alternates: languageAlternates(directoryEditorialPolicyPath),
+        changeFrequency: "monthly",
+        priority: 0.3,
+      }),
+    );
+    entries.push(
+      urlEntry(`${STATIC_SEO_ORIGIN}${directoryPrivacyPath(code)}`, {
+        alternates: languageAlternates(directoryPrivacyPath),
+        changeFrequency: "yearly",
+        priority: 0.2,
+      }),
+    );
+    entries.push(
+      urlEntry(`${STATIC_SEO_ORIGIN}${directoryTermsPath(code)}`, {
+        alternates: languageAlternates(directoryTermsPath),
+        changeFrequency: "yearly",
+        priority: 0.2,
       }),
     );
   }

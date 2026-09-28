@@ -16,13 +16,17 @@ import {
   directoryAboutPath,
   directoryBenefitsPath,
   directoryCategoriesIndexPath,
+  directoryContactPath,
+  directoryEditorialPolicyPath,
   directoryGuidesPath,
   directoryHomePath,
   directoryIndustriesIndexPath,
   directoryLocationsIndexPath,
   directoryNewsPath,
+  directoryPrivacyPath,
   directoryProductsPath,
   directorySignupPath,
+  directoryTermsPath,
   localizedBusinessNavItems,
   type DirectoryLocale,
 } from "@/lib/directory-i18n";
@@ -104,6 +108,13 @@ export async function DirectoryChrome({
   const signupHref = localeProp ? directorySignupPath(localeProp) : "/directory/signup";
   const benefitsHref = localeProp ? directoryBenefitsPath(localeProp) : "/directory/benefits";
   const aboutHref = localeProp ? directoryAboutPath(localeProp) : "/directory/about";
+  // Never existed at a bare pre-locale-prefix URL (unlike the four above),
+  // so there's no old /directory/* link to preserve — built straight off
+  // the resolved `locale`, same as topNavItems below.
+  const contactHref = directoryContactPath(locale);
+  const privacyHref = directoryPrivacyPath(locale);
+  const termsHref = directoryTermsPath(locale);
+  const editorialPolicyHref = directoryEditorialPolicyPath(locale);
   // Always built off the resolved `locale` (not localeProp) — unlike the
   // links above, these four pages have no bare-URL fallback to redirect
   // through, so even a page outside the locale-prefixed tree (e.g.
@@ -243,6 +254,18 @@ export async function DirectoryChrome({
             </Link>
             <Link href={aboutHref} className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
               {t.aboutNavLabel}
+            </Link>
+            <Link href={contactHref} className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
+              {t.contactNavLabel}
+            </Link>
+            <Link href={editorialPolicyHref} className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
+              {t.editorialPolicyNavLabel}
+            </Link>
+            <Link href={privacyHref} className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
+              {t.privacyNavLabel}
+            </Link>
+            <Link href={termsHref} className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
+              {t.termsNavLabel}
             </Link>
             <Link href="/business-portal/login" className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
               {t.navLoginRegister}

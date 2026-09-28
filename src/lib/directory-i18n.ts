@@ -58,6 +58,27 @@ export function directoryAboutPath(locale: DirectoryLocale): string {
   return `/${locale}/about`;
 }
 
+export function directoryContactPath(locale: DirectoryLocale): string {
+  return `/${locale}/contact`;
+}
+
+// Privacy/Terms deliberately stay English-only content (see
+// directory-legal-copy.ts's own comment on why), but still get a real path
+// under every locale segment — a zh/ms visitor gets the same URL shape as
+// every other page, with a translated notice pointing at the English text,
+// rather than a bare unprefixed /privacy that would break that convention.
+export function directoryPrivacyPath(locale: DirectoryLocale): string {
+  return `/${locale}/privacy`;
+}
+
+export function directoryTermsPath(locale: DirectoryLocale): string {
+  return `/${locale}/terms`;
+}
+
+export function directoryEditorialPolicyPath(locale: DirectoryLocale): string {
+  return `/${locale}/editorial-policy`;
+}
+
 // A listing's own page is just /en/some-company — shorter and friendlier
 // to share than every other directory URL, since it's the one visitors
 // actually pass around. Lives at src/app/[locale]/[slug], a sibling of
@@ -300,6 +321,12 @@ export type DirectoryStrings = {
   guidesIndexEmptyTitle: string;
   guidesIndexEmptyDescription: string;
   guidePublishedOnLabel: string;
+  // Shown alongside guidePublishedOnLabel only when a guide's updatedAt is
+  // meaningfully later than its publishedAt (see GuideDetailContent) — the
+  // visible counterpart to buildGuideJsonLd's own dateModified, so a
+  // revised guide gives the same freshness signal to a reader that it
+  // already gives a crawler.
+  guideUpdatedOnLabel: string;
   // A visible counterpart to buildGuideJsonLd's own organization-level
   // author/publisher — the same "attributed to the team, not an invented
   // personal byline" choice, just readable on the page itself rather than
@@ -453,6 +480,10 @@ export type DirectoryStrings = {
   listBusinessCta: string;
   benefitsNavLabel: string;
   aboutNavLabel: string;
+  contactNavLabel: string;
+  privacyNavLabel: string;
+  termsNavLabel: string;
+  editorialPolicyNavLabel: string;
   signupHeading: string;
   signupSubheading: string;
   signupCompanyLabel: string;
@@ -537,6 +568,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     guidesIndexEmptyTitle: "No guides yet",
     guidesIndexEmptyDescription: "Check back soon — guides will appear here.",
     guidePublishedOnLabel: "Published",
+    guideUpdatedOnLabel: "Updated",
     guideByLabel: "By the Gotka Business Directory team",
     guideReadMoreLabel: "Read guide",
     guideRelatedHeading: "Related guides",
@@ -638,6 +670,10 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     listBusinessCta: "List your business",
     benefitsNavLabel: "Why list your business",
     aboutNavLabel: "About",
+    contactNavLabel: "Contact",
+    privacyNavLabel: "Privacy Policy",
+    termsNavLabel: "Terms of Service",
+    editorialPolicyNavLabel: "Editorial Policy",
     signupHeading: "List your business",
     signupSubheading: "Join the business directory and start receiving inquiries directly from visitors.",
     signupCompanyLabel: "Business name",
@@ -719,6 +755,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     guidesIndexEmptyTitle: "暂无指南",
     guidesIndexEmptyDescription: "请稍后再来查看——指南将显示在这里。",
     guidePublishedOnLabel: "发布于",
+    guideUpdatedOnLabel: "更新于",
     guideByLabel: "作者：Gotka 企业目录团队",
     guideReadMoreLabel: "阅读指南",
     guideRelatedHeading: "相关指南",
@@ -819,6 +856,10 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     listBusinessCta: "刊登您的企业",
     benefitsNavLabel: "为什么要刊登您的企业",
     aboutNavLabel: "关于我们",
+    contactNavLabel: "联系我们",
+    privacyNavLabel: "隐私政策",
+    termsNavLabel: "服务条款",
+    editorialPolicyNavLabel: "编辑政策",
     signupHeading: "刊登您的企业",
     signupSubheading: "加入企业目录，直接从访客那里获得咨询。",
     signupCompanyLabel: "企业名称",
@@ -900,6 +941,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     guidesIndexEmptyTitle: "Belum ada panduan",
     guidesIndexEmptyDescription: "Sila semak semula tidak lama lagi — panduan akan dipaparkan di sini.",
     guidePublishedOnLabel: "Diterbitkan",
+    guideUpdatedOnLabel: "Dikemas kini",
     guideByLabel: "Oleh pasukan Direktori Perniagaan Gotka",
     guideReadMoreLabel: "Baca panduan",
     guideRelatedHeading: "Panduan berkaitan",
@@ -1001,6 +1043,10 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     listBusinessCta: "Senaraikan perniagaan anda",
     benefitsNavLabel: "Kenapa senaraikan perniagaan anda",
     aboutNavLabel: "Tentang kami",
+    contactNavLabel: "Hubungi kami",
+    privacyNavLabel: "Dasar Privasi",
+    termsNavLabel: "Terma Perkhidmatan",
+    editorialPolicyNavLabel: "Dasar Editorial",
     signupHeading: "Senaraikan perniagaan anda",
     signupSubheading: "Sertai direktori perniagaan dan mula menerima pertanyaan terus daripada pelawat.",
     signupCompanyLabel: "Nama perniagaan",

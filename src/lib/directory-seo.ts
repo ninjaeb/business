@@ -37,10 +37,24 @@ export const OG_LOCALE_BY_DIRECTORY_LOCALE: Record<DirectoryLocale, string> = {
   ms: "ms_MY",
 };
 
+// Address/phone as published on gotka.com's own /contact page (also the
+// source for the Contact page's copy — see directory-contact-copy.ts) —
+// real operator details, not invented ones, for the Organization node's
+// own address/telephone (an E-E-A-T trust signal a search engine or AI
+// answer engine reads directly off the site, not just off gotka.com).
 export const DIRECTORY_PUBLISHER = {
   name: "Gotka Technologies",
   alternateName: "Gotka",
   url: "https://gotka.com",
+  email: "hello@gotka.com",
+  telephone: "+60 11-6331 6630",
+  address: {
+    streetAddress: "93, Jalan Kerongsang 5",
+    addressLocality: "Bandar Puteri Klang",
+    postalCode: "41200",
+    addressRegion: "Selangor",
+    addressCountry: "MY",
+  },
 } as const;
 
 // max-image-preview:large lets Google show a listing's full logo/share image
@@ -255,6 +269,9 @@ export function buildDirectoryOrganizationJsonLd(siteOrigin: string): string {
     url: DIRECTORY_PUBLISHER.url,
     logo: `${siteOrigin}/icon-512.png`,
     sameAs: DIRECTORY_SAME_AS.map((profile) => profile.url),
+    email: DIRECTORY_PUBLISHER.email,
+    telephone: DIRECTORY_PUBLISHER.telephone,
+    address: { "@type": "PostalAddress", ...DIRECTORY_PUBLISHER.address },
   });
 }
 
