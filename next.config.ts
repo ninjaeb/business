@@ -90,7 +90,9 @@ const SECURITY_HEADERS = [
   // preload list is a much harder-to-reverse commitment (removal can take
   // months to propagate once shipped) and requires being certain every
   // subdomain under gotka.com will always serve HTTPS — a call the site
-  // owner should make explicitly, not something to default to here.
+  // owner should make explicitly, not something to default to here. A
+  // previous PR (#104) added it; reverted per the site owner's explicit
+  // call, made before that PR merged.
   { key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains" },
   { key: "X-Content-Type-Options", value: "nosniff" },
   // Superseded by CSP's frame-ancestors in browsers that support it, but

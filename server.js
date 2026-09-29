@@ -11,6 +11,7 @@ const { randomBytes } = require("node:crypto");
 const path = require("node:path");
 const { createServer } = require("node:http");
 const next = require("next");
+const compression = require("compression");
 
 const port = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== "production";
@@ -229,9 +230,17 @@ if (!dev) {
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
+// `next start` gzips/brotli-compresses responses on its own, but that's
+// wired into the CLI command itself — a custom server like this one gets
+// none of it for free and has to add the same compression itself. Without
+// this, every HTML/JSON/JS/CSS response leaves this process uncompressed;
+// whether that's ever actually caught depends on whether something in
+// front of it (Cloudflare, LiteSpeed) happens to compress on the way out.
+const compress = compression();
+
 app.prepare().then(() => {
   createServer((req, res) => {
-    handle(req, res);
+    compress(req, res, () => handle(req, res));
   }).listen(port, () => {
     console.log(
       `> Ready on port ${port} (${dev ? "development" : process.env.NODE_ENV})`,

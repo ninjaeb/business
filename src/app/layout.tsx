@@ -59,6 +59,15 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="h-full min-h-full bg-slate-50 text-slate-900 dark:bg-neutral-950 dark:text-slate-100">
+        {/* No dedicated Metadata field exists for an arbitrary <link rel>
+            (only fixed ones like icons/manifest/archives) — React 19 hoists
+            a <link> rendered anywhere in the tree into the real <head>, same
+            mechanism the metadata export itself relies on, so this works
+            without a literal <head> element here. Points crawlers/AI
+            systems at /llms.txt (see llms-txt-generator.ts) the same way
+            robots.txt's own Sitemap: line points them at sitemap.xml — the
+            file already existed; this just makes it discoverable. */}
+        <link rel="llms.txt" href="/llms.txt" />
         <Script id="theme-init" strategy="beforeInteractive">
           {THEME_INIT_SCRIPT}
         </Script>

@@ -56,6 +56,24 @@ export type PublishedListingSnapshot = {
   services: ServiceEntry[];
   industry: Industry | null;
   website: string | null;
+  // Google's own rating for this business, as of the last time a partner
+  // ran AI Auto Create against a Google Maps place (see
+  // PartnerListing.googleRating's own comment in prisma/schema.prisma) —
+  // null until that's happened at least once, or when Google itself has no
+  // rating on file. Never partner-editable.
+  googleRating: number | null;
+  googleRatingCount: number | null;
+  // The Google Maps listing the rating above came from — what the star
+  // rating links out to. Same provenance as googleRating; null on older
+  // data set before this field existed.
+  googleMapsUrl: string | null;
+  // The business's own public "write a review" link — auto-filled from
+  // Google Places or pasted in by hand (see PartnerListing.googleReviewUrl's
+  // own comment in prisma/schema.prisma). Unlike googleRating/googleMapsUrl
+  // above, this one has nothing to do with Google's own rating number —
+  // it's the "Leave it on Google too" link on the Testimonials page (see
+  // TestimonialForm).
+  googleReviewUrl: string | null;
   phone: string | null;
   whatsAppNumber: string | null;
   videos: VideoEntry[];
@@ -496,6 +514,10 @@ export function readPublishedSnapshot(value: unknown): PublishedListingSnapshot 
     services: servicesFromJson(raw.services),
     industry: typeof raw.industry === "string" ? (raw.industry as Industry) : null,
     website: typeof raw.website === "string" ? raw.website : null,
+    googleRating: typeof raw.googleRating === "number" ? raw.googleRating : null,
+    googleRatingCount: typeof raw.googleRatingCount === "number" ? raw.googleRatingCount : null,
+    googleMapsUrl: typeof raw.googleMapsUrl === "string" ? raw.googleMapsUrl : null,
+    googleReviewUrl: typeof raw.googleReviewUrl === "string" ? raw.googleReviewUrl : null,
     phone: typeof raw.phone === "string" ? raw.phone : null,
     whatsAppNumber: typeof raw.whatsAppNumber === "string" ? raw.whatsAppNumber : null,
     videos: videosFromJson(raw.videos),
@@ -540,6 +562,10 @@ export function buildPublishedSnapshot(
     services: servicesFromJson(listing.services),
     industry: listing.industry,
     website: listing.website,
+    googleRating: listing.googleRating,
+    googleRatingCount: listing.googleRatingCount,
+    googleMapsUrl: listing.googleMapsUrl,
+    googleReviewUrl: listing.googleReviewUrl,
     phone: listing.phone,
     whatsAppNumber: listing.whatsAppNumber,
     videos: videosFromJson(listing.videos),
@@ -586,6 +612,12 @@ export type DirectoryGridListing = {
   state: string | null;
   country: string | null;
   logoUrl: string | null;
+  // Same provenance as PublishedListingSnapshot's own googleRating —
+  // shown as a small star rating on the card. No googleMapsUrl here: the
+  // whole card is already a Link to the listing's own page, where that
+  // link lives — a second <a> around just the rating would nest anchors.
+  googleRating: number | null;
+  googleRatingCount: number | null;
   // Pre-formatted for the grid's own locale (see formatViewsLabel) — same
   // "computed once, server-side, where the locale is already in scope"
   // reasoning toDirectoryGridListing's other locale-dependent fields use,
@@ -837,6 +869,8 @@ export function toDirectoryGridListing(
     state: listing.state,
     country: listing.country,
     logoUrl: listing.logoUrl ? listingLogoPath(slug, publishedAt) : null,
+    googleRating: listing.googleRating,
+    googleRatingCount: listing.googleRatingCount,
     viewsLabel: formatViewsLabel(viewCount, locale),
   };
 }

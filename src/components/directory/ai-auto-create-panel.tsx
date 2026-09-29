@@ -36,6 +36,7 @@ function StepLabel({ step, children }: { step: number; children: React.ReactNode
 // writes into — this component only reports back through the callbacks, so
 // it never has to know how the form stores its state.
 export function AiAutoCreatePanel({
+  listingId,
   placesAvailable,
   defaultQuery,
   website,
@@ -46,6 +47,12 @@ export function AiAutoCreatePanel({
   onTranslate,
   translating,
 }: {
+  // Passed straight through to autoCreateListingDetails, which writes
+  // Google's own rating/ratingCount directly to this listing's row — see
+  // that action's own comment on why that one part doesn't ride the
+  // AutoCreatedListingDetails/onCreated review flow every other field here
+  // does.
+  listingId: string;
   placesAvailable: boolean;
   defaultQuery: string;
   website: string;
@@ -126,18 +133,28 @@ export function AiAutoCreatePanel({
   function handleCreate() {
     const context = getContext();
     startCreate(async () => {
-      const result = await autoCreateListingDetails({ placeId: selected?.id, website, companyName: context.companyName });
+      const result = await autoCreateListingDetails({ listingId, placeId: selected?.id, website, companyName: context.companyName });
       if (result.status !== "ok") {
         toast.error(result.message);
         return;
       }
       onCreated(result.data);
       const { googleMaps, website: fromWebsite } = result.data.sources;
-      toast.success(
+      const baseMessage =
         googleMaps && !fromWebsite && website
-          ? "Details created from your Google Maps listing — your website couldn't be read. Review each section, then save."
-          : "Details created — review each section, then save.",
-      );
+          ? "Details created from your Google Maps listing — your website couldn't be read."
+          : "Details created.";
+      // Spelled out either way rather than left silent on a miss — a
+      // partner who just picked a place and sees no star rating appear
+      // shouldn't be left guessing whether that's Google (no rating on
+      // file yet) or a bug (see autoCreateListingDetails's own comment on
+      // why this field exists at all).
+      const ratingNote = !googleMaps
+        ? ""
+        : result.data.googleRating !== null
+          ? ` Found a ${result.data.googleRating.toFixed(1)}★ Google rating${result.data.googleRatingCount !== null ? ` (${result.data.googleRatingCount} reviews)` : ""}.`
+          : " No Google rating on file for this business yet.";
+      toast.success(`${baseMessage}${ratingNote} Review each section, then save.`);
     });
   }
 

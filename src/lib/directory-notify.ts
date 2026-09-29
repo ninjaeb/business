@@ -3,7 +3,7 @@ import { isMailerConfigured, sendMail } from "@/lib/mailer";
 import { isWhatsAppConfigured, sendWhatsAppTemplateMessage } from "@/lib/whatsapp";
 import { textToHtml } from "@/lib/text-to-html";
 import { getSiteOrigin } from "@/lib/site-url";
-import type { DirectoryLead, PartnerListing } from "@/generated/prisma/client";
+import type { DirectoryLead, DirectoryTestimonial, PartnerListing } from "@/generated/prisma/client";
 
 // A rewrite of the source CRM's src/lib/directory-notify.ts for this
 // standalone app: same two exports and signatures, and — like the source
@@ -66,6 +66,39 @@ export async function notifyPartnerOfNewLead(listing: PartnerListing, lead: Dire
         error instanceof Error ? error.message : error,
       );
     }
+  }
+}
+
+// Fires once, right after a visitor's testimonial is saved (always PENDING
+// — see submitDirectoryTestimonial in src/app/actions/testimonials.ts).
+// Email-only, unlike notifyPartnerOfNewLead above: a testimonial needing
+// admin approval before it's even public is lower-urgency than a sales
+// inquiry, and a new WhatsApp template would need its own separate approval
+// in Meta Business Manager before this app could send it (see
+// NEW_LEAD_WHATSAPP_TEMPLATE_NAME's own comment) — not worth that overhead
+// for a courtesy notice the partner can't act on any faster by getting it
+// on WhatsApp too.
+export async function notifyPartnerOfNewTestimonial(listing: PartnerListing, testimonial: DirectoryTestimonial): Promise<void> {
+  if (!(await isMailerConfigured())) return;
+  const partner = await db.user.findUnique({ where: { id: listing.partnerId }, select: { email: true } });
+  if (!partner) return;
+
+  const text =
+    `${testimonial.authorName} left a testimonial on your ${listing.companyName} listing` +
+    `${testimonial.rating ? ` (${testimonial.rating}/5)` : ""}:\n\n"${testimonial.body}"\n\n` +
+    "It's awaiting approval before it shows publicly — an admin will review it shortly.";
+  try {
+    await sendMail({
+      to: partner.email,
+      subject: `New testimonial: ${testimonial.authorName}`,
+      text,
+      html: textToHtml(text),
+    });
+  } catch (error) {
+    console.error(
+      `New testimonial email failed for partner ${listing.partnerId}:`,
+      error instanceof Error ? error.message : error,
+    );
   }
 }
 

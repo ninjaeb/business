@@ -60,6 +60,7 @@ import { fetchVideoOEmbed } from "@/lib/video-oembed";
 import {
   fetchPlacePhoto,
   getPlaceDetails,
+  googleReviewUrlFromPlaceId,
   isGooglePlacesConfigured,
   isValidPlaceId,
   searchPlaces,
@@ -237,6 +238,7 @@ const listingSchema = z.object({
     .refine((value) => !value || INDUSTRIES.includes(value as Industry), { message: "Invalid industry" }),
   website: z.string().trim().optional(),
   googleBusinessProfileUrl: z.string().trim().optional(),
+  googleReviewUrl: z.string().trim().optional(),
   phone: z
     .string()
     .trim()
@@ -279,6 +281,7 @@ export type ListingFormValues = {
   industry: string;
   website: string;
   googleBusinessProfileUrl: string;
+  googleReviewUrl: string;
   phone: string;
   whatsAppNumber: string;
   address: string;
@@ -351,6 +354,7 @@ function extractListingFormValues(formData: FormData): ListingFormValues {
     industry: stringField(formData, "industry"),
     website: stringField(formData, "website"),
     googleBusinessProfileUrl: stringField(formData, "googleBusinessProfileUrl"),
+    googleReviewUrl: stringField(formData, "googleReviewUrl"),
     phone: stringField(formData, "phone"),
     whatsAppNumber: stringField(formData, "whatsAppNumber"),
     address: stringField(formData, "address"),
@@ -790,7 +794,13 @@ export async function searchBusinessOnGoogleMaps(query: string): Promise<AiResul
   }
 }
 
-export type AddressFromPlace = { address: string | null; city: string | null; state: string | null; country: string | null };
+export type AddressFromPlace = {
+  address: string | null;
+  city: string | null;
+  state: string | null;
+  country: string | null;
+  googleReviewUrl: string | null;
+};
 
 // Partner-gated — the standalone address search box (see AddressSearch)
 // above the Address/City/State/Country fields. A single Place Details call
@@ -804,7 +814,16 @@ export async function getAddressFromGooglePlace(placeId: string): Promise<AiResu
 
   try {
     const place = await getPlaceDetails(placeId);
-    return { status: "ok", data: { address: place.address, city: place.city, state: place.state, country: place.country } };
+    return {
+      status: "ok",
+      data: {
+        address: place.address,
+        city: place.city,
+        state: place.state,
+        country: place.country,
+        googleReviewUrl: googleReviewUrlFromPlaceId(place.id),
+      },
+    };
   } catch (error) {
     return { status: "error", message: error instanceof Error ? error.message : "Couldn't load that address." };
   }
@@ -825,6 +844,11 @@ export type AutoCreatedListingDetails = {
   services: ServiceEntry[];
   faqs: FaqEntry[];
   website: string | null;
+  // Built from the selected Google Maps place's own id (see
+  // googleReviewUrlFromPlaceId) — never through the model, same "fact to
+  // derive, not prose to write" treatment as phone/address/operatingHours
+  // below. Null when there's no place.
+  googleReviewUrl: string | null;
   // Straight from Google's own field (PlaceDetails.phone), never through
   // the model — same "fact to copy, not prose to write" treatment as
   // address/operatingHours below. Null when there's no place, or Google
@@ -847,6 +871,17 @@ export type AutoCreatedListingDetails = {
   // source has a usable image; either way the editor's existing logo (if
   // any) is left alone rather than cleared.
   logoUrl: string | null;
+  // Purely informational — the real values are already written straight to
+  // the listing row by the time this returns (see this function's own
+  // comment on why), not read back from here into anything editable. Lets
+  // the panel tell a partner outright whether a rating was actually found
+  // for their business, rather than leaving "nothing showed up" ambiguous
+  // between "Google has no rating for this place" and "something's wrong."
+  // null (rather than 0) is Google's own "no rating on file," same meaning
+  // as everywhere else googleRating appears; both fields are null together
+  // whenever no place was selected at all.
+  googleRating: number | null;
+  googleRatingCount: number | null;
   // Which inputs actually contributed, so the editor can say so when a
   // website was given but couldn't be read.
   sources: { googleMaps: boolean; website: boolean };
@@ -946,13 +981,26 @@ function websiteContextLines(pages: WebsitePage[]): string[] {
 // through the model, since those are facts to copy, not prose to write.
 // Only ever returns a draft for the editor to fill in — nothing is saved
 // until the partner reviews it and clicks Save draft themselves.
+//
+// Google's own rating/ratingCount are the one exception: written straight
+// to the listing row below, the moment a Google Maps place is read, rather
+// than riding in AutoCreatedListingDetails through the same review-and-Save
+// flow as everything else. A rating isn't AI-written or partner-authored
+// content to review before publishing — it's an external fact a partner
+// shouldn't be able to edit or discard by not saving, the same way they
+// can't edit their own Google star rating on Google itself.
 export async function autoCreateListingDetails(input: {
+  listingId: string;
   placeId?: string;
   website: string;
   companyName: string;
 }): Promise<AiResult<AutoCreatedListingDetails>> {
-  await requirePartnerAction();
+  const partner = await requirePartnerAction();
   if (!isAiConfigured()) return AI_NOT_CONFIGURED;
+
+  const listingId = String(input.listingId ?? "").trim();
+  const listing = listingId ? await getOwnedListing(listingId, partner.id) : null;
+  if (!listing) return { status: "error", message: "Listing not found." };
 
   const placeId = String(input.placeId ?? "").trim();
   if (placeId && !isValidPlaceId(placeId)) return { status: "error", message: "Invalid Google Maps place." };
@@ -966,6 +1014,10 @@ export async function autoCreateListingDetails(input: {
     } catch (error) {
       return { status: "error", message: error instanceof Error ? error.message : "Couldn't read that Google Maps listing." };
     }
+    await db.partnerListing.update({
+      where: { id: listing.id },
+      data: { googleRating: place.rating, googleRatingCount: place.ratingCount, googleMapsUrl: place.googleMapsUrl },
+    });
   }
 
   const website = place?.website || typedWebsite || null;
@@ -1039,6 +1091,7 @@ export async function autoCreateListingDetails(input: {
       services: servicesFromJson(result.data.services.map((service) => ({ ...service, price: "" }))),
       faqs: faqsFromJson(result.data.faqs),
       website,
+      googleReviewUrl: place ? googleReviewUrlFromPlaceId(place.id) : null,
       phone: place?.phone ?? null,
       address: place?.address ?? null,
       city: place?.city ?? null,
@@ -1048,6 +1101,8 @@ export async function autoCreateListingDetails(input: {
       seoTitle: result.data.seoTitle.trim().slice(0, MAX_SEO_TITLE_LENGTH),
       seoDescription: result.data.seoDescription.trim().slice(0, MAX_SEO_DESCRIPTION_LENGTH),
       logoUrl,
+      googleRating: place?.rating ?? null,
+      googleRatingCount: place?.ratingCount ?? null,
       sources: { googleMaps: place !== null, website: pages.length > 0 },
     },
   };
@@ -1219,6 +1274,7 @@ async function saveListingFields(
         googleBusinessProfileUrl: parsed.data.googleBusinessProfileUrl
           ? normalizeWebsiteUrl(parsed.data.googleBusinessProfileUrl)
           : null,
+        googleReviewUrl: parsed.data.googleReviewUrl ? normalizeWebsiteUrl(parsed.data.googleReviewUrl) : null,
         phone: parsed.data.phone ? normalizePhone(parsed.data.phone) : null,
         whatsAppNumber: parsed.data.whatsAppNumber ? normalizePhone(parsed.data.whatsAppNumber) : null,
         address: parsed.data.address || null,
@@ -1823,6 +1879,92 @@ export async function backfillListingSeoMeta(): Promise<SeoBackfillState> {
   }
 
   return { success: true, updated, failed };
+}
+
+export type GoogleRatingBackfillState =
+  | { error: string }
+  | { success: true; updated: number; noMatch: number; noRating: number }
+  | undefined;
+
+// Admin-only — the "Backfill Google ratings" button on the admin page's own
+// Google ratings card. Unlike autoCreateListingDetails (which only ever
+// sets googleRating/googleRatingCount for a Google Maps place a partner
+// themselves picked), this searches Google Places by company name + city/
+// state/country for every published listing that has neither yet, and
+// takes the top result with no human review step — a best-effort match,
+// not a guaranteed-correct one. There's no draft/review step to gate this
+// behind the way AI Auto Create's own written content has one, since a
+// rating isn't content — but that also means a wrong match here (a common
+// business name, a listing with no city/state set) has no review step to
+// catch it either. Meant to run once, as a one-time backfill for listings
+// that predate this feature; going forward, a partner's own AI Auto Create
+// run (which they can see and correct) is the intended path. Republishes
+// each updated listing's own snapshot immediately (see buildPublishedSnapshot)
+// rather than waiting for the partner's next edit, since this is a
+// backfill for the site *now*, not a hint for their next save.
+export async function backfillListingGoogleRatings(): Promise<GoogleRatingBackfillState> {
+  await requireAdminAction();
+  if (!isGooglePlacesConfigured()) {
+    return { error: "Google Places isn't configured — set GOOGLE_PLACES_API_KEY to enable this." };
+  }
+
+  const listings = await db.partnerListing.findMany({
+    where: { status: "PUBLISHED", googleRating: null },
+    include: { categories: { include: { category: true } }, partner: { select: { timezone: true } } },
+  });
+
+  let updated = 0;
+  let noMatch = 0;
+  let noRating = 0;
+  for (const listing of listings) {
+    const query = [listing.companyName, listing.city, listing.state, listing.country].filter(Boolean).join(", ");
+    const topMatch = await searchPlaces(query)
+      .then((results) => results[0] ?? null)
+      .catch(() => null);
+    if (!topMatch) {
+      noMatch++;
+      continue;
+    }
+    const place = await getPlaceDetails(topMatch.id).catch(() => null);
+    if (!place) {
+      noMatch++;
+      continue;
+    }
+    if (place.rating === null) {
+      noRating++;
+      continue;
+    }
+
+    const photos = await loadListingPhotosInOrder(listing.photoIds);
+    const patchedListing = {
+      ...listing,
+      googleRating: place.rating,
+      googleRatingCount: place.ratingCount,
+      googleMapsUrl: place.googleMapsUrl,
+    };
+    await db.partnerListing.update({
+      where: { id: listing.id },
+      data: {
+        googleRating: place.rating,
+        googleRatingCount: place.ratingCount,
+        googleMapsUrl: place.googleMapsUrl,
+        publishedSnapshot: buildPublishedSnapshot(
+          patchedListing,
+          listing.categories.map((entry) => entry.category.name),
+          listing.partner.timezone,
+          photos,
+        ),
+      },
+    });
+    updated++;
+  }
+
+  if (updated > 0) {
+    revalidatePath("/admin");
+    revalidateDirectory({ slugs: listings.map((listing) => listing.slug) });
+  }
+
+  return { success: true, updated, noMatch, noRating };
 }
 
 // Reassigns a listing to a different partner account — e.g. the original

@@ -178,6 +178,33 @@ export const AI_NOT_CONFIGURED: AiResult<never> = {
   message: "AI features aren't configured — set OPENROUTER_API_KEY to enable them.",
 };
 
+// json_object mode is a loose contract, not a guarantee — despite being told
+// to respond with ONLY a JSON object, a free/lite model routinely wraps it in
+// a ```json fence, or adds a line of prose before/after it ("Here's the
+// JSON:", "Let me know if..."). A plain JSON.parse fails on all of those even
+// though the JSON itself is perfectly well-formed, which is exactly the kind
+// of thing that turned into a blanket "didn't return a usable response" with
+// nothing to tell that case apart from a model that produced no JSON at all.
+// Tries, in order: the text as-is; the text with a ```/```json fence
+// stripped; the substring between the first "{" and the last "}" (recovers
+// from prose wrapped around otherwise-valid JSON). Returns undefined, never
+// throws, if none of those parse — callers treat that as "not usable".
+function extractJsonObject(text: string): unknown {
+  const attempts = [text, text.replace(/^```(?:json)?\s*/i, "").replace(/```\s*$/, "")];
+  const start = text.indexOf("{");
+  const end = text.lastIndexOf("}");
+  if (start !== -1 && end > start) attempts.push(text.slice(start, end + 1));
+
+  for (const attempt of attempts) {
+    try {
+      return JSON.parse(attempt);
+    } catch {
+      // try the next candidate
+    }
+  }
+  return undefined;
+}
+
 // Shared across every "use server" file that needs structured JSON back from
 // the model (see ai-insights.ts, testimonials.ts, scan-business-card.ts) —
 // kept here rather than in one of them since a "use server" module can only
@@ -266,23 +293,26 @@ export async function callAi<T>(
 
     const text = choice?.message?.content;
     if (!text) {
+      console.error("callAi: empty response", { model, finishReason });
       return { status: "error", message: "The model didn't return a usable response." };
     }
 
-    // A free/lite model under json_object mode isn't guaranteed to emit
-    // valid JSON the way native structured-output modes are — parsed here
-    // rather than left to throw into the outer catch below, which would
-    // otherwise surface as the unhelpful generic "AI request failed
-    // unexpectedly." instead of this same "didn't return a usable
-    // response" message a failed schema check already gives.
-    let json: unknown;
-    try {
-      json = JSON.parse(text);
-    } catch {
+    const json = extractJsonObject(text);
+    if (json === undefined) {
+      // "length" means max_tokens cut the response off mid-JSON — extremely
+      // unlikely to ever parse, and a distinct, actionable cause worth its
+      // own message rather than the generic one below (raise the caller's
+      // maxTokens, or the content asked for is simply too long).
+      if (finishReason === "length") {
+        console.error("callAi: truncated before completing JSON", { model, textLength: text.length });
+        return { status: "error", message: "The AI's response was cut off before it finished — try again." };
+      }
+      console.error("callAi: response wasn't valid JSON", { model, text: text.slice(0, 500) });
       return { status: "error", message: "The model didn't return a usable response." };
     }
     const parsed = schema.safeParse(json);
     if (!parsed.success) {
+      console.error("callAi: response didn't match the expected schema", { model, issues: parsed.error.issues });
       return { status: "error", message: "The model didn't return a usable response." };
     }
     return { status: "ok", data: parsed.data };

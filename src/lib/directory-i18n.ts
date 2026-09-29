@@ -58,6 +58,27 @@ export function directoryAboutPath(locale: DirectoryLocale): string {
   return `/${locale}/about`;
 }
 
+export function directoryContactPath(locale: DirectoryLocale): string {
+  return `/${locale}/contact`;
+}
+
+// Privacy/Terms deliberately stay English-only content (see
+// directory-legal-copy.ts's own comment on why), but still get a real path
+// under every locale segment — a zh/ms visitor gets the same URL shape as
+// every other page, with a translated notice pointing at the English text,
+// rather than a bare unprefixed /privacy that would break that convention.
+export function directoryPrivacyPath(locale: DirectoryLocale): string {
+  return `/${locale}/privacy`;
+}
+
+export function directoryTermsPath(locale: DirectoryLocale): string {
+  return `/${locale}/terms`;
+}
+
+export function directoryEditorialPolicyPath(locale: DirectoryLocale): string {
+  return `/${locale}/editorial-policy`;
+}
+
 // A listing's own page is just /en/some-company — shorter and friendlier
 // to share than every other directory URL, since it's the one visitors
 // actually pass around. Lives at src/app/[locale]/[slug], a sibling of
@@ -110,6 +131,13 @@ export function directoryListingVisitPath(locale: DirectoryLocale, slug: string)
 
 export function directoryListingFaqPath(locale: DirectoryLocale, slug: string): string {
   return `${directoryListingPath(locale, slug)}/faq`;
+}
+
+// Unlike every other section path above, this tab always appears (see
+// sectionLinks in layout.tsx) — even a listing with zero testimonials yet
+// still needs a reachable page for the write-a-testimonial form itself.
+export function directoryListingTestimonialsPath(locale: DirectoryLocale, slug: string): string {
+  return `${directoryListingPath(locale, slug)}/testimonials`;
 }
 
 // The main top-nav's four destinations (directory-top-nav.tsx) — real
@@ -206,6 +234,14 @@ export function formatAlbumMetaDescription(albumName: string, photoCount: number
   return `View ${photoCount.toLocaleString()} photo${photoCount === 1 ? "" : "s"} from ${companyName}'s "${albumName}" album.`;
 }
 
+export type DirectoryTestimonialFormErrorCode =
+  | "name_required"
+  | "body_required"
+  | "rate_limited"
+  | "listing_not_found"
+  | "invalid_submission"
+  | "generic";
+
 export type DirectoryLeadFormErrorCode =
   | "name_required"
   | "email_required"
@@ -300,6 +336,12 @@ export type DirectoryStrings = {
   guidesIndexEmptyTitle: string;
   guidesIndexEmptyDescription: string;
   guidePublishedOnLabel: string;
+  // Shown alongside guidePublishedOnLabel only when a guide's updatedAt is
+  // meaningfully later than its publishedAt (see GuideDetailContent) — the
+  // visible counterpart to buildGuideJsonLd's own dateModified, so a
+  // revised guide gives the same freshness signal to a reader that it
+  // already gives a crawler.
+  guideUpdatedOnLabel: string;
   // A visible counterpart to buildGuideJsonLd's own organization-level
   // author/publisher — the same "attributed to the team, not an invented
   // personal byline" choice, just readable on the page itself rather than
@@ -348,6 +390,7 @@ export type DirectoryStrings = {
   // the same word singular or plural).
   promotionsHeading: string;
   faqHeading: string;
+  testimonialsHeading: string;
   visitHeading: string;
   // Other locations of the same business, linked from the partner side —
   // only shown on the Visit us page when at least one exists.
@@ -371,6 +414,12 @@ export type DirectoryStrings = {
   dayLabels: DirectoryDayLabels;
   websiteLabel: string;
   locationLabel: string;
+  // aria-label on the header's Google rating badge (see PartnerListing.
+  // googleRating's own comment in prisma/schema.prisma) — the visible text
+  // is just the number/star/review count, universal enough to skip
+  // translation, but a screen reader still needs "Google rating" spelled
+  // out rather than reading a bare "4.6 (128)".
+  googleRatingLabel: string;
   // The listing page's "Recommend" affordances, open to every visitor —
   // the header button, and the sticky bottom-bar button (see the listing
   // layout's own nav). Both share one referral-tracking link (?r=<referral
@@ -411,6 +460,34 @@ export type DirectoryStrings = {
   formSubmitting: string;
   formSuccess: string;
   errors: Record<DirectoryLeadFormErrorCode, string>;
+  // The Testimonials page (see src/app/[locale]/[slug]/testimonials/page.tsx
+  // and TestimonialForm) — testimonialsIntro/testimonialsEmpty describe the
+  // page itself; the rest is the write-a-testimonial form below it.
+  testimonialsIntro: string;
+  testimonialsEmpty: string;
+  testimonialFormHeading: string;
+  testimonialFormNameLabel: string;
+  testimonialFormNamePlaceholder: string;
+  testimonialFormRatingLabel: string;
+  testimonialFormBodyLabel: string;
+  testimonialFormBodyPlaceholder: string;
+  // "Rewrite with AI" button on the testimonial body — only shown when
+  // isAiConfigured() (see rewriteTestimonialWithAi in
+  // src/app/actions/testimonials.ts), same gating as every other AI-assist
+  // button in the partner editor, just on a public, unauthenticated form
+  // this time.
+  testimonialFormRewriteCta: string;
+  testimonialFormRewriting: string;
+  testimonialFormSubmit: string;
+  testimonialFormSubmitting: string;
+  testimonialFormSuccess: string;
+  // Shown after a successful submission, only when the listing has a
+  // googleReviewUrl set — copies the just-submitted text to the clipboard
+  // and opens that link, same "copy + open" pattern as the partner side's
+  // own "Post to Google" (see postToGoogle in updates-editor.tsx).
+  testimonialGoogleCta: string;
+  testimonialGoogleCopied: string;
+  testimonialErrors: Record<DirectoryTestimonialFormErrorCode, string>;
   // The header's "Skip to main content" link (see DirectoryChrome) — visible
   // only once focused (first Tab stop on the page), so a keyboard/screen
   // reader visitor can jump past the header's nav links straight to the
@@ -453,6 +530,10 @@ export type DirectoryStrings = {
   listBusinessCta: string;
   benefitsNavLabel: string;
   aboutNavLabel: string;
+  contactNavLabel: string;
+  privacyNavLabel: string;
+  termsNavLabel: string;
+  editorialPolicyNavLabel: string;
   signupHeading: string;
   signupSubheading: string;
   signupCompanyLabel: string;
@@ -537,6 +618,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     guidesIndexEmptyTitle: "No guides yet",
     guidesIndexEmptyDescription: "Check back soon — guides will appear here.",
     guidePublishedOnLabel: "Published",
+    guideUpdatedOnLabel: "Updated",
     guideByLabel: "By the Gotka Business Directory team",
     guideReadMoreLabel: "Read guide",
     guideRelatedHeading: "Related guides",
@@ -554,6 +636,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     promotionLabel: "Promotion",
     promotionsHeading: "Promotions",
     faqHeading: "FAQ",
+    testimonialsHeading: "Testimonials",
     visitHeading: "Visit us",
     branchesHeading: "Other locations",
     hoursHeading: "Hours",
@@ -576,6 +659,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     },
     websiteLabel: "Website",
     locationLabel: "Location",
+    googleRatingLabel: "Google rating",
     recommendLabel: "Recommend Business",
     recommendMessage: "I recommend {business} — check them out on the Business Directory: {url}",
     shareLabel: "Share Business",
@@ -610,6 +694,29 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       invalid_submission: "Please check the form and try again.",
       generic: "Something went wrong. Please try again.",
     },
+    testimonialsIntro: "Real feedback from customers who've worked with this business.",
+    testimonialsEmpty: "No testimonials yet — be the first to leave one.",
+    testimonialFormHeading: "Write a testimonial",
+    testimonialFormNameLabel: "Your name",
+    testimonialFormNamePlaceholder: "Jane Tan",
+    testimonialFormRatingLabel: "Rating (optional)",
+    testimonialFormBodyLabel: "Your testimonial",
+    testimonialFormBodyPlaceholder: "What was it like working with this business?",
+    testimonialFormRewriteCta: "Rewrite with AI",
+    testimonialFormRewriting: "Rewriting…",
+    testimonialFormSubmit: "Submit testimonial",
+    testimonialFormSubmitting: "Submitting…",
+    testimonialFormSuccess: "Thanks! Your testimonial is awaiting approval before it shows publicly.",
+    testimonialGoogleCta: "Leave it on Google too",
+    testimonialGoogleCopied: "Copied — paste it into the review box that just opened.",
+    testimonialErrors: {
+      name_required: "Name is required",
+      body_required: "Write a few words about your experience",
+      rate_limited: "Too many attempts — please wait a few minutes and try again.",
+      listing_not_found: "This listing is no longer available.",
+      invalid_submission: "Please check the form and try again.",
+      generic: "Something went wrong. Please try again.",
+    },
     skipToContentLabel: "Skip to main content",
     stickyNavLabel: "Quick links",
     sectionNavLabel: "Page sections",
@@ -638,6 +745,10 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     listBusinessCta: "List your business",
     benefitsNavLabel: "Why list your business",
     aboutNavLabel: "About",
+    contactNavLabel: "Contact",
+    privacyNavLabel: "Privacy Policy",
+    termsNavLabel: "Terms of Service",
+    editorialPolicyNavLabel: "Editorial Policy",
     signupHeading: "List your business",
     signupSubheading: "Join the business directory and start receiving inquiries directly from visitors.",
     signupCompanyLabel: "Business name",
@@ -719,6 +830,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     guidesIndexEmptyTitle: "暂无指南",
     guidesIndexEmptyDescription: "请稍后再来查看——指南将显示在这里。",
     guidePublishedOnLabel: "发布于",
+    guideUpdatedOnLabel: "更新于",
     guideByLabel: "作者：Gotka 企业目录团队",
     guideReadMoreLabel: "阅读指南",
     guideRelatedHeading: "相关指南",
@@ -736,6 +848,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     promotionLabel: "促销",
     promotionsHeading: "促销",
     faqHeading: "常见问题",
+    testimonialsHeading: "客户评价",
     visitHeading: "联系地址",
     branchesHeading: "其他分店",
     hoursHeading: "营业时间",
@@ -761,6 +874,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     recommendMessage: "我推荐 {business}——快来企业目录看看：{url}",
     shareLabel: "分享企业",
     locationLabel: "地点",
+    googleRatingLabel: "Google 评分",
     contactHeading: "联系我们",
     contactSubheading: "直接给这家企业发送信息——他们会回复您提供的电子邮件地址和联系电话。",
     contactCallCta: "致电",
@@ -787,6 +901,29 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       phone_required: "请填写电话号码",
       phone_invalid: "请附上国家代码及 + 号，例如 +60 12 345 6789。",
       message_required: "请简单说明您需要的帮助",
+      rate_limited: "尝试次数过多，请稍等几分钟后再试。",
+      listing_not_found: "该合作伙伴的资料已下架。",
+      invalid_submission: "请检查表单内容后重试。",
+      generic: "出现错误，请重试。",
+    },
+    testimonialsIntro: "来自曾与该企业合作的客户的真实反馈。",
+    testimonialsEmpty: "暂无评价——成为第一个留下评价的人。",
+    testimonialFormHeading: "撰写评价",
+    testimonialFormNameLabel: "您的姓名",
+    testimonialFormNamePlaceholder: "陈小姐",
+    testimonialFormRatingLabel: "评分（可选）",
+    testimonialFormBodyLabel: "您的评价",
+    testimonialFormBodyPlaceholder: "与该企业合作的体验如何？",
+    testimonialFormRewriteCta: "用 AI 润色",
+    testimonialFormRewriting: "润色中…",
+    testimonialFormSubmit: "提交评价",
+    testimonialFormSubmitting: "提交中…",
+    testimonialFormSuccess: "谢谢！您的评价将在审核通过后公开显示。",
+    testimonialGoogleCta: "同时发布到 Google",
+    testimonialGoogleCopied: "已复制——请粘贴到刚打开的评价框中。",
+    testimonialErrors: {
+      name_required: "请填写姓名",
+      body_required: "请简单描述您的体验",
       rate_limited: "尝试次数过多，请稍等几分钟后再试。",
       listing_not_found: "该合作伙伴的资料已下架。",
       invalid_submission: "请检查表单内容后重试。",
@@ -819,6 +956,10 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     listBusinessCta: "刊登您的企业",
     benefitsNavLabel: "为什么要刊登您的企业",
     aboutNavLabel: "关于我们",
+    contactNavLabel: "联系我们",
+    privacyNavLabel: "隐私政策",
+    termsNavLabel: "服务条款",
+    editorialPolicyNavLabel: "编辑政策",
     signupHeading: "刊登您的企业",
     signupSubheading: "加入企业目录，直接从访客那里获得咨询。",
     signupCompanyLabel: "企业名称",
@@ -900,6 +1041,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     guidesIndexEmptyTitle: "Belum ada panduan",
     guidesIndexEmptyDescription: "Sila semak semula tidak lama lagi — panduan akan dipaparkan di sini.",
     guidePublishedOnLabel: "Diterbitkan",
+    guideUpdatedOnLabel: "Dikemas kini",
     guideByLabel: "Oleh pasukan Direktori Perniagaan Gotka",
     guideReadMoreLabel: "Baca panduan",
     guideRelatedHeading: "Panduan berkaitan",
@@ -917,6 +1059,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     promotionLabel: "Promosi",
     promotionsHeading: "Promosi",
     faqHeading: "Soalan lazim",
+    testimonialsHeading: "Testimoni",
     visitHeading: "Lawati kami",
     branchesHeading: "Lokasi lain",
     hoursHeading: "Waktu Operasi",
@@ -942,6 +1085,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     recommendMessage: "Saya syorkan {business} — lihat mereka di Direktori Perniagaan: {url}",
     shareLabel: "Kongsi Perniagaan",
     locationLabel: "Lokasi",
+    googleRatingLabel: "Penilaian Google",
     contactHeading: "Hubungi kami",
     contactSubheading: "Hantar mesej terus kepada perniagaan ini — mereka akan membalas ke alamat e-mel dan nombor telefon yang anda berikan.",
     contactCallCta: "Hubungi",
@@ -968,6 +1112,29 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       phone_required: "Nombor telefon diperlukan",
       phone_invalid: "Sertakan kod negara dengan tanda +, contohnya +60 12 345 6789.",
       message_required: "Beritahu kami sedikit tentang apa yang anda perlukan",
+      rate_limited: "Terlalu banyak percubaan — sila tunggu beberapa minit dan cuba lagi.",
+      listing_not_found: "Penyenaraian ini tidak lagi tersedia.",
+      invalid_submission: "Sila semak borang dan cuba lagi.",
+      generic: "Berlaku ralat. Sila cuba lagi.",
+    },
+    testimonialsIntro: "Maklum balas sebenar daripada pelanggan yang pernah berurusan dengan perniagaan ini.",
+    testimonialsEmpty: "Belum ada testimoni — jadilah yang pertama meninggalkan satu.",
+    testimonialFormHeading: "Tulis testimoni",
+    testimonialFormNameLabel: "Nama anda",
+    testimonialFormNamePlaceholder: "Siti Aminah",
+    testimonialFormRatingLabel: "Penilaian (pilihan)",
+    testimonialFormBodyLabel: "Testimoni anda",
+    testimonialFormBodyPlaceholder: "Bagaimana pengalaman anda berurusan dengan perniagaan ini?",
+    testimonialFormRewriteCta: "Tulis semula dengan AI",
+    testimonialFormRewriting: "Menulis semula…",
+    testimonialFormSubmit: "Hantar testimoni",
+    testimonialFormSubmitting: "Menghantar…",
+    testimonialFormSuccess: "Terima kasih! Testimoni anda menunggu kelulusan sebelum dipaparkan secara terbuka.",
+    testimonialGoogleCta: "Hantar ke Google juga",
+    testimonialGoogleCopied: "Disalin — tampal ke dalam kotak ulasan yang baru dibuka.",
+    testimonialErrors: {
+      name_required: "Nama diperlukan",
+      body_required: "Tulis beberapa patah perkataan tentang pengalaman anda",
       rate_limited: "Terlalu banyak percubaan — sila tunggu beberapa minit dan cuba lagi.",
       listing_not_found: "Penyenaraian ini tidak lagi tersedia.",
       invalid_submission: "Sila semak borang dan cuba lagi.",
@@ -1001,6 +1168,10 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     listBusinessCta: "Senaraikan perniagaan anda",
     benefitsNavLabel: "Kenapa senaraikan perniagaan anda",
     aboutNavLabel: "Tentang kami",
+    contactNavLabel: "Hubungi kami",
+    privacyNavLabel: "Dasar Privasi",
+    termsNavLabel: "Terma Perkhidmatan",
+    editorialPolicyNavLabel: "Dasar Editorial",
     signupHeading: "Senaraikan perniagaan anda",
     signupSubheading: "Sertai direktori perniagaan dan mula menerima pertanyaan terus daripada pelawat.",
     signupCompanyLabel: "Nama perniagaan",

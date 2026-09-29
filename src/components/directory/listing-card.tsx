@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ChevronRight, Eye } from "lucide-react";
 import { Card, CardBody } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { StarRating } from "@/components/ui/star-rating";
 import { ListingLogo } from "@/components/directory/listing-logo";
 import type { DirectoryGridListing } from "@/lib/directory";
 import { directoryListingPath, type DirectoryLocale } from "@/lib/directory-i18n";
@@ -43,6 +44,12 @@ export function ListingCard({
               <h3 className="truncate font-semibold text-slate-900 dark:text-slate-100">{listing.companyName}</h3>
               {listing.industry && industryLabel && (
                 <p className="truncate text-xs text-slate-500 dark:text-slate-400">{industryLabel}</p>
+              )}
+              {listing.googleRating !== null && (
+                <div className="mt-0.5 flex items-center gap-1">
+                  <StarRating rating={listing.googleRating} size="h-3 w-3" />
+                  <span className="text-xs font-medium text-slate-700 dark:text-slate-200">{listing.googleRating.toFixed(1)}</span>
+                </div>
               )}
             </div>
           </div>

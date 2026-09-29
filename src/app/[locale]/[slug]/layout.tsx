@@ -29,6 +29,7 @@ import {
   directoryListingPhotosPath,
   directoryListingPromotionsPath,
   directoryListingServicesPath,
+  directoryListingTestimonialsPath,
   directoryListingVideosPath,
   directoryListingVisitPath,
   formatContactWhatsAppMessage,
@@ -42,6 +43,7 @@ import { industryPath } from "@/lib/directory-industry-labels";
 import { getSiteOrigin } from "@/lib/site-url";
 import { INDUSTRY_LABELS } from "@/lib/labels";
 import { Badge } from "@/components/ui/badge";
+import { StarRating } from "@/components/ui/star-rating";
 import { buttonClasses } from "@/components/ui/button";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
 import { ListingLogo } from "@/components/directory/listing-logo";
@@ -64,6 +66,39 @@ export const dynamic = "force-dynamic";
 // the listing has no logo — JSON-LD's own `image` is left unset entirely in
 // that case rather than pointed at unrelated Gotka branding.
 type ListingWithMeta = NonNullable<Awaited<ReturnType<typeof getPublishedListingBySlug>>>;
+
+// Shared by both header layouts below (desktop's sm:flex block and mobile's
+// sm:hidden duplicate — see their own comments on why the content repeats).
+// A real link to the Google Maps listing when one's on file (see
+// PartnerListing.googleMapsUrl's own comment in prisma/schema.prisma) so a
+// visitor can read the reviews behind the number, not just be told to trust
+// it; a plain span on older data set before that column existed.
+function GoogleRatingBadge({ listing, ratingLabel }: { listing: ListingWithMeta; ratingLabel: string }) {
+  if (listing.googleRating === null) return null;
+  const label = `${ratingLabel}: ${listing.googleRating}${listing.googleRatingCount !== null ? ` (${listing.googleRatingCount})` : ""}`;
+  const content = (
+    <>
+      <StarRating rating={listing.googleRating} size="h-4 w-4" />
+      <span className="font-semibold text-slate-700 dark:text-slate-200">{listing.googleRating.toFixed(1)}</span>
+      {listing.googleRatingCount !== null && <span>({listing.googleRatingCount})</span>}
+    </>
+  );
+  return listing.googleMapsUrl ? (
+    <a
+      href={listing.googleMapsUrl}
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+      aria-label={label}
+      className="inline-flex items-center gap-1 hover:text-petrol hover:underline dark:hover:text-petrol-light"
+    >
+      {content}
+    </a>
+  ) : (
+    <span aria-label={label} className="inline-flex items-center gap-1">
+      {content}
+    </span>
+  );
+}
 
 function buildListingLogoUrl(listing: ListingWithMeta, siteOrigin: string, slug: string): string | null {
   return listing.logoUrl ? `${siteOrigin}${listingLogoPath(slug, listing.publishedAt)}` : null;
@@ -138,6 +173,19 @@ function buildJsonLd(
   }
   if (listing.website) jsonLd.sameAs = [listing.website];
   if (listing.phone) jsonLd.telephone = listing.phone;
+  // Google's own rating (see PartnerListing.googleRating's own comment in
+  // prisma/schema.prisma) — schema.org requires a ratingCount/reviewCount
+  // on an AggregateRating, so this only appears once both are present,
+  // never rating alone. Google Places already checks a rating has at least
+  // one review before it ever returns one, so ratingCount === 0 alongside
+  // a non-null rating isn't a real case to guard against here.
+  if (listing.googleRating !== null && listing.googleRatingCount !== null) {
+    jsonLd.aggregateRating = {
+      "@type": "AggregateRating",
+      ratingValue: listing.googleRating,
+      reviewCount: listing.googleRatingCount,
+    };
+  }
   // English regardless of the page's own locale — schema.org's own
   // vocabulary/consumers (search engines, AI crawlers) expect this field in
   // a consistent language, unlike the human-visible badge below.
@@ -283,6 +331,11 @@ export default async function ListingLayout({
     // deciding what to buy is exactly who wants "any questions about
     // this?" right next to it.
     display.faqs.length > 0 && { href: directoryListingFaqPath(resolved, slug), label: t.faqHeading },
+    // Unconditional, unlike every other tab here — the write-a-testimonial
+    // form (see the Testimonials page's own comment) always has something
+    // to show even with zero APPROVED testimonials yet, so this tab never
+    // needs a "does this page have content" guard.
+    { href: directoryListingTestimonialsPath(resolved, slug), label: t.testimonialsHeading },
     listing.photos.length > 0 && { href: directoryListingPhotosPath(resolved, slug), label: t.photosHeading },
     display.videoGallery.length > 0 && { href: directoryListingVideosPath(resolved, slug), label: t.videoHeading },
     display.currentNews.length > 0 && { href: directoryListingNewsPath(resolved, slug), label: t.newsLabel },
@@ -375,6 +428,7 @@ export default async function ListingLayout({
                 </div>
               )}
               <div className="flex flex-wrap items-center gap-3 text-base text-slate-500 dark:text-slate-400">
+                <GoogleRatingBadge listing={listing} ratingLabel={t.googleRatingLabel} />
                 {listing.state ? (
                   <Link
                     href={locationPath(slugify(locationLabel(listing.city, listing.state)), resolved)}
@@ -504,6 +558,7 @@ export default async function ListingLayout({
                 </div>
               )}
               <div className="flex flex-wrap items-center gap-3 text-base text-slate-500 dark:text-slate-400">
+                <GoogleRatingBadge listing={listing} ratingLabel={t.googleRatingLabel} />
                 {listing.state ? (
                   <Link
                     href={locationPath(slugify(locationLabel(listing.city, listing.state)), resolved)}

@@ -289,6 +289,35 @@ model PartnerListing {
   // Used only to open the partner's own profile in a new tab when they use
   // "Post to Google" on a News/Promotion entry — never shown publicly.
   googleBusinessProfileUrl String?
+  // Google's own rating for this business, as of the last time a partner
+  // ran AI Auto Create against a Google Maps place (see
+  // autoCreateListingDetails in src/app/actions/directory.ts, which writes
+  // these two columns directly rather than through the editor's own
+  // review-and-save flow) — a fact fetched straight from Google Places,
+  // never partner-entered or AI-written, and deliberately not exposed as
+  // an editable field anywhere: showing a business's own claimed rating
+  // would defeat the point of it being Google's, not theirs. Null until a
+  // partner has linked a Google Maps place at least once, or when Google
+  // itself has no rating for that place.
+  googleRating             Float?
+  googleRatingCount        Int?
+  // The Google Maps listing the rating above came from (PlaceDetails.
+  // googleMapsUrl) — what the public page's own star rating links out to,
+  // so a visitor can read the reviews behind the number rather than just
+  // being told to trust it. Same provenance/never-editable rule as
+  // googleRating itself; null on a listing whose rating was set before this
+  // column existed, until the next AI Auto Create run or ratings backfill.
+  googleMapsUrl            String?
+  // The business's own public "write a review" link — auto-filled from
+  // Google Places (search.google.com/local/writereview?placeid=...) when
+  // AI Auto Create or the address search resolves a Google Maps listing
+  // (see autoCreateListingDetails/getAddressFromGooglePlace in
+  // src/app/actions/directory.ts), or pasted in by hand otherwise — e.g.
+  // the short g.page/r/.../review link from Google Business Profile's own
+  // "Get more reviews" tool. Unlike googleBusinessProfileUrl above, this
+  // one IS shown publicly: it's the "Leave it on Google too" link on the
+  // Testimonials page (see TestimonialForm).
+  googleReviewUrl          String?
   // The business's own public contact number — shown on the public listing
   // page as a click-to-call button (see PublishedListingSnapshot's own
   // comment on why this is a different thing from User.phone). Stored
@@ -358,6 +387,7 @@ model PartnerListing {
   referralViews ListingReferralView[]
   branchLinksA  PartnerListingBranchLink[] @relation("BranchLinkA")
   branchLinksB  PartnerListingBranchLink[] @relation("BranchLinkB")
+  testimonials  DirectoryTestimonial[]
 
   @@index([status])
   @@index([partnerId])
@@ -576,6 +606,43 @@ model DirectoryLeadReply {
   authorId String
 
   @@index([leadId])
+}
+
+enum DirectoryTestimonialStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+// A visitor-written testimonial on a listing's own Testimonials page (see
+// TestimonialForm) — always PENDING until an admin approves it (see
+// approveDirectoryTestimonial/rejectDirectoryTestimonial in
+// src/app/actions/testimonials.ts), unlike DirectoryLead above, which needs
+// no such gate since a lead is private to the partner. A testimonial is
+// headed for public display, the same trust boundary every other
+// visitor-facing content on this site (PartnerListing.status itself) already
+// enforces. No author email/phone, unlike DirectoryLead: there's never a
+// reason to contact a testimonial's author back, and a lighter form lowers
+// the bar to actually writing one.
+model DirectoryTestimonial {
+  id     String                     @id @default(cuid())
+  status DirectoryTestimonialStatus @default(PENDING)
+
+  authorName String
+  rating     Int?
+  body       String  @db.Text
+  locale     String  @default("en")
+
+  reviewNote String?   @db.Text
+  reviewedAt DateTime?
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+
+  listing   PartnerListing @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  listingId String
+
+  @@index([listingId, status])
+  @@index([status])
 }
 
 // How many times a specific signed-in partner's own copy of a listing's
