@@ -101,7 +101,10 @@ export default async function AdminDirectoryPage() {
     db.directoryTestimonial.findMany({
       where: { status: "PENDING" },
       orderBy: { createdAt: "asc" },
-      include: { listing: { select: { companyName: true, slug: true, logoUrl: true } } },
+      include: {
+        listing: { select: { companyName: true, slug: true, logoUrl: true } },
+        images: { orderBy: { createdAt: "asc" }, select: { id: true } },
+      },
     }),
     db.partnerListing.findMany({
       orderBy: { updatedAt: "desc" },
@@ -308,6 +311,19 @@ export default async function AdminDirectoryPage() {
                   <p className="whitespace-pre-wrap rounded-md bg-slate-50 p-3 text-xs text-slate-600 dark:bg-neutral-800 dark:text-slate-300">
                     {testimonial.body}
                   </p>
+                  {testimonial.images.length > 0 && (
+                    <div className="flex flex-wrap gap-2">
+                      {testimonial.images.map((image) => (
+                        // eslint-disable-next-line @next/next/no-img-element -- served straight out of the DB by /api/directory-images, same reasoning as ListingLogo
+                        <img
+                          key={image.id}
+                          src={`/api/directory-images/${image.id}`}
+                          alt="Attached to this testimonial"
+                          className="h-16 w-16 rounded object-cover"
+                        />
+                      ))}
+                    </div>
+                  )}
                   <div className="flex flex-wrap items-center gap-2">
                     <form action={approveDirectoryTestimonial.bind(null, testimonial.id)}>
                       <Button type="submit" size="sm">
