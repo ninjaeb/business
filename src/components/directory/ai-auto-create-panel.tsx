@@ -140,11 +140,21 @@ export function AiAutoCreatePanel({
       }
       onCreated(result.data);
       const { googleMaps, website: fromWebsite } = result.data.sources;
-      toast.success(
+      const baseMessage =
         googleMaps && !fromWebsite && website
-          ? "Details created from your Google Maps listing — your website couldn't be read. Review each section, then save."
-          : "Details created — review each section, then save.",
-      );
+          ? "Details created from your Google Maps listing — your website couldn't be read."
+          : "Details created.";
+      // Spelled out either way rather than left silent on a miss — a
+      // partner who just picked a place and sees no star rating appear
+      // shouldn't be left guessing whether that's Google (no rating on
+      // file yet) or a bug (see autoCreateListingDetails's own comment on
+      // why this field exists at all).
+      const ratingNote = !googleMaps
+        ? ""
+        : result.data.googleRating !== null
+          ? ` Found a ${result.data.googleRating.toFixed(1)}★ Google rating${result.data.googleRatingCount !== null ? ` (${result.data.googleRatingCount} reviews)` : ""}.`
+          : " No Google rating on file for this business yet.";
+      toast.success(`${baseMessage}${ratingNote} Review each section, then save.`);
     });
   }
 
