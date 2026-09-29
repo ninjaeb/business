@@ -65,6 +65,39 @@ export const dynamic = "force-dynamic";
 // that case rather than pointed at unrelated Gotka branding.
 type ListingWithMeta = NonNullable<Awaited<ReturnType<typeof getPublishedListingBySlug>>>;
 
+// Shared by both header layouts below (desktop's sm:flex block and mobile's
+// sm:hidden duplicate — see their own comments on why the content repeats).
+// A real link to the Google Maps listing when one's on file (see
+// PartnerListing.googleMapsUrl's own comment in prisma/schema.prisma) so a
+// visitor can read the reviews behind the number, not just be told to trust
+// it; a plain span on older data set before that column existed.
+function GoogleRatingBadge({ listing, ratingLabel }: { listing: ListingWithMeta; ratingLabel: string }) {
+  if (listing.googleRating === null) return null;
+  const label = `${ratingLabel}: ${listing.googleRating}${listing.googleRatingCount !== null ? ` (${listing.googleRatingCount})` : ""}`;
+  const content = (
+    <>
+      <Star className="h-4 w-4 fill-amber-400 text-amber-400" aria-hidden="true" />
+      <span className="font-semibold text-slate-700 dark:text-slate-200">{listing.googleRating.toFixed(1)}</span>
+      {listing.googleRatingCount !== null && <span>({listing.googleRatingCount})</span>}
+    </>
+  );
+  return listing.googleMapsUrl ? (
+    <a
+      href={listing.googleMapsUrl}
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+      aria-label={label}
+      className="inline-flex items-center gap-1 hover:text-petrol hover:underline dark:hover:text-petrol-light"
+    >
+      {content}
+    </a>
+  ) : (
+    <span aria-label={label} className="inline-flex items-center gap-1">
+      {content}
+    </span>
+  );
+}
+
 function buildListingLogoUrl(listing: ListingWithMeta, siteOrigin: string, slug: string): string | null {
   return listing.logoUrl ? `${siteOrigin}${listingLogoPath(slug, listing.publishedAt)}` : null;
 }
@@ -388,16 +421,7 @@ export default async function ListingLayout({
                 </div>
               )}
               <div className="flex flex-wrap items-center gap-3 text-base text-slate-500 dark:text-slate-400">
-                {listing.googleRating !== null && (
-                  <span
-                    className="inline-flex items-center gap-1"
-                    aria-label={`${t.googleRatingLabel}: ${listing.googleRating}${listing.googleRatingCount !== null ? ` (${listing.googleRatingCount})` : ""}`}
-                  >
-                    <Star className="h-4 w-4 fill-amber-400 text-amber-400" aria-hidden="true" />
-                    <span className="font-semibold text-slate-700 dark:text-slate-200">{listing.googleRating.toFixed(1)}</span>
-                    {listing.googleRatingCount !== null && <span>({listing.googleRatingCount})</span>}
-                  </span>
-                )}
+                <GoogleRatingBadge listing={listing} ratingLabel={t.googleRatingLabel} />
                 {listing.state ? (
                   <Link
                     href={locationPath(slugify(locationLabel(listing.city, listing.state)), resolved)}
@@ -527,16 +551,7 @@ export default async function ListingLayout({
                 </div>
               )}
               <div className="flex flex-wrap items-center gap-3 text-base text-slate-500 dark:text-slate-400">
-                {listing.googleRating !== null && (
-                  <span
-                    className="inline-flex items-center gap-1"
-                    aria-label={`${t.googleRatingLabel}: ${listing.googleRating}${listing.googleRatingCount !== null ? ` (${listing.googleRatingCount})` : ""}`}
-                  >
-                    <Star className="h-4 w-4 fill-amber-400 text-amber-400" aria-hidden="true" />
-                    <span className="font-semibold text-slate-700 dark:text-slate-200">{listing.googleRating.toFixed(1)}</span>
-                    {listing.googleRatingCount !== null && <span>({listing.googleRatingCount})</span>}
-                  </span>
-                )}
+                <GoogleRatingBadge listing={listing} ratingLabel={t.googleRatingLabel} />
                 {listing.state ? (
                   <Link
                     href={locationPath(slugify(locationLabel(listing.city, listing.state)), resolved)}

@@ -301,6 +301,13 @@ model PartnerListing {
   // itself has no rating for that place.
   googleRating             Float?
   googleRatingCount        Int?
+  // The Google Maps listing the rating above came from (PlaceDetails.
+  // googleMapsUrl) — what the public page's own star rating links out to,
+  // so a visitor can read the reviews behind the number rather than just
+  // being told to trust it. Same provenance/never-editable rule as
+  // googleRating itself; null on a listing whose rating was set before this
+  // column existed, until the next AI Auto Create run or ratings backfill.
+  googleMapsUrl            String?
   // The business's own public contact number — shown on the public listing
   // page as a click-to-call button (see PublishedListingSnapshot's own
   // comment on why this is a different thing from User.phone). Stored

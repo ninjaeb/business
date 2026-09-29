@@ -18,6 +18,7 @@ import { ConfirmSubmitButton } from "@/components/ui/confirm-submit-button";
 import { ListingLogo } from "@/components/directory/listing-logo";
 import { DirectoryApprovalSettingsForm } from "@/components/directory/directory-approval-settings-form";
 import { SeoBackfillForm } from "@/components/directory/seo-backfill-form";
+import { GoogleRatingBackfillForm } from "@/components/directory/google-rating-backfill-form";
 import { EmailSettingsForm } from "@/components/settings/email-settings-form";
 import { WhatsAppSettingsForm } from "@/components/settings/whatsapp-settings-form";
 import {
@@ -59,7 +60,7 @@ function formatOperatingHoursPreview(value: unknown): string[] {
 // own Settings → Team.
 export default async function AdminDirectoryPage() {
   await requireAdmin();
-  const [stats, currency, approvalMode, emailSettings, whatsAppSettings, missingSeoCount, pendingListings, allListings, partners, recentLeads] = await Promise.all([
+  const [stats, currency, approvalMode, emailSettings, whatsAppSettings, missingSeoCount, missingGoogleRatingCount, pendingListings, allListings, partners, recentLeads] = await Promise.all([
     getDirectoryOverviewStats(),
     getCurrency(),
     getDirectoryApprovalMode(),
@@ -74,6 +75,10 @@ export default async function AdminDirectoryPage() {
         OR: [{ seoTitle: null }, { seoTitle: "" }, { seoDescription: null }, { seoDescription: "" }],
       },
     }),
+    // For the Google ratings card below — how many live listings have no
+    // googleRating of their own yet (see backfillListingGoogleRatings's own
+    // comment in src/app/actions/directory.ts).
+    db.partnerListing.count({ where: { status: "PUBLISHED", googleRating: null } }),
     db.partnerListing.findMany({
       where: { status: "PENDING_REVIEW" },
       orderBy: { submittedAt: "asc" },
@@ -178,6 +183,15 @@ export default async function AdminDirectoryPage() {
         </CardHeader>
         <CardBody>
           <SeoBackfillForm missingCount={missingSeoCount} />
+        </CardBody>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Google ratings</CardTitle>
+        </CardHeader>
+        <CardBody>
+          <GoogleRatingBackfillForm missingCount={missingGoogleRatingCount} />
         </CardBody>
       </Card>
 

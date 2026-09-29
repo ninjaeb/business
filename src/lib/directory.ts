@@ -63,6 +63,10 @@ export type PublishedListingSnapshot = {
   // rating on file. Never partner-editable.
   googleRating: number | null;
   googleRatingCount: number | null;
+  // The Google Maps listing the rating above came from — what the star
+  // rating links out to. Same provenance as googleRating; null on older
+  // data set before this field existed.
+  googleMapsUrl: string | null;
   phone: string | null;
   whatsAppNumber: string | null;
   videos: VideoEntry[];
@@ -505,6 +509,7 @@ export function readPublishedSnapshot(value: unknown): PublishedListingSnapshot 
     website: typeof raw.website === "string" ? raw.website : null,
     googleRating: typeof raw.googleRating === "number" ? raw.googleRating : null,
     googleRatingCount: typeof raw.googleRatingCount === "number" ? raw.googleRatingCount : null,
+    googleMapsUrl: typeof raw.googleMapsUrl === "string" ? raw.googleMapsUrl : null,
     phone: typeof raw.phone === "string" ? raw.phone : null,
     whatsAppNumber: typeof raw.whatsAppNumber === "string" ? raw.whatsAppNumber : null,
     videos: videosFromJson(raw.videos),
@@ -551,6 +556,7 @@ export function buildPublishedSnapshot(
     website: listing.website,
     googleRating: listing.googleRating,
     googleRatingCount: listing.googleRatingCount,
+    googleMapsUrl: listing.googleMapsUrl,
     phone: listing.phone,
     whatsAppNumber: listing.whatsAppNumber,
     videos: videosFromJson(listing.videos),
@@ -597,6 +603,12 @@ export type DirectoryGridListing = {
   state: string | null;
   country: string | null;
   logoUrl: string | null;
+  // Same provenance as PublishedListingSnapshot's own googleRating —
+  // shown as a small star rating on the card. No googleMapsUrl here: the
+  // whole card is already a Link to the listing's own page, where that
+  // link lives — a second <a> around just the rating would nest anchors.
+  googleRating: number | null;
+  googleRatingCount: number | null;
   // Pre-formatted for the grid's own locale (see formatViewsLabel) — same
   // "computed once, server-side, where the locale is already in scope"
   // reasoning toDirectoryGridListing's other locale-dependent fields use,
@@ -848,6 +860,8 @@ export function toDirectoryGridListing(
     state: listing.state,
     country: listing.country,
     logoUrl: listing.logoUrl ? listingLogoPath(slug, publishedAt) : null,
+    googleRating: listing.googleRating,
+    googleRatingCount: listing.googleRatingCount,
     viewsLabel: formatViewsLabel(viewCount, locale),
   };
 }
