@@ -497,6 +497,18 @@ export default async function ListingLayout({
               className="w-full bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"
             />
             <ShareButton title={listing.companyName} url={pageUrl} label={t.shareLabel} className="w-full" />
+            {/* Right below Share — a visitor who's just shared or
+                recommended this business is exactly who's primed to also
+                leave their own testimonial (see the Testimonials tab/page,
+                directoryListingTestimonialsPath). A plain link, not a
+                ShareButton: this navigates to the write-a-testimonial form
+                itself rather than opening a share sheet. */}
+            <Link
+              href={directoryListingTestimonialsPath(resolved, slug)}
+              className={buttonClasses("secondary", "md", "w-full justify-center")}
+            >
+              {t.testimonialFormHeading}
+            </Link>
           </div>
         </div>
 
@@ -518,6 +530,12 @@ export default async function ListingLayout({
             className="flex-1 justify-center bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"
           />
           <ShareButton title={listing.companyName} url={pageUrl} label={t.shareLabel} className="flex-1 justify-center" />
+          <Link
+            href={directoryListingTestimonialsPath(resolved, slug)}
+            className={buttonClasses("secondary", "md", "flex-1 justify-center")}
+          >
+            {t.testimonialFormHeading}
+          </Link>
         </div>
 
         <ListingSectionNav sections={sectionLinks} navLabel={t.sectionNavLabel} />

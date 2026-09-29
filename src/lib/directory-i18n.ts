@@ -186,6 +186,12 @@ export function formatContactWhatsAppMessage(template: string, business: string)
   return template.replace("{business}", business);
 }
 
+// Fills in DirectoryStrings.testimonialFormPhotosUploading's {done}/{total}
+// tokens — see that field's own comment.
+export function formatTestimonialPhotosUploading(template: string, done: number, total: number): string {
+  return template.replace("{done}", String(done)).replace("{total}", String(total));
+}
+
 // Fills in DirectoryStrings.searchViewAllResults's {query} token — see that
 // field's own comment for why this is plain substitution, not a template
 // literal built where the message is used.
@@ -471,6 +477,13 @@ export type DirectoryStrings = {
   testimonialFormRatingLabel: string;
   testimonialFormBodyLabel: string;
   testimonialFormBodyPlaceholder: string;
+  // The optional photo picker under the body field (see uploadTestimonialPhoto
+  // in src/app/actions/testimonials.ts) — testimonialFormPhotosUploading has
+  // a {done}/{total} token, filled in via formatTestimonialPhotosUploading.
+  testimonialFormPhotosLabel: string;
+  testimonialFormPhotosCta: string;
+  testimonialFormPhotosUploading: string;
+  testimonialFormPhotosTooMany: string;
   // "Rewrite with AI" button on the testimonial body — only shown when
   // isAiConfigured() (see rewriteTestimonialWithAi in
   // src/app/actions/testimonials.ts), same gating as every other AI-assist
@@ -702,6 +715,10 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormRatingLabel: "Rating (optional)",
     testimonialFormBodyLabel: "Your testimonial",
     testimonialFormBodyPlaceholder: "What was it like working with this business?",
+    testimonialFormPhotosLabel: "Photos (optional)",
+    testimonialFormPhotosCta: "Add photos",
+    testimonialFormPhotosUploading: "Uploading photo {done}/{total}…",
+    testimonialFormPhotosTooMany: "Up to 4 photos per testimonial.",
     testimonialFormRewriteCta: "Rewrite with AI",
     testimonialFormRewriting: "Rewriting…",
     testimonialFormSubmit: "Submit testimonial",
@@ -914,6 +931,10 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormRatingLabel: "评分（可选）",
     testimonialFormBodyLabel: "您的评价",
     testimonialFormBodyPlaceholder: "与该企业合作的体验如何？",
+    testimonialFormPhotosLabel: "照片（可选）",
+    testimonialFormPhotosCta: "添加照片",
+    testimonialFormPhotosUploading: "正在上传照片 {done}/{total}…",
+    testimonialFormPhotosTooMany: "每条评价最多可上传 4 张照片。",
     testimonialFormRewriteCta: "用 AI 润色",
     testimonialFormRewriting: "润色中…",
     testimonialFormSubmit: "提交评价",
@@ -1125,6 +1146,10 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormRatingLabel: "Penilaian (pilihan)",
     testimonialFormBodyLabel: "Testimoni anda",
     testimonialFormBodyPlaceholder: "Bagaimana pengalaman anda berurusan dengan perniagaan ini?",
+    testimonialFormPhotosLabel: "Foto (pilihan)",
+    testimonialFormPhotosCta: "Tambah foto",
+    testimonialFormPhotosUploading: "Memuat naik foto {done}/{total}…",
+    testimonialFormPhotosTooMany: "Sehingga 4 foto setiap testimoni.",
     testimonialFormRewriteCta: "Tulis semula dengan AI",
     testimonialFormRewriting: "Menulis semula…",
     testimonialFormSubmit: "Hantar testimoni",

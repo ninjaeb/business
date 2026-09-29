@@ -58,6 +58,7 @@ export default async function TestimonialsPage({
   const testimonials = await db.directoryTestimonial.findMany({
     where: { listingId: listing.id, status: "APPROVED" },
     orderBy: { createdAt: "desc" },
+    include: { images: { orderBy: { createdAt: "asc" } } },
   });
 
   return (
