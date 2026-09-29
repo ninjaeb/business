@@ -37,6 +37,17 @@ export function isValidPlaceId(value: string): boolean {
   return PLACE_ID_PATTERN.test(value);
 }
 
+// Google's own public "write a review" composer for a place — no API call
+// needed, just its id (already validated by isValidPlaceId at every call
+// site before it reaches here). Used to auto-fill PartnerListing.googleReviewUrl
+// whenever a partner picks a Google Maps listing (see getAddressFromGooglePlace/
+// autoCreateListingDetails in src/app/actions/directory.ts) — the same link a
+// visitor would reach by searching the business on Google Maps and tapping
+// "Write a review" themselves.
+export function googleReviewUrlFromPlaceId(placeId: string): string {
+  return `https://search.google.com/local/writereview?placeid=${encodeURIComponent(placeId)}`;
+}
+
 export type PlaceSearchResult = {
   id: string;
   name: string;

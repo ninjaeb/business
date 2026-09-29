@@ -67,6 +67,13 @@ export type PublishedListingSnapshot = {
   // rating links out to. Same provenance as googleRating; null on older
   // data set before this field existed.
   googleMapsUrl: string | null;
+  // The business's own public "write a review" link — auto-filled from
+  // Google Places or pasted in by hand (see PartnerListing.googleReviewUrl's
+  // own comment in prisma/schema.prisma). Unlike googleRating/googleMapsUrl
+  // above, this one has nothing to do with Google's own rating number —
+  // it's the "Leave it on Google too" link on the Testimonials page (see
+  // TestimonialForm).
+  googleReviewUrl: string | null;
   phone: string | null;
   whatsAppNumber: string | null;
   videos: VideoEntry[];
@@ -510,6 +517,7 @@ export function readPublishedSnapshot(value: unknown): PublishedListingSnapshot 
     googleRating: typeof raw.googleRating === "number" ? raw.googleRating : null,
     googleRatingCount: typeof raw.googleRatingCount === "number" ? raw.googleRatingCount : null,
     googleMapsUrl: typeof raw.googleMapsUrl === "string" ? raw.googleMapsUrl : null,
+    googleReviewUrl: typeof raw.googleReviewUrl === "string" ? raw.googleReviewUrl : null,
     phone: typeof raw.phone === "string" ? raw.phone : null,
     whatsAppNumber: typeof raw.whatsAppNumber === "string" ? raw.whatsAppNumber : null,
     videos: videosFromJson(raw.videos),
@@ -557,6 +565,7 @@ export function buildPublishedSnapshot(
     googleRating: listing.googleRating,
     googleRatingCount: listing.googleRatingCount,
     googleMapsUrl: listing.googleMapsUrl,
+    googleReviewUrl: listing.googleReviewUrl,
     phone: listing.phone,
     whatsAppNumber: listing.whatsAppNumber,
     videos: videosFromJson(listing.videos),
