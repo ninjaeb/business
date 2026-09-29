@@ -946,13 +946,26 @@ function websiteContextLines(pages: WebsitePage[]): string[] {
 // through the model, since those are facts to copy, not prose to write.
 // Only ever returns a draft for the editor to fill in — nothing is saved
 // until the partner reviews it and clicks Save draft themselves.
+//
+// Google's own rating/ratingCount are the one exception: written straight
+// to the listing row below, the moment a Google Maps place is read, rather
+// than riding in AutoCreatedListingDetails through the same review-and-Save
+// flow as everything else. A rating isn't AI-written or partner-authored
+// content to review before publishing — it's an external fact a partner
+// shouldn't be able to edit or discard by not saving, the same way they
+// can't edit their own Google star rating on Google itself.
 export async function autoCreateListingDetails(input: {
+  listingId: string;
   placeId?: string;
   website: string;
   companyName: string;
 }): Promise<AiResult<AutoCreatedListingDetails>> {
-  await requirePartnerAction();
+  const partner = await requirePartnerAction();
   if (!isAiConfigured()) return AI_NOT_CONFIGURED;
+
+  const listingId = String(input.listingId ?? "").trim();
+  const listing = listingId ? await getOwnedListing(listingId, partner.id) : null;
+  if (!listing) return { status: "error", message: "Listing not found." };
 
   const placeId = String(input.placeId ?? "").trim();
   if (placeId && !isValidPlaceId(placeId)) return { status: "error", message: "Invalid Google Maps place." };
@@ -966,6 +979,10 @@ export async function autoCreateListingDetails(input: {
     } catch (error) {
       return { status: "error", message: error instanceof Error ? error.message : "Couldn't read that Google Maps listing." };
     }
+    await db.partnerListing.update({
+      where: { id: listing.id },
+      data: { googleRating: place.rating, googleRatingCount: place.ratingCount },
+    });
   }
 
   const website = place?.website || typedWebsite || null;

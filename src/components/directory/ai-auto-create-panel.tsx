@@ -36,6 +36,7 @@ function StepLabel({ step, children }: { step: number; children: React.ReactNode
 // writes into — this component only reports back through the callbacks, so
 // it never has to know how the form stores its state.
 export function AiAutoCreatePanel({
+  listingId,
   placesAvailable,
   defaultQuery,
   website,
@@ -46,6 +47,12 @@ export function AiAutoCreatePanel({
   onTranslate,
   translating,
 }: {
+  // Passed straight through to autoCreateListingDetails, which writes
+  // Google's own rating/ratingCount directly to this listing's row — see
+  // that action's own comment on why that one part doesn't ride the
+  // AutoCreatedListingDetails/onCreated review flow every other field here
+  // does.
+  listingId: string;
   placesAvailable: boolean;
   defaultQuery: string;
   website: string;
@@ -126,7 +133,7 @@ export function AiAutoCreatePanel({
   function handleCreate() {
     const context = getContext();
     startCreate(async () => {
-      const result = await autoCreateListingDetails({ placeId: selected?.id, website, companyName: context.companyName });
+      const result = await autoCreateListingDetails({ listingId, placeId: selected?.id, website, companyName: context.companyName });
       if (result.status !== "ok") {
         toast.error(result.message);
         return;
