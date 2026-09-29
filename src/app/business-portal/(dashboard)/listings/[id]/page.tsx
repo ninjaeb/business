@@ -111,6 +111,7 @@ export default async function PartnerListingEditorPage({ params }: { params: Pro
               industry: listing.industry ?? "",
               website: listing.website ?? "",
               googleBusinessProfileUrl: listing.googleBusinessProfileUrl ?? "",
+              googleReviewUrl: listing.googleReviewUrl ?? "",
               phone: listing.phone ?? "",
               whatsAppNumber: listing.whatsAppNumber ?? "",
               videos: videosFromJson(listing.videos),

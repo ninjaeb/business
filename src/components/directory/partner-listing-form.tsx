@@ -191,6 +191,7 @@ export function PartnerListingForm({
   const [tagline, setTagline] = useState(current.tagline);
   const [website, setWebsite] = useState(current.website);
   const [googleBusinessProfileUrl, setGoogleBusinessProfileUrl] = useState(current.googleBusinessProfileUrl);
+  const [googleReviewUrl, setGoogleReviewUrl] = useState(current.googleReviewUrl);
   const [phone, setPhone] = useState(current.phone);
   const [whatsAppNumber, setWhatsAppNumber] = useState(current.whatsAppNumber);
   const [videos, setVideos] = useState<VideoEntry[]>(current.videos);
@@ -434,6 +435,7 @@ export function PartnerListingForm({
     if (details.services.length > 0) setServices(details.services);
     if (details.faqs.length > 0) setFaqs(details.faqs);
     if (details.website) setWebsite(details.website);
+    if (details.googleReviewUrl) setGoogleReviewUrl(details.googleReviewUrl);
     if (details.phone) setPhone(details.phone);
     if (details.address) setAddress(details.address);
     if (details.city) setCity(details.city);
@@ -463,6 +465,7 @@ export function PartnerListingForm({
     if (result.city) setCity(result.city);
     if (result.state) setAddrState(result.state);
     if (result.country) setCountry(result.country);
+    if (result.googleReviewUrl) setGoogleReviewUrl(result.googleReviewUrl);
     setJustSaved(false);
   }
 
@@ -920,6 +923,22 @@ export function PartnerListingForm({
           </p>
         </FieldGroup>
       </div>
+
+      <FieldGroup label="Google review link" htmlFor="googleReviewUrl">
+        <Input
+          id="googleReviewUrl"
+          name="googleReviewUrl"
+          value={googleReviewUrl}
+          onChange={(event) => setGoogleReviewUrl(event.target.value)}
+          placeholder="https://search.google.com/local/writereview?placeid=..."
+        />
+        <p className="mt-1 text-xs text-slate-400">
+          Filled in automatically when you pick your business on Google Maps above (Step 1) or in the address search
+          below. Shown on your Testimonials page as a &quot;Leave it on Google too&quot; button after a visitor writes
+          you one — or paste your own short review link here (Google Business Profile &gt; Get more reviews &gt; Share
+          review form).
+        </p>
+      </FieldGroup>
 
       <div className="grid gap-4 sm:grid-cols-2">
         <div hidden={activeTab !== "en"}>

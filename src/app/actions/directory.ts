@@ -60,6 +60,7 @@ import { fetchVideoOEmbed } from "@/lib/video-oembed";
 import {
   fetchPlacePhoto,
   getPlaceDetails,
+  googleReviewUrlFromPlaceId,
   isGooglePlacesConfigured,
   isValidPlaceId,
   searchPlaces,
@@ -237,6 +238,7 @@ const listingSchema = z.object({
     .refine((value) => !value || INDUSTRIES.includes(value as Industry), { message: "Invalid industry" }),
   website: z.string().trim().optional(),
   googleBusinessProfileUrl: z.string().trim().optional(),
+  googleReviewUrl: z.string().trim().optional(),
   phone: z
     .string()
     .trim()
@@ -279,6 +281,7 @@ export type ListingFormValues = {
   industry: string;
   website: string;
   googleBusinessProfileUrl: string;
+  googleReviewUrl: string;
   phone: string;
   whatsAppNumber: string;
   address: string;
@@ -351,6 +354,7 @@ function extractListingFormValues(formData: FormData): ListingFormValues {
     industry: stringField(formData, "industry"),
     website: stringField(formData, "website"),
     googleBusinessProfileUrl: stringField(formData, "googleBusinessProfileUrl"),
+    googleReviewUrl: stringField(formData, "googleReviewUrl"),
     phone: stringField(formData, "phone"),
     whatsAppNumber: stringField(formData, "whatsAppNumber"),
     address: stringField(formData, "address"),
@@ -790,7 +794,13 @@ export async function searchBusinessOnGoogleMaps(query: string): Promise<AiResul
   }
 }
 
-export type AddressFromPlace = { address: string | null; city: string | null; state: string | null; country: string | null };
+export type AddressFromPlace = {
+  address: string | null;
+  city: string | null;
+  state: string | null;
+  country: string | null;
+  googleReviewUrl: string | null;
+};
 
 // Partner-gated — the standalone address search box (see AddressSearch)
 // above the Address/City/State/Country fields. A single Place Details call
@@ -804,7 +814,16 @@ export async function getAddressFromGooglePlace(placeId: string): Promise<AiResu
 
   try {
     const place = await getPlaceDetails(placeId);
-    return { status: "ok", data: { address: place.address, city: place.city, state: place.state, country: place.country } };
+    return {
+      status: "ok",
+      data: {
+        address: place.address,
+        city: place.city,
+        state: place.state,
+        country: place.country,
+        googleReviewUrl: googleReviewUrlFromPlaceId(place.id),
+      },
+    };
   } catch (error) {
     return { status: "error", message: error instanceof Error ? error.message : "Couldn't load that address." };
   }
@@ -825,6 +844,11 @@ export type AutoCreatedListingDetails = {
   services: ServiceEntry[];
   faqs: FaqEntry[];
   website: string | null;
+  // Built from the selected Google Maps place's own id (see
+  // googleReviewUrlFromPlaceId) — never through the model, same "fact to
+  // derive, not prose to write" treatment as phone/address/operatingHours
+  // below. Null when there's no place.
+  googleReviewUrl: string | null;
   // Straight from Google's own field (PlaceDetails.phone), never through
   // the model — same "fact to copy, not prose to write" treatment as
   // address/operatingHours below. Null when there's no place, or Google
@@ -1067,6 +1091,7 @@ export async function autoCreateListingDetails(input: {
       services: servicesFromJson(result.data.services.map((service) => ({ ...service, price: "" }))),
       faqs: faqsFromJson(result.data.faqs),
       website,
+      googleReviewUrl: place ? googleReviewUrlFromPlaceId(place.id) : null,
       phone: place?.phone ?? null,
       address: place?.address ?? null,
       city: place?.city ?? null,
@@ -1234,6 +1259,7 @@ async function saveListingFields(
         googleBusinessProfileUrl: parsed.data.googleBusinessProfileUrl
           ? normalizeWebsiteUrl(parsed.data.googleBusinessProfileUrl)
           : null,
+        googleReviewUrl: parsed.data.googleReviewUrl ? normalizeWebsiteUrl(parsed.data.googleReviewUrl) : null,
         phone: parsed.data.phone ? normalizePhone(parsed.data.phone) : null,
         whatsAppNumber: parsed.data.whatsAppNumber ? normalizePhone(parsed.data.whatsAppNumber) : null,
         address: parsed.data.address || null,

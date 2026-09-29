@@ -133,6 +133,13 @@ export function directoryListingFaqPath(locale: DirectoryLocale, slug: string): 
   return `${directoryListingPath(locale, slug)}/faq`;
 }
 
+// Unlike every other section path above, this tab always appears (see
+// sectionLinks in layout.tsx) — even a listing with zero testimonials yet
+// still needs a reachable page for the write-a-testimonial form itself.
+export function directoryListingTestimonialsPath(locale: DirectoryLocale, slug: string): string {
+  return `${directoryListingPath(locale, slug)}/testimonials`;
+}
+
 // The main top-nav's four destinations (directory-top-nav.tsx) — real
 // index/feed pages, distinct from the existing per-category (categoryPath)
 // / per-location (locationPath) pages they each link out to.
@@ -226,6 +233,14 @@ export function formatAlbumMetaDescription(albumName: string, photoCount: number
   if (locale === "ms") return `Lihat ${photoCount.toLocaleString()} foto dalam album "${albumName}" oleh ${companyName}.`;
   return `View ${photoCount.toLocaleString()} photo${photoCount === 1 ? "" : "s"} from ${companyName}'s "${albumName}" album.`;
 }
+
+export type DirectoryTestimonialFormErrorCode =
+  | "name_required"
+  | "body_required"
+  | "rate_limited"
+  | "listing_not_found"
+  | "invalid_submission"
+  | "generic";
 
 export type DirectoryLeadFormErrorCode =
   | "name_required"
@@ -375,6 +390,7 @@ export type DirectoryStrings = {
   // the same word singular or plural).
   promotionsHeading: string;
   faqHeading: string;
+  testimonialsHeading: string;
   visitHeading: string;
   // Other locations of the same business, linked from the partner side —
   // only shown on the Visit us page when at least one exists.
@@ -444,6 +460,34 @@ export type DirectoryStrings = {
   formSubmitting: string;
   formSuccess: string;
   errors: Record<DirectoryLeadFormErrorCode, string>;
+  // The Testimonials page (see src/app/[locale]/[slug]/testimonials/page.tsx
+  // and TestimonialForm) — testimonialsIntro/testimonialsEmpty describe the
+  // page itself; the rest is the write-a-testimonial form below it.
+  testimonialsIntro: string;
+  testimonialsEmpty: string;
+  testimonialFormHeading: string;
+  testimonialFormNameLabel: string;
+  testimonialFormNamePlaceholder: string;
+  testimonialFormRatingLabel: string;
+  testimonialFormBodyLabel: string;
+  testimonialFormBodyPlaceholder: string;
+  // "Rewrite with AI" button on the testimonial body — only shown when
+  // isAiConfigured() (see rewriteTestimonialWithAi in
+  // src/app/actions/testimonials.ts), same gating as every other AI-assist
+  // button in the partner editor, just on a public, unauthenticated form
+  // this time.
+  testimonialFormRewriteCta: string;
+  testimonialFormRewriting: string;
+  testimonialFormSubmit: string;
+  testimonialFormSubmitting: string;
+  testimonialFormSuccess: string;
+  // Shown after a successful submission, only when the listing has a
+  // googleReviewUrl set — copies the just-submitted text to the clipboard
+  // and opens that link, same "copy + open" pattern as the partner side's
+  // own "Post to Google" (see postToGoogle in updates-editor.tsx).
+  testimonialGoogleCta: string;
+  testimonialGoogleCopied: string;
+  testimonialErrors: Record<DirectoryTestimonialFormErrorCode, string>;
   // The header's "Skip to main content" link (see DirectoryChrome) — visible
   // only once focused (first Tab stop on the page), so a keyboard/screen
   // reader visitor can jump past the header's nav links straight to the
@@ -592,6 +636,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     promotionLabel: "Promotion",
     promotionsHeading: "Promotions",
     faqHeading: "FAQ",
+    testimonialsHeading: "Testimonials",
     visitHeading: "Visit us",
     branchesHeading: "Other locations",
     hoursHeading: "Hours",
@@ -644,6 +689,29 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       phone_required: "Phone number is required",
       phone_invalid: "Include the country code with a + sign, e.g. +60 12 345 6789.",
       message_required: "Tell us a bit about what you need",
+      rate_limited: "Too many attempts — please wait a few minutes and try again.",
+      listing_not_found: "This listing is no longer available.",
+      invalid_submission: "Please check the form and try again.",
+      generic: "Something went wrong. Please try again.",
+    },
+    testimonialsIntro: "Real feedback from customers who've worked with this business.",
+    testimonialsEmpty: "No testimonials yet — be the first to leave one.",
+    testimonialFormHeading: "Write a testimonial",
+    testimonialFormNameLabel: "Your name",
+    testimonialFormNamePlaceholder: "Jane Tan",
+    testimonialFormRatingLabel: "Rating (optional)",
+    testimonialFormBodyLabel: "Your testimonial",
+    testimonialFormBodyPlaceholder: "What was it like working with this business?",
+    testimonialFormRewriteCta: "Rewrite with AI",
+    testimonialFormRewriting: "Rewriting…",
+    testimonialFormSubmit: "Submit testimonial",
+    testimonialFormSubmitting: "Submitting…",
+    testimonialFormSuccess: "Thanks! Your testimonial is awaiting approval before it shows publicly.",
+    testimonialGoogleCta: "Leave it on Google too",
+    testimonialGoogleCopied: "Copied — paste it into the review box that just opened.",
+    testimonialErrors: {
+      name_required: "Name is required",
+      body_required: "Write a few words about your experience",
       rate_limited: "Too many attempts — please wait a few minutes and try again.",
       listing_not_found: "This listing is no longer available.",
       invalid_submission: "Please check the form and try again.",
@@ -780,6 +848,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     promotionLabel: "促销",
     promotionsHeading: "促销",
     faqHeading: "常见问题",
+    testimonialsHeading: "客户评价",
     visitHeading: "联系地址",
     branchesHeading: "其他分店",
     hoursHeading: "营业时间",
@@ -832,6 +901,29 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       phone_required: "请填写电话号码",
       phone_invalid: "请附上国家代码及 + 号，例如 +60 12 345 6789。",
       message_required: "请简单说明您需要的帮助",
+      rate_limited: "尝试次数过多，请稍等几分钟后再试。",
+      listing_not_found: "该合作伙伴的资料已下架。",
+      invalid_submission: "请检查表单内容后重试。",
+      generic: "出现错误，请重试。",
+    },
+    testimonialsIntro: "来自曾与该企业合作的客户的真实反馈。",
+    testimonialsEmpty: "暂无评价——成为第一个留下评价的人。",
+    testimonialFormHeading: "撰写评价",
+    testimonialFormNameLabel: "您的姓名",
+    testimonialFormNamePlaceholder: "陈小姐",
+    testimonialFormRatingLabel: "评分（可选）",
+    testimonialFormBodyLabel: "您的评价",
+    testimonialFormBodyPlaceholder: "与该企业合作的体验如何？",
+    testimonialFormRewriteCta: "用 AI 润色",
+    testimonialFormRewriting: "润色中…",
+    testimonialFormSubmit: "提交评价",
+    testimonialFormSubmitting: "提交中…",
+    testimonialFormSuccess: "谢谢！您的评价将在审核通过后公开显示。",
+    testimonialGoogleCta: "同时发布到 Google",
+    testimonialGoogleCopied: "已复制——请粘贴到刚打开的评价框中。",
+    testimonialErrors: {
+      name_required: "请填写姓名",
+      body_required: "请简单描述您的体验",
       rate_limited: "尝试次数过多，请稍等几分钟后再试。",
       listing_not_found: "该合作伙伴的资料已下架。",
       invalid_submission: "请检查表单内容后重试。",
@@ -967,6 +1059,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     promotionLabel: "Promosi",
     promotionsHeading: "Promosi",
     faqHeading: "Soalan lazim",
+    testimonialsHeading: "Testimoni",
     visitHeading: "Lawati kami",
     branchesHeading: "Lokasi lain",
     hoursHeading: "Waktu Operasi",
@@ -1019,6 +1112,29 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       phone_required: "Nombor telefon diperlukan",
       phone_invalid: "Sertakan kod negara dengan tanda +, contohnya +60 12 345 6789.",
       message_required: "Beritahu kami sedikit tentang apa yang anda perlukan",
+      rate_limited: "Terlalu banyak percubaan — sila tunggu beberapa minit dan cuba lagi.",
+      listing_not_found: "Penyenaraian ini tidak lagi tersedia.",
+      invalid_submission: "Sila semak borang dan cuba lagi.",
+      generic: "Berlaku ralat. Sila cuba lagi.",
+    },
+    testimonialsIntro: "Maklum balas sebenar daripada pelanggan yang pernah berurusan dengan perniagaan ini.",
+    testimonialsEmpty: "Belum ada testimoni — jadilah yang pertama meninggalkan satu.",
+    testimonialFormHeading: "Tulis testimoni",
+    testimonialFormNameLabel: "Nama anda",
+    testimonialFormNamePlaceholder: "Siti Aminah",
+    testimonialFormRatingLabel: "Penilaian (pilihan)",
+    testimonialFormBodyLabel: "Testimoni anda",
+    testimonialFormBodyPlaceholder: "Bagaimana pengalaman anda berurusan dengan perniagaan ini?",
+    testimonialFormRewriteCta: "Tulis semula dengan AI",
+    testimonialFormRewriting: "Menulis semula…",
+    testimonialFormSubmit: "Hantar testimoni",
+    testimonialFormSubmitting: "Menghantar…",
+    testimonialFormSuccess: "Terima kasih! Testimoni anda menunggu kelulusan sebelum dipaparkan secara terbuka.",
+    testimonialGoogleCta: "Hantar ke Google juga",
+    testimonialGoogleCopied: "Disalin — tampal ke dalam kotak ulasan yang baru dibuka.",
+    testimonialErrors: {
+      name_required: "Nama diperlukan",
+      body_required: "Tulis beberapa patah perkataan tentang pengalaman anda",
       rate_limited: "Terlalu banyak percubaan — sila tunggu beberapa minit dan cuba lagi.",
       listing_not_found: "Penyenaraian ini tidak lagi tersedia.",
       invalid_submission: "Sila semak borang dan cuba lagi.",

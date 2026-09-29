@@ -27,6 +27,7 @@ import {
   transferDirectoryListing,
   unpublishDirectoryListing,
 } from "@/app/actions/directory";
+import { approveDirectoryTestimonial, rejectDirectoryTestimonial } from "@/app/actions/testimonials";
 import {
   DIRECTORY_LEAD_STATUS_BADGE_CLASSES,
   DIRECTORY_LEAD_STATUS_LABELS,
@@ -60,7 +61,20 @@ function formatOperatingHoursPreview(value: unknown): string[] {
 // own Settings → Team.
 export default async function AdminDirectoryPage() {
   await requireAdmin();
-  const [stats, currency, approvalMode, emailSettings, whatsAppSettings, missingSeoCount, missingGoogleRatingCount, pendingListings, allListings, partners, recentLeads] = await Promise.all([
+  const [
+    stats,
+    currency,
+    approvalMode,
+    emailSettings,
+    whatsAppSettings,
+    missingSeoCount,
+    missingGoogleRatingCount,
+    pendingListings,
+    pendingTestimonials,
+    allListings,
+    partners,
+    recentLeads,
+  ] = await Promise.all([
     getDirectoryOverviewStats(),
     getCurrency(),
     getDirectoryApprovalMode(),
@@ -83,6 +97,11 @@ export default async function AdminDirectoryPage() {
       where: { status: "PENDING_REVIEW" },
       orderBy: { submittedAt: "asc" },
       include: { partner: { select: { name: true, email: true } } },
+    }),
+    db.directoryTestimonial.findMany({
+      where: { status: "PENDING" },
+      orderBy: { createdAt: "asc" },
+      include: { listing: { select: { companyName: true, slug: true, logoUrl: true } } },
     }),
     db.partnerListing.findMany({
       orderBy: { updatedAt: "desc" },
@@ -248,6 +267,54 @@ export default async function AdminDirectoryPage() {
                       </Button>
                     </form>
                     <form action={rejectDirectoryListing.bind(null, listing.id)} className="flex items-center gap-2">
+                      <Input name="note" required placeholder="What needs to change?" className="!h-8 w-56 text-xs" />
+                      <Button type="submit" size="sm" variant="secondary">
+                        Reject
+                      </Button>
+                    </form>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          )}
+        </CardBody>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Testimonials awaiting review</CardTitle>
+        </CardHeader>
+        <CardBody>
+          {pendingTestimonials.length === 0 ? (
+            <p className="text-sm text-slate-500 dark:text-slate-400">Nothing waiting on review.</p>
+          ) : (
+            <ul className="divide-y divide-slate-100 dark:divide-neutral-800">
+              {pendingTestimonials.map((testimonial) => (
+                <li key={testimonial.id} className="space-y-3 py-4 text-sm">
+                  <div className="flex flex-wrap items-start gap-3">
+                    <ListingLogo
+                      name={testimonial.listing.companyName}
+                      logoUrl={testimonial.listing.logoUrl}
+                      className="h-10 w-10 text-sm"
+                    />
+                    <div className="min-w-0 flex-1">
+                      <p className="font-medium text-slate-800 dark:text-slate-200">{testimonial.listing.companyName}</p>
+                      <p className="text-xs text-slate-400">
+                        {testimonial.authorName}
+                        {testimonial.rating ? ` · ${testimonial.rating}/5` : ""} · {formatDate(testimonial.createdAt)}
+                      </p>
+                    </div>
+                  </div>
+                  <p className="whitespace-pre-wrap rounded-md bg-slate-50 p-3 text-xs text-slate-600 dark:bg-neutral-800 dark:text-slate-300">
+                    {testimonial.body}
+                  </p>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <form action={approveDirectoryTestimonial.bind(null, testimonial.id)}>
+                      <Button type="submit" size="sm">
+                        Approve
+                      </Button>
+                    </form>
+                    <form action={rejectDirectoryTestimonial.bind(null, testimonial.id)} className="flex items-center gap-2">
                       <Input name="note" required placeholder="What needs to change?" className="!h-8 w-56 text-xs" />
                       <Button type="submit" size="sm" variant="secondary">
                         Reject

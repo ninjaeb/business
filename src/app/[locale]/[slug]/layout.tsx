@@ -29,6 +29,7 @@ import {
   directoryListingPhotosPath,
   directoryListingPromotionsPath,
   directoryListingServicesPath,
+  directoryListingTestimonialsPath,
   directoryListingVideosPath,
   directoryListingVisitPath,
   formatContactWhatsAppMessage,
@@ -330,6 +331,11 @@ export default async function ListingLayout({
     // deciding what to buy is exactly who wants "any questions about
     // this?" right next to it.
     display.faqs.length > 0 && { href: directoryListingFaqPath(resolved, slug), label: t.faqHeading },
+    // Unconditional, unlike every other tab here — the write-a-testimonial
+    // form (see the Testimonials page's own comment) always has something
+    // to show even with zero APPROVED testimonials yet, so this tab never
+    // needs a "does this page have content" guard.
+    { href: directoryListingTestimonialsPath(resolved, slug), label: t.testimonialsHeading },
     listing.photos.length > 0 && { href: directoryListingPhotosPath(resolved, slug), label: t.photosHeading },
     display.videoGallery.length > 0 && { href: directoryListingVideosPath(resolved, slug), label: t.videoHeading },
     display.currentNews.length > 0 && { href: directoryListingNewsPath(resolved, slug), label: t.newsLabel },
