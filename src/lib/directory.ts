@@ -56,6 +56,13 @@ export type PublishedListingSnapshot = {
   services: ServiceEntry[];
   industry: Industry | null;
   website: string | null;
+  // Google's own rating for this business, as of the last time a partner
+  // ran AI Auto Create against a Google Maps place (see
+  // PartnerListing.googleRating's own comment in prisma/schema.prisma) —
+  // null until that's happened at least once, or when Google itself has no
+  // rating on file. Never partner-editable.
+  googleRating: number | null;
+  googleRatingCount: number | null;
   phone: string | null;
   whatsAppNumber: string | null;
   videos: VideoEntry[];
@@ -496,6 +503,8 @@ export function readPublishedSnapshot(value: unknown): PublishedListingSnapshot 
     services: servicesFromJson(raw.services),
     industry: typeof raw.industry === "string" ? (raw.industry as Industry) : null,
     website: typeof raw.website === "string" ? raw.website : null,
+    googleRating: typeof raw.googleRating === "number" ? raw.googleRating : null,
+    googleRatingCount: typeof raw.googleRatingCount === "number" ? raw.googleRatingCount : null,
     phone: typeof raw.phone === "string" ? raw.phone : null,
     whatsAppNumber: typeof raw.whatsAppNumber === "string" ? raw.whatsAppNumber : null,
     videos: videosFromJson(raw.videos),
@@ -540,6 +549,8 @@ export function buildPublishedSnapshot(
     services: servicesFromJson(listing.services),
     industry: listing.industry,
     website: listing.website,
+    googleRating: listing.googleRating,
+    googleRatingCount: listing.googleRatingCount,
     phone: listing.phone,
     whatsAppNumber: listing.whatsAppNumber,
     videos: videosFromJson(listing.videos),

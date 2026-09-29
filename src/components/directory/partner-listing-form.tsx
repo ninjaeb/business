@@ -559,6 +559,7 @@ export function PartnerListingForm({
       <div className={cn("mb-5 grid items-start gap-6", aiAvailable && "lg:grid-cols-2", activeSection !== "details" && "hidden")}>
         {aiAvailable && (
           <AiAutoCreatePanel
+            listingId={listingId}
             formId={LISTING_FORM_ID}
             placesAvailable={placesAvailable}
             defaultQuery={companyName}

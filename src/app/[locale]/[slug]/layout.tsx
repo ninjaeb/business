@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Eye, Globe, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Eye, Globe, MapPin, MessageCircle, Phone, Star } from "lucide-react";
 import {
   buildBreadcrumbJsonLd,
   directoryImagePath,
@@ -138,6 +138,19 @@ function buildJsonLd(
   }
   if (listing.website) jsonLd.sameAs = [listing.website];
   if (listing.phone) jsonLd.telephone = listing.phone;
+  // Google's own rating (see PartnerListing.googleRating's own comment in
+  // prisma/schema.prisma) — schema.org requires a ratingCount/reviewCount
+  // on an AggregateRating, so this only appears once both are present,
+  // never rating alone. Google Places already checks a rating has at least
+  // one review before it ever returns one, so ratingCount === 0 alongside
+  // a non-null rating isn't a real case to guard against here.
+  if (listing.googleRating !== null && listing.googleRatingCount !== null) {
+    jsonLd.aggregateRating = {
+      "@type": "AggregateRating",
+      ratingValue: listing.googleRating,
+      reviewCount: listing.googleRatingCount,
+    };
+  }
   // English regardless of the page's own locale — schema.org's own
   // vocabulary/consumers (search engines, AI crawlers) expect this field in
   // a consistent language, unlike the human-visible badge below.
@@ -375,6 +388,16 @@ export default async function ListingLayout({
                 </div>
               )}
               <div className="flex flex-wrap items-center gap-3 text-base text-slate-500 dark:text-slate-400">
+                {listing.googleRating !== null && (
+                  <span
+                    className="inline-flex items-center gap-1"
+                    aria-label={`${t.googleRatingLabel}: ${listing.googleRating}${listing.googleRatingCount !== null ? ` (${listing.googleRatingCount})` : ""}`}
+                  >
+                    <Star className="h-4 w-4 fill-amber-400 text-amber-400" aria-hidden="true" />
+                    <span className="font-semibold text-slate-700 dark:text-slate-200">{listing.googleRating.toFixed(1)}</span>
+                    {listing.googleRatingCount !== null && <span>({listing.googleRatingCount})</span>}
+                  </span>
+                )}
                 {listing.state ? (
                   <Link
                     href={locationPath(slugify(locationLabel(listing.city, listing.state)), resolved)}
@@ -504,6 +527,16 @@ export default async function ListingLayout({
                 </div>
               )}
               <div className="flex flex-wrap items-center gap-3 text-base text-slate-500 dark:text-slate-400">
+                {listing.googleRating !== null && (
+                  <span
+                    className="inline-flex items-center gap-1"
+                    aria-label={`${t.googleRatingLabel}: ${listing.googleRating}${listing.googleRatingCount !== null ? ` (${listing.googleRatingCount})` : ""}`}
+                  >
+                    <Star className="h-4 w-4 fill-amber-400 text-amber-400" aria-hidden="true" />
+                    <span className="font-semibold text-slate-700 dark:text-slate-200">{listing.googleRating.toFixed(1)}</span>
+                    {listing.googleRatingCount !== null && <span>({listing.googleRatingCount})</span>}
+                  </span>
+                )}
                 {listing.state ? (
                   <Link
                     href={locationPath(slugify(locationLabel(listing.city, listing.state)), resolved)}

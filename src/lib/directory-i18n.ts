@@ -398,6 +398,12 @@ export type DirectoryStrings = {
   dayLabels: DirectoryDayLabels;
   websiteLabel: string;
   locationLabel: string;
+  // aria-label on the header's Google rating badge (see PartnerListing.
+  // googleRating's own comment in prisma/schema.prisma) — the visible text
+  // is just the number/star/review count, universal enough to skip
+  // translation, but a screen reader still needs "Google rating" spelled
+  // out rather than reading a bare "4.6 (128)".
+  googleRatingLabel: string;
   // The listing page's "Recommend" affordances, open to every visitor —
   // the header button, and the sticky bottom-bar button (see the listing
   // layout's own nav). Both share one referral-tracking link (?r=<referral
@@ -608,6 +614,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     },
     websiteLabel: "Website",
     locationLabel: "Location",
+    googleRatingLabel: "Google rating",
     recommendLabel: "Recommend Business",
     recommendMessage: "I recommend {business} — check them out on the Business Directory: {url}",
     shareLabel: "Share Business",
@@ -798,6 +805,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     recommendMessage: "我推荐 {business}——快来企业目录看看：{url}",
     shareLabel: "分享企业",
     locationLabel: "地点",
+    googleRatingLabel: "Google 评分",
     contactHeading: "联系我们",
     contactSubheading: "直接给这家企业发送信息——他们会回复您提供的电子邮件地址和联系电话。",
     contactCallCta: "致电",
@@ -984,6 +992,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     recommendMessage: "Saya syorkan {business} — lihat mereka di Direktori Perniagaan: {url}",
     shareLabel: "Kongsi Perniagaan",
     locationLabel: "Lokasi",
+    googleRatingLabel: "Penilaian Google",
     contactHeading: "Hubungi kami",
     contactSubheading: "Hantar mesej terus kepada perniagaan ini — mereka akan membalas ke alamat e-mel dan nombor telefon yang anda berikan.",
     contactCallCta: "Hubungi",
