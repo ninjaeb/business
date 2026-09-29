@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ChevronRight, Eye } from "lucide-react";
+import { ChevronRight, Eye, Star } from "lucide-react";
 import { Card, CardBody } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ListingLogo } from "@/components/directory/listing-logo";
@@ -41,9 +41,17 @@ export function ListingCard({
                   from the surrounding copy. Tailwind's preflight leaves
                   headings unstyled, so it looks exactly as before. */}
               <h3 className="truncate font-semibold text-slate-900 dark:text-slate-100">{listing.companyName}</h3>
-              {listing.industry && industryLabel && (
-                <p className="truncate text-xs text-slate-500 dark:text-slate-400">{industryLabel}</p>
-              )}
+              <div className="flex items-center gap-1.5">
+                {listing.industry && industryLabel && (
+                  <p className="min-w-0 truncate text-xs text-slate-500 dark:text-slate-400">{industryLabel}</p>
+                )}
+                {listing.googleRating !== null && (
+                  <span className="inline-flex shrink-0 items-center gap-0.5 text-xs text-slate-500 dark:text-slate-400">
+                    <Star className="h-3 w-3 fill-amber-400 text-amber-400" aria-hidden="true" />
+                    <span className="font-medium text-slate-700 dark:text-slate-200">{listing.googleRating.toFixed(1)}</span>
+                  </span>
+                )}
+              </div>
             </div>
           </div>
 

@@ -981,7 +981,7 @@ export async function autoCreateListingDetails(input: {
     }
     await db.partnerListing.update({
       where: { id: listing.id },
-      data: { googleRating: place.rating, googleRatingCount: place.ratingCount },
+      data: { googleRating: place.rating, googleRatingCount: place.ratingCount, googleMapsUrl: place.googleMapsUrl },
     });
   }
 
@@ -1825,6 +1825,92 @@ export async function backfillListingSeoMeta(): Promise<SeoBackfillState> {
   }
 
   return { success: true, updated, failed };
+}
+
+export type GoogleRatingBackfillState =
+  | { error: string }
+  | { success: true; updated: number; noMatch: number; noRating: number }
+  | undefined;
+
+// Admin-only — the "Backfill Google ratings" button on the admin page's own
+// Google ratings card. Unlike autoCreateListingDetails (which only ever
+// sets googleRating/googleRatingCount for a Google Maps place a partner
+// themselves picked), this searches Google Places by company name + city/
+// state/country for every published listing that has neither yet, and
+// takes the top result with no human review step — a best-effort match,
+// not a guaranteed-correct one. There's no draft/review step to gate this
+// behind the way AI Auto Create's own written content has one, since a
+// rating isn't content — but that also means a wrong match here (a common
+// business name, a listing with no city/state set) has no review step to
+// catch it either. Meant to run once, as a one-time backfill for listings
+// that predate this feature; going forward, a partner's own AI Auto Create
+// run (which they can see and correct) is the intended path. Republishes
+// each updated listing's own snapshot immediately (see buildPublishedSnapshot)
+// rather than waiting for the partner's next edit, since this is a
+// backfill for the site *now*, not a hint for their next save.
+export async function backfillListingGoogleRatings(): Promise<GoogleRatingBackfillState> {
+  await requireAdminAction();
+  if (!isGooglePlacesConfigured()) {
+    return { error: "Google Places isn't configured — set GOOGLE_PLACES_API_KEY to enable this." };
+  }
+
+  const listings = await db.partnerListing.findMany({
+    where: { status: "PUBLISHED", googleRating: null },
+    include: { categories: { include: { category: true } }, partner: { select: { timezone: true } } },
+  });
+
+  let updated = 0;
+  let noMatch = 0;
+  let noRating = 0;
+  for (const listing of listings) {
+    const query = [listing.companyName, listing.city, listing.state, listing.country].filter(Boolean).join(", ");
+    const topMatch = await searchPlaces(query)
+      .then((results) => results[0] ?? null)
+      .catch(() => null);
+    if (!topMatch) {
+      noMatch++;
+      continue;
+    }
+    const place = await getPlaceDetails(topMatch.id).catch(() => null);
+    if (!place) {
+      noMatch++;
+      continue;
+    }
+    if (place.rating === null) {
+      noRating++;
+      continue;
+    }
+
+    const photos = await loadListingPhotosInOrder(listing.photoIds);
+    const patchedListing = {
+      ...listing,
+      googleRating: place.rating,
+      googleRatingCount: place.ratingCount,
+      googleMapsUrl: place.googleMapsUrl,
+    };
+    await db.partnerListing.update({
+      where: { id: listing.id },
+      data: {
+        googleRating: place.rating,
+        googleRatingCount: place.ratingCount,
+        googleMapsUrl: place.googleMapsUrl,
+        publishedSnapshot: buildPublishedSnapshot(
+          patchedListing,
+          listing.categories.map((entry) => entry.category.name),
+          listing.partner.timezone,
+          photos,
+        ),
+      },
+    });
+    updated++;
+  }
+
+  if (updated > 0) {
+    revalidatePath("/admin");
+    revalidateDirectory({ slugs: listings.map((listing) => listing.slug) });
+  }
+
+  return { success: true, updated, noMatch, noRating };
 }
 
 // Reassigns a listing to a different partner account — e.g. the original
