@@ -1068,28 +1068,43 @@ export async function createListingAction(): Promise<never> {
   redirect(`/business-portal/listings/${listing.id}`);
 }
 
-// Deletes a listing outright — offered only for one that's still a draft
-// AND has never been published (see PartnerListingsPage's own Delete
-// button). status alone isn't enough: an already-published listing that's
-// since been edited reverts to DRAFT pending its next approval but keeps
-// its last publishedSnapshot live on the public site the whole time (see
-// buildPublishedSnapshot) — deleting one of those would silently take down
-// a real, possibly-indexed public page and its tracked view history. A
-// listing that's genuinely never been live has no snapshot at all yet, so
-// checking for one is exactly the distinction that matters, not merely
-// mirroring status's own name. Ownership is checked the same way every
-// other listing action does. PartnerListingCategory/DirectoryListingImage/
-// DirectoryLead rows all cascade with it (see schema.prisma) — nothing else
-// to clean up by hand.
+// Deletes a listing outright — a never-published draft or a currently-live
+// one, either way (see PartnerListingsPage's own Delete button). A listing
+// with a publishedSnapshot (see buildPublishedSnapshot) has a real,
+// possibly-indexed public page and tracked view history, so deleting one of
+// those also pulls it off the public directory the same way
+// unpublishDirectoryListing does — sitemap.xml/llms.txt regenerated,
+// IndexNow told to recrawl (the listing URL now 404s), and every aggregate
+// page its removal changes revalidated. Ownership is checked the same way
+// every other listing action does. PartnerListingCategory/
+// DirectoryListingImage/DirectoryLead/ListingReferralView/
+// PartnerListingBranchLink rows all cascade with it (see schema.prisma) —
+// nothing else to clean up by hand.
 export async function deleteListingAction(id: string, formData: FormData): Promise<void> {
   void formData;
   const partner = await requirePartnerAction();
   const listing = await getOwnedListing(id, partner.id);
   if (!listing) throw new Error("Listing not found.");
-  if (listing.status !== "DRAFT" || listing.publishedSnapshot !== null) {
-    throw new Error("Only a listing that's never been published can be deleted.");
-  }
+  const wasPublished = listing.publishedSnapshot !== null;
+  const categories = wasPublished
+    ? await db.partnerListingCategory.findMany({ where: { listingId: id }, include: { category: true } })
+    : [];
+
   await db.partnerListing.delete({ where: { id } });
+
+  if (wasPublished) {
+    await Promise.all([regenerateSitemapFile(), regenerateLlmsTxtFile()]);
+    revalidateDirectory({ slugs: [listing.slug] });
+    void notifyIndexNow([
+      ...directoryHomeUrls(),
+      ...directoryListingUrls(listing.slug),
+      ...directoryCategoryUrls(categories.map((entry) => entry.category.name)),
+      ...directoryCategoriesIndexUrls(),
+      ...directoryLocationsIndexUrls(),
+      ...directoryProductsUrls(),
+      ...directoryNewsUrls(),
+    ]);
+  }
   revalidatePath("/business-portal/listings");
 }
 

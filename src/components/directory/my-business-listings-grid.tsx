@@ -24,7 +24,6 @@ export type MyBusinessListingCard = {
   currentUpdatesUrl: string | null;
   trackedViewCount: number;
   viewBreakdown: { locale: DirectoryLocale; label: string; count: number; href: string }[];
-  canDelete: boolean;
 };
 
 // Lets a partner with several locations tick two or more at once and link
@@ -118,14 +117,18 @@ export function MyBusinessListingsGrid({ listings }: { listings: MyBusinessListi
                 <Link href={`/business-portal/listings/${listing.id}`} className={buttonClasses("secondary", "sm")}>
                   Edit
                 </Link>
-                {listing.canDelete && (
-                  <form action={deleteListingAction.bind(null, listing.id)}>
-                    <ConfirmSubmitButton confirmMessage={`Delete the draft "${listing.companyName}"? This can't be undone.`}>
-                      <Trash2 className="h-3.5 w-3.5" />
-                      Delete
-                    </ConfirmSubmitButton>
-                  </form>
-                )}
+                <form action={deleteListingAction.bind(null, listing.id)}>
+                  <ConfirmSubmitButton
+                    confirmMessage={
+                      listing.publicUrl
+                        ? `Delete "${listing.companyName}"? Its public page comes down immediately and this can't be undone.`
+                        : `Delete the draft "${listing.companyName}"? This can't be undone.`
+                    }
+                  >
+                    <Trash2 className="h-3.5 w-3.5" />
+                    Delete
+                  </ConfirmSubmitButton>
+                </form>
                 {listing.publicUrl && (
                   <Link
                     href={listing.publicUrl}
