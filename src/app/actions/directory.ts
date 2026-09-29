@@ -847,6 +847,17 @@ export type AutoCreatedListingDetails = {
   // source has a usable image; either way the editor's existing logo (if
   // any) is left alone rather than cleared.
   logoUrl: string | null;
+  // Purely informational — the real values are already written straight to
+  // the listing row by the time this returns (see this function's own
+  // comment on why), not read back from here into anything editable. Lets
+  // the panel tell a partner outright whether a rating was actually found
+  // for their business, rather than leaving "nothing showed up" ambiguous
+  // between "Google has no rating for this place" and "something's wrong."
+  // null (rather than 0) is Google's own "no rating on file," same meaning
+  // as everywhere else googleRating appears; both fields are null together
+  // whenever no place was selected at all.
+  googleRating: number | null;
+  googleRatingCount: number | null;
   // Which inputs actually contributed, so the editor can say so when a
   // website was given but couldn't be read.
   sources: { googleMaps: boolean; website: boolean };
@@ -1065,6 +1076,8 @@ export async function autoCreateListingDetails(input: {
       seoTitle: result.data.seoTitle.trim().slice(0, MAX_SEO_TITLE_LENGTH),
       seoDescription: result.data.seoDescription.trim().slice(0, MAX_SEO_DESCRIPTION_LENGTH),
       logoUrl,
+      googleRating: place?.rating ?? null,
+      googleRatingCount: place?.ratingCount ?? null,
       sources: { googleMaps: place !== null, website: pages.length > 0 },
     },
   };
