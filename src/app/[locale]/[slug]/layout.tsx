@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Eye, Globe, MapPin, MessageCircle, Phone, Star } from "lucide-react";
+import { Eye, Globe, MapPin, MessageCircle, Phone } from "lucide-react";
 import {
   buildBreadcrumbJsonLd,
   directoryImagePath,
@@ -42,6 +42,7 @@ import { industryPath } from "@/lib/directory-industry-labels";
 import { getSiteOrigin } from "@/lib/site-url";
 import { INDUSTRY_LABELS } from "@/lib/labels";
 import { Badge } from "@/components/ui/badge";
+import { StarRating } from "@/components/ui/star-rating";
 import { buttonClasses } from "@/components/ui/button";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
 import { ListingLogo } from "@/components/directory/listing-logo";
@@ -76,7 +77,7 @@ function GoogleRatingBadge({ listing, ratingLabel }: { listing: ListingWithMeta;
   const label = `${ratingLabel}: ${listing.googleRating}${listing.googleRatingCount !== null ? ` (${listing.googleRatingCount})` : ""}`;
   const content = (
     <>
-      <Star className="h-4 w-4 fill-amber-400 text-amber-400" aria-hidden="true" />
+      <StarRating rating={listing.googleRating} size="h-4 w-4" />
       <span className="font-semibold text-slate-700 dark:text-slate-200">{listing.googleRating.toFixed(1)}</span>
       {listing.googleRatingCount !== null && <span>({listing.googleRatingCount})</span>}
     </>
