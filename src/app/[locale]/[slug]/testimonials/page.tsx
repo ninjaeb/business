@@ -75,13 +75,14 @@ export default async function TestimonialsPage({
           <TestimonialList testimonials={testimonials} locale={resolved} />
         )}
         <div className="border-t border-slate-200 pt-6 dark:border-neutral-800">
+          <p className="mb-3 text-sm text-slate-500 dark:text-slate-400">{t.testimonialsCta}</p>
           <WriteTestimonialButton
             slug={slug}
             locale={resolved}
             aiAvailable={isAiConfigured()}
             googleReviewUrl={listing.googleReviewUrl}
             variant="primary"
-            className="h-11 w-full text-base bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"
+            className="w-full bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"
           />
         </div>
       </CardBody>

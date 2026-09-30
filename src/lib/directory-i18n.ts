@@ -472,6 +472,11 @@ export type DirectoryStrings = {
   // page itself; the rest is the write-a-testimonial form below it.
   testimonialsIntro: string;
   testimonialsEmpty: string;
+  // Sits right above the page's own "Write a testimonial" button —
+  // testimonialsEmpty above only shows once there are zero APPROVED
+  // testimonials, so this is what invites one regardless of whether any
+  // exist yet.
+  testimonialsCta: string;
   testimonialFormHeading: string;
   testimonialFormNameLabel: string;
   testimonialFormNamePlaceholder: string;
@@ -713,6 +718,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     },
     testimonialsIntro: "Real feedback from customers who've worked with this business.",
     testimonialsEmpty: "No testimonials yet — be the first to leave one.",
+    testimonialsCta: "Had a good experience? Share it — it helps other visitors decide, and takes less than a minute.",
     testimonialFormHeading: "Write a testimonial",
     testimonialFormNameLabel: "Your name",
     testimonialFormNamePlaceholder: "Jane Tan",
@@ -931,6 +937,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     },
     testimonialsIntro: "来自曾与该企业合作的客户的真实反馈。",
     testimonialsEmpty: "暂无评价——成为第一个留下评价的人。",
+    testimonialsCta: "有过愉快的体验吗？分享出来——这能帮助其他访客做决定，只需不到一分钟。",
     testimonialFormHeading: "撰写评价",
     testimonialFormNameLabel: "您的姓名",
     testimonialFormNamePlaceholder: "陈小姐",
@@ -1148,6 +1155,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     },
     testimonialsIntro: "Maklum balas sebenar daripada pelanggan yang pernah berurusan dengan perniagaan ini.",
     testimonialsEmpty: "Belum ada testimoni — jadilah yang pertama meninggalkan satu.",
+    testimonialsCta: "Ada pengalaman yang baik? Kongsikan — ia membantu pelawat lain membuat keputusan, dan mengambil masa kurang seminit.",
     testimonialFormHeading: "Tulis testimoni",
     testimonialFormNameLabel: "Nama anda",
     testimonialFormNamePlaceholder: "Siti Aminah",
