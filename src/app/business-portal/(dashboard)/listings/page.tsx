@@ -75,14 +75,6 @@ export default async function PartnerListingsPage() {
               logoUrl: listing.logoUrl,
               status: listing.status,
               publicUrl,
-              // Never-published drafts only — !publicUrl is the same "no
-              // publishedSnapshot yet" check deleteListingAction itself
-              // makes: a listing that's been live before keeps its last
-              // snapshot (and tracked views) public even after an edit
-              // reverts its status back to DRAFT pending re-approval, so
-              // status alone isn't enough to tell "never published" apart
-              // from "published, now mid-edit".
-              canDelete: listing.status === "DRAFT" && !publicUrl,
               currentUpdatesUrl: currentUpdatesPath ? `${siteOrigin}${currentUpdatesPath}` : null,
               trackedViewCount,
               viewBreakdown: viewBreakdown.map(({ locale, label, count }) => ({
