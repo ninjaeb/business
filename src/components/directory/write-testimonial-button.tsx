@@ -56,10 +56,11 @@ export function WriteTestimonialButton({
           aria-modal="true"
           aria-label={t.testimonialFormHeading}
         >
-          {/* max-h-[90vh]/overflow-y-auto — the photo picker's previews can
-              push this taller than a phone viewport, unlike the fixed-height
-              crop tool LogoCropDialog sizes itself around. */}
-          <div className="relative max-h-[90vh] w-full max-w-lg overflow-y-auto rounded-lg bg-white p-5 shadow-2xl dark:bg-neutral-900">
+          {/* max-h-[95vh]/overflow-y-auto — the photo picker's previews (and
+              the taller testimonial textarea below) can push this past a
+              phone viewport's height, unlike the fixed-height crop tool
+              LogoCropDialog sizes itself around. */}
+          <div className="relative max-h-[95vh] w-full max-w-xl overflow-y-auto rounded-lg bg-white p-5 shadow-2xl dark:bg-neutral-900">
             <button
               type="button"
               onClick={() => setOpen(false)}

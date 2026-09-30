@@ -186,7 +186,14 @@ export function buildListingMetadata({
       title,
       description,
       url: pageUrl,
-      siteName: DIRECTORY_SITE_NAME_BY_LOCALE[locale],
+      // The listing's own name, not the directory's — google.com/search's
+      // "site name" chip (the bold text next to the favicon) reads this
+      // per-page, and a visitor searching for this specific business should
+      // see its own name there, not "Gotka Business Directory" repeated
+      // across every one of this listing's own pages. Every other page type
+      // (home, category, location, guides, ...) genuinely is the directory
+      // itself, so only this shared listing-page builder overrides it.
+      siteName: listing.companyName,
       type: "website",
       locale: OG_LOCALE_BY_DIRECTORY_LOCALE[locale],
       images: [shareImage],
