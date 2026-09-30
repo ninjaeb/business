@@ -20,7 +20,14 @@ import type { DirectoryTestimonialFormErrorCode } from "@/lib/directory-i18n";
 const testimonialSchema = z.object({
   slug: z.string().trim().min(1),
   authorName: z.string().trim().min(1, "name_required").max(100),
-  rating: z.string().trim().optional(),
+  rating: z
+    .string()
+    .trim()
+    .min(1, "rating_required")
+    .refine((value) => {
+      const num = Number(value);
+      return Number.isInteger(num) && num >= 1 && num <= 5;
+    }, "rating_required"),
   body: z.string().trim().min(1, "body_required").max(2000),
   locale: z.string().trim().min(1),
 });
@@ -77,8 +84,8 @@ export async function submitDirectoryTestimonial(
     return { status: "error", code: "listing_not_found" };
   }
 
-  const ratingNum = parsed.data.rating ? Number(parsed.data.rating) : null;
-  const rating = ratingNum && Number.isInteger(ratingNum) && ratingNum >= 1 && ratingNum <= 5 ? ratingNum : null;
+  // Already validated as an integer 1-5 by testimonialSchema above.
+  const rating = Number(parsed.data.rating);
 
   const testimonial = await db.directoryTestimonial.create({
     data: {
