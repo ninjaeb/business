@@ -13,6 +13,11 @@ datasource db {
 enum Role {
   PARTNER
   ADMIN
+  // A visitor who created an account solely to write a testimonial — see
+  // DirectoryTestimonial.authorId below. Distinct from PARTNER/ADMIN so the
+  // existing requirePartner()/requireAdmin() guards keep rejecting it
+  // exactly like any other non-matching role, with no changes needed there.
+  VISITOR
 }
 
 model User {
@@ -48,6 +53,10 @@ model User {
   // Editorial pillar/guide content this account (an admin) has authored —
   // see DirectoryGuide.
   directoryGuides DirectoryGuide[]
+
+  // Testimonials this account (a VISITOR) has written — see
+  // DirectoryTestimonial.authorId.
+  directoryTestimonials DirectoryTestimonial[]
 }
 
 // ============================================================================
@@ -621,19 +630,24 @@ enum DirectoryTestimonialStatus {
 }
 
 // A visitor-written testimonial on a listing's own Testimonials page (see
-// TestimonialForm) — always PENDING until an admin approves it (see
-// approveDirectoryTestimonial/rejectDirectoryTestimonial in
+// TestimonialForm) — always PENDING until the listing's own owner approves
+// it (see approveDirectoryTestimonial/rejectDirectoryTestimonial in
 // src/app/actions/testimonials.ts), unlike DirectoryLead above, which needs
 // no such gate since a lead is private to the partner. A testimonial is
 // headed for public display, the same trust boundary every other
 // visitor-facing content on this site (PartnerListing.status itself) already
-// enforces. No author email/phone, unlike DirectoryLead: there's never a
-// reason to contact a testimonial's author back, and a lighter form lowers
-// the bar to actually writing one.
+// enforces. Writing one requires a VISITOR account (authorId) — collected
+// once at signup (see registerVisitorWithPassword in
+// src/lib/visitor-signup.ts) rather than re-typed on every testimonial, and
+// enough to reach someone back if a testimonial is ever disputed, unlike the
+// original name-only design this superseded.
 model DirectoryTestimonial {
   id     String                     @id @default(cuid())
   status DirectoryTestimonialStatus @default(PENDING)
 
+  // Denormalized from author.name at submission time (not re-derived on
+  // every read) — same convention as DirectoryLead.name — so a testimonial
+  // still reads correctly even if the account's own name later changes.
   authorName String
   rating     Int?
   body       String  @db.Text
@@ -647,18 +661,31 @@ model DirectoryTestimonial {
   listing   PartnerListing @relation(fields: [listingId], references: [id], onDelete: Cascade)
   listingId String
 
+  // Nullable: this feature was already live before the account requirement
+  // below was added, so a testimonial submitted in that earlier window may
+  // have no linked account. submitDirectoryTestimonial always sets this on
+  // every new row; nothing backfills it on old ones.
+  author   User?   @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  authorId String?
+
   // Photos a visitor attached when writing this testimonial (see
   // uploadTestimonialPhoto in src/app/actions/testimonials.ts) — a fourth
   // use of DirectoryListingImage, alongside gallery photos and the two
   // About-field embed uses (see that model's own comment). Unlike gallery
   // photos, these can only ever be added while this testimonial is still
-  // PENDING: once an admin has reviewed it, a later upload would attach an
+  // PENDING: once the owner has reviewed it, a later upload would attach an
   // unmoderated image to already-approved, publicly-visible content, which
   // uploadTestimonialPhoto refuses.
   images DirectoryListingImage[]
 
+  // One testimonial per visitor per listing — a legitimate customer only
+  // needs to leave one review of a given business; this also gives
+  // submitDirectoryTestimonial a clean "you've already reviewed this
+  // business" case instead of accumulating duplicates.
+  @@unique([listingId, authorId])
   @@index([listingId, status])
   @@index([status])
+  @@index([authorId])
 }
 
 // How many times a specific signed-in partner's own copy of a listing's

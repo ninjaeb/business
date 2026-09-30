@@ -17,7 +17,8 @@ import {
 import { serializeJsonLd } from "@/lib/directory-seo";
 import { stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
 import { resolveDirectoryLocale } from "@/lib/directory-locale";
-import { getVerifiedPartnerOrNull } from "@/lib/auth/dal";
+import { getVerifiedPartnerOrNull, getVerifiedVisitorOrNull } from "@/lib/auth/dal";
+import { getVisitorTestimonialForListing } from "@/lib/testimonials";
 import {
   DIRECTORY_STRINGS,
   DIRECTORY_HOME_TITLE_BY_LOCALE,
@@ -236,7 +237,7 @@ export default async function ListingLayout({
   const listing = await getPublishedListingBySlug(slug);
   if (!listing) notFound();
 
-  const [siteOrigin, , referralCode, viewer, branches] = await Promise.all([
+  const [siteOrigin, , referralCode, viewer, branches, testimonialVisitor] = await Promise.all([
     getSiteOrigin(),
     // Runs once per visit to this listing, not once per page: Next.js keeps
     // a layout mounted across client-side navigation between its own child
@@ -257,7 +258,14 @@ export default async function ListingLayout({
     // "every section page re-queries the same request-scoped listing"
     // pattern getPublishedListingBySlug's own comment describes).
     getPublishedBranchListings(listing.id),
+    // Who's viewing, if anyone signed in as a testimonial-writing VISITOR —
+    // feeds the two WriteTestimonialButtons below (see its own comment on
+    // why there are two). Distinct from `viewer` above, which is a PARTNER.
+    getVerifiedVisitorOrNull(),
   ]);
+  const existingTestimonial = testimonialVisitor
+    ? ((await getVisitorTestimonialForListing(testimonialVisitor.id, listing.id)) ?? null)
+    : null;
   const t = DIRECTORY_STRINGS[resolved];
   const display = resolveListingDisplay(listing, resolved);
   const pageUrl = `${siteOrigin}${directoryListingPath(resolved, slug)}`;
@@ -510,6 +518,8 @@ export default async function ListingLayout({
               locale={resolved}
               aiAvailable={isAiConfigured()}
               googleReviewUrl={listing.googleReviewUrl}
+              visitor={testimonialVisitor ? { name: testimonialVisitor.name } : null}
+              existingTestimonial={existingTestimonial}
               className="w-full justify-center"
             />
           </div>
@@ -538,6 +548,8 @@ export default async function ListingLayout({
             locale={resolved}
             aiAvailable={isAiConfigured()}
             googleReviewUrl={listing.googleReviewUrl}
+            visitor={testimonialVisitor ? { name: testimonialVisitor.name } : null}
+            existingTestimonial={existingTestimonial}
             className="flex-1 justify-center"
           />
         </div>

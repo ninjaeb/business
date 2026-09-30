@@ -3,9 +3,10 @@
 import { useActionState, useEffect, useRef, useState, useTransition } from "react";
 import { Loader2, Sparkles, Star, Upload, X } from "lucide-react";
 import { rewriteTestimonialWithAi, submitDirectoryTestimonial, uploadTestimonialPhoto } from "@/app/actions/testimonials";
+import { logoutVisitor } from "@/app/actions/visitor-auth";
 import { compressImage } from "@/lib/image-compression";
 import { Button, buttonClasses } from "@/components/ui/button";
-import { FieldGroup, Input, Textarea } from "@/components/ui/field";
+import { FieldGroup, Textarea } from "@/components/ui/field";
 import { useToast } from "@/components/ui/toast";
 import { DIRECTORY_STRINGS, formatTestimonialPhotosUploading, type DirectoryLocale } from "@/lib/directory-i18n";
 
@@ -52,12 +53,16 @@ function StarPicker({ value, onChange }: { value: number; onChange: (value: numb
 // render-timing shape as DirectoryLeadForm, this is exactly as exposed to
 // the open internet. Every submission lands PENDING (see
 // submitDirectoryTestimonial); this form has no way to show it live, only
-// that it was received.
+// that it was received. Only rendered once WriteTestimonialButton already
+// has a signed-in visitor (see TestimonialAuthForm) — visitorName is shown
+// as a "Posting as" line rather than re-collected here.
 export function TestimonialForm({
   slug,
   locale,
   aiAvailable,
   googleReviewUrl,
+  visitorName,
+  onLogout,
 }: {
   slug: string;
   locale: DirectoryLocale;
@@ -66,12 +71,16 @@ export function TestimonialForm({
   // PartnerListing.googleReviewUrl's own comment) — the "Leave it on Google
   // too" step is simply skipped in that case, not shown disabled.
   googleReviewUrl: string | null;
+  visitorName: string;
+  // Flips WriteTestimonialButton back to the sign-in step — this form
+  // doesn't clear the session itself (see the "Not you? Log out" button
+  // below), just the local state that decides which of the two to show.
+  onLogout: () => void;
 }) {
   const [state, formAction, pending] = useActionState(submitDirectoryTestimonial, undefined);
   const t = DIRECTORY_STRINGS[locale];
   const toast = useToast();
 
-  const [authorName, setAuthorName] = useState("");
   const [rating, setRating] = useState(0);
   const [ratingError, setRatingError] = useState(false);
   const [body, setBody] = useState("");
@@ -254,19 +263,21 @@ export function TestimonialForm({
       </div>
       <input type="hidden" name="renderedAt" value={renderedAt} />
 
-      <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">{t.testimonialFormHeading}</h3>
-
-      <FieldGroup label={t.testimonialFormNameLabel} htmlFor="testimonial-name" required>
-        <Input
-          id="testimonial-name"
-          name="authorName"
-          required
-          placeholder={t.testimonialFormNamePlaceholder}
-          value={authorName}
-          onChange={(event) => setAuthorName(event.target.value)}
-          className="text-base"
-        />
-      </FieldGroup>
+      <div className="flex items-center justify-between gap-2">
+        <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">{t.testimonialFormHeading}</h3>
+        <p className="text-xs text-slate-500 dark:text-slate-400">
+          {t.testimonialLoggedInAs} <span className="font-medium text-slate-700 dark:text-slate-300">{visitorName}</span> ·{" "}
+          <button
+            type="button"
+            onClick={() => {
+              void logoutVisitor().then(onLogout);
+            }}
+            className="text-petrol hover:underline dark:text-petrol-light"
+          >
+            {t.testimonialLogout}
+          </button>
+        </p>
+      </div>
 
       <FieldGroup label={t.testimonialFormRatingLabel} htmlFor="testimonial-rating" required>
         <StarPicker value={rating} onChange={handleRatingChange} />

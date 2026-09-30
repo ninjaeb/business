@@ -83,10 +83,11 @@ export async function notifyPartnerOfNewTestimonial(listing: PartnerListing, tes
   const partner = await db.user.findUnique({ where: { id: listing.partnerId }, select: { email: true } });
   if (!partner) return;
 
+  const link = `${await getSiteOrigin()}/business-portal/testimonials`;
   const text =
     `${testimonial.authorName} left a testimonial on your ${listing.companyName} listing` +
     `${testimonial.rating ? ` (${testimonial.rating}/5)` : ""}:\n\n"${testimonial.body}"\n\n` +
-    "It's awaiting approval before it shows publicly — an admin will review it shortly.";
+    `It's waiting on your approval before it shows publicly. Review it from your business portal: ${link}`;
   try {
     await sendMail({
       to: partner.email,

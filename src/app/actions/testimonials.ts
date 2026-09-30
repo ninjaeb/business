@@ -4,7 +4,7 @@ import { headers } from "next/headers";
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { db } from "@/lib/db";
-import { requireAdminAction } from "@/lib/auth/dal";
+import { requirePartnerAction, requireVisitorAction } from "@/lib/auth/dal";
 import { isRateLimited, isSuspiciouslyFast } from "@/lib/lead-spam-guard";
 import { firstHopValue } from "@/lib/site-url";
 import { revalidateDirectory } from "@/lib/directory-revalidate";
@@ -19,7 +19,6 @@ import type { DirectoryTestimonialFormErrorCode } from "@/lib/directory-i18n";
 
 const testimonialSchema = z.object({
   slug: z.string().trim().min(1),
-  authorName: z.string().trim().min(1, "name_required").max(100),
   rating: z
     .string()
     .trim()
@@ -42,13 +41,18 @@ export type DirectoryTestimonialFormState =
   | { status: "error"; code: DirectoryTestimonialFormErrorCode }
   | undefined;
 
-// Same honeypot/render-timing/rate-limit shape as submitDirectoryLead in
-// src/app/actions/directory.ts — this is exactly as exposed to the open
-// internet, and shares that same in-memory per-IP budget (see
-// lead-spam-guard.ts's own comment on why that's fine: one combined abuse
-// budget across every public form-like action in this app, not a security
-// boundary). Unlike a lead, there's no partner inbox to land in — a
-// testimonial is always PENDING until an admin approves it (see
+// Requires a signed-in VISITOR account (see TestimonialAuthForm,
+// registerVisitor/loginVisitor in src/app/actions/visitor-auth.ts) — the
+// dialog that renders this form (WriteTestimonialButton) never shows it
+// without one already, so requireVisitorAction throwing here means a direct
+// call bypassing that UI, not a real visitor's flow. Still honeypot/
+// render-timing/rate-limited the same as submitDirectoryLead in
+// src/app/actions/directory.ts, and shares that same in-memory per-IP
+// budget (see lead-spam-guard.ts's own comment on why that's fine): an
+// account requirement raises the bar but doesn't replace it — a scripted
+// signup-then-submit loop is still exactly what those guards catch. Unlike
+// a lead, there's no partner inbox to land in — a testimonial is always
+// PENDING until the listing's own owner approves it (see
 // approveDirectoryTestimonial below), since it's headed for public display
 // rather than a private conversation.
 export async function submitDirectoryTestimonial(
@@ -67,9 +71,10 @@ export async function submitDirectoryTestimonial(
     return { status: "error", code: "rate_limited" };
   }
 
+  const visitor = await requireVisitorAction();
+
   const parsed = testimonialSchema.safeParse({
     slug: formData.get("slug"),
-    authorName: formData.get("authorName"),
     rating: formData.get("rating"),
     body: formData.get("body"),
     locale: formData.get("locale"),
@@ -84,13 +89,22 @@ export async function submitDirectoryTestimonial(
     return { status: "error", code: "listing_not_found" };
   }
 
+  const existing = await db.directoryTestimonial.findUnique({
+    where: { listingId_authorId: { listingId: listing.id, authorId: visitor.id } },
+    select: { id: true },
+  });
+  if (existing) {
+    return { status: "error", code: "already_submitted" };
+  }
+
   // Already validated as an integer 1-5 by testimonialSchema above.
   const rating = Number(parsed.data.rating);
 
   const testimonial = await db.directoryTestimonial.create({
     data: {
       listingId: listing.id,
-      authorName: parsed.data.authorName,
+      authorId: visitor.id,
+      authorName: visitor.name,
       rating,
       body: parsed.data.body,
       locale: parsed.data.locale,
@@ -208,20 +222,34 @@ export async function rewriteTestimonialWithAi(text: string): Promise<AiResult<{
 }
 
 // ---------------------------------------------------------------------------
-// Admin side — the moderation queue (see /admin's "Testimonials" card)
+// Partner side — the moderation queue (see /business-portal/testimonials)
 // ---------------------------------------------------------------------------
 
 // Same bound-action idiom as approveDirectoryListing/rejectDirectoryListing
 // in src/app/actions/directory.ts: <form action={approveDirectoryTestimonial.bind(null, id)}>,
-// no client component needed.
-export async function approveDirectoryTestimonial(id: string): Promise<void> {
-  await requireAdminAction();
-  const testimonial = await db.directoryTestimonial.update({
-    where: { id },
-    data: { status: "APPROVED", reviewedAt: new Date() },
+// no client component needed. Owner-moderated, not admin — a testimonial is
+// about one specific listing, and that listing's own partner is the one
+// with the context (and the stake) to judge whether it's genuine, unlike
+// listing edits, which stay admin-approved. getOwnedTestimonial-style
+// ownership check inlined here rather than factored out, same as this
+// file's other single-caller queries.
+async function getOwnedTestimonialOrThrow(id: string, partnerId: string) {
+  const testimonial = await db.directoryTestimonial.findFirst({
+    where: { id, listing: { partnerId } },
     include: { listing: { select: { slug: true } } },
   });
-  revalidatePath("/admin");
+  if (!testimonial) throw new Error("Testimonial not found.");
+  return testimonial;
+}
+
+export async function approveDirectoryTestimonial(id: string): Promise<void> {
+  const partner = await requirePartnerAction();
+  const testimonial = await getOwnedTestimonialOrThrow(id, partner.id);
+  await db.directoryTestimonial.update({
+    where: { id: testimonial.id },
+    data: { status: "APPROVED", reviewedAt: new Date() },
+  });
+  revalidatePath("/business-portal/testimonials");
   revalidateDirectory({ slugs: [testimonial.listing.slug] });
 }
 
@@ -230,12 +258,13 @@ const rejectTestimonialSchema = z.object({
 });
 
 export async function rejectDirectoryTestimonial(id: string, formData: FormData): Promise<void> {
-  await requireAdminAction();
+  const partner = await requirePartnerAction();
+  const testimonial = await getOwnedTestimonialOrThrow(id, partner.id);
   const parsed = rejectTestimonialSchema.safeParse({ note: formData.get("note") });
   if (!parsed.success) throw new Error(parsed.error.issues[0]?.message ?? "A note is required.");
   await db.directoryTestimonial.update({
-    where: { id },
+    where: { id: testimonial.id },
     data: { status: "REJECTED", reviewNote: parsed.data.note, reviewedAt: new Date() },
   });
-  revalidatePath("/admin");
+  revalidatePath("/business-portal/testimonials");
 }

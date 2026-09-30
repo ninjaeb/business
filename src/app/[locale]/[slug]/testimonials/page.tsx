@@ -7,6 +7,8 @@ import { resolveDirectoryLocale } from "@/lib/directory-locale";
 import { DIRECTORY_STRINGS, directoryListingTestimonialsPath, directoryListingPath } from "@/lib/directory-i18n";
 import { getSiteOrigin } from "@/lib/site-url";
 import { isAiConfigured } from "@/lib/ai/client";
+import { getVerifiedVisitorOrNull } from "@/lib/auth/dal";
+import { getVisitorTestimonialForListing } from "@/lib/testimonials";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
 import { TestimonialList } from "@/components/directory/testimonial-list";
 import { WriteTestimonialButton } from "@/components/directory/write-testimonial-button";
@@ -56,11 +58,15 @@ export default async function TestimonialsPage({
   if (!listing) notFound();
 
   const t = DIRECTORY_STRINGS[resolved];
-  const testimonials = await db.directoryTestimonial.findMany({
-    where: { listingId: listing.id, status: "APPROVED" },
-    orderBy: { createdAt: "desc" },
-    include: { images: { orderBy: { createdAt: "asc" } } },
-  });
+  const [testimonials, visitor] = await Promise.all([
+    db.directoryTestimonial.findMany({
+      where: { listingId: listing.id, status: "APPROVED" },
+      orderBy: { createdAt: "desc" },
+      include: { images: { orderBy: { createdAt: "asc" } } },
+    }),
+    getVerifiedVisitorOrNull(),
+  ]);
+  const existingTestimonial = visitor ? (await getVisitorTestimonialForListing(visitor.id, listing.id)) ?? null : null;
 
   return (
     <Card>
@@ -81,6 +87,8 @@ export default async function TestimonialsPage({
             locale={resolved}
             aiAvailable={isAiConfigured()}
             googleReviewUrl={listing.googleReviewUrl}
+            visitor={visitor ? { name: visitor.name } : null}
+            existingTestimonial={existingTestimonial}
             variant="primary"
             className="w-full bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"
           />

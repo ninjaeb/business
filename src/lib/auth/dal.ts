@@ -50,9 +50,17 @@ export async function getVerifiedPartnerOrNull() {
 
 export const PARTNER_HOME = "/business-portal";
 export const ADMIN_HOME = "/admin";
+// A VISITOR account (see the Role enum's own comment) has no dashboard of
+// its own — it exists only to write testimonials, right from the listing
+// page it's already on. The site root redirects to the locale-resolved
+// directory home (see src/proxy.ts), so this is a safe, locale-agnostic
+// landing spot.
+export const VISITOR_HOME = "/";
 
 export function homeForRole(role: Role) {
-  return role === "ADMIN" ? ADMIN_HOME : PARTNER_HOME;
+  if (role === "ADMIN") return ADMIN_HOME;
+  if (role === "VISITOR") return VISITOR_HOME;
+  return PARTNER_HOME;
 }
 
 // For Server Components: redirects to the other role's home rather than
@@ -104,6 +112,31 @@ export async function requireAdminAction() {
   const user = await getCurrentUser();
   if (user.role !== "ADMIN") {
     throw new Error("Admins only.");
+  }
+  return user;
+}
+
+// Same shape as getVerifiedPartnerOrNull above, for the write-a-testimonial
+// dialog (WriteTestimonialButton) — a Server Component that must never
+// itself redirect on a missing/wrong-role session, since "not signed in" is
+// an expected, common state here (shows the sign-up/log-in form instead),
+// not an error.
+export async function getVerifiedVisitorOrNull() {
+  const session = await getSessionPayload();
+  if (!session?.userId) return null;
+  const user = await db.user.findUnique({ where: { id: session.userId }, select: CURRENT_USER_SELECT });
+  if (!user || user.role !== "VISITOR") return null;
+  return user;
+}
+
+// For the testimonial-submission Server Action (same throw-not-redirect
+// convention as requirePartnerAction/requireAdminAction) — reached only if
+// someone calls it directly with no visitor session, since the dialog UI
+// itself never renders the submit form without one already.
+export async function requireVisitorAction() {
+  const user = await getCurrentUser();
+  if (user.role !== "VISITOR") {
+    throw new Error("Visitors only.");
   }
   return user;
 }

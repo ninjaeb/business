@@ -241,11 +241,28 @@ export function formatAlbumMetaDescription(albumName: string, photoCount: number
 }
 
 export type DirectoryTestimonialFormErrorCode =
-  | "name_required"
   | "body_required"
   | "rating_required"
   | "rate_limited"
   | "listing_not_found"
+  | "not_signed_in"
+  | "already_submitted"
+  | "invalid_submission"
+  | "generic";
+
+// registerVisitor/loginVisitor in src/app/actions/visitor-auth.ts — the
+// account gate in front of TestimonialForm (see TestimonialAuthForm).
+export type VisitorAuthErrorCode =
+  | "name_required"
+  | "email_required"
+  | "email_invalid"
+  | "phone_required"
+  | "phone_invalid"
+  | "password_length"
+  | "password_required"
+  | "email_taken"
+  | "invalid_credentials"
+  | "rate_limited"
   | "invalid_submission"
   | "generic";
 
@@ -477,9 +494,34 @@ export type DirectoryStrings = {
   // testimonials, so this is what invites one regardless of whether any
   // exist yet.
   testimonialsCta: string;
+  // The account gate in front of the form below (see TestimonialAuthForm) —
+  // name/email/phone/password field labels are the existing signup* keys
+  // above, reused as-is rather than duplicated, since the copy is identical
+  // ("Name", "Email", "Phone", "Password").
+  testimonialAuthHeading: string;
+  testimonialAuthIntro: string;
+  testimonialSignupTab: string;
+  testimonialLoginTab: string;
+  testimonialLoginSubmit: string;
+  testimonialLoginSubmitting: string;
+  testimonialSwitchToLogin: string;
+  testimonialSwitchToSignup: string;
+  testimonialAuthErrors: Record<VisitorAuthErrorCode, string>;
+  // Shown instead of the form once a signed-in visitor already has a
+  // testimonial on this listing (see the @@unique([listingId, authorId])
+  // constraint on DirectoryTestimonial) — testimonialAlreadySubmittedNote is
+  // only shown for a REJECTED one, alongside its own reviewNote text.
+  testimonialAlreadySubmittedTitle: string;
+  testimonialAlreadySubmittedPending: string;
+  testimonialAlreadySubmittedApproved: string;
+  testimonialAlreadySubmittedRejected: string;
+  // "Posting as {name}" above the form fields, plus a log-out link right
+  // next to it — both plain prefix/label text, the name/link itself
+  // rendered separately (no {token} to fill in, unlike e.g.
+  // contactWhatsAppMessage).
+  testimonialLoggedInAs: string;
+  testimonialLogout: string;
   testimonialFormHeading: string;
-  testimonialFormNameLabel: string;
-  testimonialFormNamePlaceholder: string;
   testimonialFormRatingLabel: string;
   testimonialFormBodyLabel: string;
   testimonialFormBodyPlaceholder: string;
@@ -719,9 +761,35 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialsIntro: "Real feedback from customers who've worked with this business.",
     testimonialsEmpty: "No testimonials yet — be the first to leave one.",
     testimonialsCta: "Had a good experience? Share it — it helps other visitors decide, and takes less than a minute.",
+    testimonialAuthHeading: "Sign in to write a testimonial",
+    testimonialAuthIntro: "Create a free account with your name, email and phone — takes less than a minute.",
+    testimonialSignupTab: "Create account",
+    testimonialLoginTab: "Log in",
+    testimonialLoginSubmit: "Log in",
+    testimonialLoginSubmitting: "Logging in…",
+    testimonialSwitchToLogin: "Already have an account? Log in",
+    testimonialSwitchToSignup: "New here? Create an account",
+    testimonialAuthErrors: {
+      name_required: "Name is required",
+      email_required: "Email is required",
+      email_invalid: "Enter a valid email",
+      phone_required: "Phone is required",
+      phone_invalid: "Enter a valid phone number, e.g. +60 12 345 6789",
+      password_length: "Password must be at least 8 characters",
+      password_required: "Password is required",
+      email_taken: "That email already has an account — try logging in instead.",
+      invalid_credentials: "Incorrect email or password.",
+      rate_limited: "Too many attempts — please wait a few minutes and try again.",
+      invalid_submission: "Please check the form and try again.",
+      generic: "Something went wrong. Please try again.",
+    },
+    testimonialAlreadySubmittedTitle: "You've already reviewed this business",
+    testimonialAlreadySubmittedPending: "Your testimonial is still awaiting approval from the business.",
+    testimonialAlreadySubmittedApproved: "Your testimonial is live on this page — thanks for sharing it.",
+    testimonialAlreadySubmittedRejected: "The business didn't approve your testimonial.",
+    testimonialLoggedInAs: "Posting as",
+    testimonialLogout: "Not you? Log out",
     testimonialFormHeading: "Write a testimonial",
-    testimonialFormNameLabel: "Your name",
-    testimonialFormNamePlaceholder: "Jane Tan",
     testimonialFormRatingLabel: "Rating",
     testimonialFormBodyLabel: "Your testimonial",
     testimonialFormBodyPlaceholder: "What was it like working with this business?",
@@ -738,11 +806,12 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialGoogleCta: "Leave it on Google too",
     testimonialGoogleCopied: "Copied — paste it into the review box that just opened.",
     testimonialErrors: {
-      name_required: "Name is required",
       body_required: "Write a few words about your experience",
       rating_required: "Please select a rating",
       rate_limited: "Too many attempts — please wait a few minutes and try again.",
       listing_not_found: "This listing is no longer available.",
+      not_signed_in: "Sign in first, then write your testimonial.",
+      already_submitted: "You've already reviewed this business.",
       invalid_submission: "Please check the form and try again.",
       generic: "Something went wrong. Please try again.",
     },
@@ -938,9 +1007,35 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialsIntro: "来自曾与该企业合作的客户的真实反馈。",
     testimonialsEmpty: "暂无评价——成为第一个留下评价的人。",
     testimonialsCta: "有过愉快的体验吗？分享出来——这能帮助其他访客做决定，只需不到一分钟。",
+    testimonialAuthHeading: "登录后即可撰写评价",
+    testimonialAuthIntro: "创建一个免费账户，填写姓名、电子邮件和电话——不到一分钟即可完成。",
+    testimonialSignupTab: "创建账户",
+    testimonialLoginTab: "登录",
+    testimonialLoginSubmit: "登录",
+    testimonialLoginSubmitting: "登录中…",
+    testimonialSwitchToLogin: "已有账户？登录",
+    testimonialSwitchToSignup: "还没有账户？创建一个",
+    testimonialAuthErrors: {
+      name_required: "请填写姓名",
+      email_required: "请填写电子邮件",
+      email_invalid: "请输入有效的电子邮件",
+      phone_required: "请填写电话号码",
+      phone_invalid: "请输入有效的电话号码，例如 +60 12 345 6789",
+      password_length: "密码至少需要 8 个字符",
+      password_required: "请填写密码",
+      email_taken: "该电子邮件已有账户——请改用登录。",
+      invalid_credentials: "电子邮件或密码不正确。",
+      rate_limited: "尝试次数过多，请稍等几分钟后再试。",
+      invalid_submission: "请检查表单内容后重试。",
+      generic: "出现错误，请重试。",
+    },
+    testimonialAlreadySubmittedTitle: "您已评价过该企业",
+    testimonialAlreadySubmittedPending: "您的评价仍在等待该企业审核。",
+    testimonialAlreadySubmittedApproved: "您的评价已在本页公开显示——感谢您的分享。",
+    testimonialAlreadySubmittedRejected: "该企业未通过您的评价。",
+    testimonialLoggedInAs: "以此身份发布：",
+    testimonialLogout: "不是您本人？登出",
     testimonialFormHeading: "撰写评价",
-    testimonialFormNameLabel: "您的姓名",
-    testimonialFormNamePlaceholder: "陈小姐",
     testimonialFormRatingLabel: "评分",
     testimonialFormBodyLabel: "您的评价",
     testimonialFormBodyPlaceholder: "与该企业合作的体验如何？",
@@ -957,11 +1052,12 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialGoogleCta: "同时发布到 Google",
     testimonialGoogleCopied: "已复制——请粘贴到刚打开的评价框中。",
     testimonialErrors: {
-      name_required: "请填写姓名",
       body_required: "请简单描述您的体验",
       rating_required: "请选择评分",
       rate_limited: "尝试次数过多，请稍等几分钟后再试。",
       listing_not_found: "该合作伙伴的资料已下架。",
+      not_signed_in: "请先登录，然后再撰写您的评价。",
+      already_submitted: "您已评价过该企业。",
       invalid_submission: "请检查表单内容后重试。",
       generic: "出现错误，请重试。",
     },
@@ -1156,9 +1252,35 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialsIntro: "Maklum balas sebenar daripada pelanggan yang pernah berurusan dengan perniagaan ini.",
     testimonialsEmpty: "Belum ada testimoni — jadilah yang pertama meninggalkan satu.",
     testimonialsCta: "Ada pengalaman yang baik? Kongsikan — ia membantu pelawat lain membuat keputusan, dan mengambil masa kurang seminit.",
+    testimonialAuthHeading: "Log masuk untuk menulis testimoni",
+    testimonialAuthIntro: "Cipta akaun percuma dengan nama, e-mel dan nombor telefon anda — mengambil masa kurang seminit.",
+    testimonialSignupTab: "Cipta akaun",
+    testimonialLoginTab: "Log masuk",
+    testimonialLoginSubmit: "Log masuk",
+    testimonialLoginSubmitting: "Melog masuk…",
+    testimonialSwitchToLogin: "Sudah ada akaun? Log masuk",
+    testimonialSwitchToSignup: "Baru di sini? Cipta akaun",
+    testimonialAuthErrors: {
+      name_required: "Nama diperlukan",
+      email_required: "E-mel diperlukan",
+      email_invalid: "Masukkan e-mel yang sah",
+      phone_required: "Nombor telefon diperlukan",
+      phone_invalid: "Masukkan nombor telefon yang sah, contohnya +60 12 345 6789",
+      password_length: "Kata laluan mestilah sekurang-kurangnya 8 aksara",
+      password_required: "Kata laluan diperlukan",
+      email_taken: "E-mel itu sudah mempunyai akaun — cuba log masuk sebaliknya.",
+      invalid_credentials: "E-mel atau kata laluan tidak betul.",
+      rate_limited: "Terlalu banyak percubaan — sila tunggu beberapa minit dan cuba lagi.",
+      invalid_submission: "Sila semak borang dan cuba lagi.",
+      generic: "Berlaku ralat. Sila cuba lagi.",
+    },
+    testimonialAlreadySubmittedTitle: "Anda sudah menilai perniagaan ini",
+    testimonialAlreadySubmittedPending: "Testimoni anda masih menunggu kelulusan daripada perniagaan ini.",
+    testimonialAlreadySubmittedApproved: "Testimoni anda kini dipaparkan di halaman ini — terima kasih kerana berkongsi.",
+    testimonialAlreadySubmittedRejected: "Perniagaan ini tidak meluluskan testimoni anda.",
+    testimonialLoggedInAs: "Menyiarkan sebagai",
+    testimonialLogout: "Bukan anda? Log keluar",
     testimonialFormHeading: "Tulis testimoni",
-    testimonialFormNameLabel: "Nama anda",
-    testimonialFormNamePlaceholder: "Siti Aminah",
     testimonialFormRatingLabel: "Penilaian",
     testimonialFormBodyLabel: "Testimoni anda",
     testimonialFormBodyPlaceholder: "Bagaimana pengalaman anda berurusan dengan perniagaan ini?",
@@ -1175,11 +1297,12 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialGoogleCta: "Hantar ke Google juga",
     testimonialGoogleCopied: "Disalin — tampal ke dalam kotak ulasan yang baru dibuka.",
     testimonialErrors: {
-      name_required: "Nama diperlukan",
       body_required: "Tulis beberapa patah perkataan tentang pengalaman anda",
       rating_required: "Sila pilih penilaian",
       rate_limited: "Terlalu banyak percubaan — sila tunggu beberapa minit dan cuba lagi.",
       listing_not_found: "Penyenaraian ini tidak lagi tersedia.",
+      not_signed_in: "Log masuk dahulu, kemudian tulis testimoni anda.",
+      already_submitted: "Anda sudah menilai perniagaan ini.",
       invalid_submission: "Sila semak borang dan cuba lagi.",
       generic: "Berlaku ralat. Sila cuba lagi.",
     },
