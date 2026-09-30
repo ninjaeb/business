@@ -750,14 +750,32 @@ export async function translateListingContent(current: {
     "Translate all of the above, keeping the services, FAQ, and News/Promotions lists in the same order and count as given.",
   ].join("\n\n");
 
-  // Same longer budget as autoCreateListingDetails's own callAi (see its
-  // comment) — callAi's 20s default kept timing out here even after
-  // splitting into these two smaller per-language calls and forcing
-  // reasoning off, on the free models this app defaults to. Run in
+  // Longer timeout for the same reason as autoCreateListingDetails's own
+  // callAi (see its comment) — callAi's 20s default kept timing out here
+  // even after splitting into these two smaller per-language calls and
+  // forcing reasoning off, on the free models this app defaults to. Run in
   // parallel, so this doesn't double the wait versus one call.
+  //
+  // maxTokens also needs raising past callAi's 4000 default, same as
+  // autoCreateListingDetails: a listing can carry up to 20 services, 20
+  // FAQs, and 20 News/Promotions posts (see MAX_SERVICES/MAX_FAQS/
+  // MAX_UPDATES in lib/directory.ts), each translated in full alongside the
+  // tagline and About text, in one JSON response — comfortably past 4000
+  // tokens for any listing with real content, which silently truncates the
+  // JSON mid-object. That surfaced in production as "Translate with AI"
+  // failing with callAi's generic "The model didn't return a usable
+  // response." (the JSON.parse of a cut-off response failing), not a
+  // timeout — a listing doesn't need anywhere near the 20-per-list ceiling
+  // to hit it.
   const [zh, ms] = await Promise.all([
-    callAi(TranslationLocaleSchema, listingTranslationSystemPrompt("Simplified Chinese"), prompt, { timeoutMs: 60_000 }),
-    callAi(TranslationLocaleSchema, listingTranslationSystemPrompt("Malay (Bahasa Malaysia)"), prompt, { timeoutMs: 60_000 }),
+    callAi(TranslationLocaleSchema, listingTranslationSystemPrompt("Simplified Chinese"), prompt, {
+      timeoutMs: 60_000,
+      maxTokens: 16_000,
+    }),
+    callAi(TranslationLocaleSchema, listingTranslationSystemPrompt("Malay (Bahasa Malaysia)"), prompt, {
+      timeoutMs: 60_000,
+      maxTokens: 16_000,
+    }),
   ]);
   if (zh.status === "error") return zh;
   if (ms.status === "error") return ms;
