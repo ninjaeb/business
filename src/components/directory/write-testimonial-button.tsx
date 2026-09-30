@@ -29,6 +29,7 @@ export function WriteTestimonialButton({
   locale,
   aiAvailable,
   googleReviewUrl,
+  googleClientId,
   visitor,
   existingTestimonial,
   variant = "secondary",
@@ -38,6 +39,10 @@ export function WriteTestimonialButton({
   locale: DirectoryLocale;
   aiAvailable: boolean;
   googleReviewUrl: string | null;
+  // Null when Google sign-in isn't configured — forwarded straight to
+  // TestimonialAuthForm, which hides its "Continue with Google" button in
+  // that case (see getPublicGoogleClientId).
+  googleClientId: string | null;
   // Null when no visitor is signed in on this browser — the dialog opens
   // straight to TestimonialAuthForm in that case.
   visitor: { name: string } | null;
@@ -105,7 +110,11 @@ export function WriteTestimonialButton({
               <X className="h-4 w-4" />
             </button>
             {!localVisitor ? (
-              <TestimonialAuthForm locale={locale} onAuthenticated={(name) => setLocalVisitor({ name })} />
+              <TestimonialAuthForm
+                locale={locale}
+                googleClientId={googleClientId}
+                onAuthenticated={(name) => setLocalVisitor({ name })}
+              />
             ) : alreadySubmittedMessage ? (
               <div className="space-y-2">
                 <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">

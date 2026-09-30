@@ -48,11 +48,22 @@ function contentSecurityPolicy(): string {
     // are the alternative but require dynamic rendering everywhere (see
     // above). googletagmanager.com loads gtag.js itself; the Plausible
     // origin loads its tracking script.
-    `script-src 'self' 'unsafe-inline' https://www.googletagmanager.com ${plausible}${isDev ? " 'unsafe-eval'" : ""}`,
+    // accounts.google.com/gsi/client — Google Identity Services' own SDK,
+    // loaded by TestimonialAuthForm for the visitor "Continue with Google"
+    // button (see getPublicGoogleClientId's own comment on why this flow is
+    // separate from the partner pages' /api/auth/google redirect, which
+    // needs no script-src/frame-src allowance since it's a same-origin form
+    // POST followed by a server redirect, not a script this app loads).
+    // Allowlisted unconditionally, same reasoning as the Plausible origin
+    // above — harmless when GOOGLE_CLIENT_ID is unset, since
+    // TestimonialAuthForm only injects the <Script> tag when it's configured.
+    `script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://accounts.google.com/gsi/client ${plausible}${isDev ? " 'unsafe-eval'" : ""}`,
     // 'unsafe-inline': five components use inline style={{}} props (grepped
     // for `style={{` across src/), which CSP's style-src-attr governs the
-    // same way as script-src-attr above.
-    "style-src 'self' 'unsafe-inline'",
+    // same way as script-src-attr above. accounts.google.com/gsi/style —
+    // the stylesheet Google Identity Services' own script (see script-src
+    // above) loads to style its rendered button.
+    "style-src 'self' 'unsafe-inline' https://accounts.google.com/gsi/style",
     // blob: — the logo-crop preview (URL.createObjectURL in
     // partner-listing-form.tsx). data: — a few inline SVG placeholders
     // (src/components/ui/field.tsx). Nothing else: every business photo and
@@ -63,11 +74,16 @@ function contentSecurityPolicy(): string {
     "img-src 'self' data: blob:",
     "font-src 'self'",
     // Where gtag.js and Plausible's script actually send their beacons.
-    `connect-src 'self' https://www.google-analytics.com ${plausible}`,
+    // accounts.google.com/gsi/ — Google Identity Services' own status/logging
+    // calls, made by the script above from inside TestimonialAuthForm.
+    `connect-src 'self' https://www.google-analytics.com https://accounts.google.com/gsi/ ${plausible}`,
     // Exactly the five video providers toEmbeddableVideoUrl
     // (src/lib/directory.ts) embeds, plus google.com for the "visit" page's
-    // Maps embed (src/app/[locale]/[slug]/visit/page.tsx).
-    "frame-src https://www.youtube-nocookie.com https://player.vimeo.com https://www.dailymotion.com https://www.facebook.com https://www.tiktok.com https://www.google.com",
+    // Maps embed (src/app/[locale]/[slug]/visit/page.tsx). accounts.google.com
+    // for Google Identity Services' own button/credential iframe (see
+    // script-src above) — GIS renders its branded button and any account
+    // chooser inside an iframe from this origin, not just a plain script.
+    "frame-src https://www.youtube-nocookie.com https://player.vimeo.com https://www.dailymotion.com https://www.facebook.com https://www.tiktok.com https://www.google.com https://accounts.google.com",
     "object-src 'none'",
     "base-uri 'self'",
     "form-action 'self'",
