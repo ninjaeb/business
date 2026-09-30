@@ -9,7 +9,7 @@ import { getSiteOrigin } from "@/lib/site-url";
 import { isAiConfigured } from "@/lib/ai/client";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
 import { TestimonialList } from "@/components/directory/testimonial-list";
-import { TestimonialForm } from "@/components/directory/testimonial-form";
+import { WriteTestimonialButton } from "@/components/directory/write-testimonial-button";
 
 export const dynamic = "force-dynamic";
 
@@ -39,9 +39,10 @@ export async function generateMetadata({
 }
 
 // Unlike the other section pages (FAQ, Photos, ...), this page never
-// notFound()s on empty content — the write-a-testimonial form (see
-// TestimonialForm) needs to stay reachable even for a listing with no
-// APPROVED testimonials yet.
+// notFound()s on empty content — the "Write a testimonial" button (see
+// WriteTestimonialButton, which pops the form itself open in a dialog
+// rather than embedding it inline here) needs to stay reachable even for a
+// listing with no APPROVED testimonials yet.
 export default async function TestimonialsPage({
   params,
 }: {
@@ -74,7 +75,14 @@ export default async function TestimonialsPage({
           <TestimonialList testimonials={testimonials} locale={resolved} />
         )}
         <div className="border-t border-slate-200 pt-6 dark:border-neutral-800">
-          <TestimonialForm slug={slug} locale={resolved} aiAvailable={isAiConfigured()} googleReviewUrl={listing.googleReviewUrl} />
+          <WriteTestimonialButton
+            slug={slug}
+            locale={resolved}
+            aiAvailable={isAiConfigured()}
+            googleReviewUrl={listing.googleReviewUrl}
+            variant="primary"
+            className="h-11 w-full text-base bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"
+          />
         </div>
       </CardBody>
     </Card>

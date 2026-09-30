@@ -41,6 +41,7 @@ import { translateCategoryName, categoryPath } from "@/lib/directory-category-la
 import { locationLabel, locationPath } from "@/lib/directory-location-labels";
 import { industryPath } from "@/lib/directory-industry-labels";
 import { getSiteOrigin } from "@/lib/site-url";
+import { isAiConfigured } from "@/lib/ai/client";
 import { INDUSTRY_LABELS } from "@/lib/labels";
 import { Badge } from "@/components/ui/badge";
 import { StarRating } from "@/components/ui/star-rating";
@@ -54,6 +55,7 @@ import { RecommendBar } from "@/components/directory/recommend-bar";
 import { ReferralViewBeacon } from "@/components/directory/referral-view-beacon";
 import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
 import { ListingSectionNav } from "@/components/directory/listing-section-nav";
+import { WriteTestimonialButton } from "@/components/directory/write-testimonial-button";
 
 export const dynamic = "force-dynamic";
 
@@ -499,16 +501,17 @@ export default async function ListingLayout({
             <ShareButton title={listing.companyName} url={pageUrl} label={t.shareLabel} className="w-full" />
             {/* Right below Share — a visitor who's just shared or
                 recommended this business is exactly who's primed to also
-                leave their own testimonial (see the Testimonials tab/page,
-                directoryListingTestimonialsPath). A plain link, not a
-                ShareButton: this navigates to the write-a-testimonial form
-                itself rather than opening a share sheet. */}
-            <Link
-              href={directoryListingTestimonialsPath(resolved, slug)}
-              className={buttonClasses("secondary", "md", "w-full justify-center")}
-            >
-              {t.testimonialFormHeading}
-            </Link>
+                leave their own testimonial. Pops the form open in a dialog
+                right here (see WriteTestimonialButton) rather than
+                navigating to the Testimonials page or opening a share
+                sheet. */}
+            <WriteTestimonialButton
+              slug={slug}
+              locale={resolved}
+              aiAvailable={isAiConfigured()}
+              googleReviewUrl={listing.googleReviewUrl}
+              className="w-full justify-center"
+            />
           </div>
         </div>
 
@@ -530,12 +533,13 @@ export default async function ListingLayout({
             className="flex-1 justify-center bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"
           />
           <ShareButton title={listing.companyName} url={pageUrl} label={t.shareLabel} className="flex-1 justify-center" />
-          <Link
-            href={directoryListingTestimonialsPath(resolved, slug)}
-            className={buttonClasses("secondary", "md", "flex-1 justify-center")}
-          >
-            {t.testimonialFormHeading}
-          </Link>
+          <WriteTestimonialButton
+            slug={slug}
+            locale={resolved}
+            aiAvailable={isAiConfigured()}
+            googleReviewUrl={listing.googleReviewUrl}
+            className="flex-1 justify-center"
+          />
         </div>
 
         <ListingSectionNav sections={sectionLinks} navLabel={t.sectionNavLabel} />
