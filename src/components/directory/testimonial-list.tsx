@@ -1,6 +1,7 @@
 import { Star } from "lucide-react";
-import type { DirectoryTestimonial } from "@/generated/prisma/client";
+import type { DirectoryListingImage, DirectoryTestimonial } from "@/generated/prisma/client";
 import type { DirectoryLocale } from "@/lib/directory-i18n";
+import { PhotoLightbox } from "@/components/directory/photo-lightbox";
 
 // Same locale-aware dateline pattern as UpdateItem/NewsFeedContent's own
 // formatUpdatePostedAt — a testimonial's createdAt is a real timestamp
@@ -28,7 +29,9 @@ function TestimonialStars({ rating }: { rating: number }) {
 // src/app/[locale]/[slug]/testimonials/page.tsx) — this only ever renders
 // rows an admin has already moderated, same trust boundary as every other
 // visitor-authored content this app shows publicly.
-export function TestimonialList({ testimonials, locale }: { testimonials: DirectoryTestimonial[]; locale: DirectoryLocale }) {
+type TestimonialWithPhotos = DirectoryTestimonial & { images: DirectoryListingImage[] };
+
+export function TestimonialList({ testimonials, locale }: { testimonials: TestimonialWithPhotos[]; locale: DirectoryLocale }) {
   return (
     <ul className="space-y-3">
       {testimonials.map((testimonial) => (
@@ -43,6 +46,20 @@ export function TestimonialList({ testimonials, locale }: { testimonials: Direct
             </div>
           </div>
           <p className="mt-2 whitespace-pre-line text-sm text-slate-600 dark:text-slate-300">{testimonial.body}</p>
+          {testimonial.images.length > 0 && (
+            <div className="mt-3 max-w-xs">
+              <PhotoLightbox
+                photos={testimonial.images.map((image) => ({
+                  id: image.id,
+                  src: `/api/directory-images/${image.id}`,
+                  caption: "",
+                  alt: `Photo from ${testimonial.authorName}'s testimonial`,
+                  gallery: "",
+                }))}
+                companyName={testimonial.authorName}
+              />
+            </div>
+          )}
         </li>
       ))}
     </ul>

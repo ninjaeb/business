@@ -436,22 +436,24 @@ model PartnerListingCategory {
   @@index([categoryId])
 }
 
-// Three unrelated uses share this table (and its /api/directory-images/[id]
-// route), all just "an image byte blob owned by a listing or a guide":
-// About-field embedded images (markdown-lite editor) on a listing,
-// gallery photos (see PartnerListing.photoIds), and About-field embedded
-// images on a DirectoryGuide below — referenced by id from inside the
-// relevant markdown body, or (gallery photos only) from that ordered
-// array instead. `caption` and `gallery` are only ever set for gallery
-// photos — an embed's description lives in the surrounding markdown, not
-// on the image row, and has no grouping of its own either. `gallery` is a
-// partner's own free-text label (e.g. "Office", "Team", "2024 Event"), not
-// a fixed enum like a video's category — the public page groups photos
-// under it (see PhotoLightbox) once a listing has more than one distinct
-// value among its photos. Exactly one of listingId/guideId is set on any
-// row — enforced in the two upload actions (uploadDirectoryListingImage/
-// uploadDirectoryGuideImage), not the schema itself, same convention as
-// every other cross-table invariant in this file.
+// Four unrelated uses share this table (and its /api/directory-images/[id]
+// route), all just "an image byte blob owned by a listing, a guide, or a
+// testimonial": About-field embedded images (markdown-lite editor) on a
+// listing, gallery photos (see PartnerListing.photoIds), About-field
+// embedded images on a DirectoryGuide below, and photos attached to a
+// visitor's own DirectoryTestimonial — referenced by id from inside the
+// relevant markdown body, or (gallery/testimonial photos only) from that
+// owner's own ordered array or relation instead. `caption` and `gallery`
+// are only ever set for gallery photos — an embed's description lives in
+// the surrounding markdown, not on the image row, and a testimonial photo
+// has neither. `gallery` is a partner's own free-text label (e.g. "Office",
+// "Team", "2024 Event"), not a fixed enum like a video's category — the
+// public page groups photos under it (see PhotoLightbox) once a listing
+// has more than one distinct value among its photos. Exactly one of
+// listingId/guideId/testimonialId is set on any row — enforced in the
+// three upload actions (uploadDirectoryListingImage/uploadDirectoryGuideImage/
+// uploadTestimonialPhoto), not the schema itself, same convention as every
+// other cross-table invariant in this file.
 model DirectoryListingImage {
   id       String  @id @default(cuid())
   mimeType String
@@ -467,8 +469,12 @@ model DirectoryListingImage {
   guide   DirectoryGuide? @relation(fields: [guideId], references: [id], onDelete: Cascade)
   guideId String?
 
+  testimonial   DirectoryTestimonial? @relation(fields: [testimonialId], references: [id], onDelete: Cascade)
+  testimonialId String?
+
   @@index([listingId])
   @@index([guideId])
+  @@index([testimonialId])
 }
 
 enum DirectoryGuideStatus {
@@ -640,6 +646,16 @@ model DirectoryTestimonial {
 
   listing   PartnerListing @relation(fields: [listingId], references: [id], onDelete: Cascade)
   listingId String
+
+  // Photos a visitor attached when writing this testimonial (see
+  // uploadTestimonialPhoto in src/app/actions/testimonials.ts) — a fourth
+  // use of DirectoryListingImage, alongside gallery photos and the two
+  // About-field embed uses (see that model's own comment). Unlike gallery
+  // photos, these can only ever be added while this testimonial is still
+  // PENDING: once an admin has reviewed it, a later upload would attach an
+  // unmoderated image to already-approved, publicly-visible content, which
+  // uploadTestimonialPhoto refuses.
+  images DirectoryListingImage[]
 
   @@index([listingId, status])
   @@index([status])

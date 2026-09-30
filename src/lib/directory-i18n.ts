@@ -186,6 +186,12 @@ export function formatContactWhatsAppMessage(template: string, business: string)
   return template.replace("{business}", business);
 }
 
+// Fills in DirectoryStrings.testimonialFormPhotosUploading's {done}/{total}
+// tokens — see that field's own comment.
+export function formatTestimonialPhotosUploading(template: string, done: number, total: number): string {
+  return template.replace("{done}", String(done)).replace("{total}", String(total));
+}
+
 // Fills in DirectoryStrings.searchViewAllResults's {query} token — see that
 // field's own comment for why this is plain substitution, not a template
 // literal built where the message is used.
@@ -237,6 +243,7 @@ export function formatAlbumMetaDescription(albumName: string, photoCount: number
 export type DirectoryTestimonialFormErrorCode =
   | "name_required"
   | "body_required"
+  | "rating_required"
   | "rate_limited"
   | "listing_not_found"
   | "invalid_submission"
@@ -471,6 +478,16 @@ export type DirectoryStrings = {
   testimonialFormRatingLabel: string;
   testimonialFormBodyLabel: string;
   testimonialFormBodyPlaceholder: string;
+  // A few idea-starters for a visitor staring at a blank textarea, shown as
+  // small helper text under the body label.
+  testimonialFormBodyHint: string;
+  // The optional photo picker under the body field (see uploadTestimonialPhoto
+  // in src/app/actions/testimonials.ts) — testimonialFormPhotosUploading has
+  // a {done}/{total} token, filled in via formatTestimonialPhotosUploading.
+  testimonialFormPhotosLabel: string;
+  testimonialFormPhotosCta: string;
+  testimonialFormPhotosUploading: string;
+  testimonialFormPhotosTooMany: string;
   // "Rewrite with AI" button on the testimonial body — only shown when
   // isAiConfigured() (see rewriteTestimonialWithAi in
   // src/app/actions/testimonials.ts), same gating as every other AI-assist
@@ -699,9 +716,14 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormHeading: "Write a testimonial",
     testimonialFormNameLabel: "Your name",
     testimonialFormNamePlaceholder: "Jane Tan",
-    testimonialFormRatingLabel: "Rating (optional)",
+    testimonialFormRatingLabel: "Rating",
     testimonialFormBodyLabel: "Your testimonial",
     testimonialFormBodyPlaceholder: "What was it like working with this business?",
+    testimonialFormBodyHint: "Not sure what to write? Mention what you liked, the results you got, or what stood out.",
+    testimonialFormPhotosLabel: "Photos (optional)",
+    testimonialFormPhotosCta: "Add photos",
+    testimonialFormPhotosUploading: "Uploading photo {done}/{total}…",
+    testimonialFormPhotosTooMany: "Up to 4 photos per testimonial.",
     testimonialFormRewriteCta: "Rewrite with AI",
     testimonialFormRewriting: "Rewriting…",
     testimonialFormSubmit: "Submit testimonial",
@@ -712,6 +734,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialErrors: {
       name_required: "Name is required",
       body_required: "Write a few words about your experience",
+      rating_required: "Please select a rating",
       rate_limited: "Too many attempts — please wait a few minutes and try again.",
       listing_not_found: "This listing is no longer available.",
       invalid_submission: "Please check the form and try again.",
@@ -911,9 +934,14 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormHeading: "撰写评价",
     testimonialFormNameLabel: "您的姓名",
     testimonialFormNamePlaceholder: "陈小姐",
-    testimonialFormRatingLabel: "评分（可选）",
+    testimonialFormRatingLabel: "评分",
     testimonialFormBodyLabel: "您的评价",
     testimonialFormBodyPlaceholder: "与该企业合作的体验如何？",
+    testimonialFormBodyHint: "不知道写什么？可以提及您喜欢的地方、获得的成果，或印象最深刻的部分。",
+    testimonialFormPhotosLabel: "照片（可选）",
+    testimonialFormPhotosCta: "添加照片",
+    testimonialFormPhotosUploading: "正在上传照片 {done}/{total}…",
+    testimonialFormPhotosTooMany: "每条评价最多可上传 4 张照片。",
     testimonialFormRewriteCta: "用 AI 润色",
     testimonialFormRewriting: "润色中…",
     testimonialFormSubmit: "提交评价",
@@ -924,6 +952,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialErrors: {
       name_required: "请填写姓名",
       body_required: "请简单描述您的体验",
+      rating_required: "请选择评分",
       rate_limited: "尝试次数过多，请稍等几分钟后再试。",
       listing_not_found: "该合作伙伴的资料已下架。",
       invalid_submission: "请检查表单内容后重试。",
@@ -1122,9 +1151,14 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormHeading: "Tulis testimoni",
     testimonialFormNameLabel: "Nama anda",
     testimonialFormNamePlaceholder: "Siti Aminah",
-    testimonialFormRatingLabel: "Penilaian (pilihan)",
+    testimonialFormRatingLabel: "Penilaian",
     testimonialFormBodyLabel: "Testimoni anda",
     testimonialFormBodyPlaceholder: "Bagaimana pengalaman anda berurusan dengan perniagaan ini?",
+    testimonialFormBodyHint: "Tidak pasti apa nak tulis? Nyatakan apa yang anda suka, hasil yang anda perolehi, atau apa yang paling menonjol.",
+    testimonialFormPhotosLabel: "Foto (pilihan)",
+    testimonialFormPhotosCta: "Tambah foto",
+    testimonialFormPhotosUploading: "Memuat naik foto {done}/{total}…",
+    testimonialFormPhotosTooMany: "Sehingga 4 foto setiap testimoni.",
     testimonialFormRewriteCta: "Tulis semula dengan AI",
     testimonialFormRewriting: "Menulis semula…",
     testimonialFormSubmit: "Hantar testimoni",
@@ -1135,6 +1169,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialErrors: {
       name_required: "Nama diperlukan",
       body_required: "Tulis beberapa patah perkataan tentang pengalaman anda",
+      rating_required: "Sila pilih penilaian",
       rate_limited: "Terlalu banyak percubaan — sila tunggu beberapa minit dan cuba lagi.",
       listing_not_found: "Penyenaraian ini tidak lagi tersedia.",
       invalid_submission: "Sila semak borang dan cuba lagi.",
