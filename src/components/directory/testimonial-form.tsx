@@ -73,9 +73,27 @@ export function TestimonialForm({
 
   const [authorName, setAuthorName] = useState("");
   const [rating, setRating] = useState(0);
+  const [ratingError, setRatingError] = useState(false);
   const [body, setBody] = useState("");
   const [renderedAt] = useState(() => Date.now());
   const [rewriting, startRewrite] = useTransition();
+
+  function handleRatingChange(value: number) {
+    setRating(value);
+    if (value > 0) setRatingError(false);
+  }
+
+  // Rating has no native <input required> to hook into — it's a button row,
+  // not a real form control (see StarPicker's own comment) — so this is the
+  // one field validated here instead of left to the server's own
+  // testimonialSchema (which still enforces it too, for a submission that
+  // skips this handler entirely).
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    if (rating === 0) {
+      event.preventDefault();
+      setRatingError(true);
+    }
+  }
 
   // Photos picked before submitting, alongside their preview object URLs
   // (kept as a parallel array, not derived on every render, so each preview
@@ -225,7 +243,7 @@ export function TestimonialForm({
   }
 
   return (
-    <form action={formAction} className="space-y-4">
+    <form action={formAction} onSubmit={handleSubmit} className="space-y-4">
       <input type="hidden" name="slug" value={slug} />
       <input type="hidden" name="locale" value={locale} />
       <input type="hidden" name="rating" value={rating || ""} />
@@ -250,15 +268,17 @@ export function TestimonialForm({
         />
       </FieldGroup>
 
-      <FieldGroup label={t.testimonialFormRatingLabel} htmlFor="testimonial-rating">
-        <StarPicker value={rating} onChange={setRating} />
+      <FieldGroup label={t.testimonialFormRatingLabel} htmlFor="testimonial-rating" required>
+        <StarPicker value={rating} onChange={handleRatingChange} />
+        {ratingError && <p className="mt-1 text-xs text-rose-600 dark:text-rose-400">{t.testimonialErrors.rating_required}</p>}
       </FieldGroup>
 
       <FieldGroup label={t.testimonialFormBodyLabel} htmlFor="testimonial-body" required>
+        <p className="mb-1.5 text-xs text-slate-500 dark:text-slate-400">{t.testimonialFormBodyHint}</p>
         <Textarea
           id="testimonial-body"
           name="body"
-          rows={5}
+          rows={7}
           required
           maxLength={MAX_BODY_LENGTH}
           placeholder={t.testimonialFormBodyPlaceholder}
