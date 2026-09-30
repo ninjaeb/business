@@ -285,7 +285,28 @@ export function TestimonialForm({
       </FieldGroup>
 
       <FieldGroup label={t.testimonialFormBodyLabel} htmlFor="testimonial-body" required>
-        <p className="mb-1.5 text-xs text-slate-500 dark:text-slate-400">{t.testimonialFormBodyHint}</p>
+        {/* A short writing guide, not just a one-line hint — three concrete
+            prompts (bold label + question) for a visitor staring at a blank
+            box, rather than a vague "write something nice." */}
+        <div className="mb-2 rounded-md bg-slate-50 p-3 text-xs text-slate-600 dark:bg-neutral-800 dark:text-slate-300">
+          <p className="mb-1.5 font-medium text-slate-700 dark:text-slate-200">{t.testimonialFormGuideHeading}</p>
+          <ul className="list-disc space-y-1 pl-4">
+            <li>
+              <strong className="font-semibold text-slate-800 dark:text-slate-100">{t.testimonialFormGuideImpactLabel}:</strong>{" "}
+              {t.testimonialFormGuideImpactQuestion}
+            </li>
+            <li>
+              <strong className="font-semibold text-slate-800 dark:text-slate-100">
+                {t.testimonialFormGuideExperienceLabel}:
+              </strong>{" "}
+              {t.testimonialFormGuideExperienceQuestion}
+            </li>
+            <li>
+              <strong className="font-semibold text-slate-800 dark:text-slate-100">{t.testimonialFormGuideVerdictLabel}:</strong>{" "}
+              {t.testimonialFormGuideVerdictQuestion}
+            </li>
+          </ul>
+        </div>
         <Textarea
           id="testimonial-body"
           name="body"
@@ -298,15 +319,18 @@ export function TestimonialForm({
           className="text-base"
         />
         {aiAvailable && (
-          <button
-            type="button"
-            onClick={handleRewrite}
-            disabled={rewriting || body.trim().length === 0}
-            className="mt-2 inline-flex items-center gap-1.5 text-sm font-medium text-petrol hover:underline disabled:opacity-50 disabled:no-underline dark:text-petrol-light"
-          >
-            <Sparkles className="h-3.5 w-3.5" />
-            {rewriting ? t.testimonialFormRewriting : t.testimonialFormRewriteCta}
-          </button>
+          <div className="mt-2">
+            <button
+              type="button"
+              onClick={handleRewrite}
+              disabled={rewriting || body.trim().length === 0}
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-petrol hover:underline disabled:opacity-50 disabled:no-underline dark:text-petrol-light"
+            >
+              <Sparkles className="h-3.5 w-3.5" />
+              {rewriting ? t.testimonialFormRewriting : t.testimonialFormRewriteCta}
+            </button>
+            <p className="mt-0.5 text-xs text-slate-400">{t.testimonialFormRewriteDescription}</p>
+          </div>
         )}
       </FieldGroup>
 

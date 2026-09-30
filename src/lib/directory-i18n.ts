@@ -525,9 +525,16 @@ export type DirectoryStrings = {
   testimonialFormRatingLabel: string;
   testimonialFormBodyLabel: string;
   testimonialFormBodyPlaceholder: string;
-  // A few idea-starters for a visitor staring at a blank textarea, shown as
-  // small helper text under the body label.
-  testimonialFormBodyHint: string;
+  // A short writing guide for a visitor staring at a blank textarea — three
+  // prompts (Impact/Experience/Verdict), each a bold label plus its own
+  // question, shown as a small box above the field.
+  testimonialFormGuideHeading: string;
+  testimonialFormGuideImpactLabel: string;
+  testimonialFormGuideImpactQuestion: string;
+  testimonialFormGuideExperienceLabel: string;
+  testimonialFormGuideExperienceQuestion: string;
+  testimonialFormGuideVerdictLabel: string;
+  testimonialFormGuideVerdictQuestion: string;
   // The optional photo picker under the body field (see uploadTestimonialPhoto
   // in src/app/actions/testimonials.ts) — testimonialFormPhotosUploading has
   // a {done}/{total} token, filled in via formatTestimonialPhotosUploading.
@@ -539,8 +546,11 @@ export type DirectoryStrings = {
   // isAiConfigured() (see rewriteTestimonialWithAi in
   // src/app/actions/testimonials.ts), same gating as every other AI-assist
   // button in the partner editor, just on a public, unauthenticated form
-  // this time.
+  // this time. testimonialFormRewriteDescription explains what it actually
+  // does (tightens wording, doesn't invent content) to a first-time visitor
+  // who's never seen this app's other AI-assist buttons before.
   testimonialFormRewriteCta: string;
+  testimonialFormRewriteDescription: string;
   testimonialFormRewriting: string;
   testimonialFormSubmit: string;
   testimonialFormSubmitting: string;
@@ -793,12 +803,20 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormRatingLabel: "Rating",
     testimonialFormBodyLabel: "Your testimonial",
     testimonialFormBodyPlaceholder: "What was it like working with this business?",
-    testimonialFormBodyHint: "Not sure what to write? Mention what you liked, the results you got, or what stood out.",
+    testimonialFormGuideHeading: "Not sure what to write? Consider:",
+    testimonialFormGuideImpactLabel: "The Impact",
+    testimonialFormGuideImpactQuestion:
+      "What problem did we solve, or what results did you achieve (e.g., saved time, boosted sales, a smooth launch)?",
+    testimonialFormGuideExperienceLabel: "The Experience",
+    testimonialFormGuideExperienceQuestion: "What stood out most (e.g., speed, communication, technical expertise)?",
+    testimonialFormGuideVerdictLabel: "The Verdict",
+    testimonialFormGuideVerdictQuestion: "Who would you recommend us to, and why?",
     testimonialFormPhotosLabel: "Photos (optional)",
     testimonialFormPhotosCta: "Add photos",
     testimonialFormPhotosUploading: "Uploading photo {done}/{total}…",
     testimonialFormPhotosTooMany: "Up to 4 photos per testimonial.",
     testimonialFormRewriteCta: "Rewrite with AI",
+    testimonialFormRewriteDescription: "Cleans up grammar and wording — keeps what you said, just easier to read.",
     testimonialFormRewriting: "Rewriting…",
     testimonialFormSubmit: "Submit testimonial",
     testimonialFormSubmitting: "Submitting…",
@@ -1039,12 +1057,19 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormRatingLabel: "评分",
     testimonialFormBodyLabel: "您的评价",
     testimonialFormBodyPlaceholder: "与该企业合作的体验如何？",
-    testimonialFormBodyHint: "不知道写什么？可以提及您喜欢的地方、获得的成果，或印象最深刻的部分。",
+    testimonialFormGuideHeading: "不知道写什么？可以参考：",
+    testimonialFormGuideImpactLabel: "成效",
+    testimonialFormGuideImpactQuestion: "我们解决了什么问题，或您获得了什么成果（例如：节省时间、提升业绩、顺利上线）？",
+    testimonialFormGuideExperienceLabel: "体验",
+    testimonialFormGuideExperienceQuestion: "哪方面让您印象最深刻（例如：速度、沟通、专业能力）？",
+    testimonialFormGuideVerdictLabel: "评价",
+    testimonialFormGuideVerdictQuestion: "您会将我们推荐给谁，为什么？",
     testimonialFormPhotosLabel: "照片（可选）",
     testimonialFormPhotosCta: "添加照片",
     testimonialFormPhotosUploading: "正在上传照片 {done}/{total}…",
     testimonialFormPhotosTooMany: "每条评价最多可上传 4 张照片。",
     testimonialFormRewriteCta: "用 AI 润色",
+    testimonialFormRewriteDescription: "润色语法和措辞——保留您的原意，只是更易读。",
     testimonialFormRewriting: "润色中…",
     testimonialFormSubmit: "提交评价",
     testimonialFormSubmitting: "提交中…",
@@ -1284,12 +1309,20 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormRatingLabel: "Penilaian",
     testimonialFormBodyLabel: "Testimoni anda",
     testimonialFormBodyPlaceholder: "Bagaimana pengalaman anda berurusan dengan perniagaan ini?",
-    testimonialFormBodyHint: "Tidak pasti apa nak tulis? Nyatakan apa yang anda suka, hasil yang anda perolehi, atau apa yang paling menonjol.",
+    testimonialFormGuideHeading: "Tidak pasti apa nak tulis? Pertimbangkan:",
+    testimonialFormGuideImpactLabel: "Impak",
+    testimonialFormGuideImpactQuestion:
+      "Masalah apa yang kami selesaikan, atau hasil apa yang anda perolehi (contohnya: menjimatkan masa, meningkatkan jualan, pelancaran yang lancar)?",
+    testimonialFormGuideExperienceLabel: "Pengalaman",
+    testimonialFormGuideExperienceQuestion: "Apa yang paling menonjol (contohnya: kelajuan, komunikasi, kepakaran teknikal)?",
+    testimonialFormGuideVerdictLabel: "Kesimpulan",
+    testimonialFormGuideVerdictQuestion: "Kepada siapa anda akan mengesyorkan kami, dan mengapa?",
     testimonialFormPhotosLabel: "Foto (pilihan)",
     testimonialFormPhotosCta: "Tambah foto",
     testimonialFormPhotosUploading: "Memuat naik foto {done}/{total}…",
     testimonialFormPhotosTooMany: "Sehingga 4 foto setiap testimoni.",
     testimonialFormRewriteCta: "Tulis semula dengan AI",
+    testimonialFormRewriteDescription: "Membersihkan tatabahasa dan gaya bahasa — mengekalkan apa yang anda tulis, cuma lebih mudah dibaca.",
     testimonialFormRewriting: "Menulis semula…",
     testimonialFormSubmit: "Hantar testimoni",
     testimonialFormSubmitting: "Menghantar…",
