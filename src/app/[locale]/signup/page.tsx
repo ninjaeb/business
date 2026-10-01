@@ -13,6 +13,7 @@ import {
 import { isGoogleAuthConfigured } from "@/lib/auth/google";
 import { getSiteOrigin } from "@/lib/site-url";
 import { PartnerSignupForm } from "@/components/directory/partner-signup-form";
+import { Card, CardBody } from "@/components/ui/card";
 
 export async function generateMetadata({
   params,
@@ -72,8 +73,12 @@ export default async function PartnerSignupPage({
   const t = DIRECTORY_STRINGS[resolved];
 
   return (
-    <div className="mx-auto w-full max-w-md px-4 py-12 sm:px-8">
-      <PartnerSignupForm t={t} googleEnabled={isGoogleAuthConfigured()} initialError={error} />
+    <div className="mx-auto w-full max-w-md px-4 py-16 sm:px-8 sm:py-20">
+      <Card className="rounded-2xl shadow-soft">
+        <CardBody>
+          <PartnerSignupForm t={t} googleEnabled={isGoogleAuthConfigured()} initialError={error} />
+        </CardBody>
+      </Card>
       <p className="mt-6 text-center text-sm text-slate-500 dark:text-slate-400">
         <Link href={directoryBenefitsPath(resolved)} className="text-petrol underline hover:no-underline dark:text-petrol-light">
           {t.benefitsNavLabel}

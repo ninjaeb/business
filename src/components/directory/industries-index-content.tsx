@@ -75,7 +75,9 @@ export async function IndustriesIndexContent({ locale }: { locale: DirectoryLoca
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildBreadcrumbJsonLd(breadcrumbItems) }} />
       <div className="mx-auto w-full max-w-5xl px-4 py-8 sm:px-8">
         <DirectoryBreadcrumbs items={breadcrumbItems} navLabel={t.breadcrumbNavLabel} />
-        <h1 className="mt-3 text-2xl font-semibold text-slate-900 dark:text-slate-100">{t.industriesIndexHeading}</h1>
+        <h1 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl dark:text-slate-100">
+          {t.industriesIndexHeading}
+        </h1>
         <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{t.industriesIndexDescription}</p>
 
         {industries.length === 0 ? (

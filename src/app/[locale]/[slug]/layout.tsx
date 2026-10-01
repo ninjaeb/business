@@ -389,7 +389,11 @@ export default async function ListingLayout({
       <div className="hidden sm:mb-4 sm:block">
         <DirectoryBreadcrumbs items={breadcrumbItems} navLabel={t.breadcrumbNavLabel} />
       </div>
-      <div className="mb-8 border-b border-slate-200 bg-white px-4 py-4 -mx-4 sm:-mx-8 sm:px-8 dark:border-neutral-800 dark:bg-neutral-900">
+      <div className="relative isolate mb-8 overflow-hidden rounded-3xl border border-slate-200 bg-white px-4 py-6 shadow-soft sm:px-8 sm:py-8 dark:border-neutral-800 dark:bg-neutral-900">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_left,_var(--color-led-soft)_0%,_transparent_55%)] dark:bg-[radial-gradient(ellipse_at_top_left,_var(--color-led-soft-dark)_0%,_transparent_55%)]"
+        />
         <div className="flex flex-wrap items-start gap-4">
           {/* 96px below sm — a fixed 200px logo left too little width for
               the name column beside it on a phone screen, to the point a
@@ -403,7 +407,9 @@ export default async function ListingLayout({
             zoomable
           />
           <div className="min-w-0 flex-1">
-            <h1 className="text-3xl font-semibold text-slate-900 dark:text-slate-100">{listing.companyName}</h1>
+            <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl dark:text-slate-100">
+              {listing.companyName}
+            </h1>
             {display.tagline && <p className="mt-1 text-base text-slate-600 dark:text-slate-300">{display.tagline}</p>}
             {/* From sm up, industry/category/state/country/website/views
                 live here — in the same column as the name and tagline,

@@ -39,8 +39,8 @@ export function PartnerSignupForm({
 
   return (
     <div>
-      <h1 className="text-2xl font-semibold text-slate-900 dark:text-slate-100">{t.signupHeading}</h1>
-      <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{t.signupSubheading}</p>
+      <h1 className="text-3xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">{t.signupHeading}</h1>
+      <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">{t.signupSubheading}</p>
 
       {googleEnabled && (
         <>
@@ -129,7 +129,11 @@ export function PartnerSignupForm({
 
         {errorCode && <p className="text-sm text-rose-600 dark:text-rose-400">{t.signupErrors[errorCode]}</p>}
 
-        <Button type="submit" disabled={pending} className="w-full">
+        <Button
+          type="submit"
+          disabled={pending}
+          className="h-11 w-full bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"
+        >
           {pending ? t.signupSubmitting : t.signupSubmit}
         </Button>
       </form>

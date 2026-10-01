@@ -67,15 +67,21 @@ export default async function DirectoryContactPage({ params }: { params: Promise
   const addressLines = [address.streetAddress, `${address.postalCode} ${address.addressLocality}`, `${address.addressRegion}, Malaysia`];
 
   return (
-    <div className="w-full px-4 py-12 sm:px-8">
-      <section className="mx-auto max-w-3xl text-center">
+    <div className="w-full px-4 py-16 sm:px-8 sm:py-20">
+      <section className="relative isolate overflow-hidden rounded-3xl border border-slate-200 bg-white px-6 py-16 text-center shadow-soft sm:px-12 sm:py-24 dark:border-neutral-800 dark:bg-neutral-900">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--color-led-soft)_0%,_transparent_60%)] dark:bg-[radial-gradient(ellipse_at_top,_var(--color-led-soft-dark)_0%,_transparent_60%)]"
+        />
         <p className="text-sm font-semibold uppercase tracking-wide text-petrol dark:text-petrol-light">{copy.heroEyebrow}</p>
-        <h1 className="mt-2 text-3xl font-semibold text-slate-900 dark:text-slate-100 sm:text-4xl">{copy.heroTitle}</h1>
-        <p className="mt-4 text-base text-slate-600 dark:text-slate-300">{copy.heroSubtitle}</p>
+        <h1 className="mx-auto mt-4 max-w-3xl text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl dark:text-slate-100">
+          {copy.heroTitle}
+        </h1>
+        <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-600 dark:text-slate-300">{copy.heroSubtitle}</p>
       </section>
 
-      <div className="mx-auto mt-10 max-w-xl">
-        <Card>
+      <div className="mx-auto mt-14 max-w-xl">
+        <Card className="rounded-2xl shadow-soft">
           <CardBody className="space-y-5">
             <div className="flex items-start gap-3">
               <Mail className="mt-0.5 h-5 w-5 shrink-0 text-petrol dark:text-petrol-light" />

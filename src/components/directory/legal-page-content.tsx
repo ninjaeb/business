@@ -9,10 +9,14 @@ export function LegalPageContent({ copy, locale }: { copy: DirectoryLegalCopy; l
   const localeNotice = LOCALE_ONLY_NOTICE[locale];
 
   return (
-    <div className="w-full px-4 py-12 sm:px-8">
+    <div className="w-full px-4 py-16 sm:px-8 sm:py-20">
       <div className="mx-auto max-w-3xl">
-        <h1 className="text-3xl font-semibold text-slate-900 dark:text-slate-100 sm:text-4xl">{copy.heroTitle}</h1>
-        <p className="mt-3 text-base text-slate-600 dark:text-slate-300">{copy.heroSubtitle}</p>
+        {/* Left-aligned, no gradient hero band — unlike the marketing pages
+            (About/Benefits/Contact/Editorial Policy), a centered hero would
+            read oddly in front of dense legal text. Just the bolder house
+            type scale, kept plain otherwise. */}
+        <h1 className="text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl dark:text-slate-100">{copy.heroTitle}</h1>
+        <p className="mt-4 text-base text-slate-600 dark:text-slate-300">{copy.heroSubtitle}</p>
         <p className="mt-2 text-sm text-slate-400 dark:text-slate-500">Effective {copy.effectiveDate}</p>
 
         {localeNotice && (
