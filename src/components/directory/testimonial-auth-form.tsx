@@ -125,11 +125,11 @@ export function TestimonialAuthForm({
         </div>
       )}
 
-      <div className="flex gap-1 rounded-md bg-slate-100 p-1 text-sm dark:bg-neutral-800">
+      <div className="flex gap-1 rounded-full bg-slate-100 p-1 text-sm dark:bg-neutral-800">
         <button
           type="button"
           onClick={() => setTab("signup")}
-          className={`flex-1 rounded px-3 py-1.5 font-medium transition-colors ${
+          className={`flex-1 rounded-full px-3 py-1.5 font-medium transition-colors ${
             tab === "signup"
               ? "bg-white text-slate-900 shadow-sm dark:bg-neutral-700 dark:text-slate-100"
               : "text-slate-500 dark:text-slate-400"
@@ -140,7 +140,7 @@ export function TestimonialAuthForm({
         <button
           type="button"
           onClick={() => setTab("login")}
-          className={`flex-1 rounded px-3 py-1.5 font-medium transition-colors ${
+          className={`flex-1 rounded-full px-3 py-1.5 font-medium transition-colors ${
             tab === "login"
               ? "bg-white text-slate-900 shadow-sm dark:bg-neutral-700 dark:text-slate-100"
               : "text-slate-500 dark:text-slate-400"

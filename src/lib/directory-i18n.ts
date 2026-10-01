@@ -299,6 +299,7 @@ export type DirectoryDayLabels = {
 };
 
 export type DirectoryStrings = {
+  heroEyebrow: string;
   heroTitle: string;
   heroSubtitle: string;
   searchPlaceholder: string;
@@ -658,6 +659,7 @@ export type PartnerSignupErrorCode =
 
 export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
   en: {
+    heroEyebrow: "Trusted Local Businesses",
     heroTitle: "Find the right business for your project",
     heroSubtitle: "Browse trusted businesses and reach out directly.",
     searchPlaceholder: "Search by company, service, industry or category…",
@@ -916,6 +918,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     },
   },
   zh: {
+    heroEyebrow: "值得信赖的本地企业",
     heroTitle: "为您的项目寻找合适的企业",
     heroSubtitle: "浏览值得信赖的企业，并直接联系他们。",
     searchPlaceholder: "按公司、服务、行业或类别搜索…",
@@ -1171,6 +1174,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     },
   },
   ms: {
+    heroEyebrow: "Perniagaan Tempatan Dipercayai",
     heroTitle: "Cari perniagaan yang sesuai untuk projek anda",
     heroSubtitle: "Semak imbas perniagaan yang dipercayai dan hubungi terus.",
     searchPlaceholder: "Cari mengikut syarikat, perkhidmatan, industri atau kategori…",

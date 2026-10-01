@@ -31,11 +31,11 @@ export function StatCard({
   const content = (
     <div
       className={cn(
-        "flex h-full items-center gap-4 rounded-lg border border-slate-200 bg-white px-5 py-4 dark:border-neutral-800 dark:bg-neutral-900",
+        "flex h-full items-center gap-4 rounded-xl border border-slate-200 bg-white px-5 py-4 shadow-sm dark:border-neutral-800 dark:bg-neutral-900",
         href && "transition-colors hover:border-indigo-300 dark:hover:border-indigo-800",
       )}
     >
-      <div className={cn("flex h-10 w-10 shrink-0 items-center justify-center rounded-md", accents[accent])}>
+      <div className={cn("flex h-10 w-10 shrink-0 items-center justify-center rounded-full", accents[accent])}>
         <Icon className="h-5 w-5" />
       </div>
       <div className="min-w-0">

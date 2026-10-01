@@ -123,7 +123,7 @@ export function ShareButton({
         <div
           role="menu"
           className={cn(
-            "absolute z-30 w-52 overflow-hidden rounded-lg border border-slate-200 bg-white py-1 shadow-lg dark:border-neutral-700 dark:bg-neutral-900",
+            "absolute z-30 w-52 overflow-hidden rounded-2xl border border-slate-200 bg-white py-1 shadow-lg dark:border-neutral-700 dark:bg-neutral-900",
             menuPlacement === "above" ? "bottom-full mb-2" : "top-full mt-2",
             menuAlign === "center" ? "left-1/2 -translate-x-1/2" : "right-0",
           )}

@@ -43,7 +43,7 @@ export function DirectoryLanguageSwitcher({ current }: { current: DirectoryLocal
       {DIRECTORY_LOCALES.map((option) => {
         const active = current === option.code;
         const className = cn(
-          "rounded-md px-2 py-1 text-xs font-medium transition-colors disabled:opacity-50",
+          "rounded-full px-2.5 py-1 text-xs font-medium transition-colors disabled:opacity-50",
           active
             ? "bg-petrol text-white dark:bg-petrol-light dark:text-petrol-ink"
             : "text-slate-500 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-neutral-800",

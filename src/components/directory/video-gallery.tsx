@@ -35,7 +35,7 @@ function VideoCard({
 }) {
   return (
     <div className="space-y-1.5">
-      <div className="relative aspect-video overflow-hidden rounded-md bg-slate-100 dark:bg-neutral-800">
+      <div className="relative aspect-video overflow-hidden rounded-xl bg-slate-100 dark:bg-neutral-800">
         {video.embedUrl ? (
           <button
             type="button"
@@ -125,7 +125,7 @@ function VideoLightbox({
           <iframe
             title={title}
             src={`${video.embedUrl}${video.embedUrl.includes("?") ? "&" : "?"}autoplay=1`}
-            className="h-full w-full rounded-md border-0"
+            className="h-full w-full rounded-xl border-0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
@@ -145,7 +145,7 @@ function VideoLightbox({
           href={video.url}
           target="_blank"
           rel="noopener noreferrer nofollow"
-          className="mt-3 inline-flex items-center gap-1.5 rounded-md bg-white/10 px-3 py-2 text-sm font-medium text-white hover:bg-white/20"
+          className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-2 text-sm font-medium text-white hover:bg-white/20"
         >
           {watchOnLabel}
           <ExternalLink className="h-4 w-4" />

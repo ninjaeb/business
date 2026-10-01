@@ -1,5 +1,24 @@
 import { cn } from "@/lib/utils";
 
+// A small uppercase-tracked pill sitting above a section heading — the
+// template's own "eyebrow" label (e.g. "DRIVEN BY INTELLIGENT AI AGENTS"),
+// adapted here with Gotka's own petrol brand color rather than the
+// template's navy/blue. Kept separate from Badge above: that one marks data
+// (a status, a service tag) and takes a caller-supplied color; this one is
+// purely decorative chrome around a heading, so it owns its own fixed style.
+export function Eyebrow({ className, children }: { className?: string; children: React.ReactNode }) {
+  return (
+    <span
+      className={cn(
+        "inline-flex items-center gap-1.5 rounded-full bg-petrol-ink px-3 py-1 text-xs font-semibold tracking-wide text-petrol-light uppercase dark:bg-petrol-light/10 dark:text-petrol-light",
+        className,
+      )}
+    >
+      {children}
+    </span>
+  );
+}
+
 export function Badge({
   className,
   children,

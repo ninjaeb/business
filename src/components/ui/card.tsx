@@ -18,7 +18,11 @@ export function Card({
         // its own content's min-content size — and forces that whole
         // row/track wider than the viewport on mobile instead of letting
         // the Card's text wrap down to fit.
-        "min-w-0 rounded-lg border border-slate-200 bg-white dark:border-neutral-800 dark:bg-neutral-900",
+        //
+        // rounded-2xl + shadow-sm: the softer, more generous card radius
+        // carried over from the CoreAI template (see button.tsx's own note
+        // on scope) — border/background stay exactly as before.
+        "min-w-0 rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-900",
         className,
       )}
     >
