@@ -264,7 +264,17 @@ export type VisitorAuthErrorCode =
   | "invalid_credentials"
   | "rate_limited"
   | "invalid_submission"
-  | "generic";
+  | "generic"
+  // "Continue with Google" (see signInVisitorWithGoogle in
+  // src/app/actions/visitor-auth.ts) — google_failed/email_unverified match
+  // the partner Google flow's own wording; wrong_role is explicit rather
+  // than the generic invalid_credentials above, same reasoning as
+  // registerOrSignInPartnerWithGoogle's own comment: Google already vouches
+  // for this email, so confirming it belongs to a different account type
+  // here leaks nothing this visitor doesn't already know.
+  | "google_failed"
+  | "wrong_role"
+  | "email_unverified";
 
 export type DirectoryLeadFormErrorCode =
   | "name_required"
@@ -772,7 +782,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialsEmpty: "No testimonials yet — be the first to leave one.",
     testimonialsCta: "Had a good experience? Share it — it helps other visitors decide, and takes less than a minute.",
     testimonialAuthHeading: "Sign in to write a testimonial",
-    testimonialAuthIntro: "Create a free account with your name, email and phone — takes less than a minute.",
+    testimonialAuthIntro:
+      "Sign in with Google, or create a free account with your name, email and phone — takes less than a minute.",
     testimonialSignupTab: "Create account",
     testimonialLoginTab: "Log in",
     testimonialLoginSubmit: "Log in",
@@ -792,6 +803,9 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       rate_limited: "Too many attempts — please wait a few minutes and try again.",
       invalid_submission: "Please check the form and try again.",
       generic: "Something went wrong. Please try again.",
+      google_failed: "Google sign-in failed. Please try again.",
+      wrong_role: "That Google account is already linked to a business account here. Sign in with a different Google account, or use email and password below.",
+      email_unverified: "That Google account's email address isn't verified.",
     },
     testimonialAlreadySubmittedTitle: "You've already reviewed this business",
     testimonialAlreadySubmittedPending: "Your testimonial is still awaiting approval from the business.",
@@ -1026,7 +1040,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialsEmpty: "暂无评价——成为第一个留下评价的人。",
     testimonialsCta: "有过愉快的体验吗？分享出来——这能帮助其他访客做决定，只需不到一分钟。",
     testimonialAuthHeading: "登录后即可撰写评价",
-    testimonialAuthIntro: "创建一个免费账户，填写姓名、电子邮件和电话——不到一分钟即可完成。",
+    testimonialAuthIntro: "使用 Google 登录，或创建一个免费账户，填写姓名、电子邮件和电话——不到一分钟即可完成。",
     testimonialSignupTab: "创建账户",
     testimonialLoginTab: "登录",
     testimonialLoginSubmit: "登录",
@@ -1046,6 +1060,9 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       rate_limited: "尝试次数过多，请稍等几分钟后再试。",
       invalid_submission: "请检查表单内容后重试。",
       generic: "出现错误，请重试。",
+      google_failed: "Google 登录失败，请重试。",
+      wrong_role: "该 Google 账户已关联本站的商家账户。请使用其他 Google 账户登录，或在下方使用电子邮件和密码。",
+      email_unverified: "该 Google 账户的电子邮件地址未经验证。",
     },
     testimonialAlreadySubmittedTitle: "您已评价过该企业",
     testimonialAlreadySubmittedPending: "您的评价仍在等待该企业审核。",
@@ -1278,7 +1295,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialsEmpty: "Belum ada testimoni — jadilah yang pertama meninggalkan satu.",
     testimonialsCta: "Ada pengalaman yang baik? Kongsikan — ia membantu pelawat lain membuat keputusan, dan mengambil masa kurang seminit.",
     testimonialAuthHeading: "Log masuk untuk menulis testimoni",
-    testimonialAuthIntro: "Cipta akaun percuma dengan nama, e-mel dan nombor telefon anda — mengambil masa kurang seminit.",
+    testimonialAuthIntro:
+      "Log masuk dengan Google, atau cipta akaun percuma dengan nama, e-mel dan nombor telefon anda — mengambil masa kurang seminit.",
     testimonialSignupTab: "Cipta akaun",
     testimonialLoginTab: "Log masuk",
     testimonialLoginSubmit: "Log masuk",
@@ -1298,6 +1316,9 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       rate_limited: "Terlalu banyak percubaan — sila tunggu beberapa minit dan cuba lagi.",
       invalid_submission: "Sila semak borang dan cuba lagi.",
       generic: "Berlaku ralat. Sila cuba lagi.",
+      google_failed: "Log masuk Google gagal. Sila cuba lagi.",
+      wrong_role: "Akaun Google itu sudah dikaitkan dengan akaun perniagaan di sini. Log masuk dengan akaun Google lain, atau gunakan e-mel dan kata laluan di bawah.",
+      email_unverified: "Alamat e-mel akaun Google itu tidak disahkan.",
     },
     testimonialAlreadySubmittedTitle: "Anda sudah menilai perniagaan ini",
     testimonialAlreadySubmittedPending: "Testimoni anda masih menunggu kelulusan daripada perniagaan ini.",

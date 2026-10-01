@@ -18,6 +18,7 @@ import { serializeJsonLd } from "@/lib/directory-seo";
 import { stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
 import { resolveDirectoryLocale } from "@/lib/directory-locale";
 import { getVerifiedPartnerOrNull, getVerifiedVisitorOrNull } from "@/lib/auth/dal";
+import { getPublicGoogleClientId } from "@/lib/auth/google";
 import { getVisitorTestimonialForListing } from "@/lib/testimonials";
 import {
   DIRECTORY_STRINGS,
@@ -518,6 +519,7 @@ export default async function ListingLayout({
               locale={resolved}
               aiAvailable={isAiConfigured()}
               googleReviewUrl={listing.googleReviewUrl}
+              googleClientId={getPublicGoogleClientId()}
               visitor={testimonialVisitor ? { name: testimonialVisitor.name } : null}
               existingTestimonial={existingTestimonial}
               className="w-full justify-center"
@@ -548,6 +550,7 @@ export default async function ListingLayout({
             locale={resolved}
             aiAvailable={isAiConfigured()}
             googleReviewUrl={listing.googleReviewUrl}
+            googleClientId={getPublicGoogleClientId()}
             visitor={testimonialVisitor ? { name: testimonialVisitor.name } : null}
             existingTestimonial={existingTestimonial}
             className="flex-1 justify-center"

@@ -8,6 +8,7 @@ import { DIRECTORY_STRINGS, directoryListingTestimonialsPath, directoryListingPa
 import { getSiteOrigin } from "@/lib/site-url";
 import { isAiConfigured } from "@/lib/ai/client";
 import { getVerifiedVisitorOrNull } from "@/lib/auth/dal";
+import { getPublicGoogleClientId } from "@/lib/auth/google";
 import { getVisitorTestimonialForListing } from "@/lib/testimonials";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
 import { TestimonialList } from "@/components/directory/testimonial-list";
@@ -87,6 +88,7 @@ export default async function TestimonialsPage({
             locale={resolved}
             aiAvailable={isAiConfigured()}
             googleReviewUrl={listing.googleReviewUrl}
+            googleClientId={getPublicGoogleClientId()}
             visitor={visitor ? { name: visitor.name } : null}
             existingTestimonial={existingTestimonial}
             variant="primary"
