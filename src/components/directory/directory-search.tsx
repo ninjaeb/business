@@ -1,10 +1,11 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Search, Handshake, X } from "lucide-react";
+import { Search, Handshake, ShieldCheck, X } from "lucide-react";
 import { ListingCard } from "@/components/directory/listing-card";
 import { ShareButton } from "@/components/directory/share-button";
 import { EmptyState } from "@/components/ui/empty-state";
+import { Eyebrow } from "@/components/ui/badge";
 import { Input } from "@/components/ui/field";
 import type { DirectoryGridListing } from "@/lib/directory";
 import { matchesSearchTerms, searchTerms } from "@/lib/directory-search";
@@ -112,9 +113,13 @@ export function DirectorySearch({
 
   return (
     <>
-      <div className="border-b border-slate-200 bg-white dark:border-neutral-800 dark:bg-neutral-900">
+      <div className="border-b border-slate-200 bg-slate-50 dark:border-neutral-800 dark:bg-neutral-900">
         <div className="w-full px-4 py-14 text-center sm:px-8">
-          <h1 className="text-3xl font-semibold text-slate-900 dark:text-slate-100 sm:text-4xl">
+          <Eyebrow>
+            <ShieldCheck className="h-3.5 w-3.5" />
+            {t.heroEyebrow}
+          </Eyebrow>
+          <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl">
             {heading ?? t.heroTitle}
           </h1>
           <p className="mx-auto mt-3 max-w-xl text-slate-500 dark:text-slate-400">{subheading ?? t.heroSubtitle}</p>
@@ -124,13 +129,13 @@ export function DirectorySearch({
 
           <form onSubmit={(event) => event.preventDefault()} className="mx-auto mt-6 max-w-2xl">
             <div className="relative mx-auto w-full sm:w-4/5">
-              <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+              <Search className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
               <Input
                 type="text"
                 value={query}
                 onChange={(event) => setQuery(event.target.value)}
                 placeholder={t.searchPlaceholder}
-                className="pl-9"
+                className="rounded-full pl-10 shadow-sm"
               />
             </div>
           </form>

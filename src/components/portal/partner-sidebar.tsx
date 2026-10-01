@@ -12,7 +12,7 @@ function isActive(pathname: string, href: string): boolean {
   return href === "/business-portal" ? pathname === "/business-portal" : pathname.startsWith(href);
 }
 
-const itemClasses = "flex items-center gap-2.5 rounded-md px-3 py-2 text-sm font-medium transition-colors";
+const itemClasses = "flex items-center gap-2.5 rounded-xl px-3 py-2 text-sm font-medium transition-colors";
 const inactiveItemClasses =
   "text-slate-600 hover:bg-slate-50 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-neutral-800 dark:hover:text-slate-100";
 const activeItemClasses = "bg-petrol/10 text-petrol dark:bg-petrol/20 dark:text-petrol-light";

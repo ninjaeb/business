@@ -228,7 +228,7 @@ export function TestimonialForm({
   if (state?.status === "success") {
     return (
       <div className="space-y-3">
-        <p className="rounded-md bg-emerald-50 px-4 py-3 text-base font-medium text-emerald-700 dark:bg-emerald-950 dark:text-emerald-400">
+        <p className="rounded-xl bg-emerald-50 px-4 py-3 text-base font-medium text-emerald-700 dark:bg-emerald-950 dark:text-emerald-400">
           {t.testimonialFormSuccess}
         </p>
         {uploadProgress && (
@@ -288,7 +288,7 @@ export function TestimonialForm({
         {/* A short writing guide, not just a one-line hint — three concrete
             prompts (bold label + question) for a visitor staring at a blank
             box, rather than a vague "write something nice." */}
-        <div className="mb-2 rounded-md bg-slate-50 p-3 text-xs text-slate-600 dark:bg-neutral-800 dark:text-slate-300">
+        <div className="mb-2 rounded-xl bg-slate-50 p-3 text-xs text-slate-600 dark:bg-neutral-800 dark:text-slate-300">
           <p className="mb-1.5 font-medium text-slate-700 dark:text-slate-200">{t.testimonialFormGuideHeading}</p>
           <ul className="list-disc space-y-1 pl-4">
             <li>

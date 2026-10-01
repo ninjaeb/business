@@ -92,7 +92,7 @@ export async function LocationsIndexContent({ locale }: { locale: DirectoryLocal
                 <li key={label}>
                   <Link
                     href={locationPath(slugify(label), locale)}
-                    className="flex items-center justify-between gap-2 rounded-md border border-slate-200 px-3 py-2 text-sm text-slate-700 transition-colors hover:border-petrol/40 hover:text-petrol dark:border-neutral-800 dark:text-slate-200 dark:hover:border-petrol-light/40 dark:hover:text-petrol-light"
+                    className="flex items-center justify-between gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm text-slate-700 shadow-sm transition-colors hover:border-petrol/40 hover:text-petrol dark:border-neutral-800 dark:bg-neutral-900 dark:text-slate-200 dark:hover:border-petrol-light/40 dark:hover:text-petrol-light"
                   >
                     <span className="min-w-0 truncate">
                       {label}

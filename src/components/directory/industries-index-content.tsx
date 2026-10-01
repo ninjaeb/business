@@ -88,7 +88,7 @@ export async function IndustriesIndexContent({ locale }: { locale: DirectoryLoca
               <li key={industry}>
                 <Link
                   href={industryPath(industry, locale)}
-                  className="flex items-center justify-between gap-2 rounded-md border border-slate-200 px-3 py-2 text-sm text-slate-700 transition-colors hover:border-petrol/40 hover:text-petrol dark:border-neutral-800 dark:text-slate-200 dark:hover:border-petrol-light/40 dark:hover:text-petrol-light"
+                  className="flex items-center justify-between gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm text-slate-700 shadow-sm transition-colors hover:border-petrol/40 hover:text-petrol dark:border-neutral-800 dark:bg-neutral-900 dark:text-slate-200 dark:hover:border-petrol-light/40 dark:hover:text-petrol-light"
                 >
                   <span className="truncate">{INDUSTRY_LABELS_BY_LOCALE[locale][industry]}</span>
                   <span className="shrink-0 text-xs text-slate-400 dark:text-slate-500">{copy.listingCount(count)}</span>

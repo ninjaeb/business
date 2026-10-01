@@ -230,7 +230,7 @@ export default async function AdminDirectoryPage() {
                     </div>
                   </div>
                   {listing.description && (
-                    <p className="whitespace-pre-wrap rounded-md bg-slate-50 p-3 text-xs text-slate-600 dark:bg-neutral-800 dark:text-slate-300">
+                    <p className="whitespace-pre-wrap rounded-xl bg-slate-50 p-3 text-xs text-slate-600 dark:bg-neutral-800 dark:text-slate-300">
                       {listing.description}
                     </p>
                   )}

@@ -16,12 +16,12 @@ export function LegalPageContent({ copy, locale }: { copy: DirectoryLegalCopy; l
         <p className="mt-2 text-sm text-slate-400 dark:text-slate-500">Effective {copy.effectiveDate}</p>
 
         {localeNotice && (
-          <div className="mt-6 rounded-md border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-slate-300">
+          <div className="mt-6 rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-slate-300">
             {localeNotice}
           </div>
         )}
 
-        <div className="mt-4 rounded-md border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800 dark:border-amber-900 dark:bg-amber-950 dark:text-amber-200">
+        <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800 dark:border-amber-900 dark:bg-amber-950 dark:text-amber-200">
           {copy.draftNotice}
         </div>
 

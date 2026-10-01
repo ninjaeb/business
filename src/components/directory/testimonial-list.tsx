@@ -35,7 +35,7 @@ export function TestimonialList({ testimonials, locale }: { testimonials: Testim
   return (
     <ul className="space-y-3">
       {testimonials.map((testimonial) => (
-        <li key={testimonial.id} className="rounded-md border border-slate-200 px-4 py-3 dark:border-neutral-800">
+        <li key={testimonial.id} className="rounded-2xl border border-slate-200 px-5 py-4 shadow-sm dark:border-neutral-800">
           <div className="flex flex-wrap items-center justify-between gap-2">
             <span className="text-sm font-semibold text-slate-900 dark:text-slate-100">{testimonial.authorName}</span>
             <div className="flex items-center gap-2">

@@ -100,7 +100,7 @@ export function WriteTestimonialButton({
               the taller testimonial textarea below) can push this past a
               phone viewport's height, unlike the fixed-height crop tool
               LogoCropDialog sizes itself around. */}
-          <div className="relative max-h-[95vh] w-full max-w-xl overflow-y-auto rounded-lg bg-white p-5 shadow-2xl dark:bg-neutral-900">
+          <div className="relative max-h-[95vh] w-full max-w-xl overflow-y-auto rounded-2xl bg-white p-5 shadow-2xl dark:bg-neutral-900">
             <button
               type="button"
               onClick={() => setOpen(false)}
@@ -122,7 +122,7 @@ export function WriteTestimonialButton({
                 </h3>
                 <p className="text-sm text-slate-600 dark:text-slate-300">{alreadySubmittedMessage}</p>
                 {existingTestimonial?.status === "REJECTED" && existingTestimonial.reviewNote && (
-                  <p className="rounded-md bg-slate-50 p-3 text-sm text-slate-600 dark:bg-neutral-800 dark:text-slate-300">
+                  <p className="rounded-xl bg-slate-50 p-3 text-sm text-slate-600 dark:bg-neutral-800 dark:text-slate-300">
                     {existingTestimonial.reviewNote}
                   </p>
                 )}
