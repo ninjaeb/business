@@ -33,6 +33,9 @@ const visitorSignupSchema = z.object({
     .min(1, "phone_required")
     .refine((value) => isValidPhoneFormat(value), { message: "phone_invalid" }),
   password: z.string().min(8, "password_length"),
+  // Both optional — see registerVisitorWithPassword's own comment.
+  companyName: z.string().trim().max(150).optional(),
+  title: z.string().trim().max(100).optional(),
 });
 
 export type VisitorAuthState =
@@ -58,6 +61,11 @@ export async function registerVisitor(_prevState: VisitorAuthState, formData: Fo
     email: formData.get("email"),
     phone: formData.get("phone"),
     password: formData.get("password"),
+    // Blank left as "" by an unfilled optional field, not absent — normalized
+    // here rather than in the schema so a blank submission stores no value
+    // at all instead of an empty string.
+    companyName: formData.get("companyName") || undefined,
+    title: formData.get("title") || undefined,
   });
   if (!parsed.success) {
     const code = (parsed.error.issues[0]?.message as VisitorAuthErrorCode) ?? "invalid_submission";
@@ -69,6 +77,8 @@ export async function registerVisitor(_prevState: VisitorAuthState, formData: Fo
     email: parsed.data.email,
     phone: parsed.data.phone,
     passwordHash: await hashPassword(parsed.data.password),
+    companyName: parsed.data.companyName,
+    title: parsed.data.title,
   });
   if (!result.ok) {
     return { status: "error", code: result.error };
