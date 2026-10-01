@@ -511,6 +511,15 @@ export type DirectoryStrings = {
   // ("Name", "Email", "Phone", "Password").
   testimonialAuthHeading: string;
   testimonialAuthIntro: string;
+  // Both optional — a visitor's employer/role, shown alongside their name on
+  // the testimonial for credibility (same User.companyName/title columns a
+  // PARTNER profile already has). Separate from signupCompanyLabel above:
+  // that one means "the business you're registering", which reads wrong
+  // here, where it means "who you work for" instead.
+  testimonialCompanyLabel: string;
+  testimonialCompanyPlaceholder: string;
+  testimonialPositionLabel: string;
+  testimonialPositionPlaceholder: string;
   testimonialSignupTab: string;
   testimonialLoginTab: string;
   testimonialLoginSubmit: string;
@@ -786,6 +795,10 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialAuthHeading: "Sign in to write a testimonial",
     testimonialAuthIntro:
       "Sign in with Google, or create a free account with your name, email and phone — takes less than a minute.",
+    testimonialCompanyLabel: "Company name",
+    testimonialCompanyPlaceholder: "Acme Sdn Bhd",
+    testimonialPositionLabel: "Position",
+    testimonialPositionPlaceholder: "Marketing Director",
     testimonialSignupTab: "Create account",
     testimonialLoginTab: "Log in",
     testimonialLoginSubmit: "Log in",
@@ -1044,6 +1057,10 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialsCta: "有过愉快的体验吗？分享出来——这能帮助其他访客做决定，只需不到一分钟。",
     testimonialAuthHeading: "登录后即可撰写评价",
     testimonialAuthIntro: "使用 Google 登录，或创建一个免费账户，填写姓名、电子邮件和电话——不到一分钟即可完成。",
+    testimonialCompanyLabel: "公司名称",
+    testimonialCompanyPlaceholder: "Acme Sdn Bhd",
+    testimonialPositionLabel: "职位",
+    testimonialPositionPlaceholder: "市场总监",
     testimonialSignupTab: "创建账户",
     testimonialLoginTab: "登录",
     testimonialLoginSubmit: "登录",
@@ -1301,6 +1318,10 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialAuthHeading: "Log masuk untuk menulis testimoni",
     testimonialAuthIntro:
       "Log masuk dengan Google, atau cipta akaun percuma dengan nama, e-mel dan nombor telefon anda — mengambil masa kurang seminit.",
+    testimonialCompanyLabel: "Nama syarikat",
+    testimonialCompanyPlaceholder: "Acme Sdn Bhd",
+    testimonialPositionLabel: "Jawatan",
+    testimonialPositionPlaceholder: "Pengarah Pemasaran",
     testimonialSignupTab: "Cipta akaun",
     testimonialLoginTab: "Log masuk",
     testimonialLoginSubmit: "Log masuk",

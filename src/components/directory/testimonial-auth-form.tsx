@@ -159,34 +159,46 @@ export function TestimonialAuthForm({
           </div>
           <input type="hidden" name="renderedAt" value={renderedAt} />
 
-          <FieldGroup label={t.signupNameLabel} htmlFor="visitor-signup-name" required>
-            <Input id="visitor-signup-name" name="name" required placeholder={t.signupNamePlaceholder} className="text-base" />
-          </FieldGroup>
-          <FieldGroup label={t.signupEmailLabel} htmlFor="visitor-signup-email" required>
-            <Input
-              id="visitor-signup-email"
-              name="email"
-              type="email"
-              required
-              placeholder={t.signupEmailPlaceholder}
-              className="text-base"
-            />
-          </FieldGroup>
-          <FieldGroup label={t.signupPhoneLabel} htmlFor="visitor-signup-phone" required>
-            <Input
-              id="visitor-signup-phone"
-              name="phone"
-              type="tel"
-              required
-              placeholder={t.signupPhonePlaceholder}
-              className="text-base"
-            />
-            <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">{t.signupPhoneHint}</p>
-          </FieldGroup>
-          <FieldGroup label={t.signupPasswordLabel} htmlFor="visitor-signup-password" required>
-            <Input id="visitor-signup-password" name="password" type="password" required minLength={8} className="text-base" />
-            <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">{t.signupPasswordHint}</p>
-          </FieldGroup>
+          <div className="grid gap-3 sm:grid-cols-2">
+            <FieldGroup label={t.testimonialCompanyLabel} htmlFor="visitor-signup-company">
+              <Input id="visitor-signup-company" name="companyName" placeholder={t.testimonialCompanyPlaceholder} className="text-base" />
+            </FieldGroup>
+            <FieldGroup label={t.testimonialPositionLabel} htmlFor="visitor-signup-title">
+              <Input id="visitor-signup-title" name="title" placeholder={t.testimonialPositionPlaceholder} className="text-base" />
+            </FieldGroup>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2">
+            <FieldGroup label={t.signupNameLabel} htmlFor="visitor-signup-name" required>
+              <Input id="visitor-signup-name" name="name" required placeholder={t.signupNamePlaceholder} className="text-base" />
+            </FieldGroup>
+            <FieldGroup label={t.signupPhoneLabel} htmlFor="visitor-signup-phone" required>
+              <Input
+                id="visitor-signup-phone"
+                name="phone"
+                type="tel"
+                required
+                placeholder={t.signupPhonePlaceholder}
+                className="text-base"
+              />
+              <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">{t.signupPhoneHint}</p>
+            </FieldGroup>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2">
+            <FieldGroup label={t.signupEmailLabel} htmlFor="visitor-signup-email" required>
+              <Input
+                id="visitor-signup-email"
+                name="email"
+                type="email"
+                required
+                placeholder={t.signupEmailPlaceholder}
+                className="text-base"
+              />
+            </FieldGroup>
+            <FieldGroup label={t.signupPasswordLabel} htmlFor="visitor-signup-password" required>
+              <Input id="visitor-signup-password" name="password" type="password" required minLength={8} className="text-base" />
+              <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">{t.signupPasswordHint}</p>
+            </FieldGroup>
+          </div>
 
           {signupState?.status === "error" && (
             <p className="text-sm text-rose-600 dark:text-rose-400">{t.testimonialAuthErrors[signupState.code]}</p>
