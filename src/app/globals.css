@@ -20,6 +20,16 @@
   --color-led-ink: #0b2b1d;
   --color-led-soft: #e2f6ec;
   --color-led-soft-dark: #0f2a1f;
+
+  /* One deliberate addition for the bolder, more editorial public-directory
+     pages (About, and whichever pages follow it) — a soft, wide-spread
+     shadow for hero/stat cards that reads as "lifted" without the harder
+     edge of Tailwind's stock shadow-lg/xl. Everything else about the new
+     look (bigger type scale, rounded-2xl/3xl corners, gradient accents)
+     is achieved with existing Tailwind utilities, not new tokens — Tailwind
+     v4 already ships those scales, so redeclaring them here would just be
+     duplication. See shadow-soft usage in src/app/[locale]/about/page.tsx. */
+  --shadow-soft: 0 1px 2px 0 rgb(0 0 0 / 0.04), 0 12px 32px -8px rgb(0 0 0 / 0.1);
 }
 
 html {

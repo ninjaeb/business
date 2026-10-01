@@ -1,4 +1,5 @@
 import type { DirectoryLocale } from "@/lib/directory-i18n";
+import type { FaqEntry } from "@/lib/directory";
 
 // The public "who runs this and how listings are reviewed" page
 // (src/app/[locale]/about) — same pattern as directory-benefits-copy.ts:
@@ -20,7 +21,24 @@ export type DirectoryAboutCopy = {
   heroEyebrow: string;
   heroTitle: string;
   heroSubtitle: string;
+  // "By the numbers" strip right under the hero — every value is computed
+  // at request time (see about/page.tsx: loadPublishedListings + the
+  // existing countListingsBy* helpers the home page already uses), these
+  // are just the labels under each number, translated.
+  statsHeading: string;
+  statsListingsLabel: string;
+  statsCategoriesLabel: string;
+  statsIndustriesLabel: string;
+  statsLocationsLabel: string;
   groups: DirectoryAboutGroup[];
+  // About-page-specific FAQ — distinct from the home page's own
+  // directory-wide FAQ (DIRECTORY_HOME_COPY.faqs): these go deeper on
+  // "who runs this / is it free / how review works", not repeated
+  // verbatim from home. Same truthfulness rule as the rest of this file —
+  // every answer is a claim this codebase (or directory-benefits-copy.ts's
+  // own "Free to list") actually backs.
+  faqHeading: string;
+  faqs: FaqEntry[];
   ctaHeading: string;
   ctaBody: string;
 };
@@ -34,6 +52,11 @@ export const DIRECTORY_ABOUT_COPY: Record<DirectoryLocale, DirectoryAboutCopy> =
     heroTitle: "Who runs this directory, and how listings are reviewed",
     heroSubtitle:
       "The Gotka Business Directory is published by Gotka Technologies. Here's what that means for what you see on it.",
+    statsHeading: "The directory by the numbers",
+    statsListingsLabel: "Businesses listed",
+    statsCategoriesLabel: "Categories",
+    statsIndustriesLabel: "Industries",
+    statsLocationsLabel: "Locations",
     groups: [
       {
         heading: "Who publishes this directory",
@@ -75,6 +98,33 @@ export const DIRECTORY_ABOUT_COPY: Record<DirectoryLocale, DirectoryAboutCopy> =
         ],
       },
     ],
+    faqHeading: "Frequently asked questions",
+    faqs: [
+      {
+        question: "Who actually runs this directory?",
+        answer:
+          "Gotka Technologies — gotka.com is our own site, and the Gotka Business Directory is one of the products we build and operate ourselves, not a third-party listing service.",
+      },
+      {
+        question: "Is it free to list a business?",
+        answer: "Yes. Creating an account and submitting a listing costs nothing.",
+      },
+      {
+        question: "What stops a fake or misleading listing from appearing?",
+        answer:
+          "Every listing is reviewed by our team before it goes live, and later edits to an already-live listing are reviewed again before they replace what visitors see — a listing we can't verify, or that misrepresents the business behind it, doesn't stay published.",
+      },
+      {
+        question: "Why English, Chinese, and Malay?",
+        answer:
+          "Those are the languages people actually search in across the markets this directory serves, so every page exists in all three rather than one language with a thin translation layer bolted on.",
+      },
+      {
+        question: "Can a business pay to write its own guide?",
+        answer:
+          "No — guides are written by the Gotka Business Directory team, the same team that reviews listings, not submitted or sponsored by businesses.",
+      },
+    ],
     ctaHeading: "Want your business listed here?",
     ctaBody: "Submit your listing — our team reviews it before it goes live.",
   },
@@ -84,6 +134,11 @@ export const DIRECTORY_ABOUT_COPY: Record<DirectoryLocale, DirectoryAboutCopy> =
     heroEyebrow: "关于本目录",
     heroTitle: "本目录由谁运营，刊登条目又是如何审核的",
     heroSubtitle: "Gotka 企业目录由 Gotka Technologies 发布。以下说明您在本目录上看到的内容意味着什么。",
+    statsHeading: "目录数据一览",
+    statsListingsLabel: "已刊登企业",
+    statsCategoriesLabel: "分类",
+    statsIndustriesLabel: "行业",
+    statsLocationsLabel: "地区",
     groups: [
       {
         heading: "谁发布本目录",
@@ -125,6 +180,30 @@ export const DIRECTORY_ABOUT_COPY: Record<DirectoryLocale, DirectoryAboutCopy> =
         ],
       },
     ],
+    faqHeading: "常见问题",
+    faqs: [
+      {
+        question: "这个目录到底是谁运营的？",
+        answer: "Gotka Technologies——gotka.com 是我们自己的网站，Gotka 企业目录是我们自己构建和运营的产品之一，并非第三方刊登服务。",
+      },
+      {
+        question: "刊登企业信息需要付费吗？",
+        answer: "不需要。创建账户并提交刊登条目完全免费。",
+      },
+      {
+        question: "如何防止虚假或误导性的刊登条目出现？",
+        answer:
+          "每个刊登条目在上线前都会经过我们团队审核，已上线条目的后续编辑在替换访客所见内容之前也会再次审核——无法核实或歪曲企业真实情况的条目不会继续保留在线上。",
+      },
+      {
+        question: "为什么提供英文、中文和马来文三种语言？",
+        answer: "这是本目录所服务市场中人们实际搜索时使用的语言，因此每个页面都以三种语言呈现，而不是以一种语言为主、再草草加上一层翻译。",
+      },
+      {
+        question: "企业可以付费撰写自己的指南文章吗？",
+        answer: "不可以——指南文章由 Gotka 企业目录团队撰写，即负责审核刊登条目的同一个团队，并非由企业提交或赞助。",
+      },
+    ],
     ctaHeading: "想在这里刊登您的企业吗？",
     ctaBody: "提交您的刊登条目——我们的团队会在它上线前进行审核。",
   },
@@ -136,6 +215,11 @@ export const DIRECTORY_ABOUT_COPY: Record<DirectoryLocale, DirectoryAboutCopy> =
     heroTitle: "Siapa yang menguruskan direktori ini, dan bagaimana senarai disemak",
     heroSubtitle:
       "Direktori Perniagaan Gotka diterbitkan oleh Gotka Technologies. Ini yang dimaksudkan untuk apa yang anda lihat di sini.",
+    statsHeading: "Direktori dalam angka",
+    statsListingsLabel: "Perniagaan disenaraikan",
+    statsCategoriesLabel: "Kategori",
+    statsIndustriesLabel: "Industri",
+    statsLocationsLabel: "Lokasi",
     groups: [
       {
         heading: "Siapa yang menerbitkan direktori ini",
@@ -175,6 +259,33 @@ export const DIRECTORY_ABOUT_COPY: Record<DirectoryLocale, DirectoryAboutCopy> =
             body: "Panduan di direktori ini ditulis oleh pasukan Direktori Perniagaan Gotka — pasukan yang sama yang bertanggungjawab menyemak senarai — bukan dihantar oleh perniagaan.",
           },
         ],
+      },
+    ],
+    faqHeading: "Soalan lazim",
+    faqs: [
+      {
+        question: "Siapa sebenarnya yang menguruskan direktori ini?",
+        answer:
+          "Gotka Technologies — gotka.com ialah laman web kami sendiri, dan Direktori Perniagaan Gotka adalah salah satu produk yang kami bina dan kendalikan sendiri, bukan perkhidmatan penyenaraian pihak ketiga.",
+      },
+      {
+        question: "Adakah percuma untuk menyenaraikan perniagaan?",
+        answer: "Ya. Mencipta akaun dan menghantar senarai tidak dikenakan sebarang bayaran.",
+      },
+      {
+        question: "Apa yang menghalang senarai palsu atau mengelirukan daripada disiarkan?",
+        answer:
+          "Setiap senarai disemak oleh pasukan kami sebelum disiarkan, dan suntingan kemudian kepada senarai yang sudah disiarkan turut disemak semula sebelum menggantikan apa yang dilihat pelawat — senarai yang tidak dapat kami sahkan, atau yang menyalahgambarkan perniagaan di sebaliknya, tidak kekal disiarkan.",
+      },
+      {
+        question: "Mengapa bahasa Inggeris, Cina, dan Melayu?",
+        answer:
+          "Itulah bahasa yang sebenarnya digunakan orang untuk mencari di pasaran yang dilayan oleh direktori ini, jadi setiap halaman wujud dalam ketiga-tiga bahasa, bukan satu bahasa utama dengan lapisan terjemahan yang nipis ditampal begitu sahaja.",
+      },
+      {
+        question: "Bolehkah perniagaan membayar untuk menulis panduan sendiri?",
+        answer:
+          "Tidak — panduan ditulis oleh pasukan Direktori Perniagaan Gotka, pasukan yang sama yang menyemak senarai, bukan dihantar atau ditaja oleh perniagaan.",
       },
     ],
     ctaHeading: "Mahu perniagaan anda disenaraikan di sini?",
