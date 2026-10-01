@@ -28,7 +28,7 @@ export function UpdateItem({ update, locale }: { update: ListingUpdateEntry; loc
   return (
     <div
       className={cn(
-        "rounded-md border p-3",
+        "rounded-xl border p-3",
         isPromotion
           ? "border-led/30 bg-led-soft dark:border-led/20 dark:bg-led-soft-dark"
           : "border-slate-200 dark:border-neutral-800",

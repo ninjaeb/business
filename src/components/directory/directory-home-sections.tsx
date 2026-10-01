@@ -143,20 +143,24 @@ export function DirectoryHomeSections({
         </h2>
         <ol className="mt-4 grid gap-4 sm:grid-cols-3">
           {copy.howSteps.map((step, index) => (
-            <li key={step.title} className="rounded-lg border border-slate-200 p-4 dark:border-neutral-800">
-              <div className="flex items-center gap-2">
-                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-petrol text-sm font-semibold text-white">
-                  {index + 1}
-                </span>
-                <h3 className="font-semibold text-slate-900 dark:text-slate-100">{step.title}</h3>
-              </div>
+            <li
+              key={step.title}
+              className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-neutral-800 dark:bg-neutral-900"
+            >
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-petrol text-sm font-semibold text-white">
+                {index + 1}
+              </span>
+              <h3 className="mt-3 font-semibold text-slate-900 dark:text-slate-100">{step.title}</h3>
               <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">{step.body}</p>
             </li>
           ))}
         </ol>
       </section>
 
-      <section aria-labelledby="directory-list" className="mx-auto max-w-3xl rounded-lg bg-led-soft p-6 text-center dark:bg-led-soft-dark">
+      <section
+        aria-labelledby="directory-list"
+        className="mx-auto max-w-3xl rounded-3xl bg-led-soft p-8 text-center shadow-sm dark:bg-led-soft-dark"
+      >
         <h2 id="directory-list" className="text-xl font-semibold text-petrol-ink dark:text-petrol-light">
           {copy.listCtaHeading}
         </h2>
@@ -187,7 +191,10 @@ export function DirectoryHomeSections({
         </h2>
         <div className="mt-4 space-y-2">
           {copy.faqs.map((faq) => (
-            <details key={faq.question} className="group rounded-md border border-slate-200 px-3 py-2 dark:border-neutral-800">
+            <details
+              key={faq.question}
+              className="group rounded-2xl border border-slate-200 px-4 py-3 open:bg-slate-50 dark:border-neutral-800 dark:open:bg-neutral-800/50"
+            >
               <summary className="flex cursor-pointer list-none items-center justify-between gap-2 text-base font-semibold text-slate-900 marker:content-none dark:text-slate-100">
                 <h3 className="text-base font-semibold">{faq.question}</h3>
                 <ChevronDown className="h-4 w-4 shrink-0 text-slate-400 transition-transform group-open:rotate-180" />

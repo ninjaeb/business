@@ -36,7 +36,7 @@ export function ListingLogo({
   zoomable?: boolean;
 }) {
   if (logoUrl) {
-    const imageClassName = cn("shrink-0 rounded-lg object-cover ring-1 ring-slate-200 dark:ring-neutral-800", className);
+    const imageClassName = cn("shrink-0 rounded-full object-cover ring-1 ring-slate-200 dark:ring-neutral-800", className);
     if (zoomable) {
       return (
         <ZoomableImage
@@ -68,7 +68,7 @@ export function ListingLogo({
     <div
       aria-hidden="true"
       className={cn(
-        "flex shrink-0 items-center justify-center rounded-lg bg-petrol font-semibold text-white",
+        "flex shrink-0 items-center justify-center rounded-full bg-petrol font-semibold text-white",
         className,
       )}
     >

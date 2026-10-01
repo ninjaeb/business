@@ -22,6 +22,18 @@ export function isGoogleAuthConfigured(): boolean {
   return Boolean(process.env.GOOGLE_CLIENT_ID?.trim() && process.env.GOOGLE_CLIENT_SECRET?.trim());
 }
 
+// The client id alone is a public value (it's embedded in every Google
+// sign-in redirect URL already) — safe to hand to a Client Component that
+// needs it to initialize Google Identity Services' own JS SDK, unlike
+// GOOGLE_CLIENT_SECRET, which never leaves the server. Gated on the same
+// isGoogleAuthConfigured() as the redirect-based partner flow (both client
+// id and secret set) rather than a looser "client id alone" check, so this
+// app has one on/off switch for Google sign-in, not two partially-configured
+// states to reason about.
+export function getPublicGoogleClientId(): string | null {
+  return isGoogleAuthConfigured() ? process.env.GOOGLE_CLIENT_ID!.trim() : null;
+}
+
 // Reuses SESSION_SECRET rather than adding a new required env var — this
 // signs a short-lived, server-only token (the OAuth "state" round-tripped
 // through Google), not a login session itself, but the same secret is a

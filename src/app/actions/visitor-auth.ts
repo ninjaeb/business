@@ -1,11 +1,13 @@
 "use server";
 
 import { headers } from "next/headers";
+import { randomBytes } from "node:crypto";
 import { z } from "zod";
 import { db } from "@/lib/db";
 import { hashPassword, verifyPassword } from "@/lib/auth/password";
 import { createSession, deleteSession } from "@/lib/session";
-import { registerVisitorWithPassword } from "@/lib/visitor-signup";
+import { registerVisitorWithPassword, registerOrSignInVisitorWithGoogle } from "@/lib/visitor-signup";
+import { verifyGoogleIdToken } from "@/lib/auth/google";
 import { isValidPhoneFormat } from "@/lib/phone";
 import { isRateLimited, isSuspiciouslyFast } from "@/lib/lead-spam-guard";
 import { firstHopValue } from "@/lib/site-url";
@@ -31,6 +33,9 @@ const visitorSignupSchema = z.object({
     .min(1, "phone_required")
     .refine((value) => isValidPhoneFormat(value), { message: "phone_invalid" }),
   password: z.string().min(8, "password_length"),
+  // Both optional — see registerVisitorWithPassword's own comment.
+  companyName: z.string().trim().max(150).optional(),
+  title: z.string().trim().max(100).optional(),
 });
 
 export type VisitorAuthState =
@@ -56,6 +61,11 @@ export async function registerVisitor(_prevState: VisitorAuthState, formData: Fo
     email: formData.get("email"),
     phone: formData.get("phone"),
     password: formData.get("password"),
+    // Blank left as "" by an unfilled optional field, not absent — normalized
+    // here rather than in the schema so a blank submission stores no value
+    // at all instead of an empty string.
+    companyName: formData.get("companyName") || undefined,
+    title: formData.get("title") || undefined,
   });
   if (!parsed.success) {
     const code = (parsed.error.issues[0]?.message as VisitorAuthErrorCode) ?? "invalid_submission";
@@ -67,6 +77,8 @@ export async function registerVisitor(_prevState: VisitorAuthState, formData: Fo
     email: parsed.data.email,
     phone: parsed.data.phone,
     passwordHash: await hashPassword(parsed.data.password),
+    companyName: parsed.data.companyName,
+    title: parsed.data.title,
   });
   if (!result.ok) {
     return { status: "error", code: result.error };
@@ -118,4 +130,46 @@ export async function loginVisitor(_prevState: VisitorAuthState, formData: FormD
 // render shows the auth form again in the same spot.
 export async function logoutVisitor(): Promise<void> {
   await deleteSession();
+}
+
+export type VisitorGoogleAuthResult = { status: "ok"; name: string } | { status: "error"; code: VisitorAuthErrorCode };
+
+// "Continue with Google" inside TestimonialAuthForm — deliberately not the
+// redirect-based flow the partner signup/login pages use
+// (/api/auth/google + its callback route): this dialog opens over an
+// arbitrary listing page rather than a dedicated page, so there's nowhere
+// natural for a full-page round trip to Google to land back on. Google
+// Identity Services' own client-side button instead hands the browser a
+// signed id_token directly (no redirect at all), which this verifies the
+// exact same way verifyGoogleIdToken already does for the partner flow —
+// same signature/issuer/audience check against Google's own published
+// keys, just reached by a different path.
+//
+// Not rate-limited like the password paths above: verifyGoogleIdToken
+// rejects anything not genuinely signed by Google before this ever touches
+// the database, so hitting registerOrSignInVisitorWithGoogle at all already
+// requires a real Google-issued token — no cheaper for an attacker to spam
+// than just using the password form with a real account.
+export async function signInVisitorWithGoogle(idToken: string): Promise<VisitorGoogleAuthResult> {
+  let profile;
+  try {
+    profile = await verifyGoogleIdToken(idToken);
+  } catch {
+    return { status: "error", code: "google_failed" };
+  }
+  if (!profile.emailVerified) {
+    return { status: "error", code: "email_unverified" };
+  }
+
+  const result = await registerOrSignInVisitorWithGoogle({
+    name: profile.name,
+    email: profile.email,
+    passwordHash: await hashPassword(randomBytes(24).toString("hex")),
+  });
+  if (!result.ok) {
+    return { status: "error", code: result.error };
+  }
+
+  await createSession(result.userId);
+  return { status: "ok", name: result.name };
 }

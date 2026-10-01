@@ -15,7 +15,7 @@ export function AlbumGrid({ albums }: { albums: AlbumSummary[] }) {
         <Link
           key={album.name}
           href={album.href}
-          className="group block overflow-hidden rounded-md ring-1 ring-slate-200 transition-colors hover:ring-petrol/40 dark:ring-neutral-800 dark:hover:ring-petrol-light/30"
+          className="group block overflow-hidden rounded-xl ring-1 ring-slate-200 transition-colors hover:ring-petrol/40 dark:ring-neutral-800 dark:hover:ring-petrol-light/30"
         >
           {/* eslint-disable-next-line @next/next/no-img-element -- served straight out of the DB by /api/directory-images, same reasoning as ListingLogo */}
           <img

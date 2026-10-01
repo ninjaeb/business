@@ -174,7 +174,7 @@ export function HeaderSearch({
       </div>
 
       {open && results && (
-        <div className="absolute left-0 z-30 mt-1.5 max-h-[70vh] w-72 max-w-[calc(100vw-2rem)] overflow-y-auto rounded-lg border border-slate-200 bg-white py-1.5 shadow-lg sm:w-96 dark:border-neutral-700 dark:bg-neutral-900">
+        <div className="absolute left-0 z-30 mt-1.5 max-h-[70vh] w-72 max-w-[calc(100vw-2rem)] overflow-y-auto rounded-2xl border border-slate-200 bg-white py-1.5 shadow-lg sm:w-96 dark:border-neutral-700 dark:bg-neutral-900">
           {!hasResults && <p className="px-3 py-4 text-center text-sm text-slate-500 dark:text-slate-400">{t.searchNoResults}</p>}
 
           {results.businesses.length > 0 && (
@@ -207,7 +207,7 @@ export function HeaderSearch({
                   onClick={(event) => followResult(event, directoryListingServicesPath(locale, hit.listingSlug))}
                   className="flex items-center gap-2.5 px-3 py-2 hover:bg-slate-50 dark:hover:bg-neutral-800"
                 >
-                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-500 dark:bg-neutral-800 dark:text-slate-400">
+                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-slate-100 text-slate-500 dark:bg-neutral-800 dark:text-slate-400">
                     <Package className="h-3.5 w-3.5" />
                   </span>
                   <span className="min-w-0 flex-1">
@@ -233,7 +233,7 @@ export function HeaderSearch({
                   onClick={(event) => followResult(event, href)}
                   className="flex items-center gap-2.5 px-3 py-2 hover:bg-slate-50 dark:hover:bg-neutral-800"
                 >
-                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-500 dark:bg-neutral-800 dark:text-slate-400">
+                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-slate-100 text-slate-500 dark:bg-neutral-800 dark:text-slate-400">
                     <Megaphone className="h-3.5 w-3.5" />
                   </span>
                   <span className="min-w-0 flex-1">

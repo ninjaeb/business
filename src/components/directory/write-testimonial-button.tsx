@@ -29,6 +29,7 @@ export function WriteTestimonialButton({
   locale,
   aiAvailable,
   googleReviewUrl,
+  googleClientId,
   visitor,
   existingTestimonial,
   variant = "secondary",
@@ -38,6 +39,10 @@ export function WriteTestimonialButton({
   locale: DirectoryLocale;
   aiAvailable: boolean;
   googleReviewUrl: string | null;
+  // Null when Google sign-in isn't configured — forwarded straight to
+  // TestimonialAuthForm, which hides its "Continue with Google" button in
+  // that case (see getPublicGoogleClientId).
+  googleClientId: string | null;
   // Null when no visitor is signed in on this browser — the dialog opens
   // straight to TestimonialAuthForm in that case.
   visitor: { name: string } | null;
@@ -95,7 +100,7 @@ export function WriteTestimonialButton({
               the taller testimonial textarea below) can push this past a
               phone viewport's height, unlike the fixed-height crop tool
               LogoCropDialog sizes itself around. */}
-          <div className="relative max-h-[95vh] w-full max-w-xl overflow-y-auto rounded-lg bg-white p-5 shadow-2xl dark:bg-neutral-900">
+          <div className="relative max-h-[95vh] w-full max-w-xl overflow-y-auto rounded-2xl bg-white p-5 shadow-2xl dark:bg-neutral-900">
             <button
               type="button"
               onClick={() => setOpen(false)}
@@ -105,7 +110,11 @@ export function WriteTestimonialButton({
               <X className="h-4 w-4" />
             </button>
             {!localVisitor ? (
-              <TestimonialAuthForm locale={locale} onAuthenticated={(name) => setLocalVisitor({ name })} />
+              <TestimonialAuthForm
+                locale={locale}
+                googleClientId={googleClientId}
+                onAuthenticated={(name) => setLocalVisitor({ name })}
+              />
             ) : alreadySubmittedMessage ? (
               <div className="space-y-2">
                 <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">
@@ -113,7 +122,7 @@ export function WriteTestimonialButton({
                 </h3>
                 <p className="text-sm text-slate-600 dark:text-slate-300">{alreadySubmittedMessage}</p>
                 {existingTestimonial?.status === "REJECTED" && existingTestimonial.reviewNote && (
-                  <p className="rounded-md bg-slate-50 p-3 text-sm text-slate-600 dark:bg-neutral-800 dark:text-slate-300">
+                  <p className="rounded-xl bg-slate-50 p-3 text-sm text-slate-600 dark:bg-neutral-800 dark:text-slate-300">
                     {existingTestimonial.reviewNote}
                   </p>
                 )}

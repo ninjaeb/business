@@ -23,7 +23,7 @@ export function DirectoryTopNav({
     <nav
       aria-label={navLabel}
       className={cn(
-        "flex min-w-0 items-center gap-4 overflow-x-auto whitespace-nowrap text-sm font-medium text-slate-600 dark:text-slate-300",
+        "flex min-w-0 items-center gap-1 overflow-x-auto whitespace-nowrap text-sm font-medium text-slate-600 dark:text-slate-300",
         className,
       )}
     >
@@ -31,7 +31,10 @@ export function DirectoryTopNav({
         <Link
           key={item.href}
           href={item.href}
-          className="shrink-0 transition-colors hover:text-petrol dark:hover:text-petrol-light"
+          // rounded-full px-3 py-1.5: the template's own pill-on-hover nav
+          // treatment — gap-4's old spacing moved onto this padding instead,
+          // so links still read as separated once each gets its own pill.
+          className="shrink-0 rounded-full px-3 py-1.5 transition-colors hover:bg-slate-100 hover:text-petrol dark:hover:bg-neutral-800 dark:hover:text-petrol-light"
         >
           {item.label}
         </Link>

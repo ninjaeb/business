@@ -20,7 +20,7 @@ export function ServiceList({ services }: { services: ServiceEntry[] }) {
   return (
     <div className="space-y-2">
       <p className="text-sm text-slate-400 dark:text-slate-500">Tap a row to add it to your inquiry below.</p>
-      <div className="overflow-hidden rounded-md border border-slate-200 dark:border-neutral-800">
+      <div className="overflow-hidden rounded-xl border border-slate-200 dark:border-neutral-800">
         <table className="w-full text-base">
           <tbody>
             {services.map((service, index) => {

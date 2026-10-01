@@ -2,8 +2,12 @@ import { cn } from "@/lib/utils";
 
 // Exported for other custom form controls (e.g. Combobox) that need to
 // visually match Input/Select but aren't a plain <input>/<select> themselves.
+// rounded-lg: softened from rounded-md, matching Card's own bump to
+// rounded-2xl (see card.tsx) — a smaller jump than Card's since a field
+// border runs the full length of (often long) text inputs, where a
+// template-matching rounded-full would look odd.
 export const fieldClasses =
-  "block w-full rounded-md border-0 px-3 py-2 text-sm text-slate-900 ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500 dark:bg-neutral-900 dark:text-slate-100 dark:ring-neutral-700 dark:placeholder:text-slate-500";
+  "block w-full rounded-lg border-0 px-3 py-2 text-sm text-slate-900 ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500 dark:bg-neutral-900 dark:text-slate-100 dark:ring-neutral-700 dark:placeholder:text-slate-500";
 // Shared fixed height for single-line controls (Input, Select, DatePicker's trigger)
 // so they line up with each other in grids — Textarea is excluded since its
 // height should come from `rows`, not this.
