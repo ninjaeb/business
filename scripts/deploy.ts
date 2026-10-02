@@ -1,5 +1,5 @@
 import { execFileSync } from "node:child_process";
-import { existsSync, mkdirSync, readFileSync, utimesSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, unlinkSync, utimesSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
 // Runs the same sequence the README's manual redeploy steps describe (see
@@ -43,6 +43,51 @@ function signalRestart() {
 
 function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+// The webhook (src/app/api/deploy/webhook/route.ts) spawns a fresh detached
+// `npm run deploy` on every push with no de-duplication — two pushes
+// landing close together (easy on a branch several sessions push to) spawn
+// two of these, racing the same git working directory and the same
+// shared-hosting connection budget runDbCommand already has to defend
+// against. A lock file makes a second concurrent run skip itself instead of
+// colliding with the first — safe to skip entirely, since whichever run
+// goes on to actually fetch always resets to origin/BRANCH's current head
+// regardless of which push triggered it, so no commit is ever lost by
+// skipping. A lock left behind by a process that crashed or got killed
+// (rather than exiting through release below) is detected by checking
+// whether its PID is still alive, not by the lock's age.
+const DEPLOY_LOCK_FILE = path.join(REPO_ROOT, "tmp", "deploy.lock");
+
+function isPidAlive(pid: number): boolean {
+  try {
+    process.kill(pid, 0);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function acquireDeployLock(): boolean {
+  const tmpDir = path.join(REPO_ROOT, "tmp");
+  if (!existsSync(tmpDir)) mkdirSync(tmpDir);
+  if (existsSync(DEPLOY_LOCK_FILE)) {
+    const heldBy = Number(readFileSync(DEPLOY_LOCK_FILE, "utf8").trim());
+    if (heldBy && isPidAlive(heldBy)) return false;
+    console.log(`Found a stale deploy.lock (pid ${heldBy || "unknown"} is no longer running) — taking over.`);
+  }
+  writeFileSync(DEPLOY_LOCK_FILE, String(process.pid));
+  return true;
+}
+
+function releaseDeployLock() {
+  try {
+    if (existsSync(DEPLOY_LOCK_FILE) && Number(readFileSync(DEPLOY_LOCK_FILE, "utf8").trim()) === process.pid) {
+      unlinkSync(DEPLOY_LOCK_FILE);
+    }
+  } catch (error) {
+    console.log(`Could not remove deploy.lock: ${error instanceof Error ? error.message : error}`);
+  }
 }
 
 // public/sitemap.xml and public/llms.txt are committed only as 0-URL
@@ -278,42 +323,50 @@ async function main() {
     return;
   }
 
-  const before = run("git", ["rev-parse", "HEAD"]);
-  run("git", ["fetch", "origin", BRANCH]);
-  const generatedFilesSnapshot = snapshotGeneratedFiles();
-  run("git", ["reset", "--hard", `origin/${BRANCH}`]);
-  restoreGeneratedFiles(generatedFilesSnapshot);
-  const after = run("git", ["rev-parse", "HEAD"]);
-
-  if (before === after) {
-    console.log(`Already at ${after.slice(0, 7)} (${BRANCH}) — nothing to deploy.`);
+  if (!acquireDeployLock()) {
+    console.log("Another deploy is already running (tmp/deploy.lock) — skipping. It will fetch the latest commit when it runs.");
     return;
   }
-  console.log(`Updated ${BRANCH}: ${before.slice(0, 7)} -> ${after.slice(0, 7)}`);
+  try {
+    const before = run("git", ["rev-parse", "HEAD"]);
+    run("git", ["fetch", "origin", BRANCH]);
+    const generatedFilesSnapshot = snapshotGeneratedFiles();
+    run("git", ["reset", "--hard", `origin/${BRANCH}`]);
+    restoreGeneratedFiles(generatedFilesSnapshot);
+    const after = run("git", ["rev-parse", "HEAD"]);
 
-  if (fileChangedBetween(before, after, "package-lock.json")) {
-    console.log("package-lock.json changed — running npm install...");
-    console.log(run("npm", ["install"]));
-  } else {
-    console.log("package-lock.json unchanged — skipping npm install.");
+    if (before === after) {
+      console.log(`Already at ${after.slice(0, 7)} (${BRANCH}) — nothing to deploy.`);
+      return;
+    }
+    console.log(`Updated ${BRANCH}: ${before.slice(0, 7)} -> ${after.slice(0, 7)}`);
+
+    if (fileChangedBetween(before, after, "package-lock.json")) {
+      console.log("package-lock.json changed — running npm install...");
+      console.log(run("npm", ["install"]));
+    } else {
+      console.log("package-lock.json unchanged — skipping npm install.");
+    }
+
+    console.log("Running prisma migrate deploy...");
+    console.log(await runMigrateDeploy());
+
+    console.log("Running database seed...");
+    console.log(await runSeed());
+
+    signalRestart();
+    console.log("Signaled a restart (tmp/restart.txt) — the app rebuilds and picks up the new commit on its next request.");
+
+    const smokeOrigin = (process.env.DEPLOY_SMOKE_URL || process.env.SITE_URL || "").trim().replace(/\/+$/, "");
+    if (smokeOrigin) {
+      await runSmokeTest(smokeOrigin, after);
+    } else {
+      console.log("DEPLOY_SMOKE_URL/SITE_URL not set — skipping the post-deploy smoke test (see the README's Auto-deploy section).");
+    }
+    console.log(`=== Deploy finished ${new Date().toISOString()} ===`);
+  } finally {
+    releaseDeployLock();
   }
-
-  console.log("Running prisma migrate deploy...");
-  console.log(await runMigrateDeploy());
-
-  console.log("Running database seed...");
-  console.log(await runSeed());
-
-  signalRestart();
-  console.log("Signaled a restart (tmp/restart.txt) — the app rebuilds and picks up the new commit on its next request.");
-
-  const smokeOrigin = (process.env.DEPLOY_SMOKE_URL || process.env.SITE_URL || "").trim().replace(/\/+$/, "");
-  if (smokeOrigin) {
-    await runSmokeTest(smokeOrigin, after);
-  } else {
-    console.log("DEPLOY_SMOKE_URL/SITE_URL not set — skipping the post-deploy smoke test (see the README's Auto-deploy section).");
-  }
-  console.log(`=== Deploy finished ${new Date().toISOString()} ===`);
 }
 
 main().catch((error) => {
