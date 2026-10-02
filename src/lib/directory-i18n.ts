@@ -253,11 +253,15 @@ export type DirectoryTestimonialFormErrorCode =
   | "listing_not_found"
   | "not_signed_in"
   | "already_submitted"
+  // A signed-in business (PARTNER) account trying to review its own listing
+  // — see submitDirectoryTestimonial's own comment.
+  | "own_listing"
   | "invalid_submission"
   | "generic";
 
-// registerVisitor/loginVisitor in src/app/actions/visitor-auth.ts — the
-// account gate in front of TestimonialForm (see TestimonialAuthForm).
+// registerVisitor/registerTestimonialAuthor/loginVisitor in
+// src/app/actions/visitor-auth.ts — the account gate in front of
+// TestimonialForm (see TestimonialAuthForm).
 export type VisitorAuthErrorCode =
   | "name_required"
   | "email_required"
@@ -266,6 +270,10 @@ export type VisitorAuthErrorCode =
   | "phone_invalid"
   | "password_length"
   | "password_required"
+  // Business-account signup only (see registerTestimonialAuthor) — a user
+  // account never shows or requires these two fields.
+  | "company_required"
+  | "title_required"
   | "email_taken"
   | "invalid_credentials"
   | "rate_limited"
@@ -528,6 +536,13 @@ export type DirectoryStrings = {
   testimonialPositionPlaceholder: string;
   testimonialSignupTab: string;
   testimonialLoginTab: string;
+  // The account-type toggle shown only on the Create-account side (see
+  // TestimonialAuthForm) — picking "Business account" is what makes
+  // testimonialCompanyLabel/testimonialPositionLabel below required instead
+  // of optional, and creates a real PARTNER account (the same account type
+  // business-portal login uses) rather than a VISITOR one.
+  testimonialAccountTypeUser: string;
+  testimonialAccountTypeBusiness: string;
   testimonialLoginSubmit: string;
   testimonialLoginSubmitting: string;
   testimonialSwitchToLogin: string;
@@ -821,6 +836,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialPositionPlaceholder: "Marketing Director",
     testimonialSignupTab: "Create account",
     testimonialLoginTab: "Log in",
+    testimonialAccountTypeUser: "User account",
+    testimonialAccountTypeBusiness: "Business account",
     testimonialLoginSubmit: "Log in",
     testimonialLoginSubmitting: "Logging in…",
     testimonialSwitchToLogin: "Already have an account? Log in",
@@ -833,6 +850,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       phone_invalid: "Enter a valid phone number, e.g. +60 12 345 6789",
       password_length: "Password must be at least 8 characters",
       password_required: "Password is required",
+      company_required: "Company name is required",
+      title_required: "Position is required",
       email_taken: "That email already has an account — try logging in instead.",
       invalid_credentials: "Incorrect email or password.",
       rate_limited: "Too many attempts — please wait a few minutes and try again.",
@@ -879,6 +898,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       listing_not_found: "This listing is no longer available.",
       not_signed_in: "Sign in first, then write your testimonial.",
       already_submitted: "You've already reviewed this business.",
+      own_listing: "You can't write a testimonial for your own business.",
       invalid_submission: "Please check the form and try again.",
       generic: "Something went wrong. Please try again.",
     },
@@ -1090,6 +1110,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialPositionPlaceholder: "市场总监",
     testimonialSignupTab: "创建账户",
     testimonialLoginTab: "登录",
+    testimonialAccountTypeUser: "个人账户",
+    testimonialAccountTypeBusiness: "商家账户",
     testimonialLoginSubmit: "登录",
     testimonialLoginSubmitting: "登录中…",
     testimonialSwitchToLogin: "已有账户？登录",
@@ -1102,6 +1124,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       phone_invalid: "请输入有效的电话号码，例如 +60 12 345 6789",
       password_length: "密码至少需要 8 个字符",
       password_required: "请填写密码",
+      company_required: "请填写公司名称",
+      title_required: "请填写职位",
       email_taken: "该电子邮件已有账户——请改用登录。",
       invalid_credentials: "电子邮件或密码不正确。",
       rate_limited: "尝试次数过多，请稍等几分钟后再试。",
@@ -1147,6 +1171,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       listing_not_found: "该合作伙伴的资料已下架。",
       not_signed_in: "请先登录，然后再撰写您的评价。",
       already_submitted: "您已评价过该企业。",
+      own_listing: "您不能为自己的企业撰写评价。",
       invalid_submission: "请检查表单内容后重试。",
       generic: "出现错误，请重试。",
     },
@@ -1358,6 +1383,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialPositionPlaceholder: "Pengarah Pemasaran",
     testimonialSignupTab: "Cipta akaun",
     testimonialLoginTab: "Log masuk",
+    testimonialAccountTypeUser: "Akaun pengguna",
+    testimonialAccountTypeBusiness: "Akaun perniagaan",
     testimonialLoginSubmit: "Log masuk",
     testimonialLoginSubmitting: "Melog masuk…",
     testimonialSwitchToLogin: "Sudah ada akaun? Log masuk",
@@ -1370,6 +1397,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       phone_invalid: "Masukkan nombor telefon yang sah, contohnya +60 12 345 6789",
       password_length: "Kata laluan mestilah sekurang-kurangnya 8 aksara",
       password_required: "Kata laluan diperlukan",
+      company_required: "Nama syarikat diperlukan",
+      title_required: "Jawatan diperlukan",
       email_taken: "E-mel itu sudah mempunyai akaun — cuba log masuk sebaliknya.",
       invalid_credentials: "E-mel atau kata laluan tidak betul.",
       rate_limited: "Terlalu banyak percubaan — sila tunggu beberapa minit dan cuba lagi.",
@@ -1416,6 +1445,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       listing_not_found: "Penyenaraian ini tidak lagi tersedia.",
       not_signed_in: "Log masuk dahulu, kemudian tulis testimoni anda.",
       already_submitted: "Anda sudah menilai perniagaan ini.",
+      own_listing: "Anda tidak boleh menulis testimoni untuk perniagaan anda sendiri.",
       invalid_submission: "Sila semak borang dan cuba lagi.",
       generic: "Berlaku ralat. Sila cuba lagi.",
     },

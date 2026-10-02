@@ -140,3 +140,34 @@ export async function requireVisitorAction() {
   }
   return user;
 }
+
+// Same shape as getVerifiedVisitorOrNull above, but for the write-a-
+// testimonial dialog's "already signed in" check specifically — a VISITOR
+// account exists solely to write testimonials, but a PARTNER (a business
+// owner logged into business-portal on this same browser, since both share
+// one session cookie — see session.ts) is just as much a real, already-
+// authenticated person, and shouldn't be asked to sign up again just
+// because this dialog historically only recognized one of the two account
+// types testimonials can come from. ADMIN deliberately excluded — there's
+// no "write a testimonial as the directory operator" case this needs to
+// support.
+export async function getVerifiedTestimonialAuthorOrNull() {
+  const session = await getSessionPayload();
+  if (!session?.userId) return null;
+  const user = await db.user.findUnique({ where: { id: session.userId }, select: CURRENT_USER_SELECT });
+  if (!user || (user.role !== "VISITOR" && user.role !== "PARTNER")) return null;
+  return user;
+}
+
+// Same relationship to getVerifiedTestimonialAuthorOrNull as
+// requireVisitorAction has to getVerifiedVisitorOrNull — the testimonial-
+// submission Server Action's real gate, reached only if a direct call
+// bypasses the dialog UI (which never renders the submit form without a
+// recognized session already).
+export async function requireTestimonialAuthorAction() {
+  const user = await getCurrentUser();
+  if (user.role !== "VISITOR" && user.role !== "PARTNER") {
+    throw new Error("Visitors or business accounts only.");
+  }
+  return user;
+}

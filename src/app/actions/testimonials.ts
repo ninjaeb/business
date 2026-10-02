@@ -4,7 +4,7 @@ import { headers } from "next/headers";
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { db } from "@/lib/db";
-import { requirePartnerAction, requireVisitorAction } from "@/lib/auth/dal";
+import { requirePartnerAction, requireTestimonialAuthorAction } from "@/lib/auth/dal";
 import { isRateLimited, isSuspiciouslyFast } from "@/lib/lead-spam-guard";
 import { firstHopValue } from "@/lib/site-url";
 import { revalidateDirectory } from "@/lib/directory-revalidate";
@@ -41,11 +41,12 @@ export type DirectoryTestimonialFormState =
   | { status: "error"; code: DirectoryTestimonialFormErrorCode }
   | undefined;
 
-// Requires a signed-in VISITOR account (see TestimonialAuthForm,
-// registerVisitor/loginVisitor in src/app/actions/visitor-auth.ts) — the
-// dialog that renders this form (WriteTestimonialButton) never shows it
-// without one already, so requireVisitorAction throwing here means a direct
-// call bypassing that UI, not a real visitor's flow. Still honeypot/
+// Requires a signed-in VISITOR or PARTNER account (see TestimonialAuthForm,
+// registerVisitor/registerTestimonialAuthor/loginVisitor in
+// src/app/actions/visitor-auth.ts) — the dialog that renders this form
+// (WriteTestimonialButton) never shows it without one already, so
+// requireTestimonialAuthorAction throwing here means a direct call
+// bypassing that UI, not a real visitor's flow. Still honeypot/
 // render-timing/rate-limited the same as submitDirectoryLead in
 // src/app/actions/directory.ts, and shares that same in-memory per-IP
 // budget (see lead-spam-guard.ts's own comment on why that's fine): an
@@ -71,7 +72,7 @@ export async function submitDirectoryTestimonial(
     return { status: "error", code: "rate_limited" };
   }
 
-  const visitor = await requireVisitorAction();
+  const visitor = await requireTestimonialAuthorAction();
 
   const parsed = testimonialSchema.safeParse({
     slug: formData.get("slug"),
@@ -87,6 +88,12 @@ export async function submitDirectoryTestimonial(
   const listing = await db.partnerListing.findUnique({ where: { slug: parsed.data.slug } });
   if (!listing || !listing.publishedSnapshot) {
     return { status: "error", code: "listing_not_found" };
+  }
+  // Only reachable now that a PARTNER session can get this far at all (a
+  // VISITOR never owns a listing to begin with) — a business reviewing
+  // itself isn't a testimonial, it's self-promotion wearing one.
+  if (visitor.role === "PARTNER" && listing.partnerId === visitor.id) {
+    return { status: "error", code: "own_listing" };
   }
 
   const existing = await db.directoryTestimonial.findUnique({

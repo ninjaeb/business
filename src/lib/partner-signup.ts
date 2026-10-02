@@ -13,6 +13,12 @@ export type PartnerSignupInput = {
   email: string;
   companyName: string;
   phone?: string | null;
+  // Optional, unset by every existing caller (the main signup page/Google
+  // callback never collect it) — added for the testimonial dialog's
+  // "Business account" path (see registerTestimonialAuthor in
+  // src/app/actions/visitor-auth.ts), which does ask for it, same as the
+  // VISITOR path's own optional title/companyName.
+  title?: string | null;
 };
 
 async function createPartnerUserAndListing({
@@ -20,6 +26,7 @@ async function createPartnerUserAndListing({
   email,
   companyName,
   phone,
+  title,
   passwordHash,
 }: PartnerSignupInput & { passwordHash: string }) {
   const user = await db.user.create({
@@ -31,6 +38,7 @@ async function createPartnerUserAndListing({
       // with — collected once here so filling in the signup form's phone
       // field never has to be repeated on the profile page.
       phone: phone ? normalizePhone(phone) : null,
+      title: title ?? null,
       passwordHash,
       role: "PARTNER",
     },
