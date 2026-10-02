@@ -526,6 +526,31 @@ Segala-galanya yang lain akan berkembang dari situ: laman web untuk dirujuk oleh
     seoTitle: "SSM Business Registration in Malaysia: Step-by-Step Guide",
     seoDescription:
       "A step-by-step guide to registering a business in Malaysia with SSM: sole proprietorship vs Sdn Bhd, costs, documents, timelines, and what to do after.",
+    coverImage: {
+      file: "how-to-register-a-business-in-malaysia-ssm-cover.webp",
+      mimeType: "image/webp",
+      alt: "A Malaysian business owner reviewing registration paperwork at a desk with a laptop",
+      altTranslations: {
+        zh: "一位马来西亚企业主在办公桌前查看注册文件,身旁放着笔记本电脑",
+        ms: "Seorang pemilik perniagaan Malaysia menyemak dokumen pendaftaran di meja bersama komputer riba",
+      },
+    },
+    contentImages: {
+      bankAccount: {
+        file: "how-to-register-a-business-in-malaysia-ssm-bank-account.webp",
+        mimeType: "image/webp",
+        alt: "A business owner opening a business bank account with a bank officer",
+        altTranslations: {
+          zh: "一位企业主正在银行职员的协助下开设商业银行账户",
+          ms: "Seorang pemilik perniagaan membuka akaun bank perniagaan bersama pegawai bank",
+        },
+        after: "**Opening a business bank account** usually needs more than the registration certificate alone.",
+        afterTranslations: {
+          zh: "**开设商业银行账户**通常需要的不止是注册证书本身。",
+          ms: "**Membuka akaun bank perniagaan** biasanya memerlukan lebih daripada sekadar sijil pendaftaran sahaja.",
+        },
+      },
+    },
     excerpt:
       "A practical walkthrough for Malaysian business owners deciding between registering a sole proprietorship or partnership and incorporating a Sdn Bhd — what each path actually costs, requires, and protects you from. It also covers the post-registration steps people skip: opening a business bank account, displaying your registration number, and the separate local council and sector licenses that SSM registration alone doesn't cover.",
     body: `Every legal business in Malaysia — from a home bakery taking orders over WhatsApp to a five-person consultancy — has to pass through SSM (Suruhanjaya Syarikat Malaysia, the Companies Commission of Malaysia) before it can legally trade, issue a proper invoice, or open a business bank account. What trips up most first-time owners isn't the paperwork itself — it's not knowing which of two very different registration paths actually fits them, and finding out only afterward what each one does and doesn't give them. This guide walks through both paths from name search to post-registration housekeeping, and flags the parts of "being registered" that people routinely assume are covered when they aren't.
@@ -949,6 +974,32 @@ Satu nota terakhir yang terpakai kepada semua perkara di atas: borang, yuran, da
     seoTitle: "Business Licenses and Permits in Malaysia: A Guide",
     seoDescription:
       "A practical guide to the business premise license, signboard license, Bomba approval, and sector-specific permits you need before opening in Malaysia.",
+    coverImage: {
+      file: "business-licenses-and-permits-in-malaysia-cover.webp",
+      mimeType: "image/webp",
+      alt: "A proud Malaysian small business owner holding a business license certificate in front of their shopfront",
+      altTranslations: {
+        zh: "一位自豪的马来西亚小企业主在店门前拿着营业执照",
+        ms: "Seorang pemilik perniagaan kecil Malaysia yang bangga memegang sijil lesen perniagaan di hadapan kedainya",
+      },
+    },
+    contentImages: {
+      signboard: {
+        file: "business-licenses-and-permits-in-malaysia-signboard.webp",
+        mimeType: "image/webp",
+        alt: "A worker installing a signboard above a small shop storefront",
+        altTranslations: {
+          zh: "一名工人正在小商店门面上方安装招牌",
+          ms: "Seorang pekerja memasang papan tanda di atas sebuah kedai kecil",
+        },
+        after:
+          "Any exterior signage — your main shopfront sign, a lightbox, a hanging sign, banners — needs its own license from the same local council: the lesen papan tanda, or lesen iklan.",
+        afterTranslations: {
+          zh: "任何外部招牌——无论是正门招牌、灯箱、悬挂式招牌还是横幅——都需要向同一个地方议会单独申请执照,即 lesen papan tanda 或 lesen iklan。",
+          ms: "Sebarang papan tanda luaran — papan tanda utama kedai anda, lightbox, papan tanda tergantung, sepanduk — memerlukan lesennya sendiri daripada majlis tempatan yang sama: lesen papan tanda, atau lesen iklan.",
+        },
+      },
+    },
     excerpt:
       "Once your business is registered with SSM, a separate stack of approvals decides whether you can actually open the doors — the local council's premise and signboard licenses, Bomba's fire safety sign-off, and whatever certification your sector requires on top. This guide walks through what a typical Malaysian business needs, in the order that actually works, plus the delays and costs to realistically expect along the way.",
     body: `Registering your business with SSM gets you a certificate and a legal identity. It doesn't get you permission to actually open your doors. That permission comes from a separate, and much less talked about, stack of licenses and approvals — issued mostly by your local council, with a few sector-specific regulators layered on top depending on what you do. This guide picks up where SSM registration leaves off: once your business is registered and you're ready to find and fit out a physical premises, here's what you still need before you can legally trade.
