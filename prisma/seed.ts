@@ -1,5 +1,6 @@
 import "dotenv/config";
 import { db } from "../src/lib/db";
+import { GUIDES } from "./guides-seed";
 
 // A curated, fixed starter vocabulary for the partner listing picker — the
 // category list isn't admin-editable at all (only deletable, see
@@ -224,6 +225,59 @@ async function main() {
     update: {},
   });
   console.log("Ensured Settings singleton row exists.");
+
+  await seedGuides();
+}
+
+// Editorial content, not system vocabulary — unlike BUSINESS_CATEGORIES
+// above, a guide is only ever created here, never updated: once its slug
+// exists, further edits/unpublishing are the admin UI's job. This is what
+// lets new guides go live the ordinary way (append to guides-seed.ts, push,
+// deploy) without a direct production DB connection or an admin session.
+//
+// No regenerateSitemapFile()/notifyIndexNow() call here, unlike
+// publishGuideAction — both live under src/lib, which (via directory-i18n.ts
+// and friends) pulls in the `server-only` package, and that throws
+// unconditionally outside Next's own module resolution, which this plain
+// tsx/Prisma-CLI script doesn't have. The sitemap doesn't need it anyway:
+// instrumentation.ts already regenerates public/sitemap.xml (DirectoryGuide
+// rows included) on every process boot, and runSeed() in deploy.ts runs
+// right before the restart that triggers exactly that boot. Only the
+// IndexNow ping is lost — new guides are still discovered on the next
+// regular sitemap crawl, just not instantly pinged.
+async function seedGuides() {
+  const newGuides = [];
+  for (const guide of GUIDES) {
+    const existing = await db.directoryGuide.findUnique({ where: { slug: guide.slug }, select: { id: true } });
+    if (!existing) newGuides.push(guide);
+  }
+  if (newGuides.length === 0) {
+    console.log("No new guides to seed.");
+    return;
+  }
+
+  const author = await db.user.findFirst({ where: { role: "ADMIN" }, orderBy: { createdAt: "asc" } });
+  if (!author) {
+    console.log(`Skipping ${newGuides.length} new guide(s) — no ADMIN account exists yet to attribute them to.`);
+    return;
+  }
+
+  for (const guide of newGuides) {
+    await db.directoryGuide.create({
+      data: {
+        slug: guide.slug,
+        title: guide.title,
+        excerpt: guide.excerpt,
+        body: guide.body,
+        seoTitle: guide.seoTitle,
+        seoDescription: guide.seoDescription,
+        status: "PUBLISHED",
+        publishedAt: new Date(),
+        authorId: author.id,
+      },
+    });
+    console.log(`Published guide: ${guide.title}`);
+  }
 }
 
 main()

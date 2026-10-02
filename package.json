@@ -9,7 +9,6 @@
     "start:cpanel": "NODE_ENV=production node server.js",
     "lint": "eslint",
     "create-admin": "tsx scripts/create-admin.ts",
-    "seed-guide": "tsx scripts/seed-get-found-online-guide.ts",
     "deploy": "tsx scripts/deploy.ts"
   },
   "dependencies": {

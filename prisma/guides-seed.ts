@@ -1,23 +1,26 @@
-import "dotenv/config";
-import { db } from "../src/lib/db";
-import { regenerateSitemapFile } from "../src/lib/sitemap-generator";
-import { directoryGuideUrls, directoryGuidesIndexUrls, notifyIndexNow } from "../src/lib/indexnow";
+export type GuideSeed = {
+  slug: string;
+  title: string;
+  excerpt: string;
+  body: string;
+  seoTitle?: string;
+  seoDescription?: string;
+};
 
-// One-off seed for the directory's first guide (requested directly, no
-// admin account available in this session to publish it through the real
-// /admin/guides UI — see createGuideAction/updateGuideAction/
-// publishGuideAction in src/app/actions/directory-guides.ts, which this
-// mirrors by hand: create-or-update by slug, then the same PUBLISHED +
-// sitemap + IndexNow steps publishGuideAction itself takes). Run once,
-// on whichever host's DATABASE_URL is the real one — npm run seed-guide
-// (see package.json) or `tsx scripts/seed-get-found-online-guide.ts`
-// directly. Safe to re-run: upserts by slug rather than always inserting.
-const SLUG = "get-your-business-found-online-malaysia";
-const TITLE = "How to Get Your Business Found Online in Malaysia";
-const EXCERPT =
-  "A practical order of operations for Malaysian business owners: Google Business Profile, a real website, directory listings, consistent contact details, reviews, and WhatsApp — the channels people actually use to find and vet a business here, done in the sequence that pays off fastest.";
-
-const BODY = `"Being online" and "being findable" are not the same thing. A Facebook page nobody can search for, or a website with no listing anywhere else pointing at it, is online — it just isn't findable by someone who doesn't already know your business exists. This guide covers the handful of things that actually move a business from invisible to findable, roughly in the order they pay off.
+// Each entry here is created once, the first time its slug doesn't already
+// exist in DirectoryGuide (see seedGuides() in seed.ts) — appending to this
+// array is how new guides go live: push a commit, the next deploy's seed
+// run creates it. Once a slug exists, the seed never touches that row again
+// (no update-on-every-run, unlike BUSINESS_CATEGORIES above) — editing or
+// unpublishing an already-seeded guide from here on is the admin UI's job,
+// not this file's.
+export const GUIDES: GuideSeed[] = [
+  {
+    slug: "get-your-business-found-online-malaysia",
+    title: "How to Get Your Business Found Online in Malaysia",
+    excerpt:
+      "A practical order of operations for Malaysian business owners: Google Business Profile, a real website, directory listings, consistent contact details, reviews, and WhatsApp — the channels people actually use to find and vet a business here, done in the sequence that pays off fastest.",
+    body: `"Being online" and "being findable" are not the same thing. A Facebook page nobody can search for, or a website with no listing anywhere else pointing at it, is online — it just isn't findable by someone who doesn't already know your business exists. This guide covers the handful of things that actually move a business from invisible to findable, roughly in the order they pay off.
 
 ## 1. Claim your Google Business Profile first
 
@@ -71,44 +74,6 @@ Set up a WhatsApp Business account (free, separate from WhatsApp Business Platfo
 
 ## Where to start this week
 
-If none of this exists yet, start with the Google Business Profile — it's free, it's fast, and it's the one most people check first. Then build or finish a website, however simple. Everything else compounds from there: a website to point directory listings at, directory listings to build the consistency search engines reward, and reviews and WhatsApp to turn that visibility into actual conversations with customers.`;
-
-async function main() {
-  const author = await db.user.findFirst({ where: { role: "ADMIN" }, orderBy: { createdAt: "asc" } });
-  if (!author) {
-    console.error("No ADMIN account exists to attribute this guide to — create one first (npm run create-admin).");
-    process.exit(1);
-  }
-
-  const existing = await db.directoryGuide.findUnique({ where: { slug: SLUG }, select: { id: true } });
-  const guide = existing
-    ? await db.directoryGuide.update({
-        where: { slug: SLUG },
-        data: { title: TITLE, excerpt: EXCERPT, body: BODY, status: "PUBLISHED", publishedAt: new Date() },
-      })
-    : await db.directoryGuide.create({
-        data: {
-          slug: SLUG,
-          title: TITLE,
-          excerpt: EXCERPT,
-          body: BODY,
-          status: "PUBLISHED",
-          publishedAt: new Date(),
-          authorId: author.id,
-        },
-      });
-
-  await regenerateSitemapFile();
-  await notifyIndexNow([...directoryGuideUrls(guide.slug), ...directoryGuidesIndexUrls()]);
-
-  console.log(`${existing ? "Updated" : "Created"} and published: ${guide.title}`);
-  console.log(`Slug: ${guide.slug}`);
-  console.log(`Author: ${author.name} <${author.email}>`);
-}
-
-main()
-  .then(() => process.exit(0))
-  .catch((error) => {
-    console.error(error);
-    process.exit(1);
-  });
+If none of this exists yet, start with the Google Business Profile — it's free, it's fast, and it's the one most people check first. Then build or finish a website, however simple. Everything else compounds from there: a website to point directory listings at, directory listings to build the consistency search engines reward, and reviews and WhatsApp to turn that visibility into actual conversations with customers.`,
+  },
+];
