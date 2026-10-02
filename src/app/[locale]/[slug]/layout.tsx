@@ -136,11 +136,19 @@ function TestimonialRatingBadge({
   );
 }
 
-// Picks which rating badge (if either) the header shows — Google's own
-// rating when the listing has one, this listing's own testimonials
-// otherwise. Mirrors buildJsonLd's own aggregateRating precedence exactly,
-// so the one number a visitor sees here always matches the one a search
-// engine reads out of this page's structured data.
+// Shows both rating badges side by side when the listing has both a Google
+// rating and its own rated testimonials — each gets a small visible source
+// label here (unlike the single-badge case below, where the number's own
+// context makes the source obvious) so the two different figures never read
+// as the same rating shown twice. Falls back to whichever one exists alone,
+// or neither. Unlike the visible UI, buildJsonLd's own `aggregateRating`
+// still only ever reflects one source at a time (Google's, when present) —
+// blending two different rating pools into one aggregate isn't something a
+// visitor benefits from the way seeing both numbers here is, and risks
+// reading as inflated/manipulated structured data to a search engine. The
+// testimonial number shown here still has real backing in that same
+// markup, just as individual `review` entries rather than a second
+// `aggregateRating`.
 function RatingBadge({
   listing,
   testimonialRating,
@@ -154,7 +162,22 @@ function RatingBadge({
   googleRatingLabel: string;
   testimonialRatingLabel: string;
 }) {
-  if (listing.googleRating !== null) return <GoogleRatingBadge listing={listing} ratingLabel={googleRatingLabel} />;
+  const hasGoogleRating = listing.googleRating !== null;
+  if (hasGoogleRating && testimonialRating) {
+    return (
+      <>
+        <span className="inline-flex items-center gap-1.5">
+          <span className="text-xs text-slate-400 dark:text-slate-500">{googleRatingLabel}</span>
+          <GoogleRatingBadge listing={listing} ratingLabel={googleRatingLabel} />
+        </span>
+        <span className="inline-flex items-center gap-1.5">
+          <span className="text-xs text-slate-400 dark:text-slate-500">{testimonialRatingLabel}</span>
+          <TestimonialRatingBadge rating={testimonialRating} ratingLabel={testimonialRatingLabel} href={testimonialsHref} />
+        </span>
+      </>
+    );
+  }
+  if (hasGoogleRating) return <GoogleRatingBadge listing={listing} ratingLabel={googleRatingLabel} />;
   if (testimonialRating) {
     return <TestimonialRatingBadge rating={testimonialRating} ratingLabel={testimonialRatingLabel} href={testimonialsHref} />;
   }
