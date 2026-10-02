@@ -612,6 +612,13 @@ export type DirectoryGridListing = {
   state: string | null;
   country: string | null;
   logoUrl: string | null;
+  // The listing's first gallery photo (see PartnerListing.photoIds/
+  // DirectoryListingImage.gallery), if it has one — a real, cacheable path
+  // (see directoryImagePath), same reasoning as logoUrl above never
+  // inlining the stored image bytes themselves. null, not a placeholder
+  // image, when the listing has no gallery photos yet; the card itself
+  // decides what to show instead.
+  coverPhotoUrl: string | null;
   // Same provenance as PublishedListingSnapshot's own googleRating —
   // shown as a small star rating on the card. No googleMapsUrl here: the
   // whole card is already a Link to the listing's own page, where that
@@ -869,6 +876,7 @@ export function toDirectoryGridListing(
     state: listing.state,
     country: listing.country,
     logoUrl: listing.logoUrl ? listingLogoPath(slug, publishedAt) : null,
+    coverPhotoUrl: listing.photos[0] ? directoryImagePath(listing.photos[0].id) : null,
     googleRating: listing.googleRating,
     googleRatingCount: listing.googleRatingCount,
     viewsLabel: formatViewsLabel(viewCount, locale),
