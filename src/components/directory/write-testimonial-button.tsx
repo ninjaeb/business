@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { X } from "lucide-react";
 import { TestimonialForm } from "@/components/directory/testimonial-form";
 import { TestimonialAuthForm } from "@/components/directory/testimonial-auth-form";
@@ -18,6 +19,15 @@ type ExistingTestimonial = { status: "PENDING" | "APPROVED" | "REJECTED"; review
 // backdrop-click-to-close — a half-written testimonial, or a half-filled
 // sign-up form, is exactly the kind of state a stray click outside the box
 // shouldn't silently discard).
+//
+// Portaled straight to document.body rather than rendered in place: this
+// button lives inside the listing header's `isolate` wrapper (ListingLayout),
+// which creates its own stacking context — a plain `fixed inset-0 z-50`
+// backdrop rendered as a descendant of that wrapper only out-ranks siblings
+// *within* it, not the page's later, independently-stacked "Get in touch"
+// sidebar card (sticky, so very visibly on top once in view). Rendering
+// outside the whole tree sidesteps that instead of touching `isolate`, which
+// the header's own gradient/badge layering depends on.
 //
 // Three states inside the dialog, decided by visitor/existingTestimonial
 // (both computed server-side by the caller — see getVerifiedVisitorOrNull/
@@ -89,57 +99,59 @@ export function WriteTestimonialButton({
       <button type="button" onClick={() => setOpen(true)} className={buttonClasses(variant, "md", className)}>
         {t.testimonialFormHeading}
       </button>
-      {open && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
-          role="dialog"
-          aria-modal="true"
-          aria-label={t.testimonialFormHeading}
-        >
-          {/* max-h-[95vh]/overflow-y-auto — the photo picker's previews (and
-              the taller testimonial textarea below) can push this past a
-              phone viewport's height, unlike the fixed-height crop tool
-              LogoCropDialog sizes itself around. */}
-          <div className="relative max-h-[95vh] w-full max-w-xl overflow-y-auto rounded-2xl bg-white p-5 shadow-2xl dark:bg-neutral-900">
-            <button
-              type="button"
-              onClick={() => setOpen(false)}
-              aria-label="Close"
-              className="absolute right-3 top-3 rounded-full p-1 text-slate-400 hover:bg-slate-100 hover:text-slate-600 dark:hover:bg-neutral-800 dark:hover:text-slate-300"
-            >
-              <X className="h-4 w-4" />
-            </button>
-            {!localVisitor ? (
-              <TestimonialAuthForm
-                locale={locale}
-                googleClientId={googleClientId}
-                onAuthenticated={(name) => setLocalVisitor({ name })}
-              />
-            ) : alreadySubmittedMessage ? (
-              <div className="space-y-2">
-                <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">
-                  {t.testimonialAlreadySubmittedTitle}
-                </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300">{alreadySubmittedMessage}</p>
-                {existingTestimonial?.status === "REJECTED" && existingTestimonial.reviewNote && (
-                  <p className="rounded-xl bg-slate-50 p-3 text-sm text-slate-600 dark:bg-neutral-800 dark:text-slate-300">
-                    {existingTestimonial.reviewNote}
-                  </p>
-                )}
-              </div>
-            ) : (
-              <TestimonialForm
-                slug={slug}
-                locale={locale}
-                aiAvailable={aiAvailable}
-                googleReviewUrl={googleReviewUrl}
-                visitorName={localVisitor.name}
-                onLogout={() => setLocalVisitor(null)}
-              />
-            )}
-          </div>
-        </div>
-      )}
+      {open &&
+        createPortal(
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+            role="dialog"
+            aria-modal="true"
+            aria-label={t.testimonialFormHeading}
+          >
+            {/* max-h-[95vh]/overflow-y-auto — the photo picker's previews
+                (and the taller testimonial textarea below) can push this
+                past a phone viewport's height, unlike the fixed-height crop
+                tool LogoCropDialog sizes itself around. */}
+            <div className="relative max-h-[95vh] w-full max-w-xl overflow-y-auto rounded-2xl bg-white p-5 shadow-2xl dark:bg-neutral-900">
+              <button
+                type="button"
+                onClick={() => setOpen(false)}
+                aria-label="Close"
+                className="absolute right-3 top-3 rounded-full p-1 text-slate-400 hover:bg-slate-100 hover:text-slate-600 dark:hover:bg-neutral-800 dark:hover:text-slate-300"
+              >
+                <X className="h-4 w-4" />
+              </button>
+              {!localVisitor ? (
+                <TestimonialAuthForm
+                  locale={locale}
+                  googleClientId={googleClientId}
+                  onAuthenticated={(name) => setLocalVisitor({ name })}
+                />
+              ) : alreadySubmittedMessage ? (
+                <div className="space-y-2">
+                  <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">
+                    {t.testimonialAlreadySubmittedTitle}
+                  </h3>
+                  <p className="text-sm text-slate-600 dark:text-slate-300">{alreadySubmittedMessage}</p>
+                  {existingTestimonial?.status === "REJECTED" && existingTestimonial.reviewNote && (
+                    <p className="rounded-xl bg-slate-50 p-3 text-sm text-slate-600 dark:bg-neutral-800 dark:text-slate-300">
+                      {existingTestimonial.reviewNote}
+                    </p>
+                  )}
+                </div>
+              ) : (
+                <TestimonialForm
+                  slug={slug}
+                  locale={locale}
+                  aiAvailable={aiAvailable}
+                  googleReviewUrl={googleReviewUrl}
+                  visitorName={localVisitor.name}
+                  onLogout={() => setLocalVisitor(null)}
+                />
+              )}
+            </div>
+          </div>,
+          document.body,
+        )}
     </>
   );
 }
