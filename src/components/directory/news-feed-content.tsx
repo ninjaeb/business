@@ -120,7 +120,12 @@ export async function NewsFeedContent({ locale }: { locale: DirectoryLocale }) {
                     <CardBody className="space-y-2">
                       <div className="flex items-center gap-2">
                         <ListingLogo name={entry.companyName} logoUrl={entry.logoUrl} size={28} loading="lazy" className="h-7 w-7 text-xs" />
-                        <span className="truncate text-xs font-medium text-slate-500 dark:text-slate-400">{entry.companyName}</span>
+                        {/* min-w-0: a flex item's default min-width is its content's
+                            un-wrapped size, which for a long company name can exceed
+                            the row's available width and push the whole card (and
+                            page) wider than the viewport on mobile — min-w-0 lets it
+                            shrink so `truncate` actually has room to take effect. */}
+                        <span className="min-w-0 truncate text-xs font-medium text-slate-500 dark:text-slate-400">{entry.companyName}</span>
                       </div>
                       <div className="flex flex-wrap items-center gap-2">
                         <Badge

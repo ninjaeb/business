@@ -87,7 +87,13 @@ export async function LocationsIndexContent({ locale }: { locale: DirectoryLocal
             <EmptyState icon={MapPin} title={t.locationsIndexEmptyTitle} description={t.locationsIndexEmptyDescription} />
           </div>
         ) : (
-          <ul className="mt-6 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+          /* grid-cols-1 explicit, not just the implied single column below
+             sm: an explicit track is sized minmax(0, 1fr) (bounded to the
+             container), where an implicit "auto" track sizes itself off its
+             widest item's own content instead — which, for a long
+             city/state label, can blow the whole row wider than the
+             viewport on mobile. */
+          <ul className="mt-6 grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
             {locations.map(({ city, state, country, count }) => {
               const label = locationLabel(city, state);
               return (
