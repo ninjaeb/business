@@ -34,7 +34,9 @@ export async function GuidesIndexContent({ locale }: { locale: DirectoryLocale }
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildBreadcrumbJsonLd(breadcrumbItems) }} />
       <div className="mx-auto w-full max-w-3xl px-4 py-8 sm:px-8">
         <DirectoryBreadcrumbs items={breadcrumbItems} navLabel={t.breadcrumbNavLabel} />
-        <h1 className="mt-3 text-2xl font-semibold text-slate-900 dark:text-slate-100">{t.guidesIndexHeading}</h1>
+        <h1 className="mt-3 text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl dark:text-slate-100">
+          {t.guidesIndexHeading}
+        </h1>
         <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{t.guidesIndexDescription}</p>
 
         {guides.length === 0 ? (
