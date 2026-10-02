@@ -481,6 +481,12 @@ export type DirectoryStrings = {
   // instead of googleRatingLabel's badge when the listing has no Google
   // rating of its own but does have APPROVED testimonials.
   testimonialRatingLabel: string;
+  // Label (aria and, like googleRatingLabel/testimonialRatingLabel in the
+  // both-exist case, a small visible prefix too — see OverallRatingBadge)
+  // for the combined Google+testimonial figure RatingBadge shows when a
+  // listing has both — a weighted average of the two, not either one
+  // alone, so it needs its own label distinct from both.
+  overallRatingLabel: string;
   // The listing page's "Recommend" affordances, open to every visitor —
   // the header button, and the sticky bottom-bar button (see the listing
   // layout's own nav). Both share one referral-tracking link (?r=<referral
@@ -805,6 +811,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     locationLabel: "Location",
     googleRatingLabel: "Google rating",
     testimonialRatingLabel: "Testimonial rating",
+    overallRatingLabel: "Overall rating",
     recommendLabel: "Recommend Business",
     recommendMessage: "I recommend {business} — check them out on the Business Directory: {url}",
     shareLabel: "Share Business",
@@ -1086,6 +1093,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     locationLabel: "地点",
     googleRatingLabel: "Google 评分",
     testimonialRatingLabel: "客户评分",
+    overallRatingLabel: "综合评分",
     contactHeading: "联系我们",
     contactSubheading: "直接给这家企业发送信息——他们会回复您提供的电子邮件地址和联系电话。",
     contactCallCta: "致电",
@@ -1361,6 +1369,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     locationLabel: "Lokasi",
     googleRatingLabel: "Penilaian Google",
     testimonialRatingLabel: "Penilaian testimoni",
+    overallRatingLabel: "Penilaian keseluruhan",
     contactHeading: "Hubungi kami",
     contactSubheading: "Hantar mesej terus kepada perniagaan ini — mereka akan membalas ke alamat e-mel dan nombor telefon yang anda berikan.",
     contactCallCta: "Hubungi",

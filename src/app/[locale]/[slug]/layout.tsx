@@ -108,6 +108,39 @@ function GoogleRatingBadge({ listing, ratingLabel }: { listing: ListingWithMeta;
   );
 }
 
+// Google's rating and this listing's own testimonial rating, combined into
+// one weighted average — every real review from both pools counted once,
+// weighted by its own pool's count, rather than naively averaging the two
+// pool averages (which would silently give a pool of 2 testimonials the
+// same say as a pool of 120 Google reviews). Returns null unless both
+// sources exist; with only one, that source's own badge below already is
+// the total, so there's nothing to combine.
+function combinedRating(
+  listing: ListingWithMeta,
+  testimonialRating: TestimonialRatingSummary | null,
+): TestimonialRatingSummary | null {
+  if (listing.googleRating === null || listing.googleRatingCount === null || !testimonialRating) return null;
+  const count = listing.googleRatingCount + testimonialRating.count;
+  const average =
+    (listing.googleRating * listing.googleRatingCount + testimonialRating.average * testimonialRating.count) / count;
+  return { average, count };
+}
+
+// The combined total above, rendered the same way GoogleRatingBadge/
+// TestimonialRatingBadge are — a plain, unlinked span (not Google Maps,
+// not the Testimonials tab) since it represents both sources at once, not
+// just one of them.
+function OverallRatingBadge({ rating, ratingLabel }: { rating: TestimonialRatingSummary; ratingLabel: string }) {
+  const label = `${ratingLabel}: ${rating.average.toFixed(1)} (${rating.count})`;
+  return (
+    <span aria-label={label} className="inline-flex items-center gap-1">
+      <StarRating rating={rating.average} size="h-4 w-4" />
+      <span className="font-semibold text-slate-700 dark:text-slate-200">{rating.average.toFixed(1)}</span>
+      <span>({rating.count})</span>
+    </span>
+  );
+}
+
 // The on-site counterpart of GoogleRatingBadge above, built from this
 // listing's own APPROVED testimonials (see getListingTestimonialRatingSummary)
 // rather than Google's — links to the Testimonials tab itself so the number
@@ -136,36 +169,41 @@ function TestimonialRatingBadge({
   );
 }
 
-// Shows both rating badges side by side when the listing has both a Google
-// rating and its own rated testimonials — each gets a small visible source
-// label here (unlike the single-badge case below, where the number's own
-// context makes the source obvious) so the two different figures never read
-// as the same rating shown twice. Falls back to whichever one exists alone,
-// or neither. Unlike the visible UI, buildJsonLd's own `aggregateRating`
-// still only ever reflects one source at a time (Google's, when present) —
-// blending two different rating pools into one aggregate isn't something a
-// visitor benefits from the way seeing both numbers here is, and risks
-// reading as inflated/manipulated structured data to a search engine. The
-// testimonial number shown here still has real backing in that same
-// markup, just as individual `review` entries rather than a second
-// `aggregateRating`.
+// Leads with the combined Overall figure (see combinedRating) when the
+// listing has both a Google rating and its own rated testimonials, then
+// shows each source behind it — every one of the three gets a small
+// visible label here (unlike the single-badge case below, where the
+// number's own context makes its source obvious) so none of the three
+// figures reads as any of the others shown twice. Falls back to whichever
+// single source exists alone, or neither, exactly as before. buildJsonLd's
+// own `aggregateRating` mirrors this exactly (see combinedRating's own
+// comment and buildJsonLd's call site) — the one figure a visitor sees
+// leading here is always the one a search engine reads out of this page's
+// structured data.
 function RatingBadge({
   listing,
   testimonialRating,
   testimonialsHref,
   googleRatingLabel,
   testimonialRatingLabel,
+  overallRatingLabel,
 }: {
   listing: ListingWithMeta;
   testimonialRating: TestimonialRatingSummary | null;
   testimonialsHref: string;
   googleRatingLabel: string;
   testimonialRatingLabel: string;
+  overallRatingLabel: string;
 }) {
   const hasGoogleRating = listing.googleRating !== null;
-  if (hasGoogleRating && testimonialRating) {
+  const overall = combinedRating(listing, testimonialRating);
+  if (hasGoogleRating && testimonialRating && overall) {
     return (
       <>
+        <span className="inline-flex items-center gap-1.5">
+          <span className="text-xs text-slate-400 dark:text-slate-500">{overallRatingLabel}</span>
+          <OverallRatingBadge rating={overall} ratingLabel={overallRatingLabel} />
+        </span>
         <span className="inline-flex items-center gap-1.5">
           <span className="text-xs text-slate-400 dark:text-slate-500">{googleRatingLabel}</span>
           <GoogleRatingBadge listing={listing} ratingLabel={googleRatingLabel} />
@@ -260,17 +298,24 @@ function buildJsonLd(
   if (listing.website) jsonLd.sameAs = [listing.website];
   if (listing.phone) jsonLd.telephone = listing.phone;
   // Google's own rating (see PartnerListing.googleRating's own comment in
-  // prisma/schema.prisma) — schema.org requires a ratingCount/reviewCount
-  // on an AggregateRating, so this only appears once both are present,
-  // never rating alone. Google Places already checks a rating has at least
-  // one review before it ever returns one, so ratingCount === 0 alongside
-  // a non-null rating isn't a real case to guard against here. Falls back to
-  // this listing's own APPROVED testimonials (see
-  // getListingTestimonialRatingSummary) when there's no Google rating at
-  // all — never both at once, since one `aggregateRating` can't honestly
-  // represent two different rating pools, and RatingBadge above shows a
-  // visitor the exact same number this picks.
-  if (listing.googleRating !== null && listing.googleRatingCount !== null) {
+  // prisma/schema.prisma), combined with this listing's own APPROVED
+  // testimonials (see combinedRating's own comment on the weighted-average
+  // math) into one AggregateRating whenever both exist — the same figure
+  // RatingBadge above leads with, so a visitor and a search engine always
+  // read the same number. schema.org requires a ratingCount/reviewCount on
+  // an AggregateRating, so Google's rating only counts here once both its
+  // fields are present; Google Places already checks a rating has at least
+  // one review before it ever returns one, so ratingCount === 0 alongside a
+  // non-null rating isn't a real case to guard against. Falls back to
+  // whichever single source exists when there's only one.
+  const overallRating = combinedRating(listing, testimonialRating);
+  if (overallRating) {
+    jsonLd.aggregateRating = {
+      "@type": "AggregateRating",
+      ratingValue: Math.round(overallRating.average * 10) / 10,
+      reviewCount: overallRating.count,
+    };
+  } else if (listing.googleRating !== null && listing.googleRatingCount !== null) {
     jsonLd.aggregateRating = {
       "@type": "AggregateRating",
       ratingValue: listing.googleRating,
@@ -581,6 +626,7 @@ export default async function ListingLayout({
                   testimonialsHref={directoryListingTestimonialsPath(resolved, slug)}
                   googleRatingLabel={t.googleRatingLabel}
                   testimonialRatingLabel={t.testimonialRatingLabel}
+                  overallRatingLabel={t.overallRatingLabel}
                 />
                 {listing.state ? (
                   <Link
@@ -741,6 +787,7 @@ export default async function ListingLayout({
                   testimonialsHref={directoryListingTestimonialsPath(resolved, slug)}
                   googleRatingLabel={t.googleRatingLabel}
                   testimonialRatingLabel={t.testimonialRatingLabel}
+                  overallRatingLabel={t.overallRatingLabel}
                 />
                 {listing.state ? (
                   <Link
