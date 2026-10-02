@@ -672,7 +672,7 @@ export default async function ListingLayout({
                           formatContactWhatsAppMessage(t.contactWhatsAppMessage, listing.companyName),
                         )}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="noopener noreferrer nofollow"
                         className={buttonClasses("secondary", "md", "min-h-12 flex-1 justify-center gap-2")}
                       >
                         <MessageCircle className="h-4 w-4" />

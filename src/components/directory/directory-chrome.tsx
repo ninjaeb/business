@@ -287,7 +287,7 @@ export async function DirectoryChrome({
                       key={profile.url}
                       href={profile.url}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener noreferrer nofollow"
                       aria-label={profile.label}
                       className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-slate-300 transition-colors hover:border-white/30 hover:text-white"
                     >
@@ -372,7 +372,7 @@ export async function DirectoryChrome({
                   </Link>
                 </li>
                 <li>
-                  <a href="https://gotka.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                  <a href="https://gotka.com" target="_blank" rel="noopener noreferrer nofollow" className="hover:text-white">
                     gotka.com
                   </a>
                 </li>

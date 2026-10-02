@@ -51,7 +51,7 @@ export function DirectoryLeadContactLinks({
         <a
           href={whatsAppUrl(phone, whatsAppMessage)}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer nofollow"
           onClick={markContacted}
           className="inline-flex items-center gap-1 hover:text-petrol dark:hover:text-petrol-light"
         >

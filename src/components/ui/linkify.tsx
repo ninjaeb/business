@@ -10,7 +10,7 @@ export function Linkify({ text, className }: { text: string; className?: string 
             key={i}
             href={part}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer nofollow"
             className="text-indigo-600 underline hover:text-indigo-500 dark:text-indigo-400"
           >
             {part}

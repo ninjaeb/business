@@ -115,7 +115,7 @@ export default async function VisitPage({
               <a
                 href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapAddress.replace(/\n/g, ", "))}`}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="flex items-start gap-2 text-base text-slate-600 hover:text-petrol hover:underline dark:text-slate-300 dark:hover:text-petrol-light"
               >
                 <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-slate-400" />
@@ -125,7 +125,7 @@ export default async function VisitPage({
                 <a
                   href={googleMapsDirectionsUrl(mapAddress)}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className={buttonClasses("secondary", "sm")}
                 >
                   <GoogleMapsIcon className="h-4 w-4" />
@@ -134,7 +134,7 @@ export default async function VisitPage({
                 <a
                   href={wazeDirectionsUrl(mapAddress)}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className={buttonClasses("secondary", "sm")}
                 >
                   <WazeIcon className="h-4 w-4" />

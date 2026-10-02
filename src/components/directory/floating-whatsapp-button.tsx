@@ -61,7 +61,7 @@ export function FloatingWhatsAppButton({ locale }: { locale: DirectoryLocale }) 
     <a
       href={whatsAppUrl(DIRECTORY_PUBLISHER.telephone, t.footerWhatsAppMessage)}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="noopener noreferrer nofollow"
       className="fixed right-6 bottom-6 z-40 flex items-center gap-2 rounded-full bg-led px-5 py-3 font-semibold text-led-ink shadow-lg transition-colors hover:bg-led-hover active:bg-led-active"
     >
       <MessageCircle className="h-5 w-5" />
