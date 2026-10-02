@@ -114,8 +114,27 @@ export function TestimonialAuthForm({
             src="https://accounts.google.com/gsi/client"
             strategy="afterInteractive"
             onLoad={() => setGoogleScriptLoaded(true)}
+            onError={() => setGoogleError(t.testimonialAuthErrors.google_failed)}
           />
-          <div ref={googleButtonRef} className="flex justify-center" />
+          {/* googleButtonRef's own div is left with no React children ever —
+              renderButton (the effect above) writes into it directly via
+              the DOM, outside React's reconciliation, and a React child
+              there would risk a reconciliation conflict the moment that
+              direct write and a later React re-render touch the same node.
+              The skeleton below is an absolutely-positioned sibling instead,
+              and min-h on the wrapper (Google's own "large" rectangular
+              button renders ~40px tall) reserves real layout space so a
+              slow or blocked accounts.google.com script leaves a visible,
+              obviously-loading placeholder here instead of an empty
+              0-height div that looks identical to "there's no Google option
+              at all" — the divider just below it would otherwise be the
+              only sign this block exists. */}
+          <div className="relative flex min-h-[40px] items-center justify-center">
+            <div ref={googleButtonRef} className="flex justify-center" />
+            {!googleScriptLoaded && !googleError && (
+              <div className="absolute inset-0 h-10 w-full max-w-[320px] animate-pulse rounded-md bg-slate-200 dark:bg-neutral-800" />
+            )}
+          </div>
           {googleError && <p className="text-sm text-rose-600 dark:text-rose-400">{googleError}</p>}
           <div className="flex items-center gap-3">
             <div className="h-px flex-1 bg-slate-200 dark:bg-neutral-800" />
