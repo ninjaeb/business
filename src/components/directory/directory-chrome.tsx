@@ -139,6 +139,17 @@ export async function DirectoryChrome({
     { href: directoryNewsPath(locale), label: t.updatesHeading },
     { href: directoryGuidesPath(locale), label: t.navGuides },
   ];
+  // The header's own nav row/hamburger — unlike topNavItems above (still
+  // used as-is for the footer's "Explore" column) — drops the Industries and
+  // Location links and repoints "All Business" out to gotka.com's own
+  // business section instead of this directory's own category index; the
+  // other three links keep their normal localized destinations.
+  const headerTopNavItems = [
+    { href: "https://business.gotka.com/en", label: t.navAllBusiness },
+    { href: directoryProductsPath(locale), label: t.navLatestProducts },
+    { href: directoryNewsPath(locale), label: t.updatesHeading },
+    { href: directoryGuidesPath(locale), label: t.navGuides },
+  ];
 
   return (
     <div className="flex min-h-full flex-col bg-slate-50 dark:bg-neutral-950">
@@ -201,7 +212,7 @@ export async function DirectoryChrome({
               to push the hamburger right once DirectoryTopNav collapses to
               `hidden` and contributes no box at all below lg. */}
           <div className="ml-auto flex shrink-0 items-center gap-3">
-            <DirectoryTopNav navLabel={t.topNavLabel} items={topNavItems} className="hidden lg:flex" />
+            <DirectoryTopNav navLabel={t.topNavLabel} items={headerTopNavItems} className="hidden lg:flex" />
             {/* Language + theme, inline from sm up (tablet and laptop/
                 desktop both have the room) — ahead of the hamburger, same
                 order they render in inside its dropdown below. Hidden below
@@ -221,7 +232,7 @@ export async function DirectoryChrome({
               myBusinessLabel={t.navMyBusiness}
               addBusinessLabel={t.navAddBusiness}
               businessNavItems={localizedBusinessNavItems(locale)}
-              topNavItems={topNavItems}
+              topNavItems={headerTopNavItems}
               languageSwitcher={<LocalizedLanguageSwitcher locale={locale} />}
               signOutLabel={t.navSignOut}
               directoryHref={directoryHref}
