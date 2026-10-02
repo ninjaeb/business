@@ -87,26 +87,20 @@ export function ListingCard({
     // card's own content instead of shrinking to fit the viewport.
     <Link href={directoryListingPath(locale, listing.slug)} className="block h-full min-w-0">
       <Card className="flex h-full flex-col overflow-hidden transition-colors hover:border-petrol/40 dark:hover:border-petrol-light/30">
-        {/* Cover photo — the listing's first gallery photo (see
-            coverPhotoUrl's own comment in directory.ts). A listing with no
-            gallery photos yet but a logo gets that logo blown up and
-            blurred as a backdrop, with the real logo sharp on top — an
-            album-art treatment that still looks like a deliberate image
-            rather than an empty box, using only what the listing already
-            has. A listing with neither falls back to a flat tinted block
-            with its initial-letter avatar. Either way every card in a grid
-            keeps the same shape instead of some being noticeably shorter. */}
+        {/* The listing's logo, blown up and blurred as a backdrop with the
+            real logo sharp on top, if it has one — an album-art treatment
+            that keeps every card anchored to the company's own brand mark
+            rather than whatever a gallery photo happens to show (a listing's
+            gallery is partner-uploaded and uncurated, so its first photo is
+            often not the listing's most recognizable image — the logo
+            always is). Only a listing with no logo at all falls back to its
+            first gallery photo (see coverPhotoUrl's own comment in
+            directory.ts), and a listing with neither falls back to a flat
+            tinted block with its initial-letter avatar. Either way every
+            card in a grid keeps the same shape instead of some being
+            noticeably shorter. */}
         <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden bg-led-soft dark:bg-led-soft-dark">
-          {listing.coverPhotoUrl ? (
-            // eslint-disable-next-line @next/next/no-img-element -- served straight out of the DB by /api/directory-images/[id], same reasoning as ListingLogo's own img tag
-            <img
-              src={listing.coverPhotoUrl}
-              alt=""
-              loading="lazy"
-              decoding="async"
-              className="h-full w-full object-cover"
-            />
-          ) : listing.logoUrl ? (
+          {listing.logoUrl ? (
             <div className="relative flex h-full w-full items-center justify-center">
               {/* aria-hidden + empty alt: purely decorative backdrop: the
                   sharp logo on top (next) is the one screen readers and
@@ -136,6 +130,15 @@ export function ListingCard({
                 className="relative h-[80%] w-[80%] object-contain drop-shadow-lg"
               />
             </div>
+          ) : listing.coverPhotoUrl ? (
+            // eslint-disable-next-line @next/next/no-img-element -- served straight out of the DB by /api/directory-images/[id], same reasoning as ListingLogo's own img tag
+            <img
+              src={listing.coverPhotoUrl}
+              alt=""
+              loading="lazy"
+              decoding="async"
+              className="h-full w-full object-cover"
+            />
           ) : (
             <div className="flex h-full w-full items-center justify-center">
               <ListingLogo name={listing.companyName} logoUrl={null} size={64} loading="lazy" className="h-16 w-16 text-xl" />
