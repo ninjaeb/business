@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BookOpen } from "lucide-react";
 import { getSiteOrigin } from "@/lib/site-url";
 import {
   DIRECTORY_STRINGS,
@@ -16,6 +17,7 @@ import { listPublishedGuidesByIndustry, resolveGuideDisplay } from "@/lib/direct
 import { renderMarkdownLite } from "@/lib/markdown-lite";
 import { formatDate } from "@/lib/format";
 import { Card, CardBody } from "@/components/ui/card";
+import { Eyebrow } from "@/components/ui/badge";
 import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
 import type { Industry } from "@/generated/prisma/client";
 
@@ -58,9 +60,23 @@ export async function GuideDetailContent({ guide, locale }: { guide: Guide; loca
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: buildGuideJsonLd({ ...guide, ...display }, siteOrigin, pageUrl) }}
       />
-      <div className="mx-auto w-full max-w-3xl px-4 py-8 sm:px-8">
+      <div className="mx-auto w-full max-w-5xl px-4 py-8 sm:px-8">
         <DirectoryBreadcrumbs items={breadcrumbItems} navLabel={t.breadcrumbNavLabel} />
-        <div className="mt-3 flex flex-wrap items-center gap-2">
+
+        <Eyebrow className="mt-4">
+          <BookOpen className="h-3.5 w-3.5" />
+          {t.guidesIndexHeading}
+        </Eyebrow>
+        <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl dark:text-slate-100">{display.title}</h1>
+        <p className="mt-3 text-base text-slate-600 dark:text-slate-300">{display.excerpt}</p>
+
+        <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-1 border-y border-slate-200 py-4 dark:border-neutral-800">
+          <Link
+            href={directoryAboutPath(locale)}
+            className="text-sm font-semibold text-slate-700 hover:text-petrol dark:text-slate-200 dark:hover:text-petrol-light"
+          >
+            {t.guideByLabel}
+          </Link>
           {guide.industry && (
             <span className="text-xs font-medium text-petrol dark:text-petrol-light">
               {INDUSTRY_LABELS_BY_LOCALE[locale][guide.industry]}
@@ -85,28 +101,20 @@ export async function GuideDetailContent({ guide, locale }: { guide: Guide; loca
             </span>
           )}
         </div>
-        <h1 className="mt-1 text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl dark:text-slate-100">{display.title}</h1>
-        <p className="mt-2 text-base text-slate-600 dark:text-slate-300">{display.excerpt}</p>
-        <Link
-          href={directoryAboutPath(locale)}
-          className="mt-1 inline-block text-xs text-slate-400 hover:text-petrol hover:underline dark:text-slate-500 dark:hover:text-petrol-light"
-        >
-          {t.guideByLabel}
-        </Link>
 
-        <div className="mt-6 text-base text-slate-600 dark:text-slate-300">
+        <div className="mt-8 text-base text-slate-600 dark:text-slate-300">
           {renderMarkdownLite(display.body, undefined, { zoomableImages: true })}
         </div>
 
         {relatedGuides.length > 0 && (
-          <div className="mt-10 border-t border-slate-200 pt-6 dark:border-neutral-800">
-            <h2 className="text-base font-semibold text-slate-900 dark:text-slate-100">{t.guideRelatedHeading}</h2>
-            <ul className="mt-3 space-y-2">
+          <div className="mt-12 border-t border-slate-200 pt-8 dark:border-neutral-800">
+            <h2 className="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">{t.guideRelatedHeading}</h2>
+            <ul className="mt-4 grid gap-4 sm:grid-cols-2">
               {relatedGuides.map((related) => (
                 <li key={related.id}>
-                  <Link href={directoryGuidePath(locale, related.slug)} className="block">
-                    <Card className="transition-colors hover:border-petrol/40 dark:hover:border-petrol-light/30">
-                      <CardBody className="space-y-1">
+                  <Link href={directoryGuidePath(locale, related.slug)} className="block h-full">
+                    <Card className="h-full transition-colors hover:border-petrol/40 dark:hover:border-petrol-light/30">
+                      <CardBody className="space-y-1.5">
                         <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-100">{related.title}</h3>
                         <p className="line-clamp-2 text-xs text-slate-500 dark:text-slate-400">{related.excerpt}</p>
                       </CardBody>
