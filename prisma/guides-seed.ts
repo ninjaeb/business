@@ -1,14 +1,26 @@
-export type GuideCoverImage = {
+export type GuideImage = {
   // File name under prisma/guide-images/, read and embedded as a
-  // DirectoryListingImage row at seed time (see attachCoverImage in
-  // seed.ts) — same base64-in-Postgres storage and /api/directory-images/*
-  // serving every other image in this app uses, so no next.config.ts/CSP
-  // change is needed. Pre-optimize it yourself (see
-  // src/lib/image-optimize.ts's optimizeImageForWeb, GALLERY_PHOTO_MAX_DIMENSION)
-  // before dropping it in this folder — seed.ts stores the file as-is.
+  // DirectoryListingImage row at seed time (see seed.ts) — same
+  // base64-in-Postgres storage and /api/directory-images/* serving every
+  // other image in this app uses, so no next.config.ts/CSP change is
+  // needed. Pre-optimize it yourself (see src/lib/image-optimize.ts's
+  // optimizeImageForWeb, GALLERY_PHOTO_MAX_DIMENSION) before dropping it in
+  // this folder — seed.ts stores the file as-is.
   file: string;
   mimeType: string;
   alt: string;
+};
+
+export type GuideContentImage = GuideImage & {
+  // Exact text the image is inserted right after, as its own paragraph —
+  // must appear exactly once in `body`. Matched against whatever text is
+  // actually stored at seed time rather than a placeholder planted in
+  // `body` itself, so this also works as a backfill for a guide published
+  // before this image existed: it finds the same prose it would have been
+  // written against originally. If the surrounding text is later edited
+  // through the admin UI such that `after` no longer matches, seed.ts logs
+  // that and skips rather than failing the deploy over it.
+  after: string;
 };
 
 export type GuideSeed = {
@@ -18,7 +30,10 @@ export type GuideSeed = {
   body: string;
   seoTitle?: string;
   seoDescription?: string;
-  coverImage?: GuideCoverImage;
+  coverImage?: GuideImage;
+  // Inline images placed further down in the body, keyed by a short name
+  // (see GuideContentImage's `after` field for how placement works).
+  contentImages?: Record<string, GuideContentImage>;
 };
 
 // Each entry here is created once, the first time its slug doesn't already
@@ -27,10 +42,10 @@ export type GuideSeed = {
 // run creates it. Once a slug exists, the seed never touches its text again
 // (no update-on-every-run, unlike BUSINESS_CATEGORIES above) — editing or
 // unpublishing an already-seeded guide from here on is the admin UI's job,
-// not this file's. coverImage is the one exception: seed.ts attaches it
-// whenever a guide (new or already-seeded) doesn't have one yet, so it also
-// works as a one-time backfill for a guide that went live before it had a
-// cover image of its own.
+// not this file's. coverImage/contentImages are the one exception: seed.ts
+// keeps attaching whichever of them a guide (new or already-seeded) doesn't
+// have yet, so they also work as a one-time backfill for a guide that went
+// live before it had them.
 export const GUIDES: GuideSeed[] = [
   {
     slug: "get-your-business-found-online-malaysia",
@@ -39,6 +54,15 @@ export const GUIDES: GuideSeed[] = [
       file: "get-your-business-found-online-malaysia-cover.webp",
       mimeType: "image/webp",
       alt: "A confident small business owner standing in her shop",
+    },
+    contentImages: {
+      whatsapp: {
+        file: "get-your-business-found-online-malaysia-whatsapp.webp",
+        mimeType: "image/webp",
+        alt: "A business owner smiling while checking messages on his phone",
+        after:
+          "Set up a WhatsApp Business account (free, separate from WhatsApp Business Platform/API used for automated notifications), fill in your business profile, and use it as the number you put on your website and listings alongside your regular phone number.",
+      },
     },
     excerpt:
       "A practical order of operations for Malaysian business owners: Google Business Profile, a real website, directory listings, consistent contact details, reviews, and WhatsApp — the channels people actually use to find and vet a business here, done in the sequence that pays off fastest.",

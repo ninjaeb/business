@@ -2,7 +2,7 @@ import "dotenv/config";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { db } from "../src/lib/db";
-import { GUIDES } from "./guides-seed";
+import { GUIDES, type GuideImage, type GuideContentImage } from "./guides-seed";
 
 // A curated, fixed starter vocabulary for the partner listing picker — the
 // category list isn't admin-editable at all (only deletable, see
@@ -279,7 +279,10 @@ async function seedGuides() {
       console.log(`Published guide: ${guide.title}`);
     }
 
-    if (guide.coverImage) await attachCoverImage(record, guide.coverImage, guide.title);
+    if (guide.coverImage) record.body = await attachCoverImage(record.id, record.body, guide.coverImage, guide.title);
+    if (guide.contentImages) {
+      record.body = await attachContentImages(record.id, record.body, guide.contentImages, guide.title);
+    }
   }
 }
 
@@ -290,25 +293,65 @@ async function seedGuides() {
 // row, the same storage and /api/directory-images/{id} route every other
 // image in this app already uses, so no next.config.ts/CSP change is
 // needed. The file itself is pre-optimized (see guides-seed.ts's own
-// comment) and just read straight off disk here.
-async function attachCoverImage(
-  guide: { id: string; body: string },
-  coverImage: { file: string; mimeType: string; alt: string },
-  guideTitle: string,
-) {
-  const hasImage = await db.directoryListingImage.findFirst({ where: { guideId: guide.id }, select: { id: true } });
-  if (hasImage) return;
+// comment) and just read straight off disk here. Returns the guide's new
+// body so a later step (attachContentImages) keeps working off the current
+// text instead of the stale copy read before this ran.
+async function attachCoverImage(guideId: string, body: string, coverImage: GuideImage, guideTitle: string): Promise<string> {
+  const hasImage = await db.directoryListingImage.findFirst({ where: { guideId }, select: { id: true } });
+  if (hasImage) return body;
 
   const bytes = readFileSync(path.join(__dirname, "guide-images", coverImage.file));
   const image = await db.directoryListingImage.create({
-    data: { mimeType: coverImage.mimeType, data: bytes.toString("base64"), guideId: guide.id },
+    data: { mimeType: coverImage.mimeType, data: bytes.toString("base64"), guideId },
     select: { id: true },
   });
-  await db.directoryGuide.update({
-    where: { id: guide.id },
-    data: { body: `![${coverImage.alt}](/api/directory-images/${image.id})\n\n${guide.body}` },
-  });
+  const nextBody = `![${coverImage.alt}](/api/directory-images/${image.id})\n\n${body}`;
+  await db.directoryGuide.update({ where: { id: guideId }, data: { body: nextBody } });
   console.log(`Attached cover image to guide: ${guideTitle}`);
+  return nextBody;
+}
+
+// Inserts each image right after its `after` anchor text (see
+// GuideContentImage's own comment) as its own paragraph. Idempotency is
+// checked via whether that exact `![alt](` markdown is already in `body` —
+// not a DirectoryListingImage lookup, since a guide can have several
+// content images and "any image exists" wouldn't say which ones are
+// already placed. A missing anchor (prose edited since) is logged and
+// skipped rather than failing the whole deploy over one image.
+async function attachContentImages(
+  guideId: string,
+  body: string,
+  images: Record<string, GuideContentImage>,
+  guideTitle: string,
+): Promise<string> {
+  let nextBody = body;
+  let attachedAny = false;
+
+  for (const [key, img] of Object.entries(images)) {
+    const marker = `![${img.alt}](`;
+    if (nextBody.includes(marker)) continue;
+
+    const anchorIndex = nextBody.indexOf(img.after);
+    if (anchorIndex === -1) {
+      console.log(`Could not place content image "${key}" on guide "${guideTitle}" — anchor text not found in its current body.`);
+      continue;
+    }
+    const insertAt = anchorIndex + img.after.length;
+
+    const bytes = readFileSync(path.join(__dirname, "guide-images", img.file));
+    const image = await db.directoryListingImage.create({
+      data: { mimeType: img.mimeType, data: bytes.toString("base64"), guideId },
+      select: { id: true },
+    });
+    nextBody = `${nextBody.slice(0, insertAt)}\n\n![${img.alt}](/api/directory-images/${image.id})${nextBody.slice(insertAt)}`;
+    attachedAny = true;
+  }
+
+  if (attachedAny) {
+    await db.directoryGuide.update({ where: { id: guideId }, data: { body: nextBody } });
+    console.log(`Attached content image(s) to guide: ${guideTitle}`);
+  }
+  return nextBody;
 }
 
 main()
