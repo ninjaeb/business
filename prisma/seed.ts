@@ -1,6 +1,8 @@
 import "dotenv/config";
+import { readFileSync } from "node:fs";
+import path from "node:path";
 import { db } from "../src/lib/db";
-import { GUIDES } from "./guides-seed";
+import { GUIDES, type GuideImage, type GuideContentImage } from "./guides-seed";
 
 // A curated, fixed starter vocabulary for the partner listing picker — the
 // category list isn't admin-editable at all (only deletable, see
@@ -230,10 +232,13 @@ async function main() {
 }
 
 // Editorial content, not system vocabulary — unlike BUSINESS_CATEGORIES
-// above, a guide is only ever created here, never updated: once its slug
-// exists, further edits/unpublishing are the admin UI's job. This is what
-// lets new guides go live the ordinary way (append to guides-seed.ts, push,
-// deploy) without a direct production DB connection or an admin session.
+// above, a guide's own title/excerpt/body/seo fields are only ever written
+// here once: once a slug exists, further text edits/unpublishing are the
+// admin UI's job. This is what lets new guides go live the ordinary way
+// (append to guides-seed.ts, push, deploy) without a direct production DB
+// connection or an admin session. coverImage is the one field this keeps
+// managing after creation — see attachCoverImage below — since it also
+// needs to work as a backfill for a guide published before it had one.
 //
 // No regenerateSitemapFile()/notifyIndexNow() call here, unlike
 // publishGuideAction — both live under src/lib, which (via directory-i18n.ts
@@ -246,38 +251,107 @@ async function main() {
 // IndexNow ping is lost — new guides are still discovered on the next
 // regular sitemap crawl, just not instantly pinged.
 async function seedGuides() {
-  const newGuides = [];
+  let author: { id: string } | null = null;
+
   for (const guide of GUIDES) {
-    const existing = await db.directoryGuide.findUnique({ where: { slug: guide.slug }, select: { id: true } });
-    if (!existing) newGuides.push(guide);
-  }
-  if (newGuides.length === 0) {
-    console.log("No new guides to seed.");
-    return;
-  }
+    let record = await db.directoryGuide.findUnique({ where: { slug: guide.slug }, select: { id: true, body: true } });
 
-  const author = await db.user.findFirst({ where: { role: "ADMIN" }, orderBy: { createdAt: "asc" } });
-  if (!author) {
-    console.log(`Skipping ${newGuides.length} new guide(s) — no ADMIN account exists yet to attribute them to.`);
-    return;
-  }
+    if (!record) {
+      author ??= await db.user.findFirst({ where: { role: "ADMIN" }, orderBy: { createdAt: "asc" }, select: { id: true } });
+      if (!author) {
+        console.log(`Skipping new guide "${guide.title}" — no ADMIN account exists yet to attribute it to.`);
+        continue;
+      }
+      record = await db.directoryGuide.create({
+        data: {
+          slug: guide.slug,
+          title: guide.title,
+          excerpt: guide.excerpt,
+          body: guide.body,
+          seoTitle: guide.seoTitle,
+          seoDescription: guide.seoDescription,
+          status: "PUBLISHED",
+          publishedAt: new Date(),
+          authorId: author.id,
+        },
+        select: { id: true, body: true },
+      });
+      console.log(`Published guide: ${guide.title}`);
+    }
 
-  for (const guide of newGuides) {
-    await db.directoryGuide.create({
-      data: {
-        slug: guide.slug,
-        title: guide.title,
-        excerpt: guide.excerpt,
-        body: guide.body,
-        seoTitle: guide.seoTitle,
-        seoDescription: guide.seoDescription,
-        status: "PUBLISHED",
-        publishedAt: new Date(),
-        authorId: author.id,
-      },
+    if (guide.coverImage) record.body = await attachCoverImage(record.id, record.body, guide.coverImage, guide.title);
+    if (guide.contentImages) {
+      record.body = await attachContentImages(record.id, record.body, guide.contentImages, guide.title);
+    }
+  }
+}
+
+// Idempotent per guide (checked via whether a DirectoryListingImage already
+// points at it), so this both attaches a new guide's cover image on first
+// creation above and backfills one onto a guide that was already seeded
+// before coverImage existed — a plain base64-in-Postgres DirectoryListingImage
+// row, the same storage and /api/directory-images/{id} route every other
+// image in this app already uses, so no next.config.ts/CSP change is
+// needed. The file itself is pre-optimized (see guides-seed.ts's own
+// comment) and just read straight off disk here. Returns the guide's new
+// body so a later step (attachContentImages) keeps working off the current
+// text instead of the stale copy read before this ran.
+async function attachCoverImage(guideId: string, body: string, coverImage: GuideImage, guideTitle: string): Promise<string> {
+  const hasImage = await db.directoryListingImage.findFirst({ where: { guideId }, select: { id: true } });
+  if (hasImage) return body;
+
+  const bytes = readFileSync(path.join(__dirname, "guide-images", coverImage.file));
+  const image = await db.directoryListingImage.create({
+    data: { mimeType: coverImage.mimeType, data: bytes.toString("base64"), guideId },
+    select: { id: true },
+  });
+  const nextBody = `![${coverImage.alt}](/api/directory-images/${image.id})\n\n${body}`;
+  await db.directoryGuide.update({ where: { id: guideId }, data: { body: nextBody } });
+  console.log(`Attached cover image to guide: ${guideTitle}`);
+  return nextBody;
+}
+
+// Inserts each image right after its `after` anchor text (see
+// GuideContentImage's own comment) as its own paragraph. Idempotency is
+// checked via whether that exact `![alt](` markdown is already in `body` —
+// not a DirectoryListingImage lookup, since a guide can have several
+// content images and "any image exists" wouldn't say which ones are
+// already placed. A missing anchor (prose edited since) is logged and
+// skipped rather than failing the whole deploy over one image.
+async function attachContentImages(
+  guideId: string,
+  body: string,
+  images: Record<string, GuideContentImage>,
+  guideTitle: string,
+): Promise<string> {
+  let nextBody = body;
+  let attachedAny = false;
+
+  for (const [key, img] of Object.entries(images)) {
+    const marker = `![${img.alt}](`;
+    if (nextBody.includes(marker)) continue;
+
+    const anchorIndex = nextBody.indexOf(img.after);
+    if (anchorIndex === -1) {
+      console.log(`Could not place content image "${key}" on guide "${guideTitle}" — anchor text not found in its current body.`);
+      continue;
+    }
+    const insertAt = anchorIndex + img.after.length;
+
+    const bytes = readFileSync(path.join(__dirname, "guide-images", img.file));
+    const image = await db.directoryListingImage.create({
+      data: { mimeType: img.mimeType, data: bytes.toString("base64"), guideId },
+      select: { id: true },
     });
-    console.log(`Published guide: ${guide.title}`);
+    nextBody = `${nextBody.slice(0, insertAt)}\n\n![${img.alt}](/api/directory-images/${image.id})${nextBody.slice(insertAt)}`;
+    attachedAny = true;
   }
+
+  if (attachedAny) {
+    await db.directoryGuide.update({ where: { id: guideId }, data: { body: nextBody } });
+    console.log(`Attached content image(s) to guide: ${guideTitle}`);
+  }
+  return nextBody;
 }
 
 main()
