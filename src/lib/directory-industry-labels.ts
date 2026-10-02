@@ -1,8 +1,58 @@
+import {
+  Banknote,
+  Briefcase,
+  Building2,
+  Car,
+  Clapperboard,
+  Cpu,
+  Factory,
+  GraduationCap,
+  HeartPulse,
+  Landmark,
+  Megaphone,
+  Palmtree,
+  Radio,
+  Scale,
+  ShoppingBag,
+  Sprout,
+  Tag,
+  Truck,
+  UtensilsCrossed,
+  Zap,
+  type LucideIcon,
+} from "lucide-react";
 import type { Industry } from "@/generated/prisma/client";
 import { INDUSTRIES, INDUSTRY_LABELS } from "@/lib/labels";
 import { slugify } from "@/lib/slug";
 import { DIRECTORY_SITE_NAME_BY_LOCALE } from "@/lib/directory-seo";
 import { INDUSTRY_LABELS_BY_LOCALE, type DirectoryLocale } from "@/lib/directory-i18n";
+
+// Purely decorative — one representative icon per Industry, not an attempt
+// to classify a business more precisely than its own chosen category
+// already does. Shared by ListingCard's cover-photo badge and
+// IndustriesIndexContent's own listing rows.
+export const INDUSTRY_ICONS: Record<Industry, LucideIcon> = {
+  TECHNOLOGY: Cpu,
+  RETAIL_ECOMMERCE: ShoppingBag,
+  HEALTHCARE: HeartPulse,
+  FINANCE_BANKING: Banknote,
+  MANUFACTURING: Factory,
+  CONSTRUCTION_REAL_ESTATE: Building2,
+  EDUCATION: GraduationCap,
+  HOSPITALITY_TOURISM: Palmtree,
+  PROFESSIONAL_SERVICES: Briefcase,
+  MEDIA_ENTERTAINMENT: Clapperboard,
+  TRANSPORTATION_LOGISTICS: Truck,
+  AGRICULTURE: Sprout,
+  ENERGY_UTILITIES: Zap,
+  GOVERNMENT_NONPROFIT: Landmark,
+  TELECOMMUNICATIONS: Radio,
+  AUTOMOTIVE: Car,
+  FOOD_BEVERAGE: UtensilsCrossed,
+  LEGAL: Scale,
+  MARKETING_ADVERTISING: Megaphone,
+  OTHER: Tag,
+};
 
 // A friendly industry page's own URL slug is derived from the English label
 // (slugify("Food & Beverage") -> "food-beverage"), same convention as

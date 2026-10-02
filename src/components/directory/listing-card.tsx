@@ -1,31 +1,5 @@
 import Link from "next/link";
-import {
-  Banknote,
-  Briefcase,
-  Building2,
-  Car,
-  ChevronRight,
-  Clapperboard,
-  Cpu,
-  Eye,
-  Factory,
-  GraduationCap,
-  HeartPulse,
-  Landmark,
-  MapPin,
-  Megaphone,
-  Palmtree,
-  Radio,
-  Scale,
-  ShoppingBag,
-  Sprout,
-  Tag,
-  Truck,
-  UtensilsCrossed,
-  Zap,
-  type LucideIcon,
-} from "lucide-react";
-import type { Industry } from "@/generated/prisma/client";
+import { ChevronRight, Eye, MapPin } from "lucide-react";
 import { Card, CardBody } from "@/components/ui/card";
 import { Badge, Eyebrow } from "@/components/ui/badge";
 import { buttonClasses } from "@/components/ui/button";
@@ -33,34 +7,9 @@ import { StarRating } from "@/components/ui/star-rating";
 import { ListingLogo } from "@/components/directory/listing-logo";
 import type { DirectoryGridListing } from "@/lib/directory";
 import { directoryListingPath, type DirectoryLocale } from "@/lib/directory-i18n";
+import { INDUSTRY_ICONS } from "@/lib/directory-industry-labels";
 
 const MAX_VISIBLE_SERVICES = 3;
-
-// Purely decorative (the category badge overlaid on the cover photo) — one
-// representative icon per Industry, not an attempt to classify a business
-// more precisely than its own chosen category already does.
-const INDUSTRY_ICONS: Record<Industry, LucideIcon> = {
-  TECHNOLOGY: Cpu,
-  RETAIL_ECOMMERCE: ShoppingBag,
-  HEALTHCARE: HeartPulse,
-  FINANCE_BANKING: Banknote,
-  MANUFACTURING: Factory,
-  CONSTRUCTION_REAL_ESTATE: Building2,
-  EDUCATION: GraduationCap,
-  HOSPITALITY_TOURISM: Palmtree,
-  PROFESSIONAL_SERVICES: Briefcase,
-  MEDIA_ENTERTAINMENT: Clapperboard,
-  TRANSPORTATION_LOGISTICS: Truck,
-  AGRICULTURE: Sprout,
-  ENERGY_UTILITIES: Zap,
-  GOVERNMENT_NONPROFIT: Landmark,
-  TELECOMMUNICATIONS: Radio,
-  AUTOMOTIVE: Car,
-  FOOD_BEVERAGE: UtensilsCrossed,
-  LEGAL: Scale,
-  MARKETING_ADVERTISING: Megaphone,
-  OTHER: Tag,
-};
 
 export function ListingCard({
   listing,
