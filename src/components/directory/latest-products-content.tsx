@@ -81,7 +81,13 @@ export async function LatestProductsContent({ locale }: { locale: DirectoryLocal
             <EmptyState icon={Package} title={t.latestProductsEmptyTitle} description={t.latestProductsEmptyDescription} />
           </div>
         ) : (
-          <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+          /* grid-cols-1 explicit, not just the implied single column below
+             sm: an explicit track is sized minmax(0, 1fr) (bounded to the
+             container), where an implicit "auto" track sizes itself off its
+             widest item's own content instead — which, for a card holding a
+             long company name, can blow the whole row wider than the
+             viewport on mobile. */
+          <ul className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
             {products.map((product, index) => (
               <li key={`${product.listingSlug}-${index}`}>
                 <Link href={directoryListingServicesPath(locale, product.listingSlug)} className="block h-full">
@@ -89,7 +95,12 @@ export async function LatestProductsContent({ locale }: { locale: DirectoryLocal
                     <CardBody className="flex flex-1 flex-col gap-2">
                       <div className="flex items-center gap-3">
                         <ListingLogo name={product.companyName} logoUrl={product.logoUrl} size={32} loading="lazy" className="h-8 w-8 text-xs" />
-                        <span className="truncate text-xs font-medium text-slate-500 dark:text-slate-400">{product.companyName}</span>
+                        {/* min-w-0: a flex item's default min-width is its content's
+                            un-wrapped size, which for a long company name can exceed
+                            the row's available width and push the whole card (and
+                            page) wider than the viewport on mobile — min-w-0 lets it
+                            shrink so `truncate` actually has room to take effect. */}
+                        <span className="min-w-0 truncate text-xs font-medium text-slate-500 dark:text-slate-400">{product.companyName}</span>
                       </div>
                       <h3 className="font-semibold text-slate-900 dark:text-slate-100">{product.service.title}</h3>
                       {product.service.description && (

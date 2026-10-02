@@ -84,14 +84,24 @@ export async function CategoriesIndexContent({ locale }: { locale: DirectoryLoca
             <EmptyState icon={LayoutGrid} title={t.categoriesIndexEmptyTitle} description={t.categoriesIndexEmptyDescription} />
           </div>
         ) : (
-          <ul className="mt-6 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+          /* grid-cols-1 explicit, not just the implied single column below
+             sm: an explicit track is sized minmax(0, 1fr) (bounded to the
+             container), where an implicit "auto" track sizes itself off its
+             widest item's own content instead — which, for a long category
+             name, can blow the whole row wider than the viewport on mobile. */
+          <ul className="mt-6 grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
             {categories.map(({ name, count }) => (
               <li key={name}>
                 <Link
                   href={categoryPath(slugify(name), locale)}
                   className="flex items-center justify-between gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm text-slate-700 shadow-sm transition-colors hover:border-petrol/40 hover:text-petrol dark:border-neutral-800 dark:bg-neutral-900 dark:text-slate-200 dark:hover:border-petrol-light/40 dark:hover:text-petrol-light"
                 >
-                  <span className="truncate">{translateCategoryName(name, locale)}</span>
+                  {/* min-w-0: a flex item's default min-width is its content's
+                      un-wrapped size, which for a long category name can exceed
+                      the row's available width and push the whole card (and page)
+                      wider than the viewport on mobile — min-w-0 lets it shrink so
+                      `truncate` actually has room to take effect. */}
+                  <span className="min-w-0 truncate">{translateCategoryName(name, locale)}</span>
                   <span className="shrink-0 text-xs text-slate-400 dark:text-slate-500">{copy.listingCount(count)}</span>
                 </Link>
               </li>

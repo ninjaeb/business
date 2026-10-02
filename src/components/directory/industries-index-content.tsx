@@ -18,9 +18,10 @@ import {
   buildLanguageAlternates,
   directoryShareImage,
 } from "@/lib/directory-seo";
-import { industryPath } from "@/lib/directory-industry-labels";
+import { INDUSTRY_ICONS, industryPageDescription, industryPath } from "@/lib/directory-industry-labels";
 import { DIRECTORY_HOME_COPY } from "@/lib/directory-home-copy";
 import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
+import { Card } from "@/components/ui/card";
 import { EmptyState } from "@/components/ui/empty-state";
 
 // Every Industry, including one with zero published listings — the
@@ -85,18 +86,28 @@ export async function IndustriesIndexContent({ locale }: { locale: DirectoryLoca
             <EmptyState icon={Briefcase} title={t.industriesIndexEmptyTitle} description={t.industriesIndexEmptyDescription} />
           </div>
         ) : (
-          <ul className="mt-6 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-            {industries.map(({ industry, count }) => (
-              <li key={industry}>
-                <Link
-                  href={industryPath(industry, locale)}
-                  className="flex items-center justify-between gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm text-slate-700 shadow-sm transition-colors hover:border-petrol/40 hover:text-petrol dark:border-neutral-800 dark:bg-neutral-900 dark:text-slate-200 dark:hover:border-petrol-light/40 dark:hover:text-petrol-light"
-                >
-                  <span className="truncate">{INDUSTRY_LABELS_BY_LOCALE[locale][industry]}</span>
-                  <span className="shrink-0 text-xs text-slate-400 dark:text-slate-500">{copy.listingCount(count)}</span>
-                </Link>
-              </li>
-            ))}
+          <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {industries.map(({ industry, count }) => {
+              const IndustryIcon = INDUSTRY_ICONS[industry];
+              return (
+                <li key={industry} className="h-full">
+                  <Link href={industryPath(industry, locale)} className="block h-full">
+                    <Card className="flex h-full flex-col gap-2 p-4 transition-colors hover:border-petrol/40 dark:hover:border-petrol-light/30">
+                      <div className="flex items-center gap-2">
+                        <IndustryIcon className="h-4 w-4 shrink-0 text-petrol dark:text-petrol-light" />
+                        <span className="text-sm font-semibold text-slate-900 dark:text-slate-100">
+                          {INDUSTRY_LABELS_BY_LOCALE[locale][industry]}
+                        </span>
+                      </div>
+                      <p className="line-clamp-2 flex-1 text-xs text-slate-500 dark:text-slate-400">
+                        {industryPageDescription(industry, locale)}
+                      </p>
+                      <span className="text-xs text-slate-400 dark:text-slate-500">{copy.listingCount(count)}</span>
+                    </Card>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         )}
       </div>

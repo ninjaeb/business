@@ -19,7 +19,12 @@ import { stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
 import { resolveDirectoryLocale } from "@/lib/directory-locale";
 import { getVerifiedPartnerOrNull, getVerifiedTestimonialAuthorOrNull } from "@/lib/auth/dal";
 import { getPublicGoogleClientId } from "@/lib/auth/google";
-import { getVisitorTestimonialForListing, listApprovedTestimonialsForJsonLd } from "@/lib/testimonials";
+import {
+  getListingTestimonialRatingSummary,
+  getRecentApprovedTestimonialsForJsonLd,
+  getVisitorTestimonialForListing,
+  type TestimonialRatingSummary,
+} from "@/lib/testimonials";
 import {
   DIRECTORY_STRINGS,
   DIRECTORY_HOME_TITLE_BY_LOCALE,
@@ -103,6 +108,59 @@ function GoogleRatingBadge({ listing, ratingLabel }: { listing: ListingWithMeta;
   );
 }
 
+// The on-site counterpart of GoogleRatingBadge above, built from this
+// listing's own APPROVED testimonials (see getListingTestimonialRatingSummary)
+// rather than Google's — links to the Testimonials tab itself so the number
+// is never just a bare claim, same reasoning as GoogleRatingBadge's own link
+// to the Google Maps reviews behind its number.
+function TestimonialRatingBadge({
+  rating,
+  ratingLabel,
+  href,
+}: {
+  rating: TestimonialRatingSummary;
+  ratingLabel: string;
+  href: string;
+}) {
+  const label = `${ratingLabel}: ${rating.average.toFixed(1)} (${rating.count})`;
+  return (
+    <Link
+      href={href}
+      aria-label={label}
+      className="inline-flex items-center gap-1 hover:text-petrol hover:underline dark:hover:text-petrol-light"
+    >
+      <StarRating rating={rating.average} size="h-4 w-4" />
+      <span className="font-semibold text-slate-700 dark:text-slate-200">{rating.average.toFixed(1)}</span>
+      <span>({rating.count})</span>
+    </Link>
+  );
+}
+
+// Picks which rating badge (if either) the header shows — Google's own
+// rating when the listing has one, this listing's own testimonials
+// otherwise. Mirrors buildJsonLd's own aggregateRating precedence exactly,
+// so the one number a visitor sees here always matches the one a search
+// engine reads out of this page's structured data.
+function RatingBadge({
+  listing,
+  testimonialRating,
+  testimonialsHref,
+  googleRatingLabel,
+  testimonialRatingLabel,
+}: {
+  listing: ListingWithMeta;
+  testimonialRating: TestimonialRatingSummary | null;
+  testimonialsHref: string;
+  googleRatingLabel: string;
+  testimonialRatingLabel: string;
+}) {
+  if (listing.googleRating !== null) return <GoogleRatingBadge listing={listing} ratingLabel={googleRatingLabel} />;
+  if (testimonialRating) {
+    return <TestimonialRatingBadge rating={testimonialRating} ratingLabel={testimonialRatingLabel} href={testimonialsHref} />;
+  }
+  return null;
+}
+
 function buildListingLogoUrl(listing: ListingWithMeta, siteOrigin: string, slug: string): string | null {
   return listing.logoUrl ? `${siteOrigin}${listingLogoPath(slug, listing.publishedAt)}` : null;
 }
@@ -140,7 +198,8 @@ function buildJsonLd(
   listing: ListingWithMeta,
   url: string,
   images: { url: string; caption?: string }[],
-  testimonials: { authorName: string; rating: number | null; body: string; createdAt: Date }[],
+  testimonialRating: TestimonialRatingSummary | null,
+  testimonialReviews: { rating: number; body: string; authorName: string; createdAt: Date }[],
 ) {
   const jsonLd: Record<string, unknown> = {
     "@context": "https://schema.org",
@@ -182,47 +241,38 @@ function buildJsonLd(
   // on an AggregateRating, so this only appears once both are present,
   // never rating alone. Google Places already checks a rating has at least
   // one review before it ever returns one, so ratingCount === 0 alongside
-  // a non-null rating isn't a real case to guard against here.
+  // a non-null rating isn't a real case to guard against here. Falls back to
+  // this listing's own APPROVED testimonials (see
+  // getListingTestimonialRatingSummary) when there's no Google rating at
+  // all — never both at once, since one `aggregateRating` can't honestly
+  // represent two different rating pools, and RatingBadge above shows a
+  // visitor the exact same number this picks.
   if (listing.googleRating !== null && listing.googleRatingCount !== null) {
     jsonLd.aggregateRating = {
       "@type": "AggregateRating",
       ratingValue: listing.googleRating,
       reviewCount: listing.googleRatingCount,
     };
-  } else {
-    // No Google rating on file — fall back to this listing's own APPROVED
-    // testimonials (rating is required at submission, see
-    // submitDirectoryTestimonial's Zod schema, so "has a rating" covers
-    // every real one; the `!== null` guard is just defensive against the
-    // column's own nullability). Google's own rating wins when both exist
-    // rather than the two being merged or averaged — it's a verified
-    // external signal, this site's own reviews are self-reported.
-    const rated = testimonials.filter((testimonial) => testimonial.rating !== null);
-    if (rated.length > 0) {
-      const average = rated.reduce((sum, testimonial) => sum + (testimonial.rating as number), 0) / rated.length;
-      jsonLd.aggregateRating = {
-        "@type": "AggregateRating",
-        ratingValue: Math.round(average * 10) / 10,
-        reviewCount: rated.length,
-      };
-    }
+  } else if (testimonialRating) {
+    jsonLd.aggregateRating = {
+      "@type": "AggregateRating",
+      ratingValue: Math.round(testimonialRating.average * 10) / 10,
+      reviewCount: testimonialRating.count,
+    };
   }
-  // Mirrors exactly what the Testimonials page itself shows (every APPROVED
-  // testimonial, same order) — structured data should never claim more or
-  // less than what a visitor landing on the page can already see.
-  // reviewRating is only set when the testimonial has one (always true in
-  // practice, see the aggregateRating fallback's own comment above) —
-  // Review's reviewRating is optional in the schema.org vocabulary, but a
-  // Review Google counts toward a rich result needs one.
-  if (testimonials.length > 0) {
-    jsonLd.review = testimonials.map((testimonial) => ({
+  // Individual reviews, independent of whichever aggregateRating source won
+  // above — every one of these is already genuinely visible on this
+  // listing's own Testimonials page (see getRecentApprovedTestimonialsForJsonLd's
+  // own comment on why it's capped), so there's no "self-serving" or
+  // "markup doesn't match the page" concern the way there would be if these
+  // were invented or hidden.
+  if (testimonialReviews.length > 0) {
+    jsonLd.review = testimonialReviews.map((review) => ({
       "@type": "Review",
-      author: { "@type": "Person", name: testimonial.authorName },
-      datePublished: testimonial.createdAt.toISOString().slice(0, 10),
-      reviewBody: testimonial.body,
-      ...(testimonial.rating !== null
-        ? { reviewRating: { "@type": "Rating", ratingValue: testimonial.rating, bestRating: 5, worstRating: 1 } }
-        : {}),
+      author: { "@type": "Person", name: review.authorName },
+      datePublished: review.createdAt.toISOString().slice(0, 10),
+      reviewBody: review.body,
+      reviewRating: { "@type": "Rating", ratingValue: review.rating, bestRating: 5, worstRating: 1 },
     }));
   }
   // English regardless of the page's own locale — schema.org's own
@@ -273,7 +323,16 @@ export default async function ListingLayout({
   const listing = await getPublishedListingBySlug(slug);
   if (!listing) notFound();
 
-  const [siteOrigin, , referralCode, viewer, branches, testimonialVisitor, testimonialsForJsonLd] = await Promise.all([
+  const [
+    siteOrigin,
+    ,
+    referralCode,
+    viewer,
+    branches,
+    testimonialVisitor,
+    testimonialRating,
+    testimonialReviewsForJsonLd,
+  ] = await Promise.all([
     getSiteOrigin(),
     // Runs once per visit to this listing, not once per page: Next.js keeps
     // a layout mounted across client-side navigation between its own child
@@ -301,12 +360,14 @@ export default async function ListingLayout({
     // purpose (personalizing the Recommend link), so this is computed
     // separately even though the two checks can both be true at once.
     getVerifiedTestimonialAuthorOrNull(),
-    // Feeds buildJsonLd's Review/AggregateRating markup below — every
-    // section page needs this, same reasoning as `listing` itself, not just
-    // the dedicated Testimonials page (which re-queries its own, fuller
-    // copy for display, including images this JSON-LD-only projection
-    // leaves out).
-    listApprovedTestimonialsForJsonLd(listing.id),
+    // Feeds both RatingBadge and buildJsonLd's own aggregateRating fallback
+    // (see their shared comment on why they must stay in lockstep) — only
+    // ever consulted when the listing has no Google rating of its own.
+    getListingTestimonialRatingSummary(listing.id),
+    // Feeds buildJsonLd's own `review` array — see
+    // getRecentApprovedTestimonialsForJsonLd's own comment on why this is
+    // fetched regardless of whether a Google rating exists.
+    getRecentApprovedTestimonialsForJsonLd(listing.id),
   ]);
   const existingTestimonial = testimonialVisitor
     ? ((await getVisitorTestimonialForListing(testimonialVisitor.id, listing.id)) ?? null)
@@ -417,7 +478,8 @@ export default async function ListingLayout({
             { ...listing, services: display.services },
             pageUrl,
             listingImageEntries(listing, siteOrigin, slug),
-            testimonialsForJsonLd,
+            testimonialRating,
+            testimonialReviewsForJsonLd,
           ),
         }}
       />
@@ -490,7 +552,13 @@ export default async function ListingLayout({
                 </div>
               )}
               <div className="flex flex-wrap items-center gap-3 text-base text-slate-500 dark:text-slate-400">
-                <GoogleRatingBadge listing={listing} ratingLabel={t.googleRatingLabel} />
+                <RatingBadge
+                  listing={listing}
+                  testimonialRating={testimonialRating}
+                  testimonialsHref={directoryListingTestimonialsPath(resolved, slug)}
+                  googleRatingLabel={t.googleRatingLabel}
+                  testimonialRatingLabel={t.testimonialRatingLabel}
+                />
                 {listing.state ? (
                   <Link
                     href={locationPath(slugify(locationLabel(listing.city, listing.state)), resolved)}
@@ -644,7 +712,13 @@ export default async function ListingLayout({
                 </div>
               )}
               <div className="flex flex-wrap items-center gap-3 text-base text-slate-500 dark:text-slate-400">
-                <GoogleRatingBadge listing={listing} ratingLabel={t.googleRatingLabel} />
+                <RatingBadge
+                  listing={listing}
+                  testimonialRating={testimonialRating}
+                  testimonialsHref={directoryListingTestimonialsPath(resolved, slug)}
+                  googleRatingLabel={t.googleRatingLabel}
+                  testimonialRatingLabel={t.testimonialRatingLabel}
+                />
                 {listing.state ? (
                   <Link
                     href={locationPath(slugify(locationLabel(listing.city, listing.state)), resolved)}

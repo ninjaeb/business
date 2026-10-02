@@ -17,7 +17,7 @@ import { formatDate } from "@/lib/format";
 import { Card, CardBody } from "@/components/ui/card";
 import { Eyebrow } from "@/components/ui/badge";
 import { buttonClasses } from "@/components/ui/button";
-import { INDUSTRY_ICONS } from "@/components/directory/listing-card";
+import { INDUSTRY_ICONS } from "@/lib/directory-industry-labels";
 import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
 import { EmptyState } from "@/components/ui/empty-state";
 

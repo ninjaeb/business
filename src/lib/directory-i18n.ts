@@ -476,6 +476,11 @@ export type DirectoryStrings = {
   // translation, but a screen reader still needs "Google rating" spelled
   // out rather than reading a bare "4.6 (128)".
   googleRatingLabel: string;
+  // aria-label on the same header badge's on-site counterpart (see
+  // RatingBadge/TestimonialRatingBadge in the listing layout) — shown
+  // instead of googleRatingLabel's badge when the listing has no Google
+  // rating of its own but does have APPROVED testimonials.
+  testimonialRatingLabel: string;
   // The listing page's "Recommend" affordances, open to every visitor —
   // the header button, and the sticky bottom-bar button (see the listing
   // layout's own nav). Both share one referral-tracking link (?r=<referral
@@ -799,6 +804,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     websiteLabel: "Website",
     locationLabel: "Location",
     googleRatingLabel: "Google rating",
+    testimonialRatingLabel: "Testimonial rating",
     recommendLabel: "Recommend Business",
     recommendMessage: "I recommend {business} — check them out on the Business Directory: {url}",
     shareLabel: "Share Business",
@@ -1079,6 +1085,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     shareLabel: "分享企业",
     locationLabel: "地点",
     googleRatingLabel: "Google 评分",
+    testimonialRatingLabel: "客户评分",
     contactHeading: "联系我们",
     contactSubheading: "直接给这家企业发送信息——他们会回复您提供的电子邮件地址和联系电话。",
     contactCallCta: "致电",
@@ -1353,6 +1360,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     shareLabel: "Kongsi Perniagaan",
     locationLabel: "Lokasi",
     googleRatingLabel: "Penilaian Google",
+    testimonialRatingLabel: "Penilaian testimoni",
     contactHeading: "Hubungi kami",
     contactSubheading: "Hantar mesej terus kepada perniagaan ini — mereka akan membalas ke alamat e-mel dan nombor telefon yang anda berikan.",
     contactCallCta: "Hubungi",
