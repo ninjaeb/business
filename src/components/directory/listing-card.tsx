@@ -89,8 +89,12 @@ export function ListingCard({
       <Card className="flex h-full flex-col overflow-hidden transition-colors hover:border-petrol/40 dark:hover:border-petrol-light/30">
         {/* Cover photo — the listing's first gallery photo (see
             coverPhotoUrl's own comment in directory.ts). A listing with no
-            gallery photos yet falls back to a tinted block with its logo
-            centered, rather than no image at all, so every card in a grid
+            gallery photos yet but a logo gets that logo blown up and
+            blurred as a backdrop, with the real logo sharp on top — an
+            album-art treatment that still looks like a deliberate image
+            rather than an empty box, using only what the listing already
+            has. A listing with neither falls back to a flat tinted block
+            with its initial-letter avatar. Either way every card in a grid
             keeps the same shape instead of some being noticeably shorter. */}
         <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden bg-led-soft dark:bg-led-soft-dark">
           {listing.coverPhotoUrl ? (
@@ -102,9 +106,39 @@ export function ListingCard({
               decoding="async"
               className="h-full w-full object-cover"
             />
+          ) : listing.logoUrl ? (
+            <div className="relative flex h-full w-full items-center justify-center">
+              {/* aria-hidden + empty alt: purely decorative backdrop: the
+                  sharp logo on top (next) is the one screen readers and
+                  crawlers should see. scale-125 keeps blur's own soft edge
+                  from ever showing the image's true (unblurred) boundary. */}
+              {/* eslint-disable-next-line @next/next/no-img-element -- served straight out of the DB by /api/directory-images/logo/[slug], same reasoning as ListingLogo's own img tag */}
+              <img
+                src={listing.logoUrl}
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                className="absolute inset-0 h-full w-full scale-125 object-cover opacity-80 blur-2xl"
+              />
+              {/* The logo itself, not through ListingLogo — that component
+                  always crops to a circle, which fights an 80%-of-the-frame
+                  size. object-contain (not cover) so a non-square logo never
+                  gets cropped; drop-shadow (a filter, unlike box-shadow)
+                  follows the logo's own transparency instead of its
+                  rectangular bounding box. */}
+              {/* eslint-disable-next-line @next/next/no-img-element -- served straight out of the DB by /api/directory-images/logo/[slug], same reasoning as ListingLogo's own img tag */}
+              <img
+                src={listing.logoUrl}
+                alt={`${listing.companyName} logo`}
+                loading="lazy"
+                decoding="async"
+                className="relative h-[80%] w-[80%] object-contain drop-shadow-lg"
+              />
+            </div>
           ) : (
             <div className="flex h-full w-full items-center justify-center">
-              <ListingLogo name={listing.companyName} logoUrl={listing.logoUrl} size={64} loading="lazy" className="h-16 w-16 text-xl" />
+              <ListingLogo name={listing.companyName} logoUrl={null} size={64} loading="lazy" className="h-16 w-16 text-xl" />
             </div>
           )}
           {listing.industry && industryLabel && IndustryIcon && (
@@ -116,17 +150,12 @@ export function ListingCard({
         </div>
 
         <CardBody className="flex flex-1 flex-col gap-2.5">
-          <div className="flex items-center gap-2">
-            {listing.logoUrl && (
-              <ListingLogo name={listing.companyName} logoUrl={listing.logoUrl} size={24} loading="lazy" className="h-6 w-6 shrink-0 text-[10px]" />
-            )}
-            {/* A heading rather than a <p>: each card's name is an item
-                under the page's H1/H2 outline, which is how a crawler (and
-                a screen reader's heading list) tells the businesses apart
-                from the surrounding copy. Tailwind's preflight leaves
-                headings unstyled, so sizing/weight are set explicitly. */}
-            <h3 className="truncate text-base font-bold tracking-tight text-slate-900 dark:text-slate-100">{listing.companyName}</h3>
-          </div>
+          {/* A heading rather than a <p>: each card's name is an item
+              under the page's H1/H2 outline, which is how a crawler (and a
+              screen reader's heading list) tells the businesses apart from
+              the surrounding copy. Tailwind's preflight leaves headings
+              unstyled, so sizing/weight are set explicitly. */}
+          <h3 className="truncate text-base font-bold tracking-tight text-slate-900 dark:text-slate-100">{listing.companyName}</h3>
 
           {listing.googleRating !== null && (
             <div className="flex items-center gap-1">
