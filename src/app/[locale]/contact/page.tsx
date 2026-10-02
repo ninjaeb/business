@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 import { resolveDirectoryLocale } from "@/lib/directory-locale";
 import { directoryContactPath } from "@/lib/directory-i18n";
 import { DIRECTORY_CONTACT_COPY } from "@/lib/directory-contact-copy";
@@ -14,7 +15,7 @@ import {
 import { getSiteOrigin } from "@/lib/site-url";
 import { whatsAppUrl } from "@/lib/format";
 import { Card, CardBody } from "@/components/ui/card";
-import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Mail, MessageCircle, Phone } from "lucide-react";
 
 export async function generateMetadata({
   params,
@@ -63,8 +64,33 @@ export default async function DirectoryContactPage({ params }: { params: Promise
   if (!resolved) notFound();
 
   const copy = DIRECTORY_CONTACT_COPY[resolved];
-  const { email, telephone, address } = DIRECTORY_PUBLISHER;
-  const addressLines = [address.streetAddress, `${address.postalCode} ${address.addressLocality}`, `${address.addressRegion}, Malaysia`];
+  const { email, telephone } = DIRECTORY_PUBLISHER;
+
+  const contactMethods = [
+    {
+      key: "email",
+      icon: Mail,
+      label: copy.emailLabel,
+      value: email,
+      href: `mailto:${email}`,
+    },
+    {
+      key: "phone",
+      icon: Phone,
+      label: copy.phoneLabel,
+      value: telephone,
+      hint: copy.phoneHint,
+      href: `tel:${telephone.replace(/\s|-/g, "")}`,
+    },
+    {
+      key: "whatsapp",
+      icon: MessageCircle,
+      label: copy.whatsAppLabel,
+      value: telephone,
+      href: whatsAppUrl(telephone),
+      external: true,
+    },
+  ];
 
   return (
     <div className="w-full px-4 py-16 sm:px-8 sm:py-20">
@@ -80,53 +106,39 @@ export default async function DirectoryContactPage({ params }: { params: Promise
         <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-600 dark:text-slate-300">{copy.heroSubtitle}</p>
       </section>
 
-      <div className="mx-auto mt-14 max-w-xl">
-        <Card className="rounded-2xl shadow-soft">
-          <CardBody className="space-y-5">
-            <div className="flex items-start gap-3">
-              <Mail className="mt-0.5 h-5 w-5 shrink-0 text-petrol dark:text-petrol-light" />
-              <div>
-                <p className="text-xs font-medium tracking-wide text-slate-400 uppercase dark:text-slate-500">{copy.emailLabel}</p>
-                <a href={`mailto:${email}`} className="text-base text-slate-900 hover:text-petrol hover:underline dark:text-slate-100 dark:hover:text-petrol-light">
-                  {email}
-                </a>
-              </div>
-            </div>
-            <div className="flex items-start gap-3">
-              <Phone className="mt-0.5 h-5 w-5 shrink-0 text-petrol dark:text-petrol-light" />
-              <div>
-                <p className="text-xs font-medium tracking-wide text-slate-400 uppercase dark:text-slate-500">{copy.phoneLabel}</p>
-                <a href={`tel:${telephone.replace(/\s|-/g, "")}`} className="text-base text-slate-900 hover:text-petrol hover:underline dark:text-slate-100 dark:hover:text-petrol-light">
-                  {telephone}
-                </a>
-                <p className="text-sm text-slate-500 dark:text-slate-400">{copy.phoneHint}</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-3">
-              <MessageCircle className="mt-0.5 h-5 w-5 shrink-0 text-petrol dark:text-petrol-light" />
-              <div>
-                <p className="text-xs font-medium tracking-wide text-slate-400 uppercase dark:text-slate-500">{copy.whatsAppLabel}</p>
+      <div className="mx-auto mt-14 max-w-5xl">
+        <div className="grid gap-5 sm:grid-cols-3">
+          {contactMethods.map(({ key, icon: Icon, label, value, hint, href, external }) => (
+            <Card key={key} className="rounded-2xl text-center shadow-soft">
+              <CardBody className="flex flex-col items-center gap-2 py-8">
+                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-led-soft text-petrol dark:bg-led-soft-dark dark:text-petrol-light">
+                  <Icon className="h-5 w-5" />
+                </span>
+                <p className="mt-1 text-xs font-medium tracking-wide text-slate-400 uppercase dark:text-slate-500">{label}</p>
                 <a
-                  href={whatsAppUrl(telephone)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-base text-slate-900 hover:text-petrol hover:underline dark:text-slate-100 dark:hover:text-petrol-light"
+                  href={href}
+                  {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                  className="text-base font-medium text-slate-900 hover:text-petrol hover:underline dark:text-slate-100 dark:hover:text-petrol-light"
                 >
-                  {telephone}
+                  {value}
                 </a>
-              </div>
-            </div>
-            <div className="flex items-start gap-3">
-              <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-petrol dark:text-petrol-light" />
-              <div>
-                <p className="text-xs font-medium tracking-wide text-slate-400 uppercase dark:text-slate-500">{copy.addressLabel}</p>
-                {addressLines.map((line) => (
-                  <p key={line} className="text-base text-slate-900 dark:text-slate-100">
-                    {line}
-                  </p>
-                ))}
-              </div>
-            </div>
+                {hint && <p className="text-sm text-slate-500 dark:text-slate-400">{hint}</p>}
+              </CardBody>
+            </Card>
+          ))}
+        </div>
+
+        <Card className="mt-10 rounded-2xl shadow-soft">
+          <CardBody>
+            <h2 className="text-center text-xl font-semibold text-slate-900 dark:text-slate-100">{copy.leadFormHeading}</h2>
+            {/* Gotka's own CRM lead-form widget — it injects the actual form
+                markup into this div once the embed script below runs, rather
+                than this app building/validating/submitting the fields
+                itself. lang is this page's own resolved locale so the
+                injected form matches whichever of en/zh/ms the visitor is
+                on, not a value hardcoded to one language. */}
+            <div data-gotech-lead-form className="mt-6" />
+            <Script src={`https://crm.gotka.com/embed/lead-form.js?lang=${resolved}`} strategy="afterInteractive" />
           </CardBody>
         </Card>
 
