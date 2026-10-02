@@ -17,7 +17,7 @@ import {
 import { serializeJsonLd } from "@/lib/directory-seo";
 import { stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
 import { resolveDirectoryLocale } from "@/lib/directory-locale";
-import { getVerifiedPartnerOrNull, getVerifiedVisitorOrNull } from "@/lib/auth/dal";
+import { getVerifiedPartnerOrNull, getVerifiedTestimonialAuthorOrNull } from "@/lib/auth/dal";
 import { getPublicGoogleClientId } from "@/lib/auth/google";
 import { getVisitorTestimonialForListing } from "@/lib/testimonials";
 import {
@@ -259,10 +259,13 @@ export default async function ListingLayout({
     // "every section page re-queries the same request-scoped listing"
     // pattern getPublishedListingBySlug's own comment describes).
     getPublishedBranchListings(listing.id),
-    // Who's viewing, if anyone signed in as a testimonial-writing VISITOR —
-    // feeds the two WriteTestimonialButtons below (see its own comment on
-    // why there are two). Distinct from `viewer` above, which is a PARTNER.
-    getVerifiedVisitorOrNull(),
+    // Who's viewing, if anyone signed in as either account type a
+    // testimonial can be written from (VISITOR or PARTNER) — feeds the two
+    // WriteTestimonialButtons below (see its own comment on why there are
+    // two). `viewer` above only ever looks for a PARTNER, for a different
+    // purpose (personalizing the Recommend link), so this is computed
+    // separately even though the two checks can both be true at once.
+    getVerifiedTestimonialAuthorOrNull(),
   ]);
   const existingTestimonial = testimonialVisitor
     ? ((await getVisitorTestimonialForListing(testimonialVisitor.id, listing.id)) ?? null)

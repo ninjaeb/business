@@ -113,7 +113,17 @@ export async function GuideDetailContent({ guide, locale }: { guide: Guide; loca
               {relatedGuides.map((related) => (
                 <li key={related.id}>
                   <Link href={directoryGuidePath(locale, related.slug)} className="block h-full">
-                    <Card className="h-full transition-colors hover:border-petrol/40 dark:hover:border-petrol-light/30">
+                    <Card className="flex h-full flex-col overflow-hidden transition-colors hover:border-petrol/40 dark:hover:border-petrol-light/30">
+                      {related.coverImageUrl && (
+                        // eslint-disable-next-line @next/next/no-img-element -- served straight out of the DB by /api/directory-images/[id], same reasoning as ListingCard's own img tag
+                        <img
+                          src={related.coverImageUrl}
+                          alt=""
+                          loading="lazy"
+                          decoding="async"
+                          className="aspect-[16/9] w-full shrink-0 object-cover"
+                        />
+                      )}
                       <CardBody className="space-y-1.5">
                         <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-100">{related.title}</h3>
                         <p className="line-clamp-2 text-xs text-slate-500 dark:text-slate-400">{related.excerpt}</p>

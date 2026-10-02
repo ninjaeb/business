@@ -7,6 +7,7 @@ import { db } from "@/lib/db";
 import { hashPassword, verifyPassword } from "@/lib/auth/password";
 import { createSession, deleteSession } from "@/lib/session";
 import { registerVisitorWithPassword, registerOrSignInVisitorWithGoogle } from "@/lib/visitor-signup";
+import { registerPartnerWithPassword } from "@/lib/partner-signup";
 import { verifyGoogleIdToken } from "@/lib/auth/google";
 import { isValidPhoneFormat } from "@/lib/phone";
 import { isRateLimited, isSuspiciouslyFast } from "@/lib/lead-spam-guard";
@@ -88,14 +89,80 @@ export async function registerVisitor(_prevState: VisitorAuthState, formData: Fo
   return { status: "success", name: parsed.data.name };
 }
 
+const businessTestimonialSignupSchema = z.object({
+  name: z.string().trim().min(1, "name_required").max(100),
+  email: z.string().trim().toLowerCase().min(1, "email_required").email("email_invalid"),
+  phone: z
+    .string()
+    .trim()
+    .min(1, "phone_required")
+    .refine((value) => isValidPhoneFormat(value), { message: "phone_invalid" }),
+  password: z.string().min(8, "password_length"),
+  companyName: z.string().trim().min(1, "company_required").max(150),
+  title: z.string().trim().min(1, "title_required").max(100),
+});
+
+// The testimonial dialog's "Business account" option (see
+// TestimonialAuthForm's account-type toggle) — creates a real PARTNER
+// account via the same registerPartnerWithPassword the main business
+// signup page uses (same role, same seeded draft listing, same eventual
+// business-portal access), just reached from inside this dialog instead of
+// a page navigation, so — like registerVisitor above, and unlike
+// signUpPartner in src/app/actions/partner-signup.ts — this never
+// redirects: the caller (WriteTestimonialButton) flips local state to show
+// the testimonial form next, in the same spot the dialog is already open.
+export async function registerTestimonialAuthor(_prevState: VisitorAuthState, formData: FormData): Promise<VisitorAuthState> {
+  if (String(formData.get("website") || "").trim()) {
+    return { status: "error", code: "generic" };
+  }
+  if (isSuspiciouslyFast(formData.get("renderedAt"))) {
+    return { status: "error", code: "generic" };
+  }
+
+  const headersList = await headers();
+  if (isRateLimited(firstHopValue(headersList.get("x-forwarded-for")))) {
+    return { status: "error", code: "rate_limited" };
+  }
+
+  const parsed = businessTestimonialSignupSchema.safeParse({
+    name: formData.get("name"),
+    email: formData.get("email"),
+    phone: formData.get("phone"),
+    password: formData.get("password"),
+    companyName: formData.get("companyName"),
+    title: formData.get("title"),
+  });
+  if (!parsed.success) {
+    const code = (parsed.error.issues[0]?.message as VisitorAuthErrorCode) ?? "invalid_submission";
+    return { status: "error", code };
+  }
+
+  const result = await registerPartnerWithPassword({
+    contactName: parsed.data.name,
+    email: parsed.data.email,
+    companyName: parsed.data.companyName,
+    phone: parsed.data.phone,
+    title: parsed.data.title,
+    passwordHash: await hashPassword(parsed.data.password),
+  });
+  if (!result.ok) {
+    return { status: "error", code: result.error };
+  }
+
+  await createSession(result.userId);
+  return { status: "success", name: parsed.data.name };
+}
+
 const visitorLoginSchema = z.object({
   email: z.string().trim().toLowerCase().min(1, "email_required").email("email_invalid"),
   password: z.string().min(1, "password_required"),
 });
 
 // Deliberately the same "invalid_credentials" error whether the email
-// doesn't exist, belongs to a PARTNER/ADMIN account instead, or the
-// password is simply wrong — unlike registerOrSignInPartnerWithGoogle's
+// doesn't exist, belongs to an ADMIN account instead, or the password is
+// simply wrong — a VISITOR or PARTNER are both accepted here (either
+// account type can write a testimonial — see getVerifiedTestimonialAuthorOrNull),
+// unlike registerOrSignInPartnerWithGoogle's
 // explicit "wrong_role" message, this form is open to the whole internet
 // with no Google-verified identity behind it, so it doesn't confirm or deny
 // which of those is true.
@@ -116,7 +183,7 @@ export async function loginVisitor(_prevState: VisitorAuthState, formData: FormD
 
   const user = await db.user.findUnique({ where: { email: parsed.data.email } });
   const valid = user ? await verifyPassword(parsed.data.password, user.passwordHash) : false;
-  if (!user || !valid || user.role !== "VISITOR") {
+  if (!user || !valid || (user.role !== "VISITOR" && user.role !== "PARTNER")) {
     return { status: "error", code: "invalid_credentials" };
   }
 

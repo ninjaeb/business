@@ -7,7 +7,7 @@ import { resolveDirectoryLocale } from "@/lib/directory-locale";
 import { DIRECTORY_STRINGS, directoryListingTestimonialsPath, directoryListingPath } from "@/lib/directory-i18n";
 import { getSiteOrigin } from "@/lib/site-url";
 import { isAiConfigured } from "@/lib/ai/client";
-import { getVerifiedVisitorOrNull } from "@/lib/auth/dal";
+import { getVerifiedTestimonialAuthorOrNull } from "@/lib/auth/dal";
 import { getPublicGoogleClientId } from "@/lib/auth/google";
 import { getVisitorTestimonialForListing } from "@/lib/testimonials";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
@@ -65,7 +65,7 @@ export default async function TestimonialsPage({
       orderBy: { createdAt: "desc" },
       include: { images: { orderBy: { createdAt: "asc" } } },
     }),
-    getVerifiedVisitorOrNull(),
+    getVerifiedTestimonialAuthorOrNull(),
   ]);
   const existingTestimonial = visitor ? (await getVisitorTestimonialForListing(visitor.id, listing.id)) ?? null : null;
 

@@ -263,7 +263,10 @@ export function TestimonialForm({
       </div>
       <input type="hidden" name="renderedAt" value={renderedAt} />
 
-      <div className="flex items-center justify-between gap-2">
+      {/* pr-7 keeps "Not you? Log out" clear of the dialog's own close
+          button (absolute right-3 top-3 in WriteTestimonialButton) — without
+          it the two sit close enough to invite a misclick. */}
+      <div className="flex items-center justify-between gap-2 pr-7">
         <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">{t.testimonialFormHeading}</h3>
         <p className="text-xs text-slate-500 dark:text-slate-400">
           {t.testimonialLoggedInAs} <span className="font-medium text-slate-700 dark:text-slate-300">{visitorName}</span> ·{" "}

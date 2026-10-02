@@ -2,7 +2,7 @@
 
 import Script from "next/script";
 import { useActionState, useEffect, useRef, useState } from "react";
-import { loginVisitor, registerVisitor, signInVisitorWithGoogle } from "@/app/actions/visitor-auth";
+import { loginVisitor, registerVisitor, registerTestimonialAuthor, signInVisitorWithGoogle } from "@/app/actions/visitor-auth";
 import { Button } from "@/components/ui/button";
 import { FieldGroup, Input } from "@/components/ui/field";
 import { DIRECTORY_STRINGS, type DirectoryLocale } from "@/lib/directory-i18n";
@@ -31,10 +31,24 @@ declare global {
 // which renders this instead of the testimonial form until onAuthenticated
 // fires). Two tabs sharing one honeypot/render-timing shape as every other
 // public form in this app (see submitDirectoryTestimonial's own comment) —
-// registerVisitor/loginVisitor never redirect, so switching tabs or
-// succeeding never navigates away from wherever this dialog is already
-// open. The Google button above them follows the same "never navigate away"
-// rule via a different mechanism (see the effect below).
+// registerVisitor/registerTestimonialAuthor/loginVisitor never redirect, so
+// switching tabs or succeeding never navigates away from wherever this
+// dialog is already open. The Google button above them follows the same
+// "never navigate away" rule via a different mechanism (see the effect
+// below) — it only ever creates/signs into a VISITOR account; a "Business
+// account" signup only exists via the password form below, since choosing
+// an account type up front has no Google-button equivalent (Google's own
+// button is a single fixed widget, not a form field this could branch on).
+//
+// The Create-account side has its own secondary toggle, user vs. business
+// (see accountType below) — not a VISITOR-vs-PARTNER distinction this
+// component makes up on its own, but the same real account types/roles the
+// rest of the app already has (a VISITOR exists only to write
+// testimonials; a PARTNER is the same login a business owner uses in
+// business-portal). Business account signup additionally requires company
+// name and job title, and creates (and signs into) a real PARTNER account
+// — including the same starter draft listing registerPartnerWithPassword
+// always seeds — rather than a lighter, testimonial-only account.
 export function TestimonialAuthForm({
   locale,
   googleClientId,
@@ -49,7 +63,12 @@ export function TestimonialAuthForm({
 }) {
   const t = DIRECTORY_STRINGS[locale];
   const [tab, setTab] = useState<"signup" | "login">("signup");
+  const [accountType, setAccountType] = useState<"user" | "business">("user");
   const [signupState, signupAction, signupPending] = useActionState(registerVisitor, undefined);
+  const [businessSignupState, businessSignupAction, businessSignupPending] = useActionState(
+    registerTestimonialAuthor,
+    undefined,
+  );
   const [loginState, loginAction, loginPending] = useActionState(loginVisitor, undefined);
   const [renderedAt] = useState(() => Date.now());
   const googleButtonRef = useRef<HTMLDivElement>(null);
@@ -63,6 +82,9 @@ export function TestimonialAuthForm({
   useEffect(() => {
     if (signupState?.status === "success") onAuthenticated(signupState.name);
   }, [signupState, onAuthenticated]);
+  useEffect(() => {
+    if (businessSignupState?.status === "success") onAuthenticated(businessSignupState.name);
+  }, [businessSignupState, onAuthenticated]);
   useEffect(() => {
     if (loginState?.status === "success") onAuthenticated(loginState.name);
   }, [loginState, onAuthenticated]);
@@ -170,7 +192,10 @@ export function TestimonialAuthForm({
       </div>
 
       {tab === "signup" ? (
-        <form action={signupAction} className="space-y-3">
+        <form
+          action={accountType === "business" ? businessSignupAction : signupAction}
+          className="space-y-3"
+        >
           {/* Honeypot: hidden from real visitors, often filled in by bots. */}
           <div className="absolute left-[-9999px]" aria-hidden="true">
             <label htmlFor="visitor-signup-website">Leave this field blank</label>
@@ -178,14 +203,58 @@ export function TestimonialAuthForm({
           </div>
           <input type="hidden" name="renderedAt" value={renderedAt} />
 
-          <div className="grid gap-3 sm:grid-cols-2">
-            <FieldGroup label={t.testimonialCompanyLabel} htmlFor="visitor-signup-company">
-              <Input id="visitor-signup-company" name="companyName" placeholder={t.testimonialCompanyPlaceholder} className="text-base" />
-            </FieldGroup>
-            <FieldGroup label={t.testimonialPositionLabel} htmlFor="visitor-signup-title">
-              <Input id="visitor-signup-title" name="title" placeholder={t.testimonialPositionPlaceholder} className="text-base" />
-            </FieldGroup>
+          {/* User vs. business — a real account-type choice (VISITOR vs.
+              PARTNER, see this component's own top comment), not just which
+              fields show. Login has no equivalent toggle: an existing
+              account's type is already fixed, so loginAction below accepts
+              either role as-is. */}
+          <div className="flex gap-1 rounded-full bg-slate-100 p-1 text-xs dark:bg-neutral-800">
+            <button
+              type="button"
+              onClick={() => setAccountType("user")}
+              className={`flex-1 rounded-full px-3 py-1.5 font-medium transition-colors ${
+                accountType === "user"
+                  ? "bg-white text-slate-900 shadow-sm dark:bg-neutral-700 dark:text-slate-100"
+                  : "text-slate-500 dark:text-slate-400"
+              }`}
+            >
+              {t.testimonialAccountTypeUser}
+            </button>
+            <button
+              type="button"
+              onClick={() => setAccountType("business")}
+              className={`flex-1 rounded-full px-3 py-1.5 font-medium transition-colors ${
+                accountType === "business"
+                  ? "bg-white text-slate-900 shadow-sm dark:bg-neutral-700 dark:text-slate-100"
+                  : "text-slate-500 dark:text-slate-400"
+              }`}
+            >
+              {t.testimonialAccountTypeBusiness}
+            </button>
           </div>
+
+          {accountType === "business" && (
+            <div className="grid gap-3 sm:grid-cols-2">
+              <FieldGroup label={t.testimonialCompanyLabel} htmlFor="visitor-signup-company" required>
+                <Input
+                  id="visitor-signup-company"
+                  name="companyName"
+                  required
+                  placeholder={t.testimonialCompanyPlaceholder}
+                  className="text-base"
+                />
+              </FieldGroup>
+              <FieldGroup label={t.testimonialPositionLabel} htmlFor="visitor-signup-title" required>
+                <Input
+                  id="visitor-signup-title"
+                  name="title"
+                  required
+                  placeholder={t.testimonialPositionPlaceholder}
+                  className="text-base"
+                />
+              </FieldGroup>
+            </div>
+          )}
           <div className="grid gap-3 sm:grid-cols-2">
             <FieldGroup label={t.signupNameLabel} htmlFor="visitor-signup-name" required>
               <Input id="visitor-signup-name" name="name" required placeholder={t.signupNamePlaceholder} className="text-base" />
@@ -219,12 +288,21 @@ export function TestimonialAuthForm({
             </FieldGroup>
           </div>
 
-          {signupState?.status === "error" && (
-            <p className="text-sm text-rose-600 dark:text-rose-400">{t.testimonialAuthErrors[signupState.code]}</p>
-          )}
+          {(() => {
+            const activeState = accountType === "business" ? businessSignupState : signupState;
+            return (
+              activeState?.status === "error" && (
+                <p className="text-sm text-rose-600 dark:text-rose-400">{t.testimonialAuthErrors[activeState.code]}</p>
+              )
+            );
+          })()}
 
-          <Button type="submit" disabled={signupPending} className="h-11 w-full text-base">
-            {signupPending ? t.signupSubmitting : t.signupSubmit}
+          <Button
+            type="submit"
+            disabled={accountType === "business" ? businessSignupPending : signupPending}
+            className="h-11 w-full text-base"
+          >
+            {(accountType === "business" ? businessSignupPending : signupPending) ? t.signupSubmitting : t.signupSubmit}
           </Button>
           <button
             type="button"

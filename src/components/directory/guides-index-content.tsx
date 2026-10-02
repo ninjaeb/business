@@ -49,14 +49,30 @@ export async function GuidesIndexContent({ locale }: { locale: DirectoryLocale }
               <li key={guide.id}>
                 <Link href={directoryGuidePath(locale, guide.slug)} className="block">
                   <Card className="transition-colors hover:border-petrol/40 dark:hover:border-petrol-light/30">
-                    <CardBody className="space-y-1.5">
-                      {guide.industry && (
-                        <span className="text-xs font-medium text-petrol dark:text-petrol-light">
-                          {INDUSTRY_LABELS_BY_LOCALE[locale][guide.industry]}
-                        </span>
+                    <CardBody className="flex gap-4">
+                      {/* Only when the guide's own body happens to embed one
+                          (see DirectoryGuideSummary's own comment) — no
+                          placeholder box for a guide without one yet, so
+                          today's text-only card stays exactly as it was. */}
+                      {guide.coverImageUrl && (
+                        // eslint-disable-next-line @next/next/no-img-element -- served straight out of the DB by /api/directory-images/[id], same reasoning as ListingCard's own img tag
+                        <img
+                          src={guide.coverImageUrl}
+                          alt=""
+                          loading="lazy"
+                          decoding="async"
+                          className="h-24 w-24 shrink-0 rounded-lg object-cover sm:h-28 sm:w-40"
+                        />
                       )}
-                      <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">{guide.title}</h3>
-                      <p className="line-clamp-3 text-sm text-slate-600 dark:text-slate-300">{guide.excerpt}</p>
+                      <div className="min-w-0 flex-1 space-y-1.5">
+                        {guide.industry && (
+                          <span className="text-xs font-medium text-petrol dark:text-petrol-light">
+                            {INDUSTRY_LABELS_BY_LOCALE[locale][guide.industry]}
+                          </span>
+                        )}
+                        <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">{guide.title}</h3>
+                        <p className="line-clamp-3 text-sm text-slate-600 dark:text-slate-300">{guide.excerpt}</p>
+                      </div>
                     </CardBody>
                   </Card>
                 </Link>
