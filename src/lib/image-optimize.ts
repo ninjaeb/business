@@ -8,6 +8,12 @@ export const GALLERY_PHOTO_MAX_DIMENSION = 1600;
 // every logo, however it arrived (a raw upload, the crop tool, or AI Auto
 // Create's fetched photo), is normalized to this same ceiling here too.
 export const LOGO_MAX_DIMENSION = 512;
+// A video gallery thumbnail (see fetchVideoOEmbed) only ever renders small —
+// an aspect-video card in a two-column grid, never full-bleed — so this
+// stays well below GALLERY_PHOTO_MAX_DIMENSION to keep each one a modest
+// addition to PartnerListing.videos' own JSON column rather than a full
+// photo-sized one.
+export const VIDEO_THUMBNAIL_MAX_DIMENSION = 640;
 
 export type OptimizedImage = { buffer: Buffer; contentType: string };
 
