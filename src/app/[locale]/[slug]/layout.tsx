@@ -19,7 +19,7 @@ import { stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
 import { resolveDirectoryLocale } from "@/lib/directory-locale";
 import { getVerifiedPartnerOrNull, getVerifiedTestimonialAuthorOrNull } from "@/lib/auth/dal";
 import { getPublicGoogleClientId } from "@/lib/auth/google";
-import { getVisitorTestimonialForListing } from "@/lib/testimonials";
+import { getVisitorTestimonialForListing, listApprovedTestimonialsForJsonLd } from "@/lib/testimonials";
 import {
   DIRECTORY_STRINGS,
   DIRECTORY_HOME_TITLE_BY_LOCALE,
@@ -140,6 +140,7 @@ function buildJsonLd(
   listing: ListingWithMeta,
   url: string,
   images: { url: string; caption?: string }[],
+  testimonials: { authorName: string; rating: number | null; body: string; createdAt: Date }[],
 ) {
   const jsonLd: Record<string, unknown> = {
     "@context": "https://schema.org",
@@ -188,6 +189,41 @@ function buildJsonLd(
       ratingValue: listing.googleRating,
       reviewCount: listing.googleRatingCount,
     };
+  } else {
+    // No Google rating on file — fall back to this listing's own APPROVED
+    // testimonials (rating is required at submission, see
+    // submitDirectoryTestimonial's Zod schema, so "has a rating" covers
+    // every real one; the `!== null` guard is just defensive against the
+    // column's own nullability). Google's own rating wins when both exist
+    // rather than the two being merged or averaged — it's a verified
+    // external signal, this site's own reviews are self-reported.
+    const rated = testimonials.filter((testimonial) => testimonial.rating !== null);
+    if (rated.length > 0) {
+      const average = rated.reduce((sum, testimonial) => sum + (testimonial.rating as number), 0) / rated.length;
+      jsonLd.aggregateRating = {
+        "@type": "AggregateRating",
+        ratingValue: Math.round(average * 10) / 10,
+        reviewCount: rated.length,
+      };
+    }
+  }
+  // Mirrors exactly what the Testimonials page itself shows (every APPROVED
+  // testimonial, same order) — structured data should never claim more or
+  // less than what a visitor landing on the page can already see.
+  // reviewRating is only set when the testimonial has one (always true in
+  // practice, see the aggregateRating fallback's own comment above) —
+  // Review's reviewRating is optional in the schema.org vocabulary, but a
+  // Review Google counts toward a rich result needs one.
+  if (testimonials.length > 0) {
+    jsonLd.review = testimonials.map((testimonial) => ({
+      "@type": "Review",
+      author: { "@type": "Person", name: testimonial.authorName },
+      datePublished: testimonial.createdAt.toISOString().slice(0, 10),
+      reviewBody: testimonial.body,
+      ...(testimonial.rating !== null
+        ? { reviewRating: { "@type": "Rating", ratingValue: testimonial.rating, bestRating: 5, worstRating: 1 } }
+        : {}),
+    }));
   }
   // English regardless of the page's own locale — schema.org's own
   // vocabulary/consumers (search engines, AI crawlers) expect this field in
@@ -237,7 +273,7 @@ export default async function ListingLayout({
   const listing = await getPublishedListingBySlug(slug);
   if (!listing) notFound();
 
-  const [siteOrigin, , referralCode, viewer, branches, testimonialVisitor] = await Promise.all([
+  const [siteOrigin, , referralCode, viewer, branches, testimonialVisitor, testimonialsForJsonLd] = await Promise.all([
     getSiteOrigin(),
     // Runs once per visit to this listing, not once per page: Next.js keeps
     // a layout mounted across client-side navigation between its own child
@@ -265,6 +301,12 @@ export default async function ListingLayout({
     // purpose (personalizing the Recommend link), so this is computed
     // separately even though the two checks can both be true at once.
     getVerifiedTestimonialAuthorOrNull(),
+    // Feeds buildJsonLd's Review/AggregateRating markup below — every
+    // section page needs this, same reasoning as `listing` itself, not just
+    // the dedicated Testimonials page (which re-queries its own, fuller
+    // copy for display, including images this JSON-LD-only projection
+    // leaves out).
+    listApprovedTestimonialsForJsonLd(listing.id),
   ]);
   const existingTestimonial = testimonialVisitor
     ? ((await getVisitorTestimonialForListing(testimonialVisitor.id, listing.id)) ?? null)
@@ -375,6 +417,7 @@ export default async function ListingLayout({
             { ...listing, services: display.services },
             pageUrl,
             listingImageEntries(listing, siteOrigin, slug),
+            testimonialsForJsonLd,
           ),
         }}
       />

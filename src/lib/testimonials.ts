@@ -10,3 +10,15 @@ export async function getVisitorTestimonialForListing(visitorId: string, listing
     select: { status: true, reviewNote: true },
   });
 }
+
+// Feeds the listing layout's Review/AggregateRating JSON-LD (see buildJsonLd
+// in src/app/[locale]/[slug]/layout.tsx) — a narrower projection than the
+// Testimonials page's own query (no images, no locale), since JSON-LD only
+// ever needs the fields a Review/Rating node itself carries.
+export async function listApprovedTestimonialsForJsonLd(listingId: string) {
+  return db.directoryTestimonial.findMany({
+    where: { listingId, status: "APPROVED" },
+    orderBy: { createdAt: "desc" },
+    select: { authorName: true, rating: true, body: true, createdAt: true },
+  });
+}
