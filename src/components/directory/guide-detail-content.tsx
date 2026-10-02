@@ -80,7 +80,7 @@ export async function GuideDetailContent({ guide, locale }: { guide: Guide; loca
             </span>
           )}
         </div>
-        <h1 className="mt-1 text-2xl font-semibold text-slate-900 dark:text-slate-100">{guide.title}</h1>
+        <h1 className="mt-1 text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl dark:text-slate-100">{guide.title}</h1>
         <p className="mt-2 text-base text-slate-600 dark:text-slate-300">{guide.excerpt}</p>
         <Link
           href={directoryAboutPath(locale)}
