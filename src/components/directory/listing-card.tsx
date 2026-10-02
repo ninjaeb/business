@@ -38,8 +38,10 @@ const MAX_VISIBLE_SERVICES = 3;
 
 // Purely decorative (the category badge overlaid on the cover photo) — one
 // representative icon per Industry, not an attempt to classify a business
-// more precisely than its own chosen category already does.
-const INDUSTRY_ICONS: Record<Industry, LucideIcon> = {
+// more precisely than its own chosen category already does. Exported for
+// guides-index-content.tsx's own industry pill, so a guide and a listing
+// card never disagree about which icon stands for which industry.
+export const INDUSTRY_ICONS: Record<Industry, LucideIcon> = {
   TECHNOLOGY: Cpu,
   RETAIL_ECOMMERCE: ShoppingBag,
   HEALTHCARE: HeartPulse,
