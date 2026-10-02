@@ -49,6 +49,7 @@ import { Badge } from "@/components/ui/badge";
 import { StarRating } from "@/components/ui/star-rating";
 import { buttonClasses } from "@/components/ui/button";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
+import { ExternalLink } from "@/components/ui/external-link";
 import { ListingLogo } from "@/components/directory/listing-logo";
 import { DirectoryLeadForm } from "@/components/directory/directory-lead-form";
 import { InquiryProvider, InquiryScrollTarget } from "@/components/directory/listing-inquiry";
@@ -88,15 +89,13 @@ function GoogleRatingBadge({ listing, ratingLabel }: { listing: ListingWithMeta;
     </>
   );
   return listing.googleMapsUrl ? (
-    <a
+    <ExternalLink
       href={listing.googleMapsUrl}
-      target="_blank"
-      rel="noopener noreferrer nofollow"
       aria-label={label}
       className="inline-flex items-center gap-1 hover:text-petrol hover:underline dark:hover:text-petrol-light"
     >
       {content}
-    </a>
+    </ExternalLink>
   ) : (
     <span aria-label={label} className="inline-flex items-center gap-1">
       {content}
@@ -474,15 +473,13 @@ export default async function ListingLayout({
                   </Link>
                 )}
                 {listing.website && (
-                  <a
+                  <ExternalLink
                     href={listing.website}
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
                     className="inline-flex items-center gap-1 text-petrol hover:underline dark:text-petrol-light"
                   >
                     <Globe className="h-4 w-4" />
                     {t.websiteLabel}
-                  </a>
+                  </ExternalLink>
                 )}
                 <span className="inline-flex items-center gap-1 text-sm text-slate-400">
                   <Eye className="h-4 w-4" />
@@ -630,15 +627,13 @@ export default async function ListingLayout({
                   </Link>
                 )}
                 {listing.website && (
-                  <a
+                  <ExternalLink
                     href={listing.website}
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
                     className="inline-flex items-center gap-1 text-petrol hover:underline dark:text-petrol-light"
                   >
                     <Globe className="h-4 w-4" />
                     {t.websiteLabel}
-                  </a>
+                  </ExternalLink>
                 )}
                 <span className="inline-flex items-center gap-1 text-sm text-slate-400">
                   <Eye className="h-4 w-4" />
@@ -666,18 +661,16 @@ export default async function ListingLayout({
                       </a>
                     )}
                     {listing.whatsAppNumber && (
-                      <a
+                      <ExternalLink
                         href={whatsAppUrl(
                           listing.whatsAppNumber,
                           formatContactWhatsAppMessage(t.contactWhatsAppMessage, listing.companyName),
                         )}
-                        target="_blank"
-                        rel="noopener noreferrer"
                         className={buttonClasses("secondary", "md", "min-h-12 flex-1 justify-center gap-2")}
                       >
                         <MessageCircle className="h-4 w-4" />
                         {t.contactWhatsAppCta}
-                      </a>
+                      </ExternalLink>
                     )}
                   </div>
                 )}

@@ -7,6 +7,7 @@ import { FloatingWhatsAppButton } from "@/components/directory/floating-whatsapp
 import { HeaderSearch } from "@/components/directory/header-search";
 import { FacebookIcon, LinkedInIcon } from "@/components/directory/social-icons";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
+import { ExternalLink } from "@/components/ui/external-link";
 import { logout } from "@/app/actions/auth";
 import { getSessionPayload } from "@/lib/session";
 import { db } from "@/lib/db";
@@ -283,16 +284,14 @@ export async function DirectoryChrome({
                 {DIRECTORY_SAME_AS.map((profile) => {
                   const Icon = SOCIAL_ICONS[profile.label];
                   return (
-                    <a
+                    <ExternalLink
                       key={profile.url}
                       href={profile.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
                       aria-label={profile.label}
                       className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-slate-300 transition-colors hover:border-white/30 hover:text-white"
                     >
                       {Icon && <Icon className="h-4 w-4" />}
-                    </a>
+                    </ExternalLink>
                   );
                 })}
               </div>
@@ -372,9 +371,9 @@ export async function DirectoryChrome({
                   </Link>
                 </li>
                 <li>
-                  <a href="https://gotka.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                  <ExternalLink href="https://gotka.com" className="hover:text-white">
                     gotka.com
-                  </a>
+                  </ExternalLink>
                 </li>
               </ul>
             </div>

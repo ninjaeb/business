@@ -1,6 +1,7 @@
 import { Fragment, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
 import { ZoomableImage } from "@/components/directory/zoomable-image";
+import { ExternalLink } from "@/components/ui/external-link";
 
 // A deliberately small formatting grammar for the partner directory's
 // About field and News/Promotion posts — bold, italic, strikethrough,
@@ -65,15 +66,13 @@ function renderInline(text: string, keyPrefix: string, zoomableImages: boolean):
     } else if (linkUrl !== undefined) {
       nodes.push(
         isSafeUrl(linkUrl) ? (
-          <a
+          <ExternalLink
             key={key}
             href={linkUrl}
-            target="_blank"
-            rel="noopener noreferrer nofollow"
             className="text-petrol underline hover:text-petrol-light dark:text-petrol-light"
           >
             {linkText}
-          </a>
+          </ExternalLink>
         ) : (
           full
         ),
