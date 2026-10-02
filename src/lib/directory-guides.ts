@@ -2,6 +2,7 @@ import "server-only";
 
 import { db } from "@/lib/db";
 import { slugify } from "@/lib/slug";
+import { firstMarkdownLiteImageUrl } from "@/lib/markdown-lite";
 import type { DirectoryLocale } from "@/lib/directory-i18n";
 import type { DirectoryGuideStatus, Industry } from "@/generated/prisma/client";
 
@@ -64,6 +65,14 @@ export type DirectoryGuideSummary = {
   slug: string;
   title: string;
   excerpt: string;
+  // The guide's own cover image, if its body happens to embed one (see
+  // "Give the first guide a cover image" — there's no dedicated
+  // coverImage column, just the first ![alt](url) the author's markdown
+  // happens to contain, same source buildGuideJsonLd already reads for
+  // the guide's own JSON-LD image). null for a guide that hasn't had one
+  // added yet — the index/related-guides cards just render without a
+  // thumbnail rather than showing an empty placeholder box.
+  coverImageUrl: string | null;
   industry: Industry | null;
   publishedAt: Date | null;
   updatedAt: Date;
@@ -93,6 +102,7 @@ function toGuideSummary(
     slug: guide.slug,
     title: display.title,
     excerpt: display.excerpt,
+    coverImageUrl: firstMarkdownLiteImageUrl(display.body),
     industry: guide.industry,
     publishedAt: guide.publishedAt,
     updatedAt: guide.updatedAt,
