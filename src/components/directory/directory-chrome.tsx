@@ -140,10 +140,16 @@ export async function DirectoryChrome({
     { href: directoryGuidesPath(locale), label: t.navGuides },
   ];
   // The header's own nav row/hamburger — unlike topNavItems above (still
-  // used as-is for the footer's "Explore" column) — collapses down to this
-  // one link out to gotka.com's own business section, not localized: a
-  // deliberate, specific destination rather than a translated nav label.
-  const headerTopNavItems = [{ href: "https://business.gotka.com/en", label: "Business" }];
+  // used as-is for the footer's "Explore" column) — drops the Industries and
+  // Location links and repoints "All Business" out to gotka.com's own
+  // business section instead of this directory's own category index; the
+  // other three links keep their normal localized destinations.
+  const headerTopNavItems = [
+    { href: "https://business.gotka.com/en", label: t.navAllBusiness },
+    { href: directoryProductsPath(locale), label: t.navLatestProducts },
+    { href: directoryNewsPath(locale), label: t.updatesHeading },
+    { href: directoryGuidesPath(locale), label: t.navGuides },
+  ];
 
   return (
     <div className="flex min-h-full flex-col bg-slate-50 dark:bg-neutral-950">
