@@ -3,6 +3,7 @@ import "server-only";
 import { db } from "@/lib/db";
 import { slugify } from "@/lib/slug";
 import { firstMarkdownLiteImageUrl } from "@/lib/markdown-lite";
+import { faqsFromJson, type FaqEntry } from "@/lib/directory";
 import type { DirectoryLocale } from "@/lib/directory-i18n";
 import type { DirectoryGuideStatus, Industry } from "@/generated/prisma/client";
 
@@ -13,24 +14,27 @@ import type { DirectoryGuideStatus, Industry } from "@/generated/prisma/client";
 // PUBLISHED, so a save takes effect immediately, same as any other
 // admin-only content in this app.
 
-// AI-translated (or hand-edited) copies of title/excerpt/body for the
+type GuideTranslationEntry = { title: string; excerpt: string; body: string; faqs: FaqEntry[] };
+
+// AI-translated (or hand-edited) copies of title/excerpt/body/faqs for the
 // directory's non-English locales — same shape/convention as
 // ListingTranslations in src/lib/directory.ts (keyed by locale minus "en";
 // the English columns are the primary copy, never duplicated in here).
 // Unlike PartnerListing, there's no admin-UI translation editor for guides
 // yet — this is populated only by prisma/guides-seed.ts at seed time.
-export type DirectoryGuideTranslations = Partial<Record<Exclude<DirectoryLocale, "en">, { title: string; excerpt: string; body: string }>>;
+export type DirectoryGuideTranslations = Partial<Record<Exclude<DirectoryLocale, "en">, GuideTranslationEntry>>;
 
 const GUIDE_TRANSLATION_LOCALES: Exclude<DirectoryLocale, "en">[] = ["zh", "ms"];
 
-function sanitizeGuideTranslationEntry(entry: unknown): { title: string; excerpt: string; body: string } | null {
+function sanitizeGuideTranslationEntry(entry: unknown): GuideTranslationEntry | null {
   if (!entry || typeof entry !== "object") return null;
   const raw = entry as Record<string, unknown>;
   const title = typeof raw.title === "string" ? raw.title.trim() : "";
   const excerpt = typeof raw.excerpt === "string" ? raw.excerpt.trim() : "";
   const body = typeof raw.body === "string" ? raw.body.trim() : "";
-  if (!title && !excerpt && !body) return null;
-  return { title, excerpt, body };
+  const faqs = faqsFromJson(raw.faqs);
+  if (!title && !excerpt && !body && faqs.length === 0) return null;
+  return { title, excerpt, body, faqs };
 }
 
 export function guideTranslationsFromJson(value: unknown): DirectoryGuideTranslations {
@@ -44,12 +48,15 @@ export function guideTranslationsFromJson(value: unknown): DirectoryGuideTransla
   return result;
 }
 
-export type GuideDisplay = { title: string; excerpt: string; body: string };
+export type GuideDisplay = { title: string; excerpt: string; body: string; faqs: FaqEntry[] };
 
 // Same fallback rule as resolveListingDisplay: a translation is used only
-// if present for that guide's locale, otherwise the English column.
+// if present for that guide's locale, otherwise the English column. faqs
+// falls back the same way as title/excerpt/body — an empty translated FAQ
+// list (translations added before faqs existed) still shows the English
+// questions rather than no FAQ section at all.
 export function resolveGuideDisplay(
-  guide: { title: string; excerpt: string; body: string; translations: unknown },
+  guide: { title: string; excerpt: string; body: string; faqs: unknown; translations: unknown },
   locale: DirectoryLocale,
 ): GuideDisplay {
   const translation = locale === "zh" || locale === "ms" ? guideTranslationsFromJson(guide.translations)[locale] : undefined;
@@ -57,6 +64,7 @@ export function resolveGuideDisplay(
     title: translation?.title || guide.title,
     excerpt: translation?.excerpt || guide.excerpt,
     body: translation?.body || guide.body,
+    faqs: translation?.faqs.length ? translation.faqs : faqsFromJson(guide.faqs),
   };
 }
 
@@ -84,6 +92,10 @@ const SUMMARY_SELECT = {
   title: true,
   excerpt: true,
   body: true,
+  // Only fetched here because resolveGuideDisplay's input type requires it
+  // (title/excerpt/body/faqs all resolve together) — a summary card itself
+  // never reads DirectoryGuideSummary.faqs, which doesn't exist as a field.
+  faqs: true,
   industry: true,
   publishedAt: true,
   updatedAt: true,

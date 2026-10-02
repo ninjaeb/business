@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ExternalLink, Play, X } from "lucide-react";
+import { ExternalLink as ExternalLinkIcon, Play, X } from "lucide-react";
 import { VIDEO_CATEGORIES, VIDEO_PROVIDER_DISPLAY_NAMES, type VideoCategory, type VideoProvider } from "@/lib/labels";
+import { ExternalLink } from "@/components/ui/external-link";
 
 export type GalleryVideo = {
   url: string;
@@ -53,14 +54,12 @@ function VideoCard({
             <Play className="relative h-12 w-12 fill-white text-white drop-shadow" />
           </button>
         ) : (
-          <a
+          <ExternalLink
             href={video.url}
-            target="_blank"
-            rel="noopener noreferrer nofollow"
             className="flex h-full w-full items-center justify-center text-sm text-petrol hover:underline dark:text-petrol-light"
           >
             Watch video
-          </a>
+          </ExternalLink>
         )}
       </div>
       <div className="flex flex-wrap items-center gap-2">
@@ -141,15 +140,13 @@ function VideoLightbox({
             way out whatever the actual cause turns out to be, for a
             visitor who has no way to tell "this one's broken" from "this
             one's just slow to load" while staring at a stalled embed. */}
-        <a
+        <ExternalLink
           href={video.url}
-          target="_blank"
-          rel="noopener noreferrer nofollow"
           className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-2 text-sm font-medium text-white hover:bg-white/20"
         >
           {watchOnLabel}
-          <ExternalLink className="h-4 w-4" />
-        </a>
+          <ExternalLinkIcon className="h-4 w-4" />
+        </ExternalLink>
       </div>
     </div>
   );
