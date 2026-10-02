@@ -12,7 +12,7 @@ import {
 } from "@/lib/directory-i18n";
 import { buildBreadcrumbJsonLd } from "@/lib/directory";
 import { buildGuideJsonLd } from "@/lib/directory-seo";
-import { listPublishedGuidesByIndustry } from "@/lib/directory-guides";
+import { listPublishedGuidesByIndustry, resolveGuideDisplay } from "@/lib/directory-guides";
 import { renderMarkdownLite } from "@/lib/markdown-lite";
 import { formatDate } from "@/lib/format";
 import { Card, CardBody } from "@/components/ui/card";
@@ -28,6 +28,7 @@ type Guide = {
   industry: Industry | null;
   publishedAt: Date | null;
   updatedAt: Date;
+  translations: unknown;
 };
 
 // A guide's own detail page — top-level (not nested under a listing's own
@@ -37,22 +38,26 @@ type Guide = {
 // the actual pillar-to-cluster link this content type exists to make, not
 // just a page that happens to exist.
 export async function GuideDetailContent({ guide, locale }: { guide: Guide; locale: DirectoryLocale }) {
+  const display = resolveGuideDisplay(guide, locale);
   const [siteOrigin, relatedGuides] = await Promise.all([
     getSiteOrigin(),
-    guide.industry ? listPublishedGuidesByIndustry(guide.industry, { excludeId: guide.id }) : Promise.resolve([]),
+    guide.industry ? listPublishedGuidesByIndustry(guide.industry, locale, { excludeId: guide.id }) : Promise.resolve([]),
   ]);
   const t = DIRECTORY_STRINGS[locale];
   const pageUrl = `${siteOrigin}${directoryGuidePath(locale, guide.slug)}`;
   const breadcrumbItems = [
     { name: DIRECTORY_HOME_TITLE_BY_LOCALE[locale], url: `${siteOrigin}${directoryHomePath(locale)}` },
     { name: t.guidesIndexHeading, url: `${siteOrigin}${directoryGuidesPath(locale)}` },
-    { name: guide.title, url: pageUrl },
+    { name: display.title, url: pageUrl },
   ];
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildBreadcrumbJsonLd(breadcrumbItems) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildGuideJsonLd(guide, siteOrigin, pageUrl) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: buildGuideJsonLd({ ...guide, ...display }, siteOrigin, pageUrl) }}
+      />
       <div className="mx-auto w-full max-w-3xl px-4 py-8 sm:px-8">
         <DirectoryBreadcrumbs items={breadcrumbItems} navLabel={t.breadcrumbNavLabel} />
         <div className="mt-3 flex flex-wrap items-center gap-2">
@@ -80,8 +85,8 @@ export async function GuideDetailContent({ guide, locale }: { guide: Guide; loca
             </span>
           )}
         </div>
-        <h1 className="mt-1 text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl dark:text-slate-100">{guide.title}</h1>
-        <p className="mt-2 text-base text-slate-600 dark:text-slate-300">{guide.excerpt}</p>
+        <h1 className="mt-1 text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl dark:text-slate-100">{display.title}</h1>
+        <p className="mt-2 text-base text-slate-600 dark:text-slate-300">{display.excerpt}</p>
         <Link
           href={directoryAboutPath(locale)}
           className="mt-1 inline-block text-xs text-slate-400 hover:text-petrol hover:underline dark:text-slate-500 dark:hover:text-petrol-light"
@@ -90,7 +95,7 @@ export async function GuideDetailContent({ guide, locale }: { guide: Guide; loca
         </Link>
 
         <div className="mt-6 text-base text-slate-600 dark:text-slate-300">
-          {renderMarkdownLite(guide.body, undefined, { zoomableImages: true })}
+          {renderMarkdownLite(display.body, undefined, { zoomableImages: true })}
         </div>
 
         {relatedGuides.length > 0 && (

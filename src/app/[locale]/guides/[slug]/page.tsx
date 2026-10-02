@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { resolveDirectoryLocale } from "@/lib/directory-locale";
-import { getPublishedGuideBySlug } from "@/lib/directory-guides";
+import { getPublishedGuideBySlug, resolveGuideDisplay } from "@/lib/directory-guides";
 import { buildGuideMetadata } from "@/lib/directory-seo";
 import { getSiteOrigin } from "@/lib/site-url";
 import { GuideDetailContent } from "@/components/directory/guide-detail-content";
@@ -17,7 +17,7 @@ export async function generateMetadata({
   const guide = await getPublishedGuideBySlug(slug);
   if (!guide) return {};
   const siteOrigin = await getSiteOrigin();
-  return buildGuideMetadata({ guide, siteOrigin, locale: resolved });
+  return buildGuideMetadata({ guide: { ...guide, ...resolveGuideDisplay(guide, resolved) }, siteOrigin, locale: resolved });
 }
 
 export const dynamic = "force-dynamic";
