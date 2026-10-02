@@ -92,7 +92,7 @@ export default async function TestimonialsPage({
             visitor={visitor ? { name: visitor.name } : null}
             existingTestimonial={existingTestimonial}
             variant="primary"
-            className="w-full bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"
+            className="bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"
           />
         </div>
       </CardBody>
