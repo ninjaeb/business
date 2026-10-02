@@ -5,6 +5,7 @@ import path from "node:path";
 import { db } from "@/lib/db";
 import { slugify } from "@/lib/slug";
 import { countListingsByCategory, countListingsByCityState, countListingsByIndustry, loadPublishedListings } from "@/lib/directory";
+import { listPublishedGuides } from "@/lib/directory-guides";
 import {
   DIRECTORY_LOCALES,
   DIRECTORY_HOME_TITLE_BY_LOCALE,
@@ -13,6 +14,7 @@ import {
   directoryCategoriesIndexPath,
   directoryContactPath,
   directoryEditorialPolicyPath,
+  directoryGuidePath,
   directoryGuidesPath,
   directoryHomePath,
   directoryIndustriesIndexPath,
@@ -56,9 +58,10 @@ function inline(text: string): string {
 }
 
 export async function buildLlmsTxt(): Promise<string> {
-  const [listings, categories] = await Promise.all([
+  const [listings, categories, guides] = await Promise.all([
     loadPublishedListings(),
     db.businessCategory.findMany({ orderBy: { name: "asc" }, select: { name: true } }),
+    listPublishedGuides("en"),
   ]);
   const countByCategory = countListingsByCategory(listings);
 
@@ -139,13 +142,27 @@ export async function buildLlmsTxt(): Promise<string> {
     lines.push("");
   }
 
+  // Each guide its own line (title + excerpt + URL), same reasoning as
+  // Businesses above — before this, the only guide-related line anywhere in
+  // this file was a single generic link to the /guides index itself, which
+  // told an AI system a guides section exists but nothing about what any
+  // specific guide covers or where to fetch it without first crawling that
+  // index page's own HTML.
+  if (guides.length > 0) {
+    lines.push("## Guides");
+    for (const { slug, title, excerpt } of guides) {
+      lines.push(`- [${inline(title)}](${STATIC_SEO_ORIGIN}${directoryGuidePath("en", slug)}): ${inline(excerpt)}`);
+    }
+    lines.push("");
+  }
+
   lines.push("## More");
   lines.push(`- [All business categories](${STATIC_SEO_ORIGIN}${directoryCategoriesIndexPath("en")}): Every category, including ones with no business yet.`);
   lines.push(`- [All industries](${STATIC_SEO_ORIGIN}${directoryIndustriesIndexPath("en")}): Every industry, including ones with no business yet.`);
   lines.push(`- [All locations](${STATIC_SEO_ORIGIN}${directoryLocationsIndexPath("en")}): Every state/region with a published business.`);
   lines.push(`- [Latest products & services](${STATIC_SEO_ORIGIN}${directoryProductsPath("en")}): Recently added products and services across the directory.`);
   lines.push(`- [News & promotions](${STATIC_SEO_ORIGIN}${directoryNewsPath("en")}): Current news and promotions from businesses in the directory.`);
-  lines.push(`- [Guides](${STATIC_SEO_ORIGIN}${directoryGuidesPath("en")}): In-depth guides to help you choose and compare businesses in the directory.`);
+  lines.push(`- [All guides](${STATIC_SEO_ORIGIN}${directoryGuidesPath("en")}): Every in-depth guide, including ones listed individually above.`);
   lines.push("");
 
   // Who publishes this and how to reach them — the same trust signals an
