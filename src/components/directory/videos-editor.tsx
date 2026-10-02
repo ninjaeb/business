@@ -113,7 +113,7 @@ export function VideosEditor({
                 </Select>
               </div>
               {video.thumbnailUrl && (
-                // eslint-disable-next-line @next/next/no-img-element -- an external third-party thumbnail (YouTube/Vimeo/etc.), not one this app serves itself
+                // eslint-disable-next-line @next/next/no-img-element -- a data: URL (see VideoEntry's own comment) that next/image's remote loader can't optimize anyway
                 <img src={video.thumbnailUrl} alt="" className="h-16 w-28 rounded object-cover" />
               )}
             </div>
