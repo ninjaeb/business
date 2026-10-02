@@ -186,6 +186,12 @@ export function formatContactWhatsAppMessage(template: string, business: string)
   return template.replace("{business}", business);
 }
 
+// Fills in DirectoryStrings.footerCopyright's {year} token — see that
+// field's own comment.
+export function formatFooterCopyright(template: string, year: number): string {
+  return template.replace("{year}", String(year));
+}
+
 // Fills in DirectoryStrings.testimonialFormPhotosUploading's {done}/{total}
 // tokens — see that field's own comment.
 export function formatTestimonialPhotosUploading(template: string, done: number, total: number): string {
@@ -599,6 +605,20 @@ export type DirectoryStrings = {
   notFoundDescription: string;
   notFoundBackCta: string;
   footerTagline: string;
+  // The footer's own column headings and WhatsApp CTA — see
+  // DirectoryChrome's footer, redesigned to match gotka.com's own real
+  // footer (dark background, logo/tagline/social column + grouped link
+  // columns + a floating "WhatsApp us" button, all reusing
+  // DIRECTORY_PUBLISHER/DIRECTORY_SAME_AS, the same real contact details
+  // the Contact page and Organization JSON-LD already use).
+  footerDirectoryHeading: string;
+  footerExploreHeading: string;
+  footerLegalHeading: string;
+  footerContactHeading: string;
+  footerWhatsAppCta: string;
+  footerWhatsAppMessage: string;
+  // {year} token, filled by formatFooterCopyright below.
+  footerCopyright: string;
   backToDirectory: string;
   brandName: string;
   navLoginRegister: string;
@@ -871,6 +891,13 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       "The business or category you're looking for may have moved, been unpublished, or never existed. Check the link, or browse the directory from the start.",
     notFoundBackCta: "Browse the directory",
     footerTagline: "A directory of trusted businesses in the Gotka network.",
+    footerDirectoryHeading: "Directory",
+    footerExploreHeading: "Explore",
+    footerLegalHeading: "Legal",
+    footerContactHeading: "Talk to us",
+    footerWhatsAppCta: "WhatsApp us",
+    footerWhatsAppMessage: "Hi, I have a question about the Gotka Business Directory.",
+    footerCopyright: "© {year} Gotka Technologies. All rights reserved.",
     backToDirectory: "Back to directory",
     brandName: "Business Directory",
     navLoginRegister: "Business Login",
@@ -1131,6 +1158,13 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     notFoundDescription: "您查找的企业或类别可能已迁移、已下架，或从未存在。请检查链接，或从头浏览目录。",
     notFoundBackCta: "浏览目录",
     footerTagline: "Gotka 网络中值得信赖的企业目录。",
+    footerDirectoryHeading: "目录",
+    footerExploreHeading: "浏览",
+    footerLegalHeading: "法律",
+    footerContactHeading: "联系我们",
+    footerWhatsAppCta: "WhatsApp 联系我们",
+    footerWhatsAppMessage: "您好，我想咨询有关 Gotka 企业目录的问题。",
+    footerCopyright: "© {year} Gotka Technologies. 保留所有权利。",
     backToDirectory: "返回目录",
     brandName: "企业目录",
     navLoginRegister: "企业登录",
@@ -1394,6 +1428,13 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       "Perniagaan atau kategori yang anda cari mungkin telah berpindah, ditarik balik, atau tidak pernah wujud. Semak pautan itu, atau layari direktori dari mula.",
     notFoundBackCta: "Layari direktori",
     footerTagline: "Direktori perniagaan yang dipercayai dalam rangkaian Gotka.",
+    footerDirectoryHeading: "Direktori",
+    footerExploreHeading: "Terokai",
+    footerLegalHeading: "Perundangan",
+    footerContactHeading: "Hubungi kami",
+    footerWhatsAppCta: "WhatsApp kami",
+    footerWhatsAppMessage: "Hai, saya ada soalan mengenai Direktori Perniagaan Gotka.",
+    footerCopyright: "© {year} Gotka Technologies. Hak cipta terpelihara.",
     backToDirectory: "Kembali ke direktori",
     brandName: "Direktori Perniagaan",
     navLoginRegister: "Log Masuk Perniagaan",
