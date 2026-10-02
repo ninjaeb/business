@@ -402,6 +402,10 @@ export type DirectoryStrings = {
   // Heading above a guide's own FAQ accordion (see GuideDetailContent) —
   // only rendered when that guide actually has faqs set.
   guideFaqHeading: string;
+  // Heading above the Guides index page's own grid of everything past the
+  // first three featured guides (see GuidesIndexContent) — only rendered
+  // once there are more than three published guides to show there.
+  guidesLatestHeading: string;
   // The listing page's two "other businesses" sections — newest published
   // listings overall, and other listings in the same state but a different
   // industry (see latestListings/nearbyListingsExcludingIndustry in
@@ -756,6 +760,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     guideReadMoreLabel: "Read guide",
     guideRelatedHeading: "Related guides",
     guideFaqHeading: "Frequently asked questions",
+    guidesLatestHeading: "More guides",
     latestBusinessesHeading: "Latest Businesses",
     nearbyBusinessesHeading: "Businesses Near You",
     aboutHeading: "About",
@@ -1032,6 +1037,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     guideReadMoreLabel: "阅读指南",
     guideRelatedHeading: "相关指南",
     guideFaqHeading: "常见问题",
+    guidesLatestHeading: "更多指南",
     latestBusinessesHeading: "最新企业",
     nearbyBusinessesHeading: "附近企业",
     aboutHeading: "关于",
@@ -1305,6 +1311,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     guideReadMoreLabel: "Baca panduan",
     guideRelatedHeading: "Panduan berkaitan",
     guideFaqHeading: "Soalan lazim",
+    guidesLatestHeading: "Lebih banyak panduan",
     latestBusinessesHeading: "Perniagaan Terkini",
     nearbyBusinessesHeading: "Perniagaan Berhampiran",
     aboutHeading: "Tentang",
