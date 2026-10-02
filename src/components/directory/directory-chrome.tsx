@@ -3,7 +3,9 @@ import { Suspense } from "react";
 import { DirectoryLanguageSwitcher } from "@/components/directory/directory-language-switcher";
 import { DirectoryNavMenu, type DirectoryViewer } from "@/components/directory/directory-nav-menu";
 import { DirectoryTopNav } from "@/components/directory/directory-top-nav";
+import { FloatingWhatsAppButton } from "@/components/directory/floating-whatsapp-button";
 import { HeaderSearch } from "@/components/directory/header-search";
+import { FacebookIcon, LinkedInIcon } from "@/components/directory/social-icons";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { logout } from "@/app/actions/auth";
 import { getSessionPayload } from "@/lib/session";
@@ -27,9 +29,18 @@ import {
   directoryProductsPath,
   directorySignupPath,
   directoryTermsPath,
+  formatFooterCopyright,
   localizedBusinessNavItems,
   type DirectoryLocale,
 } from "@/lib/directory-i18n";
+
+// gotka.com's own real social icons (see social-icons.tsx) — mapped by the
+// same `label` DIRECTORY_SAME_AS already carries, so adding a third profile
+// there later just shows no icon here rather than breaking.
+const SOCIAL_ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
+  Facebook: FacebookIcon,
+  LinkedIn: LinkedInIcon,
+};
 
 // This app has a single session cookie (business_session, @/lib/session) —
 // unlike the source CRM's three separate session types, there's no staff
@@ -225,78 +236,145 @@ export async function DirectoryChrome({
         {children}
       </main>
 
-      {/* pb-40, not py-8's own 32px, on this specific side: a listing page
-          renders two fixed-position bars pinned to the viewport bottom (the
-          Services/Get in touch jump bar, and the RecommendBar pill floating
-          above it — see recommend-bar.tsx) that together reach ~144px up
-          from the viewport's bottom edge. "fixed" ignores scroll entirely,
-          so once a visitor scrolls this footer into view — the page's own
-          pb-40 (see the listing page) only delays that, it can't prevent it
-          — those bars would otherwise sit on top of this footer's own links
-          with nothing below to separate them. Harmless on every other page,
-          which has no such bars and just gets a bit more empty space at the
-          very bottom. */}
-      <footer className="border-t border-slate-200 bg-white pt-8 pb-40 dark:border-neutral-800 dark:bg-neutral-900">
-        <div className="w-full px-4 text-center text-sm text-slate-500 dark:text-slate-400 sm:px-8">
-          {/* Plain links, server-rendered: the header's hamburger menu only
-              builds its links in the browser once opened, so until this
-              existed the sign-up and sign-in pages had no crawlable link
-              anywhere in the directory's HTML. */}
-          <nav aria-label={t.stickyNavLabel} className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
-            <Link href={directoryHref} className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
-              {t.brandName}
-            </Link>
-            <Link href={signupHref} className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
-              {t.listBusinessCta}
-            </Link>
-            <Link href={benefitsHref} className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
-              {t.benefitsNavLabel}
-            </Link>
-            <Link href={aboutHref} className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
-              {t.aboutNavLabel}
-            </Link>
-            <Link href={contactHref} className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
-              {t.contactNavLabel}
-            </Link>
-            <Link href={editorialPolicyHref} className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
-              {t.editorialPolicyNavLabel}
-            </Link>
-            <Link href={privacyHref} className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
-              {t.privacyNavLabel}
-            </Link>
-            <Link href={termsHref} className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
-              {t.termsNavLabel}
-            </Link>
-            <Link href="/business-portal/login" className="hover:text-petrol hover:underline dark:hover:text-petrol-light">
-              {t.navLoginRegister}
-            </Link>
-            <a
-              href="https://gotka.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-petrol hover:underline dark:text-petrol-light"
-            >
-              gotka.com
-            </a>
-            {/* Real, crawlable links to the same profiles the Organization
-                JSON-LD's own sameAs already names — see DIRECTORY_SAME_AS's
-                own comment for why a link inside a JSON-LD script tag isn't
-                enough on its own. */}
-            {DIRECTORY_SAME_AS.map((profile) => (
-              <a
-                key={profile.url}
-                href={profile.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-petrol hover:underline dark:hover:text-petrol-light"
-              >
-                {profile.label}
-              </a>
-            ))}
-          </nav>
-          <p className="mt-3">{t.footerTagline}</p>
+      {/* pb-40, not py-12's own padding, on this specific side: a listing
+          page renders two fixed-position bars pinned to the viewport bottom
+          (the Services/Get in touch jump bar, and the RecommendBar pill
+          floating above it — see recommend-bar.tsx) that together reach
+          ~144px up from the viewport's bottom edge. "fixed" ignores scroll
+          entirely, so once a visitor scrolls this footer into view — the
+          page's own pb-40 (see the listing page) only delays that, it can't
+          prevent it — those bars would otherwise sit on top of this
+          footer's own links with nothing below to separate them. Harmless
+          on every other page, which has no such bars and just gets a bit
+          more empty space at the very bottom.
+
+          Dark navy (bg-petrol-ink) rather than this app's usual light
+          surfaces — matches gotka.com's own real footer exactly (same
+          column headings, same logo/tagline/social-icons corner, same
+          bottom bar), which this directory's footer otherwise had nothing
+          in common with. Content is the directory's own, though: gotka.com's
+          footer links to ITS OWN services (hosting, domains, ...), which
+          don't exist here. */}
+      <footer className="bg-petrol-ink pt-12 pb-40 text-slate-300">
+        <div className="mx-auto w-full max-w-6xl px-4 sm:px-8">
+          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
+            <div>
+              <Link href={directoryHref} className="flex items-center gap-2">
+                <img src="/icon-192.png" alt="" className="h-8 w-8 shrink-0" />
+                <span className="text-lg font-semibold text-white">{t.brandName}</span>
+              </Link>
+              <p className="mt-3 max-w-xs text-sm text-slate-400">{t.footerTagline}</p>
+              {/* Real, crawlable links to the same profiles the Organization
+                  JSON-LD's own sameAs already names — see DIRECTORY_SAME_AS's
+                  own comment for why a link inside a JSON-LD script tag
+                  isn't enough on its own. */}
+              <div className="mt-4 flex gap-2">
+                {DIRECTORY_SAME_AS.map((profile) => {
+                  const Icon = SOCIAL_ICONS[profile.label];
+                  return (
+                    <a
+                      key={profile.url}
+                      href={profile.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={profile.label}
+                      className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-slate-300 transition-colors hover:border-white/30 hover:text-white"
+                    >
+                      {Icon && <Icon className="h-4 w-4" />}
+                    </a>
+                  );
+                })}
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xs font-semibold tracking-wide text-slate-500 uppercase">{t.footerDirectoryHeading}</h3>
+              <ul className="mt-4 space-y-2.5 text-sm">
+                <li>
+                  <Link href={directoryHref} className="hover:text-white">
+                    {t.brandName}
+                  </Link>
+                </li>
+                <li>
+                  <Link href={signupHref} className="hover:text-white">
+                    {t.listBusinessCta}
+                  </Link>
+                </li>
+                <li>
+                  <Link href={benefitsHref} className="hover:text-white">
+                    {t.benefitsNavLabel}
+                  </Link>
+                </li>
+                <li>
+                  <Link href={aboutHref} className="hover:text-white">
+                    {t.aboutNavLabel}
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-xs font-semibold tracking-wide text-slate-500 uppercase">{t.footerExploreHeading}</h3>
+              <ul className="mt-4 space-y-2.5 text-sm">
+                {topNavItems.map((item) => (
+                  <li key={item.href}>
+                    <Link href={item.href} className="hover:text-white">
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-xs font-semibold tracking-wide text-slate-500 uppercase">{t.footerLegalHeading}</h3>
+              <ul className="mt-4 space-y-2.5 text-sm">
+                <li>
+                  <Link href={privacyHref} className="hover:text-white">
+                    {t.privacyNavLabel}
+                  </Link>
+                </li>
+                <li>
+                  <Link href={termsHref} className="hover:text-white">
+                    {t.termsNavLabel}
+                  </Link>
+                </li>
+                <li>
+                  <Link href={editorialPolicyHref} className="hover:text-white">
+                    {t.editorialPolicyNavLabel}
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-xs font-semibold tracking-wide text-slate-500 uppercase">{t.footerContactHeading}</h3>
+              <ul className="mt-4 space-y-2.5 text-sm">
+                <li>
+                  <Link href={contactHref} className="hover:text-white">
+                    {t.contactNavLabel}
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/business-portal/login" className="hover:text-white">
+                    {t.navLoginRegister}
+                  </Link>
+                </li>
+                <li>
+                  <a href="https://gotka.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                    gotka.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-10 border-t border-white/10 pt-6 text-sm text-slate-500">
+            {formatFooterCopyright(t.footerCopyright, new Date().getFullYear())}
+          </div>
         </div>
       </footer>
+      <FloatingWhatsAppButton locale={locale} />
     </div>
   );
 }
