@@ -348,6 +348,24 @@ async function main() {
       console.log("package-lock.json unchanged — skipping npm install.");
     }
 
+    // prisma/seed.ts imports the generated client directly (src/generated/prisma,
+    // gitignored) rather than shelling out to the Prisma CLI — so it only ever
+    // sees whatever was last generated. `npm install`'s postinstall hook is the
+    // only thing above that regenerates it, and that's skipped whenever this
+    // commit didn't touch package-lock.json. A commit that changes
+    // prisma/schema.prisma without touching package-lock.json (adding a field
+    // the seed script now reads, say) then runs `migrate deploy` (which only
+    // applies SQL — it never touches the generated client) and the seed script
+    // against a stale client that predates the new field, throwing
+    // "Unknown field ... for select statement" and failing the whole deploy —
+    // which means signalRestart() below never runs, so the app is left frozen
+    // on the previous build with no way to tell from the outside that anything
+    // is wrong. Regenerating here unconditionally — cheap, and needs no
+    // database connection, same as server.js's own copy of this step — closes
+    // that gap regardless of what else did or didn't change.
+    console.log("Regenerating Prisma Client...");
+    console.log(run("npx", ["prisma", "generate"]));
+
     console.log("Running prisma migrate deploy...");
     console.log(await runMigrateDeploy());
 
