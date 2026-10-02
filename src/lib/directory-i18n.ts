@@ -399,6 +399,9 @@ export type DirectoryStrings = {
   guideByLabel: string;
   guideReadMoreLabel: string;
   guideRelatedHeading: string;
+  // Heading above a guide's own FAQ accordion (see GuideDetailContent) —
+  // only rendered when that guide actually has faqs set.
+  guideFaqHeading: string;
   // The listing page's two "other businesses" sections — newest published
   // listings overall, and other listings in the same state but a different
   // industry (see latestListings/nearbyListingsExcludingIndustry in
@@ -752,6 +755,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     guideByLabel: "By the Gotka Business Directory team",
     guideReadMoreLabel: "Read guide",
     guideRelatedHeading: "Related guides",
+    guideFaqHeading: "Frequently asked questions",
     latestBusinessesHeading: "Latest Businesses",
     nearbyBusinessesHeading: "Businesses Near You",
     aboutHeading: "About",
@@ -1027,6 +1031,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     guideByLabel: "作者：Gotka 企业目录团队",
     guideReadMoreLabel: "阅读指南",
     guideRelatedHeading: "相关指南",
+    guideFaqHeading: "常见问题",
     latestBusinessesHeading: "最新企业",
     nearbyBusinessesHeading: "附近企业",
     aboutHeading: "关于",
@@ -1299,6 +1304,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     guideByLabel: "Oleh pasukan Direktori Perniagaan Gotka",
     guideReadMoreLabel: "Baca panduan",
     guideRelatedHeading: "Panduan berkaitan",
+    guideFaqHeading: "Soalan lazim",
     latestBusinessesHeading: "Perniagaan Terkini",
     nearbyBusinessesHeading: "Perniagaan Berhampiran",
     aboutHeading: "Tentang",

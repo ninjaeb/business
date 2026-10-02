@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BookOpen } from "lucide-react";
+import { BookOpen, ChevronDown } from "lucide-react";
 import { getSiteOrigin } from "@/lib/site-url";
 import {
   DIRECTORY_STRINGS,
@@ -12,7 +12,7 @@ import {
   type DirectoryLocale,
 } from "@/lib/directory-i18n";
 import { buildBreadcrumbJsonLd } from "@/lib/directory";
-import { buildGuideJsonLd } from "@/lib/directory-seo";
+import { buildFaqJsonLd, buildGuideJsonLd } from "@/lib/directory-seo";
 import { listPublishedGuidesByIndustry, resolveGuideDisplay } from "@/lib/directory-guides";
 import { renderMarkdownLite } from "@/lib/markdown-lite";
 import { formatDate } from "@/lib/format";
@@ -27,6 +27,7 @@ type Guide = {
   title: string;
   excerpt: string;
   body: string;
+  faqs: unknown;
   industry: Industry | null;
   publishedAt: Date | null;
   updatedAt: Date;
@@ -60,6 +61,9 @@ export async function GuideDetailContent({ guide, locale }: { guide: Guide; loca
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: buildGuideJsonLd({ ...guide, ...display }, siteOrigin, pageUrl) }}
       />
+      {display.faqs.length > 0 && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(display.faqs) }} />
+      )}
       <div className="mx-auto w-full max-w-5xl px-4 py-8 sm:px-8">
         <DirectoryBreadcrumbs items={breadcrumbItems} navLabel={t.breadcrumbNavLabel} />
 
@@ -105,6 +109,26 @@ export async function GuideDetailContent({ guide, locale }: { guide: Guide; loca
         <div className="mt-8 text-base text-slate-600 dark:text-slate-300">
           {renderMarkdownLite(display.body, undefined, { zoomableImages: true })}
         </div>
+
+        {/* Same native <details>/<summary> accordion as the About/home
+            pages' own FAQ sections, paired with this guide's own FAQPage
+            JSON-LD above rather than a directory-wide one. */}
+        {display.faqs.length > 0 && (
+          <div className="mt-12 border-t border-slate-200 pt-8 dark:border-neutral-800">
+            <h2 className="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">{t.guideFaqHeading}</h2>
+            <div className="mt-4 space-y-2">
+              {display.faqs.map((faq) => (
+                <details key={faq.question} className="group rounded-xl border border-slate-200 px-4 py-3 dark:border-neutral-800">
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-2 text-base font-semibold text-slate-900 marker:content-none dark:text-slate-100">
+                    {faq.question}
+                    <ChevronDown className="h-4 w-4 shrink-0 text-slate-400 transition-transform group-open:rotate-180" />
+                  </summary>
+                  <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">{faq.answer}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        )}
 
         {relatedGuides.length > 0 && (
           <div className="mt-12 border-t border-slate-200 pt-8 dark:border-neutral-800">
