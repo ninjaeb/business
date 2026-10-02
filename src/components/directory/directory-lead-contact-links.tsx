@@ -4,6 +4,7 @@ import { useTransition } from "react";
 import { Mail, MessageCircle, Phone } from "lucide-react";
 import { markDirectoryLeadContacted } from "@/app/actions/directory";
 import { whatsAppUrl } from "@/lib/format";
+import { ExternalLink } from "@/components/ui/external-link";
 
 // Clicking any of these is a real contact attempt, same as sending a reply
 // through the form below — so it advances the lead's status the same way
@@ -48,16 +49,14 @@ export function DirectoryLeadContactLinks({
         </a>
       )}
       {phone && (
-        <a
+        <ExternalLink
           href={whatsAppUrl(phone, whatsAppMessage)}
-          target="_blank"
-          rel="noopener noreferrer nofollow"
           onClick={markContacted}
           className="inline-flex items-center gap-1 hover:text-petrol dark:hover:text-petrol-light"
         >
           <MessageCircle className="h-3.5 w-3.5" />
           WhatsApp
-        </a>
+        </ExternalLink>
       )}
     </>
   );

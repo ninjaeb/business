@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { ExternalLink } from "@/components/ui/external-link";
 
 export function Linkify({ text, className }: { text: string; className?: string }) {
   const parts = text.split(/(https?:\/\/[^\s]+)/g);
@@ -6,15 +7,13 @@ export function Linkify({ text, className }: { text: string; className?: string 
     <p className={cn("whitespace-pre-wrap break-words", className)}>
       {parts.map((part, i) =>
         /^https?:\/\/[^\s]+$/.test(part) ? (
-          <a
+          <ExternalLink
             key={i}
             href={part}
-            target="_blank"
-            rel="noopener noreferrer nofollow"
             className="text-indigo-600 underline hover:text-indigo-500 dark:text-indigo-400"
           >
             {part}
-          </a>
+          </ExternalLink>
         ) : (
           part
         ),

@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { Check, Copy, Mail, MessageCircle, Share2, ThumbsUp } from "lucide-react";
 import { buttonClasses, type ButtonSize, type ButtonVariant } from "@/components/ui/button";
+import { ExternalLink } from "@/components/ui/external-link";
 import { cn } from "@/lib/utils";
 
 // A small share menu — copy link, email, WhatsApp, plus the device's own
@@ -150,17 +151,15 @@ export function ShareButton({
             <Mail className="h-4 w-4 shrink-0 text-slate-400" />
             Email
           </a>
-          <a
+          <ExternalLink
             role="menuitem"
             href={whatsappHref}
-            target="_blank"
-            rel="noopener noreferrer nofollow"
             onClick={() => setOpen(false)}
             className="flex w-full items-center gap-2.5 px-3 py-2 text-left text-sm text-slate-700 hover:bg-slate-50 dark:text-slate-200 dark:hover:bg-neutral-800"
           >
             <MessageCircle className="h-4 w-4 shrink-0 text-slate-400" />
             WhatsApp
-          </a>
+          </ExternalLink>
           {nativeShareAvailable && (
             <button
               type="button"

@@ -5,6 +5,7 @@ import { MessageCircle } from "lucide-react";
 import { DIRECTORY_PUBLISHER } from "@/lib/directory-seo";
 import { whatsAppUrl } from "@/lib/format";
 import { DIRECTORY_STRINGS, type DirectoryLocale } from "@/lib/directory-i18n";
+import { ExternalLink } from "@/components/ui/external-link";
 
 // Every static top-level page under /[locale]/... (see the folders directly
 // inside src/app/[locale]/) — anything NOT in this list is a listing's own
@@ -58,14 +59,12 @@ export function FloatingWhatsAppButton({ locale }: { locale: DirectoryLocale }) 
 
   const t = DIRECTORY_STRINGS[locale];
   return (
-    <a
+    <ExternalLink
       href={whatsAppUrl(DIRECTORY_PUBLISHER.telephone, t.footerWhatsAppMessage)}
-      target="_blank"
-      rel="noopener noreferrer nofollow"
       className="fixed right-6 bottom-6 z-40 flex items-center gap-2 rounded-full bg-led px-5 py-3 font-semibold text-led-ink shadow-lg transition-colors hover:bg-led-hover active:bg-led-active"
     >
       <MessageCircle className="h-5 w-5" />
       {t.footerWhatsAppCta}
-    </a>
+    </ExternalLink>
   );
 }

@@ -18,6 +18,7 @@ import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
 import { buttonClasses } from "@/components/ui/button";
+import { ExternalLink } from "@/components/ui/external-link";
 import { GoogleMapsIcon } from "@/components/directory/google-maps-icon";
 import { WazeIcon } from "@/components/directory/waze-icon";
 
@@ -112,34 +113,22 @@ export default async function VisitPage({
               <CardTitle className="text-base">{t.visitHeading}</CardTitle>
             </CardHeader>
             <CardBody className="space-y-4">
-              <a
+              <ExternalLink
                 href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapAddress.replace(/\n/g, ", "))}`}
-                target="_blank"
-                rel="noopener noreferrer nofollow"
                 className="flex items-start gap-2 text-base text-slate-600 hover:text-petrol hover:underline dark:text-slate-300 dark:hover:text-petrol-light"
               >
                 <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-slate-400" />
                 <span className="whitespace-pre-wrap">{listing.address}</span>
-              </a>
+              </ExternalLink>
               <div className="flex flex-wrap gap-2">
-                <a
-                  href={googleMapsDirectionsUrl(mapAddress)}
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  className={buttonClasses("secondary", "sm")}
-                >
+                <ExternalLink href={googleMapsDirectionsUrl(mapAddress)} className={buttonClasses("secondary", "sm")}>
                   <GoogleMapsIcon className="h-4 w-4" />
                   {t.navigateGoogleMapsLabel}
-                </a>
-                <a
-                  href={wazeDirectionsUrl(mapAddress)}
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  className={buttonClasses("secondary", "sm")}
-                >
+                </ExternalLink>
+                <ExternalLink href={wazeDirectionsUrl(mapAddress)} className={buttonClasses("secondary", "sm")}>
                   <WazeIcon className="h-4 w-4" />
                   {t.navigateWazeLabel}
-                </a>
+                </ExternalLink>
               </div>
               <iframe
                 title={`${listing.companyName} on the map`}
