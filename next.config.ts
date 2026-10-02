@@ -57,7 +57,11 @@ function contentSecurityPolicy(): string {
     // Allowlisted unconditionally, same reasoning as the Plausible origin
     // above — harmless when GOOGLE_CLIENT_ID is unset, since
     // TestimonialAuthForm only injects the <Script> tag when it's configured.
-    `script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://accounts.google.com/gsi/client ${plausible}${isDev ? " 'unsafe-eval'" : ""}`,
+    // crm.gotka.com/embed/lead-form.js — Gotka's own CRM lead-form widget,
+    // embedded on the contact page (src/app/[locale]/contact/page.tsx) in
+    // place of a custom-built form. Same-organization origin, not a
+    // third-party vendor.
+    `script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://accounts.google.com/gsi/client https://crm.gotka.com ${plausible}${isDev ? " 'unsafe-eval'" : ""}`,
     // 'unsafe-inline': five components use inline style={{}} props (grepped
     // for `style={{` across src/), which CSP's style-src-attr governs the
     // same way as script-src-attr above. accounts.google.com/gsi/style —
@@ -76,7 +80,10 @@ function contentSecurityPolicy(): string {
     // Where gtag.js and Plausible's script actually send their beacons.
     // accounts.google.com/gsi/ — Google Identity Services' own status/logging
     // calls, made by the script above from inside TestimonialAuthForm.
-    `connect-src 'self' https://www.google-analytics.com https://accounts.google.com/gsi/ ${plausible}`,
+    // crm.gotka.com — the lead-form widget's own submission call (script-src
+    // comment above); the exact endpoint path isn't ours to pin down, but the
+    // origin is first-party.
+    `connect-src 'self' https://www.google-analytics.com https://accounts.google.com/gsi/ https://crm.gotka.com ${plausible}`,
     // Exactly the five video providers toEmbeddableVideoUrl
     // (src/lib/directory.ts) embeds, plus google.com for the "visit" page's
     // Maps embed (src/app/[locale]/[slug]/visit/page.tsx). accounts.google.com
