@@ -5,6 +5,7 @@ import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { db } from "@/lib/db";
 import { requirePartnerAction, requireTestimonialAuthorAction } from "@/lib/auth/dal";
+import { getTestimonialRequestLinkPreview } from "@/lib/testimonial-request-links";
 import { isRateLimited, isSuspiciouslyFast } from "@/lib/lead-spam-guard";
 import { firstHopValue } from "@/lib/site-url";
 import { revalidateDirectory } from "@/lib/directory-revalidate";
@@ -107,19 +108,53 @@ export async function submitDirectoryTestimonial(
   // Already validated as an integer 1-5 by testimonialSchema above.
   const rating = Number(parsed.data.rating);
 
-  const testimonial = await db.directoryTestimonial.create({
-    data: {
-      listingId: listing.id,
-      authorId: visitor.id,
-      authorName: visitor.name,
-      rating,
-      body: parsed.data.body,
-      locale: parsed.data.locale,
-    },
+  // The "write a testimonial" dialog's own optional ?req=<id> flow (see
+  // WriteTestimonialButton/getTestimonialRequestPreview) — never trusts the
+  // client-supplied serviceTitle that may have been shown in the form, only
+  // the token itself, re-resolved here against the real row (same
+  // discipline submitDirectoryLead applies to its own `r`/`via` params). A
+  // missing, stale, already-used, or foreign-listing token just means no
+  // service tag gets attached — never blocks the submission outright, since
+  // the testimonial itself is still perfectly genuine without one.
+  const requestToken = String(formData.get("requestToken") || "").trim();
+  const request = requestToken ? await getTestimonialRequestLinkPreview(requestToken, listing.id) : null;
+
+  const testimonial = await db.$transaction(async (tx) => {
+    const created = await tx.directoryTestimonial.create({
+      data: {
+        listingId: listing.id,
+        authorId: visitor.id,
+        authorName: visitor.name,
+        rating,
+        body: parsed.data.body,
+        locale: parsed.data.locale,
+        serviceTitle: request?.serviceTitle ?? null,
+      },
+    });
+    if (requestToken && request) {
+      await tx.testimonialRequestLink.update({ where: { id: requestToken }, data: { usedAt: new Date() } });
+    }
+    return created;
   });
 
   await notifyPartnerOfNewTestimonial(listing, testimonial);
   return { status: "success", testimonialId: testimonial.id };
+}
+
+export type TestimonialRequestPreview = { serviceTitle: string | null } | null;
+
+// Called from the client (WriteTestimonialButton) once it notices a
+// ?req=<id> on the page's own URL — not rate-limited or honeypot-guarded
+// like the form actions above, since this only ever reads a listing's own
+// already-public info (whatever serviceTitle the partner chose to show
+// customers) and can't itself create, change, or spend anything; scoped to
+// this listing the same way getTestimonialRequestLinkPreview always is, so
+// a token copied from one listing can't be probed against another.
+export async function getTestimonialRequestPreview(token: string, listingId: string): Promise<TestimonialRequestPreview> {
+  const trimmed = token.trim();
+  if (!trimmed) return null;
+  const request = await getTestimonialRequestLinkPreview(trimmed, listingId);
+  return request ? { serviceTitle: request.serviceTitle } : null;
 }
 
 // ---------------------------------------------------------------------------

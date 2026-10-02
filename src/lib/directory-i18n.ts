@@ -198,6 +198,18 @@ export function formatTestimonialPhotosUploading(template: string, done: number,
   return template.replace("{done}", String(done)).replace("{total}", String(total));
 }
 
+// Fills in DirectoryStrings.testimonialRequestContext's {service} token —
+// see that field's own comment.
+export function formatTestimonialRequestContext(template: string, service: string): string {
+  return template.replace("{service}", service);
+}
+
+// Fills in DirectoryStrings.testimonialServiceTag's {service} token — see
+// that field's own comment.
+export function formatTestimonialServiceTag(template: string, service: string): string {
+  return template.replace("{service}", service);
+}
+
 // Fills in DirectoryStrings.searchViewAllResults's {query} token — see that
 // field's own comment for why this is plain substitution, not a template
 // literal built where the message is used.
@@ -531,6 +543,16 @@ export type DirectoryStrings = {
   // testimonials, so this is what invites one regardless of whether any
   // exist yet.
   testimonialsCta: string;
+  // Shown above the rating/body fields when the form was opened via a
+  // partner's own request link (see WriteTestimonialButton's ?req=<id>
+  // handling) that named a specific service — {service} is replaced via
+  // formatTestimonialRequestContext. Never shown otherwise.
+  testimonialRequestContext: string;
+  // A compact "Re: {service}" tag shown next to an APPROVED testimonial
+  // that carries a serviceTitle (see TestimonialList) — same {service}
+  // token/formatter as testimonialRequestContext above, just a shorter
+  // phrasing for a list row instead of a full sentence.
+  testimonialServiceTag: string;
   // The account gate in front of the form below (see TestimonialAuthForm) —
   // name/email/phone/password field labels are the existing signup* keys
   // above, reused as-is rather than duplicated, since the copy is identical
@@ -842,6 +864,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialsIntro: "Real feedback from customers who've worked with this business.",
     testimonialsEmpty: "No testimonials yet — be the first to leave one.",
     testimonialsCta: "Had a good experience? Share it — it helps other visitors decide, and takes less than a minute.",
+    testimonialRequestContext: "You're sharing feedback about: {service}",
+    testimonialServiceTag: "Re: {service}",
     testimonialAuthHeading: "Sign in to write a testimonial",
     testimonialAuthIntro:
       "Sign in with Google, or create a free account with your name, email and phone — takes less than a minute.",
@@ -1120,6 +1144,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialsIntro: "来自曾与该企业合作的客户的真实反馈。",
     testimonialsEmpty: "暂无评价——成为第一个留下评价的人。",
     testimonialsCta: "有过愉快的体验吗？分享出来——这能帮助其他访客做决定，只需不到一分钟。",
+    testimonialRequestContext: "您正在分享关于以下项目的反馈：{service}",
+    testimonialServiceTag: "关于：{service}",
     testimonialAuthHeading: "登录后即可撰写评价",
     testimonialAuthIntro: "使用 Google 登录，或创建一个免费账户，填写姓名、电子邮件和电话——不到一分钟即可完成。",
     testimonialCompanyLabel: "公司名称",
@@ -1395,6 +1421,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialsIntro: "Maklum balas sebenar daripada pelanggan yang pernah berurusan dengan perniagaan ini.",
     testimonialsEmpty: "Belum ada testimoni — jadilah yang pertama meninggalkan satu.",
     testimonialsCta: "Ada pengalaman yang baik? Kongsikan — ia membantu pelawat lain membuat keputusan, dan mengambil masa kurang seminit.",
+    testimonialRequestContext: "Anda berkongsi maklum balas tentang: {service}",
+    testimonialServiceTag: "Berkaitan: {service}",
     testimonialAuthHeading: "Log masuk untuk menulis testimoni",
     testimonialAuthIntro:
       "Log masuk dengan Google, atau cipta akaun percuma dengan nama, e-mel dan nombor telefon anda — mengambil masa kurang seminit.",

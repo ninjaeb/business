@@ -633,6 +633,7 @@ export default async function ListingLayout({
                 sheet. */}
             <WriteTestimonialButton
               slug={slug}
+              listingId={listing.id}
               locale={resolved}
               aiAvailable={isAiConfigured()}
               googleReviewUrl={listing.googleReviewUrl}
@@ -664,6 +665,7 @@ export default async function ListingLayout({
           <ShareButton title={listing.companyName} url={pageUrl} label={t.shareLabel} className="flex-1 justify-center" />
           <WriteTestimonialButton
             slug={slug}
+            listingId={listing.id}
             locale={resolved}
             aiAvailable={isAiConfigured()}
             googleReviewUrl={listing.googleReviewUrl}

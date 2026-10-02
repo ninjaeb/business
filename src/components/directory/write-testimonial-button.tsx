@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { X } from "lucide-react";
+import { getTestimonialRequestPreview } from "@/app/actions/testimonials";
 import { TestimonialForm } from "@/components/directory/testimonial-form";
 import { TestimonialAuthForm } from "@/components/directory/testimonial-auth-form";
 import { buttonClasses, type ButtonVariant } from "@/components/ui/button";
@@ -36,6 +37,7 @@ type ExistingTestimonial = { status: "PENDING" | "APPROVED" | "REJECTED"; review
 // this listing -> a status message; otherwise -> TestimonialForm itself.
 export function WriteTestimonialButton({
   slug,
+  listingId,
   locale,
   aiAvailable,
   googleReviewUrl,
@@ -46,6 +48,10 @@ export function WriteTestimonialButton({
   className,
 }: {
   slug: string;
+  // Only ever read to resolve a ?req=<id> request-link token (see the
+  // useEffect below) against the right listing — never sent anywhere on
+  // its own.
+  listingId: string;
   locale: DirectoryLocale;
   aiAvailable: boolean;
   googleReviewUrl: string | null;
@@ -73,6 +79,29 @@ export function WriteTestimonialButton({
   // null, so a page load that's already signed in skips the auth step.
   const [localVisitor, setLocalVisitor] = useState(visitor);
   const t = DIRECTORY_STRINGS[locale];
+
+  // A partner's own shareable "please leave us a testimonial" link (see
+  // /business-portal/testimonial-links) lands here as ?req=<id> on this
+  // same page — read directly off window.location.search rather than
+  // useSearchParams(), same reasoning as the listing header's own `r`/`via`
+  // referral params (ReferralViewBeacon, DirectoryLeadForm): this avoids
+  // the Suspense-boundary requirement that hook carries, for a value that's
+  // only ever read once, client-side, after mount. Resolved through a
+  // server action (getTestimonialRequestPreview) rather than trusted as-is,
+  // since the token alone says nothing about whether it's real, already
+  // used, or even for this listing.
+  const [requestPreview, setRequestPreview] = useState<{ token: string; serviceTitle: string | null } | null>(null);
+  useEffect(() => {
+    const token = new URLSearchParams(window.location.search).get("req");
+    if (!token) return;
+    let cancelled = false;
+    void getTestimonialRequestPreview(token, listingId).then((preview) => {
+      if (!cancelled && preview) setRequestPreview({ token, serviceTitle: preview.serviceTitle });
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [listingId]);
 
   useEffect(() => {
     if (!open) return;
@@ -146,6 +175,8 @@ export function WriteTestimonialButton({
                   googleReviewUrl={googleReviewUrl}
                   visitorName={localVisitor.name}
                   onLogout={() => setLocalVisitor(null)}
+                  requestToken={requestPreview?.token}
+                  requestedServiceTitle={requestPreview?.serviceTitle ?? null}
                 />
               )}
             </div>
