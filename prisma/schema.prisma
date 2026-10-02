@@ -515,6 +515,8 @@ model DirectoryGuide {
   status   DirectoryGuideStatus @default(DRAFT)
   industry Industry?
 
+  translations Json? // DirectoryGuideTranslations (src/lib/directory-guides.ts) — {zh?, ms?}
+
   seoTitle       String?
   seoDescription String?
 

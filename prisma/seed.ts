@@ -2,7 +2,7 @@ import "dotenv/config";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { db } from "../src/lib/db";
-import { GUIDES, type GuideImage, type GuideContentImage } from "./guides-seed";
+import { GUIDES, type GuideImage, type GuideContentImage, type GuideSeed } from "./guides-seed";
 
 // A curated, fixed starter vocabulary for the partner listing picker — the
 // category list isn't admin-editable at all (only deletable, see
@@ -283,6 +283,7 @@ async function seedGuides() {
     if (guide.contentImages) {
       record.body = await attachContentImages(record.id, record.body, guide.contentImages, guide.title);
     }
+    if (guide.translations) await attachTranslations(record.id, record.body, guide);
   }
 }
 
@@ -352,6 +353,67 @@ async function attachContentImages(
     console.log(`Attached content image(s) to guide: ${guideTitle}`);
   }
   return nextBody;
+}
+
+function findImageUrlByAlt(body: string, alt: string): string | null {
+  const marker = `![${alt}](`;
+  const start = body.indexOf(marker);
+  if (start === -1) return null;
+  const urlStart = start + marker.length;
+  const urlEnd = body.indexOf(")", urlStart);
+  return urlEnd === -1 ? null : body.slice(urlStart, urlEnd);
+}
+
+// Writes guide.translations (title/excerpt/body for zh/ms — see
+// DirectoryGuideTranslations in src/lib/directory-guides.ts, the same
+// shape) once, the first time a guide has none yet at all — a coarse,
+// whole-blob check (not per-locale) since this is a single JSON column
+// rather than separate rows, same create-once spirit as the guide's own
+// English text. Also splices coverImage/contentImages into each translated
+// body, reusing the same DirectoryListingImage URL already in the English
+// body (located by its English `alt` text — the image itself isn't
+// language-specific, only its alt text and, for a content image, the
+// anchor prose it's placed after) rather than re-uploading per locale.
+async function attachTranslations(guideId: string, englishBody: string, guide: GuideSeed) {
+  if (!guide.translations) return;
+
+  const existing = await db.directoryGuide.findUnique({ where: { id: guideId }, select: { translations: true } });
+  const hasTranslations = existing?.translations && typeof existing.translations === "object" && Object.keys(existing.translations).length > 0;
+  if (hasTranslations) return;
+
+  const translations: Record<string, { title: string; excerpt: string; body: string }> = {};
+
+  for (const locale of ["zh", "ms"] as const) {
+    const entry = guide.translations[locale];
+    if (!entry) continue;
+    let body = entry.body;
+
+    if (guide.coverImage) {
+      const url = findImageUrlByAlt(englishBody, guide.coverImage.alt);
+      if (url) {
+        const alt = guide.coverImage.altTranslations?.[locale] ?? guide.coverImage.alt;
+        body = `![${alt}](${url})\n\n${body}`;
+      }
+    }
+
+    if (guide.contentImages) {
+      for (const img of Object.values(guide.contentImages)) {
+        const url = findImageUrlByAlt(englishBody, img.alt);
+        const anchor = img.afterTranslations?.[locale];
+        if (!url || !anchor) continue;
+        const anchorIndex = body.indexOf(anchor);
+        if (anchorIndex === -1) continue;
+        const insertAt = anchorIndex + anchor.length;
+        const alt = img.altTranslations?.[locale] ?? img.alt;
+        body = `${body.slice(0, insertAt)}\n\n![${alt}](${url})${body.slice(insertAt)}`;
+      }
+    }
+
+    translations[locale] = { title: entry.title, excerpt: entry.excerpt, body };
+  }
+
+  await db.directoryGuide.update({ where: { id: guideId }, data: { translations } });
+  console.log(`Attached translations to guide: ${guide.title}`);
 }
 
 main()

@@ -99,7 +99,7 @@ export async function IndustryPageContent({
   const heading = industryPageHeading(industry, locale);
   const description = industryPageDescription(industry, locale);
 
-  const [rows, relatedGuides] = await Promise.all([loadPublishedListings(), listPublishedGuidesByIndustry(industry)]);
+  const [rows, relatedGuides] = await Promise.all([loadPublishedListings(), listPublishedGuidesByIndustry(industry, locale)]);
   const listings = rows.map((row) => toDirectoryGridListing(row, locale));
   const industryListings = listings.filter((listing) => listing.industry === industry);
   const breadcrumbItems = [

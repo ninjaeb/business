@@ -2,6 +2,7 @@ import "server-only";
 
 import { db } from "@/lib/db";
 import { slugify } from "@/lib/slug";
+import type { DirectoryLocale } from "@/lib/directory-i18n";
 import type { DirectoryGuideStatus, Industry } from "@/generated/prisma/client";
 
 // Admin-authored pillar/guide content (see prisma/schema.prisma's
@@ -10,6 +11,53 @@ import type { DirectoryGuideStatus, Industry } from "@/generated/prisma/client";
 // review/approve step. The row itself is what's shown once `status` is
 // PUBLISHED, so a save takes effect immediately, same as any other
 // admin-only content in this app.
+
+// AI-translated (or hand-edited) copies of title/excerpt/body for the
+// directory's non-English locales — same shape/convention as
+// ListingTranslations in src/lib/directory.ts (keyed by locale minus "en";
+// the English columns are the primary copy, never duplicated in here).
+// Unlike PartnerListing, there's no admin-UI translation editor for guides
+// yet — this is populated only by prisma/guides-seed.ts at seed time.
+export type DirectoryGuideTranslations = Partial<Record<Exclude<DirectoryLocale, "en">, { title: string; excerpt: string; body: string }>>;
+
+const GUIDE_TRANSLATION_LOCALES: Exclude<DirectoryLocale, "en">[] = ["zh", "ms"];
+
+function sanitizeGuideTranslationEntry(entry: unknown): { title: string; excerpt: string; body: string } | null {
+  if (!entry || typeof entry !== "object") return null;
+  const raw = entry as Record<string, unknown>;
+  const title = typeof raw.title === "string" ? raw.title.trim() : "";
+  const excerpt = typeof raw.excerpt === "string" ? raw.excerpt.trim() : "";
+  const body = typeof raw.body === "string" ? raw.body.trim() : "";
+  if (!title && !excerpt && !body) return null;
+  return { title, excerpt, body };
+}
+
+export function guideTranslationsFromJson(value: unknown): DirectoryGuideTranslations {
+  if (!value || typeof value !== "object") return {};
+  const raw = value as Record<string, unknown>;
+  const result: DirectoryGuideTranslations = {};
+  for (const locale of GUIDE_TRANSLATION_LOCALES) {
+    const entry = sanitizeGuideTranslationEntry(raw[locale]);
+    if (entry) result[locale] = entry;
+  }
+  return result;
+}
+
+export type GuideDisplay = { title: string; excerpt: string; body: string };
+
+// Same fallback rule as resolveListingDisplay: a translation is used only
+// if present for that guide's locale, otherwise the English column.
+export function resolveGuideDisplay(
+  guide: { title: string; excerpt: string; body: string; translations: unknown },
+  locale: DirectoryLocale,
+): GuideDisplay {
+  const translation = locale === "zh" || locale === "ms" ? guideTranslationsFromJson(guide.translations)[locale] : undefined;
+  return {
+    title: translation?.title || guide.title,
+    excerpt: translation?.excerpt || guide.excerpt,
+    body: translation?.body || guide.body,
+  };
+}
 
 export type DirectoryGuideSummary = {
   id: string;
@@ -26,17 +74,38 @@ const SUMMARY_SELECT = {
   slug: true,
   title: true,
   excerpt: true,
+  body: true,
   industry: true,
   publishedAt: true,
   updatedAt: true,
+  translations: true,
 } as const;
 
-export async function listPublishedGuides(): Promise<DirectoryGuideSummary[]> {
-  return db.directoryGuide.findMany({
+function toGuideSummary(
+  guide: { id: string; slug: string; industry: Industry | null; publishedAt: Date | null; updatedAt: Date } & Parameters<
+    typeof resolveGuideDisplay
+  >[0],
+  locale: DirectoryLocale,
+): DirectoryGuideSummary {
+  const display = resolveGuideDisplay(guide, locale);
+  return {
+    id: guide.id,
+    slug: guide.slug,
+    title: display.title,
+    excerpt: display.excerpt,
+    industry: guide.industry,
+    publishedAt: guide.publishedAt,
+    updatedAt: guide.updatedAt,
+  };
+}
+
+export async function listPublishedGuides(locale: DirectoryLocale): Promise<DirectoryGuideSummary[]> {
+  const guides = await db.directoryGuide.findMany({
     where: { status: "PUBLISHED" },
     orderBy: { publishedAt: "desc" },
     select: SUMMARY_SELECT,
   });
+  return guides.map((guide) => toGuideSummary(guide, locale));
 }
 
 export async function getPublishedGuideBySlug(slug: string) {
@@ -53,9 +122,10 @@ export async function getPublishedGuideBySlug(slug: string) {
 // (its own industry siblings, not itself); the industry page passes none.
 export async function listPublishedGuidesByIndustry(
   industry: Industry,
+  locale: DirectoryLocale,
   options: { excludeId?: string; limit?: number } = {},
 ): Promise<DirectoryGuideSummary[]> {
-  return db.directoryGuide.findMany({
+  const guides = await db.directoryGuide.findMany({
     where: {
       status: "PUBLISHED",
       industry,
@@ -65,6 +135,7 @@ export async function listPublishedGuidesByIndustry(
     take: options.limit ?? 3,
     select: SUMMARY_SELECT,
   });
+  return guides.map((guide) => toGuideSummary(guide, locale));
 }
 
 export type DirectoryGuideForAdmin = {

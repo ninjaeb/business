@@ -21,7 +21,7 @@ import { EmptyState } from "@/components/ui/empty-state";
 // small and curated, not grow with every partner's own activity the way
 // those do).
 export async function GuidesIndexContent({ locale }: { locale: DirectoryLocale }) {
-  const [siteOrigin, guides] = await Promise.all([getSiteOrigin(), listPublishedGuides()]);
+  const [siteOrigin, guides] = await Promise.all([getSiteOrigin(), listPublishedGuides(locale)]);
   const t = DIRECTORY_STRINGS[locale];
   const pageUrl = `${siteOrigin}${directoryGuidesPath(locale)}`;
   const breadcrumbItems = [
