@@ -1,3 +1,16 @@
+export type GuideCoverImage = {
+  // File name under prisma/guide-images/, read and embedded as a
+  // DirectoryListingImage row at seed time (see attachCoverImage in
+  // seed.ts) — same base64-in-Postgres storage and /api/directory-images/*
+  // serving every other image in this app uses, so no next.config.ts/CSP
+  // change is needed. Pre-optimize it yourself (see
+  // src/lib/image-optimize.ts's optimizeImageForWeb, GALLERY_PHOTO_MAX_DIMENSION)
+  // before dropping it in this folder — seed.ts stores the file as-is.
+  file: string;
+  mimeType: string;
+  alt: string;
+};
+
 export type GuideSeed = {
   slug: string;
   title: string;
@@ -5,19 +18,28 @@ export type GuideSeed = {
   body: string;
   seoTitle?: string;
   seoDescription?: string;
+  coverImage?: GuideCoverImage;
 };
 
 // Each entry here is created once, the first time its slug doesn't already
 // exist in DirectoryGuide (see seedGuides() in seed.ts) — appending to this
 // array is how new guides go live: push a commit, the next deploy's seed
-// run creates it. Once a slug exists, the seed never touches that row again
+// run creates it. Once a slug exists, the seed never touches its text again
 // (no update-on-every-run, unlike BUSINESS_CATEGORIES above) — editing or
 // unpublishing an already-seeded guide from here on is the admin UI's job,
-// not this file's.
+// not this file's. coverImage is the one exception: seed.ts attaches it
+// whenever a guide (new or already-seeded) doesn't have one yet, so it also
+// works as a one-time backfill for a guide that went live before it had a
+// cover image of its own.
 export const GUIDES: GuideSeed[] = [
   {
     slug: "get-your-business-found-online-malaysia",
     title: "How to Get Your Business Found Online in Malaysia",
+    coverImage: {
+      file: "get-your-business-found-online-malaysia-cover.webp",
+      mimeType: "image/webp",
+      alt: "A confident small business owner standing in her shop",
+    },
     excerpt:
       "A practical order of operations for Malaysian business owners: Google Business Profile, a real website, directory listings, consistent contact details, reviews, and WhatsApp — the channels people actually use to find and vet a business here, done in the sequence that pays off fastest.",
     body: `"Being online" and "being findable" are not the same thing. A Facebook page nobody can search for, or a website with no listing anywhere else pointing at it, is online — it just isn't findable by someone who doesn't already know your business exists. This guide covers the handful of things that actually move a business from invisible to findable, roughly in the order they pay off.

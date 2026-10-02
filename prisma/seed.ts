@@ -1,4 +1,6 @@
 import "dotenv/config";
+import { readFileSync } from "node:fs";
+import path from "node:path";
 import { db } from "../src/lib/db";
 import { GUIDES } from "./guides-seed";
 
@@ -230,10 +232,13 @@ async function main() {
 }
 
 // Editorial content, not system vocabulary — unlike BUSINESS_CATEGORIES
-// above, a guide is only ever created here, never updated: once its slug
-// exists, further edits/unpublishing are the admin UI's job. This is what
-// lets new guides go live the ordinary way (append to guides-seed.ts, push,
-// deploy) without a direct production DB connection or an admin session.
+// above, a guide's own title/excerpt/body/seo fields are only ever written
+// here once: once a slug exists, further text edits/unpublishing are the
+// admin UI's job. This is what lets new guides go live the ordinary way
+// (append to guides-seed.ts, push, deploy) without a direct production DB
+// connection or an admin session. coverImage is the one field this keeps
+// managing after creation — see attachCoverImage below — since it also
+// needs to work as a backfill for a guide published before it had one.
 //
 // No regenerateSitemapFile()/notifyIndexNow() call here, unlike
 // publishGuideAction — both live under src/lib, which (via directory-i18n.ts
@@ -246,38 +251,64 @@ async function main() {
 // IndexNow ping is lost — new guides are still discovered on the next
 // regular sitemap crawl, just not instantly pinged.
 async function seedGuides() {
-  const newGuides = [];
+  let author: { id: string } | null = null;
+
   for (const guide of GUIDES) {
-    const existing = await db.directoryGuide.findUnique({ where: { slug: guide.slug }, select: { id: true } });
-    if (!existing) newGuides.push(guide);
-  }
-  if (newGuides.length === 0) {
-    console.log("No new guides to seed.");
-    return;
-  }
+    let record = await db.directoryGuide.findUnique({ where: { slug: guide.slug }, select: { id: true, body: true } });
 
-  const author = await db.user.findFirst({ where: { role: "ADMIN" }, orderBy: { createdAt: "asc" } });
-  if (!author) {
-    console.log(`Skipping ${newGuides.length} new guide(s) — no ADMIN account exists yet to attribute them to.`);
-    return;
-  }
+    if (!record) {
+      author ??= await db.user.findFirst({ where: { role: "ADMIN" }, orderBy: { createdAt: "asc" }, select: { id: true } });
+      if (!author) {
+        console.log(`Skipping new guide "${guide.title}" — no ADMIN account exists yet to attribute it to.`);
+        continue;
+      }
+      record = await db.directoryGuide.create({
+        data: {
+          slug: guide.slug,
+          title: guide.title,
+          excerpt: guide.excerpt,
+          body: guide.body,
+          seoTitle: guide.seoTitle,
+          seoDescription: guide.seoDescription,
+          status: "PUBLISHED",
+          publishedAt: new Date(),
+          authorId: author.id,
+        },
+        select: { id: true, body: true },
+      });
+      console.log(`Published guide: ${guide.title}`);
+    }
 
-  for (const guide of newGuides) {
-    await db.directoryGuide.create({
-      data: {
-        slug: guide.slug,
-        title: guide.title,
-        excerpt: guide.excerpt,
-        body: guide.body,
-        seoTitle: guide.seoTitle,
-        seoDescription: guide.seoDescription,
-        status: "PUBLISHED",
-        publishedAt: new Date(),
-        authorId: author.id,
-      },
-    });
-    console.log(`Published guide: ${guide.title}`);
+    if (guide.coverImage) await attachCoverImage(record, guide.coverImage, guide.title);
   }
+}
+
+// Idempotent per guide (checked via whether a DirectoryListingImage already
+// points at it), so this both attaches a new guide's cover image on first
+// creation above and backfills one onto a guide that was already seeded
+// before coverImage existed — a plain base64-in-Postgres DirectoryListingImage
+// row, the same storage and /api/directory-images/{id} route every other
+// image in this app already uses, so no next.config.ts/CSP change is
+// needed. The file itself is pre-optimized (see guides-seed.ts's own
+// comment) and just read straight off disk here.
+async function attachCoverImage(
+  guide: { id: string; body: string },
+  coverImage: { file: string; mimeType: string; alt: string },
+  guideTitle: string,
+) {
+  const hasImage = await db.directoryListingImage.findFirst({ where: { guideId: guide.id }, select: { id: true } });
+  if (hasImage) return;
+
+  const bytes = readFileSync(path.join(__dirname, "guide-images", coverImage.file));
+  const image = await db.directoryListingImage.create({
+    data: { mimeType: coverImage.mimeType, data: bytes.toString("base64"), guideId: guide.id },
+    select: { id: true },
+  });
+  await db.directoryGuide.update({
+    where: { id: guide.id },
+    data: { body: `![${coverImage.alt}](/api/directory-images/${image.id})\n\n${guide.body}` },
+  });
+  console.log(`Attached cover image to guide: ${guideTitle}`);
 }
 
 main()
