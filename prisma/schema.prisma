@@ -516,6 +516,13 @@ model DirectoryGuide {
   industry Industry?
 
   translations Json? // DirectoryGuideTranslations (src/lib/directory-guides.ts) — {zh?, ms?}
+  // FaqEntry[] (src/lib/directory.ts) — {question, answer}. Same shape and
+  // same buildFaqJsonLd this app already uses for a listing's own FAQ and
+  // the home/About pages' — FAQPage is schema.org's best-documented lever
+  // for both a classic rich result and being directly quotable by an AI
+  // answer engine, and a guide's own body is exactly the kind of long-form
+  // content a reader's unanswered follow-up questions cluster around.
+  faqs Json?
 
   seoTitle       String?
   seoDescription String?

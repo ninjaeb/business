@@ -2,7 +2,7 @@ import "dotenv/config";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { db } from "../src/lib/db";
-import { GUIDES, type GuideImage, type GuideContentImage, type GuideSeed } from "./guides-seed";
+import { GUIDES, type GuideImage, type GuideSeed, type GuideFaqEntry } from "./guides-seed";
 
 // A curated, fixed starter vocabulary for the partner listing picker — the
 // category list isn't admin-editable at all (only deletable, see
@@ -231,14 +231,25 @@ async function main() {
   await seedGuides();
 }
 
-// Editorial content, not system vocabulary — unlike BUSINESS_CATEGORIES
-// above, a guide's own title/excerpt/body/seo fields are only ever written
-// here once: once a slug exists, further text edits/unpublishing are the
-// admin UI's job. This is what lets new guides go live the ordinary way
-// (append to guides-seed.ts, push, deploy) without a direct production DB
-// connection or an admin session. coverImage is the one field this keeps
-// managing after creation — see attachCoverImage below — since it also
-// needs to work as a backfill for a guide published before it had one.
+// Editorial content, not system vocabulary — but unlike coverImage/
+// contentImages/translations before this comment was last true, every
+// scalar field here (title/excerpt/body/seoTitle/seoDescription/faqs/
+// translations) is now re-synced to guides-seed.ts on every run, not just
+// at creation. That's what actually lets editing this file and shipping it
+// change an already-published guide's content: every edit made to this
+// one guide so far (its cover image, its inline WhatsApp photo, its zh/ms
+// translations, and now this rewrite) was made exactly that way, not
+// through /admin/guides. status/publishedAt are the one exception — set
+// once at creation and left alone after, so re-running this never silently
+// re-publishes a guide an admin has since unpublished through the admin
+// UI, which remains the only way to change those two or to retire a guide
+// this file still lists.
+//
+// A guide's own images are fully owned by this file too: wiped and
+// re-uploaded fresh on every run (cheap — a couple of small WebP files)
+// rather than patched in place, so the body below always embeds a
+// known-fresh URL instead of hunting for an old one by alt text or by
+// matching anchor prose against whatever's already stored.
 //
 // No regenerateSitemapFile()/notifyIndexNow() call here, unlike
 // publishGuideAction — both live under src/lib, which (via directory-i18n.ts
@@ -248,13 +259,13 @@ async function main() {
 // instrumentation.ts already regenerates public/sitemap.xml (DirectoryGuide
 // rows included) on every process boot, and runSeed() in deploy.ts runs
 // right before the restart that triggers exactly that boot. Only the
-// IndexNow ping is lost — new guides are still discovered on the next
+// IndexNow ping is lost — an edited guide is still discovered on the next
 // regular sitemap crawl, just not instantly pinged.
 async function seedGuides() {
   let author: { id: string } | null = null;
 
   for (const guide of GUIDES) {
-    let record = await db.directoryGuide.findUnique({ where: { slug: guide.slug }, select: { id: true, body: true } });
+    let record = await db.directoryGuide.findUnique({ where: { slug: guide.slug }, select: { id: true, publishedAt: true } });
 
     if (!record) {
       author ??= await db.user.findFirst({ where: { role: "ADMIN" }, orderBy: { createdAt: "asc" }, select: { id: true } });
@@ -263,157 +274,117 @@ async function seedGuides() {
         continue;
       }
       record = await db.directoryGuide.create({
-        data: {
-          slug: guide.slug,
-          title: guide.title,
-          excerpt: guide.excerpt,
-          body: guide.body,
-          seoTitle: guide.seoTitle,
-          seoDescription: guide.seoDescription,
-          status: "PUBLISHED",
-          publishedAt: new Date(),
-          authorId: author.id,
-        },
-        select: { id: true, body: true },
+        data: { slug: guide.slug, title: guide.title, excerpt: "", body: "", authorId: author.id },
+        select: { id: true, publishedAt: true },
       });
-      console.log(`Published guide: ${guide.title}`);
+      console.log(`Created guide: ${guide.title}`);
     }
 
-    if (guide.coverImage) record.body = await attachCoverImage(record.id, record.body, guide.coverImage, guide.title);
+    await db.directoryListingImage.deleteMany({ where: { guideId: record.id } });
+    const coverImageUrl = guide.coverImage ? await uploadGuideImage(record.id, guide.coverImage) : null;
+    const contentImageUrls: Record<string, string> = {};
     if (guide.contentImages) {
-      record.body = await attachContentImages(record.id, record.body, guide.contentImages, guide.title);
+      for (const [key, img] of Object.entries(guide.contentImages)) {
+        contentImageUrls[key] = await uploadGuideImage(record.id, img);
+      }
     }
-    if (guide.translations) await attachTranslations(record.id, record.body, guide);
+
+    const body = composeGuideBody(guide, coverImageUrl, contentImageUrls);
+    const translations = composeGuideTranslations(guide, coverImageUrl, contentImageUrls);
+
+    await db.directoryGuide.update({
+      where: { id: record.id },
+      data: {
+        title: guide.title,
+        excerpt: guide.excerpt,
+        body,
+        seoTitle: guide.seoTitle ?? null,
+        seoDescription: guide.seoDescription ?? null,
+        faqs: guide.faqs ?? [],
+        translations,
+        status: "PUBLISHED",
+        publishedAt: record.publishedAt ?? new Date(),
+      },
+    });
+    console.log(`Synced guide content: ${guide.title}`);
   }
 }
 
-// Idempotent per guide (checked via whether a DirectoryListingImage already
-// points at it), so this both attaches a new guide's cover image on first
-// creation above and backfills one onto a guide that was already seeded
-// before coverImage existed — a plain base64-in-Postgres DirectoryListingImage
-// row, the same storage and /api/directory-images/{id} route every other
-// image in this app already uses, so no next.config.ts/CSP change is
-// needed. The file itself is pre-optimized (see guides-seed.ts's own
-// comment) and just read straight off disk here. Returns the guide's new
-// body so a later step (attachContentImages) keeps working off the current
-// text instead of the stale copy read before this ran.
-async function attachCoverImage(guideId: string, body: string, coverImage: GuideImage, guideTitle: string): Promise<string> {
-  const hasImage = await db.directoryListingImage.findFirst({ where: { guideId }, select: { id: true } });
-  if (hasImage) return body;
-
-  const bytes = readFileSync(path.join(__dirname, "guide-images", coverImage.file));
-  const image = await db.directoryListingImage.create({
-    data: { mimeType: coverImage.mimeType, data: bytes.toString("base64"), guideId },
+// A plain base64-in-Postgres DirectoryListingImage row, the same storage
+// and /api/directory-images/{id} route every other image in this app
+// already uses, so no next.config.ts/CSP change is needed. The file itself
+// is pre-optimized (see guides-seed.ts's own comment) and just read
+// straight off disk here.
+async function uploadGuideImage(guideId: string, image: GuideImage): Promise<string> {
+  const bytes = readFileSync(path.join(__dirname, "guide-images", image.file));
+  const created = await db.directoryListingImage.create({
+    data: { mimeType: image.mimeType, data: bytes.toString("base64"), guideId },
     select: { id: true },
   });
-  const nextBody = `![${coverImage.alt}](/api/directory-images/${image.id})\n\n${body}`;
-  await db.directoryGuide.update({ where: { id: guideId }, data: { body: nextBody } });
-  console.log(`Attached cover image to guide: ${guideTitle}`);
-  return nextBody;
+  return `/api/directory-images/${created.id}`;
 }
 
-// Inserts each image right after its `after` anchor text (see
-// GuideContentImage's own comment) as its own paragraph. Idempotency is
-// checked via whether that exact `![alt](` markdown is already in `body` —
-// not a DirectoryListingImage lookup, since a guide can have several
-// content images and "any image exists" wouldn't say which ones are
-// already placed. A missing anchor (prose edited since) is logged and
-// skipped rather than failing the whole deploy over one image.
-async function attachContentImages(
-  guideId: string,
-  body: string,
-  images: Record<string, GuideContentImage>,
-  guideTitle: string,
-): Promise<string> {
-  let nextBody = body;
-  let attachedAny = false;
+// Splices contentImages into `rawBody` right after each one's `after`
+// anchor text (see GuideContentImage's own comment on why that sentence
+// must stay frozen once shipped), then prepends coverImage — in that
+// order, since inserting content images first means their anchor-text
+// search runs against `rawBody` exactly as written, unaffected by
+// whatever's about to be prepended in front of it. locale selects which
+// translated alt/anchor text to match against (undefined for English,
+// where `img.after`/`img.alt` are used directly); a missing anchor (prose
+// rewritten since without updating `after`) is logged and skipped rather
+// than failing the whole deploy over one image.
+function composeGuideBody(
+  guide: GuideSeed,
+  coverImageUrl: string | null,
+  contentImageUrls: Record<string, string>,
+  locale?: "zh" | "ms",
+  rawBody: string = guide.body,
+): string {
+  let body = rawBody;
 
-  for (const [key, img] of Object.entries(images)) {
-    const marker = `![${img.alt}](`;
-    if (nextBody.includes(marker)) continue;
-
-    const anchorIndex = nextBody.indexOf(img.after);
-    if (anchorIndex === -1) {
-      console.log(`Could not place content image "${key}" on guide "${guideTitle}" — anchor text not found in its current body.`);
-      continue;
+  if (guide.contentImages) {
+    for (const [key, img] of Object.entries(guide.contentImages)) {
+      const anchor = locale ? img.afterTranslations?.[locale] : img.after;
+      if (!anchor) continue;
+      const anchorIndex = body.indexOf(anchor);
+      if (anchorIndex === -1) {
+        console.log(`Could not place content image "${key}" on guide "${guide.title}" (locale: ${locale ?? "en"}) — anchor text not found.`);
+        continue;
+      }
+      const insertAt = anchorIndex + anchor.length;
+      const alt = locale ? (img.altTranslations?.[locale] ?? img.alt) : img.alt;
+      body = `${body.slice(0, insertAt)}\n\n![${alt}](${contentImageUrls[key]})${body.slice(insertAt)}`;
     }
-    const insertAt = anchorIndex + img.after.length;
-
-    const bytes = readFileSync(path.join(__dirname, "guide-images", img.file));
-    const image = await db.directoryListingImage.create({
-      data: { mimeType: img.mimeType, data: bytes.toString("base64"), guideId },
-      select: { id: true },
-    });
-    nextBody = `${nextBody.slice(0, insertAt)}\n\n![${img.alt}](/api/directory-images/${image.id})${nextBody.slice(insertAt)}`;
-    attachedAny = true;
   }
 
-  if (attachedAny) {
-    await db.directoryGuide.update({ where: { id: guideId }, data: { body: nextBody } });
-    console.log(`Attached content image(s) to guide: ${guideTitle}`);
+  if (guide.coverImage && coverImageUrl) {
+    const alt = locale ? (guide.coverImage.altTranslations?.[locale] ?? guide.coverImage.alt) : guide.coverImage.alt;
+    body = `![${alt}](${coverImageUrl})\n\n${body}`;
   }
-  return nextBody;
+
+  return body;
 }
 
-function findImageUrlByAlt(body: string, alt: string): string | null {
-  const marker = `![${alt}](`;
-  const start = body.indexOf(marker);
-  if (start === -1) return null;
-  const urlStart = start + marker.length;
-  const urlEnd = body.indexOf(")", urlStart);
-  return urlEnd === -1 ? null : body.slice(urlStart, urlEnd);
-}
-
-// Writes guide.translations (title/excerpt/body for zh/ms — see
-// DirectoryGuideTranslations in src/lib/directory-guides.ts, the same
-// shape) once, the first time a guide has none yet at all — a coarse,
-// whole-blob check (not per-locale) since this is a single JSON column
-// rather than separate rows, same create-once spirit as the guide's own
-// English text. Also splices coverImage/contentImages into each translated
-// body, reusing the same DirectoryListingImage URL already in the English
-// body (located by its English `alt` text — the image itself isn't
-// language-specific, only its alt text and, for a content image, the
-// anchor prose it's placed after) rather than re-uploading per locale.
-async function attachTranslations(guideId: string, englishBody: string, guide: GuideSeed) {
-  if (!guide.translations) return;
-
-  const existing = await db.directoryGuide.findUnique({ where: { id: guideId }, select: { translations: true } });
-  const hasTranslations = existing?.translations && typeof existing.translations === "object" && Object.keys(existing.translations).length > 0;
-  if (hasTranslations) return;
-
-  const translations: Record<string, { title: string; excerpt: string; body: string }> = {};
+function composeGuideTranslations(
+  guide: GuideSeed,
+  coverImageUrl: string | null,
+  contentImageUrls: Record<string, string>,
+): Record<string, { title: string; excerpt: string; body: string; faqs: GuideFaqEntry[] }> {
+  const translations: Record<string, { title: string; excerpt: string; body: string; faqs: GuideFaqEntry[] }> = {};
+  if (!guide.translations) return translations;
 
   for (const locale of ["zh", "ms"] as const) {
     const entry = guide.translations[locale];
     if (!entry) continue;
-    let body = entry.body;
-
-    if (guide.coverImage) {
-      const url = findImageUrlByAlt(englishBody, guide.coverImage.alt);
-      if (url) {
-        const alt = guide.coverImage.altTranslations?.[locale] ?? guide.coverImage.alt;
-        body = `![${alt}](${url})\n\n${body}`;
-      }
-    }
-
-    if (guide.contentImages) {
-      for (const img of Object.values(guide.contentImages)) {
-        const url = findImageUrlByAlt(englishBody, img.alt);
-        const anchor = img.afterTranslations?.[locale];
-        if (!url || !anchor) continue;
-        const anchorIndex = body.indexOf(anchor);
-        if (anchorIndex === -1) continue;
-        const insertAt = anchorIndex + anchor.length;
-        const alt = img.altTranslations?.[locale] ?? img.alt;
-        body = `${body.slice(0, insertAt)}\n\n![${alt}](${url})${body.slice(insertAt)}`;
-      }
-    }
-
-    translations[locale] = { title: entry.title, excerpt: entry.excerpt, body };
+    translations[locale] = {
+      title: entry.title,
+      excerpt: entry.excerpt,
+      body: composeGuideBody(guide, coverImageUrl, contentImageUrls, locale, entry.body),
+      faqs: entry.faqs ?? [],
+    };
   }
-
-  await db.directoryGuide.update({ where: { id: guideId }, data: { translations } });
-  console.log(`Attached translations to guide: ${guide.title}`);
+  return translations;
 }
 
 main()
