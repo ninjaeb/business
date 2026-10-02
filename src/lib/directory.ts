@@ -132,17 +132,23 @@ export function photosFromJson(value: unknown): PhotoEntry[] {
 
 // A listing's video gallery — see VideosEditor. Only the URL and what the
 // partner tells us (title, category) are ever partner-supplied; thumbnailUrl
-// is fetched best-effort from the host's own oEmbed endpoint at add-time
-// (see fetchVideoOEmbed in src/lib/video-oembed.ts) and stored here so the
-// public page never depends on a live third-party call to render — same
-// principle as every other external lookup in this app (Google Places,
-// website scraping) happening at edit-time, not at request-time. A host
-// oEmbed can't reach (Facebook, or any failed/timed-out lookup) just keeps
-// thumbnailUrl null — the gallery still embeds it on click, just behind a
-// plain placeholder instead of a real thumbnail (see VideoGallery). A host
-// toEmbeddableVideoUrl doesn't recognize at all, or a Facebook Reel (which
-// that function deliberately returns null for — see toEmbeddableVideoUrl),
-// falls back further, to a plain "Watch video" link instead of an embed.
+// is fetched best-effort from the host's own oEmbed endpoint at add-time,
+// downloaded, and re-encoded as a data: URL (see fetchVideoOEmbed in
+// src/lib/video-oembed.ts) rather than kept as a link to the provider's own
+// CDN — this app's CSP img-src is 'self' data: blob: (next.config.ts), so a
+// raw external thumbnail link would never actually render, on top of some
+// providers' (TikTok's especially) own links being signed with a short
+// expiry. Storing a data: URL here also means the public page never depends
+// on a live third-party call to render — same principle as every other
+// external lookup in this app (Google Places, website scraping) happening
+// at edit-time, not at request-time. A host oEmbed can't reach (Facebook,
+// or any failed/timed-out lookup, or a thumbnail image that failed to
+// download) just keeps thumbnailUrl null — the gallery still embeds it on
+// click, just behind a plain placeholder instead of a real thumbnail (see
+// VideoGallery). A host toEmbeddableVideoUrl doesn't recognize at all, or a
+// Facebook Reel (which that function deliberately returns null for — see
+// toEmbeddableVideoUrl), falls back further, to a plain "Watch video" link
+// instead of an embed.
 export type VideoEntry = {
   url: string;
   title: string;
@@ -153,6 +159,25 @@ export type VideoEntry = {
 const MAX_VIDEOS = 12;
 const MAX_VIDEO_URL_LENGTH = 500;
 const MAX_VIDEO_TITLE_LENGTH = 100;
+// A real thumbnail, resized to VIDEO_THUMBNAIL_MAX_DIMENSION and re-encoded
+// as webp (see fetchThumbnailDataUrl), comes in well under this — anything
+// bigger arriving through VideosEditor's hidden-input JSON (see that
+// component's own comment on the submit shape) is either corrupt or a
+// tampered payload, not a real fetched thumbnail.
+const MAX_VIDEO_THUMBNAIL_DATA_URL_LENGTH = 200_000;
+// The only shape fetchVideoOEmbed ever produces (see VideoEntry's own
+// comment on why a raw external CDN link is never stored here) — anything
+// else, including a plain https:// URL left over from before that change,
+// is dropped rather than carried forward into an <img src> this app's CSP
+// would just block anyway.
+const VIDEO_THUMBNAIL_DATA_URL_PATTERN = /^data:image\/(png|jpeg|webp|gif);base64,[A-Za-z0-9+/]+=*$/;
+
+function sanitizeVideoThumbnailUrl(value: unknown): string | null {
+  if (typeof value !== "string") return null;
+  const trimmed = value.trim();
+  if (!trimmed || trimmed.length > MAX_VIDEO_THUMBNAIL_DATA_URL_LENGTH) return null;
+  return VIDEO_THUMBNAIL_DATA_URL_PATTERN.test(trimmed) ? trimmed : null;
+}
 
 function sanitizeVideoEntry(entry: unknown): VideoEntry | null {
   if (!entry || typeof entry !== "object") return null;
@@ -164,7 +189,7 @@ function sanitizeVideoEntry(entry: unknown): VideoEntry | null {
     url,
     title: typeof raw.title === "string" ? raw.title.trim().slice(0, MAX_VIDEO_TITLE_LENGTH) : "",
     category,
-    thumbnailUrl: typeof raw.thumbnailUrl === "string" ? raw.thumbnailUrl.trim() : null,
+    thumbnailUrl: sanitizeVideoThumbnailUrl(raw.thumbnailUrl),
   };
 }
 

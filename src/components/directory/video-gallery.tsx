@@ -44,7 +44,7 @@ function VideoCard({
             aria-label={`Play ${title}`}
           >
             {video.thumbnailUrl ? (
-              // eslint-disable-next-line @next/next/no-img-element -- an external third-party thumbnail (YouTube/Vimeo/etc.), not one this app serves itself
+              // eslint-disable-next-line @next/next/no-img-element -- a data: URL (see VideoEntry's own comment) that next/image's remote loader can't optimize anyway
               <img src={video.thumbnailUrl} alt={title} loading="lazy" className="h-full w-full object-cover" />
             ) : (
               <div className="h-full w-full bg-slate-200 dark:bg-neutral-700" />

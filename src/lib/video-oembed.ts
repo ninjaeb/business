@@ -1,6 +1,8 @@
 import "server-only";
 import { toEmbeddableVideoUrl } from "@/lib/directory";
 import { USER_AGENT } from "@/lib/website-text";
+import { ALLOWED_PHOTO_TYPES, MAX_PHOTO_BYTES, photoDataUrl } from "@/lib/photo";
+import { VIDEO_THUMBNAIL_MAX_DIMENSION, optimizeImageForWeb } from "@/lib/image-optimize";
 
 // Best-effort thumbnail/title lookup for a video URL a partner just pasted
 // into the gallery editor (see VideosEditor, fetchVideoDetails in
@@ -14,6 +16,35 @@ import { USER_AGENT } from "@/lib/website-text";
 // this carries none of fetchWebsiteText's SSRF exposure (an arbitrary
 // partner-chosen host to connect to); no DNS/private-IP guard needed.
 const REQUEST_TIMEOUT_MS = 6_000;
+
+// The oEmbed response's own thumbnail_url points at the provider's CDN —
+// this app's CSP img-src is 'self' data: blob: (next.config.ts), so an
+// <img src> pointed straight at that CDN would never render at all, and on
+// top of that TikTok's own thumbnail links are signed with a short expiry,
+// so even ignoring CSP it would go on to stop rendering within hours of
+// being added. Downloading it once here and re-encoding it as a data: URL
+// (same approach as a logo sourced from Google Places — see
+// logoFromPlace/fetchPlacePhoto) sidesteps both problems: what's stored on
+// VideoEntry.thumbnailUrl is this app's own bytes, not a link to someone
+// else's.
+async function fetchThumbnailDataUrl(thumbnailUrl: string): Promise<string | null> {
+  try {
+    const response = await fetch(thumbnailUrl, {
+      headers: { "User-Agent": USER_AGENT },
+      signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
+      cache: "no-store",
+    });
+    if (!response.ok) return null;
+    const contentType = response.headers.get("content-type")?.split(";")[0]?.trim().toLowerCase();
+    if (!contentType || !ALLOWED_PHOTO_TYPES.has(contentType)) return null;
+    const buffer = Buffer.from(await response.arrayBuffer());
+    if (buffer.length === 0 || buffer.length > MAX_PHOTO_BYTES) return null;
+    const optimized = await optimizeImageForWeb(buffer, contentType, VIDEO_THUMBNAIL_MAX_DIMENSION, "webp");
+    return photoDataUrl(optimized.buffer, optimized.contentType);
+  } catch {
+    return null;
+  }
+}
 
 type OEmbedResult = { title: string | null; thumbnailUrl: string | null };
 
@@ -56,8 +87,9 @@ export async function fetchVideoOEmbed(rawUrl: string): Promise<OEmbedResult | n
 
   const data = await fetchOEmbedJson(endpoint);
   if (!data) return null;
+  const rawThumbnailUrl = typeof data.thumbnail_url === "string" ? data.thumbnail_url : null;
   return {
     title: typeof data.title === "string" ? data.title : null,
-    thumbnailUrl: typeof data.thumbnail_url === "string" ? data.thumbnail_url : null,
+    thumbnailUrl: rawThumbnailUrl ? await fetchThumbnailDataUrl(rawThumbnailUrl) : null,
   };
 }
