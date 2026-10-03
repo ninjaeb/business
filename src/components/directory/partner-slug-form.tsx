@@ -2,7 +2,8 @@
 
 import { useActionState, useState } from "react";
 import { updateListingSlug } from "@/app/actions/directory";
-import { directoryListingPath } from "@/lib/directory-i18n";
+import { directoryListingPath, type DirectoryLocale } from "@/lib/directory-i18n";
+import { PORTAL_SLUG_FORM_STRINGS } from "@/lib/portal-listing-dialogs-i18n";
 import { slugify } from "@/lib/slug";
 import { Label } from "@/components/ui/field";
 import { Button } from "@/components/ui/button";
@@ -12,6 +13,7 @@ export function PartnerSlugForm({
   slug,
   siteOrigin,
   autoSlugSource,
+  locale,
 }: {
   listingId: string;
   slug: string;
@@ -25,7 +27,9 @@ export function PartnerSlugForm({
   // any other edit here — AI Auto Create writes content, never a live URL,
   // without a partner's own confirmation.
   autoSlugSource?: string;
+  locale: DirectoryLocale;
 }) {
+  const t = PORTAL_SLUG_FORM_STRINGS[locale];
   const [state, formAction, pending] = useActionState(updateListingSlug.bind(null, listingId), undefined);
   const [value, setValue] = useState(slug);
 
@@ -64,7 +68,7 @@ export function PartnerSlugForm({
   return (
     <form action={formAction} className="space-y-3">
       <div>
-        <Label htmlFor="slug">Web address</Label>
+        <Label htmlFor="slug">{t.webAddressLabel}</Label>
         <div className="flex items-stretch overflow-hidden rounded-md ring-1 ring-inset ring-slate-300 focus-within:ring-2 focus-within:ring-led dark:ring-neutral-700">
           <span className="flex shrink-0 items-center bg-slate-50 pl-3 pr-1 text-sm text-slate-500 dark:bg-neutral-800 dark:text-slate-400">
             {prefix}
@@ -78,10 +82,8 @@ export function PartnerSlugForm({
             className="h-11 min-w-0 flex-1 border-0 bg-transparent px-1 text-sm text-slate-900 focus:outline-none focus:ring-0 dark:text-slate-100"
           />
         </div>
-        <p className="mt-1 text-xs text-slate-400">Letters, numbers, and hyphens only.</p>
-        <p className="mt-1 text-xs font-medium text-rose-600 dark:text-rose-400">
-          Don&apos;t change this after you go live — anyone with the old link gets a not-found page instead.
-        </p>
+        <p className="mt-1 text-xs text-slate-400">{t.helpText}</p>
+        <p className="mt-1 text-xs font-medium text-rose-600 dark:text-rose-400">{t.warningText}</p>
       </div>
 
       {state && "error" in state && <p className="text-sm text-rose-600 dark:text-rose-400">{state.error}</p>}
@@ -91,7 +93,7 @@ export function PartnerSlugForm({
         disabled={pending || value === slug}
         className="bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"
       >
-        {pending ? "Saving…" : "Update address"}
+        {pending ? t.saving : t.updateAddress}
       </Button>
     </form>
   );

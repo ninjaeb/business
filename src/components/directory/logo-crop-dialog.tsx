@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import Cropper, { type Area, type Point } from "react-easy-crop";
 import { X } from "lucide-react";
 import { cropImage } from "@/lib/crop-image";
+import type { DirectoryLocale } from "@/lib/directory-i18n";
+import { PORTAL_LOGO_CROP_STRINGS } from "@/lib/portal-listing-dialogs-i18n";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/field";
 
@@ -17,11 +19,14 @@ export function LogoCropDialog({
   imageUrl,
   onCancel,
   onApply,
+  locale,
 }: {
   imageUrl: string;
   onCancel: () => void;
   onApply: (dataUrl: string) => void;
+  locale: DirectoryLocale;
 }) {
+  const t = PORTAL_LOGO_CROP_STRINGS[locale];
   const [crop, setCrop] = useState<Point>({ x: 0, y: 0 });
   const [zoom, setZoom] = useState(1);
   const [rotation, setRotation] = useState(0);
@@ -45,7 +50,7 @@ export function LogoCropDialog({
       const dataUrl = await cropImage(imageUrl, croppedAreaPixels, rotation);
       onApply(dataUrl);
     } catch {
-      setError("Couldn't crop that image — try a different file.");
+      setError(t.cropError);
       setApplying(false);
     }
   }
@@ -55,16 +60,16 @@ export function LogoCropDialog({
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
       role="dialog"
       aria-modal="true"
-      aria-label="Crop logo"
+      aria-label={t.dialogHeading}
     >
       <div className="w-full max-w-md rounded-lg bg-white p-4 shadow-2xl dark:bg-neutral-900">
         <div className="mb-3 flex items-center justify-between">
-          <h2 className="text-sm font-semibold text-slate-900 dark:text-slate-100">Crop logo</h2>
+          <h2 className="text-sm font-semibold text-slate-900 dark:text-slate-100">{t.dialogHeading}</h2>
           <button
             type="button"
             onClick={onCancel}
             className="rounded-full p-1 text-slate-400 hover:bg-slate-100 hover:text-slate-600 dark:hover:bg-neutral-800 dark:hover:text-slate-300"
-            aria-label="Cancel"
+            aria-label={t.cancelAriaLabel}
           >
             <X className="h-4 w-4" />
           </button>
@@ -89,7 +94,7 @@ export function LogoCropDialog({
         <div className="mt-4 space-y-3">
           <div>
             <Label htmlFor="logo-crop-zoom" className="mb-1 text-xs">
-              Zoom
+              {t.zoomLabel}
             </Label>
             <input
               id="logo-crop-zoom"
@@ -105,7 +110,7 @@ export function LogoCropDialog({
           <div>
             <div className="mb-1 flex items-center justify-between">
               <Label htmlFor="logo-crop-rotation" className="mb-0 text-xs">
-                Rotate
+                {t.rotateLabel}
               </Label>
               {rotation !== 0 && (
                 <button
@@ -113,7 +118,7 @@ export function LogoCropDialog({
                   onClick={() => setRotation(0)}
                   className="text-xs text-petrol hover:underline dark:text-petrol-light"
                 >
-                  Reset
+                  {t.resetLabel}
                 </button>
               )}
             </div>
@@ -134,7 +139,7 @@ export function LogoCropDialog({
 
         <div className="mt-4 flex justify-end gap-2">
           <Button type="button" variant="secondary" onClick={onCancel} disabled={applying}>
-            Cancel
+            {t.cancelButton}
           </Button>
           <Button
             type="button"
@@ -142,7 +147,7 @@ export function LogoCropDialog({
             disabled={applying || !croppedAreaPixels}
             className="bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"
           >
-            {applying ? "Applying…" : "Apply"}
+            {applying ? t.applying : t.apply}
           </Button>
         </div>
       </div>

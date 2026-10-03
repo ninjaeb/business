@@ -63,8 +63,11 @@ export type PortalAddressSearchStrings = {
   loadingAddress: string;
   searching: string;
   noMatches: string;
-  // {name} token — see formatFilledInFrom below.
-  filledInFromTemplate: string;
+  // Split around the <span> wrapping the matched place's own name — see
+  // address-search.tsx's own JSX — rather than a single {name} template, so
+  // that name keeps its bold styling.
+  filledInFromPrefix: string;
+  filledInFromSuffix: string;
 };
 
 export const PORTAL_ADDRESS_SEARCH_STRINGS: Record<DirectoryLocale, PortalAddressSearchStrings> = {
@@ -74,7 +77,8 @@ export const PORTAL_ADDRESS_SEARCH_STRINGS: Record<DirectoryLocale, PortalAddres
     loadingAddress: "Loading address…",
     searching: "Searching…",
     noMatches: "No matches — try adding the city or area.",
-    filledInFromTemplate: "Filled in from {name} — edit the fields below if needed.",
+    filledInFromPrefix: "Filled in from ",
+    filledInFromSuffix: " — edit the fields below if needed.",
   },
   zh: {
     searchLabel: "在 Google 地图上搜索您的地址",
@@ -82,7 +86,8 @@ export const PORTAL_ADDRESS_SEARCH_STRINGS: Record<DirectoryLocale, PortalAddres
     loadingAddress: "加载地址中…",
     searching: "搜索中…",
     noMatches: "没有匹配结果——请尝试加上城市或地区。",
-    filledInFromTemplate: "已根据「{name}」自动填写——如有需要，可在下方字段中编辑。",
+    filledInFromPrefix: "已根据「",
+    filledInFromSuffix: "」自动填写——如有需要，可在下方字段中编辑。",
   },
   ms: {
     searchLabel: "Cari alamat anda di Google Maps",
@@ -90,13 +95,10 @@ export const PORTAL_ADDRESS_SEARCH_STRINGS: Record<DirectoryLocale, PortalAddres
     loadingAddress: "Memuatkan alamat…",
     searching: "Mencari…",
     noMatches: "Tiada padanan — cuba tambah bandar atau kawasan.",
-    filledInFromTemplate: "Diisi berdasarkan {name} — edit medan di bawah jika perlu.",
+    filledInFromPrefix: "Diisi berdasarkan ",
+    filledInFromSuffix: " — edit medan di bawah jika perlu.",
   },
 };
-
-export function formatFilledInFrom(name: string, locale: DirectoryLocale): string {
-  return PORTAL_ADDRESS_SEARCH_STRINGS[locale].filledInFromTemplate.replace("{name}", name);
-}
 
 // src/components/directory/ai-auto-create-panel.tsx
 export type PortalAiAutoCreateStrings = {

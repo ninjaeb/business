@@ -1021,15 +1021,12 @@ export function PartnerListingForm({
       <div className={cn("space-y-5", activeSection !== "services" && "hidden")}>
 
       {languageSwitcher}
-      <p className="-mt-3 text-xs text-slate-400">
-        Products &amp; services are per-language — switch tabs to edit each, or use Translate with AI to fill in
-        Chinese and Malay from your English content.
-      </p>
+      <p className="-mt-3 text-xs text-slate-400">{t.servicesTabHint}</p>
 
       <div>
         <div className="mb-1.5 flex items-center justify-between gap-2">
           <Label className="mb-0">
-            Products &amp; services
+            {t.servicesLabel}
             <RequiredMark />
           </Label>
           {aiAvailable && activeTab === "en" && (
@@ -1040,7 +1037,7 @@ export function PartnerListingForm({
               className={buttonClasses("ghost", "sm", "shrink-0")}
             >
               <Sparkles className="h-3.5 w-3.5" />
-              {rewritingServices ? "Rewriting…" : "Rewrite with AI"}
+              {rewritingServices ? t.rewriting : t.rewriteWithAi}
             </button>
           )}
         </div>
@@ -1064,10 +1061,7 @@ export function PartnerListingForm({
         {servicesError ? (
           <p className="mt-1 text-sm text-rose-600 dark:text-rose-400">{servicesError}</p>
         ) : (
-          <p className="mt-1 text-xs text-slate-400">
-            A title, an optional description, and an optional price for each — shown on your listing. At least one
-            is required (in English) before you can submit for review.
-          </p>
+          <p className="mt-1 text-xs text-slate-400">{t.servicesHelpText}</p>
         )}
       </div>
 
@@ -1076,14 +1070,11 @@ export function PartnerListingForm({
       <div className={cn("space-y-5", activeSection !== "faq" && "hidden")}>
 
       {languageSwitcher}
-      <p className="-mt-3 text-xs text-slate-400">
-        FAQ is per-language — switch tabs to edit each, or use Translate with AI to fill in Chinese and Malay from
-        your English content.
-      </p>
+      <p className="-mt-3 text-xs text-slate-400">{t.faqTabHint}</p>
 
       <div>
         <div className="mb-1.5 flex items-center justify-between gap-2">
-          <Label className="mb-0">FAQ</Label>
+          <Label className="mb-0">{t.faqLabel}</Label>
           {aiAvailable && activeTab === "en" && (
             <button
               type="button"
@@ -1092,7 +1083,7 @@ export function PartnerListingForm({
               className={buttonClasses("ghost", "sm", "shrink-0")}
             >
               <Sparkles className="h-3.5 w-3.5" />
-              {generatingFaqs ? "Generating…" : "Generate with AI"}
+              {generatingFaqs ? t.generating : t.generateWithAi}
             </button>
           )}
         </div>
@@ -1105,39 +1096,27 @@ export function PartnerListingForm({
         <div hidden={activeTab !== "ms"}>
           <FaqEditor name="msFaqs" value={translations.ms?.faqs ?? []} onChange={(value) => updateTranslatedFaqs("ms", value)} />
         </div>
-        <p className="mt-1 text-xs text-slate-400">
-          Optional — shown on your listing as a Q&amp;A section, and helps your page surface in AI search answers.
-        </p>
+        <p className="mt-1 text-xs text-slate-400">{t.faqHelpText}</p>
       </div>
 
       </div>
 
       <div className={cn("space-y-3", activeSection !== "updates" && "hidden")}>
-        <p className="text-sm text-slate-500 dark:text-slate-400">
-          Optional — shown on your listing in a News &amp; Promotions section. A promotion disappears on its own
-          once its end date passes.
-        </p>
+        <p className="text-sm text-slate-500 dark:text-slate-400">{t.updatesIntro}</p>
 
-        <FieldGroup label="Google Business Profile link" htmlFor="googleBusinessProfileUrl">
+        <FieldGroup label={t.googleBusinessProfileLabel} htmlFor="googleBusinessProfileUrl">
           <Input
             id="googleBusinessProfileUrl"
             name="googleBusinessProfileUrl"
             value={googleBusinessProfileUrl}
             onChange={(event) => setGoogleBusinessProfileUrl(event.target.value)}
-            placeholder="https://g.page/r/..."
+            placeholder={t.googleBusinessProfilePlaceholder}
           />
-          <p className="mt-1 text-xs text-slate-400">
-            Optional — open your Google Business Profile, tap Share, and paste the link here. Each post below then
-            gets a &quot;Post to Google&quot; button that copies it and opens your profile to paste it in.
-          </p>
+          <p className="mt-1 text-xs text-slate-400">{t.googleBusinessProfileHelpText}</p>
         </FieldGroup>
 
         {languageSwitcher}
-        <p className="-mt-1 text-xs text-slate-400">
-          Posts are per-language — switch tabs to edit each, or use Translate with AI to fill in Chinese and Malay
-          from your English posts. Kind, post date, and end date always come from the English post and aren&apos;t
-          set separately per language.
-        </p>
+        <p className="-mt-1 text-xs text-slate-400">{t.updatesTabHint}</p>
 
         <div hidden={activeTab !== "en"}>
           <UpdatesEditor
@@ -1176,22 +1155,15 @@ export function PartnerListingForm({
           tabs and lives in its own top-level section too. */}
       <div className={cn("mt-4 grid gap-4 sm:grid-cols-2", activeSection !== "media" && "hidden")}>
         <div>
-          <h3 className="mb-1.5 text-sm font-semibold text-slate-900 dark:text-slate-100">Photos</h3>
+          <h3 className="mb-1.5 text-sm font-semibold text-slate-900 dark:text-slate-100">{t.photosHeading}</h3>
           <ListingPhotosEditor listingId={listingId} initialPhotos={photos} />
-          <p className="mt-1 text-xs text-slate-400">
-            Up to 12 — group photos into an album (e.g. &quot;Team Building 2026&quot;) and they&apos;ll show as an
-            album on your public page. Added right away, but only shown publicly once you save and the listing is
-            (re)approved, same as everything else here.
-          </p>
+          <p className="mt-1 text-xs text-slate-400">{t.photosHelpText}</p>
         </div>
 
         <div>
-          <h3 className="mb-1.5 text-sm font-semibold text-slate-900 dark:text-slate-100">Videos</h3>
+          <h3 className="mb-1.5 text-sm font-semibold text-slate-900 dark:text-slate-100">{t.videosHeading}</h3>
           <VideosEditor name="videos" value={videos} onChange={setVideos} />
-          <p className="mt-1 text-xs text-slate-400">
-            Up to 12 — YouTube, Vimeo, Dailymotion, Facebook, or TikTok links, each with a title and category.
-            Optimized for search and AI answer engines.
-          </p>
+          <p className="mt-1 text-xs text-slate-400">{t.videosHelpText}</p>
         </div>
       </div>
 
@@ -1210,7 +1182,7 @@ export function PartnerListingForm({
           variant={justSaved ? "secondary" : "primary"}
           className={justSaved ? undefined : "bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"}
         >
-          {pending ? "Saving…" : justSaved ? "Saved" : "Save draft"}
+          {pending ? t.saving : justSaved ? t.saved : t.saveDraft}
         </Button>
         <Button
           type="button"
@@ -1218,7 +1190,7 @@ export function PartnerListingForm({
           disabled={submitPending || status === "PENDING_REVIEW"}
           onClick={handleSubmitForReview}
         >
-          {submitPending ? "Submitting…" : status === "PENDING_REVIEW" ? "Awaiting review" : "Submit for review"}
+          {submitPending ? t.submitting : status === "PENDING_REVIEW" ? t.awaitingReview : t.submitForReview}
         </Button>
       </div>
       </form>
