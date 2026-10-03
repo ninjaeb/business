@@ -8,11 +8,20 @@ import {
   getPublishedBranchListings,
   getPublishedListingBySlug,
   isOpenNow,
+  loadPublishedListings,
+  nearbyListingsExcludingIndustry,
+  toDirectoryGridListing,
   type OperatingHours,
 } from "@/lib/directory";
 import { buildListingMetadata } from "@/lib/directory-seo";
 import { resolveDirectoryLocale } from "@/lib/directory-locale";
-import { DIRECTORY_STRINGS, directoryListingPath, directoryListingVisitPath, type DirectoryStrings } from "@/lib/directory-i18n";
+import {
+  DIRECTORY_STRINGS,
+  INDUSTRY_LABELS_BY_LOCALE,
+  directoryListingPath,
+  directoryListingVisitPath,
+  type DirectoryStrings,
+} from "@/lib/directory-i18n";
 import { getSiteOrigin } from "@/lib/site-url";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
@@ -21,8 +30,15 @@ import { buttonClasses } from "@/components/ui/button";
 import { ExternalLink } from "@/components/ui/external-link";
 import { GoogleMapsIcon } from "@/components/directory/google-maps-icon";
 import { WazeIcon } from "@/components/directory/waze-icon";
+import { ListingCard } from "@/components/directory/listing-card";
 
 export const dynamic = "force-dynamic";
+
+// Same cap the About page's own "Latest businesses" section uses (see
+// MAX_RELATED_LISTINGS in page.tsx) — enough to be useful, not so many the
+// section competes with this page's own address/hours/branches content for
+// attention.
+const MAX_RELATED_LISTINGS = 6;
 
 export async function generateMetadata({
   params,
@@ -103,6 +119,17 @@ export default async function VisitPage({
   if (!mapAddress && !listing.operatingHours && branches.length === 0) notFound();
 
   const t = DIRECTORY_STRINGS[resolved];
+
+  // Moved here from the About page (see that page's own comment on why):
+  // a visitor already on this page, thinking about where/when to go, is
+  // more likely to want a nearby alternative than a generically "latest"
+  // one — grouped by state, excluding this listing's own industry, same as
+  // before the move.
+  const nearbyBusinesses = listing.state
+    ? nearbyListingsExcludingIndustry(await loadPublishedListings(), listing.state, slug, listing.industry, MAX_RELATED_LISTINGS).map(
+        (row) => toDirectoryGridListing(row, resolved),
+      )
+    : [];
 
   return (
     <div className="space-y-6">
@@ -230,6 +257,25 @@ export default async function VisitPage({
             </ul>
           </CardBody>
         </Card>
+      )}
+      {nearbyBusinesses.length > 0 && (
+        <section aria-labelledby="nearby-businesses">
+          <h2 id="nearby-businesses" className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+            {t.nearbyBusinessesHeading}
+          </h2>
+          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            {nearbyBusinesses.map((related) => (
+              <ListingCard
+                key={related.slug}
+                listing={related}
+                viewLabel={t.viewListing}
+                industryLabel={related.industry ? INDUSTRY_LABELS_BY_LOCALE[resolved][related.industry] : undefined}
+                locale={resolved}
+                variant="compact"
+              />
+            ))}
+          </div>
+        </section>
       )}
     </div>
   );
