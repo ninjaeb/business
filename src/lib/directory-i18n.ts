@@ -720,6 +720,13 @@ export type DirectoryStrings = {
   // the rest of that menu is already in.
   navDashboard: string;
   navMyListings: string;
+  navTestimonials: string;
+  navTestimonialLinks: string;
+  // The "My CRM" group heading BUSINESS_NAV_ITEMS attaches to its
+  // "Business Leads" entry (see PartnerSidebar/PartnerNavMenu's own
+  // `"heading" in item` rendering) — localizedBusinessNavItems below
+  // carries it through so DirectoryNavMenu can group the same way.
+  navMyCrm: string;
   navBusinessLeads: string;
   navCompanies: string;
   navContacts: string;
@@ -1010,6 +1017,9 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navAddBusiness: "Add Business",
     navDashboard: "Dashboard",
     navMyListings: "My Business",
+    navTestimonials: "Testimonials",
+    navTestimonialLinks: "Review Links",
+    navMyCrm: "My CRM",
     navBusinessLeads: "Business Leads",
     navCompanies: "Companies",
     navContacts: "Contacts",
@@ -1296,6 +1306,9 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navAddBusiness: "添加企业",
     navDashboard: "仪表盘",
     navMyListings: "我的企业",
+    navTestimonials: "客户评价",
+    navTestimonialLinks: "评价链接",
+    navMyCrm: "我的 CRM",
     navBusinessLeads: "商业线索",
     navCompanies: "公司",
     navContacts: "联系人",
@@ -1586,6 +1599,9 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navAddBusiness: "Tambah Perniagaan",
     navDashboard: "Papan Pemuka",
     navMyListings: "Perniagaan saya",
+    navTestimonials: "Testimoni",
+    navTestimonialLinks: "Pautan Testimoni",
+    navMyCrm: "CRM Saya",
     navBusinessLeads: "Petunjuk Perniagaan",
     navCompanies: "Syarikat",
     navContacts: "Kenalan",
@@ -1646,12 +1662,17 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
 // rendered inside DirectoryNavMenu, which does live inside it and needs to
 // match whichever of the three languages that menu is already showing.
 // Zips those hrefs (unlocalized, and never shown directly) with the
-// translated labels above, in the same fixed order.
-export function localizedBusinessNavItems(locale: DirectoryLocale): { href: string; label: string }[] {
+// translated labels above, in the same fixed order — including each item's
+// own `heading` (e.g. "Business Leads" starting the "My CRM" group), also
+// translated, so DirectoryNavMenu can group this list exactly the way
+// PartnerSidebar/PartnerNavMenu already do.
+export function localizedBusinessNavItems(locale: DirectoryLocale): { href: string; label: string; heading?: string }[] {
   const t = DIRECTORY_STRINGS[locale];
   const labels: Record<string, string> = {
     "/business-portal": t.navDashboard,
     "/business-portal/listings": t.navMyListings,
+    "/business-portal/testimonials": t.navTestimonials,
+    "/business-portal/testimonial-links": t.navTestimonialLinks,
     "/business-portal/business-leads": t.navBusinessLeads,
     "/business-portal/companies": t.navCompanies,
     "/business-portal/contacts": t.navContacts,
@@ -1659,7 +1680,12 @@ export function localizedBusinessNavItems(locale: DirectoryLocale): { href: stri
     "/business-portal/tasks": t.navTasks,
     "/business-portal/profile": t.navProfile,
   };
-  return BUSINESS_NAV_ITEMS.map((item) => ({ href: item.href, label: labels[item.href] ?? item.label }));
+  const headings: Record<string, string> = { "My CRM": t.navMyCrm };
+  return BUSINESS_NAV_ITEMS.map((item) => ({
+    href: item.href,
+    label: labels[item.href] ?? item.label,
+    heading: "heading" in item ? (headings[item.heading] ?? item.heading) : undefined,
+  }));
 }
 
 // Industry is a fixed enum shared with the internal /system CRM (see

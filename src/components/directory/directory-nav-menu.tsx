@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import { LogIn, LogOut, Menu, Plus, Sparkles, Store, X } from "lucide-react";
 import { createListingAction } from "@/app/actions/directory";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
@@ -46,8 +46,10 @@ export function DirectoryNavMenu({
   // Already localized to whatever language this menu is currently showing
   // (see localizedBusinessNavItems in directory-i18n.ts) — unlike
   // PartnerNavMenu/PartnerSidebar, which import BUSINESS_NAV_ITEMS directly
-  // and stay English, matching the rest of the (English-only) portal.
-  businessNavItems: { href: string; label: string }[];
+  // and stay English, matching the rest of the (English-only) portal. An
+  // item's own `heading` (translated) starts a new labeled group, same
+  // "My CRM" grouping PartnerNavMenu/PartnerSidebar already render.
+  businessNavItems: { href: string; label: string; heading?: string }[];
   // The same four items DirectoryTopNav renders inline at lg+ (categories,
   // locations, latest products, news & promotions) — see this component's
   // own lg:hidden wrapper below for why they're repeated here rather than
@@ -160,15 +162,21 @@ export function DirectoryNavMenu({
                 {myBusinessLabel}
               </div>
               {businessNavItems.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  role="menuitem"
-                  onClick={() => setOpen(false)}
-                  className={cn(itemClasses, "pl-5")}
-                >
-                  {item.label}
-                </Link>
+                <Fragment key={item.href}>
+                  {item.heading && (
+                    <div className="border-t border-slate-100 px-3 pb-1 pt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:border-neutral-800 dark:text-slate-500">
+                      {item.heading}
+                    </div>
+                  )}
+                  <Link
+                    href={item.href}
+                    role="menuitem"
+                    onClick={() => setOpen(false)}
+                    className={cn(itemClasses, "pl-5")}
+                  >
+                    {item.label}
+                  </Link>
+                </Fragment>
               ))}
             </>
           )}
