@@ -19,8 +19,9 @@ import { CopyLinkButton } from "@/components/business-crm/copy-link-button";
 // moderation page just above this one in the nav. Links always open to
 // English (the generated URL hardcodes /en/) — the business-portal itself
 // is English-only, same as every other partner-facing page, but the
-// visitor who opens the link can still switch locale on the page itself
-// like any other visitor.
+// customer who opens the link can still switch locale on the page itself
+// like any other visitor, and needs no account at all — see
+// StandaloneTestimonialForm.
 export default async function TestimonialRequestLinksPage() {
   const user = await requireCompletePartnerProfile();
   const [links, siteOrigin] = await Promise.all([listTestimonialRequestLinks(user.id), getSiteOrigin()]);
@@ -29,7 +30,7 @@ export default async function TestimonialRequestLinksPage() {
     <div className="space-y-6">
       <PageHeader
         title="Review links"
-        description="Create a unique link to send a specific customer, so they can leave you a testimonial — optionally tagged with the product or service you provided them."
+        description="Create a unique link to send a specific customer — no account needed on their end. It opens straight to a testimonial form, prefilled with whatever you already know about them."
         actions={
           <Link href="/business-portal/testimonial-links/new" className={buttonClasses()}>
             <Plus className="h-4 w-4" />
@@ -58,8 +59,8 @@ export default async function TestimonialRequestLinksPage() {
                 <thead>
                   <tr className="border-b border-slate-200 text-left text-xs text-slate-500 dark:border-neutral-800 dark:text-slate-400">
                     <th className="py-2 pr-3 font-medium">Listing</th>
+                    <th className="py-2 pr-3 font-medium">Customer</th>
                     <th className="py-2 pr-3 font-medium">Service</th>
-                    <th className="py-2 pr-3 font-medium">Note</th>
                     <th className="py-2 pr-3 font-medium">Status</th>
                     <th className="py-2 pr-3 font-medium">Created</th>
                     <th className="py-2 pr-3 font-medium">Link</th>
@@ -70,8 +71,10 @@ export default async function TestimonialRequestLinksPage() {
                   {links.map((link) => (
                     <tr key={link.id}>
                       <td className="py-2.5 pr-3 whitespace-nowrap text-slate-600 dark:text-slate-300">{link.listing.companyName}</td>
+                      <td className="py-2.5 pr-3 text-slate-600 dark:text-slate-300">
+                        {link.customerName || link.note || "—"}
+                      </td>
                       <td className="py-2.5 pr-3 text-slate-600 dark:text-slate-300">{link.serviceTitle || "—"}</td>
-                      <td className="py-2.5 pr-3 text-slate-600 dark:text-slate-300">{link.note || "—"}</td>
                       <td className="py-2.5 pr-3 whitespace-nowrap">
                         {link.usedAt ? (
                           <Badge className="bg-emerald-100 text-emerald-700 ring-emerald-600/20 dark:bg-emerald-950 dark:text-emerald-400 dark:ring-emerald-500/30">
@@ -85,7 +88,7 @@ export default async function TestimonialRequestLinksPage() {
                       </td>
                       <td className="py-2.5 pr-3 whitespace-nowrap text-slate-600 dark:text-slate-300">{formatDate(link.createdAt)}</td>
                       <td className="py-2.5 pr-3">
-                        <CopyLinkButton url={testimonialRequestUrl(siteOrigin, "en", link.listing.slug, link.id)} />
+                        <CopyLinkButton url={testimonialRequestUrl(siteOrigin, link.id)} />
                       </td>
                       <td className="py-2.5 pr-3">
                         <form action={deleteTestimonialRequestLink.bind(null, link.id)}>

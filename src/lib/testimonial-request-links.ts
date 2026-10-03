@@ -21,22 +21,33 @@ export async function getOwnedTestimonialRequestLink(id: string, partnerId: stri
   });
 }
 
-// The public testimonial form's own lookup (see WriteTestimonialButton,
-// getTestimonialRequestPreview in src/app/actions/testimonials.ts) — scoped
-// by listingId as well as id so a token copied from one listing's link can
-// never be replayed against a different listing's slug, and excludes an
-// already-used link so a visitor who reopens an old link mid-conversation
-// just sees the ordinary form instead of a stale "you're reviewing X" banner.
-export async function getTestimonialRequestLinkPreview(id: string, listingId: string) {
-  return db.testimonialRequestLink.findFirst({
-    where: { id, listingId, usedAt: null },
-    select: { serviceTitle: true },
+// The standalone page's own lookup (see /[locale]/review/[token] and
+// submitStandaloneTestimonial) — excludes an already-used link (so
+// reopening a spent link reads as "not available" rather than silently
+// re-showing the form) and a listing that isn't published (the same guard
+// every other testimonial path applies — checked in JS rather than the
+// where clause itself, since publishedSnapshot is a Json column and Prisma
+// wants its own JsonNull sentinel there instead of a plain `null`, same
+// reasoning submitDirectoryTestimonial's own `!listing.publishedSnapshot`
+// check already follows). Returns the full listing row, not a trimmed
+// selection, since both the page (logo/name/locale-aware display) and
+// notifyPartnerOfNewTestimonial (partnerId, companyName) need different
+// slices of it.
+export async function getTestimonialRequestLinkForForm(id: string) {
+  const request = await db.testimonialRequestLink.findFirst({
+    where: { id, usedAt: null },
+    include: { listing: true },
   });
+  if (!request || !request.listing.publishedSnapshot) return null;
+  return request;
 }
 
 // Built fresh by the list page / copy-link button, not stored — the token
 // is just the row's own id (see TestimonialRequestLink's own comment on
-// why), so there's nothing to persist beyond the row itself.
-export function testimonialRequestUrl(siteOrigin: string, locale: string, slug: string, linkId: string): string {
-  return `${siteOrigin}/${locale}/${slug}/testimonials?req=${linkId}`;
+// why), so there's nothing to persist beyond the row itself. Always /en/ —
+// the business-portal that generates this link is English-only, same as
+// every other partner-facing page, but the customer who opens it can still
+// switch locale on the standalone page itself like any other visitor.
+export function testimonialRequestUrl(siteOrigin: string, linkId: string): string {
+  return `${siteOrigin}/en/review/${linkId}`;
 }

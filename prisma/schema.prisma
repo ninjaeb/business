@@ -665,12 +665,23 @@ model DirectoryTestimonial {
 
   // Denormalized from TestimonialRequestLink.serviceTitle at submission time
   // when this testimonial was written through one of the partner's own
-  // request links (see submitDirectoryTestimonial) — null for every
+  // request links (see submitStandaloneTestimonial) — null for every
   // testimonial written the ordinary way, straight off the listing page.
   // Copied rather than related, same "snapshot at submit time" reasoning as
   // authorName above: the request link can be deleted by the partner
   // afterward without taking this context down with it.
   serviceTitle String?
+
+  // The customer's own title/company, same "shown under the quote" use as
+  // any testimonial widget ("Jane Smith, Marketing Director at Acme Corp")
+  // — only ever set by submitStandaloneTestimonial's own no-login form
+  // (see TestimonialRequestLink.customerTitle/customerCompany, which this
+  // starts from but the customer can still edit before submitting). Null
+  // for every testimonial written the ordinary, signed-in way, since a
+  // VISITOR/PARTNER account has no title/company field of its own to pull
+  // one from.
+  authorTitle   String?
+  authorCompany String?
 
   reviewNote String?   @db.Text
   reviewedAt DateTime?
@@ -708,26 +719,40 @@ model DirectoryTestimonial {
 }
 
 // A partner-generated, shareable "please leave us a testimonial" link (see
-// /business-portal/testimonial-links and submitDirectoryTestimonial) — the
-// row's own id doubles as the URL token (?req=<id> on the listing's
-// Testimonials page), same "the model's own id is the token" convention
-// this app already uses for every other id-in-a-URL case, rather than a
-// separate generated code. Unlike PartnerListing.referralCode (one reusable
-// code per listing, shared with anyone), a partner can create as many of
-// these as they like — typically one per customer they're asking.
+// /business-portal/testimonial-links, the standalone page at
+// /[locale]/review/[token], and submitStandaloneTestimonial) — the row's
+// own id doubles as the URL token, same "the model's own id is the token"
+// convention this app already uses for every other id-in-a-URL case,
+// rather than a separate generated code. Unlike PartnerListing.referralCode
+// (one reusable code per listing, shared with anyone), a partner can create
+// as many of these as they like — typically one per customer they're
+// asking — and opening one needs no account at all: the standalone page is
+// a public, unauthenticated form, prefilled from whatever the partner
+// already knew about this customer.
 model TestimonialRequestLink {
   id String @id @default(cuid())
 
-  // Shown to the visitor on the testimonial form ("You're sharing feedback
+  // Shown to the customer on the standalone form ("You're sharing feedback
   // about: ...") and copied onto the resulting testimonial (see
   // DirectoryTestimonial.serviceTitle) once used — free text, not a
   // reference to a PartnerListing.services entry, since ServiceEntry itself
   // has no stable id to point at (see its own comment in src/lib/directory.ts).
   serviceTitle String?
 
-  // The partner's own private label for this link (e.g. a customer's name)
-  // — never shown to the visitor, purely so the partner's own list of links
-  // stays legible once there are more than a couple.
+  // Prefills the standalone form's own name/company/title fields (see
+  // StandaloneTestimonialForm) — all optional, since the partner may not
+  // know all three for a given customer. Still editable on the form itself
+  // before submitting, so these are defaults, not an enforced identity;
+  // the values actually saved come from the submitted form, not these
+  // columns directly (see submitStandaloneTestimonial).
+  customerName    String?
+  customerCompany String?
+  customerTitle   String?
+
+  // The partner's own private label for this link — never shown to the
+  // customer, purely so the partner's own list of links stays legible once
+  // there are more than a couple (e.g. an internal job reference the
+  // customerName/Company/Title fields above don't capture).
   note String?
 
   // Set once a testimonial is submitted through this link — null means

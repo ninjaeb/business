@@ -49,6 +49,16 @@ export function TestimonialList({ testimonials, locale }: { testimonials: Testim
                   {formatTestimonialServiceTag(t.testimonialServiceTag, testimonial.serviceTitle)}
                 </span>
               )}
+              {/* "Marketing Director, Acme Corp" — same standalone,
+                  no-login path as serviceTitle above (see
+                  DirectoryTestimonial.authorTitle's own comment); absent for
+                  every testimonial written by a signed-in account, which has
+                  no title/company field of its own. */}
+              {(testimonial.authorTitle || testimonial.authorCompany) && (
+                <p className="text-xs text-slate-400 dark:text-slate-500">
+                  {[testimonial.authorTitle, testimonial.authorCompany].filter(Boolean).join(", ")}
+                </p>
+              )}
             </div>
             <div className="flex items-center gap-2">
               {testimonial.rating && <TestimonialStars rating={testimonial.rating} />}
