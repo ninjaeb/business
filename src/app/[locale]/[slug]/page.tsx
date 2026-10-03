@@ -1,13 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import {
-  getPublishedListingBySlug,
-  latestListings,
-  loadPublishedListings,
-  nearbyListingsExcludingIndustry,
-  resolveListingDisplay,
-  toDirectoryGridListing,
-} from "@/lib/directory";
+import { getPublishedListingBySlug, latestListings, loadPublishedListings, resolveListingDisplay, toDirectoryGridListing } from "@/lib/directory";
 import { buildListingMetadata } from "@/lib/directory-seo";
 import { renderMarkdownLite } from "@/lib/markdown-lite";
 import { resolveDirectoryLocale } from "@/lib/directory-locale";
@@ -19,10 +12,12 @@ import { LegacyAnchorRedirect } from "@/components/directory/legacy-anchor-redir
 
 export const dynamic = "force-dynamic";
 
-// How many other listings to surface in each of the two "other businesses"
-// sections below this one (see latestListings/nearbyListingsExcludingIndustry)
-// — enough to be useful, not so many the section competes with the
-// listing's own content for attention.
+// How many other listings to surface in the "Latest businesses" section
+// below this one (see latestListings) — enough to be useful, not so many
+// the section competes with the listing's own content for attention. Same
+// cap the Visit us page's own "Businesses near you" section uses (see
+// MAX_RELATED_LISTINGS in visit/page.tsx) — kept as two separate constants
+// since the two pages have nothing else in common to share a module for.
 const MAX_RELATED_LISTINGS = 6;
 
 export async function generateMetadata({
@@ -73,26 +68,23 @@ export default async function DirectoryAboutPage({
   const t = DIRECTORY_STRINGS[resolved];
   const display = resolveListingDisplay(listing, resolved);
 
-  // Two ways to reach another business from this page — without these,
-  // landing here from search or an AI answer engine has no path to another
-  // listing except going all the way back to the directory home.
-  // Deliberately NOT grouped by this listing's own category/industry: the
-  // newest published listings overall, and other listings in the same
-  // state but a different industry, so a visitor sees fresh and nearby
-  // businesses rather than a list of this one's direct competitors. Kept
-  // only on this, the listing's default/About page — its other pages
-  // (Products & Services, Photos, ...) stay focused on their own single
-  // topic rather than repeating this same "browse more" content on every
-  // one of them.
+  // A way to reach another business from this page — without it, landing
+  // here from search or an AI answer engine has no path to another listing
+  // except going all the way back to the directory home. The newest
+  // published listings overall, not grouped by this listing's own
+  // category/industry, so a visitor sees what's fresh rather than a list of
+  // this one's direct competitors. Kept only on this, the listing's
+  // default/About page — its other pages (Products & Services, Photos, ...)
+  // stay focused on their own single topic rather than repeating this same
+  // "browse more" content on every one of them. The Visit us page has its
+  // own equivalent, "Businesses near you" (nearbyListingsExcludingIndustry),
+  // grouped by state instead — a visitor already looking at location/hours
+  // is more likely to want a nearby alternative than a generically "latest"
+  // one.
   const publishedRows = await loadPublishedListings();
   const latestBusinesses = latestListings(publishedRows, slug, MAX_RELATED_LISTINGS).map((row) =>
     toDirectoryGridListing(row, resolved),
   );
-  const nearbyBusinesses = listing.state
-    ? nearbyListingsExcludingIndustry(publishedRows, listing.state, slug, listing.industry, MAX_RELATED_LISTINGS).map(
-        (row) => toDirectoryGridListing(row, resolved),
-      )
-    : [];
 
   return (
     <>
@@ -122,26 +114,6 @@ export default async function DirectoryAboutPage({
           </h2>
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
             {latestBusinesses.map((related) => (
-              <ListingCard
-                key={related.slug}
-                listing={related}
-                viewLabel={t.viewListing}
-                industryLabel={related.industry ? INDUSTRY_LABELS_BY_LOCALE[resolved][related.industry] : undefined}
-                locale={resolved}
-                variant="compact"
-              />
-            ))}
-          </div>
-        </section>
-      )}
-
-      {nearbyBusinesses.length > 0 && (
-        <section aria-labelledby="nearby-businesses">
-          <h2 id="nearby-businesses" className="text-lg font-semibold text-slate-900 dark:text-slate-100">
-            {t.nearbyBusinessesHeading}
-          </h2>
-          <div className="mt-4 grid gap-4 sm:grid-cols-2">
-            {nearbyBusinesses.map((related) => (
               <ListingCard
                 key={related.slug}
                 listing={related}
