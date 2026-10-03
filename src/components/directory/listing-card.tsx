@@ -39,6 +39,26 @@ export function ListingCard({
   const locationLabel = [listing.city, listing.state].filter(Boolean).join(", ") || listing.country;
   const IndustryIcon = listing.industry ? INDUSTRY_ICONS[listing.industry] : null;
 
+  // Shared between both variants so they're defined once but placed
+  // differently: alongside the name inside the compact header's logo row
+  // below, or in their own normal-flow rows under the default variant's
+  // banner.
+  const ratingBlock = listing.googleRating !== null && (
+    <div className="flex items-center gap-1">
+      <StarRating rating={listing.googleRating} size="h-3.5 w-3.5" />
+      <span className="text-xs font-medium text-slate-700 dark:text-slate-200">{listing.googleRating.toFixed(1)}</span>
+      {listing.googleRatingCount !== null && (
+        <span className="text-xs text-slate-400 dark:text-slate-500">({listing.googleRatingCount})</span>
+      )}
+    </div>
+  );
+  const locationBlock = locationLabel && (
+    <p className="flex items-center gap-1 text-xs text-slate-500 dark:text-slate-400">
+      <MapPin className="h-3.5 w-3.5 shrink-0" />
+      <span className="truncate">{locationLabel}</span>
+    </p>
+  );
+
   return (
     // min-w-0: this Link is the actual grid item in the results grid
     // (directory-search.tsx's grid is a single column below sm) — without
@@ -120,31 +140,26 @@ export function ListingCard({
               the surrounding copy. Tailwind's preflight leaves headings
               unstyled, so sizing/weight are set explicitly. */}
           {variant === "compact" ? (
-            <div className="flex items-center gap-2">
-              <ListingLogo name={listing.companyName} logoUrl={listing.logoUrl} size={32} loading="lazy" className="h-8 w-8 text-sm" />
-              <h3 className="truncate text-base font-bold tracking-tight text-slate-900 dark:text-slate-100">
-                {listing.companyName}
-              </h3>
+            // items-center, not items-start: a 40px logo roughly matches the
+            // combined height of name+rating+location, so centering keeps it
+            // level with the middle line (usually the rating) rather than
+            // pinned to the name alone.
+            <div className="flex items-center gap-3">
+              <ListingLogo name={listing.companyName} logoUrl={listing.logoUrl} size={40} loading="lazy" className="h-10 w-10 shrink-0 text-base" />
+              <div className="min-w-0 flex-1 space-y-0.5">
+                <h3 className="truncate text-base font-bold tracking-tight text-slate-900 dark:text-slate-100">
+                  {listing.companyName}
+                </h3>
+                {ratingBlock}
+                {locationBlock}
+              </div>
             </div>
           ) : (
-            <h3 className="truncate text-base font-bold tracking-tight text-slate-900 dark:text-slate-100">{listing.companyName}</h3>
-          )}
-
-          {listing.googleRating !== null && (
-            <div className="flex items-center gap-1">
-              <StarRating rating={listing.googleRating} size="h-3.5 w-3.5" />
-              <span className="text-xs font-medium text-slate-700 dark:text-slate-200">{listing.googleRating.toFixed(1)}</span>
-              {listing.googleRatingCount !== null && (
-                <span className="text-xs text-slate-400 dark:text-slate-500">({listing.googleRatingCount})</span>
-              )}
-            </div>
-          )}
-
-          {locationLabel && (
-            <p className="flex items-center gap-1 text-xs text-slate-500 dark:text-slate-400">
-              <MapPin className="h-3.5 w-3.5 shrink-0" />
-              <span className="truncate">{locationLabel}</span>
-            </p>
+            <>
+              <h3 className="truncate text-base font-bold tracking-tight text-slate-900 dark:text-slate-100">{listing.companyName}</h3>
+              {ratingBlock}
+              {locationBlock}
+            </>
           )}
 
           {listing.tagline && <p className="line-clamp-2 text-sm text-slate-600 dark:text-slate-300">{listing.tagline}</p>}
