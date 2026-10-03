@@ -16,6 +16,7 @@ export function ListingCard({
   viewLabel,
   industryLabel,
   locale,
+  variant = "default",
 }: {
   listing: DirectoryGridListing;
   viewLabel: string;
@@ -24,10 +25,39 @@ export function ListingCard({
   // look one up with.
   industryLabel?: string;
   locale: DirectoryLocale;
+  // "default" (the full-width search/category/location grids, via
+  // directory-search.tsx) keeps the big logo-or-cover-photo banner on top.
+  // "compact" (the listing detail page's own "Latest businesses"/
+  // "Businesses near you" sections — see src/app/[locale]/[slug]/page.tsx)
+  // drops that banner entirely and puts a small ListingLogo inline before
+  // the company name instead, so these two sections read as a tighter
+  // "more businesses" list rather than repeating the same big-card
+  // treatment the main grid already uses.
+  variant?: "default" | "compact";
 }) {
   const extraServices = listing.services.length - MAX_VISIBLE_SERVICES;
   const locationLabel = [listing.city, listing.state].filter(Boolean).join(", ") || listing.country;
   const IndustryIcon = listing.industry ? INDUSTRY_ICONS[listing.industry] : null;
+
+  // Shared between both variants so they're defined once but placed
+  // differently: alongside the name inside the compact header's logo row
+  // below, or in their own normal-flow rows under the default variant's
+  // banner.
+  const ratingBlock = listing.googleRating !== null && (
+    <div className="flex items-center gap-1">
+      <StarRating rating={listing.googleRating} size="h-3.5 w-3.5" />
+      <span className="text-xs font-medium text-slate-700 dark:text-slate-200">{listing.googleRating.toFixed(1)}</span>
+      {listing.googleRatingCount !== null && (
+        <span className="text-xs text-slate-400 dark:text-slate-500">({listing.googleRatingCount})</span>
+      )}
+    </div>
+  );
+  const locationBlock = locationLabel && (
+    <p className="flex items-center gap-1 text-xs text-slate-500 dark:text-slate-400">
+      <MapPin className="h-3.5 w-3.5 shrink-0" />
+      <span className="truncate">{locationLabel}</span>
+    </p>
+  );
 
   return (
     // min-w-0: this Link is the actual grid item in the results grid
@@ -36,70 +66,72 @@ export function ListingCard({
     // card's own content instead of shrinking to fit the viewport.
     <Link href={directoryListingPath(locale, listing.slug)} className="block h-full min-w-0">
       <Card className="flex h-full flex-col overflow-hidden transition-colors hover:border-petrol/40 dark:hover:border-petrol-light/30">
-        {/* The listing's logo, blown up and blurred as a backdrop with the
-            real logo sharp on top, if it has one — an album-art treatment
-            that keeps every card anchored to the company's own brand mark
-            rather than whatever a gallery photo happens to show (a listing's
-            gallery is partner-uploaded and uncurated, so its first photo is
-            often not the listing's most recognizable image — the logo
-            always is). Only a listing with no logo at all falls back to its
-            first gallery photo (see coverPhotoUrl's own comment in
-            directory.ts), and a listing with neither falls back to a flat
-            tinted block with its initial-letter avatar. Either way every
-            card in a grid keeps the same shape instead of some being
-            noticeably shorter. */}
-        <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden bg-led-soft dark:bg-led-soft-dark">
-          {listing.logoUrl ? (
-            <div className="relative flex h-full w-full items-center justify-center">
-              {/* aria-hidden + empty alt: purely decorative backdrop: the
-                  sharp logo on top (next) is the one screen readers and
-                  crawlers should see. scale-125 keeps blur's own soft edge
-                  from ever showing the image's true (unblurred) boundary. */}
-              {/* eslint-disable-next-line @next/next/no-img-element -- served straight out of the DB by /api/directory-images/logo/[slug], same reasoning as ListingLogo's own img tag */}
+        {variant === "default" && (
+          // The listing's logo, blown up and blurred as a backdrop with the
+          // real logo sharp on top, if it has one — an album-art treatment
+          // that keeps every card anchored to the company's own brand mark
+          // rather than whatever a gallery photo happens to show (a listing's
+          // gallery is partner-uploaded and uncurated, so its first photo is
+          // often not the listing's most recognizable image — the logo
+          // always is). Only a listing with no logo at all falls back to its
+          // first gallery photo (see coverPhotoUrl's own comment in
+          // directory.ts), and a listing with neither falls back to a flat
+          // tinted block with its initial-letter avatar. Either way every
+          // card in a grid keeps the same shape instead of some being
+          // noticeably shorter.
+          <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden bg-led-soft dark:bg-led-soft-dark">
+            {listing.logoUrl ? (
+              <div className="relative flex h-full w-full items-center justify-center">
+                {/* aria-hidden + empty alt: purely decorative backdrop: the
+                    sharp logo on top (next) is the one screen readers and
+                    crawlers should see. scale-125 keeps blur's own soft edge
+                    from ever showing the image's true (unblurred) boundary. */}
+                {/* eslint-disable-next-line @next/next/no-img-element -- served straight out of the DB by /api/directory-images/logo/[slug], same reasoning as ListingLogo's own img tag */}
+                <img
+                  src={listing.logoUrl}
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  className="absolute inset-0 h-full w-full scale-125 object-cover opacity-80 blur-2xl"
+                />
+                {/* The logo itself, not through ListingLogo — that component
+                    always crops to a circle, which fights an 80%-of-the-frame
+                    size. object-contain (not cover) so a non-square logo never
+                    gets cropped; drop-shadow (a filter, unlike box-shadow)
+                    follows the logo's own transparency instead of its
+                    rectangular bounding box. */}
+                {/* eslint-disable-next-line @next/next/no-img-element -- served straight out of the DB by /api/directory-images/logo/[slug], same reasoning as ListingLogo's own img tag */}
+                <img
+                  src={listing.logoUrl}
+                  alt={`${listing.companyName} logo`}
+                  loading="lazy"
+                  decoding="async"
+                  className="relative h-[80%] w-[80%] object-contain drop-shadow-lg"
+                />
+              </div>
+            ) : listing.coverPhotoUrl ? (
+              // eslint-disable-next-line @next/next/no-img-element -- served straight out of the DB by /api/directory-images/[id], same reasoning as ListingLogo's own img tag
               <img
-                src={listing.logoUrl}
+                src={listing.coverPhotoUrl}
                 alt=""
-                aria-hidden="true"
                 loading="lazy"
                 decoding="async"
-                className="absolute inset-0 h-full w-full scale-125 object-cover opacity-80 blur-2xl"
+                className="h-full w-full object-cover"
               />
-              {/* The logo itself, not through ListingLogo — that component
-                  always crops to a circle, which fights an 80%-of-the-frame
-                  size. object-contain (not cover) so a non-square logo never
-                  gets cropped; drop-shadow (a filter, unlike box-shadow)
-                  follows the logo's own transparency instead of its
-                  rectangular bounding box. */}
-              {/* eslint-disable-next-line @next/next/no-img-element -- served straight out of the DB by /api/directory-images/logo/[slug], same reasoning as ListingLogo's own img tag */}
-              <img
-                src={listing.logoUrl}
-                alt={`${listing.companyName} logo`}
-                loading="lazy"
-                decoding="async"
-                className="relative h-[80%] w-[80%] object-contain drop-shadow-lg"
-              />
-            </div>
-          ) : listing.coverPhotoUrl ? (
-            // eslint-disable-next-line @next/next/no-img-element -- served straight out of the DB by /api/directory-images/[id], same reasoning as ListingLogo's own img tag
-            <img
-              src={listing.coverPhotoUrl}
-              alt=""
-              loading="lazy"
-              decoding="async"
-              className="h-full w-full object-cover"
-            />
-          ) : (
-            <div className="flex h-full w-full items-center justify-center">
-              <ListingLogo name={listing.companyName} logoUrl={null} size={64} loading="lazy" className="h-16 w-16 text-xl" />
-            </div>
-          )}
-          {listing.industry && industryLabel && IndustryIcon && (
-            <Eyebrow className="absolute left-3 top-3 gap-1.5 bg-white normal-case tracking-normal text-petrol-ink shadow-sm dark:bg-white dark:text-petrol-ink">
-              <IndustryIcon className="h-3.5 w-3.5" />
-              {industryLabel}
-            </Eyebrow>
-          )}
-        </div>
+            ) : (
+              <div className="flex h-full w-full items-center justify-center">
+                <ListingLogo name={listing.companyName} logoUrl={null} size={64} loading="lazy" className="h-16 w-16 text-xl" />
+              </div>
+            )}
+            {listing.industry && industryLabel && IndustryIcon && (
+              <Eyebrow className="absolute left-3 top-3 gap-1.5 bg-white normal-case tracking-normal text-petrol-ink shadow-sm dark:bg-white dark:text-petrol-ink">
+                <IndustryIcon className="h-3.5 w-3.5" />
+                {industryLabel}
+              </Eyebrow>
+            )}
+          </div>
+        )}
 
         <CardBody className="flex flex-1 flex-col gap-2.5">
           {/* A heading rather than a <p>: each card's name is an item
@@ -107,23 +139,42 @@ export function ListingCard({
               screen reader's heading list) tells the businesses apart from
               the surrounding copy. Tailwind's preflight leaves headings
               unstyled, so sizing/weight are set explicitly. */}
-          <h3 className="truncate text-base font-bold tracking-tight text-slate-900 dark:text-slate-100">{listing.companyName}</h3>
-
-          {listing.googleRating !== null && (
-            <div className="flex items-center gap-1">
-              <StarRating rating={listing.googleRating} size="h-3.5 w-3.5" />
-              <span className="text-xs font-medium text-slate-700 dark:text-slate-200">{listing.googleRating.toFixed(1)}</span>
-              {listing.googleRatingCount !== null && (
-                <span className="text-xs text-slate-400 dark:text-slate-500">({listing.googleRatingCount})</span>
-              )}
+          {variant === "compact" ? (
+            // items-center, not items-start: the logo roughly matches the
+            // combined height of name+rating+location, so centering keeps it
+            // level with the middle line (usually the rating) rather than
+            // pinned to the name alone. Same mobile-smaller/lg-bigger split
+            // as the listing detail page's own header logo (see
+            // ListingLogo's usage in layout.tsx) — 40px leaves the
+            // name/rating/location column enough room beside it on a narrow
+            // card; 90px from lg up, where a two-column card grid has width
+            // to spare.
+            <div className="flex items-center gap-3">
+              {/* rounded-none overrides ListingLogo's own default rounded-full
+                  (tailwind-merge resolves the conflict in this later class's
+                  favor) — a square crop here, unlike every other place this
+                  component renders a circular avatar. */}
+              <ListingLogo
+                name={listing.companyName}
+                logoUrl={listing.logoUrl}
+                size={90}
+                loading="lazy"
+                className="h-10 w-10 shrink-0 rounded-none text-base lg:h-[90px] lg:w-[90px] lg:text-2xl"
+              />
+              <div className="min-w-0 flex-1 space-y-0.5">
+                <h3 className="truncate text-base font-bold tracking-tight text-slate-900 dark:text-slate-100">
+                  {listing.companyName}
+                </h3>
+                {ratingBlock}
+                {locationBlock}
+              </div>
             </div>
-          )}
-
-          {locationLabel && (
-            <p className="flex items-center gap-1 text-xs text-slate-500 dark:text-slate-400">
-              <MapPin className="h-3.5 w-3.5 shrink-0" />
-              <span className="truncate">{locationLabel}</span>
-            </p>
+          ) : (
+            <>
+              <h3 className="truncate text-base font-bold tracking-tight text-slate-900 dark:text-slate-100">{listing.companyName}</h3>
+              {ratingBlock}
+              {locationBlock}
+            </>
           )}
 
           {listing.tagline && <p className="line-clamp-2 text-sm text-slate-600 dark:text-slate-300">{listing.tagline}</p>}

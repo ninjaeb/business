@@ -4,6 +4,7 @@ import { headers } from "next/headers";
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { db } from "@/lib/db";
+import { getPublishedListingBySlug } from "@/lib/directory";
 import { requirePartnerAction, requireTestimonialAuthorAction } from "@/lib/auth/dal";
 import { getTestimonialRequestLinkForForm } from "@/lib/testimonial-request-links";
 import { isRateLimited, isSuspiciouslyFast } from "@/lib/lead-spam-guard";
@@ -146,7 +147,10 @@ const standaloneTestimonialSchema = z.object({
 });
 
 export type StandaloneTestimonialFormState =
-  | { status: "success" }
+  // testimonialId lets the form (see StandaloneTestimonialForm) follow up
+  // with uploadTestimonialPhoto calls, same reasoning as
+  // DirectoryTestimonialFormState's own testimonialId.
+  | { status: "success"; testimonialId: string }
   | { status: "error"; code: DirectoryTestimonialFormErrorCode }
   | undefined;
 
@@ -164,10 +168,10 @@ export async function submitStandaloneTestimonial(
   formData: FormData,
 ): Promise<StandaloneTestimonialFormState> {
   if (String(formData.get("website") || "").trim()) {
-    return { status: "success" };
+    return { status: "success", testimonialId: "" };
   }
   if (isSuspiciouslyFast(formData.get("renderedAt"))) {
-    return { status: "success" };
+    return { status: "success", testimonialId: "" };
   }
 
   const headersList = await headers();
@@ -216,7 +220,7 @@ export async function submitStandaloneTestimonial(
   });
 
   await notifyPartnerOfNewTestimonial(request.listing, testimonial);
-  return { status: "success" };
+  return { status: "success", testimonialId: testimonial.id };
 }
 
 // ---------------------------------------------------------------------------
@@ -323,6 +327,62 @@ export async function rewriteTestimonialWithAi(text: string): Promise<AiResult<{
   }
 
   return callAi(RewrittenTestimonialSchema, TESTIMONIAL_REWRITE_SYSTEM_PROMPT, trimmed);
+}
+
+// ---------------------------------------------------------------------------
+// AI idea prompts — the testimonial form's own "Get ideas" button
+// ---------------------------------------------------------------------------
+
+const TestimonialIdeasSchema = z.object({
+  ideas: z
+    .array(z.string().max(160))
+    .min(3)
+    .max(5)
+    .describe("Short prompts or questions pointing at something specific to mention — never a finished testimonial sentence."),
+});
+
+const TESTIMONIAL_IDEAS_SYSTEM_PROMPT =
+  "You help a customer figure out what to write in a testimonial for a local business, by suggesting a few short prompts — never the testimonial itself. Base every prompt only on the business's own real products/services given to you below; never invent a product, service, or detail that isn't listed there. Phrase each as a short question or prompt pointing at something specific and concrete the customer could answer from their own experience (naming an actual product/service where that fits), not generic praise like 'great service'. Respond in the requested language.";
+
+// Deliberately NOT partner-gated, same as rewriteTestimonialWithAi above —
+// the public testimonial form's own button, available before the visitor
+// has written anything. Reads the listing's own already-public
+// products/services (getPublishedListingBySlug, the same cached read every
+// other section of this listing's pages use) as the model's only context,
+// so a suggested prompt can never reference something this business
+// doesn't actually offer. Returns prompts to think with, not draft text —
+// unlike rewriteTestimonialWithAi, there's no real customer experience
+// behind these yet for the model to put words in, so it's never allowed to
+// write as if it already knew what the visitor would say.
+export async function suggestTestimonialIdeasWithAi(slug: string, locale: string): Promise<AiResult<{ ideas: string[] }>> {
+  if (!isAiConfigured()) return AI_NOT_CONFIGURED;
+
+  const headersList = await headers();
+  if (isRateLimited(firstHopValue(headersList.get("x-forwarded-for")))) {
+    return { status: "error", message: "Too many requests — try again in a moment." };
+  }
+
+  const listing = await getPublishedListingBySlug(slug);
+  if (!listing) {
+    return { status: "error", message: "Listing not found." };
+  }
+  if (listing.services.length === 0 && !listing.tagline && !listing.description) {
+    return { status: "error", message: "This business hasn't added enough detail yet to suggest ideas from." };
+  }
+
+  const context = [
+    `Business: ${listing.companyName}`,
+    listing.tagline ? `Tagline: ${listing.tagline}` : null,
+    listing.description ? `About: ${listing.description}` : null,
+    listing.services.length > 0
+      ? `Products/services:\n${listing.services.map((service) => `- ${service.title}${service.description ? `: ${service.description}` : ""}`).join("\n")}`
+      : null,
+    `Respond in this language: ${locale}`,
+  ]
+    .filter(Boolean)
+    .join("\n\n");
+
+  return callAi(TestimonialIdeasSchema, TESTIMONIAL_IDEAS_SYSTEM_PROMPT, context);
 }
 
 // ---------------------------------------------------------------------------

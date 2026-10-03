@@ -575,6 +575,11 @@ export type DirectoryStrings = {
   // error, so this reads as an explanation rather than a fault message.
   standaloneTestimonialInvalidTitle: string;
   standaloneTestimonialInvalidDescription: string;
+  // Label on the ShareButton rendered next to WriteTestimonialButton on this
+  // page (see TestimonialsPage) — copies this page's own URL, so a partner
+  // can send happy customers straight to "write us a testimonial" instead of
+  // the listing's own front page.
+  testimonialsCopyLinkLabel: string;
   // The account gate in front of the form below (see TestimonialAuthForm) —
   // name/email/phone/password field labels are the existing signup* keys
   // above, reused as-is rather than duplicated, since the copy is identical
@@ -632,6 +637,15 @@ export type DirectoryStrings = {
   testimonialFormGuideExperienceQuestion: string;
   testimonialFormGuideVerdictLabel: string;
   testimonialFormGuideVerdictQuestion: string;
+  // "Get ideas" link appended to the guide box above — AI-generated prompts
+  // based on this specific listing's own products/services (see
+  // suggestTestimonialIdeasWithAi in src/app/actions/testimonials.ts), same
+  // AI-availability gating as testimonialFormRewriteCta below. Suggests
+  // what to write about, never drafts the testimonial text itself — the
+  // AI result's own message covers the error case, so there's no separate
+  // error string here, same as testimonialFormRewriteCta's own handler.
+  testimonialFormIdeasCta: string;
+  testimonialFormIdeasLoading: string;
   // The optional photo picker under the body field (see uploadTestimonialPhoto
   // in src/app/actions/testimonials.ts) — testimonialFormPhotosUploading has
   // a {done}/{total} token, filled in via formatTestimonialPhotosUploading.
@@ -894,6 +908,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     standaloneTestimonialInvalidTitle: "This link isn't available",
     standaloneTestimonialInvalidDescription:
       "This review link may have already been used, or is no longer valid. If you think this is a mistake, please contact the business directly.",
+    testimonialsCopyLinkLabel: "Copy link",
     testimonialAuthHeading: "Sign in to write a testimonial",
     testimonialAuthIntro:
       "Sign in with Google, or create a free account with your name, email and phone — takes less than a minute.",
@@ -946,6 +961,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormGuideExperienceQuestion: "What stood out most (e.g., speed, communication, technical expertise)?",
     testimonialFormGuideVerdictLabel: "The Verdict",
     testimonialFormGuideVerdictQuestion: "Who would you recommend us to, and why?",
+    testimonialFormIdeasCta: "Get ideas based on what they offer",
+    testimonialFormIdeasLoading: "Thinking of ideas…",
     testimonialFormPhotosLabel: "Photos (optional)",
     testimonialFormPhotosCta: "Add photos",
     testimonialFormPhotosUploading: "Uploading photo {done}/{total}…",
@@ -1180,6 +1197,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     standaloneTestimonialIntro: "您的反馈能帮助其他访客做决定，只需不到一分钟。",
     standaloneTestimonialInvalidTitle: "此链接不可用",
     standaloneTestimonialInvalidDescription: "此评价链接可能已被使用，或已失效。如果您认为这是错误，请直接联系该企业。",
+    testimonialsCopyLinkLabel: "复制链接",
     testimonialAuthHeading: "登录后即可撰写评价",
     testimonialAuthIntro: "使用 Google 登录，或创建一个免费账户，填写姓名、电子邮件和电话——不到一分钟即可完成。",
     testimonialCompanyLabel: "公司名称",
@@ -1230,6 +1248,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormGuideExperienceQuestion: "哪方面让您印象最深刻（例如：速度、沟通、专业能力）？",
     testimonialFormGuideVerdictLabel: "评价",
     testimonialFormGuideVerdictQuestion: "您会将我们推荐给谁，为什么？",
+    testimonialFormIdeasCta: "根据我们提供的产品与服务获取灵感",
+    testimonialFormIdeasLoading: "正在构思灵感…",
     testimonialFormPhotosLabel: "照片（可选）",
     testimonialFormPhotosCta: "添加照片",
     testimonialFormPhotosUploading: "正在上传照片 {done}/{total}…",
@@ -1464,6 +1484,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     standaloneTestimonialInvalidTitle: "Pautan ini tidak tersedia",
     standaloneTestimonialInvalidDescription:
       "Pautan ulasan ini mungkin sudah digunakan, atau tidak lagi sah. Jika anda rasa ini satu kesilapan, sila hubungi perniagaan ini secara terus.",
+    testimonialsCopyLinkLabel: "Salin pautan",
     testimonialAuthHeading: "Log masuk untuk menulis testimoni",
     testimonialAuthIntro:
       "Log masuk dengan Google, atau cipta akaun percuma dengan nama, e-mel dan nombor telefon anda — mengambil masa kurang seminit.",
@@ -1516,6 +1537,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormGuideExperienceQuestion: "Apa yang paling menonjol (contohnya: kelajuan, komunikasi, kepakaran teknikal)?",
     testimonialFormGuideVerdictLabel: "Kesimpulan",
     testimonialFormGuideVerdictQuestion: "Kepada siapa anda akan mengesyorkan kami, dan mengapa?",
+    testimonialFormIdeasCta: "Dapatkan idea berdasarkan produk dan perkhidmatan kami",
+    testimonialFormIdeasLoading: "Sedang mencari idea…",
     testimonialFormPhotosLabel: "Foto (pilihan)",
     testimonialFormPhotosCta: "Tambah foto",
     testimonialFormPhotosUploading: "Memuat naik foto {done}/{total}…",
