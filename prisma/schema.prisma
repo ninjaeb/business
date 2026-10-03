@@ -398,6 +398,9 @@ model PartnerListing {
   branchLinksB            PartnerListingBranchLink[] @relation("BranchLinkB")
   testimonials            DirectoryTestimonial[]
   testimonialRequestLinks TestimonialRequestLink[]
+  businessPartnerLinksAsRequester BusinessPartnerLink[]   @relation("BusinessPartnerRequester")
+  businessPartnerLinksAsRecipient BusinessPartnerLink[]   @relation("BusinessPartnerRecipient")
+  businessPartnerInvites          BusinessPartnerInvite[]
 
   @@index([status])
   @@index([partnerId])
@@ -771,6 +774,73 @@ model TestimonialRequestLink {
   listingId String
 
   @@index([listingId])
+}
+
+enum BusinessPartnerLinkStatus {
+  PENDING
+  ACCEPTED
+  DECLINED
+}
+
+// A connection between two DIFFERENT partners' listings — shown on each
+// other's public Business Partners tab once ACCEPTED. Unlike
+// PartnerListingBranchLink above (same partner's own other locations,
+// linked unilaterally since there's only one owner to ask), this crosses
+// two different partner accounts, so the recipient must accept before
+// anything shows publicly (see acceptBusinessPartnerLink/
+// declineBusinessPartnerLink in src/app/actions/business-partners.ts).
+// Stays directional (requester/recipient) rather than canonically
+// reordered like a branch link — direction is what "awaiting your
+// approval" vs. "awaiting their approval" queries need; the relationship
+// itself still reads as mutual once ACCEPTED (getPublishedBusinessPartners
+// in src/lib/business-partners.ts checks both sides).
+model BusinessPartnerLink {
+  id     String                    @id @default(cuid())
+  status BusinessPartnerLinkStatus @default(PENDING)
+
+  requesterListing   PartnerListing @relation("BusinessPartnerRequester", fields: [requesterListingId], references: [id], onDelete: Cascade)
+  requesterListingId String
+
+  recipientListing   PartnerListing @relation("BusinessPartnerRecipient", fields: [recipientListingId], references: [id], onDelete: Cascade)
+  recipientListingId String
+
+  createdAt   DateTime  @default(now())
+  respondedAt DateTime?
+
+  @@unique([requesterListingId, recipientListingId])
+  @@index([recipientListingId, status])
+  @@index([requesterListingId, status])
+}
+
+// A business the partner wants to connect with that isn't on
+// business.gotka.com yet — captured by hand (Company/Name/Email/Phone) and
+// invited by email + WhatsApp (see sendBusinessPartnerInvite in
+// src/lib/directory-notify.ts) rather than linked like BusinessPartnerLink
+// above, since there's no PartnerListing row on the other end to link to.
+// Purely a record of a sent invite, not itself a partnership — if the
+// invited company later signs up and the two actually want to connect,
+// that's a fresh BusinessPartnerLink request through the normal
+// search-and-request flow, not something this row auto-converts into.
+model BusinessPartnerInvite {
+  id String @id @default(cuid())
+
+  companyName String
+  contactName String
+  email       String
+  phone       String
+
+  // Set independently once each channel's send actually succeeds (see
+  // sendBusinessPartnerInvite) — either can be null while the other isn't,
+  // since email and WhatsApp are configured, and can fail, independently.
+  emailSentAt    DateTime?
+  whatsappSentAt DateTime?
+
+  createdAt DateTime @default(now())
+
+  inviterListing   PartnerListing @relation(fields: [inviterListingId], references: [id], onDelete: Cascade)
+  inviterListingId String
+
+  @@index([inviterListingId])
 }
 
 // How many times a specific signed-in partner's own copy of a listing's

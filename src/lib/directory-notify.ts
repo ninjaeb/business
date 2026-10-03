@@ -3,7 +3,7 @@ import { isMailerConfigured, sendMail } from "@/lib/mailer";
 import { isWhatsAppConfigured, sendWhatsAppTemplateMessage } from "@/lib/whatsapp";
 import { textToHtml } from "@/lib/text-to-html";
 import { getSiteOrigin } from "@/lib/site-url";
-import type { DirectoryLead, DirectoryTestimonial, PartnerListing } from "@/generated/prisma/client";
+import type { BusinessPartnerInvite, DirectoryLead, DirectoryTestimonial, PartnerListing } from "@/generated/prisma/client";
 
 // A rewrite of the source CRM's src/lib/directory-notify.ts for this
 // standalone app: same two exports and signatures, and — like the source
@@ -101,6 +101,107 @@ export async function notifyPartnerOfNewTestimonial(listing: PartnerListing, tes
       error instanceof Error ? error.message : error,
     );
   }
+}
+
+// Fires once a partner requests another listing as a Business Partner (see
+// requestBusinessPartner in src/app/actions/business-partners.ts).
+// Email-only, same reasoning as notifyPartnerOfNewTestimonial above: this
+// is an internal "please approve" notice between two already-onboarded
+// accounts, not a cold outreach to someone outside the platform (that's
+// sendBusinessPartnerInvite below, which does get a WhatsApp ping) — not
+// worth a new Meta template for a courtesy notice the partner can't act on
+// any faster by getting it on WhatsApp too.
+export async function notifyPartnerOfBusinessPartnerRequest(
+  recipientListing: PartnerListing,
+  requesterListing: PartnerListing,
+): Promise<void> {
+  if (!(await isMailerConfigured())) return;
+  const partner = await db.user.findUnique({ where: { id: recipientListing.partnerId }, select: { email: true } });
+  if (!partner) return;
+
+  const link = `${await getSiteOrigin()}/business-portal/business-partners`;
+  const text =
+    `${requesterListing.companyName} would like to connect with your ${recipientListing.companyName} listing as a Business Partner.\n\n` +
+    `It's waiting on your approval before it shows publicly on either listing. Review it from your business portal: ${link}`;
+  try {
+    await sendMail({
+      to: partner.email,
+      subject: `Business Partner request: ${requesterListing.companyName}`,
+      text,
+      html: textToHtml(text),
+    });
+  } catch (error) {
+    console.error(
+      `Business Partner request email failed for partner ${recipientListing.partnerId}:`,
+      error instanceof Error ? error.message : error,
+    );
+  }
+}
+
+// Must match a template already approved in Meta Business Manager exactly
+// — see the README's WhatsApp section for the exact text to submit. A
+// template, not plain text, for the same reason as
+// NEW_LEAD_WHATSAPP_TEMPLATE_NAME above: the invited company has never
+// messaged this number before, so there's no open 24-hour reply window to
+// send plain text within. A separate template from the new-lead one, since
+// Meta reviews the literal approved copy and this message means something
+// different (an invite to connect, not a sales inquiry).
+const BUSINESS_PARTNER_INVITE_WHATSAPP_TEMPLATE_NAME = "business_partner_invite";
+const BUSINESS_PARTNER_INVITE_WHATSAPP_TEMPLATE_LANGUAGE = "en";
+
+export type BusinessPartnerInviteSendResult = { emailSent: boolean; whatsappSent: boolean };
+
+// Fires once, right after a partner invites a not-yet-onboarded company to
+// connect as a Business Partner (see createBusinessPartnerInvite). Unlike
+// notifyPartnerOfNewLead's fire-and-forget notifications, the caller here
+// needs to know which channel(s) actually went out (see
+// BusinessPartnerInvite.emailSentAt/whatsappSentAt) so the business-portal
+// list can show the invited company whether each channel reached them, so
+// this returns a result instead of void. Both channels are still
+// independent of each other — a failed/unconfigured one never blocks or is
+// reflected in the other's result.
+export async function sendBusinessPartnerInvite(
+  invite: BusinessPartnerInvite,
+  inviterListing: PartnerListing,
+): Promise<BusinessPartnerInviteSendResult> {
+  const link = `${await getSiteOrigin()}/en/signup`;
+  let emailSent = false;
+  let whatsappSent = false;
+
+  if (await isMailerConfigured()) {
+    const text =
+      `${inviterListing.companyName} has invited ${invite.companyName} to connect as a Business Partner on the Gotka Business Directory.\n\n` +
+      `Business Partners are shown on each other's public listing page, helping customers discover businesses you work with.\n\n` +
+      `List your business to get started: ${link}`;
+    try {
+      await sendMail({
+        to: invite.email,
+        subject: `${inviterListing.companyName} invited you to connect as a Business Partner`,
+        text,
+        html: textToHtml(text),
+        fromName: inviterListing.companyName,
+      });
+      emailSent = true;
+    } catch (error) {
+      console.error(`Business Partner invite email failed for invite ${invite.id}:`, error instanceof Error ? error.message : error);
+    }
+  }
+
+  if (await isWhatsAppConfigured()) {
+    try {
+      await sendWhatsAppTemplateMessage(
+        invite.phone,
+        BUSINESS_PARTNER_INVITE_WHATSAPP_TEMPLATE_NAME,
+        BUSINESS_PARTNER_INVITE_WHATSAPP_TEMPLATE_LANGUAGE,
+        [invite.contactName, inviterListing.companyName, link],
+      );
+      whatsappSent = true;
+    } catch (error) {
+      console.error(`Business Partner invite WhatsApp failed for invite ${invite.id}:`, error instanceof Error ? error.message : error);
+    }
+  }
+
+  return { emailSent, whatsappSent };
 }
 
 export type ReplyEmailResult = { sent: true } | { sent: false; error: string };

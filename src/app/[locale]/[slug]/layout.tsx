@@ -14,6 +14,7 @@ import {
   resolveListingDisplay,
   slugify,
 } from "@/lib/directory";
+import { getPublishedBusinessPartners } from "@/lib/business-partners";
 import { serializeJsonLd } from "@/lib/directory-seo";
 import { stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
 import { resolveDirectoryLocale } from "@/lib/directory-locale";
@@ -30,6 +31,7 @@ import {
   DIRECTORY_HOME_TITLE_BY_LOCALE,
   INDUSTRY_LABELS_BY_LOCALE,
   directoryHomePath,
+  directoryListingBusinessPartnersPath,
   directoryListingFaqPath,
   directoryListingNewsPath,
   directoryListingPath,
@@ -375,6 +377,7 @@ export default async function ListingLayout({
     referralCode,
     viewer,
     branches,
+    businessPartners,
     testimonialVisitor,
     testimonialRating,
     testimonialReviewsForJsonLd,
@@ -399,6 +402,11 @@ export default async function ListingLayout({
     // "every section page re-queries the same request-scoped listing"
     // pattern getPublishedListingBySlug's own comment describes).
     getPublishedBranchListings(listing.id),
+    // Only to decide whether the Business Partners tab below should show
+    // at all — the tab page itself re-fetches this same list (same "every
+    // section page re-queries the same request-scoped listing" pattern as
+    // branches above).
+    getPublishedBusinessPartners(listing.id),
     // Who's viewing, if anyone signed in as either account type a
     // testimonial can be written from (VISITOR or PARTNER) — feeds the two
     // WriteTestimonialButtons below (see its own comment on why there are
@@ -509,6 +517,14 @@ export default async function ListingLayout({
     // testimonials yet, so this tab never needs a "does this page have
     // content" guard.
     { href: directoryListingTestimonialsPath(resolved, slug), label: t.testimonialsHeading },
+    // Right after Testimonials, also last — same "not the business's own
+    // content" reasoning (see above), and conditional like every tab but
+    // Testimonials itself: only shown once there's at least one ACCEPTED
+    // BusinessPartnerLink to display (see getPublishedBusinessPartners).
+    businessPartners.length > 0 && {
+      href: directoryListingBusinessPartnersPath(resolved, slug),
+      label: t.businessPartnersHeading,
+    },
   ].filter((section): section is { href: string; label: string } => Boolean(section));
 
   return (
