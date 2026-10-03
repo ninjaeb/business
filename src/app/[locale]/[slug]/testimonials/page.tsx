@@ -49,10 +49,16 @@ export async function generateMetadata({
 // listing with no APPROVED testimonials yet.
 export default async function TestimonialsPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ locale: string; slug: string }>;
+  // `write=1` auto-opens the WriteTestimonialButton dialog below on load —
+  // what the "Copy link" button's own URL (see pageUrl) carries, so a happy
+  // customer following that link lands straight in the write-a-testimonial
+  // form instead of having to find and click the button themselves.
+  searchParams: Promise<{ write?: string }>;
 }) {
-  const { locale, slug } = await params;
+  const [{ locale, slug }, { write }] = await Promise.all([params, searchParams]);
   const resolved = resolveDirectoryLocale(locale);
   if (!resolved) notFound();
 
@@ -70,7 +76,7 @@ export default async function TestimonialsPage({
     getVerifiedTestimonialAuthorOrNull(),
   ]);
   const existingTestimonial = visitor ? (await getVisitorTestimonialForListing(visitor.id, listing.id)) ?? null : null;
-  const pageUrl = `${siteOrigin}${directoryListingTestimonialsPath(resolved, slug)}`;
+  const pageUrl = `${siteOrigin}${directoryListingTestimonialsPath(resolved, slug)}?write=1`;
 
   return (
     <Card>
@@ -97,6 +103,7 @@ export default async function TestimonialsPage({
               existingTestimonial={existingTestimonial}
               variant="primary"
               className="bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"
+              autoOpen={write === "1"}
             />
             {/* Next to the button rather than folded into WriteTestimonialButton's
                 own dialog — this copies/shares this *page's* URL (so it opens

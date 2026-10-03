@@ -50,6 +50,7 @@ export function WriteTestimonialButton({
   existingTestimonial,
   variant = "secondary",
   className,
+  autoOpen = false,
 }: {
   slug: string;
   locale: DirectoryLocale;
@@ -70,7 +71,18 @@ export function WriteTestimonialButton({
   // convention as buttonClasses itself, not a replacement for its base
   // shape/spacing classes.
   className?: string;
+  // Opens the dialog on mount rather than waiting for a click — set by the
+  // Testimonials page from its own `?write=1` query param (see
+  // TestimonialsPage), which is what its "Copy link" button hands out, so
+  // that link drops a visitor straight into this dialog instead of onto the
+  // page needing one more click.
+  autoOpen?: boolean;
 }) {
+  // Starts false even when autoOpen is true: `open` gates the
+  // createPortal(..., document.body) call below, which would crash during
+  // SSR (no `document` on the server) if it ran on the very first render —
+  // the effect right after this one flips it on, client-side only, once
+  // mounted.
   const [open, setOpen] = useState(false);
   // Local override of the visitor prop once sign-up/log-in succeeds inside
   // the dialog, so the form appears immediately without a full page
@@ -79,6 +91,24 @@ export function WriteTestimonialButton({
   // null, so a page load that's already signed in skips the auth step.
   const [localVisitor, setLocalVisitor] = useState(visitor);
   const t = DIRECTORY_STRINGS[locale];
+
+  useEffect(() => {
+    if (!autoOpen) return;
+    let cancelled = false;
+    (async () => {
+      // Yields once before touching state, so this doesn't run synchronously
+      // within the effect's own call stack (see react-hooks/set-state-in-effect).
+      await Promise.resolve();
+      if (!cancelled) setOpen(true);
+    })();
+    // Only ever meant to fire once per page load, on mount — autoOpen is a
+    // static prop derived from the URL the page was loaded with, not
+    // something that changes while this component stays mounted.
+    return () => {
+      cancelled = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
     if (!open) return;
