@@ -5,6 +5,8 @@ import { listTestimonialRequestLinks, testimonialRequestUrl } from "@/lib/testim
 import { deleteTestimonialRequestLink } from "@/app/actions/testimonial-request-links";
 import { getSiteOrigin } from "@/lib/site-url";
 import { formatDate } from "@/lib/format";
+import { getDirectoryLocale } from "@/lib/directory-locale";
+import { getPortalTestimonialsStrings } from "@/lib/portal-testimonials-i18n";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody } from "@/components/ui/card";
 import { EmptyState } from "@/components/ui/empty-state";
@@ -23,18 +25,19 @@ import { CopyLinkButton } from "@/components/business-crm/copy-link-button";
 // like any other visitor, and needs no account at all — see
 // StandaloneTestimonialForm.
 export default async function TestimonialRequestLinksPage() {
-  const user = await requireCompletePartnerProfile();
+  const [user, locale] = await Promise.all([requireCompletePartnerProfile(), getDirectoryLocale()]);
+  const t = getPortalTestimonialsStrings(locale);
   const [links, siteOrigin] = await Promise.all([listTestimonialRequestLinks(user.id), getSiteOrigin()]);
 
   return (
     <div className="space-y-6">
       <PageHeader
-        title="Request Testimonial"
-        description="Create a unique link to send a specific customer — no account needed on their end. It opens straight to a testimonial form, prefilled with whatever you already know about them."
+        title={t.linksPageTitle}
+        description={t.linksPageDescription}
         actions={
           <Link href="/business-portal/testimonial-links/new" className={buttonClasses()}>
             <Plus className="h-4 w-4" />
-            New Testimonial Request
+            {t.newRequestCta}
           </Link>
         }
       />
@@ -44,12 +47,12 @@ export default async function TestimonialRequestLinksPage() {
           {links.length === 0 ? (
             <EmptyState
               icon={Link2}
-              title="No testimonial requests yet."
-              description="Create one to send a customer straight to your testimonial form — tag it with what you did for them so the review has context."
+              title={t.linksEmptyTitle}
+              description={t.linksEmptyDescription}
               action={
                 <Link href="/business-portal/testimonial-links/new" className={buttonClasses()}>
                   <Plus className="h-4 w-4" />
-                  New Testimonial Request
+                  {t.newRequestCta}
                 </Link>
               }
             />
@@ -58,12 +61,12 @@ export default async function TestimonialRequestLinksPage() {
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-slate-200 text-left text-xs text-slate-500 dark:border-neutral-800 dark:text-slate-400">
-                    <th className="py-2 pr-3 font-medium">Listing</th>
-                    <th className="py-2 pr-3 font-medium">Customer</th>
-                    <th className="py-2 pr-3 font-medium">Service</th>
-                    <th className="py-2 pr-3 font-medium">Status</th>
-                    <th className="py-2 pr-3 font-medium">Created</th>
-                    <th className="py-2 pr-3 font-medium">Link</th>
+                    <th className="py-2 pr-3 font-medium">{t.colListing}</th>
+                    <th className="py-2 pr-3 font-medium">{t.colCustomer}</th>
+                    <th className="py-2 pr-3 font-medium">{t.colService}</th>
+                    <th className="py-2 pr-3 font-medium">{t.colStatus}</th>
+                    <th className="py-2 pr-3 font-medium">{t.colCreated}</th>
+                    <th className="py-2 pr-3 font-medium">{t.colLink}</th>
                     <th className="py-2 pr-3 font-medium"></th>
                     <th className="py-2 pr-3 font-medium"></th>
                   </tr>
@@ -73,35 +76,33 @@ export default async function TestimonialRequestLinksPage() {
                     <tr key={link.id}>
                       <td className="py-2.5 pr-3 whitespace-nowrap text-slate-600 dark:text-slate-300">{link.listing.companyName}</td>
                       <td className="py-2.5 pr-3 text-slate-600 dark:text-slate-300">
-                        {link.customerName || link.note || "—"}
+                        {link.customerName || link.note || t.emptyValuePlaceholder}
                       </td>
-                      <td className="py-2.5 pr-3 text-slate-600 dark:text-slate-300">{link.serviceTitle || "—"}</td>
+                      <td className="py-2.5 pr-3 text-slate-600 dark:text-slate-300">{link.serviceTitle || t.emptyValuePlaceholder}</td>
                       <td className="py-2.5 pr-3 whitespace-nowrap">
                         {link.usedAt ? (
                           <Badge className="bg-emerald-100 text-emerald-700 ring-emerald-600/20 dark:bg-emerald-950 dark:text-emerald-400 dark:ring-emerald-500/30">
-                            Used {formatDate(link.usedAt)}
+                            {t.usedOnLabel.replace("{date}", formatDate(link.usedAt))}
                           </Badge>
                         ) : (
                           <Badge className="bg-amber-100 text-amber-700 ring-amber-600/20 dark:bg-amber-950 dark:text-amber-400 dark:ring-amber-500/30">
-                            Pending
+                            {t.statusPendingUse}
                           </Badge>
                         )}
                       </td>
                       <td className="py-2.5 pr-3 whitespace-nowrap text-slate-600 dark:text-slate-300">{formatDate(link.createdAt)}</td>
                       <td className="py-2.5 pr-3">
-                        <CopyLinkButton url={testimonialRequestUrl(siteOrigin, link.id)} />
+                        <CopyLinkButton url={testimonialRequestUrl(siteOrigin, link.id)} locale={locale} />
                       </td>
                       <td className="py-2.5 pr-3">
                         <Link href={`/business-portal/testimonial-links/${link.id}/edit`} className={buttonClasses("secondary", "sm")}>
                           <Pencil className="h-3.5 w-3.5" />
-                          Edit
+                          {t.editCta}
                         </Link>
                       </td>
                       <td className="py-2.5 pr-3">
                         <form action={deleteTestimonialRequestLink.bind(null, link.id)}>
-                          <ConfirmSubmitButton confirmMessage="Delete this testimonial request? This can't be undone.">
-                            Delete
-                          </ConfirmSubmitButton>
+                          <ConfirmSubmitButton confirmMessage={t.deleteConfirm}>{t.deleteCta}</ConfirmSubmitButton>
                         </form>
                       </td>
                     </tr>
