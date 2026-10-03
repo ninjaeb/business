@@ -9,12 +9,16 @@ export default async function NewTestimonialRequestLinkPage() {
   const user = await requireCompletePartnerProfile();
   const listings = await listPartnerListings(user.id);
 
-  // Every service title across every listing the partner owns, merged into
-  // one suggestion list — see TestimonialRequestLinkForm's own comment on
-  // why that's fine even for a partner with more than one listing.
-  const serviceSuggestions = Array.from(
-    new Set(listings.flatMap((listing) => servicesFromJson(listing.services).map((service) => service.title))),
-  );
+  // Parsed here, server-side, rather than handing the form's "use client"
+  // component the raw listings and letting it call servicesFromJson itself
+  // — that function lives in @/lib/directory, whose own top-level `db`
+  // import can't be bundled for the browser (see that module's own comment
+  // on why every client import from it must be type-only).
+  const listingOptions = listings.map((listing) => ({
+    id: listing.id,
+    companyName: listing.companyName,
+    services: servicesFromJson(listing.services),
+  }));
 
   return (
     <div>
@@ -24,7 +28,7 @@ export default async function NewTestimonialRequestLinkPage() {
       />
       <Card>
         <CardBody>
-          <TestimonialRequestLinkForm action={createTestimonialRequestLink} listings={listings} serviceSuggestions={serviceSuggestions} />
+          <TestimonialRequestLinkForm action={createTestimonialRequestLink} listings={listingOptions} />
         </CardBody>
       </Card>
     </div>

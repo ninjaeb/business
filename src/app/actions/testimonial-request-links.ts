@@ -10,7 +10,11 @@ import { getOwnedTestimonialRequestLink } from "@/lib/testimonial-request-links"
 
 const createSchema = z.object({
   listingId: z.string().trim().min(1, "Choose a listing."),
-  serviceTitle: z.string().trim().max(150).optional(),
+  // Several service titles, comma-joined (see the form's own
+  // MultiCombobox) — 300 comfortably fits a handful of the 80-char titles
+  // services-editor.tsx allows, well short of this column's own unbounded
+  // length.
+  serviceTitle: z.string().trim().max(300).optional(),
   customerName: z.string().trim().max(100).optional(),
   customerCompany: z.string().trim().max(150).optional(),
   customerTitle: z.string().trim().max(100).optional(),
@@ -29,9 +33,18 @@ export async function createTestimonialRequestLink(
   formData: FormData,
 ): Promise<TestimonialRequestLinkFormState> {
   const partner = await requirePartnerAction();
+  // MultiCombobox submits one "serviceTitles" input per selection (same
+  // shape a group of same-named checkboxes would have); the no-services
+  // fallback <Input> submits the same name with a single typed value —
+  // either way, getAll + join is how multiple picks become the one
+  // serviceTitle string this row actually stores (see its own comment).
+  const serviceTitles = formData
+    .getAll("serviceTitles")
+    .map((value) => String(value).trim())
+    .filter(Boolean);
   const parsed = createSchema.safeParse({
     listingId: formData.get("listingId"),
-    serviceTitle: formData.get("serviceTitle") || undefined,
+    serviceTitle: serviceTitles.length > 0 ? serviceTitles.join(", ") : undefined,
     customerName: formData.get("customerName") || undefined,
     customerCompany: formData.get("customerCompany") || undefined,
     customerTitle: formData.get("customerTitle") || undefined,
