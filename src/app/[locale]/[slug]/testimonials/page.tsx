@@ -13,6 +13,7 @@ import { getVisitorTestimonialForListing } from "@/lib/testimonials";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
 import { TestimonialList } from "@/components/directory/testimonial-list";
 import { WriteTestimonialButton } from "@/components/directory/write-testimonial-button";
+import { ShareButton } from "@/components/directory/share-button";
 
 export const dynamic = "force-dynamic";
 
@@ -59,7 +60,8 @@ export default async function TestimonialsPage({
   if (!listing) notFound();
 
   const t = DIRECTORY_STRINGS[resolved];
-  const [testimonials, visitor] = await Promise.all([
+  const [siteOrigin, testimonials, visitor] = await Promise.all([
+    getSiteOrigin(),
     db.directoryTestimonial.findMany({
       where: { listingId: listing.id, status: "APPROVED" },
       orderBy: { createdAt: "desc" },
@@ -68,6 +70,7 @@ export default async function TestimonialsPage({
     getVerifiedTestimonialAuthorOrNull(),
   ]);
   const existingTestimonial = visitor ? (await getVisitorTestimonialForListing(visitor.id, listing.id)) ?? null : null;
+  const pageUrl = `${siteOrigin}${directoryListingTestimonialsPath(resolved, slug)}`;
 
   return (
     <Card>
@@ -83,17 +86,27 @@ export default async function TestimonialsPage({
         )}
         <div className="border-t border-slate-200 pt-6 dark:border-neutral-800">
           <p className="mb-3 text-sm text-slate-500 dark:text-slate-400">{t.testimonialsCta}</p>
-          <WriteTestimonialButton
-            slug={slug}
-            locale={resolved}
-            aiAvailable={isAiConfigured()}
-            googleReviewUrl={listing.googleReviewUrl}
-            googleClientId={getPublicGoogleClientId()}
-            visitor={visitor ? { name: visitor.name } : null}
-            existingTestimonial={existingTestimonial}
-            variant="primary"
-            className="bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"
-          />
+          <div className="flex flex-wrap items-center gap-2">
+            <WriteTestimonialButton
+              slug={slug}
+              locale={resolved}
+              aiAvailable={isAiConfigured()}
+              googleReviewUrl={listing.googleReviewUrl}
+              googleClientId={getPublicGoogleClientId()}
+              visitor={visitor ? { name: visitor.name } : null}
+              existingTestimonial={existingTestimonial}
+              variant="primary"
+              className="bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"
+            />
+            {/* Next to the button rather than folded into WriteTestimonialButton's
+                own dialog — this copies/shares this *page's* URL (so it opens
+                straight to the write-a-testimonial CTA), which a partner can hand
+                a happy customer directly instead of the listing's front page. A
+                partner wanting a trackable, per-customer link instead has the
+                dedicated /business-portal/testimonial-links flow — this is just
+                the quick, ad-hoc "copy my testimonials page" option. */}
+            <ShareButton title={listing.companyName} url={pageUrl} label={t.testimonialsCopyLinkLabel} size="md" />
+          </div>
         </div>
       </CardBody>
     </Card>
