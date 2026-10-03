@@ -584,6 +584,11 @@ export type DirectoryStrings = {
   // error, so this reads as an explanation rather than a fault message.
   standaloneTestimonialInvalidTitle: string;
   standaloneTestimonialInvalidDescription: string;
+  // Label on the ShareButton rendered next to WriteTestimonialButton on this
+  // page (see TestimonialsPage) — copies this page's own URL, so a partner
+  // can send happy customers straight to "write us a testimonial" instead of
+  // the listing's own front page.
+  testimonialsCopyLinkLabel: string;
   // The account gate in front of the form below (see TestimonialAuthForm) —
   // name/email/phone/password field labels are the existing signup* keys
   // above, reused as-is rather than duplicated, since the copy is identical
@@ -903,6 +908,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     standaloneTestimonialInvalidTitle: "This link isn't available",
     standaloneTestimonialInvalidDescription:
       "This review link may have already been used, or is no longer valid. If you think this is a mistake, please contact the business directly.",
+    testimonialsCopyLinkLabel: "Copy link",
     testimonialAuthHeading: "Sign in to write a testimonial",
     testimonialAuthIntro:
       "Sign in with Google, or create a free account with your name, email and phone — takes less than a minute.",
@@ -1189,6 +1195,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     standaloneTestimonialIntro: "您的反馈能帮助其他访客做决定，只需不到一分钟。",
     standaloneTestimonialInvalidTitle: "此链接不可用",
     standaloneTestimonialInvalidDescription: "此评价链接可能已被使用，或已失效。如果您认为这是错误，请直接联系该企业。",
+    testimonialsCopyLinkLabel: "复制链接",
     testimonialAuthHeading: "登录后即可撰写评价",
     testimonialAuthIntro: "使用 Google 登录，或创建一个免费账户，填写姓名、电子邮件和电话——不到一分钟即可完成。",
     testimonialCompanyLabel: "公司名称",
@@ -1473,6 +1480,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     standaloneTestimonialInvalidTitle: "Pautan ini tidak tersedia",
     standaloneTestimonialInvalidDescription:
       "Pautan ulasan ini mungkin sudah digunakan, atau tidak lagi sah. Jika anda rasa ini satu kesilapan, sila hubungi perniagaan ini secara terus.",
+    testimonialsCopyLinkLabel: "Salin pautan",
     testimonialAuthHeading: "Log masuk untuk menulis testimoni",
     testimonialAuthIntro:
       "Log masuk dengan Google, atau cipta akaun percuma dengan nama, e-mel dan nombor telefon anda — mengambil masa kurang seminit.",
