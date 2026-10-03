@@ -17,6 +17,8 @@ import { DIRECTORY_STRINGS, type DirectoryLocale } from "@/lib/directory-i18n";
 export type MessageTemplateKey =
   | "lead_notification_email"
   | "testimonial_notification_email"
+  | "business_partner_request_email"
+  | "business_partner_invite_email"
   | "lead_reply_email"
   | "lead_reply_whatsapp_draft"
   | "contact_whatsapp"
@@ -77,6 +79,43 @@ export const MESSAGE_TEMPLATE_DEFINITIONS: Record<MessageTemplateKey, MessageTem
       en:
         "{name} left a testimonial on your {listing} listing{rating_note}:\n\n" +
         '"{body}"\n\nIt\'s waiting on your approval before it shows publicly. Review it from your business portal: {link}',
+    },
+  },
+  business_partner_request_email: {
+    label: "Business Partner request — email to recipient",
+    description: "Sent to a partner when another listing requests connecting with them as a Business Partner, before they've approved it.",
+    channel: "email",
+    perLocale: false,
+    hasSubject: true,
+    tokens: [
+      { name: "{requester}", description: "The requesting listing's company name" },
+      { name: "{recipient}", description: "The recipient's own listing name" },
+      { name: "{link}", description: "Link to the Business Partners page in the business portal" },
+    ],
+    defaultSubject: { en: "Business Partner request: {requester}" },
+    defaultBody: {
+      en:
+        "{requester} would like to connect with your {recipient} listing as a Business Partner.\n\n" +
+        "It's waiting on your approval before it shows publicly on either listing. Review it from your business portal: {link}",
+    },
+  },
+  business_partner_invite_email: {
+    label: "Business Partner invite — email to invited company",
+    description: "Sent when a partner invites a company that isn't on the directory yet to connect as a Business Partner.",
+    channel: "email",
+    perLocale: false,
+    hasSubject: true,
+    tokens: [
+      { name: "{inviter}", description: "The inviting listing's company name" },
+      { name: "{company}", description: "The invited company's own name" },
+      { name: "{link}", description: "Link to the directory's signup page" },
+    ],
+    defaultSubject: { en: "{inviter} invited you to connect as a Business Partner" },
+    defaultBody: {
+      en:
+        "{inviter} has invited {company} to connect as a Business Partner on the Gotka Business Directory.\n\n" +
+        "Business Partners are shown on each other's public listing page, helping customers discover businesses you work with.\n\n" +
+        "List your business to get started: {link}",
     },
   },
   lead_reply_email: {

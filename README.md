@@ -203,6 +203,31 @@ never an unofficial/browser-automation integration:
 given"), `{{3}}` a link straight to the lead in that partner's portal,
 built from `SITE_URL`.
 
+### Business Partner invites
+
+A partner inviting a business that isn't on the directory yet to connect
+as a Business Partner (`/business-portal/business-partners` → **Invite a
+business**) sends by email and WhatsApp the same way a new lead does — and
+needs its own separate Meta template, since Meta reviews the literal
+approved copy and this message means something different (an invite to
+connect, not a sales inquiry). Same **Message Templates → Create Template**
+flow as above:
+
+- Name: `business_partner_invite` (must match exactly — this app
+  hard-codes it)
+- Category: `Utility`
+- Language: `English`
+- Body: `Hi {{1}}, {{2}} has invited your business to connect as a
+  Business Partner on the Gotka Business Directory.` on its own line, then
+  a blank line, then `List your business to get started: {{3}}`
+- No buttons — same reasoning as the new-lead template above.
+
+`{{1}}` is the invited contact's name, `{{2}}` the inviting business's
+name, `{{3}}` the directory's signup page, built from `SITE_URL`. Until
+this template is approved, an invite still sends by email (if configured)
+and still saves — only the WhatsApp half is silently skipped, same
+degrade-gracefully behavior as the new-lead notification.
+
 ## Deploying on cPanel
 
 The app ships with everything needed for cPanel's **Setup Node.js App**

@@ -140,6 +140,13 @@ export function directoryListingTestimonialsPath(locale: DirectoryLocale, slug: 
   return `${directoryListingPath(locale, slug)}/testimonials`;
 }
 
+// Conditional like every other section path except Testimonials/About —
+// only appears in sectionLinks (layout.tsx) once a listing has at least
+// one ACCEPTED BusinessPartnerLink (see getPublishedBusinessPartners).
+export function directoryListingBusinessPartnersPath(locale: DirectoryLocale, slug: string): string {
+  return `${directoryListingPath(locale, slug)}/business-partners`;
+}
+
 // The main top-nav's four destinations (directory-top-nav.tsx) — real
 // index/feed pages, distinct from the existing per-category (categoryPath)
 // / per-location (locationPath) pages they each link out to.
@@ -457,6 +464,11 @@ export type DirectoryStrings = {
   promotionsHeading: string;
   faqHeading: string;
   testimonialsHeading: string;
+  // The Business Partners tab — only shown once a listing has at least one
+  // ACCEPTED BusinessPartnerLink (see getPublishedBusinessPartners), unlike
+  // Testimonials above which always has a reachable page.
+  businessPartnersHeading: string;
+  businessPartnersIntro: string;
   visitHeading: string;
   // Other locations of the same business, linked from the partner side —
   // only shown on the Visit us page when at least one exists.
@@ -839,6 +851,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     promotionsHeading: "Promotions",
     faqHeading: "FAQ",
     testimonialsHeading: "Testimonials",
+    businessPartnersHeading: "Business Partners",
+    businessPartnersIntro: "Other businesses this company works with.",
     visitHeading: "Visit us",
     branchesHeading: "Other locations",
     hoursHeading: "Hours",
@@ -1129,6 +1143,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     promotionsHeading: "促销",
     faqHeading: "常见问题",
     testimonialsHeading: "客户评价",
+    businessPartnersHeading: "商业伙伴",
+    businessPartnersIntro: "与该企业合作的其他商家。",
     visitHeading: "联系地址",
     branchesHeading: "其他分店",
     hoursHeading: "营业时间",
@@ -1415,6 +1431,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     promotionsHeading: "Promosi",
     faqHeading: "Soalan lazim",
     testimonialsHeading: "Testimoni",
+    businessPartnersHeading: "Rakan Perniagaan",
+    businessPartnersIntro: "Perniagaan lain yang bekerjasama dengan syarikat ini.",
     visitHeading: "Lawati kami",
     branchesHeading: "Lokasi lain",
     hoursHeading: "Waktu Operasi",
