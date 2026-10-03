@@ -1,30 +1,46 @@
 "use client";
 
-import { useActionState } from "react";
-import type { PartnerListing } from "@/generated/prisma/client";
+import { useActionState, useMemo, useState } from "react";
+import type { ServiceEntry } from "@/lib/directory";
 import type { TestimonialRequestLinkFormState } from "@/app/actions/testimonial-request-links";
 import { Button } from "@/components/ui/button";
 import { FieldGroup, Input, Select } from "@/components/ui/field";
+import { MultiCombobox } from "@/components/ui/multi-combobox";
 
 export function TestimonialRequestLinkForm({
   action,
   listings,
-  serviceSuggestions,
 }: {
   action: (prevState: TestimonialRequestLinkFormState, formData: FormData) => Promise<TestimonialRequestLinkFormState>;
-  listings: PartnerListing[];
-  // Every service title across every listing the partner owns, merged into
-  // one <datalist> suggestion list — see the field below's own comment on
-  // why that's fine even for a partner with more than one listing.
-  serviceSuggestions: string[];
+  // Already parsed server-side (see new/page.tsx's own comment on why) —
+  // just the id/name/services slice this form needs, not a full
+  // PartnerListing row.
+  listings: { id: string; companyName: string; services: ServiceEntry[] }[];
 }) {
   const [state, formAction, pending] = useActionState(action, undefined);
+  const [listingId, setListingId] = useState(listings[0]?.id);
+
+  // Options track whichever listing is currently selected — a partner with
+  // more than one listing sees that listing's own services, not a merged
+  // list across all of them, since "Web Design" on listing A has nothing to
+  // do with listing B.
+  const serviceOptions = useMemo(() => {
+    const listing = listings.find((item) => item.id === listingId);
+    if (!listing) return [];
+    return listing.services.map((service) => ({ value: service.title, label: service.title }));
+  }, [listings, listingId]);
 
   return (
     <form action={formAction} className="space-y-4">
       {listings.length > 1 && (
         <FieldGroup label="Listing" htmlFor="listingId" required>
-          <Select id="listingId" name="listingId" required defaultValue={listings[0]?.id}>
+          <Select
+            id="listingId"
+            name="listingId"
+            required
+            value={listingId}
+            onChange={(event) => setListingId(event.target.value)}
+          >
             {listings.map((listing) => (
               <option key={listing.id} value={listing.id}>
                 {listing.companyName}
@@ -51,20 +67,23 @@ export function TestimonialRequestLinkForm({
         <Input id="customerCompany" name="customerCompany" placeholder="e.g. Acme Sdn Bhd" />
       </FieldGroup>
 
-      <FieldGroup label="Product or service provided" htmlFor="serviceTitle">
-        <Input id="serviceTitle" name="serviceTitle" list="service-suggestions" placeholder="e.g. Logo design package" autoComplete="off" />
-        {/* A typing aid, not a constraint — the field stays free text (see
-            TestimonialRequestLink.serviceTitle's own comment on why this
-            isn't a reference to one of the listing's own formal service
-            entries), so picking a suggestion or typing something else
-            entirely both work the same way. */}
-        <datalist id="service-suggestions">
-          {serviceSuggestions.map((title) => (
-            <option key={title} value={title} />
-          ))}
-        </datalist>
+      <FieldGroup label="Product or service provided" htmlFor="serviceTitles">
+        {serviceOptions.length > 0 ? (
+          <MultiCombobox
+            id="serviceTitles"
+            name="serviceTitles"
+            options={serviceOptions}
+            placeholder="Search this listing's services…"
+            emptyMessage="No matching services"
+          />
+        ) : (
+          // Falls back to free text when the selected listing has no
+          // formal services of its own on file yet.
+          <Input id="serviceTitles" name="serviceTitles" placeholder="e.g. Logo design package" autoComplete="off" />
+        )}
         <p className="mt-1.5 text-xs text-slate-500 dark:text-slate-400">
-          Shown to the customer on the form, so they know what they&apos;re reviewing. Leave blank for a general review.
+          Shown to the customer on the form, so they know what they&apos;re reviewing. Select more than one if several
+          applied — leave blank for a general review.
         </p>
       </FieldGroup>
 

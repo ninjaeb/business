@@ -737,6 +737,10 @@ model TestimonialRequestLink {
   // DirectoryTestimonial.serviceTitle) once used — free text, not a
   // reference to a PartnerListing.services entry, since ServiceEntry itself
   // has no stable id to point at (see its own comment in src/lib/directory.ts).
+  // Selecting more than one of the listing's services in the form that
+  // writes this (see TestimonialRequestLinkForm's own MultiCombobox) joins
+  // them into this one comma-separated string rather than a second table —
+  // still just a snapshot of title text, same as a single selection.
   serviceTitle String?
 
   // Prefills the standalone form's own name/company/title fields (see
