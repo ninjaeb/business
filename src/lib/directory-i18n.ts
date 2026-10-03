@@ -210,6 +210,12 @@ export function formatTestimonialServiceTag(template: string, service: string): 
   return template.replace("{service}", service);
 }
 
+// Fills in DirectoryStrings.standaloneTestimonialHeading's {company} token
+// — see that field's own comment.
+export function formatStandaloneTestimonialHeading(template: string, company: string): string {
+  return template.replace("{company}", company);
+}
+
 // Fills in DirectoryStrings.searchViewAllResults's {query} token — see that
 // field's own comment for why this is plain substitution, not a template
 // literal built where the message is used.
@@ -269,7 +275,12 @@ export type DirectoryTestimonialFormErrorCode =
   // — see submitDirectoryTestimonial's own comment.
   | "own_listing"
   | "invalid_submission"
-  | "generic";
+  | "generic"
+  // The standalone, no-login request-link form's own name field (see
+  // submitStandaloneTestimonial/StandaloneTestimonialForm) — every other
+  // path here gets authorName from an already-signed-in account, so only
+  // this one ever needs to validate it was typed in at all.
+  | "name_required";
 
 // registerVisitor/registerTestimonialAuthor/loginVisitor in
 // src/app/actions/visitor-auth.ts — the account gate in front of
@@ -549,16 +560,30 @@ export type DirectoryStrings = {
   // testimonials, so this is what invites one regardless of whether any
   // exist yet.
   testimonialsCta: string;
-  // Shown above the rating/body fields when the form was opened via a
-  // partner's own request link (see WriteTestimonialButton's ?req=<id>
-  // handling) that named a specific service — {service} is replaced via
-  // formatTestimonialRequestContext. Never shown otherwise.
+  // Shown above the rating/body fields on the standalone request-link form
+  // (see StandaloneTestimonialForm) when the link named a specific service
+  // — {service} is replaced via formatTestimonialRequestContext. Never
+  // shown otherwise.
   testimonialRequestContext: string;
   // A compact "Re: {service}" tag shown next to an APPROVED testimonial
   // that carries a serviceTitle (see TestimonialList) — same {service}
   // token/formatter as testimonialRequestContext above, just a shorter
   // phrasing for a list row instead of a full sentence.
   testimonialServiceTag: string;
+  // The standalone, no-login request-link form itself (see
+  // /[locale]/review/[token] and StandaloneTestimonialForm) —
+  // {company} in the heading is replaced via
+  // formatStandaloneTestimonialHeading. Field labels (name/company/
+  // position) reuse signupNameLabel/testimonialCompanyLabel/
+  // testimonialPositionLabel above rather than duplicating them.
+  standaloneTestimonialHeading: string;
+  standaloneTestimonialIntro: string;
+  // Shown instead of the form itself when the link's own token doesn't
+  // resolve to a real, still-unused request against a published listing —
+  // a used/expired/invalid link is a normal, expected state here, not an
+  // error, so this reads as an explanation rather than a fault message.
+  standaloneTestimonialInvalidTitle: string;
+  standaloneTestimonialInvalidDescription: string;
   // The account gate in front of the form below (see TestimonialAuthForm) —
   // name/email/phone/password field labels are the existing signup* keys
   // above, reused as-is rather than duplicated, since the copy is identical
@@ -882,6 +907,11 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialsCta: "Had a good experience? Share it — it helps other visitors decide, and takes less than a minute.",
     testimonialRequestContext: "You're sharing feedback about: {service}",
     testimonialServiceTag: "Re: {service}",
+    standaloneTestimonialHeading: "Share your experience with {company}",
+    standaloneTestimonialIntro: "Your feedback helps other visitors decide, and takes less than a minute.",
+    standaloneTestimonialInvalidTitle: "This link isn't available",
+    standaloneTestimonialInvalidDescription:
+      "This review link may have already been used, or is no longer valid. If you think this is a mistake, please contact the business directly.",
     testimonialAuthHeading: "Sign in to write a testimonial",
     testimonialAuthIntro:
       "Sign in with Google, or create a free account with your name, email and phone — takes less than a minute.",
@@ -958,6 +988,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       own_listing: "You can't write a testimonial for your own business.",
       invalid_submission: "Please check the form and try again.",
       generic: "Something went wrong. Please try again.",
+      name_required: "Your name is required",
     },
     skipToContentLabel: "Skip to main content",
     stickyNavLabel: "Quick links",
@@ -1165,6 +1196,10 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialsCta: "有过愉快的体验吗？分享出来——这能帮助其他访客做决定，只需不到一分钟。",
     testimonialRequestContext: "您正在分享关于以下项目的反馈：{service}",
     testimonialServiceTag: "关于：{service}",
+    standaloneTestimonialHeading: "分享您对{company}的体验",
+    standaloneTestimonialIntro: "您的反馈能帮助其他访客做决定，只需不到一分钟。",
+    standaloneTestimonialInvalidTitle: "此链接不可用",
+    standaloneTestimonialInvalidDescription: "此评价链接可能已被使用，或已失效。如果您认为这是错误，请直接联系该企业。",
     testimonialAuthHeading: "登录后即可撰写评价",
     testimonialAuthIntro: "使用 Google 登录，或创建一个免费账户，填写姓名、电子邮件和电话——不到一分钟即可完成。",
     testimonialCompanyLabel: "公司名称",
@@ -1239,6 +1274,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       own_listing: "您不能为自己的企业撰写评价。",
       invalid_submission: "请检查表单内容后重试。",
       generic: "出现错误，请重试。",
+      name_required: "请填写您的姓名",
     },
     skipToContentLabel: "跳到主要内容",
     stickyNavLabel: "快捷链接",
@@ -1445,6 +1481,11 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialsCta: "Ada pengalaman yang baik? Kongsikan — ia membantu pelawat lain membuat keputusan, dan mengambil masa kurang seminit.",
     testimonialRequestContext: "Anda berkongsi maklum balas tentang: {service}",
     testimonialServiceTag: "Berkaitan: {service}",
+    standaloneTestimonialHeading: "Kongsikan pengalaman anda dengan {company}",
+    standaloneTestimonialIntro: "Maklum balas anda membantu pelawat lain membuat keputusan, dan mengambil masa kurang seminit.",
+    standaloneTestimonialInvalidTitle: "Pautan ini tidak tersedia",
+    standaloneTestimonialInvalidDescription:
+      "Pautan ulasan ini mungkin sudah digunakan, atau tidak lagi sah. Jika anda rasa ini satu kesilapan, sila hubungi perniagaan ini secara terus.",
     testimonialAuthHeading: "Log masuk untuk menulis testimoni",
     testimonialAuthIntro:
       "Log masuk dengan Google, atau cipta akaun percuma dengan nama, e-mel dan nombor telefon anda — mengambil masa kurang seminit.",
@@ -1521,6 +1562,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
       own_listing: "Anda tidak boleh menulis testimoni untuk perniagaan anda sendiri.",
       invalid_submission: "Sila semak borang dan cuba lagi.",
       generic: "Berlaku ralat. Sila cuba lagi.",
+      name_required: "Nama anda diperlukan",
     },
     skipToContentLabel: "Langkau ke kandungan utama",
     stickyNavLabel: "Pautan pantas",

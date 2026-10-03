@@ -35,6 +35,22 @@ export function TestimonialRequestLinkForm({
       )}
       {listings.length === 1 && <input type="hidden" name="listingId" value={listings[0].id} />}
 
+      {/* Prefills the standalone form's own name/company/title fields (see
+          StandaloneTestimonialForm) — all optional, and still editable by
+          the customer before they submit, so a guess here that's wrong or
+          incomplete costs nothing. */}
+      <div className="grid gap-4 sm:grid-cols-2">
+        <FieldGroup label="Customer name" htmlFor="customerName">
+          <Input id="customerName" name="customerName" placeholder="e.g. Sarah Tan" />
+        </FieldGroup>
+        <FieldGroup label="Customer title" htmlFor="customerTitle">
+          <Input id="customerTitle" name="customerTitle" placeholder="e.g. Marketing Director" />
+        </FieldGroup>
+      </div>
+      <FieldGroup label="Customer company" htmlFor="customerCompany">
+        <Input id="customerCompany" name="customerCompany" placeholder="e.g. Acme Sdn Bhd" />
+      </FieldGroup>
+
       <FieldGroup label="Product or service provided" htmlFor="serviceTitle">
         <Input id="serviceTitle" name="serviceTitle" list="service-suggestions" placeholder="e.g. Logo design package" autoComplete="off" />
         {/* A typing aid, not a constraint — the field stays free text (see
@@ -53,7 +69,7 @@ export function TestimonialRequestLinkForm({
       </FieldGroup>
 
       <FieldGroup label="Note (for you only)" htmlFor="note">
-        <Input id="note" name="note" placeholder="e.g. Sarah, logo project — Mar 2026" />
+        <Input id="note" name="note" placeholder="e.g. Logo project — Mar 2026" />
         <p className="mt-1.5 text-xs text-slate-500 dark:text-slate-400">
           Never shown to the customer — just helps you tell your own links apart.
         </p>

@@ -85,7 +85,6 @@ export default async function TestimonialsPage({
           <p className="mb-3 text-sm text-slate-500 dark:text-slate-400">{t.testimonialsCta}</p>
           <WriteTestimonialButton
             slug={slug}
-            listingId={listing.id}
             locale={resolved}
             aiAvailable={isAiConfigured()}
             googleReviewUrl={listing.googleReviewUrl}

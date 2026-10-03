@@ -6,7 +6,7 @@ import { z } from "zod";
 import { db } from "@/lib/db";
 import { getPublishedListingBySlug } from "@/lib/directory";
 import { requirePartnerAction, requireTestimonialAuthorAction } from "@/lib/auth/dal";
-import { getTestimonialRequestLinkPreview } from "@/lib/testimonial-request-links";
+import { getTestimonialRequestLinkForForm } from "@/lib/testimonial-request-links";
 import { isRateLimited, isSuspiciouslyFast } from "@/lib/lead-spam-guard";
 import { firstHopValue } from "@/lib/site-url";
 import { revalidateDirectory } from "@/lib/directory-revalidate";
@@ -109,53 +109,115 @@ export async function submitDirectoryTestimonial(
   // Already validated as an integer 1-5 by testimonialSchema above.
   const rating = Number(parsed.data.rating);
 
-  // The "write a testimonial" dialog's own optional ?req=<id> flow (see
-  // WriteTestimonialButton/getTestimonialRequestPreview) — never trusts the
-  // client-supplied serviceTitle that may have been shown in the form, only
-  // the token itself, re-resolved here against the real row (same
-  // discipline submitDirectoryLead applies to its own `r`/`via` params). A
-  // missing, stale, already-used, or foreign-listing token just means no
-  // service tag gets attached — never blocks the submission outright, since
-  // the testimonial itself is still perfectly genuine without one.
-  const requestToken = String(formData.get("requestToken") || "").trim();
-  const request = requestToken ? await getTestimonialRequestLinkPreview(requestToken, listing.id) : null;
-
-  const testimonial = await db.$transaction(async (tx) => {
-    const created = await tx.directoryTestimonial.create({
-      data: {
-        listingId: listing.id,
-        authorId: visitor.id,
-        authorName: visitor.name,
-        rating,
-        body: parsed.data.body,
-        locale: parsed.data.locale,
-        serviceTitle: request?.serviceTitle ?? null,
-      },
-    });
-    if (requestToken && request) {
-      await tx.testimonialRequestLink.update({ where: { id: requestToken }, data: { usedAt: new Date() } });
-    }
-    return created;
+  const testimonial = await db.directoryTestimonial.create({
+    data: {
+      listingId: listing.id,
+      authorId: visitor.id,
+      authorName: visitor.name,
+      rating,
+      body: parsed.data.body,
+      locale: parsed.data.locale,
+    },
   });
 
   await notifyPartnerOfNewTestimonial(listing, testimonial);
   return { status: "success", testimonialId: testimonial.id };
 }
 
-export type TestimonialRequestPreview = { serviceTitle: string | null } | null;
+// ---------------------------------------------------------------------------
+// Visitor side — a partner's own request link, no account needed (see
+// /business-portal/testimonial-links and /[locale]/review/[token])
+// ---------------------------------------------------------------------------
 
-// Called from the client (WriteTestimonialButton) once it notices a
-// ?req=<id> on the page's own URL — not rate-limited or honeypot-guarded
-// like the form actions above, since this only ever reads a listing's own
-// already-public info (whatever serviceTitle the partner chose to show
-// customers) and can't itself create, change, or spend anything; scoped to
-// this listing the same way getTestimonialRequestLinkPreview always is, so
-// a token copied from one listing can't be probed against another.
-export async function getTestimonialRequestPreview(token: string, listingId: string): Promise<TestimonialRequestPreview> {
-  const trimmed = token.trim();
-  if (!trimmed) return null;
-  const request = await getTestimonialRequestLinkPreview(trimmed, listingId);
-  return request ? { serviceTitle: request.serviceTitle } : null;
+const standaloneTestimonialSchema = z.object({
+  token: z.string().trim().min(1),
+  rating: z
+    .string()
+    .trim()
+    .min(1, "rating_required")
+    .refine((value) => {
+      const num = Number(value);
+      return Number.isInteger(num) && num >= 1 && num <= 5;
+    }, "rating_required"),
+  body: z.string().trim().min(1, "body_required").max(2000),
+  authorName: z.string().trim().min(1, "name_required").max(100),
+  authorCompany: z.string().trim().max(150).optional(),
+  authorTitle: z.string().trim().max(100).optional(),
+  locale: z.string().trim().min(1),
+});
+
+export type StandaloneTestimonialFormState =
+  | { status: "success" }
+  | { status: "error"; code: DirectoryTestimonialFormErrorCode }
+  | undefined;
+
+// The standalone, unauthenticated counterpart of submitDirectoryTestimonial
+// above — reached only via a partner's own request link (see
+// StandaloneTestimonialForm), which is exactly what stands in for an
+// account here: the token itself is the one-time credential, re-resolved
+// server-side against the real, still-unused row (never trusted from a
+// hidden field alone), same discipline submitDirectoryLead applies to its
+// own `r`/`via` referral params. Still honeypot/render-timing/rate-limited,
+// same reasoning as every other public form this app exposes — a unique,
+// unguessable token raises the bar but doesn't replace those guards.
+export async function submitStandaloneTestimonial(
+  _prevState: StandaloneTestimonialFormState,
+  formData: FormData,
+): Promise<StandaloneTestimonialFormState> {
+  if (String(formData.get("website") || "").trim()) {
+    return { status: "success" };
+  }
+  if (isSuspiciouslyFast(formData.get("renderedAt"))) {
+    return { status: "success" };
+  }
+
+  const headersList = await headers();
+  if (isRateLimited(firstHopValue(headersList.get("x-forwarded-for")))) {
+    return { status: "error", code: "rate_limited" };
+  }
+
+  const parsed = standaloneTestimonialSchema.safeParse({
+    token: formData.get("token"),
+    rating: formData.get("rating"),
+    body: formData.get("body"),
+    authorName: formData.get("authorName"),
+    authorCompany: formData.get("authorCompany") || undefined,
+    authorTitle: formData.get("authorTitle") || undefined,
+    locale: formData.get("locale"),
+  });
+  if (!parsed.success) {
+    const code = (parsed.error.issues[0]?.message || "invalid_submission") as DirectoryTestimonialFormErrorCode;
+    return { status: "error", code };
+  }
+
+  const request = await getTestimonialRequestLinkForForm(parsed.data.token);
+  if (!request) {
+    return { status: "error", code: "listing_not_found" };
+  }
+
+  // Already validated as an integer 1-5 by standaloneTestimonialSchema above.
+  const rating = Number(parsed.data.rating);
+
+  const testimonial = await db.$transaction(async (tx) => {
+    const created = await tx.directoryTestimonial.create({
+      data: {
+        listingId: request.listing.id,
+        authorId: null,
+        authorName: parsed.data.authorName,
+        authorCompany: parsed.data.authorCompany || null,
+        authorTitle: parsed.data.authorTitle || null,
+        rating,
+        body: parsed.data.body,
+        locale: parsed.data.locale,
+        serviceTitle: request.serviceTitle,
+      },
+    });
+    await tx.testimonialRequestLink.update({ where: { id: request.id }, data: { usedAt: new Date() } });
+    return created;
+  });
+
+  await notifyPartnerOfNewTestimonial(request.listing, testimonial);
+  return { status: "success" };
 }
 
 // ---------------------------------------------------------------------------

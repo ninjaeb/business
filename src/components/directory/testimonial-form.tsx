@@ -13,12 +13,7 @@ import { compressImage } from "@/lib/image-compression";
 import { Button, buttonClasses } from "@/components/ui/button";
 import { FieldGroup, Textarea } from "@/components/ui/field";
 import { useToast } from "@/components/ui/toast";
-import {
-  DIRECTORY_STRINGS,
-  formatTestimonialPhotosUploading,
-  formatTestimonialRequestContext,
-  type DirectoryLocale,
-} from "@/lib/directory-i18n";
+import { DIRECTORY_STRINGS, formatTestimonialPhotosUploading, type DirectoryLocale } from "@/lib/directory-i18n";
 
 const MAX_BODY_LENGTH = 2000;
 // Mirrors MAX_TESTIMONIAL_PHOTOS in src/app/actions/testimonials.ts —
@@ -73,8 +68,6 @@ export function TestimonialForm({
   googleReviewUrl,
   visitorName,
   onLogout,
-  requestToken,
-  requestedServiceTitle,
 }: {
   slug: string;
   locale: DirectoryLocale;
@@ -88,17 +81,6 @@ export function TestimonialForm({
   // doesn't clear the session itself (see the "Not you? Log out" button
   // below), just the local state that decides which of the two to show.
   onLogout: () => void;
-  // Set when this form was opened via a partner's own request link (see
-  // WriteTestimonialButton's own ?req=<id> handling) — carried as a hidden
-  // field the same way slug already is, so submitDirectoryTestimonial can
-  // re-resolve it server-side rather than trusting requestedServiceTitle
-  // below directly.
-  requestToken?: string;
-  // The service that request link said this visitor is being asked about —
-  // shown as context right above the rating, purely informational (the
-  // value actually saved comes from requestToken's own server-side lookup,
-  // not from this prop).
-  requestedServiceTitle?: string | null;
 }) {
   const [state, formAction, pending] = useActionState(submitDirectoryTestimonial, undefined);
   const t = DIRECTORY_STRINGS[locale];
@@ -292,7 +274,6 @@ export function TestimonialForm({
       <input type="hidden" name="slug" value={slug} />
       <input type="hidden" name="locale" value={locale} />
       <input type="hidden" name="rating" value={rating || ""} />
-      {requestToken && <input type="hidden" name="requestToken" value={requestToken} />}
       {/* Honeypot: hidden from real visitors, often filled in by bots. */}
       <div className="absolute left-[-9999px]" aria-hidden="true">
         <label htmlFor="testimonial-website">Leave this field blank</label>
@@ -318,16 +299,6 @@ export function TestimonialForm({
           </button>
         </p>
       </div>
-
-      {/* Only ever shown once the ?req=<id> token above has actually
-          resolved against a real, still-unused request row (see
-          WriteTestimonialButton's own effect) — never rendered off the raw
-          query string alone. */}
-      {requestedServiceTitle && (
-        <p className="rounded-xl bg-led-soft px-3 py-2 text-sm text-petrol-ink dark:bg-led-soft-dark dark:text-petrol-light">
-          {formatTestimonialRequestContext(t.testimonialRequestContext, requestedServiceTitle)}
-        </p>
-      )}
 
       <FieldGroup label={t.testimonialFormRatingLabel} htmlFor="testimonial-rating" required>
         <StarPicker value={rating} onChange={handleRatingChange} />

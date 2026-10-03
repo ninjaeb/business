@@ -71,6 +71,11 @@ export default async function PartnerTestimonialsPage() {
                           </span>
                         )}
                       </p>
+                      {(testimonial.authorTitle || testimonial.authorCompany) && (
+                        <p className="text-xs text-slate-500 dark:text-slate-400">
+                          {[testimonial.authorTitle, testimonial.authorCompany].filter(Boolean).join(", ")}
+                        </p>
+                      )}
                       <p className="text-xs text-slate-400">
                         {testimonial.listing.companyName} · {formatDate(testimonial.createdAt)}
                       </p>
