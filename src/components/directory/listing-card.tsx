@@ -140,28 +140,33 @@ export function ListingCard({
               the surrounding copy. Tailwind's preflight leaves headings
               unstyled, so sizing/weight are set explicitly. */}
           {variant === "compact" ? (
-            // items-center, not items-start: the logo roughly matches the
-            // combined height of name+rating+location, so centering keeps it
-            // level with the middle line (usually the rating) rather than
-            // pinned to the name alone. Same mobile-smaller/lg-bigger split
-            // as the listing detail page's own header logo (see
-            // ListingLogo's usage in layout.tsx) — 40px leaves the
-            // name/rating/location column enough room beside it on a narrow
-            // card; 90px from lg up, where a two-column card grid has width
-            // to spare.
-            <div className="flex items-center gap-3">
-              {/* rounded-none overrides ListingLogo's own default rounded-full
-                  (tailwind-merge resolves the conflict in this later class's
-                  favor) — a square crop here, unlike every other place this
-                  component renders a circular avatar. */}
+            // Grid, not flex: an "auto" grid column stretched to the row's
+            // height correctly derives the logo's width from aspect-square
+            // for BOTH the <img> and ListingLogo's no-logo fallback (a plain
+            // <div>) — flexbox's own flex-basis:auto sizing only does this
+            // for replaced elements like <img>, so the same classes on a
+            // flex row left the fallback avatar's width stuck at its
+            // "S"-sized content box instead of matching its height (verified
+            // empirically, not just by spec reading). Either way this is an
+            // exact match to the name+rating+location column beside it at
+            // any viewport and with however many of those three lines a
+            // given listing actually has, not a guessed breakpoint pair of
+            // fixed sizes.
+            <div className="grid grid-cols-[auto_1fr] items-stretch gap-3">
+              {/* rounded-none overrides ListingLogo's own default
+                  rounded-full, and ring-0 drops its default border ring
+                  (tailwind-merge resolves both conflicts in this later
+                  class's favor) — a plain square crop here, unlike every
+                  other place this component renders a circular bordered
+                  avatar. */}
               <ListingLogo
                 name={listing.companyName}
                 logoUrl={listing.logoUrl}
                 size={90}
                 loading="lazy"
-                className="h-10 w-10 shrink-0 rounded-none text-base lg:h-[90px] lg:w-[90px] lg:text-2xl"
+                className="aspect-square h-auto w-auto rounded-none text-2xl ring-0"
               />
-              <div className="min-w-0 flex-1 space-y-0.5">
+              <div className="min-w-0 space-y-0.5">
                 <h3 className="truncate text-base font-bold tracking-tight text-slate-900 dark:text-slate-100">
                   {listing.companyName}
                 </h3>
