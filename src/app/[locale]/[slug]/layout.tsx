@@ -405,7 +405,7 @@ export default async function ListingLayout({
     // at all — the tab page itself re-fetches this same list (same "every
     // section page re-queries the same request-scoped listing" pattern as
     // branches above).
-    getPublishedBusinessPartners(listing.id),
+    getPublishedBusinessPartners(listing.id, resolved),
     // Who's viewing, if anyone signed in as either account type a
     // testimonial can be written from (VISITOR or PARTNER) — feeds the two
     // WriteTestimonialButtons below (see its own comment on why there are

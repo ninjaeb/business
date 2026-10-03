@@ -1,5 +1,6 @@
 import { db } from "@/lib/db";
-import { listingLogoPath, readPublishedSnapshot } from "@/lib/directory";
+import { listingLogoPath, readPublishedSnapshot, toDirectoryGridListing, type DirectoryGridListing } from "@/lib/directory";
+import type { DirectoryLocale } from "@/lib/directory-i18n";
 import type { Industry } from "@/generated/prisma/client";
 
 // The business-portal's own list of every partner-connection this account
@@ -96,21 +97,17 @@ export async function searchBusinessPartnerCandidates(
   return results;
 }
 
-export type PublishedBusinessPartner = {
-  slug: string;
-  companyName: string;
-  tagline: string | null;
-  logoUrl: string | null;
-  industry: Industry | null;
-};
-
 // For the public Business Partners tab — every connection that's ACCEPTED
 // on either side of this listing, resolved to whichever is the *other*
 // listing, and still actually live (same "read every row, keep whichever
 // has a snapshot" treatment as getPublishedBranchListings — a partner since
 // unpublished or deleted simply drops out here rather than needing the
-// link cleaned up separately).
-export async function getPublishedBusinessPartners(listingId: string): Promise<PublishedBusinessPartner[]> {
+// link cleaned up separately). Shaped as DirectoryGridListing, same as
+// latestListings/nearbyListingsExcludingIndustry, so the tab page can
+// render these through the exact same ListingCard the "Latest Businesses"/
+// "Businesses near you" sections use — one card treatment (rating, cover
+// photo, tags, views) instead of a second, thinner one just for partners.
+export async function getPublishedBusinessPartners(listingId: string, locale: DirectoryLocale): Promise<DirectoryGridListing[]> {
   const links = await db.businessPartnerLink.findMany({
     where: {
       status: "ACCEPTED",
@@ -122,21 +119,14 @@ export async function getPublishedBusinessPartners(listingId: string): Promise<P
   const partnerIds = links.map((link) => (link.requesterListingId === listingId ? link.recipientListingId : link.requesterListingId));
   const rows = await db.partnerListing.findMany({
     where: { id: { in: partnerIds } },
-    select: { slug: true, publishedAt: true, publishedSnapshot: true },
+    select: { slug: true, publishedAt: true, updatedAt: true, viewCount: true, publishedSnapshot: true },
   });
-  return rows
-    .map((row) => {
-      const snapshot = readPublishedSnapshot(row.publishedSnapshot);
-      if (!snapshot) return null;
-      return {
-        slug: row.slug,
-        companyName: snapshot.companyName,
-        tagline: snapshot.tagline,
-        logoUrl: snapshot.logoUrl ? listingLogoPath(row.slug, row.publishedAt) : null,
-        industry: snapshot.industry,
-      };
-    })
-    .filter((entry): entry is PublishedBusinessPartner => entry !== null);
+  return rows.flatMap((row) => {
+    const listing = readPublishedSnapshot(row.publishedSnapshot);
+    return listing
+      ? [toDirectoryGridListing({ slug: row.slug, publishedAt: row.publishedAt, updatedAt: row.updatedAt, viewCount: row.viewCount, listing }, locale)]
+      : [];
+  });
 }
 
 // The business-portal's own list of businesses a partner has invited by
