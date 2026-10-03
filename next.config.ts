@@ -93,7 +93,20 @@ function contentSecurityPolicy(): string {
     "frame-src https://www.youtube-nocookie.com https://player.vimeo.com https://www.dailymotion.com https://www.facebook.com https://www.tiktok.com https://www.google.com https://accounts.google.com",
     "object-src 'none'",
     "base-uri 'self'",
-    "form-action 'self'",
+    // accounts.google.com — the partner sign-up/login pages' own "Continue
+    // with Google" button (business-login-form.tsx, partner-signup-form.tsx)
+    // is a plain same-origin form POST to /api/auth/google, which then
+    // 302s the browser on to Google's own consent screen. Chrome's
+    // form-action enforcement covers that whole redirect chain, not just
+    // the form's own literal action attribute — with only 'self' allowed,
+    // the 302 to a different origin got treated as itself a form-action
+    // violation and silently blocked client-side (no error UI, nothing in
+    // the Network tab beyond a cancelled request — only visible in the
+    // console as "Refused to send form data ... form-action 'self'"),
+    // breaking this button on every page it appears on. accounts.google.com
+    // is already trusted elsewhere in this same policy (script-src/connect-
+    // src/frame-src, for Google Identity Services' separate JS-SDK flow).
+    "form-action 'self' https://accounts.google.com",
     // Matches X-Frame-Options: SAMEORIGIN below, not the stricter 'none' —
     // this app never needs to be framed by *another* origin, but nothing
     // rules out framing itself.
