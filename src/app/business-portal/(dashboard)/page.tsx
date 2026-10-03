@@ -10,7 +10,7 @@ import {
   listingViewCountBreakdown,
 } from "@/lib/directory";
 import { getSiteOrigin } from "@/lib/site-url";
-import { directoryListingPath, formatViewsLabel } from "@/lib/directory-i18n";
+import { directoryListingPath, formatViewsLabel, PARTNER_LISTING_STATUS_LABELS_BY_LOCALE } from "@/lib/directory-i18n";
 import { getDirectoryLocale } from "@/lib/directory-locale";
 import {
   getPortalDashboardStrings,
@@ -29,7 +29,7 @@ import { StatCard } from "@/components/ui/stat-card";
 import { EmptyState } from "@/components/ui/empty-state";
 import { ListingLogo } from "@/components/directory/listing-logo";
 import { ShareButton } from "@/components/directory/share-button";
-import { PARTNER_LISTING_STATUS_BADGE_CLASSES, PARTNER_LISTING_STATUS_LABELS } from "@/lib/labels";
+import { PARTNER_LISTING_STATUS_BADGE_CLASSES } from "@/lib/labels";
 
 // No commission/payout system (unlike the CRM this was extracted from,
 // whose own overview page mixed referral-link stats with directory
@@ -102,7 +102,7 @@ export default async function PartnerDashboardPage() {
                         <div className="min-w-0">
                           <p className="truncate font-medium text-slate-800 dark:text-slate-200">{listing.companyName}</p>
                           <Badge className={PARTNER_LISTING_STATUS_BADGE_CLASSES[listing.status]}>
-                            {PARTNER_LISTING_STATUS_LABELS[listing.status]}
+                            {PARTNER_LISTING_STATUS_LABELS_BY_LOCALE[locale][listing.status]}
                           </Badge>
                         </div>
                       </div>

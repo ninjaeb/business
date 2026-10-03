@@ -32,11 +32,11 @@ import { ServicesEditor } from "@/components/directory/services-editor";
 import { UpdatesEditor } from "@/components/directory/updates-editor";
 import { VideosEditor } from "@/components/directory/videos-editor";
 import { useToast } from "@/components/ui/toast";
-import { INDUSTRIES, INDUSTRY_LABELS } from "@/lib/labels";
+import { INDUSTRIES } from "@/lib/labels";
 import { MAX_SEO_DESCRIPTION_LENGTH, MAX_SEO_TITLE_LENGTH, servicesContextText } from "@/lib/listing-seo-limits";
 import { formatSeoTitlePlaceholder, PORTAL_LISTING_FORM_STRINGS } from "@/lib/portal-listing-i18n";
 import { cn } from "@/lib/utils";
-import type { DirectoryLocale } from "@/lib/directory-i18n";
+import { INDUSTRY_LABELS_BY_LOCALE, type DirectoryLocale } from "@/lib/directory-i18n";
 import type { PartnerListingStatus } from "@/generated/prisma/client";
 import type { OperatingHours } from "@/lib/operating-hours";
 import type { FaqEntry, ListingTranslations, ListingUpdateEntry, PhotoEntry, ServiceEntry, VideoEntry } from "@/lib/directory";
@@ -803,7 +803,7 @@ export function PartnerListingForm({
             <option value="">{t.industryNotSet}</option>
             {INDUSTRIES.map((code) => (
               <option key={code} value={code}>
-                {INDUSTRY_LABELS[code]}
+                {INDUSTRY_LABELS_BY_LOCALE[locale][code]}
               </option>
             ))}
           </Select>

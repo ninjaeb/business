@@ -6,8 +6,8 @@ import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody } from "@/components/ui/card";
 import { EmptyState } from "@/components/ui/empty-state";
 import { buttonClasses } from "@/components/ui/button";
-import { INDUSTRY_LABELS } from "@/lib/labels";
 import { getDirectoryLocale } from "@/lib/directory-locale";
+import { INDUSTRY_LABELS_BY_LOCALE } from "@/lib/directory-i18n";
 import { formatPortalCompanyCount, getPortalCompaniesStrings } from "@/lib/portal-companies-i18n";
 
 export default async function PartnerCompaniesPage() {
@@ -69,7 +69,7 @@ export default async function PartnerCompaniesPage() {
                         </Link>
                       </td>
                       <td className="py-2.5 pr-3 whitespace-nowrap text-slate-600 dark:text-slate-300">
-                        {company.industry ? INDUSTRY_LABELS[company.industry] : "—"}
+                        {company.industry ? INDUSTRY_LABELS_BY_LOCALE[locale][company.industry] : "—"}
                       </td>
                       <td className="py-2.5 pr-3 whitespace-nowrap text-slate-600 dark:text-slate-300">{company._count.contacts}</td>
                       <td className="py-2.5 pr-3 whitespace-nowrap text-slate-600 dark:text-slate-300">{company._count.deals}</td>

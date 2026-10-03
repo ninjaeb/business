@@ -6,7 +6,7 @@ import { db } from "@/lib/db";
 import { deletePartnerCompany } from "@/app/actions/partner-companies";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { DEFAULT_PARTNER_CURRENCY, formatCurrency, formatDate, fullName } from "@/lib/format";
-import { INDUSTRY_LABELS, PARTNER_DEAL_STATUS_BADGE_CLASSES, PARTNER_DEAL_STATUS_LABELS } from "@/lib/labels";
+import { PARTNER_DEAL_STATUS_BADGE_CLASSES } from "@/lib/labels";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -15,6 +15,7 @@ import { ConfirmSubmitButton } from "@/components/ui/confirm-submit-button";
 import { EmptyState } from "@/components/ui/empty-state";
 import { getDirectoryLocale } from "@/lib/directory-locale";
 import { formatPortalCompaniesCount, getPortalCompaniesStrings } from "@/lib/portal-companies-i18n";
+import { INDUSTRY_LABELS_BY_LOCALE, PARTNER_DEAL_STATUS_LABELS_BY_LOCALE } from "@/lib/directory-i18n";
 
 export default async function PartnerCompanyDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const [user, locale] = await Promise.all([requireCompletePartnerProfile(), getDirectoryLocale()]);
@@ -36,7 +37,7 @@ export default async function PartnerCompanyDetailPage({ params }: { params: Pro
       <PageHeader
         breadcrumbs={[{ label: t.companiesTitle, href: "/business-portal/companies" }, { label: company.name }]}
         title={company.name}
-        description={company.industry ? INDUSTRY_LABELS[company.industry] : undefined}
+        description={company.industry ? INDUSTRY_LABELS_BY_LOCALE[locale][company.industry] : undefined}
         actions={
           <>
             <Link href={`/business-portal/companies/${company.id}/edit`} className={buttonClasses("secondary")}>
@@ -124,7 +125,9 @@ export default async function PartnerCompanyDetailPage({ params }: { params: Pro
                       <span className="min-w-0 truncate font-medium text-slate-800 dark:text-slate-200">{deal.title}</span>
                       <span className="flex shrink-0 items-center gap-3">
                         <span className="text-slate-500 dark:text-slate-400">{formatCurrency(deal.value.toString(), currency)}</span>
-                        <Badge className={PARTNER_DEAL_STATUS_BADGE_CLASSES[deal.status]}>{PARTNER_DEAL_STATUS_LABELS[deal.status]}</Badge>
+                        <Badge className={PARTNER_DEAL_STATUS_BADGE_CLASSES[deal.status]}>
+                          {PARTNER_DEAL_STATUS_LABELS_BY_LOCALE[locale][deal.status]}
+                        </Badge>
                       </span>
                     </Link>
                   </li>

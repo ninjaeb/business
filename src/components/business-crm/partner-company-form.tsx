@@ -3,10 +3,10 @@
 import { useActionState } from "react";
 import type { PartnerCompany } from "@/generated/prisma/client";
 import type { PartnerCompanyFormState } from "@/app/actions/partner-companies";
-import type { DirectoryLocale } from "@/lib/directory-i18n";
+import { INDUSTRY_LABELS_BY_LOCALE, type DirectoryLocale } from "@/lib/directory-i18n";
 import { Button } from "@/components/ui/button";
 import { FieldGroup, Input, Select, Textarea } from "@/components/ui/field";
-import { INDUSTRIES, INDUSTRY_LABELS } from "@/lib/labels";
+import { INDUSTRIES } from "@/lib/labels";
 import { PHONE_FORMAT_HINT } from "@/lib/phone";
 import { PORTAL_COMPANIES_STRINGS } from "@/lib/portal-companies-i18n";
 
@@ -38,7 +38,7 @@ export function PartnerCompanyForm({
             <option value="">{t.industryUnclassified}</option>
             {INDUSTRIES.map((industry) => (
               <option key={industry} value={industry}>
-                {INDUSTRY_LABELS[industry]}
+                {INDUSTRY_LABELS_BY_LOCALE[locale][industry]}
               </option>
             ))}
           </Select>

@@ -6,7 +6,7 @@ import { db } from "@/lib/db";
 import { deletePartnerContact } from "@/app/actions/partner-contacts";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { DEFAULT_PARTNER_CURRENCY, formatCurrency, formatDate, fullName } from "@/lib/format";
-import { PARTNER_DEAL_STATUS_BADGE_CLASSES, PARTNER_DEAL_STATUS_LABELS } from "@/lib/labels";
+import { PARTNER_DEAL_STATUS_BADGE_CLASSES } from "@/lib/labels";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -15,6 +15,7 @@ import { ConfirmSubmitButton } from "@/components/ui/confirm-submit-button";
 import { EmptyState } from "@/components/ui/empty-state";
 import { getDirectoryLocale } from "@/lib/directory-locale";
 import { PORTAL_CONTACTS_STRINGS, formatDealsHeading, formatTasksHeading } from "@/lib/portal-contacts-i18n";
+import { PARTNER_DEAL_STATUS_LABELS_BY_LOCALE } from "@/lib/directory-i18n";
 
 export default async function PartnerContactDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const user = await requireCompletePartnerProfile();
@@ -97,7 +98,9 @@ export default async function PartnerContactDetailPage({ params }: { params: Pro
                     <span className="min-w-0 truncate font-medium text-slate-800 dark:text-slate-200">{deal.title}</span>
                     <span className="flex shrink-0 items-center gap-3">
                       <span className="text-slate-500 dark:text-slate-400">{formatCurrency(deal.value.toString(), currency)}</span>
-                      <Badge className={PARTNER_DEAL_STATUS_BADGE_CLASSES[deal.status]}>{PARTNER_DEAL_STATUS_LABELS[deal.status]}</Badge>
+                      <Badge className={PARTNER_DEAL_STATUS_BADGE_CLASSES[deal.status]}>
+                        {PARTNER_DEAL_STATUS_LABELS_BY_LOCALE[locale][deal.status]}
+                      </Badge>
                     </span>
                   </Link>
                 </li>
