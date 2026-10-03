@@ -390,13 +390,14 @@ model PartnerListing {
   partner   User   @relation(fields: [partnerId], references: [id], onDelete: Cascade)
   partnerId String
 
-  leads         DirectoryLead[]
-  images        DirectoryListingImage[]
-  categories    PartnerListingCategory[]
-  referralViews ListingReferralView[]
-  branchLinksA  PartnerListingBranchLink[] @relation("BranchLinkA")
-  branchLinksB  PartnerListingBranchLink[] @relation("BranchLinkB")
-  testimonials  DirectoryTestimonial[]
+  leads                   DirectoryLead[]
+  images                  DirectoryListingImage[]
+  categories              PartnerListingCategory[]
+  referralViews           ListingReferralView[]
+  branchLinksA            PartnerListingBranchLink[] @relation("BranchLinkA")
+  branchLinksB            PartnerListingBranchLink[] @relation("BranchLinkB")
+  testimonials            DirectoryTestimonial[]
+  testimonialRequestLinks TestimonialRequestLink[]
 
   @@index([status])
   @@index([partnerId])
@@ -522,7 +523,7 @@ model DirectoryGuide {
   // for both a classic rich result and being directly quotable by an AI
   // answer engine, and a guide's own body is exactly the kind of long-form
   // content a reader's unanswered follow-up questions cluster around.
-  faqs Json?
+  faqs         Json?
 
   seoTitle       String?
   seoDescription String?
@@ -659,8 +660,17 @@ model DirectoryTestimonial {
   // still reads correctly even if the account's own name later changes.
   authorName String
   rating     Int?
-  body       String  @db.Text
-  locale     String  @default("en")
+  body       String @db.Text
+  locale     String @default("en")
+
+  // Denormalized from TestimonialRequestLink.serviceTitle at submission time
+  // when this testimonial was written through one of the partner's own
+  // request links (see submitDirectoryTestimonial) — null for every
+  // testimonial written the ordinary way, straight off the listing page.
+  // Copied rather than related, same "snapshot at submit time" reasoning as
+  // authorName above: the request link can be deleted by the partner
+  // afterward without taking this context down with it.
+  serviceTitle String?
 
   reviewNote String?   @db.Text
   reviewedAt DateTime?
@@ -695,6 +705,43 @@ model DirectoryTestimonial {
   @@index([listingId, status])
   @@index([status])
   @@index([authorId])
+}
+
+// A partner-generated, shareable "please leave us a testimonial" link (see
+// /business-portal/testimonial-links and submitDirectoryTestimonial) — the
+// row's own id doubles as the URL token (?req=<id> on the listing's
+// Testimonials page), same "the model's own id is the token" convention
+// this app already uses for every other id-in-a-URL case, rather than a
+// separate generated code. Unlike PartnerListing.referralCode (one reusable
+// code per listing, shared with anyone), a partner can create as many of
+// these as they like — typically one per customer they're asking.
+model TestimonialRequestLink {
+  id String @id @default(cuid())
+
+  // Shown to the visitor on the testimonial form ("You're sharing feedback
+  // about: ...") and copied onto the resulting testimonial (see
+  // DirectoryTestimonial.serviceTitle) once used — free text, not a
+  // reference to a PartnerListing.services entry, since ServiceEntry itself
+  // has no stable id to point at (see its own comment in src/lib/directory.ts).
+  serviceTitle String?
+
+  // The partner's own private label for this link (e.g. a customer's name)
+  // — never shown to the visitor, purely so the partner's own list of links
+  // stays legible once there are more than a couple.
+  note String?
+
+  // Set once a testimonial is submitted through this link — null means
+  // still pending. Not a relation to the resulting DirectoryTestimonial:
+  // nothing here needs to navigate back to it, just know whether this link
+  // has already done its job.
+  usedAt DateTime?
+
+  createdAt DateTime @default(now())
+
+  listing   PartnerListing @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  listingId String
+
+  @@index([listingId])
 }
 
 // How many times a specific signed-in partner's own copy of a listing's

@@ -59,7 +59,18 @@ export default async function PartnerTestimonialsPage() {
                 <li key={testimonial.id} className="space-y-3 py-4 text-sm">
                   <div className="flex flex-wrap items-start justify-between gap-2">
                     <div>
-                      <p className="font-medium text-slate-800 dark:text-slate-200">{testimonial.authorName}</p>
+                      <p className="font-medium text-slate-800 dark:text-slate-200">
+                        {testimonial.authorName}
+                        {/* Only set when this testimonial came through one
+                            of this partner's own request links (see
+                            /business-portal/testimonial-links) — lets them
+                            tell which job a review is actually about. */}
+                        {testimonial.serviceTitle && (
+                          <span className="ml-2 inline-flex items-center rounded-full bg-led-soft px-2 py-0.5 text-xs font-medium text-petrol-ink dark:bg-led-soft-dark dark:text-petrol-light">
+                            {testimonial.serviceTitle}
+                          </span>
+                        )}
+                      </p>
                       <p className="text-xs text-slate-400">
                         {testimonial.listing.companyName} · {formatDate(testimonial.createdAt)}
                       </p>
@@ -114,6 +125,11 @@ export default async function PartnerTestimonialsPage() {
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <p className="font-medium text-slate-800 dark:text-slate-200">
                       {testimonial.authorName} <span className="font-normal text-slate-400">· {testimonial.listing.companyName}</span>
+                      {testimonial.serviceTitle && (
+                        <span className="ml-2 inline-flex items-center rounded-full bg-led-soft px-2 py-0.5 text-xs font-medium text-petrol-ink dark:bg-led-soft-dark dark:text-petrol-light">
+                          {testimonial.serviceTitle}
+                        </span>
+                      )}
                     </p>
                     <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${STATUS_BADGE_CLASSES[testimonial.status]}`}>
                       {STATUS_LABEL[testimonial.status]}

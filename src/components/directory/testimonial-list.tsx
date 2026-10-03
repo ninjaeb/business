@@ -1,6 +1,6 @@
 import { Star } from "lucide-react";
 import type { DirectoryListingImage, DirectoryTestimonial } from "@/generated/prisma/client";
-import type { DirectoryLocale } from "@/lib/directory-i18n";
+import { DIRECTORY_STRINGS, formatTestimonialServiceTag, type DirectoryLocale } from "@/lib/directory-i18n";
 import { PhotoLightbox } from "@/components/directory/photo-lightbox";
 
 // Same locale-aware dateline pattern as UpdateItem/NewsFeedContent's own
@@ -32,12 +32,24 @@ function TestimonialStars({ rating }: { rating: number }) {
 type TestimonialWithPhotos = DirectoryTestimonial & { images: DirectoryListingImage[] };
 
 export function TestimonialList({ testimonials, locale }: { testimonials: TestimonialWithPhotos[]; locale: DirectoryLocale }) {
+  const t = DIRECTORY_STRINGS[locale];
   return (
     <ul className="space-y-3">
       {testimonials.map((testimonial) => (
         <li key={testimonial.id} className="rounded-2xl border border-slate-200 px-5 py-4 shadow-sm dark:border-neutral-800">
           <div className="flex flex-wrap items-center justify-between gap-2">
-            <span className="text-sm font-semibold text-slate-900 dark:text-slate-100">{testimonial.authorName}</span>
+            <div>
+              <span className="text-sm font-semibold text-slate-900 dark:text-slate-100">{testimonial.authorName}</span>
+              {/* Only ever set when this testimonial was written through one
+                  of the partner's own request links (see
+                  DirectoryTestimonial.serviceTitle's own comment) — absent
+                  for every ordinary, unprompted testimonial. */}
+              {testimonial.serviceTitle && (
+                <span className="ml-2 inline-flex items-center rounded-full bg-led-soft px-2 py-0.5 text-xs font-medium text-petrol-ink dark:bg-led-soft-dark dark:text-petrol-light">
+                  {formatTestimonialServiceTag(t.testimonialServiceTag, testimonial.serviceTitle)}
+                </span>
+              )}
+            </div>
             <div className="flex items-center gap-2">
               {testimonial.rating && <TestimonialStars rating={testimonial.rating} />}
               <time dateTime={testimonial.createdAt.toISOString()} className="text-xs text-slate-400">
