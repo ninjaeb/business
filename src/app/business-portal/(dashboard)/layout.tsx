@@ -8,9 +8,7 @@ import { DirectoryLanguageSwitcher } from "@/components/directory/directory-lang
 import { getDirectoryLocale } from "@/lib/directory-locale";
 import { PartnerNavMenu } from "@/components/portal/partner-nav";
 import { PartnerSidebar } from "@/components/portal/partner-sidebar";
-
-const TITLE = "Business Portal";
-const DESCRIPTION = "Manage your business listings and directory leads.";
+import { getPortalChromeStrings } from "@/lib/portal-i18n";
 
 // None of these pages set their own metadata, so this is what every one of
 // them — Listings, Leads, Profile — shows in a browser tab/share preview
@@ -18,23 +16,24 @@ const DESCRIPTION = "Manage your business listings and directory leads.";
 // noindex since everything past it requires requirePartner, so there's
 // nothing here a search engine should ever list.
 export async function generateMetadata(): Promise<Metadata> {
-  const siteOrigin = await getSiteOrigin();
+  const [siteOrigin, locale] = await Promise.all([getSiteOrigin(), getDirectoryLocale()]);
   const imageUrl = `${siteOrigin}/icon-192.png`;
+  const t = getPortalChromeStrings(locale);
   return {
-    title: TITLE,
-    description: DESCRIPTION,
+    title: t.metaTitle,
+    description: t.metaDescription,
     robots: { index: false, follow: false },
     openGraph: {
-      title: TITLE,
-      description: DESCRIPTION,
+      title: t.metaTitle,
+      description: t.metaDescription,
       siteName: "Business Directory",
       type: "website",
       images: [{ url: imageUrl }],
     },
     twitter: {
       card: "summary",
-      title: TITLE,
-      description: DESCRIPTION,
+      title: t.metaTitle,
+      description: t.metaDescription,
       images: [imageUrl],
     },
   };
@@ -49,6 +48,7 @@ export async function generateMetadata(): Promise<Metadata> {
 // feel continuous there.
 export default async function PartnerLayout({ children }: { children: React.ReactNode }) {
   const [, locale] = await Promise.all([requirePartner(), getDirectoryLocale()]);
+  const t = getPortalChromeStrings(locale);
 
   return (
     <div className="flex h-full min-h-full">
@@ -63,9 +63,9 @@ export default async function PartnerLayout({ children }: { children: React.Reac
                   "Business Portal" plus the language switcher/theme/menu
                   group don't fit in one row on a narrow phone and overflow
                   the viewport. */}
-              <img src="/icon-192.png" alt="Business Portal" className="h-8 w-8 shrink-0" />
+              <img src="/icon-192.png" alt={t.brandName} className="h-8 w-8 shrink-0" />
               <span className="hidden text-lg font-semibold text-slate-900 dark:text-slate-100 sm:inline">
-                Business Portal
+                {t.brandName}
               </span>
             </Link>
             <div className="ml-auto flex shrink-0 items-center gap-1">

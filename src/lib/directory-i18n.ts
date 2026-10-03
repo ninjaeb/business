@@ -1,6 +1,13 @@
-import type { Industry } from "@/generated/prisma/client";
+import type { DirectoryLeadStatus, Industry, PartnerDealStatus, PartnerListingStatus } from "@/generated/prisma/client";
 import { BUSINESS_NAV_ITEMS } from "@/lib/business-nav-items";
-import { INDUSTRY_LABELS, VIDEO_CATEGORY_LABELS, type VideoCategory } from "@/lib/labels";
+import {
+  DIRECTORY_LEAD_STATUS_LABELS,
+  INDUSTRY_LABELS,
+  PARTNER_DEAL_STATUS_LABELS,
+  PARTNER_LISTING_STATUS_LABELS,
+  VIDEO_CATEGORY_LABELS,
+  type VideoCategory,
+} from "@/lib/labels";
 
 // Same three languages as the public /lead form (src/lib/lead-form-i18n.ts)
 // but kept as its own copy rather than shared — that file's locale type and
@@ -732,6 +739,14 @@ export type DirectoryStrings = {
   // the rest of that menu is already in.
   navDashboard: string;
   navMyListings: string;
+  navTestimonials: string;
+  navRequestTestimonial: string;
+  navBusinessPartners: string;
+  // The section heading BUSINESS_NAV_ITEMS attaches to its own
+  // "Business Leads" entry (see that item's own `heading` field) — the
+  // label a CRM module group of nav items starts under, not a page name of
+  // its own.
+  navCrmHeading: string;
   navBusinessLeads: string;
   navCompanies: string;
   navContacts: string;
@@ -1024,6 +1039,10 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navAddBusiness: "Add Business",
     navDashboard: "Dashboard",
     navMyListings: "My Business",
+    navTestimonials: "Testimonials",
+    navRequestTestimonial: "Request Testimonial",
+    navBusinessPartners: "Business Partners",
+    navCrmHeading: "My CRM",
     navBusinessLeads: "Business Leads",
     navCompanies: "Companies",
     navContacts: "Contacts",
@@ -1312,6 +1331,10 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navAddBusiness: "添加企业",
     navDashboard: "仪表盘",
     navMyListings: "我的企业",
+    navTestimonials: "客户评价",
+    navRequestTestimonial: "请求评价",
+    navBusinessPartners: "商业伙伴",
+    navCrmHeading: "我的客户管理",
     navBusinessLeads: "商业线索",
     navCompanies: "公司",
     navContacts: "联系人",
@@ -1604,6 +1627,10 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navAddBusiness: "Tambah Perniagaan",
     navDashboard: "Papan Pemuka",
     navMyListings: "Perniagaan saya",
+    navTestimonials: "Testimoni",
+    navRequestTestimonial: "Minta Testimoni",
+    navBusinessPartners: "Rakan Perniagaan",
+    navCrmHeading: "CRM Saya",
     navBusinessLeads: "Petunjuk Perniagaan",
     navCompanies: "Syarikat",
     navContacts: "Kenalan",
@@ -1659,17 +1686,23 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
 };
 
 // BUSINESS_NAV_ITEMS (src/lib/business-nav-items.ts) gives the portal's own
-// English page names — right for PartnerNavMenu/PartnerSidebar, which live
-// outside the locale-prefixed directory tree, but wrong for that same list
-// rendered inside DirectoryNavMenu, which does live inside it and needs to
-// match whichever of the three languages that menu is already showing.
-// Zips those hrefs (unlocalized, and never shown directly) with the
-// translated labels above, in the same fixed order.
-export function localizedBusinessNavItems(locale: DirectoryLocale): { href: string; label: string }[] {
+// hrefs plus an English fallback label — used directly by PartnerNavMenu/
+// PartnerSidebar (the portal's own chrome, which now also calls this
+// function, passing the signed-in partner's own getDirectoryLocale()) and by
+// DirectoryNavMenu, rendered inside the locale-prefixed public directory tree
+// and so needing to match whichever of the three languages that menu is
+// already showing. Zips those hrefs (never shown directly) with the
+// translated labels above, in the same fixed order; a label this map hasn't
+// been given yet for an href falls back to BUSINESS_NAV_ITEMS' own English
+// text rather than rendering blank.
+export function localizedBusinessNavItems(locale: DirectoryLocale): { href: string; label: string; heading?: string }[] {
   const t = DIRECTORY_STRINGS[locale];
   const labels: Record<string, string> = {
     "/business-portal": t.navDashboard,
     "/business-portal/listings": t.navMyListings,
+    "/business-portal/testimonials": t.navTestimonials,
+    "/business-portal/testimonial-links": t.navRequestTestimonial,
+    "/business-portal/business-partners": t.navBusinessPartners,
     "/business-portal/business-leads": t.navBusinessLeads,
     "/business-portal/companies": t.navCompanies,
     "/business-portal/contacts": t.navContacts,
@@ -1677,7 +1710,17 @@ export function localizedBusinessNavItems(locale: DirectoryLocale): { href: stri
     "/business-portal/tasks": t.navTasks,
     "/business-portal/profile": t.navProfile,
   };
-  return BUSINESS_NAV_ITEMS.map((item) => ({ href: item.href, label: labels[item.href] ?? item.label }));
+  // Only BUSINESS_NAV_ITEMS' own "Business Leads" entry carries a heading
+  // (the one group-starting item — see that array's own comment); every
+  // other href simply has no entry here and so gets no heading below.
+  const headings: Record<string, string> = {
+    "/business-portal/business-leads": t.navCrmHeading,
+  };
+  return BUSINESS_NAV_ITEMS.map((item) => ({
+    href: item.href,
+    label: labels[item.href] ?? item.label,
+    ...("heading" in item ? { heading: headings[item.href] ?? item.heading } : {}),
+  }));
 }
 
 // Industry is a fixed enum shared with the internal /system CRM (see
@@ -1756,5 +1799,67 @@ export const VIDEO_CATEGORY_LABELS_BY_LOCALE: Record<DirectoryLocale, Record<Vid
     PROMOTIONAL: "Promosi",
     EVENT: "Acara",
     OTHER: "Lain-lain",
+  },
+};
+
+// Same reasoning as INDUSTRY_LABELS_BY_LOCALE above: "en" reuses
+// PARTNER_LISTING_STATUS_LABELS (src/lib/labels.ts) directly. Used by the
+// business portal's My Business listings grid/detail pages.
+export const PARTNER_LISTING_STATUS_LABELS_BY_LOCALE: Record<DirectoryLocale, Record<PartnerListingStatus, string>> = {
+  en: PARTNER_LISTING_STATUS_LABELS,
+  zh: {
+    DRAFT: "草稿",
+    PENDING_REVIEW: "审核中",
+    PUBLISHED: "已发布",
+    REJECTED: "需修改",
+  },
+  ms: {
+    DRAFT: "Draf",
+    PENDING_REVIEW: "Menunggu Semakan",
+    PUBLISHED: "Diterbitkan",
+    REJECTED: "Perubahan Diperlukan",
+  },
+};
+
+// Same reasoning again: "en" reuses PARTNER_DEAL_STATUS_LABELS directly.
+// Used by the business portal's Deals CRM module (board columns, status
+// pickers, deal detail pages).
+export const PARTNER_DEAL_STATUS_LABELS_BY_LOCALE: Record<DirectoryLocale, Record<PartnerDealStatus, string>> = {
+  en: PARTNER_DEAL_STATUS_LABELS,
+  zh: {
+    NEW: "新增/潜在客户",
+    CONTACTED: "已联系/资格确认中",
+    DISCOVERY: "需求了解/已安排会议",
+    PROPOSAL: "提案/报价已发送",
+    NEGOTIATION: "谈判/审核中",
+    CLOSED_WON: "成交",
+    CLOSED_LOST: "已流失",
+  },
+  ms: {
+    NEW: "Baharu / Lead Masuk",
+    CONTACTED: "Dihubungi / Kelayakan",
+    DISCOVERY: "Penerokaan / Mesyuarat Dijadualkan",
+    PROPOSAL: "Cadangan / Sebut Harga Dihantar",
+    NEGOTIATION: "Rundingan / Dalam Semakan",
+    CLOSED_WON: "Ditutup - Menang",
+    CLOSED_LOST: "Ditutup - Kalah",
+  },
+};
+
+// Same reasoning again: "en" reuses DIRECTORY_LEAD_STATUS_LABELS directly.
+// Used by the business portal's Business Leads inbox and its status picker.
+export const DIRECTORY_LEAD_STATUS_LABELS_BY_LOCALE: Record<DirectoryLocale, Record<DirectoryLeadStatus, string>> = {
+  en: DIRECTORY_LEAD_STATUS_LABELS,
+  zh: {
+    NEW: "新线索",
+    PICKED_UP: "已认领",
+    CONTACTED: "已联系",
+    CLOSED_CONVERTED: "已完成 - 转为交易",
+  },
+  ms: {
+    NEW: "Baharu",
+    PICKED_UP: "Diambil",
+    CONTACTED: "Dihubungi",
+    CLOSED_CONVERTED: "Ditutup - Ditukar kepada Deal",
   },
 };

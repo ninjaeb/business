@@ -7,8 +7,8 @@ import { usePathname } from "next/navigation";
 import { LogOut, Menu, Plus, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { createListingAction } from "@/app/actions/directory";
-import { BUSINESS_NAV_ITEMS } from "@/lib/business-nav-items";
-import { directoryHomePath, type DirectoryLocale } from "@/lib/directory-i18n";
+import { directoryHomePath, localizedBusinessNavItems, type DirectoryLocale } from "@/lib/directory-i18n";
+import { getPortalChromeStrings } from "@/lib/portal-i18n";
 
 const navHeadingClasses =
   "border-t border-slate-100 px-3 pb-1 pt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:border-neutral-800 dark:text-slate-500";
@@ -37,6 +37,8 @@ export function PartnerNavMenu({
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+  const t = getPortalChromeStrings(locale);
+  const navItems = localizedBusinessNavItems(locale);
 
   useEffect(() => {
     if (!open) return;
@@ -66,7 +68,7 @@ export function PartnerNavMenu({
         onClick={() => setOpen((o) => !o)}
         aria-haspopup="menu"
         aria-expanded={open}
-        aria-label="Menu"
+        aria-label={t.menu}
         className="inline-flex h-8 w-8 items-center justify-center rounded-full text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-neutral-800 dark:hover:text-slate-100"
       >
         {open ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
@@ -78,20 +80,20 @@ export function PartnerNavMenu({
           className="absolute right-0 z-30 mt-2 w-56 overflow-hidden rounded-2xl border border-slate-200 bg-white py-1 shadow-lg dark:border-neutral-700 dark:bg-neutral-900"
         >
           <Link href={directoryHomePath(locale)} role="menuitem" onClick={() => setOpen(false)} className={itemClasses}>
-            Business Directory
+            {t.businessDirectoryLink}
           </Link>
 
           <form action={createListingAction}>
             <button type="submit" role="menuitem" className={itemClasses}>
               <Plus className="h-4 w-4 shrink-0 text-slate-400" />
-              Add Business
+              {t.addBusiness}
             </button>
           </form>
 
-          <div className={navHeadingClasses}>My Business</div>
-          {BUSINESS_NAV_ITEMS.map((item) => (
+          <div className={navHeadingClasses}>{t.myBusinessHeading}</div>
+          {navItems.map((item) => (
             <Fragment key={item.href}>
-              {"heading" in item && <div className={navHeadingClasses}>{item.heading}</div>}
+              {item.heading && <div className={navHeadingClasses}>{item.heading}</div>}
               <Link
                 href={item.href}
                 role="menuitem"
@@ -110,7 +112,7 @@ export function PartnerNavMenu({
               className={cn(itemClasses, "border-t border-slate-100 dark:border-neutral-800")}
             >
               <LogOut className="h-4 w-4 shrink-0 text-slate-400" />
-              Sign out
+              {t.signOut}
             </button>
           </form>
         </div>
