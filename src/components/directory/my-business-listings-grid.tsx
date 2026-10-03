@@ -5,7 +5,15 @@ import Link from "next/link";
 import { ExternalLink, Eye, Link2, Megaphone, Trash2 } from "lucide-react";
 import { bulkLinkListingsAsBranches, deleteListingAction } from "@/app/actions/directory";
 import type { PartnerListingStatus } from "@/generated/prisma/client";
-import type { DirectoryLocale } from "@/lib/directory-i18n";
+import { formatViewsLabel, PARTNER_LISTING_STATUS_LABELS_BY_LOCALE, type DirectoryLocale } from "@/lib/directory-i18n";
+import {
+  formatDeleteConfirmDraft,
+  formatDeleteConfirmPublic,
+  formatLinkedSuccess,
+  formatSelectedCount,
+  formatSelectListingAriaLabel,
+  PORTAL_LISTINGS_STRINGS,
+} from "@/lib/portal-listing-i18n";
 import { cn } from "@/lib/utils";
 import { Card, CardBody } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -13,7 +21,7 @@ import { Button, buttonClasses } from "@/components/ui/button";
 import { ConfirmSubmitButton } from "@/components/ui/confirm-submit-button";
 import { ListingLogo } from "@/components/directory/listing-logo";
 import { useToast } from "@/components/ui/toast";
-import { PARTNER_LISTING_STATUS_BADGE_CLASSES, PARTNER_LISTING_STATUS_LABELS } from "@/lib/labels";
+import { PARTNER_LISTING_STATUS_BADGE_CLASSES } from "@/lib/labels";
 
 export type MyBusinessListingCard = {
   id: string;
@@ -33,10 +41,11 @@ export type MyBusinessListingCard = {
 // field (PartnerListingForm). Selection only makes sense with at least two
 // listings to choose from — PartnerListingsPage doesn't even mount this
 // below that.
-export function MyBusinessListingsGrid({ listings }: { listings: MyBusinessListingCard[] }) {
+export function MyBusinessListingsGrid({ listings, locale }: { listings: MyBusinessListingCard[]; locale: DirectoryLocale }) {
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [pending, startTransition] = useTransition();
   const toast = useToast();
+  const t = PORTAL_LISTINGS_STRINGS[locale];
 
   function toggle(id: string) {
     setSelected((current) => {
@@ -55,11 +64,7 @@ export function MyBusinessListingsGrid({ listings }: { listings: MyBusinessListi
         toast.error(result.error);
         return;
       }
-      toast.success(
-        result.linkedCount > 0
-          ? `Linked ${ids.length} listings as branches of each other.`
-          : "Those listings are already linked as branches of each other.",
-      );
+      toast.success(result.linkedCount > 0 ? formatLinkedSuccess(ids.length, locale) : t.alreadyLinked);
       setSelected(new Set());
     });
   }
@@ -74,18 +79,18 @@ export function MyBusinessListingsGrid({ listings }: { listings: MyBusinessListi
           with the grid's own left edge instead of hiding behind the rail. */}
       {selected.size > 0 && (
         <div className="fixed inset-x-4 bottom-6 z-30 flex items-center justify-between gap-3 rounded-md border border-petrol/30 bg-led-soft px-4 py-2.5 text-sm shadow-lg dark:bg-led-soft-dark sm:inset-x-8 sm:left-[17rem]">
-          <span className="font-medium text-petrol-ink dark:text-petrol-light">{selected.size} selected</span>
+          <span className="font-medium text-petrol-ink dark:text-petrol-light">{formatSelectedCount(selected.size, locale)}</span>
           <div className="flex items-center gap-2">
             <button
               type="button"
               onClick={() => setSelected(new Set())}
               className="text-slate-500 hover:underline dark:text-slate-400"
             >
-              Clear
+              {t.clear}
             </button>
             <Button type="button" size="sm" disabled={selected.size < 2 || pending} onClick={handleLinkSelected}>
               <Link2 className="h-4 w-4" />
-              {pending ? "Linking…" : "Link as branches"}
+              {pending ? t.linking : t.linkAsBranches}
             </Button>
           </div>
         </div>
@@ -95,7 +100,7 @@ export function MyBusinessListingsGrid({ listings }: { listings: MyBusinessListi
         {listings.map((listing) => (
           <Card key={listing.id} className="relative">
             <label className="absolute right-4 top-4 flex h-5 w-5 cursor-pointer items-center justify-center">
-              <span className="sr-only">Select {listing.companyName}</span>
+              <span className="sr-only">{formatSelectListingAriaLabel(listing.companyName, locale)}</span>
               <input
                 type="checkbox"
                 checked={selected.has(listing.id)}
@@ -109,24 +114,24 @@ export function MyBusinessListingsGrid({ listings }: { listings: MyBusinessListi
                 <div className="min-w-0">
                   <p className="truncate font-medium text-slate-800 dark:text-slate-200">{listing.companyName}</p>
                   <Badge className={PARTNER_LISTING_STATUS_BADGE_CLASSES[listing.status]}>
-                    {PARTNER_LISTING_STATUS_LABELS[listing.status]}
+                    {PARTNER_LISTING_STATUS_LABELS_BY_LOCALE[locale][listing.status]}
                   </Badge>
                 </div>
               </div>
               <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
                 <Link href={`/business-portal/listings/${listing.id}`} className={buttonClasses("secondary", "sm")}>
-                  Edit
+                  {t.edit}
                 </Link>
                 <form action={deleteListingAction.bind(null, listing.id)}>
                   <ConfirmSubmitButton
                     confirmMessage={
                       listing.publicUrl
-                        ? `Delete "${listing.companyName}"? Its public page comes down immediately and this can't be undone.`
-                        : `Delete the draft "${listing.companyName}"? This can't be undone.`
+                        ? formatDeleteConfirmPublic(listing.companyName, locale)
+                        : formatDeleteConfirmDraft(listing.companyName, locale)
                     }
                   >
                     <Trash2 className="h-3.5 w-3.5" />
-                    Delete
+                    {t.deleteLabel}
                   </ConfirmSubmitButton>
                 </form>
                 {listing.publicUrl && (
@@ -136,7 +141,7 @@ export function MyBusinessListingsGrid({ listings }: { listings: MyBusinessListi
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 text-petrol hover:underline dark:text-petrol-light"
                   >
-                    View public listing
+                    {t.viewPublicListing}
                     <ExternalLink className="h-3.5 w-3.5" />
                   </Link>
                 )}
@@ -148,14 +153,14 @@ export function MyBusinessListingsGrid({ listings }: { listings: MyBusinessListi
                     className="inline-flex items-center gap-1 text-petrol hover:underline dark:text-petrol-light"
                   >
                     <Megaphone className="h-3.5 w-3.5" />
-                    News & Promotions
+                    {t.newsAndPromotionsLink}
                   </Link>
                 )}
                 {listing.publicUrl && (
                   <span className="inline-flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-slate-500 dark:text-slate-400">
                     <span className="inline-flex items-center gap-1">
                       <Eye className="h-3.5 w-3.5" />
-                      {listing.trackedViewCount.toLocaleString()} view{listing.trackedViewCount === 1 ? "" : "s"}
+                      {formatViewsLabel(listing.trackedViewCount, locale)}
                     </span>
                     <span className="text-xs text-slate-400 dark:text-slate-500">
                       (

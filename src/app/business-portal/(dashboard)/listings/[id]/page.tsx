@@ -14,14 +14,16 @@ import {
   videosFromJson,
 } from "@/lib/directory";
 import { getSiteOrigin } from "@/lib/site-url";
-import { directoryListingPath } from "@/lib/directory-i18n";
+import { directoryListingPath, PARTNER_LISTING_STATUS_LABELS_BY_LOCALE } from "@/lib/directory-i18n";
+import { getDirectoryLocale } from "@/lib/directory-locale";
+import { PORTAL_LISTINGS_STRINGS } from "@/lib/portal-listing-i18n";
 import { isAiConfigured } from "@/lib/ai/client";
 import { isGooglePlacesConfigured } from "@/lib/google-places";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { PartnerListingForm } from "@/components/directory/partner-listing-form";
-import { PARTNER_LISTING_STATUS_BADGE_CLASSES, PARTNER_LISTING_STATUS_LABELS } from "@/lib/labels";
+import { PARTNER_LISTING_STATUS_BADGE_CLASSES } from "@/lib/labels";
 
 export default async function PartnerListingEditorPage({ params }: { params: Promise<{ id: string }> }) {
   const user = await requireCompletePartnerProfile();
@@ -29,8 +31,9 @@ export default async function PartnerListingEditorPage({ params }: { params: Pro
   const listing = await getOwnedListing(id, user.id);
   if (!listing) notFound();
 
-  const [siteOrigin, categories, selectedCategories, photoRows, otherListings, branchIds] = await Promise.all([
+  const [siteOrigin, locale, categories, selectedCategories, photoRows, otherListings, branchIds] = await Promise.all([
     getSiteOrigin(),
+    getDirectoryLocale(),
     db.businessCategory.findMany({ orderBy: { name: "asc" } }),
     db.partnerListingCategory.findMany({ where: { listingId: listing.id }, select: { categoryId: true } }),
     listing.photoIds.length
@@ -51,23 +54,24 @@ export default async function PartnerListingEditorPage({ params }: { params: Pro
   const photos = listing.photoIds.filter((id) => photosById.has(id)).map((id) => ({ id, ...photosById.get(id)! }));
 
   const publicUrl = listing.publishedSnapshot ? `${siteOrigin}${directoryListingPath("en", listing.slug)}` : null;
+  const t = PORTAL_LISTINGS_STRINGS[locale];
 
   return (
     <div className="space-y-6">
       <PageHeader
-        breadcrumbs={[{ label: "My Business", href: "/business-portal/listings" }, { label: listing.companyName }]}
+        breadcrumbs={[{ label: t.myBusiness, href: "/business-portal/listings" }, { label: listing.companyName }]}
         title={listing.companyName}
-        description="What visitors see on the business directory, and the form they use to reach you."
+        description={t.editorDescription}
       />
 
       <Card>
         <CardBody className="flex flex-wrap items-center gap-3">
           <Badge className={PARTNER_LISTING_STATUS_BADGE_CLASSES[listing.status]}>
-            {PARTNER_LISTING_STATUS_LABELS[listing.status]}
+            {PARTNER_LISTING_STATUS_LABELS_BY_LOCALE[locale][listing.status]}
           </Badge>
           {listing.status === "REJECTED" && listing.reviewNote && (
             <p className="w-full text-sm text-slate-600 dark:text-slate-300">
-              <span className="font-medium text-slate-800 dark:text-slate-200">Admin feedback: </span>
+              <span className="font-medium text-slate-800 dark:text-slate-200">{t.adminFeedbackLabel}</span>
               {listing.reviewNote}
             </p>
           )}
@@ -78,13 +82,11 @@ export default async function PartnerListingEditorPage({ params }: { params: Pro
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-sm text-petrol hover:underline dark:text-petrol-light"
             >
-              View public listing
+              {t.viewPublicListing}
               <ExternalLink className="h-3.5 w-3.5" />
             </Link>
           ) : (
-            <p className="text-sm text-slate-500 dark:text-slate-400">
-              Not live yet — save your details below and submit for review.
-            </p>
+            <p className="text-sm text-slate-500 dark:text-slate-400">{t.notLiveYet}</p>
           )}
         </CardBody>
       </Card>
@@ -92,6 +94,7 @@ export default async function PartnerListingEditorPage({ params }: { params: Pro
       <Card>
         <CardBody>
           <PartnerListingForm
+            locale={locale}
             listingId={listing.id}
             status={listing.status}
             logoUrl={listing.logoUrl}

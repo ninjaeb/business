@@ -4,6 +4,8 @@ import { isUpdateCurrent, listPartnerListings, listingViewCountBreakdown, readPu
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { getSiteOrigin } from "@/lib/site-url";
 import { directoryListingNewsPath, directoryListingPath, directoryListingPromotionsPath } from "@/lib/directory-i18n";
+import { getDirectoryLocale } from "@/lib/directory-locale";
+import { PORTAL_LISTINGS_STRINGS } from "@/lib/portal-listing-i18n";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -18,19 +20,24 @@ import { MyBusinessListingsGrid, type MyBusinessListingCard } from "@/components
 // gets started with.
 export default async function PartnerListingsPage() {
   const user = await requireCompletePartnerProfile();
-  const [listings, siteOrigin] = await Promise.all([listPartnerListings(user.id), getSiteOrigin()]);
+  const [listings, siteOrigin, locale] = await Promise.all([
+    listPartnerListings(user.id),
+    getSiteOrigin(),
+    getDirectoryLocale(),
+  ]);
+  const t = PORTAL_LISTINGS_STRINGS[locale];
   const todayIso = new Date().toISOString().slice(0, 10);
 
   return (
     <div className="space-y-6">
       <PageHeader
-        title="My Business"
-        description="Every business you have on the partner directory."
+        title={t.myBusiness}
+        description={t.listingsPageDescription}
         actions={
           <form action={createListingAction}>
             <Button type="submit">
               <Plus className="h-4 w-4" />
-              New Business
+              {t.newBusiness}
             </Button>
           </form>
         }
@@ -39,15 +46,12 @@ export default async function PartnerListingsPage() {
       {listings.length === 0 ? (
         <Card>
           <CardBody>
-            <EmptyState
-              icon={Store}
-              title="No listings yet"
-              description="Create your first listing to get your business on the public directory."
-            />
+            <EmptyState icon={Store} title={t.emptyTitle} description={t.emptyDescription} />
           </CardBody>
         </Card>
       ) : (
         <MyBusinessListingsGrid
+          locale={locale}
           listings={listings.map((listing): MyBusinessListingCard => {
             const publicUrl = listing.publishedSnapshot ? `${siteOrigin}${directoryListingPath("en", listing.slug)}` : null;
             // Only a shortcut into a section actually on the live page —
