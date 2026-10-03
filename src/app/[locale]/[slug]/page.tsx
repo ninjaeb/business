@@ -128,6 +128,7 @@ export default async function DirectoryAboutPage({
                 viewLabel={t.viewListing}
                 industryLabel={related.industry ? INDUSTRY_LABELS_BY_LOCALE[resolved][related.industry] : undefined}
                 locale={resolved}
+                variant="compact"
               />
             ))}
           </div>
@@ -147,6 +148,7 @@ export default async function DirectoryAboutPage({
                 viewLabel={t.viewListing}
                 industryLabel={related.industry ? INDUSTRY_LABELS_BY_LOCALE[resolved][related.industry] : undefined}
                 locale={resolved}
+                variant="compact"
               />
             ))}
           </div>
