@@ -579,12 +579,16 @@ export default async function ListingLayout({
           {/* 96px below sm — a fixed 200px logo left too little width for
               the name column beside it on a phone screen, to the point a
               longer company name could clip instead of wrapping. Full
-              200px from sm up, where there's room for both. */}
+              200px from sm up, where there's room for both. rounded-none
+              overrides ListingLogo's own default rounded-full (tailwind-merge
+              resolves the conflict in this later class's favor), same as the
+              compact related-business card — at this size a circular crop
+              cuts off too much of a rectangular logo. */}
           <ListingLogo
             name={listing.companyName}
             logoUrl={listing.logoUrl ? listingLogoPath(slug, listing.publishedAt) : null}
             size={200}
-            className="h-24 w-24 text-2xl sm:h-[200px] sm:w-[200px] sm:text-4xl"
+            className="h-24 w-24 rounded-none text-2xl sm:h-[200px] sm:w-[200px] sm:text-4xl"
             zoomable
           />
           <div className="min-w-0 flex-1">
