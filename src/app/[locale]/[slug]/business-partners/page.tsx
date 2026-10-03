@@ -1,14 +1,13 @@
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import type { Metadata } from "next";
 import { getPublishedListingBySlug } from "@/lib/directory";
 import { getPublishedBusinessPartners } from "@/lib/business-partners";
 import { buildListingMetadata } from "@/lib/directory-seo";
 import { resolveDirectoryLocale } from "@/lib/directory-locale";
-import { DIRECTORY_STRINGS, directoryListingBusinessPartnersPath, directoryListingPath } from "@/lib/directory-i18n";
+import { DIRECTORY_STRINGS, INDUSTRY_LABELS_BY_LOCALE, directoryListingBusinessPartnersPath, directoryListingPath } from "@/lib/directory-i18n";
 import { getSiteOrigin } from "@/lib/site-url";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
-import { ListingLogo } from "@/components/directory/listing-logo";
+import { ListingCard } from "@/components/directory/listing-card";
 
 export const dynamic = "force-dynamic";
 
@@ -49,7 +48,7 @@ export default async function BusinessPartnersPage({ params }: { params: Promise
   const listing = await getPublishedListingBySlug(slug);
   if (!listing) notFound();
 
-  const partners = await getPublishedBusinessPartners(listing.id);
+  const partners = await getPublishedBusinessPartners(listing.id, resolved);
   if (partners.length === 0) notFound();
 
   const t = DIRECTORY_STRINGS[resolved];
@@ -61,19 +60,21 @@ export default async function BusinessPartnersPage({ params }: { params: Promise
       </CardHeader>
       <CardBody className="space-y-4">
         <p className="text-sm text-slate-500 dark:text-slate-400">{t.businessPartnersIntro}</p>
-        <div className="grid gap-3 sm:grid-cols-2">
+        {/* Same card as "Latest Businesses"/"Businesses near you" (see
+            [locale]/[slug]/page.tsx) rather than this tab's own thinner
+            logo+name+tagline row — one card treatment (cover photo/logo,
+            rating, location, tags, views) across every "other businesses"
+            list on a listing's page, not a second, less informative one
+            just for partners. */}
+        <div className="grid gap-4 sm:grid-cols-2">
           {partners.map((partner) => (
-            <Link
+            <ListingCard
               key={partner.slug}
-              href={directoryListingPath(resolved, partner.slug)}
-              className="flex items-center gap-3 rounded-lg border border-slate-200 p-3 transition-colors hover:border-petrol/40 dark:border-neutral-800 dark:hover:border-petrol-light/30"
-            >
-              <ListingLogo name={partner.companyName} logoUrl={partner.logoUrl} size={48} loading="lazy" className="h-12 w-12 shrink-0 text-base" />
-              <span className="min-w-0">
-                <span className="block truncate font-medium text-slate-900 dark:text-slate-100">{partner.companyName}</span>
-                {partner.tagline && <span className="block truncate text-sm text-slate-500 dark:text-slate-400">{partner.tagline}</span>}
-              </span>
-            </Link>
+              listing={partner}
+              viewLabel={t.viewListing}
+              industryLabel={partner.industry ? INDUSTRY_LABELS_BY_LOCALE[resolved][partner.industry] : undefined}
+              locale={resolved}
+            />
           ))}
         </div>
       </CardBody>
