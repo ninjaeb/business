@@ -1,5 +1,6 @@
 "use client";
 
+import { Fragment } from "react";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
@@ -8,6 +9,9 @@ import { cn } from "@/lib/utils";
 import { createListingAction } from "@/app/actions/directory";
 import { BUSINESS_NAV_ITEMS } from "@/lib/business-nav-items";
 import { directoryHomePath, type DirectoryLocale } from "@/lib/directory-i18n";
+
+const navHeadingClasses =
+  "border-t border-slate-100 px-3 pb-1 pt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:border-neutral-800 dark:text-slate-500";
 
 function isActive(pathname: string, href: string): boolean {
   return href === "/business-portal" ? pathname === "/business-portal" : pathname.startsWith(href);
@@ -84,19 +88,19 @@ export function PartnerNavMenu({
             </button>
           </form>
 
-          <div className="border-t border-slate-100 px-3 pb-1 pt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:border-neutral-800 dark:text-slate-500">
-            My Business
-          </div>
+          <div className={navHeadingClasses}>My Business</div>
           {BUSINESS_NAV_ITEMS.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              role="menuitem"
-              onClick={() => setOpen(false)}
-              className={cn(itemClasses, "pl-5", isActive(pathname, item.href) && "text-petrol dark:text-petrol-light")}
-            >
-              {item.label}
-            </Link>
+            <Fragment key={item.href}>
+              {"heading" in item && <div className={navHeadingClasses}>{item.heading}</div>}
+              <Link
+                href={item.href}
+                role="menuitem"
+                onClick={() => setOpen(false)}
+                className={cn(itemClasses, "pl-5", isActive(pathname, item.href) && "text-petrol dark:text-petrol-light")}
+              >
+                {item.label}
+              </Link>
+            </Fragment>
           ))}
 
           <form action={signOutAction}>

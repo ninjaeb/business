@@ -12,6 +12,7 @@ import { logout } from "@/app/actions/auth";
 import { getSessionPayload } from "@/lib/session";
 import { db } from "@/lib/db";
 import { getDirectoryLocale } from "@/lib/directory-locale";
+import { getMessageTemplate } from "@/lib/message-templates";
 import { DIRECTORY_SAME_AS } from "@/lib/directory-seo";
 import {
   DIRECTORY_LOCALES,
@@ -111,6 +112,10 @@ export async function DirectoryChrome({
     forceAnonymousNav ? Promise.resolve(null) : getDirectoryViewer(),
   ]);
   const t = DIRECTORY_STRINGS[locale];
+  // Customizable from /admin/messages (footer_whatsapp) — resolved here
+  // (a server component) rather than inside FloatingWhatsAppButton itself,
+  // which is a client component and can't read the DB directly.
+  const footerWhatsAppTemplate = await getMessageTemplate("footer_whatsapp", locale);
   // Points into the real /[locale]/business/... tree when the current page
   // already knows its locale; otherwise the old bare /directory/* URL,
   // which now just permanently redirects there anyway (see
@@ -384,7 +389,7 @@ export async function DirectoryChrome({
           </div>
         </div>
       </footer>
-      <FloatingWhatsAppButton locale={locale} />
+      <FloatingWhatsAppButton locale={locale} message={footerWhatsAppTemplate.body} />
     </div>
   );
 }

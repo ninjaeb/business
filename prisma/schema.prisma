@@ -221,6 +221,26 @@ model Settings {
   directoryApprovalMode DirectoryApprovalMode @default(EVERY_SUBMISSION)
 }
 
+// An admin's override of one of this app's built-in email/WhatsApp message
+// templates (see src/lib/message-templates.ts, which owns the canonical
+// list of keys, default text, and {token} placeholders — this table is
+// sparse by design: a key/locale pair with no row here just means "use the
+// built-in default", so every template keeps working exactly as before
+// until an admin actually customizes it from /admin/messages). `locale` is
+// always "en" for an English-only template (business-portal/email ones);
+// a public-facing WhatsApp template that already varies per directory
+// locale can hold up to three rows, one per DirectoryLocale.
+model MessageTemplate {
+  key       String
+  locale    String
+  // Null for a WhatsApp-only template (no subject line to override).
+  subject   String?
+  body      String   @db.Text
+  updatedAt DateTime @updatedAt
+
+  @@id([key, locale])
+}
+
 // Admin-configured outbound email (new-lead alerts to partners, partner
 // replies to leads) — set from /admin (see src/lib/email-settings.ts),
 // unlike this app's other integrations (Google Places, OpenRouter), which

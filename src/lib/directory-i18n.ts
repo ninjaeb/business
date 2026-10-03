@@ -173,19 +173,6 @@ export function directoryGuidePath(locale: DirectoryLocale, slug: string): strin
 
 export const DEFAULT_DIRECTORY_LOCALE: DirectoryLocale = "en";
 
-// Fills in DirectoryStrings.recommendMessage's {business}/{url} tokens —
-// see that field's own comment for why this is plain substitution rather
-// than a template literal built where the message is used.
-export function formatRecommendMessage(template: string, business: string, url: string): string {
-  return template.replace("{business}", business).replace("{url}", url);
-}
-
-// Fills in DirectoryStrings.contactWhatsAppMessage's {business} token — see
-// that field's own comment.
-export function formatContactWhatsAppMessage(template: string, business: string): string {
-  return template.replace("{business}", business);
-}
-
 // Fills in DirectoryStrings.footerCopyright's {year} token — see that
 // field's own comment.
 export function formatFooterCopyright(template: string, year: number): string {
@@ -516,8 +503,11 @@ export type DirectoryStrings = {
   // code>, see recommendUrl) and this same pre-written message for the
   // email/WhatsApp/native-share options (Copy link still copies that same
   // tracking link). {business} and {url} are replaced with the listing's
-  // name and the tracking link itself — plain string substitution, not a
-  // template literal, since this is localized data, not code.
+  // name and the tracking link itself. This is this template's own default
+  // text, not necessarily what actually gets sent — see
+  // MESSAGE_TEMPLATE_DEFINITIONS.recommend_message in
+  // src/lib/message-templates.ts, which reads this value as its default and
+  // lets an admin override it per locale from /admin/messages.
   recommendLabel: string;
   recommendMessage: string;
   // The header's plain Share button — ShareButton's own `label` prop
@@ -530,8 +520,9 @@ export type DirectoryStrings = {
   // listing has its own PartnerListing.phone set (see that field's own
   // comment for why it's separate from the account-level User.phone that's
   // deliberately never shown). contactWhatsAppMessage's {business} token is
-  // filled in with the listing's own name via formatContactWhatsAppMessage
-  // below, same plain-substitution convention as recommendMessage.
+  // filled in with the listing's own name — this is this template's own
+  // default text, admin-overridable, same reasoning as recommendMessage's
+  // own comment above.
   contactCallCta: string;
   contactWhatsAppCta: string;
   contactWhatsAppMessage: string;

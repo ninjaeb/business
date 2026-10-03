@@ -15,6 +15,7 @@ import {
   slugify,
 } from "@/lib/directory";
 import { serializeJsonLd } from "@/lib/directory-seo";
+import { fillMessageTemplate, getMessageTemplate } from "@/lib/message-templates";
 import { stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
 import { resolveDirectoryLocale } from "@/lib/directory-locale";
 import { getVerifiedPartnerOrNull, getVerifiedTestimonialAuthorOrNull } from "@/lib/auth/dal";
@@ -39,8 +40,6 @@ import {
   directoryListingTestimonialsPath,
   directoryListingVideosPath,
   directoryListingVisitPath,
-  formatContactWhatsAppMessage,
-  formatRecommendMessage,
   formatViewsLabel,
 } from "@/lib/directory-i18n";
 import { whatsAppUrl } from "@/lib/format";
@@ -448,7 +447,16 @@ export default async function ListingLayout({
   // harmless case of this same path. Anonymous/admin visitors get the
   // plain, untagged link exactly as before.
   const recommendUrl = viewer ? `${pageUrl}?r=${referralCode}&via=${viewer.id}` : `${pageUrl}?r=${referralCode}`;
-  const recommendMessage = formatRecommendMessage(t.recommendMessage, listing.companyName, recommendUrl);
+  // Customizable from /admin/messages (recommend_message) — falls back to
+  // DIRECTORY_STRINGS.recommendMessage's own per-locale default text when
+  // no admin override exists (see getMessageTemplate's own comment).
+  const recommendTemplate = await getMessageTemplate("recommend_message", resolved);
+  const recommendMessage = fillMessageTemplate(recommendTemplate.body, { "{business}": listing.companyName, "{url}": recommendUrl });
+
+  // Customizable from /admin/messages (contact_whatsapp) — same fallback
+  // convention as recommendMessage above.
+  const contactWhatsAppTemplate = await getMessageTemplate("contact_whatsapp", resolved);
+  const contactWhatsAppMessage = fillMessageTemplate(contactWhatsAppTemplate.body, { "{business}": listing.companyName });
 
   // Home > (first category, if any) > this business. Only the first
   // category, not every one a listing has — a breadcrumb trail is meant to
@@ -831,10 +839,7 @@ export default async function ListingLayout({
                     )}
                     {listing.whatsAppNumber && (
                       <ExternalLink
-                        href={whatsAppUrl(
-                          listing.whatsAppNumber,
-                          formatContactWhatsAppMessage(t.contactWhatsAppMessage, listing.companyName),
-                        )}
+                        href={whatsAppUrl(listing.whatsAppNumber, contactWhatsAppMessage)}
                         className={buttonClasses("secondary", "md", "min-h-12 flex-1 justify-center gap-2")}
                       >
                         <MessageCircle className="h-4 w-4" />
