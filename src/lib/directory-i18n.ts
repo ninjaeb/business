@@ -469,6 +469,12 @@ export type DirectoryStrings = {
   // Testimonials above which always has a reachable page.
   businessPartnersHeading: string;
   businessPartnersIntro: string;
+  // The Products & Services page's own extra section — every service from
+  // this listing's ACCEPTED business partners (see getBusinessPartnerServices),
+  // right below this listing's own services, only shown when at least one
+  // partner has published at least one service.
+  partnerServicesHeading: string;
+  partnerServicesDescription: string;
   visitHeading: string;
   // Other locations of the same business, linked from the partner side —
   // only shown on the Visit us page when at least one exists.
@@ -863,6 +869,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialsHeading: "Testimonials",
     businessPartnersHeading: "Business Partners",
     businessPartnersIntro: "Other businesses this company works with.",
+    partnerServicesHeading: "From our partners",
+    partnerServicesDescription: "More products and services from the businesses this company works with.",
     visitHeading: "Visit us",
     branchesHeading: "Other locations",
     hoursHeading: "Hours",
@@ -1158,6 +1166,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialsHeading: "客户评价",
     businessPartnersHeading: "商业伙伴",
     businessPartnersIntro: "与该企业合作的其他商家。",
+    partnerServicesHeading: "来自合作伙伴",
+    partnerServicesDescription: "该企业合作伙伴提供的更多产品与服务。",
     visitHeading: "联系地址",
     branchesHeading: "其他分店",
     hoursHeading: "营业时间",
@@ -1449,6 +1459,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialsHeading: "Testimoni",
     businessPartnersHeading: "Rakan Perniagaan",
     businessPartnersIntro: "Perniagaan lain yang bekerjasama dengan syarikat ini.",
+    partnerServicesHeading: "Daripada rakan perniagaan kami",
+    partnerServicesDescription: "Lebih banyak produk dan perkhidmatan daripada perniagaan yang bekerjasama dengan syarikat ini.",
     visitHeading: "Lawati kami",
     branchesHeading: "Lokasi lain",
     hoursHeading: "Waktu Operasi",

@@ -14,7 +14,7 @@ import {
   resolveListingDisplay,
   slugify,
 } from "@/lib/directory";
-import { getPublishedBusinessPartners } from "@/lib/business-partners";
+import { getBusinessPartnerServices, getPublishedBusinessPartners } from "@/lib/business-partners";
 import { serializeJsonLd } from "@/lib/directory-seo";
 import { fillMessageTemplate, getMessageTemplate } from "@/lib/message-templates";
 import { stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
@@ -377,6 +377,7 @@ export default async function ListingLayout({
     viewer,
     branches,
     businessPartners,
+    partnerServices,
     testimonialVisitor,
     testimonialRating,
     testimonialReviewsForJsonLd,
@@ -406,6 +407,12 @@ export default async function ListingLayout({
     // section page re-queries the same request-scoped listing" pattern as
     // branches above).
     getPublishedBusinessPartners(listing.id, resolved),
+    // Only to decide whether the Products & Services tab/jump-bar link
+    // below should show even when this listing has no services of its own
+    // but a connected partner does (see the Products & Services page's own
+    // comment on why that section is never folded into ServiceList) — the
+    // page itself re-fetches this same list.
+    getBusinessPartnerServices(listing.id, resolved),
     // Who's viewing, if anyone signed in as either account type a
     // testimonial can be written from (VISITOR or PARTNER) — feeds the two
     // WriteTestimonialButtons below (see its own comment on why there are
@@ -504,7 +511,10 @@ export default async function ListingLayout({
       href: directoryListingVisitPath(resolved, slug),
       label: t.visitHeading,
     },
-    display.services.length > 0 && { href: directoryListingServicesPath(resolved, slug), label: t.servicesHeading },
+    (display.services.length > 0 || partnerServices.length > 0) && {
+      href: directoryListingServicesPath(resolved, slug),
+      label: t.servicesHeading,
+    },
     // Right after Products & Services (not second-to-last) — a shopper
     // deciding what to buy is exactly who wants "any questions about
     // this?" right next to it.
@@ -900,7 +910,7 @@ export default async function ListingLayout({
             into two oversized buttons on a wide desktop screen now that this
             bar shows at every width. */}
         <div className="mx-auto flex max-w-sm gap-2">
-          {display.services.length > 0 && (
+          {(display.services.length > 0 || partnerServices.length > 0) && (
             <Link
               href={directoryListingServicesPath(resolved, slug)}
               className={buttonClasses("secondary", "md", "min-h-12 flex-1 justify-center")}

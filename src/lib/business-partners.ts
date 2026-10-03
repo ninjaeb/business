@@ -1,5 +1,12 @@
 import { db } from "@/lib/db";
-import { listingLogoPath, readPublishedSnapshot, toDirectoryGridListing, type DirectoryGridListing } from "@/lib/directory";
+import {
+  listingLogoPath,
+  readPublishedSnapshot,
+  toDirectoryGridListing,
+  type DirectoryGridListing,
+  type LatestProductEntry,
+  type PublishedListingRow,
+} from "@/lib/directory";
 import type { DirectoryLocale } from "@/lib/directory-i18n";
 import type { Industry } from "@/generated/prisma/client";
 
@@ -97,17 +104,13 @@ export async function searchBusinessPartnerCandidates(
   return results;
 }
 
-// For the public Business Partners tab — every connection that's ACCEPTED
-// on either side of this listing, resolved to whichever is the *other*
-// listing, and still actually live (same "read every row, keep whichever
-// has a snapshot" treatment as getPublishedBranchListings — a partner since
-// unpublished or deleted simply drops out here rather than needing the
-// link cleaned up separately). Shaped as DirectoryGridListing, same as
-// latestListings/nearbyListingsExcludingIndustry, so the tab page can
-// render these through the exact same ListingCard the "Latest Businesses"/
-// "Businesses near you" sections use — one card treatment (rating, cover
-// photo, tags, views) instead of a second, thinner one just for partners.
-export async function getPublishedBusinessPartners(listingId: string, locale: DirectoryLocale): Promise<DirectoryGridListing[]> {
+// Shared by getPublishedBusinessPartners and getBusinessPartnerServices
+// below — every connection that's ACCEPTED on either side of this listing,
+// resolved to whichever is the *other* listing, and still actually live
+// (same "read every row, keep whichever has a snapshot" treatment as
+// getPublishedBranchListings — a partner since unpublished or deleted
+// simply drops out here rather than needing the link cleaned up separately).
+async function getAcceptedPartnerSnapshotRows(listingId: string): Promise<PublishedListingRow[]> {
   const links = await db.businessPartnerLink.findMany({
     where: {
       status: "ACCEPTED",
@@ -123,10 +126,46 @@ export async function getPublishedBusinessPartners(listingId: string, locale: Di
   });
   return rows.flatMap((row) => {
     const listing = readPublishedSnapshot(row.publishedSnapshot);
-    return listing
-      ? [toDirectoryGridListing({ slug: row.slug, publishedAt: row.publishedAt, updatedAt: row.updatedAt, viewCount: row.viewCount, listing }, locale)]
-      : [];
+    return listing ? [{ slug: row.slug, publishedAt: row.publishedAt, updatedAt: row.updatedAt, viewCount: row.viewCount, listing }] : [];
   });
+}
+
+// For the public Business Partners tab — shaped as DirectoryGridListing,
+// same as latestListings/nearbyListingsExcludingIndustry, so the tab page
+// can render these through the exact same ListingCard the "Latest
+// Businesses"/"Businesses near you" sections use — one card treatment
+// (rating, cover photo, tags, views) instead of a second, thinner one just
+// for partners.
+export async function getPublishedBusinessPartners(listingId: string, locale: DirectoryLocale): Promise<DirectoryGridListing[]> {
+  const rows = await getAcceptedPartnerSnapshotRows(listingId);
+  return rows.map((row) => toDirectoryGridListing(row, locale));
+}
+
+// For the "From our partners" section on the Products & Services page —
+// one entry per service across every connected partner's own listing, same
+// LatestProductEntry shape (and same locale-resolution logic) as
+// loadLatestProducts's directory-wide feed, just scoped to this listing's
+// own accepted partners instead of every published listing. Deliberately
+// not folded into ServiceList: that component's rows toggle into *this*
+// listing's own inquiry (see useInquiry), which would be wrong for a
+// service that actually belongs to a different business.
+export async function getBusinessPartnerServices(listingId: string, locale: DirectoryLocale): Promise<LatestProductEntry[]> {
+  const rows = await getAcceptedPartnerSnapshotRows(listingId);
+  const entries: LatestProductEntry[] = [];
+  for (const { slug, publishedAt, listing } of rows) {
+    const translation = locale === "en" ? undefined : listing.translations[locale];
+    const services = translation?.services.length ? translation.services : listing.services;
+    for (const service of services) {
+      entries.push({
+        listingSlug: slug,
+        companyName: listing.companyName,
+        logoUrl: listing.logoUrl ? listingLogoPath(slug, publishedAt) : null,
+        service,
+        publishedAt,
+      });
+    }
+  }
+  return entries;
 }
 
 // The business-portal's own list of businesses a partner has invited by
