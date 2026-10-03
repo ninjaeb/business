@@ -4,6 +4,7 @@ import { AlertTriangle, Handshake, ThumbsUp } from "lucide-react";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { db } from "@/lib/db";
 import { DEFAULT_PARTNER_CURRENCY, formatDate, formatDateTime, formatDuration } from "@/lib/format";
+import { fillMessageTemplate, getMessageTemplate } from "@/lib/message-templates";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -29,7 +30,13 @@ export default async function PartnerDirectoryLeadPage({ params }: { params: Pro
   // Pre-fills the chat, quoting their own inquiry back to them for context
   // — still just a draft in WhatsApp's own composer until the partner
   // edits and sends it themselves, never sent automatically from here.
-  const whatsAppMessage = `Hi ${lead.name}, thanks for reaching out to ${lead.listing.companyName}! Regarding your inquiry: "${lead.message}"`;
+  // Customizable from /admin/messages (lead_reply_whatsapp_draft).
+  const whatsAppTemplate = await getMessageTemplate("lead_reply_whatsapp_draft");
+  const whatsAppMessage = fillMessageTemplate(whatsAppTemplate.body, {
+    "{name}": lead.name,
+    "{listing}": lead.listing.companyName,
+    "{message}": lead.message,
+  });
 
   return (
     <div className="space-y-6">

@@ -47,7 +47,16 @@ const STATIC_TOP_LEVEL_SEGMENTS = new Set([
 // "Message us" counterpart: that button on gotka.com opens a live-chat
 // widget this app has no backend for, so adding a lookalike button that
 // goes nowhere would be worse than not having it.
-export function FloatingWhatsAppButton({ locale }: { locale: DirectoryLocale }) {
+export function FloatingWhatsAppButton({
+  locale,
+  message,
+}: {
+  locale: DirectoryLocale;
+  // Resolved server-side by DirectoryChrome (see getMessageTemplate) — this
+  // component is a client component and can't read the DB-backed override
+  // itself, so its caller always resolves and passes the final text down.
+  message: string;
+}) {
   const pathname = usePathname();
   const segments = pathname.split("/").filter(Boolean);
   // segments[0] is the locale itself (en/zh/ms) for every directory page;
@@ -60,7 +69,7 @@ export function FloatingWhatsAppButton({ locale }: { locale: DirectoryLocale }) 
   const t = DIRECTORY_STRINGS[locale];
   return (
     <ExternalLink
-      href={whatsAppUrl(DIRECTORY_PUBLISHER.telephone, t.footerWhatsAppMessage)}
+      href={whatsAppUrl(DIRECTORY_PUBLISHER.telephone, message)}
       className="fixed right-6 bottom-6 z-40 flex items-center gap-2 rounded-full bg-led px-5 py-3 font-semibold text-led-ink shadow-lg transition-colors hover:bg-led-hover active:bg-led-active"
     >
       <MessageCircle className="h-5 w-5" />

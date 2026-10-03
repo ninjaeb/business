@@ -124,6 +124,9 @@ export default async function AdminDirectoryPage() {
             <Link href="/admin/guides" className="text-sm font-medium text-indigo-600 hover:underline dark:text-indigo-400">
               Manage guides
             </Link>
+            <Link href="/admin/messages" className="text-sm font-medium text-indigo-600 hover:underline dark:text-indigo-400">
+              Message templates
+            </Link>
             <Link href={directoryHomePath(DEFAULT_DIRECTORY_LOCALE)} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-indigo-600 hover:underline dark:text-indigo-400">
               View public directory
             </Link>

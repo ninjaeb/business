@@ -7,13 +7,18 @@
 // DirectoryLead.referrerId), never a commission/payout ledger, so it's
 // surfaced as a section of the Dashboard below rather than a nav group of
 // its own.
+// `heading` marks the item that starts a new labeled group in the nav's own
+// rendering (see PartnerSidebar/PartnerNavMenu) — e.g. "Business Leads"
+// starting the "My CRM" group below the listing-management items that open
+// the list under the existing "My Business" heading. Every other item
+// continues whichever group the last heading started.
 export const BUSINESS_NAV_ITEMS = [
   { href: "/business-portal", label: "Dashboard" },
   { href: "/business-portal/listings", label: "My Business" },
   { href: "/business-portal/testimonials", label: "Testimonials" },
   { href: "/business-portal/testimonial-links", label: "Review Links" },
   { href: "/business-portal/business-partners", label: "Business Partners" },
-  { href: "/business-portal/business-leads", label: "Business Leads" },
+  { href: "/business-portal/business-leads", label: "Business Leads", heading: "My CRM" },
   { href: "/business-portal/companies", label: "Companies" },
   { href: "/business-portal/contacts", label: "Contacts" },
   { href: "/business-portal/deals", label: "Deals" },

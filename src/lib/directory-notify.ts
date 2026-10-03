@@ -3,6 +3,7 @@ import { isMailerConfigured, sendMail } from "@/lib/mailer";
 import { isWhatsAppConfigured, sendWhatsAppTemplateMessage } from "@/lib/whatsapp";
 import { textToHtml } from "@/lib/text-to-html";
 import { getSiteOrigin } from "@/lib/site-url";
+import { fillMessageTemplate, getMessageTemplate } from "@/lib/message-templates";
 import type { BusinessPartnerInvite, DirectoryLead, DirectoryTestimonial, PartnerListing } from "@/generated/prisma/client";
 
 // A rewrite of the source CRM's src/lib/directory-notify.ts for this
@@ -35,13 +36,19 @@ export async function notifyPartnerOfNewLead(listing: PartnerListing, lead: Dire
   const link = `${await getSiteOrigin()}${path}`;
 
   if (await isMailerConfigured()) {
-    const text =
-      `${lead.name}${lead.company ? ` (${lead.company})` : ""} sent an inquiry through your ` +
-      `${listing.companyName} listing:\n\n"${lead.message}"\n\nReply from your business portal: ${link}`;
+    const template = await getMessageTemplate("lead_notification_email");
+    const tokens = {
+      "{name}": lead.name,
+      "{listing}": listing.companyName,
+      "{message}": lead.message,
+      "{link}": link,
+      "{company_note}": lead.company ? ` (${lead.company})` : "",
+    };
+    const text = fillMessageTemplate(template.body, tokens);
     try {
       await sendMail({
         to: partner.email,
-        subject: `New inquiry: ${lead.name}${lead.company ? ` — ${lead.company}` : ""}`,
+        subject: fillMessageTemplate(template.subject ?? "New inquiry: {name}", tokens),
         text,
         html: textToHtml(text),
       });
@@ -84,14 +91,19 @@ export async function notifyPartnerOfNewTestimonial(listing: PartnerListing, tes
   if (!partner) return;
 
   const link = `${await getSiteOrigin()}/business-portal/testimonials`;
-  const text =
-    `${testimonial.authorName} left a testimonial on your ${listing.companyName} listing` +
-    `${testimonial.rating ? ` (${testimonial.rating}/5)` : ""}:\n\n"${testimonial.body}"\n\n` +
-    `It's waiting on your approval before it shows publicly. Review it from your business portal: ${link}`;
+  const template = await getMessageTemplate("testimonial_notification_email");
+  const tokens = {
+    "{name}": testimonial.authorName,
+    "{listing}": listing.companyName,
+    "{body}": testimonial.body,
+    "{link}": link,
+    "{rating_note}": testimonial.rating ? ` (${testimonial.rating}/5)` : "",
+  };
+  const text = fillMessageTemplate(template.body, tokens);
   try {
     await sendMail({
       to: partner.email,
-      subject: `New testimonial: ${testimonial.authorName}`,
+      subject: fillMessageTemplate(template.subject ?? "New testimonial: {name}", tokens),
       text,
       html: textToHtml(text),
     });
@@ -120,13 +132,17 @@ export async function notifyPartnerOfBusinessPartnerRequest(
   if (!partner) return;
 
   const link = `${await getSiteOrigin()}/business-portal/business-partners`;
-  const text =
-    `${requesterListing.companyName} would like to connect with your ${recipientListing.companyName} listing as a Business Partner.\n\n` +
-    `It's waiting on your approval before it shows publicly on either listing. Review it from your business portal: ${link}`;
+  const template = await getMessageTemplate("business_partner_request_email");
+  const tokens = {
+    "{requester}": requesterListing.companyName,
+    "{recipient}": recipientListing.companyName,
+    "{link}": link,
+  };
+  const text = fillMessageTemplate(template.body, tokens);
   try {
     await sendMail({
       to: partner.email,
-      subject: `Business Partner request: ${requesterListing.companyName}`,
+      subject: fillMessageTemplate(template.subject ?? "Business Partner request: {requester}", tokens),
       text,
       html: textToHtml(text),
     });
@@ -169,14 +185,13 @@ export async function sendBusinessPartnerInvite(
   let whatsappSent = false;
 
   if (await isMailerConfigured()) {
-    const text =
-      `${inviterListing.companyName} has invited ${invite.companyName} to connect as a Business Partner on the Gotka Business Directory.\n\n` +
-      `Business Partners are shown on each other's public listing page, helping customers discover businesses you work with.\n\n` +
-      `List your business to get started: ${link}`;
+    const template = await getMessageTemplate("business_partner_invite_email");
+    const tokens = { "{inviter}": inviterListing.companyName, "{company}": invite.companyName, "{link}": link };
+    const text = fillMessageTemplate(template.body, tokens);
     try {
       await sendMail({
         to: invite.email,
-        subject: `${inviterListing.companyName} invited you to connect as a Business Partner`,
+        subject: fillMessageTemplate(template.subject ?? "{inviter} invited you to connect as a Business Partner", tokens),
         text,
         html: textToHtml(text),
         fromName: inviterListing.companyName,
@@ -224,11 +239,14 @@ export async function sendDirectoryLeadReply(
     };
   }
 
-  const text = `${body}\n\n—\n${listing.companyName}\n(sent via the Gotka business directory)`;
+  const template = await getMessageTemplate("lead_reply_email");
+  const tokens = { "{listing}": listing.companyName };
+  const signature = fillMessageTemplate(template.body, tokens);
+  const text = `${body}\n\n${signature}`;
   try {
     await sendMail({
       to: lead.email,
-      subject: `Re: your inquiry to ${listing.companyName}`,
+      subject: fillMessageTemplate(template.subject ?? "Re: your inquiry to {listing}", tokens),
       text,
       html: textToHtml(text),
       fromName: listing.companyName,
