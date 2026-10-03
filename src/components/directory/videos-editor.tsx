@@ -21,7 +21,9 @@ const CATEGORY_OPTIONS = Object.entries(VIDEO_CATEGORY_LABELS) as [VideoCategory
 // — best-effort, silently does nothing for a host it can't reach) so the
 // gallery has something to show without the partner hunting one down
 // themselves. Only fills the title if the partner hasn't typed one; never
-// overwrites it.
+// overwrites it. A "Fetch thumbnail" button takes over once a URL has one
+// but no thumbnail yet, so a failed best-effort lookup (a timeout, a
+// provider rate-limiting us) isn't a dead end — see runFetch.
 export function VideosEditor({
   name,
   value,
@@ -57,11 +59,9 @@ export function VideosEditor({
     onChange(videos.length > 1 ? videos.filter((_, i) => i !== index) : [EMPTY_VIDEO]);
   }
 
-  function handleUrlBlur(index: number, url: string) {
+  function runFetch(index: number, url: string) {
     const trimmed = url.trim();
-    // Only once per URL — re-running on every blur would re-fetch (and
-    // could re-overwrite a title the partner has since edited) for no gain.
-    if (!trimmed || videos[index]?.thumbnailUrl) return;
+    if (!trimmed) return;
     setFetchingIndex(index);
     startTransition(async () => {
       const details = await fetchVideoDetails(trimmed);
@@ -75,6 +75,18 @@ export function VideosEditor({
         ),
       );
     });
+  }
+
+  function handleUrlBlur(index: number, url: string) {
+    // Only once per URL automatically — re-running on every blur would
+    // re-fetch (and could re-overwrite a title the partner has since
+    // edited) for no gain. A fetch that comes back empty (oEmbed timed
+    // out, the provider rate-limited us, …) leaves thumbnailUrl null with
+    // no further automatic retries — the "Fetch thumbnail" button below
+    // gives the partner a way to try again instead of being stuck with a
+    // blank thumbnail forever.
+    if (videos[index]?.thumbnailUrl) return;
+    runFetch(index, url);
   }
 
   return (
@@ -112,9 +124,20 @@ export function VideosEditor({
                   ))}
                 </Select>
               </div>
-              {video.thumbnailUrl && (
+              {video.thumbnailUrl ? (
                 // eslint-disable-next-line @next/next/no-img-element -- a data: URL (see VideoEntry's own comment) that next/image's remote loader can't optimize anyway
                 <img src={video.thumbnailUrl} alt="" className="h-16 w-28 rounded object-cover" />
+              ) : (
+                video.url.trim() &&
+                fetchingIndex !== index && (
+                  <button
+                    type="button"
+                    onClick={() => runFetch(index, video.url)}
+                    className={buttonClasses("ghost", "sm")}
+                  >
+                    Fetch thumbnail
+                  </button>
+                )
               )}
             </div>
             <button
