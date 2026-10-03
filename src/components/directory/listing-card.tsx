@@ -140,19 +140,21 @@ export function ListingCard({
               the surrounding copy. Tailwind's preflight leaves headings
               unstyled, so sizing/weight are set explicitly. */}
           {variant === "compact" ? (
-            // Grid, not flex: an "auto" grid column stretched to the row's
-            // height correctly derives the logo's width from aspect-square
-            // for BOTH the <img> and ListingLogo's no-logo fallback (a plain
-            // <div>) — flexbox's own flex-basis:auto sizing only does this
-            // for replaced elements like <img>, so the same classes on a
-            // flex row left the fallback avatar's width stuck at its
-            // "S"-sized content box instead of matching its height (verified
-            // empirically, not just by spec reading). Either way this is an
-            // exact match to the name+rating+location column beside it at
-            // any viewport and with however many of those three lines a
-            // given listing actually has, not a guessed breakpoint pair of
-            // fixed sizes.
-            <div className="grid grid-cols-[auto_1fr] items-stretch gap-3">
+            // Fixed 90x90, not an "auto" grid column stretched to the row's
+            // height (the previous approach here) — that relied on
+            // aspect-square plus h-auto/w-auto to derive the logo's own
+            // width, which works for ListingLogo's no-logo fallback (a
+            // plain <div> with no intrinsic size of its own) but not for an
+            // <img> with a real logoUrl: a replaced element's "auto" sizing
+            // prefers its own intrinsic size, so a partner's uploaded logo
+            // (resized server-side to at most LOGO_MAX_DIMENSION=512px, see
+            // image-optimize.ts, nowhere near the 90px this card wants)
+            // rendered at whatever width the grid track happened to resolve
+            // to — up to 300px+ in practice, dwarfing the name/rating/
+            // location text beside it. A fixed box sidesteps that: every
+            // compact card's logo is the same size regardless of whether it
+            // has a real logo or falls back to the initial-letter avatar.
+            <div className="grid grid-cols-[90px_1fr] items-start gap-3">
               {/* rounded-none overrides ListingLogo's own default
                   rounded-full, and ring-0 drops its default border ring
                   (tailwind-merge resolves both conflicts in this later
@@ -164,7 +166,7 @@ export function ListingCard({
                 logoUrl={listing.logoUrl}
                 size={90}
                 loading="lazy"
-                className="aspect-square h-auto w-auto rounded-none text-2xl ring-0"
+                className="h-[90px] w-[90px] shrink-0 rounded-none text-2xl ring-0"
               />
               <div className="min-w-0 space-y-0.5">
                 <h3 className="truncate text-base font-bold tracking-tight text-slate-900 dark:text-slate-100">
