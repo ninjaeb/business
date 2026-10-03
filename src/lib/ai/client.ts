@@ -115,9 +115,12 @@ const REQUEST_TIMEOUT_MS = 20_000;
 // independent of reasoning (see callAi's own reasoning: {effort: "none"}
 // comment) — nothing stops a model from generating a long, rambling
 // response before finally emitting valid JSON. 4000 tokens comfortably
-// covers every schema in this file except autoCreateListingDetails's
-// (tagline+description+up to 12 services+6 FAQs+SEO fields at once), which
-// passes its own larger override via callAi's maxTokens option.
+// covers most callers, but not the two whose schema can carry a whole
+// listing's worth of content at once — autoCreateListingDetails
+// (tagline+description+up to 12 services+6 FAQs+SEO fields at once) and
+// translateListingContent (tagline+description+up to 20 services+20
+// FAQs+20 News/Promotions posts, translated in full) — both pass their own
+// larger override via callAi's maxTokens option.
 const DEFAULT_MAX_TOKENS = 4000;
 
 export function getOpenRouterClient() {
