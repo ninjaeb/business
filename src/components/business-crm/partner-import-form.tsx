@@ -14,6 +14,18 @@ import { Card, CardBody } from "@/components/ui/card";
 import { Label } from "@/components/ui/field";
 import { cn } from "@/lib/utils";
 import { phoneMatchKey } from "@/lib/phone";
+import type { DirectoryLocale } from "@/lib/directory-i18n";
+import {
+  PORTAL_CONTACTS_STRINGS,
+  formatImportConfirmCta,
+  formatImportPreviewSuffix,
+  formatImportPreviewSummary,
+  formatImportSummaryCompanyCreated,
+  formatImportSummaryCreated,
+  formatImportSummarySkippedDuplicate,
+  formatImportSummarySkippedInvalid,
+  formatImportSummaryUpdated,
+} from "@/lib/portal-contacts-i18n";
 
 // Business portal counterpart to the source CRM's system-wide ImportForm
 // (src/components/contacts/import-form.tsx, which has no counterpart in
@@ -24,7 +36,8 @@ type Phase =
   | { name: "preview"; preview: ImportPreview }
   | { name: "done"; result: ImportResult };
 
-export function PartnerImportForm() {
+export function PartnerImportForm({ locale }: { locale: DirectoryLocale }) {
+  const t = PORTAL_CONTACTS_STRINGS[locale];
   const [phase, setPhase] = useState<Phase>({ name: "upload" });
   const [error, setError] = useState<string | null>(null);
   const [fillMissingInfo, setFillMissingInfo] = useState(true);
@@ -72,26 +85,22 @@ export function PartnerImportForm() {
           <CheckCircle2 className="mx-auto h-10 w-10 text-emerald-500" />
           <div>
             <p className="text-lg font-semibold text-slate-900 dark:text-slate-100">
-              Import complete
+              {t.importDoneTitle}
             </p>
             <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
-              {result.created} contact{result.created === 1 ? "" : "s"} created
-              {result.updated > 0 &&
-                `, ${result.updated} existing contact${result.updated === 1 ? "" : "s"} updated with missing info`}
-              {result.companiesCreated > 0 &&
-                `, ${result.companiesCreated} new compan${result.companiesCreated === 1 ? "y" : "ies"}`}
-              {result.skippedDuplicates > 0 &&
-                `, ${result.skippedDuplicates} duplicate${result.skippedDuplicates === 1 ? "" : "s"} skipped`}
-              {result.skippedInvalid > 0 &&
-                `, ${result.skippedInvalid} row${result.skippedInvalid === 1 ? "" : "s"} skipped (missing name, or no email/phone)`}
-              .
+              {formatImportSummaryCreated(result.created, locale)}
+              {result.updated > 0 && formatImportSummaryUpdated(result.updated, locale)}
+              {result.companiesCreated > 0 && formatImportSummaryCompanyCreated(result.companiesCreated, locale)}
+              {result.skippedDuplicates > 0 && formatImportSummarySkippedDuplicate(result.skippedDuplicates, locale)}
+              {result.skippedInvalid > 0 && formatImportSummarySkippedInvalid(result.skippedInvalid, locale)}
+              {t.importSummaryPeriod}
             </p>
           </div>
           <div className="flex justify-center gap-2">
             <Link href="/business-portal/contacts" className="inline-flex">
-              <Button variant="secondary">View contacts</Button>
+              <Button variant="secondary">{t.viewContactsCta}</Button>
             </Link>
-            <Button onClick={startOver}>Import another file</Button>
+            <Button onClick={startOver}>{t.importAnotherFileCta}</Button>
           </div>
         </CardBody>
       </Card>
@@ -109,15 +118,14 @@ export function PartnerImportForm() {
                 {preview.fileName}
               </p>
               <p className="mt-0.5 text-sm text-slate-500 dark:text-slate-400">
-                {preview.importableRows} of {preview.totalRows} contacts will be
-                imported
+                {formatImportPreviewSummary(preview.importableRows, preview.totalRows, locale)}
                 {preview.skippedRows > 0 &&
-                  ` — ${preview.skippedRows} skipped (missing name, or no email/phone)`}
+                  formatImportPreviewSuffix("importPreviewSkippedSuffix", preview.skippedRows, locale)}
                 {preview.duplicateEmails.length > 0 &&
-                  `, ${preview.duplicateEmails.length} match an existing contact by email`}
+                  formatImportPreviewSuffix("importPreviewDuplicateEmailSuffix", preview.duplicateEmails.length, locale)}
                 {preview.duplicatePhones.length > 0 &&
-                  `, ${preview.duplicatePhones.length} match an existing contact by phone`}
-                .
+                  formatImportPreviewSuffix("importPreviewDuplicatePhoneSuffix", preview.duplicatePhones.length, locale)}
+                {t.importSummaryPeriod}
               </p>
             </div>
             <label className="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
@@ -127,7 +135,7 @@ export function PartnerImportForm() {
                 onChange={(event) => setFillMissingInfo(event.target.checked)}
                 className="h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
               />
-              Fill in missing info on existing contacts (matched by email or phone)
+              {t.importFillMissingLabel}
             </label>
           </CardBody>
         </Card>
@@ -143,11 +151,11 @@ export function PartnerImportForm() {
             <table className="w-full text-left text-sm">
               <thead className="sticky top-0 border-b border-slate-200 bg-slate-50 text-xs uppercase text-slate-500 dark:border-neutral-800 dark:bg-neutral-900 dark:text-slate-400">
                 <tr>
-                  <th className="px-4 py-2 font-medium">Name</th>
-                  <th className="px-4 py-2 font-medium">Email</th>
-                  <th className="px-4 py-2 font-medium">Phone</th>
-                  <th className="px-4 py-2 font-medium">Company</th>
-                  <th className="px-4 py-2 font-medium">Status</th>
+                  <th className="px-4 py-2 font-medium">{t.importColumnName}</th>
+                  <th className="px-4 py-2 font-medium">{t.importColumnEmail}</th>
+                  <th className="px-4 py-2 font-medium">{t.importColumnPhone}</th>
+                  <th className="px-4 py-2 font-medium">{t.importColumnCompany}</th>
+                  <th className="px-4 py-2 font-medium">{t.importColumnStatus}</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100 dark:divide-neutral-800">
@@ -189,16 +197,16 @@ export function PartnerImportForm() {
                                 : "text-amber-600 dark:text-amber-400",
                             )}
                           >
-                            {fillMissingInfo ? "Duplicate — will fill in missing info" : "Duplicate — will skip"}
+                            {fillMissingInfo ? t.importDuplicateWillFill : t.importDuplicateWillSkip}
                           </span>
                         ) : row.issues.length > 0 ? (
                           <span className="inline-flex items-center gap-1 text-xs font-medium text-amber-600 dark:text-amber-400">
                             <AlertTriangle className="h-3.5 w-3.5" />
-                            New — {row.issues[0]}
+                            {t.importNewRowPrefix}{row.issues[0]}
                           </span>
                         ) : (
                           <span className="text-xs font-medium text-emerald-600 dark:text-emerald-400">
-                            New
+                            {t.importNewRowLabel}
                           </span>
                         )}
                       </td>
@@ -212,12 +220,10 @@ export function PartnerImportForm() {
 
         <div className="flex justify-end gap-2">
           <Button variant="secondary" onClick={startOver} disabled={pending}>
-            Start over
+            {t.importStartOverCta}
           </Button>
           <Button onClick={() => handleConfirm(preview)} disabled={pending}>
-            {pending
-              ? "Importing…"
-              : `Import ${preview.importableRows} contact${preview.importableRows === 1 ? "" : "s"}`}
+            {pending ? t.importingCta : formatImportConfirmCta(preview.importableRows, locale)}
           </Button>
         </div>
       </div>
@@ -235,7 +241,7 @@ export function PartnerImportForm() {
           <UploadCloud className="h-10 w-10 text-slate-400" />
           <div>
             <Label htmlFor="file" className="sr-only">
-              CSV or Excel file
+              {t.importUploadFileLabel}
             </Label>
             <input
               id="file"
@@ -245,11 +251,7 @@ export function PartnerImportForm() {
               required
               className="block text-sm text-slate-600 file:mr-3 file:rounded-md file:border-0 file:bg-indigo-50 file:px-3 file:py-2 file:text-sm file:font-medium file:text-indigo-700 hover:file:bg-indigo-100 dark:text-slate-400 dark:file:bg-indigo-950 dark:file:text-indigo-300"
             />
-            <p className="mt-2 text-xs text-slate-400">
-              CSV or Excel (.xlsx) — from Google Contacts, HubSpot, Salesforce, or your own
-              spreadsheet. Columns are matched automatically, and a Company/Organization column
-              creates or links that contact&apos;s company too. Max 5MB.
-            </p>
+            <p className="mt-2 text-xs text-slate-400">{t.importUploadHint}</p>
           </div>
           {error && (
             <p className="rounded-md bg-rose-50 px-4 py-2 text-sm text-rose-700 dark:bg-rose-950 dark:text-rose-300">
@@ -257,7 +259,7 @@ export function PartnerImportForm() {
             </p>
           )}
           <Button type="submit" disabled={pending}>
-            {pending ? "Reading file…" : "Preview import"}
+            {pending ? t.importReadingFileCta : t.importPreviewCta}
           </Button>
         </form>
       </CardBody>

@@ -10,7 +10,16 @@ import {
   listingViewCountBreakdown,
 } from "@/lib/directory";
 import { getSiteOrigin } from "@/lib/site-url";
-import { directoryListingPath } from "@/lib/directory-i18n";
+import { directoryListingPath, formatViewsLabel } from "@/lib/directory-i18n";
+import { getDirectoryLocale } from "@/lib/directory-locale";
+import {
+  getPortalDashboardStrings,
+  formatDashboardWelcome,
+  formatListingsCountLabel,
+  formatLiveOnDirectoryLabel,
+  formatLeadsCountLabel,
+  formatWonValueLabel,
+} from "@/lib/portal-dashboard-i18n";
 import { DEFAULT_PARTNER_CURRENCY, formatCurrencyExact } from "@/lib/format";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
@@ -29,7 +38,8 @@ import { PARTNER_LISTING_STATUS_BADGE_CLASSES, PARTNER_LISTING_STATUS_LABELS } f
 // the mirror image, this partner's own referral activity for a listing
 // (possibly someone else's) — see getReferralActivityForPartner.
 export default async function PartnerDashboardPage() {
-  const user = await requireCompletePartnerProfile();
+  const [user, locale] = await Promise.all([requireCompletePartnerProfile(), getDirectoryLocale()]);
+  const t = getPortalDashboardStrings(locale);
   const [listings, directoryStats, referralActivity, siteOrigin] = await Promise.all([
     listPartnerListings(user.id),
     getDirectoryLeadStatsForPartner(user.id),
@@ -41,17 +51,20 @@ export default async function PartnerDashboardPage() {
 
   return (
     <div className="space-y-6">
-      <PageHeader title={`Welcome, ${user.name.split(" ")[0]}`} description="Your listings and directory leads at a glance." />
+      <PageHeader
+        title={formatDashboardWelcome(t.dashboardWelcome, user.name.split(" ")[0])}
+        description={t.dashboardSubheading}
+      />
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-        <StatCard label="New leads" value={directoryStats.new.toString()} icon={Inbox} accent="sky" href="/business-portal/business-leads" />
-        <StatCard label="Open" value={directoryStats.open.toString()} icon={Handshake} accent="amber" href="/business-portal/business-leads" />
-        <StatCard label="Converted" value={directoryStats.converted.toString()} icon={Trophy} accent="emerald" />
-        <StatCard label="Converted value" value={formatCurrencyExact(directoryStats.convertedValue, currency)} icon={Wallet} accent="indigo" />
+        <StatCard label={t.statNewLeads} value={directoryStats.new.toString()} icon={Inbox} accent="sky" href="/business-portal/business-leads" />
+        <StatCard label={t.statOpen} value={directoryStats.open.toString()} icon={Handshake} accent="amber" href="/business-portal/business-leads" />
+        <StatCard label={t.statConverted} value={directoryStats.converted.toString()} icon={Trophy} accent="emerald" />
+        <StatCard label={t.statConvertedValue} value={formatCurrencyExact(directoryStats.convertedValue, currency)} icon={Wallet} accent="indigo" />
         <StatCard
-          label="Referred"
+          label={t.statReferred}
           value={directoryStats.referred.toString()}
-          description="Via your Recommend link"
+          description={t.statReferredDescription}
           icon={ThumbsUp}
           accent="orange"
           href="/business-portal/business-leads"
@@ -60,11 +73,11 @@ export default async function PartnerDashboardPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>My Business</CardTitle>
+          <CardTitle>{t.myBusinessCardHeading}</CardTitle>
           <form action={createListingAction}>
             <Button type="submit" size="sm">
               <Plus className="h-4 w-4" />
-              New Business
+              {t.newBusinessCta}
             </Button>
           </form>
         </CardHeader>
@@ -72,8 +85,8 @@ export default async function PartnerDashboardPage() {
           {listings.length === 0 ? (
             <EmptyState
               icon={Store}
-              title="No listings yet"
-              description="Create your first listing to get your business on the public directory."
+              title={t.noListingsTitle}
+              description={t.noListingsDescription}
             />
           ) : (
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -95,7 +108,7 @@ export default async function PartnerDashboardPage() {
                       </div>
                       <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
                         <Link href={`/business-portal/listings/${listing.id}`} className={buttonClasses("secondary", "sm")}>
-                          Edit
+                          {t.editListingCta}
                         </Link>
                         {publicUrl && (
                           <Link
@@ -104,7 +117,7 @@ export default async function PartnerDashboardPage() {
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-1 text-petrol hover:underline dark:text-petrol-light"
                           >
-                            View public listing
+                            {t.viewPublicListingCta}
                             <ExternalLink className="h-3.5 w-3.5" />
                           </Link>
                         )}
@@ -112,7 +125,7 @@ export default async function PartnerDashboardPage() {
                           <span className="inline-flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-slate-500 dark:text-slate-400">
                             <span className="inline-flex items-center gap-1">
                               <Eye className="h-3.5 w-3.5" />
-                              {trackedViewCount.toLocaleString()} view{trackedViewCount === 1 ? "" : "s"}
+                              {formatViewsLabel(trackedViewCount, locale)}
                             </span>
                             <span className="text-xs text-slate-400 dark:text-slate-500">
                               (
@@ -142,10 +155,10 @@ export default async function PartnerDashboardPage() {
           )}
           {listings.length > 0 && (
             <p className="mt-4 text-sm text-slate-500 dark:text-slate-400">
-              {listings.length} listing{listings.length === 1 ? "" : "s"}
-              {publishedListingCount > 0 && ` · ${publishedListingCount} live on the public directory`} ·{" "}
+              {formatListingsCountLabel(listings.length, locale)}
+              {publishedListingCount > 0 && ` · ${formatLiveOnDirectoryLabel(publishedListingCount, locale)}`} ·{" "}
               <Link href="/business-portal/listings" className="text-petrol hover:underline dark:text-petrol-light">
-                Manage listings
+                {t.manageListingsCta}
               </Link>
             </p>
           )}
@@ -154,14 +167,14 @@ export default async function PartnerDashboardPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Businesses You&apos;ve Referred</CardTitle>
+          <CardTitle>{t.referredBusinessesHeading}</CardTitle>
         </CardHeader>
         <CardBody>
           {referralActivity.length === 0 ? (
             <EmptyState
               icon={ThumbsUp}
-              title="No referrals yet"
-              description="Open any business's public page and click Recommend Business to start tracking what your own link brings in."
+              title={t.noReferralsTitle}
+              description={t.noReferralsDescription}
             />
           ) : (
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -186,25 +199,25 @@ export default async function PartnerDashboardPage() {
                           <p className="truncate font-medium text-slate-800 dark:text-slate-200">{activity.companyName}</p>
                         )}
                         {referralUrl && (
-                          <ShareButton title={activity.companyName} url={referralUrl} label="Share your link" icon="share" size="sm" />
+                          <ShareButton title={activity.companyName} url={referralUrl} label={t.shareYourLinkLabel} icon="share" size="sm" />
                         )}
                       </div>
                       <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-slate-500 dark:text-slate-400">
                         <span className="inline-flex items-center gap-1">
                           <Eye className="h-3.5 w-3.5" />
-                          {activity.viewCount.toLocaleString()} view{activity.viewCount === 1 ? "" : "s"}
+                          {formatViewsLabel(activity.viewCount, locale)}
                         </span>
                         <span className="inline-flex items-center gap-1">
                           <ThumbsUp className="h-3.5 w-3.5" />
-                          {activity.leadCount.toLocaleString()} lead{activity.leadCount === 1 ? "" : "s"}
+                          {formatLeadsCountLabel(activity.leadCount, locale)}
                         </span>
                       </div>
                       <p className="flex items-center gap-1 text-sm text-slate-500 dark:text-slate-400">
                         <Wallet className="h-3.5 w-3.5 shrink-0" />
                         {activity.wonValue === null ? (
-                          <span className="text-slate-400 dark:text-slate-500">Won value not shared by this business</span>
+                          <span className="text-slate-400 dark:text-slate-500">{t.wonValueNotSharedLabel}</span>
                         ) : (
-                          `${formatCurrencyExact(activity.wonValue, currency)} won`
+                          formatWonValueLabel(formatCurrencyExact(activity.wonValue, currency), locale)
                         )}
                       </p>
                     </CardBody>

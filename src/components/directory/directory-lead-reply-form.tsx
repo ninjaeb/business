@@ -2,10 +2,13 @@
 
 import { useActionState, useEffect, useRef } from "react";
 import { replyToDirectoryLead } from "@/app/actions/directory";
+import type { DirectoryLocale } from "@/lib/directory-i18n";
+import { PORTAL_LEADS_STRINGS } from "@/lib/portal-leads-i18n";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/field";
 
-export function DirectoryLeadReplyForm({ leadId }: { leadId: string }) {
+export function DirectoryLeadReplyForm({ leadId, locale }: { leadId: string; locale: DirectoryLocale }) {
+  const t = PORTAL_LEADS_STRINGS[locale];
   const [state, formAction, pending] = useActionState(replyToDirectoryLead.bind(null, leadId), undefined);
   const formRef = useRef<HTMLFormElement>(null);
 
@@ -21,7 +24,7 @@ export function DirectoryLeadReplyForm({ leadId }: { leadId: string }) {
         name="body"
         rows={3}
         required
-        placeholder="Write a reply — it's emailed to the visitor from Gotka's system address, with your company name as the sender."
+        placeholder={t.replyPlaceholder}
       />
       {state && "error" in state && <p className="text-sm text-rose-600 dark:text-rose-400">{state.error}</p>}
       <div className="flex justify-end">
@@ -31,7 +34,7 @@ export function DirectoryLeadReplyForm({ leadId }: { leadId: string }) {
           disabled={pending}
           className="bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"
         >
-          {pending ? "Sending…" : "Send reply"}
+          {pending ? t.replySending : t.replySubmit}
         </Button>
       </div>
     </form>

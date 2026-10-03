@@ -6,10 +6,12 @@ import { db } from "@/lib/db";
 import { verifyPassword } from "@/lib/auth/password";
 import { createSession, deleteSession } from "@/lib/session";
 import { homeForRole } from "@/lib/auth/dal";
+import { getDirectoryLocale } from "@/lib/directory-locale";
+import { getPortalDashboardStrings } from "@/lib/portal-dashboard-i18n";
 
 const loginSchema = z.object({
-  email: z.string().trim().toLowerCase().email("Enter a valid email address"),
-  password: z.string().min(1, "Password is required"),
+  email: z.string().trim().toLowerCase().email(),
+  password: z.string().min(1),
 });
 
 export type LoginState = { error: string } | undefined;
@@ -19,19 +21,31 @@ export type LoginState = { error: string } | undefined;
 // There's no separate staff front door in this standalone app, so unlike
 // the CRM this was extracted from, nothing here rejects a role — it just
 // redirects each to its own home.
+//
+// businessLogin is only ever called from BusinessLoginForm (the `login`
+// alias below is unused), so its error text is localized here via the
+// cookie-based directory locale — same idea as the rest of the business
+// portal's i18n (see getDirectoryLocale's own comment), just read directly
+// inside the action instead of passed down from a Server Component.
 export async function businessLogin(_prevState: LoginState, formData: FormData): Promise<LoginState> {
+  const locale = await getDirectoryLocale();
+  const t = getPortalDashboardStrings(locale).loginErrors;
+
   const parsed = loginSchema.safeParse({
     email: formData.get("email"),
     password: formData.get("password"),
   });
   if (!parsed.success) {
-    return { error: parsed.error.issues[0]?.message ?? "Invalid input" };
+    const issue = parsed.error.issues[0];
+    if (issue?.path[0] === "email") return { error: t.invalid_email };
+    if (issue?.path[0] === "password") return { error: t.password_required };
+    return { error: t.invalid_input };
   }
 
   const user = await db.user.findUnique({ where: { email: parsed.data.email } });
   const valid = user ? await verifyPassword(parsed.data.password, user.passwordHash) : false;
   if (!user || !valid) {
-    return { error: "Invalid email or password" };
+    return { error: t.invalid_credentials };
   }
 
   await createSession(user.id);

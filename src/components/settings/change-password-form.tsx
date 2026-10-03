@@ -5,11 +5,14 @@ import { changePassword } from "@/app/actions/profile";
 import { Label, Input, RequiredMark } from "@/components/ui/field";
 import { Button } from "@/components/ui/button";
 import { useActionToast } from "@/components/ui/toast";
+import type { DirectoryLocale } from "@/lib/directory-i18n";
+import { PORTAL_DASHBOARD_STRINGS } from "@/lib/portal-dashboard-i18n";
 
-export function ChangePasswordForm() {
+export function ChangePasswordForm({ locale }: { locale: DirectoryLocale }) {
+  const t = PORTAL_DASHBOARD_STRINGS[locale];
   const formRef = useRef<HTMLFormElement>(null);
   const [state, formAction, pending] = useActionState(changePassword, undefined);
-  useActionToast(state, "Password updated.", { toastErrors: false });
+  useActionToast(state, t.passwordUpdatedToast, { toastErrors: false });
 
   useEffect(() => {
     if (state && "success" in state) {
@@ -21,7 +24,7 @@ export function ChangePasswordForm() {
     <form ref={formRef} action={formAction} className="space-y-3">
       <div>
         <Label htmlFor="currentPassword">
-          Current password
+          {t.currentPasswordLabel}
           <RequiredMark />
         </Label>
         <Input
@@ -34,7 +37,7 @@ export function ChangePasswordForm() {
       </div>
       <div>
         <Label htmlFor="newPassword">
-          New password
+          {t.newPasswordLabel}
           <RequiredMark />
         </Label>
         <Input
@@ -52,7 +55,7 @@ export function ChangePasswordForm() {
       )}
 
       <Button type="submit" disabled={pending}>
-        {pending ? "Updating…" : "Update password"}
+        {pending ? t.updatingPasswordCta : t.updatePasswordCta}
       </Button>
     </form>
   );

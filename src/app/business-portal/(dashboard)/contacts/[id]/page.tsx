@@ -13,9 +13,13 @@ import { Badge } from "@/components/ui/badge";
 import { buttonClasses } from "@/components/ui/button";
 import { ConfirmSubmitButton } from "@/components/ui/confirm-submit-button";
 import { EmptyState } from "@/components/ui/empty-state";
+import { getDirectoryLocale } from "@/lib/directory-locale";
+import { PORTAL_CONTACTS_STRINGS, formatDealsHeading, formatTasksHeading } from "@/lib/portal-contacts-i18n";
 
 export default async function PartnerContactDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const user = await requireCompletePartnerProfile();
+  const locale = await getDirectoryLocale();
+  const t = PORTAL_CONTACTS_STRINGS[locale];
   const { id } = await params;
   const currency = user.currency ?? DEFAULT_PARTNER_CURRENCY;
   const contact = await db.partnerContact.findFirst({
@@ -32,19 +36,19 @@ export default async function PartnerContactDetailPage({ params }: { params: Pro
   return (
     <div className="space-y-6">
       <PageHeader
-        breadcrumbs={[{ label: "Contacts", href: "/business-portal/contacts" }, { label: name }]}
+        breadcrumbs={[{ label: t.breadcrumbContacts, href: "/business-portal/contacts" }, { label: name }]}
         title={name}
         description={contact.title ?? undefined}
         actions={
           <>
             <Link href={`/business-portal/contacts/${contact.id}/edit`} className={buttonClasses("secondary")}>
               <Pencil className="h-4 w-4" />
-              Edit
+              {t.editCta}
             </Link>
             <form action={deletePartnerContact.bind(null, contact.id)}>
-              <ConfirmSubmitButton confirmMessage="Delete this contact? Its deals and tasks will be unlinked.">
+              <ConfirmSubmitButton confirmMessage={t.deleteConfirm}>
                 <Trash2 className="h-4 w-4" />
-                Delete
+                {t.deleteCta}
               </ConfirmSubmitButton>
             </form>
           </>
@@ -53,18 +57,18 @@ export default async function PartnerContactDetailPage({ params }: { params: Pro
 
       <Card>
         <CardHeader>
-          <CardTitle>Details</CardTitle>
+          <CardTitle>{t.detailsHeading}</CardTitle>
         </CardHeader>
         <CardBody className="grid gap-3 text-sm sm:grid-cols-2">
           <DetailRow
-            label="Company"
+            label={t.detailCompanyLabel}
             value={contact.company && <Link href={`/business-portal/companies/${contact.company.id}`} className="hover:text-petrol dark:hover:text-petrol-light">{contact.company.name}</Link>}
           />
-          <DetailRow label="Email" value={contact.email && <a href={`mailto:${contact.email}`} className="hover:text-petrol dark:hover:text-petrol-light">{contact.email}</a>} />
-          <DetailRow label="Phone" value={contact.phone} />
+          <DetailRow label={t.detailEmailLabel} value={contact.email && <a href={`mailto:${contact.email}`} className="hover:text-petrol dark:hover:text-petrol-light">{contact.email}</a>} />
+          <DetailRow label={t.detailPhoneLabel} value={contact.phone} />
           {contact.notes && (
             <div className="sm:col-span-2">
-              <p className="text-xs font-medium text-slate-500 dark:text-slate-400">Notes</p>
+              <p className="text-xs font-medium text-slate-500 dark:text-slate-400">{t.detailNotesLabel}</p>
               <p className="mt-1 whitespace-pre-wrap text-slate-700 dark:text-slate-300">{contact.notes}</p>
             </div>
           )}
@@ -73,15 +77,15 @@ export default async function PartnerContactDetailPage({ params }: { params: Pro
 
       <Card>
         <CardHeader>
-          <CardTitle>Deals ({contact.deals.length})</CardTitle>
+          <CardTitle>{formatDealsHeading(contact.deals.length, locale)}</CardTitle>
           <Link href={`/business-portal/deals/new?contactId=${contact.id}`} className={buttonClasses("secondary", "sm")}>
             <Plus className="h-4 w-4" />
-            Add deal
+            {t.addDealCta}
           </Link>
         </CardHeader>
         <CardBody>
           {contact.deals.length === 0 ? (
-            <EmptyState title="No deals linked to this contact yet." />
+            <EmptyState title={t.noDealsLinked} />
           ) : (
             <ul className="divide-y divide-slate-100 dark:divide-neutral-800">
               {contact.deals.map((deal) => (
@@ -105,15 +109,15 @@ export default async function PartnerContactDetailPage({ params }: { params: Pro
 
       <Card>
         <CardHeader>
-          <CardTitle>Open tasks ({contact.tasks.length})</CardTitle>
+          <CardTitle>{formatTasksHeading(contact.tasks.length, locale)}</CardTitle>
           <Link href={`/business-portal/tasks/new?contactId=${contact.id}`} className={buttonClasses("secondary", "sm")}>
             <Plus className="h-4 w-4" />
-            Add task
+            {t.addTaskCta}
           </Link>
         </CardHeader>
         <CardBody>
           {contact.tasks.length === 0 ? (
-            <EmptyState title="No open tasks for this contact." />
+            <EmptyState title={t.noOpenTasks} />
           ) : (
             <ul className="divide-y divide-slate-100 dark:divide-neutral-800">
               {contact.tasks.map((task) => (

@@ -4,9 +4,10 @@ import { useActionState, useSyncExternalStore } from "react";
 import { updatePartnerProfile } from "@/app/actions/partner-profile";
 import { Label, Input, RequiredMark, Select } from "@/components/ui/field";
 import { Button } from "@/components/ui/button";
-import { PHONE_FORMAT_HINT } from "@/lib/phone";
 import { DEFAULT_PARTNER_CURRENCY } from "@/lib/format";
 import { useActionToast } from "@/components/ui/toast";
+import type { DirectoryLocale } from "@/lib/directory-i18n";
+import { PORTAL_DASHBOARD_STRINGS } from "@/lib/portal-dashboard-i18n";
 
 // A fixed list of IANA zone names, the same in every environment (unlike
 // the *current* zone below, it doesn't depend on where the browser
@@ -65,6 +66,7 @@ export function PartnerProfileForm({
   phone,
   timezone,
   currency,
+  locale,
 }: {
   name: string;
   companyName: string | null;
@@ -73,9 +75,11 @@ export function PartnerProfileForm({
   phone: string | null;
   timezone: string | null;
   currency: string | null;
+  locale: DirectoryLocale;
 }) {
+  const t = PORTAL_DASHBOARD_STRINGS[locale];
   const [state, formAction, pending] = useActionState(updatePartnerProfile, undefined);
-  useActionToast(state, "Profile updated.", { toastErrors: false });
+  useActionToast(state, t.profileUpdatedToast, { toastErrors: false });
 
   // After a successful save, the action's own returned value is the
   // source of truth for what's now saved — not the `timezone` prop.
@@ -113,7 +117,7 @@ export function PartnerProfileForm({
     <form action={formAction} className="space-y-4">
       <div>
         <Label htmlFor="name">
-          Name
+          {t.nameLabel}
           <RequiredMark />
         </Label>
         <Input id="name" name="name" required defaultValue={name} />
@@ -121,7 +125,7 @@ export function PartnerProfileForm({
 
       <div>
         <Label htmlFor="companyName">
-          Company name
+          {t.companyNameLabel}
           <RequiredMark />
         </Label>
         <Input id="companyName" name="companyName" required defaultValue={companyName ?? ""} />
@@ -129,32 +133,29 @@ export function PartnerProfileForm({
 
       <div>
         <Label htmlFor="email">
-          Email
+          {t.emailLabel}
           <RequiredMark />
         </Label>
         <Input id="email" name="email" type="email" required defaultValue={email} />
-        <p className="mt-1 text-xs text-slate-400">Used to sign in, and where nothing else applies.</p>
+        <p className="mt-1 text-xs text-slate-400">{t.emailHint}</p>
       </div>
 
       <div>
-        <Label htmlFor="title">Title</Label>
+        <Label htmlFor="title">{t.titleLabel}</Label>
         <Input id="title" name="title" defaultValue={title ?? ""} />
       </div>
 
       <div>
         <Label htmlFor="phone">
-          Contact phone
+          {t.phoneLabel}
           <RequiredMark />
         </Label>
         <Input id="phone" name="phone" type="tel" required defaultValue={phone ?? ""} placeholder="+60 12 345 6789" />
-        <p className="mt-1 text-xs text-slate-400">
-          {PHONE_FORMAT_HINT} Used to WhatsApp you when a directory inquiry comes in — never shown on your public
-          listing, and never given to visitors.
-        </p>
+        <p className="mt-1 text-xs text-slate-400">{t.phoneHint}</p>
       </div>
 
       <div>
-        <Label htmlFor="timezone">Timezone</Label>
+        <Label htmlFor="timezone">{t.timezoneLabel}</Label>
         {/* Uncontrolled (defaultValue, not value+onChange) — matching
             Name/Company name/etc. above, and deliberately so: a
             React 19 action resets its <form> on a successful submit,
@@ -167,7 +168,7 @@ export function PartnerProfileForm({
             whenever the true value changes (after a save, or once the
             browser's own zone resolves post-hydration). */}
         <Select key={timezoneDefault} id="timezone" name="timezone" defaultValue={timezoneDefault}>
-          <option value="">Select a timezone…</option>
+          <option value="">{t.timezoneSelectPlaceholder}</option>
           {!TIMEZONES.includes(timezoneDefault) && timezoneDefault && (
             <option value={timezoneDefault}>{timezoneDefault}</option>
           )}
@@ -177,14 +178,11 @@ export function PartnerProfileForm({
             </option>
           ))}
         </Select>
-        <p className="mt-1 text-xs text-slate-400">
-          Detected from your browser — correct it if you&apos;re somewhere else. Used to show visitors whether your
-          listings are open right now.
-        </p>
+        <p className="mt-1 text-xs text-slate-400">{t.timezoneHint}</p>
       </div>
 
       <div>
-        <Label htmlFor="currency">Currency</Label>
+        <Label htmlFor="currency">{t.currencyLabel}</Label>
         {/* Uncontrolled + keyed on currencyDefault, same reasoning as
             Timezone above. */}
         <Select key={currencyDefault} id="currency" name="currency" defaultValue={currencyDefault}>
@@ -197,10 +195,7 @@ export function PartnerProfileForm({
             </option>
           ))}
         </Select>
-        <p className="mt-1 text-xs text-slate-400">
-          Guessed from your browser — correct it if you bill in something else. Used for deal and lead values across
-          your CRM.
-        </p>
+        <p className="mt-1 text-xs text-slate-400">{t.currencyHint}</p>
       </div>
 
       {state && "error" in state && <p className="text-sm text-rose-600 dark:text-rose-400">{state.error}</p>}
@@ -210,7 +205,7 @@ export function PartnerProfileForm({
         disabled={pending}
         className="bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"
       >
-        {pending ? "Saving…" : "Save"}
+        {pending ? t.savingCta : t.saveCta}
       </Button>
     </form>
   );

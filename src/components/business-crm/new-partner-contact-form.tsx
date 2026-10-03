@@ -7,6 +7,8 @@ import { importPartnerVCard } from "@/app/actions/import-partner-vcard";
 import { PartnerContactForm } from "@/components/business-crm/partner-contact-form";
 import { ContactQuickImport } from "@/components/contacts/contact-quick-import";
 import type { ContactDraft } from "@/lib/contact-draft";
+import type { DirectoryLocale } from "@/lib/directory-i18n";
+import { PORTAL_CONTACTS_STRINGS } from "@/lib/portal-contacts-i18n";
 
 type CompanyOption = { id: string; name: string };
 
@@ -18,10 +20,13 @@ type CompanyOption = { id: string; name: string };
 export function NewPartnerContactForm({
   companies,
   defaultCompanyId,
+  locale,
 }: {
   companies: CompanyOption[];
   defaultCompanyId?: string;
+  locale: DirectoryLocale;
 }) {
+  const t = PORTAL_CONTACTS_STRINGS[locale];
   const [draft, setDraft] = useState<ContactDraft | null>(null);
   // A quick-import can resolve to a company that didn't exist when
   // `companies` was fetched server-side — merge it in locally so the
@@ -45,9 +50,7 @@ export function NewPartnerContactForm({
             }
           }}
         />
-        <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">
-          Fills in the fields below from a business card photo or a shared contact file — review before saving.
-        </p>
+        <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">{t.quickImportHint}</p>
       </div>
       <PartnerContactForm
         key={version}
@@ -55,7 +58,8 @@ export function NewPartnerContactForm({
         companies={companyList}
         defaultCompanyId={draft?.company?.id ?? defaultCompanyId}
         prefill={draft ?? undefined}
-        submitLabel="Create contact"
+        submitLabel={t.createContactCta}
+        locale={locale}
       />
     </div>
   );
