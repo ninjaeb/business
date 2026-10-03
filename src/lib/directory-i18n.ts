@@ -616,6 +616,15 @@ export type DirectoryStrings = {
   testimonialFormGuideExperienceQuestion: string;
   testimonialFormGuideVerdictLabel: string;
   testimonialFormGuideVerdictQuestion: string;
+  // "Get ideas" link appended to the guide box above — AI-generated prompts
+  // based on this specific listing's own products/services (see
+  // suggestTestimonialIdeasWithAi in src/app/actions/testimonials.ts), same
+  // AI-availability gating as testimonialFormRewriteCta below. Suggests
+  // what to write about, never drafts the testimonial text itself — the
+  // AI result's own message covers the error case, so there's no separate
+  // error string here, same as testimonialFormRewriteCta's own handler.
+  testimonialFormIdeasCta: string;
+  testimonialFormIdeasLoading: string;
   // The optional photo picker under the body field (see uploadTestimonialPhoto
   // in src/app/actions/testimonials.ts) — testimonialFormPhotosUploading has
   // a {done}/{total} token, filled in via formatTestimonialPhotosUploading.
@@ -925,6 +934,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormGuideExperienceQuestion: "What stood out most (e.g., speed, communication, technical expertise)?",
     testimonialFormGuideVerdictLabel: "The Verdict",
     testimonialFormGuideVerdictQuestion: "Who would you recommend us to, and why?",
+    testimonialFormIdeasCta: "Get ideas based on what they offer",
+    testimonialFormIdeasLoading: "Thinking of ideas…",
     testimonialFormPhotosLabel: "Photos (optional)",
     testimonialFormPhotosCta: "Add photos",
     testimonialFormPhotosUploading: "Uploading photo {done}/{total}…",
@@ -1204,6 +1215,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormGuideExperienceQuestion: "哪方面让您印象最深刻（例如：速度、沟通、专业能力）？",
     testimonialFormGuideVerdictLabel: "评价",
     testimonialFormGuideVerdictQuestion: "您会将我们推荐给谁，为什么？",
+    testimonialFormIdeasCta: "根据我们提供的产品与服务获取灵感",
+    testimonialFormIdeasLoading: "正在构思灵感…",
     testimonialFormPhotosLabel: "照片（可选）",
     testimonialFormPhotosCta: "添加照片",
     testimonialFormPhotosUploading: "正在上传照片 {done}/{total}…",
@@ -1484,6 +1497,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormGuideExperienceQuestion: "Apa yang paling menonjol (contohnya: kelajuan, komunikasi, kepakaran teknikal)?",
     testimonialFormGuideVerdictLabel: "Kesimpulan",
     testimonialFormGuideVerdictQuestion: "Kepada siapa anda akan mengesyorkan kami, dan mengapa?",
+    testimonialFormIdeasCta: "Dapatkan idea berdasarkan produk dan perkhidmatan kami",
+    testimonialFormIdeasLoading: "Sedang mencari idea…",
     testimonialFormPhotosLabel: "Foto (pilihan)",
     testimonialFormPhotosCta: "Tambah foto",
     testimonialFormPhotosUploading: "Memuat naik foto {done}/{total}…",

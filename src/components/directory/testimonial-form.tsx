@@ -1,8 +1,13 @@
 "use client";
 
 import { useActionState, useEffect, useRef, useState, useTransition } from "react";
-import { Loader2, Sparkles, Star, Upload, X } from "lucide-react";
-import { rewriteTestimonialWithAi, submitDirectoryTestimonial, uploadTestimonialPhoto } from "@/app/actions/testimonials";
+import { Lightbulb, Loader2, Sparkles, Star, Upload, X } from "lucide-react";
+import {
+  rewriteTestimonialWithAi,
+  submitDirectoryTestimonial,
+  suggestTestimonialIdeasWithAi,
+  uploadTestimonialPhoto,
+} from "@/app/actions/testimonials";
 import { logoutVisitor } from "@/app/actions/visitor-auth";
 import { compressImage } from "@/lib/image-compression";
 import { Button, buttonClasses } from "@/components/ui/button";
@@ -104,6 +109,8 @@ export function TestimonialForm({
   const [body, setBody] = useState("");
   const [renderedAt] = useState(() => Date.now());
   const [rewriting, startRewrite] = useTransition();
+  const [ideas, setIdeas] = useState<string[] | null>(null);
+  const [suggesting, startSuggest] = useTransition();
 
   function handleRatingChange(value: number) {
     setRating(value);
@@ -144,6 +151,17 @@ export function TestimonialForm({
       const result = await rewriteTestimonialWithAi(body);
       if (result.status === "ok") {
         setBody(result.data.text);
+      } else {
+        toast.error(result.message);
+      }
+    });
+  }
+
+  function handleSuggestIdeas() {
+    startSuggest(async () => {
+      const result = await suggestTestimonialIdeasWithAi(slug, locale);
+      if (result.status === "ok") {
+        setIdeas(result.data.ideas);
       } else {
         toast.error(result.message);
       }
@@ -338,6 +356,26 @@ export function TestimonialForm({
               {t.testimonialFormGuideVerdictQuestion}
             </li>
           </ul>
+          {aiAvailable && (
+            <div className="mt-2 border-t border-slate-200 pt-2 dark:border-neutral-700">
+              <button
+                type="button"
+                onClick={handleSuggestIdeas}
+                disabled={suggesting}
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-petrol hover:underline disabled:opacity-50 disabled:no-underline dark:text-petrol-light"
+              >
+                <Lightbulb className="h-3.5 w-3.5" />
+                {suggesting ? t.testimonialFormIdeasLoading : t.testimonialFormIdeasCta}
+              </button>
+              {ideas && ideas.length > 0 && (
+                <ul className="mt-2 list-disc space-y-1 pl-4">
+                  {ideas.map((idea, index) => (
+                    <li key={index}>{idea}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          )}
         </div>
         <Textarea
           id="testimonial-body"
