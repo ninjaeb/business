@@ -54,7 +54,14 @@ export default async function PartnerLayout({ children }: { children: React.Reac
     <div className="flex h-full min-h-full">
       <PartnerSidebar signOutAction={logout} locale={locale} />
       <div className="flex min-w-0 flex-1 flex-col">
-        <header className="sticky top-0 z-20 border-b border-slate-200 bg-white dark:border-neutral-800 dark:bg-neutral-900 sm:hidden">
+        {/* z-50, not z-20: PartnerNavMenu's dropdown is a normal descendant
+            of this header (no portal), so it only stacks as high as the
+            header's own global z-index — a fixed bottom toast rendered
+            later in the DOM (e.g. MyBusinessListingsGrid's publish-status
+            bar, z-30) would otherwise paint over an open dropdown despite
+            the dropdown's own z-30. See directory-chrome.tsx's own header
+            for the same fix on the public side. */}
+        <header className="sticky top-0 z-50 border-b border-slate-200 bg-white dark:border-neutral-800 dark:bg-neutral-900 sm:hidden">
           <div className="flex w-full items-center gap-3 px-4 py-3">
             <Link href="/business-portal" className="flex shrink-0 items-center gap-2">
               {/* Below sm the wordmark beside it is hidden, so this alt is

@@ -162,15 +162,25 @@ export async function DirectoryChrome({
       {/* First focusable element on every page — invisible until it
           receives keyboard focus (Tab from a fresh page load), so a
           keyboard or screen-reader visitor can jump straight to #main-content
-          instead of tabbing through every header link first. z-30: above the
-          header's own sticky z-20 once focused, so it isn't drawn under it. */}
+          instead of tabbing through every header link first. z-[60]: above
+          the header's own sticky z-50 once focused, so it isn't drawn under it. */}
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-30 focus:rounded-md focus:bg-petrol focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-white focus:outline-none dark:focus:bg-petrol-light dark:focus:text-petrol-ink"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:rounded-md focus:bg-petrol focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-white focus:outline-none dark:focus:bg-petrol-light dark:focus:text-petrol-ink"
       >
         {t.skipToContentLabel}
       </a>
-      <header className="sticky top-0 z-20 border-b border-slate-200 bg-white dark:border-neutral-800 dark:bg-neutral-900">
+      {/* z-50, not the z-20 every other piece of structural chrome (this
+          header's own sticky positioning aside) uses: DirectoryNavMenu's
+          dropdown is a normal descendant of this header, not a portal, so
+          it only ever stacks as high as the header's own global z-index —
+          a RecommendBar (z-30) or FloatingWhatsAppButton (z-40) rendered
+          later in the DOM would otherwise paint over an open dropdown
+          despite the dropdown's own z-30. z-50 ties with this app's modals
+          (photo lightboxes, the testimonial dialog, ...); DOM order alone
+          resolves that tie in the modal's favor, since every one of them
+          renders inside <main>, after this header. */}
+      <header className="sticky top-0 z-50 border-b border-slate-200 bg-white dark:border-neutral-800 dark:bg-neutral-900">
         <div className="flex w-full items-center gap-3 px-4 py-3 sm:px-8">
           <Link href={directoryHref} className="flex shrink-0 items-center gap-2">
             {/* Below sm the wordmark beside it is hidden, so this alt is
