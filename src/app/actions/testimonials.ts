@@ -147,7 +147,10 @@ const standaloneTestimonialSchema = z.object({
 });
 
 export type StandaloneTestimonialFormState =
-  | { status: "success" }
+  // testimonialId lets the form (see StandaloneTestimonialForm) follow up
+  // with uploadTestimonialPhoto calls, same reasoning as
+  // DirectoryTestimonialFormState's own testimonialId.
+  | { status: "success"; testimonialId: string }
   | { status: "error"; code: DirectoryTestimonialFormErrorCode }
   | undefined;
 
@@ -165,10 +168,10 @@ export async function submitStandaloneTestimonial(
   formData: FormData,
 ): Promise<StandaloneTestimonialFormState> {
   if (String(formData.get("website") || "").trim()) {
-    return { status: "success" };
+    return { status: "success", testimonialId: "" };
   }
   if (isSuspiciouslyFast(formData.get("renderedAt"))) {
-    return { status: "success" };
+    return { status: "success", testimonialId: "" };
   }
 
   const headersList = await headers();
@@ -217,7 +220,7 @@ export async function submitStandaloneTestimonial(
   });
 
   await notifyPartnerOfNewTestimonial(request.listing, testimonial);
-  return { status: "success" };
+  return { status: "success", testimonialId: testimonial.id };
 }
 
 // ---------------------------------------------------------------------------

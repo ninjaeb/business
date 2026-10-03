@@ -5,6 +5,7 @@ import { resolveDirectoryLocale } from "@/lib/directory-locale";
 import { getTestimonialRequestLinkForForm } from "@/lib/testimonial-request-links";
 import { listingLogoPath } from "@/lib/directory";
 import { DIRECTORY_STRINGS } from "@/lib/directory-i18n";
+import { isAiConfigured } from "@/lib/ai/client";
 import { StandaloneTestimonialForm } from "@/components/directory/standalone-testimonial-form";
 import { EmptyState } from "@/components/ui/empty-state";
 
@@ -56,6 +57,9 @@ export default async function StandaloneTestimonialPage({
     <StandaloneTestimonialForm
       token={request.id}
       locale={resolved}
+      slug={request.listing.slug}
+      aiAvailable={isAiConfigured()}
+      googleReviewUrl={request.listing.googleReviewUrl}
       listing={{
         companyName: request.listing.companyName,
         logoUrl: request.listing.logoUrl ? listingLogoPath(request.listing.slug, request.listing.publishedAt) : null,
