@@ -140,12 +140,23 @@ export function ListingCard({
               the surrounding copy. Tailwind's preflight leaves headings
               unstyled, so sizing/weight are set explicitly. */}
           {variant === "compact" ? (
-            // items-center, not items-start: a 40px logo roughly matches the
+            // items-center, not items-start: the logo roughly matches the
             // combined height of name+rating+location, so centering keeps it
             // level with the middle line (usually the rating) rather than
-            // pinned to the name alone.
+            // pinned to the name alone. Same mobile-smaller/lg-bigger split
+            // as the listing detail page's own header logo (see
+            // ListingLogo's usage in layout.tsx) — 40px leaves the
+            // name/rating/location column enough room beside it on a narrow
+            // card; 90px from lg up, where a two-column card grid has width
+            // to spare.
             <div className="flex items-center gap-3">
-              <ListingLogo name={listing.companyName} logoUrl={listing.logoUrl} size={40} loading="lazy" className="h-10 w-10 shrink-0 text-base" />
+              <ListingLogo
+                name={listing.companyName}
+                logoUrl={listing.logoUrl}
+                size={90}
+                loading="lazy"
+                className="h-10 w-10 shrink-0 text-base lg:h-[90px] lg:w-[90px] lg:text-2xl"
+              />
               <div className="min-w-0 flex-1 space-y-0.5">
                 <h3 className="truncate text-base font-bold tracking-tight text-slate-900 dark:text-slate-100">
                   {listing.companyName}
