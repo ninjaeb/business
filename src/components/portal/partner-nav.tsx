@@ -75,7 +75,12 @@ export function PartnerNavMenu({
       {open && (
         <div
           role="menu"
-          className="absolute right-0 z-30 mt-2 w-56 overflow-hidden rounded-2xl border border-slate-200 bg-white py-1 shadow-lg dark:border-neutral-700 dark:bg-neutral-900"
+          // Same max-h + overflow-y-auto fix as DirectoryNavMenu's own
+          // dropdown (src/components/directory/directory-nav-menu.tsx) —
+          // this menu renders the same BUSINESS_NAV_ITEMS list and runs
+          // into the same off-the-bottom-of-the-screen overflow on a
+          // phone-height viewport.
+          className="absolute right-0 z-30 mt-2 max-h-[min(32rem,80vh)] w-56 overflow-y-auto overscroll-contain rounded-2xl border border-slate-200 bg-white py-1 shadow-lg dark:border-neutral-700 dark:bg-neutral-900"
         >
           <Link href={directoryHomePath(locale)} role="menuitem" onClick={() => setOpen(false)} className={itemClasses}>
             Business Directory

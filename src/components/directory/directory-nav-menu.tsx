@@ -112,7 +112,14 @@ export function DirectoryNavMenu({
       {open && (
         <div
           role="menu"
-          className="absolute right-0 z-30 mt-2 w-56 overflow-hidden rounded-2xl border border-slate-200 bg-white py-1 shadow-lg dark:border-neutral-700 dark:bg-neutral-900"
+          // max-h + overflow-y-auto: a signed-in business viewer's full list
+          // (directory links, Add Business, the My Business section, the My
+          // CRM section, sign out) comfortably exceeds a phone's viewport
+          // height — this scrolls within the dropdown itself instead of
+          // running off the bottom of the screen. overscroll-contain keeps
+          // that scroll from also dragging the page behind it once the
+          // dropdown itself hits its own top/bottom.
+          className="absolute right-0 z-30 mt-2 max-h-[min(32rem,80vh)] w-56 overflow-y-auto overscroll-contain rounded-2xl border border-slate-200 bg-white py-1 shadow-lg dark:border-neutral-700 dark:bg-neutral-900"
         >
           {/* Same directoryLabel/Store combination both viewer states used
               to render separately — this is the state that link was
