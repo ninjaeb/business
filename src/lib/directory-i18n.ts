@@ -733,6 +733,9 @@ export type DirectoryStrings = {
   navDashboard: string;
   navMyListings: string;
   navTestimonials: string;
+  // Keyed by href (/business-portal/testimonial-links), not by the page's
+  // current display name — "Request Testimonial" as of BUSINESS_NAV_ITEMS,
+  // matching whatever that page is called today.
   navTestimonialLinks: string;
   // The "My CRM" group heading BUSINESS_NAV_ITEMS attaches to its
   // "Business Leads" entry (see PartnerSidebar/PartnerNavMenu's own
@@ -1032,7 +1035,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navDashboard: "Dashboard",
     navMyListings: "My Business",
     navTestimonials: "Testimonials",
-    navTestimonialLinks: "Review Links",
+    navTestimonialLinks: "Request Testimonial",
     navMyCrm: "My CRM",
     navBusinessLeads: "Business Leads",
     navCompanies: "Companies",
@@ -1323,7 +1326,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navDashboard: "仪表盘",
     navMyListings: "我的企业",
     navTestimonials: "客户评价",
-    navTestimonialLinks: "评价链接",
+    navTestimonialLinks: "请求评价",
     navMyCrm: "我的 CRM",
     navBusinessLeads: "商业线索",
     navCompanies: "公司",
@@ -1618,7 +1621,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navDashboard: "Papan Pemuka",
     navMyListings: "Perniagaan saya",
     navTestimonials: "Testimoni",
-    navTestimonialLinks: "Pautan Testimoni",
+    navTestimonialLinks: "Minta Testimoni",
     navMyCrm: "CRM Saya",
     navBusinessLeads: "Petunjuk Perniagaan",
     navCompanies: "Syarikat",
@@ -1691,6 +1694,10 @@ export function localizedBusinessNavItems(locale: DirectoryLocale): { href: stri
     "/business-portal/listings": t.navMyListings,
     "/business-portal/testimonials": t.navTestimonials,
     "/business-portal/testimonial-links": t.navTestimonialLinks,
+    // Reuses the public listing page's own "Business Partners" section
+    // heading (businessPartnersHeading) rather than a second copy of the
+    // same two words — see that field's own comment.
+    "/business-portal/business-partners": t.businessPartnersHeading,
     "/business-portal/business-leads": t.navBusinessLeads,
     "/business-portal/companies": t.navCompanies,
     "/business-portal/contacts": t.navContacts,
