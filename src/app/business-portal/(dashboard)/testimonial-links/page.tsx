@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Link2, Plus } from "lucide-react";
+import { Link2, Pencil, Plus } from "lucide-react";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { listTestimonialRequestLinks, testimonialRequestUrl } from "@/lib/testimonial-request-links";
 import { deleteTestimonialRequestLink } from "@/app/actions/testimonial-request-links";
@@ -29,12 +29,12 @@ export default async function TestimonialRequestLinksPage() {
   return (
     <div className="space-y-6">
       <PageHeader
-        title="Review links"
+        title="Request Testimonial"
         description="Create a unique link to send a specific customer — no account needed on their end. It opens straight to a testimonial form, prefilled with whatever you already know about them."
         actions={
           <Link href="/business-portal/testimonial-links/new" className={buttonClasses()}>
             <Plus className="h-4 w-4" />
-            New link
+            New Testimonial Request
           </Link>
         }
       />
@@ -44,12 +44,12 @@ export default async function TestimonialRequestLinksPage() {
           {links.length === 0 ? (
             <EmptyState
               icon={Link2}
-              title="No review links yet."
+              title="No testimonial requests yet."
               description="Create one to send a customer straight to your testimonial form — tag it with what you did for them so the review has context."
               action={
                 <Link href="/business-portal/testimonial-links/new" className={buttonClasses()}>
                   <Plus className="h-4 w-4" />
-                  New link
+                  New Testimonial Request
                 </Link>
               }
             />
@@ -64,6 +64,7 @@ export default async function TestimonialRequestLinksPage() {
                     <th className="py-2 pr-3 font-medium">Status</th>
                     <th className="py-2 pr-3 font-medium">Created</th>
                     <th className="py-2 pr-3 font-medium">Link</th>
+                    <th className="py-2 pr-3 font-medium"></th>
                     <th className="py-2 pr-3 font-medium"></th>
                   </tr>
                 </thead>
@@ -91,8 +92,14 @@ export default async function TestimonialRequestLinksPage() {
                         <CopyLinkButton url={testimonialRequestUrl(siteOrigin, link.id)} />
                       </td>
                       <td className="py-2.5 pr-3">
+                        <Link href={`/business-portal/testimonial-links/${link.id}/edit`} className={buttonClasses("secondary", "sm")}>
+                          <Pencil className="h-3.5 w-3.5" />
+                          Edit
+                        </Link>
+                      </td>
+                      <td className="py-2.5 pr-3">
                         <form action={deleteTestimonialRequestLink.bind(null, link.id)}>
-                          <ConfirmSubmitButton confirmMessage="Delete this review link? This can't be undone.">
+                          <ConfirmSubmitButton confirmMessage="Delete this testimonial request? This can't be undone.">
                             Delete
                           </ConfirmSubmitButton>
                         </form>
