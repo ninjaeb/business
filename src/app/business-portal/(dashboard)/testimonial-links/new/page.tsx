@@ -23,8 +23,8 @@ export default async function NewTestimonialRequestLinkPage() {
   return (
     <div>
       <PageHeader
-        breadcrumbs={[{ label: "Review links", href: "/business-portal/testimonial-links" }, { label: "New link" }]}
-        title="New review link"
+        breadcrumbs={[{ label: "Request Testimonial", href: "/business-portal/testimonial-links" }, { label: "New request" }]}
+        title="New Testimonial Request"
       />
       <Card>
         <CardBody>

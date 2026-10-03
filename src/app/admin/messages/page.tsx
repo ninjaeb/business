@@ -6,7 +6,13 @@ import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
 import { MessageTemplateEditor } from "@/components/settings/message-template-editor";
 
-const EMAIL_KEYS: MessageTemplateKey[] = ["lead_notification_email", "testimonial_notification_email", "lead_reply_email"];
+const EMAIL_KEYS: MessageTemplateKey[] = [
+  "lead_notification_email",
+  "testimonial_notification_email",
+  "business_partner_request_email",
+  "business_partner_invite_email",
+  "lead_reply_email",
+];
 const WHATSAPP_KEYS: MessageTemplateKey[] = ["lead_reply_whatsapp_draft", "contact_whatsapp", "recommend_message", "footer_whatsapp"];
 
 async function TemplateCard({ templateKey }: { templateKey: MessageTemplateKey }) {
@@ -73,12 +79,18 @@ export default async function AdminMessagesPage() {
           ))}
         </div>
         <Card>
-          <CardBody>
+          <CardBody className="space-y-2">
             <p className="text-sm text-slate-600 dark:text-slate-300">
               <strong className="font-semibold text-slate-800 dark:text-slate-100">New-lead WhatsApp alert to partners</strong>{" "}
               isn&apos;t editable here — it sends through a Meta-approved WhatsApp Business template (
               <code className="rounded bg-slate-100 px-1 py-0.5 text-xs dark:bg-neutral-800">new_directory_lead_notification</code>),
               and its wording has to be changed and re-approved directly in Meta Business Manager, not from this app.
+            </p>
+            <p className="text-sm text-slate-600 dark:text-slate-300">
+              <strong className="font-semibold text-slate-800 dark:text-slate-100">Business Partner invite WhatsApp message</strong>{" "}
+              is the same — its own template (
+              <code className="rounded bg-slate-100 px-1 py-0.5 text-xs dark:bg-neutral-800">business_partner_invite</code>) is edited
+              and re-approved in Meta Business Manager, not here.
             </p>
           </CardBody>
         </Card>
