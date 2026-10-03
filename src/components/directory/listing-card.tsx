@@ -150,12 +150,16 @@ export function ListingCard({
             // card; 90px from lg up, where a two-column card grid has width
             // to spare.
             <div className="flex items-center gap-3">
+              {/* rounded-none overrides ListingLogo's own default rounded-full
+                  (tailwind-merge resolves the conflict in this later class's
+                  favor) — a square crop here, unlike every other place this
+                  component renders a circular avatar. */}
               <ListingLogo
                 name={listing.companyName}
                 logoUrl={listing.logoUrl}
                 size={90}
                 loading="lazy"
-                className="h-10 w-10 shrink-0 text-base lg:h-[90px] lg:w-[90px] lg:text-2xl"
+                className="h-10 w-10 shrink-0 rounded-none text-base lg:h-[90px] lg:w-[90px] lg:text-2xl"
               />
               <div className="min-w-0 flex-1 space-y-0.5">
                 <h3 className="truncate text-base font-bold tracking-tight text-slate-900 dark:text-slate-100">
