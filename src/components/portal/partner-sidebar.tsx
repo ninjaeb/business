@@ -1,5 +1,6 @@
 "use client";
 
+import { Fragment } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { LogOut, Plus } from "lucide-react";
@@ -7,6 +8,8 @@ import { cn } from "@/lib/utils";
 import { createListingAction } from "@/app/actions/directory";
 import { BUSINESS_NAV_ITEMS } from "@/lib/business-nav-items";
 import { directoryHomePath, type DirectoryLocale } from "@/lib/directory-i18n";
+
+const navHeadingClasses = "px-3 pb-1 pt-3 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500";
 
 function isActive(pathname: string, href: string): boolean {
   return href === "/business-portal" ? pathname === "/business-portal" : pathname.startsWith(href);
@@ -55,17 +58,17 @@ export function PartnerSidebar({
           </button>
         </form>
 
-        <div className="px-3 pb-1 pt-3 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500">
-          My Business
-        </div>
+        <div className={navHeadingClasses}>My Business</div>
         {BUSINESS_NAV_ITEMS.map((item) => (
-          <Link
-            key={item.href}
-            href={item.href}
-            className={cn(itemClasses, isActive(pathname, item.href) ? activeItemClasses : inactiveItemClasses)}
-          >
-            {item.label}
-          </Link>
+          <Fragment key={item.href}>
+            {"heading" in item && <div className={navHeadingClasses}>{item.heading}</div>}
+            <Link
+              href={item.href}
+              className={cn(itemClasses, isActive(pathname, item.href) ? activeItemClasses : inactiveItemClasses)}
+            >
+              {item.label}
+            </Link>
+          </Fragment>
         ))}
       </nav>
 
