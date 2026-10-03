@@ -169,17 +169,13 @@ function TestimonialRatingBadge({
   );
 }
 
-// Leads with the combined Overall figure (see combinedRating) when the
-// listing has both a Google rating and its own rated testimonials, then
-// shows each source behind it — every one of the three gets a small
-// visible label here (unlike the single-badge case below, where the
-// number's own context makes its source obvious) so none of the three
-// figures reads as any of the others shown twice. Falls back to whichever
-// single source exists alone, or neither, exactly as before. buildJsonLd's
-// own `aggregateRating` mirrors this exactly (see combinedRating's own
-// comment and buildJsonLd's call site) — the one figure a visitor sees
-// leading here is always the one a search engine reads out of this page's
-// structured data.
+// A single rating badge, never more than one at a time: the combined
+// Overall figure (see combinedRating) when the listing has both a Google
+// rating and its own rated testimonials, otherwise whichever single source
+// exists, otherwise nothing. buildJsonLd's own `aggregateRating` mirrors
+// this exactly (see combinedRating's own comment and buildJsonLd's call
+// site) — the one figure a visitor sees here is always the one a search
+// engine reads out of this page's structured data.
 function RatingBadge({
   listing,
   testimonialRating,
@@ -195,27 +191,9 @@ function RatingBadge({
   testimonialRatingLabel: string;
   overallRatingLabel: string;
 }) {
-  const hasGoogleRating = listing.googleRating !== null;
   const overall = combinedRating(listing, testimonialRating);
-  if (hasGoogleRating && testimonialRating && overall) {
-    return (
-      <>
-        <span className="inline-flex items-center gap-1.5">
-          <span className="text-xs text-slate-400 dark:text-slate-500">{overallRatingLabel}</span>
-          <OverallRatingBadge rating={overall} ratingLabel={overallRatingLabel} />
-        </span>
-        <span className="inline-flex items-center gap-1.5">
-          <span className="text-xs text-slate-400 dark:text-slate-500">{googleRatingLabel}</span>
-          <GoogleRatingBadge listing={listing} ratingLabel={googleRatingLabel} />
-        </span>
-        <span className="inline-flex items-center gap-1.5">
-          <span className="text-xs text-slate-400 dark:text-slate-500">{testimonialRatingLabel}</span>
-          <TestimonialRatingBadge rating={testimonialRating} ratingLabel={testimonialRatingLabel} href={testimonialsHref} />
-        </span>
-      </>
-    );
-  }
-  if (hasGoogleRating) return <GoogleRatingBadge listing={listing} ratingLabel={googleRatingLabel} />;
+  if (overall) return <OverallRatingBadge rating={overall} ratingLabel={overallRatingLabel} />;
+  if (listing.googleRating !== null) return <GoogleRatingBadge listing={listing} ratingLabel={googleRatingLabel} />;
   if (testimonialRating) {
     return <TestimonialRatingBadge rating={testimonialRating} ratingLabel={testimonialRatingLabel} href={testimonialsHref} />;
   }

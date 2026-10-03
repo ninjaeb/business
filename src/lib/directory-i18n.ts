@@ -481,10 +481,10 @@ export type DirectoryStrings = {
   // instead of googleRatingLabel's badge when the listing has no Google
   // rating of its own but does have APPROVED testimonials.
   testimonialRatingLabel: string;
-  // Label (aria and, like googleRatingLabel/testimonialRatingLabel in the
-  // both-exist case, a small visible prefix too — see OverallRatingBadge)
-  // for the combined Google+testimonial figure RatingBadge shows when a
-  // listing has both — a weighted average of the two, not either one
+  // aria-label on RatingBadge's combined-figure case (see OverallRatingBadge)
+  // — shown instead of googleRatingLabel's or testimonialRatingLabel's own
+  // badge when the listing has both a Google rating and APPROVED
+  // testimonials, a weighted average of the two rather than either one
   // alone, so it needs its own label distinct from both.
   overallRatingLabel: string;
   // The listing page's "Recommend" affordances, open to every visitor —
