@@ -13,9 +13,12 @@ import { Badge } from "@/components/ui/badge";
 import { buttonClasses } from "@/components/ui/button";
 import { ConfirmSubmitButton } from "@/components/ui/confirm-submit-button";
 import { EmptyState } from "@/components/ui/empty-state";
+import { getDirectoryLocale } from "@/lib/directory-locale";
+import { formatPortalCompaniesCount, getPortalCompaniesStrings } from "@/lib/portal-companies-i18n";
 
 export default async function PartnerCompanyDetailPage({ params }: { params: Promise<{ id: string }> }) {
-  const user = await requireCompletePartnerProfile();
+  const [user, locale] = await Promise.all([requireCompletePartnerProfile(), getDirectoryLocale()]);
+  const t = getPortalCompaniesStrings(locale);
   const { id } = await params;
   const currency = user.currency ?? DEFAULT_PARTNER_CURRENCY;
   const company = await db.partnerCompany.findFirst({
@@ -31,19 +34,19 @@ export default async function PartnerCompanyDetailPage({ params }: { params: Pro
   return (
     <div className="space-y-6">
       <PageHeader
-        breadcrumbs={[{ label: "Companies", href: "/business-portal/companies" }, { label: company.name }]}
+        breadcrumbs={[{ label: t.companiesTitle, href: "/business-portal/companies" }, { label: company.name }]}
         title={company.name}
         description={company.industry ? INDUSTRY_LABELS[company.industry] : undefined}
         actions={
           <>
             <Link href={`/business-portal/companies/${company.id}/edit`} className={buttonClasses("secondary")}>
               <Pencil className="h-4 w-4" />
-              Edit
+              {t.editCta}
             </Link>
             <form action={deletePartnerCompany.bind(null, company.id)}>
-              <ConfirmSubmitButton confirmMessage="Delete this company? Its contacts, deals, and tasks will be unlinked.">
+              <ConfirmSubmitButton confirmMessage={t.deleteConfirmMessage}>
                 <Trash2 className="h-4 w-4" />
-                Delete
+                {t.deleteCta}
               </ConfirmSubmitButton>
             </form>
           </>
@@ -52,15 +55,15 @@ export default async function PartnerCompanyDetailPage({ params }: { params: Pro
 
       <Card>
         <CardHeader>
-          <CardTitle>Details</CardTitle>
+          <CardTitle>{t.detailsHeading}</CardTitle>
         </CardHeader>
         <CardBody className="grid gap-3 text-sm sm:grid-cols-2">
-          <DetailRow label="Website" value={company.website} />
-          <DetailRow label="Phone" value={company.phone} />
-          <DetailRow label="Address" value={company.address} />
+          <DetailRow label={t.websiteLabel} value={company.website} />
+          <DetailRow label={t.phoneLabel} value={company.phone} />
+          <DetailRow label={t.addressLabel} value={company.address} />
           {company.notes && (
             <div className="sm:col-span-2">
-              <p className="text-xs font-medium text-slate-500 dark:text-slate-400">Notes</p>
+              <p className="text-xs font-medium text-slate-500 dark:text-slate-400">{t.notesLabel}</p>
               <p className="mt-1 whitespace-pre-wrap text-slate-700 dark:text-slate-300">{company.notes}</p>
             </div>
           )}
@@ -70,15 +73,15 @@ export default async function PartnerCompanyDetailPage({ params }: { params: Pro
       <div className="grid items-start gap-6 lg:grid-cols-2">
         <Card>
           <CardHeader>
-            <CardTitle>Contacts ({company.contacts.length})</CardTitle>
+            <CardTitle>{formatPortalCompaniesCount(t.contactsHeadingTemplate, company.contacts.length)}</CardTitle>
             <Link href={`/business-portal/contacts/new?companyId=${company.id}`} className={buttonClasses("secondary", "sm")}>
               <Plus className="h-4 w-4" />
-              Add contact
+              {t.addContactCta}
             </Link>
           </CardHeader>
           <CardBody>
             {company.contacts.length === 0 ? (
-              <EmptyState title="No contacts linked to this company yet." />
+              <EmptyState title={t.noContactsEmpty} />
             ) : (
               <ul className="divide-y divide-slate-100 dark:divide-neutral-800">
                 {company.contacts.map((contact) => (
@@ -101,15 +104,15 @@ export default async function PartnerCompanyDetailPage({ params }: { params: Pro
 
         <Card>
           <CardHeader>
-            <CardTitle>Deals ({company.deals.length})</CardTitle>
+            <CardTitle>{formatPortalCompaniesCount(t.dealsHeadingTemplate, company.deals.length)}</CardTitle>
             <Link href={`/business-portal/deals/new?companyId=${company.id}`} className={buttonClasses("secondary", "sm")}>
               <Plus className="h-4 w-4" />
-              Add deal
+              {t.addDealCta}
             </Link>
           </CardHeader>
           <CardBody>
             {company.deals.length === 0 ? (
-              <EmptyState title="No deals linked to this company yet." />
+              <EmptyState title={t.noDealsEmpty} />
             ) : (
               <ul className="divide-y divide-slate-100 dark:divide-neutral-800">
                 {company.deals.map((deal) => (
@@ -134,15 +137,15 @@ export default async function PartnerCompanyDetailPage({ params }: { params: Pro
 
       <Card>
         <CardHeader>
-          <CardTitle>Open tasks ({company.tasks.length})</CardTitle>
+          <CardTitle>{formatPortalCompaniesCount(t.openTasksHeadingTemplate, company.tasks.length)}</CardTitle>
           <Link href={`/business-portal/tasks/new?companyId=${company.id}`} className={buttonClasses("secondary", "sm")}>
             <Plus className="h-4 w-4" />
-            Add task
+            {t.addTaskCta}
           </Link>
         </CardHeader>
         <CardBody>
           {company.tasks.length === 0 ? (
-            <EmptyState title="No open tasks for this company." />
+            <EmptyState title={t.noOpenTasksEmpty} />
           ) : (
             <ul className="divide-y divide-slate-100 dark:divide-neutral-800">
               {company.tasks.map((task) => (

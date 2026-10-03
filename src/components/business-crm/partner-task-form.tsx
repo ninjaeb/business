@@ -8,6 +8,8 @@ import { FieldGroup, Input, Textarea } from "@/components/ui/field";
 import { Combobox } from "@/components/ui/combobox";
 import { DatePicker } from "@/components/ui/date-picker";
 import { formatDateInput, fullName } from "@/lib/format";
+import type { DirectoryLocale } from "@/lib/directory-i18n";
+import { PORTAL_TASKS_STRINGS } from "@/lib/portal-tasks-i18n";
 
 type CompanyOption = { id: string; name: string };
 type ContactOption = { id: string; firstName: string; lastName: string | null; companyId: string | null };
@@ -27,7 +29,8 @@ export function PartnerTaskForm({
   defaultCompanyId,
   defaultContactId,
   defaultDealId,
-  submitLabel = "Save task",
+  locale,
+  submitLabel,
 }: {
   action: (prevState: PartnerTaskFormState, formData: FormData) => Promise<PartnerTaskFormState>;
   task?: PartnerTask;
@@ -37,8 +40,13 @@ export function PartnerTaskForm({
   defaultCompanyId?: string;
   defaultContactId?: string;
   defaultDealId?: string;
+  locale: DirectoryLocale;
+  // Defaults to saveTaskCta below (the edit page's own usage) — the
+  // new-task page overrides this with its own createTaskSubmitLabel.
   submitLabel?: string;
 }) {
+  const t = PORTAL_TASKS_STRINGS[locale];
+  const resolvedSubmitLabel = submitLabel ?? t.saveTaskCta;
   const [state, formAction, pending] = useActionState(action, undefined);
   const values = state?.values;
   const [companyId, setCompanyId] = useState(values?.companyId ?? task?.companyId ?? defaultCompanyId ?? "");
@@ -71,20 +79,20 @@ export function PartnerTaskForm({
 
   return (
     <form action={formAction} className="space-y-4">
-      <FieldGroup label="Task" htmlFor="title" required>
-        <Input id="title" name="title" required defaultValue={values?.title ?? task?.title} placeholder="Follow up on proposal" />
+      <FieldGroup label={t.taskTitleLabel} htmlFor="title" required>
+        <Input id="title" name="title" required defaultValue={values?.title ?? task?.title} placeholder={t.taskTitlePlaceholder} />
       </FieldGroup>
 
-      <FieldGroup label="Description" htmlFor="description">
-        <Textarea id="description" name="description" rows={3} defaultValue={values?.description ?? task?.description ?? ""} placeholder="Any extra detail…" />
+      <FieldGroup label={t.descriptionLabel} htmlFor="description">
+        <Textarea id="description" name="description" rows={3} defaultValue={values?.description ?? task?.description ?? ""} placeholder={t.descriptionPlaceholder} />
       </FieldGroup>
 
-      <FieldGroup label="Due date" htmlFor="dueDate">
+      <FieldGroup label={t.dueDateLabel} htmlFor="dueDate">
         <DatePicker id="dueDate" name="dueDate" defaultValue={values?.dueDate ?? formatDateInput(task?.dueDate)} />
       </FieldGroup>
 
       <div className="grid gap-4 sm:grid-cols-3">
-        <FieldGroup label="Company" htmlFor="companyId">
+        <FieldGroup label={t.companyLabel} htmlFor="companyId">
           <Combobox
             id="companyId"
             name="companyId"
@@ -94,7 +102,7 @@ export function PartnerTaskForm({
             options={[{ value: "", label: "—" }, ...companies.map((company) => ({ value: company.id, label: company.name }))]}
           />
         </FieldGroup>
-        <FieldGroup label="Contact" htmlFor="contactId">
+        <FieldGroup label={t.contactLabel} htmlFor="contactId">
           <Combobox
             id="contactId"
             name="contactId"
@@ -107,7 +115,7 @@ export function PartnerTaskForm({
             ]}
           />
         </FieldGroup>
-        <FieldGroup label="Deal" htmlFor="dealId">
+        <FieldGroup label={t.dealLabel} htmlFor="dealId">
           <Combobox
             id="dealId"
             name="dealId"
@@ -119,11 +127,13 @@ export function PartnerTaskForm({
         </FieldGroup>
       </div>
 
+      {/* state.error originates server-side in app/actions/partner-tasks.ts
+          (outside this module's file set), so it stays English here. */}
       {state?.error && <p className="text-sm text-rose-600 dark:text-rose-400">{state.error}</p>}
 
       <div className="flex justify-end gap-2 pt-2">
         <Button type="submit" disabled={pending}>
-          {pending ? "Saving…" : submitLabel}
+          {pending ? t.savingCta : resolvedSubmitLabel}
         </Button>
       </div>
     </form>

@@ -7,9 +7,12 @@ import { Card, CardBody } from "@/components/ui/card";
 import { EmptyState } from "@/components/ui/empty-state";
 import { buttonClasses } from "@/components/ui/button";
 import { INDUSTRY_LABELS } from "@/lib/labels";
+import { getDirectoryLocale } from "@/lib/directory-locale";
+import { formatPortalCompanyCount, getPortalCompaniesStrings } from "@/lib/portal-companies-i18n";
 
 export default async function PartnerCompaniesPage() {
-  const user = await requireCompletePartnerProfile();
+  const [user, locale] = await Promise.all([requireCompletePartnerProfile(), getDirectoryLocale()]);
+  const t = getPortalCompaniesStrings(locale);
   const companies = await db.partnerCompany.findMany({
     where: { partnerId: user.id },
     orderBy: { name: "asc" },
@@ -19,12 +22,12 @@ export default async function PartnerCompaniesPage() {
   return (
     <div className="space-y-6">
       <PageHeader
-        title="Companies"
-        description={`${companies.length} ${companies.length === 1 ? "company" : "companies"}`}
+        title={t.companiesTitle}
+        description={formatPortalCompanyCount(companies.length, locale)}
         actions={
           <Link href="/business-portal/companies/new" className={buttonClasses()}>
             <Plus className="h-4 w-4" />
-            New company
+            {t.newCompanyCta}
           </Link>
         }
       />
@@ -34,12 +37,12 @@ export default async function PartnerCompaniesPage() {
           {companies.length === 0 ? (
             <EmptyState
               icon={Building2}
-              title="No companies yet."
-              description="Add the businesses you work with to start tracking contacts and deals against them."
+              title={t.emptyTitle}
+              description={t.emptyDescription}
               action={
                 <Link href="/business-portal/companies/new" className={buttonClasses()}>
                   <Plus className="h-4 w-4" />
-                  New company
+                  {t.newCompanyCta}
                 </Link>
               }
             />
@@ -48,10 +51,10 @@ export default async function PartnerCompaniesPage() {
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-slate-200 text-left text-xs text-slate-500 dark:border-neutral-800 dark:text-slate-400">
-                    <th className="py-2 pr-3 font-medium">Company</th>
-                    <th className="py-2 pr-3 font-medium">Industry</th>
-                    <th className="py-2 pr-3 font-medium">Contacts</th>
-                    <th className="py-2 pr-3 font-medium">Deals</th>
+                    <th className="py-2 pr-3 font-medium">{t.columnCompany}</th>
+                    <th className="py-2 pr-3 font-medium">{t.columnIndustry}</th>
+                    <th className="py-2 pr-3 font-medium">{t.columnContacts}</th>
+                    <th className="py-2 pr-3 font-medium">{t.columnDeals}</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100 dark:divide-neutral-800">

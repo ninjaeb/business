@@ -5,6 +5,8 @@ import { Card, CardBody } from "@/components/ui/card";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { db } from "@/lib/db";
 import { DEFAULT_PARTNER_CURRENCY } from "@/lib/format";
+import { getDirectoryLocale } from "@/lib/directory-locale";
+import { PORTAL_DEALS_STRINGS } from "@/lib/portal-deals-i18n";
 
 export default async function NewPartnerDealPage({
   searchParams,
@@ -12,6 +14,8 @@ export default async function NewPartnerDealPage({
   searchParams: Promise<{ companyId?: string; contactId?: string }>;
 }) {
   const user = await requireCompletePartnerProfile();
+  const locale = await getDirectoryLocale();
+  const t = PORTAL_DEALS_STRINGS[locale];
   const { companyId, contactId } = await searchParams;
   const currency = user.currency ?? DEFAULT_PARTNER_CURRENCY;
   const [companies, contacts] = await Promise.all([
@@ -25,7 +29,7 @@ export default async function NewPartnerDealPage({
 
   return (
     <div>
-      <PageHeader breadcrumbs={[{ label: "Deals", href: "/business-portal/deals" }, { label: "New deal" }]} title="New deal" />
+      <PageHeader breadcrumbs={[{ label: t.pageTitle, href: "/business-portal/deals" }, { label: t.newDealLabel }]} title={t.newDealLabel} />
       <Card>
         <CardBody>
           <PartnerDealForm
@@ -35,7 +39,8 @@ export default async function NewPartnerDealPage({
             defaultCompanyId={companyId}
             defaultContactId={contactId}
             currency={currency}
-            submitLabel="Create deal"
+            locale={locale}
+            submitLabel={t.createDealSubmit}
           />
         </CardBody>
       </Card>
