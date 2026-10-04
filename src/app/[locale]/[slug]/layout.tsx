@@ -614,7 +614,7 @@ export default async function ListingLayout({
             zoomable
           />
           <div className="min-w-0 flex-1">
-            <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl dark:text-slate-100">
+            <h1 className="text-[28px] font-semibold tracking-tight text-slate-900 sm:text-[30px] lg:text-[36px] dark:text-slate-100">
               {listing.companyName}
             </h1>
             {display.tagline && <p className="mt-1 text-base text-slate-600 dark:text-slate-300">{display.tagline}</p>}
