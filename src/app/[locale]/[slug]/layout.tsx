@@ -65,6 +65,7 @@ import { ReferralViewBeacon } from "@/components/directory/referral-view-beacon"
 import { DirectoryBreadcrumbs } from "@/components/directory/directory-breadcrumbs";
 import { ListingSectionNav } from "@/components/directory/listing-section-nav";
 import { WriteTestimonialButton } from "@/components/directory/write-testimonial-button";
+import { BusinessPartnersSidebar } from "@/components/directory/business-partners-sidebar";
 
 export const dynamic = "force-dynamic";
 
@@ -402,10 +403,12 @@ export default async function ListingLayout({
     // "every section page re-queries the same request-scoped listing"
     // pattern getPublishedListingBySlug's own comment describes).
     getPublishedBranchListings(listing.id),
-    // Only to decide whether the Business Partners tab below should show
-    // at all — the tab page itself re-fetches this same list (same "every
-    // section page re-queries the same request-scoped listing" pattern as
-    // branches above).
+    // Decides whether the Business Partners tab below should show at all
+    // (the tab page itself re-fetches this same list, same "every section
+    // page re-queries the same request-scoped listing" pattern as branches
+    // above) and feeds the sidebar widget right below the "Get in touch"
+    // card (see BusinessPartnersSidebar) — already the DirectoryGridListing
+    // shape both that widget and the tab's own ListingCard rendering need.
     getPublishedBusinessPartners(listing.id, resolved),
     // Only to decide whether the Products & Services tab/jump-bar link
     // below should show even when this listing has no services of its own
@@ -538,7 +541,7 @@ export default async function ListingLayout({
     // Right after Testimonials, also last — same "not the business's own
     // content" reasoning (see above), and conditional like every tab but
     // Testimonials itself: only shown once there's at least one ACCEPTED
-    // BusinessPartnerLink to display (see getPublishedBusinessPartners).
+    // BusinessPartnerLink to display (see getPublishedBusinessPartnerListings).
     businessPartners.length > 0 && {
       href: directoryListingBusinessPartnersPath(resolved, slug),
       label: t.businessPartnersHeading,
@@ -868,46 +871,70 @@ export default async function ListingLayout({
             {children}
           </div>
 
-          <InquiryScrollTarget id="contact" className="scroll-mt-32 md:sticky md:top-32 md:self-start">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-base">{t.contactHeading}</CardTitle>
-              </CardHeader>
-              <CardBody>
-                <p className="mb-4 text-base text-slate-500 dark:text-slate-400">{t.contactSubheading}</p>
-                {(listing.phone || listing.whatsAppNumber) && (
-                  <div className="mb-4 flex gap-2">
-                    {listing.phone && (
-                      <a href={`tel:${listing.phone}`} className={buttonClasses("secondary", "md", "min-h-12 flex-1 justify-center gap-2")}>
-                        <Phone className="h-4 w-4" />
-                        {t.contactCallCta}
-                      </a>
+          {/* Plain grid item (default align-self: stretch) — fills the
+              whole tall row (matching the left column's height) so the
+              inner sticky group below has real room to float through it,
+              same mechanism "Get in touch" alone relied on before it
+              gained a sidebar neighbor (self-start on a *sticky* element
+              directly would instead shrink its own containing block to
+              its own content height, breaking the long scroll-stick). */}
+          <div>
+            {/* The actual sticky group — "Get in touch" and, directly below
+                it, the Business Partners widget (see BusinessPartnersSidebar)
+                scroll and stick together as one unit. */}
+            <div className="space-y-6 md:sticky md:top-32">
+              <InquiryScrollTarget id="contact" className="scroll-mt-32">
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-base">{t.contactHeading}</CardTitle>
+                  </CardHeader>
+                  <CardBody>
+                    <p className="mb-4 text-base text-slate-500 dark:text-slate-400">{t.contactSubheading}</p>
+                    {(listing.phone || listing.whatsAppNumber) && (
+                      <div className="mb-4 flex gap-2">
+                        {listing.phone && (
+                          <a href={`tel:${listing.phone}`} className={buttonClasses("secondary", "md", "min-h-12 flex-1 justify-center gap-2")}>
+                            <Phone className="h-4 w-4" />
+                            {t.contactCallCta}
+                          </a>
+                        )}
+                        {listing.whatsAppNumber && (
+                          <ExternalLink
+                            href={whatsAppUrl(listing.whatsAppNumber, contactWhatsAppMessage)}
+                            className={buttonClasses("secondary", "md", "min-h-12 flex-1 justify-center gap-2")}
+                          >
+                            <MessageCircle className="h-4 w-4" />
+                            {t.contactWhatsAppCta}
+                          </ExternalLink>
+                        )}
+                      </div>
                     )}
-                    {listing.whatsAppNumber && (
-                      <ExternalLink
-                        href={whatsAppUrl(listing.whatsAppNumber, contactWhatsAppMessage)}
-                        className={buttonClasses("secondary", "md", "min-h-12 flex-1 justify-center gap-2")}
-                      >
-                        <MessageCircle className="h-4 w-4" />
-                        {t.contactWhatsAppCta}
-                      </ExternalLink>
-                    )}
-                  </div>
-                )}
-                <DirectoryLeadForm slug={slug} locale={resolved} />
-              </CardBody>
-            </Card>
-          </InquiryScrollTarget>
+                    <DirectoryLeadForm slug={slug} locale={resolved} />
+                  </CardBody>
+                </Card>
+              </InquiryScrollTarget>
+
+              {businessPartners.length > 0 && (
+                <BusinessPartnersSidebar
+                  partners={businessPartners}
+                  heading={t.businessPartnersHeading}
+                  viewLabel={t.viewListing}
+                  locale={resolved}
+                />
+              )}
+            </div>
+          </div>
         </div>
       </InquiryProvider>
 
       <RecommendBar title={listing.companyName} url={recommendUrl} message={recommendMessage} label={t.recommendLabel} />
 
       {/* Shown at every width, not just mobile: on md+ the Get in touch card
-          is a sticky right-hand column (see its own md:sticky md:top-32
-          above) — sticky only through the grid's own height, which runs the
-          whole way down the left column's real content, but still ends
-          before this bar's own row and RecommendBar above it. This bar
+          (and, right below it, the Business Partners sidebar widget) form a
+          sticky right-hand group (see its own md:sticky md:top-32 above) —
+          sticky only through the grid's own height, which runs the whole
+          way down the left column's real content, but still ends before
+          this bar's own row and RecommendBar above it. This bar
           stays truly fixed the whole way down, so "get in touch" is always
           one tap away regardless of scroll position, screen width, or which
           of this listing's pages a visitor is on — Contact is the one
