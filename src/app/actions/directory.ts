@@ -474,17 +474,18 @@ export async function rewriteListingDescription(
   return callAi(RewrittenTextSchema, LISTING_DESCRIPTION_SYSTEM_PROMPT, prompt);
 }
 
-export type VideoDetailsResult = { title: string | null; thumbnailUrl: string | null };
+export type VideoDetailsResult = { title: string | null; thumbnailUrl: string | null; description: string | null };
 
 // Partner-gated — called when a partner adds a video URL to the gallery
-// (see VideosEditor), so its title/thumbnail can be suggested and stored
-// right away rather than the public page ever calling out to YouTube/
-// Vimeo/etc. itself. Best-effort: a host this can't reach (Facebook, or any
-// failed/timed-out lookup) just comes back empty — see fetchVideoOEmbed.
+// (see VideosEditor), so its title/thumbnail/description can be suggested
+// and stored right away rather than the public page ever calling out to
+// YouTube/Vimeo/etc. itself. Best-effort: a host this can't reach (Facebook,
+// or any failed/timed-out lookup) just comes back empty — see
+// fetchVideoOEmbed.
 export async function fetchVideoDetails(url: string): Promise<VideoDetailsResult> {
   await requirePartnerAction();
   const result = await fetchVideoOEmbed(url);
-  return result ?? { title: null, thumbnailUrl: null };
+  return result ?? { title: null, thumbnailUrl: null, description: null };
 }
 
 const ServiceListSchema = z.object({
@@ -531,7 +532,11 @@ const SeoMetaSchema = z.object({
     .describe(
       "SEO title tag, ideally 50-60 characters. Include the company name, plus what the business actually does — prefer the pattern '{Company name} - {core service or keyword phrase}, {city}' (e.g. 'Acme Consulting - Corporate Tax Advisory, KL') over the bare company name alone, so the title itself tells a searcher what the business does.",
     ),
-  description: z.string().describe("SEO meta description, ideally 140-160 characters — compelling and specific, not generic."),
+  description: z
+    .string()
+    .describe(
+      "SEO meta description, aim for close to 255 characters (at least 200) — compelling and specific, never generic. The same text is reused verbatim as the Open Graph/Twitter Card preview when this page is shared, which shows far more than a Google snippet does, so use the extra room for real, concrete detail rather than stopping once you have a sentence or two.",
+    ),
 });
 
 const LISTING_SEO_SYSTEM_PROMPT =

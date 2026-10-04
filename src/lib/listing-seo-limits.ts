@@ -21,11 +21,15 @@ import type { ServiceEntry } from "@/lib/directory";
 // still worth allowing: Google sometimes shows a longer snippet (mobile,
 // certain queries), and the same seoDescription is reused verbatim for
 // Open Graph/Twitter Card previews, which tolerate more text than a SERP
-// snippet does. Content past ~160 characters just won't reliably show in a
-// plain Google search result, so the AI generator (see
-// LISTING_SEO_SYSTEM_PROMPT/AUTO_LISTING_SYSTEM_PROMPT in
-// src/app/actions/directory.ts) still targets ~140-160 for the part that
-// has to do the work there.
+// snippet does. The partner editor's own "Generate with AI" button (see
+// SeoMetaSchema/LISTING_SEO_SYSTEM_PROMPT in src/app/actions/directory.ts,
+// also shared by the admin SEO backfill action) targets close to this full
+// 255 to make the most of that OG/Twitter reuse, even though a plain
+// Google search result still only shows roughly its first ~155-160
+// characters. AI Auto Create's own one-pass listing setup
+// (AUTO_LISTING_SYSTEM_PROMPT) writes a separate, shorter ~140-160 target
+// instead, since there the SEO fields are just one of several pieces
+// written at once, not the thing a dedicated button exists to polish.
 export const MAX_SEO_TITLE_LENGTH = 60;
 export const MAX_SEO_DESCRIPTION_LENGTH = 255;
 
