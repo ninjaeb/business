@@ -106,7 +106,14 @@ function contentSecurityPolicy(): string {
     // breaking this button on every page it appears on. accounts.google.com
     // is already trusted elsewhere in this same policy (script-src/connect-
     // src/frame-src, for Google Identity Services' separate JS-SDK flow).
-    "form-action 'self' https://accounts.google.com",
+    // www.facebook.com — same exact shape, for the business portal's
+    // "Connect Facebook Page" button (src/components/business-crm/
+    // post-composer.tsx): a same-origin form POST to /api/facebook/connect,
+    // which 302s on to Facebook's own OAuth dialog
+    // (facebook.com/v21.0/dialog/oauth — see buildFacebookAuthUrl in
+    // src/lib/auth/facebook.ts). Missing here the same way accounts.google.com
+    // was missing above, with the identical silent-failure symptom.
+    "form-action 'self' https://accounts.google.com https://www.facebook.com",
     // Matches X-Frame-Options: SAMEORIGIN below, not the stricter 'none' —
     // this app never needs to be framed by *another* origin, but nothing
     // rules out framing itself.
