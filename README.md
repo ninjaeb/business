@@ -260,8 +260,11 @@ error from Facebook's API, recorded on that post (visible in the composer's
 own feed, with a Retry button) — the local post on this site still goes out
 regardless, only the Facebook half is affected. To post for real partners,
 submit the app for **App Review** (Meta App Dashboard → App Review →
-Permissions and Features → request `pages_manage_posts` +
-`pages_read_engagement`), which requires Business Verification and a
+Permissions and Features → request `pages_manage_posts` only — this app
+never reads a Page's posts, comments, or insights, so don't also request
+`pages_read_engagement`; Meta's review asks for a real justification and a
+screen recording per permission, and there'd be nothing honest to show for
+one this app doesn't use), which requires Business Verification and a
 screencast demonstrating the exact flow — reviewed by Meta, on their own
 timeline, not guaranteed to be approved.
 

@@ -16,11 +16,13 @@ const FACEBOOK_AUTH_ENDPOINT = `https://www.facebook.com/${FACEBOOK_OAUTH_VERSIO
 
 // pages_show_list: list the Pages the user manages (see fetchManagedPages).
 // pages_manage_posts: create a post as the Page (see src/lib/facebook.ts).
-// pages_read_engagement: Meta's own docs ask for this alongside
-// pages_manage_posts even though this app never reads engagement data —
-// omitting it has caused the Page picker to come back empty for some
-// accounts in Meta's own developer reports.
-const FACEBOOK_OAUTH_SCOPE = "pages_show_list,pages_manage_posts,pages_read_engagement";
+// Deliberately not pages_read_engagement — this app never reads a Page's
+// posts, comments, followers, or insights, only writes to it, and Meta's
+// own App Review asks for a real justification (plus a screen recording)
+// per permission requested. Claiming a use this app doesn't have is worse
+// than not having it: App Review would have nothing honest to demonstrate
+// for it.
+const FACEBOOK_OAUTH_SCOPE = "pages_show_list,pages_manage_posts";
 
 // Optional — the "Connect Facebook Page" button hides (and the connect
 // route refuses to start the flow) when these aren't set, same convention
