@@ -238,6 +238,7 @@ function buildJsonLd(
   listing: ListingWithMeta,
   url: string,
   images: { url: string; caption?: string }[],
+  logoUrl: string | null,
   testimonialRating: TestimonialRatingSummary | null,
   testimonialReviews: { rating: number; body: string; authorName: string; createdAt: Date }[],
 ) {
@@ -261,6 +262,13 @@ function buildJsonLd(
     );
     jsonLd.image = jsonLdImages.length === 1 ? jsonLdImages[0] : jsonLdImages;
   }
+  // The dedicated `logo` property (LocalBusiness inherits it from
+  // Organization) — distinct from `image` above, which is the general
+  // "photos of this business" gallery. This is the one Google's own Logo
+  // structured-data feature reads to decide what thumbnail to surface
+  // beside this business's result, so it's worth sending even though
+  // `images[0]` is already the same URL whenever a logo exists.
+  if (logoUrl) jsonLd.logo = logoUrl;
   // A structured PostalAddress (falling back to the free-text `address` as
   // streetAddress when city/state/country aren't set) reads far better to
   // both a rich-result parser and an AI crawler extracting "where is this
@@ -562,6 +570,7 @@ export default async function ListingLayout({
             { ...listing, services: display.services },
             pageUrl,
             listingImageEntries(listing, siteOrigin, slug),
+            buildListingLogoUrl(listing, siteOrigin, slug),
             testimonialRating,
             testimonialReviewsForJsonLd,
           ),
