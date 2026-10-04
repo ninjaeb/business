@@ -22,7 +22,12 @@ const FACEBOOK_AUTH_ENDPOINT = `https://www.facebook.com/${FACEBOOK_OAUTH_VERSIO
 // satisfy that bundling: see getFacebookPostEngagement in
 // src/lib/facebook.ts, which reads like/comment counts for a post this app
 // itself created, shown back to the partner in their own post feed.
-const FACEBOOK_OAUTH_SCOPE = "pages_show_list,pages_manage_posts,pages_read_engagement";
+// business_management: this app never calls a Business Manager endpoint —
+// included solely because Meta's "Manage everything on your Page" use case
+// bundles it as a required, separately-tested permission regardless of
+// whether an app's own calls need it (its own App Dashboard gates Testing
+// on a real API call made with it present, the same as pages_manage_posts).
+const FACEBOOK_OAUTH_SCOPE = "pages_show_list,pages_manage_posts,pages_read_engagement,business_management";
 
 // Optional — the "Connect Facebook Page" button hides (and the connect
 // route refuses to start the flow) when these aren't set, same convention
