@@ -12,6 +12,7 @@ import { Card, CardBody } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { EmptyState } from "@/components/ui/empty-state";
 import { PostComposer } from "@/components/business-crm/post-composer";
+import { PostToGoogleButton } from "@/components/business-crm/post-to-google-button";
 
 const KIND_BADGE_CLASSES: Record<"NEWS" | "PROMOTION", string> = {
   NEWS: "bg-sky-50 text-sky-700 ring-sky-600/20 dark:bg-sky-950 dark:text-sky-400 dark:ring-sky-500/30",
@@ -73,7 +74,7 @@ export default async function PartnerPostsPage({
     <div className="space-y-6">
       <PageHeader
         title="Posts"
-        description="Share a quick update — it publishes instantly to your listing's News & Promotions, and optionally to your connected Facebook Page."
+        description="Share a quick update — it publishes instantly to your listing's Posts tab, and optionally to your connected Facebook Page."
       />
 
       {fbConnected && (
@@ -144,6 +145,9 @@ export default async function PartnerPostsPage({
                         </form>
                       </div>
                     )}
+                    <div className="mt-1">
+                      <PostToGoogleButton title={post.title} body={post.body} googleBusinessProfileUrl={post.listing.googleBusinessProfileUrl} />
+                    </div>
                   </div>
                   <form action={deletePartnerPost.bind(null, post.id)}>
                     <button

@@ -34,7 +34,7 @@ export async function listPartnerPostsForPartner(partnerId: string) {
   return db.partnerPost.findMany({
     where: { partnerId },
     orderBy: { createdAt: "desc" },
-    include: { listing: { select: { companyName: true, slug: true } } },
+    include: { listing: { select: { companyName: true, slug: true, googleBusinessProfileUrl: true } } },
   });
 }
 
