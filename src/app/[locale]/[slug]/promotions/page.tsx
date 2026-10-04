@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { getPublishedListingBySlug, resolveListingDisplay } from "@/lib/directory";
+import { getPublishedListingBySlug, isUpdateCurrent, resolveListingDisplay } from "@/lib/directory";
+import { getListingPostsAsUpdateEntries } from "@/lib/partner-posts";
 import { buildListingMetadata, buildUpdatesJsonLd } from "@/lib/directory-seo";
 import { resolveDirectoryLocale } from "@/lib/directory-locale";
 import { DIRECTORY_STRINGS, directoryListingPath, directoryListingPromotionsPath } from "@/lib/directory-i18n";
@@ -49,23 +50,27 @@ export default async function PromotionsPage({
 
   const t = DIRECTORY_STRINGS[resolved];
   const display = resolveListingDisplay(listing, resolved);
-  if (display.currentPromotions.length === 0) notFound();
+  // Instant posts merge in alongside the listing's own `updates` — see the
+  // News page's own identical comment.
+  const today = new Date().toISOString().slice(0, 10);
+  const livePosts = (await getListingPostsAsUpdateEntries(listing.id)).filter(
+    (post) => post.kind === "PROMOTION" && isUpdateCurrent(post, today),
+  );
+  const promotions = [...display.currentPromotions, ...livePosts].sort((a, b) => (b.postedAt ?? "").localeCompare(a.postedAt ?? ""));
+  if (promotions.length === 0) notFound();
 
   const siteOrigin = await getSiteOrigin();
   const pageUrl = `${siteOrigin}${directoryListingPromotionsPath(resolved, slug)}`;
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: buildUpdatesJsonLd(display.currentPromotions, siteOrigin, pageUrl) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildUpdatesJsonLd(promotions, siteOrigin, pageUrl) }} />
       <Card>
         <CardHeader>
           <CardTitle className="text-base">{t.promotionsHeading}</CardTitle>
         </CardHeader>
         <CardBody className="space-y-3">
-          {display.currentPromotions.map((update, index) => (
+          {promotions.map((update, index) => (
             <UpdateItem key={index} update={update} locale={resolved} />
           ))}
         </CardBody>

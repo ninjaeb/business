@@ -9,12 +9,14 @@ import {
   getPublishedBranchListings,
   getPublishedListingBySlug,
   incrementListingViewCount,
+  isUpdateCurrent,
   listingLogoPath,
   listingViewCountByLocale,
   resolveListingDisplay,
   slugify,
 } from "@/lib/directory";
 import { getBusinessPartnerServices, getPublishedBusinessPartners } from "@/lib/business-partners";
+import { getListingPostsAsUpdateEntries } from "@/lib/partner-posts";
 import { serializeJsonLd } from "@/lib/directory-seo";
 import { fillMessageTemplate, getMessageTemplate } from "@/lib/message-templates";
 import { stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
@@ -387,6 +389,7 @@ export default async function ListingLayout({
     branches,
     businessPartners,
     partnerServices,
+    livePosts,
     testimonialVisitor,
     testimonialRating,
     testimonialReviewsForJsonLd,
@@ -424,6 +427,12 @@ export default async function ListingLayout({
     // comment on why that section is never folded into ServiceList) — the
     // page itself re-fetches this same list.
     getBusinessPartnerServices(listing.id, resolved),
+    // Decides whether the News/Promotions tabs below should show even when
+    // this listing's own `updates` is empty but it has a live instant post
+    // (see PartnerPost's own schema comment) — the News/Promotions pages
+    // themselves re-fetch this same list and merge it with `updates` the
+    // same way.
+    getListingPostsAsUpdateEntries(listing.id),
     // Who's viewing, if anyone signed in as either account type a
     // testimonial can be written from (VISITOR or PARTNER) — feeds the two
     // WriteTestimonialButtons below (see its own comment on why there are
@@ -504,6 +513,14 @@ export default async function ListingLayout({
   ];
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(breadcrumbItems);
 
+  // Whether an instant post (see livePosts above) covers each tab even when
+  // this listing's own `updates` doesn't — the News/Promotions pages
+  // themselves apply this exact same isUpdateCurrent/kind filter before
+  // merging the two sources.
+  const today = new Date().toISOString().slice(0, 10);
+  const hasLiveNews = livePosts.some((post) => post.kind === "NEWS" && isUpdateCurrent(post, today));
+  const hasLivePromotions = livePosts.some((post) => post.kind === "PROMOTION" && isUpdateCurrent(post, today));
+
   // The header's own tab strip (see ListingSectionNav) — same conditions as
   // each section page's own notFound() guard, in the same order they used
   // to appear as Cards on the single page, so a tab only ever points at a
@@ -532,8 +549,8 @@ export default async function ListingLayout({
     display.faqs.length > 0 && { href: directoryListingFaqPath(resolved, slug), label: t.faqHeading },
     listing.photos.length > 0 && { href: directoryListingPhotosPath(resolved, slug), label: t.photosHeading },
     display.videoGallery.length > 0 && { href: directoryListingVideosPath(resolved, slug), label: t.videoHeading },
-    display.currentNews.length > 0 && { href: directoryListingNewsPath(resolved, slug), label: t.newsLabel },
-    display.currentPromotions.length > 0 && {
+    (display.currentNews.length > 0 || hasLiveNews) && { href: directoryListingNewsPath(resolved, slug), label: t.newsLabel },
+    (display.currentPromotions.length > 0 || hasLivePromotions) && {
       href: directoryListingPromotionsPath(resolved, slug),
       label: t.promotionsHeading,
     },

@@ -22,9 +22,10 @@ extracted from).
   account (email/password or Google), fills in and submits a listing for
   review, and — once approved — manages it, gets emailed and (once
   WhatsApp Business is connected) WhatsApp'd the moment a visitor's
-  inquiry comes in, replies to inquiries, and runs a small private CRM of
-  its own: Companies, Contacts, Deals, Tasks, strictly scoped to that one
-  account.
+  inquiry comes in, replies to inquiries, posts quick News/Promotion
+  updates that publish instantly (optionally cross-posted to a connected
+  Facebook Page), and runs a small private CRM of its own: Companies,
+  Contacts, Deals, Tasks, strictly scoped to that one account.
 - **AI-assisted listing content** *(optional, needs `OPENROUTER_API_KEY`)*
   — rewrite/expand the About text, generate services or FAQ entries, write
   SEO title/description, translate the whole listing into 中文/Malay, or
@@ -125,9 +126,9 @@ from your browser).
 
 See `.env.example` for the full list. `DATABASE_URL`, `SESSION_SECRET`, and
 `SITE_URL` are required; everything else (Google OAuth, Google Places,
-OpenRouter, search-console verification, IndexNow, Plausible, deploy
-automation) is optional — each feature just stays off until its variables
-are set. Google Analytics (GA4) is the one exception: it ships on by
+Facebook Page posting, OpenRouter, search-console verification, IndexNow,
+Plausible, deploy automation) is optional — each feature just stays off
+until its variables are set. Google Analytics (GA4) is the one exception: it ships on by
 default, hardcoded to business.gotka.com's own property in
 `src/app/[locale]/layout.tsx`; `GA_MEASUREMENT_ID` only needs setting to
 override it with a different property. Outbound email and WhatsApp
@@ -227,6 +228,42 @@ name, `{{3}}` the directory's signup page, built from `SITE_URL`. Until
 this template is approved, an invite still sends by email (if configured)
 and still saves — only the WhatsApp half is silently skipped, same
 degrade-gracefully behavior as the new-lead notification.
+
+### Facebook Page posting
+
+Unlike WhatsApp above, this one's an OAuth connection a *partner* makes
+for themselves, from their own portal (`/business-portal/posts` → **Connect
+Facebook Page**) — not something an admin sets up once for the whole site.
+What an admin (or developer) does set up once, as env vars
+(`FACEBOOK_APP_ID`/`FACEBOOK_APP_SECRET`, see `.env.example`), is the Meta
+App itself that every partner's connection goes through:
+
+1. Create a [Meta App](https://developers.facebook.com/apps) (type:
+   Business), add the **Facebook Login** product, and set its **Valid
+   OAuth Redirect URIs** (Facebook Login → Settings) to
+   `SITE_URL` + `/api/facebook/callback`.
+2. Copy the App ID and App Secret (App Dashboard → Settings → Basic) into
+   `FACEBOOK_APP_ID`/`FACEBOOK_APP_SECRET`.
+3. **That's it for the app itself** — a partner clicking "Connect Facebook
+   Page" now reaches Facebook's own consent screen and, on approving it,
+   gets the first Page they manage connected automatically (see
+   `src/app/api/facebook/callback/route.ts`'s own comment on why it's the
+   first rather than a picker).
+
+**Before this actually posts to anyone's real Page**, read Meta's own
+restriction carefully: `pages_manage_posts` — the permission a post
+requires — only works, during normal development, for Pages this Meta App's
+own account is an admin/developer/tester of. A partner outside that circle
+can still connect their Page successfully (the OAuth flow itself has no
+such restriction), but every post attempt then fails with a permissions
+error from Facebook's API, recorded on that post (visible in the composer's
+own feed, with a Retry button) — the local post on this site still goes out
+regardless, only the Facebook half is affected. To post for real partners,
+submit the app for **App Review** (Meta App Dashboard → App Review →
+Permissions and Features → request `pages_manage_posts` +
+`pages_read_engagement`), which requires Business Verification and a
+screencast demonstrating the exact flow — reviewed by Meta, on their own
+timeline, not guaranteed to be approved.
 
 ## Deploying on cPanel
 

@@ -15,6 +15,7 @@
 export const BUSINESS_NAV_ITEMS = [
   { href: "/business-portal", label: "Dashboard" },
   { href: "/business-portal/listings", label: "My Business" },
+  { href: "/business-portal/posts", label: "Posts" },
   { href: "/business-portal/testimonials", label: "Testimonials" },
   { href: "/business-portal/testimonial-links", label: "Request Testimonial" },
   { href: "/business-portal/business-partners", label: "Business Partners" },

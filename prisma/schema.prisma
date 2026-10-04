@@ -57,6 +57,9 @@ model User {
   // Testimonials this account (a VISITOR) has written — see
   // DirectoryTestimonial.authorId.
   directoryTestimonials DirectoryTestimonial[]
+
+  // Quick posts this account (a PARTNER) has published — see PartnerPost.
+  partnerPosts PartnerPost[]
 }
 
 // ============================================================================
@@ -421,6 +424,8 @@ model PartnerListing {
   businessPartnerLinksAsRequester BusinessPartnerLink[]   @relation("BusinessPartnerRequester")
   businessPartnerLinksAsRecipient BusinessPartnerLink[]   @relation("BusinessPartnerRecipient")
   businessPartnerInvites          BusinessPartnerInvite[]
+  posts                           PartnerPost[]
+  facebookPageConnection          FacebookPageConnection?
 
   @@index([status])
   @@index([partnerId])
@@ -861,6 +866,67 @@ model BusinessPartnerInvite {
   inviterListingId String
 
   @@index([inviterListingId])
+}
+
+enum PartnerPostKind {
+  NEWS
+  PROMOTION
+}
+
+// A quick, Facebook-style post — unlike PartnerListing.updates (the
+// News & Promotions tab inside the full listing editor, see
+// ListingUpdateEntry in src/lib/directory.ts), a row here publishes the
+// moment it's created: no admin re-approval of the whole listing first.
+// Read side: getLivePostsAsUpdateEntries (src/lib/partner-posts.ts) maps
+// each row into that same ListingUpdateEntry shape so it can be merged
+// into the public News/Promotions tabs and the directory-wide feed
+// alongside `updates` entries through the exact same UpdateItem/JSON-LD
+// rendering, rather than needing a second, parallel public surface.
+model PartnerPost {
+  id      String          @id @default(cuid())
+  kind    PartnerPostKind @default(NEWS)
+  title   String
+  body    String          @db.Text // markdown-lite, same grammar/image-upload as `updates`
+  endDate DateTime? // promotions only, same meaning as ListingUpdateEntry.endDate
+
+  // Best-effort cross-post to the listing's connected Facebook Page (see
+  // FacebookPageConnection below) — set once, at creation time, never
+  // retried automatically. A failure here never rolls back or blocks the
+  // local post itself (same "swallow and record" convention as this app's
+  // other best-effort sends, e.g. directory-notify.ts's own emails).
+  facebookPostId    String?
+  facebookPostedAt  DateTime?
+  facebookPostError String?   @db.Text
+
+  createdAt DateTime @default(now())
+
+  listing   PartnerListing @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  listingId String
+  partner   User           @relation(fields: [partnerId], references: [id], onDelete: Cascade)
+  partnerId String
+
+  @@index([listingId])
+  @@index([partnerId])
+}
+
+// One connected Facebook Page per listing — the partner's own OAuth grant
+// (see src/lib/auth/facebook.ts, mirroring src/lib/auth/google.ts's own
+// state-signing pattern), storing the long-lived Page access token Graph
+// API posting needs (src/lib/facebook.ts). Posting to any Page other than
+// one this app's own Meta App is an admin/developer/tester on requires
+// Meta's own App Review for the pages_manage_posts permission — connecting
+// a page here always succeeds, but a post attempt against an unreviewed
+// app can still fail at Meta's end until that review is granted (see this
+// model's own comment in src/lib/facebook.ts for the exact failure mode).
+model FacebookPageConnection {
+  id                   String   @id @default(cuid())
+  pageId               String
+  pageName             String
+  encryptedAccessToken String   @db.Text
+  connectedAt          DateTime @default(now())
+
+  listing   PartnerListing @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  listingId String         @unique
 }
 
 // How many times a specific signed-in partner's own copy of a listing's

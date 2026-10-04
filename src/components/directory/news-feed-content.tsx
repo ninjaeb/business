@@ -12,6 +12,7 @@ import {
   type DirectoryLocale,
 } from "@/lib/directory-i18n";
 import { buildBreadcrumbJsonLd, loadLatestListingUpdates } from "@/lib/directory";
+import { loadLatestPartnerPosts } from "@/lib/partner-posts";
 import {
   DIRECTORY_ROBOTS,
   DIRECTORY_SITE_NAME_BY_LOCALE,
@@ -75,8 +76,21 @@ export async function buildNewsFeedMetadata(locale: DirectoryLocale): Promise<Me
   };
 }
 
+const MAX_FEED_ENTRIES = 60;
+
 export async function NewsFeedContent({ locale }: { locale: DirectoryLocale }) {
-  const [siteOrigin, entries] = await Promise.all([getSiteOrigin(), loadLatestListingUpdates(locale)]);
+  const [siteOrigin, listingEntries, postEntries] = await Promise.all([
+    getSiteOrigin(),
+    loadLatestListingUpdates(locale),
+    // Instant posts (see PartnerPost's own schema comment) — merged in
+    // alongside `updates`-sourced entries and re-sorted together, same
+    // "two origins, one feed" treatment as the listing's own News/
+    // Promotions tabs (see [locale]/[slug]/news/page.tsx).
+    loadLatestPartnerPosts(),
+  ]);
+  const entries = [...listingEntries, ...postEntries]
+    .sort((a, b) => (b.update.postedAt ?? "").localeCompare(a.update.postedAt ?? ""))
+    .slice(0, MAX_FEED_ENTRIES);
   const t = DIRECTORY_STRINGS[locale];
   const pageUrl = `${siteOrigin}${directoryNewsPath(locale)}`;
   const breadcrumbItems = [

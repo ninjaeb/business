@@ -6,7 +6,7 @@ import { requireAdminAction } from "@/lib/auth/dal";
 import { getEmailSettings, saveEmailSettings } from "@/lib/email-settings";
 import { getWhatsAppSettings, saveWhatsAppSettings } from "@/lib/whatsapp-settings";
 import { decryptSecret } from "@/lib/secret-crypto";
-import { GRAPH_API_BASE } from "@/lib/whatsapp";
+import { GRAPH_API_BASE } from "@/lib/meta-graph-api";
 
 export type SettingsFormState = { error: string } | { success: true } | undefined;
 

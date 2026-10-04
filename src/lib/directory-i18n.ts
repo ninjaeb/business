@@ -738,6 +738,7 @@ export type DirectoryStrings = {
   // the rest of that menu is already in.
   navDashboard: string;
   navMyListings: string;
+  navPosts: string;
   navTestimonials: string;
   // Keyed by href (/business-portal/testimonial-links), not by the page's
   // current display name — "Request Testimonial" as of BUSINESS_NAV_ITEMS,
@@ -1042,6 +1043,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navAddBusiness: "Add Business",
     navDashboard: "Dashboard",
     navMyListings: "My Business",
+    navPosts: "Posts",
     navTestimonials: "Testimonials",
     navTestimonialLinks: "Request Testimonial",
     navMyCrm: "My CRM",
@@ -1335,6 +1337,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navAddBusiness: "添加企业",
     navDashboard: "仪表盘",
     navMyListings: "我的企业",
+    navPosts: "动态",
     navTestimonials: "客户评价",
     navTestimonialLinks: "请求评价",
     navMyCrm: "我的 CRM",
@@ -1632,6 +1635,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     navAddBusiness: "Tambah Perniagaan",
     navDashboard: "Papan Pemuka",
     navMyListings: "Perniagaan saya",
+    navPosts: "Hantaran",
     navTestimonials: "Testimoni",
     navTestimonialLinks: "Minta Testimoni",
     navMyCrm: "CRM Saya",
@@ -1704,6 +1708,7 @@ export function localizedBusinessNavItems(locale: DirectoryLocale): { href: stri
   const labels: Record<string, string> = {
     "/business-portal": t.navDashboard,
     "/business-portal/listings": t.navMyListings,
+    "/business-portal/posts": t.navPosts,
     "/business-portal/testimonials": t.navTestimonials,
     "/business-portal/testimonial-links": t.navTestimonialLinks,
     // Reuses the public listing page's own "Business Partners" section

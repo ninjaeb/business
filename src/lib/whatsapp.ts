@@ -1,5 +1,6 @@
 import { getWhatsAppSettings } from "@/lib/whatsapp-settings";
 import { decryptSecret } from "@/lib/secret-crypto";
+import { GRAPH_API_BASE } from "@/lib/meta-graph-api";
 
 // A single business-initiated notification only — never a two-way
 // conversation, an inbox, or a broadcast — so this is a minimal Meta
@@ -8,9 +9,6 @@ import { decryptSecret } from "@/lib/secret-crypto";
 // the source CRM's own Settings-configured WhatsAppAccount (which also
 // carries a businessAccountId and webhook verify token this app has no use
 // for, since it never receives inbound messages).
-
-export const GRAPH_API_VERSION = "v21.0";
-export const GRAPH_API_BASE = `https://graph.facebook.com/${GRAPH_API_VERSION}`;
 
 export async function isWhatsAppConfigured(): Promise<boolean> {
   return (await getWhatsAppSettings()) !== null;
