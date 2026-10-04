@@ -730,6 +730,14 @@ export default async function ListingLayout({
               existingTestimonial={existingTestimonial}
               className="w-full justify-center"
             />
+            {/* Only the listing's own owner, viewing their own public page
+                while signed in — a quick way back to the editor without
+                detouring through the business portal's own listings list. */}
+            {viewer?.id === listing.partnerId && (
+              <Link href={`/business-portal/listings/${listing.id}`} className={buttonClasses("secondary", "md", "w-full")}>
+                Edit Business
+              </Link>
+            )}
           </div>
         </div>
 
@@ -761,6 +769,14 @@ export default async function ListingLayout({
             existingTestimonial={existingTestimonial}
             className="flex-1 justify-center"
           />
+          {viewer?.id === listing.partnerId && (
+            <Link
+              href={`/business-portal/listings/${listing.id}`}
+              className={buttonClasses("secondary", "md", "flex-1 justify-center")}
+            >
+              Edit Business
+            </Link>
+          )}
         </div>
 
         <ListingSectionNav sections={sectionLinks} navLabel={t.sectionNavLabel} />
