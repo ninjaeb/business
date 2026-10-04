@@ -3,12 +3,12 @@
 import { useEffect, useRef, useState, useTransition } from "react";
 import { Loader2, Plus, Trash2 } from "lucide-react";
 import { fetchVideoDetails } from "@/app/actions/directory";
-import { Input, Select } from "@/components/ui/field";
+import { Input, Select, Textarea } from "@/components/ui/field";
 import { buttonClasses } from "@/components/ui/button";
 import { VIDEO_CATEGORY_LABELS, type VideoCategory } from "@/lib/labels";
 import type { VideoEntry } from "@/lib/directory";
 
-const EMPTY_VIDEO: VideoEntry = { url: "", title: "", category: "OVERVIEW", thumbnailUrl: null };
+const EMPTY_VIDEO: VideoEntry = { url: "", title: "", category: "OVERVIEW", thumbnailUrl: null, description: null };
 // Mirrors MAX_VIDEOS in src/lib/directory.ts — duplicated rather than
 // imported, since that module's top-level `db` import can't be bundled for
 // the browser (same reason FaqEditor keeps its own copy of MAX_FAQS).
@@ -17,12 +17,13 @@ const CATEGORY_OPTIONS = Object.entries(VIDEO_CATEGORY_LABELS) as [VideoCategory
 
 // A repeatable list of video entries — same controlled, serialize-to-
 // hidden-JSON pattern as FaqEditor/ServicesEditor, plus one extra step:
-// leaving the URL field auto-looks up a thumbnail/title (fetchVideoDetails
-// — best-effort, silently does nothing for a host it can't reach) so the
-// gallery has something to show without the partner hunting one down
-// themselves. Only fills the title if the partner hasn't typed one; never
-// overwrites it. A "Fetch thumbnail" button takes over once a URL has one
-// but no thumbnail yet, so a failed best-effort lookup (a timeout, a
+// leaving the URL field auto-looks up a thumbnail/title/description
+// (fetchVideoDetails — best-effort, silently does nothing for a host it
+// can't reach) so the gallery has something to show without the partner
+// hunting one down themselves. Only fills the title/description if the
+// partner hasn't typed one of their own; never overwrites either. A "Fetch
+// details" button takes over once a URL has one but is still missing its
+// thumbnail or description, so a failed best-effort lookup (a timeout, a
 // provider rate-limiting us) isn't a dead end — see runFetch.
 export function VideosEditor({
   name,
@@ -66,11 +67,16 @@ export function VideosEditor({
     startTransition(async () => {
       const details = await fetchVideoDetails(trimmed);
       setFetchingIndex((current) => (current === index ? null : current));
-      if (!details.title && !details.thumbnailUrl) return;
+      if (!details.title && !details.thumbnailUrl && !details.description) return;
       onChange(
         videosRef.current.map((entry, i) =>
           i === index
-            ? { ...entry, title: entry.title || details.title || "", thumbnailUrl: details.thumbnailUrl }
+            ? {
+                ...entry,
+                title: entry.title || details.title || "",
+                thumbnailUrl: details.thumbnailUrl,
+                description: entry.description || details.description,
+              }
             : entry,
         ),
       );
@@ -98,7 +104,7 @@ export function VideosEditor({
               <div className="flex items-center gap-2">
                 <Input
                   value={video.url}
-                  onChange={(event) => updateEntry(index, { url: event.target.value, thumbnailUrl: null })}
+                  onChange={(event) => updateEntry(index, { url: event.target.value, thumbnailUrl: null, description: null })}
                   onBlur={(event) => handleUrlBlur(index, event.target.value)}
                   placeholder="https://www.youtube.com/watch?v=… (YouTube, Vimeo, Dailymotion, Facebook, or TikTok)"
                 />
@@ -124,21 +130,32 @@ export function VideosEditor({
                   ))}
                 </Select>
               </div>
-              {video.thumbnailUrl ? (
+              <Textarea
+                value={video.description ?? ""}
+                onChange={(event) => updateEntry(index, { description: event.target.value || null })}
+                placeholder="Description (optional — auto-filled from the video's own page when available)"
+                maxLength={300}
+                rows={2}
+              />
+              {video.thumbnailUrl && (
                 // eslint-disable-next-line @next/next/no-img-element -- a data: URL (see VideoEntry's own comment) that next/image's remote loader can't optimize anyway
                 <img src={video.thumbnailUrl} alt="" className="h-16 w-28 rounded object-cover" />
-              ) : (
-                video.url.trim() &&
-                fetchingIndex !== index && (
+              )}
+              {/* Thumbnail and description are fetched independently (see
+                  fetchVideoOEmbed), so one can come back while the other
+                  doesn't — shown whenever either is still missing, not just
+                  on a total failure. */}
+              {video.url.trim() &&
+                fetchingIndex !== index &&
+                (!video.thumbnailUrl || !video.description) && (
                   <button
                     type="button"
                     onClick={() => runFetch(index, video.url)}
                     className={buttonClasses("ghost", "sm")}
                   >
-                    Fetch thumbnail
+                    Fetch details
                   </button>
-                )
-              )}
+                )}
             </div>
             <button
               type="button"

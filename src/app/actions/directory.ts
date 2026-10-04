@@ -474,17 +474,18 @@ export async function rewriteListingDescription(
   return callAi(RewrittenTextSchema, LISTING_DESCRIPTION_SYSTEM_PROMPT, prompt);
 }
 
-export type VideoDetailsResult = { title: string | null; thumbnailUrl: string | null };
+export type VideoDetailsResult = { title: string | null; thumbnailUrl: string | null; description: string | null };
 
 // Partner-gated — called when a partner adds a video URL to the gallery
-// (see VideosEditor), so its title/thumbnail can be suggested and stored
-// right away rather than the public page ever calling out to YouTube/
-// Vimeo/etc. itself. Best-effort: a host this can't reach (Facebook, or any
-// failed/timed-out lookup) just comes back empty — see fetchVideoOEmbed.
+// (see VideosEditor), so its title/thumbnail/description can be suggested
+// and stored right away rather than the public page ever calling out to
+// YouTube/Vimeo/etc. itself. Best-effort: a host this can't reach (Facebook,
+// or any failed/timed-out lookup) just comes back empty — see
+// fetchVideoOEmbed.
 export async function fetchVideoDetails(url: string): Promise<VideoDetailsResult> {
   await requirePartnerAction();
   const result = await fetchVideoOEmbed(url);
-  return result ?? { title: null, thumbnailUrl: null };
+  return result ?? { title: null, thumbnailUrl: null, description: null };
 }
 
 const ServiceListSchema = z.object({

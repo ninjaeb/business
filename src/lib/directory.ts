@@ -154,11 +154,20 @@ export type VideoEntry = {
   title: string;
   category: VideoCategory;
   thumbnailUrl: string | null;
+  // Same best-effort, add-time-only lookup as title/thumbnailUrl (see
+  // fetchVideoOEmbed in video-oembed.ts, which reads this off the video's
+  // own watch-page og:description — oEmbed itself never returns one) —
+  // null for the same reasons thumbnailUrl can be: the lookup failed, or
+  // the video has no description of its own. Feeds buildVideoJsonLd's
+  // VideoObject (directory-seo.ts) a real summary instead of a generic
+  // "{title} — {companyName}" placeholder.
+  description: string | null;
 };
 
 const MAX_VIDEOS = 12;
 const MAX_VIDEO_URL_LENGTH = 500;
 const MAX_VIDEO_TITLE_LENGTH = 100;
+const MAX_VIDEO_DESCRIPTION_LENGTH = 300;
 // A real thumbnail, resized to VIDEO_THUMBNAIL_MAX_DIMENSION and re-encoded
 // as webp (see fetchThumbnailDataUrl), comes in well under this — anything
 // bigger arriving through VideosEditor's hidden-input JSON (see that
@@ -185,11 +194,13 @@ function sanitizeVideoEntry(entry: unknown): VideoEntry | null {
   const url = typeof raw.url === "string" ? raw.url.trim().slice(0, MAX_VIDEO_URL_LENGTH) : "";
   if (!url) return null;
   const category = VIDEO_CATEGORIES.includes(raw.category as VideoCategory) ? (raw.category as VideoCategory) : "OTHER";
+  const description = typeof raw.description === "string" ? raw.description.trim().slice(0, MAX_VIDEO_DESCRIPTION_LENGTH) : "";
   return {
     url,
     title: typeof raw.title === "string" ? raw.title.trim().slice(0, MAX_VIDEO_TITLE_LENGTH) : "",
     category,
     thumbnailUrl: sanitizeVideoThumbnailUrl(raw.thumbnailUrl),
+    description: description || null,
   };
 }
 
@@ -723,7 +734,14 @@ export type ListingDisplay = {
   description: string;
   services: ServiceEntry[];
   faqs: FaqEntry[];
-  videoGallery: { url: string; title: string; category: VideoCategory; thumbnailUrl: string | null; embed: { embedUrl: string; provider: VideoProvider } | null }[];
+  videoGallery: {
+    url: string;
+    title: string;
+    category: VideoCategory;
+    thumbnailUrl: string | null;
+    description: string | null;
+    embed: { embedUrl: string; provider: VideoProvider } | null;
+  }[];
   hasMedia: boolean;
   currentUpdates: ListingUpdateEntry[];
   currentNews: ListingUpdateEntry[];

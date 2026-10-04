@@ -30,7 +30,10 @@ export type WebsitePage = { url: string; title: string; text: string };
 // Fetching
 // ---------------------------------------------------------------------------
 
-async function readLimited(response: Response, maxBytes: number): Promise<string> {
+// Exported for video-oembed.ts, which fetches a video's own watch page
+// (capped the same way a website homepage is here) rather than an
+// unbounded response.text().
+export async function readLimited(response: Response, maxBytes: number): Promise<string> {
   const reader = response.body?.getReader();
   if (!reader) return "";
   const chunks: Uint8Array[] = [];
@@ -166,6 +169,16 @@ export function extractTextFromHtml(html: string, maxChars: number): ExtractedPa
 function metaContent(html: string, attr: "property" | "name", key: string): string | null {
   const tag = html.match(new RegExp(`<meta\\b[^>]*\\b${attr}\\s*=\\s*["']${key}["'][^>]*>`, "i"))?.[0];
   return tag ? decodeEntities(tag.match(/\bcontent\s*=\s*["']([^"']+)["']/i)?.[1] ?? "").trim() || null : null;
+}
+
+// Exported for video-oembed.ts — a video's og:description (or, failing
+// that, its plain meta description) is the closest thing to a real
+// description oEmbed itself never provides (see that file's own comment).
+// og: first since it's the tag a page's author writes specifically to
+// summarize it for a link preview, same priority metaDescription in
+// extractTextFromHtml above gives the plain one.
+export function extractMetaDescription(html: string): string | null {
+  return metaContent(html, "property", "og:description") ?? metaContent(html, "name", "description");
 }
 
 function linkHref(html: string, relPattern: string): string | null {
