@@ -1,8 +1,9 @@
 import "server-only";
 import { toEmbeddableVideoUrl } from "@/lib/directory";
-import { USER_AGENT } from "@/lib/website-text";
+import { USER_AGENT, extractMetaDescription, readLimited } from "@/lib/website-text";
 import { ALLOWED_PHOTO_TYPES, MAX_PHOTO_BYTES, photoDataUrl } from "@/lib/photo";
 import { VIDEO_THUMBNAIL_MAX_DIMENSION, optimizeImageForWeb } from "@/lib/image-optimize";
+import type { VideoProvider } from "@/lib/labels";
 
 // Best-effort thumbnail/title lookup for a video URL a partner just pasted
 // into the gallery editor (see VideosEditor, fetchVideoDetails in
@@ -46,7 +47,51 @@ async function fetchThumbnailDataUrl(thumbnailUrl: string): Promise<string | nul
   }
 }
 
-type OEmbedResult = { title: string | null; thumbnailUrl: string | null };
+type OEmbedResult = { title: string | null; thumbnailUrl: string | null; description: string | null };
+
+// oEmbed itself never returns a description — none of these providers'
+// oEmbed responses include one, only title/thumbnail/author/provider. The
+// watch page's own og:description (or, failing that, its plain meta
+// description — see extractMetaDescription) is the closest real substitute,
+// fetched the same capped-read way fetchWebsiteText reads a partner's own
+// site. Meta tags live in <head>, always within MAX_DESCRIPTION_HTML_BYTES
+// of the start of a server-rendered page, so this never needs the whole
+// response.
+const MAX_DESCRIPTION_HTML_BYTES = 300_000;
+const MAX_VIDEO_DESCRIPTION_LENGTH = 300;
+
+// A server with no prior visit to youtube.com — no cookies at all — gets
+// served a cookie-consent interstitial page instead of the real watch page
+// on at least some regions/IPs (verified directly: <title> comes back
+// blank, og:description comes back missing entirely, and the plain meta
+// description is YouTube's own generic site blurb, not the video's). A
+// pre-accepted CONSENT cookie is the standard, widely-documented workaround
+// (no sign-in or API key involved, just skips the interstitial) — see
+// https://github.com/yt-dlp/yt-dlp's own use of the same cookie for the
+// same reason.
+const YOUTUBE_CONSENT_COOKIE = "CONSENT=YES+cb.20210328-17-p0.en+FX+100";
+
+async function fetchVideoPageDescription(rawUrl: string, provider: VideoProvider): Promise<string | null> {
+  try {
+    const response = await fetch(rawUrl, {
+      headers: {
+        "User-Agent": USER_AGENT,
+        Accept: "text/html,application/xhtml+xml;q=0.9,*/*;q=0.1",
+        ...(provider === "youtube" ? { Cookie: YOUTUBE_CONSENT_COOKIE } : {}),
+      },
+      signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
+      cache: "no-store",
+    });
+    if (!response.ok) return null;
+    const contentType = response.headers.get("content-type") ?? "";
+    if (!/text\/html|application\/xhtml\+xml/i.test(contentType)) return null;
+    const html = await readLimited(response, MAX_DESCRIPTION_HTML_BYTES);
+    const description = extractMetaDescription(html);
+    return description ? description.slice(0, MAX_VIDEO_DESCRIPTION_LENGTH) : null;
+  } catch {
+    return null;
+  }
+}
 
 async function fetchOEmbedJson(endpoint: string): Promise<{ title?: unknown; thumbnail_url?: unknown } | null> {
   try {
@@ -69,8 +114,9 @@ async function fetchOEmbedJson(endpoint: string): Promise<{ title?: unknown; thu
 // Facebook's oEmbed now requires a Facebook developer app's access token
 // (App ID|App Secret) — this project doesn't ask partners to set that up
 // just for a thumbnail, so Facebook videos simply get no auto-fetched
-// title/thumbnail; the partner types a title themselves, and the gallery
-// falls back to a plain "Watch video" link for the missing thumbnail.
+// title/thumbnail/description; the partner types a title themselves, and
+// the gallery falls back to a plain "Watch video" link for the missing
+// thumbnail.
 export async function fetchVideoOEmbed(rawUrl: string): Promise<OEmbedResult | null> {
   const embeddable = toEmbeddableVideoUrl(rawUrl);
   if (!embeddable || embeddable.provider === "facebook") return null;
@@ -85,11 +131,19 @@ export async function fetchVideoOEmbed(rawUrl: string): Promise<OEmbedResult | n
           ? `https://www.dailymotion.com/services/oembed?url=${encoded}&format=json`
           : `https://www.tiktok.com/oembed?url=${encoded}`; // tiktok
 
-  const data = await fetchOEmbedJson(endpoint);
-  if (!data) return null;
-  const rawThumbnailUrl = typeof data.thumbnail_url === "string" ? data.thumbnail_url : null;
+  // Independent of each other — the watch page fetch below can succeed
+  // (or fail) regardless of whether oEmbed does, so one failing never has
+  // to cost the other (see runFetch in VideosEditor, which keeps whatever
+  // of title/thumbnailUrl/description did come back).
+  const [data, description] = await Promise.all([
+    fetchOEmbedJson(endpoint),
+    fetchVideoPageDescription(rawUrl, embeddable.provider),
+  ]);
+  if (!data && !description) return null;
+  const rawThumbnailUrl = data && typeof data.thumbnail_url === "string" ? data.thumbnail_url : null;
   return {
-    title: typeof data.title === "string" ? data.title : null,
+    title: data && typeof data.title === "string" ? data.title : null,
     thumbnailUrl: rawThumbnailUrl ? await fetchThumbnailDataUrl(rawThumbnailUrl) : null,
+    description,
   };
 }

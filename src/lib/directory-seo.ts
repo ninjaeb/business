@@ -340,7 +340,7 @@ export function buildVideoJsonLd(video: VideoEntry, embedUrl: string | null, com
     "@context": "https://schema.org",
     "@type": "VideoObject",
     name,
-    description: video.title ? `${video.title} — ${companyName}` : companyName,
+    description: video.description || (video.title ? `${video.title} — ${companyName}` : companyName),
     ...(video.thumbnailUrl ? { thumbnailUrl: [video.thumbnailUrl] } : {}),
     contentUrl: video.url,
     ...(embedUrl ? { embedUrl } : {}),
