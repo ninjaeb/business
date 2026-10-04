@@ -19,7 +19,7 @@ import {
   buildLanguageAlternates,
   directoryShareImage,
 } from "@/lib/directory-seo";
-import { stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
+import { firstMarkdownLiteImageUrl, stripMarkdownLiteToPlainText } from "@/lib/markdown-lite";
 import { Card, CardBody } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ListingLogo } from "@/components/directory/listing-logo";
@@ -113,51 +113,66 @@ export async function NewsFeedContent({ locale }: { locale: DirectoryLocale }) {
           </div>
         ) : (
           <ul className="mt-6 space-y-3">
-            {entries.map((entry, index) => (
-              <li key={`${entry.listingSlug}-${index}`}>
-                {/* A plain-text preview, not the full renderMarkdownLite body
-                    — the whole card is itself a Link to the listing page, and
-                    a partner's post can embed its own [text](url) link, which
-                    would otherwise nest an <a> inside this one. The full
-                    formatted post (bold/lists/images) is what the listing
-                    page's own updates card renders. */}
-                <Link href={directoryListingPostsPath(locale, entry.listingSlug)} className="block">
-                  <Card className="transition-colors hover:border-petrol/40 dark:hover:border-petrol-light/30">
-                    <CardBody className="space-y-2">
-                      <div className="flex items-center gap-2">
-                        <ListingLogo name={entry.companyName} logoUrl={entry.logoUrl} size={28} loading="lazy" className="h-7 w-7 text-xs" />
-                        {/* min-w-0: a flex item's default min-width is its content's
-                            un-wrapped size, which for a long company name can exceed
-                            the row's available width and push the whole card (and
-                            page) wider than the viewport on mobile — min-w-0 lets it
-                            shrink so `truncate` actually has room to take effect. */}
-                        <span className="min-w-0 truncate text-xs font-medium text-slate-500 dark:text-slate-400">{entry.companyName}</span>
-                      </div>
-                      <div className="flex flex-wrap items-center gap-2">
-                        <Badge
-                          className={
-                            entry.update.kind === "PROMOTION"
-                              ? "bg-led text-led-ink ring-0"
-                              : "bg-slate-100 text-slate-600 ring-0 dark:bg-neutral-800 dark:text-slate-300"
-                          }
-                        >
-                          {entry.update.kind === "PROMOTION" ? t.promotionLabel : t.newsLabel}
-                        </Badge>
-                        <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">{entry.update.title}</h3>
-                        {entry.update.postedAt && (
-                          <time dateTime={entry.update.postedAt} className="text-xs text-slate-400">
-                            {formatUpdatePostedAt(entry.update.postedAt, locale)}
-                          </time>
-                        )}
-                      </div>
-                      <p className="line-clamp-3 text-sm text-slate-600 dark:text-slate-300">
-                        {stripMarkdownLiteToPlainText(entry.update.body)}
-                      </p>
-                    </CardBody>
-                  </Card>
-                </Link>
-              </li>
-            ))}
+            {entries.map((entry, index) => {
+              // The post's own first attached photo, if the partner added
+              // one via the composer's Image button — same lookup
+              // buildUpdatesJsonLd already uses for this entry's structured
+              // data (see firstMarkdownLiteImageUrl's own comment), reused
+              // here to give this card a real photo the way a Facebook feed
+              // card would, instead of text alone.
+              const imageUrl = firstMarkdownLiteImageUrl(entry.update.body);
+              return (
+                <li key={`${entry.listingSlug}-${index}`}>
+                  {/* A plain-text preview, not the full renderMarkdownLite body
+                      — the whole card is itself a Link to the listing page, and
+                      a partner's post can embed its own [text](url) link, which
+                      would otherwise nest an <a> inside this one. The full
+                      formatted post (bold/lists/images) is what the listing
+                      page's own updates card renders. */}
+                  <Link href={directoryListingPostsPath(locale, entry.listingSlug)} className="block">
+                    <Card className="overflow-hidden transition-colors hover:border-petrol/40 dark:hover:border-petrol-light/30">
+                      <CardBody className="space-y-2">
+                        <div className="flex items-center gap-2">
+                          <ListingLogo name={entry.companyName} logoUrl={entry.logoUrl} size={28} loading="lazy" className="h-7 w-7 text-xs" />
+                          {/* min-w-0: a flex item's default min-width is its content's
+                              un-wrapped size, which for a long company name can exceed
+                              the row's available width and push the whole card (and
+                              page) wider than the viewport on mobile — min-w-0 lets it
+                              shrink so `truncate` actually has room to take effect. */}
+                          <span className="min-w-0 truncate text-xs font-medium text-slate-500 dark:text-slate-400">{entry.companyName}</span>
+                        </div>
+                        <div className="flex flex-wrap items-center gap-2">
+                          <Badge
+                            className={
+                              entry.update.kind === "PROMOTION"
+                                ? "bg-led text-led-ink ring-0"
+                                : "bg-slate-100 text-slate-600 ring-0 dark:bg-neutral-800 dark:text-slate-300"
+                            }
+                          >
+                            {entry.update.kind === "PROMOTION" ? t.promotionLabel : t.newsLabel}
+                          </Badge>
+                          <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">{entry.update.title}</h3>
+                          {entry.update.postedAt && (
+                            <time dateTime={entry.update.postedAt} className="text-xs text-slate-400">
+                              {formatUpdatePostedAt(entry.update.postedAt, locale)}
+                            </time>
+                          )}
+                        </div>
+                        <p className="line-clamp-3 text-sm text-slate-600 dark:text-slate-300">
+                          {stripMarkdownLiteToPlainText(entry.update.body)}
+                        </p>
+                      </CardBody>
+                      {imageUrl && (
+                        <div className="aspect-video w-full overflow-hidden bg-slate-100 dark:bg-neutral-800">
+                          {/* eslint-disable-next-line @next/next/no-img-element -- same plain-img convention as every other directory gallery thumbnail (see video-gallery.tsx) */}
+                          <img src={imageUrl} alt="" loading="lazy" className="h-full w-full object-cover" />
+                        </div>
+                      )}
+                    </Card>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         )}
       </div>
