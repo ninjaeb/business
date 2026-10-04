@@ -69,3 +69,26 @@ export async function postToFacebookPage(
   if (!postId) throw new FacebookPostError("Facebook accepted the post but returned no post id.");
   return postId;
 }
+
+export type FacebookPostEngagement = { likes: number; comments: number };
+
+// How a post this app created (see postToFacebookPage above) is doing on
+// Facebook — shown back to the partner in their own post feed
+// (/business-portal/posts) so they don't have to leave this app to check.
+// The real, demonstrable use behind the pages_read_engagement permission
+// (see auth/facebook.ts's own comment): we only ever read engagement for a
+// post our own app published, never anything else on the Page. Best-effort
+// like every other Graph API call here — null on any failure, callers show
+// nothing rather than an error for what's a nice-to-have, not core
+// functionality.
+export async function getFacebookPostEngagement(facebookPostId: string, pageAccessToken: string): Promise<FacebookPostEngagement | null> {
+  const url = new URL(`${GRAPH_API_BASE}/${facebookPostId}`);
+  url.searchParams.set("fields", "likes.summary(true).limit(0),comments.summary(true).limit(0)");
+  url.searchParams.set("access_token", pageAccessToken);
+  const response = await fetch(url);
+  if (!response.ok) return null;
+  const payload: { likes?: { summary?: { total_count?: number } }; comments?: { summary?: { total_count?: number } } } = await response
+    .json()
+    .catch(() => ({}));
+  return { likes: payload.likes?.summary?.total_count ?? 0, comments: payload.comments?.summary?.total_count ?? 0 };
+}

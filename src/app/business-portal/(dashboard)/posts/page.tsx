@@ -1,8 +1,10 @@
-import { Megaphone, RotateCw, Share2, Trash2 } from "lucide-react";
+import { Heart, Megaphone, MessageCircle, RotateCw, Share2, Trash2 } from "lucide-react";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { db } from "@/lib/db";
 import { listPartnerPostsForPartner } from "@/lib/partner-posts";
 import { isFacebookAuthConfigured } from "@/lib/auth/facebook";
+import { getFacebookPostEngagement } from "@/lib/facebook";
+import { decryptSecret } from "@/lib/secret-crypto";
 import { createPartnerPost, deletePartnerPost, retryFacebookCrossPost } from "@/app/actions/partner-posts";
 import { formatDate } from "@/lib/format";
 import { PageHeader } from "@/components/ui/page-header";
@@ -45,10 +47,27 @@ export default async function PartnerPostsPage({
   const connections = facebookConfigured
     ? await db.facebookPageConnection.findMany({
         where: { listingId: { in: listings.map((listing) => listing.id) } },
-        select: { listingId: true, pageName: true },
+        select: { listingId: true, pageName: true, encryptedAccessToken: true },
       })
     : [];
   const connectedPages = Object.fromEntries(connections.map((connection) => [connection.listingId, connection.pageName]));
+
+  // Like/comment counts for a post this app itself published — the real use
+  // behind the pages_read_engagement permission (see getFacebookPostEngagement's
+  // own comment). Only fetched for posts that actually have a
+  // facebookPostId, using that same post's own listing's connection.
+  const tokenByListing = new Map(connections.map((connection) => [connection.listingId, decryptSecret(connection.encryptedAccessToken)]));
+  const engagementEntries = await Promise.all(
+    posts
+      .filter((post) => post.facebookPostId)
+      .map(async (post) => {
+        const accessToken = tokenByListing.get(post.listingId);
+        if (!accessToken) return null;
+        const engagement = await getFacebookPostEngagement(post.facebookPostId!, accessToken);
+        return engagement ? ([post.id, engagement] as const) : null;
+      }),
+  );
+  const engagementByPostId = new Map(engagementEntries.filter((entry) => entry !== null));
 
   return (
     <div className="space-y-6">
@@ -95,9 +114,23 @@ export default async function PartnerPostsPage({
                       {post.listing.companyName} · {formatDate(post.createdAt)}
                     </p>
                     {post.facebookPostId && (
-                      <p className="mt-1 inline-flex items-center gap-1 text-xs text-slate-500 dark:text-slate-400">
-                        <Share2 className="h-3 w-3 text-[#1877F2]" />
-                        Posted to Facebook
+                      <p className="mt-1 flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400">
+                        <span className="inline-flex items-center gap-1">
+                          <Share2 className="h-3 w-3 text-[#1877F2]" />
+                          Posted to Facebook
+                        </span>
+                        {engagementByPostId.has(post.id) && (
+                          <span className="inline-flex items-center gap-2">
+                            <span className="inline-flex items-center gap-1">
+                              <Heart className="h-3 w-3" />
+                              {engagementByPostId.get(post.id)!.likes}
+                            </span>
+                            <span className="inline-flex items-center gap-1">
+                              <MessageCircle className="h-3 w-3" />
+                              {engagementByPostId.get(post.id)!.comments}
+                            </span>
+                          </span>
+                        )}
                       </p>
                     )}
                     {post.facebookPostError && !post.facebookPostId && (
