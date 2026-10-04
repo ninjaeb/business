@@ -9,9 +9,8 @@ import { Badge } from "@/components/ui/badge";
 import { ListingLogo } from "@/components/directory/listing-logo";
 import {
   directoryHomePath,
-  directoryListingNewsPath,
   directoryListingPath,
-  directoryListingPromotionsPath,
+  directoryListingPostsPath,
   directoryListingServicesPath,
   formatSearchViewAllResults,
   type DirectoryLocale,
@@ -222,10 +221,7 @@ export function HeaderSearch({
           {results.updates.length > 0 && (
             <ResultGroup heading={t.updatesHeading}>
               {results.updates.map((hit, index) => {
-                const href =
-                  hit.kind === "PROMOTION"
-                    ? directoryListingPromotionsPath(locale, hit.listingSlug)
-                    : directoryListingNewsPath(locale, hit.listingSlug);
+                const href = directoryListingPostsPath(locale, hit.listingSlug);
                 return (
                 <Link
                   key={`${hit.listingSlug}-${index}`}

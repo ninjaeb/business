@@ -5,25 +5,23 @@ import { z } from "zod";
 import { requirePartnerAction } from "@/lib/auth/dal";
 import { db } from "@/lib/db";
 import { getOwnedListing } from "@/lib/directory";
-import { DIRECTORY_LOCALES, directoryListingNewsPath, directoryListingPromotionsPath, directoryNewsPath } from "@/lib/directory-i18n";
+import { DIRECTORY_LOCALES, directoryListingPostsPath, directoryNewsPath } from "@/lib/directory-i18n";
 import { getOwnedPost } from "@/lib/partner-posts";
 import { getDecryptedFacebookConnection, deleteFacebookConnection } from "@/lib/facebook-connections";
 import { postToFacebookPage, FacebookPostError } from "@/lib/facebook";
 import { getSiteOrigin } from "@/lib/site-url";
 
 // Every public surface a post (or its removal) can appear on — the
-// listing's own News/Promotions tabs merge in live PartnerPost rows
-// alongside `updates` (see getListingPostsAsUpdateEntries's own comment),
-// and the directory-wide feed does the same across every listing
+// listing's own Posts tab merges in live PartnerPost rows alongside
+// `updates` (see getListingPostsAsUpdateEntries's own comment), and the
+// directory-wide feed does the same across every listing
 // (loadLatestPartnerPosts) — both need revalidating in all 3 locales, same
 // "one published thing, three language pages" convention as
 // revalidateDirectory (src/lib/directory-revalidate.ts), kept separate
-// from that helper since neither path it knows about is a News/Promotions
-// tab.
+// from that helper since neither path it knows about is the Posts tab.
 function revalidatePostSurfaces(slug: string) {
   for (const { code } of DIRECTORY_LOCALES) {
-    revalidatePath(directoryListingNewsPath(code, slug));
-    revalidatePath(directoryListingPromotionsPath(code, slug));
+    revalidatePath(directoryListingPostsPath(code, slug));
     revalidatePath(directoryNewsPath(code));
   }
 }

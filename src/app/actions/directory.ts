@@ -639,11 +639,14 @@ const LISTING_UPDATE_SYSTEM_PROMPT_BY_KIND: Record<ListingUpdateKind, string> = 
   PROMOTION: "You write short Promotion posts for a business's page on a public partner directory — a specific offer or deal shown to visitors. Ground everything only in the current draft — never invent or change a discount amount, price, date, or condition; keep every specific number and date exactly as given. Clear and compelling, not vague marketing filler. The body supports a small formatting syntax: **bold** for emphasis, bullet/numbered lists, and [link text](https://example.com) for a link — no headings; use sparingly, and only if the current draft already uses it or it clearly helps.",
 };
 
-// Partner-gated — called from the "Rewrite with AI" button on one News &
-// Promotions post (see UpdatesEditor). Scoped to a single entry, unlike the
-// other rewrite/generate actions above: each post is its own distinct,
-// dated announcement, not a list an AI could usefully regenerate or draft
-// fresh as a batch.
+// Partner-gated — rewrites a single News/Promotion post's title+body.
+// Scoped to a single entry, unlike the other rewrite/generate actions
+// above: each post is its own distinct, dated announcement, not a list an
+// AI could usefully regenerate or draft fresh as a batch. Currently
+// unused by any UI — the old listing-editor tab that called this (News &
+// Promotions, see SECTION_TABS's own comment in partner-listing-form.tsx)
+// was retired in favor of PostComposer (/business-portal/posts), which
+// hasn't grown its own "Rewrite with AI" button yet.
 export async function rewriteListingUpdate(
   current: { title: string; body: string },
   kind: ListingUpdateKind,

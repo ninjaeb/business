@@ -398,25 +398,28 @@ export function parseFaqsJson(raw: string): FaqEntry[] {
   return faqsFromJson(parsed);
 }
 
-// A listing's News & Promotions feed — see UpdatesEditor. Same
-// draft-until-approved lifecycle as every other listing field (services,
-// faqs, ...): posting or editing one only reaches the public page the next
-// time the listing is submitted and approved, same as everything else on
-// this form — there's no separate, unmoderated publish path for these, even
-// though that means a time-sensitive promotion isn't instant. endDate is
-// optional and mainly meaningful for a PROMOTION (a NEWS post has no natural
-// expiry); the public page hides a promotion once its endDate has passed
-// rather than requiring the partner to remember to remove it. No startDate:
-// a promotion that shouldn't show yet is simply not posted yet. body is
-// markdown-lite (see src/lib/markdown-lite.tsx), same grammar and image
-// embedding as the About field, rendered with renderMarkdownLite rather than
-// as plain text — and, unlike About, feeds a per-post Article JSON-LD node
-// (see buildUpdatesJsonLd in src/lib/directory-seo.ts) for SEO/GEO. postedAt
-// is stamped once, the moment a post is actually added (see UpdatesEditor's
-// commit) — an original-publish date, never bumped by a later edit, same
-// spirit as a blog post's own dateline; null on an entry saved before this
-// field existed, which just omits datePublished from its JSON-LD rather
-// than fabricating one.
+// A listing's News & Promotions feed — historically the shape
+// PartnerListing.updates stored (draft-until-approved, same as every other
+// listing field, posted through a tab inside the full listing editor) and
+// migrated once, in full, into real PartnerPost rows by
+// migrateUpdatesToPartnerPosts (prisma/seed.ts) — see PartnerPost's own
+// schema comment for why a post publishes instantly now instead. Still this
+// exact shape: getListingPostsAsUpdateEntries (src/lib/partner-posts.ts)
+// maps each PartnerPost row into one of these, so the public page's own
+// News/Promotions rendering (UpdateItem, buildUpdatesJsonLd below) never
+// needed to care which source a given entry came from. endDate is optional
+// and mainly meaningful for a PROMOTION (a NEWS post has no natural expiry);
+// the public page hides a promotion once its endDate has passed rather than
+// requiring the partner to remember to remove it. No startDate: a promotion
+// that shouldn't show yet is simply not posted yet. body is markdown-lite
+// (see src/lib/markdown-lite.tsx), same grammar and image embedding as the
+// About field, rendered with renderMarkdownLite rather than as plain text —
+// and, unlike About, feeds a per-post Article JSON-LD node (see
+// buildUpdatesJsonLd in src/lib/directory-seo.ts) for SEO/GEO. postedAt is
+// an original-publish date, never bumped by a later edit, same spirit as a
+// blog post's own dateline; null on an entry saved before this field
+// existed, which just omits datePublished from its JSON-LD rather than
+// fabricating one.
 export type ListingUpdateKind = "NEWS" | "PROMOTION";
 export type ListingUpdateEntry = {
   kind: ListingUpdateKind;
@@ -457,8 +460,11 @@ export function updatesFromJson(value: unknown): ListingUpdateEntry[] {
     .slice(0, MAX_UPDATES);
 }
 
-// Parses the editor's serialized JSON (see UpdatesEditor's hidden input)
-// permissively, same spirit as parseServicesJson/parseFaqsJson.
+// Parses the listing form's "updates"/"zhUpdates"/"msUpdates" fields
+// permissively, same spirit as parseServicesJson/parseFaqsJson — those
+// fields are never populated by any UI anymore (see SECTION_TABS's own
+// comment in partner-listing-form.tsx), so in practice this now only ever
+// sees an empty string and returns [].
 export function parseUpdatesJson(raw: string): ListingUpdateEntry[] {
   let parsed: unknown;
   try {

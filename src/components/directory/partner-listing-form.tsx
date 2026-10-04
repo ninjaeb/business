@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useActionState, useEffect, useRef, useState, useTransition } from "react";
 import { Sparkles } from "lucide-react";
 import {
@@ -29,7 +30,6 @@ import { MarkdownLiteEditor } from "@/components/directory/markdown-lite-editor"
 import { OperatingHoursEditor } from "@/components/directory/operating-hours-editor";
 import { PartnerSlugForm } from "@/components/directory/partner-slug-form";
 import { ServicesEditor } from "@/components/directory/services-editor";
-import { UpdatesEditor } from "@/components/directory/updates-editor";
 import { VideosEditor } from "@/components/directory/videos-editor";
 import { useToast } from "@/components/ui/toast";
 import { INDUSTRIES, INDUSTRY_LABELS } from "@/lib/labels";
@@ -37,7 +37,7 @@ import { MAX_SEO_DESCRIPTION_LENGTH, MAX_SEO_TITLE_LENGTH, servicesContextText }
 import { cn } from "@/lib/utils";
 import type { PartnerListingStatus } from "@/generated/prisma/client";
 import type { OperatingHours } from "@/lib/operating-hours";
-import type { FaqEntry, ListingTranslations, ListingUpdateEntry, PhotoEntry, ServiceEntry, VideoEntry } from "@/lib/directory";
+import type { FaqEntry, ListingTranslations, PhotoEntry, ServiceEntry, VideoEntry } from "@/lib/directory";
 
 type TranslationLocale = "zh" | "ms";
 type EditorTab = "en" | TranslationLocale;
@@ -53,24 +53,24 @@ const LANGUAGE_TABS: { code: EditorTab; label: string }[] = [
   { code: "ms", label: "BM" },
 ];
 
-type EditorSection = "details" | "services" | "faq" | "updates" | "media";
+type EditorSection = "details" | "services" | "faq" | "media";
 
 // A second, independent tab switch from the language one above — this one
 // picks which section of the editor is visible at all (Business Details vs.
-// Products & Services vs. FAQ vs. News & Promotions vs. Photos and Videos),
-// not which language's translatable fields are shown within it. Photos and
-// Videos aren't translated (media has no text of its own to translate), so
-// it has no reason to share the language tabs' state — but the other four
-// sections do, and each renders its own copy of that language switcher
-// (see languageSwitcher below) since only one section is ever visible at
-// a time. FAQ sits right after Products & Services (rather than off with
-// News & Promotions/Media) since it used to live right beside it, in the
-// same section, before getting its own tab.
+// Products & Services vs. FAQ vs. Photos and Videos), not which language's
+// translatable fields are shown within it. Photos and Videos aren't
+// translated (media has no text of its own to translate), so it has no
+// reason to share the language tabs' state — but the other three sections
+// do, and each renders its own copy of that language switcher (see
+// languageSwitcher below) since only one section is ever visible at a time.
+// News & Promotions used to be a fourth tab here — see PostComposer
+// (/business-portal/posts) for where that moved: a post now publishes
+// instantly rather than waiting on the whole listing's own re-approval,
+// which a tab buried inside this form could never do.
 const SECTION_TABS: { value: EditorSection; label: string }[] = [
   { value: "details", label: "Business Details" },
   { value: "services", label: "Products & Services" },
   { value: "faq", label: "FAQ" },
-  { value: "updates", label: "News & Promotions" },
   { value: "media", label: "Photos and Videos" },
 ];
 
@@ -205,7 +205,13 @@ export function PartnerListingForm({
   const [description, setDescription] = useState(current.description);
   const [services, setServices] = useState<ServiceEntry[]>(current.services);
   const [faqs, setFaqs] = useState<FaqEntry[]>(current.faqs);
-  const [updates, setUpdates] = useState<ListingUpdateEntry[]>(current.updates);
+  // Never edited here anymore (see SECTION_TABS's own comment on where
+  // News & Promotions moved) — still read below, since handleTranslate's
+  // combined AI call and ListingTranslations' own shape both still carry
+  // an `updates` field. Always current.updates (now always [] — see
+  // migrateUpdatesToPartnerPosts in prisma/seed.ts), a plain derived
+  // value rather than its own state, since nothing mutates it anymore.
+  const updates = current.updates;
   // OperatingHoursEditor seeds its own per-day state from initialHours once,
   // on mount — bumping the key remounts it so a fresh set of hours from AI
   // Auto Create actually shows, instead of being ignored as a prop change.
@@ -374,11 +380,6 @@ export function PartnerListingForm({
     setJustSaved(false);
   }
 
-  function updateTranslatedUpdates(locale: TranslationLocale, newUpdates: ListingUpdateEntry[]) {
-    setTranslations((prev) => ({ ...prev, [locale]: { ...emptyTranslationEntry(prev, locale), updates: newUpdates } }));
-    setJustSaved(false);
-  }
-
   // Translates the primary tagline/description/services/faqs/updates
   // together, into both target languages at once — unlike the rewrite/
   // generate actions above there's no existing translation to "improve";
@@ -535,9 +536,6 @@ export function PartnerListingForm({
               )}
             >
               {tab.label}
-              {tab.value === "updates" && updates.length > 0 && (
-                <span className="ml-1.5 text-xs text-slate-400 dark:text-slate-500">({updates.length})</span>
-              )}
             </button>
           ))}
         </div>
@@ -940,6 +938,23 @@ export function PartnerListingForm({
         </p>
       </FieldGroup>
 
+      <FieldGroup label="Google Business Profile link" htmlFor="googleBusinessProfileUrl">
+        <Input
+          id="googleBusinessProfileUrl"
+          name="googleBusinessProfileUrl"
+          value={googleBusinessProfileUrl}
+          onChange={(event) => setGoogleBusinessProfileUrl(event.target.value)}
+          placeholder="https://g.page/r/..."
+        />
+        <p className="mt-1 text-xs text-slate-400">
+          Optional — open your Google Business Profile, tap Share, and paste the link here. Each post from{" "}
+          <Link href="/business-portal/posts" className="underline">
+            Posts
+          </Link>{" "}
+          then gets a &quot;Post to Google&quot; button that copies it and opens your profile to paste it in.
+        </p>
+      </FieldGroup>
+
       <div className="grid gap-4 sm:grid-cols-2">
         <div hidden={activeTab !== "en"}>
           <div className="mb-1.5 flex items-center justify-between gap-2">
@@ -1117,65 +1132,6 @@ export function PartnerListingForm({
         </p>
       </div>
 
-      </div>
-
-      <div className={cn("space-y-3", activeSection !== "updates" && "hidden")}>
-        <p className="text-sm text-slate-500 dark:text-slate-400">
-          Optional — shown on your listing in a News &amp; Promotions section. A promotion disappears on its own
-          once its end date passes.
-        </p>
-
-        <FieldGroup label="Google Business Profile link" htmlFor="googleBusinessProfileUrl">
-          <Input
-            id="googleBusinessProfileUrl"
-            name="googleBusinessProfileUrl"
-            value={googleBusinessProfileUrl}
-            onChange={(event) => setGoogleBusinessProfileUrl(event.target.value)}
-            placeholder="https://g.page/r/..."
-          />
-          <p className="mt-1 text-xs text-slate-400">
-            Optional — open your Google Business Profile, tap Share, and paste the link here. Each post below then
-            gets a &quot;Post to Google&quot; button that copies it and opens your profile to paste it in.
-          </p>
-        </FieldGroup>
-
-        {languageSwitcher}
-        <p className="-mt-1 text-xs text-slate-400">
-          Posts are per-language — switch tabs to edit each, or use Translate with AI to fill in Chinese and Malay
-          from your English posts. Kind, post date, and end date always come from the English post and aren&apos;t
-          set separately per language.
-        </p>
-
-        <div hidden={activeTab !== "en"}>
-          <UpdatesEditor
-            name="updates"
-            value={updates}
-            onChange={setUpdates}
-            listingId={listingId}
-            aiAvailable={aiAvailable}
-            googleBusinessProfileUrl={googleBusinessProfileUrl}
-          />
-        </div>
-        <div hidden={activeTab !== "zh"}>
-          <UpdatesEditor
-            name="zhUpdates"
-            value={translations.zh?.updates ?? []}
-            onChange={(value) => updateTranslatedUpdates("zh", value)}
-            listingId={listingId}
-            aiAvailable={aiAvailable}
-            googleBusinessProfileUrl={googleBusinessProfileUrl}
-          />
-        </div>
-        <div hidden={activeTab !== "ms"}>
-          <UpdatesEditor
-            name="msUpdates"
-            value={translations.ms?.updates ?? []}
-            onChange={(value) => updateTranslatedUpdates("ms", value)}
-            listingId={listingId}
-            aiAvailable={aiAvailable}
-            googleBusinessProfileUrl={googleBusinessProfileUrl}
-          />
-        </div>
       </div>
 
       {/* Videos and Photos aren't per-language either (same reasoning as

@@ -117,12 +117,13 @@ export function directoryListingVideosPath(locale: DirectoryLocale, slug: string
   return `${directoryListingPath(locale, slug)}/videos`;
 }
 
-export function directoryListingNewsPath(locale: DirectoryLocale, slug: string): string {
-  return `${directoryListingPath(locale, slug)}/news`;
-}
-
-export function directoryListingPromotionsPath(locale: DirectoryLocale, slug: string): string {
-  return `${directoryListingPath(locale, slug)}/promotions`;
+// News and Promotion entries together, one feed — see postsHeading's own
+// comment. The old separate /news and /promotions routes still resolve
+// (as plain redirects to this path — see their own page.tsx), for any
+// link or crawler that indexed them before the merge; nothing builds
+// those old paths anymore, so there's no path-helper for them to reuse.
+export function directoryListingPostsPath(locale: DirectoryLocale, slug: string): string {
+  return `${directoryListingPath(locale, slug)}/posts`;
 }
 
 export function directoryListingVisitPath(locale: DirectoryLocale, slug: string): string {
@@ -455,6 +456,12 @@ export type DirectoryStrings = {
   // beneath the album grid rather than left unreachable.
   backToAlbumsLabel: string;
   otherPhotosLabel: string;
+  // The listing's own Posts tab — News and Promotion entries together, one
+  // feed (see [locale]/[slug]/posts/page.tsx), first in the section nav,
+  // before About. Distinct from updatesHeading below, the directory-wide
+  // feed's own heading (still "News & Promotions" there — only the
+  // per-listing tab merged into one "Posts" label).
+  postsHeading: string;
   updatesHeading: string;
   newsLabel: string;
   promotionLabel: string;
@@ -862,6 +869,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     photosHeading: "Photos",
     backToAlbumsLabel: "Back to albums",
     otherPhotosLabel: "Other photos",
+    postsHeading: "Posts",
     updatesHeading: "News & Promotions",
     newsLabel: "News",
     promotionLabel: "Promotion",
@@ -1160,6 +1168,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     photosHeading: "照片",
     backToAlbumsLabel: "返回相册",
     otherPhotosLabel: "其他照片",
+    postsHeading: "动态",
     updatesHeading: "新闻与促销",
     newsLabel: "新闻",
     promotionLabel: "促销",
@@ -1454,6 +1463,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     photosHeading: "Foto",
     backToAlbumsLabel: "Kembali ke album",
     otherPhotosLabel: "Foto lain",
+    postsHeading: "Hantaran",
     updatesHeading: "Berita & Promosi",
     newsLabel: "Berita",
     promotionLabel: "Promosi",

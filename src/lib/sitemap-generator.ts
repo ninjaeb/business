@@ -27,10 +27,9 @@ import {
   directoryHomePath,
   directoryIndustriesIndexPath,
   directoryListingFaqPath,
-  directoryListingNewsPath,
   directoryListingPath,
   directoryListingPhotosPath,
-  directoryListingPromotionsPath,
+  directoryListingPostsPath,
   directoryListingServicesPath,
   directoryListingVideosPath,
   directoryListingVisitPath,
@@ -384,14 +383,12 @@ export async function buildSitemapXml(): Promise<string> {
     // which do filter by it): the sitemap only regenerates on
     // publish/unpublish, so it can't track an expiry date rolling over
     // between regenerations any more precisely than that.
-    const hasNews = listing.updates.some((update) => update.kind === "NEWS");
-    const hasPromotions = listing.updates.some((update) => update.kind === "PROMOTION");
+    const hasPosts = listing.updates.length > 0;
     const sectionEntries: [boolean, (locale: DirectoryLocale) => string][] = [
       [listing.services.length > 0, (locale) => directoryListingServicesPath(locale, slug)],
       [listing.photos.length > 0, (locale) => directoryListingPhotosPath(locale, slug)],
       [listing.videos.length > 0, (locale) => directoryListingVideosPath(locale, slug)],
-      [hasNews, (locale) => directoryListingNewsPath(locale, slug)],
-      [hasPromotions, (locale) => directoryListingPromotionsPath(locale, slug)],
+      [hasPosts, (locale) => directoryListingPostsPath(locale, slug)],
       [Boolean(listing.address || listing.operatingHours), (locale) => directoryListingVisitPath(locale, slug)],
       [listing.faqs.length > 0, (locale) => directoryListingFaqPath(locale, slug)],
     ];

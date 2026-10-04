@@ -2,6 +2,7 @@ import "dotenv/config";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { db } from "../src/lib/db";
+import { Prisma } from "../src/generated/prisma/client";
 import { GUIDES, type GuideImage, type GuideSeed, type GuideFaqEntry } from "./guides-seed";
 
 // A curated, fixed starter vocabulary for the partner listing picker — the
@@ -229,6 +230,95 @@ async function main() {
   console.log("Ensured Settings singleton row exists.");
 
   await seedGuides();
+  await migrateUpdatesToPartnerPosts();
+}
+
+// One-time, idempotent data migration: PartnerListing.updates JSON entries
+// (the old News & Promotions tab inside the full listing editor, since
+// retired — see src/components/directory/partner-listing-form.tsx's own
+// comment) become real PartnerPost rows, so every News/Promotion item —
+// written the old way or the new instant-post way — lives in one place and
+// is manageable from /business-portal/posts. "updates is now empty, on both
+// copies below" is this migration's own completion marker: the old tab is
+// gone, nothing writes a non-empty `updates` anymore, so a listing this
+// already visited can never have fresh JSON to pick up on a later run.
+// Deliberately not imported from src/lib/directory.ts (the real
+// ListingUpdateEntry/sanitizeUpdateEntry machinery) — that file pulls in
+// `server-only` (via directory-i18n.ts and friends), which throws outside
+// Next's own module resolution; this plain tsx/Prisma-CLI script has none,
+// same reason seedGuides() above never calls regenerateSitemapFile() either.
+// Translated (zh/ms) copies of a migrated entry, if any existed in
+// `translations.zh.updates`/`translations.ms.updates`, are NOT carried
+// over — PartnerPost has no locale of its own by design (see
+// src/lib/partner-posts.ts's own comment); a migrated post reads in
+// English on every locale going forward, same as every new post already
+// does.
+//
+// The live `updates` column isn't the only copy: publishedSnapshot (see
+// buildPublishedSnapshot/readPublishedSnapshot in src/lib/directory.ts) is
+// a separate, frozen JSON blob taken at last publish, and it's what the
+// public Posts page actually renders (getPublishedListingBySlug reads the
+// snapshot, never the live row). Migrating only the live column would
+// leave every already-published listing's old entries still visible from
+// its stale snapshot, now duplicated right next to the very PartnerPost
+// rows just migrated from the same content. Both copies get cleared below;
+// the live row is the migration source whenever it has anything (it's the
+// partner's own most recent save), falling back to the snapshot's own copy
+// only when the live row is already empty — a draft cleared without ever
+// being republished — so a still-visible published entry is never silently
+// dropped.
+async function migrateUpdatesToPartnerPosts() {
+  const listings = await db.partnerListing.findMany({
+    select: { id: true, partnerId: true, updates: true, publishedSnapshot: true },
+  });
+
+  let migratedListings = 0;
+  let migratedPosts = 0;
+  for (const listing of listings) {
+    const liveRaw = Array.isArray(listing.updates) ? listing.updates : [];
+    const snapshot = listing.publishedSnapshot;
+    const snapshotRaw =
+      snapshot && typeof snapshot === "object" && Array.isArray((snapshot as Record<string, unknown>).updates)
+        ? ((snapshot as Record<string, unknown>).updates as unknown[])
+        : [];
+    if (liveRaw.length === 0 && snapshotRaw.length === 0) continue;
+
+    const raw = liveRaw.length > 0 ? liveRaw : snapshotRaw;
+    for (const value of raw) {
+      if (!value || typeof value !== "object") continue;
+      const entry = value as Record<string, unknown>;
+      const title = typeof entry.title === "string" ? entry.title.trim() : "";
+      const body = typeof entry.body === "string" ? entry.body.trim() : "";
+      if (!title || !body) continue;
+      const kind = entry.kind === "PROMOTION" ? "PROMOTION" : "NEWS";
+      const postedAt = typeof entry.postedAt === "string" && !Number.isNaN(Date.parse(entry.postedAt)) ? new Date(entry.postedAt) : new Date();
+      const endDate = typeof entry.endDate === "string" && !Number.isNaN(Date.parse(entry.endDate)) ? new Date(entry.endDate) : null;
+
+      await db.partnerPost.create({
+        data: { listingId: listing.id, partnerId: listing.partnerId, kind, title, body, createdAt: postedAt, endDate },
+      });
+      migratedPosts++;
+    }
+
+    // Clear both copies so the public page only ever shows this content via
+    // PartnerPost from now on. Cleared regardless of how many entries
+    // actually migrated (even zero, if every entry in a malformed array
+    // failed the title/body check above) — this is the marker that this
+    // listing has been visited, so a later run never re-reads it.
+    if (snapshotRaw.length > 0) {
+      await db.partnerListing.update({
+        where: { id: listing.id },
+        data: { updates: [], publishedSnapshot: { ...(snapshot as Record<string, unknown>), updates: [] } as Prisma.InputJsonValue },
+      });
+    } else {
+      await db.partnerListing.update({ where: { id: listing.id }, data: { updates: [] } });
+    }
+    migratedListings++;
+  }
+
+  if (migratedListings > 0) {
+    console.log(`Migrated ${migratedPosts} News/Promotion post(s) from ${migratedListings} listing(s) into PartnerPost.`);
+  }
 }
 
 // Editorial content, not system vocabulary — but unlike coverImage/

@@ -60,10 +60,9 @@ export function DatePicker({
   // Uncontrolled (the original, still how every CRM quick-add form uses
   // this): give it a form field `name` and it manages its own state,
   // submitted the same way a native <input> would be. Controlled (for a
-  // field whose value the parent already tracks — e.g. one row of
-  // UpdatesEditor's own list, which serializes its whole array into a
-  // single hidden JSON field rather than submitting each entry by its own
-  // form field name): pass `value`/`onChange` instead and omit `name`.
+  // field whose value the parent already tracks — e.g. PostComposer's own
+  // "Ends" date, kept as plain component state rather than its own form
+  // field): pass `value`/`onChange` instead and omit `name`.
   name?: string;
   id?: string;
   defaultValue?: string;
@@ -71,7 +70,7 @@ export function DatePicker({
   onChange?: (value: string) => void;
   className?: string;
   // Overrides the trigger button's own size/spacing classes (h-11 w-full
-  // by default) — e.g. a compact inline row like UpdatesEditor's "Ends"
+  // by default) — e.g. a compact inline row like PostComposer's "Ends"
   // field, which sits next to a News/Promotion toggle no taller than this.
   buttonClassName?: string;
   placeholder?: string;
@@ -87,7 +86,7 @@ export function DatePicker({
   const inputRef = useRef<HTMLInputElement>(null);
 
   // setValue is onChange in controlled mode — a new function identity on
-  // every render for an inline caller like UpdatesEditor's — so the reset
+  // every render for an inline caller like PostComposer's — so the reset
   // listener below reads it through a ref kept current each render, rather
   // than reattaching the DOM listener whenever the parent re-renders.
   const setValueRef = useRef(setValue);

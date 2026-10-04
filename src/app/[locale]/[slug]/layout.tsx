@@ -36,10 +36,9 @@ import {
   directoryHomePath,
   directoryListingBusinessPartnersPath,
   directoryListingFaqPath,
-  directoryListingNewsPath,
   directoryListingPath,
   directoryListingPhotosPath,
-  directoryListingPromotionsPath,
+  directoryListingPostsPath,
   directoryListingServicesPath,
   directoryListingTestimonialsPath,
   directoryListingVideosPath,
@@ -513,24 +512,27 @@ export default async function ListingLayout({
   ];
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(breadcrumbItems);
 
-  // Whether an instant post (see livePosts above) covers each tab even when
-  // this listing's own `updates` doesn't — the News/Promotions pages
-  // themselves apply this exact same isUpdateCurrent/kind filter before
-  // merging the two sources.
+  // Whether an instant post (see livePosts above) covers the Posts tab even
+  // when this listing's own `updates` doesn't — the Posts page itself
+  // applies this exact same isUpdateCurrent filter before merging the two
+  // sources.
   const today = new Date().toISOString().slice(0, 10);
-  const hasLiveNews = livePosts.some((post) => post.kind === "NEWS" && isUpdateCurrent(post, today));
-  const hasLivePromotions = livePosts.some((post) => post.kind === "PROMOTION" && isUpdateCurrent(post, today));
+  const hasLivePosts = livePosts.some((post) => isUpdateCurrent(post, today));
 
   // The header's own tab strip (see ListingSectionNav) — same conditions as
   // each section page's own notFound() guard, in the same order they used
   // to appear as Cards on the single page, so a tab only ever points at a
-  // page that actually has something on it. Two tabs from that single page
-  // are now four: the old combined "Photo and Video" splits into Photos and
-  // Videos, and "News & Promotions" into News and Promotions, since each is
-  // now its own page rather than a subheading within a shared card. Hours
-  // has no tab of its own — folded into Visit us (see
-  // directoryListingVisitPath's own comment).
+  // page that actually has something on it. Hours has no tab of its own —
+  // folded into Visit us (see directoryListingVisitPath's own comment).
   const sectionLinks = [
+    // First, before About — a business's own News/Promotion posts are
+    // what changes most often and what a returning visitor is most likely
+    // checking for, unlike About, which only changes when the business
+    // itself is edited.
+    (display.currentNews.length > 0 || display.currentPromotions.length > 0 || hasLivePosts) && {
+      href: directoryListingPostsPath(resolved, slug),
+      label: t.postsHeading,
+    },
     display.description && { href: directoryListingPath(resolved, slug), label: t.aboutHeading },
     // Right after About — "where/when to visit" is core identity info a
     // visitor wants placed next to "what this business is," not buried
@@ -549,11 +551,6 @@ export default async function ListingLayout({
     display.faqs.length > 0 && { href: directoryListingFaqPath(resolved, slug), label: t.faqHeading },
     listing.photos.length > 0 && { href: directoryListingPhotosPath(resolved, slug), label: t.photosHeading },
     display.videoGallery.length > 0 && { href: directoryListingVideosPath(resolved, slug), label: t.videoHeading },
-    (display.currentNews.length > 0 || hasLiveNews) && { href: directoryListingNewsPath(resolved, slug), label: t.newsLabel },
-    (display.currentPromotions.length > 0 || hasLivePromotions) && {
-      href: directoryListingPromotionsPath(resolved, slug),
-      label: t.promotionsHeading,
-    },
     // Last, not grouped with the other content tabs — this isn't the
     // business's own content, it's visitor-submitted, so it reads as the
     // directory's own closing "what do others say" tab rather than one more
