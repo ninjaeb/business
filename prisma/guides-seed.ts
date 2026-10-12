@@ -1369,4 +1369,789 @@ Setelah lesen anda lengkap dan perniagaan benar-benar beroperasi, wajar memanfaa
       },
     },
   },
+  {
+    slug: "hiring-your-first-employee-in-malaysia-epf-socso-eis",
+    title: "Hiring Your First Employee in Malaysia: EPF, SOCSO, EIS and Payroll Basics",
+    seoTitle: "Hiring Your First Employee in Malaysia: EPF & SOCSO Guide",
+    seoDescription:
+      "A first-time Malaysian employer's guide to EPF, SOCSO, EIS registration, payroll deadlines, and the paperwork you need before and after your first hire.",
+    coverImage: {
+      file: "hiring-your-first-employee-in-malaysia-epf-socso-eis-cover.webp",
+      mimeType: "image/webp",
+      alt: "A small business owner welcoming and shaking hands with a new employee in their shop",
+      altTranslations: {
+        zh: "一位小企业主在店里欢迎并与新员工握手",
+        ms: "Seorang pemilik perniagaan kecil menyambut dan bersalaman dengan pekerja baharu di kedainya",
+      },
+    },
+    contentImages: {
+      paperwork: {
+        file: "hiring-your-first-employee-in-malaysia-epf-socso-eis-paperwork.webp",
+        mimeType: "image/webp",
+        alt: "A business owner organizing a new employee's paperwork at a desk",
+        altTranslations: {
+          zh: "一位企业主在办公桌前整理新员工的文件",
+          ms: "Seorang pemilik perniagaan menyusun kerja kertas pekerja baharu di sebuah meja",
+        },
+        after: "Keep a simple personnel file per employee from day one: contract, IC copy, bank details, and any later amendments (salary changes, promotions).",
+        afterTranslations: {
+          zh: "从第一天起,为每位员工建立一份简单的人事档案:合约、身份证副本、银行资料,以及日后的任何变更(加薪、晋升等)。",
+          ms: "Simpan satu fail peribadi yang ringkas untuk setiap pekerja sejak hari pertama: kontrak, salinan kad pengenalan, butiran bank, dan sebarang pindaan kemudian (perubahan gaji, kenaikan pangkat).",
+        },
+      },
+    },
+    excerpt:
+      "Hiring your first employee in Malaysia means registering with EPF, SOCSO/EIS, and LHDN, each with its own deadline and paperwork. This guide walks through what a first-time employer needs to set up before day one, how the statutory contributions actually work, and the payroll habits that keep you compliant every month after.",
+    body: `Hiring your first employee changes what kind of business you're running — not just in headcount, but in paperwork. The moment someone goes on payroll, you take on legal obligations to three different statutory bodies (EPF, SOCSO/EIS, and LHDN) that didn't apply when it was just you, a partner, or contractors invoiced on their own EPF/SST number. None of it is especially hard, but it has to happen in the right order and on time, or the penalties and back-payments land on you, not the new hire. This guide covers what a first-time Malaysian employer actually needs to do, from the week before someone starts to the first few payroll cycles after.
+
+## 1. Register as an employer before your first hire's first day
+
+Three separate registrations need to exist before you run your first payroll, and each is with a different agency:
+
+- **EPF (KWSP)** — register as an employer to get an employer reference number, then register the new employee under it.
+- **SOCSO and EIS (PERKESO)** — one registration covers both; PERKESO treats them as a single employer account with two schemes under it.
+- **LHDN (Inland Revenue Board)** — register for an employer (E) number if you don't already have one, so you can remit the employee's monthly tax deduction.
+
+Each agency's own portal (EPF's i-Akaun, PERKESO's ASSIST, and LHDN's e-Daftar/MyTax) handles the actual registration, and each publishes its own deadline for how soon after a first hire this has to be done — commonly cited as within days to a few weeks, depending on the agency. Rather than working from a half-remembered number, check the current deadline on each agency's own site before your hire's start date, since missed-registration penalties are enforced on the employer, not waived for a first-timer.
+
+### What you'll need on hand
+Your business registration details (SSM), your own IC, and the new employee's IC and bank account details — EPF and SOCSO contributions are credited electronically, so a wrong account number delays the employee's own contribution record, not just your filing.
+
+## 2. Put the paperwork in place before, not after, day one
+
+A written employment contract (or at minimum an offer letter covering position, salary, working hours, and notice period) should exist before the first day, both because the Employment Act expects it for most categories of employee and because it's the document you'll refer back to the first time a dispute over leave, overtime, or termination comes up.
+
+Two LHDN forms matter early:
+- **CP22** — notifies LHDN of a new employee, filed within a set number of days of their start date (confirm the current deadline with LHDN, as it has changed before and isn't worth guessing at).
+- **CP22A/CP22B** — the equivalent form for when an employee leaves, which matters later but is worth knowing exists now.
+
+Keep a simple personnel file per employee from day one: contract, IC copy, bank details, and any later amendments (salary changes, promotions). It's the first thing an EPF or SOCSO audit asks for, and the easiest thing to have ready if you built the habit early rather than reconstructing it under pressure later.
+
+It's also worth reading the Employment Act's basic entitlements before you draft that first contract, even if your hire doesn't fall under its stricter wage-based coverage — annual and sick leave minimums, rest days, and overtime rules are the kind of thing a new employee (or a labour officer, if a complaint is ever filed) will expect you to already know, not look up for the first time after a dispute starts.
+
+## 3. Understand what EPF, SOCSO, and EIS actually cost both of you
+
+These three deductions are the core of Malaysian payroll, and each works slightly differently:
+
+### EPF (retirement savings)
+Both employer and employee contribute a percentage of monthly wages into the employee's EPF account. For a Malaysian citizen or permanent resident under 60, the employee's share and the employer's share are both set out in EPF's own contribution schedule (the Third Schedule), and the employer's percentage can actually shift depending on the wage band, so don't assume one flat number applies at every salary level. EPF's official contribution rate table is the only source worth calculating from — it's revised from time to time, and a rate you read in an old blog post may already be out of date.
+
+### SOCSO (injury and invalidity protection)
+SOCSO covers two schemes — the Employment Injury Scheme and the Invalidity Pension Scheme — funded by a small employer contribution and a smaller employee contribution, calculated against a monthly wage ceiling that PERKESO periodically revises upward. Confirm the current ceiling and both percentages on PERKESO's own site rather than a fixed figure here, precisely because that ceiling has moved in recent years and is exactly the kind of number this guide won't pretend to freeze in place.
+
+### EIS (unemployment protection)
+A smaller, separate contribution — split evenly between employer and employee — funds short-term financial support and job-search assistance if the employee is later retrenched. It's collected together with SOCSO on the same PERKESO schedule, so once you've set up one, setting up the other is mostly a formality.
+
+> Treat the EPF/SOCSO/EIS rate tables the way you'd treat an exchange rate, not a fact you memorize once — look up the current published schedule every time you onboard a new hire or adjust a salary, because all three have been revised in the past and will likely be revised again.
+
+## 4. Set up Monthly Tax Deduction (PCB/MTD) correctly from the first payslip
+
+Separately from EPF/SOCSO/EIS, you're required to deduct Monthly Tax Deduction (known as PCB, from its Malay name, or MTD) from an employee's salary and remit it to LHDN — this is an advance on the employee's own annual income tax, not an employer cost, but calculating it wrong is still the employer's problem to fix. LHDN publishes an official PCB calculator and schedule; most Malaysian payroll software (and LHDN's own calculator, for a manual spot-check) applies it automatically based on the employee's monthly salary, marital status, and number of children claimed — details worth collecting on a short form during onboarding, since getting them wrong under-deducts now and creates a shortfall the employee discovers at tax-filing time.
+
+## 5. Build a payroll calendar and keep to it
+
+Once registrations and the first payslip are sorted, the ongoing job is mostly about timing: EPF, SOCSO/EIS, and PCB each have their own monthly remittance deadline to the respective agency, typically within the first two to three weeks of the following month — confirm the exact day for each on their current portals, since this is another figure agencies adjust from time to time. Missing any of them, even by a day, commonly triggers a late-payment penalty that's entirely avoidable with a calendar reminder.
+
+A simple monthly routine that covers most small employers:
+- Run payroll and issue payslips on a fixed date each month.
+- Submit and pay EPF, SOCSO/EIS, and PCB for that month by their respective deadlines.
+- Keep digital copies of every submission receipt — EPF, PERKESO, and LHDN all generate one, and an audit years later is far less stressful with a complete folder than a gap you have to explain.
+
+## 6. Decide early: run it yourself, or get help
+
+A single employee is manageable on a spreadsheet plus the three agencies' own portals, if you're disciplined about the calendar above. Once you're hiring a second or third person, most small Malaysian employers move to either a payroll software subscription (which calculates EPF/SOCSO/EIS/PCB automatically and files some of it directly) or an outsourced payroll/accounting firm that handles the filings on your behalf for a monthly fee. Neither is mandatory at one employee, but deciding before you actually need it — rather than mid-crisis after a missed deadline — is the cheaper way to make that call.
+
+Weigh it against what a missed or late filing actually costs: a payroll subscription or an accounting retainer is a predictable monthly line item, while a penalty for a late EPF or SOCSO payment, or the back-and-forth of correcting a wrong PCB deduction months after the fact, tends to cost more in both money and your own time than the service you were trying to avoid paying for.
+
+Getting your business itself easier to find matters just as much once you're hiring — a growing team usually means a growing customer base too, and [listing your business here](/en/signup) alongside the operational side covered in this guide is a free, fast way to be found by the customers that first employee will help you serve. It's worth [browsing what else is listed](/en) to see how other Malaysian SMEs — many of them first-time employers not long ago — present themselves once they've scaled past a one-person operation.
+
+## Common mistakes first-time employers make
+
+- **Registering with EPF or SOCSO after the employee has already started working.** All three agencies calculate contributions from the actual start date, not the registration date, so a late registration still means back-payment for the gap, plus a possible penalty on top.
+- **Copying a contribution rate from an old article or template instead of checking the current schedule.** EPF, SOCSO, and EIS rates and wage ceilings have all changed in recent years — a number that was correct eighteen months ago may already be wrong.
+- **Treating PCB/MTD as optional for a small first hire.** It's a legal deduction obligation regardless of headcount, and under-deducting it doesn't disappear — it becomes the employee's tax shortfall, and your credibility problem, come filing season.
+
+## Where to start this week
+
+- **Today:** Gather your SSM registration details and the new hire's IC and bank account number, and check EPF, PERKESO, and LHDN's current registration deadlines so you know exactly what date you're working against.
+- **Before their first day:** Register as an employer with EPF and PERKESO, get a written contract signed, and set up (or confirm you already have) an LHDN employer number.
+- **Within the first pay cycle:** File CP22, confirm the current EPF/SOCSO/EIS rates against each agency's own schedule, and run your first payslip with PCB calculated through LHDN's calculator or your payroll software.
+- **Every month after:** Pay EPF, SOCSO/EIS, and PCB by their deadlines, and keep every submission receipt in one folder.
+
+Do this once, properly, and every hire after the first is mostly repetition — the real cost of getting it wrong isn't the paperwork itself, it's the back-payments and penalties that stack up while nobody's checking.`,
+    faqs: [
+      {
+        question: "Do I need to register with EPF and SOCSO for just one employee?",
+        answer:
+          "Yes. Registration obligations apply from your very first employee, regardless of headcount — there's no exemption for a single hire. The same applies to registering an LHDN employer number if you don't already have one.",
+      },
+      {
+        question: "What is the difference between EPF, SOCSO, and EIS?",
+        answer:
+          "EPF is a retirement savings scheme, with both employer and employee contributing a percentage of monthly wages into the employee's own account. SOCSO covers workplace injury and invalidity protection, while EIS provides short-term financial support if an employee is later retrenched. SOCSO and EIS are administered together by PERKESO, while EPF is a separate agency entirely.",
+      },
+      {
+        question: "How soon after hiring do I need to register as an employer?",
+        answer:
+          "Each agency — EPF, PERKESO, and LHDN — sets its own deadline, and these have been known to change, so check the current requirement on each agency's own portal before your hire's start date rather than relying on a remembered figure. Treat it as something to confirm per hire, not something you look up once and reuse indefinitely.",
+      },
+      {
+        question: "What is PCB/MTD, and is it different from EPF?",
+        answer:
+          "PCB (Potongan Cukai Bulanan), also called MTD (Monthly Tax Deduction), is a monthly advance deduction toward an employee's annual income tax, remitted to LHDN. It's entirely separate from EPF, SOCSO, and EIS, which are all social security and retirement contributions rather than income tax.",
+      },
+      {
+        question: "Do foreign employees need to be registered for EPF and SOCSO too?",
+        answer:
+          "Generally yes for SOCSO, and EPF coverage for foreign workers has also been extended in recent changes to Malaysian regulations — confirm the current rules and rates for foreign employees on EPF's and PERKESO's own sites, since this is an area that has changed and may continue to.",
+      },
+      {
+        question: "What happens if I register late or miss a monthly contribution?",
+        answer:
+          "Contributions are typically calculated from the employee's actual start date regardless of when you registered, so a late registration usually still means paying the backdated amount, often alongside a penalty. A missed monthly payment deadline commonly triggers a late-payment charge as well, so it's worth fixing promptly rather than letting it compound across more months.",
+      },
+      {
+        question: "Do I need a written employment contract for my first hire?",
+        answer:
+          "A written contract, or at minimum a clear offer letter covering role, salary, hours, and notice period, is strongly expected under the Employment Act for most categories of employee and is the document you'll rely on if any dispute comes up later. Treat it as a basic requirement rather than an optional formality, even for a very small or informal first hire.",
+      },
+      {
+        question: "Should I handle payroll myself or hire a payroll service for one employee?",
+        answer:
+          "For a single employee, many first-time employers manage it themselves using a spreadsheet and each agency's own portal, provided they're disciplined about the monthly filing calendar. As headcount grows, payroll software or an outsourced provider tends to become worth the monthly cost — deciding before you actually need it, rather than after a missed deadline, is usually the better time to make that call.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "在马来西亚雇用第一位员工:EPF、SOCSO、EIS 与薪酬基础知识",
+        excerpt:
+          "在马来西亚雇用第一位员工,意味着要向 EPF、SOCSO/EIS 与 LHDN 办理注册,每个机构各有自己的期限与文书要求。本指南将说明首次雇主在员工上班第一天之前需要准备什么、法定供款实际如何运作,以及此后每个月保持合规所需养成的薪酬习惯。",
+        body: `雇用第一位员工,会改变您所经营的企业的性质——不只是人数上的变化,更是文书与合规责任上的变化。从有人正式上薪水册的那一刻起,您就要对三个不同的法定机构(公积金局 EPF、社会保险机构 SOCSO/EIS,以及税收局 LHDN)承担法律义务,而这些义务在您单独经营,或与合伙人、以自己公积金/SST账号开发票的承包商合作时都不存在。这些手续本身并不特别困难,但必须按正确顺序、按时完成,否则罚款和补缴的责任会落在您身上,而不是新员工身上。本指南将说明马来西亚首次雇主在员工入职前一周到最初几个发薪周期,实际需要做的事情。
+
+## 1. 在第一位员工上班前,先完成雇主注册
+
+在您发出第一份薪水单之前,需要完成三项各自独立的注册,每一项对应不同的机构:
+
+- **公积金局(EPF/KWSP)**——注册为雇主以取得雇主参考号,然后在该号码下为新员工注册。
+- **社险局与就业保险(SOCSO 与 EIS,统称 PERKESO)**——一次注册即可同时涵盖两个计划;PERKESO 将二者视为同一雇主账户下的两套制度。
+- **税收局(LHDN)**——如果您还没有雇主(E)号,需要先申请,这样才能为员工代缴每月预扣税款。
+
+每个机构自己的平台(EPF 的 i-Akaun、PERKESO 的 ASSIST,以及 LHDN 的 e-Daftar/MyTax)负责实际的注册流程,而每个机构也各自公布了首次雇用员工后必须完成注册的期限——常见说法是在数日至数周之内,具体视机构而定。与其凭一个模糊的记忆数字行事,请在员工入职日期之前,直接到各机构官网核实当前的期限,因为未按时注册的罚则是针对雇主执行的,并不会因为是第一次雇人而被豁免。
+
+### 提前准备好这些资料
+您的企业注册资料(SSM)、您本人的身份证,以及新员工的身份证和银行账户信息——EPF 和 SOCSO 的供款都是以电子方式入账的,账号填错不仅会耽误您的申报,也会影响该员工自己的供款记录。
+
+## 2. 在第一天上班前,而不是之后,把文书工作准备妥当
+
+一份书面雇佣合约(至少也应是一份涵盖职位、薪资、工作时间和通知期的聘书)应在第一天上班前就已存在,原因有两个:《雇佣法令》对大多数类别的员工都要求有这样的文件;而且这正是日后第一次就休假、加班或解雇发生争议时,您会翻回去查阅的文件。
+
+两份 LHDN 表格值得在早期留意:
+- **CP22**——用于通知 LHDN 有新员工入职,需在入职后的规定天数内提交(具体期限请以 LHDN 当前公布的为准,因为这一期限过去曾经调整过,不值得凭猜测行事)。
+- **CP22A/CP22B**——员工离职时对应使用的表格,目前虽不紧急,但值得先了解它的存在。
+
+从第一天起,为每位员工建立一份简单的人事档案:合约、身份证副本、银行资料,以及日后的任何变更(加薪、晋升等)。这是 EPF 或 SOCSO 审查时第一个会要求查看的东西,如果从一开始就养成这个习惯,远比日后在压力之下临时拼凑要轻松得多。
+
+在起草第一份合约之前,也值得先读一读《雇佣法令》规定的基本权益,即使您的雇员未必落入该法令按薪资门槛规定的严格适用范围——年假、病假的最低天数、休息日和加班规则,都是新员工(或者一旦有人投诉,劳工官员)会预期您早已了解,而不是等纠纷发生了才临时去查的内容。
+
+## 3. 弄清楚 EPF、SOCSO 与 EIS 到底各自要缴多少
+
+这三项扣款是马来西亚薪酬体系的核心,但三者的运作方式各不相同:
+
+### EPF(退休储蓄)
+雇主与雇员都按月薪的一定比例,向该员工的 EPF 账户供款。对于60岁以下的马来西亚公民或永久居民,雇员与雇主各自应缴的比例都列在 EPF 自己公布的供款表(第三附表)中,而雇主的比例实际上会随薪资档次而变化,所以不要以为同一个比例适用于所有薪资水平。EPF 官方公布的供款比例表,才是唯一值得据以计算的依据——它会不时修订,您在某篇旧文章里读到的比例,很可能早已过时。
+
+### SOCSO(工伤与伤残保障)
+SOCSO 涵盖两项计划——工伤保险计划与伤残抚恤金计划——由雇主缴纳较小比例、雇员缴纳更小比例的供款共同支持,计算时则对月薪设有一个上限,而 PERKESO 会不时向上调整这个上限。请直接到 PERKESO 官网核实当前的上限与两项比例,而不要依赖本文给出的固定数字——正因为这个上限近年来调整过,才是本指南不会在此处为您"钉死"一个数字的原因。
+
+### EIS(失业保障)
+这是一项较小、独立的供款——由雇主与雇员平均分摊——用于在员工日后被裁员时,提供短期经济援助与求职协助。它与 SOCSO 使用同一张 PERKESO 供款表一并征收,所以一旦您设置好其中一项,设置另一项基本只是手续上的事。
+
+> 对待 EPF/SOCSO/EIS 的供款比例表,应该像对待汇率一样——不是记一次就一成不变的事实。每次有新员工入职,或调整薪资时,都应重新查阅当前公布的表格,因为这三项比例过去都曾调整过,日后也很可能再次调整。
+
+## 4. 从第一张薪水单开始,就正确设置月度预扣税(PCB/MTD)
+
+除了 EPF/SOCSO/EIS 之外,您还需要从员工薪资中扣除月度预扣税(马来文简称 PCB,英文常称 MTD),并汇缴给 LHDN——这是员工自己全年所得税的预缴,而不是雇主的成本,但算错了仍然是雇主要负责纠正的问题。LHDN 公布了官方的 PCB 计算器与计算表;大多数马来西亚薪酬软件(以及用于人工核对的 LHDN 官方计算器)都会根据员工的月薪、婚姻状况和所申报的子女人数自动计算——这些资料值得在入职时用一张简短表格收集齐全,因为一旦填错,现在少扣的部分,日后报税时就会变成员工自己要补的税务缺口。
+
+## 5. 建立薪酬日历,并严格遵守
+
+一旦完成注册并发出第一张薪水单,接下来主要的工作就是把握时间:EPF、SOCSO/EIS 与 PCB 各自有向相应机构汇缴的月度期限,通常是在次月的头两到三周内——具体日期请以各机构当前公布的为准,因为这也是机构会不时调整的数字。任何一项迟交,即使只迟一天,通常都会触发原本完全可以避免的逾期罚款。
+
+大多数小雇主适用的简单月度流程:
+- 每月固定一个日期发薪并发出薪水单。
+- 在各自的期限前,为当月申报并缴纳 EPF、SOCSO/EIS 和 PCB。
+- 保留每一次申报的电子收据副本——EPF、PERKESO 和 LHDN 都会生成收据;多年后被审查时,有一份完整的记录远比留下空白、事后再去解释要轻松得多。
+
+## 6. 早做决定:自己处理,还是寻求协助
+
+如果您能严格遵守上文所说的日历,单一员工的情况下,用一份表格加上三个机构各自的平台就足以应付。一旦您雇用到第二、第三位员工,大多数马来西亚中小企业会转向两种做法之一:订阅薪酬软件(自动计算 EPF/SOCSO/EIS/PCB,部分还能直接代为申报),或委托一家代理薪酬/会计业务的公司,按月收费代您处理申报。两者在只有一名员工时都不是强制性的,但提前做好决定——而不是在错过期限后手忙脚乱地临时决定——成本要低得多。
+
+把这个决定,与迟交或错报实际造成的代价作个比较:薪酬软件订阅或会计代理费,是可预期、固定的每月支出;而因 EPF 或 SOCSO 逾期缴款被罚款,或是数月后才去纠正一个算错的 PCB 扣款,所耗费的金钱和您自己的时间,往往都超过了您原本想省下的那笔服务费。
+
+让您的企业本身更容易被找到,在开始招聘之后同样重要——团队扩大通常也意味着客户群在扩大,在处理好本指南所涉及的运营事项之余,[在这里刊登您的企业](/zh/signup)是免费且快速的做法,能让第一位员工日后要服务的客户找到您。也值得[浏览一下其他已经刊登的企业](/zh),看看其他马来西亚中小企业——其中不少也曾是不久前的首次雇主——在规模超过一人经营之后,是如何呈现自己的。
+
+## 首次雇主最常犯的错误
+
+- **在员工已经开始上班之后,才向 EPF 或 SOCSO 办理注册。** 三个机构都是按实际入职日期计算供款,而不是按注册日期,所以迟办注册仍然意味着要补缴这段期间的供款,甚至可能还要额外罚款。
+- **直接照搬旧文章或旧模板里的供款比例,而不去核实当前的表格。** EPF、SOCSO 与 EIS 的比例和薪资上限近年都曾调整——十八个月前还正确的数字,现在很可能已经过时。
+- **认为第一位员工人数少,PCB/MTD 就可以先不管。** 这是法定的扣缴义务,与雇员人数无关,而少扣的部分并不会自动消失——它会变成员工自己的税务缺口,也会变成报税季节您自己的信誉问题。
+
+## 本周可以从这里开始
+
+- **今天:** 准备好您的 SSM 注册资料,以及新员工的身份证和银行账户号码,并查核 EPF、PERKESO 与 LHDN 当前公布的注册期限,明确自己正对着哪个具体日期。
+- **在员工第一天上班前:** 向 EPF 与 PERKESO 办理雇主注册,签署一份书面合约,并设置好(或确认已有)LHDN 雇主号。
+- **在第一个发薪周期内:** 提交 CP22,对照各机构当前公布的表格核实 EPF/SOCSO/EIS 的比例,并通过 LHDN 的计算器或您的薪酬软件,计算 PCB 后发出第一张薪水单。
+- **此后每个月:** 在期限前缴纳 EPF、SOCSO/EIS 和 PCB,并把每一次申报的收据统一归档保存。
+
+把这件事一次做对、做扎实,之后每一次雇人基本上就是重复流程——真正的代价从来不是这些文书手续本身,而是在没人留意的时候,悄悄累积起来的补缴款和罚款。`,
+        faqs: [
+      {
+        question: "如果我只雇用一名员工,也需要注册 EPF 和 SOCSO 吗?",
+        answer:
+          "需要。注册义务从您雇用的第一位员工开始就适用,与雇员人数无关——并不存在\"只雇一人可豁免\"的情况。如果您还没有 LHDN 雇主号,同样需要申请。",
+      },
+      {
+        question: "EPF、SOCSO 和 EIS 有什么区别?",
+        answer:
+          "EPF 是退休储蓄计划,雇主与雇员都按月薪的一定比例,向该员工自己的账户供款。SOCSO 提供工伤与伤残保障,而 EIS 则在员工日后被裁员时提供短期经济援助。SOCSO 与 EIS 由 PERKESO 统一管理,而 EPF 则是完全独立的另一个机构。",
+      },
+      {
+        question: "雇用员工后,我需要多快完成雇主注册?",
+        answer:
+          "EPF、PERKESO 与 LHDN 各自设定自己的期限,而这些期限过去都曾经调整过,所以请在员工入职日期之前,到各机构官网核实当前的要求,而不要依赖记忆中的数字。应把它当作每次雇人都要重新核实的事项,而不是查一次就永久沿用。",
+      },
+      {
+        question: "PCB/MTD 是什么?它和 EPF 有什么不同?",
+        answer:
+          "PCB(月度预扣税,英文也称 MTD)是按月预先从员工薪资中扣缴、用于抵缴其全年所得税的款项,汇缴给 LHDN。它与 EPF、SOCSO、EIS 完全不同——后三者都是社会保障与退休供款,而不是所得税。",
+      },
+      {
+        question: "外籍员工也需要注册 EPF 和 SOCSO 吗?",
+        answer:
+          "就 SOCSO 而言,一般是需要的;而近年马来西亚法规的调整也将 EPF 的覆盖范围扩大到了外籍员工——由于这是一个曾经变化、且可能继续变化的领域,请直接到 EPF 和 PERKESO 官网核实适用于外籍员工的当前规则与比例。",
+      },
+      {
+        question: "如果我注册迟了,或错过了某个月的供款,会怎样?",
+        answer:
+          "供款通常是按员工实际入职日期计算的,而不是按注册日期,所以迟注册通常仍然意味着要补缴这段期间的款项,往往还要加上罚款。错过某月的缴款期限,通常同样会触发逾期罚款,因此应尽快纠正,而不要让问题在接下来的几个月里持续累积。",
+      },
+      {
+        question: "我雇用第一位员工,需要书面雇佣合约吗?",
+        answer:
+          "对于大多数类别的员工,《雇佣法令》都明确要求有书面合约,至少也应是一份清楚说明职位、薪资、工作时间和通知期的聘书——这正是日后一旦发生争议时,您会依据的文件。即使第一位员工是非常小规模或较为随意的安排,也应把它当作基本要求,而不是可以省略的形式。",
+      },
+      {
+        question: "对于一名员工,我应该自己处理薪酬,还是请薪酬服务代劳?",
+        answer:
+          "对于单一员工,许多首次雇主会自己用一份表格加上各机构的官方平台来处理,只要能严格遵守每月的申报日历。随着员工人数增加,薪酬软件或外包服务商通常就值得每月支付的费用——提前做好决定,而不是等错过期限之后才决定,通常是更好的时机。",
+      },
+        ],
+      },
+      ms: {
+        title: "Mengambil Pekerja Pertama di Malaysia: Asas KWSP, SOCSO, EIS dan Gaji",
+        excerpt:
+          "Mengambil pekerja pertama anda di Malaysia bermakna mendaftar dengan KWSP, SOCSO/EIS, dan LHDN, masing-masing dengan tarikh akhir dan kerja kertas tersendiri. Panduan ini merangkumi apa yang perlu disediakan oleh majikan kali pertama sebelum hari pertama, bagaimana caruman berkanun sebenarnya berfungsi, dan tabiat gaji yang mengekalkan kepatuhan anda setiap bulan selepas itu.",
+        body: `Mengambil pekerja pertama anda mengubah jenis perniagaan yang anda jalankan — bukan sekadar dari segi bilangan pekerja, tetapi dari segi kerja kertas dan kepatuhan. Sebaik sahaja seseorang berada dalam senarai gaji, anda memikul tanggungjawab undang-undang kepada tiga badan berkanun yang berbeza (KWSP, PERKESO untuk SOCSO/EIS, dan LHDN) — tanggungjawab yang tidak terpakai semasa anda bekerja sendirian, bersama rakan kongsi, atau dengan kontraktor yang menghantar invois menggunakan nombor KWSP/SST mereka sendiri. Tidak satu pun daripada ini terlalu rumit, tetapi semuanya perlu dilakukan dalam susunan yang betul dan tepat pada masanya, atau penalti dan bayaran tertunggak akan menjadi tanggungan anda, bukan pekerja baharu itu. Panduan ini merangkumi apa yang sebenarnya perlu dilakukan oleh majikan kali pertama di Malaysia, dari seminggu sebelum seseorang mula bekerja hingga beberapa kitaran gaji pertama selepas itu.
+
+## 1. Daftar sebagai Majikan Sebelum Hari Pertama Pekerja Anda
+
+Tiga pendaftaran berasingan perlu wujud sebelum anda menjalankan gaji pertama anda, dan setiap satu dikendalikan oleh agensi yang berbeza:
+
+- **KWSP (EPF)** — daftar sebagai majikan untuk mendapatkan nombor rujukan majikan, kemudian daftarkan pekerja baharu di bawah nombor tersebut.
+- **SOCSO dan EIS (PERKESO)** — satu pendaftaran merangkumi kedua-duanya; PERKESO menganggapnya sebagai satu akaun majikan dengan dua skim di bawahnya.
+- **LHDN** — daftar untuk nombor majikan (E) jika anda belum mempunyainya, supaya anda boleh menghantar potongan cukai bulanan pekerja.
+
+Portal rasmi setiap agensi (i-Akaun KWSP, ASSIST PERKESO, dan e-Daftar/MyTax LHDN) mengendalikan pendaftaran sebenar, dan setiap agensi menetapkan tempoh masa tersendiri untuk pendaftaran ini selepas pengambilan pekerja pertama — biasanya disebut dalam lingkungan beberapa hari hingga beberapa minggu, bergantung pada agensi tersebut. Daripada bertindak berdasarkan nombor yang diingati separuh-separuh, semak tarikh akhir semasa di laman web rasmi setiap agensi sebelum tarikh mula pekerja anda, kerana penalti kerana lewat mendaftar dikenakan kepada majikan dan tidak digugurkan hanya kerana ini kali pertama anda mengambil pekerja.
+
+### Apa yang Perlu Disediakan
+Butiran pendaftaran perniagaan anda (SSM), kad pengenalan anda sendiri, serta kad pengenalan dan butiran akaun bank pekerja baharu — caruman KWSP dan SOCSO dikreditkan secara elektronik, jadi nombor akaun yang salah akan melambatkan bukan sahaja penyerahan anda tetapi juga rekod caruman pekerja itu sendiri.
+
+## 2. Sediakan Kerja Kertas Sebelum, Bukan Selepas, Hari Pertama
+
+Kontrak pekerjaan bertulis (atau sekurang-kurangnya surat tawaran yang merangkumi jawatan, gaji, waktu bekerja, dan tempoh notis) sepatutnya wujud sebelum hari pertama bekerja, atas dua sebab: Akta Kerja menetapkan keperluan ini untuk kebanyakan kategori pekerja, dan inilah dokumen yang akan anda rujuk semula apabila pertikaian pertama mengenai cuti, kerja lebih masa, atau penamatan tercetus.
+
+Dua borang LHDN penting pada peringkat awal:
+- **CP22** — memberitahu LHDN tentang pekerja baharu, difailkan dalam tempoh hari tertentu selepas tarikh mula bekerja (sahkan tempoh semasa dengan LHDN, kerana ia pernah berubah dan tidak wajar diandaikan begitu sahaja).
+- **CP22A/CP22B** — borang yang setara apabila seorang pekerja berhenti kerja, yang relevan kemudian tetapi wajar diketahui kewujudannya dari sekarang.
+
+Simpan satu fail peribadi yang ringkas untuk setiap pekerja sejak hari pertama: kontrak, salinan kad pengenalan, butiran bank, dan sebarang pindaan kemudian (perubahan gaji, kenaikan pangkat). Inilah perkara pertama yang akan diminta oleh audit KWSP atau SOCSO, dan paling mudah disediakan jika anda membentuk tabiat ini dari awal berbanding terpaksa menyusunnya semula di bawah tekanan kemudian.
+
+Wajar juga membaca hak asas di bawah Akta Kerja sebelum anda merangka kontrak pertama itu, walaupun pekerja anda mungkin tidak termasuk dalam liputan ketat berasaskan gaji akta tersebut — had minimum cuti tahunan dan cuti sakit, hari rehat, dan peraturan kerja lebih masa adalah perkara yang pekerja baharu (atau pegawai buruh, sekiranya ada aduan difailkan) akan menjangkakan anda sudah ketahui, bukan sesuatu yang anda cari buat pertama kali selepas pertikaian bermula.
+
+## 3. Fahami Apa yang Sebenarnya Perlu Dibayar oleh Kedua-dua Pihak untuk KWSP, SOCSO, dan EIS
+
+Tiga potongan ini adalah teras sistem gaji di Malaysia, dan setiap satu berfungsi dengan cara yang sedikit berbeza:
+
+### KWSP (Simpanan Persaraan)
+Majikan dan pekerja kedua-duanya menyumbang peratusan gaji bulanan ke dalam akaun KWSP pekerja. Bagi warganegara Malaysia atau penduduk tetap di bawah umur 60 tahun, bahagian pekerja dan bahagian majikan kedua-duanya ditetapkan dalam jadual caruman rasmi KWSP (Jadual Ketiga), dan peratusan majikan sebenarnya boleh berubah mengikut peringkat gaji, jadi jangan anggap satu nombor tetap terpakai pada semua tahap gaji. Jadual kadar caruman rasmi KWSP adalah satu-satunya sumber yang wajar digunakan untuk pengiraan — ia disemak dari semasa ke semasa, dan kadar yang anda baca dalam artikel blog lama mungkin sudah tidak terkini.
+
+### SOCSO (Perlindungan Kemalangan dan Hilang Upaya)
+SOCSO merangkumi dua skim — Skim Bencana Pekerjaan dan Skim Pencen Hilang Upaya — dibiayai melalui caruman majikan yang kecil dan caruman pekerja yang lebih kecil lagi, dikira berdasarkan siling gaji bulanan yang disemak semula oleh PERKESO dari semasa ke semasa ke arah yang lebih tinggi. Sahkan siling semasa dan kedua-dua peratusan di laman web rasmi PERKESO berbanding bergantung pada angka tetap di sini — justru kerana siling tersebut telah berubah dalam tahun-tahun kebelakangan ini, itulah sebabnya panduan ini tidak membekukan satu nombor di sini.
+
+### EIS (Perlindungan Pengangguran)
+Satu caruman yang lebih kecil dan berasingan — dibahagi sama rata antara majikan dan pekerja — membiayai bantuan kewangan jangka pendek dan bantuan mencari kerja sekiranya pekerja kemudiannya diberhentikan kerja. Ia dikumpul bersama SOCSO menggunakan jadual PERKESO yang sama, jadi sebaik sahaja anda menyediakan satu, menyediakan yang satu lagi hanyalah formaliti.
+
+> Layan jadual kadar KWSP/SOCSO/EIS sebagaimana anda melayan kadar tukaran matawang, bukan fakta yang anda hafal sekali sahaja — semak jadual rasmi semasa setiap kali anda mengambil pekerja baharu atau melaraskan gaji, kerana ketiga-tiganya pernah disemak semula pada masa lalu dan berkemungkinan akan disemak semula lagi.
+
+## 4. Sediakan Potongan Cukai Bulanan (PCB/MTD) dengan Betul Sejak Slip Gaji Pertama
+
+Berasingan daripada KWSP/SOCSO/EIS, anda dikehendaki memotong Potongan Cukai Bulanan (PCB, atau MTD) daripada gaji pekerja dan menghantarnya kepada LHDN — ini adalah bayaran pendahuluan untuk cukai pendapatan tahunan pekerja itu sendiri, bukan kos majikan, tetapi mengira secara salah masih menjadi masalah majikan untuk diperbetulkan. LHDN menerbitkan kalkulator dan jadual PCB rasmi; kebanyakan perisian gaji Malaysia (dan kalkulator rasmi LHDN, untuk semakan manual) mengaplikasikannya secara automatik berdasarkan gaji bulanan pekerja, status perkahwinan, dan bilangan anak yang dituntut — butiran yang wajar dikumpul melalui borang ringkas semasa pengambilan pekerja, kerana mengisi secara salah kini bermakna mengurangkan potongan sekarang dan mewujudkan kekurangan yang akan ditemui oleh pekerja semasa memfailkan cukai kemudian.
+
+## 5. Bina Kalendar Gaji dan Patuhi Ia
+
+Sebaik sahaja pendaftaran dan slip gaji pertama selesai, kerja berterusan kebanyakannya tentang masa: KWSP, SOCSO/EIS, dan PCB masing-masing mempunyai tarikh akhir penghantaran bulanan tersendiri kepada agensi masing-masing, biasanya dalam dua hingga tiga minggu pertama bulan berikutnya — sahkan tarikh tepat untuk setiap satu di portal semasa masing-masing, kerana ini juga nombor yang kadangkala dilaraskan oleh agensi. Terlepas mana-mana satu, walaupun hanya sehari, biasanya mencetuskan penalti lewat bayar yang sepenuhnya boleh dielakkan dengan peringatan kalendar.
+
+Rutin bulanan ringkas yang merangkumi kebanyakan majikan kecil:
+- Jalankan gaji dan keluarkan slip gaji pada tarikh tetap setiap bulan.
+- Hantar dan bayar KWSP, SOCSO/EIS, dan PCB untuk bulan tersebut mengikut tarikh akhir masing-masing.
+- Simpan salinan digital setiap resit penghantaran — KWSP, PERKESO, dan LHDN semuanya menjana satu; audit bertahun-tahun kemudian jauh lebih tidak tertekan dengan fail yang lengkap berbanding jurang yang perlu anda jelaskan.
+
+## 6. Buat Keputusan Lebih Awal: Uruskan Sendiri, atau Dapatkan Bantuan
+
+Seorang pekerja tunggal boleh diuruskan dengan hamparan (spreadsheet) ditambah portal ketiga-tiga agensi, sekiranya anda berdisiplin dengan kalendar di atas. Sebaik sahaja anda mengambil pekerja kedua atau ketiga, kebanyakan majikan kecil Malaysia beralih kepada sama ada subskripsi perisian gaji (yang mengira KWSP/SOCSO/EIS/PCB secara automatik dan memfailkan sebahagiannya secara terus) atau firma gaji/perakaunan luar yang mengendalikan penyerahan bagi pihak anda dengan bayaran bulanan. Tidak satu pun wajib pada tahap seorang pekerja, tetapi membuat keputusan sebelum anda benar-benar memerlukannya — berbanding di tengah-tengah krisis selepas tarikh akhir terlepas — adalah cara yang lebih murah untuk membuat keputusan itu.
+
+Timbangkan ini berbanding kos sebenar penyerahan yang terlepas atau lewat: subskripsi gaji atau bayaran retainer perakaunan adalah perbelanjaan bulanan yang boleh dijangka, sementara penalti kerana bayaran KWSP atau SOCSO yang lewat, atau kerumitan membetulkan potongan PCB yang salah berbulan-bulan kemudian, selalunya menelan kos yang lebih besar dari segi wang dan masa anda sendiri berbanding perkhidmatan yang anda cuba elakkan membayar pada mulanya.
+
+Memastikan perniagaan anda sendiri lebih mudah ditemui juga penting sebaik sahaja anda mula mengambil pekerja — pasukan yang semakin besar biasanya bermakna pangkalan pelanggan yang semakin besar juga, dan [menyenaraikan perniagaan anda di sini](/ms/signup) bersama aspek operasi yang dirangkumi dalam panduan ini adalah cara percuma dan pantas untuk ditemui oleh pelanggan yang akan dibantu oleh pekerja pertama itu. Wajar juga [melihat apa yang telah disenaraikan](/ms) untuk melihat bagaimana PKS Malaysia lain — ramai antaranya juga pernah menjadi majikan kali pertama tidak lama dahulu — mempersembahkan diri mereka sebaik sahaja berkembang melangkasi operasi seorang.
+
+## Kesilapan Biasa yang Dilakukan oleh Majikan Kali Pertama
+
+- **Mendaftar dengan KWSP atau SOCSO selepas pekerja sudah mula bekerja.** Ketiga-tiga agensi mengira caruman daripada tarikh mula sebenar, bukan tarikh pendaftaran, jadi pendaftaran yang lewat masih bermakna bayaran tertunggak untuk jurang tersebut, ditambah kemungkinan penalti.
+- **Menyalin kadar caruman daripada artikel atau templat lama tanpa menyemak jadual semasa.** Kadar dan siling gaji KWSP, SOCSO, dan EIS semuanya pernah berubah dalam tahun-tahun kebelakangan ini — nombor yang betul lapan belas bulan dahulu mungkin sudah tidak tepat.
+- **Menganggap PCB/MTD sebagai pilihan untuk pekerja pertama yang kecil.** Ia adalah tanggungjawab potongan undang-undang tanpa mengira bilangan pekerja, dan kekurangan potongan tidak hilang begitu sahaja — ia menjadi kekurangan cukai pekerja, dan masalah kredibiliti anda sendiri apabila musim memfailkan cukai tiba.
+
+## Di Mana Harus Bermula Minggu Ini
+
+- **Hari ini:** Kumpulkan butiran pendaftaran SSM anda serta kad pengenalan dan nombor akaun bank pekerja baharu, dan semak tarikh akhir pendaftaran semasa KWSP, PERKESO, dan LHDN supaya anda tahu dengan tepat tarikh yang anda kejar.
+- **Sebelum hari pertama mereka:** Daftar sebagai majikan dengan KWSP dan PERKESO, dapatkan kontrak bertulis yang ditandatangani, dan sediakan (atau sahkan anda sudah mempunyai) nombor majikan LHDN.
+- **Dalam kitaran gaji pertama:** Failkan CP22, sahkan kadar KWSP/SOCSO/EIS semasa berbanding jadual rasmi setiap agensi, dan jalankan slip gaji pertama anda dengan PCB dikira melalui kalkulator LHDN atau perisian gaji anda.
+- **Setiap bulan selepas itu:** Bayar KWSP, SOCSO/EIS, dan PCB mengikut tarikh akhir masing-masing, dan simpan setiap resit penyerahan dalam satu fail.
+
+Lakukan ini sekali dengan betul, dan setiap pengambilan pekerja selepas yang pertama kebanyakannya hanya pengulangan — kos sebenar melakukan ini secara salah bukan kerja kertas itu sendiri, tetapi bayaran tertunggak dan penalti yang bertimbun semasa tidak ada sesiapa yang menyemak.`,
+        faqs: [
+      {
+        question: "Adakah saya perlu mendaftar dengan KWSP dan SOCSO untuk hanya seorang pekerja?",
+        answer:
+          "Ya. Tanggungjawab pendaftaran terpakai sejak pekerja pertama anda, tanpa mengira bilangan pekerja — tiada pengecualian untuk pengambilan seorang pekerja sahaja. Perkara yang sama terpakai untuk mendaftar nombor majikan LHDN jika anda belum memilikinya.",
+      },
+      {
+        question: "Apakah perbezaan antara KWSP, SOCSO, dan EIS?",
+        answer:
+          "KWSP adalah skim simpanan persaraan, di mana majikan dan pekerja kedua-duanya menyumbang peratusan gaji bulanan ke dalam akaun pekerja itu sendiri. SOCSO merangkumi perlindungan kemalangan pekerjaan dan hilang upaya, manakala EIS menyediakan bantuan kewangan jangka pendek sekiranya pekerja kemudiannya diberhentikan kerja. SOCSO dan EIS ditadbir bersama oleh PERKESO, manakala KWSP adalah agensi yang sepenuhnya berasingan.",
+      },
+      {
+        question: "Berapa cepat selepas mengambil pekerja saya perlu mendaftar sebagai majikan?",
+        answer:
+          "Setiap agensi — KWSP, PERKESO, dan LHDN — menetapkan tarikh akhir tersendiri, dan ini pernah berubah sebelum ini, jadi semak keperluan semasa di portal rasmi setiap agensi sebelum tarikh mula pekerja anda, bukannya bergantung pada nombor yang diingati. Anggap ini sebagai sesuatu yang perlu disahkan bagi setiap pengambilan pekerja, bukan sesuatu yang disemak sekali dan digunakan selama-lamanya.",
+      },
+      {
+        question: "Apakah PCB/MTD, dan adakah ia berbeza daripada KWSP?",
+        answer:
+          "PCB (Potongan Cukai Bulanan), juga dipanggil MTD, adalah potongan pendahuluan bulanan ke arah cukai pendapatan tahunan pekerja, dihantar kepada LHDN. Ia sepenuhnya berasingan daripada KWSP, SOCSO, dan EIS, yang semuanya adalah caruman keselamatan sosial dan persaraan, bukan cukai pendapatan.",
+      },
+      {
+        question: "Adakah pekerja asing juga perlu didaftarkan untuk KWSP dan SOCSO?",
+        answer:
+          "Secara umum, ya untuk SOCSO, dan liputan KWSP untuk pekerja asing juga telah diperluaskan menerusi perubahan terkini kepada peraturan Malaysia — sahkan peraturan dan kadar semasa untuk pekerja asing di laman web rasmi KWSP dan PERKESO, kerana ini adalah bidang yang telah berubah dan mungkin terus berubah.",
+      },
+      {
+        question: "Apa yang berlaku jika saya mendaftar lewat atau terlepas caruman bulanan?",
+        answer:
+          "Caruman biasanya dikira berdasarkan tarikh mula sebenar pekerja, tanpa mengira bila anda mendaftar, jadi pendaftaran lewat biasanya masih bermakna anda perlu membayar jumlah tertunggak, selalunya disertai penalti. Terlepas tarikh akhir bayaran bulanan juga biasanya mencetuskan caj lewat bayar, jadi wajar diperbetulkan dengan segera berbanding dibiarkan bertimbun merentasi lebih banyak bulan.",
+      },
+      {
+        question: "Adakah saya perlukan kontrak pekerjaan bertulis untuk pekerja pertama saya?",
+        answer:
+          "Kontrak bertulis, atau sekurang-kurangnya surat tawaran yang jelas merangkumi jawatan, gaji, waktu bekerja, dan tempoh notis, amat dijangkakan di bawah Akta Kerja bagi kebanyakan kategori pekerja, dan inilah dokumen yang akan anda rujuk sekiranya pertikaian timbul kemudian. Anggap ia sebagai keperluan asas, bukan formaliti pilihan, walaupun untuk pengambilan pekerja pertama yang sangat kecil atau tidak formal.",
+      },
+      {
+        question: "Patutkah saya menguruskan gaji sendiri atau mengupah perkhidmatan gaji untuk seorang pekerja?",
+        answer:
+          "Bagi seorang pekerja, ramai majikan kali pertama menguruskannya sendiri menggunakan hamparan (spreadsheet) dan portal rasmi setiap agensi, selagi mereka berdisiplin dengan kalendar penyerahan bulanan. Apabila bilangan pekerja bertambah, perisian gaji atau penyedia luar biasanya menjadi berbaloi dengan kos bulanannya — membuat keputusan sebelum anda benar-benar memerlukannya, berbanding selepas tarikh akhir terlepas, biasanya masa yang lebih baik untuk membuat keputusan itu.",
+      },
+        ],
+      },
+    },
+  },
+  {
+    slug: "sst-registration-in-malaysia",
+    title: "SST Registration in Malaysia: Do You Need to Register for Sales and Service Tax?",
+    seoTitle: "SST Registration in Malaysia: Do You Need to Register?",
+    seoDescription:
+      "How to work out whether your Malaysian business must register for SST, how Sales Tax and Service Tax differ, registration thresholds, and the MySST process.",
+    coverImage: {
+      file: "sst-registration-in-malaysia-cover.webp",
+      mimeType: "image/webp",
+      alt: "A confident small business owner reviewing invoices and receipts at the counter of their shop",
+      altTranslations: {
+        zh: "一位自信的小企业主在店铺柜台查看发票与收据",
+        ms: "Seorang pemilik perniagaan kecil yang yakin menyemak invois dan resit di kaunter kedainya",
+      },
+    },
+    contentImages: {
+      turnover: {
+        file: "sst-registration-in-malaysia-turnover.webp",
+        mimeType: "image/webp",
+        alt: "A business owner checking financial records and sales figures on a laptop at their shop counter",
+        altTranslations: {
+          zh: "一位企业主在店铺柜台用笔记本电脑查看财务记录与销售数字",
+          ms: "Seorang pemilik perniagaan menyemak rekod kewangan dan angka jualan pada komputer riba di kaunter kedainya",
+        },
+        after: "Build a habit of checking your trailing 12-month taxable turnover periodically, not just once when you first worried about it, so registration happens because you planned for it rather than because RMCD flagged it first.",
+        afterTranslations: {
+          zh: "请养成定期核查滚动12个月应税营业额的习惯,而不只是在第一次担心这个问题时查一次,这样注册才会是您提前规划好的结果,而不是被 RMCD 先一步发现的结果。",
+          ms: "Bina tabiat menyemak hasil jualan boleh cukai bergolek 12 bulan anda secara berkala, bukan hanya sekali apabila anda mula-mula bimbang tentangnya, supaya pendaftaran berlaku kerana anda merancangnya, bukan kerana RMCD yang menyedarinya terlebih dahulu.",
+        },
+      },
+    },
+    excerpt:
+      "SST registration becomes mandatory once a Malaysian business crosses its specific turnover threshold, but Sales Tax and Service Tax work differently and thresholds vary by category. This guide covers how to check whether you need to register, how to register through MySST, and what changes for your business once you are.",
+    body: `"Do I need to register for SST?" is one of the most common questions a growing Malaysian SME eventually asks, usually right around the point revenue starts climbing fast enough that the answer might have quietly changed. Sales and Service Tax (SST) registration isn't optional once you cross the relevant threshold — it's a legal obligation enforced by the Royal Malaysian Customs Department (RMCD/Kastam) — but it's also not one single rule that applies the same way to every business. This guide covers how to work out whether you need to register, how the two taxes actually differ, how registration itself works, and what changes for your business once you are.
+
+## 1. Understand that "SST" is actually two separate taxes
+
+Sales Tax and Service Tax are run under one administrative umbrella but apply to genuinely different things, and mixing them up is the single most common source of confusion for a first-time registrant.
+
+- **Sales Tax** applies to taxable goods — generally charged once, at the manufacturer or importer level, and baked into the price by the time it reaches a retailer. Most retailers and traders never register for sales tax themselves; it's typically a manufacturer's or importer's obligation.
+- **Service Tax** applies to specific categories of taxable services — things like food and beverage services, professional services (legal, accounting, consultancy, and others), telecommunications, and a growing list of other prescribed categories. This is the one most Malaysian SMEs in retail, F&B, and services actually need to think about.
+
+Which one (or both) applies to you depends entirely on what your business does, not its size alone — a small manufacturer can owe sales tax, while a large but non-taxable-service business might owe nothing at all.
+
+## 2. Check your registration threshold — and don't assume it's the same for every business
+
+The commonly cited baseline threshold is RM500,000 in taxable turnover over any 12-month period, and for a long list of service categories and for most sales-tax-liable manufacturers, that's exactly the number that triggers mandatory registration. But several specific service categories have their own, different threshold set by RMCD — some sit well above RM500,000, and a small number of categories (certain professional and customs-related services among them) have no minimum threshold at all, meaning registration is required regardless of turnover.
+
+### How to check which threshold actually applies to you
+Because thresholds vary by the specific service category your business falls under, and RMCD updates its schedules from time to time, don't rely on a number you read somewhere once — check the current Service Tax Regulations' registration threshold schedule, or confirm directly through the MySST portal or an RMCD counter, against the exact category your business operates under.
+
+> The RM500,000 figure gets repeated everywhere because it's the baseline most businesses land on — but "most" isn't "all," and the one category your business actually falls under is the only number that matters. Confirm it specifically rather than assuming the commonly quoted figure applies to you.
+
+To make this concrete: food and beverage outlets (restaurants, cafes, catering) have historically sat at a higher threshold than the common RM500,000 baseline, while categories like hotels and similar accommodation, and a number of professional services, are typically cited at the RM500,000 level — and a handful of categories, such as certain customs agents and some professional services, have no threshold at all. Rental or leasing and construction services have also been cited at different threshold levels across different RMCD updates. None of these specific figures should be taken as fixed without checking the current schedule yourself — thresholds by category are exactly the kind of detail that gets revised as the scope of taxable services expands, which it has done more than once in recent years.
+
+The 12-month period itself is a rolling window, not a calendar year — RMCD looks at your turnover over the preceding 12 months (or your reasonably projected turnover for the coming 12 months, if you expect to cross the threshold). That means a business can become liable to register mid-year, the moment a trailing 12-month total crosses the line, not just at year-end.
+
+## 3. Registering once you've confirmed you're liable
+
+Registration is done through the MySST portal (RMCD's online system), and once you've confirmed which threshold applies and that you've crossed it, registration itself is a fairly standard process:
+
+1. Prepare your business registration documents (SSM), recent financial records showing the turnover that triggered registration, and your business bank account details.
+2. Submit the registration application through MySST, selecting the correct taxable category for what your business actually does.
+3. RMCD reviews and approves the application, after which you're issued an SST registration number.
+
+RMCD sets a deadline for registering once you become liable — commonly cited as within a set number of days of crossing the threshold — so confirm the current deadline on MySST rather than treating "I'll get to it next quarter" as a safe assumption; operating above the threshold without registering is itself a compliance breach, independent of whether you've started charging SST yet.
+
+### If you've already crossed the threshold and haven't registered
+This isn't a rare situation — plenty of growing businesses realize months after the fact that a busy quarter pushed them over. RMCD generally expects backdated registration from the date liability actually started, which can mean working out SST on sales already made without having charged it, plus a possible penalty for the late registration itself. The earlier this is sorted out directly with RMCD or through an accountant, the smaller that gap tends to stay — leaving it to compound across more filing periods only makes the eventual conversation harder.
+
+## 4. What actually changes once you're registered
+
+Registration isn't the end of the process — it's the point where new obligations start:
+
+- **Charging SST on your invoices.** Once registered, you charge the applicable SST rate on your taxable goods or services and show it clearly on invoices and receipts, the same way a non-registered business doesn't.
+- **Filing returns on schedule.** Registered businesses file an SST return (commonly every two months, though confirm your specific filing cycle on MySST) declaring the tax collected, and pay what's due by the filing deadline.
+- **Keeping proper records.** Invoices, credit notes, and supporting documents need to be kept for the period RMCD requires, since they're exactly what an audit will ask to see first.
+- **Updating your pricing and accounting systems.** Whatever you use to invoice and do your books needs to actually calculate and display SST correctly from the registration date forward — retrofitting this after the fact, on invoices already issued, is far more painful than setting it up before you need it.
+
+A listing that's easy to find matters here too — a business taking on the extra admin of SST registration is usually a business that's growing, and [creating a free listing](/en/signup) is one more way new customers find you while you're sorting out the compliance side. Looking at [how other registered Malaysian businesses present their services](/en) is also a reasonable way to see what a maturing SME's public presence typically looks like.
+
+## 5. Consider voluntary registration, even below the threshold
+
+A business under the threshold isn't barred from registering — RMCD allows voluntary registration for a business that wants to register before it's legally required to. This is worth weighing, not assuming either way: some B2B service providers register early because their own customers (often larger, registered businesses) expect a proper SST-compliant invoice; others stay unregistered as long as possible to avoid the added admin and the price increase SST effectively represents to an end customer. There's no universally right answer — it depends on who your customers are and whether they care about a registered invoice.
+
+## 6. Keep watching your rolling 12-month turnover after you've dealt with this
+
+SST liability isn't a one-time check — a business that's comfortably under the threshold today can cross it eight months from now on genuinely good news (a big new client, a busy season, a successful new product line). Build a habit of checking your trailing 12-month taxable turnover periodically, not just once when you first worried about it, so registration happens because you planned for it rather than because RMCD flagged it first.
+
+## Common mistakes businesses make with SST registration
+
+- **Assuming RM500,000 is a universal number.** Several service categories have their own, different threshold, and a handful have no minimum at all — the number that matters is the one for your specific category, not the one everyone quotes.
+- **Confusing Sales Tax and Service Tax as one single rule.** They apply to different things, are usually relevant to different kinds of businesses, and conflating the two leads to registering under (or assuming you're exempt from) the wrong one.
+- **Waiting for RMCD to notice before registering.** Liability starts the moment your rolling 12-month turnover crosses the threshold, not when a notice arrives — operating unregistered past that point is a compliance gap you created, even if nobody's flagged it yet.
+
+## Where to start this week
+
+- **This week:** Pull your trailing 12-month taxable turnover and identify the exact service (or goods) category your business operates under, then check that category's specific threshold on MySST or the current Service Tax Regulations schedule.
+- **If you're over the threshold:** Gather your SSM documents and financial records, and start the MySST registration application — don't wait for a quieter month, since the registration deadline runs from when you crossed the threshold, not from when it's convenient.
+- **If you're close to the threshold:** Decide now whether you'd rather register voluntarily on your own timeline or wait until you're legally required to, and loop in your accountant either way.
+- **Either way:** Set a recurring quarterly reminder to re-check your rolling 12-month turnover, so the next time this question comes up, you're the one who noticed first.
+
+Getting this right once — the correct category, the correct threshold, registered on time — means every return after that is routine. Getting it wrong, or late, is what turns a straightforward compliance task into back taxes, penalties, and an audit conversation you'd rather not be having.`,
+    faqs: [
+      {
+        question: "What is the SST registration threshold in Malaysia?",
+        answer:
+          "The commonly cited baseline is RM500,000 in taxable turnover over any rolling 12-month period, which applies to most sales-tax-liable manufacturers and a long list of service categories. However, several specific service categories have their own, different threshold — some higher, and a few with no minimum at all — so confirm the exact figure for your specific category rather than assuming the common number applies.",
+      },
+      {
+        question: "What's the difference between Sales Tax and Service Tax?",
+        answer:
+          "Sales Tax applies to taxable goods and is typically a manufacturer's or importer's obligation, usually already built into the price by the time it reaches a retailer. Service Tax applies to specific prescribed categories of taxable services, such as food and beverage, professional services, and telecommunications, and is the one most retail, F&B, and service-based SMEs actually need to think about.",
+      },
+      {
+        question: "How do I register for SST?",
+        answer:
+          "Registration is done through the MySST portal: prepare your SSM documents, financial records showing the turnover that triggered registration, and your business bank details, then submit the application selecting the correct taxable category for your business. RMCD reviews the application and issues an SST registration number once approved.",
+      },
+      {
+        question: "What happens if I don't register once I'm over the threshold?",
+        answer:
+          "Operating above the threshold without registering is a compliance breach in itself, regardless of whether you've started charging SST. RMCD generally expects backdated registration from the date liability actually started, which can mean calculating SST on sales already made plus a possible penalty for the late registration — so this is worth resolving as soon as it's noticed rather than left to compound.",
+      },
+      {
+        question: "Can I register for SST voluntarily if I'm below the threshold?",
+        answer:
+          "Yes, RMCD allows voluntary registration for a business that wants to register before it's legally required to. Some businesses do this because their own customers expect a properly SST-compliant invoice, while others wait until registration is mandatory to avoid the added admin and price impact — there's no universally right choice, and it depends on your customers.",
+      },
+      {
+        question: "How often do I need to file SST returns once registered?",
+        answer:
+          "Filing is commonly every two months, though the exact cycle should be confirmed on the MySST portal for your specific registration, since this can vary. Each return declares the tax collected for the period and is due alongside payment by the filing deadline.",
+      },
+      {
+        question: "Does the SST threshold apply to a calendar year or a rolling period?",
+        answer:
+          "It's a rolling 12-month period, not a fixed calendar year — RMCD looks at your trailing 12 months of turnover (or your reasonably projected turnover for the coming 12 months if you expect to cross the threshold), meaning liability can begin mid-year the moment that rolling total crosses the line.",
+      },
+      {
+        question: "Do all types of businesses have the same SST registration threshold?",
+        answer:
+          "No. While RM500,000 is the commonly cited baseline, specific service categories set their own thresholds under RMCD's own schedule — some considerably higher, and a small number with no minimum threshold at all, meaning registration is mandatory regardless of turnover. Always confirm the figure for your specific category rather than assuming the general number applies.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "马来西亚 SST 注册:您需要注册销售与服务税吗?",
+        excerpt:
+          "马来西亚企业一旦超过其所属类别的特定营业额门槛,SST 注册就成为强制义务,但销售税与服务税的运作方式不同,门槛也因类别而异。本指南说明如何判断是否需要注册、如何通过 MySST 办理注册,以及注册之后您的企业会有哪些变化。",
+        body: `"我需要注册 SST 吗?"是马来西亚成长型中小企业迟早都会问到的一个常见问题,而且通常正好是在营业额增长到答案可能已经悄然改变的那个节点上才会想到问。销售与服务税(SST)注册一旦超过相关门槛,就不再是可选项——这是由马来西亚皇家关税局(RMCD/Kastam)执行的法定义务——但它也不是对每家企业都一体适用的单一规则。本指南将说明如何判断自己是否需要注册、这两种税究竟有何不同、注册本身如何操作,以及一旦注册之后,您的企业会有哪些变化。
+
+## 1. 了解"SST"实际上是两种不同的税
+
+销售税和服务税虽然由同一个行政机构统一管理,但适用的对象截然不同,而把两者混为一谈,正是首次申请注册者最常见的困惑来源。
+
+- **销售税**适用于应税货物——通常在制造商或进口商环节一次性征收,到达零售商手中时税款已经计入价格。大多数零售商和贸易商自己并不需要注册销售税;这通常是制造商或进口商的义务。
+- **服务税**适用于特定类别的应税服务——例如餐饮服务、专业服务(法律、会计、咨询等)、电信,以及一份不断扩充的其他规定类别清单。这正是大多数从事零售、餐饮和服务业的马来西亚中小企业真正需要留意的一种税。
+
+您的企业是否(以及是否同时)适用这两种税,完全取决于您实际从事的业务内容,而不只是规模大小——一家小型制造商可能需要缴纳销售税,而一家规模较大但不提供应税服务的企业,可能反而完全不需要缴税。
+
+## 2. 核实您的注册门槛——并且不要假设所有企业都适用同一个数字
+
+常被提及的基本门槛是过去任意12个月内应税营业额达到50万令吉,对于一长串服务类别和大多数应缴销售税的制造商而言,这正是触发强制注册的确切数字。但若干特定服务类别有 RMCD 自行设定的、不同的门槛——其中一些明显高于50万令吉,而少数类别(其中包括某些专业服务和海关相关服务)则根本没有最低门槛,意味着无论营业额多少都必须注册。
+
+### 如何核实真正适用于您的门槛
+由于门槛会因具体服务类别而异,而 RMCD 也会不时更新其规定,所以不要仅凭某次读到的数字就下结论——请核实当前《服务税条例》中的注册门槛表,或直接通过 MySST 平台或 RMCD 柜台,针对您企业实际所属的具体类别进行确认。
+
+具体来说:餐饮场所(餐馆、咖啡馆、餐饮服务)历来的门槛通常高于常见的50万令吉基准,而酒店及类似住宿场所,以及一些专业服务类别,通常是按50万令吉这个水平计算的——还有少数类别,例如某些海关代理和部分专业服务,则完全没有门槛。租赁业务和建筑服务在 RMCD 不同时期的更新中,也曾被引用过不同的门槛水平。在未亲自核实当前规定表之前,不应把这些具体数字当作一成不变的事实——按类别划分的门槛恰恰是最容易随应税服务范围扩大(而这种扩大近年已发生过不止一次)而被修订的细节。
+
+> 50万令吉这个数字之所以到处都在被引用,是因为大多数企业恰好落在这个基准上——但"大多数"不等于"全部",真正重要的,是适用于您企业所属那个具体类别的数字。请针对该类别具体核实,而不要假设人人都在谈论的那个数字就一定适用于您。
+
+这12个月本身是一个滚动期间,而不是日历年度——RMCD 看的是您过去12个月的营业额(或者,如果您预计会超过门槛,也会看未来12个月的合理预测营业额)。这意味着企业可能在年中的任何时候,只要滚动12个月的总额一旦越过这条线,就立即产生注册义务,而不是只在年底才算账。
+
+## 3. 一旦确认有义务注册,该如何办理
+
+注册通过 MySST 平台(RMCD 的在线系统)办理,一旦您确认了适用的门槛且已经超过,注册本身是一个相当标准的流程:
+
+1. 准备好您的企业注册文件(SSM)、显示触发注册的营业额的近期财务记录,以及您的企业银行账户资料。
+2. 通过 MySST 提交注册申请,选择与您企业实际经营业务相符的正确应税类别。
+3. RMCD 审核并批准申请后,会发给您一个 SST 注册号。
+
+RMCD 对一旦产生注册义务后应在多长时间内完成注册设有期限——常见说法是在超过门槛后的规定天数之内——所以请以 MySST 当前公布的期限为准,而不要把"等下个季度再处理"当作安全的假设;在超过门槛却未注册的情况下继续经营,本身就已构成合规违规,与您是否已经开始征收 SST 无关。
+
+### 如果您已经超过门槛却还未注册
+这种情况并不罕见——不少正在成长的企业,是事后才发现某个繁忙的季度已经让自己越过了门槛。RMCD 通常会要求从实际产生义务之日起补办注册,这可能意味着要为已经完成、但当时未征收 SST 的销售补算税款,还可能因迟注册而面临罚款。越早直接与 RMCD 沟通或通过会计师处理,这个缺口往往就能控制得越小——拖延只会让问题随着更多申报周期而不断累积,最终让这场必要的对话变得更加难以应付。
+
+## 4. 注册之后,实际会有哪些变化
+
+注册并不是流程的终点——而是新义务开始的起点:
+
+- **在发票上征收 SST。** 注册之后,您需要对应税货物或服务按适用税率征收 SST,并在发票和收据上清楚列明——这正是未注册企业所不需要做的事。
+- **按期申报。** 注册企业需要按期(通常是每两个月,具体申报周期请以 MySST 为准)提交 SST 申报表,申报所征收的税款,并在申报期限前缴清应缴金额。
+- **妥善保存记录。** 发票、信用票据及相关支持文件,需要按 RMCD 要求的期限保存,因为这正是审查时首先会被要求查看的内容。
+- **更新您的定价与会计系统。** 您用来开发票和做账的系统,从注册生效日起就必须能够正确计算并显示 SST——等发票已经开出之后再去补救,远比提前设置好要痛苦得多。
+
+在这里,一份容易被找到的列表同样重要——愿意承担 SST 注册这份额外行政工作的企业,通常也是在成长中的企业,而[创建一份免费列表](/zh/signup)正是在您处理合规事宜的同时,让新客户找到您的另一种方式。看看[其他已完成注册的马来西亚企业如何展示自己的服务](/zh),也不失为了解一家趋于成熟的中小企业,典型的公开形象大致是什么样子的一个合理方式。
+
+## 5. 即使未达门槛,也可以考虑自愿注册
+
+未达门槛的企业,并不被禁止注册——RMCD 允许希望在法定义务产生之前就提前注册的企业进行自愿注册。这一点值得权衡,而不是一概而论:一些B2B服务提供商会提早注册,因为他们自己的客户(往往是规模更大、已注册的企业)期望收到符合SST规范的正规发票;另一些企业则会尽量维持不注册的状态,以避免额外的行政负担,以及SST实际上对终端客户造成的价格上涨。这里并没有放之四海而皆准的答案——取决于您的客户是谁,以及他们是否在意收到一份注册企业开出的发票。
+
+## 6. 处理好这件事之后,仍要持续关注滚动12个月的营业额
+
+SST义务的判断并非一次性的检查——一家今天还舒适地处于门槛之下的企业,完全可能在八个月后,因为真正的好消息(一位大客户、一个旺季、一款畅销的新产品)而越过门槛。请养成定期核查滚动12个月应税营业额的习惯,而不只是在第一次担心这个问题时查一次,这样注册才会是您提前规划好的结果,而不是被 RMCD 先一步发现的结果。
+
+## 企业在 SST 注册上最常犯的错误
+
+- **假设50万令吉是一个放之四海而皆准的数字。** 若干服务类别有各自不同的门槛,还有少数类别根本没有最低门槛——真正重要的数字,是适用于您具体类别的那个,而不是大家都在引用的那个。
+- **把销售税和服务税当成同一条规则来理解。** 二者适用于不同的对象,通常也与不同类型的企业相关,把两者混为一谈,很容易导致注册了错误的税种(或误以为自己可以豁免)。
+- **等RMCD主动发现才去注册。** 义务从滚动12个月营业额越过门槛的那一刻起就已产生,而不是从通知送达的那一刻才开始——在那之后继续未注册经营,就是您自己造成的合规缺口,即便目前还没有人指出来。
+
+## 本周可以从这里开始
+
+- **本周:** 梳理您过去12个月的应税营业额,确认您企业实际所属的服务(或货物)类别,然后在 MySST 或当前《服务税条例》门槛表上核实该类别的具体门槛。
+- **如果您已超过门槛:** 准备好您的 SSM 文件和财务记录,立即开始 MySST 注册申请——不要等到"比较空"的月份,因为注册期限是从您越过门槛那一刻起算,而不是从方便处理的时候起算。
+- **如果您接近门槛:** 现在就决定,您更倾向于按自己的时间表自愿注册,还是等到法定义务产生才注册,并无论如何都让您的会计师参与讨论。
+- **无论哪种情况:** 设定一个每季度重复提醒,定期重新核查您滚动12个月的营业额,这样下次这个问题再出现时,第一个注意到的就是您自己。
+
+把类别、门槛和注册时间这几件事一次做对,之后每一次申报都会变得例行化。而一旦做错,或者拖延,一件原本简单的合规事项,就会变成补税、罚款,以及您本不想面对的那场审查谈话。`,
+        faqs: [
+      {
+        question: "马来西亚的 SST 注册门槛是多少?",
+        answer:
+          "常被提及的基本门槛,是在任意滚动12个月期间内应税营业额达到50万令吉,这适用于大多数应缴销售税的制造商,以及一长串服务类别。不过,若干特定服务类别有自己不同的门槛——有些更高,还有少数完全没有最低门槛——所以请核实适用于您具体类别的确切数字,而不要假设这个常见数字一定适用于您。",
+      },
+      {
+        question: "销售税和服务税有什么区别?",
+        answer:
+          "销售税适用于应税货物,通常是制造商或进口商的义务,到达零售商环节时税款通常已经计入价格。服务税适用于特定规定类别的应税服务,例如餐饮、专业服务和电信,这正是大多数零售、餐饮和服务型中小企业真正需要考虑的税种。",
+      },
+      {
+        question: "我该如何注册 SST?",
+        answer:
+          "注册通过 MySST 平台办理:先准备好您的 SSM 文件、能显示触发注册的营业额的财务记录,以及您的企业银行资料,然后提交申请,并选择与您企业业务相符的正确应税类别。RMCD 审核申请并在批准后发出 SST 注册号。",
+      },
+      {
+        question: "如果我超过门槛却不注册,会怎样?",
+        answer:
+          "在超过门槛却未注册的情况下继续经营,本身就已构成合规违规,无论您是否已开始征收 SST。RMCD 通常会要求从实际产生义务之日起补办注册,这可能意味着要为已完成的销售补算 SST,还可能因迟注册而被罚款——因此一旦察觉,就应尽快处理,而不是让问题继续累积。",
+      },
+      {
+        question: "如果我的营业额低于门槛,可以自愿注册 SST 吗?",
+        answer:
+          "可以。RMCD 允许希望在法定义务产生之前就提前注册的企业进行自愿注册。有些企业这样做,是因为他们自己的客户期望收到符合 SST 规范的正规发票;另一些企业则会等到强制注册时才注册,以避免额外的行政负担和价格影响——这里没有放之四海而皆准的正确选择,取决于您的客户是谁。",
+      },
+      {
+        question: "注册后,我需要多久申报一次 SST?",
+        answer:
+          "申报通常是每两个月一次,但具体周期应以您注册时在 MySST 平台上核实的信息为准,因为这可能有所不同。每份申报表需要申报该期间所征收的税款,并在申报期限前连同款项一并缴清。",
+      },
+      {
+        question: "SST 门槛是按日历年度计算,还是按滚动期间计算?",
+        answer:
+          "是按滚动12个月期间计算,而不是固定的日历年度——RMCD 看的是您过去12个月的营业额(或者,如果您预计会超过门槛,也会看未来12个月的合理预测营业额),这意味着一旦滚动总额越过门槛,义务就可能在年中的任何时候开始。",
+      },
+      {
+        question: "所有类型的企业,SST 注册门槛都一样吗?",
+        answer:
+          "不一样。虽然50万令吉是常被提及的基本门槛,但特定服务类别会在 RMCD 自己的规定表中设定各自的门槛——有些明显更高,还有少数完全没有最低门槛,意味着无论营业额多少都必须注册。请始终核实适用于您具体类别的数字,而不要假设通用数字就适用于您。",
+      },
+        ],
+      },
+      ms: {
+        title: "Pendaftaran SST di Malaysia: Perlukah Anda Mendaftar untuk Cukai Jualan dan Perkhidmatan?",
+        excerpt:
+          "Pendaftaran SST menjadi wajib sebaik sahaja sesebuah perniagaan Malaysia melepasi ambang hasil jualan khusus kategorinya, tetapi Cukai Jualan dan Cukai Perkhidmatan berfungsi secara berbeza dan ambangnya berbeza mengikut kategori. Panduan ini merangkumi cara menyemak sama ada anda perlu mendaftar, cara mendaftar melalui MySST, dan apa yang berubah untuk perniagaan anda sebaik sahaja anda berdaftar.",
+        body: `"Perlukah saya mendaftar untuk SST?" adalah salah satu soalan yang paling kerap ditanya oleh PKS Malaysia yang semakin berkembang, biasanya tepat pada waktu hasil jualan meningkat cukup pantas sehingga jawapannya mungkin sudah berubah secara senyap. Pendaftaran Cukai Jualan dan Perkhidmatan (SST) bukanlah pilihan sebaik sahaja anda melepasi ambang yang berkaitan — ia adalah tanggungjawab undang-undang yang dikuatkuasakan oleh Jabatan Kastam Diraja Malaysia (RMCD/Kastam) — tetapi ia juga bukan satu peraturan tunggal yang terpakai sama rata kepada setiap perniagaan. Panduan ini merangkumi cara menentukan sama ada anda perlu mendaftar, cara kedua-dua cukai ini sebenarnya berbeza, cara pendaftaran itu sendiri berfungsi, dan apa yang berubah untuk perniagaan anda sebaik sahaja anda berdaftar.
+
+## 1. Fahami bahawa "SST" Sebenarnya Dua Cukai yang Berasingan
+
+Cukai Jualan dan Cukai Perkhidmatan ditadbir di bawah satu payung pentadbiran yang sama tetapi terpakai kepada perkara yang benar-benar berbeza, dan mengelirukan kedua-duanya adalah sumber kekeliruan paling biasa bagi pendaftar kali pertama.
+
+- **Cukai Jualan** terpakai kepada barangan boleh cukai — umumnya dikenakan sekali, pada peringkat pengilang atau pengimport, dan sudah termasuk dalam harga apabila ia tiba di peringkat peruncit. Kebanyakan peruncit dan peniaga sendiri tidak perlu mendaftar cukai jualan; ia biasanya tanggungjawab pengilang atau pengimport.
+- **Cukai Perkhidmatan** terpakai kepada kategori perkhidmatan boleh cukai tertentu — seperti perkhidmatan makanan dan minuman, perkhidmatan profesional (undang-undang, perakaunan, perundingan, dan lain-lain), telekomunikasi, dan senarai kategori lain yang ditetapkan yang semakin bertambah. Inilah yang perlu benar-benar difikirkan oleh kebanyakan PKS Malaysia dalam bidang peruncitan, F&B, dan perkhidmatan.
+
+Sama ada satu (atau kedua-duanya) terpakai kepada anda bergantung sepenuhnya kepada apa yang perniagaan anda lakukan, bukan saiznya semata-mata — pengilang kecil mungkin terhutang cukai jualan, manakala perniagaan yang lebih besar tetapi tidak menawarkan perkhidmatan boleh cukai mungkin tidak terhutang apa-apa sama sekali.
+
+## 2. Semak Ambang Pendaftaran Anda — dan Jangan Anggap Ia Sama untuk Setiap Perniagaan
+
+Ambang asas yang biasa disebut ialah RM500,000 hasil boleh cukai dalam mana-mana tempoh 12 bulan, dan bagi senarai panjang kategori perkhidmatan serta kebanyakan pengilang yang terhutang cukai jualan, itulah nombor tepat yang mencetuskan pendaftaran mandatori. Tetapi beberapa kategori perkhidmatan tertentu mempunyai ambang mereka sendiri yang berbeza, ditetapkan oleh RMCD — sebahagiannya jauh lebih tinggi daripada RM500,000, dan beberapa kategori kecil (termasuk perkhidmatan profesional dan berkaitan kastam tertentu) tidak mempunyai ambang minimum sama sekali, bermakna pendaftaran diwajibkan tanpa mengira hasil jualan.
+
+### Bagaimana Menyemak Ambang yang Sebenarnya Terpakai kepada Anda
+Oleh kerana ambang berbeza mengikut kategori perkhidmatan tertentu, dan RMCD mengemas kini jadualnya dari semasa ke semasa, jangan bergantung pada nombor yang pernah anda baca sekali — semak jadual ambang pendaftaran semasa dalam Peraturan Cukai Perkhidmatan, atau sahkan terus melalui portal MySST atau kaunter RMCD, berdasarkan kategori tepat yang perniagaan anda beroperasi di bawahnya.
+
+Secara konkrit: premis makanan dan minuman (restoran, kafe, katering) secara sejarahnya berada pada ambang yang lebih tinggi daripada garis dasar RM500,000 yang biasa, manakala hotel dan penginapan serupa, serta beberapa kategori perkhidmatan profesional, biasanya disebut pada tahap RM500,000 — dan beberapa kategori, seperti ejen kastam tertentu dan beberapa perkhidmatan profesional, tidak mempunyai ambang sama sekali. Perkhidmatan pajakan atau sewaan serta perkhidmatan pembinaan juga pernah disebut pada tahap ambang yang berbeza merentasi kemas kini RMCD yang berlainan. Tidak satu pun daripada angka khusus ini sepatutnya diambil sebagai tetap tanpa menyemak jadual semasa sendiri — ambang mengikut kategori adalah jenis butiran yang disemak semula apabila skop perkhidmatan boleh cukai berkembang, yang telah berlaku lebih daripada sekali dalam tahun-tahun kebelakangan ini.
+
+> Angka RM500,000 diulang di mana-mana kerana ia adalah garis dasar yang paling ramai perniagaan hinggapi — tetapi "kebanyakan" bukan "semua," dan satu-satunya nombor yang penting adalah kategori yang perniagaan anda sebenarnya terletak di bawahnya. Sahkan secara khusus berbanding menganggap angka yang kerap disebut itu terpakai kepada anda.
+
+Tempoh 12 bulan itu sendiri adalah tempoh bergolek, bukan tahun kalendar — RMCD melihat hasil jualan anda sepanjang 12 bulan sebelumnya (atau hasil jualan yang dijangka secara munasabah bagi 12 bulan akan datang, sekiranya anda menjangka akan melepasi ambang). Ini bermakna sebuah perniagaan boleh menjadi liabel untuk mendaftar pada bila-bila masa dalam tahun, sebaik sahaja jumlah bergolek 12 bulan melepasi garis tersebut, bukan hanya pada penghujung tahun.
+
+## 3. Mendaftar Sebaik Sahaja Anda Mengesahkan Liabiliti Anda
+
+Pendaftaran dilakukan melalui portal MySST (sistem dalam talian RMCD), dan sebaik sahaja anda mengesahkan ambang yang terpakai dan bahawa anda telah melepasinya, pendaftaran itu sendiri adalah proses yang agak piawai:
+
+1. Sediakan dokumen pendaftaran perniagaan anda (SSM), rekod kewangan terkini yang menunjukkan hasil jualan yang mencetuskan pendaftaran, dan butiran akaun bank perniagaan anda.
+2. Serahkan permohonan pendaftaran melalui MySST, pilih kategori boleh cukai yang betul untuk apa yang sebenarnya dilakukan oleh perniagaan anda.
+3. RMCD menyemak dan meluluskan permohonan, selepas itu anda akan diberikan nombor pendaftaran SST.
+
+RMCD menetapkan tarikh akhir untuk mendaftar sebaik sahaja anda menjadi liabel — biasanya disebut dalam tempoh hari tertentu selepas melepasi ambang — jadi sahkan tarikh akhir semasa di MySST berbanding menganggap "saya akan uruskan suku tahun depan" sebagai andaian yang selamat; beroperasi melebihi ambang tanpa mendaftar adalah sendirinya satu pelanggaran pematuhan, tanpa mengira sama ada anda sudah mula mengenakan SST atau belum.
+
+### Jika Anda Sudah Melepasi Ambang dan Belum Mendaftar
+Ini bukan situasi yang jarang terjadi — ramai perniagaan yang sedang berkembang menyedari berbulan-bulan selepas itu bahawa suku tahun yang sibuk telah melepasikan mereka. RMCD umumnya menjangkakan pendaftaran kebelakangan dari tarikh liabiliti sebenarnya bermula, yang boleh bermakna mengira SST untuk jualan yang sudah dibuat tanpa pernah mengenakannya, ditambah kemungkinan penalti kerana pendaftaran lewat itu sendiri. Lebih awal ini diselesaikan terus dengan RMCD atau melalui akauntan, lebih kecil jurang itu cenderung kekal — membiarkannya tanpa tindakan merentasi lebih banyak tempoh penyerahan hanya menjadikan perbualan akhirnya lebih sukar.
+
+## 4. Apa yang Sebenarnya Berubah Sebaik Sahaja Anda Berdaftar
+
+Pendaftaran bukan penghujung proses — ia adalah titik di mana tanggungjawab baharu bermula:
+
+- **Mengenakan SST pada invois anda.** Sebaik sahaja berdaftar, anda mengenakan kadar SST yang berkenaan pada barangan atau perkhidmatan boleh cukai anda dan menunjukkannya dengan jelas pada invois dan resit, sesuatu yang tidak dilakukan oleh perniagaan yang tidak berdaftar.
+- **Memfailkan penyata mengikut jadual.** Perniagaan berdaftar memfailkan penyata SST (biasanya setiap dua bulan, walaupun sahkan kitaran pemfailan khusus anda di MySST) yang mengisytiharkan cukai yang dikutip, dan membayar jumlah yang perlu dibayar menjelang tarikh akhir pemfailan.
+- **Menyimpan rekod yang betul.** Invois, nota kredit, dan dokumen sokongan perlu disimpan untuk tempoh yang dikehendaki oleh RMCD, kerana itulah perkara pertama yang akan diminta oleh sebarang audit.
+- **Mengemas kini sistem penetapan harga dan perakaunan anda.** Apa jua yang anda gunakan untuk menghantar invois dan menguruskan akaun perlu benar-benar mengira dan memaparkan SST dengan betul sejak tarikh pendaftaran — membaikinya selepas fakta, pada invois yang sudah dikeluarkan, jauh lebih menyakitkan berbanding menyediakannya sebelum anda memerlukannya.
+
+Penyenaraian yang mudah ditemui juga penting di sini — perniagaan yang mengambil langkah tambahan pendaftaran SST biasanya adalah perniagaan yang sedang berkembang, dan [mencipta penyenaraian percuma](/ms/signup) adalah satu lagi cara pelanggan baharu menemui anda sementara anda menguruskan aspek pematuhan. Melihat [bagaimana perniagaan Malaysia lain yang berdaftar mempersembahkan perkhidmatan mereka](/ms) juga merupakan cara yang munasabah untuk melihat seperti apa kehadiran awam biasa sebuah PKS yang semakin matang.
+
+## 5. Pertimbangkan Pendaftaran Secara Sukarela, Walaupun di Bawah Ambang
+
+Perniagaan di bawah ambang tidak dihalang daripada mendaftar — RMCD membenarkan pendaftaran sukarela bagi perniagaan yang ingin mendaftar sebelum ia diwajibkan secara undang-undang. Ini wajar dipertimbangkan, bukan diandaikan sebelah pihak sahaja: sesetengah penyedia perkhidmatan B2B mendaftar lebih awal kerana pelanggan mereka sendiri (selalunya perniagaan yang lebih besar dan berdaftar) mengharapkan invois yang patuh SST dengan betul; yang lain kekal tidak berdaftar selama mungkin untuk mengelakkan beban pentadbiran tambahan dan kenaikan harga yang secara berkesan diwakili oleh SST kepada pelanggan akhir. Tiada jawapan yang betul secara universal — ia bergantung kepada siapa pelanggan anda dan sama ada mereka mengambil berat tentang invois berdaftar.
+
+## 6. Teruskan Memantau Hasil Jualan Bergolek 12 Bulan Anda Selepas Ini
+
+Liabiliti SST bukan semakan sekali sahaja — perniagaan yang selesa di bawah ambang hari ini boleh melepasinya lapan bulan dari sekarang atas berita yang benar-benar baik (pelanggan baharu yang besar, musim sibuk, barisan produk baharu yang berjaya). Bina tabiat menyemak hasil jualan boleh cukai bergolek 12 bulan anda secara berkala, bukan hanya sekali apabila anda mula-mula bimbang tentangnya, supaya pendaftaran berlaku kerana anda merancangnya, bukan kerana RMCD yang menyedarinya terlebih dahulu.
+
+## Kesilapan Biasa Perniagaan dengan Pendaftaran SST
+
+- **Menganggap RM500,000 adalah nombor universal.** Beberapa kategori perkhidmatan mempunyai ambang mereka sendiri yang berbeza, dan beberapa langsung tidak mempunyai minimum — nombor yang penting adalah yang terpakai kepada kategori khusus anda, bukan yang disebut oleh semua orang.
+- **Mengelirukan Cukai Jualan dan Cukai Perkhidmatan sebagai satu peraturan tunggal.** Kedua-duanya terpakai kepada perkara yang berbeza, biasanya relevan kepada jenis perniagaan yang berbeza, dan mencampurkan kedua-duanya membawa kepada mendaftar di bawah (atau menganggap dikecualikan daripada) cukai yang salah.
+- **Menunggu RMCD menyedarinya sebelum mendaftar.** Liabiliti bermula sebaik sahaja hasil jualan bergolek 12 bulan anda melepasi ambang, bukan apabila notis tiba — beroperasi tanpa berdaftar selepas titik itu adalah jurang pematuhan yang anda ciptakan sendiri, walaupun belum sesiapa menandakannya lagi.
+
+## Di Mana Harus Bermula Minggu Ini
+
+- **Minggu ini:** Semak hasil jualan boleh cukai bergolek 12 bulan anda dan kenal pasti kategori perkhidmatan (atau barangan) tepat yang perniagaan anda beroperasi di bawahnya, kemudian semak ambang khusus kategori itu di MySST atau jadual Peraturan Cukai Perkhidmatan semasa.
+- **Jika anda melepasi ambang:** Kumpulkan dokumen SSM dan rekod kewangan anda, dan mulakan permohonan pendaftaran MySST — jangan tunggu bulan yang lebih lapang, kerana tarikh akhir pendaftaran bermula dari bila anda melepasi ambang, bukan dari bila ia lebih mudah.
+- **Jika anda hampir dengan ambang:** Tentukan sekarang sama ada anda lebih suka mendaftar secara sukarela mengikut jadual anda sendiri atau menunggu sehingga diwajibkan secara undang-undang, dan libatkan akauntan anda sama ada apa pun keputusannya.
+- **Apa jua keadaannya:** Tetapkan peringatan suku tahunan berulang untuk menyemak semula hasil jualan bergolek 12 bulan anda, supaya kali seterusnya soalan ini timbul, andalah yang menyedarinya terlebih dahulu.
+
+Betulkan kategori, ambang, dan masa pendaftaran sekali sahaja, dan setiap penyata selepas itu menjadi rutin. Melakukannya secara salah, atau lewat, mengubah tugas pematuhan yang sepatutnya mudah menjadi cukai tertunggak, penalti, dan perbualan audit yang anda lebih suka tidak hadapi.`,
+        faqs: [
+      {
+        question: "Apakah ambang pendaftaran SST di Malaysia?",
+        answer:
+          "Garis dasar yang biasa disebut ialah RM500,000 hasil jualan boleh cukai dalam mana-mana tempoh bergolek 12 bulan, yang terpakai kepada kebanyakan pengilang yang terhutang cukai jualan dan senarai panjang kategori perkhidmatan. Walau bagaimanapun, beberapa kategori perkhidmatan tertentu mempunyai ambang mereka sendiri yang berbeza — sebahagiannya lebih tinggi, dan beberapa langsung tidak mempunyai minimum — jadi sahkan angka tepat untuk kategori khusus anda berbanding menganggap nombor umum itu terpakai.",
+      },
+      {
+        question: "Apakah perbezaan antara Cukai Jualan dan Cukai Perkhidmatan?",
+        answer:
+          "Cukai Jualan terpakai kepada barangan boleh cukai dan biasanya tanggungjawab pengilang atau pengimport, selalunya sudah termasuk dalam harga apabila tiba di peringkat peruncit. Cukai Perkhidmatan terpakai kepada kategori perkhidmatan boleh cukai tertentu yang ditetapkan, seperti makanan dan minuman, perkhidmatan profesional, dan telekomunikasi, dan inilah yang perlu benar-benar difikirkan oleh kebanyakan PKS peruncitan, F&B, dan perkhidmatan.",
+      },
+      {
+        question: "Bagaimana saya mendaftar untuk SST?",
+        answer:
+          "Pendaftaran dilakukan melalui portal MySST: sediakan dokumen SSM anda, rekod kewangan yang menunjukkan hasil jualan yang mencetuskan pendaftaran, dan butiran bank perniagaan anda, kemudian serahkan permohonan dengan memilih kategori boleh cukai yang betul untuk perniagaan anda. RMCD menyemak permohonan dan mengeluarkan nombor pendaftaran SST sebaik sahaja diluluskan.",
+      },
+      {
+        question: "Apa yang berlaku jika saya tidak mendaftar sebaik sahaja saya melepasi ambang?",
+        answer:
+          "Beroperasi melebihi ambang tanpa mendaftar adalah pelanggaran pematuhan tersendiri, tanpa mengira sama ada anda sudah mula mengenakan SST. RMCD umumnya menjangkakan pendaftaran kebelakangan dari tarikh liabiliti sebenarnya bermula, yang boleh bermakna mengira SST untuk jualan yang sudah dibuat ditambah kemungkinan penalti kerana pendaftaran lewat — jadi ini wajar diselesaikan sebaik sahaja disedari berbanding dibiarkan bertimbun.",
+      },
+      {
+        question: "Bolehkah saya mendaftar SST secara sukarela jika saya di bawah ambang?",
+        answer:
+          "Ya, RMCD membenarkan pendaftaran sukarela bagi perniagaan yang ingin mendaftar sebelum diwajibkan secara undang-undang. Sesetengah perniagaan melakukan ini kerana pelanggan mereka sendiri mengharapkan invois yang patuh SST dengan betul, manakala yang lain menunggu sehingga pendaftaran diwajibkan untuk mengelakkan beban pentadbiran tambahan dan kesan harga — tiada pilihan yang betul secara universal, dan ia bergantung kepada pelanggan anda.",
+      },
+      {
+        question: "Berapa kerap saya perlu memfailkan penyata SST sebaik sahaja berdaftar?",
+        answer:
+          "Pemfailan biasanya setiap dua bulan, walaupun kitaran tepat perlu disahkan di portal MySST untuk pendaftaran khusus anda, kerana ini boleh berbeza-beza. Setiap penyata mengisytiharkan cukai yang dikutip untuk tempoh tersebut dan perlu dibayar sekali dengan bayaran menjelang tarikh akhir pemfailan.",
+      },
+      {
+        question: "Adakah ambang SST terpakai kepada tahun kalendar atau tempoh bergolek?",
+        answer:
+          "Ia adalah tempoh bergolek 12 bulan, bukan tahun kalendar yang tetap — RMCD melihat hasil jualan 12 bulan sebelumnya anda (atau hasil jualan yang dijangka secara munasabah bagi 12 bulan akan datang sekiranya anda menjangka akan melepasi ambang), bermakna liabiliti boleh bermula pada bila-bila masa dalam tahun sebaik sahaja jumlah bergolek itu melepasi garis tersebut.",
+      },
+      {
+        question: "Adakah semua jenis perniagaan mempunyai ambang pendaftaran SST yang sama?",
+        answer:
+          "Tidak. Walaupun RM500,000 adalah garis dasar yang biasa disebut, kategori perkhidmatan tertentu menetapkan ambang mereka sendiri di bawah jadual RMCD sendiri — sebahagiannya jauh lebih tinggi, dan beberapa langsung tidak mempunyai ambang minimum, bermakna pendaftaran diwajibkan tanpa mengira hasil jualan. Sentiasa sahkan angka untuk kategori khusus anda berbanding menganggap nombor umum itu terpakai.",
+      },
+        ],
+      },
+    },
+  },
 ];

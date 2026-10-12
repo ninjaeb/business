@@ -15,12 +15,12 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Hiring Your First Employee in Malaysia: EPF, SOCSO, EIS and Payroll Basics**
-   — Statutory contributions (EPF, SOCSO, EIS), payroll/employer registration,
-   and what a first-time Malaysian employer legally needs to sort out before
-   and right after hiring someone.
+1. **Malaysia's e-Invoicing Mandate: What LHDN's e-Invois Rollout Means for Your Business**
+   — What e-Invoicing actually requires (versus ordinary SST compliance),
+   the phased rollout timeline by business size, and the practical steps an
+   SME needs to take to issue compliant e-Invoices on time.
 
-2. **SST Registration in Malaysia: Do You Need to Register for Sales and Service Tax?**
-   — When SST registration is mandatory versus optional for a Malaysian SME,
-   the registration thresholds and process, and the filing basics once
-   registered.
+2. **Opening a Business Bank Account in Malaysia: What SMEs Need to Prepare**
+   — The documents a bank will ask for (SSM registration, resolutions,
+   director/shareholder ID), how a sole proprietorship's requirements differ
+   from a Sdn Bhd's, and what to compare across banks before choosing one.
