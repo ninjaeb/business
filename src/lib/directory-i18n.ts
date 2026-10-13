@@ -662,15 +662,18 @@ export type DirectoryStrings = {
   testimonialFormGuideExperienceQuestion: string;
   testimonialFormGuideVerdictLabel: string;
   testimonialFormGuideVerdictQuestion: string;
-  // "Get ideas" link appended to the guide box above — AI-generated prompts
-  // based on this specific listing's own products/services (see
-  // suggestTestimonialIdeasWithAi in src/app/actions/testimonials.ts), same
-  // AI-availability gating as testimonialFormRewriteCta below. Suggests
-  // what to write about, never drafts the testimonial text itself — the
-  // AI result's own message covers the error case, so there's no separate
-  // error string here, same as testimonialFormRewriteCta's own handler.
+  // "Suggest a testimonial" link appended to the guide box above —
+  // AI-written, ready-to-use drafts based on this specific listing's own
+  // products/services (see suggestTestimonialIdeasWithAi in
+  // src/app/actions/testimonials.ts), same AI-availability gating as
+  // testimonialFormRewriteCta below. Each draft is a tap-to-insert button;
+  // testimonialFormIdeasHint sits above them asking the visitor to edit the
+  // pick to match their own experience. The AI result's own message covers
+  // the error case, so there's no separate error string here, same as
+  // testimonialFormRewriteCta's own handler.
   testimonialFormIdeasCta: string;
   testimonialFormIdeasLoading: string;
+  testimonialFormIdeasHint: string;
   // The optional photo picker under the body field (see uploadTestimonialPhoto
   // in src/app/actions/testimonials.ts) — testimonialFormPhotosUploading has
   // a {done}/{total} token, filled in via formatTestimonialPhotosUploading.
@@ -1002,8 +1005,9 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormGuideExperienceQuestion: "What stood out most (e.g., speed, communication, technical expertise)?",
     testimonialFormGuideVerdictLabel: "The Verdict",
     testimonialFormGuideVerdictQuestion: "Who would you recommend us to, and why?",
-    testimonialFormIdeasCta: "Get ideas based on what they offer",
-    testimonialFormIdeasLoading: "Thinking of ideas…",
+    testimonialFormIdeasCta: "Suggest a ready-to-use testimonial",
+    testimonialFormIdeasLoading: "Writing suggestions…",
+    testimonialFormIdeasHint: "Tap one to use it, then edit it so it matches your own experience.",
     testimonialFormPhotosLabel: "Photos (optional)",
     testimonialFormPhotosCta: "Add photos",
     testimonialFormPhotosUploading: "Uploading photo {done}/{total}…",
@@ -1298,8 +1302,9 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormGuideExperienceQuestion: "哪方面让您印象最深刻（例如：速度、沟通、专业能力）？",
     testimonialFormGuideVerdictLabel: "评价",
     testimonialFormGuideVerdictQuestion: "您会将我们推荐给谁，为什么？",
-    testimonialFormIdeasCta: "根据我们提供的产品与服务获取灵感",
-    testimonialFormIdeasLoading: "正在构思灵感…",
+    testimonialFormIdeasCta: "为我推荐一段可直接使用的评价",
+    testimonialFormIdeasLoading: "正在撰写建议…",
+    testimonialFormIdeasHint: "点击一段即可使用，然后请修改成符合您自己真实体验的内容。",
     testimonialFormPhotosLabel: "照片（可选）",
     testimonialFormPhotosCta: "添加照片",
     testimonialFormPhotosUploading: "正在上传照片 {done}/{total}…",
@@ -1596,8 +1601,9 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormGuideExperienceQuestion: "Apa yang paling menonjol (contohnya: kelajuan, komunikasi, kepakaran teknikal)?",
     testimonialFormGuideVerdictLabel: "Kesimpulan",
     testimonialFormGuideVerdictQuestion: "Kepada siapa anda akan mengesyorkan kami, dan mengapa?",
-    testimonialFormIdeasCta: "Dapatkan idea berdasarkan produk dan perkhidmatan kami",
-    testimonialFormIdeasLoading: "Sedang mencari idea…",
+    testimonialFormIdeasCta: "Cadangkan testimoni sedia guna",
+    testimonialFormIdeasLoading: "Sedang menulis cadangan…",
+    testimonialFormIdeasHint: "Ketik satu untuk menggunakannya, kemudian ubah supaya sepadan dengan pengalaman anda sendiri.",
     testimonialFormPhotosLabel: "Foto (pilihan)",
     testimonialFormPhotosCta: "Tambah foto",
     testimonialFormPhotosUploading: "Memuat naik foto {done}/{total}…",

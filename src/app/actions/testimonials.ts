@@ -335,25 +335,27 @@ export async function rewriteTestimonialWithAi(text: string): Promise<AiResult<{
 
 const TestimonialIdeasSchema = z.object({
   ideas: z
-    .array(z.string().max(160))
+    .array(z.string().max(600))
     .min(3)
     .max(5)
-    .describe("Short prompts or questions pointing at something specific to mention — never a finished testimonial sentence."),
+    .describe(
+      "Complete, ready-to-use testimonials, each 2-4 sentences in the first person, that a customer could submit as-is or lightly edit. Each must take a different angle (a different product/service, or a different benefit: results, speed, communication, value, peace of mind).",
+    ),
 });
 
 const TESTIMONIAL_IDEAS_SYSTEM_PROMPT =
-  "You help a customer figure out what to write in a testimonial for a local business, by suggesting a few short prompts — never the testimonial itself. Base every prompt only on the business's own real products/services given to you below; never invent a product, service, or detail that isn't listed there. Phrase each as a short question or prompt pointing at something specific and concrete the customer could answer from their own experience (naming an actual product/service where that fits), not generic praise like 'great service'. Respond in the requested language.";
+  "You write short, ready-to-use testimonials a customer can pick and submit for a local business. Write each in the first person, as the customer, in 2-4 natural sentences: name a specific product/service, say what it did for them, and end with a plain recommendation. Base every testimonial only on the business's own real products/services given to you below; never invent a product, service, price, timeline, or specific figure that isn't listed there. Keep claims general enough to be true for a typical satisfied customer (no numbers, dates, or named staff). Each testimonial must take a clearly different angle so the customer can pick the one closest to their own experience. Plain, warm, conversational wording — no superlatives like 'best ever', no exclamation marks, no emoji. Respond in the requested language.";
 
 // Deliberately NOT partner-gated, same as rewriteTestimonialWithAi above —
 // the public testimonial form's own button, available before the visitor
 // has written anything. Reads the listing's own already-public
 // products/services (getPublishedListingBySlug, the same cached read every
 // other section of this listing's pages use) as the model's only context,
-// so a suggested prompt can never reference something this business
-// doesn't actually offer. Returns prompts to think with, not draft text —
-// unlike rewriteTestimonialWithAi, there's no real customer experience
-// behind these yet for the model to put words in, so it's never allowed to
-// write as if it already knew what the visitor would say.
+// so a suggestion can never reference something this business doesn't
+// actually offer. Returns complete, ready-to-use drafts the visitor picks
+// from and edits (see TestimonialForm's own suggestions UI) — the model is
+// held to general claims a typical satisfied customer could honestly make,
+// never specific figures, dates, or people it has no way of knowing.
 export async function suggestTestimonialIdeasWithAi(slug: string, locale: string): Promise<AiResult<{ ideas: string[] }>> {
   if (!isAiConfigured()) return AI_NOT_CONFIGURED;
 

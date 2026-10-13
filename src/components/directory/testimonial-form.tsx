@@ -339,11 +339,22 @@ export function TestimonialForm({
                 {suggesting ? t.testimonialFormIdeasLoading : t.testimonialFormIdeasCta}
               </button>
               {ideas && ideas.length > 0 && (
-                <ul className="mt-2 list-disc space-y-1 pl-4">
+                <div className="mt-2 space-y-1.5">
+                  <p className="text-slate-500 dark:text-slate-400">{t.testimonialFormIdeasHint}</p>
+                  {/* Each suggestion is a whole ready-to-use draft, so a tap
+                      replaces the body with it (rather than appending) —
+                      the visitor then edits it in the textarea below. */}
                   {ideas.map((idea, index) => (
-                    <li key={index}>{idea}</li>
+                    <button
+                      key={index}
+                      type="button"
+                      onClick={() => setBody(idea)}
+                      className="block w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-left text-sm text-slate-700 transition-colors hover:border-petrol/40 hover:bg-led-soft dark:border-neutral-700 dark:bg-neutral-900 dark:text-slate-200 dark:hover:border-petrol-light/30 dark:hover:bg-led-soft-dark"
+                    >
+                      {idea}
+                    </button>
                   ))}
-                </ul>
+                </div>
               )}
             </div>
           )}
