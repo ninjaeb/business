@@ -15,12 +15,14 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Hiring Your First Employee in Malaysia: EPF, SOCSO, EIS and Payroll Basics**
-   — Statutory contributions (EPF, SOCSO, EIS), payroll/employer registration,
-   and what a first-time Malaysian employer legally needs to sort out before
-   and right after hiring someone.
+1. **Trademark Registration in Malaysia: Protecting Your Business Name and Logo**
+   — When registering a trademark with MyIPO actually matters versus relying
+   on SSM registration alone, the filing process and classes of goods/
+   services, typical costs and timeline, and what registration does (and
+   doesn't) protect.
 
-2. **SST Registration in Malaysia: Do You Need to Register for Sales and Service Tax?**
-   — When SST registration is mandatory versus optional for a Malaysian SME,
-   the registration thresholds and process, and the filing basics once
-   registered.
+2. **PDPA Compliance for Malaysian SMEs: What the Personal Data Protection Act Requires**
+   — Who the PDPA applies to, the core obligations (consent, notice,
+   security, data retention) a typical SME collecting customer data needs
+   to meet, and the practical steps to become compliant without needing a
+   dedicated legal team.
