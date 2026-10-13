@@ -15,12 +15,14 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Malaysia's e-Invoicing Mandate: What LHDN's e-Invois Rollout Means for Your Business**
-   — What e-Invoicing actually requires (versus ordinary SST compliance),
-   the phased rollout timeline by business size, and the practical steps an
-   SME needs to take to issue compliant e-Invoices on time.
+1. **Trademark Registration in Malaysia: Protecting Your Business Name and Logo**
+   — When registering a trademark with MyIPO actually matters versus relying
+   on SSM registration alone, the filing process and classes of goods/
+   services, typical costs and timeline, and what registration does (and
+   doesn't) protect.
 
-2. **Opening a Business Bank Account in Malaysia: What SMEs Need to Prepare**
-   — The documents a bank will ask for (SSM registration, resolutions,
-   director/shareholder ID), how a sole proprietorship's requirements differ
-   from a Sdn Bhd's, and what to compare across banks before choosing one.
+2. **PDPA Compliance for Malaysian SMEs: What the Personal Data Protection Act Requires**
+   — Who the PDPA applies to, the core obligations (consent, notice,
+   security, data retention) a typical SME collecting customer data needs
+   to meet, and the practical steps to become compliant without needing a
+   dedicated legal team.
