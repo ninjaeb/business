@@ -8,7 +8,10 @@ import { FieldGroup, Input, Select, Textarea } from "@/components/ui/field";
 import { Combobox } from "@/components/ui/combobox";
 import { DatePicker } from "@/components/ui/date-picker";
 import { formatDateInput, fullName } from "@/lib/format";
-import { PARTNER_DEAL_STATUSES, PARTNER_DEAL_STATUS_LABELS } from "@/lib/labels";
+import { PARTNER_DEAL_STATUSES } from "@/lib/labels";
+import type { DirectoryLocale } from "@/lib/directory-i18n";
+import { PARTNER_DEAL_STATUS_LABELS_BY_LOCALE } from "@/lib/directory-i18n";
+import { PORTAL_DEALS_STRINGS, formatValueFieldLabel } from "@/lib/portal-deals-i18n";
 
 type ContactOption = Pick<PartnerContact, "id" | "firstName" | "lastName" | "companyId">;
 
@@ -33,8 +36,9 @@ export function PartnerDealForm({
   contacts,
   defaultCompanyId,
   defaultContactId,
-  submitLabel = "Save deal",
+  submitLabel,
   currency = "USD",
+  locale,
 }: {
   action: (prevState: PartnerDealFormState, formData: FormData) => Promise<PartnerDealFormState>;
   deal?: PartnerDealDraft;
@@ -44,7 +48,11 @@ export function PartnerDealForm({
   defaultContactId?: string;
   submitLabel?: string;
   currency?: string;
+  locale: DirectoryLocale;
 }) {
+  const t = PORTAL_DEALS_STRINGS[locale];
+  const statusLabels = PARTNER_DEAL_STATUS_LABELS_BY_LOCALE[locale];
+  const resolvedSubmitLabel = submitLabel ?? t.saveDealSubmit;
   const [state, formAction, pending] = useActionState(action, undefined);
   const values = state?.values;
   const [contactId, setContactId] = useState(values?.contactId ?? deal?.contactId ?? defaultContactId ?? "");
@@ -76,12 +84,12 @@ export function PartnerDealForm({
 
   return (
     <form action={formAction} className="space-y-4">
-      <FieldGroup label="Deal title" htmlFor="title" required>
-        <Input id="title" name="title" required defaultValue={values?.title ?? deal?.title} placeholder="Acme Inc. — Website redesign" />
+      <FieldGroup label={t.dealTitleLabel} htmlFor="title" required>
+        <Input id="title" name="title" required defaultValue={values?.title ?? deal?.title} placeholder={t.dealTitlePlaceholder} />
       </FieldGroup>
 
       <div className="grid gap-4 sm:grid-cols-2">
-        <FieldGroup label={`Value (${currency})`} htmlFor="value">
+        <FieldGroup label={formatValueFieldLabel(currency, locale)} htmlFor="value">
           <Input
             id="value"
             name="value"
@@ -91,11 +99,11 @@ export function PartnerDealForm({
             defaultValue={values?.value ?? (deal ? deal.value.toString() : "0")}
           />
         </FieldGroup>
-        <FieldGroup label="Status" htmlFor="status">
+        <FieldGroup label={t.statusLabel} htmlFor="status">
           <Select id="status" name="status" defaultValue={values?.status ?? deal?.status ?? "NEW"}>
             {PARTNER_DEAL_STATUSES.map((status) => (
               <option key={status} value={status}>
-                {PARTNER_DEAL_STATUS_LABELS[status]}
+                {statusLabels[status]}
               </option>
             ))}
           </Select>
@@ -103,42 +111,42 @@ export function PartnerDealForm({
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2">
-        <FieldGroup label="Company" htmlFor="companyId">
+        <FieldGroup label={t.companyLabel} htmlFor="companyId">
           <Combobox
             id="companyId"
             name="companyId"
             value={companyId}
             onValueChange={handleCompanyChange}
-            placeholder="No company"
-            options={[{ value: "", label: "No company" }, ...companies.map((company) => ({ value: company.id, label: company.name }))]}
+            placeholder={t.noCompanyOption}
+            options={[{ value: "", label: t.noCompanyOption }, ...companies.map((company) => ({ value: company.id, label: company.name }))]}
           />
         </FieldGroup>
-        <FieldGroup label="Contact" htmlFor="contactId">
+        <FieldGroup label={t.contactLabel} htmlFor="contactId">
           <Combobox
             id="contactId"
             name="contactId"
             value={contactId}
             onValueChange={handleContactChange}
-            placeholder="No contact"
+            placeholder={t.noContactOption}
             options={[
-              { value: "", label: "No contact" },
+              { value: "", label: t.noContactOption },
               ...filteredContacts.map((contact) => ({ value: contact.id, label: fullName(contact.firstName, contact.lastName) })),
             ]}
           />
         </FieldGroup>
       </div>
 
-      <FieldGroup label="Expected close date" htmlFor="expectedCloseDate">
+      <FieldGroup label={t.expectedCloseDateLabel} htmlFor="expectedCloseDate">
         <DatePicker id="expectedCloseDate" name="expectedCloseDate" defaultValue={values?.expectedCloseDate ?? formatDateInput(deal?.expectedCloseDate)} />
       </FieldGroup>
 
-      <FieldGroup label="Notes" htmlFor="notes">
+      <FieldGroup label={t.notesLabel} htmlFor="notes">
         <Textarea
           id="notes"
           name="notes"
           rows={4}
           defaultValue={values?.notes ?? deal?.notes ?? ""}
-          placeholder="Anything worth remembering about this deal…"
+          placeholder={t.notesPlaceholder}
         />
       </FieldGroup>
 
@@ -146,7 +154,7 @@ export function PartnerDealForm({
 
       <div className="flex justify-end gap-2 pt-2">
         <Button type="submit" disabled={pending}>
-          {pending ? "Saving…" : submitLabel}
+          {pending ? t.savingLabel : resolvedSubmitLabel}
         </Button>
       </div>
     </form>

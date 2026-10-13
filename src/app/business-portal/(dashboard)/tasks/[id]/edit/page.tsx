@@ -5,8 +5,12 @@ import { PartnerTaskForm } from "@/components/business-crm/partner-task-form";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody } from "@/components/ui/card";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
+import { getDirectoryLocale } from "@/lib/directory-locale";
+import { PORTAL_TASKS_STRINGS, formatEditTaskTitle } from "@/lib/portal-tasks-i18n";
 
 export default async function EditPartnerTaskPage({ params }: { params: Promise<{ id: string }> }) {
+  const locale = await getDirectoryLocale();
+  const t = PORTAL_TASKS_STRINGS[locale];
   const user = await requireCompletePartnerProfile();
   const { id } = await params;
   const [task, companies, contacts, deals] = await Promise.all([
@@ -29,15 +33,15 @@ export default async function EditPartnerTaskPage({ params }: { params: Promise<
     <div>
       <PageHeader
         breadcrumbs={[
-          { label: "Tasks", href: "/business-portal/tasks" },
+          { label: t.tasksTitle, href: "/business-portal/tasks" },
           { label: task.title, href: `/business-portal/tasks/${task.id}` },
-          { label: "Edit" },
+          { label: t.editBreadcrumb },
         ]}
-        title={`Edit ${task.title}`}
+        title={formatEditTaskTitle(t.editTaskTitleTemplate, task.title)}
       />
       <Card>
         <CardBody>
-          <PartnerTaskForm action={updatePartnerTask.bind(null, task.id)} task={task} companies={companies} contacts={contacts} deals={deals} />
+          <PartnerTaskForm action={updatePartnerTask.bind(null, task.id)} task={task} companies={companies} contacts={contacts} deals={deals} locale={locale} />
         </CardBody>
       </Card>
     </div>

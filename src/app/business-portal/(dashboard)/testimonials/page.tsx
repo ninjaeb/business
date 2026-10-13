@@ -2,6 +2,8 @@ import { db } from "@/lib/db";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { approveDirectoryTestimonial, rejectDirectoryTestimonial } from "@/app/actions/testimonials";
 import { formatDate } from "@/lib/format";
+import { getDirectoryLocale } from "@/lib/directory-locale";
+import { getPortalTestimonialsStrings } from "@/lib/portal-testimonials-i18n";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -9,12 +11,6 @@ import { Input } from "@/components/ui/field";
 import { EmptyState } from "@/components/ui/empty-state";
 import { StarRating } from "@/components/ui/star-rating";
 import { MessageSquareQuote } from "lucide-react";
-
-const STATUS_LABEL: Record<"PENDING" | "APPROVED" | "REJECTED", string> = {
-  PENDING: "Pending",
-  APPROVED: "Approved",
-  REJECTED: "Rejected",
-};
 
 const STATUS_BADGE_CLASSES: Record<"PENDING" | "APPROVED" | "REJECTED", string> = {
   PENDING: "bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-400",
@@ -30,7 +26,13 @@ const STATUS_BADGE_CLASSES: Record<"PENDING" | "APPROVED" | "REJECTED", string> 
 // own "a partner account can list more than one business"), grouped so the
 // ones needing a decision are never buried under ones that already have one.
 export default async function PartnerTestimonialsPage() {
-  const user = await requireCompletePartnerProfile();
+  const [user, locale] = await Promise.all([requireCompletePartnerProfile(), getDirectoryLocale()]);
+  const t = getPortalTestimonialsStrings(locale);
+  const STATUS_LABEL: Record<"PENDING" | "APPROVED" | "REJECTED", string> = {
+    PENDING: t.moderationStatusPending,
+    APPROVED: t.moderationStatusApproved,
+    REJECTED: t.moderationStatusRejected,
+  };
   const testimonials = await db.directoryTestimonial.findMany({
     where: { listing: { partnerId: user.id } },
     orderBy: { createdAt: "desc" },
@@ -39,20 +41,20 @@ export default async function PartnerTestimonialsPage() {
       images: { orderBy: { createdAt: "asc" }, select: { id: true } },
     },
   });
-  const pending = testimonials.filter((t) => t.status === "PENDING");
-  const reviewed = testimonials.filter((t) => t.status !== "PENDING");
+  const pending = testimonials.filter((item) => item.status === "PENDING");
+  const reviewed = testimonials.filter((item) => item.status !== "PENDING");
 
   return (
     <div className="space-y-6">
-      <PageHeader title="Testimonials" description="Reviews visitors have written about your business — approve the ones you want shown publicly." />
+      <PageHeader title={t.pageTitle} description={t.pageDescription} />
 
       <Card>
         <CardHeader>
-          <CardTitle>Awaiting your review</CardTitle>
+          <CardTitle>{t.awaitingReviewHeading}</CardTitle>
         </CardHeader>
         <CardBody>
           {pending.length === 0 ? (
-            <EmptyState icon={MessageSquareQuote} title="Nothing waiting on review" description="New testimonials will show up here." />
+            <EmptyState icon={MessageSquareQuote} title={t.awaitingReviewEmptyTitle} description={t.awaitingReviewEmptyDescription} />
           ) : (
             <ul className="divide-y divide-slate-100 dark:divide-neutral-800">
               {pending.map((testimonial) => (
@@ -101,13 +103,13 @@ export default async function PartnerTestimonialsPage() {
                   <div className="flex flex-wrap items-center gap-2">
                     <form action={approveDirectoryTestimonial.bind(null, testimonial.id)}>
                       <Button type="submit" size="sm">
-                        Approve
+                        {t.approveCta}
                       </Button>
                     </form>
                     <form action={rejectDirectoryTestimonial.bind(null, testimonial.id)} className="flex items-center gap-2">
-                      <Input name="note" required placeholder="What needs to change?" className="!h-8 w-56 text-xs" />
+                      <Input name="note" required placeholder={t.rejectNotePlaceholder} className="!h-8 w-56 text-xs" />
                       <Button type="submit" size="sm" variant="secondary">
-                        Reject
+                        {t.rejectCta}
                       </Button>
                     </form>
                   </div>
@@ -121,7 +123,7 @@ export default async function PartnerTestimonialsPage() {
       {reviewed.length > 0 && (
         <Card>
           <CardHeader>
-            <CardTitle>Already reviewed</CardTitle>
+            <CardTitle>{t.alreadyReviewedHeading}</CardTitle>
           </CardHeader>
           <CardBody>
             <ul className="divide-y divide-slate-100 dark:divide-neutral-800">
@@ -142,7 +144,9 @@ export default async function PartnerTestimonialsPage() {
                   </div>
                   <p className="line-clamp-2 text-xs text-slate-500 dark:text-slate-400">{testimonial.body}</p>
                   {testimonial.status === "REJECTED" && testimonial.reviewNote && (
-                    <p className="text-xs italic text-slate-400">Your note: {testimonial.reviewNote}</p>
+                    <p className="text-xs italic text-slate-400">
+                      {t.yourNotePrefix} {testimonial.reviewNote}
+                    </p>
                   )}
                 </li>
               ))}

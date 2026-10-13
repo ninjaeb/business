@@ -6,8 +6,8 @@ import { usePathname } from "next/navigation";
 import { LogOut, Plus } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { createListingAction } from "@/app/actions/directory";
-import { BUSINESS_NAV_ITEMS } from "@/lib/business-nav-items";
-import { directoryHomePath, type DirectoryLocale } from "@/lib/directory-i18n";
+import { directoryHomePath, localizedBusinessNavItems, type DirectoryLocale } from "@/lib/directory-i18n";
+import { getPortalChromeStrings } from "@/lib/portal-i18n";
 
 const navHeadingClasses = "px-3 pb-1 pt-3 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500";
 
@@ -35,6 +35,8 @@ export function PartnerSidebar({
   locale: DirectoryLocale;
 }) {
   const pathname = usePathname();
+  const t = getPortalChromeStrings(locale);
+  const navItems = localizedBusinessNavItems(locale);
 
   return (
     <aside className="hidden w-60 shrink-0 flex-col border-r border-slate-200 bg-white dark:border-neutral-800 dark:bg-neutral-900 sm:flex">
@@ -43,25 +45,25 @@ export function PartnerSidebar({
         className="flex h-14 shrink-0 items-center gap-2 border-b border-slate-200 px-5 dark:border-neutral-800"
       >
         <img src="/icon-192.png" alt="" className="h-7 w-7 shrink-0" />
-        <span className="truncate text-sm font-semibold text-slate-900 dark:text-slate-100">Business Portal</span>
+        <span className="truncate text-sm font-semibold text-slate-900 dark:text-slate-100">{t.brandName}</span>
       </Link>
 
       <nav className="flex-1 space-y-1 overflow-y-auto px-3 py-4">
         <Link href={directoryHomePath(locale)} className={cn(itemClasses, inactiveItemClasses)}>
-          Business Directory
+          {t.businessDirectoryLink}
         </Link>
 
         <form action={createListingAction}>
           <button type="submit" className={cn(itemClasses, "w-full", inactiveItemClasses)}>
             <Plus className="h-4 w-4 shrink-0 text-slate-400" />
-            Add Business
+            {t.addBusiness}
           </button>
         </form>
 
-        <div className={navHeadingClasses}>My Business</div>
-        {BUSINESS_NAV_ITEMS.map((item) => (
+        <div className={navHeadingClasses}>{t.myBusinessHeading}</div>
+        {navItems.map((item) => (
           <Fragment key={item.href}>
-            {"heading" in item && <div className={navHeadingClasses}>{item.heading}</div>}
+            {item.heading && <div className={navHeadingClasses}>{item.heading}</div>}
             <Link
               href={item.href}
               className={cn(itemClasses, isActive(pathname, item.href) ? activeItemClasses : inactiveItemClasses)}
@@ -75,7 +77,7 @@ export function PartnerSidebar({
       <form action={signOutAction} className="border-t border-slate-200 p-3 dark:border-neutral-800">
         <button type="submit" className={cn(itemClasses, "w-full", inactiveItemClasses)}>
           <LogOut className="h-4 w-4 shrink-0 text-slate-400" />
-          Sign out
+          {t.signOut}
         </button>
       </form>
     </aside>

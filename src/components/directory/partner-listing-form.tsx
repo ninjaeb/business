@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useActionState, useEffect, useRef, useState, useTransition } from "react";
 import { Sparkles } from "lucide-react";
 import {
@@ -32,9 +31,11 @@ import { PartnerSlugForm } from "@/components/directory/partner-slug-form";
 import { ServicesEditor } from "@/components/directory/services-editor";
 import { VideosEditor } from "@/components/directory/videos-editor";
 import { useToast } from "@/components/ui/toast";
-import { INDUSTRIES, INDUSTRY_LABELS } from "@/lib/labels";
+import { INDUSTRIES } from "@/lib/labels";
 import { MAX_SEO_DESCRIPTION_LENGTH, MAX_SEO_TITLE_LENGTH, servicesContextText } from "@/lib/listing-seo-limits";
+import { formatSeoTitlePlaceholder, PORTAL_LISTING_FORM_STRINGS } from "@/lib/portal-listing-i18n";
 import { cn } from "@/lib/utils";
+import { INDUSTRY_LABELS_BY_LOCALE, type DirectoryLocale } from "@/lib/directory-i18n";
 import type { PartnerListingStatus } from "@/generated/prisma/client";
 import type { OperatingHours } from "@/lib/operating-hours";
 import type { FaqEntry, ListingTranslations, PhotoEntry, ServiceEntry, VideoEntry } from "@/lib/directory";
@@ -66,13 +67,10 @@ type EditorSection = "details" | "services" | "faq" | "media";
 // News & Promotions used to be a fourth tab here — see PostComposer
 // (/business-portal/posts) for where that moved: a post now publishes
 // instantly rather than waiting on the whole listing's own re-approval,
-// which a tab buried inside this form could never do.
-const SECTION_TABS: { value: EditorSection; label: string }[] = [
-  { value: "details", label: "Business Details" },
-  { value: "services", label: "Products & Services" },
-  { value: "faq", label: "FAQ" },
-  { value: "media", label: "Photos and Videos" },
-];
+// which a tab buried inside this form could never do. Built from `t`
+// inside the component itself (see SECTION_TABS there), rather than kept
+// as a module-level constant like LANGUAGE_TABS above, since its own
+// labels are translated.
 
 const LISTING_FORM_ID = "partner-listing-form";
 
@@ -101,6 +99,7 @@ export function PartnerListingForm({
   otherListings,
   slug,
   siteOrigin,
+  locale,
 }: {
   listingId: string;
   values: ListingFormValues;
@@ -114,7 +113,15 @@ export function PartnerListingForm({
   otherListings: { id: string; companyName: string; city: string | null; state: string | null }[];
   slug: string;
   siteOrigin: string;
+  locale: DirectoryLocale;
 }) {
+  const t = PORTAL_LISTING_FORM_STRINGS[locale];
+  const SECTION_TABS: { value: EditorSection; label: string }[] = [
+    { value: "details", label: t.sectionDetails },
+    { value: "services", label: t.sectionServices },
+    { value: "faq", label: t.sectionFaq },
+    { value: "media", label: t.sectionMedia },
+  ];
   const [state, formAction, pending] = useActionState(saveDirectoryListing.bind(null, listingId), undefined);
   const [logoPreview, setLogoPreview] = useState(logoUrl);
   const [removeLogo, setRemoveLogo] = useState(false);
@@ -176,8 +183,8 @@ export function PartnerListingForm({
   // alongside that sync, or a double-render (e.g. Strict Mode) could fire
   // it twice.
   useEffect(() => {
-    if (state && "success" in state) toast.success("Draft saved.");
-  }, [state, toast]);
+    if (state && "success" in state) toast.success(t.draftSaved);
+  }, [state, toast, t]);
 
   // Every field AI Auto Create can fill in (see handleAutoCreated) is
   // controlled state, so one result can land in all of them at once.
@@ -275,9 +282,7 @@ export function PartnerListingForm({
       } else {
         setDisplayError(null);
         if (result) setCurrentSlug(result.slug);
-        toast.success(
-          result?.published ? "Published — your listing is now live." : "Submitted — an admin will review it shortly.",
-        );
+        toast.success(result?.published ? t.publishedToast : t.submittedToast);
       }
     });
   }
@@ -505,7 +510,7 @@ export function PartnerListingForm({
           className={buttonClasses("ghost", "sm", "shrink-0")}
         >
           <Sparkles className="h-3.5 w-3.5" />
-          {translating ? "Translating…" : "Translate with AI"}
+          {translating ? t.translating : t.translateWithAi}
         </button>
       )}
     </div>
@@ -573,16 +578,23 @@ export function PartnerListingForm({
             onCreated={handleAutoCreated}
             onTranslate={handleTranslate}
             translating={translating}
+            locale={locale}
           />
         )}
 
         <div className="min-w-0 rounded-md border border-slate-200 p-4 dark:border-neutral-800">
-          <h3 className="mb-3 text-sm font-semibold text-slate-900 dark:text-slate-100">Public URL</h3>
-          <PartnerSlugForm listingId={listingId} slug={currentSlug} siteOrigin={siteOrigin} autoSlugSource={autoSlugSource} />
+          <h3 className="mb-3 text-sm font-semibold text-slate-900 dark:text-slate-100">{t.publicUrlHeading}</h3>
+          <PartnerSlugForm
+            listingId={listingId}
+            slug={currentSlug}
+            siteOrigin={siteOrigin}
+            autoSlugSource={autoSlugSource}
+            locale={locale}
+          />
 
           <div className="mt-4 border-t border-slate-200 pt-4 dark:border-neutral-800">
             <div className="mb-1.5 flex items-center justify-between gap-2">
-              <Label className="mb-0">Search &amp; social preview</Label>
+              <Label className="mb-0">{t.searchSocialPreviewLabel}</Label>
               {aiAvailable && (
                 <button
                   type="button"
@@ -591,24 +603,24 @@ export function PartnerListingForm({
                   className={buttonClasses("ghost", "sm", "shrink-0")}
                 >
                   <Sparkles className="h-3.5 w-3.5" />
-                  {generatingSeoMeta ? "Generating…" : "Generate with AI"}
+                  {generatingSeoMeta ? t.generating : t.generateWithAi}
                 </button>
               )}
             </div>
             <div className="space-y-3">
-              <FieldGroup label="SEO title" htmlFor="seoTitle">
+              <FieldGroup label={t.seoTitleLabel} htmlFor="seoTitle">
                 <Input
                   id="seoTitle"
                   name="seoTitle"
                   form={LISTING_FORM_ID}
                   value={seoTitle}
                   onChange={(event) => setSeoTitle(event.target.value)}
-                  placeholder={`${companyName || "Your company"} | Business Directory`}
+                  placeholder={formatSeoTitlePlaceholder(companyName, locale)}
                   maxLength={MAX_SEO_TITLE_LENGTH}
                 />
                 <SeoCharCount value={seoTitle} max={MAX_SEO_TITLE_LENGTH} />
               </FieldGroup>
-              <FieldGroup label="SEO description" htmlFor="seoDescription">
+              <FieldGroup label={t.seoDescriptionLabel} htmlFor="seoDescription">
                 <Textarea
                   id="seoDescription"
                   name="seoDescription"
@@ -616,15 +628,13 @@ export function PartnerListingForm({
                   rows={2}
                   value={seoDescription}
                   onChange={(event) => setSeoDescription(event.target.value)}
-                  placeholder="Shown in search results and when your link is shared — one or two sentences."
+                  placeholder={t.seoDescriptionPlaceholder}
                   maxLength={MAX_SEO_DESCRIPTION_LENGTH}
                 />
                 <SeoCharCount value={seoDescription} max={MAX_SEO_DESCRIPTION_LENGTH} />
               </FieldGroup>
             </div>
-            <p className="mt-1 text-xs text-slate-400">
-              Optional — leave blank to use your tagline and About text automatically.
-            </p>
+            <p className="mt-1 text-xs text-slate-400">{t.seoHelpText}</p>
           </div>
 
           <div className="mt-4 border-t border-slate-200 pt-4 dark:border-neutral-800">
@@ -637,11 +647,9 @@ export function PartnerListingForm({
                 onChange={(event) => setShareWonValueWithReferrers(event.target.checked)}
                 className="h-4 w-4 rounded border-slate-300 text-led focus:ring-led"
               />
-              Let people who refer you leads see how much those deals are worth
+              {t.shareWonValueLabel}
             </label>
-            <p className="mt-1 text-xs text-slate-400">
-              Off by default — a deal&apos;s value is otherwise only ever shown on your own Dashboard.
-            </p>
+            <p className="mt-1 text-xs text-slate-400">{t.shareWonValueHelp}</p>
           </div>
         </div>
       </div>
@@ -672,7 +680,7 @@ export function PartnerListingForm({
       <div className={cn("space-y-5", activeSection !== "details" && "hidden")}>
 
       <div>
-        <Label htmlFor="logo">Logo</Label>
+        <Label htmlFor="logo">{t.logoLabel}</Label>
         <div className="flex items-center gap-4">
           <ListingLogo name={companyName || "?"} logoUrl={removeLogo ? null : logoPreview} className="h-14 w-14 text-lg" />
           <div className="flex-1 space-y-2">
@@ -692,9 +700,7 @@ export function PartnerListingForm({
               onChange={handleLogoChange}
               className="block w-full text-sm text-slate-600 file:mr-3 file:rounded-md file:border-0 file:bg-slate-100 file:px-3 file:py-1.5 file:text-sm file:font-medium file:text-slate-700 hover:file:bg-slate-200 dark:text-slate-400 dark:file:bg-neutral-800 dark:file:text-slate-200 dark:hover:file:bg-neutral-700"
             />
-            <p className="text-xs text-slate-500 dark:text-slate-400">
-              JPEG, PNG, WebP, or GIF, under 3MB — crop, zoom, and rotate it before it&apos;s saved.
-            </p>
+            <p className="text-xs text-slate-500 dark:text-slate-400">{t.logoHelpText}</p>
             {logoPreview && !removeLogo && (
               <label className="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
                 <input
@@ -704,28 +710,26 @@ export function PartnerListingForm({
                   onChange={(event) => setRemoveLogo(event.target.checked)}
                   className="h-4 w-4 rounded border-slate-300 text-led focus:ring-led"
                 />
-                Remove current logo
+                {t.removeLogoLabel}
               </label>
             )}
           </div>
         </div>
       </div>
 
-      {cropImageUrl && <LogoCropDialog imageUrl={cropImageUrl} onCancel={handleCropCancel} onApply={handleCropApply} />}
+      {cropImageUrl && (
+        <LogoCropDialog imageUrl={cropImageUrl} onCancel={handleCropCancel} onApply={handleCropApply} locale={locale} />
+      )}
 
       {languageSwitcher}
-      <p className="-mt-3 text-xs text-slate-400">
-        Tagline and About are per-language — switch tabs to edit each, or use Translate with AI to fill in Chinese
-        and Malay from your English content. Everything else on this tab (company name, industry, categories, hours,
-        and more) applies to all languages.
-      </p>
+      <p className="-mt-3 text-xs text-slate-400">{t.detailsTabHint}</p>
 
       {/* Website is normally a field inside AiAutoCreatePanel above (it's
           both the source and the target of that section's auto-fill) — this
           is only the fallback when AI isn't configured at all and that
           panel doesn't render, so the field still needs to exist somewhere. */}
       <div className={cn("grid gap-4", aiAvailable ? "sm:grid-cols-2" : "sm:grid-cols-3")}>
-        <FieldGroup label="Company name" htmlFor="companyName" required>
+        <FieldGroup label={t.companyNameLabel} htmlFor="companyName" required>
           <Input
             id="companyName"
             name="companyName"
@@ -737,19 +741,19 @@ export function PartnerListingForm({
         </FieldGroup>
 
         <div hidden={activeTab !== "en"}>
-          <FieldGroup label="Tagline" htmlFor="tagline">
+          <FieldGroup label={t.taglineLabel} htmlFor="tagline">
             <Input
               id="tagline"
               name="tagline"
               value={tagline}
               onChange={(event) => setTagline(event.target.value)}
-              placeholder="One line under your company name"
+              placeholder={t.taglinePlaceholder}
               maxLength={140}
             />
           </FieldGroup>
         </div>
         <div hidden={activeTab !== "zh"}>
-          <FieldGroup label="Tagline" htmlFor="zhTagline">
+          <FieldGroup label={t.taglineLabel} htmlFor="zhTagline">
             <Input
               id="zhTagline"
               name="zhTagline"
@@ -760,7 +764,7 @@ export function PartnerListingForm({
           </FieldGroup>
         </div>
         <div hidden={activeTab !== "ms"}>
-          <FieldGroup label="Tagline" htmlFor="msTagline">
+          <FieldGroup label={t.taglineLabel} htmlFor="msTagline">
             <Input
               id="msTagline"
               name="msTagline"
@@ -772,20 +776,20 @@ export function PartnerListingForm({
         </div>
 
         {!aiAvailable && (
-          <FieldGroup label="Website" htmlFor="website">
+          <FieldGroup label={t.websiteLabel} htmlFor="website">
             <Input
               id="website"
               name="website"
               value={website}
               onChange={(event) => setWebsite(event.target.value)}
-              placeholder="acme.com"
+              placeholder={t.websitePlaceholder}
             />
           </FieldGroup>
         )}
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2">
-        <FieldGroup label="Industry" htmlFor="industry">
+        <FieldGroup label={t.industryLabel} htmlFor="industry">
           <Select
             id="industry"
             name="industry"
@@ -793,17 +797,17 @@ export function PartnerListingForm({
             onChange={(event) => setIndustry(event.target.value)}
             className="h-12 text-base font-medium"
           >
-            <option value="">Not set</option>
+            <option value="">{t.industryNotSet}</option>
             {INDUSTRIES.map((code) => (
               <option key={code} value={code}>
-                {INDUSTRY_LABELS[code]}
+                {INDUSTRY_LABELS_BY_LOCALE[locale][code]}
               </option>
             ))}
           </Select>
         </FieldGroup>
-        <FieldGroup label="Business categories" htmlFor="categoryIds">
+        <FieldGroup label={t.categoriesLabel} htmlFor="categoryIds">
           {categories.length === 0 ? (
-            <p className="text-sm text-slate-400">No categories yet.</p>
+            <p className="text-sm text-slate-400">{t.noCategoriesYet}</p>
           ) : (
             <MultiCombobox
               id="categoryIds"
@@ -811,66 +815,64 @@ export function PartnerListingForm({
               options={categories.map((category) => ({ value: category.id, label: category.name }))}
               value={categoryIds}
               onValueChange={setCategoryIds}
-              placeholder="Search categories…"
-              emptyMessage="No matching categories"
+              placeholder={t.categoriesSearchPlaceholder}
+              emptyMessage={t.categoriesEmptyMessage}
               size="lg"
             />
           )}
-          <p className="mt-1 text-xs text-slate-400">Optional — helps visitors filter the directory by what you do.</p>
+          <p className="mt-1 text-xs text-slate-400">{t.categoriesHelpText}</p>
         </FieldGroup>
       </div>
 
-      <AddressSearch placesAvailable={placesAvailable} defaultQuery={companyName} onSelect={handleAddressSelected} />
+      <AddressSearch placesAvailable={placesAvailable} defaultQuery={companyName} onSelect={handleAddressSelected} locale={locale} />
 
       <div className="grid gap-4 sm:grid-cols-2">
-        <FieldGroup label="Address" htmlFor="address">
+        <FieldGroup label={t.addressLabel} htmlFor="address">
           <Textarea
             id="address"
             name="address"
             rows={2}
             value={address}
             onChange={(event) => setAddress(event.target.value)}
-            placeholder={"123 Jalan Bukit Bintang\n50200 Kuala Lumpur, Malaysia"}
+            placeholder={t.addressPlaceholder}
           />
-          <p className="mt-1 text-xs text-slate-400">Shown on your listing with a map. Leave blank to skip the map.</p>
+          <p className="mt-1 text-xs text-slate-400">{t.addressHelpText}</p>
         </FieldGroup>
-        <FieldGroup label="City" htmlFor="city">
+        <FieldGroup label={t.cityLabel} htmlFor="city">
           <Input
             id="city"
             name="city"
             value={city}
             onChange={(event) => setCity(event.target.value)}
-            placeholder="Kuala Lumpur"
+            placeholder={t.cityPlaceholder}
           />
         </FieldGroup>
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2">
-        <FieldGroup label="State / province" htmlFor="state">
+        <FieldGroup label={t.stateLabel} htmlFor="state">
           <Input
             id="state"
             name="state"
             value={addrState}
             onChange={(event) => setAddrState(event.target.value)}
-            placeholder="Selangor"
+            placeholder={t.statePlaceholder}
           />
         </FieldGroup>
-        <FieldGroup label="Country" htmlFor="country">
+        <FieldGroup label={t.countryLabel} htmlFor="country">
           <Input
             id="country"
             name="country"
             value={country}
             onChange={(event) => setCountry(event.target.value)}
-            placeholder="Malaysia"
+            placeholder={t.countryPlaceholder}
           />
         </FieldGroup>
       </div>
 
-      <FieldGroup label="Linked branches" htmlFor="branchIds">
+      <FieldGroup label={t.branchesLabel} htmlFor="branchIds">
         {otherListings.length === 0 ? (
-          <p className="text-sm text-slate-400">
-            No other listings on your account yet — add another location&apos;s listing first, then link it here.
-          </p>
+          <p className="text-sm text-slate-400">{t.noOtherListings}</p>
         ) : (
           <MultiCombobox
             id="branchIds"
@@ -881,64 +883,51 @@ export function PartnerListingForm({
             }))}
             value={branchIds}
             onValueChange={setBranchIds}
-            placeholder="Search your other listings…"
-            emptyMessage="No matching listings"
+            placeholder={t.branchesSearchPlaceholder}
+            emptyMessage={t.branchesEmptyMessage}
             size="lg"
           />
         )}
-        <p className="mt-1 text-xs text-slate-400">
-          Other locations of this same business — shown as a linked list on this listing&apos;s Visit us page once
-          they&apos;re published, and vice versa. Linking works both ways, so you only need to set it up on one side.
-        </p>
+        <p className="mt-1 text-xs text-slate-400">{t.branchesHelpText}</p>
       </FieldGroup>
 
       <div className="grid gap-4 sm:grid-cols-2">
-        <FieldGroup label="Contact number" htmlFor="phone">
+        <FieldGroup label={t.phoneLabel} htmlFor="phone">
           <Input
             id="phone"
             name="phone"
             type="tel"
             value={phone}
             onChange={(event) => setPhone(event.target.value)}
-            placeholder="+60 12 345 6789"
+            placeholder={t.phonePlaceholder}
           />
-          <p className="mt-1 text-xs text-slate-400">
-            Shown on your listing as a Call button. Include the country code with a + sign. Leave blank to hide it.
-          </p>
+          <p className="mt-1 text-xs text-slate-400">{t.phoneHelpText}</p>
         </FieldGroup>
-        <FieldGroup label="WhatsApp number" htmlFor="whatsAppNumber">
+        <FieldGroup label={t.whatsAppLabel} htmlFor="whatsAppNumber">
           <Input
             id="whatsAppNumber"
             name="whatsAppNumber"
             type="tel"
             value={whatsAppNumber}
             onChange={(event) => setWhatsAppNumber(event.target.value)}
-            placeholder="+60 12 345 6789"
+            placeholder={t.phonePlaceholder}
           />
-          <p className="mt-1 text-xs text-slate-400">
-            Shown on your listing as a WhatsApp button, for calls and messages. Can be different from your Contact number.
-            Leave blank to hide it.
-          </p>
+          <p className="mt-1 text-xs text-slate-400">{t.whatsAppHelpText}</p>
         </FieldGroup>
       </div>
 
-      <FieldGroup label="Google review link" htmlFor="googleReviewUrl">
+      <FieldGroup label={t.googleReviewLabel} htmlFor="googleReviewUrl">
         <Input
           id="googleReviewUrl"
           name="googleReviewUrl"
           value={googleReviewUrl}
           onChange={(event) => setGoogleReviewUrl(event.target.value)}
-          placeholder="https://search.google.com/local/writereview?placeid=..."
+          placeholder={t.googleReviewPlaceholder}
         />
-        <p className="mt-1 text-xs text-slate-400">
-          Filled in automatically when you pick your business on Google Maps above (Step 1) or in the address search
-          below. Shown on your Testimonials page as a &quot;Leave it on Google too&quot; button after a visitor writes
-          you one — or paste your own short review link here (Google Business Profile &gt; Get more reviews &gt; Share
-          review form).
-        </p>
+        <p className="mt-1 text-xs text-slate-400">{t.googleReviewHelpText}</p>
       </FieldGroup>
 
-      <FieldGroup label="Google Business Profile link" htmlFor="googleBusinessProfileUrl">
+      <FieldGroup label={t.googleBusinessProfileLabel} htmlFor="googleBusinessProfileUrl">
         <Input
           id="googleBusinessProfileUrl"
           name="googleBusinessProfileUrl"
@@ -946,20 +935,14 @@ export function PartnerListingForm({
           onChange={(event) => setGoogleBusinessProfileUrl(event.target.value)}
           placeholder="https://g.page/r/..."
         />
-        <p className="mt-1 text-xs text-slate-400">
-          Optional — open your Google Business Profile, tap Share, and paste the link here. Each post from{" "}
-          <Link href="/business-portal/posts" className="underline">
-            Posts
-          </Link>{" "}
-          then gets a &quot;Post to Google&quot; button that copies it and opens your profile to paste it in.
-        </p>
+        <p className="mt-1 text-xs text-slate-400">{t.googleBusinessProfileHelpText}</p>
       </FieldGroup>
 
       <div className="grid gap-4 sm:grid-cols-2">
         <div hidden={activeTab !== "en"}>
           <div className="mb-1.5 flex items-center justify-between gap-2">
             <Label htmlFor="description" className="mb-0">
-              About
+              {t.aboutLabel}
             </Label>
             {aiAvailable && (
               <button
@@ -969,7 +952,7 @@ export function PartnerListingForm({
                 className={buttonClasses("ghost", "sm", "shrink-0")}
               >
                 <Sparkles className="h-3.5 w-3.5" />
-                {rewritingDescription ? "Rewriting…" : "Rewrite with AI"}
+                {rewritingDescription ? t.rewriting : t.rewriteWithAi}
               </button>
             )}
           </div>
@@ -983,17 +966,18 @@ export function PartnerListingForm({
               setDescription(value);
               setJustSaved(false);
             }}
-            placeholder="What does your business do?"
+            placeholder={t.aboutPlaceholder}
           />
           <p className="mt-1 text-xs text-slate-400">
-            Select text and use the toolbar for <strong>bold</strong>, lists, links, and images — or switch to
-            Preview to see how it&apos;ll look.
+            {t.aboutHelpTextPrefix}
+            <strong>{t.aboutHelpTextBoldWord}</strong>
+            {t.aboutHelpTextSuffix}
           </p>
         </div>
         <div hidden={activeTab !== "zh"}>
           <div className="mb-1.5 flex items-center justify-between gap-2">
             <Label htmlFor="zhDescription" className="mb-0">
-              About
+              {t.aboutLabel}
             </Label>
           </div>
           <MarkdownLiteEditor
@@ -1003,17 +987,18 @@ export function PartnerListingForm({
             rows={5}
             value={translations.zh?.description ?? ""}
             onChange={(value) => updateTranslation("zh", "description", value)}
-            placeholder="What does your business do?"
+            placeholder={t.aboutPlaceholder}
           />
           <p className="mt-1 text-xs text-slate-400">
-            Select text and use the toolbar for <strong>bold</strong>, lists, links, and images — or switch to
-            Preview to see how it&apos;ll look.
+            {t.aboutHelpTextPrefix}
+            <strong>{t.aboutHelpTextBoldWord}</strong>
+            {t.aboutHelpTextSuffix}
           </p>
         </div>
         <div hidden={activeTab !== "ms"}>
           <div className="mb-1.5 flex items-center justify-between gap-2">
             <Label htmlFor="msDescription" className="mb-0">
-              About
+              {t.aboutLabel}
             </Label>
           </div>
           <MarkdownLiteEditor
@@ -1023,18 +1008,19 @@ export function PartnerListingForm({
             rows={5}
             value={translations.ms?.description ?? ""}
             onChange={(value) => updateTranslation("ms", "description", value)}
-            placeholder="What does your business do?"
+            placeholder={t.aboutPlaceholder}
           />
           <p className="mt-1 text-xs text-slate-400">
-            Select text and use the toolbar for <strong>bold</strong>, lists, links, and images — or switch to
-            Preview to see how it&apos;ll look.
+            {t.aboutHelpTextPrefix}
+            <strong>{t.aboutHelpTextBoldWord}</strong>
+            {t.aboutHelpTextSuffix}
           </p>
         </div>
 
         <div>
-          <Label>Operating hours</Label>
+          <Label>{t.hoursLabel}</Label>
           <OperatingHoursEditor key={hoursKey} initialHours={hours} />
-          <p className="mt-1 text-xs text-slate-400">Shown on your listing exactly as set here.</p>
+          <p className="mt-1 text-xs text-slate-400">{t.hoursHelpText}</p>
         </div>
       </div>
 
@@ -1043,15 +1029,12 @@ export function PartnerListingForm({
       <div className={cn("space-y-5", activeSection !== "services" && "hidden")}>
 
       {languageSwitcher}
-      <p className="-mt-3 text-xs text-slate-400">
-        Products &amp; services are per-language — switch tabs to edit each, or use Translate with AI to fill in
-        Chinese and Malay from your English content.
-      </p>
+      <p className="-mt-3 text-xs text-slate-400">{t.servicesTabHint}</p>
 
       <div>
         <div className="mb-1.5 flex items-center justify-between gap-2">
           <Label className="mb-0">
-            Products &amp; services
+            {t.servicesLabel}
             <RequiredMark />
           </Label>
           {aiAvailable && activeTab === "en" && (
@@ -1062,7 +1045,7 @@ export function PartnerListingForm({
               className={buttonClasses("ghost", "sm", "shrink-0")}
             >
               <Sparkles className="h-3.5 w-3.5" />
-              {rewritingServices ? "Rewriting…" : "Rewrite with AI"}
+              {rewritingServices ? t.rewriting : t.rewriteWithAi}
             </button>
           )}
         </div>
@@ -1086,10 +1069,7 @@ export function PartnerListingForm({
         {servicesError ? (
           <p className="mt-1 text-sm text-rose-600 dark:text-rose-400">{servicesError}</p>
         ) : (
-          <p className="mt-1 text-xs text-slate-400">
-            A title, an optional description, and an optional price for each — shown on your listing. At least one
-            is required (in English) before you can submit for review.
-          </p>
+          <p className="mt-1 text-xs text-slate-400">{t.servicesHelpText}</p>
         )}
       </div>
 
@@ -1098,14 +1078,11 @@ export function PartnerListingForm({
       <div className={cn("space-y-5", activeSection !== "faq" && "hidden")}>
 
       {languageSwitcher}
-      <p className="-mt-3 text-xs text-slate-400">
-        FAQ is per-language — switch tabs to edit each, or use Translate with AI to fill in Chinese and Malay from
-        your English content.
-      </p>
+      <p className="-mt-3 text-xs text-slate-400">{t.faqTabHint}</p>
 
       <div>
         <div className="mb-1.5 flex items-center justify-between gap-2">
-          <Label className="mb-0">FAQ</Label>
+          <Label className="mb-0">{t.faqLabel}</Label>
           {aiAvailable && activeTab === "en" && (
             <button
               type="button"
@@ -1114,7 +1091,7 @@ export function PartnerListingForm({
               className={buttonClasses("ghost", "sm", "shrink-0")}
             >
               <Sparkles className="h-3.5 w-3.5" />
-              {generatingFaqs ? "Generating…" : "Generate with AI"}
+              {generatingFaqs ? t.generating : t.generateWithAi}
             </button>
           )}
         </div>
@@ -1127,9 +1104,7 @@ export function PartnerListingForm({
         <div hidden={activeTab !== "ms"}>
           <FaqEditor name="msFaqs" value={translations.ms?.faqs ?? []} onChange={(value) => updateTranslatedFaqs("ms", value)} />
         </div>
-        <p className="mt-1 text-xs text-slate-400">
-          Optional — shown on your listing as a Q&amp;A section, and helps your page surface in AI search answers.
-        </p>
+        <p className="mt-1 text-xs text-slate-400">{t.faqHelpText}</p>
       </div>
 
       </div>
@@ -1139,22 +1114,15 @@ export function PartnerListingForm({
           tabs and lives in its own top-level section too. */}
       <div className={cn("mt-4 grid gap-4 sm:grid-cols-2", activeSection !== "media" && "hidden")}>
         <div>
-          <h3 className="mb-1.5 text-sm font-semibold text-slate-900 dark:text-slate-100">Photos</h3>
+          <h3 className="mb-1.5 text-sm font-semibold text-slate-900 dark:text-slate-100">{t.photosHeading}</h3>
           <ListingPhotosEditor listingId={listingId} initialPhotos={photos} />
-          <p className="mt-1 text-xs text-slate-400">
-            Up to 12 — group photos into an album (e.g. &quot;Team Building 2026&quot;) and they&apos;ll show as an
-            album on your public page. Added right away, but only shown publicly once you save and the listing is
-            (re)approved, same as everything else here.
-          </p>
+          <p className="mt-1 text-xs text-slate-400">{t.photosHelpText}</p>
         </div>
 
         <div>
-          <h3 className="mb-1.5 text-sm font-semibold text-slate-900 dark:text-slate-100">Videos</h3>
+          <h3 className="mb-1.5 text-sm font-semibold text-slate-900 dark:text-slate-100">{t.videosHeading}</h3>
           <VideosEditor name="videos" value={videos} onChange={setVideos} />
-          <p className="mt-1 text-xs text-slate-400">
-            Up to 12 — YouTube, Vimeo, Dailymotion, Facebook, or TikTok links, each with a title and category.
-            Optimized for search and AI answer engines.
-          </p>
+          <p className="mt-1 text-xs text-slate-400">{t.videosHelpText}</p>
         </div>
       </div>
 
@@ -1173,7 +1141,7 @@ export function PartnerListingForm({
           variant={justSaved ? "secondary" : "primary"}
           className={justSaved ? undefined : "bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"}
         >
-          {pending ? "Saving…" : justSaved ? "Saved" : "Save draft"}
+          {pending ? t.saving : justSaved ? t.saved : t.saveDraft}
         </Button>
         <Button
           type="button"
@@ -1181,7 +1149,7 @@ export function PartnerListingForm({
           disabled={submitPending || status === "PENDING_REVIEW"}
           onClick={handleSubmitForReview}
         >
-          {submitPending ? "Submitting…" : status === "PENDING_REVIEW" ? "Awaiting review" : "Submit for review"}
+          {submitPending ? t.submitting : status === "PENDING_REVIEW" ? t.awaitingReview : t.submitForReview}
         </Button>
       </div>
       </form>

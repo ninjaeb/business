@@ -9,6 +9,8 @@ import {
   deleteBusinessPartnerInvite,
 } from "@/app/actions/business-partners";
 import { formatDate } from "@/lib/format";
+import { getDirectoryLocale } from "@/lib/directory-locale";
+import { getPortalBusinessPartnersStrings } from "@/lib/portal-business-partners-i18n";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
 import { EmptyState } from "@/components/ui/empty-state";
@@ -26,7 +28,8 @@ import { ConfirmSubmitButton } from "@/components/ui/confirm-submit-button";
 // same reasoning as the Testimonials/Review Links pages just above this
 // one in the nav.
 export default async function BusinessPartnersPage() {
-  const user = await requireCompletePartnerProfile();
+  const [user, locale] = await Promise.all([requireCompletePartnerProfile(), getDirectoryLocale()]);
+  const t = getPortalBusinessPartnersStrings(locale);
   const [links, invites] = await Promise.all([
     listBusinessPartnerLinksForPartner(user.id),
     listBusinessPartnerInvitesForPartner(user.id),
@@ -35,17 +38,17 @@ export default async function BusinessPartnersPage() {
   return (
     <div className="space-y-6">
       <PageHeader
-        title="Business Partners"
-        description="Connect with other businesses on the directory — each shows on the other's public listing page as a Business Partner, once approved."
+        title={t.pageTitle}
+        description={t.pageDescription}
         actions={
           <>
             <Link href="/business-portal/business-partners/invite" className={buttonClasses("secondary")}>
               <Mail className="h-4 w-4" />
-              Invite a business
+              {t.inviteBusinessCta}
             </Link>
             <Link href="/business-portal/business-partners/new" className={buttonClasses()}>
               <Plus className="h-4 w-4" />
-              Add business partner
+              {t.addPartnerCta}
             </Link>
           </>
         }
@@ -56,12 +59,12 @@ export default async function BusinessPartnersPage() {
           {links.length === 0 ? (
             <EmptyState
               icon={Handshake}
-              title="No business partners yet."
-              description="Search for a business already on the directory to request connecting with them."
+              title={t.linksEmptyTitle}
+              description={t.linksEmptyDescription}
               action={
                 <Link href="/business-portal/business-partners/new" className={buttonClasses()}>
                   <Plus className="h-4 w-4" />
-                  Add business partner
+                  {t.addPartnerCta}
                 </Link>
               }
             />
@@ -70,10 +73,10 @@ export default async function BusinessPartnersPage() {
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-slate-200 text-left text-xs text-slate-500 dark:border-neutral-800 dark:text-slate-400">
-                    <th className="py-2 pr-3 font-medium">Your listing</th>
-                    <th className="py-2 pr-3 font-medium">Business</th>
-                    <th className="py-2 pr-3 font-medium">Status</th>
-                    <th className="py-2 pr-3 font-medium">Date</th>
+                    <th className="py-2 pr-3 font-medium">{t.colYourListing}</th>
+                    <th className="py-2 pr-3 font-medium">{t.colBusiness}</th>
+                    <th className="py-2 pr-3 font-medium">{t.colStatus}</th>
+                    <th className="py-2 pr-3 font-medium">{t.colDate}</th>
                     <th className="py-2 pr-3 font-medium"></th>
                   </tr>
                 </thead>
@@ -89,19 +92,19 @@ export default async function BusinessPartnersPage() {
                         <td className="py-2.5 pr-3 whitespace-nowrap">
                           {link.status === "ACCEPTED" ? (
                             <Badge className="bg-emerald-100 text-emerald-700 ring-emerald-600/20 dark:bg-emerald-950 dark:text-emerald-400 dark:ring-emerald-500/30">
-                              Connected
+                              {t.statusConnected}
                             </Badge>
                           ) : link.status === "DECLINED" ? (
                             <Badge className="bg-rose-100 text-rose-700 ring-rose-600/20 dark:bg-rose-950 dark:text-rose-400 dark:ring-rose-500/30">
-                              Declined
+                              {t.statusDeclined}
                             </Badge>
                           ) : isRecipient ? (
                             <Badge className="bg-amber-100 text-amber-700 ring-amber-600/20 dark:bg-amber-950 dark:text-amber-400 dark:ring-amber-500/30">
-                              Awaiting your approval
+                              {t.statusAwaitingApproval}
                             </Badge>
                           ) : (
                             <Badge className="bg-amber-100 text-amber-700 ring-amber-600/20 dark:bg-amber-950 dark:text-amber-400 dark:ring-amber-500/30">
-                              Request sent
+                              {t.statusRequestSent}
                             </Badge>
                           )}
                         </td>
@@ -114,12 +117,15 @@ export default async function BusinessPartnersPage() {
                               <>
                                 <form action={acceptBusinessPartnerLink.bind(null, link.id)}>
                                   <Button type="submit" size="sm">
-                                    Accept
+                                    {t.acceptCta}
                                   </Button>
                                 </form>
                                 <form action={declineBusinessPartnerLink.bind(null, link.id)}>
-                                  <ConfirmSubmitButton confirmMessage={`Decline ${other.companyName}'s request?`} variant="secondary">
-                                    Decline
+                                  <ConfirmSubmitButton
+                                    confirmMessage={t.declineConfirm.replace("{business}", other.companyName)}
+                                    variant="secondary"
+                                  >
+                                    {t.declineCta}
                                   </ConfirmSubmitButton>
                                 </form>
                               </>
@@ -129,11 +135,11 @@ export default async function BusinessPartnersPage() {
                                 <ConfirmSubmitButton
                                   confirmMessage={
                                     link.status === "ACCEPTED"
-                                      ? `Remove ${other.companyName} as a business partner? This can't be undone.`
-                                      : `Cancel this request to ${other.companyName}?`
+                                      ? t.removeConfirm.replace("{business}", other.companyName)
+                                      : t.cancelRequestConfirm.replace("{business}", other.companyName)
                                   }
                                 >
-                                  {link.status === "ACCEPTED" ? "Remove" : "Cancel"}
+                                  {link.status === "ACCEPTED" ? t.removeCta : t.cancelCta}
                                 </ConfirmSubmitButton>
                               </form>
                             )}
@@ -153,19 +159,19 @@ export default async function BusinessPartnersPage() {
         <CardHeader>
           <CardTitle className="flex items-center gap-1.5 text-base">
             <Send className="h-4 w-4 text-slate-400" />
-            Invited businesses
+            {t.invitedBusinessesHeading}
           </CardTitle>
         </CardHeader>
         <CardBody>
           {invites.length === 0 ? (
             <EmptyState
               icon={Mail}
-              title="No invites sent yet."
-              description="Not every business you work with is on the directory yet — invite them by email and WhatsApp."
+              title={t.invitesEmptyTitle}
+              description={t.invitesEmptyDescription}
               action={
                 <Link href="/business-portal/business-partners/invite" className={buttonClasses("secondary")}>
                   <Mail className="h-4 w-4" />
-                  Invite a business
+                  {t.inviteBusinessCta}
                 </Link>
               }
             />
@@ -174,11 +180,11 @@ export default async function BusinessPartnersPage() {
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-slate-200 text-left text-xs text-slate-500 dark:border-neutral-800 dark:text-slate-400">
-                    <th className="py-2 pr-3 font-medium">Company</th>
-                    <th className="py-2 pr-3 font-medium">Contact</th>
-                    <th className="py-2 pr-3 font-medium">Email</th>
-                    <th className="py-2 pr-3 font-medium">Phone</th>
-                    <th className="py-2 pr-3 font-medium">Sent</th>
+                    <th className="py-2 pr-3 font-medium">{t.colCompany}</th>
+                    <th className="py-2 pr-3 font-medium">{t.colContact}</th>
+                    <th className="py-2 pr-3 font-medium">{t.colEmail}</th>
+                    <th className="py-2 pr-3 font-medium">{t.colPhone}</th>
+                    <th className="py-2 pr-3 font-medium">{t.colSent}</th>
                     <th className="py-2 pr-3 font-medium"></th>
                   </tr>
                 </thead>
@@ -193,24 +199,26 @@ export default async function BusinessPartnersPage() {
                         <div className="flex flex-wrap gap-1">
                           {invite.emailSentAt && (
                             <Badge className="bg-emerald-100 text-emerald-700 ring-emerald-600/20 dark:bg-emerald-950 dark:text-emerald-400 dark:ring-emerald-500/30">
-                              Email
+                              {t.badgeEmail}
                             </Badge>
                           )}
                           {invite.whatsappSentAt && (
                             <Badge className="bg-emerald-100 text-emerald-700 ring-emerald-600/20 dark:bg-emerald-950 dark:text-emerald-400 dark:ring-emerald-500/30">
-                              WhatsApp
+                              {t.badgeWhatsApp}
                             </Badge>
                           )}
                           {!invite.emailSentAt && !invite.whatsappSentAt && (
                             <Badge className="bg-slate-100 text-slate-600 ring-slate-500/20 dark:bg-neutral-800 dark:text-slate-300 dark:ring-slate-400/20">
-                              Not sent
+                              {t.badgeNotSent}
                             </Badge>
                           )}
                         </div>
                       </td>
                       <td className="py-2.5 pr-3">
                         <form action={deleteBusinessPartnerInvite.bind(null, invite.id)}>
-                          <ConfirmSubmitButton confirmMessage={`Delete the invite to ${invite.companyName}?`}>Delete</ConfirmSubmitButton>
+                          <ConfirmSubmitButton confirmMessage={t.deleteInviteConfirm.replace("{business}", invite.companyName)}>
+                            {t.deleteInviteCta}
+                          </ConfirmSubmitButton>
                         </form>
                       </td>
                     </tr>

@@ -3,6 +3,13 @@ import { notFound } from "next/navigation";
 import { AlertTriangle, Handshake, ThumbsUp } from "lucide-react";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { db } from "@/lib/db";
+import { getDirectoryLocale } from "@/lib/directory-locale";
+import {
+  PORTAL_LEADS_STRINGS,
+  formatLeadClosedAfter,
+  formatLeadOpenFor,
+  formatLeadSentOn,
+} from "@/lib/portal-leads-i18n";
 import { DEFAULT_PARTNER_CURRENCY, formatDate, formatDateTime, formatDuration } from "@/lib/format";
 import { fillMessageTemplate, getMessageTemplate } from "@/lib/message-templates";
 import { PageHeader } from "@/components/ui/page-header";
@@ -15,6 +22,8 @@ import { DirectoryLeadReplyForm } from "@/components/directory/directory-lead-re
 
 export default async function PartnerDirectoryLeadPage({ params }: { params: Promise<{ id: string }> }) {
   const user = await requireCompletePartnerProfile();
+  const locale = await getDirectoryLocale();
+  const t = PORTAL_LEADS_STRINGS[locale];
   const { id } = await params;
   const currency = user.currency ?? DEFAULT_PARTNER_CURRENCY;
   const lead = await db.directoryLead.findFirst({
@@ -42,22 +51,22 @@ export default async function PartnerDirectoryLeadPage({ params }: { params: Pro
     <div className="space-y-6">
       <PageHeader
         breadcrumbs={[
-          { label: "Business Leads", href: "/business-portal/business-leads" },
+          { label: t.pageTitle, href: "/business-portal/business-leads" },
           { label: lead.listing.companyName },
           { label: lead.name },
         ]}
         title={lead.name}
         description={
           <>
-            {`Sent ${formatDateTime(lead.createdAt)} · ${
+            {`${formatLeadSentOn(t.sentOnTemplate, formatDateTime(lead.createdAt))} · ${
               lead.closedAt
-                ? `Closed after ${formatDuration(lead.createdAt, lead.closedAt)}`
-                : `Open for ${formatDuration(lead.createdAt)}`
+                ? formatLeadClosedAfter(t.closedAfterTemplate, formatDuration(lead.createdAt, lead.closedAt))
+                : formatLeadOpenFor(t.openForTemplate, formatDuration(lead.createdAt))
             }`}
             {lead.viaReferral && (
               <Badge className="ml-2 bg-orange-50 text-orange-700 ring-orange-600/20 dark:bg-orange-950 dark:text-orange-400 dark:ring-orange-500/30">
                 <ThumbsUp className="mr-1 h-3 w-3" aria-hidden="true" />
-                Referred
+                {t.referredBadge}
               </Badge>
             )}
           </>
@@ -70,10 +79,10 @@ export default async function PartnerDirectoryLeadPage({ params }: { params: Pro
                 className="inline-flex items-center gap-1.5 rounded-md border border-slate-200 px-3 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-50 dark:border-neutral-700 dark:text-slate-300 dark:hover:bg-neutral-800"
               >
                 <Handshake className="h-3.5 w-3.5" />
-                View deal
+                {t.viewDealLabel}
               </Link>
             )}
-            <DirectoryLeadStatusSelect leadId={lead.id} status={lead.status} />
+            <DirectoryLeadStatusSelect leadId={lead.id} status={lead.status} locale={locale} />
           </>
         }
       />
@@ -81,7 +90,7 @@ export default async function PartnerDirectoryLeadPage({ params }: { params: Pro
       <div className="grid items-start gap-6 lg:grid-cols-2">
         <Card>
           <CardHeader>
-            <CardTitle>Inquiry</CardTitle>
+            <CardTitle>{t.inquiryCardTitle}</CardTitle>
           </CardHeader>
           <CardBody className="space-y-3">
             <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-slate-500 dark:text-slate-400">
@@ -94,7 +103,7 @@ export default async function PartnerDirectoryLeadPage({ params }: { params: Pro
 
         <Card>
           <CardHeader>
-            <CardTitle>Value & notes</CardTitle>
+            <CardTitle>{t.valueNotesCardTitle}</CardTitle>
           </CardHeader>
           <CardBody>
             <DirectoryLeadValueForm
@@ -102,6 +111,7 @@ export default async function PartnerDirectoryLeadPage({ params }: { params: Pro
               value={lead.value !== null ? Number(lead.value) : null}
               notes={lead.notes}
               currency={currency}
+              locale={locale}
             />
           </CardBody>
         </Card>
@@ -109,7 +119,7 @@ export default async function PartnerDirectoryLeadPage({ params }: { params: Pro
 
       <Card>
         <CardHeader>
-          <CardTitle>Reply</CardTitle>
+          <CardTitle>{t.replyCardTitle}</CardTitle>
         </CardHeader>
         <CardBody className="space-y-4">
           {lead.replies.length > 0 && (
@@ -122,7 +132,7 @@ export default async function PartnerDirectoryLeadPage({ params }: { params: Pro
                     {!reply.sentAt && (
                       <span className="inline-flex items-center gap-1 text-rose-500 dark:text-rose-400" title={reply.sendError ?? undefined}>
                         <AlertTriangle className="h-3 w-3" />
-                        Not delivered
+                        {t.notDeliveredLabel}
                       </span>
                     )}
                   </p>
@@ -130,7 +140,7 @@ export default async function PartnerDirectoryLeadPage({ params }: { params: Pro
               ))}
             </ul>
           )}
-          <DirectoryLeadReplyForm leadId={lead.id} />
+          <DirectoryLeadReplyForm leadId={lead.id} locale={locale} />
         </CardBody>
       </Card>
     </div>

@@ -8,6 +8,8 @@ import {
   type AutoCreatedListingDetails,
 } from "@/app/actions/directory";
 import type { PlaceSearchResult } from "@/lib/google-places";
+import type { DirectoryLocale } from "@/lib/directory-i18n";
+import { formatAiAutoCreateToast, PORTAL_AI_AUTO_CREATE_STRINGS } from "@/lib/portal-listing-dialogs-i18n";
 import { Button } from "@/components/ui/button";
 import { FieldGroup, Input, Label } from "@/components/ui/field";
 import { useToast } from "@/components/ui/toast";
@@ -46,6 +48,7 @@ export function AiAutoCreatePanel({
   formId,
   onTranslate,
   translating,
+  locale,
 }: {
   // Passed straight through to autoCreateListingDetails, which writes
   // Google's own rating/ratingCount directly to this listing's row — see
@@ -69,7 +72,9 @@ export function AiAutoCreatePanel({
   // the exact same action/state, not a second implementation of it.
   onTranslate: () => void;
   translating: boolean;
+  locale: DirectoryLocale;
 }) {
+  const t = PORTAL_AI_AUTO_CREATE_STRINGS[locale];
   const [query, setQuery] = useState(defaultQuery);
   const [results, setResults] = useState<PlaceSearchResult[] | null>(null);
   const [selected, setSelected] = useState<PlaceSearchResult | null>(null);
@@ -140,21 +145,20 @@ export function AiAutoCreatePanel({
       }
       onCreated(result.data);
       const { googleMaps, website: fromWebsite } = result.data.sources;
-      const baseMessage =
-        googleMaps && !fromWebsite && website
-          ? "Details created from your Google Maps listing — your website couldn't be read."
-          : "Details created.";
       // Spelled out either way rather than left silent on a miss — a
       // partner who just picked a place and sees no star rating appear
       // shouldn't be left guessing whether that's Google (no rating on
       // file yet) or a bug (see autoCreateListingDetails's own comment on
       // why this field exists at all).
-      const ratingNote = !googleMaps
-        ? ""
-        : result.data.googleRating !== null
-          ? ` Found a ${result.data.googleRating.toFixed(1)}★ Google rating${result.data.googleRatingCount !== null ? ` (${result.data.googleRatingCount} reviews)` : ""}.`
-          : " No Google rating on file for this business yet.";
-      toast.success(`${baseMessage}${ratingNote} Review each section, then save.`);
+      toast.success(
+        formatAiAutoCreateToast(locale, {
+          googleMaps,
+          fromWebsite,
+          hasWebsite: Boolean(website),
+          rating: result.data.googleRating,
+          ratingCount: result.data.googleRatingCount,
+        }),
+      );
     });
   }
 
@@ -163,22 +167,17 @@ export function AiAutoCreatePanel({
       <div className="flex items-start gap-2">
         <Sparkles className="mt-0.5 h-4 w-4 shrink-0 text-petrol dark:text-petrol-light" />
         <div>
-          <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-100">AI Auto Business Details Creation</h3>
-          <p className="mt-0.5 text-xs text-slate-500 dark:text-slate-400">
-            Find your business on Google Maps, and AI drafts the rest of this listing from that and your website —
-            About, Products &amp; services, FAQ, industry, categories, operating hours, address, SEO title &amp;
-            description, and your logo (copied straight from your Google Maps listing&apos;s own photo, where it has one).
-            Review everything before saving.
-          </p>
+          <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-100">{t.heading}</h3>
+          <p className="mt-0.5 text-xs text-slate-500 dark:text-slate-400">{t.intro}</p>
         </div>
       </div>
 
       <div className="mt-4 border-t border-slate-200 pt-4 dark:border-neutral-800">
-        <StepLabel step={1}>Find your business</StepLabel>
+        <StepLabel step={1}>{t.step1Label}</StepLabel>
 
         {placesAvailable && (
           <div>
-            <Label htmlFor="places-search">Your business on Google Maps</Label>
+            <Label htmlFor="places-search">{t.businessOnGoogleMapsLabel}</Label>
             <Input
               id="places-search"
               value={query}
@@ -201,15 +200,15 @@ export function AiAutoCreatePanel({
                   runSearch(query);
                 }
               }}
-              placeholder="Business name and city, e.g. Acme Printing Kuala Lumpur"
+              placeholder={t.searchPlaceholder}
               autoComplete="off"
             />
 
             {searching && (!results || results.length === 0) && (
-              <p className="mt-2 text-sm text-slate-400">Searching…</p>
+              <p className="mt-2 text-sm text-slate-400">{t.searching}</p>
             )}
             {!searching && results && results.length === 0 && (
-              <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">No matches — try adding the city or area.</p>
+              <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">{t.noMatches}</p>
             )}
             {results && results.length > 0 && (
               <ul className="mt-2 divide-y divide-slate-200 overflow-hidden rounded-md border border-slate-200 dark:divide-neutral-800 dark:border-neutral-800">
@@ -245,32 +244,28 @@ export function AiAutoCreatePanel({
                   onClick={() => setSelected(null)}
                   className="shrink-0 text-xs text-slate-500 underline hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
                 >
-                  Change
+                  {t.changeButton}
                 </button>
               </div>
             )}
           </div>
         )}
 
-        <FieldGroup label="Website" htmlFor="website" className={placesAvailable ? "mt-3" : undefined}>
+        <FieldGroup label={t.websiteLabel} htmlFor="website" className={placesAvailable ? "mt-3" : undefined}>
           <Input
             id="website"
             name="website"
             form={formId}
             value={website}
             onChange={(event) => onWebsiteChange(event.target.value)}
-            placeholder="acme.com"
+            placeholder={t.websitePlaceholder}
           />
-          <p className="mt-1 text-xs text-slate-400">
-            {placesAvailable
-              ? "Filled in automatically when you pick a business above — edit it any time."
-              : "Google Maps search isn't configured (GOOGLE_PLACES_API_KEY) — AI Auto Create reads this site directly instead."}
-          </p>
+          <p className="mt-1 text-xs text-slate-400">{placesAvailable ? t.websiteHelpAuto : t.websiteHelpManual}</p>
         </FieldGroup>
       </div>
 
       <div className="mt-4 border-t border-slate-200 pt-4 dark:border-neutral-800">
-        <StepLabel step={2}>AI Auto Create</StepLabel>
+        <StepLabel step={2}>{t.aiAutoCreate}</StepLabel>
         <div className="flex flex-wrap items-center gap-3">
           <Button
             type="button"
@@ -279,28 +274,20 @@ export function AiAutoCreatePanel({
             className="bg-led text-led-ink hover:bg-led-hover active:bg-led-active focus-visible:ring-led"
           >
             <Sparkles className="h-4 w-4" />
-            {creating ? "Creating…" : "AI Auto Create"}
+            {creating ? t.creating : t.aiAutoCreate}
           </Button>
-          <p className="text-xs text-slate-400">
-            {creating
-              ? "Reading the Google listing and website, then writing — this can take up to a minute."
-              : "Drafts About, tagline, Products & services, FAQ, industry, categories, hours, address, SEO title & description, and logo from step 1 above. Review everything before saving."}
-          </p>
+          <p className="text-xs text-slate-400">{creating ? t.creatingHelp : t.createHelp}</p>
         </div>
       </div>
 
       <div className="mt-4 border-t border-slate-200 pt-4 dark:border-neutral-800">
-        <StepLabel step={3}>AI Auto Translate</StepLabel>
+        <StepLabel step={3}>{t.aiAutoTranslate}</StepLabel>
         <div className="flex flex-wrap items-center gap-3">
           <Button type="button" variant="secondary" onClick={onTranslate} disabled={translating}>
             <Sparkles className="h-4 w-4" />
-            {translating ? "Translating…" : "AI Auto Translate"}
+            {translating ? t.translating : t.aiAutoTranslate}
           </Button>
-          <p className="text-xs text-slate-400">
-            {translating
-              ? "Translating your English content into Chinese and Malay — this can take a moment."
-              : "Fills in the Chinese and Malay tabs from your English content above."}
-          </p>
+          <p className="text-xs text-slate-400">{translating ? t.translatingHelp : t.translateHelp}</p>
         </div>
       </div>
     </section>

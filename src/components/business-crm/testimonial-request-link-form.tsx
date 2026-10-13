@@ -3,6 +3,8 @@
 import { useActionState, useMemo, useState } from "react";
 import type { ServiceEntry } from "@/lib/directory";
 import type { TestimonialRequestLinkFormState } from "@/app/actions/testimonial-request-links";
+import type { DirectoryLocale } from "@/lib/directory-i18n";
+import { PORTAL_TESTIMONIALS_STRINGS } from "@/lib/portal-testimonials-i18n";
 import { Button } from "@/components/ui/button";
 import { FieldGroup, Input, Select } from "@/components/ui/field";
 import { MultiCombobox } from "@/components/ui/multi-combobox";
@@ -11,8 +13,9 @@ export function TestimonialRequestLinkForm({
   action,
   listings,
   initialValues,
-  submitLabel = "Create link",
-  pendingLabel = "Creating…",
+  locale,
+  submitLabel,
+  pendingLabel,
 }: {
   action: (prevState: TestimonialRequestLinkFormState, formData: FormData) => Promise<TestimonialRequestLinkFormState>;
   // Already parsed server-side (see new/page.tsx's own comment on why) —
@@ -29,9 +32,16 @@ export function TestimonialRequestLinkForm({
     serviceTitles: string[];
     note: string;
   };
+  locale: DirectoryLocale;
+  // Defaults to this locale's own "Create link"/"Creating…" (the new-link
+  // page's own case) — the edit page passes its "Save changes"/"Saving…"
+  // explicitly instead (see [id]/edit/page.tsx).
   submitLabel?: string;
   pendingLabel?: string;
 }) {
+  const t = PORTAL_TESTIMONIALS_STRINGS[locale];
+  const resolvedSubmitLabel = submitLabel ?? t.createLinkCta;
+  const resolvedPendingLabel = pendingLabel ?? t.creatingCta;
   const [state, formAction, pending] = useActionState(action, undefined);
   const [listingId, setListingId] = useState(initialValues?.listingId ?? listings[0]?.id);
 
@@ -48,7 +58,7 @@ export function TestimonialRequestLinkForm({
   return (
     <form action={formAction} className="space-y-4">
       {listings.length > 1 && (
-        <FieldGroup label="Listing" htmlFor="listingId" required>
+        <FieldGroup label={t.formListingLabel} htmlFor="listingId" required>
           <Select
             id="listingId"
             name="listingId"
@@ -71,28 +81,28 @@ export function TestimonialRequestLinkForm({
           the customer before they submit, so a guess here that's wrong or
           incomplete costs nothing. */}
       <div className="grid gap-4 sm:grid-cols-2">
-        <FieldGroup label="Customer name" htmlFor="customerName">
-          <Input id="customerName" name="customerName" placeholder="e.g. Sarah Tan" defaultValue={initialValues?.customerName} />
+        <FieldGroup label={t.formCustomerNameLabel} htmlFor="customerName">
+          <Input id="customerName" name="customerName" placeholder={t.formCustomerNamePlaceholder} defaultValue={initialValues?.customerName} />
         </FieldGroup>
-        <FieldGroup label="Customer title" htmlFor="customerTitle">
+        <FieldGroup label={t.formCustomerTitleLabel} htmlFor="customerTitle">
           <Input
             id="customerTitle"
             name="customerTitle"
-            placeholder="e.g. Marketing Director"
+            placeholder={t.formCustomerTitlePlaceholder}
             defaultValue={initialValues?.customerTitle}
           />
         </FieldGroup>
       </div>
-      <FieldGroup label="Customer company" htmlFor="customerCompany">
+      <FieldGroup label={t.formCustomerCompanyLabel} htmlFor="customerCompany">
         <Input
           id="customerCompany"
           name="customerCompany"
-          placeholder="e.g. Acme Sdn Bhd"
+          placeholder={t.formCustomerCompanyPlaceholder}
           defaultValue={initialValues?.customerCompany}
         />
       </FieldGroup>
 
-      <FieldGroup label="Product or service provided" htmlFor="serviceTitles">
+      <FieldGroup label={t.formServiceLabel} htmlFor="serviceTitles">
         {serviceOptions.length > 0 ? (
           <MultiCombobox
             // Forces a remount on every listing switch — MultiCombobox
@@ -108,8 +118,8 @@ export function TestimonialRequestLinkForm({
             name="serviceTitles"
             options={serviceOptions}
             defaultValue={listingId === initialValues?.listingId ? initialValues?.serviceTitles : undefined}
-            placeholder="Search this listing's services…"
-            emptyMessage="No matching services"
+            placeholder={t.formServiceSearchPlaceholder}
+            emptyMessage={t.formServiceEmptyMessage}
           />
         ) : (
           // Falls back to free text when the selected listing has no
@@ -119,29 +129,24 @@ export function TestimonialRequestLinkForm({
             key={listingId}
             id="serviceTitles"
             name="serviceTitles"
-            placeholder="e.g. Logo design package"
+            placeholder={t.formServiceFreeTextPlaceholder}
             autoComplete="off"
             defaultValue={listingId === initialValues?.listingId ? initialValues?.serviceTitles?.join(", ") : undefined}
           />
         )}
-        <p className="mt-1.5 text-xs text-slate-500 dark:text-slate-400">
-          Shown to the customer on the form, so they know what they&apos;re reviewing. Select more than one if several
-          applied — leave blank for a general review.
-        </p>
+        <p className="mt-1.5 text-xs text-slate-500 dark:text-slate-400">{t.formServiceHint}</p>
       </FieldGroup>
 
-      <FieldGroup label="Note (for you only)" htmlFor="note">
-        <Input id="note" name="note" placeholder="e.g. Logo project — Mar 2026" defaultValue={initialValues?.note} />
-        <p className="mt-1.5 text-xs text-slate-500 dark:text-slate-400">
-          Never shown to the customer — just helps you tell your own links apart.
-        </p>
+      <FieldGroup label={t.formNoteLabel} htmlFor="note">
+        <Input id="note" name="note" placeholder={t.formNotePlaceholder} defaultValue={initialValues?.note} />
+        <p className="mt-1.5 text-xs text-slate-500 dark:text-slate-400">{t.formNoteHint}</p>
       </FieldGroup>
 
       {state?.error && <p className="text-sm text-rose-600 dark:text-rose-400">{state.error}</p>}
 
       <div className="flex justify-end gap-2 pt-2">
         <Button type="submit" disabled={pending}>
-          {pending ? pendingLabel : submitLabel}
+          {pending ? resolvedPendingLabel : resolvedSubmitLabel}
         </Button>
       </div>
     </form>

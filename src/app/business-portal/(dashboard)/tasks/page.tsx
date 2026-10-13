@@ -9,8 +9,12 @@ import { Card, CardBody } from "@/components/ui/card";
 import { EmptyState } from "@/components/ui/empty-state";
 import { buttonClasses } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { getDirectoryLocale } from "@/lib/directory-locale";
+import { PORTAL_TASKS_STRINGS, formatPortalTaskCount } from "@/lib/portal-tasks-i18n";
 
 export default async function PartnerTasksPage() {
+  const locale = await getDirectoryLocale();
+  const t = PORTAL_TASKS_STRINGS[locale];
   const user = await requireCompletePartnerProfile();
   const tasks = await db.partnerTask.findMany({
     where: { partnerId: user.id },
@@ -21,12 +25,12 @@ export default async function PartnerTasksPage() {
   return (
     <div className="space-y-6">
       <PageHeader
-        title="Tasks"
-        description={`${tasks.length} ${tasks.length === 1 ? "task" : "tasks"}`}
+        title={t.tasksTitle}
+        description={formatPortalTaskCount(tasks.length, locale)}
         actions={
           <Link href="/business-portal/tasks/new" className={buttonClasses()}>
             <Plus className="h-4 w-4" />
-            New task
+            {t.newTaskCta}
           </Link>
         }
       />
@@ -36,12 +40,12 @@ export default async function PartnerTasksPage() {
           {tasks.length === 0 ? (
             <EmptyState
               icon={CheckSquare}
-              title="No tasks yet."
-              description="Keep track of follow-ups against your companies, contacts, and deals."
+              title={t.emptyTitle}
+              description={t.emptyDescription}
               action={
                 <Link href="/business-portal/tasks/new" className={buttonClasses()}>
                   <Plus className="h-4 w-4" />
-                  New task
+                  {t.newTaskCta}
                 </Link>
               }
             />
@@ -63,7 +67,7 @@ export default async function PartnerTasksPage() {
                 return (
                   <li key={task.id} className="flex items-start gap-3 py-3">
                     <form action={togglePartnerTaskCompleted.bind(null, task.id)}>
-                      <button type="submit" aria-label={task.completed ? "Mark incomplete" : "Mark complete"}>
+                      <button type="submit" aria-label={task.completed ? t.markIncompleteCta : t.markCompleteCta}>
                         <span
                           className={cn(
                             "mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border-2 transition-colors",
@@ -92,7 +96,7 @@ export default async function PartnerTasksPage() {
                         </Link>
                         {dueLabel && (
                           <span className={cn("text-xs font-medium", overdue ? "text-rose-600 dark:text-rose-400" : "text-slate-400 dark:text-slate-500")}>
-                            {overdue ? "Overdue: " : ""}
+                            {overdue ? t.overduePrefix : ""}
                             {dueLabel}
                           </span>
                         )}

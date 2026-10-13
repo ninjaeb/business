@@ -7,6 +7,7 @@ import { Button, buttonClasses } from "@/components/ui/button";
 import { FieldGroup, Input } from "@/components/ui/field";
 import { GoogleIcon } from "@/components/directory/google-icon";
 import { directorySignupPath, type DirectoryLocale } from "@/lib/directory-i18n";
+import { PORTAL_DASHBOARD_STRINGS } from "@/lib/portal-dashboard-i18n";
 
 // The business portal's own front door — same template as
 // partner-signup-form.tsx (heading + optional Google button + divider +
@@ -26,14 +27,15 @@ export function BusinessLoginForm({
   initialError?: string;
   locale: DirectoryLocale;
 }) {
+  const t = PORTAL_DASHBOARD_STRINGS[locale];
   const [state, formAction, pending] = useActionState(businessLogin, undefined);
   const error = state?.error ?? initialError;
 
   return (
     <div>
-      <h1 className="text-2xl font-semibold text-slate-900 dark:text-slate-100">Sign in to your business</h1>
+      <h1 className="text-2xl font-semibold text-slate-900 dark:text-slate-100">{t.loginHeading}</h1>
       <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
-        Manage your listing and directory leads.
+        {t.loginSubheading}
       </p>
 
       {googleEnabled && (
@@ -42,37 +44,37 @@ export function BusinessLoginForm({
             <input type="hidden" name="returnTo" value="login" />
             <button type="submit" className={buttonClasses("secondary", "md", "w-full")}>
               <GoogleIcon className="h-4 w-4" />
-              Continue with Google
+              {t.continueWithGoogle}
             </button>
           </form>
 
           <div className="my-6 flex items-center gap-3">
             <div className="h-px flex-1 bg-slate-200 dark:bg-neutral-800" />
-            <span className="text-xs font-medium uppercase tracking-wide text-slate-400">or</span>
+            <span className="text-xs font-medium uppercase tracking-wide text-slate-400">{t.orDivider}</span>
             <div className="h-px flex-1 bg-slate-200 dark:bg-neutral-800" />
           </div>
         </>
       )}
 
       <form action={formAction} className={googleEnabled ? "space-y-4" : "mt-6 space-y-4"}>
-        <FieldGroup label="Email" htmlFor="email" required>
+        <FieldGroup label={t.loginEmailLabel} htmlFor="email" required>
           <Input id="email" name="email" type="email" autoComplete="email" required />
         </FieldGroup>
-        <FieldGroup label="Password" htmlFor="password" required>
+        <FieldGroup label={t.loginPasswordLabel} htmlFor="password" required>
           <Input id="password" name="password" type="password" autoComplete="current-password" required />
         </FieldGroup>
 
         {error && <p className="text-sm text-rose-600 dark:text-rose-400">{error}</p>}
 
         <Button type="submit" disabled={pending} className="w-full">
-          {pending ? "Signing in…" : "Sign in"}
+          {pending ? t.signingInCta : t.signInCta}
         </Button>
       </form>
 
       <p className="mt-6 text-center text-sm text-slate-500 dark:text-slate-400">
-        New business?{" "}
+        {t.newBusinessPrompt}{" "}
         <Link href={directorySignupPath(locale)} className="text-petrol hover:underline dark:text-petrol-light">
-          Create an account
+          {t.createAccountLink}
         </Link>
       </p>
     </div>

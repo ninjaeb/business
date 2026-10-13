@@ -4,6 +4,8 @@ import { useEffect, useRef, useState, useTransition } from "react";
 import { Check, MapPin, Search } from "lucide-react";
 import { getAddressFromGooglePlace, searchBusinessOnGoogleMaps, type AddressFromPlace } from "@/app/actions/directory";
 import type { PlaceSearchResult } from "@/lib/google-places";
+import type { DirectoryLocale } from "@/lib/directory-i18n";
+import { PORTAL_ADDRESS_SEARCH_STRINGS } from "@/lib/portal-listing-dialogs-i18n";
 import { FieldGroup, Input } from "@/components/ui/field";
 import { useToast } from "@/components/ui/toast";
 
@@ -26,6 +28,7 @@ export function AddressSearch({
   placesAvailable,
   defaultQuery,
   onSelect,
+  locale,
 }: {
   placesAvailable: boolean;
   // The company name already on the listing (see AiAutoCreatePanel's own
@@ -34,7 +37,9 @@ export function AddressSearch({
   // entered elsewhere on this same form.
   defaultQuery: string;
   onSelect: (address: AddressFromPlace) => void;
+  locale: DirectoryLocale;
 }) {
+  const t = PORTAL_ADDRESS_SEARCH_STRINGS[locale];
   const [query, setQuery] = useState(defaultQuery);
   const [results, setResults] = useState<PlaceSearchResult[] | null>(null);
   const [selectedName, setSelectedName] = useState<string | null>(null);
@@ -103,7 +108,7 @@ export function AddressSearch({
   if (!placesAvailable) return null;
 
   return (
-    <FieldGroup label="Search your address on Google Maps" htmlFor="address-search">
+    <FieldGroup label={t.searchLabel} htmlFor="address-search">
       <div className="relative">
         <Search className="pointer-events-none absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-slate-400" />
         <Input
@@ -124,17 +129,17 @@ export function AddressSearch({
               runSearch(query);
             }
           }}
-          placeholder="Business name and city, e.g. Acme Printing Kuala Lumpur"
+          placeholder={t.searchPlaceholder}
           autoComplete="off"
           className="pl-9"
         />
       </div>
 
       {(searching || loadingDetails) && (!results || results.length === 0) && (
-        <p className="mt-2 text-sm text-slate-400">{loadingDetails ? "Loading address…" : "Searching…"}</p>
+        <p className="mt-2 text-sm text-slate-400">{loadingDetails ? t.loadingAddress : t.searching}</p>
       )}
       {!searching && !loadingDetails && results && results.length === 0 && (
-        <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">No matches — try adding the city or area.</p>
+        <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">{t.noMatches}</p>
       )}
       {results && results.length > 0 && (
         <ul className="mt-2 divide-y divide-slate-200 overflow-hidden rounded-md border border-slate-200 dark:divide-neutral-800 dark:border-neutral-800">
@@ -158,8 +163,9 @@ export function AddressSearch({
       {selectedName && !results && !loadingDetails && (
         <p className="mt-2 flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400">
           <Check className="h-3.5 w-3.5 shrink-0 text-petrol-ink dark:text-petrol-light" />
-          Filled in from <span className="font-medium text-slate-700 dark:text-slate-300">{selectedName}</span> — edit the
-          fields below if needed.
+          {t.filledInFromPrefix}
+          <span className="font-medium text-slate-700 dark:text-slate-300">{selectedName}</span>
+          {t.filledInFromSuffix}
         </p>
       )}
     </FieldGroup>

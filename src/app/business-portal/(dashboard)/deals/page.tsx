@@ -9,10 +9,16 @@ import { Badge } from "@/components/ui/badge";
 import { StatCard } from "@/components/ui/stat-card";
 import { EmptyState } from "@/components/ui/empty-state";
 import { buttonClasses } from "@/components/ui/button";
-import { PARTNER_DEAL_OPEN_STATUSES, PARTNER_DEAL_STATUS_BADGE_CLASSES, PARTNER_DEAL_STATUS_LABELS } from "@/lib/labels";
+import { PARTNER_DEAL_OPEN_STATUSES, PARTNER_DEAL_STATUS_BADGE_CLASSES } from "@/lib/labels";
+import { getDirectoryLocale } from "@/lib/directory-locale";
+import { PARTNER_DEAL_STATUS_LABELS_BY_LOCALE } from "@/lib/directory-i18n";
+import { PORTAL_DEALS_STRINGS, formatDealsCountLabel } from "@/lib/portal-deals-i18n";
 
 export default async function PartnerDealsPage() {
   const user = await requireCompletePartnerProfile();
+  const locale = await getDirectoryLocale();
+  const t = PORTAL_DEALS_STRINGS[locale];
+  const statusLabels = PARTNER_DEAL_STATUS_LABELS_BY_LOCALE[locale];
   const currency = user.currency ?? DEFAULT_PARTNER_CURRENCY;
   const deals = await db.partnerDeal.findMany({
     where: { partnerId: user.id },
@@ -27,20 +33,20 @@ export default async function PartnerDealsPage() {
   return (
     <div className="space-y-6">
       <PageHeader
-        title="Deals"
-        description={`${deals.length} ${deals.length === 1 ? "deal" : "deals"}`}
+        title={t.pageTitle}
+        description={formatDealsCountLabel(deals.length, locale)}
         actions={
           <Link href="/business-portal/deals/new" className={buttonClasses()}>
             <Plus className="h-4 w-4" />
-            New deal
+            {t.newDealLabel}
           </Link>
         }
       />
 
       <div className="grid gap-4 sm:grid-cols-3">
-        <StatCard label="Open" value={open.toString()} icon={Handshake} accent="sky" />
-        <StatCard label="Won" value={won.length.toString()} icon={Trophy} accent="emerald" />
-        <StatCard label="Won value" value={formatCurrencyExact(wonValue, currency)} icon={Wallet} accent="indigo" />
+        <StatCard label={t.statOpenLabel} value={open.toString()} icon={Handshake} accent="sky" />
+        <StatCard label={t.statWonLabel} value={won.length.toString()} icon={Trophy} accent="emerald" />
+        <StatCard label={t.statWonValueLabel} value={formatCurrencyExact(wonValue, currency)} icon={Wallet} accent="indigo" />
       </div>
 
       <Card>
@@ -48,12 +54,12 @@ export default async function PartnerDealsPage() {
           {deals.length === 0 ? (
             <EmptyState
               icon={Handshake}
-              title="No deals yet."
-              description="Track the opportunities you're working on with your companies and contacts."
+              title={t.emptyDealsTitle}
+              description={t.emptyDealsDescription}
               action={
                 <Link href="/business-portal/deals/new" className={buttonClasses()}>
                   <Plus className="h-4 w-4" />
-                  New deal
+                  {t.newDealLabel}
                 </Link>
               }
             />
@@ -62,10 +68,10 @@ export default async function PartnerDealsPage() {
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-slate-200 text-left text-xs text-slate-500 dark:border-neutral-800 dark:text-slate-400">
-                    <th className="py-2 pr-3 font-medium">Deal</th>
-                    <th className="py-2 pr-3 font-medium">Company / contact</th>
-                    <th className="py-2 pr-3 font-medium">Value</th>
-                    <th className="py-2 pr-3 font-medium">Status</th>
+                    <th className="py-2 pr-3 font-medium">{t.tableDealHeader}</th>
+                    <th className="py-2 pr-3 font-medium">{t.tableCompanyContactHeader}</th>
+                    <th className="py-2 pr-3 font-medium">{t.valueLabel}</th>
+                    <th className="py-2 pr-3 font-medium">{t.statusLabel}</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100 dark:divide-neutral-800">
@@ -86,7 +92,7 @@ export default async function PartnerDealsPage() {
                         {formatCurrency(deal.value.toString(), currency)}
                       </td>
                       <td className="py-2.5 pr-3">
-                        <Badge className={PARTNER_DEAL_STATUS_BADGE_CLASSES[deal.status]}>{PARTNER_DEAL_STATUS_LABELS[deal.status]}</Badge>
+                        <Badge className={PARTNER_DEAL_STATUS_BADGE_CLASSES[deal.status]}>{statusLabels[deal.status]}</Badge>
                       </td>
                     </tr>
                   ))}

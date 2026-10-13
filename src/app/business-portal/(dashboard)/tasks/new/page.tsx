@@ -4,12 +4,16 @@ import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody } from "@/components/ui/card";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { db } from "@/lib/db";
+import { getDirectoryLocale } from "@/lib/directory-locale";
+import { PORTAL_TASKS_STRINGS } from "@/lib/portal-tasks-i18n";
 
 export default async function NewPartnerTaskPage({
   searchParams,
 }: {
   searchParams: Promise<{ companyId?: string; contactId?: string; dealId?: string }>;
 }) {
+  const locale = await getDirectoryLocale();
+  const t = PORTAL_TASKS_STRINGS[locale];
   const user = await requireCompletePartnerProfile();
   const { companyId, contactId, dealId } = await searchParams;
   const [companies, contacts, deals] = await Promise.all([
@@ -28,7 +32,7 @@ export default async function NewPartnerTaskPage({
 
   return (
     <div>
-      <PageHeader breadcrumbs={[{ label: "Tasks", href: "/business-portal/tasks" }, { label: "New task" }]} title="New task" />
+      <PageHeader breadcrumbs={[{ label: t.tasksTitle, href: "/business-portal/tasks" }, { label: t.newTaskCta }]} title={t.newTaskCta} />
       <Card>
         <CardBody>
           <PartnerTaskForm
@@ -39,7 +43,8 @@ export default async function NewPartnerTaskPage({
             defaultCompanyId={companyId}
             defaultContactId={contactId}
             defaultDealId={dealId}
-            submitLabel="Create task"
+            locale={locale}
+            submitLabel={t.createTaskSubmitLabel}
           />
         </CardBody>
       </Card>

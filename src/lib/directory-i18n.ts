@@ -1,6 +1,13 @@
-import type { Industry } from "@/generated/prisma/client";
+import type { DirectoryLeadStatus, Industry, PartnerDealStatus, PartnerListingStatus } from "@/generated/prisma/client";
 import { BUSINESS_NAV_ITEMS } from "@/lib/business-nav-items";
-import { INDUSTRY_LABELS, VIDEO_CATEGORY_LABELS, type VideoCategory } from "@/lib/labels";
+import {
+  DIRECTORY_LEAD_STATUS_LABELS,
+  INDUSTRY_LABELS,
+  PARTNER_DEAL_STATUS_LABELS,
+  PARTNER_LISTING_STATUS_LABELS,
+  VIDEO_CATEGORY_LABELS,
+  type VideoCategory,
+} from "@/lib/labels";
 
 // Same three languages as the public /lead form (src/lib/lead-form-i18n.ts)
 // but kept as its own copy rather than shared — that file's locale type and
@@ -755,9 +762,9 @@ export type DirectoryStrings = {
   // matching whatever that page is called today.
   navTestimonialLinks: string;
   // The "My CRM" group heading BUSINESS_NAV_ITEMS attaches to its
-  // "Business Leads" entry (see PartnerSidebar/PartnerNavMenu's own
-  // `"heading" in item` rendering) — localizedBusinessNavItems below
-  // carries it through so DirectoryNavMenu can group the same way.
+  // "Business Leads" entry (see that item's own `heading` field) —
+  // localizedBusinessNavItems below carries it through so PartnerSidebar/
+  // PartnerNavMenu and DirectoryNavMenu all group the same way.
   navMyCrm: string;
   navBusinessLeads: string;
   navCompanies: string;
@@ -1013,7 +1020,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormPhotosUploading: "Uploading photo {done}/{total}…",
     testimonialFormPhotosTooMany: "Up to 4 photos per testimonial.",
     testimonialFormRewriteCta: "Rewrite with AI",
-    testimonialFormRewriteDescription: "Cleans up grammar and wording — keeps what you said, just easier to read.",
+    testimonialFormRewriteDescription: "Polishes the wording and ends on a clear recommendation — keeps what you said, just more engaging to read.",
     testimonialFormRewriting: "Rewriting…",
     testimonialFormSubmit: "Submit testimonial",
     testimonialFormSubmitting: "Submitting…",
@@ -1310,7 +1317,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormPhotosUploading: "正在上传照片 {done}/{total}…",
     testimonialFormPhotosTooMany: "每条评价最多可上传 4 张照片。",
     testimonialFormRewriteCta: "用 AI 润色",
-    testimonialFormRewriteDescription: "润色语法和措辞——保留您的原意，只是更易读。",
+    testimonialFormRewriteDescription: "润色措辞并以明确的推荐收尾——保留您的原意，只是读起来更吸引人。",
     testimonialFormRewriting: "润色中…",
     testimonialFormSubmit: "提交评价",
     testimonialFormSubmitting: "提交中…",
@@ -1609,7 +1616,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormPhotosUploading: "Memuat naik foto {done}/{total}…",
     testimonialFormPhotosTooMany: "Sehingga 4 foto setiap testimoni.",
     testimonialFormRewriteCta: "Tulis semula dengan AI",
-    testimonialFormRewriteDescription: "Membersihkan tatabahasa dan gaya bahasa — mengekalkan apa yang anda tulis, cuma lebih mudah dibaca.",
+    testimonialFormRewriteDescription: "Memperkemas gaya bahasa dan diakhiri dengan syor yang jelas — mengekalkan apa yang anda tulis, cuma lebih menarik dibaca.",
     testimonialFormRewriting: "Menulis semula…",
     testimonialFormSubmit: "Hantar testimoni",
     testimonialFormSubmitting: "Menghantar…",
@@ -1710,15 +1717,17 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
 };
 
 // BUSINESS_NAV_ITEMS (src/lib/business-nav-items.ts) gives the portal's own
-// English page names — right for PartnerNavMenu/PartnerSidebar, which live
-// outside the locale-prefixed directory tree, but wrong for that same list
-// rendered inside DirectoryNavMenu, which does live inside it and needs to
-// match whichever of the three languages that menu is already showing.
-// Zips those hrefs (unlocalized, and never shown directly) with the
-// translated labels above, in the same fixed order — including each item's
-// own `heading` (e.g. "Business Leads" starting the "My CRM" group), also
-// translated, so DirectoryNavMenu can group this list exactly the way
-// PartnerSidebar/PartnerNavMenu already do.
+// hrefs plus an English fallback label — used directly by PartnerNavMenu/
+// PartnerSidebar (the portal's own chrome, passing the signed-in partner's
+// own getDirectoryLocale()) and by DirectoryNavMenu, rendered inside the
+// locale-prefixed public directory tree and so needing to match whichever
+// of the three languages that menu is already showing. Zips those hrefs
+// (never shown directly) with the translated labels above, in the same
+// fixed order — including each item's own `heading` (e.g. "Business Leads"
+// starting the "My CRM" group), also translated, so all three menus group
+// this list the same way; a label this map hasn't been given yet for an
+// href falls back to BUSINESS_NAV_ITEMS' own English text rather than
+// rendering blank.
 export function localizedBusinessNavItems(locale: DirectoryLocale): { href: string; label: string; heading?: string }[] {
   const t = DIRECTORY_STRINGS[locale];
   const labels: Record<string, string> = {
@@ -1738,11 +1747,16 @@ export function localizedBusinessNavItems(locale: DirectoryLocale): { href: stri
     "/business-portal/tasks": t.navTasks,
     "/business-portal/profile": t.navProfile,
   };
-  const headings: Record<string, string> = { "My CRM": t.navMyCrm };
+  // Only BUSINESS_NAV_ITEMS' own "Business Leads" entry carries a heading
+  // (the one group-starting item — see that array's own comment); every
+  // other href simply has no entry here and so gets no heading below.
+  const headings: Record<string, string> = {
+    "/business-portal/business-leads": t.navMyCrm,
+  };
   return BUSINESS_NAV_ITEMS.map((item) => ({
     href: item.href,
     label: labels[item.href] ?? item.label,
-    heading: "heading" in item ? (headings[item.heading] ?? item.heading) : undefined,
+    ...("heading" in item ? { heading: headings[item.href] ?? item.heading } : {}),
   }));
 }
 
@@ -1822,5 +1836,67 @@ export const VIDEO_CATEGORY_LABELS_BY_LOCALE: Record<DirectoryLocale, Record<Vid
     PROMOTIONAL: "Promosi",
     EVENT: "Acara",
     OTHER: "Lain-lain",
+  },
+};
+
+// Same reasoning as INDUSTRY_LABELS_BY_LOCALE above: "en" reuses
+// PARTNER_LISTING_STATUS_LABELS (src/lib/labels.ts) directly. Used by the
+// business portal's My Business listings grid/detail pages.
+export const PARTNER_LISTING_STATUS_LABELS_BY_LOCALE: Record<DirectoryLocale, Record<PartnerListingStatus, string>> = {
+  en: PARTNER_LISTING_STATUS_LABELS,
+  zh: {
+    DRAFT: "草稿",
+    PENDING_REVIEW: "审核中",
+    PUBLISHED: "已发布",
+    REJECTED: "需修改",
+  },
+  ms: {
+    DRAFT: "Draf",
+    PENDING_REVIEW: "Menunggu Semakan",
+    PUBLISHED: "Diterbitkan",
+    REJECTED: "Perubahan Diperlukan",
+  },
+};
+
+// Same reasoning again: "en" reuses PARTNER_DEAL_STATUS_LABELS directly.
+// Used by the business portal's Deals CRM module (board columns, status
+// pickers, deal detail pages).
+export const PARTNER_DEAL_STATUS_LABELS_BY_LOCALE: Record<DirectoryLocale, Record<PartnerDealStatus, string>> = {
+  en: PARTNER_DEAL_STATUS_LABELS,
+  zh: {
+    NEW: "新增/潜在客户",
+    CONTACTED: "已联系/资格确认中",
+    DISCOVERY: "需求了解/已安排会议",
+    PROPOSAL: "提案/报价已发送",
+    NEGOTIATION: "谈判/审核中",
+    CLOSED_WON: "成交",
+    CLOSED_LOST: "已流失",
+  },
+  ms: {
+    NEW: "Baharu / Lead Masuk",
+    CONTACTED: "Dihubungi / Kelayakan",
+    DISCOVERY: "Penerokaan / Mesyuarat Dijadualkan",
+    PROPOSAL: "Cadangan / Sebut Harga Dihantar",
+    NEGOTIATION: "Rundingan / Dalam Semakan",
+    CLOSED_WON: "Ditutup - Menang",
+    CLOSED_LOST: "Ditutup - Kalah",
+  },
+};
+
+// Same reasoning again: "en" reuses DIRECTORY_LEAD_STATUS_LABELS directly.
+// Used by the business portal's Business Leads inbox and its status picker.
+export const DIRECTORY_LEAD_STATUS_LABELS_BY_LOCALE: Record<DirectoryLocale, Record<DirectoryLeadStatus, string>> = {
+  en: DIRECTORY_LEAD_STATUS_LABELS,
+  zh: {
+    NEW: "新线索",
+    PICKED_UP: "已认领",
+    CONTACTED: "已联系",
+    CLOSED_CONVERTED: "已完成 - 转为交易",
+  },
+  ms: {
+    NEW: "Baharu",
+    PICKED_UP: "Diambil",
+    CONTACTED: "Dihubungi",
+    CLOSED_CONVERTED: "Ditutup - Ditukar kepada Deal",
   },
 };

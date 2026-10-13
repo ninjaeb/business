@@ -3,12 +3,15 @@ import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { listPartnerListings, servicesFromJson } from "@/lib/directory";
 import { getOwnedTestimonialRequestLink } from "@/lib/testimonial-request-links";
 import { updateTestimonialRequestLink } from "@/app/actions/testimonial-request-links";
+import { getDirectoryLocale } from "@/lib/directory-locale";
+import { getPortalTestimonialsStrings } from "@/lib/portal-testimonials-i18n";
 import { TestimonialRequestLinkForm } from "@/components/business-crm/testimonial-request-link-form";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody } from "@/components/ui/card";
 
 export default async function EditTestimonialRequestLinkPage({ params }: { params: Promise<{ id: string }> }) {
-  const user = await requireCompletePartnerProfile();
+  const [user, locale] = await Promise.all([requireCompletePartnerProfile(), getDirectoryLocale()]);
+  const t = getPortalTestimonialsStrings(locale);
   const { id } = await params;
   const [link, listings] = await Promise.all([getOwnedTestimonialRequestLink(id, user.id), listPartnerListings(user.id)]);
   if (!link) notFound();
@@ -24,14 +27,15 @@ export default async function EditTestimonialRequestLinkPage({ params }: { param
   return (
     <div>
       <PageHeader
-        breadcrumbs={[{ label: "Request Testimonial", href: "/business-portal/testimonial-links" }, { label: "Edit" }]}
-        title="Edit Testimonial Request"
+        breadcrumbs={[{ label: t.newBreadcrumbParent, href: "/business-portal/testimonial-links" }, { label: t.editBreadcrumbCurrent }]}
+        title={t.editPageTitle}
       />
       <Card>
         <CardBody>
           <TestimonialRequestLinkForm
             action={updateTestimonialRequestLink.bind(null, link.id)}
             listings={listingOptions}
+            locale={locale}
             initialValues={{
               listingId: link.listingId,
               customerName: link.customerName ?? "",
@@ -45,8 +49,8 @@ export default async function EditTestimonialRequestLinkPage({ params }: { param
                 : [],
               note: link.note ?? "",
             }}
-            submitLabel="Save changes"
-            pendingLabel="Saving…"
+            submitLabel={t.saveChangesCta}
+            pendingLabel={t.savingCta}
           />
         </CardBody>
       </Card>

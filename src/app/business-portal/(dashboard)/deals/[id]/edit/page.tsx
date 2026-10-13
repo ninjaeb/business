@@ -6,9 +6,13 @@ import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody } from "@/components/ui/card";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
 import { DEFAULT_PARTNER_CURRENCY } from "@/lib/format";
+import { getDirectoryLocale } from "@/lib/directory-locale";
+import { PORTAL_DEALS_STRINGS, formatEditDealTitle } from "@/lib/portal-deals-i18n";
 
 export default async function EditPartnerDealPage({ params }: { params: Promise<{ id: string }> }) {
   const user = await requireCompletePartnerProfile();
+  const locale = await getDirectoryLocale();
+  const t = PORTAL_DEALS_STRINGS[locale];
   const { id } = await params;
   const currency = user.currency ?? DEFAULT_PARTNER_CURRENCY;
   const [deal, companies, contacts] = await Promise.all([
@@ -26,11 +30,11 @@ export default async function EditPartnerDealPage({ params }: { params: Promise<
     <div>
       <PageHeader
         breadcrumbs={[
-          { label: "Deals", href: "/business-portal/deals" },
+          { label: t.pageTitle, href: "/business-portal/deals" },
           { label: deal.title, href: `/business-portal/deals/${deal.id}` },
-          { label: "Edit" },
+          { label: t.editLabel },
         ]}
-        title={`Edit ${deal.title}`}
+        title={formatEditDealTitle(deal.title, locale)}
       />
       <Card>
         <CardBody>
@@ -40,6 +44,7 @@ export default async function EditPartnerDealPage({ params }: { params: Promise<
             companies={companies}
             contacts={contacts}
             currency={currency}
+            locale={locale}
           />
         </CardBody>
       </Card>

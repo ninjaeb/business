@@ -5,6 +5,8 @@ import { Search } from "lucide-react";
 import type { BusinessPartnerRequestFormState } from "@/app/actions/business-partners";
 import { searchBusinessPartners } from "@/app/actions/business-partners";
 import type { BusinessPartnerSearchResult } from "@/lib/business-partners";
+import type { DirectoryLocale } from "@/lib/directory-i18n";
+import { PORTAL_BUSINESS_PARTNERS_STRINGS } from "@/lib/portal-business-partners-i18n";
 import { Button } from "@/components/ui/button";
 import { FieldGroup, Input, Select } from "@/components/ui/field";
 import { ListingLogo } from "@/components/directory/listing-logo";
@@ -15,10 +17,13 @@ const MIN_QUERY_LENGTH = 2;
 export function BusinessPartnerRequestForm({
   action,
   listings,
+  locale,
 }: {
   action: (prevState: BusinessPartnerRequestFormState, formData: FormData) => Promise<BusinessPartnerRequestFormState>;
   listings: { id: string; companyName: string }[];
+  locale: DirectoryLocale;
 }) {
+  const t = PORTAL_BUSINESS_PARTNERS_STRINGS[locale];
   const [state, formAction, pending] = useActionState(action, undefined);
   const [listingId, setListingId] = useState(listings[0]?.id);
   const [query, setQuery] = useState("");
@@ -62,7 +67,7 @@ export function BusinessPartnerRequestForm({
   return (
     <form action={formAction} className="space-y-4">
       {listings.length > 1 && (
-        <FieldGroup label="Your listing" htmlFor="listingId" required>
+        <FieldGroup label={t.requestFormYourListingLabel} htmlFor="listingId" required>
           <Select
             id="listingId"
             name="listingId"
@@ -83,7 +88,7 @@ export function BusinessPartnerRequestForm({
       )}
       {listings.length === 1 && <input type="hidden" name="listingId" value={listings[0]?.id} />}
 
-      <FieldGroup label="Business to connect with" htmlFor="business-search" required>
+      <FieldGroup label={t.requestFormBusinessLabel} htmlFor="business-search" required>
         <div className="relative">
           <Search className="pointer-events-none absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-slate-400" />
           <Input
@@ -93,18 +98,16 @@ export function BusinessPartnerRequestForm({
               setSelected(null);
               setQuery(event.target.value);
             }}
-            placeholder="Search by company name"
+            placeholder={t.requestFormSearchPlaceholder}
             autoComplete="off"
             className="pl-9"
           />
         </div>
         <input type="hidden" name="targetListingId" value={selected?.id ?? ""} />
 
-        {searching && <p className="mt-2 text-sm text-slate-400">Searching…</p>}
+        {searching && <p className="mt-2 text-sm text-slate-400">{t.requestFormSearching}</p>}
         {!searching && results && results.length === 0 && (
-          <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
-            No matches — only businesses already live on the directory can be found here.
-          </p>
+          <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">{t.requestFormNoMatches}</p>
         )}
         {!selected && results && results.length > 0 && (
           <ul className="mt-2 divide-y divide-slate-200 overflow-hidden rounded-md border border-slate-200 dark:divide-neutral-800 dark:border-neutral-800">
@@ -133,7 +136,7 @@ export function BusinessPartnerRequestForm({
       {state?.error && <p className="text-sm text-rose-600 dark:text-rose-400">{state.error}</p>}
 
       <Button type="submit" disabled={pending || !selected}>
-        {pending ? "Sending request…" : "Send request"}
+        {pending ? t.requestFormSendingRequest : t.requestFormSendRequest}
       </Button>
     </form>
   );

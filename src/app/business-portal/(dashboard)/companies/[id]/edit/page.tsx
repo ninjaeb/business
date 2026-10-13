@@ -5,9 +5,12 @@ import { PartnerCompanyForm } from "@/components/business-crm/partner-company-fo
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody } from "@/components/ui/card";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
+import { getDirectoryLocale } from "@/lib/directory-locale";
+import { formatEditCompanyTitle, getPortalCompaniesStrings } from "@/lib/portal-companies-i18n";
 
 export default async function EditPartnerCompanyPage({ params }: { params: Promise<{ id: string }> }) {
-  const user = await requireCompletePartnerProfile();
+  const [user, locale] = await Promise.all([requireCompletePartnerProfile(), getDirectoryLocale()]);
+  const t = getPortalCompaniesStrings(locale);
   const { id } = await params;
   const company = await db.partnerCompany.findFirst({ where: { id, partnerId: user.id } });
   if (!company) notFound();
@@ -16,15 +19,15 @@ export default async function EditPartnerCompanyPage({ params }: { params: Promi
     <div>
       <PageHeader
         breadcrumbs={[
-          { label: "Companies", href: "/business-portal/companies" },
+          { label: t.companiesTitle, href: "/business-portal/companies" },
           { label: company.name, href: `/business-portal/companies/${company.id}` },
-          { label: "Edit" },
+          { label: t.editBreadcrumb },
         ]}
-        title={`Edit ${company.name}`}
+        title={formatEditCompanyTitle(t.editCompanyTitleTemplate, company.name)}
       />
       <Card>
         <CardBody>
-          <PartnerCompanyForm action={updatePartnerCompany.bind(null, company.id)} company={company} />
+          <PartnerCompanyForm action={updatePartnerCompany.bind(null, company.id)} company={company} locale={locale} />
         </CardBody>
       </Card>
     </div>

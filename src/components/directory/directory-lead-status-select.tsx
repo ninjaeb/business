@@ -4,7 +4,8 @@ import { useTransition } from "react";
 import { convertDirectoryLeadToDeal, updateDirectoryLeadStatus } from "@/app/actions/directory";
 import type { DirectoryLeadStatus } from "@/generated/prisma/client";
 import { Select } from "@/components/ui/field";
-import { DIRECTORY_LEAD_STATUS_LABELS } from "@/lib/labels";
+import { DIRECTORY_LEAD_STATUS_LABELS_BY_LOCALE, type DirectoryLocale } from "@/lib/directory-i18n";
+import { PORTAL_LEADS_STRINGS } from "@/lib/portal-leads-i18n";
 import { cn } from "@/lib/utils";
 
 // Not a real DirectoryLeadStatus — picking it never gets written to the
@@ -20,13 +21,17 @@ const QUALIFY_AS_DEAL_ACTION = "QUALIFY_AS_DEAL";
 export function DirectoryLeadStatusSelect({
   leadId,
   status,
+  locale,
   className,
 }: {
   leadId: string;
   status: DirectoryLeadStatus;
+  locale: DirectoryLocale;
   className?: string;
 }) {
   const [pending, startTransition] = useTransition();
+  const statusLabels = DIRECTORY_LEAD_STATUS_LABELS_BY_LOCALE[locale];
+  const t = PORTAL_LEADS_STRINGS[locale];
 
   return (
     <Select
@@ -46,11 +51,11 @@ export function DirectoryLeadStatusSelect({
       }}
       className={cn("w-auto", className)}
     >
-      <option value="NEW">{DIRECTORY_LEAD_STATUS_LABELS.NEW}</option>
-      <option value="PICKED_UP">{DIRECTORY_LEAD_STATUS_LABELS.PICKED_UP}</option>
-      <option value="CONTACTED">{DIRECTORY_LEAD_STATUS_LABELS.CONTACTED}</option>
-      <option value={QUALIFY_AS_DEAL_ACTION}>Qualified Deal</option>
-      <option value="CLOSED_CONVERTED">{DIRECTORY_LEAD_STATUS_LABELS.CLOSED_CONVERTED}</option>
+      <option value="NEW">{statusLabels.NEW}</option>
+      <option value="PICKED_UP">{statusLabels.PICKED_UP}</option>
+      <option value="CONTACTED">{statusLabels.CONTACTED}</option>
+      <option value={QUALIFY_AS_DEAL_ACTION}>{t.qualifiedDealOption}</option>
+      <option value="CLOSED_CONVERTED">{statusLabels.CLOSED_CONVERTED}</option>
     </Select>
   );
 }
