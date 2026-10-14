@@ -80,6 +80,7 @@ export function TestimonialForm({
   locale,
   aiAvailable,
   googleReviewUrl,
+  serviceTitles,
   visitorName,
   onLogout,
 }: {
@@ -90,6 +91,9 @@ export function TestimonialForm({
   // PartnerListing.googleReviewUrl's own comment) — the "Leave it on Google
   // too" step is simply skipped in that case, not shown disabled.
   googleReviewUrl: string | null;
+  // Titles of the business's published products/services — offered as chips
+  // so the visitor can say which one they used (see handleSuggestIdeas).
+  serviceTitles: string[];
   visitorName: string;
   // Flips WriteTestimonialButton back to the sign-in step — this form
   // doesn't clear the session itself (see the "Not you? Log out" button
@@ -106,6 +110,7 @@ export function TestimonialForm({
   const [body, setBody] = useState("");
   const [rewriting, startRewrite] = useTransition();
   const [ideas, setIdeas] = useState<string[] | null>(null);
+  const [selectedServices, setSelectedServices] = useState<string[]>([]);
   const [suggesting, startSuggest] = useTransition();
 
   function clearMissing(field: MissingField) {
@@ -167,7 +172,10 @@ export function TestimonialForm({
   function handleSuggestIdeas() {
     setAiError(null);
     startSuggest(async () => {
-      const result = await suggestTestimonialIdeasWithAi(slug, locale);
+      // One service: that's necessarily what they used. Several: only what
+      // they ticked — none ticked means "don't know", so the whole catalogue.
+      const services = serviceTitles.length === 1 ? serviceTitles : selectedServices;
+      const result = await suggestTestimonialIdeasWithAi(slug, locale, { services });
       if (result.status === "ok") {
         setIdeas(result.data.ideas);
       } else {
@@ -364,6 +372,35 @@ export function TestimonialForm({
           <p className="mt-1.5 text-slate-500 dark:text-slate-400">{t.testimonialFormGuideTip}</p>
           {aiAvailable && (
             <div className="mt-2 border-t border-slate-200 pt-2 dark:border-neutral-700">
+              {serviceTitles.length > 1 && (
+                <div className="mb-2">
+                  <p className="mb-1 text-slate-500 dark:text-slate-400">{t.testimonialFormServicesLabel}</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {serviceTitles.map((title) => {
+                      const on = selectedServices.includes(title);
+                      return (
+                        <button
+                          key={title}
+                          type="button"
+                          aria-pressed={on}
+                          onClick={() => {
+                            setSelectedServices((prev) => (on ? prev.filter((item) => item !== title) : [...prev, title]));
+                            // Whatever was suggested was for the previous picks.
+                            setIdeas(null);
+                          }}
+                          className={
+                            on
+                              ? "rounded-full border border-petrol bg-led-soft px-2.5 py-1 text-xs font-medium text-petrol-ink dark:border-petrol-light dark:bg-led-soft-dark dark:text-petrol-light"
+                              : "rounded-full border border-slate-200 bg-white px-2.5 py-1 text-xs text-slate-600 hover:border-petrol/40 dark:border-neutral-700 dark:bg-neutral-900 dark:text-slate-300"
+                          }
+                        >
+                          {title}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
               <button
                 type="button"
                 onClick={handleSuggestIdeas}

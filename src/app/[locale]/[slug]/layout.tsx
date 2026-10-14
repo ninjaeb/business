@@ -752,6 +752,7 @@ export default async function ListingLayout({
               locale={resolved}
               aiAvailable={isAiConfigured()}
               googleReviewUrl={googleReviewDestination(listing)}
+              serviceTitles={listing.services.map((service) => service.title)}
               googleClientId={getPublicGoogleClientId()}
               visitor={testimonialVisitor ? { name: testimonialVisitor.name } : null}
               existingTestimonial={existingTestimonial}
@@ -791,6 +792,7 @@ export default async function ListingLayout({
             locale={resolved}
             aiAvailable={isAiConfigured()}
             googleReviewUrl={googleReviewDestination(listing)}
+              serviceTitles={listing.services.map((service) => service.title)}
             googleClientId={getPublicGoogleClientId()}
             visitor={testimonialVisitor ? { name: testimonialVisitor.name } : null}
             existingTestimonial={existingTestimonial}

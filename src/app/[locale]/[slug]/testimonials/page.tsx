@@ -99,6 +99,7 @@ export default async function TestimonialsPage({
               locale={resolved}
               aiAvailable={isAiConfigured()}
               googleReviewUrl={googleReviewDestination(listing)}
+              serviceTitles={listing.services.map((service) => service.title)}
               googleClientId={getPublicGoogleClientId()}
               visitor={visitor ? { name: visitor.name } : null}
               existingTestimonial={existingTestimonial}

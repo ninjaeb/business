@@ -700,6 +700,13 @@ export type DirectoryStrings = {
   testimonialFormIdeasCta: string;
   testimonialFormIdeasLoading: string;
   testimonialFormIdeasHint: string;
+  // Under "Suggest a ready-to-use testimonial" on a Request Testimonial link:
+  // names the service the ideas are based on ({service}, via
+  // formatTestimonialServiceTag), so it's clear they're not generic.
+  testimonialFormIdeasBasedOn: string;
+  // The on-listing form's optional chips above that same button — which of the
+  // business's services the visitor used, so suggestions stay on those.
+  testimonialFormServicesLabel: string;
   // The optional photo picker under the body field (see uploadTestimonialPhoto
   // in src/app/actions/testimonials.ts) — testimonialFormPhotosUploading has
   // a {done}/{total} token, filled in via formatTestimonialPhotosUploading.
@@ -1048,6 +1055,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormIdeasCta: "Suggest a ready-to-use testimonial",
     testimonialFormIdeasLoading: "Writing suggestions…",
     testimonialFormIdeasHint: "Tap one to use it, then make it yours — add the challenge you actually had and the real result you saw.",
+    testimonialFormIdeasBasedOn: "Based on: {service}",
+    testimonialFormServicesLabel: "Which service did you use? (optional — suggestions will focus on it)",
     testimonialFormPhotosLabel: "Photos (optional)",
     testimonialFormPhotosCta: "Add photos",
     testimonialFormPhotosUploading: "Uploading photo {done}/{total}…",
@@ -1353,6 +1362,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormIdeasCta: "为我推荐一段可直接使用的评价",
     testimonialFormIdeasLoading: "正在撰写建议…",
     testimonialFormIdeasHint: "点击一段即可使用，然后改成您自己的——补上您当时真正遇到的难题，以及实际看到的成果。",
+    testimonialFormIdeasBasedOn: "依据：{service}",
+    testimonialFormServicesLabel: "您使用了哪项服务？（选填——建议将围绕它撰写）",
     testimonialFormPhotosLabel: "照片（可选）",
     testimonialFormPhotosCta: "添加照片",
     testimonialFormPhotosUploading: "正在上传照片 {done}/{total}…",
@@ -1660,6 +1671,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormIdeasCta: "Cadangkan testimoni sedia guna",
     testimonialFormIdeasLoading: "Sedang menulis cadangan…",
     testimonialFormIdeasHint: "Ketik satu untuk menggunakannya, kemudian jadikan milik anda — tambah cabaran sebenar yang anda hadapi dan hasil sebenar yang anda lihat.",
+    testimonialFormIdeasBasedOn: "Berdasarkan: {service}",
+    testimonialFormServicesLabel: "Perkhidmatan mana yang anda gunakan? (pilihan — cadangan akan tertumpu padanya)",
     testimonialFormPhotosLabel: "Foto (pilihan)",
     testimonialFormPhotosCta: "Tambah foto",
     testimonialFormPhotosUploading: "Memuat naik foto {done}/{total}…",

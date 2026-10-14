@@ -45,6 +45,7 @@ export function WriteTestimonialButton({
   locale,
   aiAvailable,
   googleReviewUrl,
+  serviceTitles,
   googleClientId,
   visitor,
   existingTestimonial,
@@ -56,6 +57,9 @@ export function WriteTestimonialButton({
   locale: DirectoryLocale;
   aiAvailable: boolean;
   googleReviewUrl: string | null;
+  // Every published service's title — forwarded to TestimonialForm's optional
+  // "which service did you use?" chips.
+  serviceTitles: string[];
   // Null when Google sign-in isn't configured — forwarded straight to
   // TestimonialAuthForm, which hides its "Continue with Google" button in
   // that case (see getPublicGoogleClientId).
@@ -180,6 +184,7 @@ export function WriteTestimonialButton({
                   locale={locale}
                   aiAvailable={aiAvailable}
                   googleReviewUrl={googleReviewUrl}
+                  serviceTitles={serviceTitles}
                   visitorName={localVisitor.name}
                   onLogout={() => setLocalVisitor(null)}
                 />

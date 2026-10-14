@@ -7,6 +7,7 @@ import { db } from "@/lib/db";
 import { getPublishedListingBySlug } from "@/lib/directory";
 import { requirePartnerAction, requireTestimonialAuthorAction } from "@/lib/auth/dal";
 import { getTestimonialRequestLinkForForm } from "@/lib/testimonial-request-links";
+import { buildTestimonialIdeasContext, hasFocus, type TestimonialIdeasFocus } from "@/lib/testimonial-ai-context";
 import { isRateLimited, isSuspiciouslyFast } from "@/lib/lead-spam-guard";
 import { firstHopValue } from "@/lib/site-url";
 import { revalidateDirectory } from "@/lib/directory-revalidate";
@@ -381,7 +382,7 @@ const TestimonialIdeasSchema = z.object({
 });
 
 const TESTIMONIAL_IDEAS_SYSTEM_PROMPT =
-  `You write short, ready-to-use testimonials a customer can pick and submit for a local business. ${TESTIMONIAL_STORY_STRUCTURE} Write each in the first person, as the customer, in 2-3 sentences (about 40-60 words, so all of them generate quickly), following that four-part story, compressed: open with a plausible, general challenge the named product/service exists to solve, say how that specific product/service handled it, describe the improvement, and close with a plain recommendation. Base every testimonial only on the business's own real products/services given to you below; never invent a product, service, price, or named staff that isn't listed there. Because you don't know this customer's real outcome, keep the result part qualitative and leave a natural opening for them to add their own figure (e.g. 'within a few weeks we were getting noticeably more enquiries' rather than a made-up percentage) — never invent numbers, dates, or timeframes. Each testimonial must take a clearly different angle (a different product/service, or a different kind of result: time saved, sales, reliability, peace of mind) so the customer can pick the one closest to their own experience. Plain, warm, conversational wording — no superlatives like 'best ever', no exclamation marks, no emoji. Respond in the requested language.`;
+  `You write short, ready-to-use testimonials a customer can pick and submit for a local business. ${TESTIMONIAL_STORY_STRUCTURE} Write each in the first person, as the customer, in 2-3 sentences (about 40-60 words, so all of them generate quickly), following that four-part story, compressed: open with a plausible, general challenge the named product/service exists to solve, say how that specific product/service handled it, describe the improvement, and close with a plain recommendation. If the context says the customer used specific product(s)/service(s), EVERY testimonial must be about only those — never mention any other thing the business offers, and take the different angles from different kinds of result (time saved, sales, reliability, peace of mind, support) rather than from different services. Otherwise, base every testimonial only on the business's own real products/services given to you below; never invent a product, service, price, or named staff that isn't listed there. Because you don't know this customer's real outcome, keep the result part qualitative and leave a natural opening for them to add their own figure (e.g. 'within a few weeks we were getting noticeably more enquiries' rather than a made-up percentage) — never invent numbers, dates, or timeframes. Each testimonial must take a clearly different angle (a different product/service, or a different kind of result: time saved, sales, reliability, peace of mind) so the customer can pick the one closest to their own experience. Plain, warm, conversational wording — no superlatives like 'best ever', no exclamation marks, no emoji. Respond in the requested language.`;
 
 // Deliberately NOT partner-gated, same as rewriteTestimonialWithAi above —
 // the public testimonial form's own button, available before the visitor
@@ -393,7 +394,17 @@ const TESTIMONIAL_IDEAS_SYSTEM_PROMPT =
 // from and edits (see TestimonialForm's own suggestions UI) — the model is
 // held to general claims a typical satisfied customer could honestly make,
 // never specific figures, dates, or people it has no way of knowing.
-export async function suggestTestimonialIdeasWithAi(slug: string, locale: string): Promise<AiResult<{ ideas: string[] }>> {
+export async function suggestTestimonialIdeasWithAi(
+  slug: string,
+  locale: string,
+  // What this customer actually used, if known — see testimonial-ai-context.ts.
+  // `token` is a Request Testimonial link: the service is read from the
+  // link itself on the server (set by the business owner), never taken from
+  // the browser, so a customer can't steer suggestions toward something the
+  // owner didn't ask about. `services` is the on-listing form's optional
+  // "which service did you use?" picks.
+  focus?: { token?: string; services?: string[] },
+): Promise<AiResult<{ ideas: string[] }>> {
   if (!isAiConfigured()) return AI_NOT_CONFIGURED;
 
   const headersList = await headers();
@@ -405,22 +416,25 @@ export async function suggestTestimonialIdeasWithAi(slug: string, locale: string
   if (!listing) {
     return { status: "error", message: "Listing not found." };
   }
-  if (listing.services.length === 0 && !listing.tagline && !listing.description) {
+
+  const resolvedFocus: TestimonialIdeasFocus = {};
+  if (focus?.token) {
+    const request = await getTestimonialRequestLinkForForm(String(focus.token));
+    if (request && request.listing.slug === slug) resolvedFocus.requestServiceTitle = request.serviceTitle;
+  }
+  if (Array.isArray(focus?.services)) {
+    resolvedFocus.selectedTitles = focus.services
+      .filter((title): title is string => typeof title === "string")
+      .map((title) => title.trim().slice(0, 100))
+      .filter(Boolean)
+      .slice(0, 5);
+  }
+
+  if (!hasFocus(resolvedFocus) && listing.services.length === 0 && !listing.tagline && !listing.description) {
     return { status: "error", message: "This business hasn't added enough detail yet to suggest ideas from." };
   }
 
-  const context = [
-    `Business: ${listing.companyName}`,
-    listing.tagline ? `Tagline: ${listing.tagline}` : null,
-    listing.description ? `About: ${listing.description}` : null,
-    listing.services.length > 0
-      ? `Products/services:\n${listing.services.map((service) => `- ${service.title}${service.description ? `: ${service.description}` : ""}`).join("\n")}`
-      : null,
-    `Respond in this language: ${locale}`,
-  ]
-    .filter(Boolean)
-    .join("\n\n");
-
+  const context = buildTestimonialIdeasContext(listing, locale, resolvedFocus);
   return callAi(TestimonialIdeasSchema, TESTIMONIAL_IDEAS_SYSTEM_PROMPT, context, { ...TESTIMONIAL_AI_OPTIONS, maxTokens: 1500 });
 }
 

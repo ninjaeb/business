@@ -20,6 +20,7 @@ import {
   formatStandaloneTestimonialHeading,
   formatTestimonialPhotosUploading,
   formatTestimonialRequestContext,
+  formatTestimonialServiceTag,
   type DirectoryLocale,
 } from "@/lib/directory-i18n";
 
@@ -166,7 +167,7 @@ export function StandaloneTestimonialForm({
   function handleSuggestIdeas() {
     setAiError(null);
     startSuggest(async () => {
-      const result = await suggestTestimonialIdeasWithAi(slug, locale);
+      const result = await suggestTestimonialIdeasWithAi(slug, locale, { token });
       if (result.status === "ok") {
         setIdeas(result.data.ideas);
       } else {
@@ -366,6 +367,11 @@ export function StandaloneTestimonialForm({
                   <Lightbulb className="h-3.5 w-3.5" />
                   {suggesting ? t.testimonialFormIdeasLoading : t.testimonialFormIdeasCta}
                 </button>
+                {serviceTitle && (
+                  <p className="mt-1 text-slate-500 dark:text-slate-400">
+                    {formatTestimonialServiceTag(t.testimonialFormIdeasBasedOn, serviceTitle)}
+                  </p>
+                )}
                 {ideas && ideas.length > 0 && (
                   <div className="mt-2 space-y-1.5">
                     <p className="text-slate-500 dark:text-slate-400">{t.testimonialFormIdeasHint}</p>
