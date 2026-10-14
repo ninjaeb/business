@@ -1,3 +1,4 @@
+import { cache } from "react";
 import { db } from "@/lib/db";
 
 // The business-portal's own list of links a partner has generated (see
@@ -33,14 +34,14 @@ export async function getOwnedTestimonialRequestLink(id: string, partnerId: stri
 // selection, since both the page (logo/name/locale-aware display) and
 // notifyPartnerOfNewTestimonial (partnerId, companyName) need different
 // slices of it.
-export async function getTestimonialRequestLinkForForm(id: string) {
+export const getTestimonialRequestLinkForForm = cache(async (id: string) => {
   const request = await db.testimonialRequestLink.findFirst({
     where: { id, usedAt: null },
     include: { listing: true },
   });
   if (!request || !request.listing.publishedSnapshot) return null;
   return request;
-}
+});
 
 // Built fresh by the list page / copy-link button, not stored — the token
 // is just the row's own id (see TestimonialRequestLink's own comment on

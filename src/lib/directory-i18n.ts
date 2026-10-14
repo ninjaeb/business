@@ -601,6 +601,17 @@ export type DirectoryStrings = {
   // testimonialPositionLabel above rather than duplicating them.
   standaloneTestimonialHeading: string;
   standaloneTestimonialIntro: string;
+  // The request link's own <meta description> / link-preview text (see
+  // generateMetadata in src/app/[locale]/review/[token]/page.tsx) — {company}
+  // filled in with formatStandaloneTestimonialHeading, same token as the
+  // heading above. Persuasive and specific ("no account, under a minute")
+  // since it's what a customer reads in WhatsApp/Facebook before deciding to
+  // tap a link a business sent them.
+  standaloneTestimonialMetaDescription: string;
+  // Short line under the headline on that link's share image — kept separate
+  // from the page's own intro text since the image has room for roughly one
+  // line, not a sentence.
+  standaloneTestimonialShareTagline: string;
   // Shown instead of the form itself when the link's own token doesn't
   // resolve to a real, still-unused request against a published listing —
   // a used/expired/invalid link is a normal, expected state here, not an
@@ -968,6 +979,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialServiceTag: "Re: {service}",
     standaloneTestimonialHeading: "Share your experience with {company}",
     standaloneTestimonialIntro: "Your feedback helps other visitors decide, and takes less than a minute.",
+    standaloneTestimonialMetaDescription: "Leave a quick testimonial for {company}. No account needed — it takes less than a minute and helps other customers decide.",
+    standaloneTestimonialShareTagline: "Takes less than a minute · No account needed",
     standaloneTestimonialInvalidTitle: "This link isn't available",
     standaloneTestimonialInvalidDescription:
       "This review link may have already been used, or is no longer valid. If you think this is a mistake, please contact the business directly.",
@@ -1273,6 +1286,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialServiceTag: "关于：{service}",
     standaloneTestimonialHeading: "分享您对{company}的体验",
     standaloneTestimonialIntro: "您的反馈能帮助其他访客做决定，只需不到一分钟。",
+    standaloneTestimonialMetaDescription: "为{company}留下一段简短评价。无需注册账号，不到一分钟即可完成，也能帮助其他客户做决定。",
+    standaloneTestimonialShareTagline: "不到一分钟 · 无需注册账号",
     standaloneTestimonialInvalidTitle: "此链接不可用",
     standaloneTestimonialInvalidDescription: "此评价链接可能已被使用，或已失效。如果您认为这是错误，请直接联系该企业。",
     testimonialsCopyLinkLabel: "复制链接",
@@ -1574,6 +1589,8 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialServiceTag: "Berkaitan: {service}",
     standaloneTestimonialHeading: "Kongsikan pengalaman anda dengan {company}",
     standaloneTestimonialIntro: "Maklum balas anda membantu pelawat lain membuat keputusan, dan mengambil masa kurang seminit.",
+    standaloneTestimonialMetaDescription: "Tinggalkan testimoni ringkas untuk {company}. Tanpa akaun — kurang seminit dan membantu pelanggan lain membuat keputusan.",
+    standaloneTestimonialShareTagline: "Kurang seminit · Tanpa akaun",
     standaloneTestimonialInvalidTitle: "Pautan ini tidak tersedia",
     standaloneTestimonialInvalidDescription:
       "Pautan ulasan ini mungkin sudah digunakan, atau tidak lagi sah. Jika anda rasa ini satu kesilapan, sila hubungi perniagaan ini secara terus.",
