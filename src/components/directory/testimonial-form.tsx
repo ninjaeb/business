@@ -475,6 +475,7 @@ export function TestimonialForm({
       >
         {pending ? t.testimonialFormSubmitting : t.testimonialFormSubmit}
       </Button>
+      {googleReviewUrl && <p className="text-center text-xs text-slate-500 dark:text-slate-400">{t.testimonialGoogleFormHint}</p>}
     </form>
   );
 }

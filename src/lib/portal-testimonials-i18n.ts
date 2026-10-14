@@ -50,6 +50,10 @@ export type PortalTestimonialsStrings = {
   editCta: string;
   deleteCta: string;
   deleteConfirm: string;
+  // The moderation page\'s own delete button (reuses deleteCta for its label)
+  // — worded for a testimonial, unlike deleteConfirm above, which is for a
+  // request link.
+  deleteTestimonialConfirm: string;
 
   // testimonial-links/new/page.tsx
   newBreadcrumbParent: string;
@@ -124,6 +128,7 @@ export const PORTAL_TESTIMONIALS_STRINGS: Record<DirectoryLocale, PortalTestimon
     editCta: "Edit",
     deleteCta: "Delete",
     deleteConfirm: "Delete this testimonial request? This can't be undone.",
+    deleteTestimonialConfirm: "Delete this testimonial permanently? If it is published, it will disappear from your listing. This can't be undone.",
     newBreadcrumbParent: "Request Testimonial",
     newBreadcrumbCurrent: "New request",
     newPageTitle: "New Testimonial Request",
@@ -188,6 +193,7 @@ export const PORTAL_TESTIMONIALS_STRINGS: Record<DirectoryLocale, PortalTestimon
     editCta: "编辑",
     deleteCta: "删除",
     deleteConfirm: "删除此评价请求？此操作无法撤销。",
+    deleteTestimonialConfirm: "永久删除这条评价？如果它已发布，将从您的列表中消失。此操作无法撤销。",
     newBreadcrumbParent: "请求评价",
     newBreadcrumbCurrent: "新建请求",
     newPageTitle: "新建评价请求",
@@ -252,6 +258,7 @@ export const PORTAL_TESTIMONIALS_STRINGS: Record<DirectoryLocale, PortalTestimon
     editCta: "Sunting",
     deleteCta: "Padam",
     deleteConfirm: "Padam permintaan testimoni ini? Tindakan ini tidak boleh dibuat asal.",
+    deleteTestimonialConfirm: "Padam testimoni ini secara kekal? Jika ia telah diterbitkan, ia akan hilang daripada senarai anda. Tindakan ini tidak boleh dibuat asal.",
     newBreadcrumbParent: "Minta Testimoni",
     newBreadcrumbCurrent: "Permintaan baharu",
     newPageTitle: "Permintaan Testimoni Baharu",

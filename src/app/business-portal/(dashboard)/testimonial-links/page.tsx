@@ -61,7 +61,7 @@ export default async function TestimonialRequestLinksPage() {
             {listingsWithoutGoogleLink.map((listing, index) => (
               <span key={listing.id}>
                 {index > 0 && ", "}
-                <Link href={`/business-portal/listings/${listing.id}`} className="font-medium underline">
+                <Link href={`/business-portal/listings/${listing.id}#googleReviewUrl`} className="font-medium underline">
                   {listing.companyName}
                 </Link>
               </span>

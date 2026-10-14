@@ -1,12 +1,13 @@
 import { db } from "@/lib/db";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
-import { approveDirectoryTestimonial, rejectDirectoryTestimonial } from "@/app/actions/testimonials";
+import { approveDirectoryTestimonial, deleteDirectoryTestimonial, rejectDirectoryTestimonial } from "@/app/actions/testimonials";
 import { formatDate } from "@/lib/format";
 import { getDirectoryLocale } from "@/lib/directory-locale";
 import { getPortalTestimonialsStrings } from "@/lib/portal-testimonials-i18n";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardBody, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { ConfirmSubmitButton } from "@/components/ui/confirm-submit-button";
 import { Input } from "@/components/ui/field";
 import { EmptyState } from "@/components/ui/empty-state";
 import { StarRating } from "@/components/ui/star-rating";
@@ -112,6 +113,9 @@ export default async function PartnerTestimonialsPage() {
                         {t.rejectCta}
                       </Button>
                     </form>
+                    <form action={deleteDirectoryTestimonial.bind(null, testimonial.id)} className="sm:ml-auto">
+                      <ConfirmSubmitButton confirmMessage={t.deleteTestimonialConfirm}>{t.deleteCta}</ConfirmSubmitButton>
+                    </form>
                   </div>
                 </li>
               ))}
@@ -138,9 +142,14 @@ export default async function PartnerTestimonialsPage() {
                         </span>
                       )}
                     </p>
-                    <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${STATUS_BADGE_CLASSES[testimonial.status]}`}>
-                      {STATUS_LABEL[testimonial.status]}
-                    </span>
+                    <div className="flex items-center gap-2">
+                      <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${STATUS_BADGE_CLASSES[testimonial.status]}`}>
+                        {STATUS_LABEL[testimonial.status]}
+                      </span>
+                      <form action={deleteDirectoryTestimonial.bind(null, testimonial.id)}>
+                        <ConfirmSubmitButton confirmMessage={t.deleteTestimonialConfirm}>{t.deleteCta}</ConfirmSubmitButton>
+                      </form>
+                    </div>
                   </div>
                   <p className="line-clamp-2 text-xs text-slate-500 dark:text-slate-400">{testimonial.body}</p>
                   {testimonial.status === "REJECTED" && testimonial.reviewNote && (

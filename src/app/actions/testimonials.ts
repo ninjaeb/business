@@ -471,3 +471,21 @@ export async function rejectDirectoryTestimonial(id: string, formData: FormData)
   });
   revalidatePath("/business-portal/testimonials");
 }
+
+// Removes a testimonial outright, whatever its status — a pending one the
+// owner doesn't want to even reject with a note, a rejected one that's
+// cluttering the list, or an already-published one that turned out to be
+// wrong or unwanted (reject only ever applied to pending ones). Same
+// owner-only check as approve/reject above. Its attached photos go with it
+// (DirectoryListingImage.testimonial is onDelete: Cascade). Always refreshes
+// the public listing pages, not just the portal list: if this one was
+// approved it's showing there, and the listing's combined rating counts it.
+// Deleting also frees that visitor to write a fresh one (the one-per-
+// visitor-per-listing rule is a unique key on the row itself).
+export async function deleteDirectoryTestimonial(id: string): Promise<void> {
+  const partner = await requirePartnerAction();
+  const testimonial = await getOwnedTestimonialOrThrow(id, partner.id);
+  await db.directoryTestimonial.delete({ where: { id: testimonial.id } });
+  revalidatePath("/business-portal/testimonials");
+  revalidateDirectory({ slugs: [testimonial.listing.slug] });
+}

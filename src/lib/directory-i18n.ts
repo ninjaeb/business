@@ -729,6 +729,10 @@ export type DirectoryStrings = {
   // does (the text is already copied) so it reads as a helpful next step, not
   // an ad.
   testimonialGoogleHint: string;
+  // Under the submit button, only when the business has a Google link: tells
+  // the customer BEFORE they submit that posting on Google is a next step, so
+  // the option is visible up front rather than only after.
+  testimonialGoogleFormHint: string;
   testimonialGoogleCopied: string;
   testimonialErrors: Record<DirectoryTestimonialFormErrorCode, string>;
   // The header's "Skip to main content" link (see DirectoryChrome) — visible
@@ -1056,6 +1060,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormSuccess: "Thanks! Your testimonial is awaiting approval before it shows publicly.",
     testimonialGoogleCta: "Leave it on Google too",
     testimonialGoogleHint: "Want to help others find us? We\'ll copy your testimonial — just paste it into the Google review box that opens.",
+    testimonialGoogleFormHint: "After you submit, you can also post this on Google.",
     testimonialGoogleCopied: "Copied — paste it into the review box that just opened.",
     testimonialErrors: {
       body_required: "Write a few words about your experience",
@@ -1360,6 +1365,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormSuccess: "谢谢！您的评价将在审核通过后公开显示。",
     testimonialGoogleCta: "同时发布到 Google",
     testimonialGoogleHint: "想帮助更多人找到我们？我们会复制您的评价——只需粘贴到随后打开的 Google 评论框即可。",
+    testimonialGoogleFormHint: "提交后，您还可以同时发布到 Google。",
     testimonialGoogleCopied: "已复制——请粘贴到刚打开的评价框中。",
     testimonialErrors: {
       body_required: "请简单描述您的体验",
@@ -1666,6 +1672,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormSuccess: "Terima kasih! Testimoni anda menunggu kelulusan sebelum dipaparkan secara terbuka.",
     testimonialGoogleCta: "Hantar ke Google juga",
     testimonialGoogleHint: "Mahu bantu lebih ramai menemui kami? Kami akan salin testimoni anda — tampal sahaja ke dalam kotak ulasan Google yang dibuka.",
+    testimonialGoogleFormHint: "Selepas menghantar, anda juga boleh menyiarkannya di Google.",
     testimonialGoogleCopied: "Disalin — tampal ke dalam kotak ulasan yang baru dibuka.",
     testimonialErrors: {
       body_required: "Tulis beberapa patah perkataan tentang pengalaman anda",
