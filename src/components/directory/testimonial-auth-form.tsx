@@ -2,6 +2,7 @@
 
 import Script from "next/script";
 import { useActionState, useEffect, useRef, useState } from "react";
+import { FillTimeField } from "@/components/ui/fill-time-field";
 import { loginVisitor, registerVisitor, registerTestimonialAuthor, signInVisitorWithGoogle } from "@/app/actions/visitor-auth";
 import { Button } from "@/components/ui/button";
 import { FieldGroup, Input } from "@/components/ui/field";
@@ -70,7 +71,6 @@ export function TestimonialAuthForm({
     undefined,
   );
   const [loginState, loginAction, loginPending] = useActionState(loginVisitor, undefined);
-  const [renderedAt] = useState(() => Date.now());
   const googleButtonRef = useRef<HTMLDivElement>(null);
   const [googleScriptLoaded, setGoogleScriptLoaded] = useState(false);
   const [googleError, setGoogleError] = useState<string | null>(null);
@@ -201,7 +201,7 @@ export function TestimonialAuthForm({
             <label htmlFor="visitor-signup-website">Leave this field blank</label>
             <input id="visitor-signup-website" name="website" type="text" tabIndex={-1} autoComplete="off" />
           </div>
-          <input type="hidden" name="renderedAt" value={renderedAt} />
+          <FillTimeField />
 
           {/* User vs. business — a real account-type choice (VISITOR vs.
               PARTNER, see this component's own top comment), not just which

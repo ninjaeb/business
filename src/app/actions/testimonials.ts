@@ -33,6 +33,18 @@ const testimonialSchema = z.object({
   locale: z.string().trim().min(1),
 });
 
+// zod's own message is used as the error code (see the schemas' explicit
+// "rating_required"/"body_required"/"name_required" messages) — but any
+// check WITHOUT an explicit message (a body over the max length, a missing
+// slug/token/locale) falls back to zod's English default text, which isn't a
+// key in the form's error map, so the form would render an empty paragraph:
+// the visitor presses Submit and nothing visibly happens. Anything not
+// explicitly one of ours becomes "invalid_submission" instead.
+const SCHEMA_ERROR_CODES: readonly DirectoryTestimonialFormErrorCode[] = ["rating_required", "body_required", "name_required"];
+function schemaErrorCode(message: string | undefined): DirectoryTestimonialFormErrorCode {
+  return SCHEMA_ERROR_CODES.find((code) => code === message) ?? "invalid_submission";
+}
+
 export type DirectoryTestimonialFormState =
   // testimonialId lets the form (see TestimonialForm) follow up with
   // uploadTestimonialPhoto calls for whichever photos the visitor attached
@@ -65,7 +77,7 @@ export async function submitDirectoryTestimonial(
   if (String(formData.get("website") || "").trim()) {
     return { status: "success", testimonialId: "" };
   }
-  if (isSuspiciouslyFast(formData.get("renderedAt"))) {
+  if (isSuspiciouslyFast(formData)) {
     return { status: "success", testimonialId: "" };
   }
 
@@ -74,7 +86,16 @@ export async function submitDirectoryTestimonial(
     return { status: "error", code: "rate_limited" };
   }
 
-  const visitor = await requireTestimonialAuthorAction();
+  // The dialog never renders this form without a session, but a session can
+  // expire while a visitor is mid-testimonial — the guard throws in that case,
+  // which would surface as a generic crash with no message and (worse) lose
+  // what they wrote. Return the form's own "sign in first" message instead.
+  let visitor: Awaited<ReturnType<typeof requireTestimonialAuthorAction>>;
+  try {
+    visitor = await requireTestimonialAuthorAction();
+  } catch {
+    return { status: "error", code: "not_signed_in" };
+  }
 
   const parsed = testimonialSchema.safeParse({
     slug: formData.get("slug"),
@@ -83,8 +104,7 @@ export async function submitDirectoryTestimonial(
     locale: formData.get("locale"),
   });
   if (!parsed.success) {
-    const code = (parsed.error.issues[0]?.message || "invalid_submission") as DirectoryTestimonialFormErrorCode;
-    return { status: "error", code };
+    return { status: "error", code: schemaErrorCode(parsed.error.issues[0]?.message) };
   }
 
   const listing = await db.partnerListing.findUnique({ where: { slug: parsed.data.slug } });
@@ -170,7 +190,7 @@ export async function submitStandaloneTestimonial(
   if (String(formData.get("website") || "").trim()) {
     return { status: "success", testimonialId: "" };
   }
-  if (isSuspiciouslyFast(formData.get("renderedAt"))) {
+  if (isSuspiciouslyFast(formData)) {
     return { status: "success", testimonialId: "" };
   }
 
@@ -189,8 +209,7 @@ export async function submitStandaloneTestimonial(
     locale: formData.get("locale"),
   });
   if (!parsed.success) {
-    const code = (parsed.error.issues[0]?.message || "invalid_submission") as DirectoryTestimonialFormErrorCode;
-    return { status: "error", code };
+    return { status: "error", code: schemaErrorCode(parsed.error.issues[0]?.message) };
   }
 
   const request = await getTestimonialRequestLinkForForm(parsed.data.token);
@@ -324,7 +343,7 @@ export async function rewriteTestimonialWithAi(text: string): Promise<AiResult<{
   if (!isAiConfigured()) return AI_NOT_CONFIGURED;
 
   const headersList = await headers();
-  if (isRateLimited(firstHopValue(headersList.get("x-forwarded-for")))) {
+  if (isRateLimited(firstHopValue(headersList.get("x-forwarded-for")), "ai")) {
     return { status: "error", message: "Too many requests — try again in a moment." };
   }
 
@@ -367,7 +386,7 @@ export async function suggestTestimonialIdeasWithAi(slug: string, locale: string
   if (!isAiConfigured()) return AI_NOT_CONFIGURED;
 
   const headersList = await headers();
-  if (isRateLimited(firstHopValue(headersList.get("x-forwarded-for")))) {
+  if (isRateLimited(firstHopValue(headersList.get("x-forwarded-for")), "ai")) {
     return { status: "error", message: "Too many requests — try again in a moment." };
   }
 

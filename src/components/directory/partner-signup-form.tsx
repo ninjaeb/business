@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useActionState, useState } from "react";
+import { FillTimeField } from "@/components/ui/fill-time-field";
 import { signUpPartner, type PartnerSignupState } from "@/app/actions/partner-signup";
 import { Button, buttonClasses } from "@/components/ui/button";
 import { FieldGroup, Input } from "@/components/ui/field";
@@ -28,7 +29,6 @@ export function PartnerSignupForm({
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
 
-  const [renderedAt] = useState(() => Date.now());
 
   const errorCode: PartnerSignupErrorCode | undefined =
     state?.status === "error"
@@ -68,7 +68,7 @@ export function PartnerSignupForm({
           <label htmlFor="website">Leave this field blank</label>
           <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
         </div>
-        <input type="hidden" name="renderedAt" value={renderedAt} />
+        <FillTimeField />
 
         <FieldGroup label={t.signupCompanyLabel} htmlFor="companyName" required>
           <Input

@@ -142,7 +142,7 @@ export async function submitDirectoryLead(
   if (String(formData.get("website") || "").trim()) {
     return { status: "success" };
   }
-  if (isSuspiciouslyFast(formData.get("renderedAt"))) {
+  if (isSuspiciouslyFast(formData)) {
     return { status: "success" };
   }
 

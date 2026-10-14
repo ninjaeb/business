@@ -37,7 +37,7 @@ export async function signUpPartner(
   if (String(formData.get("website") || "").trim()) {
     redirect("/business-portal");
   }
-  if (isSuspiciouslyFast(formData.get("renderedAt"))) {
+  if (isSuspiciouslyFast(formData)) {
     redirect("/business-portal");
   }
 

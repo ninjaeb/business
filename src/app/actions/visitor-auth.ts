@@ -48,7 +48,7 @@ export async function registerVisitor(_prevState: VisitorAuthState, formData: Fo
   if (String(formData.get("website") || "").trim()) {
     return { status: "error", code: "generic" };
   }
-  if (isSuspiciouslyFast(formData.get("renderedAt"))) {
+  if (isSuspiciouslyFast(formData)) {
     return { status: "error", code: "generic" };
   }
 
@@ -115,7 +115,7 @@ export async function registerTestimonialAuthor(_prevState: VisitorAuthState, fo
   if (String(formData.get("website") || "").trim()) {
     return { status: "error", code: "generic" };
   }
-  if (isSuspiciouslyFast(formData.get("renderedAt"))) {
+  if (isSuspiciouslyFast(formData)) {
     return { status: "error", code: "generic" };
   }
 

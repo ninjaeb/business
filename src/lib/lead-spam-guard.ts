@@ -7,15 +7,37 @@
 
 // A bot that fills every field and submits within a fraction of a second
 // of the form appearing didn't read anything — no human types this fast.
-// Callers pass how long ago (ms, Date.now()-based) the visitor's form was
-// first rendered; missing or malformed input counts as suspicious too,
-// since a bot that never executed the page's JS won't have sent it.
+// The form measures its own fill time in the browser (see FillTimeField in
+// src/components/ui/fill-time-field.tsx) and sends it as `fillMs`; missing
+// or malformed input counts as suspicious too, since a bot that never
+// executed the page's JS won't have sent it.
+//
+// Deliberately a DURATION measured on one clock, not a timestamp compared
+// against the server's clock. The original check sent `Date.now()` at render
+// and compared it to the server's `Date.now()` at submit — so any visitor
+// whose device clock ran even a few seconds AHEAD of the server's looked
+// like they'd submitted before the form existed, tripped this check, and got
+// the silent fake-success below: "Thanks!" on screen, nothing saved. For a
+// contact-a-business lead or a testimonial that's a lost message with no
+// error anywhere. A monotonic in-browser duration can't be skewed by a wrong
+// system clock.
 export const MIN_FILL_MS = 1500;
 
-export function isSuspiciouslyFast(renderedAtRaw: unknown): boolean {
-  const renderedAt = Number(renderedAtRaw);
-  if (!Number.isFinite(renderedAt)) return true;
-  return Date.now() - renderedAt < MIN_FILL_MS;
+export function isSuspiciouslyFast(formData: FormData): boolean {
+  const fillMs = Number(formData.get("fillMs"));
+  if (formData.get("fillMs") !== null && formData.get("fillMs") !== "") {
+    return !Number.isFinite(fillMs) || fillMs < MIN_FILL_MS;
+  }
+
+  // A tab opened before this change shipped still posts the old `renderedAt`
+  // timestamp instead. Its wall-clock comparison can't be trusted either
+  // (see above), so only a plainly-too-fast, non-negative gap counts as
+  // suspicious — a future timestamp means a skewed clock, not a bot. Anything
+  // else (neither field) never ran the page's JS at all.
+  const renderedAt = Number(formData.get("renderedAt"));
+  if (formData.get("renderedAt") === null || !Number.isFinite(renderedAt)) return true;
+  const elapsed = Date.now() - renderedAt;
+  return elapsed >= 0 && elapsed < MIN_FILL_MS;
 }
 
 // Per-IP throttle for submissions that get past the checks above — catches
@@ -27,14 +49,26 @@ export function isSuspiciouslyFast(renderedAtRaw: unknown): boolean {
 // fine at the volume a lead-gen contact form actually sees; a
 // high-traffic public endpoint would need a real store or a cleanup sweep.
 const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
-const RATE_LIMIT_MAX_ATTEMPTS = 5;
-const attemptsByIp = new Map<string, number[]>();
 
-export function isRateLimited(ip: string | null): boolean {
+// Two separate budgets, so one never starves the other. "form" is every
+// submission-style action (a lead, a signup/login, a testimonial) — few
+// legitimate attempts per visitor, so 5 is generous. "ai" is the "Rewrite
+// with AI" / "Suggest a testimonial" helpers: a visitor re-rolls those
+// several times while working on ONE testimonial, and if they shared the
+// "form" budget the visitor would burn it on the helpers and then be told
+// "too many attempts" at the moment they press Submit — losing the
+// testimonial they just finished. They still need a cap (each call costs
+// real model usage), just a higher, separate one.
+const RATE_LIMIT_MAX_ATTEMPTS = { form: 5, ai: 20 } as const;
+export type RateLimitScope = keyof typeof RATE_LIMIT_MAX_ATTEMPTS;
+const attemptsByScopeAndIp = new Map<string, number[]>();
+
+export function isRateLimited(ip: string | null, scope: RateLimitScope = "form"): boolean {
   if (!ip) return false;
   const now = Date.now();
-  const recent = (attemptsByIp.get(ip) ?? []).filter((timestamp) => now - timestamp < RATE_LIMIT_WINDOW_MS);
+  const key = `${scope}:${ip}`;
+  const recent = (attemptsByScopeAndIp.get(key) ?? []).filter((timestamp) => now - timestamp < RATE_LIMIT_WINDOW_MS);
   recent.push(now);
-  attemptsByIp.set(ip, recent);
-  return recent.length > RATE_LIMIT_MAX_ATTEMPTS;
+  attemptsByScopeAndIp.set(key, recent);
+  return recent.length > RATE_LIMIT_MAX_ATTEMPTS[scope];
 }

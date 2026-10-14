@@ -1,6 +1,7 @@
 "use client";
 
 import { useActionState, useEffect, useRef, useState, useTransition } from "react";
+import { FillTimeField } from "@/components/ui/fill-time-field";
 import { Lightbulb, Loader2, Sparkles, Star, Upload, X } from "lucide-react";
 import {
   rewriteTestimonialWithAi,
@@ -94,7 +95,6 @@ export function StandaloneTestimonialForm({
   const [rating, setRating] = useState(0);
   const [ratingError, setRatingError] = useState(false);
   const [body, setBody] = useState("");
-  const [renderedAt] = useState(() => Date.now());
   const [rewriting, startRewrite] = useTransition();
   const [ideas, setIdeas] = useState<string[] | null>(null);
   const [suggesting, startSuggest] = useTransition();
@@ -263,7 +263,7 @@ export function StandaloneTestimonialForm({
           <label htmlFor="standalone-testimonial-website">Leave this field blank</label>
           <input id="standalone-testimonial-website" name="website" type="text" tabIndex={-1} autoComplete="off" />
         </div>
-        <input type="hidden" name="renderedAt" value={renderedAt} />
+        <FillTimeField />
 
         {serviceTitle && (
           <p className="rounded-xl bg-led-soft px-3 py-2 text-sm text-petrol-ink dark:bg-led-soft-dark dark:text-petrol-light">

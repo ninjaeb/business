@@ -1,6 +1,7 @@
 "use client";
 
 import { useActionState, useState } from "react";
+import { FillTimeField } from "@/components/ui/fill-time-field";
 import { submitDirectoryLead } from "@/app/actions/directory";
 import { Button } from "@/components/ui/button";
 import { FieldGroup, Input, Textarea } from "@/components/ui/field";
@@ -21,7 +22,6 @@ export function DirectoryLeadForm({ slug, locale }: { slug: string; locale: Dire
   const [phone, setPhone] = useState("");
   const [company, setCompany] = useState("");
   const [message, setMessage] = useState("");
-  const [renderedAt] = useState(() => Date.now());
 
   // Clicking one or more products/services (see ServiceList) sets this,
   // which prefills the message here instead of leaving a visitor to type
@@ -70,7 +70,7 @@ export function DirectoryLeadForm({ slug, locale }: { slug: string; locale: Dire
         <label htmlFor="directory-website">Leave this field blank</label>
         <input id="directory-website" name="website" type="text" tabIndex={-1} autoComplete="off" />
       </div>
-      <input type="hidden" name="renderedAt" value={renderedAt} />
+      <FillTimeField />
       {/* Set only when the visitor arrived via the Recommend button's own
           link (see recommendUrl in the listing page) — its value is that
           listing's own short referral code, which submitDirectoryLead

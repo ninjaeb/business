@@ -1,6 +1,7 @@
 "use client";
 
 import { useActionState, useEffect, useRef, useState, useTransition } from "react";
+import { FillTimeField } from "@/components/ui/fill-time-field";
 import { Lightbulb, Loader2, Sparkles, Star, Upload, X } from "lucide-react";
 import {
   rewriteTestimonialWithAi,
@@ -89,7 +90,6 @@ export function TestimonialForm({
   const [rating, setRating] = useState(0);
   const [ratingError, setRatingError] = useState(false);
   const [body, setBody] = useState("");
-  const [renderedAt] = useState(() => Date.now());
   const [rewriting, startRewrite] = useTransition();
   const [ideas, setIdeas] = useState<string[] | null>(null);
   const [suggesting, startSuggest] = useTransition();
@@ -279,7 +279,7 @@ export function TestimonialForm({
         <label htmlFor="testimonial-website">Leave this field blank</label>
         <input id="testimonial-website" name="website" type="text" tabIndex={-1} autoComplete="off" />
       </div>
-      <input type="hidden" name="renderedAt" value={renderedAt} />
+      <FillTimeField />
 
       {/* pr-7 keeps "Not you? Log out" clear of the dialog's own close
           button (absolute right-3 top-3 in WriteTestimonialButton) — without
