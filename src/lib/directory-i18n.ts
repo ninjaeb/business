@@ -662,13 +662,21 @@ export type DirectoryStrings = {
   // A short writing guide for a visitor staring at a blank textarea — three
   // prompts (Impact/Experience/Verdict), each a bold label plus its own
   // question, shown as a small box above the field.
+  // The four-part Before → During → After → Recommendation story a good
+  // testimonial tells (see TESTIMONIAL_STORY_STRUCTURE in
+  // src/app/actions/testimonials.ts, which holds the AI to the same shape),
+  // rendered in that order: Problem, Experience, Impact, Verdict. The tip
+  // under them is the one-line "2-4 sentences, be specific" reminder.
   testimonialFormGuideHeading: string;
-  testimonialFormGuideImpactLabel: string;
-  testimonialFormGuideImpactQuestion: string;
+  testimonialFormGuideProblemLabel: string;
+  testimonialFormGuideProblemQuestion: string;
   testimonialFormGuideExperienceLabel: string;
   testimonialFormGuideExperienceQuestion: string;
+  testimonialFormGuideImpactLabel: string;
+  testimonialFormGuideImpactQuestion: string;
   testimonialFormGuideVerdictLabel: string;
   testimonialFormGuideVerdictQuestion: string;
+  testimonialFormGuideTip: string;
   // "Suggest a testimonial" link appended to the guide box above —
   // AI-written, ready-to-use drafts based on this specific listing's own
   // products/services (see suggestTestimonialIdeasWithAi in
@@ -1004,17 +1012,21 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormRatingLabel: "Rating",
     testimonialFormBodyLabel: "Your testimonial",
     testimonialFormBodyPlaceholder: "What was it like working with this business?",
-    testimonialFormGuideHeading: "Not sure what to write? Consider:",
-    testimonialFormGuideImpactLabel: "The Impact",
-    testimonialFormGuideImpactQuestion:
-      "What problem did we solve, or what results did you achieve (e.g., saved time, boosted sales, a smooth launch)?",
+    testimonialFormGuideHeading: "Not sure what to write? A good testimonial tells a short before → during → after story:",
+    testimonialFormGuideProblemLabel: "The Problem",
+    testimonialFormGuideProblemQuestion: "What specific challenge were you trying to solve before working with us?",
     testimonialFormGuideExperienceLabel: "The Experience",
-    testimonialFormGuideExperienceQuestion: "What stood out most (e.g., speed, communication, technical expertise)?",
-    testimonialFormGuideVerdictLabel: "The Verdict",
-    testimonialFormGuideVerdictQuestion: "Who would you recommend us to, and why?",
+    testimonialFormGuideExperienceQuestion: "How did our product or service solve that challenge for you?",
+    testimonialFormGuideImpactLabel: "The Result",
+    testimonialFormGuideImpactQuestion:
+      "What main result or improvement did you see afterwards? Be specific — a number, a timeframe, a change you noticed.",
+    testimonialFormGuideVerdictLabel: "The Recommendation",
+    testimonialFormGuideVerdictQuestion: "What would you tell someone who is on the fence about working with us?",
+    testimonialFormGuideTip:
+      "Keep it to 2–4 sentences, and be specific — “leads went up 40% in two months” beats “traffic grew”. Mentioning a doubt you had at first (“I was skeptical about the timeline, but…”) makes it more believable, not less.",
     testimonialFormIdeasCta: "Suggest a ready-to-use testimonial",
     testimonialFormIdeasLoading: "Writing suggestions…",
-    testimonialFormIdeasHint: "Tap one to use it, then edit it so it matches your own experience.",
+    testimonialFormIdeasHint: "Tap one to use it, then make it yours — add the challenge you actually had and the real result you saw.",
     testimonialFormPhotosLabel: "Photos (optional)",
     testimonialFormPhotosCta: "Add photos",
     testimonialFormPhotosUploading: "Uploading photo {done}/{total}…",
@@ -1302,16 +1314,20 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormRatingLabel: "评分",
     testimonialFormBodyLabel: "您的评价",
     testimonialFormBodyPlaceholder: "与该企业合作的体验如何？",
-    testimonialFormGuideHeading: "不知道写什么？可以参考：",
-    testimonialFormGuideImpactLabel: "成效",
-    testimonialFormGuideImpactQuestion: "我们解决了什么问题，或您获得了什么成果（例如：节省时间、提升业绩、顺利上线）？",
+    testimonialFormGuideHeading: "不知道写什么？好的评价会讲一个简短的「之前 → 过程 → 之后」故事：",
+    testimonialFormGuideProblemLabel: "问题",
+    testimonialFormGuideProblemQuestion: "与我们合作之前，您想解决什么具体难题？",
     testimonialFormGuideExperienceLabel: "体验",
-    testimonialFormGuideExperienceQuestion: "哪方面让您印象最深刻（例如：速度、沟通、专业能力）？",
-    testimonialFormGuideVerdictLabel: "评价",
-    testimonialFormGuideVerdictQuestion: "您会将我们推荐给谁，为什么？",
+    testimonialFormGuideExperienceQuestion: "我们的产品或服务是如何为您解决这个难题的？",
+    testimonialFormGuideImpactLabel: "成果",
+    testimonialFormGuideImpactQuestion: "之后您看到了什么主要成果或改善？请具体一点——一个数字、一个时间范围，或您注意到的一项变化。",
+    testimonialFormGuideVerdictLabel: "推荐",
+    testimonialFormGuideVerdictQuestion: "对于还在犹豫是否与我们合作的人，您会对他们说什么？",
+    testimonialFormGuideTip:
+      "控制在 2 到 4 句，并尽量具体——「两个月内询盘增加了 40%」比「流量增长了」更有说服力。提一下您起初的顾虑（「我一开始对时间安排有些怀疑，但……」）反而更可信。",
     testimonialFormIdeasCta: "为我推荐一段可直接使用的评价",
     testimonialFormIdeasLoading: "正在撰写建议…",
-    testimonialFormIdeasHint: "点击一段即可使用，然后请修改成符合您自己真实体验的内容。",
+    testimonialFormIdeasHint: "点击一段即可使用，然后改成您自己的——补上您当时真正遇到的难题，以及实际看到的成果。",
     testimonialFormPhotosLabel: "照片（可选）",
     testimonialFormPhotosCta: "添加照片",
     testimonialFormPhotosUploading: "正在上传照片 {done}/{total}…",
@@ -1600,17 +1616,21 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormRatingLabel: "Penilaian",
     testimonialFormBodyLabel: "Testimoni anda",
     testimonialFormBodyPlaceholder: "Bagaimana pengalaman anda berurusan dengan perniagaan ini?",
-    testimonialFormGuideHeading: "Tidak pasti apa nak tulis? Pertimbangkan:",
-    testimonialFormGuideImpactLabel: "Impak",
-    testimonialFormGuideImpactQuestion:
-      "Masalah apa yang kami selesaikan, atau hasil apa yang anda perolehi (contohnya: menjimatkan masa, meningkatkan jualan, pelancaran yang lancar)?",
+    testimonialFormGuideHeading: "Tidak pasti apa nak tulis? Testimoni yang baik menceritakan kisah ringkas «sebelum → semasa → selepas»:",
+    testimonialFormGuideProblemLabel: "Masalah",
+    testimonialFormGuideProblemQuestion: "Apakah cabaran khusus yang anda cuba selesaikan sebelum bekerjasama dengan kami?",
     testimonialFormGuideExperienceLabel: "Pengalaman",
-    testimonialFormGuideExperienceQuestion: "Apa yang paling menonjol (contohnya: kelajuan, komunikasi, kepakaran teknikal)?",
-    testimonialFormGuideVerdictLabel: "Kesimpulan",
-    testimonialFormGuideVerdictQuestion: "Kepada siapa anda akan mengesyorkan kami, dan mengapa?",
+    testimonialFormGuideExperienceQuestion: "Bagaimana produk atau perkhidmatan kami menyelesaikan cabaran itu untuk anda?",
+    testimonialFormGuideImpactLabel: "Hasil",
+    testimonialFormGuideImpactQuestion:
+      "Apakah hasil atau penambahbaikan utama yang anda lihat selepas itu? Berikan butiran — angka, tempoh masa, atau perubahan yang anda perasan.",
+    testimonialFormGuideVerdictLabel: "Syor",
+    testimonialFormGuideVerdictQuestion: "Apa yang anda akan katakan kepada seseorang yang masih teragak-agak untuk bekerjasama dengan kami?",
+    testimonialFormGuideTip:
+      "Cukup 2 hingga 4 ayat, dan jadilah spesifik — «petunjuk pelanggan naik 40% dalam dua bulan» lebih meyakinkan daripada «trafik meningkat». Menyebut keraguan awal anda («saya skeptikal tentang tempoh masa pada mulanya, tetapi…») menjadikannya lebih dipercayai, bukan sebaliknya.",
     testimonialFormIdeasCta: "Cadangkan testimoni sedia guna",
     testimonialFormIdeasLoading: "Sedang menulis cadangan…",
-    testimonialFormIdeasHint: "Ketik satu untuk menggunakannya, kemudian ubah supaya sepadan dengan pengalaman anda sendiri.",
+    testimonialFormIdeasHint: "Ketik satu untuk menggunakannya, kemudian jadikan milik anda — tambah cabaran sebenar yang anda hadapi dan hasil sebenar yang anda lihat.",
     testimonialFormPhotosLabel: "Foto (pilihan)",
     testimonialFormPhotosCta: "Tambah foto",
     testimonialFormPhotosUploading: "Memuat naik foto {done}/{total}…",

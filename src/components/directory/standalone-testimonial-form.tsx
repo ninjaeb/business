@@ -291,10 +291,10 @@ export function StandaloneTestimonialForm({
         <FieldGroup label={t.testimonialFormBodyLabel} htmlFor="standalone-testimonial-body" required>
           <div className="mb-2 rounded-xl bg-slate-50 p-3 text-xs text-slate-600 dark:bg-neutral-800 dark:text-slate-300">
             <p className="mb-1.5 font-medium text-slate-700 dark:text-slate-200">{t.testimonialFormGuideHeading}</p>
-            <ul className="list-disc space-y-1 pl-4">
+            <ol className="list-decimal space-y-1 pl-4">
               <li>
-                <strong className="font-semibold text-slate-800 dark:text-slate-100">{t.testimonialFormGuideImpactLabel}:</strong>{" "}
-                {t.testimonialFormGuideImpactQuestion}
+                <strong className="font-semibold text-slate-800 dark:text-slate-100">{t.testimonialFormGuideProblemLabel}:</strong>{" "}
+                {t.testimonialFormGuideProblemQuestion}
               </li>
               <li>
                 <strong className="font-semibold text-slate-800 dark:text-slate-100">
@@ -303,10 +303,15 @@ export function StandaloneTestimonialForm({
                 {t.testimonialFormGuideExperienceQuestion}
               </li>
               <li>
+                <strong className="font-semibold text-slate-800 dark:text-slate-100">{t.testimonialFormGuideImpactLabel}:</strong>{" "}
+                {t.testimonialFormGuideImpactQuestion}
+              </li>
+              <li>
                 <strong className="font-semibold text-slate-800 dark:text-slate-100">{t.testimonialFormGuideVerdictLabel}:</strong>{" "}
                 {t.testimonialFormGuideVerdictQuestion}
               </li>
-            </ul>
+            </ol>
+            <p className="mt-1.5 text-slate-500 dark:text-slate-400">{t.testimonialFormGuideTip}</p>
             {aiAvailable && (
               <div className="mt-2 border-t border-slate-200 pt-2 dark:border-neutral-700">
                 <button
