@@ -15,14 +15,15 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Trademark Registration in Malaysia: Protecting Your Business Name and Logo**
-   — When registering a trademark with MyIPO actually matters versus relying
-   on SSM registration alone, the filing process and classes of goods/
-   services, typical costs and timeline, and what registration does (and
-   doesn't) protect.
+1. **Terminating an Employee in Malaysia: Notice, Termination Benefits, and Doing It Right**
+   — Notice periods and termination benefits under the Employment Act,
+   the difference between termination, retrenchment, and dismissal for
+   misconduct, the paperwork involved (including CP22A), and the
+   procedural mistakes that turn a routine termination into an unfair
+   dismissal claim.
 
-2. **PDPA Compliance for Malaysian SMEs: What the Personal Data Protection Act Requires**
-   — Who the PDPA applies to, the core obligations (consent, notice,
-   security, data retention) a typical SME collecting customer data needs
-   to meet, and the practical steps to become compliant without needing a
-   dedicated legal team.
+2. **SME Grants and Funding in Malaysia: Where to Look Before You Borrow**
+   — The main government-backed grant and financing schemes available to
+   Malaysian SMEs (SME Corp, Bank Negara funds, MARA, TEKUN, Bank Simpanan
+   Nasional), how eligibility typically works, and how to compare a grant
+   against a loan before committing to either.
