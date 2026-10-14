@@ -2,6 +2,7 @@
 
 import { useActionState, useEffect, useRef, useState, useTransition } from "react";
 import { FillTimeField } from "@/components/ui/fill-time-field";
+import { FormErrorList } from "@/components/ui/form-error-list";
 import { Lightbulb, Loader2, Sparkles, Star, Upload, X } from "lucide-react";
 import {
   rewriteTestimonialWithAi,
@@ -26,6 +27,11 @@ const MAX_BODY_LENGTH = 2000;
 // Mirrors MAX_TESTIMONIAL_PHOTOS in src/app/actions/testimonials.ts — same
 // "duplicated rather than imported" reasoning as TestimonialForm's own copy.
 const MAX_TESTIMONIAL_PHOTOS = 4;
+
+// What the visitor left out, checked when they press Submit (see handleSubmit)
+// and shown in the error box right above that button — not as a browser
+// pop-up beside a field that may be off-screen by then.
+type MissingField = "name_required" | "rating_required" | "body_required";
 
 // Same shape as TestimonialForm's own StarPicker — duplicated rather than
 // shared, same "small enough to just copy" convention this codebase already
@@ -93,22 +99,39 @@ export function StandaloneTestimonialForm({
   const toast = useToast();
 
   const [rating, setRating] = useState(0);
-  const [ratingError, setRatingError] = useState(false);
+  const [missing, setMissing] = useState<MissingField[]>([]);
+  const [aiError, setAiError] = useState<string | null>(null);
   const [body, setBody] = useState("");
   const [rewriting, startRewrite] = useTransition();
   const [ideas, setIdeas] = useState<string[] | null>(null);
   const [suggesting, startSuggest] = useTransition();
 
-  function handleRatingChange(value: number) {
-    setRating(value);
-    if (value > 0) setRatingError(false);
+  function clearMissing(field: MissingField) {
+    setMissing((prev) => prev.filter((code) => code !== field));
   }
 
+  function handleRatingChange(value: number) {
+    setRating(value);
+    if (value > 0) clearMissing("rating_required");
+  }
+
+  // Validated here, with the form's own noValidate on, rather than left to
+  // each field's `required` — a browser's pop-up bubble appears beside
+  // whichever field is first, usually not where the visitor is looking after
+  // pressing Submit. Rating has no native <input required> to hook into
+  // anyway (it's a button row, see StarPicker). The server's own schema still
+  // enforces all of this for a submission that skips this handler entirely.
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-    if (rating === 0) {
+    const next: MissingField[] = [];
+    if (new FormData(event.currentTarget).get("authorName")?.toString().trim() === "") next.push("name_required");
+    if (rating === 0) next.push("rating_required");
+    if (body.trim() === "") next.push("body_required");
+    setMissing(next);
+    if (next.length > 0) {
       event.preventDefault();
-      setRatingError(true);
+      return;
     }
+    setAiError(null);
   }
 
   // Photos picked before submitting — same parallel-array-of-previews shape,
@@ -122,23 +145,25 @@ export function StandaloneTestimonialForm({
   const uploadedTestimonialId = useRef<string | null>(null);
 
   function handleRewrite() {
+    setAiError(null);
     startRewrite(async () => {
       const result = await rewriteTestimonialWithAi(body);
       if (result.status === "ok") {
         setBody(result.data.text);
       } else {
-        toast.error(result.message);
+        setAiError(result.message);
       }
     });
   }
 
   function handleSuggestIdeas() {
+    setAiError(null);
     startSuggest(async () => {
       const result = await suggestTestimonialIdeasWithAi(slug, locale);
       if (result.status === "ok") {
         setIdeas(result.data.ideas);
       } else {
-        toast.error(result.message);
+        setAiError(result.message);
       }
     });
   }
@@ -236,9 +261,12 @@ export function StandaloneTestimonialForm({
         )}
         {photoUploadError && <p className="text-sm text-rose-600 dark:text-rose-400">{photoUploadError}</p>}
         {photosDone && googleReviewUrl && (
-          <Button type="button" variant="secondary" onClick={handlePostToGoogle}>
-            {t.testimonialGoogleCta}
-          </Button>
+          <div className="space-y-2 rounded-xl border border-slate-200 bg-white p-4 text-center dark:border-neutral-800 dark:bg-neutral-900">
+            <p className="text-sm text-slate-600 dark:text-slate-300">{t.testimonialGoogleHint}</p>
+            <Button type="button" variant="secondary" onClick={handlePostToGoogle}>
+              {t.testimonialGoogleCta}
+            </Button>
+          </div>
         )}
       </div>
     );
@@ -254,7 +282,7 @@ export function StandaloneTestimonialForm({
       </div>
       <p className="mb-6 text-sm text-slate-500 dark:text-slate-400">{t.standaloneTestimonialIntro}</p>
 
-      <form action={formAction} onSubmit={handleSubmit} className="space-y-4">
+      <form action={formAction} onSubmit={handleSubmit} noValidate className="space-y-4">
         <input type="hidden" name="token" value={token} />
         <input type="hidden" name="locale" value={locale} />
         <input type="hidden" name="rating" value={rating || ""} />
@@ -273,7 +301,16 @@ export function StandaloneTestimonialForm({
 
         <div className="grid gap-4 sm:grid-cols-2">
           <FieldGroup label={t.signupNameLabel} htmlFor="standalone-testimonial-name" required>
-            <Input id="standalone-testimonial-name" name="authorName" required maxLength={100} defaultValue={prefill.name} />
+            <Input
+              id="standalone-testimonial-name"
+              name="authorName"
+              required
+              maxLength={100}
+              defaultValue={prefill.name}
+              onChange={(event) => {
+                if (event.target.value.trim()) clearMissing("name_required");
+              }}
+            />
           </FieldGroup>
           <FieldGroup label={t.testimonialPositionLabel} htmlFor="standalone-testimonial-title">
             <Input id="standalone-testimonial-title" name="authorTitle" maxLength={100} defaultValue={prefill.title} />
@@ -285,7 +322,6 @@ export function StandaloneTestimonialForm({
 
         <FieldGroup label={t.testimonialFormRatingLabel} htmlFor="testimonial-rating" required>
           <StarPicker value={rating} onChange={handleRatingChange} />
-          {ratingError && <p className="mt-1 text-xs text-rose-600 dark:text-rose-400">{t.testimonialErrors.rating_required}</p>}
         </FieldGroup>
 
         <FieldGroup label={t.testimonialFormBodyLabel} htmlFor="standalone-testimonial-body" required>
@@ -349,7 +385,10 @@ export function StandaloneTestimonialForm({
             maxLength={MAX_BODY_LENGTH}
             placeholder={t.testimonialFormBodyPlaceholder}
             value={body}
-            onChange={(event) => setBody(event.target.value)}
+            onChange={(event) => {
+              setBody(event.target.value);
+              if (event.target.value.trim()) clearMissing("body_required");
+            }}
             className="text-base"
           />
           {aiAvailable && (
@@ -404,7 +443,13 @@ export function StandaloneTestimonialForm({
           {photoPickError && <p className="mt-1 text-xs text-rose-600 dark:text-rose-400">{photoPickError}</p>}
         </FieldGroup>
 
-        {state?.status === "error" && <p className="text-sm text-rose-600 dark:text-rose-400">{t.testimonialErrors[state.code]}</p>}
+        <FormErrorList
+          messages={[
+            ...missing.map((code) => t.testimonialErrors[code]),
+            ...(aiError ? [aiError] : []),
+            ...(state?.status === "error" ? [t.testimonialErrors[state.code] ?? t.testimonialErrors.generic] : []),
+          ]}
+        />
 
         <Button
           type="submit"

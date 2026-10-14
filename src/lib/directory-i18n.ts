@@ -714,6 +714,10 @@ export type DirectoryStrings = {
   // and opens that link, same "copy + open" pattern as the partner side's
   // own "Post to Google" (see postToGoogle in updates-editor.tsx).
   testimonialGoogleCta: string;
+  // One line above that button on the success screen: says what the button
+  // does (the text is already copied) so it reads as a helpful next step, not
+  // an ad.
+  testimonialGoogleHint: string;
   testimonialGoogleCopied: string;
   testimonialErrors: Record<DirectoryTestimonialFormErrorCode, string>;
   // The header's "Skip to main content" link (see DirectoryChrome) — visible
@@ -1038,6 +1042,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormSubmitting: "Submitting…",
     testimonialFormSuccess: "Thanks! Your testimonial is awaiting approval before it shows publicly.",
     testimonialGoogleCta: "Leave it on Google too",
+    testimonialGoogleHint: "Want to help others find us? We\'ll copy your testimonial — just paste it into the Google review box that opens.",
     testimonialGoogleCopied: "Copied — paste it into the review box that just opened.",
     testimonialErrors: {
       body_required: "Write a few words about your experience",
@@ -1339,6 +1344,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormSubmitting: "提交中…",
     testimonialFormSuccess: "谢谢！您的评价将在审核通过后公开显示。",
     testimonialGoogleCta: "同时发布到 Google",
+    testimonialGoogleHint: "想帮助更多人找到我们？我们会复制您的评价——只需粘贴到随后打开的 Google 评论框即可。",
     testimonialGoogleCopied: "已复制——请粘贴到刚打开的评价框中。",
     testimonialErrors: {
       body_required: "请简单描述您的体验",
@@ -1642,6 +1648,7 @@ export const DIRECTORY_STRINGS: Record<DirectoryLocale, DirectoryStrings> = {
     testimonialFormSubmitting: "Menghantar…",
     testimonialFormSuccess: "Terima kasih! Testimoni anda menunggu kelulusan sebelum dipaparkan secara terbuka.",
     testimonialGoogleCta: "Hantar ke Google juga",
+    testimonialGoogleHint: "Mahu bantu lebih ramai menemui kami? Kami akan salin testimoni anda — tampal sahaja ke dalam kotak ulasan Google yang dibuka.",
     testimonialGoogleCopied: "Disalin — tampal ke dalam kotak ulasan yang baru dibuka.",
     testimonialErrors: {
       body_required: "Tulis beberapa patah perkataan tentang pengalaman anda",

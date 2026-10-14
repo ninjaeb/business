@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { googleReviewDestination } from "@/lib/google-business-profile";
 import type { Metadata } from "next";
 import { db } from "@/lib/db";
 import { getPublishedListingBySlug } from "@/lib/directory";
@@ -97,7 +98,7 @@ export default async function TestimonialsPage({
               slug={slug}
               locale={resolved}
               aiAvailable={isAiConfigured()}
-              googleReviewUrl={listing.googleReviewUrl}
+              googleReviewUrl={googleReviewDestination(listing)}
               googleClientId={getPublicGoogleClientId()}
               visitor={visitor ? { name: visitor.name } : null}
               existingTestimonial={existingTestimonial}

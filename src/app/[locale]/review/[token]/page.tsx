@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { googleReviewDestination } from "@/lib/google-business-profile";
 import { notFound } from "next/navigation";
 import { Link2Off } from "lucide-react";
 import { resolveDirectoryLocale } from "@/lib/directory-locale";
@@ -59,7 +60,7 @@ export default async function StandaloneTestimonialPage({
       locale={resolved}
       slug={request.listing.slug}
       aiAvailable={isAiConfigured()}
-      googleReviewUrl={request.listing.googleReviewUrl}
+      googleReviewUrl={googleReviewDestination(request.listing)}
       listing={{
         companyName: request.listing.companyName,
         logoUrl: request.listing.logoUrl ? listingLogoPath(request.listing.slug, request.listing.publishedAt) : null,

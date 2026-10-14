@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Link2, Pencil, Plus } from "lucide-react";
 import { requireCompletePartnerProfile } from "@/lib/auth/dal";
+import { Prisma } from "@/generated/prisma/client";
+import { db } from "@/lib/db";
 import { listTestimonialRequestLinks, testimonialRequestUrl } from "@/lib/testimonial-request-links";
 import { deleteTestimonialRequestLink } from "@/app/actions/testimonial-request-links";
 import { getSiteOrigin } from "@/lib/site-url";
@@ -27,7 +29,16 @@ import { CopyLinkButton } from "@/components/business-crm/copy-link-button";
 export default async function TestimonialRequestLinksPage() {
   const [user, locale] = await Promise.all([requireCompletePartnerProfile(), getDirectoryLocale()]);
   const t = getPortalTestimonialsStrings(locale);
-  const [links, siteOrigin] = await Promise.all([listTestimonialRequestLinks(user.id), getSiteOrigin()]);
+  const [links, siteOrigin, listingsWithoutGoogleLink] = await Promise.all([
+    listTestimonialRequestLinks(user.id),
+    getSiteOrigin(),
+    // Published businesses only — a draft isn't taking testimonials yet.
+    db.partnerListing.findMany({
+      where: { partnerId: user.id, publishedSnapshot: { not: Prisma.DbNull }, googleReviewUrl: null, googleMapsUrl: null },
+      select: { id: true, companyName: true },
+      orderBy: { companyName: "asc" },
+    }),
+  ]);
 
   return (
     <div className="space-y-6">
@@ -41,6 +52,24 @@ export default async function TestimonialRequestLinksPage() {
           </Link>
         }
       />
+
+      {listingsWithoutGoogleLink.length > 0 && (
+        <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900 dark:border-amber-900 dark:bg-amber-950/50 dark:text-amber-200">
+          <p className="font-medium">{t.googleLinkMissingTitle}</p>
+          <p className="mt-1">
+            {t.googleLinkMissingBody}
+            {listingsWithoutGoogleLink.map((listing, index) => (
+              <span key={listing.id}>
+                {index > 0 && ", "}
+                <Link href={`/business-portal/listings/${listing.id}`} className="font-medium underline">
+                  {listing.companyName}
+                </Link>
+              </span>
+            ))}
+          </p>
+          <p className="mt-1 text-xs opacity-80">{t.googleLinkMissingCta}</p>
+        </div>
+      )}
 
       <Card>
         <CardBody>

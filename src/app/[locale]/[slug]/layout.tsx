@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { googleReviewDestination } from "@/lib/google-business-profile";
 import { notFound } from "next/navigation";
 import { Eye, Globe, MapPin, MessageCircle, Phone } from "lucide-react";
 import {
@@ -750,7 +751,7 @@ export default async function ListingLayout({
               slug={slug}
               locale={resolved}
               aiAvailable={isAiConfigured()}
-              googleReviewUrl={listing.googleReviewUrl}
+              googleReviewUrl={googleReviewDestination(listing)}
               googleClientId={getPublicGoogleClientId()}
               visitor={testimonialVisitor ? { name: testimonialVisitor.name } : null}
               existingTestimonial={existingTestimonial}
@@ -789,7 +790,7 @@ export default async function ListingLayout({
             slug={slug}
             locale={resolved}
             aiAvailable={isAiConfigured()}
-            googleReviewUrl={listing.googleReviewUrl}
+            googleReviewUrl={googleReviewDestination(listing)}
             googleClientId={getPublicGoogleClientId()}
             visitor={testimonialVisitor ? { name: testimonialVisitor.name } : null}
             existingTestimonial={existingTestimonial}

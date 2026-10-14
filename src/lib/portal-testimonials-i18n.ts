@@ -28,6 +28,13 @@ export type PortalTestimonialsStrings = {
   // testimonial-links/page.tsx — the request-link list.
   linksPageTitle: string;
   linksPageDescription: string;
+  // Shown above the list when a listing has no Google link at all — without
+  // one, customers who finish a request never see the "also post it on
+  // Google" step (see googleReviewDestination in
+  // src/lib/google-business-profile.ts).
+  googleLinkMissingTitle: string;
+  googleLinkMissingBody: string;
+  googleLinkMissingCta: string;
   newRequestCta: string;
   linksEmptyTitle: string;
   linksEmptyDescription: string;
@@ -97,6 +104,10 @@ export const PORTAL_TESTIMONIALS_STRINGS: Record<DirectoryLocale, PortalTestimon
     linksPageTitle: "Request Testimonial",
     linksPageDescription:
       "Create a unique link to send a specific customer — no account needed on their end. It opens straight to a testimonial form, prefilled with whatever you already know about them.",
+    googleLinkMissingTitle: "Customers can't post to Google yet",
+    googleLinkMissingBody:
+      "After submitting, your customers are offered a one-tap way to also leave their testimonial as a Google review — but these businesses have no Google review link saved, so that step is hidden: ",
+    googleLinkMissingCta: "Open the business and add it under Business Details → Google review link.",
     newRequestCta: "New Testimonial Request",
     linksEmptyTitle: "No testimonial requests yet.",
     linksEmptyDescription:
@@ -158,6 +169,10 @@ export const PORTAL_TESTIMONIALS_STRINGS: Record<DirectoryLocale, PortalTestimon
     linksPageTitle: "请求评价",
     linksPageDescription:
       "创建专属链接发送给特定客户——对方无需注册账户，点击后会直接打开评价表单，并预先填入您已掌握的信息。",
+    googleLinkMissingTitle: "客户目前还无法发布到 Google",
+    googleLinkMissingBody:
+      "客户提交评价后，本可一键同时发布 Google 评论——但以下企业尚未保存 Google 评论链接，因此该步骤被隐藏：",
+    googleLinkMissingCta: "打开该企业，在「商家详情」→「Google 评价链接」中添加即可。",
     newRequestCta: "新建评价请求",
     linksEmptyTitle: "暂时还没有评价请求。",
     linksEmptyDescription: "创建一个链接，让客户直接前往您的评价表单——标注您为他们提供的服务，让评价更有针对性。",
@@ -217,6 +232,10 @@ export const PORTAL_TESTIMONIALS_STRINGS: Record<DirectoryLocale, PortalTestimon
     linksPageTitle: "Minta Testimoni",
     linksPageDescription:
       "Cipta pautan unik untuk dihantar kepada pelanggan tertentu — tanpa perlu akaun di pihak mereka. Ia terus membuka borang testimoni, telah diisi awal dengan apa sahaja yang anda sudah tahu tentang mereka.",
+    googleLinkMissingTitle: "Pelanggan belum boleh menyiarkan ke Google",
+    googleLinkMissingBody:
+      "Selepas menghantar, pelanggan anda boleh sekali gus meninggalkan ulasan Google dengan satu ketikan — tetapi perniagaan ini tiada pautan ulasan Google disimpan, jadi langkah itu disembunyikan: ",
+    googleLinkMissingCta: "Buka perniagaan tersebut dan tambahkannya di bawah Butiran Perniagaan → Pautan ulasan Google.",
     newRequestCta: "Permintaan Testimoni Baharu",
     linksEmptyTitle: "Belum ada permintaan testimoni.",
     linksEmptyDescription:

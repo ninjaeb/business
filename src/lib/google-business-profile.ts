@@ -23,3 +23,20 @@ export function formatUpdateForGoogleBusinessProfile(entry: ListingUpdateEntry):
     ? `${text.slice(0, GOOGLE_BUSINESS_PROFILE_POST_LIMIT - 1)}…`
     : text;
 }
+
+// Where a happy customer should be sent to leave a Google review for this
+// business — the "Leave it on Google too" button on the testimonial forms.
+// The direct "write a review" link the partner saved wins; failing that, the
+// business's own Google Maps place page (stored when its Google listing was
+// looked up — see googleMapsUrl in prisma/schema.prisma), where the Write a
+// review button is one tap away. Deliberately NOT a Google Maps *search* by
+// name as a last resort: a search can land on a different business with a
+// similar name, and the customer would then post a review about the wrong
+// place — worse than offering nothing. Null (button hidden) when the partner
+// has given us neither; the Request Testimonial page tells them so.
+export function googleReviewDestination(listing: {
+  googleReviewUrl: string | null;
+  googleMapsUrl: string | null;
+}): string | null {
+  return listing.googleReviewUrl || listing.googleMapsUrl || null;
+}
