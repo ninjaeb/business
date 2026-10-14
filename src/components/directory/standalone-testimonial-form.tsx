@@ -33,13 +33,20 @@ const MAX_TESTIMONIAL_PHOTOS = 4;
 // pop-up beside a field that may be off-screen by then.
 type MissingField = "name_required" | "rating_required" | "body_required";
 
+// Which field each missing-field message links back to (see FormErrorList).
+const MISSING_FIELD_TARGET: Record<MissingField, string> = {
+  name_required: "standalone-testimonial-name",
+  rating_required: "testimonial-rating",
+  body_required: "standalone-testimonial-body",
+};
+
 // Same shape as TestimonialForm's own StarPicker — duplicated rather than
 // shared, same "small enough to just copy" convention this codebase already
 // uses elsewhere (see MAX_TESTIMONIAL_PHOTOS's own comment in
 // testimonial-form.tsx) for the two forms to stay fully independent.
 function StarPicker({ value, onChange }: { value: number; onChange: (value: number) => void }) {
   return (
-    <div className="flex items-center gap-1" role="radiogroup" aria-label="Rating">
+    <div id="testimonial-rating" className="flex items-center gap-1" role="radiogroup" aria-label="Rating">
       {[1, 2, 3, 4, 5].map((star) => (
         <button
           key={star}
@@ -444,10 +451,10 @@ export function StandaloneTestimonialForm({
         </FieldGroup>
 
         <FormErrorList
-          messages={[
-            ...missing.map((code) => t.testimonialErrors[code]),
-            ...(aiError ? [aiError] : []),
-            ...(state?.status === "error" ? [t.testimonialErrors[state.code] ?? t.testimonialErrors.generic] : []),
+          items={[
+            ...missing.map((code) => ({ message: t.testimonialErrors[code], targetId: MISSING_FIELD_TARGET[code] })),
+            ...(aiError ? [{ message: aiError }] : []),
+            ...(state?.status === "error" ? [{ message: t.testimonialErrors[state.code] ?? t.testimonialErrors.generic }] : []),
           ]}
         />
 
