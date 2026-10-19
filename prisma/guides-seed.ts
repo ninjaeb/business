@@ -3776,4 +3776,972 @@ Tiada satu pun daripada ini memerlukan jabatan guaman — ia memerlukan mengetah
       },
     },
   },
+  {
+    slug: "terminating-an-employee-in-malaysia",
+    title: "Terminating an Employee in Malaysia: Notice, Termination Benefits, and Doing It Right",
+    seoTitle: "Terminating an Employee in Malaysia: A Guide",
+    seoDescription:
+      "Notice periods, termination benefits, retrenchment vs misconduct dismissal, CP22A and the mistakes that cause unfair dismissal claims for Malaysian SMEs.",
+    coverImage: {
+      file: "terminating-an-employee-in-malaysia-cover.webp",
+      mimeType: "image/webp",
+      alt: "A Malaysian business owner calmly handing a termination letter to an employee across a desk",
+      altTranslations: {
+        zh: "一位马来西亚企业主在办公桌前平静地将终止雇佣信交给员工",
+        ms: "Seorang pemilik perniagaan Malaysia dengan tenang menyerahkan surat penamatan kepada seorang pekerja di meja pejabat",
+      },
+    },
+    contentImages: {
+      paperwork: {
+        file: "terminating-an-employee-in-malaysia-paperwork.webp",
+        mimeType: "image/webp",
+        alt: "A business owner completing termination paperwork on a laptop with a calculator beside her",
+        altTranslations: {
+          zh: "一位企业主在笔记本电脑上办理终止雇佣的文件手续，旁边放着计算器",
+          ms: "Seorang pemilik perniagaan melengkapkan dokumen penamatan pekerjaan pada komputer riba dengan kalkulator di sisinya",
+        },
+        after: "Treat the paperwork as part of the termination itself, not an afterthought.",
+        afterTranslations: {
+          zh: "请把文件手续视为终止雇佣本身的一部分，而不是事后才补的工作。",
+          ms: "Anggaplah urusan dokumen sebagai sebahagian daripada penamatan itu sendiri, bukan sesuatu yang difikirkan kemudian.",
+        },
+      },
+    },
+    excerpt:
+      "Ending someone's employment is one of the riskiest things a small business does. This guide walks through how termination, retrenchment, and dismissal for misconduct differ in Malaysia, what notice and termination benefits typically apply, the tax clearance paperwork, and the procedural mistakes that turn a routine exit into an unfair dismissal claim.",
+    body: `Almost every Malaysian SME owner eventually has to end someone's employment — a poor fit, a role that no longer exists, a serious breach of trust. It is also one of the easiest places to get into legal trouble, because the right process depends on *why* the employment is ending, and the mistakes are rarely about the decision itself. They are about the notice, the money, the paperwork, and whether the employee was treated fairly along the way. This guide covers the main routes, what you typically owe, and how to run the process so a routine exit stays routine.
+
+This is general information, not legal advice. Thresholds, rates, and forms change, so confirm the current position with the Labour Department (JTKSM), LHDN, or a Malaysian employment lawyer before acting on a specific case.
+
+## 1. Work out which kind of ending this actually is
+
+Three different situations get lumped together as "firing someone", and each has its own rules:
+
+### Termination with notice
+Either side can end a contract of service by giving the notice stated in the contract. It still has to be in good faith — Malaysian law does not let an employer simply dismiss someone "without just cause or excuse" and call it a notice termination if the real reason is something else.
+
+### Retrenchment (redundancy)
+The job itself is no longer needed — a restructure, a closed outlet, lost revenue. The person is not at fault, so the expectations on process, fairness in selecting who goes, and benefits are higher than for an ordinary exit.
+
+### Dismissal for misconduct
+The employee did something seriously wrong — theft, fraud, repeated absence without leave, violence. The Employment Act allows dismissal without notice for misconduct, but only after a proper inquiry. Skipping the inquiry is the single most common way a justified dismissal becomes an unfair one.
+
+Before anything else, write down the real reason in one sentence and check that it fits one of these three boxes. If your reason is really "I don't like working with them" or "their performance has slipped" and you have no documented warnings, you are not in misconduct territory and should plan a different route.
+
+## 2. Get the notice period right
+
+If the contract states a notice period, that is the starting point and it must be the same for both sides. Where the contract is silent, the Employment Act's default periods typically apply:
+
+- Less than 2 years of service: 4 weeks
+- 2 years to under 5 years: 6 weeks
+- 5 years or more: 8 weeks
+
+### Working the notice versus paying in lieu
+You can either let the employee work the notice period or pay them wages equal to the notice in lieu and end the employment immediately. Paying in lieu is common when you would rather the person not remain on site, but it must be the full amount the notice would have earned, not a rounded-down figure.
+
+### Notice does not cure an unfair reason
+Giving the correct notice does not protect a termination that was really driven by something unlawful or unfair — for example, a pregnancy-related reason, a complaint the employee made, or a union activity. Notice answers "how", not "why".
+
+> A useful test before you terminate: could you explain the real reason, in plain words, to a labour officer or an industrial court who has never heard of your business — and could you show the paperwork that backs it up? If the honest answer is no, pause and fix that first.
+
+## 3. Understand termination benefits
+
+Employees covered by the Employment Act who have completed a minimum period of continuous service (the regulations have historically used 12 months) are typically entitled to termination or lay-off benefits when the employer ends the job without misconduct as the cause. The benefit is calculated per year of service, and the rate rises with seniority — commonly cited as around 10 days of wages per year for under 2 years of service, 15 days for 2 to under 5 years, and 20 days for 5 years or more, with part-years pro-rated.
+
+### Check who is actually covered
+Since the Employment Act amendments took effect in 2023, the Act covers all employees regardless of salary, but certain provisions — including some termination and lay-off benefit rules — still apply differently to employees earning above RM4,000 a month, unless they fall into specific categories. Look up the current First Schedule and the Employment (Termination and Lay-Off Benefits) Regulations before you calculate. Your employment contract may also promise more than the statutory minimum, and the contract wins if it is more generous.
+
+### Calculate on the right wage
+Benefits are based on a defined daily rate of pay derived from the employee's wages, not simply "basic salary divided by 30". Which components count (fixed allowances, for instance) can change the number, so work it through the regulation's definition rather than a shortcut.
+
+## 4. Run a misconduct dismissal properly
+
+Misconduct is where owners feel most justified — and where they are most often wrong on procedure. The sequence that holds up is:
+
+1. **Gather the facts first.** Preserve the evidence — CCTV, records, messages, witness statements — before confronting anyone.
+2. **Issue a written show-cause letter.** State exactly what the allegation is, and give the employee reasonable time to reply in writing.
+3. **Hold a domestic inquiry.** An impartial person or panel — not just the manager who raised the complaint — hears both sides, and the employee is allowed to present their case and name witnesses. Keep minutes.
+4. **Decide and put it in writing.** The outcome should be proportionate to the offence and consistent with how you have handled similar cases before. A written warning, suspension, downgrade, or dismissal are all options the Act contemplates.
+5. **Keep the file.** If it is ever challenged, that file is your defence.
+
+### Suspension during the inquiry
+An employer may suspend an employee pending inquiry, but the Act limits the period and generally requires that at least half of the wages be paid. Look up the current limits rather than improvising.
+
+## 5. Retrenchment: be fair about who goes
+
+Retrenchment is lawful, but the way you carry it out is scrutinised. Practical points:
+
+- **Show the business reason.** Documented financial figures, a restructure plan, or a closed operation all help.
+- **Use fair, neutral selection criteria.** The old "last in, first out" approach is widely seen as a reasonable default, but whatever you choose must be applied consistently and not used to remove someone you simply dislike.
+- **Consider alternatives first.** Redeployment, reduced hours by agreement, or a hiring freeze, where realistic.
+- **Notify the authorities where required.** Employers are generally expected to notify the Labour Department before a retrenchment, within a stated period — check the current requirement for your case.
+- **Pay the benefits and notice in full.** Retrenchment benefits sit on top of notice, not instead of it.
+
+## 6. Finish the paperwork and final pay
+
+Treat the paperwork as part of the termination itself, not an afterthought. Late or missing steps cause far more disputes than the decision to end the employment.
+
+### Final wages
+Wages owed — including unused leave that you are required to pay out, any notice pay, and termination benefits — must be paid within the time the Employment Act sets, which can be very short and sometimes is the last day itself. Don't delay payment while you "sort things out". Unlawful deductions to recover company property or debts are another frequent trap, so check what the Act actually permits you to deduct.
+
+### Tax clearance with LHDN
+Employers are generally required to notify LHDN of an employee's cessation of employment, using Form CP22A, at least 30 days before the employee's last day (or within a set period after death), and to withhold money owed to the employee until LHDN confirms. Check the current LHDN guidance for the exact deadline and process, including how it applies to non-citizen employees leaving Malaysia (a different form, CP21).
+
+### EPF, SOCSO, and EIS
+Make sure the final month's contributions are calculated and paid correctly on all final payments, and that the employee's records are updated. If your payroll is handled through a service provider, tell them the exact last day early.
+
+### Hand over a clear exit pack
+Give the employee a written termination letter, the final payslip showing every component, and — if you promised one — a confirmation of service letter. Collect company property with a checklist both of you sign.
+
+## 7. Handle the people side — and the risk
+
+Even a flawless process feels hard for everyone. A calm private meeting, a factual explanation of the decision, and enough time to ask questions do more to prevent a dispute than any clause in a letter.
+
+### Know the unfair dismissal claim window
+An employee who believes they were dismissed without just cause or excuse can make representations to the Industrial Relations Department, and the statutory window to do so is short — historically 60 days from the dismissal. The possible outcomes include reinstatement or compensation, and the process can take a long time and cost you management attention even if you ultimately win. Good documentation, not good arguments after the fact, is what protects you.
+
+### Protect the business too
+Remind the departing employee of confidentiality and any valid restraint terms in their contract, switch off system access on their last day, and tell customers who deal with them who their new contact is. If you are rebuilding the team afterwards, [a free, verified listing here](/en/signup) helps new candidates and customers find and trust your business, and you can [browse the directory](/en) for local payroll and HR service providers who handle this paperwork every day.
+
+## Common mistakes Malaysian SMEs make when terminating an employee
+
+- **Skipping the domestic inquiry for misconduct.** Dismissing someone on the spot, however clear the wrongdoing seems, without a written allegation and a hearing, turns many defensible dismissals into unfair ones.
+- **Using "notice" to disguise a different reason.** Paying notice does not fix a termination that was really because of pregnancy, a complaint, or a personality clash — and the employer bears the burden of showing the real reason.
+- **Forgetting the LHDN and payroll steps.** Missing the CP22A timing, paying final wages late, or getting EPF/SOCSO/EIS wrong on the final month are all avoidable, and each creates its own penalty risk on top of the termination itself.
+
+## Where to start
+
+- **Right now:** Write the real reason in one sentence and decide whether this is a termination with notice, a retrenchment, or misconduct. The rest of the process follows from that.
+- **This week:** Pull the employment contract, check the notice period, and calculate notice pay and any termination benefits using the current regulation and the employee's actual wage components.
+- **Before the meeting:** Prepare the termination letter, the final payslip figures, and the CP22A filing date so nothing is improvised on the day.
+- **Ongoing:** Keep a simple HR file for every employee — contract, warnings, appraisals, and leave records — so that if you ever have to terminate, the documentation already exists.
+
+Ending employment well is mostly about doing the boring things in the right order: an honest reason, the correct notice, the right money paid on time, and a paper trail that shows you treated the person fairly.`,
+    faqs: [
+      {
+        question: "How much notice do I have to give when terminating an employee in Malaysia?",
+        answer:
+          "Follow the notice period in the employment contract, which must be the same for both sides. If the contract is silent, the Employment Act's default periods typically apply: 4 weeks for under 2 years of service, 6 weeks for 2 to under 5 years, and 8 weeks for 5 years or more. You can also pay wages in lieu of notice instead of having the employee work it.",
+      },
+      {
+        question: "Do I have to pay termination benefits?",
+        answer:
+          "Often yes, when you end the job without misconduct as the cause and the employee has met the minimum service period. The regulations commonly cited set a rate per year of service that rises with seniority (around 10, 15, and 20 days of wages per year across the service bands), but who is covered and the exact figures depend on the current Employment Act schedules and regulations, so check them before calculating.",
+      },
+      {
+        question: "What is the difference between termination, retrenchment, and dismissal for misconduct?",
+        answer:
+          "Termination with notice ends the contract under its notice terms. Retrenchment is when the job is no longer needed and the employee is not at fault, so fairness in selection and benefits matters more. Dismissal for misconduct follows serious wrongdoing and is only safe after a proper written allegation and domestic inquiry.",
+      },
+      {
+        question: "Can I dismiss an employee immediately for misconduct?",
+        answer:
+          "The Employment Act allows dismissal without notice for misconduct, but only after due inquiry. Dismissing on the spot without giving the employee a written allegation and a chance to respond is the most common reason a justified dismissal is later found to be unfair.",
+      },
+      {
+        question: "What is Form CP22A and when do I file it?",
+        answer:
+          "CP22A is the form employers use to notify LHDN that an employee is ceasing employment, so tax clearance can be dealt with. It is generally due at least 30 days before the employee's last day, and employers are expected to withhold amounts owed to the employee until LHDN confirms. Check LHDN's current guidance for exact timing and exceptions.",
+      },
+      {
+        question: "How long does an employee have to claim unfair dismissal?",
+        answer:
+          "An employee who believes they were dismissed without just cause or excuse can make representations to the Industrial Relations Department, and the window is short — historically 60 days from the dismissal. Outcomes can include reinstatement or compensation, so having a documented reason and process matters.",
+      },
+      {
+        question: "When must I pay the employee's final wages?",
+        answer:
+          "The Employment Act sets short deadlines for wages owed on termination, which can be as soon as the last day of employment in some cases. Final pay should include wages owed, notice pay if applicable, any termination benefits, and any leave you are required to pay out. Check the current Act for the exact timing.",
+      },
+      {
+        question: "Can I terminate a pregnant employee?",
+        answer:
+          "The Employment Act generally prohibits terminating an employee because of pregnancy or an illness arising from it, with limited exceptions, and the employer bears the burden of showing the termination was for another reason. Get proper advice before ending the employment of a pregnant employee.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "在马来西亚终止员工雇佣：通知期、终止福利与正确做法",
+        excerpt:
+          "终止员工的雇佣关系，是小企业最容易出风险的事情之一。本指南说明在马来西亚，终止雇佣、裁员（Retrenchment）与因不当行为解雇有何不同，通常适用的通知期和终止福利，税务清税文件，以及那些会把一次普通离职变成不当解雇申诉的程序性错误。",
+        body: `几乎每位马来西亚中小企业主迟早都要结束某位员工的雇佣关系——可能是不合适，可能是职位不再需要，也可能是严重违背信任。这也是最容易惹上法律麻烦的地方，因为正确的流程取决于雇佣关系为何结束，而出错的往往不是决定本身，而是通知期、款项、文件，以及员工在整个过程中是否被公平对待。本指南介绍主要的几种途径、您通常需要支付什么，以及如何把整个流程走好，让一次常规离职保持常规。
+
+以下仅为一般资讯，并非法律意见。门槛、费率和表格都会变动，在处理具体个案之前，请向人力资源部劳工局（JTKSM）、内陆税收局（LHDN）或马来西亚的劳资律师确认最新情况。
+
+## 1. 先弄清楚这属于哪一种终止
+
+“开除某人”其实包含三种不同情形，各有各的规则：
+
+### 通知终止
+任何一方都可以按合约所列的通知期终止雇佣合约。但必须出于诚信——马来西亚法律不允许雇主在没有正当理由的情况下解雇员工，然后把它说成是通知终止，而真正的原因其实是别的事情。
+
+### 裁员（Retrenchment）
+这个职位本身已不再需要——可能是业务重组、门店关闭或收入下滑。员工本身没有过错，因此在流程、选择裁谁是否公平以及福利方面，要求比一般离职更高。
+
+### 因不当行为解雇
+员工做了严重错误的事——偷窃、欺诈、屡次无故旷工、暴力行为。《雇佣法令》允许因不当行为而不经通知解雇，但前提是经过适当的调查。省略调查，是正当解雇变成不公平解雇最常见的原因。
+
+在做其他任何事之前，请用一句话写下真正的原因，并检查它是否属于以上三类之一。如果您真正的理由其实是“我不喜欢和他共事”或“他的表现下滑了”，而又没有任何书面警告记录，那就不属于不当行为的范畴，应该规划另一条路径。
+
+## 2. 把通知期弄对
+
+如果合约列明了通知期，就以它为起点，而且双方必须相同。如果合约没有规定，通常适用《雇佣法令》的默认通知期：
+
+- 服务不满 2 年：4 周
+- 服务满 2 年但不满 5 年：6 周
+- 服务满 5 年或以上：8 周
+
+### 让员工做满通知期，还是以薪代通知
+您可以让员工做满通知期，也可以支付相当于通知期的工资，立即终止雇佣。如果您不希望对方继续留在公司，以薪代通知很常见，但必须付足通知期本应赚取的全额，而不是四舍五入后较少的数目。
+
+### 通知期并不能弥补不公平的理由
+给足通知期，并不能保护一项实际上出于违法或不公平原因的终止——例如与怀孕有关的原因、员工提出的投诉，或工会活动。通知期回答的是“怎么做”，而不是“为什么”。
+
+> 终止之前有一个很有用的检验：您能否用简单的话，向一位完全不了解您公司的劳工官员或劳资法庭解释真正的原因，并拿出支持它的文件？如果诚实的答案是不能，请先停下来，把这一点补好。
+
+## 3. 了解终止福利
+
+受《雇佣法令》保障、并已完成最低连续服务期（相关规定历来采用 12 个月）的员工，当雇主并非因不当行为而终止其工作时，通常有权获得终止或停工福利。福利按服务年资计算，年资越长，费率越高——常见的说法是：服务不满 2 年，每年约 10 天工资；2 年至不满 5 年，每年 15 天；5 年或以上，每年 20 天，不足一年的部分按比例计算。
+
+### 确认谁真正受保障
+自 2023 年《雇佣法令》修正案生效后，该法令涵盖所有员工，不论薪水高低，但某些条文——包括部分终止和停工福利规定——对月薪超过 RM4,000 的员工仍有不同的适用方式，除非他们属于特定类别。计算之前，请查阅最新的《第一附表》和《雇佣（终止与停工福利）规章》。您的雇佣合约也可能承诺了高于法定最低标准的福利，若合约更优厚，则以合约为准。
+
+### 按正确的工资计算
+福利是按由员工工资推算出的一个特定日薪来计算的，并不是简单的“基本薪金除以 30”。哪些组成部分计入（例如固定津贴），会改变最后的数字，所以请按规章的定义来算，而不要走捷径。
+
+## 4. 正确处理因不当行为的解雇
+
+不当行为是雇主最觉得自己有理的地方——也是程序上最常出错的地方。经得起检验的步骤是：
+
+1. **先收集事实。** 在与任何人对质之前，先保存证据——闭路电视、记录、讯息和证人陈述。
+2. **发出书面的“说明理由函”。** 明确写出指控的内容，并给员工合理的时间以书面回复。
+3. **举行内部调查聆讯。** 由公正的个人或小组——而不只是提出投诉的那位经理——听取双方陈述，并允许员工陈述自己的立场及传召证人。做好会议记录。
+4. **作出决定并以书面形式通知。** 处分应与过错相称，并与您过去处理类似个案的方式一致。书面警告、停职、降职或解雇，都是该法令所设想的选项。
+5. **保存档案。** 如果日后受到质疑，这份档案就是您的辩护依据。
+
+### 调查期间的停职
+雇主可以在调查期间令员工停职，但法令对期限有所限制，通常要求至少支付一半的工资。请查阅最新的限制，不要自行想当然。
+
+## 5. 裁员：公平地决定谁离开
+
+裁员是合法的，但执行的方式会受到严格审视。实用要点：
+
+- **说明业务理由。** 有记录的财务数据、重组计划或已关闭的业务，都有帮助。
+- **使用公平、中立的选择标准。** 传统的“后进先出”常被视为合理的默认做法，但无论您选择哪种方法，都必须一致地适用，不能借此除去您单纯不喜欢的人。
+- **先考虑替代方案。** 在现实可行的情况下，考虑调职、经双方同意缩短工时或暂停招聘。
+- **在需要时通知有关当局。** 一般预期雇主在裁员之前，会在规定期限内通知劳工局——请核对您个案目前的要求。
+- **全额支付福利和通知期工资。** 裁员福利是在通知期之外另加的，而不是用来取代通知期。
+
+## 6. 办妥文件手续与最后薪资
+
+请把文件手续视为终止雇佣本身的一部分，而不是事后才补的工作。延误或遗漏的步骤所引发的纠纷，远多于终止雇佣这个决定本身。
+
+### 最后的工资
+应付的款项——包括您必须发放的未休假期、通知期工资和终止福利——必须在《雇佣法令》规定的时间内支付，这个期限可能非常短，有时就是最后一天。请不要在“理清事情”的同时拖延付款。为追讨公司财物或欠款而作出的不合法扣除，也是常见的陷阱，所以请先查清法令实际允许您扣除什么。
+
+### 向 LHDN 办理清税
+一般而言，雇主需要使用 CP22A 表格，至少在员工最后工作日的 30 天前（或在员工去世后的规定期限内）通知 LHDN 员工即将终止雇佣，并在 LHDN 确认之前扣留应付给员工的款项。具体期限和程序，包括对于离开马来西亚的非公民员工如何适用（另一份表格，CP21），请核对 LHDN 的最新指引。
+
+### EPF、SOCSO 与 EIS
+确保最后一个月的供款，已按所有最后款项正确计算和缴付，并更新员工的记录。如果您的薪资由服务供应商处理，请尽早告诉对方确切的最后工作日。
+
+### 交出清晰的离职文件
+给员工一封书面的终止信、列明每一项的最后薪资单，如果您曾承诺过，还有一封服务证明信。用双方签名的清单收回公司财物。
+
+## 7. 处理人的一面，也处理风险
+
+即使流程毫无瑕疵，对所有人来说仍然不好受。一次平静的私下会面、对决定的事实性说明，以及足够的时间让对方提问，比信中任何条款都更能避免纠纷。
+
+### 了解不当解雇申诉的期限
+认为自己在没有正当理由下被解雇的员工，可以向劳资关系局提出申诉，而提出申诉的法定期限很短——历来是自被解雇之日起 60 天。可能的结果包括复职或赔偿，而且整个过程可能耗时很长，即使您最终胜诉，也会耗费管理层的精力。真正保护您的，是完善的文件记录，而不是事后的辩解。
+
+### 同时保护好企业
+提醒离职员工遵守保密义务及合约中任何有效的限制条款，在其最后一天关闭系统权限，并告知与其往来的客户今后的新联系人。如果您之后要重建团队，[在这里免费创建认证列表](/zh/signup)，有助于新的求职者和客户找到并信任您的企业，您也可以[浏览目录](/zh)，找到每天都在处理这类文件的本地薪资和人力资源服务商。
+
+## 马来西亚中小企业在终止雇佣时常犯的错误
+
+- **因不当行为解雇时省略内部调查。** 无论错误看起来多么明显，不经书面指控和聆讯就当场解雇，会让许多本来站得住脚的解雇变成不公平解雇。
+- **用“通知”来掩饰另一个原因。** 支付通知期工资，无法弥补一项实际上因怀孕、投诉或性格冲突而作出的终止——而且举证真正原因的责任在雇主。
+- **忘记 LHDN 和薪资方面的步骤。** 错过 CP22A 的时间、延迟支付最后工资，或最后一个月的 EPF/SOCSO/EIS 算错，都是可以避免的，而且每一项除了终止本身之外，还会带来各自的罚款风险。
+
+## 从哪里开始
+
+- **现在：** 用一句话写下真正的原因，并判断这是通知终止、裁员还是不当行为。其余的流程都由此而定。
+- **本周：** 调出雇佣合约，核对通知期，并根据最新规章和员工实际的工资组成，计算通知期工资及任何终止福利。
+- **会面之前：** 准备好终止信、最后薪资单的数字以及 CP22A 的提交日期，避免当天临时应付。
+- **持续做：** 为每位员工保存一份简单的人事档案——合约、警告、考核和假期记录——这样万一需要终止雇佣，文件早已齐备。
+
+把雇佣关系好好结束，主要就是按正确的顺序做好那些乏味的事：诚实的理由、正确的通知期、准时付清应付的款项，以及一份能证明您公平对待对方的文件记录。`,
+        faqs: [
+          {
+            question: "在马来西亚终止员工雇佣，需要提前多久通知？",
+            answer:
+              "按雇佣合约列明的通知期执行，且双方必须相同。如果合约没有规定，通常适用《雇佣法令》的默认通知期：服务不满 2 年为 4 周，2 年至不满 5 年为 6 周，5 年或以上为 8 周。您也可以支付相当于通知期的工资来代替通知，而不必让员工继续上班。",
+          },
+          {
+            question: "我必须支付终止福利吗？",
+            answer:
+              "当您并非因不当行为而终止工作，且员工已满足最低服务期时，通常需要支付。常被引用的规章按服务年资设定费率，年资越高越多（各服务年限段大约为每年 10、15 和 20 天工资），但谁受保障以及确切数字，取决于最新的《雇佣法令》附表和规章，所以计算前请先核对。",
+          },
+          {
+            question: "终止雇佣、裁员和因不当行为解雇有什么区别？",
+            answer:
+              "通知终止是按合约的通知条款结束合约。裁员是指职位不再需要而员工并无过错，因此选人是否公平和福利更为重要。因不当行为解雇则是在严重错误之后，只有在书面指控和内部调查聆讯之后才安全。",
+          },
+          {
+            question: "员工有不当行为，我可以立即解雇吗？",
+            answer:
+              "《雇佣法令》允许因不当行为而不经通知解雇，但必须经过适当的调查。不给员工书面指控和回应机会就当场解雇，是正当的解雇日后被认定为不公平的最常见原因。",
+          },
+          {
+            question: "CP22A 表格是什么？什么时候提交？",
+            answer:
+              "CP22A 是雇主用来通知 LHDN 员工即将终止雇佣的表格，以便办理清税。一般须在员工最后工作日的至少 30 天前提交，雇主也被要求在 LHDN 确认之前扣留应付给员工的款项。具体时间和例外情况，请核对 LHDN 的最新指引。",
+          },
+          {
+            question: "员工有多长时间可以申诉不当解雇？",
+            answer:
+              "认为自己在没有正当理由下被解雇的员工，可以向劳资关系局提出申诉，期限很短——历来是自被解雇之日起 60 天。结果可能包括复职或赔偿，所以有记录在案的理由和程序非常重要。",
+          },
+          {
+            question: "我什么时候必须支付员工的最后工资？",
+            answer:
+              "《雇佣法令》对终止雇佣时应付的工资设有很短的期限，某些情况下可能就是雇佣的最后一天。最后的付款应包括应付工资、通知期工资（如适用）、任何终止福利，以及您必须发放的假期折现。确切时间请查阅最新的法令。",
+          },
+          {
+            question: "我可以终止怀孕员工的雇佣吗？",
+            answer:
+              "《雇佣法令》一般禁止因怀孕或因怀孕引起的疾病而终止员工的雇佣，仅有少数例外，而且雇主有责任证明终止是出于其他原因。在终止怀孕员工的雇佣之前，请先取得适当的意见。",
+          },
+        ],
+      },
+      ms: {
+        title: "Menamatkan Pekerjaan Pekerja di Malaysia: Notis, Faedah Penamatan, dan Cara yang Betul",
+        excerpt:
+          "Menamatkan pekerjaan seseorang ialah salah satu perkara paling berisiko bagi perniagaan kecil. Panduan ini menerangkan perbezaan antara penamatan, pembuangan kerja (retrenchment), dan pemecatan kerana salah laku di Malaysia, notis dan faedah penamatan yang lazimnya terpakai, dokumen pelepasan cukai, serta kesilapan prosedur yang mengubah pemergian biasa menjadi tuntutan pemecatan tidak adil.",
+        body: `Hampir setiap pemilik PKS Malaysia akhirnya perlu menamatkan pekerjaan seseorang — kurang sesuai, jawatan yang tidak lagi diperlukan, atau pecah amanah yang serius. Ini juga antara tempat yang paling mudah menimbulkan masalah undang-undang, kerana proses yang betul bergantung pada *mengapa* pekerjaan itu ditamatkan, dan kesilapannya jarang berkaitan keputusan itu sendiri. Ia berkaitan notis, wang, dokumen, dan sama ada pekerja dilayan dengan adil sepanjang proses. Panduan ini merangkumi laluan utama, apa yang lazimnya perlu anda bayar, dan cara menjalankan proses supaya pemergian biasa kekal biasa.
+
+Ini ialah maklumat am, bukan nasihat undang-undang. Ambang, kadar, dan borang sentiasa berubah, jadi sahkan kedudukan semasa dengan Jabatan Tenaga Kerja (JTKSM), LHDN, atau peguam pekerjaan Malaysia sebelum bertindak dalam kes tertentu.
+
+## 1. Tentukan jenis penamatan yang sebenarnya
+
+Tiga situasi berbeza sering dicampur aduk sebagai "memecat seseorang", dan setiap satu ada peraturan tersendiri:
+
+### Penamatan dengan notis
+Mana-mana pihak boleh menamatkan kontrak perkhidmatan dengan memberi notis yang dinyatakan dalam kontrak. Ia tetap mesti dibuat dengan niat baik — undang-undang Malaysia tidak membenarkan majikan memecat seseorang "tanpa sebab atau alasan yang munasabah" lalu menamakannya penamatan dengan notis sedangkan sebab sebenarnya perkara lain.
+
+### Pembuangan kerja (retrenchment)
+Jawatan itu sendiri tidak lagi diperlukan — penstrukturan semula, outlet ditutup, atau hasil merosot. Pekerja tidak bersalah, jadi jangkaan terhadap proses, keadilan dalam memilih siapa yang pergi, dan faedah lebih tinggi daripada penamatan biasa.
+
+### Pemecatan kerana salah laku
+Pekerja melakukan sesuatu yang sangat salah — kecurian, penipuan, ketidakhadiran berulang tanpa cuti, keganasan. Akta Kerja membenarkan pemecatan tanpa notis kerana salah laku, tetapi hanya selepas siasatan yang sewajarnya. Mengabaikan siasatan ialah cara paling biasa pemecatan yang wajar bertukar menjadi tidak adil.
+
+Sebelum apa-apa lagi, tulis sebab sebenar dalam satu ayat dan semak sama ada ia sesuai dengan salah satu daripada tiga kategori ini. Jika sebab anda sebenarnya "saya tidak suka bekerja dengannya" atau "prestasinya merosot" dan anda tiada amaran bertulis, ini bukan kes salah laku dan anda perlu merancang laluan lain.
+
+## 2. Tetapkan tempoh notis dengan betul
+
+Jika kontrak menyatakan tempoh notis, itulah titik permulaan dan ia mestilah sama untuk kedua-dua pihak. Jika kontrak tidak menyatakannya, tempoh lalai Akta Kerja lazimnya terpakai:
+
+- Kurang 2 tahun perkhidmatan: 4 minggu
+- 2 tahun hingga kurang 5 tahun: 6 minggu
+- 5 tahun atau lebih: 8 minggu
+
+### Bekerja sepanjang notis atau bayaran gantian notis
+Anda boleh membenarkan pekerja bekerja sepanjang tempoh notis, atau membayar gaji yang sama dengan tempoh notis sebagai gantian dan menamatkan pekerjaan serta-merta. Bayaran gantian notis lazim apabila anda tidak mahu individu itu kekal di premis, tetapi ia mesti jumlah penuh yang akan diperoleh sepanjang notis, bukan angka yang dibundarkan ke bawah.
+
+### Notis tidak memulihkan sebab yang tidak adil
+Memberi notis yang betul tidak melindungi penamatan yang sebenarnya didorong oleh sebab yang menyalahi undang-undang atau tidak adil — contohnya sebab berkaitan kehamilan, aduan yang dibuat pekerja, atau aktiviti kesatuan. Notis menjawab "bagaimana", bukan "mengapa".
+
+> Ujian yang berguna sebelum anda menamatkan pekerjaan: bolehkah anda menerangkan sebab sebenar, dengan bahasa mudah, kepada pegawai buruh atau mahkamah perusahaan yang tidak pernah mendengar tentang perniagaan anda — dan bolehkah anda menunjukkan dokumen yang menyokongnya? Jika jawapan jujur ialah tidak, berhenti dahulu dan betulkan perkara itu.
+
+## 3. Fahami faedah penamatan
+
+Pekerja yang dilindungi Akta Kerja dan telah menamatkan tempoh perkhidmatan berterusan minimum (peraturan secara sejarahnya menggunakan 12 bulan) lazimnya berhak mendapat faedah penamatan atau pemberhentian sementara apabila majikan menamatkan pekerjaan tanpa salah laku sebagai punca. Faedah dikira bagi setiap tahun perkhidmatan, dan kadarnya meningkat mengikut tempoh khidmat — yang lazim disebut ialah sekitar 10 hari gaji setahun bagi kurang 2 tahun perkhidmatan, 15 hari bagi 2 hingga kurang 5 tahun, dan 20 hari bagi 5 tahun atau lebih, dengan bahagian tahun dikira secara pro rata.
+
+### Semak siapa yang sebenarnya dilindungi
+Sejak pindaan Akta Kerja berkuat kuasa pada 2023, Akta itu meliputi semua pekerja tanpa mengira gaji, tetapi sesetengah peruntukan — termasuk beberapa peraturan faedah penamatan dan pemberhentian sementara — masih terpakai secara berbeza kepada pekerja bergaji melebihi RM4,000 sebulan, melainkan mereka tergolong dalam kategori tertentu. Rujuk Jadual Pertama semasa dan Peraturan-Peraturan Kerja (Faedah Penamatan dan Pemberhentian Sementara) sebelum anda mengira. Kontrak pekerjaan anda mungkin juga menjanjikan lebih daripada minimum berkanun, dan kontrak diutamakan jika ia lebih murah hati.
+
+### Kira berdasarkan gaji yang betul
+Faedah dikira berdasarkan kadar upah harian tertentu yang diperoleh daripada gaji pekerja, bukan sekadar "gaji pokok dibahagi 30". Komponen yang diambil kira (contohnya elaun tetap) boleh mengubah angka itu, jadi kira mengikut takrifan peraturan, bukan jalan pintas.
+
+## 4. Jalankan pemecatan salah laku dengan betul
+
+Salah laku ialah tempat majikan paling merasa dirinya benar — dan paling kerap silap dari segi prosedur. Urutan yang tahan diuji ialah:
+
+1. **Kumpulkan fakta dahulu.** Simpan bukti — CCTV, rekod, mesej, kenyataan saksi — sebelum berdepan dengan sesiapa.
+2. **Keluarkan surat tunjuk sebab bertulis.** Nyatakan dengan tepat apa tuduhannya, dan beri pekerja masa yang munasabah untuk membalas secara bertulis.
+3. **Adakan siasatan dalaman.** Individu atau panel yang tidak berat sebelah — bukan hanya pengurus yang membangkitkan aduan — mendengar kedua-dua pihak, dan pekerja dibenarkan membentangkan kesnya serta menamakan saksi. Simpan minit.
+4. **Putuskan dan nyatakan secara bertulis.** Keputusan hendaklah setimpal dengan kesalahan dan konsisten dengan cara anda mengendalikan kes serupa sebelum ini. Amaran bertulis, penggantungan, penurunan pangkat, atau pemecatan semuanya pilihan yang difikirkan oleh Akta.
+5. **Simpan fail.** Jika ia dicabar, fail itulah pembelaan anda.
+
+### Penggantungan semasa siasatan
+Majikan boleh menggantung pekerja sementara menunggu siasatan, tetapi Akta mengehadkan tempohnya dan lazimnya mensyaratkan sekurang-kurangnya separuh gaji dibayar. Semak had semasa, jangan berimprovisasi.
+
+## 5. Pembuangan kerja: berlaku adil tentang siapa yang pergi
+
+Pembuangan kerja adalah sah, tetapi cara anda melaksanakannya diteliti. Perkara praktikal:
+
+- **Tunjukkan sebab perniagaan.** Angka kewangan yang didokumenkan, pelan penstrukturan semula, atau operasi yang ditutup semuanya membantu.
+- **Gunakan kriteria pemilihan yang adil dan neutral.** Pendekatan lama "masuk terakhir, keluar dahulu" dianggap meluas sebagai lalai yang munasabah, tetapi apa pun pilihan anda mesti digunakan secara konsisten dan tidak digunakan untuk menyingkirkan seseorang yang anda tidak suka.
+- **Pertimbangkan alternatif dahulu.** Penempatan semula, pengurangan jam kerja dengan persetujuan, atau pembekuan pengambilan pekerja, jika realistik.
+- **Maklumkan pihak berkuasa jika dikehendaki.** Majikan lazimnya dijangka memaklumkan Jabatan Tenaga Kerja sebelum pembuangan kerja, dalam tempoh yang ditetapkan — semak keperluan semasa untuk kes anda.
+- **Bayar faedah dan notis sepenuhnya.** Faedah pembuangan kerja adalah tambahan kepada notis, bukan gantinya.
+
+## 6. Selesaikan dokumen dan bayaran akhir
+
+Anggaplah urusan dokumen sebagai sebahagian daripada penamatan itu sendiri, bukan sesuatu yang difikirkan kemudian. Langkah yang lewat atau tertinggal menyebabkan lebih banyak pertikaian daripada keputusan menamatkan pekerjaan itu sendiri.
+
+### Gaji akhir
+Gaji yang terhutang — termasuk cuti tidak digunakan yang anda wajib bayar, bayaran notis, dan faedah penamatan — mesti dibayar dalam masa yang ditetapkan Akta Kerja, yang boleh sangat singkat dan kadangkala ialah hari terakhir itu sendiri. Jangan lewatkan bayaran semasa anda "menyelesaikan perkara". Potongan tidak sah untuk menuntut semula harta syarikat atau hutang juga perangkap yang kerap, jadi semak apa yang sebenarnya dibenarkan Akta untuk anda potong.
+
+### Pelepasan cukai dengan LHDN
+Majikan lazimnya dikehendaki memaklumkan LHDN tentang pemberhentian pekerjaan seseorang pekerja menggunakan Borang CP22A, sekurang-kurangnya 30 hari sebelum hari terakhir pekerja (atau dalam tempoh yang ditetapkan selepas kematian), dan menahan wang yang terhutang kepada pekerja sehingga LHDN mengesahkan. Semak panduan semasa LHDN untuk tarikh akhir dan proses yang tepat, termasuk bagaimana ia terpakai kepada pekerja bukan warganegara yang meninggalkan Malaysia (borang lain, CP21).
+
+### KWSP, PERKESO, dan SIP
+Pastikan caruman bulan terakhir dikira dan dibayar dengan betul ke atas semua bayaran akhir, dan rekod pekerja dikemas kini. Jika gaji anda diuruskan melalui penyedia perkhidmatan, maklumkan hari terakhir yang tepat kepada mereka lebih awal.
+
+### Serahkan pek keluar yang jelas
+Beri pekerja surat penamatan bertulis, slip gaji akhir yang menunjukkan setiap komponen, dan — jika anda telah berjanji — surat pengesahan perkhidmatan. Ambil semula harta syarikat dengan senarai semak yang ditandatangani kedua-dua pihak.
+
+## 7. Uruskan sisi manusia — dan risikonya
+
+Walaupun proses sempurna, ia tetap sukar bagi semua orang. Pertemuan peribadi yang tenang, penjelasan fakta tentang keputusan itu, dan masa yang cukup untuk bertanya lebih banyak mencegah pertikaian berbanding mana-mana klausa dalam surat.
+
+### Ketahui tempoh tuntutan pemecatan tidak adil
+Pekerja yang percaya mereka dipecat tanpa sebab atau alasan yang munasabah boleh membuat representasi kepada Jabatan Perhubungan Perusahaan, dan tempoh berkanun untuk berbuat demikian singkat — secara sejarahnya 60 hari dari pemecatan. Kemungkinan hasilnya termasuk penempatan semula atau pampasan, dan prosesnya boleh mengambil masa yang lama serta menyita perhatian pengurusan walaupun anda akhirnya menang. Dokumentasi yang baik, bukan hujah yang baik selepas kejadian, yang melindungi anda.
+
+### Lindungi perniagaan juga
+Ingatkan pekerja yang pergi tentang kerahsiaan dan sebarang terma sekatan yang sah dalam kontrak mereka, matikan akses sistem pada hari terakhir, dan beritahu pelanggan yang berurusan dengan mereka siapa hubungan baharu mereka. Jika anda membina semula pasukan selepas itu, [penyenaraian percuma dan disahkan di sini](/ms/signup) membantu calon dan pelanggan baharu menemui dan mempercayai perniagaan anda, dan anda boleh [layari direktori](/ms) untuk penyedia perkhidmatan gaji dan HR tempatan yang mengendalikan dokumen ini setiap hari.
+
+## Kesilapan lazim PKS Malaysia ketika menamatkan pekerjaan
+
+- **Mengabaikan siasatan dalaman untuk salah laku.** Memecat seseorang serta-merta, sejelas mana pun kesalahannya, tanpa tuduhan bertulis dan pendengaran, menjadikan banyak pemecatan yang boleh dipertahankan sebagai pemecatan yang tidak adil.
+- **Menggunakan "notis" untuk menyembunyikan sebab lain.** Membayar notis tidak membetulkan penamatan yang sebenarnya kerana kehamilan, aduan, atau perselisihan peribadi — dan majikan menanggung beban untuk menunjukkan sebab sebenar.
+- **Melupakan langkah LHDN dan gaji.** Terlepas tarikh CP22A, lewat membayar gaji akhir, atau tersalah KWSP/PERKESO/SIP bulan terakhir semuanya boleh dielakkan, dan setiap satu mencipta risiko penalti tersendiri di atas penamatan itu.
+
+## Di mana untuk bermula
+
+- **Sekarang:** Tulis sebab sebenar dalam satu ayat dan tentukan sama ada ini penamatan dengan notis, pembuangan kerja, atau salah laku. Proses selebihnya mengikut daripada itu.
+- **Minggu ini:** Ambil kontrak pekerjaan, semak tempoh notis, dan kira gaji notis serta sebarang faedah penamatan menggunakan peraturan semasa dan komponen gaji sebenar pekerja.
+- **Sebelum pertemuan:** Sediakan surat penamatan, angka slip gaji akhir, dan tarikh pemfailan CP22A supaya tiada apa yang diimprovisasi pada hari itu.
+- **Berterusan:** Simpan fail HR yang ringkas untuk setiap pekerja — kontrak, amaran, penilaian, dan rekod cuti — supaya jika anda perlu menamatkan pekerjaan, dokumentasinya sudah ada.
+
+Menamatkan pekerjaan dengan baik kebanyakannya tentang melakukan perkara-perkara membosankan mengikut urutan yang betul: sebab yang jujur, notis yang betul, wang yang tepat dibayar pada masanya, dan jejak dokumen yang menunjukkan anda melayan orang itu dengan adil.`,
+        faqs: [
+          {
+            question: "Berapa lama notis yang perlu saya beri apabila menamatkan pekerjaan pekerja di Malaysia?",
+            answer:
+              "Ikut tempoh notis dalam kontrak pekerjaan, yang mesti sama untuk kedua-dua pihak. Jika kontrak tidak menyatakannya, tempoh lalai Akta Kerja lazimnya terpakai: 4 minggu untuk kurang 2 tahun perkhidmatan, 6 minggu untuk 2 hingga kurang 5 tahun, dan 8 minggu untuk 5 tahun atau lebih. Anda juga boleh membayar gaji sebagai ganti notis dan bukannya meminta pekerja bekerja sepanjang notis.",
+          },
+          {
+            question: "Adakah saya wajib membayar faedah penamatan?",
+            answer:
+              "Selalunya ya, apabila anda menamatkan pekerjaan tanpa salah laku sebagai punca dan pekerja telah memenuhi tempoh perkhidmatan minimum. Peraturan yang lazim disebut menetapkan kadar bagi setiap tahun perkhidmatan yang meningkat mengikut tempoh khidmat (sekitar 10, 15, dan 20 hari gaji setahun merentasi band perkhidmatan), tetapi siapa yang dilindungi dan angka tepat bergantung pada jadual dan peraturan Akta Kerja semasa, jadi semak sebelum mengira.",
+          },
+          {
+            question: "Apakah perbezaan antara penamatan, pembuangan kerja, dan pemecatan kerana salah laku?",
+            answer:
+              "Penamatan dengan notis menamatkan kontrak mengikut terma notisnya. Pembuangan kerja ialah apabila jawatan tidak lagi diperlukan dan pekerja tidak bersalah, jadi keadilan dalam pemilihan dan faedah lebih penting. Pemecatan kerana salah laku mengikuti kesalahan serius dan hanya selamat selepas tuduhan bertulis dan siasatan dalaman yang sewajarnya.",
+          },
+          {
+            question: "Bolehkah saya memecat pekerja serta-merta kerana salah laku?",
+            answer:
+              "Akta Kerja membenarkan pemecatan tanpa notis kerana salah laku, tetapi hanya selepas siasatan yang sewajarnya. Memecat serta-merta tanpa memberi pekerja tuduhan bertulis dan peluang membalas ialah sebab paling biasa pemecatan yang wajar kemudiannya didapati tidak adil.",
+          },
+          {
+            question: "Apakah Borang CP22A dan bila saya perlu memfailkannya?",
+            answer:
+              "CP22A ialah borang yang digunakan majikan untuk memaklumkan LHDN bahawa seorang pekerja akan menamatkan pekerjaan, supaya pelepasan cukai dapat diuruskan. Ia lazimnya perlu dikemukakan sekurang-kurangnya 30 hari sebelum hari terakhir pekerja, dan majikan dijangka menahan jumlah yang terhutang kepada pekerja sehingga LHDN mengesahkan. Semak panduan semasa LHDN untuk masa dan pengecualian yang tepat.",
+          },
+          {
+            question: "Berapa lama pekerja boleh menuntut pemecatan tidak adil?",
+            answer:
+              "Pekerja yang percaya mereka dipecat tanpa sebab atau alasan yang munasabah boleh membuat representasi kepada Jabatan Perhubungan Perusahaan, dan tempohnya singkat — secara sejarahnya 60 hari dari pemecatan. Hasilnya boleh termasuk penempatan semula atau pampasan, jadi mempunyai sebab dan proses yang didokumenkan adalah penting.",
+          },
+          {
+            question: "Bilakah saya mesti membayar gaji akhir pekerja?",
+            answer:
+              "Akta Kerja menetapkan tarikh akhir yang singkat untuk gaji yang terhutang semasa penamatan, yang dalam sesetengah kes boleh secepat hari terakhir pekerjaan. Bayaran akhir hendaklah merangkumi gaji terhutang, gaji notis jika berkenaan, sebarang faedah penamatan, dan sebarang cuti yang anda wajib bayar. Semak Akta semasa untuk masa yang tepat.",
+          },
+          {
+            question: "Bolehkah saya menamatkan pekerjaan pekerja yang mengandung?",
+            answer:
+              "Akta Kerja amnya melarang penamatan pekerja kerana kehamilan atau penyakit akibat kehamilan, dengan pengecualian terhad, dan majikan menanggung beban untuk menunjukkan penamatan itu atas sebab lain. Dapatkan nasihat yang sewajarnya sebelum menamatkan pekerjaan pekerja yang mengandung.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "sme-grants-and-funding-in-malaysia",
+    title: "SME Grants and Funding in Malaysia: Where to Look Before You Borrow",
+    seoTitle: "SME Grants and Funding in Malaysia: A Practical Guide",
+    seoDescription:
+      "Government grants, soft loans and guarantees for Malaysian SMEs: SME Corp, BNM funds, TEKUN, MARA and BSN, plus how to compare a grant against a loan.",
+    coverImage: {
+      file: "sme-grants-and-funding-in-malaysia-cover.webp",
+      mimeType: "image/webp",
+      alt: "A Malaysian small business owner reading a funding scheme brochure on a tablet in her shop",
+      altTranslations: {
+        zh: "一位马来西亚小企业主在店里用平板电脑阅读融资计划资料",
+        ms: "Seorang pemilik perniagaan kecil Malaysia membaca risalah skim pembiayaan pada tablet di kedainya",
+      },
+    },
+    contentImages: {
+      compare: {
+        file: "sme-grants-and-funding-in-malaysia-compare.webp",
+        mimeType: "image/webp",
+        alt: "A business owner comparing a bank loan offer and a government grant side by side",
+        altTranslations: {
+          zh: "一位企业主并排比较银行贷款方案与政府补助",
+          ms: "Seorang pemilik perniagaan membandingkan tawaran pinjaman bank dan geran kerajaan secara bersebelahan",
+        },
+        after: "Put the grant and the loan side by side on one page before you decide anything.",
+        afterTranslations: {
+          zh: "在做任何决定之前，请先把补助和贷款并排放在同一页上比较。",
+          ms: "Letakkan geran dan pinjaman bersebelahan pada satu halaman sebelum anda membuat sebarang keputusan.",
+        },
+      },
+    },
+    excerpt:
+      "Before you take a bank loan, it is worth knowing what government-backed grants, soft loans and guarantees exist for Malaysian SMEs. This guide maps the main sources — SME Corp, Bank Negara funds, TEKUN, MARA and Bank Simpanan Nasional — explains how eligibility usually works, and shows how to compare a grant against a loan before committing to either.",
+    body: `Most Malaysian SME owners reach for a bank loan first, simply because it is the option they already know. But the government and its agencies run a long list of grants, soft loans, and loan guarantees that are cheaper, more patient, or easier to qualify for than a commercial loan — and many owners never look at them because the landscape feels confusing. This guide gives you a map of the main sources, explains how eligibility typically works, and walks through how to compare a grant against a loan so you commit to the right one.
+
+Funding schemes change often — allocations are topped up, programmes close, and rules are revised from year to year. Treat the details below as a starting point and confirm current terms on each agency's own website before you apply.
+
+## 1. First, understand the difference between a grant, a soft loan, and a guarantee
+
+The word "grant" gets used loosely in headlines and on social media, and the difference matters a great deal for your cash flow.
+
+### Grants
+Money you do not have to repay, usually tied to a specific purpose such as adopting digital tools, buying equipment, or training staff. Many are **matching grants**: you spend first and are reimbursed a percentage afterwards, which means you still need the cash up front.
+
+### Soft loans and financing schemes
+Loans offered at below-market rates or on easier terms, often channelled through banks or development financial institutions. Some schemes also let a portion of the financing convert into a grant if you repay on time and meet conditions — always check whether that conversion is real and what you must do to earn it.
+
+### Guarantees
+Not money at all, but a government-backed promise to the lender that covers part of the risk. If your bank says no because you lack collateral, a guarantee scheme may be what changes the answer.
+
+A scheme announced as an "RM-million SME grant" in the news may turn out, on reading the fine print, to be financing that you repay. Always read the terms to find out which of the three you are looking at.
+
+## 2. Know the main places to look
+
+### SME Corp Malaysia
+The national coordinating agency for SMEs. It runs or co-runs various development programmes and is the usual starting point for finding which schemes you might qualify for. Many programmes require an MSME status certificate from SME Corp as proof that your business meets the official size definition, so it is worth getting that early.
+
+### Bank Negara Malaysia funds
+BNM has historically set up special funds that are channelled through participating banks, including facilities aimed at automation and digitalisation and at high-tech or green investments. You apply through a participating bank, not to BNM directly, so ask your bank which BNM-backed facilities it offers.
+
+### TEKUN Nasional
+A government-backed micro-financing body focused mainly on Bumiputera entrepreneurs, with relatively small, fast financing aimed at micro and small businesses. Allocations and approval processes have been revised more than once in recent years, so check current ceilings and turnaround times directly.
+
+### Bank Simpanan Nasional (BSN)
+BSN offers micro-financing products for small businesses, including government-supported schemes channelled through its branches. It tends to suit very small businesses that may have difficulty getting a conventional bank loan.
+
+### MARA
+MARA offers business financing and entrepreneurship support aimed at Bumiputera entrepreneurs, including some training and premises-related programmes in addition to financing.
+
+### Credit guarantee schemes
+The credit guarantee agency backs a portion of loans from banks to SMEs that lack sufficient collateral. These are applied for through a participating bank rather than directly, so the practical step is asking your bank whether your loan can be covered.
+
+### Other routes worth a look
+Industry-specific agencies and ministries sometimes run their own grants — for exporters, halal producers, tech or digital businesses, women entrepreneurs, and youth entrepreneurs. A training levy scheme for employers may also help cover staff training costs if you are a registered employer. Check each one's current rules.
+
+## 3. How eligibility usually works
+
+Every scheme has its own rules, but a handful of requirements come up again and again:
+
+- **Business registration.** A registered business with SSM, with a current registration and a business bank account.
+- **Business size.** Falls within the official SME or micro-enterprise definition for your sector, which is why the SME Corp certificate matters.
+- **Ownership.** Some schemes require a minimum level of Malaysian or Bumiputera equity.
+- **Trading track record.** Many want a minimum period of operation, often around 12 months, and some want to see financial statements or bank statements.
+- **Good standing.** No serious defaults, tax arrears, or a poor credit record with CCRIS, and up-to-date statutory filings.
+- **A clear use of funds.** Most schemes fund a specific purpose, so a purpose-built plan is more convincing than a vague request for "working capital".
+
+> The most common reason applications fail is not a lack of eligibility but missing paperwork and an unclear purpose. A tidy set of documents and a one-page explanation of exactly what you will spend the money on and what it will change in your business will put you ahead of many applicants.
+
+## 4. Compare a grant against a loan before committing to either
+
+A grant sounds better than a loan every time, but the real comparison is about cost, cash flow, and risk, not just whether you repay.
+
+Put the grant and the loan side by side on one page before you decide anything. For each option, write down:
+
+1. **Amount and what it can be used for.** Grants are usually narrower. A loan can often be used more freely.
+2. **Total cost.** For a loan, the interest or profit rate, fees, and total repayment. For a grant, any matching contribution you have to put in yourself.
+3. **When the money arrives.** Matching and reimbursement grants pay out after you spend, so you need the cash or a bridging facility first. Many loans disburse up front.
+4. **Time and effort.** Grant applications can take months of paperwork and waiting; some are competitive and may be oversubscribed. Count the cost of your own time.
+5. **Strings attached.** Reporting duties, restrictions on what you can buy or from whom, clawback if you miss milestones, and any security or personal guarantee a loan demands.
+6. **Risk if things go wrong.** A loan has to be repaid even if sales drop. A grant that was spent as agreed generally does not.
+
+### Do not chase a grant that doesn't fit your plan
+It is tempting to change what you were going to do just to qualify for money. Buying equipment you do not need, or timing an expansion around a scheme's deadline, can leave you worse off than a plain loan for the right purchase. A good rule: only apply for a scheme if you would have made that investment anyway.
+
+### Combining sources
+These are not always either-or. A grant might fund part of a project while a loan covers the rest, and a guarantee might help you secure that loan. Some schemes limit stacking multiple government sources for the same cost, so check the rules before you combine them.
+
+## 5. Prepare your application so it actually gets approved
+
+1. **Get your basics in order.** SSM registration, business bank account, tax filings, and — if the scheme requires it — your MSME certificate.
+2. **Prepare simple financials.** Recent bank statements, management accounts, and a short projection showing how you will repay or deliver the project.
+3. **Write a clear one-page use of funds.** What you will buy, from whom, at what cost, and what it will improve.
+4. **Collect quotations.** Two or three supplier quotes for any equipment or services strengthen an application and often are required.
+5. **Check your credit position.** Review your CCRIS report so there are no surprises, and clear anything that can be cleared.
+6. **Apply through the right channel.** Some schemes go through a bank, some directly to an agency, and some through an online portal. Applying in the wrong place wastes weeks.
+7. **Keep every record.** Grants especially need receipts and proof of spending for claims and audits later.
+
+Being easy to find and verify also helps when assessors and lenders look you up — [a free, verified listing here](/en/signup) is a small way to show your business is real and active, and you can [browse the directory](/en) for local accountants and consultants who help SMEs prepare funding applications.
+
+## Common mistakes Malaysian SMEs make when seeking funding
+
+- **Assuming every "SME grant" is free money.** Many headline schemes are loans or financing, some with only a partial grant element, so read what you actually repay before getting excited.
+- **Forgetting the cash-flow gap on matching grants.** If you must spend first and claim later, a grant you can't pre-fund is a grant you can't use.
+- **Applying in a rush with weak paperwork.** Missing statements, no quotations, and a vague purpose are the usual reasons applications stall, and a rejected application can slow a later one.
+
+## Where to start
+
+- **This week:** Confirm your SSM registration is current, open or tidy your business bank account, and check whether you qualify for an MSME status certificate.
+- **Next:** List the one or two things you genuinely plan to spend money on this year, then look up which of the agencies above fund that kind of purpose.
+- **Before you apply:** Fill in the side-by-side comparison for your best grant option and your best loan option, and only proceed with the one that still wins on cost, cash flow, and risk.
+- **Ongoing:** Ask your bank which government-backed facilities or guarantees it offers, and check the agencies' websites a few times a year, since allocations and rules change.
+
+The aim is not to get every available scheme. It is to find the cheapest, safest money that fits something you were already going to do — and to know exactly what it will cost you before you say yes.`,
+    faqs: [
+      {
+        question: "What is the difference between a grant and a loan for SMEs in Malaysia?",
+        answer:
+          "A grant is money you do not have to repay, usually for a specific purpose, and many are matching grants where you spend first and are reimbursed a share. A loan, including a soft loan from a government-backed scheme, has to be repaid with interest or profit. Read the scheme's terms carefully, because some programmes described as grants are actually financing.",
+      },
+      {
+        question: "Where should I start looking for SME funding in Malaysia?",
+        answer:
+          "Start with SME Corp Malaysia, which coordinates SME development programmes, then check Bank Negara Malaysia-backed facilities through your bank, TEKUN Nasional, Bank Simpanan Nasional, and MARA. Credit guarantee schemes, applied for through a participating bank, can help if you lack collateral. Always confirm current terms on each agency's own site.",
+      },
+      {
+        question: "Do I need an MSME status certificate to apply?",
+        answer:
+          "Many SME Corp-linked programmes ask for a valid MSME status certificate as proof that your business meets the official size definition. Not every scheme requires it, but getting it early often saves time because several programmes use it as a first check.",
+      },
+      {
+        question: "Can non-Bumiputera businesses apply for government funding?",
+        answer:
+          "Yes. Some schemes such as TEKUN and MARA focus on Bumiputera entrepreneurs, but many others, including BNM-backed bank facilities, SME Corp programmes, and credit guarantees, are open more broadly. Each scheme sets its own ownership and eligibility criteria, so check them individually.",
+      },
+      {
+        question: "Do I get the grant money before or after I spend?",
+        answer:
+          "It depends on the scheme. Many grants are matching or reimbursement grants, which means you pay for the purchase first and are reimbursed a percentage afterwards with proof of spending. Make sure you can fund the purchase up front, or arrange a bridging facility, before relying on one.",
+      },
+      {
+        question: "Can I combine a grant with a loan?",
+        answer:
+          "Often yes — a grant can fund part of a project and a loan the rest, and a guarantee can help you secure the loan. Some schemes restrict stacking several government sources for the same cost, so check each scheme's rules before combining them.",
+      },
+      {
+        question: "What documents do I usually need for a funding application?",
+        answer:
+          "Typically SSM registration, recent bank statements, financial statements or management accounts, tax filings, supplier quotations for what you plan to buy, and a clear explanation of how you will use the funds. Some schemes also ask for an MSME status certificate and a credit report check.",
+      },
+      {
+        question: "How do I decide between a grant and a loan?",
+        answer:
+          "Compare them side by side on amount, total cost, when the money arrives, time and effort, conditions attached, and risk if sales drop. Only go for a grant if you would have made the investment anyway; changing your plans just to qualify can leave you worse off than a straightforward loan.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "马来西亚中小企业的补助与融资：借钱之前先看看这些",
+        excerpt:
+          "在向银行贷款之前，值得先了解马来西亚中小企业可以获得哪些政府支持的补助、优惠贷款和担保。本指南梳理主要来源——SME Corp、国家银行基金、TEKUN、MARA 与国民储蓄银行（BSN），说明资格通常如何运作，并教您在做出承诺前，如何比较补助与贷款。",
+        body: `大多数马来西亚中小企业主第一反应是向银行贷款，仅仅因为这是他们最熟悉的选择。但政府及其机构设有一长串补助、优惠贷款和贷款担保计划，它们可能比商业贷款更便宜、更有耐心或更容易符合资格——而许多企业主从未去看，因为整个格局显得很混乱。本指南为您提供主要来源的地图，说明资格通常如何运作，并带您比较补助与贷款，让您承诺的是正确的那一个。
+
+融资计划经常变动——拨款会追加，计划会结束，规则每年都可能修订。请把下面的细节当作起点，在申请之前，务必到各机构自己的网站确认最新条件。
+
+## 1. 先弄清楚补助、优惠贷款和担保的区别
+
+“补助”一词在新闻标题和社交媒体上常被随意使用，但这个区别对您的现金流影响极大。
+
+### 补助（Grants）
+无需偿还的资金，通常用于特定用途，例如采用数码工具、购买设备或培训员工。许多是**配对补助**：您先花钱，之后按一定百分比获得报销，也就是说您仍需先有现金。
+
+### 优惠贷款与融资计划
+以低于市场的利率或较宽松的条件提供的贷款，通常通过银行或发展金融机构发放。有些计划还允许，在您按时还款并符合条件的情况下，将一部分融资转换为补助——请务必查清这种转换是否真实，以及您需要做什么才能获得。
+
+### 担保
+本身并不是钱，而是政府支持的、向贷款机构作出的承诺，承担部分风险。如果银行因为您缺乏抵押品而拒绝，担保计划也许就能改变答案。
+
+新闻里宣布的“数百万令吉中小企业补助”，仔细阅读细则后，可能其实是需要偿还的融资。务必阅读条款，弄清楚您面对的是这三种中的哪一种。
+
+## 2. 了解主要的求助渠道
+
+### 马来西亚中小企业机构（SME Corp Malaysia）
+全国中小企业的协调机构。它运营或联合运营各种发展计划，通常是寻找您可能符合哪些计划的起点。许多计划要求提供 SME Corp 签发的微中小型企业（MSME）资格证书，作为企业符合官方规模定义的证明，因此值得尽早申请。
+
+### 国家银行（BNM）基金
+国家银行历来设立通过参与银行发放的特别基金，包括针对自动化与数码化、以及高科技或绿色投资的融资便利。您需要通过参与银行申请，而不是直接向国家银行申请，所以请询问您的银行提供哪些有国家银行支持的便利。
+
+### TEKUN Nasional
+政府支持的微型融资机构，主要面向土著（Bumiputera）企业家，提供相对小额、快速的融资，针对微型和小型企业。近年来，拨款和审批流程已多次调整，请直接查核目前的上限和处理时间。
+
+### 国民储蓄银行（BSN）
+BSN 为小企业提供微型融资产品，包括通过其分行发放的政府支持计划。它往往适合那些难以获得常规银行贷款的非常小型的企业。
+
+### MARA
+MARA 提供针对土著企业家的商业融资和创业支持，除融资外，还包括一些培训和经营场所相关的计划。
+
+### 信用担保计划
+信用担保机构为缺乏足够抵押品的中小企业，从银行取得的部分贷款提供担保。这类计划是通过参与银行申请，而非直接申请，所以实际的步骤是询问您的银行，您的贷款是否可以获得担保。
+
+### 其他值得留意的渠道
+特定行业的机构和部门有时会推出自己的补助——针对出口商、清真产品生产商、科技或数码企业、女性企业家及青年企业家。如果您是注册雇主，培训征费计划也可能帮助支付员工培训费用。请查核各项的最新规则。
+
+## 3. 资格通常如何运作
+
+每个计划都有自己的规则，但有几项要求反复出现：
+
+- **企业注册。** 在 SSM 注册的企业，注册有效，并设有企业银行账户。
+- **企业规模。** 符合您所属行业的官方中小企业或微型企业定义，这也是 SME Corp 证书之所以重要的原因。
+- **股权。** 有些计划要求最低比例的马来西亚人或土著股权。
+- **经营记录。** 许多计划要求最低经营期，通常约 12 个月，有些还要查看财务报表或银行月结单。
+- **信用良好。** 没有严重的违约、欠税，或在 CCRIS 上的不良信用记录，且法定申报都是最新的。
+- **明确的资金用途。** 大多数计划资助特定用途，所以一份有针对性的计划，比笼统地要求“营运资金”更有说服力。
+
+> 申请失败最常见的原因，并不是不符合资格，而是文件不齐和用途不清。一套整齐的文件，加上一页纸的说明，清楚交代您将把钱花在哪里、会为企业带来什么改变，就能让您领先许多申请人。
+
+## 4. 在做出承诺之前，先比较补助与贷款
+
+补助听起来总比贷款好，但真正的比较在于成本、现金流和风险，而不只是需不需要偿还。
+
+在做任何决定之前，请先把补助和贷款并排放在同一页上比较。对每个选项，写下：
+
+1. **金额及可用途。** 补助通常用途较窄，贷款往往可以更自由地使用。
+2. **总成本。** 对贷款而言，是利率或利润率、费用和总还款额；对补助而言，则是您需要自己投入的配对出资。
+3. **款项何时到账。** 配对和报销式补助是在您花钱之后才发放，所以您需要先有现金或过渡性融资。许多贷款则是预先拨款。
+4. **时间和精力。** 申请补助可能需要几个月的文件工作和等待；有些竞争激烈，可能超额认购。请把您自己的时间成本算进去。
+5. **附带条件。** 报告义务、对您能买什么或向谁购买的限制、未达到里程碑时的追回，以及贷款要求的抵押或个人担保。
+6. **出问题时的风险。** 即使销售下滑，贷款也必须偿还。而按约定使用的补助，一般无需偿还。
+
+### 不要追逐不符合您计划的补助
+为了符合资格而改变原本要做的事，是很诱人的。购买不需要的设备，或为了配合计划的截止日期而安排扩张，可能让您的处境比为正确的采购取得一笔普通贷款更糟。一个好的原则：只有在没有这个计划您也会进行那项投资的情况下，才去申请。
+
+### 组合多种来源
+这并不总是二选一。补助可以资助项目的一部分，贷款负责其余部分，担保则可能帮助您取得这笔贷款。有些计划限制就同一项成本叠加多个政府来源，所以组合之前请先查核规则。
+
+## 5. 准备好申请，让它真正获得批准
+
+1. **先把基础打好。** SSM 注册、企业银行账户、税务申报，以及——如果计划要求的话——您的 MSME 证书。
+2. **准备简单的财务资料。** 近期的银行月结单、管理账目，以及一份简短的预测，显示您将如何还款或完成项目。
+3. **写一页清晰的资金用途说明。** 您要买什么、向谁买、花多少钱，以及它将改善什么。
+4. **收集报价单。** 为任何设备或服务取得两三份供应商报价，会让申请更有分量，而且常常是必需的。
+5. **检查您的信用状况。** 查看您的 CCRIS 报告，避免出现意外，并清理任何可以清理的记录。
+6. **通过正确的渠道申请。** 有些计划通过银行，有些直接向机构申请，有些则通过网上入口。申请错了地方，会浪费数周时间。
+7. **保留所有记录。** 补助尤其需要收据和支出证明，以便日后索偿和审计。
+
+当评估人员和贷款机构查找您时，容易被找到和验证也有帮助——[在这里免费创建认证列表](/zh/signup)，是证明您的企业真实且在营运的一个小小方式，您也可以[浏览目录](/zh)，找到协助中小企业准备融资申请的本地会计师和顾问。
+
+## 马来西亚中小企业在寻求融资时常犯的错误
+
+- **以为每一项“中小企业补助”都是免费的钱。** 许多头条计划其实是贷款或融资，有些只含部分补助成分，所以在兴奋之前，先看清楚您实际要偿还什么。
+- **忘记配对补助中的现金流缺口。** 如果必须先花钱、后申请索偿，那么您无法预先出资的补助，就是您用不上的补助。
+- **仓促申请，文件薄弱。** 缺少月结单、没有报价单、用途含糊，是申请停滞的常见原因，而被拒绝的申请也可能拖慢日后的申请。
+
+## 从哪里开始
+
+- **本周：** 确认您的 SSM 注册仍然有效，开设或整理好企业银行账户，并查看您是否符合申请 MSME 资格证书的条件。
+- **接下来：** 列出您今年真正打算花钱的一两件事，然后查找上述哪些机构资助这类用途。
+- **申请之前：** 为您最好的一个补助选项和最好的一个贷款选项，填写并排比较表，只推进那个在成本、现金流和风险上仍然胜出的选项。
+- **持续做：** 询问您的银行提供哪些有政府支持的便利或担保，并每年几次查看各机构的网站，因为拨款和规则会变动。
+
+目标不是拿到所有可用的计划，而是找到适合您原本就要做的事的、最便宜、最安全的资金——并在说“好”之前，确切知道它会让您付出什么代价。`,
+        faqs: [
+          {
+            question: "在马来西亚，中小企业的补助与贷款有什么区别？",
+            answer:
+              "补助是无需偿还的资金，通常用于特定用途，许多是配对补助，即您先花钱，之后获得一定比例的报销。贷款，包括政府支持计划下的优惠贷款，则需连本带息或利润偿还。请仔细阅读计划条款，因为有些被称为补助的计划，其实是融资。",
+          },
+          {
+            question: "在马来西亚，我应该从哪里开始寻找中小企业融资？",
+            answer:
+              "先从协调中小企业发展计划的马来西亚中小企业机构（SME Corp）开始，然后通过您的银行查询有国家银行支持的便利，再看 TEKUN Nasional、国民储蓄银行（BSN）和 MARA。如果您缺乏抵押品，通过参与银行申请的信用担保计划会有帮助。请务必到各机构的网站确认最新条件。",
+          },
+          {
+            question: "申请时需要 MSME 资格证书吗？",
+            answer:
+              "许多与 SME Corp 相关的计划，会要求有效的 MSME 资格证书，作为企业符合官方规模定义的证明。并非每个计划都需要，但尽早取得往往能节省时间，因为好几个计划都用它作为第一道检查。",
+          },
+          {
+            question: "非土著企业可以申请政府融资吗？",
+            answer:
+              "可以。TEKUN 和 MARA 等一些计划主要面向土著企业家，但许多其他计划，包括有国家银行支持的银行便利、SME Corp 计划和信用担保，开放范围更广。每个计划都有自己的股权和资格标准，请逐一核对。",
+          },
+          {
+            question: "补助款是在我花钱之前还是之后发放？",
+            answer:
+              "视计划而定。许多补助是配对或报销式补助，意思是您先支付购买费用，之后凭支出证明获得一定百分比的报销。在依赖这类补助之前，请确保您能预先出资，或安排过渡性融资。",
+          },
+          {
+            question: "我可以把补助和贷款结合使用吗？",
+            answer:
+              "通常可以——补助可以资助项目的一部分，贷款负责其余部分，担保则可能帮助您取得这笔贷款。有些计划限制就同一项成本叠加多个政府来源，所以在组合之前，请核对各计划的规则。",
+          },
+          {
+            question: "融资申请通常需要哪些文件？",
+            answer:
+              "通常包括 SSM 注册文件、近期银行月结单、财务报表或管理账目、税务申报、您打算购买之物的供应商报价单，以及您将如何使用资金的清楚说明。有些计划还要求 MSME 资格证书和信用报告查核。",
+          },
+          {
+            question: "我该如何在补助与贷款之间做决定？",
+            answer:
+              "从金额、总成本、款项何时到账、时间和精力、附带条件，以及销售下滑时的风险等方面，把它们并排比较。只有在没有补助您也会进行那项投资的情况下，才去申请补助；仅仅为了符合资格而改变计划，可能让您的处境比一笔直接的贷款更糟。",
+          },
+        ],
+      },
+      ms: {
+        title: "Geran dan Pembiayaan PKS di Malaysia: Ke Mana Perlu Dilihat Sebelum Anda Berhutang",
+        excerpt:
+          "Sebelum mengambil pinjaman bank, elok anda tahu geran, pinjaman mudah, dan jaminan yang disokong kerajaan untuk PKS Malaysia. Panduan ini memetakan sumber utama — SME Corp, dana Bank Negara, TEKUN, MARA, dan Bank Simpanan Nasional — menerangkan bagaimana kelayakan lazimnya berfungsi, dan menunjukkan cara membandingkan geran dengan pinjaman sebelum anda komited kepada mana-mana satu.",
+        body: `Kebanyakan pemilik PKS Malaysia mencapai pinjaman bank dahulu, semata-mata kerana itulah pilihan yang sudah mereka kenali. Tetapi kerajaan dan agensinya menjalankan senarai panjang geran, pinjaman mudah, dan jaminan pinjaman yang lebih murah, lebih sabar, atau lebih mudah dilayakkan berbanding pinjaman komersial — dan ramai pemilik tidak pernah melihatnya kerana landskapnya terasa mengelirukan. Panduan ini memberi anda peta sumber utama, menerangkan bagaimana kelayakan lazimnya berfungsi, dan membimbing anda membandingkan geran dengan pinjaman supaya anda komited kepada yang betul.
+
+Skim pembiayaan kerap berubah — peruntukan ditambah, program ditutup, dan peraturan disemak dari tahun ke tahun. Anggaplah butiran di bawah sebagai titik permulaan dan sahkan terma semasa di laman web setiap agensi sebelum anda memohon.
+
+## 1. Mula-mula, fahami perbezaan antara geran, pinjaman mudah, dan jaminan
+
+Perkataan "geran" digunakan secara longgar dalam tajuk berita dan media sosial, dan perbezaannya sangat penting untuk aliran tunai anda.
+
+### Geran
+Wang yang tidak perlu anda bayar balik, biasanya terikat pada tujuan tertentu seperti menggunakan alat digital, membeli peralatan, atau melatih kakitangan. Banyak yang merupakan **geran padanan**: anda berbelanja dahulu dan diganti sebahagian peratusan kemudian, bermakna anda masih memerlukan wang tunai di awal.
+
+### Pinjaman mudah dan skim pembiayaan
+Pinjaman yang ditawarkan pada kadar di bawah pasaran atau dengan terma lebih mudah, selalunya disalurkan melalui bank atau institusi kewangan pembangunan. Sesetengah skim juga membenarkan sebahagian pembiayaan ditukar menjadi geran jika anda membayar balik tepat pada masanya dan memenuhi syarat — sentiasa semak sama ada penukaran itu benar dan apa yang perlu anda lakukan untuk mendapatkannya.
+
+### Jaminan
+Bukan wang langsung, tetapi janji yang disokong kerajaan kepada pemberi pinjaman yang menampung sebahagian risiko. Jika bank anda menolak kerana anda tiada cagaran, skim jaminan mungkin yang mengubah jawapannya.
+
+Skim yang diumumkan sebagai "geran PKS berjuta ringgit" dalam berita mungkin, setelah membaca cetakan halus, ternyata pembiayaan yang anda bayar balik. Sentiasa baca terma untuk mengetahui yang mana satu daripada tiga ini yang anda lihat.
+
+## 2. Ketahui tempat utama untuk dilihat
+
+### SME Corp Malaysia
+Agensi penyelaras kebangsaan untuk PKS. Ia menjalankan atau bersama-sama menjalankan pelbagai program pembangunan dan merupakan titik permulaan biasa untuk mengetahui skim mana yang mungkin anda layak. Banyak program memerlukan sijil status PMKS daripada SME Corp sebagai bukti bahawa perniagaan anda memenuhi takrifan saiz rasmi, jadi elok mendapatkannya awal.
+
+### Dana Bank Negara Malaysia
+BNM secara sejarahnya menubuhkan dana khas yang disalurkan melalui bank peserta, termasuk kemudahan yang disasarkan untuk automasi dan pendigitalan serta pelaburan berteknologi tinggi atau hijau. Anda memohon melalui bank peserta, bukan terus kepada BNM, jadi tanya bank anda kemudahan yang disokong BNM yang ditawarkannya.
+
+### TEKUN Nasional
+Badan pembiayaan mikro yang disokong kerajaan yang tertumpu terutamanya pada usahawan Bumiputera, dengan pembiayaan yang agak kecil dan pantas yang disasarkan kepada perniagaan mikro dan kecil. Peruntukan dan proses kelulusan telah disemak lebih daripada sekali sejak kebelakangan ini, jadi semak had dan tempoh pemprosesan semasa secara terus.
+
+### Bank Simpanan Nasional (BSN)
+BSN menawarkan produk pembiayaan mikro untuk perniagaan kecil, termasuk skim yang disokong kerajaan yang disalurkan melalui cawangannya. Ia cenderung sesuai untuk perniagaan yang sangat kecil yang mungkin sukar mendapatkan pinjaman bank konvensional.
+
+### MARA
+MARA menawarkan pembiayaan perniagaan dan sokongan keusahawanan yang disasarkan kepada usahawan Bumiputera, termasuk beberapa program latihan dan berkaitan premis di samping pembiayaan.
+
+### Skim jaminan kredit
+Agensi jaminan kredit menjamin sebahagian pinjaman daripada bank kepada PKS yang tidak mempunyai cagaran mencukupi. Ini dimohon melalui bank peserta dan bukannya terus, jadi langkah praktikalnya ialah bertanya bank anda sama ada pinjaman anda boleh dilindungi.
+
+### Laluan lain yang wajar dilihat
+Agensi dan kementerian khusus industri kadangkala menjalankan geran mereka sendiri — untuk pengeksport, pengeluar halal, perniagaan teknologi atau digital, usahawan wanita, dan usahawan muda. Skim levi latihan untuk majikan juga mungkin membantu menampung kos latihan kakitangan jika anda majikan berdaftar. Semak peraturan semasa setiap satu.
+
+## 3. Bagaimana kelayakan lazimnya berfungsi
+
+Setiap skim mempunyai peraturan tersendiri, tetapi beberapa syarat sering muncul berulang kali:
+
+- **Pendaftaran perniagaan.** Perniagaan berdaftar dengan SSM, dengan pendaftaran semasa dan akaun bank perniagaan.
+- **Saiz perniagaan.** Termasuk dalam takrifan rasmi PKS atau perusahaan mikro untuk sektor anda, itulah sebabnya sijil SME Corp penting.
+- **Pemilikan.** Sesetengah skim memerlukan tahap minimum ekuiti Malaysia atau Bumiputera.
+- **Rekod perdagangan.** Banyak yang mahukan tempoh operasi minimum, selalunya sekitar 12 bulan, dan sesetengahnya mahu melihat penyata kewangan atau penyata bank.
+- **Kedudukan baik.** Tiada keingkaran serius, tunggakan cukai, atau rekod kredit yang buruk dengan CCRIS, dan pemfailan berkanun yang terkini.
+- **Penggunaan dana yang jelas.** Kebanyakan skim membiayai tujuan tertentu, jadi pelan yang dibina untuk tujuan itu lebih meyakinkan berbanding permintaan kabur untuk "modal kerja".
+
+> Sebab paling biasa permohonan gagal bukanlah kekurangan kelayakan tetapi dokumen yang tidak lengkap dan tujuan yang tidak jelas. Satu set dokumen yang kemas dan penjelasan satu halaman tentang tepat apa yang akan anda belanjakan dan apa yang akan diubahnya dalam perniagaan anda akan meletakkan anda di hadapan ramai pemohon.
+
+## 4. Bandingkan geran dengan pinjaman sebelum komited kepada mana-mana satu
+
+Geran kedengaran lebih baik daripada pinjaman setiap kali, tetapi perbandingan sebenar adalah tentang kos, aliran tunai, dan risiko, bukan sekadar sama ada anda membayar balik.
+
+Letakkan geran dan pinjaman bersebelahan pada satu halaman sebelum anda membuat sebarang keputusan. Bagi setiap pilihan, catatkan:
+
+1. **Jumlah dan untuk apa ia boleh digunakan.** Geran biasanya lebih sempit. Pinjaman selalunya boleh digunakan dengan lebih bebas.
+2. **Jumlah kos.** Untuk pinjaman, kadar faedah atau keuntungan, yuran, dan jumlah bayaran balik. Untuk geran, sebarang sumbangan padanan yang perlu anda letakkan sendiri.
+3. **Bila wang tiba.** Geran padanan dan gantian dibayar selepas anda berbelanja, jadi anda memerlukan wang tunai atau kemudahan penghubung dahulu. Banyak pinjaman dikeluarkan di awal.
+4. **Masa dan usaha.** Permohonan geran boleh mengambil masa berbulan-bulan untuk dokumen dan menunggu; sesetengahnya kompetitif dan mungkin melebihi langganan. Kira kos masa anda sendiri.
+5. **Syarat yang dikenakan.** Kewajipan pelaporan, sekatan ke atas apa yang boleh anda beli atau daripada siapa, tuntutan balik jika anda terlepas pencapaian, dan sebarang cagaran atau jaminan peribadi yang dituntut pinjaman.
+6. **Risiko jika keadaan menjadi buruk.** Pinjaman perlu dibayar balik walaupun jualan merosot. Geran yang dibelanjakan seperti dipersetujui umumnya tidak.
+
+### Jangan mengejar geran yang tidak sesuai dengan pelan anda
+Memang menggoda untuk mengubah apa yang anda rancang hanya untuk melayakkan diri mendapat wang. Membeli peralatan yang tidak diperlukan, atau menetapkan masa pengembangan mengikut tarikh akhir skim, boleh menyebabkan anda lebih teruk berbanding pinjaman biasa untuk pembelian yang betul. Peraturan yang baik: mohon sesuatu skim hanya jika anda akan membuat pelaburan itu juga.
+
+### Menggabungkan sumber
+Ini tidak sentiasa pilihan salah satu. Geran mungkin membiayai sebahagian projek manakala pinjaman menampung selebihnya, dan jaminan mungkin membantu anda mendapatkan pinjaman itu. Sesetengah skim menghadkan penggabungan beberapa sumber kerajaan untuk kos yang sama, jadi semak peraturan sebelum anda menggabungkannya.
+
+## 5. Sediakan permohonan anda supaya benar-benar diluluskan
+
+1. **Pastikan asas anda teratur.** Pendaftaran SSM, akaun bank perniagaan, pemfailan cukai, dan — jika skim memerlukannya — sijil PMKS anda.
+2. **Sediakan kewangan yang ringkas.** Penyata bank terkini, akaun pengurusan, dan unjuran ringkas yang menunjukkan bagaimana anda akan membayar balik atau menyiapkan projek.
+3. **Tulis penggunaan dana satu halaman yang jelas.** Apa yang akan anda beli, daripada siapa, pada kos berapa, dan apa yang akan ditingkatkan.
+4. **Kumpulkan sebut harga.** Dua atau tiga sebut harga pembekal untuk sebarang peralatan atau perkhidmatan menguatkan permohonan dan selalunya diperlukan.
+5. **Semak kedudukan kredit anda.** Semak laporan CCRIS anda supaya tiada kejutan, dan selesaikan apa-apa yang boleh diselesaikan.
+6. **Mohon melalui saluran yang betul.** Sesetengah skim melalui bank, sesetengahnya terus kepada agensi, dan sesetengahnya melalui portal dalam talian. Memohon di tempat yang salah membazirkan berminggu-minggu.
+7. **Simpan setiap rekod.** Geran khususnya memerlukan resit dan bukti perbelanjaan untuk tuntutan dan audit kemudian.
+
+Mudah ditemui dan disahkan juga membantu apabila penilai dan pemberi pinjaman mencari anda — [penyenaraian percuma dan disahkan di sini](/ms/signup) ialah cara kecil untuk menunjukkan perniagaan anda benar dan aktif, dan anda boleh [layari direktori](/ms) untuk akauntan dan perunding tempatan yang membantu PKS menyediakan permohonan pembiayaan.
+
+## Kesilapan lazim PKS Malaysia ketika mencari pembiayaan
+
+- **Menganggap setiap "geran PKS" ialah wang percuma.** Banyak skim utama ialah pinjaman atau pembiayaan, sesetengahnya dengan hanya unsur geran separa, jadi baca apa yang sebenarnya anda bayar balik sebelum teruja.
+- **Melupakan jurang aliran tunai pada geran padanan.** Jika anda mesti berbelanja dahulu dan menuntut kemudian, geran yang tidak boleh anda biayai terlebih dahulu ialah geran yang tidak boleh anda gunakan.
+- **Memohon tergesa-gesa dengan dokumen yang lemah.** Penyata yang tiada, tiada sebut harga, dan tujuan yang kabur ialah sebab biasa permohonan tersekat, dan permohonan yang ditolak boleh melambatkan yang kemudian.
+
+## Di mana untuk bermula
+
+- **Minggu ini:** Sahkan pendaftaran SSM anda masih sah, buka atau kemaskan akaun bank perniagaan anda, dan semak sama ada anda layak mendapat sijil status PMKS.
+- **Seterusnya:** Senaraikan satu atau dua perkara yang anda benar-benar bercadang membelanjakan wang pada tahun ini, kemudian cari agensi di atas yang membiayai tujuan sedemikian.
+- **Sebelum memohon:** Isi perbandingan bersebelahan untuk pilihan geran terbaik anda dan pilihan pinjaman terbaik anda, dan teruskan hanya dengan yang masih menang dari segi kos, aliran tunai, dan risiko.
+- **Berterusan:** Tanya bank anda kemudahan atau jaminan yang disokong kerajaan yang ditawarkannya, dan semak laman web agensi beberapa kali setahun, kerana peruntukan dan peraturan berubah.
+
+Matlamatnya bukan untuk mendapatkan setiap skim yang ada. Ia adalah untuk mencari wang yang paling murah dan paling selamat yang sesuai dengan sesuatu yang memang akan anda lakukan — dan untuk mengetahui dengan tepat berapa kosnya sebelum anda berkata ya.`,
+        faqs: [
+          {
+            question: "Apakah perbezaan antara geran dan pinjaman untuk PKS di Malaysia?",
+            answer:
+              "Geran ialah wang yang tidak perlu anda bayar balik, biasanya untuk tujuan tertentu, dan banyak yang merupakan geran padanan di mana anda berbelanja dahulu dan diganti sebahagian. Pinjaman, termasuk pinjaman mudah daripada skim yang disokong kerajaan, perlu dibayar balik dengan faedah atau keuntungan. Baca terma skim dengan teliti, kerana sesetengah program yang digambarkan sebagai geran sebenarnya pembiayaan.",
+          },
+          {
+            question: "Di mana saya patut mula mencari pembiayaan PKS di Malaysia?",
+            answer:
+              "Mulakan dengan SME Corp Malaysia, yang menyelaras program pembangunan PKS, kemudian semak kemudahan yang disokong Bank Negara Malaysia melalui bank anda, TEKUN Nasional, Bank Simpanan Nasional, dan MARA. Skim jaminan kredit, yang dipohon melalui bank peserta, boleh membantu jika anda tiada cagaran. Sentiasa sahkan terma semasa di laman web setiap agensi.",
+          },
+          {
+            question: "Adakah saya memerlukan sijil status PMKS untuk memohon?",
+            answer:
+              "Banyak program berkaitan SME Corp meminta sijil status PMKS yang sah sebagai bukti bahawa perniagaan anda memenuhi takrifan saiz rasmi. Tidak semua skim memerlukannya, tetapi mendapatkannya awal selalunya menjimatkan masa kerana beberapa program menggunakannya sebagai semakan pertama.",
+          },
+          {
+            question: "Bolehkah perniagaan bukan Bumiputera memohon pembiayaan kerajaan?",
+            answer:
+              "Boleh. Sesetengah skim seperti TEKUN dan MARA tertumpu pada usahawan Bumiputera, tetapi banyak yang lain, termasuk kemudahan bank yang disokong BNM, program SME Corp, dan jaminan kredit, terbuka dengan lebih luas. Setiap skim menetapkan kriteria pemilikan dan kelayakannya sendiri, jadi semak satu persatu.",
+          },
+          {
+            question: "Adakah saya mendapat wang geran sebelum atau selepas saya berbelanja?",
+            answer:
+              "Bergantung pada skim. Banyak geran ialah geran padanan atau gantian, bermakna anda membayar pembelian dahulu dan diganti sebahagian peratusan kemudian dengan bukti perbelanjaan. Pastikan anda boleh membiayai pembelian di awal, atau aturkan kemudahan penghubung, sebelum bergantung kepada satu.",
+          },
+          {
+            question: "Bolehkah saya menggabungkan geran dengan pinjaman?",
+            answer:
+              "Selalunya boleh — geran boleh membiayai sebahagian projek dan pinjaman selebihnya, dan jaminan boleh membantu anda mendapatkan pinjaman itu. Sesetengah skim menghadkan penggabungan beberapa sumber kerajaan untuk kos yang sama, jadi semak peraturan setiap skim sebelum menggabungkannya.",
+          },
+          {
+            question: "Apakah dokumen yang lazimnya diperlukan untuk permohonan pembiayaan?",
+            answer:
+              "Lazimnya pendaftaran SSM, penyata bank terkini, penyata kewangan atau akaun pengurusan, pemfailan cukai, sebut harga pembekal untuk apa yang anda rancang beli, dan penjelasan jelas tentang bagaimana anda akan menggunakan dana. Sesetengah skim juga meminta sijil status PMKS dan semakan laporan kredit.",
+          },
+          {
+            question: "Bagaimana saya memutuskan antara geran dan pinjaman?",
+            answer:
+              "Bandingkan keduanya bersebelahan dari segi jumlah, jumlah kos, bila wang tiba, masa dan usaha, syarat yang dikenakan, dan risiko jika jualan merosot. Mohon geran hanya jika anda akan membuat pelaburan itu juga; mengubah rancangan hanya untuk melayakkan diri boleh menyebabkan anda lebih teruk berbanding pinjaman biasa.",
+          },
+        ],
+      },
+    },
+  },
 ];

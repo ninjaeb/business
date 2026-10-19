@@ -15,15 +15,14 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Terminating an Employee in Malaysia: Notice, Termination Benefits, and Doing It Right**
-   — Notice periods and termination benefits under the Employment Act,
-   the difference between termination, retrenchment, and dismissal for
-   misconduct, the paperwork involved (including CP22A), and the
-   procedural mistakes that turn a routine termination into an unfair
-   dismissal claim.
+1. **Employee Leave and Public Holidays in Malaysia: What the Employment Act Requires**
+   — Minimum annual, sick, hospitalisation, maternity and paternity leave
+   under the Employment Act, the statutory public holidays and what happens
+   when one falls on a rest day, how to pay out unused leave, and the
+   record-keeping that prevents payroll disputes.
 
-2. **SME Grants and Funding in Malaysia: Where to Look Before You Borrow**
-   — The main government-backed grant and financing schemes available to
-   Malaysian SMEs (SME Corp, Bank Negara funds, MARA, TEKUN, Bank Simpanan
-   Nasional), how eligibility typically works, and how to compare a grant
-   against a loan before committing to either.
+2. **Collecting Late Payments in Malaysia: From Reminder to Letter of Demand to Small Claims**
+   — A practical escalation path for overdue invoices: payment terms and
+   reminders, a letter of demand, the Small Claims procedure at the
+   Tribunal for Consumer Claims versus the Sessions/Magistrates Court,
+   limitation periods, and how to prevent late payment in the first place.
