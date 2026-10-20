@@ -15,15 +15,15 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Terminating an Employee in Malaysia: Notice, Termination Benefits, and Doing It Right**
-   — Notice periods and termination benefits under the Employment Act,
-   the difference between termination, retrenchment, and dismissal for
-   misconduct, the paperwork involved (including CP22A), and the
-   procedural mistakes that turn a routine termination into an unfair
-   dismissal claim.
+1. **Business Insurance for Malaysian SMEs: What You Actually Need to Cover**
+   — The main policies a small business should consider (fire and
+   property, public liability, workers' compensation / SOCSO Employment
+   Injury Scheme versus private cover, professional indemnity, business
+   interruption), what each does and doesn't cover, how to decide what's
+   worth paying for, and common claim-rejection traps.
 
-2. **SME Grants and Funding in Malaysia: Where to Look Before You Borrow**
-   — The main government-backed grant and financing schemes available to
-   Malaysian SMEs (SME Corp, Bank Negara funds, MARA, TEKUN, Bank Simpanan
-   Nasional), how eligibility typically works, and how to compare a grant
-   against a loan before committing to either.
+2. **Doing Business Taxes in Malaysia: A Small Business Owner's Annual Tax Calendar**
+   — Sole proprietor versus company tax filing (Form B / Form C),
+   instalment payments (CP204), record-keeping requirements, common
+   deductible expenses, and the deadlines worth putting in the calendar
+   so nothing is filed or paid late.
