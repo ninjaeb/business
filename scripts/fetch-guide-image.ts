@@ -7,6 +7,10 @@
 //
 //   npx tsx scripts/fetch-guide-image.ts --list [--tag finance]
 //   npx tsx scripts/fetch-guide-image.ts --id 8296970 --out <slug>-cover.webp
+//   npx tsx scripts/fetch-guide-image.ts --query "asian woman calculator tax" --out <slug>-cover.webp [--pick 2]
+//
+// --query picks the best-matching unused pool photo for those words (--pick N
+// takes the Nth best instead, for when the first doesn't look right).
 //
 // --list prints the pool photos not yet used by a guide (optionally only those
 // carrying a tag). --id downloads one at 1600px, converts it to WebP at quality
@@ -54,10 +58,25 @@ async function main() {
     return;
   }
 
-  const id = Number(arg("id"));
   const out = arg("out");
+  let id = Number(arg("id"));
+  const query = arg("query");
+  if (!arg("id") && query) {
+    const words = query.toLowerCase().split(/[^a-z0-9-]+/).filter((word) => word.length > 2 && !["asian", "southeast", "and", "the", "with"].includes(word));
+    const ranked = pool.photos
+      .filter((photo) => !photo.usedBy)
+      .map((photo) => {
+        const haystack = `${photo.tags.join(" ")} ${photo.description}`.toLowerCase();
+        return { photo, score: words.filter((word) => haystack.includes(word)).length };
+      })
+      .sort((a, b) => b.score - a.score);
+    const pick = Math.max(1, Number(arg("pick") ?? "1") || 1);
+    ranked.slice(0, 5).forEach(({ photo, score }, index) => console.log(`${index + 1}. [${score}] ${photo.id} | ${photo.description}`));
+    if (ranked.length === 0) fail("the pool has no unused photos left — add more (see --id with --tags/--desc)");
+    id = ranked[Math.min(pick, ranked.length) - 1].photo.id;
+  }
   if (!Number.isInteger(id) || id <= 0 || !out || !out.endsWith(".webp") || out.includes("/")) {
-    fail('usage: --list [--tag <tag>]   |   --id <pexels photo id> --out <name>.webp [--tags a,b --desc "..."]');
+    fail('usage: --list [--tag <tag>]   |   --query "<words>" --out <name>.webp [--pick N]   |   --id <pexels photo id> --out <name>.webp [--tags a,b --desc "..."]');
   }
 
   const response = await fetch(cdnUrl(id));
