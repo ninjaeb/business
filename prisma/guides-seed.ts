@@ -4645,4 +4645,990 @@ Minggu ini, senaraikan untuk apa sebenarnya anda memerlukan wang dan kira-kira b
       },
     },
   },
+  {
+    slug: "business-insurance-for-malaysian-smes",
+    title: "Business Insurance for Malaysian SMEs: What You Actually Need to Cover",
+    seoTitle: "Business Insurance for Malaysian SMEs: What to Cover",
+    seoDescription:
+      "Fire, public liability, SOCSO vs private cover, professional indemnity and business interruption: what a Malaysian SME needs, and claim traps to avoid.",
+    coverImage: {
+      file: "business-insurance-for-malaysian-smes-cover.webp",
+      mimeType: "image/webp",
+      alt: "A smiling business owner working at his desk on a computer in a bright office",
+      altTranslations: {
+        zh: "一位面带微笑的企业主在明亮的办公室里用电脑工作",
+        ms: "Seorang pemilik perniagaan tersenyum sambil bekerja pada komputer di pejabat yang cerah",
+      },
+    },
+    contentImages: {
+      "policy-review": {
+        file: "business-insurance-for-malaysian-smes-policy-review.webp",
+        mimeType: "image/webp",
+        alt: "Two colleagues going through a binder of documents together in an office",
+        altTranslations: {
+          zh: "两位同事在办公室里一起翻阅文件夹中的文件",
+          ms: "Dua rakan sekerja menyemak fail dokumen bersama-sama di pejabat",
+        },
+        after: "Review each policy against your real situation, not just the premium quote.",
+        afterTranslations: {
+          zh: "请对照您的实际情况来审视每一份保单，而不是只看保费报价。",
+          ms: "Semak setiap polisi berdasarkan situasi sebenar anda, bukan sekadar sebut harga premium.",
+        },
+      },
+    },
+    excerpt:
+      "Most small businesses are either uninsured or insured for the wrong things. This guide explains the main policies a Malaysian SME should consider — fire and property, public liability, workers' injury cover through SOCSO versus private plans, professional indemnity, and business interruption — what each does and doesn't cover, and the traps that get claims rejected.",
+    body: `Insurance is the purchase most small business owners put off, because the premium is certain and the loss is not. Then a fire, a customer injury, or a burst pipe happens and the difference between a business that recovers and one that closes can come down to a single piece of paper. The goal of this guide is not to sell you every policy that exists. It is to help you work out which risks could actually sink your business, which policies address them, and where claims most often go wrong.
+
+This is general information, not financial or insurance advice. Products, wording, and legal requirements vary by insurer and change over time, so confirm details with a licensed insurance agent or broker and read the policy document before buying.
+
+## 1. Start with risks, not products
+
+The wrong way to buy insurance is to ask "what policies are there?" The right way is to list what could realistically happen to your business and rank it by how badly it would hurt.
+
+### Ask three questions about each risk
+- **How likely is it?** A kitchen fire is far more likely in a food business than in a design studio.
+- **How bad would it be?** Could you absorb the cost from savings, or would it end the business?
+- **Is someone else relying on you?** Landlords, lenders, and large customers often require specific cover as a condition of dealing with you, which turns "optional" into "mandatory".
+
+Risks that are frequent but small are usually cheaper to absorb yourself. Risks that are rare but catastrophic are what insurance is actually for. That is where most of your budget should go.
+
+## 2. Fire and property cover
+
+For anyone with premises, stock, or equipment, this is usually the first policy to look at. It covers physical loss or damage to your property from named perils, with fire being the core one, and extensions can add things like flood, burglary, or equipment breakdown.
+
+### Decide what you are insuring
+Separate the building (if you own it), your renovations and fittings, your equipment, and your stock. Each needs its own sum insured, and a landlord's policy typically covers the building but not your contents.
+
+### Beware underinsurance and the average clause
+If you insure your property for less than it is really worth and then make a claim, many policies apply an "average clause", which means the insurer pays only a proportion of the loss. Insure for a figure that reflects the real replacement cost, and review it as prices and your stock levels change. Industry bodies publish rebuilding-cost estimators for buildings, which can help as a rough guide.
+
+### Takaful is an option
+If you prefer a Shariah-compliant arrangement, takaful providers offer equivalent products. Compare the cover, not just the label.
+
+## 3. Public liability
+
+Public liability pays when a customer, visitor, or other third party suffers injury or property damage that you are legally liable for — a customer slips on a wet floor, or a falling signboard damages a parked car. It is typically not compulsory for most businesses by law, but a landlord, a shopping centre, an event organiser, or a corporate customer may require it, and the legal costs of defending even a weak claim can be significant.
+
+Check the limit per claim, whether legal costs sit inside or on top of that limit, and any exclusions for activities your business actually does.
+
+## 4. Protecting your people: SOCSO and private cover
+
+### Employment injury under SOCSO
+Employers covered by the Employees' Social Security Act 1969 contribute to SOCSO (PERKESO), whose Employment Injury Scheme provides benefits to eligible employees injured at work or while commuting for work. Foreign workers have also been brought under the Employment Injury Scheme in recent years. Registering and contributing correctly is a legal duty, and it is also your first layer of protection for work injuries. Check PERKESO's current guidance on who must be registered and which benefits apply.
+
+### Where private cover fits
+SOCSO is a safety net with defined benefits, not a full replacement for private medical or group insurance. Private personal accident, group hospitalisation, or group life policies can fill gaps and help you retain staff. Foreign workers may also have separate medical or hospitalisation insurance requirements, so confirm what applies to your workforce.
+
+### Do not confuse SOCSO with employer liability
+SOCSO benefits are paid under a statutory scheme. If you want protection against claims beyond the statutory scheme, ask a broker whether an employer's liability or similar extension makes sense for your business.
+
+## 5. Professional indemnity
+
+If you give advice, design, or specialist services — consulting, accounting, architecture, IT, marketing, engineering — a mistake can cost your client money, and they may sue you for it. Professional indemnity covers the legal costs and damages from claims of negligence or errors in your professional work. Some professions and some contracts make it effectively mandatory.
+
+Pay attention to the retroactive date and whether cover is "claims made", because many policies only respond to claims first made during the policy period. Letting a policy lapse can leave past work uncovered.
+
+## 6. Business interruption
+
+Fire insurance pays to repair your property. It does not usually pay your rent, wages, and loan instalments while you cannot trade. Business interruption cover is designed to replace lost gross profit and ongoing costs after an insured event, such as a fire that closes your shop for months.
+
+Surveys of Malaysian SMEs have repeatedly found far more businesses exposed to interruption than are covered for it. If your business would struggle to survive three months of closure, this cover deserves a hard look. Note that it is normally triggered by physical damage from an insured peril, not by a drop in demand.
+
+## 7. Other covers worth knowing about
+
+- **Motor and commercial vehicle.** If you use vehicles, third-party motor cover is a legal requirement for the vehicles themselves. Check commercial use is declared.
+- **Goods in transit and stock.** Relevant if you ship or deliver goods.
+- **Product liability.** For manufacturers and food producers whose products could harm a customer.
+- **Cyber and data.** Increasingly relevant for businesses holding customer data or selling online.
+- **Money, fidelity, and cash-in-transit.** For businesses handling significant cash or exposed to employee dishonesty.
+- **Bundled small-business packages.** Several insurers sell packages for shops, restaurants, and offices that combine fire, theft, liability, and more. They can be a cost-effective starting point if the cover matches your risks.
+
+> The most useful habit is to read the "what is not covered" section first. Exclusions, conditions, and warranties — such as security requirements or maintenance obligations — decide whether a claim is paid, and they are what most owners skip.
+
+## 8. Choose cover and a provider sensibly
+
+Review each policy against your real situation, not just the premium quote. A few practical rules help:
+
+1. **Use a licensed intermediary.** Insurers and intermediaries operate under Bank Negara Malaysia's regulatory framework, so check that an agent or broker is properly licensed.
+2. **Get at least two or three quotes.** Compare sums insured, excesses, exclusions, and extensions, not only the price.
+3. **Choose sensible excesses.** A higher excess lowers the premium, but only if you could genuinely afford to pay it in a bad month.
+4. **Declare everything honestly.** Accurate answers about your premises, activities, and claims history protect your claim later.
+5. **Keep a record.** Store the policy, schedule, and endorsements somewhere you can find them in an emergency, and note renewal dates.
+6. **Know the complaint route.** If a claim dispute cannot be resolved with the insurer, there is an independent dispute resolution body for financial consumers. Check the current options.
+
+Being easy to find and verify also matters to the partners and customers who ask about your cover — [a free, verified listing here](/en/signup) helps present your business as established and trustworthy, and you can [browse the directory](/en) for local insurance agents and brokers who work with small businesses.
+
+## Common mistakes Malaysian SMEs make with business insurance
+
+- **Underinsuring to save on premium.** A sum insured far below real replacement value can trigger the average clause, leaving you paying much of the loss yourself.
+- **Assuming fire cover also covers lost income.** Without business interruption cover, the repair bill might be paid while your rent, wages, and loan repayments are not.
+- **Not disclosing changes.** A new activity, a different use of the premises, or an expanded stock room that you never told the insurer about can give grounds to reduce or reject a claim.
+
+## Where to start
+
+- **This week:** List your five biggest ways to lose money — fire, theft, a customer injury, a key person unavailable, a long closure — and put a rough cost next to each.
+- **Next:** Check what you already have, including landlord cover, SOCSO registration, and any bank-required policies, and note what is missing.
+- **Then:** Ask a licensed agent or broker for quotes on the one or two gaps that could actually end the business, and compare exclusions as carefully as prices.
+- **Every year:** Re-check sums insured and renewals, and update your insurer when your premises, stock, activities, or headcount change.
+
+Good insurance is not about covering everything. It is about making sure the worst realistic day for your business is one you can recover from.`,
+    faqs: [
+      {
+        question: "What insurance does a small business in Malaysia legally have to have?",
+        answer:
+          "It depends on your business. Employers covered by the Employees' Social Security Act must register and contribute to SOCSO, and third-party motor cover is required for vehicles. Many other policies, such as fire and public liability, are not generally compulsory by law but may be required by a landlord, lender, or customer. Check your lease and contracts, and confirm current legal requirements with the relevant authority.",
+      },
+      {
+        question: "What does fire insurance cover, and is it enough?",
+        answer:
+          "Fire insurance covers physical loss or damage to your property from named perils, mainly fire, with optional extensions such as flood or burglary. It usually does not replace lost income while you cannot trade, which is what business interruption cover is for. Make sure the sum insured reflects the real replacement cost to avoid the average clause.",
+      },
+      {
+        question: "What is the average clause?",
+        answer:
+          "If your property is insured for less than its real value, many policies apply an average clause, meaning the insurer pays only a proportion of any loss. Insuring for a realistic replacement value, and reviewing it regularly, is the main protection.",
+      },
+      {
+        question: "Do I still need private insurance if my staff are covered by SOCSO?",
+        answer:
+          "SOCSO's Employment Injury Scheme provides statutory benefits for eligible workplace injuries, but it is a safety net rather than full cover. Private personal accident, group hospitalisation, or group life plans can fill gaps and help retain staff. Foreign workers may have separate insurance requirements, so check what applies to your workforce.",
+      },
+      {
+        question: "Who needs professional indemnity insurance?",
+        answer:
+          "Anyone who gives advice, design, or specialist services where an error could cost a client money, such as consultants, accountants, IT firms, and designers. Some professions and contracts effectively require it. Check whether the policy is claims-made and what its retroactive date is.",
+      },
+      {
+        question: "What is business interruption insurance?",
+        answer:
+          "It replaces lost gross profit and ongoing costs, such as rent and wages, after an insured event like a fire closes your premises. It is normally triggered by physical damage from an insured peril rather than by a fall in demand, and it is often bought alongside fire cover.",
+      },
+      {
+        question: "Why do insurance claims get rejected?",
+        answer:
+          "Common reasons include underinsurance, failing to disclose changes in your activities or premises, breaching policy conditions or warranties such as security requirements, claiming for an excluded event, and notifying the insurer too late. Reading the exclusions and conditions before you buy reduces the risk.",
+      },
+      {
+        question: "How do I choose an insurance provider?",
+        answer:
+          "Use a properly licensed agent or broker, get several quotes, and compare sums insured, excesses, exclusions, and extensions rather than just the price. Takaful is available if you prefer a Shariah-compliant option. Keep your policy documents and renewal dates in one place.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "马来西亚中小企业的商业保险：您真正需要投保什么",
+        excerpt:
+          "大多数小企业要么没有投保，要么投保的并不是真正需要的险种。本指南说明马来西亚中小企业应考虑的主要保单——火险与财产险、公共责任险、通过 SOCSO 与私人计划提供的员工工伤保障、专业赔偿险和营业中断险——它们分别保什么、不保什么，以及哪些陷阱会导致理赔被拒。",
+        body: `保险是大多数小企业主最容易拖延的支出，因为保费是确定的，而损失却不确定。然后火灾、顾客受伤或水管爆裂真的发生了，企业是能恢复还是就此倒闭，可能就取决于一份保单。本指南的目的不是向您推销所有存在的保险，而是帮助您弄清楚，哪些风险真的可能压垮您的企业、有哪些保单可以应对，以及理赔最常在哪里出问题。
+
+以下仅为一般资讯，并非财务或保险建议。产品、条款和法律规定因保险公司而异，也会随时间变化，购买前请向持牌保险代理或经纪确认细节，并阅读保单文件。
+
+## 1. 从风险出发，而不是从产品出发
+
+购买保险的错误方式，是问“有哪些保单？”正确的方式是列出您的企业现实中可能发生的事，并按对企业的伤害程度排序。
+
+### 对每项风险问三个问题
+- **发生的可能性有多大？** 餐饮企业发生厨房火灾的可能性，远高于设计工作室。
+- **后果有多严重？** 您能用储蓄承担这笔费用，还是会让企业倒闭？
+- **是否有人依赖您？** 房东、贷款机构和大客户常常要求您投保特定险种，作为与您往来的条件，这会让“可选”变成“必须”。
+
+经常发生但金额小的风险，通常自己承担更划算。罕见但后果严重的风险，才是保险真正的用途，也是您大部分预算应该投放的地方。
+
+## 2. 火险与财产险
+
+对任何拥有经营场所、存货或设备的企业，这通常是首先要考虑的保单。它承保您的财产因列明风险而受到的实质损失或损坏，核心是火灾，附加条款可以加入水灾、盗窃或设备故障等。
+
+### 先决定要保什么
+把建筑物（如果是您自己的）、您的装修和固定设施、设备以及存货分开。每一项都需要各自的保额，而房东的保单通常只保建筑物，不保您的物品。
+
+### 小心保额不足与比例分摊条款
+如果您投保的金额低于财产的真实价值，之后再索赔，许多保单会适用“比例分摊条款”（average clause），也就是保险公司只赔付损失的一部分。请按真实的重置成本投保，并随着价格和存货水平的变化定期检视。业界机构公布的重建成本估算工具，可作为粗略的参考。
+
+### 回教保险（Takaful）也是选择
+如果您偏好符合伊斯兰教法的安排，回教保险（takaful）公司提供对等的产品。请比较保障内容，而不是只看名称。
+
+## 3. 公共责任险
+
+公共责任险赔付顾客、访客或其他第三方因您而遭受的人身伤害或财产损失，且您在法律上须负责——例如顾客在湿滑的地板上滑倒，或掉下的招牌砸坏了停放的汽车。对大多数企业而言，法律上通常并不强制，但房东、购物中心、活动主办方或企业客户可能要求投保，而且即使是站不住脚的索赔，辩护的法律费用也可能相当可观。
+
+请查看每宗索赔的限额、法律费用是计入还是在限额之外，以及对您企业实际从事的活动有哪些除外责任。
+
+## 4. 保障您的员工：SOCSO 与私人保障
+
+### SOCSO 下的工伤保障
+受《1969 年雇员社会保险法令》约束的雇主须向 SOCSO（PERKESO）供款，其雇佣伤害计划（Employment Injury Scheme）为符合资格的雇员，在工作中或上下班途中受伤时提供福利。近年来，外籍员工也已被纳入雇佣伤害计划。正确注册和供款是法律义务，也是您应对工伤的第一层保护。请查看 PERKESO 的最新指引，了解谁必须注册以及适用哪些福利。
+
+### 私人保障的定位
+SOCSO 是提供固定福利的安全网，并不能完全取代私人医疗或团体保险。私人的个人意外险、团体住院险或团体人寿险，可以弥补缺口并帮助您留住员工。外籍员工也可能有单独的医疗或住院保险要求，所以请确认适用于您员工的规定。
+
+### 不要把 SOCSO 与雇主责任险混为一谈
+SOCSO 福利是依法定计划支付的。如果您希望对法定计划之外的索赔也有保障，请询问经纪，雇主责任险或类似的附加保障是否适合您的企业。
+
+## 5. 专业赔偿险
+
+如果您提供意见、设计或专业服务——咨询、会计、建筑、资讯科技、营销、工程——一个错误可能让客户蒙受金钱损失，他们也可能因此起诉您。专业赔偿险涵盖因您专业工作中的疏忽或错误而被索赔的法律费用与赔偿。某些专业和某些合约实际上要求必须投保。
+
+请留意“追溯日期”，以及保单是否为“索赔提出制”（claims made），因为许多保单只对在保单期间首次提出的索赔作出回应。让保单失效，可能使过去的工作失去保障。
+
+## 6. 营业中断险
+
+火险赔付的是修复您的财产，通常并不赔付您无法营业期间的租金、工资和贷款分期。营业中断险旨在发生受保事故（例如火灾导致您的店铺关闭数月）之后，补偿损失的毛利和持续的开支。
+
+对马来西亚中小企业的调查一再发现，面临营业中断风险的企业，远多于已购买相关保障的企业。如果您的企业撑不过三个月的停业，这项保障值得认真考虑。请注意，它通常由受保风险造成的实质损失触发，而不是由需求下滑触发。
+
+## 7. 值得了解的其他保障
+
+- **汽车与商业车辆。** 如果您使用车辆，车辆本身的第三者汽车保险是法律要求。请确认已申报商业用途。
+- **运输中货物与存货。** 适用于运送或配送货物的企业。
+- **产品责任险。** 适用于其产品可能伤害顾客的制造商和食品生产商。
+- **网络与数据保险。** 对持有客户资料或网上销售的企业越来越重要。
+- **现金、诚信与押运现金保险。** 适用于处理大量现金或面临员工不诚实风险的企业。
+- **小企业综合套装保险。** 多家保险公司为店铺、餐馆和办公室推出结合火险、盗窃险、责任险等的套装。如果保障符合您的风险，它们可以是一个划算的起点。
+
+> 最有用的习惯，是先读“不保什么”的部分。除外责任、条件和保证条款——例如保安要求或维修义务——决定了理赔是否会获得赔付，而这些正是大多数企业主跳过不看的内容。
+
+## 8. 明智地选择保障与提供者
+
+请对照您的实际情况来审视每一份保单，而不是只看保费报价。几条实用规则有帮助：
+
+1. **通过持牌中介。** 保险公司和中介机构受国家银行的监管框架约束，所以请确认代理或经纪是否持有正式执照。
+2. **至少取得两三份报价。** 比较保额、自负额、除外责任和附加条款，而不只是价格。
+3. **选择合理的自负额。** 较高的自负额可以降低保费，但前提是在不景气的月份您真的付得起。
+4. **如实申报一切。** 对您的经营场所、业务活动和索赔记录作出准确的回答，会在日后保护您的理赔。
+5. **保存记录。** 把保单、保险明细表和批单存放在紧急时找得到的地方，并记下续保日期。
+6. **了解投诉途径。** 如果理赔争议无法与保险公司解决，金融消费者有独立的争议解决机构。请查看目前的选项。
+
+对于询问您保障情况的合作伙伴和客户来说，容易被找到和验证也很重要——[在这里免费创建认证列表](/zh/signup)有助于展示您的企业稳健可信，您也可以[浏览目录](/zh)，找到与小企业合作的本地保险代理和经纪。
+
+## 马来西亚中小企业在商业保险上常犯的错误
+
+- **为省保费而保额不足。** 保额远低于真实重置价值，可能触发比例分摊条款，使您自己承担大部分损失。
+- **以为火险也保收入损失。** 没有营业中断险，修复费用也许能获得赔付，而您的租金、工资和贷款还款却没有。
+- **没有申报变更。** 新增的业务活动、经营场所的不同用途，或扩大的存货室，如果您从未告知保险公司，可能成为减少或拒绝理赔的理由。
+
+## 从哪里开始
+
+- **本周：** 列出您最大的五种亏损方式——火灾、盗窃、顾客受伤、关键人员缺席、长期停业——并在每一项旁写下粗略的成本。
+- **接下来：** 检查您已经拥有的保障，包括房东的保险、SOCSO 注册和银行要求的任何保单，并记下欠缺的部分。
+- **然后：** 就那一两个真正可能令企业倒闭的缺口，向持牌代理或经纪取得报价，并像比较价格一样仔细比较除外责任。
+- **每年：** 重新检查保额和续保，并在您的经营场所、存货、业务活动或员工人数有变化时通知保险公司。
+
+好的保险不是什么都保，而是确保您企业最坏的现实一天，仍是您能够恢复的一天。`,
+        faqs: [
+          {
+            question: "在马来西亚，小企业在法律上必须投保哪些保险？",
+            answer:
+              "视您的企业而定。受《雇员社会保险法令》约束的雇主必须向 SOCSO 注册并供款，车辆须有第三者汽车保险。许多其他保单，例如火险和公共责任险，一般法律上并不强制，但房东、贷款机构或客户可能要求。请查看您的租约和合约，并向相关机构确认目前的法律要求。",
+          },
+          {
+            question: "火险保什么？这样就够了吗？",
+            answer:
+              "火险承保您的财产因列明风险（主要是火灾）而受到的实质损失或损坏，并可附加水灾或盗窃等选项。它通常不赔付您无法营业期间损失的收入，那是营业中断险的用途。请确保保额反映真实的重置成本，以避免比例分摊条款。",
+          },
+          {
+            question: "什么是比例分摊条款（average clause）？",
+            answer:
+              "如果您的财产投保金额低于其真实价值，许多保单会适用比例分摊条款，也就是保险公司只赔付损失的一部分。按现实的重置价值投保并定期检视，是主要的保护方式。",
+          },
+          {
+            question: "员工已有 SOCSO 保障，我还需要私人保险吗？",
+            answer:
+              "SOCSO 的雇佣伤害计划为符合资格的工伤提供法定福利，但那是安全网，并非完整保障。私人的个人意外险、团体住院险或团体人寿险可以弥补缺口并帮助留住员工。外籍员工可能有单独的保险要求，请确认适用于您员工的规定。",
+          },
+          {
+            question: "谁需要专业赔偿险？",
+            answer:
+              "任何提供意见、设计或专业服务，且错误可能令客户蒙受金钱损失的人，例如顾问、会计师、资讯科技公司和设计师。某些专业和合约实际上要求投保。请查看保单是否为索赔提出制，以及其追溯日期是什么。",
+          },
+          {
+            question: "什么是营业中断险？",
+            answer:
+              "它在发生受保事故（例如火灾令您的经营场所关闭）之后，补偿损失的毛利和持续的开支，例如租金和工资。它通常由受保风险造成的实质损失触发，而不是由需求下降触发，且常常与火险一起购买。",
+          },
+          {
+            question: "为什么保险理赔会被拒绝？",
+            answer:
+              "常见原因包括保额不足、没有申报业务活动或经营场所的变更、违反保单条件或保证条款（例如保安要求）、对除外事故提出索赔，以及太迟通知保险公司。购买前阅读除外责任和条件，可以降低风险。",
+          },
+          {
+            question: "我该如何选择保险提供者？",
+            answer:
+              "通过持有正式执照的代理或经纪，取得多份报价，并比较保额、自负额、除外责任和附加条款，而不只是价格。如果您偏好符合伊斯兰教法的选择，也可以选回教保险（takaful）。请把保单文件和续保日期放在同一个地方。",
+          },
+        ],
+      },
+      ms: {
+        title: "Insurans Perniagaan untuk PKS Malaysia: Apa yang Sebenarnya Perlu Anda Lindungi",
+        excerpt:
+          "Kebanyakan perniagaan kecil sama ada tidak diinsuranskan atau diinsuranskan untuk perkara yang salah. Panduan ini menerangkan polisi utama yang patut dipertimbangkan oleh PKS Malaysia — kebakaran dan harta, liabiliti awam, perlindungan kecederaan pekerja melalui PERKESO berbanding pelan swasta, indemniti profesional, dan gangguan perniagaan — apa yang dilindungi dan tidak dilindungi oleh setiap satu, serta perangkap yang menyebabkan tuntutan ditolak.",
+        body: `Insurans ialah pembelian yang paling kerap ditangguhkan oleh pemilik perniagaan kecil, kerana premiumnya pasti manakala kerugiannya tidak. Kemudian kebakaran, kecederaan pelanggan, atau paip pecah berlaku dan perbezaan antara perniagaan yang pulih dengan yang ditutup boleh bergantung pada sehelai kertas. Tujuan panduan ini bukan untuk menjual setiap polisi yang wujud kepada anda. Ia untuk membantu anda memikirkan risiko mana yang benar-benar boleh menenggelamkan perniagaan anda, polisi mana yang menanganinya, dan di mana tuntutan paling kerap menjadi masalah.
+
+Ini ialah maklumat am, bukan nasihat kewangan atau insurans. Produk, perkataan polisi, dan keperluan undang-undang berbeza mengikut penanggung insurans dan berubah dari semasa ke semasa, jadi sahkan butirannya dengan ejen atau broker insurans berlesen dan baca dokumen polisi sebelum membeli.
+
+## 1. Mulakan dengan risiko, bukan produk
+
+Cara yang salah untuk membeli insurans ialah bertanya "apa polisi yang ada?" Cara yang betul ialah menyenaraikan apa yang secara realistik boleh berlaku kepada perniagaan anda dan menyusunnya mengikut betapa teruk kesannya.
+
+### Tanya tiga soalan tentang setiap risiko
+- **Sejauh mana kemungkinannya?** Kebakaran dapur jauh lebih mungkin berlaku dalam perniagaan makanan berbanding studio reka bentuk.
+- **Seteruk mana kesannya?** Bolehkah anda menanggung kosnya daripada simpanan, atau adakah ia akan menamatkan perniagaan?
+- **Adakah orang lain bergantung kepada anda?** Tuan tanah, pemberi pinjaman, dan pelanggan besar sering memerlukan perlindungan tertentu sebagai syarat berurusan dengan anda, yang menukar "pilihan" kepada "wajib".
+
+Risiko yang kerap tetapi kecil biasanya lebih murah untuk anda tanggung sendiri. Risiko yang jarang tetapi dahsyat ialah tujuan sebenar insurans. Di situlah kebanyakan bajet anda patut disalurkan.
+
+## 2. Perlindungan kebakaran dan harta
+
+Bagi sesiapa yang mempunyai premis, stok, atau peralatan, ini biasanya polisi pertama yang perlu dilihat. Ia melindungi kehilangan atau kerosakan fizikal pada harta anda daripada risiko yang dinamakan, dengan kebakaran sebagai teras, dan lanjutan boleh menambah perkara seperti banjir, pecah rumah, atau kerosakan peralatan.
+
+### Tentukan apa yang anda insuranskan
+Asingkan bangunan (jika anda memilikinya), ubah suai dan lekapan anda, peralatan anda, dan stok anda. Setiap satu memerlukan jumlah diinsuranskan sendiri, dan polisi tuan tanah lazimnya melindungi bangunan tetapi bukan kandungan anda.
+
+### Berhati-hati dengan kurang insurans dan fasal purata
+Jika anda menginsuranskan harta anda pada nilai yang kurang daripada sebenar dan kemudian membuat tuntutan, banyak polisi menggunakan "fasal purata" (average clause), bermakna penanggung insurans hanya membayar sebahagian daripada kerugian. Insuranskan pada angka yang mencerminkan kos penggantian sebenar, dan semaknya apabila harga dan paras stok anda berubah. Badan industri menerbitkan penganggar kos pembinaan semula untuk bangunan, yang boleh membantu sebagai panduan kasar.
+
+### Takaful ialah satu pilihan
+Jika anda lebih suka pengaturan yang patuh Syariah, penyedia takaful menawarkan produk yang setara. Bandingkan perlindungan, bukan sekadar label.
+
+## 3. Liabiliti awam
+
+Liabiliti awam membayar apabila pelanggan, pelawat, atau pihak ketiga lain mengalami kecederaan atau kerosakan harta yang anda bertanggungjawab dari segi undang-undang — pelanggan tergelincir di lantai basah, atau papan tanda jatuh merosakkan kereta yang diparkir. Ia lazimnya tidak diwajibkan oleh undang-undang untuk kebanyakan perniagaan, tetapi tuan tanah, pusat membeli-belah, penganjur acara, atau pelanggan korporat mungkin memerlukannya, dan kos undang-undang untuk membela walaupun tuntutan yang lemah boleh menjadi besar.
+
+Semak had bagi setiap tuntutan, sama ada kos undang-undang berada di dalam atau di atas had itu, dan sebarang pengecualian untuk aktiviti yang sebenarnya dilakukan oleh perniagaan anda.
+
+## 4. Melindungi pekerja anda: PERKESO dan perlindungan swasta
+
+### Kecederaan pekerjaan di bawah PERKESO
+Majikan yang dilindungi Akta Keselamatan Sosial Pekerja 1969 mencarum kepada PERKESO, yang Skim Bencana Kerja menyediakan faedah kepada pekerja yang layak yang tercedera semasa bekerja atau ketika berulang-alik untuk bekerja. Pekerja asing juga telah dibawa ke bawah Skim Bencana Kerja sejak beberapa tahun kebelakangan ini. Mendaftar dan mencarum dengan betul ialah kewajipan undang-undang, dan ia juga lapisan pertama perlindungan anda untuk kecederaan kerja. Semak panduan semasa PERKESO tentang siapa yang mesti didaftarkan dan faedah mana yang terpakai.
+
+### Di mana perlindungan swasta sesuai
+PERKESO ialah jaring keselamatan dengan faedah yang ditetapkan, bukan pengganti penuh kepada insurans perubatan atau kumpulan swasta. Polisi kemalangan diri, hospitalisasi kumpulan, atau hayat kumpulan swasta boleh mengisi jurang dan membantu anda mengekalkan kakitangan. Pekerja asing mungkin juga mempunyai keperluan insurans perubatan atau hospitalisasi yang berasingan, jadi sahkan apa yang terpakai kepada tenaga kerja anda.
+
+### Jangan keliru antara PERKESO dengan liabiliti majikan
+Faedah PERKESO dibayar di bawah skim berkanun. Jika anda mahu perlindungan terhadap tuntutan di luar skim berkanun, tanya broker sama ada liabiliti majikan atau lanjutan yang serupa sesuai untuk perniagaan anda.
+
+## 5. Indemniti profesional
+
+Jika anda memberi nasihat, reka bentuk, atau perkhidmatan pakar — perundingan, perakaunan, seni bina, IT, pemasaran, kejuruteraan — satu kesilapan boleh merugikan pelanggan anda dan mereka mungkin menyaman anda. Indemniti profesional melindungi kos undang-undang dan ganti rugi daripada tuntutan kecuaian atau kesilapan dalam kerja profesional anda. Sesetengah profesion dan sesetengah kontrak menjadikannya hampir wajib.
+
+Beri perhatian kepada tarikh retroaktif dan sama ada perlindungan itu "berasaskan tuntutan" (claims made), kerana banyak polisi hanya memberi tindak balas kepada tuntutan yang dibuat buat kali pertama dalam tempoh polisi. Membiarkan polisi luput boleh menyebabkan kerja lalu tidak dilindungi.
+
+## 6. Gangguan perniagaan
+
+Insurans kebakaran membayar untuk membaiki harta anda. Ia biasanya tidak membayar sewa, gaji, dan ansuran pinjaman anda semasa anda tidak dapat berniaga. Perlindungan gangguan perniagaan direka untuk menggantikan keuntungan kasar yang hilang dan kos berterusan selepas peristiwa yang diinsuranskan, seperti kebakaran yang menutup kedai anda selama berbulan-bulan.
+
+Tinjauan terhadap PKS Malaysia berulang kali mendapati jauh lebih banyak perniagaan terdedah kepada gangguan berbanding yang dilindungi. Jika perniagaan anda akan bergelut untuk bertahan tiga bulan penutupan, perlindungan ini wajar diberi pertimbangan serius. Perhatikan bahawa ia biasanya dicetuskan oleh kerosakan fizikal daripada risiko yang diinsuranskan, bukan oleh kejatuhan permintaan.
+
+## 7. Perlindungan lain yang patut diketahui
+
+- **Motor dan kenderaan komersial.** Jika anda menggunakan kenderaan, perlindungan motor pihak ketiga ialah keperluan undang-undang untuk kenderaan itu sendiri. Pastikan penggunaan komersial diisytiharkan.
+- **Barangan dalam transit dan stok.** Berkaitan jika anda menghantar atau menyampaikan barangan.
+- **Liabiliti produk.** Untuk pengilang dan pengeluar makanan yang produknya boleh mencederakan pelanggan.
+- **Siber dan data.** Semakin relevan untuk perniagaan yang menyimpan data pelanggan atau menjual dalam talian.
+- **Wang, kejujuran, dan wang tunai dalam transit.** Untuk perniagaan yang mengendalikan wang tunai yang besar atau terdedah kepada ketidakjujuran pekerja.
+- **Pakej perniagaan kecil yang digabungkan.** Beberapa penanggung insurans menjual pakej untuk kedai, restoran, dan pejabat yang menggabungkan kebakaran, kecurian, liabiliti, dan lain-lain. Ia boleh menjadi titik permulaan yang menjimatkan kos jika perlindungan itu sepadan dengan risiko anda.
+
+> Tabiat yang paling berguna ialah membaca bahagian "apa yang tidak dilindungi" dahulu. Pengecualian, syarat, dan waranti — seperti keperluan keselamatan atau kewajipan penyelenggaraan — menentukan sama ada tuntutan dibayar, dan itulah yang kebanyakan pemilik langkau.
+
+## 8. Pilih perlindungan dan penyedia dengan bijak
+
+Semak setiap polisi berdasarkan situasi sebenar anda, bukan sekadar sebut harga premium. Beberapa peraturan praktikal membantu:
+
+1. **Gunakan perantara berlesen.** Penanggung insurans dan perantara beroperasi di bawah kerangka kawal selia Bank Negara Malaysia, jadi semak bahawa ejen atau broker berlesen dengan betul.
+2. **Dapatkan sekurang-kurangnya dua atau tiga sebut harga.** Bandingkan jumlah diinsuranskan, ekses, pengecualian, dan lanjutan, bukan hanya harga.
+3. **Pilih ekses yang munasabah.** Ekses yang lebih tinggi menurunkan premium, tetapi hanya jika anda benar-benar mampu membayarnya dalam bulan yang buruk.
+4. **Isytihar segala-galanya dengan jujur.** Jawapan yang tepat tentang premis, aktiviti, dan sejarah tuntutan anda melindungi tuntutan anda kemudian.
+5. **Simpan rekod.** Simpan polisi, jadual, dan endorsmen di tempat yang boleh anda temui semasa kecemasan, dan catat tarikh pembaharuan.
+6. **Ketahui saluran aduan.** Jika pertikaian tuntutan tidak dapat diselesaikan dengan penanggung insurans, terdapat badan penyelesaian pertikaian bebas untuk pengguna kewangan. Semak pilihan semasa.
+
+Mudah ditemui dan disahkan juga penting kepada rakan kongsi dan pelanggan yang bertanya tentang perlindungan anda — [penyenaraian percuma dan disahkan di sini](/ms/signup) membantu membentangkan perniagaan anda sebagai mantap dan boleh dipercayai, dan anda boleh [layari direktori](/ms) untuk ejen dan broker insurans tempatan yang bekerja dengan perniagaan kecil.
+
+## Kesilapan lazim PKS Malaysia dengan insurans perniagaan
+
+- **Kurang menginsuranskan untuk menjimatkan premium.** Jumlah diinsuranskan yang jauh di bawah nilai penggantian sebenar boleh mencetuskan fasal purata, menyebabkan anda menanggung sebahagian besar kerugian sendiri.
+- **Menganggap perlindungan kebakaran turut melindungi pendapatan yang hilang.** Tanpa perlindungan gangguan perniagaan, bil pembaikan mungkin dibayar sementara sewa, gaji, dan bayaran pinjaman anda tidak.
+- **Tidak mendedahkan perubahan.** Aktiviti baharu, penggunaan premis yang berbeza, atau bilik stok yang diperluas yang tidak pernah anda beritahu penanggung insurans boleh memberi alasan untuk mengurangkan atau menolak tuntutan.
+
+## Di mana untuk bermula
+
+- **Minggu ini:** Senaraikan lima cara terbesar anda boleh kerugian — kebakaran, kecurian, kecederaan pelanggan, kakitangan utama tidak hadir, penutupan yang panjang — dan letakkan kos kasar di sebelah setiap satu.
+- **Seterusnya:** Semak apa yang sudah anda ada, termasuk perlindungan tuan tanah, pendaftaran PERKESO, dan sebarang polisi yang diperlukan bank, dan catat apa yang tiada.
+- **Kemudian:** Minta sebut harga daripada ejen atau broker berlesen untuk satu atau dua jurang yang benar-benar boleh menamatkan perniagaan, dan bandingkan pengecualian sama teliti seperti harga.
+- **Setiap tahun:** Semak semula jumlah diinsuranskan dan pembaharuan, dan kemas kini penanggung insurans anda apabila premis, stok, aktiviti, atau bilangan kakitangan berubah.
+
+Insurans yang baik bukan tentang melindungi segala-galanya. Ia tentang memastikan hari paling teruk yang realistik bagi perniagaan anda ialah hari yang boleh anda pulih daripadanya.`,
+        faqs: [
+          {
+            question: "Insurans apakah yang wajib dimiliki perniagaan kecil di Malaysia dari segi undang-undang?",
+            answer:
+              "Ia bergantung pada perniagaan anda. Majikan yang dilindungi Akta Keselamatan Sosial Pekerja mesti mendaftar dan mencarum kepada PERKESO, dan perlindungan motor pihak ketiga diperlukan untuk kenderaan. Banyak polisi lain, seperti kebakaran dan liabiliti awam, amnya tidak diwajibkan oleh undang-undang tetapi mungkin diperlukan oleh tuan tanah, pemberi pinjaman, atau pelanggan. Semak pajakan dan kontrak anda, dan sahkan keperluan undang-undang semasa dengan pihak berkuasa berkaitan.",
+          },
+          {
+            question: "Apakah yang dilindungi oleh insurans kebakaran, dan adakah ia mencukupi?",
+            answer:
+              "Insurans kebakaran melindungi kehilangan atau kerosakan fizikal pada harta anda daripada risiko yang dinamakan, terutamanya kebakaran, dengan lanjutan pilihan seperti banjir atau pecah rumah. Ia biasanya tidak menggantikan pendapatan yang hilang semasa anda tidak dapat berniaga, yang menjadi tujuan perlindungan gangguan perniagaan. Pastikan jumlah diinsuranskan mencerminkan kos penggantian sebenar untuk mengelakkan fasal purata.",
+          },
+          {
+            question: "Apakah fasal purata (average clause)?",
+            answer:
+              "Jika harta anda diinsuranskan pada nilai yang kurang daripada nilai sebenar, banyak polisi menggunakan fasal purata, bermakna penanggung insurans hanya membayar sebahagian daripada sebarang kerugian. Menginsuranskan pada nilai penggantian yang realistik, dan menyemaknya secara berkala, ialah perlindungan utama.",
+          },
+          {
+            question: "Adakah saya masih memerlukan insurans swasta jika kakitangan saya dilindungi PERKESO?",
+            answer:
+              "Skim Bencana Kerja PERKESO menyediakan faedah berkanun untuk kecederaan tempat kerja yang layak, tetapi ia jaring keselamatan dan bukan perlindungan penuh. Polisi kemalangan diri, hospitalisasi kumpulan, atau hayat kumpulan swasta boleh mengisi jurang dan membantu mengekalkan kakitangan. Pekerja asing mungkin mempunyai keperluan insurans yang berasingan, jadi semak apa yang terpakai kepada tenaga kerja anda.",
+          },
+          {
+            question: "Siapa yang memerlukan insurans indemniti profesional?",
+            answer:
+              "Sesiapa yang memberi nasihat, reka bentuk, atau perkhidmatan pakar yang kesilapannya boleh merugikan pelanggan, seperti perunding, akauntan, firma IT, dan pereka. Sesetengah profesion dan kontrak hampir mewajibkannya. Semak sama ada polisi itu berasaskan tuntutan dan apakah tarikh retroaktifnya.",
+          },
+          {
+            question: "Apakah insurans gangguan perniagaan?",
+            answer:
+              "Ia menggantikan keuntungan kasar yang hilang dan kos berterusan, seperti sewa dan gaji, selepas peristiwa yang diinsuranskan seperti kebakaran menutup premis anda. Ia biasanya dicetuskan oleh kerosakan fizikal daripada risiko yang diinsuranskan dan bukan oleh kejatuhan permintaan, dan sering dibeli bersama perlindungan kebakaran.",
+          },
+          {
+            question: "Mengapakah tuntutan insurans ditolak?",
+            answer:
+              "Sebab biasa termasuk kurang insurans, gagal mendedahkan perubahan dalam aktiviti atau premis anda, melanggar syarat atau waranti polisi seperti keperluan keselamatan, menuntut untuk peristiwa yang dikecualikan, dan memaklumkan penanggung insurans terlalu lewat. Membaca pengecualian dan syarat sebelum membeli mengurangkan risiko.",
+          },
+          {
+            question: "Bagaimana saya memilih penyedia insurans?",
+            answer:
+              "Gunakan ejen atau broker yang berlesen dengan betul, dapatkan beberapa sebut harga, dan bandingkan jumlah diinsuranskan, ekses, pengecualian, dan lanjutan dan bukan hanya harga. Takaful tersedia jika anda lebih suka pilihan yang patuh Syariah. Simpan dokumen polisi dan tarikh pembaharuan di satu tempat.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "small-business-tax-calendar-in-malaysia",
+    title: "Doing Business Taxes in Malaysia: A Small Business Owner's Annual Tax Calendar",
+    seoTitle: "Malaysia Small Business Tax Calendar: Form B, C, CP204",
+    seoDescription:
+      "Sole proprietor vs company tax filing in Malaysia: Form B, Form C, CP204 instalments, record-keeping, deductible expenses and the deadlines to calendar.",
+    coverImage: {
+      file: "small-business-tax-calendar-in-malaysia-cover.webp",
+      mimeType: "image/webp",
+      alt: "A business owner working through her finances with a calculator and paperwork at a bright desk",
+      altTranslations: {
+        zh: "一位企业主在明亮的办公桌前，用计算器和文件整理财务",
+        ms: "Seorang pemilik perniagaan menyemak kewangannya dengan kalkulator dan dokumen di meja yang cerah",
+      },
+    },
+    contentImages: {
+      records: {
+        file: "small-business-tax-calendar-in-malaysia-records.webp",
+        mimeType: "image/webp",
+        alt: "A businesswoman reaching for a stack of files at a desk beside a laptop and notebooks",
+        altTranslations: {
+          zh: "一位女企业家在办公桌前伸手去拿一叠文件，旁边是笔记本电脑和笔记本",
+          ms: "Seorang ahli perniagaan wanita mencapai timbunan fail di meja bersebelahan komputer riba dan buku nota",
+        },
+        after: "Keep your records in one place from day one, because every deadline in this calendar depends on them.",
+        afterTranslations: {
+          zh: "从第一天起就把记录集中保存在一个地方，因为这份日历上的每个截止日期都依赖它们。",
+          ms: "Simpan rekod anda di satu tempat sejak hari pertama, kerana setiap tarikh akhir dalam kalendar ini bergantung padanya.",
+        },
+      },
+    },
+    excerpt:
+      "Late filing and missed instalments are the most avoidable tax problems a Malaysian small business can have. This guide explains how a sole proprietor and a company file differently (Form B versus Form C), how CP204 instalments work, what records to keep and which expenses are commonly deductible, and the deadlines worth putting in your calendar.",
+    body: `Most tax penalties on small businesses are not about cheating. They are about missing a date, not keeping a receipt, or not realising a payment was due. A simple annual calendar fixes most of that. This guide walks through how a sole proprietor and a company file differently in Malaysia, what instalments and records are involved, and the dates worth putting in your phone today.
+
+Tax deadlines, rates, and procedures are revised often, sometimes by short-notice extensions or Budget announcements. Treat the dates and figures here as a starting point and confirm them on the Inland Revenue Board's (LHDN / Hasil) official website or with a licensed tax agent before relying on them.
+
+## 1. Know which kind of taxpayer you are
+
+The first fork in the road is your legal structure, because it decides which form you file and when.
+
+### Sole proprietor or partnership
+A sole proprietorship is not a separate legal entity. Your business profit is treated as your personal income and taxed at individual rates, filed on your own income tax return. A partnership files a partnership return, and each partner declares their share on their own return.
+
+### Company (Sdn Bhd)
+A company is a separate taxpayer. It files its own return, pays tax on its own profits at corporate rates, and any salary or dividends you take out are a separate matter on your personal return. Qualifying small companies have historically benefited from lower tiered rates on part of their income, so check the current rates and conditions.
+
+### Why it matters
+The structure decides the form, the deadline, and whether instalment payments apply. If you are unsure which applies, check your SSM registration and your LHDN account type, and ask a tax agent if you are still unclear.
+
+## 2. Sole proprietors: Form B and personal instalments
+
+### Filing the return
+Individuals with business income generally file Form B (as opposed to Form BE, which is for those with only employment income). The deadline for the year of assessment has typically been 30 June of the following year for manual filing, with a short extension for e-Filing through MyTax, often to 15 July. Always check the current year's dates, because they can change.
+
+### Business accounts come first
+Form B asks you to report your business income, so you will need to prepare a simple profit and loss statement, and in many cases a set of accounts or supporting schedules. Keeping your books up to date through the year makes this a matter of hours rather than weeks.
+
+### Instalment payments
+Individuals with business income may be expected to pay tax by instalments during the year, often called CP500, based on the previous year's tax. Check your LHDN notices and MyTax account to see what applies to you, and mark the instalment dates.
+
+### Don't forget your personal reliefs
+Individual reliefs, rebates, and deductions can reduce your tax bill, but you need the supporting documents. Collect receipts for relief-eligible items through the year so you are not hunting for them in June.
+
+## 3. Companies: Form C and CP204
+
+### Filing the return
+A company files Form C, and the deadline is generally seven months after the end of its financial year. If your year ends on 31 December, that puts the deadline at the end of July the following year. Companies are expected to file through e-Filing. Make sure your accounts are finalised in time, since many companies also have to coordinate with an auditor or accountant to produce the figures first.
+
+### Estimating your tax: CP204
+Companies are required to submit an estimate of the tax payable for each financial year (Form CP204) and then pay it in monthly instalments. Timing rules for the estimate differ between new and existing companies, and sources describe them in different ways, so check LHDN's current guidance and your own schedule rather than assuming a date.
+
+### Revising the estimate
+A company can usually revise its estimate during the year, at specified points such as around the sixth and ninth month of the basis period, and in some periods the eleventh month as well. Where the final tax turns out to be much higher than the estimate, a penalty on the underpayment can apply, so revising early when profits grow is cheaper than being surprised later. Confirm the revision windows in force for your year.
+
+### Penalties for late or underpaid instalments
+Late or short instalment payments can attract a percentage penalty, and the rate has historically been around 10% on the shortfall. Treat instalment dates as firm deadlines and set a reminder a few days before each one.
+
+> A good rule of thumb for a company: if your profits are clearly heading well above your estimate, revise the CP204 estimate in the next available window instead of waiting. Paying a bit more tax earlier is usually cheaper than paying a penalty later.
+
+## 4. Records: what to keep, and for how long
+
+Everything in this calendar depends on your records, and LHDN expects you to be able to back up what you declare.
+
+Keep your records in one place from day one, because every deadline in this calendar depends on them. At a minimum, keep:
+
+1. **Sales records.** Invoices, receipts, and point-of-sale reports.
+2. **Purchase and expense records.** Supplier invoices, receipts, and bills, with the date, amount, and what it was for.
+3. **Bank statements.** Business account statements, reconciled to your books.
+4. **Payroll records.** Payslips, EPF, SOCSO, EIS, and income tax deduction records for employees.
+5. **Assets.** Purchase documents for equipment, vehicles, and other items you may claim capital allowances on.
+6. **Tax correspondence.** Notices, assessments, and proof of payment.
+
+### How long to keep them
+Records are commonly required to be kept for several years — seven years is the figure often cited — but confirm the current requirement with LHDN. A digital copy that is clear and well organised is usually easier to manage than boxes of paper, though check what LHDN accepts for your situation.
+
+### Keep business and personal money separate
+Mixing personal and business spending makes it hard to prove what is a deductible expense. A separate business bank account is one of the cheapest ways to keep your tax life clean.
+
+## 5. Commonly deductible expenses
+
+In general, expenses incurred wholly and exclusively in producing your business income are deductible, while private or capital items are not (capital items may qualify for capital allowances instead). Typical examples include:
+
+- **Staff costs.** Salaries, wages, bonuses, and employer contributions to EPF, SOCSO, and EIS.
+- **Rent and utilities.** For business premises.
+- **Cost of goods sold.** Stock and materials you resell or use.
+- **Professional fees.** Accounting, audit, and certain legal fees.
+- **Marketing.** Advertising and promotion.
+- **Repairs and maintenance.** For business assets.
+- **Insurance.** Business insurance premiums.
+- **Capital allowances.** On qualifying equipment and vehicles, instead of deducting the full cost at once.
+
+### Watch what is restricted
+Some categories, such as entertainment, private motor expenses, and non-business items, are restricted or non-deductible. Specific rules and incentives change, so check current guidance for the item you are claiming.
+
+## 6. Build your annual calendar
+
+Here is a simple structure to adapt to your own financial year and structure. Confirm all dates on the official sites.
+
+### Every month
+- **Payroll deductions and contributions.** Employer payments such as PCB (monthly tax deductions), EPF, SOCSO, and EIS generally fall due by the middle of the following month.
+- **Close your books.** Reconcile the bank account and file receipts, so the year-end is not a pile-up.
+- **Company instalments.** Pay your CP204 instalments on the due dates if you are a company.
+
+### Early in the year
+- **Employee tax forms.** Employers are generally expected to give staff their annual employment income statements (Form EA) by the end of February.
+- **Employer's return.** Form E, the employer's annual return, is generally due by 31 March.
+
+### Mid-year
+- **Sole proprietors.** Form B around 30 June (e-Filing a little later), so have your accounts ready in May.
+- **Instalment revisions.** Review your CP204 estimate at the revision windows if you are a company.
+
+### After your financial year-end
+- **Companies.** Form C is due seven months after year-end, so book your accountant or auditor early.
+- **New estimate.** Plan the next year's CP204 estimate ahead of the new financial year.
+
+You can also tie in your other compliance dates, such as SST returns and e-invoicing duties if they apply to you. Being easy to find and verify also helps with banks, partners, and customers who check you out — [a free, verified listing here](/en/signup) is a small way to show your business is established, and you can [browse the directory](/en) for local accountants and tax agents who handle these filings every year.
+
+## Common mistakes Malaysian small businesses make with tax
+
+- **Treating the deadline as the starting date.** Starting your accounts in the week the return is due almost guarantees errors or a late filing. Close each month as you go.
+- **Ignoring the instalment estimate.** Companies that never revise a CP204 estimate, or sole proprietors who miss instalment dates, create avoidable penalties even if the final return is filed on time.
+- **Mixing personal and business money.** Without clean separation, you cannot prove what is deductible, and you may lose legitimate claims or invite questions.
+
+## Where to start
+
+- **This week:** Confirm your tax structure and your financial year-end, and look up your next filing deadline on the official LHDN site.
+- **Next:** Put the dates from section 6 into a shared calendar with reminders a few weeks before each one, and note who is responsible for each.
+- **Then:** Set up a simple, consistent record system — a separate business bank account, a folder structure, and a monthly book-closing habit.
+- **Ongoing:** Talk to a licensed tax agent or accountant at least once a year, ideally before your year-end, to check estimates, reliefs, and any rule changes.
+
+Good tax compliance is mostly calendar discipline: know your dates, keep your records, and revise before a surprise turns into a penalty.`,
+    faqs: [
+      {
+        question: "What is the difference between Form B and Form C?",
+        answer:
+          "Form B is generally used by individuals with business income, such as sole proprietors, while Form C is the income tax return for companies. They have different deadlines and different instalment rules, so first confirm which type of taxpayer you are.",
+      },
+      {
+        question: "When is the deadline to file Form B for a sole proprietor?",
+        answer:
+          "It has typically been 30 June of the following year for manual filing, with a short extension for e-Filing, often to 15 July. Deadlines can change, so check LHDN's official site for the current year.",
+      },
+      {
+        question: "When must a company file Form C?",
+        answer:
+          "Generally seven months after the end of the company's financial year. For a 31 December year-end, that is around the end of July the following year. Confirm on LHDN's site, and plan your accounts or audit well ahead.",
+      },
+      {
+        question: "What is CP204?",
+        answer:
+          "CP204 is the form a company uses to submit an estimate of its tax payable for the financial year, which is then paid in monthly instalments. Timing rules differ for new and existing companies, and you can generally revise the estimate at set points during the year, so check LHDN's current guidance.",
+      },
+      {
+        question: "What happens if I underestimate my tax or pay instalments late?",
+        answer:
+          "A penalty may apply on underpaid or late instalments, historically a percentage of the shortfall around 10%, and a large gap between the estimate and the final tax can also attract a penalty. Revising your estimate early when profits grow is usually cheaper than being penalised later.",
+      },
+      {
+        question: "What records do I need to keep, and for how long?",
+        answer:
+          "Keep sales records, purchase and expense receipts, bank statements, payroll records, asset purchase documents, and tax correspondence. Records are commonly required to be kept for several years, often cited as seven, but confirm the current requirement with LHDN.",
+      },
+      {
+        question: "Which business expenses are generally deductible?",
+        answer:
+          "Expenses incurred wholly and exclusively in producing business income, such as staff costs, rent and utilities for business premises, cost of goods sold, professional fees, marketing, repairs, and insurance. Capital items may qualify for capital allowances instead, and some categories, like entertainment, are restricted.",
+      },
+      {
+        question: "Do I need a tax agent or accountant?",
+        answer:
+          "It is not legally required for a simple return, but a licensed tax agent or accountant can save time, catch missed deductions and reliefs, and help you avoid penalties, especially for companies. Even one check-in a year, ideally before your year-end, is worthwhile.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "在马来西亚办理营业税务：小企业主的年度税务日历",
+        excerpt:
+          "逾期申报和漏缴分期税款，是马来西亚小企业最可避免的税务问题。本指南说明独资经营者与公司在申报上有何不同（Form B 对 Form C）、CP204 分期税款如何运作、应保存哪些记录、哪些开支通常可扣除，以及值得写进日历的截止日期。",
+        body: `小企业面对的大多数税务罚款，并不是因为作弊，而是因为错过日期、没有保存收据，或没有意识到有一笔款项到期。一份简单的年度日历就能解决大部分问题。本指南介绍在马来西亚，独资经营者和公司在申报上有何不同、涉及哪些分期税款和记录，以及今天就值得写进手机的日期。
+
+税务截止日期、税率和程序经常修订，有时是临时延期，有时是财政预算案宣布的变动。请把这里的日期和数字当作起点，在依赖它们之前，到内陆税收局（LHDN / Hasil）的官方网站确认，或向持牌税务代理查询。
+
+## 1. 先弄清楚您是哪一种纳税人
+
+第一个分岔口是您的法律结构，因为它决定您要提交哪一份表格以及何时提交。
+
+### 独资经营者或合伙
+独资经营并不是独立的法律实体。您的业务利润被视为您的个人收入，按个人税率课税，在您自己的所得税报税表上申报。合伙企业提交合伙报税表，每位合伙人在自己的报税表上申报各自的份额。
+
+### 公司（私人有限公司 Sdn Bhd）
+公司是独立的纳税人。它提交自己的报税表，按企业税率就自己的利润纳税，而您从公司领取的薪水或股息，则是您个人报税表上的另一回事。符合条件的小型公司历来可以就部分收入享受较低的累进税率，所以请查核目前的税率和条件。
+
+### 为什么这很重要
+结构决定了表格、截止日期，以及是否适用分期缴税。如果您不确定适用哪一种，请查看您的 SSM 注册和 LHDN 账户类型，如果仍不清楚，请询问税务代理。
+
+## 2. 独资经营者：Form B 与个人分期税款
+
+### 提交报税表
+有营业收入的个人一般提交 Form B（相对于仅有受薪收入者使用的 Form BE）。某一课税年度的截止日期，历来是次年 6 月 30 日（人工申报），电子申报（通过 MyTax）则略有宽限，通常到 7 月 15 日。请务必查看当年的日期，因为它们可能改变。
+
+### 先做好业务账目
+Form B 要求您申报营业收入，所以您需要准备一份简单的损益表，在许多情况下还需要一套账目或辅助附表。全年都及时更新账簿，会让这件事只需要几个小时，而不是几个星期。
+
+### 分期缴税
+有营业收入的个人可能需要在年内分期缴税，通常称为 CP500，依据上一年的税额。请查看您的 LHDN 通知和 MyTax 账户，了解适用于您的情况，并标记分期缴付日期。
+
+### 别忘了个人税务减免
+个人减免、税务回扣和扣除可以降低您的税单，但您需要有证明文件。请在全年收集可享减免的项目的收据，这样您就不必在六月四处翻找。
+
+## 3. 公司：Form C 与 CP204
+
+### 提交报税表
+公司提交 Form C，截止日期一般是财政年度结束后七个月。如果您的财政年度在 12 月 31 日结束，截止日期就是次年 7 月底。公司应通过电子申报提交。请确保账目及时定稿，因为许多公司还需要先与审计师或会计师协调，才能得出数字。
+
+### 估算您的税款：CP204
+公司须就每个财政年度提交应缴税款的估算（Form CP204），然后分月分期缴付。估算的时间规则，新公司与现有公司不同，而各来源的描述也不一致，所以请查核 LHDN 的最新指引和您自己的时间表，而不要想当然地假设日期。
+
+### 修订估算
+公司通常可以在年内的特定时间点修订其估算，例如基准期的大约第六个月和第九个月，在某些年度还包括第十一个月。如果最终税款远高于估算，可能会对少缴的部分处以罚款，所以在利润增长时及早修订，比日后措手不及更划算。请确认适用于您那一年的修订窗口。
+
+### 逾期或少缴分期税款的罚款
+逾期或少缴分期税款，可能被处以按比例计算的罚款，历来的比率约为不足额的 10%。请把分期缴付日期视为硬性截止日期，并在每次到期前几天设置提醒。
+
+> 对公司而言，一个好的经验法则是：如果您的利润明显会大幅超过估算，请在下一个可用的窗口修订 CP204 估算，而不是等待。提早多缴一点税，通常比日后缴罚款更划算。
+
+## 4. 记录：保存什么，保存多久
+
+这份日历上的一切都依赖于您的记录，而 LHDN 期望您能够证明您所申报的内容。
+
+从第一天起就把记录集中保存在一个地方，因为这份日历上的每个截止日期都依赖它们。至少应保存：
+
+1. **销售记录。** 发票、收据和销售点报告。
+2. **采购和开支记录。** 供应商发票、收据和账单，注明日期、金额和用途。
+3. **银行月结单。** 企业账户的月结单，并与账簿核对。
+4. **薪资记录。** 员工的薪资单、EPF、SOCSO、EIS 和所得税扣除记录。
+5. **资产。** 设备、车辆及其他您可能申请资本免税额的项目的购买文件。
+6. **税务往来文件。** 通知、评税单和缴款证明。
+
+### 保存多久
+记录通常须保存数年——常被引用的是七年——但请向 LHDN 确认目前的要求。清晰且整理有序的电子副本，通常比一箱箱的纸质文件更容易管理，不过请查核 LHDN 在您的情况下接受什么。
+
+### 把企业与个人的钱分开
+个人和业务支出混在一起，会让您难以证明哪些是可扣除的开支。一个独立的企业银行账户，是让您的税务保持清晰最便宜的方法之一。
+
+## 5. 常见的可扣除开支
+
+一般而言，为产生营业收入而完全且专门发生的开支是可扣除的，而私人或资本性项目则不可以（资本性项目可能改为符合资本免税额）。典型的例子包括：
+
+- **员工成本。** 薪水、工资、花红，以及雇主对 EPF、SOCSO 和 EIS 的供款。
+- **租金与水电费。** 针对经营场所。
+- **销货成本。** 您转售或使用的存货和材料。
+- **专业费用。** 会计、审计和某些法律费用。
+- **营销。** 广告与推广。
+- **维修与保养。** 针对业务资产。
+- **保险。** 商业保险保费。
+- **资本免税额。** 针对符合条件的设备和车辆，而不是一次性扣除全部成本。
+
+### 留意受限制的项目
+某些类别，例如娱乐、私人汽车开支和非业务项目，受到限制或不可扣除。具体规则和优惠会变动，所以请查核您所申报项目的最新指引。
+
+## 6. 建立您的年度日历
+
+以下是一个简单的结构，请按您自己的财政年度和结构调整。请在官方网站确认所有日期。
+
+### 每个月
+- **薪资扣款与供款。** 雇主的付款，例如 PCB（每月税款扣除）、EPF、SOCSO 和 EIS，一般在次月中旬前到期。
+- **结账。** 核对银行账户并归档收据，让年底不致堆积如山。
+- **公司分期税款。** 如果您是公司，请在到期日缴付 CP204 分期税款。
+
+### 年初
+- **员工税务表格。** 雇主一般须在二月底前，把年度受薪收入报表（Form EA）交给员工。
+- **雇主报税表。** Form E，即雇主年度报税表，一般在 3 月 31 日前到期。
+
+### 年中
+- **独资经营者。** Form B 约在 6 月 30 日（电子申报稍晚），所以请在五月前备妥账目。
+- **分期税款修订。** 如果您是公司，请在修订窗口检视您的 CP204 估算。
+
+### 财政年度结束后
+- **公司。** Form C 在年结后七个月到期，所以请提早预约您的会计师或审计师。
+- **新的估算。** 在新财政年度开始前，规划下一年的 CP204 估算。
+
+您也可以把其他合规日期，例如销售与服务税（SST）申报和电子发票义务（如适用于您），一并纳入。对于查核您的银行、合作伙伴和客户来说，容易被找到和验证也有帮助——[在这里免费创建认证列表](/zh/signup)，是展示您的企业稳健的一个小小方式，您也可以[浏览目录](/zh)，找到每年都在处理这些申报的本地会计师和税务代理。
+
+## 马来西亚小企业在税务上常犯的错误
+
+- **把截止日期当成开始日期。** 在报税表到期的那一周才开始整理账目，几乎必然导致错误或逾期申报。请逐月结账。
+- **忽略分期税款的估算。** 从不修订 CP204 估算的公司，或错过分期缴付日期的独资经营者，即使最终报税表按时提交，也会产生本可避免的罚款。
+- **把个人与企业的钱混在一起。** 没有清楚的区分，您就无法证明哪些可以扣除，可能会失去合理的申报，或招来质疑。
+
+## 从哪里开始
+
+- **本周：** 确认您的税务结构和财政年度结束日，并在 LHDN 官方网站查看您下一个申报截止日期。
+- **接下来：** 把第 6 节的日期放进共用日历，并在每个日期前几周设置提醒，注明由谁负责。
+- **然后：** 建立一个简单且一致的记录系统——独立的企业银行账户、文件夹结构，以及每月结账的习惯。
+- **持续做：** 每年至少与持牌税务代理或会计师谈一次，最好在年结之前，检查估算、减免以及任何规则变动。
+
+良好的税务合规，主要是日历上的自律：知道您的日期，保存您的记录，并在意外变成罚款之前就去修订。`,
+        faqs: [
+          {
+            question: "Form B 和 Form C 有什么区别？",
+            answer:
+              "Form B 一般由有营业收入的个人使用，例如独资经营者，而 Form C 是公司的所得税报税表。它们的截止日期和分期缴税规则不同，所以请先确认您属于哪一种纳税人。",
+          },
+          {
+            question: "独资经营者提交 Form B 的截止日期是什么时候？",
+            answer:
+              "人工申报历来是次年 6 月 30 日，电子申报略有宽限，通常到 7 月 15 日。截止日期可能改变，所以请到 LHDN 官方网站查核当年的日期。",
+          },
+          {
+            question: "公司必须在什么时候提交 Form C？",
+            answer:
+              "一般是公司财政年度结束后七个月。若财政年度在 12 月 31 日结束，则约在次年 7 月底。请到 LHDN 网站确认，并提早规划您的账目或审计。",
+          },
+          {
+            question: "CP204 是什么？",
+            answer:
+              "CP204 是公司用来提交该财政年度应缴税款估算的表格，之后按月分期缴付。新公司与现有公司的时间规则不同，您一般也可以在年内特定时间点修订估算，所以请查核 LHDN 的最新指引。",
+          },
+          {
+            question: "如果我低估税款或延迟缴付分期税款，会怎样？",
+            answer:
+              "对少缴或逾期的分期税款可能处以罚款，历来是不足额的约 10%，而估算与最终税款之间差距过大，也可能被罚款。在利润增长时及早修订估算，通常比日后被罚款更划算。",
+          },
+          {
+            question: "我需要保存哪些记录？要保存多久？",
+            answer:
+              "请保存销售记录、采购和开支收据、银行月结单、薪资记录、资产购买文件和税务往来文件。记录通常须保存数年，常被引用的是七年，但请向 LHDN 确认目前的要求。",
+          },
+          {
+            question: "哪些业务开支一般是可扣除的？",
+            answer:
+              "为产生营业收入而完全且专门发生的开支，例如员工成本、经营场所的租金和水电费、销货成本、专业费用、营销、维修和保险。资本性项目可能改为符合资本免税额，而某些类别（如娱乐）受到限制。",
+          },
+          {
+            question: "我需要税务代理或会计师吗？",
+            answer:
+              "对简单的报税表，法律上并不要求，但持牌税务代理或会计师可以节省时间、发现被遗漏的扣除和减免，并帮助您避免罚款，对公司尤其如此。即使每年只咨询一次，最好在年结之前，也是值得的。",
+          },
+        ],
+      },
+      ms: {
+        title: "Menguruskan Cukai Perniagaan di Malaysia: Kalendar Cukai Tahunan untuk Pemilik Perniagaan Kecil",
+        excerpt:
+          "Pemfailan lewat dan ansuran yang terlepas ialah masalah cukai yang paling boleh dielakkan oleh perniagaan kecil Malaysia. Panduan ini menerangkan bagaimana pemilik tunggal dan syarikat memfailkan secara berbeza (Borang B berbanding Borang C), bagaimana ansuran CP204 berfungsi, rekod apa yang perlu disimpan dan perbelanjaan mana yang lazimnya boleh ditolak, serta tarikh akhir yang wajar dimasukkan dalam kalendar anda.",
+        body: `Kebanyakan penalti cukai ke atas perniagaan kecil bukan tentang menipu. Ia tentang terlepas tarikh, tidak menyimpan resit, atau tidak sedar bahawa sesuatu bayaran telah sampai tempoh. Kalendar tahunan yang mudah menyelesaikan kebanyakan daripadanya. Panduan ini menerangkan bagaimana pemilik tunggal dan syarikat memfailkan secara berbeza di Malaysia, ansuran dan rekod yang terlibat, serta tarikh yang wajar dimasukkan ke dalam telefon anda hari ini.
+
+Tarikh akhir cukai, kadar, dan prosedur kerap disemak, kadangkala melalui lanjutan pada saat akhir atau pengumuman Bajet. Anggaplah tarikh dan angka di sini sebagai titik permulaan dan sahkan di laman web rasmi Lembaga Hasil Dalam Negeri (LHDN / Hasil) atau dengan ejen cukai berlesen sebelum bergantung padanya.
+
+## 1. Ketahui jenis pembayar cukai anda
+
+Persimpangan pertama ialah struktur undang-undang anda, kerana ia menentukan borang yang anda failkan dan bila.
+
+### Pemilik tunggal atau perkongsian
+Pemilikan tunggal bukan entiti undang-undang yang berasingan. Keuntungan perniagaan anda dianggap sebagai pendapatan peribadi anda dan dicukai pada kadar individu, difailkan pada borang nyata cukai pendapatan anda sendiri. Perkongsian memfailkan borang nyata perkongsian, dan setiap rakan kongsi mengisytiharkan bahagian masing-masing pada borang nyata sendiri.
+
+### Syarikat (Sdn Bhd)
+Syarikat ialah pembayar cukai yang berasingan. Ia memfailkan borang nyatanya sendiri, membayar cukai atas keuntungannya sendiri pada kadar korporat, dan sebarang gaji atau dividen yang anda ambil ialah perkara berasingan pada borang nyata peribadi anda. Syarikat kecil yang layak secara sejarahnya mendapat manfaat daripada kadar berperingkat yang lebih rendah ke atas sebahagian pendapatannya, jadi semak kadar dan syarat semasa.
+
+### Mengapa ia penting
+Struktur menentukan borang, tarikh akhir, dan sama ada bayaran ansuran terpakai. Jika anda tidak pasti yang mana satu terpakai, semak pendaftaran SSM dan jenis akaun LHDN anda, dan tanya ejen cukai jika anda masih tidak jelas.
+
+## 2. Pemilik tunggal: Borang B dan ansuran peribadi
+
+### Memfailkan borang nyata
+Individu yang mempunyai pendapatan perniagaan amnya memfailkan Borang B (berbeza daripada Borang BE, untuk mereka yang hanya mempunyai pendapatan pekerjaan). Tarikh akhir untuk tahun taksiran lazimnya ialah 30 Jun tahun berikutnya untuk pemfailan manual, dengan lanjutan singkat untuk e-Filing melalui MyTax, selalunya hingga 15 Julai. Sentiasa semak tarikh tahun semasa, kerana ia boleh berubah.
+
+### Akaun perniagaan didahulukan
+Borang B meminta anda melaporkan pendapatan perniagaan, jadi anda perlu menyediakan penyata untung rugi yang ringkas, dan dalam banyak kes satu set akaun atau jadual sokongan. Mengemas kini buku anda sepanjang tahun menjadikan ini urusan beberapa jam dan bukan berminggu-minggu.
+
+### Bayaran ansuran
+Individu yang mempunyai pendapatan perniagaan mungkin dijangka membayar cukai secara ansuran dalam tahun itu, yang selalunya dipanggil CP500, berdasarkan cukai tahun sebelumnya. Semak notis LHDN dan akaun MyTax anda untuk melihat apa yang terpakai kepada anda, dan tandakan tarikh ansuran.
+
+### Jangan lupa pelepasan peribadi anda
+Pelepasan, rebat, dan potongan individu boleh mengurangkan bil cukai anda, tetapi anda memerlukan dokumen sokongan. Kumpulkan resit untuk item yang layak pelepasan sepanjang tahun supaya anda tidak mencarinya pada bulan Jun.
+
+## 3. Syarikat: Borang C dan CP204
+
+### Memfailkan borang nyata
+Syarikat memfailkan Borang C, dan tarikh akhirnya amnya tujuh bulan selepas tamat tahun kewangannya. Jika tahun anda berakhir pada 31 Disember, itu meletakkan tarikh akhir pada penghujung Julai tahun berikutnya. Syarikat dijangka memfailkan melalui e-Filing. Pastikan akaun anda dimuktamadkan tepat pada masanya, kerana banyak syarikat juga perlu berkoordinasi dengan juruaudit atau akauntan untuk menghasilkan angka terlebih dahulu.
+
+### Menganggar cukai anda: CP204
+Syarikat dikehendaki mengemukakan anggaran cukai yang kena dibayar bagi setiap tahun kewangan (Borang CP204) dan kemudian membayarnya secara ansuran bulanan. Peraturan masa untuk anggaran berbeza antara syarikat baharu dan sedia ada, dan sumber menggambarkannya dengan cara yang berbeza, jadi semak panduan semasa LHDN dan jadual anda sendiri dan bukannya menganggap sesuatu tarikh.
+
+### Menyemak semula anggaran
+Syarikat lazimnya boleh menyemak semula anggarannya dalam tahun itu, pada titik tertentu seperti sekitar bulan keenam dan kesembilan tempoh asas, dan dalam sesetengah tempoh bulan kesebelas juga. Jika cukai akhir ternyata jauh lebih tinggi daripada anggaran, penalti ke atas kurang bayaran boleh dikenakan, jadi menyemak semula awal apabila keuntungan meningkat lebih murah daripada terkejut kemudian. Sahkan tetingkap semakan yang berkuat kuasa untuk tahun anda.
+
+### Penalti untuk ansuran yang lewat atau kurang dibayar
+Ansuran yang lewat atau kurang dibayar boleh dikenakan penalti peratusan, dan kadarnya secara sejarahnya sekitar 10% ke atas kekurangan itu. Anggap tarikh ansuran sebagai tarikh akhir yang tegas dan tetapkan peringatan beberapa hari sebelum setiap satu.
+
+> Peraturan praktikal yang baik untuk syarikat: jika keuntungan anda jelas menuju jauh melebihi anggaran, semak semula anggaran CP204 dalam tetingkap seterusnya yang ada dan bukannya menunggu. Membayar cukai sedikit lebih awal biasanya lebih murah daripada membayar penalti kemudian.
+
+## 4. Rekod: apa yang perlu disimpan, dan untuk berapa lama
+
+Segala-galanya dalam kalendar ini bergantung pada rekod anda, dan LHDN menjangkakan anda dapat menyokong apa yang anda isytiharkan.
+
+Simpan rekod anda di satu tempat sejak hari pertama, kerana setiap tarikh akhir dalam kalendar ini bergantung padanya. Sekurang-kurangnya, simpan:
+
+1. **Rekod jualan.** Invois, resit, dan laporan titik jualan.
+2. **Rekod pembelian dan perbelanjaan.** Invois pembekal, resit, dan bil, dengan tarikh, jumlah, dan tujuannya.
+3. **Penyata bank.** Penyata akaun perniagaan, diselaraskan dengan buku anda.
+4. **Rekod gaji.** Slip gaji, KWSP, PERKESO, SIP, dan rekod potongan cukai pendapatan untuk pekerja.
+5. **Aset.** Dokumen pembelian untuk peralatan, kenderaan, dan item lain yang mungkin anda tuntut elaun modal.
+6. **Surat-menyurat cukai.** Notis, taksiran, dan bukti pembayaran.
+
+### Berapa lama untuk menyimpannya
+Rekod lazimnya dikehendaki disimpan selama beberapa tahun — tujuh tahun ialah angka yang sering disebut — tetapi sahkan keperluan semasa dengan LHDN. Salinan digital yang jelas dan tersusun biasanya lebih mudah diurus daripada kotak kertas, walaupun semak apa yang LHDN terima untuk situasi anda.
+
+### Asingkan wang perniagaan dan peribadi
+Mencampurkan perbelanjaan peribadi dan perniagaan menyukarkan anda membuktikan apa yang merupakan perbelanjaan yang boleh ditolak. Akaun bank perniagaan yang berasingan ialah salah satu cara termurah untuk memastikan urusan cukai anda bersih.
+
+## 5. Perbelanjaan yang lazimnya boleh ditolak
+
+Secara amnya, perbelanjaan yang ditanggung sepenuhnya dan semata-mata dalam menghasilkan pendapatan perniagaan anda boleh ditolak, manakala item peribadi atau modal tidak boleh (item modal mungkin layak mendapat elaun modal sebaliknya). Contoh tipikal termasuk:
+
+- **Kos kakitangan.** Gaji, upah, bonus, dan caruman majikan kepada KWSP, PERKESO, dan SIP.
+- **Sewa dan utiliti.** Untuk premis perniagaan.
+- **Kos barang dijual.** Stok dan bahan yang anda jual semula atau gunakan.
+- **Yuran profesional.** Yuran perakaunan, audit, dan sesetengah yuran guaman.
+- **Pemasaran.** Pengiklanan dan promosi.
+- **Pembaikan dan penyelenggaraan.** Untuk aset perniagaan.
+- **Insurans.** Premium insurans perniagaan.
+- **Elaun modal.** Ke atas peralatan dan kenderaan yang layak, dan bukannya menolak kos penuh sekali gus.
+
+### Perhatikan apa yang dihadkan
+Sesetengah kategori, seperti hiburan, perbelanjaan motor peribadi, dan item bukan perniagaan, dihadkan atau tidak boleh ditolak. Peraturan dan insentif tertentu berubah, jadi semak panduan semasa untuk item yang anda tuntut.
+
+## 6. Bina kalendar tahunan anda
+
+Berikut ialah struktur mudah untuk disesuaikan dengan tahun kewangan dan struktur anda sendiri. Sahkan semua tarikh di laman web rasmi.
+
+### Setiap bulan
+- **Potongan gaji dan caruman.** Bayaran majikan seperti PCB (potongan cukai bulanan), KWSP, PERKESO, dan SIP amnya perlu dibayar menjelang pertengahan bulan berikutnya.
+- **Tutup buku anda.** Selaraskan akaun bank dan failkan resit, supaya hujung tahun tidak bertimbun.
+- **Ansuran syarikat.** Bayar ansuran CP204 anda pada tarikh matang jika anda sebuah syarikat.
+
+### Awal tahun
+- **Borang cukai pekerja.** Majikan amnya dijangka memberi kakitangan penyata pendapatan pekerjaan tahunan (Borang EA) menjelang akhir Februari.
+- **Borang nyata majikan.** Borang E, borang nyata tahunan majikan, amnya perlu dikemukakan menjelang 31 Mac.
+
+### Pertengahan tahun
+- **Pemilik tunggal.** Borang B sekitar 30 Jun (e-Filing sedikit lewat), jadi sediakan akaun anda pada bulan Mei.
+- **Semakan semula ansuran.** Semak anggaran CP204 anda pada tetingkap semakan jika anda sebuah syarikat.
+
+### Selepas akhir tahun kewangan anda
+- **Syarikat.** Borang C perlu dikemukakan tujuh bulan selepas akhir tahun, jadi tempah akauntan atau juruaudit anda awal.
+- **Anggaran baharu.** Rancang anggaran CP204 tahun berikutnya sebelum tahun kewangan baharu.
+
+Anda juga boleh mengaitkan tarikh pematuhan lain, seperti penyata SST dan kewajipan e-invois jika ia terpakai kepada anda. Mudah ditemui dan disahkan juga membantu dengan bank, rakan kongsi, dan pelanggan yang menyemak anda — [penyenaraian percuma dan disahkan di sini](/ms/signup) ialah cara kecil untuk menunjukkan perniagaan anda mantap, dan anda boleh [layari direktori](/ms) untuk akauntan dan ejen cukai tempatan yang mengendalikan pemfailan ini setiap tahun.
+
+## Kesilapan lazim perniagaan kecil Malaysia dengan cukai
+
+- **Menganggap tarikh akhir sebagai tarikh mula.** Memulakan akaun anda pada minggu borang nyata perlu dikemukakan hampir pasti menyebabkan kesilapan atau pemfailan lewat. Tutup setiap bulan semasa anda berjalan.
+- **Mengabaikan anggaran ansuran.** Syarikat yang tidak pernah menyemak semula anggaran CP204, atau pemilik tunggal yang terlepas tarikh ansuran, mencipta penalti yang boleh dielakkan walaupun borang nyata akhir difailkan tepat pada masanya.
+- **Mencampurkan wang peribadi dan perniagaan.** Tanpa pengasingan yang bersih, anda tidak dapat membuktikan apa yang boleh ditolak, dan anda mungkin kehilangan tuntutan yang sah atau mengundang pertanyaan.
+
+## Di mana untuk bermula
+
+- **Minggu ini:** Sahkan struktur cukai dan akhir tahun kewangan anda, dan cari tarikh akhir pemfailan seterusnya di laman web rasmi LHDN.
+- **Seterusnya:** Letakkan tarikh daripada bahagian 6 ke dalam kalendar bersama dengan peringatan beberapa minggu sebelum setiap satu, dan catat siapa yang bertanggungjawab untuk setiap satu.
+- **Kemudian:** Sediakan sistem rekod yang ringkas dan konsisten — akaun bank perniagaan yang berasingan, struktur folder, dan tabiat menutup buku setiap bulan.
+- **Berterusan:** Berbincang dengan ejen cukai atau akauntan berlesen sekurang-kurangnya setahun sekali, sebaik-baiknya sebelum akhir tahun anda, untuk menyemak anggaran, pelepasan, dan sebarang perubahan peraturan.
+
+Pematuhan cukai yang baik kebanyakannya ialah disiplin kalendar: ketahui tarikh anda, simpan rekod anda, dan semak semula sebelum kejutan bertukar menjadi penalti.`,
+        faqs: [
+          {
+            question: "Apakah perbezaan antara Borang B dan Borang C?",
+            answer:
+              "Borang B amnya digunakan oleh individu yang mempunyai pendapatan perniagaan, seperti pemilik tunggal, manakala Borang C ialah borang nyata cukai pendapatan untuk syarikat. Ia mempunyai tarikh akhir dan peraturan ansuran yang berbeza, jadi sahkan dahulu jenis pembayar cukai anda.",
+          },
+          {
+            question: "Bilakah tarikh akhir memfailkan Borang B untuk pemilik tunggal?",
+            answer:
+              "Secara lazimnya 30 Jun tahun berikutnya untuk pemfailan manual, dengan lanjutan singkat untuk e-Filing, selalunya hingga 15 Julai. Tarikh akhir boleh berubah, jadi semak laman web rasmi LHDN untuk tahun semasa.",
+          },
+          {
+            question: "Bilakah syarikat mesti memfailkan Borang C?",
+            answer:
+              "Amnya tujuh bulan selepas tamat tahun kewangan syarikat. Bagi tahun kewangan yang berakhir 31 Disember, itu sekitar penghujung Julai tahun berikutnya. Sahkan di laman web LHDN, dan rancang akaun atau audit anda jauh lebih awal.",
+          },
+          {
+            question: "Apakah CP204?",
+            answer:
+              "CP204 ialah borang yang digunakan syarikat untuk mengemukakan anggaran cukai yang kena dibayar bagi tahun kewangan, yang kemudiannya dibayar secara ansuran bulanan. Peraturan masa berbeza untuk syarikat baharu dan sedia ada, dan anda amnya boleh menyemak semula anggaran pada titik tertentu dalam tahun itu, jadi semak panduan semasa LHDN.",
+          },
+          {
+            question: "Apa yang berlaku jika saya terkurang anggar cukai atau membayar ansuran lewat?",
+            answer:
+              "Penalti mungkin dikenakan ke atas ansuran yang kurang dibayar atau lewat, secara sejarahnya peratusan daripada kekurangan sekitar 10%, dan jurang besar antara anggaran dan cukai akhir juga boleh dikenakan penalti. Menyemak semula anggaran awal apabila keuntungan meningkat biasanya lebih murah daripada dikenakan penalti kemudian.",
+          },
+          {
+            question: "Apakah rekod yang perlu saya simpan, dan untuk berapa lama?",
+            answer:
+              "Simpan rekod jualan, resit pembelian dan perbelanjaan, penyata bank, rekod gaji, dokumen pembelian aset, dan surat-menyurat cukai. Rekod lazimnya dikehendaki disimpan selama beberapa tahun, yang sering disebut tujuh tahun, tetapi sahkan keperluan semasa dengan LHDN.",
+          },
+          {
+            question: "Perbelanjaan perniagaan manakah yang amnya boleh ditolak?",
+            answer:
+              "Perbelanjaan yang ditanggung sepenuhnya dan semata-mata dalam menghasilkan pendapatan perniagaan, seperti kos kakitangan, sewa dan utiliti untuk premis perniagaan, kos barang dijual, yuran profesional, pemasaran, pembaikan, dan insurans. Item modal mungkin layak mendapat elaun modal sebaliknya, dan sesetengah kategori, seperti hiburan, dihadkan.",
+          },
+          {
+            question: "Adakah saya memerlukan ejen cukai atau akauntan?",
+            answer:
+              "Ia tidak diwajibkan oleh undang-undang untuk borang nyata yang mudah, tetapi ejen cukai atau akauntan berlesen boleh menjimatkan masa, mengesan potongan dan pelepasan yang terlepas, dan membantu anda mengelakkan penalti, terutamanya untuk syarikat. Walaupun sekali setahun, sebaik-baiknya sebelum akhir tahun anda, ia berbaloi.",
+          },
+        ],
+      },
+    },
+  },
 ];

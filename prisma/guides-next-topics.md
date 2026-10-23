@@ -15,15 +15,14 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Business Insurance for Malaysian SMEs: What You Actually Need to Cover**
-   — The main policies a small business should consider (fire and
-   property, public liability, workers' compensation / SOCSO Employment
-   Injury Scheme versus private cover, professional indemnity, business
-   interruption), what each does and doesn't cover, how to decide what's
-   worth paying for, and common claim-rejection traps.
+1. **Employee Leave and Public Holidays in Malaysia: What the Employment Act Requires**
+   — Minimum annual, sick, hospitalisation, maternity and paternity leave
+   under the Employment Act, the statutory public holidays and what happens
+   when one falls on a rest day, how to pay out unused leave, and the
+   record-keeping that prevents payroll disputes.
 
-2. **Doing Business Taxes in Malaysia: A Small Business Owner's Annual Tax Calendar**
-   — Sole proprietor versus company tax filing (Form B / Form C),
-   instalment payments (CP204), record-keeping requirements, common
-   deductible expenses, and the deadlines worth putting in the calendar
-   so nothing is filed or paid late.
+2. **Collecting Late Payments in Malaysia: From Reminder to Letter of Demand to Small Claims**
+   — A practical escalation path for overdue invoices: payment terms and
+   reminders, a letter of demand, the Small Claims procedure at the
+   Tribunal for Consumer Claims versus the Sessions/Magistrates Court,
+   limitation periods, and how to prevent late payment in the first place.
