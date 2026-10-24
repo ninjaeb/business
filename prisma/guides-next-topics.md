@@ -15,14 +15,16 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Employee Leave and Public Holidays in Malaysia: What the Employment Act Requires**
-   — Minimum annual, sick, hospitalisation, maternity and paternity leave
-   under the Employment Act, the statutory public holidays and what happens
-   when one falls on a rest day, how to pay out unused leave, and the
-   record-keeping that prevents payroll disputes.
+1. **Renting Commercial Premises in Malaysia: Tenancy Agreements, Deposits, and Stamp Duty**
+   — What to check before signing a shop or office lease: the main terms
+   in a commercial tenancy agreement (rent, term, renewal, rent review,
+   reinstatement, deposits), the usual deposit structure, stamp duty on the
+   agreement, fit-out and signage approvals, and how to negotiate or exit
+   a lease without being caught out.
 
-2. **Collecting Late Payments in Malaysia: From Reminder to Letter of Demand to Small Claims**
-   — A practical escalation path for overdue invoices: payment terms and
-   reminders, a letter of demand, the Small Claims procedure at the
-   Tribunal for Consumer Claims versus the Sessions/Magistrates Court,
-   limitation periods, and how to prevent late payment in the first place.
+2. **Selling Online in Malaysia: Setting Up an Online Shop the Right Way**
+   — The legal and practical basics of e-commerce for a Malaysian SME:
+   registering the business, marketplace versus your own website, payment
+   gateways, consumer protection rules for online sellers (including
+   displaying business details and honouring returns), delivery and
+   courier choices, and handling customer data.
