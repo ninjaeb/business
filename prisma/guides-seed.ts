@@ -5631,4 +5631,1011 @@ Pematuhan cukai yang baik kebanyakannya ialah disiplin kalendar: ketahui tarikh 
       },
     },
   },
+  {
+    slug: "employee-leave-and-public-holidays-in-malaysia",
+    title: "Employee Leave and Public Holidays in Malaysia: What the Employment Act Requires",
+    seoTitle: "Employee Leave & Public Holidays in Malaysia Guide",
+    seoDescription:
+      "Annual, sick, hospitalisation, maternity and paternity leave under Malaysia's Employment Act, plus public holidays, leave payout and records for employers.",
+    coverImage: {
+      file: "employee-leave-and-public-holidays-in-malaysia-cover.webp",
+      mimeType: "image/webp",
+      alt: "Two colleagues going over plans together in a work meeting",
+      altTranslations: {
+        zh: "两位同事在工作会议中一起讨论计划",
+        ms: "Dua rakan sekerja membincangkan rancangan bersama dalam mesyuarat kerja",
+      },
+    },
+    contentImages: {
+      records: {
+        file: "employee-leave-and-public-holidays-in-malaysia-records.webp",
+        mimeType: "image/webp",
+        alt: "Two young women reviewing a folder of documents at their office desks",
+        altTranslations: {
+          zh: "两位年轻女性在办公桌前查看一份文件夹中的文件",
+          ms: "Dua wanita muda menyemak fail dokumen di meja pejabat mereka",
+        },
+        after: "Treat your leave records as payroll records, not as a favour to staff.",
+        afterTranslations: {
+          zh: "请把休假记录当作薪资记录来对待，而不是对员工的一种人情。",
+          ms: "Layan rekod cuti sebagai rekod gaji, bukan sebagai budi kepada kakitangan.",
+        },
+      },
+    },
+    excerpt:
+      "Leave disputes are among the most common payroll problems for small employers, and most of them start with not knowing the statutory minimums. This guide covers annual, sick, hospitalisation, maternity and paternity leave under the Employment Act, how public holidays work (including when one falls on a rest day), how to handle unused leave, and the records that keep payroll disputes from starting.",
+    body: `Leave is one of the first things a new employee asks about and one of the last things a busy owner has written down properly. Most leave disputes are not about generosity. They are about an owner not knowing the legal minimum, a contract that says one thing while payroll does another, or no record of what was actually taken. This guide walks through the statutory leave and public holiday rules that typically apply under Malaysia's Employment Act 1955, and the habits that stop small problems from becoming claims.
+
+Leave entitlements, who is covered, and the exact figures have been amended over the years, and some rules differ in Sabah and Sarawak, which have their own labour laws. Treat the numbers below as the commonly stated minimums, and confirm them against the current Act or the Labour Department (JTKSM) before relying on them in a contract or a dispute.
+
+## 1. Check who the Act covers and what your contract adds
+
+The Employment Act covers employees regardless of salary since the 2022 amendments took effect, but certain provisions still apply differently to employees earning above a set monthly threshold, historically RM4,000, unless they fall into specified categories. Overtime-related rules are the best-known example.
+
+### The Act is a floor, not a ceiling
+Your employment contract, staff handbook, or company policy can give more than the statutory minimum, and when it does, the more generous term is what you have promised. It cannot give less. If your contract says 10 days of annual leave for someone with six years of service, the statutory figure of 16 still applies.
+
+### Know which law applies to you
+Employees in Peninsular Malaysia and Labuan fall under the Employment Act. Sabah and Sarawak have separate ordinances with their own provisions. If you operate across regions, check each.
+
+## 2. Annual leave
+
+Paid annual leave increases with length of service. The commonly stated minimums are:
+
+- **Less than 2 years of service:** 8 days a year
+- **2 years up to 5 years:** 12 days a year
+- **5 years or more:** 16 days a year
+
+### How it builds
+Annual leave is generally earned after the first 12 months of service, with the entitlement for an incomplete year calculated proportionally in some cases, so check how your contract and the Act treat a new starter in their first year.
+
+### Who approves it and when
+Employers usually set the process for applying and approving leave, and can reasonably decide timing around business needs. What an employer cannot do is refuse to grant the statutory entitlement at all. Write your approval process into your handbook.
+
+## 3. Sick leave and hospitalisation leave
+
+Paid sick leave is separate from annual leave and rises with service. The tiers are commonly stated as 14 days for under 2 years, 18 days for 2 to under 5 years, and 22 days for 5 years or more, though some summaries list slightly different middle-tier figures, so confirm the current Act.
+
+### Hospitalisation leave sits on top
+Where an employee is hospitalised, the Act provides for a separate, longer allowance of paid hospitalisation leave, commonly stated as up to 60 days a year in total including sick leave.
+
+### The medical certificate rule
+Sick leave is generally supported by a certificate from a registered medical practitioner or a dental practitioner, and there are rules on how quickly an employee must inform you and on what to do when the employee cannot get a certificate. Put your notification rule in writing, such as "call or message your supervisor before the start of your shift on the first day", so it is clear.
+
+> Putting your leave rules in writing is the cheapest dispute prevention there is. A one-page leave policy — who approves, how much notice is needed, what proof is required, and how unused days are treated — turns most disagreements into a lookup.
+
+## 4. Maternity, paternity, and other family leave
+
+### Maternity leave
+Eligible female employees are entitled to paid maternity leave of 98 consecutive days under the amended Act, which replaced the earlier 60 days. The Act also protects employees from being terminated because of pregnancy, with limited exceptions, and the burden is on the employer to show the termination was for another reason. Check the current conditions on eligibility, notice, and pay.
+
+### Paternity leave
+The amended Act introduced paternity leave, commonly stated as 7 consecutive days, with conditions such as being married, giving notice, and a limit on the number of births it applies to. Confirm the current conditions.
+
+### Other statutory and contractual leave
+Depending on your workplace, you may also deal with compassionate leave, marriage leave, examination leave, or unpaid leave. These are often set by contract or policy rather than the Act, so decide your position and put it in writing rather than deciding each time someone asks.
+
+## 5. Public holidays
+
+### The minimum number
+Covered employees are entitled to at least 11 paid public holidays a year. Several of them are mandatory and fixed by law, such as National Day, Malaysia Day, Labour Day, and the birthday of the Yang di-Pertuan Agong and of the state ruler or Yang di-Pertua Negeri. The employer may choose the remainder from the gazetted list, and must tell employees in advance which days apply. For employees in the Federal Territories, a Federal Territory Day holiday is also gazetted.
+
+### When a holiday falls on a rest day
+If a public holiday falls on an employee's weekly rest day, the Act generally provides that the next working day becomes the paid holiday. For a holiday that falls on a day an employee would normally work, the employee is entitled to the paid day off.
+
+### Working on a public holiday
+If you need someone to work on a public holiday, the Act sets a higher rate of pay, and there are separate rules for overtime on a holiday. The exact multiples depend on whether the employee is paid daily, hourly, or monthly, and different HR guides describe the calculation differently. Look up the current section of the Act or ask the Labour Department before running payroll, and do not rely on a single blog's formula.
+
+### Substituting a holiday
+In some cases an employer may substitute a different day for a gazetted holiday, but the Act sets conditions, such as notice to the employee. Do not swap holidays informally.
+
+### Extra holidays are announced year to year
+The government gazettes additional or one-off holidays, sometimes at short notice, such as a state-specific or special holiday. Check the current year's list and tell staff early.
+
+## 6. Handle unused leave and leaving staff
+
+### Carry-over and expiry
+The Act sets minimum entitlements but is less detailed on carry-forward. Whether unused annual leave carries into next year, expires, or is paid out is usually set by your contract or policy, so decide this deliberately and apply it consistently.
+
+### Payment on termination
+When employment ends, accrued but unused leave that you are required to pay out is part of the final pay, along with wages and any notice pay or termination benefits. Calculate it with the correct daily rate of pay, and include it in the final payslip so nothing is missed.
+
+### Leave during notice
+Whether an employee may use leave during the notice period is a matter for your policy and agreement. State the position in the termination letter so there are no surprises.
+
+## 7. Keep leave records you can defend
+
+Treat your leave records as payroll records, not as a favour to staff. If a dispute goes to the Labour Department, your records are the evidence.
+
+1. **Keep a leave ledger for each employee.** Opening balance, days earned, days taken with dates, and closing balance.
+2. **Keep approvals in writing.** A WhatsApp message or email chain is better than nothing, but a leave form or a simple HR tool is better still.
+3. **File medical certificates.** Store sick leave proof with the leave record, keeping personal data secure.
+4. **Reconcile with payroll each month.** Unpaid leave should be deducted correctly, and paid leave should not be.
+5. **Keep records for several years.** Employment records are generally expected to be retained for a period after employment ends, so check the current requirement.
+
+If you are updating your handbook, a clear leave policy helps hiring too — [a free, verified listing here](/en/signup) helps candidates find and trust your business, and you can [browse the directory](/en) for local HR and payroll service providers who set up leave systems for small teams.
+
+## Common mistakes Malaysian SMEs make with leave and public holidays
+
+- **Offering less than the statutory minimum in the contract.** A contract that gives fewer days than the Act does not override the Act, and can leave you owing the difference.
+- **Getting public holiday pay wrong.** Treating a holiday on a rest day as simply lost, or paying the wrong rate for holiday work, are two of the most frequent payroll errors.
+- **Having no written leave policy or records.** Without a ledger and written rules, every dispute becomes one person's word against another's.
+
+## Where to start
+
+- **This week:** Check your contracts against the minimum annual, sick, hospitalisation, maternity, and paternity figures, and fix any that fall short.
+- **Next:** Write a one-page leave policy covering approval, notice, medical certificates, carry-over, and payout, and share it with staff.
+- **Then:** Set up a leave ledger for each employee and reconcile it with payroll every month.
+- **Every year:** Publish your public holiday list early in the year, and check for newly gazetted days.
+
+Getting leave right is mostly about knowing the floor, writing down your own rules, and keeping a record that shows you followed them.`,
+    faqs: [
+      {
+        question: "How much annual leave must a Malaysian employer give under the Employment Act?",
+        answer:
+          "The commonly stated minimums are 8 days a year for under 2 years of service, 12 days for 2 to under 5 years, and 16 days for 5 years or more. Your contract can give more but not less. Confirm the current figures against the Act or the Labour Department.",
+      },
+      {
+        question: "How many days of paid sick leave are employees entitled to?",
+        answer:
+          "Commonly stated as 14 days for under 2 years of service, 18 days for 2 to under 5 years, and 22 days for 5 years or more, with a separate, longer allowance of up to 60 days in total if hospitalised. Some summaries list slightly different middle-tier figures, so check the current Act.",
+      },
+      {
+        question: "How long is maternity leave in Malaysia?",
+        answer:
+          "Eligible female employees are entitled to 98 consecutive days of paid maternity leave under the amended Employment Act, which replaced the earlier 60 days. Check the current conditions on eligibility, notice, and pay.",
+      },
+      {
+        question: "Is paternity leave a legal requirement?",
+        answer:
+          "The amended Employment Act introduced paternity leave, commonly stated as 7 consecutive days, subject to conditions such as being married, giving notice, and a limit on how many births it covers. Confirm the current conditions before relying on it.",
+      },
+      {
+        question: "How many public holidays must I give my employees?",
+        answer:
+          "Covered employees are entitled to at least 11 paid public holidays a year, including several mandatory ones such as National Day, Malaysia Day, Labour Day, and the birthdays of the Yang di-Pertuan Agong and the state ruler. You choose the rest from the gazetted list and must tell staff in advance.",
+      },
+      {
+        question: "What happens if a public holiday falls on an employee's rest day?",
+        answer:
+          "The Act generally provides that the next working day becomes the paid holiday. Check the current wording and any rules about substituting another day before you plan payroll.",
+      },
+      {
+        question: "Do I have to pay out unused annual leave when someone leaves?",
+        answer:
+          "Accrued, unused leave that you are required to pay out forms part of the final pay, calculated at the correct daily rate. Whether unused leave carries over or expires during employment is usually set by your contract or policy, so decide this and put it in writing.",
+      },
+      {
+        question: "What leave records should a small business keep?",
+        answer:
+          "A leave ledger per employee showing opening balance, days earned, days taken with dates, and closing balance, plus written approvals and medical certificates, reconciled with payroll each month. Keep them for several years after employment ends and confirm the current retention requirement.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "马来西亚的员工休假与公共假期：《雇佣法令》有哪些要求",
+        excerpt:
+          "休假纠纷是小雇主最常见的薪资问题之一，而大多数都源于不清楚法定最低标准。本指南说明《雇佣法令》下的年假、病假、住院假、产假和陪产假，公共假期如何运作（包括假期落在休息日时怎么办），如何处理未休的假期，以及防止薪资纠纷发生的记录。",
+        body: `休假是新员工最早问到的事情之一，也是忙碌的企业主最晚才好好写下来的事情之一。大多数休假纠纷并不是慷慨与否的问题，而是企业主不知道法定最低标准，合约说一套而薪资处理却是另一套，或者对实际休了多少假没有记录。本指南介绍马来西亚《1955 年雇佣法令》下通常适用的法定休假和公共假期规则，以及避免小问题演变成申诉的习惯。
+
+休假权益、适用对象和确切数字多年来都有修订，而沙巴和砂拉越有各自的劳工法，部分规定有所不同。请把下面的数字当作常被引用的最低标准，在写进合约或用于处理纠纷之前，请对照现行法令或劳工局（JTKSM）加以确认。
+
+## 1. 先确认法令涵盖谁，以及您的合约另外给了什么
+
+自 2022 年修正案生效后，《雇佣法令》涵盖所有员工，不论薪水高低，但某些条文对月薪高于一定门槛（历来是 RM4,000）的员工仍有不同的适用方式，除非他们属于特定类别。与加班相关的规定是最广为人知的例子。
+
+### 法令是底线，不是上限
+您的雇佣合约、员工手册或公司政策可以给予高于法定最低标准的待遇，一旦给了，您承诺的就是那个更优厚的条款。但不能低于法定标准。如果您的合约对一位服务六年的员工只给 10 天年假，法定的 16 天仍然适用。
+
+### 清楚哪一部法律适用于您
+西马和纳闽的员工适用《雇佣法令》。沙巴和砂拉越有各自的法令及规定。如果您跨地区经营，请逐一查核。
+
+## 2. 年假
+
+带薪年假随服务年资增加。常被引用的最低标准是：
+
+- **服务不满 2 年：** 每年 8 天
+- **服务 2 年至不满 5 年：** 每年 12 天
+- **服务 5 年或以上：** 每年 16 天
+
+### 如何累积
+年假一般在服务满 12 个月后获得，不足一年的部分在某些情况下按比例计算，所以请查核您的合约和法令如何对待第一年的新员工。
+
+### 谁批准、何时批准
+雇主通常订立申请和批准休假的流程，也可以根据业务需要合理地决定时间。雇主不能做的，是完全拒绝给予法定的权益。请把您的批准流程写进员工手册。
+
+## 3. 病假与住院假
+
+带薪病假与年假分开，并随年资增加。常被引用的等级是：服务不满 2 年为 14 天，2 年至不满 5 年为 18 天，5 年或以上为 22 天，不过有些摘要列出的中间等级数字略有不同，所以请确认现行法令。
+
+### 住院假另外计算
+当员工住院时，法令规定了另一项更长的带薪住院假，常被引用的是包括病假在内每年合计最多 60 天。
+
+### 医药证明书的规定
+病假一般须有注册医生或牙医出具的证明书，另有规定员工须多快通知您，以及在无法取得证明书时该怎么办。请把您的通知规则写下来，例如“在第一天上班前致电或讯息通知您的主管”，让规则一目了然。
+
+> 把您的休假规则写下来，是成本最低的纠纷预防措施。一页纸的休假政策——谁批准、需要多少通知时间、需要什么证明，以及未休的假期如何处理——可以把大多数分歧变成一次查表。
+
+## 4. 产假、陪产假及其他家庭假期
+
+### 产假
+符合资格的女性员工，依修正后的法令享有连续 98 天的带薪产假，取代了此前的 60 天。法令也保护员工不会因怀孕而被终止雇佣，仅有少数例外，而且雇主有责任证明终止是出于其他原因。请查核目前关于资格、通知和薪酬的条件。
+
+### 陪产假
+修正后的法令引入了陪产假，常被引用的是连续 7 天，并附有条件，例如已婚、提前通知，以及对适用生育次数的限制。请确认目前的条件。
+
+### 其他法定及合约假期
+视您的工作场所而定，您可能还要处理恩恤假、婚假、考试假或无薪假。这些通常由合约或政策而非法令规定，所以请决定您的立场并写下来，而不是每次有人提出时才临时决定。
+
+## 5. 公共假期
+
+### 最低天数
+受保障的员工每年至少享有 11 天带薪公共假期。其中几天是法律规定的强制假期，例如国庆日、马来西亚日、劳动节，以及最高元首和州元首或州长的诞辰。其余的可由雇主从宪报公布的假期中选择，并须提前告知员工适用的日子。对联邦直辖区的员工，联邦直辖区日也列入宪报假期。
+
+### 假期落在休息日时
+如果公共假期落在员工每周的休息日，法令一般规定下一个工作日成为带薪假期。对于落在员工本来要上班的日子的假期，员工有权享有带薪休假。
+
+### 在公共假期上班
+如果您需要员工在公共假期上班，法令规定了较高的薪酬率，另有关于假期加班的规则。确切的倍数取决于员工是按日、按小时还是按月计薪，而不同的人力资源指南对计算方式的描述也不同。运行薪资之前，请查阅法令的现行条文或询问劳工局，不要依赖某一篇博客的公式。
+
+### 调换假期
+在某些情况下，雇主可以用另一天替代宪报公布的假期，但法令设有条件，例如须通知员工。请不要随意私下调换假期。
+
+### 额外假期逐年公布
+政府会宪报公布额外或一次性的假期，有时较为仓促，例如各州特定假期或特别假期。请查看当年的名单并及早告知员工。
+
+## 6. 处理未休的假期与离职员工
+
+### 结转与失效
+法令规定了最低权益，但对结转的规定较为简略。未休的年假是否结转到下一年、是否作废或折现，通常由您的合约或政策决定，所以请有意识地做出决定并一致地执行。
+
+### 终止雇佣时的付款
+雇佣关系结束时，已累积但未休、您必须折现的假期，是最后薪资的一部分，连同工资及任何通知期工资或终止福利。请用正确的日薪率计算，并列入最后的薪资单，以免遗漏。
+
+### 通知期间的休假
+员工能否在通知期内休假，由您的政策和协议决定。请在终止信中说明立场，以免出现意外。
+
+## 7. 保存经得起检验的休假记录
+
+请把休假记录当作薪资记录来对待，而不是对员工的一种人情。如果纠纷闹到劳工局，您的记录就是证据。
+
+1. **为每位员工建立休假总账。** 期初余额、已获得的天数、已休天数及日期，以及期末余额。
+2. **以书面保存批准。** WhatsApp 讯息或电邮往来总比没有好，但休假表格或简单的人力资源工具更好。
+3. **归档医药证明书。** 把病假证明与休假记录一起存放，并确保个人资料安全。
+4. **每月与薪资核对。** 无薪假应正确扣除，带薪假则不应扣除。
+5. **保存记录数年。** 雇佣记录一般预期在雇佣关系结束后保留一段时间，所以请查核目前的要求。
+
+如果您正在更新员工手册，清晰的休假政策也有助于招聘——[在这里免费创建认证列表](/zh/signup)，有助于求职者找到并信任您的企业，您也可以[浏览目录](/zh)，找到为小团队建立休假系统的本地人力资源和薪资服务商。
+
+## 马来西亚中小企业在休假与公共假期上常犯的错误
+
+- **合约给的低于法定最低标准。** 合约给的天数少于法令，并不能凌驾于法令之上，可能让您欠下差额。
+- **算错公共假期薪酬。** 把落在休息日的假期当作白白失去，或为假期上班支付错误的薪酬率，是最常见的两种薪资错误。
+- **没有书面休假政策或记录。** 没有总账和书面规则，每一次纠纷都会变成各执一词。
+
+## 从哪里开始
+
+- **本周：** 对照年假、病假、住院假、产假和陪产假的最低数字检查您的合约，并修正不足之处。
+- **接下来：** 写一页休假政策，涵盖批准、通知、医药证明书、结转和折现，并与员工分享。
+- **然后：** 为每位员工建立休假总账，并每月与薪资核对。
+- **每年：** 在年初及早公布您的公共假期名单，并留意新公布的假期。
+
+把休假做好，主要就是了解底线、写下自己的规则，并保存一份证明您遵守了规则的记录。`,
+        faqs: [
+          {
+            question: "根据《雇佣法令》，马来西亚雇主必须给多少年假？",
+            answer:
+              "常被引用的最低标准是：服务不满 2 年每年 8 天，2 年至不满 5 年为 12 天，5 年或以上为 16 天。您的合约可以给更多，但不能更少。请对照法令或劳工局确认现行数字。",
+          },
+          {
+            question: "员工有权享有多少天带薪病假？",
+            answer:
+              "常被引用的是：服务不满 2 年为 14 天，2 年至不满 5 年为 18 天，5 年或以上为 22 天，另有住院时合计最多 60 天的更长假期。有些摘要列出的中间等级数字略有不同，所以请查核现行法令。",
+          },
+          {
+            question: "马来西亚的产假有多长？",
+            answer:
+              "符合资格的女性员工，依修正后的《雇佣法令》享有连续 98 天的带薪产假，取代了此前的 60 天。请查核目前关于资格、通知和薪酬的条件。",
+          },
+          {
+            question: "陪产假是法律规定的吗？",
+            answer:
+              "修正后的《雇佣法令》引入了陪产假，常被引用的是连续 7 天，并附有条件，例如已婚、提前通知，以及对适用生育次数的限制。依赖它之前，请确认目前的条件。",
+          },
+          {
+            question: "我必须给员工多少天公共假期？",
+            answer:
+              "受保障的员工每年至少享有 11 天带薪公共假期，其中包括几天强制假期，例如国庆日、马来西亚日、劳动节，以及最高元首和州元首的诞辰。其余的由您从宪报公布的名单中选择，并须提前告知员工。",
+          },
+          {
+            question: "如果公共假期落在员工的休息日，会怎样？",
+            answer:
+              "法令一般规定下一个工作日成为带薪假期。规划薪资之前，请查核现行的措辞，以及关于调换其他日子的规则。",
+          },
+          {
+            question: "员工离职时，我必须折现未休的年假吗？",
+            answer:
+              "已累积、您必须折现的未休假期，属于最后薪资的一部分，按正确的日薪率计算。未休假期在雇佣期间是否结转或作废，通常由您的合约或政策决定，所以请做出决定并写下来。",
+          },
+          {
+            question: "小企业应该保存哪些休假记录？",
+            answer:
+              "为每位员工保存休假总账，列明期初余额、已获得天数、已休天数及日期和期末余额，另加书面批准和医药证明书，并每月与薪资核对。在雇佣关系结束后保存数年，并确认目前的保存要求。",
+          },
+        ],
+      },
+      ms: {
+        title: "Cuti Pekerja dan Cuti Umum di Malaysia: Apa yang Dikehendaki Akta Kerja",
+        excerpt:
+          "Pertikaian cuti ialah antara masalah gaji yang paling biasa bagi majikan kecil, dan kebanyakannya bermula dengan tidak mengetahui minimum berkanun. Panduan ini merangkumi cuti tahunan, cuti sakit, cuti hospitalisasi, cuti bersalin dan cuti paterniti di bawah Akta Kerja, bagaimana cuti umum berfungsi (termasuk apabila ia jatuh pada hari rehat), cara menangani cuti yang tidak digunakan, dan rekod yang menghalang pertikaian gaji daripada bermula.",
+        body: `Cuti ialah salah satu perkara pertama yang ditanya oleh pekerja baharu dan salah satu perkara terakhir yang ditulis dengan betul oleh pemilik yang sibuk. Kebanyakan pertikaian cuti bukan tentang kemurahan hati. Ia tentang pemilik yang tidak mengetahui minimum undang-undang, kontrak yang menyatakan satu perkara manakala gaji melakukan perkara lain, atau tiada rekod tentang apa yang sebenarnya diambil. Panduan ini menerangkan peraturan cuti berkanun dan cuti umum yang lazimnya terpakai di bawah Akta Kerja 1955 Malaysia, dan tabiat yang menghalang masalah kecil daripada menjadi tuntutan.
+
+Hak cuti, siapa yang dilindungi, dan angka tepat telah dipinda dari tahun ke tahun, dan sesetengah peraturan berbeza di Sabah dan Sarawak, yang mempunyai undang-undang buruh sendiri. Anggaplah nombor di bawah sebagai minimum yang lazim dinyatakan, dan sahkan dengan Akta semasa atau Jabatan Tenaga Kerja (JTKSM) sebelum bergantung padanya dalam kontrak atau pertikaian.
+
+## 1. Semak siapa yang dilindungi Akta dan apa yang ditambah oleh kontrak anda
+
+Akta Kerja meliputi pekerja tanpa mengira gaji sejak pindaan 2022 berkuat kuasa, tetapi sesetengah peruntukan masih terpakai secara berbeza kepada pekerja yang berpendapatan melebihi ambang bulanan tertentu, secara sejarahnya RM4,000, melainkan mereka tergolong dalam kategori tertentu. Peraturan berkaitan kerja lebih masa ialah contoh yang paling dikenali.
+
+### Akta ialah lantai, bukan siling
+Kontrak pekerjaan, buku panduan kakitangan, atau dasar syarikat anda boleh memberi lebih daripada minimum berkanun, dan apabila ia berbuat demikian, terma yang lebih murah hati itulah yang telah anda janjikan. Ia tidak boleh memberi kurang. Jika kontrak anda menyatakan 10 hari cuti tahunan untuk seseorang yang berkhidmat enam tahun, angka berkanun 16 hari masih terpakai.
+
+### Ketahui undang-undang mana yang terpakai kepada anda
+Pekerja di Semenanjung Malaysia dan Labuan tertakluk kepada Akta Kerja. Sabah dan Sarawak mempunyai ordinan berasingan dengan peruntukan tersendiri. Jika anda beroperasi merentasi wilayah, semak setiap satu.
+
+## 2. Cuti tahunan
+
+Cuti tahunan berbayar meningkat mengikut tempoh perkhidmatan. Minimum yang lazim dinyatakan ialah:
+
+- **Kurang 2 tahun perkhidmatan:** 8 hari setahun
+- **2 tahun hingga kurang 5 tahun:** 12 hari setahun
+- **5 tahun atau lebih:** 16 hari setahun
+
+### Bagaimana ia terkumpul
+Cuti tahunan amnya diperoleh selepas 12 bulan pertama perkhidmatan, dengan hak bagi tahun yang tidak lengkap dikira secara berkadar dalam sesetengah kes, jadi semak bagaimana kontrak dan Akta anda melayan pekerja baharu pada tahun pertama mereka.
+
+### Siapa yang meluluskan dan bila
+Majikan lazimnya menetapkan proses memohon dan meluluskan cuti, dan boleh menentukan masa dengan munasabah berdasarkan keperluan perniagaan. Apa yang tidak boleh dilakukan majikan ialah menolak sama sekali pemberian hak berkanun. Tuliskan proses kelulusan anda dalam buku panduan.
+
+## 3. Cuti sakit dan cuti hospitalisasi
+
+Cuti sakit berbayar adalah berasingan daripada cuti tahunan dan meningkat mengikut tempoh perkhidmatan. Tahapnya lazim dinyatakan sebagai 14 hari untuk kurang 2 tahun, 18 hari untuk 2 hingga kurang 5 tahun, dan 22 hari untuk 5 tahun atau lebih, walaupun sesetengah ringkasan menyenaraikan angka tahap tengah yang sedikit berbeza, jadi sahkan Akta semasa.
+
+### Cuti hospitalisasi diletakkan di atasnya
+Apabila pekerja dimasukkan ke hospital, Akta memperuntukkan elaun cuti hospitalisasi berbayar yang berasingan dan lebih panjang, yang lazim dinyatakan sebagai sehingga 60 hari setahun secara keseluruhan termasuk cuti sakit.
+
+### Peraturan sijil perubatan
+Cuti sakit amnya disokong oleh sijil daripada pengamal perubatan berdaftar atau pengamal pergigian, dan terdapat peraturan tentang betapa cepat pekerja mesti memaklumkan anda dan tentang apa yang perlu dilakukan apabila pekerja tidak dapat memperoleh sijil. Tuliskan peraturan pemberitahuan anda, seperti "telefon atau hantar mesej kepada penyelia anda sebelum syif bermula pada hari pertama", supaya ia jelas.
+
+> Menulis peraturan cuti anda ialah pencegahan pertikaian yang paling murah. Dasar cuti satu halaman — siapa yang meluluskan, berapa lama notis diperlukan, bukti apa yang diperlukan, dan bagaimana hari yang tidak digunakan dilayan — menukarkan kebanyakan perselisihan kepada satu rujukan.
+
+## 4. Cuti bersalin, paterniti, dan cuti keluarga lain
+
+### Cuti bersalin
+Pekerja wanita yang layak berhak mendapat cuti bersalin berbayar selama 98 hari berturut-turut di bawah Akta yang dipinda, yang menggantikan 60 hari terdahulu. Akta juga melindungi pekerja daripada ditamatkan perkhidmatan kerana kehamilan, dengan pengecualian terhad, dan majikan menanggung beban untuk menunjukkan penamatan itu atas sebab lain. Semak syarat semasa tentang kelayakan, notis, dan gaji.
+
+### Cuti paterniti
+Akta yang dipinda memperkenalkan cuti paterniti, yang lazim dinyatakan sebagai 7 hari berturut-turut, dengan syarat seperti telah berkahwin, memberi notis, dan had bilangan kelahiran yang dilindunginya. Sahkan syarat semasa.
+
+### Cuti berkanun dan kontrak yang lain
+Bergantung pada tempat kerja anda, anda mungkin juga berurusan dengan cuti ihsan, cuti perkahwinan, cuti peperiksaan, atau cuti tanpa gaji. Ini selalunya ditetapkan oleh kontrak atau dasar dan bukannya Akta, jadi tentukan pendirian anda dan tuliskannya dan bukannya memutuskan setiap kali seseorang bertanya.
+
+## 5. Cuti umum
+
+### Bilangan minimum
+Pekerja yang dilindungi berhak mendapat sekurang-kurangnya 11 hari cuti umum berbayar setahun. Beberapa daripadanya adalah wajib dan ditetapkan oleh undang-undang, seperti Hari Kebangsaan, Hari Malaysia, Hari Pekerja, dan hari keputeraan Yang di-Pertuan Agong dan Sultan negeri atau Yang di-Pertua Negeri. Majikan boleh memilih baki daripada senarai yang diwartakan, dan mesti memberitahu pekerja lebih awal hari mana yang terpakai. Bagi pekerja di Wilayah Persekutuan, cuti Hari Wilayah Persekutuan juga diwartakan.
+
+### Apabila cuti jatuh pada hari rehat
+Jika cuti umum jatuh pada hari rehat mingguan pekerja, Akta amnya memperuntukkan bahawa hari bekerja berikutnya menjadi cuti berbayar. Bagi cuti yang jatuh pada hari yang lazimnya pekerja bekerja, pekerja berhak mendapat hari cuti berbayar.
+
+### Bekerja pada cuti umum
+Jika anda memerlukan seseorang bekerja pada cuti umum, Akta menetapkan kadar bayaran yang lebih tinggi, dan terdapat peraturan berasingan untuk kerja lebih masa pada cuti. Gandaan yang tepat bergantung pada sama ada pekerja dibayar harian, sejam, atau bulanan, dan panduan HR yang berbeza menerangkan pengiraan secara berbeza. Rujuk seksyen semasa Akta atau tanya Jabatan Tenaga Kerja sebelum menjalankan gaji, dan jangan bergantung pada formula satu blog sahaja.
+
+### Menggantikan cuti
+Dalam sesetengah kes majikan boleh menggantikan hari lain bagi cuti yang diwartakan, tetapi Akta menetapkan syarat, seperti notis kepada pekerja. Jangan tukar cuti secara tidak rasmi.
+
+### Cuti tambahan diumumkan dari tahun ke tahun
+Kerajaan mewartakan cuti tambahan atau sekali sahaja, kadangkala dengan notis singkat, seperti cuti khusus negeri atau cuti khas. Semak senarai tahun semasa dan beritahu kakitangan awal.
+
+## 6. Uruskan cuti yang tidak digunakan dan kakitangan yang meninggalkan
+
+### Bawa ke hadapan dan tamat tempoh
+Akta menetapkan hak minimum tetapi kurang terperinci tentang bawa ke hadapan. Sama ada cuti tahunan yang tidak digunakan dibawa ke tahun depan, luput, atau dibayar lazimnya ditetapkan oleh kontrak atau dasar anda, jadi putuskan perkara ini dengan sengaja dan gunakannya secara konsisten.
+
+### Bayaran semasa penamatan
+Apabila pekerjaan tamat, cuti terakru tetapi tidak digunakan yang anda wajib bayar ialah sebahagian daripada gaji akhir, bersama gaji dan sebarang gaji notis atau faedah penamatan. Kira dengan kadar upah harian yang betul, dan sertakan dalam slip gaji akhir supaya tiada yang tertinggal.
+
+### Cuti semasa notis
+Sama ada pekerja boleh menggunakan cuti semasa tempoh notis ialah perkara untuk dasar dan perjanjian anda. Nyatakan pendirian dalam surat penamatan supaya tiada kejutan.
+
+## 7. Simpan rekod cuti yang boleh anda pertahankan
+
+Layan rekod cuti sebagai rekod gaji, bukan sebagai budi kepada kakitangan. Jika pertikaian sampai ke Jabatan Tenaga Kerja, rekod anda ialah buktinya.
+
+1. **Simpan lejar cuti untuk setiap pekerja.** Baki permulaan, hari diperoleh, hari diambil dengan tarikh, dan baki penutup.
+2. **Simpan kelulusan secara bertulis.** Mesej WhatsApp atau rantaian e-mel lebih baik daripada tiada, tetapi borang cuti atau alat HR yang mudah lebih baik lagi.
+3. **Failkan sijil perubatan.** Simpan bukti cuti sakit bersama rekod cuti, sambil memastikan data peribadi selamat.
+4. **Selaraskan dengan gaji setiap bulan.** Cuti tanpa gaji hendaklah ditolak dengan betul, dan cuti berbayar tidak.
+5. **Simpan rekod selama beberapa tahun.** Rekod pekerjaan amnya dijangka disimpan untuk satu tempoh selepas pekerjaan tamat, jadi semak keperluan semasa.
+
+Jika anda mengemas kini buku panduan, dasar cuti yang jelas juga membantu pengambilan pekerja — [penyenaraian percuma dan disahkan di sini](/ms/signup) membantu calon menemui dan mempercayai perniagaan anda, dan anda boleh [layari direktori](/ms) untuk penyedia perkhidmatan HR dan gaji tempatan yang menyediakan sistem cuti untuk pasukan kecil.
+
+## Kesilapan lazim PKS Malaysia dengan cuti dan cuti umum
+
+- **Menawarkan kurang daripada minimum berkanun dalam kontrak.** Kontrak yang memberi hari yang lebih sedikit daripada Akta tidak mengatasi Akta, dan boleh menyebabkan anda berhutang perbezaannya.
+- **Tersalah bayaran cuti umum.** Menganggap cuti pada hari rehat sebagai hilang begitu sahaja, atau membayar kadar yang salah untuk kerja cuti, ialah dua daripada kesilapan gaji yang paling kerap.
+- **Tiada dasar cuti bertulis atau rekod.** Tanpa lejar dan peraturan bertulis, setiap pertikaian menjadi kata seorang lawan kata seorang lagi.
+
+## Di mana untuk bermula
+
+- **Minggu ini:** Semak kontrak anda berbanding angka minimum cuti tahunan, sakit, hospitalisasi, bersalin, dan paterniti, dan betulkan mana-mana yang kurang.
+- **Seterusnya:** Tulis dasar cuti satu halaman yang merangkumi kelulusan, notis, sijil perubatan, bawa ke hadapan, dan bayaran, dan kongsikannya dengan kakitangan.
+- **Kemudian:** Sediakan lejar cuti untuk setiap pekerja dan selaraskannya dengan gaji setiap bulan.
+- **Setiap tahun:** Terbitkan senarai cuti umum anda awal tahun, dan semak hari yang baru diwartakan.
+
+Mendapatkan cuti dengan betul kebanyakannya tentang mengetahui lantai, menulis peraturan anda sendiri, dan menyimpan rekod yang menunjukkan anda mengikutinya.`,
+        faqs: [
+          {
+            question: "Berapa banyak cuti tahunan yang mesti diberikan majikan Malaysia di bawah Akta Kerja?",
+            answer:
+              "Minimum yang lazim dinyatakan ialah 8 hari setahun untuk kurang 2 tahun perkhidmatan, 12 hari untuk 2 hingga kurang 5 tahun, dan 16 hari untuk 5 tahun atau lebih. Kontrak anda boleh memberi lebih tetapi tidak kurang. Sahkan angka semasa dengan Akta atau Jabatan Tenaga Kerja.",
+          },
+          {
+            question: "Berapa hari cuti sakit berbayar yang menjadi hak pekerja?",
+            answer:
+              "Lazim dinyatakan sebagai 14 hari untuk kurang 2 tahun perkhidmatan, 18 hari untuk 2 hingga kurang 5 tahun, dan 22 hari untuk 5 tahun atau lebih, dengan elaun berasingan yang lebih panjang sehingga 60 hari secara keseluruhan jika dimasukkan ke hospital. Sesetengah ringkasan menyenaraikan angka tahap tengah yang sedikit berbeza, jadi semak Akta semasa.",
+          },
+          {
+            question: "Berapa lamakah cuti bersalin di Malaysia?",
+            answer:
+              "Pekerja wanita yang layak berhak mendapat 98 hari berturut-turut cuti bersalin berbayar di bawah Akta Kerja yang dipinda, yang menggantikan 60 hari terdahulu. Semak syarat semasa tentang kelayakan, notis, dan gaji.",
+          },
+          {
+            question: "Adakah cuti paterniti keperluan undang-undang?",
+            answer:
+              "Akta Kerja yang dipinda memperkenalkan cuti paterniti, yang lazim dinyatakan sebagai 7 hari berturut-turut, tertakluk kepada syarat seperti telah berkahwin, memberi notis, dan had bilangan kelahiran yang dilindunginya. Sahkan syarat semasa sebelum bergantung padanya.",
+          },
+          {
+            question: "Berapa banyak cuti umum yang mesti saya berikan kepada pekerja?",
+            answer:
+              "Pekerja yang dilindungi berhak mendapat sekurang-kurangnya 11 hari cuti umum berbayar setahun, termasuk beberapa yang wajib seperti Hari Kebangsaan, Hari Malaysia, Hari Pekerja, dan hari keputeraan Yang di-Pertuan Agong dan Sultan negeri. Anda memilih selebihnya daripada senarai yang diwartakan dan mesti memberitahu kakitangan lebih awal.",
+          },
+          {
+            question: "Apa yang berlaku jika cuti umum jatuh pada hari rehat pekerja?",
+            answer:
+              "Akta amnya memperuntukkan bahawa hari bekerja berikutnya menjadi cuti berbayar. Semak perkataan semasa dan sebarang peraturan tentang menggantikan hari lain sebelum anda merancang gaji.",
+          },
+          {
+            question: "Adakah saya perlu membayar cuti tahunan yang tidak digunakan apabila seseorang berhenti?",
+            answer:
+              "Cuti terakru yang tidak digunakan yang anda wajib bayar membentuk sebahagian daripada gaji akhir, dikira pada kadar harian yang betul. Sama ada cuti yang tidak digunakan dibawa ke hadapan atau luput semasa pekerjaan lazimnya ditetapkan oleh kontrak atau dasar anda, jadi putuskan dan tuliskannya.",
+          },
+          {
+            question: "Apakah rekod cuti yang perlu disimpan oleh perniagaan kecil?",
+            answer:
+              "Lejar cuti bagi setiap pekerja yang menunjukkan baki permulaan, hari diperoleh, hari diambil dengan tarikh, dan baki penutup, serta kelulusan bertulis dan sijil perubatan, diselaraskan dengan gaji setiap bulan. Simpan selama beberapa tahun selepas pekerjaan tamat dan sahkan keperluan penyimpanan semasa.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "collecting-late-payments-in-malaysia",
+    title: "Collecting Late Payments in Malaysia: From Reminder to Letter of Demand to Small Claims",
+    seoTitle: "Collecting Late Payments in Malaysia: Step-by-Step",
+    seoDescription:
+      "How Malaysian SMEs can chase overdue invoices: payment terms, reminders, a letter of demand, small claims versus court, limitation, and prevention.",
+    coverImage: {
+      file: "collecting-late-payments-in-malaysia-cover.webp",
+      mimeType: "image/webp",
+      alt: "A businesswoman taking notes while on a phone call at her desk",
+      altTranslations: {
+        zh: "一位女企业家在办公桌前一边通电话一边做笔记",
+        ms: "Seorang ahli perniagaan wanita mencatat nota semasa membuat panggilan telefon di mejanya",
+      },
+    },
+    contentImages: {
+      "demand-letter": {
+        file: "collecting-late-payments-in-malaysia-demand-letter.webp",
+        mimeType: "image/webp",
+        alt: "Close-up of hands signing a document at an office desk",
+        altTranslations: {
+          zh: "办公桌前签署文件的双手特写",
+          ms: "Gambar dekat tangan menandatangani dokumen di meja pejabat",
+        },
+        after: "Send the letter of demand only after you have your paper trail in order.",
+        afterTranslations: {
+          zh: "请先把书面记录整理好，再发出催款函。",
+          ms: "Hantar surat tuntutan hanya selepas anda menyusun jejak dokumen anda dengan teratur.",
+        },
+      },
+    },
+    excerpt:
+      "A late-paying customer can hurt a small business more than a slow month of sales. This guide lays out a practical escalation path for overdue invoices in Malaysia — clear payment terms, polite reminders, a letter of demand, small claims versus a regular court action, the limitation period, and the habits that stop invoices going overdue in the first place.",
+    body: `For a small business, an unpaid invoice is not just an accounting entry. It is rent, wages, and supplier payments you have already committed to and cannot cover. Many owners hesitate to chase because they fear losing the customer, then wait so long that the debt becomes harder to collect. The better approach is a calm, escalating process that you follow every time, so chasing a payment is routine rather than a confrontation.
+
+This is general information, not legal advice. Court procedures, monetary limits, and forms change, and some details below vary by situation, so confirm the current position with the court registry, the relevant court's official guidance, or a Malaysian lawyer before starting a claim.
+
+## 1. Prevent the problem before it starts
+
+The cheapest collection is the one you never need. Most late payments can be reduced by what you do before you deliver.
+
+### Put the terms in writing
+Every sale should have written terms covering the price, the payment due date (for example, 30 days from invoice date), accepted payment methods, and what happens if payment is late. A quotation, purchase order, or signed agreement that the customer accepted is far stronger evidence than a conversation.
+
+### Decide on late fees and interest in advance
+You can generally only charge a late fee or contractual interest if the customer agreed to it beforehand, so put it in your terms and invoice. Keep it reasonable, because courts can look unfavourably on penalties that are excessive.
+
+### Check new customers
+For a significant order, check that the business is real and registered, ask for trade references, and consider a deposit or staged payments for new or large accounts. Reliable customers will usually accept this.
+
+### Invoice promptly and clearly
+Send the invoice the day you deliver. Include the invoice number, date, due date, amount, what was supplied, and how to pay. Many late payments are simply invoices that were sent late or were unclear.
+
+## 2. Build a reminder routine
+
+Once an invoice is due, the goal is a prompt, courteous, documented follow-up. A simple routine you apply to everyone keeps it impersonal.
+
+1. **A few days before the due date.** A friendly reminder that the invoice is due on a specific date.
+2. **The day after the due date.** A short message asking whether the invoice has been received and when payment will be made.
+3. **About a week late.** A firmer reminder by email, with the invoice attached, and a phone call if you have a contact there.
+4. **Two to three weeks late.** A formal written reminder stating the amount, the original due date, any contractual late fee, and a clear deadline to pay.
+
+### Keep everything in writing
+Phone calls are useful, but follow up each one with a message that records what was agreed ("As discussed today, you will pay by Friday"). Those messages are evidence later.
+
+### Find out what is really going on
+A customer who is late because of a cash-flow squeeze may agree a short instalment plan, which is better than nothing. A customer who is disputing the quality of what you supplied needs a different conversation. Understanding the reason tells you whether to negotiate or escalate.
+
+## 3. Consider a negotiated settlement
+
+If the customer is willing but struggling, a written payment plan can recover the money faster and cheaper than court. Keep it simple:
+
+- Confirm the amount owed and that it is not disputed.
+- Agree specific dates and amounts, not "when I can".
+- State in writing that the full balance becomes due immediately if an instalment is missed.
+- Get the customer to sign or confirm by email.
+
+### Be careful with partial payments
+Accepting a smaller amount "in full and final settlement" can close the matter for good. Do not agree to this unless you intend to, and read any settlement wording carefully.
+
+## 4. Send a letter of demand
+
+A letter of demand is a formal written notice that the debt is owed and that you will take legal action if it is not paid by a stated date. For most ordinary invoice claims it is not a strict legal precondition, but it is standard practice, it shows the court you gave a fair chance, and it often prompts payment on its own.
+
+Send the letter of demand only after you have your paper trail in order. The strongest letters are short, factual, and backed by documents:
+
+1. **Identify the parties and the debt.** Full legal names, invoice numbers, dates, and the exact amount.
+2. **State the basis.** What was supplied or agreed and when, referencing the quotation, order, or contract.
+3. **Give a deadline.** Seven to fourteen days is common, stated as a firm date.
+4. **State the consequence.** That you will begin legal proceedings, and claim interest and costs where your agreement allows, if the deadline is missed.
+5. **Attach copies.** Invoices, delivery orders, statements, and key correspondence.
+6. **Send it so you can prove delivery.** Use registered post and email, and keep the receipts.
+
+### Consider a lawyer's letter
+A letter on a law firm's letterhead often carries more weight and costs relatively little compared with the debt. It also tells you early whether your claim is as strong as you think.
+
+### A statutory demand is a different, serious tool
+For company debtors, a formal statutory demand under the Companies Act can be a step towards winding up a company that cannot pay a sufficiently large, undisputed debt, and the rules and thresholds are technical. It is a separate route with real consequences, including costs risk if the debt is disputed, so take legal advice before using it.
+
+## 5. Choose the right forum if they still don't pay
+
+If the customer ignores the letter, you are deciding between letting it go and starting a claim. Weigh the amount, the strength of your documents, and whether the customer can actually pay.
+
+> Winning a judgment is not the same as getting paid. Before you spend money on court, ask honestly whether the customer has the assets, income, or bank balance to pay a judgment, and whether the debt is large enough to justify the cost and time.
+
+### The Tribunal for Consumer Claims is probably not for you
+This tribunal handles claims brought by consumers against traders over goods and services bought for personal use. It is generally not the forum for a business chasing an unpaid commercial invoice, so do not plan around it.
+
+### Small claims
+Malaysia has a simplified small claims procedure in the Magistrates' Court for low-value claims, designed to be quick and inexpensive and often without lawyers. The monetary cap and the rules on who can use it have been revised over time, with a figure of about RM5,000 commonly cited, so check the current limit and eligibility, including whether a company can claim. If your debt falls within it, it can be a practical route for small unpaid invoices.
+
+### Magistrates' Court and Sessions Court
+For larger amounts, the civil claim goes to the Magistrates' Court or the Sessions Court, depending on the amount, each with its own monetary jurisdiction that changes with amendments. These are normal civil actions involving a writ or summons, a statement of claim, and a defence if the customer contests it. You will usually want a lawyer, and costs and timelines are higher.
+
+### High Court
+Very large claims go to the High Court. For a typical SME invoice dispute, you will rarely be here, but it matters if the debt is substantial.
+
+### Other options
+Some contracts require mediation or arbitration first, so check what your agreement says. A debt recovery agent or a lawyer working on a fee arrangement can also take the chasing off your hands, though you should be clear on their fees and conduct.
+
+## 6. Watch the limitation period
+
+You cannot sue forever. Under the Limitation Act 1953, a claim founded on a contract is generally barred after six years from the date the cause of action arose, typically when the payment became due and was missed. Acknowledging the debt or making a part payment can affect the clock, and there are exceptions, so do not leave an old debt untouched. If an invoice is approaching two or three years old, get advice rather than hoping.
+
+### Keep your evidence
+Preserve invoices, delivery orders signed by the customer, contracts, correspondence, and statements of account. A signed delivery order showing the customer received the goods is among the most useful documents you can have.
+
+## 7. Protect your business while you chase
+
+- **Stop supply, or move to prepayment.** Continuing to deliver to a customer who has not paid grows the debt. Pause further credit until the overdue amount is settled.
+- **Check your own commitments.** If a major customer's delay affects your ability to pay suppliers, speak to them early rather than letting your own records slip.
+- **Review your credit policy.** Each late payer is a lesson. Tighten terms, shorten credit periods, or require deposits for risky accounts.
+
+Making your business easy to find and verify also helps build the kind of customer relationships that pay on time — [a free, verified listing here](/en/signup) is a small way to show you are an established business, and you can [browse the directory](/en) for local lawyers, accountants, and debt recovery professionals who help small businesses with exactly this.
+
+## Common mistakes Malaysian SMEs make when chasing payments
+
+- **Having no written terms.** If the due date, price, and scope were agreed only verbally, every dispute becomes one person's word against another's.
+- **Waiting too long to follow up.** Debts tend to get harder to collect the older they are, and an unchased invoice signals that payment is optional.
+- **Going to court without checking the customer can pay.** A judgment against a customer with no assets or income costs you legal fees and still leaves the invoice unpaid.
+
+## Where to start
+
+- **This week:** List every overdue invoice with the customer, amount, due date, and what you have already done to chase it.
+- **Next:** Send a firm written reminder for anything more than two or three weeks overdue, and a letter of demand for anything seriously late and undisputed.
+- **Then:** Update your quotation and invoice templates with clear payment terms, a due date, and an agreed late-payment clause.
+- **Every month:** Review your aged debtors list, and make a calm chasing routine part of your admin, not a crisis.
+
+Collecting what you are owed is mostly about being clear before the sale, consistent after it, and realistic about when a legal claim is worth the cost.`,
+    faqs: [
+      {
+        question: "When should I start chasing an overdue invoice in Malaysia?",
+        answer:
+          "Start immediately, with a polite reminder around the due date and a follow-up the day after. Debts usually become harder to collect the older they are, and a consistent reminder routine signals that payment terms are taken seriously.",
+      },
+      {
+        question: "Can I charge interest or a late fee on overdue invoices?",
+        answer:
+          "Generally only if the customer agreed to it in advance, so put the late fee or interest rate in your written terms and on your invoice. Keep it reasonable, since courts may look unfavourably on excessive penalties.",
+      },
+      {
+        question: "What is a letter of demand and do I need one?",
+        answer:
+          "A letter of demand is a formal written notice that the debt is owed and that you will begin legal action if it is not paid by a stated date. For ordinary invoice claims it is usually not a strict legal requirement, but it is standard practice and often prompts payment.",
+      },
+      {
+        question: "What should a letter of demand include?",
+        answer:
+          "The full names of the parties, the invoice numbers, dates, and the exact amount, the basis of the debt, a firm deadline (commonly seven to fourteen days), the consequence of non-payment, and copies of supporting documents. Send it by a method you can prove, such as registered post and email.",
+      },
+      {
+        question: "Can I use the Tribunal for Consumer Claims to collect a business invoice?",
+        answer:
+          "Generally no. That tribunal deals with claims brought by consumers against traders for goods and services bought for personal use. A business chasing an unpaid commercial invoice normally looks at small claims or a civil action in the Magistrates' or Sessions Court.",
+      },
+      {
+        question: "Is there a small claims procedure for unpaid invoices?",
+        answer:
+          "Malaysia has a simplified small claims procedure in the Magistrates' Court for low-value claims, often cited at about RM5,000, but the cap and eligibility rules have been revised, so confirm the current limit and whether a company can use it before filing.",
+      },
+      {
+        question: "How long do I have to sue for an unpaid debt?",
+        answer:
+          "Under the Limitation Act 1953, claims founded on a contract are generally barred after six years from when the cause of action arose, usually when the payment became due and was missed. Acknowledgement or part payment can affect the clock, and there are exceptions, so get advice on older debts.",
+      },
+      {
+        question: "How can I stop customers paying late in the first place?",
+        answer:
+          "Put clear written terms and a due date on every quotation and invoice, agree late-payment terms in advance, check new customers and consider deposits for large or new accounts, invoice on the day of delivery, and run a consistent reminder routine.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "在马来西亚追收逾期货款：从提醒、催款函到小额索偿",
+        excerpt:
+          "客户拖欠货款，对小企业的伤害可能比一个销售淡月更大。本指南为马来西亚逾期发票提出一条实用的逐步升级路径——清晰的付款条款、礼貌的提醒、催款函、小额索偿与一般法庭诉讼的选择、诉讼时效，以及从一开始就防止发票逾期的习惯。",
+        body: `对小企业来说，一张未付的发票不只是账目上的一个条目。它是您已经承诺却无力支付的租金、工资和供应商款项。许多企业主因为怕失去客户而不敢追款，然后拖了太久，让债务变得更难收回。更好的做法是建立一套冷静、逐步升级的流程，每次都照着做，让追款成为日常事务，而不是一场对峙。
+
+以下仅为一般资讯，并非法律意见。法庭程序、金额限制和表格会变动，下面的一些细节也因情况而异，所以在提出索偿之前，请向法庭登记处、相关法庭的官方指引或马来西亚律师确认最新情况。
+
+## 1. 在问题发生之前先预防
+
+最便宜的追收，是您根本不需要进行的追收。大多数逾期付款，都可以通过交货前的做法来减少。
+
+### 把条款写下来
+每一笔销售都应有书面条款，涵盖价格、付款到期日（例如发票日期起 30 天）、接受的付款方式，以及逾期付款会怎样。客户接受的报价单、采购订单或已签署的协议，比一次口头交谈有力得多。
+
+### 事先决定滞纳金与利息
+一般只有在客户事先同意的情况下，您才能收取滞纳金或合约利息，所以请把它写进您的条款和发票。请保持合理，因为法庭可能对过高的罚款持不利看法。
+
+### 审查新客户
+对于较大的订单，请确认该企业真实且已注册，索取商业参考人，并对新客户或大客户考虑收取订金或分期付款。可靠的客户通常会接受。
+
+### 及时且清晰地开发票
+交货当天就发出发票。注明发票编号、日期、到期日、金额、供应的内容以及付款方式。许多逾期付款，其实只是发票发得太晚或不够清楚。
+
+## 2. 建立提醒流程
+
+一旦发票到期，目标是及时、礼貌且有记录的跟进。对每个人都适用的简单流程，能让整件事保持对事不对人。
+
+1. **到期日前几天。** 友好地提醒发票将在某个具体日期到期。
+2. **到期日的隔天。** 简短的讯息，询问发票是否已收到，以及何时付款。
+3. **逾期约一周。** 以电邮发出较严厉的提醒，附上发票，如果对方有联络人，也打个电话。
+4. **逾期两到三周。** 正式的书面提醒，列明金额、原定到期日、任何合约滞纳金，以及清楚的付款期限。
+
+### 一切都要有书面记录
+电话很有用，但每次通话后都要用讯息跟进，记录所商定的内容（“按今天所谈，您将在星期五前付款”）。这些讯息日后就是证据。
+
+### 弄清楚到底发生了什么
+因现金流紧张而逾期的客户，也许会同意一个简短的分期付款计划，这总比什么都没有好。对您所供应的质量有争议的客户，则需要另一种沟通。了解原因，才知道该协商还是升级处理。
+
+## 3. 考虑协商和解
+
+如果客户愿意但手头紧，书面的付款计划可以比法庭更快、更便宜地追回款项。请保持简单：
+
+- 确认所欠金额，且没有争议。
+- 约定具体的日期和金额，而不是“等我有能力的时候”。
+- 以书面注明，如果错过任何一期，全部余额即时到期。
+- 让客户签署或以电邮确认。
+
+### 小心部分付款
+接受较少的金额作为“全部及最终清偿”，可能会永久了结此事。除非您打算如此，否则不要同意，并仔细阅读任何和解的措辞。
+
+## 4. 发出催款函
+
+催款函是一份正式的书面通知，说明该债务已到期，并表示如果不在指定日期前付款，您将采取法律行动。对大多数普通发票索偿而言，它并非严格的法律前提条件，但它是标准做法，向法庭表明您已给过公平的机会，而且往往本身就能促使对方付款。
+
+请先把书面记录整理好，再发出催款函。最有力的函件简短、事实清楚，并有文件支持：
+
+1. **注明双方和债务。** 全名、发票编号、日期和确切金额。
+2. **说明依据。** 何时供应或约定了什么，并引用报价单、订单或合约。
+3. **给出期限。** 七到十四天是常见的，以明确的日期表示。
+4. **说明后果。** 如果错过期限，您将展开法律程序，并在协议允许的情况下索取利息和诉讼费用。
+5. **附上副本。** 发票、送货单、对账单和关键往来函件。
+6. **以可证明送达的方式发送。** 使用挂号邮寄和电邮，并保留收据。
+
+### 考虑由律师发函
+由律师事务所信笺发出的函件，往往更有分量，而且与债务相比成本相对较低。它也能让您及早知道，您的索偿是否像您想的那样站得住脚。
+
+### 法定催缴书是另一种严肃的工具
+对于公司债务人，根据《公司法》发出的正式法定催缴书，可能是迈向清盘一家无力偿还足够大额且无争议债务的公司的一步，而规则和门槛相当技术性。这是一条另行的途径，会带来实际后果，包括债务有争议时的费用风险，所以使用之前请先寻求法律意见。
+
+## 5. 如果对方仍不付款，选择正确的审理场所
+
+如果客户无视催款函，您就要在放弃与展开索偿之间做出选择。请权衡金额、文件的力度，以及客户是否真的付得起。
+
+> 赢得判决并不等于收到款项。在花钱打官司之前，请诚实地问自己，客户是否有资产、收入或银行存款来支付判决金额，以及这笔债务是否大到值得付出这些成本和时间。
+
+### 消费者索偿仲裁庭大概并不适合您
+该仲裁庭处理的是消费者因个人用途购买的商品和服务，而向商家提出的索偿。它一般不是企业追收未付商业发票的场所，所以不要围绕它来规划。
+
+### 小额索偿
+马来西亚在推事庭设有针对小额索偿的简化程序，旨在快速且低成本，通常无需律师。金额上限以及谁可以使用的规则，多年来都有修订，常被引用的数字约为 RM5,000，所以请查核目前的上限和资格，包括公司是否可以提出索偿。如果您的债务在其范围内，它可以是追收小额未付发票的实用途径。
+
+### 推事庭与会话庭
+对于较大的金额，民事索偿会交由推事庭或会话庭审理，视金额而定，各自的金额管辖权会随修订而变动。这些是正常的民事诉讼，涉及令状或传票、索偿陈述书，以及客户提出抗辩时的答辩状。您通常需要律师，费用和时间也更高。
+
+### 高等法院
+金额非常大的索偿交由高等法院审理。对于典型的中小企业发票纠纷，您很少会走到这一步，但如果债务巨大，则要留意。
+
+### 其他选择
+有些合约要求先进行调解或仲裁，所以请查看您的协议怎么说。债务追收代理，或按收费安排工作的律师，也可以替您接手追款，不过您应当清楚他们的收费和行为准则。
+
+## 6. 留意诉讼时效
+
+您不能永远起诉下去。根据《1953 年时效法令》，基于合约的索偿，一般在诉因产生之日起六年后即被时效禁止，通常是从付款到期且被错过时起算。承认债务或部分付款可能影响时效的计算，而且设有例外，所以不要放着旧债不管。如果一张发票接近两三年，请寻求意见，而不是抱着希望干等。
+
+### 保存您的证据
+保存发票、客户签收的送货单、合约、往来函件和对账单。显示客户已收到货物的已签收送货单，是您能拥有的最有用的文件之一。
+
+## 7. 追款期间保护好您的企业
+
+- **停止供货，或改为预付。** 继续向未付款的客户交货，只会让债务越滚越大。在逾期款项结清之前，暂停进一步的赊账。
+- **检查您自己的承诺。** 如果某位大客户的拖延影响了您支付供应商的能力，请及早与他们沟通，而不要让自己的记录出现疏漏。
+- **检视您的信贷政策。** 每一位逾期付款者都是一次教训。收紧条款、缩短信贷期，或对高风险账户要求订金。
+
+让您的企业容易被找到和验证，也有助于建立按时付款的客户关系——[在这里免费创建认证列表](/zh/signup)，是展示您是一家成熟企业的一个小小方式，您也可以[浏览目录](/zh)，找到专门帮助小企业处理这类事务的本地律师、会计师和债务追收专业人士。
+
+## 马来西亚中小企业在追款时常犯的错误
+
+- **没有书面条款。** 如果到期日、价格和范围只是口头约定，每一次纠纷都会变成各执一词。
+- **太晚才跟进。** 债务越老越难收回，而不追的发票，会让对方觉得付款是可有可无的。
+- **没有确认客户付得起就上法庭。** 对一个没有资产或收入的客户取得判决，会让您付出律师费，发票却依然未付。
+
+## 从哪里开始
+
+- **本周：** 列出每一张逾期发票，注明客户、金额、到期日，以及您已经做过哪些追款动作。
+- **接下来：** 对逾期超过两三周的款项发出严厉的书面提醒，对严重逾期且无争议的款项发出催款函。
+- **然后：** 在您的报价单和发票模板中加入清晰的付款条款、到期日和约定的逾期付款条款。
+- **每个月：** 检视您的账龄应收账款清单，让冷静的追款流程成为日常行政的一部分，而不是一场危机。
+
+收回您应得的款项，主要就是在销售之前把话说清楚，在销售之后保持一致，并对法律索偿是否值得付出成本保持现实的态度。`,
+        faqs: [
+          {
+            question: "在马来西亚，我应该什么时候开始追收逾期发票？",
+            answer:
+              "立即开始，在到期日前后发出礼貌的提醒，并在隔天跟进。债务通常越老越难收回，而一致的提醒流程表明您重视付款条款。",
+          },
+          {
+            question: "我可以对逾期发票收取利息或滞纳金吗？",
+            answer:
+              "一般只有在客户事先同意的情况下才可以，所以请把滞纳金或利率写进您的书面条款和发票。请保持合理，因为法庭可能对过高的罚款持不利看法。",
+          },
+          {
+            question: "什么是催款函？我需要发吗？",
+            answer:
+              "催款函是一份正式的书面通知，说明债务已到期，并表示如果不在指定日期前付款，您将展开法律行动。对普通发票索偿而言，它通常并非严格的法律要求，但它是标准做法，往往能促使对方付款。",
+          },
+          {
+            question: "催款函应该包含哪些内容？",
+            answer:
+              "双方的全名、发票编号、日期和确切金额、债务的依据、明确的期限（常见为七到十四天）、不付款的后果，以及证明文件的副本。请以您能证明送达的方式发送，例如挂号邮寄加电邮。",
+          },
+          {
+            question: "我可以用消费者索偿仲裁庭来追收商业发票吗？",
+            answer:
+              "一般不可以。该仲裁庭处理的是消费者因个人用途购买的商品和服务，而向商家提出的索偿。追收未付商业发票的企业，通常考虑小额索偿或在推事庭或会话庭提出民事诉讼。",
+          },
+          {
+            question: "未付发票有小额索偿程序吗？",
+            answer:
+              "马来西亚在推事庭设有针对小额索偿的简化程序，常被引用的上限约为 RM5,000，但上限和资格规则曾有修订，所以在提出申请前，请确认目前的上限，以及公司是否可以使用。",
+          },
+          {
+            question: "我有多长时间可以就未付债务提出起诉？",
+            answer:
+              "根据《1953 年时效法令》，基于合约的索偿，一般在诉因产生之日起六年后即被时效禁止，通常从付款到期且被错过时起算。承认债务或部分付款可能影响时效，而且设有例外，所以对较旧的债务请寻求意见。",
+          },
+          {
+            question: "我怎样才能从一开始就避免客户逾期付款？",
+            answer:
+              "在每份报价单和发票上注明清晰的书面条款和到期日，事先约定逾期付款条款，审查新客户并对大客户或新客户考虑收取订金，在交货当天开发票，并执行一致的提醒流程。",
+          },
+        ],
+      },
+      ms: {
+        title: "Menuntut Bayaran Lewat di Malaysia: Dari Peringatan ke Surat Tuntutan hingga Tuntutan Kecil",
+        excerpt:
+          "Pelanggan yang lewat membayar boleh memudaratkan perniagaan kecil lebih daripada bulan jualan yang perlahan. Panduan ini menggariskan laluan peningkatan yang praktikal untuk invois tertunggak di Malaysia — terma pembayaran yang jelas, peringatan yang sopan, surat tuntutan, tuntutan kecil berbanding tindakan mahkamah biasa, tempoh had masa, dan tabiat yang menghalang invois menjadi tertunggak sejak awal lagi.",
+        body: `Bagi perniagaan kecil, invois yang tidak dibayar bukan sekadar catatan perakaunan. Ia ialah sewa, gaji, dan bayaran pembekal yang telah anda komitkan dan tidak mampu tampung. Ramai pemilik teragak-agak untuk menuntut kerana takut kehilangan pelanggan, kemudian menunggu terlalu lama sehingga hutang itu menjadi lebih sukar dikutip. Pendekatan yang lebih baik ialah proses yang tenang dan meningkat secara beransur-ansur yang anda ikuti setiap kali, supaya menuntut bayaran menjadi rutin dan bukan konfrontasi.
+
+Ini ialah maklumat am, bukan nasihat undang-undang. Prosedur mahkamah, had kewangan, dan borang berubah, dan sesetengah butiran di bawah berbeza mengikut keadaan, jadi sahkan kedudukan semasa dengan pendaftaran mahkamah, panduan rasmi mahkamah berkaitan, atau peguam Malaysia sebelum memulakan tuntutan.
+
+## 1. Cegah masalah sebelum ia bermula
+
+Kutipan yang paling murah ialah yang tidak pernah anda perlukan. Kebanyakan bayaran lewat boleh dikurangkan melalui apa yang anda lakukan sebelum menyerahkan barangan.
+
+### Tulis terma secara bertulis
+Setiap jualan hendaklah mempunyai terma bertulis yang merangkumi harga, tarikh matang pembayaran (contohnya, 30 hari dari tarikh invois), kaedah pembayaran yang diterima, dan apa yang berlaku jika pembayaran lewat. Sebut harga, pesanan pembelian, atau perjanjian bertandatangan yang diterima pelanggan ialah bukti yang jauh lebih kukuh daripada perbualan.
+
+### Tentukan yuran lewat dan faedah lebih awal
+Anda amnya hanya boleh mengenakan yuran lewat atau faedah kontrak jika pelanggan bersetuju terlebih dahulu, jadi letakkannya dalam terma dan invois anda. Pastikan ia munasabah, kerana mahkamah boleh memandang negatif terhadap penalti yang keterlaluan.
+
+### Semak pelanggan baharu
+Untuk pesanan yang besar, semak bahawa perniagaan itu benar dan berdaftar, minta rujukan dagangan, dan pertimbangkan deposit atau bayaran berperingkat untuk akaun baharu atau besar. Pelanggan yang boleh dipercayai lazimnya akan menerima ini.
+
+### Keluarkan invois dengan segera dan jelas
+Hantar invois pada hari anda menyerahkan barangan. Sertakan nombor invois, tarikh, tarikh matang, jumlah, apa yang dibekalkan, dan cara membayar. Banyak bayaran lewat hanyalah invois yang dihantar lewat atau tidak jelas.
+
+## 2. Bina rutin peringatan
+
+Apabila invois sudah matang, matlamatnya ialah susulan yang pantas, sopan, dan didokumenkan. Rutin mudah yang anda gunakan kepada semua orang menjadikannya tidak peribadi.
+
+1. **Beberapa hari sebelum tarikh matang.** Peringatan mesra bahawa invois akan matang pada tarikh tertentu.
+2. **Sehari selepas tarikh matang.** Mesej ringkas bertanya sama ada invois telah diterima dan bila bayaran akan dibuat.
+3. **Kira-kira seminggu lewat.** Peringatan yang lebih tegas melalui e-mel, dengan invois dilampirkan, dan panggilan telefon jika anda mempunyai hubungan di sana.
+4. **Dua hingga tiga minggu lewat.** Peringatan bertulis rasmi yang menyatakan jumlah, tarikh matang asal, sebarang yuran lewat kontrak, dan tarikh akhir yang jelas untuk membayar.
+
+### Simpan semuanya secara bertulis
+Panggilan telefon berguna, tetapi susuli setiap satu dengan mesej yang merekodkan apa yang dipersetujui ("Seperti dibincangkan hari ini, anda akan membayar menjelang Jumaat"). Mesej-mesej itu menjadi bukti kemudian.
+
+### Ketahui apa yang sebenarnya berlaku
+Pelanggan yang lewat kerana kesempitan aliran tunai mungkin bersetuju dengan pelan ansuran ringkas, yang lebih baik daripada tiada apa-apa. Pelanggan yang mempertikaikan kualiti apa yang anda bekalkan memerlukan perbualan yang berbeza. Memahami sebabnya memberitahu anda sama ada untuk berunding atau meningkatkan tindakan.
+
+## 3. Pertimbangkan penyelesaian yang dirundingkan
+
+Jika pelanggan sanggup tetapi bergelut, pelan pembayaran bertulis boleh mendapatkan semula wang dengan lebih pantas dan murah daripada mahkamah. Jadikan ia mudah:
+
+- Sahkan jumlah yang terhutang dan bahawa ia tidak dipertikaikan.
+- Setujui tarikh dan jumlah tertentu, bukan "bila saya mampu".
+- Nyatakan secara bertulis bahawa baki penuh menjadi matang serta-merta jika ansuran terlepas.
+- Minta pelanggan menandatangani atau mengesahkan melalui e-mel.
+
+### Berhati-hati dengan bayaran separa
+Menerima jumlah yang lebih kecil sebagai "penyelesaian penuh dan muktamad" boleh menutup perkara itu selama-lamanya. Jangan bersetuju melainkan anda berniat demikian, dan baca teliti sebarang perkataan penyelesaian.
+
+## 4. Hantar surat tuntutan
+
+Surat tuntutan ialah notis bertulis rasmi bahawa hutang itu terhutang dan bahawa anda akan mengambil tindakan undang-undang jika ia tidak dibayar menjelang tarikh yang dinyatakan. Bagi kebanyakan tuntutan invois biasa ia bukan prasyarat undang-undang yang ketat, tetapi ia amalan standard, ia menunjukkan kepada mahkamah bahawa anda memberi peluang yang adil, dan ia selalunya mendorong pembayaran dengan sendirinya.
+
+Hantar surat tuntutan hanya selepas anda menyusun jejak dokumen anda dengan teratur. Surat yang paling kukuh ialah ringkas, berfakta, dan disokong oleh dokumen:
+
+1. **Kenal pasti pihak dan hutang.** Nama penuh, nombor invois, tarikh, dan jumlah tepat.
+2. **Nyatakan asas.** Apa yang dibekalkan atau dipersetujui dan bila, merujuk sebut harga, pesanan, atau kontrak.
+3. **Beri tarikh akhir.** Tujuh hingga empat belas hari adalah lazim, dinyatakan sebagai tarikh yang tegas.
+4. **Nyatakan akibatnya.** Bahawa anda akan memulakan prosiding undang-undang, dan menuntut faedah dan kos jika perjanjian anda membenarkan, jika tarikh akhir terlepas.
+5. **Lampirkan salinan.** Invois, order penghantaran, penyata, dan surat-menyurat utama.
+6. **Hantar supaya anda boleh membuktikan penghantaran.** Gunakan pos berdaftar dan e-mel, dan simpan resit.
+
+### Pertimbangkan surat daripada peguam
+Surat pada kepala surat firma guaman selalunya mempunyai bobot lebih dan kosnya agak kecil berbanding hutang. Ia juga memberitahu anda lebih awal sama ada tuntutan anda sekukuh yang anda fikirkan.
+
+### Tuntutan berkanun ialah alat yang berbeza dan serius
+Bagi penghutang syarikat, tuntutan berkanun rasmi di bawah Akta Syarikat boleh menjadi langkah ke arah penggulungan syarikat yang tidak mampu membayar hutang yang cukup besar dan tidak dipertikaikan, dan peraturan serta ambangnya bersifat teknikal. Ia ialah laluan berasingan dengan akibat sebenar, termasuk risiko kos jika hutang dipertikaikan, jadi dapatkan nasihat undang-undang sebelum menggunakannya.
+
+## 5. Pilih forum yang betul jika mereka masih tidak membayar
+
+Jika pelanggan mengabaikan surat itu, anda memilih antara melepaskannya dan memulakan tuntutan. Timbang jumlah, kekuatan dokumen anda, dan sama ada pelanggan benar-benar mampu membayar.
+
+> Memenangi penghakiman tidak sama dengan dibayar. Sebelum anda membelanjakan wang di mahkamah, tanya dengan jujur sama ada pelanggan mempunyai aset, pendapatan, atau baki bank untuk membayar penghakiman, dan sama ada hutang itu cukup besar untuk membenarkan kos dan masa.
+
+### Tribunal Tuntutan Pengguna mungkin bukan untuk anda
+Tribunal ini mengendalikan tuntutan yang dibawa oleh pengguna terhadap peniaga mengenai barangan dan perkhidmatan yang dibeli untuk kegunaan peribadi. Ia amnya bukan forum untuk perniagaan yang menuntut invois komersial yang tidak dibayar, jadi jangan merancang berdasarkannya.
+
+### Tuntutan kecil
+Malaysia mempunyai prosedur tuntutan kecil yang dipermudahkan di Mahkamah Majistret untuk tuntutan bernilai rendah, direka supaya cepat dan murah dan selalunya tanpa peguam. Had kewangan dan peraturan tentang siapa yang boleh menggunakannya telah disemak dari semasa ke semasa, dengan angka sekitar RM5,000 lazim disebut, jadi semak had dan kelayakan semasa, termasuk sama ada syarikat boleh menuntut. Jika hutang anda berada dalam lingkungannya, ia boleh menjadi laluan praktikal untuk invois kecil yang tidak dibayar.
+
+### Mahkamah Majistret dan Mahkamah Sesyen
+Untuk jumlah yang lebih besar, tuntutan sivil dibawa ke Mahkamah Majistret atau Mahkamah Sesyen, bergantung pada jumlah, masing-masing dengan bidang kuasa kewangan sendiri yang berubah dengan pindaan. Ini ialah tindakan sivil biasa yang melibatkan writ atau saman, pernyataan tuntutan, dan pembelaan jika pelanggan mencabarnya. Anda lazimnya mahukan peguam, dan kos serta garis masa adalah lebih tinggi.
+
+### Mahkamah Tinggi
+Tuntutan yang sangat besar dibawa ke Mahkamah Tinggi. Untuk pertikaian invois PKS yang tipikal, anda jarang berada di sini, tetapi ia penting jika hutang itu besar.
+
+### Pilihan lain
+Sesetengah kontrak memerlukan pengantaraan atau timbang tara dahulu, jadi semak apa yang dinyatakan perjanjian anda. Ejen pemulihan hutang atau peguam yang bekerja dengan susunan yuran juga boleh mengambil alih kerja menuntut, walaupun anda perlu jelas tentang yuran dan tingkah laku mereka.
+
+## 6. Perhatikan tempoh had masa
+
+Anda tidak boleh menyaman selama-lamanya. Di bawah Akta Had Masa 1953, tuntutan yang berasaskan kontrak amnya terhalang selepas enam tahun dari tarikh sebab tindakan bermula, lazimnya apabila bayaran menjadi matang dan terlepas. Mengakui hutang atau membuat bayaran separa boleh menjejaskan jam itu, dan terdapat pengecualian, jadi jangan biarkan hutang lama tidak disentuh. Jika invois menghampiri dua atau tiga tahun, dapatkan nasihat dan bukannya berharap.
+
+### Simpan bukti anda
+Simpan invois, order penghantaran yang ditandatangani pelanggan, kontrak, surat-menyurat, dan penyata akaun. Order penghantaran bertandatangan yang menunjukkan pelanggan menerima barangan ialah antara dokumen paling berguna yang boleh anda miliki.
+
+## 7. Lindungi perniagaan anda semasa menuntut
+
+- **Hentikan bekalan, atau beralih kepada bayaran pendahuluan.** Terus menghantar kepada pelanggan yang belum membayar hanya menambah hutang. Hentikan kredit selanjutnya sehingga jumlah tertunggak diselesaikan.
+- **Semak komitmen anda sendiri.** Jika kelewatan pelanggan utama menjejaskan keupayaan anda membayar pembekal, bercakap dengan mereka lebih awal dan jangan biarkan rekod anda sendiri tergelincir.
+- **Semak dasar kredit anda.** Setiap pembayar lewat ialah pengajaran. Ketatkan terma, pendekkan tempoh kredit, atau minta deposit untuk akaun berisiko.
+
+Menjadikan perniagaan anda mudah ditemui dan disahkan juga membantu membina hubungan pelanggan yang membayar tepat pada masanya — [penyenaraian percuma dan disahkan di sini](/ms/signup) ialah cara kecil untuk menunjukkan anda perniagaan yang mantap, dan anda boleh [layari direktori](/ms) untuk peguam, akauntan, dan profesional pemulihan hutang tempatan yang membantu perniagaan kecil dengan perkara ini.
+
+## Kesilapan lazim PKS Malaysia ketika menuntut bayaran
+
+- **Tiada terma bertulis.** Jika tarikh matang, harga, dan skop dipersetujui secara lisan sahaja, setiap pertikaian menjadi kata seorang lawan kata seorang lagi.
+- **Menunggu terlalu lama untuk menyusuli.** Hutang cenderung menjadi lebih sukar dikutip semakin lama usianya, dan invois yang tidak dituntut memberi isyarat bahawa pembayaran adalah pilihan.
+- **Pergi ke mahkamah tanpa menyemak pelanggan mampu membayar.** Penghakiman terhadap pelanggan yang tiada aset atau pendapatan menelan yuran guaman anda dan invois tetap tidak dibayar.
+
+## Di mana untuk bermula
+
+- **Minggu ini:** Senaraikan setiap invois tertunggak dengan pelanggan, jumlah, tarikh matang, dan apa yang telah anda lakukan untuk menuntutnya.
+- **Seterusnya:** Hantar peringatan bertulis yang tegas untuk apa-apa yang tertunggak lebih dua atau tiga minggu, dan surat tuntutan untuk apa-apa yang sangat lewat dan tidak dipertikaikan.
+- **Kemudian:** Kemas kini templat sebut harga dan invois anda dengan terma pembayaran yang jelas, tarikh matang, dan fasal bayaran lewat yang dipersetujui.
+- **Setiap bulan:** Semak senarai penghutang mengikut usia anda, dan jadikan rutin menuntut yang tenang sebahagian daripada pentadbiran anda, bukan krisis.
+
+Mengutip apa yang terhutang kepada anda kebanyakannya tentang bersikap jelas sebelum jualan, konsisten selepasnya, dan realistik tentang bila tuntutan undang-undang berbaloi dengan kosnya.`,
+        faqs: [
+          {
+            question: "Bilakah saya patut mula menuntut invois tertunggak di Malaysia?",
+            answer:
+              "Mulakan serta-merta, dengan peringatan sopan sekitar tarikh matang dan susulan pada hari berikutnya. Hutang lazimnya menjadi lebih sukar dikutip semakin lama usianya, dan rutin peringatan yang konsisten menandakan bahawa terma pembayaran dipandang serius.",
+          },
+          {
+            question: "Bolehkah saya mengenakan faedah atau yuran lewat ke atas invois tertunggak?",
+            answer:
+              "Amnya hanya jika pelanggan bersetuju terlebih dahulu, jadi letakkan yuran lewat atau kadar faedah dalam terma bertulis dan invois anda. Pastikan ia munasabah, kerana mahkamah mungkin memandang negatif terhadap penalti yang keterlaluan.",
+          },
+          {
+            question: "Apakah surat tuntutan dan adakah saya memerlukannya?",
+            answer:
+              "Surat tuntutan ialah notis bertulis rasmi bahawa hutang itu terhutang dan bahawa anda akan memulakan tindakan undang-undang jika ia tidak dibayar menjelang tarikh yang dinyatakan. Untuk tuntutan invois biasa ia lazimnya bukan keperluan undang-undang yang ketat, tetapi ia amalan standard dan selalunya mendorong pembayaran.",
+          },
+          {
+            question: "Apakah yang perlu ada dalam surat tuntutan?",
+            answer:
+              "Nama penuh pihak-pihak, nombor invois, tarikh, dan jumlah tepat, asas hutang, tarikh akhir yang tegas (lazimnya tujuh hingga empat belas hari), akibat tidak membayar, dan salinan dokumen sokongan. Hantar melalui kaedah yang boleh anda buktikan, seperti pos berdaftar dan e-mel.",
+          },
+          {
+            question: "Bolehkah saya menggunakan Tribunal Tuntutan Pengguna untuk menuntut invois perniagaan?",
+            answer:
+              "Amnya tidak. Tribunal itu mengendalikan tuntutan yang dibawa oleh pengguna terhadap peniaga bagi barangan dan perkhidmatan yang dibeli untuk kegunaan peribadi. Perniagaan yang menuntut invois komersial yang tidak dibayar lazimnya melihat tuntutan kecil atau tindakan sivil di Mahkamah Majistret atau Mahkamah Sesyen.",
+          },
+          {
+            question: "Adakah terdapat prosedur tuntutan kecil untuk invois yang tidak dibayar?",
+            answer:
+              "Malaysia mempunyai prosedur tuntutan kecil yang dipermudahkan di Mahkamah Majistret untuk tuntutan bernilai rendah, sering disebut sekitar RM5,000, tetapi had dan peraturan kelayakan telah disemak, jadi sahkan had semasa dan sama ada syarikat boleh menggunakannya sebelum memfailkan.",
+          },
+          {
+            question: "Berapa lama saya mempunyai masa untuk menyaman hutang yang tidak dibayar?",
+            answer:
+              "Di bawah Akta Had Masa 1953, tuntutan yang berasaskan kontrak amnya terhalang selepas enam tahun dari tarikh sebab tindakan bermula, biasanya apabila bayaran menjadi matang dan terlepas. Pengakuan atau bayaran separa boleh menjejaskan jam itu, dan terdapat pengecualian, jadi dapatkan nasihat untuk hutang yang lebih lama.",
+          },
+          {
+            question: "Bagaimana saya boleh menghalang pelanggan membayar lewat sejak awal lagi?",
+            answer:
+              "Letakkan terma bertulis yang jelas dan tarikh matang pada setiap sebut harga dan invois, setujui terma bayaran lewat lebih awal, semak pelanggan baharu dan pertimbangkan deposit untuk akaun besar atau baharu, keluarkan invois pada hari penghantaran, dan jalankan rutin peringatan yang konsisten.",
+          },
+        ],
+      },
+    },
+  },
 ];
