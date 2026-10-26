@@ -84,6 +84,1067 @@ export type GuideSeed = {
 // either gets written.
 export const GUIDES: GuideSeed[] = [
   {
+    slug: "selling-online-in-malaysia-setting-up-an-online-shop",
+    title: "Selling Online in Malaysia: Setting Up an Online Shop the Right Way",
+    seoTitle: "Selling Online in Malaysia: Set Up an Online Shop",
+    seoDescription:
+      "How Malaysian SMEs can start selling online properly: registration, marketplace vs own website, payments, consumer rules, delivery, and customer data.",
+    coverImage: {
+      file: "selling-online-in-malaysia-setting-up-an-online-shop-cover.webp",
+      mimeType: "image/webp",
+      alt: "A woman with glasses working at a laptop in a bright, plant-filled office",
+      altTranslations: {
+        zh: "一位戴眼镜的女士在摆满绿植的明亮办公室里使用笔记本电脑",
+        ms: "Seorang wanita berkaca mata bekerja di komputer riba di pejabat yang cerah dan penuh pokok",
+      },
+    },
+    contentImages: {
+      "online-store": {
+        file: "selling-online-in-malaysia-setting-up-an-online-shop-laptop.webp",
+        mimeType: "image/webp",
+        alt: "A woman working on a laptop at a white desk with notes and colour samples",
+        altTranslations: {
+          zh: "一位女士在摆着便条和色卡的白色书桌前使用笔记本电脑",
+          ms: "Seorang wanita menggunakan komputer riba di meja putih dengan nota dan sampel warna",
+        },
+        after: "Decide where you will sell before you spend money on product photos and advertising.",
+        afterTranslations: {
+          zh: "在花钱拍产品照片和做广告之前，先决定您要在哪里销售。",
+          ms: "Tentukan di mana anda akan berjual sebelum membelanjakan wang untuk gambar produk dan pengiklanan.",
+        },
+      },
+    },
+    excerpt:
+      "Selling online lets a Malaysian small business reach customers far beyond its street, but it comes with its own legal and practical basics. This guide covers registering the business, choosing between a marketplace and your own website, payment gateways, the consumer protection rules for online sellers, delivery choices, and handling customer data.",
+    body: `Selling online is no longer a separate activity from running a business — for many Malaysian SMEs, it is the main channel. A home baker on a marketplace, a boutique with its own website, and a manufacturer selling through social media all face the same question: what do I need in place so that this is a proper business and not a risky side project? Getting the basics right early protects you from fines, chargebacks, and angry customers later.
+
+This is general information, not legal advice. Consumer protection rules, tax treatment, and platform policies change, and they differ by what you sell, so confirm the current position with the relevant authority, such as the Ministry of Domestic Trade and Cost of Living (KPDN) or SSM, before you rely on it.
+
+## 1. Register the business first
+
+Many people start by posting products and think about registration later. It is better to do it first.
+
+### Why registration matters
+SSM has stated that online businesses run for profit should be registered, and a registered business name or company is also what marketplaces, payment gateways, and banks will ask for. A business that is not registered may find it hard to open a business bank account or to get a payment gateway approved.
+
+### Choose a structure
+A sole proprietorship or partnership is the cheapest and quickest way to start, while a private limited company (Sdn Bhd) separates the owner's personal assets from the business. Our guide on registering a business in Malaysia walks through the options and the SSM steps.
+
+### Check licences and permits
+Depending on what you sell, you may need additional approvals, for example for food, cosmetics, health products, or regulated goods. A product that needs approval offline needs it online too, and marketplaces may remove listings that do not meet the rules.
+
+## 2. Choose where you will sell
+
+Decide where you will sell before you spend money on product photos and advertising. The three common routes can also be combined.
+
+### Marketplaces
+Platforms such as Shopee, Lazada, and TikTok Shop give you ready-made traffic, built-in payments, and basic dispute handling. The trade-offs are commission and transaction fees that cut into your margin, competition on price from similar sellers, and rules that the platform can change. Fees and policies differ by platform and category, so check the current seller terms before you commit.
+
+### Your own website
+A store on a hosted website platform gives you control over branding, pricing, and customer data, and no marketplace commission. The trade-off is that you must bring your own traffic, handle your own payments and customer service, and look after your own security. For a new business with no audience, that can be slow.
+
+### Social media selling
+Selling through Facebook, Instagram, or WhatsApp is easy to start, but it is hard to scale and hard to keep records. It is better treated as a way to find customers than as your only system for taking orders and payments.
+
+### A sensible approach
+Many SMEs begin on a marketplace to get orders and reviews, then add their own website for repeat customers as they grow. Whichever route you pick, keep your own customer list and records, not only the platform's.
+
+## 3. Take payments safely
+
+Customers expect to pay by card, online banking, or e-wallet, and you need a reliable way to receive that money.
+
+### Payment gateways
+A payment gateway lets your website accept online banking, cards, and e-wallets. Use a provider that is properly licensed or approved in Malaysia, compare their transaction fees and settlement times, and check what documents they require, which typically include your business registration and bank account details.
+
+### Marketplace payments
+On a marketplace, the platform generally holds the buyer's payment and releases it after delivery is confirmed. Understand the release schedule and any holding period, as it affects your cash flow.
+
+### Cash on delivery and manual transfers
+Cash on delivery and bank transfers are common, but they bring risk of refused parcels, fake payment slips, and messy reconciliation. If you use them, confirm that funds have actually arrived before dispatching, and record each order.
+
+### Keep business and personal money apart
+Use your business account to receive payments, so your income is clear when it is time to do your accounts and taxes. Our guide on opening a business bank account explains what to prepare.
+
+## 4. Know the consumer protection rules for online sellers
+
+Malaysia has specific rules for online traders under its consumer protection laws. They exist to make sure buyers know who they are dealing with and what they are buying.
+
+### Display your business details
+The Consumer Protection (Electronic Trade Transactions) Regulations require online sellers to disclose key information on their website or marketplace profile, commonly including the business name, registration number where one applies, contact details, a description of the goods or services, the full price including any taxes and delivery charges, accepted payment methods, the terms and conditions, and the estimated delivery time. The rules apply to sellers on their own websites and on marketplaces, and marketplace operators have duties of their own. The exact requirements have been amended over time, so confirm the current wording on the KPDN website.
+
+> Treat the product listing as your contract with the buyer. Whatever you show — price, size, colour, stock, delivery time, warranty — is what you are expected to deliver, so describe it accurately and do not advertise what you cannot supply.
+
+### Be clear about the price
+Show the full price, including tax and delivery, before the buyer pays. Hidden charges that appear at checkout are a common source of complaints.
+
+### Honour returns and guarantees
+The Consumer Protection Act 1999 gives consumers statutory guarantees, including that goods are of acceptable quality and match their description. This is not the same as a general right to return something because the buyer changed their mind, and your own return policy can be more generous than the law, but it cannot take away the rights the law gives. State your return and refund terms clearly, follow them, and keep the process simple. Marketplaces also have their own return rules that sellers must follow.
+
+### Do not mislead
+False claims, fake reviews, and misleading photos or discounts are offences, and they damage a new brand faster than anything else. Describe products honestly and use your own photos wherever you can.
+
+### Penalties and complaints
+Breaches can lead to enforcement action, and buyers can complain to KPDN or the Tribunal for Consumer Claims. Fine amounts are set in the law and have been revised, so check the current provisions rather than relying on a figure from a blog.
+
+## 5. Plan delivery and returns
+
+Delivery is where online businesses often win or lose repeat customers.
+
+### Choose couriers carefully
+Compare local courier and logistics providers on price, coverage, speed, tracking, insurance, and their handling of lost or damaged parcels. Many marketplaces offer integrated shipping that is convenient, but it is worth knowing what it costs.
+
+### Be honest about timing
+State realistic delivery times, including for East Malaysia, and update customers if there is a delay. Most complaints come from silence rather than from lateness itself.
+
+### Pack for the journey
+Poor packaging costs you replacements and reviews. For fragile or perishable goods, test your packaging before you scale up.
+
+### Decide who pays for returns
+Make clear who bears return shipping for faulty, wrong, or changed-mind returns, and put it in your policy before the first order rather than after the first dispute.
+
+### Imports and cross-border sales
+If you import goods for resale or sell to customers abroad, extra rules on customs, product standards, and tax can apply. Check these with the Royal Malaysian Customs Department before you commit to stock.
+
+## 6. Handle customer data and taxes properly
+
+### Personal data
+Every order gives you names, addresses, phone numbers, and sometimes payment details. The Personal Data Protection Act 2010 applies to commercial transactions, so you need a privacy notice, you should collect only what you need, and you must keep it secure. Our guide on PDPA compliance explains the basics. Never store card details yourself; let the payment gateway handle them.
+
+### Marketing messages
+Do not send promotional messages to people who did not agree to receive them, and let customers opt out easily.
+
+### Tax and records
+Online income is taxable like any other business income, so keep orders, invoices, payout statements, and expenses. Depending on what you sell and your turnover, sales and service tax may apply, and the e-invoicing rules may reach your business as its turnover grows. Confirm both with the relevant authority and see our guides on SST and e-invoicing.
+
+Once your shop is running, [a free business listing](/en/signup) helps local customers and trade partners find and verify you outside the marketplace, and you can [browse the directory](/en) for local couriers, packaging suppliers, photographers, and accountants who work with online sellers.
+
+## Common mistakes Malaysian SMEs make when selling online
+
+- **Selling without registering.** An unregistered business struggles to get a payment gateway or business account, and exposes the owner to avoidable risk.
+- **Hiding the full price or business details.** Missing contact information and surprise delivery charges break the disclosure rules and cost you customers' trust.
+- **Depending on one platform for everything.** If your only customer list lives on a marketplace, a policy change or suspended account can stop your income overnight.
+
+## Where to start
+
+- **This week:** Register your business with SSM, open a business bank account, and check whether your products need any licence or approval.
+- **Next:** Pick your first sales channel, set up a payment method you trust, and write clear product descriptions and return terms.
+- **Then:** Test your delivery process with a few orders, and set up a simple record of orders, payouts, and customer details.
+- **Every month:** Review your fees, reviews, returns, and customer data practices, and build your own customer list.
+
+Selling online works best when the basics are boring: a registered business, honest listings, reliable payments, and a delivery process your customers can trust.`,
+    faqs: [
+      {
+        question: "Do I need to register my business to sell online in Malaysia?",
+        answer:
+          "SSM has stated that online businesses run for profit should be registered, and marketplaces, payment gateways, and banks usually ask for a business registration. Registering first also makes it easier to open a business bank account.",
+      },
+      {
+        question: "Should I sell on a marketplace or build my own website?",
+        answer:
+          "Marketplaces give you ready-made traffic and payments but charge fees and limit your control, while your own website gives control and no commission but requires your own traffic. Many SMEs start on a marketplace and add their own site as they grow.",
+      },
+      {
+        question: "What business details must an online seller display?",
+        answer:
+          "The Consumer Protection (Electronic Trade Transactions) Regulations commonly require details such as the business name, registration number where one applies, contact information, a description of the goods, the full price including taxes and delivery, payment methods, terms, and estimated delivery time. Confirm the current requirements on the KPDN website.",
+      },
+      {
+        question: "Do I have to accept returns if the buyer just changes their mind?",
+        answer:
+          "Not as a general legal right. The Consumer Protection Act 1999 gives guarantees on matters like acceptable quality and matching the description, but a change-of-mind return is usually down to your own policy or the marketplace's rules. State your policy clearly and follow it.",
+      },
+      {
+        question: "How do I accept payments on my own website?",
+        answer:
+          "Use a payment gateway that is properly licensed or approved in Malaysia. Compare fees and settlement times, expect to provide your business registration and bank details, and never store customers' card details yourself.",
+      },
+      {
+        question: "Is it safe to take orders through WhatsApp or social media?",
+        answer:
+          "It is an easy way to start, but it is hard to scale and to keep records. Treat it as a way to find customers, confirm that payment has actually arrived before dispatching, and keep a record of every order.",
+      },
+      {
+        question: "Does the PDPA apply to a small online shop?",
+        answer:
+          "Generally yes. If you collect customers' personal data in commercial transactions, you need a privacy notice, should collect only what you need, and must keep the data secure. Let the payment gateway handle card details, and do not send marketing messages to people who did not agree.",
+      },
+      {
+        question: "Will my online income be taxed?",
+        answer:
+          "Yes, online income is taxable like other business income, so keep orders, invoices, payout statements, and expenses. Sales and service tax and e-invoicing may also apply depending on what you sell and your turnover, so confirm with the relevant authority.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "在马来西亚网上销售：正确开设网店的方法",
+        excerpt:
+          "网上销售让马来西亚的小企业可以触达远超门前街道的客户，但它也有自己的法律与实务基础。本指南涵盖注册企业、在电商平台与自家网站之间的选择、支付网关、网络卖家的消费者保护规则、配送选择，以及如何处理客户数据。",
+        body: `网上销售已不再是与经营企业分开的活动——对许多马来西亚中小企业来说，它就是主要渠道。在电商平台上的家庭烘焙师、拥有自家网站的精品店、通过社交媒体销售的制造商，都面临同一个问题：我需要具备什么，才能让这成为一门正规的生意，而不是一个有风险的副业？及早做好基础，可以避免日后的罚款、退款纠纷和愤怒的客户。
+
+以下仅为一般资讯，并非法律意见。消费者保护规定、税务处理和平台政策会变动，也因您销售的产品而异，所以在依赖这些内容之前，请向相关机构，例如国内贸易及生活费用部（KPDN）或 SSM，确认最新情况。
+
+## 1. 先注册企业
+
+许多人先发布产品，之后才考虑注册。先注册会更好。
+
+### 为什么注册很重要
+SSM 表示，以营利为目的的网上业务应该注册，而电商平台、支付网关和银行要求的也是已注册的商号或公司。未注册的业务可能难以开设企业银行账户，或让支付网关通过审批。
+
+### 选择结构
+独资或合伙是最便宜、最快的起步方式，而私人有限公司（Sdn Bhd）则把业主的个人资产与业务分开。我们关于在马来西亚注册企业的指南介绍了各种选择和 SSM 的步骤。
+
+### 检查执照与许可证
+视您销售的产品而定，您可能需要额外批准，例如食品、化妆品、保健产品或受管制商品。线下需要批准的产品，线上同样需要，而电商平台可能会下架不符合规定的产品。
+
+## 2. 选择销售地点
+
+在花钱拍产品照片和做广告之前，先决定您要在哪里销售。三种常见途径也可以结合使用。
+
+### 电商平台
+Shopee、Lazada 和 TikTok Shop 等平台提供现成的流量、内置的支付和基本的纠纷处理。代价是佣金和交易费会压缩您的利润、与类似卖家的价格竞争，以及平台可以随时更改的规则。费用和政策因平台和类别而异，所以在承诺之前请查看最新的卖家条款。
+
+### 自家网站
+在托管网站平台上开设的店铺，让您掌控品牌、定价和客户数据，也没有平台佣金。代价是您必须自己带来流量、自己处理支付和客户服务，并自己负责安全。对没有受众的新企业来说，这可能很慢。
+
+### 社交媒体销售
+通过 Facebook、Instagram 或 WhatsApp 销售容易起步，但难以扩展，也难以保存记录。最好把它当作寻找客户的方式，而不是您接收订单和付款的唯一系统。
+
+### 务实的做法
+许多中小企业先在电商平台上获得订单和评价，然后随着成长再加开自家网站服务回头客。无论选哪条路，都要保留您自己的客户名单和记录，而不是只依赖平台的。
+
+## 3. 安全地收款
+
+客户期望用银行卡、网上银行或电子钱包付款，而您需要一个可靠的收款方式。
+
+### 支付网关
+支付网关让您的网站接受网上银行、银行卡和电子钱包付款。请选择在马来西亚获得适当许可或批准的服务商，比较其交易费用和结算时间，并查看他们要求的文件，通常包括您的企业注册资料和银行账户详情。
+
+### 电商平台的付款
+在电商平台上，平台一般会先代收买家的付款，并在确认送达后放款。请了解放款时间表和任何冻结期，因为它会影响您的现金流。
+
+### 货到付款与手动转账
+货到付款和银行转账很常见，但会带来包裹被拒收、假付款凭证和对账混乱的风险。如果您使用它们，请在发货前确认款项确实已到账，并记录每一张订单。
+
+### 把公款与私款分开
+请使用您的企业账户收款，这样在做账和报税时，您的收入一目了然。我们关于开立企业银行账户的指南说明了需要准备什么。
+
+## 4. 了解网络卖家的消费者保护规则
+
+马来西亚在消费者保护法律下，对网络商家有特定规定。其目的是确保买家知道自己在和谁交易，以及买的是什么。
+
+### 展示您的企业资料
+《消费者保护（电子贸易交易）规则》要求网络卖家在自家网站或平台店铺页面披露关键资料，通常包括企业名称、适用时的注册号码、联络方式、商品或服务的描述、含任何税项和运费的全额价格、接受的付款方式、条款与条件，以及预计送达时间。这些规定适用于在自家网站和电商平台上的卖家，平台运营者也有自己的义务。具体要求历年有所修订，所以请在 KPDN 网站确认最新的措辞。
+
+> 把产品列表当作您与买家之间的合同。您所展示的一切——价格、尺寸、颜色、库存、送达时间、保修——都是您被期望交付的内容，所以请准确描述，不要宣传您无法供应的东西。
+
+### 价格要清楚
+在买家付款之前，展示包含税项和运费的全额价格。结账时才冒出来的隐藏费用，是投诉的常见来源。
+
+### 履行退货与保证
+《1999年消费者保护法令》给予消费者法定保证，包括商品质量可接受并与描述相符。这与“买家改变主意就可以退货”的一般权利并不相同，您自己的退货政策可以比法律更宽松，但不能剥夺法律赋予的权利。请清楚写明您的退货和退款条款，遵守它们，并让流程保持简单。电商平台也有自己的退货规则，卖家必须遵守。
+
+### 不要误导
+虚假宣传、虚假评价，以及误导性的照片或折扣都属违法，而且比任何事情都更快损害一个新品牌。请如实描述产品，并尽可能使用您自己的照片。
+
+### 处罚与投诉
+违规可能招致执法行动，买家可向 KPDN 或消费者索赔仲裁庭投诉。罚款金额由法律规定且曾被修订，所以请查看现行条文，而不要依赖博客上的数字。
+
+## 5. 规划配送与退货
+
+配送往往决定了网络企业能否赢得回头客。
+
+### 谨慎选择快递
+从价格、覆盖范围、速度、追踪、保险，以及处理遗失或损坏包裹的方式，比较本地快递与物流服务商。许多电商平台提供整合的运送服务，很方便，但值得了解其成本。
+
+### 对时间要诚实
+注明现实的送达时间，包括东马，并在延误时通知客户。大多数投诉来自沉默，而非延误本身。
+
+### 为旅程做好包装
+包装不好会让您损失补发的货品和评价。对于易碎或易腐的商品，请在扩大规模之前先测试您的包装。
+
+### 决定谁付退货费用
+说明有瑕疵、寄错或改变主意的退货，退货运费由谁承担，并在第一张订单之前，而不是第一次纠纷之后，就把它写进您的政策。
+
+### 进口与跨境销售
+如果您进口货品转售，或向海外客户销售，可能适用额外的海关、产品标准和税务规定。在投入库存之前，请向皇家马来西亚关税局查核。
+
+## 6. 妥善处理客户数据与税务
+
+### 个人数据
+每一张订单都会给您姓名、地址、电话号码，有时还有付款资料。《2010年个人数据保护法令》适用于商业交易，所以您需要隐私声明，只应收集所需的资料，并必须确保其安全。我们关于 PDPA 合规的指南说明了基础知识。切勿自己保存银行卡资料，交由支付网关处理。
+
+### 营销信息
+不要向没有同意接收的人发送促销信息，并让客户可以轻易退订。
+
+### 税务与记录
+网上收入与其他业务收入一样须课税，所以请保留订单、发票、提款结算单和开支。视您销售的产品和营业额而定，可能适用销售与服务税，电子发票规定也可能随着营业额增长而涉及您的企业。请向相关机构确认两者，并参阅我们关于 SST 和电子发票的指南。
+
+当您的网店上线后，[免费的企业列表](/zh/signup)可以帮助本地客户和商业伙伴在电商平台之外找到并核实您，您也可以[浏览名录](/zh)寻找与网络卖家合作的本地快递、包装供应商、摄影师和会计师。
+
+## 马来西亚中小企业网上销售时常犯的错误
+
+- **没有注册就销售。** 未注册的企业很难取得支付网关或企业账户，也让业主面临本可避免的风险。
+- **隐藏全额价格或企业资料。** 缺少联络资料和结账时才出现的运费，违反披露规定，也让您失去客户的信任。
+- **一切都依赖单一平台。** 如果您唯一的客户名单存在电商平台上，一次政策更改或账户被暂停，就可能让收入一夜之间中断。
+
+## 从哪里开始
+
+- **本周：**向 SSM 注册企业，开立企业银行账户，并查核您的产品是否需要任何执照或批准。
+- **接着：**选定第一个销售渠道，设置一个您信任的付款方式，并写好清晰的产品描述和退货条款。
+- **然后：**用几张订单测试您的配送流程，并建立一份简单的订单、提款和客户资料记录。
+- **每个月：**检讨您的费用、评价、退货和客户数据处理方式，并建立您自己的客户名单。
+
+当基础工作平淡无奇时，网上销售的效果最好：一间注册的企业、诚实的产品列表、可靠的付款，以及客户可以信赖的配送流程。`,
+        faqs: [
+          {
+            question: "在马来西亚网上销售需要注册企业吗？",
+            answer:
+              "SSM 表示，以营利为目的的网上业务应该注册，而电商平台、支付网关和银行通常会要求企业注册资料。先注册也让开设企业银行账户更容易。",
+          },
+          {
+            question: "应该在电商平台上销售，还是建立自己的网站？",
+            answer:
+              "电商平台提供现成的流量和支付，但收取费用并限制您的掌控；自家网站让您掌控且没有佣金，但需要自己带来流量。许多中小企业先在电商平台起步，随着成长再加开自己的网站。",
+          },
+          {
+            question: "网络卖家必须展示哪些企业资料？",
+            answer:
+              "《消费者保护（电子贸易交易）规则》通常要求披露企业名称、适用时的注册号码、联络资料、商品描述、含税项和运费的全额价格、付款方式、条款以及预计送达时间。请在 KPDN 网站确认最新要求。",
+          },
+          {
+            question: "买家只是改变主意，我必须接受退货吗？",
+            answer:
+              "这不是一般的法律权利。《1999年消费者保护法令》对质量可接受和与描述相符等事项提供保证，但改变主意的退货通常取决于您自己的政策或电商平台的规则。请清楚写明您的政策并遵守。",
+          },
+          {
+            question: "如何在自己的网站上收款？",
+            answer:
+              "请使用在马来西亚获得适当许可或批准的支付网关。比较费用和结算时间，预备提供企业注册资料和银行详情，并且切勿自己保存客户的银行卡资料。",
+          },
+          {
+            question: "通过 WhatsApp 或社交媒体接单安全吗？",
+            answer:
+              "这是容易起步的方式，但难以扩展，也难以保存记录。请把它当作寻找客户的方式，在发货前确认款项确实已到账，并记录每一张订单。",
+          },
+          {
+            question: "PDPA 适用于小型网店吗？",
+            answer:
+              "一般适用。如果您在商业交易中收集客户的个人数据，就需要隐私声明，只应收集所需的资料，并必须确保数据安全。银行卡资料交由支付网关处理，也不要向没有同意的人发送营销信息。",
+          },
+          {
+            question: "我的网上收入需要课税吗？",
+            answer:
+              "需要，网上收入与其他业务收入一样须课税，所以请保留订单、发票、提款结算单和开支。视您销售的产品和营业额而定，也可能适用销售与服务税和电子发票，请向相关机构确认。",
+          },
+        ],
+      },
+      ms: {
+        title: "Berjual Dalam Talian di Malaysia: Menyediakan Kedai Dalam Talian dengan Betul",
+        excerpt:
+          "Berjual dalam talian membolehkan perniagaan kecil Malaysia menjangkau pelanggan jauh melangkaui jalan di hadapan kedainya, tetapi ia datang dengan asas undang-undang dan praktikalnya sendiri. Panduan ini merangkumi pendaftaran perniagaan, memilih antara pasaran dalam talian dan laman web sendiri, get laluan pembayaran, peraturan perlindungan pengguna untuk penjual dalam talian, pilihan penghantaran, dan pengendalian data pelanggan.",
+        body: `Berjual dalam talian bukan lagi aktiviti yang berasingan daripada menjalankan perniagaan — bagi ramai PKS Malaysia, ia ialah saluran utama. Pembuat kek di rumah di pasaran dalam talian, butik dengan laman web sendiri dan pengilang yang berjual melalui media sosial semuanya menghadapi soalan yang sama: apa yang perlu ada supaya ini menjadi perniagaan yang sah dan bukan projek sampingan yang berisiko? Menyiapkan asas dengan betul lebih awal melindungi anda daripada denda, tuntutan bayaran balik dan pelanggan yang marah kemudian.
+
+Ini ialah maklumat am, bukan nasihat guaman. Peraturan perlindungan pengguna, layanan cukai dan dasar platform berubah, dan ia berbeza mengikut apa yang anda jual, jadi sahkan kedudukan semasa dengan pihak berkuasa berkaitan, seperti Kementerian Perdagangan Dalam Negeri dan Kos Sara Hidup (KPDN) atau SSM, sebelum anda bergantung padanya.
+
+## 1. Daftarkan perniagaan dahulu
+
+Ramai orang bermula dengan menyiarkan produk dan memikirkan pendaftaran kemudian. Lebih baik melakukannya dahulu.
+
+### Mengapa pendaftaran penting
+SSM telah menyatakan bahawa perniagaan dalam talian yang dijalankan untuk keuntungan harus didaftarkan, dan nama perniagaan atau syarikat berdaftar juga yang akan diminta oleh pasaran dalam talian, get laluan pembayaran dan bank. Perniagaan yang tidak berdaftar mungkin sukar membuka akaun bank perniagaan atau mendapat kelulusan get laluan pembayaran.
+
+### Pilih struktur
+Pemilikan tunggal atau perkongsian ialah cara paling murah dan pantas untuk bermula, manakala syarikat sendirian berhad (Sdn Bhd) memisahkan aset peribadi pemilik daripada perniagaan. Panduan kami tentang mendaftarkan perniagaan di Malaysia menerangkan pilihan dan langkah SSM.
+
+### Semak lesen dan permit
+Bergantung pada apa yang anda jual, anda mungkin memerlukan kelulusan tambahan, contohnya untuk makanan, kosmetik, produk kesihatan atau barangan terkawal. Produk yang memerlukan kelulusan secara luar talian juga memerlukannya dalam talian, dan pasaran dalam talian mungkin membuang penyenaraian yang tidak memenuhi peraturan.
+
+## 2. Pilih di mana anda akan berjual
+
+Tentukan di mana anda akan berjual sebelum membelanjakan wang untuk gambar produk dan pengiklanan. Tiga laluan yang lazim juga boleh digabungkan.
+
+### Pasaran dalam talian
+Platform seperti Shopee, Lazada dan TikTok Shop memberi anda trafik sedia ada, pembayaran terbina dan pengendalian pertikaian asas. Pertukarannya ialah komisen dan yuran transaksi yang mengurangkan margin anda, persaingan harga daripada penjual yang serupa, dan peraturan yang boleh diubah oleh platform. Yuran dan dasar berbeza mengikut platform dan kategori, jadi semak terma penjual semasa sebelum anda membuat komitmen.
+
+### Laman web sendiri
+Kedai di platform laman web yang dihoskan memberi anda kawalan ke atas penjenamaan, harga dan data pelanggan, dan tiada komisen pasaran. Pertukarannya ialah anda mesti membawa trafik sendiri, mengendalikan pembayaran dan khidmat pelanggan sendiri, serta menjaga keselamatan sendiri. Bagi perniagaan baharu tanpa penonton, ini boleh perlahan.
+
+### Jualan melalui media sosial
+Berjual melalui Facebook, Instagram atau WhatsApp mudah dimulakan, tetapi sukar diperluas dan sukar menyimpan rekod. Lebih baik ia dianggap sebagai cara mencari pelanggan dan bukan satu-satunya sistem anda untuk menerima pesanan dan bayaran.
+
+### Pendekatan yang munasabah
+Ramai PKS bermula di pasaran dalam talian untuk mendapatkan pesanan dan ulasan, kemudian menambah laman web sendiri untuk pelanggan berulang apabila berkembang. Apa sahaja laluan yang anda pilih, simpan senarai pelanggan dan rekod anda sendiri, bukan hanya milik platform.
+
+## 3. Terima pembayaran dengan selamat
+
+Pelanggan menjangkakan untuk membayar dengan kad, perbankan dalam talian atau e-dompet, dan anda memerlukan cara yang boleh dipercayai untuk menerima wang itu.
+
+### Get laluan pembayaran
+Get laluan pembayaran membolehkan laman web anda menerima perbankan dalam talian, kad dan e-dompet. Gunakan penyedia yang dilesenkan atau diluluskan dengan sewajarnya di Malaysia, bandingkan yuran transaksi dan masa penyelesaian mereka, dan semak dokumen yang mereka perlukan, yang lazimnya termasuk pendaftaran perniagaan dan butiran akaun bank anda.
+
+### Pembayaran pasaran dalam talian
+Di pasaran dalam talian, platform amnya memegang bayaran pembeli dan melepaskannya selepas penghantaran disahkan. Fahami jadual pelepasan dan sebarang tempoh penahanan, kerana ia menjejaskan aliran tunai anda.
+
+### Tunai semasa penghantaran dan pindahan manual
+Tunai semasa penghantaran dan pindahan bank adalah biasa, tetapi membawa risiko bungkusan ditolak, slip bayaran palsu dan pendamaian yang kucar-kacir. Jika anda menggunakannya, sahkan bahawa dana benar-benar telah masuk sebelum menghantar, dan rekodkan setiap pesanan.
+
+### Pisahkan wang perniagaan dan peribadi
+Gunakan akaun perniagaan anda untuk menerima bayaran, supaya pendapatan anda jelas apabila tiba masa menyediakan akaun dan cukai. Panduan kami tentang membuka akaun bank perniagaan menerangkan apa yang perlu disediakan.
+
+## 4. Ketahui peraturan perlindungan pengguna untuk penjual dalam talian
+
+Malaysia mempunyai peraturan khusus untuk peniaga dalam talian di bawah undang-undang perlindungan penggunanya. Ia wujud untuk memastikan pembeli tahu siapa yang mereka berurusan dan apa yang mereka beli.
+
+### Paparkan butiran perniagaan anda
+Peraturan Perlindungan Pengguna (Transaksi Perdagangan Elektronik) menghendaki penjual dalam talian mendedahkan maklumat utama di laman web atau profil pasaran mereka, lazimnya termasuk nama perniagaan, nombor pendaftaran jika berkenaan, butiran hubungan, penerangan barangan atau perkhidmatan, harga penuh termasuk sebarang cukai dan caj penghantaran, kaedah pembayaran yang diterima, terma dan syarat, serta anggaran masa penghantaran. Peraturan ini terpakai kepada penjual di laman web sendiri dan di pasaran dalam talian, dan pengendali pasaran mempunyai tugas mereka sendiri. Keperluan tepatnya telah dipinda dari semasa ke semasa, jadi sahkan perkataan semasa di laman web KPDN.
+
+> Anggaplah penyenaraian produk sebagai kontrak anda dengan pembeli. Apa sahaja yang anda tunjukkan — harga, saiz, warna, stok, masa penghantaran, waranti — itulah yang dijangka anda sampaikan, jadi terangkan dengan tepat dan jangan mengiklankan apa yang tidak dapat anda bekalkan.
+
+### Jelas tentang harga
+Tunjukkan harga penuh, termasuk cukai dan penghantaran, sebelum pembeli membayar. Caj tersembunyi yang muncul semasa pembayaran ialah punca aduan yang lazim.
+
+### Hormati pemulangan dan jaminan
+Akta Perlindungan Pengguna 1999 memberi pengguna jaminan berkanun, termasuk bahawa barangan berkualiti boleh diterima dan sepadan dengan penerangannya. Ini tidak sama dengan hak am untuk memulangkan sesuatu kerana pembeli berubah fikiran, dan dasar pemulangan anda sendiri boleh lebih murah hati daripada undang-undang, tetapi ia tidak boleh menarik balik hak yang diberikan undang-undang. Nyatakan terma pemulangan dan bayaran balik dengan jelas, ikutinya, dan pastikan prosesnya mudah. Pasaran dalam talian juga mempunyai peraturan pemulangan sendiri yang mesti dipatuhi penjual.
+
+### Jangan mengelirukan
+Dakwaan palsu, ulasan palsu, serta gambar atau diskaun yang mengelirukan adalah kesalahan, dan ia merosakkan jenama baharu lebih cepat daripada apa-apa lagi. Terangkan produk dengan jujur dan gunakan gambar anda sendiri sedapat mungkin.
+
+### Penalti dan aduan
+Pelanggaran boleh membawa kepada tindakan penguatkuasaan, dan pembeli boleh mengadu kepada KPDN atau Tribunal Tuntutan Pengguna. Jumlah denda ditetapkan dalam undang-undang dan telah disemak, jadi semak peruntukan semasa dan bukannya bergantung pada angka daripada blog.
+
+## 5. Rancang penghantaran dan pemulangan
+
+Penghantaran ialah tempat perniagaan dalam talian sering menang atau kalah dalam mendapatkan pelanggan berulang.
+
+### Pilih kurier dengan teliti
+Bandingkan penyedia kurier dan logistik tempatan dari segi harga, liputan, kelajuan, penjejakan, insurans dan cara mereka mengendalikan bungkusan hilang atau rosak. Banyak pasaran dalam talian menawarkan penghantaran bersepadu yang mudah, tetapi berbaloi mengetahui kosnya.
+
+### Jujur tentang masa
+Nyatakan masa penghantaran yang realistik, termasuk ke Malaysia Timur, dan kemas kini pelanggan jika berlaku kelewatan. Kebanyakan aduan datang daripada senyap, bukan daripada kelewatan itu sendiri.
+
+### Bungkus untuk perjalanan
+Pembungkusan yang buruk menyebabkan anda kehilangan barangan ganti dan ulasan. Bagi barangan mudah pecah atau mudah rosak, uji pembungkusan anda sebelum meluaskan skala.
+
+### Tentukan siapa membayar pemulangan
+Jelaskan siapa menanggung penghantaran pemulangan bagi pemulangan barang rosak, salah atau kerana berubah fikiran, dan masukkannya dalam dasar anda sebelum pesanan pertama dan bukan selepas pertikaian pertama.
+
+### Import dan jualan merentas sempadan
+Jika anda mengimport barangan untuk dijual semula atau berjual kepada pelanggan di luar negara, peraturan tambahan tentang kastam, piawaian produk dan cukai mungkin terpakai. Semak perkara ini dengan Jabatan Kastam Diraja Malaysia sebelum anda membuat komitmen terhadap stok.
+
+## 6. Kendalikan data pelanggan dan cukai dengan betul
+
+### Data peribadi
+Setiap pesanan memberi anda nama, alamat, nombor telefon dan kadangkala butiran pembayaran. Akta Perlindungan Data Peribadi 2010 terpakai kepada transaksi komersial, jadi anda memerlukan notis privasi, hanya perlu mengumpul apa yang diperlukan, dan mesti memastikannya selamat. Panduan kami tentang pematuhan PDPA menerangkan asasnya. Jangan sekali-kali menyimpan butiran kad sendiri; biarkan get laluan pembayaran mengendalikannya.
+
+### Mesej pemasaran
+Jangan hantar mesej promosi kepada orang yang tidak bersetuju untuk menerimanya, dan benarkan pelanggan menarik diri dengan mudah.
+
+### Cukai dan rekod
+Pendapatan dalam talian boleh dicukai seperti pendapatan perniagaan lain, jadi simpan pesanan, invois, penyata pembayaran dan perbelanjaan. Bergantung pada apa yang anda jual dan perolehan anda, cukai jualan dan perkhidmatan mungkin terpakai, dan peraturan e-Invois mungkin menjangkau perniagaan anda apabila perolehan meningkat. Sahkan kedua-duanya dengan pihak berkuasa berkaitan dan lihat panduan kami tentang SST dan e-Invois.
+
+Apabila kedai anda beroperasi, [penyenaraian perniagaan percuma](/ms/signup) membantu pelanggan tempatan dan rakan niaga menemui dan mengesahkan anda di luar pasaran dalam talian, dan anda boleh [menyemak imbas direktori](/ms) untuk kurier, pembekal pembungkusan, jurugambar dan akauntan tempatan yang bekerja dengan penjual dalam talian.
+
+## Kesilapan lazim PKS Malaysia semasa berjual dalam talian
+
+- **Berjual tanpa mendaftar.** Perniagaan yang tidak berdaftar sukar mendapat get laluan pembayaran atau akaun perniagaan, dan mendedahkan pemilik kepada risiko yang boleh dielakkan.
+- **Menyembunyikan harga penuh atau butiran perniagaan.** Maklumat hubungan yang tiada dan caj penghantaran mengejut melanggar peraturan pendedahan dan menghilangkan kepercayaan pelanggan.
+- **Bergantung pada satu platform untuk segala-galanya.** Jika satu-satunya senarai pelanggan anda berada di pasaran dalam talian, perubahan dasar atau akaun yang digantung boleh menghentikan pendapatan anda dalam sekelip mata.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Daftarkan perniagaan dengan SSM, buka akaun bank perniagaan, dan semak sama ada produk anda memerlukan sebarang lesen atau kelulusan.
+- **Seterusnya:** Pilih saluran jualan pertama anda, sediakan kaedah pembayaran yang anda percayai, dan tulis penerangan produk serta terma pemulangan yang jelas.
+- **Kemudian:** Uji proses penghantaran anda dengan beberapa pesanan, dan sediakan rekod mudah pesanan, pembayaran dan butiran pelanggan.
+- **Setiap bulan:** Semak yuran, ulasan, pemulangan dan amalan data pelanggan anda, dan bina senarai pelanggan anda sendiri.
+
+Berjual dalam talian paling berkesan apabila asasnya membosankan: perniagaan berdaftar, penyenaraian yang jujur, pembayaran yang boleh dipercayai, dan proses penghantaran yang dipercayai pelanggan anda.`,
+        faqs: [
+          {
+            question: "Adakah saya perlu mendaftarkan perniagaan untuk berjual dalam talian di Malaysia?",
+            answer:
+              "SSM telah menyatakan bahawa perniagaan dalam talian yang dijalankan untuk keuntungan harus didaftarkan, dan pasaran dalam talian, get laluan pembayaran dan bank lazimnya meminta pendaftaran perniagaan. Mendaftar dahulu juga memudahkan pembukaan akaun bank perniagaan.",
+          },
+          {
+            question: "Patutkah saya berjual di pasaran dalam talian atau membina laman web sendiri?",
+            answer:
+              "Pasaran dalam talian memberi trafik dan pembayaran sedia ada tetapi mengenakan yuran dan menghadkan kawalan anda, manakala laman web sendiri memberi kawalan dan tiada komisen tetapi memerlukan trafik sendiri. Ramai PKS bermula di pasaran dalam talian dan menambah laman sendiri apabila berkembang.",
+          },
+          {
+            question: "Apakah butiran perniagaan yang mesti dipaparkan oleh penjual dalam talian?",
+            answer:
+              "Peraturan Perlindungan Pengguna (Transaksi Perdagangan Elektronik) lazimnya menghendaki butiran seperti nama perniagaan, nombor pendaftaran jika berkenaan, maklumat hubungan, penerangan barangan, harga penuh termasuk cukai dan penghantaran, kaedah pembayaran, terma dan anggaran masa penghantaran. Sahkan keperluan semasa di laman web KPDN.",
+          },
+          {
+            question: "Adakah saya mesti menerima pemulangan jika pembeli sekadar berubah fikiran?",
+            answer:
+              "Bukan sebagai hak undang-undang am. Akta Perlindungan Pengguna 1999 memberi jaminan tentang perkara seperti kualiti boleh diterima dan sepadan dengan penerangan, tetapi pemulangan kerana berubah fikiran biasanya bergantung pada dasar anda sendiri atau peraturan pasaran dalam talian. Nyatakan dasar anda dengan jelas dan ikutinya.",
+          },
+          {
+            question: "Bagaimanakah saya menerima pembayaran di laman web sendiri?",
+            answer:
+              "Gunakan get laluan pembayaran yang dilesenkan atau diluluskan dengan sewajarnya di Malaysia. Bandingkan yuran dan masa penyelesaian, jangkakan perlu mengemukakan pendaftaran perniagaan dan butiran bank, dan jangan sekali-kali menyimpan butiran kad pelanggan sendiri.",
+          },
+          {
+            question: "Adakah selamat menerima pesanan melalui WhatsApp atau media sosial?",
+            answer:
+              "Ia cara mudah untuk bermula, tetapi sukar diperluas dan sukar menyimpan rekod. Anggaplah ia cara mencari pelanggan, sahkan bahawa bayaran benar-benar telah masuk sebelum menghantar, dan simpan rekod setiap pesanan.",
+          },
+          {
+            question: "Adakah PDPA terpakai kepada kedai dalam talian kecil?",
+            answer:
+              "Amnya ya. Jika anda mengumpul data peribadi pelanggan dalam transaksi komersial, anda memerlukan notis privasi, hanya patut mengumpul apa yang diperlukan, dan mesti memastikan data itu selamat. Biarkan get laluan pembayaran mengendalikan butiran kad, dan jangan hantar mesej pemasaran kepada orang yang tidak bersetuju.",
+          },
+          {
+            question: "Adakah pendapatan dalam talian saya akan dicukai?",
+            answer:
+              "Ya, pendapatan dalam talian boleh dicukai seperti pendapatan perniagaan lain, jadi simpan pesanan, invois, penyata pembayaran dan perbelanjaan. Cukai jualan dan perkhidmatan serta e-Invois juga mungkin terpakai bergantung pada apa yang anda jual dan perolehan anda, jadi sahkan dengan pihak berkuasa berkaitan.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "renting-commercial-premises-in-malaysia",
+    title: "Renting Commercial Premises in Malaysia: Tenancy Agreements, Deposits, and Stamp Duty",
+    seoTitle: "Renting Commercial Premises in Malaysia: Lease Guide",
+    seoDescription:
+      "What Malaysian SMEs should check before signing a shop or office lease: key terms, deposits, stamp duty, fit-out and signage approvals, and exit options.",
+    coverImage: {
+      file: "renting-commercial-premises-in-malaysia-cover.webp",
+      mimeType: "image/webp",
+      alt: "Close-up of a person signing a contract with a pen at an office desk",
+      altTranslations: {
+        zh: "办公桌前一个人手持钢笔签署合约的特写",
+        ms: "Gambar dekat seseorang menandatangani kontrak dengan pen di meja pejabat",
+      },
+    },
+    contentImages: {
+      "lease-review": {
+        file: "renting-commercial-premises-in-malaysia-lease-review.webp",
+        mimeType: "image/webp",
+        alt: "A man and a woman reading through printed documents together",
+        altTranslations: {
+          zh: "一男一女一起查阅打印文件",
+          ms: "Seorang lelaki dan seorang wanita membaca dokumen bercetak bersama-sama",
+        },
+        after: "Read the draft agreement line by line before you hand over a single ringgit beyond the booking deposit.",
+        afterTranslations: {
+          zh: "在付出订金以外的任何一分钱之前，请逐行细读协议草稿。",
+          ms: "Baca draf perjanjian baris demi baris sebelum anda menyerahkan satu ringgit pun selain deposit tempahan.",
+        },
+      },
+    },
+    excerpt:
+      "Signing a shop or office lease is one of the biggest commitments a small business makes, and it is usually drafted in the landlord's favour. This guide walks through what to check before you sign in Malaysia — the key terms, the usual deposits, stamp duty, fit-out and signage approvals, and how to negotiate or exit a lease without being caught out.",
+    body: `For most small businesses, rent is the largest fixed cost after payroll, and the lease behind it can bind you for three years or more. Unlike a residential tenancy, a commercial lease in Malaysia is largely a matter of what the two parties write down, so the agreement you sign matters far more than the handshake that preceded it. Owners who rush in because the location is perfect often discover the costs and restrictions only after they have spent money on renovation.
+
+This is general information, not legal advice. Stamp duty rates, tax treatment, and local council rules change, and they differ by state and by property, so confirm the current position with the relevant authority or a Malaysian lawyer before you commit.
+
+## 1. Check the premises before you negotiate
+
+A good lease on the wrong premises is still a bad deal. Before you talk rent, confirm the basics.
+
+### Confirm who you are dealing with
+Ask for proof that the person offering the space actually owns it or is authorised to let it. You can ask for a copy of the title and, for a more certain answer, have a lawyer do an official land search. If the person is a tenant offering a sub-letting, check that their own lease allows it.
+
+### Check that your business is allowed there
+A unit may be approved for office use but not for a restaurant, or for retail but not for light manufacturing. Check the permitted use with the local council (PBT), and confirm whether the building has the right fire safety approvals and enough parking, water, and electrical capacity for what you plan to do.
+
+### Visit at different times
+Look at the premises on a weekday morning, a busy evening, and a weekend. Foot traffic, noise, parking, flooding, and neighbouring businesses all look different once you see them at the hours you will actually trade.
+
+## 2. Understand the main terms of a commercial tenancy agreement
+
+Read the draft agreement line by line before you hand over a single ringgit beyond the booking deposit. These are the clauses that most often decide whether the lease works for you.
+
+### Rent and what it includes
+State the monthly rent, the due date, and the payment method. Ask whether service charges, sinking fund, air-conditioning charges, or property assessment and quit rent are included or billed separately, since these can add noticeably to the real cost.
+
+### The term and the renewal option
+Commercial leases commonly run for three years, sometimes with an option to renew for a further term. Malaysia has no general law that gives a commercial tenant an automatic right to renew, so if you want to stay, the option must be written into the agreement, together with how it is exercised and by when.
+
+### Rent review
+Look for how rent changes over the term and on renewal. A fixed step-up, such as a set percentage at each renewal, is predictable. "Rent to be reviewed at the landlord's discretion" is not, so ask for a cap or a formula.
+
+### Use, alterations, and assignment
+Check that the permitted use covers your actual business, whether you may put up signage, and whether you may assign or sub-let if you ever need to leave early. Landlords often prohibit all three without consent.
+
+### Repairs, insurance, and reinstatement
+The agreement should say who fixes what. Pay close attention to the reinstatement clause, which can require you to strip out your fit-out and restore the premises to its original condition when the lease ends. That can be a significant cost, so budget for it at the start.
+
+### Default and termination
+See what happens if rent is late and how many days you get to fix a problem. Many agreements let the landlord terminate and re-enter after a short period of arrears, so a cash-flow dip can have severe consequences.
+
+> Whatever the landlord or agent promises verbally, treat it as non-existent unless it is in the signed agreement. If a free rent period, a refurbishment by the landlord, or an agreed rent cap matters to you, get it written into the lease or a signed side letter.
+
+## 3. Know the usual deposits and upfront costs
+
+Landlords generally ask for more upfront than the first month's rent, and the structure is usually negotiable. The amounts below are common practice rather than a legal rule, so confirm the specifics in your own offer.
+
+### Booking deposit
+A letter of offer or letter of intent often comes with a booking deposit to take the unit off the market. Check whether it is refundable if the deal falls through, and what the letter binds you to.
+
+### Security deposit
+This is typically the equivalent of around two months' rent, held against unpaid rent or damage and refundable at the end of the lease subject to deductions.
+
+### Utility and other deposits
+A further deposit, often around half to one month's rent, is common for water and electricity, and sometimes for access cards or similar. Utility providers may also ask for their own deposits.
+
+### Advance rent
+The first month's rent is usually paid on signing. Some landlords ask for more, and it is worth negotiating, especially if you are a start-up with limited cash.
+
+### Ask how deposits are returned
+Make sure the agreement states when and how deposits are refunded after you move out, and under what conditions the landlord can deduct. Disputes about deposits are among the most common between tenants and landlords.
+
+## 4. Stamp duty on the agreement
+
+A tenancy agreement generally has to be stamped, and an unstamped agreement can be difficult to rely on as evidence in court. Duty is charged on the annual rent and depends on how long the lease runs. The commonly cited rates are, per RM250 or part of it in annual rent, about RM1 for a term up to one year, RM3 for more than one and up to three years, RM5 for more than three and up to five years, and RM7 for terms longer than five years. Rates, exemptions, and the method of calculation have been updated from time to time, so check the current figures before you rely on any of them.
+
+Stamping is done online through the Inland Revenue Board's (LHDN) e-Duti Setem system, and a stamp-duty deadline applies, commonly cited as 30 days from signing, with penalties for late stamping. Confirm the deadline and penalty rates on the official LHDN page. Who pays the duty is a matter of agreement, so settle it before you sign rather than after.
+
+### Leases over three years may need registration
+Under the National Land Code, a lease of more than three years generally has to be registered against the land title to protect the tenant's interest, which adds a separate cost and process. Ask your lawyer whether your lease needs it.
+
+### Check the tax treatment of the rent
+Service tax has applied to commercial rental and leasing services since 1 July 2025, with registration depending on the landlord's turnover, and the rate and thresholds for small businesses have been reported to have changed since. Ask the landlord whether the quoted rent includes any tax, and confirm the current position with the Royal Malaysian Customs Department.
+
+## 5. Get your approvals in order before fit-out
+
+Signing the lease does not give you the right to open. Many of the approvals you need depend on having the premises.
+
+### Business licence
+Most businesses need a licence from the local council for the specific premises, and some need extra approvals, such as health or fire clearance for food outlets. Our guide on business licences and permits covers how this works. Do not renovate before you know the licence is achievable at that address.
+
+### Renovation and fit-out approvals
+Structural changes, partitions, signage, and signboards may need approval from the landlord, the building management, and sometimes the council. A fit-out contractor should know the local requirements, but the responsibility to check is yours.
+
+### Signage
+Signboards are usually regulated by the council, which often requires an advertisement licence and sets size and placement rules. Confirm what is allowed before you order a sign.
+
+### Time your rent-free period
+Many landlords offer a rent-free fit-out period of a few weeks to a few months. Try to negotiate one, and make sure it is long enough for approvals and renovation, so you are not paying rent on a shop that cannot open.
+
+## 6. Negotiate smartly and plan your exit
+
+Most terms are more flexible than a landlord's first draft suggests, particularly if the unit has been empty for a while or you are offering a longer commitment.
+
+### What to negotiate
+Aim for a rent-free fit-out period, a cap on increases, a clear renewal option, a smaller security deposit, and reasonable reinstatement obligations. A landlord who will not move on anything is telling you something about the relationship.
+
+### Consider a break clause
+A clause that lets you end the lease early after a set period, with notice and perhaps a penalty, protects you if the business does not take off. Landlords often resist it, but even a break after the first year or two is valuable.
+
+### Be careful with personal guarantees
+Landlords of small companies often ask the director to guarantee the lease personally. That means your own assets are at risk if the company cannot pay, so understand exactly what you are signing and for how long.
+
+### Know how you can leave
+Check the notice period, the rules on assignment or sub-letting, and what you owe if you leave early. If the business fails, a sub-let or assignment, if allowed, may be the cheapest way out.
+
+### Use a lawyer for the final draft
+A lawyer's fee for reviewing a commercial lease is small compared with the rent you commit to. If the landlord's lawyer prepares the draft, remember that they act for the landlord, not you.
+
+If you are still comparing locations or looking for a trade partner such as a renovation contractor, [creating a free business listing](/en/signup) helps customers and suppliers find you at your new address, and you can [browse the directory](/en) for local lawyers, contractors, and business advisers.
+
+## Common mistakes Malaysian SMEs make when renting premises
+
+- **Signing before checking the approvals.** A lease on premises that cannot get your licence or permitted use leaves you paying rent on a business that cannot open.
+- **Relying on verbal promises.** Free rent periods, repairs, and rent caps that are not in the signed agreement are very hard to enforce later.
+- **Forgetting the reinstatement bill.** Stripping out a fit-out at the end of the lease can cost real money, so negotiate it and budget for it from day one.
+
+## Where to start
+
+- **This week:** List your must-haves for a location — permitted use, size, parking, foot traffic — and the maximum all-in monthly cost you can afford.
+- **Next:** For any shortlisted unit, check ownership, permitted use, and what the monthly figure really includes.
+- **Then:** Negotiate the key terms, get the final draft reviewed by a lawyer, and settle who pays stamp duty before signing.
+- **After signing:** Stamp the agreement on time, secure your licences and approvals, and diarise the renewal and notice dates.
+
+A good lease is one you understand completely, can afford comfortably, and can leave without disaster if things change.`,
+    faqs: [
+      {
+        question: "Does a commercial tenancy agreement in Malaysia have to be stamped?",
+        answer:
+          "Generally yes. Tenancy agreements are subject to stamp duty, and an unstamped agreement can be hard to rely on in court. Stamping is done online through LHDN's e-Duti Setem system, so confirm the current deadline and penalties on the official page.",
+      },
+      {
+        question: "How is stamp duty on a lease calculated?",
+        answer:
+          "It is based on the annual rent and the length of the term. The commonly cited rates are about RM1, RM3, RM5, or RM7 per RM250 (or part of it) of annual rent, depending on whether the term is up to one year, up to three, up to five, or longer. Rates and rules change, so check the current figures with LHDN.",
+      },
+      {
+        question: "How much deposit do landlords usually ask for?",
+        answer:
+          "Common practice is a security deposit of around two months' rent, a utility deposit of around half to one month, plus the first month's rent in advance. These are customs rather than legal rules, and they are often negotiable, so check your own offer letter.",
+      },
+      {
+        question: "Does a commercial tenant have a right to renew the lease?",
+        answer:
+          "Not automatically. Malaysia has no general law that gives a commercial tenant a right to renew, so if you want that option it needs to be written into the agreement, including how and by when you must exercise it.",
+      },
+      {
+        question: "Do I need a business licence before I start renovating?",
+        answer:
+          "You should check first. Most businesses need a licence from the local council for the specific premises, and some need extra approvals. Confirm that the use and address can be licensed before you spend money on a fit-out.",
+      },
+      {
+        question: "What is a reinstatement clause?",
+        answer:
+          "It requires you to remove your fit-out and return the premises to its original condition when the lease ends. This can be a significant cost, so read it carefully, try to limit it, and budget for it from the start.",
+      },
+      {
+        question: "Can I leave a commercial lease early?",
+        answer:
+          "Only as far as the agreement allows. Check for a break clause, the notice period, and whether you can assign or sub-let. Leaving without a right to do so can leave you owing the remaining rent, so negotiate exit options before signing.",
+      },
+      {
+        question: "Should I get a lawyer to review a commercial lease?",
+        answer:
+          "It is strongly advisable. The cost of a review is small compared with the rent and obligations you commit to. If the landlord's lawyer drafted the agreement, remember that they act for the landlord and not for you.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "在马来西亚租用商业场所：租赁协议、押金与印花税",
+        excerpt:
+          "签订店铺或办公室租约，是小企业最重大的承诺之一，而租约通常是以房东的利益为出发点起草的。本指南带您了解在马来西亚签约前应检查的事项——主要条款、常见的押金、印花税、装修与招牌的审批，以及如何谈判或退出租约而不被打个措手不及。",
+        body: `对大多数小企业来说，租金是仅次于薪资的最大固定开支，而背后的租约可能把您绑上三年或更长时间。与住宅租赁不同，马来西亚的商业租约在很大程度上取决于双方写下了什么，所以您签署的协议，远比之前的口头约定重要。有些企业主因为地点理想而匆忙签约，直到花了装修费用之后，才发现各种成本与限制。
+
+以下仅为一般资讯，并非法律意见。印花税率、税务处理和地方政府规定会变动，也因州属和物业而异，所以在作出承诺之前，请向相关机构或马来西亚律师确认最新情况。
+
+## 1. 谈判之前先检查场所
+
+在错误的场所签下再好的租约，仍然是一笔糟糕的交易。谈租金之前，先确认基本事项。
+
+### 确认您的交易对象
+请对方出示证明，说明提供场地的人确实拥有该物业或获授权出租。您可以要求提供地契副本，若想更有把握，可请律师做正式的土地查册。如果对方是转租的租户，请确认其自身的租约是否允许转租。
+
+### 确认您的业务可在该处经营
+某个单位可能获准作办公室用途，却不能开餐馆；或获准作零售，却不能做轻型制造。请向地方政府（PBT）查询许可用途，并确认大厦具备适当的消防批准，以及足够的停车位、水和电力容量来配合您的计划。
+
+### 在不同时段实地查看
+请在平日早上、繁忙的傍晚和周末各去看一次。客流量、噪音、停车、淹水以及邻近商家，在您实际营业的时段看起来都会不一样。
+
+## 2. 了解商业租赁协议的主要条款
+
+在付出订金以外的任何一分钱之前，请逐行细读协议草稿。以下这些条款，最常决定租约对您是否可行。
+
+### 租金及其包含的项目
+写明每月租金、到期日和付款方式。请询问服务费、偿债基金、冷气费，或地税与地租是否包含在内，还是另外收费，因为这些可能明显增加实际成本。
+
+### 租期与续约选择权
+商业租约通常为期三年，有时附带再续一期的选择权。马来西亚没有一般性法律赋予商业租户自动续约的权利，所以如果您想继续租下去，就必须把这项选择权写入协议，并写明如何行使以及行使的期限。
+
+### 租金检讨
+留意租期内以及续约时租金如何调整。固定的递增幅度，例如每次续约增加某个百分比，是可预测的。“租金由房东酌情检讨”则不然，所以请争取设定上限或计算公式。
+
+### 用途、改建与转让
+检查许可用途是否涵盖您的实际业务，您是否可以安装招牌，以及万一需要提早离开时是否可以转让或转租。房东往往在未经同意的情况下禁止这三项。
+
+### 维修、保险与还原
+协议应写明谁负责修什么。请特别留意还原条款，它可能要求您在租约结束时拆除装修，并把场所恢复原状。这可能是一笔不小的开支，所以一开始就要编入预算。
+
+### 违约与终止
+了解租金逾期会怎样，以及您有多少天时间补救。许多协议允许房东在短期拖欠后终止租约并收回场所，因此现金流一时吃紧，可能带来严重后果。
+
+> 无论房东或中介口头上承诺什么，除非写进已签署的协议，否则一概当作不存在。如果免租期、房东负责翻新或议定的租金上限对您很重要，请把它们写进租约或一份签署的附函。
+
+## 3. 了解常见的押金与前期费用
+
+房东通常要求的前期费用不只是第一个月的租金，而且结构通常可以谈判。以下金额属于常见做法而非法律规定，所以请在您自己的租赁要约中确认具体细节。
+
+### 订金
+租赁要约函或意向书通常附带一笔订金，用来把该单位保留下来。请确认交易不成时订金是否可退，以及这封函件对您有什么约束。
+
+### 保证金
+通常相当于约两个月的租金，用于抵扣未付租金或损坏，并在租约结束时扣除相关款项后退还。
+
+### 水电及其他押金
+水电通常另有一笔押金，常见为半个月至一个月租金，有时也包括门禁卡等。公用事业机构也可能要求自己的押金。
+
+### 预付租金
+第一个月的租金通常在签约时支付。有些房东要求更多，值得争取谈判，尤其是现金有限的初创企业。
+
+### 问清楚押金如何退还
+确保协议写明您搬走后押金何时、如何退还，以及房东在什么条件下可以扣除。押金纠纷是租户与房东之间最常见的争议之一。
+
+## 4. 协议的印花税
+
+租赁协议一般必须盖印花税，未盖印的协议在法庭上可能难以作为证据。税款按年租金计算，并视租期长短而定。常见的税率是，每 RM250（不足也按一档计）年租金，租期一年或以下约 RM1，超过一年至三年约 RM3，超过三年至五年约 RM5，超过五年则约 RM7。税率、豁免和计算方法时有更新，所以在依赖任何数字之前，请先查核最新资料。
+
+盖印通过内陆税收局（LHDN）的 e-Duti Setem 系统在线办理，并设有盖印期限，一般引述为签约后 30 天，逾期盖印会被罚款。请在 LHDN 官方页面确认期限和罚款标准。谁来付印花税由双方协议，所以请在签约前而不是之后谈妥。
+
+### 超过三年的租约可能需要注册
+根据《国家土地法典》，超过三年的租约一般必须在地契上注册，以保障租户的权益，这会增加另一项费用和手续。请向您的律师询问您的租约是否需要注册。
+
+### 检查租金的税务处理
+自 2025 年 7 月 1 日起，商业租赁服务须征收服务税，是否须注册取决于房东的营业额，据报小企业适用的税率和门槛此后有所调整。请询问房东所报租金是否含税，并向皇家马来西亚关税局确认最新情况。
+
+## 5. 装修前先办妥各项批准
+
+签了租约并不等于您可以开业。您需要的许多批准，都取决于您已有该场所。
+
+### 营业执照
+大多数企业需要就特定场所向地方政府申请执照，有些还需要额外批准，例如食品店须取得卫生或消防许可。我们关于营业执照与许可证的指南说明了运作方式。在确定该地址可以取得执照之前，请不要动工装修。
+
+### 装修与翻修批准
+结构改动、隔间、招牌和广告牌，可能需要房东、大厦管理处，有时还有地方政府的批准。装修承包商应该了解当地要求，但查核的责任在您。
+
+### 招牌
+招牌通常受地方政府管制，往往需要广告执照，并规定尺寸和位置。订做招牌之前，请先确认什么是允许的。
+
+### 争取免租期
+许多房东提供几周至几个月的免租装修期。请尽量争取，并确保长度足够完成批准和装修，这样您就不必为一间无法开业的店铺付租金。
+
+## 6. 聪明地谈判并规划退出
+
+大多数条款比房东的第一份草稿所显示的更有弹性，尤其是单位已空置一段时间，或您愿意承诺更长租期的时候。
+
+### 可以谈判什么
+争取免租装修期、加租上限、明确的续约选择权、较少的保证金，以及合理的还原责任。房东若什么都不肯让步，这本身就说明了你们之间的关系。
+
+### 考虑提前终止条款
+允许您在一定期限后提前结束租约（须通知，或许附带罚款）的条款，可在生意不如预期时保护您。房东往往抵制，但即使是在第一或第二年后可终止，也很有价值。
+
+### 小心个人担保
+小公司的房东常要求董事以个人名义为租约作担保。这意味着公司无力支付时，您自己的资产也会面临风险，所以务必清楚您签的是什么，以及担保多久。
+
+### 清楚怎样才能离开
+检查通知期、转让或转租的规定，以及提前离开须支付什么。如果生意失败，转租或转让（如果允许）可能是成本最低的出路。
+
+### 最终草稿请律师审阅
+请律师审阅商业租约的费用，与您承诺的租金相比微不足道。如果草稿由房东的律师起草，请记住他们代表的是房东，而不是您。
+
+如果您还在比较地点，或在寻找装修承包商等合作伙伴，[创建免费的企业列表](/zh/signup)可以帮助客户和供应商在您的新地址找到您，您也可以[浏览名录](/zh)寻找本地的律师、承包商和企业顾问。
+
+## 马来西亚中小企业租用场所时常犯的错误
+
+- **在核实批准之前就签约。** 如果租下的场所无法取得您的执照或许可用途，您就得为一间无法开业的店付租金。
+- **依赖口头承诺。** 没有写进已签协议的免租期、维修和租金上限，日后很难执行。
+- **忘记还原费用。** 租约结束时拆除装修可能花费不菲，所以请从第一天起就谈判这一点并编入预算。
+
+## 从哪里开始
+
+- **本周：**列出您对地点的必备条件——许可用途、面积、停车、客流——以及您能负担的每月总成本上限。
+- **接着：**对入围的单位，核实业主身份、许可用途，以及每月数字实际包含什么。
+- **然后：**谈判关键条款，请律师审阅最终草稿，并在签约前谈妥谁来付印花税。
+- **签约后：**按时缴付印花税，办妥执照和批准，并把续约和通知日期记入日程。
+
+好的租约，是您完全看懂、负担得起，并且在情况变化时能够不致酿成灾难地离开的租约。`,
+        faqs: [
+          {
+            question: "马来西亚的商业租赁协议必须缴付印花税吗？",
+            answer:
+              "一般需要。租赁协议须缴付印花税，未盖印的协议在法庭上可能难以依赖。盖印通过 LHDN 的 e-Duti Setem 系统在线办理，请在官方页面确认最新的期限和罚款。",
+          },
+          {
+            question: "租约的印花税如何计算？",
+            answer:
+              "按年租金和租期长短计算。常见的税率是每 RM250（不足也按一档计）年租金约 RM1、RM3、RM5 或 RM7，视租期为一年以内、三年以内、五年以内或更长而定。税率和规定会变动，请向 LHDN 查核最新数字。",
+          },
+          {
+            question: "房东通常要求多少押金？",
+            answer:
+              "常见做法是约两个月租金的保证金、约半个月至一个月的水电押金，另加预付第一个月租金。这些是惯例而非法律规定，且往往可以谈判，请查看您自己的租赁要约函。",
+          },
+          {
+            question: "商业租户有权续约吗？",
+            answer:
+              "并非自动享有。马来西亚没有一般性法律赋予商业租户续约权利，所以如果您想要这项选择权，就必须写进协议，包括您必须如何以及在何时之前行使。",
+          },
+          {
+            question: "开始装修之前需要先有营业执照吗？",
+            answer:
+              "您应该先查清楚。大多数企业需要就特定场所向地方政府申请执照，有些还需要额外批准。在花钱装修之前，请确认该用途和地址可以获发执照。",
+          },
+          {
+            question: "什么是还原条款？",
+            answer:
+              "它要求您在租约结束时拆除装修，并把场所恢复原状。这可能是一笔不小的开支，所以请仔细阅读、尽量设限，并从一开始就编入预算。",
+          },
+          {
+            question: "我可以提前结束商业租约吗？",
+            answer:
+              "只能在协议允许的范围内。请查看是否有提前终止条款、通知期，以及是否可以转让或转租。在没有权利的情况下离开，可能要付清剩余的租金，所以请在签约前谈好退出方式。",
+          },
+          {
+            question: "应该请律师审阅商业租约吗？",
+            answer:
+              "强烈建议。审阅费用与您承诺的租金和义务相比微不足道。如果协议由房东的律师起草，请记住他们代表的是房东，而不是您。",
+          },
+        ],
+      },
+      ms: {
+        title: "Menyewa Premis Komersial di Malaysia: Perjanjian Penyewaan, Deposit dan Duti Setem",
+        excerpt:
+          "Menandatangani sewa kedai atau pejabat ialah salah satu komitmen terbesar yang dibuat oleh perniagaan kecil, dan ia biasanya digubal untuk memihak tuan tanah. Panduan ini membincangkan perkara yang perlu disemak sebelum anda menandatangani di Malaysia — terma utama, deposit lazim, duti setem, kelulusan pengubahsuaian dan papan tanda, serta cara berunding atau keluar daripada sewa tanpa tersepit.",
+        body: `Bagi kebanyakan perniagaan kecil, sewa ialah kos tetap terbesar selepas gaji, dan perjanjian sewa di sebaliknya boleh mengikat anda selama tiga tahun atau lebih. Berbeza dengan penyewaan kediaman, sewa komersial di Malaysia sebahagian besarnya bergantung pada apa yang ditulis oleh kedua-dua pihak, maka perjanjian yang anda tandatangani jauh lebih penting daripada janji lisan sebelumnya. Pemilik yang tergesa-gesa kerana lokasinya sempurna sering mendapati kos dan sekatan hanya selepas mereka membelanjakan wang untuk ubah suai.
+
+Ini ialah maklumat am, bukan nasihat guaman. Kadar duti setem, layanan cukai dan peraturan pihak berkuasa tempatan berubah, dan ia berbeza mengikut negeri dan hartanah, jadi sahkan kedudukan semasa dengan pihak berkuasa berkaitan atau peguam Malaysia sebelum anda membuat komitmen.
+
+## 1. Semak premis sebelum berunding
+
+Sewa yang baik pada premis yang salah tetap satu perjanjian yang buruk. Sebelum membincangkan sewa, sahkan perkara asas.
+
+### Sahkan siapa yang anda berurusan
+Minta bukti bahawa orang yang menawarkan ruang itu benar-benar memilikinya atau diberi kuasa untuk menyewakannya. Anda boleh meminta salinan hak milik dan, untuk jawapan yang lebih pasti, minta peguam membuat carian tanah rasmi. Jika orang itu seorang penyewa yang menawarkan penyewaan semula, semak bahawa sewa mereka sendiri membenarkannya.
+
+### Semak bahawa perniagaan anda dibenarkan di situ
+Sesebuah unit mungkin diluluskan untuk kegunaan pejabat tetapi bukan untuk restoran, atau untuk runcit tetapi bukan untuk pembuatan ringan. Semak kegunaan yang dibenarkan dengan pihak berkuasa tempatan (PBT), dan sahkan sama ada bangunan itu mempunyai kelulusan keselamatan kebakaran yang betul serta mencukupi tempat letak kereta, air dan kapasiti elektrik untuk apa yang anda rancang.
+
+### Lawat pada waktu berbeza
+Lihat premis pada pagi hari bekerja, petang yang sibuk dan hujung minggu. Aliran pengunjung, bunyi bising, tempat letak kereta, banjir dan perniagaan jiran semuanya kelihatan berbeza apabila dilihat pada waktu anda sebenarnya berniaga.
+
+## 2. Fahami terma utama perjanjian penyewaan komersial
+
+Baca draf perjanjian baris demi baris sebelum anda menyerahkan satu ringgit pun selain deposit tempahan. Inilah klausa yang paling kerap menentukan sama ada sewa itu sesuai untuk anda.
+
+### Sewa dan apa yang termasuk
+Nyatakan sewa bulanan, tarikh matang dan kaedah bayaran. Tanya sama ada caj perkhidmatan, dana pembayar hutang, caj penyaman udara, atau cukai taksiran dan cukai tanah termasuk atau dibilkan berasingan, kerana ini boleh menambah kos sebenar dengan ketara.
+
+### Tempoh dan pilihan pembaharuan
+Sewa komersial lazimnya berjalan selama tiga tahun, kadangkala dengan pilihan untuk memperbaharui bagi tempoh seterusnya. Malaysia tidak mempunyai undang-undang am yang memberi penyewa komersial hak automatik untuk memperbaharui, jadi jika anda mahu terus kekal, pilihan itu mesti ditulis dalam perjanjian, bersama cara dan tarikh akhir untuk menggunakannya.
+
+### Semakan sewa
+Lihat bagaimana sewa berubah sepanjang tempoh dan semasa pembaharuan. Kenaikan tetap, seperti peratusan tertentu pada setiap pembaharuan, boleh diramal. "Sewa akan disemak mengikut budi bicara tuan tanah" tidak boleh, jadi minta had atau formula.
+
+### Kegunaan, pengubahan dan penyerahan hak
+Semak bahawa kegunaan yang dibenarkan meliputi perniagaan sebenar anda, sama ada anda boleh memasang papan tanda, dan sama ada anda boleh menyerahkan hak atau menyewakan semula jika anda perlu keluar lebih awal. Tuan tanah sering melarang ketiga-tiganya tanpa persetujuan.
+
+### Pembaikan, insurans dan pemulihan
+Perjanjian harus menyatakan siapa membaiki apa. Beri perhatian rapi kepada klausa pemulihan, yang boleh menghendaki anda mencabut ubah suai dan memulihkan premis kepada keadaan asal apabila sewa tamat. Ini boleh menjadi kos yang besar, jadi peruntukkan bajet untuknya sejak awal.
+
+### Keingkaran dan penamatan
+Lihat apa yang berlaku jika sewa lewat dan berapa hari anda diberi untuk membetulkan masalah. Banyak perjanjian membenarkan tuan tanah menamatkan dan mengambil semula premis selepas tempoh tunggakan yang singkat, jadi kemerosotan aliran tunai boleh membawa akibat serius.
+
+> Apa sahaja yang dijanjikan oleh tuan tanah atau ejen secara lisan, anggaplah ia tidak wujud melainkan ia terdapat dalam perjanjian yang ditandatangani. Jika tempoh bebas sewa, pengubahsuaian oleh tuan tanah atau had sewa yang dipersetujui penting kepada anda, pastikan ia ditulis dalam perjanjian sewa atau surat sampingan yang ditandatangani.
+
+## 3. Ketahui deposit lazim dan kos pendahuluan
+
+Tuan tanah biasanya meminta lebih daripada sewa bulan pertama di muka, dan strukturnya lazimnya boleh dirundingkan. Jumlah di bawah ialah amalan biasa dan bukan peraturan undang-undang, jadi sahkan butirannya dalam tawaran anda sendiri.
+
+### Deposit tempahan
+Surat tawaran atau surat hasrat sering disertakan dengan deposit tempahan untuk menyimpan unit itu. Semak sama ada ia boleh dikembalikan jika perjanjian gagal, dan apa yang surat itu mengikat anda.
+
+### Deposit sekuriti
+Ini biasanya bersamaan sekitar dua bulan sewa, dipegang bagi menampung sewa tertunggak atau kerosakan dan boleh dikembalikan pada akhir sewa tertakluk kepada potongan.
+
+### Deposit utiliti dan lain-lain
+Deposit tambahan, selalunya sekitar setengah hingga satu bulan sewa, lazim bagi air dan elektrik, dan kadangkala bagi kad akses atau yang seumpamanya. Penyedia utiliti juga mungkin meminta deposit mereka sendiri.
+
+### Sewa pendahuluan
+Sewa bulan pertama biasanya dibayar semasa menandatangani. Sesetengah tuan tanah meminta lebih, dan ia berbaloi dirundingkan, terutamanya jika anda syarikat permulaan dengan wang tunai terhad.
+
+### Tanya bagaimana deposit dikembalikan
+Pastikan perjanjian menyatakan bila dan bagaimana deposit dikembalikan selepas anda berpindah, dan dalam keadaan apa tuan tanah boleh membuat potongan. Pertikaian tentang deposit antara yang paling kerap berlaku antara penyewa dan tuan tanah.
+
+## 4. Duti setem ke atas perjanjian
+
+Perjanjian penyewaan amnya perlu disetem, dan perjanjian yang tidak disetem boleh sukar dijadikan bukti di mahkamah. Duti dikenakan ke atas sewa tahunan dan bergantung pada tempoh sewa. Kadar yang lazim disebut ialah, bagi setiap RM250 atau sebahagiannya daripada sewa tahunan, kira-kira RM1 bagi tempoh sehingga satu tahun, RM3 bagi lebih satu hingga tiga tahun, RM5 bagi lebih tiga hingga lima tahun, dan RM7 bagi tempoh melebihi lima tahun. Kadar, pengecualian dan kaedah pengiraan telah dikemas kini dari semasa ke semasa, jadi semak angka semasa sebelum bergantung pada mana-mana daripadanya.
+
+Penyetamannya dibuat dalam talian melalui sistem e-Duti Setem Lembaga Hasil Dalam Negeri (LHDN), dan terdapat tarikh akhir penyetaman yang lazim disebut 30 hari dari tarikh menandatangani, dengan penalti bagi penyetaman lewat. Sahkan tarikh akhir dan kadar penalti di laman rasmi LHDN. Siapa yang membayar duti adalah perkara persetujuan, jadi selesaikan sebelum anda menandatangani dan bukan selepasnya.
+
+### Sewa melebihi tiga tahun mungkin perlu didaftarkan
+Di bawah Kanun Tanah Negara, sewa melebihi tiga tahun amnya perlu didaftarkan pada hak milik tanah untuk melindungi kepentingan penyewa, yang menambah kos dan proses berasingan. Tanya peguam anda sama ada sewa anda memerlukannya.
+
+### Semak layanan cukai ke atas sewa
+Cukai perkhidmatan telah dikenakan ke atas perkhidmatan sewaan dan pajakan komersial sejak 1 Julai 2025, dengan pendaftaran bergantung pada perolehan tuan tanah, dan kadar serta ambang bagi perniagaan kecil dilaporkan telah berubah sejak itu. Tanya tuan tanah sama ada sewa yang disebut termasuk apa-apa cukai, dan sahkan kedudukan semasa dengan Jabatan Kastam Diraja Malaysia.
+
+## 5. Selesaikan kelulusan sebelum ubah suai
+
+Menandatangani sewa tidak memberi anda hak untuk membuka. Banyak kelulusan yang anda perlukan bergantung pada anda sudah memiliki premis tersebut.
+
+### Lesen perniagaan
+Kebanyakan perniagaan memerlukan lesen daripada pihak berkuasa tempatan untuk premis tertentu, dan sesetengahnya memerlukan kelulusan tambahan, seperti kelulusan kesihatan atau bomba bagi kedai makanan. Panduan kami tentang lesen dan permit perniagaan menerangkan bagaimana ia berfungsi. Jangan mengubah suai sebelum anda tahu lesen boleh diperoleh di alamat itu.
+
+### Kelulusan ubah suai dan pemasangan
+Perubahan struktur, sekatan, papan tanda dan papan iklan mungkin memerlukan kelulusan tuan tanah, pengurusan bangunan, dan kadangkala pihak berkuasa tempatan. Kontraktor ubah suai seharusnya tahu keperluan tempatan, tetapi tanggungjawab menyemak adalah di bahu anda.
+
+### Papan tanda
+Papan tanda biasanya dikawal oleh pihak berkuasa tempatan, yang sering memerlukan lesen iklan dan menetapkan peraturan saiz dan kedudukan. Sahkan apa yang dibenarkan sebelum anda menempah papan tanda.
+
+### Rancang tempoh bebas sewa
+Banyak tuan tanah menawarkan tempoh ubah suai bebas sewa selama beberapa minggu hingga beberapa bulan. Cuba rundingkan satu, dan pastikan ia cukup panjang untuk kelulusan dan ubah suai, supaya anda tidak membayar sewa bagi kedai yang tidak boleh dibuka.
+
+## 6. Berunding dengan bijak dan rancang jalan keluar
+
+Kebanyakan terma lebih fleksibel daripada yang ditunjukkan oleh draf pertama tuan tanah, terutamanya jika unit itu telah kosong beberapa ketika atau anda menawarkan komitmen yang lebih panjang.
+
+### Apa yang perlu dirundingkan
+Sasarkan tempoh ubah suai bebas sewa, had kenaikan, pilihan pembaharuan yang jelas, deposit sekuriti yang lebih kecil, dan obligasi pemulihan yang munasabah. Tuan tanah yang tidak mahu berganjak dalam apa-apa pun sedang memberitahu anda sesuatu tentang hubungan itu.
+
+### Pertimbangkan klausa penamatan awal
+Klausa yang membolehkan anda menamatkan sewa lebih awal selepas tempoh tertentu, dengan notis dan mungkin penalti, melindungi anda jika perniagaan tidak berkembang. Tuan tanah sering menentangnya, tetapi walaupun hak penamatan selepas tahun pertama atau kedua amat bernilai.
+
+### Berhati-hati dengan jaminan peribadi
+Tuan tanah kepada syarikat kecil sering meminta pengarah menjamin sewa secara peribadi. Ini bermakna aset anda sendiri berisiko jika syarikat tidak mampu membayar, jadi fahami dengan tepat apa yang anda tandatangani dan untuk berapa lama.
+
+### Ketahui bagaimana anda boleh keluar
+Semak tempoh notis, peraturan tentang penyerahan hak atau penyewaan semula, dan apa yang anda terhutang jika keluar lebih awal. Jika perniagaan gagal, penyewaan semula atau penyerahan hak, jika dibenarkan, mungkin cara keluar yang paling murah.
+
+### Gunakan peguam untuk draf akhir
+Yuran peguam untuk menyemak sewa komersial adalah kecil berbanding sewa yang anda komitkan. Jika peguam tuan tanah menyediakan draf, ingat bahawa mereka bertindak untuk tuan tanah, bukan untuk anda.
+
+Jika anda masih membandingkan lokasi atau mencari rakan niaga seperti kontraktor ubah suai, [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pelanggan dan pembekal menemui anda di alamat baharu, dan anda boleh [menyemak imbas direktori](/ms) untuk peguam, kontraktor dan perunding perniagaan tempatan.
+
+## Kesilapan lazim PKS Malaysia semasa menyewa premis
+
+- **Menandatangani sebelum menyemak kelulusan.** Sewa pada premis yang tidak boleh mendapat lesen atau kegunaan yang dibenarkan anda meninggalkan anda membayar sewa bagi perniagaan yang tidak boleh dibuka.
+- **Bergantung pada janji lisan.** Tempoh bebas sewa, pembaikan dan had sewa yang tiada dalam perjanjian bertandatangan sangat sukar dikuatkuasakan kemudian.
+- **Melupakan bil pemulihan.** Mencabut ubah suai pada akhir sewa boleh memakan kos sebenar, jadi rundingkannya dan peruntukkan bajet sejak hari pertama.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Senaraikan keperluan mesti ada untuk lokasi — kegunaan dibenarkan, saiz, tempat letak kereta, aliran pengunjung — dan kos bulanan keseluruhan maksimum yang mampu anda tanggung.
+- **Seterusnya:** Bagi mana-mana unit yang disenarai pendek, semak pemilikan, kegunaan yang dibenarkan, dan apa yang sebenarnya termasuk dalam angka bulanan.
+- **Kemudian:** Rundingkan terma utama, minta peguam menyemak draf akhir, dan selesaikan siapa yang membayar duti setem sebelum menandatangani.
+- **Selepas menandatangani:** Setem perjanjian tepat pada masanya, dapatkan lesen dan kelulusan anda, dan catat tarikh pembaharuan dan notis dalam diari.
+
+Sewa yang baik ialah sewa yang anda fahami sepenuhnya, mampu dibayar dengan selesa, dan boleh ditinggalkan tanpa bencana jika keadaan berubah.`,
+        faqs: [
+          {
+            question: "Adakah perjanjian penyewaan komersial di Malaysia perlu disetem?",
+            answer:
+              "Amnya ya. Perjanjian penyewaan tertakluk kepada duti setem, dan perjanjian yang tidak disetem boleh sukar dijadikan bukti di mahkamah. Penyetaman dibuat dalam talian melalui sistem e-Duti Setem LHDN, jadi sahkan tarikh akhir dan penalti semasa di laman rasmi.",
+          },
+          {
+            question: "Bagaimanakah duti setem ke atas sewa dikira?",
+            answer:
+              "Ia berdasarkan sewa tahunan dan tempoh sewa. Kadar yang lazim disebut ialah kira-kira RM1, RM3, RM5 atau RM7 bagi setiap RM250 (atau sebahagiannya) sewa tahunan, bergantung pada sama ada tempohnya sehingga satu tahun, tiga tahun, lima tahun atau lebih lama. Kadar dan peraturan berubah, jadi semak angka semasa dengan LHDN.",
+          },
+          {
+            question: "Berapakah deposit yang biasanya diminta oleh tuan tanah?",
+            answer:
+              "Amalan lazim ialah deposit sekuriti sekitar dua bulan sewa, deposit utiliti sekitar setengah hingga satu bulan, serta sewa bulan pertama di muka. Ini ialah adat dan bukan peraturan undang-undang, dan ia sering boleh dirundingkan, jadi semak surat tawaran anda sendiri.",
+          },
+          {
+            question: "Adakah penyewa komersial mempunyai hak untuk memperbaharui sewa?",
+            answer:
+              "Tidak secara automatik. Malaysia tidak mempunyai undang-undang am yang memberi penyewa komersial hak pembaharuan, jadi jika anda mahukan pilihan itu, ia perlu ditulis dalam perjanjian, termasuk bagaimana dan bila anda mesti menggunakannya.",
+          },
+          {
+            question: "Adakah saya perlu lesen perniagaan sebelum mula mengubah suai?",
+            answer:
+              "Anda patut menyemaknya dahulu. Kebanyakan perniagaan memerlukan lesen daripada pihak berkuasa tempatan untuk premis tertentu, dan sesetengahnya memerlukan kelulusan tambahan. Sahkan bahawa kegunaan dan alamat itu boleh dilesenkan sebelum anda membelanjakan wang untuk ubah suai.",
+          },
+          {
+            question: "Apakah klausa pemulihan?",
+            answer:
+              "Ia menghendaki anda mencabut ubah suai dan memulangkan premis kepada keadaan asal apabila sewa tamat. Ini boleh menjadi kos yang besar, jadi bacanya dengan teliti, cuba hadkannya, dan peruntukkan bajet untuknya sejak awal.",
+          },
+          {
+            question: "Bolehkah saya keluar daripada sewa komersial lebih awal?",
+            answer:
+              "Hanya setakat yang dibenarkan oleh perjanjian. Semak klausa penamatan awal, tempoh notis dan sama ada anda boleh menyerahkan hak atau menyewakan semula. Keluar tanpa hak berbuat demikian boleh menyebabkan anda terhutang baki sewa, jadi rundingkan pilihan keluar sebelum menandatangani.",
+          },
+          {
+            question: "Patutkah saya meminta peguam menyemak sewa komersial?",
+            answer:
+              "Ia amat disyorkan. Kos semakan adalah kecil berbanding sewa dan obligasi yang anda komitkan. Jika peguam tuan tanah menggubal perjanjian itu, ingat bahawa mereka bertindak untuk tuan tanah dan bukan untuk anda.",
+          },
+        ],
+      },
+    },
+  },
+  {
     slug: "get-your-business-found-online-malaysia",
     title: "How to Get Your Business Found Online in Malaysia",
     seoTitle: "Get Found Online in Malaysia: A Step-by-Step SEO Guide",
