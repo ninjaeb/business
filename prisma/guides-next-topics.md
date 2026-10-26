@@ -15,16 +15,16 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Renting Commercial Premises in Malaysia: Tenancy Agreements, Deposits, and Stamp Duty**
-   — What to check before signing a shop or office lease: the main terms
-   in a commercial tenancy agreement (rent, term, renewal, rent review,
-   reinstatement, deposits), the usual deposit structure, stamp duty on the
-   agreement, fit-out and signage approvals, and how to negotiate or exit
-   a lease without being caught out.
+1. **Bookkeeping and Accounting Basics for Malaysian SMEs: Records, Software, and When to Hire an Accountant**
+   — How a small business should keep its books from day one: what records
+   to keep and for how long, separating business and personal money,
+   choosing accounting software, monthly routines (reconciliation, invoices,
+   receipts), what an accountant or bookkeeper does, and how good records
+   feed into tax, SSM and e-invoicing obligations.
 
-2. **Selling Online in Malaysia: Setting Up an Online Shop the Right Way**
-   — The legal and practical basics of e-commerce for a Malaysian SME:
-   registering the business, marketplace versus your own website, payment
-   gateways, consumer protection rules for online sellers (including
-   displaying business details and honouring returns), delivery and
-   courier choices, and handling customer data.
+2. **Hiring Foreign Workers in Malaysia: Quotas, Levies, and Legal Responsibilities**
+   — What an SME must know before employing migrant workers: eligibility
+   and sector quotas, the approval and permit process, levy and insurance
+   or contributions obligations, accommodation and employment-contract
+   duties, the penalties for hiring illegally, and why to check the
+   official portals before committing.

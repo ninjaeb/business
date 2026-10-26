@@ -44,7 +44,7 @@
         "overhead"
       ],
       "description": "Overhead view of hands using a calculator over folders and paperwork",
-      "usedBy": null
+      "usedBy": "staying-compliant-with-ssm-annual-returns-and-company-records-cover.webp"
     },
     {
       "id": 8296977,
@@ -67,7 +67,7 @@
         "hr"
       ],
       "description": "Two businesswomen talking over documents in a corporate meeting",
-      "usedBy": null
+      "usedBy": "staying-compliant-with-ssm-annual-returns-and-company-records-records.webp"
     },
     {
       "id": 7651557,
@@ -178,7 +178,7 @@
         "planning"
       ],
       "description": "Team reviewing paperwork together in an office",
-      "usedBy": null
+      "usedBy": "halal-certification-in-malaysia-for-smes-review.webp"
     },
     {
       "id": 8278841,
@@ -423,6 +423,17 @@
       ],
       "description": "Close-up of a person signing a contract at an office desk",
       "usedBy": null
+    },
+    {
+      "id": 8092572,
+      "tags": [
+        "food",
+        "kitchen",
+        "halal",
+        "restaurant"
+      ],
+      "description": "Chef in uniform preparing food with a bamboo steamer in a kitchen",
+      "usedBy": "halal-certification-in-malaysia-for-smes-cover.webp"
     }
   ]
 }
