@@ -15,16 +15,16 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Renting Commercial Premises in Malaysia: Tenancy Agreements, Deposits, and Stamp Duty**
-   — What to check before signing a shop or office lease: the main terms
-   in a commercial tenancy agreement (rent, term, renewal, rent review,
-   reinstatement, deposits), the usual deposit structure, stamp duty on the
-   agreement, fit-out and signage approvals, and how to negotiate or exit
-   a lease without being caught out.
+1. **Staying Compliant with SSM: Annual Returns, Financial Statements, and Company Records**
+   — What a Malaysian company (Sdn Bhd) and a registered business must keep
+   filing after incorporation: the annual return and financial statements
+   deadlines, keeping the registered address and director details current,
+   beneficial ownership reporting, business registration renewals for sole
+   proprietors and partnerships, and the penalties for falling behind.
 
-2. **Selling Online in Malaysia: Setting Up an Online Shop the Right Way**
-   — The legal and practical basics of e-commerce for a Malaysian SME:
-   registering the business, marketplace versus your own website, payment
-   gateways, consumer protection rules for online sellers (including
-   displaying business details and honouring returns), delivery and
-   courier choices, and handling customer data.
+2. **Halal Certification in Malaysia: What Food and Product SMEs Need to Know**
+   — When a food, beverage, or consumer-product business needs halal
+   certification, how the JAKIM/state religious department process works
+   (the application, premises and ingredient checks, fees, validity and
+   renewal), the rules on using the halal logo and claims, and how to avoid
+   the common reasons applications are delayed or rejected.
