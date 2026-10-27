@@ -7699,4 +7699,1038 @@ Mengutip apa yang terhutang kepada anda kebanyakannya tentang bersikap jelas seb
       },
     },
   },
+  {
+    slug: "bookkeeping-and-accounting-basics-for-malaysian-smes",
+    title: "Bookkeeping and Accounting Basics for Malaysian SMEs: Records, Software, and When to Hire an Accountant",
+    seoTitle: "Bookkeeping Basics for Malaysian SMEs: A Practical Guide",
+    seoDescription:
+      "How Malaysian SMEs can keep proper books from day one: records to keep, how long, separating money, choosing software, monthly routines, and hiring help.",
+    coverImage: {
+      file: "bookkeeping-and-accounting-basics-for-malaysian-smes-cover.webp",
+      mimeType: "image/webp",
+      alt: "A woman using a pink calculator over a desk covered in receipts and printed forms",
+      altTranslations: {
+        zh: "一位女士在摆满收据和打印表格的桌上使用粉红色计算器",
+        ms: "Seorang wanita menggunakan kalkulator merah jambu di atas meja yang dipenuhi resit dan borang bercetak",
+      },
+    },
+    contentImages: {
+      "software-desk": {
+        file: "bookkeeping-and-accounting-basics-for-malaysian-smes-software.webp",
+        mimeType: "image/webp",
+        alt: "A smiling woman at a sunny desk working with a calculator, notes and a laptop",
+        altTranslations: {
+          zh: "一位微笑的女士在阳光明媚的书桌前使用计算器、笔记和笔记本电脑工作",
+          ms: "Seorang wanita tersenyum di meja yang cerah bekerja dengan kalkulator, nota dan komputer riba",
+        },
+        after: "Choose accounting software that matches how your business actually works, not the one with the most features.",
+        afterTranslations: {
+          zh: "请选择符合您业务实际运作方式的会计软件，而不是功能最多的那一款。",
+          ms: "Pilih perisian perakaunan yang sepadan dengan cara perniagaan anda sebenarnya berjalan, bukan yang mempunyai ciri paling banyak.",
+        },
+      },
+    },
+    excerpt:
+      "Good books are the quiet foundation under tax, SSM, bank loans, and e-invoicing, yet many small businesses only sort them out when a deadline forces them to. This guide explains what records a Malaysian SME should keep and for how long, how to separate business and personal money, how to choose accounting software, what a monthly routine looks like, and when to hire an accountant.",
+    body: `Most small business owners start with a shoebox of receipts and a bank app, and for a few months that feels fine. Then a tax deadline, a bank loan application, or a customer who disputes an invoice arrives, and the missing records become a real problem. Bookkeeping is not glamorous, but it is what lets you know whether you are actually making money, and it is what every other obligation in this series depends on.
+
+This is general information, not accounting, tax, or legal advice. Record-keeping periods, reporting standards, and software options change, and your own situation may differ, so confirm the current position with the Inland Revenue Board (LHDN), SSM, or a qualified accountant before you rely on it.
+
+## 1. Understand why records matter
+
+### Your numbers are your early-warning system
+Without records you cannot tell which products make money, whether a customer is paying late, or if you are quietly running out of cash. Many failing small businesses were profitable on paper and ran out of money in practice.
+
+### Other people rely on them
+Your accountant needs them to prepare accounts, LHDN may ask for them in an audit, banks ask for them when you borrow, and landlords and large customers sometimes ask for them to vet you. Our guides on the small business tax calendar, SSM compliance, and SME funding all assume your books are in decent shape.
+
+### The law expects them
+A company has to keep proper accounting records, and income tax rules require records that are sufficient to show your income and expenses. Not keeping them can lead to penalties on top of the tax itself.
+
+## 2. Know what to keep, and for how long
+
+### The records that matter
+At a minimum, keep sales invoices and receipts, purchase invoices and supplier bills, bank statements, payroll records, expense claims, contracts and agreements, stock records if you hold inventory, and records of assets such as equipment and vehicles. Keep the supporting paperwork for every figure that goes into your accounts.
+
+### How long to keep them
+For tax purposes, LHDN's public rulings have long set the period at about seven years from the end of the year the income relates to for companies, and the Companies Act also requires accounting records to be retained for a period commonly cited as seven years. The rules for other types of taxpayers may differ, and the periods can be updated, so confirm the current requirement with LHDN or your accountant, and when in doubt keep records longer rather than shorter.
+
+### Paper or digital
+Electronic copies are generally acceptable if they are complete, readable, and can be produced on request. If you scan paper receipts, store the files in a backed-up location and name them consistently, because faded thermal-paper receipts are unreadable within a year or two.
+
+### Where to keep them
+Records should be kept in Malaysia, at your registered office or business premises, or in a system you can access from there. Do not leave critical records on one person's phone or personal laptop.
+
+## 3. Separate business and personal money from day one
+
+### Open a dedicated business account
+Run all business income and expenses through one business bank account. Our guide on opening a business bank account explains what to prepare. Mixing personal spending into the business account is the single biggest cause of messy books.
+
+### Pay yourself deliberately
+Decide how you are paid, whether as salary, director's remuneration, or owner's drawings, and transfer a regular amount rather than dipping in ad hoc. This makes your records cleaner and your cash flow predictable.
+
+### Be careful with cash
+Cash sales and cash expenses are the hardest to record. Issue a receipt or log every cash sale the same day, deposit takings regularly, and avoid paying business expenses out of your pocket without keeping the bill.
+
+## 4. Learn the basic building blocks
+
+You do not need to be an accountant, but a few concepts make everything easier.
+
+### Income, expenses, assets and liabilities
+Income is what you earn, expenses are what it costs you to earn it, assets are what the business owns, and liabilities are what it owes. Your books are a running record of these four things.
+
+### Cash versus accrual
+Cash-basis records show money when it moves, while accrual records show income when it is earned and expenses when they are incurred, even if unpaid. Many small businesses start with something close to cash-basis, but if you sell on credit, you need to track who owes you money.
+
+### The reports that matter
+A profit and loss statement shows whether you made money over a period, a balance sheet shows what you own and owe at a point in time, and a cash-flow view shows what is coming in and going out. Companies also prepare financial statements under the applicable Malaysian accounting standards, and your accountant can tell you which framework applies to you.
+
+## 5. Choose a system and software
+
+### Spreadsheet versus software
+A spreadsheet works for a very small business with few transactions, but it is easy to break, hard to audit, and does not connect to your bank. Cloud accounting software is usually worth it once you have regular invoices, staff, or tax obligations.
+
+### What to look for
+Choose accounting software that matches how your business actually works, not the one with the most features. Consider whether it handles Malaysian taxes such as SST, whether it can issue invoices that comply with the e-invoicing rules in our guide on the LHDN mandate, whether it connects to your bank, and whether your accountant is happy to work in it.
+
+### Think about what it costs to leave
+Make sure you can export your data. Switching later is painful if your records are locked in, so check how you can get your data out before you commit.
+
+### Keep access under control
+Limit who can see and change the books, use strong passwords, and keep backups. Financial records are also personal data in many cases, so see our guide on PDPA compliance.
+
+## 6. Build a simple routine
+
+The secret of good bookkeeping is boring consistency. A little regular effort beats a large yearly panic.
+
+### Daily or weekly
+Record sales, issue invoices, file receipts, and note any cash movements. Fifteen minutes a week prevents most backlogs.
+
+### Monthly
+Reconcile your books to the bank statement, chase unpaid invoices, review what is owed to suppliers, record payroll and statutory contributions, and look at your profit and loss. If a number surprises you, investigate it now.
+
+> The monthly bank reconciliation is the single habit that catches the most errors. If your books and your bank statement agree at the end of every month, you will find mistakes, missing receipts, and even fraud while they are still small and fixable.
+
+### Quarterly and yearly
+Review your tax position, check upcoming deadlines, and, at year end, close the books, make sure all supporting documents are filed, and hand a clean set to your accountant.
+
+## 7. Know when to hire help
+
+### A bookkeeper
+A bookkeeper records transactions, reconciles accounts, and prepares the books for your accountant. Hiring one makes sense when the volume of transactions is more than you can handle or when your time is better spent selling.
+
+### An accountant
+An accountant prepares financial statements, advises on tax, and handles filings. A company usually needs one, and a good one often saves more than they cost by spotting deductions, risks, and problems early.
+
+### An auditor
+Many companies must have their accounts audited by a licensed auditor, though some qualify for an exemption. Confirm whether you are covered rather than assuming, and keep the auditor independent of whoever keeps your books.
+
+### How to choose
+Ask about their experience with businesses like yours, whether they are properly licensed or registered, how they charge, and who actually does the work. Check references, and be wary of anyone who promises to make your tax disappear.
+
+If you are looking for a bookkeeper, accountant, or auditor, you can [browse the directory](/en) for local professionals, and [creating a free business listing](/en/signup) helps your own customers find and verify your business.
+
+## Common mistakes Malaysian SMEs make with their books
+
+- **Mixing personal and business money.** It makes profit impossible to measure and every tax or audit review harder.
+- **Throwing away or losing paperwork.** Missing invoices and faded receipts cost you deductions and leave you unable to defend your figures.
+- **Leaving everything until year end.** A year of unreconciled transactions is slow, expensive to untangle, and hides problems until it is too late.
+
+## Where to start
+
+- **This week:** Open or confirm your business bank account, and move all business income and expenses through it.
+- **Next:** Choose a system, whether a spreadsheet to begin with or accounting software, and decide where your records will be stored and backed up.
+- **Then:** Set aside a fixed time every week to record transactions, and a monthly slot for bank reconciliation.
+- **Every year:** Review how your books are working, talk to an accountant about what they need, and update your routine as the business grows.
+
+Good bookkeeping is a habit, not a talent, and the owners who build it early spend far less time and money later.`,
+    faqs: [
+      {
+        question: "What records must a small business in Malaysia keep?",
+        answer:
+          "At minimum, sales and purchase invoices, receipts, bank statements, payroll records, contracts, stock records if you hold inventory, and records of assets, plus the supporting paperwork for every figure in your accounts. Confirm the exact requirements with LHDN or an accountant.",
+      },
+      {
+        question: "How long should I keep business records in Malaysia?",
+        answer:
+          "For companies, LHDN's public rulings have long set about seven years from the end of the year the income relates to, and the Companies Act also commonly cited as seven years. Other taxpayers may differ, and periods can change, so confirm the current rule and keep records longer when in doubt.",
+      },
+      {
+        question: "Can I keep my records digitally instead of on paper?",
+        answer:
+          "Electronic records are generally acceptable if they are complete, readable, and can be produced on request. Store them in a backed-up location and name files consistently. Scan thermal-paper receipts early, because they fade.",
+      },
+      {
+        question: "Why should I have a separate business bank account?",
+        answer:
+          "Mixing personal and business money makes your profit impossible to measure and every tax or audit review harder. A dedicated account gives you a clean record of income and expenses from the start.",
+      },
+      {
+        question: "Do I need accounting software or is a spreadsheet enough?",
+        answer:
+          "A spreadsheet can work for a very small business with few transactions, but accounting software is usually worth it once you have regular invoices, staff, or tax obligations. Check that it suits Malaysian requirements such as SST and e-invoicing, connects to your bank, and lets you export your data.",
+      },
+      {
+        question: "What is a bank reconciliation and why does it matter?",
+        answer:
+          "It is comparing your books to your bank statement to make sure they agree. Doing it every month catches errors, missing receipts, and fraud while they are still small and easy to fix.",
+      },
+      {
+        question: "What is the difference between a bookkeeper and an accountant?",
+        answer:
+          "A bookkeeper records transactions and reconciles accounts, while an accountant prepares financial statements, advises on tax, and handles filings. Many small businesses use a bookkeeper for the day-to-day and an accountant for the year-end and tax work.",
+      },
+      {
+        question: "When should I hire an accountant?",
+        answer:
+          "As soon as you have a company, employees, tax obligations, or financing needs, and sooner if you are unsure how to categorise transactions. A good accountant often saves more than they cost by spotting deductions, risks, and problems early.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "马来西亚中小企业的簿记与会计基础：记录、软件，以及何时聘请会计师",
+        excerpt:
+          "良好的账簿是税务、SSM、银行贷款和电子发票背后默默无闻的基础，然而许多小企业只有在截止日期逼近时才去整理。本指南说明马来西亚中小企业应保存哪些记录及保存多久、如何分开公私资金、如何选择会计软件、每月例行工作是什么样子，以及何时聘请会计师。",
+        body: `大多数小企业主一开始只有一鞋盒的收据和一个银行应用程序，头几个月这样做感觉还不错。然后税务截止日期、银行贷款申请，或是一位对发票有争议的客户出现了，缺失的记录就成了真正的问题。簿记并不光鲜，但它让您知道自己是否真的在赚钱，也是本系列其他所有义务所依赖的基础。
+
+以下仅为一般资讯，并非会计、税务或法律意见。记录保存期限、报告标准和软件选项会变动，您自己的情况也可能不同，所以在依赖这些内容之前，请向内陆税收局（LHDN）、SSM 或合格的会计师确认最新情况。
+
+## 1. 了解记录为什么重要
+
+### 您的数字是您的预警系统
+没有记录，您就无法分辨哪些产品赚钱、客户是否逾期付款，或您是否正悄悄地耗尽现金。许多失败的小企业在账面上是盈利的，实际上却把钱用完了。
+
+### 别人也依赖它们
+您的会计师需要它们来编制账目，LHDN 可能在审查时要求查看，银行在您借贷时会要求，房东和大客户有时也会要求以审查您。我们关于小企业税务日历、SSM 合规和中小企业融资的指南，都假设您的账簿状况良好。
+
+### 法律期望您保存
+公司必须保存适当的会计记录，所得税规定也要求保存足以显示您收入和开支的记录。不保存可能在税款之外再招致罚款。
+
+## 2. 知道该保存什么，以及保存多久
+
+### 重要的记录
+至少应保存销售发票和收据、采购发票和供应商账单、银行月结单、薪资记录、开支报销、合约和协议、如有库存则包括存货记录，以及设备和车辆等资产的记录。请为进入账目的每一个数字保存支持文件。
+
+### 保存多久
+就税务而言，LHDN 的公共裁决长期以来对公司规定的期限约为自收入所属年度结束起七年，而《公司法令》也要求会计记录保存一段常被引述为七年的期间。其他类型纳税人的规定可能不同，期限也可能更新，所以请向 LHDN 或您的会计师确认现行要求，有疑问时宁可保存更久。
+
+### 纸本还是数码
+电子副本一般可以接受，只要完整、可读，并能在被要求时提供。如果您扫描纸本收据，请把文件存放在有备份的地方并统一命名，因为褪色的热敏纸收据在一两年内就会变得无法辨认。
+
+### 存放在哪里
+记录应保存在马来西亚，在您的注册办事处或营业场所，或在您可以从那里访问的系统中。不要把关键记录只放在某一个人的手机或个人笔记本电脑上。
+
+## 3. 从第一天起分开公款与私款
+
+### 开立专用的企业账户
+把所有企业的收入和开支都通过一个企业银行账户处理。我们关于开立企业银行账户的指南说明了需要准备什么。把个人开销混入企业账户，是账目混乱的最大原因。
+
+### 有计划地给自己发薪
+决定您如何领取报酬，是薪水、董事酬金还是业主提款，并定期转出固定金额，而不是临时随意取用。这会让记录更清晰，现金流也更可预测。
+
+### 小心现金
+现金销售和现金开支最难记录。请当天开出收据或记录每一笔现金销售，定期存入收入，并避免在没有保留单据的情况下用自己的钱支付企业开支。
+
+## 4. 学会基本的构成要素
+
+您不需要成为会计师，但几个概念能让一切更容易。
+
+### 收入、开支、资产和负债
+收入是您赚取的，开支是赚取它所花的成本，资产是企业拥有的，负债是企业所欠的。您的账簿就是这四样东西的持续记录。
+
+### 现金制与权责发生制
+现金制记录在钱流动时入账，而权责发生制则在收入赚取时和开支发生时入账，即使尚未付款。许多小企业起初接近现金制，但如果您赊销，就需要追踪谁欠您钱。
+
+### 重要的报表
+损益表显示您在一段期间内是否赚钱，资产负债表显示某一时点您拥有和所欠的，而现金流视图则显示进出的款项。公司也会按适用的马来西亚会计准则编制财务报表，您的会计师可以告诉您适用哪一个框架。
+
+## 5. 选择系统和软件
+
+### 电子表格还是软件
+电子表格适合交易很少的极小型企业，但容易出错、难以审计，也无法连接您的银行。一旦您有定期的发票、员工或税务义务，云端会计软件通常就值得使用。
+
+### 要留意什么
+请选择符合您业务实际运作方式的会计软件，而不是功能最多的那一款。考虑它是否处理 SST 等马来西亚税项，是否能开出符合我们关于 LHDN 规定的指南中电子发票规则的发票，是否连接您的银行，以及您的会计师是否乐意使用它。
+
+### 想想离开的成本
+确保您可以导出数据。如果记录被锁住，日后更换会很痛苦，所以在承诺之前，请先查清如何把数据取出来。
+
+### 管控访问权限
+限制谁可以查看和更改账簿，使用强密码，并保留备份。财务记录在许多情况下也属于个人数据，请参阅我们关于 PDPA 合规的指南。
+
+## 6. 建立简单的例行程序
+
+好簿记的秘诀是乏味的持之以恒。经常一点点的努力，胜过每年一次的大恐慌。
+
+### 每天或每周
+记录销售，开出发票，归档收据，并记下任何现金流动。每周十五分钟就能避免大部分积压。
+
+### 每月
+把账簿与银行月结单对账，追收未付的发票，检讨欠供应商的款项，记录薪资和法定供款，并查看您的损益表。如果某个数字让您意外，请现在就去调查。
+
+> 每月的银行对账，是能发现最多错误的单一习惯。如果您的账簿和银行月结单在每个月底都相符，您就能在错误、缺失的收据甚至舞弊还很小、还可修正的时候发现它们。
+
+### 每季与每年
+检讨您的税务状况，查核即将到来的截止日期，并在年底结账，确保所有支持文件都已归档，再把一套整洁的资料交给您的会计师。
+
+## 7. 知道何时请人帮忙
+
+### 簿记员
+簿记员记录交易、对账，并为您的会计师准备账簿。当交易量超出您能处理的范围，或您的时间更适合用来销售时，聘请一位是合理的。
+
+### 会计师
+会计师编制财务报表、提供税务建议并处理申报。公司通常需要一位，而好的会计师往往因为及早发现扣除项、风险和问题，节省的比花费的更多。
+
+### 审计师
+许多公司必须由持牌审计师审计账目，不过有些符合豁免。请确认您是否在涵盖范围内而不是想当然，并让审计师独立于替您记账的人。
+
+### 如何选择
+询问他们处理类似企业的经验、是否获得适当的执照或注册、如何收费，以及实际由谁来做。查看推荐人，并对任何承诺让您的税消失的人保持警惕。
+
+如果您在寻找簿记员、会计师或审计师，可以[浏览名录](/zh)寻找本地专业人士，而[创建免费的企业列表](/zh/signup)可以帮助您自己的客户找到并核实您的企业。
+
+## 马来西亚中小企业在账簿上常犯的错误
+
+- **公私资金混在一起。** 这让利润无法衡量，也让每一次税务或审计审查更困难。
+- **丢弃或遗失文件。** 缺失的发票和褪色的收据会让您损失扣除项，也让您无法为自己的数字辩护。
+- **全部拖到年底。** 一整年没有对账的交易，处理起来缓慢、昂贵，并在为时已晚之前一直隐藏着问题。
+
+## 从哪里开始
+
+- **本周：**开立或确认您的企业银行账户，并把所有企业的收入和开支都通过它处理。
+- **接着：**选择一个系统，起初可以是电子表格，也可以是会计软件，并决定您的记录存放和备份在哪里。
+- **然后：**每周固定留出时间记录交易，每月留出时段做银行对账。
+- **每年：**检讨您的账簿运作如何，与会计师谈谈他们需要什么，并随着企业成长更新您的例行程序。
+
+好的簿记是一种习惯，而不是天赋，及早建立它的企业主，日后花费的时间和金钱要少得多。`,
+        faqs: [
+          {
+            question: "马来西亚的小企业必须保存哪些记录？",
+            answer:
+              "至少应保存销售和采购发票、收据、银行月结单、薪资记录、合约、如有库存则包括存货记录，以及资产记录，另加账目中每一个数字的支持文件。请向 LHDN 或会计师确认确切要求。",
+          },
+          {
+            question: "在马来西亚，企业记录应保存多久？",
+            answer:
+              "对公司而言，LHDN 的公共裁决长期以来规定约为自收入所属年度结束起七年，《公司法令》也常被引述为七年。其他纳税人可能不同，期限也可能变动，所以请确认现行规定，有疑问时保存更久。",
+          },
+          {
+            question: "我可以用数码方式而不是纸本保存记录吗？",
+            answer:
+              "电子记录一般可以接受，只要完整、可读，并能在被要求时提供。请把它们存放在有备份的地方并统一命名文件。热敏纸收据要及早扫描，因为它们会褪色。",
+          },
+          {
+            question: "为什么我应该有一个独立的企业银行账户？",
+            answer:
+              "公私资金混在一起，会让利润无法衡量，也让每一次税务或审计审查更困难。专用账户从一开始就为您提供清晰的收入和开支记录。",
+          },
+          {
+            question: "我需要会计软件，还是电子表格就够了？",
+            answer:
+              "电子表格适合交易很少的极小型企业，但一旦您有定期的发票、员工或税务义务，会计软件通常就值得使用。请确认它符合 SST 和电子发票等马来西亚的要求、能连接您的银行，并让您导出数据。",
+          },
+          {
+            question: "什么是银行对账？为什么它重要？",
+            answer:
+              "就是把您的账簿与银行月结单对照，确保两者相符。每月都做，可以在错误、缺失的收据和舞弊还很小、容易修正的时候就发现它们。",
+          },
+          {
+            question: "簿记员和会计师有什么区别？",
+            answer:
+              "簿记员记录交易并对账，而会计师编制财务报表、提供税务建议并处理申报。许多小企业日常使用簿记员，年终和税务工作则交给会计师。",
+          },
+          {
+            question: "我应该何时聘请会计师？",
+            answer:
+              "一旦您有了公司、员工、税务义务或融资需求就应该聘请，若不确定如何分类交易，则更早。好的会计师往往因为及早发现扣除项、风险和问题，节省的比花费的更多。",
+          },
+        ],
+      },
+      ms: {
+        title: "Asas Simpan Kira dan Perakaunan untuk PKS Malaysia: Rekod, Perisian dan Bila Perlu Mengupah Akauntan",
+        excerpt:
+          "Buku yang baik ialah asas senyap di bawah cukai, SSM, pinjaman bank dan e-Invois, namun ramai perniagaan kecil hanya menyusunnya apabila tarikh akhir memaksa. Panduan ini menerangkan rekod yang perlu disimpan oleh PKS Malaysia dan untuk berapa lama, cara memisahkan wang perniagaan dan peribadi, cara memilih perisian perakaunan, rupa rutin bulanan, dan bila perlu mengupah akauntan.",
+        body: `Kebanyakan pemilik perniagaan kecil bermula dengan sekotak resit dan aplikasi bank, dan selama beberapa bulan ia terasa baik. Kemudian tarikh akhir cukai, permohonan pinjaman bank atau pelanggan yang mempertikaikan invois tiba, dan rekod yang hilang menjadi masalah sebenar. Simpan kira tidak glamor, tetapi ia yang membolehkan anda tahu sama ada anda benar-benar membuat wang, dan ia yang menjadi asas kepada setiap tanggungjawab lain dalam siri ini.
+
+Ini ialah maklumat am, bukan nasihat perakaunan, cukai atau guaman. Tempoh penyimpanan rekod, piawaian pelaporan dan pilihan perisian berubah, dan keadaan anda sendiri mungkin berbeza, jadi sahkan kedudukan semasa dengan Lembaga Hasil Dalam Negeri (LHDN), SSM atau akauntan bertauliah sebelum anda bergantung padanya.
+
+## 1. Fahami mengapa rekod penting
+
+### Angka anda ialah sistem amaran awal anda
+Tanpa rekod, anda tidak dapat mengetahui produk mana yang menguntungkan, sama ada pelanggan membayar lewat, atau jika anda perlahan-lahan kehabisan wang tunai. Banyak perniagaan kecil yang gagal sebenarnya menguntungkan di atas kertas dan kehabisan wang dalam praktik.
+
+### Orang lain bergantung padanya
+Akauntan anda memerlukannya untuk menyediakan akaun, LHDN mungkin memintanya semasa audit, bank memintanya apabila anda berhutang, dan tuan tanah serta pelanggan besar kadangkala memintanya untuk menilai anda. Panduan kami tentang kalendar cukai perniagaan kecil, pematuhan SSM dan pembiayaan PKS semuanya menganggap buku anda dalam keadaan yang baik.
+
+### Undang-undang menjangkakannya
+Syarikat mesti menyimpan rekod perakaunan yang betul, dan peraturan cukai pendapatan memerlukan rekod yang mencukupi untuk menunjukkan pendapatan dan perbelanjaan anda. Tidak menyimpannya boleh membawa penalti di samping cukai itu sendiri.
+
+## 2. Ketahui apa yang perlu disimpan dan untuk berapa lama
+
+### Rekod yang penting
+Sekurang-kurangnya, simpan invois jualan dan resit, invois belian dan bil pembekal, penyata bank, rekod gaji, tuntutan perbelanjaan, kontrak dan perjanjian, rekod stok jika anda memegang inventori, dan rekod aset seperti peralatan dan kenderaan. Simpan dokumen sokongan bagi setiap angka yang masuk ke dalam akaun anda.
+
+### Berapa lama menyimpannya
+Bagi tujuan cukai, ketetapan awam LHDN sejak lama menetapkan tempoh sekitar tujuh tahun dari akhir tahun pendapatan itu bagi syarikat, dan Akta Syarikat juga menghendaki rekod perakaunan disimpan untuk tempoh yang lazim disebut tujuh tahun. Peraturan bagi jenis pembayar cukai lain mungkin berbeza, dan tempoh boleh dikemas kini, jadi sahkan keperluan semasa dengan LHDN atau akauntan anda, dan jika ragu simpan lebih lama dan bukannya lebih singkat.
+
+### Kertas atau digital
+Salinan elektronik amnya diterima jika ia lengkap, boleh dibaca dan boleh dikemukakan apabila diminta. Jika anda mengimbas resit kertas, simpan fail di lokasi yang ada sandaran dan namakannya secara konsisten, kerana resit kertas terma yang pudar tidak boleh dibaca dalam masa satu atau dua tahun.
+
+### Di mana hendak menyimpannya
+Rekod harus disimpan di Malaysia, di pejabat berdaftar atau premis perniagaan anda, atau dalam sistem yang boleh anda akses dari sana. Jangan biarkan rekod kritikal hanya pada telefon atau komputer riba peribadi seseorang.
+
+## 3. Pisahkan wang perniagaan dan peribadi sejak hari pertama
+
+### Buka akaun perniagaan khusus
+Jalankan semua pendapatan dan perbelanjaan perniagaan melalui satu akaun bank perniagaan. Panduan kami tentang membuka akaun bank perniagaan menerangkan apa yang perlu disediakan. Mencampurkan perbelanjaan peribadi ke dalam akaun perniagaan ialah punca terbesar buku yang bersepah.
+
+### Bayar diri anda dengan sengaja
+Tentukan bagaimana anda dibayar, sama ada sebagai gaji, saraan pengarah atau pengeluaran pemilik, dan pindahkan jumlah tetap secara berkala dan bukannya mengambil sesuka hati. Ini menjadikan rekod anda lebih bersih dan aliran tunai anda boleh diramal.
+
+### Berhati-hati dengan wang tunai
+Jualan tunai dan perbelanjaan tunai paling sukar direkodkan. Keluarkan resit atau catat setiap jualan tunai pada hari yang sama, depositkan hasil secara berkala, dan elakkan membayar perbelanjaan perniagaan dengan wang poket anda tanpa menyimpan bilnya.
+
+## 4. Pelajari blok binaan asas
+
+Anda tidak perlu menjadi akauntan, tetapi beberapa konsep memudahkan segala-galanya.
+
+### Pendapatan, perbelanjaan, aset dan liabiliti
+Pendapatan ialah apa yang anda peroleh, perbelanjaan ialah kos untuk memperolehnya, aset ialah apa yang dimiliki perniagaan, dan liabiliti ialah apa yang terhutang. Buku anda ialah rekod berterusan bagi keempat-empat perkara ini.
+
+### Tunai berbanding akruan
+Rekod asas tunai menunjukkan wang apabila ia bergerak, manakala rekod akruan menunjukkan pendapatan apabila diperoleh dan perbelanjaan apabila ditanggung, walaupun belum dibayar. Banyak perniagaan kecil bermula dengan sesuatu yang hampir dengan asas tunai, tetapi jika anda menjual secara kredit, anda perlu menjejaki siapa yang terhutang wang kepada anda.
+
+### Laporan yang penting
+Penyata untung rugi menunjukkan sama ada anda membuat wang sepanjang tempoh, kunci kira-kira menunjukkan apa yang anda miliki dan terhutang pada satu masa, dan pandangan aliran tunai menunjukkan apa yang masuk dan keluar. Syarikat juga menyediakan penyata kewangan di bawah piawaian perakaunan Malaysia yang terpakai, dan akauntan anda boleh memberitahu kerangka mana yang terpakai kepada anda.
+
+## 5. Pilih sistem dan perisian
+
+### Hamparan berbanding perisian
+Hamparan berfungsi untuk perniagaan yang sangat kecil dengan sedikit transaksi, tetapi ia mudah rosak, sukar diaudit dan tidak bersambung dengan bank anda. Perisian perakaunan awan biasanya berbaloi apabila anda mempunyai invois berkala, kakitangan atau tanggungjawab cukai.
+
+### Apa yang perlu diperhatikan
+Pilih perisian perakaunan yang sepadan dengan cara perniagaan anda sebenarnya berjalan, bukan yang mempunyai ciri paling banyak. Pertimbangkan sama ada ia mengendalikan cukai Malaysia seperti SST, sama ada ia boleh mengeluarkan invois yang mematuhi peraturan e-Invois dalam panduan kami tentang mandat LHDN, sama ada ia bersambung dengan bank anda, dan sama ada akauntan anda selesa bekerja di dalamnya.
+
+### Fikirkan kos untuk keluar
+Pastikan anda boleh mengeksport data anda. Bertukar kemudian amat menyusahkan jika rekod anda terkunci, jadi semak bagaimana anda boleh mengeluarkan data sebelum anda membuat komitmen.
+
+### Kawal akses
+Hadkan siapa yang boleh melihat dan mengubah buku, gunakan kata laluan yang kukuh, dan simpan sandaran. Rekod kewangan juga ialah data peribadi dalam banyak kes, jadi lihat panduan kami tentang pematuhan PDPA.
+
+## 6. Bina rutin yang mudah
+
+Rahsia simpan kira yang baik ialah konsistensi yang membosankan. Usaha kecil yang kerap mengatasi kepanikan tahunan yang besar.
+
+### Harian atau mingguan
+Rekodkan jualan, keluarkan invois, failkan resit, dan catat sebarang pergerakan tunai. Lima belas minit seminggu mencegah kebanyakan tunggakan.
+
+### Bulanan
+Dampingkan buku anda dengan penyata bank, kutip invois tertunggak, semak apa yang terhutang kepada pembekal, rekodkan gaji dan caruman berkanun, dan lihat penyata untung rugi anda. Jika sesuatu angka mengejutkan anda, siasatlah sekarang.
+
+> Pendamaian bank bulanan ialah satu tabiat yang menangkap paling banyak kesilapan. Jika buku dan penyata bank anda sepadan pada akhir setiap bulan, anda akan menemui kesilapan, resit yang hilang, malah penipuan ketika ia masih kecil dan boleh dibetulkan.
+
+### Suku tahun dan tahunan
+Semak kedudukan cukai anda, periksa tarikh akhir yang akan tiba, dan pada akhir tahun, tutup buku, pastikan semua dokumen sokongan difailkan, dan serahkan set yang kemas kepada akauntan anda.
+
+## 7. Ketahui bila hendak mendapatkan bantuan
+
+### Jurusimpan kira
+Jurusimpan kira merekodkan transaksi, mendamaikan akaun dan menyediakan buku untuk akauntan anda. Mengupah seorang munasabah apabila jumlah transaksi melebihi apa yang boleh anda kendalikan atau apabila masa anda lebih baik digunakan untuk berjualan.
+
+### Akauntan
+Akauntan menyediakan penyata kewangan, menasihati tentang cukai dan mengendalikan pemfailan. Syarikat biasanya memerlukan seorang, dan akauntan yang baik sering menjimatkan lebih daripada kosnya dengan mengesan potongan, risiko dan masalah lebih awal.
+
+### Juruaudit
+Banyak syarikat mesti mengaudit akaun mereka oleh juruaudit berlesen, walaupun sesetengahnya layak mendapat pengecualian. Sahkan sama ada anda diliputi dan bukannya menganggap, dan pastikan juruaudit bebas daripada sesiapa yang menyimpan buku anda.
+
+### Cara memilih
+Tanya tentang pengalaman mereka dengan perniagaan seperti anda, sama ada mereka dilesenkan atau didaftarkan dengan sewajarnya, bagaimana mereka mengenakan bayaran, dan siapa yang sebenarnya melakukan kerja. Semak rujukan, dan berwaspada terhadap sesiapa yang menjanjikan cukai anda akan lenyap.
+
+Jika anda mencari jurusimpan kira, akauntan atau juruaudit, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pelanggan anda sendiri menemui dan mengesahkan perniagaan anda.
+
+## Kesilapan lazim PKS Malaysia dengan buku mereka
+
+- **Mencampurkan wang peribadi dan perniagaan.** Ia menjadikan keuntungan mustahil diukur dan setiap semakan cukai atau audit lebih sukar.
+- **Membuang atau kehilangan dokumen.** Invois yang hilang dan resit yang pudar menyebabkan anda kehilangan potongan dan membuat anda tidak dapat mempertahankan angka anda.
+- **Membiarkan segalanya sehingga akhir tahun.** Transaksi setahun yang tidak didamaikan lambat dan mahal untuk dileraikan, dan menyembunyikan masalah sehingga terlambat.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Buka atau sahkan akaun bank perniagaan anda, dan jalankan semua pendapatan dan perbelanjaan perniagaan melaluinya.
+- **Seterusnya:** Pilih sistem, sama ada hamparan untuk bermula atau perisian perakaunan, dan tentukan di mana rekod anda akan disimpan dan disandarkan.
+- **Kemudian:** Peruntukkan masa tetap setiap minggu untuk merekod transaksi, dan slot bulanan untuk pendamaian bank.
+- **Setiap tahun:** Semak bagaimana buku anda berfungsi, berbincang dengan akauntan tentang apa yang mereka perlukan, dan kemas kini rutin anda apabila perniagaan berkembang.
+
+Simpan kira yang baik ialah tabiat dan bukan bakat, dan pemilik yang membinanya lebih awal menghabiskan jauh lebih sedikit masa dan wang kemudian.`,
+        faqs: [
+          {
+            question: "Apakah rekod yang mesti disimpan oleh perniagaan kecil di Malaysia?",
+            answer:
+              "Sekurang-kurangnya, invois jualan dan belian, resit, penyata bank, rekod gaji, kontrak, rekod stok jika anda memegang inventori, dan rekod aset, serta dokumen sokongan bagi setiap angka dalam akaun anda. Sahkan keperluan tepat dengan LHDN atau akauntan.",
+          },
+          {
+            question: "Berapa lama saya patut menyimpan rekod perniagaan di Malaysia?",
+            answer:
+              "Bagi syarikat, ketetapan awam LHDN sejak lama menetapkan sekitar tujuh tahun dari akhir tahun pendapatan itu, dan Akta Syarikat juga lazim disebut tujuh tahun. Pembayar cukai lain mungkin berbeza, dan tempoh boleh berubah, jadi sahkan peraturan semasa dan simpan lebih lama jika ragu.",
+          },
+          {
+            question: "Bolehkah saya menyimpan rekod secara digital dan bukannya di atas kertas?",
+            answer:
+              "Rekod elektronik amnya diterima jika ia lengkap, boleh dibaca dan boleh dikemukakan apabila diminta. Simpan di lokasi yang ada sandaran dan namakan fail secara konsisten. Imbas resit kertas terma lebih awal, kerana ia akan pudar.",
+          },
+          {
+            question: "Mengapa saya patut mempunyai akaun bank perniagaan yang berasingan?",
+            answer:
+              "Mencampurkan wang peribadi dan perniagaan menjadikan keuntungan mustahil diukur dan setiap semakan cukai atau audit lebih sukar. Akaun khusus memberi anda rekod pendapatan dan perbelanjaan yang bersih sejak awal.",
+          },
+          {
+            question: "Adakah saya memerlukan perisian perakaunan atau hamparan sudah memadai?",
+            answer:
+              "Hamparan boleh berfungsi untuk perniagaan yang sangat kecil dengan sedikit transaksi, tetapi perisian perakaunan biasanya berbaloi apabila anda mempunyai invois berkala, kakitangan atau tanggungjawab cukai. Pastikan ia sesuai dengan keperluan Malaysia seperti SST dan e-Invois, bersambung dengan bank anda, dan membolehkan anda mengeksport data.",
+          },
+          {
+            question: "Apakah pendamaian bank dan mengapa ia penting?",
+            answer:
+              "Ia membandingkan buku anda dengan penyata bank untuk memastikan keduanya sepadan. Melakukannya setiap bulan menangkap kesilapan, resit yang hilang dan penipuan ketika ia masih kecil dan mudah dibetulkan.",
+          },
+          {
+            question: "Apakah perbezaan antara jurusimpan kira dan akauntan?",
+            answer:
+              "Jurusimpan kira merekodkan transaksi dan mendamaikan akaun, manakala akauntan menyediakan penyata kewangan, menasihati tentang cukai dan mengendalikan pemfailan. Banyak perniagaan kecil menggunakan jurusimpan kira untuk kerja harian dan akauntan untuk kerja akhir tahun dan cukai.",
+          },
+          {
+            question: "Bilakah saya patut mengupah akauntan?",
+            answer:
+              "Sebaik sahaja anda mempunyai syarikat, pekerja, tanggungjawab cukai atau keperluan pembiayaan, dan lebih awal jika anda tidak pasti cara mengkategorikan transaksi. Akauntan yang baik sering menjimatkan lebih daripada kosnya dengan mengesan potongan, risiko dan masalah lebih awal.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "hiring-foreign-workers-in-malaysia",
+    title: "Hiring Foreign Workers in Malaysia: Quotas, Levies, and Legal Responsibilities",
+    seoTitle: "Hiring Foreign Workers in Malaysia: SME Guide",
+    seoDescription:
+      "What Malaysian SMEs must know before hiring foreign workers: quotas, approvals, levies, insurance, housing, contracts, and penalties for illegal hiring.",
+    coverImage: {
+      file: "hiring-foreign-workers-in-malaysia-cover.webp",
+      mimeType: "image/webp",
+      alt: "Two businessmen at a white conference table, one reading a document and the other typing on a laptop",
+      altTranslations: {
+        zh: "两位商务男士坐在白色会议桌旁，一人阅读文件，另一人在笔记本电脑上打字",
+        ms: "Dua ahli perniagaan lelaki di meja persidangan putih, seorang membaca dokumen dan seorang lagi menaip pada komputer riba",
+      },
+    },
+    contentImages: {
+      "hiring-meeting": {
+        file: "hiring-foreign-workers-in-malaysia-contract.webp",
+        mimeType: "image/webp",
+        alt: "A manager standing and speaking to colleagues taking notes around a meeting table",
+        altTranslations: {
+          zh: "一位经理站着向围坐在会议桌旁做笔记的同事讲话",
+          ms: "Seorang pengurus berdiri bercakap kepada rakan sekerja yang mencatat nota di sekeliling meja mesyuarat",
+        },
+        after: "Check the official portals for the current rules before you promise any worker a job.",
+        afterTranslations: {
+          zh: "在向任何工人承诺工作之前，请先在官方门户查核现行规定。",
+          ms: "Semak portal rasmi untuk peraturan semasa sebelum anda menjanjikan pekerjaan kepada mana-mana pekerja.",
+        },
+      },
+    },
+    excerpt:
+      "Labour shortages push many Malaysian SMEs to consider foreign workers, but the rules on who may hire, how many, and at what cost are strict and change often. This guide explains the approval and quota process, levies and insurance, the employer's duties on contracts, housing, and documents, and the penalties for hiring illegally.",
+    body: `For many Malaysian SMEs in manufacturing, food service, construction, plantations, and retail, finding local staff for demanding or low-paid jobs is a daily struggle. Foreign workers are one answer, and also one of the most heavily regulated areas of hiring. Employers who cut corners can face heavy fines, blacklisting, and even prosecution, while workers can end up in exploitative conditions.
+
+This is general information, not legal or immigration advice. The foreign worker framework, including quota policy, systems, levy rates, and eligible sectors, has been under review and changes frequently, so treat everything below as a map of the issues rather than the current rules, and confirm the latest position with the Ministry of Human Resources, the Immigration Department, and the official application portals before you act.
+
+## 1. Check whether you can hire foreign workers at all
+
+### Not every business or job qualifies
+Foreign workers are generally permitted only in specified sectors, such as manufacturing, construction, plantation, agriculture, and certain services, and for specified types of jobs. A business outside those sectors, or in a restricted category, may not be able to apply.
+
+### The government prefers local hiring
+Employers are generally expected to try to fill jobs locally first, and policy has been moving to reduce reliance on foreign labour over time. Be ready to show that you advertised the position and could not find suitable local candidates.
+
+### Policy can change quickly
+Quotas have at times been frozen or tightened, and new systems and levy structures have been announced. Never plan an expansion around hiring foreign workers until you have confirmed the current rules and timelines.
+
+## 2. Understand the approval and quota process
+
+### Quota approval comes first
+You generally need approval for a quota, meaning the number of foreign workers you may employ, before you can bring anyone in. Applications are made through the government's official online system for foreign worker management, and the process, forms, and agencies involved have been updated over the years.
+
+### Supporting documents
+Expect to provide your business registration, details of your premises and operations, evidence of your local workforce, and financial or compliance records. Your business must also be in good standing with other authorities, so up-to-date statutory contributions and tax matter.
+
+### Recruitment channels
+Workers must come through channels permitted for their country of origin, which may involve government-to-government arrangements or approved recruitment agencies. Agencies are paid fees, and unethical recruitment practices can create serious problems for you later.
+
+### Beware of agents and middlemen
+Be cautious of anyone who promises quick approvals for a fee, sells quota places, or offers workers without proper paperwork. Check that any agency is properly licensed and that you can verify what they say with the authorities.
+
+## 3. Budget for the full cost
+
+Hiring a foreign worker costs far more than their wage.
+
+### Levy
+Employers generally pay an annual levy per foreign worker, which varies by sector and has been under review, including proposals for a multi-tier system. Confirm the current levy for your sector.
+
+### Fees and costs of bringing workers in
+These can include recruitment agency fees, medical screening, security clearances, visa and permit fees, and travel. Responsible employers cover the costs they are required to, and do not shift them onto workers in a way that the rules forbid.
+
+### Insurance and contributions
+Foreign workers are generally covered by mandatory insurance schemes, such as a compensation scheme for workplace accidents and health or hospitalisation cover, and some contributions apply. The requirements have been revised from time to time, so check what applies to your workers.
+
+### Accommodation and welfare
+Employers are generally responsible for providing suitable accommodation meeting minimum standards, which can be a significant cost. Plan for housing before the workers arrive.
+
+## 4. Meet your duties as an employer
+
+Check the official portals for the current rules before you promise any worker a job. Then make sure you can meet each of these duties from the first day.
+
+### A proper employment contract
+Foreign workers are generally entitled to a written contract setting out the job, wages, hours, and other terms, in a language they can understand. Our guide on hiring your first employee in Malaysia covers the contract basics that apply here too.
+
+### Employment law protections
+Foreign workers generally have protections under Malaysian employment law, such as pay on time, rest days, leave, and limits on deductions. See our guides on employee leave and on terminating an employee for rules that apply to your workers.
+
+### Pay on time, through proper channels
+Pay wages in full and on time, preferably into the worker's bank account, and keep payslips and records. Unauthorised deductions and delayed pay are among the most common complaints.
+
+### Never hold a worker's passport
+Employers are generally prohibited from retaining a worker's passport or travel documents, and doing so can be an offence and a sign of forced labour. Provide a safe place for the worker to store their own documents instead.
+
+> Never treat the foreign worker approval as a one-time hurdle. Every permit has an expiry, every worker is tied to the employer and role approved, and you stay responsible for renewals, medical checks, insurance, and keeping accurate records. A lapse by you can leave your worker unlawfully in the country and expose you to penalties.
+
+### Permits, medical checks and renewals
+Workers need a valid work pass or permit for the approved employer, and are generally subject to medical screening on arrival and periodically. Diarise every expiry date, and begin renewals early.
+
+### Do not change the job without approval
+A worker who moves to a different employer, sector, or role without approval may be in breach of their permit. Check before reassigning workers.
+
+## 5. Provide safe housing and a safe workplace
+
+### Accommodation standards
+Where you provide housing, it is generally expected to meet minimum standards for space, safety, sanitation, and amenities, under the relevant legislation. Overcrowded, unsafe, or unsanitary housing is a common reason for enforcement action.
+
+### Occupational safety
+You have the same duty to provide a safe workplace to foreign workers as to local staff, including training in a language they understand, safety equipment, and instructions. Foreign workers often work in higher-risk jobs, so this matters.
+
+### Respect and fair treatment
+Treat workers fairly, give them a way to raise problems, and avoid practices that look like forced labour or exploitation. Beyond the legal risks, poor treatment hurts retention and your reputation with buyers who audit their supply chains.
+
+## 6. Know the penalties for getting it wrong
+
+### Hiring without permits
+Employing a person who has no valid permission to work is an offence, and penalties can include substantial fines per worker, imprisonment, and other consequences. Penalty amounts and enforcement have been revised, so check the current provisions with the authorities.
+
+### Other breaches
+Failing to meet insurance, housing, contract, or wage obligations can lead to fines, withdrawal of quota, and blacklisting from future applications. Repeat or serious breaches can result in prosecution.
+
+### Harbouring and trafficking risks
+Keeping workers in conditions that amount to forced labour or trafficking is a serious criminal matter. If you are unsure about a recruitment arrangement, stop and get advice.
+
+## 7. Consider the alternatives
+
+### Local hiring and retention
+Better pay, flexible hours, training, and clear progression can widen your local labour pool. Check the grants and incentives available in our guide on SME grants and funding.
+
+### Automation and process improvement
+Some tasks can be reduced with equipment, software, or process changes, sometimes with financial support. A one-off investment may cost less than the cumulative cost of levy, housing, and compliance.
+
+### Outsourcing
+Contracting a specialist service provider can pass the compliance burden to a business that already has the licences, systems, and workers, although you should still check that they are properly authorised.
+
+If you are looking for a lawyer, an HR adviser, or a licensed service provider, you can [browse the directory](/en) for local professionals, and [creating a free business listing](/en/signup) helps customers and trade partners find and verify your business.
+
+## Common mistakes Malaysian SMEs make when hiring foreign workers
+
+- **Using unlicensed agents.** Paying a middleman for quotas or workers without proper paperwork can cost you far more than the fee when it goes wrong.
+- **Letting permits lapse.** An expired permit makes the worker unlawful and exposes you to penalties, so diarise every renewal.
+- **Underestimating total cost.** Levy, insurance, housing, medical checks, and agency fees add up, so budget before you apply.
+
+## Where to start
+
+- **This week:** Confirm that your sector and job type can employ foreign workers, and check the current rules on the official portals.
+- **Next:** Work out the total cost per worker, including levy, insurance, housing, and recruitment fees, and compare it to local hiring and automation.
+- **Then:** Prepare your documents, your housing plan, and your employment contract, and use only properly licensed channels.
+- **After approval:** Keep a calendar of permit and medical expiry dates, keep records, and treat workers fairly.
+
+Hiring foreign workers can solve a real labour problem, but only for employers who are willing to follow every rule and budget for the full cost.`,
+    faqs: [
+      {
+        question: "Can any Malaysian business hire foreign workers?",
+        answer:
+          "No. Foreign workers are generally permitted only in specified sectors and for specified jobs, and employers must obtain approval first. Check with the Ministry of Human Resources and the Immigration Department whether your business qualifies.",
+      },
+      {
+        question: "Do I need approval before bringing in a foreign worker?",
+        answer:
+          "Yes. You generally need approval for a quota before you can bring workers in, and applications are made through the government's official online system. The process and systems change, so confirm the current steps on the official portal.",
+      },
+      {
+        question: "What is the foreign worker levy?",
+        answer:
+          "It is an annual charge employers generally pay for each foreign worker, which varies by sector and has been under review, including proposals for a multi-tier system. Confirm the current rate for your sector with the authorities.",
+      },
+      {
+        question: "What costs should I budget for besides wages?",
+        answer:
+          "Levy, recruitment agency fees, medical screening, permit and visa fees, insurance, accommodation, and travel. Responsible employers cover the costs they are required to and do not push them onto workers in ways the rules forbid.",
+      },
+      {
+        question: "Am I responsible for housing foreign workers?",
+        answer:
+          "Employers are generally responsible for providing suitable accommodation meeting minimum standards, or ensuring workers' housing meets them. Check the current requirements and plan for housing before the workers arrive.",
+      },
+      {
+        question: "Can I keep my worker's passport for safekeeping?",
+        answer:
+          "No. Employers are generally prohibited from retaining a worker's passport or travel documents, and doing so can be an offence and a sign of forced labour. Provide a secure place for the worker to keep their own documents.",
+      },
+      {
+        question: "What happens if I employ a worker without a valid permit?",
+        answer:
+          "It is an offence, and penalties can include substantial fines per worker, imprisonment, and other consequences. The amounts and enforcement change, so check the current provisions, and never employ a person without valid permission to work.",
+      },
+      {
+        question: "Are there alternatives to hiring foreign workers?",
+        answer:
+          "Yes. You can improve pay and conditions to attract local staff, invest in automation or process improvements, or outsource to a properly authorised service provider. Compare the total cost of each before deciding.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "在马来西亚雇用外籍劳工：配额、征费与法律责任",
+        excerpt:
+          "劳工短缺促使许多马来西亚中小企业考虑聘请外籍劳工，但谁可以雇用、可雇用多少、成本多少的规定既严格又经常变动。本指南说明审批与配额流程、征费与保险、雇主在合约、住宿和文件方面的责任，以及非法雇用的处罚。",
+        body: `对许多从事制造、餐饮、建筑、种植园和零售的马来西亚中小企业来说，要为繁重或低薪的工作找到本地员工，是每天的挣扎。外籍劳工是答案之一，但也是雇用事务中监管最严格的领域之一。偷工减料的雇主可能面临重罚、被列入黑名单，甚至被起诉，而工人也可能陷入被剥削的处境。
+
+以下仅为一般资讯，并非法律或移民意见。外籍劳工的框架，包括配额政策、系统、征费率和可雇用的行业，一直在检讨中并经常变动，所以请把以下内容当作问题的地图而不是现行规定，并在采取行动之前，向人力资源部、移民局和官方申请门户确认最新情况。
+
+## 1. 先确认您是否能雇用外籍劳工
+
+### 并非每家企业或每种工作都符合资格
+外籍劳工一般只获准在特定行业，例如制造、建筑、种植园、农业和某些服务业，以及特定类型的工作。这些行业之外或属于受限类别的企业，可能无法申请。
+
+### 政府偏好本地雇用
+雇主一般被期望先尝试在本地填补职位，而政策也在逐步朝着减少对外籍劳工依赖的方向发展。请准备好证明您曾刊登招聘广告，但找不到合适的本地人选。
+
+### 政策可能迅速改变
+配额有时被冻结或收紧，也宣布过新的系统和征费结构。在确认现行规定和时间表之前，切勿围绕聘请外籍劳工来规划扩张。
+
+## 2. 了解审批与配额流程
+
+### 先取得配额批准
+在带入任何人之前，您一般需要先获得配额批准，也就是您可以雇用的外籍劳工人数。申请通过政府官方的外籍劳工管理在线系统办理，而涉及的流程、表格和机构多年来也有更新。
+
+### 支持文件
+预期需要提供您的企业注册资料、场所和营运详情、本地员工的证明，以及财务或合规记录。您的企业在其他主管机构面前也必须信誉良好，所以最新的法定供款和税务很重要。
+
+### 招募渠道
+工人必须通过其原籍国许可的渠道而来，这可能涉及政府对政府的安排或获准的招募代理。代理会收取费用，而不道德的招募做法日后可能给您带来严重问题。
+
+### 提防代理和中间人
+对任何承诺付费就能快速获批、出售配额名额，或提供没有适当文件的工人的人，要保持警惕。查核任何代理是否持有适当的执照，并且您可以向主管机构核实他们所说的话。
+
+## 3. 为全部成本编制预算
+
+聘请一名外籍劳工的成本，远不止他们的工资。
+
+### 征费
+雇主一般须为每名外籍劳工缴付年度征费，因行业而异，并一直在检讨中，包括多层征费制度的建议。请确认您所在行业的现行征费。
+
+### 引进工人的费用和成本
+可能包括招募代理费、体检、安全审查、签证和准证费用，以及旅费。负责任的雇主会承担他们被要求承担的费用，而不会以规则所禁止的方式转嫁给工人。
+
+### 保险与供款
+外籍劳工一般受强制性保险计划保障，例如工伤赔偿计划和健康或住院保障，并适用某些供款。规定不时修订，所以请查核适用于您的工人的是什么。
+
+### 住宿与福利
+雇主一般须负责提供符合最低标准的适当住宿，这可能是一笔不小的开支。请在工人抵达之前就规划好住宿。
+
+## 4. 履行您作为雇主的责任
+
+在向任何工人承诺工作之前，请先在官方门户查核现行规定。然后确保您从第一天起就能履行以下每一项责任。
+
+### 适当的雇佣合约
+外籍劳工一般有权获得书面合约，列明工作、工资、工时和其他条款，并使用他们能理解的语言。我们关于在马来西亚雇用第一位员工的指南涵盖了同样适用于此的合约基础。
+
+### 劳动法保障
+外籍劳工一般受马来西亚劳动法保障，例如按时发薪、休息日、休假，以及对扣款的限制。请参阅我们关于员工休假和终止员工雇佣的指南，了解适用于您的工人的规则。
+
+### 通过适当渠道按时发薪
+请足额、按时发放工资，最好转入工人的银行账户，并保存薪资单和记录。未经授权的扣款和拖延发薪，是最常见的投诉之一。
+
+### 切勿扣留工人的护照
+雇主一般被禁止扣留工人的护照或旅行证件，这样做可能构成罪行，也是强迫劳动的迹象。请改为提供一个安全的地方，让工人自己保管证件。
+
+> 切勿把外籍劳工的批准当作一次性的关卡。每一张准证都有到期日，每名工人都与获批准的雇主和职务绑定，而您仍须负责续期、体检、保险以及保存准确的记录。您的疏漏可能让您的工人非法滞留，并让您面临处罚。
+
+### 准证、体检与续期
+工人需要获批雇主名下的有效工作准证，并一般须在抵达时及定期接受体检。请把每个到期日记入日程，并提早开始续期。
+
+### 未经批准不要更改工作
+未经批准转到另一个雇主、行业或职务的工人，可能违反其准证。重新分配工人之前请先查核。
+
+## 5. 提供安全的住宿与工作场所
+
+### 住宿标准
+如果您提供住宿，一般被期望在空间、安全、卫生和设施方面符合相关法律的最低标准。过度拥挤、不安全或不卫生的住宿，是执法行动的常见原因。
+
+### 职业安全
+您对外籍劳工有与对本地员工同样的责任，要提供安全的工作场所，包括以他们能理解的语言提供培训、安全设备和指示。外籍劳工常从事风险较高的工作，所以这很重要。
+
+### 尊重与公平对待
+公平对待工人，让他们有途径提出问题，并避免看起来像强迫劳动或剥削的做法。除了法律风险，恶劣的对待也会损害员工留任率，以及您在审核供应链的买家心目中的声誉。
+
+## 6. 了解出错的处罚
+
+### 无准证雇用
+雇用没有有效工作许可的人是罪行，处罚可能包括每名工人的巨额罚款、监禁和其他后果。罚款金额和执法力度时有修订，所以请向主管机构查核现行条文。
+
+### 其他违规
+未履行保险、住宿、合约或工资义务，可能导致罚款、取消配额，以及被列入黑名单而无法再申请。重复或严重的违规可能导致被起诉。
+
+### 窝藏与贩运风险
+让工人处于构成强迫劳动或贩运的环境，是严重的刑事事项。如果您对某项招募安排有疑问，请停下来寻求意见。
+
+## 7. 考虑替代方案
+
+### 本地雇用与留任
+更好的薪酬、弹性工时、培训和清晰的晋升，可以扩大您的本地劳动力来源。请参阅我们关于中小企业补助与融资的指南，了解可用的补助和奖励。
+
+### 自动化与流程改进
+有些工作可以通过设备、软件或流程改变来减少，有时还有财务支持。一次性的投资，可能比征费、住宿和合规的累计成本更低。
+
+### 外包
+聘请专业服务提供商，可以把合规负担转给已经拥有执照、系统和工人的企业，不过您仍应查核他们是否获得适当授权。
+
+如果您在寻找律师、人力资源顾问或持牌服务提供商，可以[浏览名录](/zh)寻找本地专业人士，而[创建免费的企业列表](/zh/signup)可以帮助客户和商业伙伴找到并核实您的企业。
+
+## 马来西亚中小企业雇用外籍劳工时常犯的错误
+
+- **使用无牌代理。** 向中间人付钱购买配额或没有适当文件的工人，一旦出事，付出的代价远超过那笔费用。
+- **让准证失效。** 过期的准证让工人变成非法，也让您面临处罚，所以请把每次续期记入日程。
+- **低估总成本。** 征费、保险、住宿、体检和代理费加起来相当可观，所以请在申请之前先做预算。
+
+## 从哪里开始
+
+- **本周：**确认您的行业和工作类型是否可以雇用外籍劳工，并在官方门户查核现行规定。
+- **接着：**算出每名工人的总成本，包括征费、保险、住宿和招募费用，并与本地雇用和自动化比较。
+- **然后：**准备好您的文件、住宿计划和雇佣合约，并只使用持牌的合法渠道。
+- **获批后：**记录准证和体检的到期日，保存记录，并公平对待工人。
+
+聘请外籍劳工可以解决真实的劳工问题，但前提是雇主愿意遵守每一项规定，并为全部成本编制预算。`,
+        faqs: [
+          {
+            question: "任何马来西亚企业都可以雇用外籍劳工吗？",
+            answer:
+              "不可以。外籍劳工一般只获准在特定行业和特定工作，雇主必须先获得批准。请向人力资源部和移民局查询您的企业是否符合资格。",
+          },
+          {
+            question: "引进外籍劳工之前需要先获得批准吗？",
+            answer:
+              "需要。您一般需要先获得配额批准才能引进工人，申请通过政府官方的在线系统办理。流程和系统会变动，所以请在官方门户确认现行步骤。",
+          },
+          {
+            question: "什么是外籍劳工征费？",
+            answer:
+              "这是雇主一般须为每名外籍劳工缴付的年度费用，因行业而异，并一直在检讨中，包括多层征费制度的建议。请向主管机构确认您所在行业的现行税率。",
+          },
+          {
+            question: "除了工资，我还应该为哪些成本编制预算？",
+            answer:
+              "征费、招募代理费、体检、准证和签证费用、保险、住宿和旅费。负责任的雇主会承担他们被要求承担的费用，而不会以规则所禁止的方式转嫁给工人。",
+          },
+          {
+            question: "我有责任为外籍劳工提供住宿吗？",
+            answer:
+              "雇主一般须负责提供符合最低标准的适当住宿，或确保工人的住宿符合标准。请查核现行要求，并在工人抵达之前就规划好住宿。",
+          },
+          {
+            question: "我可以替工人保管护照吗？",
+            answer:
+              "不可以。雇主一般被禁止扣留工人的护照或旅行证件，这样做可能构成罪行，也是强迫劳动的迹象。请提供一个安全的地方，让工人自己保管证件。",
+          },
+          {
+            question: "如果雇用没有有效准证的工人会怎样？",
+            answer:
+              "这是罪行，处罚可能包括每名工人的巨额罚款、监禁和其他后果。金额和执法力度会变动，所以请查核现行条文，并且切勿雇用没有有效工作许可的人。",
+          },
+          {
+            question: "除了聘请外籍劳工，还有其他选择吗？",
+            answer:
+              "有。您可以改善薪酬和条件以吸引本地员工，投资自动化或流程改进，或外包给获得适当授权的服务提供商。在决定之前，请比较各个选项的总成本。",
+          },
+        ],
+      },
+      ms: {
+        title: "Mengambil Pekerja Asing di Malaysia: Kuota, Levi dan Tanggungjawab Undang-undang",
+        excerpt:
+          "Kekurangan buruh mendorong ramai PKS Malaysia mempertimbangkan pekerja asing, tetapi peraturan tentang siapa yang boleh mengambil, berapa ramai dan pada kos berapa adalah ketat dan kerap berubah. Panduan ini menerangkan proses kelulusan dan kuota, levi dan insurans, tanggungjawab majikan terhadap kontrak, penginapan dan dokumen, serta penalti bagi pengambilan secara haram.",
+        body: `Bagi ramai PKS Malaysia dalam pembuatan, perkhidmatan makanan, pembinaan, ladang dan runcit, mencari pekerja tempatan untuk kerja yang mencabar atau bergaji rendah ialah perjuangan harian. Pekerja asing ialah satu jawapan, dan juga salah satu bidang pengambilan pekerja yang paling dikawal selia. Majikan yang mengambil jalan pintas boleh berdepan denda berat, disenaraihitamkan dan juga pendakwaan, manakala pekerja boleh berakhir dalam keadaan yang dieksploitasi.
+
+Ini ialah maklumat am, bukan nasihat guaman atau imigresen. Rangka kerja pekerja asing, termasuk dasar kuota, sistem, kadar levi dan sektor yang layak, telah dalam semakan dan kerap berubah, jadi anggaplah semua yang berikut sebagai peta isu dan bukan peraturan semasa, dan sahkan kedudukan terkini dengan Kementerian Sumber Manusia, Jabatan Imigresen dan portal permohonan rasmi sebelum anda bertindak.
+
+## 1. Semak sama ada anda boleh mengambil pekerja asing langsung
+
+### Tidak semua perniagaan atau pekerjaan layak
+Pekerja asing amnya dibenarkan hanya dalam sektor tertentu, seperti pembuatan, pembinaan, ladang, pertanian dan perkhidmatan tertentu, dan untuk jenis pekerjaan tertentu. Perniagaan di luar sektor itu, atau dalam kategori terhad, mungkin tidak dapat memohon.
+
+### Kerajaan mengutamakan pengambilan tempatan
+Majikan amnya dijangka cuba mengisi pekerjaan secara tempatan dahulu, dan dasar telah bergerak untuk mengurangkan pergantungan kepada buruh asing dari semasa ke semasa. Bersedialah untuk menunjukkan bahawa anda telah mengiklankan jawatan itu dan tidak menemui calon tempatan yang sesuai.
+
+### Dasar boleh berubah dengan pantas
+Kuota pada satu ketika dibekukan atau diketatkan, dan sistem serta struktur levi baharu telah diumumkan. Jangan sekali-kali merancang pengembangan berdasarkan pengambilan pekerja asing sehingga anda mengesahkan peraturan dan garis masa semasa.
+
+## 2. Fahami proses kelulusan dan kuota
+
+### Kelulusan kuota didahulukan
+Anda amnya memerlukan kelulusan kuota, iaitu bilangan pekerja asing yang boleh anda ambil, sebelum anda boleh membawa sesiapa masuk. Permohonan dibuat melalui sistem dalam talian rasmi kerajaan untuk pengurusan pekerja asing, dan proses, borang serta agensi yang terlibat telah dikemas kini sepanjang tahun.
+
+### Dokumen sokongan
+Jangkakan untuk mengemukakan pendaftaran perniagaan anda, butiran premis dan operasi anda, bukti tenaga kerja tempatan anda, dan rekod kewangan atau pematuhan. Perniagaan anda juga mesti berada dalam kedudukan baik dengan pihak berkuasa lain, jadi caruman berkanun dan cukai yang terkini adalah penting.
+
+### Saluran pengambilan
+Pekerja mesti datang melalui saluran yang dibenarkan bagi negara asal mereka, yang mungkin melibatkan aturan antara kerajaan atau agensi pengambilan yang diluluskan. Agensi dibayar yuran, dan amalan pengambilan yang tidak beretika boleh mencetuskan masalah serius kepada anda kemudian.
+
+### Berhati-hati dengan ejen dan orang tengah
+Berwaspada terhadap sesiapa yang menjanjikan kelulusan pantas dengan bayaran, menjual tempat kuota, atau menawarkan pekerja tanpa dokumen yang betul. Semak bahawa mana-mana agensi dilesenkan dengan sewajarnya dan anda boleh mengesahkan apa yang mereka katakan dengan pihak berkuasa.
+
+## 3. Bajetkan kos penuh
+
+Mengambil pekerja asing menelan kos jauh lebih banyak daripada gaji mereka.
+
+### Levi
+Majikan amnya membayar levi tahunan bagi setiap pekerja asing, yang berbeza mengikut sektor dan telah dalam semakan, termasuk cadangan sistem berbilang peringkat. Sahkan levi semasa bagi sektor anda.
+
+### Yuran dan kos membawa masuk pekerja
+Ini boleh termasuk yuran agensi pengambilan, saringan perubatan, tapisan keselamatan, yuran visa dan permit, serta perjalanan. Majikan yang bertanggungjawab menanggung kos yang mereka dikehendaki, dan tidak memindahkannya kepada pekerja dengan cara yang dilarang peraturan.
+
+### Insurans dan caruman
+Pekerja asing amnya dilindungi oleh skim insurans mandatori, seperti skim pampasan untuk kemalangan di tempat kerja dan perlindungan kesihatan atau kemasukan hospital, dan sesetengah caruman terpakai. Keperluan telah disemak dari semasa ke semasa, jadi semak apa yang terpakai kepada pekerja anda.
+
+### Penginapan dan kebajikan
+Majikan amnya bertanggungjawab menyediakan penginapan sesuai yang memenuhi piawaian minimum, yang boleh menjadi kos yang besar. Rancang penginapan sebelum pekerja tiba.
+
+## 4. Penuhi tanggungjawab anda sebagai majikan
+
+Semak portal rasmi untuk peraturan semasa sebelum anda menjanjikan pekerjaan kepada mana-mana pekerja. Kemudian pastikan anda boleh memenuhi setiap tanggungjawab ini sejak hari pertama.
+
+### Kontrak pekerjaan yang betul
+Pekerja asing amnya berhak mendapat kontrak bertulis yang menyatakan pekerjaan, gaji, waktu bekerja dan terma lain, dalam bahasa yang mereka fahami. Panduan kami tentang mengambil pekerja pertama di Malaysia merangkumi asas kontrak yang juga terpakai di sini.
+
+### Perlindungan undang-undang pekerjaan
+Pekerja asing amnya mempunyai perlindungan di bawah undang-undang pekerjaan Malaysia, seperti gaji tepat pada masanya, hari rehat, cuti dan had ke atas potongan. Lihat panduan kami tentang cuti pekerja dan tentang menamatkan perkhidmatan pekerja untuk peraturan yang terpakai kepada pekerja anda.
+
+### Bayar tepat pada masanya, melalui saluran yang betul
+Bayar gaji sepenuhnya dan tepat pada masanya, sebaik-baiknya ke dalam akaun bank pekerja, dan simpan slip gaji serta rekod. Potongan tanpa kebenaran dan gaji lewat antara aduan yang paling lazim.
+
+### Jangan sekali-kali menahan pasport pekerja
+Majikan amnya dilarang menahan pasport atau dokumen perjalanan pekerja, dan berbuat demikian boleh menjadi satu kesalahan serta tanda buruh paksa. Sediakan tempat selamat untuk pekerja menyimpan dokumen mereka sendiri.
+
+> Jangan sekali-kali menganggap kelulusan pekerja asing sebagai halangan sekali sahaja. Setiap permit ada tarikh tamat, setiap pekerja terikat kepada majikan dan peranan yang diluluskan, dan anda kekal bertanggungjawab bagi pembaharuan, pemeriksaan perubatan, insurans dan menyimpan rekod yang tepat. Kelalaian anda boleh menyebabkan pekerja anda berada di negara ini secara tidak sah dan mendedahkan anda kepada penalti.
+
+### Permit, pemeriksaan perubatan dan pembaharuan
+Pekerja memerlukan pas kerja atau permit yang sah bagi majikan yang diluluskan, dan amnya tertakluk kepada saringan perubatan semasa ketibaan dan secara berkala. Catat setiap tarikh tamat dalam diari, dan mulakan pembaharuan lebih awal.
+
+### Jangan tukar pekerjaan tanpa kelulusan
+Pekerja yang berpindah ke majikan, sektor atau peranan lain tanpa kelulusan mungkin melanggar permitnya. Semak sebelum menugaskan semula pekerja.
+
+## 5. Sediakan penginapan dan tempat kerja yang selamat
+
+### Piawaian penginapan
+Jika anda menyediakan penginapan, ia amnya dijangka memenuhi piawaian minimum untuk ruang, keselamatan, sanitasi dan kemudahan, di bawah perundangan berkaitan. Penginapan yang sesak, tidak selamat atau tidak bersih ialah punca lazim tindakan penguatkuasaan.
+
+### Keselamatan pekerjaan
+Anda mempunyai kewajipan yang sama untuk menyediakan tempat kerja yang selamat kepada pekerja asing seperti kepada kakitangan tempatan, termasuk latihan dalam bahasa yang mereka fahami, peralatan keselamatan dan arahan. Pekerja asing sering bekerja dalam pekerjaan berisiko lebih tinggi, jadi ini penting.
+
+### Hormat dan layanan adil
+Layan pekerja dengan adil, beri mereka cara untuk membangkitkan masalah, dan elakkan amalan yang kelihatan seperti buruh paksa atau eksploitasi. Selain risiko undang-undang, layanan buruk menjejaskan pengekalan dan reputasi anda dengan pembeli yang mengaudit rantaian bekalan mereka.
+
+## 6. Ketahui penalti jika tersilap
+
+### Pengambilan tanpa permit
+Mengambil orang yang tiada kebenaran sah untuk bekerja ialah satu kesalahan, dan penalti boleh termasuk denda besar bagi setiap pekerja, pemenjaraan dan akibat lain. Jumlah penalti dan penguatkuasaan telah disemak, jadi semak peruntukan semasa dengan pihak berkuasa.
+
+### Pelanggaran lain
+Kegagalan memenuhi obligasi insurans, penginapan, kontrak atau gaji boleh membawa kepada denda, penarikan balik kuota dan disenaraihitamkan daripada permohonan akan datang. Pelanggaran berulang atau serius boleh mengakibatkan pendakwaan.
+
+### Risiko menyembunyikan pekerja dan pemerdagangan
+Menahan pekerja dalam keadaan yang setara buruh paksa atau pemerdagangan ialah perkara jenayah yang serius. Jika anda tidak pasti tentang sesuatu aturan pengambilan, berhenti dan dapatkan nasihat.
+
+## 7. Pertimbangkan alternatif
+
+### Pengambilan dan pengekalan tempatan
+Gaji lebih baik, waktu fleksibel, latihan dan kemajuan yang jelas boleh meluaskan kumpulan buruh tempatan anda. Semak geran dan insentif yang tersedia dalam panduan kami tentang geran dan pembiayaan PKS.
+
+### Automasi dan penambahbaikan proses
+Sesetengah tugas boleh dikurangkan dengan peralatan, perisian atau perubahan proses, kadangkala dengan sokongan kewangan. Pelaburan sekali sahaja mungkin kurang kosnya daripada kos terkumpul levi, penginapan dan pematuhan.
+
+### Penyumberan luar
+Mengontrak penyedia perkhidmatan pakar boleh memindahkan beban pematuhan kepada perniagaan yang sudah mempunyai lesen, sistem dan pekerja, walaupun anda masih perlu menyemak bahawa mereka diberi kuasa dengan sewajarnya.
+
+Jika anda mencari peguam, penasihat sumber manusia atau penyedia perkhidmatan berlesen, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pelanggan dan rakan niaga menemui serta mengesahkan perniagaan anda.
+
+## Kesilapan lazim PKS Malaysia semasa mengambil pekerja asing
+
+- **Menggunakan ejen tanpa lesen.** Membayar orang tengah untuk kuota atau pekerja tanpa dokumen yang betul boleh menelan kos jauh lebih tinggi daripada yuran itu apabila berlaku masalah.
+- **Membiarkan permit luput.** Permit yang tamat menjadikan pekerja tidak sah dan mendedahkan anda kepada penalti, jadi catat setiap pembaharuan dalam diari.
+- **Memandang rendah jumlah kos.** Levi, insurans, penginapan, pemeriksaan perubatan dan yuran agensi bertambah, jadi buat bajet sebelum anda memohon.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Sahkan bahawa sektor dan jenis pekerjaan anda boleh mengambil pekerja asing, dan semak peraturan semasa di portal rasmi.
+- **Seterusnya:** Kira jumlah kos bagi setiap pekerja, termasuk levi, insurans, penginapan dan yuran pengambilan, dan bandingkan dengan pengambilan tempatan dan automasi.
+- **Kemudian:** Sediakan dokumen, pelan penginapan dan kontrak pekerjaan anda, dan gunakan hanya saluran yang dilesenkan dengan sewajarnya.
+- **Selepas kelulusan:** Simpan kalendar tarikh tamat permit dan perubatan, simpan rekod, dan layan pekerja dengan adil.
+
+Mengambil pekerja asing boleh menyelesaikan masalah buruh yang sebenar, tetapi hanya bagi majikan yang sanggup mengikut setiap peraturan dan membajetkan kos penuh.`,
+        faqs: [
+          {
+            question: "Bolehkah mana-mana perniagaan Malaysia mengambil pekerja asing?",
+            answer:
+              "Tidak. Pekerja asing amnya dibenarkan hanya dalam sektor tertentu dan untuk pekerjaan tertentu, dan majikan mesti mendapatkan kelulusan dahulu. Semak dengan Kementerian Sumber Manusia dan Jabatan Imigresen sama ada perniagaan anda layak.",
+          },
+          {
+            question: "Adakah saya memerlukan kelulusan sebelum membawa masuk pekerja asing?",
+            answer:
+              "Ya. Anda amnya memerlukan kelulusan kuota sebelum anda boleh membawa masuk pekerja, dan permohonan dibuat melalui sistem dalam talian rasmi kerajaan. Proses dan sistem berubah, jadi sahkan langkah semasa di portal rasmi.",
+          },
+          {
+            question: "Apakah levi pekerja asing?",
+            answer:
+              "Ia ialah caj tahunan yang amnya dibayar majikan bagi setiap pekerja asing, yang berbeza mengikut sektor dan telah dalam semakan, termasuk cadangan sistem berbilang peringkat. Sahkan kadar semasa bagi sektor anda dengan pihak berkuasa.",
+          },
+          {
+            question: "Apakah kos yang patut saya bajetkan selain gaji?",
+            answer:
+              "Levi, yuran agensi pengambilan, saringan perubatan, yuran permit dan visa, insurans, penginapan dan perjalanan. Majikan yang bertanggungjawab menanggung kos yang mereka dikehendaki dan tidak menolaknya kepada pekerja dengan cara yang dilarang peraturan.",
+          },
+          {
+            question: "Adakah saya bertanggungjawab menyediakan penginapan untuk pekerja asing?",
+            answer:
+              "Majikan amnya bertanggungjawab menyediakan penginapan sesuai yang memenuhi piawaian minimum, atau memastikan penginapan pekerja memenuhinya. Semak keperluan semasa dan rancang penginapan sebelum pekerja tiba.",
+          },
+          {
+            question: "Bolehkah saya menyimpan pasport pekerja saya untuk keselamatan?",
+            answer:
+              "Tidak. Majikan amnya dilarang menahan pasport atau dokumen perjalanan pekerja, dan berbuat demikian boleh menjadi satu kesalahan serta tanda buruh paksa. Sediakan tempat selamat untuk pekerja menyimpan dokumen mereka sendiri.",
+          },
+          {
+            question: "Apa yang berlaku jika saya mengambil pekerja tanpa permit yang sah?",
+            answer:
+              "Ia satu kesalahan, dan penalti boleh termasuk denda besar bagi setiap pekerja, pemenjaraan dan akibat lain. Jumlah dan penguatkuasaan berubah, jadi semak peruntukan semasa, dan jangan sekali-kali mengambil orang tanpa kebenaran sah untuk bekerja.",
+          },
+          {
+            question: "Adakah terdapat alternatif kepada mengambil pekerja asing?",
+            answer:
+              "Ya. Anda boleh menambah baik gaji dan keadaan untuk menarik kakitangan tempatan, melabur dalam automasi atau penambahbaikan proses, atau menyumber luar kepada penyedia perkhidmatan yang diberi kuasa dengan sewajarnya. Bandingkan jumlah kos setiap satu sebelum membuat keputusan.",
+          },
+        ],
+      },
+    },
+  },
 ];

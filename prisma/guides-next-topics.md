@@ -15,16 +15,16 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Staying Compliant with SSM: Annual Returns, Financial Statements, and Company Records**
-   — What a Malaysian company (Sdn Bhd) and a registered business must keep
-   filing after incorporation: the annual return and financial statements
-   deadlines, keeping the registered address and director details current,
-   beneficial ownership reporting, business registration renewals for sole
-   proprietors and partnerships, and the penalties for falling behind.
+1. **Writing Contracts and Terms and Conditions for Your Small Business in Malaysia**
+   — Why a small business needs written terms, and what goes into them:
+   customer sales terms, service agreements, supplier and subcontractor
+   contracts, payment, delivery, warranty and liability clauses, how
+   contracts are formed and enforced under Malaysian law, when stamp duty
+   or a lawyer's review matters, and how to keep signed copies safely.
 
-2. **Halal Certification in Malaysia: What Food and Product SMEs Need to Know**
-   — When a food, beverage, or consumer-product business needs halal
-   certification, how the JAKIM/state religious department process works
-   (the application, premises and ingredient checks, fees, validity and
-   renewal), the rules on using the halal logo and claims, and how to avoid
-   the common reasons applications are delayed or rejected.
+2. **Tax Deductions and Incentives for Malaysian SMEs: What You Can Claim**
+   — What a small business can generally deduct when working out taxable
+   income: allowable versus non-allowable expenses, capital allowances on
+   equipment, staff costs and training, common SME-specific incentives and
+   the lower SME corporate tax rate, the records needed to support a claim,
+   and why to confirm current rules with LHDN or an accountant.
