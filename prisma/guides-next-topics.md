@@ -15,16 +15,16 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Staying Compliant with SSM: Annual Returns, Financial Statements, and Company Records**
-   — What a Malaysian company (Sdn Bhd) and a registered business must keep
-   filing after incorporation: the annual return and financial statements
-   deadlines, keeping the registered address and director details current,
-   beneficial ownership reporting, business registration renewals for sole
-   proprietors and partnerships, and the penalties for falling behind.
+1. **Closing a Business in Malaysia: Deregistration, Strike-Off, and Final Obligations**
+   — How to wind down properly: closing a sole proprietorship or
+   partnership with SSM versus striking off or winding up a company,
+   settling staff, EPF/SOCSO/EIS, tax and SST obligations, final accounts
+   and record retention, cancelling licences and accounts, and the risks of
+   simply abandoning a business.
 
-2. **Halal Certification in Malaysia: What Food and Product SMEs Need to Know**
-   — When a food, beverage, or consumer-product business needs halal
-   certification, how the JAKIM/state religious department process works
-   (the application, premises and ingredient checks, fees, validity and
-   renewal), the rules on using the halal logo and claims, and how to avoid
-   the common reasons applications are delayed or rejected.
+2. **Workplace Safety for Malaysian SMEs: What the Occupational Safety and Health Act Requires**
+   — The employer's basic duties under the Occupational Safety and Health
+   Act 1994 (as amended): safety policy and risk assessment, safety and
+   health officers or committees where required, reporting accidents,
+   training and protective equipment, special concerns for factories,
+   kitchens and construction sites, and the penalties for breaches.
