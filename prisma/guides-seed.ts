@@ -7699,4 +7699,1101 @@ Mengutip apa yang terhutang kepada anda kebanyakannya tentang bersikap jelas seb
       },
     },
   },
+  {
+    slug: "closing-a-business-in-malaysia",
+    title: "Closing a Business in Malaysia: Deregistration, Strike-Off, and Final Obligations",
+    seoTitle: "Closing a Business in Malaysia: Deregistration Guide",
+    seoDescription:
+      "How to close a Malaysian business properly: terminating registration, striking off or winding up, staff, tax and licence duties, and final records.",
+    coverImage: {
+      file: "closing-a-business-in-malaysia-cover.webp",
+      mimeType: "image/webp",
+      alt: "A woman in a white jacket sitting thoughtfully at a desk with a laptop, colour swatches and a notebook",
+      altTranslations: {
+        zh: "一位身穿白色外套的女士若有所思地坐在书桌前，桌上有笔记本电脑、色卡和笔记本",
+        ms: "Seorang wanita berjaket putih duduk termenung di meja dengan komputer riba, sampel warna dan buku nota",
+      },
+    },
+    contentImages: {
+      "closing-checklist": {
+        file: "closing-a-business-in-malaysia-checklist.webp",
+        mimeType: "image/webp",
+        alt: "Close-up of a hand writing in a planner notebook beside a laptop and a stack of sticky notes",
+        altTranslations: {
+          zh: "手在笔记本电脑和一叠便利贴旁的记事本上书写的特写",
+          ms: "Gambar dekat tangan menulis dalam buku perancang di sebelah komputer riba dan setimbun nota lekat",
+        },
+        after: "Decide whether you are closing a solvent business or an insolvent one before you file anything, because the route is different.",
+        afterTranslations: {
+          zh: "在递交任何文件之前，先确定您关闭的是有偿债能力的企业还是资不抵债的企业，因为两者的途径不同。",
+          ms: "Tentukan sama ada anda menutup perniagaan yang solven atau yang tidak solven sebelum anda memfailkan apa-apa, kerana laluannya berbeza.",
+        },
+      },
+    },
+    excerpt:
+      "Stopping trading is not the same as closing a business, and simply walking away can leave you with continuing filings, penalties, and personal exposure. This guide explains how to wind down a Malaysian business properly: choosing the right route, closing a sole proprietorship or partnership with SSM, striking off or winding up a company, and settling staff, tax, licences, and records.",
+    body: `When a business stops making sense, many owners just stop opening the shop. The signboard comes down, the phone goes unanswered, and everything else is left for later. But the registration is still alive, the annual obligations keep arriving, and notices go to an address nobody checks. Closing properly takes some effort, but it ends your exposure and leaves your name clean for the next venture.
+
+This is general information, not legal or tax advice. Procedures, forms, fees, and conditions for deregistration, strike-off, and winding up change from time to time and depend on your structure and circumstances, so confirm the current position with SSM, LHDN, and other authorities, or with a licensed company secretary, accountant, or lawyer, before you act.
+
+## 1. Decide how you are closing
+
+### Stopping trading versus closing
+Stopping trading only means you no longer earn income. Legally, a sole proprietorship or partnership still exists until its registration is terminated, and a company still exists until it is dissolved. Until then, obligations and potential liabilities continue.
+
+### Solvent or insolvent
+Decide whether you are closing a solvent business or an insolvent one before you file anything, because the route is different. A solvent business can pay all its debts and may be wound down or struck off in an orderly way. An insolvent business cannot, and may need formal insolvency steps with a licensed professional. Our guide on collecting late payments is worth reading first if customers still owe you money.
+
+### Get advice early
+If you have significant debts, personal guarantees, disputes, or employees owed money, speak to a lawyer or a licensed insolvency practitioner before you do anything irreversible.
+
+## 2. Wind down operations in an orderly way
+
+### Make a closing plan and timeline
+List what must be done, who does it, and by when: customers, suppliers, staff, landlord, bank, licences, tax, and records. A written plan stops things being forgotten.
+
+### Tell customers and suppliers
+Give customers notice of the closing date, complete or refund outstanding orders and deposits, and settle supplier accounts, so you do not leave unfinished obligations behind.
+
+### Collect what you are owed and sell assets
+Chase outstanding invoices and decide what to do with stock and equipment. Keep records of every asset sale, since they may affect tax.
+
+### Check contracts and leases
+Review notice periods and exit terms in your tenancy, loans, and supplier contracts, and give notice on time. Our guide on commercial tenancy agreements explains what to look for in a lease, including reinstatement obligations.
+
+## 3. Close a sole proprietorship or partnership
+
+### Terminate the business registration
+A business registered under the Registration of Businesses Act 1956 is generally closed by notifying SSM that the business has ceased, using SSM's online services, and following the current procedure and fees. Do not just let the registration expire without confirming what the rules require.
+
+### Why a proper termination matters
+A business that simply lapses can still show up in records, and it can cause problems when you want to register a new business, apply for credit, or deal with the tax authorities.
+
+### Personal liability continues for past debts
+A sole proprietor and the partners in a partnership are personally responsible for the business's debts. Closing the registration does not erase debts you already owe, so pay them or agree a plan.
+
+## 4. Close a company: strike-off or winding up
+
+### Striking off a company that is not operating
+SSM can strike a company's name off the register in certain cases, including where the company is not carrying on business or is not in operation, and an application can be made by the company's directors or members. SSM publishes guidelines setting out the conditions, which typically include having no outstanding legal proceedings, and in practice, clearing assets, liabilities, and tax matters. The conditions and relief campaigns change, so check SSM's current guidelines.
+
+### Voluntary winding up
+If a company still has assets, share capital, or liabilities to deal with, a formal winding up with a liquidator is usually required. A solvent company can usually be wound up by its members, while an insolvent one follows a creditors' process. A licensed liquidator is generally needed, and the process takes longer and costs more.
+
+### What happens after dissolution
+Once a company is dissolved, it ceases to exist, but liabilities that directors or members already had are generally preserved, and in some cases a company can be restored to the register through a court application within a limited period. Do not treat dissolution as a way to escape debts.
+
+### Do it before the problems pile up
+Strike-off typically requires that the company's filings are up to date, so missed annual returns and financial statements need to be dealt with first. See our guide on SSM compliance.
+
+> Closing a business does not make its obligations disappear, it only decides who deals with them and when. Settle staff, tax, and creditors before you apply to deregister, because after dissolution, fixing a problem can mean court proceedings.
+
+## 5. Settle your obligations to staff
+
+### Final pay and termination benefits
+Pay outstanding salary, unused leave entitlements, and any termination benefits the law or contracts require. Our guides on terminating an employee and on employee leave explain the rules, and a closure may amount to a retrenchment.
+
+### Notice periods
+Give notice as required by the contract or the law, and be careful with the process. Rushed closures are a common source of employment claims.
+
+### EPF, SOCSO, and EIS
+Pay all outstanding contributions and notify the relevant bodies of the cessation of employment and of your business, as required. Our guide on hiring your first employee covers these obligations.
+
+### Foreign workers
+If you employ foreign workers, there are additional steps for their permits and repatriation, so check with the authorities and our guide on hiring foreign workers.
+
+### Give employees what they need
+Provide payslips, a letter of service where appropriate, and tax-related documents so staff can manage their own affairs.
+
+## 6. Close your tax and other accounts
+
+### Income tax
+Tell the Inland Revenue Board (LHDN) that you have ceased business, file your final returns, and settle any tax due. There may be a requirement to notify within a set period, so ask LHDN or your accountant about the current timelines. Our guide on the small business tax calendar explains the regular cycle.
+
+### SST and e-invoicing
+If you are registered for sales and service tax, you generally need to apply to deregister with the Royal Malaysian Customs Department and settle any tax due. If you issue e-invoices, make sure your final documents are in order. See our guides on SST and e-invoicing.
+
+### Licences and permits
+Cancel or return business licences and permits with the local council and other authorities, and remove signage as required. See our guide on business licences.
+
+### Bank, utilities, and insurance
+Close the business bank account only after all payments have cleared, and cancel utilities, subscriptions, and insurance policies, taking care not to cancel cover while liabilities remain.
+
+### Trademarks and domain names
+Decide what to do with your brand, domain, and social accounts, since you may want to keep, sell, or transfer them.
+
+## 7. Keep your records after closing
+
+### How long to keep them
+Records need to be kept for a period after closing, which LHDN has long expected to be around seven years, though you should confirm the current requirement. See our bookkeeping guide for what to keep.
+
+### Who holds them
+Decide who will store the records, and make sure someone can access them if a tax authority asks. If a company is wound up, the liquidator or a person responsible will generally hold them.
+
+### Personal data
+Dispose of personal data securely when you no longer need it, in line with our guide on PDPA compliance.
+
+If you need help from a company secretary, accountant, lawyer, or insolvency professional, you can [browse the directory](/en) for local professionals, and when you start your next venture, [creating a free business listing](/en/signup) helps customers find and verify it.
+
+## Common mistakes Malaysian SMEs make when closing
+
+- **Walking away without deregistering.** The registration stays alive, obligations keep arriving, and notices go to an address nobody checks.
+- **Ignoring staff and tax obligations.** Unpaid wages and unfiled returns do not go away, and they can follow you personally.
+- **Applying to strike off with unresolved issues.** Debts, missing filings, and open disputes can stall or sink an application, or surface later.
+
+## Where to start
+
+- **This week:** Decide whether you are closing a solvent or insolvent business, and speak to an accountant or lawyer if you are unsure.
+- **Next:** Make a closing plan covering customers, suppliers, staff, landlord, tax, licences, and records.
+- **Then:** Settle staff and creditors, file final returns, and deregister for any taxes and licences.
+- **Finally:** Terminate the business registration or apply to strike off or wind up the company, and keep your records safe.
+
+A tidy closing takes a few weeks of effort, and saves years of loose ends.`,
+    faqs: [
+      {
+        question: "Is stopping trading the same as closing a business in Malaysia?",
+        answer:
+          "No. Stopping trading only means you no longer earn income. A sole proprietorship or partnership still exists until its registration is terminated, and a company still exists until it is dissolved, so filings and potential liabilities can continue.",
+      },
+      {
+        question: "How do I close a sole proprietorship or partnership?",
+        answer:
+          "Generally by notifying SSM that the business has ceased, using SSM's online services and the current procedure and fees. Settle your debts first, since closing the registration does not erase them.",
+      },
+      {
+        question: "What is the difference between striking off and winding up a company?",
+        answer:
+          "Striking off is a simpler route SSM can use for a company that is not carrying on business, subject to conditions. A company that still has assets, share capital, or liabilities usually needs a formal winding up with a licensed liquidator. Check SSM's current guidelines.",
+      },
+      {
+        question: "Can I escape a company's debts by striking it off?",
+        answer:
+          "Not reliably. Dissolution does not generally remove liabilities that directors or members already had, and a company can sometimes be restored to the register through a court application. Settle debts and obligations before you apply.",
+      },
+      {
+        question: "What do I owe my employees when I close?",
+        answer:
+          "Outstanding salary, unused leave entitlements, and any termination benefits required by law or contract, along with proper notice, EPF, SOCSO, and EIS contributions. A closure may amount to a retrenchment, so follow the correct process.",
+      },
+      {
+        question: "Do I need to tell LHDN and Customs that I have stopped?",
+        answer:
+          "Generally yes. Notify LHDN that you have ceased business, file your final returns, and settle tax due. If you are registered for SST, you generally need to apply to deregister. Confirm current timelines with the authorities.",
+      },
+      {
+        question: "How long should I keep business records after closing?",
+        answer:
+          "LHDN has long expected records to be kept for about seven years, though you should confirm the current requirement. Decide who will store them and make sure they can be produced if a tax authority asks.",
+      },
+      {
+        question: "Should I get professional help to close my business?",
+        answer:
+          "It is advisable, especially for a company, or if you have debts, guarantees, disputes, or employees owed money. A licensed company secretary, accountant, lawyer, or insolvency practitioner can choose the right route and avoid costly mistakes.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "在马来西亚结束业务：注销登记、除名与最后的义务",
+        excerpt:
+          "停止营业并不等于结束业务，一走了之可能让您背上持续的递交义务、罚款和个人风险。本指南说明如何妥善结束马来西亚的企业：选择正确的途径、向 SSM 注销独资或合伙企业、将公司除名或清盘，以及处理员工、税务、执照和记录。",
+        body: `当一门生意不再有意义时，许多企业主只是不再开门营业。招牌拆下，电话无人接听，其余的都留待日后。但注册仍然有效，每年的义务继续寄来，通知被寄到没有人查看的地址。妥善结束需要花些功夫，但它能终结您的风险，并让您的名字在下一次创业时保持清白。
+
+以下仅为一般资讯，并非法律或税务意见。注销登记、除名和清盘的程序、表格、费用和条件会不时变动，并取决于您的结构和情况，所以在采取行动之前，请向 SSM、LHDN 和其他主管机构，或向持牌公司秘书、会计师或律师确认最新情况。
+
+## 1. 决定您如何结束
+
+### 停止营业与结束业务
+停止营业只意味着您不再赚取收入。在法律上，独资或合伙企业在其注册被终止之前仍然存在，而公司在被解散之前仍然存在。在此之前，义务和潜在的责任会持续。
+
+### 有偿债能力还是资不抵债
+在递交任何文件之前，先确定您关闭的是有偿债能力的企业还是资不抵债的企业，因为两者的途径不同。有偿债能力的企业可以偿还所有债务，可以有序地结束或除名。资不抵债的企业则无法做到，可能需要与持牌专业人士一起采取正式的破产步骤。如果客户仍然欠您钱，建议先阅读我们关于追收逾期货款的指南。
+
+### 及早寻求意见
+如果您有大额债务、个人担保、纠纷或拖欠员工款项，请在做任何不可逆转的事情之前，先咨询律师或持牌破产从业人员。
+
+## 2. 有序地结束营运
+
+### 制定结束计划和时间表
+列出必须做的事、由谁来做、何时完成：客户、供应商、员工、房东、银行、执照、税务和记录。书面计划可以避免遗漏。
+
+### 通知客户和供应商
+向客户发出结束日期的通知，完成或退还未完成的订单和订金，并结清供应商账目，这样您就不会留下未完成的义务。
+
+### 收回欠款并出售资产
+追收未付的发票，并决定如何处理存货和设备。请保存每一次资产出售的记录，因为它们可能影响税务。
+
+### 查核合约和租约
+检视您的租约、贷款和供应商合约中的通知期和退出条款，并按时发出通知。我们关于商业租赁协议的指南说明了在租约中要留意什么，包括还原义务。
+
+## 3. 结束独资或合伙企业
+
+### 终止企业注册
+根据《1956年企业注册法令》注册的企业，一般通过使用 SSM 的在线服务通知 SSM 业务已经终止，并遵循现行的程序和费用来关闭。切勿在没有确认规则要求的情况下，就让注册自行过期。
+
+### 为什么正式终止很重要
+自行失效的企业仍可能出现在记录中，而当您想注册新企业、申请信贷或与税务机关打交道时，可能造成麻烦。
+
+### 过去的债务，个人责任仍然继续
+独资业主和合伙企业的合伙人对企业的债务负个人责任。关闭注册并不会抹去您已经欠下的债务，所以请偿还或协议一个计划。
+
+## 4. 结束公司：除名或清盘
+
+### 将没有营运的公司除名
+在某些情况下，包括公司没有经营业务或没有运作时，SSM 可以把公司的名字从登记册上除去，申请可由公司的董事或股东提出。SSM 发布了列明条件的指南，通常包括没有尚未了结的法律程序，而在实践中，还需要清理资产、负债和税务事项。条件和宽减活动会变动，所以请查看 SSM 现行的指南。
+
+### 自愿清盘
+如果公司仍有资产、股本或负债要处理，通常需要由清盘人正式清盘。有偿债能力的公司通常可由股东清盘，而资不抵债的公司则遵循债权人程序。一般需要持牌清盘人，过程更长，费用也更高。
+
+### 解散之后会怎样
+公司一旦解散，就不复存在，但董事或股东原有的责任一般仍然保留，在某些情况下，公司可以在有限的期限内通过法庭申请被恢复到登记册上。不要把解散当作逃避债务的方式。
+
+### 在问题堆积之前处理
+除名通常要求公司的递交文件是最新的，所以错过的年度报表和财务报表需要先处理。请参阅我们关于 SSM 合规的指南。
+
+> 结束业务并不会让它的义务消失，只是决定由谁、何时去处理它们。在申请注销之前，先结清员工、税务和债权人，因为解散之后，要解决问题可能意味着诉讼。
+
+## 5. 结清对员工的义务
+
+### 最后的薪水和终止福利
+支付尚未支付的薪水、未使用的休假权益，以及法律或合约要求的任何终止福利。我们关于终止员工雇佣和员工休假的指南说明了规则，而关闭业务可能构成裁员。
+
+### 通知期
+按合约或法律的要求发出通知，并小心处理流程。仓促的结业是雇佣申诉的常见来源。
+
+### EPF、SOCSO 和 EIS
+缴清所有未付的供款，并按要求向相关机构通报雇佣的终止和您企业的结束。我们关于雇用第一位员工的指南涵盖了这些义务。
+
+### 外籍劳工
+如果您雇有外籍劳工，他们的准证和遣返还有额外的步骤，所以请向主管机构查询，并参阅我们关于雇用外籍劳工的指南。
+
+### 给员工他们需要的文件
+提供薪资单、适当的服务证明信和与税务有关的文件，让员工可以处理自己的事务。
+
+## 6. 结清税务和其他账户
+
+### 所得税
+通知内陆税收局（LHDN）您已停止营业，递交最后的报税表，并缴清应缴的税款。可能有在限期内通知的要求，所以请向 LHDN 或您的会计师询问现行的时间表。我们关于小企业税务日历的指南说明了常规的周期。
+
+### SST 与电子发票
+如果您已注册销售与服务税，一般需要向皇家马来西亚关税局申请注销登记并缴清应缴的税款。如果您开出电子发票，请确保最后的文件井然有序。请参阅我们关于 SST 和电子发票的指南。
+
+### 执照和许可证
+向地方政府和其他主管机构取消或交还营业执照和许可证，并按要求拆除招牌。请参阅我们关于营业执照的指南。
+
+### 银行、水电和保险
+只有在所有付款都已结清之后，才关闭企业银行账户，并取消水电、订阅和保险单，同时注意在仍有责任时不要取消保障。
+
+### 商标和域名
+决定如何处理您的品牌、域名和社交账号，因为您可能想保留、出售或转让它们。
+
+## 7. 结业后保存您的记录
+
+### 保存多久
+记录在结业后需要保存一段时间，LHDN 长期以来期望约为七年，不过您应确认现行要求。请参阅我们的簿记指南，了解该保存什么。
+
+### 由谁保管
+决定由谁来保存记录，并确保税务机关要求时有人可以取得。如果公司被清盘，清盘人或负责的人一般会保管它们。
+
+### 个人数据
+当您不再需要个人数据时，请依照我们关于 PDPA 合规的指南，安全地处理掉。
+
+如果您需要公司秘书、会计师、律师或破产专业人士的协助，可以[浏览名录](/zh)寻找本地专业人士，而当您开始下一次创业时，[创建免费的企业列表](/zh/signup)可以帮助客户找到并核实它。
+
+## 马来西亚中小企业结业时常犯的错误
+
+- **一走了之而没有注销。** 注册依然有效，义务继续寄来，通知被寄到没有人查看的地址。
+- **忽略员工和税务义务。** 未付的工资和未递交的报税表不会消失，而且可能追着您个人而来。
+- **在问题未解决时申请除名。** 债务、缺失的递交文件和未了结的纠纷，可能让申请停滞或失败，或日后浮现。
+
+## 从哪里开始
+
+- **本周：**确定您关闭的是有偿债能力还是资不抵债的企业，不确定的话请咨询会计师或律师。
+- **接着：**制定结束计划，涵盖客户、供应商、员工、房东、税务、执照和记录。
+- **然后：**结清员工和债权人，递交最后的报税表，并注销各项税务和执照。
+- **最后：**终止企业注册，或申请将公司除名或清盘，并妥善保存您的记录。
+
+整齐地结束需要几个星期的功夫，却能省下多年的遗留问题。`,
+        faqs: [
+          {
+            question: "在马来西亚，停止营业等于结束业务吗？",
+            answer:
+              "不等于。停止营业只意味着您不再赚取收入。独资或合伙企业在其注册被终止之前仍然存在，公司在被解散之前仍然存在，所以递交义务和潜在责任可能继续。",
+          },
+          {
+            question: "如何结束独资或合伙企业？",
+            answer:
+              "一般是使用 SSM 的在线服务，按现行程序和费用通知 SSM 业务已经终止。请先偿还债务，因为关闭注册并不会抹去它们。",
+          },
+          {
+            question: "公司除名和清盘有什么区别？",
+            answer:
+              "除名是 SSM 对没有经营业务的公司可以采用的较简单途径，须符合条件。仍有资产、股本或负债的公司，通常需要由持牌清盘人正式清盘。请查看 SSM 现行的指南。",
+          },
+          {
+            question: "把公司除名就可以逃避它的债务吗？",
+            answer:
+              "不可靠。解散一般不会免除董事或股东原有的责任，公司有时也可以通过法庭申请被恢复到登记册上。请在申请之前先结清债务和义务。",
+          },
+          {
+            question: "结业时我欠员工什么？",
+            answer:
+              "尚未支付的薪水、未使用的休假权益，以及法律或合约要求的任何终止福利，另加适当的通知、EPF、SOCSO 和 EIS 供款。关闭业务可能构成裁员，所以请遵循正确的程序。",
+          },
+          {
+            question: "我需要告知 LHDN 和关税局我已经停止了吗？",
+            answer:
+              "一般需要。通知 LHDN 您已停止营业，递交最后的报税表，并缴清应缴的税款。如果您已注册 SST，一般需要申请注销登记。请向主管机构确认现行的时间表。",
+          },
+          {
+            question: "结业后企业记录应保存多久？",
+            answer:
+              "LHDN 长期以来期望记录保存约七年，不过您应确认现行要求。请决定由谁来保存，并确保税务机关要求时可以提供。",
+          },
+          {
+            question: "我应该请专业人士协助结束业务吗？",
+            answer:
+              "建议这样做，尤其是公司，或您有债务、担保、纠纷或拖欠员工款项时。持牌公司秘书、会计师、律师或破产从业人员可以选择正确的途径，避免代价高昂的错误。",
+          },
+        ],
+      },
+      ms: {
+        title: "Menutup Perniagaan di Malaysia: Penyahdaftaran, Pembatalan Nama dan Obligasi Akhir",
+        excerpt:
+          "Berhenti berniaga tidak sama dengan menutup perniagaan, dan sekadar berlalu pergi boleh meninggalkan anda dengan pemfailan berterusan, penalti dan pendedahan peribadi. Panduan ini menerangkan cara menamatkan perniagaan Malaysia dengan betul: memilih laluan yang tepat, menutup pemilikan tunggal atau perkongsian dengan SSM, membatalkan nama atau menggulungkan syarikat, dan menyelesaikan kakitangan, cukai, lesen dan rekod.",
+        body: `Apabila sesuatu perniagaan tidak lagi masuk akal, ramai pemilik sekadar berhenti membuka kedai. Papan tanda diturunkan, telefon tidak dijawab, dan semua yang lain ditinggalkan untuk kemudian. Tetapi pendaftaran masih hidup, obligasi tahunan terus tiba, dan notis dihantar ke alamat yang tiada siapa semak. Menutup dengan betul memerlukan sedikit usaha, tetapi ia menamatkan pendedahan anda dan memastikan nama anda bersih untuk usaha seterusnya.
+
+Ini ialah maklumat am, bukan nasihat guaman atau cukai. Prosedur, borang, yuran dan syarat bagi penyahdaftaran, pembatalan nama dan penggulungan berubah dari semasa ke semasa dan bergantung pada struktur serta keadaan anda, jadi sahkan kedudukan semasa dengan SSM, LHDN dan pihak berkuasa lain, atau dengan setiausaha syarikat berlesen, akauntan atau peguam, sebelum anda bertindak.
+
+## 1. Tentukan bagaimana anda menutup
+
+### Berhenti berniaga berbanding menutup perniagaan
+Berhenti berniaga hanya bermakna anda tidak lagi memperoleh pendapatan. Dari segi undang-undang, pemilikan tunggal atau perkongsian masih wujud sehingga pendaftarannya ditamatkan, dan syarikat masih wujud sehingga ia dibubarkan. Sehingga itu, obligasi dan liabiliti yang mungkin timbul berterusan.
+
+### Solven atau tidak solven
+Tentukan sama ada anda menutup perniagaan yang solven atau yang tidak solven sebelum anda memfailkan apa-apa, kerana laluannya berbeza. Perniagaan yang solven boleh membayar semua hutangnya dan boleh ditamatkan atau dibatalkan namanya secara teratur. Perniagaan yang tidak solven tidak boleh, dan mungkin memerlukan langkah insolvensi formal dengan profesional berlesen. Panduan kami tentang menuntut bayaran lewat wajar dibaca dahulu jika pelanggan masih terhutang wang kepada anda.
+
+### Dapatkan nasihat lebih awal
+Jika anda mempunyai hutang besar, jaminan peribadi, pertikaian atau pekerja yang terhutang gaji, bercakap dengan peguam atau pengamal insolvensi berlesen sebelum anda melakukan apa-apa yang tidak boleh dipulihkan.
+
+## 2. Hentikan operasi secara teratur
+
+### Buat pelan dan garis masa penutupan
+Senaraikan apa yang mesti dilakukan, siapa yang melakukannya dan bila: pelanggan, pembekal, kakitangan, tuan tanah, bank, lesen, cukai dan rekod. Pelan bertulis menghalang perkara terlupa.
+
+### Maklumkan pelanggan dan pembekal
+Beri pelanggan notis tarikh penutupan, selesaikan atau bayar balik pesanan dan deposit yang belum selesai, dan jelaskan akaun pembekal, supaya anda tidak meninggalkan obligasi yang belum selesai.
+
+### Kutip apa yang terhutang dan jual aset
+Kejar invois tertunggak dan tentukan apa yang perlu dilakukan dengan stok dan peralatan. Simpan rekod setiap jualan aset, kerana ia mungkin menjejaskan cukai.
+
+### Semak kontrak dan sewa
+Semak tempoh notis dan terma keluar dalam sewa, pinjaman dan kontrak pembekal anda, dan beri notis tepat pada masanya. Panduan kami tentang perjanjian penyewaan komersial menerangkan apa yang perlu diperhatikan dalam sewa, termasuk obligasi pemulihan.
+
+## 3. Tutup pemilikan tunggal atau perkongsian
+
+### Tamatkan pendaftaran perniagaan
+Perniagaan yang didaftarkan di bawah Akta Pendaftaran Perniagaan 1956 amnya ditutup dengan memaklumkan SSM bahawa perniagaan telah berhenti, menggunakan perkhidmatan dalam talian SSM, dan mengikut prosedur serta yuran semasa. Jangan biarkan pendaftaran tamat begitu sahaja tanpa mengesahkan apa yang dikehendaki peraturan.
+
+### Mengapa penamatan yang betul penting
+Perniagaan yang sekadar luput masih boleh muncul dalam rekod, dan ia boleh menyebabkan masalah apabila anda mahu mendaftar perniagaan baharu, memohon kredit atau berurusan dengan pihak berkuasa cukai.
+
+### Liabiliti peribadi berterusan bagi hutang lepas
+Pemilik tunggal dan rakan kongsi dalam perkongsian bertanggungjawab secara peribadi terhadap hutang perniagaan. Menutup pendaftaran tidak memadamkan hutang yang sudah anda tanggung, jadi bayarnya atau persetujui satu pelan.
+
+## 4. Tutup syarikat: pembatalan nama atau penggulungan
+
+### Membatalkan nama syarikat yang tidak beroperasi
+SSM boleh membatalkan nama syarikat daripada daftar dalam kes tertentu, termasuk apabila syarikat tidak menjalankan perniagaan atau tidak beroperasi, dan permohonan boleh dibuat oleh pengarah atau ahli syarikat. SSM menyiarkan garis panduan yang menetapkan syarat, yang lazimnya termasuk tiada prosiding undang-undang yang belum selesai, dan dalam praktik, menyelesaikan aset, liabiliti dan perkara cukai. Syarat dan kempen kelonggaran berubah, jadi semak garis panduan semasa SSM.
+
+### Penggulungan sukarela
+Jika syarikat masih mempunyai aset, modal saham atau liabiliti untuk diuruskan, penggulungan formal dengan pelikuidasi biasanya diperlukan. Syarikat yang solven biasanya boleh digulungkan oleh ahlinya, manakala yang tidak solven mengikut proses pemiutang. Pelikuidasi berlesen amnya diperlukan, dan prosesnya lebih lama serta lebih mahal.
+
+### Apa yang berlaku selepas pembubaran
+Apabila syarikat dibubarkan, ia tidak lagi wujud, tetapi liabiliti yang sudah ada pada pengarah atau ahli amnya dikekalkan, dan dalam sesetengah kes syarikat boleh dipulihkan ke dalam daftar melalui permohonan mahkamah dalam tempoh terhad. Jangan menganggap pembubaran sebagai cara melepaskan diri daripada hutang.
+
+### Lakukannya sebelum masalah bertimbun
+Pembatalan nama lazimnya memerlukan pemfailan syarikat yang terkini, jadi penyata tahunan dan penyata kewangan yang terlepas perlu diuruskan dahulu. Lihat panduan kami tentang pematuhan SSM.
+
+> Menutup perniagaan tidak membuatkan obligasinya hilang, ia hanya menentukan siapa yang menguruskannya dan bila. Selesaikan kakitangan, cukai dan pemiutang sebelum anda memohon untuk menyahdaftar, kerana selepas pembubaran, membetulkan masalah boleh bermakna prosiding mahkamah.
+
+## 5. Selesaikan obligasi anda kepada kakitangan
+
+### Gaji akhir dan faedah penamatan
+Bayar gaji tertunggak, hak cuti yang belum digunakan, dan sebarang faedah penamatan yang dikehendaki undang-undang atau kontrak. Panduan kami tentang menamatkan perkhidmatan pekerja dan cuti pekerja menerangkan peraturan, dan penutupan mungkin setara dengan pemberhentian kerja.
+
+### Tempoh notis
+Beri notis seperti yang dikehendaki kontrak atau undang-undang, dan berhati-hati dengan prosesnya. Penutupan yang tergesa-gesa ialah punca lazim tuntutan pekerjaan.
+
+### KWSP, PERKESO dan SIP
+Bayar semua caruman tertunggak dan maklumkan badan berkaitan tentang penamatan pekerjaan dan penutupan perniagaan anda, seperti yang dikehendaki. Panduan kami tentang mengambil pekerja pertama merangkumi obligasi ini.
+
+### Pekerja asing
+Jika anda mengambil pekerja asing, terdapat langkah tambahan untuk permit dan penghantaran pulang mereka, jadi semak dengan pihak berkuasa dan panduan kami tentang mengambil pekerja asing.
+
+### Beri pekerja apa yang mereka perlukan
+Sediakan slip gaji, surat perkhidmatan jika sesuai, dan dokumen berkaitan cukai supaya kakitangan boleh menguruskan hal mereka sendiri.
+
+## 6. Tutup akaun cukai dan akaun lain
+
+### Cukai pendapatan
+Maklumkan Lembaga Hasil Dalam Negeri (LHDN) bahawa anda telah berhenti berniaga, failkan penyata akhir anda, dan jelaskan sebarang cukai yang perlu dibayar. Mungkin terdapat keperluan untuk memaklumkan dalam tempoh tertentu, jadi tanya LHDN atau akauntan anda tentang garis masa semasa. Panduan kami tentang kalendar cukai perniagaan kecil menerangkan kitaran biasa.
+
+### SST dan e-Invois
+Jika anda berdaftar untuk cukai jualan dan perkhidmatan, anda amnya perlu memohon untuk menyahdaftar dengan Jabatan Kastam Diraja Malaysia dan menjelaskan sebarang cukai yang perlu dibayar. Jika anda mengeluarkan e-Invois, pastikan dokumen akhir anda teratur. Lihat panduan kami tentang SST dan e-Invois.
+
+### Lesen dan permit
+Batalkan atau pulangkan lesen dan permit perniagaan kepada pihak berkuasa tempatan dan pihak berkuasa lain, dan alihkan papan tanda seperti yang dikehendaki. Lihat panduan kami tentang lesen perniagaan.
+
+### Bank, utiliti dan insurans
+Tutup akaun bank perniagaan hanya selepas semua bayaran dijelaskan, dan batalkan utiliti, langganan dan polisi insurans, berhati-hati supaya tidak membatalkan perlindungan semasa liabiliti masih ada.
+
+### Tanda dagangan dan nama domain
+Tentukan apa yang perlu dilakukan dengan jenama, domain dan akaun media sosial anda, kerana anda mungkin mahu menyimpan, menjual atau memindahkannya.
+
+## 7. Simpan rekod anda selepas penutupan
+
+### Berapa lama menyimpannya
+Rekod perlu disimpan untuk tempoh selepas penutupan, yang sejak lama dijangka LHDN sekitar tujuh tahun, walaupun anda patut mengesahkan keperluan semasa. Lihat panduan simpan kira kami untuk apa yang perlu disimpan.
+
+### Siapa yang memegangnya
+Tentukan siapa yang akan menyimpan rekod, dan pastikan seseorang boleh mengaksesnya jika pihak berkuasa cukai meminta. Jika syarikat digulungkan, pelikuidasi atau orang yang bertanggungjawab amnya akan memegangnya.
+
+### Data peribadi
+Lupuskan data peribadi dengan selamat apabila anda tidak lagi memerlukannya, selaras dengan panduan kami tentang pematuhan PDPA.
+
+Jika anda memerlukan bantuan daripada setiausaha syarikat, akauntan, peguam atau profesional insolvensi, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan apabila anda memulakan usaha seterusnya, [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pelanggan menemui dan mengesahkannya.
+
+## Kesilapan lazim PKS Malaysia semasa menutup perniagaan
+
+- **Berlalu pergi tanpa menyahdaftar.** Pendaftaran kekal hidup, obligasi terus tiba, dan notis dihantar ke alamat yang tiada siapa semak.
+- **Mengabaikan obligasi kakitangan dan cukai.** Gaji tertunggak dan penyata yang tidak difailkan tidak hilang, dan ia boleh mengikut anda secara peribadi.
+- **Memohon pembatalan nama dengan isu yang belum selesai.** Hutang, pemfailan yang hilang dan pertikaian terbuka boleh menggendala atau menggagalkan permohonan, atau muncul kemudian.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Tentukan sama ada anda menutup perniagaan yang solven atau tidak solven, dan bercakap dengan akauntan atau peguam jika anda tidak pasti.
+- **Seterusnya:** Buat pelan penutupan yang merangkumi pelanggan, pembekal, kakitangan, tuan tanah, cukai, lesen dan rekod.
+- **Kemudian:** Selesaikan kakitangan dan pemiutang, failkan penyata akhir, dan nyahdaftar bagi sebarang cukai dan lesen.
+- **Akhir sekali:** Tamatkan pendaftaran perniagaan atau mohon pembatalan nama atau penggulungan syarikat, dan simpan rekod anda dengan selamat.
+
+Penutupan yang kemas memerlukan usaha beberapa minggu, dan menjimatkan bertahun-tahun urusan yang tergantung.`,
+        faqs: [
+          {
+            question: "Adakah berhenti berniaga sama dengan menutup perniagaan di Malaysia?",
+            answer:
+              "Tidak. Berhenti berniaga hanya bermakna anda tidak lagi memperoleh pendapatan. Pemilikan tunggal atau perkongsian masih wujud sehingga pendaftarannya ditamatkan, dan syarikat masih wujud sehingga dibubarkan, jadi pemfailan dan liabiliti yang mungkin timbul boleh berterusan.",
+          },
+          {
+            question: "Bagaimanakah saya menutup pemilikan tunggal atau perkongsian?",
+            answer:
+              "Amnya dengan memaklumkan SSM bahawa perniagaan telah berhenti, menggunakan perkhidmatan dalam talian SSM serta prosedur dan yuran semasa. Selesaikan hutang anda dahulu, kerana menutup pendaftaran tidak memadamkannya.",
+          },
+          {
+            question: "Apakah perbezaan antara pembatalan nama dan penggulungan syarikat?",
+            answer:
+              "Pembatalan nama ialah laluan lebih mudah yang boleh digunakan SSM bagi syarikat yang tidak menjalankan perniagaan, tertakluk kepada syarat. Syarikat yang masih mempunyai aset, modal saham atau liabiliti biasanya memerlukan penggulungan formal dengan pelikuidasi berlesen. Semak garis panduan semasa SSM.",
+          },
+          {
+            question: "Bolehkah saya melepaskan diri daripada hutang syarikat dengan membatalkan namanya?",
+            answer:
+              "Tidak secara boleh dipercayai. Pembubaran amnya tidak menghapuskan liabiliti yang sudah ada pada pengarah atau ahli, dan syarikat kadangkala boleh dipulihkan ke dalam daftar melalui permohonan mahkamah. Selesaikan hutang dan obligasi sebelum anda memohon.",
+          },
+          {
+            question: "Apakah yang saya terhutang kepada pekerja saya apabila menutup?",
+            answer:
+              "Gaji tertunggak, hak cuti yang belum digunakan, dan sebarang faedah penamatan yang dikehendaki undang-undang atau kontrak, bersama notis yang betul serta caruman KWSP, PERKESO dan SIP. Penutupan mungkin setara dengan pemberhentian kerja, jadi ikut proses yang betul.",
+          },
+          {
+            question: "Adakah saya perlu memberitahu LHDN dan Kastam bahawa saya telah berhenti?",
+            answer:
+              "Amnya ya. Maklumkan LHDN bahawa anda telah berhenti berniaga, failkan penyata akhir, dan jelaskan cukai yang perlu dibayar. Jika anda berdaftar untuk SST, anda amnya perlu memohon untuk menyahdaftar. Sahkan garis masa semasa dengan pihak berkuasa.",
+          },
+          {
+            question: "Berapa lama saya patut menyimpan rekod perniagaan selepas menutup?",
+            answer:
+              "LHDN sejak lama menjangkakan rekod disimpan sekitar tujuh tahun, walaupun anda patut mengesahkan keperluan semasa. Tentukan siapa yang akan menyimpannya dan pastikan ia boleh dikemukakan jika pihak berkuasa cukai meminta.",
+          },
+          {
+            question: "Patutkah saya mendapatkan bantuan profesional untuk menutup perniagaan saya?",
+            answer:
+              "Ia dinasihatkan, terutamanya bagi syarikat, atau jika anda mempunyai hutang, jaminan, pertikaian atau pekerja yang terhutang gaji. Setiausaha syarikat berlesen, akauntan, peguam atau pengamal insolvensi boleh memilih laluan yang betul dan mengelakkan kesilapan yang mahal.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "workplace-safety-for-malaysian-smes",
+    title: "Workplace Safety for Malaysian SMEs: What the Occupational Safety and Health Act Requires",
+    seoTitle: "Workplace Safety for Malaysian SMEs: OSHA Basics",
+    seoDescription:
+      "What Malaysian SMEs must know about workplace safety: employer duties under OSHA, risk assessment, training, accident reporting, and penalties for breaches.",
+    coverImage: {
+      file: "workplace-safety-for-malaysian-smes-cover.webp",
+      mimeType: "image/webp",
+      alt: "Portrait of a factory worker in a white safety helmet and khaki uniform",
+      altTranslations: {
+        zh: "一位戴白色安全帽、身穿卡其色制服的工厂工人的肖像",
+        ms: "Potret seorang pekerja kilang bertopi keledar keselamatan putih dan berpakaian seragam khaki",
+      },
+    },
+    contentImages: {
+      "factory-floor": {
+        file: "workplace-safety-for-malaysian-smes-floor.webp",
+        mimeType: "image/webp",
+        alt: "A worker in an orange vest and helmet pointing at large machinery in a factory hall",
+        altTranslations: {
+          zh: "一位身穿橙色背心、戴安全帽的工人在工厂大厅里指向大型机器",
+          ms: "Seorang pekerja berbaju rompi oren dan bertopi keledar menunjuk ke arah jentera besar di dewan kilang",
+        },
+        after: "Start with a walk-through of your workplace, because you cannot control a hazard you have not noticed.",
+        afterTranslations: {
+          zh: "请先巡视一遍您的工作场所，因为您无法控制一个您没有注意到的危害。",
+          ms: "Mulakan dengan meronda tempat kerja anda, kerana anda tidak dapat mengawal bahaya yang tidak anda sedari.",
+        },
+      },
+    },
+    excerpt:
+      "Workplace safety is a legal duty for every employer in Malaysia, not just factories and construction sites, and the law has become stricter in recent years. This guide explains the employer's basic duties under the Occupational Safety and Health Act, how to assess risks, what training and reporting involve, and the penalties for getting it wrong.",
+    body: `Most small business owners think of safety as something for factories and building sites. In practice, a slip in a restaurant kitchen, a fall from a shop ladder, a back injury in a warehouse, or a fire in a cramped office are all workplace safety events, and the law expects an employer to have taken reasonable steps to prevent them. A good safety routine costs little compared with a serious accident, which can mean injury to a person, a stopped business, a claim, and prosecution.
+
+This is general information, not legal or safety advice. Malaysia's occupational safety and health law was significantly amended and its scope widened, with detailed regulations that depend on your industry, size, and activities, so confirm what applies to you with the Department of Occupational Safety and Health (DOSH, or JKKP), the relevant regulations, or a qualified safety professional before you rely on this guide.
+
+## 1. Understand what the law covers
+
+### The Occupational Safety and Health Act 1994
+The main law is the Occupational Safety and Health Act 1994 (OSHA), which sets duties for employers, employees, self-employed persons, and others who can affect workplace safety. It has been amended, and the amendments took effect in 2024, widening its coverage to more workplaces and strengthening employers' duties.
+
+### More than factories
+Following the amendments, the law's scope extends to workplaces across the economy, not just the sectors that were covered before, with limited exceptions. Check how it applies to your business, including offices, shops, restaurants, and services.
+
+### Related laws and regulations
+Depending on your business, other regulations apply, such as those for machinery, chemicals, construction, noise, and fire safety, along with requirements from local authorities. A restaurant, a workshop, and an office face different rules.
+
+### Who is responsible
+The employer carries the main duty, but directors and senior officers can also be held responsible in some cases, and employees have duties too, such as following safety instructions and not endangering others.
+
+## 2. Know the employer's core duties
+
+### Provide a safe workplace
+In general terms, an employer must, so far as is practicable, provide and maintain a safe workplace, plant, and systems of work, and ensure that the use, handling, and storage of materials is safe.
+
+### Information, instruction, training and supervision
+Employees must be told about hazards and trained in a language they understand, and supervised so that they work safely.
+
+### Safety and health policy
+Depending on the size of the workplace and the type of business, employers are generally required to prepare a written safety and health policy and bring it to the attention of employees. Check the current thresholds that apply to you.
+
+### Risk assessment
+The amended law places a clearer duty on employers to identify hazards and assess and control risks, which means thinking about what could go wrong before it does.
+
+### Consultation and representation
+Larger workplaces may be required to set up a safety and health committee, and some need to appoint a competent person such as a safety and health officer or coordinator. The requirements depend on size and sector, so verify them with DOSH.
+
+### Duties to others
+You also have duties to people who are not your employees but could be affected by your work, such as contractors, visitors, and customers.
+
+## 3. Carry out a risk assessment
+
+Start with a walk-through of your workplace, because you cannot control a hazard you have not noticed. Then work through the following steps.
+
+### Step 1: Identify hazards
+Look for anything that could cause harm, including slippery floors, uncovered cables, blocked exits, unsafe ladders, moving machinery, hot surfaces, chemicals, heavy loads, noise, and poor ventilation. Ask your staff, who often know the problems better than managers do.
+
+### Step 2: Decide who could be harmed and how
+Consider employees, new or young workers, contractors, visitors, and the public, and note anyone with special needs.
+
+### Step 3: Evaluate the risk and choose controls
+Consider how likely harm is and how serious it would be. Prefer removing the hazard, then substituting something safer, then using guards, safe systems of work, and training, with protective equipment as the last line of defence.
+
+### Step 4: Record and act
+Write down what you found and what you did about it, set responsibilities and deadlines, and fix the worst risks first. A simple written record also shows you took reasonable steps.
+
+### Step 5: Review
+Review your assessment regularly and whenever something changes, such as new equipment, new processes, a new site, or after an accident or near miss.
+
+## 4. Train and equip your people
+
+### Induction for every new worker
+Before they start, show new staff the hazards, emergency exits, first aid, and rules of their job. Include temporary and foreign workers, with instruction in a language they understand.
+
+### Safe operating procedures
+Write short, practical procedures for dangerous tasks, and make sure the staff doing them are competent and authorised.
+
+### Personal protective equipment
+Where risks cannot be removed, provide suitable protective equipment such as helmets, gloves, eye or ear protection, and footwear at no cost to the worker, and train them to use and maintain it.
+
+### First aid and emergency plans
+Have a stocked first-aid kit, trained first aiders where appropriate, clear emergency exits, working fire extinguishers, and a plan for fire and evacuation, with drills.
+
+### Keep records of training
+Record who was trained, when, and in what. The records matter if there is an incident or inspection.
+
+## 5. Report accidents and keep records
+
+> After an accident, the worst response is to hope nobody notices. Serious accidents, dangerous occurrences, cases of poisoning, and some occupational diseases generally have to be reported to the authorities within set periods, and failing to report is a separate offence from the accident itself.
+
+### What must be reported
+Employers generally must report certain events, including serious accidents, dangerous occurrences, poisoning, and occupational diseases, to DOSH using the prescribed process, and keep records of workplace accidents. The exact events and deadlines are set in the regulations, so confirm them with DOSH.
+
+### Insurance and compensation
+Workers are generally covered by statutory schemes for workplace injury, and employers have obligations to register and contribute. Our guide on hiring your first employee covers SOCSO, and our guide on business insurance explains additional cover you may want.
+
+### Investigate near misses
+Look into incidents that could have caused harm but did not. They are free warnings, and the cheapest way to prevent a real accident.
+
+### Keep it confidential and fair
+Treat injured workers with respect, support their return to work, and do not penalise people for reporting hazards.
+
+## 6. Know the penalties and the right to refuse unsafe work
+
+### Penalties
+Breaches of the law can lead to substantial fines and imprisonment, with higher penalties for serious breaches, and in some cases company directors and officers can be personally liable. Penalty amounts have been raised, so check the current provisions rather than relying on a figure from an older source.
+
+### Stop-work and improvement notices
+Inspectors can issue notices requiring you to fix a problem or stop a dangerous activity, and ignoring them is a further offence.
+
+### Workers' right to remove themselves from danger
+The amended law recognises a worker's right to remove themselves from imminent danger without being penalised for it. Make sure your supervisors know this and do not punish staff who stop work for a genuine safety reason.
+
+### Civil liability and business impact
+Beyond prosecution, an injured worker may claim compensation, your insurance may be affected, and a serious accident can damage your reputation, your contracts, and your ability to hire.
+
+## 7. Put safety into your routine
+
+### Appoint someone responsible
+Name a person, even in a small business, who checks safety each week, keeps records, and follows up on problems.
+
+### Inspect regularly
+Walk the workplace monthly or more often, check equipment is maintained, exits are clear, and the first-aid kit is stocked, and note what you fix.
+
+### Involve your team
+Hold short safety talks, listen to suggestions, and recognise people who spot hazards. Safety works best when it is everyone's job.
+
+### Manage contractors
+Check that contractors are competent and insured, tell them about your site's hazards, and coordinate with them so work does not endanger others.
+
+If you need a safety consultant, trainer, equipment supplier, or insurer, you can [browse the directory](/en) for local providers, and [creating a free business listing](/en/signup) helps customers see that you run a professional, well-managed business.
+
+## Common mistakes Malaysian SMEs make with workplace safety
+
+- **Assuming safety rules only apply to factories.** The law reaches shops, kitchens, offices, and services, and a small workplace can have serious hazards.
+- **Having no written risk assessment or training record.** If you cannot show what you did, it is hard to prove you took reasonable steps.
+- **Failing to report accidents.** Hiding or delaying a report turns a bad day into a second offence and a loss of trust.
+
+## Where to start
+
+- **This week:** Walk through your workplace with a notepad, list the hazards, and fix any urgent ones, such as blocked exits or exposed wiring.
+- **Next:** Write a short safety policy and risk assessment, and name a person responsible for safety.
+- **Then:** Train your staff, provide protective equipment, and set up first-aid and emergency arrangements.
+- **Every month:** Inspect, record, review incidents and near misses, and check the current requirements with DOSH.
+
+A safe workplace is not a cost centre, it keeps your people healthy and your business running.`,
+    faqs: [
+      {
+        question: "Does the Occupational Safety and Health Act apply to small businesses and offices?",
+        answer:
+          "Yes. The law has been widened to cover workplaces across the economy, not only factories and construction sites, with limited exceptions. The detailed requirements depend on your industry, size, and activities, so confirm with DOSH.",
+      },
+      {
+        question: "What are an employer's basic safety duties?",
+        answer:
+          "To provide and maintain, so far as is practicable, a safe workplace and safe systems of work, to give employees information, instruction, training and supervision, to assess and control risks, and to look after other people affected by the work, such as contractors and visitors.",
+      },
+      {
+        question: "Do I need a written safety policy?",
+        answer:
+          "Depending on the size and type of your workplace, employers are generally required to prepare a written safety and health policy and make employees aware of it. Check the current thresholds and requirements with DOSH.",
+      },
+      {
+        question: "How do I do a risk assessment?",
+        answer:
+          "Walk through the workplace, identify hazards, decide who could be harmed and how, evaluate the risk and choose controls, record what you found and did, and review it regularly and whenever something changes. Ask your staff for input.",
+      },
+      {
+        question: "Do I have to provide protective equipment to my workers?",
+        answer:
+          "Where risks cannot be removed, employers generally must provide suitable protective equipment at no cost to the worker and train them to use it. Check the regulations that apply to your type of work.",
+      },
+      {
+        question: "What accidents must I report?",
+        answer:
+          "Serious accidents, dangerous occurrences, cases of poisoning, and some occupational diseases generally must be reported to DOSH within set periods, and workplace accident records must be kept. Confirm the exact events and deadlines with DOSH.",
+      },
+      {
+        question: "What are the penalties for breaching workplace safety law?",
+        answer:
+          "Substantial fines and imprisonment, with higher penalties for serious breaches, and in some cases directors and officers can be personally liable. Penalty amounts have been raised, so check the current provisions.",
+      },
+      {
+        question: "Can a worker refuse unsafe work?",
+        answer:
+          "The amended law recognises a worker's right to remove themselves from imminent danger without being penalised. Make sure your supervisors know this and do not punish staff who stop work for a genuine safety reason.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "马来西亚中小企业的职场安全：《职业安全与卫生法令》有哪些要求",
+        excerpt:
+          "职场安全是马来西亚每位雇主的法律责任，而不只是工厂和建筑工地，而且法律近年来变得更严格。本指南说明雇主在《职业安全与卫生法令》下的基本责任、如何评估风险、培训和通报涉及什么，以及出错的处罚。",
+        body: `大多数小企业主认为安全是工厂和建筑工地的事。实际上，餐厅厨房里的滑倒、从店里梯子上跌落、仓库里的腰部受伤，或拥挤办公室里的火灾，都是职场安全事件，而法律期望雇主已经采取合理的措施去预防它们。良好的安全例行工作，与一次严重意外相比成本很低，而严重意外可能意味着人员受伤、业务停摆、索赔和被起诉。
+
+以下仅为一般资讯，并非法律或安全意见。马来西亚的职业安全与卫生法律经过大幅修订，范围也已扩大，详细的规则取决于您的行业、规模和活动，所以在依赖本指南之前，请向职业安全与卫生局（DOSH，即 JKKP）、相关规则或合格的安全专业人士确认适用于您的是什么。
+
+## 1. 了解法律涵盖什么
+
+### 《1994年职业安全与卫生法令》
+主要的法律是《1994年职业安全与卫生法令》（OSHA），它为雇主、雇员、自雇人士和其他可能影响职场安全的人设定责任。该法令已经修订，修订于 2024 年生效，把涵盖范围扩大到更多的工作场所，并加强了雇主的责任。
+
+### 不只是工厂
+在修订之后，法律的范围延伸到整个经济的工作场所，而不只是之前涵盖的行业，只有有限的例外。请查核它如何适用于您的企业，包括办公室、商店、餐厅和服务业。
+
+### 相关的法律和规则
+视您的业务而定，还适用其他规则，例如关于机器、化学品、建筑、噪音和消防安全的规则，以及地方政府的要求。餐厅、工场和办公室面对的规则各不相同。
+
+### 谁负责
+雇主承担主要责任，但在某些情况下董事和高级人员也可能被追究责任，雇员也有责任，例如遵守安全指示和不危及他人。
+
+## 2. 了解雇主的核心责任
+
+### 提供安全的工作场所
+一般而言，雇主须在切实可行的范围内，提供并维持安全的工作场所、设备和工作系统，并确保物料的使用、处理和储存是安全的。
+
+### 资讯、指示、培训和监督
+必须让雇员知道危害，并以他们能理解的语言培训他们，并加以监督，使他们安全地工作。
+
+### 安全与卫生政策
+视工作场所的规模和业务类型而定，雇主一般须制定书面的安全与卫生政策，并让雇员知悉。请查核适用于您的现行门槛。
+
+### 风险评估
+经修订的法律对雇主识别危害、评估和控制风险，规定了更明确的责任，这意味着要在事情出错之前，先想到可能出什么错。
+
+### 咨询与代表
+较大的工作场所可能须设立安全与卫生委员会，有些还需要委任称职的人员，例如安全与卫生主任或协调员。要求取决于规模和行业，所以请向 DOSH 核实。
+
+### 对他人的责任
+您对非您的雇员但可能受您的工作影响的人，例如承包商、访客和顾客，也负有责任。
+
+## 3. 进行风险评估
+
+请先巡视一遍您的工作场所，因为您无法控制一个您没有注意到的危害。然后依次进行以下步骤。
+
+### 第一步：识别危害
+找出任何可能造成伤害的事物，包括湿滑的地板、未遮盖的电线、被堵塞的出口、不安全的梯子、运转的机器、高温表面、化学品、重物、噪音和通风不良。询问您的员工，他们往往比经理更了解问题。
+
+### 第二步：决定谁可能受害以及如何受害
+考虑雇员、新工人或年轻工人、承包商、访客和公众，并注意任何有特殊需要的人。
+
+### 第三步：评估风险并选择控制措施
+考虑伤害发生的可能性和严重程度。首选消除危害，其次替换成更安全的东西，然后使用防护罩、安全的工作系统和培训，防护装备是最后一道防线。
+
+### 第四步：记录并采取行动
+写下您发现了什么以及您做了什么，设定责任人和期限，并先处理最严重的风险。一份简单的书面记录也证明您已采取合理的措施。
+
+### 第五步：检讨
+定期检讨您的评估，并在有任何变化时检讨，例如新设备、新流程、新地点，或在意外或险情之后。
+
+## 4. 培训并装备您的员工
+
+### 每位新工人的入职指导
+在他们开始之前，向新员工说明他们工作的危害、紧急出口、急救和规则。包括临时工和外籍劳工，并以他们能理解的语言指导。
+
+### 安全操作程序
+为危险的工作撰写简短、实用的程序，并确保执行的员工称职且获得授权。
+
+### 个人防护装备
+在风险无法消除的地方，免费为工人提供合适的防护装备，例如安全帽、手套、护眼或护耳装备和鞋子，并培训他们使用和维护。
+
+### 急救和紧急计划
+备有齐全的急救箱、适当时有受训的急救员、畅通的紧急出口、可用的灭火器，以及火灾和疏散计划，并进行演习。
+
+### 保存培训记录
+记录谁在何时接受了什么培训。发生事故或接受检查时，这些记录很重要。
+
+## 5. 通报意外并保存记录
+
+> 意外发生之后，最糟糕的反应就是希望没有人注意到。严重意外、危险事件、中毒个案和某些职业病，一般须在规定期限内向主管机构通报，不通报是与意外本身不同的另一项罪行。
+
+### 必须通报什么
+雇主一般须使用规定的程序，向 DOSH 通报某些事件，包括严重意外、危险事件、中毒和职业病，并保存职场意外的记录。确切的事件和期限由规则规定，所以请向 DOSH 确认。
+
+### 保险与赔偿
+工人一般受法定的工伤计划保障，雇主有注册和供款的义务。我们关于雇用第一位员工的指南涵盖了 SOCSO，而关于商业保险的指南则说明您可能想要的额外保障。
+
+### 调查险情
+调查那些本可能造成伤害但没有造成的事件。它们是免费的警告，也是预防真正意外的最便宜方法。
+
+### 保持保密与公平
+尊重受伤的工人，支持他们重返工作，并且不要因为人们通报危害而惩罚他们。
+
+## 6. 了解处罚以及拒绝不安全工作的权利
+
+### 处罚
+违反法律可能招致巨额罚款和监禁，严重违规的处罚更重，在某些情况下公司董事和高级人员可能须负个人责任。罚款金额已经提高，所以请查看现行条文，而不要依赖较旧来源的数字。
+
+### 停工和改善通知
+督察可以发出通知，要求您解决问题或停止危险的活动，无视通知是另一项罪行。
+
+### 工人脱离危险的权利
+经修订的法律承认工人有权在面临迫在眉睫的危险时让自己脱离，而不会因此受到惩罚。请确保您的主管知道这一点，不要惩罚出于真正的安全理由而停工的员工。
+
+### 民事责任和对业务的影响
+除了被起诉，受伤的工人可能索赔，您的保险可能受到影响，而严重意外会损害您的声誉、合约和招聘能力。
+
+## 7. 把安全融入您的例行工作
+
+### 委任负责人
+即使在小企业中，也要指定一个人，每周检查安全、保存记录并跟进问题。
+
+### 定期检查
+每月或更频繁地巡视工作场所，检查设备是否得到维护、出口是否畅通、急救箱是否备齐，并记下您修复了什么。
+
+### 让团队参与
+举行简短的安全谈话，倾听建议，并表扬发现危害的人。当安全是每个人的工作时，效果最好。
+
+### 管理承包商
+查核承包商是否称职并有投保，告知他们您场地的危害，并与他们协调，使工作不会危及他人。
+
+如果您需要安全顾问、培训师、设备供应商或保险公司，可以[浏览名录](/zh)寻找本地服务商，而[创建免费的企业列表](/zh/signup)可以让客户看到您经营的是一家专业、管理良好的企业。
+
+## 马来西亚中小企业在职场安全上常犯的错误
+
+- **以为安全规定只适用于工厂。** 法律涵盖商店、厨房、办公室和服务业，小型的工作场所也可能有严重的危害。
+- **没有书面的风险评估或培训记录。** 如果您无法证明自己做了什么，就很难证明您已采取合理的措施。
+- **没有通报意外。** 隐瞒或拖延通报，会让糟糕的一天变成第二项罪行，并失去信任。
+
+## 从哪里开始
+
+- **本周：**带着笔记本巡视您的工作场所，列出危害，并解决任何紧急的问题，例如被堵塞的出口或外露的电线。
+- **接着：**撰写简短的安全政策和风险评估，并指定一位负责安全的人。
+- **然后：**培训您的员工，提供防护装备，并设立急救和紧急安排。
+- **每个月：**检查、记录、检讨事故和险情，并向 DOSH 查核现行要求。
+
+安全的工作场所不是成本中心，它让您的员工保持健康，让您的企业持续运作。`,
+        faqs: [
+          {
+            question: "《职业安全与卫生法令》适用于小企业和办公室吗？",
+            answer:
+              "适用。法律已扩大到涵盖整个经济的工作场所，而不只是工厂和建筑工地，只有有限的例外。详细要求取决于您的行业、规模和活动，请向 DOSH 确认。",
+          },
+          {
+            question: "雇主的基本安全责任有哪些？",
+            answer:
+              "在切实可行的范围内提供并维持安全的工作场所和工作系统，向雇员提供资讯、指示、培训和监督，评估并控制风险，并照顾受工作影响的其他人，例如承包商和访客。",
+          },
+          {
+            question: "我需要书面的安全政策吗？",
+            answer:
+              "视您工作场所的规模和类型而定，雇主一般须制定书面的安全与卫生政策，并让雇员知悉。请向 DOSH 查核现行的门槛和要求。",
+          },
+          {
+            question: "如何进行风险评估？",
+            answer:
+              "巡视工作场所，识别危害，决定谁可能受害以及如何受害，评估风险并选择控制措施，记录您发现和做了什么，并定期以及在有变化时检讨。请向您的员工征求意见。",
+          },
+          {
+            question: "我必须为工人提供防护装备吗？",
+            answer:
+              "在风险无法消除的地方，雇主一般须免费为工人提供合适的防护装备，并培训他们使用。请查核适用于您工作类型的规则。",
+          },
+          {
+            question: "哪些意外我必须通报？",
+            answer:
+              "严重意外、危险事件、中毒个案和某些职业病，一般须在规定期限内向 DOSH 通报，并须保存职场意外记录。请向 DOSH 确认确切的事件和期限。",
+          },
+          {
+            question: "违反职场安全法律的处罚是什么？",
+            answer:
+              "巨额罚款和监禁，严重违规的处罚更重，在某些情况下董事和高级人员可能须负个人责任。罚款金额已经提高，所以请查看现行条文。",
+          },
+          {
+            question: "工人可以拒绝不安全的工作吗？",
+            answer:
+              "经修订的法律承认工人有权在面临迫在眉睫的危险时让自己脱离，而不会受到惩罚。请确保您的主管知道这一点，并且不要惩罚出于真正的安全理由而停工的员工。",
+          },
+        ],
+      },
+      ms: {
+        title: "Keselamatan Tempat Kerja untuk PKS Malaysia: Apa yang Dikehendaki Akta Keselamatan dan Kesihatan Pekerjaan",
+        excerpt:
+          "Keselamatan tempat kerja ialah kewajipan undang-undang bagi setiap majikan di Malaysia, bukan hanya kilang dan tapak pembinaan, dan undang-undang telah menjadi lebih ketat sejak kebelakangan ini. Panduan ini menerangkan tugas asas majikan di bawah Akta Keselamatan dan Kesihatan Pekerjaan, cara menilai risiko, apa yang terlibat dalam latihan dan pelaporan, serta penalti jika tersilap.",
+        body: `Kebanyakan pemilik perniagaan kecil menyangka keselamatan ialah urusan kilang dan tapak pembinaan. Sebenarnya, tergelincir di dapur restoran, jatuh dari tangga kedai, kecederaan belakang di gudang, atau kebakaran di pejabat yang sempit semuanya ialah peristiwa keselamatan tempat kerja, dan undang-undang menjangkakan majikan telah mengambil langkah munasabah untuk mencegahnya. Rutin keselamatan yang baik kosnya kecil berbanding kemalangan serius, yang boleh bermakna kecederaan kepada seseorang, perniagaan terhenti, tuntutan dan pendakwaan.
+
+Ini ialah maklumat am, bukan nasihat guaman atau keselamatan. Undang-undang keselamatan dan kesihatan pekerjaan Malaysia telah dipinda dengan ketara dan skopnya diperluas, dengan peraturan terperinci yang bergantung pada industri, saiz dan aktiviti anda, jadi sahkan apa yang terpakai kepada anda dengan Jabatan Keselamatan dan Kesihatan Pekerjaan (JKKP, atau DOSH), peraturan berkaitan atau profesional keselamatan bertauliah sebelum anda bergantung pada panduan ini.
+
+## 1. Fahami apa yang diliputi undang-undang
+
+### Akta Keselamatan dan Kesihatan Pekerjaan 1994
+Undang-undang utama ialah Akta Keselamatan dan Kesihatan Pekerjaan 1994 (OSHA), yang menetapkan tugas bagi majikan, pekerja, orang yang bekerja sendiri dan pihak lain yang boleh menjejaskan keselamatan tempat kerja. Ia telah dipinda, dan pindaan itu berkuat kuasa pada 2024, memperluas liputannya kepada lebih banyak tempat kerja dan mengukuhkan tugas majikan.
+
+### Lebih daripada kilang
+Berikutan pindaan, skop undang-undang meliputi tempat kerja merentas ekonomi, bukan hanya sektor yang diliputi sebelum ini, dengan pengecualian terhad. Semak bagaimana ia terpakai kepada perniagaan anda, termasuk pejabat, kedai, restoran dan perkhidmatan.
+
+### Undang-undang dan peraturan berkaitan
+Bergantung pada perniagaan anda, peraturan lain terpakai, seperti yang berkaitan dengan jentera, bahan kimia, pembinaan, bunyi bising dan keselamatan kebakaran, bersama keperluan pihak berkuasa tempatan. Restoran, bengkel dan pejabat menghadapi peraturan yang berbeza.
+
+### Siapa yang bertanggungjawab
+Majikan memikul tugas utama, tetapi pengarah dan pegawai kanan juga boleh dipertanggungjawabkan dalam sesetengah kes, dan pekerja juga mempunyai tugas, seperti mengikut arahan keselamatan dan tidak membahayakan orang lain.
+
+## 2. Ketahui tugas teras majikan
+
+### Sediakan tempat kerja yang selamat
+Secara am, majikan mesti, setakat yang praktikal, menyediakan dan mengekalkan tempat kerja, loji dan sistem kerja yang selamat, dan memastikan penggunaan, pengendalian dan penyimpanan bahan adalah selamat.
+
+### Maklumat, arahan, latihan dan penyeliaan
+Pekerja mesti diberitahu tentang bahaya dan dilatih dalam bahasa yang mereka fahami, dan diselia supaya mereka bekerja dengan selamat.
+
+### Dasar keselamatan dan kesihatan
+Bergantung pada saiz tempat kerja dan jenis perniagaan, majikan amnya dikehendaki menyediakan dasar keselamatan dan kesihatan bertulis dan membawanya kepada perhatian pekerja. Semak ambang semasa yang terpakai kepada anda.
+
+### Penilaian risiko
+Undang-undang yang dipinda meletakkan tugas yang lebih jelas kepada majikan untuk mengenal pasti bahaya serta menilai dan mengawal risiko, yang bermakna memikirkan apa yang boleh salah sebelum ia berlaku.
+
+### Perundingan dan perwakilan
+Tempat kerja yang lebih besar mungkin dikehendaki menubuhkan jawatankuasa keselamatan dan kesihatan, dan sesetengahnya perlu melantik orang yang kompeten seperti pegawai atau penyelaras keselamatan dan kesihatan. Keperluan bergantung pada saiz dan sektor, jadi sahkan dengan JKKP.
+
+### Tugas kepada orang lain
+Anda juga mempunyai tugas kepada orang yang bukan pekerja anda tetapi boleh terjejas oleh kerja anda, seperti kontraktor, pelawat dan pelanggan.
+
+## 3. Jalankan penilaian risiko
+
+Mulakan dengan meronda tempat kerja anda, kerana anda tidak dapat mengawal bahaya yang tidak anda sedari. Kemudian lalui langkah berikut.
+
+### Langkah 1: Kenal pasti bahaya
+Cari apa-apa yang boleh menyebabkan bahaya, termasuk lantai licin, kabel terdedah, pintu keluar tersekat, tangga tidak selamat, jentera bergerak, permukaan panas, bahan kimia, beban berat, bunyi bising dan pengudaraan yang lemah. Tanya kakitangan anda, yang sering lebih mengetahui masalah berbanding pengurus.
+
+### Langkah 2: Tentukan siapa yang boleh tercedera dan bagaimana
+Pertimbangkan pekerja, pekerja baharu atau muda, kontraktor, pelawat dan orang awam, dan catat sesiapa yang mempunyai keperluan khas.
+
+### Langkah 3: Nilai risiko dan pilih kawalan
+Pertimbangkan sejauh mana mungkin bahaya berlaku dan betapa seriusnya. Utamakan menghapuskan bahaya, kemudian menggantikan dengan sesuatu yang lebih selamat, kemudian menggunakan pengawal, sistem kerja selamat dan latihan, dengan peralatan perlindungan sebagai benteng terakhir.
+
+### Langkah 4: Rekod dan bertindak
+Tulis apa yang anda temui dan apa yang anda lakukan tentangnya, tetapkan tanggungjawab dan tarikh akhir, dan betulkan risiko terburuk dahulu. Rekod bertulis yang mudah juga menunjukkan anda mengambil langkah munasabah.
+
+### Langkah 5: Semak
+Semak penilaian anda secara berkala dan apabila sesuatu berubah, seperti peralatan baharu, proses baharu, tapak baharu, atau selepas kemalangan atau hampir celaka.
+
+## 4. Latih dan lengkapkan orang anda
+
+### Induksi untuk setiap pekerja baharu
+Sebelum mereka bermula, tunjukkan kakitangan baharu bahaya, pintu keluar kecemasan, pertolongan cemas dan peraturan kerja mereka. Sertakan pekerja sementara dan asing, dengan arahan dalam bahasa yang mereka fahami.
+
+### Prosedur operasi selamat
+Tulis prosedur ringkas dan praktikal bagi tugas berbahaya, dan pastikan kakitangan yang melakukannya kompeten dan diberi kuasa.
+
+### Peralatan perlindungan diri
+Di mana risiko tidak dapat dihapuskan, sediakan peralatan perlindungan yang sesuai seperti topi keledar, sarung tangan, pelindung mata atau telinga dan kasut tanpa kos kepada pekerja, dan latih mereka menggunakan serta menyelenggarakannya.
+
+### Pertolongan cemas dan pelan kecemasan
+Sediakan peti pertolongan cemas yang lengkap, pemberi pertolongan cemas terlatih jika sesuai, pintu keluar kecemasan yang jelas, pemadam api yang berfungsi, dan pelan kebakaran dan pemindahan, dengan latihan.
+
+### Simpan rekod latihan
+Rekodkan siapa yang dilatih, bila dan dalam apa. Rekod penting jika berlaku insiden atau pemeriksaan.
+
+## 5. Laporkan kemalangan dan simpan rekod
+
+> Selepas kemalangan, tindak balas yang paling buruk ialah berharap tiada siapa perasan. Kemalangan serius, kejadian berbahaya, kes keracunan dan sesetengah penyakit pekerjaan amnya mesti dilaporkan kepada pihak berkuasa dalam tempoh yang ditetapkan, dan kegagalan melaporkan ialah kesalahan yang berasingan daripada kemalangan itu sendiri.
+
+### Apa yang mesti dilaporkan
+Majikan amnya mesti melaporkan peristiwa tertentu, termasuk kemalangan serius, kejadian berbahaya, keracunan dan penyakit pekerjaan, kepada JKKP menggunakan proses yang ditetapkan, dan menyimpan rekod kemalangan tempat kerja. Peristiwa dan tarikh akhir tepat ditetapkan dalam peraturan, jadi sahkan dengan JKKP.
+
+### Insurans dan pampasan
+Pekerja amnya dilindungi oleh skim berkanun bagi kecederaan di tempat kerja, dan majikan mempunyai obligasi untuk mendaftar dan mencarum. Panduan kami tentang mengambil pekerja pertama merangkumi PERKESO, dan panduan tentang insurans perniagaan menerangkan perlindungan tambahan yang mungkin anda mahu.
+
+### Siasat hampir celaka
+Selidiki insiden yang boleh menyebabkan bahaya tetapi tidak. Ia amaran percuma, dan cara paling murah untuk mencegah kemalangan sebenar.
+
+### Pastikan sulit dan adil
+Layan pekerja yang cedera dengan hormat, sokong kepulangan mereka ke tempat kerja, dan jangan menghukum orang kerana melaporkan bahaya.
+
+## 6. Ketahui penalti dan hak untuk menolak kerja yang tidak selamat
+
+### Penalti
+Pelanggaran undang-undang boleh membawa kepada denda besar dan pemenjaraan, dengan penalti lebih tinggi bagi pelanggaran serius, dan dalam sesetengah kes pengarah dan pegawai syarikat boleh bertanggungjawab secara peribadi. Jumlah penalti telah dinaikkan, jadi semak peruntukan semasa dan bukannya bergantung pada angka daripada sumber lama.
+
+### Notis henti kerja dan penambahbaikan
+Pemeriksa boleh mengeluarkan notis yang menghendaki anda membetulkan masalah atau menghentikan aktiviti berbahaya, dan mengabaikannya ialah kesalahan lanjut.
+
+### Hak pekerja untuk menjauhkan diri daripada bahaya
+Undang-undang yang dipinda mengiktiraf hak pekerja untuk menjauhkan diri daripada bahaya yang akan berlaku tanpa dihukum kerananya. Pastikan penyelia anda tahu ini dan tidak menghukum kakitangan yang berhenti kerja atas sebab keselamatan yang sebenar.
+
+### Liabiliti sivil dan kesan kepada perniagaan
+Selain pendakwaan, pekerja yang cedera boleh menuntut pampasan, insurans anda mungkin terjejas, dan kemalangan serius boleh merosakkan reputasi, kontrak dan keupayaan anda mengambil pekerja.
+
+## 7. Masukkan keselamatan ke dalam rutin anda
+
+### Lantik seseorang yang bertanggungjawab
+Namakan seseorang, walaupun dalam perniagaan kecil, yang menyemak keselamatan setiap minggu, menyimpan rekod dan menyusuli masalah.
+
+### Periksa secara berkala
+Ronda tempat kerja setiap bulan atau lebih kerap, semak peralatan diselenggara, pintu keluar jelas dan peti pertolongan cemas lengkap, dan catat apa yang anda betulkan.
+
+### Libatkan pasukan anda
+Adakan ceramah keselamatan ringkas, dengar cadangan, dan iktiraf orang yang mengesan bahaya. Keselamatan paling berkesan apabila ia tugas semua orang.
+
+### Urus kontraktor
+Semak bahawa kontraktor kompeten dan berinsurans, beritahu mereka tentang bahaya tapak anda, dan selaras dengan mereka supaya kerja tidak membahayakan orang lain.
+
+Jika anda memerlukan perunding keselamatan, jurulatih, pembekal peralatan atau penanggung insurans, anda boleh [menyemak imbas direktori](/ms) untuk penyedia tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pelanggan melihat bahawa anda menjalankan perniagaan yang profesional dan diurus dengan baik.
+
+## Kesilapan lazim PKS Malaysia dengan keselamatan tempat kerja
+
+- **Menganggap peraturan keselamatan hanya terpakai kepada kilang.** Undang-undang meliputi kedai, dapur, pejabat dan perkhidmatan, dan tempat kerja kecil boleh mempunyai bahaya serius.
+- **Tiada penilaian risiko bertulis atau rekod latihan.** Jika anda tidak dapat menunjukkan apa yang anda lakukan, sukar membuktikan anda mengambil langkah munasabah.
+- **Gagal melaporkan kemalangan.** Menyembunyikan atau melewatkan laporan menjadikan hari yang buruk satu kesalahan kedua dan kehilangan kepercayaan.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Ronda tempat kerja anda dengan buku nota, senaraikan bahaya, dan betulkan yang mendesak, seperti pintu keluar tersekat atau pendawaian terdedah.
+- **Seterusnya:** Tulis dasar keselamatan ringkas dan penilaian risiko, dan namakan seseorang yang bertanggungjawab ke atas keselamatan.
+- **Kemudian:** Latih kakitangan anda, sediakan peralatan perlindungan, dan wujudkan susunan pertolongan cemas dan kecemasan.
+- **Setiap bulan:** Periksa, rekod, semak insiden dan hampir celaka, dan semak keperluan semasa dengan JKKP.
+
+Tempat kerja yang selamat bukan pusat kos, ia memastikan orang anda sihat dan perniagaan anda terus berjalan.`,
+        faqs: [
+          {
+            question: "Adakah Akta Keselamatan dan Kesihatan Pekerjaan terpakai kepada perniagaan kecil dan pejabat?",
+            answer:
+              "Ya. Undang-undang telah diperluas untuk meliputi tempat kerja merentas ekonomi, bukan hanya kilang dan tapak pembinaan, dengan pengecualian terhad. Keperluan terperinci bergantung pada industri, saiz dan aktiviti anda, jadi sahkan dengan JKKP.",
+          },
+          {
+            question: "Apakah tugas keselamatan asas majikan?",
+            answer:
+              "Menyediakan dan mengekalkan, setakat yang praktikal, tempat kerja dan sistem kerja yang selamat, memberi pekerja maklumat, arahan, latihan dan penyeliaan, menilai dan mengawal risiko, dan menjaga orang lain yang terjejas oleh kerja itu, seperti kontraktor dan pelawat.",
+          },
+          {
+            question: "Adakah saya memerlukan dasar keselamatan bertulis?",
+            answer:
+              "Bergantung pada saiz dan jenis tempat kerja anda, majikan amnya dikehendaki menyediakan dasar keselamatan dan kesihatan bertulis dan memaklumkannya kepada pekerja. Semak ambang dan keperluan semasa dengan JKKP.",
+          },
+          {
+            question: "Bagaimanakah saya membuat penilaian risiko?",
+            answer:
+              "Ronda tempat kerja, kenal pasti bahaya, tentukan siapa yang boleh tercedera dan bagaimana, nilai risiko dan pilih kawalan, rekod apa yang anda temui dan lakukan, dan semaknya secara berkala dan apabila sesuatu berubah. Minta input daripada kakitangan anda.",
+          },
+          {
+            question: "Adakah saya mesti menyediakan peralatan perlindungan kepada pekerja saya?",
+            answer:
+              "Di mana risiko tidak dapat dihapuskan, majikan amnya mesti menyediakan peralatan perlindungan yang sesuai tanpa kos kepada pekerja dan melatih mereka menggunakannya. Semak peraturan yang terpakai kepada jenis kerja anda.",
+          },
+          {
+            question: "Apakah kemalangan yang mesti saya laporkan?",
+            answer:
+              "Kemalangan serius, kejadian berbahaya, kes keracunan dan sesetengah penyakit pekerjaan amnya mesti dilaporkan kepada JKKP dalam tempoh yang ditetapkan, dan rekod kemalangan tempat kerja mesti disimpan. Sahkan peristiwa dan tarikh akhir tepat dengan JKKP.",
+          },
+          {
+            question: "Apakah penalti bagi pelanggaran undang-undang keselamatan tempat kerja?",
+            answer:
+              "Denda besar dan pemenjaraan, dengan penalti lebih tinggi bagi pelanggaran serius, dan dalam sesetengah kes pengarah dan pegawai boleh bertanggungjawab secara peribadi. Jumlah penalti telah dinaikkan, jadi semak peruntukan semasa.",
+          },
+          {
+            question: "Bolehkah pekerja menolak kerja yang tidak selamat?",
+            answer:
+              "Undang-undang yang dipinda mengiktiraf hak pekerja untuk menjauhkan diri daripada bahaya yang akan berlaku tanpa dihukum. Pastikan penyelia anda tahu ini dan tidak menghukum kakitangan yang berhenti kerja atas sebab keselamatan yang sebenar.",
+          },
+        ],
+      },
+    },
+  },
 ];

@@ -15,16 +15,16 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Staying Compliant with SSM: Annual Returns, Financial Statements, and Company Records**
-   — What a Malaysian company (Sdn Bhd) and a registered business must keep
-   filing after incorporation: the annual return and financial statements
-   deadlines, keeping the registered address and director details current,
-   beneficial ownership reporting, business registration renewals for sole
-   proprietors and partnerships, and the penalties for falling behind.
+1. **Franchising in Malaysia: Buying or Starting a Franchise the Right Way**
+   — How the Franchise Act 1998 and the franchise registration with the
+   Ministry of Domestic Trade work, what a prospective franchisee should
+   check (registration, the disclosure documents, fees, royalties,
+   territory, support and exit terms), what a business needs before it can
+   franchise, and the red flags of unregistered or unrealistic schemes.
 
-2. **Halal Certification in Malaysia: What Food and Product SMEs Need to Know**
-   — When a food, beverage, or consumer-product business needs halal
-   certification, how the JAKIM/state religious department process works
-   (the application, premises and ingredient checks, fees, validity and
-   renewal), the rules on using the halal logo and claims, and how to avoid
-   the common reasons applications are delayed or rejected.
+2. **Marketing Your Small Business on Social Media in Malaysia: Rules, Platforms, and Practical Steps**
+   — Choosing platforms (Facebook, Instagram, TikTok, WhatsApp Business),
+   a simple content and posting routine, the advertising rules to respect
+   (honest claims, pricing, halal and health claims, influencer
+   disclosures), handling customer messages and reviews, and measuring
+   what works without overspending.

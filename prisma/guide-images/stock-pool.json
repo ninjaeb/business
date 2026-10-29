@@ -289,7 +289,7 @@
         "office"
       ],
       "description": "Asian woman in smart casual attire working on a laptop at a bright desk",
-      "usedBy": null
+      "usedBy": "closing-a-business-in-malaysia-cover.webp"
     },
     {
       "id": 8815843,
@@ -389,7 +389,7 @@
         "laptop"
       ],
       "description": "Close-up of hands writing in a notebook with a laptop and sticky notes",
-      "usedBy": null
+      "usedBy": "closing-a-business-in-malaysia-checklist.webp"
     },
     {
       "id": 7489105,
@@ -423,6 +423,30 @@
       ],
       "description": "Close-up of a person signing a contract at an office desk",
       "usedBy": "renting-commercial-premises-in-malaysia-cover.webp"
+    },
+    {
+      "id": 2760241,
+      "tags": [
+        "safety",
+        "factory",
+        "machinery",
+        "vest",
+        "inspection"
+      ],
+      "description": "Worker in an orange vest and helmet pointing at large machinery in a factory",
+      "usedBy": "workplace-safety-for-malaysian-smes-floor.webp"
+    },
+    {
+      "id": 19544217,
+      "tags": [
+        "safety",
+        "factory",
+        "worker",
+        "helmet",
+        "portrait"
+      ],
+      "description": "Portrait of a factory worker in a white safety helmet and khaki uniform",
+      "usedBy": "workplace-safety-for-malaysian-smes-cover.webp"
     }
   ]
 }
