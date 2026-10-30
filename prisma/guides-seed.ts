@@ -7699,4 +7699,1071 @@ Mengutip apa yang terhutang kepada anda kebanyakannya tentang bersikap jelas seb
       },
     },
   },
+  {
+    slug: "franchising-in-malaysia-for-smes",
+    title: "Franchising in Malaysia: Buying or Starting a Franchise the Right Way",
+    seoTitle: "Franchising in Malaysia: Buying or Starting a Franchise",
+    seoDescription:
+      "What Malaysian SMEs should know about franchising: registration under the Franchise Act, disclosure documents, fees, royalties, territory, and red flags.",
+    coverImage: {
+      file: "franchising-in-malaysia-for-smes-cover.webp",
+      mimeType: "image/webp",
+      alt: "A woman in a pink blazer typing on a laptop at a wooden table in a modern office",
+      altTranslations: {
+        zh: "一位身穿粉色西装外套的女士在现代办公室的木桌前使用笔记本电脑打字",
+        ms: "Seorang wanita berjaket merah jambu menaip pada komputer riba di meja kayu di pejabat moden",
+      },
+    },
+    contentImages: {
+      "franchise-review": {
+        file: "franchising-in-malaysia-for-smes-review.webp",
+        mimeType: "image/webp",
+        alt: "A smiling man in a black blazer working on a laptop at a busy desk with plants and papers",
+        altTranslations: {
+          zh: "一位身穿黑色西装外套的微笑男士在摆满植物和文件的繁忙书桌前使用笔记本电脑",
+          ms: "Seorang lelaki tersenyum berjaket hitam menggunakan komputer riba di meja sibuk dengan pokok dan dokumen",
+        },
+        after: "Read the disclosure document and the draft agreement slowly before you pay anything to a franchisor.",
+        afterTranslations: {
+          zh: "在向特许经营商支付任何款项之前，请慢慢阅读披露文件和协议草稿。",
+          ms: "Baca dokumen pendedahan dan draf perjanjian dengan perlahan sebelum anda membayar apa-apa kepada francaisor.",
+        },
+      },
+    },
+    excerpt:
+      "A franchise can give a small business a proven brand and playbook, but it also means fees, royalties, and a long contract that is rarely written in your favour. This guide explains how franchising is regulated in Malaysia, what to check before you buy, what a business needs before it can franchise, and the red flags of unregistered or unrealistic schemes.",
+    body: `Franchising is attractive to many first-time business owners. Instead of building a brand from nothing, you buy the right to use an existing name, system, and support, and in return you pay fees and follow the franchisor's rules. When it works, it shortens the learning curve. When it does not, you can be locked into a multi-year contract, paying royalties on a business that never makes money. For a business owner who wants to franchise their own concept, the legal and practical demands are just as real.
+
+This is general information, not legal or financial advice. Franchise rules, fees, and procedures are administered by the Ministry of Domestic Trade and Cost of Living (KPDN) through the Registrar of Franchises, and they have been amended over time, so confirm the current requirements with the Registrar or a Malaysian franchise lawyer before you commit money or sign anything.
+
+## 1. Understand how franchising is regulated
+
+### The Franchise Act 1998
+Franchising in Malaysia is governed by the Franchise Act 1998, which has been amended, including by changes that took effect in 2022. It aims to protect franchisees by requiring franchisors to be registered and to give prospective franchisees certain information before they sign.
+
+### Registration with the Registrar of Franchises
+In general, a franchisor must register its franchise with the Registrar of Franchises before offering or selling it, and registration is done through the Registrar's official online system. Foreign franchisors have extra approval requirements. A franchise that is not registered when it should be is a serious warning sign.
+
+### Registration is not a guarantee
+Registration shows that a franchisor has met the legal requirements and filed its documents. It does not guarantee that the business is profitable or that its projections are realistic, so you still have to do your own checking.
+
+### What counts as a franchise
+Not every licence, distributorship, or "business opportunity" scheme is a franchise, and some schemes that look like franchises are really something else, such as multi-level marketing or investment offers. If you are unsure, ask the Registrar.
+
+## 2. Check the franchisor before anything else
+
+### Confirm registration
+Ask for the franchise registration details and verify them with KPDN's Registrar of Franchises, rather than relying on a brochure or a logo on a poster. Registration is time-limited and must be renewed, so check that it is current.
+
+### Look at the track record
+How long has the franchisor been operating? How many outlets exist, how many are company-owned, and how many have closed? A franchise with many closures or unhappy franchisees deserves hard questions.
+
+### Visit and speak to existing franchisees
+Visit outlets without the franchisor present, and ask franchisees about their real sales, costs, support, and whether they would buy again. Ask for a list that includes franchisees who left.
+
+### Check the brand's own strength
+A famous name on social media does not always translate into steady foot traffic. Check how the brand performs locally, and whether it owns its trademark. See our guide on trademark registration for why this matters.
+
+## 3. Read the disclosure document and agreement carefully
+
+Read the disclosure document and the draft agreement slowly before you pay anything to a franchisor. Under the Franchise Act, a franchisor is generally required to give you a disclosure document and the proposed agreement a set number of days before signing, so use that time.
+
+### The disclosure document
+This should describe the franchisor, its experience, the franchise system, the fees, the obligations of each side, and other key facts. Compare it with what the sales team told you, and ask about any difference in writing.
+
+### Fees and ongoing costs
+Look for the initial franchise fee, the cost of fit-out and equipment, a deposit, royalties, marketing or advertising contributions, training and renewal fees, and a requirement to buy stock or supplies from the franchisor or approved suppliers. Add them up to find the real cost, and compare it with realistic sales.
+
+### Territory
+Find out whether you have an exclusive territory, how it is defined, and whether the franchisor or another franchisee can open nearby. A weak territory clause can destroy your sales.
+
+### Term, renewal, and transfer
+Check the length of the agreement, the conditions and cost of renewal, and whether you can sell or transfer the business, and on what terms. A franchise you cannot sell is hard to exit.
+
+### Termination and exit
+Look at when the franchisor can terminate, what you must do if you leave, whether there is a non-compete restriction, and what happens to your equipment and fit-out. Our guide on commercial tenancy agreements explains the lease side, which often has to match the franchise term.
+
+### Cooling-off period
+The law commonly provides a short cooling-off period after signing during which a franchisee may withdraw and receive a refund, subject to conditions. Confirm the current period and how to use it with the Registrar or your lawyer.
+
+> Do not let urgency work on you. Promotions such as "sign this week to lock in the price" or "only two territories left" are sales tactics, and a legitimate franchisor will allow you the time the law and good sense require. If you are pressured to pay before you have the registered documents, walk away.
+
+## 4. Test the numbers yourself
+
+### Build your own forecast
+Take the franchisor's figures as a starting point, then build your own forecast with realistic sales, your local rent, labour costs, royalties, and stock costs. Include the cash you need to survive until the outlet breaks even.
+
+### Plan the financing
+Work out how much you can invest and borrow, and whether you can survive a slow first year. Our guide on SME grants and funding covers support options to explore before you borrow.
+
+### Ask about the profit claims
+If a franchisor makes claims about sales or profit, ask for the basis in writing, and compare them with what existing franchisees tell you. Be cautious of guarantees of returns.
+
+### Consider the tax and accounting
+A franchise has tax consequences, such as how fees and royalties are treated. Talk to an accountant, and see our guides on bookkeeping and on tax deductions.
+
+## 5. Get professional advice
+
+### A lawyer for the agreement
+Franchise agreements are long, one-sided, and hard to change after signing. A lawyer who knows franchising can explain the risks, negotiate where possible, and check the registration and the documents.
+
+### An accountant for the numbers
+An accountant can stress-test your forecast and tell you whether the investment makes sense.
+
+### Do not sign under pressure or before checking
+Never sign, pay a deposit, or commit to a lease before you have verified the registration and received and understood the documents.
+
+## 6. If you want to franchise your own business
+
+### Is your business ready
+A franchise needs a proven, profitable model that others can copy, a strong brand, written systems and manuals, and the ability to train and support franchisees. Many owners start franchising too early, before their own outlet is consistently successful.
+
+### Legal requirements
+You generally need to register your franchise before offering it, prepare a disclosure document and a compliant franchise agreement, and meet other conditions in the Act. Our guide on registering a business in Malaysia and our guide on trademark registration are useful first steps, since you need a registered business and protected brand.
+
+### Costs and commitments
+Franchisors must fund the registration, legal work, training, and ongoing support, and they are responsible for what they promise. Budget for these before you begin.
+
+### Choose franchisees carefully
+A weak franchisee harms your brand, so screen candidates for finance, attitude, and fit, and do not sell to anyone who can pay the fee.
+
+If you are looking for a franchise lawyer, accountant, or business adviser, you can [browse the directory](/en) for local professionals, and [creating a free business listing](/en/signup) helps customers find and verify your own business, whether you become a franchisee or a franchisor.
+
+## Common mistakes Malaysian SMEs make with franchises
+
+- **Buying an unregistered franchise.** Without registration, you lose the protection of the law and may have no way to recover your money.
+- **Believing the sales pitch instead of the numbers.** Optimistic projections and a famous logo are not the same as profit in your location.
+- **Ignoring the exit.** Many owners read the opening terms and miss the renewal, transfer, termination, and non-compete clauses that decide what happens when it goes wrong.
+
+## Where to start
+
+- **This week:** Decide your budget and what you are willing to risk, and list two or three franchises you are considering.
+- **Next:** Verify each franchisor's registration with the Registrar of Franchises, and ask for the disclosure document and draft agreement.
+- **Then:** Visit outlets, talk to franchisees including former ones, and build your own forecast with an accountant.
+- **Before you sign:** Have a lawyer review the agreement, confirm your cooling-off rights, and make sure your lease and financing match the term.
+
+A good franchise is one you have checked from every angle before you pay, not one you are rushed into.`,
+    faqs: [
+      {
+        question: "Does a franchisor have to be registered in Malaysia?",
+        answer:
+          "Generally yes. Under the Franchise Act 1998, a franchisor must register its franchise with the Registrar of Franchises before offering it, and foreign franchisors have additional approval requirements. Verify the registration with KPDN rather than relying on the franchisor's word.",
+      },
+      {
+        question: "Does registration mean a franchise is a good investment?",
+        answer:
+          "No. Registration shows that the franchisor has met the legal requirements and filed its documents. It does not guarantee profitability or that sales projections are realistic, so you still need to do your own checks.",
+      },
+      {
+        question: "What documents should a franchisor give me before I sign?",
+        answer:
+          "A disclosure document and the proposed franchise agreement, generally a set number of days before signing. Read them carefully, compare them with what you were told, and have a lawyer review them.",
+      },
+      {
+        question: "What fees should I expect when buying a franchise?",
+        answer:
+          "Commonly an initial franchise fee, fit-out and equipment costs, a deposit, royalties, marketing contributions, training or renewal fees, and a requirement to buy supplies from the franchisor or approved suppliers. Add them up and compare them with realistic sales.",
+      },
+      {
+        question: "Is there a cooling-off period for franchisees?",
+        answer:
+          "The law commonly provides a short cooling-off period after signing during which a franchisee may withdraw and be refunded, subject to conditions. Confirm the current period and how to use it with the Registrar of Franchises or your lawyer.",
+      },
+      {
+        question: "What are red flags in a franchise offer?",
+        answer:
+          "No registration, pressure to pay quickly, guaranteed returns, refusal to let you talk to existing or former franchisees, vague territory or fee terms, and a business that resembles multi-level marketing or an investment scheme more than a real franchise.",
+      },
+      {
+        question: "Can I franchise my own small business?",
+        answer:
+          "Possibly, but you generally need a proven, profitable model, a protected brand, written systems and training, and to register your franchise and prepare a compliant disclosure document and agreement before offering it. Get a franchise lawyer's advice first.",
+      },
+      {
+        question: "Can I sell or exit a franchise?",
+        answer:
+          "Only as the agreement allows. Check the term, renewal conditions, transfer rights, termination clauses, and any non-compete before you sign, because a franchise you cannot sell or leave can be costly to get out of.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "马来西亚的特许经营：以正确的方式购买或创办特许经营",
+        excerpt:
+          "特许经营可以让小企业获得经过验证的品牌和营运手册，但它也意味着费用、版税，以及一份很少对您有利的长期合约。本指南说明特许经营在马来西亚如何受到规管、购买前应查核什么、企业在特许经营之前需要具备什么，以及未注册或不切实际的计划的警讯。",
+        body: `特许经营对许多初次创业的人很有吸引力。与其从零开始建立品牌，您购买的是使用现有名称、系统和支持的权利，并以支付费用和遵守特许经营商的规则作为回报。成功时，它缩短学习曲线。不成功时，您可能被绑在一份多年的合约中，为一门从来不赚钱的生意缴付版税。对想把自己的概念特许经营的企业主来说，法律和实务上的要求同样真实。
+
+以下仅为一般资讯，并非法律或财务意见。特许经营的规则、费用和程序由国内贸易及生活费用部（KPDN）通过特许经营注册官管理，并历年有所修订，所以在您投入资金或签署任何文件之前，请向注册官或马来西亚特许经营律师确认最新要求。
+
+## 1. 了解特许经营如何受到规管
+
+### 《1998年特许经营法令》
+马来西亚的特许经营受《1998年特许经营法令》规管，该法令已经修订，包括 2022 年生效的更改。它旨在通过要求特许经营商注册，并在准特许经营商签约前提供某些资料，来保护受许人。
+
+### 向特许经营注册官注册
+一般而言，特许经营商必须在提供或销售其特许经营之前，向特许经营注册官注册，注册通过注册官的官方在线系统办理。外国特许经营商有额外的批准要求。应该注册却没有注册的特许经营，是一个严重的警讯。
+
+### 注册并不是保证
+注册显示特许经营商已符合法律要求并已递交文件。它并不保证业务有利可图或其预测切合实际，所以您仍须自己查核。
+
+### 什么算特许经营
+并非每一种许可、经销权或“商业机会”计划都是特许经营，有些看起来像特许经营的计划实际上是别的东西，例如多层次传销或投资邀约。如果不确定，请询问注册官。
+
+## 2. 先查核特许经营商
+
+### 确认注册
+索取特许经营的注册资料，并向 KPDN 的特许经营注册官核实，而不是依赖宣传册或海报上的标志。注册有时限，必须续期，所以请查核它是否仍然有效。
+
+### 查看过往记录
+特许经营商经营了多久？有多少间分店、多少间是公司自营、多少间已经关闭？关闭很多或受许人不满的特许经营，值得提出尖锐的问题。
+
+### 拜访并与现有受许人交谈
+在特许经营商不在场的情况下拜访分店，询问受许人真实的销售额、成本、支持，以及他们是否会再次购买。请要求一份包括已离开的受许人的名单。
+
+### 查核品牌本身的实力
+社交媒体上的知名度，并不总是转化为稳定的客流。查核该品牌在本地的表现，以及它是否拥有自己的商标。请参阅我们关于商标注册的指南，了解这为什么重要。
+
+## 3. 仔细阅读披露文件和协议
+
+在向特许经营商支付任何款项之前，请慢慢阅读披露文件和协议草稿。根据《特许经营法令》，特许经营商一般须在签约前的规定天数向您提供披露文件和拟议的协议，所以请善用这段时间。
+
+### 披露文件
+它应该描述特许经营商、其经验、特许经营系统、费用、各方的义务和其他关键事实。把它与销售团队告诉您的内容比较，并就任何差异以书面询问。
+
+### 费用和持续成本
+查看首期特许经营费、装修和设备成本、押金、版税、营销或广告出资、培训和续约费用，以及必须向特许经营商或获批准的供应商购买存货或用品的要求。把它们加起来算出真实成本，并与现实的销售额比较。
+
+### 区域
+了解您是否拥有独家区域、区域如何界定，以及特许经营商或其他受许人能否在附近开设。薄弱的区域条款可能毁掉您的销售。
+
+### 期限、续约和转让
+查核协议的期限、续约的条件和费用，以及您是否可以出售或转让业务及其条款。无法出售的特许经营很难退出。
+
+### 终止与退出
+查看特许经营商何时可以终止、您离开时必须做什么、是否有竞业限制，以及您的设备和装修会怎样。我们关于商业租赁协议的指南说明了租约方面，它往往必须与特许经营的期限相配。
+
+### 冷静期
+法律通常在签约后提供一段短暂的冷静期，受许人可在此期间退出并获得退款，须符合条件。请向注册官或您的律师确认现行期限以及如何使用。
+
+> 不要让紧迫感左右您。“本周签约锁定价格”或“只剩两个区域”这类促销是销售手法，合法的特许经营商会给您法律和常理所要求的时间。如果有人逼您在拿到已注册的文件之前付款，请转身离开。
+
+## 4. 自己测试数字
+
+### 建立自己的预测
+把特许经营商的数字当作起点，然后以现实的销售额、您当地的租金、人工成本、版税和存货成本，建立自己的预测。包括让您撑到分店收支平衡所需的现金。
+
+### 规划融资
+算出您能投入和借多少，以及您能否撑过缓慢的第一年。我们关于中小企业补助与融资的指南涵盖了在借贷之前可以探索的支持选项。
+
+### 询问利润声明
+如果特许经营商对销售或利润作出声明，请以书面索取依据，并与现有受许人告诉您的比较。对保证回报要保持谨慎。
+
+### 考虑税务和会计
+特许经营有税务影响，例如费用和版税如何处理。请与会计师谈谈，并参阅我们关于簿记和税务扣除的指南。
+
+## 5. 寻求专业意见
+
+### 请律师审阅协议
+特许经营协议冗长、偏向一方，签约后很难更改。熟悉特许经营的律师可以说明风险、在可能的地方谈判，并查核注册和文件。
+
+### 请会计师审视数字
+会计师可以对您的预测进行压力测试，并告诉您这项投资是否合理。
+
+### 不要在压力下或查核之前签约
+在核实注册并收到、理解文件之前，切勿签约、缴付订金或承诺租约。
+
+## 6. 如果您想把自己的生意特许经营
+
+### 您的生意准备好了吗
+特许经营需要一个经过验证、有利可图且他人可以复制的模式、强大的品牌、书面的系统和手册，以及培训和支持受许人的能力。许多企业主太早开始特许经营，在自己的分店还没有持续成功之前。
+
+### 法律要求
+您一般须在提供特许经营之前注册，准备披露文件和合规的特许经营协议，并符合法令中的其他条件。我们关于在马来西亚注册企业的指南和关于商标注册的指南是有用的第一步，因为您需要已注册的企业和受保护的品牌。
+
+### 成本与承诺
+特许经营商必须为注册、法律工作、培训和持续支持提供资金，并对自己的承诺负责。请在开始之前为这些编制预算。
+
+### 谨慎选择受许人
+软弱的受许人会损害您的品牌，所以请从资金、态度和契合度筛选候选人，不要卖给任何付得起费用的人。
+
+如果您在寻找特许经营律师、会计师或商业顾问，可以[浏览名录](/zh)寻找本地专业人士，而[创建免费的企业列表](/zh/signup)可以帮助客户找到并核实您自己的企业，无论您成为受许人还是特许经营商。
+
+## 马来西亚中小企业在特许经营上常犯的错误
+
+- **购买未注册的特许经营。** 没有注册，您就失去了法律的保护，可能无法追回您的钱。
+- **相信销售话术而不是数字。** 乐观的预测和一个著名的标志，并不等于您所在地点的利润。
+- **忽略退出。** 许多企业主读了开头的条款，却错过了决定出错时会怎样的续约、转让、终止和竞业限制条款。
+
+## 从哪里开始
+
+- **本周：**决定您的预算和愿意承担的风险，并列出两三个您正在考虑的特许经营。
+- **接着：**向特许经营注册官核实每家特许经营商的注册，并索取披露文件和协议草稿。
+- **然后：**拜访分店，与受许人包括前受许人交谈，并与会计师一起建立您自己的预测。
+- **签约之前：**请律师审阅协议，确认您的冷静期权利，并确保您的租约和融资与期限相配。
+
+好的特许经营，是您在付款之前从各个角度都查核过的，而不是被催着签下的。`,
+        faqs: [
+          {
+            question: "马来西亚的特许经营商必须注册吗？",
+            answer:
+              "一般必须。根据《1998年特许经营法令》，特许经营商必须在提供其特许经营之前向特许经营注册官注册，外国特许经营商还有额外的批准要求。请向 KPDN 核实注册，而不是依赖特许经营商的话。",
+          },
+          {
+            question: "注册就代表这个特许经营是好的投资吗？",
+            answer:
+              "不是。注册显示特许经营商已符合法律要求并已递交文件。它并不保证盈利或销售预测切合实际，所以您仍需自己查核。",
+          },
+          {
+            question: "签约之前特许经营商应该给我哪些文件？",
+            answer:
+              "披露文件和拟议的特许经营协议，一般在签约前的规定天数提供。请仔细阅读，与别人告诉您的内容比较，并请律师审阅。",
+          },
+          {
+            question: "购买特许经营时应预期哪些费用？",
+            answer:
+              "通常包括首期特许经营费、装修和设备成本、押金、版税、营销出资、培训或续约费用，以及必须向特许经营商或获批准的供应商购买用品的要求。请把它们加起来，并与现实的销售额比较。",
+          },
+          {
+            question: "受许人有冷静期吗？",
+            answer:
+              "法律通常在签约后提供一段短暂的冷静期，受许人可在此期间退出并获得退款，须符合条件。请向特许经营注册官或您的律师确认现行期限以及如何使用。",
+          },
+          {
+            question: "特许经营邀约中有哪些警讯？",
+            answer:
+              "没有注册、催促快速付款、保证回报、拒绝让您与现有或前受许人交谈、区域或费用条款含糊，以及更像多层次传销或投资计划而不像真正特许经营的业务。",
+          },
+          {
+            question: "我可以把自己的小生意特许经营吗？",
+            answer:
+              "可能可以，但您一般需要经过验证且有利可图的模式、受保护的品牌、书面的系统和培训，并在提供之前注册您的特许经营，准备合规的披露文件和协议。请先咨询特许经营律师。",
+          },
+          {
+            question: "我可以出售或退出特许经营吗？",
+            answer:
+              "只能在协议允许的范围内。请在签约前查核期限、续约条件、转让权利、终止条款和任何竞业限制，因为无法出售或离开的特许经营，退出的代价可能很高。",
+          },
+        ],
+      },
+      ms: {
+        title: "Francais di Malaysia: Membeli atau Memulakan Francais dengan Cara yang Betul",
+        excerpt:
+          "Francais boleh memberi perniagaan kecil jenama dan buku panduan yang terbukti, tetapi ia juga bermakna yuran, royalti dan kontrak panjang yang jarang ditulis memihak kepada anda. Panduan ini menerangkan bagaimana francais dikawal selia di Malaysia, apa yang perlu disemak sebelum membeli, apa yang diperlukan perniagaan sebelum boleh memfrancaiskan, dan tanda amaran skim yang tidak berdaftar atau tidak realistik.",
+        body: `Francais menarik bagi ramai pemilik perniagaan kali pertama. Daripada membina jenama dari kosong, anda membeli hak untuk menggunakan nama, sistem dan sokongan sedia ada, dan sebagai balasan anda membayar yuran dan mengikut peraturan francaisor. Apabila berjaya, ia memendekkan keluk pembelajaran. Apabila tidak, anda boleh terikat dengan kontrak bertahun-tahun, membayar royalti ke atas perniagaan yang tidak pernah menguntungkan. Bagi pemilik yang mahu memfrancaiskan konsepnya sendiri, tuntutan undang-undang dan praktikal adalah sama nyata.
+
+Ini ialah maklumat am, bukan nasihat guaman atau kewangan. Peraturan, yuran dan prosedur francais ditadbir oleh Kementerian Perdagangan Dalam Negeri dan Kos Sara Hidup (KPDN) melalui Pendaftar Francais, dan ia telah dipinda dari semasa ke semasa, jadi sahkan keperluan semasa dengan Pendaftar atau peguam francais Malaysia sebelum anda melaburkan wang atau menandatangani apa-apa.
+
+## 1. Fahami bagaimana francais dikawal selia
+
+### Akta Francais 1998
+Francais di Malaysia ditadbir oleh Akta Francais 1998, yang telah dipinda, termasuk melalui perubahan yang berkuat kuasa pada 2022. Ia bertujuan melindungi francaisi dengan menghendaki francaisor didaftarkan dan memberi bakal francaisi maklumat tertentu sebelum mereka menandatangani.
+
+### Pendaftaran dengan Pendaftar Francais
+Secara am, francaisor mesti mendaftarkan francaisnya dengan Pendaftar Francais sebelum menawarkan atau menjualnya, dan pendaftaran dibuat melalui sistem dalam talian rasmi Pendaftar. Francaisor asing mempunyai keperluan kelulusan tambahan. Francais yang tidak didaftarkan apabila sepatutnya ialah tanda amaran yang serius.
+
+### Pendaftaran bukan jaminan
+Pendaftaran menunjukkan francaisor telah memenuhi keperluan undang-undang dan memfailkan dokumennya. Ia tidak menjamin perniagaan itu menguntungkan atau unjurannya realistik, jadi anda tetap perlu membuat semakan sendiri.
+
+### Apa yang dikira sebagai francais
+Bukan setiap lesen, pengedaran atau skim "peluang perniagaan" ialah francais, dan sesetengah skim yang kelihatan seperti francais sebenarnya sesuatu yang lain, seperti pemasaran berbilang peringkat atau tawaran pelaburan. Jika anda tidak pasti, tanya Pendaftar.
+
+## 2. Semak francaisor sebelum apa-apa lagi
+
+### Sahkan pendaftaran
+Minta butiran pendaftaran francais dan sahkannya dengan Pendaftar Francais KPDN, dan bukannya bergantung pada risalah atau logo pada poster. Pendaftaran terhad masa dan mesti diperbaharui, jadi semak bahawa ia masih sah.
+
+### Lihat rekod prestasi
+Sudah berapa lama francaisor beroperasi? Berapa banyak cawangan wujud, berapa yang dimiliki syarikat, dan berapa yang telah tutup? Francais dengan banyak penutupan atau francaisi yang tidak berpuas hati wajar dikemukakan soalan yang sukar.
+
+### Lawat dan bercakap dengan francaisi sedia ada
+Lawat cawangan tanpa kehadiran francaisor, dan tanya francaisi tentang jualan, kos, sokongan sebenar mereka, dan sama ada mereka akan membeli lagi. Minta senarai yang termasuk francaisi yang telah keluar.
+
+### Semak kekuatan jenama itu sendiri
+Nama terkenal di media sosial tidak sentiasa bertukar menjadi aliran pelanggan yang stabil. Semak bagaimana jenama itu berprestasi di tempatan, dan sama ada ia memiliki tanda dagangannya sendiri. Lihat panduan kami tentang pendaftaran tanda dagangan untuk sebab mengapa ini penting.
+
+## 3. Baca dokumen pendedahan dan perjanjian dengan teliti
+
+Baca dokumen pendedahan dan draf perjanjian dengan perlahan sebelum anda membayar apa-apa kepada francaisor. Di bawah Akta Francais, francaisor amnya dikehendaki memberi anda dokumen pendedahan dan perjanjian yang dicadangkan beberapa hari yang ditetapkan sebelum menandatangani, jadi gunakan masa itu.
+
+### Dokumen pendedahan
+Ia harus menerangkan francaisor, pengalamannya, sistem francais, yuran, obligasi setiap pihak dan fakta utama lain. Bandingkannya dengan apa yang diberitahu pasukan jualan, dan tanya tentang sebarang perbezaan secara bertulis.
+
+### Yuran dan kos berterusan
+Cari yuran francais permulaan, kos ubah suai dan peralatan, deposit, royalti, sumbangan pemasaran atau pengiklanan, yuran latihan dan pembaharuan, serta keperluan membeli stok atau bekalan daripada francaisor atau pembekal yang diluluskan. Jumlahkannya untuk mengetahui kos sebenar, dan bandingkan dengan jualan yang realistik.
+
+### Wilayah
+Ketahui sama ada anda mempunyai wilayah eksklusif, bagaimana ia ditakrifkan, dan sama ada francaisor atau francaisi lain boleh membuka berdekatan. Klausa wilayah yang lemah boleh memusnahkan jualan anda.
+
+### Tempoh, pembaharuan dan pemindahan
+Semak tempoh perjanjian, syarat dan kos pembaharuan, dan sama ada anda boleh menjual atau memindahkan perniagaan, dan atas terma apa. Francais yang tidak boleh dijual sukar ditinggalkan.
+
+### Penamatan dan keluar
+Lihat bila francaisor boleh menamatkan, apa yang mesti anda lakukan jika anda keluar, sama ada terdapat sekatan tidak bersaing, dan apa yang berlaku kepada peralatan serta ubah suai anda. Panduan kami tentang perjanjian penyewaan komersial menerangkan bahagian sewa, yang sering mesti sepadan dengan tempoh francais.
+
+### Tempoh bertenang
+Undang-undang lazimnya memperuntukkan tempoh bertenang yang singkat selepas menandatangani di mana francaisi boleh menarik diri dan menerima bayaran balik, tertakluk kepada syarat. Sahkan tempoh semasa dan cara menggunakannya dengan Pendaftar atau peguam anda.
+
+> Jangan biarkan desakan mempengaruhi anda. Promosi seperti "tandatangan minggu ini untuk mengunci harga" atau "tinggal dua wilayah sahaja" ialah taktik jualan, dan francaisor yang sah akan memberi anda masa yang dikehendaki undang-undang dan akal sihat. Jika anda didesak membayar sebelum mendapat dokumen yang didaftarkan, berlalulah pergi.
+
+## 4. Uji angka sendiri
+
+### Bina ramalan anda sendiri
+Ambil angka francaisor sebagai titik permulaan, kemudian bina ramalan anda sendiri dengan jualan yang realistik, sewa tempatan anda, kos buruh, royalti dan kos stok. Sertakan wang tunai yang anda perlukan untuk bertahan sehingga cawangan itu pulang modal.
+
+### Rancang pembiayaan
+Kira berapa banyak yang boleh anda labur dan pinjam, dan sama ada anda boleh bertahan dalam tahun pertama yang perlahan. Panduan kami tentang geran dan pembiayaan PKS merangkumi pilihan sokongan untuk diterokai sebelum anda berhutang.
+
+### Tanya tentang dakwaan keuntungan
+Jika francaisor membuat dakwaan tentang jualan atau keuntungan, minta asasnya secara bertulis, dan bandingkan dengan apa yang diberitahu francaisi sedia ada. Berhati-hati dengan jaminan pulangan.
+
+### Pertimbangkan cukai dan perakaunan
+Francais mempunyai kesan cukai, seperti bagaimana yuran dan royalti dilayan. Bercakap dengan akauntan, dan lihat panduan kami tentang simpan kira dan potongan cukai.
+
+## 5. Dapatkan nasihat profesional
+
+### Peguam untuk perjanjian
+Perjanjian francais panjang, berat sebelah dan sukar diubah selepas menandatangani. Peguam yang memahami francais boleh menerangkan risiko, berunding jika boleh, dan menyemak pendaftaran serta dokumen.
+
+### Akauntan untuk angka
+Akauntan boleh menguji tekanan ramalan anda dan memberitahu sama ada pelaburan itu masuk akal.
+
+### Jangan menandatangani di bawah tekanan atau sebelum menyemak
+Jangan sekali-kali menandatangani, membayar deposit atau membuat komitmen terhadap sewa sebelum anda mengesahkan pendaftaran dan menerima serta memahami dokumen.
+
+## 6. Jika anda mahu memfrancaiskan perniagaan sendiri
+
+### Adakah perniagaan anda bersedia
+Francais memerlukan model yang terbukti, menguntungkan dan boleh ditiru orang lain, jenama yang kukuh, sistem dan manual bertulis, serta keupayaan melatih dan menyokong francaisi. Ramai pemilik mula memfrancais terlalu awal, sebelum cawangan mereka sendiri berjaya secara konsisten.
+
+### Keperluan undang-undang
+Anda amnya perlu mendaftarkan francais anda sebelum menawarkannya, menyediakan dokumen pendedahan dan perjanjian francais yang mematuhi, dan memenuhi syarat lain dalam Akta. Panduan kami tentang mendaftarkan perniagaan di Malaysia dan pendaftaran tanda dagangan ialah langkah pertama yang berguna, kerana anda memerlukan perniagaan berdaftar dan jenama yang dilindungi.
+
+### Kos dan komitmen
+Francaisor mesti membiayai pendaftaran, kerja undang-undang, latihan dan sokongan berterusan, dan bertanggungjawab ke atas apa yang mereka janjikan. Bajetkan ini sebelum anda bermula.
+
+### Pilih francaisi dengan teliti
+Francaisi yang lemah merosakkan jenama anda, jadi saring calon dari segi kewangan, sikap dan kesesuaian, dan jangan menjual kepada sesiapa yang mampu membayar yuran.
+
+Jika anda mencari peguam francais, akauntan atau penasihat perniagaan, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pelanggan menemui dan mengesahkan perniagaan anda sendiri, sama ada anda menjadi francaisi atau francaisor.
+
+## Kesilapan lazim PKS Malaysia dengan francais
+
+- **Membeli francais yang tidak berdaftar.** Tanpa pendaftaran, anda kehilangan perlindungan undang-undang dan mungkin tiada cara untuk mendapatkan semula wang anda.
+- **Mempercayai kata-kata jualan dan bukannya angka.** Unjuran optimistik dan logo terkenal tidak sama dengan keuntungan di lokasi anda.
+- **Mengabaikan jalan keluar.** Ramai pemilik membaca terma pembukaan dan terlepas klausa pembaharuan, pemindahan, penamatan dan tidak bersaing yang menentukan apa yang berlaku apabila ia gagal.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Tentukan bajet anda dan apa yang sanggup anda pertaruhkan, dan senaraikan dua atau tiga francais yang anda pertimbangkan.
+- **Seterusnya:** Sahkan pendaftaran setiap francaisor dengan Pendaftar Francais, dan minta dokumen pendedahan serta draf perjanjian.
+- **Kemudian:** Lawat cawangan, bercakap dengan francaisi termasuk yang terdahulu, dan bina ramalan anda sendiri dengan akauntan.
+- **Sebelum menandatangani:** Minta peguam menyemak perjanjian, sahkan hak tempoh bertenang anda, dan pastikan sewa dan pembiayaan anda sepadan dengan tempoh.
+
+Francais yang baik ialah yang telah anda semak dari setiap sudut sebelum anda membayar, bukan yang anda tergesa-gesa menyertainya.`,
+        faqs: [
+          {
+            question: "Adakah francaisor mesti berdaftar di Malaysia?",
+            answer:
+              "Amnya ya. Di bawah Akta Francais 1998, francaisor mesti mendaftarkan francaisnya dengan Pendaftar Francais sebelum menawarkannya, dan francaisor asing mempunyai keperluan kelulusan tambahan. Sahkan pendaftaran dengan KPDN dan bukannya bergantung pada kata francaisor.",
+          },
+          {
+            question: "Adakah pendaftaran bermakna francais itu pelaburan yang baik?",
+            answer:
+              "Tidak. Pendaftaran menunjukkan francaisor telah memenuhi keperluan undang-undang dan memfailkan dokumennya. Ia tidak menjamin keuntungan atau unjuran jualan yang realistik, jadi anda tetap perlu membuat semakan sendiri.",
+          },
+          {
+            question: "Apakah dokumen yang patut diberikan francaisor kepada saya sebelum saya menandatangani?",
+            answer:
+              "Dokumen pendedahan dan perjanjian francais yang dicadangkan, amnya beberapa hari yang ditetapkan sebelum menandatangani. Bacanya dengan teliti, bandingkan dengan apa yang diberitahu kepada anda, dan minta peguam menyemaknya.",
+          },
+          {
+            question: "Apakah yuran yang patut saya jangka apabila membeli francais?",
+            answer:
+              "Lazimnya yuran francais permulaan, kos ubah suai dan peralatan, deposit, royalti, sumbangan pemasaran, yuran latihan atau pembaharuan, dan keperluan membeli bekalan daripada francaisor atau pembekal yang diluluskan. Jumlahkannya dan bandingkan dengan jualan yang realistik.",
+          },
+          {
+            question: "Adakah terdapat tempoh bertenang untuk francaisi?",
+            answer:
+              "Undang-undang lazimnya memperuntukkan tempoh bertenang yang singkat selepas menandatangani di mana francaisi boleh menarik diri dan dibayar balik, tertakluk kepada syarat. Sahkan tempoh semasa dan cara menggunakannya dengan Pendaftar Francais atau peguam anda.",
+          },
+          {
+            question: "Apakah tanda amaran dalam tawaran francais?",
+            answer:
+              "Tiada pendaftaran, desakan untuk membayar dengan cepat, pulangan yang dijamin, enggan membenarkan anda bercakap dengan francaisi sedia ada atau terdahulu, terma wilayah atau yuran yang kabur, dan perniagaan yang lebih menyerupai pemasaran berbilang peringkat atau skim pelaburan daripada francais sebenar.",
+          },
+          {
+            question: "Bolehkah saya memfrancaiskan perniagaan kecil saya sendiri?",
+            answer:
+              "Mungkin, tetapi anda amnya memerlukan model yang terbukti dan menguntungkan, jenama yang dilindungi, sistem dan latihan bertulis, serta mendaftarkan francais anda dan menyediakan dokumen pendedahan dan perjanjian yang mematuhi sebelum menawarkannya. Dapatkan nasihat peguam francais dahulu.",
+          },
+          {
+            question: "Bolehkah saya menjual atau keluar daripada francais?",
+            answer:
+              "Hanya setakat yang dibenarkan perjanjian. Semak tempoh, syarat pembaharuan, hak pemindahan, klausa penamatan dan sebarang larangan bersaing sebelum anda menandatangani, kerana francais yang tidak boleh dijual atau ditinggalkan boleh mahal untuk dikeluarkan.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "social-media-marketing-for-malaysian-smes",
+    title: "Marketing Your Small Business on Social Media in Malaysia: Rules, Platforms, and Practical Steps",
+    seoTitle: "Social Media Marketing for Malaysian SMEs: Rules and Steps",
+    seoDescription:
+      "How Malaysian SMEs can market on social media: platforms, a simple routine, advertising rules, influencer disclosure, reviews, and measuring results.",
+    coverImage: {
+      file: "social-media-marketing-for-malaysian-smes-cover.webp",
+      mimeType: "image/webp",
+      alt: "A smiling woman with glasses typing on a laptop at a marble table with a small plant and bookshelves behind her",
+      altTranslations: {
+        zh: "一位戴眼镜的微笑女士在大理石桌前使用笔记本电脑，桌上有一盆小植物，身后是书架",
+        ms: "Seorang wanita berkaca mata tersenyum menaip pada komputer riba di meja marmar dengan pokok kecil dan rak buku di belakangnya",
+      },
+    },
+    contentImages: {
+      "content-planning": {
+        file: "social-media-marketing-for-malaysian-smes-planning.webp",
+        mimeType: "image/webp",
+        alt: "A man in a blazer on the phone, writing notes on paper beside a laptop and a yellow folder",
+        altTranslations: {
+          zh: "一位身穿西装外套的男士一边通电话，一边在笔记本电脑和黄色文件夹旁的纸上做笔记",
+          ms: "Seorang lelaki berjaket bercakap di telefon sambil mencatat nota di atas kertas di sebelah komputer riba dan fail kuning",
+        },
+        after: "Plan a simple weekly routine before you post anything, because consistency beats bursts of effort.",
+        afterTranslations: {
+          zh: "在发布任何内容之前，先规划一个简单的每周例行安排，因为持之以恒胜过一时的冲劲。",
+          ms: "Rancang rutin mingguan yang mudah sebelum anda menyiarkan apa-apa, kerana konsistensi mengatasi usaha yang bermusim.",
+        },
+      },
+    },
+    excerpt:
+      "For most Malaysian small businesses, social media is where customers first discover them, and it is also where careless posts can break advertising and consumer rules. This guide explains how to choose platforms, build a simple posting routine, follow the main advertising and disclosure rules, handle messages and reviews, and measure what works without overspending.",
+    body: `A coffee shop on Instagram, a tailor on Facebook, a home baker on WhatsApp, and a cleaning service on TikTok all use the same tools to reach the same Malaysian customers. Social media costs little to start, but it can eat unlimited time and money if you post without a plan, and it comes with rules about what you may claim and how you must disclose paid promotion. Done well, it builds trust and sales. Done badly, it wastes effort and invites complaints.
+
+This is general information, not legal or marketing advice. Platform features, advertising rules, and regulatory requirements for online platforms and influencers are changing, and some rules depend on what you sell, so confirm the current position with the relevant authority, such as the Ministry of Domestic Trade and Cost of Living (KPDN) or the Malaysian Communications and Multimedia Commission (MCMC), before you rely on it.
+
+## 1. Set a simple goal first
+
+### Know what you want
+Decide what social media is for: getting enquiries, filling bookings, selling products, building a reputation, or recruiting staff. A clear goal tells you what to post and what to measure.
+
+### Know who you are talking to
+Describe your ideal customer, including age, location, language, and what they care about. Malaysia is multilingual, so decide whether to post in English, Bahasa Malaysia, Chinese, or a mix, depending on your audience.
+
+### Set a modest budget of time and money
+Decide how many hours a week you can give it, and how much, if anything, you will spend on ads. Start small and increase only when you see results.
+
+## 2. Choose your platforms
+
+You do not need to be everywhere. Pick one or two where your customers already spend time, and do them well.
+
+### Facebook
+Useful for local businesses, community groups, events, and reaching older customers. Pages, groups, and Marketplace can all help.
+
+### Instagram
+Good for visual businesses such as food, fashion, beauty, crafts, and design, with posts, stories, and short videos.
+
+### TikTok
+Strong for short videos and discovery, including by people who do not already follow you. It works best when you are comfortable on camera and can show your product or process.
+
+### WhatsApp Business
+Not really a marketing channel but a sales and service channel, with a business profile, a catalogue, and quick replies. Many Malaysian customers prefer to message before buying.
+
+### Your own website and Google
+Social media is rented space. A simple website and a Google Business Profile let customers find and verify you outside the platforms. See our guide on getting your business found online.
+
+### Do not forget to register your business first
+Customers, platforms, and payment providers expect a real business behind the page. Our guides on registering a business and on selling online explain the basics.
+
+## 3. Build a content routine
+
+Plan a simple weekly routine before you post anything, because consistency beats bursts of effort.
+
+### Decide on three or four content types
+For example: showing your product or work, answering common questions, sharing customer stories with permission, and behind-the-scenes posts. Mix useful content with offers rather than selling in every post.
+
+### Make a basic content calendar
+Plan a week or a month at a time, noting the day, topic, format, and caption. Batch-create content in one session to save time.
+
+### Keep your look and voice consistent
+Use the same logo, colours, and tone so that people recognise you. Good photos with natural light and a clean background are enough for most small businesses.
+
+### Use your own content wherever possible
+Photos and videos taken by you are better for trust than stock images, and they avoid copyright problems. Do not copy other businesses' photos, designs, or music without permission, since intellectual property rules apply online too. See our guide on trademark registration for protecting your own brand.
+
+### Post at times your customers are online
+Test different days and times, and look at your own results rather than relying on general advice.
+
+## 4. Follow the advertising and consumer rules
+
+Social media posts are advertisements, and the usual rules apply.
+
+### Be honest and accurate
+Do not make false or misleading claims about your products, prices, quality, origin, or results. Show the real price, and make sure promotions and discounts are genuine. Malaysian consumer protection and trade description laws prohibit misleading statements and false descriptions, and our guide on selling online covers the information online sellers must show.
+
+> Treat every post as a promise to the customer. If you advertise a price, a size, a delivery time, or a result, you are expected to deliver it, so do not publish anything you cannot back up, and keep proof for any claim you make.
+
+### Be careful with sensitive claims
+Health, medical, weight-loss, beauty, supplement, and food claims are regulated more tightly, and some products need approval before they can be advertised. Halal claims must be backed by valid certification, as explained in our guide on halal certification. If your product makes health claims, check the rules before posting.
+
+### Disclose paid promotion
+If you pay an influencer, give free products, or share commissions, the content should make it clear that it is an advertisement, and influencers should disclose their relationship with the brand. Rules and guidelines on influencers are developing and have been proposed, so check the current position and write disclosure into your agreement. See our guide on contracts and terms.
+
+### Respect content rules
+Do not post content that is false, offensive, defamatory, or that threatens, harasses, or misleads, and be cautious with sensitive subjects such as race, religion, and royalty. Malaysian communications law applies to online content, and businesses have been investigated over posts.
+
+### Protect personal data
+Do not post customers' personal details, photos, or chat messages without permission, and do not send marketing to people who did not agree. Our guide on PDPA compliance explains the rules.
+
+### Check the platform's own rules
+Each platform has policies on advertising, prohibited products, and community standards. Breaking them can get your content removed or your account suspended, which is a risk if all your customers are there.
+
+## 5. Handle messages and reviews
+
+### Reply quickly and politely
+Many customers judge you by how fast you respond. Set up quick replies for common questions, state your operating hours, and keep a friendly tone.
+
+### Move the sale to a safe process
+Take orders and payments in a way that is recorded, such as a business account, receipts, and clear confirmation. Be careful about fake payment slips, and do not release goods before the money has arrived.
+
+### Deal with complaints in public with care
+Respond calmly, apologise where appropriate, offer to solve it, and move the details to a private message. A good public response can win more trust than a perfect record.
+
+### Ask for reviews, but do not fake them
+Invite happy customers to leave a review, but never write fake reviews, buy them, or offer rewards that distort them. Fake reviews are misleading and can breach consumer rules and platform policies.
+
+### Keep records
+Save important messages, orders, and agreements, because they may be needed if there is a dispute or a tax review. See our guide on bookkeeping basics.
+
+## 6. Spend carefully and measure results
+
+### Start with organic, then test ads
+Build a base of useful content first. When you advertise, begin with a small daily budget, one clear offer, and a specific audience, and stop what does not work.
+
+### Track a few simple numbers
+Follow enquiries, orders, cost per enquiry, and repeat customers, rather than only likes and followers. Ask new customers how they found you.
+
+### Beware of paid shortcuts
+Be careful with services that sell followers, likes, or guaranteed viral results. Fake engagement does not bring customers, and it can breach platform rules.
+
+### Keep your accounts secure
+Use strong passwords, two-factor authentication, and limit who has access, so that your page cannot be hijacked. Remove access when staff leave.
+
+### Review monthly
+Look at what worked, drop what did not, and adjust your plan. Small, steady improvements beat constant reinvention.
+
+If you want help with photography, design, a website, or marketing, you can [browse the directory](/en) for local providers, and [creating a free business listing](/en/signup) gives customers another trusted place to find and verify your business outside social platforms.
+
+## Common mistakes Malaysian SMEs make on social media
+
+- **Posting without a plan.** Random posts and long silences waste effort and teach customers nothing about what you do.
+- **Making claims they cannot prove.** Misleading prices, health claims, and unverified halal or quality statements can bring complaints and enforcement.
+- **Relying on one platform.** If your only customer list is a social account, a suspension or an algorithm change can stop your sales overnight.
+
+## Where to start
+
+- **This week:** Choose one or two platforms, set your goal, and make sure your business details and contact information are correct and consistent.
+- **Next:** Plan four weeks of simple content, and set up quick replies for common questions.
+- **Then:** Check your claims and promotions against the advertising rules, and write disclosure terms into any influencer agreement.
+- **Every month:** Review your numbers, collect customer contacts you own, and adjust.
+
+Good social media marketing is steady, honest, and useful, and it works best when customers can also find and trust you elsewhere.`,
+    faqs: [
+      {
+        question: "Which social media platform is best for a small business in Malaysia?",
+        answer:
+          "It depends on your customers. Facebook suits local and older audiences, Instagram suits visual businesses, TikTok suits short videos and discovery, and WhatsApp Business suits enquiries and sales. Pick one or two where your customers already are.",
+      },
+      {
+        question: "How often should I post?",
+        answer:
+          "Consistency matters more than volume. Choose a rhythm you can keep up, such as a few posts a week, plan your content in advance, and look at your own results to adjust.",
+      },
+      {
+        question: "Are social media posts treated as advertisements?",
+        answer:
+          "Yes, posts that promote your products or services are advertisements, so consumer protection and trade description rules apply. Do not make false or misleading claims about prices, quality, or results.",
+      },
+      {
+        question: "Can I make health or halal claims in my posts?",
+        answer:
+          "Be careful. Health, medical, supplement, and food claims are more tightly regulated, some products need approval before they can be advertised, and halal claims must be backed by valid certification. Check the rules before you post.",
+      },
+      {
+        question: "Do influencers have to disclose paid promotion?",
+        answer:
+          "Paid or sponsored content should be clearly identifiable as advertising, and influencers should disclose their relationship with the brand. Rules and guidelines on influencers are developing, so check the current position and put disclosure requirements in your agreement.",
+      },
+      {
+        question: "Can I use photos or music I found online in my posts?",
+        answer:
+          "Not without permission. Photos, designs, and music are protected by intellectual property rules, and copying them can lead to takedowns or claims. Use your own content or properly licensed material.",
+      },
+      {
+        question: "Is it okay to buy followers or write my own reviews?",
+        answer:
+          "No. Fake followers, bought engagement, and fake reviews are misleading, can breach platform policies and consumer rules, and do not bring real customers. Build an audience and reviews honestly.",
+      },
+      {
+        question: "How do I know if my social media marketing is working?",
+        answer:
+          "Track enquiries, orders, cost per enquiry, and repeat customers, not just likes and followers, and ask new customers how they found you. Review monthly and drop what does not work.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "在马来西亚用社交媒体营销您的小企业：规则、平台与实用步骤",
+        excerpt:
+          "对大多数马来西亚小企业来说，社交媒体是顾客第一次发现它们的地方，也是不小心的帖子可能违反广告和消费者规则的地方。本指南说明如何选择平台、建立简单的发帖例行安排、遵守主要的广告和披露规则、处理讯息和评价，以及在不超支的情况下衡量什么有效。",
+        body: `Instagram 上的咖啡店、Facebook 上的裁缝、WhatsApp 上的家庭烘焙师，以及 TikTok 上的清洁服务，都用同样的工具去触达同样的马来西亚顾客。社交媒体起步成本低，但如果没有计划就发帖，它可能耗掉无限的时间和金钱，而且还附带关于您可以声称什么，以及必须如何披露付费推广的规则。做得好，它建立信任和销售。做得差，它浪费精力并招来投诉。
+
+以下仅为一般资讯，并非法律或营销意见。平台功能、广告规则，以及对在线平台和网红的监管要求都在变化，有些规则也取决于您销售的产品，所以在依赖这些内容之前，请向相关机构，例如国内贸易及生活费用部（KPDN）或马来西亚通讯及多媒体委员会（MCMC），确认最新情况。
+
+## 1. 先设定一个简单的目标
+
+### 知道您想要什么
+决定社交媒体的用途：获取咨询、填满预约、销售产品、建立声誉，或招聘员工。清晰的目标会告诉您该发什么以及衡量什么。
+
+### 知道您在对谁说话
+描述您理想的顾客，包括年龄、所在地、语言和他们在乎什么。马来西亚是多语言的，所以请根据您的受众决定用英文、马来文、中文还是混合使用。
+
+### 设定适度的时间和金钱预算
+决定您每周能投入多少小时，以及您会在广告上花多少钱（如果有的话）。从小开始，只有在看到成果时才增加。
+
+## 2. 选择您的平台
+
+您不需要无处不在。选择一两个您的顾客已经花时间的平台，并把它们做好。
+
+### Facebook
+适合本地企业、社群、活动，以及触达较年长的顾客。专页、群组和 Marketplace 都有帮助。
+
+### Instagram
+适合视觉型企业，例如餐饮、时装、美容、手工艺和设计，有帖子、限时动态和短视频。
+
+### TikTok
+适合短视频和发现，包括被还没有关注您的人看到。当您自在地面对镜头，并能展示您的产品或过程时，效果最好。
+
+### WhatsApp Business
+它其实不是营销渠道，而是销售和服务渠道，有企业资料、产品目录和快速回复。许多马来西亚顾客喜欢在购买之前先发讯息。
+
+### 您自己的网站和 Google
+社交媒体是租来的空间。一个简单的网站和 Google 商家资料，让顾客能在平台之外找到并核实您。请参阅我们关于让您的企业在网上被找到的指南。
+
+### 别忘了先注册您的企业
+顾客、平台和支付服务商都期望页面背后有一家真实的企业。我们关于注册企业和网上销售的指南说明了基础知识。
+
+## 3. 建立内容例行安排
+
+在发布任何内容之前，先规划一个简单的每周例行安排，因为持之以恒胜过一时的冲劲。
+
+### 决定三四种内容类型
+例如：展示您的产品或作品、回答常见问题、经许可分享顾客故事，以及幕后花絮。把有用的内容与优惠混合起来，而不是每个帖子都在推销。
+
+### 制作基本的内容日历
+一次规划一周或一个月，记下日期、主题、格式和文案。一次性批量制作内容以节省时间。
+
+### 保持风格和语气一致
+使用相同的标志、颜色和语气，让人们认得您。对大多数小企业来说，自然光线和干净背景的好照片就足够了。
+
+### 尽可能使用您自己的内容
+您自己拍摄的照片和视频比图库图片更能建立信任，也避免版权问题。未经许可，不要复制其他企业的照片、设计或音乐，因为知识产权规则在网上同样适用。请参阅我们关于商标注册的指南，了解如何保护您自己的品牌。
+
+### 在顾客在线的时间发帖
+测试不同的日子和时间，看您自己的成果，而不是依赖一般性的建议。
+
+## 4. 遵守广告和消费者规则
+
+社交媒体的帖子就是广告，通常的规则同样适用。
+
+### 诚实和准确
+不要就您的产品、价格、质量、产地或成果作出虚假或误导的声明。显示真实的价格，并确保促销和折扣是真的。马来西亚的消费者保护和商品说明法律禁止误导性的陈述和虚假的描述，我们关于网上销售的指南涵盖了网络卖家必须展示的资料。
+
+> 把每一个帖子都当作对顾客的承诺。如果您宣传价格、尺寸、送达时间或成果，您就被期望要兑现，所以不要发布您无法证明的内容，并为您作出的任何声明保存证据。
+
+### 对敏感的声明要谨慎
+健康、医疗、减肥、美容、保健品和食品的声明受到更严格的规管，有些产品在宣传之前需要获得批准。清真声明必须有有效的认证作为后盾，正如我们关于清真认证的指南所说明的。如果您的产品作出健康声明，请在发帖之前查核规则。
+
+### 披露付费推广
+如果您付费给网红、赠送免费产品或分享佣金，内容应清楚表明它是广告，网红也应披露他们与品牌的关系。关于网红的规则和指南正在发展，并已有提议，所以请查核现行情况，并把披露写进您的协议中。请参阅我们关于合约与条款的指南。
+
+### 尊重内容规则
+不要发布虚假、冒犯、诽谤，或威胁、骚扰或误导的内容，并对种族、宗教和皇室等敏感话题保持谨慎。马来西亚的通讯法律适用于网上内容，企业曾因帖子而被调查。
+
+### 保护个人数据
+未经许可，不要发布顾客的个人资料、照片或聊天讯息，也不要向没有同意的人发送营销信息。我们关于 PDPA 合规的指南说明了规则。
+
+### 查核平台自己的规则
+每个平台都有关于广告、禁售产品和社群标准的政策。违反这些政策可能让您的内容被删除或账号被暂停，如果您所有的顾客都在那里，这是一个风险。
+
+## 5. 处理讯息和评价
+
+### 迅速而有礼貌地回复
+许多顾客以您回复的速度来评断您。为常见问题设置快速回复，注明您的营业时间，并保持友善的语气。
+
+### 把销售转到安全的流程
+以有记录的方式接受订单和付款，例如企业账户、收据和清晰的确认。小心假的付款凭证，在款项到账之前不要放货。
+
+### 谨慎地公开处理投诉
+冷静地回应，在适当时道歉，表示愿意解决，并把细节转到私人讯息。一个好的公开回应，可能比一份完美的记录赢得更多信任。
+
+### 请求评价，但不要造假
+邀请满意的顾客留下评价，但切勿撰写虚假评价、购买评价，或提供会扭曲评价的奖励。虚假评价具有误导性，可能违反消费者规则和平台政策。
+
+### 保存记录
+保存重要的讯息、订单和协议，因为在发生纠纷或税务审查时可能需要。请参阅我们关于簿记基础的指南。
+
+## 6. 谨慎花钱并衡量成果
+
+### 从自然流量开始，再测试广告
+先建立一批有用的内容。当您投放广告时，从小额的每日预算、一个清晰的优惠和特定的受众开始，并停止无效的做法。
+
+### 追踪几个简单的数字
+追踪咨询、订单、每次咨询的成本和回头客，而不只是点赞和粉丝。询问新顾客是如何找到您的。
+
+### 提防付费的捷径
+对出售粉丝、点赞或保证爆红的服务要保持谨慎。虚假的互动不会带来顾客，还可能违反平台规则。
+
+### 保障您的账号安全
+使用强密码、双重验证，并限制谁可以访问，这样您的页面就不会被劫持。员工离职时撤销其访问权限。
+
+### 每月检讨
+看看什么有效，放弃无效的，并调整您的计划。小而稳定的改进，胜过不断的重新开始。
+
+如果您想要摄影、设计、网站或营销方面的协助，可以[浏览名录](/zh)寻找本地服务商，而[创建免费的企业列表](/zh/signup)为顾客提供了社交平台之外另一个值得信赖的地方，去找到并核实您的企业。
+
+## 马来西亚中小企业在社交媒体上常犯的错误
+
+- **没有计划就发帖。** 随机的帖子和长时间的沉默浪费精力，也让顾客对您做什么一无所知。
+- **作出无法证明的声明。** 误导性的价格、健康声明，以及未经证实的清真或质量陈述，可能招来投诉和执法。
+- **依赖单一平台。** 如果您唯一的顾客名单是一个社交账号，一次暂停或算法变更就可能让您的销售一夜之间中断。
+
+## 从哪里开始
+
+- **本周：**选择一两个平台，设定您的目标，并确保您的企业资料和联络方式正确且一致。
+- **接着：**规划四个星期的简单内容，并为常见问题设置快速回复。
+- **然后：**对照广告规则查核您的声明和促销，并把披露条款写进任何网红协议中。
+- **每个月：**检讨您的数字，收集属于您自己的顾客联络资料，并作出调整。
+
+好的社交媒体营销是稳定、诚实而有用的，当顾客也能在别处找到并信任您时，效果最好。`,
+        faqs: [
+          {
+            question: "在马来西亚，哪个社交媒体平台最适合小企业？",
+            answer:
+              "取决于您的顾客。Facebook 适合本地和较年长的受众，Instagram 适合视觉型企业，TikTok 适合短视频和发现，WhatsApp Business 适合咨询和销售。请选择一两个您的顾客已经在的平台。",
+          },
+          {
+            question: "我应该多久发一次帖？",
+            answer:
+              "持之以恒比数量更重要。选择一个您能坚持的节奏，例如每周几个帖子，提前规划内容，并看您自己的成果来调整。",
+          },
+          {
+            question: "社交媒体的帖子会被当作广告吗？",
+            answer:
+              "会。推广您产品或服务的帖子就是广告，所以消费者保护和商品说明规则适用。不要就价格、质量或成果作出虚假或误导的声明。",
+          },
+          {
+            question: "我可以在帖子中作出健康或清真声明吗？",
+            answer:
+              "要小心。健康、医疗、保健品和食品的声明受到更严格的规管，有些产品在宣传之前需要获得批准，清真声明必须有有效认证作为后盾。请在发帖之前查核规则。",
+          },
+          {
+            question: "网红必须披露付费推广吗？",
+            answer:
+              "付费或赞助的内容应能清楚辨认为广告，网红也应披露他们与品牌的关系。关于网红的规则和指南正在发展，所以请查核现行情况，并把披露要求写进您的协议。",
+          },
+          {
+            question: "我可以在帖子中使用网上找到的照片或音乐吗？",
+            answer:
+              "未经许可不可以。照片、设计和音乐受知识产权规则保护，复制它们可能导致被下架或遭索赔。请使用您自己的内容或获得适当授权的素材。",
+          },
+          {
+            question: "购买粉丝或自己写评价可以吗？",
+            answer:
+              "不可以。虚假粉丝、购买的互动和虚假评价具有误导性，可能违反平台政策和消费者规则，也不会带来真正的顾客。请诚实地建立受众和评价。",
+          },
+          {
+            question: "我怎么知道我的社交媒体营销是否有效？",
+            answer:
+              "追踪咨询、订单、每次咨询的成本和回头客，而不只是点赞和粉丝，并询问新顾客是如何找到您的。每月检讨，放弃无效的做法。",
+          },
+        ],
+      },
+      ms: {
+        title: "Memasarkan Perniagaan Kecil Anda di Media Sosial di Malaysia: Peraturan, Platform dan Langkah Praktikal",
+        excerpt:
+          "Bagi kebanyakan perniagaan kecil Malaysia, media sosial ialah tempat pelanggan pertama kali menemui mereka, dan ia juga tempat siaran cuai boleh melanggar peraturan pengiklanan dan pengguna. Panduan ini menerangkan cara memilih platform, membina rutin siaran yang mudah, mematuhi peraturan utama pengiklanan dan pendedahan, mengendalikan mesej dan ulasan, serta mengukur apa yang berkesan tanpa berbelanja berlebihan.",
+        body: `Kedai kopi di Instagram, tukang jahit di Facebook, pembuat kek di rumah di WhatsApp, dan perkhidmatan pembersihan di TikTok semuanya menggunakan alat yang sama untuk menjangkau pelanggan Malaysia yang sama. Media sosial murah untuk bermula, tetapi ia boleh menelan masa dan wang tanpa had jika anda menyiarkan tanpa rancangan, dan ia datang dengan peraturan tentang apa yang boleh anda dakwa dan bagaimana anda mesti mendedahkan promosi berbayar. Jika dilakukan dengan baik, ia membina kepercayaan dan jualan. Jika dilakukan dengan buruk, ia membazirkan usaha dan mengundang aduan.
+
+Ini ialah maklumat am, bukan nasihat guaman atau pemasaran. Ciri platform, peraturan pengiklanan dan keperluan kawal selia bagi platform dalam talian dan pempengaruh sedang berubah, dan sesetengah peraturan bergantung pada apa yang anda jual, jadi sahkan kedudukan semasa dengan pihak berkuasa berkaitan, seperti Kementerian Perdagangan Dalam Negeri dan Kos Sara Hidup (KPDN) atau Suruhanjaya Komunikasi dan Multimedia Malaysia (SKMM), sebelum anda bergantung padanya.
+
+## 1. Tetapkan matlamat yang mudah dahulu
+
+### Ketahui apa yang anda mahu
+Tentukan untuk apa media sosial: mendapatkan pertanyaan, memenuhkan tempahan, menjual produk, membina reputasi atau mengambil kakitangan. Matlamat yang jelas memberitahu anda apa yang hendak disiarkan dan apa yang hendak diukur.
+
+### Ketahui siapa yang anda berbual
+Huraikan pelanggan ideal anda, termasuk umur, lokasi, bahasa dan apa yang mereka pentingkan. Malaysia berbilang bahasa, jadi tentukan sama ada hendak menyiarkan dalam bahasa Inggeris, Bahasa Malaysia, Cina atau campuran, bergantung pada khalayak anda.
+
+### Tetapkan bajet masa dan wang yang sederhana
+Tentukan berapa jam seminggu yang boleh anda beri, dan berapa banyak, jika ada, yang akan anda belanjakan untuk iklan. Mulakan kecil dan tingkatkan hanya apabila anda melihat hasil.
+
+## 2. Pilih platform anda
+
+Anda tidak perlu berada di mana-mana. Pilih satu atau dua tempat pelanggan anda sudah menghabiskan masa, dan lakukannya dengan baik.
+
+### Facebook
+Berguna untuk perniagaan tempatan, kumpulan komuniti, acara, dan menjangkau pelanggan yang lebih tua. Halaman, kumpulan dan Marketplace semuanya boleh membantu.
+
+### Instagram
+Baik untuk perniagaan visual seperti makanan, fesyen, kecantikan, kraf dan reka bentuk, dengan siaran, cerita dan video pendek.
+
+### TikTok
+Kuat untuk video pendek dan penemuan, termasuk oleh orang yang belum mengikuti anda. Ia paling berkesan apabila anda selesa di hadapan kamera dan boleh menunjukkan produk atau proses anda.
+
+### WhatsApp Business
+Sebenarnya bukan saluran pemasaran tetapi saluran jualan dan perkhidmatan, dengan profil perniagaan, katalog dan balasan pantas. Ramai pelanggan Malaysia lebih suka bermesej sebelum membeli.
+
+### Laman web dan Google anda sendiri
+Media sosial ialah ruang sewaan. Laman web yang mudah dan Profil Perniagaan Google membolehkan pelanggan menemui dan mengesahkan anda di luar platform. Lihat panduan kami tentang memastikan perniagaan anda mudah ditemui dalam talian.
+
+### Jangan lupa daftarkan perniagaan anda dahulu
+Pelanggan, platform dan penyedia pembayaran menjangkakan perniagaan sebenar di sebalik halaman itu. Panduan kami tentang mendaftarkan perniagaan dan berjual dalam talian menerangkan asasnya.
+
+## 3. Bina rutin kandungan
+
+Rancang rutin mingguan yang mudah sebelum anda menyiarkan apa-apa, kerana konsistensi mengatasi usaha yang bermusim.
+
+### Tentukan tiga atau empat jenis kandungan
+Contohnya: menunjukkan produk atau kerja anda, menjawab soalan lazim, berkongsi kisah pelanggan dengan kebenaran, dan siaran di sebalik tabir. Campurkan kandungan berguna dengan tawaran dan bukannya menjual dalam setiap siaran.
+
+### Buat kalendar kandungan asas
+Rancang seminggu atau sebulan pada satu masa, mencatat hari, topik, format dan kapsyen. Hasilkan kandungan secara berkelompok dalam satu sesi untuk menjimatkan masa.
+
+### Pastikan rupa dan suara anda konsisten
+Gunakan logo, warna dan nada yang sama supaya orang mengenali anda. Foto yang baik dengan cahaya semula jadi dan latar yang bersih sudah memadai bagi kebanyakan perniagaan kecil.
+
+### Gunakan kandungan anda sendiri sedapat mungkin
+Foto dan video yang anda ambil sendiri lebih baik untuk kepercayaan berbanding imej stok, dan ia mengelakkan masalah hak cipta. Jangan menyalin foto, reka bentuk atau muzik perniagaan lain tanpa kebenaran, kerana peraturan harta intelek juga terpakai dalam talian. Lihat panduan kami tentang pendaftaran tanda dagangan untuk melindungi jenama anda sendiri.
+
+### Siarkan pada waktu pelanggan anda dalam talian
+Uji hari dan waktu yang berbeza, dan lihat hasil anda sendiri dan bukannya bergantung pada nasihat umum.
+
+## 4. Ikut peraturan pengiklanan dan pengguna
+
+Siaran media sosial ialah iklan, dan peraturan biasa terpakai.
+
+### Jujur dan tepat
+Jangan membuat dakwaan palsu atau mengelirukan tentang produk, harga, kualiti, asal usul atau hasil anda. Tunjukkan harga sebenar, dan pastikan promosi serta diskaun adalah tulen. Undang-undang perlindungan pengguna dan butiran perdagangan Malaysia melarang pernyataan yang mengelirukan dan penerangan palsu, dan panduan kami tentang berjual dalam talian merangkumi maklumat yang mesti ditunjukkan oleh penjual dalam talian.
+
+> Anggaplah setiap siaran sebagai janji kepada pelanggan. Jika anda mengiklankan harga, saiz, masa penghantaran atau hasil, anda dijangka menyampaikannya, jadi jangan menyiarkan apa-apa yang tidak dapat anda sokong, dan simpan bukti bagi sebarang dakwaan yang anda buat.
+
+### Berhati-hati dengan dakwaan sensitif
+Dakwaan kesihatan, perubatan, penurunan berat badan, kecantikan, suplemen dan makanan dikawal selia dengan lebih ketat, dan sesetengah produk memerlukan kelulusan sebelum boleh diiklankan. Dakwaan halal mesti disokong oleh pensijilan yang sah, seperti yang diterangkan dalam panduan kami tentang pensijilan halal. Jika produk anda membuat dakwaan kesihatan, semak peraturan sebelum menyiarkan.
+
+### Dedahkan promosi berbayar
+Jika anda membayar pempengaruh, memberi produk percuma atau berkongsi komisen, kandungan harus menjelaskan bahawa ia iklan, dan pempengaruh harus mendedahkan hubungan mereka dengan jenama. Peraturan dan garis panduan tentang pempengaruh sedang berkembang dan telah dicadangkan, jadi semak kedudukan semasa dan tulis pendedahan dalam perjanjian anda. Lihat panduan kami tentang kontrak dan terma.
+
+### Hormati peraturan kandungan
+Jangan menyiarkan kandungan yang palsu, menyinggung, memfitnah, atau yang mengugut, mengganggu atau mengelirukan, dan berhati-hati dengan perkara sensitif seperti kaum, agama dan institusi diraja. Undang-undang komunikasi Malaysia terpakai kepada kandungan dalam talian, dan perniagaan pernah disiasat kerana siaran.
+
+### Lindungi data peribadi
+Jangan menyiarkan butiran peribadi, foto atau mesej sembang pelanggan tanpa kebenaran, dan jangan menghantar pemasaran kepada orang yang tidak bersetuju. Panduan kami tentang pematuhan PDPA menerangkan peraturannya.
+
+### Semak peraturan platform sendiri
+Setiap platform mempunyai dasar tentang pengiklanan, produk terlarang dan piawaian komuniti. Melanggarnya boleh menyebabkan kandungan anda dibuang atau akaun anda digantung, yang merupakan risiko jika semua pelanggan anda berada di sana.
+
+## 5. Kendalikan mesej dan ulasan
+
+### Balas dengan cepat dan sopan
+Ramai pelanggan menilai anda berdasarkan kelajuan anda membalas. Sediakan balasan pantas bagi soalan lazim, nyatakan waktu operasi anda, dan kekalkan nada mesra.
+
+### Pindahkan jualan ke proses yang selamat
+Ambil pesanan dan bayaran dengan cara yang direkodkan, seperti akaun perniagaan, resit dan pengesahan yang jelas. Berhati-hati dengan slip bayaran palsu, dan jangan lepaskan barangan sebelum wang tiba.
+
+### Tangani aduan secara terbuka dengan berhati-hati
+Balas dengan tenang, minta maaf jika sesuai, tawarkan untuk menyelesaikannya, dan pindahkan butirannya ke mesej peribadi. Maklum balas awam yang baik boleh memenangi lebih kepercayaan berbanding rekod yang sempurna.
+
+### Minta ulasan, tetapi jangan palsukan
+Jemput pelanggan yang berpuas hati meninggalkan ulasan, tetapi jangan sekali-kali menulis ulasan palsu, membelinya atau menawarkan ganjaran yang memesongkannya. Ulasan palsu mengelirukan dan boleh melanggar peraturan pengguna dan dasar platform.
+
+### Simpan rekod
+Simpan mesej, pesanan dan perjanjian penting, kerana ia mungkin diperlukan jika berlaku pertikaian atau semakan cukai. Lihat panduan kami tentang asas simpan kira.
+
+## 6. Berbelanja dengan berhati-hati dan ukur hasil
+
+### Mulakan dengan organik, kemudian uji iklan
+Bina asas kandungan berguna dahulu. Apabila anda mengiklan, mulakan dengan bajet harian yang kecil, satu tawaran yang jelas dan khalayak tertentu, dan hentikan apa yang tidak berkesan.
+
+### Jejaki beberapa angka mudah
+Ikuti pertanyaan, pesanan, kos setiap pertanyaan dan pelanggan berulang, dan bukannya sekadar suka dan pengikut. Tanya pelanggan baharu bagaimana mereka menemui anda.
+
+### Berwaspada dengan jalan pintas berbayar
+Berhati-hati dengan perkhidmatan yang menjual pengikut, suka atau tular yang dijamin. Penglibatan palsu tidak membawa pelanggan, dan ia boleh melanggar peraturan platform.
+
+### Pastikan akaun anda selamat
+Gunakan kata laluan yang kukuh, pengesahan dua faktor, dan hadkan siapa yang mempunyai akses, supaya halaman anda tidak boleh dirampas. Tarik balik akses apabila kakitangan berhenti.
+
+### Semak setiap bulan
+Lihat apa yang berkesan, gugurkan yang tidak, dan laraskan rancangan anda. Penambahbaikan kecil dan stabil mengatasi penciptaan semula yang berterusan.
+
+Jika anda mahu bantuan dengan fotografi, reka bentuk, laman web atau pemasaran, anda boleh [menyemak imbas direktori](/ms) untuk penyedia tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) memberi pelanggan satu lagi tempat yang dipercayai untuk menemui dan mengesahkan perniagaan anda di luar platform sosial.
+
+## Kesilapan lazim PKS Malaysia di media sosial
+
+- **Menyiarkan tanpa rancangan.** Siaran rawak dan kesenyapan yang panjang membazirkan usaha dan tidak mengajar pelanggan apa-apa tentang apa yang anda lakukan.
+- **Membuat dakwaan yang tidak dapat dibuktikan.** Harga yang mengelirukan, dakwaan kesihatan, dan pernyataan halal atau kualiti yang tidak disahkan boleh membawa aduan dan penguatkuasaan.
+- **Bergantung pada satu platform.** Jika satu-satunya senarai pelanggan anda ialah akaun sosial, penggantungan atau perubahan algoritma boleh menghentikan jualan anda dalam sekelip mata.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Pilih satu atau dua platform, tetapkan matlamat anda, dan pastikan butiran perniagaan serta maklumat hubungan anda betul dan konsisten.
+- **Seterusnya:** Rancang empat minggu kandungan yang mudah, dan sediakan balasan pantas bagi soalan lazim.
+- **Kemudian:** Semak dakwaan dan promosi anda berbanding peraturan pengiklanan, dan tulis terma pendedahan dalam sebarang perjanjian pempengaruh.
+- **Setiap bulan:** Semak angka anda, kumpulkan maklumat hubungan pelanggan yang anda miliki, dan laraskan.
+
+Pemasaran media sosial yang baik adalah stabil, jujur dan berguna, dan ia paling berkesan apabila pelanggan juga boleh menemui dan mempercayai anda di tempat lain.`,
+        faqs: [
+          {
+            question: "Platform media sosial mana yang terbaik untuk perniagaan kecil di Malaysia?",
+            answer:
+              "Bergantung pada pelanggan anda. Facebook sesuai untuk khalayak tempatan dan lebih tua, Instagram sesuai untuk perniagaan visual, TikTok sesuai untuk video pendek dan penemuan, dan WhatsApp Business sesuai untuk pertanyaan dan jualan. Pilih satu atau dua tempat pelanggan anda sudah berada.",
+          },
+          {
+            question: "Berapa kerap saya patut menyiarkan?",
+            answer:
+              "Konsistensi lebih penting daripada jumlah. Pilih rentak yang boleh anda kekalkan, seperti beberapa siaran seminggu, rancang kandungan anda lebih awal, dan lihat hasil anda sendiri untuk menyesuaikan.",
+          },
+          {
+            question: "Adakah siaran media sosial dianggap sebagai iklan?",
+            answer:
+              "Ya, siaran yang mempromosikan produk atau perkhidmatan anda ialah iklan, jadi peraturan perlindungan pengguna dan butiran perdagangan terpakai. Jangan membuat dakwaan palsu atau mengelirukan tentang harga, kualiti atau hasil.",
+          },
+          {
+            question: "Bolehkah saya membuat dakwaan kesihatan atau halal dalam siaran saya?",
+            answer:
+              "Berhati-hati. Dakwaan kesihatan, perubatan, suplemen dan makanan dikawal selia dengan lebih ketat, sesetengah produk memerlukan kelulusan sebelum boleh diiklankan, dan dakwaan halal mesti disokong oleh pensijilan yang sah. Semak peraturan sebelum anda menyiarkan.",
+          },
+          {
+            question: "Adakah pempengaruh mesti mendedahkan promosi berbayar?",
+            answer:
+              "Kandungan berbayar atau tajaan harus jelas dikenali sebagai pengiklanan, dan pempengaruh harus mendedahkan hubungan mereka dengan jenama. Peraturan dan garis panduan tentang pempengaruh sedang berkembang, jadi semak kedudukan semasa dan letakkan keperluan pendedahan dalam perjanjian anda.",
+          },
+          {
+            question: "Bolehkah saya menggunakan foto atau muzik yang saya jumpa dalam talian dalam siaran saya?",
+            answer:
+              "Tidak tanpa kebenaran. Foto, reka bentuk dan muzik dilindungi oleh peraturan harta intelek, dan menyalinnya boleh membawa kepada penurunan atau tuntutan. Gunakan kandungan anda sendiri atau bahan yang dilesenkan dengan betul.",
+          },
+          {
+            question: "Adakah boleh membeli pengikut atau menulis ulasan sendiri?",
+            answer:
+              "Tidak. Pengikut palsu, penglibatan yang dibeli dan ulasan palsu mengelirukan, boleh melanggar dasar platform dan peraturan pengguna, dan tidak membawa pelanggan sebenar. Bina khalayak dan ulasan dengan jujur.",
+          },
+          {
+            question: "Bagaimanakah saya tahu sama ada pemasaran media sosial saya berkesan?",
+            answer:
+              "Jejaki pertanyaan, pesanan, kos setiap pertanyaan dan pelanggan berulang, bukan sekadar suka dan pengikut, dan tanya pelanggan baharu bagaimana mereka menemui anda. Semak setiap bulan dan gugurkan apa yang tidak berkesan.",
+          },
+        ],
+      },
+    },
+  },
 ];

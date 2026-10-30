@@ -15,16 +15,15 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Staying Compliant with SSM: Annual Returns, Financial Statements, and Company Records**
-   — What a Malaysian company (Sdn Bhd) and a registered business must keep
-   filing after incorporation: the annual return and financial statements
-   deadlines, keeping the registered address and director details current,
-   beneficial ownership reporting, business registration renewals for sole
-   proprietors and partnerships, and the penalties for falling behind.
+1. **Starting a Food Business in Malaysia: Licences, Hygiene, and Food Safety Requirements**
+   — What a café, stall, caterer or home food business needs before it
+   serves customers: the local council premises licence, the Food Act 1983
+   and Food Hygiene Regulations, food handler training and medical checks,
+   Ministry of Health premises grading and registration (such as MeSTI for
+   manufacturers), labelling basics, and how inspections work.
 
-2. **Halal Certification in Malaysia: What Food and Product SMEs Need to Know**
-   — When a food, beverage, or consumer-product business needs halal
-   certification, how the JAKIM/state religious department process works
-   (the application, premises and ingredient checks, fees, validity and
-   renewal), the rules on using the halal logo and claims, and how to avoid
-   the common reasons applications are delayed or rejected.
+2. **Running a Home-Based Business in Malaysia: Rules, Licences, and Tax**
+   — Whether and how a business can operate from a home: SSM registration,
+   local council home-business licences and neighbourhood or strata
+   restrictions, signage and customer visits, insurance, separating home
+   and business costs for tax, and when it makes sense to move to premises.
