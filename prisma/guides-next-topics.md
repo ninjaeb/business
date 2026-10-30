@@ -15,16 +15,15 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Franchising in Malaysia: Buying or Starting a Franchise the Right Way**
-   — How the Franchise Act 1998 and the franchise registration with the
-   Ministry of Domestic Trade work, what a prospective franchisee should
-   check (registration, the disclosure documents, fees, royalties,
-   territory, support and exit terms), what a business needs before it can
-   franchise, and the red flags of unregistered or unrealistic schemes.
+1. **Starting a Food Business in Malaysia: Licences, Hygiene, and Food Safety Requirements**
+   — What a café, stall, caterer or home food business needs before it
+   serves customers: the local council premises licence, the Food Act 1983
+   and Food Hygiene Regulations, food handler training and medical checks,
+   Ministry of Health premises grading and registration (such as MeSTI for
+   manufacturers), labelling basics, and how inspections work.
 
-2. **Marketing Your Small Business on Social Media in Malaysia: Rules, Platforms, and Practical Steps**
-   — Choosing platforms (Facebook, Instagram, TikTok, WhatsApp Business),
-   a simple content and posting routine, the advertising rules to respect
-   (honest claims, pricing, halal and health claims, influencer
-   disclosures), handling customer messages and reviews, and measuring
-   what works without overspending.
+2. **Running a Home-Based Business in Malaysia: Rules, Licences, and Tax**
+   — Whether and how a business can operate from a home: SSM registration,
+   local council home-business licences and neighbourhood or strata
+   restrictions, signage and customer visits, insurance, separating home
+   and business costs for tax, and when it makes sense to move to premises.
