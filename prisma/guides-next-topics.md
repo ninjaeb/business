@@ -15,16 +15,16 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Writing Contracts and Terms and Conditions for Your Small Business in Malaysia**
-   — Why a small business needs written terms, and what goes into them:
-   customer sales terms, service agreements, supplier and subcontractor
-   contracts, payment, delivery, warranty and liability clauses, how
-   contracts are formed and enforced under Malaysian law, when stamp duty
-   or a lawyer's review matters, and how to keep signed copies safely.
+1. **Closing a Business in Malaysia: Deregistration, Strike-Off, and Final Obligations**
+   — How to wind down properly: closing a sole proprietorship or
+   partnership with SSM versus striking off or winding up a company,
+   settling staff, EPF/SOCSO/EIS, tax and SST obligations, final accounts
+   and record retention, cancelling licences and accounts, and the risks of
+   simply abandoning a business.
 
-2. **Tax Deductions and Incentives for Malaysian SMEs: What You Can Claim**
-   — What a small business can generally deduct when working out taxable
-   income: allowable versus non-allowable expenses, capital allowances on
-   equipment, staff costs and training, common SME-specific incentives and
-   the lower SME corporate tax rate, the records needed to support a claim,
-   and why to confirm current rules with LHDN or an accountant.
+2. **Workplace Safety for Malaysian SMEs: What the Occupational Safety and Health Act Requires**
+   — The employer's basic duties under the Occupational Safety and Health
+   Act 1994 (as amended): safety policy and risk assessment, safety and
+   health officers or committees where required, reporting accidents,
+   training and protective equipment, special concerns for factories,
+   kitchens and construction sites, and the penalties for breaches.

@@ -9809,4 +9809,1104 @@ Mengambil pekerja asing boleh menyelesaikan masalah buruh yang sebenar, tetapi h
       },
     },
   },
+  {
+    slug: "contracts-and-terms-for-small-businesses-in-malaysia",
+    title: "Writing Contracts and Terms and Conditions for Your Small Business in Malaysia",
+    seoTitle: "Contracts and Terms for Small Businesses in Malaysia",
+    seoDescription:
+      "How Malaysian SMEs can write contracts and terms: key clauses, how contracts are formed, e-signatures, stamp duty, and when to use a lawyer.",
+    coverImage: {
+      file: "contracts-and-terms-for-small-businesses-in-malaysia-cover.webp",
+      mimeType: "image/webp",
+      alt: "A man in glasses and a blazer signing a document on a clipboard at a desk beside large windows",
+      altTranslations: {
+        zh: "一位戴眼镜、身穿西装外套的男士在靠近大窗户的桌前，在写字板上的文件上签名",
+        ms: "Seorang lelaki berkaca mata dan berjaket menandatangani dokumen pada papan klip di meja berhampiran tingkap besar",
+      },
+    },
+    contentImages: {
+      "signing-form": {
+        file: "contracts-and-terms-for-small-businesses-in-malaysia-signing.webp",
+        mimeType: "image/webp",
+        alt: "Close-up of a hand signing a printed form with a blue pen at a white table",
+        altTranslations: {
+          zh: "在白色桌面上用蓝色笔在打印表格上签名的手部特写",
+          ms: "Gambar dekat tangan menandatangani borang bercetak dengan pen biru di meja putih",
+        },
+        after: "Put your standard terms in writing before the first customer signs, not after the first dispute.",
+        afterTranslations: {
+          zh: "请在第一位客户签约之前就把您的标准条款写下来，而不是等到第一次纠纷之后。",
+          ms: "Tulis terma standard anda sebelum pelanggan pertama menandatangani, bukan selepas pertikaian pertama.",
+        },
+      },
+    },
+    excerpt:
+      "Most small business disputes are not about the law, they are about what was never written down. This guide explains how contracts work in Malaysia, which clauses every small business should cover, how to write customer terms and supplier agreements, when electronic signatures and stamp duty matter, and when to pay for a lawyer's review.",
+    body: `Most small business disagreements start the same way: one side remembers the deal one way, the other remembers it differently, and there is nothing in writing to settle it. A short, clear contract does not make you look distrustful. It protects both sides, shortens arguments, and often decides whether a late payment, a faulty delivery, or a departing partner becomes a manageable problem or a lawsuit.
+
+This is general information, not legal advice. Contract law, consumer protection rules, and stamp duty requirements are specific to the type of agreement and change from time to time, so confirm the position with a Malaysian lawyer, especially for high-value or unusual deals, before you rely on any template or checklist.
+
+## 1. Understand how a contract is formed
+
+### The basic ingredients
+Under Malaysia's Contracts Act 1950, an agreement generally becomes an enforceable contract when there is an offer and an acceptance, something of value exchanged, parties who are legally capable of contracting, free consent, and a lawful purpose. A quotation that the customer accepts can already be a contract, even without a formal document.
+
+### Verbal contracts are valid but hard to prove
+Many contracts do not need to be in writing to be binding, but if the other side disputes what was agreed, you have to prove it. Some types of agreement, such as certain guarantees and dealings in land, have special requirements, so ask a lawyer before relying on a handshake for anything significant.
+
+### Emails and messages count
+Written offers and acceptances by email or messaging apps can form part of the agreement. Treat them seriously, confirm key points in writing, and keep them.
+
+## 2. Know the documents a small business typically needs
+
+### Customer terms and conditions
+Standard terms for selling goods or services that apply to every customer, covering price, payment, delivery, returns, warranty, and liability.
+
+### Service or project agreement
+For custom work, such as design, construction, consulting, or software, a signed agreement that defines the scope, timeline, deliverables, price, and what happens if the scope changes.
+
+### Supplier and subcontractor agreements
+These set out what you will buy, at what price, with what quality standards, delivery times, and consequences for failure.
+
+### Employment contracts
+Staff need written terms too. Our guide on hiring your first employee covers the basics, and the guides on employee leave and terminating an employee cover the rules you must respect.
+
+### Partnership or shareholders' agreement
+If more than one person owns the business, record who contributes what, who decides, how profits are shared, and what happens when someone leaves or the partners disagree. This agreement is often the most valuable and the most neglected.
+
+### Non-disclosure agreements
+When you share confidential information with a partner, supplier, or contractor, an NDA sets out what must stay private and for how long.
+
+## 3. Cover the clauses that matter
+
+Every contract is different, but these clauses decide most disputes.
+
+### Parties and scope
+Name the parties exactly, using their full legal names and registration numbers, and describe precisely what is being sold or done. Vague scope is the leading cause of disputes in service contracts.
+
+### Price and payment
+State the total price or rate, what is included, the taxes that apply, the due date, accepted payment methods, and any deposit or milestone payments. Our guide on collecting late payments explains how to build a late-payment clause and chase invoices.
+
+### Delivery and acceptance
+Say when and where goods or services will be delivered, how the customer will confirm acceptance, and what happens if they do not respond.
+
+### Warranties and defects
+Be clear about what you promise, for how long, and how problems are reported and fixed. Do not promise more than you can deliver.
+
+### Limiting liability
+Many businesses cap their liability, such as to the contract price. The law limits how far you can exclude responsibility, particularly for consumers and for terms that are unreasonable, so keep such clauses reasonable and have a lawyer review them.
+
+### Termination
+State how either side can end the contract, the notice period, and what happens to payments and work in progress when it does.
+
+### Intellectual property and confidentiality
+Say who owns the work product, what the customer can use it for, and what information must stay confidential. If you are building a brand, see our guide on trademark registration.
+
+### Dispute resolution and governing law
+Choose Malaysian law, say where disputes will be handled, and consider requiring a step such as negotiation or mediation before court. Some businesses choose arbitration, which has its own costs and rules.
+
+> Put the contract in plain language. A clause that nobody can understand is one a court may read against the person who wrote it, and a customer who understands your terms is far less likely to dispute them later.
+
+## 4. Write customer terms the right way
+
+### Get your terms in front of the customer
+
+Put your standard terms in writing before the first customer signs, not after the first dispute. Terms only bind a customer if they were reasonably brought to their attention before the deal was made. Include them on quotations, order forms, invoices, and your website checkout, and make sure the customer actually has to accept them.
+
+### Be fair in consumer deals
+Where you sell to consumers on standard-form terms, the Consumer Protection Act 1999 has rules on unfair contract terms, so avoid one-sided clauses such as excluding all responsibility or letting you change the price at will. Our guide on selling online covers the other rules that apply to online sellers.
+
+### Penalty and late-fee clauses
+A clause that fixes a payment on breach may be reduced by a court if it is excessive compared with the real loss, so set late fees and cancellation charges at reasonable levels.
+
+### Keep it short and current
+A two-page set of clear terms that you actually use is better than a ten-page one nobody reads. Review them every year or when your business changes.
+
+## 5. Sign and store contracts properly
+
+### Who should sign
+Make sure the person signing has the authority to bind their business. For a company, this is usually a director or an authorised signatory, and you should check their position, not only their word.
+
+### Electronic signatures
+Electronic contracts and signatures are generally recognised under Malaysian law, but the rules and the level of evidence differ by the type of document and the signature method. For high-value or sensitive contracts, ask your lawyer whether a particular e-signature tool is suitable.
+
+### Initial every page and date it
+For printed contracts, initial each page, date the signing, and make sure each party keeps a complete signed copy. Attach any schedules, quotations, or drawings the contract refers to.
+
+### Keep your copies safely
+Store signed contracts in a secure place with a back-up, in an order that you can find quickly. Contract records are also business records that your accountant and, for tax purposes, the authorities may ask to see, as explained in our bookkeeping guide.
+
+## 6. Know when stamp duty and a lawyer matter
+
+### Stamp duty
+Some documents must be stamped, such as tenancy agreements, and an unstamped document can be difficult to use in court. Many ordinary commercial contracts are not subject to a standard duty, but the rules depend on the type of document, so check with a lawyer or the Inland Revenue Board. Our guide on renting commercial premises explains stamp duty on leases.
+
+### When to use a lawyer
+Get a lawyer to draft or review contracts that involve large sums, long terms, exclusivity, intellectual property, shareholder arrangements, guarantees, or land. A lawyer's fee is small compared with the cost of a bad clause.
+
+### How to get value from a lawyer
+Bring a clear summary of the deal, any drafts you already have, and a list of your biggest worries. Ask for a template that you can reuse for routine deals, so you are not paying for the same review every time.
+
+### Do not copy blindly
+Free templates can be a useful starting point, but a template from another country or industry may not fit Malaysian law or your business. Adapt it, and have it checked.
+
+If you are looking for a lawyer, an accountant, or a business adviser, you can [browse the directory](/en) for local professionals, and [creating a free business listing](/en/signup) helps new clients and suppliers find and verify your business before they sign with you.
+
+## Common mistakes Malaysian SMEs make with contracts
+
+- **Relying on a handshake.** Verbal deals are hard to prove, and memories diverge fast once money is involved.
+- **Leaving out the scope or the payment terms.** Vague scope and unclear due dates are behind most disputes.
+- **Copying a template without adapting it.** An unsuitable template can be unenforceable, or can promise things you never intended.
+
+## Where to start
+
+- **This week:** List the types of deals you make most often, and check which have written terms and which do not.
+- **Next:** Draft a short set of customer terms and a basic service agreement covering scope, price, payment, delivery, warranty, liability, and termination.
+- **Then:** Have a lawyer review them, and ask for a reusable template.
+- **From now on:** Use them on every quotation, invoice, and online checkout, store signed copies safely, and review the terms once a year.
+
+A good contract is not about expecting the worst from people, it is about making sure everyone remembers the deal the same way.`,
+    faqs: [
+      {
+        question: "Is a verbal agreement legally binding in Malaysia?",
+        answer:
+          "Many contracts do not need to be in writing to be binding, but if the other side disputes what was agreed, you have to prove it. Some types of agreement have special requirements, so put important deals in writing and ask a lawyer about anything significant.",
+      },
+      {
+        question: "What makes a contract valid in Malaysia?",
+        answer:
+          "Under the Contracts Act 1950, an agreement generally needs an offer and acceptance, something of value exchanged, parties capable of contracting, free consent, and a lawful purpose. A quotation that the customer accepts can already form a contract.",
+      },
+      {
+        question: "What should a small business's terms and conditions include?",
+        answer:
+          "Price, payment terms and due date, delivery, acceptance, warranties and returns, limits on liability, termination, confidentiality, and governing law and dispute resolution. Keep them clear, fair, and in plain language.",
+      },
+      {
+        question: "Are electronic signatures valid in Malaysia?",
+        answer:
+          "Electronic contracts and signatures are generally recognised, but the rules and the evidence needed vary by the type of document and the signature method. For high-value or sensitive contracts, ask a lawyer whether your e-signature tool is suitable.",
+      },
+      {
+        question: "Can I limit my liability in a contract?",
+        answer:
+          "Often yes, such as by capping it at the contract price, but the law restricts how far you can exclude responsibility, especially for consumers and unreasonable terms. Keep limits reasonable and have a lawyer review them.",
+      },
+      {
+        question: "Do contracts need to be stamped?",
+        answer:
+          "Some documents, such as tenancy agreements, generally must be stamped, and an unstamped document can be hard to use in court. Many ordinary commercial contracts are not subject to a standard duty, but it depends on the type of document, so check with a lawyer or the Inland Revenue Board.",
+      },
+      {
+        question: "Can I charge a fixed penalty for late payment or cancellation?",
+        answer:
+          "You can agree late-payment or cancellation charges, but a court may reduce a sum that is excessive compared with the real loss. Keep such charges reasonable and state them clearly in your terms.",
+      },
+      {
+        question: "When should I hire a lawyer to review a contract?",
+        answer:
+          "For large sums, long terms, exclusivity, intellectual property, shareholder arrangements, guarantees, or land. Ask for a reusable template for your routine deals so you do not pay for the same review every time.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "为您的马来西亚小企业撰写合约及条款与条件",
+        excerpt:
+          "大多数小企业纠纷与法律无关，而是源于从未写下来的事项。本指南说明合约在马来西亚如何运作、每家小企业都应涵盖哪些条款、如何撰写客户条款和供应商协议、电子签名和印花税何时重要，以及何时值得花钱请律师审阅。",
+        body: `大多数小企业的分歧都以同样的方式开始：一方记得交易是这样，另一方记得是那样，而没有任何书面文件可以裁决。一份简短、清晰的合约并不会让您显得不信任对方。它保护双方、缩短争论，并往往决定一次逾期付款、一次有问题的交货或一位离开的合伙人，会成为可处理的问题还是一场官司。
+
+以下仅为一般资讯，并非法律意见。合约法、消费者保护规定和印花税要求，因协议类型而异，也会不时变动，所以在依赖任何模板或清单之前，请向马来西亚律师确认，尤其是高价值或特殊的交易。
+
+## 1. 了解合约如何成立
+
+### 基本要素
+根据马来西亚《1950年合约法令》，协议一般在有要约和承诺、有价值的交换、各方具有订约的法律能力、自由同意以及合法目的时，成为可执行的合约。客户接受的一份报价单，即使没有正式文件，也可能已经是合约。
+
+### 口头合约有效但难以证明
+许多合约不必以书面形式才有约束力，但如果对方对所议定的内容有争议，您就必须证明。某些类型的协议，例如某些担保和土地交易，有特殊要求，所以在对任何重大事项依赖口头约定之前，请先咨询律师。
+
+### 电邮和讯息也算数
+通过电邮或通讯应用程序发出的书面要约和承诺，可以构成协议的一部分。请认真对待，以书面确认关键要点，并保存下来。
+
+## 2. 了解小企业通常需要的文件
+
+### 客户条款与条件
+适用于每一位客户的、销售商品或服务的标准条款，涵盖价格、付款、交货、退货、保修和责任。
+
+### 服务或项目协议
+对于定制工作，例如设计、建筑、咨询或软件，一份已签署的协议，界定范围、时间表、交付成果、价格，以及范围变更时会怎样。
+
+### 供应商与分包商协议
+这些协议列明您将购买什么、价格、质量标准、交货时间，以及未能履行的后果。
+
+### 雇佣合约
+员工也需要书面条款。我们关于雇用第一位员工的指南涵盖了基础知识，而关于员工休假和终止员工雇佣的指南，则涵盖了您必须遵守的规则。
+
+### 合伙或股东协议
+如果企业有多于一位拥有人，请记录谁出什么、谁做决定、利润如何分配，以及有人离开或合伙人意见不合时会怎样。这份协议往往最有价值，也最常被忽视。
+
+### 保密协议
+当您与合作伙伴、供应商或承包商分享机密资料时，保密协议会列明什么必须保密以及保密多久。
+
+## 3. 涵盖重要的条款
+
+每份合约都不同，但这些条款决定了大多数纠纷。
+
+### 各方与范围
+准确写出各方，使用其完整的法定名称和注册号码，并精确描述所销售或所做的事项。含糊的范围是服务合约纠纷的首要原因。
+
+### 价格与付款
+说明总价或费率、包含什么、适用的税项、到期日、接受的付款方式，以及任何订金或阶段付款。我们关于追收逾期货款的指南，说明了如何建立逾期付款条款和追收发票。
+
+### 交付与验收
+说明商品或服务将于何时何地交付、客户如何确认验收，以及他们没有回应时会怎样。
+
+### 保证与瑕疵
+清楚说明您承诺什么、多长时间，以及如何报告和修复问题。不要承诺超出您能交付的范围。
+
+### 限制责任
+许多企业会限制自己的责任，例如以合约价格为上限。法律限制您能在多大程度上免除责任，特别是对消费者和不合理的条款，所以请保持这类条款合理，并请律师审阅。
+
+### 终止
+说明任何一方如何结束合约、通知期，以及终止时付款和进行中的工作会怎样。
+
+### 知识产权与保密
+说明工作成果归谁所有、客户可以用它做什么，以及哪些资料必须保密。如果您在建立品牌，请参阅我们关于商标注册的指南。
+
+### 争议解决与适用法律
+选择马来西亚法律，说明争议将在哪里处理，并考虑要求在诉讼之前先进行谈判或调解等步骤。有些企业选择仲裁，它有自己的费用和规则。
+
+> 请用平实的语言撰写合约。没有人看得懂的条款，法庭可能会作出对撰写者不利的解读，而理解您条款的客户，日后争议的可能性要小得多。
+
+## 4. 以正确的方式撰写客户条款
+
+### 让客户看到您的条款
+
+请在第一位客户签约之前就把您的标准条款写下来，而不是等到第一次纠纷之后。条款只有在交易达成之前已合理地引起客户注意时，才对客户有约束力。请把它们放在报价单、订单、发票和您的网站结账页面上，并确保客户确实必须接受它们。
+
+### 对消费者交易要公平
+当您以标准格式条款向消费者销售时，《1999年消费者保护法令》对不公平合约条款有规定，所以请避免片面的条款，例如免除一切责任或让您可以随意更改价格。我们关于网上销售的指南涵盖了适用于网络卖家的其他规则。
+
+### 罚款与滞纳金条款
+如果一项在违约时固定支付金额的条款，与实际损失相比过高，法庭可能会予以减少，所以请把滞纳金和取消费用定在合理的水平。
+
+### 保持简短并与时俱进
+一份您确实会使用的两页清晰条款，胜过没有人读的十页条款。请每年或在您的业务变化时检讨一次。
+
+## 5. 妥善签署并保存合约
+
+### 谁应该签署
+确保签署的人有权约束其企业。对公司来说，通常是董事或授权签署人，您应该查核他们的职位，而不只是听他们说。
+
+### 电子签名
+电子合约和签名在马来西亚法律下一般获得承认，但规则和证据水平因文件类型和签名方法而异。对于高价值或敏感的合约，请询问您的律师某个电子签名工具是否合适。
+
+### 每页签名缩写并注明日期
+对于打印的合约，请在每一页签名缩写、注明签署日期，并确保各方都保留一份完整的已签署副本。附上合约所提到的任何附表、报价单或图纸。
+
+### 妥善保管您的副本
+把已签署的合约存放在安全、有备份的地方，并整理成您能快速找到的顺序。合约记录也是商业记录，您的会计师以及，就税务而言，主管机构可能会要求查看，正如我们的簿记指南所说明的。
+
+## 6. 知道印花税与律师何时重要
+
+### 印花税
+某些文件必须盖印花税，例如租赁协议，而未盖印的文件在法庭上可能难以使用。许多一般的商业合约并不适用标准税款，但规则取决于文件类型，所以请向律师或内陆税收局查核。我们关于租用商业场所的指南说明了租约的印花税。
+
+### 何时使用律师
+涉及大额款项、长期限、独家、知识产权、股东安排、担保或土地的合约，请律师起草或审阅。律师费与一个糟糕条款的代价相比微不足道。
+
+### 如何从律师那里获得价值
+带上清晰的交易摘要、您已有的任何草稿，以及您最担心的事项清单。请他们提供一份可重复使用的模板，用于日常交易，这样您就不必每次都为同样的审阅付费。
+
+### 不要盲目照抄
+免费模板可以作为有用的起点，但来自其他国家或行业的模板，可能不符合马来西亚法律或您的业务。请加以调整，并请人检查。
+
+如果您在寻找律师、会计师或商业顾问，可以[浏览名录](/zh)寻找本地专业人士，而[创建免费的企业列表](/zh/signup)可以帮助新客户和供应商在与您签约之前找到并核实您的企业。
+
+## 马来西亚中小企业在合约上常犯的错误
+
+- **依赖口头约定。** 口头交易难以证明，而一旦涉及金钱，记忆很快就会出现分歧。
+- **遗漏范围或付款条款。** 含糊的范围和不清楚的到期日，是大多数纠纷的背后原因。
+- **没有调整就照抄模板。** 不合适的模板可能无法执行，或承诺了您从未打算承诺的事。
+
+## 从哪里开始
+
+- **本周：**列出您最常做的交易类型，并查核哪些有书面条款、哪些没有。
+- **接着：**起草一套简短的客户条款和基本的服务协议，涵盖范围、价格、付款、交货、保修、责任和终止。
+- **然后：**请律师审阅，并要求一份可重复使用的模板。
+- **从现在起：**在每一份报价单、发票和网上结账页面使用它们，妥善保存已签署的副本，并每年检讨一次条款。
+
+好的合约并不是对人抱最坏的期待，而是确保每个人都以同样的方式记得这笔交易。`,
+        faqs: [
+          {
+            question: "在马来西亚，口头协议具有法律约束力吗？",
+            answer:
+              "许多合约不必以书面形式才有约束力，但如果对方对所议定的内容有争议，您就必须证明。某些类型的协议有特殊要求，所以请把重要交易写成书面，并就任何重大事项咨询律师。",
+          },
+          {
+            question: "在马来西亚，什么使合约有效？",
+            answer:
+              "根据《1950年合约法令》，协议一般需要有要约和承诺、有价值的交换、有订约能力的各方、自由同意以及合法目的。客户接受的一份报价单，可能已经构成合约。",
+          },
+          {
+            question: "小企业的条款与条件应该包括什么？",
+            answer:
+              "价格、付款条款和到期日、交货、验收、保修和退货、责任限制、终止、保密，以及适用法律和争议解决。请保持清晰、公平，并使用平实的语言。",
+          },
+          {
+            question: "电子签名在马来西亚有效吗？",
+            answer:
+              "电子合约和签名一般获得承认，但规则和所需证据因文件类型和签名方法而异。对于高价值或敏感的合约，请询问律师您的电子签名工具是否合适。",
+          },
+          {
+            question: "我可以在合约中限制自己的责任吗？",
+            answer:
+              "通常可以，例如以合约价格为上限，但法律限制您能在多大程度上免除责任，特别是对消费者和不合理的条款。请保持限制合理，并请律师审阅。",
+          },
+          {
+            question: "合约需要盖印花税吗？",
+            answer:
+              "某些文件，例如租赁协议，一般必须盖印花税，而未盖印的文件在法庭上可能难以使用。许多一般的商业合约并不适用标准税款，但取决于文件类型，所以请向律师或内陆税收局查核。",
+          },
+          {
+            question: "我可以对逾期付款或取消收取固定罚款吗？",
+            answer:
+              "您可以约定逾期付款或取消费用，但如果金额与实际损失相比过高，法庭可能会予以减少。请保持这些费用合理，并在条款中清楚说明。",
+          },
+          {
+            question: "何时应该请律师审阅合约？",
+            answer:
+              "涉及大额款项、长期限、独家、知识产权、股东安排、担保或土地时。请为您的日常交易要求一份可重复使用的模板，这样您就不必每次都为同样的审阅付费。",
+          },
+        ],
+      },
+      ms: {
+        title: "Menulis Kontrak serta Terma dan Syarat untuk Perniagaan Kecil Anda di Malaysia",
+        excerpt:
+          "Kebanyakan pertikaian perniagaan kecil bukan tentang undang-undang, tetapi tentang apa yang tidak pernah ditulis. Panduan ini menerangkan cara kontrak berfungsi di Malaysia, klausa yang patut dirangkumi setiap perniagaan kecil, cara menulis terma pelanggan dan perjanjian pembekal, bila tandatangan elektronik dan duti setem penting, dan bila berbaloi membayar untuk semakan peguam.",
+        body: `Kebanyakan perselisihan perniagaan kecil bermula dengan cara yang sama: satu pihak mengingati perjanjian dengan satu cara, pihak lain mengingatinya secara berbeza, dan tiada apa-apa bertulis untuk menyelesaikannya. Kontrak yang ringkas dan jelas tidak membuatkan anda kelihatan tidak mempercayai. Ia melindungi kedua-dua pihak, memendekkan pertengkaran, dan sering menentukan sama ada bayaran lewat, penghantaran yang rosak atau rakan kongsi yang keluar menjadi masalah yang boleh diurus atau satu tindakan mahkamah.
+
+Ini ialah maklumat am, bukan nasihat guaman. Undang-undang kontrak, peraturan perlindungan pengguna dan keperluan duti setem bergantung pada jenis perjanjian dan berubah dari semasa ke semasa, jadi sahkan kedudukan dengan peguam Malaysia, terutamanya bagi perjanjian bernilai tinggi atau luar biasa, sebelum anda bergantung pada mana-mana templat atau senarai semak.
+
+## 1. Fahami bagaimana kontrak terbentuk
+
+### Bahan asas
+Di bawah Akta Kontrak 1950 Malaysia, perjanjian amnya menjadi kontrak yang boleh dikuatkuasakan apabila terdapat tawaran dan penerimaan, sesuatu yang bernilai ditukar, pihak yang berkelayakan di sisi undang-undang untuk berkontrak, persetujuan bebas, dan tujuan yang sah. Sebut harga yang diterima pelanggan mungkin sudah menjadi kontrak, walaupun tanpa dokumen rasmi.
+
+### Kontrak lisan sah tetapi sukar dibuktikan
+Banyak kontrak tidak perlu bertulis untuk mengikat, tetapi jika pihak lain mempertikaikan apa yang dipersetujui, anda perlu membuktikannya. Sesetengah jenis perjanjian, seperti jaminan tertentu dan urusan tanah, mempunyai keperluan khas, jadi tanya peguam sebelum bergantung pada janji lisan untuk apa-apa yang penting.
+
+### E-mel dan mesej juga dikira
+Tawaran dan penerimaan bertulis melalui e-mel atau aplikasi pesanan boleh menjadi sebahagian daripada perjanjian. Ambil serius, sahkan perkara utama secara bertulis, dan simpannya.
+
+## 2. Ketahui dokumen yang lazimnya diperlukan perniagaan kecil
+
+### Terma dan syarat pelanggan
+Terma standard untuk menjual barangan atau perkhidmatan yang terpakai kepada setiap pelanggan, meliputi harga, bayaran, penghantaran, pemulangan, waranti dan liabiliti.
+
+### Perjanjian perkhidmatan atau projek
+Bagi kerja khas, seperti reka bentuk, pembinaan, perundingan atau perisian, perjanjian bertandatangan yang menentukan skop, garis masa, hasil kerja, harga, dan apa yang berlaku jika skop berubah.
+
+### Perjanjian pembekal dan subkontraktor
+Ini menyatakan apa yang akan anda beli, pada harga berapa, dengan piawaian kualiti, masa penghantaran dan akibat kegagalan apa.
+
+### Kontrak pekerjaan
+Kakitangan juga memerlukan terma bertulis. Panduan kami tentang mengambil pekerja pertama merangkumi asasnya, dan panduan tentang cuti pekerja dan menamatkan perkhidmatan pekerja merangkumi peraturan yang mesti anda hormati.
+
+### Perjanjian perkongsian atau pemegang saham
+Jika lebih daripada seorang memiliki perniagaan, rekodkan siapa menyumbang apa, siapa membuat keputusan, bagaimana keuntungan dikongsi, dan apa yang berlaku apabila seseorang keluar atau rakan kongsi tidak bersetuju. Perjanjian ini sering paling bernilai dan paling diabaikan.
+
+### Perjanjian kerahsiaan
+Apabila anda berkongsi maklumat sulit dengan rakan kongsi, pembekal atau kontraktor, perjanjian kerahsiaan (NDA) menyatakan apa yang mesti kekal peribadi dan untuk berapa lama.
+
+## 3. Rangkumi klausa yang penting
+
+Setiap kontrak berbeza, tetapi klausa ini menentukan kebanyakan pertikaian.
+
+### Pihak dan skop
+Namakan pihak dengan tepat, menggunakan nama undang-undang penuh dan nombor pendaftaran mereka, dan terangkan dengan tepat apa yang dijual atau dilakukan. Skop yang kabur ialah punca utama pertikaian dalam kontrak perkhidmatan.
+
+### Harga dan bayaran
+Nyatakan jumlah harga atau kadar, apa yang termasuk, cukai yang terpakai, tarikh matang, kaedah bayaran yang diterima, dan sebarang deposit atau bayaran peringkat. Panduan kami tentang menuntut bayaran lewat menerangkan cara membina klausa bayaran lewat dan mengejar invois.
+
+### Penghantaran dan penerimaan
+Nyatakan bila dan di mana barangan atau perkhidmatan akan dihantar, bagaimana pelanggan akan mengesahkan penerimaan, dan apa yang berlaku jika mereka tidak menjawab.
+
+### Waranti dan kecacatan
+Jelas tentang apa yang anda janjikan, untuk berapa lama, dan bagaimana masalah dilaporkan dan dibaiki. Jangan menjanjikan lebih daripada yang boleh anda sampaikan.
+
+### Menghadkan liabiliti
+Banyak perniagaan menghadkan liabiliti mereka, seperti kepada harga kontrak. Undang-undang menghadkan setakat mana anda boleh mengecualikan tanggungjawab, terutamanya bagi pengguna dan terma yang tidak munasabah, jadi pastikan klausa sedemikian munasabah dan minta peguam menyemaknya.
+
+### Penamatan
+Nyatakan bagaimana mana-mana pihak boleh menamatkan kontrak, tempoh notis, dan apa yang berlaku kepada bayaran dan kerja dalam proses apabila ia ditamatkan.
+
+### Harta intelek dan kerahsiaan
+Nyatakan siapa memiliki hasil kerja, untuk apa pelanggan boleh menggunakannya, dan maklumat apa yang mesti dirahsiakan. Jika anda membina jenama, lihat panduan kami tentang pendaftaran tanda dagangan.
+
+### Penyelesaian pertikaian dan undang-undang yang mentadbir
+Pilih undang-undang Malaysia, nyatakan di mana pertikaian akan dikendalikan, dan pertimbangkan untuk menghendaki langkah seperti rundingan atau pengantaraan sebelum mahkamah. Sesetengah perniagaan memilih timbang tara, yang mempunyai kos dan peraturan tersendiri.
+
+> Tulis kontrak dalam bahasa yang mudah. Klausa yang tiada siapa faham ialah klausa yang mungkin ditafsirkan oleh mahkamah terhadap orang yang menulisnya, dan pelanggan yang memahami terma anda jauh kurang berkemungkinan mempertikaikannya kemudian.
+
+## 4. Tulis terma pelanggan dengan cara yang betul
+
+### Bawa terma anda ke hadapan pelanggan
+
+Tulis terma standard anda sebelum pelanggan pertama menandatangani, bukan selepas pertikaian pertama. Terma hanya mengikat pelanggan jika ia dibawa ke perhatian mereka secara munasabah sebelum perjanjian dibuat. Sertakan ia pada sebut harga, borang pesanan, invois dan pembayaran laman web anda, dan pastikan pelanggan sebenarnya perlu menerimanya.
+
+### Bersikap adil dalam urusan pengguna
+Apabila anda menjual kepada pengguna dengan terma borang standard, Akta Perlindungan Pengguna 1999 mempunyai peraturan tentang terma kontrak yang tidak adil, jadi elakkan klausa berat sebelah seperti mengecualikan semua tanggungjawab atau membenarkan anda mengubah harga sesuka hati. Panduan kami tentang berjual dalam talian merangkumi peraturan lain yang terpakai kepada penjual dalam talian.
+
+### Klausa penalti dan yuran lewat
+Klausa yang menetapkan bayaran apabila berlaku pelanggaran mungkin dikurangkan oleh mahkamah jika ia keterlaluan berbanding kerugian sebenar, jadi tetapkan yuran lewat dan caj pembatalan pada tahap yang munasabah.
+
+### Pastikan ringkas dan terkini
+Dua halaman terma yang jelas yang benar-benar anda gunakan lebih baik daripada sepuluh halaman yang tiada siapa baca. Semaknya setiap tahun atau apabila perniagaan anda berubah.
+
+## 5. Tandatangan dan simpan kontrak dengan betul
+
+### Siapa yang patut menandatangani
+Pastikan orang yang menandatangani mempunyai kuasa untuk mengikat perniagaan mereka. Bagi syarikat, ini biasanya pengarah atau penandatangan yang diberi kuasa, dan anda patut menyemak jawatan mereka, bukan sekadar kata-kata mereka.
+
+### Tandatangan elektronik
+Kontrak dan tandatangan elektronik amnya diiktiraf di bawah undang-undang Malaysia, tetapi peraturan dan tahap bukti berbeza mengikut jenis dokumen dan kaedah tandatangan. Bagi kontrak bernilai tinggi atau sensitif, tanya peguam anda sama ada alat tandatangan elektronik tertentu sesuai.
+
+### Parafkan setiap halaman dan nyatakan tarikh
+Bagi kontrak bercetak, parafkan setiap halaman, nyatakan tarikh menandatangani, dan pastikan setiap pihak menyimpan salinan bertandatangan yang lengkap. Lampirkan sebarang jadual, sebut harga atau lukisan yang dirujuk oleh kontrak.
+
+### Simpan salinan anda dengan selamat
+Simpan kontrak bertandatangan di tempat selamat dengan sandaran, dalam susunan yang boleh anda cari dengan cepat. Rekod kontrak juga ialah rekod perniagaan yang mungkin diminta oleh akauntan anda dan, bagi tujuan cukai, pihak berkuasa, seperti yang diterangkan dalam panduan simpan kira kami.
+
+## 6. Ketahui bila duti setem dan peguam penting
+
+### Duti setem
+Sesetengah dokumen mesti disetem, seperti perjanjian penyewaan, dan dokumen yang tidak disetem boleh sukar digunakan di mahkamah. Banyak kontrak komersial biasa tidak tertakluk kepada duti standard, tetapi peraturan bergantung pada jenis dokumen, jadi semak dengan peguam atau Lembaga Hasil Dalam Negeri. Panduan kami tentang menyewa premis komersial menerangkan duti setem ke atas sewa.
+
+### Bila hendak menggunakan peguam
+Minta peguam menggubal atau menyemak kontrak yang melibatkan jumlah besar, tempoh panjang, eksklusiviti, harta intelek, aturan pemegang saham, jaminan atau tanah. Yuran peguam adalah kecil berbanding kos klausa yang buruk.
+
+### Cara mendapat nilai daripada peguam
+Bawa ringkasan jelas perjanjian, sebarang draf yang sudah ada, dan senarai kebimbangan terbesar anda. Minta templat yang boleh anda gunakan semula untuk urusan rutin, supaya anda tidak membayar untuk semakan yang sama setiap kali.
+
+### Jangan salin secara membuta tuli
+Templat percuma boleh menjadi titik permulaan yang berguna, tetapi templat dari negara atau industri lain mungkin tidak sesuai dengan undang-undang Malaysia atau perniagaan anda. Sesuaikannya, dan minta ia disemak.
+
+Jika anda mencari peguam, akauntan atau penasihat perniagaan, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pelanggan dan pembekal baharu menemui serta mengesahkan perniagaan anda sebelum mereka menandatangani dengan anda.
+
+## Kesilapan lazim PKS Malaysia dengan kontrak
+
+- **Bergantung pada janji lisan.** Perjanjian lisan sukar dibuktikan, dan ingatan cepat berbeza apabila wang terlibat.
+- **Meninggalkan skop atau terma bayaran.** Skop yang kabur dan tarikh matang yang tidak jelas ialah punca kebanyakan pertikaian.
+- **Menyalin templat tanpa menyesuaikannya.** Templat yang tidak sesuai boleh tidak dapat dikuatkuasakan, atau menjanjikan perkara yang tidak pernah anda niatkan.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Senaraikan jenis urusan yang paling kerap anda buat, dan semak yang mana ada terma bertulis dan yang mana tiada.
+- **Seterusnya:** Draf set ringkas terma pelanggan dan perjanjian perkhidmatan asas yang merangkumi skop, harga, bayaran, penghantaran, waranti, liabiliti dan penamatan.
+- **Kemudian:** Minta peguam menyemaknya, dan minta templat yang boleh digunakan semula.
+- **Mulai sekarang:** Gunakannya pada setiap sebut harga, invois dan pembayaran dalam talian, simpan salinan bertandatangan dengan selamat, dan semak terma setahun sekali.
+
+Kontrak yang baik bukan tentang menjangka yang terburuk daripada orang, tetapi tentang memastikan semua orang mengingati perjanjian itu dengan cara yang sama.`,
+        faqs: [
+          {
+            question: "Adakah perjanjian lisan mengikat di sisi undang-undang di Malaysia?",
+            answer:
+              "Banyak kontrak tidak perlu bertulis untuk mengikat, tetapi jika pihak lain mempertikaikan apa yang dipersetujui, anda perlu membuktikannya. Sesetengah jenis perjanjian mempunyai keperluan khas, jadi tulis urusan penting dan tanya peguam tentang apa-apa yang penting.",
+          },
+          {
+            question: "Apakah yang menjadikan kontrak sah di Malaysia?",
+            answer:
+              "Di bawah Akta Kontrak 1950, perjanjian amnya memerlukan tawaran dan penerimaan, sesuatu yang bernilai ditukar, pihak yang berkelayakan berkontrak, persetujuan bebas, dan tujuan yang sah. Sebut harga yang diterima pelanggan mungkin sudah membentuk kontrak.",
+          },
+          {
+            question: "Apakah yang patut disertakan dalam terma dan syarat perniagaan kecil?",
+            answer:
+              "Harga, terma bayaran dan tarikh matang, penghantaran, penerimaan, waranti dan pemulangan, had liabiliti, penamatan, kerahsiaan, serta undang-undang yang mentadbir dan penyelesaian pertikaian. Pastikan ia jelas, adil dan dalam bahasa yang mudah.",
+          },
+          {
+            question: "Adakah tandatangan elektronik sah di Malaysia?",
+            answer:
+              "Kontrak dan tandatangan elektronik amnya diiktiraf, tetapi peraturan dan bukti yang diperlukan berbeza mengikut jenis dokumen dan kaedah tandatangan. Bagi kontrak bernilai tinggi atau sensitif, tanya peguam sama ada alat tandatangan elektronik anda sesuai.",
+          },
+          {
+            question: "Bolehkah saya menghadkan liabiliti saya dalam kontrak?",
+            answer:
+              "Selalunya boleh, seperti menghadkannya kepada harga kontrak, tetapi undang-undang menyekat setakat mana anda boleh mengecualikan tanggungjawab, terutamanya bagi pengguna dan terma yang tidak munasabah. Pastikan had munasabah dan minta peguam menyemaknya.",
+          },
+          {
+            question: "Adakah kontrak perlu disetem?",
+            answer:
+              "Sesetengah dokumen, seperti perjanjian penyewaan, amnya mesti disetem, dan dokumen yang tidak disetem boleh sukar digunakan di mahkamah. Banyak kontrak komersial biasa tidak tertakluk kepada duti standard, tetapi bergantung pada jenis dokumen, jadi semak dengan peguam atau Lembaga Hasil Dalam Negeri.",
+          },
+          {
+            question: "Bolehkah saya mengenakan penalti tetap untuk bayaran lewat atau pembatalan?",
+            answer:
+              "Anda boleh bersetuju tentang caj bayaran lewat atau pembatalan, tetapi mahkamah mungkin mengurangkan jumlah yang keterlaluan berbanding kerugian sebenar. Pastikan caj itu munasabah dan nyatakannya dengan jelas dalam terma anda.",
+          },
+          {
+            question: "Bilakah saya patut mengupah peguam untuk menyemak kontrak?",
+            answer:
+              "Untuk jumlah besar, tempoh panjang, eksklusiviti, harta intelek, aturan pemegang saham, jaminan atau tanah. Minta templat yang boleh digunakan semula untuk urusan rutin anda supaya anda tidak membayar untuk semakan yang sama setiap kali.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "tax-deductions-and-incentives-for-malaysian-smes",
+    title: "Tax Deductions and Incentives for Malaysian SMEs: What You Can Claim",
+    seoTitle: "Tax Deductions and Incentives for Malaysian SMEs",
+    seoDescription:
+      "What Malaysian SMEs can generally deduct: allowable expenses, capital allowances, staff costs, SME tax rates, incentives, and the records to keep.",
+    coverImage: {
+      file: "tax-deductions-and-incentives-for-malaysian-smes-cover.webp",
+      mimeType: "image/webp",
+      alt: "A smiling woman at a sunny desk holding a pen over a calculator and notebook, with a laptop beside her",
+      altTranslations: {
+        zh: "一位微笑的女士坐在阳光明媚的书桌前，手持笔放在计算器和笔记本上，旁边是笔记本电脑",
+        ms: "Seorang wanita tersenyum di meja yang cerah memegang pen di atas kalkulator dan buku nota, dengan komputer riba di sebelahnya",
+      },
+    },
+    contentImages: {
+      "claims-desk": {
+        file: "tax-deductions-and-incentives-for-malaysian-smes-claims.webp",
+        mimeType: "image/webp",
+        alt: "A woman in a blazer writing in a notebook at her desk beside a laptop with a sticky note",
+        altTranslations: {
+          zh: "一位身穿西装外套的女士在书桌前的笔记本上书写，旁边是贴着便利贴的笔记本电脑",
+          ms: "Seorang wanita berjaket menulis dalam buku nota di mejanya di sebelah komputer riba yang ditampal nota lekat",
+        },
+        after: "Keep a claim file for every deduction, because a deduction you cannot document is one LHDN can disallow.",
+        afterTranslations: {
+          zh: "请为每一项扣除保存一份申报文件，因为您无法提供凭证的扣除，LHDN 可以不予接受。",
+          ms: "Simpan fail tuntutan bagi setiap potongan, kerana potongan yang tidak dapat anda dokumenkan ialah potongan yang boleh ditolak oleh LHDN.",
+        },
+      },
+    },
+    excerpt:
+      "Paying the right amount of tax, not more and not less, depends on knowing what you can legitimately deduct. This guide explains the general rules on allowable and non-allowable expenses, capital allowances on equipment, staff and training costs, the SME tax rates and common incentives, and the records you need to support every claim.",
+    body: `Many small business owners either overpay tax because they do not know what they can deduct, or underpay it because they claim things they should not and hope nobody checks. Both are expensive. The first costs you cash every year, and the second can bring back-tax, penalties, and a very unpleasant audit. The answer is to understand the principles, claim what you are entitled to, and keep proof.
+
+This is general information, not tax advice. Tax rates, allowances, caps, and incentives are revised often, typically with each annual Budget, and they depend on your business structure and facts, so confirm the current position with the Inland Revenue Board (LHDN) or a qualified tax adviser before you rely on it.
+
+## 1. Understand the basic principle of a deduction
+
+### Taxable income is profit, not sales
+Tax is calculated on your adjusted income, which starts from your business revenue and subtracts the expenses the tax law allows. The more legitimate deductions you identify, the lower the profit you are taxed on.
+
+### The key test
+In general, an expense is deductible if it was incurred wholly and exclusively in producing your business income, and it is not capital in nature or specifically prohibited by the law. The wording and exceptions are detailed, so treat this as the rule of thumb, not the full test.
+
+### Your structure matters
+A company is taxed as a separate entity, while a sole proprietor or partnership pays tax on business profits through the owners' personal tax returns. Some reliefs and rates apply only to one or the other, so check which framework applies to you.
+
+## 2. Know the common allowable expenses
+
+These are the expenses that businesses most often claim, subject to the conditions above.
+
+### Operating costs
+Rent for business premises, utilities, telephone and internet used for business, repairs and maintenance, stationery, software subscriptions, and similar day-to-day costs.
+
+### Cost of goods and direct costs
+The cost of stock, raw materials, and direct labour that go into what you sell.
+
+### Marketing and advertising
+Online and offline advertising, website running costs, and promotional material generally qualify, though some one-off or capital-type items, such as building a large asset, may be treated differently.
+
+### Professional fees
+Accounting, audit, legal fees for ordinary business matters, and company secretarial fees are often deductible, while some fees linked to capital items, such as buying property, may not be.
+
+### Interest and finance costs
+Interest on money borrowed for business purposes can often be deducted, subject to the rules, while interest on personal borrowing cannot.
+
+### Bad debts
+A debt that you have specifically identified as bad or doubtful may be deductible if it meets the conditions, which is another reason to keep strong records of how you chased it. See our guide on collecting late payments.
+
+## 3. Know what you generally cannot deduct
+
+### Private and domestic expenses
+Personal spending, family costs, and anything unrelated to earning business income are not deductible, which is why mixing personal and business money is so costly. See our guide on bookkeeping basics.
+
+### Capital expenditure
+Buying equipment, vehicles, and property is generally not deducted in full as an expense. Instead, it may qualify for capital allowances, as explained below.
+
+### Fines and penalties
+Penalties and compounds imposed for breaking the law are generally not deductible, which includes late-filing and late-payment penalties.
+
+### Restricted items
+Some categories are partly or fully restricted, such as certain entertainment costs, expenses on some types of private vehicles, and gifts. The limits are specific and change, so confirm them before you claim.
+
+### Income tax itself
+Income tax paid is not an expense for tax purposes.
+
+## 4. Claim capital allowances on equipment
+
+### What they are
+Because you cannot deduct the cost of equipment in one go, the law lets you claim capital allowances, which are tax relief spread over time, on qualifying assets such as machinery, equipment, computers, and some vehicles.
+
+### How they work
+Allowances are typically made up of an initial allowance in the first year and annual allowances after that, at rates that depend on the type of asset. The rates and conditions are set in the tax legislation and are reviewed from time to time.
+
+### Small-value assets
+There is a more generous treatment for low-value assets, which can be written off faster, with limits per item and per year that differ for SMEs and other businesses. Confirm the current thresholds before buying.
+
+### Keep an asset register
+List each asset with its date, cost, and supplier invoice. You need these details to work out allowances and to deal with any later sale or disposal.
+
+### Be careful with cars
+Cars used for business have specific limits on the cost on which you can claim allowances, and the treatment depends on the type of vehicle. Do not assume a luxury car is fully claimable.
+
+## 5. Claim staff and training costs
+
+### Salaries and benefits
+Employee salaries, bonuses, and many staff benefits are deductible when they are for the business, along with the employer's statutory contributions such as EPF, SOCSO, and EIS, which are explained in our guide on hiring your first employee. The exact treatment of some benefits differs, so check the rules.
+
+### Training
+Training that improves your staff's skills for the business may be deductible, and there are schemes, such as through the Human Resource Development Corporation, that offer support or enhanced treatment in some cases. Check which programmes and conditions apply.
+
+### Directors' and owners' pay
+A company can deduct reasonable remuneration paid to directors, but a sole proprietor cannot deduct their own drawings as a salary, since the profit is already their income.
+
+## 6. Know the SME tax rates and common incentives
+
+### The SME corporate tax rate
+Resident companies that meet the conditions for small and medium enterprises, which currently include limits on paid-up capital and gross business income and restrictions on foreign or large-company ownership, have been taxed at lower rates on the first slices of chargeable income than the standard corporate rate. The bands, rates, and conditions have been revised before, so confirm the current rates and your eligibility with LHDN.
+
+### Incentives and schemes
+Governments also offer incentives from time to time, such as allowances or enhanced deductions for specific activities, including some digitalisation costs. Our guide on SME grants and funding covers support beyond tax, and our guide on e-invoicing explains an obligation that has sometimes come with related incentives.
+
+### Incentives change often
+Many incentives are time-limited, require approval, or apply only to specific sectors, so do not plan around one until you have confirmed that it is still available and that you qualify.
+
+### Do not chase a tax saving that wrecks the business
+Spending money just to get a deduction still costs you most of that money. A deduction reduces the cost of a genuine expense, it does not make it free.
+
+## 7. Keep the records that support every claim
+
+> A deduction is only as good as the evidence behind it. If LHDN questions a claim and you cannot produce the invoice, the proof of payment, and a reason the expense was for the business, you should expect the deduction to be disallowed and a penalty to follow.
+
+### What to keep
+Keep invoices and receipts addressed to your business, proof of payment, contracts, asset records, payroll records, and a short note on the business reason for any unusual expense.
+
+### How long
+LHDN has long expected records to be kept for about seven years, but confirm the current requirement with LHDN or your accountant. Our bookkeeping guide explains what to keep and how to organise it.
+
+### Claim file
+Keep a claim file for every deduction, because a deduction you cannot document is one LHDN can disallow. A simple folder, physical or digital, for each year and each category is enough.
+
+### Work with your accountant
+Share your records early rather than at the filing deadline, ask what you may be missing, and make sure the figures in your tax return match your accounts.
+
+If you want help from a tax adviser or accountant, you can [browse the directory](/en) for local professionals, and [creating a free business listing](/en/signup) helps new customers and partners find and verify your business.
+
+## Common mistakes Malaysian SMEs make with tax deductions
+
+- **Claiming personal expenses as business costs.** It is the most common reason for disallowed deductions and penalties.
+- **Missing legitimate claims.** Owners who do not keep records often forget capital allowances, bad debts, and small recurring costs.
+- **Relying on advice that is out of date.** Rates, caps, and incentives change with each Budget, so last year's rule may not apply.
+
+## Where to start
+
+- **This week:** Collect your invoices, receipts, and asset records for the year, and separate business from personal spending.
+- **Next:** Set up an asset register and a claim folder for each category of expense.
+- **Then:** Ask your accountant which allowances, rates, and incentives apply to you this year.
+- **Every year:** Review your claims after each Budget announcement, and plan large purchases with the tax treatment in mind.
+
+Tax planning for a small business is mostly good records and no surprises, and the owners who keep both pay the right amount, not a penny more.`,
+    faqs: [
+      {
+        question: "What expenses can a Malaysian business generally deduct from its taxable income?",
+        answer:
+          "In general, expenses incurred wholly and exclusively in producing business income that are not capital in nature or specifically prohibited, such as rent, utilities, stock, marketing, professional fees, staff costs, and business-related interest. Confirm the detailed rules with LHDN or a tax adviser.",
+      },
+      {
+        question: "Can I deduct personal expenses through my business?",
+        answer:
+          "No. Private and domestic expenses are not deductible, and claiming them is a common reason for disallowed deductions, back-tax, and penalties. Keep business and personal money separate.",
+      },
+      {
+        question: "What are capital allowances?",
+        answer:
+          "Because the cost of equipment, vehicles, and similar assets is not deducted in one go, the law allows capital allowances, which spread tax relief over time on qualifying assets. Rates, small-value asset rules, and limits change, so check the current figures.",
+      },
+      {
+        question: "Can I deduct the cost of a car I use for business?",
+        answer:
+          "Possibly, but there are specific limits on the cost on which allowances can be claimed, and the treatment depends on the type of vehicle and its use. Do not assume a luxury car is fully claimable, and confirm the rules before you buy.",
+      },
+      {
+        question: "Are fines and penalties deductible?",
+        answer:
+          "Generally no. Penalties and compounds imposed for breaking the law, including late-filing or late-payment penalties, are not deductible.",
+      },
+      {
+        question: "Is there a lower tax rate for SMEs in Malaysia?",
+        answer:
+          "Resident companies that meet the SME conditions, including limits on paid-up capital and gross business income and restrictions on foreign or large-company ownership, have been taxed at lower rates on the first slices of chargeable income. The bands and conditions change, so confirm the current rates with LHDN.",
+      },
+      {
+        question: "Can a sole proprietor deduct their own salary?",
+        answer:
+          "No. A sole proprietor's drawings are not a deductible salary because the profit is already their income. A company can deduct reasonable remuneration paid to its directors.",
+      },
+      {
+        question: "What records do I need to support a tax deduction?",
+        answer:
+          "Invoices and receipts addressed to your business, proof of payment, contracts, asset and payroll records, and a note on the business reason for unusual expenses. LHDN has long expected records to be kept for about seven years, but confirm the current requirement.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "马来西亚中小企业的税务扣除与优惠：您可以申报什么",
+        excerpt:
+          "缴付正确的税额，不多也不少，取决于您知道可以合法扣除什么。本指南说明可扣除与不可扣除开支的一般规则、设备的资本免税额、员工和培训成本、中小企业税率和常见优惠，以及支持每一项申报所需的记录。",
+        body: `许多小企业主要么因为不知道可以扣除什么而多缴税，要么因为申报了不该申报的项目并希望没有人检查而少缴税。两者都代价高昂。前者每年都让您损失现金，后者则可能带来补税、罚款和非常不愉快的审计。答案是了解原则，申报您有权申报的项目，并保存凭证。
+
+以下仅为一般资讯，并非税务意见。税率、免税额、上限和优惠经常修订，通常随每年的财政预算案而变，并且取决于您的企业结构和具体情况，所以在依赖这些内容之前，请向内陆税收局（LHDN）或合格的税务顾问确认最新情况。
+
+## 1. 了解扣除的基本原则
+
+### 应税收入是利润，而不是销售额
+税款是根据您的调整后收入计算的，它从您的营业收入开始，减去税法允许的开支。您找出的合法扣除越多，被课税的利润就越低。
+
+### 关键的测试
+一般而言，如果一项开支完全且专门为产生您的营业收入而发生，并且不属于资本性质，也不被法律明确禁止，它就是可扣除的。措辞和例外情况很详细，所以请把这当作经验法则，而不是完整的测试。
+
+### 您的结构很重要
+公司作为独立的实体被课税，而独资或合伙企业则通过业主的个人报税表就营业利润缴税。有些免税额和税率只适用于其中一种，所以请查核适用于您的是哪个框架。
+
+## 2. 了解常见的可扣除开支
+
+这些是企业最常申报的开支，须符合上述条件。
+
+### 营运成本
+营业场所的租金、水电、用于业务的电话和网络、维修和保养、文具、软件订阅，以及类似的日常成本。
+
+### 销货成本和直接成本
+进入您所销售商品的存货、原料和直接人工成本。
+
+### 营销与广告
+线上和线下广告、网站运作成本和宣传材料一般符合资格，不过某些一次性或资本性质的项目，例如建造大型资产，可能会被区别对待。
+
+### 专业费用
+会计、审计、一般业务事项的法律费用和公司秘书费用通常可扣除，而与资本项目有关的某些费用，例如购置物业，则可能不可扣除。
+
+### 利息与融资成本
+为业务目的所借款项的利息通常可以扣除，须符合规则，而个人借款的利息则不能。
+
+### 坏账
+您已明确认定为坏账或呆账的债务，如果符合条件，可能可以扣除，这也是您要保存追收过程的有力记录的另一个原因。请参阅我们关于追收逾期货款的指南。
+
+## 3. 了解一般不可扣除的项目
+
+### 私人和家庭开支
+个人开销、家庭成本和任何与赚取营业收入无关的项目都不可扣除，这就是为什么公私资金混在一起代价如此高昂。请参阅我们关于簿记基础的指南。
+
+### 资本支出
+购买设备、车辆和物业一般不能作为开支全额扣除。相反，它们可能符合资本免税额，如下文所述。
+
+### 罚款和罚金
+因违法而被征收的罚款和罚单一般不可扣除，包括逾期递交和逾期缴付的罚款。
+
+### 受限制的项目
+有些类别被部分或完全限制，例如某些招待费用、某些类型私家车的开支，以及礼品。限制是具体的且会变动，所以在申报之前请先确认。
+
+### 所得税本身
+已缴付的所得税，就税务而言不属于开支。
+
+## 4. 就设备申报资本免税额
+
+### 它们是什么
+由于您无法一次性扣除设备的成本，法律允许您就机器、设备、电脑和某些车辆等合格资产申报资本免税额，也就是分期给予的税务减免。
+
+### 如何运作
+免税额通常由第一年的初期免税额和之后的年度免税额组成，税率取决于资产的类型。税率和条件由税法规定，并不时检讨。
+
+### 小额资产
+对低价值资产有较宽松的处理，可以更快冲销，每件和每年的限额对中小企业与其他企业不同。购买之前，请确认现行的门槛。
+
+### 保存资产登记册
+列出每项资产的日期、成本和供应商发票。您需要这些资料来计算免税额，并处理日后任何出售或处置。
+
+### 小心汽车
+用于业务的汽车，其可申报免税额的成本有特定限制，处理方式取决于车辆类型。不要假设豪华汽车可以全额申报。
+
+## 5. 申报员工和培训成本
+
+### 薪水和福利
+员工的薪水、花红和许多员工福利，在是为了业务时可以扣除，雇主的法定供款，例如 EPF、SOCSO 和 EIS 也一样，我们关于雇用第一位员工的指南有说明。某些福利的具体处理不同，所以请查核规则。
+
+### 培训
+提升员工业务技能的培训可能可以扣除，而且有一些计划，例如通过人力资源发展机构，在某些情况下提供支持或加强的处理。请查核适用的计划和条件。
+
+### 董事和业主的薪酬
+公司可以扣除支付给董事的合理酬金，但独资业主不能把自己的提款作为薪水扣除，因为利润本身就是其收入。
+
+## 6. 了解中小企业税率和常见优惠
+
+### 中小企业公司税率
+符合中小企业条件的居民公司，目前的条件包括对实收资本和总营业收入的限制，以及对外资或大型公司持股的限制，在应税收入的头几个档次，被课以比标准公司税率更低的税率。这些档次、税率和条件以前曾被修订，所以请向 LHDN 确认现行税率及您的资格。
+
+### 优惠和计划
+政府也不时提供优惠，例如针对特定活动的免税额或加强扣除，包括某些数码化成本。我们关于中小企业补助与融资的指南涵盖税务之外的支持，而关于电子发票的指南则说明了一项有时附带相关优惠的义务。
+
+### 优惠经常变动
+许多优惠有时限、需要批准，或只适用于特定行业，所以在确认它仍然可用且您符合资格之前，不要围绕它做规划。
+
+### 不要追求会拖垮业务的节税
+仅仅为了得到扣除而花钱，仍然会让您花掉大部分的钱。扣除降低的是一项真实开支的成本，并不会让它变成免费。
+
+## 7. 保存支持每一项申报的记录
+
+> 扣除的可靠程度，取决于其背后的凭证。如果 LHDN 质疑某项申报，而您无法提供发票、付款证明，以及该开支是为了业务的理由，您应该预期扣除会被不予接受，并随后被罚款。
+
+### 要保存什么
+保存以您的企业为抬头的发票和收据、付款证明、合约、资产记录、薪资记录，以及对任何不寻常开支的业务理由的简短说明。
+
+### 保存多久
+LHDN 长期以来期望记录保存约七年，但请向 LHDN 或您的会计师确认现行要求。我们的簿记指南说明了要保存什么以及如何整理。
+
+### 申报文件
+请为每一项扣除保存一份申报文件，因为您无法提供凭证的扣除，LHDN 可以不予接受。每一年和每一个类别用一个简单的文件夹，纸本或数码的都可以。
+
+### 与您的会计师合作
+及早分享您的记录，而不是等到申报截止日，询问您可能遗漏了什么，并确保您报税表上的数字与您的账目相符。
+
+如果您想得到税务顾问或会计师的协助，可以[浏览名录](/zh)寻找本地专业人士，而[创建免费的企业列表](/zh/signup)可以帮助新客户和合作伙伴找到并核实您的企业。
+
+## 马来西亚中小企业在税务扣除上常犯的错误
+
+- **把个人开支当作业务成本申报。** 这是扣除被不予接受和被罚款最常见的原因。
+- **遗漏合法的申报。** 不保存记录的业主，常常忘记资本免税额、坏账和小额的经常性成本。
+- **依赖过时的意见。** 税率、上限和优惠随每次财政预算案而变，所以去年的规定可能不再适用。
+
+## 从哪里开始
+
+- **本周：**收集您这一年的发票、收据和资产记录，并把公私开销分开。
+- **接着：**建立资产登记册，并为每一类开支设一个申报文件夹。
+- **然后：**询问您的会计师今年有哪些免税额、税率和优惠适用于您。
+- **每年：**在每次财政预算案公布之后检讨您的申报，并在规划大额购买时考虑税务处理。
+
+小企业的税务规划，大多是良好的记录和没有意外，而两者兼备的企业主，缴的税刚刚好，一分钱也不多。`,
+        faqs: [
+          {
+            question: "马来西亚企业一般可以从应税收入中扣除哪些开支？",
+            answer:
+              "一般而言，是完全且专门为产生营业收入而发生、不属于资本性质也未被明确禁止的开支，例如租金、水电、存货、营销、专业费用、员工成本和与业务有关的利息。请向 LHDN 或税务顾问确认详细规则。",
+          },
+          {
+            question: "我可以通过企业扣除个人开支吗？",
+            answer:
+              "不可以。私人和家庭开支不可扣除，申报它们是扣除被不予接受、补税和罚款的常见原因。请把公私资金分开。",
+          },
+          {
+            question: "什么是资本免税额？",
+            answer:
+              "由于设备、车辆和类似资产的成本不能一次性扣除，法律允许就合格资产申报资本免税额，把税务减免分摊到各个时期。税率、小额资产规则和限额会变动，请查核现行数字。",
+          },
+          {
+            question: "我可以扣除用于业务的汽车成本吗？",
+            answer:
+              "可能可以，但对可申报免税额的成本有特定限制，处理方式取决于车辆类型及其用途。不要假设豪华汽车可以全额申报，并在购买之前确认规则。",
+          },
+          {
+            question: "罚款和罚金可以扣除吗？",
+            answer:
+              "一般不可以。因违法而被征收的罚款和罚单，包括逾期递交或逾期缴付的罚款，均不可扣除。",
+          },
+          {
+            question: "马来西亚对中小企业有较低的税率吗？",
+            answer:
+              "符合中小企业条件的居民公司，包括对实收资本和总营业收入的限制以及对外资或大型公司持股的限制，在应税收入的头几个档次被课以较低的税率。档次和条件会变动，所以请向 LHDN 确认现行税率。",
+          },
+          {
+            question: "独资业主可以扣除自己的薪水吗？",
+            answer:
+              "不可以。独资业主的提款不是可扣除的薪水，因为利润本身就是其收入。公司则可以扣除支付给董事的合理酬金。",
+          },
+          {
+            question: "支持税务扣除需要哪些记录？",
+            answer:
+              "以您的企业为抬头的发票和收据、付款证明、合约、资产和薪资记录，以及对不寻常开支的业务理由的说明。LHDN 长期以来期望记录保存约七年，但请确认现行要求。",
+          },
+        ],
+      },
+      ms: {
+        title: "Potongan Cukai dan Insentif untuk PKS Malaysia: Apa yang Boleh Anda Tuntut",
+        excerpt:
+          "Membayar jumlah cukai yang betul, tidak lebih dan tidak kurang, bergantung pada mengetahui apa yang boleh anda potong secara sah. Panduan ini menerangkan peraturan am tentang perbelanjaan yang dibenarkan dan tidak dibenarkan, elaun modal ke atas peralatan, kos kakitangan dan latihan, kadar cukai PKS dan insentif lazim, serta rekod yang anda perlukan untuk menyokong setiap tuntutan.",
+        body: `Ramai pemilik perniagaan kecil sama ada membayar cukai berlebihan kerana tidak tahu apa yang boleh dipotong, atau membayar terlalu kurang kerana menuntut perkara yang tidak sepatutnya dan berharap tiada siapa menyemak. Kedua-duanya mahal. Yang pertama menyebabkan anda kehilangan wang tunai setiap tahun, dan yang kedua boleh membawa cukai tertunggak, penalti dan audit yang sangat tidak menyenangkan. Jawapannya ialah memahami prinsip, menuntut apa yang anda berhak, dan menyimpan bukti.
+
+Ini ialah maklumat am, bukan nasihat cukai. Kadar cukai, elaun, had dan insentif sering disemak, lazimnya dengan setiap Bajet tahunan, dan ia bergantung pada struktur dan fakta perniagaan anda, jadi sahkan kedudukan semasa dengan Lembaga Hasil Dalam Negeri (LHDN) atau perunding cukai bertauliah sebelum anda bergantung padanya.
+
+## 1. Fahami prinsip asas potongan
+
+### Pendapatan boleh cukai ialah keuntungan, bukan jualan
+Cukai dikira ke atas pendapatan terlaras anda, yang bermula daripada hasil perniagaan anda dan menolak perbelanjaan yang dibenarkan oleh undang-undang cukai. Semakin banyak potongan sah yang anda kenal pasti, semakin rendah keuntungan yang dicukai.
+
+### Ujian utama
+Secara am, sesuatu perbelanjaan boleh dipotong jika ia ditanggung sepenuhnya dan semata-mata untuk menjana pendapatan perniagaan anda, dan ia bukan bersifat modal atau dilarang secara khusus oleh undang-undang. Perkataan dan pengecualiannya terperinci, jadi anggaplah ini sebagai kaedah praktikal, bukan ujian penuh.
+
+### Struktur anda penting
+Syarikat dicukai sebagai entiti berasingan, manakala pemilik tunggal atau perkongsian membayar cukai ke atas keuntungan perniagaan melalui borang cukai peribadi pemilik. Sesetengah pelepasan dan kadar hanya terpakai kepada salah satu, jadi semak kerangka mana yang terpakai kepada anda.
+
+## 2. Ketahui perbelanjaan lazim yang dibenarkan
+
+Ini ialah perbelanjaan yang paling kerap dituntut oleh perniagaan, tertakluk kepada syarat di atas.
+
+### Kos operasi
+Sewa premis perniagaan, utiliti, telefon dan internet yang digunakan untuk perniagaan, pembaikan dan penyelenggaraan, alat tulis, langganan perisian dan kos harian yang serupa.
+
+### Kos barangan dan kos langsung
+Kos stok, bahan mentah dan buruh langsung yang masuk ke dalam apa yang anda jual.
+
+### Pemasaran dan pengiklanan
+Pengiklanan dalam talian dan luar talian, kos menjalankan laman web dan bahan promosi amnya layak, walaupun sesetengah item sekali sahaja atau bersifat modal, seperti membina aset besar, mungkin dilayan secara berbeza.
+
+### Yuran profesional
+Perakaunan, audit, yuran guaman bagi perkara perniagaan biasa dan yuran setiausaha syarikat sering boleh dipotong, manakala sesetengah yuran yang berkaitan dengan item modal, seperti membeli hartanah, mungkin tidak boleh.
+
+### Faedah dan kos pembiayaan
+Faedah ke atas wang yang dipinjam untuk tujuan perniagaan sering boleh dipotong, tertakluk kepada peraturan, manakala faedah ke atas pinjaman peribadi tidak boleh.
+
+### Hutang lapuk
+Hutang yang anda kenal pasti secara khusus sebagai lapuk atau ragu mungkin boleh dipotong jika ia memenuhi syarat, yang menjadi satu lagi sebab untuk menyimpan rekod yang kukuh tentang bagaimana anda mengejarnya. Lihat panduan kami tentang menuntut bayaran lewat.
+
+## 3. Ketahui apa yang amnya tidak boleh dipotong
+
+### Perbelanjaan peribadi dan rumah tangga
+Perbelanjaan peribadi, kos keluarga dan apa-apa yang tidak berkaitan dengan memperoleh pendapatan perniagaan tidak boleh dipotong, itulah sebabnya mencampurkan wang peribadi dan perniagaan sangat mahal. Lihat panduan kami tentang asas simpan kira.
+
+### Perbelanjaan modal
+Membeli peralatan, kenderaan dan hartanah amnya tidak dipotong sepenuhnya sebagai perbelanjaan. Sebaliknya, ia mungkin layak mendapat elaun modal, seperti yang diterangkan di bawah.
+
+### Denda dan penalti
+Penalti dan kompaun yang dikenakan kerana melanggar undang-undang amnya tidak boleh dipotong, termasuk penalti pemfailan lewat dan bayaran lewat.
+
+### Item terhad
+Sesetengah kategori terhad sebahagian atau sepenuhnya, seperti kos hiburan tertentu, perbelanjaan ke atas jenis kenderaan persendirian tertentu, dan hadiah. Had adalah khusus dan berubah, jadi sahkannya sebelum anda menuntut.
+
+### Cukai pendapatan itu sendiri
+Cukai pendapatan yang dibayar bukan perbelanjaan bagi tujuan cukai.
+
+## 4. Tuntut elaun modal ke atas peralatan
+
+### Apa itu
+Oleh sebab anda tidak boleh memotong kos peralatan sekaligus, undang-undang membenarkan anda menuntut elaun modal, iaitu pelepasan cukai yang disebarkan sepanjang masa, ke atas aset layak seperti jentera, peralatan, komputer dan sesetengah kenderaan.
+
+### Bagaimana ia berfungsi
+Elaun lazimnya terdiri daripada elaun permulaan pada tahun pertama dan elaun tahunan selepas itu, pada kadar yang bergantung pada jenis aset. Kadar dan syarat ditetapkan dalam perundangan cukai dan disemak dari semasa ke semasa.
+
+### Aset bernilai kecil
+Terdapat layanan yang lebih murah hati bagi aset bernilai rendah, yang boleh dihapus kira dengan lebih pantas, dengan had bagi setiap item dan setiap tahun yang berbeza bagi PKS dan perniagaan lain. Sahkan ambang semasa sebelum membeli.
+
+### Simpan daftar aset
+Senaraikan setiap aset dengan tarikh, kos dan invois pembekalnya. Anda memerlukan butiran ini untuk mengira elaun dan untuk berurusan dengan sebarang jualan atau pelupusan kemudian.
+
+### Berhati-hati dengan kereta
+Kereta yang digunakan untuk perniagaan mempunyai had khusus ke atas kos yang boleh dituntut elaun, dan layanannya bergantung pada jenis kenderaan. Jangan anggap kereta mewah boleh dituntut sepenuhnya.
+
+## 5. Tuntut kos kakitangan dan latihan
+
+### Gaji dan faedah
+Gaji pekerja, bonus dan banyak faedah kakitangan boleh dipotong apabila ia untuk perniagaan, bersama caruman berkanun majikan seperti KWSP, PERKESO dan SIP, yang diterangkan dalam panduan kami tentang mengambil pekerja pertama. Layanan tepat bagi sesetengah faedah berbeza, jadi semak peraturan.
+
+### Latihan
+Latihan yang meningkatkan kemahiran kakitangan anda untuk perniagaan mungkin boleh dipotong, dan terdapat skim, seperti melalui Perbadanan Pembangunan Sumber Manusia, yang menawarkan sokongan atau layanan dipertingkat dalam sesetengah kes. Semak program dan syarat yang terpakai.
+
+### Gaji pengarah dan pemilik
+Syarikat boleh memotong saraan munasabah yang dibayar kepada pengarah, tetapi pemilik tunggal tidak boleh memotong pengeluaran sendiri sebagai gaji, kerana keuntungan itu sudah menjadi pendapatan mereka.
+
+## 6. Ketahui kadar cukai PKS dan insentif lazim
+
+### Kadar cukai korporat PKS
+Syarikat pemastautin yang memenuhi syarat bagi perusahaan kecil dan sederhana, yang pada masa ini termasuk had ke atas modal berbayar dan pendapatan kasar perniagaan serta sekatan ke atas pemilikan asing atau syarikat besar, telah dicukai pada kadar lebih rendah ke atas bahagian pertama pendapatan bercukai berbanding kadar korporat standard. Peringkat, kadar dan syarat telah disemak sebelum ini, jadi sahkan kadar semasa dan kelayakan anda dengan LHDN.
+
+### Insentif dan skim
+Kerajaan juga menawarkan insentif dari semasa ke semasa, seperti elaun atau potongan dipertingkat bagi aktiviti tertentu, termasuk sesetengah kos pendigitalan. Panduan kami tentang geran dan pembiayaan PKS merangkumi sokongan selain cukai, dan panduan tentang e-Invois menerangkan satu kewajipan yang kadangkala disertai insentif berkaitan.
+
+### Insentif sering berubah
+Banyak insentif terhad masa, memerlukan kelulusan atau terpakai kepada sektor tertentu sahaja, jadi jangan merancang berdasarkan satu sehingga anda mengesahkan ia masih tersedia dan anda layak.
+
+### Jangan mengejar penjimatan cukai yang merosakkan perniagaan
+Membelanjakan wang semata-mata untuk mendapat potongan tetap menelan kebanyakan wang itu. Potongan mengurangkan kos perbelanjaan yang sebenar, ia tidak menjadikannya percuma.
+
+## 7. Simpan rekod yang menyokong setiap tuntutan
+
+> Potongan hanya sebaik bukti di sebaliknya. Jika LHDN mempersoalkan tuntutan dan anda tidak dapat mengemukakan invois, bukti bayaran dan sebab perbelanjaan itu untuk perniagaan, anda patut menjangka potongan akan ditolak dan penalti akan menyusul.
+
+### Apa yang perlu disimpan
+Simpan invois dan resit yang dialamatkan kepada perniagaan anda, bukti bayaran, kontrak, rekod aset, rekod gaji, dan nota ringkas tentang sebab perniagaan bagi sebarang perbelanjaan luar biasa.
+
+### Berapa lama
+LHDN sejak lama menjangkakan rekod disimpan sekitar tujuh tahun, tetapi sahkan keperluan semasa dengan LHDN atau akauntan anda. Panduan simpan kira kami menerangkan apa yang perlu disimpan dan cara menyusunnya.
+
+### Fail tuntutan
+Simpan fail tuntutan bagi setiap potongan, kerana potongan yang tidak dapat anda dokumenkan ialah potongan yang boleh ditolak oleh LHDN. Folder mudah, fizikal atau digital, bagi setiap tahun dan setiap kategori sudah memadai.
+
+### Bekerjasama dengan akauntan anda
+Kongsi rekod anda lebih awal dan bukannya pada tarikh akhir pemfailan, tanya apa yang mungkin anda terlepas, dan pastikan angka dalam borang cukai anda sepadan dengan akaun anda.
+
+Jika anda mahu bantuan daripada perunding cukai atau akauntan, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pelanggan dan rakan baharu menemui serta mengesahkan perniagaan anda.
+
+## Kesilapan lazim PKS Malaysia dengan potongan cukai
+
+- **Menuntut perbelanjaan peribadi sebagai kos perniagaan.** Ia punca paling lazim potongan ditolak dan penalti dikenakan.
+- **Terlepas tuntutan yang sah.** Pemilik yang tidak menyimpan rekod sering terlupa elaun modal, hutang lapuk dan kos berulang yang kecil.
+- **Bergantung pada nasihat yang sudah lapuk.** Kadar, had dan insentif berubah dengan setiap Bajet, jadi peraturan tahun lepas mungkin tidak terpakai.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Kumpulkan invois, resit dan rekod aset anda untuk tahun itu, dan asingkan perbelanjaan perniagaan daripada peribadi.
+- **Seterusnya:** Wujudkan daftar aset dan folder tuntutan bagi setiap kategori perbelanjaan.
+- **Kemudian:** Tanya akauntan anda elaun, kadar dan insentif mana yang terpakai kepada anda tahun ini.
+- **Setiap tahun:** Semak tuntutan anda selepas setiap pengumuman Bajet, dan rancang pembelian besar dengan mengambil kira layanan cukai.
+
+Perancangan cukai bagi perniagaan kecil kebanyakannya rekod yang baik dan tiada kejutan, dan pemilik yang menyimpan kedua-duanya membayar jumlah yang betul, tidak sesen pun lebih.`,
+        faqs: [
+          {
+            question: "Apakah perbelanjaan yang amnya boleh dipotong oleh perniagaan Malaysia daripada pendapatan bercukainya?",
+            answer:
+              "Secara am, perbelanjaan yang ditanggung sepenuhnya dan semata-mata untuk menjana pendapatan perniagaan yang bukan bersifat modal atau dilarang secara khusus, seperti sewa, utiliti, stok, pemasaran, yuran profesional, kos kakitangan dan faedah berkaitan perniagaan. Sahkan peraturan terperinci dengan LHDN atau perunding cukai.",
+          },
+          {
+            question: "Bolehkah saya memotong perbelanjaan peribadi melalui perniagaan saya?",
+            answer:
+              "Tidak. Perbelanjaan peribadi dan rumah tangga tidak boleh dipotong, dan menuntutnya ialah punca lazim potongan ditolak, cukai tertunggak dan penalti. Pastikan wang perniagaan dan peribadi berasingan.",
+          },
+          {
+            question: "Apakah elaun modal?",
+            answer:
+              "Oleh sebab kos peralatan, kenderaan dan aset yang serupa tidak dipotong sekaligus, undang-undang membenarkan elaun modal, yang menyebarkan pelepasan cukai sepanjang masa ke atas aset layak. Kadar, peraturan aset bernilai kecil dan had berubah, jadi semak angka semasa.",
+          },
+          {
+            question: "Bolehkah saya memotong kos kereta yang saya gunakan untuk perniagaan?",
+            answer:
+              "Mungkin, tetapi terdapat had khusus ke atas kos yang boleh dituntut elaun, dan layanannya bergantung pada jenis kenderaan dan penggunaannya. Jangan anggap kereta mewah boleh dituntut sepenuhnya, dan sahkan peraturan sebelum anda membeli.",
+          },
+          {
+            question: "Adakah denda dan penalti boleh dipotong?",
+            answer:
+              "Amnya tidak. Penalti dan kompaun yang dikenakan kerana melanggar undang-undang, termasuk penalti pemfailan lewat atau bayaran lewat, tidak boleh dipotong.",
+          },
+          {
+            question: "Adakah terdapat kadar cukai yang lebih rendah untuk PKS di Malaysia?",
+            answer:
+              "Syarikat pemastautin yang memenuhi syarat PKS, termasuk had ke atas modal berbayar dan pendapatan kasar perniagaan serta sekatan ke atas pemilikan asing atau syarikat besar, telah dicukai pada kadar lebih rendah ke atas bahagian pertama pendapatan bercukai. Peringkat dan syarat berubah, jadi sahkan kadar semasa dengan LHDN.",
+          },
+          {
+            question: "Bolehkah pemilik tunggal memotong gaji sendiri?",
+            answer:
+              "Tidak. Pengeluaran pemilik tunggal bukan gaji yang boleh dipotong kerana keuntungan itu sudah menjadi pendapatannya. Syarikat boleh memotong saraan munasabah yang dibayar kepada pengarahnya.",
+          },
+          {
+            question: "Apakah rekod yang saya perlukan untuk menyokong potongan cukai?",
+            answer:
+              "Invois dan resit yang dialamatkan kepada perniagaan anda, bukti bayaran, kontrak, rekod aset dan gaji, serta nota tentang sebab perniagaan bagi perbelanjaan luar biasa. LHDN sejak lama menjangkakan rekod disimpan sekitar tujuh tahun, tetapi sahkan keperluan semasa.",
+          },
+        ],
+      },
+    },
+  },
 ];
