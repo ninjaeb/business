@@ -32,7 +32,7 @@
         "calculator"
       ],
       "description": "Woman calculating expenses with receipts and a pink calculator",
-      "usedBy": null
+      "usedBy": "bookkeeping-and-accounting-basics-for-malaysian-smes-cover.webp"
     },
     {
       "id": 8296970,
@@ -44,7 +44,7 @@
         "overhead"
       ],
       "description": "Overhead view of hands using a calculator over folders and paperwork",
-      "usedBy": null
+      "usedBy": "staying-compliant-with-ssm-annual-returns-and-company-records-cover.webp"
     },
     {
       "id": 8296977,
@@ -67,7 +67,7 @@
         "hr"
       ],
       "description": "Two businesswomen talking over documents in a corporate meeting",
-      "usedBy": null
+      "usedBy": "staying-compliant-with-ssm-annual-returns-and-company-records-records.webp"
     },
     {
       "id": 7651557,
@@ -178,7 +178,7 @@
         "planning"
       ],
       "description": "Team reviewing paperwork together in an office",
-      "usedBy": null
+      "usedBy": "halal-certification-in-malaysia-for-smes-review.webp"
     },
     {
       "id": 8278841,
@@ -244,7 +244,7 @@
         "funding"
       ],
       "description": "Asian woman smiling while working with a calculator and laptop",
-      "usedBy": null
+      "usedBy": "bookkeeping-and-accounting-basics-for-malaysian-smes-software.webp"
     },
     {
       "id": 8441787,
@@ -267,7 +267,7 @@
         "laptop"
       ],
       "description": "Two colleagues with laptops and paperwork in a corporate setting",
-      "usedBy": null
+      "usedBy": "hiring-foreign-workers-in-malaysia-cover.webp"
     },
     {
       "id": 8546751,
@@ -411,7 +411,7 @@
         "manager"
       ],
       "description": "Manager speaking with colleagues around a boardroom table",
-      "usedBy": null
+      "usedBy": "hiring-foreign-workers-in-malaysia-contract.webp"
     },
     {
       "id": 955389,
@@ -423,6 +423,17 @@
       ],
       "description": "Close-up of a person signing a contract at an office desk",
       "usedBy": "renting-commercial-premises-in-malaysia-cover.webp"
+    },
+    {
+      "id": 8092572,
+      "tags": [
+        "food",
+        "kitchen",
+        "halal",
+        "restaurant"
+      ],
+      "description": "Chef in uniform preparing food with a bamboo steamer in a kitchen",
+      "usedBy": "halal-certification-in-malaysia-for-smes-cover.webp"
     }
   ]
 }
