@@ -15,16 +15,16 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Bookkeeping and Accounting Basics for Malaysian SMEs: Records, Software, and When to Hire an Accountant**
-   — How a small business should keep its books from day one: what records
-   to keep and for how long, separating business and personal money,
-   choosing accounting software, monthly routines (reconciliation, invoices,
-   receipts), what an accountant or bookkeeper does, and how good records
-   feed into tax, SSM and e-invoicing obligations.
+1. **Writing Contracts and Terms and Conditions for Your Small Business in Malaysia**
+   — Why a small business needs written terms, and what goes into them:
+   customer sales terms, service agreements, supplier and subcontractor
+   contracts, payment, delivery, warranty and liability clauses, how
+   contracts are formed and enforced under Malaysian law, when stamp duty
+   or a lawyer's review matters, and how to keep signed copies safely.
 
-2. **Hiring Foreign Workers in Malaysia: Quotas, Levies, and Legal Responsibilities**
-   — What an SME must know before employing migrant workers: eligibility
-   and sector quotas, the approval and permit process, levy and insurance
-   or contributions obligations, accommodation and employment-contract
-   duties, the penalties for hiring illegally, and why to check the
-   official portals before committing.
+2. **Tax Deductions and Incentives for Malaysian SMEs: What You Can Claim**
+   — What a small business can generally deduct when working out taxable
+   income: allowable versus non-allowable expenses, capital allowances on
+   equipment, staff costs and training, common SME-specific incentives and
+   the lower SME corporate tax rate, the records needed to support a claim,
+   and why to confirm current rules with LHDN or an accountant.
