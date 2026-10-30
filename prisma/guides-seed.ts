@@ -7699,4 +7699,1080 @@ Mengutip apa yang terhutang kepada anda kebanyakannya tentang bersikap jelas seb
       },
     },
   },
+  {
+    slug: "staying-compliant-with-ssm-annual-returns-and-company-records",
+    title: "Staying Compliant with SSM: Annual Returns, Financial Statements, and Company Records",
+    seoTitle: "SSM Compliance: Annual Returns and Company Records",
+    seoDescription:
+      "What Malaysian companies must keep filing with SSM after registration: annual returns, financial statements, changes, beneficial owners, and renewals.",
+    coverImage: {
+      file: "staying-compliant-with-ssm-annual-returns-and-company-records-cover.webp",
+      mimeType: "image/webp",
+      alt: "Overhead view of hands holding a calculator and pen over folders and paperwork",
+      altTranslations: {
+        zh: "俯拍：双手拿着计算器和笔，桌上摆着文件夹和文件",
+        ms: "Pandangan atas tangan memegang kalkulator dan pen di atas fail dan dokumen",
+      },
+    },
+    contentImages: {
+      "records-review": {
+        file: "staying-compliant-with-ssm-annual-returns-and-company-records-records.webp",
+        mimeType: "image/webp",
+        alt: "Two businesswomen reviewing a document together at a conference table",
+        altTranslations: {
+          zh: "两位女企业人士在会议桌前一起审阅文件",
+          ms: "Dua ahli perniagaan wanita menyemak dokumen bersama-sama di meja persidangan",
+        },
+        after: "Set a fixed date each year to review your company's records before any deadline arrives.",
+        afterTranslations: {
+          zh: "请每年定一个固定日期，在任何截止日期到来之前检查公司的记录。",
+          ms: "Tetapkan tarikh tetap setiap tahun untuk menyemak rekod syarikat anda sebelum sebarang tarikh akhir tiba.",
+        },
+      },
+    },
+    excerpt:
+      "Registering with SSM is only the start: a Malaysian company or registered business has to keep filing and keeping its records up to date every year. This guide explains the annual return, financial statements, notification of changes, beneficial ownership reporting, business registration renewals, and what happens if you fall behind.",
+    body: `Many new owners think the hard part is getting the SSM certificate. In practice, the harder part is the years that follow. A company or registered business has ongoing duties to the Companies Commission of Malaysia (SSM), and missing them rarely causes a dramatic problem on day one. It builds quietly into compounds, a messy record, trouble getting a bank loan or a tender, and in the worst cases, being struck off.
+
+This is general information, not legal advice. Deadlines, fees, compound amounts, and forms are updated from time to time, and SSM has run relief campaigns for late filers, so confirm the current position on SSM's official website or with a licensed company secretary before you act.
+
+## 1. Know which rules apply to you
+
+The obligations depend on what you registered.
+
+### Company (Sdn Bhd)
+A private limited company is governed by the Companies Act 2016. It has the heaviest set of duties: an annual return, financial statements, statutory registers, a company secretary, a registered office, and beneficial ownership information.
+
+### Sole proprietorship or partnership
+A business registered under the Registration of Businesses Act 1956 has lighter duties, mainly keeping its registration valid by renewing on time and updating SSM when its particulars change.
+
+### Why the difference matters
+If you are not sure which one you have, check your SSM certificate or look yourself up on SSM's search service. A common mistake is treating a company as if it were a simple business, so the owner never files anything because "nothing has changed".
+
+## 2. File the annual return on time
+
+The annual return is a yearly update of the company's basic details, such as its directors, shareholders, share capital, and registered office. It is a separate duty from tax filing.
+
+### The deadline
+A company generally has to lodge its annual return within 30 days after the anniversary of its incorporation. Note that this is tied to the date the company was incorporated, not to the end of its financial year, and the two are often different. Check the exact rule and your own date on SSM's website.
+
+### How it is filed
+Filing is done electronically through SSM's online services, usually by a licensed company secretary on the company's behalf. Make sure the details you report match your own records for directors and shareholders.
+
+### Penalties for being late
+Late lodgement is an offence under the Companies Act, and SSM can offer a compound rather than prosecute. Amounts and any relief campaigns change, so check SSM's current notice rather than relying on a figure from a blog.
+
+## 3. Prepare and lodge financial statements
+
+Companies must keep proper accounting records and prepare financial statements each year, separate from the annual return.
+
+### Prepare them each year
+Directors are responsible for financial statements that give a true and fair view. For a private company, they generally need to be prepared and sent to members within a set period after the financial year end, commonly cited as six months. Confirm the current period with SSM or your company secretary.
+
+### Audit and exemptions
+Many companies must have their financial statements audited, while some, such as dormant companies or companies below certain thresholds, may qualify for an audit exemption. Do not assume you are exempt. Check the criteria with your accountant or auditor.
+
+### Lodge them with SSM
+Financial statements are also lodged with SSM, usually in a prescribed electronic format, within the period set by the Companies Act. Late filing is a separate offence from a late annual return, so track both deadlines.
+
+### Keep your accounts in order
+Good bookkeeping through the year makes all of this easier. Our guides on the small business tax calendar and on opening a business bank account explain how to keep your numbers and cash separate and ready.
+
+## 4. Keep the company's records and registers
+
+Beyond filing, a company has to keep records at its registered office or another place it has notified.
+
+### Statutory registers
+These typically include a register of members, directors, and secretaries, and a register of charges. They need to be kept up to date, not just created at incorporation.
+
+### Resolutions and minutes
+Directors' and members' decisions should be recorded. Private companies under the Companies Act 2016 are generally not required to hold an annual general meeting, and can pass many resolutions in writing, but you still need a paper trail for key decisions.
+
+### Company secretary
+A company must have a qualified company secretary, appointed within the period set by law after incorporation. A good secretary is the easiest way to avoid missed deadlines, so choose one who actually reminds you.
+
+### Registered office
+The company needs a registered office address in Malaysia where official mail can be received and records can be inspected. Make sure someone actually collects the mail, because missed notices are a common cause of problems.
+
+## 5. Notify SSM of changes
+
+When something about the company changes, SSM generally has to be told within a short time. The commonly cited period for many changes is 14 days, but it varies by the type of change, so check the specific form and deadline.
+
+### Typical changes
+These include a new or resigning director, a change of company secretary, a change of registered office or business address, a change in share capital, and a transfer of shares.
+
+### Keep personal details current
+Directors' addresses and particulars should also be kept current. Letters sent to an old address can mean the company never sees a notice.
+
+> A late filing rarely costs just the compound. SSM's records are what banks, landlords, and large customers check when deciding whether to trust you, so a clean, current record is part of your credibility.
+
+## 6. Report beneficial ownership
+
+Companies must identify the real people who ultimately own or control them, which can be different from the names on the share register.
+
+### What is required
+A company must keep a register of its beneficial owners and lodge the information, and any changes, with SSM within a short period, commonly cited as 14 days from the date of recording. SSM has issued guidelines on who counts as a beneficial owner, including people with significant control even where their shareholding is below a typical threshold.
+
+### Why it matters
+Failure to comply can lead to penalties, and the information is used to fight money laundering. If your ownership is layered, such as one company owning another, get professional help to trace it to the individuals at the end.
+
+## 7. Renew a business registration
+
+Sole proprietors and partnerships register their business for a fixed period and must renew before it expires.
+
+### Check the expiry date
+Your certificate or SSM's online record shows the expiry date. Renewing is relatively inexpensive, but a late renewal can attract a penalty, and an expired registration can cause trouble when you apply for a licence, a loan, or a government contract.
+
+### Update changes too
+If your business address, nature of business, or owner details change, you generally need to notify SSM, so do not wait until renewal to fix it.
+
+### If you stop trading
+Do not simply let a business lapse. Where a business ends or a company has stopped operating, ask about the proper process to terminate or wind it up, so you are not left with continuing obligations on a dormant entity.
+
+## 8. What to do if you are behind
+
+Do not hide. Doing nothing is the most expensive option.
+
+### Take stock
+List what is outstanding: annual returns, financial statements, change notifications, and renewals. Check SSM's records for what has actually been lodged.
+
+### Ask about relief
+SSM has run campaigns offering reduced compounds for late lodgements in the past, and may do so again. Check SSM's announcements, and ask your company secretary what is currently available.
+
+### Bring in help
+A licensed company secretary or accountant can catch up the filings in the right order. It is usually cheaper than waiting for a notice, and far cheaper than a strike-off and reinstatement.
+
+If you are looking for a company secretary, accountant, or auditor who works with small businesses, you can [browse the directory](/en) for local professionals, and [creating a free business listing](/en/signup) makes it easier for customers and suppliers to find and verify your registered business.
+
+## Common mistakes Malaysian SMEs make with SSM compliance
+
+- **Confusing the annual return with tax filing.** They are separate duties with separate deadlines, so filing one does not cover the other.
+- **Waiting for a notice before acting.** Deadlines are set in law and SSM may not remind you, so build your own calendar.
+- **Letting records drift out of date.** Old directors, outdated addresses, and unfiled share transfers make every later filing harder and every bank check slower.
+
+## Where to start
+
+- **This week:** Find your incorporation date or registration expiry date, and list every SSM filing you have made so far.
+- **Next:** Check which filings are outstanding, including annual returns, financial statements, and any change notifications.
+- **Then:** Put each recurring deadline in a shared calendar with a reminder at least a month ahead, and confirm who is responsible for each.
+- **Every year:** Set a fixed date each year to review your company's records before any deadline arrives. Confirm your registered office, directors, and beneficial owners are current.
+
+SSM compliance is mostly routine, and the owners who handle it best treat it as a yearly habit instead of a series of emergencies.`,
+    faqs: [
+      {
+        question: "When must a Malaysian company file its annual return?",
+        answer:
+          "Generally within 30 days after the anniversary of the company's incorporation, not after its financial year end. Check the exact rule and your own date on SSM's website or with your company secretary.",
+      },
+      {
+        question: "Is the SSM annual return the same as tax filing?",
+        answer:
+          "No. The annual return is a company-law filing with SSM, while tax filing is done with the Inland Revenue Board (LHDN). They have separate deadlines, so filing one does not satisfy the other.",
+      },
+      {
+        question: "Do all companies need audited financial statements?",
+        answer:
+          "Not always. Many must be audited, but some companies, such as dormant ones or those below certain thresholds, may qualify for an exemption. Confirm your eligibility with an accountant or auditor before assuming you are exempt.",
+      },
+      {
+        question: "Does a Sdn Bhd have to hold an annual general meeting?",
+        answer:
+          "Under the Companies Act 2016, private companies are generally not required to hold an AGM and can pass many resolutions in writing. You should still keep records of important decisions.",
+      },
+      {
+        question: "How soon must I tell SSM about a change of director or address?",
+        answer:
+          "For many changes the commonly cited period is 14 days, but it varies by the type of change. Check the specific form and deadline on SSM's website or ask your company secretary.",
+      },
+      {
+        question: "What is beneficial ownership reporting?",
+        answer:
+          "Companies must identify the individuals who ultimately own or control them, keep a register of these beneficial owners, and lodge the information and any changes with SSM within the period SSM sets, commonly cited as 14 days. Check SSM's current guideline for who counts.",
+      },
+      {
+        question: "Do sole proprietors and partnerships need to renew with SSM?",
+        answer:
+          "Yes. A business registered under the Registration of Businesses Act 1956 has to renew before its registration expires, and should notify SSM of changes in its particulars. A late renewal can attract a penalty.",
+      },
+      {
+        question: "What should I do if I have missed several SSM filings?",
+        answer:
+          "Do not ignore it. List what is outstanding, check SSM's records and announcements for any compound relief, and get a licensed company secretary or accountant to catch up the filings in the right order.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "合规管理 SSM：年度报表、财务报表与公司记录",
+        excerpt:
+          "向 SSM 注册只是开始：马来西亚的公司或已注册企业，每年都必须持续递交文件并保持记录的更新。本指南说明年度报表、财务报表、变更通知、实益拥有人申报、企业注册续期，以及落后时会有什么后果。",
+        body: `许多新手企业主以为最困难的是拿到 SSM 证书。实际上，更困难的是之后的每一年。公司或已注册企业对马来西亚公司委员会（SSM）有持续的义务，而错过这些义务，很少在第一天就造成戏剧性的问题。它会悄悄累积成罚单、混乱的记录、申请银行贷款或投标时的麻烦，最坏的情况是被除名。
+
+以下仅为一般资讯，并非法律意见。截止日期、费用、罚款金额和表格会不时更新，SSM 也曾为逾期递交者推出宽减活动，所以在采取行动之前，请在 SSM 官方网站或向持牌公司秘书确认最新情况。
+
+## 1. 了解适用于您的规定
+
+义务取决于您注册的是什么。
+
+### 公司（Sdn Bhd）
+私人有限公司受《2016年公司法令》规管。它的义务最多：年度报表、财务报表、法定登记册、公司秘书、注册办事处，以及实益拥有人资料。
+
+### 独资或合伙企业
+根据《1956年企业注册法令》注册的企业，义务较轻，主要是按时续期以保持注册有效，并在资料变更时通知 SSM。
+
+### 为什么差别重要
+如果您不确定自己属于哪一种，请查看您的 SSM 证书，或在 SSM 的查询服务中搜索自己。常见的错误是把公司当成简单的企业对待，结果业主因为“没有任何变动”而什么都不递交。
+
+## 2. 按时递交年度报表
+
+年度报表是对公司基本资料的年度更新，例如董事、股东、股本和注册办事处。它与报税是两回事。
+
+### 截止日期
+公司一般须在公司注册成立周年日之后 30 天内递交年度报表。请注意，这与公司注册成立的日期挂钩，而不是财政年度结束日，两者往往不同。请在 SSM 网站查核确切规定和您自己的日期。
+
+### 如何递交
+递交通过 SSM 的在线服务以电子方式进行，通常由持牌公司秘书代表公司办理。请确保您申报的董事和股东资料与您自己的记录相符。
+
+### 逾期的处罚
+逾期递交是《公司法令》下的罪行，SSM 可以提出罚单（compound）而不是起诉。金额和任何宽减活动会变动，所以请查看 SSM 现行的公告，而不要依赖博客上的数字。
+
+## 3. 准备并递交财务报表
+
+公司必须保存适当的会计记录，并每年编制财务报表，这与年度报表是分开的。
+
+### 每年编制
+董事有责任编制真实而公允的财务报表。对私人公司来说，一般须在财政年度结束后的一段规定期间内编制并送交股东，常见的说法是六个月。请向 SSM 或您的公司秘书确认现行期限。
+
+### 审计与豁免
+许多公司必须审计财务报表，而有些公司，例如休眠公司或低于某些门槛的公司，可能符合审计豁免。不要假设自己可以豁免，请向您的会计师或审计师查核条件。
+
+### 向 SSM 递交
+财务报表也须递交给 SSM，通常以规定的电子格式，在《公司法令》规定的期限内提交。逾期递交财务报表与逾期递交年度报表是不同的罪行，所以请追踪这两个截止日期。
+
+### 保持账目井然
+全年做好簿记，会让这一切容易得多。我们关于小企业税务日历和开立企业银行账户的指南，说明了如何让您的数字和现金保持分开并随时备妥。
+
+## 4. 保存公司的记录与登记册
+
+除了递交文件，公司还必须在注册办事处或其通知的其他地点保存记录。
+
+### 法定登记册
+通常包括股东、董事和秘书登记册，以及抵押登记册。它们需要保持更新，而不只是在注册成立时建立一次。
+
+### 决议与会议记录
+董事和股东的决定应该记录下来。根据《2016年公司法令》，私人公司一般不需要召开周年大会，并可以书面通过许多决议，但重要决定仍需要有书面记录。
+
+### 公司秘书
+公司必须有一位合格的公司秘书，并在注册成立后的法定期限内委任。好的秘书是避免错过截止日期的最简单方法，所以请选择真正会提醒您的人。
+
+### 注册办事处
+公司需要在马来西亚设有注册办事处地址，用来接收官方邮件并供查阅记录。请确保有人真的去收信，因为错过通知是常见的问题来源。
+
+## 5. 向 SSM 通报变更
+
+当公司有任何变更时，一般须在短时间内通知 SSM。许多变更常见的期限是 14 天，但因变更类型而异，所以请查核具体的表格和截止日期。
+
+### 常见的变更
+包括新委任或辞任的董事、更换公司秘书、更改注册办事处或营业地址、股本变更，以及股份转让。
+
+### 保持个人资料更新
+董事的地址和资料也应保持更新。寄往旧地址的信件，可能让公司从未看到过某项通知。
+
+> 逾期递交很少只是花一笔罚单而已。银行、房东和大客户在决定是否信任您时，查看的就是 SSM 的记录，所以一份干净、最新的记录，是您信誉的一部分。
+
+## 6. 申报实益拥有人
+
+公司必须识别最终拥有或控制它们的真实个人，这可能与股东名册上的名字不同。
+
+### 要求是什么
+公司须保存实益拥有人登记册，并在短期内向 SSM 递交该资料及任何变更，常见的说法是自记录之日起 14 天。SSM 已发布指南，说明谁算实益拥有人，包括即使持股低于一般门槛但拥有重大控制权的人。
+
+### 为什么重要
+不遵守可能招致处罚，而这些资料也被用来打击洗钱。如果您的所有权有多层结构，例如一家公司拥有另一家公司，请寻求专业协助，追溯到最终的个人。
+
+## 7. 续期企业注册
+
+独资和合伙企业的注册有固定期限，必须在到期前续期。
+
+### 查看到期日
+您的证书或 SSM 的在线记录会显示到期日。续期的费用相对低廉，但逾期续期可能被罚款，而过期的注册在您申请执照、贷款或政府合约时可能造成麻烦。
+
+### 变更也要更新
+如果您的营业地址、业务性质或业主资料有变，一般须通知 SSM，所以不要等到续期时才去处理。
+
+### 如果停止营业
+不要让企业自行失效。如果企业结束或公司已停止运作，请询问正确的终止或清盘程序，以免休眠的实体仍背负持续的义务。
+
+## 8. 如果您已经落后了
+
+不要躲避。什么都不做是最昂贵的选择。
+
+### 盘点
+列出尚未完成的事项：年度报表、财务报表、变更通知和续期。查看 SSM 的记录，了解实际已递交了什么。
+
+### 询问宽减
+SSM 过去曾推出过减免逾期递交罚单的活动，将来也可能再推出。请查看 SSM 的公告，并询问您的公司秘书目前有什么可用。
+
+### 寻求协助
+持牌公司秘书或会计师可以按正确的顺序补交文件。这通常比等到收到通知便宜，也远比被除名后再恢复便宜。
+
+如果您在寻找与小企业合作的公司秘书、会计师或审计师，可以[浏览名录](/zh)寻找本地专业人士，而[创建免费的企业列表](/zh/signup)可以让客户和供应商更容易找到并核实您的注册企业。
+
+## 马来西亚中小企业在 SSM 合规上常犯的错误
+
+- **把年度报表与报税混为一谈。** 它们是各有截止日期的两项义务，递交其中一项并不涵盖另一项。
+- **等到收到通知才行动。** 截止日期由法律规定，SSM 可能不会提醒您，所以请建立自己的日历。
+- **让记录逐渐过时。** 旧董事、过时的地址和未递交的股份转让，会让之后的每一次递交更困难，也让每一次银行查核更慢。
+
+## 从哪里开始
+
+- **本周：**找出您的注册成立日期或注册到期日，并列出您至今向 SSM 递交过的所有文件。
+- **接着：**查核哪些尚未完成，包括年度报表、财务报表和任何变更通知。
+- **然后：**把每一项定期的截止日期放进共享日历，至少提前一个月提醒，并确认每一项由谁负责。
+- **每年：**请每年定一个固定日期，在任何截止日期到来之前检查公司的记录。同时确认注册办事处、董事和实益拥有人都是最新的。
+
+SSM 合规大多是例行公事，处理得最好的企业主，把它当作每年的习惯，而不是一连串的紧急事件。`,
+        faqs: [
+          {
+            question: "马来西亚公司必须何时递交年度报表？",
+            answer:
+              "一般须在公司注册成立周年日之后 30 天内，而不是财政年度结束之后。请在 SSM 网站或向您的公司秘书查核确切规定和您自己的日期。",
+          },
+          {
+            question: "SSM 的年度报表与报税是同一回事吗？",
+            answer:
+              "不是。年度报表是向 SSM 递交的公司法文件，而报税是向内陆税收局（LHDN）办理。它们有各自的截止日期，所以递交其中一项并不满足另一项。",
+          },
+          {
+            question: "所有公司都需要经审计的财务报表吗？",
+            answer:
+              "不一定。许多公司必须审计，但有些公司，例如休眠公司或低于某些门槛的公司，可能符合豁免。在假设自己可以豁免之前，请向会计师或审计师确认资格。",
+          },
+          {
+            question: "Sdn Bhd 必须召开周年大会吗？",
+            answer:
+              "根据《2016年公司法令》，私人公司一般不需要召开周年大会，并可以书面通过许多决议。您仍应保存重要决定的记录。",
+          },
+          {
+            question: "更换董事或地址，必须多快通知 SSM？",
+            answer:
+              "许多变更常见的期限是 14 天，但因变更类型而异。请在 SSM 网站查核具体的表格和截止日期，或询问您的公司秘书。",
+          },
+          {
+            question: "什么是实益拥有人申报？",
+            answer:
+              "公司必须识别最终拥有或控制它们的个人，保存这些实益拥有人的登记册，并在 SSM 规定的期限内（常见的说法是 14 天）向 SSM 递交该资料及任何变更。请查看 SSM 现行指南，了解谁算实益拥有人。",
+          },
+          {
+            question: "独资和合伙企业需要向 SSM 续期吗？",
+            answer:
+              "需要。根据《1956年企业注册法令》注册的企业，必须在注册到期前续期，并应在资料变更时通知 SSM。逾期续期可能被罚款。",
+          },
+          {
+            question: "如果我错过了好几项 SSM 文件，该怎么办？",
+            answer:
+              "不要置之不理。列出尚未完成的事项，查看 SSM 的记录和公告中是否有罚单减免，并请持牌公司秘书或会计师按正确的顺序补交文件。",
+          },
+        ],
+      },
+      ms: {
+        title: "Kekal Patuh kepada SSM: Penyata Tahunan, Penyata Kewangan dan Rekod Syarikat",
+        excerpt:
+          "Mendaftar dengan SSM hanyalah permulaan: syarikat atau perniagaan berdaftar di Malaysia perlu terus memfailkan dan mengemas kini rekodnya setiap tahun. Panduan ini menerangkan penyata tahunan, penyata kewangan, pemakluman perubahan, pelaporan pemilik benefisial, pembaharuan pendaftaran perniagaan, dan apa yang berlaku jika anda ketinggalan.",
+        body: `Ramai pemilik baharu menyangka bahagian yang sukar ialah mendapatkan sijil SSM. Hakikatnya, bahagian yang lebih sukar ialah tahun-tahun selepas itu. Syarikat atau perniagaan berdaftar mempunyai tanggungjawab berterusan kepada Suruhanjaya Syarikat Malaysia (SSM), dan terlepas daripadanya jarang menyebabkan masalah besar pada hari pertama. Ia terkumpul perlahan-lahan menjadi kompaun, rekod yang bersepah, kesukaran mendapat pinjaman bank atau tender, dan dalam kes terburuk, dikeluarkan daripada daftar.
+
+Ini ialah maklumat am, bukan nasihat guaman. Tarikh akhir, yuran, jumlah kompaun dan borang dikemas kini dari semasa ke semasa, dan SSM pernah menjalankan kempen kelonggaran bagi pemfail lewat, jadi sahkan kedudukan semasa di laman web rasmi SSM atau dengan setiausaha syarikat berlesen sebelum anda bertindak.
+
+## 1. Ketahui peraturan yang terpakai kepada anda
+
+Tanggungjawab bergantung pada apa yang anda daftarkan.
+
+### Syarikat (Sdn Bhd)
+Syarikat sendirian berhad ditadbir oleh Akta Syarikat 2016. Ia mempunyai tanggungjawab paling banyak: penyata tahunan, penyata kewangan, daftar berkanun, setiausaha syarikat, pejabat berdaftar, dan maklumat pemilik benefisial.
+
+### Pemilikan tunggal atau perkongsian
+Perniagaan yang didaftarkan di bawah Akta Pendaftaran Perniagaan 1956 mempunyai tanggungjawab yang lebih ringan, terutamanya mengekalkan pendaftaran sah dengan memperbaharuinya tepat pada masanya dan memaklumkan SSM apabila butirannya berubah.
+
+### Mengapa perbezaan ini penting
+Jika anda tidak pasti yang mana satu milik anda, semak sijil SSM anda atau cari diri anda dalam perkhidmatan carian SSM. Kesilapan lazim ialah menganggap syarikat seperti perniagaan biasa, maka pemilik tidak memfailkan apa-apa kerana "tiada apa yang berubah".
+
+## 2. Failkan penyata tahunan tepat pada masanya
+
+Penyata tahunan ialah kemas kini tahunan butiran asas syarikat, seperti pengarah, pemegang saham, modal saham dan pejabat berdaftar. Ia tanggungjawab yang berasingan daripada pemfailan cukai.
+
+### Tarikh akhir
+Syarikat amnya perlu memfailkan penyata tahunannya dalam tempoh 30 hari selepas ulang tahun pemerbadanannya. Perhatikan bahawa ini dikaitkan dengan tarikh syarikat diperbadankan, bukan penghujung tahun kewangannya, dan kedua-duanya sering berbeza. Semak peraturan tepat dan tarikh anda sendiri di laman web SSM.
+
+### Bagaimana ia difailkan
+Pemfailan dibuat secara elektronik melalui perkhidmatan dalam talian SSM, biasanya oleh setiausaha syarikat berlesen bagi pihak syarikat. Pastikan butiran yang anda laporkan sepadan dengan rekod anda sendiri bagi pengarah dan pemegang saham.
+
+### Penalti jika lewat
+Pemfailan lewat ialah satu kesalahan di bawah Akta Syarikat, dan SSM boleh menawarkan kompaun dan bukannya mendakwa. Jumlah dan sebarang kempen kelonggaran berubah, jadi semak notis semasa SSM dan bukannya bergantung pada angka daripada blog.
+
+## 3. Sediakan dan failkan penyata kewangan
+
+Syarikat mesti menyimpan rekod perakaunan yang betul dan menyediakan penyata kewangan setiap tahun, berasingan daripada penyata tahunan.
+
+### Sediakan setiap tahun
+Pengarah bertanggungjawab ke atas penyata kewangan yang memberikan gambaran benar dan saksama. Bagi syarikat swasta, ia amnya perlu disediakan dan dihantar kepada ahli dalam tempoh tertentu selepas akhir tahun kewangan, yang lazim disebut enam bulan. Sahkan tempoh semasa dengan SSM atau setiausaha syarikat anda.
+
+### Audit dan pengecualian
+Banyak syarikat mesti mengaudit penyata kewangan mereka, manakala sesetengahnya, seperti syarikat tidak aktif atau syarikat di bawah ambang tertentu, mungkin layak mendapat pengecualian audit. Jangan anggap anda dikecualikan. Semak kriteria dengan akauntan atau juruaudit anda.
+
+### Failkan dengan SSM
+Penyata kewangan juga difailkan dengan SSM, biasanya dalam format elektronik yang ditetapkan, dalam tempoh yang ditetapkan oleh Akta Syarikat. Pemfailan lewat ialah kesalahan yang berasingan daripada penyata tahunan lewat, jadi jejaki kedua-dua tarikh akhir.
+
+### Pastikan akaun anda teratur
+Simpan kira-kira yang baik sepanjang tahun memudahkan semua ini. Panduan kami tentang kalendar cukai perniagaan kecil dan tentang membuka akaun bank perniagaan menerangkan cara memastikan angka dan wang tunai anda berasingan dan sedia.
+
+## 4. Simpan rekod dan daftar syarikat
+
+Selain pemfailan, syarikat perlu menyimpan rekod di pejabat berdaftarnya atau tempat lain yang telah dimaklumkan.
+
+### Daftar berkanun
+Ini lazimnya termasuk daftar ahli, pengarah dan setiausaha, serta daftar cagaran. Ia perlu sentiasa dikemas kini, bukan sekadar dibuat semasa pemerbadanan.
+
+### Resolusi dan minit
+Keputusan pengarah dan ahli harus direkodkan. Syarikat swasta di bawah Akta Syarikat 2016 amnya tidak diwajibkan mengadakan mesyuarat agung tahunan, dan boleh meluluskan banyak resolusi secara bertulis, tetapi anda tetap memerlukan jejak dokumen bagi keputusan penting.
+
+### Setiausaha syarikat
+Syarikat mesti mempunyai setiausaha syarikat yang bertauliah, dilantik dalam tempoh yang ditetapkan undang-undang selepas pemerbadanan. Setiausaha yang baik ialah cara paling mudah untuk mengelakkan tarikh akhir terlepas, jadi pilih seorang yang benar-benar mengingatkan anda.
+
+### Pejabat berdaftar
+Syarikat memerlukan alamat pejabat berdaftar di Malaysia di mana surat rasmi boleh diterima dan rekod boleh diperiksa. Pastikan seseorang benar-benar mengutip surat, kerana notis yang terlepas ialah punca masalah yang lazim.
+
+## 5. Maklumkan SSM tentang perubahan
+
+Apabila sesuatu tentang syarikat berubah, SSM amnya perlu dimaklumkan dalam masa yang singkat. Tempoh yang lazim disebut bagi banyak perubahan ialah 14 hari, tetapi ia berbeza mengikut jenis perubahan, jadi semak borang dan tarikh akhir yang khusus.
+
+### Perubahan lazim
+Ini termasuk pengarah baharu atau yang meletak jawatan, pertukaran setiausaha syarikat, perubahan pejabat berdaftar atau alamat perniagaan, perubahan modal saham, dan pindahan saham.
+
+### Pastikan butiran peribadi terkini
+Alamat dan butiran pengarah juga harus sentiasa terkini. Surat yang dihantar ke alamat lama boleh bermakna syarikat tidak pernah melihat sesuatu notis.
+
+> Pemfailan lewat jarang hanya menelan kos kompaun. Rekod SSM ialah apa yang disemak oleh bank, tuan tanah dan pelanggan besar semasa memutuskan sama ada hendak mempercayai anda, jadi rekod yang bersih dan terkini ialah sebahagian daripada kredibiliti anda.
+
+## 6. Laporkan pemilikan benefisial
+
+Syarikat mesti mengenal pasti individu sebenar yang akhirnya memiliki atau mengawal mereka, yang mungkin berbeza daripada nama dalam daftar pemegang saham.
+
+### Apa yang diperlukan
+Syarikat mesti menyimpan daftar pemilik benefisialnya dan memfailkan maklumat itu, serta sebarang perubahan, dengan SSM dalam tempoh singkat, yang lazim disebut 14 hari dari tarikh rekod. SSM telah mengeluarkan garis panduan tentang siapa yang dikira pemilik benefisial, termasuk orang yang mempunyai kawalan ketara walaupun pegangan saham mereka di bawah ambang biasa.
+
+### Mengapa ia penting
+Kegagalan mematuhi boleh membawa penalti, dan maklumat itu digunakan untuk memerangi pengubahan wang haram. Jika pemilikan anda berlapis-lapis, seperti satu syarikat memiliki syarikat lain, dapatkan bantuan profesional untuk menjejakinya hingga ke individu di hujungnya.
+
+## 7. Perbaharui pendaftaran perniagaan
+
+Pemilik tunggal dan perkongsian mendaftarkan perniagaan mereka untuk tempoh tetap dan mesti memperbaharuinya sebelum tamat.
+
+### Semak tarikh tamat
+Sijil atau rekod dalam talian SSM menunjukkan tarikh tamat. Pembaharuan agak murah, tetapi pembaharuan lewat boleh dikenakan penalti, dan pendaftaran yang tamat boleh menyusahkan anda apabila memohon lesen, pinjaman atau kontrak kerajaan.
+
+### Kemas kini perubahan juga
+Jika alamat perniagaan, jenis perniagaan atau butiran pemilik anda berubah, anda amnya perlu memaklumkan SSM, jadi jangan tunggu sehingga pembaharuan untuk membetulkannya.
+
+### Jika anda berhenti berniaga
+Jangan biarkan perniagaan luput begitu sahaja. Apabila perniagaan tamat atau syarikat telah berhenti beroperasi, tanya tentang proses yang betul untuk menamatkan atau menggulungkannya, supaya anda tidak dibebani tanggungjawab berterusan ke atas entiti yang tidak aktif.
+
+## 8. Apa yang perlu dilakukan jika anda ketinggalan
+
+Jangan bersembunyi. Tidak berbuat apa-apa ialah pilihan paling mahal.
+
+### Buat inventori
+Senaraikan apa yang tertunggak: penyata tahunan, penyata kewangan, pemakluman perubahan dan pembaharuan. Semak rekod SSM untuk apa yang sebenarnya telah difailkan.
+
+### Tanya tentang kelonggaran
+SSM pernah menjalankan kempen yang menawarkan kompaun dikurangkan bagi pemfailan lewat, dan mungkin berbuat demikian lagi. Semak pengumuman SSM, dan tanya setiausaha syarikat anda apa yang tersedia sekarang.
+
+### Dapatkan bantuan
+Setiausaha syarikat berlesen atau akauntan boleh mengejar pemfailan mengikut urutan yang betul. Ia biasanya lebih murah daripada menunggu notis, dan jauh lebih murah daripada digugurkan dan dipulihkan semula.
+
+Jika anda mencari setiausaha syarikat, akauntan atau juruaudit yang bekerja dengan perniagaan kecil, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) memudahkan pelanggan dan pembekal menemui serta mengesahkan perniagaan berdaftar anda.
+
+## Kesilapan lazim PKS Malaysia dalam pematuhan SSM
+
+- **Mengelirukan penyata tahunan dengan pemfailan cukai.** Ia dua tanggungjawab berasingan dengan tarikh akhir berasingan, jadi memfailkan satu tidak meliputi yang lain.
+- **Menunggu notis sebelum bertindak.** Tarikh akhir ditetapkan dalam undang-undang dan SSM mungkin tidak mengingatkan anda, jadi bina kalendar anda sendiri.
+- **Membiarkan rekod menjadi lapuk.** Pengarah lama, alamat usang dan pindahan saham yang tidak difailkan menyukarkan setiap pemfailan kemudian dan melambatkan setiap semakan bank.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Cari tarikh pemerbadanan atau tarikh tamat pendaftaran anda, dan senaraikan setiap pemfailan SSM yang telah anda buat setakat ini.
+- **Seterusnya:** Semak pemfailan mana yang tertunggak, termasuk penyata tahunan, penyata kewangan dan sebarang pemakluman perubahan.
+- **Kemudian:** Letakkan setiap tarikh akhir berulang dalam kalendar kongsi dengan peringatan sekurang-kurangnya sebulan lebih awal, dan sahkan siapa yang bertanggungjawab bagi setiap satu.
+- **Setiap tahun:** Tetapkan tarikh tetap setiap tahun untuk menyemak rekod syarikat anda sebelum sebarang tarikh akhir tiba. Pastikan pejabat berdaftar, pengarah dan pemilik benefisial anda terkini.
+
+Pematuhan SSM kebanyakannya rutin, dan pemilik yang mengendalikannya dengan terbaik menganggapnya sebagai tabiat tahunan dan bukannya satu siri kecemasan.`,
+        faqs: [
+          {
+            question: "Bilakah syarikat Malaysia mesti memfailkan penyata tahunannya?",
+            answer:
+              "Amnya dalam tempoh 30 hari selepas ulang tahun pemerbadanan syarikat, bukan selepas akhir tahun kewangannya. Semak peraturan tepat dan tarikh anda sendiri di laman web SSM atau dengan setiausaha syarikat anda.",
+          },
+          {
+            question: "Adakah penyata tahunan SSM sama dengan pemfailan cukai?",
+            answer:
+              "Tidak. Penyata tahunan ialah pemfailan undang-undang syarikat dengan SSM, manakala pemfailan cukai dibuat dengan Lembaga Hasil Dalam Negeri (LHDN). Ia mempunyai tarikh akhir berasingan, jadi memfailkan satu tidak memenuhi yang lain.",
+          },
+          {
+            question: "Adakah semua syarikat memerlukan penyata kewangan beraudit?",
+            answer:
+              "Tidak selalu. Banyak yang mesti diaudit, tetapi sesetengah syarikat, seperti yang tidak aktif atau di bawah ambang tertentu, mungkin layak mendapat pengecualian. Sahkan kelayakan dengan akauntan atau juruaudit sebelum menganggap anda dikecualikan.",
+          },
+          {
+            question: "Adakah Sdn Bhd mesti mengadakan mesyuarat agung tahunan?",
+            answer:
+              "Di bawah Akta Syarikat 2016, syarikat swasta amnya tidak diwajibkan mengadakan AGM dan boleh meluluskan banyak resolusi secara bertulis. Anda tetap patut menyimpan rekod keputusan penting.",
+          },
+          {
+            question: "Berapa cepat saya mesti memberitahu SSM tentang pertukaran pengarah atau alamat?",
+            answer:
+              "Bagi banyak perubahan, tempoh yang lazim disebut ialah 14 hari, tetapi ia berbeza mengikut jenis perubahan. Semak borang dan tarikh akhir yang khusus di laman web SSM atau tanya setiausaha syarikat anda.",
+          },
+          {
+            question: "Apakah pelaporan pemilikan benefisial?",
+            answer:
+              "Syarikat mesti mengenal pasti individu yang akhirnya memiliki atau mengawalnya, menyimpan daftar pemilik benefisial ini, dan memfailkan maklumat serta sebarang perubahan dengan SSM dalam tempoh yang ditetapkan SSM, yang lazim disebut 14 hari. Semak garis panduan semasa SSM tentang siapa yang dikira.",
+          },
+          {
+            question: "Adakah pemilik tunggal dan perkongsian perlu memperbaharui dengan SSM?",
+            answer:
+              "Ya. Perniagaan yang didaftarkan di bawah Akta Pendaftaran Perniagaan 1956 mesti memperbaharui sebelum pendaftarannya tamat, dan patut memaklumkan SSM tentang perubahan butirannya. Pembaharuan lewat boleh dikenakan penalti.",
+          },
+          {
+            question: "Apa yang patut saya lakukan jika saya terlepas beberapa pemfailan SSM?",
+            answer:
+              "Jangan abaikannya. Senaraikan apa yang tertunggak, semak rekod dan pengumuman SSM untuk sebarang kelonggaran kompaun, dan minta setiausaha syarikat berlesen atau akauntan mengejar pemfailan mengikut urutan yang betul.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "halal-certification-in-malaysia-for-smes",
+    title: "Halal Certification in Malaysia: What Food and Product SMEs Need to Know",
+    seoTitle: "Halal Certification in Malaysia: A Guide for SMEs",
+    seoDescription:
+      "When Malaysian food and product SMEs need halal certification, how the JAKIM application and audit work, renewal, logo rules, and common reasons for delay.",
+    coverImage: {
+      file: "halal-certification-in-malaysia-for-smes-cover.webp",
+      mimeType: "image/webp",
+      alt: "A chef in uniform and gloves preparing food with a bamboo steamer and a bowl of flour",
+      altTranslations: {
+        zh: "一位身穿制服、戴着手套的厨师，用竹蒸笼和一碗面粉准备食物",
+        ms: "Seorang tukang masak berpakaian seragam dan bersarung tangan menyediakan makanan dengan pengukus buluh dan semangkuk tepung",
+      },
+    },
+    contentImages: {
+      "document-review": {
+        file: "halal-certification-in-malaysia-for-smes-review.webp",
+        mimeType: "image/webp",
+        alt: "Colleagues standing at a desk reviewing a thick folder of documents together",
+        altTranslations: {
+          zh: "同事们站在办公桌旁一起审阅一厚叠文件",
+          ms: "Rakan sekerja berdiri di meja menyemak sebuah fail dokumen yang tebal bersama-sama",
+        },
+        after: "Gather your documents before you open the application, because incomplete files are the most common reason for delay.",
+        afterTranslations: {
+          zh: "在开始申请之前先备齐文件，因为文件不齐全是最常见的延误原因。",
+          ms: "Kumpulkan dokumen anda sebelum membuka permohonan, kerana fail yang tidak lengkap ialah punca kelewatan yang paling lazim.",
+        },
+      },
+    },
+    excerpt:
+      "For a food, beverage, or consumer-product business in Malaysia, halal certification can decide whether supermarkets, caterers, and many customers will buy from you. This guide explains when you need it, how the JAKIM and state religious department process works, what the audit looks at, how validity and renewal work, and how to avoid the common reasons applications are delayed.",
+    body: `In Malaysia, halal is both a religious requirement for many customers and a commercial one. Supermarkets, hotels, caterers, exporters, and government buyers often ask for a halal certificate before they will stock or buy a product. For a small food business, getting certified can open doors, but the process has its own paperwork, inspections, and rules, and mistakes can delay you for months.
+
+This is general information, not religious or legal advice. Fees, forms, requirements, and which agency handles your application change from time to time, so confirm the current position on the official Halal Malaysia portal or with your state Islamic religious department before you apply.
+
+## 1. Understand what halal certification covers
+
+### The certificate is for specific products and premises
+A halal certificate is issued for specific products, a specific premises, or a specific scope of activity, not for a business in general. If you add a new product or move your kitchen, you may need to update or reapply.
+
+### It is more than the ingredients
+Certification looks at the whole chain: ingredients and their sources, how the food is prepared, the equipment, storage, cleaning materials, and how the premises are managed, so that halal items are not mixed with non-halal ones.
+
+### Who can apply
+Businesses of any ownership can apply, including non-Muslim-owned ones, as long as they meet the requirements. Your product or premises has to comply, whoever owns the business.
+
+## 2. Decide whether you need it
+
+### Where it is effectively required
+If you claim a product is halal, or use a halal logo, you need the certification. Many buyers, including large retailers and many export markets, will insist on it. Some categories, such as food premises that want to display the halal logo, are expected to comply.
+
+### Where it may be optional
+A shop selling unrelated goods may not need it, but any claim that something is halal should be backed by a valid certificate. Describing a product as "Muslim-owned" or "halal-friendly" is not the same as being certified.
+
+### Think about your customers
+Ask who your customers are. If your main buyers are halal-conscious customers, caterers, or exporters, certification is usually worth it. If they are not, you may not need it yet, but check what each channel requires before you commit.
+
+## 3. Know who handles the application
+
+In Malaysia, halal certification is handled by the Department of Islamic Development Malaysia (JAKIM) and the state Islamic religious departments. Which one handles your application depends on the type of business and where it operates, and the details have been updated over time.
+
+### Use the official online system
+Applications are made through JAKIM's online system, MYeHALAL, and you apply through the correct agency for your case. If you are unsure, ask the Halal Malaysia helpdesk or your state religious department before you submit.
+
+### Be careful with agents
+Some consultants help with applications, which can be useful, but remember that certification is granted by the authority, and nobody else can guarantee approval. Be cautious of anyone who promises a certificate without an audit.
+
+## 4. Prepare before you apply
+
+Gather your documents before you open the application, because incomplete files are the most common reason for delay.
+
+### Documents you will typically need
+These commonly include your business registration with SSM, a list of products and ingredients, the source and halal status of each ingredient, supplier details, a layout of the premises, and details of your processes. The exact list is published on the portal, so check it for your category.
+
+### Check your ingredients and suppliers
+Every ingredient and raw material needs a known source. Where possible, buy from suppliers who hold valid halal certificates and keep copies of them. Pay special attention to items such as flavourings, additives, gelatine, enzymes, alcohol-based ingredients, and cleaning chemicals.
+
+### Set up an internal halal system
+You will generally need to appoint someone responsible for halal compliance, often a halal supervisor or a small internal committee, and to put in place procedures for receiving, storing, preparing, and cleaning. Keep records, because the auditors will ask for them.
+
+### Sort out the premises
+Separate halal and non-halal items completely if both are handled, avoid prohibited materials in the production area, and keep the premises clean and well maintained. Make sure the business details on your documents match what is registered with SSM.
+
+## 5. Go through the application and audit
+
+### Submit and pay
+You create an account, submit the application, upload your documents, and pay the fees. Fees depend on the category and the size of the business, and the figures reported across sources differ, so check the official fee schedule before budgeting. Payment deadlines apply, and missing one can mean starting again.
+
+### The on-site audit
+Officers will inspect your premises and check your process against your application: ingredients on hand, supplier records, storage, equipment, cleanliness, and how staff understand the halal procedures. Treat it like an exam, and make sure your team knows what to expect.
+
+### Fix any findings
+If the audit finds issues, you will usually be asked to correct them within a set period. Respond promptly and keep evidence of what you changed.
+
+### The decision
+After the audit, the application is considered by the authority, and, if approved, the certificate is issued. The timeline varies with the category, workload, and how complete your file is, so allow enough time before you need the certificate for a launch or a contract.
+
+> Do not print the halal logo on your packaging, menu, or signage until the certificate is actually issued, and only for the products and premises it covers. Using the logo or the word "halal" without valid certification is an offence under Malaysian law, and it can cost you far more than the delay of waiting.
+
+## 6. Keep the certificate valid
+
+### Validity
+A halal certificate is valid for a fixed period, commonly cited as two years, though it can differ by category. Check the date printed on your certificate.
+
+### Renewal
+Renewal needs to be applied for in advance, commonly cited as at least three months before expiry. Put the date in your calendar well ahead, and do not assume a reminder will arrive.
+
+### Changes during the validity period
+If you change an ingredient, a supplier, a recipe, a production site, or the layout, you may need to notify the authority or get approval first. Do not change a certified product quietly, because a later inspection can find it.
+
+### Surveillance
+Authorities can carry out checks after certification, including unannounced ones. Keep your halal system running as if an inspection could arrive tomorrow.
+
+## 7. Use the halal logo and claims correctly
+
+### Only after certification
+The halal logo and the word "halal" in a certification sense should be used only once certified, and only as the rules allow, in terms of the logo's form and where it appears. Follow the current guidelines on the portal.
+
+### Do not stretch the claim
+If only one product is certified, do not suggest your whole range is. If only one outlet is certified, do not use the logo for the others.
+
+### Online and marketing
+The same rules apply to your website, social media, and marketplace listings. If you sell online, our guide on selling online in Malaysia explains the other rules that apply to online listings.
+
+## 8. Avoid the common reasons for delay or rejection
+
+- **Unclear ingredient sources.** If you cannot show where an ingredient comes from and that it is halal, the application will stall.
+- **Suppliers without proof.** Buy from suppliers who can show valid halal certification wherever possible.
+- **Mixing halal and non-halal.** Shared equipment, storage, or cleaning items can be a deal-breaker.
+- **Mismatched details.** Business names, addresses, or product lists that differ across documents cause queries.
+- **Missing a payment or response deadline.** Late fees or unanswered queries can mean starting over.
+- **Untrained staff.** If your team cannot explain the halal procedures during the audit, the audit will reflect it.
+
+If you are looking for suppliers, packaging, consultants, or advisers for your halal journey, you can [browse the directory](/en) for local businesses, and [creating a free business listing](/en/signup) helps buyers find and verify your certified products once you have them.
+
+## Common mistakes Malaysian SMEs make with halal certification
+
+- **Using the halal logo too early.** Printing packaging with the logo before the certificate is issued risks an offence and a costly reprint.
+- **Starting without a supplier audit.** Discovering late that a key ingredient has no halal proof can force a change of recipe or supplier.
+- **Forgetting renewal.** A lapsed certificate means you must stop using the logo, which can break a supermarket or export contract.
+
+## Where to start
+
+- **This week:** List every product, its ingredients, and the supplier and halal status of each ingredient.
+- **Next:** Check the current requirements and the right agency for your category on the official portal, and confirm the fee schedule.
+- **Then:** Appoint your halal supervisor, write your basic procedures, train your team, and fix any gaps in the premises.
+- **After approval:** Diarise the renewal date, record any changes, and use the logo only as the rules allow.
+
+Halal certification is easiest when it is treated as a system you run every day rather than a certificate you collect once.`,
+    faqs: [
+      {
+        question: "Do I need halal certification to sell food in Malaysia?",
+        answer:
+          "Not for every food business, but if you claim a product is halal or use a halal logo, you need valid certification. Many buyers, such as supermarkets, caterers, and export customers, also ask for it. Check what each of your sales channels requires.",
+      },
+      {
+        question: "Who issues halal certificates in Malaysia?",
+        answer:
+          "The Department of Islamic Development Malaysia (JAKIM) and the state Islamic religious departments. Which one handles your application depends on your type of business and where it operates, so confirm on the official Halal Malaysia portal.",
+      },
+      {
+        question: "Can a non-Muslim-owned business apply for halal certification?",
+        answer:
+          "Yes. Businesses of any ownership can apply as long as their products and premises meet the requirements. What matters is compliance, not who owns the business.",
+      },
+      {
+        question: "How do I apply for halal certification?",
+        answer:
+          "Applications are made through JAKIM's online MYeHALAL system. You submit the application and documents, pay the fees, and your premises are audited on site before a decision is made. Check the portal for the current steps and forms.",
+      },
+      {
+        question: "How long is a halal certificate valid, and when should I renew?",
+        answer:
+          "Validity is commonly cited as two years, though it can differ by category, and renewal is commonly cited as needing to be applied for at least three months before expiry. Check the date on your certificate and the current rules on the portal.",
+      },
+      {
+        question: "Can I use the halal logo before my certificate is issued?",
+        answer:
+          "No. Using the halal logo or claiming a product is halal without valid certification is an offence under Malaysian law. Wait until the certificate is issued, and use the logo only for the products and premises it covers.",
+      },
+      {
+        question: "What are the common reasons halal applications are delayed?",
+        answer:
+          "Incomplete documents, unclear ingredient sources, suppliers without halal proof, mixing halal and non-halal items, mismatched business details, missed payment or response deadlines, and staff who cannot explain the procedures during the audit.",
+      },
+      {
+        question: "Do I need to tell the authority if I change a recipe or supplier?",
+        answer:
+          "Often yes. A change to an ingredient, supplier, recipe, production site, or layout may need notification or approval, so check the rules before you change anything on a certified product.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "马来西亚清真认证：食品与产品中小企业需要知道什么",
+        excerpt:
+          "对马来西亚的食品、饮料或消费品企业来说，清真认证可能决定超市、餐饮承办商和许多顾客是否会向您购买。本指南说明何时需要认证、JAKIM 与州宗教局的流程如何运作、审核看什么、有效期与续期如何运作，以及如何避免申请延误的常见原因。",
+        body: `在马来西亚，清真既是许多顾客的宗教要求，也是商业要求。超市、酒店、餐饮承办商、出口商和政府采购方，往往要求有清真证书才会进货或购买产品。对小型食品企业来说，取得认证可以打开大门，但整个过程有其文件、检查和规则，出错可能让您耽误数月。
+
+以下仅为一般资讯，并非宗教或法律意见。费用、表格、要求，以及由哪个机构处理您的申请，会不时变动，所以在申请之前，请在官方的 Halal Malaysia 门户或向您所在州的伊斯兰宗教局确认最新情况。
+
+## 1. 了解清真认证涵盖什么
+
+### 证书针对特定产品和场所
+清真证书是针对特定产品、特定场所或特定活动范围而发出的，而不是针对整家企业。如果您新增产品或搬迁厨房，可能需要更新或重新申请。
+
+### 不只是成分
+认证审视的是整条链：成分及其来源、食物的制备方式、设备、储存、清洁用品，以及场所的管理方式，确保清真与非清真的物品不会混在一起。
+
+### 谁可以申请
+任何所有权的企业都可以申请，包括非穆斯林拥有的企业，只要符合要求即可。无论业主是谁，您的产品或场所必须符合规定。
+
+## 2. 判断您是否需要
+
+### 实际上必须有的情况
+如果您声称某产品是清真的，或使用清真标志，您就需要认证。许多买家，包括大型零售商和许多出口市场，都会坚持要求。有些类别，例如想要展示清真标志的食品场所，也被期望符合规定。
+
+### 可能不必要的情况
+销售无关商品的商店可能不需要，但任何声称某物是清真的说法，都应有有效证书作为后盾。把产品形容为“穆斯林拥有”或“清真友好”，与获得认证并不相同。
+
+### 想想您的顾客
+问问谁是您的顾客。如果您的主要买家是注重清真的顾客、餐饮承办商或出口商，认证通常值得。如果不是，您可能暂时不需要，但在承诺之前，请先查清每个渠道的要求。
+
+## 3. 了解由谁处理申请
+
+在马来西亚，清真认证由马来西亚伊斯兰发展局（JAKIM）和各州伊斯兰宗教局处理。由哪一个处理您的申请，取决于企业类型和经营地点，其细节也历年有所更新。
+
+### 使用官方在线系统
+申请通过 JAKIM 的在线系统 MYeHALAL 办理，并通过适合您情况的机构申请。如果不确定，请在提交前询问 Halal Malaysia 服务台或您所在州的宗教局。
+
+### 对代理人要谨慎
+有些顾问协助申请，这可能有用，但请记住，认证由主管机构授予，没有任何人可以保证获批。对任何承诺不经审核就能拿到证书的人，要提高警惕。
+
+## 4. 申请前先做好准备
+
+在开始申请之前先备齐文件，因为文件不齐全是最常见的延误原因。
+
+### 通常需要的文件
+通常包括您的 SSM 企业注册资料、产品和成分清单、每种成分的来源和清真状态、供应商资料、场所平面图，以及您的流程详情。确切的清单刊登在门户上，请按您的类别核对。
+
+### 检查您的成分与供应商
+每一种成分和原料都需要有明确的来源。可能的话，向持有有效清真证书的供应商采购，并保存证书副本。要特别留意调味料、添加剂、明胶、酶、含酒精成分和清洁化学品等项目。
+
+### 建立内部清真系统
+您通常需要委任一位负责清真合规的人，常见为清真监督员或一个小型内部委员会，并为收货、储存、制备和清洁建立程序。请保存记录，因为审核员会要求查看。
+
+### 理顺场所
+如果同时处理清真与非清真物品，须完全分开，避免在生产区使用禁用物料，并保持场所清洁和维护良好。确保文件上的企业资料与 SSM 的注册资料一致。
+
+## 5. 完成申请与审核
+
+### 提交与付款
+您创建账户、提交申请、上传文件并缴付费用。费用取决于类别和企业规模，各来源所报的数字不一，所以在编制预算前请查看官方费用表。付款有期限，错过可能意味着要重新开始。
+
+### 现场审核
+官员会检查您的场所，并对照您的申请检视流程：现有的成分、供应商记录、储存、设备、清洁程度，以及员工对清真程序的了解。请把它当作一场考试，并确保您的团队知道会发生什么。
+
+### 改正发现的问题
+如果审核发现问题，通常会被要求在限期内改正。请迅速回应，并保存您所作更改的证据。
+
+### 决定
+审核之后，主管机构会审议申请，获批后发出证书。时间表因类别、工作量以及您的文件完整程度而异，所以在为了产品上市或合约需要证书之前，请预留足够的时间。
+
+> 在证书正式发出之前，请不要把清真标志印在包装、菜单或招牌上，并且只用于证书涵盖的产品和场所。在没有有效认证的情况下使用该标志或“清真”一词，是马来西亚法律下的罪行，可能让您付出远比等待更高的代价。
+
+## 6. 保持证书有效
+
+### 有效期
+清真证书在固定期间内有效，常见的说法是两年，但因类别而异。请查看证书上印的日期。
+
+### 续期
+续期需要提前申请，常见的说法是至少在到期前三个月。请提前把日期记入日历，不要假设会有提醒寄来。
+
+### 有效期内的变更
+如果您更换成分、供应商、配方、生产场地或布局，可能需要通知主管机构或先获批准。不要悄悄更改已认证的产品，因为日后的检查可能会发现。
+
+### 监督
+主管机构在认证之后可以进行检查，包括突击检查。请让您的清真系统保持运作，就像明天就会有检查一样。
+
+## 7. 正确使用清真标志与声明
+
+### 仅在认证之后
+清真标志以及认证意义上的“清真”一词，只应在获得认证后使用，并且只按规则允许的方式，包括标志的形式及出现的位置。请遵循门户上的现行指南。
+
+### 不要夸大声明
+如果只有一项产品获得认证，不要暗示您的整个系列都是。如果只有一间分店获得认证，不要把标志用于其他分店。
+
+### 网上与营销
+同样的规则适用于您的网站、社交媒体和电商平台的产品列表。如果您在网上销售，我们关于在马来西亚网上销售的指南说明了适用于网上列表的其他规则。
+
+## 8. 避免延误或被拒的常见原因
+
+- **成分来源不清。** 如果您无法证明某成分来自何处且是清真的，申请就会停滞。
+- **供应商没有证明。** 尽可能向能出示有效清真认证的供应商采购。
+- **清真与非清真混在一起。** 共用的设备、储存或清洁用品可能成为致命伤。
+- **资料不一致。** 各文件上的企业名称、地址或产品清单不同，会引来查询。
+- **错过付款或回复的期限。** 逾期费用或未回复的查询，可能意味着要从头开始。
+- **员工未受训。** 如果您的团队在审核时无法说明清真程序，审核结果就会反映出来。
+
+如果您在寻找清真之路上所需的供应商、包装、顾问或咨询人员，可以[浏览名录](/zh)寻找本地企业，而[创建免费的企业列表](/zh/signup)可以在您取得认证之后，帮助买家找到并核实您的认证产品。
+
+## 马来西亚中小企业在清真认证上常犯的错误
+
+- **过早使用清真标志。** 在证书发出之前就印好带标志的包装，有触犯法律和昂贵重印的风险。
+- **没有先审查供应商就开始。** 太晚才发现关键成分没有清真证明，可能迫使您更换配方或供应商。
+- **忘记续期。** 证书失效意味着您必须停止使用标志，这可能破坏与超市或出口的合约。
+
+## 从哪里开始
+
+- **本周：**列出每一项产品、其成分，以及每种成分的供应商和清真状态。
+- **接着：**在官方门户查核您类别的现行要求和正确的机构，并确认费用表。
+- **然后：**委任您的清真监督员，写好基本程序，培训团队，并补上场所的不足。
+- **获批后：**把续期日期记入日程，记录任何变更，并只按规则允许的方式使用标志。
+
+当清真认证被视为每天运作的一套系统，而不是一次性领取的证书时，是最容易做到的。`,
+        faqs: [
+          {
+            question: "在马来西亚销售食品需要清真认证吗？",
+            answer:
+              "并非每家食品企业都需要，但如果您声称产品是清真的或使用清真标志，就需要有效认证。许多买家，例如超市、餐饮承办商和出口客户，也会要求。请查清您每个销售渠道的要求。",
+          },
+          {
+            question: "马来西亚的清真证书由谁发出？",
+            answer:
+              "由马来西亚伊斯兰发展局（JAKIM）和各州伊斯兰宗教局发出。由哪一个处理您的申请，取决于您的企业类型和经营地点，请在官方 Halal Malaysia 门户确认。",
+          },
+          {
+            question: "非穆斯林拥有的企业可以申请清真认证吗？",
+            answer:
+              "可以。任何所有权的企业都可以申请，只要其产品和场所符合要求。重要的是合规，而不是谁拥有该企业。",
+          },
+          {
+            question: "如何申请清真认证？",
+            answer:
+              "申请通过 JAKIM 的在线 MYeHALAL 系统办理。您提交申请和文件、缴付费用，并在作出决定之前接受场所的现场审核。请在门户查看现行的步骤和表格。",
+          },
+          {
+            question: "清真证书有效多久？何时应该续期？",
+            answer:
+              "有效期常见的说法是两年，但因类别而异，续期常见的说法是须在到期前至少三个月申请。请查看证书上的日期和门户上的现行规则。",
+          },
+          {
+            question: "在证书发出之前可以使用清真标志吗？",
+            answer:
+              "不可以。在没有有效认证的情况下使用清真标志或声称产品是清真的，是马来西亚法律下的罪行。请等到证书发出，并只把标志用于其涵盖的产品和场所。",
+          },
+          {
+            question: "清真申请延误的常见原因有哪些？",
+            answer:
+              "文件不齐全、成分来源不清、供应商没有清真证明、清真与非清真物品混在一起、企业资料不一致、错过付款或回复的期限，以及员工在审核时无法说明程序。",
+          },
+          {
+            question: "更换配方或供应商时需要通知主管机构吗？",
+            answer:
+              "通常需要。成分、供应商、配方、生产场地或布局的变更，可能需要通知或获批，所以在更改任何已认证产品之前，请先查核规则。",
+          },
+        ],
+      },
+      ms: {
+        title: "Pensijilan Halal di Malaysia: Apa yang Perlu Diketahui oleh PKS Makanan dan Produk",
+        excerpt:
+          "Bagi perniagaan makanan, minuman atau produk pengguna di Malaysia, pensijilan halal boleh menentukan sama ada pasar raya, katering dan ramai pelanggan akan membeli daripada anda. Panduan ini menerangkan bila anda memerlukannya, bagaimana proses JAKIM dan jabatan agama negeri berfungsi, apa yang diperiksa semasa audit, bagaimana kesahan dan pembaharuan berfungsi, dan cara mengelakkan punca kelewatan permohonan yang lazim.",
+        body: `Di Malaysia, halal ialah keperluan agama bagi ramai pelanggan dan juga keperluan komersial. Pasar raya, hotel, katering, pengeksport dan pembeli kerajaan sering meminta sijil halal sebelum mereka menyetok atau membeli sesuatu produk. Bagi perniagaan makanan kecil, mendapat pensijilan boleh membuka pintu, tetapi prosesnya mempunyai kertas kerja, pemeriksaan dan peraturan tersendiri, dan kesilapan boleh melambatkan anda berbulan-bulan.
+
+Ini ialah maklumat am, bukan nasihat agama atau guaman. Yuran, borang, keperluan, dan agensi mana yang mengendalikan permohonan anda berubah dari semasa ke semasa, jadi sahkan kedudukan semasa di portal rasmi Halal Malaysia atau dengan jabatan agama Islam negeri anda sebelum memohon.
+
+## 1. Fahami apa yang diliputi pensijilan halal
+
+### Sijil adalah untuk produk dan premis tertentu
+Sijil halal dikeluarkan untuk produk tertentu, premis tertentu atau skop aktiviti tertentu, bukan untuk perniagaan secara umum. Jika anda menambah produk baharu atau memindahkan dapur anda, anda mungkin perlu mengemas kini atau memohon semula.
+
+### Ia lebih daripada sekadar bahan
+Pensijilan meneliti keseluruhan rantaian: bahan dan sumbernya, cara makanan disediakan, peralatan, penyimpanan, bahan pembersih, dan cara premis diurus, supaya barangan halal tidak bercampur dengan yang bukan halal.
+
+### Siapa yang boleh memohon
+Perniagaan dengan sebarang pemilikan boleh memohon, termasuk yang dimiliki bukan Islam, selagi memenuhi keperluan. Produk atau premis anda mesti mematuhi, siapa pun pemilik perniagaan itu.
+
+## 2. Tentukan sama ada anda memerlukannya
+
+### Di mana ia pada hakikatnya diperlukan
+Jika anda mendakwa sesuatu produk halal, atau menggunakan logo halal, anda memerlukan pensijilan. Ramai pembeli, termasuk peruncit besar dan banyak pasaran eksport, akan menegaskannya. Sesetengah kategori, seperti premis makanan yang mahu memaparkan logo halal, dijangka mematuhinya.
+
+### Di mana ia mungkin pilihan
+Kedai yang menjual barangan tidak berkaitan mungkin tidak memerlukannya, tetapi sebarang dakwaan bahawa sesuatu itu halal harus disokong oleh sijil yang sah. Menggambarkan produk sebagai "milik Muslim" atau "mesra halal" tidak sama dengan telah disijilkan.
+
+### Fikirkan tentang pelanggan anda
+Tanya siapa pelanggan anda. Jika pembeli utama anda ialah pelanggan yang mementingkan halal, katering atau pengeksport, pensijilan biasanya berbaloi. Jika tidak, anda mungkin belum memerlukannya, tetapi semak apa yang diperlukan setiap saluran sebelum anda membuat komitmen.
+
+## 3. Ketahui siapa yang mengendalikan permohonan
+
+Di Malaysia, pensijilan halal dikendalikan oleh Jabatan Kemajuan Islam Malaysia (JAKIM) dan jabatan agama Islam negeri. Yang mana satu mengendalikan permohonan anda bergantung pada jenis perniagaan dan tempat ia beroperasi, dan butirannya telah dikemas kini dari semasa ke semasa.
+
+### Gunakan sistem dalam talian rasmi
+Permohonan dibuat melalui sistem dalam talian JAKIM, MYeHALAL, dan anda memohon melalui agensi yang betul bagi kes anda. Jika tidak pasti, tanya meja bantuan Halal Malaysia atau jabatan agama negeri anda sebelum menghantar.
+
+### Berhati-hati dengan ejen
+Sesetengah perunding membantu permohonan, yang boleh berguna, tetapi ingat bahawa pensijilan diberikan oleh pihak berkuasa, dan tiada sesiapa lain boleh menjamin kelulusan. Berhati-hati dengan sesiapa yang menjanjikan sijil tanpa audit.
+
+## 4. Bersedia sebelum memohon
+
+Kumpulkan dokumen anda sebelum membuka permohonan, kerana fail yang tidak lengkap ialah punca kelewatan yang paling lazim.
+
+### Dokumen yang lazimnya diperlukan
+Ini lazimnya termasuk pendaftaran perniagaan anda dengan SSM, senarai produk dan bahan, sumber dan status halal setiap bahan, butiran pembekal, pelan susun atur premis, dan butiran proses anda. Senarai tepat disiarkan di portal, jadi semaknya bagi kategori anda.
+
+### Semak bahan dan pembekal anda
+Setiap bahan dan bahan mentah memerlukan sumber yang diketahui. Jika boleh, beli daripada pembekal yang mempunyai sijil halal yang sah dan simpan salinannya. Beri perhatian khusus kepada perkara seperti perisa, bahan tambah, gelatin, enzim, bahan berasaskan alkohol dan bahan kimia pembersih.
+
+### Wujudkan sistem halal dalaman
+Anda amnya perlu melantik seseorang yang bertanggungjawab ke atas pematuhan halal, selalunya penyelia halal atau jawatankuasa dalaman kecil, dan menyediakan prosedur untuk menerima, menyimpan, menyediakan dan membersihkan. Simpan rekod, kerana juruaudit akan memintanya.
+
+### Selesaikan premis
+Asingkan barangan halal dan bukan halal sepenuhnya jika kedua-duanya dikendalikan, elakkan bahan terlarang di kawasan pengeluaran, dan pastikan premis bersih dan diselenggara dengan baik. Pastikan butiran perniagaan pada dokumen anda sepadan dengan yang didaftarkan dengan SSM.
+
+## 5. Lalui permohonan dan audit
+
+### Hantar dan bayar
+Anda membuat akaun, menghantar permohonan, memuat naik dokumen dan membayar yuran. Yuran bergantung pada kategori dan saiz perniagaan, dan angka yang dilaporkan merentas sumber berbeza, jadi semak jadual yuran rasmi sebelum membuat bajet. Tarikh akhir bayaran terpakai, dan terlepas satu boleh bermakna bermula semula.
+
+### Audit di tapak
+Pegawai akan memeriksa premis anda dan menyemak proses anda berbanding permohonan: bahan yang ada, rekod pembekal, penyimpanan, peralatan, kebersihan, dan bagaimana kakitangan memahami prosedur halal. Anggaplah ia seperti peperiksaan, dan pastikan pasukan anda tahu apa yang dijangka.
+
+### Betulkan sebarang dapatan
+Jika audit menemui isu, anda lazimnya akan diminta membetulkannya dalam tempoh tertentu. Balas dengan segera dan simpan bukti apa yang anda ubah.
+
+### Keputusan
+Selepas audit, permohonan dipertimbangkan oleh pihak berkuasa, dan jika diluluskan, sijil dikeluarkan. Garis masa berbeza mengikut kategori, beban kerja dan sejauh mana lengkap fail anda, jadi beri masa yang cukup sebelum anda memerlukan sijil untuk pelancaran atau kontrak.
+
+> Jangan cetak logo halal pada bungkusan, menu atau papan tanda anda sehingga sijil benar-benar dikeluarkan, dan hanya untuk produk dan premis yang diliputinya. Menggunakan logo atau perkataan "halal" tanpa pensijilan yang sah ialah kesalahan di bawah undang-undang Malaysia, dan ia boleh menelan kos jauh lebih tinggi daripada menunggu.
+
+## 6. Pastikan sijil kekal sah
+
+### Kesahan
+Sijil halal sah untuk tempoh tetap, yang lazim disebut dua tahun, walaupun ia boleh berbeza mengikut kategori. Semak tarikh yang tercetak pada sijil anda.
+
+### Pembaharuan
+Pembaharuan perlu dipohon lebih awal, yang lazim disebut sekurang-kurangnya tiga bulan sebelum tamat. Letakkan tarikh dalam kalendar jauh lebih awal, dan jangan anggap peringatan akan tiba.
+
+### Perubahan semasa tempoh kesahan
+Jika anda menukar bahan, pembekal, resipi, tapak pengeluaran atau susun atur, anda mungkin perlu memaklumkan pihak berkuasa atau mendapatkan kelulusan dahulu. Jangan ubah produk yang bersijil secara senyap, kerana pemeriksaan kemudian boleh menemuinya.
+
+### Pemantauan
+Pihak berkuasa boleh menjalankan pemeriksaan selepas pensijilan, termasuk yang tanpa notis. Pastikan sistem halal anda berjalan seolah-olah pemeriksaan boleh tiba esok.
+
+## 7. Gunakan logo dan dakwaan halal dengan betul
+
+### Hanya selepas pensijilan
+Logo halal dan perkataan "halal" dalam maksud pensijilan hanya harus digunakan setelah disijilkan, dan hanya mengikut yang dibenarkan peraturan, dari segi bentuk logo dan di mana ia dipaparkan. Ikut garis panduan semasa di portal.
+
+### Jangan meluaskan dakwaan
+Jika hanya satu produk yang disijilkan, jangan membayangkan seluruh rangkaian anda begitu. Jika hanya satu cawangan yang disijilkan, jangan gunakan logo untuk cawangan lain.
+
+### Dalam talian dan pemasaran
+Peraturan yang sama terpakai kepada laman web, media sosial dan penyenaraian pasaran dalam talian anda. Jika anda berjual dalam talian, panduan kami tentang berjual dalam talian di Malaysia menerangkan peraturan lain yang terpakai kepada penyenaraian dalam talian.
+
+## 8. Elakkan punca kelewatan atau penolakan yang lazim
+
+- **Sumber bahan tidak jelas.** Jika anda tidak dapat menunjukkan dari mana sesuatu bahan datang dan bahawa ia halal, permohonan akan tergendala.
+- **Pembekal tanpa bukti.** Beli daripada pembekal yang boleh menunjukkan pensijilan halal yang sah sedapat mungkin.
+- **Mencampurkan halal dan bukan halal.** Peralatan, penyimpanan atau bahan pembersih yang dikongsi boleh menjadi penghalang utama.
+- **Butiran tidak sepadan.** Nama perniagaan, alamat atau senarai produk yang berbeza merentas dokumen menimbulkan pertanyaan.
+- **Terlepas tarikh akhir bayaran atau maklum balas.** Yuran lewat atau pertanyaan yang tidak dijawab boleh bermakna bermula semula.
+- **Kakitangan tidak dilatih.** Jika pasukan anda tidak dapat menerangkan prosedur halal semasa audit, audit akan mencerminkannya.
+
+Jika anda mencari pembekal, bungkusan, perunding atau penasihat untuk perjalanan halal anda, anda boleh [menyemak imbas direktori](/ms) untuk perniagaan tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pembeli menemui dan mengesahkan produk bersijil anda setelah anda memilikinya.
+
+## Kesilapan lazim PKS Malaysia dengan pensijilan halal
+
+- **Menggunakan logo halal terlalu awal.** Mencetak bungkusan dengan logo sebelum sijil dikeluarkan berisiko kesalahan dan cetakan semula yang mahal.
+- **Bermula tanpa audit pembekal.** Mendapati lewat bahawa bahan utama tiada bukti halal boleh memaksa pertukaran resipi atau pembekal.
+- **Melupakan pembaharuan.** Sijil yang luput bermakna anda mesti berhenti menggunakan logo, yang boleh menjejaskan kontrak pasar raya atau eksport.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Senaraikan setiap produk, bahannya, serta pembekal dan status halal setiap bahan.
+- **Seterusnya:** Semak keperluan semasa dan agensi yang betul bagi kategori anda di portal rasmi, dan sahkan jadual yuran.
+- **Kemudian:** Lantik penyelia halal anda, tulis prosedur asas, latih pasukan anda, dan betulkan sebarang kekurangan pada premis.
+- **Selepas kelulusan:** Catat tarikh pembaharuan dalam diari, rekodkan sebarang perubahan, dan gunakan logo hanya mengikut yang dibenarkan peraturan.
+
+Pensijilan halal paling mudah apabila ia dianggap sebagai sistem yang anda jalankan setiap hari dan bukannya sijil yang anda kutip sekali sahaja.`,
+        faqs: [
+          {
+            question: "Adakah saya memerlukan pensijilan halal untuk menjual makanan di Malaysia?",
+            answer:
+              "Bukan untuk setiap perniagaan makanan, tetapi jika anda mendakwa sesuatu produk halal atau menggunakan logo halal, anda memerlukan pensijilan yang sah. Ramai pembeli, seperti pasar raya, katering dan pelanggan eksport, juga memintanya. Semak apa yang diperlukan setiap saluran jualan anda.",
+          },
+          {
+            question: "Siapa yang mengeluarkan sijil halal di Malaysia?",
+            answer:
+              "Jabatan Kemajuan Islam Malaysia (JAKIM) dan jabatan agama Islam negeri. Yang mana satu mengendalikan permohonan anda bergantung pada jenis perniagaan dan tempat ia beroperasi, jadi sahkan di portal rasmi Halal Malaysia.",
+          },
+          {
+            question: "Bolehkah perniagaan milik bukan Islam memohon pensijilan halal?",
+            answer:
+              "Ya. Perniagaan dengan sebarang pemilikan boleh memohon selagi produk dan premisnya memenuhi keperluan. Yang penting ialah pematuhan, bukan siapa pemilik perniagaan itu.",
+          },
+          {
+            question: "Bagaimanakah saya memohon pensijilan halal?",
+            answer:
+              "Permohonan dibuat melalui sistem dalam talian JAKIM, MYeHALAL. Anda menghantar permohonan dan dokumen, membayar yuran, dan premis anda diaudit di tapak sebelum keputusan dibuat. Semak portal untuk langkah dan borang semasa.",
+          },
+          {
+            question: "Berapa lama sijil halal sah, dan bilakah saya patut memperbaharui?",
+            answer:
+              "Kesahan lazim disebut dua tahun, walaupun ia boleh berbeza mengikut kategori, dan pembaharuan lazim disebut perlu dipohon sekurang-kurangnya tiga bulan sebelum tamat. Semak tarikh pada sijil anda dan peraturan semasa di portal.",
+          },
+          {
+            question: "Bolehkah saya menggunakan logo halal sebelum sijil saya dikeluarkan?",
+            answer:
+              "Tidak. Menggunakan logo halal atau mendakwa produk halal tanpa pensijilan yang sah ialah kesalahan di bawah undang-undang Malaysia. Tunggu sehingga sijil dikeluarkan, dan gunakan logo hanya untuk produk dan premis yang diliputinya.",
+          },
+          {
+            question: "Apakah punca lazim permohonan halal tertangguh?",
+            answer:
+              "Dokumen tidak lengkap, sumber bahan tidak jelas, pembekal tanpa bukti halal, percampuran barangan halal dan bukan halal, butiran perniagaan tidak sepadan, terlepas tarikh akhir bayaran atau maklum balas, dan kakitangan yang tidak dapat menerangkan prosedur semasa audit.",
+          },
+          {
+            question: "Adakah saya perlu memberitahu pihak berkuasa jika saya menukar resipi atau pembekal?",
+            answer:
+              "Selalunya ya. Perubahan bahan, pembekal, resipi, tapak pengeluaran atau susun atur mungkin memerlukan pemakluman atau kelulusan, jadi semak peraturan sebelum anda mengubah apa-apa pada produk yang bersijil.",
+          },
+        ],
+      },
+    },
+  },
 ];

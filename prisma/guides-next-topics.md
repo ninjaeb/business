@@ -15,16 +15,16 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Staying Compliant with SSM: Annual Returns, Financial Statements, and Company Records**
-   — What a Malaysian company (Sdn Bhd) and a registered business must keep
-   filing after incorporation: the annual return and financial statements
-   deadlines, keeping the registered address and director details current,
-   beneficial ownership reporting, business registration renewals for sole
-   proprietors and partnerships, and the penalties for falling behind.
+1. **Bookkeeping and Accounting Basics for Malaysian SMEs: Records, Software, and When to Hire an Accountant**
+   — How a small business should keep its books from day one: what records
+   to keep and for how long, separating business and personal money,
+   choosing accounting software, monthly routines (reconciliation, invoices,
+   receipts), what an accountant or bookkeeper does, and how good records
+   feed into tax, SSM and e-invoicing obligations.
 
-2. **Halal Certification in Malaysia: What Food and Product SMEs Need to Know**
-   — When a food, beverage, or consumer-product business needs halal
-   certification, how the JAKIM/state religious department process works
-   (the application, premises and ingredient checks, fees, validity and
-   renewal), the rules on using the halal logo and claims, and how to avoid
-   the common reasons applications are delayed or rejected.
+2. **Hiring Foreign Workers in Malaysia: Quotas, Levies, and Legal Responsibilities**
+   — What an SME must know before employing migrant workers: eligibility
+   and sector quotas, the approval and permit process, levy and insurance
+   or contributions obligations, accommodation and employment-contract
+   duties, the penalties for hiring illegally, and why to check the
+   official portals before committing.
