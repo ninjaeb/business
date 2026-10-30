@@ -15,16 +15,16 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Closing a Business in Malaysia: Deregistration, Strike-Off, and Final Obligations**
-   — How to wind down properly: closing a sole proprietorship or
-   partnership with SSM versus striking off or winding up a company,
-   settling staff, EPF/SOCSO/EIS, tax and SST obligations, final accounts
-   and record retention, cancelling licences and accounts, and the risks of
-   simply abandoning a business.
+1. **Franchising in Malaysia: Buying or Starting a Franchise the Right Way**
+   — How the Franchise Act 1998 and the franchise registration with the
+   Ministry of Domestic Trade work, what a prospective franchisee should
+   check (registration, the disclosure documents, fees, royalties,
+   territory, support and exit terms), what a business needs before it can
+   franchise, and the red flags of unregistered or unrealistic schemes.
 
-2. **Workplace Safety for Malaysian SMEs: What the Occupational Safety and Health Act Requires**
-   — The employer's basic duties under the Occupational Safety and Health
-   Act 1994 (as amended): safety policy and risk assessment, safety and
-   health officers or committees where required, reporting accidents,
-   training and protective equipment, special concerns for factories,
-   kitchens and construction sites, and the penalties for breaches.
+2. **Marketing Your Small Business on Social Media in Malaysia: Rules, Platforms, and Practical Steps**
+   — Choosing platforms (Facebook, Instagram, TikTok, WhatsApp Business),
+   a simple content and posting routine, the advertising rules to respect
+   (honest claims, pricing, halal and health claims, influencer
+   disclosures), handling customer messages and reviews, and measuring
+   what works without overspending.
