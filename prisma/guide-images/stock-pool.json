@@ -458,6 +458,50 @@
       ],
       "description": "Portrait of a factory worker in a white safety helmet and khaki uniform",
       "usedBy": "workplace-safety-for-malaysian-smes-cover.webp"
+    },
+    {
+      "id": 9050511,
+      "tags": [
+        "food",
+        "cafe",
+        "barista",
+        "small-business"
+      ],
+      "description": "Asian woman barista working an espresso machine in a cozy cafe",
+      "usedBy": "starting-a-food-business-in-malaysia-cover.webp"
+    },
+    {
+      "id": 4350036,
+      "tags": [
+        "food",
+        "cafe",
+        "team",
+        "laptop"
+      ],
+      "description": "Asian female barista showing a colleague a laptop program at a cafe table",
+      "usedBy": "starting-a-food-business-in-malaysia-team.webp"
+    },
+    {
+      "id": 6348064,
+      "tags": [
+        "home-business",
+        "packing",
+        "online",
+        "small-business"
+      ],
+      "description": "Asian woman packing clothes into a carton on the floor of a modern living room",
+      "usedBy": "running-a-home-based-business-in-malaysia-cover.webp"
+    },
+    {
+      "id": 7857557,
+      "tags": [
+        "home-business",
+        "home-office",
+        "boxes",
+        "laptop"
+      ],
+      "description": "Young woman running a clothing business from a home office with boxes and a laptop",
+      "usedBy": "running-a-home-based-business-in-malaysia-office.webp"
     }
   ]
 }

@@ -15,15 +15,16 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Starting a Food Business in Malaysia: Licences, Hygiene, and Food Safety Requirements**
-   — What a café, stall, caterer or home food business needs before it
-   serves customers: the local council premises licence, the Food Act 1983
-   and Food Hygiene Regulations, food handler training and medical checks,
-   Ministry of Health premises grading and registration (such as MeSTI for
-   manufacturers), labelling basics, and how inspections work.
+1. **Managing Cash Flow for Malaysian SMEs: Forecasting, Late Payers, and Short-Term Funding**
+   — Why profitable small businesses still run out of cash: building a
+   simple 13-week cash flow forecast, tracking receivables and payables,
+   negotiating payment terms, building a cash buffer, short-term funding
+   options and their costs (overdrafts, invoice financing, supplier
+   credit), and early warning signs to act on.
 
-2. **Running a Home-Based Business in Malaysia: Rules, Licences, and Tax**
-   — Whether and how a business can operate from a home: SSM registration,
-   local council home-business licences and neighbourhood or strata
-   restrictions, signage and customer visits, insurance, separating home
-   and business costs for tax, and when it makes sense to move to premises.
+2. **Working with Freelancers, Part-Timers, and Gig Workers in Malaysia: Contracts, Pay, and Legal Status**
+   — The difference between an employee, a contractor, and a gig worker
+   under Malaysian law, when engaging freelancers is safe and when it risks
+   being treated as employment, written agreements and payment, the
+   position of part-time employees under the Employment Act, and the
+   developing rules for gig and platform workers.

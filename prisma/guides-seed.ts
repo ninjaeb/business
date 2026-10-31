@@ -13073,4 +13073,1140 @@ Pemasaran media sosial yang baik adalah stabil, jujur dan berguna, dan ia paling
       },
     },
   },
+  {
+    slug: "starting-a-food-business-in-malaysia",
+    title: "Starting a Food Business in Malaysia: Licences, Hygiene, and Food Safety Requirements",
+    seoTitle: "Starting a Food Business in Malaysia: Licences and Hygiene",
+    seoDescription:
+      "What a Malaysian cafe, stall, caterer or home food business needs before opening: licences, food handler rules, premises hygiene, labelling, and inspections.",
+    coverImage: {
+      file: "starting-a-food-business-in-malaysia-cover.webp",
+      mimeType: "image/webp",
+      alt: "A barista in an apron and cap steaming milk at an espresso machine in a cafe",
+      altTranslations: {
+        zh: "一位戴帽子、系围裙的咖啡师在咖啡店的咖啡机前打奶泡",
+        ms: "Seorang barista berapron dan bertopi mengukus susu di mesin espresso di sebuah kafe",
+      },
+    },
+    contentImages: {
+      "cafe-team": {
+        file: "starting-a-food-business-in-malaysia-team.webp",
+        mimeType: "image/webp",
+        alt: "Two cafe staff in aprons looking together at a laptop on a wooden counter beside an espresso machine",
+        altTranslations: {
+          zh: "两位系着围裙的咖啡店员工在咖啡机旁的木质柜台上一起看笔记本电脑",
+          ms: "Dua kakitangan kafe berapron melihat komputer riba bersama-sama di kaunter kayu di sebelah mesin espresso",
+        },
+        after: "Check the licensing route for your exact type of food business before you sign a lease or buy equipment.",
+        afterTranslations: {
+          zh: "在签订租约或购买设备之前，请先查清您这类食品业务确切的申请途径。",
+          ms: "Semak laluan pelesenan bagi jenis perniagaan makanan anda yang tepat sebelum anda menandatangani sewa atau membeli peralatan.",
+        },
+      },
+    },
+    excerpt:
+      "Serving food is one of the most regulated things a small business can do, because a hygiene failure can make customers ill. This guide explains what a Malaysian cafe, stall, caterer, or home food business generally needs before opening: the premises licence, food hygiene and handler rules, premises standards, labelling, halal considerations, and how inspections work.",
+    body: `Opening a cafe, a stall, a catering kitchen, or a home baking business looks simple from the customer's side. Behind the counter, though, a food business sits under health, hygiene, licensing, and labelling rules that exist for one reason: unsafe food hurts people. Owners who learn the rules after they have fitted out a kitchen often pay twice, once to build and once to rebuild.
+
+This is general information, not legal or health advice. Food rules are set by federal law and enforced by the Ministry of Health and by local councils, and the details differ by the type of business, the premises, and the state or council, so confirm what applies to you with your local council (PBT), the district health office, and the Ministry of Health before you spend money.
+
+## 1. Understand who regulates food businesses
+
+### The Food Act 1983 and its regulations
+The main law is the Food Act 1983 and the regulations under it, including the Food Hygiene Regulations 2009 and the Food Regulations 1985. They cover the registration and conduct of food premises, the training, health, and hygiene of food handlers, and how food is labelled and sold.
+
+### The Ministry of Health
+The Ministry of Health, through its food safety and quality functions and the district health offices, inspects food premises and can issue notices, compounds, and closure orders.
+
+### Your local council
+Local councils (PBT) license most business premises, including food outlets, and carry out their own checks. A food business generally needs both the council's business licence and compliance with health rules.
+
+### Other rules may sit on top
+Halal claims, alcohol, signage, fire safety, waste, and the use of the premises each have their own rules, which we cover below and in our related guides.
+
+## 2. Choose your model and check the route
+
+Check the licensing route for your exact type of food business before you sign a lease or buy equipment. The steps differ for a restaurant, a stall, a caterer, a home kitchen, and a manufacturer.
+
+### Cafe, restaurant, or eatery
+You typically need a council business licence for the premises, compliance with food hygiene rules, and trained and screened food handlers. The premises must be approved for food use, which a landlord's say-so does not settle.
+
+### Hawker stall or night market trader
+Stalls generally need a licence or permit from the council for the specific site or market, and the same hygiene and handler rules. Mobile or temporary traders often face extra conditions.
+
+### Caterer
+A catering business typically needs a licence or registration, a suitable kitchen, and a way to transport and keep food safe. Large events may add extra requirements.
+
+### Home-based food business
+Selling food from home is possible in many places but is not exempt from the rules. Councils vary, and some, such as Penang, have run specific permit schemes for home food sellers, so ask your council before you start. See our guide on running a home-based business.
+
+### Food manufacturing
+Making packaged food for sale is different from running a kitchen. The Ministry of Health has programmes such as MeSTI for food manufacturers, and packaged food is subject to detailed labelling rules. Confirm which programme applies to your product.
+
+## 3. Register the business and get the right licences
+
+### Register with SSM first
+Councils, banks, and landlords expect a registered business. Our guide on registering a business in Malaysia explains the steps, and our guide on business licences and permits explains how licensing works in general.
+
+### The premises licence
+Apply to the local council for the business premises licence for the specific address and activity. You will usually need your registration, proof of the right to use the premises, and plans or photos, and you may need clearances from the fire department and health office.
+
+### Health registration of the premises
+Food premises are generally required to be registered or approved under the food hygiene rules, and the district health office may inspect before or after opening. Ask what your office requires.
+
+### Signage, alcohol, and special items
+Signboards usually need approval. If you sell alcohol, extra licences and restrictions apply. If you are a halal outlet, see the section on halal below.
+
+### Time it right
+Do not renovate or order equipment until you know the licence is achievable at that address. A shop zoned for something else can stop the whole plan.
+
+## 4. Meet the food handler requirements
+
+### Food handler training
+Food handlers are generally required to complete a recognised food handler training course, which covers hygiene, safe handling, and cleaning. The training is usually done through institutions recognised by the Ministry of Health.
+
+### Typhoid vaccination and medical screening
+Food handlers are generally required to be vaccinated against typhoid and to undergo medical screening, with a certificate. Requirements and renewal periods are set by the Ministry of Health and have been tightened in recent years, so confirm the current position with your district health office.
+
+### Everyday personal hygiene
+Staff should be healthy, wash hands properly, wear clean clothing and hair covering, and stay away from food preparation when sick. Make these rules part of your daily routine, and train new staff before they handle food.
+
+### Keep records
+Keep copies of training and medical certificates for every handler, because inspectors may ask to see them.
+
+## 5. Build and run a safe kitchen
+
+### Layout and surfaces
+Premises should be clean, in good repair, well lit, ventilated, and designed so that raw and cooked food do not mix. Surfaces that touch food should be easy to clean.
+
+### Water, drainage, and waste
+Use a safe water supply, working drains, a grease trap where required, and covered waste bins that are emptied regularly. Poor waste management attracts pests and complaints.
+
+### Temperature and storage
+Keep cold food cold and hot food hot, store raw and cooked items separately, label and date stored food, and use stock in order. Check refrigerator temperatures regularly.
+
+### Pest control
+Keep pests out by sealing gaps, storing food off the floor, and using a licensed pest control service where appropriate.
+
+### Cleaning schedule
+Write down what is cleaned, how often, and by whom, and keep it up to date. A visible cleaning routine is both a safety measure and evidence you took care.
+
+> Hygiene is not something you can fix on inspection day. Inspectors judge what the kitchen looks like on an ordinary day and what your records show, so build cleaning, temperature checks, and handler records into daily habits from the first day you open.
+
+## 6. Label food correctly
+
+### Packaged food labelling
+Food sold in packages generally needs a label with details such as the name of the food, ingredients, net quantity, the name and address of the maker or seller, and dates. The rules are detailed, so check the Food Regulations 1985 or ask the Ministry of Health.
+
+### Allergens and claims
+Declare ingredients that commonly cause allergies, and do not make nutrition or health claims you cannot support. Our guide on selling online covers the information online sellers must show.
+
+### Halal claims
+Using the word "halal" or the halal logo requires valid certification. If you want to serve a halal market, plan for it from the start, as explained in our guide on halal certification. Describing a food as "Muslim-owned" or "no pork" is not the same as being certified.
+
+### Prices and menus
+Show clear prices, and do not mislead customers about ingredients, origin, or quality.
+
+## 7. Prepare for inspections
+
+### Who may inspect and when
+Health and council officers may inspect without notice, and may act on complaints. Be ready at any time.
+
+### What they look for
+Cleanliness, food handler compliance, storage and temperatures, pest signs, waste, labelling, licences on display, and records.
+
+### If something is found
+You may receive a notice to correct a problem, a compound, or in serious cases a closure order. Respond promptly, fix the cause, and keep evidence of what you did. Our guide on workplace safety explains your wider duties to your staff.
+
+### Handling complaints and food poisoning
+Take every complaint seriously, record it, and stop serving any suspect item. If someone becomes ill, cooperate with the authorities.
+
+## 8. Protect the business
+
+### Insurance
+Consider public liability and product liability cover for food, and insurance for equipment, stock, and staff. See our guide on business insurance.
+
+### Money and records
+Track costs carefully, because food margins are thin and wastage is a hidden cost. Our guide on bookkeeping basics explains how to start.
+
+### Be found
+If you want customers to find you, see our guide on getting found online and our guide on social media marketing.
+
+If you are looking for a kitchen equipment supplier, pest control service, or food safety trainer, you can [browse the directory](/en) for local providers, and [creating a free business listing](/en/signup) helps hungry customers find and verify your outlet.
+
+## Common mistakes Malaysian SMEs make when opening a food business
+
+- **Renovating before checking the licence.** A fitted-out kitchen that cannot be licensed at that address is an expensive lesson.
+- **Treating handler training and medical checks as optional.** Untrained or unscreened staff are a compliance risk and a safety risk.
+- **Using halal or health claims without proof.** Unsupported claims bring complaints, enforcement, and loss of customer trust.
+
+## Where to start
+
+- **This week:** Decide your model and check the licensing route with your local council and district health office.
+- **Next:** Register your business, confirm the premises can be licensed, and plan the kitchen layout.
+- **Then:** Get your handlers trained and screened, set up cleaning and temperature routines, and prepare labels and menus.
+- **Before opening:** Apply for the licences, get the premises inspected where required, and keep every certificate in one folder.
+
+A food business earns trust one safe plate at a time, and the paperwork is the foundation for that.`,
+    faqs: [
+      {
+        question: "What licences does a food business need in Malaysia?",
+        answer:
+          "Generally a business premises licence from the local council, registration of the business with SSM, and compliance with food hygiene rules overseen by the Ministry of Health. Requirements differ by type of business and council, so confirm with your PBT and district health office.",
+      },
+      {
+        question: "Do food handlers need training and medical checks?",
+        answer:
+          "Generally yes. Food handlers are required to complete a recognised food handler training course and to be vaccinated against typhoid and medically screened, with certificates. The current requirements and renewal periods are set by the Ministry of Health, so confirm them locally.",
+      },
+      {
+        question: "Can I sell food from my home kitchen?",
+        answer:
+          "In many places yes, but it is not exempt from the rules. You generally still need to register your business and meet council and health requirements, and some councils run specific permit schemes for home food sellers. Check with your council before you start.",
+      },
+      {
+        question: "What is the Food Act 1983?",
+        answer:
+          "It is the main law on food safety and sale in Malaysia. Together with regulations such as the Food Hygiene Regulations 2009 and the Food Regulations 1985, it covers food premises, handler hygiene, labelling, and the sale of safe food.",
+      },
+      {
+        question: "Do I need halal certification to run a food outlet?",
+        answer:
+          "Not necessarily, but you cannot use the halal logo or claim your food is halal without valid certification. Describing a food as Muslim-owned or pork-free is not the same as being certified. Plan early if you want to serve a halal market.",
+      },
+      {
+        question: "What does MeSTI mean for food manufacturers?",
+        answer:
+          "MeSTI is a Ministry of Health programme for food manufacturers on safe manufacturing practices. It is aimed at producers of packaged food rather than ordinary eateries, so confirm with the Ministry whether it applies to your product.",
+      },
+      {
+        question: "What happens during a food premises inspection?",
+        answer:
+          "Officers may inspect without notice and check cleanliness, handler compliance, storage and temperatures, pests, waste, labelling, licences, and records. Problems can lead to notices, compounds, or closure orders, so respond promptly and keep evidence of fixes.",
+      },
+      {
+        question: "How should food be labelled for sale?",
+        answer:
+          "Packaged food generally needs a label with details such as the food's name, ingredients, net quantity, the maker or seller's name and address, and dates, and allergens should be declared. The rules are detailed, so check the Food Regulations 1985 or ask the Ministry of Health.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "在马来西亚创办食品业务：执照、卫生与食品安全要求",
+        excerpt:
+          "提供食品是小企业所能做的受规管最严的事情之一，因为卫生上的疏忽可能让顾客生病。本指南说明马来西亚的咖啡店、摊位、餐饮承办商或家庭食品业务在开业前一般需要什么：营业场所执照、食品卫生和食品处理员规定、场所标准、标签、清真考量，以及检查如何进行。",
+        body: `从顾客的角度看，开一家咖啡店、一个摊位、一间餐饮厨房或一门家庭烘焙生意似乎很简单。但在柜台后面，食品业务受健康、卫生、执照和标签规则的约束，这些规则的存在只有一个原因：不安全的食品会伤害人。在装修好厨房之后才去了解规则的企业主，往往要付两次钱，一次建造，一次重建。
+
+以下仅为一般资讯，并非法律或健康意见。食品规则由联邦法律规定，由卫生部和地方政府执行，细节因业务类型、场所和州属或地方政府而异，所以在花钱之前，请向您的地方政府（PBT）、县卫生局和卫生部确认适用于您的是什么。
+
+## 1. 了解谁在规管食品业务
+
+### 《1983年食品法令》及其规则
+主要的法律是《1983年食品法令》及其下的规则，包括《2009年食品卫生规则》和《1985年食品规则》。它们涵盖食品场所的注册和经营、食品处理员的培训、健康和卫生，以及食品如何标签和销售。
+
+### 卫生部
+卫生部通过其食品安全与质量职能和各县卫生局，检查食品场所，并可发出通知、罚单和封店令。
+
+### 您的地方政府
+地方政府（PBT）为大多数营业场所，包括食品店，发放执照，并进行自己的检查。食品业务一般既需要地方政府的营业执照，也须遵守健康规则。
+
+### 还可能叠加其他规则
+清真声明、酒类、招牌、消防安全、废物和场所的用途各有自己的规则，我们在下文和相关指南中说明。
+
+## 2. 选择您的模式并查核途径
+
+在签订租约或购买设备之前，请先查清您这类食品业务确切的申请途径。餐厅、摊位、餐饮承办商、家庭厨房和制造商的步骤各不相同。
+
+### 咖啡店、餐厅或食肆
+您通常需要场所的地方政府营业执照、遵守食品卫生规则，以及经过培训和体检的食品处理员。场所必须获批作食品用途，房东的一句话并不能解决这一点。
+
+### 小贩摊位或夜市摊贩
+摊位一般需要针对特定地点或市场，向地方政府申请执照或准证，并遵守同样的卫生和处理员规则。流动或临时的摊贩往往面对额外的条件。
+
+### 餐饮承办商
+餐饮业务通常需要执照或注册、合适的厨房，以及安全运送和保存食品的方式。大型活动可能增加额外的要求。
+
+### 家庭食品业务
+在家里销售食品在许多地方是可行的，但并不豁免于规则。各地方政府不同，有些，例如槟城，曾推出针对家庭食品卖家的特定准证计划，所以在开始之前请先询问您的地方政府。请参阅我们关于经营家庭企业的指南。
+
+### 食品制造
+制造包装食品出售，与经营厨房不同。卫生部为食品制造商设有 MeSTI 等计划，而包装食品还须遵守详细的标签规则。请确认适用于您产品的是哪个计划。
+
+## 3. 注册企业并取得适当的执照
+
+### 先向 SSM 注册
+地方政府、银行和房东都期望看到已注册的企业。我们关于在马来西亚注册企业的指南说明了步骤，而关于营业执照与许可证的指南说明了执照一般如何运作。
+
+### 营业场所执照
+就特定地址和活动，向地方政府申请营业场所执照。您通常需要注册资料、使用场所权利的证明，以及图则或照片，并可能需要消防局和卫生局的批准。
+
+### 场所的健康注册
+食品场所一般须根据食品卫生规则注册或获批，县卫生局可能在开业前或开业后检查。请询问您所在的卫生局有什么要求。
+
+### 招牌、酒类和特殊项目
+招牌通常需要批准。如果您销售酒类，还适用额外的执照和限制。如果您是清真食肆，请参阅下文关于清真的部分。
+
+### 把握时机
+在确定该地址可以取得执照之前，不要装修或订购设备。分区用途不符的店铺，可能让整个计划泡汤。
+
+## 4. 符合食品处理员的要求
+
+### 食品处理员培训
+食品处理员一般须完成获认可的食品处理员培训课程，涵盖卫生、安全处理和清洁。培训通常通过卫生部认可的机构进行。
+
+### 伤寒疫苗和体检
+食品处理员一般须接种伤寒疫苗并接受体检，并持有证书。要求和更新期限由卫生部规定，近年来已收紧，所以请向县卫生局确认现行情况。
+
+### 日常个人卫生
+员工应该健康、正确洗手、穿着干净的衣服并戴发罩，生病时不要接触食品制备。把这些规则变成日常例行工作，并在新员工接触食品之前培训他们。
+
+### 保存记录
+为每位处理员保存培训和体检证书的副本，因为督察可能要求查看。
+
+## 5. 建造并运营安全的厨房
+
+### 布局和表面
+场所应该清洁、维修良好、光线充足、通风，并设计成让生食和熟食不会混在一起。接触食品的表面应易于清洁。
+
+### 水、排水和废物
+使用安全的供水、正常的排水沟、必要时的隔油池，以及定期清倒的有盖垃圾桶。糟糕的废物管理会招来害虫和投诉。
+
+### 温度和储存
+冷的食品保持冷，热的食品保持热，把生食和熟食分开储存，为储存的食品标示日期，并按顺序使用存货。定期检查冰箱温度。
+
+### 虫害控制
+通过封堵缝隙、让食品离地存放，并在适当时使用持牌的虫害控制服务，把害虫挡在外面。
+
+### 清洁时间表
+写下清洁什么、多久一次、由谁负责，并保持更新。可见的清洁例行工作既是安全措施，也是您用心的证据。
+
+> 卫生不是在检查当天才能补救的。督察评判的是厨房在平常日子里的样子，以及您的记录所显示的内容，所以请从开业第一天起，就把清洁、温度检查和处理员记录融入日常习惯。
+
+## 6. 正确标签食品
+
+### 包装食品标签
+包装销售的食品一般需要标签，写明食品名称、成分、净含量、制造商或销售商的名称和地址，以及日期等资料。规则很详细，所以请查阅《1985年食品规则》或询问卫生部。
+
+### 过敏原和声明
+申报常引起过敏的成分，不要作出您无法支持的营养或健康声明。我们关于网上销售的指南涵盖了网络卖家必须展示的资料。
+
+### 清真声明
+使用“清真”一词或清真标志需要有效的认证。如果您想服务清真市场，请从一开始就规划，正如我们关于清真认证的指南所说明的。把食品形容为“穆斯林拥有”或“不含猪肉”，与获得认证并不相同。
+
+### 价格和菜单
+清楚标示价格，不要就成分、产地或质量误导顾客。
+
+## 7. 为检查做准备
+
+### 谁可以检查以及何时
+卫生和地方政府的官员可能不事先通知就来检查，也可能根据投诉采取行动。请随时做好准备。
+
+### 他们看什么
+清洁程度、食品处理员的合规、储存和温度、虫害迹象、废物、标签、展示的执照和记录。
+
+### 如果发现问题
+您可能收到纠正问题的通知、罚单，严重时还有封店令。请迅速回应，解决根本原因，并保存您所做的证据。我们关于职场安全的指南说明了您对员工更广泛的责任。
+
+### 处理投诉和食物中毒
+认真对待每一项投诉，记录下来，并停止供应任何可疑的食品。如果有人生病，请配合主管机构。
+
+## 8. 保护业务
+
+### 保险
+考虑为食品投保公共责任险和产品责任险，以及设备、存货和员工的保险。请参阅我们关于商业保险的指南。
+
+### 资金和记录
+仔细追踪成本，因为食品的利润薄，而损耗是隐藏的成本。我们关于簿记基础的指南说明了如何开始。
+
+### 让人找到您
+如果您想让顾客找到您，请参阅我们关于让企业在网上被找到的指南和关于社交媒体营销的指南。
+
+如果您在寻找厨房设备供应商、虫害控制服务或食品安全培训师，可以[浏览名录](/zh)寻找本地服务商，而[创建免费的企业列表](/zh/signup)可以帮助饥饿的顾客找到并核实您的店铺。
+
+## 马来西亚中小企业开办食品业务时常犯的错误
+
+- **在查核执照之前就装修。** 装修好的厨房在该地址却无法获发执照，是一个昂贵的教训。
+- **把处理员培训和体检当作可有可无。** 未受培训或未经体检的员工，既是合规风险，也是安全风险。
+- **在没有证明的情况下使用清真或健康声明。** 没有依据的声明会招来投诉、执法和顾客信任的流失。
+
+## 从哪里开始
+
+- **本周：**决定您的模式，并向您的地方政府和县卫生局查核申请途径。
+- **接着：**注册您的企业，确认场所可以获发执照，并规划厨房布局。
+- **然后：**让您的处理员接受培训和体检，建立清洁和温度的例行工作，并准备标签和菜单。
+- **开业之前：**申请执照，在需要时让场所接受检查，并把每一张证书放在同一个文件夹里。
+
+食品业务是一盘又一盘安全的食物逐步赢得信任的，而文书工作是这一切的基础。`,
+        faqs: [
+          {
+            question: "在马来西亚，食品业务需要哪些执照？",
+            answer:
+              "一般需要地方政府的营业场所执照、向 SSM 注册企业，并遵守由卫生部监督的食品卫生规则。要求因业务类型和地方政府而异，请向您的 PBT 和县卫生局确认。",
+          },
+          {
+            question: "食品处理员需要培训和体检吗？",
+            answer:
+              "一般需要。食品处理员须完成获认可的食品处理员培训课程，并接种伤寒疫苗和接受体检，持有证书。现行要求和更新期限由卫生部规定，请在当地确认。",
+          },
+          {
+            question: "我可以在家里的厨房销售食品吗？",
+            answer:
+              "在许多地方可以，但并不豁免于规则。您一般仍需注册企业，并符合地方政府和健康方面的要求，有些地方政府还推出针对家庭食品卖家的特定准证计划。开始之前，请先向您的地方政府查询。",
+          },
+          {
+            question: "什么是《1983年食品法令》？",
+            answer:
+              "它是马来西亚关于食品安全和销售的主要法律。连同《2009年食品卫生规则》和《1985年食品规则》等规则，它涵盖食品场所、处理员卫生、标签，以及安全食品的销售。",
+          },
+          {
+            question: "经营食肆需要清真认证吗？",
+            answer:
+              "不一定，但没有有效的认证，您不能使用清真标志或声称您的食品是清真的。把食品形容为穆斯林拥有或不含猪肉，与获得认证并不相同。如果您想服务清真市场，请及早规划。",
+          },
+          {
+            question: "MeSTI 对食品制造商意味着什么？",
+            answer:
+              "MeSTI 是卫生部针对食品制造商的安全生产规范计划。它针对包装食品的生产商，而不是一般的食肆，所以请向卫生部确认它是否适用于您的产品。",
+          },
+          {
+            question: "食品场所检查时会发生什么？",
+            answer:
+              "官员可能不事先通知就来检查，查看清洁程度、处理员合规、储存和温度、害虫、废物、标签、执照和记录。问题可能导致通知、罚单或封店令，所以请迅速回应，并保存修复的证据。",
+          },
+          {
+            question: "食品出售时应如何标签？",
+            answer:
+              "包装食品一般需要标签，写明食品名称、成分、净含量、制造商或销售商的名称和地址以及日期等资料，并应申报过敏原。规则很详细，所以请查阅《1985年食品规则》或询问卫生部。",
+          },
+        ],
+      },
+      ms: {
+        title: "Memulakan Perniagaan Makanan di Malaysia: Keperluan Lesen, Kebersihan dan Keselamatan Makanan",
+        excerpt:
+          "Menyajikan makanan ialah salah satu perkara paling dikawal selia yang boleh dilakukan perniagaan kecil, kerana kegagalan kebersihan boleh membuat pelanggan sakit. Panduan ini menerangkan apa yang amnya diperlukan oleh kafe, gerai, katerer atau perniagaan makanan di rumah di Malaysia sebelum dibuka: lesen premis, peraturan kebersihan makanan dan pengendali makanan, piawaian premis, pelabelan, pertimbangan halal, dan bagaimana pemeriksaan dijalankan.",
+        body: `Membuka kafe, gerai, dapur katering atau perniagaan membakar di rumah kelihatan mudah dari sudut pelanggan. Tetapi di sebalik kaunter, perniagaan makanan tertakluk kepada peraturan kesihatan, kebersihan, pelesenan dan pelabelan yang wujud atas satu sebab: makanan tidak selamat mencederakan orang. Pemilik yang mempelajari peraturan selepas melengkapkan dapur sering membayar dua kali, sekali untuk membina dan sekali untuk membina semula.
+
+Ini ialah maklumat am, bukan nasihat guaman atau kesihatan. Peraturan makanan ditetapkan oleh undang-undang persekutuan dan dikuatkuasakan oleh Kementerian Kesihatan serta pihak berkuasa tempatan, dan butirannya berbeza mengikut jenis perniagaan, premis serta negeri atau pihak berkuasa tempatan, jadi sahkan apa yang terpakai kepada anda dengan pihak berkuasa tempatan (PBT), pejabat kesihatan daerah dan Kementerian Kesihatan sebelum anda membelanjakan wang.
+
+## 1. Fahami siapa yang mengawal selia perniagaan makanan
+
+### Akta Makanan 1983 dan peraturannya
+Undang-undang utama ialah Akta Makanan 1983 dan peraturan di bawahnya, termasuk Peraturan-Peraturan Kebersihan Makanan 2009 dan Peraturan-Peraturan Makanan 1985. Ia meliputi pendaftaran dan pengendalian premis makanan, latihan, kesihatan dan kebersihan pengendali makanan, serta cara makanan dilabel dan dijual.
+
+### Kementerian Kesihatan
+Kementerian Kesihatan, melalui fungsi keselamatan dan kualiti makanan serta pejabat kesihatan daerah, memeriksa premis makanan dan boleh mengeluarkan notis, kompaun dan perintah penutupan.
+
+### Pihak berkuasa tempatan anda
+Pihak berkuasa tempatan (PBT) melesenkan kebanyakan premis perniagaan, termasuk kedai makanan, dan menjalankan pemeriksaan mereka sendiri. Perniagaan makanan amnya memerlukan lesen perniagaan PBT dan juga pematuhan peraturan kesihatan.
+
+### Peraturan lain mungkin bertindih
+Dakwaan halal, alkohol, papan tanda, keselamatan kebakaran, sisa dan penggunaan premis masing-masing mempunyai peraturan sendiri, yang kami bincangkan di bawah dan dalam panduan berkaitan.
+
+## 2. Pilih model anda dan semak laluan
+
+Semak laluan pelesenan bagi jenis perniagaan makanan anda yang tepat sebelum anda menandatangani sewa atau membeli peralatan. Langkahnya berbeza bagi restoran, gerai, katerer, dapur rumah dan pengilang.
+
+### Kafe, restoran atau kedai makan
+Anda lazimnya memerlukan lesen perniagaan PBT untuk premis, pematuhan peraturan kebersihan makanan, serta pengendali makanan yang dilatih dan disaring kesihatannya. Premis mesti diluluskan untuk kegunaan makanan, yang tidak diselesaikan hanya dengan kata tuan tanah.
+
+### Gerai penjaja atau peniaga pasar malam
+Gerai amnya memerlukan lesen atau permit daripada PBT bagi tapak atau pasar tertentu, dan peraturan kebersihan serta pengendali yang sama. Peniaga bergerak atau sementara sering menghadapi syarat tambahan.
+
+### Katerer
+Perniagaan katering lazimnya memerlukan lesen atau pendaftaran, dapur yang sesuai, dan cara mengangkut serta menyimpan makanan dengan selamat. Acara besar mungkin menambah keperluan.
+
+### Perniagaan makanan di rumah
+Menjual makanan dari rumah boleh dilakukan di banyak tempat tetapi tidak dikecualikan daripada peraturan. PBT berbeza, dan sesetengah, seperti Pulau Pinang, pernah menjalankan skim permit khusus bagi penjual makanan di rumah, jadi tanya PBT anda sebelum bermula. Lihat panduan kami tentang menjalankan perniagaan di rumah.
+
+### Pembuatan makanan
+Membuat makanan berbungkus untuk dijual berbeza daripada menjalankan dapur. Kementerian Kesihatan mempunyai program seperti MeSTI untuk pengilang makanan, dan makanan berbungkus tertakluk kepada peraturan pelabelan terperinci. Sahkan program mana yang terpakai kepada produk anda.
+
+## 3. Daftarkan perniagaan dan dapatkan lesen yang betul
+
+### Daftar dengan SSM dahulu
+PBT, bank dan tuan tanah menjangkakan perniagaan berdaftar. Panduan kami tentang mendaftarkan perniagaan di Malaysia menerangkan langkahnya, dan panduan tentang lesen dan permit perniagaan menerangkan bagaimana pelesenan berfungsi secara am.
+
+### Lesen premis perniagaan
+Mohon kepada PBT untuk lesen premis perniagaan bagi alamat dan aktiviti tertentu. Anda biasanya memerlukan pendaftaran anda, bukti hak menggunakan premis, dan pelan atau gambar, dan anda mungkin memerlukan kelulusan daripada jabatan bomba dan pejabat kesihatan.
+
+### Pendaftaran kesihatan premis
+Premis makanan amnya dikehendaki didaftarkan atau diluluskan di bawah peraturan kebersihan makanan, dan pejabat kesihatan daerah mungkin memeriksa sebelum atau selepas dibuka. Tanya apa yang dikehendaki pejabat anda.
+
+### Papan tanda, alkohol dan item khas
+Papan tanda biasanya memerlukan kelulusan. Jika anda menjual alkohol, lesen dan sekatan tambahan terpakai. Jika anda kedai makan halal, lihat bahagian tentang halal di bawah.
+
+### Tetapkan masa yang betul
+Jangan mengubah suai atau memesan peralatan sebelum anda tahu lesen boleh diperoleh di alamat itu. Kedai yang dizonkan untuk kegunaan lain boleh menghentikan seluruh rancangan.
+
+## 4. Penuhi keperluan pengendali makanan
+
+### Latihan pengendali makanan
+Pengendali makanan amnya dikehendaki menamatkan kursus latihan pengendali makanan yang diiktiraf, yang merangkumi kebersihan, pengendalian selamat dan pembersihan. Latihan biasanya dilakukan melalui institusi yang diiktiraf oleh Kementerian Kesihatan.
+
+### Suntikan tifoid dan saringan perubatan
+Pengendali makanan amnya dikehendaki disuntik terhadap tifoid dan menjalani saringan perubatan, dengan sijil. Keperluan dan tempoh pembaharuan ditetapkan oleh Kementerian Kesihatan dan telah diketatkan sejak beberapa tahun kebelakangan ini, jadi sahkan kedudukan semasa dengan pejabat kesihatan daerah anda.
+
+### Kebersihan diri harian
+Kakitangan harus sihat, mencuci tangan dengan betul, memakai pakaian bersih dan penutup rambut, dan menjauhi penyediaan makanan semasa sakit. Jadikan peraturan ini sebahagian daripada rutin harian anda, dan latih kakitangan baharu sebelum mereka mengendalikan makanan.
+
+### Simpan rekod
+Simpan salinan sijil latihan dan perubatan bagi setiap pengendali, kerana pemeriksa mungkin memintanya.
+
+## 5. Bina dan jalankan dapur yang selamat
+
+### Susun atur dan permukaan
+Premis harus bersih, dalam keadaan baik, terang, berventilasi, dan direka supaya makanan mentah dan masak tidak bercampur. Permukaan yang menyentuh makanan harus mudah dibersihkan.
+
+### Air, perparitan dan sisa
+Gunakan bekalan air yang selamat, parit yang berfungsi, perangkap gris jika dikehendaki, dan tong sampah bertutup yang dikosongkan secara berkala. Pengurusan sisa yang lemah menarik perosak dan aduan.
+
+### Suhu dan penyimpanan
+Pastikan makanan sejuk kekal sejuk dan makanan panas kekal panas, simpan bahan mentah dan masak secara berasingan, labelkan dan tarikhkan makanan yang disimpan, dan gunakan stok mengikut turutan. Semak suhu peti sejuk secara berkala.
+
+### Kawalan perosak
+Halang perosak dengan menutup celah, menyimpan makanan di atas lantai, dan menggunakan perkhidmatan kawalan perosak berlesen jika sesuai.
+
+### Jadual pembersihan
+Tulis apa yang dibersihkan, berapa kerap dan oleh siapa, dan pastikan ia terkini. Rutin pembersihan yang kelihatan ialah langkah keselamatan dan juga bukti anda mengambil berat.
+
+> Kebersihan bukan sesuatu yang boleh dibetulkan pada hari pemeriksaan. Pemeriksa menilai rupa dapur pada hari biasa dan apa yang ditunjukkan oleh rekod anda, jadi bina pembersihan, semakan suhu dan rekod pengendali ke dalam tabiat harian sejak hari pertama anda dibuka.
+
+## 6. Labelkan makanan dengan betul
+
+### Pelabelan makanan berbungkus
+Makanan yang dijual dalam bungkusan amnya memerlukan label dengan butiran seperti nama makanan, bahan, kuantiti bersih, nama dan alamat pembuat atau penjual, dan tarikh. Peraturannya terperinci, jadi semak Peraturan-Peraturan Makanan 1985 atau tanya Kementerian Kesihatan.
+
+### Alergen dan dakwaan
+Isytiharkan bahan yang lazim menyebabkan alergi, dan jangan membuat dakwaan pemakanan atau kesihatan yang tidak dapat anda sokong. Panduan kami tentang berjual dalam talian merangkumi maklumat yang mesti ditunjukkan oleh penjual dalam talian.
+
+### Dakwaan halal
+Menggunakan perkataan "halal" atau logo halal memerlukan pensijilan yang sah. Jika anda mahu melayani pasaran halal, rancang dari awal, seperti yang diterangkan dalam panduan kami tentang pensijilan halal. Menggambarkan makanan sebagai "milik Muslim" atau "tiada babi" tidak sama dengan telah disijilkan.
+
+### Harga dan menu
+Tunjukkan harga yang jelas, dan jangan mengelirukan pelanggan tentang bahan, asal usul atau kualiti.
+
+## 7. Bersedia untuk pemeriksaan
+
+### Siapa yang boleh memeriksa dan bila
+Pegawai kesihatan dan PBT boleh memeriksa tanpa notis, dan boleh bertindak atas aduan. Bersedialah pada bila-bila masa.
+
+### Apa yang mereka cari
+Kebersihan, pematuhan pengendali makanan, penyimpanan dan suhu, tanda perosak, sisa, pelabelan, lesen yang dipamerkan dan rekod.
+
+### Jika sesuatu ditemui
+Anda mungkin menerima notis untuk membetulkan masalah, kompaun, atau dalam kes serius perintah penutupan. Balas dengan segera, betulkan puncanya, dan simpan bukti apa yang anda lakukan. Panduan kami tentang keselamatan tempat kerja menerangkan tugas anda yang lebih luas kepada kakitangan.
+
+### Menangani aduan dan keracunan makanan
+Ambil serius setiap aduan, rekodkannya, dan hentikan penyajian apa-apa item yang disyaki. Jika seseorang jatuh sakit, bekerjasama dengan pihak berkuasa.
+
+## 8. Lindungi perniagaan
+
+### Insurans
+Pertimbangkan perlindungan liabiliti awam dan liabiliti produk bagi makanan, dan insurans bagi peralatan, stok dan kakitangan. Lihat panduan kami tentang insurans perniagaan.
+
+### Wang dan rekod
+Jejaki kos dengan teliti, kerana margin makanan nipis dan pembaziran ialah kos tersembunyi. Panduan kami tentang asas simpan kira menerangkan cara bermula.
+
+### Jadilah mudah ditemui
+Jika anda mahu pelanggan menemui anda, lihat panduan kami tentang memastikan perniagaan mudah ditemui dalam talian dan panduan tentang pemasaran media sosial.
+
+Jika anda mencari pembekal peralatan dapur, perkhidmatan kawalan perosak atau jurulatih keselamatan makanan, anda boleh [menyemak imbas direktori](/ms) untuk penyedia tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pelanggan yang lapar menemui dan mengesahkan kedai anda.
+
+## Kesilapan lazim PKS Malaysia semasa membuka perniagaan makanan
+
+- **Mengubah suai sebelum menyemak lesen.** Dapur yang siap dilengkapkan tetapi tidak boleh dilesenkan di alamat itu ialah pengajaran yang mahal.
+- **Menganggap latihan pengendali dan pemeriksaan perubatan sebagai pilihan.** Kakitangan yang tidak dilatih atau tidak disaring ialah risiko pematuhan dan risiko keselamatan.
+- **Menggunakan dakwaan halal atau kesihatan tanpa bukti.** Dakwaan tanpa sokongan membawa aduan, penguatkuasaan dan kehilangan kepercayaan pelanggan.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Tentukan model anda dan semak laluan pelesenan dengan PBT dan pejabat kesihatan daerah anda.
+- **Seterusnya:** Daftarkan perniagaan anda, sahkan premis boleh dilesenkan, dan rancang susun atur dapur.
+- **Kemudian:** Latih dan saring pengendali anda, wujudkan rutin pembersihan dan suhu, dan sediakan label serta menu.
+- **Sebelum dibuka:** Mohon lesen, minta premis diperiksa jika dikehendaki, dan simpan setiap sijil dalam satu folder.
+
+Perniagaan makanan memperoleh kepercayaan sepinggan demi sepinggan yang selamat, dan kertas kerja ialah asas kepada itu.`,
+        faqs: [
+          {
+            question: "Apakah lesen yang diperlukan oleh perniagaan makanan di Malaysia?",
+            answer:
+              "Amnya lesen premis perniagaan daripada PBT, pendaftaran perniagaan dengan SSM, dan pematuhan peraturan kebersihan makanan yang diselia oleh Kementerian Kesihatan. Keperluan berbeza mengikut jenis perniagaan dan PBT, jadi sahkan dengan PBT dan pejabat kesihatan daerah anda.",
+          },
+          {
+            question: "Adakah pengendali makanan memerlukan latihan dan pemeriksaan perubatan?",
+            answer:
+              "Amnya ya. Pengendali makanan dikehendaki menamatkan kursus latihan pengendali makanan yang diiktiraf serta disuntik terhadap tifoid dan menjalani saringan perubatan, dengan sijil. Keperluan semasa dan tempoh pembaharuan ditetapkan oleh Kementerian Kesihatan, jadi sahkan di peringkat tempatan.",
+          },
+          {
+            question: "Bolehkah saya menjual makanan dari dapur rumah saya?",
+            answer:
+              "Di banyak tempat boleh, tetapi ia tidak dikecualikan daripada peraturan. Anda amnya masih perlu mendaftarkan perniagaan dan memenuhi keperluan PBT dan kesihatan, dan sesetengah PBT menjalankan skim permit khusus bagi penjual makanan di rumah. Semak dengan PBT anda sebelum bermula.",
+          },
+          {
+            question: "Apakah Akta Makanan 1983?",
+            answer:
+              "Ia ialah undang-undang utama tentang keselamatan dan jualan makanan di Malaysia. Bersama peraturan seperti Peraturan-Peraturan Kebersihan Makanan 2009 dan Peraturan-Peraturan Makanan 1985, ia meliputi premis makanan, kebersihan pengendali, pelabelan dan jualan makanan yang selamat.",
+          },
+          {
+            question: "Adakah saya memerlukan pensijilan halal untuk menjalankan kedai makan?",
+            answer:
+              "Tidak semestinya, tetapi anda tidak boleh menggunakan logo halal atau mendakwa makanan anda halal tanpa pensijilan yang sah. Menggambarkan makanan sebagai milik Muslim atau bebas babi tidak sama dengan telah disijilkan. Rancang awal jika anda mahu melayani pasaran halal.",
+          },
+          {
+            question: "Apakah maksud MeSTI untuk pengilang makanan?",
+            answer:
+              "MeSTI ialah program Kementerian Kesihatan untuk pengilang makanan tentang amalan pembuatan yang selamat. Ia ditujukan kepada pengeluar makanan berbungkus dan bukannya kedai makan biasa, jadi sahkan dengan Kementerian sama ada ia terpakai kepada produk anda.",
+          },
+          {
+            question: "Apakah yang berlaku semasa pemeriksaan premis makanan?",
+            answer:
+              "Pegawai boleh memeriksa tanpa notis dan menyemak kebersihan, pematuhan pengendali, penyimpanan dan suhu, perosak, sisa, pelabelan, lesen dan rekod. Masalah boleh membawa kepada notis, kompaun atau perintah penutupan, jadi balas dengan segera dan simpan bukti pembetulan.",
+          },
+          {
+            question: "Bagaimanakah makanan patut dilabel untuk dijual?",
+            answer:
+              "Makanan berbungkus amnya memerlukan label dengan butiran seperti nama makanan, bahan, kuantiti bersih, nama dan alamat pembuat atau penjual, dan tarikh, dan alergen harus diisytiharkan. Peraturannya terperinci, jadi semak Peraturan-Peraturan Makanan 1985 atau tanya Kementerian Kesihatan.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "running-a-home-based-business-in-malaysia",
+    title: "Running a Home-Based Business in Malaysia: Rules, Licences, and Tax",
+    seoTitle: "Running a Home-Based Business in Malaysia: Rules and Tax",
+    seoDescription:
+      "Can you run a business from home in Malaysia? SSM registration, council licences, zoning and strata rules, signage, insurance, and home costs for tax.",
+    coverImage: {
+      file: "running-a-home-based-business-in-malaysia-cover.webp",
+      mimeType: "image/webp",
+      alt: "A young woman kneeling on the living room floor packing folded clothes into a cardboard box",
+      altTranslations: {
+        zh: "一位年轻女士跪在客厅地板上，把折好的衣服装进纸箱",
+        ms: "Seorang wanita muda berlutut di lantai ruang tamu mengemas pakaian yang dilipat ke dalam kotak kadbod",
+      },
+    },
+    contentImages: {
+      "home-office": {
+        file: "running-a-home-based-business-in-malaysia-office.webp",
+        mimeType: "image/webp",
+        alt: "A woman leaning over a table filling in paperwork beside a laptop, with stacked boxes and a clothing rack behind her",
+        altTranslations: {
+          zh: "一位女士俯身在桌前、在笔记本电脑旁填写文件，身后是堆叠的纸箱和衣架",
+          ms: "Seorang wanita membongkok di meja mengisi dokumen di sebelah komputer riba, dengan kotak bertingkat dan rak pakaian di belakangnya",
+        },
+        after: "Check your zoning, your tenancy or title, and any strata rules before you tell customers where to find you.",
+        afterTranslations: {
+          zh: "在告诉客户去哪里找您之前，请先查核您的分区用途、租约或地契，以及任何分契式管理规定。",
+          ms: "Semak pengezonan, penyewaan atau hak milik, dan sebarang peraturan strata anda sebelum anda memberitahu pelanggan di mana hendak mencari anda.",
+        },
+      },
+    },
+    excerpt:
+      "Many Malaysian businesses start at a kitchen table or in a spare room, and it can work well, but a home is not exempt from the rules that apply to businesses. This guide explains whether and how you can operate from home: registering with SSM, council licences, zoning and strata restrictions, customers and signage, insurance, separating costs for tax, and when it is time to move.",
+    body: `A spare room, a dining table, and a laptop are enough to start many businesses: online selling, tuition, design, bookkeeping, baking, tailoring, consulting. Low overheads are a real advantage, and many successful businesses began exactly this way. But running a business from a home brings questions that an office tenant never faces: is it allowed here, do I need a licence, what will the neighbours or the management say, and how do I treat household costs for tax?
+
+This is general information, not legal or tax advice. Rules on home businesses vary a great deal between local councils, states, housing types, and building management, and they change, so confirm the current position with your local council (PBT), your strata or residents' management, your landlord, and the relevant authorities before you rely on it.
+
+## 1. Find out whether you can operate from home
+
+### Zoning and residential use
+Most residential areas are zoned for housing, and a business that brings customers, noise, deliveries, or staff to the neighbourhood may not be allowed without council approval. Quiet, office-type activities are often treated more leniently than anything that looks like a shop or workshop, but practice differs by council.
+
+### Your tenancy or title
+If you rent, your tenancy agreement may forbid running a business from the premises. If you own, your land title may carry conditions about use. Check both.
+
+### Strata and residents' rules
+Condominiums and gated communities often have by-laws or house rules that limit commercial use, customer visits, signage, parking, and deliveries, quite apart from council rules. Breaching them can lead to complaints and enforcement by the management.
+
+### Check before you spend
+Check your zoning, your tenancy or title, and any strata rules before you tell customers where to find you. A business built around a customer-facing home address that turns out to be prohibited is expensive to relocate.
+
+## 2. Register your business properly
+
+### Register with SSM
+Home-based and online businesses are generally expected to be registered like any other. Our guide on registering a business in Malaysia explains how to register as a sole proprietor, partnership, or company.
+
+### Your registered address
+Businesses register a business address, and many home-based owners use their home. Whether that is acceptable depends on the rules for your type of registration and the building, so confirm with SSM and consider whether you want your home address on a public record. Some owners use a company secretary's address or a virtual office instead, where permitted.
+
+### Open a business bank account
+Keep home and business money separate from day one. Our guide on opening a business bank account explains what to prepare.
+
+## 3. Understand licences and permits
+
+### The council licence
+A business operating from a physical premises generally needs a business licence or permit from the local council, and that includes many home-based businesses. Many councils keep a list of the home-based activities they permit, and some offer a simplified home business licence or permit, sometimes online. The requirements and fees differ by council.
+
+### Food and regulated activities
+Selling food, running a childcare service, offering health services, handling certain goods, or operating a tuition centre each carry additional rules. If you are making food at home, see our guide on starting a food business. Our guide on business licences and permits explains other approvals.
+
+### Online selling
+If you sell online from home, the rules on registering and displaying business details still apply. See our guide on selling online.
+
+### Do not assume that small means exempt
+A business may be small, but the council can still treat it as a business, and complaints from neighbours are a common way that unlicensed home businesses come to its attention.
+
+## 4. Manage customers, staff, and your neighbours
+
+### Customer visits
+If customers visit, think about parking, noise, privacy, and the impression on neighbours. Appointment-only visits are usually easier to manage than walk-ins, and some councils or strata rules limit them.
+
+### Signage
+Signboards and advertising at a residential address are usually restricted or need approval, so check before putting anything up.
+
+### Deliveries and storage
+Frequent couriers, lorries, or stock piling up can cause disputes. Plan where goods are stored and received, and consider whether a small storage unit would help.
+
+### Employees and contractors
+Having staff at your home brings obligations under employment and safety law, and it brings people into your private space. Our guide on hiring your first employee explains the duties, and our guide on workplace safety explains your safety duties.
+
+### Noise, smell, and waste
+Activities such as cooking, machinery, or chemicals can trigger complaints. Control them, and be ready to stop or move if the council or management objects.
+
+> A home-based business can be shut down by one unhappy neighbour. Keep your operation quiet and tidy, talk to neighbours and the management early, and fix complaints quickly, because most disputes start small and grow when they are ignored.
+
+## 5. Protect yourself with insurance
+
+### Home insurance may not cover business use
+A standard home insurance policy often excludes business equipment, stock, and liability to customers or staff. Tell your insurer that you run a business from home and ask what is covered.
+
+### Consider business cover
+Depending on your activity, consider cover for equipment and stock, public liability, product liability, and employee-related risks. Our guide on business insurance explains the main types.
+
+### Back up your data
+Business data is often held on a personal laptop or phone, so keep backups, protect customer information, and see our guide on PDPA compliance.
+
+## 6. Handle tax and money correctly
+
+### Business income is taxable
+Income from a home-based business is taxable like any other business income, whether you sell online, tutor, or bake. Keep records of sales, costs, and payments. Our guides on the small business tax calendar and on bookkeeping basics explain the routine.
+
+### Claiming home costs
+Some household costs, such as part of your utilities, internet, or rent, may be claimable where they relate to the business, in a fair proportion, and where you can show how you worked it out. The rules and limits are specific, so confirm with LHDN or an accountant, and see our guide on tax deductions. Do not claim private costs as business costs.
+
+### Keep a clear record
+Keep a simple method for splitting shared costs, such as the share of floor space or hours used, and keep bills and receipts. A rough guess does not stand up to a review.
+
+### Other obligations
+Depending on your activity and turnover, sales and service tax or e-invoicing may apply, so check our guides on SST and on e-invoicing.
+
+## 7. Present a professional image
+
+### Separate your phone and email
+Use a dedicated business email, phone number, or messaging profile, so personal and business messages do not mix.
+
+### Be careful about your address
+Think about privacy and safety before putting your home address on your website, invoices, and listings. Where it must appear, consider whether another contact route would work for customers.
+
+### Be found
+Help customers find and trust you with a simple website, a Google Business Profile, and social media. See our guides on getting found online and on social media marketing.
+
+If you are looking for an accountant, insurer, or a shared workspace as you grow, you can [browse the directory](/en) for local providers, and [creating a free business listing](/en/signup) helps customers find and verify your business without having to rely on your home address.
+
+## 8. Know when to move out
+
+### Signs it is time
+Frequent customer visits, staff, growing stock, noise or neighbour complaints, council objections, or a need for equipment that does not fit a home are all signs to consider premises.
+
+### Plan the move
+Compare the full cost of renting, including deposits, fit-out, and tax, against the value of the extra sales. Our guide on renting commercial premises explains what to check before you sign, and our guide on SME grants and funding covers support you may explore.
+
+## Common mistakes Malaysian SMEs make with home businesses
+
+- **Assuming a home business is exempt.** Council licensing, registration, and tax obligations apply even when the business is small.
+- **Ignoring strata and tenancy rules.** Breaching building rules or a tenancy agreement can end the business at that address.
+- **Mixing household and business money.** It makes profit unclear, and it weakens any tax claim for home costs.
+
+## Where to start
+
+- **This week:** Check your tenancy or title and any strata or residents' rules, and ask your council about home business licences.
+- **Next:** Register your business with SSM, open a business bank account, and set up a simple record system.
+- **Then:** Arrange insurance, plan how you will handle customers, deliveries, and noise, and decide how you will split home costs.
+- **Every year:** Review your tax position with an accountant and ask whether it is time to move to premises.
+
+A home business works best when it is treated like a real business from the first day, only with a lower rent.`,
+    faqs: [
+      {
+        question: "Can I run a business from my home in Malaysia?",
+        answer:
+          "Often yes, but it depends on zoning, your tenancy or land title, and any strata or residents' rules, and many councils require a licence or permit even for home-based businesses. Check with your local council and building management before you start.",
+      },
+      {
+        question: "Do I need to register a home-based business with SSM?",
+        answer:
+          "Generally yes. Home-based and online businesses are expected to be registered like any other, whether as a sole proprietorship, partnership, or company. Confirm the current requirements and how your business address is treated with SSM.",
+      },
+      {
+        question: "Do I need a council licence to run a business from home?",
+        answer:
+          "A business operating from a physical premises generally needs a licence or permit from the local council, and that includes many home-based businesses. Some councils offer a simplified home business permit. Requirements and fees differ by council, so ask yours.",
+      },
+      {
+        question: "Can I use my home address as my business address?",
+        answer:
+          "Many owners do, but whether it is acceptable depends on the rules for your type of registration and on your tenancy or building rules. Confirm with SSM, and consider privacy, since the address may appear on a public record.",
+      },
+      {
+        question: "Can I put up a signboard at my home?",
+        answer:
+          "Signboards and advertising at a residential address are usually restricted or need approval from the council and the building management. Check before you put anything up.",
+      },
+      {
+        question: "Does my home insurance cover my business?",
+        answer:
+          "Often not. Standard home insurance commonly excludes business equipment, stock, and liability to customers or staff. Tell your insurer you run a business from home and consider separate business cover.",
+      },
+      {
+        question: "Can I claim part of my rent or utilities as a business expense?",
+        answer:
+          "Possibly, a fair proportion that relates to the business, if you can show how you worked it out and keep the bills. The rules and limits are specific, so confirm with LHDN or an accountant, and do not claim private costs.",
+      },
+      {
+        question: "When should I move my business out of my home?",
+        answer:
+          "When customer visits, staff, stock, noise, neighbour or council complaints, or equipment needs outgrow the home. Compare the full cost of premises with the extra sales before you commit.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "在马来西亚经营家庭企业：规则、执照与税务",
+        excerpt:
+          "许多马来西亚的企业从厨房餐桌或空房间开始，这样做可以很有效，但住家并不豁免于适用于企业的规则。本指南说明您是否以及如何在家里营业：向 SSM 注册、地方政府执照、分区和分契式管理限制、客户和招牌、保险、为税务分开成本，以及何时该搬出去。",
+        body: `一个空房间、一张餐桌和一台笔记本电脑，就足以开始许多业务：网上销售、补习、设计、簿记、烘焙、裁缝和咨询。低开销是真正的优势，许多成功的企业就是这样起步的。但在家里经营，会带来办公室租户从未面对的问题：这里允许吗？我需要执照吗？邻居或管理处会怎么说？家庭开销在税务上怎么处理？
+
+以下仅为一般资讯，并非法律或税务意见。关于家庭企业的规则，在各地方政府、各州、各种住宅类型和大厦管理处之间差异很大，而且会变动，所以在依赖这些内容之前，请向您的地方政府（PBT）、分契式或住户管理处、您的房东和相关机构确认最新情况。
+
+## 1. 查明您是否可以在家营业
+
+### 分区和住宅用途
+大多数住宅区划为住宅用途，如果企业给社区带来客人、噪音、送货或员工，没有地方政府的批准可能是不允许的。安静的、办公室类型的活动，往往比任何看起来像店铺或工场的活动受到更宽容的对待，但各地方政府的做法不同。
+
+### 您的租约或地契
+如果您是租客，您的租约可能禁止在该场所营业。如果您是业主，您的地契可能附有关于用途的条件。两者都要查核。
+
+### 分契式和住户规定
+公寓和有围墙的社区往往有细则或住户规则，限制商业用途、客人到访、招牌、停车和送货，这与地方政府的规则无关。违反这些规定可能招来投诉和管理处的执法。
+
+### 花钱之前先查核
+在告诉客户去哪里找您之前，请先查核您的分区用途、租约或地契，以及任何分契式管理规定。围绕着一个面向客户的住家地址建立的业务，如果该地址后来被证明是被禁止的，搬迁的代价很高。
+
+## 2. 妥善注册您的企业
+
+### 向 SSM 注册
+家庭企业和网上企业一般被期望像其他企业一样注册。我们关于在马来西亚注册企业的指南，说明了如何以独资、合伙或公司的形式注册。
+
+### 您的注册地址
+企业需要注册一个营业地址，许多在家营业的业主使用自己的家。这是否可以接受，取决于您注册类型的规则和大厦的规定，所以请向 SSM 确认，并考虑您是否愿意让您的家庭地址出现在公开记录上。有些业主在允许的情况下，改用公司秘书的地址或虚拟办公室。
+
+### 开立企业银行账户
+从第一天起就把家庭和企业的资金分开。我们关于开立企业银行账户的指南说明了需要准备什么。
+
+## 3. 了解执照和许可证
+
+### 地方政府执照
+在实体场所营业的企业，一般需要地方政府的营业执照或准证，这包括许多家庭企业。许多地方政府备有一份它们允许的家庭活动清单，有些提供简化的家庭企业执照或准证，有时可在线办理。要求和费用因地方政府而异。
+
+### 食品和受规管的活动
+销售食品、经营托儿服务、提供健康服务、处理某些商品，或经营补习中心，各自都有额外的规则。如果您在家里制作食品，请参阅我们关于创办食品业务的指南。我们关于营业执照与许可证的指南说明了其他批准。
+
+### 网上销售
+如果您在家里网上销售，关于注册和展示企业资料的规则仍然适用。请参阅我们关于网上销售的指南。
+
+### 不要以为小就等于豁免
+企业可能很小，但地方政府仍可把它视为企业，而邻居的投诉，是无执照的家庭企业引起其注意的常见途径。
+
+## 4. 管理客户、员工和邻居
+
+### 客户到访
+如果客户来访，要考虑停车、噪音、隐私以及给邻居的印象。预约制的到访通常比随时登门更容易管理，有些地方政府或分契式规则也对此设限。
+
+### 招牌
+住宅地址的招牌和广告通常受到限制或需要批准，所以在挂出任何东西之前请先查核。
+
+### 送货和储存
+频繁的快递、货车或堆积的存货会引起纠纷。规划货物的存放和接收地点，并考虑一个小型储存单位是否有帮助。
+
+### 员工和承包商
+让员工到您家工作，会带来雇佣和安全法律下的义务，也会让人们进入您的私人空间。我们关于雇用第一位员工的指南说明了这些责任，而关于职场安全的指南说明了您的安全责任。
+
+### 噪音、气味和废物
+烹饪、机器或化学品等活动可能引发投诉。请加以控制，并在地方政府或管理处反对时做好停止或搬迁的准备。
+
+> 一个家庭企业可能因为一位不满的邻居而被关闭。请保持您的运作安静整洁，及早与邻居和管理处沟通，并迅速解决投诉，因为大多数纠纷都从小事开始，在被忽视时变大。
+
+## 5. 用保险保护自己
+
+### 家庭保险可能不涵盖商业用途
+标准的家庭保险单往往排除商业设备、存货，以及对客户或员工的责任。请告知您的保险公司您在家营业，并询问涵盖什么。
+
+### 考虑商业保险
+视您的活动而定，考虑设备和存货、公共责任、产品责任和与员工相关的风险的保障。我们关于商业保险的指南说明了主要的类型。
+
+### 备份您的数据
+企业数据往往存放在个人笔记本电脑或手机上，所以请做好备份，保护客户资料，并参阅我们关于 PDPA 合规的指南。
+
+## 6. 正确处理税务和资金
+
+### 营业收入须课税
+家庭企业的收入与其他营业收入一样须课税，无论您是网上销售、补习还是烘焙。请保存销售、成本和付款的记录。我们关于小企业税务日历和簿记基础的指南说明了例行工作。
+
+### 申报家庭开销
+有些家庭开销，例如部分水电、网络或租金，在与业务有关、按合理比例、并且您能说明是如何计算出来的情况下，可能可以申报。规则和限额是具体的，所以请向 LHDN 或会计师确认，并参阅我们关于税务扣除的指南。不要把私人开销当作业务成本申报。
+
+### 保存清晰的记录
+保持一个简单的方法来分摊共用的成本，例如占用的面积比例或使用的时数，并保存账单和收据。粗略的估计经不起审查。
+
+### 其他义务
+视您的活动和营业额而定，可能适用销售与服务税或电子发票，所以请查看我们关于 SST 和电子发票的指南。
+
+## 7. 呈现专业的形象
+
+### 把电话和电邮分开
+使用专用的企业电邮、电话号码或讯息账号，让个人和业务的讯息不会混在一起。
+
+### 对您的地址要小心
+在您的网站、发票和列表上放上家庭地址之前，请考虑隐私和安全。在必须出现的地方，考虑是否有其他联系方式可供客户使用。
+
+### 让人找到您
+用简单的网站、Google 商家资料和社交媒体，帮助客户找到并信任您。请参阅我们关于让企业在网上被找到和关于社交媒体营销的指南。
+
+如果您在成长过程中需要会计师、保险公司或共享工作空间，可以[浏览名录](/zh)寻找本地服务商，而[创建免费的企业列表](/zh/signup)可以帮助客户找到并核实您的企业，而不必依赖您的家庭地址。
+
+## 8. 知道何时该搬出去
+
+### 该搬的迹象
+频繁的客户到访、员工、不断增加的存货、噪音或邻居投诉、地方政府的反对，或需要不适合放在家里的设备，都是考虑租用场所的迹象。
+
+### 规划搬迁
+把租用的全部成本，包括押金、装修和税务，与额外销售的价值作比较。我们关于租用商业场所的指南说明了签约前要查核什么，而关于中小企业补助与融资的指南涵盖了您可以探索的支持。
+
+## 马来西亚中小企业经营家庭企业时常犯的错误
+
+- **以为家庭企业可以豁免。** 即使企业很小，地方政府执照、注册和税务义务也同样适用。
+- **忽略分契式和租约规定。** 违反大厦规定或租约，可能让业务在该地址终结。
+- **把家庭和企业资金混在一起。** 这让利润不清楚，也削弱了任何对家庭开销的税务申报。
+
+## 从哪里开始
+
+- **本周：**查核您的租约或地契，以及任何分契式或住户规定，并向您的地方政府询问家庭企业执照。
+- **接着：**向 SSM 注册您的企业，开立企业银行账户，并建立简单的记录系统。
+- **然后：**安排保险，规划您如何处理客户、送货和噪音，并决定您如何分摊家庭开销。
+- **每年：**与会计师检讨您的税务状况，并问问是否该搬到场所去了。
+
+家庭企业从第一天起就被当作真正的企业对待时效果最好，只是租金更低而已。`,
+        faqs: [
+          {
+            question: "我可以在马来西亚的家里经营企业吗？",
+            answer:
+              "通常可以，但取决于分区、您的租约或地契，以及任何分契式或住户规定，而且许多地方政府即使对家庭企业也要求执照或准证。开始之前，请向您的地方政府和大厦管理处查核。",
+          },
+          {
+            question: "家庭企业需要向 SSM 注册吗？",
+            answer:
+              "一般需要。家庭企业和网上企业被期望像其他企业一样注册，无论是独资、合伙还是公司。请向 SSM 确认现行要求，以及您的营业地址如何处理。",
+          },
+          {
+            question: "在家营业需要地方政府执照吗？",
+            answer:
+              "在实体场所营业的企业一般需要地方政府的执照或准证，这包括许多家庭企业。有些地方政府提供简化的家庭企业准证。要求和费用因地方政府而异，所以请询问您的地方政府。",
+          },
+          {
+            question: "我可以用家庭地址作为营业地址吗？",
+            answer:
+              "许多业主这样做，但是否可以接受，取决于您注册类型的规则以及您的租约或大厦规定。请向 SSM 确认，并考虑隐私，因为该地址可能出现在公开记录上。",
+          },
+          {
+            question: "我可以在家里挂招牌吗？",
+            answer:
+              "住宅地址的招牌和广告通常受到限制，或需要地方政府和大厦管理处的批准。在挂出任何东西之前请先查核。",
+          },
+          {
+            question: "我的家庭保险涵盖我的生意吗？",
+            answer:
+              "往往不涵盖。标准的家庭保险通常排除商业设备、存货，以及对客户或员工的责任。请告知保险公司您在家营业，并考虑另购商业保险。",
+          },
+          {
+            question: "我可以把部分租金或水电当作业务开支申报吗？",
+            answer:
+              "可能可以，申报与业务有关的合理比例，前提是您能说明是如何计算的并保存账单。规则和限额是具体的，所以请向 LHDN 或会计师确认，并且不要申报私人开销。",
+          },
+          {
+            question: "我应该何时把生意搬出家里？",
+            answer:
+              "当客户到访、员工、存货、噪音、邻居或地方政府的投诉，或设备需求超出了家的容纳能力时。在承诺之前，请把场所的全部成本与额外的销售作比较。",
+          },
+        ],
+      },
+      ms: {
+        title: "Menjalankan Perniagaan di Rumah di Malaysia: Peraturan, Lesen dan Cukai",
+        excerpt:
+          "Banyak perniagaan Malaysia bermula di meja dapur atau bilik kosong, dan ia boleh berjalan baik, tetapi rumah tidak dikecualikan daripada peraturan yang terpakai kepada perniagaan. Panduan ini menerangkan sama ada dan bagaimana anda boleh beroperasi dari rumah: mendaftar dengan SSM, lesen PBT, sekatan pengezonan dan strata, pelanggan dan papan tanda, insurans, pengasingan kos untuk cukai, dan bila tiba masa untuk berpindah.",
+        body: `Sebuah bilik kosong, meja makan dan komputer riba sudah memadai untuk memulakan banyak perniagaan: jualan dalam talian, tuisyen, reka bentuk, simpan kira, membakar, menjahit dan perundingan. Overhead yang rendah ialah kelebihan sebenar, dan banyak perniagaan yang berjaya bermula tepat begitu. Tetapi menjalankan perniagaan dari rumah membawa soalan yang tidak pernah dihadapi penyewa pejabat: adakah ia dibenarkan di sini, adakah saya memerlukan lesen, apa kata jiran atau pihak pengurusan, dan bagaimana kos isi rumah dilayan untuk cukai?
+
+Ini ialah maklumat am, bukan nasihat guaman atau cukai. Peraturan tentang perniagaan di rumah berbeza dengan banyak antara pihak berkuasa tempatan, negeri, jenis perumahan dan pengurusan bangunan, dan ia berubah, jadi sahkan kedudukan semasa dengan pihak berkuasa tempatan (PBT), pengurusan strata atau penduduk, tuan tanah anda dan pihak berkuasa berkaitan sebelum anda bergantung padanya.
+
+## 1. Ketahui sama ada anda boleh beroperasi dari rumah
+
+### Pengezonan dan kegunaan kediaman
+Kebanyakan kawasan kediaman dizonkan untuk perumahan, dan perniagaan yang membawa pelanggan, bunyi bising, penghantaran atau pekerja ke kejiranan mungkin tidak dibenarkan tanpa kelulusan PBT. Aktiviti tenang jenis pejabat sering dilayan dengan lebih bertolak ansur berbanding apa-apa yang kelihatan seperti kedai atau bengkel, tetapi amalan berbeza mengikut PBT.
+
+### Penyewaan atau hak milik anda
+Jika anda menyewa, perjanjian penyewaan anda mungkin melarang menjalankan perniagaan dari premis itu. Jika anda pemilik, hak milik tanah anda mungkin mempunyai syarat tentang kegunaan. Semak kedua-duanya.
+
+### Peraturan strata dan penduduk
+Kondominium dan komuniti berpagar sering mempunyai undang-undang kecil atau peraturan rumah yang menghadkan kegunaan komersial, lawatan pelanggan, papan tanda, tempat letak kereta dan penghantaran, selain peraturan PBT. Melanggarnya boleh membawa aduan dan penguatkuasaan oleh pengurusan.
+
+### Semak sebelum berbelanja
+Semak pengezonan, penyewaan atau hak milik, dan sebarang peraturan strata anda sebelum anda memberitahu pelanggan di mana hendak mencari anda. Perniagaan yang dibina sekitar alamat rumah yang dihadapi pelanggan yang ternyata dilarang adalah mahal untuk dipindahkan.
+
+## 2. Daftarkan perniagaan anda dengan betul
+
+### Daftar dengan SSM
+Perniagaan di rumah dan dalam talian amnya dijangka didaftarkan seperti yang lain. Panduan kami tentang mendaftarkan perniagaan di Malaysia menerangkan cara mendaftar sebagai pemilik tunggal, perkongsian atau syarikat.
+
+### Alamat berdaftar anda
+Perniagaan mendaftarkan alamat perniagaan, dan ramai pemilik di rumah menggunakan rumah mereka. Sama ada itu boleh diterima bergantung pada peraturan bagi jenis pendaftaran anda dan bangunan, jadi sahkan dengan SSM dan pertimbangkan sama ada anda mahu alamat rumah anda dalam rekod awam. Sesetengah pemilik menggunakan alamat setiausaha syarikat atau pejabat maya sebagai ganti, jika dibenarkan.
+
+### Buka akaun bank perniagaan
+Pisahkan wang rumah dan perniagaan sejak hari pertama. Panduan kami tentang membuka akaun bank perniagaan menerangkan apa yang perlu disediakan.
+
+## 3. Fahami lesen dan permit
+
+### Lesen PBT
+Perniagaan yang beroperasi dari premis fizikal amnya memerlukan lesen atau permit perniagaan daripada PBT, dan itu termasuk banyak perniagaan di rumah. Banyak PBT menyimpan senarai aktiviti di rumah yang mereka benarkan, dan sesetengah menawarkan lesen atau permit perniagaan rumah yang dipermudahkan, kadangkala dalam talian. Keperluan dan yuran berbeza mengikut PBT.
+
+### Makanan dan aktiviti terkawal
+Menjual makanan, menjalankan perkhidmatan penjagaan kanak-kanak, menawarkan perkhidmatan kesihatan, mengendalikan barangan tertentu atau mengendalikan pusat tuisyen masing-masing membawa peraturan tambahan. Jika anda membuat makanan di rumah, lihat panduan kami tentang memulakan perniagaan makanan. Panduan kami tentang lesen dan permit perniagaan menerangkan kelulusan lain.
+
+### Jualan dalam talian
+Jika anda berjual dalam talian dari rumah, peraturan tentang mendaftar dan memaparkan butiran perniagaan masih terpakai. Lihat panduan kami tentang berjual dalam talian.
+
+### Jangan menganggap kecil bermakna dikecualikan
+Perniagaan mungkin kecil, tetapi PBT masih boleh menganggapnya sebagai perniagaan, dan aduan jiran ialah cara lazim perniagaan rumah tanpa lesen menarik perhatiannya.
+
+## 4. Urus pelanggan, pekerja dan jiran anda
+
+### Lawatan pelanggan
+Jika pelanggan melawat, fikirkan tentang tempat letak kereta, bunyi bising, privasi dan tanggapan terhadap jiran. Lawatan dengan temu janji biasanya lebih mudah diurus berbanding yang datang tanpa janji, dan sesetengah PBT atau peraturan strata menghadkannya.
+
+### Papan tanda
+Papan tanda dan pengiklanan di alamat kediaman biasanya terhad atau memerlukan kelulusan, jadi semak sebelum memasang apa-apa.
+
+### Penghantaran dan penyimpanan
+Kurier yang kerap, lori atau stok yang bertimbun boleh menyebabkan pertikaian. Rancang di mana barangan disimpan dan diterima, dan pertimbangkan sama ada unit simpanan kecil akan membantu.
+
+### Pekerja dan kontraktor
+Mempunyai kakitangan di rumah anda membawa obligasi di bawah undang-undang pekerjaan dan keselamatan, dan ia membawa orang masuk ke ruang peribadi anda. Panduan kami tentang mengambil pekerja pertama menerangkan tugasnya, dan panduan tentang keselamatan tempat kerja menerangkan tugas keselamatan anda.
+
+### Bunyi bising, bau dan sisa
+Aktiviti seperti memasak, jentera atau bahan kimia boleh mencetuskan aduan. Kawalnya, dan bersedialah untuk berhenti atau berpindah jika PBT atau pengurusan membantah.
+
+> Perniagaan di rumah boleh ditutup oleh seorang jiran yang tidak berpuas hati. Pastikan operasi anda senyap dan kemas, bercakap dengan jiran dan pengurusan lebih awal, dan selesaikan aduan dengan pantas, kerana kebanyakan pertikaian bermula kecil dan membesar apabila diabaikan.
+
+## 5. Lindungi diri anda dengan insurans
+
+### Insurans rumah mungkin tidak meliputi kegunaan perniagaan
+Polisi insurans rumah standard sering mengecualikan peralatan perniagaan, stok dan liabiliti kepada pelanggan atau kakitangan. Beritahu penanggung insurans anda bahawa anda menjalankan perniagaan dari rumah dan tanya apa yang diliputi.
+
+### Pertimbangkan perlindungan perniagaan
+Bergantung pada aktiviti anda, pertimbangkan perlindungan untuk peralatan dan stok, liabiliti awam, liabiliti produk dan risiko berkaitan pekerja. Panduan kami tentang insurans perniagaan menerangkan jenis utamanya.
+
+### Sandarkan data anda
+Data perniagaan sering disimpan pada komputer riba atau telefon peribadi, jadi simpan sandaran, lindungi maklumat pelanggan, dan lihat panduan kami tentang pematuhan PDPA.
+
+## 6. Kendalikan cukai dan wang dengan betul
+
+### Pendapatan perniagaan boleh dicukai
+Pendapatan daripada perniagaan di rumah boleh dicukai seperti pendapatan perniagaan lain, sama ada anda berjual dalam talian, memberi tuisyen atau membakar. Simpan rekod jualan, kos dan bayaran. Panduan kami tentang kalendar cukai perniagaan kecil dan asas simpan kira menerangkan rutinnya.
+
+### Menuntut kos rumah
+Sesetengah kos isi rumah, seperti sebahagian utiliti, internet atau sewa, mungkin boleh dituntut jika ia berkaitan dengan perniagaan, dalam kadar yang adil, dan anda boleh menunjukkan bagaimana anda mengiranya. Peraturan dan had adalah khusus, jadi sahkan dengan LHDN atau akauntan, dan lihat panduan kami tentang potongan cukai. Jangan menuntut kos peribadi sebagai kos perniagaan.
+
+### Simpan rekod yang jelas
+Simpan kaedah mudah untuk membahagikan kos yang dikongsi, seperti kadar luas lantai atau jam yang digunakan, dan simpan bil serta resit. Anggaran kasar tidak tahan semakan.
+
+### Obligasi lain
+Bergantung pada aktiviti dan perolehan anda, cukai jualan dan perkhidmatan atau e-Invois mungkin terpakai, jadi semak panduan kami tentang SST dan e-Invois.
+
+## 7. Tampilkan imej yang profesional
+
+### Asingkan telefon dan e-mel anda
+Gunakan e-mel, nombor telefon atau profil pesanan perniagaan khusus, supaya mesej peribadi dan perniagaan tidak bercampur.
+
+### Berhati-hati dengan alamat anda
+Fikirkan tentang privasi dan keselamatan sebelum meletakkan alamat rumah anda di laman web, invois dan penyenaraian. Di mana ia mesti dipaparkan, pertimbangkan sama ada saluran hubungan lain boleh digunakan oleh pelanggan.
+
+### Jadilah mudah ditemui
+Bantu pelanggan menemui dan mempercayai anda dengan laman web yang mudah, Profil Perniagaan Google dan media sosial. Lihat panduan kami tentang memastikan perniagaan mudah ditemui dalam talian dan pemasaran media sosial.
+
+Jika anda mencari akauntan, penanggung insurans atau ruang kerja kongsi semasa anda berkembang, anda boleh [menyemak imbas direktori](/ms) untuk penyedia tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pelanggan menemui dan mengesahkan perniagaan anda tanpa perlu bergantung pada alamat rumah anda.
+
+## 8. Ketahui bila hendak berpindah keluar
+
+### Tanda sudah tiba masanya
+Lawatan pelanggan yang kerap, kakitangan, stok yang bertambah, bunyi bising atau aduan jiran, bantahan PBT, atau keperluan peralatan yang tidak muat di rumah ialah tanda untuk mempertimbangkan premis.
+
+### Rancang perpindahan
+Bandingkan kos penuh menyewa, termasuk deposit, ubah suai dan cukai, dengan nilai jualan tambahan. Panduan kami tentang menyewa premis komersial menerangkan apa yang perlu disemak sebelum menandatangani, dan panduan tentang geran dan pembiayaan PKS merangkumi sokongan yang boleh anda terokai.
+
+## Kesilapan lazim PKS Malaysia dengan perniagaan di rumah
+
+- **Menganggap perniagaan di rumah dikecualikan.** Pelesenan PBT, pendaftaran dan obligasi cukai terpakai walaupun perniagaan itu kecil.
+- **Mengabaikan peraturan strata dan penyewaan.** Melanggar peraturan bangunan atau perjanjian penyewaan boleh menamatkan perniagaan di alamat itu.
+- **Mencampurkan wang rumah dan perniagaan.** Ia menjadikan keuntungan tidak jelas, dan melemahkan sebarang tuntutan cukai bagi kos rumah.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Semak penyewaan atau hak milik anda serta sebarang peraturan strata atau penduduk, dan tanya PBT anda tentang lesen perniagaan rumah.
+- **Seterusnya:** Daftarkan perniagaan anda dengan SSM, buka akaun bank perniagaan, dan wujudkan sistem rekod yang mudah.
+- **Kemudian:** Atur insurans, rancang bagaimana anda akan mengendalikan pelanggan, penghantaran dan bunyi bising, dan tentukan bagaimana anda akan membahagikan kos rumah.
+- **Setiap tahun:** Semak kedudukan cukai anda dengan akauntan dan tanya sama ada sudah tiba masanya untuk berpindah ke premis.
+
+Perniagaan di rumah paling berkesan apabila ia dilayan seperti perniagaan sebenar sejak hari pertama, hanya dengan sewa yang lebih rendah.`,
+        faqs: [
+          {
+            question: "Bolehkah saya menjalankan perniagaan dari rumah saya di Malaysia?",
+            answer:
+              "Selalunya boleh, tetapi ia bergantung pada pengezonan, penyewaan atau hak milik tanah anda, dan sebarang peraturan strata atau penduduk, dan banyak PBT memerlukan lesen atau permit walaupun bagi perniagaan di rumah. Semak dengan PBT dan pengurusan bangunan anda sebelum bermula.",
+          },
+          {
+            question: "Adakah saya perlu mendaftarkan perniagaan di rumah dengan SSM?",
+            answer:
+              "Amnya ya. Perniagaan di rumah dan dalam talian dijangka didaftarkan seperti yang lain, sama ada sebagai pemilikan tunggal, perkongsian atau syarikat. Sahkan keperluan semasa dan bagaimana alamat perniagaan anda dilayan dengan SSM.",
+          },
+          {
+            question: "Adakah saya memerlukan lesen PBT untuk menjalankan perniagaan dari rumah?",
+            answer:
+              "Perniagaan yang beroperasi dari premis fizikal amnya memerlukan lesen atau permit daripada PBT, dan itu termasuk banyak perniagaan di rumah. Sesetengah PBT menawarkan permit perniagaan rumah yang dipermudahkan. Keperluan dan yuran berbeza mengikut PBT, jadi tanya PBT anda.",
+          },
+          {
+            question: "Bolehkah saya menggunakan alamat rumah saya sebagai alamat perniagaan?",
+            answer:
+              "Ramai pemilik berbuat demikian, tetapi sama ada ia boleh diterima bergantung pada peraturan bagi jenis pendaftaran anda dan peraturan penyewaan atau bangunan anda. Sahkan dengan SSM, dan pertimbangkan privasi, kerana alamat itu mungkin muncul dalam rekod awam.",
+          },
+          {
+            question: "Bolehkah saya memasang papan tanda di rumah saya?",
+            answer:
+              "Papan tanda dan pengiklanan di alamat kediaman biasanya terhad atau memerlukan kelulusan PBT dan pengurusan bangunan. Semak sebelum anda memasang apa-apa.",
+          },
+          {
+            question: "Adakah insurans rumah saya meliputi perniagaan saya?",
+            answer:
+              "Selalunya tidak. Insurans rumah standard lazimnya mengecualikan peralatan perniagaan, stok dan liabiliti kepada pelanggan atau kakitangan. Beritahu penanggung insurans anda bahawa anda menjalankan perniagaan dari rumah dan pertimbangkan perlindungan perniagaan yang berasingan.",
+          },
+          {
+            question: "Bolehkah saya menuntut sebahagian sewa atau utiliti sebagai perbelanjaan perniagaan?",
+            answer:
+              "Mungkin, kadar yang adil yang berkaitan dengan perniagaan, jika anda boleh menunjukkan bagaimana anda mengiranya dan menyimpan bil. Peraturan dan had adalah khusus, jadi sahkan dengan LHDN atau akauntan, dan jangan menuntut kos peribadi.",
+          },
+          {
+            question: "Bilakah saya patut memindahkan perniagaan saya keluar dari rumah?",
+            answer:
+              "Apabila lawatan pelanggan, kakitangan, stok, bunyi bising, aduan jiran atau PBT, atau keperluan peralatan melebihi kemampuan rumah. Bandingkan kos penuh premis dengan jualan tambahan sebelum anda membuat komitmen.",
+          },
+        ],
+      },
+    },
+  },
 ];
