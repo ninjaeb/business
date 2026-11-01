@@ -502,6 +502,50 @@
       ],
       "description": "Young woman running a clothing business from a home office with boxes and a laptop",
       "usedBy": "running-a-home-based-business-in-malaysia-office.webp"
+    },
+    {
+      "id": 8640118,
+      "tags": [
+        "freelancer",
+        "laptop",
+        "cafe",
+        "remote"
+      ],
+      "description": "Asian woman in a hijab working on a laptop in a coffee shop",
+      "usedBy": "freelancers-and-gig-workers-in-malaysia-cover.webp"
+    },
+    {
+      "id": 5538320,
+      "tags": [
+        "freelancer",
+        "laptop",
+        "cafe",
+        "remote"
+      ],
+      "description": "Young Asian woman with long hair working on a laptop in a cafe",
+      "usedBy": "freelancers-and-gig-workers-in-malaysia-contract.webp"
+    },
+    {
+      "id": 13736386,
+      "tags": [
+        "cashflow",
+        "cafe",
+        "cash-register",
+        "payments"
+      ],
+      "description": "Woman working at a cafe counter using a cash register",
+      "usedBy": "managing-cash-flow-for-malaysian-smes-cover.webp"
+    },
+    {
+      "id": 5835019,
+      "tags": [
+        "cashflow",
+        "cafe",
+        "cash-register",
+        "owner"
+      ],
+      "description": "Man in eyeglasses near a cash register at a cafe counter",
+      "usedBy": "managing-cash-flow-for-malaysian-smes-counter.webp"
     }
   ]
 }
