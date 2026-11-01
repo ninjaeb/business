@@ -14209,4 +14209,1152 @@ Perniagaan di rumah paling berkesan apabila ia dilayan seperti perniagaan sebena
       },
     },
   },
+  {
+    slug: "managing-cash-flow-for-malaysian-smes",
+    title: "Managing Cash Flow for Malaysian SMEs: Forecasting, Late Payers, and Short-Term Funding",
+    seoTitle: "Managing Cash Flow for Malaysian SMEs: A Practical Guide",
+    seoDescription:
+      "Why profitable Malaysian SMEs run out of cash: a simple forecast, chasing late payers, payment terms, a cash buffer, short-term funding and warning signs.",
+    coverImage: {
+      file: "managing-cash-flow-for-malaysian-smes-cover.webp",
+      mimeType: "image/webp",
+      alt: "A woman in an apron and striped scarf wiping the counter beside a tablet-style point-of-sale screen",
+      altTranslations: {
+        zh: "一位系着围裙、围着条纹围巾的女士在平板式收银屏幕旁擦拭柜台",
+        ms: "Seorang wanita berapron dan berskarf berjalur mengelap kaunter di sebelah skrin titik jualan jenis tablet",
+      },
+    },
+    contentImages: {
+      "counter-owner": {
+        file: "managing-cash-flow-for-malaysian-smes-counter.webp",
+        mimeType: "image/webp",
+        alt: "A man in glasses at a cafe counter holding cash and reaching towards a cup beside a card terminal",
+        altTranslations: {
+          zh: "一位戴眼镜的男士在咖啡店柜台旁手持现金，伸手去拿刷卡机旁的杯子",
+          ms: "Seorang lelaki berkaca mata di kaunter kafe memegang wang tunai dan mencapai cawan di sebelah terminal kad",
+        },
+        after: "Build a simple 13-week cash flow forecast before you worry about anything more sophisticated.",
+        afterTranslations: {
+          zh: "在考虑任何更复杂的做法之前，先建立一份简单的 13 周现金流预测。",
+          ms: "Bina ramalan aliran tunai 13 minggu yang mudah sebelum anda risau tentang apa-apa yang lebih canggih.",
+        },
+      },
+    },
+    excerpt:
+      "Many small businesses that fail were profitable on paper and simply ran out of cash at the wrong moment. This guide explains why that happens in Malaysia, how to build a simple cash flow forecast, how to speed up customer payments and manage what you owe, how much of a buffer to keep, and what short-term funding options exist and what they cost.",
+    body: `Profit and cash are not the same thing. A business can sell a lot, show a profit in its accounts, and still be unable to pay salaries on Friday because the customers who owe it money have not yet paid. For Malaysian SMEs, where customers often take two months or more to settle invoices, cash flow is usually the problem that decides whether a good business survives.
+
+This is general information, not financial advice. Interest rates, fees, eligibility rules, and funding schemes change and differ by lender, so confirm the current terms with the bank or provider, and speak to an accountant, before you borrow or change how you trade.
+
+## 1. Understand why profitable businesses run out of cash
+
+### Profit is not cash
+Profit counts a sale when you make it, but cash only arrives when the customer pays. Meanwhile you have already paid for stock, wages, rent, and suppliers. The gap between paying out and getting paid is where cash problems live.
+
+### Common causes in Malaysia
+Slow-paying customers are the most common cause, and surveys of Malaysian businesses have repeatedly found average payment times well beyond 30 days, with SMEs often waiting longer than large companies. Other causes include buying too much stock, big one-off purchases, seasonal sales, fast growth that needs more working capital, and owners drawing too much.
+
+### Growth can make it worse
+A business that grows quickly must spend before it earns, so more sales can mean a bigger cash gap. Many owners are caught out precisely when business looks best.
+
+### Why it matters
+Cash problems lead to late payments to suppliers, missed salaries, lost discounts, expensive emergency borrowing, and damaged credit. Late payment to your own suppliers or staff can also bring legal consequences.
+
+## 2. Build a simple cash flow forecast
+
+Build a simple 13-week cash flow forecast before you worry about anything more sophisticated. It shows, week by week, the cash you expect to receive and the cash you must pay out.
+
+### Step 1: Start with your opening cash
+Write down the cash in the bank and on hand today, and note any overdraft limit you can use.
+
+### Step 2: List the cash coming in
+For each week, estimate when customers will actually pay, not when you invoice. Use your real payment history, such as your average days to be paid, rather than the due date on the invoice.
+
+### Step 3: List the cash going out
+Include wages and statutory contributions, rent, supplier payments, loan instalments, tax payments, insurance, and your own drawings. Include irregular items such as annual licence renewals and tax bills. Our guides on the small business tax calendar and on hiring your first employee list common deadlines.
+
+### Step 4: Calculate the closing balance each week
+Opening cash plus cash in, minus cash out, gives the closing balance, which becomes next week's opening. Highlight any week where it goes negative or below a safe level.
+
+### Step 5: Update it every week
+Replace estimates with actuals, roll the forecast forward by a week, and compare what happened with what you expected. The habit matters more than the precision.
+
+### Use your accounting records
+A forecast is only as good as the data behind it. Our guide on bookkeeping basics explains how to keep records that make forecasting easy.
+
+## 3. Get paid faster
+
+### Set clear payment terms
+Put the due date and any late fee on every quotation and invoice, and keep credit periods as short as your market will bear. Our guide on collecting late payments explains how to write terms, send reminders, and escalate.
+
+### Invoice immediately and accurately
+Send the invoice the day you deliver, with the right details, so there is no excuse to delay. Unclear invoices are a common reason for late payment. If your business must issue e-invoices, see our guide on e-invoicing.
+
+### Ask for deposits and milestone payments
+For large or custom orders, take a deposit and bill in stages, so you are never funding the whole job yourself.
+
+### Offer easy ways to pay
+Accept online banking, QR payments, and cards where possible. The easier it is to pay, the faster people do.
+
+### Offer a sensible early-payment incentive
+A small discount for early payment can speed receipts, but check that the discount costs less than the funding you would otherwise need.
+
+### Check new customers
+Before extending credit, check that the customer is real and able to pay, and set a credit limit. A large order from a stranger is a risk.
+
+## 4. Manage what you owe
+
+### Negotiate supplier terms
+Ask suppliers for longer payment terms, staged deliveries, or better pricing for paying earlier, and keep your promises, since reliability helps in later negotiations.
+
+### Do not stretch payments to the point of damage
+Paying suppliers late can cost you discounts, supply, and trust. If you must delay, speak to the supplier first and agree a date.
+
+### Control stock
+Excess stock ties up cash. Order based on actual sales, review slow-moving items, and consider smaller, more frequent orders where the supplier allows it.
+
+### Time big purchases
+Spread large purchases, such as equipment, so they do not land in a thin month. Compare buying with leasing or financing, and see our guide on tax deductions for how the cost may be treated.
+
+### Pay yourself consistently
+Take a regular, affordable amount from the business, instead of ad hoc withdrawals that disrupt the forecast.
+
+## 5. Build a cash buffer
+
+### How much to hold
+A common rule of thumb is to hold enough cash to cover several months of essential costs, though the right amount depends on how predictable your sales are. Start with a smaller target, such as one month of fixed costs, and build from there.
+
+### Build it gradually
+Set aside a small percentage of every sale or payment into a separate account that you do not touch for day-to-day spending.
+
+### Keep business money separate
+A business account makes the buffer visible. Our guide on opening a business bank account explains what to prepare.
+
+### Protect against shocks
+Insurance can reduce the cash impact of fire, theft, or injury. See our guide on business insurance.
+
+> A cash crisis is almost never a surprise to someone who has a forecast. The point of forecasting is to see the shortfall eight weeks away, when you still have options, instead of eight days away, when you only have expensive ones.
+
+## 6. Know your short-term funding options and their costs
+
+Check the real cost and the terms of any funding before you accept it, and compare more than one offer.
+
+### Overdraft or revolving credit
+A bank overdraft or revolving line lets you borrow up to a limit as needed and pay interest on what you use. It is flexible, but it is usually repayable on demand, so it should cover short gaps, not permanent shortfalls.
+
+### Term loans and government-linked schemes
+For longer needs, a term loan may suit better. There are also financing programmes and guarantee schemes for SMEs through banks and development agencies. Our guide on SME grants and funding explains where to look before you borrow.
+
+### Invoice financing or factoring
+Some providers advance cash against unpaid invoices for a fee. It can bridge a gap while a large customer takes its time, but the total cost can be high, so work it out as an annual cost and check who bears the risk if the customer does not pay.
+
+### Supplier credit and trade terms
+Credit from suppliers is often the cheapest funding, if you use it responsibly.
+
+### Credit cards and informal loans
+Credit card balances and informal lenders can be very expensive. Avoid them for ongoing needs, and be wary of anyone offering quick money without clear terms.
+
+### Equity or owner funding
+Owners can inject money or bring in a partner, but this changes ownership and risk, so get advice and put agreements in writing. See our guide on contracts and terms.
+
+## 7. Watch for early warning signs
+
+### Signals to act on
+Customers paying later and later, suppliers asking for payment more often, using an overdraft permanently, delaying your own statutory payments, falling stock turnover, and surprise cash shortages.
+
+### What to do early
+Update your forecast, chase the largest overdue invoices, pause new credit to slow payers, cut non-essential spending, and speak to your bank or key suppliers before you miss a payment, not after.
+
+### Keep records of what you tell people
+Agreements to defer payments should be in writing so everyone remembers them the same way.
+
+If you need an accountant, a financial adviser, or a lender, you can [browse the directory](/en) for local professionals, and [creating a free business listing](/en/signup) helps new customers find and trust your business, which is the best cash-flow fix of all.
+
+## Common mistakes Malaysian SMEs make with cash flow
+
+- **Watching profit and ignoring cash.** A profitable business can still miss payroll if customers pay late.
+- **Having no forecast.** Without one, a shortfall is discovered when it is already a crisis.
+- **Using expensive funding for permanent problems.** Short-term borrowing at high cost cannot fix a structural gap between costs and receipts.
+
+## Where to start
+
+- **This week:** List your cash in the bank, who owes you money, and what you owe over the next three months.
+- **Next:** Build your 13-week forecast, and chase the largest overdue invoices.
+- **Then:** Tighten your payment terms, set up deposits for large orders, and renegotiate supplier terms where you can.
+- **Every week:** Update the forecast, and build a small buffer a little at a time.
+
+Cash flow is not a mystery. It is arithmetic you do a little each week, so that the shortfall never catches you by surprise.`,
+    faqs: [
+      {
+        question: "Why do profitable businesses run out of cash?",
+        answer:
+          "Profit counts a sale when it is made, but cash arrives only when the customer pays, and you have already paid for stock, wages, and rent. The gap between paying out and getting paid causes cash problems even in profitable businesses.",
+      },
+      {
+        question: "What is a 13-week cash flow forecast?",
+        answer:
+          "A week-by-week estimate of the cash you expect to receive and pay out over the next 13 weeks, starting from your current cash. It shows any week in which the balance would turn negative or too low, so you can act early.",
+      },
+      {
+        question: "How can I get my customers to pay faster?",
+        answer:
+          "Set clear payment terms, invoice immediately and accurately, take deposits and milestone payments, make paying easy, chase promptly, and check new customers before giving credit. Our guide on collecting late payments covers the escalation steps.",
+      },
+      {
+        question: "How much cash buffer should a small business hold?",
+        answer:
+          "A common rule of thumb is enough to cover several months of essential costs, though the right amount depends on how predictable your sales are. A good starting target is one month of fixed costs, built up gradually.",
+      },
+      {
+        question: "What short-term funding options are available?",
+        answer:
+          "Bank overdrafts or revolving credit, term loans and SME financing or guarantee schemes, invoice financing or factoring, supplier credit, and owner funding. Compare the real cost and terms of each, and confirm current conditions with the provider.",
+      },
+      {
+        question: "Is invoice financing a good idea?",
+        answer:
+          "It can bridge a gap while a large customer takes time to pay, but the total cost can be high. Work out the annual cost, check who bears the risk if the customer does not pay, and do not use it to cover a permanent shortfall.",
+      },
+      {
+        question: "What are the warning signs of a cash flow problem?",
+        answer:
+          "Customers paying later, suppliers chasing you more often, permanent use of an overdraft, delayed statutory payments, falling stock turnover, and surprise shortages. Update your forecast and act before you miss a payment.",
+      },
+      {
+        question: "Should I delay paying my suppliers to protect my cash?",
+        answer:
+          "Only with care. Paying late can cost you discounts, supply, and trust. If you must delay, speak to the supplier first, agree a new date in writing, and keep to it.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "马来西亚中小企业的现金流管理：预测、拖欠客户与短期融资",
+        excerpt:
+          "许多失败的小企业在账面上是盈利的，只是在错误的时刻现金用完了。本指南说明这种情况在马来西亚为什么会发生、如何建立简单的现金流预测、如何加快客户付款并管理您所欠的款项、应该保留多少缓冲，以及有哪些短期融资选项及其成本。",
+        body: `利润和现金不是一回事。一家企业可以销售很多、账目上显示盈利，却在星期五发不出薪水，因为欠它钱的客户还没有付款。对马来西亚的中小企业来说，客户常常需要两个月甚至更久才结清发票，现金流往往决定一家好企业能否生存。
+
+以下仅为一般资讯，并非财务意见。利率、费用、资格规定和融资计划会变动，也因贷款机构而异，所以在借贷或改变经营方式之前，请向银行或服务商确认最新条款，并咨询会计师。
+
+## 1. 了解盈利的企业为什么会用完现金
+
+### 利润不是现金
+利润在您做成销售时就算入，但现金只有在客户付款时才到账。与此同时，您已经为存货、工资、租金和供应商付了款。付出与收到之间的缺口，就是现金问题所在。
+
+### 马来西亚常见的原因
+客户拖欠付款是最常见的原因，对马来西亚企业的调查一再发现平均付款时间远超 30 天，中小企业的等待时间往往比大公司更长。其他原因包括存货买得太多、大额一次性采购、销售有季节性、快速增长需要更多营运资金，以及业主提款过多。
+
+### 增长可能让情况更糟
+快速增长的企业必须先花钱后赚钱，所以销售增加可能意味着更大的现金缺口。许多企业主恰恰在生意看起来最好的时候出事。
+
+### 为什么重要
+现金问题会导致延迟付款给供应商、发不出薪水、失去折扣、昂贵的应急借贷，以及信用受损。延迟支付供应商或员工，还可能带来法律后果。
+
+## 2. 建立简单的现金流预测
+
+在考虑任何更复杂的做法之前，先建立一份简单的 13 周现金流预测。它逐周显示您预期收到的现金和必须付出的现金。
+
+### 第一步：从期初现金开始
+写下今天银行里和手头的现金，并注明您可以使用的透支额度。
+
+### 第二步：列出流入的现金
+对每一周，估计客户实际上何时会付款，而不是您何时开出发票。请使用您真实的付款记录，例如平均收款天数，而不是发票上的到期日。
+
+### 第三步：列出流出的现金
+包括工资和法定供款、租金、供应商付款、贷款分期、税款、保险，以及您自己的提款。也要包括不定期的项目，例如年度执照续期和税单。我们关于小企业税务日历和雇用第一位员工的指南列出了常见的截止日期。
+
+### 第四步：计算每周的期末余额
+期初现金加流入、减流出，得出期末余额，成为下一周的期初。把余额变成负数或低于安全水平的任何一周标出来。
+
+### 第五步：每周更新
+用实际数字取代估计，把预测向前滚动一周，并比较实际发生的与您预期的。习惯比精确度更重要。
+
+### 利用您的会计记录
+预测的质量取决于背后的数据。我们关于簿记基础的指南说明了如何保存让预测变得容易的记录。
+
+## 3. 更快收到款项
+
+### 设定清晰的付款条款
+在每一份报价单和发票上写明到期日和任何滞纳金，并在您的市场能承受的范围内尽量缩短信用期。我们关于追收逾期货款的指南说明了如何撰写条款、发送提醒和升级处理。
+
+### 立即并准确地开发票
+在交货当天开出发票，并附上正确的资料，让对方没有拖延的借口。含糊的发票是逾期付款的常见原因。如果您的企业须开出电子发票，请参阅我们关于电子发票的指南。
+
+### 要求订金和阶段付款
+对大型或定制订单，收取订金并分阶段收款，这样您就不必自己垫付整个工作的资金。
+
+### 提供方便的付款方式
+尽可能接受网上银行、二维码支付和银行卡。付款越容易，人们付得越快。
+
+### 提供合理的提前付款优惠
+为提前付款提供小额折扣可以加快收款，但请确认折扣的成本低于您否则需要的融资成本。
+
+### 查核新客户
+在给予赊账之前，查核客户是否真实且有能力付款，并设定信用额度。来自陌生人的大订单是一种风险。
+
+## 4. 管理您所欠的款项
+
+### 谈判供应商条款
+向供应商争取更长的付款期、分批交货，或提前付款的更优价格，并信守承诺，因为可靠对日后的谈判有帮助。
+
+### 不要把付款拖到造成损害的地步
+延迟支付供应商可能让您损失折扣、供货和信任。如果必须延迟，请先与供应商沟通并约定日期。
+
+### 控制存货
+过多的存货会占用现金。根据实际销售订货，检视滞销品，并在供应商允许的情况下考虑更小、更频繁的订单。
+
+### 把握大额采购的时机
+把设备等大额采购分散开，不要集中在业绩淡的月份。比较购买与租赁或融资，并参阅我们关于税务扣除的指南，了解成本可能如何处理。
+
+### 持续地给自己发薪
+从企业定期提取一笔负担得起的金额，而不是临时随意提款，打乱预测。
+
+## 5. 建立现金缓冲
+
+### 该留多少
+常见的经验法则是留存足以支付几个月基本成本的现金，不过合适的数额取决于您的销售有多可预测。先从较小的目标开始，例如一个月的固定成本，再逐步累积。
+
+### 逐步累积
+把每一笔销售或收款的一小部分，存入一个您在日常开销中不会动用的独立账户。
+
+### 把公款分开
+企业账户让缓冲一目了然。我们关于开立企业银行账户的指南说明了需要准备什么。
+
+### 防范冲击
+保险可以降低火灾、失窃或受伤对现金的冲击。请参阅我们关于商业保险的指南。
+
+> 对于有预测的人来说，现金危机几乎从来不是意外。预测的意义，在于在还有选择的八周之前，而不是只剩昂贵选择的八天之前，就看到缺口。
+
+## 6. 了解您的短期融资选项及其成本
+
+在接受任何融资之前，请先查核真实成本和条款，并比较多个报价。
+
+### 透支或循环信贷
+银行透支或循环信贷让您按需要在额度内借款，只为已使用的部分付利息。它灵活，但通常可被要求即时偿还，所以应该用来弥补短暂的缺口，而不是长期的亏空。
+
+### 定期贷款和政府相关计划
+对较长期的需求，定期贷款可能更合适。银行和发展机构也为中小企业提供融资计划和担保计划。我们关于中小企业补助与融资的指南说明了借贷之前该去哪里看。
+
+### 发票融资或保理
+有些服务商以未付发票为抵押预支现金并收取费用。当大客户拖延时，它可以弥补缺口，但总成本可能很高，所以请算出年化成本，并查清客户不付款时由谁承担风险。
+
+### 供应商信贷和贸易条款
+来自供应商的信贷往往是最便宜的融资，只要您负责任地使用。
+
+### 信用卡和非正规借贷
+信用卡余额和非正规放贷人可能非常昂贵。请不要用它们应付持续的需求，并对任何没有清晰条款就提供快钱的人保持警惕。
+
+### 股权或业主注资
+业主可以注入资金或引入合伙人，但这会改变所有权和风险，所以请寻求意见并把协议写成书面。请参阅我们关于合约与条款的指南。
+
+## 7. 留意早期警讯
+
+### 需要采取行动的信号
+客户付款越来越晚、供应商更频繁地催款、永久性地使用透支、延迟缴付自己的法定款项、存货周转下降，以及意外的现金短缺。
+
+### 及早该做什么
+更新您的预测，追收最大的逾期发票，暂停对拖欠客户的新赊账，削减非必要开支，并在错过付款之前，而不是之后，就与您的银行或主要供应商沟通。
+
+### 保存您所说内容的记录
+延期付款的协议应该写成书面，让每个人都以同样的方式记得。
+
+如果您需要会计师、财务顾问或贷款机构，可以[浏览名录](/zh)寻找本地专业人士，而[创建免费的企业列表](/zh/signup)可以帮助新客户找到并信任您的企业，这是最好的现金流解决办法。
+
+## 马来西亚中小企业在现金流上常犯的错误
+
+- **只看利润而忽略现金。** 即使盈利的企业，如果客户付款迟了，也可能发不出工资。
+- **没有预测。** 没有预测，缺口在已经成为危机时才被发现。
+- **用昂贵的融资解决长期问题。** 高成本的短期借贷，无法弥补成本与收入之间的结构性缺口。
+
+## 从哪里开始
+
+- **本周：**列出您银行里的现金、谁欠您钱，以及未来三个月您欠的款项。
+- **接着：**建立您的 13 周预测，并追收最大的逾期发票。
+- **然后：**收紧您的付款条款，为大订单设置订金，并在可能的地方重新谈判供应商条款。
+- **每周：**更新预测，并一点一点地建立一个小缓冲。
+
+现金流并不神秘。它是您每周做一点的算术，让缺口永远不会让您措手不及。`,
+        faqs: [
+          {
+            question: "盈利的企业为什么会用完现金？",
+            answer:
+              "利润在做成销售时就算入，但现金只在客户付款时才到账，而您已经为存货、工资和租金付了款。付出与收到之间的缺口，即使在盈利的企业中也会造成现金问题。",
+          },
+          {
+            question: "什么是 13 周现金流预测？",
+            answer:
+              "从您目前的现金开始，逐周估计未来 13 周预期收到和付出的现金。它显示余额会变成负数或过低的任何一周，让您可以及早采取行动。",
+          },
+          {
+            question: "如何让客户更快付款？",
+            answer:
+              "设定清晰的付款条款、立即并准确地开发票、收取订金和阶段付款、让付款变得容易、及时追收，并在给予赊账前查核新客户。我们关于追收逾期货款的指南涵盖了升级处理的步骤。",
+          },
+          {
+            question: "小企业应该保留多少现金缓冲？",
+            answer:
+              "常见的经验法则是足以支付几个月的基本成本，不过合适的数额取决于您的销售有多可预测。一个好的起始目标是一个月的固定成本，再逐步累积。",
+          },
+          {
+            question: "有哪些短期融资选项？",
+            answer:
+              "银行透支或循环信贷、定期贷款和中小企业融资或担保计划、发票融资或保理、供应商信贷，以及业主注资。请比较每一项的真实成本和条款，并向服务商确认现行条件。",
+          },
+          {
+            question: "发票融资是个好主意吗？",
+            answer:
+              "当大客户需要时间付款时，它可以弥补缺口，但总成本可能很高。请算出年化成本，查清客户不付款时由谁承担风险，并且不要用它来弥补长期的亏空。",
+          },
+          {
+            question: "现金流问题有哪些警讯？",
+            answer:
+              "客户付款越来越晚、供应商更频繁地催款、永久性地使用透支、延迟法定款项、存货周转下降，以及意外的短缺。请更新您的预测，并在错过付款之前采取行动。",
+          },
+          {
+            question: "我应该延迟付款给供应商来保护现金吗？",
+            answer:
+              "只能谨慎地做。延迟付款可能让您损失折扣、供货和信任。如果必须延迟，请先与供应商沟通，以书面约定新的日期，并信守承诺。",
+          },
+        ],
+      },
+      ms: {
+        title: "Menguruskan Aliran Tunai untuk PKS Malaysia: Ramalan, Pembayar Lewat dan Pembiayaan Jangka Pendek",
+        excerpt:
+          "Banyak perniagaan kecil yang gagal sebenarnya menguntungkan di atas kertas dan hanya kehabisan wang tunai pada saat yang salah. Panduan ini menerangkan mengapa ini berlaku di Malaysia, cara membina ramalan aliran tunai yang mudah, cara mempercepatkan bayaran pelanggan dan menguruskan apa yang anda terhutang, berapa banyak penimbal yang perlu disimpan, serta pilihan pembiayaan jangka pendek dan kosnya.",
+        body: `Keuntungan dan wang tunai bukan perkara yang sama. Perniagaan boleh menjual banyak, menunjukkan keuntungan dalam akaunnya, dan masih tidak dapat membayar gaji pada hari Jumaat kerana pelanggan yang terhutang wang kepadanya belum membayar. Bagi PKS Malaysia, di mana pelanggan sering mengambil dua bulan atau lebih untuk menyelesaikan invois, aliran tunai biasanya masalah yang menentukan sama ada perniagaan yang baik dapat bertahan.
+
+Ini ialah maklumat am, bukan nasihat kewangan. Kadar faedah, yuran, peraturan kelayakan dan skim pembiayaan berubah dan berbeza mengikut pemberi pinjaman, jadi sahkan terma semasa dengan bank atau penyedia, dan bercakap dengan akauntan, sebelum anda berhutang atau mengubah cara anda berniaga.
+
+## 1. Fahami mengapa perniagaan yang menguntungkan kehabisan wang tunai
+
+### Keuntungan bukan wang tunai
+Keuntungan mengira jualan apabila ia dibuat, tetapi wang tunai hanya tiba apabila pelanggan membayar. Sementara itu anda sudah membayar untuk stok, gaji, sewa dan pembekal. Jurang antara membayar keluar dan dibayar itulah tempat masalah tunai berada.
+
+### Punca lazim di Malaysia
+Pelanggan yang membayar lambat ialah punca paling lazim, dan tinjauan terhadap perniagaan Malaysia berulang kali mendapati masa bayaran purata jauh melebihi 30 hari, dengan PKS sering menunggu lebih lama daripada syarikat besar. Punca lain termasuk membeli terlalu banyak stok, pembelian besar sekali sahaja, jualan bermusim, pertumbuhan pantas yang memerlukan lebih modal kerja, dan pemilik mengeluarkan terlalu banyak.
+
+### Pertumbuhan boleh memburukkan keadaan
+Perniagaan yang berkembang pantas mesti berbelanja sebelum memperoleh, jadi jualan lebih banyak boleh bermakna jurang tunai yang lebih besar. Ramai pemilik terperangkap tepat ketika perniagaan kelihatan paling baik.
+
+### Mengapa ia penting
+Masalah tunai membawa kepada bayaran lewat kepada pembekal, gaji terlepas, kehilangan diskaun, pinjaman kecemasan yang mahal dan kredit yang rosak. Bayaran lewat kepada pembekal atau kakitangan anda sendiri juga boleh membawa akibat undang-undang.
+
+## 2. Bina ramalan aliran tunai yang mudah
+
+Bina ramalan aliran tunai 13 minggu yang mudah sebelum anda risau tentang apa-apa yang lebih canggih. Ia menunjukkan, minggu demi minggu, wang tunai yang anda jangka terima dan wang tunai yang mesti anda bayar keluar.
+
+### Langkah 1: Mulakan dengan wang tunai pembukaan anda
+Tulis wang tunai di bank dan di tangan hari ini, dan catat sebarang had overdraf yang boleh anda gunakan.
+
+### Langkah 2: Senaraikan wang tunai masuk
+Bagi setiap minggu, anggar bila pelanggan sebenarnya akan membayar, bukan bila anda mengeluarkan invois. Gunakan sejarah bayaran sebenar anda, seperti purata hari untuk dibayar, dan bukannya tarikh matang pada invois.
+
+### Langkah 3: Senaraikan wang tunai keluar
+Sertakan gaji dan caruman berkanun, sewa, bayaran pembekal, ansuran pinjaman, bayaran cukai, insurans, dan pengeluaran anda sendiri. Sertakan item tidak tetap seperti pembaharuan lesen tahunan dan bil cukai. Panduan kami tentang kalendar cukai perniagaan kecil dan mengambil pekerja pertama menyenaraikan tarikh akhir lazim.
+
+### Langkah 4: Kira baki penutup setiap minggu
+Wang tunai pembukaan campur wang masuk, tolak wang keluar, memberi baki penutup, yang menjadi pembukaan minggu depan. Serlahkan mana-mana minggu di mana ia menjadi negatif atau di bawah paras selamat.
+
+### Langkah 5: Kemas kini setiap minggu
+Gantikan anggaran dengan angka sebenar, gulungkan ramalan ke hadapan seminggu, dan bandingkan apa yang berlaku dengan apa yang anda jangka. Tabiat lebih penting daripada ketepatan.
+
+### Gunakan rekod perakaunan anda
+Ramalan hanya sebaik data di sebaliknya. Panduan kami tentang asas simpan kira menerangkan cara menyimpan rekod yang memudahkan ramalan.
+
+## 3. Dibayar dengan lebih pantas
+
+### Tetapkan terma bayaran yang jelas
+Letakkan tarikh matang dan sebarang yuran lewat pada setiap sebut harga dan invois, dan pastikan tempoh kredit sependek yang boleh ditanggung pasaran anda. Panduan kami tentang menuntut bayaran lewat menerangkan cara menulis terma, menghantar peringatan dan meningkatkan tindakan.
+
+### Keluarkan invois serta-merta dan dengan tepat
+Hantar invois pada hari anda menghantar, dengan butiran yang betul, supaya tiada alasan untuk melengahkan. Invois yang tidak jelas ialah punca lazim bayaran lewat. Jika perniagaan anda mesti mengeluarkan e-Invois, lihat panduan kami tentang e-Invois.
+
+### Minta deposit dan bayaran peringkat
+Bagi pesanan besar atau khas, ambil deposit dan bil secara berperingkat, supaya anda tidak membiayai keseluruhan kerja sendiri.
+
+### Tawarkan cara bayaran yang mudah
+Terima perbankan dalam talian, bayaran QR dan kad jika boleh. Semakin mudah untuk membayar, semakin cepat orang membayar.
+
+### Tawarkan insentif bayaran awal yang munasabah
+Diskaun kecil untuk bayaran awal boleh mempercepatkan penerimaan, tetapi pastikan diskaun itu kosnya kurang daripada pembiayaan yang anda perlukan sebaliknya.
+
+### Semak pelanggan baharu
+Sebelum memberi kredit, semak bahawa pelanggan itu sebenar dan mampu membayar, dan tetapkan had kredit. Pesanan besar daripada orang asing ialah risiko.
+
+## 4. Urus apa yang anda terhutang
+
+### Rundingkan terma pembekal
+Minta pembekal memberi terma bayaran lebih panjang, penghantaran berperingkat, atau harga lebih baik untuk bayaran lebih awal, dan tepati janji anda, kerana kebolehpercayaan membantu dalam rundingan kemudian.
+
+### Jangan melambatkan bayaran sehingga menjadi kerosakan
+Membayar pembekal lewat boleh menyebabkan anda kehilangan diskaun, bekalan dan kepercayaan. Jika anda mesti menangguh, bercakap dengan pembekal dahulu dan persetujui tarikh.
+
+### Kawal stok
+Stok berlebihan mengikat wang tunai. Pesan berdasarkan jualan sebenar, semak item yang lambat bergerak, dan pertimbangkan pesanan lebih kecil dan lebih kerap jika pembekal membenarkan.
+
+### Tetapkan masa pembelian besar
+Sebarkan pembelian besar, seperti peralatan, supaya ia tidak jatuh pada bulan yang tipis. Bandingkan membeli dengan memajak atau pembiayaan, dan lihat panduan kami tentang potongan cukai untuk bagaimana kos mungkin dilayan.
+
+### Bayar diri anda secara konsisten
+Ambil jumlah tetap yang mampu daripada perniagaan, bukannya pengeluaran sesuka hati yang mengganggu ramalan.
+
+## 5. Bina penimbal tunai
+
+### Berapa banyak untuk disimpan
+Kaedah praktikal yang lazim ialah menyimpan wang tunai yang cukup untuk menampung beberapa bulan kos penting, walaupun jumlah yang betul bergantung pada betapa boleh diramal jualan anda. Mulakan dengan sasaran lebih kecil, seperti kos tetap sebulan, dan bina dari situ.
+
+### Bina secara beransur-ansur
+Asingkan peratusan kecil setiap jualan atau bayaran ke dalam akaun berasingan yang tidak anda sentuh untuk perbelanjaan harian.
+
+### Pisahkan wang perniagaan
+Akaun perniagaan menjadikan penimbal kelihatan. Panduan kami tentang membuka akaun bank perniagaan menerangkan apa yang perlu disediakan.
+
+### Lindungi daripada kejutan
+Insurans boleh mengurangkan kesan tunai kebakaran, kecurian atau kecederaan. Lihat panduan kami tentang insurans perniagaan.
+
+> Krisis tunai hampir tidak pernah mengejutkan sesiapa yang mempunyai ramalan. Tujuan meramal ialah melihat kekurangan lapan minggu lagi, ketika anda masih ada pilihan, dan bukannya lapan hari lagi, ketika anda hanya ada pilihan yang mahal.
+
+## 6. Ketahui pilihan pembiayaan jangka pendek dan kosnya
+
+Semak kos sebenar dan terma sebarang pembiayaan sebelum anda menerimanya, dan bandingkan lebih daripada satu tawaran.
+
+### Overdraf atau kredit berputar
+Overdraf bank atau kemudahan berputar membolehkan anda meminjam sehingga had mengikut keperluan dan membayar faedah ke atas apa yang anda gunakan. Ia fleksibel, tetapi biasanya boleh dituntut balik apabila diminta, jadi ia harus menampung jurang pendek dan bukan kekurangan tetap.
+
+### Pinjaman berjangka dan skim berkaitan kerajaan
+Bagi keperluan lebih panjang, pinjaman berjangka mungkin lebih sesuai. Terdapat juga program pembiayaan dan skim jaminan untuk PKS melalui bank dan agensi pembangunan. Panduan kami tentang geran dan pembiayaan PKS menerangkan di mana hendak mencari sebelum anda berhutang.
+
+### Pembiayaan invois atau pemfaktoran
+Sesetengah penyedia memberi pendahuluan tunai terhadap invois yang belum dibayar dengan bayaran. Ia boleh merapatkan jurang semasa pelanggan besar mengambil masa, tetapi jumlah kosnya boleh tinggi, jadi kiralah sebagai kos tahunan dan semak siapa yang menanggung risiko jika pelanggan tidak membayar.
+
+### Kredit pembekal dan terma perdagangan
+Kredit daripada pembekal sering pembiayaan paling murah, jika anda menggunakannya dengan bertanggungjawab.
+
+### Kad kredit dan pinjaman tidak formal
+Baki kad kredit dan pemberi pinjaman tidak formal boleh sangat mahal. Elakkannya untuk keperluan berterusan, dan berwaspada terhadap sesiapa yang menawarkan wang cepat tanpa terma yang jelas.
+
+### Ekuiti atau pembiayaan pemilik
+Pemilik boleh menyuntik wang atau membawa masuk rakan kongsi, tetapi ini mengubah pemilikan dan risiko, jadi dapatkan nasihat dan tulis perjanjian secara bertulis. Lihat panduan kami tentang kontrak dan terma.
+
+## 7. Perhatikan tanda amaran awal
+
+### Isyarat untuk bertindak
+Pelanggan membayar semakin lewat, pembekal meminta bayaran lebih kerap, menggunakan overdraf secara berterusan, menangguhkan bayaran berkanun anda sendiri, perolehan stok menurun, dan kekurangan tunai yang mengejut.
+
+### Apa yang perlu dilakukan lebih awal
+Kemas kini ramalan anda, kejar invois tertunggak terbesar, hentikan kredit baharu kepada pembayar lambat, kurangkan perbelanjaan tidak penting, dan bercakap dengan bank atau pembekal utama anda sebelum anda terlepas bayaran, bukan selepasnya.
+
+### Simpan rekod apa yang anda beritahu orang
+Persetujuan untuk menangguhkan bayaran harus bertulis supaya semua orang mengingatinya dengan cara yang sama.
+
+Jika anda memerlukan akauntan, penasihat kewangan atau pemberi pinjaman, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pelanggan baharu menemui dan mempercayai perniagaan anda, yang merupakan penyelesaian aliran tunai yang terbaik.
+
+## Kesilapan lazim PKS Malaysia dengan aliran tunai
+
+- **Memerhati keuntungan dan mengabaikan wang tunai.** Perniagaan yang menguntungkan masih boleh terlepas gaji jika pelanggan membayar lewat.
+- **Tiada ramalan.** Tanpa ramalan, kekurangan ditemui apabila ia sudah menjadi krisis.
+- **Menggunakan pembiayaan mahal untuk masalah tetap.** Pinjaman jangka pendek berkos tinggi tidak dapat membetulkan jurang struktur antara kos dan penerimaan.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Senaraikan wang tunai di bank anda, siapa yang terhutang wang kepada anda, dan apa yang anda terhutang dalam tiga bulan akan datang.
+- **Seterusnya:** Bina ramalan 13 minggu anda, dan kejar invois tertunggak terbesar.
+- **Kemudian:** Ketatkan terma bayaran anda, tetapkan deposit bagi pesanan besar, dan rundingkan semula terma pembekal jika boleh.
+- **Setiap minggu:** Kemas kini ramalan, dan bina penimbal kecil sedikit demi sedikit.
+
+Aliran tunai bukan misteri. Ia ialah aritmetik yang anda lakukan sedikit setiap minggu, supaya kekurangan tidak pernah mengejutkan anda.`,
+        faqs: [
+          {
+            question: "Mengapa perniagaan yang menguntungkan kehabisan wang tunai?",
+            answer:
+              "Keuntungan mengira jualan apabila ia dibuat, tetapi wang tunai hanya tiba apabila pelanggan membayar, dan anda sudah membayar untuk stok, gaji dan sewa. Jurang antara membayar keluar dan dibayar menyebabkan masalah tunai walaupun dalam perniagaan yang menguntungkan.",
+          },
+          {
+            question: "Apakah ramalan aliran tunai 13 minggu?",
+            answer:
+              "Anggaran minggu demi minggu bagi wang tunai yang anda jangka terima dan bayar keluar sepanjang 13 minggu akan datang, bermula daripada wang tunai semasa anda. Ia menunjukkan mana-mana minggu di mana baki akan menjadi negatif atau terlalu rendah, supaya anda boleh bertindak lebih awal.",
+          },
+          {
+            question: "Bagaimanakah saya boleh membuat pelanggan membayar lebih pantas?",
+            answer:
+              "Tetapkan terma bayaran yang jelas, keluarkan invois serta-merta dan dengan tepat, ambil deposit dan bayaran peringkat, permudahkan pembayaran, kejar dengan segera, dan semak pelanggan baharu sebelum memberi kredit. Panduan kami tentang menuntut bayaran lewat merangkumi langkah peningkatan tindakan.",
+          },
+          {
+            question: "Berapa banyak penimbal tunai yang patut disimpan oleh perniagaan kecil?",
+            answer:
+              "Kaedah praktikal yang lazim ialah cukup untuk menampung beberapa bulan kos penting, walaupun jumlah yang betul bergantung pada betapa boleh diramal jualan anda. Sasaran permulaan yang baik ialah kos tetap sebulan, dibina secara beransur-ansur.",
+          },
+          {
+            question: "Apakah pilihan pembiayaan jangka pendek yang ada?",
+            answer:
+              "Overdraf bank atau kredit berputar, pinjaman berjangka dan skim pembiayaan atau jaminan PKS, pembiayaan invois atau pemfaktoran, kredit pembekal, dan pembiayaan pemilik. Bandingkan kos sebenar dan terma setiap satu, dan sahkan syarat semasa dengan penyedia.",
+          },
+          {
+            question: "Adakah pembiayaan invois idea yang baik?",
+            answer:
+              "Ia boleh merapatkan jurang semasa pelanggan besar mengambil masa untuk membayar, tetapi jumlah kosnya boleh tinggi. Kira kos tahunan, semak siapa yang menanggung risiko jika pelanggan tidak membayar, dan jangan gunakannya untuk menampung kekurangan tetap.",
+          },
+          {
+            question: "Apakah tanda amaran masalah aliran tunai?",
+            answer:
+              "Pelanggan membayar lebih lewat, pembekal mengejar anda lebih kerap, penggunaan overdraf yang berterusan, bayaran berkanun yang ditangguhkan, perolehan stok yang menurun, dan kekurangan yang mengejut. Kemas kini ramalan anda dan bertindak sebelum anda terlepas bayaran.",
+          },
+          {
+            question: "Patutkah saya menangguhkan bayaran kepada pembekal untuk melindungi wang tunai saya?",
+            answer:
+              "Hanya dengan berhati-hati. Membayar lewat boleh menyebabkan anda kehilangan diskaun, bekalan dan kepercayaan. Jika anda mesti menangguh, bercakap dengan pembekal dahulu, persetujui tarikh baharu secara bertulis, dan patuhinya.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "freelancers-and-gig-workers-in-malaysia",
+    title: "Working with Freelancers, Part-Timers, and Gig Workers in Malaysia: Contracts, Pay, and Legal Status",
+    seoTitle: "Working with Freelancers and Gig Workers in Malaysia",
+    seoDescription:
+      "How Malaysian SMEs can engage freelancers, part-timers and gig workers: contractor vs employee, written agreements, pay, tax and the Gig Workers law.",
+    coverImage: {
+      file: "freelancers-and-gig-workers-in-malaysia-cover.webp",
+      mimeType: "image/webp",
+      alt: "A freelancer working on a laptop at a table with a notebook and coffee",
+      altTranslations: {
+        zh: "一位自由工作者在桌前使用笔记本电脑，旁边放着笔记本和咖啡",
+        ms: "Seorang pekerja bebas bekerja dengan komputer riba di meja bersama buku nota dan kopi",
+      },
+    },
+    contentImages: {
+      contract: {
+        file: "freelancers-and-gig-workers-in-malaysia-contract.webp",
+        mimeType: "image/webp",
+        alt: "Two people reviewing a document together across a desk",
+        altTranslations: {
+          zh: "两个人在桌子两侧一起查看一份文件",
+          ms: "Dua orang menyemak dokumen bersama-sama di seberang meja",
+        },
+        after: "Put the arrangement in a written agreement before any work starts.",
+        afterTranslations: {
+          zh: "在任何工作开始之前，把安排写成书面协议。",
+          ms: "Letakkan susunan itu dalam perjanjian bertulis sebelum sebarang kerja bermula.",
+        },
+      },
+    },
+    excerpt:
+      "Freelancers, part-timers and gig workers let a small business flex without a full payroll, but getting the label wrong can create legal and tax problems. This guide explains the difference between an employee and an independent contractor in Malaysia, what to put in a written agreement, how to pay and keep records, what to know about the new Gig Workers law, and the mistakes to avoid.",
+    body: `Many Malaysian SMEs rely on people who are not full-time employees: a freelance designer, a part-time cashier, a weekend event crew, or a driver who takes delivery jobs through an app. This flexibility is useful, but the label you give someone does not decide their legal status. Getting it wrong can mean unpaid statutory contributions, disputes, and penalties.
+
+This is general information, not legal advice. Employment, social security, tax and gig work rules are changing, and how they apply depends on the facts of each arrangement. Confirm the current rules with the relevant authorities, and speak to a lawyer or accountant before you decide how to engage someone.
+
+## 1. Know the main types of working arrangements
+
+### Employee
+An employee works under a contract of service. You control how, when, and where they work, they are part of your business, and they usually receive regular pay and benefits. Employment law applies, including statutory contributions and protections. Our guide on hiring your first employee covers the basics.
+
+### Part-time employee
+A part-timer is still an employee, just working fewer hours. Part-time employees have rights and protections too, and Malaysian employment law has specific provisions on part-time work, so check the current rules for hours, rest days, and pay.
+
+### Freelancer or independent contractor
+A freelancer works under a contract for service. They run their own business, decide how to do the work, may serve several clients, and usually supply their own tools. You pay for a result or a project, not for being at your disposal.
+
+### Gig or platform worker
+Gig workers take jobs, often through a digital platform, such as ride-hailing, food delivery, or task apps. Malaysia has introduced legislation for gig workers, which is covered below.
+
+### Why the difference matters
+The legal status decides who pays statutory contributions, whether employment protections apply, how tax is handled, and who bears risk if something goes wrong.
+
+## 2. Work out whether someone is really a contractor
+
+Calling someone a freelancer does not make them one. Authorities and courts look at how the relationship works in practice.
+
+### Questions that point to employment
+Do you set their hours and tell them how to do the work? Must they work only for you? Do they use your equipment, wear your uniform, or report to your manager? Are they paid a regular amount, whatever the output? Can they not send a substitute?
+
+### Questions that point to a contractor
+Do they decide how and when to deliver? Do they have other clients? Do they use their own tools and take their own risks? Are they paid per project or deliverable? Do they invoice you?
+
+### When in doubt, get advice
+If you are not sure, talk to a lawyer, or ask the relevant authority. Treating a real employee as a contractor to avoid costs is risky, and a dispute can lead to back payments and penalties.
+
+## 3. Put the arrangement in writing
+
+Put the arrangement in a written agreement before any work starts. A clear document protects both sides and reduces arguments about scope, payment, and ownership.
+
+### What a freelancer agreement should cover
+- **Parties and relationship:** Names, and a clear statement that it is a contract for service, not employment, where that is genuinely true.
+- **Scope of work:** What will be delivered, in what format, and by when.
+- **Fees and payment terms:** The amount, how it is calculated, when invoices are due, and any deposit or milestone payments.
+- **Revisions and changes:** How many rounds of changes are included, and how extra work is priced.
+- **Ownership of the work:** Who owns the intellectual property once paid, and whether the freelancer can show it in a portfolio.
+- **Confidentiality:** Protection of your customer lists, prices, and plans.
+- **Cancellation and termination:** Notice, kill fees, and what happens to work in progress.
+- **Liability and tools:** Who supplies tools, who bears the cost of mistakes, and whether the freelancer needs insurance.
+- **Data protection:** If they handle personal data, set out how it must be protected. Our guide on personal data protection explains your duties.
+
+### What a part-time employment contract should cover
+Because a part-timer is an employee, use an employment contract covering hours, pay rate, duties, probation, leave entitlements, and termination. Our guide on contracts and terms explains how to draft clear terms.
+
+### Keep signed copies
+Both sides should sign and keep a copy, and any changes should be agreed in writing.
+
+## 4. Pay people correctly
+
+### Freelancers and contractors
+Pay according to the agreed terms, ask for an invoice, and keep records of what you paid for what. Pay on time, since late payment damages your reputation and the relationship. A freelancer is generally responsible for their own tax and any social security cover, but confirm the current position with the relevant authorities.
+
+### Part-time employees
+Pay at least the minimum wage that applies, pay overtime and rest-day work as required, and make the required statutory contributions and deductions. Check the current minimum wage rates and rules, since they have changed over time. Issue payslips and keep payroll records. Our guide on payroll and statutory contributions explains the steps.
+
+### Do not pay in a way that hides the relationship
+Paying cash with no records, or splitting an employee's pay into "allowances" to avoid contributions, creates risk for both sides.
+
+### Withholding tax and reporting
+Some payments, especially to non-residents, may have withholding tax obligations. Check the current rules, and speak to your accountant. Our guide on the small business tax calendar lists common deadlines.
+
+### Record every payment
+Keep invoices, agreements, and proof of payment, which are also needed for your deductions. See our guide on tax deductions.
+
+## 5. Understand the new rules for gig workers
+
+> Malaysia has moved to give gig workers a legal framework, and the details are still being rolled out. Do not rely on a summary: read the current official text and guidance before you decide how it affects you.
+
+### What the law is about
+Malaysia passed a Gig Workers law in 2025 aiming to give people who work through digital platforms certain protections, such as clearer terms, a way to resolve disputes, and social security coverage. The exact scope, the dates of effect, the definitions, and the duties placed on platforms and on those who use them may be set through further regulations and guidance.
+
+### Who it may affect
+It is aimed mainly at platform-based work, not at every freelancer. If your business uses a platform to engage people, or itself operates one, you should check whether the rules apply to you. If you simply hire a freelancer directly for a project, other rules on employment and contracts matter more.
+
+### Social security coverage
+Gig workers and some self-employed people may be able to join a social security scheme for self-employed persons. Check the current scheme with the relevant social security body for who can join, the contribution rates, and the benefits.
+
+### Keep up to date
+Because the framework is new, check the relevant ministry's and agencies' announcements periodically. A short call to an adviser each year is cheap insurance.
+
+## 6. Manage the working relationship well
+
+### Brief clearly
+Give a clear brief with examples, deadlines, and the decision-maker. Most freelancer problems start with a vague brief.
+
+### Pay milestones, not just the end
+For larger jobs, pay a deposit and then milestone payments, which keeps both sides committed.
+
+### Respect the independence
+If you want someone to follow your schedule, use your tools, and work only for you, you are probably hiring an employee, and should treat them that way.
+
+### Protect your information
+Use a confidentiality clause, give access only to what is needed, and remove access when the job ends. Our guide on cybersecurity for small businesses explains simple controls.
+
+### Plan for the end
+Define how the work is handed over, who keeps the files, and how final payment is made. A clean ending makes it easier to work together again.
+
+## 7. Consider the alternatives to freelancers
+
+If you need someone regularly, an employee can be more reliable and cost-effective than repeated freelance projects. If you need short bursts of help, a freelancer or agency may be better. You can also consider a fixed-term employee, or a part-time employee, depending on the work. Compare the full cost, including statutory contributions, leave, and management time.
+
+If you are looking for freelancers, agencies, accountants, or lawyers, you can [browse the directory](/en) for local professionals, and [creating a free business listing](/en/signup) helps people who offer services find and trust your business.
+
+## Common mistakes Malaysian SMEs make with freelancers and gig workers
+
+- **Calling an employee a freelancer to save cost.** The label does not decide legal status, and a dispute can lead to back payments and penalties.
+- **No written agreement.** Arguments about scope, price, and ownership are far more common without one.
+- **Forgetting that part-timers are employees.** They have rights to the minimum wage, overtime where applicable, and statutory contributions.
+- **Not keeping records.** Without invoices and proof of payment, you cannot support deductions or defend a dispute.
+
+## Where to start
+
+- **This week:** List everyone who works for you who is not a full-time employee, and note how each relationship really works.
+- **Next:** Decide whether each person is really an employee or a contractor, and get advice where it is unclear.
+- **Then:** Put every arrangement in writing, and fix pay, contributions, and records.
+- **Each year:** Review the arrangements and check for new rules, especially on gig work.
+
+Flexible work can make a small business more resilient, as long as the paperwork and the pay match the reality of the relationship.`,
+    faqs: [
+      {
+        question: "What is the difference between a freelancer and an employee in Malaysia?",
+        answer:
+          "An employee works under a contract of service, under your control, usually for regular pay, and employment law applies. A freelancer works under a contract for service, runs their own business, decides how to do the work, and is paid for a result. The real working relationship matters more than the label.",
+      },
+      {
+        question: "Can I call someone a freelancer to avoid statutory contributions?",
+        answer:
+          "Not safely. Authorities and courts look at how the relationship works in practice. Treating a real employee as a contractor to avoid costs can lead to back payments, penalties, and disputes. If unsure, get advice from a lawyer or the relevant authority.",
+      },
+      {
+        question: "Are part-time workers employees?",
+        answer:
+          "Yes, generally. A part-timer is an employee who works fewer hours, and employment law provisions, including the minimum wage and statutory contributions, can apply. Check the current rules for hours, rest days, and pay.",
+      },
+      {
+        question: "What should a freelancer agreement include?",
+        answer:
+          "The parties, scope of work, fees and payment terms, revisions, ownership of the work, confidentiality, cancellation and termination, who supplies tools and bears liability, and data protection if personal data is handled. Both sides should sign and keep a copy.",
+      },
+      {
+        question: "Who owns the work a freelancer creates?",
+        answer:
+          "It depends on what you agree. Do not assume. State in the written agreement who owns the intellectual property once the freelancer is paid, and whether they may show the work in a portfolio. A lawyer can help with important work.",
+      },
+      {
+        question: "Does Malaysia have a law for gig workers?",
+        answer:
+          "Malaysia passed a Gig Workers law in 2025 to give platform-based workers certain protections. The scope, start dates, and detailed duties may be set through further regulations and guidance, so read the current official text before relying on a summary.",
+      },
+      {
+        question: "Do I need to pay tax or contributions for a freelancer?",
+        answer:
+          "A freelancer is generally responsible for their own tax and any social security cover, but some payments, especially to non-residents, may carry withholding tax obligations. Check the current rules with the relevant authorities and speak to your accountant.",
+      },
+      {
+        question: "Should I hire a freelancer or an employee?",
+        answer:
+          "For regular, ongoing work, an employee can be more reliable and cost-effective. For short bursts or specialist projects, a freelancer or agency may suit better. Compare the full cost, including statutory contributions, leave, and management time.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "在马来西亚与自由工作者、兼职人员和零工合作：合约、薪酬与法律身份",
+        excerpt:
+          "自由工作者、兼职人员和零工让小企业无需全职薪资名册也能灵活运作，但标签贴错可能带来法律和税务问题。本指南说明马来西亚的雇员与独立承包商有何不同、书面协议应包含什么、如何付款和保存记录、关于新的零工法需要知道什么，以及应避免的错误。",
+        body: `许多马来西亚中小企业依赖并非全职雇员的人：自由职业设计师、兼职收银员、周末活动工作人员，或通过应用程序接送货单的司机。这种灵活性很有用，但您给某人贴的标签并不决定其法律身份。弄错可能导致未缴的法定供款、纠纷和罚款。
+
+以下仅为一般资讯，并非法律意见。雇佣、社会保障、税务和零工规定正在变化，如何适用取决于每项安排的具体情况。请向相关机构确认现行规定，并在决定如何聘用某人之前咨询律师或会计师。
+
+## 1. 了解主要的工作安排类型
+
+### 雇员
+雇员在服务合约下工作。您控制他们如何、何时、何地工作，他们是您企业的一部分，通常领取固定薪酬和福利。雇佣法适用，包括法定供款和保障。我们关于雇用第一位员工的指南涵盖了基本知识。
+
+### 兼职雇员
+兼职人员仍然是雇员，只是工作时数较少。兼职雇员同样享有权利和保障，马来西亚雇佣法对兼职工作也有具体规定，所以请查核有关工时、休息日和薪酬的现行规定。
+
+### 自由工作者或独立承包商
+自由工作者在承揽合约下工作。他们经营自己的业务，自己决定如何完成工作，可能服务多个客户，通常自备工具。您为结果或项目付费，而不是为他们随时听候差遣付费。
+
+### 零工或平台工作者
+零工工作者常通过数码平台接单，例如叫车、送餐或任务应用程序。马来西亚已为零工工作者推出立法，下文将会介绍。
+
+### 为什么区别很重要
+法律身份决定谁缴付法定供款、雇佣保障是否适用、税务如何处理，以及出问题时谁承担风险。
+
+## 2. 弄清楚某人是否真的是承包商
+
+称某人为自由工作者，并不能让他们成为自由工作者。有关机构和法院会看关系在实际中如何运作。
+
+### 指向雇佣关系的问题
+您是否设定他们的工时并告诉他们如何工作？他们是否只能为您工作？他们是否使用您的设备、穿您的制服或向您的经理汇报？无论产出如何，他们是否领取固定金额？他们是否不能派人代替？
+
+### 指向承包商的问题
+他们是否自己决定如何及何时交付？他们是否有其他客户？他们是否使用自己的工具并承担自己的风险？是否按项目或交付成果付费？他们是否向您开发票？
+
+### 有疑问时，寻求意见
+如果不确定，请咨询律师，或询问相关机构。为避免成本而把真正的雇员当作承包商是有风险的，纠纷可能导致补付款项和罚款。
+
+## 3. 把安排写成书面
+
+在任何工作开始之前，把安排写成书面协议。清晰的文件保护双方，减少关于范围、付款和所有权的争执。
+
+### 自由工作者协议应涵盖什么
+- **各方与关系：**姓名，以及在确实如此的情况下，清楚说明这是承揽合约而非雇佣。
+- **工作范围：**将交付什么、什么格式、何时交付。
+- **费用与付款条款：**金额、如何计算、发票何时到期，以及任何订金或阶段付款。
+- **修改与变更：**包含几轮修改，以及额外工作如何定价。
+- **工作成果的所有权：**付款后谁拥有知识产权，以及自由工作者是否可以把它放入作品集展示。
+- **保密：**保护您的客户名单、价格和计划。
+- **取消与终止：**通知期、取消费，以及进行中工作的处理。
+- **责任与工具：**谁提供工具、谁承担错误的成本，以及自由工作者是否需要保险。
+- **数据保护：**如果他们处理个人资料，规定必须如何保护。我们关于个人资料保护的指南说明了您的责任。
+
+### 兼职雇佣合约应涵盖什么
+由于兼职人员是雇员，请使用雇佣合约，涵盖工时、薪酬率、职责、试用期、假期权益和终止。我们关于合约与条款的指南说明了如何撰写清晰的条款。
+
+### 保存已签署的副本
+双方都应签署并保留副本，任何变更都应以书面同意。
+
+## 4. 正确地付款
+
+### 自由工作者和承包商
+按约定条款付款，要求开发票，并记录您为什么付了什么。按时付款，因为迟付会损害您的声誉和关系。自由工作者一般自行负责自己的税务和任何社会保障保障，但请向相关机构确认现行立场。
+
+### 兼职雇员
+至少支付适用的最低工资，按规定支付加班和休息日工作的薪酬，并缴付所需的法定供款和扣款。请查核现行最低工资标准和规定，因为它们随时间有所变动。签发薪资单并保存薪资记录。我们关于薪资与法定供款的指南说明了步骤。
+
+### 不要以掩盖关系的方式付款
+以现金付款而不留记录，或把雇员的薪酬拆成“津贴”以避免供款，会给双方带来风险。
+
+### 预扣税与申报
+有些付款，尤其是付给非居民的，可能涉及预扣税义务。请查核现行规定，并咨询您的会计师。我们关于小企业税务日历的指南列出了常见的截止日期。
+
+### 记录每一笔付款
+保存发票、协议和付款证明，这也是您申报扣除所需要的。请参阅我们关于税务扣除的指南。
+
+## 5. 了解关于零工工作者的新规定
+
+> 马来西亚已着手为零工工作者提供法律框架，细节仍在陆续推出。请不要依赖摘要：在决定它如何影响您之前，请阅读现行官方文本和指引。
+
+### 该法律关于什么
+马来西亚于 2025 年通过了零工工作者法律，旨在为通过数码平台工作的人提供某些保障，例如更清晰的条款、解决纠纷的途径，以及社会保障保障。确切的范围、生效日期、定义，以及平台和使用者的责任，可能会通过进一步的条例和指引来订定。
+
+### 可能影响谁
+它主要针对基于平台的工作，而不是每一位自由工作者。如果您的企业通过平台聘用人员，或自己经营平台，应查核这些规定是否适用于您。如果您只是直接聘请自由工作者做一个项目，那么关于雇佣和合约的其他规定更重要。
+
+### 社会保障保障
+零工工作者和部分自雇人士也许可以加入自雇人士的社会保障计划。请向相关社会保障机构查核现行计划，了解谁可以加入、供款率和福利。
+
+### 保持更新
+由于框架是新的，请定期查看相关部门和机构的公告。每年与顾问通一次简短的电话，是廉价的保险。
+
+## 6. 妥善管理工作关系
+
+### 清晰地交代任务
+提供附有范例、截止日期和决策者的清晰说明。大多数自由工作者的问题都始于含糊的任务说明。
+
+### 分阶段付款，而不只是最后付款
+对较大的工作，先付订金再按阶段付款，这让双方都保持投入。
+
+### 尊重其独立性
+如果您想让某人遵循您的时间表、使用您的工具、只为您工作，那么您很可能是在聘请雇员，应该以雇员对待。
+
+### 保护您的资料
+使用保密条款，只授予所需的访问权限，并在工作结束时取消访问权限。我们关于小企业网络安全的指南说明了简单的控制措施。
+
+### 为结束做好计划
+订明工作如何交接、谁保留文件，以及最终款项如何支付。干净的结束让日后再次合作更容易。
+
+## 7. 考虑自由工作者之外的选择
+
+如果您经常需要某人，雇员可能比反复的自由工作项目更可靠、更具成本效益。如果您只需要短期的协助，自由工作者或机构可能更合适。您也可以考虑定期雇员或兼职雇员，视工作而定。请比较完整成本，包括法定供款、假期和管理时间。
+
+如果您正在寻找自由工作者、机构、会计师或律师，可以[浏览名录](/zh)寻找本地专业人士，而[创建免费的企业列表](/zh/signup)可以帮助提供服务的人找到并信任您的企业。
+
+## 马来西亚中小企业在自由工作者和零工方面常犯的错误
+
+- **为省成本而称雇员为自由工作者。**标签并不决定法律身份，纠纷可能导致补付款项和罚款。
+- **没有书面协议。**没有协议时，关于范围、价格和所有权的争执要常见得多。
+- **忘了兼职人员也是雇员。**他们有权享有最低工资、适用时的加班费和法定供款。
+- **不保存记录。**没有发票和付款证明，您无法支持扣除申报，也无法应对纠纷。
+
+## 从哪里开始
+
+- **本周：**列出所有为您工作但不是全职雇员的人，并注明每段关系实际上是如何运作的。
+- **接着：**判断每个人究竟是雇员还是承包商，不清楚的地方寻求意见。
+- **然后：**把每项安排写成书面，并修正薪酬、供款和记录。
+- **每年：**检视这些安排，并查看是否有新规定，特别是关于零工的。
+
+灵活的用工可以让小企业更有韧性，只要文件和薪酬与关系的实际情况相符。`,
+        faqs: [
+          {
+            question: "在马来西亚，自由工作者和雇员有何不同？",
+            answer:
+              "雇员在服务合约下工作，受您控制，通常领取固定薪酬，雇佣法适用。自由工作者在承揽合约下工作，经营自己的业务，自己决定如何完成工作，并按成果获得报酬。真实的工作关系比标签更重要。",
+          },
+          {
+            question: "我可以称某人为自由工作者来避免法定供款吗？",
+            answer:
+              "不安全。有关机构和法院会看关系在实际中如何运作。为避免成本而把真正的雇员当作承包商，可能导致补付款项、罚款和纠纷。如果不确定，请咨询律师或相关机构。",
+          },
+          {
+            question: "兼职人员是雇员吗？",
+            answer:
+              "一般是的。兼职人员是工作时数较少的雇员，雇佣法的规定，包括最低工资和法定供款，可能适用。请查核有关工时、休息日和薪酬的现行规定。",
+          },
+          {
+            question: "自由工作者协议应包含什么？",
+            answer:
+              "各方、工作范围、费用与付款条款、修改、工作成果的所有权、保密、取消与终止、谁提供工具并承担责任，以及在处理个人资料时的数据保护。双方都应签署并保留副本。",
+          },
+          {
+            question: "自由工作者创作的作品归谁所有？",
+            answer:
+              "取决于您们如何约定，不要想当然。请在书面协议中说明自由工作者获得付款后谁拥有知识产权，以及他们是否可以把作品放入作品集展示。对于重要的作品，律师可以提供协助。",
+          },
+          {
+            question: "马来西亚有关于零工工作者的法律吗？",
+            answer:
+              "马来西亚于 2025 年通过了零工工作者法律，为基于平台的工作者提供某些保障。范围、生效日期和详细责任可能通过进一步的条例和指引来订定，所以在依赖摘要之前，请阅读现行官方文本。",
+          },
+          {
+            question: "我需要为自由工作者缴税或供款吗？",
+            answer:
+              "自由工作者一般自行负责自己的税务和任何社会保障保障，但有些付款，尤其是付给非居民的，可能涉及预扣税义务。请向相关机构查核现行规定，并咨询您的会计师。",
+          },
+          {
+            question: "我应该聘请自由工作者还是雇员？",
+            answer:
+              "对经常性、持续的工作，雇员可能更可靠、更具成本效益。对短期的突击或专业项目，自由工作者或机构可能更合适。请比较完整成本，包括法定供款、假期和管理时间。",
+          },
+        ],
+      },
+      ms: {
+        title: "Bekerja dengan Pekerja Bebas, Pekerja Sambilan dan Pekerja Gig di Malaysia: Kontrak, Gaji dan Status Undang-undang",
+        excerpt:
+          "Pekerja bebas, pekerja sambilan dan pekerja gig membolehkan perniagaan kecil fleksibel tanpa senarai gaji penuh, tetapi tersilap melabel boleh menimbulkan masalah undang-undang dan cukai. Panduan ini menerangkan perbezaan antara pekerja dan kontraktor bebas di Malaysia, apa yang perlu ada dalam perjanjian bertulis, cara membayar dan menyimpan rekod, apa yang perlu diketahui tentang undang-undang Pekerja Gig yang baharu, dan kesilapan yang perlu dielakkan.",
+        body: `Ramai PKS Malaysia bergantung kepada orang yang bukan pekerja sepenuh masa: pereka bebas, juruwang sambilan, krew acara hujung minggu, atau pemandu yang mengambil kerja penghantaran melalui aplikasi. Fleksibiliti ini berguna, tetapi label yang anda berikan kepada seseorang tidak menentukan status undang-undang mereka. Tersilap boleh bermakna caruman berkanun yang tidak dibayar, pertikaian dan penalti.
+
+Ini ialah maklumat am, bukan nasihat undang-undang. Peraturan pekerjaan, keselamatan sosial, cukai dan kerja gig sedang berubah, dan cara ia terpakai bergantung pada fakta setiap susunan. Sahkan peraturan semasa dengan pihak berkuasa berkaitan, dan bercakap dengan peguam atau akauntan sebelum anda memutuskan cara melibatkan seseorang.
+
+## 1. Kenali jenis susunan kerja utama
+
+### Pekerja
+Pekerja bekerja di bawah kontrak perkhidmatan. Anda mengawal bagaimana, bila dan di mana mereka bekerja, mereka sebahagian daripada perniagaan anda, dan mereka biasanya menerima gaji tetap dan faedah. Undang-undang pekerjaan terpakai, termasuk caruman berkanun dan perlindungan. Panduan kami tentang mengambil pekerja pertama merangkumi asasnya.
+
+### Pekerja sambilan
+Pekerja sambilan masih pekerja, cuma bekerja dengan jam yang lebih sedikit. Pekerja sambilan juga mempunyai hak dan perlindungan, dan undang-undang pekerjaan Malaysia mempunyai peruntukan khusus tentang kerja sambilan, jadi semak peraturan semasa untuk jam, hari rehat dan gaji.
+
+### Pekerja bebas atau kontraktor bebas
+Pekerja bebas bekerja di bawah kontrak untuk perkhidmatan. Mereka menjalankan perniagaan sendiri, menentukan cara melakukan kerja, mungkin melayani beberapa pelanggan, dan biasanya membekalkan alatan sendiri. Anda membayar untuk hasil atau projek, bukan kerana mereka sentiasa tersedia untuk anda.
+
+### Pekerja gig atau platform
+Pekerja gig mengambil kerja, sering melalui platform digital, seperti e-hailing, penghantaran makanan atau aplikasi tugasan. Malaysia telah memperkenalkan perundangan untuk pekerja gig, yang diliputi di bawah.
+
+### Mengapa perbezaan itu penting
+Status undang-undang menentukan siapa yang membayar caruman berkanun, sama ada perlindungan pekerjaan terpakai, bagaimana cukai dikendalikan, dan siapa menanggung risiko jika sesuatu berlaku.
+
+## 2. Kenal pasti sama ada seseorang benar-benar kontraktor
+
+Memanggil seseorang pekerja bebas tidak menjadikan mereka pekerja bebas. Pihak berkuasa dan mahkamah melihat bagaimana hubungan itu berfungsi dalam amalan.
+
+### Soalan yang menunjukkan pekerjaan
+Adakah anda menetapkan jam mereka dan memberitahu mereka cara melakukan kerja? Adakah mereka mesti bekerja untuk anda sahaja? Adakah mereka menggunakan peralatan anda, memakai uniform anda, atau melapor kepada pengurus anda? Adakah mereka dibayar jumlah tetap, walau apa pun hasilnya? Adakah mereka tidak boleh menghantar pengganti?
+
+### Soalan yang menunjukkan kontraktor
+Adakah mereka menentukan cara dan masa untuk menyampaikan? Adakah mereka mempunyai pelanggan lain? Adakah mereka menggunakan alatan sendiri dan menanggung risiko sendiri? Adakah mereka dibayar mengikut projek atau hasil kerja? Adakah mereka mengeluarkan invois kepada anda?
+
+### Apabila ragu-ragu, dapatkan nasihat
+Jika anda tidak pasti, bercakap dengan peguam, atau tanya pihak berkuasa berkaitan. Melayan pekerja sebenar sebagai kontraktor untuk mengelak kos adalah berisiko, dan pertikaian boleh membawa kepada bayaran balik dan penalti.
+
+## 3. Letakkan susunan itu secara bertulis
+
+Letakkan susunan itu dalam perjanjian bertulis sebelum sebarang kerja bermula. Dokumen yang jelas melindungi kedua-dua pihak dan mengurangkan pertengkaran tentang skop, bayaran dan pemilikan.
+
+### Apa yang perlu ada dalam perjanjian pekerja bebas
+- **Pihak dan hubungan:** Nama, dan pernyataan yang jelas bahawa ia kontrak untuk perkhidmatan, bukan pekerjaan, jika itu benar-benar berlaku.
+- **Skop kerja:** Apa yang akan disampaikan, dalam format apa, dan bila.
+- **Yuran dan terma bayaran:** Jumlahnya, cara pengiraan, bila invois matang, dan sebarang deposit atau bayaran peringkat.
+- **Semakan dan perubahan:** Berapa pusingan perubahan disertakan, dan cara kerja tambahan dihargakan.
+- **Pemilikan hasil kerja:** Siapa yang memiliki harta intelek selepas dibayar, dan sama ada pekerja bebas boleh menunjukkannya dalam portfolio.
+- **Kerahsiaan:** Perlindungan senarai pelanggan, harga dan rancangan anda.
+- **Pembatalan dan penamatan:** Notis, yuran pembatalan, dan apa yang berlaku kepada kerja yang sedang dijalankan.
+- **Liabiliti dan alatan:** Siapa membekalkan alatan, siapa menanggung kos kesilapan, dan sama ada pekerja bebas memerlukan insurans.
+- **Perlindungan data:** Jika mereka mengendalikan data peribadi, nyatakan cara ia mesti dilindungi. Panduan kami tentang perlindungan data peribadi menerangkan tanggungjawab anda.
+
+### Apa yang perlu ada dalam kontrak pekerjaan sambilan
+Kerana pekerja sambilan ialah pekerja, gunakan kontrak pekerjaan yang merangkumi jam, kadar gaji, tugas, tempoh percubaan, hak cuti dan penamatan. Panduan kami tentang kontrak dan terma menerangkan cara menulis terma yang jelas.
+
+### Simpan salinan yang ditandatangani
+Kedua-dua pihak harus menandatangani dan menyimpan salinan, dan sebarang perubahan harus dipersetujui secara bertulis.
+
+## 4. Bayar orang dengan betul
+
+### Pekerja bebas dan kontraktor
+Bayar mengikut terma yang dipersetujui, minta invois, dan simpan rekod apa yang anda bayar untuk apa. Bayar tepat pada masanya, kerana bayaran lewat merosakkan reputasi anda dan hubungan itu. Pekerja bebas secara amnya bertanggungjawab ke atas cukai sendiri dan sebarang perlindungan keselamatan sosial, tetapi sahkan kedudukan semasa dengan pihak berkuasa berkaitan.
+
+### Pekerja sambilan
+Bayar sekurang-kurangnya gaji minimum yang terpakai, bayar kerja lebih masa dan hari rehat seperti yang dikehendaki, dan buat caruman dan potongan berkanun yang diperlukan. Semak kadar dan peraturan gaji minimum semasa, kerana ia telah berubah dari semasa ke semasa. Keluarkan slip gaji dan simpan rekod gaji. Panduan kami tentang gaji dan caruman berkanun menerangkan langkah-langkahnya.
+
+### Jangan bayar dengan cara yang menyembunyikan hubungan
+Membayar tunai tanpa rekod, atau memecahkan gaji pekerja kepada "elaun" untuk mengelak caruman, mewujudkan risiko untuk kedua-dua pihak.
+
+### Cukai pegangan dan pelaporan
+Sesetengah bayaran, terutamanya kepada bukan pemastautin, mungkin mempunyai kewajipan cukai pegangan. Semak peraturan semasa, dan bercakap dengan akauntan anda. Panduan kami tentang kalendar cukai perniagaan kecil menyenaraikan tarikh akhir lazim.
+
+### Rekodkan setiap bayaran
+Simpan invois, perjanjian dan bukti bayaran, yang juga diperlukan untuk potongan anda. Lihat panduan kami tentang potongan cukai.
+
+## 5. Fahami peraturan baharu untuk pekerja gig
+
+> Malaysia telah bergerak untuk memberi pekerja gig rangka kerja undang-undang, dan butirannya masih dilaksanakan. Jangan bergantung pada ringkasan: baca teks dan panduan rasmi semasa sebelum anda memutuskan bagaimana ia memberi kesan kepada anda.
+
+### Tentang apakah undang-undang itu
+Malaysia meluluskan undang-undang Pekerja Gig pada 2025 yang bertujuan memberi perlindungan tertentu kepada orang yang bekerja melalui platform digital, seperti terma yang lebih jelas, cara menyelesaikan pertikaian, dan perlindungan keselamatan sosial. Skop yang tepat, tarikh berkuat kuasa, takrifan, dan tanggungjawab yang dikenakan ke atas platform dan mereka yang menggunakannya mungkin ditetapkan melalui peraturan dan panduan selanjutnya.
+
+### Siapa yang mungkin terkesan
+Ia ditujukan terutamanya kepada kerja berasaskan platform, bukan setiap pekerja bebas. Jika perniagaan anda menggunakan platform untuk melibatkan orang, atau mengendalikannya sendiri, anda harus menyemak sama ada peraturan itu terpakai kepada anda. Jika anda hanya mengambil pekerja bebas secara terus untuk satu projek, peraturan lain tentang pekerjaan dan kontrak lebih penting.
+
+### Perlindungan keselamatan sosial
+Pekerja gig dan sesetengah orang yang bekerja sendiri mungkin boleh menyertai skim keselamatan sosial untuk orang yang bekerja sendiri. Semak skim semasa dengan badan keselamatan sosial berkaitan tentang siapa yang boleh menyertai, kadar caruman dan faedah.
+
+### Sentiasa terkini
+Kerana rangka kerja ini baharu, semak pengumuman kementerian dan agensi berkaitan dari semasa ke semasa. Panggilan ringkas kepada penasihat setiap tahun ialah insurans yang murah.
+
+## 6. Urus hubungan kerja dengan baik
+
+### Beri taklimat yang jelas
+Beri taklimat yang jelas dengan contoh, tarikh akhir dan pembuat keputusan. Kebanyakan masalah pekerja bebas bermula dengan taklimat yang kabur.
+
+### Bayar peringkat, bukan hanya di hujung
+Bagi kerja yang lebih besar, bayar deposit dan kemudian bayaran peringkat, yang mengekalkan komitmen kedua-dua pihak.
+
+### Hormati kebebasan mereka
+Jika anda mahu seseorang mengikut jadual anda, menggunakan alatan anda, dan bekerja untuk anda sahaja, anda mungkin mengambil pekerja, dan harus melayan mereka sedemikian.
+
+### Lindungi maklumat anda
+Gunakan klausa kerahsiaan, beri akses hanya kepada apa yang diperlukan, dan keluarkan akses apabila kerja tamat. Panduan kami tentang keselamatan siber untuk perniagaan kecil menerangkan kawalan yang mudah.
+
+### Rancang pengakhiran
+Tentukan cara kerja diserahkan, siapa menyimpan fail, dan cara bayaran akhir dibuat. Pengakhiran yang bersih memudahkan kerjasama semula.
+
+## 7. Pertimbangkan alternatif kepada pekerja bebas
+
+Jika anda memerlukan seseorang secara tetap, pekerja boleh lebih boleh dipercayai dan menjimatkan kos berbanding projek bebas yang berulang. Jika anda memerlukan bantuan jangka pendek, pekerja bebas atau agensi mungkin lebih baik. Anda juga boleh mempertimbangkan pekerja kontrak tempoh tetap, atau pekerja sambilan, bergantung pada kerja. Bandingkan kos penuh, termasuk caruman berkanun, cuti dan masa pengurusan.
+
+Jika anda mencari pekerja bebas, agensi, akauntan atau peguam, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu orang yang menawarkan perkhidmatan menemui dan mempercayai perniagaan anda.
+
+## Kesilapan lazim PKS Malaysia dengan pekerja bebas dan pekerja gig
+
+- **Memanggil pekerja sebagai pekerja bebas untuk menjimatkan kos.** Label tidak menentukan status undang-undang, dan pertikaian boleh membawa kepada bayaran balik dan penalti.
+- **Tiada perjanjian bertulis.** Pertengkaran tentang skop, harga dan pemilikan jauh lebih lazim tanpanya.
+- **Lupa bahawa pekerja sambilan ialah pekerja.** Mereka berhak mendapat gaji minimum, kerja lebih masa jika terpakai, dan caruman berkanun.
+- **Tidak menyimpan rekod.** Tanpa invois dan bukti bayaran, anda tidak dapat menyokong potongan atau mempertahankan pertikaian.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Senaraikan semua orang yang bekerja untuk anda yang bukan pekerja sepenuh masa, dan catat bagaimana setiap hubungan sebenarnya berfungsi.
+- **Seterusnya:** Putuskan sama ada setiap orang benar-benar pekerja atau kontraktor, dan dapatkan nasihat jika tidak jelas.
+- **Kemudian:** Letakkan setiap susunan secara bertulis, dan betulkan gaji, caruman dan rekod.
+- **Setiap tahun:** Semak susunan itu dan periksa peraturan baharu, terutamanya tentang kerja gig.
+
+Kerja yang fleksibel boleh menjadikan perniagaan kecil lebih berdaya tahan, selagi dokumen dan gaji sepadan dengan realiti hubungan itu.`,
+        faqs: [
+          {
+            question: "Apakah perbezaan antara pekerja bebas dan pekerja di Malaysia?",
+            answer:
+              "Pekerja bekerja di bawah kontrak perkhidmatan, di bawah kawalan anda, biasanya dengan gaji tetap, dan undang-undang pekerjaan terpakai. Pekerja bebas bekerja di bawah kontrak untuk perkhidmatan, menjalankan perniagaan sendiri, menentukan cara melakukan kerja, dan dibayar untuk hasil. Hubungan kerja sebenar lebih penting daripada label.",
+          },
+          {
+            question: "Bolehkah saya memanggil seseorang pekerja bebas untuk mengelak caruman berkanun?",
+            answer:
+              "Tidak dengan selamat. Pihak berkuasa dan mahkamah melihat bagaimana hubungan itu berfungsi dalam amalan. Melayan pekerja sebenar sebagai kontraktor untuk mengelak kos boleh membawa kepada bayaran balik, penalti dan pertikaian. Jika tidak pasti, dapatkan nasihat daripada peguam atau pihak berkuasa berkaitan.",
+          },
+          {
+            question: "Adakah pekerja sambilan ialah pekerja?",
+            answer:
+              "Ya, secara amnya. Pekerja sambilan ialah pekerja yang bekerja dengan jam lebih sedikit, dan peruntukan undang-undang pekerjaan, termasuk gaji minimum dan caruman berkanun, boleh terpakai. Semak peraturan semasa untuk jam, hari rehat dan gaji.",
+          },
+          {
+            question: "Apa yang perlu ada dalam perjanjian pekerja bebas?",
+            answer:
+              "Pihak-pihak, skop kerja, yuran dan terma bayaran, semakan, pemilikan hasil kerja, kerahsiaan, pembatalan dan penamatan, siapa membekalkan alatan dan menanggung liabiliti, dan perlindungan data jika data peribadi dikendalikan. Kedua-dua pihak harus menandatangani dan menyimpan salinan.",
+          },
+          {
+            question: "Siapa yang memiliki hasil kerja yang dicipta oleh pekerja bebas?",
+            answer:
+              "Ia bergantung pada apa yang anda persetujui. Jangan membuat andaian. Nyatakan dalam perjanjian bertulis siapa yang memiliki harta intelek selepas pekerja bebas dibayar, dan sama ada mereka boleh menunjukkan hasil kerja dalam portfolio. Peguam boleh membantu untuk kerja yang penting.",
+          },
+          {
+            question: "Adakah Malaysia mempunyai undang-undang untuk pekerja gig?",
+            answer:
+              "Malaysia meluluskan undang-undang Pekerja Gig pada 2025 untuk memberi perlindungan tertentu kepada pekerja berasaskan platform. Skop, tarikh mula dan tanggungjawab terperinci mungkin ditetapkan melalui peraturan dan panduan selanjutnya, jadi baca teks rasmi semasa sebelum bergantung pada ringkasan.",
+          },
+          {
+            question: "Adakah saya perlu membayar cukai atau caruman untuk pekerja bebas?",
+            answer:
+              "Pekerja bebas secara amnya bertanggungjawab ke atas cukai sendiri dan sebarang perlindungan keselamatan sosial, tetapi sesetengah bayaran, terutamanya kepada bukan pemastautin, mungkin mempunyai kewajipan cukai pegangan. Semak peraturan semasa dengan pihak berkuasa berkaitan dan bercakap dengan akauntan anda.",
+          },
+          {
+            question: "Patutkah saya mengambil pekerja bebas atau pekerja?",
+            answer:
+              "Untuk kerja tetap dan berterusan, pekerja boleh lebih boleh dipercayai dan menjimatkan kos. Untuk bantuan jangka pendek atau projek pakar, pekerja bebas atau agensi mungkin lebih sesuai. Bandingkan kos penuh, termasuk caruman berkanun, cuti dan masa pengurusan.",
+          },
+        ],
+      },
+    },
+  },
 ];

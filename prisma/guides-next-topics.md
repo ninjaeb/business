@@ -15,16 +15,14 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Managing Cash Flow for Malaysian SMEs: Forecasting, Late Payers, and Short-Term Funding**
-   — Why profitable small businesses still run out of cash: building a
-   simple 13-week cash flow forecast, tracking receivables and payables,
-   negotiating payment terms, building a cash buffer, short-term funding
-   options and their costs (overdrafts, invoice financing, supplier
-   credit), and early warning signs to act on.
+1. **Importing and Exporting for Malaysian SMEs: Customs Registration, Duties, and Shipping Basics**
+   — How a small business starts importing or exporting: registering with
+   Malaysian Customs, HS codes and duties, permits for controlled goods,
+   Incoterms, freight forwarders, documents (invoice, packing list, bill of
+   lading), SST on imports, and common mistakes that delay shipments.
 
-2. **Working with Freelancers, Part-Timers, and Gig Workers in Malaysia: Contracts, Pay, and Legal Status**
-   — The difference between an employee, a contractor, and a gig worker
-   under Malaysian law, when engaging freelancers is safe and when it risks
-   being treated as employment, written agreements and payment, the
-   position of part-time employees under the Employment Act, and the
-   developing rules for gig and platform workers.
+2. **Pricing Your Products and Services in Malaysia: Costing, Margins, and Staying Profitable**
+   — How to work out true costs, set prices that cover overheads and tax,
+   margin versus markup, break-even, pricing against competitors and
+   marketplaces, discounts and promotions without losing money, and when
+   and how to raise prices.
