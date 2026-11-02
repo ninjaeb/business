@@ -15,14 +15,14 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Importing and Exporting for Malaysian SMEs: Customs Registration, Duties, and Shipping Basics**
-   — How a small business starts importing or exporting: registering with
-   Malaysian Customs, HS codes and duties, permits for controlled goods,
-   Incoterms, freight forwarders, documents (invoice, packing list, bill of
-   lading), SST on imports, and common mistakes that delay shipments.
+1. **Cybersecurity for Malaysian Small Businesses: Protecting Data, Payments, and Accounts**
+   — Practical, low-cost protection: strong passwords and multi-factor
+   authentication, phishing and payment-fraud scams common in Malaysia,
+   backups, securing Wi-Fi and devices, controlling staff and freelancer
+   access, what to do after a breach, and links to PDPA duties.
 
-2. **Pricing Your Products and Services in Malaysia: Costing, Margins, and Staying Profitable**
-   — How to work out true costs, set prices that cover overheads and tax,
-   margin versus markup, break-even, pricing against competitors and
-   marketplaces, discounts and promotions without losing money, and when
-   and how to raise prices.
+2. **Handling Customer Complaints, Refunds, and Consumer Rights in Malaysia**
+   — How the Consumer Protection Act and related rules affect small
+   sellers: refund, exchange and warranty basics, honest pricing and
+   advertising, handling complaints well, dealing with online disputes and
+   chargebacks, and when a complaint can escalate to the Tribunal.
