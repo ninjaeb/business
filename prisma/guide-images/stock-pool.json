@@ -546,6 +546,47 @@
       ],
       "description": "Man in eyeglasses near a cash register at a cafe counter",
       "usedBy": "managing-cash-flow-for-malaysian-smes-counter.webp"
+    },
+    {
+      "id": 4487383,
+      "tags": [
+        "logistics",
+        "warehouse",
+        "packing"
+      ],
+      "description": "Two workers handle a package in a warehouse with shelves of boxes",
+      "usedBy": "importing-and-exporting-for-malaysian-smes-warehouse.webp"
+    },
+    {
+      "id": 5025503,
+      "tags": [
+        "logistics",
+        "boxes",
+        "shipping"
+      ],
+      "description": "Stacked cardboard boxes prepared for shipping or storage",
+      "usedBy": "importing-and-exporting-for-malaysian-smes-cover.webp"
+    },
+    {
+      "id": 8297036,
+      "tags": [
+        "pricing",
+        "calculator",
+        "notebook"
+      ],
+      "description": "Woman with eyeglasses working through figures with a notebook and calculator",
+      "usedBy": "pricing-products-and-services-in-malaysia-cover.webp"
+    },
+    {
+      "id": 6345291,
+      "tags": [
+        "pricing",
+        "notebook",
+        "calculator",
+        "laptop"
+      ],
+      "description": "Hand writing in a notebook next to a calculator and laptop",
+      "usedBy": "pricing-products-and-services-in-malaysia-notebook.webp"
     }
   ]
 }

@@ -15357,4 +15357,1194 @@ Kerja yang fleksibel boleh menjadikan perniagaan kecil lebih berdaya tahan, sela
       },
     },
   },
+  {
+    slug: "importing-and-exporting-for-malaysian-smes",
+    title: "Importing and Exporting for Malaysian SMEs: Customs Registration, Duties, and Shipping Basics",
+    seoTitle: "Importing and Exporting for Malaysian SMEs: Basics",
+    seoDescription:
+      "How a Malaysian SME starts importing or exporting: Customs registration, HS codes, duties and SST, permits, Incoterms, documents and forwarders.",
+    coverImage: {
+      file: "importing-and-exporting-for-malaysian-smes-cover.webp",
+      mimeType: "image/webp",
+      alt: "Stacks of plain cardboard boxes in warm light, packed and ready for shipping",
+      altTranslations: {
+        zh: "在暖光下堆叠的素面纸箱，已打包好等待运送",
+        ms: "Timbunan kotak kadbod biasa dalam cahaya hangat, siap dibungkus untuk dihantar",
+      },
+    },
+    contentImages: {
+      warehouse: {
+        file: "importing-and-exporting-for-malaysian-smes-warehouse.webp",
+        mimeType: "image/webp",
+        alt: "Two warehouse workers walking down an aisle of tall shelving, one carrying a box and the other holding a tablet",
+        altTranslations: {
+          zh: "两名仓库工人走在高大货架之间的走道上，一人抱着纸箱，另一人拿着平板电脑",
+          ms: "Dua pekerja gudang berjalan di lorong rak tinggi, seorang membawa kotak dan seorang lagi memegang tablet",
+        },
+        after: "Classify your product with the correct HS code before you commit to a supplier or a price.",
+        afterTranslations: {
+          zh: "在您选定供应商或定价之前，先为产品确定正确的 HS 编码。",
+          ms: "Kelaskan produk anda dengan kod HS yang betul sebelum anda berkomitmen kepada pembekal atau harga.",
+        },
+      },
+    },
+    excerpt:
+      "Selling to overseas customers or bringing in stock from abroad can grow a small business, but delays and unexpected costs at the border are common for first-timers. This guide explains how Malaysian SMEs get set up with Customs, how HS codes, duties and SST work, when permits are needed, how to choose shipping terms and a freight forwarder, and the mistakes that hold up shipments.",
+    body: `Importing lets you source cheaper or better products. Exporting lets you sell beyond the Malaysian market. Both are within reach of a small business, but both involve rules that do not apply to domestic trade: Customs declarations, duties and taxes, permits for some goods, and shipping documents that must match exactly. First-time traders usually get caught out by the paperwork, not the product.
+
+This is general information, not legal or customs advice. Duty rates, tax treatment, permit requirements and procedures change and differ by product and country, so confirm the current position with the Royal Malaysian Customs Department and the relevant agencies, and speak to a licensed freight forwarder or customs agent before you ship.
+
+## 1. Decide whether importing or exporting makes sense for you
+
+### Be clear about the goal
+Are you buying stock to resell, importing raw materials, selling your products to overseas customers, or both? The goal decides which rules matter most.
+
+### Check the full cost before you commit
+A low factory price can be wiped out by freight, insurance, duties, taxes, handling charges, and currency swings. Work out the landed cost, which is everything it costs to get the product to your door, before you place an order.
+
+### Start small
+A first shipment is a learning exercise. Start with a small trial order, a reliable supplier or buyer, and a forwarder who can guide you.
+
+### Check that your business is set up
+You generally need a registered business to trade internationally. Our guide on registering a business with SSM explains the options, and our guide on opening a business bank account covers the account you will use for foreign payments.
+
+## 2. Get set up with Customs and your other registrations
+
+### Register your business with the relevant authorities
+Importers and exporters generally need to be registered with the Royal Malaysian Customs Department before they can submit declarations. The exact process, forms and online systems can change, so check the Customs website for the current steps, or ask your forwarder to explain what they handle on your behalf.
+
+### Customs declarations
+Goods entering or leaving Malaysia are declared to Customs, commonly through the electronic declaration system. Import and export declarations use prescribed forms, and a customs agent or forwarder often submits them for you. You remain responsible for the accuracy of the information.
+
+### Licences, approvals and special registrations
+Some activities need extra approvals, for example if you are a manufacturer who wants to use certain tax facilities, or if you run a bonded warehouse. Most small traders do not need these at the start, but ask early.
+
+### Keep your SST position in mind
+If your sales cross the registration threshold, or you deal in goods and services that are taxable, you may need to register for SST. See our guide on SST registration, and confirm current thresholds on the official portal.
+
+### Open a trade-ready bank account
+Make sure your bank can handle foreign currency payments, trade financing if needed, and the documents your overseas partners will ask for.
+
+## 3. Understand HS codes, duties, and taxes
+
+Classify your product with the correct HS code before you commit to a supplier or a price. The Harmonised System is an international way of classifying goods, and the code decides which duty rate, taxes, and permit rules apply.
+
+### How the code is used
+Malaysia uses a national tariff based on the international system, with more digits for local detail. Misclassifying a product can lead to the wrong duty, delays, fines, or a rejected declaration.
+
+### Import duty
+Many goods attract import duty at a rate that depends on the code and the country of origin, and some are zero-rated. Free trade agreements can reduce or remove duty if you meet origin rules and hold the right proof of origin.
+
+### Sales tax and service tax on imports
+Imported goods may be subject to sales tax, often calculated on the value of the goods including freight and insurance, depending on the product. Rates and exemptions change, so check the current schedule for your goods.
+
+### Low-value online purchases
+Special rules have applied to low-value goods bought online from overseas, including a sales tax on some such goods, and there have been different treatments by channel (air, post, land, sea). If you import small parcels, check the current Customs guidance rather than relying on an old article.
+
+### Excise and other duties
+Some goods, such as alcohol or tobacco, carry excise duty and tight controls. If you plan to deal in those, get specialist advice first.
+
+### Where to check
+Use the Customs tariff search and ask your forwarder to confirm the classification and the total taxes before you ship.
+
+## 4. Find out whether you need permits
+
+### Controlled goods
+Some goods are prohibited or require a permit or approval from a government agency before they can be imported or exported. Examples include certain foods, plants, animals, medicines, medical devices, chemicals, telecommunications equipment, weapons, and items covered by trade controls.
+
+### Strategic items
+Items with possible military or security uses may be regulated under the strategic trade law, and a permit may be needed even for exports. If your product has technical or dual-use features, check this early.
+
+### Standards, halal and labelling
+Products may need to meet safety standards, labelling rules, or halal requirements to be sold in Malaysia or accepted overseas. Our guide on halal certification explains the basics for food and related products.
+
+### Importing to sell to consumers
+If you sell imported goods online, the platform and the authorities may also require product compliance documents. Our guide on selling online covers marketplace basics.
+
+### Ask before you buy
+Find out whether your product is controlled before you order, because goods can be held, seized, or sent back at your cost.
+
+## 5. Choose your shipping terms and understand the costs
+
+### Incoterms
+Incoterms are standard terms that say who pays for and takes risk for each part of the journey, such as loading, freight, insurance, and import clearance. Common terms include EXW, FOB, CIF and DDP. Choosing the wrong one can leave you paying for charges you did not expect. Always specify the term and the version in your contract.
+
+### Freight options
+Sea freight is cheaper for large, heavy shipments but slower. Air freight is faster and costs more per kilogram. Couriers suit small parcels and samples. Consolidated shipments (LCL) let you share a container, while a full container (FCL) suits larger volumes.
+
+### Insurance
+Goods can be damaged or lost in transit. Cargo insurance is usually inexpensive compared with the loss it covers, and our guide on business insurance explains other cover you may need.
+
+### Typical charges
+Expect freight, origin and destination handling, documentation fees, port or airport charges, inland transport, duties and taxes, and sometimes storage if the goods wait. Ask for a full written quotation that lists each item.
+
+### Currency and payment terms
+Exchange rates move. Consider invoicing in a currency you can manage, and use a payment method that suits the risk, such as advance payment, a letter of credit, or open account for trusted partners.
+
+## 6. Prepare the documents
+
+### The core documents
+A commercial invoice, a packing list, and a transport document such as a bill of lading or air waybill are the basics. Customs and your forwarder use them to check value, quantity, and description.
+
+### Other documents you may need
+A certificate of origin if you are claiming a preferential duty rate, permits or licences for controlled goods, insurance certificates, and test or compliance reports.
+
+### Make everything match
+The product description, quantity, weight, value, and HS code should be consistent across all documents. Mismatches are a common cause of delays and queries.
+
+### Keep records
+Retain your trade documents for the period required by law, usually several years, so you can answer audits and support deductions. Our guide on bookkeeping basics explains how to keep orderly records, and our guide on e-invoicing explains invoicing rules that may also apply to you.
+
+## 7. Work with a freight forwarder or customs agent
+
+> A good forwarder is not a cost to avoid but a shortcut to avoid expensive mistakes. For your first few shipments, let a licensed professional handle classification, declarations, and clearance while you learn how the process works.
+
+### What they do
+They book space, prepare documents, submit Customs declarations, arrange transport, and advise on duties and permits. Some specialise in particular routes or products.
+
+### How to choose
+Ask for references, check that they are licensed and experienced with your type of goods, compare written quotes line by line, and be wary of prices that look too good to be true.
+
+### Stay involved
+Review every document before it is submitted, because you are responsible for what is declared in your name.
+
+### Handle problems quickly
+If Customs queries a shipment or goods are held, respond fast with the documents requested, because storage charges grow each day.
+
+If you need a forwarder, a customs agent, or a supplier, you can [browse the directory](/en) for local professionals, and [creating a free business listing](/en/signup) helps overseas buyers and local customers find and trust your business.
+
+## Common mistakes Malaysian SMEs make when importing or exporting
+
+- **Ignoring the landed cost.** The factory price is only the start, and freight, duties, taxes, and handling can change whether a deal makes sense.
+- **Misclassifying products or understating value.** The wrong HS code or an under-declared value can bring penalties, delays, and a damaged relationship with Customs.
+- **Not checking permits and standards first.** Controlled goods can be held or sent back at your expense.
+- **Paying a new supplier in full in advance.** Check the supplier, start with a small order, and use safer payment methods where possible.
+
+## Where to start
+
+- **This week:** Define what you want to import or export, and find the HS code and likely duty and tax for your product.
+- **Next:** Confirm whether permits, standards, or halal rules apply, and get written quotes from two forwarders.
+- **Then:** Register with Customs and your bank for trade, and place a small trial order or shipment.
+- **Each shipment:** Check the documents match, keep your records, and review the real landed cost afterwards.
+
+Cross-border trade rewards preparation. Learn the rules on a small first shipment, and the larger ones become routine.`,
+    faqs: [
+      {
+        question: "Do I need to register with Customs to import or export in Malaysia?",
+        answer:
+          "Generally yes. Traders need to be registered with the Royal Malaysian Customs Department before they can submit declarations. The exact process and systems change, so check the Customs website for current steps, or ask your freight forwarder what they handle for you.",
+      },
+      {
+        question: "What is an HS code and why does it matter?",
+        answer:
+          "It is an international code that classifies goods. It decides which import duty rate, taxes, and permit rules apply to your product. A wrong code can mean the wrong duty, delays, or penalties, so confirm it before you commit to a price.",
+      },
+      {
+        question: "What taxes and duties apply to imported goods?",
+        answer:
+          "Depending on the product, import duty, sales tax, and in some cases excise duty may apply. Free trade agreements can reduce duty if you meet origin rules. Rates and exemptions change, so check the current schedule for your goods.",
+      },
+      {
+        question: "Which goods need a permit to import or export?",
+        answer:
+          "Controlled items such as certain foods, plants, animals, medicines, chemicals, telecommunications equipment, and strategic or dual-use items may need permits or approvals. Always check with the relevant agency before you order.",
+      },
+      {
+        question: "What are Incoterms?",
+        answer:
+          "Standard trade terms that state who pays for and takes the risk of each stage of a shipment, such as freight, insurance, and import clearance. Common ones include EXW, FOB, CIF and DDP. Specify the term and version in your contract.",
+      },
+      {
+        question: "What documents do I need for a shipment?",
+        answer:
+          "Typically a commercial invoice, a packing list, and a transport document such as a bill of lading or air waybill, plus any permits, certificates of origin, or insurance documents that apply. Make sure all details match across documents.",
+      },
+      {
+        question: "Do I need a freight forwarder or customs agent?",
+        answer:
+          "It is not always required, but it is strongly advisable for your first shipments. A licensed professional can handle classification, declarations, and clearance, but you remain responsible for the accuracy of what is declared in your name.",
+      },
+      {
+        question: "How do I avoid delays at the border?",
+        answer:
+          "Use the right HS code, declare the true value, check permits and standards first, keep all documents consistent, work with an experienced forwarder, and respond quickly to any Customs query.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "马来西亚中小企业的进出口：海关注册、关税与运输基础",
+        excerpt:
+          "向海外客户销售或从国外进货可以让小企业成长，但初次交易者在边境遇到延误和意外成本很常见。本指南说明马来西亚中小企业如何向海关办理注册、HS 编码、关税和 SST 如何运作、何时需要许可证、如何选择运输条款和货运代理，以及会拖延货运的常见错误。",
+        body: `进口让您可以采购更便宜或更好的产品。出口让您可以把产品卖到马来西亚市场之外。两者对小企业来说都是可行的，但都涉及国内贸易不适用的规定：海关申报、关税和税款、部分货物的许可证，以及必须完全吻合的运输文件。初次交易者通常栽在文件上，而不是产品上。
+
+以下仅为一般资讯，并非法律或海关意见。关税率、税务处理、许可证要求和程序会变动，并因产品和国家而异，所以在发货之前，请向马来西亚皇家关税局和相关机构确认现行规定，并咨询持牌货运代理或报关代理。
+
+## 1. 决定进出口是否适合您
+
+### 明确目标
+您是购买存货转售、进口原料、向海外客户销售产品，还是两者兼有？目标决定哪些规定最重要。
+
+### 承诺之前先核算全部成本
+低廉的出厂价可能被运费、保险、关税、税款、处理费和汇率波动抵消。在下订单之前，请先算出到岸成本，也就是把产品送到您手上所需的一切成本。
+
+### 从小规模开始
+第一批货是一次学习。从小额试订单、可靠的供应商或买家，以及能够指导您的货运代理开始。
+
+### 确认您的企业已经就绪
+国际贸易一般需要已注册的企业。我们关于向公司委员会注册企业的指南说明了各种选择，关于开立企业银行账户的指南涵盖了您将用于外币付款的账户。
+
+## 2. 办理海关及其他注册
+
+### 向相关机构注册您的企业
+进口商和出口商一般需要先向马来西亚皇家关税局注册，才能提交申报。确切的流程、表格和线上系统可能变动，所以请查看海关网站了解现行步骤，或请您的货运代理说明他们代您处理哪些事项。
+
+### 海关申报
+进出马来西亚的货物须向海关申报，通常通过电子申报系统。进口和出口申报使用规定的表格，报关代理或货运代理经常代您提交。信息的准确性仍由您负责。
+
+### 执照、批准和特别注册
+有些活动需要额外批准，例如制造商想使用某些税务优惠，或经营保税仓库。大多数小贸易商起步时不需要这些，但请尽早询问。
+
+### 留意您的 SST 状况
+如果您的销售额超过注册门槛，或您经营应税货物和服务，可能需要注册 SST。请参阅我们关于 SST 注册的指南，并在官方入口网站确认现行门槛。
+
+### 开立适合贸易的银行账户
+确保您的银行能够处理外币付款、必要时的贸易融资，以及海外合作伙伴会要求的文件。
+
+## 3. 了解 HS 编码、关税和税款
+
+在您选定供应商或定价之前，先为产品确定正确的 HS 编码。协调制度是对货物进行分类的国际方法，编码决定适用哪个关税率、税款和许可证规定。
+
+### 编码如何使用
+马来西亚使用以国际制度为基础的国家税则，并为本地细节增加了位数。把产品归错类，可能导致错误的关税、延误、罚款或申报被拒。
+
+### 进口税
+许多货物需要缴纳进口税，税率取决于编码和原产国，有些货物则为零税率。如果您符合原产地规则并持有正确的原产地证明，自由贸易协定可以减少或免除关税。
+
+### 进口货物的销售税和服务税
+进口货物可能需要缴纳销售税，通常按货物价值计算，是否包括运费和保险视产品而定。税率和豁免会变动，所以请查核您货物的现行税表。
+
+### 低价网购货物
+对于从海外网购的低价货物，曾有特别规定，包括对部分此类货物征收销售税，而且空运、邮寄、陆运和海运渠道的处理有所不同。如果您进口小包裹，请查看海关的现行指引，而不要依赖旧文章。
+
+### 消费税和其他税项
+酒类或烟草等货物须缴纳消费税，并受到严格管制。如果您打算经营这类货物，请先寻求专业意见。
+
+### 在哪里查核
+使用海关的税则查询，并请您的货运代理在发货之前确认归类和总税款。
+
+## 4. 弄清楚是否需要许可证
+
+### 管制货物
+有些货物被禁止，或在进出口之前需要政府机构的许可或批准。例子包括某些食品、植物、动物、药品、医疗器械、化学品、电信设备、武器，以及受贸易管制的物品。
+
+### 战略物项
+可能有军事或安全用途的物品可能受战略贸易法规管制，甚至出口也可能需要许可证。如果您的产品具有技术或两用特性，请尽早查核。
+
+### 标准、清真和标签
+产品可能需要符合安全标准、标签规定或清真要求，才能在马来西亚销售或被海外接受。我们关于清真认证的指南说明了食品及相关产品的基础。
+
+### 进口后卖给消费者
+如果您在线销售进口货物，平台和主管机构也可能要求产品合规文件。我们关于网络销售的指南涵盖了平台的基础知识。
+
+### 购买之前先问清楚
+在下订单之前，先查明您的产品是否受管制，因为货物可能被扣留、没收或退回，费用由您承担。
+
+## 5. 选择运输条款并了解成本
+
+### 国际贸易术语（Incoterms）
+Incoterms 是标准术语，说明装货、运费、保险和进口清关等每个环节由谁付费、谁承担风险。常见术语包括 EXW、FOB、CIF 和 DDP。选错术语可能让您支付意想不到的费用。请务必在合约中注明术语及其版本。
+
+### 货运选择
+海运对大型、重型货物较便宜，但较慢。空运较快，每公斤成本较高。快递适合小包裹和样品。拼箱（LCL）让您与他人共用一个货柜，整柜（FCL）则适合较大的货量。
+
+### 保险
+货物在运输中可能受损或遗失。与它所涵盖的损失相比，货物保险通常很便宜，我们关于商业保险的指南也说明了您可能需要的其他保障。
+
+### 常见费用
+预计会有运费、起运地和目的地的处理费、文件费、港口或机场费用、内陆运输、关税和税款，货物如需等待有时还有仓储费。请要求提供列明每一项的完整书面报价。
+
+### 货币和付款条款
+汇率会波动。考虑使用您能管理的货币开发票，并选择适合风险的付款方式，例如预付款、信用证，或对可信赖的伙伴采用赊账。
+
+## 6. 准备文件
+
+### 核心文件
+商业发票、装箱单，以及提单或空运单等运输文件是基本文件。海关和您的货运代理用它们来核对价值、数量和描述。
+
+### 您可能需要的其他文件
+如果您申请优惠关税率，则需要原产地证；受管制货物需要许可证或执照；另外还有保险证书，以及测试或合规报告。
+
+### 让所有文件一致
+产品描述、数量、重量、价值和 HS 编码在所有文件中应保持一致。不一致是造成延误和查询的常见原因。
+
+### 保存记录
+按法律规定的期限（通常是数年）保存您的贸易文件，以便应对审计并支持扣除申报。我们关于簿记基础的指南说明了如何保持记录井然有序，关于电子发票的指南则说明了同样可能适用于您的开票规定。
+
+## 7. 与货运代理或报关代理合作
+
+> 好的货运代理不是要回避的成本，而是避免昂贵错误的捷径。在最初的几批货中，让持牌专业人士处理归类、申报和清关，您则学习整个流程如何运作。
+
+### 他们做什么
+他们订舱位、准备文件、提交海关申报、安排运输，并就关税和许可证提供建议。有些代理专精于特定航线或产品。
+
+### 如何选择
+要求提供推荐人，查核他们是否持牌且熟悉您这类货物，逐项比较书面报价，并对好得不真实的价格保持警惕。
+
+### 保持参与
+在每份文件提交之前都要检查，因为您对以您名义申报的内容负责。
+
+### 迅速处理问题
+如果海关对某批货提出疑问或货物被扣留，请迅速提供所要求的文件，因为仓储费每天都在增加。
+
+如果您需要货运代理、报关代理或供应商，可以[浏览名录](/zh)寻找本地专业人士，而[创建免费的企业列表](/zh/signup)可以帮助海外买家和本地客户找到并信任您的企业。
+
+## 马来西亚中小企业在进出口时常犯的错误
+
+- **忽视到岸成本。**出厂价只是开始，运费、关税、税款和处理费可能改变一笔交易是否划算。
+- **错误归类产品或低报价值。**错误的 HS 编码或低报的价值会带来罚款、延误，并损害与海关的关系。
+- **没有先查核许可证和标准。**受管制货物可能被扣留或退回，费用由您承担。
+- **向新供应商预付全款。**请核实供应商，从小订单开始，并尽可能使用更安全的付款方式。
+
+## 从哪里开始
+
+- **本周：**明确您想进口或出口什么，并找出您产品的 HS 编码以及可能的关税和税款。
+- **接着：**确认是否适用许可证、标准或清真规定，并向两家货运代理索取书面报价。
+- **然后：**向海关和您的银行办理贸易注册，并下一笔小额试订单或试运一批货。
+- **每批货：**检查文件是否一致，保存记录，事后检讨实际的到岸成本。
+
+跨境贸易偏爱有准备的人。在小批量的第一批货中学会规则，之后的大批量就会变成例行公事。`,
+        faqs: [
+          {
+            question: "在马来西亚进出口需要向海关注册吗？",
+            answer:
+              "一般需要。贸易商在提交申报之前，需要先向马来西亚皇家关税局注册。确切的流程和系统会变动，所以请查看海关网站了解现行步骤，或询问您的货运代理他们代您处理哪些事项。",
+          },
+          {
+            question: "什么是 HS 编码，为什么重要？",
+            answer:
+              "它是对货物分类的国际编码，决定您的产品适用哪个进口税率、税款和许可证规定。错误的编码可能导致错误的关税、延误或罚款，所以请在承诺价格之前先确认。",
+          },
+          {
+            question: "进口货物适用哪些税和关税？",
+            answer:
+              "视产品而定，可能适用进口税、销售税，某些情况下还有消费税。如果您符合原产地规则，自由贸易协定可以减少关税。税率和豁免会变动，所以请查核您货物的现行税表。",
+          },
+          {
+            question: "哪些货物进出口需要许可证？",
+            answer:
+              "受管制的物品，例如某些食品、植物、动物、药品、化学品、电信设备，以及战略或两用物项，可能需要许可证或批准。下订单之前，请务必向相关机构查核。",
+          },
+          {
+            question: "什么是 Incoterms？",
+            answer:
+              "标准贸易术语，说明运费、保险和进口清关等货运每个阶段由谁付费并承担风险。常见的有 EXW、FOB、CIF 和 DDP。请在合约中注明术语及版本。",
+          },
+          {
+            question: "一批货需要哪些文件？",
+            answer:
+              "通常包括商业发票、装箱单，以及提单或空运单等运输文件，另外还有适用的许可证、原产地证或保险文件。请确保所有文件上的细节一致。",
+          },
+          {
+            question: "我需要货运代理或报关代理吗？",
+            answer:
+              "不一定强制，但对最初的几批货强烈建议使用。持牌专业人士可以处理归类、申报和清关，但对以您名义申报的内容是否准确，您仍然负有责任。",
+          },
+          {
+            question: "如何避免在边境出现延误？",
+            answer:
+              "使用正确的 HS 编码，如实申报价值，先查核许可证和标准，保持所有文件一致，与经验丰富的货运代理合作，并迅速回应海关的任何查询。",
+          },
+        ],
+      },
+      ms: {
+        title: "Mengimport dan Mengeksport untuk PKS Malaysia: Pendaftaran Kastam, Duti dan Asas Penghantaran",
+        excerpt:
+          "Menjual kepada pelanggan luar negara atau membawa masuk stok dari luar boleh mengembangkan perniagaan kecil, tetapi kelewatan dan kos tidak dijangka di sempadan adalah perkara biasa bagi yang baru bermula. Panduan ini menerangkan cara PKS Malaysia mendaftar dengan Kastam, bagaimana kod HS, duti dan SST berfungsi, bila permit diperlukan, cara memilih terma penghantaran dan ejen penghantaran, serta kesilapan yang melambatkan penghantaran.",
+        body: `Mengimport membolehkan anda mendapatkan produk yang lebih murah atau lebih baik. Mengeksport membolehkan anda menjual melangkaui pasaran Malaysia. Kedua-duanya boleh dicapai oleh perniagaan kecil, tetapi kedua-duanya melibatkan peraturan yang tidak terpakai untuk perdagangan domestik: perisytiharan Kastam, duti dan cukai, permit untuk sesetengah barangan, dan dokumen penghantaran yang mesti sepadan dengan tepat. Peniaga kali pertama biasanya tersangkut pada dokumen, bukan produk.
+
+Ini ialah maklumat am, bukan nasihat undang-undang atau kastam. Kadar duti, layanan cukai, keperluan permit dan prosedur berubah serta berbeza mengikut produk dan negara, jadi sahkan kedudukan semasa dengan Jabatan Kastam Diraja Malaysia dan agensi berkaitan, dan bercakap dengan ejen penghantaran atau ejen kastam berlesen sebelum anda menghantar.
+
+## 1. Tentukan sama ada mengimport atau mengeksport sesuai untuk anda
+
+### Jelaskan matlamat
+Adakah anda membeli stok untuk dijual semula, mengimport bahan mentah, menjual produk anda kepada pelanggan luar negara, atau kedua-duanya? Matlamat menentukan peraturan mana yang paling penting.
+
+### Semak kos penuh sebelum berkomitmen
+Harga kilang yang rendah boleh dihapuskan oleh tambang, insurans, duti, cukai, caj pengendalian dan turun naik mata wang. Kira kos mendarat, iaitu segala-galanya yang diperlukan untuk membawa produk ke pintu anda, sebelum anda membuat pesanan.
+
+### Mulakan dengan kecil
+Penghantaran pertama ialah latihan pembelajaran. Mulakan dengan pesanan percubaan kecil, pembekal atau pembeli yang boleh dipercayai, dan ejen penghantaran yang boleh membimbing anda.
+
+### Semak perniagaan anda sudah disediakan
+Anda secara amnya memerlukan perniagaan berdaftar untuk berdagang secara antarabangsa. Panduan kami tentang mendaftar perniagaan dengan SSM menerangkan pilihan, dan panduan kami tentang membuka akaun bank perniagaan merangkumi akaun yang akan anda gunakan untuk bayaran asing.
+
+## 2. Sediakan pendaftaran Kastam dan pendaftaran lain anda
+
+### Daftarkan perniagaan anda dengan pihak berkuasa berkaitan
+Pengimport dan pengeksport secara amnya perlu didaftarkan dengan Jabatan Kastam Diraja Malaysia sebelum mereka boleh menghantar perisytiharan. Proses, borang dan sistem dalam talian yang tepat boleh berubah, jadi semak laman web Kastam untuk langkah semasa, atau minta ejen penghantaran anda menerangkan apa yang mereka uruskan bagi pihak anda.
+
+### Perisytiharan Kastam
+Barangan yang masuk atau keluar dari Malaysia diisytiharkan kepada Kastam, lazimnya melalui sistem perisytiharan elektronik. Perisytiharan import dan eksport menggunakan borang yang ditetapkan, dan ejen kastam atau ejen penghantaran sering menghantarnya untuk anda. Anda tetap bertanggungjawab atas ketepatan maklumat.
+
+### Lesen, kelulusan dan pendaftaran khas
+Sesetengah aktiviti memerlukan kelulusan tambahan, contohnya jika anda pengilang yang mahu menggunakan kemudahan cukai tertentu, atau jika anda mengendalikan gudang berlesen. Kebanyakan peniaga kecil tidak memerlukannya pada permulaan, tetapi tanya lebih awal.
+
+### Ingat kedudukan SST anda
+Jika jualan anda melepasi ambang pendaftaran, atau anda berurusan dengan barangan dan perkhidmatan yang bercukai, anda mungkin perlu mendaftar untuk SST. Lihat panduan kami tentang pendaftaran SST, dan sahkan ambang semasa di portal rasmi.
+
+### Buka akaun bank yang sedia untuk perdagangan
+Pastikan bank anda boleh mengendalikan bayaran mata wang asing, pembiayaan perdagangan jika perlu, dan dokumen yang akan diminta oleh rakan luar negara anda.
+
+## 3. Fahami kod HS, duti dan cukai
+
+Kelaskan produk anda dengan kod HS yang betul sebelum anda berkomitmen kepada pembekal atau harga. Sistem Harmoni ialah cara antarabangsa untuk mengelaskan barangan, dan kod itu menentukan kadar duti, cukai dan peraturan permit yang terpakai.
+
+### Bagaimana kod digunakan
+Malaysia menggunakan tarif kebangsaan berdasarkan sistem antarabangsa, dengan lebih banyak digit untuk butiran tempatan. Salah mengelaskan produk boleh membawa kepada duti yang salah, kelewatan, denda, atau perisytiharan yang ditolak.
+
+### Duti import
+Banyak barangan dikenakan duti import pada kadar yang bergantung pada kod dan negara asal, dan sesetengahnya berkadar sifar. Perjanjian perdagangan bebas boleh mengurangkan atau menghapuskan duti jika anda memenuhi peraturan asal dan mempunyai bukti asal yang betul.
+
+### Cukai jualan dan cukai perkhidmatan ke atas import
+Barangan import mungkin tertakluk kepada cukai jualan, lazimnya dikira ke atas nilai barangan, sama ada termasuk tambang dan insurans bergantung pada produk. Kadar dan pengecualian berubah, jadi semak jadual semasa untuk barangan anda.
+
+### Pembelian dalam talian bernilai rendah
+Peraturan khas telah terpakai kepada barangan bernilai rendah yang dibeli dalam talian dari luar negara, termasuk cukai jualan ke atas sesetengah barangan sedemikian, dan terdapat layanan berbeza mengikut saluran (udara, pos, darat, laut). Jika anda mengimport bungkusan kecil, semak panduan Kastam semasa dan jangan bergantung pada artikel lama.
+
+### Eksais dan duti lain
+Sesetengah barangan, seperti alkohol atau tembakau, dikenakan duti eksais dan kawalan ketat. Jika anda bercadang berurusan dengannya, dapatkan nasihat pakar dahulu.
+
+### Di mana hendak menyemak
+Gunakan carian tarif Kastam dan minta ejen penghantaran anda mengesahkan pengelasan dan jumlah cukai sebelum anda menghantar.
+
+## 4. Ketahui sama ada anda memerlukan permit
+
+### Barangan terkawal
+Sesetengah barangan diharamkan atau memerlukan permit atau kelulusan agensi kerajaan sebelum boleh diimport atau dieksport. Contohnya makanan, tumbuhan, haiwan, ubat-ubatan, peranti perubatan, bahan kimia, peralatan telekomunikasi, senjata tertentu, dan barangan yang dilindungi kawalan perdagangan.
+
+### Barangan strategik
+Barangan yang mungkin mempunyai kegunaan ketenteraan atau keselamatan boleh dikawal selia di bawah undang-undang perdagangan strategik, dan permit mungkin diperlukan walaupun untuk eksport. Jika produk anda mempunyai ciri teknikal atau guna dwi, semak lebih awal.
+
+### Piawaian, halal dan pelabelan
+Produk mungkin perlu memenuhi piawaian keselamatan, peraturan pelabelan atau keperluan halal untuk dijual di Malaysia atau diterima di luar negara. Panduan kami tentang pensijilan halal menerangkan asasnya untuk makanan dan produk berkaitan.
+
+### Mengimport untuk dijual kepada pengguna
+Jika anda menjual barangan import dalam talian, platform dan pihak berkuasa juga mungkin memerlukan dokumen pematuhan produk. Panduan kami tentang menjual dalam talian merangkumi asas pasaran.
+
+### Tanya sebelum anda membeli
+Ketahui sama ada produk anda terkawal sebelum anda membuat pesanan, kerana barangan boleh ditahan, dirampas, atau dihantar balik dengan kos anda.
+
+## 5. Pilih terma penghantaran dan fahami kos
+
+### Incoterms
+Incoterms ialah terma piawai yang menyatakan siapa membayar dan menanggung risiko bagi setiap bahagian perjalanan, seperti pemuatan, tambang, insurans dan pelepasan import. Terma lazim termasuk EXW, FOB, CIF dan DDP. Memilih yang salah boleh menyebabkan anda membayar caj yang tidak dijangka. Sentiasa nyatakan terma dan versinya dalam kontrak anda.
+
+### Pilihan tambang
+Tambang laut lebih murah untuk penghantaran besar dan berat tetapi lebih perlahan. Tambang udara lebih pantas dan kosnya lebih tinggi bagi setiap kilogram. Kurier sesuai untuk bungkusan kecil dan sampel. Penghantaran gabungan (LCL) membolehkan anda berkongsi kontena, manakala kontena penuh (FCL) sesuai untuk isi padu lebih besar.
+
+### Insurans
+Barangan boleh rosak atau hilang semasa pengangkutan. Insurans kargo biasanya murah berbanding kerugian yang dilindunginya, dan panduan kami tentang insurans perniagaan menerangkan perlindungan lain yang mungkin anda perlukan.
+
+### Caj lazim
+Jangkakan tambang, pengendalian di asal dan destinasi, yuran dokumentasi, caj pelabuhan atau lapangan terbang, pengangkutan darat, duti dan cukai, dan kadangkala penyimpanan jika barangan menunggu. Minta sebut harga bertulis penuh yang menyenaraikan setiap item.
+
+### Mata wang dan terma bayaran
+Kadar pertukaran bergerak. Pertimbangkan untuk mengeluarkan invois dalam mata wang yang boleh anda urus, dan gunakan kaedah bayaran yang sesuai dengan risiko, seperti bayaran pendahuluan, surat kredit, atau akaun terbuka untuk rakan yang dipercayai.
+
+## 6. Sediakan dokumen
+
+### Dokumen utama
+Invois komersial, senarai pembungkusan, dan dokumen pengangkutan seperti bil muatan atau bil udara ialah asasnya. Kastam dan ejen penghantaran anda menggunakannya untuk menyemak nilai, kuantiti dan perihalan.
+
+### Dokumen lain yang mungkin anda perlukan
+Sijil asal jika anda menuntut kadar duti keutamaan, permit atau lesen untuk barangan terkawal, sijil insurans, dan laporan ujian atau pematuhan.
+
+### Pastikan semuanya sepadan
+Perihalan produk, kuantiti, berat, nilai dan kod HS hendaklah konsisten dalam semua dokumen. Ketidakpadanan ialah punca lazim kelewatan dan pertanyaan.
+
+### Simpan rekod
+Simpan dokumen perdagangan anda untuk tempoh yang dikehendaki undang-undang, biasanya beberapa tahun, supaya anda dapat menjawab audit dan menyokong potongan. Panduan kami tentang asas simpan kira menerangkan cara menyimpan rekod dengan teratur, dan panduan kami tentang e-Invois menerangkan peraturan invois yang mungkin juga terpakai kepada anda.
+
+## 7. Bekerjasama dengan ejen penghantaran atau ejen kastam
+
+> Ejen penghantaran yang baik bukan kos yang perlu dielakkan tetapi jalan pintas untuk mengelak kesilapan yang mahal. Untuk beberapa penghantaran pertama anda, biarkan profesional berlesen mengendalikan pengelasan, perisytiharan dan pelepasan sementara anda belajar bagaimana prosesnya berfungsi.
+
+### Apa yang mereka lakukan
+Mereka menempah ruang, menyediakan dokumen, menghantar perisytiharan Kastam, mengatur pengangkutan, dan menasihati tentang duti dan permit. Sesetengahnya pakar dalam laluan atau produk tertentu.
+
+### Bagaimana memilih
+Minta rujukan, semak bahawa mereka berlesen dan berpengalaman dengan jenis barangan anda, bandingkan sebut harga bertulis baris demi baris, dan berwaspada terhadap harga yang kelihatan terlalu baik untuk menjadi kenyataan.
+
+### Kekal terlibat
+Semak setiap dokumen sebelum ia dihantar, kerana anda bertanggungjawab atas apa yang diisytiharkan atas nama anda.
+
+### Tangani masalah dengan cepat
+Jika Kastam mempersoalkan penghantaran atau barangan ditahan, balas dengan pantas dengan dokumen yang diminta, kerana caj penyimpanan bertambah setiap hari.
+
+Jika anda memerlukan ejen penghantaran, ejen kastam atau pembekal, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pembeli luar negara dan pelanggan tempatan menemui dan mempercayai perniagaan anda.
+
+## Kesilapan lazim PKS Malaysia semasa mengimport atau mengeksport
+
+- **Mengabaikan kos mendarat.** Harga kilang hanyalah permulaan, dan tambang, duti, cukai dan pengendalian boleh mengubah sama ada sesuatu perjanjian masuk akal.
+- **Salah mengelaskan produk atau memperkecilkan nilai.** Kod HS yang salah atau nilai yang kurang diisytiharkan boleh membawa denda, kelewatan, dan merosakkan hubungan dengan Kastam.
+- **Tidak menyemak permit dan piawaian dahulu.** Barangan terkawal boleh ditahan atau dihantar balik dengan kos anda.
+- **Membayar penuh pembekal baharu di muka.** Semak pembekal, mulakan dengan pesanan kecil, dan gunakan kaedah bayaran yang lebih selamat jika boleh.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Takrifkan apa yang anda mahu import atau eksport, dan cari kod HS serta duti dan cukai yang mungkin bagi produk anda.
+- **Seterusnya:** Sahkan sama ada permit, piawaian atau peraturan halal terpakai, dan dapatkan sebut harga bertulis daripada dua ejen penghantaran.
+- **Kemudian:** Daftar dengan Kastam dan bank anda untuk perdagangan, dan buat pesanan atau penghantaran percubaan yang kecil.
+- **Setiap penghantaran:** Semak dokumen sepadan, simpan rekod anda, dan semak kos mendarat sebenar selepas itu.
+
+Perdagangan rentas sempadan memberi ganjaran kepada persediaan. Pelajari peraturan pada penghantaran pertama yang kecil, dan penghantaran yang lebih besar akan menjadi rutin.`,
+        faqs: [
+          {
+            question: "Adakah saya perlu mendaftar dengan Kastam untuk mengimport atau mengeksport di Malaysia?",
+            answer:
+              "Secara amnya ya. Peniaga perlu didaftarkan dengan Jabatan Kastam Diraja Malaysia sebelum mereka boleh menghantar perisytiharan. Proses dan sistem yang tepat berubah, jadi semak laman web Kastam untuk langkah semasa, atau tanya ejen penghantaran anda apa yang mereka uruskan untuk anda.",
+          },
+          {
+            question: "Apakah kod HS dan mengapa ia penting?",
+            answer:
+              "Ia ialah kod antarabangsa yang mengelaskan barangan. Ia menentukan kadar duti import, cukai dan peraturan permit yang terpakai kepada produk anda. Kod yang salah boleh bermakna duti yang salah, kelewatan atau denda, jadi sahkannya sebelum anda berkomitmen kepada harga.",
+          },
+          {
+            question: "Apakah cukai dan duti yang terpakai kepada barangan import?",
+            answer:
+              "Bergantung pada produk, duti import, cukai jualan, dan dalam sesetengah kes duti eksais mungkin terpakai. Perjanjian perdagangan bebas boleh mengurangkan duti jika anda memenuhi peraturan asal. Kadar dan pengecualian berubah, jadi semak jadual semasa untuk barangan anda.",
+          },
+          {
+            question: "Barangan manakah yang memerlukan permit untuk diimport atau dieksport?",
+            answer:
+              "Barangan terkawal seperti makanan, tumbuhan, haiwan, ubat-ubatan, bahan kimia, peralatan telekomunikasi tertentu, dan barangan strategik atau guna dwi mungkin memerlukan permit atau kelulusan. Sentiasa semak dengan agensi berkaitan sebelum anda membuat pesanan.",
+          },
+          {
+            question: "Apakah Incoterms?",
+            answer:
+              "Terma perdagangan piawai yang menyatakan siapa membayar dan menanggung risiko bagi setiap peringkat penghantaran, seperti tambang, insurans dan pelepasan import. Yang lazim termasuk EXW, FOB, CIF dan DDP. Nyatakan terma dan versinya dalam kontrak anda.",
+          },
+          {
+            question: "Apakah dokumen yang saya perlukan untuk penghantaran?",
+            answer:
+              "Lazimnya invois komersial, senarai pembungkusan, dan dokumen pengangkutan seperti bil muatan atau bil udara, serta sebarang permit, sijil asal atau dokumen insurans yang terpakai. Pastikan semua butiran sepadan merentas dokumen.",
+          },
+          {
+            question: "Adakah saya memerlukan ejen penghantaran atau ejen kastam?",
+            answer:
+              "Ia tidak selalu diwajibkan, tetapi amat dinasihatkan untuk penghantaran pertama anda. Profesional berlesen boleh mengendalikan pengelasan, perisytiharan dan pelepasan, tetapi anda tetap bertanggungjawab atas ketepatan apa yang diisytiharkan atas nama anda.",
+          },
+          {
+            question: "Bagaimanakah saya mengelak kelewatan di sempadan?",
+            answer:
+              "Gunakan kod HS yang betul, isytiharkan nilai sebenar, semak permit dan piawaian dahulu, pastikan semua dokumen konsisten, bekerjasama dengan ejen penghantaran yang berpengalaman, dan balas dengan pantas sebarang pertanyaan Kastam.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "pricing-products-and-services-in-malaysia",
+    title: "Pricing Your Products and Services in Malaysia: Costing, Margins, and Staying Profitable",
+    seoTitle: "Pricing Products and Services in Malaysia: A SME Guide",
+    seoDescription:
+      "How Malaysian SMEs can price profitably: true costs, margin vs markup, break-even, SST, competitor and marketplace pricing, discounts and price rises.",
+    coverImage: {
+      file: "pricing-products-and-services-in-malaysia-cover.webp",
+      mimeType: "image/webp",
+      alt: "A woman with glasses leaning over a folder of documents, writing with a pen while holding a calculator",
+      altTranslations: {
+        zh: "一位戴眼镜的女士俯身看着一叠文件，一手握笔书写，一手拿着计算器",
+        ms: "Seorang wanita berkaca mata membongkok di atas fail dokumen, menulis dengan pen sambil memegang kalkulator",
+      },
+    },
+    contentImages: {
+      notebook: {
+        file: "pricing-products-and-services-in-malaysia-notebook.webp",
+        mimeType: "image/webp",
+        alt: "A hand writing in a notebook with a pencil beside a blue calculator and an open laptop",
+        altTranslations: {
+          zh: "一只手用铅笔在笔记本上书写，旁边是蓝色计算器和一台打开的笔记本电脑",
+          ms: "Sebuah tangan menulis dalam buku nota dengan pensel di sebelah kalkulator biru dan komputer riba yang terbuka",
+        },
+        after: "Work out your true cost per unit before you decide on any price.",
+        afterTranslations: {
+          zh: "在决定任何价格之前，先算出您每单位的真实成本。",
+          ms: "Kira kos sebenar setiap unit anda sebelum anda memutuskan sebarang harga.",
+        },
+      },
+    },
+    excerpt:
+      "Many small businesses set prices by copying competitors or guessing, then discover they are busy but not profitable. This guide shows Malaysian SMEs how to work out true costs, tell margin from markup, find the break-even point, account for tax, price against competitors and marketplaces, run discounts safely, and raise prices without losing customers.",
+    body: `Price is the one lever that affects every other number in your business. Set it too low and each sale loses money or leaves too little to pay rent, wages, and tax. Set it too high and customers go elsewhere. Many Malaysian SMEs set prices by copying a competitor or adding a rough percentage, and only find out months later that being busy is not the same as being profitable.
+
+This is general information, not financial or tax advice. Tax rates, thresholds, marketplace fees and rules change, so confirm current figures with the relevant authority, platform or your accountant before you rely on any number in this guide.
+
+## 1. Know your real costs first
+
+Work out your true cost per unit before you decide on any price. Without it, every price is a guess.
+
+### Direct costs
+These are the costs that rise with each item sold: raw materials, ingredients, stock you buy for resale, packaging, delivery to the customer, and any commission or platform fee. For a service, the direct cost is mainly the time and any materials used on the job.
+
+### Overheads
+These are the costs you pay whether you sell much or little: rent, utilities, salaries, insurance, software, licences, loan payments, and marketing. Add them up for a month, and then estimate how much each sale needs to contribute.
+
+### Your own time
+Many owners leave their own time out of the price. If you work in the business, give your time a realistic value, otherwise your price will only look profitable because you are working for free.
+
+### Hidden and irregular costs
+Include wastage and spoilage, returns and refunds, payment processing fees, bad debts, discounts you give away, and annual costs such as licence renewals and taxes. Our guide on bookkeeping basics explains how to keep records that show your real costs, and our guide on cash flow explains why timing matters too.
+
+### Cost per unit
+Add the direct costs of one item to its share of overheads. For example, if overheads are RM6,000 a month and you expect to sell 1,000 items, each item carries RM6 of overhead on top of its direct cost. Keep this number up to date, because supplier prices and wages change.
+
+## 2. Understand margin, markup, and break-even
+
+### Markup
+Markup is the percentage you add to cost. If an item costs RM10 and you sell it for RM15, the markup is 50%.
+
+### Gross margin
+Margin is the share of the selling price that is profit. In the same example, the profit is RM5 on a RM15 price, so the margin is about 33%. Markup and margin are not the same, and confusing them is a classic error: a 50% markup does not give a 50% margin.
+
+### Net margin
+Gross margin only deducts direct costs. Net margin also deducts overheads and tax, and shows what you actually keep. A business with a healthy gross margin can still make a net loss if overheads are too high.
+
+### Break-even point
+Break-even is the number of sales at which you cover all your costs. Divide your monthly overheads by the contribution per item (price minus direct cost). If overheads are RM6,000 and each item contributes RM6, you need to sell 1,000 items a month before you earn any profit. If that number looks unrealistic, you need a higher price, lower costs, or both.
+
+### Set a target
+Decide the profit you want, then work backwards to the price and volume needed. A target keeps you from underpricing just to win sales.
+
+## 3. Include tax and fees in your price
+
+### Know whether SST applies to you
+Sales and service tax may apply if your taxable turnover passes the registration threshold for your activity, and the threshold and rates differ by category. See our guide on SST registration, and check the official portal for current thresholds and rates, since they have changed over time.
+
+### Show prices clearly
+Decide whether your displayed price includes tax, and say so clearly on quotations, menus, and invoices. If you are registered, tax must be handled correctly on invoices, and our guide on e-invoicing explains issues that may apply.
+
+### Allow for platform and payment fees
+Marketplaces and payment providers charge commissions, transaction fees, and sometimes shipping or voucher costs. Check the current fee schedule and build it into your price, or you will sell more and earn less. Our guide on selling online explains the platform options.
+
+### Do not forget income tax
+Profit is taxed, so the profit you see is not the money you keep. Our guide on the small business tax calendar and our guide on tax deductions explain what to plan for.
+
+## 4. Choose a pricing approach
+
+### Cost-plus pricing
+Add a margin to your cost. It is simple and protects your profit, but it ignores what customers are willing to pay, so check the result against the market.
+
+### Competitor-based pricing
+Look at what similar businesses charge. Use it as a reference, not a rule: competitors may have lower costs, different quality, or be losing money. Matching a price you cannot afford is a fast way to fail.
+
+### Value-based pricing
+Price according to the value the customer gets. A repair that saves a business a day of downtime is worth more than the hour it takes. This works best where you can show results, expertise, or convenience.
+
+### Tiered or bundled pricing
+Offer good, better, best options, or bundle items together. Tiers let price-sensitive customers buy something while giving others a reason to spend more.
+
+### Service pricing
+For services, choose between hourly, fixed project, and retainer pricing. Fixed prices suit clear scopes, hourly rates suit uncertain work, and retainers give steady income. Whatever you choose, state what is and is not included in your written terms. Our guide on contracts and terms explains how to do this.
+
+### Combine methods
+The strongest approach is usually to calculate a cost-based floor, check the market for a ceiling, and then choose a price in between based on your value.
+
+## 5. Price against competitors and marketplaces
+
+### Do not race to the bottom
+Online marketplaces make price comparison easy, and a race to the cheapest price rarely ends well for a small business. Compete on something else too: quality, speed, service, local presence, trust, or a niche.
+
+### Know your price floor
+Work out the lowest price at which a sale still contributes to overheads. Never go below your floor except as a deliberate, short-term decision.
+
+### Differentiate
+Customers will pay more for reliability, convenience, brand, and a good experience. Make sure you tell them what makes you different, and show it in your listing. Our guide on getting found online and our guide on social media marketing explain how to do this.
+
+### Watch for hidden comparison traps
+A cheaper competitor may be hiding delivery fees, using lower-quality materials, or selling a different size. Compare like with like before you react.
+
+### Local factors
+Rent, location, and customer spending power differ between a night market stall, a mall kiosk, and an online store. Price for your own situation, not someone else's.
+
+## 6. Use discounts and promotions carefully
+
+> A discount is not a small price cut, it is a large profit cut. If your margin is 20% and you give 10% off, you have lost half your profit on that sale, and you need to sell much more just to stand still.
+
+### Calculate before you promote
+Work out the new margin and the extra volume you need to break even on the promotion. If the numbers do not work, skip it.
+
+### Prefer value over cuts
+Offer a free add-on, a bundle, a loyalty reward, or a limited-time offer with a clear end date instead of a permanent price cut that trains customers to wait.
+
+### Protect your regular customers
+If you discount heavily for new customers only, loyal customers may feel penalised. Consider rewards that recognise repeat business.
+
+### Set rules
+Decide who can approve discounts and how deep they can go, so that staff do not give away your margin. Keep records of promotions, since they affect your accounts and any tax treatment.
+
+### Watch the legal side
+Price displays, "sale" claims, and promotions must be honest. Our guide on contracts and terms and the consumer protection rules that apply to your business explain what to avoid, so confirm the current rules.
+
+## 7. Review and raise prices when you need to
+
+### Review regularly
+Check your costs and margins at least a few times a year, and whenever a big cost changes, such as rent, wages, or a main supplier's price. Inflation can quietly erase your profit.
+
+### Signs it is time to raise prices
+You are always busy but short of cash, costs have risen, demand is strong, customers rarely question your price, or competitors have already raised theirs.
+
+### How to do it well
+Give notice to regular customers, explain any improvements, and avoid surprising anyone. Small, regular increases are usually easier to accept than one large jump. You can also raise prices on new customers first, or on new packages.
+
+### Test and learn
+Try a change on one product or segment, and watch sales and feedback before rolling it out. Some customers will leave, but many businesses find they lose fewer than they feared.
+
+### Protect your value
+Raise prices together with a clear reason, such as better materials, faster service, or extra support. Our guide on collecting late payments also helps you protect the income you have earned.
+
+If you want an accountant to check your costing, or a mentor or adviser to review your pricing, you can [browse the directory](/en) for local professionals, and [creating a free business listing](/en/signup) helps customers find your business and understand what you offer.
+
+## Common mistakes Malaysian SMEs make when pricing
+
+- **Copying competitors without knowing your own costs.** Their costs and goals may be different from yours, and you may be matching a price you cannot afford.
+- **Confusing markup with margin.** A 50% markup is only about a 33% margin, and mixing them up can leave you with less profit than you planned.
+- **Leaving out overheads, fees, and your own time.** A price that covers only materials will eventually fail to cover the business.
+- **Discounting too often and too deeply.** Frequent big discounts erode profit and teach customers to wait for the next sale.
+
+## Where to start
+
+- **This week:** List your direct costs and monthly overheads, and work out the true cost of your top-selling product or service.
+- **Next:** Calculate your margin and break-even, and compare them with your current prices.
+- **Then:** Check the market and marketplace fees, and adjust any price that does not cover its costs and your target profit.
+- **Each quarter:** Review costs and prices, and raise them calmly and clearly when you need to.
+
+Good pricing is a calculation, not a guess. Know your costs, set a target, check the market, and review it often, and your prices will pay the business back.`,
+    faqs: [
+      {
+        question: "How do I work out the right price for my product?",
+        answer:
+          "Start with the true cost per unit, including direct costs, a share of overheads, and your own time. Add the margin you need, then check the result against what customers will pay and what competitors charge, and adjust.",
+      },
+      {
+        question: "What is the difference between markup and margin?",
+        answer:
+          "Markup is the percentage added to cost, while margin is the share of the selling price that is profit. An item costing RM10 sold for RM15 has a 50% markup but only about a 33% margin.",
+      },
+      {
+        question: "What is a break-even point?",
+        answer:
+          "It is the number of sales at which your total income covers all your costs. Divide monthly overheads by the contribution per item, which is the price minus the direct cost, to see how many items you need to sell before you make a profit.",
+      },
+      {
+        question: "Should my prices include SST?",
+        answer:
+          "If you are registered, tax must be handled correctly on your invoices, and you should state clearly whether displayed prices include it. Thresholds and rates differ by activity and change over time, so confirm the current rules on the official portal.",
+      },
+      {
+        question: "Should I match my competitors' prices?",
+        answer:
+          "Use them as a reference, not a rule. Competitors may have different costs, quality, or goals. Matching a price you cannot afford is risky, so know your own price floor and compete on value as well as price.",
+      },
+      {
+        question: "How do marketplace fees affect my pricing?",
+        answer:
+          "Commissions, transaction fees, and sometimes shipping and voucher costs reduce what you keep. Check the platform's current fee schedule and build it into your price, or you may sell more and earn less.",
+      },
+      {
+        question: "Are discounts a good idea for a small business?",
+        answer:
+          "Only if the numbers work. A discount cuts profit sharply, so calculate the new margin and the extra volume you need to break even. Consider bundles, add-ons, or limited-time offers instead of deep or permanent cuts.",
+      },
+      {
+        question: "How often should I review my prices, and how do I raise them?",
+        answer:
+          "Review at least a few times a year and whenever a major cost changes. When raising prices, give notice, explain any improvements, and prefer small, regular increases. Test on one product or group first and watch the results.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "在马来西亚为产品和服务定价：成本核算、利润率与保持盈利",
+        excerpt:
+          "许多小企业靠模仿对手或凭猜测定价，结果发现自己忙得团团转却不赚钱。本指南向马来西亚中小企业说明如何算出真实成本、区分利润率与加成率、找到盈亏平衡点、把税款计算在内、对照对手和电商平台定价、安全地做折扣，以及在不流失客户的情况下涨价。",
+        body: `价格是唯一会影响您企业所有其他数字的杠杆。定得太低，每笔销售都会亏本，或剩下的钱不足以支付租金、工资和税款。定得太高，客户会去别处。许多马来西亚中小企业通过模仿竞争对手或加上一个大概的百分比来定价，几个月后才发现忙碌并不等于盈利。
+
+以下仅为一般资讯，并非财务或税务意见。税率、门槛、电商平台费用和规定会变动，所以在依赖本指南中的任何数字之前，请向相关机构、平台或您的会计师确认现行数字。
+
+## 1. 先了解您的真实成本
+
+在决定任何价格之前，先算出您每单位的真实成本。没有它，每个价格都是猜测。
+
+### 直接成本
+这是随每件售出的商品而增加的成本：原材料、食材、为转售而购买的存货、包装、送货给客户，以及任何佣金或平台费用。对于服务，直接成本主要是花在这项工作上的时间和所用的材料。
+
+### 间接费用
+这是无论您卖得多或少都要支付的成本：租金、水电、薪水、保险、软件、执照、贷款还款和营销。把它们加起来算出一个月的总额，然后估计每笔销售需要贡献多少。
+
+### 您自己的时间
+许多业主在价格中遗漏了自己的时间。如果您在企业里工作，请给您的时间一个现实的价值，否则您的价格只是因为您在免费工作才看起来有利可图。
+
+### 隐藏和不定期的成本
+包括损耗和变质、退货和退款、支付处理费、坏账、您送出的折扣，以及执照续期和税款等年度成本。我们关于簿记基础的指南说明了如何保存能反映真实成本的记录，关于现金流的指南则说明了时间安排为什么也很重要。
+
+### 每单位成本
+把一件商品的直接成本加上它分摊的间接费用。例如，如果每月间接费用是 RM6,000，而您预计卖出 1,000 件，那么每件商品在直接成本之外还要承担 RM6 的间接费用。请随时更新这个数字，因为供应商价格和工资会变。
+
+## 2. 了解利润率、加成率和盈亏平衡
+
+### 加成率
+加成率是您在成本之上加的百分比。如果一件商品成本 RM10，您卖 RM15，加成率就是 50%。
+
+### 毛利率
+利润率是售价中属于利润的比例。在同一个例子中，售价 RM15 的利润是 RM5，所以利润率约为 33%。加成率和利润率不是一回事，混淆它们是经典错误：50% 的加成率并不等于 50% 的利润率。
+
+### 净利率
+毛利率只扣除直接成本。净利率还会扣除间接费用和税款，显示您实际留下多少。毛利率健康的企业，如果间接费用太高，仍然可能净亏损。
+
+### 盈亏平衡点
+盈亏平衡是您覆盖所有成本所需要的销售量。把每月间接费用除以每件商品的贡献（价格减直接成本）。如果间接费用是 RM6,000，每件商品贡献 RM6，您每月需要卖出 1,000 件才会开始赚钱。如果这个数字看起来不现实，您需要更高的价格、更低的成本，或两者兼具。
+
+### 设定目标
+决定您想要的利润，然后倒推所需的价格和销量。目标让您不会为了赢得销售而定价过低。
+
+## 3. 把税款和费用计入价格
+
+### 了解 SST 是否适用于您
+如果您的应税营业额超过您所从事业务的注册门槛，可能需要缴纳销售税和服务税，门槛和税率因类别而异。请参阅我们关于 SST 注册的指南，并在官方入口网站查看现行门槛和税率，因为它们随时间有所变化。
+
+### 清楚标示价格
+决定您标示的价格是否含税，并在报价单、菜单和发票上清楚说明。如果您已注册，发票上的税款必须正确处理，我们关于电子发票的指南说明了可能适用的问题。
+
+### 预留平台和支付费用
+电商平台和支付服务商会收取佣金、交易费，有时还有运费或优惠券成本。请查核现行的收费表并把它计入价格，否则您会卖得更多却赚得更少。我们关于网络销售的指南说明了各种平台选择。
+
+### 别忘了所得税
+利润要缴税，所以您看到的利润不是您能留下的钱。我们关于小企业税务日历和税务扣除的指南说明了需要提前规划的事项。
+
+## 4. 选择定价方法
+
+### 成本加成定价
+在成本上加一个利润。它简单并能保护您的利润，但忽略了客户愿意付多少，所以请对照市场检查结果。
+
+### 竞争对手定价
+看看类似的企业收多少。把它当作参考而非规则：竞争对手可能成本较低、质量不同，或者正在亏钱。跟随一个您负担不起的价格，是失败的快速途径。
+
+### 价值定价
+按客户得到的价值来定价。一次维修如果替企业节省了一天的停工，它的价值远高于所花的一个小时。这在您能展示成果、专业或便利的地方效果最好。
+
+### 分级或组合定价
+提供好、更好、最好的选项，或把商品捆绑在一起。分级让对价格敏感的客户也能购买，同时让其他客户有理由多花钱。
+
+### 服务定价
+对于服务，可以在按小时、固定项目和长期合约三种定价之间选择。固定价格适合范围明确的工作，按小时适合不确定的工作，长期合约则带来稳定收入。无论选择哪一种，都请在书面条款中说明包含和不包含什么。我们关于合约与条款的指南说明了如何做到这一点。
+
+### 结合多种方法
+最强的做法通常是先算出基于成本的底价，再查看市场得出上限，然后根据您的价值在两者之间选择一个价格。
+
+## 5. 对照竞争对手和电商平台定价
+
+### 不要打价格战
+线上平台让价格比较变得很容易，对小企业来说，比谁最便宜很少有好结果。也要在其他方面竞争：质量、速度、服务、本地存在、信任或细分市场。
+
+### 知道您的价格底线
+算出一笔销售仍能为间接费用作出贡献的最低价格。除非是刻意的短期决定，否则永远不要低于底线。
+
+### 做出差异
+客户愿意为可靠、便利、品牌和良好的体验付更多钱。请确保告诉他们您的与众不同之处，并在您的商品页面上展示出来。我们关于提升网络曝光度和社交媒体营销的指南说明了如何做到这一点。
+
+### 留意隐藏的比较陷阱
+更便宜的竞争对手可能隐藏了运费、使用较低质量的材料，或销售不同的尺寸。在做出反应之前，先比较相同条件的产品。
+
+### 本地因素
+夜市摊位、商场摊位和网店之间的租金、地点和客户消费能力各不相同。请根据您自己的情况定价，而不是别人的。
+
+## 6. 谨慎使用折扣和促销
+
+> 折扣不是小幅降价，而是大幅削减利润。如果您的利润率是 20%，打九折，这笔销售的利润就减少了一半，您需要卖得多得多才能保持原地不动。
+
+### 促销之前先计算
+算出新的利润率，以及促销要保本所需的额外销量。如果数字不成立，就别做。
+
+### 偏向价值而非降价
+提供免费附加品、组合、会员奖励，或有明确结束日期的限时优惠，而不是让客户学会等待的永久降价。
+
+### 保护您的老客户
+如果您只对新客户大幅折扣，忠实客户可能感到被冷落。考虑能肯定回头客的奖励。
+
+### 订立规则
+决定谁可以批准折扣以及幅度多大，避免员工送出您的利润。保存促销记录，因为它们会影响您的账目和任何税务处理。
+
+### 注意法律层面
+价格标示、“特价”声明和促销必须诚实。我们关于合约与条款的指南，以及适用于您企业的消费者保护规定，说明了要避免什么，所以请确认现行规定。
+
+## 7. 在需要时检视并上调价格
+
+### 定期检视
+每年至少检视几次成本和利润率，并在租金、工资或主要供应商价格等重大成本变化时检视。通货膨胀会悄悄吞噬您的利润。
+
+### 该涨价的信号
+您总是很忙却缺现金、成本上升、需求强劲、客户很少质疑您的价格，或竞争对手已经涨价。
+
+### 如何做好
+提前通知老客户，说明任何改进，避免让任何人感到意外。小幅、定期的上调通常比一次大幅度跳涨更容易被接受。您也可以先对新客户或新套餐涨价。
+
+### 测试并学习
+先在一种产品或一个客户群试行改变，观察销售和反馈再全面推行。有些客户会离开，但许多企业发现流失的比担心的要少。
+
+### 保护您的价值
+涨价时要附带清楚的理由，例如更好的材料、更快的服务或额外的支持。我们关于追收逾期货款的指南也能帮助您保护已赚到的收入。
+
+如果您想请会计师检查成本核算，或请导师或顾问检视您的定价，可以[浏览名录](/zh)寻找本地专业人士，而[创建免费的企业列表](/zh/signup)可以帮助客户找到您的企业并了解您提供什么。
+
+## 马来西亚中小企业在定价时常犯的错误
+
+- **在不了解自身成本的情况下模仿对手。**他们的成本和目标可能与您不同，您可能是在跟随一个您负担不起的价格。
+- **混淆加成率与利润率。**50% 的加成率只相当于约 33% 的利润率，混淆它们可能让您的利润低于预期。
+- **遗漏间接费用、各项费用和您自己的时间。**只覆盖材料的价格，最终将无法支撑整个企业。
+- **折扣太频繁、太深。**频繁的大幅折扣会侵蚀利润，并让客户学会等待下一次促销。
+
+## 从哪里开始
+
+- **本周：**列出您的直接成本和每月间接费用，并算出您最畅销产品或服务的真实成本。
+- **接着：**计算您的利润率和盈亏平衡点，并与目前的价格比较。
+- **然后：**查看市场和电商平台费用，并调整任何不能覆盖成本和目标利润的价格。
+- **每季度：**检视成本和价格，并在需要时冷静而清晰地涨价。
+
+好的定价是计算，不是猜测。了解您的成本，设定目标，查看市场，并经常检视，您的价格就会回报企业。`,
+        faqs: [
+          {
+            question: "如何算出产品的合适价格？",
+            answer:
+              "从每单位真实成本开始，包括直接成本、分摊的间接费用和您自己的时间。加上您需要的利润，然后对照客户愿意付的价格和竞争对手的收费检查结果，再作调整。",
+          },
+          {
+            question: "加成率和利润率有什么区别？",
+            answer:
+              "加成率是加在成本上的百分比，而利润率是售价中属于利润的比例。成本 RM10、卖 RM15 的商品，加成率是 50%，但利润率只有约 33%。",
+          },
+          {
+            question: "什么是盈亏平衡点？",
+            answer:
+              "它是您的总收入覆盖所有成本所需的销售量。把每月间接费用除以每件商品的贡献（价格减直接成本），就能知道您需要卖出多少件才会开始赚钱。",
+          },
+          {
+            question: "我的价格应该含 SST 吗？",
+            answer:
+              "如果您已注册，发票上的税款必须正确处理，并应清楚说明标示的价格是否含税。门槛和税率因业务而异并随时间变化，所以请在官方入口网站确认现行规定。",
+          },
+          {
+            question: "我应该跟随竞争对手的价格吗？",
+            answer:
+              "把它们当作参考而非规则。竞争对手的成本、质量或目标可能不同。跟随一个您负担不起的价格有风险，所以要知道自己的价格底线，并在价值上也要竞争，而不只是价格。",
+          },
+          {
+            question: "电商平台费用如何影响我的定价？",
+            answer:
+              "佣金、交易费，有时还有运费和优惠券成本，会减少您实际留下的金额。请查核平台现行的收费表并把它计入价格，否则您可能卖得更多却赚得更少。",
+          },
+          {
+            question: "折扣对小企业是好主意吗？",
+            answer:
+              "只有在数字成立时才是。折扣会大幅削减利润，所以请计算新的利润率和保本所需的额外销量。可以考虑用组合、附加品或限时优惠，来取代大幅或永久的降价。",
+          },
+          {
+            question: "我应该多久检视一次价格，如何涨价？",
+            answer:
+              "每年至少检视几次，并在重大成本变化时检视。涨价时要提前通知，说明任何改进，并倾向于小幅、定期的上调。先在一种产品或一个群体上测试，并观察结果。",
+          },
+        ],
+      },
+      ms: {
+        title: "Menetapkan Harga Produk dan Perkhidmatan Anda di Malaysia: Pengkosan, Margin dan Kekal Menguntungkan",
+        excerpt:
+          "Banyak perniagaan kecil menetapkan harga dengan meniru pesaing atau meneka, kemudian mendapati mereka sibuk tetapi tidak menguntungkan. Panduan ini menunjukkan kepada PKS Malaysia cara mengira kos sebenar, membezakan margin daripada markup, mencari titik pulang modal, mengambil kira cukai, menetapkan harga berbanding pesaing dan pasaran dalam talian, menjalankan diskaun dengan selamat, dan menaikkan harga tanpa kehilangan pelanggan.",
+        body: `Harga ialah satu-satunya tuas yang mempengaruhi setiap angka lain dalam perniagaan anda. Tetapkan terlalu rendah dan setiap jualan rugi atau meninggalkan terlalu sedikit untuk membayar sewa, gaji dan cukai. Tetapkan terlalu tinggi dan pelanggan pergi ke tempat lain. Ramai PKS Malaysia menetapkan harga dengan meniru pesaing atau menambah peratusan kasar, dan hanya mendapati beberapa bulan kemudian bahawa sibuk tidak sama dengan menguntungkan.
+
+Ini ialah maklumat am, bukan nasihat kewangan atau cukai. Kadar cukai, ambang, yuran pasaran dalam talian dan peraturan berubah, jadi sahkan angka semasa dengan pihak berkuasa berkaitan, platform atau akauntan anda sebelum anda bergantung pada mana-mana angka dalam panduan ini.
+
+## 1. Ketahui kos sebenar anda dahulu
+
+Kira kos sebenar setiap unit anda sebelum anda memutuskan sebarang harga. Tanpanya, setiap harga hanyalah tekaan.
+
+### Kos langsung
+Ini ialah kos yang meningkat dengan setiap item yang dijual: bahan mentah, bahan, stok yang anda beli untuk dijual semula, pembungkusan, penghantaran kepada pelanggan, dan sebarang komisen atau yuran platform. Bagi perkhidmatan, kos langsung terutamanya masa dan sebarang bahan yang digunakan pada kerja itu.
+
+### Overhed
+Ini ialah kos yang anda bayar sama ada anda menjual banyak atau sedikit: sewa, utiliti, gaji, insurans, perisian, lesen, bayaran pinjaman, dan pemasaran. Jumlahkannya untuk sebulan, kemudian anggar berapa banyak setiap jualan perlu menyumbang.
+
+### Masa anda sendiri
+Ramai pemilik meninggalkan masa mereka sendiri daripada harga. Jika anda bekerja dalam perniagaan, berikan masa anda nilai yang realistik, jika tidak harga anda hanya kelihatan menguntungkan kerana anda bekerja percuma.
+
+### Kos tersembunyi dan tidak tetap
+Sertakan pembaziran dan kerosakan, pulangan dan bayaran balik, yuran pemprosesan pembayaran, hutang lapuk, diskaun yang anda berikan, dan kos tahunan seperti pembaharuan lesen dan cukai. Panduan kami tentang asas simpan kira menerangkan cara menyimpan rekod yang menunjukkan kos sebenar anda, dan panduan kami tentang aliran tunai menerangkan mengapa masa juga penting.
+
+### Kos setiap unit
+Tambah kos langsung satu item kepada bahagiannya daripada overhed. Sebagai contoh, jika overhed ialah RM6,000 sebulan dan anda menjangka menjual 1,000 item, setiap item membawa RM6 overhed di atas kos langsungnya. Kemas kini nombor ini kerana harga pembekal dan gaji berubah.
+
+## 2. Fahami margin, markup dan pulang modal
+
+### Markup
+Markup ialah peratusan yang anda tambah pada kos. Jika sesuatu item berkos RM10 dan anda menjualnya RM15, markup ialah 50%.
+
+### Margin kasar
+Margin ialah bahagian harga jualan yang menjadi keuntungan. Dalam contoh yang sama, keuntungan ialah RM5 pada harga RM15, jadi margin kira-kira 33%. Markup dan margin tidak sama, dan mengelirukannya ialah kesilapan klasik: markup 50% tidak memberi margin 50%.
+
+### Margin bersih
+Margin kasar hanya menolak kos langsung. Margin bersih juga menolak overhed dan cukai, dan menunjukkan apa yang anda sebenarnya simpan. Perniagaan dengan margin kasar yang sihat masih boleh mengalami kerugian bersih jika overhed terlalu tinggi.
+
+### Titik pulang modal
+Pulang modal ialah bilangan jualan di mana anda menampung semua kos anda. Bahagikan overhed bulanan dengan sumbangan setiap item (harga tolak kos langsung). Jika overhed ialah RM6,000 dan setiap item menyumbang RM6, anda perlu menjual 1,000 item sebulan sebelum anda memperoleh sebarang keuntungan. Jika nombor itu kelihatan tidak realistik, anda memerlukan harga yang lebih tinggi, kos yang lebih rendah, atau kedua-duanya.
+
+### Tetapkan sasaran
+Tentukan keuntungan yang anda mahu, kemudian kira ke belakang untuk harga dan isi padu yang diperlukan. Sasaran menghalang anda daripada menetapkan harga terlalu rendah hanya untuk memenangi jualan.
+
+## 3. Sertakan cukai dan yuran dalam harga anda
+
+### Ketahui sama ada SST terpakai kepada anda
+Cukai jualan dan perkhidmatan mungkin terpakai jika perolehan bercukai anda melepasi ambang pendaftaran untuk aktiviti anda, dan ambang serta kadar berbeza mengikut kategori. Lihat panduan kami tentang pendaftaran SST, dan semak portal rasmi untuk ambang dan kadar semasa, kerana ia telah berubah dari semasa ke semasa.
+
+### Tunjukkan harga dengan jelas
+Tentukan sama ada harga yang dipaparkan termasuk cukai, dan nyatakannya dengan jelas pada sebut harga, menu dan invois. Jika anda berdaftar, cukai mesti dikendalikan dengan betul pada invois, dan panduan kami tentang e-Invois menerangkan isu yang mungkin terpakai.
+
+### Peruntukkan yuran platform dan pembayaran
+Pasaran dalam talian dan penyedia pembayaran mengenakan komisen, yuran transaksi, dan kadangkala kos penghantaran atau baucar. Semak jadual yuran semasa dan masukkannya ke dalam harga anda, atau anda akan menjual lebih tetapi memperoleh kurang. Panduan kami tentang menjual dalam talian menerangkan pilihan platform.
+
+### Jangan lupa cukai pendapatan
+Keuntungan dicukai, jadi keuntungan yang anda lihat bukan wang yang anda simpan. Panduan kami tentang kalendar cukai perniagaan kecil dan potongan cukai menerangkan apa yang perlu dirancang.
+
+## 4. Pilih pendekatan penetapan harga
+
+### Harga kos tambah
+Tambah margin pada kos anda. Ia mudah dan melindungi keuntungan anda, tetapi ia mengabaikan apa yang pelanggan sanggup bayar, jadi semak hasilnya berbanding pasaran.
+
+### Harga berasaskan pesaing
+Lihat apa yang dikenakan oleh perniagaan serupa. Gunakannya sebagai rujukan, bukan peraturan: pesaing mungkin mempunyai kos lebih rendah, kualiti berbeza, atau mengalami kerugian. Menyamai harga yang anda tidak mampu ialah cara pantas untuk gagal.
+
+### Harga berasaskan nilai
+Tetapkan harga mengikut nilai yang diperoleh pelanggan. Pembaikan yang menjimatkan sehari masa henti perniagaan bernilai lebih daripada sejam yang diambil. Ini paling berkesan jika anda boleh menunjukkan hasil, kepakaran atau kemudahan.
+
+### Harga berperingkat atau berpakej
+Tawarkan pilihan baik, lebih baik, terbaik, atau gabungkan item bersama. Peringkat membolehkan pelanggan yang sensitif harga membeli sesuatu sambil memberi alasan kepada yang lain untuk berbelanja lebih.
+
+### Harga perkhidmatan
+Untuk perkhidmatan, pilih antara harga setiap jam, projek tetap dan retainer. Harga tetap sesuai untuk skop yang jelas, kadar sejam sesuai untuk kerja yang tidak pasti, dan retainer memberi pendapatan stabil. Apa pun pilihan anda, nyatakan apa yang termasuk dan tidak termasuk dalam terma bertulis anda. Panduan kami tentang kontrak dan terma menerangkan cara melakukannya.
+
+### Gabungkan kaedah
+Pendekatan terkuat biasanya ialah mengira lantai berasaskan kos, menyemak pasaran untuk siling, dan kemudian memilih harga di antaranya berdasarkan nilai anda.
+
+## 5. Tetapkan harga berbanding pesaing dan pasaran dalam talian
+
+### Jangan berlumba ke bawah
+Pasaran dalam talian memudahkan perbandingan harga, dan perlumbaan ke harga termurah jarang berakhir baik untuk perniagaan kecil. Bersaing juga pada perkara lain: kualiti, kelajuan, perkhidmatan, kehadiran tempatan, kepercayaan, atau niche.
+
+### Ketahui lantai harga anda
+Kira harga terendah di mana jualan masih menyumbang kepada overhed. Jangan sekali-kali turun di bawah lantai anda kecuali sebagai keputusan sengaja dan jangka pendek.
+
+### Bezakan diri anda
+Pelanggan sanggup membayar lebih untuk kebolehpercayaan, kemudahan, jenama dan pengalaman yang baik. Pastikan anda memberitahu mereka apa yang membezakan anda, dan tunjukkannya dalam penyenaraian anda. Panduan kami tentang ditemui dalam talian dan pemasaran media sosial menerangkan cara melakukannya.
+
+### Awasi perangkap perbandingan tersembunyi
+Pesaing yang lebih murah mungkin menyembunyikan yuran penghantaran, menggunakan bahan berkualiti lebih rendah, atau menjual saiz berbeza. Bandingkan yang setara sebelum anda bertindak balas.
+
+### Faktor tempatan
+Sewa, lokasi dan kuasa perbelanjaan pelanggan berbeza antara gerai pasar malam, kiosk pusat membeli-belah dan kedai dalam talian. Tetapkan harga untuk situasi anda sendiri, bukan situasi orang lain.
+
+## 6. Gunakan diskaun dan promosi dengan berhati-hati
+
+> Diskaun bukan pemotongan harga yang kecil, ia pemotongan keuntungan yang besar. Jika margin anda 20% dan anda memberi diskaun 10%, anda telah kehilangan separuh keuntungan pada jualan itu, dan anda perlu menjual jauh lebih banyak hanya untuk kekal di tempat yang sama.
+
+### Kira sebelum anda mempromosikan
+Kira margin baharu dan isi padu tambahan yang anda perlukan untuk pulang modal pada promosi itu. Jika angka tidak berjaya, langkaulah.
+
+### Utamakan nilai berbanding pemotongan
+Tawarkan tambahan percuma, pakej, ganjaran kesetiaan, atau tawaran terhad masa dengan tarikh tamat yang jelas dan bukannya pemotongan harga kekal yang melatih pelanggan menunggu.
+
+### Lindungi pelanggan tetap anda
+Jika anda memberi diskaun besar untuk pelanggan baharu sahaja, pelanggan setia mungkin berasa dihukum. Pertimbangkan ganjaran yang mengiktiraf perniagaan berulang.
+
+### Tetapkan peraturan
+Tentukan siapa yang boleh meluluskan diskaun dan sejauh mana, supaya kakitangan tidak memberikan margin anda. Simpan rekod promosi, kerana ia mempengaruhi akaun anda dan sebarang layanan cukai.
+
+### Perhatikan sudut undang-undang
+Paparan harga, tuntutan "jualan" dan promosi mesti jujur. Panduan kami tentang kontrak dan terma serta peraturan perlindungan pengguna yang terpakai kepada perniagaan anda menerangkan apa yang perlu dielakkan, jadi sahkan peraturan semasa.
+
+## 7. Semak dan naikkan harga apabila perlu
+
+### Semak secara berkala
+Semak kos dan margin anda sekurang-kurangnya beberapa kali setahun, dan apabila kos besar berubah, seperti sewa, gaji, atau harga pembekal utama. Inflasi boleh menghapuskan keuntungan anda secara senyap.
+
+### Tanda sudah tiba masa untuk menaikkan harga
+Anda sentiasa sibuk tetapi kekurangan wang tunai, kos telah naik, permintaan kukuh, pelanggan jarang mempersoalkan harga anda, atau pesaing sudah menaikkan harga mereka.
+
+### Bagaimana melakukannya dengan baik
+Beri notis kepada pelanggan tetap, terangkan sebarang penambahbaikan, dan elakkan mengejutkan sesiapa. Kenaikan kecil dan berkala biasanya lebih mudah diterima daripada satu lonjakan besar. Anda juga boleh menaikkan harga untuk pelanggan baharu dahulu, atau pada pakej baharu.
+
+### Uji dan belajar
+Cuba perubahan pada satu produk atau segmen, dan perhatikan jualan dan maklum balas sebelum melaksanakannya secara menyeluruh. Sesetengah pelanggan akan pergi, tetapi ramai perniagaan mendapati mereka kehilangan lebih sedikit daripada yang ditakuti.
+
+### Lindungi nilai anda
+Naikkan harga bersama sebab yang jelas, seperti bahan lebih baik, perkhidmatan lebih pantas, atau sokongan tambahan. Panduan kami tentang menuntut bayaran lewat juga membantu anda melindungi pendapatan yang telah anda peroleh.
+
+Jika anda mahu akauntan menyemak pengkosan anda, atau mentor atau penasihat menyemak penetapan harga anda, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pelanggan menemui perniagaan anda dan memahami apa yang anda tawarkan.
+
+## Kesilapan lazim PKS Malaysia semasa menetapkan harga
+
+- **Meniru pesaing tanpa mengetahui kos sendiri.** Kos dan matlamat mereka mungkin berbeza daripada anda, dan anda mungkin menyamai harga yang anda tidak mampu.
+- **Mengelirukan markup dengan margin.** Markup 50% hanya kira-kira margin 33%, dan mencampuradukkannya boleh meninggalkan anda dengan keuntungan lebih sedikit daripada yang dirancang.
+- **Meninggalkan overhed, yuran dan masa anda sendiri.** Harga yang hanya menampung bahan akhirnya gagal menampung perniagaan.
+- **Memberi diskaun terlalu kerap dan terlalu dalam.** Diskaun besar yang kerap menghakis keuntungan dan melatih pelanggan menunggu jualan seterusnya.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Senaraikan kos langsung dan overhed bulanan anda, dan kira kos sebenar produk atau perkhidmatan terlaris anda.
+- **Seterusnya:** Kira margin dan pulang modal anda, dan bandingkan dengan harga semasa anda.
+- **Kemudian:** Semak pasaran dan yuran pasaran dalam talian, dan laraskan sebarang harga yang tidak menampung kosnya dan sasaran keuntungan anda.
+- **Setiap suku tahun:** Semak kos dan harga, dan naikkannya dengan tenang dan jelas apabila perlu.
+
+Penetapan harga yang baik ialah pengiraan, bukan tekaan. Ketahui kos anda, tetapkan sasaran, semak pasaran, dan semaknya dengan kerap, dan harga anda akan membayar balik perniagaan anda.`,
+        faqs: [
+          {
+            question: "Bagaimanakah saya mengira harga yang betul untuk produk saya?",
+            answer:
+              "Mulakan dengan kos sebenar setiap unit, termasuk kos langsung, bahagian overhed, dan masa anda sendiri. Tambah margin yang anda perlukan, kemudian semak hasilnya berbanding apa yang pelanggan sanggup bayar dan apa yang dikenakan pesaing, dan laraskan.",
+          },
+          {
+            question: "Apakah perbezaan antara markup dan margin?",
+            answer:
+              "Markup ialah peratusan yang ditambah pada kos, manakala margin ialah bahagian harga jualan yang menjadi keuntungan. Item berkos RM10 yang dijual RM15 mempunyai markup 50% tetapi margin hanya kira-kira 33%.",
+          },
+          {
+            question: "Apakah titik pulang modal?",
+            answer:
+              "Ia ialah bilangan jualan di mana jumlah pendapatan anda menampung semua kos anda. Bahagikan overhed bulanan dengan sumbangan setiap item, iaitu harga tolak kos langsung, untuk melihat berapa banyak item yang perlu anda jual sebelum memperoleh keuntungan.",
+          },
+          {
+            question: "Patutkah harga saya termasuk SST?",
+            answer:
+              "Jika anda berdaftar, cukai mesti dikendalikan dengan betul pada invois anda, dan anda harus menyatakan dengan jelas sama ada harga yang dipaparkan termasuk cukai. Ambang dan kadar berbeza mengikut aktiviti dan berubah dari semasa ke semasa, jadi sahkan peraturan semasa di portal rasmi.",
+          },
+          {
+            question: "Patutkah saya menyamai harga pesaing?",
+            answer:
+              "Gunakannya sebagai rujukan, bukan peraturan. Pesaing mungkin mempunyai kos, kualiti atau matlamat yang berbeza. Menyamai harga yang anda tidak mampu adalah berisiko, jadi ketahui lantai harga anda sendiri dan bersaing pada nilai serta harga.",
+          },
+          {
+            question: "Bagaimanakah yuran pasaran dalam talian mempengaruhi harga saya?",
+            answer:
+              "Komisen, yuran transaksi, dan kadangkala kos penghantaran dan baucar mengurangkan apa yang anda simpan. Semak jadual yuran semasa platform dan masukkannya ke dalam harga anda, atau anda mungkin menjual lebih tetapi memperoleh kurang.",
+          },
+          {
+            question: "Adakah diskaun idea yang baik untuk perniagaan kecil?",
+            answer:
+              "Hanya jika angka berjaya. Diskaun memotong keuntungan dengan mendadak, jadi kira margin baharu dan isi padu tambahan yang anda perlukan untuk pulang modal. Pertimbangkan pakej, tambahan atau tawaran terhad masa dan bukannya pemotongan yang dalam atau kekal.",
+          },
+          {
+            question: "Berapa kerap saya patut menyemak harga, dan bagaimana menaikkannya?",
+            answer:
+              "Semak sekurang-kurangnya beberapa kali setahun dan apabila kos utama berubah. Apabila menaikkan harga, beri notis, terangkan sebarang penambahbaikan, dan utamakan kenaikan kecil dan berkala. Uji pada satu produk atau kumpulan dahulu dan perhatikan hasilnya.",
+          },
+        ],
+      },
+    },
+  },
 ];
