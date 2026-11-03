@@ -16547,4 +16547,1182 @@ Penetapan harga yang baik ialah pengiraan, bukan tekaan. Ketahui kos anda, tetap
       },
     },
   },
+  {
+    slug: "cybersecurity-for-malaysian-small-businesses",
+    title: "Cybersecurity for Malaysian Small Businesses: Protecting Data, Payments, and Accounts",
+    seoTitle: "Cybersecurity for Malaysian Small Businesses",
+    seoDescription:
+      "Low-cost cybersecurity for Malaysian SMEs: strong logins, MFA, scams and payment fraud, backups, safe devices, staff access, PDPA duties and breach response.",
+    coverImage: {
+      file: "cybersecurity-for-malaysian-small-businesses-cover.webp",
+      mimeType: "image/webp",
+      alt: "A woman in a beige blazer typing on a laptop at a wooden table in a modern office",
+      altTranslations: {
+        zh: "一位身穿米色西装外套的女士在现代办公室的木桌前使用笔记本电脑打字",
+        ms: "Seorang wanita berblazer krim menaip pada komputer riba di meja kayu dalam pejabat moden",
+      },
+    },
+    contentImages: {
+      laptop: {
+        file: "cybersecurity-for-malaysian-small-businesses-laptop.webp",
+        mimeType: "image/webp",
+        alt: "A woman with round glasses sitting at a white desk behind a pink laptop",
+        altTranslations: {
+          zh: "一位戴圆框眼镜的女士坐在白色书桌后，面前放着一台粉色笔记本电脑",
+          ms: "Seorang wanita berkaca mata bulat duduk di meja putih di belakang komputer riba merah jambu",
+        },
+        after: "Turn on multi-factor authentication for your email, bank, and accounting accounts first.",
+        afterTranslations: {
+          zh: "首先为您的电邮、银行和会计账户开启多重身份验证。",
+          ms: "Hidupkan pengesahan pelbagai faktor untuk akaun e-mel, bank dan perakaunan anda terlebih dahulu.",
+        },
+      },
+    },
+    excerpt:
+      "Small businesses are attractive targets because they hold money and customer data but rarely have an IT team. This guide gives Malaysian SMEs a practical, low-cost approach: secure logins, spotting scams and payment fraud, backups, safe devices and Wi-Fi, controlling staff and freelancer access, your data protection duties, and what to do if something goes wrong.",
+    body: `Many small business owners assume hackers only go after big companies. In reality, criminals target whoever is easiest, and a small business with a weak password, an unpatched laptop, or a distracted accounts clerk is easy. A hijacked email account, a fake invoice, or a ransomware infection can stop trading for days and cost real money and customer trust.
+
+The good news is that most attacks exploit basic gaps, and basic habits close most of them. You do not need an expensive security team to get started.
+
+This is general information, not technical or legal advice. Laws, guidelines, and scam patterns change, so confirm the current position with the relevant authorities, your bank, and a qualified IT professional where the stakes are high.
+
+## 1. Know what you are protecting
+
+### Your money
+Bank accounts, payment gateways, e-wallets, and accounting software are the most direct targets. Anyone who gets into them can move money or redirect customer payments.
+
+### Your customer and staff data
+Names, phone numbers, addresses, identity numbers, order histories, and payroll details are valuable and also regulated. See our guide on personal data protection for your duties.
+
+### Your accounts and reputation
+Your email, social media pages, marketplace shop, and website are your public face. A hijacked account can be used to scam your own customers in your name.
+
+### Your business continuity
+Your files, orders, and systems need to be available when you open for business. Ransomware and accidental deletion both threaten that.
+
+### Make a simple list
+Write down your important accounts, devices, and data, who has access, and where each is stored. You cannot protect what you have not listed.
+
+## 2. Secure your logins
+
+Turn on multi-factor authentication for your email, bank, and accounting accounts first. A password alone is often stolen or guessed, and a second step such as an app prompt or code stops most account takeovers.
+
+### Use strong, unique passwords
+Use a long passphrase for each important account, and never reuse a password across services. A reputable password manager makes this practical, and lets you share access without sending passwords in chat.
+
+### Protect your email above all
+Email is the key to resetting every other account, so give it your strongest protection. Review forwarding rules and connected apps from time to time, because attackers sometimes hide rules that copy your mail.
+
+### Avoid shared logins where you can
+When everyone uses one login, you cannot tell who did what, and you cannot remove one person without changing it for all. Give each person their own account, with the least access they need.
+
+### Keep recovery details current
+Make sure the phone number and recovery email on your accounts are ones you control, and are not an ex-employee's.
+
+## 3. Recognise scams and payment fraud
+
+### Phishing messages
+Fake emails, SMS, and chat messages pretend to be a bank, courier, authority, or supplier and push you to click a link or enter a password. Slow down, check the sender, and go to the official website or app yourself instead of using the link.
+
+### Fake invoices and changed bank details
+A common fraud is a message that looks like it comes from a supplier or your boss, asking you to pay a new bank account. Always confirm any change of bank details by calling a known number, and set a rule that payments above a certain amount need a second person to approve.
+
+### Marketplace and customer scams
+Fake payment screenshots, overpayment requests, and "wrong transfer" stories target online sellers. Confirm the money is in your account before you ship, and do not refund by a different method than the original payment without checking.
+
+### Impersonation of authorities
+Callers claiming to be from a bank, court, police, or government agency and demanding urgent transfers are a well-known pattern. Hang up and contact the real organisation through its official channel.
+
+### What to do if you are scammed
+Contact your bank immediately, because speed matters for trying to stop or recall a transfer. Use the scam response channels your bank and the authorities publish, make a police report, and keep screenshots and records.
+
+## 4. Protect your devices and network
+
+### Keep software updated
+Turn on automatic updates for operating systems, browsers, and business apps. Many attacks use known holes that updates already fix.
+
+### Use security software
+Use a reputable security product on computers, and keep phones updated and limited to official app stores. Remove software you no longer use.
+
+### Secure your Wi-Fi
+Change the default router password, use strong encryption, and keep a separate guest network for customers and visitors so that they are not on the same network as your point-of-sale and files.
+
+### Lock devices and use encryption
+Use screen locks and device encryption on laptops and phones, and enable remote locate and wipe features so a lost device does not become a data leak.
+
+### Be careful with public Wi-Fi and USB drives
+Avoid logging in to banking or business accounts over unknown public Wi-Fi, and do not plug in found USB drives.
+
+### Secure your website and online shop
+Keep your website platform, themes, and plugins updated, use strong admin logins with multi-factor authentication, and choose reputable hosting. Our guide on selling online covers shop setup.
+
+## 5. Back up your data
+
+### The simple rule
+Keep several copies of important data, on different types of storage, with at least one copy that is separate from your main network, so that ransomware cannot reach it.
+
+### What to back up
+Accounting records, customer lists, orders, contracts, product files, and important emails. Our guide on bookkeeping basics explains which records you must keep anyway.
+
+### Automate it
+Backups that depend on someone remembering will be forgotten. Use automatic cloud or external backups, and check regularly that they are actually running.
+
+### Test a restore
+A backup you have never restored is only a hope. Once or twice a year, try recovering a file to be sure it works.
+
+> You do not need perfect security. You need to be harder to attack than the next business, and ready to recover if the worst happens. Multi-factor authentication, updates, and tested backups already stop most of the damage.
+
+## 6. Control access and train your people
+
+### Give the least access needed
+Staff and freelancers should only see the systems and data they need for their job. When someone leaves or a project ends, remove their access the same day. Our guide on hiring your first employee and our guide on working with freelancers cover the contracts to put in place.
+
+### Put security in the contract
+Include confidentiality and data handling terms in employment and freelancer agreements. Our guide on contracts and terms explains how to write clear terms.
+
+### Train for the common traps
+A short briefing on phishing, fake invoices, and safe passwords is more effective than a long policy no one reads. Run a quick refresher a few times a year, and share real examples.
+
+### Make it safe to report
+Staff who click a bad link should feel able to tell you immediately. A fast report limits damage, while fear of blame hides problems.
+
+### Set simple rules
+Write a one-page policy covering approved devices, passwords, handling customer data, and who to call about a suspected incident.
+
+## 7. Know your legal duties and plan for incidents
+
+### Data protection duties
+If you handle personal data in commercial transactions, data protection law applies to you, including duties to keep data secure. The law has been amended in recent years, including provisions on data breach notification, and guidance continues to be issued. Check the current rules and guidelines on the official data protection authority website, and see our guide on PDPA compliance.
+
+### Cybersecurity law
+Malaysia has a cybersecurity law that mainly targets operators of critical national infrastructure. Most small businesses are not directly in scope, but your customers, suppliers, or partners might be, and they may ask about your security. Confirm how it applies to you if you serve such organisations.
+
+### Have a simple incident plan
+Decide in advance who leads, who to call, how to isolate affected devices, how to change passwords, and how to inform affected customers if needed. Keep the contact details for your bank, hosting provider, and IT support somewhere you can reach even if your systems are down.
+
+### If a breach happens
+Contain it by disconnecting affected devices and changing passwords, keep evidence, assess what data was involved, and check whether you must notify the authority or the people affected under the current rules. You can also report cyber incidents to the national cyber incident response centre. Get professional help for serious incidents.
+
+### Consider insurance
+Some business insurance policies cover cyber incidents. Our guide on business insurance explains what to ask your insurer.
+
+If you need an IT support provider, a security consultant, or a lawyer, you can [browse the directory](/en) for local professionals, and [creating a free business listing](/en/signup) helps customers find your real business, which makes it harder for fake pages to fool them.
+
+## Common mistakes Malaysian SMEs make with cybersecurity
+
+- **Using the same weak password everywhere.** One leaked password then opens your email, bank, and shop.
+- **Paying changed bank details without checking.** Always verify a new account by calling a known number before you transfer.
+- **Never testing backups.** Many businesses only learn that their backups do not work when they need them.
+- **Leaving old access open.** Former staff, freelancers, and agencies often keep logins long after they leave.
+
+## Where to start
+
+- **This week:** Turn on multi-factor authentication for email, banking, and accounting, and update your devices.
+- **Next:** Set up automatic backups, with one copy kept offline or separate, and test a restore.
+- **Then:** List who has access to what, remove old access, and agree a rule for confirming payment changes.
+- **Every quarter:** Brief your team on scams, review access, and update your incident contacts.
+
+Security is a habit, not a product. A few cheap routines, done consistently, protect your money, your customers, and your name.`,
+    faqs: [
+      {
+        question: "Why would hackers target a small business?",
+        answer:
+          "Small businesses hold money and customer data but usually have weaker defences than large companies. Criminals go for whoever is easiest, and weak passwords, unpatched devices, and distracted staff make small businesses easy targets.",
+      },
+      {
+        question: "What is multi-factor authentication and should I use it?",
+        answer:
+          "It adds a second step, such as an app prompt or code, on top of your password. Yes, turn it on for email, banking, accounting, and your online shop first, because it stops most account takeovers even when a password is stolen.",
+      },
+      {
+        question: "How do I spot a fake invoice or changed bank details scam?",
+        answer:
+          "Be suspicious of any request to pay a new account, especially when it is urgent. Confirm by calling a number you already know, not the one in the message, and require a second person to approve large or changed payments.",
+      },
+      {
+        question: "What should I do if I fall for a scam?",
+        answer:
+          "Contact your bank immediately, because speed matters for trying to stop or recall a transfer. Use the scam response channels your bank and the authorities publish, make a police report, and keep screenshots and records.",
+      },
+      {
+        question: "How often should I back up my data?",
+        answer:
+          "Automatically, as often as you can afford to lose data, which for many businesses means daily. Keep at least one copy separate from your main network, and test a restore once or twice a year.",
+      },
+      {
+        question: "Does the personal data protection law apply to my small business?",
+        answer:
+          "If you process personal data in commercial transactions, it generally does, including duties to keep data secure. The law has been amended and guidance continues to be issued, so check the current rules on the official authority website.",
+      },
+      {
+        question: "What should I do if there is a data breach?",
+        answer:
+          "Contain it by disconnecting affected devices and changing passwords, keep evidence, assess what data was involved, and check whether you must notify the authority or the people affected under current rules. Get professional help for serious incidents.",
+      },
+      {
+        question: "Can I get insurance against cyber incidents?",
+        answer:
+          "Some business insurance policies include or offer cyber cover, such as for data restoration, business interruption, or legal costs. Ask your insurer what is covered and what security measures they expect you to have.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "马来西亚小企业的网络安全：保护数据、付款和账户",
+        excerpt:
+          "小企业握有资金和客户数据，却很少有 IT 团队，因此成为有吸引力的目标。本指南为马来西亚中小企业提供实用、低成本的做法：安全的登录、识别诈骗和付款欺诈、备份、安全的设备和 Wi-Fi、管控员工和自由工作者的访问权限、您的数据保护责任，以及出事时该怎么办。",
+        body: `许多小企业主以为黑客只会攻击大公司。实际上，罪犯会盯上最容易下手的对象，而密码薄弱、笔记本电脑没有更新补丁、或会计人员一时分神的小企业，就是很容易的目标。被劫持的电邮账户、一张假发票，或一次勒索软件感染，都可能让生意停摆数天，并造成真金白银的损失和客户信任的流失。
+
+好消息是，大多数攻击利用的是基本漏洞，而基本习惯就能堵住其中的大部分。您不需要昂贵的安全团队就能开始。
+
+以下仅为一般资讯，并非技术或法律意见。法律、指引和诈骗手法会变动，所以在风险较高时，请向相关机构、您的银行和合格的 IT 专业人士确认现行情况。
+
+## 1. 了解您要保护什么
+
+### 您的资金
+银行账户、支付网关、电子钱包和会计软件是最直接的目标。任何人进入这些账户，都可以转走资金或改道客户的付款。
+
+### 您的客户和员工数据
+姓名、电话号码、地址、身份证号码、订单记录和薪资资料既有价值，也受到法律规管。请参阅我们关于个人资料保护的指南，了解您的责任。
+
+### 您的账户和声誉
+您的电邮、社交媒体专页、电商店铺和网站是您的公众形象。被劫持的账户可能被用来以您的名义诈骗您自己的客户。
+
+### 您的业务持续性
+您开门做生意时，文件、订单和系统必须可用。勒索软件和意外删除都会威胁这一点。
+
+### 列一份简单的清单
+写下您重要的账户、设备和数据、谁有访问权限，以及各自存放在哪里。没有列出来的东西，您无法保护。
+
+## 2. 保护您的登录
+
+首先为您的电邮、银行和会计账户开启多重身份验证。单靠密码常会被盗或被猜到，而应用程序提示或验证码这样的第二步骤，可以阻止大多数账户被接管。
+
+### 使用强大且唯一的密码
+为每个重要账户使用较长的密码短语，并且绝不在不同服务之间重复使用同一个密码。可靠的密码管理器让这一切变得可行，并让您共享访问权限而不必在聊天中发送密码。
+
+### 首先保护好电邮
+电邮是重置所有其他账户的钥匙，所以要给它最强的保护。请不时检查转发规则和已连接的应用程序，因为攻击者有时会设置隐藏规则来复制您的邮件。
+
+### 尽量避免共用登录
+当所有人都使用同一个登录时，您无法知道谁做了什么，也无法在不为所有人更改的情况下移除某一个人。请为每个人设置自己的账户，并只授予他们所需的最低权限。
+
+### 保持恢复资料最新
+确保您账户上的电话号码和恢复电邮是您能控制的，而不是已离职员工的。
+
+## 3. 识别诈骗和付款欺诈
+
+### 钓鱼信息
+假冒的电邮、短信和聊天信息假装来自银行、快递公司、政府机构或供应商，催促您点击链接或输入密码。请放慢速度，查看发件人，并自己前往官方网站或应用程序，而不是使用链接。
+
+### 假发票和更改银行资料
+一种常见的欺诈是看似来自供应商或您的老板的信息，要求您付款到新的银行账户。任何银行资料的更改，一定要拨打已知的电话号码确认，并设定规则：超过一定金额的付款需要第二个人批准。
+
+### 电商平台和客户诈骗
+假的付款截图、多付款要求和“转错账”的故事，都以网络卖家为目标。发货之前请先确认款项已经进入您的账户，并且在没有核实的情况下，不要以与原付款方式不同的方式退款。
+
+### 冒充政府机构
+自称来自银行、法院、警方或政府机构并要求紧急转账的来电，是众所周知的模式。请挂断电话，并通过官方渠道联系真正的机构。
+
+### 如果您被骗了
+请立即联系您的银行，因为速度对于设法阻止或追回转账至关重要。使用您的银行和有关当局公布的诈骗应对渠道，报警，并保存截图和记录。
+
+## 4. 保护您的设备和网络
+
+### 保持软件更新
+为操作系统、浏览器和业务应用程序开启自动更新。许多攻击利用的是更新已经修补的已知漏洞。
+
+### 使用安全软件
+在电脑上使用可靠的安全产品，并让手机保持更新、只从官方应用商店下载。移除您不再使用的软件。
+
+### 保护您的 Wi-Fi
+更改路由器的默认密码，使用强加密，并为顾客和访客提供独立的访客网络，让他们不与您的收银系统和文件处于同一网络。
+
+### 锁定设备并使用加密
+在笔记本电脑和手机上使用屏幕锁和设备加密，并启用远程定位和清除功能，让遗失的设备不会变成数据泄露。
+
+### 小心公共 Wi-Fi 和 USB 存储器
+避免在不明的公共 Wi-Fi 上登录银行或业务账户，也不要插入捡到的 USB 存储器。
+
+### 保护您的网站和网店
+让您的网站平台、主题和插件保持更新，为管理员登录使用强密码和多重身份验证，并选择可靠的主机服务。我们关于网络销售的指南涵盖了网店的设置。
+
+## 5. 备份您的数据
+
+### 简单规则
+为重要数据保留多个副本，存放在不同类型的存储设备上，并且至少有一份与您的主网络分开，这样勒索软件就无法触及它。
+
+### 备份什么
+会计记录、客户名单、订单、合约、产品文件和重要电邮。我们关于簿记基础的指南说明了哪些记录无论如何都必须保存。
+
+### 让它自动化
+依赖某人记得去做的备份会被遗忘。请使用自动云端或外置备份，并定期检查它们确实在运行。
+
+### 测试还原
+从未还原过的备份只是一种希望。每年一两次，试着恢复一个文件，确保它有效。
+
+> 您不需要完美的安全。您需要比下一家企业更难被攻击，并在最坏的情况发生时做好恢复的准备。多重身份验证、更新和经过测试的备份，已经能阻止大部分损害。
+
+## 6. 管控访问权限并培训您的团队
+
+### 只授予所需的最低权限
+员工和自由工作者只应看到他们工作所需的系统和数据。当有人离职或项目结束时，请在当天移除他们的访问权限。我们关于雇用第一位员工的指南和关于与自由工作者合作的指南涵盖了应该订立的合约。
+
+### 把安全写进合约
+在雇佣合约和自由工作者协议中加入保密和数据处理条款。我们关于合约与条款的指南说明了如何撰写清晰的条款。
+
+### 针对常见陷阱进行培训
+一次关于钓鱼、假发票和安全密码的简短说明，比没人阅读的冗长政策更有效。每年进行几次快速复习，并分享真实的例子。
+
+### 让报告变得安全
+点击了恶意链接的员工应该能够立即告诉您。快速报告可以限制损害，而对被责怪的恐惧则会隐藏问题。
+
+### 订立简单规则
+写一份一页的政策，涵盖获批准的设备、密码、处理客户数据，以及怀疑发生事件时该联系谁。
+
+## 7. 了解您的法律责任并为事件做好计划
+
+### 数据保护责任
+如果您在商业交易中处理个人资料，数据保护法律适用于您，包括保障数据安全的责任。该法律近年来已经修订，包括关于数据泄露通报的条文，并且指引仍在陆续发布。请在官方数据保护机构的网站查看现行规定和指引，并参阅我们关于 PDPA 合规的指南。
+
+### 网络安全法律
+马来西亚有一项网络安全法律，主要针对国家关键基础设施的营运者。大多数小企业不在直接范围内，但您的客户、供应商或合作伙伴可能在范围内，并可能询问您的安全措施。如果您为这类机构服务，请确认它如何适用于您。
+
+### 准备一份简单的事件计划
+事先决定谁负责领导、该联系谁、如何隔离受影响的设备、如何更改密码，以及必要时如何通知受影响的客户。把您的银行、主机服务商和 IT 支持的联系方式存放在即使系统瘫痪也能取得的地方。
+
+### 如果发生数据泄露
+断开受影响的设备并更改密码以遏止事态，保存证据，评估涉及哪些数据，并查核根据现行规定您是否必须通知主管机构或受影响的人。您也可以向国家网络事件响应中心报告网络事件。对于严重事件，请寻求专业协助。
+
+### 考虑保险
+有些商业保险单涵盖网络事件。我们关于商业保险的指南说明了应该向保险公司询问什么。
+
+如果您需要 IT 支持服务商、安全顾问或律师，可以[浏览名录](/zh)寻找本地专业人士，而[创建免费的企业列表](/zh/signup)可以帮助客户找到您真正的企业，让假冒的专页更难欺骗他们。
+
+## 马来西亚中小企业在网络安全上常犯的错误
+
+- **到处使用同一个弱密码。**一个泄露的密码就会打开您的电邮、银行和网店。
+- **未经核实就向更改后的银行资料付款。**转账之前，务必拨打已知的电话号码核实新账户。
+- **从不测试备份。**许多企业直到需要时才发现备份根本没用。
+- **让旧的访问权限继续开放。**前员工、自由工作者和代理机构常在离开很久之后仍保有登录权限。
+
+## 从哪里开始
+
+- **本周：**为电邮、银行和会计账户开启多重身份验证，并更新您的设备。
+- **接着：**设置自动备份，其中一份保持离线或分开存放，并测试还原。
+- **然后：**列出谁能访问什么，移除旧的访问权限，并约定一条确认付款变更的规则。
+- **每季度：**向团队讲解诈骗手法，检视访问权限，并更新您的事件联系人。
+
+安全是一种习惯，而不是一件产品。几个便宜的例行做法，坚持去做，就能保护您的资金、客户和名声。`,
+        faqs: [
+          {
+            question: "黑客为什么会盯上小企业？",
+            answer:
+              "小企业握有资金和客户数据，但防御通常比大公司薄弱。罪犯会选最容易下手的对象，而薄弱的密码、没有更新的设备和一时分神的员工，让小企业成为容易的目标。",
+          },
+          {
+            question: "什么是多重身份验证，我应该使用吗？",
+            answer:
+              "它在密码之外加上第二个步骤，例如应用程序提示或验证码。是的，请首先为电邮、银行、会计和网店开启，因为即使密码被盗，它也能阻止大多数账户被接管。",
+          },
+          {
+            question: "如何识别假发票或更改银行资料的诈骗？",
+            answer:
+              "对任何要求付款到新账户的请求都要保持怀疑，尤其是很紧急的时候。请拨打您已知的号码确认，而不是信息中的号码，并要求第二个人批准大额或更改的付款。",
+          },
+          {
+            question: "如果我被骗了该怎么办？",
+            answer:
+              "请立即联系您的银行，因为速度对于设法阻止或追回转账至关重要。使用您的银行和有关当局公布的诈骗应对渠道，报警，并保存截图和记录。",
+          },
+          {
+            question: "我应该多久备份一次数据？",
+            answer:
+              "自动备份，频率视您能承受丢失多少数据而定，对许多企业来说意味着每天一次。至少保留一份与主网络分开的副本，并每年测试一两次还原。",
+          },
+          {
+            question: "个人资料保护法律适用于我的小企业吗？",
+            answer:
+              "如果您在商业交易中处理个人资料，一般适用，包括保障数据安全的责任。该法律已经修订，指引也在陆续发布，所以请在官方机构的网站查看现行规定。",
+          },
+          {
+            question: "如果发生数据泄露我该怎么办？",
+            answer:
+              "断开受影响的设备并更改密码以遏止事态，保存证据，评估涉及哪些数据，并查核根据现行规定您是否必须通知主管机构或受影响的人。对于严重事件，请寻求专业协助。",
+          },
+          {
+            question: "我可以购买针对网络事件的保险吗？",
+            answer:
+              "有些商业保险单包括或提供网络保障，例如数据恢复、营业中断或法律费用。请询问您的保险公司涵盖什么，以及他们期望您具备哪些安全措施。",
+          },
+        ],
+      },
+      ms: {
+        title: "Keselamatan Siber untuk Perniagaan Kecil Malaysia: Melindungi Data, Pembayaran dan Akaun",
+        excerpt:
+          "Perniagaan kecil menjadi sasaran menarik kerana ia menyimpan wang dan data pelanggan tetapi jarang mempunyai pasukan IT. Panduan ini memberi PKS Malaysia pendekatan praktikal berkos rendah: log masuk yang selamat, mengenali penipuan dan fraud pembayaran, sandaran, peranti dan Wi-Fi yang selamat, mengawal akses kakitangan dan pekerja bebas, tanggungjawab perlindungan data anda, dan apa yang perlu dilakukan jika berlaku sesuatu.",
+        body: `Ramai pemilik perniagaan kecil menganggap penggodam hanya menyasarkan syarikat besar. Hakikatnya, penjenayah menyasarkan sesiapa yang paling mudah, dan perniagaan kecil dengan kata laluan lemah, komputer riba yang tidak ditampal, atau kerani akaun yang leka ialah sasaran mudah. Akaun e-mel yang dirampas, invois palsu, atau jangkitan perisian tebusan boleh menghentikan perniagaan selama beberapa hari dan menyebabkan kerugian wang serta kepercayaan pelanggan yang sebenar.
+
+Berita baiknya, kebanyakan serangan mengeksploitasi jurang asas, dan tabiat asas menutup kebanyakannya. Anda tidak memerlukan pasukan keselamatan yang mahal untuk bermula.
+
+Ini ialah maklumat am, bukan nasihat teknikal atau undang-undang. Undang-undang, garis panduan dan corak penipuan berubah, jadi sahkan kedudukan semasa dengan pihak berkuasa berkaitan, bank anda, dan profesional IT yang layak apabila risikonya tinggi.
+
+## 1. Ketahui apa yang anda lindungi
+
+### Wang anda
+Akaun bank, get laluan pembayaran, e-dompet dan perisian perakaunan ialah sasaran paling langsung. Sesiapa yang memasukinya boleh memindahkan wang atau mengalihkan bayaran pelanggan.
+
+### Data pelanggan dan kakitangan anda
+Nama, nombor telefon, alamat, nombor pengenalan, sejarah pesanan dan butiran gaji bernilai dan juga dikawal selia. Lihat panduan kami tentang perlindungan data peribadi untuk tanggungjawab anda.
+
+### Akaun dan reputasi anda
+E-mel, halaman media sosial, kedai pasaran dalam talian dan laman web anda ialah wajah awam anda. Akaun yang dirampas boleh digunakan untuk menipu pelanggan anda sendiri atas nama anda.
+
+### Kesinambungan perniagaan anda
+Fail, pesanan dan sistem anda perlu tersedia apabila anda membuka perniagaan. Perisian tebusan dan pemadaman tidak sengaja kedua-duanya mengancam perkara itu.
+
+### Buat senarai yang mudah
+Tulis akaun, peranti dan data penting anda, siapa yang mempunyai akses, dan di mana setiap satu disimpan. Anda tidak dapat melindungi apa yang belum anda senaraikan.
+
+## 2. Selamatkan log masuk anda
+
+Hidupkan pengesahan pelbagai faktor untuk akaun e-mel, bank dan perakaunan anda terlebih dahulu. Kata laluan sahaja sering dicuri atau diteka, dan langkah kedua seperti gesaan aplikasi atau kod menghentikan kebanyakan pengambilalihan akaun.
+
+### Gunakan kata laluan yang kukuh dan unik
+Gunakan frasa laluan yang panjang untuk setiap akaun penting, dan jangan sekali-kali menggunakan semula kata laluan merentas perkhidmatan. Pengurus kata laluan yang bereputasi menjadikan ini praktikal, dan membolehkan anda berkongsi akses tanpa menghantar kata laluan dalam sembang.
+
+### Lindungi e-mel anda melebihi segala-galanya
+E-mel ialah kunci untuk menetapkan semula setiap akaun lain, jadi berikan perlindungan terkuat kepadanya. Semak peraturan pemajuan dan aplikasi yang disambungkan dari semasa ke semasa, kerana penyerang kadangkala menyembunyikan peraturan yang menyalin mel anda.
+
+### Elakkan log masuk yang dikongsi jika boleh
+Apabila semua orang menggunakan satu log masuk, anda tidak dapat mengetahui siapa melakukan apa, dan anda tidak dapat mengeluarkan seorang tanpa menukarnya untuk semua. Berikan setiap orang akaun sendiri, dengan akses paling minimum yang mereka perlukan.
+
+### Pastikan butiran pemulihan terkini
+Pastikan nombor telefon dan e-mel pemulihan pada akaun anda ialah yang anda kawal, dan bukan milik bekas pekerja.
+
+## 3. Kenali penipuan dan fraud pembayaran
+
+### Mesej pancingan data
+E-mel, SMS dan mesej sembang palsu berpura-pura daripada bank, kurier, pihak berkuasa atau pembekal dan mendesak anda mengklik pautan atau memasukkan kata laluan. Perlahankan, semak penghantar, dan pergi sendiri ke laman web atau aplikasi rasmi dan bukannya menggunakan pautan.
+
+### Invois palsu dan butiran bank yang diubah
+Penipuan yang lazim ialah mesej yang kelihatan datang daripada pembekal atau bos anda, meminta anda membayar ke akaun bank baharu. Sentiasa sahkan sebarang perubahan butiran bank dengan menelefon nombor yang dikenali, dan tetapkan peraturan bahawa bayaran melebihi jumlah tertentu memerlukan kelulusan orang kedua.
+
+### Penipuan pasaran dan pelanggan
+Tangkapan skrin bayaran palsu, permintaan bayaran lebih dan cerita "tersalah pindah" menyasarkan penjual dalam talian. Sahkan wang sudah masuk ke akaun anda sebelum anda menghantar, dan jangan bayar balik dengan kaedah berbeza daripada bayaran asal tanpa menyemak.
+
+### Penyamaran pihak berkuasa
+Pemanggil yang mendakwa daripada bank, mahkamah, polis atau agensi kerajaan dan menuntut pemindahan segera ialah corak yang terkenal. Letak telefon dan hubungi organisasi sebenar melalui saluran rasminya.
+
+### Apa yang perlu dilakukan jika anda ditipu
+Hubungi bank anda dengan segera, kerana kelajuan penting untuk cuba menghentikan atau menarik balik pemindahan. Gunakan saluran tindak balas penipuan yang diterbitkan oleh bank anda dan pihak berkuasa, buat laporan polis, dan simpan tangkapan skrin dan rekod.
+
+## 4. Lindungi peranti dan rangkaian anda
+
+### Pastikan perisian dikemas kini
+Hidupkan kemas kini automatik untuk sistem pengendalian, pelayar dan aplikasi perniagaan. Banyak serangan menggunakan lubang yang diketahui yang sudah dibetulkan oleh kemas kini.
+
+### Gunakan perisian keselamatan
+Gunakan produk keselamatan yang bereputasi pada komputer, dan pastikan telefon dikemas kini dan terhad kepada kedai aplikasi rasmi. Buang perisian yang tidak lagi anda gunakan.
+
+### Selamatkan Wi-Fi anda
+Tukar kata laluan lalai penghala, gunakan penyulitan yang kukuh, dan sediakan rangkaian tetamu berasingan untuk pelanggan dan pelawat supaya mereka tidak berada pada rangkaian yang sama dengan sistem titik jualan dan fail anda.
+
+### Kunci peranti dan gunakan penyulitan
+Gunakan kunci skrin dan penyulitan peranti pada komputer riba dan telefon, dan dayakan ciri jejak dan padam jauh supaya peranti yang hilang tidak menjadi kebocoran data.
+
+### Berhati-hati dengan Wi-Fi awam dan pemacu USB
+Elakkan log masuk ke akaun bank atau perniagaan melalui Wi-Fi awam yang tidak dikenali, dan jangan pasang pemacu USB yang dijumpai.
+
+### Selamatkan laman web dan kedai dalam talian anda
+Pastikan platform laman web, tema dan pemalam anda dikemas kini, gunakan log masuk pentadbir yang kukuh dengan pengesahan pelbagai faktor, dan pilih pengehosan yang bereputasi. Panduan kami tentang menjual dalam talian merangkumi penyediaan kedai.
+
+## 5. Sandarkan data anda
+
+### Peraturan mudah
+Simpan beberapa salinan data penting, pada jenis storan berbeza, dengan sekurang-kurangnya satu salinan yang berasingan daripada rangkaian utama anda, supaya perisian tebusan tidak dapat mencapainya.
+
+### Apa yang perlu disandarkan
+Rekod perakaunan, senarai pelanggan, pesanan, kontrak, fail produk dan e-mel penting. Panduan kami tentang asas simpan kira menerangkan rekod yang anda mesti simpan juga.
+
+### Automasikannya
+Sandaran yang bergantung kepada seseorang yang ingat akan dilupakan. Gunakan sandaran awan atau luaran automatik, dan semak secara berkala bahawa ia benar-benar berjalan.
+
+### Uji pemulihan
+Sandaran yang tidak pernah anda pulihkan hanyalah harapan. Sekali atau dua kali setahun, cuba pulihkan satu fail untuk memastikan ia berfungsi.
+
+> Anda tidak memerlukan keselamatan yang sempurna. Anda perlu lebih sukar diserang berbanding perniagaan seterusnya, dan bersedia untuk pulih jika perkara terburuk berlaku. Pengesahan pelbagai faktor, kemas kini dan sandaran yang diuji sudah menghentikan kebanyakan kerosakan.
+
+## 6. Kawal akses dan latih orang anda
+
+### Berikan akses paling minimum yang diperlukan
+Kakitangan dan pekerja bebas hanya patut melihat sistem dan data yang mereka perlukan untuk kerja mereka. Apabila seseorang berhenti atau projek tamat, keluarkan akses mereka pada hari yang sama. Panduan kami tentang mengambil pekerja pertama dan panduan kami tentang bekerja dengan pekerja bebas merangkumi kontrak yang perlu disediakan.
+
+### Letakkan keselamatan dalam kontrak
+Sertakan terma kerahsiaan dan pengendalian data dalam perjanjian pekerjaan dan pekerja bebas. Panduan kami tentang kontrak dan terma menerangkan cara menulis terma yang jelas.
+
+### Latih untuk perangkap biasa
+Taklimat ringkas tentang pancingan data, invois palsu dan kata laluan selamat lebih berkesan daripada dasar panjang yang tiada siapa baca. Jalankan penyegaran pantas beberapa kali setahun, dan kongsi contoh sebenar.
+
+### Jadikan pelaporan selamat
+Kakitangan yang mengklik pautan buruk harus berasa mampu memberitahu anda dengan segera. Laporan pantas mengehadkan kerosakan, manakala takut disalahkan menyembunyikan masalah.
+
+### Tetapkan peraturan mudah
+Tulis dasar satu muka surat yang merangkumi peranti yang diluluskan, kata laluan, pengendalian data pelanggan, dan siapa yang perlu dihubungi tentang insiden yang disyaki.
+
+## 7. Ketahui tanggungjawab undang-undang anda dan rancang untuk insiden
+
+### Tanggungjawab perlindungan data
+Jika anda mengendalikan data peribadi dalam transaksi komersial, undang-undang perlindungan data terpakai kepada anda, termasuk tanggungjawab untuk memastikan data selamat. Undang-undang itu telah dipinda dalam beberapa tahun kebelakangan ini, termasuk peruntukan tentang pemberitahuan pelanggaran data, dan panduan terus dikeluarkan. Semak peraturan dan garis panduan semasa di laman web pihak berkuasa perlindungan data rasmi, dan lihat panduan kami tentang pematuhan PDPA.
+
+### Undang-undang keselamatan siber
+Malaysia mempunyai undang-undang keselamatan siber yang terutamanya menyasarkan pengendali infrastruktur kritikal negara. Kebanyakan perniagaan kecil tidak berada dalam skop secara langsung, tetapi pelanggan, pembekal atau rakan kongsi anda mungkin, dan mereka mungkin bertanya tentang keselamatan anda. Sahkan bagaimana ia terpakai kepada anda jika anda melayani organisasi sedemikian.
+
+### Sediakan pelan insiden yang mudah
+Tentukan lebih awal siapa yang mengetuai, siapa yang perlu dihubungi, cara mengasingkan peranti yang terjejas, cara menukar kata laluan, dan cara memaklumkan pelanggan yang terjejas jika perlu. Simpan butiran hubungan bank, penyedia pengehosan dan sokongan IT anda di tempat yang boleh dicapai walaupun sistem anda terhenti.
+
+### Jika pelanggaran berlaku
+Kawal dengan memutuskan sambungan peranti yang terjejas dan menukar kata laluan, simpan bukti, nilai data apa yang terlibat, dan semak sama ada anda mesti memberitahu pihak berkuasa atau orang yang terjejas di bawah peraturan semasa. Anda juga boleh melaporkan insiden siber kepada pusat tindak balas insiden siber kebangsaan. Dapatkan bantuan profesional untuk insiden serius.
+
+### Pertimbangkan insurans
+Sesetengah polisi insurans perniagaan meliputi insiden siber. Panduan kami tentang insurans perniagaan menerangkan apa yang perlu ditanya kepada penanggung insurans anda.
+
+Jika anda memerlukan penyedia sokongan IT, perunding keselamatan atau peguam, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pelanggan menemui perniagaan sebenar anda, yang menyukarkan halaman palsu memperdaya mereka.
+
+## Kesilapan lazim PKS Malaysia dengan keselamatan siber
+
+- **Menggunakan kata laluan lemah yang sama di mana-mana.** Satu kata laluan yang bocor kemudian membuka e-mel, bank dan kedai anda.
+- **Membayar butiran bank yang diubah tanpa menyemak.** Sentiasa sahkan akaun baharu dengan menelefon nombor yang dikenali sebelum anda memindahkan wang.
+- **Tidak pernah menguji sandaran.** Banyak perniagaan hanya mendapati sandaran mereka tidak berfungsi apabila mereka memerlukannya.
+- **Membiarkan akses lama terbuka.** Bekas kakitangan, pekerja bebas dan agensi sering mengekalkan log masuk lama selepas mereka pergi.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Hidupkan pengesahan pelbagai faktor untuk e-mel, perbankan dan perakaunan, dan kemas kini peranti anda.
+- **Seterusnya:** Sediakan sandaran automatik, dengan satu salinan disimpan luar talian atau berasingan, dan uji pemulihan.
+- **Kemudian:** Senaraikan siapa yang mempunyai akses kepada apa, keluarkan akses lama, dan persetujui peraturan untuk mengesahkan perubahan bayaran.
+- **Setiap suku tahun:** Beri taklimat kepada pasukan anda tentang penipuan, semak akses, dan kemas kini hubungan insiden anda.
+
+Keselamatan ialah tabiat, bukan produk. Beberapa rutin murah, dilakukan secara konsisten, melindungi wang, pelanggan dan nama anda.`,
+        faqs: [
+          {
+            question: "Mengapa penggodam menyasarkan perniagaan kecil?",
+            answer:
+              "Perniagaan kecil menyimpan wang dan data pelanggan tetapi biasanya mempunyai pertahanan yang lebih lemah daripada syarikat besar. Penjenayah memilih yang paling mudah, dan kata laluan lemah, peranti yang tidak ditampal, serta kakitangan yang leka menjadikan perniagaan kecil sasaran mudah.",
+          },
+          {
+            question: "Apakah pengesahan pelbagai faktor dan patutkah saya menggunakannya?",
+            answer:
+              "Ia menambah langkah kedua, seperti gesaan aplikasi atau kod, di atas kata laluan anda. Ya, hidupkan untuk e-mel, perbankan, perakaunan dan kedai dalam talian anda terlebih dahulu, kerana ia menghentikan kebanyakan pengambilalihan akaun walaupun kata laluan dicuri.",
+          },
+          {
+            question: "Bagaimanakah saya mengesan penipuan invois palsu atau butiran bank yang diubah?",
+            answer:
+              "Berwaspada terhadap sebarang permintaan untuk membayar ke akaun baharu, terutamanya apabila ia mendesak. Sahkan dengan menelefon nombor yang sudah anda ketahui, bukan yang ada dalam mesej, dan minta orang kedua meluluskan bayaran yang besar atau diubah.",
+          },
+          {
+            question: "Apa yang perlu saya lakukan jika saya ditipu?",
+            answer:
+              "Hubungi bank anda dengan segera, kerana kelajuan penting untuk cuba menghentikan atau menarik balik pemindahan. Gunakan saluran tindak balas penipuan yang diterbitkan oleh bank anda dan pihak berkuasa, buat laporan polis, dan simpan tangkapan skrin dan rekod.",
+          },
+          {
+            question: "Berapa kerap saya patut menyandarkan data saya?",
+            answer:
+              "Secara automatik, sekerap yang anda sanggup kehilangan data, yang bagi kebanyakan perniagaan bermaksud setiap hari. Simpan sekurang-kurangnya satu salinan berasingan daripada rangkaian utama anda, dan uji pemulihan sekali atau dua kali setahun.",
+          },
+          {
+            question: "Adakah undang-undang perlindungan data peribadi terpakai kepada perniagaan kecil saya?",
+            answer:
+              "Jika anda memproses data peribadi dalam transaksi komersial, secara amnya ya, termasuk tanggungjawab untuk memastikan data selamat. Undang-undang itu telah dipinda dan panduan terus dikeluarkan, jadi semak peraturan semasa di laman web pihak berkuasa rasmi.",
+          },
+          {
+            question: "Apa yang perlu saya lakukan jika berlaku pelanggaran data?",
+            answer:
+              "Kawal dengan memutuskan sambungan peranti yang terjejas dan menukar kata laluan, simpan bukti, nilai data apa yang terlibat, dan semak sama ada anda mesti memberitahu pihak berkuasa atau orang yang terjejas di bawah peraturan semasa. Dapatkan bantuan profesional untuk insiden serius.",
+          },
+          {
+            question: "Bolehkah saya mendapatkan insurans terhadap insiden siber?",
+            answer:
+              "Sesetengah polisi insurans perniagaan termasuk atau menawarkan perlindungan siber, seperti untuk pemulihan data, gangguan perniagaan atau kos undang-undang. Tanya penanggung insurans anda apa yang dilindungi dan langkah keselamatan apa yang mereka harapkan anda ada.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "customer-complaints-refunds-and-consumer-rights-in-malaysia",
+    title: "Handling Customer Complaints, Refunds, and Consumer Rights in Malaysia",
+    seoTitle: "Customer Complaints, Refunds and Consumer Rights in Malaysia",
+    seoDescription:
+      "How Malaysian SMEs can handle complaints and refunds: Consumer Protection Act basics, honest pricing, warranties, online disputes and the Claims Tribunal.",
+    coverImage: {
+      file: "customer-complaints-refunds-and-consumer-rights-in-malaysia-cover.webp",
+      mimeType: "image/webp",
+      alt: "A smiling shop assistant in a black apron holding out a payment card across the counter to a customer",
+      altTranslations: {
+        zh: "一位系着黑色围裙的微笑店员隔着柜台向顾客递出一张付款卡",
+        ms: "Seorang pembantu kedai tersenyum berapron hitam menghulurkan kad pembayaran merentasi kaunter kepada pelanggan",
+      },
+    },
+    contentImages: {
+      counter: {
+        file: "customer-complaints-refunds-and-consumer-rights-in-malaysia-counter.webp",
+        mimeType: "image/webp",
+        alt: "A shopkeeper leaning across a counter talking with a customer over a plastic bag of goods",
+        altTranslations: {
+          zh: "一位店主倚着柜台，隔着一袋商品与顾客交谈",
+          ms: "Seorang pemilik kedai bersandar di kaunter bercakap dengan pelanggan di atas sebungkus barangan plastik",
+        },
+        after: "Write down a simple refund and exchange policy before a customer ever needs one.",
+        afterTranslations: {
+          zh: "在顾客需要之前，先写下一份简单的退款和换货政策。",
+          ms: "Tulis dasar bayaran balik dan pertukaran yang mudah sebelum pelanggan memerlukannya.",
+        },
+      },
+    },
+    excerpt:
+      "Every business gets complaints, and how you handle them decides whether you lose a customer or keep one. This guide explains the consumer protection rules Malaysian small sellers should know, how to set a clear refund and exchange policy, how to respond to complaints and online disputes, and when a claim can reach the Tribunal for Consumer Claims.",
+    body: `A complaint is a customer telling you something is wrong while still giving you a chance to fix it. Most unhappy customers never say anything, they simply leave and tell their friends. A small business that handles complaints calmly, quickly, and fairly keeps customers, protects its reputation, and avoids legal trouble.
+
+Malaysia has consumer protection laws that apply to sellers, including small ones and online sellers. You do not need to be a lawyer, but you do need to know the basics.
+
+This is general information, not legal advice. Laws, regulations, and tribunal limits change, so confirm the current position with the Ministry of Domestic Trade and Cost of Living, the Tribunal for Consumer Claims, or a lawyer before you rely on it in a dispute.
+
+## 1. Know the rules that protect your customers
+
+### The Consumer Protection Act
+The main law is the Consumer Protection Act 1999. It covers things like misleading or false claims about goods and services, unfair practices, product safety, and guarantees that goods and services will meet certain standards. It applies to many trade transactions in Malaysia, with some exceptions.
+
+### Guarantees on goods and services
+The Act includes implied guarantees, for example that goods are of acceptable quality, fit for their usual purpose, match their description, and that services are carried out with reasonable care and skill. If goods do not meet a guarantee, the consumer may have remedies such as repair, replacement, or a refund, depending on the situation.
+
+### Rules for online sellers
+There are also rules for electronic trade transactions, which require online sellers to display certain information such as their identity and contact details, a description of the goods, the price, and the terms. Check the current rules and your marketplace's own policies, because platforms often add their own return and refund requirements.
+
+### Other relevant rules
+Other laws and standards may apply to your type of business, such as food, health products, and pricing and labelling rules. Our guide on business licenses and permits and our guide on halal certification cover some of these areas.
+
+### Do not forget contract basics
+What you promise in writing and in advertising forms part of the deal. Our guide on contracts and terms explains how to write clear, fair terms.
+
+## 2. Be honest in pricing and advertising
+
+### Say what you sell, and mean it
+Descriptions, photos, and claims must be accurate. Avoid exaggerated claims about results, ingredients, origin, or quality that you cannot support.
+
+### Show the real price
+Show the full price a customer will pay, including any compulsory charges, and make clear whether tax is included. Our guide on pricing explains how to set and display prices, and our guide on SST registration covers tax.
+
+### Be careful with "sale" and "original price" claims
+A discount against an inflated "original price" can be misleading. Only compare against a price at which you genuinely sold the item.
+
+### Respect limited stock and promotion terms
+If you advertise a promotion, honour it, and state any conditions such as limits, dates, and exclusions clearly. Running out of advertised stock without warning is a common source of complaints.
+
+### Keep proof
+Save your advertisements, price lists, and promotion terms, since you may need them to show what you promised.
+
+## 3. Set a clear refund, exchange, and warranty policy
+
+Write down a simple refund and exchange policy before a customer ever needs one. A clear policy prevents most arguments and gives your staff something to follow.
+
+### What to cover
+State whether you accept returns, how long customers have, what condition items must be in, whether you refund or exchange, how refunds are paid, and who pays for shipping. Also state how to claim a warranty, and any exceptions such as custom-made or perishable goods.
+
+### Do not contradict the law
+A sign saying "no refund, no exchange" does not remove a customer's legal rights if goods are faulty or not as described. Your policy can add to the law, but it cannot take away what the law gives.
+
+### Distinguish faulty goods from change of mind
+Faulty or misdescribed goods usually give the customer stronger rights than a simple change of mind. You can choose to be generous with change-of-mind returns as a service, but your legal obligations for defective goods remain.
+
+### Display it where it counts
+Put the policy on your receipts, invoices, website, and shop wall, and in your marketplace listings. Customers should see it before they pay.
+
+### Keep records of sales
+Issue receipts or invoices and keep order records, so that you can confirm what was sold and when. Our guide on bookkeeping basics explains how to keep them, and our guide on e-invoicing explains issues that may apply.
+
+## 4. Handle complaints well
+
+### Listen first
+Let the customer explain without interrupting, and acknowledge the problem before you discuss fault. Many complaints end once people feel heard.
+
+### Respond quickly
+Acknowledge a complaint the same day if you can, and give a clear timeline for a resolution. Silence turns small problems into public reviews.
+
+### Find the facts
+Ask for the order details, photos, or receipts, check your own records, and decide whether the complaint is fair. Stay calm, even if the customer is not.
+
+### Offer a fair solution
+Repair, replace, refund, partially refund, or offer a credit, depending on the problem. A prompt, generous fix often costs less than a dispute, and often wins a loyal customer.
+
+### Record everything
+Keep a simple log of complaints, what was said, and how they were resolved. It helps you spot patterns, such as a faulty batch or a confusing instruction, and gives you proof if there is a dispute.
+
+### Train your staff
+Give staff clear authority to resolve small problems on the spot, such as refunds up to a set amount, and a clear path for escalating bigger issues.
+
+> A complaint handled well can build more loyalty than a purchase that went smoothly. The customer remembers how you fixed the problem, not just that it happened.
+
+## 5. Manage online reviews and disputes
+
+### Reply to reviews professionally
+Respond to negative reviews politely, acknowledge the issue, and offer to resolve it offline. Never argue, insult, or reveal customer details publicly. Our guide on personal data protection covers what you may disclose.
+
+### Do not fake reviews
+Fake positive reviews or paying for them can mislead consumers and may breach the rules and platform policies. Earn reviews by asking real customers.
+
+### Marketplace disputes
+Platforms have their own dispute and refund processes, and they often side with the buyer when evidence is unclear. Keep proof of shipping, packaging photos, and chat records, and respond within the platform's time limits.
+
+### Payment disputes and chargebacks
+A customer may ask their bank or card provider to reverse a payment. Respond with your order records, delivery proof, and your policy, and try to resolve the issue directly with the customer first where possible.
+
+### Social media complaints
+Move the conversation to a private message, resolve it, and then update the public thread if appropriate. Do not delete legitimate complaints. Our guide on social media marketing explains how to manage your pages.
+
+### Watch for abuse
+A few customers make false claims or abuse refund policies. Look at the evidence, apply your policy consistently, and escalate to the platform or the authorities if you suspect fraud.
+
+## 6. Understand what happens if a dispute escalates
+
+### Direct negotiation and mediation
+Most disputes end when both sides talk and compromise. Mediation or help from a consumer association can help if you cannot agree.
+
+### The Tribunal for Consumer Claims
+Consumers can file claims against sellers at the Tribunal for Consumer Claims, which is designed to be quicker and cheaper than court. There is a monetary limit on the claims it can hear, which has been raised over the years and stood at RM50,000 at the time of writing, and there are rules on time limits and the kinds of claims it can hear. Lawyers generally do not represent parties in the Tribunal. Check the current limits and procedure on the official website.
+
+### Consumer complaints to the authorities
+Consumers can also complain to the ministry's enforcement officers, which may investigate misleading claims, pricing offences, and other breaches. Penalties can include fines.
+
+### Courts
+Larger or more complex disputes can go to the courts. Get legal advice before you respond to a formal claim or a letter of demand.
+
+### Keep your response factual
+If you receive a claim, respond on time, gather your records, and stay factual. Ignoring a notice can result in a decision made without your side of the story.
+
+If you need a lawyer, a mediator, or a business adviser to help with a dispute or to draft your terms, you can [browse the directory](/en) for local professionals, and [creating a free business listing](/en/signup) helps customers find your business and its contact details, which makes it easier for them to reach you before a complaint becomes a dispute.
+
+## Common mistakes Malaysian SMEs make with complaints and refunds
+
+- **Displaying "no refund" as if it overrides the law.** A blanket sign does not remove a customer's rights over faulty or misdescribed goods.
+- **Ignoring or arguing with complaints.** Silence and defensiveness turn a fixable problem into a public one.
+- **Advertising things you cannot deliver.** Out-of-stock promotions and exaggerated claims are a leading source of complaints and breaches.
+- **Keeping no records.** Without receipts, chat logs, and complaint notes, you cannot defend a fair position in a dispute.
+
+## Where to start
+
+- **This week:** Write a one-page refund, exchange, and warranty policy, and put it on receipts, your website, and your shop.
+- **Next:** Check your advertising, prices, and product descriptions for accuracy, and fix anything misleading.
+- **Then:** Train staff to handle complaints, set what they can approve on the spot, and start a simple complaint log.
+- **Each quarter:** Review complaints for patterns, update your policy, and check for changes in the rules.
+
+Customers do not expect a business to be perfect. They expect it to be honest and to make things right.`,
+    faqs: [
+      {
+        question: "Which law protects consumers in Malaysia?",
+        answer:
+          "The main law is the Consumer Protection Act 1999, which covers misleading claims, unfair practices, product safety, and guarantees on goods and services. Other laws and rules may also apply to your type of business, so check the current position.",
+      },
+      {
+        question: "Can I put up a sign saying 'no refund, no exchange'?",
+        answer:
+          "You can, but it does not remove a customer's legal rights if goods are faulty, misdescribed, or fail a guarantee. Your policy can add to what the law gives, but it cannot take it away.",
+      },
+      {
+        question: "Do I have to give a refund if the customer simply changes their mind?",
+        answer:
+          "Generally the law gives stronger rights for faulty or misdescribed goods than for a change of mind. Many businesses offer change-of-mind returns as a service, so decide your policy and state it clearly before the sale.",
+      },
+      {
+        question: "What information must an online seller show?",
+        answer:
+          "Rules for electronic trade transactions require online sellers to display certain details, such as their identity and contact information, a description of the goods, the price, and the terms. Check the current rules and your marketplace's policies.",
+      },
+      {
+        question: "How should I respond to a negative online review?",
+        answer:
+          "Reply politely and promptly, acknowledge the issue, and offer to resolve it privately. Never argue, insult, or reveal customer details, and do not post or buy fake reviews.",
+      },
+      {
+        question: "What is the Tribunal for Consumer Claims?",
+        answer:
+          "A forum where consumers can claim against sellers more quickly and cheaply than in court. It has a monetary limit, which stood at RM50,000 at the time of writing, plus rules on time limits and claim types. Confirm the current rules on the official website.",
+      },
+      {
+        question: "What should I do if a customer files a chargeback or claim?",
+        answer:
+          "Respond on time with your order records, delivery proof, and policy, and try to resolve the matter directly first. For a formal claim or a letter of demand, gather your records and consider legal advice.",
+      },
+      {
+        question: "How can I reduce complaints in the first place?",
+        answer:
+          "Be accurate in descriptions and prices, honour promotions, state your refund and warranty policy clearly, deliver on time, and train staff to fix problems quickly. A simple complaint log helps you spot recurring issues.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "在马来西亚处理顾客投诉、退款和消费者权利",
+        excerpt:
+          "每家企业都会收到投诉，您如何处理决定了您是失去还是留住一位顾客。本指南说明马来西亚小卖家应该了解的消费者保护规定、如何制定清晰的退款和换货政策、如何回应投诉和线上纠纷，以及索赔何时可能进入消费者索赔审裁处。",
+        body: `投诉是顾客在仍然给您机会去补救时告诉您出了问题。大多数不满的顾客根本不会开口，他们只是默默离开，并告诉朋友。能够冷静、迅速、公平地处理投诉的小企业，可以留住顾客、保护声誉，并避免法律麻烦。
+
+马来西亚的消费者保护法律适用于卖家，包括小卖家和网络卖家。您不需要成为律师，但需要了解基本知识。
+
+以下仅为一般资讯，并非法律意见。法律、规章和审裁处的限额会变动，所以在纠纷中依赖这些内容之前，请向国内贸易及生活成本部、消费者索赔审裁处或律师确认现行情况。
+
+## 1. 了解保护您顾客的规定
+
+### 消费者保护法令
+主要的法律是 1999 年消费者保护法令。它涵盖诸如对货物和服务的误导或虚假声明、不公平的做法、产品安全，以及货物和服务将达到某些标准的保证。它适用于马来西亚的许多贸易交易，但有一些例外。
+
+### 对货物和服务的保证
+该法令包含默示保证，例如货物质量可以接受、适合其通常用途、与描述相符，以及服务以合理的谨慎和技能提供。如果货物不符合保证，消费者可能根据具体情况享有维修、更换或退款等补救。
+
+### 针对网络卖家的规定
+电子贸易交易也有相关规定，要求网络卖家展示某些资料，例如其身份和联系方式、货物的描述、价格和条款。请查看现行规定和您所在平台自己的政策，因为平台往往会加上自己的退货和退款要求。
+
+### 其他相关规定
+其他法律和标准可能适用于您的业务类型，例如食品、保健产品，以及价格和标签规定。我们关于商业执照与许可证的指南和关于清真认证的指南涵盖了其中一些领域。
+
+### 别忘了合约的基本知识
+您在书面和广告中所作的承诺构成交易的一部分。我们关于合约与条款的指南说明了如何撰写清晰、公平的条款。
+
+## 2. 在定价和广告中保持诚实
+
+### 说明您卖什么，并说到做到
+描述、照片和声明必须准确。避免对您无法证实的效果、成分、产地或质量作夸大宣称。
+
+### 显示真实价格
+显示顾客将支付的全部价格，包括任何强制性费用，并说明是否含税。我们关于定价的指南说明了如何设定和展示价格，关于 SST 注册的指南则涵盖了税务。
+
+### 小心“特价”和“原价”的声明
+与虚高的“原价”相比的折扣可能产生误导。只与您确实销售过该商品的价格作比较。
+
+### 尊重限量库存和促销条款
+如果您宣传促销，就要兑现，并清楚说明任何条件，例如限额、日期和不适用的项目。广告商品在没有预警的情况下售罄，是投诉的常见来源。
+
+### 保留证据
+保存您的广告、价格表和促销条款，因为您可能需要用它们来证明您承诺了什么。
+
+## 3. 制定清晰的退款、换货和保修政策
+
+在顾客需要之前，先写下一份简单的退款和换货政策。清晰的政策可以避免大多数争论，也让您的员工有所依循。
+
+### 应涵盖什么
+说明是否接受退货、顾客有多长时间、物品必须处于什么状态、是退款还是换货、退款如何支付，以及谁承担运费。同时说明如何申请保修，以及任何例外，例如定制品或易腐品。
+
+### 不要与法律相抵触
+写着“概不退款、概不换货”的告示，并不能在货物有缺陷或与描述不符时免除顾客的法定权利。您的政策可以在法律之外增加保障，但不能剥夺法律所赋予的。
+
+### 区分有缺陷的货物和改变主意
+有缺陷或描述不符的货物，通常比单纯改变主意给予顾客更强的权利。您可以选择把改变主意的退货作为一项服务而慷慨处理，但您对缺陷货物的法律义务仍然存在。
+
+### 展示在重要的地方
+把政策放在您的收据、发票、网站和店面墙上，以及您的平台商品页面中。顾客应该在付款之前就看到它。
+
+### 保存销售记录
+开具收据或发票并保存订单记录，让您能够确认卖了什么、何时卖的。我们关于簿记基础的指南说明了如何保存，关于电子发票的指南则说明了可能适用的问题。
+
+## 4. 妥善处理投诉
+
+### 先倾听
+让顾客把话说完，不要打断，并在讨论谁对谁错之前先承认问题。许多投诉在人们感到被倾听之后就结束了。
+
+### 迅速回应
+如果可以，当天就回复投诉，并给出解决问题的明确时间表。沉默会把小问题变成公开的评论。
+
+### 查明事实
+询问订单细节、照片或收据，检查您自己的记录，并判断投诉是否合理。即使顾客不冷静，您也要保持冷静。
+
+### 提出公平的解决方案
+视问题而定，维修、更换、退款、部分退款或提供抵用额。迅速而大方的解决，成本往往低于一场纠纷，并常常赢得一位忠实顾客。
+
+### 记录一切
+保留一份简单的投诉日志，记录说了什么以及如何解决的。它帮助您发现规律，例如有缺陷的批次或令人困惑的说明，并在发生纠纷时为您提供证据。
+
+### 培训您的员工
+赋予员工清晰的权限，当场解决小问题，例如在设定金额内的退款，并为更大的问题提供明确的上报途径。
+
+> 处理得好的投诉，所建立的忠诚度可能超过一次顺利的购买。顾客记住的是您如何解决问题，而不只是问题发生过。
+
+## 5. 管理线上评论和纠纷
+
+### 专业地回复评论
+礼貌地回应负面评论，承认问题，并提出私下解决。绝不要争吵、侮辱或公开顾客的资料。我们关于个人资料保护的指南涵盖了您可以披露什么。
+
+### 不要造假评论
+虚假的好评或花钱购买好评可能误导消费者，并可能违反规定和平台政策。请通过询问真实顾客来赢得评论。
+
+### 平台纠纷
+平台有自己的纠纷和退款流程，在证据不清时往往偏向买家。请保留运送证明、包装照片和聊天记录，并在平台的时限内回应。
+
+### 付款纠纷和拒付
+顾客可能要求其银行或信用卡服务商撤销一笔付款。请以您的订单记录、送达证明和您的政策回应，并尽可能先直接与顾客解决问题。
+
+### 社交媒体上的投诉
+把对话转到私信，解决问题，然后在适当时更新公开的帖子。不要删除正当的投诉。我们关于社交媒体营销的指南说明了如何管理您的专页。
+
+### 留意滥用
+有少数顾客会作出虚假声明或滥用退款政策。请查看证据，一致地适用您的政策，并在怀疑欺诈时向平台或有关当局上报。
+
+## 6. 了解纠纷升级后会发生什么
+
+### 直接协商和调解
+大多数纠纷在双方交谈并妥协后结束。如果无法达成一致，调解或消费者协会的协助会有帮助。
+
+### 消费者索赔审裁处
+消费者可以向消费者索赔审裁处对卖家提出索赔，它的设计比法院更快、更便宜。它能审理的索赔有金额上限，该上限多年来已经调高，在撰写本文时为 RM50,000，同时对时限和可审理的索赔类型也有规定。律师一般不在审裁处代表当事人。请在官方网站查看现行的限额和程序。
+
+### 向有关当局投诉
+消费者也可以向该部的执法人员投诉，他们可能调查误导性声明、定价违规和其他违法行为。处罚可能包括罚款。
+
+### 法院
+较大或较复杂的纠纷可以上法院。在回应正式的索赔或催款信之前，请先寻求法律意见。
+
+### 让您的回应以事实为依据
+如果您收到索赔，请按时回应，收集您的记录，并保持就事论事。忽视通知可能导致在没有听取您这一方说法的情况下作出裁决。
+
+如果您需要律师、调解员或商业顾问协助处理纠纷或起草条款，可以[浏览名录](/zh)寻找本地专业人士，而[创建免费的企业列表](/zh/signup)可以帮助顾客找到您的企业及其联系方式，让他们在投诉演变成纠纷之前更容易联系到您。
+
+## 马来西亚中小企业在投诉和退款上常犯的错误
+
+- **把“概不退款”当成可以凌驾于法律之上。**一块笼统的告示并不能取消顾客对有缺陷或描述不符货物的权利。
+- **忽视投诉或与顾客争论。**沉默和防御心态会把可以解决的问题变成公开的问题。
+- **宣传自己无法兑现的东西。**缺货的促销和夸大的宣称，是投诉和违规的主要来源。
+- **不保存记录。**没有收据、聊天记录和投诉记录，您就无法在纠纷中捍卫公平的立场。
+
+## 从哪里开始
+
+- **本周：**写一份一页的退款、换货和保修政策，并把它放在收据、网站和店里。
+- **接着：**检查您的广告、价格和产品描述是否准确，并改正任何有误导性的内容。
+- **然后：**培训员工处理投诉，设定他们可以当场批准的范围，并开始一份简单的投诉日志。
+- **每季度：**检视投诉中的规律，更新您的政策，并查看规定是否有变化。
+
+顾客并不期待企业完美。他们期待企业诚实，并把事情做对。`,
+        faqs: [
+          {
+            question: "马来西亚哪项法律保护消费者？",
+            answer:
+              "主要的法律是 1999 年消费者保护法令，涵盖误导性声明、不公平做法、产品安全，以及对货物和服务的保证。其他法律和规定也可能适用于您的业务类型，所以请查核现行情况。",
+          },
+          {
+            question: "我可以贴出“概不退款、概不换货”的告示吗？",
+            answer:
+              "可以，但如果货物有缺陷、描述不符或不符合保证，它并不能取消顾客的法定权利。您的政策可以在法律所给予的之外增加保障，但不能剥夺它。",
+          },
+          {
+            question: "如果顾客只是改变主意，我必须退款吗？",
+            answer:
+              "一般来说，法律对有缺陷或描述不符的货物所给予的权利，比改变主意更强。许多企业把改变主意的退货作为一项服务，所以请决定您的政策，并在销售之前清楚说明。",
+          },
+          {
+            question: "网络卖家必须展示哪些资料？",
+            answer:
+              "电子贸易交易的规定要求网络卖家展示某些细节，例如其身份和联系资料、货物的描述、价格和条款。请查看现行规定和您所在平台的政策。",
+          },
+          {
+            question: "我应该如何回应网上的负面评论？",
+            answer:
+              "礼貌而迅速地回复，承认问题，并提出私下解决。绝不要争吵、侮辱或公开顾客的资料，也不要发布或购买虚假评论。",
+          },
+          {
+            question: "什么是消费者索赔审裁处？",
+            answer:
+              "消费者可以在那里比上法院更快、更便宜地向卖家索赔的场所。它有金额上限，在撰写本文时为 RM50,000，另外还有关于时限和索赔类型的规定。请在官方网站确认现行规定。",
+          },
+          {
+            question: "如果顾客提出拒付或索赔，我该怎么办？",
+            answer:
+              "按时以您的订单记录、送达证明和政策回应，并尽量先直接解决问题。若是正式索赔或催款信，请收集您的记录，并考虑寻求法律意见。",
+          },
+          {
+            question: "如何从一开始就减少投诉？",
+            answer:
+              "让描述和价格准确，兑现促销，清楚说明您的退款和保修政策，按时交货，并培训员工迅速解决问题。一份简单的投诉日志有助于您发现反复出现的问题。",
+          },
+        ],
+      },
+      ms: {
+        title: "Mengendalikan Aduan Pelanggan, Bayaran Balik dan Hak Pengguna di Malaysia",
+        excerpt:
+          "Setiap perniagaan menerima aduan, dan cara anda mengendalikannya menentukan sama ada anda kehilangan atau mengekalkan pelanggan. Panduan ini menerangkan peraturan perlindungan pengguna yang patut diketahui oleh penjual kecil Malaysia, cara menetapkan dasar bayaran balik dan pertukaran yang jelas, cara menjawab aduan dan pertikaian dalam talian, dan bila tuntutan boleh sampai ke Tribunal Tuntutan Pengguna.",
+        body: `Aduan ialah pelanggan memberitahu anda sesuatu yang tidak kena sambil masih memberi anda peluang untuk membetulkannya. Kebanyakan pelanggan yang tidak berpuas hati tidak berkata apa-apa, mereka hanya pergi dan memberitahu rakan mereka. Perniagaan kecil yang mengendalikan aduan dengan tenang, pantas dan adil mengekalkan pelanggan, melindungi reputasi, dan mengelak masalah undang-undang.
+
+Malaysia mempunyai undang-undang perlindungan pengguna yang terpakai kepada penjual, termasuk penjual kecil dan penjual dalam talian. Anda tidak perlu menjadi peguam, tetapi anda perlu mengetahui asasnya.
+
+Ini ialah maklumat am, bukan nasihat undang-undang. Undang-undang, peraturan dan had tribunal berubah, jadi sahkan kedudukan semasa dengan Kementerian Perdagangan Dalam Negeri dan Kos Sara Hidup, Tribunal Tuntutan Pengguna, atau peguam sebelum anda bergantung padanya dalam pertikaian.
+
+## 1. Ketahui peraturan yang melindungi pelanggan anda
+
+### Akta Perlindungan Pengguna
+Undang-undang utama ialah Akta Perlindungan Pengguna 1999. Ia merangkumi perkara seperti dakwaan mengelirukan atau palsu tentang barangan dan perkhidmatan, amalan tidak adil, keselamatan produk, dan jaminan bahawa barangan dan perkhidmatan akan memenuhi piawaian tertentu. Ia terpakai kepada banyak transaksi perdagangan di Malaysia, dengan beberapa pengecualian.
+
+### Jaminan ke atas barangan dan perkhidmatan
+Akta ini termasuk jaminan tersirat, contohnya bahawa barangan berkualiti boleh diterima, sesuai untuk tujuan biasanya, sepadan dengan perihalannya, dan bahawa perkhidmatan dijalankan dengan penjagaan dan kemahiran yang munasabah. Jika barangan tidak memenuhi jaminan, pengguna mungkin mempunyai remedi seperti pembaikan, penggantian atau bayaran balik, bergantung pada keadaan.
+
+### Peraturan untuk penjual dalam talian
+Terdapat juga peraturan untuk transaksi perdagangan elektronik, yang memerlukan penjual dalam talian memaparkan maklumat tertentu seperti identiti dan butiran hubungan mereka, perihalan barangan, harga dan terma. Semak peraturan semasa dan dasar pasaran anda sendiri, kerana platform sering menambah keperluan pemulangan dan bayaran balik mereka sendiri.
+
+### Peraturan lain yang berkaitan
+Undang-undang dan piawaian lain mungkin terpakai kepada jenis perniagaan anda, seperti makanan, produk kesihatan, serta peraturan harga dan pelabelan. Panduan kami tentang lesen dan permit perniagaan dan panduan kami tentang pensijilan halal merangkumi sebahagian bidang ini.
+
+### Jangan lupa asas kontrak
+Apa yang anda janjikan secara bertulis dan dalam pengiklanan membentuk sebahagian daripada perjanjian. Panduan kami tentang kontrak dan terma menerangkan cara menulis terma yang jelas dan adil.
+
+## 2. Jujur dalam harga dan pengiklanan
+
+### Nyatakan apa yang anda jual, dan maksudkannya
+Perihalan, gambar dan dakwaan mesti tepat. Elakkan dakwaan berlebihan tentang hasil, ramuan, asal atau kualiti yang anda tidak dapat sokong.
+
+### Tunjukkan harga sebenar
+Tunjukkan harga penuh yang akan dibayar pelanggan, termasuk sebarang caj wajib, dan jelaskan sama ada cukai disertakan. Panduan kami tentang penetapan harga menerangkan cara menetapkan dan memaparkan harga, dan panduan kami tentang pendaftaran SST merangkumi cukai.
+
+### Berhati-hati dengan dakwaan "jualan" dan "harga asal"
+Diskaun berbanding "harga asal" yang dibengkakkan boleh mengelirukan. Bandingkan hanya dengan harga di mana anda benar-benar menjual item itu.
+
+### Hormati stok terhad dan terma promosi
+Jika anda mengiklankan promosi, tunaikannya, dan nyatakan sebarang syarat seperti had, tarikh dan pengecualian dengan jelas. Kehabisan stok yang diiklankan tanpa amaran ialah punca aduan yang lazim.
+
+### Simpan bukti
+Simpan iklan, senarai harga dan terma promosi anda, kerana anda mungkin memerlukannya untuk menunjukkan apa yang anda janjikan.
+
+## 3. Tetapkan dasar bayaran balik, pertukaran dan waranti yang jelas
+
+Tulis dasar bayaran balik dan pertukaran yang mudah sebelum pelanggan memerlukannya. Dasar yang jelas mencegah kebanyakan pertengkaran dan memberi kakitangan anda sesuatu untuk diikuti.
+
+### Apa yang perlu dirangkumi
+Nyatakan sama ada anda menerima pemulangan, berapa lama pelanggan ada, dalam keadaan apa item mesti berada, sama ada anda membayar balik atau menukar, bagaimana bayaran balik dibuat, dan siapa yang menanggung penghantaran. Nyatakan juga cara menuntut waranti, dan sebarang pengecualian seperti barangan buatan khas atau yang mudah rosak.
+
+### Jangan bercanggah dengan undang-undang
+Papan tanda yang menyatakan "tiada bayaran balik, tiada pertukaran" tidak menghapuskan hak undang-undang pelanggan jika barangan rosak atau tidak seperti yang diperihalkan. Dasar anda boleh menambah kepada undang-undang, tetapi tidak boleh mengambil apa yang diberikan oleh undang-undang.
+
+### Bezakan barangan rosak daripada berubah fikiran
+Barangan yang rosak atau salah diperihalkan biasanya memberi pelanggan hak yang lebih kukuh daripada sekadar berubah fikiran. Anda boleh memilih untuk bermurah hati dengan pemulangan kerana berubah fikiran sebagai satu perkhidmatan, tetapi tanggungjawab undang-undang anda untuk barangan cacat kekal.
+
+### Paparkan di tempat yang penting
+Letakkan dasar itu pada resit, invois, laman web dan dinding kedai anda, dan dalam penyenaraian pasaran anda. Pelanggan harus melihatnya sebelum mereka membayar.
+
+### Simpan rekod jualan
+Keluarkan resit atau invois dan simpan rekod pesanan, supaya anda dapat mengesahkan apa yang dijual dan bila. Panduan kami tentang asas simpan kira menerangkan cara menyimpannya, dan panduan kami tentang e-Invois menerangkan isu yang mungkin terpakai.
+
+## 4. Kendalikan aduan dengan baik
+
+### Dengar dahulu
+Biarkan pelanggan menerangkan tanpa mencelah, dan akui masalah itu sebelum anda membincangkan kesalahan. Banyak aduan berakhir apabila orang berasa didengari.
+
+### Balas dengan pantas
+Akui aduan pada hari yang sama jika boleh, dan berikan garis masa yang jelas untuk penyelesaian. Kesunyian mengubah masalah kecil menjadi ulasan awam.
+
+### Cari fakta
+Minta butiran pesanan, gambar atau resit, semak rekod anda sendiri, dan tentukan sama ada aduan itu adil. Kekal tenang, walaupun pelanggan tidak.
+
+### Tawarkan penyelesaian yang adil
+Baiki, ganti, bayar balik, bayar balik sebahagian, atau tawarkan kredit, bergantung pada masalah. Pembetulan yang pantas dan murah hati sering berkos kurang daripada pertikaian, dan sering memenangi pelanggan yang setia.
+
+### Rekodkan segala-galanya
+Simpan log aduan yang mudah, apa yang dikatakan, dan bagaimana ia diselesaikan. Ia membantu anda mengesan corak, seperti kelompok yang rosak atau arahan yang mengelirukan, dan memberi anda bukti jika berlaku pertikaian.
+
+### Latih kakitangan anda
+Berikan kakitangan kuasa yang jelas untuk menyelesaikan masalah kecil di tempat, seperti bayaran balik sehingga jumlah tertentu, dan laluan yang jelas untuk menaikkan isu yang lebih besar.
+
+> Aduan yang dikendalikan dengan baik boleh membina lebih banyak kesetiaan daripada pembelian yang berjalan lancar. Pelanggan mengingati cara anda membetulkan masalah, bukan sekadar bahawa ia berlaku.
+
+## 5. Urus ulasan dan pertikaian dalam talian
+
+### Balas ulasan secara profesional
+Balas ulasan negatif dengan sopan, akui isu itu, dan tawarkan untuk menyelesaikannya di luar talian. Jangan sekali-kali bertengkar, menghina atau mendedahkan butiran pelanggan secara terbuka. Panduan kami tentang perlindungan data peribadi merangkumi apa yang boleh anda dedahkan.
+
+### Jangan palsukan ulasan
+Ulasan positif palsu atau membayar untuknya boleh mengelirukan pengguna dan mungkin melanggar peraturan dan dasar platform. Peroleh ulasan dengan meminta pelanggan sebenar.
+
+### Pertikaian pasaran
+Platform mempunyai proses pertikaian dan bayaran balik sendiri, dan mereka sering memihak kepada pembeli apabila bukti tidak jelas. Simpan bukti penghantaran, gambar pembungkusan dan rekod sembang, dan balas dalam had masa platform.
+
+### Pertikaian pembayaran dan caj balik
+Pelanggan mungkin meminta bank atau penyedia kad mereka membalikkan bayaran. Balas dengan rekod pesanan, bukti penghantaran dan dasar anda, dan cuba menyelesaikan isu itu secara langsung dengan pelanggan dahulu jika boleh.
+
+### Aduan media sosial
+Alihkan perbualan ke mesej peribadi, selesaikannya, dan kemudian kemas kini benang awam jika sesuai. Jangan padam aduan yang sah. Panduan kami tentang pemasaran media sosial menerangkan cara menguruskan halaman anda.
+
+### Awasi penyalahgunaan
+Segelintir pelanggan membuat dakwaan palsu atau menyalahgunakan dasar bayaran balik. Lihat bukti, terapkan dasar anda secara konsisten, dan naikkan kepada platform atau pihak berkuasa jika anda mengesyaki penipuan.
+
+## 6. Fahami apa yang berlaku jika pertikaian meningkat
+
+### Rundingan langsung dan pengantaraan
+Kebanyakan pertikaian berakhir apabila kedua-dua pihak berbincang dan berkompromi. Pengantaraan atau bantuan persatuan pengguna boleh membantu jika anda tidak dapat bersetuju.
+
+### Tribunal Tuntutan Pengguna
+Pengguna boleh memfailkan tuntutan terhadap penjual di Tribunal Tuntutan Pengguna, yang direka untuk lebih pantas dan lebih murah daripada mahkamah. Terdapat had kewangan ke atas tuntutan yang boleh didengarnya, yang telah dinaikkan sejak bertahun-tahun dan berada pada RM50,000 pada masa penulisan, dan terdapat peraturan tentang had masa dan jenis tuntutan yang boleh didengarnya. Peguam secara amnya tidak mewakili pihak di Tribunal. Semak had dan prosedur semasa di laman web rasmi.
+
+### Aduan pengguna kepada pihak berkuasa
+Pengguna juga boleh membuat aduan kepada pegawai penguat kuasa kementerian, yang mungkin menyiasat dakwaan mengelirukan, kesalahan harga dan pelanggaran lain. Penalti boleh termasuk denda.
+
+### Mahkamah
+Pertikaian yang lebih besar atau lebih rumit boleh dibawa ke mahkamah. Dapatkan nasihat undang-undang sebelum anda membalas tuntutan rasmi atau surat tuntutan.
+
+### Pastikan jawapan anda berdasarkan fakta
+Jika anda menerima tuntutan, balas tepat pada masanya, kumpulkan rekod anda, dan kekal berdasarkan fakta. Mengabaikan notis boleh menyebabkan keputusan dibuat tanpa pihak anda didengari.
+
+Jika anda memerlukan peguam, pengantara atau penasihat perniagaan untuk membantu dengan pertikaian atau untuk menggubal terma anda, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pelanggan menemui perniagaan anda dan butiran hubungannya, yang memudahkan mereka menghubungi anda sebelum aduan menjadi pertikaian.
+
+## Kesilapan lazim PKS Malaysia dengan aduan dan bayaran balik
+
+- **Memaparkan "tiada bayaran balik" seolah-olah ia mengatasi undang-undang.** Papan tanda menyeluruh tidak menghapuskan hak pelanggan ke atas barangan yang rosak atau salah diperihalkan.
+- **Mengabaikan atau bertengkar dengan aduan.** Kesunyian dan sikap defensif mengubah masalah yang boleh diselesaikan menjadi masalah awam.
+- **Mengiklankan perkara yang anda tidak dapat sampaikan.** Promosi kehabisan stok dan dakwaan berlebihan ialah punca utama aduan dan pelanggaran.
+- **Tidak menyimpan rekod.** Tanpa resit, log sembang dan nota aduan, anda tidak dapat mempertahankan kedudukan yang adil dalam pertikaian.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Tulis dasar bayaran balik, pertukaran dan waranti satu muka surat, dan letakkannya pada resit, laman web dan kedai anda.
+- **Seterusnya:** Semak iklan, harga dan perihalan produk anda untuk ketepatan, dan betulkan apa-apa yang mengelirukan.
+- **Kemudian:** Latih kakitangan mengendalikan aduan, tetapkan apa yang boleh mereka luluskan di tempat, dan mulakan log aduan yang mudah.
+- **Setiap suku tahun:** Semak aduan untuk corak, kemas kini dasar anda, dan periksa perubahan peraturan.
+
+Pelanggan tidak mengharapkan perniagaan sempurna. Mereka mengharapkannya jujur dan membetulkan keadaan.`,
+        faqs: [
+          {
+            question: "Undang-undang manakah yang melindungi pengguna di Malaysia?",
+            answer:
+              "Undang-undang utama ialah Akta Perlindungan Pengguna 1999, yang merangkumi dakwaan mengelirukan, amalan tidak adil, keselamatan produk, dan jaminan ke atas barangan dan perkhidmatan. Undang-undang dan peraturan lain juga mungkin terpakai kepada jenis perniagaan anda, jadi semak kedudukan semasa.",
+          },
+          {
+            question: "Bolehkah saya memasang papan tanda 'tiada bayaran balik, tiada pertukaran'?",
+            answer:
+              "Boleh, tetapi ia tidak menghapuskan hak undang-undang pelanggan jika barangan rosak, salah diperihalkan, atau gagal memenuhi jaminan. Dasar anda boleh menambah kepada apa yang diberikan undang-undang, tetapi tidak boleh mengambilnya.",
+          },
+          {
+            question: "Adakah saya perlu memberi bayaran balik jika pelanggan sekadar berubah fikiran?",
+            answer:
+              "Secara amnya undang-undang memberi hak lebih kukuh untuk barangan rosak atau salah diperihalkan berbanding berubah fikiran. Ramai perniagaan menawarkan pemulangan kerana berubah fikiran sebagai satu perkhidmatan, jadi tentukan dasar anda dan nyatakannya dengan jelas sebelum jualan.",
+          },
+          {
+            question: "Apakah maklumat yang mesti dipaparkan oleh penjual dalam talian?",
+            answer:
+              "Peraturan untuk transaksi perdagangan elektronik memerlukan penjual dalam talian memaparkan butiran tertentu, seperti identiti dan maklumat hubungan mereka, perihalan barangan, harga dan terma. Semak peraturan semasa dan dasar pasaran anda.",
+          },
+          {
+            question: "Bagaimanakah saya patut membalas ulasan negatif dalam talian?",
+            answer:
+              "Balas dengan sopan dan segera, akui isu itu, dan tawarkan untuk menyelesaikannya secara peribadi. Jangan sekali-kali bertengkar, menghina atau mendedahkan butiran pelanggan, dan jangan menyiarkan atau membeli ulasan palsu.",
+          },
+          {
+            question: "Apakah Tribunal Tuntutan Pengguna?",
+            answer:
+              "Satu forum di mana pengguna boleh menuntut terhadap penjual dengan lebih pantas dan murah daripada di mahkamah. Ia mempunyai had kewangan, yang berada pada RM50,000 pada masa penulisan, serta peraturan tentang had masa dan jenis tuntutan. Sahkan peraturan semasa di laman web rasmi.",
+          },
+          {
+            question: "Apa yang perlu saya lakukan jika pelanggan memfailkan caj balik atau tuntutan?",
+            answer:
+              "Balas tepat pada masanya dengan rekod pesanan, bukti penghantaran dan dasar anda, dan cuba menyelesaikan perkara itu secara langsung dahulu. Untuk tuntutan rasmi atau surat tuntutan, kumpulkan rekod anda dan pertimbangkan nasihat undang-undang.",
+          },
+          {
+            question: "Bagaimanakah saya boleh mengurangkan aduan sejak awal?",
+            answer:
+              "Pastikan perihalan dan harga tepat, tunaikan promosi, nyatakan dasar bayaran balik dan waranti anda dengan jelas, hantar tepat pada masanya, dan latih kakitangan membetulkan masalah dengan pantas. Log aduan yang mudah membantu anda mengesan isu yang berulang.",
+          },
+        ],
+      },
+    },
+  },
 ];

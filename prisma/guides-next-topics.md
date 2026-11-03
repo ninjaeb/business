@@ -15,14 +15,14 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Cybersecurity for Malaysian Small Businesses: Protecting Data, Payments, and Accounts**
-   — Practical, low-cost protection: strong passwords and multi-factor
-   authentication, phishing and payment-fraud scams common in Malaysia,
-   backups, securing Wi-Fi and devices, controlling staff and freelancer
-   access, what to do after a breach, and links to PDPA duties.
+1. **Managing Inventory and Stock for Malaysian SMEs: Ordering, Tracking, and Cutting Waste**
+   — Why stock ties up cash, counting and tracking methods (spreadsheets
+   to simple inventory apps), reorder points and safety stock, supplier
+   lead times, handling slow-moving and expired stock, shrinkage and theft,
+   seasonal peaks such as festive periods, and links to pricing and cash flow.
 
-2. **Handling Customer Complaints, Refunds, and Consumer Rights in Malaysia**
-   — How the Consumer Protection Act and related rules affect small
-   sellers: refund, exchange and warranty basics, honest pricing and
-   advertising, handling complaints well, dealing with online disputes and
-   chargebacks, and when a complaint can escalate to the Tribunal.
+2. **Writing a Business Plan for a Malaysian SME: Planning, Financials, and Pitching for Funding**
+   — A practical business plan for a small Malaysian business: market and
+   customer analysis, offer and pricing, operations, simple financial
+   projections, goals and milestones, what banks and grant bodies look for,
+   and how to keep the plan alive after you write it.
