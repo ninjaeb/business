@@ -323,7 +323,7 @@
         "digital"
       ],
       "description": "Asian businesswoman in a blazer typing on a laptop",
-      "usedBy": "franchising-in-malaysia-for-smes-cover.webp"
+      "usedBy": "cybersecurity-for-malaysian-small-businesses-cover.webp"
     },
     {
       "id": 8374337,
@@ -587,6 +587,36 @@
       ],
       "description": "Hand writing in a notebook next to a calculator and laptop",
       "usedBy": "pricing-products-and-services-in-malaysia-notebook.webp"
+    },
+    {
+      "id": 8554298,
+      "tags": [
+        "cybersecurity",
+        "laptop",
+        "desk"
+      ],
+      "description": "Young woman in glasses working at a desk with a laptop in a modern office",
+      "usedBy": "cybersecurity-for-malaysian-small-businesses-laptop.webp"
+    },
+    {
+      "id": 29462804,
+      "tags": [
+        "retail",
+        "customer-service",
+        "market"
+      ],
+      "description": "Vendor hands a product to a customer at a busy market counter",
+      "usedBy": "customer-complaints-refunds-and-consumer-rights-in-malaysia-counter.webp"
+    },
+    {
+      "id": 3933649,
+      "tags": [
+        "retail",
+        "customer-service",
+        "payment"
+      ],
+      "description": "Florist smiles while accepting payment in a flower shop",
+      "usedBy": "customer-complaints-refunds-and-consumer-rights-in-malaysia-cover.webp"
     }
   ]
 }
