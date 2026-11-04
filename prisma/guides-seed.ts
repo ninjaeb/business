@@ -18981,4 +18981,1260 @@ Pelan terbaik ialah yang benar-benar anda gunakan. Tulis dengan mudah, uji denga
       },
     },
   },
+  {
+    slug: "employee-handbook-and-hr-policies-for-malaysian-smes",
+    title: "Building an Employee Handbook and HR Policies for Malaysian SMEs: Hours, Overtime, and Discipline",
+    seoTitle: "Employee Handbook and HR Policies for Malaysian SMEs",
+    seoDescription:
+      "How Malaysian SMEs can write an employee handbook: working hours, overtime, leave, conduct, fair discipline, grievances, harassment policy and updates.",
+    coverImage: {
+      file: "employee-handbook-and-hr-policies-for-malaysian-smes-cover.webp",
+      mimeType: "image/webp",
+      alt: "A young woman in a white shirt typing on a laptop at a long desk beside a window, with a colleague seated behind her",
+      altTranslations: {
+        zh: "一位身穿白衬衫的年轻女士在窗边的长桌前使用笔记本电脑打字，身后坐着一位同事",
+        ms: "Seorang wanita muda berbaju putih menaip pada komputer riba di meja panjang di tepi tingkap, dengan rakan sekerja duduk di belakangnya",
+      },
+    },
+    contentImages: {
+      team: {
+        file: "employee-handbook-and-hr-policies-for-malaysian-smes-team.webp",
+        mimeType: "image/webp",
+        alt: "Three colleagues standing in a bright room, one holding a clipboard and another reading printed papers",
+        altTranslations: {
+          zh: "三位同事站在明亮的房间里，一人拿着写字板，另一人正在阅读打印的文件",
+          ms: "Tiga rakan sekerja berdiri di dalam bilik terang, seorang memegang papan klip dan seorang lagi membaca kertas bercetak",
+        },
+        after: "Write your policies in plain language so that every employee can understand them on the first read.",
+        afterTranslations: {
+          zh: "用通俗易懂的语言撰写您的政策，让每位员工第一次阅读就能理解。",
+          ms: "Tulis dasar anda dalam bahasa yang mudah supaya setiap pekerja dapat memahaminya pada bacaan pertama.",
+        },
+      },
+    },
+    excerpt:
+      "A written handbook turns unwritten expectations into clear rules, and prevents most workplace disputes before they start. This guide shows Malaysian SMEs what to put in an employee handbook, how working hours and overtime fit the Employment Act, how to set fair conduct and discipline procedures, how to handle grievances and harassment, and how to keep the handbook up to date.",
+    body: `Most workplace disputes start with an unwritten expectation. One person assumes they can leave early on Fridays, another thinks overtime is voluntary, and a third did not know that a repeated lateness could lead to a warning. A clear handbook replaces guesswork with shared rules, protects the business if a dispute arises, and shows employees that they will be treated fairly.
+
+You do not need a thick policy manual. For a small business, a handbook of ten to twenty pages in plain language can cover what matters.
+
+This is general information, not legal advice. Employment law, including the Employment Act 1955 and its amendments, applies differently depending on the type of work and sometimes on wage level, and it changes over time. Confirm the current rules with the Labour Department or a lawyer, and have your handbook checked before you use it to discipline anyone.
+
+## 1. Understand why a handbook helps
+
+### It sets clear expectations
+A handbook explains hours, pay dates, leave, conduct, and procedures in one place, so that employees and managers apply the same rules.
+
+### It supports fair treatment
+When rules are written and applied consistently, it is easier to treat people fairly and to show that you did, if a complaint or claim arises.
+
+### It protects the business
+If you need to take disciplinary action, a written policy that the employee had access to makes your position stronger. Our guide on terminating an employee explains why process matters.
+
+### It saves management time
+Instead of answering the same questions repeatedly, managers can point to the handbook, and new employees get up to speed faster.
+
+### It works together with the contract
+The employment contract covers the individual terms, such as role, pay, and notice, while the handbook covers workplace rules. They must not contradict each other, and the handbook cannot reduce the minimum rights the law gives employees. Our guide on hiring your first employee covers contracts and contributions.
+
+## 2. Plan the handbook before you write it
+
+Write your policies in plain language so that every employee can understand them on the first read. Short sentences, concrete examples, and a friendly but firm tone work better than legal wording.
+
+### Start from the law
+List the legal minimums that apply to your business, such as working hours, rest days, leave, public holidays, overtime, sexual harassment procedures, and statutory contributions. Your policies can be more generous than the law, but never less.
+
+### Match your real practices
+Do not copy a template that does not reflect how you operate. A handbook that nobody follows is worse than none, because it shows inconsistent enforcement.
+
+### Decide the structure
+Organise by topic, with a short introduction on your values, then sections on employment basics, hours, pay, leave, conduct, discipline, grievances, health and safety, and technology.
+
+### Get input and review
+Ask managers and a few employees whether the draft is clear and realistic, and have a lawyer or HR adviser check the key sections.
+
+### Think about languages
+If your workforce reads mainly Malay, Chinese, or English, consider providing the handbook in the languages they use, so that no one can claim they did not understand it.
+
+## 3. Cover working hours, pay, and overtime
+
+### Normal working hours and rest days
+Set the daily and weekly hours, break times, and rest days. The Employment Act sets a weekly limit on normal working hours, which was reduced to 45 hours in recent years. Check the current limit and how it applies to your type of work.
+
+### Overtime
+Explain when overtime is required, how it is approved in advance, and how it is paid. The law sets premium rates for overtime, rest day, and public holiday work for employees it covers, and the coverage and rates can depend on wage level and job type. Check the current rules, and do not leave overtime as an informal arrangement.
+
+### Pay and deductions
+State pay dates, how salaries are paid, and what deductions can be made, including statutory contributions and any permitted deductions. Our guide on payroll and statutory contributions explains the contributions you must pay.
+
+### Attendance and lateness
+Set clear rules on reporting lateness or absence, medical certificates, and how repeated issues are handled.
+
+### Flexible and remote work
+If you allow flexible hours or working from home, state who is eligible, how hours are tracked, and what equipment and data security rules apply. Our guide on cybersecurity covers data protection basics.
+
+### Shift work and part-time staff
+If you use shifts or part-time employees, explain how schedules are set and changed. Our guide on working with freelancers and part-timers explains the status of part-time workers.
+
+## 4. Cover leave and benefits
+
+### Statutory leave
+List annual leave, sick leave, hospitalisation leave, maternity and paternity leave, and public holidays at no less than the statutory minimum. Our guide on employee leave and public holidays explains the entitlements and how they are calculated.
+
+### Other leave and benefits
+Describe any extra leave you offer, such as compassionate leave or study leave, plus benefits such as medical cover, bonuses, or allowances, and the conditions for each. Do not promise what you may not deliver.
+
+### How to apply for leave
+Explain how far in advance to apply, who approves it, how emergency leave is handled, and how leave is carried over or encashed, if at all.
+
+### Statutory contributions
+Remind employees that required contributions are deducted and paid according to law, and where they can check their records.
+
+### Keep it consistent
+Apply leave rules the same way to everyone in similar roles, to avoid claims of unfair treatment.
+
+## 5. Set conduct standards and a fair disciplinary procedure
+
+### Define expected conduct
+Cover punctuality, honesty, respect, dress where relevant, safety, use of company property, conflicts of interest, confidentiality, and social media. Give examples of what is and is not acceptable.
+
+### Separate minor and serious misconduct
+Minor issues, such as occasional lateness, may lead to a conversation or verbal warning. Serious issues, such as theft, violence, or fraud, may justify stronger action. State the levels so that people know what to expect.
+
+### Follow a fair process
+Before disciplining or dismissing someone for misconduct, inform them of the allegation, give them a chance to respond, investigate, and decide fairly, with records of each step. For serious misconduct, the law sets requirements for a proper inquiry, so get advice before you act. Our guide on terminating an employee explains the process and the risks.
+
+### Use warnings sensibly
+A graded system of verbal and written warnings, and in some cases performance improvement plans, gives employees a chance to correct problems. Keep copies of warnings and the employee's response.
+
+### Apply rules consistently
+Treating similar cases differently invites claims of unfairness. Keep records of decisions and the reasons for them.
+
+> A handbook is only as good as the way you apply it. A fair rule that is enforced consistently builds trust, while a perfect rule that is enforced selectively creates disputes.
+
+## 6. Handle grievances, harassment, and safety
+
+### A clear grievance procedure
+Explain how an employee can raise a problem, who they can approach, how quickly you will respond, and what happens next. Make sure they can raise concerns about their own manager without fear.
+
+### Sexual harassment policy
+Malaysian law places duties on employers regarding sexual harassment, including having a procedure for inquiring into complaints and displaying a notice about it. Set out what counts as harassment, how to report it, how complaints are investigated confidentially, and the consequences. Confirm the current legal requirements with the Labour Department or a lawyer.
+
+### Anti-discrimination and respect
+State that you will not tolerate discrimination or bullying, and explain how reports are handled.
+
+### Health and safety
+Include safety rules, reporting of incidents, and emergency procedures. Our guide on workplace safety explains your duties.
+
+### Protect against retaliation
+State clearly that employees who raise a good-faith concern will not be punished for doing so.
+
+## 7. Roll out, record, and update the handbook
+
+### Introduce it properly
+Give every employee a copy, explain the key points in a short briefing, and ask them to acknowledge receipt in writing. Include the handbook in your onboarding for new joiners.
+
+### Keep it accessible
+Provide a printed copy or an easy-to-find digital version, so that employees can check the rules whenever they need to.
+
+### Review at least once a year
+Update it when the law changes, when you add new practices, or when problems show a gap. Tell employees about changes, and record the date and version.
+
+### Handle personal data carefully
+Employee records are personal data, so explain how you collect and use them and keep them secure. Our guide on personal data protection covers your duties.
+
+### Train your managers
+Managers must understand and apply the policies fairly. A short training session on conduct, discipline, and handling complaints prevents many mistakes.
+
+If you need an HR consultant, a lawyer, or an accountant to review your policies, you can [browse the directory](/en) for local professionals, and [creating a free business listing](/en/signup) helps job seekers and customers see that you are a credible, well-run business.
+
+## Common mistakes Malaysian SMEs make with HR policies
+
+- **Copying a generic template without checking it.** A policy that does not fit your business, or falls below legal minimums, can hurt you more than having none.
+- **Writing rules that are never enforced evenly.** Selective enforcement undermines the policy and invites claims of unfairness.
+- **Skipping a fair process before discipline.** Acting without informing the employee, hearing their side, and keeping records is a common cause of disputes.
+- **Never updating the handbook.** Laws and workplace practices change, and an outdated handbook can contradict current requirements.
+
+## Where to start
+
+- **This week:** List the key rules you already apply on hours, leave, conduct, and discipline, and where they differ from the law.
+- **Next:** Draft a short handbook in plain language covering the main topics, and ask a lawyer or HR adviser to check it.
+- **Then:** Brief your team, get written acknowledgements, and train managers to apply it fairly.
+- **Each year:** Review the handbook, update it for legal changes, and record the version and date.
+
+A good handbook is not about control. It is about making sure that everyone knows what is expected, what they can expect in return, and how problems will be handled.`,
+    faqs: [
+      {
+        question: "Does a small business need an employee handbook?",
+        answer:
+          "It is not generally a legal requirement, but it is strongly advisable. A written handbook sets clear expectations, supports fair treatment, and strengthens your position if a dispute arises. Some matters, such as a sexual harassment procedure, have specific legal requirements.",
+      },
+      {
+        question: "What is the difference between an employment contract and a handbook?",
+        answer:
+          "The contract covers an individual's terms, such as role, pay, and notice. The handbook covers workplace rules that apply to everyone, such as conduct, leave procedures, and discipline. They must not contradict each other, and neither can reduce the rights the law gives employees.",
+      },
+      {
+        question: "What are the maximum working hours under the Employment Act?",
+        answer:
+          "The Act sets a weekly limit on normal working hours, which was reduced to 45 hours in recent years. How it applies can depend on the type of work and the employee, so check the current rules with the Labour Department or a lawyer.",
+      },
+      {
+        question: "How should overtime be handled in the handbook?",
+        answer:
+          "Explain when overtime is required, how it is approved in advance, and how it is paid. The law sets premium rates for overtime, rest day, and public holiday work for employees it covers, with coverage depending on factors such as wage level and job type, so confirm the current rules.",
+      },
+      {
+        question: "Do I need to follow a process before disciplining or dismissing an employee?",
+        answer:
+          "Yes. Inform the employee of the allegation, give them a chance to respond, investigate fairly, and keep records. For serious misconduct the law sets requirements for a proper inquiry, so get advice before you act.",
+      },
+      {
+        question: "Do employers have to have a sexual harassment policy?",
+        answer:
+          "Malaysian law places duties on employers, including having a procedure for inquiring into complaints and displaying a notice about it. Confirm the current requirements with the Labour Department or a lawyer.",
+      },
+      {
+        question: "How often should the handbook be updated?",
+        answer:
+          "Review it at least once a year, and whenever the law changes, you add new practices, or a problem shows a gap. Tell employees about changes and record the version and date.",
+      },
+      {
+        question: "Should the handbook be in more than one language?",
+        answer:
+          "If your employees read mainly Malay, Chinese, or English, providing the handbook in the languages they use helps ensure everyone understands it. A handbook nobody can read easily is hard to enforce.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "为马来西亚中小企业建立员工手册和人力资源政策：工时、加班与纪律",
+        excerpt:
+          "书面的员工手册把不成文的期望变成清晰的规则，并在大多数职场纠纷发生之前就加以预防。本指南向马来西亚中小企业说明员工手册应包含什么、工时和加班如何与雇佣法令配合、如何制定公平的行为和纪律程序、如何处理申诉和骚扰，以及如何让手册保持最新。",
+        body: `大多数职场纠纷始于不成文的期望。一个人以为星期五可以早退，另一个人认为加班是自愿的，第三个人不知道反复迟到可能导致警告。清晰的手册以共同的规则取代猜测，在发生纠纷时保护企业，并向员工表明他们将得到公平对待。
+
+您不需要厚厚的政策手册。对小企业来说，一份十到二十页、用通俗语言写成的手册，就能涵盖重要的事项。
+
+以下仅为一般资讯，并非法律意见。包括 1955 年雇佣法令及其修订在内的雇佣法律，因工作类型而有不同的适用方式，有时还取决于工资水平，并且会随时间变化。请向劳工局或律师确认现行规定，并在用手册来处分任何人之前，先请人审阅。
+
+## 1. 了解手册为什么有帮助
+
+### 它设定清晰的期望
+手册在一处说明工时、发薪日、假期、行为和程序，让员工和经理适用相同的规则。
+
+### 它支持公平对待
+当规则被写下来并一致地执行时，更容易公平对待他人，并在出现投诉或索赔时证明您做到了。
+
+### 它保护企业
+如果您需要采取纪律行动，一份员工有机会阅读的书面政策会让您的立场更有力。我们关于终止雇佣的指南说明了为什么程序很重要。
+
+### 它节省管理时间
+经理不必反复回答相同的问题，可以直接指向手册，新员工也能更快上手。
+
+### 它与合约相辅相成
+雇佣合约涵盖个人的条款，例如职位、薪酬和通知期，而手册涵盖职场规则。两者不得相互矛盾，且手册不能减少法律赋予员工的最低权利。我们关于雇用第一位员工的指南涵盖了合约和供款。
+
+## 2. 在动笔之前先规划手册
+
+用通俗易懂的语言撰写您的政策，让每位员工第一次阅读就能理解。短句、具体的例子，以及友善但坚定的语气，比法律用语更有效。
+
+### 从法律出发
+列出适用于您企业的法定最低要求，例如工时、休息日、假期、公共假期、加班、性骚扰程序和法定供款。您的政策可以比法律更慷慨，但绝不能更低。
+
+### 符合您的实际做法
+不要照搬不符合您运作方式的模板。没人遵守的手册比没有手册更糟，因为它显示了执行上的不一致。
+
+### 决定结构
+按主题组织，先用简短的引言说明您的价值观，然后依次是雇佣基本事项、工时、薪酬、假期、行为、纪律、申诉、健康与安全和科技。
+
+### 征求意见并审阅
+请经理和几位员工看草稿是否清晰、是否切合实际，并请律师或人力资源顾问检查关键部分。
+
+### 考虑语言
+如果您的员工主要阅读马来文、中文或英文，请考虑以他们使用的语言提供手册，让没有人可以声称自己没看懂。
+
+## 3. 涵盖工时、薪酬和加班
+
+### 正常工时和休息日
+订明每日和每周的工时、休息时间和休息日。雇佣法令对正常工作时数订有每周上限，近年已减至 45 小时。请查核现行限额以及它如何适用于您的工作类型。
+
+### 加班
+说明何时需要加班、如何事先批准，以及如何支付。法律为其所涵盖的雇员规定了加班、休息日和公共假期工作的加成费率，涵盖范围和费率可能取决于工资水平和工作类型。请查核现行规定，不要把加班留作非正式的安排。
+
+### 薪酬和扣除
+说明发薪日、薪水如何支付，以及可以扣除什么，包括法定供款和任何允许的扣除。我们关于薪资与法定供款的指南说明了您必须缴付的供款。
+
+### 出勤和迟到
+订明报告迟到或缺勤、病假单的明确规则，以及如何处理反复发生的问题。
+
+### 弹性工作和远程工作
+如果您允许弹性工时或在家工作，请说明谁有资格、如何记录工时，以及适用什么设备和数据安全规则。我们关于网络安全的指南涵盖了数据保护的基础。
+
+### 轮班和兼职员工
+如果您使用轮班或兼职员工，请说明排班如何制定和更改。我们关于与自由工作者和兼职人员合作的指南说明了兼职工作者的身份。
+
+## 4. 涵盖假期和福利
+
+### 法定假期
+列出年假、病假、住院假、产假和陪产假以及公共假期，且不得低于法定最低标准。我们关于员工假期和公共假期的指南说明了权益及其计算方式。
+
+### 其他假期和福利
+说明您提供的任何额外假期，例如恩恤假或进修假，以及医疗保障、花红或津贴等福利及各自的条件。不要承诺您可能无法兑现的事。
+
+### 如何申请假期
+说明需要提前多久申请、由谁批准、紧急假期如何处理，以及假期如何结转或兑现（如果有的话）。
+
+### 法定供款
+提醒员工，规定的供款会依法扣除并缴付，以及他们可以在哪里查核自己的记录。
+
+### 保持一致
+对处于类似职位的每个人以相同方式适用假期规则，避免被指不公平对待。
+
+## 5. 订立行为标准和公平的纪律程序
+
+### 界定期望的行为
+涵盖守时、诚实、尊重、相关场合的着装、安全、公司财产的使用、利益冲突、保密和社交媒体。给出什么可接受、什么不可接受的例子。
+
+### 区分轻微和严重的不当行为
+轻微的问题，例如偶尔迟到，可能导致谈话或口头警告。严重的问题，例如盗窃、暴力或欺诈，可能需要更严厉的行动。请说明各个层级，让人们知道会发生什么。
+
+### 遵循公平的程序
+在因不当行为而处分或解雇某人之前，应告知对方指控内容，让他们有机会回应，进行调查并公平地作出决定，并记录每一步。对于严重的不当行为，法律对适当的调查订有要求，所以在行动之前请先寻求意见。我们关于终止雇佣的指南说明了程序和风险。
+
+### 合理使用警告
+分级的口头和书面警告，以及在某些情况下的绩效改善计划，让员工有机会纠正问题。请保存警告的副本和员工的回应。
+
+### 一致地适用规则
+对类似的个案区别对待会招来不公平的指控。请保存决定及其理由的记录。
+
+> 手册的价值取决于您如何执行它。一条被一致执行的公平规则能建立信任，而一条被选择性执行的完美规则则会制造纠纷。
+
+## 6. 处理申诉、骚扰和安全
+
+### 清晰的申诉程序
+说明员工如何提出问题、可以找谁、您会多快回应，以及接下来会发生什么。确保他们可以不必担心地就自己的经理提出疑虑。
+
+### 性骚扰政策
+马来西亚法律对雇主有关于性骚扰的责任，包括设有调查投诉的程序并张贴相关通告。请说明什么构成骚扰、如何举报、如何保密地调查投诉，以及后果。请向劳工局或律师确认现行的法律要求。
+
+### 反歧视与尊重
+声明您不容忍歧视或欺凌，并说明如何处理举报。
+
+### 健康与安全
+包括安全规则、事故报告和紧急程序。我们关于职场安全的指南说明了您的责任。
+
+### 防止报复
+明确声明，出于善意提出疑虑的员工不会因此受到惩罚。
+
+## 7. 推行、记录和更新手册
+
+### 妥善介绍
+给每位员工一份副本，用简短的说明会讲解要点，并请他们书面确认已收到。把手册纳入新员工的入职培训。
+
+### 保持易于取阅
+提供印刷本或容易找到的电子版本，让员工在需要时可以查阅规则。
+
+### 至少每年检视一次
+在法律变化、增加新做法或问题显示出漏洞时更新。把变更告知员工，并记录日期和版本。
+
+### 谨慎处理个人资料
+员工记录属于个人资料，所以请说明您如何收集和使用它们并确保安全。我们关于个人资料保护的指南涵盖了您的责任。
+
+### 培训您的经理
+经理必须理解并公平地适用这些政策。一次关于行为、纪律和处理投诉的简短培训，可以防止许多错误。
+
+如果您需要人力资源顾问、律师或会计师审阅您的政策，可以[浏览名录](/zh)寻找本地专业人士，而[创建免费的企业列表](/zh/signup)可以帮助求职者和顾客看到您是一家可信、管理良好的企业。
+
+## 马来西亚中小企业在人力资源政策上常犯的错误
+
+- **不加检查就照搬通用模板。**不适合您的企业或低于法定最低要求的政策，可能比没有政策伤害更大。
+- **写下的规则从未被平等执行。**选择性执行会削弱政策，并招来不公平的指控。
+- **在处分之前跳过公平的程序。**不告知员工、不听取他们的说法、不保存记录就采取行动，是纠纷的常见原因。
+- **从不更新手册。**法律和职场做法会变，过时的手册可能与现行要求相抵触。
+
+## 从哪里开始
+
+- **本周：**列出您已经适用于工时、假期、行为和纪律的主要规则，以及它们与法律有何不同。
+- **接着：**用通俗语言起草一份涵盖主要主题的简短手册，并请律师或人力资源顾问检查。
+- **然后：**向团队说明，取得书面确认，并培训经理公平地执行。
+- **每年：**检视手册，根据法律变化更新，并记录版本和日期。
+
+好的手册不是为了控制。它是为了确保每个人都知道被期望什么、可以期望什么回报，以及问题将如何处理。`,
+        faqs: [
+          {
+            question: "小企业需要员工手册吗？",
+            answer:
+              "一般来说法律上并不要求，但强烈建议拥有。书面的手册设定清晰的期望，支持公平对待，并在发生纠纷时强化您的立场。有些事项，例如性骚扰程序，有具体的法律要求。",
+          },
+          {
+            question: "雇佣合约和手册有什么区别？",
+            answer:
+              "合约涵盖个人的条款，例如职位、薪酬和通知期。手册涵盖适用于每个人的职场规则，例如行为、请假程序和纪律。两者不得相互矛盾，也都不能减少法律赋予员工的权利。",
+          },
+          {
+            question: "雇佣法令下的最高工时是多少？",
+            answer:
+              "该法令对正常工作时数订有每周上限，近年已减至 45 小时。如何适用可能取决于工作类型和员工，所以请向劳工局或律师确认现行规定。",
+          },
+          {
+            question: "手册中应如何处理加班？",
+            answer:
+              "说明何时需要加班、如何事先批准，以及如何支付。法律为其所涵盖的雇员规定了加班、休息日和公共假期工作的加成费率，涵盖范围取决于工资水平和工作类型等因素，所以请确认现行规定。",
+          },
+          {
+            question: "在处分或解雇员工之前需要遵循程序吗？",
+            answer:
+              "需要。告知员工指控内容，让他们有机会回应，公平地调查，并保存记录。对于严重的不当行为，法律对适当的调查订有要求，所以在行动之前请先寻求意见。",
+          },
+          {
+            question: "雇主必须有性骚扰政策吗？",
+            answer:
+              "马来西亚法律对雇主有相关责任，包括设有调查投诉的程序并张贴相关通告。请向劳工局或律师确认现行要求。",
+          },
+          {
+            question: "手册应该多久更新一次？",
+            answer:
+              "至少每年检视一次，并在法律变化、增加新做法或问题显示出漏洞时检视。把变更告知员工，并记录版本和日期。",
+          },
+          {
+            question: "手册应该提供多种语言版本吗？",
+            answer:
+              "如果您的员工主要阅读马来文、中文或英文，以他们使用的语言提供手册有助于确保每个人都理解。没人能轻松阅读的手册很难执行。",
+          },
+        ],
+      },
+      ms: {
+        title: "Membina Buku Panduan Pekerja dan Dasar HR untuk PKS Malaysia: Waktu Kerja, Kerja Lebih Masa dan Tatatertib",
+        excerpt:
+          "Buku panduan bertulis menukar jangkaan yang tidak ditulis menjadi peraturan yang jelas, dan mencegah kebanyakan pertikaian di tempat kerja sebelum ia bermula. Panduan ini menunjukkan kepada PKS Malaysia apa yang perlu ada dalam buku panduan pekerja, bagaimana waktu kerja dan kerja lebih masa selaras dengan Akta Kerja, cara menetapkan prosedur kelakuan dan tatatertib yang adil, cara mengendalikan rungutan dan gangguan, dan cara mengekalkannya terkini.",
+        body: `Kebanyakan pertikaian di tempat kerja bermula dengan jangkaan yang tidak ditulis. Seorang menganggap mereka boleh pulang awal pada hari Jumaat, seorang lagi berpendapat kerja lebih masa adalah sukarela, dan yang ketiga tidak tahu bahawa kelewatan berulang boleh membawa kepada amaran. Buku panduan yang jelas menggantikan tekaan dengan peraturan bersama, melindungi perniagaan jika pertikaian timbul, dan menunjukkan kepada pekerja bahawa mereka akan dilayan dengan adil.
+
+Anda tidak memerlukan manual dasar yang tebal. Bagi perniagaan kecil, buku panduan sepuluh hingga dua puluh muka surat dalam bahasa mudah boleh merangkumi apa yang penting.
+
+Ini ialah maklumat am, bukan nasihat undang-undang. Undang-undang pekerjaan, termasuk Akta Kerja 1955 dan pindaannya, terpakai secara berbeza bergantung pada jenis kerja dan kadangkala tahap gaji, dan ia berubah dari semasa ke semasa. Sahkan peraturan semasa dengan Jabatan Tenaga Kerja atau peguam, dan minta buku panduan anda disemak sebelum anda menggunakannya untuk mendisiplinkan sesiapa.
+
+## 1. Fahami mengapa buku panduan membantu
+
+### Ia menetapkan jangkaan yang jelas
+Buku panduan menerangkan waktu kerja, tarikh gaji, cuti, kelakuan dan prosedur di satu tempat, supaya pekerja dan pengurus menggunakan peraturan yang sama.
+
+### Ia menyokong layanan yang adil
+Apabila peraturan ditulis dan diguna pakai secara konsisten, lebih mudah untuk melayan orang dengan adil dan menunjukkan bahawa anda berbuat demikian, jika aduan atau tuntutan timbul.
+
+### Ia melindungi perniagaan
+Jika anda perlu mengambil tindakan tatatertib, dasar bertulis yang boleh diakses oleh pekerja menguatkan kedudukan anda. Panduan kami tentang menamatkan pekerjaan menerangkan mengapa proses penting.
+
+### Ia menjimatkan masa pengurusan
+Daripada menjawab soalan yang sama berulang kali, pengurus boleh merujuk kepada buku panduan, dan pekerja baharu menyesuaikan diri dengan lebih cepat.
+
+### Ia berfungsi bersama kontrak
+Kontrak pekerjaan merangkumi terma individu, seperti peranan, gaji dan notis, manakala buku panduan merangkumi peraturan tempat kerja. Keduanya tidak boleh bercanggah, dan buku panduan tidak boleh mengurangkan hak minimum yang diberikan undang-undang kepada pekerja. Panduan kami tentang mengambil pekerja pertama merangkumi kontrak dan caruman.
+
+## 2. Rancang buku panduan sebelum menulisnya
+
+Tulis dasar anda dalam bahasa yang mudah supaya setiap pekerja dapat memahaminya pada bacaan pertama. Ayat pendek, contoh konkrit, dan nada mesra tetapi tegas lebih berkesan daripada bahasa undang-undang.
+
+### Mulakan daripada undang-undang
+Senaraikan keperluan minimum undang-undang yang terpakai kepada perniagaan anda, seperti waktu kerja, hari rehat, cuti, cuti umum, kerja lebih masa, prosedur gangguan seksual dan caruman berkanun. Dasar anda boleh lebih murah hati daripada undang-undang, tetapi jangan sekali-kali kurang.
+
+### Padankan dengan amalan sebenar anda
+Jangan salin templat yang tidak mencerminkan cara anda beroperasi. Buku panduan yang tiada siapa ikut lebih buruk daripada tiada, kerana ia menunjukkan penguatkuasaan yang tidak konsisten.
+
+### Tentukan struktur
+Susun mengikut topik, dengan pengenalan ringkas tentang nilai anda, kemudian bahagian tentang asas pekerjaan, waktu kerja, gaji, cuti, kelakuan, tatatertib, rungutan, kesihatan dan keselamatan, serta teknologi.
+
+### Dapatkan input dan semakan
+Tanya pengurus dan beberapa pekerja sama ada draf itu jelas dan realistik, dan minta peguam atau penasihat HR menyemak bahagian utama.
+
+### Fikirkan tentang bahasa
+Jika tenaga kerja anda membaca terutamanya Bahasa Melayu, Cina atau Inggeris, pertimbangkan untuk menyediakan buku panduan dalam bahasa yang mereka gunakan, supaya tiada sesiapa boleh mendakwa mereka tidak memahaminya.
+
+## 3. Rangkumi waktu kerja, gaji dan kerja lebih masa
+
+### Waktu kerja biasa dan hari rehat
+Tetapkan waktu harian dan mingguan, waktu rehat dan hari rehat. Akta Kerja menetapkan had mingguan untuk waktu kerja biasa, yang dikurangkan kepada 45 jam dalam beberapa tahun kebelakangan ini. Semak had semasa dan bagaimana ia terpakai kepada jenis kerja anda.
+
+### Kerja lebih masa
+Terangkan bila kerja lebih masa diperlukan, bagaimana ia diluluskan lebih awal, dan bagaimana ia dibayar. Undang-undang menetapkan kadar premium untuk kerja lebih masa, hari rehat dan cuti umum bagi pekerja yang dilindunginya, dan perlindungan serta kadar boleh bergantung pada tahap gaji dan jenis kerja. Semak peraturan semasa, dan jangan biarkan kerja lebih masa sebagai susunan tidak formal.
+
+### Gaji dan potongan
+Nyatakan tarikh gaji, cara gaji dibayar, dan potongan yang boleh dibuat, termasuk caruman berkanun dan sebarang potongan yang dibenarkan. Panduan kami tentang gaji dan caruman berkanun menerangkan caruman yang mesti anda bayar.
+
+### Kehadiran dan kelewatan
+Tetapkan peraturan yang jelas tentang melaporkan kelewatan atau ketidakhadiran, sijil cuti sakit, dan cara isu berulang dikendalikan.
+
+### Kerja fleksibel dan jauh
+Jika anda membenarkan waktu fleksibel atau bekerja dari rumah, nyatakan siapa yang layak, bagaimana waktu dijejaki, dan peraturan peralatan serta keselamatan data yang terpakai. Panduan kami tentang keselamatan siber merangkumi asas perlindungan data.
+
+### Kerja syif dan kakitangan sambilan
+Jika anda menggunakan syif atau pekerja sambilan, terangkan bagaimana jadual ditetapkan dan diubah. Panduan kami tentang bekerja dengan pekerja bebas dan sambilan menerangkan status pekerja sambilan.
+
+## 4. Rangkumi cuti dan faedah
+
+### Cuti berkanun
+Senaraikan cuti tahunan, cuti sakit, cuti hospitalisasi, cuti bersalin dan paterniti, serta cuti umum tidak kurang daripada minimum berkanun. Panduan kami tentang cuti pekerja dan cuti umum menerangkan hak dan cara ia dikira.
+
+### Cuti dan faedah lain
+Huraikan sebarang cuti tambahan yang anda tawarkan, seperti cuti belas kasihan atau cuti belajar, serta faedah seperti perlindungan perubatan, bonus atau elaun, dan syarat bagi setiap satu. Jangan janjikan apa yang anda mungkin tidak dapat tunaikan.
+
+### Cara memohon cuti
+Terangkan berapa awal untuk memohon, siapa yang meluluskan, bagaimana cuti kecemasan dikendalikan, dan bagaimana cuti dibawa ke hadapan atau ditunaikan, jika ada.
+
+### Caruman berkanun
+Ingatkan pekerja bahawa caruman yang diperlukan dipotong dan dibayar mengikut undang-undang, dan di mana mereka boleh menyemak rekod mereka.
+
+### Kekalkan konsistensi
+Terapkan peraturan cuti dengan cara yang sama kepada semua orang dalam peranan serupa, untuk mengelak dakwaan layanan tidak adil.
+
+## 5. Tetapkan piawaian kelakuan dan prosedur tatatertib yang adil
+
+### Takrifkan kelakuan yang dijangka
+Rangkumi menepati masa, kejujuran, hormat, pemakaian jika berkaitan, keselamatan, penggunaan harta syarikat, konflik kepentingan, kerahsiaan dan media sosial. Berikan contoh apa yang boleh dan tidak boleh diterima.
+
+### Bezakan salah laku kecil dan serius
+Isu kecil, seperti kelewatan sekali-sekala, mungkin membawa kepada perbualan atau amaran lisan. Isu serius, seperti kecurian, keganasan atau penipuan, mungkin mewajarkan tindakan lebih tegas. Nyatakan peringkatnya supaya orang tahu apa yang diharapkan.
+
+### Ikuti proses yang adil
+Sebelum mendisiplinkan atau memberhentikan seseorang kerana salah laku, maklumkan mereka tentang dakwaan, beri mereka peluang menjawab, siasat dan putuskan dengan adil, dengan rekod bagi setiap langkah. Untuk salah laku serius, undang-undang menetapkan keperluan untuk siasatan yang betul, jadi dapatkan nasihat sebelum anda bertindak. Panduan kami tentang menamatkan pekerjaan menerangkan proses dan risikonya.
+
+### Gunakan amaran dengan munasabah
+Sistem amaran lisan dan bertulis berperingkat, dan dalam sesetengah kes pelan penambahbaikan prestasi, memberi pekerja peluang membetulkan masalah. Simpan salinan amaran dan jawapan pekerja.
+
+### Terapkan peraturan secara konsisten
+Melayan kes yang serupa secara berbeza mengundang dakwaan ketidakadilan. Simpan rekod keputusan dan sebabnya.
+
+> Buku panduan hanya sebaik cara anda melaksanakannya. Peraturan adil yang dikuatkuasakan secara konsisten membina kepercayaan, manakala peraturan sempurna yang dikuatkuasakan secara terpilih mewujudkan pertikaian.
+
+## 6. Kendalikan rungutan, gangguan dan keselamatan
+
+### Prosedur rungutan yang jelas
+Terangkan bagaimana pekerja boleh membangkitkan masalah, siapa yang boleh mereka dekati, betapa cepat anda akan membalas, dan apa yang berlaku seterusnya. Pastikan mereka boleh membangkitkan kebimbangan tentang pengurus mereka sendiri tanpa rasa takut.
+
+### Dasar gangguan seksual
+Undang-undang Malaysia meletakkan tanggungjawab ke atas majikan berkenaan gangguan seksual, termasuk mempunyai prosedur untuk menyiasat aduan dan memaparkan notis mengenainya. Nyatakan apa yang dikira sebagai gangguan, cara melaporkannya, cara aduan disiasat secara sulit, dan akibatnya. Sahkan keperluan undang-undang semasa dengan Jabatan Tenaga Kerja atau peguam.
+
+### Anti-diskriminasi dan hormat
+Nyatakan bahawa anda tidak akan bertolak ansur dengan diskriminasi atau buli, dan terangkan bagaimana laporan dikendalikan.
+
+### Kesihatan dan keselamatan
+Sertakan peraturan keselamatan, pelaporan insiden dan prosedur kecemasan. Panduan kami tentang keselamatan tempat kerja menerangkan tanggungjawab anda.
+
+### Lindungi daripada tindakan balas
+Nyatakan dengan jelas bahawa pekerja yang membangkitkan kebimbangan dengan niat baik tidak akan dihukum kerananya.
+
+## 7. Lancarkan, rekod dan kemas kini buku panduan
+
+### Perkenalkannya dengan betul
+Berikan setiap pekerja satu salinan, terangkan perkara utama dalam taklimat ringkas, dan minta mereka mengakui penerimaan secara bertulis. Sertakan buku panduan dalam orientasi pekerja baharu.
+
+### Pastikan ia mudah diakses
+Sediakan salinan bercetak atau versi digital yang mudah dijumpai, supaya pekerja boleh menyemak peraturan bila-bila masa mereka perlu.
+
+### Semak sekurang-kurangnya setahun sekali
+Kemas kini apabila undang-undang berubah, apabila anda menambah amalan baharu, atau apabila masalah menunjukkan jurang. Beritahu pekerja tentang perubahan, dan rekodkan tarikh dan versi.
+
+### Kendalikan data peribadi dengan berhati-hati
+Rekod pekerja ialah data peribadi, jadi terangkan bagaimana anda mengumpul dan menggunakannya serta memastikannya selamat. Panduan kami tentang perlindungan data peribadi merangkumi tanggungjawab anda.
+
+### Latih pengurus anda
+Pengurus mesti memahami dan menggunakan dasar dengan adil. Sesi latihan ringkas tentang kelakuan, tatatertib dan mengendalikan aduan mencegah banyak kesilapan.
+
+Jika anda memerlukan perunding HR, peguam atau akauntan untuk menyemak dasar anda, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pencari kerja dan pelanggan melihat bahawa anda perniagaan yang boleh dipercayai dan diuruskan dengan baik.
+
+## Kesilapan lazim PKS Malaysia dengan dasar HR
+
+- **Menyalin templat generik tanpa menyemaknya.** Dasar yang tidak sesuai dengan perniagaan anda, atau kurang daripada minimum undang-undang, boleh merugikan anda lebih daripada tiada dasar.
+- **Menulis peraturan yang tidak pernah dikuatkuasakan secara sama rata.** Penguatkuasaan terpilih melemahkan dasar dan mengundang dakwaan ketidakadilan.
+- **Melangkau proses yang adil sebelum tatatertib.** Bertindak tanpa memaklumkan pekerja, mendengar pihak mereka, dan menyimpan rekod ialah punca pertikaian yang lazim.
+- **Tidak pernah mengemas kini buku panduan.** Undang-undang dan amalan tempat kerja berubah, dan buku panduan yang lapuk boleh bercanggah dengan keperluan semasa.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Senaraikan peraturan utama yang sudah anda gunakan tentang waktu kerja, cuti, kelakuan dan tatatertib, dan di mana ia berbeza daripada undang-undang.
+- **Seterusnya:** Draf buku panduan ringkas dalam bahasa mudah yang merangkumi topik utama, dan minta peguam atau penasihat HR menyemaknya.
+- **Kemudian:** Beri taklimat kepada pasukan anda, dapatkan pengakuan bertulis, dan latih pengurus menggunakannya dengan adil.
+- **Setiap tahun:** Semak buku panduan, kemas kini untuk perubahan undang-undang, dan rekodkan versi serta tarikh.
+
+Buku panduan yang baik bukan tentang kawalan. Ia tentang memastikan semua orang tahu apa yang dijangka, apa yang boleh mereka harapkan sebagai balasan, dan bagaimana masalah akan dikendalikan.`,
+        faqs: [
+          {
+            question: "Adakah perniagaan kecil memerlukan buku panduan pekerja?",
+            answer:
+              "Ia secara amnya bukan keperluan undang-undang, tetapi amat dinasihatkan. Buku panduan bertulis menetapkan jangkaan yang jelas, menyokong layanan yang adil, dan menguatkan kedudukan anda jika pertikaian timbul. Sesetengah perkara, seperti prosedur gangguan seksual, mempunyai keperluan undang-undang tertentu.",
+          },
+          {
+            question: "Apakah perbezaan antara kontrak pekerjaan dan buku panduan?",
+            answer:
+              "Kontrak merangkumi terma individu, seperti peranan, gaji dan notis. Buku panduan merangkumi peraturan tempat kerja yang terpakai kepada semua orang, seperti kelakuan, prosedur cuti dan tatatertib. Keduanya tidak boleh bercanggah, dan tiada satu pun boleh mengurangkan hak yang diberikan undang-undang kepada pekerja.",
+          },
+          {
+            question: "Apakah waktu kerja maksimum di bawah Akta Kerja?",
+            answer:
+              "Akta ini menetapkan had mingguan untuk waktu kerja biasa, yang dikurangkan kepada 45 jam dalam beberapa tahun kebelakangan ini. Bagaimana ia terpakai boleh bergantung pada jenis kerja dan pekerja, jadi semak peraturan semasa dengan Jabatan Tenaga Kerja atau peguam.",
+          },
+          {
+            question: "Bagaimanakah kerja lebih masa patut dikendalikan dalam buku panduan?",
+            answer:
+              "Terangkan bila kerja lebih masa diperlukan, bagaimana ia diluluskan lebih awal, dan bagaimana ia dibayar. Undang-undang menetapkan kadar premium untuk kerja lebih masa, hari rehat dan cuti umum bagi pekerja yang dilindunginya, dengan perlindungan bergantung pada faktor seperti tahap gaji dan jenis kerja, jadi sahkan peraturan semasa.",
+          },
+          {
+            question: "Adakah saya perlu mengikuti proses sebelum mendisiplinkan atau memberhentikan pekerja?",
+            answer:
+              "Ya. Maklumkan pekerja tentang dakwaan, beri mereka peluang menjawab, siasat dengan adil, dan simpan rekod. Untuk salah laku serius, undang-undang menetapkan keperluan untuk siasatan yang betul, jadi dapatkan nasihat sebelum anda bertindak.",
+          },
+          {
+            question: "Adakah majikan perlu mempunyai dasar gangguan seksual?",
+            answer:
+              "Undang-undang Malaysia meletakkan tanggungjawab ke atas majikan, termasuk mempunyai prosedur untuk menyiasat aduan dan memaparkan notis mengenainya. Sahkan keperluan semasa dengan Jabatan Tenaga Kerja atau peguam.",
+          },
+          {
+            question: "Berapa kerap buku panduan patut dikemas kini?",
+            answer:
+              "Semak sekurang-kurangnya setahun sekali, dan apabila undang-undang berubah, anda menambah amalan baharu, atau masalah menunjukkan jurang. Beritahu pekerja tentang perubahan dan rekodkan versi serta tarikh.",
+          },
+          {
+            question: "Patutkah buku panduan dalam lebih daripada satu bahasa?",
+            answer:
+              "Jika pekerja anda membaca terutamanya Bahasa Melayu, Cina atau Inggeris, menyediakan buku panduan dalam bahasa yang mereka gunakan membantu memastikan semua orang memahaminya. Buku panduan yang tiada siapa dapat baca dengan mudah sukar dikuatkuasakan.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "selling-a-business-or-succession-planning-in-malaysia",
+    title: "Selling Your Business or Planning Succession in Malaysia: Valuation, Due Diligence, and Handover",
+    seoTitle: "Selling a Business or Succession Planning in Malaysia",
+    seoDescription:
+      "How Malaysian owners can sell or hand over a small business: tidy books, valuation, buyers, due diligence, transfers, staff, tax checks and succession.",
+    coverImage: {
+      file: "selling-a-business-or-succession-planning-in-malaysia-cover.webp",
+      mimeType: "image/webp",
+      alt: "A smiling older woman with glasses behind the counter of a crowded market stall full of colourful goods",
+      altTranslations: {
+        zh: "一位戴眼镜的微笑年长女士站在摆满各色商品的拥挤市场摊位柜台后",
+        ms: "Seorang wanita tua berkaca mata tersenyum di belakang kaunter gerai pasar yang sesak penuh dengan barangan berwarna-warni",
+      },
+    },
+    contentImages: {
+      adviser: {
+        file: "selling-a-business-or-succession-planning-in-malaysia-adviser.webp",
+        mimeType: "image/webp",
+        alt: "A woman in a grey suit resting her chin on her hand, seated with a laptop on her knees",
+        altTranslations: {
+          zh: "一位身穿灰色西装的女士单手托腮，坐着，膝上放着一台笔记本电脑",
+          ms: "Seorang wanita berpakaian sut kelabu menyokong dagu dengan tangan, duduk dengan komputer riba di atas ribanya",
+        },
+        after: "Get your books in order before you tell anyone the business is for sale.",
+        afterTranslations: {
+          zh: "在告诉任何人企业要出售之前，先把您的账目整理好。",
+          ms: "Kemaskan buku akaun anda sebelum anda memberitahu sesiapa bahawa perniagaan itu dijual.",
+        },
+      },
+    },
+    excerpt:
+      "Whether you are retiring, moving on, or handing the business to the next generation, the way you prepare decides how smooth and how valuable the exit will be. This guide shows Malaysian owners how to prepare the business, understand valuation, find buyers, manage due diligence, transfer contracts, licences and staff, check the tax and legal points, and plan succession.",
+    body: `Most owners put more effort into starting a business than into leaving it. Yet an exit, whether a sale to a stranger, a handover to a family member, or a transfer to a partner or staff, is one of the biggest financial events in an owner's life. A business that is prepared well sells faster, for a better price, and with fewer disputes.
+
+You may not plan to leave soon. Even so, running the business as if it could be sold, with tidy records, documented processes, and a team that does not depend on you for everything, makes it stronger today.
+
+This is general information, not legal, tax, or financial advice. How a business can be sold or transferred depends on its structure, assets, licences, and contracts, and the tax and stamp duty treatment changes over time. Speak to a lawyer, an accountant, and where relevant a company secretary before you agree to anything.
+
+## 1. Decide what kind of exit you want
+
+### Sale to an outside buyer
+You sell the business, or its shares, to someone who is not part of the business. This can give the best price, but it needs the most preparation and the most disclosure.
+
+### Sale or transfer to staff, a partner, or a competitor
+A management buy-out or a sale to a partner may be smoother because they already know the business, but the price and funding may be harder to agree.
+
+### Handover to family
+Succession within the family brings emotional factors, and fairness between family members and the future role of the owner need to be agreed, preferably in writing.
+
+### Closing the business
+If there is no buyer, closing may be the right choice. See our guide on closing a business.
+
+### Be clear about your goals
+Decide what matters most, whether it is price, speed, protecting staff, protecting your legacy, or staying involved for a time. Your goals shape the structure of the deal.
+
+## 2. Prepare the business before you sell
+
+Get your books in order before you tell anyone the business is for sale. Buyers and their advisers will look closely at your numbers, and messy records lower both trust and price.
+
+### Clean up your financial records
+Prepare accurate financial statements for the last few years, separate business and personal spending, and reconcile bank accounts. Our guide on bookkeeping basics explains how to keep records that stand up to scrutiny.
+
+### Check your tax and compliance position
+Make sure tax returns, SST, e-invoicing, statutory contributions, and company filings are up to date. Our guide on the small business tax calendar and our guide on staying compliant with SSM records list the usual obligations. Unpaid liabilities will surface in due diligence.
+
+### Review your contracts and licences
+List your leases, supplier and customer contracts, licences, permits, insurance policies, and loans, and check which can be transferred and on what terms. Our guide on business licenses and permits and our guide on contracts and terms are useful here.
+
+### Protect your intellectual property
+Confirm who owns your brand, domain names, designs, and software, and register what you can. Our guide on trademark registration explains how.
+
+### Reduce dependence on you
+Document processes, introduce the team to key customers and suppliers, and train others to run the business, so that the value does not leave with you.
+
+### Tidy the little things
+Settle outstanding disputes, clear old stock, fix obvious problems with the premises, and make sure the business looks cared for.
+
+## 3. Understand how your business may be valued
+
+### Price is a negotiation, valuation is a starting point
+A valuation is an estimate that supports negotiation. The final price depends on what a buyer is willing to pay and what you are willing to accept.
+
+### Common approaches
+Buyers often look at earnings, such as a multiple of profit after adjusting for one-off or owner-related costs, the value of assets net of liabilities, and sometimes comparable sales. Different approaches suit different types of business, and a professional can advise on which are suitable.
+
+### Adjust the numbers fairly
+Owners often adjust profit to remove personal expenses or unusual items, so that the figures show what a new owner could expect. Be ready to prove each adjustment with records.
+
+### What increases value
+Steady profits, recurring customers, a strong team, documented processes, good contracts, a clear growth path, and clean records all increase value. Heavy dependence on one person, customer concentration, and compliance problems reduce it.
+
+### Do not forget the debt
+The price may be reduced by liabilities that pass to the buyer, and any loans secured against the business must be dealt with. Confirm the position with your lender.
+
+### Get a professional opinion
+An accountant or business valuer can give an independent view. Our guide on SME grants and funding is also useful if the buyer needs financing.
+
+## 4. Find and screen buyers
+
+### Where buyers come from
+Possible buyers include competitors, suppliers, customers, staff, family members, investors, and individuals who want to own a business. Business brokers and advisers can help, but compare their fees and check their reputation.
+
+### Keep it confidential
+News that a business is for sale can unsettle staff, customers, and suppliers. Share only a short summary at first, and ask serious buyers to sign a confidentiality agreement before you share details.
+
+### Check the buyer too
+Confirm that the buyer can afford the deal, understands the business, and has a credible plan, especially if part of the price will be paid later. Be careful of anyone who asks for money up front or pressures you to move fast.
+
+### Prepare an information pack
+A short, honest summary of the business, its financials, assets, staff, and opportunities helps buyers make decisions and avoids wasting time.
+
+### Be honest in your claims
+Misleading a buyer about the business can lead to disputes, price reductions, or legal claims after the sale. Disclose known problems and let the price reflect them.
+
+## 5. Manage due diligence and the deal
+
+### What due diligence involves
+The buyer checks the business before closing, including finances, tax, contracts, licences, employees, property, litigation, and ownership. Legal due diligence often reveals issues such as missing licences, unregistered changes, and gaps in company records.
+
+### Prepare a data room
+Gather your documents in an organised place, such as a secure folder, so that you can respond quickly. Speed and transparency build confidence.
+
+### Asset sale or share sale
+In a share sale, the buyer takes over the company with all its history and liabilities, so due diligence is thorough, while in an asset sale, the buyer picks the assets and liabilities it wants. Some licences, leases, and contracts do not transfer automatically and need consent. For a sole proprietorship or partnership, which has no shares, the sale is usually of assets and goodwill and the buyer registers their own business. Confirm the correct structure with your lawyer.
+
+### Agree the terms in writing
+Use a written sale agreement that covers the price, payment terms, what is included, warranties, conditions, handover period, non-compete and confidentiality clauses, and how disputes will be resolved. Our guide on contracts and terms explains the basics, but for a sale you should use a lawyer.
+
+### Be careful with staged payments
+If part of the price is paid later or depends on future performance, spell out how it is calculated and secured.
+
+> A good exit is planned years before it happens. The owners who sell well are rarely those who decide suddenly, but those who spent time making the business easy to understand, easy to run, and easy to trust.
+
+## 6. Handle transfers, staff, tax, and handover
+
+### Transfer of shares and company records
+For a company, the transfer of shares involves board approval, the signed transfer documents, stamp duty, and updating the company's records with the Companies Commission of Malaysia. Stamp duty rules and deadlines apply, so confirm the current requirements with your lawyer or company secretary.
+
+### Transfer of contracts, licences, and premises
+Check each lease, supplier agreement, and licence for transfer or consent requirements, and get written consents before closing. Some licences are tied to the person or location and must be applied for again.
+
+### Employees
+Employees do not automatically transfer to a new employer in an asset sale, and employment terms need to be dealt with properly. Staff may need new contracts, or the old ones ended with the correct payments. See our guide on terminating an employee and our guide on hiring your first employee for the basics, and get advice.
+
+### Tax and costs
+Selling can have tax and stamp duty consequences for both sides, and the treatment depends on the structure and the assets sold. Ask your accountant to model the tax before you agree the price, and confirm current rules with the Inland Revenue Board and the relevant authorities.
+
+### Plan the handover
+Agree how long you will stay to train the new owner, introduce customers and suppliers, and answer questions. A good handover protects the value that the buyer is paying for, and often any part of the price that is paid later.
+
+### Close the loose ends
+Update bank signatories, registrations, insurance, domain names, accounts, and subscriptions, and inform customers and suppliers in a planned way. Keep copies of the deal documents and records for the period required by law.
+
+## 7. Plan for succession and your own future
+
+### Start early
+Succession takes years. Identify who might take over, and develop their skills and credibility with customers and staff, long before you plan to step back.
+
+### Be fair, and write it down
+For family businesses, agree how ownership, management, and income are shared, and record decisions in writing. Disputes between family members can damage the business more than any outside threat. Our guide on franchising and our guide on how to register a business explain ownership structures you might use.
+
+### Plan for the unexpected
+A sudden illness or death can leave the business and your family exposed. Consider a will, a plan for who runs the business in an emergency, key person insurance, and written instructions for finding critical information. Our guide on business insurance explains the options.
+
+### Plan your personal finances
+Think about how much you need from the sale, how you will invest or use it, and how you will spend your time afterwards. Many owners underestimate the emotional change.
+
+### Take advice from the right people
+Involve a lawyer, an accountant, and possibly a financial planner early, and agree on who will do what.
+
+If you need a lawyer, an accountant, a business broker, or a valuer, you can [browse the directory](/en) for local professionals, and [creating a free business listing](/en/signup) helps customers and potential buyers see a credible, well-run business long before you decide to sell.
+
+## Common mistakes Malaysian owners make when selling or handing over
+
+- **Selling with messy books and unpaid obligations.** Buyers lose trust and lower the price, or walk away, when records and compliance are unclear.
+- **Relying on one person.** If the owner holds all the relationships and knowledge, the business is hard to sell or hand over.
+- **Skipping professional advice.** Mistakes in structure, tax, and transfer paperwork can be expensive and hard to fix after closing.
+- **Leaving succession too late.** Waiting for illness or a crisis forces rushed decisions and weakens your position.
+
+## Where to start
+
+- **This year:** Tidy your books, check your compliance, and record the key processes, whether or not you plan to sell.
+- **Next:** List your contracts, licences, and assets, and find out what can be transferred and what needs consent.
+- **Then:** Get a professional view of value, decide your goals, and talk to an adviser about structure and tax.
+- **When ready:** Prepare an information pack, screen buyers, use a written agreement, and plan the handover.
+
+Selling or handing over a business is a long-term project. The earlier you start, the more choices you have, and the more of the value you built stays with you.`,
+    faqs: [
+      {
+        question: "How do I start preparing my business for sale?",
+        answer:
+          "Tidy your financial records, make sure tax and compliance filings are up to date, review contracts and licences, protect your intellectual property, and reduce the business's dependence on you. Buyers look closely at your numbers, so clean records raise both trust and price.",
+      },
+      {
+        question: "How is a small business valued?",
+        answer:
+          "Common approaches look at earnings, such as a multiple of adjusted profit, the value of assets net of liabilities, and sometimes comparable sales. A valuation is a starting point for negotiation. A professional can advise on which approach suits your business.",
+      },
+      {
+        question: "What is due diligence?",
+        answer:
+          "The buyer's check of the business before closing, covering finances, tax, contracts, licences, employees, property, litigation, and ownership. Preparing your documents in advance speeds things up and builds confidence.",
+      },
+      {
+        question: "What is the difference between a share sale and an asset sale?",
+        answer:
+          "In a share sale, the buyer takes over the company with all its history and liabilities. In an asset sale, the buyer chooses the assets and liabilities it wants. Some licences, leases, and contracts do not transfer automatically in an asset sale and need consent. Confirm the right structure with your lawyer.",
+      },
+      {
+        question: "Do my employees automatically move to the new owner?",
+        answer:
+          "Not automatically in an asset sale, and employment terms must be dealt with properly, with new contracts or correct termination payments. Get legal advice and see our guides on terminating employees and hiring staff.",
+      },
+      {
+        question: "Are there tax and stamp duty costs when selling a business?",
+        answer:
+          "Often yes, for one or both sides, depending on the structure and the assets sold. For example, share transfers are subject to stamp duty with deadlines. Rules change, so ask your accountant to model the tax and confirm the current position with the authorities.",
+      },
+      {
+        question: "How do I keep a sale confidential?",
+        answer:
+          "Share only a short summary at first, ask serious buyers to sign a confidentiality agreement before you share details, and tell staff, customers, and suppliers in a planned way once a deal is firm.",
+      },
+      {
+        question: "How should I plan succession in a family business?",
+        answer:
+          "Start early, identify and develop a successor, agree how ownership, management, and income are shared, and record decisions in writing. Plan for emergencies with a will, a backup plan, and possibly key person insurance, and take professional advice.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "在马来西亚出售企业或规划传承：估值、尽职调查与交接",
+        excerpt:
+          "无论您是要退休、转向新事业，还是把企业交给下一代，您准备的方式决定了退出过程有多顺利、价值有多高。本指南向马来西亚业主说明如何为企业做好准备、了解估值、寻找买家、应对尽职调查、转让合约、执照和员工、核对税务和法律事项，以及规划传承。",
+        body: `大多数业主在创业上投入的精力，多过在离场上。然而，退出，无论是出售给陌生人、交给家人，还是转让给合伙人或员工，都是业主一生中最重大的财务事件之一。准备得当的企业，卖得更快、价格更好，纠纷也更少。
+
+您也许并不打算很快离开。即便如此，把企业当作随时可以出售的来经营，拥有整齐的记录、有文件记载的流程，以及不事事依赖您的团队，会让企业在今天就变得更强。
+
+以下仅为一般资讯，并非法律、税务或财务意见。企业如何出售或转让取决于其结构、资产、执照和合约，税务和印花税的处理也会随时间变化。在同意任何事情之前，请咨询律师、会计师，以及在相关时咨询公司秘书。
+
+## 1. 决定您想要哪种退出方式
+
+### 出售给外部买家
+您把企业或其股份卖给不属于企业的人。这可能获得最好的价格，但需要最多的准备和最多的披露。
+
+### 出售或转让给员工、合伙人或竞争对手
+管理层收购或卖给合伙人可能更顺利，因为他们已经了解企业，但价格和资金安排可能更难达成一致。
+
+### 交给家人
+家族内部的传承带有情感因素，家庭成员之间的公平以及业主未来的角色需要达成一致，最好以书面形式记录。
+
+### 结束企业
+如果没有买家，结束营业可能是正确的选择。请参阅我们关于结束企业的指南。
+
+### 明确您的目标
+决定什么最重要，是价格、速度、保护员工、保护您的声誉，还是继续参与一段时间。您的目标决定交易的结构。
+
+## 2. 在出售之前为企业做好准备
+
+在告诉任何人企业要出售之前，先把您的账目整理好。买家和他们的顾问会仔细审视您的数字，而混乱的记录会降低信任和价格。
+
+### 整理您的财务记录
+准备过去几年准确的财务报表，把企业和个人开支分开，并核对银行账户。我们关于簿记基础的指南说明了如何保存经得起审视的记录。
+
+### 核查您的税务和合规状况
+确保税务申报、SST、电子发票、法定供款和公司备案都是最新的。我们关于小企业税务日历的指南和关于遵守公司委员会记录规定的指南列出了常见的义务。未缴的负债会在尽职调查中浮现。
+
+### 检视您的合约和执照
+列出您的租约、供应商和客户合约、执照、许可证、保险单和贷款，并核查哪些可以转让以及条件如何。我们关于商业执照与许可证的指南和关于合约与条款的指南在这里很有用。
+
+### 保护您的知识产权
+确认谁拥有您的品牌、域名、设计和软件，并注册您能注册的部分。我们关于商标注册的指南说明了如何做。
+
+### 减少对您的依赖
+记录流程，把团队介绍给主要客户和供应商，并培训他人经营企业，让价值不会随着您离开而消失。
+
+### 整理小事
+解决悬而未决的纠纷，清理旧存货，修复营业场所明显的问题，并确保企业看起来被悉心照料。
+
+## 3. 了解您的企业可能如何估值
+
+### 价格是谈判出来的，估值只是起点
+估值是支持谈判的估计。最终价格取决于买家愿意付多少，以及您愿意接受多少。
+
+### 常见方法
+买家常看盈利，例如在调整一次性或与业主相关的成本后的利润倍数、扣除负债后的资产价值，有时还看可比交易。不同的方法适合不同类型的企业，专业人士可以就哪些合适提供意见。
+
+### 公平地调整数字
+业主常调整利润以剔除个人开支或异常项目，让数字显示新业主可以预期什么。请准备好用记录证明每一项调整。
+
+### 什么会提高价值
+稳定的利润、回头客、强大的团队、有文件记载的流程、良好的合约、清晰的增长路径和干净的记录都会提高价值。严重依赖某一个人、客户过于集中和合规问题则会降低价值。
+
+### 别忘了债务
+价格可能因转给买家的负债而降低，并且任何以企业作抵押的贷款都必须处理。请与您的贷款机构确认情况。
+
+### 取得专业意见
+会计师或企业估值师可以给出独立的看法。如果买家需要融资，我们关于中小企业补助与融资的指南也很有用。
+
+## 4. 寻找并筛选买家
+
+### 买家从哪里来
+可能的买家包括竞争对手、供应商、客户、员工、家庭成员、投资者，以及想拥有一家企业的个人。企业经纪和顾问可以协助，但请比较他们的费用并查核其声誉。
+
+### 保持保密
+企业要出售的消息可能让员工、客户和供应商不安。起初只分享简短的摘要，并在分享细节之前要求认真的买家签署保密协议。
+
+### 也要审查买家
+确认买家负担得起这笔交易、了解企业并有可信的计划，尤其是在部分价款将延后支付的情况下。对任何要求预付款或催促您快速行动的人要保持警惕。
+
+### 准备资料包
+一份简短而诚实的企业摘要，包括其财务、资产、员工和机会，有助于买家做决定，并避免浪费时间。
+
+### 诚实地陈述
+就企业情况误导买家，可能在出售之后导致纠纷、减价或法律索赔。请披露已知的问题，并让价格反映它们。
+
+## 5. 应对尽职调查和交易
+
+### 尽职调查涉及什么
+买家在成交之前检查企业，包括财务、税务、合约、执照、员工、产业、诉讼和所有权。法律尽职调查常发现一些问题，例如缺失的执照、未登记的变更和公司记录中的缺口。
+
+### 准备资料室
+把您的文件集中在一个有条理的地方，例如安全的文件夹，让您能够快速回应。速度和透明度能建立信心。
+
+### 资产出售还是股份出售
+在股份出售中，买家接手连同所有历史和负债的公司，所以尽职调查很彻底，而在资产出售中，买家挑选它想要的资产和负债。有些执照、租约和合约不会自动转让，需要取得同意。对于没有股份的独资企业或合伙企业，出售通常是资产和商誉的出售，由买家注册自己的企业。请与您的律师确认正确的结构。
+
+### 以书面约定条款
+使用书面的买卖协议，涵盖价格、付款条款、包含的内容、保证、条件、交接期、禁止竞争和保密条款，以及如何解决纠纷。我们关于合约与条款的指南说明了基础知识，但对于买卖，您应该聘请律师。
+
+### 对分期付款要谨慎
+如果部分价款延后支付或取决于未来的业绩，请明确说明如何计算并提供保障。
+
+> 好的退出是在发生前几年就规划好的。卖得好的业主很少是突然决定的人，而是花时间让企业易于理解、易于经营、易于信任的人。
+
+## 6. 处理转让、员工、税务和交接
+
+### 股份和公司记录的转让
+对于公司，股份转让涉及董事会批准、签署的转让文件、印花税，以及向马来西亚公司委员会更新公司记录。印花税的规定和期限适用，所以请向您的律师或公司秘书确认现行要求。
+
+### 合约、执照和营业场所的转让
+检查每一份租约、供应商协议和执照是否有转让或同意的要求，并在成交前取得书面同意。有些执照与个人或地点挂钩，必须重新申请。
+
+### 员工
+在资产出售中，员工不会自动转到新雇主，雇佣条款需要妥善处理。员工可能需要新合约，或终止旧合约并支付正确的款项。请参阅我们关于终止雇佣的指南和关于雇用第一位员工的指南了解基础知识，并寻求意见。
+
+### 税务和成本
+出售可能对双方产生税务和印花税的后果，具体处理取决于结构和所售资产。请在同意价格之前，请您的会计师对税务做出测算，并向税收局和相关机构确认现行规定。
+
+### 规划交接
+约定您将留任多久来培训新业主、介绍客户和供应商，以及回答问题。良好的交接保护买家所付的价值，也常保护延后支付的那部分价款。
+
+### 处理好收尾事项
+更新银行授权签署人、注册资料、保险、域名、账户和订阅，并有计划地通知客户和供应商。按法律规定的期限保存交易文件和记录。
+
+## 7. 规划传承和您自己的未来
+
+### 尽早开始
+传承需要数年。早在您计划退后之前，就要找出谁可能接班，并培养他们的技能以及在客户和员工中的信誉。
+
+### 公平，并写下来
+对于家族企业，约定所有权、管理和收入如何分享，并以书面记录决定。家庭成员之间的纠纷，对企业的损害可能超过任何外部威胁。我们关于特许经营的指南和关于如何注册企业的指南说明了您可以使用的所有权结构。
+
+### 为意外做好计划
+突然的疾病或死亡可能让企业和您的家人陷入困境。请考虑遗嘱、谁在紧急情况下经营企业的计划、关键人物保险，以及关于如何找到重要资料的书面指示。我们关于商业保险的指南说明了各种选择。
+
+### 规划您个人的财务
+想想您需要从出售中获得多少、如何投资或使用，以及之后如何度过时间。许多业主低估了情感上的变化。
+
+### 向合适的人寻求意见
+及早让律师、会计师，以及可能的理财规划师参与，并约定谁负责什么。
+
+如果您需要律师、会计师、企业经纪或估值师，可以[浏览名录](/zh)寻找本地专业人士，而[创建免费的企业列表](/zh/signup)可以帮助顾客和潜在买家在您决定出售很久之前，就看到一家可信、管理良好的企业。
+
+## 马来西亚业主在出售或交接时常犯的错误
+
+- **带着混乱的账目和未缴的义务出售。**当记录和合规不清晰时，买家会失去信任、压低价格，或者干脆离开。
+- **依赖某一个人。**如果业主掌握所有的关系和知识，企业就很难出售或交接。
+- **跳过专业意见。**结构、税务和转让文件上的错误，成交后可能代价高昂且难以补救。
+- **太晚才规划传承。**等到生病或危机才处理，会迫使您仓促决定，并削弱您的立场。
+
+## 从哪里开始
+
+- **今年：**整理您的账目，核查您的合规状况，并记录关键流程，无论您是否打算出售。
+- **接着：**列出您的合约、执照和资产，查明哪些可以转让、哪些需要同意。
+- **然后：**取得专业的估值意见，确定您的目标，并就结构和税务与顾问交谈。
+- **准备好时：**准备资料包，筛选买家，使用书面协议，并规划交接。
+
+出售或交接企业是一项长期的项目。您开始得越早，选择就越多，您所建立的价值留在您手中的也越多。`,
+        faqs: [
+          {
+            question: "如何开始为出售企业做准备？",
+            answer:
+              "整理您的财务记录，确保税务和合规备案是最新的，检视合约和执照，保护您的知识产权，并减少企业对您的依赖。买家会仔细审视您的数字，所以干净的记录既能提高信任，也能提高价格。",
+          },
+          {
+            question: "小企业是如何估值的？",
+            answer:
+              "常见的方法看盈利，例如调整后利润的倍数、扣除负债后的资产价值，有时还看可比交易。估值是谈判的起点。专业人士可以就哪种方法适合您的企业提供意见。",
+          },
+          {
+            question: "什么是尽职调查？",
+            answer:
+              "买家在成交之前对企业进行的检查，涵盖财务、税务、合约、执照、员工、产业、诉讼和所有权。提前准备好文件可以加快进度并建立信心。",
+          },
+          {
+            question: "股份出售和资产出售有什么区别？",
+            answer:
+              "在股份出售中，买家接手连同所有历史和负债的公司。在资产出售中，买家挑选它想要的资产和负债。在资产出售中，有些执照、租约和合约不会自动转让，需要取得同意。请与您的律师确认正确的结构。",
+          },
+          {
+            question: "我的员工会自动转到新业主那里吗？",
+            answer:
+              "在资产出售中不会自动转移，雇佣条款必须妥善处理，包括新合约或正确的终止款项。请寻求法律意见，并参阅我们关于终止雇佣和雇用员工的指南。",
+          },
+          {
+            question: "出售企业有税务和印花税的成本吗？",
+            answer:
+              "通常有，涉及一方或双方，视结构和所售资产而定。例如，股份转让须缴付印花税并有期限。规定会变，所以请您的会计师测算税务，并向有关当局确认现行情况。",
+          },
+          {
+            question: "如何为出售保密？",
+            answer:
+              "起初只分享简短的摘要，在分享细节之前要求认真的买家签署保密协议，并在交易确定后，有计划地通知员工、客户和供应商。",
+          },
+          {
+            question: "如何规划家族企业的传承？",
+            answer:
+              "尽早开始，找出并培养接班人，约定所有权、管理和收入如何分享，并以书面记录决定。用遗嘱、后备计划，以及可能的关键人物保险为紧急情况做好计划，并寻求专业意见。",
+          },
+        ],
+      },
+      ms: {
+        title: "Menjual Perniagaan Anda atau Merancang Penggantian di Malaysia: Penilaian, Usaha Wajar dan Serah Tugas",
+        excerpt:
+          "Sama ada anda bersara, beralih arah, atau menyerahkan perniagaan kepada generasi akan datang, cara anda bersedia menentukan betapa lancar dan bernilai penyingkiran itu. Panduan ini menunjukkan kepada pemilik Malaysia cara menyediakan perniagaan, memahami penilaian, mencari pembeli, menguruskan usaha wajar, memindahkan kontrak, lesen dan kakitangan, menyemak perkara cukai dan undang-undang, serta merancang penggantian.",
+        body: `Kebanyakan pemilik meletakkan lebih banyak usaha untuk memulakan perniagaan daripada meninggalkannya. Namun penyingkiran, sama ada jualan kepada orang asing, penyerahan kepada ahli keluarga, atau pemindahan kepada rakan kongsi atau kakitangan, ialah salah satu peristiwa kewangan terbesar dalam hidup seorang pemilik. Perniagaan yang disediakan dengan baik dijual lebih cepat, pada harga lebih baik, dan dengan lebih sedikit pertikaian.
+
+Anda mungkin tidak merancang untuk pergi dalam masa terdekat. Walaupun begitu, menjalankan perniagaan seolah-olah ia boleh dijual, dengan rekod kemas, proses yang didokumenkan, dan pasukan yang tidak bergantung pada anda untuk segala-galanya, menjadikannya lebih kukuh hari ini.
+
+Ini ialah maklumat am, bukan nasihat undang-undang, cukai atau kewangan. Bagaimana perniagaan boleh dijual atau dipindahkan bergantung pada strukturnya, aset, lesen dan kontrak, dan layanan cukai serta duti setem berubah dari semasa ke semasa. Bercakap dengan peguam, akauntan, dan jika berkaitan setiausaha syarikat sebelum anda bersetuju dengan apa-apa.
+
+## 1. Tentukan jenis penyingkiran yang anda mahu
+
+### Jualan kepada pembeli luar
+Anda menjual perniagaan, atau sahamnya, kepada seseorang yang bukan sebahagian daripada perniagaan. Ini boleh memberi harga terbaik, tetapi ia memerlukan persediaan paling banyak dan pendedahan paling banyak.
+
+### Jualan atau pemindahan kepada kakitangan, rakan kongsi atau pesaing
+Pembelian oleh pengurusan atau jualan kepada rakan kongsi mungkin lebih lancar kerana mereka sudah mengenali perniagaan, tetapi harga dan pembiayaan mungkin lebih sukar dipersetujui.
+
+### Penyerahan kepada keluarga
+Penggantian dalam keluarga membawa faktor emosi, dan keadilan antara ahli keluarga serta peranan pemilik pada masa hadapan perlu dipersetujui, sebaik-baiknya secara bertulis.
+
+### Menutup perniagaan
+Jika tiada pembeli, menutup mungkin pilihan yang betul. Lihat panduan kami tentang menutup perniagaan.
+
+### Jelaskan matlamat anda
+Tentukan apa yang paling penting, sama ada harga, kelajuan, melindungi kakitangan, melindungi warisan anda, atau kekal terlibat untuk seketika. Matlamat anda membentuk struktur perjanjian.
+
+## 2. Sediakan perniagaan sebelum anda menjual
+
+Kemaskan buku akaun anda sebelum anda memberitahu sesiapa bahawa perniagaan itu dijual. Pembeli dan penasihat mereka akan meneliti angka anda dengan teliti, dan rekod yang berselerak menurunkan kepercayaan dan harga.
+
+### Bersihkan rekod kewangan anda
+Sediakan penyata kewangan yang tepat untuk beberapa tahun lepas, asingkan perbelanjaan perniagaan dan peribadi, dan padankan akaun bank. Panduan kami tentang asas simpan kira menerangkan cara menyimpan rekod yang tahan diteliti.
+
+### Semak kedudukan cukai dan pematuhan anda
+Pastikan pulangan cukai, SST, e-Invois, caruman berkanun dan pemfailan syarikat terkini. Panduan kami tentang kalendar cukai perniagaan kecil dan panduan kami tentang kekal patuh dengan rekod SSM menyenaraikan kewajipan lazim. Liabiliti yang tidak dibayar akan timbul dalam usaha wajar.
+
+### Semak kontrak dan lesen anda
+Senaraikan pajakan, kontrak pembekal dan pelanggan, lesen, permit, polisi insurans dan pinjaman anda, dan semak yang mana boleh dipindahkan dan atas terma apa. Panduan kami tentang lesen dan permit perniagaan dan panduan kami tentang kontrak dan terma berguna di sini.
+
+### Lindungi harta intelek anda
+Sahkan siapa yang memiliki jenama, nama domain, reka bentuk dan perisian anda, dan daftarkan apa yang boleh. Panduan kami tentang pendaftaran tanda dagangan menerangkan caranya.
+
+### Kurangkan pergantungan kepada anda
+Dokumenkan proses, perkenalkan pasukan kepada pelanggan dan pembekal utama, dan latih orang lain menjalankan perniagaan, supaya nilai tidak pergi bersama anda.
+
+### Kemaskan perkara kecil
+Selesaikan pertikaian yang belum selesai, habiskan stok lama, baiki masalah jelas pada premis, dan pastikan perniagaan kelihatan dijaga.
+
+## 3. Fahami bagaimana perniagaan anda mungkin dinilai
+
+### Harga ialah rundingan, penilaian ialah titik permulaan
+Penilaian ialah anggaran yang menyokong rundingan. Harga akhir bergantung pada apa yang pembeli sanggup bayar dan apa yang anda sanggup terima.
+
+### Pendekatan lazim
+Pembeli sering melihat pendapatan, seperti gandaan keuntungan selepas melaraskan kos sekali sahaja atau berkaitan pemilik, nilai aset bersih daripada liabiliti, dan kadangkala jualan setanding. Pendekatan berbeza sesuai untuk jenis perniagaan berbeza, dan profesional boleh menasihati yang mana sesuai.
+
+### Laraskan angka dengan adil
+Pemilik sering melaraskan keuntungan untuk membuang perbelanjaan peribadi atau item luar biasa, supaya angka menunjukkan apa yang boleh dijangka oleh pemilik baharu. Bersedia untuk membuktikan setiap pelarasan dengan rekod.
+
+### Apa yang meningkatkan nilai
+Keuntungan stabil, pelanggan berulang, pasukan yang kukuh, proses yang didokumenkan, kontrak yang baik, laluan pertumbuhan yang jelas dan rekod yang bersih semuanya meningkatkan nilai. Pergantungan berat pada satu orang, tumpuan pelanggan dan masalah pematuhan menguranginya.
+
+### Jangan lupa hutang
+Harga mungkin dikurangkan oleh liabiliti yang beralih kepada pembeli, dan sebarang pinjaman bercagar ke atas perniagaan mesti diuruskan. Sahkan kedudukan dengan pemberi pinjaman anda.
+
+### Dapatkan pendapat profesional
+Akauntan atau penilai perniagaan boleh memberi pandangan bebas. Panduan kami tentang geran dan pembiayaan PKS juga berguna jika pembeli memerlukan pembiayaan.
+
+## 4. Cari dan tapis pembeli
+
+### Dari mana pembeli datang
+Pembeli yang mungkin termasuk pesaing, pembekal, pelanggan, kakitangan, ahli keluarga, pelabur dan individu yang mahu memiliki perniagaan. Broker dan penasihat perniagaan boleh membantu, tetapi bandingkan yuran mereka dan semak reputasi mereka.
+
+### Pastikan ia sulit
+Berita bahawa perniagaan dijual boleh menggusarkan kakitangan, pelanggan dan pembekal. Kongsi hanya ringkasan pendek pada mulanya, dan minta pembeli yang serius menandatangani perjanjian kerahsiaan sebelum anda berkongsi butiran.
+
+### Semak pembeli juga
+Sahkan bahawa pembeli mampu membayar, memahami perniagaan, dan mempunyai pelan yang boleh dipercayai, terutamanya jika sebahagian harga akan dibayar kemudian. Berhati-hati dengan sesiapa yang meminta wang di muka atau mendesak anda bergerak cepat.
+
+### Sediakan pek maklumat
+Ringkasan perniagaan yang pendek dan jujur, termasuk kewangan, aset, kakitangan dan peluang, membantu pembeli membuat keputusan dan mengelak pembaziran masa.
+
+### Jujur dalam dakwaan anda
+Mengelirukan pembeli tentang perniagaan boleh membawa kepada pertikaian, pengurangan harga atau tuntutan undang-undang selepas jualan. Dedahkan masalah yang diketahui dan biarkan harga mencerminkannya.
+
+## 5. Uruskan usaha wajar dan perjanjian
+
+### Apa yang melibatkan usaha wajar
+Pembeli menyemak perniagaan sebelum penutupan, termasuk kewangan, cukai, kontrak, lesen, pekerja, harta, litigasi dan pemilikan. Usaha wajar undang-undang sering mendedahkan isu seperti lesen yang hilang, perubahan yang tidak didaftarkan dan jurang dalam rekod syarikat.
+
+### Sediakan bilik data
+Kumpulkan dokumen anda di tempat yang teratur, seperti folder selamat, supaya anda boleh membalas dengan cepat. Kelajuan dan ketelusan membina keyakinan.
+
+### Jualan aset atau jualan saham
+Dalam jualan saham, pembeli mengambil alih syarikat dengan semua sejarah dan liabilitinya, jadi usaha wajar adalah menyeluruh, manakala dalam jualan aset, pembeli memilih aset dan liabiliti yang diingini. Sesetengah lesen, pajakan dan kontrak tidak berpindah secara automatik dan memerlukan persetujuan. Bagi pemilikan tunggal atau perkongsian, yang tiada saham, jualan biasanya aset dan muhibah dan pembeli mendaftarkan perniagaan mereka sendiri. Sahkan struktur yang betul dengan peguam anda.
+
+### Persetujui terma secara bertulis
+Gunakan perjanjian jual beli bertulis yang merangkumi harga, terma bayaran, apa yang termasuk, waranti, syarat, tempoh serah tugas, klausa larangan bersaing dan kerahsiaan, serta cara pertikaian akan diselesaikan. Panduan kami tentang kontrak dan terma menerangkan asasnya, tetapi untuk jualan anda patut menggunakan peguam.
+
+### Berhati-hati dengan bayaran berperingkat
+Jika sebahagian harga dibayar kemudian atau bergantung pada prestasi masa depan, nyatakan dengan jelas bagaimana ia dikira dan dijamin.
+
+> Penyingkiran yang baik dirancang bertahun-tahun sebelum ia berlaku. Pemilik yang menjual dengan baik jarang yang membuat keputusan secara tiba-tiba, tetapi yang meluangkan masa menjadikan perniagaan mudah difahami, mudah dijalankan dan mudah dipercayai.
+
+## 6. Kendalikan pemindahan, kakitangan, cukai dan serah tugas
+
+### Pemindahan saham dan rekod syarikat
+Bagi syarikat, pemindahan saham melibatkan kelulusan lembaga pengarah, dokumen pemindahan yang ditandatangani, duti setem, dan mengemas kini rekod syarikat dengan Suruhanjaya Syarikat Malaysia. Peraturan dan tarikh akhir duti setem terpakai, jadi sahkan keperluan semasa dengan peguam atau setiausaha syarikat anda.
+
+### Pemindahan kontrak, lesen dan premis
+Semak setiap pajakan, perjanjian pembekal dan lesen untuk keperluan pemindahan atau persetujuan, dan dapatkan persetujuan bertulis sebelum penutupan. Sesetengah lesen terikat kepada orang atau lokasi dan mesti dipohon semula.
+
+### Pekerja
+Pekerja tidak berpindah secara automatik kepada majikan baharu dalam jualan aset, dan terma pekerjaan perlu diuruskan dengan betul. Kakitangan mungkin memerlukan kontrak baharu, atau kontrak lama ditamatkan dengan bayaran yang betul. Lihat panduan kami tentang menamatkan pekerjaan dan panduan kami tentang mengambil pekerja pertama untuk asasnya, dan dapatkan nasihat.
+
+### Cukai dan kos
+Menjual boleh mempunyai akibat cukai dan duti setem untuk kedua-dua pihak, dan layanan bergantung pada struktur dan aset yang dijual. Minta akauntan anda memodelkan cukai sebelum anda bersetuju dengan harga, dan sahkan peraturan semasa dengan Lembaga Hasil Dalam Negeri dan pihak berkuasa berkaitan.
+
+### Rancang serah tugas
+Persetujui berapa lama anda akan kekal untuk melatih pemilik baharu, memperkenalkan pelanggan dan pembekal, serta menjawab soalan. Serah tugas yang baik melindungi nilai yang dibayar oleh pembeli, dan sering sebahagian harga yang dibayar kemudian.
+
+### Selesaikan urusan yang tertinggal
+Kemas kini penandatangan bank, pendaftaran, insurans, nama domain, akaun dan langganan, dan maklumkan pelanggan serta pembekal dengan cara yang dirancang. Simpan salinan dokumen perjanjian dan rekod untuk tempoh yang dikehendaki undang-undang.
+
+## 7. Rancang penggantian dan masa depan anda sendiri
+
+### Mulakan awal
+Penggantian mengambil masa bertahun-tahun. Kenal pasti siapa yang mungkin mengambil alih, dan bangunkan kemahiran serta kredibiliti mereka dengan pelanggan dan kakitangan, lama sebelum anda merancang untuk berundur.
+
+### Bersikap adil, dan tuliskannya
+Bagi perniagaan keluarga, persetujui bagaimana pemilikan, pengurusan dan pendapatan dikongsi, dan rekodkan keputusan secara bertulis. Pertikaian antara ahli keluarga boleh merosakkan perniagaan lebih daripada sebarang ancaman luar. Panduan kami tentang francais dan panduan kami tentang cara mendaftar perniagaan menerangkan struktur pemilikan yang boleh anda gunakan.
+
+### Rancang untuk perkara tidak dijangka
+Penyakit atau kematian secara tiba-tiba boleh mendedahkan perniagaan dan keluarga anda. Pertimbangkan wasiat, pelan tentang siapa yang menjalankan perniagaan dalam kecemasan, insurans orang penting, dan arahan bertulis untuk mencari maklumat kritikal. Panduan kami tentang insurans perniagaan menerangkan pilihan.
+
+### Rancang kewangan peribadi anda
+Fikirkan berapa banyak yang anda perlukan daripada jualan, bagaimana anda akan melaburkan atau menggunakannya, dan bagaimana anda akan menghabiskan masa selepas itu. Ramai pemilik memandang rendah perubahan emosi.
+
+### Dapatkan nasihat daripada orang yang betul
+Libatkan peguam, akauntan, dan mungkin perancang kewangan lebih awal, dan persetujui siapa yang akan melakukan apa.
+
+Jika anda memerlukan peguam, akauntan, broker perniagaan atau penilai, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pelanggan dan bakal pembeli melihat perniagaan yang boleh dipercayai dan diuruskan dengan baik lama sebelum anda memutuskan untuk menjual.
+
+## Kesilapan lazim pemilik Malaysia semasa menjual atau menyerahkan perniagaan
+
+- **Menjual dengan buku akaun berselerak dan kewajipan tidak dibayar.** Pembeli hilang kepercayaan dan merendahkan harga, atau pergi, apabila rekod dan pematuhan tidak jelas.
+- **Bergantung pada satu orang.** Jika pemilik memegang semua hubungan dan pengetahuan, perniagaan sukar dijual atau diserahkan.
+- **Melangkau nasihat profesional.** Kesilapan dalam struktur, cukai dan dokumen pemindahan boleh mahal dan sukar dibetulkan selepas penutupan.
+- **Merancang penggantian terlalu lewat.** Menunggu penyakit atau krisis memaksa keputusan tergesa-gesa dan melemahkan kedudukan anda.
+
+## Di mana hendak bermula
+
+- **Tahun ini:** Kemaskan buku akaun anda, semak pematuhan anda, dan rekodkan proses utama, sama ada anda merancang untuk menjual atau tidak.
+- **Seterusnya:** Senaraikan kontrak, lesen dan aset anda, dan ketahui apa yang boleh dipindahkan dan apa yang memerlukan persetujuan.
+- **Kemudian:** Dapatkan pandangan profesional tentang nilai, tentukan matlamat anda, dan bercakap dengan penasihat tentang struktur dan cukai.
+- **Apabila bersedia:** Sediakan pek maklumat, tapis pembeli, gunakan perjanjian bertulis, dan rancang serah tugas.
+
+Menjual atau menyerahkan perniagaan ialah projek jangka panjang. Semakin awal anda bermula, semakin banyak pilihan yang anda ada, dan semakin banyak nilai yang anda bina kekal bersama anda.`,
+        faqs: [
+          {
+            question: "Bagaimanakah saya mula menyediakan perniagaan saya untuk dijual?",
+            answer:
+              "Kemaskan rekod kewangan anda, pastikan pemfailan cukai dan pematuhan terkini, semak kontrak dan lesen, lindungi harta intelek anda, dan kurangkan pergantungan perniagaan kepada anda. Pembeli meneliti angka anda dengan teliti, jadi rekod yang bersih meningkatkan kepercayaan dan harga.",
+          },
+          {
+            question: "Bagaimanakah perniagaan kecil dinilai?",
+            answer:
+              "Pendekatan lazim melihat pendapatan, seperti gandaan keuntungan yang dilaraskan, nilai aset bersih daripada liabiliti, dan kadangkala jualan setanding. Penilaian ialah titik permulaan rundingan. Profesional boleh menasihati pendekatan mana yang sesuai dengan perniagaan anda.",
+          },
+          {
+            question: "Apakah usaha wajar?",
+            answer:
+              "Semakan pembeli ke atas perniagaan sebelum penutupan, merangkumi kewangan, cukai, kontrak, lesen, pekerja, harta, litigasi dan pemilikan. Menyediakan dokumen anda lebih awal mempercepat urusan dan membina keyakinan.",
+          },
+          {
+            question: "Apakah perbezaan antara jualan saham dan jualan aset?",
+            answer:
+              "Dalam jualan saham, pembeli mengambil alih syarikat dengan semua sejarah dan liabilitinya. Dalam jualan aset, pembeli memilih aset dan liabiliti yang diingini. Sesetengah lesen, pajakan dan kontrak tidak berpindah secara automatik dalam jualan aset dan memerlukan persetujuan. Sahkan struktur yang betul dengan peguam anda.",
+          },
+          {
+            question: "Adakah pekerja saya berpindah secara automatik kepada pemilik baharu?",
+            answer:
+              "Tidak secara automatik dalam jualan aset, dan terma pekerjaan mesti diuruskan dengan betul, dengan kontrak baharu atau bayaran penamatan yang betul. Dapatkan nasihat undang-undang dan lihat panduan kami tentang menamatkan pekerjaan dan mengambil kakitangan.",
+          },
+          {
+            question: "Adakah terdapat kos cukai dan duti setem apabila menjual perniagaan?",
+            answer:
+              "Selalunya ya, untuk satu atau kedua-dua pihak, bergantung pada struktur dan aset yang dijual. Contohnya, pemindahan saham tertakluk kepada duti setem dengan tarikh akhir. Peraturan berubah, jadi minta akauntan anda memodelkan cukai dan sahkan kedudukan semasa dengan pihak berkuasa.",
+          },
+          {
+            question: "Bagaimanakah saya memastikan jualan kekal sulit?",
+            answer:
+              "Kongsi hanya ringkasan pendek pada mulanya, minta pembeli yang serius menandatangani perjanjian kerahsiaan sebelum anda berkongsi butiran, dan maklumkan kakitangan, pelanggan dan pembekal dengan cara yang dirancang apabila perjanjian sudah pasti.",
+          },
+          {
+            question: "Bagaimanakah saya patut merancang penggantian dalam perniagaan keluarga?",
+            answer:
+              "Mulakan awal, kenal pasti dan bangunkan pengganti, persetujui bagaimana pemilikan, pengurusan dan pendapatan dikongsi, dan rekodkan keputusan secara bertulis. Rancang untuk kecemasan dengan wasiat, pelan sandaran, dan mungkin insurans orang penting, dan dapatkan nasihat profesional.",
+          },
+        ],
+      },
+    },
+  },
 ];

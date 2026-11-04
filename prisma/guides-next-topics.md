@@ -15,14 +15,14 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Building an Employee Handbook and HR Policies for Malaysian SMEs: Hours, Overtime, and Discipline**
-   — Why a written handbook prevents disputes: working hours, overtime and
-   rest days under the Employment Act (thresholds to be hedged), leave and
-   attendance rules, conduct and disciplinary procedure, grievance handling,
-   workplace harassment policy, performance reviews, and keeping it updated.
+1. **Accepting Digital Payments in Malaysia: DuitNow QR, E-Wallets, Cards, and Fees**
+   — Choosing payment methods for a small shop or online store: DuitNow
+   QR, e-wallets, card terminals and payment gateways, typical fee
+   structures (to hedge and confirm with providers), settlement times,
+   reconciling sales, fraud and chargeback basics, and links to e-invoicing.
 
-2. **Selling Your Business or Planning Succession in Malaysia: Valuation, Due Diligence, and Handover**
-   — How owners prepare to sell or pass on a small business: tidying the
-   books, valuation approaches, finding buyers, due diligence, transferring
-   contracts, licences and staff, tax considerations to confirm with an
-   adviser, and succession planning for family businesses.
+2. **Handling a Tax Audit or Review by LHDN: Records, Responses, and What to Expect**
+   — How a tax review or audit typically unfolds for a small business:
+   why returns are selected, what records to keep and for how long, how to
+   respond to letters and deadlines, working with a tax agent, penalties and
+   voluntary disclosure (to hedge), and how to reduce audit risk.
