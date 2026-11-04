@@ -389,7 +389,7 @@
         "standing"
       ],
       "description": "Three coworkers going through business papers in an office",
-      "usedBy": null
+      "usedBy": "employee-handbook-and-hr-policies-for-malaysian-smes-team.webp"
     },
     {
       "id": 7644016,
@@ -636,6 +636,39 @@
       ],
       "description": "Asian businesswoman standing with a laptop and documents in an office",
       "usedBy": "writing-a-business-plan-for-a-malaysian-sme-planning.webp"
+    },
+    {
+      "id": 7653459,
+      "tags": [
+        "hr",
+        "team",
+        "laptop",
+        "office"
+      ],
+      "description": "Two professionals working on laptops in a modern office with natural light",
+      "usedBy": "employee-handbook-and-hr-policies-for-malaysian-smes-cover.webp"
+    },
+    {
+      "id": 7710089,
+      "tags": [
+        "advisor",
+        "laptop",
+        "office",
+        "planning"
+      ],
+      "description": "Professional Asian woman in a business suit using a laptop in a modern office",
+      "usedBy": "selling-a-business-or-succession-planning-in-malaysia-adviser.webp"
+    },
+    {
+      "id": 34594418,
+      "tags": [
+        "retail",
+        "owner",
+        "market",
+        "succession"
+      ],
+      "description": "Smiling older woman running a market stall",
+      "usedBy": "selling-a-business-or-succession-planning-in-malaysia-cover.webp"
     }
   ]
 }
