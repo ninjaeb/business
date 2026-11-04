@@ -17725,4 +17725,1260 @@ Pelanggan tidak mengharapkan perniagaan sempurna. Mereka mengharapkannya jujur d
       },
     },
   },
+  {
+    slug: "managing-inventory-and-stock-for-malaysian-smes",
+    title: "Managing Inventory and Stock for Malaysian SMEs: Ordering, Tracking, and Cutting Waste",
+    seoTitle: "Managing Inventory and Stock for Malaysian SMEs",
+    seoDescription:
+      "How Malaysian SMEs can manage stock: counting, reorder points, supplier lead times, slow-moving and expired goods, theft losses and festive season peaks.",
+    coverImage: {
+      file: "managing-inventory-and-stock-for-malaysian-smes-cover.webp",
+      mimeType: "image/webp",
+      alt: "Tall warehouse racking holding pallets of shrink-wrapped and cardboard-boxed stock, each shelf slot numbered",
+      altTranslations: {
+        zh: "高大的仓库货架上摆放着缠绕膜包裹和纸箱装的栈板货物，每个货位都有编号",
+        ms: "Rak gudang tinggi yang menempatkan palet stok berbalut plastik dan berkotak kadbod, setiap petak bernombor",
+      },
+    },
+    contentImages: {
+      sorting: {
+        file: "managing-inventory-and-stock-for-malaysian-smes-sorting.webp",
+        mimeType: "image/webp",
+        alt: "A woman at a market stall sorting produce beside bags of green beans, a basket of chillies and a weighing scale",
+        altTranslations: {
+          zh: "一位女士在市场摊位上分拣农产品，旁边有成袋的青豆、一篮辣椒和一台秤",
+          ms: "Seorang wanita di gerai pasar sedang mengasingkan hasil tani di sebelah beg kacang panjang, sebakul cili dan penimbang",
+        },
+        after: "Count your stock on a regular schedule so your records match what is on the shelf.",
+        afterTranslations: {
+          zh: "按固定的时间表清点存货，让您的记录与货架上的实物一致。",
+          ms: "Kira stok anda mengikut jadual tetap supaya rekod anda sepadan dengan apa yang ada di rak.",
+        },
+      },
+    },
+    excerpt:
+      "Stock is cash sitting on a shelf, and too much or too little of it hurts a small business. This guide shows Malaysian SMEs how to count and track inventory, decide what and when to reorder, deal with supplier lead times and festive peaks, handle slow-moving and expiring goods, and reduce losses from damage and theft.",
+    body: `Every item in your storeroom is money you have already spent and cannot yet spend again. Too much stock ties up cash, takes up space, and risks going out of date. Too little means lost sales and disappointed customers. Many small businesses manage stock by memory and instinct, which works until the business grows, a key person is away, or a festive rush arrives.
+
+You do not need an expensive system to manage inventory well. You need a simple routine, reliable numbers, and a habit of acting on them.
+
+This is general information, not professional advice. Rules on labelling, storage, and handling of particular goods, such as food and health products, differ by product and change over time, so confirm the current requirements with the relevant authority or your adviser.
+
+## 1. Understand why stock management matters
+
+### Stock is tied-up cash
+The money you spend on stock cannot pay rent or wages until the stock sells. Our guide on cash flow explains why a profitable business can still run short of cash when too much of it sits in inventory.
+
+### Stock-outs cost sales and trust
+When a popular item is unavailable, customers go to a competitor, and some do not return. For online shops, running out of listed stock also leads to cancellations and complaints.
+
+### Excess and old stock costs money
+Overstock needs space, handling, and sometimes insurance. Goods can expire, spoil, go out of fashion, or be damaged, and the longer they sit, the more of their value you lose.
+
+### Accurate numbers drive better decisions
+Reliable stock figures help you set prices, plan purchases, forecast cash, and prepare accounts. Our guide on bookkeeping basics explains how inventory fits into your records.
+
+### What to aim for
+The goal is not zero stock or maximum stock. It is the right amount of the right items, in the right place, at the right time.
+
+## 2. Set up a simple way to track stock
+
+### Start with a clear item list
+Give each product a unique code or name, with its size or variant, unit of measure, cost price, selling price, and supplier. Consistent naming avoids confusion and duplicates.
+
+### Choose a method that fits your size
+A spreadsheet can be enough for a small range. As the number of items, locations, and sales channels grows, a simple inventory or point-of-sale app can update stock automatically with each sale. Choose a tool you will actually use, and check whether it links to your accounting records.
+
+### Record every movement
+Log stock received, sold, returned, damaged, and transferred. If movements are not recorded, the numbers drift away from reality within weeks.
+
+### Organise your storage
+Give every item a place, label shelves and bins, and keep similar items together. Keep older stock at the front so it gets sold first, a practice often called first-in, first-out. This matters most for anything with an expiry date.
+
+### Separate what is sellable from what is not
+Keep damaged, returned, and expired goods in a clearly marked area so they are not sold or counted by mistake.
+
+## 3. Count your stock and reconcile it
+
+Count your stock on a regular schedule so your records match what is on the shelf. A figure on a screen is only useful if it is true.
+
+### Full counts
+Do a full physical count at least once or twice a year, and before closing your accounts. Choose a quiet time, pause sales if needed, and count with two people where possible.
+
+### Cycle counts
+Count a small group of items every week or month, and rotate through your range. Count your fastest-moving and highest-value items more often, since errors there cost the most.
+
+### Investigate differences
+When the count does not match the records, find out why before you simply adjust the numbers. Causes may be unrecorded sales, wrong deliveries, damage, miscounts, or theft.
+
+### Value your stock correctly
+Stock is usually valued at cost, and the method you use affects your reported profit. Ask your accountant about the method that suits your business and how to treat damaged or obsolete stock for tax. Our guide on tax deductions explains related issues.
+
+### Keep the records
+Keep count sheets, adjustments, and supplier documents with your accounts, since you may need them for audits or insurance claims.
+
+## 4. Decide what and when to reorder
+
+### Know your sales rate
+Work out how many units you typically sell per week for each key item, using your own records. Items that sell steadily are easy to plan, while seasonal or irregular items need more care.
+
+### Know your lead time
+Lead time is how long it takes from placing an order to having the goods ready to sell. Slow or unreliable suppliers need earlier orders and larger safety margins. Imported goods can take longer and face customs delays, so see our guide on importing and exporting.
+
+### Set a reorder point
+A simple rule is to reorder when stock falls to the level you expect to sell during the lead time, plus a safety margin for surprises. When an item reaches that point, you place an order.
+
+### Hold safety stock where it matters
+Keep extra buffer for best-sellers and items that are hard to replace, and less for items that are slow-moving or easy to restock quickly.
+
+### Order sensible quantities
+Balance the discount for buying more against the cost of holding it. A bulk discount is no saving if half the stock sits for months. Our guide on pricing explains how your costs feed into profit.
+
+### Use more than one supplier
+Relying on a single supplier is risky. Keep at least one backup for key items, and keep good relationships with all of them. Our guide on contracts and terms explains how to agree clear supply terms.
+
+## 5. Plan for festive seasons and demand peaks
+
+### Learn from last year
+Review your sales for previous festive periods, such as Chinese New Year, Hari Raya, Deepavali, and year-end sales, and note which items sold out and which were left over. Your own history is your best forecast.
+
+### Order early, and expect delays
+Suppliers and couriers get busy and factories may close around major holidays, so lead times often stretch. Place orders earlier than usual, because stock that arrives after the rush is worth far less.
+
+### Plan the cash
+Building stock before a peak uses cash before the sales come in. Plan how you will fund it, and see our guide on cash flow and our guide on SME grants and funding for options.
+
+### Use pre-orders and bundles
+Taking pre-orders shows real demand before you commit to stock, and bundles can move slower items alongside popular ones.
+
+### Prepare storage and people
+Make sure you have space, shelving, packaging, and enough staff to receive, pick, and pack at the busy time.
+
+### Plan the after-season
+Decide in advance how you will clear leftover seasonal stock, for example through discounts, bundles, or storing it for next year if it does not expire.
+
+> The best inventory system is the one you actually keep up to date. A simple count that is accurate every week beats a sophisticated system that nobody trusts.
+
+## 6. Handle slow-moving, expiring, and damaged stock
+
+### Spot slow movers early
+Review which items have not sold in a long time, such as several months for most goods. The earlier you act, the more value you can recover.
+
+### Clear them thoughtfully
+Options include discounts, bundles, giving a free item with a purchase, selling through another channel, returning to the supplier where allowed, or donating. Calculate whether the discount still covers your cost, and avoid training customers to wait for sales.
+
+### Manage expiry dates
+For food, health, and cosmetic products, track expiry or best-before dates and sell the oldest first. Never sell expired goods, and follow the labelling, storage, and handling rules for your product. Our guide on starting a food business and our guide on halal certification cover the food side.
+
+### Handle damage and returns
+Inspect goods on arrival, report problems to the supplier promptly, and decide quickly whether returned items can be resold, repaired, or written off. Our guide on customer complaints and consumer rights explains your duties on faulty goods.
+
+### Write off honestly
+Remove dead stock from your records when it has no realistic value, and record the loss. Keeping it on the books inflates your profits and hides a problem.
+
+## 7. Reduce losses from damage, error, and theft
+
+### Know where losses come from
+Shrinkage, the gap between recorded and actual stock, can come from theft by customers or staff, supplier errors, damage, spoilage, and admin mistakes. Measure it so you know the size of the problem.
+
+### Control access
+Limit who can enter the storeroom, keep high-value items locked or visible, and keep keys and alarm codes under control. Good lighting and sightlines also help in a shop.
+
+### Check deliveries
+Count and inspect goods against the delivery order and purchase order at the door, before signing. Many losses start with unchecked deliveries.
+
+### Separate duties
+Where possible, the person who orders, the person who receives, and the person who pays should not all be the same. Even in a small team, a second person checking counts reduces risk.
+
+### Use cameras and records sensibly
+If you use CCTV, consider where it is placed and how recordings are kept, since it can involve personal data. See our guide on personal data protection for your duties.
+
+### Insure what matters
+Insurance can cover stock lost to fire, theft, or flood, subject to terms. Our guide on business insurance explains what to ask your insurer.
+
+If you need a supplier, a logistics provider, or an accountant to help with stock records, you can [browse the directory](/en) for local professionals, and [creating a free business listing](/en/signup) helps customers find your business and know what you carry.
+
+## Common mistakes Malaysian SMEs make with inventory
+
+- **Never counting the stock.** Records drift from reality, and you only discover missing or unsellable items when a customer asks for them.
+- **Buying more just to get a discount.** Bulk prices can hide months of tied-up cash, storage costs, and expiry risk.
+- **Ignoring supplier lead times and festive delays.** Late arrivals during a peak turn a good season into lost sales.
+- **Holding dead stock on the books.** Items that will never sell inflate your assets and mask the real performance of the business.
+
+## Where to start
+
+- **This week:** List your products with costs and selling prices, and do a quick count of your top ten items.
+- **Next:** Choose a simple tracking method, record every stock movement, and tidy your storage so oldest stock is sold first.
+- **Then:** Set reorder points and safety stock for your best-sellers, and note each supplier's lead time.
+- **Each season:** Review sales history, plan orders and cash early, and clear slow-moving stock before it becomes a loss.
+
+Good stock control is quiet work, but it frees cash, protects margins, and keeps customers coming back to a shop that always has what they need.`,
+    faqs: [
+      {
+        question: "Why does stock management matter for a small business?",
+        answer:
+          "Stock is cash tied up on a shelf. Too much costs money and risks expiry, while too little loses sales. Accurate stock figures also feed your pricing, cash flow planning, and accounts.",
+      },
+      {
+        question: "Do I need inventory software, or is a spreadsheet enough?",
+        answer:
+          "A spreadsheet can be enough for a small range. As your items, locations, and sales channels grow, a simple inventory or point-of-sale app can update stock with each sale. Choose a tool you will actually keep up to date.",
+      },
+      {
+        question: "How often should I count my stock?",
+        answer:
+          "Do a full count at least once or twice a year and before closing your accounts, and cycle count small groups of items weekly or monthly. Count fast-moving and high-value items more often.",
+      },
+      {
+        question: "What is a reorder point?",
+        answer:
+          "The stock level at which you place a new order. A simple rule is the amount you expect to sell during the supplier's lead time plus a safety margin, so the new stock arrives before you run out.",
+      },
+      {
+        question: "How should I plan stock for festive seasons?",
+        answer:
+          "Review last year's sales, order earlier than usual because suppliers and couriers get busy and lead times stretch, plan how to fund the extra stock, consider pre-orders, and decide how you will clear leftovers afterwards.",
+      },
+      {
+        question: "What should I do with slow-moving or expired stock?",
+        answer:
+          "Act early. Options include discounts, bundles, selling through another channel, returning to the supplier, or donating. Never sell expired goods, and write off dead stock honestly so your records show the true picture.",
+      },
+      {
+        question: "How can I reduce theft and stock losses?",
+        answer:
+          "Measure shrinkage, control access to the storeroom, check deliveries against orders at the door, separate ordering, receiving, and paying duties where possible, and consider insurance. If you use CCTV, keep personal data duties in mind.",
+      },
+      {
+        question: "How is my stock valued for accounts and tax?",
+        answer:
+          "Stock is usually valued at cost, and the method you use affects reported profit. Ask your accountant which method suits your business and how to treat damaged or obsolete stock, and confirm the current tax treatment.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "马来西亚中小企业的库存管理：订货、追踪与减少浪费",
+        excerpt:
+          "存货是摆在货架上的现金，太多或太少都会伤害小企业。本指南向马来西亚中小企业说明如何清点和追踪库存、决定订什么货和何时订货、应对供应商交货期和节庆高峰、处理滞销和临近过期的货品，以及减少损坏和失窃造成的损失。",
+        body: `您仓库里的每一件货品，都是您已经花出去、却暂时无法再次花掉的钱。存货太多会占用现金、占用空间，并有过期的风险。存货太少则意味着流失销售和令顾客失望。许多小企业凭记忆和直觉管理库存，这在企业成长、关键员工不在或节庆旺季来临之前都还行得通。
+
+您不需要昂贵的系统也能把库存管理好。您需要的是一套简单的例行程序、可靠的数字，以及根据这些数字行动的习惯。
+
+以下仅为一般资讯，并非专业意见。针对食品和保健品等特定货品的标签、储存和处理规定因产品而异，并会随时间变化，所以请向相关机构或您的顾问确认现行要求。
+
+## 1. 了解库存管理为什么重要
+
+### 存货是被占用的现金
+在存货卖出之前，您花在存货上的钱无法用来支付租金或工资。我们关于现金流的指南说明了，当太多现金积压在库存里时，盈利的企业为什么仍然可能现金短缺。
+
+### 缺货会损失销售和信任
+当热销商品缺货时，顾客会转向竞争对手，有些人不会再回来。对网店来说，已上架的库存售罄还会导致订单取消和投诉。
+
+### 过剩和陈旧的存货会花钱
+积压的存货需要空间、搬运，有时还需要保险。货品可能过期、变质、过时或损坏，放得越久，您损失的价值就越多。
+
+### 准确的数字带来更好的决策
+可靠的库存数字有助于您定价、规划采购、预测现金和编制账目。我们关于簿记基础的指南说明了存货如何融入您的记录。
+
+### 目标是什么
+目标不是零库存，也不是最大库存。而是在对的时间、对的地点，拥有适量的对的货品。
+
+## 2. 建立简单的库存追踪方式
+
+### 从清晰的货品清单开始
+为每个产品设定唯一的代码或名称，并附上尺寸或款式、计量单位、成本价、售价和供应商。一致的命名可以避免混乱和重复。
+
+### 选择适合您规模的方法
+对于品种少的企业，电子表格可能就够了。随着货品数量、地点和销售渠道增加，简单的库存或收银应用程序可以在每次销售时自动更新库存。请选择您真正会使用的工具，并查看它是否能与您的会计记录相连。
+
+### 记录每一次变动
+记录收到、售出、退回、损坏和调拨的货品。如果变动没有被记录，数字在几周内就会偏离现实。
+
+### 整理您的仓储
+为每件货品安排位置，给货架和货箱贴上标签，并把相似的货品放在一起。把较旧的存货放在前面先卖出去，这种做法常被称为先进先出。这对任何有保质期的货品都最重要。
+
+### 把可售与不可售的货品分开
+把损坏、退回和过期的货品放在标记清楚的区域，避免被误售或误计。
+
+## 3. 清点库存并核对
+
+按固定的时间表清点存货，让您的记录与货架上的实物一致。屏幕上的数字只有真实才有用。
+
+### 全面盘点
+每年至少做一两次全面实物盘点，并在结账之前进行。选择较清闲的时间，必要时暂停销售，并尽可能由两个人一起清点。
+
+### 循环盘点
+每周或每月清点一小批货品，并在您的品种中轮换。对周转最快和价值最高的货品要更频繁地清点，因为这些地方的错误代价最高。
+
+### 调查差异
+当清点结果与记录不符时，在直接调整数字之前先找出原因。原因可能是未记录的销售、送错的货、损坏、数错或失窃。
+
+### 正确估价您的存货
+存货通常按成本估价，您所用的方法会影响报告的利润。请询问您的会计师哪种方法适合您的企业，以及如何处理受损或过时的存货的税务问题。我们关于税务扣除的指南说明了相关问题。
+
+### 保存记录
+把盘点表、调整记录和供应商文件与您的账目一起保存，因为您可能在审计或保险索赔时需要它们。
+
+## 4. 决定订什么货、何时订货
+
+### 了解您的销售速度
+利用您自己的记录，算出每个主要货品平均每周卖出多少件。稳定销售的货品容易规划，而季节性或不规则的货品则需要更小心。
+
+### 了解您的交货期
+交货期是指从下订单到货品可供销售所需的时间。缓慢或不可靠的供应商需要更早下单，并留出更大的安全余量。进口货品可能需要更长时间，还会遇到清关延误，请参阅我们关于进出口的指南。
+
+### 设定再订货点
+简单的规则是：当库存降到您预计在交货期内会卖出的数量，再加上应对意外的安全余量时，就再订货。当某一货品达到这个点，您就下订单。
+
+### 在重要之处保留安全库存
+为畅销品和难以替换的货品保留额外的缓冲，对滞销或容易迅速补货的货品则少留一些。
+
+### 订购合理的数量
+在多买得到的折扣与持有成本之间取得平衡。如果一半的存货放上好几个月，批量折扣就算不上节省。我们关于定价的指南说明了您的成本如何影响利润。
+
+### 使用不止一家供应商
+依赖单一供应商有风险。请为关键货品至少保留一个备用供应商，并与所有供应商保持良好关系。我们关于合约与条款的指南说明了如何商定清晰的供货条款。
+
+## 5. 为节庆季节和需求高峰做计划
+
+### 从去年学习
+回顾您以往节庆期间的销售，例如农历新年、哈芝节、屠妖节和年终大促，并记下哪些货品售罄、哪些剩下。您自己的历史是最好的预测。
+
+### 提早订货，并预期延误
+在重大节日前后，供应商和快递公司会很忙，工厂也可能停工，所以交货期往往会拉长。请比平时更早下订单，因为晚到的货会让您付出代价。
+
+### 规划现金
+在高峰来临前备货，会在销售收入进来之前就用掉现金。请规划您将如何为此筹资，并参阅我们关于现金流的指南和关于中小企业补助与融资的指南了解各种选择。
+
+### 使用预购和组合
+接受预购可以在您承诺备货之前显示真实需求，而组合销售可以把较滞销的货品与热销品一起卖出。
+
+### 准备仓储和人手
+确保您有足够的空间、货架、包装材料和人手，在忙碌时段接收、拣货和打包。
+
+### 规划旺季过后
+提前决定您将如何清理剩余的季节性存货，例如通过折扣、组合，或者在货品不会过期的情况下留到明年。
+
+> 最好的库存系统，就是您真正保持更新的那一个。一个每周都准确的简单盘点，胜过一个没人信任的复杂系统。
+
+## 6. 处理滞销、临近过期和损坏的货品
+
+### 及早发现滞销品
+检视哪些货品很久没有卖出，对大多数货品来说就是好几个月。您行动得越早，能挽回的价值就越多。
+
+### 周全地清理
+选择包括折扣、组合、买即送一件、通过其他渠道销售、在允许的情况下退还给供应商，或捐赠。请计算折扣是否仍能覆盖您的成本，并避免让顾客养成等待大减价的习惯。
+
+### 管理保质期
+对于食品、保健品和化妆品，要追踪保质期或最佳食用日期，并先卖出最旧的。切勿销售过期的货品，并遵守您产品的标签、储存和处理规定。我们关于开办食品业务的指南和关于清真认证的指南涵盖了食品方面。
+
+### 处理损坏和退货
+货品到达时要检查，及时向供应商报告问题，并迅速决定退回的货品可以转售、维修还是注销。我们关于顾客投诉和消费者权利的指南说明了您对缺陷货品的责任。
+
+### 如实注销
+当死库存没有实际价值时，把它从记录中移除，并记录损失。把它留在账上会夸大您的利润，并掩盖问题。
+
+## 7. 减少损坏、差错和失窃造成的损失
+
+### 了解损失来自哪里
+损耗，即记录库存与实际库存之间的差距，可能来自顾客或员工的偷窃、供应商的差错、损坏、变质和行政错误。请把它量化，让您知道问题的规模。
+
+### 控制出入
+限制谁可以进入仓库，把高价值货品上锁或放在看得见的地方，并管好钥匙和警报密码。良好的照明和视线在店里也有帮助。
+
+### 检查送货
+在签收之前，在门口对照送货单和采购单清点并检查货品。许多损失始于未经检查的送货。
+
+### 分开职责
+在可能的情况下，订货的人、收货的人和付款的人不应是同一个人。即使在小团队里，由第二个人核对清点也能降低风险。
+
+### 合理使用摄像头和记录
+如果您使用闭路电视，请考虑它的摆放位置和录像的保存方式，因为它可能涉及个人资料。请参阅我们关于个人资料保护的指南了解您的责任。
+
+### 为重要的东西投保
+保险可以在条款范围内，涵盖因火灾、失窃或水灾而损失的存货。我们关于商业保险的指南说明了应该向保险公司询问什么。
+
+如果您需要供应商、物流服务商或会计师协助处理库存记录，可以[浏览名录](/zh)寻找本地专业人士，而[创建免费的企业列表](/zh/signup)可以帮助顾客找到您的企业并了解您经营哪些货品。
+
+## 马来西亚中小企业在库存上常犯的错误
+
+- **从不清点库存。**记录会偏离现实，您只有在顾客要货时，才发现货品遗失或无法出售。
+- **只为了拿折扣而多买。**批量价格可能掩盖数月被占用的现金、仓储成本和过期风险。
+- **忽视供应商交货期和节庆延误。**高峰期的晚到货会让好的旺季变成流失的销售。
+- **把死库存留在账上。**永远卖不出的货品会夸大您的资产，并掩盖企业的真实表现。
+
+## 从哪里开始
+
+- **本周：**列出您的产品以及成本和售价，并快速清点您的十大产品。
+- **接着：**选择一种简单的追踪方式，记录每一次库存变动，并整理仓储，让最旧的存货先被卖出。
+- **然后：**为您的畅销品设定再订货点和安全库存，并记下每家供应商的交货期。
+- **每个季节：**检视销售历史，及早规划订单和现金，并在滞销品变成损失之前清理它们。
+
+好的库存控制是安静的工作，但它能释放现金、保护利润，并让顾客不断回到一家总是有他们所需货品的商店。`,
+        faqs: [
+          {
+            question: "为什么库存管理对小企业很重要？",
+            answer:
+              "存货是积压在货架上的现金。太多会花钱并有过期风险，太少则会流失销售。准确的库存数字也会影响您的定价、现金流规划和账目。",
+          },
+          {
+            question: "我需要库存软件，还是电子表格就够了？",
+            answer:
+              "对品种少的企业，电子表格可能就够了。随着货品、地点和销售渠道增加，简单的库存或收银应用程序可以在每次销售时更新库存。请选择您真正会持续更新的工具。",
+          },
+          {
+            question: "我应该多久清点一次库存？",
+            answer:
+              "每年至少做一两次全面盘点并在结账之前进行，同时每周或每月循环盘点一小批货品。对周转快和价值高的货品要更频繁地清点。",
+          },
+          {
+            question: "什么是再订货点？",
+            answer:
+              "是您下新订单时的库存水平。简单的规则是供应商交货期内您预计卖出的数量，加上一个安全余量，让新货在您缺货之前到达。",
+          },
+          {
+            question: "我应该如何为节庆季节规划库存？",
+            answer:
+              "回顾去年的销售，比平时更早订货，因为供应商和快递公司会很忙且交货期会拉长；规划如何为额外存货筹资，考虑预购，并决定之后如何清理剩余存货。",
+          },
+          {
+            question: "滞销或过期的存货该怎么处理？",
+            answer:
+              "及早行动。选择包括折扣、组合、通过其他渠道销售、退还给供应商或捐赠。切勿销售过期货品，并如实注销死库存，让记录呈现真实情况。",
+          },
+          {
+            question: "如何减少失窃和库存损失？",
+            answer:
+              "量化损耗，控制进入仓库的权限，在门口对照订单检查送货，尽可能分开订货、收货和付款的职责，并考虑保险。如果使用闭路电视，请牢记个人资料责任。",
+          },
+          {
+            question: "我的存货在账目和税务上如何估价？",
+            answer:
+              "存货通常按成本估价，您所用的方法会影响报告的利润。请询问您的会计师哪种方法适合您的企业，以及如何处理受损或过时的存货，并确认现行的税务处理。",
+          },
+        ],
+      },
+      ms: {
+        title: "Menguruskan Inventori dan Stok untuk PKS Malaysia: Pesanan, Penjejakan dan Mengurangkan Pembaziran",
+        excerpt:
+          "Stok ialah wang tunai yang terletak di rak, dan terlalu banyak atau terlalu sedikit merugikan perniagaan kecil. Panduan ini menunjukkan kepada PKS Malaysia cara mengira dan menjejak inventori, memutuskan apa dan bila untuk memesan semula, menangani masa pesanan pembekal dan kemuncak perayaan, mengendalikan barangan lembap dan hampir tamat tempoh, serta mengurangkan kerugian akibat kerosakan dan kecurian.",
+        body: `Setiap item di bilik stor anda ialah wang yang sudah anda belanjakan dan belum boleh dibelanjakan semula. Terlalu banyak stok mengikat wang tunai, memakan ruang, dan berisiko menjadi lapuk. Terlalu sedikit bermakna kehilangan jualan dan pelanggan yang kecewa. Ramai perniagaan kecil menguruskan stok dengan ingatan dan gerak hati, yang berjaya sehingga perniagaan berkembang, orang penting tiada, atau kesibukan perayaan tiba.
+
+Anda tidak memerlukan sistem yang mahal untuk menguruskan inventori dengan baik. Anda memerlukan rutin yang mudah, angka yang boleh dipercayai, dan tabiat bertindak berdasarkannya.
+
+Ini ialah maklumat am, bukan nasihat profesional. Peraturan tentang pelabelan, penyimpanan dan pengendalian barangan tertentu, seperti makanan dan produk kesihatan, berbeza mengikut produk dan berubah dari semasa ke semasa, jadi sahkan keperluan semasa dengan pihak berkuasa berkaitan atau penasihat anda.
+
+## 1. Fahami mengapa pengurusan stok penting
+
+### Stok ialah wang tunai yang terikat
+Wang yang anda belanjakan untuk stok tidak dapat membayar sewa atau gaji sehingga stok itu terjual. Panduan kami tentang aliran tunai menerangkan mengapa perniagaan yang menguntungkan masih boleh kekurangan wang tunai apabila terlalu banyak daripadanya terletak dalam inventori.
+
+### Kehabisan stok merugikan jualan dan kepercayaan
+Apabila item popular tidak tersedia, pelanggan pergi ke pesaing, dan sesetengahnya tidak kembali. Bagi kedai dalam talian, kehabisan stok yang disenaraikan juga membawa kepada pembatalan dan aduan.
+
+### Stok berlebihan dan lama merugikan wang
+Stok berlebihan memerlukan ruang, pengendalian, dan kadangkala insurans. Barangan boleh tamat tempoh, rosak, ketinggalan zaman atau cacat, dan semakin lama ia terletak, semakin banyak nilainya hilang.
+
+### Angka yang tepat mendorong keputusan yang lebih baik
+Angka stok yang boleh dipercayai membantu anda menetapkan harga, merancang pembelian, meramal wang tunai dan menyediakan akaun. Panduan kami tentang asas simpan kira menerangkan bagaimana inventori sesuai dalam rekod anda.
+
+### Apa yang disasarkan
+Matlamatnya bukan stok sifar atau stok maksimum. Ia ialah jumlah yang betul bagi item yang betul, di tempat yang betul, pada masa yang betul.
+
+## 2. Sediakan cara mudah untuk menjejak stok
+
+### Mulakan dengan senarai item yang jelas
+Berikan setiap produk kod atau nama yang unik, dengan saiz atau variannya, unit ukuran, harga kos, harga jualan dan pembekal. Penamaan yang konsisten mengelak kekeliruan dan pendua.
+
+### Pilih kaedah yang sesuai dengan saiz anda
+Hamparan boleh mencukupi untuk julat kecil. Apabila bilangan item, lokasi dan saluran jualan bertambah, aplikasi inventori atau titik jualan yang mudah boleh mengemas kini stok secara automatik dengan setiap jualan. Pilih alat yang benar-benar akan anda gunakan, dan semak sama ada ia berhubung dengan rekod perakaunan anda.
+
+### Rekodkan setiap pergerakan
+Log stok yang diterima, dijual, dipulangkan, rosak dan dipindahkan. Jika pergerakan tidak direkodkan, angka akan menyimpang daripada realiti dalam beberapa minggu.
+
+### Susun penyimpanan anda
+Berikan setiap item tempat, labelkan rak dan bakul, dan letakkan item yang serupa bersama. Letakkan stok lama di hadapan supaya ia dijual dahulu, amalan yang sering dipanggil masuk dahulu keluar dahulu. Ini paling penting untuk apa-apa yang mempunyai tarikh tamat tempoh.
+
+### Asingkan apa yang boleh dijual daripada yang tidak
+Simpan barangan rosak, dipulangkan dan tamat tempoh di kawasan yang ditanda dengan jelas supaya ia tidak dijual atau dikira secara tersilap.
+
+## 3. Kira stok anda dan selaraskan
+
+Kira stok anda mengikut jadual tetap supaya rekod anda sepadan dengan apa yang ada di rak. Angka di skrin hanya berguna jika ia benar.
+
+### Kiraan penuh
+Lakukan kiraan fizikal penuh sekurang-kurangnya sekali atau dua kali setahun, dan sebelum menutup akaun anda. Pilih masa yang lengang, hentikan jualan jika perlu, dan kira dengan dua orang jika boleh.
+
+### Kiraan kitaran
+Kira sekumpulan kecil item setiap minggu atau bulan, dan berputar merentasi julat anda. Kira item anda yang paling pantas bergerak dan bernilai tertinggi dengan lebih kerap, kerana kesilapan di situ paling mahal.
+
+### Siasat perbezaan
+Apabila kiraan tidak sepadan dengan rekod, ketahui sebabnya sebelum anda sekadar melaraskan angka. Puncanya mungkin jualan yang tidak direkodkan, penghantaran yang salah, kerosakan, salah kira, atau kecurian.
+
+### Nilaikan stok anda dengan betul
+Stok biasanya dinilai pada kos, dan kaedah yang anda gunakan mempengaruhi keuntungan yang dilaporkan. Tanya akauntan anda kaedah yang sesuai dengan perniagaan anda dan cara melayan stok rosak atau usang untuk cukai. Panduan kami tentang potongan cukai menerangkan isu berkaitan.
+
+### Simpan rekod
+Simpan helaian kiraan, pelarasan dan dokumen pembekal bersama akaun anda, kerana anda mungkin memerlukannya untuk audit atau tuntutan insurans.
+
+## 4. Tentukan apa dan bila untuk memesan semula
+
+### Ketahui kadar jualan anda
+Kira berapa unit yang lazimnya anda jual seminggu bagi setiap item utama, menggunakan rekod anda sendiri. Item yang dijual secara stabil mudah dirancang, manakala item bermusim atau tidak tetap memerlukan lebih penjagaan.
+
+### Ketahui masa pesanan anda
+Masa pesanan ialah tempoh dari membuat pesanan sehingga barangan sedia untuk dijual. Pembekal yang lambat atau tidak boleh dipercayai memerlukan pesanan lebih awal dan margin keselamatan lebih besar. Barangan import boleh mengambil masa lebih lama dan menghadapi kelewatan kastam, jadi lihat panduan kami tentang mengimport dan mengeksport.
+
+### Tetapkan titik pesanan semula
+Peraturan mudah ialah memesan semula apabila stok jatuh ke paras yang anda jangka akan dijual semasa masa pesanan, campur margin keselamatan untuk kejutan. Apabila sesuatu item mencapai titik itu, anda membuat pesanan.
+
+### Simpan stok keselamatan di tempat yang penting
+Simpan penimbal tambahan untuk item terlaris dan yang sukar diganti, dan kurang untuk item yang lambat bergerak atau mudah distok semula dengan cepat.
+
+### Pesan kuantiti yang munasabah
+Seimbangkan diskaun daripada membeli lebih dengan kos menyimpannya. Diskaun pukal bukan penjimatan jika separuh stok terletak selama berbulan-bulan. Panduan kami tentang penetapan harga menerangkan bagaimana kos anda menyumbang kepada keuntungan.
+
+### Gunakan lebih daripada satu pembekal
+Bergantung pada satu pembekal adalah berisiko. Simpan sekurang-kurangnya satu pembekal sandaran untuk item utama, dan jaga hubungan baik dengan semua. Panduan kami tentang kontrak dan terma menerangkan cara bersetuju tentang terma bekalan yang jelas.
+
+## 5. Rancang untuk musim perayaan dan kemuncak permintaan
+
+### Belajar daripada tahun lalu
+Semak jualan anda untuk tempoh perayaan sebelumnya, seperti Tahun Baharu Cina, Hari Raya, Deepavali dan jualan hujung tahun, dan catat item yang kehabisan dan yang berbaki. Sejarah anda sendiri ialah ramalan terbaik anda.
+
+### Pesan awal, dan jangka kelewatan
+Pembekal dan kurier menjadi sibuk dan kilang mungkin tutup sekitar cuti utama, jadi masa pesanan sering memanjang. Buat pesanan lebih awal daripada biasa kerana barangan yang tiba lewat akan merugikan anda.
+
+### Rancang wang tunai
+Membina stok sebelum kemuncak menggunakan wang tunai sebelum jualan masuk. Rancang bagaimana anda akan membiayainya, dan lihat panduan kami tentang aliran tunai dan panduan kami tentang geran dan pembiayaan PKS untuk pilihan.
+
+### Gunakan pra-pesanan dan pakej
+Mengambil pra-pesanan menunjukkan permintaan sebenar sebelum anda berkomitmen kepada stok, dan pakej boleh menggerakkan item yang lebih lambat bersama yang popular.
+
+### Sediakan penyimpanan dan orang
+Pastikan anda mempunyai ruang, rak, pembungkusan dan kakitangan yang mencukupi untuk menerima, memilih dan membungkus pada waktu sibuk.
+
+### Rancang selepas musim
+Tentukan lebih awal bagaimana anda akan menghabiskan stok bermusim yang berbaki, contohnya melalui diskaun, pakej, atau menyimpannya untuk tahun depan jika ia tidak tamat tempoh.
+
+> Sistem inventori terbaik ialah yang benar-benar anda kemas kini. Kiraan mudah yang tepat setiap minggu mengatasi sistem canggih yang tiada siapa percaya.
+
+## 6. Kendalikan stok lembap, hampir tamat tempoh dan rosak
+
+### Kesan penggerak lambat lebih awal
+Semak item yang tidak terjual untuk masa yang lama, seperti beberapa bulan bagi kebanyakan barangan. Semakin awal anda bertindak, semakin banyak nilai yang dapat dipulihkan.
+
+### Habiskannya dengan teliti
+Pilihan termasuk diskaun, pakej, memberi item percuma dengan pembelian, menjual melalui saluran lain, memulangkan kepada pembekal jika dibenarkan, atau menderma. Kira sama ada diskaun masih menampung kos anda, dan elakkan melatih pelanggan menunggu jualan.
+
+### Urus tarikh tamat tempoh
+Bagi makanan, produk kesihatan dan kosmetik, jejaki tarikh tamat tempoh atau terbaik sebelum dan jual yang paling lama dahulu. Jangan sekali-kali menjual barangan tamat tempoh, dan ikut peraturan pelabelan, penyimpanan dan pengendalian untuk produk anda. Panduan kami tentang memulakan perniagaan makanan dan panduan kami tentang pensijilan halal merangkumi bahagian makanan.
+
+### Kendalikan kerosakan dan pemulangan
+Periksa barangan semasa tiba, laporkan masalah kepada pembekal dengan segera, dan tentukan dengan cepat sama ada item yang dipulangkan boleh dijual semula, dibaiki atau dihapuskan kira. Panduan kami tentang aduan pelanggan dan hak pengguna menerangkan tanggungjawab anda ke atas barangan rosak.
+
+### Hapus kira dengan jujur
+Keluarkan stok mati daripada rekod anda apabila ia tiada nilai realistik, dan rekodkan kerugian. Menyimpannya dalam buku membengkakkan keuntungan anda dan menyembunyikan masalah.
+
+## 7. Kurangkan kerugian daripada kerosakan, kesilapan dan kecurian
+
+### Ketahui dari mana kerugian datang
+Kehilangan stok, jurang antara stok yang direkodkan dan sebenar, boleh datang daripada kecurian oleh pelanggan atau kakitangan, kesilapan pembekal, kerosakan, kerosakan makanan dan kesilapan pentadbiran. Ukurnya supaya anda tahu saiz masalahnya.
+
+### Kawal akses
+Hadkan siapa yang boleh memasuki bilik stor, simpan item bernilai tinggi dikunci atau kelihatan, dan kawal kunci serta kod penggera. Pencahayaan yang baik dan pandangan jelas juga membantu di kedai.
+
+### Semak penghantaran
+Kira dan periksa barangan berbanding pesanan penghantaran dan pesanan pembelian di pintu, sebelum menandatangani. Banyak kerugian bermula dengan penghantaran yang tidak diperiksa.
+
+### Asingkan tugas
+Jika boleh, orang yang memesan, orang yang menerima dan orang yang membayar tidak semuanya orang yang sama. Walaupun dalam pasukan kecil, orang kedua yang menyemak kiraan mengurangkan risiko.
+
+### Gunakan kamera dan rekod dengan munasabah
+Jika anda menggunakan CCTV, pertimbangkan di mana ia diletakkan dan bagaimana rakaman disimpan, kerana ia boleh melibatkan data peribadi. Lihat panduan kami tentang perlindungan data peribadi untuk tanggungjawab anda.
+
+### Insurankan apa yang penting
+Insurans boleh meliputi stok yang hilang akibat kebakaran, kecurian atau banjir, tertakluk kepada terma. Panduan kami tentang insurans perniagaan menerangkan apa yang perlu ditanya kepada penanggung insurans anda.
+
+Jika anda memerlukan pembekal, penyedia logistik atau akauntan untuk membantu dengan rekod stok, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pelanggan menemui perniagaan anda dan mengetahui apa yang anda jual.
+
+## Kesilapan lazim PKS Malaysia dengan inventori
+
+- **Tidak pernah mengira stok.** Rekod menyimpang daripada realiti, dan anda hanya mendapati item hilang atau tidak boleh dijual apabila pelanggan memintanya.
+- **Membeli lebih hanya untuk mendapatkan diskaun.** Harga pukal boleh menyembunyikan berbulan-bulan wang tunai terikat, kos penyimpanan dan risiko tamat tempoh.
+- **Mengabaikan masa pesanan pembekal dan kelewatan perayaan.** Ketibaan lewat semasa kemuncak mengubah musim yang baik menjadi jualan yang hilang.
+- **Menyimpan stok mati dalam buku.** Item yang tidak akan terjual membengkakkan aset anda dan menutup prestasi sebenar perniagaan.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Senaraikan produk anda dengan kos dan harga jualan, dan buat kiraan pantas sepuluh item teratas anda.
+- **Seterusnya:** Pilih kaedah penjejakan yang mudah, rekodkan setiap pergerakan stok, dan kemaskan penyimpanan supaya stok paling lama dijual dahulu.
+- **Kemudian:** Tetapkan titik pesanan semula dan stok keselamatan untuk item terlaris anda, dan catat masa pesanan setiap pembekal.
+- **Setiap musim:** Semak sejarah jualan, rancang pesanan dan wang tunai lebih awal, dan habiskan stok lambat bergerak sebelum ia menjadi kerugian.
+
+Kawalan stok yang baik ialah kerja yang senyap, tetapi ia membebaskan wang tunai, melindungi margin, dan menjadikan pelanggan terus kembali ke kedai yang sentiasa ada apa yang mereka perlukan.`,
+        faqs: [
+          {
+            question: "Mengapa pengurusan stok penting untuk perniagaan kecil?",
+            answer:
+              "Stok ialah wang tunai yang terikat di rak. Terlalu banyak merugikan wang dan berisiko tamat tempoh, manakala terlalu sedikit kehilangan jualan. Angka stok yang tepat juga menyumbang kepada harga, perancangan aliran tunai dan akaun anda.",
+          },
+          {
+            question: "Adakah saya memerlukan perisian inventori, atau hamparan sudah cukup?",
+            answer:
+              "Hamparan boleh mencukupi untuk julat kecil. Apabila item, lokasi dan saluran jualan anda bertambah, aplikasi inventori atau titik jualan yang mudah boleh mengemas kini stok dengan setiap jualan. Pilih alat yang benar-benar akan anda kemas kini.",
+          },
+          {
+            question: "Berapa kerap saya patut mengira stok saya?",
+            answer:
+              "Lakukan kiraan penuh sekurang-kurangnya sekali atau dua kali setahun dan sebelum menutup akaun anda, dan buat kiraan kitaran kumpulan kecil item setiap minggu atau bulan. Kira item yang pantas bergerak dan bernilai tinggi dengan lebih kerap.",
+          },
+          {
+            question: "Apakah titik pesanan semula?",
+            answer:
+              "Paras stok di mana anda membuat pesanan baharu. Peraturan mudah ialah jumlah yang anda jangka akan dijual semasa masa pesanan pembekal campur margin keselamatan, supaya stok baharu tiba sebelum anda kehabisan.",
+          },
+          {
+            question: "Bagaimanakah saya patut merancang stok untuk musim perayaan?",
+            answer:
+              "Semak jualan tahun lalu, pesan lebih awal daripada biasa kerana pembekal dan kurier menjadi sibuk dan masa pesanan memanjang, rancang cara membiayai stok tambahan, pertimbangkan pra-pesanan, dan tentukan bagaimana anda akan menghabiskan baki selepas itu.",
+          },
+          {
+            question: "Apa yang patut saya lakukan dengan stok lambat bergerak atau tamat tempoh?",
+            answer:
+              "Bertindak awal. Pilihan termasuk diskaun, pakej, menjual melalui saluran lain, memulangkan kepada pembekal, atau menderma. Jangan sekali-kali menjual barangan tamat tempoh, dan hapus kira stok mati dengan jujur supaya rekod anda menunjukkan gambaran sebenar.",
+          },
+          {
+            question: "Bagaimanakah saya boleh mengurangkan kecurian dan kerugian stok?",
+            answer:
+              "Ukur kehilangan stok, kawal akses ke bilik stor, semak penghantaran berbanding pesanan di pintu, asingkan tugas memesan, menerima dan membayar jika boleh, dan pertimbangkan insurans. Jika anda menggunakan CCTV, ingat tanggungjawab data peribadi.",
+          },
+          {
+            question: "Bagaimanakah stok saya dinilai untuk akaun dan cukai?",
+            answer:
+              "Stok biasanya dinilai pada kos, dan kaedah yang anda gunakan mempengaruhi keuntungan yang dilaporkan. Tanya akauntan anda kaedah yang sesuai dengan perniagaan anda dan cara melayan stok rosak atau usang, dan sahkan layanan cukai semasa.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "writing-a-business-plan-for-a-malaysian-sme",
+    title: "Writing a Business Plan for a Malaysian SME: Planning, Financials, and Pitching for Funding",
+    seoTitle: "Writing a Business Plan for a Malaysian SME",
+    seoDescription:
+      "How to write a practical business plan for a Malaysian SME: customers, offer, operations, simple financials, goals, what lenders look for and upkeep.",
+    coverImage: {
+      file: "writing-a-business-plan-for-a-malaysian-sme-cover.webp",
+      mimeType: "image/webp",
+      alt: "A man in a tan jacket sitting at a table with a laptop, an open notebook and printed charts, looking thoughtful",
+      altTranslations: {
+        zh: "一位身穿米黄色外套的男士坐在桌前，面前有笔记本电脑、打开的笔记本和打印的图表，神情若有所思",
+        ms: "Seorang lelaki berjaket coklat muda duduk di meja dengan komputer riba, buku nota terbuka dan carta bercetak, kelihatan sedang berfikir",
+      },
+    },
+    contentImages: {
+      planning: {
+        file: "writing-a-business-plan-for-a-malaysian-sme-planning.webp",
+        mimeType: "image/webp",
+        alt: "A woman in a beige blazer standing at a wooden table with a laptop, a tablet and printed charts spread out in front of her",
+        altTranslations: {
+          zh: "一位身穿米色西装外套的女士站在木桌旁，面前摆着笔记本电脑、平板电脑和摊开的打印图表",
+          ms: "Seorang wanita berblazer krim berdiri di meja kayu dengan komputer riba, tablet dan carta bercetak terbentang di hadapannya",
+        },
+        after: "Start with a short plan that answers who your customers are, what you sell, and how you will make money.",
+        afterTranslations: {
+          zh: "先从一份简短的计划开始，回答您的顾客是谁、您卖什么，以及您将如何赚钱。",
+          ms: "Mulakan dengan pelan ringkas yang menjawab siapa pelanggan anda, apa yang anda jual, dan bagaimana anda akan menjana wang.",
+        },
+      },
+    },
+    excerpt:
+      "A business plan is not just paperwork for the bank. It is how you test your idea, set targets, and spot problems before they cost money. This guide shows Malaysian SMEs how to write a short, practical plan covering customers, offer, operations, and simple financials, what lenders and funding bodies tend to look for, and how to keep the plan useful after it is written.",
+    body: `Many small business owners carry their plan in their heads. That works until the business needs a loan, a partner, a grant, or a hard decision about growth. A written plan forces you to test your assumptions on paper, where mistakes are cheap, instead of in the market, where they are expensive.
+
+A business plan does not have to be long, formal, or fancy. For most small businesses, five to fifteen pages, or even a few well-organised pages, is enough. What matters is that it is honest, specific, and useful to you.
+
+This is general information, not financial or legal advice. Lender requirements, funding programmes, rates, and eligibility change and differ by institution, so confirm the current requirements with the lender or agency directly, and speak to an accountant or adviser before making major financial decisions.
+
+## 1. Understand what a business plan is for
+
+### A tool for you first
+A plan helps you test whether your idea can make money, decide what to do first, and measure progress. Even if nobody else ever reads it, writing it improves your decisions.
+
+### A tool for others second
+Banks, financing bodies, grant providers, investors, landlords, and partners may ask to see a plan. Lenders commonly ask for one with a loan application, and it usually helps them understand your goals, your numbers, and how the money will be used. Requirements differ by lender, so ask what they need.
+
+### Plans for different situations
+A starting business needs a plan to test the idea and the start-up costs. An existing business may need one to apply for financing, expand, open a second outlet, or bring in a partner.
+
+### Keep it short and honest
+A long plan full of vague claims is worse than a short plan with real numbers and clear reasoning. Write for a reader who is smart but does not know your business.
+
+### Link it to your other planning
+Your plan connects to your registration, licences, tax, and funding decisions. See our guide on registering a business with SSM and our guide on business licenses and permits for the legal groundwork.
+
+## 2. Describe your business, customers, and market
+
+Start with a short plan that answers who your customers are, what you sell, and how you will make money. If you cannot answer those three questions clearly, more pages will not help.
+
+### Your business in a paragraph
+State what the business does, where it operates, its legal structure, who owns it, and what stage it is at. Keep it to a few sentences.
+
+### Your customers
+Describe who you serve in specific terms, such as their age, location, income, needs, and buying habits. "Everyone" is not a customer. If you have several groups, identify the most important one first.
+
+### The problem you solve
+Explain what customers struggle with now, and why your product or service is a better solution. Evidence from real conversations with customers is more convincing than assumptions.
+
+### Your market and competitors
+Describe the size and trends of your market, in realistic terms, using sources you can name. List your main competitors, including informal ones, and explain how you are different and better for your chosen customers.
+
+### Your edge
+Say plainly what you do better, whether it is price, quality, speed, location, relationships, or a niche. Our guide on pricing and our guide on getting found online can help you test your position.
+
+## 3. Explain your offer, pricing, and marketing
+
+### Your products and services
+List what you sell, with key features, quality standards, and any licences or certifications required. For food or health products, see our guide on halal certification and our guide on starting a food business.
+
+### Your pricing
+Show how you set prices, your expected margins, and how your prices compare with others. Base them on real costs, not guesses. Our guide on pricing explains how to work out costs and margins.
+
+### How you will reach customers
+Describe the channels you will use, such as a shop, a marketplace, social media, referrals, or direct sales, and roughly what you will spend. Our guide on selling online and our guide on social media marketing cover the options.
+
+### How you will keep customers
+Explain how you will earn repeat business through service, quality, loyalty offers, and handling complaints well. Our guide on customer complaints and consumer rights covers this.
+
+### Test before you spend
+If possible, test your offer on a small scale first, such as a pilot batch, a pre-order, or a trial month, and record what you learn.
+
+## 4. Describe how the business will operate
+
+### Location and premises
+Say where you will operate, whether you rent or own, and what space and fit-out you need. Our guide on renting commercial premises and our guide on running a home-based business explain the options.
+
+### People
+List who is involved, their experience, and what roles you need to hire. Include your own skills and gaps honestly, since lenders and partners look closely at the people behind a plan. Our guide on hiring your first employee covers the legal basics, and our guide on working with freelancers covers flexible help.
+
+### Suppliers and stock
+Explain who supplies you, what terms you have, and how you will manage stock. Our guide on inventory management covers this in detail.
+
+### Equipment, systems, and technology
+List the equipment and software you need, including how you will keep your accounts and protect your data. See our guide on bookkeeping basics and our guide on cybersecurity.
+
+### Legal, licences, and risks
+List the registrations, licences, insurance, and compliance you need, and the main risks, with how you would deal with each. Our guide on business insurance explains cover for common risks.
+
+## 5. Build simple financial projections
+
+### Start-up and capital costs
+List what you must spend before you open, such as deposits, renovation, equipment, stock, licences, and initial marketing, and how you will fund it.
+
+### Sales forecast
+Estimate your sales month by month for the first year, then yearly for the next two or three. Base it on real drivers such as number of customers, average spend, and capacity, rather than a hopeful percentage. Be conservative.
+
+### Costs and profit
+Forecast your direct costs, overheads, and profit, including staff costs and statutory contributions. Remember tax. See our guide on the small business tax calendar and our guide on tax deductions for what to include.
+
+### Cash flow
+Show when money comes in and goes out, because a profitable plan can still run out of cash. Our guide on managing cash flow explains how to build a simple forecast.
+
+### Break-even and funding need
+Work out how many sales you need to break even, and how much funding you need to survive until you do, including a buffer for delays. Our guide on SME grants and funding and our guide on opening a business bank account explain where to look.
+
+### Show your assumptions
+Write down what each number is based on, so that a reader can judge it and you can update it later. Run a worse-case version too, to see how much room you have.
+
+> A plan is not a prediction, it is a set of assumptions you can check. The value is in discovering which assumptions are wrong early, while changing them still costs little.
+
+## 6. Set goals, milestones, and measures
+
+### Set specific goals
+Choose a few clear goals, such as a monthly sales target, a number of customers, a gross margin, or an opening date. Vague aims such as "grow the business" cannot be checked.
+
+### Break goals into milestones
+Turn each goal into steps with dates and owners, for example "sign the lease by March" or "reach 100 repeat customers by June".
+
+### Choose a few numbers to watch
+Pick the measures that tell you whether the plan is working, such as sales, margin, cash balance, customer returns, and complaints. Review them monthly.
+
+### Plan for what could go wrong
+Identify your biggest risks, such as late payers, a key supplier failing, or a slow start, and decide in advance what you would do. Our guide on collecting late payments is one example.
+
+### Decide what would make you change course
+Set trigger points, such as "if sales are below target for three months, we cut costs or change the offer", so that you act early.
+
+## 7. Pitch for funding and keep the plan alive
+
+### Know what lenders and funders tend to look for
+They generally want to see a registered business, a clear purpose for the money, realistic projections, the ability to repay, and a credible owner or team, plus records and a credit history where you have them. Requirements differ by lender and programme, so ask each one what they need and check the current terms.
+
+### Match the funding to the need
+Use short-term finance for short-term needs, and longer-term finance for equipment and expansion. Government-linked schemes and guarantees may be available, so check the current offers. See our guide on SME grants and funding.
+
+### Prepare your documents
+Have your registration documents, financial statements or bank statements, a clear plan, and a statement of how the funds will be used. Our guide on staying compliant with SSM records covers the company paperwork.
+
+### Present clearly
+Prepare a one-page summary and be ready to explain your numbers and risks simply. Honesty about risks builds trust more than a perfect story.
+
+### Keep the plan alive
+Review it every quarter, compare the real numbers with your forecasts, update your assumptions, and record what you learned. A plan that sits in a drawer stops being useful in months.
+
+If you need an accountant, a business adviser, or a lender to help with your plan, you can [browse the directory](/en) for local professionals, and [creating a free business listing](/en/signup) helps customers find your business as soon as you open.
+
+## Common mistakes Malaysian SMEs make with business plans
+
+- **Writing it only to satisfy the bank.** A plan you do not believe or use will not guide your decisions, and lenders can tell.
+- **Overestimating sales and underestimating costs.** Optimistic numbers hide risks, so build a conservative case and a worse-case version.
+- **Ignoring cash flow.** A plan that shows a profit can still fail if money arrives later than it goes out.
+- **Never updating it.** Markets, costs, and your own knowledge change, so a plan needs regular review.
+
+## Where to start
+
+- **This week:** Write one page on who your customers are, what you sell, how you will make money, and why you will win.
+- **Next:** List your start-up costs, estimate a year of sales and costs, and build a simple cash flow forecast.
+- **Then:** Add operations, people, risks, goals, and milestones, and ask someone you trust to challenge it.
+- **Each quarter:** Compare real results with the plan, update it, and decide what to change.
+
+The best plan is one you actually use. Write it simply, test it honestly, and let it grow with your business.`,
+    faqs: [
+      {
+        question: "Do I really need a business plan for a small business?",
+        answer:
+          "It is not legally required for most small businesses, but writing one helps you test your idea, plan your costs, and make better decisions. Lenders, grant bodies, and partners often ask for one, so it is worth having.",
+      },
+      {
+        question: "How long should a business plan be?",
+        answer:
+          "For most small businesses, a few to around fifteen pages is enough. A short plan with real numbers and clear reasoning is better than a long one full of vague claims.",
+      },
+      {
+        question: "What should a business plan include?",
+        answer:
+          "A description of the business, your customers and market, your offer and pricing, how you will reach and keep customers, operations and people, financial projections, risks, and goals with milestones.",
+      },
+      {
+        question: "What do banks and funding bodies look for in a plan?",
+        answer:
+          "Generally a registered business, a clear purpose for the money, realistic projections, the ability to repay, and a credible owner or team, plus records and credit history where available. Requirements differ, so ask each lender or programme what they need.",
+      },
+      {
+        question: "How do I estimate sales if I have not started yet?",
+        answer:
+          "Base it on real drivers such as the number of customers you can serve, their average spend, and your capacity, and test with a pilot, pre-orders, or customer conversations. Be conservative and show your assumptions.",
+      },
+      {
+        question: "Why is cash flow part of a business plan?",
+        answer:
+          "A business can show a profit on paper and still run out of cash if customers pay later than you must pay suppliers and staff. A cash flow forecast shows when money comes in and out, and how much funding you need to bridge gaps.",
+      },
+      {
+        question: "Can I write the plan myself, or do I need a consultant?",
+        answer:
+          "You can write it yourself, and doing so helps you understand your business. An accountant or adviser can help check the numbers and assumptions, especially if you are applying for financing.",
+      },
+      {
+        question: "How often should I update my business plan?",
+        answer:
+          "Review it at least every quarter, compare real results with your forecasts, and update your assumptions. Also update it when something big changes, such as a new product, a new location, or a major cost change.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "为马来西亚中小企业撰写商业计划书：规划、财务与融资推介",
+        excerpt:
+          "商业计划书不只是给银行看的文件。它是您检验想法、设定目标，并在问题造成损失之前发现问题的方法。本指南向马来西亚中小企业说明如何撰写一份简短而实用的计划书，涵盖顾客、产品、营运和简单的财务，贷款机构和资助机构通常关注什么，以及写好之后如何让计划持续有用。",
+        body: `许多小企业主把计划放在脑子里。这在企业需要贷款、合伙人、补助，或需要对成长做出艰难决定之前都还行得通。书面的计划迫使您在纸上检验自己的假设，在那里犯错成本很低，而不是在市场上，那里犯错代价高昂。
+
+商业计划书不必冗长、正式或花哨。对大多数小企业来说，五到十五页，甚至几页组织良好的内容就足够了。重要的是它诚实、具体，并且对您有用。
+
+以下仅为一般资讯，并非财务或法律意见。贷款机构的要求、资助计划、利率和资格会变动，并因机构而异，所以请直接向贷款机构或相关机构确认现行要求，并在做出重大财务决定之前咨询会计师或顾问。
+
+## 1. 了解商业计划书的用途
+
+### 首先是给您自己的工具
+计划书帮助您检验想法能否赚钱、决定先做什么，并衡量进展。即使从来没有别人读它，写它也会改善您的决策。
+
+### 其次是给别人的工具
+银行、融资机构、补助提供者、投资者、房东和合作伙伴可能要求查看计划书。贷款机构通常在贷款申请时要求一份，它通常帮助他们了解您的目标、您的数字，以及资金将如何使用。要求因贷款机构而异，所以请询问他们需要什么。
+
+### 针对不同情况的计划书
+创业中的企业需要计划书来检验想法和启动成本。现有企业可能需要它来申请融资、扩张、开设第二家分店，或引入合伙人。
+
+### 保持简短且诚实
+一份充满含糊宣称的长计划书，不如一份有真实数字和清晰推理的短计划书。请为一位聪明但不了解您业务的读者来写。
+
+### 与您其他的规划联系起来
+您的计划与您的注册、执照、税务和融资决策相关。请参阅我们关于向公司委员会注册企业的指南和关于商业执照与许可证的指南，了解法律方面的基础。
+
+## 2. 描述您的企业、顾客和市场
+
+先从一份简短的计划开始，回答您的顾客是谁、您卖什么，以及您将如何赚钱。如果您无法清楚回答这三个问题，更多的页数也无济于事。
+
+### 用一段话介绍您的企业
+说明企业做什么、在哪里营运、法律结构、谁拥有它，以及处于什么阶段。控制在几句话内。
+
+### 您的顾客
+用具体的方式描述您服务的对象，例如他们的年龄、所在地、收入、需求和购买习惯。“每个人”不是顾客。如果您有几个群体，请先确定最重要的一个。
+
+### 您解决的问题
+说明顾客目前面临什么困难，以及为什么您的产品或服务是更好的解决方案。来自与真实顾客交谈的证据，比假设更有说服力。
+
+### 您的市场和竞争对手
+用现实的措辞描述您市场的规模和趋势，并使用您能说出名称的来源。列出您的主要竞争对手，包括非正式的，并说明您对所选顾客有何不同和更好之处。
+
+### 您的优势
+清楚说明您在哪方面做得更好，无论是价格、质量、速度、地点、人脉或细分市场。我们关于定价的指南和关于提升网络曝光度的指南可以帮助您检验自己的定位。
+
+## 3. 说明您的产品、定价和营销
+
+### 您的产品和服务
+列出您销售的东西，包括主要特点、质量标准，以及任何所需的执照或认证。对于食品或保健品，请参阅我们关于清真认证的指南和关于开办食品业务的指南。
+
+### 您的定价
+展示您如何定价、预期的利润率，以及您的价格与他人相比如何。请以真实成本为基础，而不是猜测。我们关于定价的指南说明了如何算出成本和利润率。
+
+### 您将如何接触顾客
+描述您将使用的渠道，例如店铺、电商平台、社交媒体、转介绍或直销，以及大致的开支。我们关于网络销售的指南和关于社交媒体营销的指南涵盖了各种选择。
+
+### 您将如何留住顾客
+说明您将如何通过服务、质量、会员优惠和妥善处理投诉来赢得回头客。我们关于顾客投诉和消费者权利的指南涵盖了这一点。
+
+### 花钱之前先测试
+如果可能，先小规模测试您的产品，例如试产一批、预购或试用一个月，并记录您学到的东西。
+
+## 4. 描述企业将如何营运
+
+### 地点和营业场所
+说明您将在哪里营运、是租还是买，以及您需要什么样的空间和装修。我们关于租用商业场所的指南和关于经营家庭式企业的指南说明了各种选择。
+
+### 人员
+列出涉及的人员、他们的经验，以及您需要聘请什么职位。请诚实地写出您自己的技能和不足，因为贷款机构和合作伙伴会仔细审视计划背后的人。我们关于雇用第一位员工的指南涵盖了法律基础，关于与自由工作者合作的指南则涵盖了灵活的人力。
+
+### 供应商和存货
+说明谁为您供货、您有什么条款，以及您将如何管理存货。我们关于库存管理的指南详细涵盖了这一点。
+
+### 设备、系统和技术
+列出您需要的设备和软件，包括您将如何保管账目和保护数据。请参阅我们关于簿记基础的指南和关于网络安全的指南。
+
+### 法律、执照和风险
+列出您需要的注册、执照、保险和合规事项，以及主要风险，并说明您将如何应对每一项。我们关于商业保险的指南说明了针对常见风险的保障。
+
+## 5. 建立简单的财务预测
+
+### 启动成本和资本成本
+列出开业前必须花费的项目，例如押金、装修、设备、存货、执照和初期营销，以及您将如何筹资。
+
+### 销售预测
+估计第一年每月的销售额，然后是之后两三年的年度销售额。请以真实的驱动因素为基础，例如顾客数量、平均消费和产能，而不是一个充满希望的百分比。要保守。
+
+### 成本和利润
+预测您的直接成本、间接费用和利润，包括员工成本和法定供款。别忘了税务。请参阅我们关于小企业税务日历的指南和关于税务扣除的指南，了解应该包括什么。
+
+### 现金流
+显示资金何时流入和流出，因为盈利的计划仍然可能现金耗尽。我们关于现金流管理的指南说明了如何建立简单的预测。
+
+### 盈亏平衡和资金需求
+算出您需要多少销售才能达到盈亏平衡，以及在达到之前为了生存需要多少资金，并为延误留出缓冲。我们关于中小企业补助与融资的指南和关于开立企业银行账户的指南说明了该去哪里看。
+
+### 展示您的假设
+写下每个数字的依据，让读者可以判断，也让您日后可以更新。同时做一个更糟情况的版本，看看您有多少余地。
+
+> 计划不是预测，而是一组您可以检验的假设。它的价值在于及早发现哪些假设是错的，那时改变它们的成本还很低。
+
+## 6. 设定目标、里程碑和衡量指标
+
+### 设定具体目标
+选择几个清晰的目标，例如每月销售目标、顾客数量、毛利率或开业日期。“让企业成长”这类含糊的目标无法检验。
+
+### 把目标分解为里程碑
+把每个目标变成附有日期和负责人的步骤，例如“三月前签订租约”或“六月前拥有 100 位回头客”。
+
+### 选择几个要关注的数字
+挑选能告诉您计划是否奏效的指标，例如销售额、利润率、现金余额、顾客回购和投诉。每月检视它们。
+
+### 为可能出错的事做计划
+找出您最大的风险，例如拖欠付款的客户、关键供应商出问题，或开局缓慢，并事先决定您会怎么做。我们关于追收逾期货款的指南就是一个例子。
+
+### 决定什么情况会让您改变方向
+设定触发点，例如“如果销售额连续三个月低于目标，我们就削减成本或改变产品”，让您及早行动。
+
+## 7. 推介融资并让计划持续有效
+
+### 了解贷款机构和资助者通常关注什么
+他们一般希望看到已注册的企业、资金的明确用途、现实的预测、偿还能力，以及可信的业主或团队，如有记录和信用历史也会一并看。要求因贷款机构和计划而异，所以请询问每一家需要什么，并查看现行条款。
+
+### 让融资与需求相配
+短期需求用短期融资，设备和扩张用较长期的融资。可能有政府相关的计划和担保，所以请查看现行的方案。请参阅我们关于中小企业补助与融资的指南。
+
+### 准备您的文件
+备好您的注册文件、财务报表或银行对账单、清晰的计划，以及资金用途的说明。我们关于遵守公司委员会记录规定的指南涵盖了公司文件。
+
+### 清晰地呈现
+准备一页纸的摘要，并准备好简单地解释您的数字和风险。对风险的坦诚比完美的故事更能建立信任。
+
+### 让计划持续有效
+每季度检视一次，把真实数字与您的预测比较，更新您的假设，并记录您学到的东西。放在抽屉里的计划，几个月内就会失去用处。
+
+如果您需要会计师、商业顾问或贷款机构协助您的计划，可以[浏览名录](/zh)寻找本地专业人士，而[创建免费的企业列表](/zh/signup)可以帮助顾客在您开业时就找到您的企业。
+
+## 马来西亚中小企业在商业计划书上常犯的错误
+
+- **只为满足银行而写。**您自己不相信或不使用的计划无法指导您的决策，贷款机构也看得出来。
+- **高估销售、低估成本。**乐观的数字会掩盖风险，所以请建立保守的版本和更糟情况的版本。
+- **忽视现金流。**显示盈利的计划，如果资金流入晚于流出，仍然可能失败。
+- **从不更新。**市场、成本和您自己的认识都会变，所以计划需要定期检视。
+
+## 从哪里开始
+
+- **本周：**写一页纸，说明您的顾客是谁、您卖什么、您将如何赚钱，以及您为什么会赢。
+- **接着：**列出您的启动成本，估计一年的销售和成本，并建立简单的现金流预测。
+- **然后：**加入营运、人员、风险、目标和里程碑，并请您信任的人来挑战它。
+- **每季度：**把真实结果与计划比较，更新计划，并决定要改变什么。
+
+最好的计划是您真正会使用的那一份。简单地写，诚实地检验，并让它随着您的企业一起成长。`,
+        faqs: [
+          {
+            question: "小企业真的需要商业计划书吗？",
+            answer:
+              "大多数小企业在法律上并不要求，但写一份可以帮助您检验想法、规划成本，并做出更好的决策。贷款机构、补助机构和合作伙伴经常要求提供，所以值得拥有。",
+          },
+          {
+            question: "商业计划书应该多长？",
+            answer:
+              "对大多数小企业来说，几页到大约十五页就足够了。一份有真实数字和清晰推理的短计划书，胜过一份充满含糊宣称的长计划书。",
+          },
+          {
+            question: "商业计划书应该包含什么？",
+            answer:
+              "企业的描述、您的顾客和市场、您的产品和定价、您将如何接触和留住顾客、营运和人员、财务预测、风险，以及附有里程碑的目标。",
+          },
+          {
+            question: "银行和资助机构在计划书中看重什么？",
+            answer:
+              "一般是已注册的企业、资金的明确用途、现实的预测、偿还能力，以及可信的业主或团队，如有记录和信用历史也会一并看。要求各异，所以请询问每家贷款机构或计划需要什么。",
+          },
+          {
+            question: "如果还没开始，如何估计销售额？",
+            answer:
+              "以真实的驱动因素为基础，例如您能服务的顾客数量、他们的平均消费和您的产能，并通过试点、预购或与顾客交谈来检验。要保守，并展示您的假设。",
+          },
+          {
+            question: "为什么现金流是商业计划书的一部分？",
+            answer:
+              "企业可以在账面上显示盈利，但如果顾客付款晚于您必须支付供应商和员工的时间，仍然可能现金耗尽。现金流预测显示资金何时流入流出，以及您需要多少资金来弥补缺口。",
+          },
+          {
+            question: "我可以自己写，还是需要顾问？",
+            answer:
+              "您可以自己写，这样做也有助于您了解自己的企业。会计师或顾问可以帮助核对数字和假设，尤其是在您申请融资时。",
+          },
+          {
+            question: "我应该多久更新一次商业计划书？",
+            answer:
+              "至少每季度检视一次，把真实结果与您的预测比较，并更新假设。当发生重大变化时也要更新，例如新产品、新地点或重大成本变动。",
+          },
+        ],
+      },
+      ms: {
+        title: "Menulis Pelan Perniagaan untuk PKS Malaysia: Perancangan, Kewangan dan Mengemukakan untuk Pembiayaan",
+        excerpt:
+          "Pelan perniagaan bukan sekadar kertas kerja untuk bank. Ia cara anda menguji idea, menetapkan sasaran, dan mengesan masalah sebelum ia merugikan wang. Panduan ini menunjukkan kepada PKS Malaysia cara menulis pelan ringkas dan praktikal yang merangkumi pelanggan, tawaran, operasi dan kewangan mudah, apa yang cenderung dicari oleh pemberi pinjaman dan badan pembiayaan, dan bagaimana mengekalkan pelan itu berguna selepas ia ditulis.",
+        body: `Ramai pemilik perniagaan kecil menyimpan pelan mereka dalam kepala. Ia berjaya sehingga perniagaan memerlukan pinjaman, rakan kongsi, geran atau keputusan sukar tentang pertumbuhan. Pelan bertulis memaksa anda menguji andaian anda di atas kertas, di mana kesilapan murah, dan bukannya di pasaran, di mana kesilapan mahal.
+
+Pelan perniagaan tidak perlu panjang, formal atau mewah. Bagi kebanyakan perniagaan kecil, lima hingga lima belas muka surat, malah beberapa muka surat yang tersusun baik, sudah mencukupi. Yang penting ialah ia jujur, khusus dan berguna kepada anda.
+
+Ini ialah maklumat am, bukan nasihat kewangan atau undang-undang. Keperluan pemberi pinjaman, program pembiayaan, kadar dan kelayakan berubah serta berbeza mengikut institusi, jadi sahkan keperluan semasa secara terus dengan pemberi pinjaman atau agensi, dan bercakap dengan akauntan atau penasihat sebelum membuat keputusan kewangan besar.
+
+## 1. Fahami apa tujuan pelan perniagaan
+
+### Alat untuk anda dahulu
+Pelan membantu anda menguji sama ada idea anda boleh menjana wang, memutuskan apa yang perlu dilakukan dahulu, dan mengukur kemajuan. Walaupun tiada orang lain pernah membacanya, menulisnya memperbaiki keputusan anda.
+
+### Alat untuk orang lain kemudian
+Bank, badan pembiayaan, pemberi geran, pelabur, tuan tanah dan rakan kongsi mungkin meminta untuk melihat pelan. Pemberi pinjaman lazimnya meminta satu bersama permohonan pinjaman, dan ia biasanya membantu mereka memahami matlamat, angka dan cara wang itu akan digunakan. Keperluan berbeza mengikut pemberi pinjaman, jadi tanya apa yang mereka perlukan.
+
+### Pelan untuk situasi berbeza
+Perniagaan yang baru bermula memerlukan pelan untuk menguji idea dan kos permulaan. Perniagaan sedia ada mungkin memerlukannya untuk memohon pembiayaan, berkembang, membuka cawangan kedua, atau membawa masuk rakan kongsi.
+
+### Pastikan ia ringkas dan jujur
+Pelan panjang yang penuh dengan dakwaan kabur lebih buruk daripada pelan ringkas dengan angka sebenar dan alasan yang jelas. Tulis untuk pembaca yang bijak tetapi tidak mengenali perniagaan anda.
+
+### Kaitkan dengan perancangan anda yang lain
+Pelan anda berkait dengan pendaftaran, lesen, cukai dan keputusan pembiayaan anda. Lihat panduan kami tentang mendaftar perniagaan dengan SSM dan panduan kami tentang lesen dan permit perniagaan untuk asas undang-undang.
+
+## 2. Terangkan perniagaan, pelanggan dan pasaran anda
+
+Mulakan dengan pelan ringkas yang menjawab siapa pelanggan anda, apa yang anda jual, dan bagaimana anda akan menjana wang. Jika anda tidak dapat menjawab tiga soalan itu dengan jelas, lebih banyak muka surat tidak akan membantu.
+
+### Perniagaan anda dalam satu perenggan
+Nyatakan apa yang dilakukan perniagaan, di mana ia beroperasi, struktur undang-undangnya, siapa pemiliknya, dan di peringkat mana ia berada. Pastikan ia beberapa ayat sahaja.
+
+### Pelanggan anda
+Huraikan siapa yang anda layani dengan terma khusus, seperti umur, lokasi, pendapatan, keperluan dan tabiat membeli mereka. "Semua orang" bukan pelanggan. Jika anda mempunyai beberapa kumpulan, kenal pasti yang paling penting dahulu.
+
+### Masalah yang anda selesaikan
+Terangkan apa yang pelanggan hadapi sekarang, dan mengapa produk atau perkhidmatan anda penyelesaian yang lebih baik. Bukti daripada perbualan sebenar dengan pelanggan lebih meyakinkan daripada andaian.
+
+### Pasaran dan pesaing anda
+Huraikan saiz dan aliran pasaran anda dengan istilah realistik, menggunakan sumber yang boleh anda namakan. Senaraikan pesaing utama anda, termasuk yang tidak formal, dan terangkan bagaimana anda berbeza dan lebih baik untuk pelanggan pilihan anda.
+
+### Kelebihan anda
+Nyatakan dengan jelas apa yang anda lakukan lebih baik, sama ada harga, kualiti, kelajuan, lokasi, hubungan atau niche. Panduan kami tentang penetapan harga dan panduan kami tentang ditemui dalam talian boleh membantu anda menguji kedudukan anda.
+
+## 3. Terangkan tawaran, harga dan pemasaran anda
+
+### Produk dan perkhidmatan anda
+Senaraikan apa yang anda jual, dengan ciri utama, piawaian kualiti, dan sebarang lesen atau pensijilan yang diperlukan. Bagi produk makanan atau kesihatan, lihat panduan kami tentang pensijilan halal dan panduan kami tentang memulakan perniagaan makanan.
+
+### Harga anda
+Tunjukkan cara anda menetapkan harga, margin yang dijangka, dan bagaimana harga anda dibandingkan dengan orang lain. Asaskan pada kos sebenar, bukan tekaan. Panduan kami tentang penetapan harga menerangkan cara mengira kos dan margin.
+
+### Bagaimana anda akan menjangkau pelanggan
+Huraikan saluran yang akan anda gunakan, seperti kedai, pasaran dalam talian, media sosial, rujukan atau jualan terus, dan kira-kira apa yang akan anda belanjakan. Panduan kami tentang menjual dalam talian dan panduan kami tentang pemasaran media sosial merangkumi pilihan.
+
+### Bagaimana anda akan mengekalkan pelanggan
+Terangkan bagaimana anda akan memperoleh perniagaan berulang melalui perkhidmatan, kualiti, tawaran kesetiaan, dan mengendalikan aduan dengan baik. Panduan kami tentang aduan pelanggan dan hak pengguna merangkumi perkara ini.
+
+### Uji sebelum berbelanja
+Jika boleh, uji tawaran anda pada skala kecil dahulu, seperti kelompok perintis, pra-pesanan atau bulan percubaan, dan rekodkan apa yang anda pelajari.
+
+## 4. Terangkan bagaimana perniagaan akan beroperasi
+
+### Lokasi dan premis
+Nyatakan di mana anda akan beroperasi, sama ada anda menyewa atau memiliki, dan ruang serta pengubahsuaian yang anda perlukan. Panduan kami tentang menyewa premis komersial dan panduan kami tentang menjalankan perniagaan dari rumah menerangkan pilihan.
+
+### Orang
+Senaraikan siapa yang terlibat, pengalaman mereka, dan peranan yang perlu anda ambil. Sertakan kemahiran dan jurang anda sendiri dengan jujur, kerana pemberi pinjaman dan rakan kongsi meneliti orang di sebalik pelan dengan teliti. Panduan kami tentang mengambil pekerja pertama merangkumi asas undang-undang, dan panduan kami tentang bekerja dengan pekerja bebas merangkumi bantuan fleksibel.
+
+### Pembekal dan stok
+Terangkan siapa yang membekalkan anda, apa terma anda, dan bagaimana anda akan menguruskan stok. Panduan kami tentang pengurusan inventori merangkumi perkara ini dengan terperinci.
+
+### Peralatan, sistem dan teknologi
+Senaraikan peralatan dan perisian yang anda perlukan, termasuk cara anda menyimpan akaun dan melindungi data. Lihat panduan kami tentang asas simpan kira dan panduan kami tentang keselamatan siber.
+
+### Undang-undang, lesen dan risiko
+Senaraikan pendaftaran, lesen, insurans dan pematuhan yang anda perlukan, dan risiko utama, dengan cara anda menanganinya. Panduan kami tentang insurans perniagaan menerangkan perlindungan untuk risiko lazim.
+
+## 5. Bina unjuran kewangan yang mudah
+
+### Kos permulaan dan modal
+Senaraikan apa yang mesti anda belanjakan sebelum membuka, seperti deposit, pengubahsuaian, peralatan, stok, lesen dan pemasaran awal, dan cara anda akan membiayainya.
+
+### Ramalan jualan
+Anggarkan jualan anda bulan demi bulan untuk tahun pertama, kemudian setiap tahun untuk dua atau tiga tahun berikutnya. Asaskan pada pemacu sebenar seperti bilangan pelanggan, perbelanjaan purata dan kapasiti, bukannya peratusan yang penuh harapan. Bersikap konservatif.
+
+### Kos dan keuntungan
+Ramalkan kos langsung, overhed dan keuntungan anda, termasuk kos kakitangan dan caruman berkanun. Ingat cukai. Lihat panduan kami tentang kalendar cukai perniagaan kecil dan panduan kami tentang potongan cukai untuk apa yang perlu disertakan.
+
+### Aliran tunai
+Tunjukkan bila wang masuk dan keluar, kerana pelan yang menguntungkan masih boleh kehabisan wang tunai. Panduan kami tentang menguruskan aliran tunai menerangkan cara membina ramalan yang mudah.
+
+### Pulang modal dan keperluan pembiayaan
+Kira berapa jualan yang anda perlukan untuk pulang modal, dan berapa pembiayaan yang anda perlukan untuk bertahan sehingga anda mencapainya, termasuk penimbal untuk kelewatan. Panduan kami tentang geran dan pembiayaan PKS dan panduan kami tentang membuka akaun bank perniagaan menerangkan di mana hendak mencari.
+
+### Tunjukkan andaian anda
+Tulis apa asas setiap angka, supaya pembaca dapat menilainya dan anda dapat mengemas kininya kemudian. Jalankan juga versi senario lebih buruk, untuk melihat berapa banyak ruang yang anda ada.
+
+> Pelan bukan ramalan, ia satu set andaian yang boleh anda semak. Nilainya terletak pada mengetahui andaian mana yang salah lebih awal, ketika mengubahnya masih berkos rendah.
+
+## 6. Tetapkan matlamat, pencapaian dan ukuran
+
+### Tetapkan matlamat khusus
+Pilih beberapa matlamat yang jelas, seperti sasaran jualan bulanan, bilangan pelanggan, margin kasar atau tarikh pembukaan. Tujuan kabur seperti "mengembangkan perniagaan" tidak dapat disemak.
+
+### Pecahkan matlamat kepada pencapaian
+Ubah setiap matlamat menjadi langkah dengan tarikh dan pemilik, contohnya "tandatangani pajakan menjelang Mac" atau "capai 100 pelanggan berulang menjelang Jun".
+
+### Pilih beberapa angka untuk diperhatikan
+Pilih ukuran yang memberitahu anda sama ada pelan berjaya, seperti jualan, margin, baki tunai, pemulangan pelanggan dan aduan. Semaknya setiap bulan.
+
+### Rancang untuk apa yang mungkin tidak kena
+Kenal pasti risiko terbesar anda, seperti pembayar lewat, pembekal utama gagal, atau permulaan yang perlahan, dan tentukan lebih awal apa yang akan anda lakukan. Panduan kami tentang menuntut bayaran lewat ialah satu contoh.
+
+### Tentukan apa yang akan membuat anda menukar haluan
+Tetapkan titik pencetus, seperti "jika jualan di bawah sasaran selama tiga bulan, kami mengurangkan kos atau menukar tawaran", supaya anda bertindak awal.
+
+## 7. Kemukakan untuk pembiayaan dan kekalkan pelan itu hidup
+
+### Ketahui apa yang cenderung dicari oleh pemberi pinjaman dan pembiaya
+Mereka secara amnya mahu melihat perniagaan berdaftar, tujuan wang yang jelas, unjuran realistik, keupayaan membayar balik, dan pemilik atau pasukan yang boleh dipercayai, serta rekod dan sejarah kredit jika ada. Keperluan berbeza mengikut pemberi pinjaman dan program, jadi tanya setiap satu apa yang mereka perlukan dan semak terma semasa.
+
+### Padankan pembiayaan dengan keperluan
+Gunakan pembiayaan jangka pendek untuk keperluan jangka pendek, dan pembiayaan jangka lebih panjang untuk peralatan dan pengembangan. Skim berkaitan kerajaan dan jaminan mungkin tersedia, jadi semak tawaran semasa. Lihat panduan kami tentang geran dan pembiayaan PKS.
+
+### Sediakan dokumen anda
+Sediakan dokumen pendaftaran, penyata kewangan atau penyata bank, pelan yang jelas, dan kenyataan tentang cara dana akan digunakan. Panduan kami tentang kekal patuh dengan rekod SSM merangkumi dokumen syarikat.
+
+### Kemukakan dengan jelas
+Sediakan ringkasan satu muka surat dan bersedia menerangkan angka dan risiko anda dengan mudah. Kejujuran tentang risiko membina kepercayaan lebih daripada cerita yang sempurna.
+
+### Kekalkan pelan itu hidup
+Semaknya setiap suku tahun, bandingkan angka sebenar dengan ramalan anda, kemas kini andaian anda, dan rekodkan apa yang anda pelajari. Pelan yang terletak dalam laci berhenti berguna dalam beberapa bulan.
+
+Jika anda memerlukan akauntan, penasihat perniagaan atau pemberi pinjaman untuk membantu dengan pelan anda, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pelanggan menemui perniagaan anda sebaik sahaja anda dibuka.
+
+## Kesilapan lazim PKS Malaysia dengan pelan perniagaan
+
+- **Menulisnya hanya untuk memuaskan bank.** Pelan yang tidak anda percayai atau gunakan tidak akan membimbing keputusan anda, dan pemberi pinjaman dapat melihatnya.
+- **Menganggar jualan terlalu tinggi dan kos terlalu rendah.** Angka optimistik menyembunyikan risiko, jadi bina kes konservatif dan versi senario lebih buruk.
+- **Mengabaikan aliran tunai.** Pelan yang menunjukkan keuntungan masih boleh gagal jika wang tiba lebih lewat daripada ia keluar.
+- **Tidak pernah mengemas kininya.** Pasaran, kos dan pengetahuan anda sendiri berubah, jadi pelan memerlukan semakan berkala.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Tulis satu muka surat tentang siapa pelanggan anda, apa yang anda jual, bagaimana anda akan menjana wang, dan mengapa anda akan menang.
+- **Seterusnya:** Senaraikan kos permulaan anda, anggarkan setahun jualan dan kos, dan bina ramalan aliran tunai yang mudah.
+- **Kemudian:** Tambah operasi, orang, risiko, matlamat dan pencapaian, dan minta seseorang yang anda percayai mencabarnya.
+- **Setiap suku tahun:** Bandingkan hasil sebenar dengan pelan, kemas kininya, dan tentukan apa yang perlu diubah.
+
+Pelan terbaik ialah yang benar-benar anda gunakan. Tulis dengan mudah, uji dengan jujur, dan biarkan ia berkembang bersama perniagaan anda.`,
+        faqs: [
+          {
+            question: "Adakah saya benar-benar memerlukan pelan perniagaan untuk perniagaan kecil?",
+            answer:
+              "Ia tidak diwajibkan oleh undang-undang untuk kebanyakan perniagaan kecil, tetapi menulisnya membantu anda menguji idea, merancang kos, dan membuat keputusan yang lebih baik. Pemberi pinjaman, badan geran dan rakan kongsi sering memintanya, jadi ia berbaloi dimiliki.",
+          },
+          {
+            question: "Berapa panjang pelan perniagaan patut ditulis?",
+            answer:
+              "Bagi kebanyakan perniagaan kecil, beberapa hingga kira-kira lima belas muka surat sudah mencukupi. Pelan ringkas dengan angka sebenar dan alasan jelas lebih baik daripada yang panjang penuh dakwaan kabur.",
+          },
+          {
+            question: "Apa yang perlu ada dalam pelan perniagaan?",
+            answer:
+              "Huraian perniagaan, pelanggan dan pasaran anda, tawaran dan harga anda, cara anda menjangkau dan mengekalkan pelanggan, operasi dan orang, unjuran kewangan, risiko, dan matlamat dengan pencapaian.",
+          },
+          {
+            question: "Apa yang dicari oleh bank dan badan pembiayaan dalam pelan?",
+            answer:
+              "Secara amnya perniagaan berdaftar, tujuan wang yang jelas, unjuran realistik, keupayaan membayar balik, dan pemilik atau pasukan yang boleh dipercayai, serta rekod dan sejarah kredit jika ada. Keperluan berbeza, jadi tanya setiap pemberi pinjaman atau program apa yang mereka perlukan.",
+          },
+          {
+            question: "Bagaimanakah saya menganggar jualan jika saya belum bermula?",
+            answer:
+              "Asaskan pada pemacu sebenar seperti bilangan pelanggan yang boleh anda layani, perbelanjaan purata mereka dan kapasiti anda, dan uji dengan projek perintis, pra-pesanan atau perbualan pelanggan. Bersikap konservatif dan tunjukkan andaian anda.",
+          },
+          {
+            question: "Mengapa aliran tunai sebahagian daripada pelan perniagaan?",
+            answer:
+              "Perniagaan boleh menunjukkan keuntungan di atas kertas dan masih kehabisan wang tunai jika pelanggan membayar lebih lewat daripada anda mesti membayar pembekal dan kakitangan. Ramalan aliran tunai menunjukkan bila wang masuk dan keluar, dan berapa pembiayaan yang anda perlukan untuk merapatkan jurang.",
+          },
+          {
+            question: "Bolehkah saya menulis pelan sendiri, atau perlukan perunding?",
+            answer:
+              "Anda boleh menulisnya sendiri, dan berbuat demikian membantu anda memahami perniagaan anda. Akauntan atau penasihat boleh membantu menyemak angka dan andaian, terutamanya jika anda memohon pembiayaan.",
+          },
+          {
+            question: "Berapa kerap saya patut mengemas kini pelan perniagaan saya?",
+            answer:
+              "Semak sekurang-kurangnya setiap suku tahun, bandingkan hasil sebenar dengan ramalan anda, dan kemas kini andaian anda. Kemas kini juga apabila sesuatu yang besar berubah, seperti produk baharu, lokasi baharu atau perubahan kos utama.",
+          },
+        ],
+      },
+    },
+  },
 ];

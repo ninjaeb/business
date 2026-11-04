@@ -115,17 +115,6 @@
       "usedBy": "contracts-and-terms-for-small-businesses-in-malaysia-cover.webp"
     },
     {
-      "id": 7845342,
-      "tags": [
-        "strategy",
-        "funding",
-        "meeting",
-        "presentation"
-      ],
-      "description": "Group reviewing a pie chart in a strategy meeting",
-      "usedBy": null
-    },
-    {
       "id": 7964411,
       "tags": [
         "hr",
@@ -345,7 +334,7 @@
         "general"
       ],
       "description": "Focused Asian man at a desk deep in thought",
-      "usedBy": null
+      "usedBy": "writing-a-business-plan-for-a-malaysian-sme-cover.webp"
     },
     {
       "id": 4473351,
@@ -617,6 +606,36 @@
       ],
       "description": "Florist smiles while accepting payment in a flower shop",
       "usedBy": "customer-complaints-refunds-and-consumer-rights-in-malaysia-cover.webp"
+    },
+    {
+      "id": 38195854,
+      "tags": [
+        "inventory",
+        "shelves",
+        "boxes"
+      ],
+      "description": "Organized shelves holding stacked cardboard boxes for storage and logistics",
+      "usedBy": "managing-inventory-and-stock-for-malaysian-smes-cover.webp"
+    },
+    {
+      "id": 12681314,
+      "tags": [
+        "inventory",
+        "market",
+        "vegetables"
+      ],
+      "description": "Woman sorting vegetables at an indoor market stall",
+      "usedBy": "managing-inventory-and-stock-for-malaysian-smes-sorting.webp"
+    },
+    {
+      "id": 9304662,
+      "tags": [
+        "planning",
+        "businesswoman",
+        "documents"
+      ],
+      "description": "Asian businesswoman standing with a laptop and documents in an office",
+      "usedBy": "writing-a-business-plan-for-a-malaysian-sme-planning.webp"
     }
   ]
 }
