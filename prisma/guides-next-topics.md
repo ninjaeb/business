@@ -15,14 +15,14 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Managing Inventory and Stock for Malaysian SMEs: Ordering, Tracking, and Cutting Waste**
-   — Why stock ties up cash, counting and tracking methods (spreadsheets
-   to simple inventory apps), reorder points and safety stock, supplier
-   lead times, handling slow-moving and expired stock, shrinkage and theft,
-   seasonal peaks such as festive periods, and links to pricing and cash flow.
+1. **Building an Employee Handbook and HR Policies for Malaysian SMEs: Hours, Overtime, and Discipline**
+   — Why a written handbook prevents disputes: working hours, overtime and
+   rest days under the Employment Act (thresholds to be hedged), leave and
+   attendance rules, conduct and disciplinary procedure, grievance handling,
+   workplace harassment policy, performance reviews, and keeping it updated.
 
-2. **Writing a Business Plan for a Malaysian SME: Planning, Financials, and Pitching for Funding**
-   — A practical business plan for a small Malaysian business: market and
-   customer analysis, offer and pricing, operations, simple financial
-   projections, goals and milestones, what banks and grant bodies look for,
-   and how to keep the plan alive after you write it.
+2. **Selling Your Business or Planning Succession in Malaysia: Valuation, Due Diligence, and Handover**
+   — How owners prepare to sell or pass on a small business: tidying the
+   books, valuation approaches, finding buyers, due diligence, transferring
+   contracts, licences and staff, tax considerations to confirm with an
+   adviser, and succession planning for family businesses.
