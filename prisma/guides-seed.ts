@@ -20237,4 +20237,1287 @@ Menjual atau menyerahkan perniagaan ialah projek jangka panjang. Semakin awal an
       },
     },
   },
+  {
+    slug: "accepting-digital-payments-in-malaysia",
+    title: "Accepting Digital Payments in Malaysia: DuitNow QR, E-Wallets, Cards, and Fees",
+    seoTitle: "Accepting Digital Payments in Malaysia: A Guide for SMEs",
+    seoDescription:
+      "How Malaysian SMEs can accept digital payments: DuitNow QR, e-wallets, cards and gateways, comparing fees, reconciling sales and avoiding fraud.",
+    coverImage: {
+      file: "accepting-digital-payments-in-malaysia-cover.webp",
+      mimeType: "image/webp",
+      alt: "A smiling shop assistant in a black top holding out a card payment terminal to a customer at a salon counter",
+      altTranslations: {
+        zh: "一位身穿黑色上衣的微笑店员在美容院柜台前向顾客递出刷卡付款机",
+        ms: "Seorang pembantu kedai tersenyum berbaju hitam menghulurkan terminal pembayaran kad kepada pelanggan di kaunter salun",
+      },
+    },
+    contentImages: {
+      counter: {
+        file: "accepting-digital-payments-in-malaysia-counter.webp",
+        mimeType: "image/webp",
+        alt: "A man in a white coat behind a counter handing a bottled product to a customer, with a laptop in the foreground",
+        altTranslations: {
+          zh: "一位身穿白袍的男士站在柜台后，把一瓶产品递给顾客，前景有一台笔记本电脑",
+          ms: "Seorang lelaki berkot putih di belakang kaunter menyerahkan produk berbotol kepada pelanggan, dengan komputer riba di hadapan",
+        },
+        after: "Choose payment methods your customers already use before you sign up for every option on offer.",
+        afterTranslations: {
+          zh: "在注册所有可用的选项之前，先选择您的顾客已经在使用的付款方式。",
+          ms: "Pilih kaedah pembayaran yang sudah digunakan oleh pelanggan anda sebelum anda mendaftar untuk setiap pilihan yang ditawarkan.",
+        },
+      },
+    },
+    excerpt:
+      "More customers now expect to pay by QR code, e-wallet, or card instead of cash. This guide shows Malaysian SMEs how the main digital payment methods work, how to compare fees and settlement times, how to set up payments in a shop and online, how to reconcile sales and keep records, and how to avoid payment fraud and chargebacks.",
+    body: `Cash still works, but it is no longer enough. Customers scan a QR code, tap a card, or pay from an e-wallet, and a shop that cannot accept these may lose the sale. Digital payments also create automatic records, reduce cash handling, and make it easier to run an online store.
+
+They are not free, though. Each method has fees, rules, and settlement times, and the cheapest option on paper is not always the best for your business. A little planning saves money and avoids surprises.
+
+This is general information, not financial advice. Fees, waivers, settlement times, and rules differ by bank, provider, and business type, and change often. Always confirm the current terms with the provider before you sign up, and compare more than one offer.
+
+## 1. Understand the main ways customers pay digitally
+
+### DuitNow QR
+DuitNow QR lets customers scan one QR code with the banking app or e-wallet they already have, and the payment goes into your account. Because many apps can read it, one code can serve many customers. Providers, usually banks or payment companies, issue the code to your business.
+
+### E-wallets
+Customers load money into an e-wallet app and pay from it, by scanning your code or by showing theirs. Each e-wallet has its own merchant terms, and some also run promotions that can attract customers.
+
+### Debit and credit cards
+Customers tap, insert, or swipe a card on a terminal at your counter, or enter card details online. Cards usually involve a merchant discount rate, a percentage of each sale charged to you.
+
+### Online banking and bank transfers
+Customers can pay by transfer, including instant transfers, which suits larger orders and invoices. They need clear payment details, and you need a way to match each payment to an order.
+
+### Buy now, pay later and other options
+Some providers offer instalment payments. These can increase the order value but carry their own fees, so check the terms and who bears the risk of non-payment.
+
+### Cash is still part of the mix
+Many customers still use cash, so aim to offer choices, not replace one method with another overnight.
+
+## 2. Decide which methods to offer
+
+Choose payment methods your customers already use before you sign up for every option on offer. Each extra method adds setup, fees, and reconciliation work.
+
+### Look at your customers
+Ask or observe how they like to pay. A cafe near offices may need QR and cards, while a market stall may do best with QR and cash. Online customers expect cards, online banking, and popular e-wallets.
+
+### Look at your average sale
+Fees that are a percentage of each sale hurt most on large tickets, while fixed fees per transaction hurt most on small ones. Check how the fee structure fits your typical order value.
+
+### Look at your cash flow
+Settlement time, which is how long it takes for money to reach your account, matters if you pay suppliers and wages frequently. Our guide on cash flow explains why timing matters.
+
+### Look at your costs
+Compare terminal rental or purchase, setup fees, monthly fees, and any minimum charges. Our guide on pricing explains how to build these costs into your prices.
+
+### Start with two or three
+Most small businesses do well with one QR option, one card option if customers ask for it, and cash. Add more as demand grows.
+
+## 3. Compare fees and terms carefully
+
+### Types of fees to ask about
+Ask about the merchant discount rate, per-transaction fees, setup fees, terminal rental, monthly or minimum fees, fees for refunds and chargebacks, and fees for faster settlement. Ask for everything in writing.
+
+### Fees change, and may be waived
+Fee structures for QR payments have changed over time, and some banks and providers have waived or reduced fees for smaller merchants, with the position differing by provider. Never assume that a fee you read about applies to you. Ask your provider what it charges your business today, and whether any waiver has conditions or an end date.
+
+### Settlement time and method
+Ask when money arrives, whether it is the same day or after a few days, whether weekends and public holidays delay it, and whether fees are deducted before or after settlement.
+
+### Contracts and lock-ins
+Check contract length, termination fees, and what happens if you want to switch. Our guide on contracts and terms explains how to read clauses before signing.
+
+### Who is the provider
+Use established banks and licensed payment providers, and check that the company is properly authorised. Be careful of anyone who approaches you with very low rates or asks for large upfront payments.
+
+### Think about the total cost
+A low percentage rate can be cancelled out by high monthly fees. Estimate the real monthly cost using your own sales volume.
+
+## 4. Set up payments in a shop
+
+### Display your QR code properly
+Put the code where customers can see it, and use the official code issued to your business, not a handwritten or photocopied one. Check periodically that nobody has stuck another code over yours.
+
+### Confirm payments before releasing goods
+Do not rely on a customer showing a screenshot. Check that the money has arrived through your provider's app, a soundbox, or a notification, since fake payment screens exist.
+
+### Train your staff
+Show everyone how to confirm a payment, handle a failed payment, process a refund, and what to do if something looks wrong.
+
+### Keep a backup
+Have an alternative if the network or terminal fails, such as a second QR code, a mobile hotspot, or cash, so that you do not lose sales during an outage.
+
+### Separate business money
+Use a business account so that payments, fees, and records are separate from your personal money. Our guide on opening a business bank account explains the options.
+
+### Display your options
+Let customers know which methods you accept before they reach the counter.
+
+## 5. Set up payments for an online store
+
+### Choose a payment gateway
+A payment gateway lets customers pay by card, online banking, and e-wallets on your website or marketplace. Compare fees, supported methods, settlement time, and how easily it connects to your store.
+
+### Marketplaces handle payment for you
+If you sell through a marketplace, the platform usually collects payment and pays you later after deducting fees. Check their commission, payout timing, and how they handle refunds and disputes. Our guide on selling online covers marketplace and shop setups.
+
+### Make checkout simple
+Offer the payment methods your buyers expect, keep the process short, and show the total price including shipping and any tax before payment. Our guide on pricing explains how to show prices clearly.
+
+### Secure your site
+Use secure pages, keep your software updated, and never store card details yourself. Our guide on cybersecurity explains basic protections.
+
+### Send confirmations
+Send an order confirmation and a receipt, and keep a record of each payment. Where e-invoicing applies to you, our guide on e-invoicing explains the rules.
+
+## 6. Reconcile your sales and keep records
+
+### Match every payment
+Compare your sales records with what actually reached your bank account, after fees. Differences can mean missing payments, wrong amounts, or unexplained deductions.
+
+### Record fees correctly
+Fees are a business cost, and they reduce what you receive. Record both the gross sale and the fee, so your books show true revenue and cost. Our guide on bookkeeping basics explains how.
+
+### Reconcile regularly
+Do it daily or weekly rather than leaving it to month-end, so that you catch problems quickly.
+
+### Use the reports
+Providers usually offer statements and dashboards, so download them and keep them with your accounts.
+
+> Digital payments make money easier to collect, but only reconciliation tells you whether the money you earned is the money you received. Check the numbers on a schedule, not only when something goes wrong.
+
+### Keep tax in mind
+Digital payments leave a clear trail of your income, which tax authorities can see too. Keep records that support what you report. Our guide on the small business tax calendar lists the usual deadlines.
+
+## 7. Prevent fraud, errors, and chargebacks
+
+### Common frauds
+Fake payment screenshots, fake notifications, overpayment followed by a refund request, stolen cards, and QR codes that have been swapped are common. Always confirm that the money is in your account.
+
+### Refund carefully
+Refund to the same method used for the original payment where possible, and check the payment first. Be wary of customers who push you to refund to a different account.
+
+### Understand chargebacks
+A customer can ask their bank to reverse a card payment, for example for a claimed non-delivery. Keep proof of the order, delivery, and communication, and respond within the deadlines. Our guide on customer complaints and consumer rights explains how to handle disputes well.
+
+### Protect customer data
+If you collect personal or payment details, handle them with care. Our guide on personal data protection explains your duties.
+
+### Report problems quickly
+If you suspect fraud, contact your provider and bank straight away, and keep the evidence.
+
+If you need a payment provider, an accountant, or an IT adviser to set this up, you can [browse the directory](/en) for local professionals, and [creating a free business listing](/en/signup) helps customers find your business and see how they can pay you.
+
+## Common mistakes Malaysian SMEs make with digital payments
+
+- **Signing up for every method.** Extra methods add fees and reconciliation work, and customers may only use one or two.
+- **Assuming fees or waivers apply to you.** Terms differ by provider and change, so confirm your own rate and any conditions in writing.
+- **Releasing goods on a screenshot.** Fake payment screens exist, so always confirm the money has arrived.
+- **Not reconciling.** Without regular checks, missing payments and unexplained deductions go unnoticed.
+
+## Where to start
+
+- **This week:** Ask your regular customers how they prefer to pay, and review what you accept now.
+- **Next:** Get written quotes from two or three providers, comparing the total monthly cost and settlement time.
+- **Then:** Set up your chosen methods, train staff to confirm payments, and prepare a backup.
+- **Every week:** Reconcile payments with your bank, record fees, and keep the statements.
+
+Digital payments are a convenience for customers and a tool for you. Choose carefully, check the terms, and keep your records tidy.`,
+    faqs: [
+      {
+        question: "Which digital payment methods should a small shop accept?",
+        answer:
+          "Start with what your customers already use, usually a QR option that works with many banking apps and e-wallets, plus cards if customers ask for them, and cash. Add more as demand grows, since each method adds fees and reconciliation work.",
+      },
+      {
+        question: "What is DuitNow QR?",
+        answer:
+          "A QR code that customers can scan with many banking apps and e-wallets to pay you directly into your account. Providers such as banks and payment companies issue the code to your business, and their terms and fees differ.",
+      },
+      {
+        question: "What fees will I pay for digital payments?",
+        answer:
+          "It depends on the method and provider. Ask about the merchant discount rate, per-transaction fees, setup, terminal rental, monthly or minimum fees, and refund or chargeback fees. Some fees have been waived or reduced for smaller merchants, but terms vary, so confirm what applies to you in writing.",
+      },
+      {
+        question: "How long does it take for money to reach my account?",
+        answer:
+          "Settlement times differ by method and provider, from the same day to a few days, and weekends and public holidays can delay it. Ask each provider and check how settlement affects your cash flow.",
+      },
+      {
+        question: "How do I know a customer has really paid?",
+        answer:
+          "Do not rely on a screenshot. Confirm the payment in your provider's app, on a soundbox, or in your bank notifications before you release goods, since fake payment screens exist.",
+      },
+      {
+        question: "Should I use a payment gateway or sell through a marketplace?",
+        answer:
+          "A gateway gives you more control and lets customers pay on your own website, but you manage the setup and disputes. A marketplace handles payment for you but takes commission and controls payout timing. Compare costs and terms for your situation.",
+      },
+      {
+        question: "What is a chargeback?",
+        answer:
+          "When a customer asks their bank or card provider to reverse a card payment, for example for a claimed non-delivery. Keep proof of the order, delivery, and communication, and respond within the deadline given.",
+      },
+      {
+        question: "How should I record digital payments in my accounts?",
+        answer:
+          "Record the gross sale and the fee separately, and reconcile your sales records against your bank account regularly, daily or weekly. Keep provider statements with your accounts, since they also support your tax records.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "在马来西亚接受数码付款：DuitNow QR、电子钱包、银行卡与费用",
+        excerpt:
+          "越来越多顾客期望用二维码、电子钱包或银行卡付款，而不是现金。本指南向马来西亚中小企业说明主要数码付款方式如何运作、如何比较费用和结算时间、如何在店面和网上设置付款、如何对账和保存记录，以及如何避免付款欺诈和拒付。",
+        body: `现金仍然管用，但已经不够了。顾客扫描二维码、轻触银行卡，或用电子钱包付款，不能接受这些的店铺可能会失去这笔生意。数码付款还会自动留下记录、减少现金处理，并让经营网店更容易。
+
+不过，它们并非免费。每种方式都有费用、规则和结算时间，纸面上最便宜的选项不一定最适合您的企业。事先做一点规划，既省钱又避免意外。
+
+以下仅为一般资讯，并非财务意见。费用、减免、结算时间和规则因银行、服务商和业务类型而异，并且经常变动。在注册之前，请务必向服务商确认现行条款，并比较多个报价。
+
+## 1. 了解顾客主要的数码付款方式
+
+### DuitNow QR
+DuitNow QR 让顾客用他们已有的银行应用程序或电子钱包扫描同一个二维码，款项直接进入您的账户。由于许多应用程序都能读取，一个码就可以服务许多顾客。服务商，通常是银行或支付公司，会向您的企业发出该二维码。
+
+### 电子钱包
+顾客把钱充值到电子钱包应用程序中并从中付款，方式是扫描您的二维码或出示他们的二维码。每个电子钱包有各自的商家条款，有些还举办促销，可以吸引顾客。
+
+### 借记卡和信用卡
+顾客在您柜台的终端机上轻触、插入或刷卡，或在网上输入卡片资料。银行卡通常涉及商家折扣率，即向您收取的每笔销售的一个百分比。
+
+### 网络银行和银行转账
+顾客可以通过转账付款，包括即时转账，这适合较大的订单和发票。他们需要清晰的付款资料，而您需要有办法把每笔付款与订单对应起来。
+
+### 先买后付和其他选项
+有些服务商提供分期付款。这些可以提高订单金额，但有各自的费用，所以请查核条款以及谁承担不付款的风险。
+
+### 现金仍是组合的一部分
+许多顾客仍使用现金，所以目标是提供更多选择，而不是一夜之间以一种方式取代另一种。
+
+## 2. 决定提供哪些方式
+
+在注册所有可用的选项之前，先选择您的顾客已经在使用的付款方式。每增加一种方式，就增加设置、费用和对账工作。
+
+### 观察您的顾客
+询问或观察他们喜欢怎样付款。办公室附近的咖啡店可能需要二维码和银行卡，而市场摊位可能最适合二维码和现金。网上顾客期望银行卡、网络银行和常用的电子钱包。
+
+### 看您的平均销售额
+按每笔销售百分比收取的费用，对大额交易伤害最大，而每笔交易的固定费用，对小额交易伤害最大。请查看费用结构是否适合您的典型订单金额。
+
+### 看您的现金流
+结算时间，即款项多久到达您的账户，在您经常支付供应商和工资时很重要。我们关于现金流的指南说明了为什么时间安排很重要。
+
+### 看您的成本
+比较终端机的租用或购买、设置费、月费以及任何最低收费。我们关于定价的指南说明了如何把这些成本计入您的价格。
+
+### 从两三种开始
+大多数小企业只需一种二维码选项、顾客有要求时再加一种银行卡选项，加上现金，就做得不错。随着需求增长再增加。
+
+## 3. 仔细比较费用和条款
+
+### 需要询问的费用类型
+询问商家折扣率、每笔交易费、设置费、终端机租金、月费或最低费用、退款和拒付的费用，以及更快结算的费用。要求所有内容都以书面形式提供。
+
+### 费用会变，也可能被减免
+二维码付款的费用结构随时间变化，有些银行和服务商对较小的商家减免或降低了费用，而各服务商的情况不同。切勿假定您读到的某项费用适用于您。请询问您的服务商今天对您的企业收取什么，以及任何减免是否有条件或结束日期。
+
+### 结算时间和方式
+询问款项何时到账，是当天还是几天后，周末和公共假期是否会延迟，以及费用是在结算之前还是之后扣除。
+
+### 合约和锁定期
+查核合约期限、终止费，以及如果您想更换会发生什么。我们关于合约与条款的指南说明了如何在签署前阅读各条款。
+
+### 谁是服务商
+使用信誉良好的银行和持牌的支付服务商，并查核该公司是否获得适当授权。对主动上门、开出极低费率或要求大笔预付款的人要保持警惕。
+
+### 考虑总成本
+低百分比费率可能被高额月费抵消。请用您自己的销售量估算真实的每月成本。
+
+## 4. 在店里设置付款
+
+### 妥善展示您的二维码
+把二维码放在顾客看得到的地方，并使用发给您企业的官方二维码，而不是手写或复印的。请定期检查有没有人在您的码上贴了另一个码。
+
+### 在交货之前确认付款
+不要依赖顾客出示的截图。请通过服务商的应用程序、收款提示音箱或通知确认款项已经到账，因为假的付款画面确实存在。
+
+### 培训您的员工
+向每个人示范如何确认付款、处理付款失败、办理退款，以及遇到可疑情况该怎么做。
+
+### 准备后备方案
+准备好网络或终端机故障时的替代办法，例如第二个二维码、手机热点或现金，让您不会在中断期间流失销售。
+
+### 把企业的钱分开
+使用企业账户，让付款、费用和记录与您的个人资金分开。我们关于开立企业银行账户的指南说明了各种选择。
+
+### 展示您接受的方式
+让顾客在走到柜台之前就知道您接受哪些方式。
+
+## 5. 为网店设置付款
+
+### 选择支付网关
+支付网关让顾客在您的网站或电商平台上用银行卡、网络银行和电子钱包付款。请比较费用、支持的方式、结算时间，以及它与您的网店对接是否容易。
+
+### 电商平台为您处理付款
+如果您通过电商平台销售，平台通常先收款，再扣除费用后日后付给您。请查核它们的佣金、付款时间，以及如何处理退款和纠纷。我们关于网络销售的指南涵盖了平台和网店的设置。
+
+### 让结账简单
+提供买家期望的付款方式，保持流程简短，并在付款之前显示含运费和任何税款的总价。我们关于定价的指南说明了如何清楚地显示价格。
+
+### 保护您的网站
+使用安全页面，让软件保持更新，并且绝不要自己存储银行卡资料。我们关于网络安全的指南说明了基本的保护措施。
+
+### 发送确认
+发送订单确认和收据，并保存每笔付款的记录。如果电子发票适用于您，我们关于电子发票的指南说明了相关规定。
+
+## 6. 对账并保存记录
+
+### 核对每一笔付款
+把您的销售记录与扣除费用后实际到达您银行账户的款项比较。差异可能意味着付款遗失、金额错误或不明的扣款。
+
+### 正确记录费用
+费用是企业的成本，会减少您实际收到的金额。请同时记录销售总额和费用，让您的账目显示真实的收入和成本。我们关于簿记基础的指南说明了如何做到这一点。
+
+### 定期对账
+每天或每周进行，而不是留到月底，这样您能及早发现问题。
+
+### 使用报表
+服务商通常提供对账单和仪表板，请下载并与您的账目一起保存。
+
+> 数码付款让收钱更容易，但只有对账才能告诉您，您赚到的钱是否就是您收到的钱。请按计划核对数字，而不是只在出问题时才检查。
+
+### 留意税务
+数码付款为您的收入留下清晰的轨迹，税务机关也能看到。请保存能支持您所申报内容的记录。我们关于小企业税务日历的指南列出了常见的截止日期。
+
+## 7. 预防欺诈、差错和拒付
+
+### 常见的欺诈
+假的付款截图、假的通知、多付款后要求退款、被盗的银行卡，以及被调换的二维码都很常见。请务必确认款项已经进入您的账户。
+
+### 谨慎退款
+尽可能退回到原付款所用的同一种方式，并先核对该笔付款。对催促您退款到另一个账户的顾客要保持警惕。
+
+### 了解拒付
+顾客可以要求其银行撤销一笔银行卡付款，例如声称未收到货。请保存订单、送货和沟通的证明，并在期限内回应。我们关于顾客投诉和消费者权利的指南说明了如何妥善处理纠纷。
+
+### 保护顾客资料
+如果您收集个人或付款资料，请谨慎处理。我们关于个人资料保护的指南说明了您的责任。
+
+### 迅速报告问题
+如果您怀疑有欺诈，请立即联系您的服务商和银行，并保存证据。
+
+如果您需要支付服务商、会计师或 IT 顾问协助设置，可以[浏览名录](/zh)寻找本地专业人士，而[创建免费的企业列表](/zh/signup)可以帮助顾客找到您的企业，并了解如何向您付款。
+
+## 马来西亚中小企业在数码付款上常犯的错误
+
+- **注册所有方式。**额外的方式会增加费用和对账工作，而顾客可能只用一两种。
+- **假定费用或减免适用于您。**条款因服务商而异且会变动，所以请以书面确认您自己的费率和任何条件。
+- **凭截图就交货。**假的付款画面确实存在，所以请务必确认款项已经到账。
+- **不对账。**没有定期核对，遗失的付款和不明的扣款就会被忽略。
+
+## 从哪里开始
+
+- **本周：**询问您的常客喜欢怎样付款，并检视您目前接受的方式。
+- **接着：**向两三家服务商索取书面报价，比较每月总成本和结算时间。
+- **然后：**设置您选择的方式，培训员工确认付款，并准备后备方案。
+- **每周：**把付款与您的银行对账，记录费用，并保存对账单。
+
+数码付款对顾客是一种便利，对您则是一种工具。请谨慎选择，查核条款，并保持记录整齐。`,
+        faqs: [
+          {
+            question: "小店应该接受哪些数码付款方式？",
+            answer:
+              "从您的顾客已经在使用的开始，通常是能与许多银行应用程序和电子钱包配合的二维码选项，加上顾客有要求时的银行卡，以及现金。随着需求增长再增加，因为每增加一种方式都会增加费用和对账工作。",
+          },
+          {
+            question: "什么是 DuitNow QR？",
+            answer:
+              "一个顾客可以用许多银行应用程序和电子钱包扫描、直接付款到您账户的二维码。银行和支付公司等服务商向您的企业发出该二维码，它们的条款和费用各不相同。",
+          },
+          {
+            question: "数码付款需要支付哪些费用？",
+            answer:
+              "视方式和服务商而定。询问商家折扣率、每笔交易费、设置费、终端机租金、月费或最低费用，以及退款或拒付的费用。有些费用已对较小的商家减免或降低，但条款各异，所以请以书面确认适用于您的是什么。",
+          },
+          {
+            question: "款项多久能到我的账户？",
+            answer:
+              "结算时间因方式和服务商而异，从当天到几天不等，周末和公共假期也可能造成延迟。请询问每家服务商，并查看结算如何影响您的现金流。",
+          },
+          {
+            question: "如何知道顾客真的付款了？",
+            answer:
+              "不要依赖截图。在交货之前，请通过服务商的应用程序、收款提示音箱或银行通知确认付款，因为假的付款画面确实存在。",
+          },
+          {
+            question: "我应该使用支付网关还是通过电商平台销售？",
+            answer:
+              "支付网关让您有更多控制权，并让顾客在您自己的网站上付款，但设置和纠纷由您管理。电商平台为您处理付款，但会收取佣金并控制付款时间。请根据您的情况比较成本和条款。",
+          },
+          {
+            question: "什么是拒付？",
+            answer:
+              "顾客要求其银行或银行卡服务商撤销一笔银行卡付款，例如声称没有收到货。请保存订单、送货和沟通的证明，并在规定期限内回应。",
+          },
+          {
+            question: "我应该如何在账目中记录数码付款？",
+            answer:
+              "分别记录销售总额和费用，并定期（每天或每周）把您的销售记录与银行账户对账。把服务商的对账单与您的账目一起保存，因为它们也支持您的税务记录。",
+          },
+        ],
+      },
+      ms: {
+        title: "Menerima Pembayaran Digital di Malaysia: DuitNow QR, E-Dompet, Kad dan Yuran",
+        excerpt:
+          "Semakin ramai pelanggan menjangka untuk membayar melalui kod QR, e-dompet atau kad dan bukannya tunai. Panduan ini menunjukkan kepada PKS Malaysia bagaimana kaedah pembayaran digital utama berfungsi, cara membandingkan yuran dan masa penyelesaian, cara menyediakan pembayaran di kedai dan dalam talian, cara menyelaraskan jualan dan menyimpan rekod, serta cara mengelak penipuan pembayaran dan caj balik.",
+        body: `Tunai masih berfungsi, tetapi ia tidak lagi mencukupi. Pelanggan mengimbas kod QR, menyentuh kad, atau membayar daripada e-dompet, dan kedai yang tidak dapat menerimanya mungkin kehilangan jualan. Pembayaran digital juga mewujudkan rekod automatik, mengurangkan pengendalian tunai, dan memudahkan menjalankan kedai dalam talian.
+
+Namun ia tidak percuma. Setiap kaedah mempunyai yuran, peraturan dan masa penyelesaian, dan pilihan termurah di atas kertas tidak selalu terbaik untuk perniagaan anda. Sedikit perancangan menjimatkan wang dan mengelak kejutan.
+
+Ini ialah maklumat am, bukan nasihat kewangan. Yuran, pengecualian, masa penyelesaian dan peraturan berbeza mengikut bank, penyedia dan jenis perniagaan, dan kerap berubah. Sentiasa sahkan terma semasa dengan penyedia sebelum anda mendaftar, dan bandingkan lebih daripada satu tawaran.
+
+## 1. Fahami cara utama pelanggan membayar secara digital
+
+### DuitNow QR
+DuitNow QR membolehkan pelanggan mengimbas satu kod QR dengan aplikasi perbankan atau e-dompet yang sudah mereka miliki, dan bayaran masuk ke akaun anda. Kerana banyak aplikasi boleh membacanya, satu kod boleh melayani ramai pelanggan. Penyedia, biasanya bank atau syarikat pembayaran, mengeluarkan kod itu kepada perniagaan anda.
+
+### E-dompet
+Pelanggan memuatkan wang ke dalam aplikasi e-dompet dan membayar daripadanya, dengan mengimbas kod anda atau menunjukkan kod mereka. Setiap e-dompet mempunyai terma pedagang sendiri, dan sesetengahnya juga menjalankan promosi yang boleh menarik pelanggan.
+
+### Kad debit dan kredit
+Pelanggan menyentuh, memasukkan atau menggesek kad pada terminal di kaunter anda, atau memasukkan butiran kad dalam talian. Kad biasanya melibatkan kadar diskaun pedagang, peratusan setiap jualan yang dikenakan kepada anda.
+
+### Perbankan dalam talian dan pindahan bank
+Pelanggan boleh membayar melalui pindahan, termasuk pindahan segera, yang sesuai untuk pesanan dan invois yang lebih besar. Mereka memerlukan butiran pembayaran yang jelas, dan anda memerlukan cara untuk memadankan setiap bayaran dengan pesanan.
+
+### Beli sekarang bayar kemudian dan pilihan lain
+Sesetengah penyedia menawarkan bayaran ansuran. Ini boleh meningkatkan nilai pesanan tetapi mempunyai yuran sendiri, jadi semak terma dan siapa yang menanggung risiko tidak membayar.
+
+### Tunai masih sebahagian daripada campuran
+Ramai pelanggan masih menggunakan tunai, jadi sasarkan untuk menawarkan pilihan, bukan menggantikan satu kaedah dengan yang lain dalam semalam.
+
+## 2. Tentukan kaedah mana untuk ditawarkan
+
+Pilih kaedah pembayaran yang sudah digunakan oleh pelanggan anda sebelum anda mendaftar untuk setiap pilihan yang ditawarkan. Setiap kaedah tambahan menambah penyediaan, yuran dan kerja penyelarasan.
+
+### Lihat pelanggan anda
+Tanya atau perhatikan bagaimana mereka suka membayar. Kafe berhampiran pejabat mungkin memerlukan QR dan kad, manakala gerai pasar mungkin paling sesuai dengan QR dan tunai. Pelanggan dalam talian menjangka kad, perbankan dalam talian dan e-dompet popular.
+
+### Lihat jualan purata anda
+Yuran yang berupa peratusan setiap jualan paling menyakitkan untuk tiket besar, manakala yuran tetap bagi setiap transaksi paling menyakitkan untuk yang kecil. Semak bagaimana struktur yuran sesuai dengan nilai pesanan lazim anda.
+
+### Lihat aliran tunai anda
+Masa penyelesaian, iaitu berapa lama wang sampai ke akaun anda, penting jika anda kerap membayar pembekal dan gaji. Panduan kami tentang aliran tunai menerangkan mengapa masa penting.
+
+### Lihat kos anda
+Bandingkan sewa atau pembelian terminal, yuran penyediaan, yuran bulanan, dan sebarang caj minimum. Panduan kami tentang penetapan harga menerangkan cara memasukkan kos ini ke dalam harga anda.
+
+### Mulakan dengan dua atau tiga
+Kebanyakan perniagaan kecil berjaya dengan satu pilihan QR, satu pilihan kad jika pelanggan memintanya, dan tunai. Tambah lagi apabila permintaan bertambah.
+
+## 3. Bandingkan yuran dan terma dengan teliti
+
+### Jenis yuran untuk ditanya
+Tanya tentang kadar diskaun pedagang, yuran setiap transaksi, yuran penyediaan, sewa terminal, yuran bulanan atau minimum, yuran untuk bayaran balik dan caj balik, dan yuran untuk penyelesaian lebih pantas. Minta semuanya secara bertulis.
+
+### Yuran berubah, dan mungkin dikecualikan
+Struktur yuran untuk pembayaran QR telah berubah dari semasa ke semasa, dan sesetengah bank dan penyedia telah mengecualikan atau mengurangkan yuran untuk pedagang lebih kecil, dengan kedudukan berbeza mengikut penyedia. Jangan sekali-kali menganggap yuran yang anda baca terpakai kepada anda. Tanya penyedia anda apa yang dikenakan kepada perniagaan anda hari ini, dan sama ada sebarang pengecualian mempunyai syarat atau tarikh tamat.
+
+### Masa dan kaedah penyelesaian
+Tanya bila wang tiba, sama ada pada hari yang sama atau selepas beberapa hari, sama ada hujung minggu dan cuti umum melambatkannya, dan sama ada yuran ditolak sebelum atau selepas penyelesaian.
+
+### Kontrak dan kunci masuk
+Semak tempoh kontrak, yuran penamatan, dan apa yang berlaku jika anda mahu bertukar. Panduan kami tentang kontrak dan terma menerangkan cara membaca klausa sebelum menandatangani.
+
+### Siapa penyedia
+Gunakan bank yang mantap dan penyedia pembayaran berlesen, dan semak bahawa syarikat itu diberi kuasa dengan betul. Berhati-hati dengan sesiapa yang mendekati anda dengan kadar sangat rendah atau meminta bayaran besar di muka.
+
+### Fikirkan kos keseluruhan
+Kadar peratusan rendah boleh dibatalkan oleh yuran bulanan yang tinggi. Anggarkan kos bulanan sebenar menggunakan isi padu jualan anda sendiri.
+
+## 4. Sediakan pembayaran di kedai
+
+### Paparkan kod QR anda dengan betul
+Letakkan kod di tempat pelanggan boleh melihatnya, dan gunakan kod rasmi yang dikeluarkan kepada perniagaan anda, bukan yang ditulis tangan atau difotokopi. Semak dari semasa ke semasa bahawa tiada sesiapa yang menampal kod lain di atas kod anda.
+
+### Sahkan bayaran sebelum melepaskan barangan
+Jangan bergantung pada pelanggan yang menunjukkan tangkapan skrin. Semak bahawa wang telah tiba melalui aplikasi penyedia anda, kotak pembesar suara atau pemberitahuan, kerana skrin pembayaran palsu wujud.
+
+### Latih kakitangan anda
+Tunjukkan kepada semua orang cara mengesahkan bayaran, mengendalikan bayaran yang gagal, memproses bayaran balik, dan apa yang perlu dilakukan jika sesuatu kelihatan tidak kena.
+
+### Simpan sandaran
+Sediakan alternatif jika rangkaian atau terminal gagal, seperti kod QR kedua, hotspot mudah alih atau tunai, supaya anda tidak kehilangan jualan semasa gangguan.
+
+### Asingkan wang perniagaan
+Gunakan akaun perniagaan supaya bayaran, yuran dan rekod berasingan daripada wang peribadi anda. Panduan kami tentang membuka akaun bank perniagaan menerangkan pilihan.
+
+### Paparkan pilihan anda
+Beritahu pelanggan kaedah mana yang anda terima sebelum mereka sampai ke kaunter.
+
+## 5. Sediakan pembayaran untuk kedai dalam talian
+
+### Pilih get laluan pembayaran
+Get laluan pembayaran membolehkan pelanggan membayar dengan kad, perbankan dalam talian dan e-dompet di laman web atau pasaran anda. Bandingkan yuran, kaedah yang disokong, masa penyelesaian, dan betapa mudah ia bersambung dengan kedai anda.
+
+### Pasaran mengendalikan pembayaran untuk anda
+Jika anda menjual melalui pasaran, platform biasanya mengutip bayaran dan membayar anda kemudian selepas menolak yuran. Semak komisen mereka, masa bayaran, dan cara mereka mengendalikan bayaran balik dan pertikaian. Panduan kami tentang menjual dalam talian merangkumi penyediaan pasaran dan kedai.
+
+### Jadikan daftar keluar mudah
+Tawarkan kaedah pembayaran yang dijangka oleh pembeli, pastikan proses ringkas, dan tunjukkan harga keseluruhan termasuk penghantaran dan sebarang cukai sebelum bayaran. Panduan kami tentang penetapan harga menerangkan cara menunjukkan harga dengan jelas.
+
+### Selamatkan laman anda
+Gunakan halaman selamat, pastikan perisian dikemas kini, dan jangan sekali-kali menyimpan butiran kad sendiri. Panduan kami tentang keselamatan siber menerangkan perlindungan asas.
+
+### Hantar pengesahan
+Hantar pengesahan pesanan dan resit, dan simpan rekod setiap bayaran. Jika e-Invois terpakai kepada anda, panduan kami tentang e-Invois menerangkan peraturannya.
+
+## 6. Selaraskan jualan anda dan simpan rekod
+
+### Padankan setiap bayaran
+Bandingkan rekod jualan anda dengan apa yang sebenarnya sampai ke akaun bank anda, selepas yuran. Perbezaan boleh bermakna bayaran yang hilang, jumlah yang salah atau potongan yang tidak dijelaskan.
+
+### Rekod yuran dengan betul
+Yuran ialah kos perniagaan, dan ia mengurangkan apa yang anda terima. Rekodkan kedua-dua jualan kasar dan yuran, supaya buku anda menunjukkan hasil dan kos sebenar. Panduan kami tentang asas simpan kira menerangkan caranya.
+
+### Selaraskan secara berkala
+Lakukan setiap hari atau minggu dan bukannya menunggu akhir bulan, supaya anda mengesan masalah dengan cepat.
+
+### Gunakan laporan
+Penyedia biasanya menawarkan penyata dan papan pemuka, jadi muat turunnya dan simpan bersama akaun anda.
+
+> Pembayaran digital menjadikan wang lebih mudah dikutip, tetapi hanya penyelarasan yang memberitahu anda sama ada wang yang anda peroleh ialah wang yang anda terima. Semak angka mengikut jadual, bukan hanya apabila sesuatu tidak kena.
+
+### Ingat cukai
+Pembayaran digital meninggalkan jejak pendapatan anda yang jelas, yang juga boleh dilihat oleh pihak berkuasa cukai. Simpan rekod yang menyokong apa yang anda laporkan. Panduan kami tentang kalendar cukai perniagaan kecil menyenaraikan tarikh akhir lazim.
+
+## 7. Cegah penipuan, kesilapan dan caj balik
+
+### Penipuan lazim
+Tangkapan skrin bayaran palsu, pemberitahuan palsu, bayaran lebih diikuti permintaan bayaran balik, kad curian, dan kod QR yang ditukar adalah lazim. Sentiasa sahkan bahawa wang berada dalam akaun anda.
+
+### Bayar balik dengan berhati-hati
+Bayar balik kepada kaedah yang sama yang digunakan untuk bayaran asal jika boleh, dan semak bayaran itu dahulu. Berwaspada terhadap pelanggan yang mendesak anda membayar balik ke akaun lain.
+
+### Fahami caj balik
+Pelanggan boleh meminta bank mereka membalikkan bayaran kad, contohnya kerana dakwaan tidak menerima barangan. Simpan bukti pesanan, penghantaran dan komunikasi, dan balas dalam tarikh akhir. Panduan kami tentang aduan pelanggan dan hak pengguna menerangkan cara mengendalikan pertikaian dengan baik.
+
+### Lindungi data pelanggan
+Jika anda mengumpul butiran peribadi atau pembayaran, kendalikannya dengan berhati-hati. Panduan kami tentang perlindungan data peribadi menerangkan tanggungjawab anda.
+
+### Laporkan masalah dengan cepat
+Jika anda mengesyaki penipuan, hubungi penyedia dan bank anda dengan segera, dan simpan bukti.
+
+Jika anda memerlukan penyedia pembayaran, akauntan atau penasihat IT untuk menyediakannya, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pelanggan menemui perniagaan anda dan melihat bagaimana mereka boleh membayar anda.
+
+## Kesilapan lazim PKS Malaysia dengan pembayaran digital
+
+- **Mendaftar untuk setiap kaedah.** Kaedah tambahan menambah yuran dan kerja penyelarasan, dan pelanggan mungkin hanya menggunakan satu atau dua.
+- **Menganggap yuran atau pengecualian terpakai kepada anda.** Terma berbeza mengikut penyedia dan berubah, jadi sahkan kadar anda sendiri dan sebarang syarat secara bertulis.
+- **Melepaskan barangan berdasarkan tangkapan skrin.** Skrin pembayaran palsu wujud, jadi sentiasa sahkan wang telah tiba.
+- **Tidak menyelaraskan.** Tanpa semakan berkala, bayaran yang hilang dan potongan yang tidak dijelaskan tidak disedari.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Tanya pelanggan tetap anda bagaimana mereka suka membayar, dan semak apa yang anda terima sekarang.
+- **Seterusnya:** Dapatkan sebut harga bertulis daripada dua atau tiga penyedia, membandingkan jumlah kos bulanan dan masa penyelesaian.
+- **Kemudian:** Sediakan kaedah pilihan anda, latih kakitangan mengesahkan bayaran, dan sediakan sandaran.
+- **Setiap minggu:** Selaraskan bayaran dengan bank anda, rekodkan yuran, dan simpan penyata.
+
+Pembayaran digital ialah kemudahan untuk pelanggan dan alat untuk anda. Pilih dengan teliti, semak terma, dan pastikan rekod anda kemas.`,
+        faqs: [
+          {
+            question: "Kaedah pembayaran digital manakah yang patut diterima oleh kedai kecil?",
+            answer:
+              "Mulakan dengan apa yang sudah digunakan oleh pelanggan anda, biasanya pilihan QR yang berfungsi dengan banyak aplikasi perbankan dan e-dompet, serta kad jika pelanggan memintanya, dan tunai. Tambah lagi apabila permintaan bertambah, kerana setiap kaedah menambah yuran dan kerja penyelarasan.",
+          },
+          {
+            question: "Apakah DuitNow QR?",
+            answer:
+              "Kod QR yang boleh diimbas oleh pelanggan dengan banyak aplikasi perbankan dan e-dompet untuk membayar anda terus ke dalam akaun anda. Penyedia seperti bank dan syarikat pembayaran mengeluarkan kod itu kepada perniagaan anda, dan terma serta yuran mereka berbeza.",
+          },
+          {
+            question: "Apakah yuran yang akan saya bayar untuk pembayaran digital?",
+            answer:
+              "Bergantung pada kaedah dan penyedia. Tanya tentang kadar diskaun pedagang, yuran setiap transaksi, penyediaan, sewa terminal, yuran bulanan atau minimum, dan yuran bayaran balik atau caj balik. Sesetengah yuran telah dikecualikan atau dikurangkan untuk pedagang lebih kecil, tetapi terma berbeza, jadi sahkan apa yang terpakai kepada anda secara bertulis.",
+          },
+          {
+            question: "Berapa lama masa untuk wang sampai ke akaun saya?",
+            answer:
+              "Masa penyelesaian berbeza mengikut kaedah dan penyedia, daripada hari yang sama hingga beberapa hari, dan hujung minggu serta cuti umum boleh melambatkannya. Tanya setiap penyedia dan semak bagaimana penyelesaian mempengaruhi aliran tunai anda.",
+          },
+          {
+            question: "Bagaimanakah saya tahu pelanggan benar-benar telah membayar?",
+            answer:
+              "Jangan bergantung pada tangkapan skrin. Sahkan bayaran dalam aplikasi penyedia anda, pada kotak pembesar suara, atau dalam pemberitahuan bank anda sebelum anda melepaskan barangan, kerana skrin pembayaran palsu wujud.",
+          },
+          {
+            question: "Patutkah saya menggunakan get laluan pembayaran atau menjual melalui pasaran?",
+            answer:
+              "Get laluan memberi anda lebih kawalan dan membolehkan pelanggan membayar di laman web anda sendiri, tetapi anda menguruskan penyediaan dan pertikaian. Pasaran mengendalikan pembayaran untuk anda tetapi mengambil komisen dan mengawal masa bayaran. Bandingkan kos dan terma untuk situasi anda.",
+          },
+          {
+            question: "Apakah caj balik?",
+            answer:
+              "Apabila pelanggan meminta bank atau penyedia kad mereka membalikkan bayaran kad, contohnya kerana dakwaan tidak menerima barangan. Simpan bukti pesanan, penghantaran dan komunikasi, dan balas dalam tarikh akhir yang diberikan.",
+          },
+          {
+            question: "Bagaimanakah saya patut merekod pembayaran digital dalam akaun saya?",
+            answer:
+              "Rekodkan jualan kasar dan yuran secara berasingan, dan selaraskan rekod jualan anda dengan akaun bank anda secara berkala, setiap hari atau minggu. Simpan penyata penyedia bersama akaun anda, kerana ia juga menyokong rekod cukai anda.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "handling-a-tax-audit-by-lhdn-in-malaysia",
+    title: "Handling a Tax Audit or Review by LHDN: Records, Responses, and What to Expect",
+    seoTitle: "Handling a Tax Audit or Review by LHDN in Malaysia",
+    seoDescription:
+      "What a Malaysian small business should know about an LHDN tax audit: records to keep, responding to letters, working with an agent and cutting risk.",
+    coverImage: {
+      file: "handling-a-tax-audit-by-lhdn-in-malaysia-cover.webp",
+      mimeType: "image/webp",
+      alt: "A tall stack of paper documents held together with coloured clips on a wooden desk beside reading glasses and a keyboard",
+      altTranslations: {
+        zh: "木桌上一大叠用彩色夹子夹住的纸质文件，旁边是老花眼镜和键盘",
+        ms: "Timbunan tinggi dokumen kertas yang diikat dengan klip berwarna di atas meja kayu bersebelahan cermin mata dan papan kekunci",
+      },
+    },
+    contentImages: {
+      documents: {
+        file: "handling-a-tax-audit-by-lhdn-in-malaysia-documents.webp",
+        mimeType: "image/webp",
+        alt: "A hand turning the top page of a clipped stack of documents on a glass desk, with a pen lying nearby",
+        altTranslations: {
+          zh: "一只手翻动玻璃桌上一叠夹好的文件的最上面一页，旁边放着一支笔",
+          ms: "Sebuah tangan membuka muka surat teratas timbunan dokumen berklip di atas meja kaca, dengan pen terletak berdekatan",
+        },
+        after: "Keep every record that supports a figure on your tax return for as long as the law requires.",
+        afterTranslations: {
+          zh: "按法律规定的期限，保存每一份支持您报税表上数字的记录。",
+          ms: "Simpan setiap rekod yang menyokong angka dalam borang cukai anda selama tempoh yang dikehendaki undang-undang.",
+        },
+      },
+    },
+    excerpt:
+      "Getting a letter from the tax authority is stressful, but a review or audit is a routine part of the system and is far easier to handle if you are prepared. This guide shows Malaysian small businesses why returns are selected, which records to keep, how to respond to letters and deadlines, how to work with a tax agent, what penalties and voluntary disclosure involve, and how to reduce your audit risk.",
+    body: `Few business owners enjoy opening a letter from the Inland Revenue Board. Yet reviews and audits are a normal part of how tax systems check that returns are accurate. Most of the work in an audit is done long before the letter arrives, by keeping good records and filing carefully.
+
+This guide explains what typically happens, so that a letter prompts a calm, organised response instead of panic.
+
+This is general information, not tax or legal advice. Audit procedures, penalty rates, disclosure programmes, and record-keeping requirements are set by law and by the tax authority's published guidelines, and they change over time. Confirm the current position with the official source or a licensed tax agent or adviser, especially before you respond to a notice or disclose anything.
+
+## 1. Understand what a review or audit is
+
+### Different types of checks
+The tax authority may send a query on a particular item, ask for supporting documents, carry out a desk review of your records, or conduct a fuller audit, which can include visiting your premises. The scope depends on the issue and the amounts involved.
+
+### Why you may be selected
+Returns can be selected for many reasons, including data matching with other sources, unusual ratios compared with similar businesses, large claims or losses, late or missing filings, information from third parties, and random selection. Being selected does not mean you did something wrong.
+
+### What the authority can look at
+It can ask for your accounts, bank statements, invoices, receipts, contracts, payroll records, and related documents, to check that income is complete and that deductions are valid. In some cases it also looks at other taxes and obligations.
+
+### How far back it can go
+The authority can generally review returns for several years, which is why record-keeping periods are long. Confirm the current time limits for assessments and for fraud or wilful default, which may differ.
+
+### A review is not an accusation
+Most reviews end with an adjustment, an explanation, or no change at all. Cooperating, answering on time, and being accurate usually produces the best outcome.
+
+## 2. Keep records that will stand up to a review
+
+Keep every record that supports a figure on your tax return for as long as the law requires. The standard period in Malaysia is generally stated as seven years, but confirm the current requirement for your situation, since the periods can differ by type of record and law.
+
+### What to keep
+Sales invoices, official receipts, purchase invoices and receipts, bank statements, cash books, payroll records, contracts, asset purchase documents, loan agreements, and any correspondence that explains a transaction. Our guide on bookkeeping basics explains how to set up a simple system.
+
+### Keep records in a way that can be retrieved
+Organise by year and type, scan paper documents, and back up digital copies. A box of unsorted receipts is hard to defend. Our guide on cybersecurity explains how to protect backups.
+
+### Separate business and personal
+Mixed personal and business spending is a common cause of disallowed deductions and questions. Use a business bank account. Our guide on opening a business bank account explains the options.
+
+### Support every deduction
+Deductions need evidence that the expense was incurred for the business. Keep the invoice, proof of payment, and a note of the business purpose. Our guide on tax deductions explains what is commonly allowed.
+
+### Record unusual transactions
+Large or irregular items, such as related-party transactions, asset sales, or one-off income, should have a clear paper trail and a written explanation.
+
+### Where e-invoicing applies
+If you must issue e-invoices, keep them and the supporting data as part of your records. Our guide on e-invoicing explains the rules.
+
+## 3. Respond properly when a notice arrives
+
+### Read it carefully
+Note who sent it, the date, the issue, the period involved, the documents requested, and the deadline. Do not ignore it, and do not delay, because missed deadlines can make things worse.
+
+### Log and calendar the deadline
+Record the date the letter was received and the response date. If you need more time, ask in writing before the deadline, and keep a copy of the request and any reply.
+
+### Gather and check before sending
+Collect the documents requested, and check them against your own records before you send them. Send what is asked for, clearly labelled, and keep a full copy.
+
+### Answer accurately and in writing
+Be factual, explain items briefly, and do not guess. If you do not know, say you will check, rather than giving an uncertain answer. Keep a log of every call, meeting, and letter.
+
+### Get advice early
+If the issue is complicated, the amounts are material, or the letter mentions penalties or an audit, speak to a licensed tax agent or adviser before you respond.
+
+### Verify that the contact is genuine
+Scams impersonate tax authorities. If a message demands urgent payment to a personal account, or sends suspicious links, verify it through official channels before you respond. Our guide on cybersecurity explains common frauds.
+
+## 4. Know what to expect during an audit
+
+### Opening and scope
+You typically receive a notice stating the scope, the period, and the documents needed, and you may be asked for a meeting or a visit. Ask what the audit covers, so that you prepare the right records.
+
+### Information requests and interviews
+The officer may ask questions about how the business operates, how income is recorded, and why certain deductions were claimed. Answer truthfully, and ask for time to check anything you are not sure about.
+
+### Findings and discussion
+After reviewing the information, the authority may propose adjustments. You usually have an opportunity to explain, provide further documents, or disagree with a finding before it becomes final.
+
+### Assessment and payment
+If additional tax is due, you will be told the amount, and any penalty, with the deadline for payment. There are rules on payment and, in some circumstances, instalments, so ask the authority or your adviser.
+
+### If you disagree
+There are formal procedures to appeal an assessment within set time limits. Do not miss the deadlines, and take professional advice before you lodge an appeal.
+
+### Keep a calm, professional tone
+Being polite, organised, and cooperative helps. Arguing or delaying rarely does.
+
+## 5. Understand penalties and voluntary disclosure
+
+### Penalties
+If a return is incorrect, additional tax and penalties may be charged. The amount depends on the nature of the error, such as an honest mistake versus deliberate understatement, and on the rules at the time. Serious offences, such as fraud, can lead to prosecution. Confirm the current rates and rules with the authority or your adviser.
+
+### Voluntary disclosure
+If you discover that you have under-reported or made a mistake, the tax authority has had programmes that offer reduced penalties for voluntary disclosure, particularly before an audit has begun. The details, eligibility, and conditions change, so check the current official guidance and speak to a licensed adviser before you disclose.
+
+### Late payment charges
+Late payment of tax can lead to additional charges. If you cannot pay in full, contact the authority early to ask about options, rather than waiting.
+
+### Do not hide or destroy records
+Failing to keep records, or destroying them, can itself be an offence and makes things much worse. If you have lost records, tell your adviser and discuss reconstructing them.
+
+### Take professional help for disclosure decisions
+Whether and how to disclose is a legal and financial decision with consequences, so do not decide alone.
+
+## 6. Work with a tax agent or adviser
+
+### When to involve one
+Involve a licensed tax agent or adviser before you respond to a formal audit, when large sums are involved, when you suspect a past error, or when the issue is technical. Even a short consultation can save money.
+
+### What they can do
+They can review your records, explain your options, communicate with the authority on your behalf where permitted, prepare responses, and negotiate on adjustments or payment.
+
+### How to choose
+Check that they are properly licensed or registered, ask about their experience with audits for businesses like yours, and agree fees and scope in writing. Be wary of anyone who promises to make a problem disappear.
+
+### Stay involved
+You remain responsible for the accuracy of your returns and the information provided. Read what is submitted in your name. Our guide on contracts and terms explains how to agree clear engagement terms.
+
+### Share information honestly
+Tell your adviser everything, including awkward facts. They can only protect you properly if they know the real position.
+
+> The best audit defence is boring: complete records, consistent filing, and a clear explanation for anything unusual. If you could hand a stranger your files and they could follow every number, you are already well prepared.
+
+## 7. Reduce your audit risk and stay organised
+
+### File correctly and on time
+Submit returns and pay tax by the deadline, and make sure that numbers agree with other filings, such as payroll and indirect tax returns. Our guide on the small business tax calendar lists the main deadlines.
+
+### Keep your books current
+Update your accounts regularly, reconcile bank accounts, and review them before filing. Our guide on bookkeeping basics explains how, and our guide on managing cash flow helps you keep an eye on the numbers.
+
+### Be consistent
+Large unexplained swings in income, margins, or expenses can attract questions. Keep notes explaining significant changes.
+
+### Claim only what you can support
+Aggressive or unsupported deductions raise risk. If in doubt, ask your adviser, and keep evidence for everything you claim.
+
+### Handle staff and statutory contributions properly
+Payroll errors, unpaid contributions, and misclassified workers can raise issues across several authorities. Our guide on payroll and statutory contributions and our guide on working with freelancers explain the rules.
+
+### Do an annual check-up
+Once a year, review your records and filings with an accountant, fix problems early, and update your processes. Our guide on staying compliant with SSM records covers the company side.
+
+If you need a tax agent, an accountant, or a lawyer to help with a review or to tidy your records, you can [browse the directory](/en) for local professionals, and [creating a free business listing](/en/signup) helps customers find and trust your business, which is the best foundation for the steady, well-documented income that audits like to see.
+
+## Common mistakes Malaysian SMEs make with tax audits
+
+- **Ignoring or delaying a notice.** Missed deadlines can make a manageable query much worse, so always respond on time or ask for an extension in writing.
+- **Mixing business and personal spending.** It makes deductions hard to support and invites questions.
+- **Keeping poor or missing records.** Without evidence, valid claims can be disallowed, and failing to keep records can itself be an offence.
+- **Responding without advice to a serious audit.** Statements made in haste can create new problems, so get professional help early.
+
+## Where to start
+
+- **This week:** Check where your records are, how long you have kept them, and whether you could retrieve any year quickly.
+- **Next:** Separate business and personal spending, reconcile your bank accounts, and organise documents by year and type.
+- **Then:** Review your largest deductions and unusual transactions, and make sure each has evidence and an explanation.
+- **Each year:** Have an accountant review your filings, and know who you would call if a notice arrived.
+
+A tax audit is not a punishment. It is a check, and a business with tidy records and honest filings can face it with confidence.`,
+    faqs: [
+      {
+        question: "Why was my business selected for a tax review or audit?",
+        answer:
+          "Possible reasons include data matching with other sources, unusual ratios compared with similar businesses, large claims or losses, late or missing filings, third-party information, and random selection. Being selected does not mean you did something wrong.",
+      },
+      {
+        question: "How long should I keep my tax records?",
+        answer:
+          "Malaysian guidance generally refers to keeping records for seven years, but periods can differ by type of record and law. Confirm the current requirement with the tax authority or your adviser, and keep everything that supports your returns for at least that long.",
+      },
+      {
+        question: "What should I do when I receive a notice?",
+        answer:
+          "Read it carefully, note the deadline, and do not ignore it. Gather and check the documents requested, respond accurately and in writing, ask for an extension in writing if you need one, and get advice from a licensed tax agent or adviser if it is complicated.",
+      },
+      {
+        question: "What happens during an audit?",
+        answer:
+          "You usually receive a notice stating the scope and period, provide documents, answer questions, and may be visited. The authority may then propose adjustments, which you can explain, support with documents, or dispute through the proper procedures.",
+      },
+      {
+        question: "What penalties can apply if my return was wrong?",
+        answer:
+          "Additional tax and penalties may apply, depending on the nature of the error, such as an honest mistake versus deliberate understatement. Serious offences can lead to prosecution. Rates and rules change, so confirm the current position with the authority or your adviser.",
+      },
+      {
+        question: "Can I disclose a mistake voluntarily?",
+        answer:
+          "The tax authority has had programmes that offer reduced penalties for voluntary disclosure, particularly before an audit starts. Details and eligibility change, so check the current official guidance and speak to a licensed adviser before you disclose.",
+      },
+      {
+        question: "Do I need a tax agent or accountant for an audit?",
+        answer:
+          "It is not always required, but it is wise for formal audits, large amounts, suspected past errors, or technical issues. A licensed agent can review your records, advise, and communicate on your behalf where permitted. You remain responsible for the accuracy of what is submitted.",
+      },
+      {
+        question: "How can I reduce the chance of an audit problem?",
+        answer:
+          "File correctly and on time, keep complete and organised records, separate business and personal spending, claim only what you can support, keep your numbers consistent across filings, and have an accountant review your records once a year.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "应对税务局的税务审查或审计：记录、回应与预期",
+        excerpt:
+          "收到税务机关的来函令人紧张，但审查或审计是制度中的例行部分，只要做好准备就容易应付得多。本指南向马来西亚小企业说明报税表为何被选中、应该保存哪些记录、如何回应来函和期限、如何与税务代理合作、罚款和自愿披露涉及什么，以及如何降低您的审计风险。",
+        body: `很少有企业主喜欢打开来自内陆税收局的信件。然而，审查和审计是税务制度检查报税表是否准确的正常方式。审计的大部分工作，早在来函抵达之前就已经通过保存良好的记录和认真申报完成了。
+
+本指南说明通常会发生什么，让一封来函引发的是冷静而有条理的回应，而不是恐慌。
+
+以下仅为一般资讯，并非税务或法律意见。审计程序、罚款率、披露计划和记录保存要求由法律和税务机关公布的指引订定，并会随时间变化。请向官方来源或持牌的税务代理或顾问确认现行情况，尤其是在回应通知或披露任何事项之前。
+
+## 1. 了解什么是审查或审计
+
+### 不同类型的检查
+税务机关可能就某个项目发出查询、要求提供佐证文件、对您的记录进行案头审查，或进行更全面的审计，其中可能包括实地到访您的营业场所。范围取决于问题和涉及的金额。
+
+### 您为什么可能被选中
+报税表被选中的原因很多，包括与其他来源的数据比对、与类似企业相比异常的比率、大额扣除或亏损、迟交或漏交申报、来自第三方的资料，以及随机抽选。被选中并不意味着您做错了什么。
+
+### 税务机关可以查看什么
+它可以要求查看您的账目、银行对账单、发票、收据、合约、薪资记录及相关文件，以核对收入是否完整、扣除是否有效。在某些情况下，它还会查看其他税项和义务。
+
+### 可以追溯多久
+税务机关一般可以检视数年的报税表，这就是为什么记录保存期很长。请确认现行的评税时限，以及欺诈或故意违约的时限，两者可能不同。
+
+### 审查不是指控
+大多数审查以调整、解释或完全没有变化告终。合作、按时回应并保持准确，通常会带来最好的结果。
+
+## 2. 保存经得起审查的记录
+
+按法律规定的期限，保存每一份支持您报税表上数字的记录。马来西亚的标准期限一般表述为七年，但请确认适用于您情况的现行要求，因为期限可能因记录类型和法律而异。
+
+### 保存什么
+销售发票、正式收据、采购发票和收据、银行对账单、现金簿、薪资记录、合约、资产购置文件、贷款协议，以及任何解释交易的往来函件。我们关于簿记基础的指南说明了如何建立简单的系统。
+
+### 以可以检索的方式保存记录
+按年份和类型整理，扫描纸质文件，并备份数码副本。一箱未经整理的收据很难为您辩护。我们关于网络安全的指南说明了如何保护备份。
+
+### 把企业和个人分开
+个人和企业开支混在一起，是扣除被拒和引发询问的常见原因。请使用企业银行账户。我们关于开立企业银行账户的指南说明了各种选择。
+
+### 为每一项扣除提供证据
+扣除需要证明该开支是为企业而发生的证据。请保存发票、付款证明，以及对企业用途的说明。我们关于税务扣除的指南说明了通常允许什么。
+
+### 记录不寻常的交易
+大额或不规则的项目，例如关联方交易、资产出售或一次性收入，应有清晰的文件轨迹和书面说明。
+
+### 电子发票适用的情况
+如果您必须开出电子发票，请把它们及其支持数据作为记录的一部分保存。我们关于电子发票的指南说明了相关规定。
+
+## 3. 收到通知时妥善回应
+
+### 仔细阅读
+记下是谁发出的、日期、问题、涉及的期间、所要求的文件，以及期限。不要忽视它，也不要拖延，因为错过期限可能让情况更糟。
+
+### 记录并标出期限
+记录收到来函的日期和回应日期。如果需要更多时间，请在期限之前以书面提出，并保存请求和任何回复的副本。
+
+### 先收集并核对再寄出
+收集所要求的文件，并在寄出之前对照您自己的记录核对。寄出被要求的内容，清楚标示，并保留一份完整的副本。
+
+### 准确并以书面回答
+就事论事，简要解释各项目，不要猜测。如果您不知道，请说您会核实，而不是给出不确定的答案。保存每一次通话、会议和来函的记录。
+
+### 及早寻求意见
+如果问题复杂、金额重大，或来函提及罚款或审计，请在回应之前咨询持牌的税务代理或顾问。
+
+### 核实对方是否真实
+有骗局冒充税务机关。如果某则信息要求紧急付款到个人账户，或发送可疑的链接，请在回应之前通过官方渠道核实。我们关于网络安全的指南说明了常见的欺诈。
+
+## 4. 了解审计期间会发生什么
+
+### 开始和范围
+您通常会收到一份说明范围、期间和所需文件的通知，并可能被要求会面或接受访查。请询问审计涵盖什么，让您准备正确的记录。
+
+### 资料要求和面谈
+官员可能询问企业如何运作、收入如何记录，以及为什么申报某些扣除。请如实回答，并对不确定的事项要求时间核实。
+
+### 调查结果和讨论
+审阅资料之后，税务机关可能提出调整。在结果定案之前，您通常有机会解释、提供更多文件，或对某项结果表示异议。
+
+### 评税和付款
+如果须缴付额外税款，您会被告知金额和任何罚款，以及付款的期限。付款和在某些情况下分期的规定适用，所以请询问税务机关或您的顾问。
+
+### 如果您不同意
+有正式的程序，可以在规定的时限内对评税提出上诉。不要错过期限，并在提出上诉之前先寻求专业意见。
+
+### 保持冷静、专业的语气
+礼貌、有条理和合作有帮助。争论或拖延很少有帮助。
+
+## 5. 了解罚款和自愿披露
+
+### 罚款
+如果报税表不正确，可能被征收额外税款和罚款。金额取决于错误的性质，例如无心之失与故意少报，并取决于当时的规则。严重的罪行，例如欺诈，可能导致检控。请向税务机关或您的顾问确认现行的费率和规则。
+
+### 自愿披露
+如果您发现自己少报或犯了错误，税务机关曾推出对自愿披露给予减免罚款的计划，尤其是在审计开始之前。细节、资格和条件会变动，所以请在披露之前查看现行官方指引并咨询持牌顾问。
+
+### 逾期付款的费用
+逾期缴税可能导致额外的费用。如果您无法全额支付，请及早联系税务机关询问选项，而不是等待。
+
+### 不要隐藏或销毁记录
+不保存记录或销毁记录，本身可能就是一种罪行，并让情况糟糕得多。如果您遗失了记录，请告诉您的顾问，并讨论重建的方法。
+
+### 披露的决定要寻求专业协助
+是否披露以及如何披露，是有后果的法律和财务决定，所以不要独自决定。
+
+## 6. 与税务代理或顾问合作
+
+### 何时让他们参与
+在回应正式审计之前、涉及大额款项时、怀疑过去有错误时，或问题涉及技术性时，请让持牌的税务代理或顾问参与。即使是简短的咨询也能省钱。
+
+### 他们能做什么
+他们可以审阅您的记录、解释您的选项、在允许的情况下代表您与税务机关沟通、准备回应，并就调整或付款进行协商。
+
+### 如何选择
+查核他们是否合法持牌或注册，询问他们处理类似您企业的审计的经验，并以书面约定费用和范围。对承诺让问题消失的人要保持警惕。
+
+### 保持参与
+您仍然对报税表和所提供资料的准确性负责。请阅读以您名义提交的内容。我们关于合约与条款的指南说明了如何约定清晰的委托条款。
+
+### 诚实地分享资料
+告诉您的顾问一切，包括令人尴尬的事实。只有他们知道真实情况，才能妥善地保护您。
+
+> 最好的审计辩护是平淡无奇的：完整的记录、一致的申报，以及对任何不寻常之处的清晰解释。如果您能把文件交给陌生人，而他们能追溯每一个数字，您就已经准备得很好了。
+
+## 7. 降低审计风险并保持条理
+
+### 正确且按时申报
+在期限之前提交报税表并缴税，并确保数字与其他申报一致，例如薪资和间接税申报。我们关于小企业税务日历的指南列出了主要的截止日期。
+
+### 让账目保持最新
+定期更新您的账目，核对银行账户，并在申报之前检视。我们关于簿记基础的指南说明了如何做到这一点，关于现金流管理的指南则帮助您留意数字。
+
+### 保持一致
+收入、利润率或开支出现大幅且无法解释的波动，可能引来询问。请保留说明重大变化的笔记。
+
+### 只申报您能证明的项目
+激进或缺乏证据的扣除会增加风险。如有疑问，请询问您的顾问，并为您申报的每一项保存证据。
+
+### 妥善处理员工和法定供款
+薪资错误、未缴的供款和错误归类的工作者，可能在多个机构引发问题。我们关于薪资与法定供款的指南和关于与自由工作者合作的指南说明了相关规定。
+
+### 每年做一次检查
+每年一次，请会计师检视您的记录和申报，及早解决问题，并更新您的流程。我们关于遵守公司委员会记录规定的指南涵盖了公司方面。
+
+如果您需要税务代理、会计师或律师协助处理审查或整理记录，可以[浏览名录](/zh)寻找本地专业人士，而[创建免费的企业列表](/zh/signup)可以帮助顾客找到并信任您的企业，这是审计喜欢看到的稳定、有据可查的收入的最佳基础。
+
+## 马来西亚中小企业在税务审计上常犯的错误
+
+- **忽视或拖延通知。**错过期限可能让本来可以处理的查询变得糟糕得多，所以请务必按时回应，或以书面申请延期。
+- **把企业和个人开支混在一起。**这让扣除难以证明，并招来询问。
+- **记录不佳或遗失。**没有证据，有效的扣除也可能被拒绝，而且不保存记录本身就可能是一种罪行。
+- **在严重审计中未经咨询就回应。**仓促作出的陈述可能制造新的问题，所以请及早寻求专业协助。
+
+## 从哪里开始
+
+- **本周：**查看您的记录在哪里、保存了多久，以及您能否快速检索任何一年的记录。
+- **接着：**把企业和个人开支分开，核对您的银行账户，并按年份和类型整理文件。
+- **然后：**检视您最大的扣除和不寻常的交易，确保每一项都有证据和解释。
+- **每年：**请会计师检视您的申报，并知道收到通知时该联系谁。
+
+税务审计不是惩罚。它是一种检查，而记录整齐、诚实申报的企业可以满怀信心地面对它。`,
+        faqs: [
+          {
+            question: "为什么我的企业被选中接受税务审查或审计？",
+            answer:
+              "可能的原因包括与其他来源的数据比对、与类似企业相比异常的比率、大额扣除或亏损、迟交或漏交申报、第三方资料，以及随机抽选。被选中并不意味着您做错了什么。",
+          },
+          {
+            question: "我应该保存税务记录多久？",
+            answer:
+              "马来西亚的指引一般提到保存记录七年，但期限可能因记录类型和法律而异。请向税务机关或您的顾问确认现行要求，并把支持您报税表的一切至少保存那么久。",
+          },
+          {
+            question: "收到通知时我该怎么办？",
+            answer:
+              "仔细阅读，记下期限，不要忽视。收集并核对所要求的文件，准确并以书面回应，需要时以书面申请延期，如果情况复杂，请咨询持牌的税务代理或顾问。",
+          },
+          {
+            question: "审计期间会发生什么？",
+            answer:
+              "您通常会收到一份说明范围和期间的通知，提供文件、回答问题，并可能被访查。税务机关随后可能提出调整，您可以解释、以文件支持，或通过适当的程序提出异议。",
+          },
+          {
+            question: "如果我的报税表有误，会面临哪些罚款？",
+            answer:
+              "可能被征收额外税款和罚款，取决于错误的性质，例如无心之失与故意少报。严重的罪行可能导致检控。费率和规则会变动，所以请向税务机关或您的顾问确认现行情况。",
+          },
+          {
+            question: "我可以自愿披露错误吗？",
+            answer:
+              "税务机关曾推出对自愿披露给予减免罚款的计划，尤其是在审计开始之前。细节和资格会变动，所以请在披露之前查看现行官方指引并咨询持牌顾问。",
+          },
+          {
+            question: "审计时我需要税务代理或会计师吗？",
+            answer:
+              "不一定必须，但对于正式审计、大额款项、怀疑过去有错误或技术性问题，这是明智的。持牌代理可以审阅您的记录、提供意见，并在允许的情况下代表您沟通。您仍然对所提交内容的准确性负责。",
+          },
+          {
+            question: "如何降低审计出问题的机会？",
+            answer:
+              "正确且按时申报，保存完整且有条理的记录，把企业和个人开支分开，只申报您能证明的项目，让各项申报中的数字保持一致，并每年请会计师检视您的记录一次。",
+          },
+        ],
+      },
+      ms: {
+        title: "Mengendalikan Audit atau Semakan Cukai oleh LHDN: Rekod, Maklum Balas dan Apa yang Dijangka",
+        excerpt:
+          "Menerima surat daripada pihak berkuasa cukai menimbulkan tekanan, tetapi semakan atau audit ialah bahagian rutin dalam sistem dan jauh lebih mudah dikendalikan jika anda bersedia. Panduan ini menunjukkan kepada perniagaan kecil Malaysia mengapa pulangan dipilih, rekod yang perlu disimpan, cara membalas surat dan tarikh akhir, cara bekerja dengan ejen cukai, apa yang melibatkan penalti dan pendedahan sukarela, dan cara mengurangkan risiko audit anda.",
+        body: `Sedikit sahaja pemilik perniagaan yang gemar membuka surat daripada Lembaga Hasil Dalam Negeri. Namun semakan dan audit ialah bahagian biasa dalam cara sistem cukai menyemak bahawa pulangan adalah tepat. Kebanyakan kerja dalam audit dilakukan lama sebelum surat itu tiba, dengan menyimpan rekod yang baik dan memfailkan dengan teliti.
+
+Panduan ini menerangkan apa yang biasanya berlaku, supaya surat mencetuskan maklum balas yang tenang dan teratur dan bukannya panik.
+
+Ini ialah maklumat am, bukan nasihat cukai atau undang-undang. Prosedur audit, kadar penalti, program pendedahan dan keperluan penyimpanan rekod ditetapkan oleh undang-undang dan garis panduan yang diterbitkan oleh pihak berkuasa cukai, dan ia berubah dari semasa ke semasa. Sahkan kedudukan semasa dengan sumber rasmi atau ejen atau penasihat cukai berlesen, terutamanya sebelum anda membalas notis atau mendedahkan apa-apa.
+
+## 1. Fahami apakah semakan atau audit
+
+### Jenis semakan yang berbeza
+Pihak berkuasa cukai mungkin menghantar pertanyaan tentang sesuatu item tertentu, meminta dokumen sokongan, menjalankan semakan meja ke atas rekod anda, atau menjalankan audit yang lebih penuh, yang boleh termasuk melawat premis anda. Skopnya bergantung pada isu dan jumlah yang terlibat.
+
+### Mengapa anda mungkin dipilih
+Pulangan boleh dipilih atas banyak sebab, termasuk pemadanan data dengan sumber lain, nisbah luar biasa berbanding perniagaan serupa, tuntutan atau kerugian besar, pemfailan lewat atau tiada, maklumat daripada pihak ketiga, dan pemilihan rawak. Dipilih tidak bermakna anda melakukan sesuatu yang salah.
+
+### Apa yang boleh dilihat oleh pihak berkuasa
+Ia boleh meminta akaun, penyata bank, invois, resit, kontrak, rekod gaji dan dokumen berkaitan anda, untuk menyemak bahawa pendapatan lengkap dan potongan sah. Dalam sesetengah kes ia juga melihat cukai dan kewajipan lain.
+
+### Sejauh mana ia boleh merentas masa
+Pihak berkuasa secara amnya boleh menyemak pulangan untuk beberapa tahun, itulah sebabnya tempoh penyimpanan rekod adalah panjang. Sahkan had masa semasa untuk taksiran dan untuk penipuan atau keingkaran sengaja, yang mungkin berbeza.
+
+### Semakan bukan tuduhan
+Kebanyakan semakan berakhir dengan pelarasan, penjelasan atau tiada perubahan langsung. Bekerjasama, membalas tepat pada masanya, dan tepat biasanya menghasilkan kesudahan terbaik.
+
+## 2. Simpan rekod yang tahan semakan
+
+Simpan setiap rekod yang menyokong angka dalam borang cukai anda selama tempoh yang dikehendaki undang-undang. Tempoh standard di Malaysia secara amnya dinyatakan sebagai tujuh tahun, tetapi sahkan keperluan semasa untuk situasi anda, kerana tempoh boleh berbeza mengikut jenis rekod dan undang-undang.
+
+### Apa yang perlu disimpan
+Invois jualan, resit rasmi, invois dan resit pembelian, penyata bank, buku tunai, rekod gaji, kontrak, dokumen pembelian aset, perjanjian pinjaman, dan sebarang surat-menyurat yang menerangkan transaksi. Panduan kami tentang asas simpan kira menerangkan cara menyediakan sistem yang mudah.
+
+### Simpan rekod supaya boleh diperoleh semula
+Susun mengikut tahun dan jenis, imbas dokumen kertas, dan sandarkan salinan digital. Sekotak resit yang tidak disusun sukar dipertahankan. Panduan kami tentang keselamatan siber menerangkan cara melindungi sandaran.
+
+### Asingkan perniagaan dan peribadi
+Campuran perbelanjaan peribadi dan perniagaan ialah punca lazim potongan ditolak dan pertanyaan. Gunakan akaun bank perniagaan. Panduan kami tentang membuka akaun bank perniagaan menerangkan pilihan.
+
+### Sokong setiap potongan
+Potongan memerlukan bukti bahawa perbelanjaan itu ditanggung untuk perniagaan. Simpan invois, bukti bayaran, dan nota tentang tujuan perniagaan. Panduan kami tentang potongan cukai menerangkan apa yang lazimnya dibenarkan.
+
+### Rekodkan transaksi luar biasa
+Item besar atau tidak tetap, seperti transaksi pihak berkaitan, jualan aset atau pendapatan sekali sahaja, patut mempunyai jejak kertas yang jelas dan penjelasan bertulis.
+
+### Jika e-Invois terpakai
+Jika anda mesti mengeluarkan e-Invois, simpannya dan data sokongan sebagai sebahagian daripada rekod anda. Panduan kami tentang e-Invois menerangkan peraturannya.
+
+## 3. Balas dengan betul apabila notis tiba
+
+### Bacanya dengan teliti
+Catat siapa yang menghantarnya, tarikh, isu, tempoh yang terlibat, dokumen yang diminta, dan tarikh akhir. Jangan abaikannya, dan jangan lengahkan, kerana tarikh akhir yang terlepas boleh memburukkan keadaan.
+
+### Catat dan kalendarkan tarikh akhir
+Rekodkan tarikh surat diterima dan tarikh balasan. Jika anda memerlukan lebih masa, mohon secara bertulis sebelum tarikh akhir, dan simpan salinan permohonan dan sebarang jawapan.
+
+### Kumpul dan semak sebelum menghantar
+Kumpulkan dokumen yang diminta, dan semak berbanding rekod anda sendiri sebelum menghantarnya. Hantar apa yang diminta, dilabel dengan jelas, dan simpan salinan penuh.
+
+### Jawab dengan tepat dan secara bertulis
+Berpandukan fakta, terangkan item secara ringkas, dan jangan meneka. Jika anda tidak tahu, katakan anda akan menyemak, dan bukannya memberi jawapan yang tidak pasti. Simpan log setiap panggilan, mesyuarat dan surat.
+
+### Dapatkan nasihat awal
+Jika isunya rumit, jumlahnya material, atau surat menyebut penalti atau audit, bercakap dengan ejen atau penasihat cukai berlesen sebelum anda membalas.
+
+### Sahkan bahawa hubungan itu tulen
+Penipuan menyamar sebagai pihak berkuasa cukai. Jika mesej menuntut bayaran segera ke akaun peribadi, atau menghantar pautan mencurigakan, sahkan melalui saluran rasmi sebelum anda membalas. Panduan kami tentang keselamatan siber menerangkan penipuan lazim.
+
+## 4. Ketahui apa yang dijangka semasa audit
+
+### Permulaan dan skop
+Anda lazimnya menerima notis yang menyatakan skop, tempoh dan dokumen yang diperlukan, dan anda mungkin diminta untuk bertemu atau dilawati. Tanya apa yang dirangkumi oleh audit, supaya anda menyediakan rekod yang betul.
+
+### Permintaan maklumat dan temu bual
+Pegawai mungkin bertanya tentang cara perniagaan beroperasi, bagaimana pendapatan direkodkan, dan mengapa potongan tertentu dituntut. Jawab dengan jujur, dan minta masa untuk menyemak apa-apa yang anda tidak pasti.
+
+### Dapatan dan perbincangan
+Selepas menyemak maklumat, pihak berkuasa mungkin mencadangkan pelarasan. Anda biasanya berpeluang menerangkan, memberikan dokumen lanjut, atau tidak bersetuju dengan sesuatu dapatan sebelum ia dimuktamadkan.
+
+### Taksiran dan bayaran
+Jika cukai tambahan kena dibayar, anda akan diberitahu jumlahnya, dan sebarang penalti, dengan tarikh akhir bayaran. Terdapat peraturan tentang bayaran dan, dalam sesetengah keadaan, ansuran, jadi tanya pihak berkuasa atau penasihat anda.
+
+### Jika anda tidak bersetuju
+Terdapat prosedur formal untuk merayu taksiran dalam had masa yang ditetapkan. Jangan terlepas tarikh akhir, dan dapatkan nasihat profesional sebelum anda memfailkan rayuan.
+
+### Kekalkan nada yang tenang dan profesional
+Bersikap sopan, teratur dan bekerjasama membantu. Bertengkar atau melengahkan jarang membantu.
+
+## 5. Fahami penalti dan pendedahan sukarela
+
+### Penalti
+Jika pulangan tidak betul, cukai tambahan dan penalti mungkin dikenakan. Jumlahnya bergantung pada sifat kesilapan, seperti kesilapan jujur berbanding pengurangan sengaja, dan pada peraturan pada masa itu. Kesalahan serius, seperti penipuan, boleh membawa kepada pendakwaan. Sahkan kadar dan peraturan semasa dengan pihak berkuasa atau penasihat anda.
+
+### Pendedahan sukarela
+Jika anda mendapati anda telah melaporkan terlalu rendah atau membuat kesilapan, pihak berkuasa cukai pernah mempunyai program yang menawarkan penalti dikurangkan untuk pendedahan sukarela, terutamanya sebelum audit bermula. Butiran, kelayakan dan syarat berubah, jadi semak panduan rasmi semasa dan bercakap dengan penasihat berlesen sebelum anda mendedahkan.
+
+### Caj bayaran lewat
+Bayaran cukai yang lewat boleh membawa kepada caj tambahan. Jika anda tidak dapat membayar sepenuhnya, hubungi pihak berkuasa lebih awal untuk bertanya tentang pilihan, dan bukannya menunggu.
+
+### Jangan sembunyikan atau musnahkan rekod
+Gagal menyimpan rekod, atau memusnahkannya, boleh menjadi kesalahan dan memburukkan keadaan dengan banyak. Jika anda telah kehilangan rekod, beritahu penasihat anda dan bincangkan membinanya semula.
+
+### Dapatkan bantuan profesional untuk keputusan pendedahan
+Sama ada dan bagaimana untuk mendedahkan ialah keputusan undang-undang dan kewangan yang mempunyai akibat, jadi jangan memutuskan seorang diri.
+
+## 6. Bekerja dengan ejen atau penasihat cukai
+
+### Bila untuk melibatkan seorang
+Libatkan ejen atau penasihat cukai berlesen sebelum anda membalas audit formal, apabila jumlah besar terlibat, apabila anda mengesyaki kesilapan lalu, atau apabila isunya teknikal. Walaupun perundingan ringkas boleh menjimatkan wang.
+
+### Apa yang mereka boleh lakukan
+Mereka boleh menyemak rekod anda, menerangkan pilihan anda, berkomunikasi dengan pihak berkuasa bagi pihak anda jika dibenarkan, menyediakan jawapan, dan berunding tentang pelarasan atau bayaran.
+
+### Bagaimana memilih
+Semak bahawa mereka berlesen atau berdaftar dengan betul, tanya tentang pengalaman mereka dengan audit bagi perniagaan seperti anda, dan persetujui yuran serta skop secara bertulis. Berwaspada terhadap sesiapa yang berjanji menjadikan masalah hilang.
+
+### Kekal terlibat
+Anda kekal bertanggungjawab atas ketepatan pulangan anda dan maklumat yang diberikan. Baca apa yang dihantar atas nama anda. Panduan kami tentang kontrak dan terma menerangkan cara bersetuju tentang terma pelantikan yang jelas.
+
+### Kongsi maklumat dengan jujur
+Beritahu penasihat anda segala-galanya, termasuk fakta yang janggal. Mereka hanya dapat melindungi anda dengan betul jika mereka tahu kedudukan sebenar.
+
+> Pertahanan audit terbaik adalah membosankan: rekod lengkap, pemfailan konsisten, dan penjelasan yang jelas untuk apa-apa yang luar biasa. Jika anda boleh menyerahkan fail anda kepada orang asing dan mereka boleh mengikuti setiap angka, anda sudah bersedia dengan baik.
+
+## 7. Kurangkan risiko audit anda dan kekal teratur
+
+### Failkan dengan betul dan tepat pada masanya
+Hantar pulangan dan bayar cukai menjelang tarikh akhir, dan pastikan angka sepadan dengan pemfailan lain, seperti gaji dan pulangan cukai tidak langsung. Panduan kami tentang kalendar cukai perniagaan kecil menyenaraikan tarikh akhir utama.
+
+### Pastikan buku anda terkini
+Kemas kini akaun anda secara berkala, selaraskan akaun bank, dan semak sebelum memfailkan. Panduan kami tentang asas simpan kira menerangkan caranya, dan panduan kami tentang menguruskan aliran tunai membantu anda memerhatikan angka.
+
+### Bersikap konsisten
+Perubahan besar yang tidak dijelaskan dalam pendapatan, margin atau perbelanjaan boleh menarik pertanyaan. Simpan nota yang menerangkan perubahan ketara.
+
+### Tuntut hanya apa yang boleh anda sokong
+Potongan agresif atau tidak disokong meningkatkan risiko. Jika ragu-ragu, tanya penasihat anda, dan simpan bukti untuk semua yang anda tuntut.
+
+### Kendalikan kakitangan dan caruman berkanun dengan betul
+Kesilapan gaji, caruman tidak dibayar dan pekerja yang salah dikelaskan boleh menimbulkan isu merentas beberapa pihak berkuasa. Panduan kami tentang gaji dan caruman berkanun dan panduan kami tentang bekerja dengan pekerja bebas menerangkan peraturannya.
+
+### Lakukan pemeriksaan tahunan
+Sekali setahun, semak rekod dan pemfailan anda dengan akauntan, betulkan masalah lebih awal, dan kemas kini proses anda. Panduan kami tentang kekal patuh dengan rekod SSM merangkumi bahagian syarikat.
+
+Jika anda memerlukan ejen cukai, akauntan atau peguam untuk membantu dengan semakan atau mengemaskan rekod anda, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pelanggan menemui dan mempercayai perniagaan anda, yang merupakan asas terbaik untuk pendapatan yang stabil dan didokumenkan dengan baik yang digemari oleh audit.
+
+## Kesilapan lazim PKS Malaysia dengan audit cukai
+
+- **Mengabaikan atau melengahkan notis.** Tarikh akhir yang terlepas boleh memburukkan pertanyaan yang boleh diurus, jadi sentiasa balas tepat pada masanya atau mohon lanjutan secara bertulis.
+- **Mencampurkan perbelanjaan perniagaan dan peribadi.** Ia menyukarkan potongan disokong dan mengundang pertanyaan.
+- **Menyimpan rekod yang lemah atau hilang.** Tanpa bukti, tuntutan yang sah boleh ditolak, dan gagal menyimpan rekod boleh menjadi kesalahan.
+- **Membalas audit serius tanpa nasihat.** Kenyataan yang dibuat tergesa-gesa boleh mewujudkan masalah baharu, jadi dapatkan bantuan profesional lebih awal.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Semak di mana rekod anda, berapa lama anda telah menyimpannya, dan sama ada anda boleh memperoleh mana-mana tahun dengan cepat.
+- **Seterusnya:** Asingkan perbelanjaan perniagaan dan peribadi, selaraskan akaun bank anda, dan susun dokumen mengikut tahun dan jenis.
+- **Kemudian:** Semak potongan terbesar dan transaksi luar biasa anda, dan pastikan setiap satu mempunyai bukti dan penjelasan.
+- **Setiap tahun:** Minta akauntan menyemak pemfailan anda, dan ketahui siapa yang akan anda hubungi jika notis tiba.
+
+Audit cukai bukan hukuman. Ia ialah semakan, dan perniagaan dengan rekod kemas dan pemfailan jujur boleh menghadapinya dengan yakin.`,
+        faqs: [
+          {
+            question: "Mengapa perniagaan saya dipilih untuk semakan atau audit cukai?",
+            answer:
+              "Sebab yang mungkin termasuk pemadanan data dengan sumber lain, nisbah luar biasa berbanding perniagaan serupa, tuntutan atau kerugian besar, pemfailan lewat atau tiada, maklumat pihak ketiga, dan pemilihan rawak. Dipilih tidak bermakna anda melakukan sesuatu yang salah.",
+          },
+          {
+            question: "Berapa lama saya patut menyimpan rekod cukai saya?",
+            answer:
+              "Panduan Malaysia secara amnya merujuk kepada menyimpan rekod selama tujuh tahun, tetapi tempoh boleh berbeza mengikut jenis rekod dan undang-undang. Sahkan keperluan semasa dengan pihak berkuasa cukai atau penasihat anda, dan simpan segala-galanya yang menyokong pulangan anda sekurang-kurangnya selama itu.",
+          },
+          {
+            question: "Apa yang perlu saya lakukan apabila menerima notis?",
+            answer:
+              "Bacanya dengan teliti, catat tarikh akhir, dan jangan abaikannya. Kumpul dan semak dokumen yang diminta, balas dengan tepat dan secara bertulis, mohon lanjutan secara bertulis jika perlu, dan dapatkan nasihat daripada ejen atau penasihat cukai berlesen jika ia rumit.",
+          },
+          {
+            question: "Apakah yang berlaku semasa audit?",
+            answer:
+              "Anda biasanya menerima notis yang menyatakan skop dan tempoh, menyediakan dokumen, menjawab soalan, dan mungkin dilawati. Pihak berkuasa kemudian mungkin mencadangkan pelarasan, yang boleh anda terangkan, sokong dengan dokumen, atau pertikaikan melalui prosedur yang betul.",
+          },
+          {
+            question: "Apakah penalti yang boleh dikenakan jika pulangan saya salah?",
+            answer:
+              "Cukai tambahan dan penalti mungkin dikenakan, bergantung pada sifat kesilapan, seperti kesilapan jujur berbanding pengurangan sengaja. Kesalahan serius boleh membawa kepada pendakwaan. Kadar dan peraturan berubah, jadi sahkan kedudukan semasa dengan pihak berkuasa atau penasihat anda.",
+          },
+          {
+            question: "Bolehkah saya mendedahkan kesilapan secara sukarela?",
+            answer:
+              "Pihak berkuasa cukai pernah mempunyai program yang menawarkan penalti dikurangkan untuk pendedahan sukarela, terutamanya sebelum audit bermula. Butiran dan kelayakan berubah, jadi semak panduan rasmi semasa dan bercakap dengan penasihat berlesen sebelum anda mendedahkan.",
+          },
+          {
+            question: "Adakah saya memerlukan ejen cukai atau akauntan untuk audit?",
+            answer:
+              "Ia tidak selalu diwajibkan, tetapi bijak untuk audit formal, jumlah besar, kesilapan lalu yang disyaki, atau isu teknikal. Ejen berlesen boleh menyemak rekod anda, menasihati, dan berkomunikasi bagi pihak anda jika dibenarkan. Anda kekal bertanggungjawab atas ketepatan apa yang dihantar.",
+          },
+          {
+            question: "Bagaimanakah saya boleh mengurangkan peluang masalah audit?",
+            answer:
+              "Failkan dengan betul dan tepat pada masanya, simpan rekod lengkap dan teratur, asingkan perbelanjaan perniagaan dan peribadi, tuntut hanya apa yang boleh anda sokong, pastikan angka konsisten merentas pemfailan, dan minta akauntan menyemak rekod anda setahun sekali.",
+          },
+        ],
+      },
+    },
+  },
 ];

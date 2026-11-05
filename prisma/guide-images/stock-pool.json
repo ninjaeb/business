@@ -669,6 +669,49 @@
       ],
       "description": "Smiling older woman running a market stall",
       "usedBy": "selling-a-business-or-succession-planning-in-malaysia-cover.webp"
+    },
+    {
+      "id": 8834107,
+      "tags": [
+        "payments",
+        "customer",
+        "salon"
+      ],
+      "description": "Friendly hairdresser assists a customer with payment in a salon",
+      "usedBy": "accepting-digital-payments-in-malaysia-cover.webp"
+    },
+    {
+      "id": 6077600,
+      "tags": [
+        "tax",
+        "documents",
+        "desk",
+        "organizing"
+      ],
+      "description": "Professional organizing a stack of documents on a desk",
+      "usedBy": "handling-a-tax-audit-by-lhdn-in-malaysia-documents.webp"
+    },
+    {
+      "id": 7054757,
+      "tags": [
+        "tax",
+        "desk",
+        "folders",
+        "office"
+      ],
+      "description": "Neat organized desk with stacks of paper, folders, pens and a computer mouse",
+      "usedBy": "handling-a-tax-audit-by-lhdn-in-malaysia-cover.webp"
+    },
+    {
+      "id": 8657358,
+      "tags": [
+        "payments",
+        "customer",
+        "counter",
+        "pharmacy"
+      ],
+      "description": "Pharmacist in a white uniform hands medication to a customer across the counter",
+      "usedBy": "accepting-digital-payments-in-malaysia-counter.webp"
     }
   ]
 }

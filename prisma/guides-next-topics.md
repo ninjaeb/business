@@ -15,14 +15,14 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Accepting Digital Payments in Malaysia: DuitNow QR, E-Wallets, Cards, and Fees**
-   — Choosing payment methods for a small shop or online store: DuitNow
-   QR, e-wallets, card terminals and payment gateways, typical fee
-   structures (to hedge and confirm with providers), settlement times,
-   reconciling sales, fraud and chargeback basics, and links to e-invoicing.
+1. **Selling to the Government: MOF Registration, ePerolehan, and Winning Tenders as an SME**
+   — How small businesses can supply government agencies: registering with
+   the Ministry of Finance and the ePerolehan system, Bumiputera and
+   other status requirements (to hedge), finding quotations and tenders,
+   preparing a competitive bid, payment timelines, and common disqualifiers.
 
-2. **Handling a Tax Audit or Review by LHDN: Records, Responses, and What to Expect**
-   — How a tax review or audit typically unfolds for a small business:
-   why returns are selected, what records to keep and for how long, how to
-   respond to letters and deadlines, working with a tax agent, penalties and
-   voluntary disclosure (to hedge), and how to reduce audit risk.
+2. **Training Your Team with HRD Corp: Levy, Claims, and Upskilling for Malaysian SMEs**
+   — Who must register and pay the HRD Corp levy (to hedge thresholds),
+   how employers claim for approved training, choosing registered training
+   providers, planning a simple training budget, measuring results, and how
+   training supports retention and productivity.
