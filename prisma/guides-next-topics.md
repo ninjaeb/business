@@ -15,14 +15,14 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Selling to the Government: MOF Registration, ePerolehan, and Winning Tenders as an SME**
-   — How small businesses can supply government agencies: registering with
-   the Ministry of Finance and the ePerolehan system, Bumiputera and
-   other status requirements (to hedge), finding quotations and tenders,
-   preparing a competitive bid, payment timelines, and common disqualifiers.
+1. **Building Customer Loyalty and Repeat Business in Malaysia: Referrals, Memberships, and Feedback**
+   — Why repeat customers are cheaper than new ones: simple loyalty
+   programmes and memberships, referral incentives, collecting and acting
+   on feedback, using WhatsApp and email responsibly (with PDPA links),
+   handling lapsed customers, and measuring retention.
 
-2. **Training Your Team with HRD Corp: Levy, Claims, and Upskilling for Malaysian SMEs**
-   — Who must register and pay the HRD Corp levy (to hedge thresholds),
-   how employers claim for approved training, choosing registered training
-   providers, planning a simple training budget, measuring results, and how
-   training supports retention and productivity.
+2. **Choosing Accounting Software for Your Malaysian SME: Features, Costs, and Switching Over**
+   — What small businesses need from accounting software: invoicing,
+   e-invoicing readiness, SST and payroll support, bank feeds, reports,
+   comparing cloud and desktop options and costs (to hedge), migrating from
+   spreadsheets, and working with your accountant.
