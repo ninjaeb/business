@@ -146,6 +146,18 @@ async function placesRequest<T>(
       message +=
         " This key is restricted by website (HTTP referrer) in Google Cloud Console, but these requests run on the server, which sends no referrer — change the key's Application restriction to IP addresses (or None) instead.";
     }
+    // "The caller does not have permission" is Google's generic wording
+    // for three different project/key misconfigurations that all produce
+    // the exact same message, so all three are worth naming rather than
+    // guessing which one it is: (1) Places API (New) — a separate product
+    // from the legacy "Places API" in Cloud Console — isn't enabled on the
+    // project, (2) the key's own API restrictions list doesn't include
+    // Places API (New), or (3) the project has no billing account linked
+    // (required even to stay within the free monthly credit).
+    if (/does not have permission/i.test(message)) {
+      message +=
+        " Check, in Google Cloud Console: (1) \"Places API (New)\" is enabled for this project — it's separate from the legacy \"Places API\", (2) this key's API restrictions include \"Places API (New)\", and (3) the project has a billing account linked.";
+    }
     throw new Error(message);
   }
   return (await response.json()) as T;
