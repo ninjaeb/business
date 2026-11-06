@@ -21520,4 +21520,1269 @@ Audit cukai bukan hukuman. Ia ialah semakan, dan perniagaan dengan rekod kemas d
       },
     },
   },
+  {
+    slug: "selling-to-the-government-in-malaysia",
+    title: "Selling to the Government: MOF Registration, ePerolehan, and Winning Tenders as an SME",
+    seoTitle: "Selling to the Government in Malaysia: A Guide for SMEs",
+    seoDescription:
+      "How Malaysian SMEs can supply government agencies: MOF and ePerolehan registration, finding tenders, preparing bids, payment timelines and pitfalls.",
+    coverImage: {
+      file: "selling-to-the-government-in-malaysia-cover.webp",
+      mimeType: "image/webp",
+      alt: "Four colleagues around a white meeting table with laptops, joining their hands in the centre in a show of teamwork",
+      altTranslations: {
+        zh: "四位同事围坐在摆有笔记本电脑的白色会议桌旁，把手叠放在桌子中央，展现团队合作",
+        ms: "Empat rakan sekerja duduk di sekeliling meja mesyuarat putih dengan komputer riba, menyatukan tangan di tengah sebagai tanda kerjasama pasukan",
+      },
+    },
+    contentImages: {
+      handshake: {
+        file: "selling-to-the-government-in-malaysia-handshake.webp",
+        mimeType: "image/webp",
+        alt: "Two men shaking hands beside a window in a bright office, one in a striped shirt and one in a tan jacket",
+        altTranslations: {
+          zh: "两位男士在明亮的办公室窗边握手，一位穿条纹衬衫，另一位穿米黄色外套",
+          ms: "Dua lelaki berjabat tangan di tepi tingkap dalam pejabat terang, seorang berkemeja belang dan seorang lagi berjaket coklat muda",
+        },
+        after: "Find out how government agencies actually buy what you sell before you invest in registration.",
+        afterTranslations: {
+          zh: "在投入注册之前，先弄清楚政府机构实际上是如何采购您所销售的产品的。",
+          ms: "Ketahui bagaimana agensi kerajaan sebenarnya membeli apa yang anda jual sebelum anda melabur dalam pendaftaran.",
+        },
+      },
+    },
+    excerpt:
+      "Government agencies buy everything from stationery and catering to IT services and repairs, and small businesses can win a share of that spending. This guide shows Malaysian SMEs how government buying works, how registration with the Ministry of Finance and the ePerolehan system fits in, how to find quotations and tenders, how to prepare a competitive bid, and what to expect on payment and compliance.",
+    body: `The public sector is one of the largest buyers in the country. Ministries, departments, schools, hospitals, and agencies need goods and services every day, and many purchases are small enough for a local SME to supply. A government customer can bring steady volume and credibility, but it also brings paperwork, strict rules, and sometimes slow payment.
+
+This guide explains the basics so that you can decide whether it suits your business, and how to go about it if it does.
+
+This is general information, not legal or procurement advice. Procurement rules, thresholds, registration requirements, fees, and status categories are set by the authorities and change over time, and they differ between agencies and types of purchase. Always confirm the current requirements on the official government procurement portal and in each tender notice before you spend money or submit a bid.
+
+## 1. Understand how government buying works
+
+### Who buys, and what
+Federal and state ministries, departments, local authorities, statutory bodies, schools, hospitals, and government-linked organisations all buy. They purchase supplies, equipment, services such as cleaning, security, catering, printing, and IT, and works such as repairs and construction.
+
+### Different ways of buying
+Smaller purchases are often made through a request for quotation to a few suppliers, while larger purchases go to open or limited tender. The method, the value limits, and the paperwork depend on the amount and the agency's rules.
+
+### Why rules are strict
+Public money must be spent transparently and fairly, so procurement follows set procedures, documentation, and evaluation criteria. That is good for small suppliers, because a properly prepared bid can win against bigger names, but it also means that mistakes in paperwork can disqualify you.
+
+### Is it right for you?
+Government work suits businesses that can deliver consistently, handle documentation, and fund their own working capital until they are paid. It is less suitable if your margins are tight or you cannot cope with delayed payments. Our guide on cash flow explains how to plan for slow payers.
+
+### Know the legal groundwork
+You need a properly registered business with the required licences before you can supply. See our guide on registering a business with SSM and our guide on business licenses and permits.
+
+## 2. Check what you can sell and to whom
+
+Find out how government agencies actually buy what you sell before you invest in registration. Spend time on research, because registration takes effort and only pays off if there is real demand for your product or service.
+
+### Look at past and current notices
+Browse the procurement portal and agency websites for quotations and tenders in your field, noting who buys, how often, in what quantities, and what specifications they use.
+
+### Match your offer to their needs
+Government buyers want specified goods and services at reasonable prices, delivered on time, with proper documents. Check that you can meet technical specifications, quantities, and delivery locations.
+
+### Check whether registration is required
+Whether you need to be registered depends on the type and value of the purchase, and agencies may have their own rules for small purchases. Confirm the current thresholds and rules for the categories you target.
+
+### Understand any status or category rules
+Some purchases and price preferences are linked to business status or ownership categories, and the requirements and documents differ. Check the current definitions and eligibility on the official portal and with the relevant agency before you apply for any status.
+
+### Talk to the people who buy
+Introduce your business to the procurement or user departments of the agencies you target. Some agencies hold briefings or supplier days, and they are a useful way to learn how purchases really work.
+
+## 3. Get registered with the right systems
+
+### Ministry of Finance supplier registration
+Suppliers who want to sell to government agencies generally need to register with the Ministry of Finance as a supplier, through the government's electronic procurement system. The process is handled online, and approval gives you codes that describe the types of goods and services you can supply.
+
+### What you will typically need
+Expect to prepare company registration documents, details of directors and owners, a business bank account in the company's name, tax and other compliance records, and information about your premises and capabilities. Some categories need extra approvals or certifications. Our guide on opening a business bank account explains what banks ask for.
+
+### Fees and validity
+Registration involves fees and a validity period after which you must renew. Amounts and periods change, so check the official portal for the current figures, and keep your registration up to date so you do not miss opportunities.
+
+### Choose your codes carefully
+The codes you hold decide which notices you can see and bid for. Register only for categories you can genuinely supply, and update them as your business grows.
+
+### Keep your details current
+Make sure your contact email, phone number, and company details are accurate, because notices and queries are sent to them. A missed email can mean a missed deadline.
+
+### Be wary of middlemen
+Some agents offer registration help, and they can save time, but check their reputation and fees, and never share your login details. You remain responsible for what is submitted in your name.
+
+## 4. Find quotations and tenders
+
+### Where opportunities appear
+Quotations and tenders are advertised on the government procurement portal, on agency websites, and sometimes in newspapers or through direct invitations. Set up alerts for your categories and check regularly.
+
+### Read the notice carefully
+Note the closing date and time, the scope, the eligibility conditions, the required documents, any compulsory briefing or site visit, the evaluation method, and where and how to submit. Missing one requirement is a common reason for rejection.
+
+### Decide whether to bid
+Bid when you can meet the requirements, price profitably, and handle delivery. It is better to bid for fewer opportunities carefully than to submit many weak ones.
+
+### Ask questions properly
+If something is unclear, use the official channel to ask before the deadline, and keep a record of the answer. Do not rely on informal verbal assurances.
+
+### Plan your time
+Preparing a bid takes longer than you expect, especially if you need supplier quotes or certificates. Start early and allow time for review.
+
+## 5. Prepare a competitive and compliant bid
+
+### Follow the instructions exactly
+Use the required forms and formats, answer every item, sign where needed, and include every requested document. Compliance is usually checked first, and bids that fail may not be evaluated at all.
+
+### Price carefully
+Work out your true cost including delivery, installation, taxes, and any compliance costs, and then add a sensible margin. Underpricing to win can leave you with a loss and a difficult contract. Our guide on pricing explains costing and margins, and our guide on SST registration covers tax.
+
+### Show your capability
+Provide evidence of experience, similar projects, certifications, references, and your ability to deliver on time. Keep a set of standard documents ready.
+
+### Check the documents
+Make sure your company registration, licences, tax and other certificates, and any required declarations are valid and current. Expired documents are a common cause of disqualification.
+
+### Review before submitting
+Have someone else check the bid against the notice, and submit well before the deadline, since systems can be slow or fail at the last minute.
+
+### Keep copies
+Save a full copy of what you submitted, along with confirmation of receipt, so that you can respond to queries and prepare future bids.
+
+> A government tender is won on preparation, not on luck. The suppliers who succeed treat the paperwork as part of the product: complete, accurate, and on time.
+
+## 6. Deliver, invoice, and get paid
+
+### Read the contract or purchase order
+Understand the delivery schedule, specifications, inspection, warranty, penalties for delay, and payment terms before you accept. Our guide on contracts and terms explains how to read the key clauses.
+
+### Deliver exactly what was ordered
+Government buyers check quantity, quality, and documents against the order. Keep delivery orders, inspection records, and signed acknowledgements.
+
+### Invoice correctly
+Submit accurate invoices and supporting documents in the format the agency requires. Errors cause delays. Where e-invoicing applies to you, see our guide on e-invoicing.
+
+### Plan for payment timing
+Payment can take longer than in the private sector, and it depends on the agency and the completeness of your documents. Plan your cash flow, and use the agency's channels to follow up politely. Our guide on collecting late payments explains escalation steps.
+
+### Keep records
+Retain contracts, orders, invoices, and correspondence in an organised way, since public contracts may be audited. Our guide on bookkeeping basics explains how.
+
+## 7. Stay compliant and avoid common traps
+
+### Be honest and avoid improper dealings
+Public procurement is closely regulated. Never offer or accept gifts, commissions, or favours to influence a decision, and never share confidential tender information. Anti-corruption laws apply to both sides, and breaches can lead to blacklisting and prosecution.
+
+### Avoid fronting and misrepresentation
+Do not allow your registration to be used by another business, or claim a status or capability you do not have. Such practices can lead to cancellation of registration and legal action.
+
+### Meet your obligations
+Pay your taxes, statutory contributions, and suppliers properly, and keep your licences current. Our guide on the small business tax calendar and our guide on hiring your first employee cover the basics.
+
+### Do not over-commit
+Winning more contracts than you can fund or deliver is a fast route to penalties and a damaged reputation. Grow gradually, and consider whether you need financing. Our guide on SME grants and funding explains options.
+
+### Learn from every bid
+When you lose, ask for feedback where it is available, review the winning conditions, and improve next time. Persistence matters, since many suppliers win on their third or fourth attempt.
+
+If you need an accountant, a lawyer, or a supplier to help you prepare for government work, you can [browse the directory](/en) for local professionals, and [creating a free business listing](/en/signup) helps buyers and partners find and verify your business.
+
+## Common mistakes Malaysian SMEs make when selling to the government
+
+- **Registering before checking demand.** Registration costs time and money, and it pays off only if agencies actually buy what you sell.
+- **Missing a small requirement.** A missing signature, an expired certificate, or a late submission can disqualify an otherwise strong bid.
+- **Underpricing to win.** A price that ignores true costs can turn a win into a loss, especially with delayed payment.
+- **Ignoring cash flow.** Slow payment can strain a small business that has not planned for it.
+
+## Where to start
+
+- **This week:** Browse recent quotations and tenders in your field, and note who buys what you sell, and at what prices.
+- **Next:** Check the current registration requirements on the official portal, and gather your company documents and certificates.
+- **Then:** Register for the categories you can genuinely supply, and set up alerts for notices.
+- **Each bid:** Read the notice carefully, price on true costs, check every document, and submit early.
+
+Government work rewards the prepared and the patient. Start small, get the paperwork right, and build a track record that opens the door to larger contracts.`,
+    faqs: [
+      {
+        question: "Do I need to register to sell to the government?",
+        answer:
+          "Generally suppliers register with the Ministry of Finance through the government's electronic procurement system, but whether registration is required can depend on the type and value of the purchase and the agency's rules. Confirm the current thresholds and requirements on the official portal.",
+      },
+      {
+        question: "What is ePerolehan?",
+        answer:
+          "The government's electronic procurement system, where suppliers register, notices of quotations and tenders are published, and many purchases are carried out. Check the official portal for how it currently works.",
+      },
+      {
+        question: "What documents do I usually need to register?",
+        answer:
+          "Typically company registration documents, details of directors and owners, a business bank account in the company's name, tax and other compliance records, and information about your premises and capabilities. Some categories need extra approvals. Confirm the current list on the official portal.",
+      },
+      {
+        question: "How do I find tenders and quotations?",
+        answer:
+          "They are advertised on the government procurement portal and on agency websites, and sometimes through direct invitations. Set up alerts for your registered categories, and check regularly.",
+      },
+      {
+        question: "What makes a bid win?",
+        answer:
+          "Compliance first: every form, signature, and document complete and valid. Then a realistic price based on true costs, evidence of capability and experience, and on-time submission. Most rejections are for paperwork errors, not price.",
+      },
+      {
+        question: "How long does the government take to pay?",
+        answer:
+          "It can be longer than in the private sector and depends on the agency and the completeness of your documents. Plan your working capital, submit accurate invoices, and follow up politely through the agency's channels.",
+      },
+      {
+        question: "Are there special rules for particular business categories?",
+        answer:
+          "Some purchases and price preferences are linked to business status or ownership categories, with their own requirements and documents. These change, so check the current definitions and eligibility on the official portal and with the agency before you apply.",
+      },
+      {
+        question: "What should I avoid when dealing with government buyers?",
+        answer:
+          "Never offer or accept gifts, commissions, or favours to influence a decision, never share confidential tender information, and never allow your registration to be used by another business. Anti-corruption laws apply to both sides, and breaches can lead to blacklisting and prosecution.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "向政府销售：财政部注册、ePerolehan 与中小企业如何赢得投标",
+        excerpt:
+          "政府机构从文具、餐饮到资讯科技服务和维修，什么都买，小企业可以分得这笔开支的一杯羹。本指南向马来西亚中小企业说明政府采购如何运作、向财政部注册与 ePerolehan 系统如何配合、如何寻找报价和投标机会、如何准备有竞争力的标书，以及付款和合规方面该预期什么。",
+        body: `公共部门是全国最大的买家之一。各部门、学校、医院和机构每天都需要货品和服务，而许多采购的金额小到本地中小企业就能供应。政府客户可以带来稳定的订单量和信誉，但也带来文书工作、严格的规则，有时还有缓慢的付款。
+
+本指南说明基本知识，让您判断它是否适合您的企业，以及如果适合该如何着手。
+
+以下仅为一般资讯，并非法律或采购意见。采购规则、门槛、注册要求、费用和身份类别由主管机构订定并会随时间变化，并且因机构和采购类型而异。在花钱或提交标书之前，请务必在官方政府采购入口网站和每份招标公告上确认现行要求。
+
+## 1. 了解政府采购如何运作
+
+### 谁在买，买什么
+联邦和州政府的各部门、地方政府、法定机构、学校、医院和政府关联机构都会采购。它们购买用品、设备、清洁、保安、餐饮、印刷和资讯科技等服务，以及维修和建筑等工程。
+
+### 不同的采购方式
+较小的采购通常是向几家供应商询价，较大的采购则通过公开或限制性招标。方式、金额上限和文件要求取决于金额和机构的规则。
+
+### 为什么规则严格
+公共资金必须透明、公平地使用，所以采购遵循既定的程序、文件和评审标准。这对小供应商有利，因为准备周全的标书可以胜过更大的名字，但这也意味着文件上的错误可能让您被取消资格。
+
+### 适合您吗？
+政府业务适合能够稳定交付、处理文件，并在获得付款之前自行垫付营运资金的企业。如果您的利润很薄，或无法应付延迟付款，则不太适合。我们关于现金流的指南说明了如何为拖欠付款者做计划。
+
+### 了解法律基础
+在供货之前，您需要有正确注册并持有所需执照的企业。请参阅我们关于向公司委员会注册企业的指南和关于商业执照与许可证的指南。
+
+## 2. 查明您能卖什么、卖给谁
+
+在投入注册之前，先弄清楚政府机构实际上是如何采购您所销售的产品的。花时间做研究，因为注册需要付出努力，只有在您的产品或服务确实有需求时才有回报。
+
+### 查看过去和当前的公告
+浏览采购入口网站和各机构的网站，查看您所在领域的报价和招标，记下谁在买、多久买一次、数量多少，以及它们使用什么规格。
+
+### 让您的产品配合他们的需求
+政府买家想要的是规格明确、价格合理、准时交付并附有适当文件的货品和服务。请查核您能否满足技术规格、数量和交货地点。
+
+### 查核是否需要注册
+是否需要注册，取决于采购的类型和金额，各机构对小额采购也可能有自己的规则。请确认您所瞄准类别的现行门槛和规则。
+
+### 了解任何身份或类别规定
+有些采购和价格优惠与企业身份或所有权类别挂钩，要求和文件各不相同。在申请任何身份之前，请在官方入口网站并向相关机构查核现行的定义和资格。
+
+### 与负责采购的人交谈
+向您所瞄准机构的采购部门或使用部门介绍您的企业。有些机构会举办简介会或供应商日，这是了解采购实际运作方式的好办法。
+
+## 3. 向正确的系统注册
+
+### 财政部供应商注册
+想向政府机构销售的供应商，一般需要通过政府的电子采购系统，向财政部注册为供应商。流程在网上办理，获批后您会得到描述您能供应的货品和服务类型的代码。
+
+### 通常需要什么
+预计需要准备公司注册文件、董事和业主的资料、以公司名义开立的企业银行账户、税务和其他合规记录，以及关于您的营业场所和能力的资料。有些类别需要额外的批准或认证。我们关于开立企业银行账户的指南说明了银行会要求什么。
+
+### 费用和有效期
+注册涉及费用和有效期，期满后必须续期。金额和期限会变，所以请在官方入口网站查看现行数字，并让您的注册保持最新，以免错过机会。
+
+### 谨慎选择您的代码
+您所持有的代码决定了您能看到和投标哪些公告。只为您真正能供应的类别注册，并随着业务成长更新。
+
+### 保持资料最新
+确保您的联络电邮、电话和公司资料准确，因为公告和查询会发送到那里。错过一封电邮，可能就错过一个期限。
+
+### 对中间人要保持警惕
+有些代办提供注册协助，可以节省时间，但请查核他们的声誉和收费，并且绝不要分享您的登录资料。您仍然对以您名义提交的内容负责。
+
+## 4. 寻找报价和招标
+
+### 机会在哪里出现
+报价和招标在政府采购入口网站和各机构网站上刊登，有时也通过报章或直接邀请。请为您的类别设置提醒，并定期查看。
+
+### 仔细阅读公告
+记下截止日期和时间、范围、资格条件、所需文件、任何强制性的简介会或实地考察、评审方法，以及在哪里、如何提交。漏掉一项要求，是被拒的常见原因。
+
+### 决定是否投标
+当您能满足要求、定价有利可图并能处理交付时才投标。认真对待较少的机会，胜过提交许多薄弱的标书。
+
+### 正确地提问
+如果有不清楚的地方，请在截止日期之前通过官方渠道询问，并保存答复的记录。不要依赖非正式的口头保证。
+
+### 规划您的时间
+准备标书所需的时间比您预期的长，尤其是在需要供应商报价或证书的时候。请及早开始，并留出审阅的时间。
+
+## 5. 准备有竞争力且合规的标书
+
+### 完全按照指示办理
+使用要求的表格和格式，回答每一项，需要签名的地方签名，并附上每一份所要求的文件。通常会先检查合规性，不合规的标书可能根本不会被评审。
+
+### 仔细定价
+算出您的真实成本，包括交货、安装、税款和任何合规成本，然后加上合理的利润。为了中标而定价过低，可能让您亏本并陷入困难的合约。我们关于定价的指南说明了成本和利润率，关于 SST 注册的指南涵盖了税务。
+
+### 展示您的能力
+提供经验、类似项目、认证、推荐人，以及按时交付能力的证据。请准备好一套标准文件。
+
+### 检查文件
+确保您的公司注册、执照、税务及其他证书，以及任何所需的声明都有效且是最新的。过期的文件是被取消资格的常见原因。
+
+### 提交之前审阅
+请别人对照公告检查标书，并在截止日期之前很早就提交，因为系统可能在最后一刻变慢或出故障。
+
+### 保留副本
+保存您所提交内容的完整副本和收讫确认，让您能够回应查询并准备未来的标书。
+
+> 政府投标靠的是准备，而不是运气。成功的供应商把文件工作当作产品的一部分：完整、准确、准时。
+
+## 6. 交付、开发票并收款
+
+### 阅读合约或订购单
+在接受之前，了解交货时间表、规格、验收、保修、延误罚款和付款条款。我们关于合约与条款的指南说明了如何阅读关键条款。
+
+### 交付与订单完全一致的货品
+政府买家会对照订单检查数量、质量和文件。请保存送货单、验收记录和签收确认。
+
+### 正确开发票
+以机构要求的格式提交准确的发票和支持文件。错误会造成延误。如果电子发票适用于您，请参阅我们关于电子发票的指南。
+
+### 为付款时间做计划
+付款可能比私营部门花更长时间，并取决于机构和您文件的完整性。请规划您的现金流，并通过机构的渠道礼貌地跟进。我们关于追收逾期货款的指南说明了升级处理的步骤。
+
+### 保存记录
+有条理地保存合约、订单、发票和往来函件，因为公共合约可能被审计。我们关于簿记基础的指南说明了如何做到这一点。
+
+## 7. 保持合规并避开常见陷阱
+
+### 诚实并避免不当交易
+公共采购受到严格规管。绝不要提供或接受礼物、佣金或好处来影响决定，也绝不要泄露保密的招标资料。反贪污法律对双方都适用，违规可能导致被列入黑名单和检控。
+
+### 避免挂靠和失实陈述
+不要让您的注册被另一家企业使用，也不要声称您没有的身份或能力。这类做法可能导致注册被取消和法律行动。
+
+### 履行您的义务
+妥善缴付税款、法定供款和供应商的款项，并让执照保持有效。我们关于小企业税务日历的指南和关于雇用第一位员工的指南涵盖了基础知识。
+
+### 不要过度承担
+赢得超出您资金和交付能力的合约，是招来罚款和损害声誉的快速途径。请逐步成长，并考虑是否需要融资。我们关于中小企业补助与融资的指南说明了各种选择。
+
+### 从每一次投标中学习
+落标时，在可以获得反馈的情况下请求反馈，检视中标的条件，并在下次改进。坚持很重要，因为许多供应商是在第三或第四次尝试时中标的。
+
+如果您需要会计师、律师或供应商协助您为政府业务做准备，可以[浏览名录](/zh)寻找本地专业人士，而[创建免费的企业列表](/zh/signup)可以帮助买家和合作伙伴找到并核实您的企业。
+
+## 马来西亚中小企业向政府销售时常犯的错误
+
+- **在查核需求之前就注册。**注册需要时间和金钱，只有机构确实购买您所销售的东西时才有回报。
+- **漏掉一项小要求。**缺少一个签名、一张过期的证书，或迟交，都可能让一份原本出色的标书被取消资格。
+- **为了中标而定价过低。**忽视真实成本的价格，可能让中标变成亏损，尤其是在付款延迟的情况下。
+- **忽视现金流。**对没有做好准备的小企业来说，缓慢的付款可能造成压力。
+
+## 从哪里开始
+
+- **本周：**浏览您所在领域最近的报价和招标，记下谁在买您所销售的东西，以及价格如何。
+- **接着：**在官方入口网站查看现行的注册要求，并收集您的公司文件和证书。
+- **然后：**为您真正能供应的类别注册，并设置公告提醒。
+- **每次投标：**仔细阅读公告，按真实成本定价，检查每一份文件，并提早提交。
+
+政府业务回报有准备和有耐心的人。从小处开始，把文件做对，并建立能为更大合约打开大门的业绩记录。`,
+        faqs: [
+          {
+            question: "向政府销售需要注册吗？",
+            answer:
+              "供应商一般通过政府的电子采购系统向财政部注册，但是否需要注册可能取决于采购的类型和金额以及机构的规则。请在官方入口网站确认现行的门槛和要求。",
+          },
+          {
+            question: "什么是 ePerolehan？",
+            answer:
+              "政府的电子采购系统，供应商在此注册、报价和招标公告在此刊登，许多采购也在此进行。请到官方入口网站查看它目前如何运作。",
+          },
+          {
+            question: "注册通常需要哪些文件？",
+            answer:
+              "通常是公司注册文件、董事和业主的资料、以公司名义开立的企业银行账户、税务和其他合规记录，以及关于您的营业场所和能力的资料。有些类别需要额外的批准。请在官方入口网站确认现行清单。",
+          },
+          {
+            question: "如何找到招标和报价？",
+            answer:
+              "它们刊登在政府采购入口网站和各机构网站上，有时也通过直接邀请。请为您已注册的类别设置提醒，并定期查看。",
+          },
+          {
+            question: "什么样的标书会中标？",
+            answer:
+              "首先是合规：每一份表格、签名和文件都完整有效。然后是基于真实成本的现实价格、能力和经验的证据，以及准时提交。大多数被拒是因为文件错误，而不是价格。",
+          },
+          {
+            question: "政府需要多久付款？",
+            answer:
+              "可能比私营部门更长，并取决于机构和您文件的完整性。请规划您的营运资金，提交准确的发票，并通过机构的渠道礼貌地跟进。",
+          },
+          {
+            question: "对特定的企业类别有特别规定吗？",
+            answer:
+              "有些采购和价格优惠与企业身份或所有权类别挂钩，各有其要求和文件。这些会变，所以在申请之前，请在官方入口网站并向机构查核现行的定义和资格。",
+          },
+          {
+            question: "与政府买家打交道时应避免什么？",
+            answer:
+              "绝不要提供或接受礼物、佣金或好处来影响决定，绝不要泄露保密的招标资料，也绝不要让您的注册被另一家企业使用。反贪污法律对双方都适用，违规可能导致被列入黑名单和检控。",
+          },
+        ],
+      },
+      ms: {
+        title: "Menjual kepada Kerajaan: Pendaftaran MOF, ePerolehan dan Memenangi Tender sebagai PKS",
+        excerpt:
+          "Agensi kerajaan membeli segala-galanya daripada alat tulis dan katering kepada perkhidmatan IT dan pembaikan, dan perniagaan kecil boleh memenangi bahagian daripada perbelanjaan itu. Panduan ini menunjukkan kepada PKS Malaysia bagaimana pembelian kerajaan berfungsi, bagaimana pendaftaran dengan Kementerian Kewangan dan sistem ePerolehan sesuai, cara mencari sebut harga dan tender, cara menyediakan bidaan yang kompetitif, dan apa yang dijangka tentang pembayaran dan pematuhan.",
+        body: `Sektor awam ialah salah satu pembeli terbesar di negara ini. Kementerian, jabatan, sekolah, hospital dan agensi memerlukan barangan dan perkhidmatan setiap hari, dan banyak pembelian cukup kecil untuk dibekalkan oleh PKS tempatan. Pelanggan kerajaan boleh membawa isi padu stabil dan kredibiliti, tetapi ia juga membawa kerja dokumen, peraturan ketat, dan kadangkala bayaran yang lambat.
+
+Panduan ini menerangkan asasnya supaya anda boleh memutuskan sama ada ia sesuai dengan perniagaan anda, dan bagaimana meneruskannya jika sesuai.
+
+Ini ialah maklumat am, bukan nasihat undang-undang atau perolehan. Peraturan perolehan, ambang, keperluan pendaftaran, yuran dan kategori status ditetapkan oleh pihak berkuasa dan berubah dari semasa ke semasa, dan ia berbeza antara agensi dan jenis pembelian. Sentiasa sahkan keperluan semasa di portal perolehan kerajaan rasmi dan dalam setiap notis tender sebelum anda membelanjakan wang atau menghantar bidaan.
+
+## 1. Fahami bagaimana pembelian kerajaan berfungsi
+
+### Siapa yang membeli, dan apa
+Kementerian dan jabatan persekutuan dan negeri, pihak berkuasa tempatan, badan berkanun, sekolah, hospital dan organisasi berkaitan kerajaan semuanya membeli. Mereka membeli bekalan, peralatan, perkhidmatan seperti pembersihan, keselamatan, katering, percetakan dan IT, serta kerja seperti pembaikan dan pembinaan.
+
+### Cara pembelian yang berbeza
+Pembelian lebih kecil sering dibuat melalui permintaan sebut harga kepada beberapa pembekal, manakala pembelian lebih besar melalui tender terbuka atau terhad. Kaedah, had nilai dan dokumen bergantung pada jumlah dan peraturan agensi.
+
+### Mengapa peraturan ketat
+Wang awam mesti dibelanjakan dengan telus dan adil, jadi perolehan mengikut prosedur, dokumentasi dan kriteria penilaian yang ditetapkan. Itu baik untuk pembekal kecil, kerana bidaan yang disediakan dengan baik boleh menewaskan nama lebih besar, tetapi ia juga bermakna kesilapan dalam dokumen boleh menyebabkan anda hilang kelayakan.
+
+### Adakah ia sesuai untuk anda?
+Kerja kerajaan sesuai untuk perniagaan yang boleh menyampaikan secara konsisten, mengendalikan dokumentasi, dan membiayai modal kerja sendiri sehingga dibayar. Ia kurang sesuai jika margin anda tipis atau anda tidak dapat menghadapi bayaran lewat. Panduan kami tentang aliran tunai menerangkan cara merancang untuk pembayar lambat.
+
+### Ketahui asas undang-undang
+Anda memerlukan perniagaan yang berdaftar dengan betul dengan lesen yang diperlukan sebelum anda boleh membekal. Lihat panduan kami tentang mendaftar perniagaan dengan SSM dan panduan kami tentang lesen dan permit perniagaan.
+
+## 2. Semak apa yang anda boleh jual dan kepada siapa
+
+Ketahui bagaimana agensi kerajaan sebenarnya membeli apa yang anda jual sebelum anda melabur dalam pendaftaran. Luangkan masa untuk penyelidikan, kerana pendaftaran memerlukan usaha dan hanya berbaloi jika terdapat permintaan sebenar untuk produk atau perkhidmatan anda.
+
+### Lihat notis lepas dan semasa
+Layari portal perolehan dan laman web agensi untuk sebut harga dan tender dalam bidang anda, mencatat siapa yang membeli, berapa kerap, dalam kuantiti berapa, dan spesifikasi apa yang mereka gunakan.
+
+### Padankan tawaran anda dengan keperluan mereka
+Pembeli kerajaan mahukan barangan dan perkhidmatan yang dinyatakan pada harga munasabah, dihantar tepat pada masanya, dengan dokumen yang betul. Semak bahawa anda boleh memenuhi spesifikasi teknikal, kuantiti dan lokasi penghantaran.
+
+### Semak sama ada pendaftaran diperlukan
+Sama ada anda perlu berdaftar bergantung pada jenis dan nilai pembelian, dan agensi mungkin mempunyai peraturan sendiri untuk pembelian kecil. Sahkan ambang dan peraturan semasa untuk kategori yang anda sasarkan.
+
+### Fahami sebarang peraturan status atau kategori
+Sesetengah pembelian dan keutamaan harga dikaitkan dengan status perniagaan atau kategori pemilikan, dan keperluan serta dokumen berbeza. Semak takrifan dan kelayakan semasa di portal rasmi dan dengan agensi berkaitan sebelum anda memohon sebarang status.
+
+### Bercakap dengan orang yang membeli
+Perkenalkan perniagaan anda kepada jabatan perolehan atau pengguna agensi yang anda sasarkan. Sesetengah agensi mengadakan taklimat atau hari pembekal, dan ia cara yang berguna untuk mempelajari bagaimana pembelian sebenarnya berfungsi.
+
+## 3. Daftar dengan sistem yang betul
+
+### Pendaftaran pembekal Kementerian Kewangan
+Pembekal yang mahu menjual kepada agensi kerajaan secara amnya perlu mendaftar dengan Kementerian Kewangan sebagai pembekal, melalui sistem perolehan elektronik kerajaan. Proses dikendalikan dalam talian, dan kelulusan memberi anda kod yang menerangkan jenis barangan dan perkhidmatan yang boleh anda bekalkan.
+
+### Apa yang lazimnya anda perlukan
+Jangkakan untuk menyediakan dokumen pendaftaran syarikat, butiran pengarah dan pemilik, akaun bank perniagaan atas nama syarikat, rekod cukai dan pematuhan lain, serta maklumat tentang premis dan keupayaan anda. Sesetengah kategori memerlukan kelulusan atau pensijilan tambahan. Panduan kami tentang membuka akaun bank perniagaan menerangkan apa yang diminta oleh bank.
+
+### Yuran dan kesahan
+Pendaftaran melibatkan yuran dan tempoh kesahan selepas itu anda mesti memperbaharui. Jumlah dan tempoh berubah, jadi semak portal rasmi untuk angka semasa, dan pastikan pendaftaran anda terkini supaya anda tidak terlepas peluang.
+
+### Pilih kod anda dengan teliti
+Kod yang anda miliki menentukan notis mana yang boleh anda lihat dan bida. Daftar hanya untuk kategori yang anda benar-benar boleh bekalkan, dan kemas kini apabila perniagaan anda berkembang.
+
+### Pastikan butiran anda terkini
+Pastikan e-mel, telefon dan butiran syarikat anda tepat, kerana notis dan pertanyaan dihantar kepadanya. E-mel yang terlepas boleh bermakna tarikh akhir yang terlepas.
+
+### Berwaspada terhadap orang tengah
+Sesetengah ejen menawarkan bantuan pendaftaran, dan mereka boleh menjimatkan masa, tetapi semak reputasi dan yuran mereka, dan jangan sekali-kali berkongsi butiran log masuk anda. Anda kekal bertanggungjawab atas apa yang dihantar atas nama anda.
+
+## 4. Cari sebut harga dan tender
+
+### Di mana peluang muncul
+Sebut harga dan tender diiklankan di portal perolehan kerajaan, di laman web agensi, dan kadangkala dalam akhbar atau melalui jemputan langsung. Sediakan makluman untuk kategori anda dan semak secara berkala.
+
+### Baca notis dengan teliti
+Catat tarikh dan masa penutupan, skop, syarat kelayakan, dokumen yang diperlukan, sebarang taklimat atau lawatan tapak wajib, kaedah penilaian, dan di mana serta bagaimana untuk menghantar. Terlepas satu keperluan ialah sebab penolakan yang lazim.
+
+### Tentukan sama ada hendak bida
+Bida apabila anda boleh memenuhi keperluan, menetapkan harga dengan menguntungkan, dan mengendalikan penghantaran. Lebih baik bida untuk lebih sedikit peluang dengan teliti daripada menghantar banyak yang lemah.
+
+### Tanya soalan dengan betul
+Jika sesuatu tidak jelas, gunakan saluran rasmi untuk bertanya sebelum tarikh akhir, dan simpan rekod jawapan. Jangan bergantung pada jaminan lisan tidak rasmi.
+
+### Rancang masa anda
+Menyediakan bidaan mengambil masa lebih lama daripada yang anda jangka, terutamanya jika anda memerlukan sebut harga pembekal atau sijil. Mulakan awal dan peruntukkan masa untuk semakan.
+
+## 5. Sediakan bidaan yang kompetitif dan patuh
+
+### Ikut arahan dengan tepat
+Gunakan borang dan format yang diperlukan, jawab setiap item, tandatangani di mana perlu, dan sertakan setiap dokumen yang diminta. Pematuhan biasanya disemak dahulu, dan bidaan yang gagal mungkin tidak dinilai langsung.
+
+### Tetapkan harga dengan teliti
+Kira kos sebenar anda termasuk penghantaran, pemasangan, cukai dan sebarang kos pematuhan, kemudian tambah margin yang munasabah. Menetapkan harga terlalu rendah untuk menang boleh meninggalkan anda dengan kerugian dan kontrak yang sukar. Panduan kami tentang penetapan harga menerangkan pengkosan dan margin, dan panduan kami tentang pendaftaran SST merangkumi cukai.
+
+### Tunjukkan keupayaan anda
+Sediakan bukti pengalaman, projek serupa, pensijilan, rujukan, dan keupayaan anda menyampaikan tepat pada masanya. Sediakan set dokumen standard.
+
+### Semak dokumen
+Pastikan pendaftaran syarikat, lesen, sijil cukai dan lain-lain, serta sebarang akuan yang diperlukan sah dan terkini. Dokumen tamat tempoh ialah punca lazim hilang kelayakan.
+
+### Semak sebelum menghantar
+Minta orang lain menyemak bidaan berbanding notis, dan hantar jauh sebelum tarikh akhir, kerana sistem boleh perlahan atau gagal pada saat akhir.
+
+### Simpan salinan
+Simpan salinan penuh apa yang anda hantar, bersama pengesahan penerimaan, supaya anda boleh menjawab pertanyaan dan menyediakan bidaan masa depan.
+
+> Tender kerajaan dimenangi melalui persediaan, bukan nasib. Pembekal yang berjaya menganggap dokumen sebagai sebahagian daripada produk: lengkap, tepat dan tepat pada masanya.
+
+## 6. Hantar, keluarkan invois dan dapatkan bayaran
+
+### Baca kontrak atau pesanan pembelian
+Fahami jadual penghantaran, spesifikasi, pemeriksaan, waranti, penalti kelewatan dan terma bayaran sebelum anda menerima. Panduan kami tentang kontrak dan terma menerangkan cara membaca klausa utama.
+
+### Hantar tepat apa yang dipesan
+Pembeli kerajaan menyemak kuantiti, kualiti dan dokumen berbanding pesanan. Simpan pesanan penghantaran, rekod pemeriksaan dan pengakuan bertandatangan.
+
+### Keluarkan invois dengan betul
+Hantar invois yang tepat dan dokumen sokongan dalam format yang dikehendaki agensi. Kesilapan menyebabkan kelewatan. Jika e-Invois terpakai kepada anda, lihat panduan kami tentang e-Invois.
+
+### Rancang masa bayaran
+Bayaran boleh mengambil masa lebih lama daripada sektor swasta, dan ia bergantung pada agensi dan kelengkapan dokumen anda. Rancang aliran tunai anda, dan gunakan saluran agensi untuk menyusul dengan sopan. Panduan kami tentang menuntut bayaran lewat menerangkan langkah peningkatan tindakan.
+
+### Simpan rekod
+Simpan kontrak, pesanan, invois dan surat-menyurat dengan teratur, kerana kontrak awam mungkin diaudit. Panduan kami tentang asas simpan kira menerangkan caranya.
+
+## 7. Kekal patuh dan elakkan perangkap lazim
+
+### Bersikap jujur dan elakkan urusan tidak wajar
+Perolehan awam dikawal selia dengan ketat. Jangan sekali-kali menawarkan atau menerima hadiah, komisen atau budi untuk mempengaruhi keputusan, dan jangan sekali-kali berkongsi maklumat tender yang sulit. Undang-undang antirasuah terpakai kepada kedua-dua pihak, dan pelanggaran boleh membawa kepada penyenaraian hitam dan pendakwaan.
+
+### Elakkan menumpang nama dan salah nyata
+Jangan benarkan pendaftaran anda digunakan oleh perniagaan lain, atau mendakwa status atau keupayaan yang anda tidak ada. Amalan sedemikian boleh membawa kepada pembatalan pendaftaran dan tindakan undang-undang.
+
+### Penuhi kewajipan anda
+Bayar cukai, caruman berkanun dan pembekal anda dengan betul, dan pastikan lesen anda terkini. Panduan kami tentang kalendar cukai perniagaan kecil dan panduan kami tentang mengambil pekerja pertama merangkumi asasnya.
+
+### Jangan terlalu berkomitmen
+Memenangi lebih banyak kontrak daripada yang boleh anda biayai atau hantar ialah jalan pantas kepada penalti dan reputasi yang rosak. Berkembang secara beransur-ansur, dan pertimbangkan sama ada anda memerlukan pembiayaan. Panduan kami tentang geran dan pembiayaan PKS menerangkan pilihan.
+
+### Belajar daripada setiap bidaan
+Apabila anda kalah, minta maklum balas jika ada, semak syarat kemenangan, dan tambah baik pada kali seterusnya. Ketabahan penting, kerana ramai pembekal menang pada percubaan ketiga atau keempat.
+
+Jika anda memerlukan akauntan, peguam atau pembekal untuk membantu anda bersedia untuk kerja kerajaan, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pembeli dan rakan kongsi menemui dan mengesahkan perniagaan anda.
+
+## Kesilapan lazim PKS Malaysia semasa menjual kepada kerajaan
+
+- **Mendaftar sebelum menyemak permintaan.** Pendaftaran memerlukan masa dan wang, dan ia hanya berbaloi jika agensi benar-benar membeli apa yang anda jual.
+- **Terlepas satu keperluan kecil.** Tandatangan yang tiada, sijil yang tamat tempoh, atau penghantaran lewat boleh menghilangkan kelayakan bidaan yang sebaliknya kukuh.
+- **Menetapkan harga terlalu rendah untuk menang.** Harga yang mengabaikan kos sebenar boleh mengubah kemenangan menjadi kerugian, terutamanya dengan bayaran yang lewat.
+- **Mengabaikan aliran tunai.** Bayaran lambat boleh membebankan perniagaan kecil yang tidak merancang untuknya.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Layari sebut harga dan tender terkini dalam bidang anda, dan catat siapa yang membeli apa yang anda jual, dan pada harga berapa.
+- **Seterusnya:** Semak keperluan pendaftaran semasa di portal rasmi, dan kumpulkan dokumen serta sijil syarikat anda.
+- **Kemudian:** Daftar untuk kategori yang anda benar-benar boleh bekalkan, dan sediakan makluman untuk notis.
+- **Setiap bidaan:** Baca notis dengan teliti, tetapkan harga berdasarkan kos sebenar, semak setiap dokumen, dan hantar awal.
+
+Kerja kerajaan memberi ganjaran kepada yang bersedia dan sabar. Mulakan kecil, betulkan dokumen, dan bina rekod prestasi yang membuka pintu kepada kontrak lebih besar.`,
+        faqs: [
+          {
+            question: "Adakah saya perlu berdaftar untuk menjual kepada kerajaan?",
+            answer:
+              "Secara amnya pembekal mendaftar dengan Kementerian Kewangan melalui sistem perolehan elektronik kerajaan, tetapi sama ada pendaftaran diperlukan boleh bergantung pada jenis dan nilai pembelian serta peraturan agensi. Sahkan ambang dan keperluan semasa di portal rasmi.",
+          },
+          {
+            question: "Apakah ePerolehan?",
+            answer:
+              "Sistem perolehan elektronik kerajaan, di mana pembekal mendaftar, notis sebut harga dan tender diterbitkan, dan banyak pembelian dijalankan. Semak portal rasmi untuk cara ia berfungsi sekarang.",
+          },
+          {
+            question: "Apakah dokumen yang biasanya saya perlukan untuk mendaftar?",
+            answer:
+              "Lazimnya dokumen pendaftaran syarikat, butiran pengarah dan pemilik, akaun bank perniagaan atas nama syarikat, rekod cukai dan pematuhan lain, serta maklumat tentang premis dan keupayaan anda. Sesetengah kategori memerlukan kelulusan tambahan. Sahkan senarai semasa di portal rasmi.",
+          },
+          {
+            question: "Bagaimanakah saya mencari tender dan sebut harga?",
+            answer:
+              "Ia diiklankan di portal perolehan kerajaan dan laman web agensi, dan kadangkala melalui jemputan langsung. Sediakan makluman untuk kategori berdaftar anda, dan semak secara berkala.",
+          },
+          {
+            question: "Apakah yang membuatkan bidaan menang?",
+            answer:
+              "Pematuhan dahulu: setiap borang, tandatangan dan dokumen lengkap dan sah. Kemudian harga realistik berdasarkan kos sebenar, bukti keupayaan dan pengalaman, serta penghantaran tepat pada masanya. Kebanyakan penolakan adalah kerana kesilapan dokumen, bukan harga.",
+          },
+          {
+            question: "Berapa lama kerajaan mengambil masa untuk membayar?",
+            answer:
+              "Ia boleh lebih lama daripada sektor swasta dan bergantung pada agensi serta kelengkapan dokumen anda. Rancang modal kerja anda, hantar invois yang tepat, dan susul dengan sopan melalui saluran agensi.",
+          },
+          {
+            question: "Adakah terdapat peraturan khas untuk kategori perniagaan tertentu?",
+            answer:
+              "Sesetengah pembelian dan keutamaan harga dikaitkan dengan status perniagaan atau kategori pemilikan, dengan keperluan dan dokumen sendiri. Ini berubah, jadi semak takrifan dan kelayakan semasa di portal rasmi dan dengan agensi sebelum anda memohon.",
+          },
+          {
+            question: "Apa yang patut saya elakkan semasa berurusan dengan pembeli kerajaan?",
+            answer:
+              "Jangan sekali-kali menawarkan atau menerima hadiah, komisen atau budi untuk mempengaruhi keputusan, jangan berkongsi maklumat tender yang sulit, dan jangan benarkan pendaftaran anda digunakan oleh perniagaan lain. Undang-undang antirasuah terpakai kepada kedua-dua pihak, dan pelanggaran boleh membawa kepada penyenaraian hitam dan pendakwaan.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "training-your-team-with-hrd-corp-in-malaysia",
+    title: "Training Your Team with HRD Corp: Levy, Claims, and Upskilling for Malaysian SMEs",
+    seoTitle: "Training Your Team with HRD Corp: A Guide for Malaysian SMEs",
+    seoDescription:
+      "How Malaysian SMEs can use the HRD Corp levy to train staff: who registers, how claims work, choosing providers, budgeting and measuring results.",
+    coverImage: {
+      file: "training-your-team-with-hrd-corp-in-malaysia-cover.webp",
+      mimeType: "image/webp",
+      alt: "A young woman in a white jacket writing in a notebook at a desk while a colleague stands at a whiteboard behind her",
+      altTranslations: {
+        zh: "一位身穿白色外套的年轻女士坐在桌前在笔记本上书写，身后有一位同事站在白板前",
+        ms: "Seorang wanita muda berjaket putih menulis dalam buku nota di meja manakala seorang rakan sekerja berdiri di papan putih di belakangnya",
+      },
+    },
+    contentImages: {
+      workshop: {
+        file: "training-your-team-with-hrd-corp-in-malaysia-workshop.webp",
+        mimeType: "image/webp",
+        alt: "A man in a white shirt writing in a notebook while a woman in a mustard top beside him points ahead, seated in a bright workshop space",
+        altTranslations: {
+          zh: "一位身穿白衬衫的男士在笔记本上书写，身旁身穿芥末黄上衣的女士向前指着，两人坐在明亮的工作坊空间里",
+          ms: "Seorang lelaki berbaju putih menulis dalam buku nota manakala seorang wanita berbaju kuning mustard di sebelahnya menunjuk ke hadapan, duduk dalam ruang bengkel yang terang",
+        },
+        after: "Start by listing the skills your business will need in the next twelve months, then match training to those gaps.",
+        afterTranslations: {
+          zh: "先列出您的企业未来十二个月所需的技能，然后让培训与这些差距相配合。",
+          ms: "Mulakan dengan menyenaraikan kemahiran yang perniagaan anda perlukan dalam dua belas bulan akan datang, kemudian padankan latihan dengan jurang tersebut.",
+        },
+      },
+    },
+    excerpt:
+      "Training pays for itself through better service, fewer mistakes, and staff who stay, but many small businesses skip it because of cost. This guide shows Malaysian SMEs how the HRD Corp levy works, who needs to register, how employers claim for approved training, how to choose training providers, how to plan a simple training budget, and how to measure whether training is working.",
+    body: `A trained team sells better, makes fewer mistakes, serves customers more consistently, and is more likely to stay. Yet many small business owners put training last on the list, because of the cost, the time away from work, and the sense that they are too busy.
+
+In Malaysia, many employers already contribute to a training fund through a levy, and then never use it. Understanding how that levy works can turn money you are already paying into skills your business needs.
+
+This is general information, not legal or financial advice. Who must register, the levy rates, what training is claimable, and the claim procedures are set by the relevant authority and change over time, and they depend on your sector and headcount. Confirm the current rules on the official HRD Corp website, and with your training provider, before you commit to a course or a budget.
+
+## 1. Understand what HRD Corp and the levy are
+
+### What it is
+HRD Corp is the national agency that administers a fund to support the training of the Malaysian workforce. Employers in covered sectors contribute a levy, and registered employers can use their contributions to claim back approved training costs.
+
+### Who generally needs to register
+Employers in covered sectors with a certain number of Malaysian employees are required to register and pay the levy, while smaller employers may be given the option to register. The headcount thresholds, the sectors covered, and the rules for counting employees have changed over time, so check the current position on the official website.
+
+### How the levy is calculated
+It is generally a percentage of employees' monthly wages, with the rate depending on the size of your workforce. The wage definition usually covers basic pay and fixed allowances, and may exclude variable items such as overtime and bonuses. Confirm the current definition and rates.
+
+### The fund is yours to use
+For registered employers, the contributions build a balance that can be used for approved training, so not claiming means paying for something you do not use. Rules on how long balances last, and any limits, are set by the agency.
+
+### Training is not only for big companies
+Small businesses can use the fund too, and training does not have to be expensive. Many useful courses cover practical skills such as customer service, sales, digital tools, accounting basics, safety, and supervisory skills.
+
+## 2. Check whether your business is covered
+
+### Count your employees carefully
+The headcount that matters is usually the number of Malaysian employees, and part-timers and certain categories may be treated differently. Our guide on hiring your first employee explains the basics of employment and contributions, and our guide on working with freelancers explains how contractors differ from employees.
+
+### Confirm your sector
+Only certain sectors are covered, and the list has been expanded in the past. Check the current list and how your business is classified.
+
+### Register through the official channel
+If you are required to register, or choose to where it is optional, do it through the agency's official process. Be wary of anyone who charges for something that you can do yourself, and never share your login details.
+
+### Understand ongoing obligations
+Registered employers must pay the levy on time and keep their employee information updated, and there are rules on what happens if you stop being eligible. Our guide on payroll and statutory contributions explains how to keep payroll records in order.
+
+### Include it in your payroll process
+Add the levy to your monthly payroll routine, so that it is calculated and paid correctly each month.
+
+## 3. Identify the skills your team really needs
+
+Start by listing the skills your business will need in the next twelve months, then match training to those gaps. Training works best when it solves a real business problem, not when it is bought because a course happened to be available.
+
+### Look at your goals
+If you plan to launch an online shop, you may need digital marketing and customer service skills. If you plan to open a second outlet, you may need supervisory and inventory skills. Our guide on writing a business plan can help you set goals.
+
+### Look at where mistakes and complaints come from
+Repeated errors, customer complaints, rework, and safety incidents point to skills gaps. Our guide on customer complaints and consumer rights and our guide on workplace safety are useful starting points.
+
+### Ask your team
+Employees often know what they need, and involving them makes training more welcome. Ask what would help them do their jobs better, and what they would like to learn.
+
+### Mix technical and people skills
+Technical skills, such as software, equipment, and compliance, and people skills, such as communication, leadership, and customer service, both matter. Balance them.
+
+### Prioritise
+You cannot train everyone on everything at once. Rank needs by their impact on the business, and start with the top few.
+
+## 4. Choose approved courses and trusted providers
+
+### Check that the course and provider are eligible
+For a claim to be approved, the training and the provider generally need to meet the agency's requirements. Confirm that the provider is registered or approved, and that the specific course is claimable, before you pay or enrol.
+
+### Compare providers
+Ask for the course outline, trainer qualifications, class size, format, schedule, cost, and references. Look for practical content that your team can apply immediately.
+
+### Consider the delivery format
+In-person, online, and blended formats suit different needs. In-house training at your workplace can be efficient if you have several staff with the same need, and online courses reduce travel and time away.
+
+### Watch the costs
+Compare what is claimable and what is not, since some costs may only be partly covered. Ask the provider to explain how the claim works, and what you must pay up front.
+
+### Be cautious of offers that sound too good
+Be wary of anyone who promises guaranteed approval, offers to claim for training that did not take place, or suggests inflating costs. Improper claims can lead to serious consequences for your business.
+
+### Agree terms in writing
+Confirm the dates, price, certificates, and refund or rescheduling terms. Our guide on contracts and terms explains how to read the key clauses.
+
+## 5. Understand how claims work
+
+### Apply and get approval first, where required
+Some training needs to be applied for and approved before it starts, while other claims are submitted afterward, depending on the scheme and the type of training. Check the process for each course, and never assume.
+
+### Keep the required documents
+Typically you will need invoices, receipts, attendance records, certificates, and proof of payment. Missing documents are a common reason for rejected claims. Keep them organised, in line with your bookkeeping. Our guide on bookkeeping basics explains how.
+
+### Mind the deadlines
+Applications and claims have time limits, and late submissions may be rejected. Calendar the deadlines when you book the training.
+
+### Know what is claimable
+The agency publishes the types of training and costs that can be claimed, and the amounts allowed. Read the current guidelines, so that your budget reflects what will actually be reimbursed.
+
+### Be honest and accurate
+Claims must reflect training that really took place and costs that were really incurred. Accurate records protect you in any review.
+
+### Cash flow still matters
+You may need to pay first and wait for reimbursement, so include this in your planning. Our guide on managing cash flow explains how to plan for timing gaps.
+
+## 6. Plan a simple training budget and calendar
+
+### Set a yearly target
+Decide how much you want to invest, as a percentage of payroll or a figure per employee, and match it with the balance available in your levy account.
+
+### Spread training through the year
+Avoid clustering all training in one busy month. Plan around your seasons and peak periods. Our guide on managing inventory and stock shows how to plan for seasonal peaks.
+
+### Mix large and small items
+Combine a few larger courses with short workshops, online modules, and on-the-job coaching, which cost little and can be very effective.
+
+### Train managers, too
+Supervisors and managers shape the daily experience of your team, and skills such as coaching, delegating, and giving feedback can lift the whole business.
+
+### Include compliance training
+Training on workplace safety, data protection, and other legal duties reduces risk. See our guide on personal data protection and our guide on cybersecurity.
+
+> The best training budget is not the biggest one, it is the one tied to a business goal. A short course that fixes a real problem is worth more than a long one that nobody applies.
+
+## 7. Measure results and keep people engaged
+
+### Define what success looks like
+Before the training, decide what should change, for example fewer errors, faster service, higher sales, or fewer complaints. Measure the baseline so you can compare.
+
+### Get feedback and test learning
+Ask participants what they learned and how they will use it, and where appropriate test skills. Ask managers whether behaviour has changed.
+
+### Make the learning stick
+Give people a chance to apply new skills soon after the training, and ask them to share what they learned with colleagues. Skills that are not used are quickly forgotten.
+
+### Link training to growth
+Show employees how new skills can lead to more responsibility, better roles, or recognition. This helps retention, and it supports a stronger employer reputation. Our guide on employee handbooks and HR policies explains how to set out development and performance reviews.
+
+### Consider retention agreements carefully
+Some employers ask staff to stay for a period after expensive training. If you do, set the terms in writing, keep them fair, and get legal advice, since enforceability depends on the circumstances.
+
+### Review each year
+Look at what worked, what did not, and what the business will need next year, and update your plan.
+
+If you need a training provider, an HR consultant, or an accountant to help plan and claim, you can [browse the directory](/en) for local professionals, and [creating a free business listing](/en/signup) helps job seekers and customers see that you invest in your people.
+
+## Common mistakes Malaysian SMEs make with training
+
+- **Paying the levy and never using it.** Registered employers who do not claim lose the value of money they have already contributed.
+- **Buying courses without a business purpose.** Training chosen only because it is available rarely changes performance.
+- **Skipping the paperwork.** Missing invoices, attendance records, or late submissions are common reasons for rejected claims.
+- **Not following up.** Without applying and reinforcing the learning, most of the benefit is lost.
+
+## Where to start
+
+- **This week:** Check whether your business is covered and registered, and find out your current levy balance and contribution.
+- **Next:** List the top three skills gaps in your business, and ask your team what training would help most.
+- **Then:** Shortlist two or three eligible providers, compare outlines and costs, and confirm how claims work.
+- **After training:** Gather your documents, submit claims on time, and measure what changed.
+
+Training is one of the few business costs that can leave you with something permanent: people who are better at their jobs. Use the support available, and aim it at what your business really needs.`,
+    faqs: [
+      {
+        question: "What is the HRD Corp levy?",
+        answer:
+          "A contribution, generally calculated as a percentage of employees' monthly wages, paid by employers in covered sectors into a national fund for workforce training. Registered employers can use their contributions to claim approved training costs.",
+      },
+      {
+        question: "Does my small business have to register?",
+        answer:
+          "It depends on your sector and the number of Malaysian employees. Larger employers in covered sectors are required to register, while smaller ones may have the option. Thresholds and sectors change, so check the current rules on the official HRD Corp website.",
+      },
+      {
+        question: "How is the levy calculated?",
+        answer:
+          "Generally as a percentage of monthly wages, with the rate depending on the size of your workforce. The wage definition usually covers basic pay and fixed allowances, and may exclude variable items such as overtime and bonuses. Confirm the current rates and definition.",
+      },
+      {
+        question: "What training can I claim for?",
+        answer:
+          "Approved training that meets the agency's requirements, delivered by eligible providers, within the allowed cost limits. Confirm that the provider and the specific course are claimable before you pay or enrol.",
+      },
+      {
+        question: "Do I pay first or claim first?",
+        answer:
+          "It depends on the scheme and the type of training. Some training needs applying and approval before it starts, and other claims are submitted after it ends. You may need to pay first and wait for reimbursement, so plan your cash flow.",
+      },
+      {
+        question: "What documents do I need for a claim?",
+        answer:
+          "Typically invoices, receipts, attendance records, certificates, and proof of payment, submitted by the deadline. Missing or late documents are a common reason for rejection, so keep them organised.",
+      },
+      {
+        question: "How do I choose a good training provider?",
+        answer:
+          "Check that the provider and course are eligible, then compare outlines, trainer qualifications, class size, format, cost, and references. Prefer practical content your team can apply, and be wary of promises of guaranteed approval.",
+      },
+      {
+        question: "How do I know if training is working?",
+        answer:
+          "Decide in advance what should improve, such as fewer errors, faster service, higher sales, or fewer complaints, measure the baseline, collect feedback, and check results after a few months. Help staff apply what they learned soon after training.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "利用人力资源发展局（HRD Corp）培训团队：征款、申请与中小企业的技能提升",
+        excerpt:
+          "培训通过更好的服务、更少的错误和更稳定的员工来回报自身，但许多小企业因成本而略过它。本指南向马来西亚中小企业说明 HRD Corp 征款如何运作、谁需要注册、雇主如何为获批的培训申请津贴、如何选择培训机构、如何规划简单的培训预算，以及如何衡量培训是否有效。",
+        body: `受过培训的团队销售得更好、犯的错误更少、服务顾客更一致，也更可能留下来。然而许多小企业主把培训放在最后，原因是成本、离开工作岗位的时间，以及觉得自己太忙。
+
+在马来西亚，许多雇主已经通过征款向培训基金供款，却从来没有使用。了解这项征款如何运作，可以把您已经在付的钱变成您的企业所需要的技能。
+
+以下仅为一般资讯，并非法律或财务意见。谁必须注册、征款率、哪些培训可以申请，以及申请程序，由相关机构订定并会随时间变化，并取决于您的行业和员工人数。在承诺参加课程或预算之前，请在 HRD Corp 官方网站并向您的培训机构确认现行规定。
+
+## 1. 了解 HRD Corp 和征款是什么
+
+### 它是什么
+HRD Corp 是管理一项基金的国家机构，该基金用于支持马来西亚劳动力的培训。受涵盖行业的雇主缴付征款，而已注册的雇主可以用他们的供款申请获批培训费用的津贴。
+
+### 一般谁需要注册
+在受涵盖行业、拥有一定数量马来西亚籍员工的雇主必须注册并缴付征款，而较小的雇主可能可以选择是否注册。员工人数门槛、涵盖的行业和员工计算规则随时间有所变化，所以请在官方网站查核现行情况。
+
+### 征款如何计算
+一般是员工每月工资的一个百分比，费率取决于您的员工规模。工资的定义通常涵盖基本薪金和固定津贴，并可能不包括加班费和花红等变动项目。请确认现行的定义和费率。
+
+### 基金可以由您使用
+对已注册的雇主来说，供款会累积成一个可用于获批培训的结余，所以不申请就等于为一样没使用的东西付费。关于结余可保留多久以及任何限额的规定，由该机构订定。
+
+### 培训不只是大公司的事
+小企业也可以使用这项基金，而且培训不必昂贵。许多有用的课程涵盖实用技能，例如客户服务、销售、数码工具、会计基础、安全和督导技能。
+
+## 2. 查核您的企业是否在涵盖范围内
+
+### 仔细计算您的员工人数
+重要的人数通常是马来西亚籍员工的人数，兼职人员和某些类别可能被不同对待。我们关于雇用第一位员工的指南说明了雇佣和供款的基础，关于与自由工作者合作的指南则说明了承包商与雇员有何不同。
+
+### 确认您的行业
+只有某些行业被涵盖，而且名单过去曾扩大。请查核现行名单以及您的企业如何被归类。
+
+### 通过官方渠道注册
+如果您必须注册，或在可选的情况下选择注册，请通过该机构的官方程序办理。对任何为您自己就能办的事情收费的人要保持警惕，并且绝不要分享您的登录资料。
+
+### 了解持续的义务
+已注册的雇主必须按时缴付征款并保持员工资料最新，如果您不再符合资格，也有相关规定。我们关于薪资与法定供款的指南说明了如何让薪资记录井然有序。
+
+### 把它纳入您的薪资流程
+把征款加入您每月的薪资例行事务，让它每个月都被正确计算和缴付。
+
+## 3. 找出您的团队真正需要的技能
+
+先列出您的企业未来十二个月所需的技能，然后让培训与这些差距相配合。培训在解决真实的业务问题时效果最好，而不是因为刚好有课程就购买。
+
+### 看您的目标
+如果您计划开设网店，可能需要数码营销和客户服务技能。如果您计划开设第二家分店，可能需要督导和库存技能。我们关于撰写商业计划书的指南可以帮助您设定目标。
+
+### 看错误和投诉从哪里来
+反复出现的错误、顾客投诉、返工和安全事故，指向技能上的差距。我们关于顾客投诉和消费者权利的指南和关于职场安全的指南是很好的起点。
+
+### 询问您的团队
+员工常常知道他们需要什么，让他们参与会让培训更受欢迎。请问问什么能帮助他们更好地完成工作，以及他们想学什么。
+
+### 结合技术和人际技能
+技术技能，例如软件、设备和合规，与人际技能，例如沟通、领导和客户服务，都很重要。请取得平衡。
+
+### 排出优先顺序
+您无法一次就让每个人学会所有东西。按对企业的影响来排列需求，并从最重要的几项开始。
+
+## 4. 选择获批的课程和可信赖的机构
+
+### 查核课程和机构是否合资格
+要使申请获批，培训和培训机构一般需要符合该机构的要求。在付款或报名之前，请确认培训机构已注册或获批，并且该具体课程可以申请。
+
+### 比较培训机构
+索取课程大纲、讲师资历、班级人数、形式、时间表、费用和推荐人。寻找您的团队可以立即应用的实用内容。
+
+### 考虑授课形式
+面授、线上和混合形式适合不同的需要。如果您有几位员工有相同的需要，在您的工作场所进行内部培训可能很高效，而线上课程可以减少往返和离岗时间。
+
+### 留意成本
+比较哪些可以申请、哪些不可以，因为有些费用可能只获部分涵盖。请培训机构解释申请如何运作，以及您必须预先支付什么。
+
+### 对好得不真实的优惠保持谨慎
+对任何承诺保证获批、提出为没有发生的培训申请，或建议虚报费用的人要保持警惕。不当的申请可能给您的企业带来严重后果。
+
+### 以书面约定条款
+确认日期、价格、证书，以及退款或改期的条款。我们关于合约与条款的指南说明了如何阅读关键条款。
+
+## 5. 了解申请如何运作
+
+### 在需要时先申请并获批
+有些培训需要在开始之前申请并获批，而其他申请则在事后提交，视计划和培训类型而定。请查核每个课程的流程，不要想当然。
+
+### 保存所需文件
+通常需要发票、收据、出席记录、证书和付款证明。文件缺失是申请被拒的常见原因。请让它们井然有序，并与您的簿记保持一致。我们关于簿记基础的指南说明了如何做到这一点。
+
+### 留意期限
+申请和索偿都有时限，迟交可能被拒绝。在预订培训时就把期限标在日历上。
+
+### 了解哪些可以申请
+该机构会公布可申请的培训类型和费用，以及允许的金额。请阅读现行指引，让您的预算反映实际会获得偿还的部分。
+
+### 诚实并准确
+申请必须反映真正发生的培训和真正产生的费用。准确的记录在任何检查中都会保护您。
+
+### 现金流仍然重要
+您可能需要先付款再等待偿还，所以请把这一点纳入规划。我们关于现金流管理的指南说明了如何为时间差做计划。
+
+## 6. 规划简单的培训预算和日程
+
+### 设定年度目标
+决定您想投入多少，以占薪资的百分比或每位员工的金额来表示，并与您征款账户中可用的结余相配合。
+
+### 把培训分散到全年
+避免把所有培训集中在一个忙碌的月份。围绕您的淡旺季和高峰期来规划。我们关于库存管理的指南说明了如何为季节性高峰做计划。
+
+### 大小项目结合
+把几门较大的课程与短期工作坊、线上单元和在职辅导结合起来，后者成本很低，却可能非常有效。
+
+### 也要培训经理
+督导和经理塑造了团队的日常体验，而辅导、授权和给予反馈等技能可以提升整个企业。
+
+### 包括合规培训
+关于职场安全、数据保护和其他法律责任的培训可以降低风险。请参阅我们关于个人资料保护的指南和关于网络安全的指南。
+
+> 最好的培训预算不是最大的，而是与业务目标挂钩的。一门解决真实问题的短期课程，比一门没人应用的长期课程更有价值。
+
+## 7. 衡量成果并让人们保持投入
+
+### 界定成功的样子
+在培训之前，决定什么应该改变，例如更少的错误、更快的服务、更高的销售或更少的投诉。衡量基线，让您可以比较。
+
+### 取得反馈并测试学习成果
+询问参加者学到了什么以及将如何使用，并在适当时测试技能。询问经理行为是否有改变。
+
+### 让学习落地
+让人们在培训之后尽快有机会应用新技能，并请他们与同事分享所学。不使用的技能很快就会被遗忘。
+
+### 把培训与成长联系起来
+向员工展示新技能如何带来更多责任、更好的职位或认可。这有助于留住员工，并支持更好的雇主声誉。我们关于员工手册和人力资源政策的指南说明了如何订明发展和绩效考核。
+
+### 谨慎考虑留任协议
+有些雇主要求员工在昂贵的培训之后留任一段时间。如果您这样做，请以书面订明条款，保持公平，并寻求法律意见，因为可执行性取决于具体情况。
+
+### 每年检视
+看看什么有效、什么无效，以及企业明年需要什么，并更新您的计划。
+
+如果您需要培训机构、人力资源顾问或会计师协助规划和申请，可以[浏览名录](/zh)寻找本地专业人士，而[创建免费的企业列表](/zh/signup)可以帮助求职者和顾客看到您重视投资于员工。
+
+## 马来西亚中小企业在培训上常犯的错误
+
+- **缴了征款却从不使用。**不申请的已注册雇主，会失去他们已供款项的价值。
+- **在没有业务目的的情况下购买课程。**仅仅因为有课程而选择的培训，很少能改变绩效。
+- **略过文件工作。**缺失的发票、出席记录或迟交，是申请被拒的常见原因。
+- **没有跟进。**如果不应用和强化所学，大部分益处就会丧失。
+
+## 从哪里开始
+
+- **本周：**查核您的企业是否在涵盖范围内并已注册，并查明您目前的征款结余和供款。
+- **接着：**列出您企业最主要的三项技能差距，并询问您的团队什么培训最有帮助。
+- **然后：**挑选两三家合资格的培训机构，比较大纲和费用，并确认申请如何运作。
+- **培训之后：**收集您的文件，按时提交申请，并衡量发生了什么变化。
+
+培训是少数能留给您永久成果的业务成本之一：更擅长工作的人。请使用现有的支持，并把它对准您的企业真正需要的东西。`,
+        faqs: [
+          {
+            question: "什么是 HRD Corp 征款？",
+            answer:
+              "由受涵盖行业的雇主缴付到国家劳动力培训基金的供款，一般按员工每月工资的百分比计算。已注册的雇主可以用他们的供款申请获批培训的费用。",
+          },
+          {
+            question: "我的小企业必须注册吗？",
+            answer:
+              "取决于您的行业和马来西亚籍员工的人数。受涵盖行业的较大雇主必须注册，而较小的雇主可能可以选择。门槛和行业会变动，所以请在 HRD Corp 官方网站查看现行规定。",
+          },
+          {
+            question: "征款如何计算？",
+            answer:
+              "一般按每月工资的百分比计算，费率取决于您的员工规模。工资的定义通常涵盖基本薪金和固定津贴，并可能不包括加班费和花红等变动项目。请确认现行的费率和定义。",
+          },
+          {
+            question: "哪些培训可以申请？",
+            answer:
+              "符合该机构要求、由合资格的培训机构提供、并在允许的费用限额内的获批培训。在付款或报名之前，请确认培训机构和具体课程都可以申请。",
+          },
+          {
+            question: "是先付款还是先申请？",
+            answer:
+              "取决于计划和培训类型。有些培训需要在开始之前申请并获批，其他申请则在结束后提交。您可能需要先付款再等待偿还，所以请规划您的现金流。",
+          },
+          {
+            question: "申请需要哪些文件？",
+            answer:
+              "通常是发票、收据、出席记录、证书和付款证明，并在期限之前提交。文件缺失或迟交是被拒的常见原因，所以请让它们井然有序。",
+          },
+          {
+            question: "如何选择好的培训机构？",
+            answer:
+              "查核培训机构和课程是否合资格，然后比较大纲、讲师资历、班级人数、形式、费用和推荐人。优先选择您的团队可以应用的实用内容，并对保证获批的承诺保持警惕。",
+          },
+          {
+            question: "如何知道培训是否有效？",
+            answer:
+              "事先决定应改善什么，例如更少的错误、更快的服务、更高的销售或更少的投诉，衡量基线，收集反馈，并在几个月后检查成果。帮助员工在培训后尽快应用所学。",
+          },
+        ],
+      },
+      ms: {
+        title: "Melatih Pasukan Anda dengan HRD Corp: Levi, Tuntutan dan Peningkatan Kemahiran untuk PKS Malaysia",
+        excerpt:
+          "Latihan membayar balik dirinya melalui perkhidmatan lebih baik, kesilapan lebih sedikit dan kakitangan yang kekal, tetapi ramai perniagaan kecil melangkaunya kerana kos. Panduan ini menunjukkan kepada PKS Malaysia bagaimana levi HRD Corp berfungsi, siapa yang perlu mendaftar, bagaimana majikan menuntut untuk latihan yang diluluskan, cara memilih penyedia latihan, cara merancang bajet latihan yang mudah, dan cara mengukur sama ada latihan berkesan.",
+        body: `Pasukan yang terlatih menjual dengan lebih baik, membuat kesilapan lebih sedikit, melayani pelanggan dengan lebih konsisten, dan lebih berkemungkinan untuk kekal. Namun ramai pemilik perniagaan kecil meletakkan latihan di tempat terakhir, kerana kos, masa jauh daripada kerja, dan perasaan bahawa mereka terlalu sibuk.
+
+Di Malaysia, ramai majikan sudah menyumbang kepada dana latihan melalui levi, dan kemudian tidak pernah menggunakannya. Memahami bagaimana levi itu berfungsi boleh mengubah wang yang sudah anda bayar menjadi kemahiran yang perniagaan anda perlukan.
+
+Ini ialah maklumat am, bukan nasihat undang-undang atau kewangan. Siapa yang mesti mendaftar, kadar levi, latihan yang boleh dituntut, dan prosedur tuntutan ditetapkan oleh pihak berkuasa berkaitan dan berubah dari semasa ke semasa, dan ia bergantung pada sektor serta bilangan pekerja anda. Sahkan peraturan semasa di laman web rasmi HRD Corp, dan dengan penyedia latihan anda, sebelum anda berkomitmen kepada kursus atau bajet.
+
+## 1. Fahami apakah HRD Corp dan levi
+
+### Apa itu
+HRD Corp ialah agensi kebangsaan yang mentadbir dana untuk menyokong latihan tenaga kerja Malaysia. Majikan dalam sektor yang dilindungi menyumbang levi, dan majikan berdaftar boleh menggunakan sumbangan mereka untuk menuntut balik kos latihan yang diluluskan.
+
+### Siapa yang secara amnya perlu mendaftar
+Majikan dalam sektor yang dilindungi dengan bilangan pekerja Malaysia tertentu dikehendaki mendaftar dan membayar levi, manakala majikan lebih kecil mungkin diberi pilihan untuk mendaftar. Ambang bilangan pekerja, sektor yang dilindungi dan peraturan mengira pekerja telah berubah dari semasa ke semasa, jadi semak kedudukan semasa di laman web rasmi.
+
+### Bagaimana levi dikira
+Ia secara amnya peratusan gaji bulanan pekerja, dengan kadar bergantung pada saiz tenaga kerja anda. Takrifan gaji biasanya merangkumi gaji pokok dan elaun tetap, dan mungkin tidak termasuk item berubah seperti kerja lebih masa dan bonus. Sahkan takrifan dan kadar semasa.
+
+### Dana itu untuk anda gunakan
+Bagi majikan berdaftar, sumbangan membina baki yang boleh digunakan untuk latihan yang diluluskan, jadi tidak menuntut bermakna membayar untuk sesuatu yang tidak anda gunakan. Peraturan tentang berapa lama baki bertahan, dan sebarang had, ditetapkan oleh agensi.
+
+### Latihan bukan hanya untuk syarikat besar
+Perniagaan kecil juga boleh menggunakan dana itu, dan latihan tidak perlu mahal. Banyak kursus berguna merangkumi kemahiran praktikal seperti perkhidmatan pelanggan, jualan, alat digital, asas perakaunan, keselamatan dan kemahiran penyeliaan.
+
+## 2. Semak sama ada perniagaan anda dilindungi
+
+### Kira pekerja anda dengan teliti
+Bilangan yang penting biasanya bilangan pekerja Malaysia, dan pekerja sambilan serta kategori tertentu mungkin dilayan secara berbeza. Panduan kami tentang mengambil pekerja pertama menerangkan asas pekerjaan dan caruman, dan panduan kami tentang bekerja dengan pekerja bebas menerangkan bagaimana kontraktor berbeza daripada pekerja.
+
+### Sahkan sektor anda
+Hanya sektor tertentu dilindungi, dan senarai itu telah diperluas pada masa lalu. Semak senarai semasa dan bagaimana perniagaan anda dikelaskan.
+
+### Daftar melalui saluran rasmi
+Jika anda dikehendaki mendaftar, atau memilih untuk berbuat demikian di mana ia pilihan, lakukannya melalui proses rasmi agensi. Berwaspada terhadap sesiapa yang mengenakan bayaran untuk sesuatu yang boleh anda lakukan sendiri, dan jangan sekali-kali berkongsi butiran log masuk anda.
+
+### Fahami kewajipan berterusan
+Majikan berdaftar mesti membayar levi tepat pada masanya dan mengemas kini maklumat pekerja, dan terdapat peraturan tentang apa yang berlaku jika anda tidak lagi layak. Panduan kami tentang gaji dan caruman berkanun menerangkan cara menyimpan rekod gaji dengan teratur.
+
+### Masukkannya dalam proses gaji anda
+Tambah levi kepada rutin gaji bulanan anda, supaya ia dikira dan dibayar dengan betul setiap bulan.
+
+## 3. Kenal pasti kemahiran yang benar-benar diperlukan oleh pasukan anda
+
+Mulakan dengan menyenaraikan kemahiran yang perniagaan anda perlukan dalam dua belas bulan akan datang, kemudian padankan latihan dengan jurang tersebut. Latihan paling berkesan apabila ia menyelesaikan masalah perniagaan sebenar, bukan apabila dibeli kerana sesuatu kursus kebetulan tersedia.
+
+### Lihat matlamat anda
+Jika anda merancang melancarkan kedai dalam talian, anda mungkin memerlukan kemahiran pemasaran digital dan perkhidmatan pelanggan. Jika anda merancang membuka cawangan kedua, anda mungkin memerlukan kemahiran penyeliaan dan inventori. Panduan kami tentang menulis pelan perniagaan boleh membantu anda menetapkan matlamat.
+
+### Lihat dari mana kesilapan dan aduan datang
+Kesilapan berulang, aduan pelanggan, kerja semula dan insiden keselamatan menunjukkan jurang kemahiran. Panduan kami tentang aduan pelanggan dan hak pengguna dan panduan kami tentang keselamatan tempat kerja ialah titik permulaan yang berguna.
+
+### Tanya pasukan anda
+Pekerja sering tahu apa yang mereka perlukan, dan melibatkan mereka menjadikan latihan lebih disambut. Tanya apa yang boleh membantu mereka melakukan kerja dengan lebih baik, dan apa yang mereka mahu pelajari.
+
+### Gabungkan kemahiran teknikal dan manusia
+Kemahiran teknikal, seperti perisian, peralatan dan pematuhan, dan kemahiran manusia, seperti komunikasi, kepimpinan dan perkhidmatan pelanggan, kedua-duanya penting. Seimbangkannya.
+
+### Utamakan
+Anda tidak boleh melatih semua orang tentang segala-galanya sekaligus. Susun keperluan mengikut kesannya kepada perniagaan, dan mulakan dengan beberapa yang teratas.
+
+## 4. Pilih kursus yang diluluskan dan penyedia yang dipercayai
+
+### Semak sama ada kursus dan penyedia layak
+Agar tuntutan diluluskan, latihan dan penyedia secara amnya perlu memenuhi keperluan agensi. Sahkan bahawa penyedia berdaftar atau diluluskan, dan kursus khusus itu boleh dituntut, sebelum anda membayar atau mendaftar.
+
+### Bandingkan penyedia
+Minta kerangka kursus, kelayakan jurulatih, saiz kelas, format, jadual, kos dan rujukan. Cari kandungan praktikal yang boleh diaplikasikan oleh pasukan anda dengan segera.
+
+### Pertimbangkan format penyampaian
+Format bersemuka, dalam talian dan campuran sesuai dengan keperluan berbeza. Latihan dalaman di tempat kerja anda boleh cekap jika anda mempunyai beberapa kakitangan dengan keperluan yang sama, dan kursus dalam talian mengurangkan perjalanan dan masa jauh.
+
+### Perhatikan kos
+Bandingkan apa yang boleh dituntut dan apa yang tidak, kerana sesetengah kos mungkin hanya dilindungi sebahagian. Minta penyedia menerangkan bagaimana tuntutan berfungsi, dan apa yang mesti anda bayar di muka.
+
+### Berhati-hati dengan tawaran yang kedengaran terlalu baik
+Berwaspada terhadap sesiapa yang menjanjikan kelulusan terjamin, menawarkan untuk menuntut bagi latihan yang tidak berlaku, atau mencadangkan kos dibengkakkan. Tuntutan tidak wajar boleh membawa akibat serius kepada perniagaan anda.
+
+### Persetujui terma secara bertulis
+Sahkan tarikh, harga, sijil, dan terma bayaran balik atau penjadualan semula. Panduan kami tentang kontrak dan terma menerangkan cara membaca klausa utama.
+
+## 5. Fahami bagaimana tuntutan berfungsi
+
+### Mohon dan dapatkan kelulusan dahulu, jika diperlukan
+Sesetengah latihan perlu dipohon dan diluluskan sebelum ia bermula, manakala tuntutan lain dihantar selepas itu, bergantung pada skim dan jenis latihan. Semak proses untuk setiap kursus, dan jangan membuat andaian.
+
+### Simpan dokumen yang diperlukan
+Lazimnya anda memerlukan invois, resit, rekod kehadiran, sijil dan bukti bayaran. Dokumen yang hilang ialah punca lazim tuntutan ditolak. Simpannya dengan teratur, selaras dengan simpan kira anda. Panduan kami tentang asas simpan kira menerangkan caranya.
+
+### Beri perhatian kepada tarikh akhir
+Permohonan dan tuntutan mempunyai had masa, dan penghantaran lewat mungkin ditolak. Catat tarikh akhir dalam kalendar semasa anda menempah latihan.
+
+### Ketahui apa yang boleh dituntut
+Agensi menerbitkan jenis latihan dan kos yang boleh dituntut, dan jumlah yang dibenarkan. Baca garis panduan semasa, supaya bajet anda mencerminkan apa yang sebenarnya akan dibayar balik.
+
+### Jujur dan tepat
+Tuntutan mesti mencerminkan latihan yang benar-benar berlaku dan kos yang benar-benar ditanggung. Rekod yang tepat melindungi anda dalam sebarang semakan.
+
+### Aliran tunai masih penting
+Anda mungkin perlu membayar dahulu dan menunggu bayaran balik, jadi masukkan ini dalam perancangan anda. Panduan kami tentang menguruskan aliran tunai menerangkan cara merancang untuk jurang masa.
+
+## 6. Rancang bajet dan kalendar latihan yang mudah
+
+### Tetapkan sasaran tahunan
+Tentukan berapa banyak yang anda mahu laburkan, sebagai peratusan gaji atau angka bagi setiap pekerja, dan padankan dengan baki yang tersedia dalam akaun levi anda.
+
+### Sebarkan latihan sepanjang tahun
+Elakkan menumpukan semua latihan dalam satu bulan yang sibuk. Rancang mengikut musim dan tempoh kemuncak anda. Panduan kami tentang pengurusan inventori menunjukkan cara merancang untuk kemuncak bermusim.
+
+### Campurkan item besar dan kecil
+Gabungkan beberapa kursus yang lebih besar dengan bengkel pendek, modul dalam talian dan bimbingan di tempat kerja, yang berkos rendah dan boleh sangat berkesan.
+
+### Latih pengurus juga
+Penyelia dan pengurus membentuk pengalaman harian pasukan anda, dan kemahiran seperti membimbing, mewakilkan dan memberi maklum balas boleh mengangkat seluruh perniagaan.
+
+### Sertakan latihan pematuhan
+Latihan tentang keselamatan tempat kerja, perlindungan data dan tanggungjawab undang-undang lain mengurangkan risiko. Lihat panduan kami tentang perlindungan data peribadi dan panduan kami tentang keselamatan siber.
+
+> Bajet latihan terbaik bukan yang terbesar, ia yang dikaitkan dengan matlamat perniagaan. Kursus pendek yang membetulkan masalah sebenar bernilai lebih daripada yang panjang yang tiada siapa gunakan.
+
+## 7. Ukur hasil dan pastikan orang terlibat
+
+### Takrifkan rupa kejayaan
+Sebelum latihan, tentukan apa yang patut berubah, contohnya kesilapan lebih sedikit, perkhidmatan lebih pantas, jualan lebih tinggi atau aduan lebih sedikit. Ukur garis dasar supaya anda boleh membandingkan.
+
+### Dapatkan maklum balas dan uji pembelajaran
+Tanya peserta apa yang mereka pelajari dan bagaimana mereka akan menggunakannya, dan jika sesuai uji kemahiran. Tanya pengurus sama ada tingkah laku telah berubah.
+
+### Jadikan pembelajaran melekat
+Berikan orang peluang untuk menggunakan kemahiran baharu sejurus selepas latihan, dan minta mereka berkongsi apa yang dipelajari dengan rakan sekerja. Kemahiran yang tidak digunakan cepat dilupakan.
+
+### Kaitkan latihan dengan pertumbuhan
+Tunjukkan kepada pekerja bagaimana kemahiran baharu boleh membawa kepada tanggungjawab lebih, peranan lebih baik atau pengiktirafan. Ini membantu pengekalan, dan menyokong reputasi majikan yang lebih kukuh. Panduan kami tentang buku panduan pekerja dan dasar HR menerangkan cara menetapkan pembangunan dan penilaian prestasi.
+
+### Pertimbangkan perjanjian pengekalan dengan teliti
+Sesetengah majikan meminta kakitangan kekal untuk satu tempoh selepas latihan yang mahal. Jika anda berbuat demikian, tetapkan terma secara bertulis, pastikan ia adil, dan dapatkan nasihat undang-undang, kerana kebolehkuatkuasaan bergantung pada keadaan.
+
+### Semak setiap tahun
+Lihat apa yang berjaya, apa yang tidak, dan apa yang perniagaan perlukan tahun depan, dan kemas kini pelan anda.
+
+Jika anda memerlukan penyedia latihan, perunding HR atau akauntan untuk membantu merancang dan menuntut, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pencari kerja dan pelanggan melihat bahawa anda melabur dalam orang anda.
+
+## Kesilapan lazim PKS Malaysia dengan latihan
+
+- **Membayar levi dan tidak pernah menggunakannya.** Majikan berdaftar yang tidak menuntut kehilangan nilai wang yang sudah mereka sumbangkan.
+- **Membeli kursus tanpa tujuan perniagaan.** Latihan yang dipilih hanya kerana ia tersedia jarang mengubah prestasi.
+- **Melangkau kerja dokumen.** Invois yang hilang, rekod kehadiran, atau penghantaran lewat ialah punca lazim tuntutan ditolak.
+- **Tidak menyusul.** Tanpa mengaplikasi dan mengukuhkan pembelajaran, kebanyakan faedah hilang.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Semak sama ada perniagaan anda dilindungi dan berdaftar, dan ketahui baki dan sumbangan levi semasa anda.
+- **Seterusnya:** Senaraikan tiga jurang kemahiran teratas dalam perniagaan anda, dan tanya pasukan anda latihan apa yang paling membantu.
+- **Kemudian:** Senarai pendek dua atau tiga penyedia yang layak, bandingkan kerangka dan kos, dan sahkan bagaimana tuntutan berfungsi.
+- **Selepas latihan:** Kumpulkan dokumen anda, hantar tuntutan tepat pada masanya, dan ukur apa yang berubah.
+
+Latihan ialah salah satu daripada sedikit kos perniagaan yang boleh meninggalkan anda sesuatu yang kekal: orang yang lebih mahir dalam kerja mereka. Gunakan sokongan yang ada, dan arahkannya kepada apa yang perniagaan anda benar-benar perlukan.`,
+        faqs: [
+          {
+            question: "Apakah levi HRD Corp?",
+            answer:
+              "Sumbangan, secara amnya dikira sebagai peratusan gaji bulanan pekerja, yang dibayar oleh majikan dalam sektor yang dilindungi ke dalam dana kebangsaan untuk latihan tenaga kerja. Majikan berdaftar boleh menggunakan sumbangan mereka untuk menuntut kos latihan yang diluluskan.",
+          },
+          {
+            question: "Adakah perniagaan kecil saya perlu mendaftar?",
+            answer:
+              "Bergantung pada sektor anda dan bilangan pekerja Malaysia. Majikan lebih besar dalam sektor yang dilindungi dikehendaki mendaftar, manakala yang lebih kecil mungkin mempunyai pilihan. Ambang dan sektor berubah, jadi semak peraturan semasa di laman web rasmi HRD Corp.",
+          },
+          {
+            question: "Bagaimanakah levi dikira?",
+            answer:
+              "Secara amnya sebagai peratusan gaji bulanan, dengan kadar bergantung pada saiz tenaga kerja anda. Takrifan gaji biasanya merangkumi gaji pokok dan elaun tetap, dan mungkin tidak termasuk item berubah seperti kerja lebih masa dan bonus. Sahkan kadar dan takrifan semasa.",
+          },
+          {
+            question: "Latihan apa yang boleh saya tuntut?",
+            answer:
+              "Latihan yang diluluskan yang memenuhi keperluan agensi, disampaikan oleh penyedia yang layak, dalam had kos yang dibenarkan. Sahkan bahawa penyedia dan kursus khusus itu boleh dituntut sebelum anda membayar atau mendaftar.",
+          },
+          {
+            question: "Adakah saya bayar dahulu atau tuntut dahulu?",
+            answer:
+              "Bergantung pada skim dan jenis latihan. Sesetengah latihan perlu dipohon dan diluluskan sebelum ia bermula, dan tuntutan lain dihantar selepas ia tamat. Anda mungkin perlu membayar dahulu dan menunggu bayaran balik, jadi rancang aliran tunai anda.",
+          },
+          {
+            question: "Apakah dokumen yang saya perlukan untuk tuntutan?",
+            answer:
+              "Lazimnya invois, resit, rekod kehadiran, sijil dan bukti bayaran, dihantar sebelum tarikh akhir. Dokumen yang hilang atau lewat ialah punca lazim penolakan, jadi simpannya dengan teratur.",
+          },
+          {
+            question: "Bagaimanakah saya memilih penyedia latihan yang baik?",
+            answer:
+              "Semak bahawa penyedia dan kursus layak, kemudian bandingkan kerangka, kelayakan jurulatih, saiz kelas, format, kos dan rujukan. Utamakan kandungan praktikal yang boleh diaplikasikan oleh pasukan anda, dan berwaspada terhadap janji kelulusan terjamin.",
+          },
+          {
+            question: "Bagaimanakah saya tahu jika latihan berkesan?",
+            answer:
+              "Tentukan lebih awal apa yang patut bertambah baik, seperti kesilapan lebih sedikit, perkhidmatan lebih pantas, jualan lebih tinggi atau aduan lebih sedikit, ukur garis dasar, kumpul maklum balas, dan semak hasil selepas beberapa bulan. Bantu kakitangan menggunakan apa yang dipelajari sejurus selepas latihan.",
+          },
+        ],
+      },
+    },
+  },
 ];
