@@ -297,7 +297,10 @@ export async function callAi<T>(
     const text = choice?.message?.content;
     if (!text) {
       console.error("callAi: empty response", { model, finishReason });
-      return { status: "error", message: "The model didn't return a usable response." };
+      return {
+        status: "error",
+        message: "The AI model returned an empty response — try again. If this keeps happening, OPENROUTER_MODEL may need a different model, or the OpenRouter account may have an issue (check its dashboard).",
+      };
     }
 
     const json = extractJsonObject(text);
@@ -311,12 +314,20 @@ export async function callAi<T>(
         return { status: "error", message: "The AI's response was cut off before it finished — try again." };
       }
       console.error("callAi: response wasn't valid JSON", { model, text: text.slice(0, 500) });
-      return { status: "error", message: "The model didn't return a usable response." };
+      return {
+        status: "error",
+        message:
+          "The AI model's response wasn't in the expected format — try again. Free-tier models (OPENROUTER_MODEL's default) don't always follow formatting instructions reliably; setting it to a specific paid model gives more consistent results.",
+      };
     }
     const parsed = schema.safeParse(json);
     if (!parsed.success) {
       console.error("callAi: response didn't match the expected schema", { model, issues: parsed.error.issues });
-      return { status: "error", message: "The model didn't return a usable response." };
+      return {
+        status: "error",
+        message:
+          "The AI model's response didn't match what this feature expected — try again. Free-tier models (OPENROUTER_MODEL's default) don't always follow formatting instructions reliably; setting it to a specific paid model gives more consistent results.",
+      };
     }
     return { status: "ok", data: parsed.data };
   } catch (error) {
