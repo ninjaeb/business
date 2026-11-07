@@ -15,14 +15,14 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Building Customer Loyalty and Repeat Business in Malaysia: Referrals, Memberships, and Feedback**
-   — Why repeat customers are cheaper than new ones: simple loyalty
-   programmes and memberships, referral incentives, collecting and acting
-   on feedback, using WhatsApp and email responsibly (with PDPA links),
-   handling lapsed customers, and measuring retention.
+1. **Expanding to a Second Outlet: Planning, Funding, and Avoiding Overreach**
+   — How to know a business is ready to open a second location: proving the
+   first outlet's model, choosing a location, budgeting set-up and working
+   capital, hiring and training a team, managing two sites, licences and
+   permits per premises (to hedge), and warning signs of overextending.
 
-2. **Choosing Accounting Software for Your Malaysian SME: Features, Costs, and Switching Over**
-   — What small businesses need from accounting software: invoicing,
-   e-invoicing readiness, SST and payroll support, bank feeds, reports,
-   comparing cloud and desktop options and costs (to hedge), migrating from
-   spreadsheets, and working with your accountant.
+2. **Business Continuity Planning for Malaysian SMEs: Floods, Outages, and Emergencies**
+   — Preparing for disruption: common risks in Malaysia such as floods,
+   power and internet outages, supplier failure and key-person loss,
+   backing up records and data, insurance checks, emergency contacts,
+   a simple response plan, staff communication, and testing the plan.
