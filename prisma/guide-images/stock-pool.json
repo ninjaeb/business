@@ -754,6 +754,50 @@
       ],
       "description": "Two adults engaged in an indoor workshop, taking notes and discussing ideas",
       "usedBy": "training-your-team-with-hrd-corp-in-malaysia-workshop.webp"
+    },
+    {
+      "id": 3932728,
+      "tags": [
+        "retail",
+        "shop",
+        "florist",
+        "phone"
+      ],
+      "description": "Smiling Asian florist in an apron on a smartphone with a tablet at a counter with tulips",
+      "usedBy": "building-customer-loyalty-and-repeat-business-in-malaysia-florist.webp"
+    },
+    {
+      "id": 8297074,
+      "tags": [
+        "accounting",
+        "calculator",
+        "laptop",
+        "office"
+      ],
+      "description": "Asian woman calculating finances with a calculator and laptop in a bright office",
+      "usedBy": "choosing-accounting-software-for-your-malaysian-sme-cover.webp"
+    },
+    {
+      "id": 8297080,
+      "tags": [
+        "accounting",
+        "calculator",
+        "laptop",
+        "window"
+      ],
+      "description": "Asian woman working on finances with a calculator and laptop by a bright window",
+      "usedBy": "choosing-accounting-software-for-your-malaysian-sme-window.webp"
+    },
+    {
+      "id": 9052276,
+      "tags": [
+        "retail",
+        "cafe",
+        "barista",
+        "customer"
+      ],
+      "description": "Smiling female barista in apron and hat serving a customer in a cafe",
+      "usedBy": "building-customer-loyalty-and-repeat-business-in-malaysia-cover.webp"
     }
   ]
 }

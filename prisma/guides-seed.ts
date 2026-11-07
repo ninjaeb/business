@@ -22785,4 +22785,1323 @@ Latihan ialah salah satu daripada sedikit kos perniagaan yang boleh meninggalkan
       },
     },
   },
+  {
+    slug: "building-customer-loyalty-and-repeat-business-in-malaysia",
+    title: "Building Customer Loyalty and Repeat Business in Malaysia: Referrals, Memberships, and Feedback",
+    seoTitle: "Customer Loyalty and Repeat Business for Malaysian SMEs",
+    seoDescription:
+      "How Malaysian SMEs can win repeat customers: loyalty programmes, memberships, referrals, feedback, responsible messaging and measuring retention.",
+    coverImage: {
+      file: "building-customer-loyalty-and-repeat-business-in-malaysia-cover.webp",
+      mimeType: "image/webp",
+      alt: "A smiling barista in a grey hat and apron serving a customer across a marble cafe counter",
+      altTranslations: {
+        zh: "一位戴灰色帽子、系着围裙的微笑咖啡师隔着大理石咖啡店柜台为顾客服务",
+        ms: "Seorang barista tersenyum bertopi kelabu dan berapron melayan pelanggan di seberang kaunter kafe marmar",
+      },
+    },
+    contentImages: {
+      florist: {
+        file: "building-customer-loyalty-and-repeat-business-in-malaysia-florist.webp",
+        mimeType: "image/webp",
+        alt: "A smiling florist in a black apron talking on her phone while holding a tablet behind a counter with ribbons and tulips",
+        altTranslations: {
+          zh: "一位系着黑色围裙的微笑花艺师在摆有丝带和郁金香的柜台后一边讲电话一边拿着平板电脑",
+          ms: "Seorang penjual bunga tersenyum berapron hitam bercakap di telefon sambil memegang tablet di belakang kaunter dengan reben dan tulip",
+        },
+        after: "Make it easy for a happy customer to come back before you worry about points or discounts.",
+        afterTranslations: {
+          zh: "在操心积分或折扣之前，先让满意的顾客容易再次光临。",
+          ms: "Permudahkan pelanggan yang berpuas hati untuk kembali sebelum anda risau tentang mata atau diskaun.",
+        },
+      },
+    },
+    excerpt:
+      "Winning a new customer usually costs far more than keeping an existing one, yet many small businesses spend nearly all their effort on finding new buyers. This guide shows Malaysian SMEs how to build repeat business through good service, simple loyalty programmes and memberships, referrals, feedback, and responsible messaging on WhatsApp and email, and how to measure whether customers are coming back.",
+    body: `Every business needs new customers, but the ones who already know and trust you are the easiest to sell to. They need less convincing, spend more over time, forgive the occasional mistake, and tell other people about you. A small business with a loyal base is more stable, because it does not have to find all its sales from scratch every month.
+
+Loyalty is not mainly about points and discounts. It is the result of many small experiences: being easy to deal with, keeping promises, remembering people, and fixing problems well. Programmes and incentives can strengthen that, but they cannot replace it.
+
+This is general information, not legal advice. Rules on marketing messages, consent, and personal data, including the data protection law and its amendments, and the terms of messaging platforms, can change. Confirm the current requirements with the official authority or a qualified adviser before you start sending promotional messages.
+
+## 1. Understand why repeat customers matter
+
+### They cost less to win
+You have already earned their trust and paid to acquire them. Encouraging a second and third purchase usually costs far less than advertising to a stranger.
+
+### They tend to spend more
+Customers who have had a good experience are often willing to try more of your range and pay fairly for quality. Our guide on pricing explains why competing only on price is rarely the best route.
+
+### They bring others
+Satisfied customers recommend you to friends and family, and in many Malaysian communities word of mouth remains the most trusted form of marketing.
+
+### They give honest feedback
+Regular customers can tell you what works and what does not, which helps you improve before problems become expensive.
+
+### They stabilise your cash flow
+Predictable repeat sales make planning easier. Our guide on cash flow explains why steady income matters.
+
+### Know your numbers
+Work out roughly what share of your sales comes from returning customers, and what an average customer is worth over a year. These numbers tell you how much effort loyalty deserves.
+
+## 2. Get the basics of service right
+
+Make it easy for a happy customer to come back before you worry about points or discounts. If service is slow, staff are unfriendly, or products are inconsistent, no loyalty scheme will fix it.
+
+### Be consistent
+Customers return for reliable quality, the same standard every visit or order. Write down your standards and train staff to follow them.
+
+### Be easy to reach and easy to buy from
+Keep accurate opening hours, respond to messages promptly, make ordering and payment simple, and offer the payment methods your customers like. Our guide on accepting digital payments explains the options.
+
+### Remember people
+Learn names, regular orders, and preferences. A simple note in a notebook or phone can help staff greet customers by name and suggest what they usually enjoy.
+
+### Fix problems quickly and generously
+How you handle a complaint often decides whether a customer returns. Our guide on customer complaints and consumer rights explains how to respond well.
+
+### Deliver on promises
+Late deliveries, wrong orders, and broken promises quietly drive customers away. Under-promise and over-deliver where you can.
+
+### Say thank you
+A genuine thank-you, a small extra, or a handwritten note costs little and is remembered.
+
+## 3. Design a simple loyalty programme
+
+### Start with the goal
+Decide what you want customers to do, such as visit more often, spend a little more per visit, or try a new product. The reward should encourage that behaviour.
+
+### Keep it simple
+A stamp card, a point system, or a free item after a set number of purchases is easy to understand and easy for staff to run. Complicated rules put people off.
+
+### Make the reward worth earning but affordable
+Work out the real cost of the reward as a share of sales, and make sure margins can bear it. Our guide on pricing explains how to check margins before you offer discounts.
+
+### Reward more than spending
+You can also reward referrals, reviews, birthdays, or trying new items, which builds relationships and not just sales.
+
+### Choose a method that fits
+Paper cards suit small shops, while phone-based systems and apps can track purchases automatically and make it easier to reach customers. Choose a tool that staff can use quickly at the counter and that keeps customer data secure.
+
+### Be fair and clear
+State how rewards are earned, how long they last, and any limits, in writing, so there are no arguments. Be honest in how you describe offers. Our guide on contracts and terms explains how to write clear terms.
+
+## 4. Consider memberships, subscriptions, and repeat-order options
+
+### Memberships
+A paid or free membership can give regular customers priority booking, special pricing, or early access. It works best when the benefits are clearly valuable and you can deliver them consistently.
+
+### Subscriptions and regular orders
+For products that people use regularly, such as coffee, flowers, meals, or supplies, offering a regular delivery or a prepaid bundle can lock in repeat sales and improve cash flow.
+
+### Packages and prepaid credit
+Service businesses, such as salons, tutors, and cleaners, can offer packages of sessions at a small discount. Be clear about validity, refunds, and what happens if the customer cannot use them.
+
+### Handle prepaid money carefully
+Money received in advance creates an obligation to deliver. Keep good records, honour what you sell, and consider how the business would meet its promises if something went wrong. Our guide on bookkeeping basics explains how to record this.
+
+### Check the legal side
+Terms for memberships and prepaid offers should be fair and clear, and consumer protection rules apply. Confirm the current requirements before you launch.
+
+## 5. Use referrals and word of mouth
+
+### Ask at the right moment
+Ask happy customers to recommend you right after a good experience, such as a compliment or a successful delivery. A simple, friendly request works better than a formal one.
+
+### Make it easy to share
+Give customers something to share, such as a card, a link, or a short message they can forward to friends.
+
+### Reward both sides
+A small benefit for the person who refers and the new customer encourages sharing, for example a discount for both. Make sure the reward does not damage your margins.
+
+### Encourage honest reviews
+Ask for reviews on the platforms your customers use, and reply to them politely. Never write or buy fake reviews. Our guide on getting found online and our guide on social media marketing explain how reviews and profiles help new customers trust you.
+
+### Show real customers, with permission
+Photos and testimonials are powerful, but get the customer's permission before you use their name, photo, or words, and respect their privacy.
+
+> Loyalty is not something you hand out with a stamp card. It is what customers feel after dozens of small, reliable experiences with your business. The programme only amplifies it.
+
+## 6. Collect feedback and act on it
+
+### Ask simple questions
+A short question after a purchase, such as how it went and what could be better, gives more useful answers than a long survey. Use forms, messages, or a quick word at the counter.
+
+### Listen to complaints as data
+Each complaint shows where the experience fails. Keep a simple log and look for patterns, such as the same product or the same step causing issues.
+
+### Close the loop
+When a customer gives feedback, thank them and tell them what you did about it. Customers who see that you listen are more likely to stay.
+
+### Talk to your best customers
+Ask your most loyal customers why they come back and what they value. Their answers show you what to protect and promote.
+
+### Train staff to hear and report
+Staff hear comments every day. Encourage them to share what they hear, and act on the useful ideas.
+
+### Do not argue with feedback
+Even unfair feedback tells you how someone experienced your business. Respond calmly and focus on what you can improve.
+
+## 7. Message customers responsibly, and measure retention
+
+### Get consent before you send marketing
+If you collect phone numbers or emails for promotions, tell people clearly what you will use them for and get their agreement. Data protection law applies to personal data collected in commercial transactions, and rules on consent and marketing may be updated, so check the current requirements. Our guide on personal data protection explains your duties.
+
+### Make it easy to opt out
+Give every recipient a simple way to stop receiving messages, and honour requests promptly. Do not add people to broadcast groups without their consent, and avoid buying contact lists.
+
+### Respect the platform's rules
+Messaging apps have their own policies on promotional messages, and unofficial tools can lead to accounts being blocked. Use the platform's official business features where possible, and review their terms.
+
+### Send useful messages, not noise
+Share things customers care about, such as new arrivals, appointment reminders, order updates, and genuine offers. Too many messages push people to unsubscribe.
+
+### Win back lapsed customers
+Look for customers who have not returned in a while, and send a friendly, personal message, perhaps with a small incentive, asking if everything is fine.
+
+### Protect customer data
+Store contact details securely, limit who can see them, and delete what you no longer need. Our guide on cybersecurity explains basic protections.
+
+### Measure what matters
+Track the share of sales from repeat customers, how often people return, the average spend per visit, referral numbers, and review scores. Compare month by month, and adjust.
+
+If you need a marketing helper, a developer to set up a simple loyalty system, or an adviser on data protection, you can [browse the directory](/en) for local professionals, and [creating a free business listing](/en/signup) helps new customers find your business, so that you can turn them into regulars.
+
+## Common mistakes Malaysian SMEs make with customer loyalty
+
+- **Offering rewards before fixing service.** A loyalty card cannot compensate for slow, inconsistent, or unfriendly service.
+- **Giving away discounts that margins cannot afford.** Rewards must be costed, or you can grow sales while shrinking profit.
+- **Messaging people without consent.** Unwanted promotions annoy customers and can breach data protection rules.
+- **Collecting feedback and doing nothing.** Customers who are asked but never see any change stop bothering to answer.
+
+## Where to start
+
+- **This week:** Estimate what share of your sales comes from returning customers, and ask five regular customers why they keep coming back.
+- **Next:** Fix the biggest service gap you hear about, and write down your standards for staff.
+- **Then:** Launch one simple loyalty offer or referral reward, costed against your margins, and explain it clearly.
+- **Each month:** Review repeat rates and feedback, tidy your customer contact list, and thank your best customers.
+
+Loyal customers are built slowly, one good experience at a time. Treat each purchase as the start of a relationship, and your best customers will keep coming back.`,
+    faqs: [
+      {
+        question: "Why are repeat customers more valuable than new ones?",
+        answer:
+          "They cost less to win, tend to spend more over time, forgive occasional mistakes, give honest feedback, and recommend you to others. A base of repeat customers also makes sales and cash flow more predictable.",
+      },
+      {
+        question: "What is the simplest loyalty programme for a small shop?",
+        answer:
+          "A stamp card or point system that gives a free item or small discount after a set number of purchases. Keep the rules simple, cost the reward against your margins, and make sure staff can run it quickly at the counter.",
+      },
+      {
+        question: "Do I need an app or software for loyalty?",
+        answer:
+          "Not necessarily. Paper cards work for many small shops. Phone-based systems can track purchases and help you reach customers, but choose a tool that staff can use quickly and that keeps customer data secure.",
+      },
+      {
+        question: "How can I get more referrals?",
+        answer:
+          "Ask happy customers right after a good experience, make it easy to share with a card or link, and consider a small reward for both the person who refers and the new customer. Never write or buy fake reviews.",
+      },
+      {
+        question: "Can I send promotions by WhatsApp or email?",
+        answer:
+          "Only with care. Data protection law applies to personal data collected in commercial transactions, and the rules and platform terms can change. Get clear consent, make opting out easy, avoid buying contact lists, and check the current requirements.",
+      },
+      {
+        question: "How do I get lapsed customers back?",
+        answer:
+          "Look for customers who have not returned in a while and send a friendly, personal message asking if everything is fine, perhaps with a small incentive. Learn from any reason they give for leaving.",
+      },
+      {
+        question: "How should I handle prepaid packages and memberships?",
+        answer:
+          "Set clear and fair terms on validity, refunds, and what happens if the customer cannot use them. Money received in advance creates an obligation to deliver, so keep good records and confirm current consumer protection requirements.",
+      },
+      {
+        question: "How do I measure customer loyalty?",
+        answer:
+          "Track the share of sales from repeat customers, how often people return, average spend per visit, referral numbers, and review scores. Compare month by month and adjust what you do.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "在马来西亚建立顾客忠诚度和回头客生意：转介绍、会员制与反馈",
+        excerpt:
+          "赢得一位新顾客的成本通常远高于留住一位现有顾客，然而许多小企业几乎把所有精力都花在寻找新买家上。本指南向马来西亚中小企业说明如何通过良好的服务、简单的忠诚计划和会员制、转介绍、反馈，以及在 WhatsApp 和电邮上负责任的信息发送来建立回头客生意，并说明如何衡量顾客是否回头。",
+        body: `每家企业都需要新顾客，但那些已经认识并信任您的人，是最容易卖东西给的。他们需要较少的说服，随时间花得更多，会原谅偶尔的失误，并向别人谈起您。拥有忠实客群的小企业更稳定，因为它不必每个月都从零开始寻找所有销售。
+
+忠诚度主要不在于积分和折扣。它是许多小体验的结果：易于打交道、信守承诺、记得别人，以及妥善解决问题。计划和奖励可以加强这一点，但无法取代它。
+
+以下仅为一般资讯，并非法律意见。关于营销信息、同意和个人资料的规定，包括数据保护法律及其修订，以及信息平台的条款，可能会变动。在开始发送促销信息之前，请向官方机构或合格的顾问确认现行要求。
+
+## 1. 了解回头客为什么重要
+
+### 他们的获取成本较低
+您已经赢得了他们的信任，也已经为获取他们付出了成本。鼓励第二次和第三次购买，通常比向陌生人打广告便宜得多。
+
+### 他们倾向于花得更多
+有过良好体验的顾客，往往愿意尝试您更多的产品，并为品质付出合理的价钱。我们关于定价的指南说明了为什么只靠价格竞争很少是最佳途径。
+
+### 他们会带来别人
+满意的顾客会向亲友推荐您，在许多马来西亚社群中，口碑仍然是最受信任的营销方式。
+
+### 他们会给出诚实的反馈
+常客可以告诉您什么有效、什么无效，帮助您在问题变得昂贵之前改进。
+
+### 他们让您的现金流更稳定
+可预测的回头销售让规划更容易。我们关于现金流的指南说明了为什么稳定的收入很重要。
+
+### 了解您的数字
+大致算出您的销售有多大比例来自回头客，以及一位普通顾客一年的价值。这些数字告诉您忠诚度值得投入多少精力。
+
+## 2. 把服务的基本功做好
+
+在操心积分或折扣之前，先让满意的顾客容易再次光临。如果服务缓慢、员工不友善，或产品不稳定，任何忠诚计划都无法补救。
+
+### 保持一致
+顾客为可靠的品质而回头，也就是每次光顾或订购都是同样的水准。请写下您的标准，并培训员工遵守。
+
+### 容易联系、容易购买
+保持准确的营业时间，及时回复信息，让订购和付款简单，并提供顾客喜欢的付款方式。我们关于接受数码付款的指南说明了各种选择。
+
+### 记住别人
+记住名字、常点的东西和偏好。笔记本或手机里的一条简单笔记，可以帮助员工叫出顾客的名字，并推荐他们通常喜欢的东西。
+
+### 迅速而大方地解决问题
+您如何处理投诉，往往决定顾客是否回头。我们关于顾客投诉和消费者权利的指南说明了如何妥善回应。
+
+### 兑现承诺
+迟到的送货、错误的订单和落空的承诺，会悄悄地把顾客赶走。在可能的情况下，少承诺、多兑现。
+
+### 说声谢谢
+一句真诚的谢谢、一点小额外的赠送或一张手写的字条，成本很低，却会被记住。
+
+## 3. 设计简单的忠诚计划
+
+### 从目标开始
+决定您希望顾客做什么，例如更常光顾、每次多花一点，或尝试新产品。奖励应该鼓励这种行为。
+
+### 保持简单
+集章卡、积分制度，或在购买一定次数之后赠送一份免费商品，容易理解，员工也容易执行。复杂的规则会让人却步。
+
+### 让奖励值得争取，同时负担得起
+算出奖励占销售额的实际成本，并确保利润率承受得起。我们关于定价的指南说明了如何在提供折扣之前检查利润率。
+
+### 奖励不只是消费
+您也可以奖励转介绍、评价、生日或尝试新品，这建立的是关系，而不仅仅是销售。
+
+### 选择合适的方式
+纸质卡适合小店，而基于手机的系统和应用程序可以自动追踪购买并更容易联系顾客。请选择员工能在柜台快速使用、并能保障顾客资料安全的工具。
+
+### 公平而清晰
+以书面说明奖励如何获得、有效期多久以及任何限制，避免争执。描述优惠时要诚实。我们关于合约与条款的指南说明了如何撰写清晰的条款。
+
+## 4. 考虑会员制、订阅和重复订购选项
+
+### 会员制
+收费或免费的会员制可以给常客优先预约、特别价格或提前购买的权益。当益处明显有价值、而您又能稳定兑现时，它的效果最好。
+
+### 订阅和定期订单
+对于人们定期使用的产品，例如咖啡、鲜花、餐点或用品，提供定期送货或预付套餐，可以锁定回头销售并改善现金流。
+
+### 套餐和预付额度
+美容院、家教和清洁服务等服务型企业，可以提供小幅折扣的多次服务套餐。请清楚说明有效期、退款，以及顾客无法使用时会怎样。
+
+### 谨慎处理预付款项
+预先收到的钱形成交付的义务。请保存良好的记录、兑现您所出售的内容，并考虑万一出了问题，企业将如何履行承诺。我们关于簿记基础的指南说明了如何记录。
+
+### 查核法律层面
+会员制和预付优惠的条款应该公平而清晰，消费者保护规定适用。在推出之前，请确认现行要求。
+
+## 5. 运用转介绍和口碑
+
+### 在适当的时机请求
+在一次愉快的体验之后，例如收到赞美或成功送货之后，立刻请满意的顾客推荐您。简单、友善的请求比正式的更有效。
+
+### 让分享变得容易
+给顾客可以分享的东西，例如一张卡片、一个链接，或一则可以转发给朋友的简短信息。
+
+### 奖励双方
+给推荐人和新顾客一点小小的好处能鼓励分享，例如双方都获得折扣。请确保奖励不会损害您的利润率。
+
+### 鼓励诚实的评价
+请顾客在他们使用的平台上留下评价，并礼貌地回复。绝不要自己撰写或购买虚假评价。我们关于提升网络曝光度的指南和关于社交媒体营销的指南说明了评价和专页如何帮助新顾客信任您。
+
+### 经许可后展示真实顾客
+照片和推荐语很有力量，但在使用顾客的名字、照片或言论之前，请先取得他们的许可，并尊重他们的隐私。
+
+> 忠诚度不是靠集章卡发出去的。它是顾客在与您的企业有过几十次细小而可靠的体验之后的感受。计划只是把它放大。
+
+## 6. 收集反馈并采取行动
+
+### 问简单的问题
+购买后的一个简短问题，例如感觉如何、哪里可以更好，比冗长的问卷得到更有用的答案。可以使用表格、信息，或在柜台快速问一句。
+
+### 把投诉当作数据
+每一项投诉都显示体验在哪里出了问题。请保留一份简单的日志并寻找规律，例如同一种产品或同一个环节反复出问题。
+
+### 形成闭环
+当顾客给出反馈时，感谢他们，并告诉他们您为此做了什么。看到您在倾听的顾客更有可能留下来。
+
+### 与您最好的顾客交谈
+询问您最忠实的顾客为什么回头、看重什么。他们的答案会告诉您该保护和宣传什么。
+
+### 培训员工去倾听和反映
+员工每天都会听到意见。鼓励他们分享所听到的，并对有用的想法采取行动。
+
+### 不要与反馈争辩
+即使是不公平的反馈，也告诉您某人是如何体验您的企业的。请冷静回应，并专注于您能改进的地方。
+
+## 7. 负责任地向顾客发送信息并衡量留存
+
+### 在发送营销信息之前取得同意
+如果您为促销而收集电话号码或电邮，请清楚告诉人们您将如何使用，并取得他们的同意。数据保护法律适用于在商业交易中收集的个人资料，而关于同意和营销的规定可能会更新，所以请查核现行要求。我们关于个人资料保护的指南说明了您的责任。
+
+### 让退订变得容易
+给每位收件人一个简单的停止接收信息的方法，并迅速处理请求。不要未经同意就把人加入广播群组，也要避免购买联络名单。
+
+### 尊重平台的规则
+信息应用程序对促销信息有自己的政策，使用非官方工具可能导致账号被封锁。请尽可能使用平台官方的商业功能，并查看其条款。
+
+### 发送有用的信息，而不是噪音
+分享顾客关心的事，例如新品到货、预约提醒、订单更新和真正的优惠。信息太多会促使人们退订。
+
+### 赢回流失的顾客
+找出一段时间没有回头的顾客，发送友善、个人化的信息，也许附上小小的奖励，问问一切是否都好。
+
+### 保护顾客资料
+安全地存储联络资料，限制谁能查看，并删除您不再需要的内容。我们关于网络安全的指南说明了基本的保护措施。
+
+### 衡量重要的指标
+追踪来自回头客的销售占比、人们回头的频率、每次光顾的平均消费、转介绍数量和评价分数。逐月比较并作出调整。
+
+如果您需要营销帮手、协助建立简单忠诚系统的开发人员，或数据保护顾问，可以[浏览名录](/zh)寻找本地专业人士，而[创建免费的企业列表](/zh/signup)可以帮助新顾客找到您的企业，让您把他们变成常客。
+
+## 马来西亚中小企业在顾客忠诚度上常犯的错误
+
+- **在修正服务之前就提供奖励。**忠诚卡无法弥补缓慢、不稳定或不友善的服务。
+- **送出利润率负担不起的折扣。**奖励必须核算成本，否则您可能销售增长而利润缩水。
+- **未经同意就向人发信息。**不受欢迎的促销令顾客厌烦，并可能违反数据保护规定。
+- **收集了反馈却什么都不做。**被询问却从未看到改变的顾客，会不再费心回答。
+
+## 从哪里开始
+
+- **本周：**估算您的销售有多大比例来自回头客，并询问五位常客为什么一直光顾。
+- **接着：**解决您听到的最大的服务缺口，并为员工写下您的标准。
+- **然后：**推出一项简单的忠诚优惠或转介绍奖励，按利润率核算成本，并清楚说明。
+- **每月：**检视回头率和反馈，整理您的顾客联络名单，并感谢您最好的顾客。
+
+忠实的顾客是慢慢建立起来的，一次良好的体验接着一次。把每一笔购买当作一段关系的开始，您最好的顾客就会不断回来。`,
+        faqs: [
+          {
+            question: "为什么回头客比新顾客更有价值？",
+            answer:
+              "他们的获取成本较低，随时间倾向于花得更多，会原谅偶尔的失误，给出诚实的反馈，并向别人推荐您。回头客群也让销售和现金流更可预测。",
+          },
+          {
+            question: "小店最简单的忠诚计划是什么？",
+            answer:
+              "集章卡或积分制度，在购买一定次数之后赠送一份免费商品或小额折扣。保持规则简单，按利润率核算奖励成本，并确保员工能在柜台快速执行。",
+          },
+          {
+            question: "忠诚计划需要应用程序或软件吗？",
+            answer:
+              "不一定。纸质卡适用于许多小店。基于手机的系统可以追踪购买并帮助您联系顾客，但请选择员工能快速使用、并能保障顾客资料安全的工具。",
+          },
+          {
+            question: "如何获得更多转介绍？",
+            answer:
+              "在一次愉快的体验之后立刻请满意的顾客推荐，通过卡片或链接让分享变得容易，并考虑给推荐人和新顾客双方一点小奖励。绝不要撰写或购买虚假评价。",
+          },
+          {
+            question: "我可以通过 WhatsApp 或电邮发送促销吗？",
+            answer:
+              "只能谨慎地进行。数据保护法律适用于在商业交易中收集的个人资料，而规定和平台条款可能会变动。请取得明确的同意，让退订变得容易，避免购买联络名单，并查核现行要求。",
+          },
+          {
+            question: "如何赢回流失的顾客？",
+            answer:
+              "找出一段时间没有回头的顾客，发送友善、个人化的信息问问一切是否都好，也许附上小小的奖励。并从他们给出的离开原因中学习。",
+          },
+          {
+            question: "我应该如何处理预付套餐和会员制？",
+            answer:
+              "就有效期、退款，以及顾客无法使用时会怎样订立清晰公平的条款。预先收到的钱形成交付的义务，所以请保存良好的记录，并确认现行的消费者保护要求。",
+          },
+          {
+            question: "如何衡量顾客忠诚度？",
+            answer:
+              "追踪来自回头客的销售占比、人们回头的频率、每次光顾的平均消费、转介绍数量和评价分数。逐月比较并调整您的做法。",
+          },
+        ],
+      },
+      ms: {
+        title: "Membina Kesetiaan Pelanggan dan Perniagaan Berulang di Malaysia: Rujukan, Keahlian dan Maklum Balas",
+        excerpt:
+          "Memenangi pelanggan baharu biasanya berkos jauh lebih tinggi daripada mengekalkan pelanggan sedia ada, namun ramai perniagaan kecil menumpukan hampir semua usaha untuk mencari pembeli baharu. Panduan ini menunjukkan kepada PKS Malaysia cara membina perniagaan berulang melalui perkhidmatan yang baik, program kesetiaan dan keahlian yang mudah, rujukan, maklum balas, dan pemesejan yang bertanggungjawab di WhatsApp dan e-mel, serta cara mengukur sama ada pelanggan kembali.",
+        body: `Setiap perniagaan memerlukan pelanggan baharu, tetapi mereka yang sudah mengenali dan mempercayai anda adalah yang paling mudah untuk dijual. Mereka memerlukan kurang pujukan, membelanjakan lebih dari semasa ke semasa, memaafkan kesilapan sekali-sekala, dan bercakap tentang anda kepada orang lain. Perniagaan kecil dengan pangkalan setia lebih stabil, kerana ia tidak perlu mencari semua jualan dari awal setiap bulan.
+
+Kesetiaan bukan terutamanya tentang mata dan diskaun. Ia hasil banyak pengalaman kecil: mudah berurusan, menepati janji, mengingati orang, dan menyelesaikan masalah dengan baik. Program dan insentif boleh mengukuhkannya, tetapi tidak dapat menggantikannya.
+
+Ini ialah maklumat am, bukan nasihat undang-undang. Peraturan tentang mesej pemasaran, persetujuan dan data peribadi, termasuk undang-undang perlindungan data dan pindaannya, serta terma platform pemesejan, boleh berubah. Sahkan keperluan semasa dengan pihak berkuasa rasmi atau penasihat yang layak sebelum anda mula menghantar mesej promosi.
+
+## 1. Fahami mengapa pelanggan berulang penting
+
+### Mereka berkos lebih rendah untuk dimenangi
+Anda sudah memperoleh kepercayaan mereka dan telah membayar untuk mendapatkan mereka. Menggalakkan pembelian kedua dan ketiga biasanya berkos jauh lebih rendah daripada mengiklankan kepada orang asing.
+
+### Mereka cenderung membelanjakan lebih
+Pelanggan yang mempunyai pengalaman baik sering bersedia mencuba lebih banyak julat anda dan membayar dengan wajar untuk kualiti. Panduan kami tentang penetapan harga menerangkan mengapa bersaing hanya pada harga jarang menjadi laluan terbaik.
+
+### Mereka membawa orang lain
+Pelanggan yang berpuas hati mengesyorkan anda kepada rakan dan keluarga, dan dalam banyak komuniti Malaysia, dari mulut ke mulut kekal sebagai bentuk pemasaran yang paling dipercayai.
+
+### Mereka memberi maklum balas yang jujur
+Pelanggan tetap boleh memberitahu anda apa yang berjaya dan apa yang tidak, yang membantu anda menambah baik sebelum masalah menjadi mahal.
+
+### Mereka menstabilkan aliran tunai anda
+Jualan berulang yang boleh diramal memudahkan perancangan. Panduan kami tentang aliran tunai menerangkan mengapa pendapatan stabil penting.
+
+### Ketahui angka anda
+Kira kira-kira berapa bahagian jualan anda datang daripada pelanggan yang kembali, dan berapa nilai pelanggan purata sepanjang setahun. Angka ini memberitahu anda berapa banyak usaha yang wajar untuk kesetiaan.
+
+## 2. Betulkan asas perkhidmatan
+
+Permudahkan pelanggan yang berpuas hati untuk kembali sebelum anda risau tentang mata atau diskaun. Jika perkhidmatan perlahan, kakitangan tidak mesra, atau produk tidak konsisten, tiada skim kesetiaan yang dapat membetulkannya.
+
+### Bersikap konsisten
+Pelanggan kembali untuk kualiti yang boleh dipercayai, piawaian yang sama setiap lawatan atau pesanan. Tulis piawaian anda dan latih kakitangan mengikutinya.
+
+### Mudah dihubungi dan mudah dibeli daripada
+Pastikan waktu operasi tepat, balas mesej dengan segera, jadikan pesanan dan bayaran mudah, dan tawarkan kaedah pembayaran yang disukai pelanggan anda. Panduan kami tentang menerima pembayaran digital menerangkan pilihan.
+
+### Ingat orang
+Pelajari nama, pesanan biasa dan keutamaan. Nota mudah dalam buku nota atau telefon boleh membantu kakitangan menyapa pelanggan dengan nama dan mencadangkan apa yang biasanya mereka nikmati.
+
+### Betulkan masalah dengan cepat dan murah hati
+Cara anda mengendalikan aduan sering menentukan sama ada pelanggan kembali. Panduan kami tentang aduan pelanggan dan hak pengguna menerangkan cara membalas dengan baik.
+
+### Tunaikan janji
+Penghantaran lewat, pesanan salah dan janji yang dimungkiri secara senyap menghalau pelanggan. Janji kurang dan tunaikan lebih jika boleh.
+
+### Ucapkan terima kasih
+Terima kasih yang ikhlas, tambahan kecil, atau nota tulisan tangan berkos rendah dan diingati.
+
+## 3. Reka bentuk program kesetiaan yang mudah
+
+### Mulakan dengan matlamat
+Tentukan apa yang anda mahu pelanggan lakukan, seperti melawat lebih kerap, membelanjakan sedikit lebih setiap lawatan, atau mencuba produk baharu. Ganjaran patut menggalakkan tingkah laku itu.
+
+### Pastikan ia mudah
+Kad cop, sistem mata, atau item percuma selepas bilangan pembelian tertentu mudah difahami dan mudah dijalankan oleh kakitangan. Peraturan rumit menyebabkan orang berpatah balik.
+
+### Jadikan ganjaran berbaloi tetapi mampu
+Kira kos sebenar ganjaran sebagai bahagian jualan, dan pastikan margin mampu menanggungnya. Panduan kami tentang penetapan harga menerangkan cara menyemak margin sebelum anda menawarkan diskaun.
+
+### Ganjari lebih daripada perbelanjaan
+Anda juga boleh mengganjari rujukan, ulasan, hari lahir, atau mencuba item baharu, yang membina hubungan dan bukan hanya jualan.
+
+### Pilih kaedah yang sesuai
+Kad kertas sesuai untuk kedai kecil, manakala sistem berasaskan telefon dan aplikasi boleh menjejak pembelian secara automatik dan memudahkan menjangkau pelanggan. Pilih alat yang boleh digunakan kakitangan dengan pantas di kaunter dan yang memastikan data pelanggan selamat.
+
+### Bersikap adil dan jelas
+Nyatakan bagaimana ganjaran diperoleh, berapa lama ia bertahan, dan sebarang had, secara bertulis, supaya tiada pertengkaran. Jujurlah dalam cara anda menerangkan tawaran. Panduan kami tentang kontrak dan terma menerangkan cara menulis terma yang jelas.
+
+## 4. Pertimbangkan keahlian, langganan dan pilihan pesanan berulang
+
+### Keahlian
+Keahlian berbayar atau percuma boleh memberi pelanggan tetap tempahan keutamaan, harga istimewa atau akses awal. Ia paling berkesan apabila faedahnya jelas bernilai dan anda boleh menyampaikannya secara konsisten.
+
+### Langganan dan pesanan tetap
+Untuk produk yang digunakan orang secara berkala, seperti kopi, bunga, makanan atau bekalan, menawarkan penghantaran berkala atau pakej prabayar boleh mengunci jualan berulang dan memperbaiki aliran tunai.
+
+### Pakej dan kredit prabayar
+Perniagaan perkhidmatan, seperti salun, tutor dan pembersih, boleh menawarkan pakej sesi dengan diskaun kecil. Jelaskan tentang kesahan, bayaran balik, dan apa yang berlaku jika pelanggan tidak dapat menggunakannya.
+
+### Kendalikan wang prabayar dengan berhati-hati
+Wang yang diterima lebih awal mewujudkan kewajipan untuk menyampaikan. Simpan rekod yang baik, tunaikan apa yang anda jual, dan pertimbangkan bagaimana perniagaan akan menunaikan janjinya jika berlaku kesilapan. Panduan kami tentang asas simpan kira menerangkan cara merekodkannya.
+
+### Semak sudut undang-undang
+Terma untuk keahlian dan tawaran prabayar harus adil dan jelas, dan peraturan perlindungan pengguna terpakai. Sahkan keperluan semasa sebelum anda melancarkannya.
+
+## 5. Gunakan rujukan dan dari mulut ke mulut
+
+### Minta pada saat yang betul
+Minta pelanggan yang berpuas hati mengesyorkan anda sejurus selepas pengalaman baik, seperti pujian atau penghantaran yang berjaya. Permintaan yang mudah dan mesra lebih berkesan daripada yang formal.
+
+### Permudahkan perkongsian
+Berikan pelanggan sesuatu untuk dikongsi, seperti kad, pautan, atau mesej pendek yang boleh mereka majukan kepada rakan.
+
+### Ganjari kedua-dua pihak
+Faedah kecil untuk orang yang merujuk dan pelanggan baharu menggalakkan perkongsian, contohnya diskaun untuk kedua-duanya. Pastikan ganjaran tidak merosakkan margin anda.
+
+### Galakkan ulasan yang jujur
+Minta ulasan di platform yang digunakan pelanggan anda, dan balasnya dengan sopan. Jangan sekali-kali menulis atau membeli ulasan palsu. Panduan kami tentang ditemui dalam talian dan panduan kami tentang pemasaran media sosial menerangkan bagaimana ulasan dan profil membantu pelanggan baharu mempercayai anda.
+
+### Tunjukkan pelanggan sebenar, dengan kebenaran
+Foto dan testimoni sangat berkesan, tetapi dapatkan kebenaran pelanggan sebelum anda menggunakan nama, foto atau kata-kata mereka, dan hormati privasi mereka.
+
+> Kesetiaan bukan sesuatu yang diberikan dengan kad cop. Ia apa yang dirasai pelanggan selepas berpuluh-puluh pengalaman kecil yang boleh dipercayai dengan perniagaan anda. Program hanya memperkuatkannya.
+
+## 6. Kumpul maklum balas dan bertindak
+
+### Tanya soalan yang mudah
+Soalan pendek selepas pembelian, seperti bagaimana ia berjalan dan apa yang boleh diperbaiki, memberi jawapan yang lebih berguna daripada tinjauan panjang. Gunakan borang, mesej, atau perkataan ringkas di kaunter.
+
+### Dengar aduan sebagai data
+Setiap aduan menunjukkan di mana pengalaman gagal. Simpan log yang mudah dan cari corak, seperti produk atau langkah yang sama menyebabkan isu.
+
+### Tutup gelung
+Apabila pelanggan memberi maklum balas, ucapkan terima kasih dan beritahu mereka apa yang anda lakukan mengenainya. Pelanggan yang melihat bahawa anda mendengar lebih berkemungkinan kekal.
+
+### Bercakap dengan pelanggan terbaik anda
+Tanya pelanggan paling setia anda mengapa mereka kembali dan apa yang mereka hargai. Jawapan mereka menunjukkan apa yang perlu dilindungi dan dipromosikan.
+
+### Latih kakitangan untuk mendengar dan melaporkan
+Kakitangan mendengar komen setiap hari. Galakkan mereka berkongsi apa yang mereka dengar, dan bertindak atas idea yang berguna.
+
+### Jangan bertengkar dengan maklum balas
+Walaupun maklum balas yang tidak adil memberitahu anda bagaimana seseorang mengalami perniagaan anda. Balas dengan tenang dan tumpukan pada apa yang boleh anda perbaiki.
+
+## 7. Mesej pelanggan dengan bertanggungjawab, dan ukur pengekalan
+
+### Dapatkan persetujuan sebelum anda menghantar pemasaran
+Jika anda mengumpul nombor telefon atau e-mel untuk promosi, beritahu orang dengan jelas bagaimana anda akan menggunakannya dan dapatkan persetujuan mereka. Undang-undang perlindungan data terpakai kepada data peribadi yang dikumpul dalam transaksi komersial, dan peraturan tentang persetujuan dan pemasaran mungkin dikemas kini, jadi semak keperluan semasa. Panduan kami tentang perlindungan data peribadi menerangkan tanggungjawab anda.
+
+### Permudahkan untuk memilih keluar
+Berikan setiap penerima cara mudah untuk berhenti menerima mesej, dan penuhi permintaan dengan segera. Jangan tambah orang ke dalam kumpulan siaran tanpa persetujuan mereka, dan elakkan membeli senarai kenalan.
+
+### Hormati peraturan platform
+Aplikasi pemesejan mempunyai dasar sendiri tentang mesej promosi, dan alat tidak rasmi boleh menyebabkan akaun disekat. Gunakan ciri perniagaan rasmi platform jika boleh, dan semak termanya.
+
+### Hantar mesej yang berguna, bukan bunyi bising
+Kongsi perkara yang pelanggan ambil berat, seperti ketibaan baharu, peringatan temu janji, kemas kini pesanan dan tawaran tulen. Terlalu banyak mesej mendorong orang berhenti melanggan.
+
+### Menangi semula pelanggan yang lama tidak kembali
+Cari pelanggan yang tidak kembali sejak sekian lama, dan hantar mesej mesra dan peribadi, mungkin dengan insentif kecil, bertanya sama ada semuanya baik.
+
+### Lindungi data pelanggan
+Simpan butiran hubungan dengan selamat, hadkan siapa yang boleh melihatnya, dan padam apa yang tidak lagi anda perlukan. Panduan kami tentang keselamatan siber menerangkan perlindungan asas.
+
+### Ukur apa yang penting
+Jejaki bahagian jualan daripada pelanggan berulang, berapa kerap orang kembali, perbelanjaan purata setiap lawatan, bilangan rujukan dan skor ulasan. Bandingkan bulan demi bulan, dan laraskan.
+
+Jika anda memerlukan pembantu pemasaran, pembangun untuk menyediakan sistem kesetiaan yang mudah, atau penasihat tentang perlindungan data, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pelanggan baharu menemui perniagaan anda, supaya anda boleh menjadikan mereka pelanggan tetap.
+
+## Kesilapan lazim PKS Malaysia dengan kesetiaan pelanggan
+
+- **Menawarkan ganjaran sebelum membetulkan perkhidmatan.** Kad kesetiaan tidak dapat menggantikan perkhidmatan yang perlahan, tidak konsisten atau tidak mesra.
+- **Memberi diskaun yang margin tidak mampu tanggung.** Ganjaran mesti dikira kosnya, atau anda boleh menambah jualan sambil mengecilkan keuntungan.
+- **Memesej orang tanpa persetujuan.** Promosi yang tidak dikehendaki menjengkelkan pelanggan dan boleh melanggar peraturan perlindungan data.
+- **Mengumpul maklum balas dan tidak melakukan apa-apa.** Pelanggan yang ditanya tetapi tidak pernah melihat perubahan berhenti menjawab.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Anggar bahagian jualan anda daripada pelanggan yang kembali, dan tanya lima pelanggan tetap mengapa mereka terus datang.
+- **Seterusnya:** Betulkan jurang perkhidmatan terbesar yang anda dengar, dan tulis piawaian anda untuk kakitangan.
+- **Kemudian:** Lancarkan satu tawaran kesetiaan atau ganjaran rujukan yang mudah, dikira kosnya terhadap margin anda, dan terangkan dengan jelas.
+- **Setiap bulan:** Semak kadar berulang dan maklum balas, kemaskan senarai kenalan pelanggan anda, dan ucapkan terima kasih kepada pelanggan terbaik anda.
+
+Pelanggan setia dibina perlahan-lahan, satu pengalaman baik pada satu masa. Anggap setiap pembelian sebagai permulaan hubungan, dan pelanggan terbaik anda akan terus kembali.`,
+        faqs: [
+          {
+            question: "Mengapa pelanggan berulang lebih bernilai daripada yang baharu?",
+            answer:
+              "Mereka berkos lebih rendah untuk dimenangi, cenderung membelanjakan lebih dari semasa ke semasa, memaafkan kesilapan sekali-sekala, memberi maklum balas jujur, dan mengesyorkan anda kepada orang lain. Pangkalan pelanggan berulang juga menjadikan jualan dan aliran tunai lebih boleh diramal.",
+          },
+          {
+            question: "Apakah program kesetiaan paling mudah untuk kedai kecil?",
+            answer:
+              "Kad cop atau sistem mata yang memberi item percuma atau diskaun kecil selepas bilangan pembelian tertentu. Pastikan peraturan mudah, kira kos ganjaran terhadap margin anda, dan pastikan kakitangan boleh menjalankannya dengan pantas di kaunter.",
+          },
+          {
+            question: "Adakah saya memerlukan aplikasi atau perisian untuk kesetiaan?",
+            answer:
+              "Tidak semestinya. Kad kertas berfungsi untuk banyak kedai kecil. Sistem berasaskan telefon boleh menjejak pembelian dan membantu anda menjangkau pelanggan, tetapi pilih alat yang boleh digunakan kakitangan dengan pantas dan yang memastikan data pelanggan selamat.",
+          },
+          {
+            question: "Bagaimanakah saya boleh mendapat lebih banyak rujukan?",
+            answer:
+              "Minta pelanggan yang berpuas hati sejurus selepas pengalaman baik, permudahkan perkongsian dengan kad atau pautan, dan pertimbangkan ganjaran kecil untuk kedua-dua orang yang merujuk dan pelanggan baharu. Jangan sekali-kali menulis atau membeli ulasan palsu.",
+          },
+          {
+            question: "Bolehkah saya menghantar promosi melalui WhatsApp atau e-mel?",
+            answer:
+              "Hanya dengan berhati-hati. Undang-undang perlindungan data terpakai kepada data peribadi yang dikumpul dalam transaksi komersial, dan peraturan serta terma platform boleh berubah. Dapatkan persetujuan yang jelas, permudahkan memilih keluar, elakkan membeli senarai kenalan, dan semak keperluan semasa.",
+          },
+          {
+            question: "Bagaimanakah saya menarik balik pelanggan yang lama tidak kembali?",
+            answer:
+              "Cari pelanggan yang tidak kembali sekian lama dan hantar mesej mesra dan peribadi bertanya sama ada semuanya baik, mungkin dengan insentif kecil. Belajar daripada sebarang sebab yang mereka berikan untuk pergi.",
+          },
+          {
+            question: "Bagaimanakah saya patut mengendalikan pakej prabayar dan keahlian?",
+            answer:
+              "Tetapkan terma yang jelas dan adil tentang kesahan, bayaran balik, dan apa yang berlaku jika pelanggan tidak dapat menggunakannya. Wang yang diterima lebih awal mewujudkan kewajipan untuk menyampaikan, jadi simpan rekod yang baik dan sahkan keperluan perlindungan pengguna semasa.",
+          },
+          {
+            question: "Bagaimanakah saya mengukur kesetiaan pelanggan?",
+            answer:
+              "Jejaki bahagian jualan daripada pelanggan berulang, berapa kerap orang kembali, perbelanjaan purata setiap lawatan, bilangan rujukan dan skor ulasan. Bandingkan bulan demi bulan dan laraskan apa yang anda lakukan.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "choosing-accounting-software-for-your-malaysian-sme",
+    title: "Choosing Accounting Software for Your Malaysian SME: Features, Costs, and Switching Over",
+    seoTitle: "Choosing Accounting Software for Your Malaysian SME",
+    seoDescription:
+      "How Malaysian SMEs can choose accounting software: key features, e-invoicing readiness, cloud vs desktop, costs, data migration and your accountant.",
+    coverImage: {
+      file: "choosing-accounting-software-for-your-malaysian-sme-cover.webp",
+      mimeType: "image/webp",
+      alt: "A woman in a white shirt seated at a sunlit window desk using a calculator beside a laptop and a payment terminal",
+      altTranslations: {
+        zh: "一位身穿白衬衫的女士坐在阳光充足的窗边办公桌前，在笔记本电脑和刷卡机旁使用计算器",
+        ms: "Seorang wanita berbaju putih duduk di meja tepi tingkap yang disinari matahari menggunakan kalkulator di sebelah komputer riba dan terminal pembayaran",
+      },
+    },
+    contentImages: {
+      window: {
+        file: "choosing-accounting-software-for-your-malaysian-sme-window.webp",
+        mimeType: "image/webp",
+        alt: "A woman working through a binder of papers with a calculator at a bright window desk, a laptop and a mug beside her",
+        altTranslations: {
+          zh: "一位女士在明亮的窗边办公桌前用计算器核对一本文件夹里的资料，身旁有笔记本电脑和一个马克杯",
+          ms: "Seorang wanita menyemak fail kertas dengan kalkulator di meja tepi tingkap yang terang, dengan komputer riba dan mug di sebelahnya",
+        },
+        after: "Write down what your business must do in its books before you look at a single product demo.",
+        afterTranslations: {
+          zh: "在观看任何一款产品演示之前，先写下您的企业在账务上必须做到什么。",
+          ms: "Tulis apa yang perniagaan anda mesti lakukan dalam buku akaunnya sebelum anda melihat sebarang demo produk.",
+        },
+      },
+    },
+    excerpt:
+      "Moving from spreadsheets and shoeboxes of receipts to proper accounting software can save hours every month, but the wrong choice becomes an expensive habit. This guide shows Malaysian SMEs what to look for, including e-invoicing readiness, tax and payroll support, bank feeds, and reports, how to compare cloud and desktop options and their costs, and how to switch over safely with your accountant.",
+    body: `Many small businesses start with a spreadsheet, a notebook, or a folder of receipts. That works for a while, but as invoices, suppliers, staff, and tax obligations grow, the manual approach starts to cost more than software would: late invoices, missed payments, mistakes, and a stressful scramble at tax time.
+
+Accounting software is not magic, and it does not replace good bookkeeping habits or a good accountant. But the right tool, chosen for the right reasons and used consistently, can give you clearer numbers, faster invoicing, and calmer year-ends.
+
+This is general information, not financial or technology advice. Products, features, prices, and compliance capabilities change often, and information in this guide may be out of date. Confirm what each product currently offers, including e-invoicing and tax features, directly with the vendor and with your accountant before you buy.
+
+## 1. Decide whether you need software, and why
+
+### Signs it is time
+You are issuing many invoices by hand, struggling to know who owes you money, losing receipts, reconciling bank statements by guesswork, or spending your weekends on records. Our guide on bookkeeping basics explains the fundamentals that software should support.
+
+### What software can and cannot do
+It can speed up invoicing, track payments, produce reports, and reduce errors. It cannot fix missing receipts, make decisions for you, or replace the knowledge needed to classify transactions and file taxes properly.
+
+### Compliance is part of the case
+Tax rules such as sales and service tax and e-invoicing requirements affect how invoices are issued and recorded. Software that supports them can reduce manual work and mistakes. See our guide on e-invoicing and our guide on SST registration for the basics.
+
+### Think about the cost of staying manual
+Count the hours you or your staff spend on admin each month, and the cost of errors and late collections. Our guide on collecting late payments explains how better invoicing helps.
+
+### Involve your accountant
+Your accountant or bookkeeper will use the records you produce. Ask what they prefer and what they can support, so that you avoid a tool that makes their job harder.
+
+## 2. List what your business actually needs
+
+Write down what your business must do in its books before you look at a single product demo. A clear list stops you being swayed by features you will never use.
+
+### Core records
+Sales invoices and credit notes, supplier bills, payments received and made, bank accounts, expenses, and a chart of accounts that suits your business.
+
+### Your type of business
+A shop needs stock and point-of-sale links, a service business needs time and project billing, a manufacturer needs costing, and an online seller needs marketplace imports. Match the tool to how you earn money. Our guide on inventory management explains what stock records involve.
+
+### Tax and compliance features
+Check whether the software supports your tax needs, such as sales and service tax, and whether it can handle e-invoice requirements where they apply to you. Ask the vendor to show how this works, and confirm the current position, since requirements and software capabilities change.
+
+### Payroll and statutory contributions
+If you employ staff, decide whether you want payroll in the same system or a separate one, and what statutory contributions and reports it should handle. Our guide on payroll and statutory contributions explains the obligations.
+
+### Reports you rely on
+At minimum, a profit and loss statement, a balance sheet, receivables and payables ageing, and a cash position. Our guide on cash flow explains why the last two matter.
+
+### Number of users and access levels
+Decide who needs access, for example you, a bookkeeper, an accountant, and staff who issue invoices, and what each person should be able to see and do.
+
+## 3. Compare cloud and desktop options
+
+### Cloud software
+Runs in a browser or app, is usually paid by subscription, updates automatically, and can be used from anywhere. It often suits small businesses with several users or remote work. Check data security, backup, and what happens if you stop paying.
+
+### Desktop or installed software
+Runs on your computer or server, may be bought with a licence and an annual support fee, and may suit businesses with complex stock or specific needs. Check who maintains it, how updates and compliance changes are delivered, and how data is backed up.
+
+### Local and international products
+Some products are built for Malaysian tax and reporting, while others are international platforms that may need add-ons or local configuration. Ask each vendor how well it handles Malaysian requirements, and speak to businesses like yours that use it.
+
+### Support and training
+Good local support, clear training, and a helpful community matter more than a long feature list. Ask how to reach support, in which languages, and how quickly they respond.
+
+### Integrations
+Check whether it connects to your bank, payment providers, marketplaces, point-of-sale, and payroll tools. Our guide on accepting digital payments explains how payment records flow into your books.
+
+### Think about future growth
+Pick a tool that can grow with you for a few years, and that lets you export your data easily if you need to move.
+
+## 4. Understand the real costs
+
+### Types of cost
+Subscription or licence fees, setup and onboarding, training, data migration, add-on modules, extra users, payroll or e-invoicing add-ons, annual support or maintenance, and your own time. Ask for everything in writing.
+
+### Compare total cost over several years
+A cheap monthly plan can become costly with add-ons, and a one-off licence can carry annual fees. Estimate the total for three years under realistic use.
+
+### Beware of limits
+Plans may limit the number of invoices, users, companies, or features, and the next tier can be a big jump. Check which plan you really need.
+
+### Free and low-cost options
+Some products have free or very low-priced tiers, which can suit very small businesses. Check what they leave out and whether you can upgrade easily.
+
+### Prices change
+Rates, bundles, and promotions change frequently, so confirm current prices with each vendor, and ask whether the price is fixed for a period.
+
+### Include the cost of mistakes
+A tool that is hard to use, or that your accountant dislikes, can cost more in errors and time than it saves in fees. Our guide on tax deductions and our guide on the small business tax calendar explain why accurate records pay for themselves.
+
+## 5. Test before you commit
+
+### Use free trials and demos
+Try the software with your own real examples, such as a typical sales invoice, a supplier bill, a bank reconciliation, and a report you need. Do not judge by a polished demo alone.
+
+### Involve the people who will use it
+Let the person who issues invoices, and the person who handles bills, try it. If they find it confusing, adoption will suffer.
+
+### Check security and data ownership
+Ask where data is stored, how it is protected and backed up, who can access it, and how you can export it. Our guide on cybersecurity and our guide on personal data protection explain what to look for.
+
+### Ask for references
+Speak to other businesses of your size and type, and ask about reliability, support, and any surprises.
+
+### Read the contract and terms
+Check the minimum term, renewal and cancellation terms, what happens to your data if you leave, and how price changes are handled. Our guide on contracts and terms explains how to read the key clauses.
+
+> The best accounting software is the one that your team will actually use every day, and that your accountant is happy to work with. Fancy features that nobody opens are just a monthly bill.
+
+## 6. Switch over carefully
+
+### Choose a clean start date
+Many businesses begin at the start of a month or financial year, so that records are not split awkwardly. Discuss the date with your accountant.
+
+### Clean up your data first
+Reconcile bank accounts, update customer and supplier lists, chase unpaid invoices, and remove duplicates before you import anything. Moving messy data into new software just creates a messier system.
+
+### Set up your chart of accounts and opening balances
+Work with your accountant to set up the accounts, tax codes, and opening balances correctly, including outstanding invoices and bills. Errors here are hard to fix later.
+
+### Migrate in a controlled way
+Import contacts, items, and opening balances, then check totals against your old records. Keep your old records safe and accessible for as long as the law requires. Our guide on small business tax audits explains why record retention matters.
+
+### Run both systems briefly if needed
+For a short period, compare outputs from the new system against your old process, and fix differences before you rely on it.
+
+### Train your team and document the process
+Write a short guide on how your business records sales, purchases, and payments, and make sure each person knows their role.
+
+## 7. Use the software well, with your accountant
+
+### Build a routine
+Record transactions at least weekly, reconcile bank accounts regularly, issue invoices promptly, and review ageing reports. Small, frequent tasks beat a monthly pile-up.
+
+### Keep supporting documents
+Software records are only as good as the evidence behind them. Attach or file invoices and receipts, and keep them for the required period.
+
+### Control access and changes
+Give people only the access they need, and review who can edit or delete records. Keep a log of important changes.
+
+### Review reports every month
+Look at your profit and loss, cash position, receivables, and payables, and ask what has changed. Our guide on pricing and our guide on writing a business plan show how to use numbers for decisions.
+
+### Work with your accountant
+Share access with your accountant, agree who does what, and ask them to review your setup once a year. They can spot classification errors, missed deductions, and compliance gaps.
+
+### Review the tool each year
+As your business grows, check whether the software still fits. If it does not, plan a switch properly rather than struggling.
+
+If you need an accountant, a bookkeeper, or a software implementation partner, you can [browse the directory](/en) for local professionals, and [creating a free business listing](/en/signup) helps customers find your business, which is the part of the books every owner enjoys most.
+
+## Common mistakes Malaysian SMEs make when choosing accounting software
+
+- **Buying on features instead of needs.** A long feature list does not help if the basics, tax support, and usability are not right.
+- **Not checking compliance capabilities.** Tax and e-invoicing requirements change, so confirm what the software currently supports.
+- **Ignoring the accountant's view.** A tool your accountant cannot work with creates extra cost and friction.
+- **Migrating messy data.** Moving unreconciled records into new software carries the mess forward.
+
+## Where to start
+
+- **This week:** List your must-have features, your number of users, and the reports you need, and ask your accountant what they prefer.
+- **Next:** Shortlist two or three products, ask for written pricing, and check support, security, and compliance features.
+- **Then:** Trial them with your own real transactions, and involve the people who will use them.
+- **When you choose:** Plan a clean start date, clean your data, set up with your accountant, and train your team.
+
+Software should make your accounts easier to keep and easier to trust. Choose it for your needs, test it with real work, and keep your records honest and up to date.`,
+    faqs: [
+      {
+        question: "When should a small business move from spreadsheets to accounting software?",
+        answer:
+          "When invoicing by hand becomes slow, you struggle to know who owes you money, receipts get lost, bank reconciliation is guesswork, or tax time is a scramble. Software also helps when staff, stock, or tax obligations grow.",
+      },
+      {
+        question: "What features should I look for?",
+        answer:
+          "Sales invoices and credit notes, supplier bills, bank reconciliation, expenses, key reports such as profit and loss and a balance sheet, and receivables and payables ageing. Then add what your business needs, such as stock, payroll, tax support, and e-invoicing where it applies.",
+      },
+      {
+        question: "Does the software need to support e-invoicing?",
+        answer:
+          "If e-invoicing requirements apply to your business, a tool that supports them can reduce manual work and errors. Requirements and software capabilities change, so confirm with the vendor and your accountant what is currently supported.",
+      },
+      {
+        question: "Should I choose cloud or desktop software?",
+        answer:
+          "Cloud software is usually subscription-based, updates automatically, and works from anywhere, which suits many small businesses. Desktop software may suit complex stock or specific needs. Check security, backup, support, and how you can export your data.",
+      },
+      {
+        question: "How much does accounting software cost?",
+        answer:
+          "It varies widely, from free or low-cost tiers to higher subscriptions or one-off licences with annual fees. Ask for written pricing, include add-ons, users, training, and migration, compare the total over three years, and confirm current prices with each vendor.",
+      },
+      {
+        question: "Can I try it before buying?",
+        answer:
+          "Yes. Use free trials or demos with your own real examples, such as a typical invoice, a supplier bill, and a bank reconciliation, and let the people who will use it test it. Do not judge by a polished demo alone.",
+      },
+      {
+        question: "How do I move my data from spreadsheets into new software?",
+        answer:
+          "Choose a clean start date, reconcile and clean your data first, set up the chart of accounts, tax codes, and opening balances with your accountant, import carefully, and check totals against your old records. Keep old records for the required period.",
+      },
+      {
+        question: "What is the accountant's role once I have software?",
+        answer:
+          "They can help you set it up correctly, review your records for classification errors and compliance gaps, prepare year-end accounts and tax filings, and advise on reports. Share access, agree who does what, and ask for a yearly review of your setup.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "为您的马来西亚中小企业选择会计软件：功能、成本与转换",
+        excerpt:
+          "从电子表格和一箱箱收据转向正规的会计软件，每个月可以节省数小时，但选错软件会变成昂贵的习惯。本指南向马来西亚中小企业说明应该看什么，包括电子发票准备度、税务和薪资支持、银行对接和报表，如何比较云端和桌面版选项及其成本，以及如何与会计师一起安全地转换。",
+        body: `许多小企业从电子表格、笔记本或一个收据文件夹开始。这在一段时间内行得通，但随着发票、供应商、员工和税务义务的增加，人工方式的成本开始超过软件：发票延迟、漏付款项、错误，以及报税时手忙脚乱。
+
+会计软件不是魔法，它并不能取代良好的簿记习惯或好的会计师。但选对了工具，出于正确的理由选择并持续使用，可以给您更清晰的数字、更快的开票，以及更从容的年终结算。
+
+以下仅为一般资讯，并非财务或技术意见。产品、功能、价格和合规能力经常变动，本指南中的信息可能已过时。在购买之前，请直接向供应商和您的会计师确认每款产品目前提供什么，包括电子发票和税务功能。
+
+## 1. 决定您是否需要软件，以及为什么
+
+### 该转换的迹象
+您手工开出许多发票、难以知道谁欠您钱、遗失收据、靠猜测核对银行对账单，或把周末花在整理记录上。我们关于簿记基础的指南说明了软件应该支持的基本原理。
+
+### 软件能做什么和不能做什么
+它可以加快开票、追踪付款、生成报表并减少错误。它无法补救遗失的收据、替您做决定，也无法取代正确分类交易和报税所需的知识。
+
+### 合规是理由的一部分
+销售税和服务税等税务规定以及电子发票要求，会影响发票的开具和记录方式。支持这些的软件可以减少人工工作和错误。请参阅我们关于电子发票的指南和关于 SST 注册的指南了解基础知识。
+
+### 想想继续手工的成本
+算出您或您的员工每个月花在行政工作上的时间，以及错误和延迟收款的成本。我们关于追收逾期货款的指南说明了更好的开票如何有帮助。
+
+### 让您的会计师参与
+您的会计师或簿记员会使用您生成的记录。询问他们偏好什么、能支持什么，避免选了一个让他们更难工作的工具。
+
+## 2. 列出您的企业真正需要什么
+
+在观看任何一款产品演示之前，先写下您的企业在账务上必须做到什么。一份清晰的清单可以避免您被永远用不到的功能所左右。
+
+### 核心记录
+销售发票和贷项通知单、供应商账单、已收和已付款项、银行账户、开支，以及适合您企业的会计科目表。
+
+### 您的企业类型
+店铺需要存货和收银系统的对接，服务业需要时间和项目计费，制造商需要成本核算，网络卖家需要电商平台的导入。让工具与您赚钱的方式相配。我们关于库存管理的指南说明了存货记录涉及什么。
+
+### 税务和合规功能
+查核软件是否支持您的税务需要，例如销售税和服务税，以及在适用于您的情况下是否能处理电子发票要求。请供应商演示其运作方式，并确认现行情况，因为要求和软件能力会变动。
+
+### 薪资和法定供款
+如果您雇有员工，请决定是要把薪资放在同一个系统还是另用一个，以及它应该处理哪些法定供款和报表。我们关于薪资与法定供款的指南说明了相关义务。
+
+### 您依赖的报表
+至少要有损益表、资产负债表、应收和应付账龄表，以及现金状况。我们关于现金流的指南说明了为什么后两项很重要。
+
+### 用户数量和访问级别
+决定谁需要访问权限，例如您、簿记员、会计师和开发票的员工，以及每个人应该能看到和做什么。
+
+## 3. 比较云端和桌面版选项
+
+### 云端软件
+在浏览器或应用程序中运行，通常按订阅付费，自动更新，并可以在任何地方使用。它通常适合有多位用户或远程工作的小企业。请查核数据安全、备份，以及停止付款后会怎样。
+
+### 桌面或安装版软件
+在您的电脑或服务器上运行，可能以许可证加年度支持费购买，可能适合有复杂存货或特定需要的企业。请查核由谁维护、更新和合规变更如何提供，以及数据如何备份。
+
+### 本地和国际产品
+有些产品专为马来西亚的税务和报表而设计，另一些则是国际平台，可能需要附加组件或本地化设置。请询问每家供应商对马来西亚要求的处理程度，并与使用它的类似企业交谈。
+
+### 支持和培训
+良好的本地支持、清晰的培训和有帮助的社群，比一长串功能清单更重要。询问如何联系支持、使用哪些语言，以及他们回应的速度。
+
+### 整合
+查核它是否能与您的银行、支付服务商、电商平台、收银系统和薪资工具对接。我们关于接受数码付款的指南说明了付款记录如何流入您的账目。
+
+### 考虑未来的成长
+选择一个能陪您成长几年的工具，并且在需要转换时可以轻松导出您的数据。
+
+## 4. 了解真实的成本
+
+### 成本的类型
+订阅或许可费、设置和上手费、培训、数据迁移、附加模块、额外用户、薪资或电子发票附加功能、年度支持或维护费，以及您自己的时间。请要求所有内容都以书面形式提供。
+
+### 比较数年的总成本
+便宜的月费方案可能因附加功能而变得昂贵，一次性许可证也可能带有年度费用。请在合理使用的情况下估算三年的总额。
+
+### 小心限制
+方案可能限制发票数量、用户、公司或功能，而下一级可能是大幅跳涨。请查核您真正需要哪个方案。
+
+### 免费和低成本的选项
+有些产品有免费或价格很低的级别，可能适合非常小的企业。请查核它们缺少什么，以及您能否轻松升级。
+
+### 价格会变
+费率、套餐和促销经常变动，所以请向每家供应商确认现行价格，并询问价格在一段时间内是否固定。
+
+### 把错误的成本也算进去
+一个难以使用或您的会计师不喜欢的工具，在错误和时间上花的成本可能超过它在费用上节省的。我们关于税务扣除的指南和关于小企业税务日历的指南说明了为什么准确的记录值回票价。
+
+## 5. 承诺之前先测试
+
+### 使用免费试用和演示
+用您自己的真实例子试用软件，例如一张典型的销售发票、一张供应商账单、一次银行对账，以及一份您需要的报表。不要只凭精心制作的演示来判断。
+
+### 让会使用它的人参与
+让开发票的人和处理账单的人都试用一下。如果他们觉得混乱，推行就会受阻。
+
+### 查核安全性和数据所有权
+询问数据存放在哪里、如何保护和备份、谁能访问，以及您如何导出。我们关于网络安全的指南和关于个人资料保护的指南说明了该看什么。
+
+### 要求提供推荐人
+与规模和类型相似的其他企业交谈，询问可靠性、支持和任何意外。
+
+### 阅读合约和条款
+查核最短期限、续约和取消条款、您离开后数据会怎样，以及价格变动如何处理。我们关于合约与条款的指南说明了如何阅读关键条款。
+
+> 最好的会计软件，是您的团队真正会每天使用、并且您的会计师乐意配合的那一个。没人会打开的花哨功能，只不过是每月的账单。
+
+## 6. 谨慎地转换
+
+### 选择一个干净的起始日期
+许多企业在月初或财政年度开始时转换，这样记录不会被尴尬地割裂。请与您的会计师讨论日期。
+
+### 先清理您的数据
+在导入任何东西之前，先核对银行账户、更新客户和供应商名单、追收未付发票，并删除重复项。把混乱的数据搬进新软件，只会造成更混乱的系统。
+
+### 设置会计科目表和期初余额
+与您的会计师一起正确设置科目、税码和期初余额，包括未结清的发票和账单。这里的错误以后很难修正。
+
+### 以可控的方式迁移
+导入联络人、项目和期初余额，然后对照您旧的记录核对总额。按法律规定的期限安全保管您旧的记录并确保可以取阅。我们关于税务审计的指南说明了为什么保存记录很重要。
+
+### 必要时短期并行两套系统
+在一小段时间内，把新系统的输出与您旧流程的结果比较，并在依赖它之前修正差异。
+
+### 培训您的团队并记录流程
+写一份简短的指南，说明您的企业如何记录销售、采购和付款，并确保每个人都知道自己的角色。
+
+## 7. 与会计师一起善用软件
+
+### 建立例行程序
+至少每周记录交易、定期核对银行账户、及时开发票，并检视账龄报表。细小而频繁的任务胜过月底的堆积。
+
+### 保存佐证文件
+软件中的记录，只和背后的证据一样可靠。请附上或归档发票和收据，并按要求的期限保存。
+
+### 控制访问和变更
+只给人们所需的访问权限，并检视谁可以编辑或删除记录。请保存重要变更的日志。
+
+### 每月检视报表
+查看您的损益、现金状况、应收和应付，并问问有什么变化。我们关于定价的指南和关于撰写商业计划书的指南说明了如何用数字做决策。
+
+### 与您的会计师合作
+与会计师共享访问权限，约定谁做什么，并请他们每年检视一次您的设置。他们能发现分类错误、遗漏的扣除和合规缺口。
+
+### 每年检视工具
+随着企业成长，查核软件是否仍然适合。如果不适合，请好好规划转换，而不是勉强应付。
+
+如果您需要会计师、簿记员或软件实施伙伴，可以[浏览名录](/zh)寻找本地专业人士，而[创建免费的企业列表](/zh/signup)可以帮助顾客找到您的企业，这是每位业主最喜欢的账目部分。
+
+## 马来西亚中小企业在选择会计软件时常犯的错误
+
+- **按功能而非需求购买。**如果基本功能、税务支持和易用性不对，一长串功能清单也无济于事。
+- **不查核合规能力。**税务和电子发票要求会变，所以请确认软件目前支持什么。
+- **忽视会计师的意见。**您的会计师无法配合的工具，会造成额外的成本和摩擦。
+- **迁移混乱的数据。**把未核对的记录搬进新软件，只会把混乱带过去。
+
+## 从哪里开始
+
+- **本周：**列出您必须具备的功能、用户数量和您需要的报表，并询问您的会计师偏好什么。
+- **接着：**筛选出两三款产品，索取书面价格，并查核支持、安全和合规功能。
+- **然后：**用您自己真实的交易试用它们，并让会使用它们的人参与。
+- **选定之后：**规划一个干净的起始日期，清理数据，与会计师一起设置，并培训您的团队。
+
+软件应该让您的账目更容易保存、更值得信任。按您的需要来选择，用真实的工作来测试，并让您的记录保持诚实和最新。`,
+        faqs: [
+          {
+            question: "小企业何时应该从电子表格转向会计软件？",
+            answer:
+              "当手工开发票变得缓慢、您难以知道谁欠您钱、收据遗失、银行对账靠猜测，或报税时手忙脚乱时。当员工、存货或税务义务增加时，软件也有帮助。",
+          },
+          {
+            question: "我应该看哪些功能？",
+            answer:
+              "销售发票和贷项通知单、供应商账单、银行对账、开支、损益表和资产负债表等主要报表，以及应收和应付账龄。然后加上您的企业需要的，例如存货、薪资、税务支持，以及适用时的电子发票。",
+          },
+          {
+            question: "软件需要支持电子发票吗？",
+            answer:
+              "如果电子发票要求适用于您的企业，支持这些要求的工具可以减少人工工作和错误。要求和软件能力会变动，所以请向供应商和您的会计师确认目前支持什么。",
+          },
+          {
+            question: "我应该选云端还是桌面版软件？",
+            answer:
+              "云端软件通常按订阅付费、自动更新并可以在任何地方使用，适合许多小企业。桌面版软件可能适合复杂的存货或特定需要。请查核安全、备份、支持，以及您如何导出数据。",
+          },
+          {
+            question: "会计软件要多少钱？",
+            answer:
+              "差异很大，从免费或低成本级别，到较高的订阅或带年度费用的一次性许可证。请索取书面价格，把附加功能、用户、培训和迁移计算在内，比较三年的总额，并向每家供应商确认现行价格。",
+          },
+          {
+            question: "购买之前可以试用吗？",
+            answer:
+              "可以。用您自己真实的例子使用免费试用或演示，例如一张典型的发票、一张供应商账单和一次银行对账，并让会使用它的人测试。不要只凭精心制作的演示来判断。",
+          },
+          {
+            question: "如何把数据从电子表格迁移到新软件？",
+            answer:
+              "选择一个干净的起始日期，先对账并清理您的数据，与您的会计师一起设置会计科目表、税码和期初余额，仔细导入，并对照旧记录核对总额。按要求的期限保存旧记录。",
+          },
+          {
+            question: "有了软件之后，会计师的角色是什么？",
+            answer:
+              "他们可以帮助您正确设置，检视您的记录是否有分类错误和合规缺口，编制年终账目和税务申报，并就报表提供意见。共享访问权限，约定谁做什么，并请他们每年检视一次您的设置。",
+          },
+        ],
+      },
+      ms: {
+        title: "Memilih Perisian Perakaunan untuk PKS Malaysia Anda: Ciri, Kos dan Beralih",
+        excerpt:
+          "Beralih daripada hamparan dan kotak resit kepada perisian perakaunan yang betul boleh menjimatkan berjam-jam setiap bulan, tetapi pilihan yang salah menjadi tabiat yang mahal. Panduan ini menunjukkan kepada PKS Malaysia apa yang perlu dicari, termasuk kesediaan e-Invois, sokongan cukai dan gaji, suapan bank dan laporan, cara membandingkan pilihan awan dan desktop serta kosnya, dan cara beralih dengan selamat bersama akauntan anda.",
+        body: `Ramai perniagaan kecil bermula dengan hamparan, buku nota, atau fail resit. Itu berjaya untuk seketika, tetapi apabila invois, pembekal, kakitangan dan kewajipan cukai bertambah, cara manual mula berkos lebih tinggi daripada perisian: invois lewat, bayaran terlepas, kesilapan, dan kelam-kabut yang menekan pada masa cukai.
+
+Perisian perakaunan bukan sihir, dan ia tidak menggantikan tabiat simpan kira yang baik atau akauntan yang baik. Tetapi alat yang betul, dipilih atas sebab yang betul dan digunakan secara konsisten, boleh memberi anda angka yang lebih jelas, invois lebih pantas dan akhir tahun yang lebih tenang.
+
+Ini ialah maklumat am, bukan nasihat kewangan atau teknologi. Produk, ciri, harga dan keupayaan pematuhan kerap berubah, dan maklumat dalam panduan ini mungkin sudah lapuk. Sahkan apa yang ditawarkan oleh setiap produk pada masa ini, termasuk ciri e-Invois dan cukai, secara terus dengan vendor dan akauntan anda sebelum anda membeli.
+
+## 1. Tentukan sama ada anda memerlukan perisian, dan mengapa
+
+### Tanda sudah tiba masanya
+Anda mengeluarkan banyak invois secara manual, bergelut untuk mengetahui siapa yang terhutang wang kepada anda, kehilangan resit, menyelaraskan penyata bank dengan tekaan, atau menghabiskan hujung minggu pada rekod. Panduan kami tentang asas simpan kira menerangkan asas yang patut disokong oleh perisian.
+
+### Apa yang perisian boleh dan tidak boleh lakukan
+Ia boleh mempercepatkan invois, menjejak bayaran, menghasilkan laporan dan mengurangkan kesilapan. Ia tidak dapat membetulkan resit yang hilang, membuat keputusan untuk anda, atau menggantikan pengetahuan yang diperlukan untuk mengelaskan transaksi dan memfailkan cukai dengan betul.
+
+### Pematuhan sebahagian daripada kes
+Peraturan cukai seperti cukai jualan dan perkhidmatan serta keperluan e-Invois mempengaruhi cara invois dikeluarkan dan direkodkan. Perisian yang menyokongnya boleh mengurangkan kerja manual dan kesilapan. Lihat panduan kami tentang e-Invois dan panduan kami tentang pendaftaran SST untuk asasnya.
+
+### Fikirkan kos kekal manual
+Kira jam yang anda atau kakitangan anda luangkan untuk pentadbiran setiap bulan, dan kos kesilapan serta kutipan lewat. Panduan kami tentang menuntut bayaran lewat menerangkan bagaimana invois yang lebih baik membantu.
+
+### Libatkan akauntan anda
+Akauntan atau pegawai simpan kira anda akan menggunakan rekod yang anda hasilkan. Tanya apa yang mereka pilih dan apa yang boleh mereka sokong, supaya anda mengelak alat yang menyukarkan kerja mereka.
+
+## 2. Senaraikan apa yang sebenarnya diperlukan oleh perniagaan anda
+
+Tulis apa yang perniagaan anda mesti lakukan dalam buku akaunnya sebelum anda melihat sebarang demo produk. Senarai yang jelas menghalang anda terpengaruh oleh ciri yang tidak akan anda gunakan.
+
+### Rekod teras
+Invois jualan dan nota kredit, bil pembekal, bayaran diterima dan dibuat, akaun bank, perbelanjaan, dan carta akaun yang sesuai dengan perniagaan anda.
+
+### Jenis perniagaan anda
+Kedai memerlukan pautan stok dan titik jualan, perniagaan perkhidmatan memerlukan pengebilan masa dan projek, pengilang memerlukan pengkosan, dan penjual dalam talian memerlukan import pasaran. Padankan alat dengan cara anda memperoleh wang. Panduan kami tentang pengurusan inventori menerangkan apa yang melibatkan rekod stok.
+
+### Ciri cukai dan pematuhan
+Semak sama ada perisian menyokong keperluan cukai anda, seperti cukai jualan dan perkhidmatan, dan sama ada ia boleh mengendalikan keperluan e-Invois jika terpakai kepada anda. Minta vendor menunjukkan cara ia berfungsi, dan sahkan kedudukan semasa, kerana keperluan dan keupayaan perisian berubah.
+
+### Gaji dan caruman berkanun
+Jika anda mengambil pekerja, tentukan sama ada anda mahu gaji dalam sistem yang sama atau yang berasingan, dan caruman berkanun serta laporan apa yang patut dikendalikannya. Panduan kami tentang gaji dan caruman berkanun menerangkan kewajipan.
+
+### Laporan yang anda bergantung
+Sekurang-kurangnya penyata untung rugi, kunci kira-kira, penuaan belum terima dan belum bayar, dan kedudukan tunai. Panduan kami tentang aliran tunai menerangkan mengapa dua yang terakhir penting.
+
+### Bilangan pengguna dan tahap akses
+Tentukan siapa yang memerlukan akses, contohnya anda, pegawai simpan kira, akauntan, dan kakitangan yang mengeluarkan invois, dan apa yang patut boleh dilihat dan dilakukan oleh setiap orang.
+
+## 3. Bandingkan pilihan awan dan desktop
+
+### Perisian awan
+Berjalan dalam pelayar atau aplikasi, biasanya dibayar secara langganan, dikemas kini secara automatik, dan boleh digunakan dari mana-mana. Ia sering sesuai untuk perniagaan kecil dengan beberapa pengguna atau kerja jauh. Semak keselamatan data, sandaran, dan apa yang berlaku jika anda berhenti membayar.
+
+### Perisian desktop atau yang dipasang
+Berjalan pada komputer atau pelayan anda, mungkin dibeli dengan lesen dan yuran sokongan tahunan, dan mungkin sesuai untuk perniagaan dengan stok kompleks atau keperluan tertentu. Semak siapa yang menyelenggarakannya, bagaimana kemas kini dan perubahan pematuhan disampaikan, dan bagaimana data disandarkan.
+
+### Produk tempatan dan antarabangsa
+Sesetengah produk dibina untuk cukai dan pelaporan Malaysia, manakala yang lain ialah platform antarabangsa yang mungkin memerlukan alat tambahan atau konfigurasi tempatan. Tanya setiap vendor sejauh mana ia mengendalikan keperluan Malaysia, dan bercakap dengan perniagaan serupa anda yang menggunakannya.
+
+### Sokongan dan latihan
+Sokongan tempatan yang baik, latihan yang jelas dan komuniti yang membantu lebih penting daripada senarai ciri yang panjang. Tanya cara menghubungi sokongan, dalam bahasa apa, dan betapa cepat mereka membalas.
+
+### Integrasi
+Semak sama ada ia bersambung dengan bank, penyedia pembayaran, pasaran, titik jualan dan alat gaji anda. Panduan kami tentang menerima pembayaran digital menerangkan bagaimana rekod pembayaran mengalir ke dalam buku anda.
+
+### Fikirkan tentang pertumbuhan masa depan
+Pilih alat yang boleh berkembang bersama anda selama beberapa tahun, dan yang membolehkan anda mengeksport data dengan mudah jika anda perlu berpindah.
+
+## 4. Fahami kos sebenar
+
+### Jenis kos
+Yuran langganan atau lesen, penyediaan dan orientasi, latihan, migrasi data, modul tambahan, pengguna tambahan, tambahan gaji atau e-Invois, sokongan atau penyelenggaraan tahunan, dan masa anda sendiri. Minta semuanya secara bertulis.
+
+### Bandingkan jumlah kos beberapa tahun
+Pelan bulanan yang murah boleh menjadi mahal dengan tambahan, dan lesen sekali bayar boleh membawa yuran tahunan. Anggarkan jumlah untuk tiga tahun di bawah penggunaan yang realistik.
+
+### Berhati-hati dengan had
+Pelan mungkin mengehadkan bilangan invois, pengguna, syarikat atau ciri, dan peringkat seterusnya boleh menjadi lonjakan besar. Semak pelan mana yang benar-benar anda perlukan.
+
+### Pilihan percuma dan kos rendah
+Sesetengah produk mempunyai peringkat percuma atau berharga sangat rendah, yang boleh sesuai untuk perniagaan yang sangat kecil. Semak apa yang ditinggalkan dan sama ada anda boleh menaik taraf dengan mudah.
+
+### Harga berubah
+Kadar, pakej dan promosi kerap berubah, jadi sahkan harga semasa dengan setiap vendor, dan tanya sama ada harga ditetapkan untuk satu tempoh.
+
+### Sertakan kos kesilapan
+Alat yang sukar digunakan, atau yang tidak disukai akauntan anda, boleh berkos lebih dalam kesilapan dan masa daripada yang dijimatkan dalam yuran. Panduan kami tentang potongan cukai dan panduan kami tentang kalendar cukai perniagaan kecil menerangkan mengapa rekod yang tepat membayar balik dirinya.
+
+## 5. Uji sebelum anda berkomitmen
+
+### Gunakan percubaan percuma dan demo
+Cuba perisian dengan contoh sebenar anda sendiri, seperti invois jualan lazim, bil pembekal, penyelarasan bank, dan laporan yang anda perlukan. Jangan menilai dengan demo yang digilap sahaja.
+
+### Libatkan orang yang akan menggunakannya
+Biarkan orang yang mengeluarkan invois, dan orang yang mengendalikan bil, mencubanya. Jika mereka mendapatinya mengelirukan, penerimaan akan terjejas.
+
+### Semak keselamatan dan pemilikan data
+Tanya di mana data disimpan, bagaimana ia dilindungi dan disandarkan, siapa yang boleh mengaksesnya, dan bagaimana anda boleh mengeksportnya. Panduan kami tentang keselamatan siber dan panduan kami tentang perlindungan data peribadi menerangkan apa yang perlu dicari.
+
+### Minta rujukan
+Bercakap dengan perniagaan lain yang sama saiz dan jenis, dan tanya tentang kebolehpercayaan, sokongan dan sebarang kejutan.
+
+### Baca kontrak dan terma
+Semak tempoh minimum, terma pembaharuan dan pembatalan, apa yang berlaku kepada data anda jika anda pergi, dan bagaimana perubahan harga dikendalikan. Panduan kami tentang kontrak dan terma menerangkan cara membaca klausa utama.
+
+> Perisian perakaunan terbaik ialah yang benar-benar akan digunakan oleh pasukan anda setiap hari, dan yang akauntan anda senang bekerja dengannya. Ciri mewah yang tiada siapa buka hanyalah bil bulanan.
+
+## 6. Beralih dengan berhati-hati
+
+### Pilih tarikh mula yang bersih
+Ramai perniagaan bermula pada awal bulan atau tahun kewangan, supaya rekod tidak terbahagi dengan janggal. Bincangkan tarikh dengan akauntan anda.
+
+### Bersihkan data anda dahulu
+Selaraskan akaun bank, kemas kini senarai pelanggan dan pembekal, kejar invois yang belum dibayar, dan buang pendua sebelum anda mengimport apa-apa. Memindahkan data berselerak ke dalam perisian baharu hanya mewujudkan sistem yang lebih berselerak.
+
+### Sediakan carta akaun dan baki pembukaan
+Bekerjasama dengan akauntan anda untuk menyediakan akaun, kod cukai dan baki pembukaan dengan betul, termasuk invois dan bil yang belum dijelaskan. Kesilapan di sini sukar dibetulkan kemudian.
+
+### Pindahkan dengan cara terkawal
+Import kenalan, item dan baki pembukaan, kemudian semak jumlah berbanding rekod lama anda. Simpan rekod lama anda dengan selamat dan boleh diakses selama tempoh yang dikehendaki undang-undang. Panduan kami tentang audit cukai menerangkan mengapa penyimpanan rekod penting.
+
+### Jalankan kedua-dua sistem seketika jika perlu
+Untuk tempoh singkat, bandingkan output sistem baharu dengan proses lama anda, dan betulkan perbezaan sebelum anda bergantung padanya.
+
+### Latih pasukan anda dan dokumenkan proses
+Tulis panduan ringkas tentang cara perniagaan anda merekodkan jualan, pembelian dan bayaran, dan pastikan setiap orang tahu peranan mereka.
+
+## 7. Gunakan perisian dengan baik, bersama akauntan anda
+
+### Bina rutin
+Rekodkan transaksi sekurang-kurangnya mingguan, selaraskan akaun bank secara berkala, keluarkan invois dengan segera, dan semak laporan penuaan. Tugas kecil yang kerap mengatasi longgokan bulanan.
+
+### Simpan dokumen sokongan
+Rekod perisian hanya sebaik bukti di sebaliknya. Lampirkan atau failkan invois dan resit, dan simpannya untuk tempoh yang dikehendaki.
+
+### Kawal akses dan perubahan
+Berikan orang hanya akses yang mereka perlukan, dan semak siapa yang boleh mengedit atau memadam rekod. Simpan log perubahan penting.
+
+### Semak laporan setiap bulan
+Lihat untung rugi, kedudukan tunai, belum terima dan belum bayar anda, dan tanya apa yang telah berubah. Panduan kami tentang penetapan harga dan panduan kami tentang menulis pelan perniagaan menunjukkan cara menggunakan angka untuk keputusan.
+
+### Bekerjasama dengan akauntan anda
+Kongsi akses dengan akauntan anda, persetujui siapa melakukan apa, dan minta mereka menyemak penyediaan anda sekali setahun. Mereka boleh mengesan kesilapan pengelasan, potongan yang terlepas dan jurang pematuhan.
+
+### Semak alat setiap tahun
+Apabila perniagaan anda berkembang, semak sama ada perisian masih sesuai. Jika tidak, rancang pertukaran dengan betul dan bukannya bergelut.
+
+Jika anda memerlukan akauntan, pegawai simpan kira atau rakan pelaksana perisian, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) membantu pelanggan menemui perniagaan anda, iaitu bahagian buku akaun yang paling disukai oleh setiap pemilik.
+
+## Kesilapan lazim PKS Malaysia semasa memilih perisian perakaunan
+
+- **Membeli berdasarkan ciri dan bukannya keperluan.** Senarai ciri yang panjang tidak membantu jika asas, sokongan cukai dan kemudahan guna tidak betul.
+- **Tidak menyemak keupayaan pematuhan.** Keperluan cukai dan e-Invois berubah, jadi sahkan apa yang disokong oleh perisian sekarang.
+- **Mengabaikan pandangan akauntan.** Alat yang tidak dapat digunakan oleh akauntan anda mewujudkan kos dan geseran tambahan.
+- **Memindahkan data berselerak.** Memindahkan rekod yang tidak diselaraskan ke dalam perisian baharu membawa kekusutan itu ke hadapan.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Senaraikan ciri wajib anda, bilangan pengguna dan laporan yang anda perlukan, dan tanya akauntan anda apa yang mereka pilih.
+- **Seterusnya:** Senarai pendek dua atau tiga produk, minta harga bertulis, dan semak sokongan, keselamatan dan ciri pematuhan.
+- **Kemudian:** Cuba dengan transaksi sebenar anda sendiri, dan libatkan orang yang akan menggunakannya.
+- **Apabila anda memilih:** Rancang tarikh mula yang bersih, bersihkan data anda, sediakan bersama akauntan, dan latih pasukan anda.
+
+Perisian patut menjadikan akaun anda lebih mudah disimpan dan lebih mudah dipercayai. Pilih mengikut keperluan anda, uji dengan kerja sebenar, dan pastikan rekod anda jujur dan terkini.`,
+        faqs: [
+          {
+            question: "Bilakah perniagaan kecil patut beralih daripada hamparan kepada perisian perakaunan?",
+            answer:
+              "Apabila invois manual menjadi perlahan, anda bergelut mengetahui siapa yang terhutang wang kepada anda, resit hilang, penyelarasan bank adalah tekaan, atau masa cukai kelam-kabut. Perisian juga membantu apabila kakitangan, stok atau kewajipan cukai bertambah.",
+          },
+          {
+            question: "Apakah ciri yang patut saya cari?",
+            answer:
+              "Invois jualan dan nota kredit, bil pembekal, penyelarasan bank, perbelanjaan, laporan utama seperti untung rugi dan kunci kira-kira, serta penuaan belum terima dan belum bayar. Kemudian tambah apa yang perniagaan anda perlukan, seperti stok, gaji, sokongan cukai, dan e-Invois jika terpakai.",
+          },
+          {
+            question: "Adakah perisian perlu menyokong e-Invois?",
+            answer:
+              "Jika keperluan e-Invois terpakai kepada perniagaan anda, alat yang menyokongnya boleh mengurangkan kerja manual dan kesilapan. Keperluan dan keupayaan perisian berubah, jadi sahkan dengan vendor dan akauntan anda apa yang disokong pada masa ini.",
+          },
+          {
+            question: "Patutkah saya memilih perisian awan atau desktop?",
+            answer:
+              "Perisian awan biasanya berasaskan langganan, dikemas kini secara automatik dan berfungsi dari mana-mana, yang sesuai untuk banyak perniagaan kecil. Perisian desktop mungkin sesuai untuk stok kompleks atau keperluan tertentu. Semak keselamatan, sandaran, sokongan, dan cara anda boleh mengeksport data anda.",
+          },
+          {
+            question: "Berapakah kos perisian perakaunan?",
+            answer:
+              "Ia berbeza dengan luas, daripada peringkat percuma atau kos rendah kepada langganan lebih tinggi atau lesen sekali bayar dengan yuran tahunan. Minta harga bertulis, sertakan tambahan, pengguna, latihan dan migrasi, bandingkan jumlah selama tiga tahun, dan sahkan harga semasa dengan setiap vendor.",
+          },
+          {
+            question: "Bolehkah saya mencubanya sebelum membeli?",
+            answer:
+              "Ya. Gunakan percubaan percuma atau demo dengan contoh sebenar anda sendiri, seperti invois lazim, bil pembekal dan penyelarasan bank, dan biarkan orang yang akan menggunakannya mengujinya. Jangan menilai dengan demo yang digilap sahaja.",
+          },
+          {
+            question: "Bagaimanakah saya memindahkan data daripada hamparan ke dalam perisian baharu?",
+            answer:
+              "Pilih tarikh mula yang bersih, selaraskan dan bersihkan data anda dahulu, sediakan carta akaun, kod cukai dan baki pembukaan bersama akauntan anda, import dengan teliti, dan semak jumlah berbanding rekod lama anda. Simpan rekod lama untuk tempoh yang dikehendaki.",
+          },
+          {
+            question: "Apakah peranan akauntan sebaik sahaja saya mempunyai perisian?",
+            answer:
+              "Mereka boleh membantu anda menyediakannya dengan betul, menyemak rekod anda untuk kesilapan pengelasan dan jurang pematuhan, menyediakan akaun akhir tahun dan pemfailan cukai, dan menasihati tentang laporan. Kongsi akses, persetujui siapa melakukan apa, dan minta semakan tahunan penyediaan anda.",
+          },
+        ],
+      },
+    },
+  },
 ];
