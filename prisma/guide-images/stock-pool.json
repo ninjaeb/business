@@ -798,6 +798,70 @@
       ],
       "description": "Smiling female barista in apron and hat serving a customer in a cafe",
       "usedBy": "building-customer-loyalty-and-repeat-business-in-malaysia-cover.webp"
+    },
+    {
+      "id": 36729739,
+      "tags": [
+        "retail",
+        "cafe",
+        "owner",
+        "small-business"
+      ],
+      "description": "Cafe owner with arms crossed in a rustic coffee shop",
+      "usedBy": "second-outlet-cafe.webp"
+    },
+    {
+      "id": 8311885,
+      "tags": [
+        "retail",
+        "boutique",
+        "owner",
+        "shop"
+      ],
+      "description": "Confident Asian woman in a modern boutique",
+      "usedBy": "second-outlet-cover.webp"
+    },
+    {
+      "id": 36730466,
+      "tags": [
+        "retail",
+        "shop",
+        "tablet",
+        "boutique"
+      ],
+      "description": "Smiling woman holding a tablet in a clothing store"
+    },
+    {
+      "id": 28729682,
+      "tags": [
+        "backup",
+        "laptop",
+        "data",
+        "office"
+      ],
+      "description": "Office desk with a laptop and several external hard drives",
+      "usedBy": "business-continuity-cover.webp"
+    },
+    {
+      "id": 29238152,
+      "tags": [
+        "backup",
+        "laptop",
+        "data",
+        "office"
+      ],
+      "description": "Modern workspace with laptop and external drives"
+    },
+    {
+      "id": 7002970,
+      "tags": [
+        "rain",
+        "flood",
+        "weather",
+        "window"
+      ],
+      "description": "Window glass covered in water drops on a rainy day",
+      "usedBy": "business-continuity-rain.webp"
     }
   ]
 }
