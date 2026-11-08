@@ -24104,4 +24104,1251 @@ Perisian patut menjadikan akaun anda lebih mudah disimpan dan lebih mudah diperc
       },
     },
   },
+  {
+    slug: "expanding-to-a-second-outlet-for-your-malaysian-business",
+    title: "Expanding to a Second Outlet: Planning, Funding, and Avoiding Overreach",
+    seoTitle: "Opening a Second Outlet in Malaysia: A Planning Guide",
+    seoDescription:
+      "How Malaysian SMEs can open a second outlet: proving your model, choosing a site, budgeting, hiring, licences per premises and avoiding overextension.",
+    coverImage: {
+      file: "second-outlet-cover.webp",
+      mimeType: "image/webp",
+      alt: "A woman in a grey blazer standing among racks of clothes in a boutique with spotlights overhead",
+      altTranslations: {
+        zh: "一位身穿灰色西装外套的女士站在精品服装店的衣架之间，头顶是聚光灯",
+        ms: "Seorang wanita berkot kelabu berdiri di celah rak pakaian di sebuah butik dengan lampu sorot di atas",
+      },
+    },
+    contentImages: {
+      cafe: {
+        file: "second-outlet-cafe.webp",
+        mimeType: "image/webp",
+        alt: "A smiling cafe owner in a checked apron standing with her arms crossed in front of a wooden counter",
+        altTranslations: {
+          zh: "一位身穿格子围裙的咖啡馆老板微笑着双臂交叉，站在木质柜台前",
+          ms: "Seorang pemilik kafe berapron berkotak tersenyum sambil berpeluk tubuh di hadapan kaunter kayu",
+        },
+        after: "Do not open a second outlet until the first one runs well without you standing in it every hour.",
+        afterTranslations: {
+          zh: "在第一家店不需要您每个小时都站在里面也能运作良好之前，不要开第二家分店。",
+          ms: "Jangan buka cawangan kedua sehingga outlet pertama berjalan dengan baik tanpa anda berdiri di dalamnya setiap jam.",
+        },
+      },
+    },
+    excerpt:
+      "A second outlet can double your reach, or double your problems. This guide helps Malaysian SMEs decide whether they are ready, choose a location, budget set-up and working capital, check licences and registrations for the new premises, build a team that runs without you, and spot the warning signs of overextending before they turn into a cash crisis.",
+    body: `Opening a second outlet feels like the natural next step once the first one is busy. More customers, more sales, a bigger brand. But many businesses discover that a second location is not simply a copy of the first: it needs more cash, more management, and a model that works without the owner in the room.
+
+Done well, a second outlet can strengthen your business. Done too early, it can drag down a healthy first outlet and put your savings at risk. The difference is usually preparation, not luck.
+
+This is general information, not financial, legal, or tax advice. Licensing rules, rental norms, financing options, and costs vary by location and change over time, and information in this guide may be out of date. Confirm the current requirements with your local council, the relevant authorities, your lender, and your accountant before you commit.
+
+## 1. Decide whether you are really ready
+
+Do not open a second outlet until the first one runs well without you standing in it every hour. If the shop only works when you are there, a second shop will simply split you in two.
+
+### Check that the first outlet is genuinely profitable
+Look at your real numbers over at least several months, after paying yourself a fair wage, not just sales. Our guide on bookkeeping basics explains how to get reliable records, and our guide on understanding your profit and loss explains what to look for. A busy outlet that barely breaks even is a warning, not a green light.
+
+### Look at cash, not only profit
+A profitable business can still run out of cash. The second outlet will absorb money for months before it pays back. Our guide on cash flow explains why timing matters.
+
+### Test whether the model can be repeated
+Write down how the first outlet runs: opening and closing routines, suppliers, pricing, service standards, and who does what. If the answer is mostly "it is in my head", the model is not ready to copy yet.
+
+### Be honest about your reason
+Good reasons include steady demand that you cannot serve from one site, or a proven product in a clearly underserved area. Weak reasons include pride, copying a competitor, or hoping a new location will fix problems in the old one.
+
+### Consider cheaper alternatives first
+A kiosk, a pop-up stall, a delivery-only kitchen, extended hours, or a stronger online presence can test new demand with far less commitment. Our guide on selling online explains one lower-risk path.
+
+## 2. Choose the location with evidence
+
+### Define who you are serving
+Decide who your best customers are and where they live, work, and shop. A second outlet should reach people the first one does not, rather than taking sales from itself.
+
+### Visit at different times
+Check foot traffic on weekdays, weekends, mornings, evenings, and during rain. Count passers-by, watch who actually enters shops nearby, and note parking and public transport access.
+
+### Study the competition
+See who is nearby, what they charge, and how busy they are. A crowded area can mean strong demand, but it can also mean thin margins.
+
+### Understand the lease before you fall in love with the site
+Rent is only one line. Ask about the length of the term, renewal terms, rent increases, deposits, fit-out rules, who pays for maintenance and service charges, and what happens if you leave early. Have a lawyer read the tenancy agreement. Our guide on contracts and terms explains how to read key clauses.
+
+### Talk to neighbouring businesses
+Other tenants will often tell you honestly how the landlord behaves, how steady foot traffic really is, and whether the area has seasonal slumps.
+
+## 3. Budget the set-up and the working capital
+
+### List every one-off cost
+Deposits, renovation and fit-out, equipment, furniture, signage, initial stock, point-of-sale and internet set-up, licences and professional fees, insurance, and your opening marketing.
+
+### Plan the months before it earns
+Budget for rent, salaries, utilities, and stock while the new outlet builds its customer base. Many outlets take longer than expected to reach their target sales, so plan for a slower start than you hope for.
+
+### Keep a contingency
+Set aside a cushion for overruns, delays in renovation or approvals, and slow sales. A common mistake is to spend everything on the fit-out and have nothing left to operate.
+
+### Decide how to fund it
+Options include savings, retained profits, partners, and financing from banks or other lenders. Our guide on funding and loans for small businesses explains the main routes. Whatever you choose, make sure the first outlet can still service the repayments if the second one starts slowly. Financing schemes and terms change, so confirm current details with the lender.
+
+### Protect the first outlet
+Do not drain the first outlet's cash or stock to prop up the second. Keep separate records for each location so that you can see which one is really making money. Our guide on choosing accounting software explains how to track locations separately.
+
+## 4. Check licences and registrations for the new premises
+
+Each location is a separate place with its own requirements, so do not assume that what you have for the first outlet automatically covers the second.
+
+### Business registration
+Depending on how your business is structured, a new location may need to be recorded with the Companies Commission of Malaysia (SSM) or updated on your registration. Confirm the current rules with SSM or your company secretary.
+
+### Local council licences
+Businesses that operate from premises usually need a business or trading licence from the local council for that address, and signage or other activities may need separate approval. Requirements vary between councils, so ask the one that covers the new location. Our guide on business licences and permits explains the basics.
+
+### Industry-specific approvals
+Food outlets, clinics, childcare, and certain other businesses may need extra inspections or approvals for each premises. Check what applies to your sector before signing a lease.
+
+### Tax and statutory records
+Your tax, sales and service tax, and payroll records should still reflect all locations correctly. Ask your accountant how to handle a second site. Our guide on payroll and statutory contributions explains what staff records involve.
+
+### Insurance and safety
+Make sure the new premises, stock, and staff are properly covered, and that fire and safety requirements are met. Ask your insurer to confirm what is covered at each address.
+
+## 5. Build a team that can run it without you
+
+### Decide who will manage the new outlet
+The best manager is often someone who already knows your standards. If you promote from the first outlet, plan how to replace them there. Hiring an outsider takes longer to train but may bring fresh skills.
+
+### Write down your standards
+Create simple checklists, price lists, scripts, and routines that a new person can follow. Our guide on employee handbooks and HR policies explains how to set expectations in writing.
+
+### Train before you open
+Let new staff train in the first outlet, learn the product, and practise service before the doors open. Our guide on training your team explains how to build a simple programme.
+
+### Hire the right number of people
+Too few staff burns out the team and annoys customers, while too many wastes cash in a slow start. Review the schedule weekly during the first months. Our guide on hiring your first employee explains the legal basics.
+
+### Give the manager clear authority
+Agree what the manager can decide alone, such as small purchases, schedules, and refunds, and what must come to you. Unclear authority creates delays and resentment.
+
+> A second outlet should prove that your system works, not that you do. If the business needs you in two places at once, it is not ready to be in two places at all.
+
+## 6. Manage two sites without losing quality
+
+### Create a regular rhythm
+Set a weekly routine for visiting each outlet, reviewing the numbers, and meeting the managers. Short, regular check-ins beat occasional crisis visits.
+
+### Track a few simple numbers for each site
+Daily sales, customer count, average spend, stock levels, wastage, and labour cost as a share of sales. Compare the two outlets fairly, and look for trends rather than single bad days.
+
+### Keep stock and suppliers organised
+Decide whether to buy centrally or separately, and how to move stock between sites. Our guide on inventory management explains how to avoid overstocking.
+
+### Keep service and quality consistent
+Customers expect the same experience at both outlets. Use mystery visits, feedback, and reviews to spot slips early. Our guide on managing online reviews explains how to respond.
+
+### Look after yourself and the first outlet
+Founders often neglect the original outlet while chasing the new one. Protect its quality and its staff, because it is still the base that pays the bills.
+
+## 7. Watch for the warning signs of overreach
+
+### Cash is getting tight
+Late supplier payments, delayed salaries, or borrowing from one outlet to pay another are early alarms. Our guide on collecting late payments and cash flow can help.
+
+### The first outlet is slipping
+Falling sales, more complaints, or tired staff at the original site mean attention has been spread too thin.
+
+### You have no clear exit
+Decide in advance how long you will give the new outlet to reach its targets, and what you will do if it does not, whether that is changing the plan, downsizing, or closing. Having a limit protects you from throwing good money after bad.
+
+### Growth is driven by ego, not numbers
+If the reason to keep expanding is image rather than returns, pause and review the figures with your accountant.
+
+If you need an accountant, a lawyer, or local suppliers, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so customers at the new location can find you.
+
+## Common mistakes Malaysian SMEs make when opening a second outlet
+
+- **Expanding before the first outlet is stable.** If it depends on you every day, a second site will only multiply the stress.
+- **Signing a lease without reading it properly.** Long terms, rent increases, and exit costs can trap a young outlet, so have the agreement reviewed.
+- **Underestimating working capital.** The new site needs cash for months before it pays back, so plan for a slow start and keep a buffer.
+
+## Where to start
+
+- **This week:** Review the last six months of the first outlet's real profit and cash position, and write down how it runs without you.
+- **Next:** Define your ideal customer, shortlist a few locations, and visit each at different times.
+- **Then:** Build a full budget with a contingency, check the lease with a lawyer, and confirm licences and registrations for the new address.
+- **Before opening:** Train the manager and team, set your weekly numbers, and decide how long you will give the new outlet to prove itself.
+
+A second outlet is a milestone, not a rescue plan. Expand when the numbers, the systems, and the team are ready, and your business will grow stronger instead of just bigger.`,
+    faqs: [
+      {
+        question: "How do I know if my business is ready for a second outlet?",
+        answer:
+          "Look for several months of genuine profit after paying yourself a fair wage, healthy cash, a documented way of working, and a team that can run the first outlet without you there every hour. If the shop only works when you are present, fix that before expanding.",
+      },
+      {
+        question: "How much money should I set aside for a second outlet?",
+        answer:
+          "It depends on the business and location, so build your own budget. Include deposits, fit-out, equipment, stock, licences, insurance, and several months of rent, wages, and utilities while sales build, plus a contingency for overruns. Get quotes rather than relying on rough guesses.",
+      },
+      {
+        question: "Do I need new licences for a second location?",
+        answer:
+          "Usually yes. Business or trading licences from the local council are normally tied to a specific address, and some sectors need extra approvals per premises. A new location may also need to be recorded with SSM. Requirements vary, so confirm them with the local council and the relevant authorities.",
+      },
+      {
+        question: "How should I choose the location for a second outlet?",
+        answer:
+          "Start with who your customers are and where they live, work, and shop. Check foot traffic at different times, study nearby competitors, review parking and transport, and read the lease carefully before committing. Speaking to neighbouring tenants gives useful honest feedback.",
+      },
+      {
+        question: "Should I borrow to open a second outlet?",
+        answer:
+          "It can help, but only if the first outlet can still comfortably service repayments if the new one starts slowly. Compare options such as savings, partners, and financing, read the terms carefully, and ask your accountant. Financing schemes change, so confirm current details with the lender.",
+      },
+      {
+        question: "How do I manage two outlets without losing quality?",
+        answer:
+          "Write down your standards, train the manager before opening, set a weekly rhythm of visits and meetings, and track a few simple numbers for each site such as sales, customer count, stock, and labour cost. Use feedback and reviews to catch slips early.",
+      },
+      {
+        question: "What are the warning signs that I have expanded too fast?",
+        answer:
+          "Tight cash, late supplier or salary payments, borrowing from one outlet to fund another, falling quality or sales at the original site, and exhausted staff. Decide in advance how long you will give the new outlet to hit its targets and what you will do if it does not.",
+      },
+      {
+        question: "Are there cheaper ways to test a new area before opening a full outlet?",
+        answer:
+          "Yes. Pop-up stalls, kiosks, delivery-only kitchens, events, and stronger online sales can test demand with much less commitment. If the numbers look good, you will make a more confident decision about a permanent location.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "开设第二家分店：规划、融资与避免扩张过度",
+        excerpt:
+          "第二家分店可能让您的触达范围翻倍，也可能让您的问题翻倍。本指南帮助马来西亚中小企业判断自己是否准备好、选择地点、预算开办费用和营运资金、核对新店面的执照和注册、建立一支不依赖您也能运作的团队，并在扩张过度演变成现金危机之前发现警讯。",
+        body: `当第一家店生意兴隆时，开设第二家分店似乎是顺理成章的下一步：更多顾客、更多销售、更大的品牌。但许多企业发现，第二个地点并不只是第一个的复制品：它需要更多现金、更多管理，以及一个在老板不在场时也能运作的模式。
+
+如果做得好，第二家分店可以让您的企业更强大。如果太早开，它可能拖累原本健康的第一家店，并让您的积蓄面临风险。差别通常在于准备，而不是运气。
+
+本文仅提供一般信息，并非财务、法律或税务建议。执照规定、租金惯例、融资选项和成本因地点而异，并且会随时间变化，本指南的信息可能已经过时。在做出承诺之前，请向当地政府机构、相关主管单位、您的贷款机构和会计师确认当前的要求。
+
+## 1. 判断您是否真的准备好了
+
+在第一家店不需要您每个小时都站在里面也能运作良好之前，不要开第二家分店。如果店只有在您在场时才能运转，第二家店只会把您一分为二。
+
+### 确认第一家店确实盈利
+请查看至少几个月的真实数字，并且是在支付您自己合理薪水之后的结果，而不只是销售额。我们关于簿记基础的指南说明了如何取得可靠的记录，关于了解损益表的指南说明了该看什么。一家很忙但几乎只是保本的店是警讯，不是绿灯。
+
+### 看现金，而不只是利润
+一家盈利的企业仍然可能现金耗尽。第二家分店在回本之前会吞掉好几个月的资金。我们关于现金流的指南说明了时机为什么重要。
+
+### 测试这个模式是否可以复制
+写下第一家店是怎么运作的：开店和打烊的流程、供应商、定价、服务标准，以及谁负责什么。如果答案大多是“都在我脑子里”，那么这个模式还没有准备好被复制。
+
+### 诚实面对您的理由
+好的理由包括：一个地点无法满足的稳定需求，或在明显缺乏服务的地区推出已经验证的产品。不好的理由包括：面子、模仿竞争对手，或希望新地点能解决旧店的问题。
+
+### 先考虑成本更低的替代方案
+小型摊位、快闪摊位、仅限外送的厨房、延长营业时间或加强网络业务，都能以低得多的承诺来测试新的需求。我们关于网络销售的指南说明了一条风险较低的路径。
+
+## 2. 用证据选择地点
+
+### 明确您服务的对象
+确定您最好的顾客是谁，以及他们在哪里居住、工作和购物。第二家分店应该触达第一家店触达不到的人，而不是抢走自己的生意。
+
+### 在不同时间前往查看
+查看工作日、周末、早上、晚上以及下雨时的人流。数一数路过的人，观察附近商店实际有谁走进去，并留意停车和公共交通的便利程度。
+
+### 研究竞争对手
+看看附近有谁、他们收费多少，以及生意有多忙。竞争激烈的地区可能代表需求强劲，但也可能代表利润微薄。
+
+### 在爱上这个地点之前先看懂租约
+租金只是其中一项。请询问租期长度、续约条件、租金涨幅、押金、装修规定、谁负责维修和服务费，以及提前退租会怎样。请让律师审阅租赁合约。我们关于合约与条款的指南说明了如何阅读关键条款。
+
+### 与邻近的商家交谈
+其他租户通常会老实告诉您房东的行事方式、人流究竟有多稳定，以及这一带是否有淡季。
+
+## 3. 预算开办费用和营运资金
+
+### 列出每一项一次性成本
+押金、装修、设备、家具、招牌、首批库存、收银系统和网络安装、执照和专业费用、保险，以及开业宣传。
+
+### 规划尚未赚钱的那几个月
+为新分店建立客源期间的租金、薪水、水电费和库存做预算。许多分店比预期更晚才达到目标销售额，所以请为比您希望的更慢的开局做好规划。
+
+### 保留应急资金
+为超支、装修或审批延误以及销售缓慢预留缓冲。一个常见的错误是把所有钱都花在装修上，结果没有资金运营。
+
+### 决定如何筹资
+选项包括储蓄、留存利润、合伙人，以及来自银行或其他贷款机构的融资。我们关于小企业资金与贷款的指南说明了主要途径。无论您选择什么，都要确保即使第二家店开局缓慢，第一家店仍然能够偿还还款。融资计划和条件会变动，所以请向贷款机构确认当前详情。
+
+### 保护第一家店
+不要抽干第一家店的现金或库存去支撑第二家店。为每个地点分别保存记录，这样您才能看出哪一家真正在赚钱。我们关于选择会计软件的指南说明了如何分别追踪各个地点。
+
+## 4. 核对新店面的执照和注册
+
+每个地点都是一个独立的场所，有各自的要求，所以不要以为第一家店已有的手续会自动涵盖第二家。
+
+### 商业注册
+视您的企业结构而定，新地点可能需要向马来西亚公司委员会（SSM）登记，或更新您的注册资料。请向 SSM 或您的公司秘书确认现行规定。
+
+### 地方政府执照
+以店面经营的企业通常需要从地方政府取得该地址的营业或贸易执照，招牌或其他活动也可能需要另外批准。各地方政府的要求不同，所以请询问管辖新地点的那一个。我们关于营业执照与许可证的指南说明了基本知识。
+
+### 行业专属的批准
+食品店、诊所、托儿服务和某些其他行业，每个场所可能需要额外的检查或批准。在签租约之前，请查明哪些适用于您的行业。
+
+### 税务和法定记录
+您的税务、销售税和服务税以及薪资记录仍应正确反映所有地点。请询问会计师如何处理第二个地点。我们关于薪资与法定供款的指南说明了员工记录涉及什么。
+
+### 保险与安全
+确保新场所、库存和员工都获得适当的保障，并且符合消防和安全要求。请让保险公司确认每个地址的保障范围。
+
+## 5. 建立一支不需要您也能运作的团队
+
+### 决定由谁来管理新分店
+最好的经理往往是已经了解您标准的人。如果您从第一家店提拔人选，请规划如何在那边补上他们的位置。聘请外人需要更长的培训时间，但可能带来新的技能。
+
+### 把您的标准写下来
+制作简单的清单、价目表、话术和流程，让新人可以照着做。我们关于员工手册与人力资源政策的指南说明了如何以书面方式设定期望。
+
+### 开业前先培训
+让新员工在第一家店受训，学习产品，并在开门之前练习服务。我们关于培训团队的指南说明了如何建立简单的培训计划。
+
+### 聘请适当的人数
+人手太少会让团队过劳并惹恼顾客，人手太多则会在缓慢的开局中浪费现金。头几个月请每周检讨排班。我们关于聘请第一位员工的指南说明了法律基础。
+
+### 给予经理明确的权限
+约定经理可以自己决定什么，例如小额采购、排班和退款，以及哪些必须交给您决定。权限不清会造成延误和怨气。
+
+> 第二家分店应该证明的是您的系统行得通，而不是您个人行得通。如果企业需要您同时出现在两个地方，那它还没有准备好同时存在于两个地方。
+
+## 6. 管理两个地点而不损失品质
+
+### 建立固定的节奏
+制定每周的例行安排，去各家分店巡视、检视数字并与经理开会。简短而规律的沟通胜过偶尔的危机式探访。
+
+### 为每个地点追踪几个简单的数字
+每日销售额、顾客人数、平均消费、库存水平、损耗，以及人工成本占销售额的比例。公平地比较两家分店，并留意趋势，而不是单一糟糕的一天。
+
+### 让库存和供应商井然有序
+决定是集中采购还是分开采购，以及如何在两个地点之间调拨库存。我们关于库存管理的指南说明了如何避免库存过多。
+
+### 保持服务和品质一致
+顾客期待在两家分店得到相同的体验。请利用神秘访客、反馈和评价及早发现疏漏。我们关于管理网络评价的指南说明了如何回应。
+
+### 照顾好自己和第一家店
+创办人常在追逐新店时忽略原来的店。请保护它的品质和员工，因为它仍然是支付各项开销的根基。
+
+## 7. 留意扩张过度的警讯
+
+### 现金越来越紧
+延迟支付供应商、拖延发薪，或向一家分店借钱去付另一家的账，都是早期警报。我们关于追收逾期货款和现金流的指南可以帮上忙。
+
+### 第一家店正在下滑
+原店销售下降、投诉增加或员工疲惫，意味着您的注意力被分散得太薄。
+
+### 没有明确的退出方案
+事先决定给新分店多长时间达成目标，以及未达标时您会怎么做，无论是调整计划、缩小规模还是关闭。设定一个限度可以避免您一再往无底洞里投钱。
+
+### 扩张由自尊心而非数字驱动
+如果继续扩张的理由是形象而不是回报，请暂停下来，与您的会计师一起检视数字。
+
+如果您需要会计师、律师或本地供应商，可以[浏览目录](/zh)寻找您附近的专业人士，并[创建免费商家列表](/zh/signup)，让新地点的顾客能够找到您。
+
+## 马来西亚中小企业开设第二家分店时的常见错误
+
+- **在第一家店尚未稳定时就扩张。** 如果它每天都依赖您，第二个地点只会让压力成倍增加。
+- **没有仔细阅读就签了租约。** 过长的租期、租金上涨和退出成本可能困住一家年轻的分店，所以请让人审阅合约。
+- **低估营运资金。** 新店在回本之前需要好几个月的现金，所以请为缓慢的开局做好规划并保留缓冲。
+
+## 从哪里开始
+
+- **本周：** 检视第一家店过去六个月的真实利润和现金状况，并写下没有您时它是如何运作的。
+- **接下来：** 明确您的理想顾客，列出几个候选地点，并在不同时间分别前往查看。
+- **然后：** 编制含应急资金的完整预算，请律师审阅租约，并确认新地址所需的执照和注册。
+- **开业前：** 培训经理和团队，设定每周要看的数字，并决定给新分店多长时间来证明自己。
+
+第二家分店是里程碑，而不是救命稻草。当数字、系统和团队都准备好时再扩张，您的企业会变得更强大，而不只是更大。`,
+        faqs: [
+          {
+            question: "我怎么知道我的企业是否准备好开第二家分店？",
+            answer:
+              "请确认有几个月的真实盈利（已扣除您自己合理的薪水）、健康的现金、有文件记录的工作方式，以及一支不需要您每小时在场也能运营第一家店的团队。如果店只有在您在场时才能运转，请先解决这个问题再扩张。",
+          },
+          {
+            question: "我应该为第二家分店预留多少资金？",
+            answer:
+              "这取决于企业和地点，所以请自己编制预算。包括押金、装修、设备、库存、执照、保险，以及销售建立期间好几个月的租金、工资和水电费，另加应对超支的应急资金。请取得报价，而不是凭粗略猜测。",
+          },
+          {
+            question: "第二个地点需要新的执照吗？",
+            answer:
+              "通常需要。地方政府的营业或贸易执照一般与特定地址挂钩，某些行业每个场所还需要额外批准。新地点也可能需要向 SSM 登记。要求各不相同，所以请向地方政府和相关主管单位确认。",
+          },
+          {
+            question: "我应该如何为第二家分店选择地点？",
+            answer:
+              "先从您的顾客是谁、他们在哪里居住、工作和购物开始。在不同时间查看人流，研究附近的竞争对手，检视停车和交通，并在签约前仔细阅读租约。与邻近租户交谈可以得到有用且诚实的反馈。",
+          },
+          {
+            question: "我应该借钱开第二家分店吗？",
+            answer:
+              "可以有帮助，但前提是即使新店开局缓慢，第一家店仍然能轻松偿还还款。请比较储蓄、合伙人和融资等选项，仔细阅读条件，并询问您的会计师。融资计划会变动，所以请向贷款机构确认当前详情。",
+          },
+          {
+            question: "我如何在管理两家分店的同时不损失品质？",
+            answer:
+              "写下您的标准，开业前培训经理，设定每周巡视和开会的节奏，并为每个地点追踪几个简单的数字，例如销售额、顾客人数、库存和人工成本。利用反馈和评价及早发现疏漏。",
+          },
+          {
+            question: "有哪些警讯说明我扩张得太快了？",
+            answer:
+              "现金紧张、延迟支付供应商或工资、向一家分店借钱去支撑另一家、原店品质或销售下滑，以及员工精疲力竭。事先决定给新分店多长时间达成目标，以及未达标时您会怎么做。",
+          },
+          {
+            question: "在开设完整分店之前，有没有更便宜的方式测试新区域？",
+            answer:
+              "有。快闪摊位、小型摊位、仅限外送的厨房、活动和加强网络销售，都可以用少得多的承诺来测试需求。如果数字看起来不错，您对永久地点的决定会更有把握。",
+          },
+        ],
+      },
+      ms: {
+        title: "Membuka Cawangan Kedua: Perancangan, Pembiayaan dan Mengelak Pengembangan Berlebihan",
+        excerpt:
+          "Cawangan kedua boleh menggandakan jangkauan anda, atau menggandakan masalah anda. Panduan ini membantu PKS Malaysia memutuskan sama ada mereka sudah bersedia, memilih lokasi, membuat bajet kos permulaan dan modal kerja, menyemak lesen dan pendaftaran untuk premis baharu, membina pasukan yang boleh beroperasi tanpa anda, dan mengesan tanda amaran pengembangan berlebihan sebelum ia menjadi krisis tunai.",
+        body: `Membuka cawangan kedua terasa seperti langkah seterusnya yang semula jadi apabila outlet pertama sibuk. Lebih ramai pelanggan, lebih banyak jualan, jenama yang lebih besar. Tetapi ramai perniagaan mendapati lokasi kedua bukan sekadar salinan yang pertama: ia memerlukan lebih banyak wang tunai, lebih banyak pengurusan, dan model yang berfungsi tanpa pemilik berada di situ.
+
+Jika dilakukan dengan baik, cawangan kedua boleh mengukuhkan perniagaan anda. Jika dibuka terlalu awal, ia boleh menjejaskan outlet pertama yang sihat dan meletakkan simpanan anda dalam risiko. Perbezaannya biasanya terletak pada persediaan, bukan nasib.
+
+Ini maklumat umum, bukan nasihat kewangan, undang-undang atau cukai. Peraturan pelesenan, norma sewa, pilihan pembiayaan dan kos berbeza mengikut lokasi dan berubah dari semasa ke semasa, dan maklumat dalam panduan ini mungkin sudah lapuk. Sahkan keperluan semasa dengan pihak berkuasa tempatan, pihak berkuasa berkaitan, pemberi pinjaman dan akauntan anda sebelum anda membuat komitmen.
+
+## 1. Putuskan sama ada anda benar-benar bersedia
+
+Jangan buka cawangan kedua sehingga outlet pertama berjalan dengan baik tanpa anda berdiri di dalamnya setiap jam. Jika kedai hanya berfungsi apabila anda ada, kedai kedua hanya akan membahagikan anda kepada dua.
+
+### Pastikan outlet pertama benar-benar untung
+Lihat angka sebenar anda sekurang-kurangnya beberapa bulan, selepas membayar gaji yang adil kepada diri sendiri, bukan sekadar jualan. Panduan kami tentang asas simpan kira menerangkan cara mendapatkan rekod yang boleh dipercayai, dan panduan kami tentang memahami penyata untung rugi menerangkan apa yang perlu diperhatikan. Outlet yang sibuk tetapi hampir tidak mencapai pulang modal adalah amaran, bukan lampu hijau.
+
+### Lihat tunai, bukan hanya untung
+Perniagaan yang untung masih boleh kehabisan tunai. Cawangan kedua akan menyerap wang selama berbulan-bulan sebelum ia memberi pulangan. Panduan kami tentang aliran tunai menerangkan mengapa masa itu penting.
+
+### Uji sama ada model boleh diulang
+Tuliskan cara outlet pertama beroperasi: rutin buka dan tutup, pembekal, harga, standard perkhidmatan, dan siapa melakukan apa. Jika jawapannya kebanyakannya "ada dalam kepala saya", model itu belum bersedia untuk disalin.
+
+### Jujur tentang sebab anda
+Sebab yang baik termasuk permintaan stabil yang tidak dapat dilayan dari satu lokasi, atau produk yang terbukti di kawasan yang jelas kurang dilayan. Sebab yang lemah termasuk kebanggaan, meniru pesaing, atau berharap lokasi baharu akan menyelesaikan masalah di lokasi lama.
+
+### Pertimbangkan alternatif yang lebih murah dahulu
+Kiosk, gerai sementara, dapur untuk penghantaran sahaja, waktu operasi lebih panjang, atau kehadiran dalam talian yang lebih kukuh boleh menguji permintaan baharu dengan komitmen yang jauh lebih kecil. Panduan kami tentang menjual dalam talian menerangkan satu laluan yang kurang berisiko.
+
+## 2. Pilih lokasi berdasarkan bukti
+
+### Tentukan siapa yang anda layani
+Tentukan siapa pelanggan terbaik anda dan di mana mereka tinggal, bekerja dan membeli-belah. Cawangan kedua patut menjangkau orang yang tidak dicapai oleh yang pertama, bukannya merampas jualannya sendiri.
+
+### Lawat pada waktu berbeza
+Semak lalu lintas pejalan kaki pada hari bekerja, hujung minggu, pagi, petang dan semasa hujan. Kira orang yang lalu, perhatikan siapa yang benar-benar masuk ke kedai berdekatan, dan catat kemudahan parkir dan pengangkutan awam.
+
+### Kaji pesaing
+Lihat siapa yang berdekatan, berapa mereka mengenakan harga, dan betapa sibuknya mereka. Kawasan yang sesak boleh bermakna permintaan kukuh, tetapi ia juga boleh bermakna margin yang nipis.
+
+### Fahami sewaan sebelum anda jatuh cinta dengan lokasi
+Sewa hanyalah satu baris. Tanya tentang tempoh perjanjian, syarat pembaharuan, kenaikan sewa, deposit, peraturan ubah suai, siapa menanggung penyelenggaraan dan caj perkhidmatan, dan apa berlaku jika anda keluar awal. Minta peguam membaca perjanjian sewa. Panduan kami tentang kontrak dan terma menerangkan cara membaca klausa utama.
+
+### Bercakap dengan perniagaan jiran
+Penyewa lain selalunya akan memberitahu anda dengan jujur bagaimana tuan tanah bertindak, betapa stabilnya lalu lintas pejalan kaki sebenarnya, dan sama ada kawasan itu mengalami musim lembap.
+
+## 3. Bajet kos permulaan dan modal kerja
+
+### Senaraikan setiap kos sekali sahaja
+Deposit, pengubahsuaian dan lengkapan, peralatan, perabot, papan tanda, stok awal, sistem point-of-sale dan sambungan internet, lesen dan yuran profesional, insurans, dan pemasaran pembukaan anda.
+
+### Rancang bulan-bulan sebelum ia menjana pendapatan
+Bajetkan sewa, gaji, utiliti dan stok semasa cawangan baharu membina pangkalan pelanggannya. Banyak outlet mengambil masa lebih lama daripada dijangka untuk mencapai sasaran jualan, jadi rancang untuk permulaan yang lebih perlahan daripada yang anda harapkan.
+
+### Simpan peruntukan kontingensi
+Asingkan bantalan untuk kos berlebihan, kelewatan pengubahsuaian atau kelulusan, dan jualan yang perlahan. Kesilapan lazim ialah membelanjakan segala-galanya untuk pengubahsuaian dan tiada baki untuk beroperasi.
+
+### Putuskan cara membiayainya
+Pilihan termasuk simpanan, untung terkumpul, rakan kongsi, dan pembiayaan daripada bank atau pemberi pinjaman lain. Panduan kami tentang pembiayaan dan pinjaman untuk perniagaan kecil menerangkan laluan utama. Apa pun pilihan anda, pastikan outlet pertama masih boleh menampung bayaran balik jika yang kedua bermula perlahan. Skim dan terma pembiayaan berubah, jadi sahkan butiran semasa dengan pemberi pinjaman.
+
+### Lindungi outlet pertama
+Jangan kuras tunai atau stok outlet pertama untuk menyokong yang kedua. Simpan rekod berasingan bagi setiap lokasi supaya anda dapat melihat yang mana benar-benar menjana keuntungan. Panduan kami tentang memilih perisian perakaunan menerangkan cara menjejak lokasi secara berasingan.
+
+## 4. Semak lesen dan pendaftaran untuk premis baharu
+
+Setiap lokasi ialah tempat berasingan dengan keperluannya sendiri, jadi jangan anggap apa yang anda ada untuk outlet pertama secara automatik meliputi yang kedua.
+
+### Pendaftaran perniagaan
+Bergantung pada struktur perniagaan anda, lokasi baharu mungkin perlu direkodkan dengan Suruhanjaya Syarikat Malaysia (SSM) atau pendaftaran anda dikemas kini. Sahkan peraturan semasa dengan SSM atau setiausaha syarikat anda.
+
+### Lesen pihak berkuasa tempatan
+Perniagaan yang beroperasi dari premis biasanya memerlukan lesen perniagaan atau perdagangan daripada pihak berkuasa tempatan untuk alamat itu, dan papan tanda atau aktiviti lain mungkin memerlukan kelulusan berasingan. Keperluan berbeza antara pihak berkuasa tempatan, jadi tanya pihak yang meliputi lokasi baharu. Panduan kami tentang lesen dan permit perniagaan menerangkan asasnya.
+
+### Kelulusan khusus industri
+Outlet makanan, klinik, penjagaan kanak-kanak dan beberapa perniagaan lain mungkin memerlukan pemeriksaan atau kelulusan tambahan bagi setiap premis. Semak apa yang terpakai untuk sektor anda sebelum menandatangani sewaan.
+
+### Rekod cukai dan berkanun
+Rekod cukai, cukai jualan dan perkhidmatan, dan gaji anda masih perlu mencerminkan semua lokasi dengan betul. Tanya akauntan anda cara mengendalikan tapak kedua. Panduan kami tentang gaji dan caruman berkanun menerangkan apa yang melibatkan rekod pekerja.
+
+### Insurans dan keselamatan
+Pastikan premis baharu, stok dan pekerja dilindungi dengan sewajarnya, dan keperluan kebakaran dan keselamatan dipenuhi. Minta penanggung insurans anda mengesahkan apa yang dilindungi di setiap alamat.
+
+## 5. Bina pasukan yang boleh menjalankannya tanpa anda
+
+### Putuskan siapa yang akan mengurus cawangan baharu
+Pengurus terbaik selalunya seseorang yang sudah tahu standard anda. Jika anda menaikkan pangkat dari outlet pertama, rancang cara menggantikan mereka di situ. Mengambil orang luar memerlukan lebih masa untuk dilatih tetapi mungkin membawa kemahiran baharu.
+
+### Tuliskan standard anda
+Sediakan senarai semak, senarai harga, skrip dan rutin mudah yang boleh diikuti oleh orang baharu. Panduan kami tentang buku panduan pekerja dan dasar HR menerangkan cara menetapkan jangkaan secara bertulis.
+
+### Latih sebelum membuka
+Biarkan pekerja baharu berlatih di outlet pertama, mempelajari produk, dan melatih perkhidmatan sebelum pintu dibuka. Panduan kami tentang melatih pasukan anda menerangkan cara membina program yang mudah.
+
+### Ambil bilangan orang yang betul
+Kakitangan terlalu sedikit membuatkan pasukan keletihan dan menjengkelkan pelanggan, manakala terlalu ramai membazir tunai pada permulaan yang perlahan. Semak jadual setiap minggu pada bulan-bulan pertama. Panduan kami tentang mengambil pekerja pertama anda menerangkan asas undang-undang.
+
+### Beri pengurus kuasa yang jelas
+Persetujui apa yang boleh diputuskan sendiri oleh pengurus, seperti pembelian kecil, jadual dan bayaran balik, dan apa yang mesti dirujuk kepada anda. Kuasa yang tidak jelas menyebabkan kelewatan dan rasa tidak puas hati.
+
+> Cawangan kedua patut membuktikan bahawa sistem anda berfungsi, bukan bahawa anda yang berfungsi. Jika perniagaan memerlukan anda di dua tempat serentak, ia belum bersedia untuk berada di dua tempat langsung.
+
+## 6. Urus dua tapak tanpa kehilangan kualiti
+
+### Wujudkan rentak tetap
+Tetapkan rutin mingguan untuk melawat setiap outlet, menyemak angka dan bertemu pengurus. Pemeriksaan ringkas yang kerap lebih baik daripada lawatan krisis sekali-sekala.
+
+### Jejak beberapa angka mudah bagi setiap tapak
+Jualan harian, bilangan pelanggan, purata perbelanjaan, tahap stok, pembaziran, dan kos buruh sebagai peratusan jualan. Bandingkan kedua-dua outlet dengan adil, dan cari aliran dan bukannya satu hari yang buruk.
+
+### Pastikan stok dan pembekal teratur
+Putuskan sama ada hendak membeli secara berpusat atau berasingan, dan cara memindahkan stok antara tapak. Panduan kami tentang pengurusan inventori menerangkan cara mengelak stok berlebihan.
+
+### Pastikan perkhidmatan dan kualiti konsisten
+Pelanggan menjangkakan pengalaman yang sama di kedua-dua outlet. Gunakan lawatan misteri, maklum balas dan ulasan untuk mengesan kelemahan awal. Panduan kami tentang menguruskan ulasan dalam talian menerangkan cara membalas.
+
+### Jaga diri anda dan outlet pertama
+Pengasas sering mengabaikan outlet asal semasa mengejar yang baharu. Lindungi kualiti dan pekerjanya, kerana ia masih menjadi asas yang membayar bil.
+
+## 7. Awasi tanda amaran pengembangan berlebihan
+
+### Tunai semakin ketat
+Bayaran pembekal yang lewat, gaji yang tertangguh, atau meminjam daripada satu outlet untuk membayar yang lain ialah penggera awal. Panduan kami tentang mengutip bayaran lewat dan aliran tunai boleh membantu.
+
+### Outlet pertama merosot
+Jualan menurun, lebih banyak aduan, atau pekerja yang letih di tapak asal bermakna perhatian anda telah terlalu nipis.
+
+### Anda tiada pelan keluar yang jelas
+Putuskan lebih awal berapa lama anda akan memberi masa kepada cawangan baharu untuk mencapai sasaran, dan apa yang akan anda lakukan jika ia tidak mencapainya, sama ada mengubah pelan, mengecilkan atau menutupnya. Mempunyai had melindungi anda daripada membuang wang yang baik selepas yang buruk.
+
+### Pertumbuhan didorong oleh ego, bukan angka
+Jika sebab terus berkembang ialah imej dan bukannya pulangan, berhenti sebentar dan semak angka bersama akauntan anda.
+
+Jika anda memerlukan akauntan, peguam atau pembekal tempatan, anda boleh [menyemak imbas direktori](/ms) untuk profesional berhampiran anda, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan di lokasi baharu dapat menemui anda.
+
+## Kesilapan lazim PKS Malaysia semasa membuka cawangan kedua
+
+- **Berkembang sebelum outlet pertama stabil.** Jika ia bergantung kepada anda setiap hari, tapak kedua hanya akan menggandakan tekanan.
+- **Menandatangani sewaan tanpa membacanya dengan betul.** Tempoh panjang, kenaikan sewa dan kos keluar boleh memerangkap outlet muda, jadi minta perjanjian disemak.
+- **Memandang rendah modal kerja.** Tapak baharu memerlukan tunai selama berbulan-bulan sebelum ia memberi pulangan, jadi rancang untuk permulaan yang perlahan dan simpan bantalan.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Semak untung dan kedudukan tunai sebenar outlet pertama enam bulan lepas, dan tuliskan cara ia beroperasi tanpa anda.
+- **Seterusnya:** Tentukan pelanggan ideal anda, senarai pendek beberapa lokasi, dan lawati setiap satu pada waktu berbeza.
+- **Kemudian:** Bina bajet penuh dengan peruntukan kontingensi, minta peguam menyemak sewaan, dan sahkan lesen dan pendaftaran untuk alamat baharu.
+- **Sebelum membuka:** Latih pengurus dan pasukan, tetapkan angka mingguan anda, dan putuskan berapa lama anda akan memberi masa kepada cawangan baharu untuk membuktikan dirinya.
+
+Cawangan kedua ialah satu pencapaian, bukan pelan menyelamatkan diri. Berkembanglah apabila angka, sistem dan pasukan sudah bersedia, dan perniagaan anda akan menjadi lebih kukuh dan bukan sekadar lebih besar.`,
+        faqs: [
+          {
+            question: "Bagaimanakah saya tahu perniagaan saya bersedia untuk cawangan kedua?",
+            answer:
+              "Cari beberapa bulan keuntungan sebenar selepas membayar gaji yang adil kepada diri sendiri, tunai yang sihat, cara kerja yang didokumenkan, dan pasukan yang boleh menjalankan outlet pertama tanpa anda hadir setiap jam. Jika kedai hanya berfungsi apabila anda ada, selesaikan itu dahulu sebelum berkembang.",
+          },
+          {
+            question: "Berapa banyak wang yang patut saya asingkan untuk cawangan kedua?",
+            answer:
+              "Ia bergantung pada perniagaan dan lokasi, jadi bina bajet anda sendiri. Sertakan deposit, pengubahsuaian, peralatan, stok, lesen, insurans, dan beberapa bulan sewa, gaji dan utiliti semasa jualan meningkat, serta peruntukan kontingensi untuk kos berlebihan. Dapatkan sebut harga dan bukannya bergantung pada anggaran kasar.",
+          },
+          {
+            question: "Adakah saya memerlukan lesen baharu untuk lokasi kedua?",
+            answer:
+              "Biasanya ya. Lesen perniagaan atau perdagangan daripada pihak berkuasa tempatan lazimnya dikaitkan dengan alamat tertentu, dan sesetengah sektor memerlukan kelulusan tambahan bagi setiap premis. Lokasi baharu juga mungkin perlu direkodkan dengan SSM. Keperluan berbeza, jadi sahkan dengan pihak berkuasa tempatan dan pihak berkuasa berkaitan.",
+          },
+          {
+            question: "Bagaimanakah saya patut memilih lokasi untuk cawangan kedua?",
+            answer:
+              "Mulakan dengan siapa pelanggan anda dan di mana mereka tinggal, bekerja dan membeli-belah. Semak lalu lintas pejalan kaki pada waktu berbeza, kaji pesaing berdekatan, semak parkir dan pengangkutan, dan baca sewaan dengan teliti sebelum membuat komitmen. Bercakap dengan penyewa jiran memberi maklum balas jujur yang berguna.",
+          },
+          {
+            question: "Patutkah saya meminjam untuk membuka cawangan kedua?",
+            answer:
+              "Ia boleh membantu, tetapi hanya jika outlet pertama masih boleh menampung bayaran balik dengan selesa jika yang baharu bermula perlahan. Bandingkan pilihan seperti simpanan, rakan kongsi dan pembiayaan, baca terma dengan teliti, dan tanya akauntan anda. Skim pembiayaan berubah, jadi sahkan butiran semasa dengan pemberi pinjaman.",
+          },
+          {
+            question: "Bagaimanakah saya mengurus dua outlet tanpa kehilangan kualiti?",
+            answer:
+              "Tuliskan standard anda, latih pengurus sebelum membuka, tetapkan rentak mingguan lawatan dan mesyuarat, dan jejak beberapa angka mudah bagi setiap tapak seperti jualan, bilangan pelanggan, stok dan kos buruh. Gunakan maklum balas dan ulasan untuk mengesan kelemahan awal.",
+          },
+          {
+            question: "Apakah tanda amaran bahawa saya berkembang terlalu cepat?",
+            answer:
+              "Tunai ketat, bayaran pembekal atau gaji yang lewat, meminjam daripada satu outlet untuk membiayai yang lain, kualiti atau jualan yang menurun di tapak asal, dan pekerja yang keletihan. Putuskan lebih awal berapa lama anda akan memberi masa kepada cawangan baharu mencapai sasarannya dan apa yang akan anda lakukan jika ia tidak mencapainya.",
+          },
+          {
+            question: "Adakah terdapat cara yang lebih murah untuk menguji kawasan baharu sebelum membuka outlet penuh?",
+            answer:
+              "Ya. Gerai sementara, kiosk, dapur untuk penghantaran sahaja, acara dan jualan dalam talian yang lebih kukuh boleh menguji permintaan dengan komitmen yang jauh lebih kecil. Jika angka kelihatan baik, anda akan membuat keputusan yang lebih yakin tentang lokasi tetap.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "business-continuity-planning-for-malaysian-smes",
+    title: "Business Continuity Planning for Malaysian SMEs: Floods, Outages, and Emergencies",
+    seoTitle: "Business Continuity Planning for Malaysian SMEs",
+    seoDescription:
+      "A practical continuity plan for Malaysian SMEs: flood and outage risks, backups, insurance checks, emergency contacts, staff communication and testing.",
+    coverImage: {
+      file: "business-continuity-cover.webp",
+      mimeType: "image/webp",
+      alt: "A laptop on a white desk connected by cables to three portable external drives in blue, black and red",
+      altTranslations: {
+        zh: "白色办公桌上的一台笔记本电脑，通过数据线连接着蓝色、黑色和红色三个便携式外置硬盘",
+        ms: "Sebuah komputer riba di atas meja putih disambungkan dengan kabel kepada tiga pemacu luaran mudah alih berwarna biru, hitam dan merah",
+      },
+    },
+    contentImages: {
+      rain: {
+        file: "business-continuity-rain.webp",
+        mimeType: "image/webp",
+        alt: "Close-up of raindrops running down a window pane on a grey, overcast day",
+        altTranslations: {
+          zh: "阴沉灰暗的天气里，雨滴沿着窗玻璃滑落的特写",
+          ms: "Gambar dekat titisan hujan mengalir pada cermin tingkap pada hari yang kelabu dan mendung",
+        },
+        after: "Write down the few things that would stop you earning money if they failed tomorrow morning.",
+        afterTranslations: {
+          zh: "写下那几样如果明天早上出了问题就会让您赚不到钱的事物。",
+          ms: "Tuliskan beberapa perkara yang akan menghentikan anda daripada menjana pendapatan jika ia gagal esok pagi.",
+        },
+      },
+    },
+    excerpt:
+      "Floods, power cuts, internet outages, a supplier that suddenly disappears, or the one person who knows everything falling ill: any of them can stop a small business for days. This guide shows Malaysian SMEs how to spot their real risks, protect records and data, check insurance, prepare contacts and a simple response plan, communicate with staff and customers, and test the plan before it is needed.",
+    body: `Most small businesses run on tight margins and tight routines. That is fine until something breaks the routine: a flash flood, a power cut that lasts a day, a failed laptop with all your invoices on it, or a key supplier that cannot deliver. For a large company that is an inconvenience. For a small one, a few lost days can mean lost customers and missed payroll.
+
+Business continuity planning sounds formal, but for an SME it can be a few pages: what could go wrong, what you would do, who you would call, and how you would keep the most important parts of the business running. The goal is not to prevent every problem, but to recover faster and with less panic.
+
+This is general information, not legal, insurance, or safety advice. Local conditions, official warnings, insurance terms, and recommended practices change, and information in this guide may be out of date. Confirm current advice with the relevant authorities, your insurer, and your professional advisers.
+
+## 1. Know what you are protecting
+
+Write down the few things that would stop you earning money if they failed tomorrow morning. This keeps the plan short and focused on what really matters.
+
+### Your critical activities
+Ask what must keep working for you to serve customers and get paid: your premises, your stock, your equipment, your point-of-sale or booking system, your internet, your website or online shop, and your delivery or transport.
+
+### Your critical people
+Note who holds essential knowledge or access: the owner, the person who does the payroll, the cook, the technician, the only one with the bank login. Single points of failure are the most common hidden risk in small firms.
+
+### Your critical records
+Customer lists, orders, invoices, supplier details, staff records, contracts, licences, and bank and tax information. Our guide on bookkeeping basics explains why good records matter even before a crisis.
+
+### Your critical suppliers and partners
+Identify suppliers, landlords, couriers, and software providers that you cannot easily replace in a week.
+
+### How long can you stop?
+For each critical item, estimate how long you could be without it before real damage begins: hours, a day, a week. This tells you where to spend your effort first.
+
+## 2. Understand the risks that apply to you in Malaysia
+
+### Floods and heavy rain
+Parts of Malaysia are prone to flooding, particularly during monsoon periods and heavy storms, and flash floods can hit urban areas. Check whether your premises, your stockroom, and your suppliers sit in a flood-prone area. Official weather and flood warnings come from the relevant national agencies, and the Malaysian Meteorological Department and the National Disaster Management Agency publish information you can follow. Confirm current channels and advice on their official pages.
+
+### Power cuts and voltage problems
+Even short outages can corrupt data, spoil stock in chillers and freezers, and stop card terminals and lights. Consider what a few hours or a full day without power would do to you.
+
+### Internet and phone outages
+If you take orders, payments, or bookings online, an outage can freeze your sales. Work out what you can still do offline, and whether a backup connection is worthwhile.
+
+### Fire, theft, and damage
+Electrical faults, kitchen fires, break-ins, and storm damage can all close you for days.
+
+### Supplier or delivery failure
+A key supplier closing, a shipment stuck, or a price spike can empty your shelves. Our guide on managing suppliers explains how to reduce dependence on one source.
+
+### Illness, resignation, and key-person loss
+If the one person who knows how things work is suddenly unavailable, the business may stall.
+
+### Cyber incidents and data loss
+Ransomware, hacked accounts, lost phones, and failed hard drives can lock you out of your own records. Our guide on cybersecurity explains the basics, and our guide on personal data protection explains your obligations when customer data is involved.
+
+### Rank the risks
+Give each risk a rough score for how likely it is and how badly it would hurt. Start planning for the ones that are both likely and damaging.
+
+## 3. Protect your records and data
+
+### Follow a simple backup habit
+Keep copies of important files in more than one place, with at least one copy away from your premises or in a trusted cloud service. A single laptop or a single drive is not a backup.
+
+### Back up on a schedule
+Decide how often your data changes and how much you could afford to lose, a day or a week, and set backups accordingly. Automatic backups are better than good intentions.
+
+### Test restoring
+A backup is only useful if you can actually restore from it. Try recovering a file or an invoice record now and then.
+
+### Keep paper originals safe
+Important documents such as licences, tenancy agreements, insurance policies, and key contracts should be scanned, and the originals stored somewhere safe from water and fire. Our guide on small business tax audits explains how long records may need to be kept.
+
+### Secure accounts and devices
+Use strong, separate passwords, turn on two-step verification, and keep a secure record of who has access to what, so that someone else can step in during an emergency.
+
+### Think about your software
+If you use accounting software or a point-of-sale system, check how it is backed up and how you could keep trading if it were unavailable. Our guide on choosing accounting software explains what to ask vendors.
+
+## 4. Check your insurance, honestly
+
+### Read what you actually have
+Many owners assume they are covered and discover otherwise after a loss. Ask your insurer or agent to explain, in plain terms, what is and is not covered.
+
+### Common types to ask about
+Fire, flood and other natural events, theft, public liability, stock, equipment and electronics, business interruption (loss of income while you cannot operate), and employee-related cover. Cover for floods and loss of income is often separate or optional, so check whether it applies to you.
+
+### Check limits, excesses, and exclusions
+Look at how much is covered, what you pay first, and what is left out. Under-insured stock or equipment is a common problem.
+
+### Know the claim process
+Ask what proof you need, how quickly you must report, and who to call. Keep photos and lists of stock and equipment, with receipts where possible.
+
+### Review every year
+Your business changes, and so should your cover. Our guide on business insurance explains the main types for SMEs, and insurance products and terms change, so confirm the details with your insurer.
+
+## 5. Build a simple response plan
+
+### Make a one-page emergency sheet
+List the first things to do in the first hour for each major risk: who to call, who decides, where to meet, what to switch off, what to move to safety.
+
+### Keep an emergency contact list
+Include staff and their emergency contacts, the landlord or building management, key suppliers, your insurer, your bank, the electricity provider, your internet provider, your accountant, and the relevant authorities. Keep it somewhere you can reach without your computer, such as in print and on your phone.
+
+### Prepare basic supplies
+Torches, a charged power bank, a first-aid kit, spare batteries, plastic sheets or covers for stock and equipment, and a way to raise stock off the floor if flooding is a risk.
+
+### Plan how to keep serving customers
+Decide what you could do from home or another location: take orders by phone, sell online, work from a laptop, or use a temporary pick-up point. Our guide on selling online explains how to set up a simple channel.
+
+### Plan the money side
+Know how you would pay staff and suppliers if sales stopped for a week, and keep an emergency cash reserve if you can. Our guide on cash flow explains how to build a buffer.
+
+### Decide who can act
+Name a deputy for each important role, and make sure they have access and know the steps. Our guide on employee handbooks and HR policies explains how to write down procedures.
+
+> A business continuity plan does not need to be long. A one-page sheet that your team has actually seen is worth more than a thick folder that nobody has opened.
+
+## 6. Communicate with staff and customers
+
+### Tell staff what to do and where to look
+Agree on a main channel, such as a messaging group, and a backup, such as a phone tree. Make sure staff know when to come in, when to stay home, and how they will be told.
+
+### Put safety first
+In a flood, fire, or severe storm, the safety of people comes before stock or equipment. Tell staff clearly that nobody should take risks to save property, and follow official instructions and warnings.
+
+### Keep customers informed
+A short, honest message about delays or closures, sent through your usual channels, protects trust. Our guide on managing online reviews explains how to handle complaints calmly.
+
+### Handle pay and leave fairly
+Think about how you will treat wages and working arrangements during a disruption, and check the rules that apply. Our guide on payroll and statutory contributions and our guide on employee leave explain the basics, and you should confirm current rules with the relevant authority or an adviser.
+
+### Talk to suppliers and lenders early
+If you may miss a delivery or a payment, tell the other side sooner rather than later. Many will work with a business that communicates.
+
+## 7. Test, learn, and keep it alive
+
+### Run a short drill
+Once or twice a year, walk through a scenario with your team, such as a flood warning or a day without internet, and see what breaks. Fix the gaps you find.
+
+### Keep the plan current
+Update contacts, passwords, and procedures when people or suppliers change. Put a reminder in your calendar.
+
+### Review after every real incident
+After any disruption, big or small, ask what worked, what did not, and what to change. Our guide on risk management explains how to turn lessons into habits.
+
+### Improve step by step
+You do not need to do everything at once. Start with backups, an emergency contact list, and an insurance check, then add the rest over time.
+
+If you need an insurance adviser, an IT support provider, or a local supplier, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so customers can still find you quickly after a disruption.
+
+## Common mistakes Malaysian SMEs make with business continuity
+
+- **Assuming insurance covers everything.** Flood and loss-of-income cover are often separate, so read the policy and ask questions before you need to claim.
+- **Keeping backups in the same place as the originals.** A fire or flood that destroys the laptop will also destroy the drive beside it, so keep one copy elsewhere and test restoring it.
+- **Relying on one person who knows everything.** If the owner or one key staff member is unavailable, nobody else can pay people, log in, or place orders, so share access and write down the steps.
+
+## Where to start
+
+- **This week:** List your critical activities, people, records, and suppliers, and note how long you could manage without each.
+- **Next:** Set up automatic backups with one copy off site, test a restore, and write a one-page emergency contact list.
+- **Then:** Check your insurance with your insurer, and prepare basic emergency supplies and a plan for keeping customers informed.
+- **Every year:** Run a short drill, update the plan, and review your cover.
+
+Disruptions will happen, but they do not have to be disasters. A little preparation now means you can protect people first, keep your records safe, and get back to serving customers sooner.`,
+    faqs: [
+      {
+        question: "What is a business continuity plan and does a small business need one?",
+        answer:
+          "It is a short written plan for how you would keep the key parts of your business running, and recover, if something disrupted it, such as a flood, power cut, system failure, or the loss of a key person. Even a one-page version helps a small business respond faster and with less panic.",
+      },
+      {
+        question: "What are the most common disruption risks for Malaysian SMEs?",
+        answer:
+          "Floods and heavy rain, power and internet outages, fire or theft, supplier failure, illness or loss of a key person, and cyber incidents or data loss. The ones that matter most depend on your location and business, so rank them by how likely and how damaging they are for you.",
+      },
+      {
+        question: "How should I back up my business records?",
+        answer:
+          "Keep copies in more than one place, with at least one away from your premises or in a trusted cloud service, set backups to run automatically, and test restoring now and then. Scan important paper documents and store originals safely. A single laptop or drive is not a backup.",
+      },
+      {
+        question: "Does business insurance cover floods and lost income?",
+        answer:
+          "It depends on your policy. Flood cover and business interruption cover, which replaces income while you cannot operate, are often separate or optional. Ask your insurer exactly what is covered, the limits and exclusions, and how to claim, and confirm current terms directly with them.",
+      },
+      {
+        question: "What should be in an emergency contact list?",
+        answer:
+          "Staff and their emergency contacts, building management or the landlord, key suppliers, your insurer, bank, electricity and internet providers, your accountant, and relevant authorities. Keep a printed copy and a copy on your phone so you can reach it without your computer.",
+      },
+      {
+        question: "How do I keep serving customers during an outage or closure?",
+        answer:
+          "Decide in advance what you could do from home or another location, such as taking orders by phone or online, using a temporary pick-up point, or working from a laptop with mobile data. Tell customers promptly about delays or closures through your usual channels.",
+      },
+      {
+        question: "How do I protect my team during a flood or severe weather?",
+        answer:
+          "Put people's safety ahead of stock or equipment, follow official warnings and instructions, agree how staff will be told when to come in or stay home, and make sure nobody takes risks to save property. Confirm current official advice on the relevant agency pages.",
+      },
+      {
+        question: "How often should I test and update my plan?",
+        answer:
+          "Run a short drill once or twice a year, update contacts, passwords, and procedures whenever people or suppliers change, and review the plan after any real incident. Keep improving step by step rather than trying to do everything at once.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "马来西亚中小企业的业务持续规划：水灾、停电与紧急情况",
+        excerpt:
+          "水灾、停电、网络中断、供应商突然消失，或是唯一什么都懂的那个人生病：其中任何一件都可能让小企业停摆好几天。本指南帮助马来西亚中小企业找出真正的风险、保护记录和数据、检查保险、准备联系人和简单的应变计划、与员工和顾客沟通，并在需要之前先测试这份计划。",
+        body: `大多数小企业都在微薄的利润和紧凑的日常运作中经营。这没有问题，直到有事打乱了这种日常：一场突发水灾、持续一天的停电、存着所有发票的笔记本电脑坏掉，或是主要供应商无法交货。对大公司来说这只是不便。对小公司来说，失去几天可能意味着失去顾客和发不出工资。
+
+业务持续规划听起来很正式，但对中小企业而言可以只是几页纸：可能出什么问题、您会怎么做、您会打给谁，以及您如何让企业最重要的部分继续运转。目标不是防止每一个问题，而是更快、更不慌乱地恢复。
+
+本文仅提供一般信息，并非法律、保险或安全建议。当地情况、官方警告、保险条款和建议做法会变化，本指南的信息可能已经过时。请向相关主管单位、您的保险公司和专业顾问确认当前的建议。
+
+## 1. 了解您要保护什么
+
+写下那几样如果明天早上出了问题就会让您赚不到钱的事物。这能让计划保持简短，并专注于真正重要的事。
+
+### 您的关键业务活动
+问问自己，什么必须持续运作才能服务顾客并收到款项：您的店面、库存、设备、收银或预订系统、网络、网站或网络商店，以及配送或运输。
+
+### 您的关键人员
+记下谁掌握着重要的知识或权限：老板、负责发薪水的人、厨师、技术人员、唯一有银行登入权限的人。单点故障是小公司中最常见的隐藏风险。
+
+### 您的关键记录
+客户名单、订单、发票、供应商资料、员工记录、合约、执照，以及银行和税务信息。我们关于簿记基础的指南说明了为什么好的记录在危机来临之前就很重要。
+
+### 您的关键供应商和合作伙伴
+找出您一个星期内难以替换的供应商、房东、快递公司和软件提供商。
+
+### 您能停多久？
+对每个关键项目，估计在造成真正损害之前，您能撑多久没有它：几个小时、一天还是一个星期。这能告诉您应该先把精力用在哪里。
+
+## 2. 了解适用于您的马来西亚风险
+
+### 水灾和大雨
+马来西亚部分地区容易发生水灾，尤其是在季风期和暴雨期间，城市地区也可能出现突发水灾。请检查您的店面、库房和供应商是否位于易受水灾的地区。官方的天气和水灾警告来自相关国家机构，马来西亚气象局和国家灾害管理局会发布您可以关注的信息。请在其官方页面确认当前的渠道和建议。
+
+### 停电和电压问题
+即使是短暂的停电，也可能损坏数据、使冷藏和冷冻库中的货品变质，并使刷卡机和灯光停止运作。想想几个小时或一整天没有电会对您造成什么影响。
+
+### 网络和电话中断
+如果您通过网络接受订单、付款或预订，网络中断可能会使您的销售停摆。想想您在离线时还能做什么，以及备用网络连接是否值得。
+
+### 火灾、盗窃和损坏
+电线故障、厨房火灾、闯空门和风暴损坏，都可能让您停业好几天。
+
+### 供应商或配送失败
+主要供应商倒闭、货物被卡住或价格暴涨，都可能让您的货架空空如也。我们关于管理供应商的指南说明了如何减少对单一来源的依赖。
+
+### 疾病、辞职和关键人物流失
+如果唯一知道事情怎么运作的人突然无法上班，企业可能会停摆。
+
+### 网络安全事件和数据丢失
+勒索软件、被入侵的账户、遗失的手机和损坏的硬盘，都可能把您锁在自己的记录之外。我们关于网络安全的指南说明了基本知识，关于个人资料保护的指南说明了涉及客户资料时您的义务。
+
+### 为风险排序
+为每项风险大致评分：发生的可能性有多大，以及一旦发生损害有多严重。请先针对那些既可能发生又有破坏性的风险进行规划。
+
+## 3. 保护您的记录和数据
+
+### 养成简单的备份习惯
+把重要文件的副本存放在多个地方，至少有一份在您的店面之外，或存放在可信赖的云端服务上。一台笔记本电脑或一个硬盘并不是备份。
+
+### 按计划备份
+判断您的数据多久变动一次，以及您能承受损失多少，一天还是一个星期，并据此设定备份。自动备份比良好的意愿更可靠。
+
+### 测试还原
+备份只有在您真的能够还原时才有用。请不时尝试恢复一个文件或一笔发票记录。
+
+### 妥善保管纸质原件
+执照、租赁合约、保险单和重要合约等重要文件应该扫描，并把原件存放在不怕水和火的安全地方。我们关于小企业税务审计的指南说明了记录可能需要保存多久。
+
+### 保护账户和设备
+使用强而各不相同的密码，开启两步验证，并安全地记录谁有权访问什么，这样紧急时别人也能接手。
+
+### 想想您的软件
+如果您使用会计软件或收银系统，请查核它如何备份，以及如果它无法使用时您如何继续营业。我们关于选择会计软件的指南说明了该问供应商什么。
+
+## 4. 诚实地检查您的保险
+
+### 看清楚您实际有什么
+许多业主以为自己有保障，却在出事之后才发现并非如此。请让您的保险公司或代理人用通俗的话解释哪些有保障、哪些没有。
+
+### 要询问的常见类型
+火灾、水灾和其他自然事件、盗窃、公众责任、库存、设备和电子产品、营业中断（在您无法营业期间的收入损失），以及与员工相关的保障。水灾和收入损失的保障往往是单独或可选的，所以请查核它是否适用于您。
+
+### 检查限额、自付额和除外责任
+看看保障多少、您要先自付多少，以及哪些不在保障范围内。库存或设备投保不足是常见的问题。
+
+### 了解理赔流程
+询问需要什么证明、必须多快通报，以及该联系谁。请保留库存和设备的照片与清单，并尽可能保存收据。
+
+### 每年检讨
+您的企业会变，保障也应该跟着变。我们关于企业保险的指南说明了中小企业的主要类型，保险产品和条款会变动，所以请向保险公司确认详情。
+
+## 5. 制定简单的应变计划
+
+### 制作一页的紧急指引
+针对每项主要风险，列出第一个小时要做的第一件事：打给谁、谁来决定、在哪里集合、要关掉什么、要把什么移到安全的地方。
+
+### 保存紧急联系人名单
+包括员工及其紧急联系人、房东或大厦管理处、主要供应商、您的保险公司、银行、电力供应商、网络供应商、会计师，以及相关主管单位。请存放在不用电脑也能取得的地方，例如打印本和您的手机。
+
+### 准备基本物资
+手电筒、已充电的充电宝、急救包、备用电池、用来盖住库存和设备的塑料布或防护罩，以及在有水灾风险时把库存垫高离地的方法。
+
+### 规划如何继续服务顾客
+决定您可以在家里或其他地点做什么：以电话接订单、网络销售、用笔记本电脑办公，或使用临时取货点。我们关于网络销售的指南说明了如何设置简单的渠道。
+
+### 规划资金方面
+知道如果销售停顿一个星期，您将如何支付员工和供应商，并在可能的情况下保留一笔紧急现金储备。我们关于现金流的指南说明了如何建立缓冲。
+
+### 决定谁可以行动
+为每个重要职位指定一位代理人，并确保他们有权限并知道步骤。我们关于员工手册与人力资源政策的指南说明了如何把程序写下来。
+
+> 业务持续计划不需要很长。一份团队真正看过的一页纸，比一本没人翻开的厚厚文件夹更有价值。
+
+## 6. 与员工和顾客沟通
+
+### 告诉员工该做什么、去哪里看消息
+约定一个主要渠道，例如通讯群组，以及一个备用方式，例如电话联络树。确保员工知道什么时候上班、什么时候留在家里，以及将如何被通知。
+
+### 安全第一
+在水灾、火灾或强风暴中，人员的安全优先于库存或设备。请明确告诉员工，不要为了保住财物而冒险，并遵守官方的指示和警告。
+
+### 让顾客知情
+通过您惯用的渠道发出关于延误或休业的简短而诚实的信息，可以保护信任。我们关于管理网络评价的指南说明了如何冷静地处理投诉。
+
+### 公平处理薪资和休假
+想想在中断期间您将如何处理工资和工作安排，并查核适用的规定。我们关于薪资与法定供款的指南和关于员工休假的指南说明了基本知识，您应该向相关主管单位或顾问确认现行规定。
+
+### 及早与供应商和贷款机构沟通
+如果您可能错过交货或付款，请尽早告诉对方。许多人愿意与保持沟通的企业合作。
+
+## 7. 测试、学习并保持计划有效
+
+### 进行简短的演练
+每年一两次，与团队一起演练一个情景，例如水灾警报或一天没有网络，看看哪里会出问题。修补您发现的漏洞。
+
+### 让计划保持最新
+当人员或供应商有变动时，更新联系人、密码和程序。请在日历中设定提醒。
+
+### 每次真实事件之后都要检讨
+任何中断之后，无论大小，都问一问什么有效、什么无效，以及要改什么。我们关于风险管理的指南说明了如何把教训变成习惯。
+
+### 一步一步改进
+您不需要一次做完所有事。先从备份、紧急联系人名单和保险检查开始，然后随时间逐步补上其余的部分。
+
+如果您需要保险顾问、信息技术支持服务商或本地供应商，可以[浏览目录](/zh)寻找您附近的专业人士，并[创建免费商家列表](/zh/signup)，让顾客在中断之后仍能很快找到您。
+
+## 马来西亚中小企业在业务持续方面的常见错误
+
+- **以为保险涵盖一切。** 水灾和收入损失的保障往往是单独的，所以请在需要理赔之前先阅读保单并提出问题。
+- **把备份和原件放在同一个地方。** 摧毁笔记本电脑的火灾或水灾也会毁掉旁边的硬盘，所以请在别处保留一份副本，并测试还原。
+- **依赖唯一什么都懂的那个人。** 如果老板或一位关键员工无法上班，其他人就无法发薪水、登入系统或下订单，所以请分享权限并把步骤写下来。
+
+## 从哪里开始
+
+- **本周：** 列出您的关键业务活动、人员、记录和供应商，并记下没有每一项时您能撑多久。
+- **接下来：** 设置自动备份并至少有一份在异地，测试一次还原，并写下一页的紧急联系人名单。
+- **然后：** 向保险公司检查您的保险，并准备基本的紧急物资和让顾客知情的计划。
+- **每年：** 进行简短的演练，更新计划，并检讨您的保障。
+
+中断总会发生，但不一定要演变成灾难。现在做一点准备，意味着您可以先保护人员、保护好记录，并更快地回到服务顾客的工作。`,
+        faqs: [
+          {
+            question: "什么是业务持续计划？小企业需要吗？",
+            answer:
+              "它是一份简短的书面计划，说明如果水灾、停电、系统故障或关键人员流失等事件打乱了业务，您如何让企业的关键部分继续运转并恢复。即使只有一页，也能帮助小企业更快、更不慌乱地应对。",
+          },
+          {
+            question: "马来西亚中小企业最常见的中断风险有哪些？",
+            answer:
+              "水灾和大雨、停电和网络中断、火灾或盗窃、供应商失败、疾病或关键人员流失，以及网络安全事件或数据丢失。哪些最重要取决于您的地点和企业，所以请按对您而言发生的可能性和破坏程度来排序。",
+          },
+          {
+            question: "我应该如何备份企业记录？",
+            answer:
+              "把副本存放在多个地方，至少有一份在您的店面之外或存放在可信赖的云端服务上，设置自动备份，并不时测试还原。请扫描重要的纸质文件并妥善保存原件。一台笔记本电脑或一个硬盘并不是备份。",
+          },
+          {
+            question: "企业保险涵盖水灾和收入损失吗？",
+            answer:
+              "这取决于您的保单。水灾保障和营业中断保障（在您无法营业期间补偿收入）往往是单独或可选的。请向保险公司询问究竟涵盖什么、限额和除外责任，以及如何理赔，并直接向他们确认当前条款。",
+          },
+          {
+            question: "紧急联系人名单应该包括什么？",
+            answer:
+              "员工及其紧急联系人、大厦管理处或房东、主要供应商、您的保险公司、银行、电力和网络供应商、会计师，以及相关主管单位。请保留一份打印本和一份手机里的副本，这样不用电脑也能取得。",
+          },
+          {
+            question: "在停电或休业期间，我如何继续服务顾客？",
+            answer:
+              "事先决定您可以在家里或其他地点做什么，例如以电话或网络接订单、使用临时取货点，或用笔记本电脑搭配手机数据办公。请通过您惯用的渠道及时告知顾客延误或休业的情况。",
+          },
+          {
+            question: "在水灾或恶劣天气期间，我如何保护我的团队？",
+            answer:
+              "把人员的安全置于库存或设备之前，遵守官方的警告和指示，约定员工将如何被通知上班或留在家中，并确保没有人为了保住财物而冒险。请在相关机构的页面确认当前的官方建议。",
+          },
+          {
+            question: "我应该多久测试和更新一次计划？",
+            answer:
+              "每年进行一两次简短的演练，每当人员或供应商有变动时更新联系人、密码和程序，并在任何真实事件之后检讨计划。请一步一步持续改进，而不是试图一次做完所有事。",
+          },
+        ],
+      },
+      ms: {
+        title: "Perancangan Kesinambungan Perniagaan untuk PKS Malaysia: Banjir, Gangguan Bekalan dan Kecemasan",
+        excerpt:
+          "Banjir, bekalan elektrik terputus, gangguan internet, pembekal yang tiba-tiba hilang, atau satu-satunya orang yang tahu segala-galanya jatuh sakit: mana-mana satu boleh menghentikan perniagaan kecil selama beberapa hari. Panduan ini menunjukkan cara PKS Malaysia mengenal pasti risiko sebenar, melindungi rekod dan data, menyemak insurans, menyediakan kenalan dan pelan tindak balas yang mudah, berkomunikasi dengan pekerja dan pelanggan, dan menguji pelan itu sebelum ia diperlukan.",
+        body: `Kebanyakan perniagaan kecil beroperasi dengan margin yang nipis dan rutin yang ketat. Itu tidak mengapa sehingga sesuatu mengganggu rutin itu: banjir kilat, bekalan elektrik terputus sehari, komputer riba rosak dengan semua invois anda di dalamnya, atau pembekal utama yang tidak dapat menghantar. Bagi syarikat besar itu hanyalah kesulitan. Bagi syarikat kecil, kehilangan beberapa hari boleh bermakna kehilangan pelanggan dan gagal membayar gaji.
+
+Perancangan kesinambungan perniagaan kedengaran formal, tetapi bagi PKS ia boleh menjadi beberapa muka surat: apa yang mungkin berlaku, apa yang akan anda lakukan, siapa yang akan anda hubungi, dan bagaimana anda akan memastikan bahagian terpenting perniagaan terus berjalan. Matlamatnya bukan untuk mencegah setiap masalah, tetapi untuk pulih lebih cepat dan dengan kurang panik.
+
+Ini maklumat umum, bukan nasihat undang-undang, insurans atau keselamatan. Keadaan tempatan, amaran rasmi, terma insurans dan amalan yang disyorkan berubah, dan maklumat dalam panduan ini mungkin sudah lapuk. Sahkan nasihat semasa dengan pihak berkuasa berkaitan, penanggung insurans dan penasihat profesional anda.
+
+## 1. Ketahui apa yang anda lindungi
+
+Tuliskan beberapa perkara yang akan menghentikan anda daripada menjana pendapatan jika ia gagal esok pagi. Ini memastikan pelan itu ringkas dan tertumpu pada perkara yang benar-benar penting.
+
+### Aktiviti kritikal anda
+Tanya apa yang mesti terus berfungsi supaya anda dapat melayan pelanggan dan dibayar: premis anda, stok, peralatan, sistem point-of-sale atau tempahan, internet, laman web atau kedai dalam talian, dan penghantaran atau pengangkutan anda.
+
+### Orang kritikal anda
+Catat siapa yang memegang pengetahuan atau akses penting: pemilik, orang yang menguruskan gaji, tukang masak, juruteknik, satu-satunya orang yang mempunyai log masuk bank. Titik kegagalan tunggal ialah risiko tersembunyi yang paling biasa dalam syarikat kecil.
+
+### Rekod kritikal anda
+Senarai pelanggan, pesanan, invois, butiran pembekal, rekod pekerja, kontrak, lesen, dan maklumat bank dan cukai. Panduan kami tentang asas simpan kira menerangkan mengapa rekod yang baik penting walaupun sebelum krisis.
+
+### Pembekal dan rakan kritikal anda
+Kenal pasti pembekal, tuan tanah, kurier dan penyedia perisian yang tidak dapat anda ganti dengan mudah dalam seminggu.
+
+### Berapa lama anda boleh berhenti?
+Bagi setiap perkara kritikal, anggarkan berapa lama anda boleh bertahan tanpanya sebelum kerosakan sebenar bermula: beberapa jam, sehari, seminggu. Ini memberitahu anda di mana hendak menumpukan usaha dahulu.
+
+## 2. Fahami risiko yang terpakai kepada anda di Malaysia
+
+### Banjir dan hujan lebat
+Beberapa bahagian Malaysia terdedah kepada banjir, terutamanya semasa musim monsun dan ribut lebat, dan banjir kilat boleh melanda kawasan bandar. Semak sama ada premis, bilik stok dan pembekal anda terletak di kawasan yang mudah banjir. Amaran cuaca dan banjir rasmi datang daripada agensi kebangsaan yang berkaitan, dan Jabatan Meteorologi Malaysia serta Agensi Pengurusan Bencana Negara menerbitkan maklumat yang boleh anda ikuti. Sahkan saluran dan nasihat semasa di laman rasmi mereka.
+
+### Bekalan elektrik terputus dan masalah voltan
+Gangguan singkat pun boleh merosakkan data, merosakkan stok dalam penyejuk dan pembeku, dan menghentikan terminal kad dan lampu. Fikirkan apa yang akan berlaku kepada anda jika tiada elektrik selama beberapa jam atau sehari penuh.
+
+### Gangguan internet dan telefon
+Jika anda menerima pesanan, pembayaran atau tempahan dalam talian, gangguan boleh membekukan jualan anda. Fikirkan apa yang masih boleh anda lakukan tanpa talian, dan sama ada sambungan sandaran berbaloi.
+
+### Kebakaran, kecurian dan kerosakan
+Kerosakan elektrik, kebakaran dapur, pecah masuk dan kerosakan akibat ribut boleh menutup perniagaan anda selama beberapa hari.
+
+### Kegagalan pembekal atau penghantaran
+Pembekal utama menutup operasi, penghantaran tersangkut, atau harga melonjak boleh mengosongkan rak anda. Panduan kami tentang menguruskan pembekal menerangkan cara mengurangkan pergantungan kepada satu sumber.
+
+### Penyakit, peletakan jawatan dan kehilangan orang penting
+Jika satu-satunya orang yang tahu cara perkara berfungsi tiba-tiba tidak hadir, perniagaan mungkin terhenti.
+
+### Insiden siber dan kehilangan data
+Perisian tebusan, akaun digodam, telefon hilang dan cakera keras rosak boleh mengunci anda daripada rekod anda sendiri. Panduan kami tentang keselamatan siber menerangkan asasnya, dan panduan kami tentang perlindungan data peribadi menerangkan obligasi anda apabila data pelanggan terlibat.
+
+### Susun risiko mengikut keutamaan
+Beri setiap risiko skor kasar untuk betapa berkemungkinan ia berlaku dan betapa teruk ia akan menjejaskan. Mulakan perancangan untuk yang berkemungkinan dan merosakkan.
+
+## 3. Lindungi rekod dan data anda
+
+### Ikuti tabiat sandaran yang mudah
+Simpan salinan fail penting di lebih daripada satu tempat, dengan sekurang-kurangnya satu salinan jauh dari premis anda atau dalam perkhidmatan awan yang dipercayai. Satu komputer riba atau satu pemacu bukan sandaran.
+
+### Buat sandaran mengikut jadual
+Tentukan berapa kerap data anda berubah dan berapa banyak yang mampu anda hilang, sehari atau seminggu, dan tetapkan sandaran sewajarnya. Sandaran automatik lebih baik daripada niat yang baik.
+
+### Uji pemulihan
+Sandaran hanya berguna jika anda benar-benar boleh memulihkan daripadanya. Cuba pulihkan fail atau rekod invois dari semasa ke semasa.
+
+### Simpan dokumen asal kertas dengan selamat
+Dokumen penting seperti lesen, perjanjian sewa, polisi insurans dan kontrak utama patut diimbas, dan yang asal disimpan di tempat selamat daripada air dan api. Panduan kami tentang audit cukai perniagaan kecil menerangkan berapa lama rekod mungkin perlu disimpan.
+
+### Selamatkan akaun dan peranti
+Gunakan kata laluan yang kuat dan berasingan, hidupkan pengesahan dua langkah, dan simpan rekod selamat tentang siapa yang mempunyai akses kepada apa, supaya orang lain boleh mengambil alih semasa kecemasan.
+
+### Fikirkan tentang perisian anda
+Jika anda menggunakan perisian perakaunan atau sistem point-of-sale, semak cara ia disandarkan dan bagaimana anda boleh terus berniaga jika ia tidak tersedia. Panduan kami tentang memilih perisian perakaunan menerangkan apa yang perlu ditanya kepada vendor.
+
+## 4. Semak insurans anda dengan jujur
+
+### Baca apa yang anda sebenarnya ada
+Ramai pemilik menganggap mereka dilindungi dan mendapati sebaliknya selepas kerugian. Minta penanggung insurans atau ejen anda menerangkan, dalam bahasa mudah, apa yang dilindungi dan apa yang tidak.
+
+### Jenis lazim untuk ditanya
+Kebakaran, banjir dan peristiwa semula jadi lain, kecurian, liabiliti awam, stok, peralatan dan elektronik, gangguan perniagaan (kehilangan pendapatan semasa anda tidak dapat beroperasi), dan perlindungan berkaitan pekerja. Perlindungan banjir dan kehilangan pendapatan selalunya berasingan atau pilihan, jadi semak sama ada ia terpakai kepada anda.
+
+### Semak had, ekses dan pengecualian
+Lihat berapa banyak yang dilindungi, apa yang anda bayar dahulu, dan apa yang ditinggalkan. Stok atau peralatan yang kurang diinsuranskan ialah masalah biasa.
+
+### Ketahui proses tuntutan
+Tanya apa bukti yang diperlukan, betapa cepat anda mesti melapor, dan siapa yang perlu dihubungi. Simpan gambar dan senarai stok dan peralatan, bersama resit jika boleh.
+
+### Semak setiap tahun
+Perniagaan anda berubah, dan begitu juga perlindungan anda. Panduan kami tentang insurans perniagaan menerangkan jenis utama untuk PKS, dan produk serta terma insurans berubah, jadi sahkan butiran dengan penanggung insurans anda.
+
+## 5. Bina pelan tindak balas yang mudah
+
+### Buat helaian kecemasan satu muka surat
+Senaraikan perkara pertama yang perlu dilakukan dalam jam pertama bagi setiap risiko utama: siapa yang dihubungi, siapa yang memutuskan, di mana hendak berkumpul, apa yang hendak dimatikan, apa yang hendak dipindahkan ke tempat selamat.
+
+### Simpan senarai kenalan kecemasan
+Sertakan pekerja dan kenalan kecemasan mereka, tuan tanah atau pengurusan bangunan, pembekal utama, penanggung insurans, bank, pembekal elektrik, pembekal internet, akauntan anda, dan pihak berkuasa berkaitan. Simpan di tempat yang boleh dicapai tanpa komputer anda, seperti dalam bentuk cetakan dan pada telefon anda.
+
+### Sediakan bekalan asas
+Lampu suluh, bank kuasa yang dicas, kit pertolongan cemas, bateri ganti, kepingan plastik atau penutup untuk stok dan peralatan, dan cara mengangkat stok dari lantai jika banjir ialah risiko.
+
+### Rancang cara terus melayan pelanggan
+Tentukan apa yang boleh anda lakukan dari rumah atau lokasi lain: menerima pesanan melalui telefon, menjual dalam talian, bekerja dari komputer riba, atau menggunakan tempat ambil sementara. Panduan kami tentang menjual dalam talian menerangkan cara menyediakan saluran yang mudah.
+
+### Rancang sebelah wang
+Ketahui bagaimana anda akan membayar pekerja dan pembekal jika jualan terhenti seminggu, dan simpan rizab tunai kecemasan jika boleh. Panduan kami tentang aliran tunai menerangkan cara membina bantalan.
+
+### Tentukan siapa yang boleh bertindak
+Namakan timbalan bagi setiap peranan penting, dan pastikan mereka mempunyai akses dan tahu langkah-langkahnya. Panduan kami tentang buku panduan pekerja dan dasar HR menerangkan cara menulis prosedur.
+
+> Pelan kesinambungan perniagaan tidak perlu panjang. Helaian satu muka surat yang benar-benar dilihat oleh pasukan anda lebih bernilai daripada fail tebal yang tiada siapa buka.
+
+## 6. Berkomunikasi dengan pekerja dan pelanggan
+
+### Beritahu pekerja apa yang perlu dilakukan dan di mana hendak melihat
+Persetujui satu saluran utama, seperti kumpulan pesanan, dan satu sandaran, seperti rantaian telefon. Pastikan pekerja tahu bila hendak masuk, bila hendak tinggal di rumah, dan bagaimana mereka akan diberitahu.
+
+### Utamakan keselamatan
+Semasa banjir, kebakaran atau ribut teruk, keselamatan manusia mendahului stok atau peralatan. Beritahu pekerja dengan jelas bahawa tiada sesiapa patut mengambil risiko untuk menyelamatkan harta, dan ikut arahan dan amaran rasmi.
+
+### Maklumkan pelanggan
+Mesej ringkas dan jujur tentang kelewatan atau penutupan, yang dihantar melalui saluran biasa anda, melindungi kepercayaan. Panduan kami tentang menguruskan ulasan dalam talian menerangkan cara menangani aduan dengan tenang.
+
+### Uruskan gaji dan cuti dengan adil
+Fikirkan bagaimana anda akan menangani gaji dan aturan kerja semasa gangguan, dan semak peraturan yang terpakai. Panduan kami tentang gaji dan caruman berkanun serta panduan kami tentang cuti pekerja menerangkan asasnya, dan anda patut mengesahkan peraturan semasa dengan pihak berkuasa berkaitan atau penasihat.
+
+### Bercakap dengan pembekal dan pemberi pinjaman lebih awal
+Jika anda mungkin terlepas penghantaran atau bayaran, beritahu pihak lain lebih awal dan bukannya lewat. Ramai yang sanggup bekerjasama dengan perniagaan yang berkomunikasi.
+
+## 7. Uji, belajar dan pastikan ia sentiasa hidup
+
+### Jalankan latihan ringkas
+Sekali atau dua kali setahun, lalui satu senario bersama pasukan anda, seperti amaran banjir atau sehari tanpa internet, dan lihat apa yang rosak. Baiki jurang yang anda temui.
+
+### Pastikan pelan terkini
+Kemas kini kenalan, kata laluan dan prosedur apabila orang atau pembekal berubah. Letakkan peringatan dalam kalendar anda.
+
+### Semak selepas setiap insiden sebenar
+Selepas sebarang gangguan, besar atau kecil, tanya apa yang berjaya, apa yang tidak, dan apa yang perlu diubah. Panduan kami tentang pengurusan risiko menerangkan cara menukar pengajaran menjadi tabiat.
+
+### Tambah baik langkah demi langkah
+Anda tidak perlu melakukan segala-galanya serentak. Mulakan dengan sandaran, senarai kenalan kecemasan dan semakan insurans, kemudian tambah yang lain dari semasa ke semasa.
+
+Jika anda memerlukan penasihat insurans, penyedia sokongan IT atau pembekal tempatan, anda boleh [menyemak imbas direktori](/ms) untuk profesional berhampiran anda, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan masih dapat menemui anda dengan cepat selepas gangguan.
+
+## Kesilapan lazim PKS Malaysia dalam kesinambungan perniagaan
+
+- **Menganggap insurans meliputi segala-galanya.** Perlindungan banjir dan kehilangan pendapatan selalunya berasingan, jadi baca polisi dan tanya soalan sebelum anda perlu menuntut.
+- **Menyimpan sandaran di tempat yang sama dengan yang asal.** Kebakaran atau banjir yang memusnahkan komputer riba juga akan memusnahkan pemacu di sebelahnya, jadi simpan satu salinan di tempat lain dan uji pemulihannya.
+- **Bergantung kepada satu orang yang tahu segala-galanya.** Jika pemilik atau seorang pekerja utama tidak hadir, tiada orang lain boleh membayar gaji, log masuk atau membuat pesanan, jadi kongsi akses dan tuliskan langkah-langkahnya.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Senaraikan aktiviti, orang, rekod dan pembekal kritikal anda, dan catat berapa lama anda boleh bertahan tanpa setiap satu.
+- **Seterusnya:** Sediakan sandaran automatik dengan satu salinan di luar tapak, uji satu pemulihan, dan tulis senarai kenalan kecemasan satu muka surat.
+- **Kemudian:** Semak insurans anda dengan penanggung insurans, dan sediakan bekalan kecemasan asas serta pelan untuk memaklumkan pelanggan.
+- **Setiap tahun:** Jalankan latihan ringkas, kemas kini pelan, dan semak perlindungan anda.
+
+Gangguan akan berlaku, tetapi ia tidak semestinya menjadi bencana. Sedikit persediaan sekarang bermakna anda boleh melindungi orang dahulu, memastikan rekod anda selamat, dan kembali melayan pelanggan lebih cepat.`,
+        faqs: [
+          {
+            question: "Apakah pelan kesinambungan perniagaan dan adakah perniagaan kecil memerlukannya?",
+            answer:
+              "Ia ialah pelan bertulis ringkas tentang cara anda akan memastikan bahagian utama perniagaan terus berjalan, dan pulih, jika ada gangguan seperti banjir, bekalan elektrik terputus, kegagalan sistem atau kehilangan orang penting. Walaupun versi satu muka surat membantu perniagaan kecil bertindak lebih cepat dan dengan kurang panik.",
+          },
+          {
+            question: "Apakah risiko gangguan yang paling biasa untuk PKS Malaysia?",
+            answer:
+              "Banjir dan hujan lebat, gangguan elektrik dan internet, kebakaran atau kecurian, kegagalan pembekal, penyakit atau kehilangan orang penting, dan insiden siber atau kehilangan data. Yang paling penting bergantung pada lokasi dan perniagaan anda, jadi susunnya mengikut betapa berkemungkinan dan merosakkan ia kepada anda.",
+          },
+          {
+            question: "Bagaimanakah saya patut menyandarkan rekod perniagaan saya?",
+            answer:
+              "Simpan salinan di lebih daripada satu tempat, dengan sekurang-kurangnya satu jauh dari premis anda atau dalam perkhidmatan awan yang dipercayai, tetapkan sandaran berjalan secara automatik, dan uji pemulihan dari semasa ke semasa. Imbas dokumen kertas penting dan simpan yang asal dengan selamat. Satu komputer riba atau pemacu bukan sandaran.",
+          },
+          {
+            question: "Adakah insurans perniagaan meliputi banjir dan kehilangan pendapatan?",
+            answer:
+              "Ia bergantung pada polisi anda. Perlindungan banjir dan perlindungan gangguan perniagaan, yang menggantikan pendapatan semasa anda tidak dapat beroperasi, selalunya berasingan atau pilihan. Tanya penanggung insurans anda dengan tepat apa yang dilindungi, had dan pengecualian, dan cara menuntut, dan sahkan terma semasa terus dengan mereka.",
+          },
+          {
+            question: "Apakah yang patut ada dalam senarai kenalan kecemasan?",
+            answer:
+              "Pekerja dan kenalan kecemasan mereka, pengurusan bangunan atau tuan tanah, pembekal utama, penanggung insurans, bank, pembekal elektrik dan internet, akauntan anda, dan pihak berkuasa berkaitan. Simpan salinan cetak dan satu salinan pada telefon anda supaya boleh dicapai tanpa komputer.",
+          },
+          {
+            question: "Bagaimanakah saya terus melayan pelanggan semasa gangguan atau penutupan?",
+            answer:
+              "Tentukan lebih awal apa yang boleh anda lakukan dari rumah atau lokasi lain, seperti menerima pesanan melalui telefon atau dalam talian, menggunakan tempat ambil sementara, atau bekerja dari komputer riba dengan data mudah alih. Maklumkan pelanggan dengan segera tentang kelewatan atau penutupan melalui saluran biasa anda.",
+          },
+          {
+            question: "Bagaimanakah saya melindungi pasukan saya semasa banjir atau cuaca buruk?",
+            answer:
+              "Utamakan keselamatan manusia berbanding stok atau peralatan, ikut amaran dan arahan rasmi, persetujui bagaimana pekerja akan diberitahu bila hendak masuk atau tinggal di rumah, dan pastikan tiada sesiapa mengambil risiko untuk menyelamatkan harta. Sahkan nasihat rasmi semasa di laman agensi berkaitan.",
+          },
+          {
+            question: "Berapa kerap saya patut menguji dan mengemas kini pelan saya?",
+            answer:
+              "Jalankan latihan ringkas sekali atau dua kali setahun, kemas kini kenalan, kata laluan dan prosedur apabila orang atau pembekal berubah, dan semak pelan selepas sebarang insiden sebenar. Teruskan menambah baik langkah demi langkah dan bukannya cuba melakukan segala-galanya serentak.",
+          },
+        ],
+      },
+    },
+  },
 ];

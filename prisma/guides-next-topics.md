@@ -15,14 +15,14 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Expanding to a Second Outlet: Planning, Funding, and Avoiding Overreach**
-   — How to know a business is ready to open a second location: proving the
-   first outlet's model, choosing a location, budgeting set-up and working
-   capital, hiring and training a team, managing two sites, licences and
-   permits per premises (to hedge), and warning signs of overextending.
+1. **Managing Supplier Relationships and Negotiating Better Terms**
+   — Finding and vetting suppliers, comparing quotes beyond price, payment
+   terms and credit, negotiating discounts and minimum orders, written
+   agreements, backup suppliers, quality checks, handling late or wrong
+   deliveries, protecting cash flow, and building long-term relationships.
 
-2. **Business Continuity Planning for Malaysian SMEs: Floods, Outages, and Emergencies**
-   — Preparing for disruption: common risks in Malaysia such as floods,
-   power and internet outages, supplier failure and key-person loss,
-   backing up records and data, insurance checks, emergency contacts,
-   a simple response plan, staff communication, and testing the plan.
+2. **Business Partners and Shareholder Agreements: Working With Co-Founders in Malaysia**
+   — Choosing a partner, splitting roles, equity and profits, what a
+   partnership or shareholders' agreement should cover (to hedge),
+   decision-making and deadlock, adding or removing a partner, handling
+   disputes, exit and buy-out terms, and keeping records and finances clean.
