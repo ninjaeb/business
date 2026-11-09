@@ -15,14 +15,16 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Managing Supplier Relationships and Negotiating Better Terms**
-   — Finding and vetting suppliers, comparing quotes beyond price, payment
-   terms and credit, negotiating discounts and minimum orders, written
-   agreements, backup suppliers, quality checks, handling late or wrong
-   deliveries, protecting cash flow, and building long-term relationships.
+1. **Raising Capital for Your SME: Investors, Equity Crowdfunding, and Getting Investor-Ready in Malaysia**
+   — When outside investment makes sense, angel and venture investors versus
+   equity crowdfunding and other routes (to hedge, regulated by the
+   Securities Commission), preparing financials and a pitch, valuation basics
+   in plain terms, term sheets, due diligence, giving up equity and control,
+   and warning signs of bad deals.
 
-2. **Business Partners and Shareholder Agreements: Working With Co-Founders in Malaysia**
-   — Choosing a partner, splitting roles, equity and profits, what a
-   partnership or shareholders' agreement should cover (to hedge),
-   decision-making and deadlock, adding or removing a partner, handling
-   disputes, exit and buy-out terms, and keeping records and finances clean.
+2. **Managing Business Debt and Loan Repayments Without Strangling Cash Flow**
+   — Taking stock of every loan and credit line, interest and fees, repayment
+   schedules versus cash cycles, prioritising payments, talking to lenders
+   early about restructuring or rescheduling (to hedge), avoiding personal
+   guarantees that put the family at risk, credit records, and when to seek
+   professional advice.

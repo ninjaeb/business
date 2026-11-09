@@ -25351,4 +25351,1236 @@ Gangguan akan berlaku, tetapi ia tidak semestinya menjadi bencana. Sedikit perse
       },
     },
   },
+  {
+    slug: "managing-supplier-relationships-and-negotiating-better-terms-in-malaysia",
+    title: "Managing Supplier Relationships and Negotiating Better Terms",
+    seoTitle: "Managing Suppliers and Negotiating Better Terms in Malaysia",
+    seoDescription:
+      "How Malaysian SMEs can find, vet and negotiate with suppliers: compare quotes, payment terms, agreements, backup suppliers and handling late deliveries.",
+    coverImage: {
+      file: "supplier-relationships-cover.webp",
+      mimeType: "image/webp",
+      alt: "A man in a checked shirt and a woman in an orange top examining a wooden material sample in a showroom lined with shelves of samples",
+      altTranslations: {
+        zh: "一位身穿格子衬衫的男士和一位身穿橙色上衣的女士，在摆满样品架的展示间里查看一块木材样品",
+        ms: "Seorang lelaki berbaju kotak-kotak dan seorang wanita berbaju oren meneliti sampel bahan kayu di bilik pameran yang penuh dengan rak sampel",
+      },
+    },
+    contentImages: {
+      handshake: {
+        file: "supplier-relationships-handshake.webp",
+        mimeType: "image/webp",
+        alt: "Two men shaking hands across a wooden table in a brick-walled loft, with a laptop, notebook and coffee cup on the table",
+        altTranslations: {
+          zh: "两位男士在砖墙阁楼里隔着木桌握手，桌上有笔记本电脑、笔记本和一杯咖啡",
+          ms: "Dua lelaki berjabat tangan di atas meja kayu di sebuah loteng berdinding bata, dengan komputer riba, buku nota dan cawan kopi di atas meja",
+        },
+        after: "Know exactly what you need from a supplier before you ask anyone for a price.",
+        afterTranslations: {
+          zh: "在向任何人询价之前，先清楚知道您需要供应商提供什么。",
+          ms: "Ketahui dengan tepat apa yang anda perlukan daripada pembekal sebelum anda meminta harga daripada sesiapa.",
+        },
+      },
+    },
+    excerpt:
+      "Your suppliers decide what you can sell, how good it is, and how much cash you tie up. This guide shows Malaysian SMEs how to find and vet suppliers, compare quotes beyond price, negotiate payment terms and minimum orders, put agreements in writing, keep a backup, and handle late or wrong deliveries while building relationships that last.",
+    body: `For most small businesses, suppliers are the quiet partners behind every sale. They decide what is on your shelves, how reliable your service is, how much cash you tie up in stock, and how much profit is left after costs. Yet many owners pick suppliers in a hurry, accept whatever terms are offered, and only think about the relationship when something goes wrong.
+
+Better supplier management does not mean being tough or squeezing every sen. It means choosing carefully, being clear about what you need, agreeing terms that protect your cash flow, and treating suppliers as partners who can help you grow or help you fail.
+
+This is general information, not legal, financial, or tax advice. Prices, trade practices, and rules vary by industry and change over time, and information in this guide may be out of date. Confirm the current position with your suppliers, your accountant, and where needed a lawyer before you commit to a contract.
+
+## 1. Define what you actually need
+
+Know exactly what you need from a supplier before you ask anyone for a price. A vague request gets vague quotes that cannot be fairly compared.
+
+### Write down the specification
+Describe the product or service clearly: size, grade, quantity, packaging, delivery frequency, and any standards it must meet. Our guide on managing inventory and stock explains how to work out what and how much to order.
+
+### Decide what matters beyond price
+Quality, consistency, lead time, minimum order, delivery reliability, payment terms, and after-sales support often matter more than the lowest price. A cheap supplier who delivers late or short can cost more than a slightly dearer reliable one.
+
+### Know your volumes and timing
+Estimate how much you will buy each month and when you need it. Suppliers can offer better terms when they can plan around your orders.
+
+### Check any rules that apply to your product
+Food, cosmetics, electrical items, and some other goods may need to meet Malaysian standards, labelling rules, or approvals. Our guide on starting a food business and our guide on halal certification explain examples. Confirm with the relevant authority what applies to you.
+
+## 2. Find and vet suppliers
+
+### Look in several places
+Ask other business owners, visit trade fairs and wholesale markets, check industry associations, search online, and talk to existing suppliers about alternatives. Our guide on importing and exporting explains what to consider if you buy from overseas.
+
+### Check that the business is real
+Ask for the company registration details and confirm them with the Companies Commission of Malaysia (SSM). For overseas or online suppliers, be extra careful about scams and requests for full advance payment. Our guide on how to register a business explains what the registration details mean.
+
+### Ask for samples and references
+Test samples under real conditions, and speak to two or three of their existing customers about quality, delivery, and how problems are handled.
+
+### Visit if you can
+Seeing the premises, stock, and processes tells you more than a brochure. For critical items, an in-person visit is worth the time.
+
+### Compare the full picture
+Put quotes side by side, including price per unit, delivery charges, minimum orders, payment terms, warranties, and returns. A simple table helps you see the real differences.
+
+### Check taxes and paperwork
+Make sure invoices are properly issued and, where relevant, that the tax details are correct. Our guide on e-invoicing and our guide on SST registration explain what to expect, and you should confirm current requirements with the authorities or your accountant.
+
+## 3. Understand and negotiate payment terms
+
+### Why terms matter as much as price
+The days you have to pay can free up cash. Thirty days to pay a supplier while you sell the goods in two weeks helps your cash flow a lot. Our guide on managing cash flow explains why timing matters.
+
+### Common terms to ask about
+Cash on delivery, payment in advance, deposits, credit of 14, 30, or more days, and early payment discounts. New suppliers often ask for payment up front until you have built a track record.
+
+### Build credit gradually
+Start with small orders and pay on time, then ask for credit terms once you have shown you are reliable. Keep records of every payment.
+
+### Negotiate more than the price
+Ask about volume discounts, longer payment terms, free or cheaper delivery, flexible minimum orders, returns of unsold stock, and priority during shortages. Often these are easier to win than a lower unit price.
+
+### Be ready to give something back
+Offer predictable orders, faster payment, a longer commitment, or a referral. A fair deal for both sides is more likely to last.
+
+### Use facts, not threats
+Show competing quotes, your forecast volumes, and your payment record. Stay polite and professional, because you may still need this supplier next month.
+
+## 4. Put agreements in writing
+
+### Why you need it
+Verbal promises are easy to forget and hard to prove. A written agreement or confirmed purchase order protects both sides. Our guide on contracts and terms for small businesses explains how to read key clauses.
+
+### Key points to cover
+Product specification, prices and how they can change, quantities, delivery dates and place, who bears risk in transit, payment terms, quality standards, returns and replacements, warranties, how disputes are handled, and how to end the arrangement.
+
+### Watch for exclusivity and long commitments
+Be careful about clauses that lock you in, force minimum purchases, or let the supplier change prices freely. Have a lawyer review anything significant.
+
+### Keep every order and confirmation
+Purchase orders, delivery orders, invoices, and emails form your paper trail. Our guide on bookkeeping and accounting basics explains how to keep them in order.
+
+### Confirm changes in writing
+If prices or terms change, ask for it in writing and keep a copy, even if it is just a message you can screenshot.
+
+> A good supplier is not the cheapest one on the day you ask for a quote. It is the one that delivers what you ordered, when you need it, at a price you can plan around.
+
+## 5. Protect yourself with backups
+
+### Do not depend on a single source
+If your only supplier closes, raises prices, or fails to deliver, your business stops. Identify at least one backup for each critical item, even if you only buy small amounts from them.
+
+### Keep a short list of alternatives
+Know who else can supply, what they charge, and how quickly they can start. Test them occasionally with a small order.
+
+### Hold a sensible buffer of stock
+For essentials, a modest safety stock can cover late deliveries without tying up too much cash. Our guide on business continuity planning explains how to prepare for disruptions.
+
+### Watch for early warning signs
+Late deliveries, rising complaints, frequent excuses, or delayed responses can signal trouble at the supplier.
+
+### Think about currency and shipping risks
+If you import, price changes in foreign currencies and shipping delays can hit your costs. Build a margin for this when you set prices. Our guide on pricing products and services explains how to protect your margin.
+
+## 6. Manage quality and deliveries
+
+### Check goods on arrival
+Count and inspect deliveries before signing, note any shortages or damage on the delivery order, and photograph problems immediately.
+
+### Set simple quality standards
+Agree what is acceptable, how defects are reported, and how long the supplier has to replace or credit faulty goods.
+
+### Track supplier performance
+Keep a simple record of on-time delivery, accuracy, quality, and responsiveness for each supplier. Review it a few times a year.
+
+### Match invoices to orders
+Before paying, compare the invoice with the purchase order and what was actually received. This catches wrong prices, double billing, and goods you never got.
+
+### Pay on time, consistently
+Paying when you said you would builds trust and often wins you better treatment when stock is short. Our guide on choosing accounting software explains how to track what you owe.
+
+## 7. Handle problems and build long-term relationships
+
+### Raise issues early and calmly
+If something goes wrong, contact your supplier promptly with clear facts, photos, and what you want to happen. Most problems are solved faster by a calm conversation than by an angry message.
+
+### Know your options for disputes
+Check what your agreement says about replacements, credits, and refunds. For larger disputes, speak to a lawyer, and confirm the current consumer and trade rules with the relevant authority. Our guide on collecting late payments explains the other side of the situation.
+
+### Be a customer worth keeping
+Share forecasts, give notice of big changes, pay on time, and give honest feedback. Suppliers often look after the customers who are easy to work with.
+
+### Review your suppliers each year
+Compare prices, quality, and service, and talk to your main suppliers about what is working. Renegotiate when your volumes grow.
+
+### Keep a respectful distance
+Be friendly, but keep dealings professional and avoid gifts or favours that could be seen as improper. Our guide on pdpa compliance explains how to handle suppliers' and customers' personal data properly.
+
+If you are looking for new suppliers, an accountant, or a lawyer to review a contract, you can [browse the directory](/en) for professionals and businesses near you, and [create a free business listing](/en/signup) so that your own customers and partners can find you too.
+
+## Common mistakes Malaysian SMEs make with suppliers
+
+- **Choosing on price alone.** The cheapest quote can hide late deliveries, poor quality, or extra charges, so compare the full picture.
+- **Relying on one supplier and verbal promises.** If that supplier fails or changes the deal, you have no backup and no proof, so keep a second source and confirm terms in writing.
+- **Paying or ordering without checking.** Unchecked deliveries and unmatched invoices lead to wrong stock and wrong payments, so inspect goods and match invoices before you pay.
+
+## Where to start
+
+- **This week:** List your top five suppliers, what you spend with each, your current payment terms, and which items have no backup.
+- **Next:** Write a specification for your most important items and ask two alternative suppliers for comparable quotes.
+- **Then:** Negotiate payment terms and minimum orders using facts, and confirm every agreement in writing.
+- **Every few months:** Review delivery, quality, and prices, test your backup supplier with a small order, and talk to your main suppliers about the year ahead.
+
+Strong supplier relationships do not happen by accident. Choose carefully, agree clear terms, check what you receive, and pay fairly, and your suppliers will become one of your business's quiet advantages.`,
+    faqs: [
+      {
+        question: "How do I find a reliable supplier for my small business?",
+        answer:
+          "Ask other business owners, visit trade fairs and wholesale markets, check industry associations, and compare several options. Confirm the company is registered, ask for samples and references, and start with small orders before committing to larger ones.",
+      },
+      {
+        question: "What should I compare besides price when choosing a supplier?",
+        answer:
+          "Quality and consistency, lead time, minimum order, delivery reliability, payment terms, warranties, returns, and support when things go wrong. Put quotes side by side so that you can see the full cost and risk, not just the unit price.",
+      },
+      {
+        question: "How can I negotiate better payment terms with suppliers?",
+        answer:
+          "Build a track record by ordering and paying on time, then ask for credit terms. Use facts such as competing quotes and forecast volumes, and negotiate more than price, for example longer payment terms, discounts for volume, and flexible minimum orders.",
+      },
+      {
+        question: "Do I need a written agreement with my suppliers?",
+        answer:
+          "It is strongly advisable. Written terms or confirmed purchase orders protect both sides and give you proof if there is a dispute. Cover specifications, prices, delivery, payment, quality, returns, and how to end the arrangement, and have a lawyer review significant contracts.",
+      },
+      {
+        question: "Why should I keep a backup supplier?",
+        answer:
+          "If your only supplier closes, raises prices, or fails to deliver, your business can stop. A backup supplier, even one you buy small amounts from, gives you options and bargaining power. Test them occasionally with a small order.",
+      },
+      {
+        question: "How do I check a new supplier is genuine?",
+        answer:
+          "Ask for registration details and confirm them with the Companies Commission of Malaysia, request references and samples, and visit if you can. Be cautious about suppliers who demand full advance payment, especially online or overseas.",
+      },
+      {
+        question: "What should I do when a supplier delivers late or sends the wrong goods?",
+        answer:
+          "Inspect on arrival, note and photograph problems, and contact the supplier promptly with clear facts and what you want, such as replacement or a credit. Check what your agreement says, and speak to a lawyer for larger disputes.",
+      },
+      {
+        question: "How often should I review my suppliers?",
+        answer:
+          "Keep a simple record of delivery, quality, accuracy, and responsiveness, and review it a few times a year. Compare prices and terms at least annually and renegotiate when your volumes grow.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "管理供应商关系与谈判更好的条件",
+        excerpt:
+          "您的供应商决定了您能卖什么、品质如何，以及您在库存上占用多少现金。本指南帮助马来西亚中小企业寻找并审核供应商、超越价格比较报价、谈判付款条件和最低订购量、把协议写成书面、保留备用供应商，并在处理延迟或错误交货的同时建立长久的关系。",
+        body: `对大多数小企业来说，供应商是每一笔销售背后默默无闻的伙伴。它们决定了您的货架上有什么、您的服务有多可靠、您在库存上占用多少现金，以及扣除成本后剩下多少利润。然而许多业主匆忙挑选供应商，接受对方提出的任何条件，只有在出问题时才想到这段关系。
+
+更好的供应商管理并不意味着强硬，或是榨干每一分钱。它意味着谨慎选择、清楚说明您需要什么、协商能保护现金流的条件，并把供应商视为能帮助您成长、也可能让您失败的伙伴。
+
+本文仅提供一般信息，并非法律、财务或税务建议。价格、贸易惯例和规定因行业而异，并且会随时间变化，本指南的信息可能已经过时。在签订合约之前，请向您的供应商、会计师以及必要时向律师确认现行情况。
+
+## 1. 明确您真正需要什么
+
+在向任何人询价之前，先清楚知道您需要供应商提供什么。含糊的询价只会得到含糊的报价，无法公平比较。
+
+### 写下规格
+清楚描述产品或服务：尺寸、等级、数量、包装、送货频率，以及它必须符合的任何标准。我们关于库存管理的指南说明了如何算出该订什么以及订多少。
+
+### 决定价格之外什么才重要
+品质、稳定性、交货期、最低订购量、送货可靠性、付款条件和售后支持，往往比最低价格更重要。一家经常迟交或少交的便宜供应商，成本可能比稍贵但可靠的供应商更高。
+
+### 了解您的用量和时间
+估计您每个月会买多少，以及什么时候需要。当供应商能够围绕您的订单做计划时，往往可以提供更好的条件。
+
+### 查核适用于您产品的规定
+食品、化妆品、电器和某些其他商品可能需要符合马来西亚的标准、标签规定或批准。我们关于开设食品生意的指南和关于清真认证的指南说明了一些例子。请向相关主管单位确认适用于您的规定。
+
+## 2. 寻找并审核供应商
+
+### 多处寻找
+向其他企业主询问，参观贸易展览和批发市场，查看行业协会，上网搜索，并与现有供应商谈谈替代方案。我们关于进出口的指南说明了如果您向海外采购需要考虑什么。
+
+### 确认这家企业是真实的
+索取公司注册资料，并向马来西亚公司委员会（SSM）确认。对于海外或网络供应商，请格外小心骗局以及要求全额预付的情况。我们关于如何注册企业的指南说明了注册资料的含义。
+
+### 索取样品和推荐人
+在真实条件下测试样品，并与他们的两三位现有客户交谈，了解品质、送货以及问题如何处理。
+
+### 如果可以，请亲自走访
+看看场地、库存和流程，比看宣传册更能说明问题。对于关键项目，亲自走访是值得花时间的。
+
+### 比较全貌
+把报价并排放在一起，包括单价、运费、最低订购量、付款条件、保修和退货。一张简单的表格能帮您看清真正的差别。
+
+### 查核税务和文件
+确保发票开具妥当，并在相关时确认税务资料正确。我们关于电子发票的指南和关于 SST 注册的指南说明了该预期什么，您应该向主管单位或会计师确认现行要求。
+
+## 3. 了解并谈判付款条件
+
+### 为什么条件和价格一样重要
+您有多少天付款可以释放现金。当您在两周内卖掉货品时，却有三十天时间付款给供应商，对现金流帮助很大。我们关于管理现金流的指南说明了时机为什么重要。
+
+### 要询问的常见条件
+货到付款、预先付款、订金、14 天、30 天或更长的赊账，以及提早付款折扣。新供应商往往会要求您先付款，直到您建立起良好的记录。
+
+### 逐步建立信用
+从小额订单开始并准时付款，等您证明自己可靠之后，再要求赊账条件。请保存每一笔付款的记录。
+
+### 谈判的不只是价格
+询问数量折扣、更长的付款期、免费或更便宜的运费、灵活的最低订购量、未售出货品的退货，以及短缺时的优先供货。这些往往比降低单价更容易争取到。
+
+### 准备好给予回报
+提供可预测的订单、更快的付款、更长期的承诺或介绍客户。对双方都公平的交易更可能长久。
+
+### 用事实，而不是威胁
+出示竞争对手的报价、您预测的用量和您的付款记录。保持礼貌和专业，因为下个月您可能仍然需要这家供应商。
+
+## 4. 把协议写成书面
+
+### 为什么需要
+口头承诺容易忘记，也难以证明。书面协议或经确认的订单可以保护双方。我们关于小企业合约与条款的指南说明了如何阅读关键条款。
+
+### 要涵盖的重点
+产品规格、价格及其如何变动、数量、交货日期和地点、运输中的风险由谁承担、付款条件、品质标准、退货和更换、保修、争议如何处理，以及如何终止这项安排。
+
+### 留意独家和长期承诺
+小心那些把您锁定、强制最低购买量或让供应商随意调价的条款。任何重大事项都请让律师审阅。
+
+### 保留每一张订单和确认书
+订单、送货单、发票和电邮构成您的书面记录。我们关于簿记和会计基础的指南说明了如何把它们整理好。
+
+### 以书面确认变更
+如果价格或条件有变，请要求以书面形式确认并保留副本，哪怕只是一条您可以截图的信息。
+
+> 好的供应商不是您询价那天报价最低的那一家，而是能在您需要的时候交付您所订的货，并且价格能让您做计划的那一家。
+
+## 5. 用备用方案保护自己
+
+### 不要依赖单一来源
+如果您唯一的供应商倒闭、涨价或无法交货，您的生意就会停摆。对每一项关键物品至少找出一个备用供应商，即使您只向他们少量采购。
+
+### 保留一份简短的替代名单
+知道还有谁能供货、收费多少，以及多快能开始。偶尔用小额订单测试他们。
+
+### 保持合理的安全库存
+对必需品而言，适量的安全库存可以应对延迟交货，又不会占用太多现金。我们关于业务持续规划的指南说明了如何为中断做好准备。
+
+### 留意早期警讯
+延迟交货、投诉增加、频繁找借口或回应迟缓，都可能表示供应商出了问题。
+
+### 考虑汇率和运输风险
+如果您进口，外币价格变动和运输延误可能影响您的成本。定价时请为此留出利润空间。我们关于产品与服务定价的指南说明了如何保护您的利润。
+
+## 6. 管理品质和交货
+
+### 到货时检查货品
+签收前清点并检查货品，在送货单上注明任何短缺或损坏，并立即为问题拍照。
+
+### 设定简单的品质标准
+约定什么是可接受的、缺陷如何通报，以及供应商有多长时间更换或退款给有缺陷的货品。
+
+### 追踪供应商表现
+为每家供应商简单记录准时交货、准确度、品质和回应速度。每年检讨几次。
+
+### 把发票与订单核对
+付款之前，把发票与订单以及实际收到的货品对照。这样可以发现错误的价格、重复开票以及您从未收到的货品。
+
+### 持续准时付款
+按所说的时间付款可以建立信任，并且在缺货时常常为您争取到更好的对待。我们关于选择会计软件的指南说明了如何追踪您欠了多少。
+
+## 7. 处理问题并建立长期关系
+
+### 及早而冷静地提出问题
+如果出了问题，请尽快以清楚的事实、照片和您希望的处理方式联系供应商。大多数问题通过冷静的交谈解决，比一则愤怒的信息更快。
+
+### 了解争议时的选择
+查看您的协议对更换、退款和退还款项是怎么规定的。较大的争议请咨询律师，并向相关主管单位确认现行的消费者和贸易规定。我们关于追收逾期货款的指南说明了另一方面的情况。
+
+### 做一个值得留住的客户
+分享预测，重大变化提前通知，准时付款，并给予诚实的反馈。供应商往往会照顾好相处容易的客户。
+
+### 每年检讨您的供应商
+比较价格、品质和服务，并与您的主要供应商谈谈哪些行得通。当您的用量增加时重新谈判。
+
+### 保持适当的距离
+友善之余，请保持业务往来的专业，避免可能被视为不当的礼物或人情。我们关于个人资料保护法令合规的指南说明了如何妥善处理供应商和顾客的个人资料。
+
+如果您正在寻找新的供应商、会计师或审阅合约的律师，可以[浏览目录](/zh)寻找您附近的专业人士和企业，并[创建免费商家列表](/zh/signup)，让您自己的顾客和合作伙伴也能找到您。
+
+## 马来西亚中小企业在供应商方面的常见错误
+
+- **只看价格来选择。** 最便宜的报价可能隐藏着延迟交货、品质差或额外收费，所以请比较全貌。
+- **依赖单一供应商和口头承诺。** 如果该供应商失败或改变协议，您既没有备用方案也没有证据，所以请保留第二个来源，并以书面确认条件。
+- **没有检查就付款或下单。** 没有检查的货品和没有核对的发票会导致错误的库存和错误的付款，所以请在付款前检查货品并核对发票。
+
+## 从哪里开始
+
+- **本周：** 列出您的前五大供应商、您在每家的开销、目前的付款条件，以及哪些物品没有备用方案。
+- **接下来：** 为您最重要的物品写下规格，并向两家替代供应商索取可比较的报价。
+- **然后：** 用事实谈判付款条件和最低订购量，并以书面确认每一项协议。
+- **每隔几个月：** 检讨交货、品质和价格，用小额订单测试您的备用供应商，并与主要供应商谈谈来年的安排。
+
+牢固的供应商关系不会凭空出现。谨慎选择，约定清楚的条件，检查您收到的货品并公平付款，您的供应商就会成为企业默默无闻的优势之一。`,
+        faqs: [
+          {
+            question: "我如何为小企业找到可靠的供应商？",
+            answer:
+              "向其他企业主询问，参观贸易展览和批发市场，查看行业协会，并比较几个选择。确认公司已注册，索取样品和推荐人，并在承诺较大订单之前先从小额订单开始。",
+          },
+          {
+            question: "选择供应商时，除了价格还应该比较什么？",
+            answer:
+              "品质和稳定性、交货期、最低订购量、送货可靠性、付款条件、保修、退货，以及出问题时的支持。把报价并排放在一起，这样您能看到完整的成本和风险，而不只是单价。",
+          },
+          {
+            question: "我如何与供应商谈判更好的付款条件？",
+            answer:
+              "先通过准时下单和付款建立记录，再要求赊账条件。用竞争对手的报价和预测用量等事实，并且谈判的不只是价格，例如更长的付款期、数量折扣和灵活的最低订购量。",
+          },
+          {
+            question: "我需要与供应商签订书面协议吗？",
+            answer:
+              "强烈建议。书面条款或经确认的订单可以保护双方，并在发生争议时给您证据。请涵盖规格、价格、送货、付款、品质、退货以及如何终止安排，重大合约请让律师审阅。",
+          },
+          {
+            question: "为什么应该保留备用供应商？",
+            answer:
+              "如果您唯一的供应商倒闭、涨价或无法交货，您的生意可能停摆。备用供应商，即使只是少量采购，也能给您选择权和议价能力。请偶尔用小额订单测试他们。",
+          },
+          {
+            question: "我如何查核新供应商是否真实？",
+            answer:
+              "索取注册资料并向马来西亚公司委员会确认，要求提供推荐人和样品，并在可能时亲自走访。对于要求全额预付的供应商，尤其是网络或海外的，请保持谨慎。",
+          },
+          {
+            question: "供应商迟交或送错货时我应该怎么办？",
+            answer:
+              "到货时检查，记下并拍摄问题，并尽快以清楚的事实和您想要的处理方式（例如更换或退款）联系供应商。查看您的协议是怎么规定的，较大的争议请咨询律师。",
+          },
+          {
+            question: "我应该多久检讨一次供应商？",
+            answer:
+              "简单记录交货、品质、准确度和回应速度，每年检讨几次。至少每年比较一次价格和条件，并在您的用量增加时重新谈判。",
+          },
+        ],
+      },
+      ms: {
+        title: "Menguruskan Hubungan Pembekal dan Merundingkan Terma yang Lebih Baik",
+        excerpt:
+          "Pembekal anda menentukan apa yang boleh anda jual, sejauh mana kualitinya, dan berapa banyak tunai yang terikat. Panduan ini menunjukkan cara PKS Malaysia mencari dan menyaring pembekal, membandingkan sebut harga melebihi harga, merundingkan terma pembayaran dan pesanan minimum, menulis perjanjian secara bertulis, menyimpan pembekal sandaran, dan menangani penghantaran lewat atau salah sambil membina hubungan yang berkekalan.",
+        body: `Bagi kebanyakan perniagaan kecil, pembekal ialah rakan senyap di sebalik setiap jualan. Mereka menentukan apa yang ada di rak anda, setakat mana perkhidmatan anda boleh dipercayai, berapa banyak tunai yang terikat dalam stok, dan berapa banyak untung yang tinggal selepas kos. Namun ramai pemilik memilih pembekal dengan tergesa-gesa, menerima apa sahaja terma yang ditawarkan, dan hanya memikirkan hubungan itu apabila sesuatu berlaku.
+
+Pengurusan pembekal yang lebih baik tidak bermakna bersikap keras atau memerah setiap sen. Ia bermakna memilih dengan teliti, jelas tentang apa yang anda perlukan, bersetuju dengan terma yang melindungi aliran tunai anda, dan melayan pembekal sebagai rakan yang boleh membantu anda berkembang atau membantu anda gagal.
+
+Ini maklumat umum, bukan nasihat undang-undang, kewangan atau cukai. Harga, amalan perdagangan dan peraturan berbeza mengikut industri dan berubah dari semasa ke semasa, dan maklumat dalam panduan ini mungkin sudah lapuk. Sahkan kedudukan semasa dengan pembekal, akauntan anda, dan jika perlu peguam sebelum anda membuat komitmen terhadap kontrak.
+
+## 1. Tentukan apa yang anda sebenarnya perlukan
+
+Ketahui dengan tepat apa yang anda perlukan daripada pembekal sebelum anda meminta harga daripada sesiapa. Permintaan yang kabur mendapat sebut harga yang kabur dan tidak boleh dibandingkan dengan adil.
+
+### Tuliskan spesifikasi
+Huraikan produk atau perkhidmatan dengan jelas: saiz, gred, kuantiti, pembungkusan, kekerapan penghantaran, dan sebarang piawaian yang mesti dipenuhi. Panduan kami tentang pengurusan inventori menerangkan cara mengira apa dan berapa banyak untuk dipesan.
+
+### Tentukan apa yang penting selain harga
+Kualiti, konsistensi, tempoh penghantaran, pesanan minimum, kebolehpercayaan penghantaran, terma pembayaran dan sokongan lepas jualan selalunya lebih penting daripada harga terendah. Pembekal murah yang menghantar lewat atau kurang boleh menelan kos lebih tinggi daripada yang sedikit lebih mahal tetapi boleh dipercayai.
+
+### Ketahui kuantiti dan masa anda
+Anggarkan berapa banyak yang akan anda beli setiap bulan dan bila anda memerlukannya. Pembekal boleh menawarkan terma yang lebih baik apabila mereka dapat merancang berdasarkan pesanan anda.
+
+### Semak peraturan yang terpakai kepada produk anda
+Makanan, kosmetik, barangan elektrik dan beberapa barangan lain mungkin perlu memenuhi piawaian Malaysia, peraturan pelabelan atau kelulusan. Panduan kami tentang memulakan perniagaan makanan dan panduan kami tentang pensijilan halal menerangkan beberapa contoh. Sahkan dengan pihak berkuasa berkaitan apa yang terpakai kepada anda.
+
+## 2. Cari dan saring pembekal
+
+### Cari di beberapa tempat
+Tanya pemilik perniagaan lain, lawati pameran perdagangan dan pasar borong, semak persatuan industri, cari dalam talian, dan bincang dengan pembekal sedia ada tentang alternatif. Panduan kami tentang import dan eksport menerangkan apa yang perlu dipertimbangkan jika anda membeli dari luar negara.
+
+### Pastikan perniagaan itu benar
+Minta butiran pendaftaran syarikat dan sahkannya dengan Suruhanjaya Syarikat Malaysia (SSM). Bagi pembekal luar negara atau dalam talian, berwaspada tambahan terhadap penipuan dan permintaan bayaran penuh di muka. Panduan kami tentang cara mendaftar perniagaan menerangkan maksud butiran pendaftaran itu.
+
+### Minta sampel dan rujukan
+Uji sampel dalam keadaan sebenar, dan bercakap dengan dua atau tiga pelanggan sedia ada mereka tentang kualiti, penghantaran dan cara masalah dikendalikan.
+
+### Lawat jika boleh
+Melihat premis, stok dan proses memberitahu anda lebih banyak daripada risalah. Bagi barangan kritikal, lawatan secara peribadi berbaloi dengan masanya.
+
+### Bandingkan gambaran penuh
+Letakkan sebut harga bersebelahan, termasuk harga seunit, caj penghantaran, pesanan minimum, terma pembayaran, waranti dan pemulangan. Jadual mudah membantu anda melihat perbezaan sebenar.
+
+### Semak cukai dan dokumen
+Pastikan invois dikeluarkan dengan betul dan, jika berkaitan, butiran cukai adalah tepat. Panduan kami tentang e-Invois dan panduan kami tentang pendaftaran SST menerangkan apa yang dijangka, dan anda patut mengesahkan keperluan semasa dengan pihak berkuasa atau akauntan anda.
+
+## 3. Fahami dan rundingkan terma pembayaran
+
+### Mengapa terma sama penting dengan harga
+Bilangan hari yang anda ada untuk membayar boleh membebaskan tunai. Tiga puluh hari untuk membayar pembekal sementara anda menjual barang itu dalam dua minggu sangat membantu aliran tunai anda. Panduan kami tentang menguruskan aliran tunai menerangkan mengapa masa itu penting.
+
+### Terma lazim untuk ditanya
+Bayaran tunai semasa penghantaran, bayaran di muka, deposit, kredit 14, 30 hari atau lebih, dan diskaun bayaran awal. Pembekal baharu selalunya meminta bayaran di muka sehingga anda membina rekod prestasi.
+
+### Bina kredit secara beransur-ansur
+Mulakan dengan pesanan kecil dan bayar tepat pada masanya, kemudian minta terma kredit apabila anda telah menunjukkan anda boleh dipercayai. Simpan rekod setiap pembayaran.
+
+### Rundingkan lebih daripada harga
+Tanya tentang diskaun kuantiti, tempoh bayaran lebih panjang, penghantaran percuma atau lebih murah, pesanan minimum yang fleksibel, pemulangan stok tidak terjual, dan keutamaan semasa kekurangan. Selalunya ini lebih mudah dimenangi daripada harga seunit yang lebih rendah.
+
+### Bersedia memberi sesuatu sebagai balasan
+Tawarkan pesanan yang boleh diramal, pembayaran lebih cepat, komitmen lebih panjang atau rujukan. Perjanjian yang adil untuk kedua-dua pihak lebih berkemungkinan berkekalan.
+
+### Gunakan fakta, bukan ugutan
+Tunjukkan sebut harga pesaing, jangkaan kuantiti anda dan rekod pembayaran anda. Kekal sopan dan profesional, kerana anda mungkin masih memerlukan pembekal ini bulan depan.
+
+## 4. Letakkan perjanjian secara bertulis
+
+### Mengapa anda memerlukannya
+Janji lisan mudah dilupakan dan sukar dibuktikan. Perjanjian bertulis atau pesanan belian yang disahkan melindungi kedua-dua pihak. Panduan kami tentang kontrak dan terma untuk perniagaan kecil menerangkan cara membaca klausa utama.
+
+### Perkara utama untuk diliputi
+Spesifikasi produk, harga dan cara ia boleh berubah, kuantiti, tarikh dan tempat penghantaran, siapa menanggung risiko semasa pengangkutan, terma pembayaran, piawaian kualiti, pemulangan dan penggantian, waranti, cara pertikaian dikendalikan, dan cara menamatkan perjanjian.
+
+### Berhati-hati dengan eksklusiviti dan komitmen panjang
+Berwaspada terhadap klausa yang mengikat anda, memaksa pembelian minimum atau membenarkan pembekal mengubah harga sesuka hati. Minta peguam menyemak apa-apa yang penting.
+
+### Simpan setiap pesanan dan pengesahan
+Pesanan belian, pesanan penghantaran, invois dan e-mel membentuk jejak kertas anda. Panduan kami tentang asas simpan kira dan perakaunan menerangkan cara menyusunnya.
+
+### Sahkan perubahan secara bertulis
+Jika harga atau terma berubah, minta secara bertulis dan simpan salinan, walaupun sekadar mesej yang boleh anda tangkap layar.
+
+> Pembekal yang baik bukanlah yang paling murah pada hari anda meminta sebut harga. Ia ialah yang menghantar apa yang anda pesan, apabila anda memerlukannya, pada harga yang boleh anda rancang.
+
+## 5. Lindungi diri anda dengan sandaran
+
+### Jangan bergantung pada satu sumber
+Jika satu-satunya pembekal anda menutup operasi, menaikkan harga atau gagal menghantar, perniagaan anda berhenti. Kenal pasti sekurang-kurangnya satu sandaran bagi setiap barangan kritikal, walaupun anda hanya membeli sedikit daripada mereka.
+
+### Simpan senarai pendek alternatif
+Ketahui siapa lagi yang boleh membekal, berapa mereka mengenakan caj, dan secepat mana mereka boleh bermula. Uji mereka sekali-sekala dengan pesanan kecil.
+
+### Simpan penimbal stok yang munasabah
+Bagi barangan penting, stok keselamatan yang sederhana boleh menampung penghantaran lewat tanpa mengikat terlalu banyak tunai. Panduan kami tentang perancangan kesinambungan perniagaan menerangkan cara bersedia menghadapi gangguan.
+
+### Perhatikan tanda amaran awal
+Penghantaran lewat, aduan meningkat, alasan yang kerap atau respons yang lambat boleh menandakan masalah di pihak pembekal.
+
+### Fikirkan risiko mata wang dan penghantaran
+Jika anda mengimport, perubahan harga dalam mata wang asing dan kelewatan penghantaran boleh menjejaskan kos anda. Sediakan margin untuk ini semasa menetapkan harga. Panduan kami tentang penetapan harga produk dan perkhidmatan menerangkan cara melindungi margin anda.
+
+## 6. Urus kualiti dan penghantaran
+
+### Semak barang semasa tiba
+Kira dan periksa penghantaran sebelum menandatangani, catat sebarang kekurangan atau kerosakan pada pesanan penghantaran, dan ambil gambar masalah serta-merta.
+
+### Tetapkan piawaian kualiti yang mudah
+Persetujui apa yang boleh diterima, cara kecacatan dilaporkan, dan berapa lama pembekal ada untuk menggantikan atau mengkreditkan barang yang rosak.
+
+### Jejak prestasi pembekal
+Simpan rekod mudah tentang penghantaran tepat masa, ketepatan, kualiti dan responsif bagi setiap pembekal. Semaknya beberapa kali setahun.
+
+### Padankan invois dengan pesanan
+Sebelum membayar, bandingkan invois dengan pesanan belian dan apa yang benar-benar diterima. Ini mengesan harga yang salah, bil berganda dan barang yang tidak pernah anda terima.
+
+### Bayar tepat masa, secara konsisten
+Membayar apabila anda katakan akan membayar membina kepercayaan dan selalunya memberi anda layanan lebih baik apabila stok kurang. Panduan kami tentang memilih perisian perakaunan menerangkan cara menjejak apa yang anda terhutang.
+
+## 7. Tangani masalah dan bina hubungan jangka panjang
+
+### Bangkitkan isu lebih awal dan dengan tenang
+Jika ada sesuatu yang tidak kena, hubungi pembekal anda dengan segera bersama fakta yang jelas, gambar dan apa yang anda mahu berlaku. Kebanyakan masalah diselesaikan lebih cepat dengan perbualan yang tenang daripada mesej yang marah.
+
+### Ketahui pilihan anda untuk pertikaian
+Semak apa yang dinyatakan dalam perjanjian anda tentang penggantian, kredit dan bayaran balik. Untuk pertikaian lebih besar, berbincang dengan peguam, dan sahkan peraturan pengguna dan perdagangan semasa dengan pihak berkuasa berkaitan. Panduan kami tentang mengutip bayaran lewat menerangkan sebelah lagi situasi itu.
+
+### Jadilah pelanggan yang berbaloi dikekalkan
+Kongsi jangkaan, beri notis perubahan besar, bayar tepat masa dan beri maklum balas yang jujur. Pembekal selalunya menjaga pelanggan yang mudah dilayan.
+
+### Semak pembekal anda setiap tahun
+Bandingkan harga, kualiti dan perkhidmatan, dan bincang dengan pembekal utama anda tentang apa yang berjaya. Runding semula apabila kuantiti anda meningkat.
+
+### Kekalkan jarak yang hormat
+Bersikap mesra, tetapi pastikan urusan kekal profesional dan elakkan hadiah atau budi yang boleh dilihat sebagai tidak wajar. Panduan kami tentang pematuhan PDPA menerangkan cara mengendalikan data peribadi pembekal dan pelanggan dengan betul.
+
+Jika anda mencari pembekal baharu, akauntan atau peguam untuk menyemak kontrak, anda boleh [menyemak imbas direktori](/ms) untuk profesional dan perniagaan berhampiran anda, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan dan rakan kongsi anda sendiri juga dapat menemui anda.
+
+## Kesilapan lazim PKS Malaysia dengan pembekal
+
+- **Memilih berdasarkan harga sahaja.** Sebut harga paling murah boleh menyembunyikan penghantaran lewat, kualiti lemah atau caj tambahan, jadi bandingkan gambaran penuh.
+- **Bergantung pada satu pembekal dan janji lisan.** Jika pembekal itu gagal atau mengubah perjanjian, anda tiada sandaran dan tiada bukti, jadi simpan sumber kedua dan sahkan terma secara bertulis.
+- **Membayar atau memesan tanpa menyemak.** Penghantaran yang tidak diperiksa dan invois yang tidak dipadankan membawa kepada stok dan bayaran yang salah, jadi periksa barang dan padankan invois sebelum membayar.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Senaraikan lima pembekal teratas anda, apa yang anda belanjakan dengan setiap satu, terma pembayaran semasa, dan barangan mana yang tiada sandaran.
+- **Seterusnya:** Tulis spesifikasi untuk barangan terpenting anda dan minta dua pembekal alternatif untuk sebut harga yang setanding.
+- **Kemudian:** Rundingkan terma pembayaran dan pesanan minimum menggunakan fakta, dan sahkan setiap perjanjian secara bertulis.
+- **Setiap beberapa bulan:** Semak penghantaran, kualiti dan harga, uji pembekal sandaran anda dengan pesanan kecil, dan bincang dengan pembekal utama anda tentang tahun hadapan.
+
+Hubungan pembekal yang kukuh tidak berlaku secara kebetulan. Pilih dengan teliti, persetujui terma yang jelas, semak apa yang anda terima dan bayar dengan adil, dan pembekal anda akan menjadi salah satu kelebihan senyap perniagaan anda.`,
+        faqs: [
+          {
+            question: "Bagaimanakah saya mencari pembekal yang boleh dipercayai untuk perniagaan kecil saya?",
+            answer:
+              "Tanya pemilik perniagaan lain, lawati pameran perdagangan dan pasar borong, semak persatuan industri, dan bandingkan beberapa pilihan. Sahkan syarikat itu berdaftar, minta sampel dan rujukan, dan mulakan dengan pesanan kecil sebelum membuat komitmen yang lebih besar.",
+          },
+          {
+            question: "Apakah yang patut saya bandingkan selain harga semasa memilih pembekal?",
+            answer:
+              "Kualiti dan konsistensi, tempoh penghantaran, pesanan minimum, kebolehpercayaan penghantaran, terma pembayaran, waranti, pemulangan, dan sokongan apabila ada masalah. Letakkan sebut harga bersebelahan supaya anda dapat melihat kos dan risiko penuh, bukan sekadar harga seunit.",
+          },
+          {
+            question: "Bagaimanakah saya merundingkan terma pembayaran yang lebih baik dengan pembekal?",
+            answer:
+              "Bina rekod prestasi dengan memesan dan membayar tepat pada masanya, kemudian minta terma kredit. Gunakan fakta seperti sebut harga pesaing dan jangkaan kuantiti, dan rundingkan lebih daripada harga, contohnya tempoh bayaran lebih panjang, diskaun kuantiti dan pesanan minimum yang fleksibel.",
+          },
+          {
+            question: "Adakah saya memerlukan perjanjian bertulis dengan pembekal saya?",
+            answer:
+              "Ia sangat dinasihatkan. Terma bertulis atau pesanan belian yang disahkan melindungi kedua-dua pihak dan memberi anda bukti jika berlaku pertikaian. Liputi spesifikasi, harga, penghantaran, pembayaran, kualiti, pemulangan dan cara menamatkan perjanjian, dan minta peguam menyemak kontrak yang penting.",
+          },
+          {
+            question: "Mengapa saya patut menyimpan pembekal sandaran?",
+            answer:
+              "Jika satu-satunya pembekal anda menutup operasi, menaikkan harga atau gagal menghantar, perniagaan anda boleh berhenti. Pembekal sandaran, walaupun yang anda beli sedikit sahaja daripadanya, memberi anda pilihan dan kuasa tawar-menawar. Uji mereka sekali-sekala dengan pesanan kecil.",
+          },
+          {
+            question: "Bagaimanakah saya menyemak pembekal baharu itu tulen?",
+            answer:
+              "Minta butiran pendaftaran dan sahkannya dengan Suruhanjaya Syarikat Malaysia, minta rujukan dan sampel, dan lawat jika boleh. Berhati-hati dengan pembekal yang menuntut bayaran penuh di muka, terutamanya dalam talian atau luar negara.",
+          },
+          {
+            question: "Apakah yang patut saya lakukan apabila pembekal menghantar lewat atau menghantar barang yang salah?",
+            answer:
+              "Periksa semasa tiba, catat dan ambil gambar masalah, dan hubungi pembekal dengan segera bersama fakta yang jelas dan apa yang anda mahu, seperti penggantian atau kredit. Semak apa yang dinyatakan dalam perjanjian anda, dan berbincang dengan peguam untuk pertikaian lebih besar.",
+          },
+          {
+            question: "Berapa kerap saya patut menyemak pembekal saya?",
+            answer:
+              "Simpan rekod mudah tentang penghantaran, kualiti, ketepatan dan responsif, dan semaknya beberapa kali setahun. Bandingkan harga dan terma sekurang-kurangnya setahun sekali dan runding semula apabila kuantiti anda meningkat.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "business-partners-and-shareholder-agreements-in-malaysia",
+    title: "Business Partners and Shareholder Agreements: Working With Co-Founders in Malaysia",
+    seoTitle: "Business Partner and Shareholder Agreements in Malaysia",
+    seoDescription:
+      "How Malaysian SMEs can work with co-founders: choosing a partner, splitting roles and equity, key agreement clauses, deadlock, disputes and exit terms.",
+    coverImage: {
+      file: "business-partners-cover.webp",
+      mimeType: "image/webp",
+      alt: "Two women at an outdoor cafe table, one signing a document while the other looks on, with a tablet and drinks beside them",
+      altTranslations: {
+        zh: "两位女士坐在户外咖啡座的桌前，一位正在文件上签字，另一位在旁观看，桌上放着平板电脑和饮料",
+        ms: "Dua wanita di meja kafe luar, seorang menandatangani dokumen manakala seorang lagi memerhati, dengan tablet dan minuman di sebelah mereka",
+      },
+    },
+    contentImages: {
+      documents: {
+        file: "business-partners-documents.webp",
+        mimeType: "image/webp",
+        alt: "Two women seated on a yellow sofa looking through an orange folder of documents together",
+        altTranslations: {
+          zh: "两位女士坐在黄色沙发上，一起翻看一个橙色文件夹里的文件",
+          ms: "Dua wanita duduk di atas sofa kuning sambil meneliti dokumen dalam fail oren bersama-sama",
+        },
+        after: "Agree on how you will part ways before you agree on how you will start.",
+        afterTranslations: {
+          zh: "在商定如何开始之前，先商定好将来如何分道扬镳。",
+          ms: "Persetujui cara anda akan berpisah sebelum anda bersetuju tentang cara anda bermula.",
+        },
+      },
+    },
+    excerpt:
+      "Going into business with a friend, relative, or colleague can double your skills and your resources, or turn into a costly dispute. This guide helps Malaysian SMEs choose a partner, split roles, equity, and profits, understand what a partnership or shareholders' agreement should cover, handle decisions and deadlock, and plan exits before problems start.",
+    body: `Many Malaysian businesses begin with two or more people: friends who share an idea, relatives who pool savings, or colleagues who leave a job together. A partner can bring skills you lack, extra capital, and someone to share the load. But when expectations are vague, even a close relationship can break down over money, effort, or direction.
+
+The good news is that most partnership disputes are preventable. They usually come from things that were never discussed or never written down: who does what, who owns how much, how decisions are made, and what happens if someone wants out.
+
+This is general information, not legal, tax, or financial advice. Company and partnership law, registration requirements, and tax treatment can change, and information in this guide may be out of date. Speak to a lawyer, your accountant, and the Companies Commission of Malaysia (SSM) before you sign anything or set up your structure.
+
+## 1. Decide whether you really need a partner
+
+### Be clear about what the partner adds
+A partner should bring something specific: a skill, money, contacts, or time. If the main reason is that it feels safer to share the risk, think again, because a partner also shares the control and the profits.
+
+### Consider alternatives
+You could hire an employee, work with a freelancer, take on an adviser, or bring in a supplier or investor without making them a co-owner. Our guide on hiring your first employee and our guide on freelancers explain other ways to get help.
+
+### Think about the long run
+Ask whether you can imagine working with this person through slow months, disagreements, and personal changes. Our guide on writing a business plan can help you test whether your goals line up.
+
+### Be honest about the relationship
+Friends and family often avoid hard conversations because they do not want to spoil the relationship. In business, that silence is the usual cause of later trouble.
+
+## 2. Choose the right partner and discuss the hard questions
+
+### Match skills and values
+The best pairs complement each other, for example one person who sells and one who manages operations. They also share a similar view on risk, work hours, and how much money to take out.
+
+### Talk about commitment
+Will each person work full time or part time? Will anyone keep another job? How many hours, and for how long? Differences here are a common source of resentment.
+
+### Talk about money openly
+Discuss how much each person can put in, whether anyone is willing to lend more, and what happens if the business needs extra cash. Our guide on managing cash flow explains why this matters early.
+
+### Discuss your personal situations
+Debts, family obligations, and other businesses can all affect a partner's availability and risk tolerance.
+
+### Check their background
+Do reasonable checks on track record, references, and any past business disputes. A little care now is cheaper than a dispute later.
+
+## 3. Split roles, equity, and profits fairly
+
+### Define each person's role
+Write down who is responsible for what: sales, operations, finance, staff, and suppliers. Overlapping or unclear roles cause arguments and gaps.
+
+### Agree how ownership is divided
+Ownership can reflect the money put in, the work done, the value of ideas and contacts, or a mix. An equal split is common but not always fair if contributions are very different. Think about how to treat later contributions, such as one partner working full time while the other keeps a job.
+
+### Separate ownership from pay
+Owners who work in the business should usually receive a fair salary or drawings for the work they do, in addition to their share of profits. Otherwise the hardest worker can feel cheated. Our guide on pricing and our guide on tax deductions explain how costs affect profits.
+
+### Decide how profits are used
+Agree how much is paid out, how much stays in the business, and who decides. Without a rule, profits can become a constant argument.
+
+### Consider vesting
+If shares or ownership are allocated at the start, some founders agree that they are earned over time, so that a partner who leaves early does not keep a large stake. A lawyer can explain how this can be done properly.
+
+### Keep personal and business money apart
+Use a separate business bank account and keep clear records of what each partner puts in and takes out. Our guide on opening a business bank account and our guide on bookkeeping basics explain how.
+
+## 4. Choose a structure that fits
+
+### Common options
+In Malaysia, partners often operate as a general partnership, a limited liability partnership, or a private limited company (Sdn Bhd), and each has different rules about liability, registration, and tax. In a general partnership, partners can be personally liable for the business's debts, while a company or limited liability partnership has a separate legal identity. Our guide on how to register a business explains the options.
+
+### Why structure matters
+It affects who is liable if things go wrong, how profits are taxed, how ownership can be transferred, and what documents you need. Do not choose a structure only because it is cheapest or fastest.
+
+### Get advice before you register
+A lawyer, company secretary, or accountant can explain the current rules and the trade-offs for your situation. Confirm the requirements on the official SSM pages, because rules and fees can change.
+
+### Keep your records up to date
+Registered details, such as owners, directors, and addresses, need to be kept current. Our guide on staying compliant with SSM annual returns explains what is required.
+
+## 5. Put it in writing: the partnership or shareholders' agreement
+
+Agree on how you will part ways before you agree on how you will start. It feels awkward, but it is the single most useful conversation you can have as co-founders.
+
+### Why a written agreement matters
+A written agreement turns private understandings into clear rules. If there is a disagreement, it tells everyone what was agreed. Our guide on contracts and terms for small businesses explains how to read the key clauses.
+
+### What it should usually cover
+Names and roles of the partners, capital contributed and how future funding is handled, ownership shares, profit sharing and drawings, decision-making and voting, management duties, what happens to the business name and intellectual property, confidentiality, and restrictions on competing.
+
+### Decisions and deadlock
+Decide which decisions need everyone's agreement, such as taking on debt, selling the business, or admitting a new partner, and which can be made by one partner. Include a way to break a deadlock, such as a cooling-off period, mediation, or an agreed third party.
+
+### Adding, removing, or replacing a partner
+Set out how a new partner can join, what happens if someone stops contributing, and how a partner can be removed for serious breaches. Our guide on terminating an employee explains why fair process matters in related situations.
+
+### Exit and buy-out terms
+Cover what happens if a partner wants to leave, becomes ill, dies, or is no longer able to contribute. Include how the shares are valued, who has the first right to buy, how payment is made, and how long it takes. Our guide on selling a business and succession planning explains related ideas.
+
+### Dispute resolution
+Agree on the steps for resolving disagreements, such as direct talks, mediation, and only then formal proceedings.
+
+### Have it professionally drafted
+A template can be a starting point, but each business is different. A lawyer can make sure the agreement works under current law, and can explain any signing or stamping requirements. Confirm current requirements with your lawyer.
+
+> A partnership agreement is not a sign of distrust. It is what lets two people who trust each other keep that trust when things get difficult.
+
+## 6. Run the partnership day to day
+
+### Hold regular meetings
+Set a regular time to review numbers, plans, and problems. Short weekly or monthly check-ins prevent small irritations from growing.
+
+### Keep clear and shared records
+Each partner should be able to see the accounts, bank statements, and key contracts. Our guide on choosing accounting software explains how to share access safely.
+
+### Respect the agreed roles
+Resist the urge to second-guess a partner on every decision in their area, and agree how to raise concerns respectfully.
+
+### Review fairness as the business changes
+Roles, workloads, and contributions change over time. Revisit pay, roles, and ownership if the balance has clearly shifted, and update the agreement.
+
+### Plan for taxes and compliance
+Make sure taxes, statutory contributions, and filings are handled correctly and on time. Our guide on the small business tax calendar explains the common deadlines, and you should confirm current dates with the authorities or your accountant.
+
+## 7. Handle disagreements and exits well
+
+### Deal with problems early
+Raise concerns when they are small, in private, and with specific examples. Waiting until you are angry makes it harder to find a fair solution.
+
+### Use the process you agreed
+Follow the steps in your agreement, such as a cooling-off period or mediation, before going to lawyers or the courts.
+
+### Bring in a neutral person
+A trusted adviser, mediator, or accountant can help you look at the facts and options without the heat of the argument.
+
+### Protect the business and its customers
+Even in a dispute, keep paying staff and suppliers and serving customers. Fighting partners can destroy a viable business. Our guide on business continuity planning explains how to keep operating during disruption.
+
+### Exit cleanly
+When a partner leaves, settle the buy-out, update registrations and bank mandates, transfer or return assets and passwords, inform customers and suppliers as needed, and keep records. Our guide on closing a business explains what winding up involves if you decide to end it.
+
+If you need a lawyer, company secretary, or accountant to help set up your partnership, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so customers can find your business under its new structure.
+
+## Common mistakes Malaysian SMEs make with business partners
+
+- **Starting on a handshake.** Without a written agreement, memories differ and arguments become personal, so put roles, ownership, and exit terms on paper.
+- **Splitting ownership equally without thinking.** An even split can feel fair at the start and unfair later if effort or money is unequal, so discuss contributions and consider vesting.
+- **Ignoring exit and deadlock.** Every partnership faces disagreement eventually, so agree how decisions, buy-outs, and disputes will be handled before you need them.
+
+## Where to start
+
+- **This week:** Talk openly with your partner about roles, hours, money, and expectations, and write down what you agree on.
+- **Next:** Decide how ownership, pay, and profits will work, and get advice on the right structure.
+- **Then:** Have a lawyer draft a partnership or shareholders' agreement covering decisions, deadlock, new partners, and exit terms.
+- **Every year:** Review roles, fairness, and the agreement as the business grows, and keep your records and registrations up to date.
+
+A good partnership is built on clear expectations, honest conversations, and agreements made while everyone still gets along. Do that work early, and your co-founder is more likely to remain an asset rather than a risk.`,
+    faqs: [
+      {
+        question: "Do I need a written agreement with my business partner?",
+        answer:
+          "It is strongly advisable. A written partnership or shareholders' agreement sets out roles, ownership, money, decisions, and exit terms, and protects everyone if memories or circumstances change. Have a lawyer draft it for your situation rather than relying on a generic template.",
+      },
+      {
+        question: "How should we split ownership and profits?",
+        answer:
+          "There is no single rule. Ownership can reflect money invested, work done, and the value of ideas and contacts, and an equal split is not always fair. Agree separately on salaries or drawings for work done, and how profits are paid out or kept in the business.",
+      },
+      {
+        question: "What is the difference between a partnership and a company for co-founders?",
+        answer:
+          "In a general partnership, partners can be personally liable for the business's debts, while a company or limited liability partnership has its own legal identity and different rules on liability, tax, and ownership. Get advice and confirm current requirements with SSM before choosing.",
+      },
+      {
+        question: "What should a partnership or shareholders' agreement cover?",
+        answer:
+          "Roles and duties, capital and future funding, ownership shares, profit sharing, decision-making and voting, handling deadlock, adding or removing partners, exit and buy-out terms, confidentiality, restrictions on competing, and how disputes are resolved.",
+      },
+      {
+        question: "What happens if my partner wants to leave or stops contributing?",
+        answer:
+          "It depends on what you agreed. A good agreement sets out how a leaving partner's share is valued and bought, who has the first right to buy, how payment is made, and what happens if someone stops contributing. Without one, it can become a costly dispute.",
+      },
+      {
+        question: "How can we break a deadlock when we disagree?",
+        answer:
+          "Decide in advance which decisions need unanimous agreement and include a process such as a cooling-off period, mediation, or an agreed third party. Raising issues early and calmly usually makes a fair outcome easier.",
+      },
+      {
+        question: "Should I go into business with a friend or family member?",
+        answer:
+          "It can work well, but personal relationships make it harder to raise difficult topics. Be even more careful to discuss roles, money, and exits openly and to put them in writing, so that the business does not strain the relationship.",
+      },
+      {
+        question: "Do we still need to keep our records and registrations up to date?",
+        answer:
+          "Yes. Keep your accounts, bank records, and registered details such as owners, directors, and addresses current, and make sure taxes and filings are on time. Confirm current requirements with SSM, the tax authority, or your accountant.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "商业伙伴与股东协议：在马来西亚与共同创办人合作",
+        excerpt:
+          "与朋友、亲戚或同事一起做生意，可以让您的技能和资源翻倍，也可能演变成代价高昂的纠纷。本指南帮助马来西亚中小企业选择合伙人、分配角色、股权和利润，了解合伙协议或股东协议应该涵盖什么，处理决策和僵局，并在问题出现之前先规划好退出方式。",
+        body: `许多马来西亚企业是由两个或更多人开始的：分享同一个点子的朋友、一起凑钱的亲戚，或是一同离职的同事。合伙人可以带来您所欠缺的技能、额外的资金，以及一个分担重担的人。但当期望含糊不清时，即使是亲密的关系，也可能因为金钱、付出或方向而破裂。
+
+好消息是，大多数合伙纠纷都是可以预防的。它们通常源于从未讨论或从未写下来的事情：谁负责什么、谁拥有多少、如何做决定，以及有人想退出时会怎样。
+
+本文仅提供一般信息，并非法律、税务或财务建议。公司和合伙法律、注册要求和税务处理可能会改变，本指南的信息可能已经过时。在签署任何文件或设立架构之前，请咨询律师、您的会计师和马来西亚公司委员会（SSM）。
+
+## 1. 判断您是否真的需要合伙人
+
+### 明确合伙人带来什么
+合伙人应该带来具体的东西：技能、资金、人脉或时间。如果主要原因是分担风险感觉更安全，请再想一想，因为合伙人同时也分享控制权和利润。
+
+### 考虑替代方案
+您可以聘请员工、与自由工作者合作、请一位顾问，或引入供应商或投资者而不让他们成为共同拥有人。我们关于聘请第一位员工的指南和关于自由工作者的指南说明了其他获得帮助的方式。
+
+### 想想长远
+问问自己，能否想象与这个人一起度过淡季、分歧和个人生活的变化。我们关于撰写商业计划书的指南可以帮助您测试彼此的目标是否一致。
+
+### 诚实面对这段关系
+朋友和家人往往因为不想破坏关系而回避困难的对话。在商业中，这种沉默正是日后出问题的常见原因。
+
+## 2. 选择合适的合伙人并讨论困难的问题
+
+### 配合技能和价值观
+最好的搭档是互补的，例如一个人负责销售，一个人负责营运。他们对风险、工作时间以及要拿走多少钱也持相似的看法。
+
+### 谈谈投入程度
+每个人是全职还是兼职？有没有人会保留另一份工作？每天几个小时，要持续多久？这方面的差异是怨恨的常见来源。
+
+### 坦诚地谈钱
+讨论每个人可以投入多少、是否有人愿意借出更多，以及企业需要额外现金时怎么办。我们关于管理现金流的指南说明了为什么这在早期就很重要。
+
+### 讨论各自的个人状况
+债务、家庭责任和其他生意，都可能影响合伙人的时间和风险承受力。
+
+### 查核他们的背景
+对过往记录、推荐人以及任何过去的商业纠纷做合理的查核。现在花一点心思，比日后的纠纷便宜。
+
+## 3. 公平分配角色、股权和利润
+
+### 界定每个人的角色
+写下谁负责什么：销售、营运、财务、员工和供应商。重叠或不清楚的角色会造成争吵和漏洞。
+
+### 商定所有权如何划分
+所有权可以反映投入的资金、付出的工作、点子和人脉的价值，或是混合考虑。平均分配很常见，但如果贡献差别很大，不一定公平。想想如何看待日后的贡献，例如一位合伙人全职投入而另一位保留工作。
+
+### 把所有权和薪酬分开
+在企业中工作的拥有人，除了利润分成之外，通常还应该为所做的工作领取合理的薪水或提款。否则最辛苦的人会觉得吃亏。我们关于定价的指南和关于税务扣除的指南说明了成本如何影响利润。
+
+### 决定利润如何使用
+商定派发多少、留在企业多少，以及由谁决定。如果没有规则，利润可能变成不断的争论。
+
+### 考虑分期取得
+如果一开始就分配了股份或所有权，有些创办人会约定它们要随时间逐步获得，这样提早离开的合伙人就不会保留大量股份。律师可以说明如何妥善做到这一点。
+
+### 把个人和企业的钱分开
+使用独立的企业银行户口，并清楚记录每位合伙人投入和取走了多少。我们关于开设企业银行户口的指南和关于簿记基础的指南说明了方法。
+
+## 4. 选择合适的架构
+
+### 常见的选项
+在马来西亚，合伙人常以一般合伙、有限责任合伙或私人有限公司（Sdn Bhd）的方式经营，各自在责任、注册和税务方面有不同的规定。在一般合伙中，合伙人可能要对企业的债务承担个人责任，而公司或有限责任合伙则有独立的法律身份。我们关于如何注册企业的指南说明了这些选项。
+
+### 为什么架构很重要
+它影响出了问题时谁负责、利润如何课税、所有权如何转让，以及您需要哪些文件。不要只因为最便宜或最快而选择某种架构。
+
+### 注册之前先取得意见
+律师、公司秘书或会计师可以说明现行规定以及对您情况的利弊取舍。请在 SSM 官方页面确认要求，因为规定和费用可能会变动。
+
+### 保持记录最新
+注册资料，例如拥有人、董事和地址，需要保持更新。我们关于遵守 SSM 年度申报表的指南说明了所需事项。
+
+## 5. 写成书面：合伙协议或股东协议
+
+在商定如何开始之前，先商定好将来如何分道扬镳。这虽然让人觉得尴尬，却是共同创办人之间最有用的一次对话。
+
+### 为什么书面协议很重要
+书面协议把私下的默契变成清楚的规则。如果出现分歧，它会告诉每个人当初是怎么约定的。我们关于小企业合约与条款的指南说明了如何阅读关键条款。
+
+### 通常应涵盖什么
+合伙人的姓名和角色、投入的资本以及日后的资金如何处理、所有权比例、利润分成和提款、决策和表决、管理职责、企业名称和知识产权的归属、保密，以及禁止竞争的限制。
+
+### 决策和僵局
+决定哪些决策需要所有人同意，例如借债、出售企业或接纳新合伙人，以及哪些可以由一位合伙人决定。加入打破僵局的方法，例如冷静期、调解或双方同意的第三方。
+
+### 增加、移除或更换合伙人
+订明新合伙人如何加入、有人不再出力时怎么办，以及合伙人如何因严重违约而被移除。我们关于解雇员工的指南说明了为什么在类似情况下公平的程序很重要。
+
+### 退出和收购条款
+涵盖合伙人想离开、生病、去世或无法再出力时会怎样。包括股份如何估值、谁有优先购买权、如何付款以及需要多长时间。我们关于出售企业与继承规划的指南说明了相关概念。
+
+### 争议解决
+商定解决分歧的步骤，例如直接谈话、调解，最后才是正式程序。
+
+### 请专业人士起草
+范本可以作为起点，但每家企业都不同。律师可以确保协议在现行法律下行得通，并说明任何签署或盖印的要求。请向您的律师确认现行要求。
+
+> 合伙协议并不是不信任的表现。它让两个彼此信任的人，在事情变得困难时仍能保持这份信任。
+
+## 6. 日常经营合伙关系
+
+### 定期开会
+设定固定时间检视数字、计划和问题。简短的每周或每月沟通可以防止小小的不快越演越烈。
+
+### 保持清楚且共享的记录
+每位合伙人都应该能查看账目、银行对账单和主要合约。我们关于选择会计软件的指南说明了如何安全地共享权限。
+
+### 尊重约定的角色
+克制在伙伴负责的范围内对每个决定都质疑的冲动，并商定如何以尊重的方式提出担忧。
+
+### 随着企业变化检讨公平性
+角色、工作量和贡献会随时间改变。如果平衡明显偏移，请重新检视薪酬、角色和所有权，并更新协议。
+
+### 规划税务和合规
+确保税务、法定供款和申报都得到正确而准时的处理。我们关于小企业税务日历的指南说明了常见的截止日期，您应该向主管单位或会计师确认当前的日期。
+
+## 7. 妥善处理分歧和退出
+
+### 及早处理问题
+在问题还小时、私下并以具体的例子提出担忧。等到愤怒时才说，会让找到公平的解决办法更困难。
+
+### 使用您们商定的程序
+在求助律师或法院之前，先按照协议中的步骤，例如冷静期或调解。
+
+### 请一位中立的人参与
+一位值得信赖的顾问、调解员或会计师，可以帮助您们在没有争吵火气的情况下审视事实和选择。
+
+### 保护企业及其顾客
+即使在纠纷中，也要继续支付员工和供应商并服务顾客。争吵的合伙人可能毁掉一家可行的企业。我们关于业务持续规划的指南说明了如何在中断期间继续营运。
+
+### 干净利落地退出
+当合伙人离开时，结清收购款项，更新注册资料和银行授权，转让或归还资产和密码，视需要通知顾客和供应商，并保存记录。我们关于结束企业的指南说明了如果您决定终止，清盘涉及什么。
+
+如果您需要律师、公司秘书或会计师协助设立合伙关系，可以[浏览目录](/zh)寻找您附近的专业人士，并[创建免费商家列表](/zh/signup)，让顾客在新架构下也能找到您的企业。
+
+## 马来西亚中小企业在商业伙伴方面的常见错误
+
+- **凭一次握手就开始。** 没有书面协议，每个人的记忆不同，争吵就会变成针对个人，所以请把角色、所有权和退出条款写在纸上。
+- **不假思索地平均分配所有权。** 平均分配一开始可能觉得公平，但如果付出或资金不平等，日后会变得不公平，所以请讨论各自的贡献并考虑分期取得。
+- **忽略退出和僵局。** 每一段合伙关系迟早都会面对分歧，所以请在需要之前就商定好决策、收购和争议将如何处理。
+
+## 从哪里开始
+
+- **本周：** 与您的合伙人坦诚地谈谈角色、工作时间、金钱和期望，并写下您们商定的内容。
+- **接下来：** 决定所有权、薪酬和利润如何运作，并就合适的架构取得意见。
+- **然后：** 请律师起草涵盖决策、僵局、新合伙人和退出条款的合伙协议或股东协议。
+- **每年：** 随着企业成长检讨角色、公平性和协议，并保持记录和注册资料最新。
+
+好的合伙关系建立在清楚的期望、诚实的对话，以及在大家仍然相处融洽时所订立的协议之上。尽早做好这些工作，您的共同创办人更可能始终是一项资产，而不是风险。`,
+        faqs: [
+          {
+            question: "我需要与商业伙伴签订书面协议吗？",
+            answer:
+              "强烈建议。书面的合伙协议或股东协议订明角色、所有权、资金、决策和退出条款，在记忆或情况改变时保护每个人。请让律师根据您的情况起草，而不是依赖通用范本。",
+          },
+          {
+            question: "我们应该如何分配所有权和利润？",
+            answer:
+              "没有单一的规则。所有权可以反映投入的资金、付出的工作以及点子和人脉的价值，平均分配并不总是公平。请另行商定为所做工作支付的薪水或提款，以及利润如何派发或留在企业。",
+          },
+          {
+            question: "对共同创办人来说，合伙和公司有什么区别？",
+            answer:
+              "在一般合伙中，合伙人可能要对企业的债务承担个人责任，而公司或有限责任合伙有独立的法律身份，在责任、税务和所有权方面规定不同。请在选择之前取得意见，并向 SSM 确认现行要求。",
+          },
+          {
+            question: "合伙协议或股东协议应该涵盖什么？",
+            answer:
+              "角色和职责、资本和日后的资金、所有权比例、利润分成、决策和表决、僵局的处理、增加或移除合伙人、退出和收购条款、保密、禁止竞争的限制，以及争议如何解决。",
+          },
+          {
+            question: "如果我的合伙人想离开或不再出力，会怎样？",
+            answer:
+              "这取决于您们的约定。好的协议会订明离开的合伙人的股份如何估值和收购、谁有优先购买权、如何付款，以及有人不再出力时怎么办。没有协议的话，可能变成代价高昂的纠纷。",
+          },
+          {
+            question: "我们意见不合时如何打破僵局？",
+            answer:
+              "事先决定哪些决策需要一致同意，并加入一个程序，例如冷静期、调解或双方同意的第三方。及早而冷静地提出问题，通常会让公平的结果更容易达成。",
+          },
+          {
+            question: "我应该与朋友或家人一起做生意吗？",
+            answer:
+              "可以行得通，但私人关系会让提出困难的话题更不容易。请更加小心地坦诚讨论角色、金钱和退出，并把它们写下来，这样企业就不会让关系紧张。",
+          },
+          {
+            question: "我们仍然需要保持记录和注册资料最新吗？",
+            answer:
+              "需要。请保持账目、银行记录和注册资料（例如拥有人、董事和地址）的更新，并确保税务和申报准时。请向 SSM、税务机关或您的会计师确认现行要求。",
+          },
+        ],
+      },
+      ms: {
+        title: "Rakan Kongsi Perniagaan dan Perjanjian Pemegang Saham: Bekerjasama dengan Pengasas Bersama di Malaysia",
+        excerpt:
+          "Berniaga bersama rakan, saudara atau rakan sekerja boleh menggandakan kemahiran dan sumber anda, atau bertukar menjadi pertikaian yang mahal. Panduan ini membantu PKS Malaysia memilih rakan kongsi, membahagikan peranan, ekuiti dan keuntungan, memahami apa yang perlu diliputi oleh perjanjian perkongsian atau pemegang saham, mengendalikan keputusan dan kebuntuan, dan merancang jalan keluar sebelum masalah bermula.",
+        body: `Banyak perniagaan Malaysia bermula dengan dua orang atau lebih: rakan yang berkongsi idea, saudara yang mengumpul wang simpanan, atau rakan sekerja yang berhenti kerja bersama-sama. Rakan kongsi boleh membawa kemahiran yang anda tidak ada, modal tambahan, dan seseorang untuk berkongsi beban. Tetapi apabila jangkaan kabur, hubungan yang rapat pun boleh retak kerana wang, usaha atau hala tuju.
+
+Berita baiknya, kebanyakan pertikaian perkongsian boleh dicegah. Ia biasanya berpunca daripada perkara yang tidak pernah dibincangkan atau tidak pernah ditulis: siapa buat apa, siapa memiliki berapa, bagaimana keputusan dibuat, dan apa berlaku jika seseorang mahu keluar.
+
+Ini maklumat umum, bukan nasihat undang-undang, cukai atau kewangan. Undang-undang syarikat dan perkongsian, keperluan pendaftaran dan layanan cukai boleh berubah, dan maklumat dalam panduan ini mungkin sudah lapuk. Berbincang dengan peguam, akauntan anda dan Suruhanjaya Syarikat Malaysia (SSM) sebelum anda menandatangani apa-apa atau menyediakan struktur anda.
+
+## 1. Putuskan sama ada anda benar-benar memerlukan rakan kongsi
+
+### Jelas tentang apa yang rakan kongsi tambah
+Rakan kongsi patut membawa sesuatu yang khusus: kemahiran, wang, hubungan atau masa. Jika sebab utamanya ialah berkongsi risiko terasa lebih selamat, fikir semula, kerana rakan kongsi juga berkongsi kawalan dan keuntungan.
+
+### Pertimbangkan alternatif
+Anda boleh mengambil pekerja, bekerja dengan pekerja bebas, mengambil penasihat, atau membawa masuk pembekal atau pelabur tanpa menjadikan mereka pemilik bersama. Panduan kami tentang mengambil pekerja pertama dan panduan kami tentang pekerja bebas menerangkan cara lain untuk mendapatkan bantuan.
+
+### Fikirkan jangka panjang
+Tanya sama ada anda dapat membayangkan bekerja dengan orang ini melalui bulan-bulan perlahan, perselisihan dan perubahan peribadi. Panduan kami tentang menulis pelan perniagaan boleh membantu anda menguji sama ada matlamat anda selari.
+
+### Jujur tentang hubungan itu
+Rakan dan keluarga selalunya mengelak perbualan sukar kerana tidak mahu merosakkan hubungan. Dalam perniagaan, kesenyapan itulah punca biasa masalah kemudian.
+
+## 2. Pilih rakan kongsi yang sesuai dan bincang soalan sukar
+
+### Padankan kemahiran dan nilai
+Pasangan terbaik saling melengkapi, contohnya seorang yang menjual dan seorang yang mengurus operasi. Mereka juga berkongsi pandangan yang serupa tentang risiko, waktu bekerja dan berapa banyak wang untuk diambil keluar.
+
+### Bincang tentang komitmen
+Adakah setiap orang bekerja sepenuh masa atau separuh masa? Adakah sesiapa akan mengekalkan pekerjaan lain? Berapa jam, dan untuk berapa lama? Perbezaan di sini ialah punca biasa rasa dendam.
+
+### Bincang tentang wang secara terbuka
+Bincang berapa banyak yang boleh dilaburkan oleh setiap orang, sama ada sesiapa bersedia meminjamkan lebih banyak, dan apa berlaku jika perniagaan memerlukan tunai tambahan. Panduan kami tentang menguruskan aliran tunai menerangkan mengapa ini penting pada peringkat awal.
+
+### Bincang keadaan peribadi masing-masing
+Hutang, tanggungjawab keluarga dan perniagaan lain semuanya boleh menjejaskan kesediaan dan toleransi risiko seorang rakan kongsi.
+
+### Semak latar belakang mereka
+Lakukan semakan yang munasabah tentang rekod prestasi, rujukan dan sebarang pertikaian perniagaan lalu. Sedikit berhati-hati sekarang lebih murah daripada pertikaian kemudian.
+
+## 3. Bahagikan peranan, ekuiti dan keuntungan dengan adil
+
+### Tentukan peranan setiap orang
+Tuliskan siapa bertanggungjawab untuk apa: jualan, operasi, kewangan, pekerja dan pembekal. Peranan yang bertindih atau tidak jelas menyebabkan pertengkaran dan kekosongan.
+
+### Persetujui bagaimana pemilikan dibahagikan
+Pemilikan boleh mencerminkan wang yang dilaburkan, kerja yang dilakukan, nilai idea dan hubungan, atau campuran. Pembahagian sama rata adalah biasa tetapi tidak selalu adil jika sumbangan sangat berbeza. Fikirkan cara menangani sumbangan kemudian, seperti seorang rakan kongsi bekerja sepenuh masa manakala seorang lagi mengekalkan pekerjaan.
+
+### Asingkan pemilikan daripada gaji
+Pemilik yang bekerja dalam perniagaan biasanya patut menerima gaji atau pengeluaran yang adil untuk kerja yang mereka lakukan, di samping bahagian keuntungan mereka. Jika tidak, orang yang paling rajin boleh berasa dianiaya. Panduan kami tentang penetapan harga dan panduan kami tentang potongan cukai menerangkan bagaimana kos mempengaruhi keuntungan.
+
+### Tentukan bagaimana keuntungan digunakan
+Persetujui berapa banyak yang dibayar keluar, berapa banyak yang kekal dalam perniagaan, dan siapa yang memutuskan. Tanpa peraturan, keuntungan boleh menjadi pertengkaran berterusan.
+
+### Pertimbangkan pemilikan berperingkat
+Jika saham atau pemilikan diperuntukkan pada awalnya, sesetengah pengasas bersetuju bahawa ia diperoleh dari semasa ke semasa, supaya rakan kongsi yang keluar awal tidak mengekalkan bahagian besar. Peguam boleh menerangkan cara ini boleh dilakukan dengan betul.
+
+### Pastikan wang peribadi dan perniagaan berasingan
+Gunakan akaun bank perniagaan yang berasingan dan simpan rekod yang jelas tentang apa yang dimasukkan dan diambil oleh setiap rakan kongsi. Panduan kami tentang membuka akaun bank perniagaan dan panduan kami tentang asas simpan kira menerangkan caranya.
+
+## 4. Pilih struktur yang sesuai
+
+### Pilihan lazim
+Di Malaysia, rakan kongsi sering beroperasi sebagai perkongsian am, perkongsian liabiliti terhad atau syarikat sendirian berhad (Sdn Bhd), dan setiap satu mempunyai peraturan berbeza tentang liabiliti, pendaftaran dan cukai. Dalam perkongsian am, rakan kongsi boleh bertanggungjawab secara peribadi atas hutang perniagaan, manakala syarikat atau perkongsian liabiliti terhad mempunyai identiti undang-undang yang berasingan. Panduan kami tentang cara mendaftar perniagaan menerangkan pilihan ini.
+
+### Mengapa struktur penting
+Ia mempengaruhi siapa yang bertanggungjawab jika berlaku masalah, bagaimana keuntungan dicukai, bagaimana pemilikan boleh dipindahkan, dan dokumen apa yang anda perlukan. Jangan pilih struktur hanya kerana ia paling murah atau paling cepat.
+
+### Dapatkan nasihat sebelum mendaftar
+Peguam, setiausaha syarikat atau akauntan boleh menerangkan peraturan semasa dan pertukaran untung rugi bagi situasi anda. Sahkan keperluan di laman rasmi SSM, kerana peraturan dan yuran boleh berubah.
+
+### Pastikan rekod anda dikemas kini
+Butiran berdaftar, seperti pemilik, pengarah dan alamat, perlu sentiasa terkini. Panduan kami tentang kekal patuh dengan penyata tahunan SSM menerangkan apa yang diperlukan.
+
+## 5. Letakkan secara bertulis: perjanjian perkongsian atau pemegang saham
+
+Persetujui cara anda akan berpisah sebelum anda bersetuju tentang cara anda bermula. Ia terasa janggal, tetapi ia ialah perbualan paling berguna yang boleh anda lakukan sebagai pengasas bersama.
+
+### Mengapa perjanjian bertulis penting
+Perjanjian bertulis menukar persefahaman peribadi kepada peraturan yang jelas. Jika berlaku perselisihan, ia memberitahu semua orang apa yang dipersetujui. Panduan kami tentang kontrak dan terma untuk perniagaan kecil menerangkan cara membaca klausa utama.
+
+### Apa yang biasanya perlu diliputi
+Nama dan peranan rakan kongsi, modal yang disumbang dan cara pembiayaan masa depan dikendalikan, pegangan pemilikan, perkongsian keuntungan dan pengeluaran, pembuatan keputusan dan pengundian, tugas pengurusan, apa berlaku kepada nama perniagaan dan harta intelek, kerahsiaan, dan sekatan daripada bersaing.
+
+### Keputusan dan kebuntuan
+Tentukan keputusan mana yang memerlukan persetujuan semua orang, seperti mengambil hutang, menjual perniagaan atau menerima rakan kongsi baharu, dan yang mana boleh dibuat oleh seorang rakan kongsi. Sertakan cara memecahkan kebuntuan, seperti tempoh bertenang, pengantaraan atau pihak ketiga yang dipersetujui.
+
+### Menambah, mengeluarkan atau menggantikan rakan kongsi
+Nyatakan bagaimana rakan kongsi baharu boleh menyertai, apa berlaku jika seseorang berhenti menyumbang, dan bagaimana rakan kongsi boleh dikeluarkan kerana pelanggaran serius. Panduan kami tentang menamatkan perkhidmatan pekerja menerangkan mengapa proses yang adil penting dalam situasi berkaitan.
+
+### Terma keluar dan pembelian
+Liputi apa berlaku jika rakan kongsi mahu pergi, jatuh sakit, meninggal dunia atau tidak lagi dapat menyumbang. Sertakan cara saham dinilai, siapa yang mempunyai hak pertama untuk membeli, bagaimana pembayaran dibuat, dan berapa lama masa yang diambil. Panduan kami tentang menjual perniagaan dan perancangan penggantian menerangkan idea berkaitan.
+
+### Penyelesaian pertikaian
+Persetujui langkah untuk menyelesaikan perselisihan, seperti perbincangan terus, pengantaraan, dan hanya kemudian prosiding rasmi.
+
+### Minta ia digubal secara profesional
+Templat boleh menjadi titik permulaan, tetapi setiap perniagaan berbeza. Peguam dapat memastikan perjanjian berfungsi di bawah undang-undang semasa, dan boleh menerangkan sebarang keperluan menandatangani atau mengecap. Sahkan keperluan semasa dengan peguam anda.
+
+> Perjanjian perkongsian bukan tanda tidak percaya. Ia ialah apa yang membolehkan dua orang yang saling mempercayai mengekalkan kepercayaan itu apabila keadaan menjadi sukar.
+
+## 6. Jalankan perkongsian itu setiap hari
+
+### Adakan mesyuarat tetap
+Tetapkan masa tetap untuk menyemak angka, pelan dan masalah. Semakan ringkas mingguan atau bulanan mencegah kejengkelan kecil daripada membesar.
+
+### Simpan rekod yang jelas dan dikongsi
+Setiap rakan kongsi patut dapat melihat akaun, penyata bank dan kontrak utama. Panduan kami tentang memilih perisian perakaunan menerangkan cara berkongsi akses dengan selamat.
+
+### Hormati peranan yang dipersetujui
+Tahan keinginan untuk meragui rakan kongsi dalam setiap keputusan di bidangnya, dan persetujui cara membangkitkan kebimbangan dengan hormat.
+
+### Semak keadilan apabila perniagaan berubah
+Peranan, beban kerja dan sumbangan berubah dari semasa ke semasa. Semak semula gaji, peranan dan pemilikan jika keseimbangan jelas telah beralih, dan kemas kini perjanjian.
+
+### Rancang untuk cukai dan pematuhan
+Pastikan cukai, caruman berkanun dan pemfailan dikendalikan dengan betul dan tepat pada masanya. Panduan kami tentang kalendar cukai perniagaan kecil menerangkan tarikh akhir lazim, dan anda patut mengesahkan tarikh semasa dengan pihak berkuasa atau akauntan anda.
+
+## 7. Tangani perselisihan dan jalan keluar dengan baik
+
+### Tangani masalah lebih awal
+Bangkitkan kebimbangan apabila ia masih kecil, secara peribadi, dan dengan contoh khusus. Menunggu sehingga anda marah menyukarkan mencari penyelesaian yang adil.
+
+### Gunakan proses yang anda persetujui
+Ikut langkah dalam perjanjian anda, seperti tempoh bertenang atau pengantaraan, sebelum pergi kepada peguam atau mahkamah.
+
+### Bawa masuk orang yang neutral
+Penasihat, pengantara atau akauntan yang dipercayai boleh membantu anda melihat fakta dan pilihan tanpa kepanasan pertengkaran.
+
+### Lindungi perniagaan dan pelanggannya
+Walaupun dalam pertikaian, teruskan membayar pekerja dan pembekal serta melayan pelanggan. Rakan kongsi yang bergaduh boleh memusnahkan perniagaan yang berdaya maju. Panduan kami tentang perancangan kesinambungan perniagaan menerangkan cara terus beroperasi semasa gangguan.
+
+### Keluar dengan bersih
+Apabila rakan kongsi keluar, selesaikan pembelian, kemas kini pendaftaran dan mandat bank, pindahkan atau pulangkan aset dan kata laluan, maklumkan pelanggan dan pembekal jika perlu, dan simpan rekod. Panduan kami tentang menutup perniagaan menerangkan apa yang melibatkan penutupan jika anda memutuskan untuk menamatkannya.
+
+Jika anda memerlukan peguam, setiausaha syarikat atau akauntan untuk membantu menyediakan perkongsian anda, anda boleh [menyemak imbas direktori](/ms) untuk profesional berhampiran anda, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan dapat menemui perniagaan anda di bawah struktur barunya.
+
+## Kesilapan lazim PKS Malaysia dengan rakan kongsi perniagaan
+
+- **Bermula dengan berjabat tangan sahaja.** Tanpa perjanjian bertulis, ingatan berbeza dan pertengkaran menjadi peribadi, jadi tulis peranan, pemilikan dan terma keluar di atas kertas.
+- **Membahagikan pemilikan sama rata tanpa berfikir.** Pembahagian sama rata mungkin terasa adil pada mulanya dan tidak adil kemudian jika usaha atau wang tidak sama, jadi bincang sumbangan dan pertimbangkan pemilikan berperingkat.
+- **Mengabaikan jalan keluar dan kebuntuan.** Setiap perkongsian akhirnya menghadapi perselisihan, jadi persetujui cara keputusan, pembelian dan pertikaian akan dikendalikan sebelum anda memerlukannya.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Bercakap secara terbuka dengan rakan kongsi anda tentang peranan, waktu, wang dan jangkaan, dan tuliskan apa yang anda persetujui.
+- **Seterusnya:** Tentukan bagaimana pemilikan, gaji dan keuntungan akan berfungsi, dan dapatkan nasihat tentang struktur yang sesuai.
+- **Kemudian:** Minta peguam menggubal perjanjian perkongsian atau pemegang saham yang meliputi keputusan, kebuntuan, rakan kongsi baharu dan terma keluar.
+- **Setiap tahun:** Semak peranan, keadilan dan perjanjian apabila perniagaan berkembang, dan pastikan rekod serta pendaftaran anda sentiasa terkini.
+
+Perkongsian yang baik dibina atas jangkaan yang jelas, perbualan yang jujur, dan perjanjian yang dibuat semasa semua orang masih bersefahaman. Lakukan kerja itu awal, dan pengasas bersama anda lebih berkemungkinan kekal sebagai aset dan bukannya risiko.`,
+        faqs: [
+          {
+            question: "Adakah saya memerlukan perjanjian bertulis dengan rakan kongsi perniagaan saya?",
+            answer:
+              "Ia sangat dinasihatkan. Perjanjian perkongsian atau pemegang saham yang bertulis menetapkan peranan, pemilikan, wang, keputusan dan terma keluar, dan melindungi semua orang jika ingatan atau keadaan berubah. Minta peguam menggubalnya untuk situasi anda dan bukannya bergantung pada templat umum.",
+          },
+          {
+            question: "Bagaimanakah kami patut membahagikan pemilikan dan keuntungan?",
+            answer:
+              "Tiada satu peraturan. Pemilikan boleh mencerminkan wang yang dilaburkan, kerja yang dilakukan dan nilai idea serta hubungan, dan pembahagian sama rata tidak selalu adil. Persetujui secara berasingan tentang gaji atau pengeluaran untuk kerja yang dilakukan, dan bagaimana keuntungan dibayar keluar atau dikekalkan dalam perniagaan.",
+          },
+          {
+            question: "Apakah perbezaan antara perkongsian dan syarikat untuk pengasas bersama?",
+            answer:
+              "Dalam perkongsian am, rakan kongsi boleh bertanggungjawab secara peribadi atas hutang perniagaan, manakala syarikat atau perkongsian liabiliti terhad mempunyai identiti undang-undang sendiri dan peraturan berbeza tentang liabiliti, cukai dan pemilikan. Dapatkan nasihat dan sahkan keperluan semasa dengan SSM sebelum memilih.",
+          },
+          {
+            question: "Apakah yang patut diliputi oleh perjanjian perkongsian atau pemegang saham?",
+            answer:
+              "Peranan dan tugas, modal dan pembiayaan masa depan, pegangan pemilikan, perkongsian keuntungan, pembuatan keputusan dan pengundian, pengendalian kebuntuan, menambah atau mengeluarkan rakan kongsi, terma keluar dan pembelian, kerahsiaan, sekatan daripada bersaing, dan cara pertikaian diselesaikan.",
+          },
+          {
+            question: "Apa berlaku jika rakan kongsi saya mahu pergi atau berhenti menyumbang?",
+            answer:
+              "Ia bergantung pada apa yang anda persetujui. Perjanjian yang baik menetapkan bagaimana bahagian rakan kongsi yang pergi dinilai dan dibeli, siapa yang mempunyai hak pertama untuk membeli, bagaimana pembayaran dibuat, dan apa berlaku jika seseorang berhenti menyumbang. Tanpa perjanjian, ia boleh menjadi pertikaian yang mahal.",
+          },
+          {
+            question: "Bagaimanakah kami boleh memecahkan kebuntuan apabila kami tidak bersetuju?",
+            answer:
+              "Tentukan lebih awal keputusan mana yang memerlukan persetujuan sebulat suara dan sertakan proses seperti tempoh bertenang, pengantaraan atau pihak ketiga yang dipersetujui. Membangkitkan isu lebih awal dan dengan tenang biasanya memudahkan hasil yang adil.",
+          },
+          {
+            question: "Patutkah saya berniaga dengan rakan atau ahli keluarga?",
+            answer:
+              "Ia boleh berjaya, tetapi hubungan peribadi menyukarkan untuk membangkitkan topik yang sukar. Lebih berhati-hati membincangkan peranan, wang dan jalan keluar secara terbuka dan menulisnya, supaya perniagaan tidak menegangkan hubungan.",
+          },
+          {
+            question: "Adakah kami masih perlu mengekalkan rekod dan pendaftaran yang terkini?",
+            answer:
+              "Ya. Pastikan akaun, rekod bank dan butiran berdaftar seperti pemilik, pengarah dan alamat sentiasa terkini, dan pastikan cukai dan pemfailan tepat pada masanya. Sahkan keperluan semasa dengan SSM, pihak berkuasa cukai atau akauntan anda.",
+          },
+        ],
+      },
+    },
+  },
 ];

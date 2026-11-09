@@ -862,6 +862,60 @@
       ],
       "description": "Window glass covered in water drops on a rainy day",
       "usedBy": "business-continuity-rain.webp"
+    },
+    {
+      "id": 7505170,
+      "tags": [
+        "retail",
+        "supplier",
+        "showroom",
+        "samples"
+      ],
+      "description": "Man and woman discussing samples in a contemporary showroom",
+      "usedBy": "supplier-relationships-cover.webp"
+    },
+    {
+      "id": 7255298,
+      "tags": [
+        "supplier",
+        "handshake",
+        "partnership",
+        "office"
+      ],
+      "description": "Two businessmen shaking hands in a modern office",
+      "usedBy": "supplier-relationships-handshake.webp"
+    },
+    {
+      "id": 5710202,
+      "tags": [
+        "partners",
+        "contract",
+        "cafe",
+        "signing"
+      ],
+      "description": "Young female partners signing a contract at a cafe table",
+      "usedBy": "business-partners-cover.webp"
+    },
+    {
+      "id": 7845230,
+      "tags": [
+        "partners",
+        "documents",
+        "office",
+        "asian"
+      ],
+      "description": "Two Asian women reviewing documents together in a modern office",
+      "usedBy": "business-partners-documents.webp"
+    },
+    {
+      "id": 7644149,
+      "tags": [
+        "partners",
+        "team",
+        "office",
+        "asian"
+      ],
+      "description": "Asian business team having a discussion in a modern office"
     }
   ]
 }
