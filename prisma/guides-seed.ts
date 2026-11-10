@@ -26583,4 +26583,1263 @@ Perkongsian yang baik dibina atas jangkaan yang jelas, perbualan yang jujur, dan
       },
     },
   },
+  {
+    slug: "raising-capital-for-your-malaysian-sme-investors-and-crowdfunding",
+    title: "Raising Capital for Your SME: Investors, Equity Crowdfunding, and Getting Investor-Ready in Malaysia",
+    seoTitle: "Raising Capital for Your Malaysian SME: Investor Guide",
+    seoDescription:
+      "How Malaysian SMEs can raise outside capital: when to seek investors, angels vs crowdfunding, financials, pitch, valuation, term sheets and red flags.",
+    coverImage: {
+      file: "raising-capital-cover.webp",
+      mimeType: "image/webp",
+      alt: "A woman in a dark blazer pointing at printed charts and coloured sticky notes on a whiteboard during a presentation",
+      altTranslations: {
+        zh: "一位身穿深色西装外套的女士在演讲时，指着白板上的打印图表和彩色便利贴",
+        ms: "Seorang wanita berkot gelap menunjuk carta bercetak dan nota pelekat berwarna pada papan putih semasa pembentangan",
+      },
+    },
+    contentImages: {
+      team: {
+        file: "raising-capital-team.webp",
+        mimeType: "image/webp",
+        alt: "Four colleagues in a meeting room with blinds, moving around a dark wooden table with papers, a clipboard and a phone",
+        altTranslations: {
+          zh: "四位同事在装有百叶窗的会议室里，围着一张深色木桌走动，手里拿着文件、写字板和手机",
+          ms: "Empat rakan sekerja di bilik mesyuarat bertirai venetian bergerak di sekitar meja kayu gelap dengan kertas, papan klip dan telefon",
+        },
+        after: "Decide what you would do with outside money before you decide who to ask for it.",
+        afterTranslations: {
+          zh: "在决定向谁募资之前，先决定您会如何使用这笔外部资金。",
+          ms: "Tentukan apa yang akan anda lakukan dengan wang luar sebelum anda memutuskan siapa yang hendak dimintai.",
+        },
+      },
+    },
+    excerpt:
+      "Outside investment can fuel growth, but it also means giving up part of your business and some of your control. This guide helps Malaysian SMEs decide when raising capital makes sense, compare angels, venture investors, and equity crowdfunding, get their financials and pitch ready, understand valuation and term sheets in plain terms, and spot the warning signs of a bad deal.",
+    body: `Most Malaysian SMEs grow from their own savings, profits, and bank financing. But some businesses reach a point where they could grow much faster with more money than they can generate themselves: a new product, a second location, a technology platform, or a push into new markets. That is when outside investors come into the picture.
+
+Raising capital is not free money. Investors buy a share of your business, and they expect to see that share grow in value. That can bring cash, advice, and connections, but it can also bring pressure, less control, and a more complicated business to run.
+
+This is general information, not legal, financial, tax, or investment advice. Securities and fundraising rules, platform requirements, investor limits, and tax treatment change over time, and information in this guide may be out of date. Confirm the current rules with the Securities Commission Malaysia (SC), the Companies Commission of Malaysia (SSM), a lawyer, and your accountant before you raise money or sign any agreement.
+
+## 1. Decide whether you really need outside capital
+
+Decide what you would do with outside money before you decide who to ask for it. A clear purpose and a clear plan for the return make every later step easier.
+
+### Check whether the business suits investors
+Investors usually want a business that can grow substantially, not just a steady income for the owner. A solid neighbourhood shop can be an excellent business without being a good fit for equity investment. Our guide on writing a business plan can help you test your ideas.
+
+### Compare with other ways of funding
+Savings, retained profits, customer prepayments, supplier credit, bank loans, and government grants and schemes can all fund growth without giving up ownership. Our guide on SME grants and funding in Malaysia and our guide on managing cash flow explain the options. Debt has to be repaid, while equity does not, but equity gives away part of the future.
+
+### Be honest about control
+Taking investors means sharing decisions and, over time, profits. Ask yourself whether you are comfortable reporting to others and explaining your choices.
+
+### Think about timing
+Raising money takes months, not weeks, and usually costs time, legal fees, and distraction. Start before you are desperate, because investors can sense when a founder has no alternative.
+
+## 2. Understand the main sources of capital
+
+### Friends and family
+This is the most common first round, but it can strain relationships. Treat it as a proper deal with written terms, and make sure that people understand they could lose their money.
+
+### Angel investors
+Angels are individuals who invest their own money, often in early-stage businesses, and sometimes bring experience and contacts. Terms vary widely, so compare offers carefully and check the investor's track record.
+
+### Venture capital and private equity
+Funds invest larger amounts in businesses they believe can grow quickly and exit through a sale or listing. They usually expect detailed reporting, board seats, and strong rights in the agreement.
+
+### Equity crowdfunding
+Equity crowdfunding lets many investors put in smaller amounts through an online platform. In Malaysia, platforms of this kind are regulated by the SC and are registered as recognised market operators, and issuers generally need to meet eligibility requirements, such as being a locally incorporated company or limited liability partnership. Fundraising limits, investor limits, and other rules have been revised over the years, so confirm the current position on the SC's website and on the platform before you plan around any figure.
+
+### Other routes
+Peer-to-peer financing, strategic investors such as a customer or supplier, and government-linked funds and schemes may also be available. Our guide on franchising explains another way to grow with other people's capital.
+
+### Beware of unregulated offers
+Be very cautious about anyone who promises high guaranteed returns, asks you to raise money outside regulated channels, or pressures you to decide quickly. Check with the SC about whether a platform or offer is permitted.
+
+## 3. Choose the right structure first
+
+### Check how your business is registered
+Investors usually want to buy shares in a company, so a sole proprietorship or a simple partnership may need to be restructured first. Our guide on how to register a business in Malaysia explains the options, and your lawyer or company secretary can advise on the current requirements.
+
+### Tidy up the legal basics
+Make sure your registration details, ownership records, licences, and contracts are in order. Our guide on staying compliant with SSM annual returns and company records explains what to keep current.
+
+### Protect your intellectual property
+If your brand, designs, or technology are valuable, make sure that you own them clearly. Our guide on trademark registration explains how to protect your brand.
+
+### Clarify who owns what
+If you have co-founders, settle ownership, roles, and exit terms before you bring in investors. Our guide on business partners and shareholder agreements explains how.
+
+## 4. Get your numbers and your story ready
+
+### Clean, reliable financial records
+Investors will look closely at your accounts. Our guide on bookkeeping and accounting basics and our guide on choosing accounting software explain how to keep records that stand up to scrutiny. Reconcile your bank accounts and make sure taxes and statutory contributions are up to date.
+
+### Understand your key numbers
+Know your revenue, margins, customer acquisition cost, repeat rate, cash burn, and how many months of cash you have left. Our guide on managing cash flow explains why the last one matters.
+
+### Build a realistic forecast
+Show how much you need, what you will spend it on, and what it will achieve. Keep assumptions modest and explain them. Investors distrust forecasts that rise in a perfectly straight line.
+
+### Write a clear pitch
+Explain the problem, your solution, your customers, how you make money, your traction so far, your team, how much you are raising, and what the money will do. A short, plain pitch beats a long, complicated one.
+
+### Show evidence, not just promises
+Sales, repeat customers, signed contracts, pilot results, and testimonials carry more weight than ambitions.
+
+### Prepare for the hard questions
+Expect questions about competitors, risks, your own commitment, and what happens if things go wrong. Practise with a trusted friend or adviser.
+
+## 5. Understand valuation and the terms
+
+### Valuation in plain terms
+Valuation is what the business is considered to be worth, and it decides how much of it the investor gets for their money. For example, if an investor puts in RM100,000 at a valuation that gives them ten percent, the business is being valued at RM1 million after the investment. Early-stage valuations are often negotiated rather than calculated, so ask for a clear explanation and take advice.
+
+### Dilution
+Every new round of investment reduces your percentage, though a smaller share of a bigger business can still be worth more. Think about how much you are willing to give up now and in later rounds.
+
+### The term sheet
+A term sheet is a summary of the proposed deal, such as the amount, valuation, investor rights, and conditions. It is usually not fully binding, but it shapes everything that follows. Our guide on contracts and terms explains how to read key clauses.
+
+### Common clauses to understand
+Voting and board rights, rights to veto major decisions, liquidation preferences, anti-dilution protection, rights to buy more shares, restrictions on selling your shares, and what happens if you leave. These can matter as much as the headline price.
+
+> A good investor offers more than money. A good deal leaves you in control of your business and aligned with the people who share in its future.
+
+### Get proper legal advice
+A lawyer who knows investment agreements can explain what you are signing and protect your interests. This is not the place to rely on a template alone.
+
+## 6. Run the process and handle due diligence
+
+### Build a target list
+Look for investors who understand your sector and stage, and who have backed similar businesses. Ask founders they have funded how they behave when things get hard.
+
+### Approach them properly
+A short, clear message with a link to your pitch usually works better than a long email. Warm introductions from people they trust help.
+
+### Expect due diligence
+Investors will check your financials, contracts, legal documents, intellectual property, customers, and team. Organise the documents in advance so that you can respond quickly. Our guide on PDPA compliance and our guide on handling a tax audit explain areas where gaps are common.
+
+### Be transparent
+Disclose problems early. A surprise discovered in due diligence damages trust more than a weakness you explained openly.
+
+### Keep running the business
+Fundraising can swallow your attention, but sales and service still matter. A dip in performance during a raise can weaken your position.
+
+### Compare offers carefully
+If you get more than one offer, compare not only the price but also the terms, the investor's reputation, and how well you would work together.
+
+## 7. Spot the warning signs of a bad deal
+
+### Pressure and urgency
+Be wary of anyone who pushes you to sign quickly or discourages you from taking legal advice.
+
+### Terms that give away control
+Watch for terms that let the investor take over decisions, remove you, or demand returns regardless of how the business performs.
+
+### Unclear or hidden fees
+Ask about success fees, platform fees, legal costs, and anything you would have to pay whether or not the raise succeeds.
+
+### Promises that sound too good
+Guaranteed returns, secret opportunities, and offers outside regulated channels are classic warning signs. Verify with the SC and check the person or platform's registration.
+
+### A poor fit
+If the investor does not understand your business, wants a different direction, or has a history of conflict with founders, consider walking away.
+
+### After the money arrives
+Keep investors updated with regular, honest reports, keep your records tidy, and use the money as you said you would. Our guide on business continuity planning explains how to protect the business while you grow.
+
+If you need a lawyer, accountant, or company secretary to help you prepare, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so that customers and investors can find you easily.
+
+## Common mistakes Malaysian SMEs make when raising capital
+
+- **Raising money without a clear plan.** Investors back a purpose and a return, so know what you will spend the money on and what it should achieve.
+- **Ignoring the legal and regulatory side.** Unregulated offers and unclear structures cause serious problems, so check the rules and get advice before you raise.
+- **Focusing on valuation and ignoring terms.** A high valuation with harsh clauses can be worse than a lower one with fair terms, so read every term.
+
+## Where to start
+
+- **This week:** Write down why you need the money, how much, and what it will achieve, and compare it with other ways of funding.
+- **Next:** Tidy your records, check your business structure and ownership, and build a simple forecast.
+- **Then:** Prepare a short pitch, list suitable investors or platforms, and confirm the current rules with the SC and your lawyer.
+- **During the raise:** Organise your documents for due diligence, compare offers on terms as well as price, and keep running the business.
+
+Raising capital can accelerate a good business, but only if you go in prepared and with your eyes open. Get your numbers and structure in order, learn the terms, and choose partners who will still be good company when the going gets tough.`,
+    faqs: [
+      {
+        question: "When does it make sense for an SME to raise outside investment?",
+        answer:
+          "When you have a business that can grow substantially, a clear plan for what the money will do, and a need that savings, profits, and loans cannot meet. If a steady owner income is your goal, other funding options may suit you better than giving up equity.",
+      },
+      {
+        question: "What is the difference between an angel investor and venture capital?",
+        answer:
+          "Angels are individuals investing their own money, often early and in smaller amounts, while venture capital funds invest larger sums from pooled money in businesses they expect to grow quickly. Terms, expectations, and involvement vary widely, so compare offers and check track records.",
+      },
+      {
+        question: "What is equity crowdfunding and is it regulated in Malaysia?",
+        answer:
+          "It lets many investors put smaller amounts into a business through an online platform in exchange for shares. In Malaysia, such platforms are regulated by the Securities Commission and registered as recognised market operators. Eligibility rules and limits change, so confirm the current position with the SC and the platform.",
+      },
+      {
+        question: "What do investors want to see before they invest?",
+        answer:
+          "Clean financial records, a realistic forecast, evidence of traction such as sales and repeat customers, a clear pitch, a capable team, tidy legal and ownership records, and a sensible plan for the money. Being honest about risks builds trust.",
+      },
+      {
+        question: "How is my business valued when I raise money?",
+        answer:
+          "Valuation decides what share the investor gets for their money. For early-stage businesses it is usually negotiated rather than calculated, so ask for a clear explanation, compare offers, and take advice. A higher valuation with harsh terms may be worse than a lower one with fair terms.",
+      },
+      {
+        question: "What is a term sheet?",
+        answer:
+          "A summary of the proposed deal, covering the amount, valuation, investor rights, and conditions. It is usually not fully binding but shapes the final agreements, so read it carefully and have a lawyer explain it before you sign anything.",
+      },
+      {
+        question: "How can I avoid investment scams and bad deals?",
+        answer:
+          "Be wary of guaranteed high returns, pressure to decide quickly, offers outside regulated channels, and unclear fees. Check the registration of platforms and promoters with the SC, take legal advice, and walk away if something feels wrong.",
+      },
+      {
+        question: "Do I have to give up control of my business if I take investors?",
+        answer:
+          "You usually share some decisions and profits, and investors may ask for board seats or veto rights over major decisions. The terms you negotiate decide how much control you keep, so understand every clause and take legal advice.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "为您的中小企业筹集资金：投资者、股权众筹与做好融资准备",
+        excerpt:
+          "外部投资可以推动成长，但也意味着放弃一部分企业所有权和一些控制权。本指南帮助马来西亚中小企业判断何时适合筹资，比较天使投资人、风险投资和股权众筹，准备好财务数据和路演，用通俗的方式理解估值和投资条款清单，并识别坏交易的警讯。",
+        body: `大多数马来西亚中小企业靠自己的储蓄、利润和银行融资成长。但有些企业到了某个阶段，如果有比自己所能赚到的更多的资金，就可以成长得快得多：推出新产品、开第二个地点、建立技术平台，或进军新市场。这时外部投资者就会进入视野。
+
+筹资不是免费的钱。投资者购买您企业的一部分股份，并期望这部分股份的价值增长。这可以带来现金、建议和人脉，但也可能带来压力、较少的控制权，以及更复杂的企业运营。
+
+本文仅提供一般信息，并非法律、财务、税务或投资建议。证券和筹资规定、平台要求、投资者限额和税务处理会随时间变化，本指南的信息可能已经过时。在筹资或签署任何协议之前，请向马来西亚证券委员会（SC）、马来西亚公司委员会（SSM）、律师和您的会计师确认现行规定。
+
+## 1. 判断您是否真的需要外部资金
+
+在决定向谁募资之前，先决定您会如何使用这笔外部资金。清晰的目的和对回报的明确计划，会让之后的每一步都更容易。
+
+### 检查企业是否适合投资者
+投资者通常想要的是能够大幅成长的企业，而不只是为老板带来稳定收入。一家扎实的社区商店可以是很好的生意，却不一定适合股权投资。我们关于撰写商业计划书的指南可以帮助您检验自己的想法。
+
+### 与其他融资方式比较
+储蓄、留存利润、顾客预付款、供应商赊账、银行贷款以及政府的补助和计划，都可以在不放弃所有权的情况下为成长提供资金。我们关于马来西亚中小企业补助与资金的指南和关于管理现金流的指南说明了这些选项。债务必须偿还，股权则不必，但股权会让出一部分未来。
+
+### 诚实面对控制权
+引入投资者意味着分享决策权，并且随着时间推移也要分享利润。问问自己，是否愿意向别人汇报并解释自己的选择。
+
+### 考虑时机
+筹资需要几个月而不是几个星期，通常要花费时间、律师费并分散注意力。请在走投无路之前就开始，因为投资者能感觉到创办人是否没有其他选择。
+
+## 2. 了解主要的资金来源
+
+### 亲友
+这是最常见的第一轮资金，但可能伤害关系。请把它当作有书面条款的正式交易，并确保大家明白他们可能会损失这笔钱。
+
+### 天使投资人
+天使投资人是用自己的钱投资的个人，通常投资早期企业，有时还会带来经验和人脉。条款差别很大，所以请仔细比较报价并查核投资者的过往记录。
+
+### 风险投资和私募股权
+基金会向他们认为能快速成长，并通过出售或上市退出的企业投入更大的金额。他们通常期望有详细的报告、董事会席位以及协议中的强势权利。
+
+### 股权众筹
+股权众筹让许多投资者通过网络平台投入较小的金额。在马来西亚，这类平台由 SC 监管，并登记为认可市场营运商，发行人一般需要符合资格要求，例如是在本地注册成立的公司或有限责任合伙。筹资限额、投资者限额和其他规定多年来有所修订，所以在围绕任何数字做规划之前，请在 SC 的网站和平台上确认现行情况。
+
+### 其他途径
+点对点融资、战略投资者（例如客户或供应商）以及与政府相关的基金和计划也可能可行。我们关于特许经营的指南说明了另一种借助他人资本成长的方式。
+
+### 当心不受监管的邀约
+对于承诺高额保证回报、要求您在受监管渠道之外筹资，或催促您快速决定的人，请非常谨慎。请向 SC 查询某个平台或邀约是否获得许可。
+
+## 3. 先选好合适的架构
+
+### 检查您的企业如何注册
+投资者通常想购买公司的股份，所以独资经营或简单的合伙可能需要先重组。我们关于如何在马来西亚注册企业的指南说明了这些选项，您的律师或公司秘书可以就现行要求提供意见。
+
+### 理顺法律基础
+确保您的注册资料、所有权记录、执照和合约都井井有条。我们关于遵守 SSM 年度申报表和公司记录的指南说明了哪些需要保持更新。
+
+### 保护您的知识产权
+如果您的品牌、设计或技术很有价值，请确保您明确拥有它们。我们关于商标注册的指南说明了如何保护您的品牌。
+
+### 厘清谁拥有什么
+如果您有共同创办人，请在引入投资者之前先解决所有权、角色和退出条款。我们关于商业伙伴与股东协议的指南说明了方法。
+
+## 4. 准备好您的数字和故事
+
+### 干净可靠的财务记录
+投资者会仔细检查您的账目。我们关于簿记和会计基础的指南以及关于选择会计软件的指南说明了如何保存经得起审查的记录。请核对银行账目，并确保税务和法定供款都已处理妥当。
+
+### 了解您的关键数字
+知道您的营收、利润率、获客成本、回头率、现金消耗速度，以及您还剩多少个月的现金。我们关于管理现金流的指南说明了为什么最后一项很重要。
+
+### 建立实际的预测
+说明您需要多少钱、会花在什么地方，以及能达到什么成果。保持假设的保守并加以解释。投资者不信任那种完美直线上升的预测。
+
+### 写一份清楚的路演
+解释问题、您的解决方案、您的顾客、您如何赚钱、迄今的成绩、您的团队、您要筹多少钱，以及这笔钱会做什么。简短而通俗的路演胜过冗长而复杂的。
+
+### 展示证据，而不只是承诺
+销售额、回头客、已签的合约、试点结果和客户的见证，比雄心壮志更有分量。
+
+### 为难题做好准备
+预料会被问到竞争对手、风险、您自己的投入，以及出了问题怎么办。请与值得信赖的朋友或顾问一起练习。
+
+## 5. 了解估值和条款
+
+### 通俗地说估值
+估值是企业被认为值多少钱，它决定了投资者用他们的钱可以拿到多少股份。例如，如果投资者以让他们获得百分之十的估值投入 RM100,000，那么投资后企业的估值就是 RM100 万。早期阶段的估值往往是谈出来的而不是算出来的，所以请要求清楚的解释并征求意见。
+
+### 股权稀释
+每一轮新投资都会降低您的持股比例，不过更大企业中较小的份额仍可能更值钱。想想您现在和以后几轮愿意让出多少。
+
+### 投资条款清单
+条款清单是对拟议交易的摘要，例如金额、估值、投资者权利和条件。它通常没有完全的约束力，但会影响后续的一切。我们关于合约与条款的指南说明了如何阅读关键条款。
+
+### 需要了解的常见条款
+表决权和董事会权利、对重大决定的否决权、清算优先权、反稀释保护、购买更多股份的权利、出售您股份的限制，以及您离开时会怎样。这些可能和标价一样重要。
+
+> 好的投资者提供的不只是金钱。好的交易让您继续掌控自己的企业，并与分享企业未来的人保持一致。
+
+### 取得适当的法律意见
+了解投资协议的律师可以说明您在签署什么并保护您的利益。这里不是只靠范本的地方。
+
+## 6. 推进流程并应对尽职调查
+
+### 建立目标名单
+寻找了解您的行业和阶段、并且投资过类似企业的投资者。请询问他们投资过的创办人，在情况艰难时他们的表现如何。
+
+### 以得体的方式接触
+一则附有路演链接的简短清楚的信息，通常比冗长的电邮更有效。他们信任的人所做的引荐也会有帮助。
+
+### 预期会有尽职调查
+投资者会检查您的财务、合约、法律文件、知识产权、顾客和团队。请提前整理好文件，以便快速回应。我们关于个人资料保护法令合规的指南和关于应对税务审计的指南说明了常出现漏洞的地方。
+
+### 保持透明
+及早披露问题。在尽职调查中才发现的意外，比您公开解释的弱点更会损害信任。
+
+### 继续经营企业
+筹资可能占去您全部的注意力，但销售和服务仍然重要。筹资期间表现下滑会削弱您的谈判地位。
+
+### 仔细比较报价
+如果您收到多个报价，请不只比较价格，还要比较条款、投资者的声誉，以及彼此合作得如何。
+
+## 7. 识别坏交易的警讯
+
+### 压力和紧迫感
+对那些催您快速签约或劝您不要寻求法律意见的人要保持警惕。
+
+### 让出控制权的条款
+留意那些让投资者接管决策、撤换您，或不论企业表现如何都要求回报的条款。
+
+### 不清楚或隐藏的费用
+询问成功费、平台费、法律费用，以及无论筹资是否成功您都要支付的任何费用。
+
+### 好得令人难以置信的承诺
+保证回报、秘密的机会和受监管渠道之外的邀约都是典型的警讯。请向 SC 查证，并查核该人士或平台的注册情况。
+
+### 不合适的搭配
+如果投资者不了解您的企业、想要不同的方向，或有与创办人冲突的历史，请考虑抽身。
+
+### 资金到位之后
+定期向投资者提供诚实的报告，保持记录整齐，并按所说的使用这笔资金。我们关于业务持续规划的指南说明了如何在成长的同时保护企业。
+
+如果您需要律师、会计师或公司秘书协助准备，可以[浏览目录](/zh)寻找您附近的专业人士，并[创建免费商家列表](/zh/signup)，让顾客和投资者都能轻松找到您。
+
+## 马来西亚中小企业筹资时的常见错误
+
+- **没有清楚的计划就筹资。** 投资者支持的是目的和回报，所以请知道您将把钱花在什么地方以及应该达到什么成果。
+- **忽略法律和监管方面。** 不受监管的邀约和不清楚的架构会造成严重问题，所以请在筹资之前查明规定并取得意见。
+- **只盯着估值而忽略条款。** 估值高但条款苛刻，可能比估值较低但条款公平的更糟，所以请阅读每一项条款。
+
+## 从哪里开始
+
+- **本周：** 写下您为什么需要这笔钱、需要多少，以及它将达到什么成果，并与其他融资方式比较。
+- **接下来：** 整理您的记录，检查企业架构和所有权，并建立简单的预测。
+- **然后：** 准备一份简短的路演，列出合适的投资者或平台，并向 SC 和您的律师确认现行规定。
+- **筹资期间：** 为尽职调查整理好文件，不只按价格也按条款比较报价，并继续经营企业。
+
+筹资可以加速一家好企业的发展，但前提是您有备而来、睁大眼睛。把您的数字和架构理顺，学会看懂条款，并选择在艰难时仍然是好伙伴的合作者。`,
+        faqs: [
+          {
+            question: "中小企业什么时候适合筹集外部投资？",
+            answer:
+              "当您拥有可以大幅成长的企业、对这笔钱的用途有明确计划，并且有储蓄、利润和贷款无法满足的需求时。如果您的目标是稳定的老板收入，其他融资选项可能比放弃股权更适合您。",
+          },
+          {
+            question: "天使投资人和风险投资有什么区别？",
+            answer:
+              "天使投资人是用自己的钱投资的个人，通常较早期且金额较小，而风险投资基金则用汇集的资金向他们预期能快速成长的企业投入更大的金额。条款、期望和参与程度差别很大，所以请比较报价并查核过往记录。",
+          },
+          {
+            question: "什么是股权众筹？在马来西亚受监管吗？",
+            answer:
+              "它让许多投资者通过网络平台向企业投入较小的金额以换取股份。在马来西亚，这类平台由证券委员会监管，并登记为认可市场营运商。资格规定和限额会变动，所以请向 SC 和平台确认现行情况。",
+          },
+          {
+            question: "投资者在投资之前想看到什么？",
+            answer:
+              "干净的财务记录、实际的预测、销售和回头客等成绩的证据、清楚的路演、能干的团队、整齐的法律和所有权记录，以及对这笔钱的合理计划。诚实面对风险能建立信任。",
+          },
+          {
+            question: "我筹资时企业是如何估值的？",
+            answer:
+              "估值决定了投资者用他们的钱可以拿到多少股份。对于早期企业，它通常是谈出来的而不是算出来的，所以请要求清楚的解释、比较报价并征求意见。估值高但条款苛刻，可能比估值较低但条款公平的更糟。",
+          },
+          {
+            question: "什么是条款清单？",
+            answer:
+              "它是对拟议交易的摘要，涵盖金额、估值、投资者权利和条件。它通常没有完全的约束力，但会影响最终的协议，所以请仔细阅读，并在签署任何文件之前请律师解释。",
+          },
+          {
+            question: "我如何避免投资骗局和坏交易？",
+            answer:
+              "对保证高回报、催促快速决定、受监管渠道之外的邀约以及不清楚的费用要保持警惕。请向 SC 查核平台和推广者的注册情况，征求法律意见，并在感觉不对时抽身。",
+          },
+          {
+            question: "引入投资者我就必须放弃企业的控制权吗？",
+            answer:
+              "您通常要分享一些决策权和利润，投资者也可能要求董事会席位或对重大决定的否决权。您谈判的条款决定了您保留多少控制权，所以请理解每一项条款并征求法律意见。",
+          },
+        ],
+      },
+      ms: {
+        title: "Mengumpul Modal untuk PKS Anda: Pelabur, Pembiayaan Ramai Ekuiti dan Bersedia untuk Pelabur di Malaysia",
+        excerpt:
+          "Pelaburan luar boleh mencergaskan pertumbuhan, tetapi ia juga bermakna melepaskan sebahagian perniagaan dan sedikit kawalan. Panduan ini membantu PKS Malaysia memutuskan bila mengumpul modal masuk akal, membandingkan pelabur malaikat, pelabur teroka dan pembiayaan ramai ekuiti, menyediakan kewangan dan pembentangan, memahami penilaian dan helaian terma dalam bahasa mudah, dan mengesan tanda amaran tawaran yang buruk.",
+        body: `Kebanyakan PKS Malaysia berkembang daripada simpanan, keuntungan dan pembiayaan bank mereka sendiri. Tetapi sesetengah perniagaan sampai ke tahap di mana mereka boleh berkembang jauh lebih pantas dengan wang lebih banyak daripada yang mampu mereka jana sendiri: produk baharu, lokasi kedua, platform teknologi atau pergerakan ke pasaran baharu. Pada ketika itulah pelabur luar masuk dalam gambaran.
+
+Mengumpul modal bukan wang percuma. Pelabur membeli sebahagian daripada perniagaan anda, dan mereka menjangkakan bahagian itu meningkat nilainya. Itu boleh membawa tunai, nasihat dan hubungan, tetapi ia juga boleh membawa tekanan, kurang kawalan, dan perniagaan yang lebih rumit untuk dijalankan.
+
+Ini maklumat umum, bukan nasihat undang-undang, kewangan, cukai atau pelaburan. Peraturan sekuriti dan pengumpulan dana, keperluan platform, had pelabur dan layanan cukai berubah dari semasa ke semasa, dan maklumat dalam panduan ini mungkin sudah lapuk. Sahkan peraturan semasa dengan Suruhanjaya Sekuriti Malaysia (SC), Suruhanjaya Syarikat Malaysia (SSM), peguam dan akauntan anda sebelum anda mengumpul wang atau menandatangani sebarang perjanjian.
+
+## 1. Putuskan sama ada anda benar-benar memerlukan modal luar
+
+Tentukan apa yang akan anda lakukan dengan wang luar sebelum anda memutuskan siapa yang hendak dimintai. Tujuan yang jelas dan rancangan yang jelas untuk pulangan memudahkan setiap langkah seterusnya.
+
+### Semak sama ada perniagaan sesuai untuk pelabur
+Pelabur biasanya mahukan perniagaan yang boleh berkembang dengan ketara, bukan sekadar pendapatan stabil untuk pemilik. Kedai kejiranan yang mantap boleh menjadi perniagaan yang sangat baik tanpa sesuai untuk pelaburan ekuiti. Panduan kami tentang menulis pelan perniagaan boleh membantu anda menguji idea anda.
+
+### Bandingkan dengan cara pembiayaan lain
+Simpanan, untung terkumpul, bayaran pendahuluan pelanggan, kredit pembekal, pinjaman bank, dan geran serta skim kerajaan semuanya boleh membiayai pertumbuhan tanpa melepaskan pemilikan. Panduan kami tentang geran dan pembiayaan PKS di Malaysia dan panduan kami tentang menguruskan aliran tunai menerangkan pilihan itu. Hutang mesti dibayar balik, manakala ekuiti tidak, tetapi ekuiti melepaskan sebahagian daripada masa depan.
+
+### Jujur tentang kawalan
+Mengambil pelabur bermakna berkongsi keputusan dan, dari semasa ke semasa, keuntungan. Tanya diri anda sama ada anda selesa melapor kepada orang lain dan menerangkan pilihan anda.
+
+### Fikirkan tentang masa
+Mengumpul wang mengambil masa berbulan-bulan, bukan berminggu-minggu, dan biasanya memakan masa, yuran guaman dan menggugat tumpuan. Mulakan sebelum anda terdesak, kerana pelabur dapat merasakan apabila pengasas tiada pilihan lain.
+
+## 2. Fahami sumber modal utama
+
+### Rakan dan keluarga
+Ini ialah pusingan pertama yang paling biasa, tetapi ia boleh menegangkan hubungan. Layan ia sebagai perjanjian sebenar dengan terma bertulis, dan pastikan orang faham bahawa mereka boleh kehilangan wang mereka.
+
+### Pelabur malaikat
+Pelabur malaikat ialah individu yang melabur wang sendiri, selalunya dalam perniagaan peringkat awal, dan kadangkala membawa pengalaman dan hubungan. Terma sangat berbeza, jadi bandingkan tawaran dengan teliti dan semak rekod prestasi pelabur.
+
+### Modal teroka dan ekuiti swasta
+Dana melabur jumlah lebih besar dalam perniagaan yang mereka percaya boleh berkembang pantas dan keluar melalui penjualan atau penyenaraian. Mereka biasanya menjangkakan pelaporan terperinci, kerusi lembaga pengarah, dan hak yang kukuh dalam perjanjian.
+
+### Pembiayaan ramai ekuiti
+Pembiayaan ramai ekuiti membolehkan ramai pelabur memasukkan jumlah lebih kecil melalui platform dalam talian. Di Malaysia, platform sedemikian dikawal selia oleh SC dan didaftarkan sebagai pengendali pasaran diiktiraf, dan penerbit amnya perlu memenuhi syarat kelayakan, seperti menjadi syarikat atau perkongsian liabiliti terhad yang diperbadankan di dalam negara. Had pengumpulan dana, had pelabur dan peraturan lain telah disemak dari tahun ke tahun, jadi sahkan kedudukan semasa di laman web SC dan pada platform sebelum anda merancang berdasarkan sebarang angka.
+
+### Laluan lain
+Pembiayaan rakan ke rakan, pelabur strategik seperti pelanggan atau pembekal, dan dana serta skim berkaitan kerajaan juga mungkin tersedia. Panduan kami tentang francais menerangkan satu lagi cara berkembang dengan modal orang lain.
+
+### Berhati-hati dengan tawaran tidak terkawal
+Sangat berhati-hati dengan sesiapa yang menjanjikan pulangan tinggi terjamin, meminta anda mengumpul wang di luar saluran terkawal, atau menekan anda membuat keputusan dengan cepat. Semak dengan SC sama ada sesuatu platform atau tawaran dibenarkan.
+
+## 3. Pilih struktur yang betul dahulu
+
+### Semak bagaimana perniagaan anda didaftarkan
+Pelabur biasanya mahu membeli saham dalam syarikat, jadi pemilikan tunggal atau perkongsian mudah mungkin perlu distruktur semula dahulu. Panduan kami tentang cara mendaftar perniagaan di Malaysia menerangkan pilihan itu, dan peguam atau setiausaha syarikat anda boleh menasihati tentang keperluan semasa.
+
+### Kemaskan asas undang-undang
+Pastikan butiran pendaftaran, rekod pemilikan, lesen dan kontrak anda teratur. Panduan kami tentang kekal patuh dengan penyata tahunan dan rekod syarikat SSM menerangkan apa yang perlu dikemas kini.
+
+### Lindungi harta intelek anda
+Jika jenama, reka bentuk atau teknologi anda bernilai, pastikan anda memilikinya dengan jelas. Panduan kami tentang pendaftaran tanda dagangan menerangkan cara melindungi jenama anda.
+
+### Jelaskan siapa memiliki apa
+Jika anda mempunyai pengasas bersama, selesaikan pemilikan, peranan dan terma keluar sebelum anda membawa masuk pelabur. Panduan kami tentang rakan kongsi perniagaan dan perjanjian pemegang saham menerangkan caranya.
+
+## 4. Sediakan angka dan cerita anda
+
+### Rekod kewangan yang bersih dan boleh dipercayai
+Pelabur akan meneliti akaun anda dengan teliti. Panduan kami tentang asas simpan kira dan perakaunan serta panduan kami tentang memilih perisian perakaunan menerangkan cara menyimpan rekod yang tahan penelitian. Selaraskan akaun bank anda dan pastikan cukai dan caruman berkanun dikemas kini.
+
+### Fahami angka utama anda
+Ketahui hasil, margin, kos mendapatkan pelanggan, kadar pembelian berulang, kadar penggunaan tunai, dan berapa bulan tunai yang tinggal. Panduan kami tentang menguruskan aliran tunai menerangkan mengapa yang terakhir itu penting.
+
+### Bina ramalan yang realistik
+Tunjukkan berapa banyak yang anda perlukan, apa yang akan anda belanjakan dan apa yang akan dicapainya. Pastikan andaian sederhana dan terangkannya. Pelabur tidak mempercayai ramalan yang naik dalam garis lurus sempurna.
+
+### Tulis pembentangan yang jelas
+Terangkan masalah, penyelesaian anda, pelanggan anda, cara anda menjana wang, pencapaian setakat ini, pasukan anda, berapa banyak yang anda kumpul, dan apa yang akan dilakukan oleh wang itu. Pembentangan ringkas dan mudah mengalahkan yang panjang dan rumit.
+
+### Tunjukkan bukti, bukan sekadar janji
+Jualan, pelanggan berulang, kontrak yang ditandatangani, keputusan projek perintis dan testimoni lebih berat daripada cita-cita.
+
+### Bersedia untuk soalan sukar
+Jangkakan soalan tentang pesaing, risiko, komitmen anda sendiri, dan apa berlaku jika keadaan menjadi buruk. Berlatih dengan rakan atau penasihat yang dipercayai.
+
+## 5. Fahami penilaian dan terma
+
+### Penilaian dalam bahasa mudah
+Penilaian ialah nilai yang dianggap bagi perniagaan, dan ia menentukan berapa banyak bahagian yang diperoleh pelabur untuk wang mereka. Contohnya, jika pelabur memasukkan RM100,000 pada penilaian yang memberi mereka sepuluh peratus, perniagaan itu dinilai RM1 juta selepas pelaburan. Penilaian peringkat awal selalunya dirundingkan dan bukannya dikira, jadi minta penjelasan yang jelas dan dapatkan nasihat.
+
+### Pencairan pegangan
+Setiap pusingan pelaburan baharu mengurangkan peratusan anda, walaupun bahagian lebih kecil daripada perniagaan lebih besar masih boleh bernilai lebih. Fikirkan berapa banyak yang anda sanggup lepaskan sekarang dan dalam pusingan kemudian.
+
+### Helaian terma
+Helaian terma ialah ringkasan perjanjian yang dicadangkan, seperti jumlah, penilaian, hak pelabur dan syarat. Ia biasanya tidak mengikat sepenuhnya, tetapi ia membentuk segala yang menyusul. Panduan kami tentang kontrak dan terma menerangkan cara membaca klausa utama.
+
+### Klausa lazim untuk difahami
+Hak mengundi dan lembaga pengarah, hak memveto keputusan besar, keutamaan pencairan, perlindungan anti-pencairan, hak membeli lebih banyak saham, sekatan menjual saham anda, dan apa berlaku jika anda keluar. Ini boleh sama penting dengan harga utama.
+
+> Pelabur yang baik menawarkan lebih daripada wang. Perjanjian yang baik membiarkan anda mengawal perniagaan anda dan sejajar dengan orang yang berkongsi masa depannya.
+
+### Dapatkan nasihat undang-undang yang sewajarnya
+Peguam yang tahu tentang perjanjian pelaburan boleh menerangkan apa yang anda tandatangani dan melindungi kepentingan anda. Ini bukan tempat untuk bergantung pada templat sahaja.
+
+## 6. Jalankan proses dan tangani usaha wajar
+
+### Bina senarai sasaran
+Cari pelabur yang memahami sektor dan peringkat anda, dan yang telah menyokong perniagaan serupa. Tanya pengasas yang mereka biayai bagaimana mereka bertindak apabila keadaan sukar.
+
+### Dekati mereka dengan betul
+Mesej ringkas dan jelas dengan pautan ke pembentangan anda biasanya lebih berkesan daripada e-mel panjang. Pengenalan hangat daripada orang yang mereka percayai membantu.
+
+### Jangkakan usaha wajar
+Pelabur akan menyemak kewangan, kontrak, dokumen undang-undang, harta intelek, pelanggan dan pasukan anda. Susun dokumen lebih awal supaya anda boleh bertindak balas dengan cepat. Panduan kami tentang pematuhan PDPA dan panduan kami tentang menangani audit cukai menerangkan bidang di mana jurang sering berlaku.
+
+### Bersikap telus
+Dedahkan masalah lebih awal. Kejutan yang ditemui dalam usaha wajar merosakkan kepercayaan lebih daripada kelemahan yang anda terangkan secara terbuka.
+
+### Teruskan menjalankan perniagaan
+Pengumpulan dana boleh menelan perhatian anda, tetapi jualan dan perkhidmatan masih penting. Kemerosotan prestasi semasa pengumpulan boleh melemahkan kedudukan anda.
+
+### Bandingkan tawaran dengan teliti
+Jika anda mendapat lebih daripada satu tawaran, bandingkan bukan sahaja harga tetapi juga terma, reputasi pelabur, dan sejauh mana anda boleh bekerjasama dengan baik.
+
+## 7. Kesan tanda amaran tawaran yang buruk
+
+### Tekanan dan desakan
+Berhati-hati dengan sesiapa yang mendesak anda menandatangani dengan cepat atau menghalang anda daripada mendapatkan nasihat undang-undang.
+
+### Terma yang melepaskan kawalan
+Perhatikan terma yang membenarkan pelabur mengambil alih keputusan, menyingkirkan anda, atau menuntut pulangan tanpa mengira prestasi perniagaan.
+
+### Yuran yang tidak jelas atau tersembunyi
+Tanya tentang yuran kejayaan, yuran platform, kos guaman, dan apa-apa yang perlu anda bayar sama ada pengumpulan berjaya atau tidak.
+
+### Janji yang kedengaran terlalu baik
+Pulangan terjamin, peluang rahsia dan tawaran di luar saluran terkawal ialah tanda amaran klasik. Sahkan dengan SC dan semak pendaftaran orang atau platform itu.
+
+### Padanan yang tidak sesuai
+Jika pelabur tidak memahami perniagaan anda, mahukan hala tuju berbeza, atau mempunyai sejarah konflik dengan pengasas, pertimbangkan untuk berundur.
+
+### Selepas wang tiba
+Maklumkan pelabur dengan laporan tetap dan jujur, simpan rekod anda dengan kemas, dan gunakan wang itu seperti yang anda katakan. Panduan kami tentang perancangan kesinambungan perniagaan menerangkan cara melindungi perniagaan semasa anda berkembang.
+
+Jika anda memerlukan peguam, akauntan atau setiausaha syarikat untuk membantu anda bersedia, anda boleh [menyemak imbas direktori](/ms) untuk profesional berhampiran anda, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan dan pelabur dapat menemui anda dengan mudah.
+
+## Kesilapan lazim PKS Malaysia semasa mengumpul modal
+
+- **Mengumpul wang tanpa rancangan yang jelas.** Pelabur menyokong tujuan dan pulangan, jadi ketahui apa yang akan anda belanjakan dan apa yang sepatutnya dicapai.
+- **Mengabaikan sebelah undang-undang dan kawal selia.** Tawaran tidak terkawal dan struktur tidak jelas menyebabkan masalah serius, jadi semak peraturan dan dapatkan nasihat sebelum anda mengumpul.
+- **Menumpukan pada penilaian dan mengabaikan terma.** Penilaian tinggi dengan klausa keras boleh lebih buruk daripada yang lebih rendah dengan terma adil, jadi baca setiap terma.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Tuliskan mengapa anda memerlukan wang itu, berapa banyak, dan apa yang akan dicapainya, dan bandingkan dengan cara pembiayaan lain.
+- **Seterusnya:** Kemaskan rekod anda, semak struktur dan pemilikan perniagaan anda, dan bina ramalan mudah.
+- **Kemudian:** Sediakan pembentangan ringkas, senaraikan pelabur atau platform yang sesuai, dan sahkan peraturan semasa dengan SC dan peguam anda.
+- **Semasa pengumpulan:** Susun dokumen anda untuk usaha wajar, bandingkan tawaran mengikut terma dan juga harga, dan teruskan menjalankan perniagaan.
+
+Mengumpul modal boleh mempercepat perniagaan yang baik, tetapi hanya jika anda masuk dengan persediaan dan mata terbuka. Susun angka dan struktur anda, pelajari terma, dan pilih rakan yang masih menjadi teman yang baik apabila keadaan menjadi sukar.`,
+        faqs: [
+          {
+            question: "Bilakah masuk akal bagi PKS untuk mengumpul pelaburan luar?",
+            answer:
+              "Apabila anda mempunyai perniagaan yang boleh berkembang dengan ketara, rancangan yang jelas untuk apa yang akan dilakukan oleh wang itu, dan keperluan yang tidak dapat dipenuhi oleh simpanan, keuntungan dan pinjaman. Jika pendapatan pemilik yang stabil ialah matlamat anda, pilihan pembiayaan lain mungkin lebih sesuai daripada melepaskan ekuiti.",
+          },
+          {
+            question: "Apakah perbezaan antara pelabur malaikat dan modal teroka?",
+            answer:
+              "Pelabur malaikat ialah individu yang melabur wang sendiri, selalunya pada peringkat awal dan dalam jumlah lebih kecil, manakala dana modal teroka melabur jumlah lebih besar daripada wang terkumpul dalam perniagaan yang dijangka berkembang pantas. Terma, jangkaan dan penglibatan sangat berbeza, jadi bandingkan tawaran dan semak rekod prestasi.",
+          },
+          {
+            question: "Apakah pembiayaan ramai ekuiti dan adakah ia dikawal selia di Malaysia?",
+            answer:
+              "Ia membolehkan ramai pelabur memasukkan jumlah lebih kecil ke dalam perniagaan melalui platform dalam talian sebagai pertukaran saham. Di Malaysia, platform sedemikian dikawal selia oleh Suruhanjaya Sekuriti dan didaftarkan sebagai pengendali pasaran diiktiraf. Peraturan kelayakan dan had berubah, jadi sahkan kedudukan semasa dengan SC dan platform.",
+          },
+          {
+            question: "Apakah yang pelabur mahu lihat sebelum mereka melabur?",
+            answer:
+              "Rekod kewangan yang bersih, ramalan yang realistik, bukti pencapaian seperti jualan dan pelanggan berulang, pembentangan yang jelas, pasukan yang berkebolehan, rekod undang-undang dan pemilikan yang teratur, dan rancangan yang munasabah untuk wang itu. Bersikap jujur tentang risiko membina kepercayaan.",
+          },
+          {
+            question: "Bagaimanakah perniagaan saya dinilai apabila saya mengumpul wang?",
+            answer:
+              "Penilaian menentukan bahagian yang diperoleh pelabur untuk wang mereka. Bagi perniagaan peringkat awal, ia biasanya dirundingkan dan bukannya dikira, jadi minta penjelasan yang jelas, bandingkan tawaran dan dapatkan nasihat. Penilaian lebih tinggi dengan terma keras mungkin lebih buruk daripada yang lebih rendah dengan terma adil.",
+          },
+          {
+            question: "Apakah helaian terma?",
+            answer:
+              "Ringkasan perjanjian yang dicadangkan, meliputi jumlah, penilaian, hak pelabur dan syarat. Ia biasanya tidak mengikat sepenuhnya tetapi membentuk perjanjian akhir, jadi bacanya dengan teliti dan minta peguam menerangkannya sebelum anda menandatangani apa-apa.",
+          },
+          {
+            question: "Bagaimanakah saya mengelak penipuan pelaburan dan tawaran yang buruk?",
+            answer:
+              "Berwaspada dengan pulangan tinggi terjamin, tekanan membuat keputusan dengan cepat, tawaran di luar saluran terkawal dan yuran yang tidak jelas. Semak pendaftaran platform dan penggalak dengan SC, dapatkan nasihat undang-undang, dan berundur jika ada sesuatu yang terasa tidak kena.",
+          },
+          {
+            question: "Adakah saya perlu melepaskan kawalan perniagaan saya jika saya mengambil pelabur?",
+            answer:
+              "Anda biasanya berkongsi beberapa keputusan dan keuntungan, dan pelabur mungkin meminta kerusi lembaga pengarah atau hak veto ke atas keputusan besar. Terma yang anda rundingkan menentukan berapa banyak kawalan yang anda kekalkan, jadi fahami setiap klausa dan dapatkan nasihat undang-undang.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "managing-business-debt-and-loan-repayments-in-malaysia",
+    title: "Managing Business Debt and Loan Repayments Without Strangling Cash Flow",
+    seoTitle: "Managing Business Debt and Loan Repayments in Malaysia",
+    seoDescription:
+      "How Malaysian SMEs can manage business debt: list every loan, match repayments to cash flow, talk to lenders early, avoid risky guarantees, get help.",
+    coverImage: {
+      file: "business-debt-cover.webp",
+      mimeType: "image/webp",
+      alt: "A woman in glasses and a polka-dot blouse writing in a notebook beside a calculator and spread-out papers on a wooden desk",
+      altTranslations: {
+        zh: "一位戴眼镜、身穿波点上衣的女士在木桌前，一边在笔记本上书写，旁边是计算器和摊开的文件",
+        ms: "Seorang wanita berkaca mata dan berblaus bertompok menulis dalam buku nota di sebelah kalkulator dan kertas yang berselerak di atas meja kayu",
+      },
+    },
+    contentImages: {
+      calculator: {
+        file: "business-debt-calculator.webp",
+        mimeType: "image/webp",
+        alt: "A woman in glasses and a dark blazer pressing a calculator beside a clipboard of forms and a laptop on a wooden desk",
+        altTranslations: {
+          zh: "一位戴眼镜、身穿深色西装外套的女士在木桌前按着计算器，旁边是一块夹着表格的写字板和一台笔记本电脑",
+          ms: "Seorang wanita berkaca mata dan berkot gelap menekan kalkulator di sebelah papan klip berisi borang dan komputer riba di atas meja kayu",
+        },
+        after: "List every loan, credit line, and repayment on one page before you decide anything else.",
+        afterTranslations: {
+          zh: "在做任何其他决定之前，先把每一笔贷款、信贷额度和还款列在同一页纸上。",
+          ms: "Senaraikan setiap pinjaman, kemudahan kredit dan bayaran balik pada satu muka surat sebelum anda memutuskan apa-apa yang lain.",
+        },
+      },
+    },
+    excerpt:
+      "Borrowing can help a business grow, but repayments that do not fit your cash cycle can quietly strangle it. This guide shows Malaysian SMEs how to take stock of every loan and credit line, understand the real cost, match repayments to cash flow, talk to lenders early about options, avoid guarantees that put the family at risk, and know when to get professional help.",
+    body: `Debt is a normal part of business. A loan can buy equipment, bridge a slow season, or fund stock before a busy period. The trouble starts when repayments come due faster than the cash arrives, when several facilities pile up, or when the owner has put personal assets on the line without fully realising it.
+
+The good news is that most debt problems can be managed if you face them early. Businesses that sit down with the numbers, talk to their lenders, and make a realistic plan usually have far more options than those who wait until they are in default.
+
+This is general information, not legal, financial, or debt advice. Lenders' policies, schemes for borrowers in difficulty, credit reporting practices, and legal rules change over time, and information in this guide may be out of date. Confirm the current position with your lender, your accountant, and where needed a lawyer or a recognised debt adviser before you make decisions.
+
+## 1. Take stock of what you owe
+
+List every loan, credit line, and repayment on one page before you decide anything else. You cannot manage what you cannot see, and many owners are surprised by the total when they add everything up.
+
+### Gather every facility
+Term loans, overdrafts, credit cards used for the business, hire purchase and leasing, supplier credit, loans from family or friends, director loans, and any financing through online platforms. Include personal loans you have used to fund the business.
+
+### Record the key details for each
+For each one, write down the lender, the original amount, the balance outstanding, the interest or profit rate, the monthly instalment, the due date, the remaining term, any fees and penalties, and what security or guarantee backs it.
+
+### Add up the monthly commitment
+Total all the repayments due each month and compare them with your average monthly cash coming in after costs. Our guide on managing cash flow explains how to build a simple cash forecast.
+
+### Check your records
+Match your list against bank statements and loan statements, because errors, missed payments, and unexpected charges are common. Our guide on bookkeeping and accounting basics explains how to keep your debts properly recorded.
+
+### Know your credit position
+Banks and financiers look at your credit history when you apply for more financing. Ask how you can obtain your own credit report from the relevant credit reporting agencies, check it for mistakes, and confirm the current process with them.
+
+## 2. Understand the real cost of borrowing
+
+### Interest, profit rates, and fees
+Look beyond the headline rate. Processing fees, insurance, early settlement charges, late payment penalties, and annual fees can raise the true cost. Islamic financing uses profit rates and different structures, but the total cost still matters.
+
+### Fixed or variable
+A variable rate can rise when benchmark rates change, which raises your instalments. Check which type you have and what would happen to your repayments if the rate rose.
+
+### Short-term versus long-term
+Short-term debt, such as overdrafts and credit cards, is often more expensive and is meant for short gaps, not long-term needs. Using it to fund permanent costs is a common trap.
+
+### The cost of informal and high-cost credit
+Some online lenders, unlicensed lenders, and informal sources charge very high costs or use aggressive collection. Be very careful with offers that are fast and easy but vague on the total cost. Check whether a lender is properly authorised, and confirm with the relevant authority if you are unsure.
+
+### Use a simple comparison
+For any new loan, ask for the total amount you will repay over the full term, and compare that with what you borrow. Our guide on SME grants and funding in Malaysia explains lower-cost options to check first.
+
+## 3. Match repayments to your cash cycle
+
+### Look at when cash really arrives
+If customers pay you after 60 days but your instalment is due on the first of each month, the gap has to be funded somewhere. Our guide on collecting late payments explains how to speed up what you are owed.
+
+### Match the loan to its purpose
+Use long-term loans for long-term assets, and short-term facilities for short-term needs. A mismatch causes repeated cash crunches.
+
+### Build a repayment calendar
+Put every due date on one calendar with the amounts, and check it weekly. Late payments often come from forgotten dates, not lack of money.
+
+### Keep a buffer
+Aim to hold enough cash to cover at least a few weeks of repayments and basic costs. Our guide on business continuity planning explains why a cash cushion helps in a disruption.
+
+### Set up automatic payments carefully
+Standing instructions can prevent missed payments, but make sure the money is there on the due date, because failed payments can cost fees and harm your record.
+
+### Watch seasonality
+If your sales are seasonal, ask lenders whether the schedule can reflect that, and plan ahead for the slow months. Our guide on pricing products and services explains how margins affect what you can afford to repay.
+
+## 4. Prioritise payments when money is tight
+
+### Protect what keeps the business alive
+When cash is short, pay first for the things the business cannot operate without, such as wages, key suppliers, rent, and essential utilities. Our guide on payroll and statutory contributions and our guide on employee leave explain staff obligations.
+
+### Do not ignore taxes and statutory payments
+Taxes and statutory contributions can carry penalties and legal consequences. Our guide on the small business tax calendar explains the common deadlines, and our guide on handling a tax audit explains why compliance matters.
+
+### Compare the consequences
+Consider what happens if each payment is late, including penalty charges, effects on your credit record, legal action, or loss of an important supplier or asset. Rank the risks, and ask your accountant for help.
+
+### Avoid robbing one lender to pay another
+Paying one debt with a new loan to hide a problem often makes things worse. If you must borrow to cover a gap, understand exactly what it will cost and how you will repay it.
+
+### Cut costs and raise cash sensibly
+Look for expenses you can reduce, stock you can sell, invoices you can collect faster, and assets you do not need. Our guide on managing inventory explains how to free up cash tied in stock.
+
+> Debt becomes dangerous when it is hidden. The sooner you put the numbers in front of yourself and your lender, the more options you will have.
+
+## 5. Talk to your lender early
+
+### Why early matters
+Lenders usually have more flexibility before an account is overdue than after. A borrower who calls early with a clear plan is treated very differently from one who goes silent.
+
+### Know what you may be able to ask for
+Depending on the lender and your situation, options may include a temporary pause in payments, lower instalments for a period, a longer loan term, a revised schedule, or consolidating facilities. These are not guaranteed, and each has costs, such as more interest over time. Ask for the full details in writing before you agree.
+
+### Prepare before you call
+Have your list of debts, your recent accounts, your cash forecast, and a clear explanation of why payments are difficult and how you plan to recover. A realistic proposal is more persuasive than a general plea.
+
+### Put everything in writing
+Keep copies of letters, emails, and any new schedule, and make sure you understand the revised terms, fees, and what happens if you miss the new payments.
+
+### Check available schemes
+Government agencies, banks, and industry bodies sometimes offer schemes or advisory services for businesses in difficulty. These change over time, so confirm what is currently available with your bank and the relevant authority. Our guide on SME grants and funding in Malaysia explains where to start looking.
+
+### Be honest
+Do not hide problems or give false information to a lender. Honesty protects you both legally and in the relationship.
+
+## 6. Avoid guarantees and security that put the family at risk
+
+### Understand personal guarantees
+Many lenders ask the owner or directors to guarantee a company's loan personally. That means that if the company cannot pay, you may be personally responsible, even if the business is a limited company. Read exactly what you are signing, and take legal advice before you sign.
+
+### Be careful with family property
+Pledging your home, land, or savings, or asking relatives to guarantee a loan, can put loved ones at risk. Discuss the risks openly and consider alternatives first.
+
+### Know the difference between structures
+A sole proprietorship or general partnership gives no separation between you and the business, while a company or limited liability partnership has a separate legal identity, although guarantees can still bring personal liability. Our guide on how to register a business explains the structures, and our guide on business partners and shareholder agreements explains how to handle co-owners.
+
+### Limit and review guarantees
+Try to limit the amount and duration of any guarantee, and ask for it to be released when the loan is repaid. Keep records of every guarantee you have given.
+
+### Check what happens on default
+Understand what rights the lender has to take assets, and in what order, and how the process works. Confirm this with your lawyer.
+
+### Do not sign what you do not understand
+Ask questions, ask for time, and bring in an adviser. Pressure to sign immediately is a warning sign.
+
+## 7. Know when to get professional help
+
+### Signs you need help
+Missing payments regularly, borrowing to pay existing debts, receiving demand letters, or lying awake at night over money. These are all signs to get advice now, not later.
+
+### Who can help
+Your accountant can review your numbers and help prepare a plan, a lawyer can explain your rights and obligations, and a recognised debt adviser or counselling service may be able to help in some situations. Make sure that any adviser is reputable and be wary of anyone who charges large upfront fees or promises to make debts disappear.
+
+### Understand the formal options
+In serious cases, the law provides formal processes for restructuring arrangements, winding up, or bankruptcy, depending on the business structure. These have major consequences, so take legal advice and confirm the current rules before deciding. Our guide on closing a business in Malaysia explains what winding up can involve.
+
+### Protect yourself from scams
+Be careful of anyone who claims they can erase your debts or offers quick fixes in return for fees. Check with the relevant authority if an offer sounds too good to be true.
+
+### Look after yourself
+Money stress is heavy, and talking to someone you trust helps. Facing the problem early gives you the best chance of solving it.
+
+If you need an accountant, a lawyer, or another professional to help you plan, you can [browse the directory](/en) for advisers near you, and [create a free business listing](/en/signup) so that customers can find your business and keep your income flowing.
+
+## Common mistakes Malaysian SMEs make with business debt
+
+- **Not knowing the total.** Debts scattered across lenders and cards are easy to underestimate, so list everything on one page and update it monthly.
+- **Waiting until payments are overdue.** Lenders usually have more options before default, so contact them early with a clear, honest plan.
+- **Signing guarantees without understanding them.** A personal or family guarantee can follow you long after the business has changed, so read it carefully and take legal advice.
+
+## Where to start
+
+- **This week:** List every loan, credit line, and repayment, with rates, balances, due dates, and any guarantees, and check them against your statements.
+- **Next:** Compare the monthly total with your real cash flow, build a repayment calendar, and set aside a small buffer.
+- **Then:** If payments are tight, prepare a plan and talk to your lender early, and take advice from your accountant.
+- **Every quarter:** Review your debts, your credit report, and whether your borrowing still matches what the business needs.
+
+Debt does not have to be a burden that follows you around. Know exactly what you owe, match repayments to the way cash really arrives, speak up early, and protect your family from risks you have not agreed to, and your borrowing can stay a tool rather than a trap.`,
+    faqs: [
+      {
+        question: "How do I get a clear picture of all my business debts?",
+        answer:
+          "List every loan, overdraft, credit card, hire purchase, supplier credit, and personal loan used for the business on one page, with the lender, balance, rate, instalment, due date, remaining term, fees, and any guarantee. Check it against your statements and update it regularly.",
+      },
+      {
+        question: "What should I do if I cannot make my loan repayments?",
+        answer:
+          "Contact your lender early, before payments become overdue, with your list of debts, your cash forecast, and a realistic plan. Depending on the lender, options may include a temporary pause, lower instalments, or a longer term, but none are guaranteed and each has costs. Get any agreement in writing.",
+      },
+      {
+        question: "Which debts should I pay first when cash is tight?",
+        answer:
+          "Prioritise what keeps the business running, such as wages, key suppliers, rent, and essential utilities, and do not ignore taxes and statutory payments that can carry penalties. Compare the consequences of each late payment and ask your accountant to help rank them.",
+      },
+      {
+        question: "What is a personal guarantee and why is it risky?",
+        answer:
+          "It is a promise by an owner, director, or relative to repay the loan if the business cannot. You may be personally responsible even if the business is a company, and family property may be at risk. Read it carefully, limit it where you can, and take legal advice before signing.",
+      },
+      {
+        question: "Does restructuring or rescheduling a loan cost me more?",
+        answer:
+          "It can. Lower instalments or a longer term usually mean more interest or profit paid in total, and there may be fees. Ask the lender for the full terms in writing and compare the total cost before you agree. Confirm what is currently available with your bank.",
+      },
+      {
+        question: "How does my credit record affect my business borrowing?",
+        answer:
+          "Lenders usually check your credit history when you apply for financing, and missed or late payments can make borrowing harder or more expensive. Obtain your own credit report from the relevant agencies, check it for errors, and confirm the current process with them.",
+      },
+      {
+        question: "How can I avoid expensive or unsafe lenders?",
+        answer:
+          "Be cautious of fast, easy offers that are vague about the total cost, aggressive collection, or lenders that are not properly authorised. Ask for the total repayment over the full term, compare options, and confirm with the relevant authority if you are unsure.",
+      },
+      {
+        question: "When should I seek professional help with business debt?",
+        answer:
+          "As soon as you are missing payments regularly, borrowing to pay other debts, or receiving demand letters. An accountant can review your numbers, a lawyer can explain your rights, and a recognised adviser may help in some cases. Be wary of anyone who charges large upfront fees or promises to erase your debts.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "管理企业债务与贷款还款，避免扼杀现金流",
+        excerpt:
+          "借贷可以帮助企业成长，但与现金周期不相配的还款可能在不知不觉中扼杀企业。本指南帮助马来西亚中小企业盘点每一笔贷款和信贷额度，了解真实成本，让还款与现金流相配，尽早与贷款机构沟通选择，避免让家人陷入风险的担保，并知道何时寻求专业协助。",
+        body: `债务是经商的正常部分。贷款可以用来购买设备、渡过淡季，或在旺季之前备货。麻烦始于还款到期的速度比现金进来得更快、几笔融资堆积在一起，或是业主在没有完全意识到的情况下拿个人资产作担保。
+
+好消息是，大多数债务问题只要及早面对就可以处理。坐下来看清数字、与贷款机构沟通并制定实际计划的企业，通常比等到违约才行动的企业有多得多的选择。
+
+本文仅提供一般信息，并非法律、财务或债务建议。贷款机构的政策、为陷入困难的借款人提供的计划、信贷报告的做法以及法律规定会随时间变化，本指南的信息可能已经过时。在做决定之前，请向您的贷款机构、会计师以及必要时向律师或认可的债务顾问确认现行情况。
+
+## 1. 盘点您欠了什么
+
+在做任何其他决定之前，先把每一笔贷款、信贷额度和还款列在同一页纸上。看不见的东西无法管理，许多业主把所有数字加起来时都会对总额感到吃惊。
+
+### 收集每一项融资
+定期贷款、透支、用于企业的信用卡、租购和租赁、供应商赊账、来自亲友的贷款、董事贷款，以及通过网络平台取得的任何融资。也要包括您用来为企业筹资的个人贷款。
+
+### 记录每一项的关键细节
+对每一项，写下贷款机构、原始金额、未还余额、利率或盈利率、每月分期付款、到期日、剩余期限、任何费用和罚款，以及由什么抵押或担保作保障。
+
+### 加总每月的承担
+把每个月到期的所有还款加起来，并与您扣除成本之后平均每月进来的现金相比较。我们关于管理现金流的指南说明了如何建立简单的现金预测。
+
+### 核对您的记录
+把您的清单与银行对账单和贷款对账单对照，因为错误、漏付和意外收费很常见。我们关于簿记和会计基础的指南说明了如何把您的债务妥善记录下来。
+
+### 了解您的信用状况
+当您申请更多融资时，银行和金融机构会查看您的信用记录。请询问如何向相关的信贷报告机构取得您自己的信用报告，检查有没有错误，并向他们确认现行的程序。
+
+## 2. 了解借贷的真实成本
+
+### 利息、盈利率和费用
+不要只看标出的利率。手续费、保险、提前结清的费用、逾期罚款和年费都会提高真实成本。伊斯兰融资使用盈利率和不同的结构，但总成本仍然重要。
+
+### 固定还是浮动
+浮动利率可能在基准利率改变时上升，使您的分期付款增加。请查核您是哪一种，以及如果利率上升，您的还款会怎样。
+
+### 短期与长期
+透支和信用卡等短期债务往往更昂贵，是用来应付短暂缺口，而不是长期需求。用它来支付固定成本是常见的陷阱。
+
+### 非正式和高成本信贷的代价
+有些网络放贷者、无牌放贷者和非正式来源收费极高或采取强硬的追债手段。对于快速简便但对总成本含糊其辞的邀约要非常小心。请查核放贷者是否获得适当授权，如不确定，请向相关主管单位确认。
+
+### 使用简单的比较
+对任何新贷款，请要求提供整个期限内您将偿还的总金额，并与借入的金额比较。我们关于马来西亚中小企业补助与资金的指南说明了应该先查看的较低成本选项。
+
+## 3. 让还款与您的现金周期相配
+
+### 看看现金真正何时到账
+如果顾客在 60 天后才付款给您，而您的分期付款在每月一号到期，这个缺口就得由别的地方来填补。我们关于追收逾期货款的指南说明了如何加快收回您应得的款项。
+
+### 让贷款与其用途相配
+长期贷款用于长期资产，短期融资用于短期需求。不匹配会造成反复出现的现金紧缺。
+
+### 建立还款日历
+把每个到期日连同金额放在同一个日历上，并每周检查。逾期付款常常是因为忘记日期，而不是没有钱。
+
+### 保留缓冲
+目标是持有足以应付至少几个星期的还款和基本成本的现金。我们关于业务持续规划的指南说明了为什么现金缓冲在中断时有帮助。
+
+### 谨慎设置自动付款
+常设指示可以防止漏付，但要确保到期日账户里有钱，因为付款失败可能产生费用并损害您的记录。
+
+### 留意季节性
+如果您的销售有季节性，请询问贷款机构还款安排能否反映这一点，并为淡季提前做好规划。我们关于产品与服务定价的指南说明了利润率如何影响您能负担的还款额。
+
+## 4. 资金紧张时的付款优先顺序
+
+### 保护让企业活下去的项目
+现金短缺时，先支付企业缺了就无法运作的项目，例如工资、主要供应商、租金和基本的水电费。我们关于薪资与法定供款的指南和关于员工休假的指南说明了对员工的义务。
+
+### 不要忽略税务和法定付款
+税款和法定供款可能带来罚款和法律后果。我们关于小企业税务日历的指南说明了常见的截止日期，关于应对税务审计的指南说明了为什么合规很重要。
+
+### 比较后果
+考虑每一笔付款逾期会怎样，包括罚款、对您信用记录的影响、法律行动，或失去重要的供应商或资产。为风险排序，并请会计师协助。
+
+### 避免拆东墙补西墙
+用新贷款来偿还一笔债务以掩盖问题，往往让情况更糟。如果您必须借钱来填补缺口，请清楚了解它将花费多少以及您将如何偿还。
+
+### 明智地削减成本和筹集现金
+找出您可以减少的开支、可以出售的库存、可以更快收回的发票，以及您不需要的资产。我们关于库存管理的指南说明了如何释放被库存占用的现金。
+
+> 债务在被隐藏时才变得危险。您越早把数字摆在自己和贷款机构面前，您的选择就越多。
+
+## 5. 尽早与您的贷款机构沟通
+
+### 为什么越早越好
+贷款机构在账户逾期之前通常比逾期之后更有弹性。一位带着清楚计划及早来电的借款人，与一位保持沉默的借款人所受的对待截然不同。
+
+### 了解您可能可以要求什么
+视贷款机构和您的情况而定，选项可能包括暂时暂停还款、一段时间内降低分期付款、延长贷款期限、修订还款计划，或整合融资。这些都不是保证的，而且各有代价，例如长期下来要付更多利息。在同意之前，请要求以书面提供完整的细节。
+
+### 来电之前做好准备
+备好您的债务清单、近期账目、现金预测，以及为什么还款有困难和您计划如何恢复的清楚说明。务实的提议比泛泛的恳求更有说服力。
+
+### 把一切写成书面
+保存信件、电邮和任何新还款计划的副本，并确保您理解修订后的条款、费用，以及错过新的还款会怎样。
+
+### 查看可用的计划
+政府机构、银行和行业组织有时会为陷入困难的企业提供计划或咨询服务。这些会随时间变化，所以请向您的银行和相关主管单位确认目前有什么。我们关于马来西亚中小企业补助与资金的指南说明了从哪里开始找。
+
+### 保持诚实
+不要隐瞒问题，也不要向贷款机构提供虚假资料。诚实在法律上和关系上都保护您。
+
+## 6. 避免让家人陷入风险的担保和抵押
+
+### 了解个人担保
+许多贷款机构要求业主或董事以个人名义为公司的贷款作担保。这意味着，如果公司无法偿还，即使企业是有限公司，您也可能要承担个人责任。请仔细阅读您所签署的内容，并在签字之前征求法律意见。
+
+### 小心家人的财产
+抵押您的住家、土地或储蓄，或请亲戚为贷款作担保，可能让所爱的人陷入风险。请坦诚讨论风险，并先考虑替代方案。
+
+### 了解不同架构的差别
+独资经营或一般合伙在您和企业之间没有分隔，而公司或有限责任合伙则有独立的法律身份，尽管担保仍可能带来个人责任。我们关于如何注册企业的指南说明了这些架构，关于商业伙伴与股东协议的指南说明了如何处理共同拥有人。
+
+### 限制并检讨担保
+尽量限制任何担保的金额和期限，并要求在贷款还清后解除。保存您所给予的每一项担保的记录。
+
+### 查明违约时会怎样
+了解贷款机构有权取走哪些资产、顺序如何，以及程序是怎样的。请向您的律师确认。
+
+### 不要签署您不理解的文件
+提问、要求时间，并请顾问协助。被催促立即签字是一个警讯。
+
+## 7. 知道何时寻求专业协助
+
+### 您需要协助的迹象
+经常错过还款、借钱来偿还现有债务、收到催款函，或因为钱的问题夜里睡不着。这些都是现在而不是以后就该寻求意见的迹象。
+
+### 谁可以帮忙
+您的会计师可以检视您的数字并协助制定计划，律师可以说明您的权利和义务，而认可的债务顾问或咨询服务在某些情况下也许能提供协助。请确保任何顾问都是信誉良好的，并对收取高额预付费用或承诺让债务消失的人保持警惕。
+
+### 了解正式的选项
+在严重的情况下，法律为重组安排、清盘或破产提供正式程序，视企业架构而定。这些有重大后果，所以请在做决定之前征求法律意见并确认现行规定。我们关于结束马来西亚企业的指南说明了清盘可能涉及什么。
+
+### 保护自己免受骗局
+对声称能抹去您债务或收费提供快速解决办法的人要小心。如果某项邀约听起来好得令人难以置信，请向相关主管单位查证。
+
+### 照顾好自己
+金钱压力很沉重，与您信任的人谈谈会有帮助。及早面对问题，让您有最好的机会解决它。
+
+如果您需要会计师、律师或其他专业人士协助规划，可以[浏览目录](/zh)寻找您附近的顾问，并[创建免费商家列表](/zh/signup)，让顾客能找到您的企业，让您的收入持续流入。
+
+## 马来西亚中小企业在企业债务方面的常见错误
+
+- **不知道总额。** 分散在各个贷款机构和信用卡上的债务很容易被低估，所以请把一切列在同一页纸上，并每月更新。
+- **等到还款逾期才行动。** 贷款机构在违约之前通常有更多选择，所以请尽早以清楚而诚实的计划联系他们。
+- **在不理解的情况下签署担保。** 个人或家人的担保可能在企业改变之后仍然跟着您，所以请仔细阅读并征求法律意见。
+
+## 从哪里开始
+
+- **本周：** 列出每一笔贷款、信贷额度和还款，包括利率、余额、到期日和任何担保，并与您的对账单核对。
+- **接下来：** 把每月总额与您真实的现金流比较，建立还款日历，并留出小额缓冲。
+- **然后：** 如果还款吃紧，请准备计划并尽早与贷款机构沟通，同时听取会计师的意见。
+- **每季度：** 检讨您的债务、信用报告，以及您的借贷是否仍然符合企业的需要。
+
+债务不必成为一直跟着您的负担。清楚知道您欠了多少，让还款与现金真实到账的方式相配，尽早开口，并保护您的家人免受您没有同意的风险，您的借贷就可以始终是一种工具，而不是陷阱。`,
+        faqs: [
+          {
+            question: "我如何清楚了解自己所有的企业债务？",
+            answer:
+              "把用于企业的每一笔贷款、透支、信用卡、租购、供应商赊账和个人贷款列在同一页纸上，写明贷款机构、余额、利率、分期付款、到期日、剩余期限、费用和任何担保。请与您的对账单核对并定期更新。",
+          },
+          {
+            question: "如果我无法偿还贷款，应该怎么办？",
+            answer:
+              "请在还款逾期之前尽早联系贷款机构，带上您的债务清单、现金预测和务实的计划。视贷款机构而定，选项可能包括暂时暂停、降低分期付款或延长期限，但都不是保证的，而且各有代价。请把任何协议以书面确认。",
+          },
+          {
+            question: "资金紧张时应该先偿还哪些债务？",
+            answer:
+              "优先支付让企业持续运作的项目，例如工资、主要供应商、租金和基本的水电费，也不要忽略可能带来罚款的税款和法定付款。比较每一笔逾期付款的后果，并请会计师协助排序。",
+          },
+          {
+            question: "什么是个人担保？为什么有风险？",
+            answer:
+              "它是业主、董事或亲属承诺在企业无法偿还时代为偿还贷款。即使企业是公司，您也可能要承担个人责任，家人的财产也可能面临风险。请仔细阅读，尽可能限制它，并在签署前征求法律意见。",
+          },
+          {
+            question: "重组或重新安排贷款会让我付出更多吗？",
+            answer:
+              "可能会。较低的分期付款或较长的期限通常意味着总共要付更多的利息或盈利，也可能有费用。请要求贷款机构以书面提供完整条款，并在同意之前比较总成本。请向您的银行确认目前有什么可用。",
+          },
+          {
+            question: "我的信用记录如何影响企业的借贷？",
+            answer:
+              "贷款机构在您申请融资时通常会查看您的信用记录，漏付或逾期付款可能使借贷更困难或更昂贵。请向相关机构取得您自己的信用报告，检查有没有错误，并向他们确认现行的程序。",
+          },
+          {
+            question: "我如何避开昂贵或不安全的放贷者？",
+            answer:
+              "对快速简便但总成本含糊、追债手段强硬，或没有适当授权的放贷者要保持谨慎。请要求提供整个期限内的总还款额，比较各个选项，如不确定请向相关主管单位确认。",
+          },
+          {
+            question: "我应该何时就企业债务寻求专业协助？",
+            answer:
+              "一旦您经常错过还款、借钱来偿还其他债务，或收到催款函，就应该寻求协助。会计师可以检视您的数字，律师可以说明您的权利，认可的顾问在某些情况下也可能有帮助。对收取高额预付费用或承诺抹去债务的人要保持警惕。",
+          },
+        ],
+      },
+      ms: {
+        title: "Menguruskan Hutang Perniagaan dan Bayaran Balik Pinjaman Tanpa Mencekik Aliran Tunai",
+        excerpt:
+          "Meminjam boleh membantu perniagaan berkembang, tetapi bayaran balik yang tidak sepadan dengan kitaran tunai anda boleh mencekiknya secara senyap. Panduan ini menunjukkan cara PKS Malaysia membuat inventori setiap pinjaman dan kemudahan kredit, memahami kos sebenar, menyesuaikan bayaran balik dengan aliran tunai, bercakap dengan pemberi pinjaman lebih awal tentang pilihan, mengelak jaminan yang meletakkan keluarga dalam risiko, dan tahu bila hendak mendapatkan bantuan profesional.",
+        body: `Hutang ialah sebahagian biasa daripada perniagaan. Pinjaman boleh membeli peralatan, menampung musim perlahan, atau membiayai stok sebelum tempoh sibuk. Masalah bermula apabila bayaran balik tiba lebih cepat daripada tunai, apabila beberapa kemudahan menimbun, atau apabila pemilik telah meletakkan aset peribadi sebagai jaminan tanpa menyedarinya sepenuhnya.
+
+Berita baiknya, kebanyakan masalah hutang boleh diuruskan jika anda menghadapinya lebih awal. Perniagaan yang duduk bersama angka, bercakap dengan pemberi pinjaman dan membuat rancangan yang realistik biasanya mempunyai lebih banyak pilihan daripada yang menunggu sehingga mereka dalam keadaan mungkir.
+
+Ini maklumat umum, bukan nasihat undang-undang, kewangan atau hutang. Dasar pemberi pinjaman, skim untuk peminjam yang menghadapi kesukaran, amalan pelaporan kredit dan peraturan undang-undang berubah dari semasa ke semasa, dan maklumat dalam panduan ini mungkin sudah lapuk. Sahkan kedudukan semasa dengan pemberi pinjaman, akauntan anda, dan jika perlu peguam atau penasihat hutang yang diiktiraf sebelum anda membuat keputusan.
+
+## 1. Buat inventori apa yang anda terhutang
+
+Senaraikan setiap pinjaman, kemudahan kredit dan bayaran balik pada satu muka surat sebelum anda memutuskan apa-apa yang lain. Anda tidak boleh menguruskan apa yang tidak dapat anda lihat, dan ramai pemilik terkejut dengan jumlahnya apabila mereka menambah semuanya.
+
+### Kumpulkan setiap kemudahan
+Pinjaman berjangka, overdraf, kad kredit yang digunakan untuk perniagaan, sewa beli dan pajakan, kredit pembekal, pinjaman daripada keluarga atau rakan, pinjaman pengarah, dan sebarang pembiayaan melalui platform dalam talian. Sertakan pinjaman peribadi yang telah anda gunakan untuk membiayai perniagaan.
+
+### Rekod butiran utama bagi setiap satu
+Bagi setiap satu, tuliskan pemberi pinjaman, jumlah asal, baki tertunggak, kadar faedah atau keuntungan, ansuran bulanan, tarikh matang, baki tempoh, sebarang yuran dan penalti, dan apa cagaran atau jaminan yang menyokongnya.
+
+### Tambah komitmen bulanan
+Jumlahkan semua bayaran balik yang perlu dibayar setiap bulan dan bandingkan dengan purata tunai yang masuk setiap bulan selepas kos. Panduan kami tentang menguruskan aliran tunai menerangkan cara membina ramalan tunai yang mudah.
+
+### Semak rekod anda
+Padankan senarai anda dengan penyata bank dan penyata pinjaman, kerana kesilapan, bayaran terlepas dan caj tidak dijangka adalah perkara biasa. Panduan kami tentang asas simpan kira dan perakaunan menerangkan cara menyimpan hutang anda dengan betul.
+
+### Ketahui kedudukan kredit anda
+Bank dan pembiaya melihat sejarah kredit anda apabila anda memohon pembiayaan tambahan. Tanya cara mendapatkan laporan kredit anda sendiri daripada agensi pelaporan kredit yang berkaitan, semak untuk kesilapan, dan sahkan proses semasa dengan mereka.
+
+## 2. Fahami kos sebenar meminjam
+
+### Faedah, kadar keuntungan dan yuran
+Lihat melebihi kadar utama. Yuran pemprosesan, insurans, caj penyelesaian awal, penalti bayaran lewat dan yuran tahunan boleh meningkatkan kos sebenar. Pembiayaan Islam menggunakan kadar keuntungan dan struktur berbeza, tetapi jumlah kos masih penting.
+
+### Tetap atau berubah
+Kadar berubah boleh naik apabila kadar penanda aras berubah, yang menaikkan ansuran anda. Semak jenis yang anda ada dan apa yang akan berlaku kepada bayaran balik anda jika kadar naik.
+
+### Jangka pendek berbanding jangka panjang
+Hutang jangka pendek, seperti overdraf dan kad kredit, selalunya lebih mahal dan dimaksudkan untuk jurang pendek, bukan keperluan jangka panjang. Menggunakannya untuk membiayai kos tetap ialah perangkap biasa.
+
+### Kos kredit tidak formal dan berkos tinggi
+Sesetengah pemberi pinjaman dalam talian, pemberi pinjaman tidak berlesen dan sumber tidak formal mengenakan kos yang sangat tinggi atau menggunakan kutipan yang agresif. Sangat berhati-hati dengan tawaran yang pantas dan mudah tetapi kabur tentang jumlah kos. Semak sama ada pemberi pinjaman diberi kuasa dengan betul, dan sahkan dengan pihak berkuasa berkaitan jika anda tidak pasti.
+
+### Gunakan perbandingan yang mudah
+Bagi mana-mana pinjaman baharu, minta jumlah yang akan anda bayar balik sepanjang tempoh penuh, dan bandingkan dengan apa yang anda pinjam. Panduan kami tentang geran dan pembiayaan PKS di Malaysia menerangkan pilihan berkos lebih rendah untuk disemak dahulu.
+
+## 3. Sesuaikan bayaran balik dengan kitaran tunai anda
+
+### Lihat bila tunai benar-benar tiba
+Jika pelanggan membayar anda selepas 60 hari tetapi ansuran anda perlu dibayar pada satu haribulan, jurang itu perlu dibiayai di suatu tempat. Panduan kami tentang mengutip bayaran lewat menerangkan cara mempercepat apa yang terhutang kepada anda.
+
+### Padankan pinjaman dengan tujuannya
+Gunakan pinjaman jangka panjang untuk aset jangka panjang, dan kemudahan jangka pendek untuk keperluan jangka pendek. Ketidakpadanan menyebabkan kesesakan tunai berulang.
+
+### Bina kalendar bayaran balik
+Letakkan setiap tarikh matang pada satu kalendar bersama jumlahnya, dan semak setiap minggu. Bayaran lewat selalunya datang daripada tarikh yang terlupa, bukan kekurangan wang.
+
+### Simpan penimbal
+Sasarkan untuk memegang tunai yang cukup untuk menampung sekurang-kurangnya beberapa minggu bayaran balik dan kos asas. Panduan kami tentang perancangan kesinambungan perniagaan menerangkan mengapa bantalan tunai membantu semasa gangguan.
+
+### Sediakan pembayaran automatik dengan berhati-hati
+Arahan tetap boleh mencegah bayaran terlepas, tetapi pastikan wang ada pada tarikh matang, kerana pembayaran yang gagal boleh mengenakan yuran dan menjejaskan rekod anda.
+
+### Perhatikan sifat bermusim
+Jika jualan anda bermusim, tanya pemberi pinjaman sama ada jadual boleh mencerminkannya, dan rancang lebih awal untuk bulan-bulan perlahan. Panduan kami tentang penetapan harga produk dan perkhidmatan menerangkan bagaimana margin mempengaruhi apa yang mampu anda bayar balik.
+
+## 4. Utamakan pembayaran apabila wang ketat
+
+### Lindungi apa yang menghidupkan perniagaan
+Apabila tunai kurang, bayar dahulu untuk perkara yang tidak dapat dijalankan oleh perniagaan tanpanya, seperti gaji, pembekal utama, sewa dan utiliti penting. Panduan kami tentang gaji dan caruman berkanun dan panduan kami tentang cuti pekerja menerangkan obligasi terhadap pekerja.
+
+### Jangan abaikan cukai dan pembayaran berkanun
+Cukai dan caruman berkanun boleh membawa penalti dan akibat undang-undang. Panduan kami tentang kalendar cukai perniagaan kecil menerangkan tarikh akhir lazim, dan panduan kami tentang menangani audit cukai menerangkan mengapa pematuhan penting.
+
+### Bandingkan akibat
+Pertimbangkan apa berlaku jika setiap pembayaran lewat, termasuk caj penalti, kesan ke atas rekod kredit anda, tindakan undang-undang, atau kehilangan pembekal atau aset penting. Susun risiko mengikut keutamaan, dan minta akauntan anda membantu.
+
+### Elakkan menyamun satu pemberi pinjaman untuk membayar yang lain
+Membayar satu hutang dengan pinjaman baharu untuk menyembunyikan masalah selalunya memburukkan keadaan. Jika anda mesti meminjam untuk menampung jurang, fahami dengan tepat berapa kosnya dan bagaimana anda akan membayarnya balik.
+
+### Kurangkan kos dan kumpulkan tunai dengan bijak
+Cari perbelanjaan yang boleh dikurangkan, stok yang boleh dijual, invois yang boleh dikutip lebih cepat, dan aset yang tidak anda perlukan. Panduan kami tentang pengurusan inventori menerangkan cara membebaskan tunai yang terikat dalam stok.
+
+> Hutang menjadi berbahaya apabila ia disembunyikan. Lebih awal anda meletakkan angka di hadapan diri sendiri dan pemberi pinjaman anda, lebih banyak pilihan yang akan anda ada.
+
+## 5. Bercakap dengan pemberi pinjaman lebih awal
+
+### Mengapa lebih awal penting
+Pemberi pinjaman biasanya mempunyai lebih fleksibiliti sebelum akaun tertunggak berbanding selepasnya. Peminjam yang menelefon lebih awal dengan rancangan yang jelas dilayan dengan sangat berbeza daripada yang mendiamkan diri.
+
+### Ketahui apa yang mungkin boleh anda minta
+Bergantung pada pemberi pinjaman dan keadaan anda, pilihan mungkin termasuk penangguhan bayaran sementara, ansuran lebih rendah untuk satu tempoh, tempoh pinjaman lebih panjang, jadual disemak, atau menggabungkan kemudahan. Ini tidak dijamin, dan setiap satu mempunyai kos, seperti lebih banyak faedah dari semasa ke semasa. Minta butiran penuh secara bertulis sebelum anda bersetuju.
+
+### Bersedia sebelum menelefon
+Sediakan senarai hutang anda, akaun terkini, ramalan tunai, dan penjelasan yang jelas mengapa bayaran sukar dan bagaimana anda merancang untuk pulih. Cadangan yang realistik lebih meyakinkan daripada rayuan umum.
+
+### Letakkan segala-galanya secara bertulis
+Simpan salinan surat, e-mel dan sebarang jadual baharu, dan pastikan anda memahami terma yang disemak, yuran, dan apa berlaku jika anda terlepas bayaran baharu.
+
+### Semak skim yang tersedia
+Agensi kerajaan, bank dan badan industri kadangkala menawarkan skim atau perkhidmatan nasihat untuk perniagaan yang menghadapi kesukaran. Ini berubah dari semasa ke semasa, jadi sahkan apa yang tersedia sekarang dengan bank anda dan pihak berkuasa berkaitan. Panduan kami tentang geran dan pembiayaan PKS di Malaysia menerangkan di mana hendak mula mencari.
+
+### Bersikap jujur
+Jangan sembunyikan masalah atau beri maklumat palsu kepada pemberi pinjaman. Kejujuran melindungi anda dari segi undang-undang dan dalam hubungan itu.
+
+## 6. Elakkan jaminan dan cagaran yang meletakkan keluarga dalam risiko
+
+### Fahami jaminan peribadi
+Ramai pemberi pinjaman meminta pemilik atau pengarah menjamin pinjaman syarikat secara peribadi. Itu bermakna jika syarikat tidak dapat membayar, anda mungkin bertanggungjawab secara peribadi, walaupun perniagaan itu syarikat berhad. Baca dengan tepat apa yang anda tandatangani, dan dapatkan nasihat undang-undang sebelum anda menandatangani.
+
+### Berhati-hati dengan harta keluarga
+Mencagarkan rumah, tanah atau simpanan anda, atau meminta saudara menjamin pinjaman, boleh meletakkan orang tersayang dalam risiko. Bincang risikonya secara terbuka dan pertimbangkan alternatif dahulu.
+
+### Ketahui perbezaan antara struktur
+Pemilikan tunggal atau perkongsian am tidak memberi pemisahan antara anda dan perniagaan, manakala syarikat atau perkongsian liabiliti terhad mempunyai identiti undang-undang berasingan, walaupun jaminan masih boleh membawa liabiliti peribadi. Panduan kami tentang cara mendaftar perniagaan menerangkan struktur itu, dan panduan kami tentang rakan kongsi perniagaan dan perjanjian pemegang saham menerangkan cara menangani pemilik bersama.
+
+### Hadkan dan semak jaminan
+Cuba hadkan jumlah dan tempoh sebarang jaminan, dan minta ia dilepaskan apabila pinjaman dibayar balik. Simpan rekod setiap jaminan yang telah anda berikan.
+
+### Semak apa berlaku semasa mungkir
+Fahami hak pemberi pinjaman untuk mengambil aset, dalam urutan apa, dan bagaimana prosesnya berfungsi. Sahkan ini dengan peguam anda.
+
+### Jangan tandatangani apa yang anda tidak faham
+Tanya soalan, minta masa, dan bawa masuk penasihat. Tekanan untuk menandatangani serta-merta ialah tanda amaran.
+
+## 7. Ketahui bila hendak mendapatkan bantuan profesional
+
+### Tanda anda memerlukan bantuan
+Kerap terlepas bayaran, meminjam untuk membayar hutang sedia ada, menerima surat tuntutan, atau berjaga malam kerana wang. Ini semua tanda untuk mendapatkan nasihat sekarang, bukan kemudian.
+
+### Siapa yang boleh membantu
+Akauntan anda boleh menyemak angka anda dan membantu menyediakan rancangan, peguam boleh menerangkan hak dan obligasi anda, dan penasihat hutang atau perkhidmatan kaunseling yang diiktiraf mungkin boleh membantu dalam sesetengah keadaan. Pastikan sebarang penasihat berwibawa dan berhati-hati dengan sesiapa yang mengenakan yuran besar di muka atau menjanjikan untuk menghilangkan hutang.
+
+### Fahami pilihan rasmi
+Dalam kes serius, undang-undang menyediakan proses rasmi untuk pengaturan penyusunan semula, penggulungan atau kebankrapan, bergantung pada struktur perniagaan. Ini mempunyai akibat besar, jadi dapatkan nasihat undang-undang dan sahkan peraturan semasa sebelum membuat keputusan. Panduan kami tentang menutup perniagaan di Malaysia menerangkan apa yang boleh melibatkan penggulungan.
+
+### Lindungi diri anda daripada penipuan
+Berhati-hati dengan sesiapa yang mendakwa mereka boleh memadamkan hutang anda atau menawarkan penyelesaian pantas dengan bayaran. Semak dengan pihak berkuasa berkaitan jika tawaran kedengaran terlalu baik untuk menjadi kenyataan.
+
+### Jaga diri anda
+Tekanan wang itu berat, dan bercakap dengan seseorang yang anda percayai membantu. Menghadapi masalah lebih awal memberi anda peluang terbaik untuk menyelesaikannya.
+
+Jika anda memerlukan akauntan, peguam atau profesional lain untuk membantu anda merancang, anda boleh [menyemak imbas direktori](/ms) untuk penasihat berhampiran anda, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan dapat menemui perniagaan anda dan pendapatan anda terus mengalir.
+
+## Kesilapan lazim PKS Malaysia dengan hutang perniagaan
+
+- **Tidak mengetahui jumlah keseluruhan.** Hutang yang bertaburan merentas pemberi pinjaman dan kad mudah dipandang rendah, jadi senaraikan semuanya pada satu muka surat dan kemas kini setiap bulan.
+- **Menunggu sehingga bayaran tertunggak.** Pemberi pinjaman biasanya mempunyai lebih banyak pilihan sebelum mungkir, jadi hubungi mereka lebih awal dengan rancangan yang jelas dan jujur.
+- **Menandatangani jaminan tanpa memahaminya.** Jaminan peribadi atau keluarga boleh mengikuti anda lama selepas perniagaan berubah, jadi baca dengan teliti dan dapatkan nasihat undang-undang.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Senaraikan setiap pinjaman, kemudahan kredit dan bayaran balik, dengan kadar, baki, tarikh matang dan sebarang jaminan, dan semak dengan penyata anda.
+- **Seterusnya:** Bandingkan jumlah bulanan dengan aliran tunai sebenar anda, bina kalendar bayaran balik, dan asingkan penimbal kecil.
+- **Kemudian:** Jika bayaran ketat, sediakan rancangan dan bercakap dengan pemberi pinjaman lebih awal, dan dapatkan nasihat daripada akauntan anda.
+- **Setiap suku tahun:** Semak hutang anda, laporan kredit anda, dan sama ada pinjaman anda masih sepadan dengan keperluan perniagaan.
+
+Hutang tidak semestinya menjadi beban yang mengikut anda ke mana-mana. Ketahui dengan tepat apa yang anda terhutang, sesuaikan bayaran balik dengan cara tunai sebenarnya tiba, bersuara lebih awal, dan lindungi keluarga anda daripada risiko yang tidak anda setujui, dan pinjaman anda boleh kekal sebagai alat dan bukannya perangkap.`,
+        faqs: [
+          {
+            question: "Bagaimanakah saya mendapat gambaran jelas tentang semua hutang perniagaan saya?",
+            answer:
+              "Senaraikan setiap pinjaman, overdraf, kad kredit, sewa beli, kredit pembekal dan pinjaman peribadi yang digunakan untuk perniagaan pada satu muka surat, dengan pemberi pinjaman, baki, kadar, ansuran, tarikh matang, baki tempoh, yuran dan sebarang jaminan. Semak dengan penyata anda dan kemas kini dari semasa ke semasa.",
+          },
+          {
+            question: "Apakah yang patut saya lakukan jika saya tidak dapat membuat bayaran balik pinjaman?",
+            answer:
+              "Hubungi pemberi pinjaman anda lebih awal, sebelum bayaran tertunggak, dengan senarai hutang, ramalan tunai dan rancangan yang realistik. Bergantung pada pemberi pinjaman, pilihan mungkin termasuk penangguhan sementara, ansuran lebih rendah atau tempoh lebih panjang, tetapi tiada yang dijamin dan setiap satu mempunyai kos. Dapatkan sebarang perjanjian secara bertulis.",
+          },
+          {
+            question: "Hutang mana yang patut saya bayar dahulu apabila tunai ketat?",
+            answer:
+              "Utamakan apa yang menjalankan perniagaan, seperti gaji, pembekal utama, sewa dan utiliti penting, dan jangan abaikan cukai dan pembayaran berkanun yang boleh membawa penalti. Bandingkan akibat setiap bayaran lewat dan minta akauntan anda membantu menyusunnya.",
+          },
+          {
+            question: "Apakah jaminan peribadi dan mengapa ia berisiko?",
+            answer:
+              "Ia ialah janji oleh pemilik, pengarah atau saudara untuk membayar balik pinjaman jika perniagaan tidak dapat. Anda mungkin bertanggungjawab secara peribadi walaupun perniagaan itu syarikat, dan harta keluarga mungkin dalam risiko. Baca dengan teliti, hadkan jika boleh, dan dapatkan nasihat undang-undang sebelum menandatangani.",
+          },
+          {
+            question: "Adakah menyusun semula atau menjadualkan semula pinjaman menelan kos lebih?",
+            answer:
+              "Ia boleh. Ansuran lebih rendah atau tempoh lebih panjang biasanya bermakna lebih banyak faedah atau keuntungan dibayar secara keseluruhan, dan mungkin ada yuran. Minta pemberi pinjaman memberi terma penuh secara bertulis dan bandingkan jumlah kos sebelum anda bersetuju. Sahkan apa yang tersedia sekarang dengan bank anda.",
+          },
+          {
+            question: "Bagaimanakah rekod kredit saya mempengaruhi pinjaman perniagaan saya?",
+            answer:
+              "Pemberi pinjaman biasanya menyemak sejarah kredit anda apabila anda memohon pembiayaan, dan bayaran terlepas atau lewat boleh menjadikan pinjaman lebih sukar atau lebih mahal. Dapatkan laporan kredit anda sendiri daripada agensi berkaitan, semak untuk kesilapan, dan sahkan proses semasa dengan mereka.",
+          },
+          {
+            question: "Bagaimanakah saya mengelak pemberi pinjaman yang mahal atau tidak selamat?",
+            answer:
+              "Berhati-hati dengan tawaran pantas dan mudah yang kabur tentang jumlah kos, kutipan yang agresif, atau pemberi pinjaman yang tidak diberi kuasa dengan betul. Minta jumlah bayaran balik sepanjang tempoh penuh, bandingkan pilihan, dan sahkan dengan pihak berkuasa berkaitan jika anda tidak pasti.",
+          },
+          {
+            question: "Bilakah saya patut mendapatkan bantuan profesional untuk hutang perniagaan?",
+            answer:
+              "Sebaik sahaja anda kerap terlepas bayaran, meminjam untuk membayar hutang lain, atau menerima surat tuntutan. Akauntan boleh menyemak angka anda, peguam boleh menerangkan hak anda, dan penasihat yang diiktiraf mungkin membantu dalam sesetengah kes. Berhati-hati dengan sesiapa yang mengenakan yuran besar di muka atau menjanjikan untuk memadamkan hutang anda.",
+          },
+        ],
+      },
+    },
+  },
 ];
