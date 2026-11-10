@@ -915,7 +915,41 @@
         "office",
         "asian"
       ],
-      "description": "Asian business team having a discussion in a modern office"
+      "description": "Asian business team having a discussion in a modern office",
+      "usedBy": "raising-capital-team.webp"
+    },
+    {
+      "id": 7414008,
+      "tags": [
+        "investor",
+        "pitch",
+        "startup",
+        "presentation"
+      ],
+      "description": "Asian businesswoman presenting business ideas with graphs on a whiteboard",
+      "usedBy": "raising-capital-cover.webp"
+    },
+    {
+      "id": 5915144,
+      "tags": [
+        "finance",
+        "debt",
+        "calculator",
+        "documents"
+      ],
+      "description": "Asian businesswoman in glasses reviewing documents with a calculator",
+      "usedBy": "business-debt-cover.webp"
+    },
+    {
+      "id": 7654445,
+      "tags": [
+        "finance",
+        "debt",
+        "calculator",
+        "desk"
+      ],
+      "description": "Professional Asian woman in a blazer using a calculator at a desk",
+      "usedBy": "business-debt-calculator.webp"
     }
   ]
 }

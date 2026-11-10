@@ -15,16 +15,15 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Raising Capital for Your SME: Investors, Equity Crowdfunding, and Getting Investor-Ready in Malaysia**
-   — When outside investment makes sense, angel and venture investors versus
-   equity crowdfunding and other routes (to hedge, regulated by the
-   Securities Commission), preparing financials and a pitch, valuation basics
-   in plain terms, term sheets, due diligence, giving up equity and control,
-   and warning signs of bad deals.
+1. **Planning for Festive Peaks and Slow Seasons: Raya, Chinese New Year, Deepavali, and Year-End**
+   — Forecasting seasonal demand, stocking up without over-ordering, hiring
+   temporary staff, bonuses and festive-season pay obligations (to hedge),
+   promotions and pricing, supplier and delivery lead times, handling closures
+   and public holidays, cash flow through the quiet months, and learning from
+   each season's numbers.
 
-2. **Managing Business Debt and Loan Repayments Without Strangling Cash Flow**
-   — Taking stock of every loan and credit line, interest and fees, repayment
-   schedules versus cash cycles, prioritising payments, talking to lenders
-   early about restructuring or rescheduling (to hedge), avoiding personal
-   guarantees that put the family at risk, credit records, and when to seek
-   professional advice.
+2. **Keeping Your Best People: Motivating Staff, Performance Reviews, and Reducing Turnover**
+   — Why employees leave, fair pay and benefits (to hedge), simple performance
+   reviews and feedback, recognition that costs little, career paths and
+   training, handling underperformance fairly, flexibility and wellbeing, exit
+   conversations, and the real cost of replacing someone.
