@@ -15,15 +15,16 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Planning for Festive Peaks and Slow Seasons: Raya, Chinese New Year, Deepavali, and Year-End**
-   — Forecasting seasonal demand, stocking up without over-ordering, hiring
-   temporary staff, bonuses and festive-season pay obligations (to hedge),
-   promotions and pricing, supplier and delivery lead times, handling closures
-   and public holidays, cash flow through the quiet months, and learning from
-   each season's numbers.
+1. **Using AI Tools in Your Small Business: Practical Uses, Risks, and Staying Compliant in Malaysia**
+   — Where AI chatbots and automation genuinely save time (customer replies,
+   drafting, bookkeeping help, content, scheduling), choosing and testing
+   tools, protecting customer and company data (PDPA, to hedge), checking
+   accuracy and avoiding over-reliance, staff training and policies, costs
+   versus benefits, and a simple pilot plan.
 
-2. **Keeping Your Best People: Motivating Staff, Performance Reviews, and Reducing Turnover**
-   — Why employees leave, fair pay and benefits (to hedge), simple performance
-   reviews and feedback, recognition that costs little, career paths and
-   training, handling underperformance fairly, flexibility and wellbeing, exit
-   conversations, and the real cost of replacing someone.
+2. **Delegating and Avoiding Owner Burnout: Running the Business Without Running Yourself Into the Ground**
+   — Recognising burnout, working out what only the owner should do,
+   delegating tasks and decisions, documenting routines, hiring or outsourcing
+   help, setting boundaries and time off, delegating with trust and checks,
+   asking for support, and building a business that can run for a week
+   without you.

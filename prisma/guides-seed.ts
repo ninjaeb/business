@@ -27842,4 +27842,1299 @@ Hutang tidak semestinya menjadi beban yang mengikut anda ke mana-mana. Ketahui d
       },
     },
   },
+  {
+    slug: "planning-for-festive-peaks-and-slow-seasons-in-malaysia",
+    title: "Planning for Festive Peaks and Slow Seasons: Raya, Chinese New Year, Deepavali, and Year-End",
+    seoTitle: "Planning for Festive Peaks and Slow Seasons in Malaysia",
+    seoDescription:
+      "How Malaysian SMEs can plan for Raya, CNY, Deepavali and year-end peaks: forecast demand, stock wisely, staff up, price well and survive quiet months.",
+    coverImage: {
+      file: "festive-peaks-and-slow-seasons-cover.webp",
+      mimeType: "image/webp",
+      alt: "A woman in a light blue shirt tying a white ribbon on a yellow and green gift box in front of shelves of leather bags",
+      altTranslations: {
+        zh: "一位身穿浅蓝色衬衫的女士，在摆满皮包的架子前，把白色丝带系在黄绿相间的礼盒上",
+        ms: "Seorang wanita berbaju biru muda mengikat reben putih pada kotak hadiah kuning dan hijau di hadapan rak beg kulit",
+      },
+    },
+    contentImages: {
+      gifts: {
+        file: "festive-peaks-and-slow-seasons-gifts.webp",
+        mimeType: "image/webp",
+        alt: "Two women at a counter among cardboard boxes, shredded paper and ribbon, one passing scissors to the other while preparing gift boxes",
+        altTranslations: {
+          zh: "两位女士在柜台旁，周围是纸箱、碎纸丝和丝带，一人把剪刀递给另一人，一起准备礼盒",
+          ms: "Dua wanita di kaunter dikelilingi kotak kadbod, kertas carik dan reben, seorang menghulurkan gunting kepada seorang lagi sambil menyediakan kotak hadiah",
+        },
+        after: "Look at last year's numbers before you decide how much to stock, hire, or spend for this year's peak.",
+        afterTranslations: {
+          zh: "在决定今年旺季要备多少货、请多少人、花多少钱之前，先看看去年的数字。",
+          ms: "Lihat angka tahun lepas sebelum anda memutuskan berapa banyak stok, pekerja dan perbelanjaan untuk kemuncak tahun ini.",
+        },
+      },
+    },
+    excerpt:
+      "Hari Raya, Chinese New Year, Deepavali, and the year-end shopping rush can make or break a year for many Malaysian SMEs, and the quiet months in between can drain the cash those peaks created. This guide shows how to forecast seasonal demand, stock without over-ordering, staff up fairly, price and promote wisely, handle holidays and closures, and carry cash through the slow months.",
+    body: `Malaysia's calendar is full of festive seasons: Hari Raya Aidilfitri, Chinese New Year, Deepavali, Christmas, school holidays, and year-end sales. For many small businesses, these few weeks bring a large share of the year's sales. They also bring the biggest risks: running out of stock, being short of staff, or ending up with a storeroom full of goods that nobody wanted after the festival.
+
+The quiet months that follow can be just as tricky. Rent, wages, and loan repayments carry on, while sales fall back. Businesses that plan for the whole cycle, not just the peak, usually come out much stronger.
+
+This is general information, not legal, financial, or tax advice. Holiday dates, employment rules, pay requirements, and market conditions change from year to year, and information in this guide may be out of date. Confirm current rules with the relevant authorities, your accountant, and where needed a lawyer before you make decisions.
+
+## 1. Understand your own seasonal pattern
+
+Look at last year's numbers before you decide how much to stock, hire, or spend for this year's peak. Your own records tell you far more than general advice.
+
+### Map your calendar
+List the festive periods and school holidays that affect your business, with the dates for this year. Some festivals move each year, so check the current dates before you plan. Include the weeks before the festival, when customers shop, and the days after, when sales often drop sharply.
+
+### Pull out your history
+Look at sales by week for the past one to three years. Note when demand began to rise, when it peaked, what sold best, and when it fell away. Our guide on bookkeeping and accounting basics explains how to keep records you can analyse.
+
+### Know what drives demand
+Gifts, food, clothing, travel, decorations, and cleaning supplies each rise at different times. Talk to customers, check what competitors are doing, and note trends that change from year to year.
+
+### Look at the costs too
+Peaks bring higher costs for stock, packaging, delivery, temporary staff, and rent in some locations. Work out your margin during the peak, not just your sales.
+
+### Note what went wrong last time
+Stock-outs, long queues, unhappy customers, unsold leftovers, and staff burnout all tell you what to fix this year.
+
+## 2. Forecast demand and set a plan
+
+### Start with last year, then adjust
+Use last year's sales as a base, then adjust for growth, price changes, new products, and the economy. Keep your forecast modest and write down your assumptions.
+
+### Build three scenarios
+Prepare a normal case, a strong case, and a weak case. Decide in advance what you would do in each, such as ordering more, running a promotion, or cutting costs.
+
+### Set targets that are specific
+Aim for clear goals, such as a sales target for the week, a margin, and a maximum amount of leftover stock. Our guide on writing a business plan explains how to set practical targets.
+
+### Plan the timeline backwards
+Work back from the date you want to be ready. Allow time for supplier orders, deliveries, hiring, training, packaging, marketing, and any approvals.
+
+### Share the plan
+Make sure that your team, key suppliers, and anyone who helps you know the plan, the dates, and who does what.
+
+## 3. Stock up without over-ordering
+
+### Order in stages
+Place a base order early, then top up as sales develop, if your suppliers allow it. This protects you from being stuck with too much of a slow seller.
+
+### Respect supplier lead times
+In festive periods, suppliers, factories, and couriers are busy, and orders can take longer. Confirm dates, minimum orders, and cut-off times well in advance. Our guide on managing supplier relationships explains how to negotiate and secure supply.
+
+### Focus on your best sellers
+Make sure you never run out of your core products, and be careful with experimental lines in large quantities.
+
+### Plan for returns and leftovers
+Decide how you will sell leftover stock, whether through post-festival discounts, bundles, or storing items for next year if they do not go out of date. Check expiry dates and storage needs for food and perishables.
+
+### Keep control of your stock
+Count regularly and match stock records to physical stock. Our guide on managing inventory and stock explains how to avoid overstocking and shrinkage.
+
+### Watch cash tied in stock
+Large festive orders can use up the cash that you need for wages and rent. Our guide on managing cash flow explains how to keep a buffer.
+
+> A good festive season is not the one with the biggest sales. It is the one where you sold what customers wanted, paid your people fairly, and still have cash in the bank when January arrives.
+
+## 4. Staff up fairly and safely
+
+### Work out how many people you need
+Estimate the hours needed for serving customers, packing, deliveries, and handling enquiries during the peak, and compare them with your regular team's capacity.
+
+### Use temporary and part-time help carefully
+Seasonal workers can fill the gap, but they need clear contracts, training, and fair pay. Our guide on hiring your first employee explains the basics, and our guide on training your team explains how to get new people up to speed quickly.
+
+### Be careful with overtime and rest
+Long hours cause mistakes and burnout. Check the rules on working hours, overtime, and rest days that apply to your staff, and confirm current requirements with the Labour Department or an adviser.
+
+### Understand public holiday rules
+Many employees are entitled to paid public holidays, and working on a public holiday can require extra pay, but coverage and rates depend on the employee's terms, salary, and where the business operates. Rules differ between Peninsular Malaysia, Sabah, and Sarawak. Our guide on employee leave and public holidays explains the basics, and you should confirm the current position before you schedule staff.
+
+### Think about festive bonuses
+A festive bonus is often a matter of contract, company policy, or custom rather than a fixed legal requirement, but it can strongly affect morale. Decide what you can afford, communicate it clearly, and put it in writing. Our guide on employee handbooks and HR policies explains how to set expectations.
+
+### Respect different celebrations
+Staff may want leave around their own festivals. Plan rosters early, be fair, and be flexible where you can.
+
+## 5. Price and promote wisely
+
+### Know your margins before discounting
+Deep discounts can bring crowds but no profit. Work out the lowest price that still pays for stock, labour, and overheads. Our guide on pricing products and services explains how to protect your margin.
+
+### Choose promotions that suit your goals
+Bundles, gift sets, early-bird offers, and loyalty rewards can raise sales without cutting prices across the board. Our guide on building customer loyalty explains how to bring buyers back after the festival.
+
+### Start marketing early
+Customers plan before the festival. Begin your campaign in good time, using your usual channels. Our guide on social media marketing and our guide on selling online explain how to reach shoppers.
+
+### Be ready for digital orders
+Check your payment options, website, delivery partners, and customer messages before the rush. Our guide on accepting digital payments explains what to set up.
+
+### Be honest in your advertising
+Make sure that prices, discounts, and claims are accurate, and that you can honour them. Our guide on customer complaints, refunds, and consumer rights explains what customers expect.
+
+### Plan your delivery promise
+Set realistic cut-off dates for festive delivery and tell customers clearly, so that you do not disappoint them.
+
+## 6. Handle closures, holidays, and operations
+
+### Decide your opening hours early
+Announce your festive opening hours, closing dates, and any last-order dates before the busy period, in store and online.
+
+### Plan for suppliers and couriers being closed
+Many suppliers and delivery services stop for several days around major festivals. Order ahead and tell customers what to expect.
+
+### Prepare your premises and systems
+Check your equipment, point-of-sale, internet, and stockroom before the peak. Our guide on business continuity planning explains how to prepare for outages and disruptions, including the heavy rain that can come at year-end.
+
+### Look after safety and crowds
+Make sure that aisles are clear, fire exits are free, and staff know what to do in an emergency. Our guide on workplace safety explains the basics.
+
+### Keep your records and compliance current
+Busy periods are when invoices and receipts go missing. Our guide on the small business tax calendar and our guide on e-invoicing explain what you need to keep on top of.
+
+## 7. Carry the business through the slow months
+
+### Expect the dip
+After the peak, sales usually fall. Plan for it in your budget, so that it does not come as a shock.
+
+### Build a cash reserve from the peak
+Set aside part of the peak's profit to cover rent, wages, and repayments during the quiet period. Our guide on managing business debt and loan repayments explains how to match repayments to your cash cycle.
+
+### Reduce costs sensibly
+Review expenses, renegotiate where you can, and adjust staff hours fairly, without damaging service or morale.
+
+### Use the quiet time well
+Train staff, tidy the shop, update your website, review suppliers, and plan the next season. Slow months are a good time to improve.
+
+### Smooth the curve
+Look for products, services, or promotions that sell outside the festivals, such as corporate orders, subscriptions, or off-peak offers.
+
+### Review each season's numbers
+After every festive period, compare your forecast with the actual results, note what worked, and improve next year's plan.
+
+If you need an accountant, a supplier, or a delivery partner for your next peak, you can [browse the directory](/en) for businesses near you, and [create a free business listing](/en/signup) so that festive shoppers can find you.
+
+## Common mistakes Malaysian SMEs make with festive seasons
+
+- **Ordering too much, too late.** Large last-minute orders tie up cash and leave you with leftovers, so order in stages and confirm lead times early.
+- **Ignoring staffing and holiday rules.** Overworked teams and unclear pay for holidays cause mistakes and disputes, so plan rosters early and check the current rules.
+- **Spending the whole peak.** If the festive profit is gone by the time the slow months arrive, you will struggle, so set aside a reserve before you spend.
+
+## Where to start
+
+- **This week:** Pull out your sales for the last festive seasons and write down what worked and what went wrong.
+- **Next:** Build a simple forecast with a strong and a weak case, and work backwards to a timeline for stock, staff, and marketing.
+- **Then:** Confirm supplier lead times, plan rosters and any bonuses, and check the holiday and pay rules that apply to you.
+- **After the season:** Compare results with your forecast, set aside a cash reserve, and plan how to use the quiet months.
+
+Festive seasons reward the businesses that prepare. Know your own numbers, stock sensibly, treat your team fairly, and keep cash for the months that follow, and each peak will leave you stronger instead of just busier.`,
+    faqs: [
+      {
+        question: "How do I forecast demand for a festive season?",
+        answer:
+          "Start with your own sales by week from previous festive periods, then adjust for growth, price changes, new products, and the economy. Prepare a normal, a strong, and a weak scenario, and write down the assumptions behind each.",
+      },
+      {
+        question: "How can I avoid over-ordering stock for the festive season?",
+        answer:
+          "Order a base quantity early and top up as sales develop if your suppliers allow it, focus on proven best sellers, confirm lead times and minimum orders, and plan how to sell leftovers. Track your stock regularly and watch the cash tied up in it.",
+      },
+      {
+        question: "Do I have to pay a festive bonus?",
+        answer:
+          "A festive bonus is usually a matter of the employment contract, company policy, or custom rather than a fixed legal requirement, but it can strongly affect morale. Check your contracts and policies, decide what you can afford, and communicate it clearly in writing.",
+      },
+      {
+        question: "What are the rules for working on public holidays?",
+        answer:
+          "Many employees are entitled to paid public holidays, and working on one can require extra pay, but coverage and rates depend on the employee's terms, salary, and where the business operates, since Peninsular Malaysia, Sabah, and Sarawak differ. Confirm the current rules with the Labour Department or an adviser.",
+      },
+      {
+        question: "How should I hire temporary staff for a peak season?",
+        answer:
+          "Estimate the hours you need, use clear written contracts, pay fairly, and train people before the rush. Watch overtime and rest days for your whole team, and check the current employment rules that apply to seasonal and part-time workers.",
+      },
+      {
+        question: "Should I discount heavily during festive sales?",
+        answer:
+          "Only if the price still covers stock, labour, and overheads. Bundles, gift sets, early-bird offers, and loyalty rewards can raise sales without cutting prices across the board. Know your margin before you set any discount.",
+      },
+      {
+        question: "How do I survive the slow months after a festive peak?",
+        answer:
+          "Expect the dip, set aside part of the peak's profit as a cash reserve, review costs sensibly, match loan repayments to your cash cycle, and use the quiet time to train staff, update systems, and plan the next season.",
+      },
+      {
+        question: "What should I do after each festive season ends?",
+        answer:
+          "Compare your forecast with the actual results, note what sold, what was left over, and what went wrong with stock, staff, or service, and use the lessons to improve the next plan. Keep records so that you can compare year on year.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "规划节庆旺季与淡季：开斋节、农历新年、屠妖节与年终",
+        excerpt:
+          "开斋节、农历新年、屠妖节和年终购物潮，对许多马来西亚中小企业来说可以决定一整年的成败，而之后的淡季也可能耗尽旺季所创造的现金。本指南说明如何预测季节性需求、备货而不过量、公平地增加人手、明智地定价和促销、处理假期和休业，并带着现金度过淡季。",
+        body: `马来西亚的日历上满是节庆：开斋节、农历新年、屠妖节、圣诞节、学校假期和年终大促销。对许多小企业来说，这短短几个星期带来了一年中很大一部分的销售额。它们也带来最大的风险：缺货、人手不足，或是节日过后仓库里堆满没人要的货品。
+
+随后的淡季同样棘手。租金、工资和贷款还款照旧，销售却回落。为整个周期而不只是旺季做规划的企业，通常会强大得多。
+
+本文仅提供一般信息，并非法律、财务或税务建议。假期日期、雇佣规定、薪酬要求和市场状况每年都会变化，本指南的信息可能已经过时。在做决定之前，请向相关主管单位、您的会计师以及必要时向律师确认现行规定。
+
+## 1. 了解您自己的季节性规律
+
+在决定今年旺季要备多少货、请多少人、花多少钱之前，先看看去年的数字。您自己的记录比一般性的建议能告诉您多得多。
+
+### 绘制您的日历
+列出影响您企业的节庆期间和学校假期，以及今年的日期。有些节日每年日期不同，所以规划之前请先确认现行的日期。要包括节前顾客购物的几个星期，以及节后销售往往急剧下滑的几天。
+
+### 调出您的历史数据
+查看过去一到三年每周的销售额。记下需求何时开始上升、何时到达高峰、什么卖得最好，以及何时回落。我们关于簿记和会计基础的指南说明了如何保存可供分析的记录。
+
+### 了解推动需求的因素
+礼品、食品、服饰、旅游、装饰品和清洁用品，各自在不同的时间上升。与顾客交谈，留意竞争对手在做什么，并记下每年变化的趋势。
+
+### 也要看成本
+旺季带来更高的货品、包装、送货、临时员工以及某些地点的租金成本。请算出您在旺季的利润率，而不只是销售额。
+
+### 记下上一次出了什么问题
+缺货、排长队、顾客不满、卖不出的剩货和员工过劳，都告诉您今年该改进什么。
+
+## 2. 预测需求并制定计划
+
+### 从去年开始，再做调整
+以去年的销售额为基础，再根据增长、价格变化、新产品和经济状况调整。预测请保持保守，并写下您的假设。
+
+### 建立三种情景
+准备一个正常情况、一个强劲情况和一个疲弱情况。事先决定在每种情况下您会怎么做，例如多订货、办促销或削减成本。
+
+### 设定具体的目标
+设定清楚的目标，例如每周的销售目标、利润率和剩余库存的上限。我们关于撰写商业计划书的指南说明了如何设定实际可行的目标。
+
+### 倒推时间表
+从您想要准备就绪的日期往回推。为供应商订单、送货、招聘、培训、包装、营销和任何批准预留时间。
+
+### 分享计划
+确保您的团队、主要供应商和协助您的人都知道计划、日期以及谁负责什么。
+
+## 3. 备货而不过量
+
+### 分批订货
+如果供应商允许，先提前下一批基本订单，再随着销售发展追加。这样可以避免因某种滞销品太多而被套牢。
+
+### 尊重供应商的交货期
+在节庆期间，供应商、工厂和快递公司都很忙，订单可能需要更长时间。请提前确认日期、最低订购量和截止时间。我们关于管理供应商关系的指南说明了如何谈判和确保供货。
+
+### 专注于畅销品
+确保您的核心产品永不缺货，并对大量订购试验性产品保持谨慎。
+
+### 为退货和剩货做好规划
+决定您将如何出售剩余库存，是通过节后折扣、组合套装，还是在不会过期的情况下留到明年。请查核食品和易腐品的有效期和存放需求。
+
+### 控制好您的库存
+定期盘点，并把库存记录与实际库存核对。我们关于库存管理的指南说明了如何避免库存过多和损耗。
+
+### 留意被库存占用的现金
+大批节庆订单可能用掉您支付工资和租金所需的现金。我们关于管理现金流的指南说明了如何保留缓冲。
+
+> 好的节庆季不是销售额最大的那一季，而是您卖出了顾客想要的东西、公平地支付了员工，并且在一月来临时银行里仍有现金的那一季。
+
+## 4. 公平而安全地增加人手
+
+### 算出您需要多少人
+估计旺季期间服务顾客、包装、送货和处理查询所需的时数，并与您固定团队的能力比较。
+
+### 谨慎使用临时和兼职人员
+季节性员工可以填补缺口，但他们需要清楚的合约、培训和公平的薪酬。我们关于聘请第一位员工的指南说明了基础知识，关于培训团队的指南说明了如何让新人快速上手。
+
+### 留意加班和休息
+长时间工作会造成错误和过劳。请查核适用于您员工的工作时数、加班和休息日的规定，并向劳工局或顾问确认现行要求。
+
+### 了解公共假期的规定
+许多员工有权享有带薪公共假期，在公共假期工作可能需要额外的薪酬，但适用范围和费率取决于员工的条款、薪水以及企业的营业地点。西马、沙巴和砂拉越的规定各不相同。我们关于员工休假与公共假期的指南说明了基础知识，在安排员工排班之前，您应该确认现行情况。
+
+### 考虑节庆花红
+节庆花红往往取决于合约、公司政策或惯例，而不是固定的法律要求，但它可以大大影响士气。决定您负担得起多少，清楚地传达，并以书面形式写下来。我们关于员工手册与人力资源政策的指南说明了如何设定期望。
+
+### 尊重不同的庆祝活动
+员工可能想在自己的节日前后请假。请提早安排排班，保持公平，并在可能的情况下保持弹性。
+
+## 5. 明智地定价和促销
+
+### 在打折之前先了解您的利润率
+大幅折扣可以带来人潮却没有利润。请算出仍然能支付货品、人工和营运费用的最低价格。我们关于产品与服务定价的指南说明了如何保护您的利润。
+
+### 选择符合您目标的促销
+组合套装、礼品套装、早鸟优惠和忠诚奖励，可以在不全面降价的情况下提高销售。我们关于建立顾客忠诚度的指南说明了如何在节后让买家回头。
+
+### 及早开始营销
+顾客在节日之前就会做计划。请及早开始您的宣传活动，并使用您惯用的渠道。我们关于社交媒体营销的指南和关于网络销售的指南说明了如何接触购物者。
+
+### 为网络订单做好准备
+在高峰之前检查您的付款选项、网站、送货伙伴和顾客信息。我们关于接受数码付款的指南说明了该设置什么。
+
+### 在广告中保持诚实
+确保价格、折扣和宣称都准确，并且您能够兑现。我们关于顾客投诉、退款与消费者权益的指南说明了顾客的期望。
+
+### 规划您的送货承诺
+为节庆送货设定实际的截止日期并清楚地告诉顾客，这样您就不会让他们失望。
+
+## 6. 处理休业、假期和营运
+
+### 及早决定营业时间
+在繁忙期之前，在店内和网上公布您的节庆营业时间、休业日期和最后订单日期。
+
+### 为供应商和快递公司休业做好规划
+许多供应商和送货服务会在大节日前后停工数天。请提前订货并告诉顾客该预期什么。
+
+### 准备好您的场地和系统
+在高峰之前检查您的设备、收银系统、网络和库房。我们关于业务持续规划的指南说明了如何为停电和中断做好准备，包括年底可能出现的大雨。
+
+### 注意安全和人潮
+确保通道畅通、消防出口无阻，并且员工知道紧急情况下该怎么做。我们关于工作场所安全的指南说明了基础知识。
+
+### 保持记录和合规是最新的
+繁忙期间正是发票和收据容易遗失的时候。我们关于小企业税务日历的指南和关于电子发票的指南说明了您需要跟进什么。
+
+## 7. 带着企业度过淡季
+
+### 预料到下滑
+旺季过后，销售通常会下降。请在预算中为此做好规划，这样才不会措手不及。
+
+### 从旺季建立现金储备
+把旺季利润的一部分留出来，用于支付淡季期间的租金、工资和还款。我们关于管理企业债务与贷款还款的指南说明了如何让还款与您的现金周期相配。
+
+### 明智地削减成本
+检视开支，在可能的地方重新谈判，并公平地调整员工的工作时数，同时不损害服务或士气。
+
+### 善用清闲时间
+培训员工、整理店面、更新网站、检讨供应商，并规划下一个季节。淡季是改进的好时机。
+
+### 抚平曲线
+寻找在节庆之外也能销售的产品、服务或促销，例如企业订单、订阅制或非旺季优惠。
+
+### 检讨每个季节的数字
+每个节庆期间过后，把您的预测与实际结果比较，记下什么有效，并改进明年的计划。
+
+如果您在下一个旺季需要会计师、供应商或送货伙伴，可以[浏览目录](/zh)寻找您附近的企业，并[创建免费商家列表](/zh/signup)，让节庆购物者能找到您。
+
+## 马来西亚中小企业在节庆季的常见错误
+
+- **订货太多又太晚。** 大批临时订单会占用现金并留下剩货，所以请分批订货并及早确认交货期。
+- **忽略人手安排和假期规定。** 过劳的团队和不清楚的假期薪酬会造成错误和纠纷，所以请提早安排排班并查核现行规定。
+- **把整个旺季的钱都花光。** 如果淡季来临时节庆利润已经花光，您会很吃力，所以请在花钱之前先留出储备。
+
+## 从哪里开始
+
+- **本周：** 调出过去几个节庆季的销售额，并写下什么有效、什么出了问题。
+- **接下来：** 建立一个有强劲和疲弱两种情况的简单预测，并倒推出备货、人手和营销的时间表。
+- **然后：** 确认供应商的交货期，规划排班和任何花红，并查核适用于您的假期和薪酬规定。
+- **季节结束后：** 把结果与预测比较，留出现金储备，并规划如何利用淡季。
+
+节庆季奖励有准备的企业。了解自己的数字，合理备货，公平对待团队，并为之后的几个月留住现金，每个旺季都会让您更强大，而不只是更忙碌。`,
+        faqs: [
+          {
+            question: "我如何预测节庆季的需求？",
+            answer:
+              "从您以往节庆期间每周的销售额开始，再根据增长、价格变化、新产品和经济状况调整。准备一个正常、一个强劲和一个疲弱的情景，并写下每个情景背后的假设。",
+          },
+          {
+            question: "我如何避免节庆季备货过量？",
+            answer:
+              "如果供应商允许，先提前订一个基本数量，再随着销售发展追加，专注于已证实的畅销品，确认交货期和最低订购量，并规划如何出售剩货。定期追踪库存，并留意被库存占用的现金。",
+          },
+          {
+            question: "我必须发节庆花红吗？",
+            answer:
+              "节庆花红通常取决于雇佣合约、公司政策或惯例，而不是固定的法律要求，但它可以大大影响士气。请查看您的合约和政策，决定您负担得起多少，并以书面清楚地传达。",
+          },
+          {
+            question: "在公共假期工作有什么规定？",
+            answer:
+              "许多员工有权享有带薪公共假期，在公共假期工作可能需要额外薪酬，但适用范围和费率取决于员工的条款、薪水以及企业的营业地点，因为西马、沙巴和砂拉越各不相同。请向劳工局或顾问确认现行规定。",
+          },
+          {
+            question: "我应该如何为旺季聘请临时员工？",
+            answer:
+              "估计您需要的时数，使用清楚的书面合约，公平付薪，并在高峰之前培训员工。留意整个团队的加班和休息日，并查核适用于季节性和兼职员工的现行雇佣规定。",
+          },
+          {
+            question: "我应该在节庆促销中大幅打折吗？",
+            answer:
+              "只有在价格仍能支付货品、人工和营运费用时才可以。组合套装、礼品套装、早鸟优惠和忠诚奖励，可以在不全面降价的情况下提高销售。在设定任何折扣之前，请先了解您的利润率。",
+          },
+          {
+            question: "我如何度过节庆旺季后的淡季？",
+            answer:
+              "预料到下滑，把旺季利润的一部分留作现金储备，明智地检视成本，让贷款还款与您的现金周期相配，并利用清闲时间培训员工、更新系统和规划下一个季节。",
+          },
+          {
+            question: "每个节庆季结束后我应该做什么？",
+            answer:
+              "把您的预测与实际结果比较，记下什么卖得好、什么剩下，以及库存、人手或服务方面出了什么问题，并利用这些教训改进下一个计划。请保存记录，以便逐年比较。",
+          },
+        ],
+      },
+      ms: {
+        title: "Merancang untuk Kemuncak Perayaan dan Musim Perlahan: Raya, Tahun Baru Cina, Deepavali dan Hujung Tahun",
+        excerpt:
+          "Hari Raya, Tahun Baru Cina, Deepavali dan kesibukan membeli-belah hujung tahun boleh menentukan kejayaan atau kegagalan setahun bagi ramai PKS Malaysia, dan bulan-bulan perlahan selepasnya boleh menghabiskan tunai yang dijana oleh kemuncak itu. Panduan ini menunjukkan cara meramal permintaan bermusim, menyimpan stok tanpa pesanan berlebihan, menambah pekerja dengan adil, menetapkan harga dan mempromosi dengan bijak, mengendalikan cuti dan penutupan, dan membawa tunai melalui bulan-bulan perlahan.",
+        body: `Kalendar Malaysia penuh dengan musim perayaan: Hari Raya Aidilfitri, Tahun Baru Cina, Deepavali, Krismas, cuti sekolah dan jualan hujung tahun. Bagi ramai perniagaan kecil, beberapa minggu ini membawa sebahagian besar jualan setahun. Ia juga membawa risiko terbesar: kehabisan stok, kekurangan pekerja, atau berakhir dengan bilik stor penuh barang yang tiada siapa mahu selepas perayaan.
+
+Bulan-bulan perlahan yang menyusul boleh menjadi sama rumit. Sewa, gaji dan bayaran balik pinjaman berterusan, manakala jualan merosot. Perniagaan yang merancang untuk keseluruhan kitaran, bukan sekadar kemuncak, biasanya jauh lebih kukuh.
+
+Ini maklumat umum, bukan nasihat undang-undang, kewangan atau cukai. Tarikh cuti, peraturan pekerjaan, keperluan gaji dan keadaan pasaran berubah dari tahun ke tahun, dan maklumat dalam panduan ini mungkin sudah lapuk. Sahkan peraturan semasa dengan pihak berkuasa berkaitan, akauntan anda dan jika perlu peguam sebelum anda membuat keputusan.
+
+## 1. Fahami corak bermusim anda sendiri
+
+Lihat angka tahun lepas sebelum anda memutuskan berapa banyak stok, pekerja dan perbelanjaan untuk kemuncak tahun ini. Rekod anda sendiri memberitahu anda jauh lebih banyak daripada nasihat umum.
+
+### Petakan kalendar anda
+Senaraikan tempoh perayaan dan cuti sekolah yang mempengaruhi perniagaan anda, bersama tarikh untuk tahun ini. Sesetengah perayaan berubah setiap tahun, jadi semak tarikh semasa sebelum anda merancang. Sertakan minggu sebelum perayaan, apabila pelanggan membeli-belah, dan hari selepasnya, apabila jualan sering merosot mendadak.
+
+### Keluarkan sejarah anda
+Lihat jualan mengikut minggu bagi satu hingga tiga tahun lepas. Catat bila permintaan mula meningkat, bila ia memuncak, apa yang paling laku, dan bila ia mula surut. Panduan kami tentang asas simpan kira dan perakaunan menerangkan cara menyimpan rekod yang boleh dianalisis.
+
+### Ketahui apa yang mendorong permintaan
+Hadiah, makanan, pakaian, pelancongan, hiasan dan bekalan pembersihan masing-masing meningkat pada masa berbeza. Bercakap dengan pelanggan, semak apa yang dilakukan pesaing, dan catat aliran yang berubah dari tahun ke tahun.
+
+### Lihat kos juga
+Kemuncak membawa kos lebih tinggi untuk stok, pembungkusan, penghantaran, pekerja sementara dan sewa di sesetengah lokasi. Kira margin anda semasa kemuncak, bukan sekadar jualan.
+
+### Catat apa yang tidak kena kali lepas
+Kehabisan stok, barisan panjang, pelanggan tidak berpuas hati, baki tidak laku dan pekerja keletihan semuanya memberitahu anda apa yang perlu dibaiki tahun ini.
+
+## 2. Ramal permintaan dan tetapkan rancangan
+
+### Mulakan dengan tahun lepas, kemudian laraskan
+Gunakan jualan tahun lepas sebagai asas, kemudian laraskan untuk pertumbuhan, perubahan harga, produk baharu dan ekonomi. Pastikan ramalan anda sederhana dan tuliskan andaian anda.
+
+### Bina tiga senario
+Sediakan kes biasa, kes kukuh dan kes lemah. Tentukan lebih awal apa yang akan anda lakukan dalam setiap satu, seperti memesan lebih banyak, mengadakan promosi atau mengurangkan kos.
+
+### Tetapkan sasaran yang khusus
+Sasarkan matlamat yang jelas, seperti sasaran jualan untuk minggu itu, margin dan jumlah maksimum stok berbaki. Panduan kami tentang menulis pelan perniagaan menerangkan cara menetapkan sasaran yang praktikal.
+
+### Rancang garis masa ke belakang
+Kira ke belakang dari tarikh anda mahu bersedia. Peruntukkan masa untuk pesanan pembekal, penghantaran, pengambilan pekerja, latihan, pembungkusan, pemasaran dan sebarang kelulusan.
+
+### Kongsi rancangan
+Pastikan pasukan, pembekal utama dan sesiapa yang membantu anda tahu rancangan, tarikh dan siapa melakukan apa.
+
+## 3. Simpan stok tanpa pesanan berlebihan
+
+### Pesan secara berperingkat
+Buat pesanan asas lebih awal, kemudian tambah apabila jualan berkembang, jika pembekal anda membenarkan. Ini melindungi anda daripada terperangkap dengan terlalu banyak barang yang lambat laku.
+
+### Hormati tempoh penghantaran pembekal
+Semasa tempoh perayaan, pembekal, kilang dan kurier sibuk, dan pesanan boleh mengambil masa lebih lama. Sahkan tarikh, pesanan minimum dan masa tutup jauh lebih awal. Panduan kami tentang menguruskan hubungan pembekal menerangkan cara berunding dan memastikan bekalan.
+
+### Tumpu pada barang paling laku
+Pastikan anda tidak pernah kehabisan produk teras anda, dan berhati-hati dengan barisan percubaan dalam kuantiti besar.
+
+### Rancang untuk pemulangan dan baki
+Tentukan bagaimana anda akan menjual stok berbaki, sama ada melalui diskaun selepas perayaan, pakej atau menyimpan barang untuk tahun depan jika ia tidak luput tarikh. Semak tarikh luput dan keperluan penyimpanan untuk makanan dan barang mudah rosak.
+
+### Kawal stok anda
+Kira dengan kerap dan padankan rekod stok dengan stok fizikal. Panduan kami tentang pengurusan inventori menerangkan cara mengelak stok berlebihan dan kehilangan.
+
+### Perhatikan tunai yang terikat dalam stok
+Pesanan perayaan yang besar boleh menghabiskan tunai yang anda perlukan untuk gaji dan sewa. Panduan kami tentang menguruskan aliran tunai menerangkan cara menyimpan penimbal.
+
+> Musim perayaan yang baik bukanlah yang jualannya terbesar. Ia ialah musim di mana anda menjual apa yang pelanggan mahu, membayar pekerja anda dengan adil, dan masih mempunyai tunai di bank apabila Januari tiba.
+
+## 4. Tambah pekerja dengan adil dan selamat
+
+### Kira berapa orang yang anda perlukan
+Anggarkan jam yang diperlukan untuk melayan pelanggan, membungkus, penghantaran dan mengendalikan pertanyaan semasa kemuncak, dan bandingkan dengan kapasiti pasukan tetap anda.
+
+### Gunakan bantuan sementara dan separuh masa dengan berhati-hati
+Pekerja bermusim boleh mengisi jurang, tetapi mereka memerlukan kontrak yang jelas, latihan dan gaji yang adil. Panduan kami tentang mengambil pekerja pertama dan panduan kami tentang melatih pasukan anda menerangkan cara membawa orang baharu dengan pantas.
+
+### Berhati-hati dengan kerja lebih masa dan rehat
+Waktu yang panjang menyebabkan kesilapan dan keletihan. Semak peraturan tentang waktu bekerja, kerja lebih masa dan hari rehat yang terpakai kepada pekerja anda, dan sahkan keperluan semasa dengan Jabatan Tenaga Kerja atau penasihat.
+
+### Fahami peraturan cuti umum
+Ramai pekerja berhak mendapat cuti umum berbayar, dan bekerja pada cuti umum mungkin memerlukan bayaran tambahan, tetapi liputan dan kadar bergantung pada terma pekerja, gaji dan tempat perniagaan beroperasi. Peraturan berbeza antara Semenanjung Malaysia, Sabah dan Sarawak. Panduan kami tentang cuti pekerja dan cuti umum menerangkan asasnya, dan anda patut mengesahkan kedudukan semasa sebelum menjadualkan pekerja.
+
+### Fikirkan tentang bonus perayaan
+Bonus perayaan selalunya bergantung pada kontrak, dasar syarikat atau adat dan bukannya keperluan undang-undang tetap, tetapi ia boleh sangat mempengaruhi semangat. Tentukan apa yang mampu anda bayar, sampaikan dengan jelas, dan tuliskannya. Panduan kami tentang buku panduan pekerja dan dasar HR menerangkan cara menetapkan jangkaan.
+
+### Hormati perayaan yang berbeza
+Pekerja mungkin mahu bercuti sekitar perayaan mereka sendiri. Rancang jadual lebih awal, bersikap adil, dan fleksibel jika boleh.
+
+## 5. Tetapkan harga dan promosi dengan bijak
+
+### Ketahui margin anda sebelum memberi diskaun
+Diskaun besar boleh membawa orang ramai tetapi tiada keuntungan. Kira harga terendah yang masih menampung stok, buruh dan overhed. Panduan kami tentang penetapan harga produk dan perkhidmatan menerangkan cara melindungi margin anda.
+
+### Pilih promosi yang sesuai dengan matlamat anda
+Pakej, set hadiah, tawaran awal dan ganjaran kesetiaan boleh meningkatkan jualan tanpa memotong harga secara menyeluruh. Panduan kami tentang membina kesetiaan pelanggan menerangkan cara membawa pembeli kembali selepas perayaan.
+
+### Mulakan pemasaran lebih awal
+Pelanggan merancang sebelum perayaan. Mulakan kempen anda pada masa yang sesuai, menggunakan saluran biasa anda. Panduan kami tentang pemasaran media sosial dan panduan kami tentang menjual dalam talian menerangkan cara menjangkau pembeli.
+
+### Bersedia untuk pesanan digital
+Semak pilihan pembayaran, laman web, rakan penghantaran dan mesej pelanggan anda sebelum kesibukan. Panduan kami tentang menerima pembayaran digital menerangkan apa yang perlu disediakan.
+
+### Jujur dalam pengiklanan anda
+Pastikan harga, diskaun dan dakwaan adalah tepat, dan anda boleh menunaikannya. Panduan kami tentang aduan pelanggan, bayaran balik dan hak pengguna menerangkan apa yang dijangka oleh pelanggan.
+
+### Rancang janji penghantaran anda
+Tetapkan tarikh tutup yang realistik untuk penghantaran perayaan dan beritahu pelanggan dengan jelas, supaya anda tidak mengecewakan mereka.
+
+## 6. Kendalikan penutupan, cuti dan operasi
+
+### Tentukan waktu operasi lebih awal
+Umumkan waktu operasi perayaan, tarikh tutup dan sebarang tarikh pesanan terakhir sebelum tempoh sibuk, di kedai dan dalam talian.
+
+### Rancang untuk pembekal dan kurier yang tutup
+Ramai pembekal dan perkhidmatan penghantaran berhenti selama beberapa hari sekitar perayaan utama. Pesan lebih awal dan beritahu pelanggan apa yang dijangka.
+
+### Sediakan premis dan sistem anda
+Semak peralatan, point-of-sale, internet dan bilik stor anda sebelum kemuncak. Panduan kami tentang perancangan kesinambungan perniagaan menerangkan cara bersedia menghadapi gangguan, termasuk hujan lebat yang boleh datang pada hujung tahun.
+
+### Jaga keselamatan dan orang ramai
+Pastikan lorong bersih, pintu keluar kebakaran tidak terhalang, dan pekerja tahu apa yang perlu dilakukan semasa kecemasan. Panduan kami tentang keselamatan tempat kerja menerangkan asasnya.
+
+### Pastikan rekod dan pematuhan terkini
+Tempoh sibuk ialah ketika invois dan resit mudah hilang. Panduan kami tentang kalendar cukai perniagaan kecil dan panduan kami tentang e-Invois menerangkan apa yang perlu anda ikuti.
+
+## 7. Bawa perniagaan melalui bulan-bulan perlahan
+
+### Jangkakan kemerosotan
+Selepas kemuncak, jualan biasanya menurun. Rancang untuknya dalam bajet anda, supaya ia tidak datang sebagai kejutan.
+
+### Bina rizab tunai daripada kemuncak
+Asingkan sebahagian daripada keuntungan kemuncak untuk menampung sewa, gaji dan bayaran balik semasa tempoh perlahan. Panduan kami tentang menguruskan hutang perniagaan dan bayaran balik pinjaman menerangkan cara menyesuaikan bayaran balik dengan kitaran tunai anda.
+
+### Kurangkan kos dengan bijak
+Semak perbelanjaan, runding semula jika boleh, dan laraskan waktu kerja pekerja dengan adil, tanpa merosakkan perkhidmatan atau semangat.
+
+### Gunakan masa lapang dengan baik
+Latih pekerja, kemaskan kedai, kemas kini laman web, semak pembekal dan rancang musim seterusnya. Bulan-bulan perlahan ialah masa yang baik untuk menambah baik.
+
+### Ratakan lengkung
+Cari produk, perkhidmatan atau promosi yang laku di luar perayaan, seperti pesanan korporat, langganan atau tawaran di luar musim.
+
+### Semak angka setiap musim
+Selepas setiap tempoh perayaan, bandingkan ramalan anda dengan keputusan sebenar, catat apa yang berjaya, dan perbaiki rancangan tahun depan.
+
+Jika anda memerlukan akauntan, pembekal atau rakan penghantaran untuk kemuncak seterusnya, anda boleh [menyemak imbas direktori](/ms) untuk perniagaan berhampiran anda, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya pembeli perayaan dapat menemui anda.
+
+## Kesilapan lazim PKS Malaysia dengan musim perayaan
+
+- **Memesan terlalu banyak, terlalu lewat.** Pesanan besar saat akhir mengikat tunai dan meninggalkan anda dengan baki, jadi pesan secara berperingkat dan sahkan tempoh penghantaran lebih awal.
+- **Mengabaikan peraturan pekerja dan cuti.** Pasukan yang terlalu penat dan gaji cuti yang tidak jelas menyebabkan kesilapan dan pertikaian, jadi rancang jadual lebih awal dan semak peraturan semasa.
+- **Membelanjakan seluruh kemuncak.** Jika keuntungan perayaan habis apabila bulan-bulan perlahan tiba, anda akan bergelut, jadi asingkan rizab sebelum anda berbelanja.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Keluarkan jualan anda untuk musim perayaan lepas dan tuliskan apa yang berjaya dan apa yang tidak kena.
+- **Seterusnya:** Bina ramalan mudah dengan kes kukuh dan kes lemah, dan kira ke belakang kepada garis masa untuk stok, pekerja dan pemasaran.
+- **Kemudian:** Sahkan tempoh penghantaran pembekal, rancang jadual dan sebarang bonus, dan semak peraturan cuti dan gaji yang terpakai kepada anda.
+- **Selepas musim:** Bandingkan keputusan dengan ramalan, asingkan rizab tunai, dan rancang cara menggunakan bulan-bulan perlahan.
+
+Musim perayaan memberi ganjaran kepada perniagaan yang bersedia. Ketahui angka anda sendiri, simpan stok dengan munasabah, layan pasukan anda dengan adil, dan simpan tunai untuk bulan-bulan selepasnya, dan setiap kemuncak akan menjadikan anda lebih kukuh dan bukan sekadar lebih sibuk.`,
+        faqs: [
+          {
+            question: "Bagaimanakah saya meramal permintaan untuk musim perayaan?",
+            answer:
+              "Mulakan dengan jualan anda sendiri mengikut minggu daripada tempoh perayaan lepas, kemudian laraskan untuk pertumbuhan, perubahan harga, produk baharu dan ekonomi. Sediakan senario biasa, kukuh dan lemah, dan tuliskan andaian di sebalik setiap satu.",
+          },
+          {
+            question: "Bagaimanakah saya mengelak pesanan stok berlebihan untuk musim perayaan?",
+            answer:
+              "Pesan kuantiti asas lebih awal dan tambah apabila jualan berkembang jika pembekal anda membenarkan, tumpu pada barang paling laku yang terbukti, sahkan tempoh penghantaran dan pesanan minimum, dan rancang cara menjual baki. Jejak stok anda dengan kerap dan perhatikan tunai yang terikat di dalamnya.",
+          },
+          {
+            question: "Adakah saya wajib membayar bonus perayaan?",
+            answer:
+              "Bonus perayaan biasanya bergantung pada kontrak pekerjaan, dasar syarikat atau adat dan bukannya keperluan undang-undang tetap, tetapi ia boleh sangat mempengaruhi semangat. Semak kontrak dan dasar anda, tentukan apa yang mampu anda bayar, dan sampaikan dengan jelas secara bertulis.",
+          },
+          {
+            question: "Apakah peraturan untuk bekerja pada cuti umum?",
+            answer:
+              "Ramai pekerja berhak mendapat cuti umum berbayar, dan bekerja pada cuti umum mungkin memerlukan bayaran tambahan, tetapi liputan dan kadar bergantung pada terma pekerja, gaji dan tempat perniagaan beroperasi, kerana Semenanjung Malaysia, Sabah dan Sarawak berbeza. Sahkan peraturan semasa dengan Jabatan Tenaga Kerja atau penasihat.",
+          },
+          {
+            question: "Bagaimanakah saya patut mengambil pekerja sementara untuk musim kemuncak?",
+            answer:
+              "Anggarkan jam yang anda perlukan, gunakan kontrak bertulis yang jelas, bayar dengan adil, dan latih orang sebelum kesibukan. Perhatikan kerja lebih masa dan hari rehat untuk seluruh pasukan anda, dan semak peraturan pekerjaan semasa yang terpakai kepada pekerja bermusim dan separuh masa.",
+          },
+          {
+            question: "Patutkah saya memberi diskaun besar semasa jualan perayaan?",
+            answer:
+              "Hanya jika harga masih menampung stok, buruh dan overhed. Pakej, set hadiah, tawaran awal dan ganjaran kesetiaan boleh meningkatkan jualan tanpa memotong harga secara menyeluruh. Ketahui margin anda sebelum menetapkan sebarang diskaun.",
+          },
+          {
+            question: "Bagaimanakah saya bertahan pada bulan-bulan perlahan selepas kemuncak perayaan?",
+            answer:
+              "Jangkakan kemerosotan, asingkan sebahagian keuntungan kemuncak sebagai rizab tunai, semak kos dengan bijak, sesuaikan bayaran balik pinjaman dengan kitaran tunai anda, dan gunakan masa lapang untuk melatih pekerja, mengemas kini sistem dan merancang musim seterusnya.",
+          },
+          {
+            question: "Apakah yang patut saya lakukan selepas setiap musim perayaan tamat?",
+            answer:
+              "Bandingkan ramalan anda dengan keputusan sebenar, catat apa yang laku, apa yang berbaki, dan apa yang tidak kena dengan stok, pekerja atau perkhidmatan, dan gunakan pengajaran itu untuk memperbaiki rancangan seterusnya. Simpan rekod supaya anda dapat membandingkan dari tahun ke tahun.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "keeping-your-best-people-staff-retention-for-malaysian-smes",
+    title: "Keeping Your Best People: Motivating Staff, Performance Reviews, and Reducing Turnover",
+    seoTitle: "Keeping Your Best People: Staff Retention for Malaysian SMEs",
+    seoDescription:
+      "How Malaysian SMEs can keep good staff: why people leave, fair pay, simple reviews, recognition, training, flexibility and handling poor performance.",
+    coverImage: {
+      file: "keeping-your-best-people-cover.webp",
+      mimeType: "image/webp",
+      alt: "Three smiling colleagues in smart-casual clothes holding mugs during a coffee break",
+      altTranslations: {
+        zh: "三位身穿休闲商务服装的同事在咖啡休息时间微笑着手持马克杯",
+        ms: "Tiga rakan sekerja berpakaian smart-casual tersenyum sambil memegang mug semasa rehat minum kopi",
+      },
+    },
+    contentImages: {
+      owners: {
+        file: "keeping-your-best-people-owners.webp",
+        mimeType: "image/webp",
+        alt: "A smiling man in glasses and a woman with curly hair, both in aprons with arms crossed, standing in front of a wooden cafe counter",
+        altTranslations: {
+          zh: "一位戴眼镜的微笑男士和一位卷发女士，两人都系着围裙、双臂交叉，站在木质咖啡馆柜台前",
+          ms: "Seorang lelaki berkaca mata yang tersenyum dan seorang wanita berambut kerinting, kedua-duanya berapron dan berpeluk tubuh, berdiri di hadapan kaunter kafe kayu",
+        },
+        after: "Find out why people stay and why they leave before you spend money trying to keep them.",
+        afterTranslations: {
+          zh: "在花钱留住员工之前，先弄清楚人们为什么留下、又为什么离开。",
+          ms: "Ketahui mengapa orang kekal dan mengapa mereka pergi sebelum anda membelanjakan wang untuk mengekalkan mereka.",
+        },
+      },
+    },
+    excerpt:
+      "Losing a good employee costs far more than most small business owners expect: lost knowledge, lost time, and the effort of hiring and training someone new. This guide helps Malaysian SMEs understand why people leave, offer fair pay and benefits, run simple performance reviews, recognise good work cheaply, build career paths, handle underperformance fairly, and keep their best staff for longer.",
+    body: `In a small business, every person matters. When a good employee leaves, the work does not just stop: customers notice, colleagues take on extra load, and you lose time hiring, training, and getting a newcomer up to speed. Often the person who leaves is the one who knew where everything was and how things were done.
+
+The good news is that most turnover is not a mystery. People leave because of pay, because of their manager, because they see no future, or because the work is exhausting or unfair. Many of these causes are things that a small business owner can influence, often without spending much.
+
+This is general information, not legal, HR, or tax advice. Employment rules, pay requirements, benefits, and flexible working provisions change over time, and information in this guide may be out of date. Confirm the current requirements with the Labour Department or the relevant authority, your accountant, and where needed a lawyer before you make decisions.
+
+## 1. Understand why people leave
+
+Find out why people stay and why they leave before you spend money trying to keep them. Guessing wastes effort and can send you to fix the wrong thing.
+
+### The usual reasons
+People most often leave because of pay that feels unfair, a poor relationship with their manager, little chance to grow, heavy workload or long hours, lack of recognition, an unpleasant atmosphere, or an offer that looks better elsewhere.
+
+### Ask the people who stay
+Hold short, honest conversations with your current team about what they like, what frustrates them, and what would make them stay. Keep it informal and show that you will act on what you hear.
+
+### Learn from people who leave
+An exit conversation, held calmly and with no blame, can reveal problems that nobody else will mention. Ask what drew them to the new job, what they would change, and whether they would ever return.
+
+### Look at your numbers
+Track how many people leave each year, who they were, how long they stayed, and in which roles. Patterns will show you where the real problem lies. Our guide on bookkeeping and accounting basics explains how to keep reliable records.
+
+### Know what turnover really costs
+Include the cost of advertising, interviewing, training, lost sales, errors while a newcomer learns, and the time other staff spend covering. Even a rough estimate usually shows that keeping people is cheaper than replacing them.
+
+## 2. Offer fair pay and benefits
+
+### Check where you stand
+Compare your pay with similar roles in your area and industry, using job listings, industry contacts, and your own hiring experience. You do not have to match the highest payer, but a big gap will cost you people.
+
+### Make sure the basics are right
+Pay people on time, correctly, and in line with their contracts, and make sure that statutory contributions and leave are handled properly. Our guide on hiring your first employee, our guide on payroll and statutory contributions, and our guide on employee leave explain the obligations, and you should confirm the current rules with the relevant authorities.
+
+### Be fair and consistent
+People notice when pay seems arbitrary. Set clear pay ranges for roles, explain how raises are decided, and avoid large unexplained differences between people doing similar work.
+
+### Think beyond salary
+Benefits that cost you little but matter to staff can include extra leave days, meal allowances, transport help, medical or insurance coverage, birthday leave, and learning support. Our guide on business insurance explains some of the cover you might consider. Choose benefits that your team actually values by asking them.
+
+### Consider bonuses and incentives
+A bonus can reward results and teamwork, but it works best when the targets are fair and understood. Put the terms in writing and pay as promised. Our guide on planning for festive peaks explains how to think about festive bonuses.
+
+### Review pay at least once a year
+A regular review, even when the answer is a small raise, shows that you value people. Silence for several years invites them to look elsewhere.
+
+## 3. Run simple, fair performance reviews
+
+### Why reviews matter
+Most people want to know how they are doing. A review gives them feedback, gives you a chance to recognise good work, and surfaces problems before they grow.
+
+### Keep the process simple
+Meet once or twice a year, with short check-ins in between. Agree beforehand what you will discuss, and keep a brief written record.
+
+### Set clear expectations
+People cannot meet standards they have never heard. Write down what a good job looks like in each role, with a few clear goals. Our guide on employee handbooks and HR policies explains how to set expectations in writing.
+
+### Use real examples
+Describe specific situations rather than general labels like "bad attitude" or "great worker". Balance what went well with what to improve.
+
+### Make it a two-way conversation
+Ask what help they need, what is getting in their way, and what they want from the job. Listen more than you talk.
+
+### Agree on next steps
+End with a few clear actions, such as training to arrange, tasks to try, or support from you, and follow up on them.
+
+> People rarely leave a job because of one big thing. They leave because of many small ones that nobody noticed or took seriously. A manager who listens early keeps more good people than any perk.
+
+## 4. Recognise good work and build a better workplace
+
+### Say thank you, specifically
+Thanking someone for a particular action, such as handling a difficult customer or staying late to help, costs nothing and means a lot. Do it promptly and in front of others when appropriate.
+
+### Share the credit
+When the team does well, say so. Do not take the praise for work that others did.
+
+### Give people responsibility
+Trust capable staff with more decisions, a small project, or the training of a newcomer. Responsibility, when matched with support, is a strong motivator.
+
+### Treat people with respect
+Avoid public humiliation, favouritism, and unpredictable moods. A respectful, steady manager is one of the strongest reasons people stay.
+
+### Keep the workplace safe and decent
+Make sure that the premises, equipment, and working practices are safe, and that harassment and bullying are not tolerated. Our guide on workplace safety explains the basics.
+
+### Build a sense of team
+Share meals, celebrate milestones, and involve people in how the business is run. Small rituals matter in small teams.
+
+## 5. Offer growth, training, and a path forward
+
+### Show people a future
+Even a small business can offer progression, such as a senior role, more responsibility, a trainer role, or a chance to learn a new skill. Talk with each person about where they want to go.
+
+### Invest in training
+Training pays back through better work and loyalty. Our guide on training your team with HRD Corp in Malaysia explains how some employers may be able to use available funding, and you should confirm the current eligibility with HRD Corp.
+
+### Use on-the-job learning
+Job rotation, shadowing, mentoring, and cross-training are low-cost ways to build skills and keep work interesting.
+
+### Promote from within when you can
+Seeing colleagues move up shows others that effort pays. When you cannot promote someone, explain honestly why.
+
+### Be honest about limits
+If there is no senior role available, say so, and think about other ways to reward growth, such as new responsibilities, a pay step, or a title change.
+
+### Plan for succession
+Know who could step into key roles, and prepare them. Our guide on selling a business and succession planning explains the longer-term picture.
+
+## 6. Be flexible and look after wellbeing
+
+### Look at workload and hours
+Chronic overwork, constant last-minute changes, and unclear rosters wear people out. Plan schedules in advance, share extra work fairly, and respect rest days. Check the rules on working hours and overtime that apply to your staff.
+
+### Consider flexible arrangements
+Where the job allows it, flexibility in hours, days, or place of work can be a powerful retention tool. Employees covered by the Employment Act have a right to apply for flexible working arrangements, and employers are expected to respond to applications within a set period and give reasons if they refuse. Confirm the current rules and process with the Labour Department or an adviser, and have a clear written policy.
+
+### Support wellbeing
+Be sensitive to stress, family needs, and health problems. Allow reasonable time for emergencies, and think about simple support such as allowing breaks and encouraging people to use their leave.
+
+### Plan for absences
+Cross-train so that illness or leave does not cause chaos or resentment among those who cover. Our guide on business continuity planning explains how to avoid dependence on one person.
+
+### Respect diversity
+Different religions, languages, and backgrounds are part of Malaysian workplaces. Be fair in rostering around festivals and prayer times, and make sure that everyone feels included.
+
+## 7. Handle underperformance and exits fairly
+
+### Deal with problems early
+Do not let poor performance drag on. Raise it privately, describe the gap, ask what is behind it, and agree on specific improvements with a timeframe.
+
+### Offer support first
+Sometimes the person needs training, clearer instructions, or help with a personal problem. A fair attempt to help also protects you if matters go further.
+
+### Document what happens
+Keep notes of conversations, warnings, and agreed plans, with dates. Our guide on terminating an employee explains why fair process and records matter, and you should take advice before any dismissal.
+
+### Be consistent
+Apply the same standards to everyone. Favouritism wrecks trust and drives out your best people.
+
+### Protect the team
+Allowing one underperformer or one difficult person to go unchecked frustrates the rest, who may then decide to leave. Addressing it fairly is part of looking after your good people.
+
+### Part on good terms
+When someone does leave, thank them, handle final pay and paperwork correctly and on time, and keep the door open. Former staff can become customers, referrers, or even return later.
+
+If you need a lawyer, an HR adviser, or a trainer to help you build a better workplace, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so that good candidates and customers can find your business.
+
+## Common mistakes Malaysian SMEs make with staff retention
+
+- **Waiting for the resignation letter.** By the time someone resigns, the decision is usually made, so talk to your people regularly and fix problems early.
+- **Relying only on pay.** Money matters, but recognition, respect, growth, and fair treatment often decide whether good people stay, so work on all of them.
+- **Tolerating poor behaviour from a star or ignoring a weak performer.** Both damage trust in the team, so apply the same fair standards to everyone.
+
+## Where to start
+
+- **This week:** List the people who have left in the last two years, estimate what each departure cost, and note the reasons you know.
+- **Next:** Hold short one-to-one conversations with each team member about what they like, what frustrates them, and what they want.
+- **Then:** Check pay and benefits against the market, set up a simple twice-yearly review, and agree on clear expectations for each role.
+- **Every month:** Say thank you specifically, offer a learning opportunity, and check that workloads and rosters are fair.
+
+Keeping good people is not about perks or tricks. It is about fair pay, honest feedback, respect, and a chance to grow, and a small business that offers those has a real advantage over bigger competitors.`,
+    faqs: [
+      {
+        question: "Why do employees leave small businesses?",
+        answer:
+          "Common reasons include pay that feels unfair, a poor relationship with their manager, little chance to grow, heavy workloads or long hours, lack of recognition, and a better offer elsewhere. Asking your current team and holding exit conversations will show which apply to you.",
+      },
+      {
+        question: "How much does it cost to replace an employee?",
+        answer:
+          "More than most owners expect. Include advertising, interviewing, training, lost sales, mistakes while a newcomer learns, and the time other staff spend covering. Even a rough estimate usually shows that keeping a good person is cheaper than replacing them.",
+      },
+      {
+        question: "How do I know if my pay is fair?",
+        answer:
+          "Compare it with similar roles in your area and industry using job listings and industry contacts, make sure that you pay correctly and on time, and keep pay ranges clear and consistent. You do not need to match the highest payer, but a large gap will cost you staff.",
+      },
+      {
+        question: "How should I run a performance review in a small business?",
+        answer:
+          "Meet once or twice a year with short check-ins in between, agree expectations in advance, use specific examples, make it a two-way conversation, and finish with clear next steps. Keep a short written record and follow up.",
+      },
+      {
+        question: "What low-cost ways are there to motivate staff?",
+        answer:
+          "Specific thanks, sharing the credit, giving responsibility, respectful treatment, fair rostering, learning opportunities, and small team rituals. Asking your team which benefits they value most helps you spend on what matters.",
+      },
+      {
+        question: "Can employees ask for flexible working arrangements?",
+        answer:
+          "Employees covered by the Employment Act can apply to vary their hours, days, or place of work, and employers are expected to reply within a set period and give reasons if they refuse. Confirm the current rules and process with the Labour Department or an adviser.",
+      },
+      {
+        question: "How do I handle an underperforming employee fairly?",
+        answer:
+          "Raise the issue early and privately, describe the gap with examples, ask what is behind it, offer support or training, agree on specific improvements and a timeframe, and keep written notes. Take advice before any dismissal.",
+      },
+      {
+        question: "Should I do an exit interview when someone resigns?",
+        answer:
+          "Yes, if you hold it calmly and without blame. It can reveal problems that no one else will mention, such as workload, management style, or pay, and parting on good terms keeps the door open for referrals or a future return.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "留住最好的员工：激励员工、绩效评估与降低流失率",
+        excerpt:
+          "失去一位好员工的成本远超大多数小企业主的预期：流失的知识、浪费的时间，以及招聘和培训新人的精力。本指南帮助马来西亚中小企业了解员工为什么离职，提供公平的薪酬和福利，进行简单的绩效评估，以低成本表彰好的工作，建立职业发展路径，公平处理表现不佳的情况，并让最好的员工待得更久。",
+        body: `在小企业里，每一个人都很重要。当一位好员工离开时，工作不会只是停下来：顾客会察觉，同事要承担额外的工作量，而您要花时间招聘、培训并让新人跟上进度。离开的往往正是那位知道每样东西在哪里、事情该怎么做的人。
+
+好消息是，大多数员工流失并不神秘。人们离开，是因为薪酬、因为他们的主管、因为看不到前景，或是因为工作令人疲惫或不公平。这些原因中有许多是小企业主可以影响的，而且往往花不了多少钱。
+
+本文仅提供一般信息，并非法律、人力资源或税务建议。雇佣规定、薪酬要求、福利和弹性工作的规定会随时间变化，本指南的信息可能已经过时。在做决定之前，请向劳工局或相关主管单位、您的会计师以及必要时向律师确认现行要求。
+
+## 1. 了解人们为什么离职
+
+在花钱留住员工之前，先弄清楚人们为什么留下、又为什么离开。猜测会浪费精力，还可能让您去修补错误的地方。
+
+### 常见的原因
+人们最常因为以下原因离职：感觉不公平的薪酬、与主管关系不佳、缺少成长机会、工作量大或工时长、缺乏表彰、令人不快的氛围，或是别处更好的聘用条件。
+
+### 问问留下来的人
+与您目前的团队进行简短而诚实的交谈，了解他们喜欢什么、对什么感到沮丧，以及什么会让他们留下。保持随性，并表明您会根据听到的采取行动。
+
+### 向离开的人学习
+一次冷静而不带责备的离职面谈，可以揭示其他人不会提起的问题。问问是什么吸引他们去新工作、他们会改变什么，以及他们是否愿意回来。
+
+### 看看您的数字
+追踪每年有多少人离职、他们是谁、待了多久，以及在哪些职位。规律会告诉您真正的问题出在哪里。我们关于簿记和会计基础的指南说明了如何保存可靠的记录。
+
+### 了解流失的真实成本
+包括刊登广告、面试、培训、流失的销售、新人学习期间的错误，以及其他员工代班所花的时间。即使是粗略的估算，通常也会显示留住人比替换人便宜。
+
+## 2. 提供公平的薪酬和福利
+
+### 看看您所处的位置
+通过招聘广告、同行人脉和您自己的招聘经验，把您的薪酬与您所在地区和行业类似的职位相比较。您不必与出价最高的人持平，但差距太大会让您失去人才。
+
+### 确保基本事项正确
+准时、正确并按合约支付薪水，并确保法定供款和休假得到妥善处理。我们关于聘请第一位员工的指南、关于薪资与法定供款的指南和关于员工休假的指南说明了相关义务，您应该向相关主管单位确认现行规定。
+
+### 保持公平和一致
+人们会察觉薪酬是否随意。为职位设定清楚的薪酬范围，说明加薪如何决定，并避免从事类似工作的人之间出现重大的无法解释的差别。
+
+### 想想薪水之外的东西
+花费不多却对员工很重要的福利，可以包括额外的休假日、餐费津贴、交通补助、医药或保险保障、生日假和学习支援。我们关于企业保险的指南说明了您可以考虑的一些保障。请通过询问您的团队，选择他们真正看重的福利。
+
+### 考虑花红和奖励
+花红可以奖励成果和团队合作，但在目标公平且被理解时效果最好。请把条款写成书面，并按承诺支付。我们关于规划节庆旺季的指南说明了如何看待节庆花红。
+
+### 至少每年检讨一次薪酬
+定期检讨，即使结果只是小幅加薪，也显示您重视员工。连续几年毫无动静，会促使他们到别处看看。
+
+## 3. 进行简单而公平的绩效评估
+
+### 为什么评估很重要
+大多数人想知道自己表现如何。评估给他们反馈，让您有机会表彰好的工作，并在问题扩大之前把它们浮现出来。
+
+### 保持流程简单
+每年一两次会面，期间安排简短的沟通。事先商定要讨论什么，并保留简短的书面记录。
+
+### 设定清楚的期望
+人们无法达到他们从未听过的标准。写下每个职位上好的表现是什么样子，并设定几个清楚的目标。我们关于员工手册与人力资源政策的指南说明了如何以书面方式设定期望。
+
+### 用真实的例子
+描述具体的情境，而不是“态度不好”或“很棒的员工”这类笼统的标签。把做得好的和要改进的放在一起平衡地谈。
+
+### 让它成为双向的对话
+问问他们需要什么帮助、什么在阻碍他们，以及他们想从工作中得到什么。多听少说。
+
+### 商定下一步
+以几项清楚的行动作结，例如要安排的培训、要尝试的任务或您的支持，并跟进落实。
+
+> 人们很少因为一件大事而离开一份工作。他们离开，是因为许多没人注意或重视的小事。一位及早倾听的主管，比任何福利都更能留住好员工。
+
+## 4. 表彰好的工作并营造更好的工作环境
+
+### 具体地说谢谢
+感谢某人的某个具体行动，例如处理了一位难缠的顾客或留下来帮忙，不花一分钱却意义重大。请及时去做，并在适当时当着其他人的面说。
+
+### 分享功劳
+当团队表现出色时，请说出来。不要把别人做的工作所得到的赞扬占为己有。
+
+### 给人们责任
+信任有能力的员工，让他们承担更多决定、一个小项目，或培训新人。责任在配合支持时是强大的激励。
+
+### 以尊重对待人
+避免公开羞辱、偏心和情绪反复无常。一位尊重人、稳定的主管，是人们留下来的最有力的理由之一。
+
+### 保持工作场所安全和体面
+确保场地、设备和工作方式安全，并且不容忍骚扰和欺凌。我们关于工作场所安全的指南说明了基础知识。
+
+### 建立团队意识
+一起用餐，庆祝里程碑，并让人们参与企业的运作。在小团队里，小小的仪式很重要。
+
+## 5. 提供成长、培训和前进的道路
+
+### 让人们看到未来
+即使是小企业也可以提供晋升途径，例如高级职位、更多责任、培训员的角色，或学习新技能的机会。与每个人谈谈他们想去哪里。
+
+### 投资于培训
+培训通过更好的工作和忠诚度得到回报。我们关于通过人力资源发展公司培训团队的指南说明了一些雇主也许可以如何使用可用的资助，您应该向人力资源发展公司确认现行的资格。
+
+### 利用在职学习
+轮岗、跟班学习、辅导和交叉培训，是培养技能并让工作保持趣味的低成本方式。
+
+### 可以的话从内部晋升
+看到同事晋升，会让其他人知道努力有回报。当您无法晋升某人时，请诚实地说明原因。
+
+### 对限制保持诚实
+如果没有高级职位可用，请直说，并想想其他奖励成长的方式，例如新的责任、加一级薪酬或更改职衔。
+
+### 规划接班
+知道谁可以接任关键职位，并为他们做好准备。我们关于出售企业与继承规划的指南说明了较长远的情况。
+
+## 6. 保持弹性并照顾身心健康
+
+### 看看工作量和工时
+长期过劳、不断的临时变动和不清楚的排班会让人精疲力竭。提前规划时间表，公平分担额外的工作，并尊重休息日。请查核适用于您员工的工作时数和加班规定。
+
+### 考虑弹性安排
+在工作允许的情况下，工作时数、日子或地点上的弹性可以成为强大的留才工具。受《雇佣法令》涵盖的员工有权申请弹性工作安排，雇主需要在一定期限内回应申请，并在拒绝时说明理由。请向劳工局或顾问确认现行规定和程序，并制定清楚的书面政策。
+
+### 支持身心健康
+对压力、家庭需求和健康问题保持敏感。为紧急情况允许合理的时间，并考虑简单的支持，例如允许休息并鼓励人们使用他们的假期。
+
+### 为缺勤做好规划
+进行交叉培训，让疾病或休假不会在代班的人当中造成混乱或怨气。我们关于业务持续规划的指南说明了如何避免依赖某一个人。
+
+### 尊重多元
+不同的宗教、语言和背景是马来西亚职场的一部分。在安排节日和祷告时间的排班时要公平，并确保每个人都感到被包容。
+
+## 7. 公平处理表现不佳和离职
+
+### 及早处理问题
+不要让表现不佳拖下去。私下提出，描述差距，问问背后的原因，并商定带有时限的具体改进。
+
+### 先提供支持
+有时对方需要培训、更清楚的指示，或个人问题上的帮助。公平地尝试帮助，在事情进一步发展时也保护了您。
+
+### 记录发生的事情
+保留谈话、警告和商定计划的笔记，并注明日期。我们关于解雇员工的指南说明了为什么公平的程序和记录很重要，在任何解雇之前您应该先征求意见。
+
+### 保持一致
+对每个人适用相同的标准。偏心会破坏信任，并赶走您最好的员工。
+
+### 保护团队
+放任一位表现不佳的人或一位难相处的人不管，会让其余的人感到沮丧，他们可能因此决定离开。公平地处理它，是照顾好您的好员工的一部分。
+
+### 好聚好散
+当有人真的离开时，请感谢他们，正确而准时地处理最后的薪水和文件，并保持联系的大门敞开。前员工可能成为顾客、推荐人，甚至日后回来。
+
+如果您需要律师、人力资源顾问或培训员协助您营造更好的工作环境，可以[浏览目录](/zh)寻找您附近的专业人士，并[创建免费商家列表](/zh/signup)，让优秀的求职者和顾客能找到您的企业。
+
+## 马来西亚中小企业在留住员工方面的常见错误
+
+- **等到收到辞职信才行动。** 等有人辞职时，决定通常已经做出，所以请定期与您的员工交谈并及早解决问题。
+- **只靠薪酬。** 金钱很重要，但表彰、尊重、成长和公平对待往往决定好员工是否留下，所以请在所有这些方面下功夫。
+- **容忍明星员工的不良行为或忽视表现差的人。** 两者都会损害团队的信任，所以请对每个人适用相同而公平的标准。
+
+## 从哪里开始
+
+- **本周：** 列出过去两年离职的人，估算每次离职的成本，并记下您所知的原因。
+- **接下来：** 与每位团队成员进行简短的一对一交谈，了解他们喜欢什么、对什么感到沮丧，以及他们想要什么。
+- **然后：** 对照市场检查薪酬和福利，建立简单的每年两次的评估，并为每个职位商定清楚的期望。
+- **每个月：** 具体地说谢谢，提供一个学习机会，并检查工作量和排班是否公平。
+
+留住好员工靠的不是福利或花招。靠的是公平的薪酬、诚实的反馈、尊重和成长的机会，而提供这些的小企业，相对于较大的竞争对手有真正的优势。`,
+        faqs: [
+          {
+            question: "员工为什么离开小企业？",
+            answer:
+              "常见的原因包括感觉不公平的薪酬、与主管关系不佳、缺少成长机会、工作量大或工时长、缺乏表彰，以及别处有更好的条件。询问您目前的团队并进行离职面谈，可以看出哪些适用于您。",
+          },
+          {
+            question: "替换一位员工要花多少钱？",
+            answer:
+              "比大多数业主预期的更多。包括刊登广告、面试、培训、流失的销售、新人学习期间的错误，以及其他员工代班所花的时间。即使是粗略的估算，通常也会显示留住一位好员工比替换他更便宜。",
+          },
+          {
+            question: "我怎么知道自己的薪酬是否公平？",
+            answer:
+              "通过招聘广告和同行人脉，与您所在地区和行业类似的职位比较，确保您正确而准时地付薪，并保持薪酬范围清楚一致。您不需要与出价最高的人持平，但差距太大会让您失去员工。",
+          },
+          {
+            question: "小企业应该如何进行绩效评估？",
+            answer:
+              "每年一两次会面，期间安排简短的沟通，事先商定期望，使用具体的例子，让它成为双向的对话，并以清楚的下一步作结。保留简短的书面记录并跟进。",
+          },
+          {
+            question: "有哪些低成本的方式可以激励员工？",
+            answer:
+              "具体的感谢、分享功劳、给予责任、尊重地对待、公平的排班、学习机会和小小的团队仪式。询问您的团队最看重哪些福利，可以帮您把钱花在重要的地方。",
+          },
+          {
+            question: "员工可以要求弹性工作安排吗？",
+            answer:
+              "受《雇佣法令》涵盖的员工可以申请更改工作时数、日子或地点，雇主需要在一定期限内回复，并在拒绝时说明理由。请向劳工局或顾问确认现行规定和程序。",
+          },
+          {
+            question: "我如何公平地处理表现不佳的员工？",
+            answer:
+              "及早并私下提出问题，用例子描述差距，问问背后的原因，提供支持或培训，商定具体的改进和时限，并保留书面记录。在任何解雇之前请先征求意见。",
+          },
+          {
+            question: "有人辞职时我应该做离职面谈吗？",
+            answer:
+              "应该，只要您冷静而不带责备地进行。它可以揭示其他人不会提起的问题，例如工作量、管理风格或薪酬，而好聚好散则为日后的推荐或回来保持了大门敞开。",
+          },
+        ],
+      },
+      ms: {
+        title: "Mengekalkan Pekerja Terbaik Anda: Memotivasikan Kakitangan, Penilaian Prestasi dan Mengurangkan Pusing Ganti",
+        excerpt:
+          "Kehilangan pekerja yang baik menelan kos jauh lebih tinggi daripada yang dijangka oleh kebanyakan pemilik perniagaan kecil: pengetahuan yang hilang, masa yang terbuang, dan usaha mengambil serta melatih orang baharu. Panduan ini membantu PKS Malaysia memahami mengapa orang pergi, menawarkan gaji dan faedah yang adil, menjalankan penilaian prestasi yang mudah, menghargai kerja baik dengan kos rendah, membina laluan kerjaya, menangani prestasi lemah dengan adil, dan mengekalkan kakitangan terbaik lebih lama.",
+        body: `Dalam perniagaan kecil, setiap orang penting. Apabila pekerja yang baik pergi, kerja bukan sekadar terhenti: pelanggan perasan, rakan sekerja menanggung beban tambahan, dan anda kehilangan masa mengambil, melatih dan membawa orang baharu sehingga mahir. Selalunya orang yang pergi ialah orang yang tahu di mana segala-galanya dan bagaimana sesuatu dilakukan.
+
+Berita baiknya, kebanyakan pusing ganti bukanlah misteri. Orang pergi kerana gaji, kerana pengurus mereka, kerana mereka tidak nampak masa depan, atau kerana kerja itu meletihkan atau tidak adil. Banyak daripada punca ini ialah perkara yang boleh dipengaruhi oleh pemilik perniagaan kecil, selalunya tanpa perbelanjaan besar.
+
+Ini maklumat umum, bukan nasihat undang-undang, HR atau cukai. Peraturan pekerjaan, keperluan gaji, faedah dan peruntukan kerja fleksibel berubah dari semasa ke semasa, dan maklumat dalam panduan ini mungkin sudah lapuk. Sahkan keperluan semasa dengan Jabatan Tenaga Kerja atau pihak berkuasa berkaitan, akauntan anda dan jika perlu peguam sebelum anda membuat keputusan.
+
+## 1. Fahami mengapa orang pergi
+
+Ketahui mengapa orang kekal dan mengapa mereka pergi sebelum anda membelanjakan wang untuk mengekalkan mereka. Meneka membazir usaha dan boleh menghantar anda membaiki perkara yang salah.
+
+### Sebab lazim
+Orang paling kerap pergi kerana gaji yang terasa tidak adil, hubungan yang lemah dengan pengurus mereka, sedikit peluang untuk berkembang, beban kerja berat atau waktu panjang, kekurangan penghargaan, suasana yang tidak menyenangkan, atau tawaran yang kelihatan lebih baik di tempat lain.
+
+### Tanya orang yang kekal
+Adakan perbualan ringkas dan jujur dengan pasukan semasa anda tentang apa yang mereka suka, apa yang mengecewakan mereka, dan apa yang akan membuat mereka kekal. Pastikan ia tidak formal dan tunjukkan bahawa anda akan bertindak ke atas apa yang anda dengar.
+
+### Belajar daripada orang yang pergi
+Perbualan keluar, yang diadakan dengan tenang dan tanpa menyalahkan, boleh mendedahkan masalah yang tiada orang lain akan sebutkan. Tanya apa yang menarik mereka ke pekerjaan baharu, apa yang akan mereka ubah, dan sama ada mereka akan kembali.
+
+### Lihat angka anda
+Jejak berapa ramai yang pergi setiap tahun, siapa mereka, berapa lama mereka bertahan, dan dalam peranan mana. Corak akan menunjukkan di mana masalah sebenar. Panduan kami tentang asas simpan kira dan perakaunan menerangkan cara menyimpan rekod yang boleh dipercayai.
+
+### Ketahui kos sebenar pusing ganti
+Sertakan kos pengiklanan, temu duga, latihan, jualan yang hilang, kesilapan semasa orang baharu belajar, dan masa yang dihabiskan oleh kakitangan lain untuk menggantikan. Walaupun anggaran kasar biasanya menunjukkan bahawa mengekalkan orang lebih murah daripada menggantikan mereka.
+
+## 2. Tawarkan gaji dan faedah yang adil
+
+### Semak di mana kedudukan anda
+Bandingkan gaji anda dengan peranan serupa di kawasan dan industri anda, menggunakan iklan kerja, hubungan industri dan pengalaman mengambil pekerja anda sendiri. Anda tidak perlu menyamai pembayar tertinggi, tetapi jurang yang besar akan menyebabkan anda kehilangan orang.
+
+### Pastikan asasnya betul
+Bayar gaji tepat pada masanya, dengan betul dan selaras dengan kontrak, dan pastikan caruman berkanun dan cuti dikendalikan dengan betul. Panduan kami tentang mengambil pekerja pertama, panduan kami tentang gaji dan caruman berkanun dan panduan kami tentang cuti pekerja menerangkan obligasi itu, dan anda patut mengesahkan peraturan semasa dengan pihak berkuasa berkaitan.
+
+### Bersikap adil dan konsisten
+Orang perasan apabila gaji kelihatan sewenang-wenang. Tetapkan julat gaji yang jelas untuk peranan, terangkan bagaimana kenaikan diputuskan, dan elakkan perbezaan besar yang tidak dijelaskan antara orang yang melakukan kerja serupa.
+
+### Fikir melebihi gaji
+Faedah yang menelan sedikit kos tetapi penting kepada kakitangan boleh termasuk hari cuti tambahan, elaun makan, bantuan pengangkutan, perlindungan perubatan atau insurans, cuti hari lahir, dan sokongan pembelajaran. Panduan kami tentang insurans perniagaan menerangkan sebahagian perlindungan yang boleh anda pertimbangkan. Pilih faedah yang benar-benar dihargai oleh pasukan anda dengan bertanya kepada mereka.
+
+### Pertimbangkan bonus dan insentif
+Bonus boleh memberi ganjaran kepada hasil dan kerja berpasukan, tetapi ia paling berkesan apabila sasaran adil dan difahami. Letakkan terma secara bertulis dan bayar seperti yang dijanjikan. Panduan kami tentang merancang untuk kemuncak perayaan menerangkan cara memikirkan bonus perayaan.
+
+### Semak gaji sekurang-kurangnya setahun sekali
+Semakan tetap, walaupun jawapannya kenaikan kecil, menunjukkan anda menghargai orang. Kesenyapan selama beberapa tahun menjemput mereka melihat di tempat lain.
+
+## 3. Jalankan penilaian prestasi yang mudah dan adil
+
+### Mengapa penilaian penting
+Kebanyakan orang mahu tahu bagaimana prestasi mereka. Penilaian memberi mereka maklum balas, memberi anda peluang menghargai kerja baik, dan mengetengahkan masalah sebelum ia membesar.
+
+### Pastikan proses mudah
+Bertemu sekali atau dua kali setahun, dengan semakan ringkas di antaranya. Persetujui terlebih dahulu apa yang akan dibincangkan, dan simpan rekod bertulis ringkas.
+
+### Tetapkan jangkaan yang jelas
+Orang tidak dapat memenuhi piawaian yang tidak pernah mereka dengar. Tuliskan seperti apa kerja yang baik dalam setiap peranan, dengan beberapa matlamat yang jelas. Panduan kami tentang buku panduan pekerja dan dasar HR menerangkan cara menetapkan jangkaan secara bertulis.
+
+### Gunakan contoh sebenar
+Huraikan situasi khusus dan bukannya label umum seperti "sikap buruk" atau "pekerja hebat". Seimbangkan apa yang berjalan baik dengan apa yang perlu diperbaiki.
+
+### Jadikan ia perbualan dua hala
+Tanya apa bantuan yang mereka perlukan, apa yang menghalang mereka, dan apa yang mereka mahu daripada pekerjaan itu. Dengar lebih banyak daripada bercakap.
+
+### Persetujui langkah seterusnya
+Akhiri dengan beberapa tindakan yang jelas, seperti latihan yang perlu diatur, tugas untuk dicuba, atau sokongan daripada anda, dan susuli.
+
+> Orang jarang meninggalkan pekerjaan kerana satu perkara besar. Mereka pergi kerana banyak perkara kecil yang tiada siapa perasan atau ambil serius. Pengurus yang mendengar lebih awal mengekalkan lebih ramai orang baik daripada sebarang kemudahan.
+
+## 4. Hargai kerja baik dan bina tempat kerja yang lebih baik
+
+### Ucap terima kasih, secara khusus
+Berterima kasih kepada seseorang atas tindakan tertentu, seperti mengendalikan pelanggan yang sukar atau tinggal lewat untuk membantu, tidak menelan kos dan bermakna besar. Lakukannya dengan segera dan di hadapan orang lain apabila sesuai.
+
+### Kongsi pujian
+Apabila pasukan berjaya, katakannya. Jangan ambil pujian untuk kerja yang dilakukan oleh orang lain.
+
+### Beri orang tanggungjawab
+Percayai kakitangan yang berkebolehan dengan lebih banyak keputusan, projek kecil, atau melatih orang baharu. Tanggungjawab, apabila disertai sokongan, ialah pendorong yang kuat.
+
+### Layan orang dengan hormat
+Elakkan memalukan di khalayak, pilih kasih dan angin yang tidak menentu. Pengurus yang menghormati dan stabil ialah salah satu sebab terkuat orang kekal.
+
+### Pastikan tempat kerja selamat dan sopan
+Pastikan premis, peralatan dan amalan kerja selamat, dan gangguan serta buli tidak dibenarkan. Panduan kami tentang keselamatan tempat kerja menerangkan asasnya.
+
+### Bina semangat berpasukan
+Kongsi makanan, raikan pencapaian, dan libatkan orang dalam cara perniagaan dijalankan. Upacara kecil penting dalam pasukan kecil.
+
+## 5. Tawarkan pertumbuhan, latihan dan jalan ke hadapan
+
+### Tunjukkan orang masa depan
+Walaupun perniagaan kecil boleh menawarkan kemajuan, seperti peranan kanan, lebih tanggungjawab, peranan jurulatih, atau peluang mempelajari kemahiran baharu. Bincang dengan setiap orang ke mana mereka mahu pergi.
+
+### Labur dalam latihan
+Latihan memberi pulangan melalui kerja yang lebih baik dan kesetiaan. Panduan kami tentang melatih pasukan anda dengan HRD Corp di Malaysia menerangkan bagaimana sesetengah majikan mungkin dapat menggunakan pembiayaan yang tersedia, dan anda patut mengesahkan kelayakan semasa dengan HRD Corp.
+
+### Gunakan pembelajaran semasa bekerja
+Pusingan tugas, mengikuti rakan sekerja, bimbingan dan latihan silang ialah cara berkos rendah untuk membina kemahiran dan mengekalkan kerja yang menarik.
+
+### Naikkan pangkat dari dalam jika boleh
+Melihat rakan sekerja naik pangkat menunjukkan kepada orang lain bahawa usaha berbaloi. Apabila anda tidak dapat menaikkan pangkat seseorang, terangkan sebabnya dengan jujur.
+
+### Jujur tentang had
+Jika tiada peranan kanan tersedia, katakannya, dan fikirkan cara lain untuk memberi ganjaran kepada pertumbuhan, seperti tanggungjawab baharu, kenaikan gaji satu peringkat atau perubahan jawatan.
+
+### Rancang penggantian
+Ketahui siapa yang boleh mengambil alih peranan utama, dan sediakan mereka. Panduan kami tentang menjual perniagaan dan perancangan penggantian menerangkan gambaran jangka panjang.
+
+## 6. Bersikap fleksibel dan jaga kesejahteraan
+
+### Lihat beban kerja dan waktu
+Kerja berlebihan kronik, perubahan saat akhir yang berterusan dan jadual yang tidak jelas meletihkan orang. Rancang jadual lebih awal, kongsi kerja tambahan dengan adil, dan hormati hari rehat. Semak peraturan tentang waktu bekerja dan kerja lebih masa yang terpakai kepada kakitangan anda.
+
+### Pertimbangkan pengaturan fleksibel
+Jika kerja membenarkan, fleksibiliti dalam waktu, hari atau tempat kerja boleh menjadi alat pengekalan yang berkuasa. Pekerja yang dilindungi oleh Akta Kerja berhak memohon pengaturan kerja fleksibel, dan majikan dijangka membalas permohonan dalam tempoh tertentu serta memberi alasan jika mereka menolak. Sahkan peraturan dan proses semasa dengan Jabatan Tenaga Kerja atau penasihat, dan sediakan dasar bertulis yang jelas.
+
+### Sokong kesejahteraan
+Peka terhadap tekanan, keperluan keluarga dan masalah kesihatan. Benarkan masa yang munasabah untuk kecemasan, dan fikirkan sokongan mudah seperti membenarkan rehat dan menggalakkan orang menggunakan cuti mereka.
+
+### Rancang untuk ketidakhadiran
+Lakukan latihan silang supaya sakit atau cuti tidak menyebabkan kekalutan atau rasa tidak puas hati dalam kalangan yang menggantikan. Panduan kami tentang perancangan kesinambungan perniagaan menerangkan cara mengelak pergantungan kepada satu orang.
+
+### Hormati kepelbagaian
+Agama, bahasa dan latar belakang yang berbeza ialah sebahagian daripada tempat kerja Malaysia. Bersikap adil dalam penjadualan sekitar perayaan dan waktu solat, dan pastikan semua orang berasa dilibatkan.
+
+## 7. Tangani prestasi lemah dan pemergian dengan adil
+
+### Tangani masalah lebih awal
+Jangan biarkan prestasi buruk berlarutan. Bangkitkannya secara peribadi, huraikan jurang, tanya apa di sebaliknya, dan persetujui penambahbaikan khusus dengan jangka masa.
+
+### Tawarkan sokongan dahulu
+Kadangkala orang itu memerlukan latihan, arahan yang lebih jelas atau bantuan dengan masalah peribadi. Percubaan membantu yang adil juga melindungi anda jika perkara berlanjutan.
+
+### Dokumenkan apa yang berlaku
+Simpan nota perbualan, amaran dan rancangan yang dipersetujui, dengan tarikh. Panduan kami tentang menamatkan perkhidmatan pekerja menerangkan mengapa proses yang adil dan rekod penting, dan anda patut mendapatkan nasihat sebelum sebarang pemberhentian.
+
+### Bersikap konsisten
+Gunakan piawaian yang sama untuk semua orang. Pilih kasih merosakkan kepercayaan dan menyingkirkan orang terbaik anda.
+
+### Lindungi pasukan
+Membiarkan seorang yang berprestasi lemah atau seorang yang sukar tidak dikawal mengecewakan yang lain, yang mungkin kemudian memutuskan untuk pergi. Menanganinya dengan adil ialah sebahagian daripada menjaga orang baik anda.
+
+### Berpisah dengan baik
+Apabila seseorang benar-benar pergi, berterima kasih kepada mereka, uruskan gaji akhir dan dokumen dengan betul dan tepat pada masanya, dan biarkan pintu terbuka. Bekas kakitangan boleh menjadi pelanggan, perujuk, atau malah kembali kemudian.
+
+Jika anda memerlukan peguam, penasihat HR atau jurulatih untuk membantu anda membina tempat kerja yang lebih baik, anda boleh [menyemak imbas direktori](/ms) untuk profesional berhampiran anda, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya calon yang baik dan pelanggan dapat menemui perniagaan anda.
+
+## Kesilapan lazim PKS Malaysia dengan pengekalan kakitangan
+
+- **Menunggu surat perletakan jawatan.** Pada masa seseorang meletak jawatan, keputusan biasanya sudah dibuat, jadi bercakap dengan orang anda secara berkala dan selesaikan masalah lebih awal.
+- **Bergantung pada gaji sahaja.** Wang penting, tetapi penghargaan, hormat, pertumbuhan dan layanan adil selalunya menentukan sama ada orang baik kekal, jadi usahakan semuanya.
+- **Bertolak ansur dengan tingkah laku buruk bintang atau mengabaikan yang lemah.** Kedua-duanya merosakkan kepercayaan dalam pasukan, jadi gunakan piawaian yang adil dan sama untuk semua orang.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Senaraikan orang yang telah pergi dalam dua tahun lepas, anggarkan kos setiap pemergian, dan catat sebab yang anda tahu.
+- **Seterusnya:** Adakan perbualan satu lawan satu yang ringkas dengan setiap ahli pasukan tentang apa yang mereka suka, apa yang mengecewakan mereka, dan apa yang mereka mahu.
+- **Kemudian:** Semak gaji dan faedah berbanding pasaran, sediakan penilaian mudah dua kali setahun, dan persetujui jangkaan yang jelas untuk setiap peranan.
+- **Setiap bulan:** Ucap terima kasih secara khusus, tawarkan peluang pembelajaran, dan semak bahawa beban kerja dan jadual adalah adil.
+
+Mengekalkan orang baik bukan tentang kemudahan atau helah. Ia tentang gaji yang adil, maklum balas yang jujur, hormat, dan peluang untuk berkembang, dan perniagaan kecil yang menawarkannya mempunyai kelebihan sebenar berbanding pesaing yang lebih besar.`,
+        faqs: [
+          {
+            question: "Mengapa pekerja meninggalkan perniagaan kecil?",
+            answer:
+              "Sebab lazim termasuk gaji yang terasa tidak adil, hubungan yang lemah dengan pengurus, sedikit peluang untuk berkembang, beban kerja berat atau waktu panjang, kekurangan penghargaan, dan tawaran lebih baik di tempat lain. Bertanya kepada pasukan semasa anda dan mengadakan perbualan keluar akan menunjukkan yang mana terpakai kepada anda.",
+          },
+          {
+            question: "Berapakah kos untuk menggantikan seorang pekerja?",
+            answer:
+              "Lebih daripada yang dijangka oleh kebanyakan pemilik. Sertakan pengiklanan, temu duga, latihan, jualan yang hilang, kesilapan semasa orang baharu belajar, dan masa yang dihabiskan oleh kakitangan lain untuk menggantikan. Walaupun anggaran kasar biasanya menunjukkan bahawa mengekalkan orang yang baik lebih murah daripada menggantikannya.",
+          },
+          {
+            question: "Bagaimanakah saya tahu sama ada gaji saya adil?",
+            answer:
+              "Bandingkan dengan peranan serupa di kawasan dan industri anda menggunakan iklan kerja dan hubungan industri, pastikan anda membayar dengan betul dan tepat pada masanya, dan pastikan julat gaji jelas dan konsisten. Anda tidak perlu menyamai pembayar tertinggi, tetapi jurang yang besar akan menyebabkan anda kehilangan kakitangan.",
+          },
+          {
+            question: "Bagaimanakah saya patut menjalankan penilaian prestasi dalam perniagaan kecil?",
+            answer:
+              "Bertemu sekali atau dua kali setahun dengan semakan ringkas di antaranya, persetujui jangkaan terlebih dahulu, gunakan contoh khusus, jadikan ia perbualan dua hala, dan akhiri dengan langkah seterusnya yang jelas. Simpan rekod bertulis ringkas dan susuli.",
+          },
+          {
+            question: "Apakah cara berkos rendah untuk memotivasikan kakitangan?",
+            answer:
+              "Ucapan terima kasih yang khusus, berkongsi pujian, memberi tanggungjawab, layanan yang menghormati, penjadualan yang adil, peluang pembelajaran, dan upacara pasukan yang kecil. Bertanya kepada pasukan anda faedah mana yang paling mereka hargai membantu anda berbelanja pada apa yang penting.",
+          },
+          {
+            question: "Bolehkah pekerja meminta pengaturan kerja fleksibel?",
+            answer:
+              "Pekerja yang dilindungi oleh Akta Kerja boleh memohon untuk mengubah waktu, hari atau tempat kerja mereka, dan majikan dijangka membalas dalam tempoh tertentu serta memberi alasan jika mereka menolak. Sahkan peraturan dan proses semasa dengan Jabatan Tenaga Kerja atau penasihat.",
+          },
+          {
+            question: "Bagaimanakah saya menangani pekerja yang berprestasi lemah dengan adil?",
+            answer:
+              "Bangkitkan isu lebih awal dan secara peribadi, huraikan jurang dengan contoh, tanya apa di sebaliknya, tawarkan sokongan atau latihan, persetujui penambahbaikan khusus dan jangka masa, dan simpan nota bertulis. Dapatkan nasihat sebelum sebarang pemberhentian.",
+          },
+          {
+            question: "Patutkah saya membuat temu duga keluar apabila seseorang meletak jawatan?",
+            answer:
+              "Ya, jika anda mengadakannya dengan tenang dan tanpa menyalahkan. Ia boleh mendedahkan masalah yang tiada orang lain akan sebutkan, seperti beban kerja, gaya pengurusan atau gaji, dan berpisah dengan baik mengekalkan pintu terbuka untuk rujukan atau kepulangan pada masa depan.",
+          },
+        ],
+      },
+    },
+  },
 ];
