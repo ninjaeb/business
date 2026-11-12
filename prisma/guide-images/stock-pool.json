@@ -1014,6 +1014,70 @@
       ],
       "description": "Two young cafe owners smiling proudly in aprons in their cafe",
       "usedBy": "keeping-your-best-people-owners.webp"
+    },
+    {
+      "id": 7681758,
+      "tags": [
+        "tech",
+        "laptop",
+        "cafe",
+        "plants"
+      ],
+      "description": "Asian woman working on a laptop in a cozy coffee shop with plants",
+      "usedBy": "ai-tools-for-small-business-cover.webp"
+    },
+    {
+      "id": 8872743,
+      "tags": [
+        "tech",
+        "laptop",
+        "home-office",
+        "asian"
+      ],
+      "description": "Asian woman focused on laptop work at a home office desk",
+      "usedBy": "ai-tools-for-small-business-laptop.webp"
+    },
+    {
+      "id": 8546866,
+      "tags": [
+        "wellbeing",
+        "break",
+        "mug",
+        "asian"
+      ],
+      "description": "Asian woman with a ponytail smiling and holding a mug indoors",
+      "usedBy": "owner-burnout-and-delegation-cover.webp"
+    },
+    {
+      "id": 9052142,
+      "tags": [
+        "wellbeing",
+        "desk",
+        "plants",
+        "laptop"
+      ],
+      "description": "Asian woman working on a laptop in a modern office with a lamp and plants",
+      "usedBy": "owner-burnout-and-delegation-desk.webp"
+    },
+    {
+      "id": 8052848,
+      "tags": [
+        "wellbeing",
+        "outdoors",
+        "park",
+        "laptop"
+      ],
+      "description": "Asian businessman working outdoors under a tree with a laptop and phone"
+    },
+    {
+      "id": 7681754,
+      "tags": [
+        "wellbeing",
+        "cafe",
+        "coffee",
+        "reflective"
+      ],
+      "description": "Asian woman working remotely in a coffee shop holding a cup of coffee"
     }
   ]
 }
