@@ -15,16 +15,15 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Using AI Tools in Your Small Business: Practical Uses, Risks, and Staying Compliant in Malaysia**
-   — Where AI chatbots and automation genuinely save time (customer replies,
-   drafting, bookkeeping help, content, scheduling), choosing and testing
-   tools, protecting customer and company data (PDPA, to hedge), checking
-   accuracy and avoiding over-reliance, staff training and policies, costs
-   versus benefits, and a simple pilot plan.
+1. **Handling Difficult Customers and Online Reviews: Keeping Your Reputation Intact in Malaysia**
+   — Staying calm with angry customers, de-escalation scripts, when to refund
+   or refuse, responding to public negative reviews and fake reviews (to
+   hedge platform rules), protecting staff from abuse, recording incidents,
+   turning complaints into improvements, and when to seek legal advice.
 
-2. **Delegating and Avoiding Owner Burnout: Running the Business Without Running Yourself Into the Ground**
-   — Recognising burnout, working out what only the owner should do,
-   delegating tasks and decisions, documenting routines, hiring or outsourcing
-   help, setting boundaries and time off, delegating with trust and checks,
-   asking for support, and building a business that can run for a week
-   without you.
+2. **Buying an Existing Business in Malaysia: Valuation, Due Diligence, and Taking Over Smoothly**
+   — Why buy instead of start, finding businesses for sale, reading the
+   financials, valuation basics in plain terms, due diligence on contracts,
+   licences, staff, leases and debts (to hedge), asset versus share purchase,
+   negotiating price and payment terms, sale agreements, transition and
+   handover, and warning signs of a bad deal.
