@@ -30468,4 +30468,1308 @@ Perniagaan yang bergantung sepenuhnya kepada anda adalah rapuh, begitu juga anda
       },
     },
   },
+  {
+    slug: "handling-difficult-customers-and-online-reviews-in-malaysia",
+    title: "Handling Difficult Customers and Online Reviews: Keeping Your Reputation Intact in Malaysia",
+    seoTitle: "Handling Difficult Customers and Online Reviews in Malaysia",
+    seoDescription:
+      "How Malaysian SMEs can handle angry customers and bad reviews: stay calm, decide on refunds, reply in public, protect staff and know when to get advice.",
+    coverImage: {
+      file: "difficult-customers-and-online-reviews-cover.webp",
+      mimeType: "image/webp",
+      alt: "A smiling waitress in a striped beanie and green apron talking with a seated customer in a bright, plant-filled restaurant",
+      altTranslations: {
+        zh: "一位戴条纹毛线帽、系绿色围裙的微笑女服务员，在绿意盎然的明亮餐厅里与一位坐着的顾客交谈",
+        ms: "Seorang pelayan wanita bertopi belang dan berapron hijau yang tersenyum berbual dengan pelanggan yang duduk di restoran terang yang penuh tumbuhan",
+      },
+    },
+    contentImages: {
+      phone: {
+        file: "difficult-customers-and-online-reviews-phone.webp",
+        mimeType: "image/webp",
+        alt: "A woman with wavy dark hair looking down at her smartphone while seated in a cafe with wooden windows",
+        altTranslations: {
+          zh: "一位波浪黑发的女士坐在有木窗的咖啡馆里，低头看着手机",
+          ms: "Seorang wanita berambut gelap beralun memandang telefon pintarnya sambil duduk di sebuah kafe bertingkap kayu",
+        },
+        after: "Decide what you will do about a complaint before the next angry customer walks in.",
+        afterTranslations: {
+          zh: "在下一位愤怒的顾客走进来之前，先决定好您将如何处理投诉。",
+          ms: "Putuskan apa yang akan anda lakukan tentang aduan sebelum pelanggan marah yang seterusnya melangkah masuk.",
+        },
+      },
+    },
+    excerpt:
+      "Every business meets an angry customer or an unfair online review sooner or later, and how you respond can matter more than the complaint itself. This guide helps Malaysian SMEs stay calm under pressure, decide when to refund or refuse, reply to public reviews, deal with fake or abusive posts, protect staff, record incidents, and know when to seek legal advice.",
+    body: `Almost every business owner remembers the first time a customer shouted at them across the counter, or the first time they found a harsh one-star review with their shop's name on it. It stings, and in a small business it can feel personal. Yet the way you respond often matters more than the complaint itself, because other customers are watching, whether in the shop or online.
+
+The goal is not to win every argument. It is to treat people fairly, protect your staff, keep your head, and show everyone who reads the exchange that your business takes problems seriously.
+
+This is general information, not legal advice. Consumer rules, platform policies, and the law on online speech change over time, and information in this guide may be out of date. Confirm the current position with the relevant authority, the platform concerned, and a lawyer before you take formal steps such as demanding that a review be removed or threatening legal action.
+
+## 1. Set up before trouble arrives
+
+Decide what you will do about a complaint before the next angry customer walks in. Staff who know the rules can stay calm because they do not have to improvise.
+
+### Write a simple complaints process
+Say who handles complaints, what staff can resolve on the spot, when to call you, and how quickly customers will hear back. Our guide on customer complaints, refunds, and consumer rights explains what customers can expect.
+
+### Set a clear refund and exchange policy
+Put it in writing, display it where customers can see it, and apply it consistently. Make sure that it does not promise less than the law requires. Confirm the current consumer rules with the relevant authority.
+
+### Give staff authority
+Let your team offer a small fix, such as a replacement, a remake, or a modest credit, without waiting for you. Waiting for the owner makes angry customers angrier.
+
+### Train for the hard moments
+Practise a few scenarios with your team, such as a wrong order, a long wait, or a refund request without a receipt. Our guide on training your team explains how to build short practical sessions.
+
+### Make it easy to complain to you
+When customers can reach you privately through a phone number, WhatsApp, or a form, fewer of them will turn to public reviews first.
+
+## 2. Stay calm with an angry customer
+
+### Listen first
+Let the person finish, without interrupting or defending. Many people calm down once they feel heard.
+
+### Acknowledge the feeling
+Simple words such as "I understand that this is frustrating, and I am sorry about it" cost nothing and are not an admission of legal fault. They show that you are on the customer's side of the problem.
+
+### Ask questions and confirm the facts
+Find out what happened, what the customer wants, and what evidence exists, such as a receipt, a photo, or an order number. Repeat it back to make sure that you have understood.
+
+### Offer a clear next step
+Say what you can do now and by when, for example "I will replace this today" or "I will check with the kitchen and message you by five". Then do exactly that.
+
+### Move it away from the audience
+If the conversation is getting loud, invite the customer to a quieter spot, or switch to a private message or phone call.
+
+### Watch your body language and tone
+Keep your voice low, your hands visible, and your face open. Staff will copy the way you handle things.
+
+## 3. Decide when to refund, fix, or refuse
+
+### Start from fairness
+If your product or service was faulty, late, or not as described, a refund or replacement is usually the right and the cheapest answer. The cost of a lost customer and a public argument is often higher than the cost of the item.
+
+### Check the facts and the policy
+Look at what was ordered, what was delivered, and what your policy says. Confirm that the customer's account fits the evidence before you decide.
+
+### Match the remedy to the problem
+Options include an apology, a replacement, a repair, a partial refund, a full refund, or a goodwill credit. Our guide on pricing products and services explains how to keep your margins healthy even with occasional goodwill gestures.
+
+### Be willing to say no, politely
+Some requests are not reasonable, such as refunds for items clearly misused or demands for compensation far beyond the loss. Explain your reason, offer what you can, and avoid insults. A calm no, with an alternative, is better than a grudging yes.
+
+### Know where customers can escalate
+Consumers in Malaysia can take certain disputes to the Tribunal for Consumer Claims, which has a monetary limit on the claims it can hear and time limits for filing. The limits have been revised in the past, so confirm the current rules with the Ministry or the tribunal itself.
+
+### Record what you decide
+Write down the complaint, the decision, and the outcome. Our guide on contracts and terms and our guide on bookkeeping basics explain why good records help in a dispute.
+
+## 4. Reply to public reviews with care
+
+### Read it twice, wait, then reply
+Replying in anger or in the middle of the night makes things worse. Wait until you can respond calmly, ideally within a day or two.
+
+### Say thank you and be specific
+Thank the reviewer for the feedback, even when it is harsh, and address the actual points. Generic copy-and-paste replies look careless.
+
+### Apologise where it is due
+If the criticism is fair, say so, explain what you are doing about it, and invite the person to contact you directly to put things right. Avoid sharing private details of the customer's order or account in public.
+
+### Stay factual where you disagree
+If the review is inaccurate, correct the facts politely and briefly without attacking the person. Remember that your reply is really written for the next hundred readers.
+
+### Take long discussions offline
+Give a phone number or an email address and move to a private conversation. A public argument benefits nobody.
+
+> You will never convince an angry reviewer, but you can show every future customer how you treat people when things go wrong. Write each reply for them.
+
+### Ask happy customers to share their experience
+A steady flow of honest positive reviews makes the occasional bad one far less damaging. Ask politely, and never pay for or fake reviews. Our guide on building customer loyalty and repeat business explains how to turn good service into advocates.
+
+## 5. Deal with fake, abusive, or unfair posts
+
+### Separate the types
+A harsh but real opinion is not the same as a fake review from a competitor, a review from someone who was never a customer, or a post with abusive or discriminatory content. Treat each differently.
+
+### Check your records
+Look for the customer's name, order, booking, or receipt. If no match exists, you may have grounds to report it.
+
+### Use the platform's reporting tools
+Most review platforms and social media sites have ways of reporting content that breaks their rules, such as fake, abusive, or off-topic reviews. Check the platform's current help pages for the process and keep screenshots of the original post, the date, and your report.
+
+### Be careful with threats and public accusations
+Threatening a reviewer, naming and shaming them, or posting their personal details can backfire and may carry legal risk. Online speech, defamation, and communications laws are complicated and continue to change, so take legal advice before demanding removal or threatening action.
+
+### Protect your own conduct
+Never post fake reviews of your own, never attack competitors online, and never offer incentives in exchange for removing a review. Our guide on PDPA compliance explains why customers' personal data should be handled carefully.
+
+### Know when it becomes a bigger problem
+Threats, harassment, extortion, and serious false allegations may need a police report or a lawyer. Keep the evidence and do not respond in the heat of the moment.
+
+## 6. Protect your staff and learn from complaints
+
+### Protect staff from abuse
+Nobody should have to put up with shouting, insults, threats, or harassment from customers. Tell staff that they can step away, call for support, and ask a customer to leave. Our guide on workplace safety and our guide on keeping your best people explain how to support your team.
+
+### Back your people in front of customers
+Take over calmly when needed, and discuss any issues with the staff member afterwards in private. Staff who feel unsupported tend to leave.
+
+### Record incidents
+Note the date, what happened, who was involved, and what you did, especially for serious cases. Keep any messages and, where lawful and appropriate, any footage.
+
+### Look for patterns
+Track the reasons for complaints, such as delays, wrong orders, or unclear pricing. Fixing the cause costs less than handling the same complaint repeatedly.
+
+### Share lessons with the team
+Discuss what happened without blame, and change a process, a script, or a sign. Our guide on managing inventory and stock explains how to reduce stock-outs that often trigger complaints.
+
+### Close the loop with the customer
+After you have fixed something, tell the complainant. A customer who sees action often becomes a loyal one.
+
+## 7. Know when to seek advice
+
+### Signs you need help
+A claim for a large sum, a threat of legal action, a regulator's letter, a serious injury or food safety issue, or repeated harassment all call for professional advice.
+
+### Who can help
+A lawyer can explain your obligations and options, your insurer may need to be told about a claim, and your accountant can help with the financial side. Our guide on business insurance for Malaysian SMEs explains what cover can include, and you should read your policy and ask your insurer.
+
+### Do not admit or deny in writing in the heat of the moment
+For serious matters, speak to your adviser before replying in detail, and keep your replies polite and factual.
+
+### Look after yourself
+Handling conflict is draining. Talk to someone you trust, take breaks, and do not carry every complaint home. Our guide on delegating and avoiding owner burnout explains how to share the load.
+
+If you need a lawyer, an insurance adviser, or a trainer to help your team handle customers, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so that happy customers can find and recommend your business.
+
+## Common mistakes Malaysian SMEs make with complaints and reviews
+
+- **Arguing in public.** A heated reply to a review is read by every future customer, so stay calm, be brief, and move the discussion offline.
+- **Having no policy or authority.** Staff who cannot decide anything send every complaint to the owner and make customers angrier, so write a simple policy and give a small allowance to fix problems.
+- **Ignoring the cause.** Deleting or arguing with complaints without fixing the underlying issue guarantees more of them, so track patterns and change the process.
+
+## Where to start
+
+- **This week:** Write a one-page complaints and refund policy, and decide what staff can fix on the spot.
+- **Next:** Practise two or three difficult scenarios with your team, and agree on a calm script.
+- **Then:** Set up a routine to check and reply to reviews within a day or two, and start asking happy customers for honest feedback.
+- **Every month:** Review complaints for patterns, fix one cause, and thank the staff who handled hard moments well.
+
+Complaints are free feedback from people who cared enough to tell you. Respond calmly and fairly, protect your team, and fix what is broken, and even a bad review can show customers that your business is one worth trusting.`,
+    faqs: [
+      {
+        question: "How should I respond to an angry customer in my shop?",
+        answer:
+          "Listen without interrupting, acknowledge their frustration, confirm the facts, offer a clear next step with a time, and move the conversation to a quieter place if it gets loud. A calm tone and a quick, fair fix settle most complaints.",
+      },
+      {
+        question: "When should I give a refund and when can I refuse?",
+        answer:
+          "Refund or replace when the product or service was faulty, late, or not as described. You can politely refuse unreasonable requests, such as misuse or demands far beyond the loss, if you explain your reason and offer what you can. Make sure your policy does not offer less than the law requires.",
+      },
+      {
+        question: "Should I reply to negative online reviews?",
+        answer:
+          "Usually yes. Wait until you are calm, thank the reviewer, address the specific points, apologise where it is due, correct facts politely, and invite the person to contact you privately. Remember that your reply is really written for future customers.",
+      },
+      {
+        question: "What can I do about fake or abusive reviews?",
+        answer:
+          "Check your records to see whether the reviewer was a real customer, then use the platform's reporting tools and keep screenshots. Avoid threats or public accusations, and take legal advice before demanding removal, since online speech and defamation rules are complicated and change.",
+      },
+      {
+        question: "Can customers take complaints to the Tribunal for Consumer Claims?",
+        answer:
+          "Consumers can bring certain disputes about goods and services to the tribunal, which has a monetary limit and filing time limits that have been revised in the past. Confirm the current rules with the Ministry or the tribunal, and try to settle complaints fairly first.",
+      },
+      {
+        question: "How do I protect my staff from abusive customers?",
+        answer:
+          "Tell staff they may step away, call for support, and ask an abusive customer to leave. Back them up calmly in front of the customer, record serious incidents, and make a police report for threats or harassment. Handle incidents the same way each time, and write the approach down.",
+      },
+      {
+        question: "How can I get more positive reviews?",
+        answer:
+          "Deliver good service, then ask happy customers politely to share their experience through the platforms you use. Never pay for reviews, post fake ones, or reward customers for removing negative reviews.",
+      },
+      {
+        question: "When should I get a lawyer involved in a customer dispute?",
+        answer:
+          "For large claims, threats of legal action, regulator letters, serious injuries or food safety issues, extortion, or serious false allegations. Keep evidence, avoid heated replies, and tell your insurer if a claim could be covered by your policy.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "应对难缠的顾客和网络评价：在马来西亚维护您的声誉",
+        excerpt:
+          "每家企业迟早都会遇到愤怒的顾客或不公平的网络评价，而您如何回应，往往比投诉本身更重要。本指南帮助马来西亚中小企业在压力下保持冷静，决定何时退款或拒绝，回复公开评价，处理虚假或辱骂性的帖文，保护员工，记录事件，并知道何时寻求法律意见。",
+        body: `几乎每位企业主都记得第一次被顾客隔着柜台大声责骂，或是第一次看到带着自己店名的刻薄一星评价。这会很刺痛，在小企业里还会觉得针对个人。然而，您如何回应，往往比投诉本身更重要，因为其他顾客在看着，无论是在店里还是在网上。
+
+目标不是赢得每一场争论。而是公平地对待人，保护您的员工，保持头脑冷静，并让每一位阅读这场交流的人看到，您的企业认真对待问题。
+
+本文仅提供一般信息，并非法律建议。消费者规定、平台政策和网络言论方面的法律会随时间变化，本指南的信息可能已经过时。在采取正式步骤之前，例如要求删除评价或威胁采取法律行动，请向相关主管单位、有关平台和律师确认现行情况。
+
+## 1. 在麻烦来临之前做好准备
+
+在下一位愤怒的顾客走进来之前，先决定好您将如何处理投诉。知道规则的员工可以保持冷静，因为他们不需要临场发挥。
+
+### 写下简单的投诉处理流程
+说明谁负责处理投诉、员工可以当场解决什么、什么时候要找您，以及顾客多快能得到回复。我们关于顾客投诉、退款与消费者权益的指南说明了顾客可以预期什么。
+
+### 设定清楚的退款和换货政策
+把它写成书面，张贴在顾客看得到的地方，并一致地执行。确保它承诺的不少于法律的要求。请向相关主管单位确认现行的消费者规定。
+
+### 给员工权限
+让您的团队可以在不等您的情况下提供小的补救，例如更换、重做或小额的抵用额。等老板来只会让愤怒的顾客更愤怒。
+
+### 为艰难的时刻培训
+与您的团队练习几个情景，例如送错订单、等候太久，或没有收据的退款要求。我们关于培训团队的指南说明了如何建立简短的实用训练。
+
+### 让顾客容易向您投诉
+当顾客可以通过电话号码、WhatsApp 或表格私下联系您时，会有更少的人先转向公开评价。
+
+## 2. 面对愤怒的顾客保持冷静
+
+### 先倾听
+让对方说完，不要打断也不要辩解。许多人一旦觉得被听到，就会冷静下来。
+
+### 承认他们的感受
+简单的话，例如“我理解这令人沮丧，我对此感到抱歉”，不花一分钱，也不是承认法律上的过错。它显示您站在顾客这一边面对问题。
+
+### 提问并确认事实
+了解发生了什么、顾客想要什么，以及有什么证据，例如收据、照片或订单号码。把它复述一遍，确保您理解了。
+
+### 提供清楚的下一步
+说明您现在能做什么以及什么时候做，例如“我今天就为您更换”或“我会向厨房查证并在五点前给您发信息”。然后确切地做到。
+
+### 把事情从观众面前移开
+如果谈话变得大声，请邀请顾客到较安静的地方，或改用私信或电话。
+
+### 留意您的肢体语言和语气
+保持声音低沉、双手可见、神情开放。员工会模仿您处理事情的方式。
+
+## 3. 决定何时退款、补救或拒绝
+
+### 从公平出发
+如果您的产品或服务有缺陷、迟到或与描述不符，退款或更换通常是正确且最便宜的答案。失去一位顾客和一场公开争执的代价，往往高于那件物品的成本。
+
+### 查核事实和政策
+查看订购了什么、送来了什么，以及您的政策怎么说。在决定之前，确认顾客的说法与证据相符。
+
+### 让补救与问题相配
+选项包括道歉、更换、维修、部分退款、全额退款或善意抵用额。我们关于产品与服务定价的指南说明了即使偶尔做出善意之举，也能保持健康的利润率。
+
+### 愿意礼貌地说不
+有些要求并不合理，例如对明显被误用的物品退款，或要求远超损失的赔偿。解释您的理由，提供您能提供的，并避免侮辱。带着替代方案的平静拒绝，胜过勉强的同意。
+
+### 知道顾客可以向哪里升级
+马来西亚的消费者可以把某些纠纷提交给消费者索赔审裁处，它能受理的索赔有金额上限，也有提出申请的时限。这些限额过去曾经修订，所以请向部门或审裁处确认现行规定。
+
+### 记录您的决定
+写下投诉、决定和结果。我们关于合约与条款的指南和关于簿记基础的指南说明了为什么良好的记录在纠纷中有帮助。
+
+## 4. 谨慎地回复公开评价
+
+### 读两遍，等一等，再回复
+在愤怒中或半夜里回复只会让事情更糟。等到您能冷静回应时再说，最好在一两天内。
+
+### 说谢谢并具体
+感谢评论者的反馈，即使很严厉，并针对实际的要点回应。千篇一律的复制粘贴式回复显得马虎。
+
+### 该道歉时就道歉
+如果批评是公道的，就说出来，解释您正在为此做什么，并邀请对方直接联系您把事情处理好。避免在公开场合分享顾客订单或账户的私人细节。
+
+### 不同意时保持就事论事
+如果评价不准确，请礼貌而简短地更正事实，不要攻击对方。请记住，您的回复其实是写给之后的一百位读者看的。
+
+### 把长时间的讨论移到线下
+提供电话号码或电邮地址，转到私下的交谈。公开的争吵对谁都没有好处。
+
+> 您永远无法说服一位愤怒的评论者，但您可以向每一位未来的顾客展示，当事情出错时您是如何对待人的。请为他们写下每一则回复。
+
+### 邀请满意的顾客分享他们的体验
+源源不断的真诚好评，会让偶尔出现的差评损害小得多。请礼貌地询问，绝不要付费购买或伪造评价。我们关于建立顾客忠诚度与回头客的指南说明了如何把良好的服务变成拥护者。
+
+## 5. 应对虚假、辱骂性或不公平的帖文
+
+### 区分类型
+严厉但真实的意见，不同于来自竞争对手的虚假评价、从未成为顾客的人所写的评价，或带有辱骂或歧视内容的帖文。请分别对待。
+
+### 查核您的记录
+查找顾客的姓名、订单、预订或收据。如果找不到匹配的记录，您可能有理由举报。
+
+### 使用平台的举报工具
+大多数评价平台和社交媒体网站都有办法举报违反其规则的内容，例如虚假、辱骂性或离题的评价。请查看平台目前的帮助页面了解程序，并保留原始帖文、日期和您举报的截图。
+
+### 对威胁和公开指控要小心
+威胁评论者、公开点名羞辱或发布他们的个人资料，可能适得其反，并可能带有法律风险。网络言论、诽谤和通讯方面的法律很复杂，且仍在变化，所以请在要求删除或威胁采取行动之前征求法律意见。
+
+### 保护您自己的行为
+绝不要自己发布虚假评价，绝不要在网上攻击竞争对手，也绝不要以删除评价为条件提供好处。我们关于个人资料保护法令合规的指南说明了为什么应谨慎处理顾客的个人资料。
+
+### 知道何时它变成更大的问题
+威胁、骚扰、勒索和严重的虚假指控，可能需要报警或请律师。保留证据，不要在气头上回应。
+
+## 6. 保护您的员工并从投诉中学习
+
+### 保护员工免受辱骂
+没有人应该忍受顾客的叫嚣、侮辱、威胁或骚扰。告诉员工他们可以走开、请求支援，并请顾客离开。我们关于工作场所安全的指南和关于留住最好员工的指南说明了如何支持您的团队。
+
+### 在顾客面前支持您的人
+需要时冷静地接手，事后私下与该员工讨论任何问题。感到得不到支持的员工往往会离开。
+
+### 记录事件
+记下日期、发生了什么、涉及谁，以及您做了什么，尤其是严重的案件。保留任何信息，并在合法和适当的情况下保留任何影像。
+
+### 寻找规律
+追踪投诉的原因，例如延误、送错订单或价格不清。解决原因比反复处理同一个投诉成本更低。
+
+### 与团队分享经验教训
+不带责备地讨论发生了什么，并改变一个流程、一套话术或一块告示牌。我们关于库存管理的指南说明了如何减少常引发投诉的缺货。
+
+### 与顾客结束这件事
+在您解决了某件事之后，告诉投诉者。看到行动的顾客往往会变成忠诚的顾客。
+
+## 7. 知道何时寻求意见
+
+### 您需要协助的迹象
+巨额的索赔、法律行动的威胁、监管机构的来函、严重的受伤或食品安全问题，或反复的骚扰，都需要专业意见。
+
+### 谁可以帮忙
+律师可以说明您的义务和选择，您的保险公司可能需要被告知索赔，而您的会计师可以协助财务方面。我们关于马来西亚中小企业商业保险的指南说明了保障可以包括什么，您应该阅读您的保单并询问保险公司。
+
+### 不要在气头上以书面承认或否认
+对于严重的事情，在详细回复之前先与您的顾问谈谈，并让您的回复保持礼貌和就事论事。
+
+### 照顾好自己
+处理冲突很耗神。与您信任的人谈谈，休息一下，不要把每一个投诉都带回家。我们关于授权与避免业主过劳的指南说明了如何分担重担。
+
+如果您需要律师、保险顾问或培训员协助您的团队应对顾客，可以[浏览目录](/zh)寻找您附近的专业人士，并[创建免费商家列表](/zh/signup)，让满意的顾客能找到并推荐您的企业。
+
+## 马来西亚中小企业在投诉和评价方面的常见错误
+
+- **在公开场合争论。** 对评价的激烈回复会被每一位未来的顾客读到，所以请保持冷静、简短，并把讨论移到线下。
+- **没有政策或权限。** 无权决定任何事的员工把每个投诉都交给老板，使顾客更愤怒，所以请写一份简单的政策，并给予小额的补救权限。
+- **忽视原因。** 删除投诉或与投诉争论而不解决根本问题，保证会有更多投诉，所以请追踪规律并改变流程。
+
+## 从哪里开始
+
+- **本周：** 写一份一页纸的投诉和退款政策，并决定员工可以当场解决什么。
+- **接下来：** 与您的团队练习两三个困难的情景，并商定一套冷静的话术。
+- **然后：** 建立在一两天内查看并回复评价的例行工作，并开始请满意的顾客提供真诚的反馈。
+- **每个月：** 检视投诉的规律，解决一个原因，并感谢妥善处理艰难时刻的员工。
+
+投诉是那些在乎到愿意告诉您的人给予的免费反馈。冷静而公平地回应，保护您的团队，并修补坏掉的地方，即使是一则差评，也能向顾客表明您的企业值得信赖。`,
+        faqs: [
+          {
+            question: "我应该如何回应店里愤怒的顾客？",
+            answer:
+              "不打断地倾听，承认他们的沮丧，确认事实，提供带时间的清楚下一步，并在声音变大时把对话移到较安静的地方。冷静的语气和快速公平的补救能平息大多数投诉。",
+          },
+          {
+            question: "我何时应该退款，何时可以拒绝？",
+            answer:
+              "当产品或服务有缺陷、迟到或与描述不符时，请退款或更换。对于不合理的要求，例如误用或远超损失的要求，只要您解释理由并提供您能提供的，就可以礼貌地拒绝。请确保您的政策提供的不少于法律的要求。",
+          },
+          {
+            question: "我应该回复负面的网络评价吗？",
+            answer:
+              "通常应该。等到您冷静下来，感谢评论者，针对具体要点回应，该道歉时道歉，礼貌地更正事实，并邀请对方私下联系您。请记住，您的回复其实是写给未来的顾客看的。",
+          },
+          {
+            question: "对于虚假或辱骂性的评价我能做什么？",
+            answer:
+              "查核您的记录，看评论者是否是真正的顾客，然后使用平台的举报工具并保留截图。避免威胁或公开指控，并在要求删除之前征求法律意见，因为网络言论和诽谤规定很复杂且会变化。",
+          },
+          {
+            question: "顾客可以向消费者索赔审裁处提出投诉吗？",
+            answer:
+              "消费者可以把某些关于商品和服务的纠纷提交给审裁处，它有金额上限和提出申请的时限，这些过去曾经修订。请向部门或审裁处确认现行规定，并先尝试公平地解决投诉。",
+          },
+          {
+            question: "我如何保护员工免受辱骂性顾客的伤害？",
+            answer:
+              "告诉员工他们可以走开、请求支援，并请辱骂的顾客离开。在顾客面前冷静地支持他们，记录严重的事件，并对威胁或骚扰报警。您的做法应该一致，所以请把它写下来。",
+          },
+          {
+            question: "我如何获得更多好评？",
+            answer:
+              "提供良好的服务，然后礼貌地请满意的顾客通过您使用的平台分享他们的体验。绝不要付费购买评价、发布虚假评价，或奖励顾客删除负面评价。",
+          },
+          {
+            question: "我何时应该让律师介入顾客纠纷？",
+            answer:
+              "对于巨额索赔、法律行动的威胁、监管机构的来函、严重的受伤或食品安全问题、勒索，或严重的虚假指控。保留证据，避免气头上的回复，并在索赔可能属于您保单的保障范围时通知您的保险公司。",
+          },
+        ],
+      },
+      ms: {
+        title: "Mengendalikan Pelanggan Sukar dan Ulasan Dalam Talian: Mengekalkan Reputasi Anda di Malaysia",
+        excerpt:
+          "Setiap perniagaan lambat laun akan bertemu pelanggan yang marah atau ulasan dalam talian yang tidak adil, dan cara anda bertindak balas selalunya lebih penting daripada aduan itu sendiri. Panduan ini membantu PKS Malaysia kekal tenang di bawah tekanan, memutuskan bila hendak membayar balik atau menolak, membalas ulasan awam, menangani hantaran palsu atau kesat, melindungi pekerja, merekod insiden, dan tahu bila hendak mendapatkan nasihat undang-undang.",
+        body: `Hampir setiap pemilik perniagaan mengingati kali pertama pelanggan menjerit kepada mereka di seberang kaunter, atau kali pertama mereka menjumpai ulasan satu bintang yang keras dengan nama kedai mereka. Ia menyakitkan, dan dalam perniagaan kecil ia boleh terasa peribadi. Namun cara anda bertindak balas selalunya lebih penting daripada aduan itu sendiri, kerana pelanggan lain sedang memerhati, sama ada di kedai atau dalam talian.
+
+Matlamatnya bukan untuk memenangi setiap pertengkaran. Ia ialah melayan orang dengan adil, melindungi pekerja anda, kekal tenang, dan menunjukkan kepada semua orang yang membaca pertukaran itu bahawa perniagaan anda mengambil serius masalah.
+
+Ini maklumat umum, bukan nasihat undang-undang. Peraturan pengguna, dasar platform dan undang-undang tentang ucapan dalam talian berubah dari semasa ke semasa, dan maklumat dalam panduan ini mungkin sudah lapuk. Sahkan kedudukan semasa dengan pihak berkuasa berkaitan, platform yang terlibat dan peguam sebelum anda mengambil langkah rasmi seperti menuntut ulasan dibuang atau mengugut tindakan undang-undang.
+
+## 1. Bersedia sebelum masalah tiba
+
+Putuskan apa yang akan anda lakukan tentang aduan sebelum pelanggan marah yang seterusnya melangkah masuk. Pekerja yang tahu peraturannya boleh kekal tenang kerana mereka tidak perlu berimprovisasi.
+
+### Tulis proses aduan yang mudah
+Nyatakan siapa mengendalikan aduan, apa yang boleh diselesaikan oleh pekerja serta-merta, bila hendak menghubungi anda, dan betapa cepat pelanggan akan mendapat jawapan. Panduan kami tentang aduan pelanggan, bayaran balik dan hak pengguna menerangkan apa yang boleh dijangka oleh pelanggan.
+
+### Tetapkan dasar bayaran balik dan penukaran yang jelas
+Tuliskan, paparkannya di tempat yang boleh dilihat oleh pelanggan, dan laksanakannya secara konsisten. Pastikan ia tidak menjanjikan kurang daripada yang dikehendaki undang-undang. Sahkan peraturan pengguna semasa dengan pihak berkuasa berkaitan.
+
+### Beri pekerja kuasa
+Biarkan pasukan anda menawarkan pembaikan kecil, seperti penggantian, buat semula atau kredit sederhana, tanpa menunggu anda. Menunggu pemilik menjadikan pelanggan marah lebih marah.
+
+### Latih untuk saat-saat sukar
+Berlatih beberapa senario dengan pasukan anda, seperti pesanan salah, tunggu lama atau permintaan bayaran balik tanpa resit. Panduan kami tentang melatih pasukan anda menerangkan cara membina sesi praktikal yang ringkas.
+
+### Permudahkan pelanggan mengadu kepada anda
+Apabila pelanggan boleh menghubungi anda secara peribadi melalui nombor telefon, WhatsApp atau borang, lebih sedikit daripada mereka akan beralih kepada ulasan awam dahulu.
+
+## 2. Kekal tenang dengan pelanggan yang marah
+
+### Dengar dahulu
+Biarkan orang itu selesai, tanpa mencelah atau mempertahankan diri. Ramai orang menjadi tenang sebaik sahaja mereka merasakan mereka didengari.
+
+### Akui perasaan itu
+Kata-kata mudah seperti "Saya faham ini mengecewakan, dan saya minta maaf" tidak menelan kos dan bukan pengakuan kesalahan undang-undang. Ia menunjukkan anda berada di pihak pelanggan terhadap masalah itu.
+
+### Tanya soalan dan sahkan fakta
+Ketahui apa yang berlaku, apa yang pelanggan mahu, dan apa bukti yang ada, seperti resit, gambar atau nombor pesanan. Ulang semula untuk memastikan anda faham.
+
+### Tawarkan langkah seterusnya yang jelas
+Nyatakan apa yang boleh anda lakukan sekarang dan menjelang bila, contohnya "Saya akan menggantikan ini hari ini" atau "Saya akan menyemak dengan dapur dan menghantar mesej kepada anda menjelang pukul lima". Kemudian lakukan dengan tepat.
+
+### Alihkan daripada khalayak
+Jika perbualan menjadi kuat, jemput pelanggan ke tempat yang lebih tenang, atau beralih kepada mesej peribadi atau panggilan telefon.
+
+### Perhatikan bahasa badan dan nada anda
+Pastikan suara rendah, tangan kelihatan dan wajah terbuka. Pekerja akan meniru cara anda mengendalikan perkara.
+
+## 3. Putuskan bila hendak bayar balik, baiki atau menolak
+
+### Mulakan daripada keadilan
+Jika produk atau perkhidmatan anda rosak, lewat atau tidak seperti yang diterangkan, bayaran balik atau penggantian biasanya jawapan yang betul dan paling murah. Kos kehilangan pelanggan dan pertengkaran awam selalunya lebih tinggi daripada kos barang itu.
+
+### Semak fakta dan dasar
+Lihat apa yang dipesan, apa yang dihantar dan apa yang dinyatakan oleh dasar anda. Pastikan penerangan pelanggan sepadan dengan bukti sebelum anda memutuskan.
+
+### Padankan pemulihan dengan masalah
+Pilihan termasuk permohonan maaf, penggantian, pembaikan, bayaran balik separa, bayaran balik penuh atau kredit muhibah. Panduan kami tentang penetapan harga produk dan perkhidmatan menerangkan cara mengekalkan margin yang sihat walaupun dengan isyarat muhibah sekali-sekala.
+
+### Bersedia berkata tidak, dengan sopan
+Sesetengah permintaan tidak munasabah, seperti bayaran balik untuk barang yang jelas disalah guna atau tuntutan pampasan jauh melebihi kerugian. Terangkan sebab anda, tawarkan apa yang boleh, dan elakkan menghina. Penolakan yang tenang, dengan alternatif, lebih baik daripada persetujuan yang berat hati.
+
+### Ketahui di mana pelanggan boleh membawa lebih jauh
+Pengguna di Malaysia boleh membawa pertikaian tertentu kepada Tribunal Tuntutan Pengguna, yang mempunyai had wang bagi tuntutan yang boleh didengarinya dan had masa untuk memfailkan. Had itu pernah disemak pada masa lalu, jadi sahkan peraturan semasa dengan Kementerian atau tribunal itu sendiri.
+
+### Rekodkan apa yang anda putuskan
+Tuliskan aduan, keputusan dan hasilnya. Panduan kami tentang kontrak dan terma dan panduan kami tentang asas simpan kira menerangkan mengapa rekod yang baik membantu dalam pertikaian.
+
+## 4. Balas ulasan awam dengan berhati-hati
+
+### Baca dua kali, tunggu, kemudian balas
+Membalas dalam kemarahan atau pada tengah malam memburukkan keadaan. Tunggu sehingga anda boleh bertindak balas dengan tenang, sebaik-baiknya dalam masa sehari atau dua.
+
+### Ucap terima kasih dan jadilah khusus
+Berterima kasih kepada pengulas atas maklum balas, walaupun keras, dan tangani perkara sebenar. Balasan umum salin-tampal kelihatan cuai.
+
+### Minta maaf di mana wajar
+Jika kritikan itu adil, katakannya, terangkan apa yang anda lakukan tentangnya, dan jemput orang itu menghubungi anda secara terus untuk membetulkan keadaan. Elakkan berkongsi butiran peribadi pesanan atau akaun pelanggan di khalayak.
+
+### Kekal berfakta jika tidak bersetuju
+Jika ulasan itu tidak tepat, betulkan fakta dengan sopan dan ringkas tanpa menyerang orang itu. Ingat bahawa balasan anda sebenarnya ditulis untuk seratus pembaca seterusnya.
+
+### Bawa perbincangan panjang ke luar talian
+Berikan nombor telefon atau alamat e-mel dan beralih kepada perbualan peribadi. Pertengkaran awam tidak menguntungkan sesiapa.
+
+> Anda tidak akan dapat meyakinkan pengulas yang marah, tetapi anda boleh menunjukkan kepada setiap pelanggan masa depan bagaimana anda melayan orang apabila keadaan tidak menjadi. Tulis setiap balasan untuk mereka.
+
+### Minta pelanggan yang gembira berkongsi pengalaman mereka
+Aliran ulasan positif yang jujur yang berterusan menjadikan ulasan buruk sekali-sekala jauh kurang merosakkan. Minta dengan sopan, dan jangan sekali-kali membayar atau memalsukan ulasan. Panduan kami tentang membina kesetiaan pelanggan dan perniagaan berulang menerangkan cara menukar perkhidmatan baik kepada penyokong.
+
+## 5. Tangani hantaran palsu, kesat atau tidak adil
+
+### Asingkan jenisnya
+Pendapat keras tetapi benar tidak sama dengan ulasan palsu daripada pesaing, ulasan daripada orang yang tidak pernah menjadi pelanggan, atau hantaran dengan kandungan kesat atau diskriminasi. Layan setiap satu secara berbeza.
+
+### Semak rekod anda
+Cari nama pelanggan, pesanan, tempahan atau resit. Jika tiada padanan wujud, anda mungkin mempunyai alasan untuk melaporkannya.
+
+### Gunakan alat pelaporan platform
+Kebanyakan platform ulasan dan laman media sosial mempunyai cara melaporkan kandungan yang melanggar peraturan mereka, seperti ulasan palsu, kesat atau di luar topik. Semak halaman bantuan semasa platform untuk prosesnya dan simpan tangkapan skrin hantaran asal, tarikh dan laporan anda.
+
+### Berhati-hati dengan ugutan dan tuduhan awam
+Mengugut pengulas, mendedahkan dan memalukan mereka atau menyiarkan butiran peribadi mereka boleh memakan diri dan mungkin mempunyai risiko undang-undang. Undang-undang ucapan dalam talian, fitnah dan komunikasi adalah rumit dan terus berubah, jadi dapatkan nasihat undang-undang sebelum menuntut pembuangan atau mengugut tindakan.
+
+### Lindungi kelakuan anda sendiri
+Jangan sekali-kali menyiarkan ulasan palsu sendiri, jangan sekali-kali menyerang pesaing dalam talian, dan jangan sekali-kali menawarkan insentif sebagai pertukaran untuk membuang ulasan. Panduan kami tentang pematuhan PDPA menerangkan mengapa data peribadi pelanggan patut dikendalikan dengan berhati-hati.
+
+### Ketahui bila ia menjadi masalah lebih besar
+Ugutan, gangguan, peras ugut dan dakwaan palsu yang serius mungkin memerlukan laporan polis atau peguam. Simpan bukti dan jangan bertindak balas dalam kepanasan saat itu.
+
+## 6. Lindungi pekerja anda dan belajar daripada aduan
+
+### Lindungi pekerja daripada kekasaran
+Tiada sesiapa patut bersabar dengan jeritan, hinaan, ugutan atau gangguan daripada pelanggan. Beritahu pekerja bahawa mereka boleh beredar, memanggil bantuan dan meminta pelanggan pergi. Panduan kami tentang keselamatan tempat kerja dan panduan kami tentang mengekalkan orang terbaik anda menerangkan cara menyokong pasukan anda.
+
+### Sokong orang anda di hadapan pelanggan
+Ambil alih dengan tenang apabila perlu, dan bincang sebarang isu dengan pekerja itu selepas itu secara peribadi. Pekerja yang berasa tidak disokong cenderung pergi.
+
+### Rekodkan insiden
+Catat tarikh, apa yang berlaku, siapa yang terlibat dan apa yang anda lakukan, terutamanya untuk kes serius. Simpan sebarang mesej dan, jika sah dan sesuai, sebarang rakaman.
+
+### Cari corak
+Jejak sebab aduan, seperti kelewatan, pesanan salah atau harga yang tidak jelas. Membaiki puncanya menelan kos lebih rendah daripada mengendalikan aduan yang sama berulang kali.
+
+### Kongsi pengajaran dengan pasukan
+Bincang apa yang berlaku tanpa menyalahkan, dan ubah proses, skrip atau papan tanda. Panduan kami tentang pengurusan inventori menerangkan cara mengurangkan kehabisan stok yang sering mencetuskan aduan.
+
+### Tutup gelung dengan pelanggan
+Selepas anda membaiki sesuatu, beritahu pengadu. Pelanggan yang melihat tindakan selalunya menjadi pelanggan setia.
+
+## 7. Ketahui bila hendak mendapatkan nasihat
+
+### Tanda anda memerlukan bantuan
+Tuntutan jumlah besar, ugutan tindakan undang-undang, surat daripada pengawal selia, kecederaan serius atau isu keselamatan makanan, atau gangguan berulang semuanya memerlukan nasihat profesional.
+
+### Siapa yang boleh membantu
+Peguam boleh menerangkan obligasi dan pilihan anda, penanggung insurans anda mungkin perlu diberitahu tentang tuntutan, dan akauntan anda boleh membantu sebelah kewangan. Panduan kami tentang insurans perniagaan untuk PKS Malaysia menerangkan apa yang boleh disertakan dalam perlindungan, dan anda patut membaca polisi anda dan bertanya kepada penanggung insurans.
+
+### Jangan mengaku atau menafikan secara bertulis dalam kepanasan saat itu
+Untuk perkara serius, berbincang dengan penasihat anda sebelum membalas dengan terperinci, dan pastikan balasan anda sopan dan berfakta.
+
+### Jaga diri anda
+Mengendalikan konflik meletihkan. Bercakap dengan seseorang yang anda percayai, ambil rehat, dan jangan bawa setiap aduan pulang. Panduan kami tentang mendelegasi dan mengelak keletihan pemilik menerangkan cara berkongsi beban.
+
+Jika anda memerlukan peguam, penasihat insurans atau jurulatih untuk membantu pasukan anda mengendalikan pelanggan, anda boleh [menyemak imbas direktori](/ms) untuk profesional berhampiran anda, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan yang gembira dapat menemui dan mengesyorkan perniagaan anda.
+
+## Kesilapan lazim PKS Malaysia dengan aduan dan ulasan
+
+- **Bertengkar di khalayak.** Balasan panas kepada ulasan dibaca oleh setiap pelanggan masa depan, jadi kekal tenang, ringkas dan alihkan perbincangan ke luar talian.
+- **Tiada dasar atau kuasa.** Pekerja yang tidak boleh memutuskan apa-apa menghantar setiap aduan kepada pemilik dan menjadikan pelanggan lebih marah, jadi tulis dasar mudah dan beri peruntukan kecil untuk membaiki masalah.
+- **Mengabaikan punca.** Memadam atau bertengkar dengan aduan tanpa membaiki isu asas menjamin lebih banyak aduan, jadi jejak corak dan ubah proses.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Tulis dasar aduan dan bayaran balik satu muka surat, dan putuskan apa yang boleh dibaiki oleh pekerja serta-merta.
+- **Seterusnya:** Berlatih dua atau tiga senario sukar dengan pasukan anda, dan persetujui skrip yang tenang.
+- **Kemudian:** Sediakan rutin untuk menyemak dan membalas ulasan dalam masa sehari atau dua, dan mula meminta pelanggan yang gembira untuk maklum balas yang jujur.
+- **Setiap bulan:** Semak aduan untuk corak, baiki satu punca, dan berterima kasih kepada pekerja yang mengendalikan saat sukar dengan baik.
+
+Aduan ialah maklum balas percuma daripada orang yang cukup peduli untuk memberitahu anda. Bertindak balas dengan tenang dan adil, lindungi pasukan anda, dan baiki apa yang rosak, dan walaupun ulasan buruk boleh menunjukkan kepada pelanggan bahawa perniagaan anda patut dipercayai.`,
+        faqs: [
+          {
+            question: "Bagaimanakah saya patut bertindak balas terhadap pelanggan yang marah di kedai saya?",
+            answer:
+              "Dengar tanpa mencelah, akui kekecewaan mereka, sahkan fakta, tawarkan langkah seterusnya yang jelas dengan masa, dan alihkan perbualan ke tempat yang lebih tenang jika ia menjadi kuat. Nada yang tenang dan pembaikan yang pantas dan adil menyelesaikan kebanyakan aduan.",
+          },
+          {
+            question: "Bilakah saya patut memberi bayaran balik dan bilakah saya boleh menolak?",
+            answer:
+              "Bayar balik atau gantikan apabila produk atau perkhidmatan rosak, lewat atau tidak seperti yang diterangkan. Anda boleh menolak permintaan yang tidak munasabah dengan sopan, seperti salah guna atau tuntutan jauh melebihi kerugian, jika anda menerangkan sebab dan menawarkan apa yang boleh. Pastikan dasar anda tidak menawarkan kurang daripada yang dikehendaki undang-undang.",
+          },
+          {
+            question: "Patutkah saya membalas ulasan negatif dalam talian?",
+            answer:
+              "Biasanya ya. Tunggu sehingga anda tenang, berterima kasih kepada pengulas, tangani perkara khusus, minta maaf di mana wajar, betulkan fakta dengan sopan, dan jemput orang itu menghubungi anda secara peribadi. Ingat bahawa balasan anda sebenarnya ditulis untuk pelanggan masa depan.",
+          },
+          {
+            question: "Apakah yang boleh saya lakukan tentang ulasan palsu atau kesat?",
+            answer:
+              "Semak rekod anda untuk melihat sama ada pengulas itu pelanggan sebenar, kemudian gunakan alat pelaporan platform dan simpan tangkapan skrin. Elakkan ugutan atau tuduhan awam, dan dapatkan nasihat undang-undang sebelum menuntut pembuangan, kerana peraturan ucapan dalam talian dan fitnah adalah rumit dan berubah.",
+          },
+          {
+            question: "Bolehkah pelanggan membawa aduan kepada Tribunal Tuntutan Pengguna?",
+            answer:
+              "Pengguna boleh membawa pertikaian tertentu tentang barangan dan perkhidmatan kepada tribunal, yang mempunyai had wang dan had masa memfailkan yang pernah disemak. Sahkan peraturan semasa dengan Kementerian atau tribunal, dan cuba selesaikan aduan dengan adil terlebih dahulu.",
+          },
+          {
+            question: "Bagaimanakah saya melindungi pekerja saya daripada pelanggan yang kesat?",
+            answer:
+              "Beritahu pekerja mereka boleh beredar, memanggil bantuan dan meminta pelanggan kesat pergi. Sokong mereka dengan tenang di hadapan pelanggan, rekodkan insiden serius, dan buat laporan polis untuk ugutan atau gangguan. Pendekatan anda patut konsisten, jadi tuliskannya.",
+          },
+          {
+            question: "Bagaimanakah saya mendapat lebih banyak ulasan positif?",
+            answer:
+              "Beri perkhidmatan yang baik, kemudian minta pelanggan yang gembira dengan sopan untuk berkongsi pengalaman mereka melalui platform yang anda gunakan. Jangan sekali-kali membayar untuk ulasan, menyiarkan yang palsu, atau memberi ganjaran kepada pelanggan kerana membuang ulasan negatif.",
+          },
+          {
+            question: "Bilakah saya patut melibatkan peguam dalam pertikaian pelanggan?",
+            answer:
+              "Untuk tuntutan besar, ugutan tindakan undang-undang, surat pengawal selia, kecederaan serius atau isu keselamatan makanan, peras ugut, atau dakwaan palsu yang serius. Simpan bukti, elakkan balasan panas, dan beritahu penanggung insurans anda jika tuntutan mungkin dilindungi oleh polisi anda.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "buying-an-existing-business-in-malaysia",
+    title: "Buying an Existing Business in Malaysia: Valuation, Due Diligence, and Taking Over Smoothly",
+    seoTitle: "Buying an Existing Business in Malaysia: A Practical Guide",
+    seoDescription:
+      "How to buy an existing Malaysian business: reading financials, valuation basics, due diligence, share vs asset deals, negotiating and a smooth handover.",
+    coverImage: {
+      file: "buying-an-existing-business-cover.webp",
+      mimeType: "image/webp",
+      alt: "A smiling woman in a white shirt and black apron taking notes on a clipboard inside a shop",
+      altTranslations: {
+        zh: "一位身穿白衬衫、系黑色围裙的微笑女士在店里用写字板做笔记",
+        ms: "Seorang wanita berbaju putih dan berapron hitam yang tersenyum menulis nota pada papan klip di dalam sebuah kedai",
+      },
+    },
+    contentImages: {
+      documents: {
+        file: "buying-an-existing-business-documents.webp",
+        mimeType: "image/webp",
+        alt: "A woman in a white blouse and a man in glasses looking down at documents in a binder together",
+        altTranslations: {
+          zh: "一位身穿白色上衣的女士和一位戴眼镜的男士一起低头查看文件夹里的文件",
+          ms: "Seorang wanita berblaus putih dan seorang lelaki berkaca mata bersama-sama memandang dokumen dalam fail",
+        },
+        after: "Ask why the owner is selling before you ask what the business is worth.",
+        afterTranslations: {
+          zh: "在询问这家企业值多少钱之前，先问问老板为什么要卖。",
+          ms: "Tanya mengapa pemilik menjual sebelum anda bertanya berapa nilai perniagaan itu.",
+        },
+      },
+    },
+    excerpt:
+      "Buying a business that already has customers, staff, and a track record can be faster and less risky than starting from nothing, but only if you check what you are really buying. This guide helps Malaysian buyers find businesses for sale, read the financials, understand valuation, carry out due diligence, compare share and asset purchases, negotiate, and take over smoothly.",
+    body: `Starting a business from scratch means building customers, systems, and a reputation one step at a time. Buying an existing business can skip some of that: the customers are already there, the staff are trained, the supplier relationships exist, and you can see how the business has performed. For many Malaysian buyers, that makes it an attractive way in.
+
+But buying a business is also easy to get wrong. You are paying for a story about the future, based on records from the past, told by a person who knows far more than you do. The buyers who do well are those who ask hard questions, check the facts, and take proper advice before they sign.
+
+This is general information, not legal, tax, or financial advice. Company law, stamp duty, tax treatment, licensing, and employment rules change over time, and information in this guide may be out of date. Confirm the current requirements with a lawyer, your accountant, the Companies Commission of Malaysia (SSM), and the relevant authorities before you commit.
+
+## 1. Decide whether buying is right for you
+
+Ask why the owner is selling before you ask what the business is worth. The answer shapes every other question you will ask.
+
+### Why buy instead of start
+A going concern can offer existing customers, revenue history, staff, equipment, and a location. That can shorten the time to earning an income, and lenders may find a proven business easier to assess than a plan. Our guide on writing a business plan explains how to test your own idea first.
+
+### Understand the real reasons for selling
+Common honest reasons include retirement, relocation, health, or a change of direction. Less comfortable reasons include falling sales, a lease that is about to become expensive, a new competitor, or problems the owner does not want to mention.
+
+### Be clear about what you want
+Decide the type of business, size, location, budget, and how involved you want to be. A clear brief stops you being drawn to any business that happens to be for sale. Our guide on managing cash flow explains why the money you keep in reserve matters as much as the price you pay.
+
+### Know your own limits
+Be honest about your skills, experience, and finances. Buying a restaurant when you have never run one is a very different risk from buying a business in a field you already know.
+
+### Get your team together early
+A lawyer, an accountant, and possibly an industry adviser should be involved before you sign anything, not afterwards.
+
+## 2. Find businesses for sale and make first contact
+
+### Where to look
+Business brokers, industry associations, online listings, suppliers, landlords, accountants, and word of mouth all lead to opportunities. Some of the best deals are never advertised, so tell people in your network what you are looking for.
+
+### Treat early information as confidential
+Sellers often ask you to sign a confidentiality agreement before sharing details. This is normal, but read it, and make sure that it is fair and that you can still consult your advisers.
+
+### Start with simple questions
+Ask for a basic profile: what the business does, how long it has operated, how many staff it has, why it is for sale, and a summary of recent results. Compare several businesses before you go deep on one.
+
+### Visit as a customer first
+Observe the business at different times of day. Watch how busy it is, how staff behave, and what customers say, before you reveal your interest.
+
+### Be wary of pressure
+A seller who insists that you decide quickly, discourages you from using advisers, or refuses to show records is a warning sign. Our guide on contracts and terms explains how to slow down and read before you sign.
+
+## 3. Read the financials and understand the numbers
+
+### Ask for several years of records
+Request financial statements, management accounts, sales records, bank statements, tax filings, and a list of assets and liabilities. Several years show trends better than one good year. Our guide on bookkeeping and accounting basics explains what good records look like.
+
+### Check that the numbers are real
+Compare the owner's figures with bank statements, tax submissions, supplier invoices, and the cash that physically passes through the business. Cash businesses need extra care, because unrecorded sales or expenses make the numbers unreliable.
+
+### Understand true profit
+Adjust for items such as the owner's salary, one-off costs, personal expenses run through the business, and below-market rent paid to a related party. What would the business earn if you ran it, paid yourself a fair wage, and paid market rent?
+
+### Look at the trend and the mix
+Are sales rising, flat, or falling? Which customers, products, and months matter most? A business that depends on one big customer or one busy month is riskier.
+
+### Check cash flow, not just profit
+Look at how quickly customers pay, how much stock is needed, when suppliers must be paid, and what debts and commitments fall due. Our guide on collecting late payments and our guide on managing inventory and stock explain two common drains on cash.
+
+### Ask your accountant to review it
+An independent review can spot weak records, unusual items, and tax risks that you may miss. Our guide on handling a tax audit explains why tidy tax records matter to the buyer as well.
+
+## 4. Understand valuation in plain terms
+
+### There is no single correct price
+A business is worth what a willing buyer and a willing seller agree on, supported by evidence. Different methods give different answers, and a good adviser will show you a range.
+
+### Common approaches
+Buyers often look at a multiple of yearly profit, the value of the assets, or what it would cost to build a similar business. The right multiple depends on the industry, the risk, the size, and how much of the profit depends on the current owner.
+
+### Value the assets and the goodwill separately
+Equipment, stock, and fittings have a value you can check. Goodwill, such as customer relationships, brand, and location, is what you pay on top, and it is only worth something if it stays after the owner leaves.
+
+### Consider the risks
+Higher risk should mean a lower price. Risks include dependence on the owner, short or uncertain lease terms, licence conditions, ageing equipment, and a concentrated customer base.
+
+### Think about what the business can pay back
+Estimate whether the profit after a fair salary can cover any loan repayments and still leave a return. Our guide on SME grants and funding in Malaysia and our guide on managing business debt and loan repayments explain funding options and the risk of over-borrowing.
+
+### Take professional help
+An accountant or valuer can test the seller's price against evidence, and can help you argue for a fair deal.
+
+## 5. Do your due diligence
+
+### What due diligence means
+It is the process of checking, with documents and questions, that the business is what the seller says it is, and finding any problems before you are committed.
+
+### Legal and corporate checks
+Confirm who owns the business and its assets, how it is registered, and whether the seller has the right to sell. Our guide on how to register a business and our guide on staying compliant with SSM annual returns explain the records that should exist. Your lawyer can also check for litigation, disputes, and any claims against the business.
+
+### Contracts and the lease
+Read the main contracts with customers, suppliers, and landlords. Check the length of the lease, rent reviews, renewal rights, and whether the landlord must consent to a change of owner. Our guide on renting commercial premises in Malaysia explains key lease terms.
+
+### Licences, permits, and compliance
+Confirm that the business holds the licences and approvals it needs, and find out whether they can be transferred or must be applied for again in your name. Requirements vary by sector and location. Our guide on business licences and permits and, for food businesses, our guide on starting a food business and our guide on halal certification explain examples. Confirm the current rules with the relevant authorities.
+
+### Staff and employment
+Look at the employment contracts, pay, leave, statutory contributions, and any disputes or claims. Ask your lawyer how existing employees are affected by a sale, because the answer depends on how the deal is structured. Our guide on hiring your first employee and our guide on payroll and statutory contributions explain employer duties.
+
+### Taxes and debts
+Check that taxes, statutory payments, and supplier bills are up to date, and find out about loans, guarantees, hire purchase, and anything secured on the business. Our guide on the small business tax calendar explains deadlines that sellers sometimes miss.
+
+### Assets, stock, and technology
+Inspect equipment and stock in person, test any systems, and check who owns the website, social accounts, domain names, and customer data. Our guide on PDPA compliance explains why customer information must be handled carefully, and our guide on trademark registration explains how to check the brand.
+
+### Intellectual property and the brand
+Confirm that the name, logo, and any recipes or designs belong to the business and can be transferred.
+
+> Due diligence is not an insult to the seller. It is how a careful buyer turns a seller's promises into facts, and how a fair price is found.
+
+## 6. Choose the deal structure
+
+### Share purchase
+You buy the shares of the company that owns the business. The company, its contracts, its licences, and its staff stay in place, which can make the handover simpler. But you also take on the company's liabilities, including ones you may not know about, so thorough due diligence and strong protections in the agreement are essential.
+
+### Asset purchase
+You buy chosen assets of the business, such as equipment, stock, the name, and customer lists, and the seller keeps the company. This generally lets you avoid the seller's past liabilities, but it usually involves more steps, such as transferring contracts, licences, and staff, and may need the consent of third parties.
+
+### Think about tax and stamp duty
+The two structures can carry different stamp duty and tax consequences, and rates and rules can differ, for example for foreign buyers or for certain assets. Our guide on tax deductions and incentives explains why tax planning matters. Confirm the current position with your lawyer and accountant before choosing.
+
+### Consider protections
+Your lawyer may suggest warranties, indemnities, holding back part of the price until problems are ruled out, and conditions that must be met before completion.
+
+### Check the buyer structure
+Decide whether you will buy personally or through a company, since this affects liability and tax. Our guide on business partners and shareholder agreements explains what to settle if you buy with others.
+
+## 7. Negotiate, sign, and take over smoothly
+
+### Negotiate more than the price
+Payment terms, staged payments, a share of the price tied to future performance, a transition period, a non-compete promise, and stock levels at handover can all matter. Our guide on managing supplier relationships and negotiating better terms explains useful negotiating habits.
+
+### Put it in a proper agreement
+A written sale and purchase agreement should cover the price, what is included, warranties, conditions, handover arrangements, restrictions on the seller, and what happens if something goes wrong. Have your lawyer draft or review it, and confirm any signing or stamping requirements.
+
+### Plan the handover
+Agree how long the seller will stay on to introduce you to customers and suppliers, train you, and explain how things work. A good handover is often worth more than a small discount.
+
+### Tell people at the right time
+Plan how and when you will tell staff, customers, and suppliers, so that they hear it from you and not from rumour. Be fair and clear with staff about what will and will not change. Our guide on employee handbooks and HR policies and our guide on keeping your best people explain how to keep a team through a change.
+
+### Update the paperwork
+Update registrations, bank mandates, licences, insurance, utility accounts, and online accounts as soon as the sale completes. Our guide on business insurance for Malaysian SMEs and our guide on opening a business bank account explain what to check.
+
+### Be careful in the first months
+Resist the urge to change everything at once. Learn what works, keep what customers value, and make changes step by step.
+
+If you need a lawyer, an accountant, a valuer, or a business broker, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so that customers of the business you buy can find you under your own name.
+
+## Common mistakes Malaysian SMEs make when buying a business
+
+- **Falling for the story and skipping the checks.** A charming seller and a busy shop are not proof of profit, so verify the numbers and records before you commit.
+- **Ignoring the lease and licences.** A business that cannot keep its premises or its approvals is worth far less than it looks, so check both before you pay.
+- **Buying without advisers.** Lawyers and accountants cost money, but mistakes in a business purchase cost far more, so bring them in before you sign.
+
+## Where to start
+
+- **This week:** Write down what kind of business you want, your budget, and how much of your own time you will give.
+- **Next:** Contact an accountant and a lawyer, and start looking at several businesses for sale.
+- **Then:** For one that interests you, ask why the owner is selling, request several years of records, and have them reviewed.
+- **Before you sign:** Complete due diligence, choose the structure, negotiate protections and a handover plan, and confirm licences and the lease.
+
+A well-chosen business can give you a head start. A badly checked one can give you someone else's problems. Take your time, test every claim, and pay only for what you can verify.`,
+    faqs: [
+      {
+        question: "Is buying an existing business better than starting a new one?",
+        answer:
+          "It can be faster, because customers, staff, and systems already exist, but it can also carry hidden problems and a price that includes goodwill. It suits you if you check the facts carefully, can fund the purchase and a reserve, and have a clear plan for the business.",
+      },
+      {
+        question: "How do I find businesses for sale?",
+        answer:
+          "Try business brokers, industry associations, online listings, suppliers, landlords, accountants, and word of mouth. Many deals are never advertised, so let people in your network know what you are looking for. Be wary of anyone who pressures you or refuses to show records.",
+      },
+      {
+        question: "How is a business valued?",
+        answer:
+          "There is no single correct figure. Buyers often look at a multiple of yearly profit, the value of the assets, or the cost of building a similar business, adjusted for risk and for how much depends on the current owner. An accountant or valuer can test the seller's price against evidence.",
+      },
+      {
+        question: "What should I check in due diligence?",
+        answer:
+          "Financial records and tax filings, ownership and registration, contracts and the lease, licences and permits, staff and employment records, debts and guarantees, assets and stock, technology and customer data, and intellectual property such as the brand. Use a lawyer and an accountant.",
+      },
+      {
+        question: "What is the difference between a share purchase and an asset purchase?",
+        answer:
+          "In a share purchase you buy the company that owns the business and take on its liabilities, known and unknown. In an asset purchase you buy chosen assets and generally avoid the seller's past liabilities, but there are more steps. Tax and stamp duty can differ, so confirm with your advisers.",
+      },
+      {
+        question: "Can licences and contracts be transferred to me?",
+        answer:
+          "It depends on the licence, the contract, and the structure of the deal. Some licences must be applied for again in your name, and some contracts and leases need the other party's consent. Check early with your lawyer and the relevant authority.",
+      },
+      {
+        question: "What happens to the employees when I buy a business?",
+        answer:
+          "It depends on how the deal is structured and on the employment contracts and rules that apply, so ask your lawyer before you agree terms. Check pay, leave, statutory contributions, and any disputes, and communicate clearly and fairly with the team.",
+      },
+      {
+        question: "How can I make the handover smoother?",
+        answer:
+          "Agree a transition period in which the seller introduces customers and suppliers and trains you, plan how and when to tell staff and customers, update registrations and accounts quickly, and avoid changing everything at once in the first months.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "在马来西亚收购现有企业：估值、尽职调查与顺利接手",
+        excerpt:
+          "收购一家已经拥有顾客、员工和业绩记录的企业，可能比从零开始更快、风险更低，但前提是您查清楚自己到底买下了什么。本指南帮助马来西亚的买家寻找待售企业、阅读财务数据、了解估值、进行尽职调查、比较股份收购与资产收购、谈判，并顺利接手。",
+        body: `从零开始创业，意味着一步一步建立顾客、系统和声誉。收购现有企业可以跳过其中一些：顾客已经在那里，员工已经受过训练，供应商关系已经存在，而且您可以看到企业过去的表现。对许多马来西亚的买家来说，这使它成为一条有吸引力的入门之路。
+
+但收购企业也很容易出错。您付钱购买的，是一个关于未来的故事，它基于过去的记录，由一位比您了解得多得多的人讲述。做得好的买家是那些提出尖锐问题、核实事实，并在签字之前征求适当意见的人。
+
+本文仅提供一般信息，并非法律、税务或财务建议。公司法、印花税、税务处理、执照和雇佣规定会随时间变化，本指南的信息可能已经过时。在做出承诺之前，请向律师、您的会计师、马来西亚公司委员会（SSM）以及相关主管单位确认现行要求。
+
+## 1. 决定收购是否适合您
+
+在询问这家企业值多少钱之前，先问问老板为什么要卖。这个答案会影响您将要问的每一个其他问题。
+
+### 为什么收购而不是创办
+一家持续经营的企业可以提供现有的顾客、营收记录、员工、设备和地点。这可以缩短获得收入的时间，而且贷款机构评估一家已经成型的企业，可能比评估一份计划更容易。我们关于撰写商业计划书的指南说明了如何先检验您自己的想法。
+
+### 了解出售的真正原因
+常见的诚实原因包括退休、搬迁、健康或转变方向。较令人不安的原因包括销售下滑、租约即将变贵、出现新的竞争对手，或老板不想提起的问题。
+
+### 明确您想要什么
+决定企业的类型、规模、地点、预算，以及您想参与多深。清楚的要求可以避免您被任何碰巧待售的企业所吸引。我们关于管理现金流的指南说明了为什么您留作储备的资金，与您支付的价格同样重要。
+
+### 了解您自己的限度
+诚实面对您的技能、经验和财务状况。在从未经营过餐厅的情况下收购一家餐厅，与收购您已经熟悉的行业中的企业，风险截然不同。
+
+### 及早组建您的团队
+律师、会计师，以及可能的行业顾问，应该在您签署任何文件之前而不是之后参与。
+
+## 2. 寻找待售企业并初次接触
+
+### 去哪里找
+企业经纪人、行业协会、网络刊登、供应商、房东、会计师和口耳相传，都能带来机会。一些最好的交易从不登广告，所以请告诉您人脉圈中的人您在找什么。
+
+### 把早期信息视为机密
+卖方常要求您在分享细节之前签署保密协议。这是正常的，但请阅读它，确保它公平，并且您仍可以咨询您的顾问。
+
+### 从简单的问题开始
+索取基本简介：企业做什么、经营了多久、有多少员工、为什么出售，以及近期业绩的摘要。在深入研究某一家之前，先比较几家企业。
+
+### 先以顾客身份去看看
+在一天中的不同时间观察这家企业。在表露您的兴趣之前，先看看它有多忙、员工如何表现，以及顾客怎么说。
+
+### 对压力保持警惕
+一位坚持要您快速决定、劝您不要使用顾问或拒绝出示记录的卖方，是一个警讯。我们关于合约与条款的指南说明了如何放慢脚步，在签字之前先阅读。
+
+## 3. 阅读财务数据并理解数字
+
+### 索取数年的记录
+索取财务报表、管理账目、销售记录、银行对账单、税务申报以及资产和负债清单。数年的数据比一个好年份更能显示趋势。我们关于簿记和会计基础的指南说明了良好的记录是什么样子。
+
+### 核实数字是真实的
+把老板的数字与银行对账单、税务申报、供应商发票以及实际流经企业的现金相比较。现金生意需要格外小心，因为未入账的销售或开支会使数字变得不可靠。
+
+### 了解真实的利润
+对老板的薪水、一次性成本、通过企业支付的个人开销，以及付给关联方的低于市价的租金等项目作出调整。如果由您来经营这家企业，给自己支付合理的薪水并按市价付租金，它能赚多少？
+
+### 看看趋势和构成
+销售额是上升、持平还是下降？哪些顾客、产品和月份最重要？依赖一位大客户或某一个旺月的企业风险更高。
+
+### 查看现金流，而不只是利润
+看看顾客付款有多快、需要多少库存、供应商何时必须付款，以及哪些债务和承担将到期。我们关于追收逾期货款的指南和关于库存管理的指南说明了现金的两个常见消耗。
+
+### 请您的会计师审阅
+独立的审阅可以发现薄弱的记录、不寻常的项目和您可能忽略的税务风险。我们关于应对税务审计的指南说明了为什么整洁的税务记录对买家也很重要。
+
+## 4. 通俗地理解估值
+
+### 没有唯一正确的价格
+一家企业的价值，是有意愿的买家和有意愿的卖家在证据支持下所同意的价格。不同的方法会给出不同的答案，优秀的顾问会向您展示一个范围。
+
+### 常见的方法
+买家常看年度利润的倍数、资产的价值，或建立一家类似企业的成本。合适的倍数取决于行业、风险、规模，以及利润有多少依赖现任老板。
+
+### 分别评估资产和商誉
+设备、库存和装修有您可以核实的价值。商誉，例如顾客关系、品牌和地点，是您另外要付的部分，只有在老板离开后它仍然存在时才有价值。
+
+### 考虑风险
+风险越高，价格应越低。风险包括对老板的依赖、短期或不确定的租约、执照条件、老化的设备，以及集中的客户群。
+
+### 想想企业能偿还多少
+估算扣除合理薪水之后的利润，能否负担任何贷款还款并仍留有回报。我们关于马来西亚中小企业补助与资金的指南和关于管理企业债务与贷款还款的指南说明了融资选项和过度借贷的风险。
+
+### 寻求专业协助
+会计师或估价师可以用证据检验卖方的价格，并帮助您争取公平的交易。
+
+## 5. 做好尽职调查
+
+### 尽职调查的意思
+它是通过文件和提问，核查企业是否如卖方所说，并在您作出承诺之前找出任何问题的过程。
+
+### 法律和公司方面的核查
+确认谁拥有这家企业及其资产、它是如何注册的，以及卖方是否有权出售。我们关于如何注册企业的指南和关于遵守 SSM 年度申报表的指南说明了应该存在哪些记录。您的律师也可以查核诉讼、纠纷和任何针对企业的索赔。
+
+### 合约和租约
+阅读与顾客、供应商和房东的主要合约。查核租约的期限、租金检讨、续约权，以及更换业主时是否需要房东同意。我们关于租用马来西亚商业场所的指南说明了主要的租约条款。
+
+### 执照、许可证和合规
+确认企业持有所需的执照和批准，并查明它们是否可以转让，还是必须以您的名义重新申请。要求因行业和地点而异。我们关于营业执照与许可证的指南，以及针对食品业的关于开设食品生意的指南和关于清真认证的指南说明了一些例子。请向相关主管单位确认现行规定。
+
+### 员工和雇佣
+查看雇佣合约、薪酬、休假、法定供款以及任何纠纷或索赔。请向您的律师询问现有员工如何受到出售的影响，因为答案取决于交易的结构。我们关于聘请第一位员工的指南和关于薪资与法定供款的指南说明了雇主的责任。
+
+### 税务和债务
+查核税款、法定付款和供应商账单是否已结清，并了解贷款、担保、租购以及任何以企业作抵押的事项。我们关于小企业税务日历的指南说明了卖方有时会错过的截止日期。
+
+### 资产、库存和科技
+亲自检查设备和库存，测试任何系统，并查核谁拥有网站、社交账号、域名和客户资料。我们关于个人资料保护法令合规的指南说明了为什么必须谨慎处理客户信息，关于商标注册的指南说明了如何查核品牌。
+
+### 知识产权和品牌
+确认名称、标志以及任何配方或设计属于企业并可以转让。
+
+> 尽职调查不是对卖方的侮辱。它是谨慎的买家把卖方的承诺变成事实的方式，也是找到公平价格的方式。
+
+## 6. 选择交易结构
+
+### 股份收购
+您购买拥有这家企业的公司的股份。公司、它的合约、执照和员工都保持原样，这可以让交接更简单。但您也承担公司的债务，包括您可能不知道的债务，所以彻底的尽职调查和协议中强有力的保障至关重要。
+
+### 资产收购
+您购买企业的选定资产，例如设备、库存、名称和客户名单，而卖方保留公司。这通常让您避免卖方过去的债务，但通常涉及更多步骤，例如转让合约、执照和员工，并且可能需要第三方的同意。
+
+### 考虑税务和印花税
+两种结构可能带来不同的印花税和税务后果，税率和规定也可能不同，例如针对外国买家或某些资产。我们关于税务扣除与优惠的指南说明了为什么税务规划很重要。在选择之前，请向您的律师和会计师确认现行情况。
+
+### 考虑保障措施
+您的律师可能建议保证条款、赔偿条款、在排除问题之前扣留部分价款，以及在交割之前必须满足的条件。
+
+### 查核买方的结构
+决定您是以个人名义还是通过公司购买，因为这会影响责任和税务。我们关于商业伙伴与股东协议的指南说明了如果您与他人一同购买应该商定什么。
+
+## 7. 谈判、签约并顺利接手
+
+### 谈判的不只是价格
+付款条件、分期付款、与未来业绩挂钩的一部分价款、过渡期、禁止竞争的承诺，以及交接时的库存水平，都可能很重要。我们关于管理供应商关系与谈判更好条件的指南说明了有用的谈判习惯。
+
+### 写成一份正式的协议
+书面的买卖协议应涵盖价格、包含什么、保证、条件、交接安排、对卖方的限制，以及出了问题怎么办。请让您的律师起草或审阅，并确认任何签署或盖印的要求。
+
+### 规划交接
+商定卖方会留下多久来向您介绍顾客和供应商、培训您并说明事情如何运作。良好的交接往往比小额折扣更有价值。
+
+### 在适当的时间告诉大家
+规划您将如何以及何时告诉员工、顾客和供应商，让他们从您这里而不是从谣言中听到。对员工公平而清楚地说明什么会改变、什么不会。我们关于员工手册与人力资源政策的指南和关于留住最好员工的指南说明了如何在变动中留住团队。
+
+### 更新文件
+出售完成后，尽快更新注册资料、银行授权、执照、保险、水电账户和网络账户。我们关于马来西亚中小企业商业保险的指南和关于开设企业银行户口的指南说明了该查核什么。
+
+### 头几个月要小心
+克制一次改变一切的冲动。了解什么行得通，保留顾客看重的东西，并逐步做出改变。
+
+如果您需要律师、会计师、估价师或企业经纪人，可以[浏览目录](/zh)寻找您附近的专业人士，并[创建免费商家列表](/zh/signup)，让您所收购企业的顾客能以您自己的名字找到您。
+
+## 马来西亚中小企业收购企业时的常见错误
+
+- **被故事打动而跳过查核。** 魅力十足的卖方和生意兴隆的店铺不是盈利的证明，所以请在承诺之前核实数字和记录。
+- **忽视租约和执照。** 一家保不住场地或批准的企业，价值远低于它看起来的样子，所以请在付款之前查核两者。
+- **没有顾问就收购。** 律师和会计师要花钱，但收购企业时的错误代价高得多，所以请在签字之前请他们参与。
+
+## 从哪里开始
+
+- **本周：** 写下您想要什么类型的企业、您的预算，以及您将投入多少自己的时间。
+- **接下来：** 联系一位会计师和一位律师，并开始查看几家待售企业。
+- **然后：** 对您感兴趣的一家，询问老板为什么要卖，索取数年的记录，并请人审阅。
+- **签字之前：** 完成尽职调查，选择结构，谈判保障措施和交接计划，并确认执照和租约。
+
+一家选得好的企业可以让您抢先一步。一家查得不好的企业，则可能给您带来别人的问题。请慢慢来，检验每一项说法，并且只为您能核实的东西付钱。`,
+        faqs: [
+          {
+            question: "收购现有企业比创办新企业更好吗？",
+            answer:
+              "它可能更快，因为顾客、员工和系统已经存在，但也可能带有隐藏的问题，而且价格包含商誉。如果您仔细查核事实，能够为收购和储备金筹资，并对企业有清楚的计划，它就适合您。",
+          },
+          {
+            question: "我如何找到待售的企业？",
+            answer:
+              "可以试试企业经纪人、行业协会、网络刊登、供应商、房东、会计师和口耳相传。许多交易从不登广告，所以请让您人脉圈中的人知道您在找什么。对施压或拒绝出示记录的人要保持警惕。",
+          },
+          {
+            question: "企业是如何估值的？",
+            answer:
+              "没有唯一正确的数字。买家常看年度利润的倍数、资产的价值，或建立类似企业的成本，并根据风险和对现任老板的依赖程度作出调整。会计师或估价师可以用证据检验卖方的价格。",
+          },
+          {
+            question: "尽职调查中应该查核什么？",
+            answer:
+              "财务记录和税务申报、所有权和注册、合约和租约、执照和许可证、员工和雇佣记录、债务和担保、资产和库存、科技和客户资料，以及品牌等知识产权。请使用律师和会计师。",
+          },
+          {
+            question: "股份收购和资产收购有什么区别？",
+            answer:
+              "在股份收购中，您购买拥有这家企业的公司并承担它已知和未知的债务。在资产收购中，您购买选定的资产，通常避免卖方过去的债务，但步骤更多。税务和印花税可能不同，所以请向您的顾问确认。",
+          },
+          {
+            question: "执照和合约可以转让给我吗？",
+            answer:
+              "这取决于执照、合约以及交易的结构。有些执照必须以您的名义重新申请，有些合约和租约需要对方同意。请及早向您的律师和相关主管单位查核。",
+          },
+          {
+            question: "我收购企业时，员工会怎样？",
+            answer:
+              "这取决于交易的结构以及适用的雇佣合约和规定，所以请在同意条款之前询问您的律师。查核薪酬、休假、法定供款和任何纠纷，并与团队清楚而公平地沟通。",
+          },
+          {
+            question: "我如何让交接更顺利？",
+            answer:
+              "商定一个过渡期，让卖方介绍顾客和供应商并培训您，规划如何以及何时告诉员工和顾客，迅速更新注册资料和账户，并避免在头几个月一次改变一切。",
+          },
+        ],
+      },
+      ms: {
+        title: "Membeli Perniagaan Sedia Ada di Malaysia: Penilaian, Usaha Wajar dan Mengambil Alih dengan Lancar",
+        excerpt:
+          "Membeli perniagaan yang sudah mempunyai pelanggan, pekerja dan rekod prestasi boleh lebih pantas dan kurang berisiko daripada bermula dari kosong, tetapi hanya jika anda menyemak apa yang sebenarnya anda beli. Panduan ini membantu pembeli Malaysia mencari perniagaan yang dijual, membaca kewangan, memahami penilaian, menjalankan usaha wajar, membandingkan pembelian saham dan aset, berunding, dan mengambil alih dengan lancar.",
+        body: `Memulakan perniagaan dari kosong bermakna membina pelanggan, sistem dan reputasi selangkah demi selangkah. Membeli perniagaan sedia ada boleh melangkau sebahagian daripadanya: pelanggan sudah ada, pekerja sudah terlatih, hubungan pembekal wujud, dan anda boleh melihat bagaimana perniagaan itu telah berprestasi. Bagi ramai pembeli Malaysia, itu menjadikannya jalan masuk yang menarik.
+
+Tetapi membeli perniagaan juga mudah tersilap. Anda membayar untuk cerita tentang masa depan, berdasarkan rekod masa lalu, yang diceritakan oleh seseorang yang tahu jauh lebih banyak daripada anda. Pembeli yang berjaya ialah mereka yang bertanya soalan sukar, menyemak fakta, dan mendapatkan nasihat yang betul sebelum menandatangani.
+
+Ini maklumat umum, bukan nasihat undang-undang, cukai atau kewangan. Undang-undang syarikat, duti setem, layanan cukai, pelesenan dan peraturan pekerjaan berubah dari semasa ke semasa, dan maklumat dalam panduan ini mungkin sudah lapuk. Sahkan keperluan semasa dengan peguam, akauntan anda, Suruhanjaya Syarikat Malaysia (SSM) dan pihak berkuasa berkaitan sebelum anda membuat komitmen.
+
+## 1. Putuskan sama ada membeli sesuai untuk anda
+
+Tanya mengapa pemilik menjual sebelum anda bertanya berapa nilai perniagaan itu. Jawapannya membentuk setiap soalan lain yang akan anda tanya.
+
+### Mengapa membeli dan bukannya memulakan
+Perniagaan yang sedang beroperasi boleh menawarkan pelanggan sedia ada, sejarah hasil, pekerja, peralatan dan lokasi. Itu boleh memendekkan masa untuk mendapat pendapatan, dan pemberi pinjaman mungkin mendapati perniagaan yang terbukti lebih mudah dinilai daripada pelan. Panduan kami tentang menulis pelan perniagaan menerangkan cara menguji idea anda sendiri dahulu.
+
+### Fahami sebab sebenar menjual
+Sebab jujur yang lazim termasuk persaraan, berpindah, kesihatan atau perubahan hala tuju. Sebab yang kurang menyenangkan termasuk jualan merosot, sewa yang akan menjadi mahal, pesaing baharu atau masalah yang pemilik tidak mahu sebutkan.
+
+### Jelas tentang apa yang anda mahu
+Tentukan jenis perniagaan, saiz, lokasi, bajet dan sejauh mana anda mahu terlibat. Keperluan yang jelas menghalang anda tertarik kepada mana-mana perniagaan yang kebetulan dijual. Panduan kami tentang menguruskan aliran tunai menerangkan mengapa wang yang anda simpan sebagai rizab sama penting dengan harga yang anda bayar.
+
+### Ketahui had anda sendiri
+Jujurlah tentang kemahiran, pengalaman dan kewangan anda. Membeli restoran apabila anda tidak pernah menjalankannya ialah risiko yang sangat berbeza daripada membeli perniagaan dalam bidang yang sudah anda kenali.
+
+### Kumpulkan pasukan anda lebih awal
+Peguam, akauntan dan mungkin penasihat industri patut terlibat sebelum anda menandatangani apa-apa, bukan selepasnya.
+
+## 2. Cari perniagaan yang dijual dan buat hubungan pertama
+
+### Di mana hendak mencari
+Broker perniagaan, persatuan industri, senarai dalam talian, pembekal, tuan tanah, akauntan dan mulut ke mulut semuanya membawa kepada peluang. Sesetengah tawaran terbaik tidak pernah diiklankan, jadi beritahu orang dalam rangkaian anda apa yang anda cari.
+
+### Layan maklumat awal sebagai sulit
+Penjual selalunya meminta anda menandatangani perjanjian kerahsiaan sebelum berkongsi butiran. Ini normal, tetapi bacalah, dan pastikan ia adil dan anda masih boleh berunding dengan penasihat anda.
+
+### Mulakan dengan soalan mudah
+Minta profil asas: apa yang dilakukan perniagaan itu, sudah berapa lama beroperasi, berapa ramai pekerja, mengapa ia dijual, dan ringkasan keputusan terkini. Bandingkan beberapa perniagaan sebelum anda mendalami satu.
+
+### Lawat sebagai pelanggan dahulu
+Perhatikan perniagaan itu pada waktu berbeza dalam sehari. Lihat betapa sibuknya ia, bagaimana pekerja berkelakuan, dan apa yang dikatakan pelanggan, sebelum anda mendedahkan minat anda.
+
+### Berhati-hati dengan tekanan
+Penjual yang mendesak anda memutuskan dengan cepat, menghalang anda daripada menggunakan penasihat atau enggan menunjukkan rekod ialah tanda amaran. Panduan kami tentang kontrak dan terma menerangkan cara memperlahankan dan membaca sebelum anda menandatangani.
+
+## 3. Baca kewangan dan fahami angka
+
+### Minta rekod beberapa tahun
+Minta penyata kewangan, akaun pengurusan, rekod jualan, penyata bank, pemfailan cukai dan senarai aset serta liabiliti. Beberapa tahun menunjukkan aliran lebih baik daripada satu tahun yang baik. Panduan kami tentang asas simpan kira dan perakaunan menerangkan seperti apa rekod yang baik.
+
+### Pastikan angka itu benar
+Bandingkan angka pemilik dengan penyata bank, penyerahan cukai, invois pembekal dan tunai yang sebenarnya melalui perniagaan. Perniagaan tunai memerlukan lebih berhati-hati, kerana jualan atau perbelanjaan yang tidak direkodkan menjadikan angka tidak boleh dipercayai.
+
+### Fahami untung sebenar
+Laraskan untuk perkara seperti gaji pemilik, kos sekali sahaja, perbelanjaan peribadi yang melalui perniagaan, dan sewa di bawah harga pasaran yang dibayar kepada pihak berkaitan. Apakah yang akan diperoleh perniagaan itu jika anda menjalankannya, membayar gaji yang adil kepada diri sendiri dan membayar sewa pasaran?
+
+### Lihat aliran dan campuran
+Adakah jualan meningkat, mendatar atau menurun? Pelanggan, produk dan bulan mana yang paling penting? Perniagaan yang bergantung pada satu pelanggan besar atau satu bulan sibuk lebih berisiko.
+
+### Semak aliran tunai, bukan sekadar untung
+Lihat betapa cepat pelanggan membayar, berapa banyak stok diperlukan, bila pembekal mesti dibayar, dan hutang serta komitmen apa yang akan matang. Panduan kami tentang mengutip bayaran lewat dan panduan kami tentang pengurusan inventori menerangkan dua longgokan tunai yang lazim.
+
+### Minta akauntan anda menyemaknya
+Semakan bebas boleh mengesan rekod lemah, perkara luar biasa dan risiko cukai yang mungkin anda terlepas. Panduan kami tentang menangani audit cukai menerangkan mengapa rekod cukai yang kemas penting kepada pembeli juga.
+
+## 4. Fahami penilaian dalam bahasa mudah
+
+### Tiada satu harga yang betul
+Nilai perniagaan ialah apa yang dipersetujui oleh pembeli yang sanggup dan penjual yang sanggup, disokong oleh bukti. Kaedah berbeza memberi jawapan berbeza, dan penasihat yang baik akan menunjukkan julat kepada anda.
+
+### Pendekatan lazim
+Pembeli sering melihat gandaan untung tahunan, nilai aset atau kos membina perniagaan serupa. Gandaan yang sesuai bergantung pada industri, risiko, saiz dan sejauh mana untung bergantung pada pemilik semasa.
+
+### Nilaikan aset dan muhibah secara berasingan
+Peralatan, stok dan lengkapan mempunyai nilai yang boleh anda semak. Muhibah, seperti hubungan pelanggan, jenama dan lokasi, ialah apa yang anda bayar tambahan, dan ia hanya bernilai jika ia kekal selepas pemilik pergi.
+
+### Pertimbangkan risiko
+Risiko lebih tinggi patut bermakna harga lebih rendah. Risiko termasuk pergantungan kepada pemilik, tempoh sewa yang pendek atau tidak pasti, syarat lesen, peralatan yang uzur dan pangkalan pelanggan yang tertumpu.
+
+### Fikirkan apa yang boleh dibayar balik oleh perniagaan
+Anggarkan sama ada untung selepas gaji yang adil boleh menampung sebarang bayaran balik pinjaman dan masih meninggalkan pulangan. Panduan kami tentang geran dan pembiayaan PKS di Malaysia dan panduan kami tentang menguruskan hutang perniagaan dan bayaran balik pinjaman menerangkan pilihan pembiayaan dan risiko meminjam berlebihan.
+
+### Dapatkan bantuan profesional
+Akauntan atau penilai boleh menguji harga penjual berbanding bukti, dan boleh membantu anda memperjuangkan tawaran yang adil.
+
+## 5. Jalankan usaha wajar anda
+
+### Apa maksud usaha wajar
+Ia ialah proses menyemak, dengan dokumen dan soalan, bahawa perniagaan itu seperti yang dikatakan oleh penjual, dan mencari sebarang masalah sebelum anda terikat.
+
+### Semakan undang-undang dan korporat
+Sahkan siapa yang memiliki perniagaan dan asetnya, bagaimana ia didaftarkan, dan sama ada penjual berhak menjual. Panduan kami tentang cara mendaftar perniagaan dan panduan kami tentang kekal patuh dengan penyata tahunan dan rekod syarikat SSM menerangkan rekod yang patut wujud. Peguam anda juga boleh menyemak litigasi, pertikaian dan sebarang tuntutan terhadap perniagaan.
+
+### Kontrak dan sewaan
+Baca kontrak utama dengan pelanggan, pembekal dan tuan tanah. Semak tempoh sewa, semakan sewa, hak pembaharuan, dan sama ada tuan tanah mesti bersetuju terhadap perubahan pemilik. Panduan kami tentang menyewa premis komersial di Malaysia menerangkan terma sewa utama.
+
+### Lesen, permit dan pematuhan
+Sahkan bahawa perniagaan itu memegang lesen dan kelulusan yang diperlukan, dan ketahui sama ada ia boleh dipindahkan atau mesti dipohon semula atas nama anda. Keperluan berbeza mengikut sektor dan lokasi. Panduan kami tentang lesen dan permit perniagaan dan, untuk perniagaan makanan, panduan kami tentang memulakan perniagaan makanan dan panduan kami tentang pensijilan halal menerangkan contoh. Sahkan peraturan semasa dengan pihak berkuasa berkaitan.
+
+### Pekerja dan pekerjaan
+Lihat kontrak pekerjaan, gaji, cuti, caruman berkanun dan sebarang pertikaian atau tuntutan. Tanya peguam anda bagaimana pekerja sedia ada terjejas oleh penjualan, kerana jawapannya bergantung pada cara tawaran distruktur. Panduan kami tentang mengambil pekerja pertama dan panduan kami tentang gaji dan caruman berkanun menerangkan tugas majikan.
+
+### Cukai dan hutang
+Semak bahawa cukai, bayaran berkanun dan bil pembekal dikemas kini, dan ketahui tentang pinjaman, jaminan, sewa beli dan apa-apa yang dicagarkan pada perniagaan. Panduan kami tentang kalendar cukai perniagaan kecil menerangkan tarikh akhir yang kadangkala terlepas oleh penjual.
+
+### Aset, stok dan teknologi
+Periksa peralatan dan stok secara peribadi, uji sebarang sistem, dan semak siapa yang memiliki laman web, akaun sosial, nama domain dan data pelanggan. Panduan kami tentang pematuhan PDPA menerangkan mengapa maklumat pelanggan mesti dikendalikan dengan berhati-hati, dan panduan kami tentang pendaftaran tanda dagangan menerangkan cara menyemak jenama.
+
+### Harta intelek dan jenama
+Sahkan bahawa nama, logo dan sebarang resipi atau reka bentuk adalah milik perniagaan dan boleh dipindahkan.
+
+> Usaha wajar bukan penghinaan kepada penjual. Ia ialah cara pembeli yang berhati-hati menukar janji penjual kepada fakta, dan cara harga yang adil ditemui.
+
+## 6. Pilih struktur tawaran
+
+### Pembelian saham
+Anda membeli saham syarikat yang memiliki perniagaan. Syarikat, kontraknya, lesennya dan pekerjanya kekal di tempat, yang boleh memudahkan penyerahan. Tetapi anda juga menanggung liabiliti syarikat, termasuk yang mungkin anda tidak tahu, jadi usaha wajar yang menyeluruh dan perlindungan yang kukuh dalam perjanjian adalah penting.
+
+### Pembelian aset
+Anda membeli aset terpilih perniagaan, seperti peralatan, stok, nama dan senarai pelanggan, dan penjual mengekalkan syarikat. Ini amnya membolehkan anda mengelak liabiliti lalu penjual, tetapi ia biasanya melibatkan lebih banyak langkah, seperti memindahkan kontrak, lesen dan pekerja, dan mungkin memerlukan persetujuan pihak ketiga.
+
+### Fikirkan tentang cukai dan duti setem
+Kedua-dua struktur boleh membawa akibat duti setem dan cukai yang berbeza, dan kadar serta peraturan boleh berbeza, contohnya untuk pembeli asing atau aset tertentu. Panduan kami tentang potongan dan insentif cukai menerangkan mengapa perancangan cukai penting. Sahkan kedudukan semasa dengan peguam dan akauntan anda sebelum memilih.
+
+### Pertimbangkan perlindungan
+Peguam anda mungkin mencadangkan waranti, indemniti, menahan sebahagian harga sehingga masalah diketepikan, dan syarat yang mesti dipenuhi sebelum penyempurnaan.
+
+### Semak struktur pembeli
+Tentukan sama ada anda akan membeli secara peribadi atau melalui syarikat, kerana ini mempengaruhi liabiliti dan cukai. Panduan kami tentang rakan kongsi perniagaan dan perjanjian pemegang saham menerangkan apa yang perlu diselesaikan jika anda membeli bersama orang lain.
+
+## 7. Berunding, tandatangan dan ambil alih dengan lancar
+
+### Rundingkan lebih daripada harga
+Terma pembayaran, bayaran berperingkat, sebahagian harga yang dikaitkan dengan prestasi masa depan, tempoh peralihan, janji tidak bersaing dan paras stok semasa penyerahan semuanya boleh penting. Panduan kami tentang menguruskan hubungan pembekal dan merundingkan terma yang lebih baik menerangkan tabiat rundingan yang berguna.
+
+### Letakkan dalam perjanjian yang betul
+Perjanjian jual beli bertulis patut meliputi harga, apa yang disertakan, waranti, syarat, aturan penyerahan, sekatan ke atas penjual, dan apa berlaku jika sesuatu tidak kena. Minta peguam anda menggubal atau menyemaknya, dan sahkan sebarang keperluan menandatangani atau mengecap.
+
+### Rancang penyerahan
+Persetujui berapa lama penjual akan kekal untuk memperkenalkan anda kepada pelanggan dan pembekal, melatih anda dan menerangkan cara perkara berfungsi. Penyerahan yang baik selalunya lebih bernilai daripada diskaun kecil.
+
+### Beritahu orang pada masa yang betul
+Rancang bagaimana dan bila anda akan memberitahu pekerja, pelanggan dan pembekal, supaya mereka mendengarnya daripada anda dan bukan daripada khabar angin. Bersikap adil dan jelas dengan pekerja tentang apa yang akan dan tidak akan berubah. Panduan kami tentang buku panduan pekerja dan dasar HR dan panduan kami tentang mengekalkan orang terbaik anda menerangkan cara mengekalkan pasukan semasa perubahan.
+
+### Kemas kini dokumen
+Kemas kini pendaftaran, mandat bank, lesen, insurans, akaun utiliti dan akaun dalam talian sebaik sahaja jualan selesai. Panduan kami tentang insurans perniagaan untuk PKS Malaysia dan panduan kami tentang membuka akaun bank perniagaan menerangkan apa yang perlu disemak.
+
+### Berhati-hati pada bulan-bulan pertama
+Tahan keinginan untuk mengubah segala-galanya serentak. Pelajari apa yang berjaya, kekalkan apa yang dihargai pelanggan, dan buat perubahan langkah demi langkah.
+
+Jika anda memerlukan peguam, akauntan, penilai atau broker perniagaan, anda boleh [menyemak imbas direktori](/ms) untuk profesional berhampiran anda, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan perniagaan yang anda beli dapat menemui anda di bawah nama anda sendiri.
+
+## Kesilapan lazim PKS Malaysia semasa membeli perniagaan
+
+- **Terpedaya dengan cerita dan melangkau semakan.** Penjual yang menawan dan kedai yang sibuk bukan bukti keuntungan, jadi sahkan angka dan rekod sebelum anda membuat komitmen.
+- **Mengabaikan sewaan dan lesen.** Perniagaan yang tidak dapat mengekalkan premis atau kelulusannya bernilai jauh kurang daripada yang kelihatan, jadi semak kedua-duanya sebelum anda membayar.
+- **Membeli tanpa penasihat.** Peguam dan akauntan menelan kos, tetapi kesilapan dalam pembelian perniagaan menelan jauh lebih banyak, jadi libatkan mereka sebelum anda menandatangani.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Tuliskan jenis perniagaan yang anda mahu, bajet anda, dan berapa banyak masa anda sendiri yang akan anda berikan.
+- **Seterusnya:** Hubungi akauntan dan peguam, dan mula melihat beberapa perniagaan yang dijual.
+- **Kemudian:** Bagi satu yang menarik minat anda, tanya mengapa pemilik menjual, minta rekod beberapa tahun, dan minta ia disemak.
+- **Sebelum anda menandatangani:** Lengkapkan usaha wajar, pilih struktur, rundingkan perlindungan dan pelan penyerahan, dan sahkan lesen serta sewaan.
+
+Perniagaan yang dipilih dengan baik boleh memberi anda permulaan yang baik. Yang tidak disemak dengan baik boleh memberi anda masalah orang lain. Ambil masa anda, uji setiap dakwaan, dan bayar hanya untuk apa yang boleh anda sahkan.`,
+        faqs: [
+          {
+            question: "Adakah membeli perniagaan sedia ada lebih baik daripada memulakan yang baharu?",
+            answer:
+              "Ia boleh lebih pantas, kerana pelanggan, pekerja dan sistem sudah wujud, tetapi ia juga boleh membawa masalah tersembunyi dan harga yang merangkumi muhibah. Ia sesuai untuk anda jika anda menyemak fakta dengan teliti, boleh membiayai pembelian dan rizab, dan mempunyai rancangan yang jelas untuk perniagaan itu.",
+          },
+          {
+            question: "Bagaimanakah saya mencari perniagaan yang dijual?",
+            answer:
+              "Cuba broker perniagaan, persatuan industri, senarai dalam talian, pembekal, tuan tanah, akauntan dan mulut ke mulut. Banyak tawaran tidak pernah diiklankan, jadi beritahu orang dalam rangkaian anda apa yang anda cari. Berhati-hati dengan sesiapa yang menekan anda atau enggan menunjukkan rekod.",
+          },
+          {
+            question: "Bagaimanakah perniagaan dinilai?",
+            answer:
+              "Tiada satu angka yang betul. Pembeli sering melihat gandaan untung tahunan, nilai aset atau kos membina perniagaan serupa, dilaraskan untuk risiko dan sejauh mana ia bergantung pada pemilik semasa. Akauntan atau penilai boleh menguji harga penjual berbanding bukti.",
+          },
+          {
+            question: "Apakah yang patut saya semak dalam usaha wajar?",
+            answer:
+              "Rekod kewangan dan pemfailan cukai, pemilikan dan pendaftaran, kontrak dan sewaan, lesen dan permit, rekod pekerja dan pekerjaan, hutang dan jaminan, aset dan stok, teknologi dan data pelanggan, dan harta intelek seperti jenama. Gunakan peguam dan akauntan.",
+          },
+          {
+            question: "Apakah perbezaan antara pembelian saham dan pembelian aset?",
+            answer:
+              "Dalam pembelian saham anda membeli syarikat yang memiliki perniagaan dan menanggung liabilitinya, yang diketahui dan tidak. Dalam pembelian aset anda membeli aset terpilih dan amnya mengelak liabiliti lalu penjual, tetapi ada lebih banyak langkah. Cukai dan duti setem boleh berbeza, jadi sahkan dengan penasihat anda.",
+          },
+          {
+            question: "Bolehkah lesen dan kontrak dipindahkan kepada saya?",
+            answer:
+              "Ia bergantung pada lesen, kontrak dan struktur tawaran. Sesetengah lesen mesti dipohon semula atas nama anda, dan sesetengah kontrak dan sewaan memerlukan persetujuan pihak lain. Semak lebih awal dengan peguam anda dan pihak berkuasa berkaitan.",
+          },
+          {
+            question: "Apa berlaku kepada pekerja apabila saya membeli perniagaan?",
+            answer:
+              "Ia bergantung pada cara tawaran distruktur dan pada kontrak pekerjaan serta peraturan yang terpakai, jadi tanya peguam anda sebelum anda bersetuju terma. Semak gaji, cuti, caruman berkanun dan sebarang pertikaian, dan berkomunikasi dengan jelas dan adil dengan pasukan.",
+          },
+          {
+            question: "Bagaimanakah saya boleh melancarkan penyerahan?",
+            answer:
+              "Persetujui tempoh peralihan di mana penjual memperkenalkan pelanggan dan pembekal serta melatih anda, rancang bagaimana dan bila hendak memberitahu pekerja dan pelanggan, kemas kini pendaftaran dan akaun dengan cepat, dan elakkan mengubah segala-galanya serentak pada bulan-bulan pertama.",
+          },
+        ],
+      },
+    },
+  },
 ];
