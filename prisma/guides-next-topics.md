@@ -15,15 +15,15 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Handling Difficult Customers and Online Reviews: Keeping Your Reputation Intact in Malaysia**
-   — Staying calm with angry customers, de-escalation scripts, when to refund
-   or refuse, responding to public negative reviews and fake reviews (to
-   hedge platform rules), protecting staff from abuse, recording incidents,
-   turning complaints into improvements, and when to seek legal advice.
+1. **Winning Corporate Customers: B2B Sales, Proposals, and Getting Paid by Larger Companies**
+   — Finding and approaching business customers, vendor registration and
+   onboarding (to hedge), writing a clear proposal and quote, pricing for
+   volume, contracts and payment terms, dealing with slow-paying large
+   accounts, protecting cash flow, building referrals, and not depending on
+   one big client.
 
-2. **Buying an Existing Business in Malaysia: Valuation, Due Diligence, and Taking Over Smoothly**
-   — Why buy instead of start, finding businesses for sale, reading the
-   financials, valuation basics in plain terms, due diligence on contracts,
-   licences, staff, leases and debts (to hedge), asset versus share purchase,
-   negotiating price and payment terms, sale agreements, transition and
-   handover, and warning signs of a bad deal.
+2. **Cutting Costs the Smart Way: Utilities, Rent, Waste, and Going Green on a Small Budget in Malaysia**
+   — Finding where money leaks, reviewing electricity and water use, simple
+   energy-saving steps (to hedge on any incentives), negotiating rent and
+   supplier costs, reducing waste and packaging, subscriptions and software
+   audits, when cutting costs hurts quality, and tracking the savings.

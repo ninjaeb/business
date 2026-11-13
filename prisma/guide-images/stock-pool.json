@@ -1078,6 +1078,70 @@
         "reflective"
       ],
       "description": "Asian woman working remotely in a coffee shop holding a cup of coffee"
+    },
+    {
+      "id": 13735971,
+      "tags": [
+        "customer",
+        "cafe",
+        "counter",
+        "service"
+      ],
+      "description": "Barista and customer in a friendly exchange at a cafe counter"
+    },
+    {
+      "id": 4350094,
+      "tags": [
+        "customer",
+        "restaurant",
+        "waitress",
+        "service"
+      ],
+      "description": "Laughing young Asian waitress talking with a female client near a table",
+      "usedBy": "difficult-customers-and-online-reviews-cover.webp"
+    },
+    {
+      "id": 7339361,
+      "tags": [
+        "customer",
+        "phone",
+        "cafe",
+        "review"
+      ],
+      "description": "Young Asian woman texting on a mobile phone in a cozy cafe",
+      "usedBy": "difficult-customers-and-online-reviews-phone.webp"
+    },
+    {
+      "id": 3932739,
+      "tags": [
+        "shop",
+        "seller",
+        "clipboard",
+        "notes"
+      ],
+      "description": "Smiling young Asian female seller taking notes on a clipboard in a stylish shop",
+      "usedBy": "buying-an-existing-business-cover.webp"
+    },
+    {
+      "id": 3933690,
+      "tags": [
+        "shop",
+        "florist",
+        "inventory",
+        "checking"
+      ],
+      "description": "Asian female florist checking inventory in a shop"
+    },
+    {
+      "id": 7651550,
+      "tags": [
+        "documents",
+        "review",
+        "asian",
+        "office"
+      ],
+      "description": "Asian man and woman reviewing documents at an office",
+      "usedBy": "buying-an-existing-business-documents.webp"
     }
   ]
 }
