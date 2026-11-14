@@ -1142,6 +1142,70 @@
       ],
       "description": "Asian man and woman reviewing documents at an office",
       "usedBy": "buying-an-existing-business-documents.webp"
+    },
+    {
+      "id": 7648053,
+      "tags": [
+        "b2b",
+        "meeting",
+        "corporate",
+        "asian"
+      ],
+      "description": "Asian woman in corporate attire at a business meeting in a conference room"
+    },
+    {
+      "id": 7651956,
+      "tags": [
+        "b2b",
+        "meeting",
+        "documents",
+        "table"
+      ],
+      "description": "Asian professionals meeting with documents at an outdoor table",
+      "usedBy": "winning-corporate-customers-cover.webp"
+    },
+    {
+      "id": 5922076,
+      "tags": [
+        "b2b",
+        "handshake",
+        "client",
+        "asian"
+      ],
+      "description": "Smiling Asian woman offering a handshake while seated indoors",
+      "usedBy": "winning-corporate-customers-handshake.webp"
+    },
+    {
+      "id": 7262451,
+      "tags": [
+        "savings",
+        "reusable",
+        "jars",
+        "zero-waste"
+      ],
+      "description": "Smiling Asian woman opening reusable bags beside glass jars",
+      "usedBy": "cutting-costs-the-smart-way-cover.webp"
+    },
+    {
+      "id": 9475361,
+      "tags": [
+        "savings",
+        "recycling",
+        "bags",
+        "asian"
+      ],
+      "description": "Smiling Asian woman holding recycled bags"
+    },
+    {
+      "id": 3946159,
+      "tags": [
+        "savings",
+        "led",
+        "energy",
+        "bulbs"
+      ],
+      "description": "Close-up of LED and CFL bulbs on a black surface",
+      "usedBy": "cutting-costs-the-smart-way-led.webp"
     }
   ]
 }

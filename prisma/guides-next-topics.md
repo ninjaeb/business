@@ -15,15 +15,16 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Winning Corporate Customers: B2B Sales, Proposals, and Getting Paid by Larger Companies**
-   — Finding and approaching business customers, vendor registration and
-   onboarding (to hedge), writing a clear proposal and quote, pricing for
-   volume, contracts and payment terms, dealing with slow-paying large
-   accounts, protecting cash flow, building referrals, and not depending on
-   one big client.
+1. **Tracking Business Performance: Simple KPIs and Dashboards for Malaysian SMEs**
+   — Choosing a handful of numbers that matter (sales, gross margin, repeat
+   customers, cash, stock turns), setting up a simple weekly or monthly
+   review, using spreadsheets or accounting software for a basic dashboard,
+   spotting warning signs early, setting realistic targets, sharing numbers
+   with staff, and avoiding vanity metrics.
 
-2. **Cutting Costs the Smart Way: Utilities, Rent, Waste, and Going Green on a Small Budget in Malaysia**
-   — Finding where money leaks, reviewing electricity and water use, simple
-   energy-saving steps (to hedge on any incentives), negotiating rent and
-   supplier costs, reducing waste and packaging, subscriptions and software
-   audits, when cutting costs hurts quality, and tracking the savings.
+2. **Selling at Pasar Malam, Bazaars and Pop-Up Events: A Guide for Malaysian SMEs**
+   — Choosing the right markets and events, stall permits and local council
+   rules (to hedge), costing a stall and setting sales targets, display and
+   packaging, stock planning, accepting cash and QR payments, food and
+   safety rules where relevant, staffing, collecting customer contacts, and
+   turning one-off sales into repeat customers.
