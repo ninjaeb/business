@@ -31772,4 +31772,1323 @@ Perniagaan yang dipilih dengan baik boleh memberi anda permulaan yang baik. Yang
       },
     },
   },
+  {
+    slug: "winning-corporate-customers-b2b-sales-in-malaysia",
+    title: "Winning Corporate Customers: B2B Sales, Proposals, and Getting Paid by Larger Companies",
+    seoTitle: "Winning Corporate Customers: B2B Sales for Malaysian SMEs",
+    seoDescription:
+      "How Malaysian SMEs can win corporate customers: finding buyers, writing proposals, pricing for volume, agreeing payment terms and protecting cash flow.",
+    coverImage: {
+      file: "winning-corporate-customers-cover.webp",
+      mimeType: "image/webp",
+      alt: "Two men and a woman with long wavy hair seated around a wooden outdoor table, holding papers and a notebook, outside a glass-fronted office building",
+      altTranslations: {
+        zh: "两位男士和一位长卷发的女士围坐在玻璃幕墙办公楼外的木质户外桌旁，手里拿着文件和笔记本",
+        ms: "Dua lelaki dan seorang wanita berambut panjang beralun duduk mengelilingi meja kayu di luar sebuah bangunan pejabat berkaca, memegang kertas dan buku nota",
+      },
+    },
+    contentImages: {
+      handshake: {
+        file: "winning-corporate-customers-handshake.webp",
+        mimeType: "image/webp",
+        alt: "A smiling woman in a polka-dot blouse seated in a patterned armchair, reaching out to shake hands with papers on her lap",
+        altTranslations: {
+          zh: "一位身穿波点上衣的微笑女士坐在花纹扶手椅上，膝上放着文件，伸出手准备握手",
+          ms: "Seorang wanita berblaus bertompok yang tersenyum duduk di kerusi berlengan bercorak, menghulurkan tangan untuk berjabat dengan kertas di ribanya",
+        },
+        after: "Learn how a company actually buys before you decide how to sell to it.",
+        afterTranslations: {
+          zh: "在决定如何向一家公司销售之前，先弄清楚这家公司实际上是怎么采购的。",
+          ms: "Pelajari bagaimana sesebuah syarikat sebenarnya membeli sebelum anda memutuskan cara menjual kepadanya.",
+        },
+      },
+    },
+    excerpt:
+      "Selling to other businesses can bring bigger, steadier orders than selling to individuals, but it also means longer sales cycles, formal paperwork, and payment terms that can strain a small firm's cash. This guide helps Malaysian SMEs find and approach corporate customers, write clear proposals, price for volume, agree sensible contracts and payment terms, and avoid depending on a single big client.",
+    body: `A single corporate customer can be worth more than hundreds of walk-in buyers: bigger orders, repeat business, and a name that helps you win the next client. That is why many small Malaysian firms dream of landing their first large account.
+
+But business-to-business selling works differently from selling to the public. Decisions take longer, several people have a say, paperwork is heavier, and payment often arrives weeks after delivery. A small firm that wins a big contract without preparing for those realities can end up busier, poorer, and stretched thin.
+
+This is general information, not legal, tax, or financial advice. Procurement practices, e-invoicing requirements, tax rules, and market conditions change over time, and information in this guide may be out of date. Confirm current requirements with the relevant authorities, your accountant, and where needed a lawyer before you sign any contract.
+
+## 1. Understand how businesses buy
+
+Learn how a company actually buys before you decide how to sell to it. The person who likes your product is often not the person who signs the order.
+
+### Know the people involved
+In a business purchase there may be a user who needs the product, a manager who controls the budget, a buyer or procurement officer who negotiates, and a finance team who pays. Find out who plays each role and what each cares about.
+
+### Understand what they value
+Corporate buyers usually care about reliability, consistent quality, delivery on time, price, support, and the risk of something going wrong. A lower price rarely wins if the buyer doubts that you can deliver.
+
+### Expect a longer cycle
+It can take weeks or months from the first meeting to the first order, with quotes, samples, approvals, and onboarding along the way. Plan your cash flow for the wait. Our guide on managing cash flow explains how to survive slow starts.
+
+### Match your offer to a clear need
+The easiest sale solves a problem the company already knows it has, such as a supplier that keeps failing, a cost that is rising, or a process that is too slow.
+
+### Be honest about your capacity
+Large customers expect volume and consistency. Make sure that you can handle larger orders without hurting quality, and decide how much capacity you will commit.
+
+## 2. Find and approach the right customers
+
+### Start with who you already know
+Existing customers, suppliers, friends, and former colleagues may work in or know companies that need what you offer. Warm introductions beat cold calls.
+
+### Choose a narrow target
+It is easier to win customers in one industry or size of company where you understand the needs than to chase everyone. Our guide on writing a business plan explains how to define your customers.
+
+### Use your online presence
+Buyers look suppliers up. A clear website, a short profile of your products and clients, and an accurate business listing build trust. Our guide on getting your business found online explains the basics.
+
+### Go where buyers meet
+Industry events, trade fairs, business associations, and supplier days can introduce you to buyers. Prepare a short introduction and a simple sample or brochure.
+
+### Approach with a reason
+When you contact a company, say who you are, what problem you can help with, and a small next step, such as a short call or a sample. Avoid long generic messages.
+
+### Be patient and follow up
+Many deals are won by the supplier who politely follows up after the first meeting. Keep a simple record of who you contacted and when.
+
+## 3. Prepare to be a trusted supplier
+
+### Get your business basics right
+Larger companies often check that a supplier is properly registered and operates legitimately. Our guide on how to register a business and our guide on business licences and permits explain what to have in order, and our guide on opening a business bank account explains why a clean business account matters.
+
+### Be ready for supplier onboarding
+Many companies ask suppliers to complete a registration or onboarding process, which may include company documents, bank details, tax details, references, and sometimes policies or certifications. Requirements differ from company to company, so ask what they need early and keep your documents ready.
+
+### Prepare for e-invoicing
+Business customers increasingly expect invoices in line with current tax authority requirements. Malaysia's e-invoicing rollout has been phased and timelines have been adjusted, so confirm the current rules and your own timetable with the Inland Revenue Board and your accountant. Our guide on e-invoicing in Malaysia explains the basics.
+
+### Show your quality
+References, case studies, photos of past work, certifications relevant to your field, and clear product specifications give buyers confidence. Our guide on halal certification explains one example of a credential that can matter in some sectors.
+
+### Check insurance and compliance
+Some corporate customers expect suppliers to carry certain insurance or meet safety, data protection, or ethical standards. Our guide on business insurance for Malaysian SMEs, our guide on PDPA compliance, and our guide on workplace safety explain areas buyers may ask about.
+
+## 4. Write a proposal and a quote that win
+
+### Start with their problem, not your product
+Open with a brief summary of what you understand the customer needs, in their own words. Then show how your offer solves it.
+
+### Keep it clear and short
+Cover what you will deliver, when, how much it costs, what is included and excluded, how you will support them, and what happens next. A tidy two or three pages often beats a thick document.
+
+### Show the value, not only the price
+Explain how your offer saves time, reduces mistakes, or cuts total cost. Buyers compare quotes, so help them compare fairly.
+
+### Be specific about scope
+Vague scope leads to disputes and unpaid extra work. State quantities, specifications, delivery dates, service levels, and what counts as extra. Our guide on contracts and terms for small businesses explains how to define scope.
+
+### Include proof
+Add a relevant reference, a short case study, or a sample. Evidence is more convincing than adjectives.
+
+### Make it easy to say yes
+Provide a clear price, a valid-until date, and a simple way to accept. Follow up politely.
+
+## 5. Price for volume without giving away your margin
+
+### Know your true costs first
+Include materials, labour, delivery, packaging, overheads, finance costs of waiting to be paid, and the time spent on admin. Our guide on pricing products and services explains how to build a price that protects your margin.
+
+### Offer volume benefits carefully
+Discounts for larger or repeat orders are normal, but work out the lowest price that still pays. Consider tiers, rather than one deep cut, so that discounts match real savings for you.
+
+### Do not fear the price conversation
+Buyers often negotiate as a routine. Prepare your limits, know what you can trade, such as payment terms, delivery flexibility, or order size, and avoid dropping the price at the first push.
+
+### Watch hidden costs
+Large customers may ask for special packaging, labelling, delivery windows, returns, or rebates. Price these in before you agree.
+
+### Do not forget the cost of money
+If you must pay suppliers and staff long before the customer pays you, the interest or lost opportunity is a real cost. Our guide on managing business debt and loan repayments explains why borrowing to fund slow-paying customers needs care.
+
+> A big customer who pays late can cost you more than a small customer who pays on time. Count the cash, not just the sale.
+
+## 6. Agree contracts and payment terms that you can live with
+
+### Read before you sign
+Large companies often use standard contracts that favour the buyer. Read the terms on payment, delivery, returns, liability, intellectual property, exclusivity, termination, and penalties, and ask your lawyer to review significant contracts.
+
+### Negotiate payment terms
+Payment terms of thirty days or more are common in business, and some large firms ask for longer. Longer terms mean you finance their purchase. Ask for the shortest terms that you can get, and consider deposits for big or custom orders, staged payments, or early-payment discounts.
+
+### Be clear on invoicing
+Find out how, when, and to whom invoices must be sent, what documents the customer needs, and how long approval takes. A mistake in a purchase order number can delay payment for weeks. Our guide on bookkeeping and accounting basics explains how to keep invoicing tidy.
+
+### Watch out for one-sided clauses
+Be careful of clauses that let the buyer cancel without paying, change specifications at will, or hold payment for long periods. Ask for balance.
+
+### Protect your intellectual property and data
+Make sure that you keep ownership of your designs, methods, and brand unless you clearly agree otherwise, and treat customer data carefully. Our guide on trademark registration explains how to protect your name.
+
+### Keep every order in writing
+Confirm orders, changes, and deliveries in writing, and keep delivery orders and sign-offs. Our guide on handling a tax audit explains why records matter later.
+
+## 7. Get paid on time and protect your cash
+
+### Invoice promptly and correctly
+Send the invoice as soon as you deliver, with all required details. Delays on your side become delays in payment.
+
+### Follow up early and politely
+Check that the invoice has been received and approved, and ask for the expected payment date. Our guide on collecting late payments explains a step-by-step approach.
+
+### Know your options when payment is late
+Reminders, a call to the finance team, a formal demand letter, and in serious cases legal action are the usual steps. Discuss the options with a lawyer, and confirm the current rules for your sector.
+
+### Do not let one client carry you
+Avoid depending on a single customer for most of your revenue. If it leaves, delays payment, or squeezes your price, you have little protection. Aim to build a spread of customers over time.
+
+### Consider financing carefully
+Some businesses use invoice financing or other facilities to bridge slow payments. Compare the costs, read the terms, and make sure that the savings in cash flow are worth the price. Our guide on SME grants and funding in Malaysia explains where to look.
+
+### Review each account
+Track how long each customer takes to pay, how much work each takes, and what margin each gives. Keep the profitable ones and renegotiate or drop the rest.
+
+## 8. Build relationships and referrals
+
+### Deliver exactly what you promised
+Reliability is the main way to turn a first order into a long relationship. Tell customers early when something may go wrong.
+
+### Stay in touch
+Check in after delivery, ask what worked, and share useful news. Our guide on building customer loyalty and repeat business explains how to keep customers coming back.
+
+### Ask for referrals and references
+A satisfied buyer can open doors to others, but do ask politely, and offer something useful in return.
+
+### Keep improving
+Collect feedback, fix the problems you hear about, and update your offer. Our guide on managing supplier relationships explains the same relationship from the other side, which can help you understand your buyer.
+
+If you are looking for an accountant, a lawyer, or a delivery partner to help you serve corporate customers, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so that buyers searching for suppliers can find your business.
+
+## Common mistakes Malaysian SMEs make with corporate customers
+
+- **Chasing the contract and ignoring the cash.** A large order with long payment terms can drain a small firm, so work out the cash needed before you say yes.
+- **Signing without reading.** Standard contracts can hide penalties, one-sided cancellation, and unclear scope, so read them and get advice on anything significant.
+- **Depending on one big client.** If one customer is most of your income, you have little bargaining power, so keep adding other customers.
+
+## Where to start
+
+- **This week:** Choose one type of corporate customer you understand, and list five companies that might need what you offer.
+- **Next:** Prepare a short company profile, a clear price list, and a one-page proposal template.
+- **Then:** Approach two or three companies through people you know, and ask what their buying process and payment terms look like.
+- **Before you sign:** Work out the cash you will need, negotiate payment terms, and have a lawyer review the contract.
+
+Winning a corporate customer is rewarding, but growth that you cannot fund can hurt as much as no growth at all. Sell to the needs of the buyer, price and contract with care, and protect your cash, and big customers can become a steady foundation for your business.`,
+    faqs: [
+      {
+        question: "How do I find corporate customers for my small business?",
+        answer:
+          "Start with people you already know, choose a narrow industry or company size, build a clear online profile, and attend industry events. Approach companies with a specific problem you can solve and a small next step, then follow up politely.",
+      },
+      {
+        question: "What should a B2B proposal include?",
+        answer:
+          "A short summary of the customer's need, what you will deliver and when, price and what is included or excluded, service and support, proof such as a reference or case study, and the next steps. Keep it clear and specific about scope.",
+      },
+      {
+        question: "How should I price for large or repeat orders?",
+        answer:
+          "Know your true costs first, then offer volume discounts only to the point where the price still pays. Consider tiered pricing, expect negotiation, trade on payment terms or delivery flexibility, and price in special packaging, rebates, and the cost of waiting for payment.",
+      },
+      {
+        question: "What payment terms are normal for corporate customers?",
+        answer:
+          "Terms of thirty days or more are common, and some large companies ask for longer. Longer terms mean you finance their purchase, so negotiate the shortest terms you can, consider deposits or staged payments for big orders, and check how and when invoices must be submitted.",
+      },
+      {
+        question: "What if a large customer pays late?",
+        answer:
+          "Follow up early and politely with the finance team, confirm the invoice was approved, and keep records. If it continues, send a formal demand and speak to a lawyer about your options. Avoid letting one customer account for most of your income.",
+      },
+      {
+        question: "Do I need to prepare for e-invoicing when selling to companies?",
+        answer:
+          "Business customers increasingly expect invoices that follow current tax authority requirements. The e-invoicing rollout has been phased and timelines have been adjusted, so confirm the current rules and your own timetable with the Inland Revenue Board and your accountant.",
+      },
+      {
+        question: "What documents do large companies ask suppliers for?",
+        answer:
+          "Often company registration details, bank and tax details, references, and sometimes insurance, certifications, or policies. Requirements vary by company, so ask early and keep your documents ready.",
+      },
+      {
+        question: "How do I avoid depending on one big client?",
+        answer:
+          "Keep prospecting even when busy, aim to spread revenue over several customers and sectors, review each account's margin and payment behaviour, and build referrals from satisfied buyers so that you are never reliant on a single account.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "赢得企业客户：企业对企业的销售、提案与向大公司收款",
+        excerpt:
+          "向其他企业销售，可以带来比向个人销售更大更稳定的订单，但也意味着更长的销售周期、正式的文件手续，以及可能让小企业现金吃紧的付款条件。本指南帮助马来西亚中小企业寻找并接触企业客户，撰写清楚的提案，为大批量定价，商定合理的合约和付款条件，并避免依赖单一的大客户。",
+        body: `一位企业客户的价值，可能超过数百位上门的顾客：更大的订单、重复的生意，以及一个有助于您赢得下一位客户的名字。这就是为什么许多马来西亚的小企业梦想着拿下第一个大客户。
+
+但企业对企业的销售与向大众销售的方式不同。决策需要更长时间，有好几个人有发言权，文件手续更繁重，而付款往往在送货之后好几个星期才到。一家没有为这些现实做好准备就赢得大合约的小企业，可能反而变得更忙、更穷、更捉襟见肘。
+
+本文仅提供一般信息，并非法律、税务或财务建议。采购惯例、电子发票要求、税务规定和市场状况会随时间变化，本指南的信息可能已经过时。在签署任何合约之前，请向相关主管单位、您的会计师以及必要时向律师确认现行要求。
+
+## 1. 了解企业如何采购
+
+在决定如何向一家公司销售之前，先弄清楚这家公司实际上是怎么采购的。喜欢您产品的人，往往不是签署订单的人。
+
+### 了解涉及的人
+在企业采购中，可能有需要产品的使用者、掌管预算的经理、负责谈判的买手或采购人员，以及付款的财务团队。弄清楚每个人扮演什么角色、各自关心什么。
+
+### 了解他们看重什么
+企业买家通常关心可靠性、品质的稳定、准时送货、价格、支持，以及出问题的风险。如果买家怀疑您能否交货，较低的价格很少能赢。
+
+### 预料到较长的周期
+从第一次会面到第一张订单，可能需要几个星期或几个月，期间有报价、样品、批准和上手流程。请为等待期规划您的现金流。我们关于管理现金流的指南说明了如何撑过缓慢的开头。
+
+### 让您的方案配合明确的需求
+最容易的销售，是解决公司已知存在的问题，例如一直出问题的供应商、不断上升的成本，或太慢的流程。
+
+### 诚实面对您的产能
+大客户期望数量和稳定性。请确保您能处理更大的订单而不损害品质，并决定您将承诺多少产能。
+
+## 2. 寻找并接触合适的客户
+
+### 从您已认识的人开始
+现有的顾客、供应商、朋友和前同事，可能在需要您所提供之物的公司工作或认识这些公司。热情的引荐胜过冷冰冰的电话。
+
+### 选择狭窄的目标
+在您了解需求的某个行业或公司规模中赢得客户，比追逐所有人更容易。我们关于撰写商业计划书的指南说明了如何界定您的客户。
+
+### 善用您的网络形象
+买家会查询供应商。清楚的网站、关于产品和客户的简短介绍，以及准确的商家列表，会建立信任。我们关于让您的企业被找到的指南说明了基础知识。
+
+### 去买家聚集的地方
+行业活动、贸易展览、商业协会和供应商日，可以让您认识买家。请准备简短的自我介绍和简单的样品或宣传册。
+
+### 带着理由去接触
+当您联系一家公司时，说明您是谁、您能帮助解决什么问题，以及一个小小的下一步，例如简短的通话或样品。避免冗长的通用信息。
+
+### 要有耐心并跟进
+许多交易是由那些在第一次会面之后礼貌地跟进的供应商赢得的。请保存一份简单的记录，记下您联系了谁、什么时候。
+
+## 3. 准备好成为值得信赖的供应商
+
+### 把企业的基本事项做好
+较大的公司常常会查核供应商是否妥善注册并合法经营。我们关于如何注册企业的指南和关于营业执照与许可证的指南说明了应该备妥什么，关于开设企业银行户口的指南说明了为什么一个干净的企业户口很重要。
+
+### 为供应商入册做好准备
+许多公司要求供应商完成注册或入册流程，可能包括公司文件、银行资料、税务资料、推荐人，有时还有政策或认证。要求因公司而异，所以请及早询问他们需要什么，并备好您的文件。
+
+### 为电子发票做好准备
+企业客户越来越期望发票符合税务机关现行的要求。马来西亚的电子发票推行是分阶段的，时间表也有调整，所以请向内陆税收局和您的会计师确认现行规定和您自己的时间表。我们关于马来西亚电子发票的指南说明了基础知识。
+
+### 展示您的品质
+推荐人、案例研究、过往作品的照片、与您的领域相关的认证，以及清楚的产品规格，给买家信心。我们关于清真认证的指南说明了在某些行业可能很重要的一种资格的例子。
+
+### 查核保险和合规
+有些企业客户期望供应商持有某些保险，或符合安全、资料保护或道德标准。我们关于马来西亚中小企业商业保险的指南、关于个人资料保护法令合规的指南和关于工作场所安全的指南说明了买家可能询问的方面。
+
+## 4. 撰写能赢的提案和报价
+
+### 从他们的问题开始，而不是您的产品
+以简短的摘要开场，用客户自己的话说明您理解他们需要什么。然后展示您的方案如何解决它。
+
+### 保持清楚而简短
+涵盖您将交付什么、何时交付、费用多少、包含和不包含什么、您将如何支持他们，以及接下来会发生什么。整洁的两三页往往胜过厚厚的文件。
+
+### 展示价值，而不只是价格
+说明您的方案如何节省时间、减少错误或降低总成本。买家会比较报价，所以请帮助他们公平地比较。
+
+### 对范围要具体
+含糊的范围会导致纠纷和没有报酬的额外工作。写明数量、规格、交货日期、服务水平，以及什么算额外。我们关于小企业合约与条款的指南说明了如何界定范围。
+
+### 附上证明
+加上相关的推荐人、简短的案例研究或样品。证据比形容词更有说服力。
+
+### 让对方容易说“好”
+提供清楚的价格、有效日期和简单的接受方式。礼貌地跟进。
+
+## 5. 为大批量定价而不放弃您的利润
+
+### 先了解您的真实成本
+包括材料、人工、送货、包装、营运费用、等待付款的融资成本，以及花在行政上的时间。我们关于产品与服务定价的指南说明了如何建立保护您利润的价格。
+
+### 谨慎地提供批量优惠
+对较大或重复订单的折扣是正常的，但请算出仍然能支付成本的最低价格。考虑分级，而不是一次大幅削价，这样折扣才与您的真实节省相配。
+
+### 不要害怕价格的谈话
+买家常把谈判当作例行公事。准备好您的底线，知道您可以拿什么交换，例如付款条件、送货弹性或订单大小，并避免在第一次施压时就降价。
+
+### 留意隐藏的成本
+大客户可能要求特殊的包装、标签、送货时段、退货或回扣。请在同意之前把这些算进价格。
+
+### 别忘了资金的成本
+如果您必须在客户付款给您之前很久就付钱给供应商和员工，利息或损失的机会就是真实的成本。我们关于管理企业债务与贷款还款的指南说明了为什么为付款缓慢的客户借钱融资需要小心。
+
+> 一位迟付款的大客户，可能比一位准时付款的小客户让您花更多。请算现金，而不只是销售额。
+
+## 6. 商定您能接受的合约和付款条件
+
+### 签字之前先阅读
+大公司常使用偏向买家的标准合约。请阅读关于付款、送货、退货、责任、知识产权、独家、终止和罚款的条款，并让您的律师审阅重大合约。
+
+### 谈判付款条件
+三十天或更长的付款条件在商业中很常见，有些大公司要求更长。较长的条件意味着由您为他们的采购融资。请争取您能得到的最短条件，并考虑为大型或定制订单收取订金、分期付款或提早付款折扣。
+
+### 对开票要清楚
+弄清楚发票必须如何、何时、寄给谁、客户需要哪些文件，以及批准需要多久。采购订单号码中的一个错误，可能让付款延误好几个星期。我们关于簿记和会计基础的指南说明了如何保持开票整洁。
+
+### 留意一边倒的条款
+小心那些让买家不付款就取消、随意更改规格，或长时间扣留付款的条款。请要求平衡。
+
+### 保护您的知识产权和资料
+确保您保留对设计、方法和品牌的所有权，除非您明确同意其他安排，并谨慎处理客户资料。我们关于商标注册的指南说明了如何保护您的名称。
+
+### 把每一张订单都留有书面记录
+以书面确认订单、变更和送货，并保留送货单和签收。我们关于应对税务审计的指南说明了为什么记录日后很重要。
+
+## 7. 准时收款并保护您的现金
+
+### 及时而正确地开票
+送货后尽快发出发票，并附上所有必要的细节。您这边的延误会变成付款的延误。
+
+### 及早而礼貌地跟进
+查看发票是否已收到并批准，并询问预计的付款日期。我们关于追收逾期货款的指南说明了循序渐进的方法。
+
+### 知道付款迟延时的选择
+提醒、致电财务团队、正式的催款函，以及严重时采取法律行动，是通常的步骤。请与律师讨论选择，并确认适用于您行业的现行规定。
+
+### 不要让一个客户拖着您走
+避免大部分营收依赖单一客户。如果它离开、拖延付款或压低您的价格，您几乎没有保护。目标是逐步建立分散的客户群。
+
+### 谨慎考虑融资
+有些企业使用发票融资或其他融资工具来弥补缓慢的付款。请比较成本、阅读条款，并确保现金流上节省的钱值得这个代价。我们关于马来西亚中小企业补助与资金的指南说明了去哪里找。
+
+### 检视每个客户
+追踪每位客户付款需要多久、每位需要多少工作量，以及每位带来多少利润。保留有利可图的，并对其余的重新谈判或舍弃。
+
+## 8. 建立关系和引荐
+
+### 确切地交付您所承诺的
+可靠是把第一张订单变成长期关系的主要方式。当有事可能出错时，请及早告诉客户。
+
+### 保持联系
+送货后询问，了解什么有效，并分享有用的消息。我们关于建立顾客忠诚度与回头客的指南说明了如何让客户不断回来。
+
+### 请求引荐和推荐
+满意的买家可以为您打开其他门，但请礼貌地请求，并提供一些有用的东西作为回报。
+
+### 持续改进
+收集反馈，修正您听到的问题，并更新您的方案。我们关于管理供应商关系的指南从另一边说明了同样的关系，这可以帮助您理解您的买家。
+
+如果您正在寻找会计师、律师或送货伙伴来协助您服务企业客户，可以[浏览目录](/zh)寻找您附近的专业人士，并[创建免费商家列表](/zh/signup)，让搜索供应商的买家能找到您的企业。
+
+## 马来西亚中小企业在企业客户方面的常见错误
+
+- **只追合约而忽视现金。** 付款期限长的大订单可能拖垮小企业，所以请在说“好”之前算出所需的现金。
+- **没读就签字。** 标准合约可能隐藏罚款、一边倒的取消条款和不清楚的范围，所以请阅读它们，并对任何重大事项征求意见。
+- **依赖单一的大客户。** 如果一位客户占了您大部分收入，您几乎没有议价能力，所以请持续增加其他客户。
+
+## 从哪里开始
+
+- **本周：** 选择一种您了解的企业客户类型，并列出五家可能需要您所提供之物的公司。
+- **接下来：** 准备简短的公司简介、清楚的价目表和一页纸的提案模板。
+- **然后：** 通过您认识的人接触两三家公司，并询问他们的采购流程和付款条件是怎样的。
+- **签字之前：** 算出您将需要的现金，谈判付款条件，并请律师审阅合约。
+
+赢得企业客户令人欣慰，但无法负担的成长，可能与没有成长一样伤人。针对买家的需求销售，谨慎地定价和订约，并保护您的现金，大客户就可以成为您企业稳定的基础。`,
+        faqs: [
+          {
+            question: "我如何为小企业找到企业客户？",
+            answer:
+              "从您已认识的人开始，选择狭窄的行业或公司规模，建立清楚的网络形象，并参加行业活动。带着您能解决的具体问题和一个小小的下一步去接触公司，然后礼貌地跟进。",
+          },
+          {
+            question: "企业对企业的提案应该包含什么？",
+            answer:
+              "对客户需求的简短摘要、您将交付什么以及何时交付、价格以及包含或不包含什么、服务和支持、推荐人或案例研究等证明，以及下一步。请在范围上保持清楚而具体。",
+          },
+          {
+            question: "我应该如何为大批量或重复订单定价？",
+            answer:
+              "先了解您的真实成本，然后只在价格仍能支付成本的范围内提供批量折扣。考虑分级定价，预料到谈判，用付款条件或送货弹性来交换，并把特殊包装、回扣和等待付款的成本算进价格。",
+          },
+          {
+            question: "对企业客户来说，什么付款条件是正常的？",
+            answer:
+              "三十天或更长的条件很常见，有些大公司要求更长。较长的条件意味着由您为他们的采购融资，所以请争取最短的条件，对大订单考虑订金或分期付款，并查明发票必须如何以及何时提交。",
+          },
+          {
+            question: "如果大客户迟付款怎么办？",
+            answer:
+              "及早而礼貌地向财务团队跟进，确认发票已获批准，并保留记录。如果持续拖延，发出正式的催款函，并向律师咨询您的选择。避免让一位客户占您大部分收入。",
+          },
+          {
+            question: "向公司销售时，我需要为电子发票做准备吗？",
+            answer:
+              "企业客户越来越期望发票符合税务机关现行的要求。电子发票的推行是分阶段的，时间表也有调整，所以请向内陆税收局和您的会计师确认现行规定和您自己的时间表。",
+          },
+          {
+            question: "大公司会向供应商索取哪些文件？",
+            answer:
+              "通常是公司注册资料、银行和税务资料、推荐人，有时还有保险、认证或政策。要求因公司而异，所以请及早询问并备好您的文件。",
+          },
+          {
+            question: "我如何避免依赖单一的大客户？",
+            answer:
+              "即使忙碌也持续开发客户，目标是把营收分散到几位客户和几个行业，检视每个客户的利润和付款表现，并从满意的买家建立引荐，这样您就不会依赖单一客户。",
+          },
+        ],
+      },
+      ms: {
+        title: "Memenangi Pelanggan Korporat: Jualan B2B, Cadangan dan Mendapat Bayaran daripada Syarikat Lebih Besar",
+        excerpt:
+          "Menjual kepada perniagaan lain boleh membawa pesanan yang lebih besar dan lebih stabil daripada menjual kepada individu, tetapi ia juga bermakna kitaran jualan yang lebih panjang, dokumen rasmi dan terma pembayaran yang boleh menegangkan tunai firma kecil. Panduan ini membantu PKS Malaysia mencari dan mendekati pelanggan korporat, menulis cadangan yang jelas, menetapkan harga untuk jumlah besar, bersetuju dengan kontrak dan terma pembayaran yang munasabah, dan mengelak bergantung pada satu pelanggan besar.",
+        body: `Seorang pelanggan korporat boleh bernilai lebih daripada ratusan pembeli yang datang ke kedai: pesanan lebih besar, perniagaan berulang, dan nama yang membantu anda memenangi pelanggan seterusnya. Itulah sebabnya ramai firma kecil Malaysia bermimpi untuk mendapatkan akaun besar pertama mereka.
+
+Tetapi jualan perniagaan-ke-perniagaan berfungsi secara berbeza daripada menjual kepada orang ramai. Keputusan mengambil masa lebih lama, beberapa orang mempunyai pendapat, dokumen lebih berat, dan bayaran selalunya tiba beberapa minggu selepas penghantaran. Firma kecil yang memenangi kontrak besar tanpa bersedia untuk realiti itu boleh menjadi lebih sibuk, lebih miskin dan tertekan.
+
+Ini maklumat umum, bukan nasihat undang-undang, cukai atau kewangan. Amalan perolehan, keperluan e-Invois, peraturan cukai dan keadaan pasaran berubah dari semasa ke semasa, dan maklumat dalam panduan ini mungkin sudah lapuk. Sahkan keperluan semasa dengan pihak berkuasa berkaitan, akauntan anda dan jika perlu peguam sebelum anda menandatangani sebarang kontrak.
+
+## 1. Fahami bagaimana perniagaan membeli
+
+Pelajari bagaimana sesebuah syarikat sebenarnya membeli sebelum anda memutuskan cara menjual kepadanya. Orang yang menyukai produk anda selalunya bukan orang yang menandatangani pesanan.
+
+### Kenali orang yang terlibat
+Dalam pembelian perniagaan mungkin ada pengguna yang memerlukan produk, pengurus yang mengawal bajet, pembeli atau pegawai perolehan yang berunding, dan pasukan kewangan yang membayar. Ketahui siapa memainkan setiap peranan dan apa yang diambil berat oleh setiap seorang.
+
+### Fahami apa yang mereka hargai
+Pembeli korporat biasanya mengambil berat tentang kebolehpercayaan, kualiti yang konsisten, penghantaran tepat masa, harga, sokongan dan risiko sesuatu menjadi salah. Harga lebih rendah jarang menang jika pembeli meragui anda dapat menghantar.
+
+### Jangkakan kitaran lebih panjang
+Ia boleh mengambil masa beberapa minggu atau bulan daripada mesyuarat pertama kepada pesanan pertama, dengan sebut harga, sampel, kelulusan dan penerimaan sepanjang jalan. Rancang aliran tunai anda untuk menunggu. Panduan kami tentang menguruskan aliran tunai menerangkan cara bertahan pada permulaan yang perlahan.
+
+### Padankan tawaran anda dengan keperluan yang jelas
+Jualan paling mudah menyelesaikan masalah yang syarikat sudah tahu ia ada, seperti pembekal yang sentiasa gagal, kos yang meningkat atau proses yang terlalu perlahan.
+
+### Jujur tentang kapasiti anda
+Pelanggan besar menjangkakan jumlah dan konsistensi. Pastikan anda boleh mengendalikan pesanan lebih besar tanpa menjejaskan kualiti, dan tentukan berapa banyak kapasiti yang akan anda komitmenkan.
+
+## 2. Cari dan dekati pelanggan yang betul
+
+### Mulakan dengan orang yang sudah anda kenali
+Pelanggan sedia ada, pembekal, rakan dan bekas rakan sekerja mungkin bekerja di atau mengenali syarikat yang memerlukan apa yang anda tawarkan. Pengenalan hangat mengalahkan panggilan dingin.
+
+### Pilih sasaran yang sempit
+Lebih mudah memenangi pelanggan dalam satu industri atau saiz syarikat di mana anda memahami keperluan daripada mengejar semua orang. Panduan kami tentang menulis pelan perniagaan menerangkan cara menentukan pelanggan anda.
+
+### Gunakan kehadiran dalam talian anda
+Pembeli mencari pembekal. Laman web yang jelas, profil ringkas produk dan pelanggan anda, dan penyenaraian perniagaan yang tepat membina kepercayaan. Panduan kami tentang membolehkan perniagaan anda ditemui dalam talian menerangkan asasnya.
+
+### Pergi ke tempat pembeli bertemu
+Acara industri, pameran perdagangan, persatuan perniagaan dan hari pembekal boleh memperkenalkan anda kepada pembeli. Sediakan pengenalan ringkas dan sampel atau risalah yang mudah.
+
+### Dekati dengan sebab
+Apabila anda menghubungi syarikat, nyatakan siapa anda, masalah apa yang boleh anda bantu, dan langkah seterusnya yang kecil, seperti panggilan ringkas atau sampel. Elakkan mesej umum yang panjang.
+
+### Bersabar dan susuli
+Banyak tawaran dimenangi oleh pembekal yang menyusuli dengan sopan selepas mesyuarat pertama. Simpan rekod mudah tentang siapa yang anda hubungi dan bila.
+
+## 3. Bersedia menjadi pembekal yang dipercayai
+
+### Pastikan asas perniagaan anda betul
+Syarikat lebih besar selalunya menyemak bahawa pembekal didaftarkan dengan betul dan beroperasi secara sah. Panduan kami tentang cara mendaftar perniagaan dan panduan kami tentang lesen dan permit perniagaan menerangkan apa yang perlu diuruskan, dan panduan kami tentang membuka akaun bank perniagaan menerangkan mengapa akaun perniagaan yang bersih penting.
+
+### Bersedia untuk penerimaan pembekal
+Banyak syarikat meminta pembekal melengkapkan proses pendaftaran atau penerimaan, yang mungkin termasuk dokumen syarikat, butiran bank, butiran cukai, rujukan, dan kadangkala dasar atau pensijilan. Keperluan berbeza antara syarikat, jadi tanya lebih awal apa yang mereka perlukan dan sediakan dokumen anda.
+
+### Bersedia untuk e-Invois
+Pelanggan perniagaan semakin menjangkakan invois yang mengikut keperluan semasa pihak berkuasa cukai. Pelaksanaan e-Invois Malaysia dibuat secara berfasa dan garis masa telah diselaraskan, jadi sahkan peraturan semasa dan jadual anda sendiri dengan Lembaga Hasil Dalam Negeri dan akauntan anda. Panduan kami tentang e-Invois di Malaysia menerangkan asasnya.
+
+### Tunjukkan kualiti anda
+Rujukan, kajian kes, gambar kerja lalu, pensijilan yang berkaitan dengan bidang anda, dan spesifikasi produk yang jelas memberi pembeli keyakinan. Panduan kami tentang pensijilan halal menerangkan satu contoh kelayakan yang boleh penting dalam sesetengah sektor.
+
+### Semak insurans dan pematuhan
+Sesetengah pelanggan korporat menjangkakan pembekal membawa insurans tertentu atau memenuhi piawaian keselamatan, perlindungan data atau etika. Panduan kami tentang insurans perniagaan untuk PKS Malaysia, panduan kami tentang pematuhan PDPA dan panduan kami tentang keselamatan tempat kerja menerangkan bidang yang mungkin ditanya oleh pembeli.
+
+## 4. Tulis cadangan dan sebut harga yang menang
+
+### Mulakan dengan masalah mereka, bukan produk anda
+Buka dengan ringkasan pendek apa yang anda fahami pelanggan perlukan, dalam perkataan mereka sendiri. Kemudian tunjukkan bagaimana tawaran anda menyelesaikannya.
+
+### Pastikan jelas dan ringkas
+Liputi apa yang akan anda hantar, bila, berapa kosnya, apa yang disertakan dan dikecualikan, bagaimana anda akan menyokong mereka, dan apa yang berlaku seterusnya. Dua atau tiga muka surat yang kemas selalunya mengalahkan dokumen tebal.
+
+### Tunjukkan nilai, bukan sekadar harga
+Terangkan bagaimana tawaran anda menjimatkan masa, mengurangkan kesilapan atau memotong jumlah kos. Pembeli membandingkan sebut harga, jadi bantu mereka membandingkan dengan adil.
+
+### Jelas tentang skop
+Skop yang kabur membawa kepada pertikaian dan kerja tambahan tanpa bayaran. Nyatakan kuantiti, spesifikasi, tarikh penghantaran, tahap perkhidmatan, dan apa yang dikira tambahan. Panduan kami tentang kontrak dan terma untuk perniagaan kecil menerangkan cara menentukan skop.
+
+### Sertakan bukti
+Tambah rujukan yang berkaitan, kajian kes ringkas atau sampel. Bukti lebih meyakinkan daripada kata sifat.
+
+### Permudahkan untuk berkata ya
+Beri harga yang jelas, tarikh sah sehingga dan cara mudah untuk menerima. Susuli dengan sopan.
+
+## 5. Tetapkan harga untuk jumlah besar tanpa melepaskan margin anda
+
+### Ketahui kos sebenar anda dahulu
+Sertakan bahan, buruh, penghantaran, pembungkusan, overhed, kos pembiayaan menunggu dibayar, dan masa yang dihabiskan untuk pentadbiran. Panduan kami tentang penetapan harga produk dan perkhidmatan menerangkan cara membina harga yang melindungi margin anda.
+
+### Tawarkan faedah jumlah dengan berhati-hati
+Diskaun untuk pesanan lebih besar atau berulang adalah normal, tetapi kira harga terendah yang masih menampung kos. Pertimbangkan peringkat, dan bukannya satu potongan besar, supaya diskaun sepadan dengan penjimatan sebenar anda.
+
+### Jangan takut perbualan harga
+Pembeli selalunya berunding sebagai rutin. Sediakan had anda, ketahui apa yang boleh anda tukar, seperti terma pembayaran, fleksibiliti penghantaran atau saiz pesanan, dan elakkan menurunkan harga pada tolakan pertama.
+
+### Perhatikan kos tersembunyi
+Pelanggan besar mungkin meminta pembungkusan, pelabelan, waktu penghantaran, pemulangan atau rebat khas. Masukkan ini dalam harga sebelum anda bersetuju.
+
+### Jangan lupa kos wang
+Jika anda mesti membayar pembekal dan pekerja lama sebelum pelanggan membayar anda, faedah atau peluang yang hilang ialah kos sebenar. Panduan kami tentang menguruskan hutang perniagaan dan bayaran balik pinjaman menerangkan mengapa meminjam untuk membiayai pelanggan yang lambat membayar perlu berhati-hati.
+
+> Pelanggan besar yang lewat membayar boleh menelan kos lebih daripada pelanggan kecil yang membayar tepat masa. Kira tunai, bukan sekadar jualan.
+
+## 6. Persetujui kontrak dan terma pembayaran yang boleh anda terima
+
+### Baca sebelum menandatangani
+Syarikat besar selalunya menggunakan kontrak piawai yang menyebelahi pembeli. Baca terma tentang pembayaran, penghantaran, pemulangan, liabiliti, harta intelek, eksklusiviti, penamatan dan penalti, dan minta peguam anda menyemak kontrak yang penting.
+
+### Rundingkan terma pembayaran
+Terma pembayaran tiga puluh hari atau lebih adalah lazim dalam perniagaan, dan sesetengah syarikat besar meminta lebih lama. Terma lebih panjang bermakna anda membiayai pembelian mereka. Minta terma terpendek yang boleh anda dapat, dan pertimbangkan deposit untuk pesanan besar atau tempahan, bayaran berperingkat atau diskaun bayaran awal.
+
+### Jelas tentang pengeluaran invois
+Ketahui bagaimana, bila dan kepada siapa invois mesti dihantar, dokumen apa yang pelanggan perlukan, dan berapa lama kelulusan mengambil masa. Kesilapan pada nombor pesanan belian boleh melewatkan bayaran selama berminggu-minggu. Panduan kami tentang asas simpan kira dan perakaunan menerangkan cara menyimpan pengeluaran invois dengan kemas.
+
+### Berwaspada dengan klausa sebelah pihak
+Berhati-hati dengan klausa yang membenarkan pembeli membatalkan tanpa membayar, mengubah spesifikasi sesuka hati atau menahan bayaran untuk tempoh lama. Minta keseimbangan.
+
+### Lindungi harta intelek dan data anda
+Pastikan anda mengekalkan pemilikan reka bentuk, kaedah dan jenama anda melainkan anda bersetuju sebaliknya dengan jelas, dan kendalikan data pelanggan dengan berhati-hati. Panduan kami tentang pendaftaran tanda dagangan menerangkan cara melindungi nama anda.
+
+### Simpan setiap pesanan secara bertulis
+Sahkan pesanan, perubahan dan penghantaran secara bertulis, dan simpan pesanan penghantaran dan tandatangan penerimaan. Panduan kami tentang menangani audit cukai menerangkan mengapa rekod penting kemudian.
+
+## 7. Dapatkan bayaran tepat masa dan lindungi tunai anda
+
+### Keluarkan invois dengan segera dan betul
+Hantar invois sebaik sahaja anda menghantar, dengan semua butiran yang diperlukan. Kelewatan di pihak anda menjadi kelewatan bayaran.
+
+### Susuli lebih awal dan dengan sopan
+Semak sama ada invois telah diterima dan diluluskan, dan tanya tarikh bayaran yang dijangka. Panduan kami tentang mengutip bayaran lewat menerangkan pendekatan langkah demi langkah.
+
+### Ketahui pilihan anda apabila bayaran lewat
+Peringatan, panggilan kepada pasukan kewangan, surat tuntutan rasmi, dan dalam kes serius tindakan undang-undang ialah langkah lazim. Bincang pilihan dengan peguam, dan sahkan peraturan semasa untuk sektor anda.
+
+### Jangan biarkan satu pelanggan menanggung anda
+Elakkan bergantung pada satu pelanggan untuk kebanyakan hasil anda. Jika ia pergi, melewatkan bayaran atau menekan harga anda, anda mempunyai sedikit perlindungan. Sasarkan untuk membina sebaran pelanggan dari semasa ke semasa.
+
+### Pertimbangkan pembiayaan dengan berhati-hati
+Sesetengah perniagaan menggunakan pembiayaan invois atau kemudahan lain untuk menampung bayaran yang perlahan. Bandingkan kos, baca terma, dan pastikan penjimatan aliran tunai berbaloi dengan harganya. Panduan kami tentang geran dan pembiayaan PKS di Malaysia menerangkan di mana hendak mencari.
+
+### Semak setiap akaun
+Jejak berapa lama setiap pelanggan mengambil masa untuk membayar, berapa banyak kerja setiap satu, dan berapa margin yang diberikan. Kekalkan yang menguntungkan dan runding semula atau lepaskan yang lain.
+
+## 8. Bina hubungan dan rujukan
+
+### Hantar tepat seperti yang anda janjikan
+Kebolehpercayaan ialah cara utama menukar pesanan pertama kepada hubungan jangka panjang. Beritahu pelanggan lebih awal apabila sesuatu mungkin menjadi salah.
+
+### Kekal berhubung
+Semak selepas penghantaran, tanya apa yang berjaya, dan kongsi berita berguna. Panduan kami tentang membina kesetiaan pelanggan dan perniagaan berulang menerangkan cara membuat pelanggan terus kembali.
+
+### Minta rujukan dan testimoni
+Pembeli yang berpuas hati boleh membuka pintu kepada orang lain, tetapi minta dengan sopan, dan tawarkan sesuatu yang berguna sebagai balasan.
+
+### Teruskan menambah baik
+Kumpulkan maklum balas, baiki masalah yang anda dengar, dan kemas kini tawaran anda. Panduan kami tentang menguruskan hubungan pembekal menerangkan hubungan yang sama dari sebelah lagi, yang boleh membantu anda memahami pembeli anda.
+
+Jika anda mencari akauntan, peguam atau rakan penghantaran untuk membantu anda melayan pelanggan korporat, anda boleh [menyemak imbas direktori](/ms) untuk profesional berhampiran anda, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya pembeli yang mencari pembekal dapat menemui perniagaan anda.
+
+## Kesilapan lazim PKS Malaysia dengan pelanggan korporat
+
+- **Mengejar kontrak dan mengabaikan tunai.** Pesanan besar dengan terma bayaran panjang boleh menghabiskan firma kecil, jadi kira tunai yang diperlukan sebelum anda berkata ya.
+- **Menandatangani tanpa membaca.** Kontrak piawai boleh menyembunyikan penalti, pembatalan sebelah pihak dan skop yang tidak jelas, jadi bacalah dan dapatkan nasihat tentang apa-apa yang penting.
+- **Bergantung pada satu pelanggan besar.** Jika satu pelanggan ialah kebanyakan pendapatan anda, anda mempunyai sedikit kuasa tawar-menawar, jadi teruskan menambah pelanggan lain.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Pilih satu jenis pelanggan korporat yang anda fahami, dan senaraikan lima syarikat yang mungkin memerlukan apa yang anda tawarkan.
+- **Seterusnya:** Sediakan profil syarikat ringkas, senarai harga yang jelas dan templat cadangan satu muka surat.
+- **Kemudian:** Dekati dua atau tiga syarikat melalui orang yang anda kenali, dan tanya seperti apa proses pembelian dan terma pembayaran mereka.
+- **Sebelum anda menandatangani:** Kira tunai yang akan anda perlukan, rundingkan terma pembayaran, dan minta peguam menyemak kontrak.
+
+Memenangi pelanggan korporat memberi kepuasan, tetapi pertumbuhan yang tidak mampu anda biayai boleh melukakan sama seperti tiada pertumbuhan langsung. Jual kepada keperluan pembeli, tetapkan harga dan kontrak dengan berhati-hati, dan lindungi tunai anda, dan pelanggan besar boleh menjadi asas yang stabil untuk perniagaan anda.`,
+        faqs: [
+          {
+            question: "Bagaimanakah saya mencari pelanggan korporat untuk perniagaan kecil saya?",
+            answer:
+              "Mulakan dengan orang yang sudah anda kenali, pilih industri atau saiz syarikat yang sempit, bina profil dalam talian yang jelas, dan hadiri acara industri. Dekati syarikat dengan masalah khusus yang boleh anda selesaikan dan langkah seterusnya yang kecil, kemudian susuli dengan sopan.",
+          },
+          {
+            question: "Apakah yang patut ada dalam cadangan B2B?",
+            answer:
+              "Ringkasan pendek keperluan pelanggan, apa yang akan anda hantar dan bila, harga dan apa yang disertakan atau dikecualikan, perkhidmatan dan sokongan, bukti seperti rujukan atau kajian kes, dan langkah seterusnya. Pastikan jelas dan khusus tentang skop.",
+          },
+          {
+            question: "Bagaimanakah saya patut menetapkan harga untuk pesanan besar atau berulang?",
+            answer:
+              "Ketahui kos sebenar anda dahulu, kemudian tawarkan diskaun jumlah hanya sehingga harga masih menampung kos. Pertimbangkan harga berperingkat, jangkakan rundingan, tukar dengan terma pembayaran atau fleksibiliti penghantaran, dan masukkan pembungkusan khas, rebat dan kos menunggu bayaran dalam harga.",
+          },
+          {
+            question: "Apakah terma pembayaran yang normal untuk pelanggan korporat?",
+            answer:
+              "Terma tiga puluh hari atau lebih adalah lazim, dan sesetengah syarikat besar meminta lebih lama. Terma lebih panjang bermakna anda membiayai pembelian mereka, jadi rundingkan terma terpendek yang boleh anda dapat, pertimbangkan deposit atau bayaran berperingkat untuk pesanan besar, dan semak bagaimana dan bila invois mesti diserahkan.",
+          },
+          {
+            question: "Bagaimana jika pelanggan besar lewat membayar?",
+            answer:
+              "Susuli lebih awal dan dengan sopan dengan pasukan kewangan, sahkan invois telah diluluskan, dan simpan rekod. Jika berterusan, hantar tuntutan rasmi dan berbincang dengan peguam tentang pilihan anda. Elakkan membiarkan satu pelanggan menyumbang kebanyakan pendapatan anda.",
+          },
+          {
+            question: "Adakah saya perlu bersedia untuk e-Invois apabila menjual kepada syarikat?",
+            answer:
+              "Pelanggan perniagaan semakin menjangkakan invois yang mengikut keperluan semasa pihak berkuasa cukai. Pelaksanaan e-Invois dibuat secara berfasa dan garis masa telah diselaraskan, jadi sahkan peraturan semasa dan jadual anda sendiri dengan Lembaga Hasil Dalam Negeri dan akauntan anda.",
+          },
+          {
+            question: "Dokumen apa yang diminta oleh syarikat besar daripada pembekal?",
+            answer:
+              "Selalunya butiran pendaftaran syarikat, butiran bank dan cukai, rujukan, dan kadangkala insurans, pensijilan atau dasar. Keperluan berbeza mengikut syarikat, jadi tanya lebih awal dan sediakan dokumen anda.",
+          },
+          {
+            question: "Bagaimanakah saya mengelak bergantung pada satu pelanggan besar?",
+            answer:
+              "Teruskan mencari pelanggan walaupun sibuk, sasarkan untuk menyebarkan hasil merentas beberapa pelanggan dan sektor, semak margin dan tingkah laku pembayaran setiap akaun, dan bina rujukan daripada pembeli yang berpuas hati supaya anda tidak pernah bergantung pada satu akaun.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "cutting-costs-the-smart-way-in-malaysia",
+    title: "Cutting Costs the Smart Way: Utilities, Rent, Waste, and Going Green on a Small Budget in Malaysia",
+    seoTitle: "Cutting Business Costs the Smart Way in Malaysia",
+    seoDescription:
+      "Practical ways for Malaysian SMEs to cut costs without hurting quality: find money leaks, save on utilities and rent, reduce waste and audit subscriptions.",
+    coverImage: {
+      file: "cutting-costs-the-smart-way-cover.webp",
+      mimeType: "image/webp",
+      alt: "A smiling woman in a striped top opening a cloth bag over glass jars on a table beside jars of pasta",
+      altTranslations: {
+        zh: "一位身穿条纹上衣的微笑女士，在桌上的玻璃罐上方打开一个布袋，旁边放着装有意大利面的罐子",
+        ms: "Seorang wanita berbaju belang yang tersenyum membuka beg kain di atas balang kaca di atas meja bersebelahan balang pasta",
+      },
+    },
+    contentImages: {
+      led: {
+        file: "cutting-costs-the-smart-way-led.webp",
+        mimeType: "image/webp",
+        alt: "A hand holding an LED light bulb beside another LED bulb and a compact fluorescent bulb on a black surface",
+        altTranslations: {
+          zh: "一只手拿着一个LED灯泡，旁边的黑色台面上还有另一个LED灯泡和一个节能荧光灯泡",
+          ms: "Sebuah tangan memegang mentol LED di sebelah mentol LED lain dan mentol pendarfluor padat di atas permukaan hitam",
+        },
+        after: "Lighting is one of the easiest places to start saving energy.",
+        afterTranslations: {
+          zh: "照明是最容易着手节省能源的地方之一。",
+          ms: "Pencahayaan ialah salah satu tempat paling mudah untuk mula menjimatkan tenaga.",
+        },
+      },
+    },
+    excerpt:
+      "Rising costs squeeze small businesses, but cutting blindly can damage quality and customer trust. This guide helps Malaysian SMEs find the money leaks in their business, save on electricity, water, rent and supplies, reduce waste, audit subscriptions, and track what they save, while knowing which costs are worth keeping.",
+    body: `When costs rise, many small business owners feel the squeeze first in their profit. Raising prices is one answer, but it is not always possible. The other is to spend less, and the smart way is to cut waste rather than quality.
+
+Careless cost-cutting can backfire: cheaper ingredients that drive customers away, skipped maintenance that causes breakdowns, or unhappy staff who leave. The goal is to remove spending that gives you nothing back, and to protect the spending that earns you money.
+
+This is general information, not financial, tax, or legal advice. Utility tariffs, incentives, grants, and regulations change over time, and some of the details in this guide may be out of date. Check current figures with your utility provider, the relevant agencies, and your accountant before you make decisions.
+
+## 1. Find where your money actually goes
+
+### Start with your records
+You cannot cut what you cannot see. Pull together the last three to six months of bank statements, supplier invoices, utility bills, and receipts. Our guide on bookkeeping and accounting basics explains how to organise them.
+
+### Group costs into simple categories
+Common categories are stock or materials, staff, rent, utilities, marketing, transport, software and subscriptions, bank and card fees, and repairs. Total each one and see what share of your income it takes.
+
+### Separate fixed and variable costs
+Fixed costs, such as rent and insurance, stay the same whatever you sell. Variable costs, such as materials and delivery, move with sales. Knowing the mix tells you which costs you can change quickly.
+
+### Look for leaks, not only big items
+Small repeated costs add up: forgotten subscriptions, bank fees, late-payment charges, wasted stock, and phone plans that no longer fit. Mark anything you cannot explain.
+
+### Rank by potential saving
+List the top five or ten costs and ask where a modest change could save the most for the least risk. Start there instead of trying to trim everything.
+
+## 2. Save on electricity and water
+
+### Understand your bill
+Read your electricity bill, including the tariff category and any charges that depend on how and when you use power. Business tariffs and charges differ from household ones and can change, so check the current structure with your utility provider.
+
+### Start with the easy wins
+Switch off equipment when not needed, set air-conditioning to a sensible temperature, clean filters regularly, and keep doors closed when cooling. Lighting is one of the easiest places to start saving energy. Replacing old bulbs with LED lighting often uses far less power for the same light.
+
+### Check your biggest users
+Air-conditioning, refrigeration, cooking equipment, and machinery usually dominate. Look at their age, condition, and settings. Regular servicing can keep them running efficiently, and replacing very old equipment may pay back over time, so compare the costs honestly.
+
+### Use water sensibly
+Fix leaking taps and pipes, install simple flow reducers where suitable, and review how water is used in cleaning and production. Check your water bill for sudden jumps that may signal a hidden leak.
+
+### Ask about support, but verify
+Government agencies and utilities sometimes run energy-efficiency programmes, grants, or incentives for businesses, and options such as solar may be available. These change often, and eligibility rules apply, so confirm what exists today with official sources before you plan around them. Our guide on SME grants and funding in Malaysia explains where to look.
+
+## 3. Negotiate rent and supplier costs
+
+### Review your lease
+Read your tenancy terms, including rent, increases, deposit, repair duties, and renewal. Our guide on renting a commercial space in Malaysia explains what to check.
+
+### Talk to your landlord early
+If you are a reliable tenant, ask about a longer lease in exchange for a lower rent, a rent-free fit-out period, or a cap on future increases. Landlords often prefer a good tenant to an empty unit. Come with facts about market rents nearby.
+
+### Reconsider the space you use
+Do you need all of it? Subletting a spare area, sharing a space, moving to a cheaper location, or working partly from home may cut a large fixed cost. Weigh the effect on customers before you move.
+
+### Compare suppliers regularly
+Ask two or three suppliers to quote for your main purchases. Compare price, quality, delivery, payment terms, and reliability, not just the lowest number. Our guide on managing supplier relationships explains how to negotiate while staying fair.
+
+### Use volume and timing
+Buying larger quantities of items that you use steadily, or paying early for a discount, can lower costs if your cash flow allows it. Do not tie up money in stock that may expire or sit unsold. Our guide on managing cash flow explains the balance.
+
+## 4. Reduce waste and packaging
+
+### Measure what you throw away
+Track wasted stock, spoiled food, damaged goods, returns, and rework for a few weeks. What is measured usually shrinks.
+
+### Fix the causes
+Waste often comes from over-ordering, poor storage, inconsistent portions, unclear processes, or untrained staff. Small changes such as labelling, first-in-first-out stock rotation, and standard portion sizes can help.
+
+### Rethink packaging
+Right-size boxes and bags, avoid unnecessary extras, and ask suppliers about bulk or returnable options. Customers may also appreciate reusable or less wasteful packaging, but check that it still protects the product.
+
+### Turn waste into value
+Sell slightly imperfect goods at a discount, use offcuts and leftovers creatively, or pass surplus to others where it is safe and appropriate. Food businesses must keep hygiene and safety rules in mind. Our guide on starting a food business explains the basics.
+
+### Keep customers' trust
+Never cut corners on safety or quality to reduce waste. A single bad experience can cost more than the saving.
+
+## 5. Audit subscriptions, software, and services
+
+### List every recurring payment
+Check your bank and card statements for monthly and yearly charges: software, apps, memberships, phone plans, internet, insurance, and delivery platforms. Note who uses each one.
+
+### Cancel, downgrade, or share
+Cancel what nobody uses, drop to a cheaper plan if you use few features, and share licences where the terms allow it. Ask before renewal, because providers sometimes offer discounts to keep you.
+
+### Review bank and payment fees
+Compare account fees, card terminal charges, and online payment fees across providers. Our guide on opening a business bank account and our guide on accepting digital payments explain what to compare.
+
+### Check your insurance and telecom plans
+Make sure you are covered for real risks without paying for cover you do not need. Do not cut essential insurance simply to save money. Our guide on business insurance for Malaysian SMEs explains the basics.
+
+> Cut the spending that gives you nothing back, and protect the spending that earns you money.
+
+### Use free or low-cost tools wisely
+Many free tools work well for small businesses, but check their limits, data protection, and support before relying on them. Our guide on PDPA compliance explains why customer data needs care.
+
+## 6. Know when cutting hurts
+
+### Protect what customers value
+If customers choose you for quality, service, or speed, cutting there loses sales. Cut what customers do not notice, and keep what they do.
+
+### Do not skip maintenance
+Skipping servicing on equipment or vehicles may save money this month and cost much more in a breakdown.
+
+### Look after your people
+Staff are often your biggest cost, but they are also your service and your reputation. Before cutting hours or pay, look for other savings, and talk to staff honestly. Our guide on hiring your first employee explains your responsibilities, and our guide on managing employees and staff retention explains why turnover is costly.
+
+### Beware false economies
+The cheapest option can cost more if it breaks, is slow, or needs rework. Compare the total cost over time, not only the price today.
+
+### Keep investing in growth
+Cutting marketing entirely can shrink your sales. Instead, review what works, stop what does not, and keep what brings customers. Our guide on getting your business found online explains how to do it cheaply.
+
+## 7. Go green without overspending
+
+### Treat green as savings first
+Most low-cost green steps are also cost-cutting: using less energy, less water, less packaging, and less waste. Start there before buying expensive new equipment.
+
+### Be careful with green claims
+If you tell customers that your product is eco-friendly, make sure that the claim is accurate and can be backed up. Vague or exaggerated claims can harm your reputation and may raise legal issues, so check the rules that apply.
+
+### Consider bigger upgrades carefully
+Energy-efficient equipment or solar may suit some businesses, but costs, savings, and incentives vary a lot. Get several quotes, work out the payback period using realistic assumptions, and make sure that you can fund it without hurting cash flow. Our guide on managing business debt and loan repayments explains the risks of borrowing for upgrades.
+
+### Involve your team
+Staff often spot waste first. Ask for ideas, share the savings, and make small habits, such as switching off lights, routine.
+
+## 8. Track your savings and keep them
+
+### Set a baseline
+Write down your monthly cost for each category before making changes, so that you can see the real effect.
+
+### Make one change at a time
+Changing many things at once makes it hard to know what worked, and raises the risk of problems. Try, measure, and then move on.
+
+### Review monthly
+Compare each month with your baseline and note what you saved. If a saving disappears, find out why.
+
+### Put savings to work
+Use part of what you save to build a cash buffer, pay down debt, or invest in something that earns more. Our guide on pricing products and services explains how better margins and sensible prices work together.
+
+If you want to find a trusted electrician, an accountant, or a supplier near you, you can [browse the directory](/en) for local professionals, and [create a free business listing](/en/signup) so that customers can find your business too.
+
+## Common mistakes Malaysian SMEs make when cutting costs
+
+- **Cutting quality customers can taste, see, or feel.** Savings that lose customers cost more than they save, so protect what people pay you for.
+- **Skipping maintenance and safety.** Delayed servicing or ignoring safety rules can lead to breakdowns, accidents, and fines that dwarf the saving.
+- **Cutting without measuring.** If you do not record a baseline and track results, you cannot tell whether a change worked.
+
+## Where to start
+
+- **This week:** List your costs by category for the last three months and mark the five biggest and any you cannot explain.
+- **Next:** Cancel unused subscriptions, review your electricity and water bills, and get two quotes for your main supplier purchases.
+- **Then:** Measure your waste for a few weeks, fix the main causes, and talk to your landlord if your rent is high.
+- **Every month:** Compare your costs with your baseline, and keep what works.
+
+Cost control is not about being cheap. It is about spending on what helps your business and cutting what does not. With clear records, small steady changes, and attention to quality, you can protect your margin without losing the customers you have worked hard to win.`,
+    faqs: [
+      {
+        question: "Where should a small business start when cutting costs?",
+        answer:
+          "Start with your records. Group the last three to six months of spending into categories, mark the biggest items and anything you cannot explain, and then look for the largest savings that carry the least risk to quality.",
+      },
+      {
+        question: "How can I reduce my business electricity bill?",
+        answer:
+          "Check your tariff and bill, switch off unused equipment, set air-conditioning sensibly, keep filters clean, and use LED lighting. Look at your biggest users such as air-conditioning and refrigeration, and keep them serviced. Confirm current tariffs and any incentives with official sources.",
+      },
+      {
+        question: "Can I negotiate my commercial rent?",
+        answer:
+          "Often yes, especially if you are a reliable tenant. You can ask for a longer lease in exchange for a lower rent, a rent-free fit-out period, or a cap on increases, and come prepared with facts about nearby rents. Read your lease and consider advice for major changes.",
+      },
+      {
+        question: "How do I reduce waste in my business?",
+        answer:
+          "Measure what you throw away for a few weeks, find the causes such as over-ordering or poor storage, and fix them with stock rotation, standard portions, and better packaging. Never cut corners on safety or quality to reduce waste.",
+      },
+      {
+        question: "How do I find money leaks in subscriptions and fees?",
+        answer:
+          "List every recurring payment from your bank and card statements, note who uses each one, and cancel, downgrade, or share what is not needed. Also compare bank, card terminal, and online payment fees across providers.",
+      },
+      {
+        question: "Which costs should I avoid cutting?",
+        answer:
+          "Avoid cutting what customers value, such as quality, service, and safety, and keep up essential maintenance and insurance. Be careful about staff cuts, because they affect your service and reputation, and beware of false economies that cost more later.",
+      },
+      {
+        question: "Is going green worth it for a small business?",
+        answer:
+          "Low-cost green steps such as using less energy, water, and packaging usually save money. Bigger upgrades like solar or new equipment need quotes, a realistic payback calculation, and funding that does not strain your cash flow. Make sure any green claims to customers are accurate.",
+      },
+      {
+        question: "How do I know if my cost-cutting is working?",
+        answer:
+          "Record a baseline of monthly costs by category before you change anything, make one change at a time, and compare each month against the baseline. If a saving disappears, find out why and adjust.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "聪明地削减成本：在马来西亚以小预算节省水电、租金、浪费并走向环保",
+        excerpt:
+          "成本上升会挤压小企业，但盲目削减会损害品质和顾客的信任。本指南帮助马来西亚中小企业找出业务中的资金漏洞，节省电费、水费、租金和用品开支，减少浪费，检视订阅服务，并追踪节省的金额，同时了解哪些成本值得保留。",
+        body: `当成本上升时，许多小企业主首先感受到的是利润被挤压。提高售价是一种办法，但并非总是可行。另一种是少花钱，而聪明的做法是削减浪费，而不是削减品质。
+
+草率的削减成本可能适得其反：更便宜的食材把顾客吓跑、省略保养导致故障，或不满的员工离职。目标是去掉那些没有给您任何回报的开支，并保护那些为您赚钱的开支。
+
+本文仅提供一般信息，并非财务、税务或法律建议。水电费率、奖励、补助和法规会随时间变化，本指南的部分细节可能已经过时。在做决定之前，请向您的水电供应商、相关机构和会计师确认最新的数字。
+
+## 1. 找出钱究竟花到哪里去
+
+### 从您的记录开始
+您无法削减看不见的东西。请收集最近三到六个月的银行月结单、供应商发票、水电费单和收据。我们关于簿记和会计基础的指南说明了如何整理它们。
+
+### 把成本分成简单的类别
+常见的类别有存货或材料、员工、租金、水电、营销、交通、软件和订阅、银行和刷卡费用，以及维修。把每一类加总，看看它占了您收入的多少。
+
+### 区分固定成本和变动成本
+固定成本，例如租金和保险，无论您卖多少都不变。变动成本，例如材料和送货，随销售而变。了解这个组合，就知道哪些成本可以快速改变。
+
+### 找漏洞，而不只是大项目
+重复的小开支会累积起来：被遗忘的订阅、银行费用、逾期罚款、浪费的存货，以及不再合适的手机配套。把您无法解释的都标记出来。
+
+### 按可能的节省排序
+列出前五到十项成本，问问哪里做小幅度的改变能以最低风险节省最多。从那里开始，而不是试图削减每一样。
+
+## 2. 节省电费和水费
+
+### 了解您的账单
+阅读您的电费单，包括电价类别以及取决于您如何用电和何时用电的费用。商业电价和费用与家庭不同，也可能改变，所以请向您的水电供应商确认当前的结构。
+
+### 从容易的开始
+不需要时关掉设备，把冷气设定在合理的温度，定期清洁滤网，制冷时保持门关闭。照明是最容易着手节省能源的地方之一。把旧灯泡换成LED灯，往往在相同亮度下耗电少得多。
+
+### 检查您最大的耗电设备
+冷气、冷藏、烹饪设备和机器通常占大头。看看它们的使用年限、状况和设定。定期保养可以让它们保持高效运作，更换非常旧的设备长远来看可能回本，所以请诚实地比较成本。
+
+### 明智地用水
+修好漏水的水龙头和水管，在合适之处安装简单的节流器，并检视清洁和生产中如何用水。检查水费单是否有突然的跳升，那可能意味着隐藏的漏水。
+
+### 询问支持，但要核实
+政府机构和水电供应商有时会为企业推出节能计划、补助或奖励，也可能有太阳能等选择。这些经常改变，且有资格规定，所以请在据此规划之前，向官方来源确认目前有什么。我们关于马来西亚中小企业补助与资金的指南说明了去哪里找。
+
+## 3. 谈判租金和供应商成本
+
+### 检视您的租约
+阅读您的租约条款，包括租金、涨幅、押金、维修责任和续约。我们关于在马来西亚租用商业空间的指南说明了应该查看什么。
+
+### 及早与房东谈
+如果您是可靠的租客，可以询问以较长的租约换取较低的租金、免租的装修期，或对未来涨幅设上限。房东往往宁可要一个好租客也不要空置的单位。请带着附近市场租金的事实去谈。
+
+### 重新考虑您使用的空间
+您需要全部的空间吗？转租闲置的区域、共享空间、搬到较便宜的地点，或部分在家工作，可能削减一大笔固定成本。搬迁之前，请权衡对顾客的影响。
+
+### 定期比较供应商
+请两三家供应商为您的主要采购报价。比较价格、品质、送货、付款条件和可靠性，而不只是最低的数字。我们关于管理供应商关系的指南说明了如何在保持公平的同时谈判。
+
+### 善用数量和时机
+如果您的现金流允许，对您稳定使用的物品购买较大数量，或提早付款以获得折扣，可以降低成本。不要把钱压在可能过期或卖不出去的存货上。我们关于管理现金流的指南说明了如何平衡。
+
+## 4. 减少浪费和包装
+
+### 衡量您丢弃了什么
+追踪几个星期内浪费的存货、变质的食物、损坏的货品、退货和返工。被衡量的东西通常会减少。
+
+### 解决成因
+浪费常来自订货过多、储存不当、份量不一致、流程不清楚或员工未受培训。小改变，例如贴标签、先进先出的存货轮换和标准份量，都有帮助。
+
+### 重新思考包装
+使用合适大小的盒子和袋子，避免不必要的附加物，并向供应商询问散装或可回收的选项。顾客也可能欣赏可重复使用或较少浪费的包装，但请确认它仍能保护产品。
+
+### 把浪费变成价值
+以折扣出售略有瑕疵的货品，创意地利用边角料和剩余物，或在安全且适当的情况下把剩余转给他人。食品业者必须谨记卫生和安全规定。我们关于开办食品生意的指南说明了基础知识。
+
+### 保持顾客的信任
+切勿为了减少浪费而在安全或品质上偷工减料。一次糟糕的经历可能比节省的钱花费更多。
+
+## 5. 检视订阅、软件和服务
+
+### 列出每一项定期付款
+检查您的银行和信用卡月结单上的月费和年费：软件、应用程序、会员资格、手机配套、网络、保险和送餐平台。记下每一项谁在使用。
+
+### 取消、降级或共享
+取消没人使用的，如果只用到少数功能就降到较便宜的配套，并在条款允许的情况下共享授权。续约前先询问，因为供应商有时会提供折扣来留住您。
+
+### 检视银行和付款费用
+比较不同供应商的账户费用、刷卡机费用和网上付款费用。我们关于开设企业银行户口的指南和关于接受数码付款的指南说明了应该比较什么。
+
+### 检查您的保险和电信配套
+确保您的真正风险有保障，同时不为不需要的保障付费。不要仅仅为了省钱而削减必要的保险。我们关于马来西亚中小企业商业保险的指南说明了基础知识。
+
+> 削减那些没有给您任何回报的开支，并保护那些为您赚钱的开支。
+
+### 明智地使用免费或低成本的工具
+许多免费工具对小企业很好用，但在依赖之前，请检查它们的限制、资料保护和支持。我们关于个人资料保护法令合规的指南说明了为什么客户资料需要小心处理。
+
+## 6. 知道什么时候削减会造成伤害
+
+### 保护顾客看重的东西
+如果顾客选择您是因为品质、服务或速度，在那里削减就会失去销售。削减顾客不会注意到的，保留他们会注意到的。
+
+### 不要省略保养
+省略设备或车辆的保养可能这个月省了钱，却在故障时花费多得多。
+
+### 照顾您的员工
+员工往往是您最大的成本，但他们也是您的服务和您的声誉。在削减工时或薪资之前，先寻找其他节省，并诚实地与员工交谈。我们关于聘请第一位员工的指南说明了您的责任，关于管理员工与留任的指南说明了为什么人员流失代价高昂。
+
+### 提防虚假的节省
+最便宜的选择如果坏掉、太慢或需要返工，可能花费更多。请比较长期的总成本，而不只是今天的价格。
+
+### 继续投资于成长
+完全削减营销可能使您的销售萎缩。相反，请检视什么有效，停止无效的，并保留能带来顾客的。我们关于让您的企业在网上被找到的指南说明了如何以低成本做到。
+
+## 7. 走向环保而不超支
+
+### 先把环保当作节省
+大多数低成本的环保步骤同时也是削减成本：少用能源、少用水、少用包装、少产生浪费。在购买昂贵的新设备之前，先从这些开始。
+
+### 小心环保宣称
+如果您告诉顾客您的产品环保，请确保该宣称准确且有依据。含糊或夸大的宣称可能损害您的声誉，也可能引起法律问题，所以请查看适用的规定。
+
+### 谨慎考虑较大的升级
+节能设备或太阳能可能适合某些企业，但成本、节省和奖励差别很大。取得数份报价，用实际的假设算出回本期，并确保您能在不损害现金流的情况下融资。我们关于管理企业债务与贷款还款的指南说明了为升级而借款的风险。
+
+### 让您的团队参与
+员工往往最先发现浪费。请他们提出想法，分享节省的成果，并让小习惯，例如关灯，成为常规。
+
+## 8. 追踪您的节省并保持下去
+
+### 设定基准
+在做出改变之前，写下每个类别的每月成本，这样您才能看到真正的效果。
+
+### 一次只做一个改变
+同时改变很多东西，让您难以知道什么有效，也增加出问题的风险。尝试、衡量，然后继续前进。
+
+### 每月检视
+把每个月与您的基准比较，并记下您节省了多少。如果节省消失了，找出原因。
+
+### 让节省发挥作用
+用部分节省下来的钱建立现金缓冲、偿还债务，或投资于能赚更多的事物。我们关于产品与服务定价的指南说明了更好的利润和合理的价格如何相辅相成。
+
+如果您想在附近找到可靠的电工、会计师或供应商，可以[浏览目录](/zh)寻找本地专业人士，并[创建免费商家列表](/zh/signup)，让顾客也能找到您的企业。
+
+## 马来西亚中小企业在削减成本时的常见错误
+
+- **削减顾客尝得到、看得到或感觉得到的品质。** 失去顾客的节省花费比节省的更多，所以请保护人们付钱给您的东西。
+- **省略保养和安全。** 拖延保养或忽视安全规定，可能导致故障、事故和罚款，远超过节省的金额。
+- **不衡量就削减。** 如果您不记录基准并追踪结果，就无法判断一个改变是否有效。
+
+## 从哪里开始
+
+- **本周：** 按类别列出过去三个月的成本，标出五项最大的以及您无法解释的。
+- **接下来：** 取消未使用的订阅，检视您的电费和水费单，并为您的主要供应商采购取得两份报价。
+- **然后：** 衡量您几个星期的浪费，解决主要成因，如果租金偏高就与房东谈。
+- **每个月：** 把您的成本与基准比较，并保留有效的做法。
+
+控制成本不是要小气，而是把钱花在对您的企业有帮助的地方，并削减没有帮助的。有了清楚的记录、小而稳定的改变，以及对品质的关注，您就能在不失去辛苦赢得的顾客的情况下保护您的利润。`,
+        faqs: [
+          {
+            question: "小企业在削减成本时应该从哪里开始？",
+            answer:
+              "从您的记录开始。把最近三到六个月的开支分成类别，标出最大的项目和您无法解释的，然后寻找对品质风险最小、节省最多的地方。",
+          },
+          {
+            question: "我如何降低企业的电费？",
+            answer:
+              "检查您的电价和账单，关掉未使用的设备，合理设定冷气，保持滤网清洁，并使用LED灯。看看您最大的耗电设备，例如冷气和冷藏，并保持它们定期保养。请向官方来源确认最新的电价和任何奖励。",
+          },
+          {
+            question: "我可以谈判商业租金吗？",
+            answer:
+              "通常可以，尤其是当您是可靠的租客。您可以要求以较长的租约换取较低的租金、免租的装修期或涨幅上限，并带着附近租金的事实去谈。请阅读您的租约，重大变更时考虑征求意见。",
+          },
+          {
+            question: "我如何减少企业的浪费？",
+            answer:
+              "衡量您几个星期内丢弃了什么，找出成因，例如订货过多或储存不当，并通过存货轮换、标准份量和更好的包装来解决。切勿为了减少浪费而在安全或品质上偷工减料。",
+          },
+          {
+            question: "我如何找出订阅和费用中的资金漏洞？",
+            answer:
+              "从银行和信用卡月结单列出每一项定期付款，记下谁在使用，并取消、降级或共享不需要的。也请比较不同供应商的银行、刷卡机和网上付款费用。",
+          },
+          {
+            question: "哪些成本我应该避免削减？",
+            answer:
+              "避免削减顾客看重的东西，例如品质、服务和安全，并维持必要的保养和保险。对削减员工要小心，因为这会影响您的服务和声誉，也要提防日后花费更多的虚假节省。",
+          },
+          {
+            question: "走向环保对小企业值得吗？",
+            answer:
+              "低成本的环保步骤，例如少用能源、水和包装，通常能省钱。较大的升级，例如太阳能或新设备，需要报价、实际的回本计算，以及不会拖累现金流的融资。请确保对顾客的任何环保宣称是准确的。",
+          },
+          {
+            question: "我如何知道削减成本是否有效？",
+            answer:
+              "在改变任何东西之前，按类别记录每月成本的基准，一次只做一个改变，并把每个月与基准比较。如果节省消失了，找出原因并调整。",
+          },
+        ],
+      },
+      ms: {
+        title: "Memotong Kos dengan Bijak: Utiliti, Sewa, Pembaziran dan Beralih Hijau dengan Bajet Kecil di Malaysia",
+        excerpt:
+          "Kos yang meningkat menekan perniagaan kecil, tetapi memotong secara membuta tuli boleh merosakkan kualiti dan kepercayaan pelanggan. Panduan ini membantu PKS Malaysia mencari kebocoran wang dalam perniagaan, menjimatkan elektrik, air, sewa dan bekalan, mengurangkan pembaziran, menyemak langganan, dan menjejak apa yang dijimatkan, sambil mengetahui kos mana yang berbaloi dikekalkan.",
+        body: `Apabila kos meningkat, ramai pemilik perniagaan kecil merasai tekanan pada keuntungan mereka dahulu. Menaikkan harga ialah satu jawapan, tetapi tidak selalunya boleh. Yang lain ialah berbelanja kurang, dan cara yang bijak ialah memotong pembaziran, bukannya kualiti.
+
+Pemotongan kos yang cuai boleh memakan diri: bahan lebih murah yang menghalau pelanggan, penyelenggaraan yang ditinggalkan yang menyebabkan kerosakan, atau pekerja tidak puas hati yang berhenti. Matlamatnya ialah membuang perbelanjaan yang tidak memberi apa-apa balasan, dan melindungi perbelanjaan yang menjana wang untuk anda.
+
+Ini maklumat umum, bukan nasihat kewangan, cukai atau undang-undang. Tarif utiliti, insentif, geran dan peraturan berubah dari semasa ke semasa, dan sebahagian butiran dalam panduan ini mungkin sudah lapuk. Semak angka semasa dengan pembekal utiliti anda, agensi berkaitan dan akauntan anda sebelum anda membuat keputusan.
+
+## 1. Cari ke mana wang anda sebenarnya pergi
+
+### Mulakan dengan rekod anda
+Anda tidak boleh memotong apa yang anda tidak nampak. Kumpulkan penyata bank, invois pembekal, bil utiliti dan resit tiga hingga enam bulan terakhir. Panduan kami tentang asas simpan kira dan perakaunan menerangkan cara menyusunnya.
+
+### Kumpulkan kos dalam kategori mudah
+Kategori lazim ialah stok atau bahan, pekerja, sewa, utiliti, pemasaran, pengangkutan, perisian dan langganan, yuran bank dan kad, dan pembaikan. Jumlahkan setiap satu dan lihat berapa bahagian pendapatan yang diambilnya.
+
+### Asingkan kos tetap dan kos berubah
+Kos tetap, seperti sewa dan insurans, kekal sama walau apa pun yang anda jual. Kos berubah, seperti bahan dan penghantaran, bergerak mengikut jualan. Mengetahui campurannya memberitahu anda kos mana yang boleh diubah dengan cepat.
+
+### Cari kebocoran, bukan sekadar item besar
+Kos kecil yang berulang bertambah: langganan yang dilupakan, yuran bank, caj bayaran lewat, stok yang dibazirkan, dan pelan telefon yang tidak lagi sesuai. Tandakan apa-apa yang anda tidak dapat terangkan.
+
+### Susun mengikut potensi penjimatan
+Senaraikan lima atau sepuluh kos teratas dan tanya di mana perubahan sederhana boleh menjimatkan paling banyak dengan risiko paling sedikit. Mulakan di situ dan bukannya cuba memangkas semuanya.
+
+## 2. Jimatkan elektrik dan air
+
+### Fahami bil anda
+Baca bil elektrik anda, termasuk kategori tarif dan sebarang caj yang bergantung pada cara dan masa anda menggunakan kuasa. Tarif dan caj perniagaan berbeza daripada isi rumah dan boleh berubah, jadi semak struktur semasa dengan pembekal utiliti anda.
+
+### Mulakan dengan kemenangan mudah
+Matikan peralatan apabila tidak diperlukan, tetapkan penyaman udara pada suhu yang munasabah, bersihkan penapis dengan kerap, dan tutup pintu apabila menyejukkan. Pencahayaan ialah salah satu tempat paling mudah untuk mula menjimatkan tenaga. Menggantikan mentol lama dengan lampu LED selalunya menggunakan kuasa jauh lebih sedikit untuk cahaya yang sama.
+
+### Semak pengguna terbesar anda
+Penyaman udara, penyejukan, peralatan memasak dan jentera biasanya mendominasi. Lihat umur, keadaan dan tetapan mereka. Servis berkala boleh memastikan mereka beroperasi dengan cekap, dan menggantikan peralatan yang sangat lama mungkin berbaloi dari semasa ke semasa, jadi bandingkan kos dengan jujur.
+
+### Gunakan air dengan bijak
+Baiki paip dan saluran yang bocor, pasang pengurang aliran yang mudah di mana sesuai, dan semak bagaimana air digunakan dalam pembersihan dan pengeluaran. Semak bil air anda untuk lonjakan mendadak yang mungkin menandakan kebocoran tersembunyi.
+
+### Tanya tentang sokongan, tetapi sahkan
+Agensi kerajaan dan utiliti kadangkala menjalankan program kecekapan tenaga, geran atau insentif untuk perniagaan, dan pilihan seperti solar mungkin tersedia. Ini sering berubah, dan peraturan kelayakan terpakai, jadi sahkan apa yang ada hari ini dengan sumber rasmi sebelum anda merancang berdasarkannya. Panduan kami tentang geran dan pembiayaan PKS di Malaysia menerangkan di mana hendak mencari.
+
+## 3. Rundingkan sewa dan kos pembekal
+
+### Semak pajakan anda
+Baca terma penyewaan anda, termasuk sewa, kenaikan, deposit, tugas pembaikan dan pembaharuan. Panduan kami tentang menyewa ruang komersial di Malaysia menerangkan apa yang perlu disemak.
+
+### Bercakap dengan tuan tanah lebih awal
+Jika anda penyewa yang boleh dipercayai, tanya tentang pajakan lebih panjang sebagai pertukaran untuk sewa lebih rendah, tempoh pengubahsuaian tanpa sewa, atau had kenaikan masa depan. Tuan tanah selalunya lebih suka penyewa yang baik daripada unit kosong. Datang dengan fakta tentang sewa pasaran berdekatan.
+
+### Pertimbangkan semula ruang yang anda gunakan
+Adakah anda memerlukan semuanya? Menyewa semula kawasan lebihan, berkongsi ruang, berpindah ke lokasi lebih murah, atau bekerja sebahagiannya dari rumah boleh memotong kos tetap yang besar. Timbang kesan terhadap pelanggan sebelum anda berpindah.
+
+### Bandingkan pembekal dengan kerap
+Minta dua atau tiga pembekal membuat sebut harga untuk pembelian utama anda. Bandingkan harga, kualiti, penghantaran, terma pembayaran dan kebolehpercayaan, bukan sekadar angka terendah. Panduan kami tentang menguruskan hubungan pembekal menerangkan cara berunding sambil kekal adil.
+
+### Gunakan jumlah dan masa
+Membeli kuantiti lebih besar barangan yang anda guna secara tetap, atau membayar awal untuk diskaun, boleh merendahkan kos jika aliran tunai anda membenarkan. Jangan ikat wang dalam stok yang mungkin luput atau tidak terjual. Panduan kami tentang menguruskan aliran tunai menerangkan keseimbangannya.
+
+## 4. Kurangkan pembaziran dan pembungkusan
+
+### Ukur apa yang anda buang
+Jejaki stok yang dibazirkan, makanan yang rosak, barangan rosak, pemulangan dan kerja semula selama beberapa minggu. Apa yang diukur biasanya mengecil.
+
+### Baiki puncanya
+Pembaziran selalunya datang daripada tempahan berlebihan, penyimpanan yang lemah, bahagian yang tidak konsisten, proses yang tidak jelas atau pekerja tidak terlatih. Perubahan kecil seperti pelabelan, putaran stok masuk-dahulu-keluar-dahulu dan saiz bahagian piawai boleh membantu.
+
+### Fikirkan semula pembungkusan
+Gunakan saiz kotak dan beg yang sesuai, elakkan tambahan yang tidak perlu, dan tanya pembekal tentang pilihan pukal atau boleh dipulangkan. Pelanggan mungkin juga menghargai pembungkusan boleh guna semula atau kurang membazir, tetapi pastikan ia masih melindungi produk.
+
+### Ubah pembaziran menjadi nilai
+Jual barangan yang sedikit cacat dengan diskaun, gunakan sisa potongan dan lebihan secara kreatif, atau berikan lebihan kepada orang lain di mana selamat dan sesuai. Perniagaan makanan mesti mengingati peraturan kebersihan dan keselamatan. Panduan kami tentang memulakan perniagaan makanan menerangkan asasnya.
+
+### Kekalkan kepercayaan pelanggan
+Jangan sekali-kali mengambil jalan pintas pada keselamatan atau kualiti untuk mengurangkan pembaziran. Satu pengalaman buruk boleh menelan kos lebih daripada penjimatan.
+
+## 5. Semak langganan, perisian dan perkhidmatan
+
+### Senaraikan setiap bayaran berulang
+Semak penyata bank dan kad anda untuk caj bulanan dan tahunan: perisian, aplikasi, keahlian, pelan telefon, internet, insurans dan platform penghantaran. Catat siapa yang menggunakan setiap satu.
+
+### Batal, turunkan atau kongsi
+Batalkan apa yang tiada siapa guna, turun ke pelan lebih murah jika anda menggunakan sedikit ciri, dan kongsi lesen di mana terma membenarkan. Tanya sebelum pembaharuan, kerana pembekal kadangkala menawarkan diskaun untuk mengekalkan anda.
+
+### Semak yuran bank dan pembayaran
+Bandingkan yuran akaun, caj terminal kad dan yuran pembayaran dalam talian merentas pembekal. Panduan kami tentang membuka akaun bank perniagaan dan panduan kami tentang menerima pembayaran digital menerangkan apa yang perlu dibandingkan.
+
+### Semak insurans dan pelan telekomunikasi anda
+Pastikan anda dilindungi untuk risiko sebenar tanpa membayar untuk perlindungan yang tidak diperlukan. Jangan potong insurans penting semata-mata untuk menjimatkan wang. Panduan kami tentang insurans perniagaan untuk PKS Malaysia menerangkan asasnya.
+
+> Potong perbelanjaan yang tidak memberi apa-apa balasan, dan lindungi perbelanjaan yang menjana wang untuk anda.
+
+### Gunakan alat percuma atau kos rendah dengan bijak
+Banyak alat percuma berfungsi baik untuk perniagaan kecil, tetapi semak had, perlindungan data dan sokongan mereka sebelum bergantung padanya. Panduan kami tentang pematuhan PDPA menerangkan mengapa data pelanggan perlu dijaga.
+
+## 6. Ketahui bila pemotongan memudaratkan
+
+### Lindungi apa yang pelanggan hargai
+Jika pelanggan memilih anda kerana kualiti, perkhidmatan atau kelajuan, memotong di situ akan kehilangan jualan. Potong apa yang pelanggan tidak perasan, dan kekalkan apa yang mereka perasan.
+
+### Jangan langkau penyelenggaraan
+Melangkau servis peralatan atau kenderaan mungkin menjimatkan wang bulan ini dan menelan kos lebih banyak apabila rosak.
+
+### Jaga orang anda
+Pekerja selalunya kos terbesar anda, tetapi mereka juga perkhidmatan dan reputasi anda. Sebelum memotong jam atau gaji, cari penjimatan lain, dan bercakap dengan pekerja secara jujur. Panduan kami tentang mengupah pekerja pertama anda menerangkan tanggungjawab anda, dan panduan kami tentang menguruskan pekerja dan mengekalkan staf menerangkan mengapa pusing ganti staf mahal.
+
+### Awasi penjimatan palsu
+Pilihan termurah boleh menelan kos lebih jika ia rosak, perlahan atau memerlukan kerja semula. Bandingkan jumlah kos dari semasa ke semasa, bukan sekadar harga hari ini.
+
+### Teruskan melabur dalam pertumbuhan
+Memotong pemasaran sepenuhnya boleh mengecilkan jualan anda. Sebaliknya, semak apa yang berjaya, hentikan apa yang tidak, dan kekalkan apa yang membawa pelanggan. Panduan kami tentang membolehkan perniagaan anda ditemui dalam talian menerangkan cara melakukannya dengan murah.
+
+## 7. Beralih hijau tanpa berbelanja berlebihan
+
+### Anggap hijau sebagai penjimatan dahulu
+Kebanyakan langkah hijau kos rendah juga memotong kos: menggunakan kurang tenaga, kurang air, kurang pembungkusan dan kurang pembaziran. Mulakan di situ sebelum membeli peralatan baharu yang mahal.
+
+### Berhati-hati dengan dakwaan hijau
+Jika anda memberitahu pelanggan bahawa produk anda mesra alam, pastikan dakwaan itu tepat dan boleh disokong. Dakwaan yang kabur atau keterlaluan boleh merosakkan reputasi anda dan mungkin menimbulkan isu undang-undang, jadi semak peraturan yang terpakai.
+
+### Pertimbangkan peningkatan lebih besar dengan berhati-hati
+Peralatan cekap tenaga atau solar mungkin sesuai untuk sesetengah perniagaan, tetapi kos, penjimatan dan insentif sangat berbeza. Dapatkan beberapa sebut harga, kira tempoh pulangan modal menggunakan andaian realistik, dan pastikan anda boleh membiayainya tanpa menjejaskan aliran tunai. Panduan kami tentang menguruskan hutang perniagaan dan bayaran balik pinjaman menerangkan risiko meminjam untuk peningkatan.
+
+### Libatkan pasukan anda
+Pekerja selalunya nampak pembaziran dahulu. Minta idea, kongsi penjimatan, dan jadikan tabiat kecil, seperti mematikan lampu, sebagai rutin.
+
+## 8. Jejak penjimatan anda dan kekalkannya
+
+### Tetapkan garis asas
+Tulis kos bulanan anda untuk setiap kategori sebelum membuat perubahan, supaya anda dapat melihat kesan sebenar.
+
+### Buat satu perubahan pada satu masa
+Mengubah banyak perkara serentak menyukarkan untuk mengetahui apa yang berjaya, dan meningkatkan risiko masalah. Cuba, ukur, dan kemudian teruskan.
+
+### Semak setiap bulan
+Bandingkan setiap bulan dengan garis asas anda dan catat apa yang anda jimatkan. Jika penjimatan hilang, ketahui sebabnya.
+
+### Gunakan penjimatan untuk bekerja
+Gunakan sebahagian daripada apa yang anda jimatkan untuk membina penampan tunai, membayar hutang, atau melabur dalam sesuatu yang menjana lebih banyak. Panduan kami tentang penetapan harga produk dan perkhidmatan menerangkan bagaimana margin lebih baik dan harga yang munasabah berfungsi bersama.
+
+Jika anda ingin mencari tukang elektrik, akauntan atau pembekal yang dipercayai berhampiran anda, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan juga dapat menemui perniagaan anda.
+
+## Kesilapan lazim PKS Malaysia semasa memotong kos
+
+- **Memotong kualiti yang pelanggan boleh rasa, lihat atau rasai.** Penjimatan yang kehilangan pelanggan menelan lebih daripada yang dijimatkan, jadi lindungi apa yang orang bayar kepada anda.
+- **Melangkau penyelenggaraan dan keselamatan.** Servis yang ditangguhkan atau mengabaikan peraturan keselamatan boleh membawa kepada kerosakan, kemalangan dan denda yang jauh melebihi penjimatan.
+- **Memotong tanpa mengukur.** Jika anda tidak merekod garis asas dan menjejak keputusan, anda tidak dapat mengetahui sama ada sesuatu perubahan berjaya.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Senaraikan kos anda mengikut kategori untuk tiga bulan lalu dan tandakan lima yang terbesar dan mana-mana yang anda tidak dapat terangkan.
+- **Seterusnya:** Batalkan langganan yang tidak digunakan, semak bil elektrik dan air anda, dan dapatkan dua sebut harga untuk pembelian pembekal utama anda.
+- **Kemudian:** Ukur pembaziran anda selama beberapa minggu, baiki punca utama, dan bercakap dengan tuan tanah jika sewa anda tinggi.
+- **Setiap bulan:** Bandingkan kos anda dengan garis asas, dan kekalkan apa yang berjaya.
+
+Kawalan kos bukan tentang menjadi kedekut. Ia tentang berbelanja pada apa yang membantu perniagaan anda dan memotong apa yang tidak. Dengan rekod yang jelas, perubahan kecil yang tetap, dan perhatian pada kualiti, anda boleh melindungi margin anda tanpa kehilangan pelanggan yang telah anda usahakan untuk menangi.`,
+        faqs: [
+          {
+            question: "Di mana perniagaan kecil patut bermula apabila memotong kos?",
+            answer:
+              "Mulakan dengan rekod anda. Kumpulkan perbelanjaan tiga hingga enam bulan terakhir dalam kategori, tandakan item terbesar dan apa-apa yang anda tidak dapat terangkan, kemudian cari penjimatan terbesar dengan risiko paling sedikit kepada kualiti.",
+          },
+          {
+            question: "Bagaimanakah saya boleh mengurangkan bil elektrik perniagaan saya?",
+            answer:
+              "Semak tarif dan bil anda, matikan peralatan yang tidak digunakan, tetapkan penyaman udara dengan munasabah, kekalkan penapis bersih, dan gunakan lampu LED. Lihat pengguna terbesar anda seperti penyaman udara dan penyejukan, dan kekalkan servis mereka. Sahkan tarif semasa dan sebarang insentif dengan sumber rasmi.",
+          },
+          {
+            question: "Bolehkah saya merundingkan sewa komersial saya?",
+            answer:
+              "Selalunya boleh, terutamanya jika anda penyewa yang boleh dipercayai. Anda boleh meminta pajakan lebih panjang sebagai pertukaran untuk sewa lebih rendah, tempoh pengubahsuaian tanpa sewa atau had kenaikan, dan datang dengan fakta tentang sewa berdekatan. Baca pajakan anda dan pertimbangkan nasihat untuk perubahan besar.",
+          },
+          {
+            question: "Bagaimanakah saya mengurangkan pembaziran dalam perniagaan saya?",
+            answer:
+              "Ukur apa yang anda buang selama beberapa minggu, cari puncanya seperti tempahan berlebihan atau penyimpanan lemah, dan baiki dengan putaran stok, bahagian piawai dan pembungkusan lebih baik. Jangan mengambil jalan pintas pada keselamatan atau kualiti untuk mengurangkan pembaziran.",
+          },
+          {
+            question: "Bagaimanakah saya mencari kebocoran wang dalam langganan dan yuran?",
+            answer:
+              "Senaraikan setiap bayaran berulang daripada penyata bank dan kad anda, catat siapa yang menggunakan setiap satu, dan batalkan, turunkan atau kongsi apa yang tidak diperlukan. Bandingkan juga yuran bank, terminal kad dan pembayaran dalam talian merentas pembekal.",
+          },
+          {
+            question: "Kos mana yang patut saya elak potong?",
+            answer:
+              "Elakkan memotong apa yang pelanggan hargai, seperti kualiti, perkhidmatan dan keselamatan, dan kekalkan penyelenggaraan dan insurans penting. Berhati-hati tentang pemotongan staf, kerana ia menjejaskan perkhidmatan dan reputasi anda, dan awasi penjimatan palsu yang menelan lebih kemudian.",
+          },
+          {
+            question: "Adakah beralih hijau berbaloi untuk perniagaan kecil?",
+            answer:
+              "Langkah hijau kos rendah seperti menggunakan kurang tenaga, air dan pembungkusan biasanya menjimatkan wang. Peningkatan lebih besar seperti solar atau peralatan baharu memerlukan sebut harga, pengiraan pulangan modal yang realistik, dan pembiayaan yang tidak menegangkan aliran tunai anda. Pastikan sebarang dakwaan hijau kepada pelanggan adalah tepat.",
+          },
+          {
+            question: "Bagaimanakah saya tahu jika pemotongan kos saya berjaya?",
+            answer:
+              "Rekod garis asas kos bulanan mengikut kategori sebelum anda mengubah apa-apa, buat satu perubahan pada satu masa, dan bandingkan setiap bulan dengan garis asas. Jika penjimatan hilang, ketahui sebabnya dan laraskan.",
+          },
+        ],
+      },
+    },
+  },
 ];
