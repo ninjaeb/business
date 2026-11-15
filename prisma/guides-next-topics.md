@@ -15,16 +15,18 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Tracking Business Performance: Simple KPIs and Dashboards for Malaysian SMEs**
-   — Choosing a handful of numbers that matter (sales, gross margin, repeat
-   customers, cash, stock turns), setting up a simple weekly or monthly
-   review, using spreadsheets or accounting software for a basic dashboard,
-   spotting warning signs early, setting realistic targets, sharing numbers
-   with staff, and avoiding vanity metrics.
+1. **Understanding Your Customers: Simple Market Research and Feedback for Malaysian SMEs**
+   — Why guessing is risky, free and cheap ways to learn what customers want
+   (conversations, short surveys, reviews, social media polls, sales data),
+   asking good questions, studying competitors fairly, spotting local
+   trends and festive demand, testing a product or price on a small scale,
+   handling personal data responsibly (PDPA, to hedge), and turning
+   feedback into decisions.
 
-2. **Selling at Pasar Malam, Bazaars and Pop-Up Events: A Guide for Malaysian SMEs**
-   — Choosing the right markets and events, stall permits and local council
-   rules (to hedge), costing a stall and setting sales targets, display and
-   packaging, stock planning, accepting cash and QR payments, food and
-   safety rules where relevant, staffing, collecting customer contacts, and
-   turning one-off sales into repeat customers.
+2. **Part-Time Staff and Interns: Hiring Short-Term Help in Malaysia**
+   — When part-time or intern help makes sense, how part-time work differs
+   from full-time (to hedge on current rules), contracts and pay,
+   statutory contributions and whether they apply (to hedge), internship
+   allowances and school or university schemes (to hedge), training and
+   supervision, scheduling around peaks, avoiding misclassification, and
+   converting good helpers into permanent staff.

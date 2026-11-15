@@ -33091,4 +33091,1344 @@ Kawalan kos bukan tentang menjadi kedekut. Ia tentang berbelanja pada apa yang m
       },
     },
   },
+  {
+    slug: "tracking-business-performance-kpis-for-malaysian-smes",
+    title: "Tracking Business Performance: Simple KPIs and Dashboards for Malaysian SMEs",
+    seoTitle: "Tracking Business Performance: Simple KPIs for SMEs",
+    seoDescription:
+      "How Malaysian SMEs can track performance with a few simple KPIs: pick the right numbers, build a basic dashboard, spot warning signs and set targets.",
+    coverImage: {
+      file: "tracking-business-performance-cover.webp",
+      mimeType: "image/webp",
+      alt: "A man in glasses and a blazer sitting on grass against a tree trunk in a park, working on a laptop and holding a phone",
+      altTranslations: {
+        zh: "一位戴眼镜、穿西装外套的男士坐在公园的草地上，背靠树干，一边使用笔记本电脑，一边拿着手机",
+        ms: "Seorang lelaki berkaca mata dan berblazer duduk di atas rumput bersandar pada batang pokok di taman, menggunakan komputer riba sambil memegang telefon",
+      },
+    },
+    contentImages: {
+      desk: {
+        file: "tracking-business-performance-desk.webp",
+        mimeType: "image/webp",
+        alt: "A laptop on a white desk beside external drives, a mouse and a second screen in a bright office",
+        altTranslations: {
+          zh: "明亮的办公室里，白色书桌上放着一台笔记本电脑，旁边有外置硬盘、鼠标和第二个屏幕",
+          ms: "Sebuah komputer riba di atas meja putih bersebelahan pemacu luaran, tetikus dan skrin kedua di pejabat yang terang",
+        },
+        after: "Pick a small set of numbers and review them on a regular rhythm.",
+        afterTranslations: {
+          zh: "选定少数几个数字，并按固定的节奏定期检视它们。",
+          ms: "Pilih sebilangan kecil angka dan semaknya mengikut rentak yang tetap.",
+        },
+      },
+    },
+    excerpt:
+      "Many small business owners run on gut feeling until a cash crunch or a quiet month catches them by surprise. This guide helps Malaysian SMEs choose a handful of numbers that matter, set up a simple weekly or monthly review, build a basic dashboard in a spreadsheet or accounting software, and spot trouble early without drowning in data.",
+    body: `Most owners know roughly how busy the shop feels. Fewer know whether this month was actually better than last month, which product earns the most, or how many weeks of cash are left. Feelings are useful, but they are late warnings.
+
+Tracking a few numbers does not need expensive software or a finance degree. A simple page that you update on a regular schedule can show problems while they are still small and help you repeat what works.
+
+This is general information, not financial, tax, or legal advice. Software features, tax rules, and business conditions change over time, and some details in this guide may be out of date. Confirm anything important with your accountant or the relevant authority.
+
+## 1. Understand what KPIs are and why they matter
+
+### What a KPI is
+A key performance indicator, or KPI, is simply a number that tells you whether an important part of your business is on track, such as monthly sales, gross margin, or cash in the bank.
+
+### Why feelings are not enough
+A busy shop can still lose money if margins are thin, and a quiet month can hide a healthy cash balance. Numbers show what is really happening.
+
+### Fewer is better
+Pick a small set of numbers and review them on a regular rhythm. Five to eight well-chosen KPIs that you actually look at beat thirty that you never open.
+
+### Keep them useful
+A good KPI is easy to calculate, based on reliable records, and tied to a decision you can make. If a number never changes what you do, drop it.
+
+## 2. Choose the numbers that matter for your business
+
+### Sales
+Track total sales by week or month, and if possible by product, service, or channel. Look at trends rather than single days.
+
+### Gross margin
+Gross margin is what is left of sales after the direct cost of the goods or services you sold, shown as a percentage. It tells you whether your pricing and purchasing are healthy. Our guide on pricing products and services explains how to work it out.
+
+### Cash
+Cash in the bank and a simple forecast of the next few weeks show whether you can pay your bills. Our guide on managing cash flow explains why profit and cash differ.
+
+### Customers
+Count new customers, repeat customers, and the average amount each customer spends. Our guide on building customer loyalty and repeat business explains how to grow repeat sales.
+
+### Stock
+If you sell goods, watch how fast stock sells and how much is stuck on shelves. Our guide on managing inventory and stock explains the basics.
+
+### Costs and overheads
+Track your main fixed costs, such as rent and salaries, as a share of sales. Our guide on cutting costs the smart way explains how to review them.
+
+### Money owed to you
+Watch how much customers owe you and how long they take to pay. Our guide on collecting late payments explains what to do about slow payers.
+
+### Add one or two for your type of business
+A restaurant may track table turns, a salon bookings per stylist, and an online shop the share of visitors who buy. Choose what drives your results.
+
+## 3. Get your data in order first
+
+### Keep reliable records
+Dashboards are only as good as the records behind them. Record every sale and expense, keep invoices and receipts, and reconcile your bank account regularly. Our guide on bookkeeping and accounting basics explains how.
+
+### Separate business and personal money
+Mixed accounts blur every number. A dedicated business account makes tracking far easier. Our guide on opening a business bank account explains why.
+
+### Use consistent categories
+Decide how to label income and expenses, and stick to it. Changing categories every month makes comparisons meaningless.
+
+### Choose tools that fit your size
+A spreadsheet is enough for many small businesses. Accounting software can produce many reports automatically. Our guide on choosing accounting software for your Malaysian SME explains how to compare options.
+
+## 4. Build a simple dashboard
+
+### Start with one page
+Make a single sheet with your chosen KPIs in rows and months or weeks in columns. Add a column for your target and one for the difference.
+
+### Use simple visuals
+A small line chart for sales and a bar for cash can show trends at a glance. Avoid cluttered charts that need explaining.
+
+### Add colour sparingly
+Mark a number green when it meets the target and red when it falls clearly short. This helps you scan quickly.
+
+### Pull from your software where you can
+If your accounting or point-of-sale system already reports sales and margins, copy those figures instead of retyping them. Less manual work means fewer mistakes.
+
+### Write a note beside each number
+A short comment on why a number moved, such as a promotion, a holiday, or a supplier delay, builds understanding over time.
+
+> A number only helps if it changes a decision, so track what you will act on.
+
+## 5. Set up a regular review rhythm
+
+### Weekly check
+Spend fifteen to thirty minutes each week on sales, cash, and any urgent items. Short and regular beats long and rare.
+
+### Monthly review
+Once a month, update the full dashboard, compare against targets and last month, and decide on one or two actions. Our guide on the small business tax calendar explains other dates that fit into your monthly routine.
+
+### Quarterly look
+Every few months, step back. Are the KPIs still the right ones, are targets realistic, and what should change?
+
+### Make it a habit
+Pick a fixed time and treat it like an appointment. Reviews that depend on spare time rarely happen.
+
+### Bring in your accountant
+Ask your accountant or bookkeeper to look at your numbers from time to time. They may spot patterns you miss.
+
+## 6. Spot warning signs early
+
+### Falling margin
+If sales rise but margin falls, costs may be creeping up or discounts may be too deep. Investigate before it hurts cash.
+
+### Shrinking cash
+If cash falls for several weeks while sales look fine, check slow-paying customers, stock build-up, and loan repayments. Our guide on managing business debt and loan repayments explains how debt can strain cash.
+
+### Slower repeat business
+If fewer customers return, look at service, quality, and follow-up before spending more on finding new ones.
+
+### Growing stock or old stock
+Stock that sits for months ties up cash. Review slow items and consider promotions or smaller orders.
+
+### Costs growing faster than sales
+If rent, wages, or supplier prices rise faster than sales, you may need to adjust prices or costs. Our guide on managing supplier relationships explains how to negotiate better terms.
+
+### Concentration risk
+If most of your sales come from one customer or one product, a small change there can hit you hard. Our guide on winning corporate customers explains why spreading risk matters.
+
+## 7. Set realistic targets
+
+### Start from your baseline
+Use your last few months as a starting point and aim for steady improvement rather than dramatic jumps.
+
+### Think in small steps
+A target to lift repeat customers by a few percent is easier to act on than a vague goal to grow. Break each goal into actions.
+
+### Consider seasons
+Many businesses have busy and slow periods. Compare like with like, such as this festive season against the last one. Our guide on planning for festive peaks and slow seasons explains how.
+
+### Connect targets to your plan
+Your targets should follow from your business plan, not float free of it. Our guide on writing a business plan explains how to set goals.
+
+### Adjust when facts change
+A target is a tool, not a promise. If the market changes, revise it honestly.
+
+## 8. Share the numbers and avoid vanity metrics
+
+### Involve your team
+Share the numbers that staff can influence, such as sales per day or customer ratings, and celebrate improvements. Our guide on keeping your best people explains why involvement matters.
+
+### Beware of vanity metrics
+Social media followers, website visits, or busy-looking foot traffic feel good but may not turn into sales. Always connect a number to money or customers who pay.
+
+### Do not over-measure
+Too many numbers create confusion and take time away from running the business. Remove any that you never use.
+
+### Protect your data
+Business numbers and customer details are sensitive. Keep files secure, back them up, and control who can see them. Our guide on cybersecurity for small businesses and our guide on PDPA compliance explain the basics.
+
+### Let tools help, not replace judgment
+Some owners also use AI tools to summarise reports, but check the results carefully. Our guide on using AI tools in your small business explains the benefits and cautions.
+
+If you need help from an accountant or a bookkeeper to set up your numbers, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so that customers can find your business too.
+
+## Common mistakes Malaysian SMEs make with business numbers
+
+- **Tracking too many things.** A dashboard nobody reads is wasted effort, so keep to a handful of numbers you will act on.
+- **Relying on sales alone.** Sales can rise while margin and cash fall, so always watch margin and cash beside sales.
+- **Using messy records.** Mixed accounts and missing receipts make every number doubtful, so fix the basics first.
+
+## Where to start
+
+- **This week:** Choose five to eight KPIs, including sales, gross margin, and cash, and write down today's figures as a baseline.
+- **Next:** Build a one-page sheet with a target column, and fill in the last three months from your records.
+- **Then:** Set a fixed weekly check of fifteen to thirty minutes and a monthly review.
+- **Every quarter:** Ask whether the numbers still match your goals, and adjust.
+
+You do not need to be an accountant to run by the numbers. A short, regular look at the right few figures can turn gut feeling into clear decisions, and help you catch trouble while it is still easy to fix.`,
+    faqs: [
+      {
+        question: "What KPIs should a small business track?",
+        answer:
+          "Start with sales, gross margin, cash in the bank, customer numbers including repeat customers, stock levels if you sell goods, major costs as a share of sales, and money owed to you. Add one or two that suit your type of business, and keep the total to about five to eight.",
+      },
+      {
+        question: "How often should I review my business numbers?",
+        answer:
+          "A short weekly check of sales and cash, a fuller monthly review against targets, and a broader look every quarter works well for most small businesses. Fixed times that you treat like appointments are more likely to happen.",
+      },
+      {
+        question: "Can I build a dashboard in a spreadsheet?",
+        answer:
+          "Yes. A single sheet with KPIs in rows, months or weeks in columns, a target column, and a couple of simple charts is enough for many small businesses. If your accounting or point-of-sale software reports figures, copy them rather than retyping.",
+      },
+      {
+        question: "What is gross margin and why does it matter?",
+        answer:
+          "Gross margin is what is left of sales after the direct cost of the goods or services sold, shown as a percentage. It shows whether your pricing and purchasing are healthy, and a falling margin is an early warning even when sales rise.",
+      },
+      {
+        question: "What warning signs should I watch for?",
+        answer:
+          "Falling margins, shrinking cash, fewer repeat customers, growing or old stock, costs rising faster than sales, and too much reliance on one customer or product. Investigate each early, before it hurts your cash.",
+      },
+      {
+        question: "How do I set realistic targets?",
+        answer:
+          "Start from your last few months, aim for steady improvements, break goals into actions, compare like with like across seasons, and link targets to your business plan. Adjust honestly if conditions change.",
+      },
+      {
+        question: "What are vanity metrics?",
+        answer:
+          "Numbers that look good but do not connect to money, such as follower counts or website visits that never turn into sales. Always link a metric to paying customers or cash before relying on it.",
+      },
+      {
+        question: "Do I need accounting software to track KPIs?",
+        answer:
+          "Not necessarily. A spreadsheet can work for a small business with clean records. Accounting software can save time by producing reports automatically, so choose based on your size, budget, and how much manual work you can handle.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "追踪企业绩效：马来西亚中小企业的简单关键指标与仪表板",
+        excerpt:
+          "许多小企业主凭直觉经营，直到现金紧张或某个月生意清淡时才措手不及。本指南帮助马来西亚中小企业选出少数重要的数字，建立简单的每周或每月检视，在电子表格或会计软件中制作基本仪表板，并在不被数据淹没的情况下及早发现问题。",
+        body: `大多数企业主大概知道店里忙不忙。但较少人知道这个月是否真的比上个月好、哪项产品赚得最多，或者手上的现金还够用几个星期。直觉有用，但它是迟来的警告。
+
+追踪几个数字不需要昂贵的软件或财务学位。一张按固定时间更新的简单表格，就能在问题还很小的时候显示出来，并帮助您重复有效的做法。
+
+本文仅提供一般信息，并非财务、税务或法律建议。软件功能、税务规定和营商环境会随时间变化，本指南的部分细节可能已经过时。任何重要事项，请向您的会计师或相关主管单位确认。
+
+## 1. 了解什么是关键指标以及它们为什么重要
+
+### 什么是关键指标
+关键绩效指标（KPI）就是一个数字，告诉您企业的某个重要部分是否在正轨上，例如每月销售额、毛利率或银行里的现金。
+
+### 为什么只凭感觉不够
+生意忙碌的店如果利润微薄，仍然可能亏钱；而清淡的一个月也可能隐藏着健康的现金结余。数字显示真正发生的事。
+
+### 少即是多
+选定少数几个数字，并按固定的节奏定期检视它们。五到八个精心选择且您真的会看的指标，胜过三十个从不打开的。
+
+### 保持有用
+好的指标容易计算、基于可靠的记录，并与您能做的决定相关。如果一个数字从不改变您的做法，就舍弃它。
+
+## 2. 选择对您的企业重要的数字
+
+### 销售额
+按周或按月追踪总销售额，如有可能，也按产品、服务或渠道分开。看趋势，而不是单日的数字。
+
+### 毛利率
+毛利率是销售额扣除所售货品或服务的直接成本后所剩的部分，以百分比表示。它告诉您定价和采购是否健康。我们关于产品与服务定价的指南说明了如何计算。
+
+### 现金
+银行里的现金和未来几个星期的简单预测，显示您是否付得起账单。我们关于管理现金流的指南说明了为什么利润和现金不同。
+
+### 顾客
+计算新顾客、回头客，以及每位顾客的平均消费。我们关于建立顾客忠诚度与回头客的指南说明了如何增加回头生意。
+
+### 存货
+如果您销售货品，请留意存货卖得多快，以及有多少积压在货架上。我们关于管理库存和存货的指南说明了基础知识。
+
+### 成本和营运开支
+追踪您的主要固定成本，例如租金和薪资，占销售额的比例。我们关于聪明地削减成本的指南说明了如何检视它们。
+
+### 别人欠您的钱
+留意顾客欠您多少、他们需要多久才付款。我们关于追收逾期货款的指南说明了如何处理拖欠的客户。
+
+### 为您的业务类型再加一两项
+餐厅可以追踪翻台率，美发厅可以追踪每位发型师的预约数，网店可以追踪访客中购买的比例。选择推动您业绩的指标。
+
+## 3. 先把数据整理好
+
+### 保持可靠的记录
+仪表板的好坏取决于背后的记录。记录每一笔销售和开支，保存发票和收据，并定期核对银行户口。我们关于簿记和会计基础的指南说明了如何做。
+
+### 把企业的钱和个人的钱分开
+混合的户口会让每个数字变得模糊。专用的企业户口让追踪容易得多。我们关于开设企业银行户口的指南说明了原因。
+
+### 使用一致的类别
+决定如何标记收入和开支，并坚持下去。每个月改变类别会让比较失去意义。
+
+### 选择适合您规模的工具
+对许多小企业来说，电子表格就够了。会计软件可以自动生成许多报告。我们关于为您的马来西亚中小企业选择会计软件的指南说明了如何比较选项。
+
+## 4. 建立简单的仪表板
+
+### 从一页开始
+制作一张表，把您选定的指标放在行，把月份或星期放在列。再加上一列目标和一列差额。
+
+### 使用简单的图表
+一个小的折线图显示销售额、一个柱状图显示现金，就能一眼看出趋势。避免需要解释的杂乱图表。
+
+### 谨慎使用颜色
+数字达到目标时标为绿色，明显不足时标为红色。这有助于您快速浏览。
+
+### 尽可能从您的软件提取
+如果您的会计或销售终端系统已经报告销售额和利润率，请复制这些数字，而不是重新输入。人工作业越少，错误越少。
+
+### 在每个数字旁写下备注
+简短地说明数字为什么变动，例如促销、假期或供应商延误，会随着时间建立理解。
+
+> 数字只有在改变决定时才有帮助，所以请追踪您会采取行动的指标。
+
+## 5. 建立固定的检视节奏
+
+### 每周检查
+每周花十五到三十分钟查看销售额、现金和任何紧急事项。短而规律胜过长而罕见。
+
+### 每月检视
+每个月更新一次完整的仪表板，与目标和上个月比较，并决定一两项行动。我们关于小企业税务日历的指南说明了适合放进您每月例行事项的其他日期。
+
+### 每季回顾
+每隔几个月退一步看看。这些指标仍然是对的吗？目标实际吗？有什么需要改变？
+
+### 养成习惯
+选定一个固定的时间，当作约会对待。依赖空闲时间的检视很少会发生。
+
+### 请会计师参与
+不时请您的会计师或簿记员查看您的数字。他们可能发现您忽略的规律。
+
+## 6. 及早发现警讯
+
+### 利润率下降
+如果销售额上升但利润率下降，可能是成本悄悄上涨或折扣太深。请在伤及现金之前调查。
+
+### 现金缩水
+如果销售看起来不错，现金却连续几个星期下降，请检查拖欠的客户、存货积压和贷款还款。我们关于管理企业债务与贷款还款的指南说明了债务如何拖累现金。
+
+### 回头生意变慢
+如果回头的顾客减少，请先检视服务、品质和跟进，再花更多钱去找新顾客。
+
+### 存货增加或陈旧
+放了几个月的存货会占用现金。检视滞销品，并考虑促销或减少订货量。
+
+### 成本增长快过销售额
+如果租金、工资或供应商价格上涨快过销售额，您可能需要调整价格或成本。我们关于管理供应商关系的指南说明了如何谈到更好的条件。
+
+### 集中风险
+如果您大部分销售来自一位客户或一项产品，那里的小变化就可能重重打击您。我们关于赢得企业客户的指南说明了为什么分散风险很重要。
+
+## 7. 设定实际的目标
+
+### 从您的基准出发
+以过去几个月为起点，争取稳步改善，而不是大幅跳升。
+
+### 以小步思考
+把回头客增加几个百分点作为目标，比“要成长”这种含糊的目标更容易行动。把每个目标拆成行动。
+
+### 考虑季节
+许多企业有旺季和淡季。请比较相同的时期，例如今年的节庆季与去年的节庆季。我们关于规划节庆旺季与淡季的指南说明了如何做。
+
+### 把目标和您的计划连接起来
+您的目标应该来自您的商业计划，而不是凭空漂浮。我们关于撰写商业计划书的指南说明了如何设定目标。
+
+### 事实改变时调整
+目标是工具，不是承诺。如果市场改变，请诚实地修订它。
+
+## 8. 分享数字并避免虚荣指标
+
+### 让您的团队参与
+分享员工能影响的数字，例如每日销售额或顾客评分，并庆祝进步。我们关于留住最优秀员工的指南说明了为什么参与很重要。
+
+### 提防虚荣指标
+社交媒体粉丝数、网站访问量，或看起来热闹的人流感觉很好，但未必变成销售。请始终把数字与金钱或付费的顾客连接起来。
+
+### 不要过度衡量
+太多数字会造成混乱，并占用经营业务的时间。删除任何您从不使用的。
+
+### 保护您的数据
+企业数字和客户资料很敏感。请保持文件安全、做好备份，并控制谁能看到。我们关于小企业网络安全的指南和关于个人资料保护法令合规的指南说明了基础知识。
+
+### 让工具协助，而不是取代判断
+有些企业主也使用人工智能工具来总结报告，但请仔细检查结果。我们关于在小企业中使用人工智能工具的指南说明了好处和注意事项。
+
+如果您需要会计师或簿记员协助您建立数字，可以[浏览目录](/zh)寻找您附近的专业人士，并[创建免费商家列表](/zh/signup)，让顾客也能找到您的企业。
+
+## 马来西亚中小企业在企业数字方面的常见错误
+
+- **追踪太多东西。** 没人看的仪表板是白费力气，所以请只保留您会采取行动的少数数字。
+- **只依赖销售额。** 销售额可能上升而利润率和现金下降，所以请始终在销售额旁边留意利润率和现金。
+- **使用杂乱的记录。** 混合的户口和缺失的收据会让每个数字都可疑，所以请先把基础做好。
+
+## 从哪里开始
+
+- **本周：** 选择五到八个指标，包括销售额、毛利率和现金，并写下今天的数字作为基准。
+- **接下来：** 建立一页带有目标列的表格，并根据记录填入过去三个月。
+- **然后：** 设定固定的每周十五到三十分钟检查和每月检视。
+- **每个季度：** 问问这些数字是否仍与您的目标相符，并加以调整。
+
+您不需要成为会计师也能用数字经营。定期简短地看几个对的数字，可以把直觉变成清晰的决定，并帮助您在问题还容易解决时发现它。`,
+        faqs: [
+          {
+            question: "小企业应该追踪哪些关键指标？",
+            answer:
+              "从销售额、毛利率、银行现金、包括回头客的顾客数量、销售货品时的存货水平、主要成本占销售额的比例，以及别人欠您的钱开始。再加上一两项适合您业务类型的，总数保持在五到八个左右。",
+          },
+          {
+            question: "我应该多久检视一次企业数字？",
+            answer:
+              "对大多数小企业来说，每周简短检查销售额和现金、每月对照目标做较完整的检视，以及每季度做更广泛的回顾，效果很好。当作约会对待的固定时间更可能真正实行。",
+          },
+          {
+            question: "我可以在电子表格中建立仪表板吗？",
+            answer:
+              "可以。一张把指标放在行、月份或星期放在列、带有目标列和几个简单图表的表格，对许多小企业来说就够了。如果您的会计或销售终端软件有报告数字，请复制而不是重新输入。",
+          },
+          {
+            question: "什么是毛利率，为什么重要？",
+            answer:
+              "毛利率是销售额扣除所售货品或服务的直接成本后所剩的部分，以百分比表示。它显示您的定价和采购是否健康，即使销售额上升，下降的利润率也是早期警讯。",
+          },
+          {
+            question: "我应该留意哪些警讯？",
+            answer:
+              "利润率下降、现金缩水、回头客减少、存货增加或陈旧、成本增长快过销售额，以及过度依赖单一客户或产品。请及早调查每一项，在伤及现金之前处理。",
+          },
+          {
+            question: "我如何设定实际的目标？",
+            answer:
+              "从过去几个月出发，争取稳步改善，把目标拆成行动，在不同季节间比较相同的时期，并把目标与您的商业计划连接。如果情况改变，请诚实地调整。",
+          },
+          {
+            question: "什么是虚荣指标？",
+            answer:
+              "看起来不错但与金钱无关的数字，例如从未变成销售的粉丝数或网站访问量。在依赖一个指标之前，请先把它与付费的顾客或现金连接起来。",
+          },
+          {
+            question: "追踪关键指标需要会计软件吗？",
+            answer:
+              "不一定。对记录整洁的小企业来说，电子表格可以胜任。会计软件可以自动生成报告以节省时间，所以请根据您的规模、预算以及能承担多少人工作业来选择。",
+          },
+        ],
+      },
+      ms: {
+        title: "Menjejak Prestasi Perniagaan: KPI Mudah dan Papan Pemuka untuk PKS Malaysia",
+        excerpt:
+          "Ramai pemilik perniagaan kecil berjalan mengikut gerak hati sehingga krisis tunai atau bulan yang sunyi mengejutkan mereka. Panduan ini membantu PKS Malaysia memilih beberapa angka yang penting, menyediakan semakan mingguan atau bulanan yang mudah, membina papan pemuka asas dalam hamparan atau perisian perakaunan, dan mengesan masalah awal tanpa lemas dalam data.",
+        body: `Kebanyakan pemilik tahu secara kasar betapa sibuknya kedai. Lebih sedikit yang tahu sama ada bulan ini sebenarnya lebih baik daripada bulan lepas, produk mana yang paling menguntungkan, atau berapa minggu tunai yang tinggal. Perasaan berguna, tetapi ia amaran yang lewat.
+
+Menjejak beberapa angka tidak memerlukan perisian mahal atau ijazah kewangan. Satu halaman mudah yang anda kemas kini mengikut jadual tetap boleh menunjukkan masalah ketika ia masih kecil dan membantu anda mengulangi apa yang berjaya.
+
+Ini maklumat umum, bukan nasihat kewangan, cukai atau undang-undang. Ciri perisian, peraturan cukai dan keadaan perniagaan berubah dari semasa ke semasa, dan sebahagian butiran dalam panduan ini mungkin sudah lapuk. Sahkan apa-apa yang penting dengan akauntan anda atau pihak berkuasa berkaitan.
+
+## 1. Fahami apa itu KPI dan mengapa ia penting
+
+### Apa itu KPI
+Penunjuk prestasi utama, atau KPI, ialah angka yang memberitahu anda sama ada bahagian penting perniagaan anda berada di landasan yang betul, seperti jualan bulanan, margin kasar atau tunai di bank.
+
+### Mengapa perasaan tidak mencukupi
+Kedai yang sibuk masih boleh rugi jika margin nipis, dan bulan yang sunyi boleh menyembunyikan baki tunai yang sihat. Angka menunjukkan apa yang sebenarnya berlaku.
+
+### Lebih sedikit lebih baik
+Pilih sebilangan kecil angka dan semaknya mengikut rentak yang tetap. Lima hingga lapan KPI yang dipilih dengan baik dan benar-benar anda lihat mengalahkan tiga puluh yang tidak pernah dibuka.
+
+### Pastikan ia berguna
+KPI yang baik mudah dikira, berdasarkan rekod yang boleh dipercayai, dan berkait dengan keputusan yang boleh anda buat. Jika sesuatu angka tidak pernah mengubah apa yang anda lakukan, buangkannya.
+
+## 2. Pilih angka yang penting untuk perniagaan anda
+
+### Jualan
+Jejaki jumlah jualan mengikut minggu atau bulan, dan jika boleh mengikut produk, perkhidmatan atau saluran. Lihat trend dan bukannya hari tunggal.
+
+### Margin kasar
+Margin kasar ialah baki jualan selepas kos langsung barangan atau perkhidmatan yang dijual, ditunjukkan sebagai peratusan. Ia memberitahu anda sama ada penetapan harga dan pembelian anda sihat. Panduan kami tentang penetapan harga produk dan perkhidmatan menerangkan cara mengiranya.
+
+### Tunai
+Tunai di bank dan ramalan mudah beberapa minggu akan datang menunjukkan sama ada anda mampu membayar bil. Panduan kami tentang menguruskan aliran tunai menerangkan mengapa keuntungan dan tunai berbeza.
+
+### Pelanggan
+Kira pelanggan baharu, pelanggan berulang dan purata jumlah yang dibelanjakan setiap pelanggan. Panduan kami tentang membina kesetiaan pelanggan dan perniagaan berulang menerangkan cara menambah jualan berulang.
+
+### Stok
+Jika anda menjual barangan, perhatikan seberapa pantas stok terjual dan berapa banyak tersangkut di rak. Panduan kami tentang menguruskan inventori dan stok menerangkan asasnya.
+
+### Kos dan overhed
+Jejaki kos tetap utama anda, seperti sewa dan gaji, sebagai bahagian jualan. Panduan kami tentang memotong kos dengan bijak menerangkan cara menyemaknya.
+
+### Wang yang terhutang kepada anda
+Perhatikan berapa banyak pelanggan berhutang dengan anda dan berapa lama mereka mengambil masa untuk membayar. Panduan kami tentang mengutip bayaran lewat menerangkan apa yang perlu dilakukan terhadap pembayar lambat.
+
+### Tambah satu atau dua untuk jenis perniagaan anda
+Restoran mungkin menjejak pusingan meja, salun tempahan bagi setiap penata rambut, dan kedai dalam talian peratusan pelawat yang membeli. Pilih apa yang mendorong keputusan anda.
+
+## 3. Susun data anda terlebih dahulu
+
+### Simpan rekod yang boleh dipercayai
+Papan pemuka hanya sebaik rekod di belakangnya. Rekod setiap jualan dan perbelanjaan, simpan invois dan resit, dan buat penyesuaian akaun bank dengan kerap. Panduan kami tentang asas simpan kira dan perakaunan menerangkan caranya.
+
+### Asingkan wang perniagaan dan peribadi
+Akaun bercampur mengaburkan setiap angka. Akaun perniagaan khusus menjadikan penjejakan jauh lebih mudah. Panduan kami tentang membuka akaun bank perniagaan menerangkan sebabnya.
+
+### Gunakan kategori yang konsisten
+Tentukan cara melabel pendapatan dan perbelanjaan, dan kekalkannya. Menukar kategori setiap bulan menjadikan perbandingan tidak bermakna.
+
+### Pilih alat yang sesuai dengan saiz anda
+Hamparan sudah cukup untuk banyak perniagaan kecil. Perisian perakaunan boleh menghasilkan banyak laporan secara automatik. Panduan kami tentang memilih perisian perakaunan untuk PKS Malaysia anda menerangkan cara membandingkan pilihan.
+
+## 4. Bina papan pemuka yang mudah
+
+### Mulakan dengan satu halaman
+Buat satu helaian dengan KPI pilihan anda dalam baris dan bulan atau minggu dalam lajur. Tambah satu lajur untuk sasaran dan satu untuk perbezaan.
+
+### Gunakan visual yang mudah
+Carta garisan kecil untuk jualan dan bar untuk tunai boleh menunjukkan trend sepintas lalu. Elakkan carta berselerak yang memerlukan penerangan.
+
+### Tambah warna secara berjimat
+Tandakan angka hijau apabila memenuhi sasaran dan merah apabila jelas kurang. Ini membantu anda mengimbas dengan cepat.
+
+### Tarik daripada perisian anda jika boleh
+Jika sistem perakaunan atau terminal jualan anda sudah melaporkan jualan dan margin, salin angka itu dan bukannya menaip semula. Kurang kerja manual bermakna kurang kesilapan.
+
+### Tulis nota di sebelah setiap angka
+Komen ringkas tentang mengapa angka bergerak, seperti promosi, cuti atau kelewatan pembekal, membina kefahaman dari semasa ke semasa.
+
+> Angka hanya membantu jika ia mengubah keputusan, jadi jejaki apa yang akan anda tindakkan.
+
+## 5. Tetapkan rentak semakan yang tetap
+
+### Semakan mingguan
+Luangkan lima belas hingga tiga puluh minit setiap minggu untuk jualan, tunai dan sebarang perkara mendesak. Pendek dan kerap mengalahkan panjang dan jarang.
+
+### Semakan bulanan
+Sebulan sekali, kemas kini papan pemuka penuh, bandingkan dengan sasaran dan bulan lepas, dan tentukan satu atau dua tindakan. Panduan kami tentang kalendar cukai perniagaan kecil menerangkan tarikh lain yang sesuai dengan rutin bulanan anda.
+
+### Tinjauan suku tahunan
+Setiap beberapa bulan, undur seketika. Adakah KPI masih yang betul, adakah sasaran realistik, dan apa yang patut berubah?
+
+### Jadikan tabiat
+Pilih masa tetap dan layan seperti temu janji. Semakan yang bergantung pada masa lapang jarang berlaku.
+
+### Libatkan akauntan anda
+Minta akauntan atau pegawai simpan kira anda melihat angka anda dari semasa ke semasa. Mereka mungkin nampak corak yang anda terlepas.
+
+## 6. Kesan tanda amaran awal
+
+### Margin menurun
+Jika jualan naik tetapi margin turun, kos mungkin meningkat perlahan-lahan atau diskaun terlalu dalam. Siasat sebelum ia menjejaskan tunai.
+
+### Tunai mengecil
+Jika tunai turun selama beberapa minggu sedangkan jualan nampak baik, semak pelanggan yang lambat membayar, penimbunan stok dan bayaran balik pinjaman. Panduan kami tentang menguruskan hutang perniagaan dan bayaran balik pinjaman menerangkan bagaimana hutang boleh menegangkan tunai.
+
+### Perniagaan berulang yang lebih perlahan
+Jika lebih sedikit pelanggan kembali, lihat perkhidmatan, kualiti dan susulan sebelum berbelanja lebih untuk mencari yang baharu.
+
+### Stok bertambah atau lama
+Stok yang terperap selama berbulan-bulan mengikat tunai. Semak item yang perlahan dan pertimbangkan promosi atau tempahan lebih kecil.
+
+### Kos berkembang lebih pantas daripada jualan
+Jika sewa, gaji atau harga pembekal naik lebih pantas daripada jualan, anda mungkin perlu melaraskan harga atau kos. Panduan kami tentang menguruskan hubungan pembekal menerangkan cara merundingkan terma lebih baik.
+
+### Risiko penumpuan
+Jika kebanyakan jualan anda datang daripada satu pelanggan atau satu produk, perubahan kecil di situ boleh menghentam anda dengan teruk. Panduan kami tentang memenangi pelanggan korporat menerangkan mengapa menyebarkan risiko penting.
+
+## 7. Tetapkan sasaran yang realistik
+
+### Mulakan daripada garis asas anda
+Gunakan beberapa bulan lepas sebagai titik permulaan dan sasarkan peningkatan yang stabil dan bukannya lonjakan dramatik.
+
+### Fikir dalam langkah kecil
+Sasaran untuk menaikkan pelanggan berulang beberapa peratus lebih mudah ditindakkan daripada matlamat kabur untuk berkembang. Pecahkan setiap matlamat kepada tindakan.
+
+### Pertimbangkan musim
+Banyak perniagaan mempunyai tempoh sibuk dan perlahan. Bandingkan yang setara, seperti musim perayaan ini dengan yang lepas. Panduan kami tentang merancang puncak perayaan dan musim perlahan menerangkan caranya.
+
+### Hubungkan sasaran dengan pelan anda
+Sasaran anda patut berpunca daripada pelan perniagaan anda, bukan terapung bebas. Panduan kami tentang menulis pelan perniagaan menerangkan cara menetapkan matlamat.
+
+### Laraskan apabila fakta berubah
+Sasaran ialah alat, bukan janji. Jika pasaran berubah, semaknya dengan jujur.
+
+## 8. Kongsi angka dan elakkan metrik kosong
+
+### Libatkan pasukan anda
+Kongsi angka yang boleh dipengaruhi pekerja, seperti jualan sehari atau penilaian pelanggan, dan raikan peningkatan. Panduan kami tentang mengekalkan pekerja terbaik anda menerangkan mengapa penglibatan penting.
+
+### Awasi metrik kosong
+Pengikut media sosial, lawatan laman web atau lalu lintas pejalan kaki yang nampak sibuk terasa baik tetapi mungkin tidak menjadi jualan. Sentiasa hubungkan angka dengan wang atau pelanggan yang membayar.
+
+### Jangan mengukur berlebihan
+Terlalu banyak angka menimbulkan kekeliruan dan mengambil masa daripada menjalankan perniagaan. Buang apa-apa yang tidak pernah anda gunakan.
+
+### Lindungi data anda
+Angka perniagaan dan butiran pelanggan adalah sensitif. Pastikan fail selamat, buat sandaran, dan kawal siapa yang boleh melihatnya. Panduan kami tentang keselamatan siber untuk perniagaan kecil dan panduan kami tentang pematuhan PDPA menerangkan asasnya.
+
+### Biar alat membantu, bukan menggantikan pertimbangan
+Sesetengah pemilik juga menggunakan alat AI untuk meringkaskan laporan, tetapi semak keputusan dengan teliti. Panduan kami tentang menggunakan alat AI dalam perniagaan kecil anda menerangkan faedah dan peringatan.
+
+Jika anda memerlukan bantuan akauntan atau pegawai simpan kira untuk menyediakan angka anda, anda boleh [menyemak imbas direktori](/ms) untuk profesional berhampiran anda, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan juga dapat menemui perniagaan anda.
+
+## Kesilapan lazim PKS Malaysia dengan angka perniagaan
+
+- **Menjejak terlalu banyak perkara.** Papan pemuka yang tiada siapa baca ialah usaha yang sia-sia, jadi kekalkan sebilangan kecil angka yang akan anda tindakkan.
+- **Bergantung pada jualan semata-mata.** Jualan boleh naik sementara margin dan tunai turun, jadi sentiasa perhatikan margin dan tunai di sebelah jualan.
+- **Menggunakan rekod berselerak.** Akaun bercampur dan resit yang hilang menjadikan setiap angka diragui, jadi baiki asas dahulu.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Pilih lima hingga lapan KPI, termasuk jualan, margin kasar dan tunai, dan tulis angka hari ini sebagai garis asas.
+- **Seterusnya:** Bina helaian satu halaman dengan lajur sasaran, dan isikan tiga bulan lepas daripada rekod anda.
+- **Kemudian:** Tetapkan semakan mingguan yang tetap selama lima belas hingga tiga puluh minit dan semakan bulanan.
+- **Setiap suku tahun:** Tanya sama ada angka masih sepadan dengan matlamat anda, dan laraskan.
+
+Anda tidak perlu menjadi akauntan untuk menjalankan perniagaan mengikut angka. Pandangan ringkas dan kerap pada beberapa angka yang betul boleh mengubah gerak hati menjadi keputusan yang jelas, dan membantu anda mengesan masalah ketika ia masih mudah dibaiki.`,
+        faqs: [
+          {
+            question: "KPI apa yang patut dijejak oleh perniagaan kecil?",
+            answer:
+              "Mulakan dengan jualan, margin kasar, tunai di bank, bilangan pelanggan termasuk pelanggan berulang, paras stok jika anda menjual barangan, kos utama sebagai bahagian jualan, dan wang yang terhutang kepada anda. Tambah satu atau dua yang sesuai dengan jenis perniagaan anda, dan kekalkan jumlahnya sekitar lima hingga lapan.",
+          },
+          {
+            question: "Berapa kerap saya patut menyemak angka perniagaan?",
+            answer:
+              "Semakan mingguan ringkas untuk jualan dan tunai, semakan bulanan lebih lengkap berbanding sasaran, dan tinjauan lebih luas setiap suku tahun berfungsi baik untuk kebanyakan perniagaan kecil. Masa tetap yang anda layan seperti temu janji lebih berkemungkinan berlaku.",
+          },
+          {
+            question: "Bolehkah saya membina papan pemuka dalam hamparan?",
+            answer:
+              "Boleh. Satu helaian dengan KPI dalam baris, bulan atau minggu dalam lajur, lajur sasaran, dan beberapa carta mudah sudah cukup untuk banyak perniagaan kecil. Jika perisian perakaunan atau terminal jualan anda melaporkan angka, salin dan bukannya menaip semula.",
+          },
+          {
+            question: "Apakah margin kasar dan mengapa ia penting?",
+            answer:
+              "Margin kasar ialah baki jualan selepas kos langsung barangan atau perkhidmatan yang dijual, ditunjukkan sebagai peratusan. Ia menunjukkan sama ada penetapan harga dan pembelian anda sihat, dan margin yang menurun ialah amaran awal walaupun jualan naik.",
+          },
+          {
+            question: "Apakah tanda amaran yang patut saya perhatikan?",
+            answer:
+              "Margin menurun, tunai mengecil, pelanggan berulang berkurang, stok bertambah atau lama, kos naik lebih pantas daripada jualan, dan terlalu bergantung pada satu pelanggan atau produk. Siasat setiap satu lebih awal, sebelum ia menjejaskan tunai anda.",
+          },
+          {
+            question: "Bagaimanakah saya menetapkan sasaran yang realistik?",
+            answer:
+              "Mulakan daripada beberapa bulan lepas, sasarkan peningkatan yang stabil, pecahkan matlamat kepada tindakan, bandingkan yang setara merentas musim, dan hubungkan sasaran dengan pelan perniagaan anda. Laraskan dengan jujur jika keadaan berubah.",
+          },
+          {
+            question: "Apakah metrik kosong?",
+            answer:
+              "Angka yang kelihatan baik tetapi tidak berkait dengan wang, seperti bilangan pengikut atau lawatan laman web yang tidak pernah menjadi jualan. Sentiasa hubungkan metrik dengan pelanggan yang membayar atau tunai sebelum bergantung padanya.",
+          },
+          {
+            question: "Adakah saya memerlukan perisian perakaunan untuk menjejak KPI?",
+            answer:
+              "Tidak semestinya. Hamparan boleh berfungsi untuk perniagaan kecil dengan rekod yang kemas. Perisian perakaunan boleh menjimatkan masa dengan menghasilkan laporan secara automatik, jadi pilih berdasarkan saiz, bajet dan berapa banyak kerja manual yang boleh anda kendalikan.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "selling-at-pasar-malam-bazaars-and-pop-up-events-in-malaysia",
+    title: "Selling at Pasar Malam, Bazaars and Pop-Up Events: A Guide for Malaysian SMEs",
+    seoTitle: "Selling at Pasar Malam, Bazaars and Pop-Ups in Malaysia",
+    seoDescription:
+      "How Malaysian SMEs can sell at pasar malam, bazaars and pop-ups: choose events, check permits, cost a stall, take QR payments and win repeat buyers.",
+    coverImage: {
+      file: "pop-up-markets-cover.webp",
+      mimeType: "image/webp",
+      alt: "A smiling woman vendor at a busy street market stall with bowls of garlic, shallots, chillies and raw meat, with motorbikes passing behind",
+      altTranslations: {
+        zh: "一位微笑的女摊贩站在熙攘的街头市场摊位后，面前摆着一碗碗蒜头、红葱头、辣椒和生肉，身后有摩托车经过",
+        ms: "Seorang peniaga wanita yang tersenyum di gerai pasar jalanan yang sibuk dengan mangkuk bawang putih, bawang merah, cili dan daging mentah, dengan motosikal lalu di belakang",
+      },
+    },
+    contentImages: {
+      "night-stall": {
+        file: "pop-up-markets-night-stall.webp",
+        mimeType: "image/webp",
+        alt: "A vendor cooking at a lit glass-fronted food cart in a night market while customers queue and other stalls glow in the background",
+        altTranslations: {
+          zh: "夜市里，一位摊贩在亮着灯的玻璃前置餐车上烹煮食物，顾客在排队，背景中其他摊位灯火通明",
+          ms: "Seorang peniaga memasak di kereta sorong makanan berkaca yang diterangi di pasar malam sementara pelanggan beratur dan gerai lain bercahaya di latar belakang",
+        },
+        after: "Walk the market once before you commit to a stall.",
+        afterTranslations: {
+          zh: "在租下摊位之前，先到市场走一圈。",
+          ms: "Berjalan di pasar sekali sebelum anda menempah gerai.",
+        },
+      },
+    },
+    excerpt:
+      "Pasar malam, bazaars and pop-up events let a small business reach hundreds of buyers in a single evening without paying for a shop. This guide helps Malaysian SMEs choose the right events, check permits and rules, cost a stall, plan stock and display, accept cash and QR payments, and turn one-off sales into repeat customers.",
+    body: `Few places in Malaysia are as lively as a pasar malam, a weekend bazaar, or a festive pop-up. Crowds are already there, buyers are ready to spend, and a table or small stall costs far less than a shop lot.
+
+But stall selling has its own rules. A bad location can mean a wasted night, an unplanned rainstorm can wipe out your stock, and a missing permit can end a trading day early. A little preparation makes the difference between a profitable night and an expensive lesson.
+
+This is general information, not legal, tax, or financial advice. Permit rules, fees, and event conditions differ between councils and organisers and change over time. Confirm the current requirements with your local council and the event organiser before you commit.
+
+## 1. Choose the right markets and events
+
+### Know your customer
+Different markets draw different crowds: families at a weekend bazaar, office workers at a lunchtime market, tourists at a heritage-area night market, and shoppers at a festive fair. Match your product to the crowd.
+
+### Visit before you commit
+Walk the market once before you commit to a stall. Visit at the same time you would trade. Count how many people pass, see what they buy, notice which stalls are busy, and check whether others already sell what you plan to sell.
+
+### Compare locations
+A stall near the entrance, a food area, or a main walkway usually sees more traffic than a corner. Ask stallholders how business really is, and which days are strongest.
+
+### Look at the whole cost
+Compare the stall fee, the deposit, transport, tent and table hire, and your time. A cheap spot with little traffic can cost more than an expensive one that sells out.
+
+### Start small
+Try one or two events before you sign up for a regular weekly lot. Test your products, prices, and display before you commit.
+
+## 2. Check permits, rules, and eligibility
+
+### Understand who regulates the market
+Many markets are regulated by the local council, known as the PBT, and some are run by private organisers or associations. Ask the organiser who holds the permit for the site.
+
+### Check your own licence or permit
+Small traders often need a trading or petty trader licence from the local council, and a temporary permit may apply for short events. Procedures, documents, and fees differ between councils, so check with yours directly. Our guide on business licences and permits in Malaysia explains how licensing works.
+
+### Register your business properly
+Selling regularly under a name usually means registering your business. Our guide on how to register a business explains the basics, and our guide on running a home-based business explains how to work from a home base.
+
+### Know the rules on who can trade
+Hawker and small trader licences in Malaysia are for Malaysian citizens, and licences should not be rented out to others. Make sure that you and your helpers are eligible, and keep to the terms of your licence.
+
+### Follow food and safety rules
+If you sell food, hygiene rules, food handler requirements, and sometimes halal certification may apply. Our guide on starting a food business and our guide on halal certification explain what to prepare. Our guide on workplace safety explains how to keep staff and customers safe around heat, gas, and electricity.
+
+### Get the details in writing
+Confirm the stall size, hours, setup and pack-down times, rules on noise and rubbish, and refund policy for rain or cancellation. Keep a copy.
+
+## 3. Cost your stall and set a sales target
+
+### List every cost
+Include the stall fee, deposit, tent, table, lighting, generator or power charges, ingredients or stock, packaging, transport, helpers, card or QR fees, and your own time.
+
+### Work out your break-even
+Divide your total costs for the night by the profit you make on each item to see how many items you must sell to break even. Our guide on pricing products and services explains how to calculate margin.
+
+### Set a realistic target
+Use the number of people passing, the share who stop, and the share who buy to estimate sales. Start cautiously, then adjust after the first night.
+
+### Price for the market
+Buyers at a pasar malam expect clear, simple prices. Avoid complicated discounts, and make sure that your price still leaves a margin after the stall cost.
+
+### Track every night
+Record sales, costs, and leftovers for each event in a simple sheet. Our guide on tracking business performance explains how to turn those numbers into decisions.
+
+## 4. Plan your stock, display, and packaging
+
+### Plan stock carefully
+Bring enough to sell out of your best items, but not so much that unsold stock is wasted. Use your first nights to learn which items sell fastest.
+
+### Choose fast, simple products
+Items that are easy to show, sample, wrap, and pay for sell well in a crowd. Complicated products that need long explanation can slow down your queue.
+
+### Create an eye-catching display
+Use height, colour, and clear lighting. Group similar items, keep the front tidy, and make prices easy to read. Keep a few items hidden behind the table so you can refill as you sell.
+
+### Think about weather
+Bring a sturdy tent, weights for it, tarpaulins for rain, and covers for stock. Have a plan for heat, such as keeping food and goods cool.
+
+### Package well
+Bags, boxes, and labels that look neat help your product stand out and travel well. Include your business name and contact details so buyers can find you again.
+
+### Set up and pack down efficiently
+Make a checklist of everything you bring, and pack in a way that lets you set up in minutes. Arriving early helps you avoid stress.
+
+## 5. Accept cash and digital payments
+
+### Prepare enough change
+Bring small notes and coins, and keep cash in a secure pouch, not an open box.
+
+### Offer QR and e-wallet payments
+Many customers prefer to pay by QR code or e-wallet. Display your QR code clearly, and check that it works before you start. Our guide on accepting digital payments in Malaysia explains how to set it up.
+
+### Check any fees
+Small merchants have often not been charged fees on DuitNow QR payments, but this depends on your bank or e-wallet provider and may change, so confirm current terms with your provider.
+
+### Confirm payment before handing over goods
+Check the payment notification on your phone, not just the customer's screen. Keep your phone charged, and bring a power bank.
+
+### Keep a record
+Note cash and digital sales separately during the night, and reconcile at the end. Our guide on bookkeeping and accounting basics explains how to keep records tidy.
+
+### Stay safe with money
+Keep large amounts of cash out of sight, take it away regularly, and try not to leave the stall unattended.
+
+## 6. Staff your stall and serve customers well
+
+### Plan helpers
+Decide who sets up, who serves, who handles payments, and who packs down. Even a small stall runs better with two people, especially during rushes.
+
+### Train quickly
+Make sure helpers know prices, products, payment methods, and what to say if asked about ingredients or returns. Our guide on hiring your first employee explains your responsibilities if you hire help.
+
+### Greet and engage
+A smile, a short greeting, and a sample can turn a passer-by into a buyer. Avoid pressuring people.
+
+### Handle questions and complaints calmly
+Be honest about ingredients, sizes, and prices. If something goes wrong, apologise and fix it quickly. Our guide on handling difficult customers and online reviews and our guide on customer complaints, refunds, and consumer rights explain what to do.
+
+### Look after your team
+Long nights are tiring. Plan breaks, water, and a fair share of earnings or pay.
+
+> A market night is short, so prepare the details before the crowd arrives.
+
+## 7. Turn one-off sales into repeat customers
+
+### Collect contact details
+Offer a sign-up sheet, a QR code to your social media page, or a loyalty card. Ask permission and explain how you will use the details. Our guide on PDPA compliance explains how to handle personal data.
+
+### Put your name everywhere
+Use a clear banner, labelled packaging, and a card in each bag. Buyers who love your product should know how to find you again.
+
+### Offer pre-orders and repeat options
+Let customers order ahead for the next event or for festive seasons. Our guide on planning for festive peaks and slow seasons explains how to prepare.
+
+### Use social media
+Post your stall location and times before each event, share photos, and tag the market. Our guide on social media marketing for Malaysian SMEs explains how to do it simply.
+
+### Move online when ready
+Regular customers may buy from you online or by messaging. Our guide on selling online in Malaysia explains how to set up.
+
+## 8. Review each event and grow carefully
+
+### Review after every event
+Compare sales to your target, check what sold and what did not, and list what to change next time.
+
+### Drop weak locations
+If a market does not pay, try another. Loyalty to a poor location costs you money.
+
+### Grow step by step
+Add events, products, or helpers only when your numbers support it. Our guide on expanding to a second outlet explains how to think about growth, and our guide on managing inventory and stock explains how to keep stock under control.
+
+### Keep your paperwork up to date
+Renew permits before they expire, keep receipts for stall fees and supplies, and set aside money for tax. Our guide on the small business tax calendar explains the key dates.
+
+If you need a supplier for packaging or a tent, or want help with licensing, you can [browse the directory](/en) for local businesses and professionals, and [create a free business listing](/en/signup) so that customers who meet you at a stall can also find you online.
+
+## Common mistakes Malaysian SMEs make at markets and pop-ups
+
+- **Committing before checking the crowd.** A stall that looks busy may not suit your product, so visit at the same time you would trade.
+- **Ignoring permits and rules.** Trading without the right licence or breaking food and safety rules can end your day and cost fines.
+- **Forgetting the real costs.** Counting only the stall fee ignores transport, stock waste, helpers, and your time, so work out break-even before you sign.
+
+## Where to start
+
+- **This week:** Visit two or three markets at trading time, and note crowds, competitors, and prices.
+- **Next:** Contact your local council and the organiser about permits, fees, and rules for your product.
+- **Then:** Cost one night, set a modest target, and prepare a tidy display with QR payment ready.
+- **After the first event:** Review the numbers, collect contact details, and decide whether to return.
+
+Markets reward preparation. With the right location, the right paperwork, and a clear view of your costs, a humble stall can become a steady source of sales, and a testing ground for a bigger business.`,
+    faqs: [
+      {
+        question: "How do I choose a good pasar malam or bazaar?",
+        answer:
+          "Visit at the time you would trade, count the people passing, see what they buy, and check how many stalls sell similar items. Compare stall fees, deposits, and ask stallholders about their real takings before you commit.",
+      },
+      {
+        question: "Do I need a licence to sell at a pasar malam?",
+        answer:
+          "Often yes. Many small traders need a trading or petty trader licence from the local council, and a temporary permit may apply to short events. Rules, documents, and fees differ between councils, so check with yours and with the organiser.",
+      },
+      {
+        question: "Can foreigners hold hawker or petty trader licences in Malaysia?",
+        answer:
+          "Authorities have stated that hawker and small trader licences are for Malaysian citizens, and licences should not be rented out. Check the current rules with your local council and make sure that everyone working at your stall is eligible.",
+      },
+      {
+        question: "How do I work out if a stall will be profitable?",
+        answer:
+          "List all costs including stall fee, transport, stock, packaging, helpers, and your time, then divide by your profit per item to find how many items you must sell to break even. Compare that to realistic sales based on foot traffic.",
+      },
+      {
+        question: "Should I accept QR and e-wallet payments at a stall?",
+        answer:
+          "Yes, many customers prefer them. Display your QR code clearly, check payments on your own phone before handing over goods, and bring a power bank. Fees for small merchants depend on your provider, so confirm current terms.",
+      },
+      {
+        question: "What products sell best at markets and pop-ups?",
+        answer:
+          "Items that are easy to show, sample, wrap, and pay for, with clear prices and eye-catching display. Complicated products that need long explanations slow your queue. Test a few items at first and keep what sells fastest.",
+      },
+      {
+        question: "What food rules apply to market stalls?",
+        answer:
+          "Hygiene rules and food handler requirements may apply, and some products may need halal certification. Requirements vary by council and product, so check with your local authority and the organiser before selling food.",
+      },
+      {
+        question: "How do I turn market buyers into repeat customers?",
+        answer:
+          "Collect contact details with permission, put your business name and social media on banners and packaging, offer pre-orders for the next event or festive season, and post your stall times online so buyers can find you again.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "在夜市、市集和快闪活动中销售：马来西亚中小企业指南",
+        excerpt:
+          "夜市、市集和快闪活动让小企业无需开店，就能在一个晚上接触到数百位买家。本指南帮助马来西亚中小企业选择合适的活动，查核许可证和规定，计算摊位成本，规划存货和陈列，接受现金和二维码付款，并把一次性的销售变成回头客。",
+        body: `在马来西亚，很少有地方比夜市、周末市集或节庆快闪活动更热闹。人潮已经在那里，买家准备好消费，而一张桌子或一个小摊位的成本远低于一间店铺。
+
+但摆摊销售有自己的规则。糟糕的位置可能意味着白忙一晚，突如其来的暴雨可能毁掉您的存货，缺少许可证可能让营业日提早结束。稍加准备，就能区分赚钱的一晚和昂贵的教训。
+
+本文仅提供一般信息，并非法律、税务或财务建议。许可证规定、费用和活动条件因地方议会和主办方而异，也会随时间变化。在做出承诺之前，请向您当地的地方议会和活动主办方确认最新要求。
+
+## 1. 选择合适的市集和活动
+
+### 了解您的顾客
+不同的市集吸引不同的人群：周末市集有家庭，午餐市集有上班族，古迹区夜市有游客，节庆展销会有购物者。让您的产品配合人群。
+
+### 先去看看再决定
+在租下摊位之前，先到市场走一圈。在您将摆摊的同一时间前往。数一数有多少人经过，看他们买什么，留意哪些摊位忙碌，并查看是否已经有人卖您打算卖的东西。
+
+### 比较位置
+靠近入口、美食区或主要通道的摊位，通常比角落有更多人流。询问摊贩生意实际如何，以及哪几天最旺。
+
+### 看整体成本
+比较摊位费、押金、运输、帐篷和桌子的租金，以及您的时间。人流少的便宜位置，可能比能卖光的昂贵位置花费更多。
+
+### 从小规模开始
+在签下每周固定的摊位之前，先试一两场活动。在做出承诺之前，测试您的产品、价格和陈列。
+
+## 2. 查核许可证、规定和资格
+
+### 了解谁在管理市场
+许多市集由地方议会（PBT）管理，有些则由私人主办方或协会经营。请询问主办方谁持有该场地的许可证。
+
+### 查核您自己的执照或许可证
+小贩通常需要地方议会发出的营业或小贩执照，短期活动可能适用临时许可证。程序、文件和费用因地方议会而异，所以请直接向您的议会查询。我们关于马来西亚营业执照与许可证的指南说明了执照如何运作。
+
+### 妥善注册您的企业
+以某个名称经常销售通常意味着需要注册企业。我们关于如何注册企业的指南说明了基础知识，关于经营居家企业的指南说明了如何以家为基地工作。
+
+### 了解谁可以经营的规定
+马来西亚的小贩和小商贩执照是给马来西亚公民的，执照不应转租给他人。请确保您和您的帮手符合资格，并遵守执照的条款。
+
+### 遵守食品和安全规定
+如果您卖食品，可能适用卫生规定、食品从业员要求，有时还需要清真认证。我们关于开办食品生意的指南和关于清真认证的指南说明了要准备什么。我们关于工作场所安全的指南说明了如何在高温、煤气和电力周围保护员工和顾客的安全。
+
+### 把细节以书面确认
+确认摊位大小、时间、搭建和收摊的时间、噪音和垃圾的规定，以及下雨或取消时的退款政策。保留一份副本。
+
+## 3. 计算摊位成本并设定销售目标
+
+### 列出每一项成本
+包括摊位费、押金、帐篷、桌子、照明、发电机或电费、食材或存货、包装、运输、帮手、刷卡或二维码费用，以及您自己的时间。
+
+### 算出您的收支平衡点
+把当晚的总成本除以每件商品的利润，看您必须卖出多少件才能收支平衡。我们关于产品与服务定价的指南说明了如何计算利润率。
+
+### 设定实际的目标
+用经过的人数、停下来的人所占比例，以及购买者所占比例来估算销售额。先保守一点，第一晚之后再调整。
+
+### 为市场定价
+夜市的买家期望清楚简单的价格。避免复杂的折扣，并确保您的价格在扣除摊位成本后仍有利润。
+
+### 追踪每一晚
+用简单的表格记录每场活动的销售额、成本和剩余。我们关于追踪企业绩效的指南说明了如何把这些数字变成决定。
+
+## 4. 规划存货、陈列和包装
+
+### 谨慎规划存货
+带足够的货让您最好的商品卖光，但不要多到让卖不出去的存货被浪费。用头几晚来了解哪些商品卖得最快。
+
+### 选择快速、简单的产品
+容易展示、试吃、包装和付款的商品在人群中卖得好。需要长篇解释的复杂产品可能拖慢您的队伍。
+
+### 做出吸引眼球的陈列
+利用高度、颜色和清晰的照明。把相似的商品放在一起，保持前面整洁，并让价格容易阅读。把几件商品藏在桌子后面，以便边卖边补货。
+
+### 考虑天气
+带上坚固的帐篷、压帐篷的重物、防雨的防水布，以及存货的遮盖物。为炎热准备方案，例如让食品和货品保持凉爽。
+
+### 妥善包装
+整洁的袋子、盒子和标签有助于让您的产品脱颖而出并便于携带。附上您的企业名称和联络资料，让买家能再次找到您。
+
+### 高效地搭建和收摊
+列出您带的所有东西的清单，并以能让您在几分钟内搭好的方式打包。提早到达有助于避免压力。
+
+## 5. 接受现金和数码付款
+
+### 准备足够的零钱
+带上小面额钞票和硬币，把现金放在安全的小袋子里，而不是敞开的盒子。
+
+### 提供二维码和电子钱包付款
+许多顾客喜欢用二维码或电子钱包付款。清楚地展示您的二维码，并在开始前确认它能用。我们关于在马来西亚接受数码付款的指南说明了如何设定。
+
+### 查核任何费用
+小商家使用DuitNow二维码付款通常没有被收费，但这取决于您的银行或电子钱包供应商，也可能改变，所以请向您的供应商确认最新条款。
+
+### 交货前先确认付款
+检查您手机上的付款通知，而不只是顾客的屏幕。保持手机有电，并带上充电宝。
+
+### 保留记录
+在晚上分别记下现金和数码销售，并在结束时核对。我们关于簿记和会计基础的指南说明了如何保持记录整洁。
+
+### 处理金钱时注意安全
+把大额现金放在看不见的地方，定期拿走，并尽量不要让摊位无人看管。
+
+## 6. 为摊位配备人手并做好服务
+
+### 规划帮手
+决定谁负责搭建、谁负责服务、谁负责处理付款，以及谁负责收摊。即使是小摊位，有两个人也会运作得更好，尤其是在人潮涌来时。
+
+### 快速培训
+确保帮手知道价格、产品、付款方式，以及被问到成分或退货时该怎么说。我们关于聘请第一位员工的指南说明了如果您聘请帮手，您的责任是什么。
+
+### 问候并互动
+微笑、简短的问候和一份试吃，可以把路人变成买家。避免给人压力。
+
+### 冷静处理问题和投诉
+对成分、大小和价格要诚实。如果出了问题，请道歉并迅速处理。我们关于应对难缠顾客与网络评论的指南和关于顾客投诉、退款与消费者权益的指南说明了该怎么做。
+
+### 照顾您的团队
+漫长的夜晚很累人。请安排休息、饮水，以及公平的收入分享或薪酬。
+
+> 市集的夜晚很短，所以请在人潮到来之前准备好细节。
+
+## 7. 把一次性的销售变成回头客
+
+### 收集联络资料
+提供登记表、通往您社交媒体页面的二维码，或会员卡。请先征得同意，并说明您将如何使用这些资料。我们关于个人资料保护法令合规的指南说明了如何处理个人资料。
+
+### 把您的名字放在各处
+使用清楚的横幅、有标签的包装，以及放进每个袋子的名片。喜爱您产品的买家应该知道如何再次找到您。
+
+### 提供预订和重复购买的选择
+让顾客为下一场活动或节庆季提前订购。我们关于规划节庆旺季与淡季的指南说明了如何准备。
+
+### 善用社交媒体
+在每场活动前发布您的摊位位置和时间，分享照片，并标记市集。我们关于马来西亚中小企业社交媒体营销的指南说明了如何简单地做到。
+
+### 准备好时转到线上
+常客可能会在网上或通过讯息向您购买。我们关于在马来西亚网上销售的指南说明了如何设立。
+
+## 8. 检视每场活动并谨慎成长
+
+### 每场活动后检视
+把销售额与您的目标比较，查看什么卖得好、什么不好，并列出下次要改变的地方。
+
+### 舍弃表现差的位置
+如果一个市集不赚钱，就试另一个。对差劲位置的忠诚会让您花钱。
+
+### 一步一步成长
+只有在您的数字支持时，才增加活动、产品或帮手。我们关于开设第二家分店的指南说明了如何思考成长，关于管理库存和存货的指南说明了如何控制存货。
+
+### 保持文件最新
+在许可证到期前续期，保留摊位费和用品的收据，并预留税款。我们关于小企业税务日历的指南说明了关键日期。
+
+如果您需要包装或帐篷的供应商，或想获得执照方面的协助，可以[浏览目录](/zh)寻找本地企业和专业人士，并[创建免费商家列表](/zh/signup)，让在摊位遇见您的顾客也能在网上找到您。
+
+## 马来西亚中小企业在市集和快闪活动中的常见错误
+
+- **没看人潮就做出承诺。** 看起来热闹的摊位不一定适合您的产品，所以请在您将摆摊的同一时间前往。
+- **忽视许可证和规定。** 没有合适的执照营业或违反食品和安全规定，可能让您的一天提早结束并被罚款。
+- **忘记真正的成本。** 只算摊位费会忽略运输、存货浪费、帮手和您的时间，所以请在签约前算出收支平衡点。
+
+## 从哪里开始
+
+- **本周：** 在营业时间参观两三个市集，记下人潮、竞争对手和价格。
+- **接下来：** 就您的产品的许可证、费用和规定联络您当地的地方议会和主办方。
+- **然后：** 计算一晚的成本，设定适度的目标，准备整洁的陈列并备好二维码付款。
+- **第一场活动之后：** 检视数字，收集联络资料，并决定是否回来。
+
+市集回报有准备的人。有了合适的位置、合适的文件，以及对成本的清楚了解，一个朴素的摊位可以成为稳定的销售来源，也是更大企业的试验场。`,
+        faqs: [
+          {
+            question: "我如何选择好的夜市或市集？",
+            answer:
+              "在您将摆摊的时间前往，数一数经过的人，看他们买什么，并查看有多少摊位卖类似的东西。在做出承诺之前，比较摊位费和押金，并询问摊贩真实的收入。",
+          },
+          {
+            question: "在夜市销售需要执照吗？",
+            answer:
+              "通常需要。许多小贩需要地方议会发出的营业或小贩执照，短期活动可能适用临时许可证。规定、文件和费用因地方议会而异，所以请向您的议会和主办方查询。",
+          },
+          {
+            question: "外国人可以在马来西亚持有小贩或小商贩执照吗？",
+            answer:
+              "有关当局已表示，小贩和小商贩执照是给马来西亚公民的，执照不应转租。请向您当地的地方议会确认现行规定，并确保在您摊位工作的每个人都符合资格。",
+          },
+          {
+            question: "我如何算出摊位是否会赚钱？",
+            answer:
+              "列出所有成本，包括摊位费、运输、存货、包装、帮手和您的时间，然后除以每件商品的利润，算出必须卖出多少件才能收支平衡。再与根据人流估算的实际销售额比较。",
+          },
+          {
+            question: "我应该在摊位接受二维码和电子钱包付款吗？",
+            answer:
+              "应该，许多顾客喜欢它们。清楚地展示您的二维码，交货前在您自己的手机上确认付款，并带上充电宝。小商家的费用取决于您的供应商，所以请确认最新条款。",
+          },
+          {
+            question: "什么产品在市集和快闪活动中卖得最好？",
+            answer:
+              "容易展示、试吃、包装和付款的商品，价格清楚且陈列吸引眼球。需要长篇解释的复杂产品会拖慢您的队伍。起初先测试几件商品，并保留卖得最快的。",
+          },
+          {
+            question: "市集摊位适用哪些食品规定？",
+            answer:
+              "可能适用卫生规定和食品从业员要求，有些产品可能需要清真认证。要求因地方议会和产品而异，所以在销售食品之前，请向您当地的主管单位和主办方查询。",
+          },
+          {
+            question: "我如何把市集买家变成回头客？",
+            answer:
+              "在征得同意后收集联络资料，把您的企业名称和社交媒体放在横幅和包装上，为下一场活动或节庆季提供预订，并在网上发布摊位时间，让买家能再次找到您。",
+          },
+        ],
+      },
+      ms: {
+        title: "Berniaga di Pasar Malam, Bazar dan Acara Pop-Up: Panduan untuk PKS Malaysia",
+        excerpt:
+          "Pasar malam, bazar dan acara pop-up membolehkan perniagaan kecil menjangkau ratusan pembeli dalam satu petang tanpa membayar untuk sebuah kedai. Panduan ini membantu PKS Malaysia memilih acara yang sesuai, menyemak permit dan peraturan, mengira kos gerai, merancang stok dan paparan, menerima tunai dan pembayaran QR, dan menukar jualan sekali sahaja kepada pelanggan berulang.",
+        body: `Hanya sedikit tempat di Malaysia yang semeriah pasar malam, bazar hujung minggu atau pop-up perayaan. Orang ramai sudah ada di sana, pembeli bersedia berbelanja, dan sebuah meja atau gerai kecil kosnya jauh lebih rendah daripada lot kedai.
+
+Tetapi jualan di gerai mempunyai peraturan tersendiri. Lokasi yang buruk boleh bermakna malam yang sia-sia, hujan lebat yang tidak dirancang boleh memusnahkan stok anda, dan permit yang tiada boleh menamatkan hari berniaga lebih awal. Sedikit persediaan membezakan malam yang menguntungkan daripada pengajaran yang mahal.
+
+Ini maklumat umum, bukan nasihat undang-undang, cukai atau kewangan. Peraturan permit, yuran dan syarat acara berbeza antara pihak berkuasa tempatan dan penganjur dan berubah dari semasa ke semasa. Sahkan keperluan semasa dengan pihak berkuasa tempatan dan penganjur acara sebelum anda membuat komitmen.
+
+## 1. Pilih pasar dan acara yang sesuai
+
+### Kenali pelanggan anda
+Pasar berbeza menarik orang ramai yang berbeza: keluarga di bazar hujung minggu, pekerja pejabat di pasar waktu makan tengah hari, pelancong di pasar malam kawasan warisan, dan pembeli di pameran perayaan. Padankan produk anda dengan orang ramai.
+
+### Lawat sebelum membuat komitmen
+Berjalan di pasar sekali sebelum anda menempah gerai. Lawat pada waktu yang sama anda akan berniaga. Kira berapa ramai orang yang lalu, lihat apa yang mereka beli, perhatikan gerai mana yang sibuk, dan semak sama ada orang lain sudah menjual apa yang anda rancang untuk jual.
+
+### Bandingkan lokasi
+Gerai berhampiran pintu masuk, kawasan makanan atau laluan utama biasanya mempunyai lebih banyak lalu lintas daripada sudut. Tanya peniaga bagaimana perniagaan sebenarnya, dan hari mana yang paling kuat.
+
+### Lihat kos keseluruhan
+Bandingkan yuran gerai, deposit, pengangkutan, sewa khemah dan meja, dan masa anda. Tempat murah dengan sedikit lalu lintas boleh menelan kos lebih daripada yang mahal yang habis dijual.
+
+### Mulakan kecil
+Cuba satu atau dua acara sebelum anda mendaftar untuk lot mingguan tetap. Uji produk, harga dan paparan anda sebelum anda membuat komitmen.
+
+## 2. Semak permit, peraturan dan kelayakan
+
+### Fahami siapa yang mengawal selia pasar
+Banyak pasar dikawal selia oleh pihak berkuasa tempatan, yang dikenali sebagai PBT, dan sesetengahnya dikendalikan oleh penganjur swasta atau persatuan. Tanya penganjur siapa yang memegang permit untuk tapak itu.
+
+### Semak lesen atau permit anda sendiri
+Peniaga kecil selalunya memerlukan lesen perniagaan atau penjaja kecil daripada pihak berkuasa tempatan, dan permit sementara mungkin terpakai untuk acara singkat. Prosedur, dokumen dan yuran berbeza antara pihak berkuasa tempatan, jadi semak terus dengan pihak anda. Panduan kami tentang lesen dan permit perniagaan di Malaysia menerangkan bagaimana pelesenan berfungsi.
+
+### Daftarkan perniagaan anda dengan betul
+Menjual secara tetap di bawah satu nama biasanya bermakna mendaftar perniagaan anda. Panduan kami tentang cara mendaftar perniagaan menerangkan asasnya, dan panduan kami tentang menjalankan perniagaan di rumah menerangkan cara bekerja dari rumah.
+
+### Ketahui peraturan tentang siapa yang boleh berniaga
+Lesen penjaja dan peniaga kecil di Malaysia adalah untuk warganegara Malaysia, dan lesen tidak patut disewakan kepada orang lain. Pastikan anda dan pembantu anda layak, dan patuhi terma lesen anda.
+
+### Patuhi peraturan makanan dan keselamatan
+Jika anda menjual makanan, peraturan kebersihan, keperluan pengendali makanan dan kadangkala pensijilan halal mungkin terpakai. Panduan kami tentang memulakan perniagaan makanan dan panduan kami tentang pensijilan halal menerangkan apa yang perlu disediakan. Panduan kami tentang keselamatan tempat kerja menerangkan cara memastikan pekerja dan pelanggan selamat di sekitar haba, gas dan elektrik.
+
+### Dapatkan butiran secara bertulis
+Sahkan saiz gerai, waktu, masa pemasangan dan pengemasan, peraturan tentang bunyi dan sampah, dan dasar bayaran balik untuk hujan atau pembatalan. Simpan satu salinan.
+
+## 3. Kira kos gerai anda dan tetapkan sasaran jualan
+
+### Senaraikan setiap kos
+Sertakan yuran gerai, deposit, khemah, meja, pencahayaan, janakuasa atau caj elektrik, bahan atau stok, pembungkusan, pengangkutan, pembantu, yuran kad atau QR, dan masa anda sendiri.
+
+### Kira titik pulang modal anda
+Bahagikan jumlah kos anda untuk malam itu dengan keuntungan pada setiap item untuk melihat berapa banyak item yang mesti dijual untuk pulang modal. Panduan kami tentang penetapan harga produk dan perkhidmatan menerangkan cara mengira margin.
+
+### Tetapkan sasaran yang realistik
+Gunakan bilangan orang yang lalu, bahagian yang berhenti, dan bahagian yang membeli untuk menganggarkan jualan. Mulakan dengan berhati-hati, kemudian laraskan selepas malam pertama.
+
+### Tetapkan harga untuk pasar
+Pembeli di pasar malam menjangkakan harga yang jelas dan mudah. Elakkan diskaun yang rumit, dan pastikan harga anda masih meninggalkan margin selepas kos gerai.
+
+### Jejak setiap malam
+Rekod jualan, kos dan lebihan untuk setiap acara dalam helaian mudah. Panduan kami tentang menjejak prestasi perniagaan menerangkan cara menukar angka itu kepada keputusan.
+
+## 4. Rancang stok, paparan dan pembungkusan
+
+### Rancang stok dengan teliti
+Bawa cukup untuk menghabiskan item terbaik anda, tetapi tidak terlalu banyak sehingga stok tidak terjual dibazirkan. Gunakan beberapa malam pertama untuk mengetahui item mana yang paling laris.
+
+### Pilih produk yang pantas dan mudah
+Item yang mudah ditunjukkan, dicuba, dibungkus dan dibayar laris di tengah orang ramai. Produk rumit yang memerlukan penerangan panjang boleh melambatkan barisan anda.
+
+### Cipta paparan yang menarik perhatian
+Gunakan ketinggian, warna dan pencahayaan yang jelas. Kumpulkan item yang serupa, kemaskan bahagian depan, dan pastikan harga mudah dibaca. Simpan beberapa item tersembunyi di belakang meja supaya anda boleh mengisi semula semasa menjual.
+
+### Fikirkan tentang cuaca
+Bawa khemah yang kukuh, pemberat untuknya, kanvas untuk hujan dan penutup untuk stok. Ada rancangan untuk panas, seperti memastikan makanan dan barangan kekal sejuk.
+
+### Bungkus dengan baik
+Beg, kotak dan label yang kelihatan kemas membantu produk anda menonjol dan mudah dibawa. Sertakan nama perniagaan dan butiran hubungan anda supaya pembeli dapat menemui anda semula.
+
+### Pasang dan kemas dengan cekap
+Buat senarai semak semua yang anda bawa, dan kemas dengan cara yang membolehkan anda memasang dalam beberapa minit. Tiba awal membantu anda mengelak tekanan.
+
+## 5. Terima tunai dan pembayaran digital
+
+### Sediakan wang kecil yang mencukupi
+Bawa wang kertas kecil dan syiling, dan simpan tunai dalam kantung yang selamat, bukan kotak terbuka.
+
+### Tawarkan pembayaran QR dan e-dompet
+Ramai pelanggan lebih suka membayar dengan kod QR atau e-dompet. Paparkan kod QR anda dengan jelas, dan pastikan ia berfungsi sebelum anda mula. Panduan kami tentang menerima pembayaran digital di Malaysia menerangkan cara menyediakannya.
+
+### Semak sebarang yuran
+Peniaga kecil selalunya tidak dikenakan yuran pada pembayaran DuitNow QR, tetapi ini bergantung pada bank atau pembekal e-dompet anda dan mungkin berubah, jadi sahkan terma semasa dengan pembekal anda.
+
+### Sahkan pembayaran sebelum menyerahkan barangan
+Semak notifikasi pembayaran pada telefon anda, bukan sekadar skrin pelanggan. Pastikan telefon anda dicas, dan bawa bank kuasa.
+
+### Simpan rekod
+Catat jualan tunai dan digital secara berasingan sepanjang malam, dan selaraskan pada akhirnya. Panduan kami tentang asas simpan kira dan perakaunan menerangkan cara menyimpan rekod dengan kemas.
+
+### Kekal selamat dengan wang
+Simpan tunai dalam jumlah besar jauh dari pandangan, bawa pergi dengan kerap, dan cuba jangan tinggalkan gerai tanpa pengawasan.
+
+## 6. Kendalikan gerai anda dan layan pelanggan dengan baik
+
+### Rancang pembantu
+Tentukan siapa yang memasang, siapa yang melayan, siapa yang mengendalikan pembayaran, dan siapa yang mengemas. Walaupun gerai kecil berjalan lebih baik dengan dua orang, terutamanya semasa kesibukan.
+
+### Latih dengan cepat
+Pastikan pembantu tahu harga, produk, kaedah pembayaran, dan apa yang perlu dikatakan jika ditanya tentang bahan atau pemulangan. Panduan kami tentang mengupah pekerja pertama anda menerangkan tanggungjawab anda jika anda mengupah pembantu.
+
+### Sapa dan berinteraksi
+Senyuman, sapaan ringkas dan sampel boleh menukar orang yang lalu menjadi pembeli. Elakkan menekan orang.
+
+### Tangani soalan dan aduan dengan tenang
+Jujur tentang bahan, saiz dan harga. Jika sesuatu menjadi salah, minta maaf dan baiki dengan cepat. Panduan kami tentang menangani pelanggan sukar dan ulasan dalam talian dan panduan kami tentang aduan pelanggan, bayaran balik dan hak pengguna menerangkan apa yang perlu dilakukan.
+
+### Jaga pasukan anda
+Malam yang panjang memenatkan. Rancang rehat, air dan bahagian pendapatan atau gaji yang adil.
+
+> Satu malam pasar singkat, jadi sediakan butirannya sebelum orang ramai tiba.
+
+## 7. Tukar jualan sekali sahaja kepada pelanggan berulang
+
+### Kumpulkan butiran hubungan
+Tawarkan helaian pendaftaran, kod QR ke halaman media sosial anda, atau kad kesetiaan. Minta kebenaran dan terangkan bagaimana anda akan menggunakan butiran itu. Panduan kami tentang pematuhan PDPA menerangkan cara mengendalikan data peribadi.
+
+### Letakkan nama anda di mana-mana
+Gunakan sepanduk yang jelas, pembungkusan berlabel dan kad dalam setiap beg. Pembeli yang menyukai produk anda patut tahu cara menemui anda semula.
+
+### Tawarkan tempahan awal dan pilihan berulang
+Biarkan pelanggan menempah lebih awal untuk acara seterusnya atau musim perayaan. Panduan kami tentang merancang puncak perayaan dan musim perlahan menerangkan cara bersedia.
+
+### Gunakan media sosial
+Siarkan lokasi dan waktu gerai anda sebelum setiap acara, kongsi gambar, dan tanda pasar. Panduan kami tentang pemasaran media sosial untuk PKS Malaysia menerangkan cara melakukannya dengan mudah.
+
+### Beralih ke dalam talian apabila bersedia
+Pelanggan tetap mungkin membeli daripada anda dalam talian atau melalui mesej. Panduan kami tentang menjual dalam talian di Malaysia menerangkan cara menyediakannya.
+
+## 8. Semak setiap acara dan berkembang dengan berhati-hati
+
+### Semak selepas setiap acara
+Bandingkan jualan dengan sasaran anda, semak apa yang terjual dan apa yang tidak, dan senaraikan apa yang perlu diubah lain kali.
+
+### Tinggalkan lokasi yang lemah
+Jika sesebuah pasar tidak membayar, cuba yang lain. Kesetiaan kepada lokasi yang buruk memakan wang anda.
+
+### Berkembang langkah demi langkah
+Tambah acara, produk atau pembantu hanya apabila angka anda menyokongnya. Panduan kami tentang membuka outlet kedua menerangkan cara memikirkan pertumbuhan, dan panduan kami tentang menguruskan inventori dan stok menerangkan cara mengawal stok.
+
+### Kemas kini dokumen anda
+Perbaharui permit sebelum tamat, simpan resit untuk yuran gerai dan bekalan, dan asingkan wang untuk cukai. Panduan kami tentang kalendar cukai perniagaan kecil menerangkan tarikh penting.
+
+Jika anda memerlukan pembekal pembungkusan atau khemah, atau mahu bantuan dengan pelesenan, anda boleh [menyemak imbas direktori](/ms) untuk perniagaan dan profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan yang bertemu anda di gerai juga dapat menemui anda dalam talian.
+
+## Kesilapan lazim PKS Malaysia di pasar dan pop-up
+
+- **Membuat komitmen sebelum menyemak orang ramai.** Gerai yang kelihatan sibuk mungkin tidak sesuai dengan produk anda, jadi lawat pada waktu yang sama anda akan berniaga.
+- **Mengabaikan permit dan peraturan.** Berniaga tanpa lesen yang betul atau melanggar peraturan makanan dan keselamatan boleh menamatkan hari anda dan menelan denda.
+- **Melupakan kos sebenar.** Mengira yuran gerai sahaja mengabaikan pengangkutan, pembaziran stok, pembantu dan masa anda, jadi kira titik pulang modal sebelum anda menandatangani.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Lawati dua atau tiga pasar pada waktu berniaga, dan catat orang ramai, pesaing dan harga.
+- **Seterusnya:** Hubungi pihak berkuasa tempatan dan penganjur tentang permit, yuran dan peraturan untuk produk anda.
+- **Kemudian:** Kira kos satu malam, tetapkan sasaran sederhana, dan sediakan paparan yang kemas dengan pembayaran QR sedia.
+- **Selepas acara pertama:** Semak angka, kumpulkan butiran hubungan, dan tentukan sama ada hendak kembali.
+
+Pasar memberi ganjaran kepada persediaan. Dengan lokasi yang betul, dokumen yang betul, dan pandangan jelas tentang kos anda, gerai sederhana boleh menjadi sumber jualan yang stabil, dan tempat ujian untuk perniagaan yang lebih besar.`,
+        faqs: [
+          {
+            question: "Bagaimanakah saya memilih pasar malam atau bazar yang baik?",
+            answer:
+              "Lawat pada waktu anda akan berniaga, kira orang yang lalu, lihat apa yang mereka beli, dan semak berapa banyak gerai menjual item yang serupa. Bandingkan yuran gerai dan deposit, dan tanya peniaga tentang pendapatan sebenar mereka sebelum anda membuat komitmen.",
+          },
+          {
+            question: "Adakah saya memerlukan lesen untuk berniaga di pasar malam?",
+            answer:
+              "Selalunya ya. Ramai peniaga kecil memerlukan lesen perniagaan atau penjaja kecil daripada pihak berkuasa tempatan, dan permit sementara mungkin terpakai untuk acara singkat. Peraturan, dokumen dan yuran berbeza antara pihak berkuasa tempatan, jadi semak dengan pihak anda dan dengan penganjur.",
+          },
+          {
+            question: "Bolehkah warga asing memegang lesen penjaja atau peniaga kecil di Malaysia?",
+            answer:
+              "Pihak berkuasa telah menyatakan bahawa lesen penjaja dan peniaga kecil adalah untuk warganegara Malaysia, dan lesen tidak patut disewakan. Semak peraturan semasa dengan pihak berkuasa tempatan anda dan pastikan semua orang yang bekerja di gerai anda layak.",
+          },
+          {
+            question: "Bagaimanakah saya mengira sama ada gerai akan menguntungkan?",
+            answer:
+              "Senaraikan semua kos termasuk yuran gerai, pengangkutan, stok, pembungkusan, pembantu dan masa anda, kemudian bahagikan dengan keuntungan setiap item untuk mengetahui berapa banyak item yang mesti dijual untuk pulang modal. Bandingkan dengan jualan realistik berdasarkan lalu lintas pejalan kaki.",
+          },
+          {
+            question: "Patutkah saya menerima pembayaran QR dan e-dompet di gerai?",
+            answer:
+              "Ya, ramai pelanggan lebih sukakannya. Paparkan kod QR anda dengan jelas, semak pembayaran pada telefon anda sendiri sebelum menyerahkan barangan, dan bawa bank kuasa. Yuran untuk peniaga kecil bergantung pada pembekal anda, jadi sahkan terma semasa.",
+          },
+          {
+            question: "Produk apa yang paling laris di pasar dan pop-up?",
+            answer:
+              "Item yang mudah ditunjukkan, dicuba, dibungkus dan dibayar, dengan harga yang jelas dan paparan yang menarik perhatian. Produk rumit yang memerlukan penerangan panjang melambatkan barisan anda. Uji beberapa item pada mulanya dan kekalkan yang paling laris.",
+          },
+          {
+            question: "Apakah peraturan makanan yang terpakai untuk gerai pasar?",
+            answer:
+              "Peraturan kebersihan dan keperluan pengendali makanan mungkin terpakai, dan sesetengah produk mungkin memerlukan pensijilan halal. Keperluan berbeza mengikut pihak berkuasa tempatan dan produk, jadi semak dengan pihak berkuasa tempatan anda dan penganjur sebelum menjual makanan.",
+          },
+          {
+            question: "Bagaimanakah saya menukar pembeli pasar kepada pelanggan berulang?",
+            answer:
+              "Kumpulkan butiran hubungan dengan kebenaran, letakkan nama perniagaan dan media sosial anda pada sepanduk dan pembungkusan, tawarkan tempahan awal untuk acara seterusnya atau musim perayaan, dan siarkan waktu gerai anda dalam talian supaya pembeli dapat menemui anda semula.",
+          },
+        ],
+      },
+    },
+  },
 ];
