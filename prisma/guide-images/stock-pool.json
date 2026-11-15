@@ -20,8 +20,7 @@
         "documents",
         "calculator"
       ],
-      "description": "Close-up of hands analysing financial documents with a calculator",
-      "usedBy": null
+      "description": "Close-up of hands analysing financial documents with a calculator"
     },
     {
       "id": 7680744,
@@ -55,8 +54,7 @@
         "calculator",
         "contract"
       ],
-      "description": "Hands using a calculator and signing paperwork",
-      "usedBy": null
+      "description": "Hands using a calculator and signing paperwork"
     },
     {
       "id": 7648005,
@@ -88,8 +86,7 @@
         "planning",
         "laptop"
       ],
-      "description": "Asian man working on a laptop surrounded by papers and charts",
-      "usedBy": null
+      "description": "Asian man working on a laptop surrounded by papers and charts"
     },
     {
       "id": 7654448,
@@ -344,8 +341,7 @@
         "tablet",
         "small-business"
       ],
-      "description": "Asian woman holding a tablet beside a rustic blue shop door",
-      "usedBy": null
+      "description": "Asian woman holding a tablet beside a rustic blue shop door"
     },
     {
       "id": 12935042,
@@ -356,8 +352,7 @@
         "digital",
         "small-business"
       ],
-      "description": "Point-of-sale tablet in a small fashion boutique",
-      "usedBy": null
+      "description": "Point-of-sale tablet in a small fashion boutique"
     },
     {
       "id": 7845092,
@@ -850,7 +845,8 @@
         "data",
         "office"
       ],
-      "description": "Modern workspace with laptop and external drives"
+      "description": "Modern workspace with laptop and external drives",
+      "usedBy": "tracking-business-performance-desk.webp"
     },
     {
       "id": 7002970,
@@ -1067,7 +1063,8 @@
         "park",
         "laptop"
       ],
-      "description": "Asian businessman working outdoors under a tree with a laptop and phone"
+      "description": "Asian businessman working outdoors under a tree with a laptop and phone",
+      "usedBy": "tracking-business-performance-cover.webp"
     },
     {
       "id": 7681754,
@@ -1206,6 +1203,29 @@
       ],
       "description": "Close-up of LED and CFL bulbs on a black surface",
       "usedBy": "cutting-costs-the-smart-way-led.webp"
+    },
+    {
+      "id": 36968048,
+      "tags": [
+        "retail",
+        "market",
+        "stall",
+        "vendor"
+      ],
+      "description": "Smiling market vendor at a busy street stall with produce, spices and meat",
+      "usedBy": "pop-up-markets-cover.webp"
+    },
+    {
+      "id": 29736780,
+      "tags": [
+        "retail",
+        "market",
+        "night",
+        "stall",
+        "food"
+      ],
+      "description": "Night street market food stall with a vendor cooking and customers queueing",
+      "usedBy": "pop-up-markets-night-stall.webp"
     }
   ]
 }
