@@ -119,8 +119,7 @@
         "meeting",
         "office"
       ],
-      "description": "Business team in an office meeting room",
-      "usedBy": null
+      "description": "Business team in an office meeting room"
     },
     {
       "id": 8101492,
@@ -955,7 +954,8 @@
         "wrapping",
         "festive"
       ],
-      "description": "Young Asian woman wrapping a gift box with ribbon in a store"
+      "description": "Young Asian woman wrapping a gift box with ribbon in a store",
+      "usedBy": "part-time-staff-and-interns-wrapping.webp"
     },
     {
       "id": 6650003,
@@ -1074,7 +1074,8 @@
         "coffee",
         "reflective"
       ],
-      "description": "Asian woman working remotely in a coffee shop holding a cup of coffee"
+      "description": "Asian woman working remotely in a coffee shop holding a cup of coffee",
+      "usedBy": "understanding-your-customers-reflect.webp"
     },
     {
       "id": 13735971,
@@ -1084,7 +1085,8 @@
         "counter",
         "service"
       ],
-      "description": "Barista and customer in a friendly exchange at a cafe counter"
+      "description": "Barista and customer in a friendly exchange at a cafe counter",
+      "usedBy": "understanding-your-customers-cover.webp"
     },
     {
       "id": 4350094,
@@ -1127,7 +1129,8 @@
         "inventory",
         "checking"
       ],
-      "description": "Asian female florist checking inventory in a shop"
+      "description": "Asian female florist checking inventory in a shop",
+      "usedBy": "part-time-staff-and-interns-cover.webp"
     },
     {
       "id": 7651550,
