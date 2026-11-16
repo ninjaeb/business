@@ -34431,4 +34431,1317 @@ Pasar memberi ganjaran kepada persediaan. Dengan lokasi yang betul, dokumen yang
       },
     },
   },
+  {
+    slug: "understanding-your-customers-market-research-for-malaysian-smes",
+    title: "Understanding Your Customers: Simple Market Research and Feedback for Malaysian SMEs",
+    seoTitle: "Simple Market Research and Customer Feedback for SMEs",
+    seoDescription:
+      "How Malaysian SMEs can learn what customers want with cheap research: ask good questions, read reviews, test ideas small and turn feedback into decisions.",
+    coverImage: {
+      file: "understanding-your-customers-cover.webp",
+      mimeType: "image/webp",
+      alt: "A customer and a smiling cafe worker talking across a counter beside a payment tablet and a pastry display",
+      altTranslations: {
+        zh: "一位顾客和一位微笑的咖啡馆店员隔着柜台交谈，旁边有付款平板电脑和糕点展示柜",
+        ms: "Seorang pelanggan dan pekerja kafe yang tersenyum berbual di seberang kaunter bersebelahan tablet pembayaran dan kabinet pastri",
+      },
+    },
+    contentImages: {
+      reflect: {
+        file: "understanding-your-customers-reflect.webp",
+        mimeType: "image/webp",
+        alt: "A thoughtful woman holding a white cup at a wooden table beside a laptop and a phone, with plants behind her",
+        altTranslations: {
+          zh: "一位若有所思的女士在木桌旁手持白色杯子，旁边放着笔记本电脑和手机，身后是绿色植物",
+          ms: "Seorang wanita yang termenung memegang cawan putih di meja kayu bersebelahan komputer riba dan telefon, dengan tumbuhan di belakangnya",
+        },
+        after: "Start by listening to the customers you already have.",
+        afterTranslations: {
+          zh: "先从倾听您现有的顾客开始。",
+          ms: "Mulakan dengan mendengar pelanggan yang sudah anda ada.",
+        },
+      },
+    },
+    excerpt:
+      "Many small businesses guess what customers want and discover the mistake only after the stock is bought or the shop is rented. This guide shows Malaysian SMEs how to learn from customers with simple, low-cost research, ask good questions, read reviews and sales data, test ideas on a small scale, handle personal data responsibly, and turn feedback into better decisions.",
+    body: `Most small business owners are close to their customers, which is a real advantage. But closeness can also create blind spots. We assume that what we like is what customers like, that a few loud opinions speak for everyone, or that last year's habits still hold.
+
+Market research sounds like something for big companies with big budgets. In practice, a small business can learn a great deal with conversations, short surveys, and a careful look at the data it already has.
+
+This is general information, not legal or financial advice. Data protection rules, platform features, and market conditions change over time, and some details in this guide may be out of date. Confirm anything important with the relevant authority or a qualified adviser.
+
+## 1. Know what you want to find out
+
+### Start with a decision
+Research is useful when it helps you decide something, such as which product to stock, what to charge, where to open, or how to improve service. Write the decision first, then the question.
+
+### Turn vague worries into clear questions
+"Why are sales down?" is too broad. Better questions are "Why do first-time buyers not return?" or "Which of our three packages do customers find confusing?"
+
+### Decide what would change your mind
+Before you collect answers, ask what result would make you act differently. If nothing could, the research is not worth doing.
+
+### Keep it small
+A handful of focused questions answered well beats a long survey that nobody finishes.
+
+## 2. Learn from the customers you already have
+
+### Begin with your own customers
+Start by listening to the customers you already have. They have already chosen you, so they can tell you why, what almost stopped them, and what they would change. Talk to them while you serve them, and write down what you hear.
+
+### Hold short conversations
+Ask five to ten regular customers for a few minutes. Ask open questions such as "What made you try us?" and "What would make you buy more often?" Listen more than you talk.
+
+### Ask lapsed customers too
+People who stopped buying hold the most useful answers. A polite message asking what went wrong, perhaps with a small thank-you, can reveal problems that happy customers never mention.
+
+### Watch behaviour, not only words
+What people actually buy, skip, or ask about often differs from what they say. Notice which items sell out and which sit unsold.
+
+### Record what you learn
+Keep a simple notebook or sheet of comments, dated and grouped by theme. Patterns appear when you can see them together.
+
+## 3. Use free and low-cost research methods
+
+### Short surveys
+Free online form tools let you send a few questions by message or social media. Keep it to five questions or fewer, mix choices with one open question, and make it quick on a phone.
+
+### Polls on social media
+A poll in your stories or group can quickly compare two product ideas, flavours, or designs. Treat it as a hint, not proof, because it reaches only people who already follow you.
+
+### Reviews and comments
+Read your own reviews and your competitors' reviews, including the negative ones. Look for repeated themes about price, quality, speed, and service. Our guide on handling difficult customers and online reviews explains how to respond.
+
+### Sales and enquiry data
+Your sales records show best sellers, busy times, and average spend. Enquiries that you could not fill show unmet demand. Our guide on tracking business performance explains which numbers to watch.
+
+### Search and social trends
+Free tools show what people search for, and social media shows what they talk about. Use them to spot rising interest, but check that it fits your customers.
+
+### Suggestion box or QR feedback
+A simple card or QR code at the counter or in the package invites feedback from people who would never fill in a survey.
+
+## 4. Ask good questions
+
+### Keep questions neutral
+"Don't you think our service is excellent?" invites a polite yes. Ask "How would you describe our service?" instead.
+
+### Ask about the past, not the future
+People are poor at predicting what they will do. Ask "When did you last buy something like this, and why?" rather than "Would you buy this?"
+
+### Ask one thing at a time
+Double questions confuse people and muddy your results.
+
+### Offer a way out
+Include "not sure" or "other" options, so people do not choose randomly.
+
+### Thank people and close the loop
+A short thank-you, and later a note on what you changed, makes people more willing to help again.
+
+## 5. Study competitors and the local market fairly
+
+### Look at what customers can compare
+List three to five competitors and compare price, range, quality, location, service, and reputation. Our guide on pricing products and services explains how to position your price.
+
+### Be a customer yourself
+Visit or order from competitors and notice what they do well and badly. Do this honestly and openly, without copying their work.
+
+### Understand your area
+Who lives and works nearby, what are the traffic patterns, and what other businesses draw crowds? Our guide on renting commercial premises explains how location affects business.
+
+### Spot local and seasonal patterns
+Demand in Malaysia changes with festive seasons, school holidays, paydays, and weather. Our guide on planning for festive peaks and slow seasons explains how to prepare.
+
+> The cheapest research is a conversation with a customer, so start there before you spend on anything else.
+
+## 6. Test ideas on a small scale
+
+### Try before you commit
+Before a big order or a new line, test with a small batch, a pre-order, or a short promotion. Our guide on managing inventory and stock explains how to avoid overbuying.
+
+### Change one thing at a time
+If you change price, packaging, and promotion together, you cannot tell which made the difference.
+
+### Set a success measure first
+Decide before the test what result would count as a success, such as a number of pre-orders or repeat purchases.
+
+### Sell before you build
+For a new service, describe it on a simple page or message, and see whether people sign up or pay a deposit. Interest that costs the customer something is more reliable than polite praise.
+
+### Learn from failures
+A test that fails cheaply is a success for your research. Write down what you learned.
+
+## 7. Handle customer data responsibly
+
+### Ask permission
+When you collect names, numbers, or emails, say why and how you will use them. Malaysia's Personal Data Protection Act applies to personal data used in commercial transactions, and the details can change, so check the current rules. Our guide on PDPA compliance explains the basics.
+
+### Collect only what you need
+You rarely need a customer's full details to learn what they think. Anonymous answers are often more honest.
+
+### Store it safely
+Keep files protected, limit who can see them, and delete what you no longer need. Our guide on cybersecurity for small businesses explains practical protection.
+
+### Do not misuse contact lists
+Using survey contacts for unrelated marketing without permission can damage trust and may cause legal problems.
+
+### Be careful with photos and reviews
+Ask before you share a customer's name, photo, or comment in your marketing.
+
+## 8. Turn feedback into decisions
+
+### Group feedback by theme
+Count how often each issue appears. Three people mentioning the same problem matters more than one loud complaint.
+
+### Separate fix, consider, and ignore
+Some feedback points to quick fixes, some to ideas worth testing, and some does not fit your business. You cannot please everyone.
+
+### Choose one or two changes
+Pick the changes with the biggest likely effect for the least cost, and set a date to review the result.
+
+### Tell customers what you changed
+Saying "you asked, we changed" builds loyalty. Our guide on building customer loyalty and repeat business explains how to keep customers coming back.
+
+### Repeat regularly
+Customers change. A quick round of feedback every few months keeps you in touch.
+
+If you want help from a marketer, designer, or adviser to run research or improve your offer, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so that customers can find you and leave their own feedback.
+
+## Common mistakes Malaysian SMEs make with customer research
+
+- **Asking friends and family only.** They are kind, not typical, so also ask real buyers and people who chose not to buy.
+- **Asking leading or vague questions.** Questions that hint at the answer give you flattering but useless results, so keep them neutral and specific.
+- **Collecting feedback and doing nothing.** Feedback without action wastes customers' goodwill, so pick a few changes and tell people about them.
+
+## Where to start
+
+- **This week:** Write down one decision you need to make, and talk to five customers about it.
+- **Next:** Read your own reviews and two competitors' reviews, and list the three most repeated themes.
+- **Then:** Run a five-question survey or a social media poll, and test one idea on a small scale.
+- **Every quarter:** Repeat a short round of feedback, and tell customers what you changed.
+
+You do not need a research budget to understand your customers. You need curiosity, a few good questions, and the habit of acting on what you hear.`,
+    faqs: [
+      {
+        question: "How can a small business do market research on a tight budget?",
+        answer:
+          "Talk to existing and lapsed customers, send a short online survey of five questions or fewer, read reviews of your own business and competitors, study your sales and enquiry data, and test ideas on a small scale before committing money.",
+      },
+      {
+        question: "How many customers do I need to ask?",
+        answer:
+          "For conversations, five to ten regular customers often reveal clear patterns. For surveys, more answers help, but a small number of thoughtful replies still beats none. Look for repeated themes rather than exact percentages.",
+      },
+      {
+        question: "What makes a good survey question?",
+        answer:
+          "Keep it neutral, ask one thing at a time, ask about past behaviour rather than predictions, include a not-sure option, and keep the whole survey short enough to finish on a phone in a minute or two.",
+      },
+      {
+        question: "Are social media polls reliable?",
+        answer:
+          "They are useful hints but not proof, because they reach only people who already follow you and may be skewed. Use them to compare simple options, then confirm with real purchases or pre-orders.",
+      },
+      {
+        question: "How do I test a new product without risking much?",
+        answer:
+          "Try a small batch, a pre-order, or a short promotion, change only one thing at a time, and decide in advance what result counts as success. Interest that costs customers something, such as a deposit, is more reliable than praise.",
+      },
+      {
+        question: "What data protection rules apply when I collect customer details?",
+        answer:
+          "Malaysia's Personal Data Protection Act applies to personal data used in commercial transactions. Ask permission, say how you will use the data, collect only what you need, store it safely, and check the current rules with the official authority.",
+      },
+      {
+        question: "How do I learn from competitors fairly?",
+        answer:
+          "Compare price, range, quality, location, service, and reputation, read their reviews, and be a customer yourself. Learn from what they do well and badly without copying their work.",
+      },
+      {
+        question: "What should I do with the feedback I collect?",
+        answer:
+          "Group it by theme, count how often each issue appears, separate quick fixes from ideas to test and things to ignore, choose one or two changes, and tell customers what you changed so they see that feedback matters.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "了解您的顾客：马来西亚中小企业的简单市场调查与反馈",
+        excerpt:
+          "许多小企业猜测顾客想要什么，直到货已买进或店铺已租下才发现错误。本指南向马来西亚中小企业说明如何通过简单、低成本的调查向顾客学习，提出好的问题，阅读评论和销售数据，小规模测试想法，负责任地处理个人资料，并把反馈转化为更好的决定。",
+        body: `大多数小企业主与顾客很接近，这是真正的优势。但接近也会造成盲点。我们假设自己喜欢的就是顾客喜欢的，以为几个声音大的意见代表所有人，或以为去年的习惯依然成立。
+
+市场调查听起来像是大公司和大预算的事。实际上，小企业可以通过交谈、简短的问卷，以及仔细查看手上已有的数据，学到很多东西。
+
+本文仅提供一般信息，并非法律或财务建议。数据保护规定、平台功能和市场状况会随时间变化，本指南的部分细节可能已经过时。任何重要事项，请向相关主管单位或合格的顾问确认。
+
+## 1. 弄清楚您想了解什么
+
+### 从一个决定开始
+当调查能帮助您做出决定时才有用，例如该进什么货、定什么价、在哪里开店，或如何改进服务。先写下决定，再写问题。
+
+### 把含糊的担忧变成清楚的问题
+“为什么销售下降？”太笼统。更好的问题是“为什么首次购买的顾客不回头？”或“我们的三个套餐中，顾客觉得哪一个令人困惑？”
+
+### 决定什么结果会改变您的想法
+在收集答案之前，先问什么结果会让您采取不同的做法。如果没有任何结果能改变，这项调查就不值得做。
+
+### 保持小规模
+几个专注且回答得好的问题，胜过没人完成的冗长问卷。
+
+## 2. 向您现有的顾客学习
+
+### 从您自己的顾客开始
+先从倾听您现有的顾客开始。他们已经选择了您，所以能告诉您为什么、什么差点让他们却步，以及他们希望改变什么。在服务他们的同时与他们交谈，并记下您听到的。
+
+### 进行简短的交谈
+请五到十位常客花几分钟。提出开放式的问题，例如“是什么让您来试我们的？”和“怎样会让您更常购买？”多听少说。
+
+### 也问问已流失的顾客
+停止购买的人手上有最有用的答案。一则礼貌的讯息询问哪里出了问题，也许附上一点小心意，可以揭示满意的顾客从不会提及的问题。
+
+### 观察行为，而不只是言语
+人们实际购买、跳过或询问的东西，往往与他们说的不同。留意哪些商品卖光、哪些卖不出去。
+
+### 记录您学到的
+用简单的笔记本或表格记录意见，注明日期并按主题分组。当您能把它们放在一起看时，规律就会浮现。
+
+## 3. 使用免费和低成本的调查方法
+
+### 简短的问卷
+免费的线上表格工具让您通过讯息或社交媒体发送几个问题。保持在五个问题以内，选择题搭配一个开放题，并让它在手机上很快完成。
+
+### 社交媒体投票
+在限时动态或群组中的投票，可以快速比较两个产品构想、口味或设计。把它当作提示而不是证据，因为它只触及已经关注您的人。
+
+### 评论和意见
+阅读您自己的评论和竞争对手的评论，包括负面的。寻找关于价格、品质、速度和服务的重复主题。我们关于应对难缠顾客与网络评论的指南说明了如何回应。
+
+### 销售和查询数据
+您的销售记录显示畅销品、繁忙时段和平均消费。无法满足的查询显示未被满足的需求。我们关于追踪企业绩效的指南说明了应该留意哪些数字。
+
+### 搜索和社交趋势
+免费工具显示人们搜索什么，社交媒体显示他们谈论什么。用它们来发现上升的兴趣，但要确认它适合您的顾客。
+
+### 意见箱或二维码反馈
+在柜台或包装中放一张简单的卡片或二维码，邀请那些绝不会填问卷的人提供反馈。
+
+## 4. 提出好的问题
+
+### 保持问题中立
+“您不觉得我们的服务很棒吗？”会引来礼貌的“是”。改问“您会如何形容我们的服务？”
+
+### 问过去，而不是未来
+人们不善于预测自己会做什么。请问“您上一次购买类似东西是什么时候，为什么？”，而不是“您会买这个吗？”
+
+### 一次只问一件事
+双重问题会让人困惑，并模糊您的结果。
+
+### 提供退路
+加入“不确定”或“其他”选项，让人们不会随便选。
+
+### 感谢对方并回应
+一句简短的感谢，以及之后说明您改变了什么，会让人们更愿意再次帮忙。
+
+## 5. 公平地研究竞争对手和本地市场
+
+### 看顾客能比较的东西
+列出三到五个竞争对手，比较价格、种类、品质、位置、服务和声誉。我们关于产品与服务定价的指南说明了如何为您的价格定位。
+
+### 自己也当一回顾客
+亲自光顾或向竞争对手下单，留意他们做得好和不好的地方。请诚实而公开地进行，不要抄袭他们的成果。
+
+### 了解您所在的地区
+附近住着和工作的是谁，人流模式如何，还有哪些其他企业吸引人潮？我们关于租用商业空间的指南说明了位置如何影响生意。
+
+### 发现本地和季节性的规律
+马来西亚的需求随节庆季、学校假期、发薪日和天气而变化。我们关于规划节庆旺季与淡季的指南说明了如何准备。
+
+> 最便宜的调查就是与顾客交谈，所以在花钱做其他事之前，先从这里开始。
+
+## 6. 小规模测试想法
+
+### 在承诺之前先试
+在大量订货或推出新产品线之前，先用小批量、预购或短期促销来测试。我们关于管理库存和存货的指南说明了如何避免订货过多。
+
+### 一次只改变一件事
+如果您同时改变价格、包装和促销，就无法知道是哪一项造成了差异。
+
+### 先设定成功的衡量标准
+在测试之前决定什么结果算成功，例如预购的数量或重复购买。
+
+### 先卖再造
+对于新服务，用简单的页面或讯息描述它，看看人们是否报名或支付订金。需要顾客付出代价的兴趣，比礼貌的称赞更可靠。
+
+### 从失败中学习
+低成本失败的测试，对您的调查来说就是成功。请写下您学到的。
+
+## 7. 负责任地处理顾客资料
+
+### 征求同意
+当您收集姓名、号码或电邮时，请说明原因以及您将如何使用。马来西亚的个人资料保护法令适用于商业交易中使用的个人资料，细节也可能改变，所以请查看现行规定。我们关于个人资料保护法令合规的指南说明了基础知识。
+
+### 只收集您需要的
+要了解顾客的想法，您很少需要他们的完整资料。匿名的回答往往更诚实。
+
+### 安全地储存
+保护好文件，限制谁能查看，并删除不再需要的。我们关于小企业网络安全的指南说明了实用的保护措施。
+
+### 不要滥用联络名单
+未经同意把问卷的联络资料用于无关的营销，可能损害信任，也可能引起法律问题。
+
+### 小心使用照片和评论
+在您的营销中分享顾客的姓名、照片或意见之前，请先征求同意。
+
+## 8. 把反馈变成决定
+
+### 按主题分组反馈
+计算每个问题出现的次数。三个人提到同一个问题，比一个声音大的投诉更重要。
+
+### 区分修正、考虑和忽略
+有些反馈指向快速的修正，有些指向值得测试的想法，有些则不适合您的企业。您无法取悦每一个人。
+
+### 选择一两项改变
+选择可能效果最大、成本最低的改变，并设定检视结果的日期。
+
+### 告诉顾客您改变了什么
+说“您提出了，我们改了”会建立忠诚度。我们关于建立顾客忠诚度与回头客的指南说明了如何让顾客不断回来。
+
+### 定期重复
+顾客会改变。每隔几个月做一次快速的反馈，能让您保持联系。
+
+如果您想请营销人员、设计师或顾问协助进行调查或改进您的产品，可以[浏览目录](/zh)寻找您附近的专业人士，并[创建免费商家列表](/zh/signup)，让顾客能找到您并留下他们自己的反馈。
+
+## 马来西亚中小企业在顾客调查方面的常见错误
+
+- **只问亲友。** 他们善意但不具代表性，所以也请问真正的买家和选择不买的人。
+- **提出引导性或含糊的问题。** 暗示答案的问题会给您好听但无用的结果，所以请保持中立且具体。
+- **收集了反馈却什么都不做。** 没有行动的反馈浪费顾客的善意，所以请选几项改变并告诉大家。
+
+## 从哪里开始
+
+- **本周：** 写下您需要做的一个决定，并就此与五位顾客交谈。
+- **接下来：** 阅读您自己的评论和两个竞争对手的评论，列出最常重复的三个主题。
+- **然后：** 进行一份五个问题的问卷或一次社交媒体投票，并小规模测试一个想法。
+- **每个季度：** 重复一轮简短的反馈，并告诉顾客您改变了什么。
+
+您不需要调查预算也能了解您的顾客。您需要好奇心、几个好问题，以及对所听到的采取行动的习惯。`,
+        faqs: [
+          {
+            question: "小企业如何在预算紧张的情况下做市场调查？",
+            answer:
+              "与现有和已流失的顾客交谈，发送不超过五个问题的简短线上问卷，阅读您自己和竞争对手的评论，研究您的销售和查询数据，并在投入资金之前小规模测试想法。",
+          },
+          {
+            question: "我需要询问多少位顾客？",
+            answer:
+              "就交谈而言，五到十位常客往往能显示清楚的规律。就问卷而言，回答越多越好，但少数认真的回复仍胜过没有。请寻找重复的主题，而不是精确的百分比。",
+          },
+          {
+            question: "什么是好的问卷问题？",
+            answer:
+              "保持中立，一次只问一件事，询问过去的行为而不是预测，加入“不确定”选项，并让整份问卷短到能在手机上一两分钟内完成。",
+          },
+          {
+            question: "社交媒体投票可靠吗？",
+            answer:
+              "它们是有用的提示但不是证据，因为只触及已经关注您的人，结果可能有偏差。用它们来比较简单的选项，再用真实的购买或预购来确认。",
+          },
+          {
+            question: "我如何在风险不大的情况下测试新产品？",
+            answer:
+              "尝试小批量、预购或短期促销，一次只改变一件事，并事先决定什么结果算成功。需要顾客付出代价的兴趣，例如订金，比称赞更可靠。",
+          },
+          {
+            question: "收集顾客资料时适用哪些数据保护规定？",
+            answer:
+              "马来西亚的个人资料保护法令适用于商业交易中使用的个人资料。请征求同意，说明您将如何使用资料，只收集您需要的，安全储存，并向官方主管单位确认现行规定。",
+          },
+          {
+            question: "我如何公平地向竞争对手学习？",
+            answer:
+              "比较价格、种类、品质、位置、服务和声誉，阅读他们的评论，并自己当一回顾客。学习他们做得好和不好的地方，但不要抄袭他们的成果。",
+          },
+          {
+            question: "我应该如何处理收集到的反馈？",
+            answer:
+              "按主题分组，计算每个问题出现的次数，区分快速修正、值得测试的想法和该忽略的事项，选择一两项改变，并告诉顾客您改变了什么，让他们看到反馈是重要的。",
+          },
+        ],
+      },
+      ms: {
+        title: "Memahami Pelanggan Anda: Kajian Pasaran Mudah dan Maklum Balas untuk PKS Malaysia",
+        excerpt:
+          "Ramai perniagaan kecil meneka apa yang pelanggan mahu dan hanya menyedari kesilapan selepas stok dibeli atau kedai disewa. Panduan ini menunjukkan kepada PKS Malaysia cara belajar daripada pelanggan dengan kajian yang mudah dan berkos rendah, bertanya soalan yang baik, membaca ulasan dan data jualan, menguji idea secara kecil-kecilan, mengendalikan data peribadi dengan bertanggungjawab, dan menukar maklum balas kepada keputusan yang lebih baik.",
+        body: `Kebanyakan pemilik perniagaan kecil rapat dengan pelanggan mereka, yang merupakan kelebihan sebenar. Tetapi keakraban juga boleh mewujudkan titik buta. Kita menganggap apa yang kita suka ialah apa yang pelanggan suka, beberapa pendapat lantang mewakili semua orang, atau tabiat tahun lalu masih berlaku.
+
+Kajian pasaran kedengaran seperti urusan syarikat besar dengan bajet besar. Dalam praktiknya, perniagaan kecil boleh belajar banyak melalui perbualan, tinjauan ringkas dan pemerhatian teliti terhadap data yang sudah dimiliki.
+
+Ini maklumat umum, bukan nasihat undang-undang atau kewangan. Peraturan perlindungan data, ciri platform dan keadaan pasaran berubah dari semasa ke semasa, dan sebahagian butiran dalam panduan ini mungkin sudah lapuk. Sahkan apa-apa yang penting dengan pihak berkuasa berkaitan atau penasihat yang berkelayakan.
+
+## 1. Ketahui apa yang anda mahu ketahui
+
+### Mulakan dengan keputusan
+Kajian berguna apabila ia membantu anda membuat keputusan, seperti produk mana yang hendak distok, berapa hendak dicaj, di mana hendak membuka kedai, atau bagaimana hendak memperbaiki perkhidmatan. Tulis keputusan dahulu, kemudian soalan.
+
+### Tukar kebimbangan kabur kepada soalan yang jelas
+"Mengapa jualan turun?" terlalu luas. Soalan yang lebih baik ialah "Mengapa pembeli kali pertama tidak kembali?" atau "Antara tiga pakej kami, yang mana pelanggan rasa mengelirukan?"
+
+### Tentukan apa yang akan mengubah fikiran anda
+Sebelum mengumpul jawapan, tanya keputusan apa yang akan membuat anda bertindak secara berbeza. Jika tiada, kajian itu tidak berbaloi dilakukan.
+
+### Pastikan ia kecil
+Beberapa soalan yang fokus dan dijawab dengan baik mengalahkan tinjauan panjang yang tiada siapa habiskan.
+
+## 2. Belajar daripada pelanggan yang sudah anda ada
+
+### Mulakan dengan pelanggan anda sendiri
+Mulakan dengan mendengar pelanggan yang sudah anda ada. Mereka sudah memilih anda, jadi mereka boleh memberitahu mengapa, apa yang hampir menghalang mereka, dan apa yang mereka mahu ubah. Berbual dengan mereka semasa melayan mereka, dan tulis apa yang anda dengar.
+
+### Adakan perbualan ringkas
+Minta lima hingga sepuluh pelanggan tetap meluangkan beberapa minit. Tanya soalan terbuka seperti "Apa yang membuatkan anda mencuba kami?" dan "Apa yang akan membuatkan anda membeli lebih kerap?" Dengar lebih banyak daripada bercakap.
+
+### Tanya juga pelanggan yang sudah berhenti
+Orang yang berhenti membeli memegang jawapan paling berguna. Mesej sopan yang bertanya apa yang tidak kena, mungkin dengan ucapan terima kasih kecil, boleh mendedahkan masalah yang tidak pernah disebut oleh pelanggan yang berpuas hati.
+
+### Perhatikan tingkah laku, bukan sekadar kata-kata
+Apa yang orang sebenarnya beli, langkau atau tanya selalunya berbeza daripada apa yang mereka katakan. Perhatikan item mana yang habis dan mana yang tidak terjual.
+
+### Rekod apa yang anda pelajari
+Simpan buku nota atau helaian ringkas komen, bertarikh dan dikumpulkan mengikut tema. Corak muncul apabila anda dapat melihatnya bersama.
+
+## 3. Gunakan kaedah kajian percuma dan berkos rendah
+
+### Tinjauan ringkas
+Alat borang dalam talian percuma membolehkan anda menghantar beberapa soalan melalui mesej atau media sosial. Hadkan kepada lima soalan atau kurang, campurkan pilihan dengan satu soalan terbuka, dan pastikan ia cepat di telefon.
+
+### Undian di media sosial
+Undian dalam story atau kumpulan anda boleh membandingkan dua idea produk, perisa atau reka bentuk dengan cepat. Anggap ia sebagai petunjuk, bukan bukti, kerana ia hanya sampai kepada orang yang sudah mengikuti anda.
+
+### Ulasan dan komen
+Baca ulasan anda sendiri dan ulasan pesaing, termasuk yang negatif. Cari tema berulang tentang harga, kualiti, kelajuan dan perkhidmatan. Panduan kami tentang menangani pelanggan sukar dan ulasan dalam talian menerangkan cara membalas.
+
+### Data jualan dan pertanyaan
+Rekod jualan anda menunjukkan produk terlaris, waktu sibuk dan purata perbelanjaan. Pertanyaan yang tidak dapat anda penuhi menunjukkan permintaan yang tidak dipenuhi. Panduan kami tentang menjejak prestasi perniagaan menerangkan angka mana yang perlu diperhatikan.
+
+### Trend carian dan sosial
+Alat percuma menunjukkan apa yang orang cari, dan media sosial menunjukkan apa yang mereka bualkan. Gunakannya untuk mengesan minat yang meningkat, tetapi pastikan ia sesuai dengan pelanggan anda.
+
+### Kotak cadangan atau maklum balas QR
+Kad mudah atau kod QR di kaunter atau dalam bungkusan menjemput maklum balas daripada orang yang tidak akan mengisi tinjauan.
+
+## 4. Tanya soalan yang baik
+
+### Pastikan soalan neutral
+"Tidakkah anda fikir perkhidmatan kami cemerlang?" menjemput jawapan "ya" yang sopan. Tanya "Bagaimana anda menggambarkan perkhidmatan kami?" sebaliknya.
+
+### Tanya tentang masa lalu, bukan masa depan
+Orang lemah dalam meramal apa yang akan mereka lakukan. Tanya "Bila kali terakhir anda membeli sesuatu seperti ini, dan mengapa?" dan bukannya "Adakah anda akan membeli ini?"
+
+### Tanya satu perkara pada satu masa
+Soalan berganda mengelirukan orang dan mengaburkan keputusan anda.
+
+### Beri jalan keluar
+Sertakan pilihan "tidak pasti" atau "lain-lain", supaya orang tidak memilih secara rawak.
+
+### Berterima kasih dan tutup bulatan
+Ucapan terima kasih ringkas, dan kemudian nota tentang apa yang anda ubah, menjadikan orang lebih sudi membantu lagi.
+
+## 5. Kaji pesaing dan pasaran tempatan dengan adil
+
+### Lihat apa yang pelanggan boleh bandingkan
+Senaraikan tiga hingga lima pesaing dan bandingkan harga, pelbagai produk, kualiti, lokasi, perkhidmatan dan reputasi. Panduan kami tentang penetapan harga produk dan perkhidmatan menerangkan cara meletakkan harga anda.
+
+### Jadilah pelanggan sendiri
+Lawat atau buat pesanan daripada pesaing dan perhatikan apa yang mereka lakukan dengan baik dan buruk. Lakukan ini dengan jujur dan terbuka, tanpa meniru kerja mereka.
+
+### Fahami kawasan anda
+Siapa yang tinggal dan bekerja berhampiran, bagaimana corak lalu lintas, dan perniagaan lain mana yang menarik orang ramai? Panduan kami tentang menyewa premis komersial menerangkan bagaimana lokasi mempengaruhi perniagaan.
+
+### Kesan corak tempatan dan bermusim
+Permintaan di Malaysia berubah mengikut musim perayaan, cuti sekolah, hari gaji dan cuaca. Panduan kami tentang merancang puncak perayaan dan musim perlahan menerangkan cara bersedia.
+
+> Kajian paling murah ialah perbualan dengan pelanggan, jadi mulakan di situ sebelum anda berbelanja untuk apa-apa yang lain.
+
+## 6. Uji idea secara kecil-kecilan
+
+### Cuba sebelum membuat komitmen
+Sebelum tempahan besar atau barisan baharu, uji dengan kelompok kecil, tempahan awal atau promosi singkat. Panduan kami tentang menguruskan inventori dan stok menerangkan cara mengelak pembelian berlebihan.
+
+### Ubah satu perkara pada satu masa
+Jika anda mengubah harga, pembungkusan dan promosi serentak, anda tidak dapat mengetahui yang mana membuat perbezaan.
+
+### Tetapkan ukuran kejayaan dahulu
+Tentukan sebelum ujian apa keputusan yang dikira berjaya, seperti bilangan tempahan awal atau pembelian berulang.
+
+### Jual sebelum membina
+Untuk perkhidmatan baharu, terangkannya pada halaman atau mesej yang mudah, dan lihat sama ada orang mendaftar atau membayar deposit. Minat yang menelan kos kepada pelanggan lebih boleh dipercayai daripada pujian yang sopan.
+
+### Belajar daripada kegagalan
+Ujian yang gagal dengan murah ialah kejayaan untuk kajian anda. Tulis apa yang anda pelajari.
+
+## 7. Kendalikan data pelanggan dengan bertanggungjawab
+
+### Minta kebenaran
+Apabila anda mengumpul nama, nombor atau e-mel, nyatakan sebabnya dan bagaimana anda akan menggunakannya. Akta Perlindungan Data Peribadi Malaysia terpakai kepada data peribadi yang digunakan dalam transaksi komersial, dan butirannya boleh berubah, jadi semak peraturan semasa. Panduan kami tentang pematuhan PDPA menerangkan asasnya.
+
+### Kumpul hanya yang anda perlukan
+Anda jarang memerlukan butiran penuh pelanggan untuk mengetahui apa yang mereka fikirkan. Jawapan tanpa nama selalunya lebih jujur.
+
+### Simpan dengan selamat
+Lindungi fail, hadkan siapa yang boleh melihatnya, dan padam apa yang tidak lagi diperlukan. Panduan kami tentang keselamatan siber untuk perniagaan kecil menerangkan perlindungan praktikal.
+
+### Jangan salah guna senarai hubungan
+Menggunakan kenalan tinjauan untuk pemasaran yang tidak berkaitan tanpa kebenaran boleh merosakkan kepercayaan dan mungkin menimbulkan masalah undang-undang.
+
+### Berhati-hati dengan gambar dan ulasan
+Minta kebenaran sebelum anda berkongsi nama, gambar atau komen pelanggan dalam pemasaran anda.
+
+## 8. Tukar maklum balas kepada keputusan
+
+### Kumpulkan maklum balas mengikut tema
+Kira berapa kerap setiap isu muncul. Tiga orang menyebut masalah yang sama lebih penting daripada satu aduan yang lantang.
+
+### Asingkan baiki, pertimbang dan abaikan
+Sesetengah maklum balas menunjuk kepada pembetulan pantas, sesetengah kepada idea yang patut diuji, dan sesetengah tidak sesuai dengan perniagaan anda. Anda tidak dapat menyenangkan semua orang.
+
+### Pilih satu atau dua perubahan
+Pilih perubahan dengan kesan paling besar yang mungkin dengan kos paling rendah, dan tetapkan tarikh untuk menyemak keputusan.
+
+### Beritahu pelanggan apa yang anda ubah
+Mengatakan "anda minta, kami ubah" membina kesetiaan. Panduan kami tentang membina kesetiaan pelanggan dan perniagaan berulang menerangkan cara membuat pelanggan terus kembali.
+
+### Ulang dengan kerap
+Pelanggan berubah. Pusingan maklum balas ringkas setiap beberapa bulan memastikan anda kekal berhubung.
+
+Jika anda mahu bantuan pemasar, pereka atau penasihat untuk menjalankan kajian atau memperbaiki tawaran anda, anda boleh [menyemak imbas direktori](/ms) untuk profesional berhampiran anda, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan dapat menemui anda dan meninggalkan maklum balas mereka sendiri.
+
+## Kesilapan lazim PKS Malaysia dengan kajian pelanggan
+
+- **Bertanya kepada rakan dan keluarga sahaja.** Mereka baik hati, bukan tipikal, jadi tanya juga pembeli sebenar dan orang yang memilih untuk tidak membeli.
+- **Bertanya soalan yang mengarahkan atau kabur.** Soalan yang membayangkan jawapan memberi anda keputusan yang menyenangkan tetapi tidak berguna, jadi pastikan ia neutral dan khusus.
+- **Mengumpul maklum balas dan tidak berbuat apa-apa.** Maklum balas tanpa tindakan membazirkan muhibah pelanggan, jadi pilih beberapa perubahan dan beritahu orang.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Tulis satu keputusan yang perlu anda buat, dan berbual dengan lima pelanggan tentangnya.
+- **Seterusnya:** Baca ulasan anda sendiri dan ulasan dua pesaing, dan senaraikan tiga tema paling berulang.
+- **Kemudian:** Jalankan tinjauan lima soalan atau undian media sosial, dan uji satu idea secara kecil-kecilan.
+- **Setiap suku tahun:** Ulang pusingan maklum balas ringkas, dan beritahu pelanggan apa yang anda ubah.
+
+Anda tidak memerlukan bajet kajian untuk memahami pelanggan anda. Anda memerlukan rasa ingin tahu, beberapa soalan yang baik, dan tabiat bertindak atas apa yang anda dengar.`,
+        faqs: [
+          {
+            question: "Bagaimanakah perniagaan kecil boleh membuat kajian pasaran dengan bajet terhad?",
+            answer:
+              "Berbual dengan pelanggan sedia ada dan yang sudah berhenti, hantar tinjauan dalam talian ringkas dengan lima soalan atau kurang, baca ulasan perniagaan anda dan pesaing, kaji data jualan dan pertanyaan anda, dan uji idea secara kecil-kecilan sebelum membelanjakan wang.",
+          },
+          {
+            question: "Berapa ramai pelanggan yang perlu saya tanya?",
+            answer:
+              "Untuk perbualan, lima hingga sepuluh pelanggan tetap selalunya mendedahkan corak yang jelas. Untuk tinjauan, lebih banyak jawapan membantu, tetapi sebilangan kecil balasan yang teliti masih lebih baik daripada tiada. Cari tema berulang dan bukannya peratusan tepat.",
+          },
+          {
+            question: "Apakah yang menjadikan soalan tinjauan yang baik?",
+            answer:
+              "Pastikan neutral, tanya satu perkara pada satu masa, tanya tentang tingkah laku lalu dan bukannya ramalan, sertakan pilihan tidak pasti, dan pastikan keseluruhan tinjauan cukup pendek untuk disiapkan di telefon dalam satu atau dua minit.",
+          },
+          {
+            question: "Adakah undian media sosial boleh dipercayai?",
+            answer:
+              "Ia petunjuk yang berguna tetapi bukan bukti, kerana ia hanya sampai kepada orang yang sudah mengikuti anda dan mungkin berat sebelah. Gunakannya untuk membandingkan pilihan mudah, kemudian sahkan dengan pembelian sebenar atau tempahan awal.",
+          },
+          {
+            question: "Bagaimanakah saya menguji produk baharu tanpa risiko besar?",
+            answer:
+              "Cuba kelompok kecil, tempahan awal atau promosi singkat, ubah satu perkara pada satu masa, dan tentukan lebih awal apa keputusan yang dikira berjaya. Minat yang menelan kos kepada pelanggan, seperti deposit, lebih boleh dipercayai daripada pujian.",
+          },
+          {
+            question: "Apakah peraturan perlindungan data yang terpakai apabila saya mengumpul butiran pelanggan?",
+            answer:
+              "Akta Perlindungan Data Peribadi Malaysia terpakai kepada data peribadi yang digunakan dalam transaksi komersial. Minta kebenaran, nyatakan bagaimana anda akan menggunakan data, kumpul hanya yang anda perlukan, simpan dengan selamat, dan semak peraturan semasa dengan pihak berkuasa rasmi.",
+          },
+          {
+            question: "Bagaimanakah saya belajar daripada pesaing dengan adil?",
+            answer:
+              "Bandingkan harga, pelbagai produk, kualiti, lokasi, perkhidmatan dan reputasi, baca ulasan mereka, dan jadilah pelanggan sendiri. Belajar daripada apa yang mereka lakukan dengan baik dan buruk tanpa meniru kerja mereka.",
+          },
+          {
+            question: "Apakah yang patut saya lakukan dengan maklum balas yang dikumpulkan?",
+            answer:
+              "Kumpulkan mengikut tema, kira berapa kerap setiap isu muncul, asingkan pembetulan pantas daripada idea untuk diuji dan perkara untuk diabaikan, pilih satu atau dua perubahan, dan beritahu pelanggan apa yang anda ubah supaya mereka melihat maklum balas itu penting.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "part-time-staff-and-interns-in-malaysia",
+    title: "Part-Time Staff and Interns: Hiring Short-Term Help in Malaysia",
+    seoTitle: "Hiring Part-Time Staff and Interns in Malaysia",
+    seoDescription:
+      "How Malaysian SMEs can hire part-time staff and interns: when it makes sense, contracts and pay, contributions, supervision and turning helpers permanent.",
+    coverImage: {
+      file: "part-time-staff-and-interns-cover.webp",
+      mimeType: "image/webp",
+      alt: "A smiling woman in a white t-shirt and black apron writing on a clipboard at a worktable with flowers and ribbons",
+      altTranslations: {
+        zh: "一位身穿白色T恤和黑色围裙的微笑女士，在摆着花朵和丝带的工作台前在写字板上写字",
+        ms: "Seorang wanita tersenyum berbaju-T putih dan apron hitam menulis pada papan klip di meja kerja dengan bunga dan reben",
+      },
+    },
+    contentImages: {
+      wrapping: {
+        file: "part-time-staff-and-interns-wrapping.webp",
+        mimeType: "image/webp",
+        alt: "A woman in a light blue shirt holding a white ribbon over a yellow and green gift box in front of shelves of black bags",
+        altTranslations: {
+          zh: "一位身穿浅蓝色衬衫的女士在摆着黑色手袋的架子前，手持白色丝带，面前是一个黄绿相间的礼盒",
+          ms: "Seorang wanita berbaju biru muda memegang reben putih di atas kotak hadiah kuning dan hijau di hadapan rak beg hitam",
+        },
+        after: "Decide what you actually need help with before you hire anyone.",
+        afterTranslations: {
+          zh: "在聘请任何人之前，先决定您究竟需要什么方面的协助。",
+          ms: "Tentukan apa yang sebenarnya anda perlukan bantuan sebelum anda mengupah sesiapa.",
+        },
+      },
+    },
+    excerpt:
+      "Part-time staff and interns can help a small business cover busy periods, test new roles, and find future talent without the cost of a full-time hire. This guide helps Malaysian SMEs decide when short-term help makes sense, set up fair contracts and pay, understand contributions and allowances, train and supervise well, and avoid common legal and fairness mistakes.",
+    body: `Many small businesses have uneven demand: busy weekends, festive rushes, a few hours of admin each week, or a project that will not last. A full-time hire may be too much, but doing it all yourself leads to burnout.
+
+Part-time staff and interns can fill the gap. They also bring fresh energy and can become your next permanent team members. But short-term does not mean rule-free. Pay, hours, records, and training still need care.
+
+This is general information, not legal, tax, or financial advice. Employment rules, contribution requirements, and intern schemes change over time, and sources vary in what they say, so some details here may be out of date. Confirm current requirements with the Labour Department, PERKESO, the EPF, or an employment lawyer before you decide.
+
+## 1. Decide if short-term help is right for you
+
+### Define the need first
+Decide what you actually need help with before you hire anyone. List the tasks, how many hours each takes, and when they peak. A clear picture shows whether you need a part-timer, an intern, a freelancer, or a full-time hire.
+
+### Part-time staff
+Suited to regular but limited hours, such as weekend counter service or a few mornings of bookkeeping. They are employees with fewer hours.
+
+### Interns
+Suited to learning-focused work with supervision, usually linked to a school or university programme. An internship is meant to give the student experience, not to replace a paid employee.
+
+### Freelancers and contractors
+Suited to project work done in their own way and time. Do not use a freelance label for what is really an employee's job. Our guide on freelancers and gig workers explains the difference.
+
+### Full-time staff
+Better when the work is steady and central to your business. Our guide on hiring your first employee explains the process and costs.
+
+### Consider the true cost
+Include pay, any contributions, training time, supervision, uniforms, and tools. Cheap help that needs constant supervision may not save money.
+
+## 2. Understand how part-time employment works
+
+### What counts as part-time
+Malaysian rules have defined a part-time employee as someone whose normal working hours are above a certain share but not more than a set share of a comparable full-time employee's hours, with a band of roughly 30% to 70% often cited. The exact definition, and which employees are covered, can change, so check the current rules with the Labour Department.
+
+### Part-timers are employees
+A part-time employee is generally still an employee, not a casual helper outside the rules. Pay, hours, rest days, and records matter.
+
+### Put hours in writing
+Agree the days, start and finish times, breaks, and how changes are handled. Clear rosters prevent disputes.
+
+### Be fair on pay
+Pay at least the applicable minimum wage on an hourly basis, where it applies, and pay on time. Check the current minimum wage with official sources. Our guide on employee leave and public holidays explains related entitlements.
+
+### Keep records
+Record hours worked, wages paid, and any agreed changes. Our guide on bookkeeping and accounting basics explains how to keep payroll records tidy.
+
+## 3. Write a simple contract and set pay
+
+### Use a written agreement
+Include the job title, duties, start date, hours, pay rate, how often you pay, notice, probation if any, and who they report to. Our guide on contracts and terms for small businesses explains how to write clear terms.
+
+### Keep to your handbook
+Basic rules on conduct, attendance, and safety apply to everyone. Our guide on the employee handbook and HR policies explains how to set them out.
+
+### Set a fair rate
+Consider the market rate for similar work in your area, the skills needed, and any extras such as meals or transport. Review your rate when circumstances change.
+
+### Explain how overtime works
+If part-timers may be asked to work extra hours at busy times, agree how it is requested and paid, and follow the applicable rules.
+
+### Treat everyone fairly
+Do not offer different terms for similar work for reasons unrelated to the job. Fair treatment helps you keep good people.
+
+## 4. Check contributions and legal duties
+
+### Employee contributions
+Wages paid to employees are generally subject to contributions such as EPF, SOCSO, and EIS, and sources describe part-timers as covered in many cases. Rates, wage ceilings, and exemptions differ and change, so confirm what applies to each worker with the agencies or your accountant. Our guide on hiring your first employee explains registration and contributions.
+
+### Foreign workers
+Hiring foreign nationals involves permits and strict rules, and cannot be done informally. Our guide on hiring foreign workers explains the requirements.
+
+### Insurance and safety
+Make sure that part-timers and interns are covered for workplace risks as the rules require, and give them basic safety training. Our guide on workplace safety and our guide on business insurance for Malaysian SMEs explain the basics.
+
+### Tax and payroll
+Record who you pay, how much, and when, and keep documents for tax purposes. Our guide on the small business tax calendar explains key dates.
+
+### Data and confidentiality
+Part-timers and interns may see customer details. Tell them the rules and keep access limited. Our guide on PDPA compliance explains the basics.
+
+## 5. Hire interns the right way
+
+### Know what an internship is
+An internship is generally a short learning placement, often arranged through a school, college, or university, with set learning goals. It is different from a normal job.
+
+### Allowances and pay
+Reports indicate there is no fixed statutory minimum allowance for private-sector interns, and practice varies, but unpaid or very low allowances for real work can raise fairness concerns and reputational risks. Decide a fair allowance, agree it in writing, and pay on time. Check the current position with the relevant ministry.
+
+### Contributions for interns
+Whether EPF or SOCSO applies to interns depends on how the arrangement is classed and sources differ, so confirm with PERKESO, the EPF, or the institution's guidance before you decide.
+
+### Schemes and support
+Some government agencies and institutions run internship or placement schemes that may offer matching support to employers, with conditions. These change often, so check current schemes and eligibility with official sources.
+
+### Work with the school
+Ask the institution about the required hours, learning outcomes, supervisor reports, insurance, and any agreements to sign.
+
+### Protect your ideas and information
+Ask interns to respect confidentiality, and be clear on who owns the work they produce. Our guide on trademark registration explains how to protect your brand.
+
+## 6. Train and supervise well
+
+### Plan the first week
+Prepare a short induction covering the team, tools, safety, customer service basics, and what good work looks like.
+
+### Give one clear supervisor
+Name one person who answers questions and checks work. Part-timers who feel lost leave quickly.
+
+### Write short checklists
+Simple task lists and step-by-step notes help short-hours staff work well without you standing over them. Our guide on delegating and avoiding owner burnout explains how to hand over work.
+
+### Offer feedback early
+Check in after the first few shifts, praise what works, and correct problems kindly and quickly.
+
+### Use available training support
+Some training schemes help employers fund staff training, with conditions. Our guide on training your team with HRD Corp explains one example.
+
+> Short-term help works best when the tasks are clear, the pay is fair, and someone is responsible for guiding them.
+
+## 7. Schedule around your peaks
+
+### Map your busy hours
+Use your sales records to see when you need more hands, such as lunch, weekends, paydays, and festive weeks. Our guide on planning for festive peaks and slow seasons explains how to prepare.
+
+### Build a reliable roster
+Share schedules early, allow reasonable swaps, and avoid last-minute changes. Reliable schedules help people keep other commitments, like study or a second job.
+
+### Keep a small bench
+Having a few trusted part-timers who can cover extra shifts helps in sickness and rushes.
+
+### Watch total hours and fatigue
+Long hours and late nights wear people down, especially students. Follow the applicable limits on working hours and rest.
+
+### Review costs against sales
+Compare wages with sales per shift to be sure that each shift pays for itself. Our guide on tracking business performance explains how to do it.
+
+## 8. Avoid mistakes and keep your best helpers
+
+### Do not misclassify workers
+Calling an employee a freelancer or an intern to avoid obligations can cause legal and financial trouble. If someone works under your direction and schedule, they may be an employee.
+
+### Treat interns as learners
+Give interns real learning, not only repetitive chores, and keep their hours reasonable.
+
+### End arrangements properly
+Follow your notice terms and keep records. Our guide on terminating an employee in Malaysia explains how to do it fairly.
+
+### Turn good helpers into staff
+If a part-timer or intern does well, talk about a longer role, more hours, or a permanent offer. Our guide on keeping your best people explains how to retain good staff.
+
+### Review and improve
+After each busy season, ask helpers what worked and what did not, and update your onboarding.
+
+If you need an accountant, an HR adviser, or a lawyer to check your contracts and contributions, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so that candidates and customers can find your business.
+
+## Common mistakes Malaysian SMEs make with part-timers and interns
+
+- **Treating short-term help as rule-free.** Part-time staff are generally employees, so keep written terms, pay on time, and check what contributions apply.
+- **Using interns as unpaid labour.** Interns should learn, be supervised, and receive a fair allowance, so agree terms with them and their school.
+- **Skipping training and supervision.** Helpers who are not guided make mistakes and leave, so give a short induction and one clear supervisor.
+
+## Where to start
+
+- **This week:** List the tasks and hours you need covered, and decide whether a part-timer, an intern, or a freelancer fits best.
+- **Next:** Check current rules and contributions with the Labour Department, PERKESO, and the EPF, or with your accountant.
+- **Then:** Write a simple agreement, a roster, and a one-page induction checklist.
+- **After one month:** Review the cost and results, give feedback, and decide whether to extend or make an offer.
+
+Short-term help can give a small business flexibility and fresh talent. With clear roles, fair pay, and good supervision, part-timers and interns can strengthen your team, and some may become its future.`,
+    faqs: [
+      {
+        question: "What counts as a part-time employee in Malaysia?",
+        answer:
+          "Malaysian rules have defined part-time employees by their normal hours compared with a comparable full-time employee, with a band of roughly 30% to 70% often cited. The exact definition and coverage can change, so confirm the current rules with the Labour Department.",
+      },
+      {
+        question: "Do part-time employees get the same protections as full-time staff?",
+        answer:
+          "Part-timers are generally employees, so written terms, timely pay, records, and safety still apply, though some entitlements may be calculated differently. Check the current rules with the Labour Department or an employment lawyer.",
+      },
+      {
+        question: "Do I need to pay EPF, SOCSO, and EIS for part-timers?",
+        answer:
+          "Wages paid to employees are generally subject to these contributions, and part-timers are described as covered in many cases. Rates, ceilings, and exemptions differ and change, so confirm with the agencies or your accountant.",
+      },
+      {
+        question: "Is there a minimum allowance for interns in Malaysia?",
+        answer:
+          "Reports indicate there is no fixed statutory minimum allowance for private-sector interns, and practice varies. Unpaid or very low allowances for real work can raise fairness and reputation concerns, so agree a fair allowance in writing and check current guidance.",
+      },
+      {
+        question: "Do interns need EPF or SOCSO coverage?",
+        answer:
+          "It depends on how the arrangement is classed, and sources differ. Confirm with PERKESO, the EPF, or the institution's guidance before deciding, and make sure interns are protected against workplace risks as the rules require.",
+      },
+      {
+        question: "Should I use a freelancer instead of a part-timer?",
+        answer:
+          "Use a freelancer for project work they do in their own way and time. If someone works under your direction and set schedule like an employee, calling them a freelancer can cause legal and financial problems.",
+      },
+      {
+        question: "How should I train part-time staff and interns?",
+        answer:
+          "Give a short induction, name one clear supervisor, provide simple checklists, give feedback after the first few shifts, and explain safety and confidentiality rules. Short-term helpers who are guided well perform better and stay longer.",
+      },
+      {
+        question: "How do I turn a good part-timer or intern into a permanent employee?",
+        answer:
+          "Talk early about a longer role or more hours, set clear duties and pay, and complete the proper hiring steps such as a written contract and registration for contributions. Good helpers are often your best future hires.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "兼职员工与实习生：在马来西亚聘请短期帮手",
+        excerpt:
+          "兼职员工和实习生可以帮助小企业应付繁忙时段、试验新岗位，并发掘未来的人才，而无需承担全职聘用的成本。本指南帮助马来西亚中小企业判断何时适合聘请短期帮手，订立公平的合约和薪酬，了解缴款和津贴，做好培训和督导，并避免常见的法律和公平性错误。",
+        body: `许多小企业的需求并不均匀：忙碌的周末、节庆的高峰、每星期几小时的行政工作，或不会持续太久的项目。全职聘用可能负担太重，但事事亲力亲为又会导致过度劳累。
+
+兼职员工和实习生可以填补这个缺口。他们也带来新的活力，并可能成为您下一批正式团队成员。但短期并不意味着没有规则。薪酬、工时、记录和培训仍然需要谨慎对待。
+
+本文仅提供一般信息，并非法律、税务或财务建议。雇佣规定、缴款要求和实习计划会随时间变化，各来源的说法也不一，所以此处的部分细节可能已经过时。在做决定之前，请向劳工局、社险机构（PERKESO）、公积金局（EPF）或雇佣法律师确认现行要求。
+
+## 1. 判断短期帮手是否适合您
+
+### 先界定需求
+在聘请任何人之前，先决定您究竟需要什么方面的协助。列出任务、每项需要多少小时，以及何时达到高峰。清楚的全貌会显示您需要的是兼职员工、实习生、自由职业者，还是全职员工。
+
+### 兼职员工
+适合固定但有限的工时，例如周末的柜台服务或每周几个早上的簿记。他们是工时较少的员工。
+
+### 实习生
+适合以学习为重点且有督导的工作，通常与学校或大学的课程相关。实习的目的是让学生获得经验，而不是取代有薪的员工。
+
+### 自由职业者和承包人
+适合以自己的方式和时间完成的项目工作。不要把本该是员工的工作贴上自由职业的标签。我们关于自由职业者与零工工作者的指南说明了两者的区别。
+
+### 全职员工
+当工作稳定且是您业务的核心时更合适。我们关于聘请第一位员工的指南说明了流程和成本。
+
+### 考虑真实的成本
+包括薪酬、任何缴款、培训时间、督导、制服和工具。需要不断督导的廉价帮手可能并不省钱。
+
+## 2. 了解兼职雇佣如何运作
+
+### 什么算兼职
+马来西亚的规定曾把兼职员工界定为正常工时高于某个比例但不超过某个比例的员工（与可比的全职员工相比），常被引用的范围大约是30%至70%。确切的定义以及哪些员工受涵盖可能改变，所以请向劳工局查询现行规定。
+
+### 兼职人员是员工
+兼职员工一般仍是员工，而不是规则之外的临时帮手。薪酬、工时、休息日和记录都很重要。
+
+### 把工时写下来
+商定日子、开始和结束的时间、休息，以及如何处理变动。清楚的排班表可以防止纠纷。
+
+### 在薪酬上要公平
+在适用的情况下，按小时至少支付适用的最低工资，并准时发薪。请向官方来源确认现行最低工资。我们关于员工休假与公共假期的指南说明了相关的权益。
+
+### 保留记录
+记录工作的小时数、支付的工资和任何商定的变动。我们关于簿记和会计基础的指南说明了如何保持薪资记录整洁。
+
+## 3. 订立简单的合约并设定薪酬
+
+### 使用书面协议
+包括职称、职责、开始日期、工时、薪酬、发薪频率、通知期、试用期（如有），以及向谁汇报。我们关于小企业合约与条款的指南说明了如何写清楚条款。
+
+### 遵守您的手册
+关于行为、出勤和安全的基本规则适用于每个人。我们关于员工手册与人力资源政策的指南说明了如何制定。
+
+### 设定公平的薪酬率
+考虑您所在地区类似工作的市场薪酬、所需的技能，以及任何额外的福利，例如餐食或交通。当情况改变时，请检视您的薪酬率。
+
+### 说明加班如何运作
+如果在繁忙时可能要求兼职员工加班，请商定如何提出和支付，并遵守适用的规定。
+
+### 公平对待每个人
+不要因与工作无关的原因，对类似的工作提供不同的条件。公平的对待有助于您留住好人才。
+
+## 4. 查核缴款和法律责任
+
+### 员工缴款
+支付给员工的工资一般须缴纳公积金、社险和就业保险等，多个来源也描述兼职人员在许多情况下受涵盖。费率、工资上限和豁免各不相同且会变化，所以请向有关机构或您的会计师确认适用于每位员工的规定。我们关于聘请第一位员工的指南说明了注册和缴款。
+
+### 外籍员工
+聘请外国人涉及许可证和严格的规定，不能随意进行。我们关于聘请外籍员工的指南说明了要求。
+
+### 保险和安全
+确保兼职员工和实习生按规定在工作场所风险方面受到保障，并给予基本的安全培训。我们关于工作场所安全的指南和关于马来西亚中小企业商业保险的指南说明了基础知识。
+
+### 税务和薪资
+记录您付给谁、多少、何时，并为税务目的保存文件。我们关于小企业税务日历的指南说明了关键日期。
+
+### 资料和保密
+兼职员工和实习生可能会看到顾客资料。请告诉他们规则并限制查阅权限。我们关于个人资料保护法令合规的指南说明了基础知识。
+
+## 5. 以正确的方式聘请实习生
+
+### 了解什么是实习
+实习一般是短期的学习安排，通常通过学校、学院或大学安排，并有既定的学习目标。它与一般的工作不同。
+
+### 津贴和薪酬
+有报道指出，私人领域的实习生没有固定的法定最低津贴，做法也各不相同，但为真正的工作提供无薪或非常低的津贴，可能引起公平性的疑虑和声誉风险。请决定一个公平的津贴，以书面商定，并准时发放。请向相关部门确认现行的立场。
+
+### 实习生的缴款
+公积金或社险是否适用于实习生，取决于该安排如何被归类，而各来源说法不一，所以在决定之前，请向社险机构、公积金局或院校的指引确认。
+
+### 计划和支持
+一些政府机构和院校推行实习或安置计划，可能向雇主提供配套支持，并附有条件。这些经常改变，所以请向官方来源查询现行计划和资格。
+
+### 与学校合作
+向院校询问所需的时数、学习成果、督导报告、保险，以及任何要签署的协议。
+
+### 保护您的想法和资料
+请实习生尊重保密，并清楚说明他们所做的成果归谁所有。我们关于商标注册的指南说明了如何保护您的品牌。
+
+## 6. 做好培训和督导
+
+### 规划第一周
+准备一份简短的入职介绍，涵盖团队、工具、安全、顾客服务基础，以及什么是好的工作。
+
+### 指定一位明确的督导
+指定一个人来回答问题和检查工作。感到迷茫的兼职员工很快就会离开。
+
+### 写简短的清单
+简单的任务清单和逐步说明，可以帮助工时短的员工在没有您盯着的情况下做好工作。我们关于授权与避免企业主过劳的指南说明了如何交接工作。
+
+### 及早给予反馈
+在头几个班次之后确认情况，称赞有效的做法，并友善而迅速地纠正问题。
+
+### 利用可用的培训支持
+一些培训计划协助雇主为员工培训出资，并附有条件。我们关于通过人力资源发展局培训团队的指南说明了一个例子。
+
+> 当任务清晰、薪酬公平，并且有人负责指导时，短期帮手的效果最好。
+
+## 7. 围绕您的高峰期排班
+
+### 绘出您的繁忙时段
+利用您的销售记录，了解何时需要更多人手，例如午餐、周末、发薪日和节庆周。我们关于规划节庆旺季与淡季的指南说明了如何准备。
+
+### 建立可靠的排班表
+及早分享时间表，允许合理的换班，并避免临时的变动。可靠的时间表帮助人们兼顾其他承诺，例如学业或第二份工作。
+
+### 保留一个小的后备名单
+有几位可信赖、能够顶班的兼职员工，在生病和高峰时很有帮助。
+
+### 留意总工时和疲劳
+长时间工作和深夜会让人疲惫，尤其是学生。请遵守适用的工作时数和休息的限制。
+
+### 对照销售检视成本
+比较工资与每个班次的销售额，确保每个班次都能自给自足。我们关于追踪企业绩效的指南说明了如何做。
+
+## 8. 避免错误并留住最好的帮手
+
+### 不要错误归类员工
+为了逃避义务，把员工称为自由职业者或实习生，可能引起法律和财务的麻烦。如果某人在您的指示和时间表下工作，他们可能是员工。
+
+### 把实习生当作学习者
+给实习生真正的学习机会，而不只是重复的杂务，并让他们的工时保持合理。
+
+### 妥善结束安排
+遵守您的通知条款并保留记录。我们关于在马来西亚终止雇佣员工的指南说明了如何公平地做到。
+
+### 把好帮手变成正式员工
+如果兼职员工或实习生表现良好，请谈谈更长的角色、更多的工时或正式的聘用。我们关于留住最优秀员工的指南说明了如何留住好员工。
+
+### 检视并改进
+每个旺季之后，询问帮手什么有效、什么无效，并更新您的入职安排。
+
+如果您需要会计师、人力资源顾问或律师来检查您的合约和缴款，可以[浏览目录](/zh)寻找您附近的专业人士，并[创建免费商家列表](/zh/signup)，让求职者和顾客能找到您的企业。
+
+## 马来西亚中小企业在兼职员工和实习生方面的常见错误
+
+- **把短期帮手当作没有规则。** 兼职员工一般是员工，所以请保留书面条款、准时发薪，并查明适用哪些缴款。
+- **把实习生当作无薪劳工。** 实习生应该学习、受到督导，并获得公平的津贴，所以请与他们及其学校商定条款。
+- **省略培训和督导。** 没有受到指导的帮手会犯错并离开，所以请提供简短的入职介绍和一位明确的督导。
+
+## 从哪里开始
+
+- **本周：** 列出您需要覆盖的任务和工时，并决定兼职员工、实习生或自由职业者哪个最合适。
+- **接下来：** 向劳工局、社险机构和公积金局，或向您的会计师确认现行规定和缴款。
+- **然后：** 写一份简单的协议、一份排班表和一页纸的入职清单。
+- **一个月后：** 检视成本和成果，给予反馈，并决定是否延长或提出聘用。
+
+短期帮手可以给小企业带来灵活性和新的人才。有了清晰的角色、公平的薪酬和良好的督导，兼职员工和实习生可以加强您的团队，其中一些人甚至可能成为它的未来。`,
+        faqs: [
+          {
+            question: "在马来西亚，什么算兼职员工？",
+            answer:
+              "马来西亚的规定曾根据正常工时与可比的全职员工相比来界定兼职员工，常被引用的范围大约是30%至70%。确切的定义和涵盖范围可能改变，所以请向劳工局确认现行规定。",
+          },
+          {
+            question: "兼职员工享有与全职员工相同的保障吗？",
+            answer:
+              "兼职人员一般是员工，所以书面条款、准时发薪、记录和安全仍然适用，尽管某些权益的计算方式可能不同。请向劳工局或雇佣法律师确认现行规定。",
+          },
+          {
+            question: "我需要为兼职员工缴纳公积金、社险和就业保险吗？",
+            answer:
+              "支付给员工的工资一般须缴纳这些款项，兼职人员在许多情况下被描述为受涵盖。费率、上限和豁免各不相同且会变化，所以请向有关机构或您的会计师确认。",
+          },
+          {
+            question: "马来西亚的实习生有最低津贴吗？",
+            answer:
+              "有报道指出，私人领域的实习生没有固定的法定最低津贴，做法也各不相同。为真正的工作提供无薪或非常低的津贴，可能引起公平性和声誉的疑虑，所以请以书面商定一个公平的津贴，并查阅现行指引。",
+          },
+          {
+            question: "实习生需要公积金或社险的保障吗？",
+            answer:
+              "这取决于该安排如何被归类，各来源说法不一。在决定之前，请向社险机构、公积金局或院校的指引确认，并确保实习生按规定在工作场所风险方面受到保障。",
+          },
+          {
+            question: "我应该用自由职业者而不是兼职员工吗？",
+            answer:
+              "对于他们以自己的方式和时间完成的项目工作，请使用自由职业者。如果某人像员工一样在您的指示和固定时间表下工作，把他们称为自由职业者可能引起法律和财务的问题。",
+          },
+          {
+            question: "我应该如何培训兼职员工和实习生？",
+            answer:
+              "提供简短的入职介绍，指定一位明确的督导，提供简单的清单，在头几个班次后给予反馈，并说明安全和保密的规则。受到良好指导的短期帮手表现更好，留得更久。",
+          },
+          {
+            question: "我如何把好的兼职员工或实习生变成正式员工？",
+            answer:
+              "及早谈谈更长的角色或更多的工时，订明清楚的职责和薪酬，并完成适当的聘用步骤，例如书面合约和缴款登记。好的帮手往往是您未来最好的聘用对象。",
+          },
+        ],
+      },
+      ms: {
+        title: "Pekerja Separuh Masa dan Pelatih: Mengupah Bantuan Jangka Pendek di Malaysia",
+        excerpt:
+          "Pekerja separuh masa dan pelatih boleh membantu perniagaan kecil menampung tempoh sibuk, menguji peranan baharu dan mencari bakat masa depan tanpa kos pengambilan sepenuh masa. Panduan ini membantu PKS Malaysia memutuskan bila bantuan jangka pendek sesuai, menyediakan kontrak dan gaji yang adil, memahami caruman dan elaun, melatih dan menyelia dengan baik, dan mengelak kesilapan undang-undang dan keadilan yang lazim.",
+        body: `Banyak perniagaan kecil mempunyai permintaan yang tidak sekata: hujung minggu yang sibuk, kesibukan perayaan, beberapa jam kerja pentadbiran setiap minggu, atau projek yang tidak akan kekal. Pengambilan sepenuh masa mungkin terlalu berat, tetapi melakukan semuanya sendiri membawa kepada keletihan.
+
+Pekerja separuh masa dan pelatih boleh mengisi jurang itu. Mereka juga membawa tenaga baharu dan boleh menjadi ahli pasukan tetap anda yang seterusnya. Tetapi jangka pendek tidak bermakna tiada peraturan. Gaji, jam, rekod dan latihan masih memerlukan perhatian.
+
+Ini maklumat umum, bukan nasihat undang-undang, cukai atau kewangan. Peraturan pekerjaan, keperluan caruman dan skim pelatih berubah dari semasa ke semasa, dan sumber berbeza dalam apa yang mereka katakan, jadi sebahagian butiran di sini mungkin sudah lapuk. Sahkan keperluan semasa dengan Jabatan Tenaga Kerja, PERKESO, KWSP atau peguam pekerjaan sebelum anda membuat keputusan.
+
+## 1. Tentukan sama ada bantuan jangka pendek sesuai untuk anda
+
+### Tentukan keperluan dahulu
+Tentukan apa yang sebenarnya anda perlukan bantuan sebelum anda mengupah sesiapa. Senaraikan tugas, berapa jam setiap satu mengambil masa, dan bila ia memuncak. Gambaran yang jelas menunjukkan sama ada anda memerlukan pekerja separuh masa, pelatih, pekerja bebas atau pekerja sepenuh masa.
+
+### Pekerja separuh masa
+Sesuai untuk jam yang tetap tetapi terhad, seperti perkhidmatan kaunter hujung minggu atau beberapa pagi simpan kira. Mereka ialah pekerja dengan jam yang lebih sedikit.
+
+### Pelatih
+Sesuai untuk kerja yang berfokuskan pembelajaran dengan penyeliaan, biasanya dikaitkan dengan program sekolah atau universiti. Latihan industri bertujuan memberi pelajar pengalaman, bukan menggantikan pekerja bergaji.
+
+### Pekerja bebas dan kontraktor
+Sesuai untuk kerja projek yang dilakukan dengan cara dan masa mereka sendiri. Jangan gunakan label pekerja bebas untuk apa yang sebenarnya kerja seorang pekerja. Panduan kami tentang pekerja bebas dan pekerja gig menerangkan perbezaannya.
+
+### Pekerja sepenuh masa
+Lebih baik apabila kerja itu tetap dan teras kepada perniagaan anda. Panduan kami tentang mengupah pekerja pertama anda menerangkan proses dan kosnya.
+
+### Pertimbangkan kos sebenar
+Sertakan gaji, sebarang caruman, masa latihan, penyeliaan, pakaian seragam dan alatan. Bantuan murah yang memerlukan penyeliaan berterusan mungkin tidak menjimatkan wang.
+
+## 2. Fahami bagaimana pekerjaan separuh masa berfungsi
+
+### Apa yang dikira separuh masa
+Peraturan Malaysia pernah mentakrifkan pekerja separuh masa sebagai seseorang yang jam bekerja biasanya melebihi sesuatu bahagian tetapi tidak lebih daripada bahagian tertentu jam pekerja sepenuh masa yang setanding, dengan julat lebih kurang 30% hingga 70% sering disebut. Takrifan tepat, dan pekerja mana yang dilindungi, boleh berubah, jadi semak peraturan semasa dengan Jabatan Tenaga Kerja.
+
+### Pekerja separuh masa ialah pekerja
+Pekerja separuh masa pada amnya masih pekerja, bukan pembantu sambilan di luar peraturan. Gaji, jam, hari rehat dan rekod adalah penting.
+
+### Tulis jam secara bertulis
+Persetujui hari, waktu mula dan tamat, rehat, dan bagaimana perubahan dikendalikan. Jadual yang jelas mencegah pertikaian.
+
+### Adil dalam gaji
+Bayar sekurang-kurangnya gaji minimum yang terpakai berdasarkan sejam, di mana ia terpakai, dan bayar tepat masa. Semak gaji minimum semasa dengan sumber rasmi. Panduan kami tentang cuti pekerja dan cuti umum menerangkan hak yang berkaitan.
+
+### Simpan rekod
+Rekod jam bekerja, gaji yang dibayar dan sebarang perubahan yang dipersetujui. Panduan kami tentang asas simpan kira dan perakaunan menerangkan cara menyimpan rekod gaji dengan kemas.
+
+## 3. Tulis kontrak yang mudah dan tetapkan gaji
+
+### Gunakan perjanjian bertulis
+Sertakan jawatan, tugas, tarikh mula, jam, kadar gaji, kekerapan pembayaran, notis, percubaan jika ada, dan kepada siapa mereka melapor. Panduan kami tentang kontrak dan terma untuk perniagaan kecil menerangkan cara menulis terma yang jelas.
+
+### Patuhi buku panduan anda
+Peraturan asas tentang tatatertib, kehadiran dan keselamatan terpakai kepada semua orang. Panduan kami tentang buku panduan pekerja dan dasar HR menerangkan cara menyusunnya.
+
+### Tetapkan kadar yang adil
+Pertimbangkan kadar pasaran untuk kerja serupa di kawasan anda, kemahiran yang diperlukan, dan sebarang tambahan seperti makanan atau pengangkutan. Semak kadar anda apabila keadaan berubah.
+
+### Terangkan bagaimana kerja lebih masa berfungsi
+Jika pekerja separuh masa mungkin diminta bekerja jam tambahan pada waktu sibuk, persetujui bagaimana ia diminta dan dibayar, dan patuhi peraturan yang terpakai.
+
+### Layan semua orang dengan adil
+Jangan tawarkan terma berbeza untuk kerja serupa atas sebab yang tidak berkaitan dengan kerja. Layanan yang adil membantu anda mengekalkan orang yang baik.
+
+## 4. Semak caruman dan tugas undang-undang
+
+### Caruman pekerja
+Gaji yang dibayar kepada pekerja pada amnya tertakluk kepada caruman seperti KWSP, PERKESO dan SIP, dan sumber menggambarkan pekerja separuh masa dilindungi dalam banyak kes. Kadar, had gaji dan pengecualian berbeza dan berubah, jadi sahkan apa yang terpakai untuk setiap pekerja dengan agensi atau akauntan anda. Panduan kami tentang mengupah pekerja pertama anda menerangkan pendaftaran dan caruman.
+
+### Pekerja asing
+Mengupah warga asing melibatkan permit dan peraturan yang ketat, dan tidak boleh dilakukan secara tidak formal. Panduan kami tentang mengupah pekerja asing menerangkan keperluannya.
+
+### Insurans dan keselamatan
+Pastikan pekerja separuh masa dan pelatih dilindungi untuk risiko tempat kerja seperti yang dikehendaki peraturan, dan beri mereka latihan keselamatan asas. Panduan kami tentang keselamatan tempat kerja dan panduan kami tentang insurans perniagaan untuk PKS Malaysia menerangkan asasnya.
+
+### Cukai dan gaji
+Rekod siapa yang anda bayar, berapa banyak dan bila, dan simpan dokumen untuk tujuan cukai. Panduan kami tentang kalendar cukai perniagaan kecil menerangkan tarikh penting.
+
+### Data dan kerahsiaan
+Pekerja separuh masa dan pelatih mungkin melihat butiran pelanggan. Beritahu mereka peraturan dan hadkan akses. Panduan kami tentang pematuhan PDPA menerangkan asasnya.
+
+## 5. Ambil pelatih dengan cara yang betul
+
+### Ketahui apa itu latihan industri
+Latihan industri pada amnya ialah penempatan pembelajaran jangka pendek, selalunya diatur melalui sekolah, kolej atau universiti, dengan matlamat pembelajaran yang ditetapkan. Ia berbeza daripada pekerjaan biasa.
+
+### Elaun dan gaji
+Laporan menunjukkan tiada elaun minimum berkanun yang tetap untuk pelatih sektor swasta, dan amalan berbeza, tetapi elaun tanpa bayaran atau sangat rendah untuk kerja sebenar boleh menimbulkan kebimbangan keadilan dan risiko reputasi. Tentukan elaun yang adil, persetujui secara bertulis, dan bayar tepat masa. Semak kedudukan semasa dengan kementerian berkaitan.
+
+### Caruman untuk pelatih
+Sama ada KWSP atau PERKESO terpakai kepada pelatih bergantung pada bagaimana susunan itu dikelaskan dan sumber berbeza, jadi sahkan dengan PERKESO, KWSP atau panduan institusi sebelum anda membuat keputusan.
+
+### Skim dan sokongan
+Sesetengah agensi kerajaan dan institusi menjalankan skim latihan industri atau penempatan yang mungkin menawarkan sokongan padanan kepada majikan, dengan syarat. Ini sering berubah, jadi semak skim dan kelayakan semasa dengan sumber rasmi.
+
+### Bekerjasama dengan sekolah
+Tanya institusi tentang jam yang diperlukan, hasil pembelajaran, laporan penyelia, insurans dan sebarang perjanjian untuk ditandatangani.
+
+### Lindungi idea dan maklumat anda
+Minta pelatih menghormati kerahsiaan, dan jelas tentang siapa yang memiliki kerja yang mereka hasilkan. Panduan kami tentang pendaftaran tanda dagangan menerangkan cara melindungi jenama anda.
+
+## 6. Latih dan selia dengan baik
+
+### Rancang minggu pertama
+Sediakan induksi ringkas yang merangkumi pasukan, alatan, keselamatan, asas khidmat pelanggan, dan seperti apa kerja yang baik.
+
+### Beri seorang penyelia yang jelas
+Namakan seorang yang menjawab soalan dan menyemak kerja. Pekerja separuh masa yang berasa tersesat cepat berhenti.
+
+### Tulis senarai semak ringkas
+Senarai tugas mudah dan nota langkah demi langkah membantu pekerja berjam pendek bekerja dengan baik tanpa anda berdiri di sebelah mereka. Panduan kami tentang mendelegasikan dan mengelak keletihan pemilik menerangkan cara menyerahkan kerja.
+
+### Beri maklum balas lebih awal
+Semak selepas beberapa syif pertama, puji apa yang berjaya, dan betulkan masalah dengan baik dan cepat.
+
+### Gunakan sokongan latihan yang ada
+Sesetengah skim latihan membantu majikan membiayai latihan pekerja, dengan syarat. Panduan kami tentang melatih pasukan anda dengan HRD Corp menerangkan satu contoh.
+
+> Bantuan jangka pendek berfungsi paling baik apabila tugas jelas, gaji adil, dan ada seseorang yang bertanggungjawab membimbing mereka.
+
+## 7. Jadualkan mengikut waktu puncak anda
+
+### Petakan jam sibuk anda
+Gunakan rekod jualan anda untuk melihat bila anda memerlukan lebih ramai tangan, seperti makan tengah hari, hujung minggu, hari gaji dan minggu perayaan. Panduan kami tentang merancang puncak perayaan dan musim perlahan menerangkan cara bersedia.
+
+### Bina jadual yang boleh dipercayai
+Kongsi jadual lebih awal, benarkan pertukaran yang munasabah, dan elakkan perubahan saat akhir. Jadual yang boleh dipercayai membantu orang menunaikan komitmen lain, seperti pengajian atau kerja kedua.
+
+### Simpan bangku simpanan yang kecil
+Mempunyai beberapa pekerja separuh masa yang dipercayai yang boleh menampung syif tambahan membantu semasa sakit dan kesibukan.
+
+### Perhatikan jumlah jam dan keletihan
+Jam panjang dan malam yang lewat memenatkan orang, terutamanya pelajar. Patuhi had yang terpakai untuk jam bekerja dan rehat.
+
+### Semak kos berbanding jualan
+Bandingkan gaji dengan jualan setiap syif untuk memastikan setiap syif menampung dirinya sendiri. Panduan kami tentang menjejak prestasi perniagaan menerangkan cara melakukannya.
+
+## 8. Elakkan kesilapan dan kekalkan pembantu terbaik anda
+
+### Jangan salah kelaskan pekerja
+Menggelar pekerja sebagai pekerja bebas atau pelatih untuk mengelak kewajipan boleh menyebabkan masalah undang-undang dan kewangan. Jika seseorang bekerja di bawah arahan dan jadual anda, mereka mungkin pekerja.
+
+### Layan pelatih sebagai pelajar
+Beri pelatih pembelajaran sebenar, bukan sekadar tugas berulang, dan pastikan jam mereka munasabah.
+
+### Tamatkan susunan dengan betul
+Patuhi terma notis anda dan simpan rekod. Panduan kami tentang menamatkan perkhidmatan pekerja di Malaysia menerangkan cara melakukannya dengan adil.
+
+### Jadikan pembantu yang baik sebagai pekerja
+Jika pekerja separuh masa atau pelatih berprestasi baik, bincangkan peranan lebih panjang, lebih banyak jam atau tawaran tetap. Panduan kami tentang mengekalkan pekerja terbaik anda menerangkan cara mengekalkan staf yang baik.
+
+### Semak dan perbaiki
+Selepas setiap musim sibuk, tanya pembantu apa yang berjaya dan apa yang tidak, dan kemas kini induksi anda.
+
+Jika anda memerlukan akauntan, penasihat HR atau peguam untuk menyemak kontrak dan caruman anda, anda boleh [menyemak imbas direktori](/ms) untuk profesional berhampiran anda, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya calon dan pelanggan dapat menemui perniagaan anda.
+
+## Kesilapan lazim PKS Malaysia dengan pekerja separuh masa dan pelatih
+
+- **Menganggap bantuan jangka pendek tiada peraturan.** Pekerja separuh masa pada amnya ialah pekerja, jadi simpan terma bertulis, bayar tepat masa, dan semak caruman apa yang terpakai.
+- **Menggunakan pelatih sebagai buruh tanpa bayaran.** Pelatih patut belajar, diselia dan menerima elaun yang adil, jadi persetujui terma dengan mereka dan sekolah mereka.
+- **Melangkau latihan dan penyeliaan.** Pembantu yang tidak dibimbing membuat kesilapan dan berhenti, jadi beri induksi ringkas dan seorang penyelia yang jelas.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Senaraikan tugas dan jam yang anda perlu tampung, dan tentukan sama ada pekerja separuh masa, pelatih atau pekerja bebas paling sesuai.
+- **Seterusnya:** Semak peraturan dan caruman semasa dengan Jabatan Tenaga Kerja, PERKESO dan KWSP, atau dengan akauntan anda.
+- **Kemudian:** Tulis perjanjian mudah, jadual dan senarai semak induksi satu muka surat.
+- **Selepas sebulan:** Semak kos dan hasil, beri maklum balas, dan tentukan sama ada hendak melanjutkan atau membuat tawaran.
+
+Bantuan jangka pendek boleh memberi perniagaan kecil fleksibiliti dan bakat baharu. Dengan peranan yang jelas, gaji yang adil dan penyeliaan yang baik, pekerja separuh masa dan pelatih boleh mengukuhkan pasukan anda, dan sebahagiannya mungkin menjadi masa depannya.`,
+        faqs: [
+          {
+            question: "Apakah yang dikira sebagai pekerja separuh masa di Malaysia?",
+            answer:
+              "Peraturan Malaysia pernah mentakrifkan pekerja separuh masa berdasarkan jam biasa mereka berbanding pekerja sepenuh masa yang setanding, dengan julat lebih kurang 30% hingga 70% sering disebut. Takrifan tepat dan liputan boleh berubah, jadi sahkan peraturan semasa dengan Jabatan Tenaga Kerja.",
+          },
+          {
+            question: "Adakah pekerja separuh masa mendapat perlindungan yang sama dengan pekerja sepenuh masa?",
+            answer:
+              "Pekerja separuh masa pada amnya ialah pekerja, jadi terma bertulis, gaji tepat masa, rekod dan keselamatan masih terpakai, walaupun sesetengah hak mungkin dikira secara berbeza. Semak peraturan semasa dengan Jabatan Tenaga Kerja atau peguam pekerjaan.",
+          },
+          {
+            question: "Adakah saya perlu membayar KWSP, PERKESO dan SIP untuk pekerja separuh masa?",
+            answer:
+              "Gaji yang dibayar kepada pekerja pada amnya tertakluk kepada caruman ini, dan pekerja separuh masa digambarkan dilindungi dalam banyak kes. Kadar, had dan pengecualian berbeza dan berubah, jadi sahkan dengan agensi atau akauntan anda.",
+          },
+          {
+            question: "Adakah terdapat elaun minimum untuk pelatih di Malaysia?",
+            answer:
+              "Laporan menunjukkan tiada elaun minimum berkanun yang tetap untuk pelatih sektor swasta, dan amalan berbeza. Elaun tanpa bayaran atau sangat rendah untuk kerja sebenar boleh menimbulkan kebimbangan keadilan dan reputasi, jadi persetujui elaun yang adil secara bertulis dan semak panduan semasa.",
+          },
+          {
+            question: "Adakah pelatih memerlukan perlindungan KWSP atau PERKESO?",
+            answer:
+              "Ia bergantung pada bagaimana susunan itu dikelaskan, dan sumber berbeza. Sahkan dengan PERKESO, KWSP atau panduan institusi sebelum membuat keputusan, dan pastikan pelatih dilindungi terhadap risiko tempat kerja seperti yang dikehendaki peraturan.",
+          },
+          {
+            question: "Patutkah saya menggunakan pekerja bebas dan bukannya pekerja separuh masa?",
+            answer:
+              "Gunakan pekerja bebas untuk kerja projek yang mereka lakukan dengan cara dan masa mereka sendiri. Jika seseorang bekerja di bawah arahan dan jadual tetap anda seperti pekerja, menggelar mereka pekerja bebas boleh menyebabkan masalah undang-undang dan kewangan.",
+          },
+          {
+            question: "Bagaimanakah saya patut melatih pekerja separuh masa dan pelatih?",
+            answer:
+              "Beri induksi ringkas, namakan seorang penyelia yang jelas, sediakan senarai semak mudah, beri maklum balas selepas beberapa syif pertama, dan terangkan peraturan keselamatan dan kerahsiaan. Pembantu jangka pendek yang dibimbing dengan baik berprestasi lebih baik dan kekal lebih lama.",
+          },
+          {
+            question: "Bagaimanakah saya menjadikan pekerja separuh masa atau pelatih yang baik sebagai pekerja tetap?",
+            answer:
+              "Bincang lebih awal tentang peranan lebih panjang atau lebih banyak jam, tetapkan tugas dan gaji yang jelas, dan lengkapkan langkah pengambilan yang betul seperti kontrak bertulis dan pendaftaran caruman. Pembantu yang baik selalunya pengambilan terbaik anda pada masa depan.",
+          },
+        ],
+      },
+    },
+  },
 ];

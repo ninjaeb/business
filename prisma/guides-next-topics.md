@@ -15,18 +15,17 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Understanding Your Customers: Simple Market Research and Feedback for Malaysian SMEs**
-   — Why guessing is risky, free and cheap ways to learn what customers want
-   (conversations, short surveys, reviews, social media polls, sales data),
-   asking good questions, studying competitors fairly, spotting local
-   trends and festive demand, testing a product or price on a small scale,
-   handling personal data responsibly (PDPA, to hedge), and turning
-   feedback into decisions.
+1. **Building Business Networks: Associations, Chambers of Commerce, and Partnerships for Malaysian SMEs**
+   — Why networking matters for small firms, types of business associations
+   and chambers (to hedge on membership details and fees), industry events
+   and online communities, how to prepare and follow up, finding referral
+   and collaboration partners, joint promotions and co-selling, mentors and
+   peer groups, agreements for collaborations, and measuring whether
+   networking pays off.
 
-2. **Part-Time Staff and Interns: Hiring Short-Term Help in Malaysia**
-   — When part-time or intern help makes sense, how part-time work differs
-   from full-time (to hedge on current rules), contracts and pay,
-   statutory contributions and whether they apply (to hedge), internship
-   allowances and school or university schemes (to hedge), training and
-   supervision, scheduling around peaks, avoiding misclassification, and
-   converting good helpers into permanent staff.
+2. **Quality Control and Warranties: Delivering Consistent Products and Handling Defects in Malaysia**
+   — Defining quality standards, simple checklists and sampling, supplier
+   and incoming-goods checks, staff training for consistency, tracking
+   defects and returns, warranty and guarantee terms (to hedge on consumer
+   law), repair, replace or refund decisions, product recalls and safety
+   (to hedge), and using quality problems to improve.
