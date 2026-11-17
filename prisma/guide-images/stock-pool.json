@@ -1229,6 +1229,50 @@
       ],
       "description": "Night street market food stall with a vendor cooking and customers queueing",
       "usedBy": "pop-up-markets-night-stall.webp"
+    },
+    {
+      "id": 4173272,
+      "tags": [
+        "quality",
+        "workshop",
+        "artisan",
+        "inspect"
+      ],
+      "description": "Artisan in an apron checking a sheet of red leather in a workshop",
+      "usedBy": "quality-control-and-warranties-cover.webp"
+    },
+    {
+      "id": 7219660,
+      "tags": [
+        "quality",
+        "bottle",
+        "inspect",
+        "workshop"
+      ],
+      "description": "Bearded man in an apron inspecting a glass bottle at a workbench under a lamp",
+      "usedBy": "quality-control-and-warranties-bottle.webp"
+    },
+    {
+      "id": 36766734,
+      "tags": [
+        "networking",
+        "cafe",
+        "meeting",
+        "business"
+      ],
+      "description": "Two businessmen chatting over coffee in a glass-fronted lobby cafe, with a chart on the table",
+      "usedBy": "building-business-networks-cover.webp"
+    },
+    {
+      "id": 5917716,
+      "tags": [
+        "networking",
+        "partners",
+        "cafe",
+        "laptop"
+      ],
+      "description": "Two business professionals discussing work on a laptop over coffee in a cafe",
+      "usedBy": "building-business-networks-partners.webp"
     }
   ]
 }

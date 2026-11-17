@@ -35744,4 +35744,1371 @@ Bantuan jangka pendek boleh memberi perniagaan kecil fleksibiliti dan bakat baha
       },
     },
   },
+  {
+    slug: "building-business-networks-and-partnerships-for-malaysian-smes",
+    title: "Building Business Networks: Associations, Chambers of Commerce, and Partnerships for Malaysian SMEs",
+    seoTitle: "Business Networking and Partnerships for Malaysian SMEs",
+    seoDescription:
+      "How Malaysian SMEs can build a useful business network: join associations and chambers, prepare for events, find partners and make collaborations pay off.",
+    coverImage: {
+      file: "building-business-networks-cover.webp",
+      mimeType: "image/webp",
+      alt: "Two businessmen in dark suits talking and laughing over cups of coffee at a round table in a glass-fronted lobby cafe, with a printed chart between them",
+      altTranslations: {
+        zh: "两位身穿深色西装的商务男士在玻璃幕墙大堂咖啡厅的圆桌旁边喝咖啡边谈笑，桌上放着一张印有图表的文件",
+        ms: "Dua lelaki berpakaian sut gelap berbual dan ketawa sambil minum kopi di meja bulat di kafe lobi berkaca, dengan carta bercetak di antara mereka",
+      },
+    },
+    contentImages: {
+      partners: {
+        file: "building-business-networks-partners.webp",
+        mimeType: "image/webp",
+        alt: "A bearded man in a white shirt gesturing toward an open laptop while a red-haired woman in a grey blazer looks on, with cups of coffee and a slice of cake on the table",
+        altTranslations: {
+          zh: "一位留胡子、穿白衬衫的男士对着打开的笔记本电脑比划，一位穿灰色西装外套的红发女士在旁边观看，桌上有咖啡和一块蛋糕",
+          ms: "Seorang lelaki berjanggut berbaju putih menggerakkan tangan ke arah komputer riba terbuka manakala seorang wanita berambut merah berblazer kelabu memerhati, dengan cawan kopi dan sepotong kek di atas meja",
+        },
+        after: "A good partner fills a gap that you cannot fill cheaply on your own.",
+        afterTranslations: {
+          zh: "好的合作伙伴能填补您自己难以低成本填补的缺口。",
+          ms: "Rakan kongsi yang baik mengisi jurang yang tidak dapat anda isi dengan murah sendirian.",
+        },
+      },
+    },
+    excerpt:
+      "Many deals, referrals, and good ideas reach small businesses through people they know, not through advertising. This guide helps Malaysian SMEs build a useful network by choosing the right associations and events, preparing and following up, finding collaboration partners, agreeing fair terms, and checking whether networking is actually paying off.",
+    body: `Many small business owners are busy running the shop and see networking as a luxury. Yet a lot of work comes from word of mouth, introductions, and trusted partners, and a well-chosen contact can save months of trial and error.
+
+Networking is not about collecting business cards. It is about building a small circle of people who know what you do, trust you, and think of you when an opportunity appears, and about doing the same for them.
+
+This is general information, not legal, tax, or financial advice. Association details, membership terms, fees, and programmes change over time, and some information in this guide may be out of date. Confirm current details with each organisation before you join or commit.
+
+## 1. Understand why networking matters
+
+### Referrals are trusted
+People trust a recommendation from someone they know far more than an advertisement. A single good introduction can be worth more than a month of promotion.
+
+### Networks open doors
+Contacts can lead you to customers, suppliers, advisers, premises, staff, and information about grants or rules that you would not find alone. Our guide on SME grants and funding in Malaysia explains one area where this helps.
+
+### Peers share lessons
+Other owners have already met your problems, from slow payers to hiring headaches. A peer who has been there can save you costly mistakes.
+
+### Be realistic
+Networking is a slow investment. It rarely pays back within a week, but it often pays well over a year.
+
+## 2. Choose the right groups
+
+### Pick a few groups and show up regularly rather than joining everything.
+Being a familiar face in two or three groups builds more trust than a thin presence in ten.
+
+### Industry and trade associations
+These bring together businesses in the same field, such as food, retail, manufacturing, or services. They can share industry news, rules, and training. Look for one that fits your sector.
+
+### SME and general business associations
+Some national and regional associations serve small and medium businesses across sectors, with events, advocacy, and member programmes. Membership terms, fees, and chapters differ, so check each association's own information.
+
+### Chambers of commerce
+Chambers exist at local, state, ethnic, and international levels, and can offer events, business matching, and links to overseas contacts. Compare what each offers against its cost.
+
+### Government and agency programmes
+Agencies that support SMEs and exporters sometimes run briefings, matching sessions, and trade missions, often with conditions. These change often, so confirm current programmes with the official agencies. Our guide on importing and exporting for Malaysian SMEs explains where such support can help.
+
+### Informal groups and online communities
+Local business groups, supplier communities, and online forums can be easy and low-cost ways to meet people. Check that they are well-run and relevant, and be careful about sharing sensitive information.
+
+### Compare before you pay
+Ask what members actually get, how often events happen, who attends, and whether you can attend as a guest first.
+
+## 3. Prepare before you go
+
+### Know your goal
+Decide what you want from an event, such as meeting two possible suppliers or finding a referral partner. A clear goal makes conversations easier.
+
+### Prepare a short introduction
+Be able to say in one or two sentences who you help and how. Avoid long speeches and jargon.
+
+### Bring simple materials
+Carry a few business cards or a QR code to your page, and a short product list or sample if suitable. Our guide on getting your business found online explains how to make your online profile clear.
+
+### Look up who is attending
+If the organiser shares a list, choose a few people to meet and think of questions to ask them.
+
+### Dress and behave for the setting
+Be punctual, friendly, and respectful of local customs and different cultures. First impressions count.
+
+### Plan your time
+Arrive early, when people are more open to chat, and decide how long you will stay.
+
+## 4. Network well at events
+
+### Listen first
+Ask people about their business and challenges, and listen carefully. People remember those who show real interest.
+
+### Give before you ask
+Offer an introduction, a tip, or a useful resource. Generosity builds trust faster than a sales pitch.
+
+### Do not hard-sell
+Aim for a follow-up conversation, not an instant deal. Pushing products at strangers puts people off.
+
+### Mix with new people
+It is comfortable to stay with friends, but the value lies in meeting someone new. Set a goal of two or three fresh conversations.
+
+### Write notes after each chat
+Jot down names, topics, and promised actions on the back of a card or in your phone. You will forget otherwise.
+
+> Networking works when you give first, follow up, and stay in touch, not when you collect the most cards.
+
+## 5. Follow up and stay in touch
+
+### Follow up within a few days
+Send a short message that mentions what you discussed and suggests a clear next step, such as a call or coffee.
+
+### Do what you promised
+If you offered an introduction or a document, send it quickly. Reliability is the best way to build a reputation.
+
+### Keep a simple contact list
+Record names, companies, what they do, how you met, and what you agreed. A basic spreadsheet is enough.
+
+### Stay visible without pestering
+Share useful news, congratulate people on milestones, and check in a few times a year. Our guide on social media marketing for Malaysian SMEs explains simple ways to stay in touch.
+
+### Respect privacy
+Ask before adding someone to a mailing list or sharing their details. Our guide on PDPA compliance explains how to handle personal data.
+
+## 6. Find partners and collaborators
+
+### Look for complementary businesses
+A good partner fills a gap that you cannot fill cheaply on your own. Think of businesses that serve the same customers but sell something different, such as a bakery and a coffee shop, or a designer and a printer.
+
+### Referral partners
+Agree to recommend each other when customers need what the other offers. Be clear about whether any commission is paid, and tell customers if you earn one.
+
+### Joint promotions
+Co-hosted events, bundled offers, and shared advertising can reach each other's customers at lower cost. Our guide on building customer loyalty and repeat business explains how to keep the customers you win.
+
+### Co-selling and supply partnerships
+You might sell together to larger customers, or share delivery and storage. Our guide on winning corporate customers explains how larger buyers think, and our guide on managing supplier relationships explains how to work with suppliers.
+
+### Mentors and peer groups
+A more experienced owner can advise you, and a small group of peers meeting monthly can share problems and ideas. Choose people you trust and who understand your stage.
+
+### Test before you commit
+Start with a small trial, such as one joint offer, before a larger arrangement.
+
+## 7. Agree fair terms and protect yourself
+
+### Put it in writing
+Even simple collaborations benefit from a short written agreement covering what each side does, the duration, how money is shared, and how to end it. Our guide on contracts and terms for small businesses explains how.
+
+### Be careful with exclusivity
+Do not agree to deal only with one partner unless you understand the terms and benefits. Ask for time limits and exit rights.
+
+### Protect your brand and ideas
+Be clear on who owns materials created together and how each side may use the other's name. Our guide on trademark registration explains how to protect your brand.
+
+### Bigger arrangements need more care
+If you share money, ownership, or liability, get advice. Our guide on business partners and shareholder agreements explains the risks.
+
+### Check the other side
+Look at a potential partner's reputation, registration, and track record before you link your name with theirs. Our guide on how to register a business explains what registration shows.
+
+### Know the rules on advertising and claims
+If a joint promotion makes claims about prices or products, make sure that they are accurate. Our guide on customer complaints, refunds, and consumer rights explains your duties to customers.
+
+## 8. Check whether networking pays off
+
+### Track simple numbers
+Note the events you attend, people you follow up with, introductions made and received, and any business that resulted.
+
+### Review every quarter
+Ask which groups produce useful contacts and which are only a cost in time and money. Drop the ones that do not help.
+
+### Count more than sales
+Value also includes advice, information, referrals, and support during difficult times.
+
+### Make time for it
+Treat networking as part of the job, with a few hours set aside each month. Our guide on delegating and avoiding owner burnout explains how to free up time.
+
+### Give back
+Help newer members, share what you have learned, and thank those who help you. A network grows when people feel valued.
+
+If you want to meet reliable accountants, designers, suppliers, or other businesses near you, you can [browse the directory](/en) for local professionals, and [create a free business listing](/en/signup) so that people in your network and beyond can find your business easily.
+
+## Common mistakes Malaysian SMEs make when networking
+
+- **Joining many groups and attending none.** A thin presence builds little trust, so choose a few groups and show up regularly.
+- **Selling hard instead of building trust.** Pushing products on strangers puts people off, so ask questions, offer help, and follow up.
+- **Agreeing to partnerships without written terms.** Verbal deals lead to disputes over money, brand, and exclusivity, so put the basics in writing.
+
+## Where to start
+
+- **This week:** List the people you already know who could refer you or collaborate, and send two a friendly message.
+- **Next:** Choose one or two associations or groups that fit your sector, and attend as a guest before paying.
+- **Then:** Prepare a one-sentence introduction and a simple contact list, and follow up within a few days of each meeting.
+- **Every quarter:** Review which contacts and groups helped, and focus your time on those.
+
+A strong network is built slowly, through reliability and generosity. Start with a few good relationships, and let them grow.`,
+    faqs: [
+      {
+        question: "Why should a small business bother with networking?",
+        answer:
+          "Referrals and introductions are trusted far more than advertising, and contacts can lead to customers, suppliers, advisers, and information that you would not find alone. It is a slow investment, but it often pays off over a year or more.",
+      },
+      {
+        question: "How do I choose which associations or chambers to join?",
+        answer:
+          "Compare what members actually get, how often events happen, who attends, and the cost. Try attending as a guest first, and choose two or three groups that fit your sector and goals rather than joining everything. Check membership terms with each organisation.",
+      },
+      {
+        question: "How do I prepare for a networking event?",
+        answer:
+          "Set a clear goal, prepare a one or two sentence introduction, bring a few business cards or a QR code, look up who is attending if possible, and arrive early. Plan to have two or three fresh conversations.",
+      },
+      {
+        question: "How should I follow up after meeting someone?",
+        answer:
+          "Send a short message within a few days that mentions what you discussed and suggests a clear next step. Do what you promised, record the contact in a simple list, and stay in touch a few times a year.",
+      },
+      {
+        question: "What kind of partners should a small business look for?",
+        answer:
+          "Look for businesses that serve the same customers but sell something different, for referrals, joint promotions, or shared services. A good partner fills a gap that you cannot fill cheaply on your own. Start with a small trial.",
+      },
+      {
+        question: "Do I need a written agreement for a collaboration?",
+        answer:
+          "Yes, even a short one. Cover what each side does, how long it lasts, how money is shared, who owns joint materials, and how to end it. For bigger arrangements involving money, ownership, or liability, get advice.",
+      },
+      {
+        question: "Are government programmes useful for networking?",
+        answer:
+          "Agencies that support SMEs and exporters sometimes run briefings, business matching, and trade missions, often with conditions. These change often, so confirm current programmes and eligibility with the official agencies.",
+      },
+      {
+        question: "How do I know whether networking is paying off?",
+        answer:
+          "Track the events you attend, follow-ups, introductions made and received, and any business that results. Review each quarter, drop groups that do not help, and count advice and information as value too.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "建立商业人脉：马来西亚中小企业的商会、协会与合作伙伴关系",
+        excerpt:
+          "许多交易、引荐和好点子是通过熟人而不是广告来到小企业手上的。本指南帮助马来西亚中小企业通过选择合适的协会和活动、做好准备和跟进、寻找合作伙伴、商定公平的条件，并检查人脉是否真的带来回报，来建立有用的人脉。",
+        body: `许多小企业主忙于经营店面，把人脉经营看作奢侈品。然而许多生意来自口碑、引荐和值得信赖的合作伙伴，一位选得好的人脉，可以省下数月的摸索。
+
+经营人脉不是收集名片，而是建立一个小圈子，里面的人知道您做什么、信任您，并在机会出现时想到您，而您也为他们做同样的事。
+
+本文仅提供一般信息，并非法律、税务或财务建议。协会的细节、会员条款、费用和计划会随时间变化，本指南的部分信息可能已经过时。在加入或做出承诺之前，请向各个组织确认最新的细节。
+
+## 1. 了解为什么人脉重要
+
+### 引荐是受信任的
+人们对认识的人所做的推荐，比对广告信任得多。一次好的引荐，可能比一个月的宣传更有价值。
+
+### 人脉打开门路
+人脉可以带您找到顾客、供应商、顾问、店面、员工，以及关于补助或规定的信息，这些是您单靠自己找不到的。我们关于马来西亚中小企业补助与资金的指南说明了人脉在一个领域如何帮上忙。
+
+### 同行分享经验
+其他企业主已经遇过您的问题，从拖欠付款的客户到聘人的烦恼。一位走过这条路的同行，可以让您避免代价高昂的错误。
+
+### 保持现实
+经营人脉是缓慢的投资。它很少在一个星期内回本，但往往在一年后回报丰厚。
+
+## 2. 选择合适的团体
+
+### 选几个团体并定期出席，而不是什么都加入。
+在两三个团体中成为熟面孔，比在十个团体中若有若无地出现更能建立信任。
+
+### 行业和贸易协会
+这些把同一领域的企业聚在一起，例如餐饮、零售、制造或服务业。它们可以分享行业消息、规定和培训。请寻找适合您行业的协会。
+
+### 中小企业和综合性商业协会
+一些全国性和地区性的协会为跨行业的中小企业服务，提供活动、倡议和会员计划。会员条款、费用和分会各不相同，所以请查看每个协会自己的信息。
+
+### 商会
+商会存在于地方、州、族群和国际层面，可以提供活动、商业配对，以及通往海外人脉的联系。请把每个商会提供的东西与它的成本相比较。
+
+### 政府和机构的计划
+支持中小企业和出口商的机构有时会举办简报会、配对会和贸易考察团，往往附带条件。这些经常改变，所以请向官方机构确认现行计划。我们关于马来西亚中小企业进出口的指南说明了这类支持在哪里能帮上忙。
+
+### 非正式团体和线上社群
+本地商业群组、供应商社群和线上论坛，可以是轻松且低成本地认识人的方式。请确认它们管理良好且相关，并小心分享敏感信息。
+
+### 付费前先比较
+询问会员实际得到什么、活动多久举办一次、谁会参加，以及您能否先以嘉宾身份参加。
+
+## 3. 出发前先准备
+
+### 知道您的目标
+决定您想从一场活动中得到什么，例如认识两位可能的供应商或找到一位引荐伙伴。清楚的目标让交谈更容易。
+
+### 准备简短的自我介绍
+能够用一两句话说出您帮助谁以及如何帮助。避免冗长的讲话和行话。
+
+### 带上简单的资料
+带几张名片或通往您页面的二维码，如适合，再带一份简短的产品清单或样品。我们关于让您的企业在网上被找到的指南说明了如何让您的网络形象清晰。
+
+### 查看谁会出席
+如果主办方分享了名单，请选几个想认识的人，并想好要问他们的问题。
+
+### 按场合着装和行事
+准时、友善，并尊重本地习俗和不同的文化。第一印象很重要。
+
+### 规划您的时间
+提早到达，那时人们更愿意聊天，并决定您要停留多久。
+
+## 4. 在活动中好好经营人脉
+
+### 先倾听
+询问人们的业务和挑战，并仔细倾听。人们会记得那些表现出真正兴趣的人。
+
+### 先给予再请求
+提供一次引荐、一个小技巧或一项有用的资源。慷慨比推销更快建立信任。
+
+### 不要硬推销
+目标是后续的交谈，而不是即时的交易。向陌生人硬推产品会让人反感。
+
+### 与新面孔交流
+与朋友待在一起很舒服，但价值在于认识新的人。设定两三次新的交谈为目标。
+
+### 每次交谈后写笔记
+在名片背面或手机里记下姓名、话题和承诺的行动。否则您会忘记。
+
+> 人脉经营的成效来自先给予、跟进和保持联系，而不是收集最多的名片。
+
+## 5. 跟进并保持联系
+
+### 在几天内跟进
+发一则简短的讯息，提到您们谈过的内容，并建议一个明确的下一步，例如通话或喝咖啡。
+
+### 做到您所承诺的
+如果您提出要做引荐或提供文件，请迅速送出。可靠是建立声誉的最好方式。
+
+### 保持简单的联络名单
+记录姓名、公司、他们做什么、您们如何认识，以及您们商定了什么。一份基本的电子表格就够了。
+
+### 保持可见但不要烦人
+分享有用的消息，祝贺别人达到里程碑，并每年联络几次。我们关于马来西亚中小企业社交媒体营销的指南说明了保持联系的简单方法。
+
+### 尊重隐私
+在把某人加入邮寄名单或分享他们的资料之前，请先征求同意。我们关于个人资料保护法令合规的指南说明了如何处理个人资料。
+
+## 6. 寻找伙伴和合作者
+
+### 寻找互补的企业
+好的合作伙伴能填补您自己难以低成本填补的缺口。想想那些服务相同顾客但销售不同东西的企业，例如面包店和咖啡店，或设计师和印刷商。
+
+### 引荐伙伴
+同意在顾客需要对方所提供之物时互相推荐。请清楚说明是否支付任何佣金，并在您赚取佣金时告知顾客。
+
+### 联合促销
+联合举办的活动、组合优惠和共享广告，可以以较低的成本触及彼此的顾客。我们关于建立顾客忠诚度与回头客的指南说明了如何留住您赢得的顾客。
+
+### 联合销售和供应伙伴
+您们可能一起向较大的客户销售，或共享送货和仓储。我们关于赢得企业客户的指南说明了较大的买家如何思考，关于管理供应商关系的指南说明了如何与供应商合作。
+
+### 导师和同行小组
+更有经验的企业主可以给您建议，而每月聚会一次的小型同行小组可以分享问题和想法。请选择您信任且了解您所处阶段的人。
+
+### 承诺之前先试
+在更大的安排之前，先从小的试验开始，例如一次联合优惠。
+
+## 7. 商定公平的条件并保护自己
+
+### 写成书面
+即使是简单的合作，也受益于一份简短的书面协议，涵盖双方各做什么、期限、金钱如何分配，以及如何结束。我们关于小企业合约与条款的指南说明了如何做。
+
+### 对独家小心
+除非您了解条款和好处，否则不要同意只与一个伙伴交易。请要求时限和退出的权利。
+
+### 保护您的品牌和想法
+清楚说明共同制作的资料归谁所有，以及双方可以如何使用对方的名称。我们关于商标注册的指南说明了如何保护您的品牌。
+
+### 较大的安排需要更多谨慎
+如果您们共享金钱、所有权或责任，请征求意见。我们关于商业伙伴与股东协议的指南说明了风险。
+
+### 查核对方
+在把您的名字与对方联系起来之前，先看看潜在伙伴的声誉、注册和过往记录。我们关于如何注册企业的指南说明了注册能显示什么。
+
+### 了解广告和宣称的规定
+如果联合促销对价格或产品作出宣称，请确保它们准确。我们关于顾客投诉、退款与消费者权益的指南说明了您对顾客的责任。
+
+## 8. 检查人脉是否带来回报
+
+### 追踪简单的数字
+记下您参加的活动、跟进的人、给出和收到的引荐，以及由此带来的任何生意。
+
+### 每季检视
+问问哪些团体产生有用的人脉，哪些只是消耗时间和金钱。舍弃没有帮助的。
+
+### 不只算销售
+价值还包括建议、信息、引荐，以及困难时期的支持。
+
+### 为此留出时间
+把经营人脉当作工作的一部分，每月留出几个小时。我们关于授权与避免企业主过劳的指南说明了如何腾出时间。
+
+### 回馈他人
+帮助较新的成员，分享您学到的，并感谢帮助过您的人。当人们感到被重视时，人脉就会成长。
+
+如果您想认识您附近可靠的会计师、设计师、供应商或其他企业，可以[浏览目录](/zh)寻找本地专业人士，并[创建免费商家列表](/zh/signup)，让您人脉圈内外的人都能轻易找到您的企业。
+
+## 马来西亚中小企业在经营人脉时的常见错误
+
+- **加入很多团体却一个都不出席。** 若有若无的出现建立不了多少信任，所以请选几个团体并定期出席。
+- **硬推销而不是建立信任。** 向陌生人硬推产品会让人反感，所以请提问、提供帮助并跟进。
+- **没有书面条款就同意合作。** 口头协议会导致关于金钱、品牌和独家的纠纷，所以请把基本事项写成书面。
+
+## 从哪里开始
+
+- **本周：** 列出您已认识、可能引荐您或与您合作的人，并给其中两位发一则友善的讯息。
+- **接下来：** 选择一两个适合您行业的协会或团体，在付费之前先以嘉宾身份参加。
+- **然后：** 准备一句话的自我介绍和简单的联络名单，并在每次会面后几天内跟进。
+- **每个季度：** 检视哪些人脉和团体有帮助，并把时间集中在这些上面。
+
+强大的人脉是通过可靠和慷慨慢慢建立起来的。从几段良好的关系开始，让它们成长。`,
+        faqs: [
+          {
+            question: "小企业为什么要费心经营人脉？",
+            answer:
+              "引荐和介绍比广告更受信任，人脉可以带来顾客、供应商、顾问，以及您单靠自己找不到的信息。这是缓慢的投资，但往往在一年或更久之后带来回报。",
+          },
+          {
+            question: "我如何选择要加入哪些协会或商会？",
+            answer:
+              "比较会员实际得到什么、活动多久举办一次、谁会参加以及成本。先以嘉宾身份参加，并选择两三个适合您行业和目标的团体，而不是什么都加入。请向各组织确认会员条款。",
+          },
+          {
+            question: "我如何为人脉活动做准备？",
+            answer:
+              "设定明确的目标，准备一两句话的自我介绍，带几张名片或二维码，如可能先查看谁会出席，并提早到达。计划进行两三次新的交谈。",
+          },
+          {
+            question: "认识某人之后我应该如何跟进？",
+            answer:
+              "在几天内发一则简短的讯息，提到您们谈过的内容，并建议一个明确的下一步。做到您所承诺的，把联络人记录在简单的名单中，并每年联络几次。",
+          },
+          {
+            question: "小企业应该寻找什么样的合作伙伴？",
+            answer:
+              "寻找服务相同顾客但销售不同东西的企业，用于引荐、联合促销或共享服务。好的合作伙伴能填补您自己难以低成本填补的缺口。先从小的试验开始。",
+          },
+          {
+            question: "合作需要书面协议吗？",
+            answer:
+              "需要，即使是简短的。涵盖双方各做什么、持续多久、金钱如何分配、共同资料归谁所有，以及如何结束。对于涉及金钱、所有权或责任的较大安排，请征求意见。",
+          },
+          {
+            question: "政府的计划对经营人脉有用吗？",
+            answer:
+              "支持中小企业和出口商的机构有时会举办简报会、商业配对和贸易考察团，往往附带条件。这些经常改变，所以请向官方机构确认现行计划和资格。",
+          },
+          {
+            question: "我如何知道人脉经营是否带来回报？",
+            answer:
+              "追踪您参加的活动、跟进、给出和收到的引荐，以及由此带来的任何生意。每季检视，舍弃没有帮助的团体，并把建议和信息也算作价值。",
+          },
+        ],
+      },
+      ms: {
+        title: "Membina Rangkaian Perniagaan: Persatuan, Dewan Perniagaan dan Perkongsian untuk PKS Malaysia",
+        excerpt:
+          "Banyak perjanjian, rujukan dan idea baik sampai kepada perniagaan kecil melalui orang yang mereka kenali, bukan melalui pengiklanan. Panduan ini membantu PKS Malaysia membina rangkaian yang berguna dengan memilih persatuan dan acara yang betul, bersedia dan menyusuli, mencari rakan kerjasama, bersetuju dengan terma yang adil, dan menyemak sama ada rangkaian itu benar-benar memberi pulangan.",
+        body: `Ramai pemilik perniagaan kecil sibuk menjalankan kedai dan melihat rangkaian sebagai kemewahan. Namun banyak kerja datang daripada mulut ke mulut, pengenalan dan rakan kongsi yang dipercayai, dan seorang kenalan yang dipilih dengan baik boleh menjimatkan berbulan-bulan cuba jaya.
+
+Rangkaian bukan tentang mengumpul kad perniagaan. Ia tentang membina bulatan kecil orang yang tahu apa yang anda lakukan, mempercayai anda, dan teringat anda apabila peluang muncul, dan melakukan perkara yang sama untuk mereka.
+
+Ini maklumat umum, bukan nasihat undang-undang, cukai atau kewangan. Butiran persatuan, terma keahlian, yuran dan program berubah dari semasa ke semasa, dan sebahagian maklumat dalam panduan ini mungkin sudah lapuk. Sahkan butiran semasa dengan setiap organisasi sebelum anda menyertai atau membuat komitmen.
+
+## 1. Fahami mengapa rangkaian penting
+
+### Rujukan dipercayai
+Orang lebih mempercayai cadangan daripada seseorang yang mereka kenali berbanding iklan. Satu pengenalan yang baik boleh bernilai lebih daripada sebulan promosi.
+
+### Rangkaian membuka pintu
+Kenalan boleh membawa anda kepada pelanggan, pembekal, penasihat, premis, pekerja, dan maklumat tentang geran atau peraturan yang anda tidak akan temui sendirian. Panduan kami tentang geran dan pembiayaan PKS di Malaysia menerangkan satu bidang di mana ini membantu.
+
+### Rakan sebaya berkongsi pengajaran
+Pemilik lain sudah menghadapi masalah anda, daripada pembayar lambat hingga masalah mengupah. Rakan sebaya yang pernah melalui perkara itu boleh menjimatkan anda daripada kesilapan yang mahal.
+
+### Bersikap realistik
+Rangkaian ialah pelaburan yang perlahan. Ia jarang memberi pulangan dalam seminggu, tetapi selalunya memberi pulangan yang baik dalam setahun.
+
+## 2. Pilih kumpulan yang betul
+
+### Pilih beberapa kumpulan dan hadir dengan tetap daripada menyertai semuanya.
+Menjadi wajah yang dikenali dalam dua atau tiga kumpulan membina lebih banyak kepercayaan daripada kehadiran yang nipis dalam sepuluh.
+
+### Persatuan industri dan perdagangan
+Ini menghimpunkan perniagaan dalam bidang yang sama, seperti makanan, runcit, pembuatan atau perkhidmatan. Ia boleh berkongsi berita industri, peraturan dan latihan. Cari yang sesuai dengan sektor anda.
+
+### Persatuan PKS dan perniagaan am
+Sesetengah persatuan kebangsaan dan serantau berkhidmat kepada perniagaan kecil dan sederhana merentas sektor, dengan acara, advokasi dan program ahli. Terma keahlian, yuran dan cawangan berbeza, jadi semak maklumat setiap persatuan sendiri.
+
+### Dewan perniagaan
+Dewan perniagaan wujud di peringkat tempatan, negeri, etnik dan antarabangsa, dan boleh menawarkan acara, padanan perniagaan dan pautan kepada kenalan luar negara. Bandingkan apa yang ditawarkan setiap satu dengan kosnya.
+
+### Program kerajaan dan agensi
+Agensi yang menyokong PKS dan pengeksport kadangkala menjalankan taklimat, sesi padanan dan misi perdagangan, selalunya dengan syarat. Ini sering berubah, jadi sahkan program semasa dengan agensi rasmi. Panduan kami tentang import dan eksport untuk PKS Malaysia menerangkan di mana sokongan sebegini boleh membantu.
+
+### Kumpulan tidak formal dan komuniti dalam talian
+Kumpulan perniagaan tempatan, komuniti pembekal dan forum dalam talian boleh menjadi cara yang mudah dan berkos rendah untuk bertemu orang. Pastikan ia diurus dengan baik dan berkaitan, dan berhati-hati tentang berkongsi maklumat sensitif.
+
+### Bandingkan sebelum membayar
+Tanya apa yang sebenarnya diperoleh ahli, berapa kerap acara berlaku, siapa yang hadir, dan sama ada anda boleh hadir sebagai tetamu dahulu.
+
+## 3. Bersedia sebelum pergi
+
+### Ketahui matlamat anda
+Tentukan apa yang anda mahu daripada sesuatu acara, seperti bertemu dua bakal pembekal atau mencari rakan rujukan. Matlamat yang jelas menjadikan perbualan lebih mudah.
+
+### Sediakan pengenalan ringkas
+Mampu menyatakan dalam satu atau dua ayat siapa yang anda bantu dan bagaimana. Elakkan ucapan panjang dan jargon.
+
+### Bawa bahan yang mudah
+Bawa beberapa kad perniagaan atau kod QR ke halaman anda, dan senarai produk ringkas atau sampel jika sesuai. Panduan kami tentang membolehkan perniagaan anda ditemui dalam talian menerangkan cara menjadikan profil dalam talian anda jelas.
+
+### Semak siapa yang akan hadir
+Jika penganjur berkongsi senarai, pilih beberapa orang untuk ditemui dan fikirkan soalan untuk ditanya kepada mereka.
+
+### Berpakaian dan berkelakuan mengikut suasana
+Tepati masa, mesra, dan hormati adat tempatan dan budaya yang berbeza. Tanggapan pertama penting.
+
+### Rancang masa anda
+Tiba awal, apabila orang lebih terbuka untuk berbual, dan tentukan berapa lama anda akan tinggal.
+
+## 4. Berinteraksi dengan baik di acara
+
+### Dengar dahulu
+Tanya orang tentang perniagaan dan cabaran mereka, dan dengar dengan teliti. Orang mengingati mereka yang menunjukkan minat sebenar.
+
+### Beri sebelum meminta
+Tawarkan pengenalan, petua atau sumber yang berguna. Kemurahan hati membina kepercayaan lebih pantas daripada promosi jualan.
+
+### Jangan jual dengan paksa
+Sasarkan perbualan susulan, bukan perjanjian segera. Menolak produk kepada orang yang tidak dikenali menjauhkan orang.
+
+### Bergaul dengan orang baharu
+Selesa untuk kekal bersama rakan, tetapi nilainya terletak pada bertemu seseorang yang baharu. Tetapkan matlamat dua atau tiga perbualan baharu.
+
+### Tulis nota selepas setiap perbualan
+Catat nama, topik dan tindakan yang dijanjikan di belakang kad atau dalam telefon anda. Anda akan lupa jika tidak.
+
+> Rangkaian berjaya apabila anda memberi dahulu, menyusuli dan kekal berhubung, bukan apabila anda mengumpul kad paling banyak.
+
+## 5. Susuli dan kekal berhubung
+
+### Susuli dalam beberapa hari
+Hantar mesej ringkas yang menyebut apa yang anda bincangkan dan mencadangkan langkah seterusnya yang jelas, seperti panggilan atau kopi.
+
+### Lakukan apa yang anda janjikan
+Jika anda menawarkan pengenalan atau dokumen, hantar dengan cepat. Kebolehpercayaan ialah cara terbaik membina reputasi.
+
+### Simpan senarai kenalan yang mudah
+Rekod nama, syarikat, apa yang mereka lakukan, bagaimana anda bertemu, dan apa yang anda persetujui. Hamparan asas sudah cukup.
+
+### Kekal kelihatan tanpa mengganggu
+Kongsi berita berguna, tahniah orang atas pencapaian, dan hubungi beberapa kali setahun. Panduan kami tentang pemasaran media sosial untuk PKS Malaysia menerangkan cara mudah untuk kekal berhubung.
+
+### Hormati privasi
+Minta kebenaran sebelum menambah seseorang ke senarai mel atau berkongsi butiran mereka. Panduan kami tentang pematuhan PDPA menerangkan cara mengendalikan data peribadi.
+
+## 6. Cari rakan kongsi dan kerjasama
+
+### Cari perniagaan yang saling melengkapi
+Rakan kongsi yang baik mengisi jurang yang tidak dapat anda isi dengan murah sendirian. Fikirkan perniagaan yang melayan pelanggan yang sama tetapi menjual sesuatu yang berbeza, seperti kedai roti dan kedai kopi, atau pereka dan pencetak.
+
+### Rakan rujukan
+Bersetuju untuk mencadangkan satu sama lain apabila pelanggan memerlukan apa yang ditawarkan oleh pihak lain. Jelas sama ada sebarang komisen dibayar, dan beritahu pelanggan jika anda memperoleh komisen.
+
+### Promosi bersama
+Acara yang dianjurkan bersama, tawaran berpakej dan pengiklanan bersama boleh menjangkau pelanggan satu sama lain dengan kos lebih rendah. Panduan kami tentang membina kesetiaan pelanggan dan perniagaan berulang menerangkan cara mengekalkan pelanggan yang anda menangi.
+
+### Jualan bersama dan perkongsian bekalan
+Anda mungkin menjual bersama kepada pelanggan lebih besar, atau berkongsi penghantaran dan penyimpanan. Panduan kami tentang memenangi pelanggan korporat menerangkan bagaimana pembeli lebih besar berfikir, dan panduan kami tentang menguruskan hubungan pembekal menerangkan cara bekerja dengan pembekal.
+
+### Mentor dan kumpulan rakan sebaya
+Pemilik yang lebih berpengalaman boleh menasihati anda, dan kumpulan kecil rakan sebaya yang bertemu bulanan boleh berkongsi masalah dan idea. Pilih orang yang anda percayai dan memahami peringkat anda.
+
+### Uji sebelum membuat komitmen
+Mulakan dengan percubaan kecil, seperti satu tawaran bersama, sebelum susunan yang lebih besar.
+
+## 7. Persetujui terma yang adil dan lindungi diri anda
+
+### Letakkan secara bertulis
+Walaupun kerjasama yang mudah mendapat manfaat daripada perjanjian bertulis ringkas yang merangkumi apa yang dilakukan setiap pihak, tempoh, bagaimana wang dikongsi, dan cara menamatkannya. Panduan kami tentang kontrak dan terma untuk perniagaan kecil menerangkan caranya.
+
+### Berhati-hati dengan eksklusiviti
+Jangan bersetuju untuk berurusan dengan hanya satu rakan kongsi melainkan anda memahami terma dan faedahnya. Minta had masa dan hak keluar.
+
+### Lindungi jenama dan idea anda
+Jelas tentang siapa yang memiliki bahan yang dicipta bersama dan bagaimana setiap pihak boleh menggunakan nama pihak lain. Panduan kami tentang pendaftaran tanda dagangan menerangkan cara melindungi jenama anda.
+
+### Susunan lebih besar memerlukan lebih penjagaan
+Jika anda berkongsi wang, pemilikan atau liabiliti, dapatkan nasihat. Panduan kami tentang rakan kongsi perniagaan dan perjanjian pemegang saham menerangkan risikonya.
+
+### Semak pihak lain
+Lihat reputasi, pendaftaran dan rekod prestasi bakal rakan kongsi sebelum anda mengaitkan nama anda dengan mereka. Panduan kami tentang cara mendaftar perniagaan menerangkan apa yang ditunjukkan oleh pendaftaran.
+
+### Ketahui peraturan tentang pengiklanan dan dakwaan
+Jika promosi bersama membuat dakwaan tentang harga atau produk, pastikan ia tepat. Panduan kami tentang aduan pelanggan, bayaran balik dan hak pengguna menerangkan tugas anda kepada pelanggan.
+
+## 8. Semak sama ada rangkaian memberi pulangan
+
+### Jejak angka yang mudah
+Catat acara yang anda hadiri, orang yang anda susuli, pengenalan yang dibuat dan diterima, dan sebarang perniagaan yang terhasil.
+
+### Semak setiap suku tahun
+Tanya kumpulan mana yang menghasilkan kenalan berguna dan mana yang hanya kos masa dan wang. Tinggalkan yang tidak membantu.
+
+### Kira lebih daripada jualan
+Nilai juga termasuk nasihat, maklumat, rujukan dan sokongan semasa masa sukar.
+
+### Luangkan masa untuknya
+Anggap rangkaian sebagai sebahagian daripada kerja, dengan beberapa jam diasingkan setiap bulan. Panduan kami tentang mendelegasikan dan mengelak keletihan pemilik menerangkan cara mengosongkan masa.
+
+### Beri kembali
+Bantu ahli yang lebih baharu, kongsi apa yang anda pelajari, dan berterima kasih kepada mereka yang membantu anda. Rangkaian berkembang apabila orang berasa dihargai.
+
+Jika anda mahu bertemu akauntan, pereka, pembekal atau perniagaan lain yang boleh dipercayai berhampiran anda, anda boleh [menyemak imbas direktori](/ms) untuk profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya orang dalam rangkaian anda dan lebih jauh dapat menemui perniagaan anda dengan mudah.
+
+## Kesilapan lazim PKS Malaysia semasa membina rangkaian
+
+- **Menyertai banyak kumpulan dan tidak menghadiri satu pun.** Kehadiran yang nipis membina sedikit kepercayaan, jadi pilih beberapa kumpulan dan hadir dengan tetap.
+- **Menjual dengan paksa dan bukannya membina kepercayaan.** Menolak produk kepada orang yang tidak dikenali menjauhkan orang, jadi tanya soalan, tawarkan bantuan dan susuli.
+- **Bersetuju dengan perkongsian tanpa terma bertulis.** Perjanjian lisan membawa kepada pertikaian tentang wang, jenama dan eksklusiviti, jadi letakkan asasnya secara bertulis.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Senaraikan orang yang sudah anda kenali yang boleh merujuk atau bekerjasama dengan anda, dan hantar mesej mesra kepada dua daripada mereka.
+- **Seterusnya:** Pilih satu atau dua persatuan atau kumpulan yang sesuai dengan sektor anda, dan hadir sebagai tetamu sebelum membayar.
+- **Kemudian:** Sediakan pengenalan satu ayat dan senarai kenalan yang mudah, dan susuli dalam beberapa hari selepas setiap pertemuan.
+- **Setiap suku tahun:** Semak kenalan dan kumpulan mana yang membantu, dan fokuskan masa anda pada yang itu.
+
+Rangkaian yang kukuh dibina perlahan-lahan, melalui kebolehpercayaan dan kemurahan hati. Mulakan dengan beberapa hubungan yang baik, dan biarkan ia berkembang.`,
+        faqs: [
+          {
+            question: "Mengapa perniagaan kecil perlu bersusah payah dengan rangkaian?",
+            answer:
+              "Rujukan dan pengenalan lebih dipercayai berbanding pengiklanan, dan kenalan boleh membawa kepada pelanggan, pembekal, penasihat dan maklumat yang anda tidak akan temui sendirian. Ia pelaburan yang perlahan, tetapi selalunya memberi pulangan dalam setahun atau lebih.",
+          },
+          {
+            question: "Bagaimanakah saya memilih persatuan atau dewan perniagaan untuk disertai?",
+            answer:
+              "Bandingkan apa yang sebenarnya diperoleh ahli, berapa kerap acara berlaku, siapa yang hadir dan kosnya. Cuba hadir sebagai tetamu dahulu, dan pilih dua atau tiga kumpulan yang sesuai dengan sektor dan matlamat anda daripada menyertai semuanya. Semak terma keahlian dengan setiap organisasi.",
+          },
+          {
+            question: "Bagaimanakah saya bersedia untuk acara rangkaian?",
+            answer:
+              "Tetapkan matlamat yang jelas, sediakan pengenalan satu atau dua ayat, bawa beberapa kad perniagaan atau kod QR, semak siapa yang hadir jika boleh, dan tiba awal. Rancang untuk mempunyai dua atau tiga perbualan baharu.",
+          },
+          {
+            question: "Bagaimanakah saya patut menyusuli selepas bertemu seseorang?",
+            answer:
+              "Hantar mesej ringkas dalam beberapa hari yang menyebut apa yang anda bincangkan dan mencadangkan langkah seterusnya yang jelas. Lakukan apa yang anda janjikan, rekod kenalan dalam senarai mudah, dan kekal berhubung beberapa kali setahun.",
+          },
+          {
+            question: "Rakan kongsi jenis apa yang patut dicari oleh perniagaan kecil?",
+            answer:
+              "Cari perniagaan yang melayan pelanggan yang sama tetapi menjual sesuatu yang berbeza, untuk rujukan, promosi bersama atau perkhidmatan dikongsi. Rakan kongsi yang baik mengisi jurang yang tidak dapat anda isi dengan murah sendirian. Mulakan dengan percubaan kecil.",
+          },
+          {
+            question: "Adakah saya memerlukan perjanjian bertulis untuk kerjasama?",
+            answer:
+              "Ya, walaupun yang ringkas. Liputi apa yang dilakukan setiap pihak, berapa lama ia berlangsung, bagaimana wang dikongsi, siapa yang memiliki bahan bersama, dan cara menamatkannya. Untuk susunan lebih besar yang melibatkan wang, pemilikan atau liabiliti, dapatkan nasihat.",
+          },
+          {
+            question: "Adakah program kerajaan berguna untuk rangkaian?",
+            answer:
+              "Agensi yang menyokong PKS dan pengeksport kadangkala menjalankan taklimat, padanan perniagaan dan misi perdagangan, selalunya dengan syarat. Ini sering berubah, jadi sahkan program dan kelayakan semasa dengan agensi rasmi.",
+          },
+          {
+            question: "Bagaimanakah saya tahu sama ada rangkaian memberi pulangan?",
+            answer:
+              "Jejak acara yang anda hadiri, susulan, pengenalan yang dibuat dan diterima, dan sebarang perniagaan yang terhasil. Semak setiap suku tahun, tinggalkan kumpulan yang tidak membantu, dan kira nasihat dan maklumat sebagai nilai juga.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "quality-control-and-warranties-for-malaysian-smes",
+    title: "Quality Control and Warranties: Delivering Consistent Products and Handling Defects in Malaysia",
+    seoTitle: "Quality Control and Warranties for Malaysian SMEs",
+    seoDescription:
+      "How Malaysian SMEs can keep quality consistent: set standards, use simple checks, track defects, write fair warranty terms and handle returns the right way.",
+    coverImage: {
+      file: "quality-control-and-warranties-cover.webp",
+      mimeType: "image/webp",
+      alt: "A man in a checked shirt and dark apron holding up a large piece of red-brown leather in a workshop with spools of thread and sewing machines behind him",
+      altTranslations: {
+        zh: "一位身穿格子衬衫和深色围裙的男士在工作坊里举起一大块红褐色皮革检查，身后是线轴和缝纫机",
+        ms: "Seorang lelaki berkemeja petak dan apron gelap mengangkat sehelai besar kulit coklat kemerahan di bengkel dengan gelendong benang dan mesin jahit di belakangnya",
+      },
+    },
+    contentImages: {
+      bottle: {
+        file: "quality-control-and-warranties-bottle.webp",
+        mimeType: "image/webp",
+        alt: "A bearded man in a white apron holding a glass bottle at a workbench lit by a desk lamp, with tools hanging on a pegboard behind him",
+        altTranslations: {
+          zh: "一位留胡子、穿白色围裙的男士在台灯照亮的工作台旁手持玻璃瓶，身后的洞洞板上挂着工具",
+          ms: "Seorang lelaki berjanggut berapron putih memegang botol kaca di meja kerja yang disinari lampu meja, dengan alatan tergantung pada papan berlubang di belakangnya",
+        },
+        after: "Write down what good looks like before you try to inspect for it.",
+        afterTranslations: {
+          zh: "在尝试检验之前，先写下什么才算合格。",
+          ms: "Tulis seperti apa yang baik sebelum anda cuba memeriksanya.",
+        },
+      },
+    },
+    excerpt:
+      "A single bad batch, a late repair, or a refused refund can undo months of good work and spread quickly online. This guide helps Malaysian SMEs set clear quality standards, use simple checks and checklists, work with suppliers, track defects, write fair warranty terms, handle returns properly, and learn from problems.",
+    body: `Customers rarely remember the hundred times your product was fine. They remember the one time it was not, and how you dealt with it.
+
+For a small business, quality is not a luxury for big factories. It is how you protect your reputation, reduce waste, and earn repeat customers. The aim is not perfection, but a steady, predictable standard and a fair way of fixing mistakes.
+
+This is general information, not legal advice. Consumer protection rules, product standards, and warranty requirements differ by product and change over time, and some details in this guide may be out of date. Confirm current rules with the relevant authority or a lawyer, especially for regulated products.
+
+## 1. Define what quality means for your business
+
+### Set the standard first
+Write down what good looks like before you try to inspect for it. If you cannot describe the standard, staff cannot meet it and customers cannot be promised it. A clear standard is the base of every check.
+
+### Think in customer terms
+Quality is what customers expect: a product that works, looks as shown, lasts a reasonable time, arrives on time, and is safe. Ask what would make them disappointed.
+
+### Make standards specific
+"Good stitching" is vague. "No loose threads, even stitches, seams hold under a firm pull" can be checked. Use size, weight, taste, colour, finish, time, or temperature where relevant.
+
+### Use samples and photos
+Keep an approved sample or reference photo of the right result, so everyone can compare. Our guide on pricing products and services explains how quality links to price.
+
+### Match the standard to your promise
+If you advertise premium quality, your checks must be stricter than if you sell budget items. Do not promise what you cannot deliver.
+
+## 2. Use simple checks and checklists
+
+### Checklists beat memory
+A short list of steps and checks, used every time, catches mistakes that busy people miss. Keep it to the points that matter.
+
+### Check at several stages
+Check materials when they arrive, during production or preparation, and before the product leaves you. Finding a fault early costs far less than finding it at the customer's door.
+
+### Use sampling when you cannot check everything
+For large batches, check a set number of items from each batch. If you find problems, check more or the whole batch.
+
+### Make checking easy
+Place tools, light, and sample references where the checking happens. Checks that take effort get skipped.
+
+### Assign responsibility
+Name who checks what, and make sure they have time and authority to stop a faulty batch. Our guide on delegating and avoiding owner burnout explains how to hand over tasks well.
+
+### Keep records
+Note what was checked, by whom, and the result. Records show patterns and help if a customer disputes a product. Our guide on bookkeeping and accounting basics explains why good records matter.
+
+## 3. Control quality at the source
+
+### Choose suppliers carefully
+Ask for samples, check references, and visit if you can. A cheap supplier with inconsistent quality can cost more in waste and complaints.
+
+### Agree specifications in writing
+State the quality, size, and delivery you expect, and what happens if goods do not meet it. Our guide on managing supplier relationships explains how to negotiate and record terms.
+
+### Inspect incoming goods
+Check deliveries before you accept them, and report problems quickly with photos. Keep faulty goods aside until the issue is settled.
+
+### Store and handle properly
+Good products can be spoiled by poor storage, heat, damp, or rough handling. Our guide on managing inventory and stock explains how to store and rotate stock.
+
+### Have a backup supplier
+If one supplier lets you down, a second source keeps you running. Our guide on business continuity planning explains how to prepare.
+
+## 4. Train your team for consistency
+
+### Show, not just tell
+Demonstrate the right method and the finished result. People learn faster from seeing than from reading a manual.
+
+### Write simple instructions
+Short step-by-step guides with photos help new and part-time staff do the job the same way. Our guide on part-time staff and interns explains how to onboard short-term helpers.
+
+### Make it safe to report problems
+If staff fear blame, they hide mistakes, and faults reach customers. Praise people who raise issues early.
+
+### Share customer feedback
+Let your team see complaints and compliments so that they understand the effect of their work. Our guide on understanding your customers explains how to collect feedback.
+
+### Review your standards with the team
+The people doing the job often know how to improve it. Ask them regularly.
+
+## 5. Track defects, returns, and complaints
+
+### Count what goes wrong
+Record each defect, return, and complaint with the date, product, batch, and cause. A simple sheet is enough.
+
+### Look for patterns
+The same fault from the same supplier, shift, or machine points to a root cause. Fix the cause, not only the symptom.
+
+### Measure a few numbers
+Track the share of items rejected, returned, or complained about over time. Our guide on tracking business performance explains how to build a simple dashboard.
+
+### Fix the cause
+If defects come from a supplier, change or warn the supplier. If they come from a step in your process, change the step, retrain, or adjust equipment.
+
+> A defect that you track and fix once is worth more than ten that you apologise for.
+
+### Check again
+After a fix, watch the numbers to confirm that the problem is gone.
+
+## 6. Write fair warranty and guarantee terms
+
+### Know the difference
+A warranty or guarantee is a promise about how a product will perform and what you will do if it does not. Be clear on what you offer, for how long, and what is excluded.
+
+### Respect consumer rights
+Malaysia's Consumer Protection Act 1999 includes guarantees for goods sold to consumers, such as acceptable quality and matching their description, and these generally cannot be removed by a notice or contract term. The details, remedies, and any changes can be complex, so check the current law with the authority or a lawyer. Our guide on customer complaints, refunds, and consumer rights explains the basics.
+
+### Write terms in plain language
+State how long cover lasts, what is covered, what is not (such as misuse or normal wear), how to claim, and what proof is needed.
+
+### Do not over-promise
+A long warranty that you cannot honour hurts you more than a modest one that you keep.
+
+### Check supplier warranties
+If you resell goods, find out what the manufacturer or supplier covers, and whether you can claim from them when a customer claims from you.
+
+### Put terms where customers see them
+Include warranty terms on receipts, packaging, your website, or a card in the box. Our guide on contracts and terms for small businesses explains how to write clear terms.
+
+## 7. Handle returns and defects the right way
+
+### Make the process easy
+Say clearly how customers can report a problem, such as by message or at the counter, and respond quickly. Speed matters as much as the solution.
+
+### Listen and check
+Ask what happened, request photos if useful, and look at the product. Stay polite, even if you suspect misuse.
+
+### Choose a fair remedy
+Depending on the situation, you may repair, replace, or refund. Consider the customer's rights under the law and the nature of the fault, rather than a fixed rule. Where consumer law gives the customer a right, you should respect it.
+
+### Deal with serious faults first
+If a product could cause harm, stop sales, tell affected customers, and follow any recall or reporting rules. Safety rules differ by product, so check what applies. Our guide on workplace safety explains safe handling in your own premises.
+
+### Keep records and learn
+Log what happened and what you did. Our guide on handling difficult customers and online reviews explains how to reply to public complaints.
+
+### Know where disputes may go
+Consumers can take unresolved claims to the Tribunal for Consumer Claims, which has a monetary limit that is reported as RM50,000, though you should confirm the current figure and rules. Settling fairly with a customer is usually cheaper than a dispute.
+
+## 8. Use problems to improve
+
+### Treat each defect as information
+Ask what it tells you about your process, suppliers, training, or standards.
+
+### Review monthly
+Spend an hour each month looking at defects, returns, and feedback, and pick one improvement to make.
+
+### Update your standards and checklists
+When you learn something, change the written standard and the checklist, so the lesson stays.
+
+### Consider formal certification when it pays
+Some customers, especially larger firms, ask for recognised quality or product certifications. Our guide on halal certification and our guide on winning corporate customers explain two cases where credentials can matter. Check the cost and benefit before you commit.
+
+### Celebrate consistency
+Recognise staff when quality stays high, and share good customer feedback with them.
+
+If you need a reliable supplier, a testing service, or a lawyer to review your warranty terms, you can [browse the directory](/en) for local businesses and professionals, and [create a free business listing](/en/signup) so that customers who trust your quality can find you easily.
+
+## Common mistakes Malaysian SMEs make with quality and warranties
+
+- **Having no written standard.** If good is only in your head, quality changes with who is working, so write it down with a sample.
+- **Fixing defects without finding the cause.** Replacing faulty items again and again is expensive, so track the cause and fix it.
+- **Over-promising warranties or ignoring consumer rights.** Promises you cannot keep and unfair terms damage trust and may cause legal trouble, so write clear, honest terms and check the law.
+
+## Where to start
+
+- **This week:** Write down what good looks like for your main product, with a sample or photo.
+- **Next:** Make a short checklist for each stage, and start recording defects and returns in a simple sheet.
+- **Then:** Review your supplier specifications and write plain warranty and return terms.
+- **Every month:** Look at the defect records, fix one cause, and update your checklist.
+
+Quality is built by small habits repeated every day. With clear standards, simple checks, and fair ways of handling problems, you can protect your reputation and keep customers coming back.`,
+    faqs: [
+      {
+        question: "How can a small business keep quality consistent?",
+        answer:
+          "Write down a specific standard with a sample or photo, use short checklists at several stages, train staff by showing the right method, and track defects and returns so that you can fix causes instead of repeating the same mistakes.",
+      },
+      {
+        question: "Do I need to check every item I make or sell?",
+        answer:
+          "Not always. For large batches you can check a set number of items from each batch and check more or the whole batch if you find problems. For safety-critical products, check more thoroughly and follow any rules that apply.",
+      },
+      {
+        question: "How do I control quality from suppliers?",
+        answer:
+          "Choose suppliers using samples and references, agree specifications and remedies in writing, inspect deliveries before accepting them, report problems quickly with photos, and keep a backup supplier.",
+      },
+      {
+        question: "What should a warranty include?",
+        answer:
+          "How long it lasts, what is covered and not covered, how to make a claim, and what proof is needed, in plain language. Do not over-promise, and make sure that your terms do not remove rights that consumer law gives customers.",
+      },
+      {
+        question: "What consumer rights apply to goods I sell in Malaysia?",
+        answer:
+          "Malaysia's Consumer Protection Act 1999 includes guarantees for goods sold to consumers, such as acceptable quality and matching their description. The details and remedies can be complex and change, so confirm the current law with the authority or a lawyer.",
+      },
+      {
+        question: "Should I repair, replace, or refund a defective product?",
+        answer:
+          "It depends on the fault, the product, and the customer's rights under the law. Listen, check the product, and choose a fair remedy quickly. Where consumer law gives the customer a right, respect it.",
+      },
+      {
+        question: "What if a product could be unsafe?",
+        answer:
+          "Stop selling it, tell affected customers, and follow any recall or reporting rules that apply to your product. Safety rules differ by product, so check with the relevant authority.",
+      },
+      {
+        question: "Where can customers take an unresolved claim?",
+        answer:
+          "Consumers can take certain unresolved claims to the Tribunal for Consumer Claims, which has a monetary limit reported as RM50,000. Confirm the current limit and rules, and try to settle fairly with the customer first.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "品质管控与保修：在马来西亚交付稳定的产品并处理缺陷",
+        excerpt:
+          "一批劣质品、一次拖延的维修，或一次被拒绝的退款，就可能抵消数月的努力，并在网上迅速传开。本指南帮助马来西亚中小企业订立清楚的品质标准，使用简单的检查和清单，与供应商合作，追踪缺陷，撰写公平的保修条款，妥善处理退货，并从问题中学习。",
+        body: `顾客很少记得您的产品一百次都没问题。他们记得的是那一次出了问题，以及您如何处理。
+
+对小企业来说，品质不是大工厂才有的奢侈品。它是您保护声誉、减少浪费和赢得回头客的方式。目标不是完美，而是稳定、可预期的标准，以及公平地纠正错误的方式。
+
+本文仅提供一般信息，并非法律建议。消费者保护规定、产品标准和保修要求因产品而异，也会随时间变化，本指南的部分细节可能已经过时。请向相关主管单位或律师确认现行规定，尤其是受规管的产品。
+
+## 1. 界定对您的企业而言品质意味着什么
+
+### 先订立标准
+在尝试检验之前，先写下什么才算合格。如果您无法描述标准，员工就无法达到，顾客也无法得到承诺。清楚的标准是每一项检查的基础。
+
+### 以顾客的角度思考
+品质就是顾客的期望：产品能用、看起来与展示的一致、能用上合理的时间、准时送达，并且安全。问问什么会让他们失望。
+
+### 让标准具体
+“缝线好”太含糊。“没有松线、针脚均匀、接缝在用力拉扯下不裂开”才能检查。在相关之处使用尺寸、重量、味道、颜色、表面处理、时间或温度。
+
+### 使用样品和照片
+保留一份认可的样品或正确结果的参考照片，让每个人都能对照。我们关于产品与服务定价的指南说明了品质如何与价格相关联。
+
+### 让标准配合您的承诺
+如果您宣传高端品质，您的检查必须比销售平价商品时更严格。不要承诺您无法交付的东西。
+
+## 2. 使用简单的检查和清单
+
+### 清单胜过记忆
+一份简短的步骤和检查清单，每次都使用，能发现忙碌的人漏掉的错误。请只保留重要的要点。
+
+### 在几个阶段检查
+在材料到达时、生产或准备过程中，以及产品离开您之前检查。及早发现故障的成本，远低于在顾客门口才发现。
+
+### 无法全部检查时使用抽样
+对于大批量，从每批中检查一定数量的商品。如果发现问题，再多检查一些或检查整批。
+
+### 让检查容易进行
+把工具、光线和样品参考放在检查进行的地方。需要费力的检查会被跳过。
+
+### 指定责任
+指明谁检查什么，并确保他们有时间和权力来叫停有缺陷的批次。我们关于授权与避免企业主过劳的指南说明了如何妥善交接任务。
+
+### 保留记录
+记下检查了什么、由谁检查，以及结果。记录能显示规律，并在顾客对产品有争议时帮上忙。我们关于簿记和会计基础的指南说明了为什么良好的记录很重要。
+
+## 3. 从源头控制品质
+
+### 谨慎选择供应商
+索取样品，查核推荐人，如果可以就亲自拜访。品质不稳定的廉价供应商，可能因浪费和投诉而花费更多。
+
+### 以书面商定规格
+说明您期望的品质、尺寸和送货，以及货品不符时会怎样。我们关于管理供应商关系的指南说明了如何谈判并记录条款。
+
+### 检验进货
+在接受之前检查送来的货，并迅速附上照片报告问题。把有缺陷的货放在一边，直到问题解决。
+
+### 妥善储存和处理
+好的产品可能因储存不当、高温、潮湿或粗暴处理而变质。我们关于管理库存和存货的指南说明了如何储存和轮换存货。
+
+### 准备备用供应商
+如果一个供应商让您失望，第二个来源能让您继续运作。我们关于营运持续计划的指南说明了如何准备。
+
+## 4. 培训团队以保持稳定
+
+### 示范，而不只是说
+示范正确的方法和完成的成果。人们从看比从读手册学得更快。
+
+### 写简单的说明
+附有照片的简短逐步指南，帮助新员工和兼职员工以相同的方式完成工作。我们关于兼职员工与实习生的指南说明了如何带短期帮手入门。
+
+### 让报告问题变得安全
+如果员工害怕被责怪，就会隐瞒错误，缺陷就会到达顾客手中。请表扬及早提出问题的人。
+
+### 分享顾客的反馈
+让您的团队看到投诉和称赞，让他们了解自己工作的影响。我们关于了解您的顾客的指南说明了如何收集反馈。
+
+### 与团队一起检视您的标准
+从事这份工作的人往往知道如何改进。请定期询问他们。
+
+## 5. 追踪缺陷、退货和投诉
+
+### 计算出了什么问题
+记录每一项缺陷、退货和投诉，注明日期、产品、批次和原因。一份简单的表格就够了。
+
+### 寻找规律
+同一个供应商、班次或机器反复出现相同的故障，指向了根本原因。请解决原因，而不只是症状。
+
+### 衡量几个数字
+追踪一段时间内被拒收、退回或投诉的商品所占的比例。我们关于追踪企业绩效的指南说明了如何建立简单的仪表板。
+
+### 解决原因
+如果缺陷来自供应商，请更换或警告供应商。如果来自您流程中的某个步骤，请更改该步骤、重新培训或调整设备。
+
+> 一个您追踪并解决的缺陷，比十个您只是道歉的缺陷更有价值。
+
+### 再次检查
+修正之后，留意数字以确认问题已经消失。
+
+## 6. 撰写公平的保修和保证条款
+
+### 了解区别
+保修或保证是对产品将如何表现，以及如果不如预期您将怎么做的承诺。请清楚说明您提供什么、期限多长，以及排除什么。
+
+### 尊重消费者权益
+马来西亚的1999年消费者保护法令包含对售给消费者的货品的保证，例如可接受的品质和与描述相符，而这些一般不能通过告示或合约条款去除。细节、补救办法和任何变动可能很复杂，所以请向主管单位或律师确认现行法律。我们关于顾客投诉、退款与消费者权益的指南说明了基础知识。
+
+### 用平实的语言撰写条款
+说明保障期限多长、涵盖什么、不涵盖什么（例如误用或正常磨损）、如何索赔，以及需要什么证明。
+
+### 不要过度承诺
+您无法兑现的长期保修，比您能遵守的适度保修更伤人。
+
+### 查核供应商的保修
+如果您转售货品，请了解制造商或供应商涵盖什么，以及当顾客向您索赔时，您能否向他们索赔。
+
+### 把条款放在顾客看得到的地方
+把保修条款放在收据、包装、您的网站或盒内的卡片上。我们关于小企业合约与条款的指南说明了如何写清楚条款。
+
+## 7. 以正确的方式处理退货和缺陷
+
+### 让流程容易
+清楚说明顾客如何报告问题，例如通过讯息或在柜台，并迅速回应。速度和解决方案同样重要。
+
+### 倾听并检查
+询问发生了什么，必要时请对方提供照片，并查看产品。即使怀疑是误用，也要保持礼貌。
+
+### 选择公平的补救办法
+视情况而定，您可以维修、更换或退款。请考虑顾客在法律下的权利和故障的性质，而不是一条固定的规则。当消费者法律赋予顾客权利时，您应该尊重。
+
+### 先处理严重的故障
+如果产品可能造成伤害，请停止销售，通知受影响的顾客，并遵守任何召回或报告的规定。安全规定因产品而异，所以请查明适用什么。我们关于工作场所安全的指南说明了在您自己的场所如何安全处理。
+
+### 保留记录并学习
+记录发生了什么以及您做了什么。我们关于应对难缠顾客与网络评论的指南说明了如何回复公开的投诉。
+
+### 知道纠纷可能去哪里
+消费者可以把未解决的索赔提交给消费者索赔审裁处，据报道其金额上限为5万令吉，但您应确认现行数额和规则。与顾客公平地解决，通常比纠纷更便宜。
+
+## 8. 利用问题来改进
+
+### 把每个缺陷当作信息
+问问它告诉您关于您的流程、供应商、培训或标准的什么。
+
+### 每月检视
+每月花一小时查看缺陷、退货和反馈，并选择一项改进来做。
+
+### 更新您的标准和清单
+当您学到东西时，修改书面的标准和清单，让教训保留下来。
+
+### 在值得时考虑正式认证
+一些客户，尤其是较大的公司，会要求公认的品质或产品认证。我们关于清真认证的指南和关于赢得企业客户的指南说明了资格认证可能重要的两个例子。在做出承诺之前，请查看成本和收益。
+
+### 表彰稳定
+当品质保持高水准时表彰员工，并与他们分享良好的顾客反馈。
+
+如果您需要可靠的供应商、检测服务，或律师来审阅您的保修条款，可以[浏览目录](/zh)寻找本地企业和专业人士，并[创建免费商家列表](/zh/signup)，让信任您品质的顾客能轻易找到您。
+
+## 马来西亚中小企业在品质和保修方面的常见错误
+
+- **没有书面标准。** 如果“好”只存在于您的脑中，品质就会随谁在工作而变，所以请连同样品一起写下来。
+- **修正缺陷却不找原因。** 一再更换有缺陷的商品成本很高，所以请追踪原因并解决。
+- **过度承诺保修或忽视消费者权益。** 无法兑现的承诺和不公平的条款会损害信任，也可能引起法律麻烦，所以请写下清楚、诚实的条款并查核法律。
+
+## 从哪里开始
+
+- **本周：** 为您的主要产品写下什么才算合格，并附上样品或照片。
+- **接下来：** 为每个阶段制作一份简短的清单，并开始用简单的表格记录缺陷和退货。
+- **然后：** 检视您的供应商规格，并撰写平实的保修和退货条款。
+- **每个月：** 查看缺陷记录，解决一个原因，并更新您的清单。
+
+品质是由每天重复的小习惯建立起来的。有了清楚的标准、简单的检查，以及公平处理问题的方式，您就能保护声誉，让顾客不断回来。`,
+        faqs: [
+          {
+            question: "小企业如何保持品质稳定？",
+            answer:
+              "写下附有样品或照片的具体标准，在几个阶段使用简短的清单，通过示范正确方法来培训员工，并追踪缺陷和退货，这样您就能解决原因，而不是重复同样的错误。",
+          },
+          {
+            question: "我需要检查我制造或销售的每一件商品吗？",
+            answer:
+              "不一定。对于大批量，您可以从每批检查一定数量的商品，如果发现问题就多检查一些或检查整批。对于涉及安全的产品，请更彻底地检查并遵守任何适用的规定。",
+          },
+          {
+            question: "我如何控制供应商的品质？",
+            answer:
+              "通过样品和推荐人选择供应商，以书面商定规格和补救办法，在接受之前检验送来的货，迅速附上照片报告问题，并准备备用供应商。",
+          },
+          {
+            question: "保修应该包含什么？",
+            answer:
+              "用平实的语言说明期限多长、涵盖和不涵盖什么、如何索赔，以及需要什么证明。不要过度承诺，并确保您的条款不会去除消费者法律赋予顾客的权利。",
+          },
+          {
+            question: "在马来西亚，我销售的货品适用哪些消费者权益？",
+            answer:
+              "马来西亚的1999年消费者保护法令包含对售给消费者的货品的保证，例如可接受的品质和与描述相符。细节和补救办法可能很复杂且会变化，所以请向主管单位或律师确认现行法律。",
+          },
+          {
+            question: "对有缺陷的产品，我应该维修、更换还是退款？",
+            answer:
+              "这取决于故障、产品，以及顾客在法律下的权利。倾听、检查产品，并迅速选择公平的补救办法。当消费者法律赋予顾客权利时，请尊重它。",
+          },
+          {
+            question: "如果产品可能不安全怎么办？",
+            answer:
+              "停止销售，通知受影响的顾客，并遵守任何适用于您产品的召回或报告规定。安全规定因产品而异，所以请向相关主管单位查询。",
+          },
+          {
+            question: "顾客可以把未解决的索赔提交到哪里？",
+            answer:
+              "消费者可以把某些未解决的索赔提交给消费者索赔审裁处，据报道其金额上限为5万令吉。请确认现行的上限和规则，并先尝试与顾客公平地解决。",
+          },
+        ],
+      },
+      ms: {
+        title: "Kawalan Kualiti dan Waranti: Menyampaikan Produk yang Konsisten dan Menangani Kecacatan di Malaysia",
+        excerpt:
+          "Satu kelompok yang buruk, pembaikan yang lewat atau bayaran balik yang ditolak boleh membatalkan usaha berbulan-bulan dan tersebar dengan cepat dalam talian. Panduan ini membantu PKS Malaysia menetapkan piawaian kualiti yang jelas, menggunakan semakan dan senarai semak yang mudah, bekerjasama dengan pembekal, menjejak kecacatan, menulis terma waranti yang adil, mengendalikan pemulangan dengan betul, dan belajar daripada masalah.",
+        body: `Pelanggan jarang mengingati seratus kali produk anda baik. Mereka mengingati satu kali ia tidak baik, dan bagaimana anda menanganinya.
+
+Bagi perniagaan kecil, kualiti bukan kemewahan untuk kilang besar. Ia cara anda melindungi reputasi, mengurangkan pembaziran dan memenangi pelanggan berulang. Matlamatnya bukan kesempurnaan, tetapi piawaian yang stabil dan boleh diramal serta cara yang adil untuk membetulkan kesilapan.
+
+Ini maklumat umum, bukan nasihat undang-undang. Peraturan perlindungan pengguna, piawaian produk dan keperluan waranti berbeza mengikut produk dan berubah dari semasa ke semasa, dan sebahagian butiran dalam panduan ini mungkin sudah lapuk. Sahkan peraturan semasa dengan pihak berkuasa berkaitan atau peguam, terutamanya untuk produk terkawal.
+
+## 1. Tentukan apa maksud kualiti untuk perniagaan anda
+
+### Tetapkan piawaian dahulu
+Tulis seperti apa yang baik sebelum anda cuba memeriksanya. Jika anda tidak dapat menerangkan piawaian itu, pekerja tidak dapat memenuhinya dan pelanggan tidak dapat dijanjikan. Piawaian yang jelas ialah asas setiap semakan.
+
+### Fikir dari segi pelanggan
+Kualiti ialah apa yang dijangkakan pelanggan: produk yang berfungsi, kelihatan seperti yang ditunjukkan, tahan untuk masa yang munasabah, tiba tepat masa dan selamat. Tanya apa yang akan mengecewakan mereka.
+
+### Jadikan piawaian khusus
+"Jahitan yang baik" adalah kabur. "Tiada benang longgar, jahitan sekata, kelim kekal di bawah tarikan kuat" boleh disemak. Gunakan saiz, berat, rasa, warna, kemasan, masa atau suhu di mana berkaitan.
+
+### Gunakan sampel dan gambar
+Simpan sampel yang diluluskan atau gambar rujukan hasil yang betul, supaya semua orang boleh membandingkan. Panduan kami tentang penetapan harga produk dan perkhidmatan menerangkan bagaimana kualiti berkait dengan harga.
+
+### Padankan piawaian dengan janji anda
+Jika anda mengiklankan kualiti premium, semakan anda mesti lebih ketat daripada jika anda menjual barangan murah. Jangan menjanjikan apa yang anda tidak dapat sampaikan.
+
+## 2. Gunakan semakan dan senarai semak yang mudah
+
+### Senarai semak mengalahkan ingatan
+Senarai ringkas langkah dan semakan, digunakan setiap kali, menangkap kesilapan yang terlepas oleh orang yang sibuk. Hadkan kepada perkara yang penting.
+
+### Semak pada beberapa peringkat
+Semak bahan apabila tiba, semasa pengeluaran atau penyediaan, dan sebelum produk meninggalkan anda. Mengesan kerosakan awal menelan kos jauh lebih rendah daripada mengesannya di pintu pelanggan.
+
+### Gunakan pensampelan apabila anda tidak dapat menyemak semuanya
+Untuk kelompok besar, semak sejumlah item tertentu daripada setiap kelompok. Jika anda menemui masalah, semak lebih banyak atau seluruh kelompok.
+
+### Permudahkan penyemakan
+Letakkan alatan, cahaya dan rujukan sampel di tempat penyemakan berlaku. Semakan yang memerlukan usaha akan dilangkau.
+
+### Tetapkan tanggungjawab
+Namakan siapa yang menyemak apa, dan pastikan mereka mempunyai masa dan kuasa untuk menghentikan kelompok yang rosak. Panduan kami tentang mendelegasikan dan mengelak keletihan pemilik menerangkan cara menyerahkan tugas dengan baik.
+
+### Simpan rekod
+Catat apa yang disemak, oleh siapa dan keputusannya. Rekod menunjukkan corak dan membantu jika pelanggan mempertikaikan produk. Panduan kami tentang asas simpan kira dan perakaunan menerangkan mengapa rekod yang baik penting.
+
+## 3. Kawal kualiti di sumber
+
+### Pilih pembekal dengan berhati-hati
+Minta sampel, semak rujukan dan lawat jika boleh. Pembekal murah dengan kualiti yang tidak konsisten boleh menelan kos lebih banyak dalam pembaziran dan aduan.
+
+### Persetujui spesifikasi secara bertulis
+Nyatakan kualiti, saiz dan penghantaran yang anda jangkakan, dan apa yang berlaku jika barangan tidak memenuhinya. Panduan kami tentang menguruskan hubungan pembekal menerangkan cara berunding dan merekod terma.
+
+### Periksa barangan masuk
+Semak penghantaran sebelum anda menerimanya, dan laporkan masalah dengan cepat bersama gambar. Asingkan barangan rosak sehingga isu diselesaikan.
+
+### Simpan dan kendalikan dengan betul
+Produk yang baik boleh rosak akibat penyimpanan yang lemah, haba, lembap atau pengendalian kasar. Panduan kami tentang menguruskan inventori dan stok menerangkan cara menyimpan dan memutar stok.
+
+### Ada pembekal sandaran
+Jika satu pembekal mengecewakan anda, sumber kedua memastikan anda terus beroperasi. Panduan kami tentang perancangan kesinambungan perniagaan menerangkan cara bersedia.
+
+## 4. Latih pasukan anda untuk konsistensi
+
+### Tunjuk, bukan sekadar beritahu
+Tunjukkan kaedah yang betul dan hasil siap. Orang belajar lebih cepat daripada melihat berbanding membaca manual.
+
+### Tulis arahan yang mudah
+Panduan langkah demi langkah ringkas dengan gambar membantu pekerja baharu dan separuh masa melakukan kerja dengan cara yang sama. Panduan kami tentang pekerja separuh masa dan pelatih menerangkan cara membimbing pembantu jangka pendek.
+
+### Jadikan selamat untuk melaporkan masalah
+Jika pekerja takut dipersalahkan, mereka menyembunyikan kesilapan, dan kecacatan sampai kepada pelanggan. Puji orang yang menimbulkan isu lebih awal.
+
+### Kongsi maklum balas pelanggan
+Biarkan pasukan anda melihat aduan dan pujian supaya mereka memahami kesan kerja mereka. Panduan kami tentang memahami pelanggan anda menerangkan cara mengumpul maklum balas.
+
+### Semak piawaian anda bersama pasukan
+Orang yang melakukan kerja selalunya tahu cara memperbaikinya. Tanya mereka dengan kerap.
+
+## 5. Jejak kecacatan, pemulangan dan aduan
+
+### Kira apa yang tidak kena
+Rekod setiap kecacatan, pemulangan dan aduan dengan tarikh, produk, kelompok dan punca. Helaian mudah sudah cukup.
+
+### Cari corak
+Kerosakan yang sama daripada pembekal, syif atau mesin yang sama menunjuk kepada punca utama. Baiki puncanya, bukan sekadar gejalanya.
+
+### Ukur beberapa angka
+Jejak bahagian item yang ditolak, dipulangkan atau diadukan dari semasa ke semasa. Panduan kami tentang menjejak prestasi perniagaan menerangkan cara membina papan pemuka yang mudah.
+
+### Baiki puncanya
+Jika kecacatan datang daripada pembekal, tukar atau beri amaran kepada pembekal. Jika ia datang daripada satu langkah dalam proses anda, ubah langkah itu, latih semula atau laraskan peralatan.
+
+> Satu kecacatan yang anda jejak dan baiki sekali lebih bernilai daripada sepuluh yang anda sekadar minta maaf.
+
+### Semak semula
+Selepas pembetulan, perhatikan angka untuk mengesahkan masalah sudah hilang.
+
+## 6. Tulis terma waranti dan jaminan yang adil
+
+### Ketahui perbezaannya
+Waranti atau jaminan ialah janji tentang bagaimana produk akan berfungsi dan apa yang akan anda lakukan jika ia tidak berfungsi. Jelas tentang apa yang anda tawarkan, untuk berapa lama, dan apa yang dikecualikan.
+
+### Hormati hak pengguna
+Akta Perlindungan Pengguna 1999 Malaysia merangkumi jaminan untuk barangan yang dijual kepada pengguna, seperti kualiti yang boleh diterima dan sepadan dengan keterangannya, dan ini pada amnya tidak boleh dihapuskan oleh notis atau terma kontrak. Butiran, remedi dan sebarang perubahan boleh menjadi rumit, jadi semak undang-undang semasa dengan pihak berkuasa atau peguam. Panduan kami tentang aduan pelanggan, bayaran balik dan hak pengguna menerangkan asasnya.
+
+### Tulis terma dalam bahasa yang mudah
+Nyatakan berapa lama perlindungan berlangsung, apa yang dilindungi, apa yang tidak (seperti salah guna atau haus biasa), cara menuntut, dan bukti apa yang diperlukan.
+
+### Jangan berjanji berlebihan
+Waranti panjang yang anda tidak dapat tunaikan memudaratkan anda lebih daripada yang sederhana yang anda patuhi.
+
+### Semak waranti pembekal
+Jika anda menjual semula barangan, ketahui apa yang dilindungi oleh pengilang atau pembekal, dan sama ada anda boleh menuntut daripada mereka apabila pelanggan menuntut daripada anda.
+
+### Letakkan terma di tempat pelanggan melihat
+Sertakan terma waranti pada resit, pembungkusan, laman web anda atau kad dalam kotak. Panduan kami tentang kontrak dan terma untuk perniagaan kecil menerangkan cara menulis terma yang jelas.
+
+## 7. Kendalikan pemulangan dan kecacatan dengan cara yang betul
+
+### Permudahkan proses
+Nyatakan dengan jelas bagaimana pelanggan boleh melaporkan masalah, seperti melalui mesej atau di kaunter, dan balas dengan cepat. Kelajuan sama pentingnya dengan penyelesaian.
+
+### Dengar dan semak
+Tanya apa yang berlaku, minta gambar jika berguna, dan lihat produk. Kekal sopan, walaupun anda mengesyaki salah guna.
+
+### Pilih remedi yang adil
+Bergantung pada keadaan, anda boleh membaiki, menggantikan atau membayar balik. Pertimbangkan hak pelanggan di bawah undang-undang dan sifat kerosakan, bukannya peraturan tetap. Di mana undang-undang pengguna memberi pelanggan hak, anda patut menghormatinya.
+
+### Tangani kerosakan serius dahulu
+Jika produk boleh menyebabkan bahaya, hentikan jualan, beritahu pelanggan yang terjejas, dan patuhi sebarang peraturan penarikan balik atau pelaporan. Peraturan keselamatan berbeza mengikut produk, jadi semak apa yang terpakai. Panduan kami tentang keselamatan tempat kerja menerangkan pengendalian selamat di premis anda sendiri.
+
+### Simpan rekod dan belajar
+Catat apa yang berlaku dan apa yang anda lakukan. Panduan kami tentang menangani pelanggan sukar dan ulasan dalam talian menerangkan cara membalas aduan awam.
+
+### Ketahui ke mana pertikaian mungkin pergi
+Pengguna boleh membawa tuntutan yang tidak diselesaikan ke Tribunal Tuntutan Pengguna, yang mempunyai had kewangan yang dilaporkan sebagai RM50,000, walaupun anda patut mengesahkan angka dan peraturan semasa. Menyelesaikan dengan adil bersama pelanggan biasanya lebih murah daripada pertikaian.
+
+## 8. Gunakan masalah untuk memperbaiki
+
+### Anggap setiap kecacatan sebagai maklumat
+Tanya apa yang ia beritahu anda tentang proses, pembekal, latihan atau piawaian anda.
+
+### Semak setiap bulan
+Luangkan sejam setiap bulan melihat kecacatan, pemulangan dan maklum balas, dan pilih satu penambahbaikan untuk dibuat.
+
+### Kemas kini piawaian dan senarai semak anda
+Apabila anda belajar sesuatu, ubah piawaian bertulis dan senarai semak, supaya pengajaran itu kekal.
+
+### Pertimbangkan pensijilan formal apabila berbaloi
+Sesetengah pelanggan, terutamanya firma lebih besar, meminta pensijilan kualiti atau produk yang diiktiraf. Panduan kami tentang pensijilan halal dan panduan kami tentang memenangi pelanggan korporat menerangkan dua kes di mana kelayakan boleh penting. Semak kos dan faedah sebelum anda membuat komitmen.
+
+### Raikan konsistensi
+Iktiraf pekerja apabila kualiti kekal tinggi, dan kongsi maklum balas pelanggan yang baik dengan mereka.
+
+Jika anda memerlukan pembekal yang boleh dipercayai, perkhidmatan ujian atau peguam untuk menyemak terma waranti anda, anda boleh [menyemak imbas direktori](/ms) untuk perniagaan dan profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan yang mempercayai kualiti anda dapat menemui anda dengan mudah.
+
+## Kesilapan lazim PKS Malaysia dengan kualiti dan waranti
+
+- **Tiada piawaian bertulis.** Jika baik hanya dalam kepala anda, kualiti berubah mengikut siapa yang bekerja, jadi tuliskannya bersama sampel.
+- **Membaiki kecacatan tanpa mencari puncanya.** Menggantikan item rosak berulang kali adalah mahal, jadi jejak punca dan baikinya.
+- **Berjanji berlebihan pada waranti atau mengabaikan hak pengguna.** Janji yang anda tidak dapat tunaikan dan terma yang tidak adil merosakkan kepercayaan dan mungkin menimbulkan masalah undang-undang, jadi tulis terma yang jelas dan jujur dan semak undang-undang.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Tulis seperti apa yang baik untuk produk utama anda, dengan sampel atau gambar.
+- **Seterusnya:** Buat senarai semak ringkas untuk setiap peringkat, dan mula merekod kecacatan dan pemulangan dalam helaian mudah.
+- **Kemudian:** Semak spesifikasi pembekal anda dan tulis terma waranti dan pemulangan yang mudah.
+- **Setiap bulan:** Lihat rekod kecacatan, baiki satu punca, dan kemas kini senarai semak anda.
+
+Kualiti dibina oleh tabiat kecil yang diulang setiap hari. Dengan piawaian yang jelas, semakan mudah dan cara yang adil untuk menangani masalah, anda boleh melindungi reputasi dan membuat pelanggan terus kembali.`,
+        faqs: [
+          {
+            question: "Bagaimanakah perniagaan kecil boleh mengekalkan kualiti yang konsisten?",
+            answer:
+              "Tulis piawaian khusus dengan sampel atau gambar, gunakan senarai semak ringkas pada beberapa peringkat, latih pekerja dengan menunjukkan kaedah yang betul, dan jejak kecacatan dan pemulangan supaya anda boleh membaiki punca dan bukannya mengulangi kesilapan yang sama.",
+          },
+          {
+            question: "Adakah saya perlu menyemak setiap item yang saya buat atau jual?",
+            answer:
+              "Tidak semestinya. Untuk kelompok besar anda boleh menyemak sejumlah item tertentu daripada setiap kelompok dan menyemak lebih banyak atau seluruh kelompok jika anda menemui masalah. Untuk produk kritikal keselamatan, semak dengan lebih teliti dan patuhi sebarang peraturan yang terpakai.",
+          },
+          {
+            question: "Bagaimanakah saya mengawal kualiti daripada pembekal?",
+            answer:
+              "Pilih pembekal menggunakan sampel dan rujukan, persetujui spesifikasi dan remedi secara bertulis, periksa penghantaran sebelum menerimanya, laporkan masalah dengan cepat bersama gambar, dan simpan pembekal sandaran.",
+          },
+          {
+            question: "Apakah yang patut ada dalam waranti?",
+            answer:
+              "Berapa lama ia berlangsung, apa yang dilindungi dan tidak dilindungi, cara membuat tuntutan, dan bukti apa yang diperlukan, dalam bahasa yang mudah. Jangan berjanji berlebihan, dan pastikan terma anda tidak menghapuskan hak yang diberikan undang-undang pengguna kepada pelanggan.",
+          },
+          {
+            question: "Apakah hak pengguna yang terpakai untuk barangan yang saya jual di Malaysia?",
+            answer:
+              "Akta Perlindungan Pengguna 1999 Malaysia merangkumi jaminan untuk barangan yang dijual kepada pengguna, seperti kualiti yang boleh diterima dan sepadan dengan keterangannya. Butiran dan remedi boleh menjadi rumit dan berubah, jadi sahkan undang-undang semasa dengan pihak berkuasa atau peguam.",
+          },
+          {
+            question: "Patutkah saya membaiki, menggantikan atau membayar balik produk yang rosak?",
+            answer:
+              "Ia bergantung pada kerosakan, produk dan hak pelanggan di bawah undang-undang. Dengar, semak produk, dan pilih remedi yang adil dengan cepat. Di mana undang-undang pengguna memberi pelanggan hak, hormatilah.",
+          },
+          {
+            question: "Bagaimana jika produk mungkin tidak selamat?",
+            answer:
+              "Hentikan jualannya, beritahu pelanggan yang terjejas, dan patuhi sebarang peraturan penarikan balik atau pelaporan yang terpakai untuk produk anda. Peraturan keselamatan berbeza mengikut produk, jadi semak dengan pihak berkuasa berkaitan.",
+          },
+          {
+            question: "Ke mana pelanggan boleh membawa tuntutan yang tidak diselesaikan?",
+            answer:
+              "Pengguna boleh membawa tuntutan tertentu yang tidak diselesaikan ke Tribunal Tuntutan Pengguna, yang mempunyai had kewangan yang dilaporkan sebagai RM50,000. Sahkan had dan peraturan semasa, dan cuba selesaikan dengan adil bersama pelanggan dahulu.",
+          },
+        ],
+      },
+    },
+  },
 ];

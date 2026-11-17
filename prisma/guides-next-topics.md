@@ -15,17 +15,18 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Building Business Networks: Associations, Chambers of Commerce, and Partnerships for Malaysian SMEs**
-   — Why networking matters for small firms, types of business associations
-   and chambers (to hedge on membership details and fees), industry events
-   and online communities, how to prepare and follow up, finding referral
-   and collaboration partners, joint promotions and co-selling, mentors and
-   peer groups, agreements for collaborations, and measuring whether
-   networking pays off.
+1. **Serving Customers on WhatsApp: Chat Sales, Auto-Replies and Etiquette for Malaysian SMEs**
+   — Why many Malaysian customers prefer chat, WhatsApp Business versus the
+   regular app (features to hedge), setting up a profile, catalogue and
+   quick replies, response times and opening hours, taking orders and
+   payments in chat, handling complaints privately, group and broadcast
+   rules and consent (PDPA, to hedge), avoiding spam and scams, and
+   keeping records.
 
-2. **Quality Control and Warranties: Delivering Consistent Products and Handling Defects in Malaysia**
-   — Defining quality standards, simple checklists and sampling, supplier
-   and incoming-goods checks, staff training for consistency, tracking
-   defects and returns, warranty and guarantee terms (to hedge on consumer
-   law), repair, replace or refund decisions, product recalls and safety
-   (to hedge), and using quality problems to improve.
+2. **Running Deliveries: Couriers, Own Vehicles, and Last-Mile Logistics for Malaysian SMEs**
+   — Choosing between couriers, e-hailing delivery and your own riders or
+   vehicles, comparing rates and service levels, packaging for transit,
+   delivery pricing and free-shipping thresholds, tracking and proof of
+   delivery, handling lost or damaged parcels, vehicle licences and
+   insurance (to hedge), cash-on-delivery risks, and customer
+   communication.
