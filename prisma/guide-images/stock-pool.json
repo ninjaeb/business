@@ -1273,6 +1273,50 @@
       ],
       "description": "Two business professionals discussing work on a laptop over coffee in a cafe",
       "usedBy": "building-business-networks-partners.webp"
+    },
+    {
+      "id": 5410101,
+      "tags": [
+        "chat",
+        "phone",
+        "florist",
+        "shop"
+      ],
+      "description": "Smiling florist in a sage apron on a phone call while writing in a notebook in a flower shop",
+      "usedBy": "serving-customers-on-whatsapp-cover.webp"
+    },
+    {
+      "id": 8902305,
+      "tags": [
+        "chat",
+        "phone",
+        "order",
+        "bakery"
+      ],
+      "description": "Smiling woman on a phone call holding a gift box of cakes in a bakery kitchen",
+      "usedBy": "serving-customers-on-whatsapp-order.webp"
+    },
+    {
+      "id": 11206901,
+      "tags": [
+        "delivery",
+        "courier",
+        "scooter",
+        "motorbike"
+      ],
+      "description": "Courier in a yellow rain suit riding a scooter with a blue delivery box, motion-blurred street",
+      "usedBy": "running-deliveries-cover.webp"
+    },
+    {
+      "id": 7857559,
+      "tags": [
+        "delivery",
+        "packing",
+        "boxes",
+        "ecommerce"
+      ],
+      "description": "Two women packing boxes at a table with a laptop beside a clothes rack in a boutique",
+      "usedBy": "running-deliveries-packing.webp"
     }
   ]
 }
