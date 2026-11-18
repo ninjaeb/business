@@ -37111,4 +37111,1371 @@ Kualiti dibina oleh tabiat kecil yang diulang setiap hari. Dengan piawaian yang 
       },
     },
   },
+  {
+    slug: "serving-customers-on-whatsapp-for-malaysian-smes",
+    title: "Serving Customers on WhatsApp: Chat Sales, Auto-Replies and Etiquette for Malaysian SMEs",
+    seoTitle: "Serving Customers on WhatsApp: A Guide for Malaysian SMEs",
+    seoDescription:
+      "How Malaysian SMEs can sell on WhatsApp: set up a business profile, use quick replies, take orders, handle complaints and respect consent and privacy.",
+    coverImage: {
+      file: "serving-customers-on-whatsapp-cover.webp",
+      mimeType: "image/webp",
+      alt: "A smiling florist in a sage-green apron on a phone call while writing in a notebook, surrounded by pink anthurium and other flowers in her shop",
+      altTranslations: {
+        zh: "一位身穿灰绿色围裙的微笑花店店员一边讲电话一边在笔记本上记录，店里摆满粉红色的红掌和其他花卉",
+        ms: "Seorang penjual bunga yang tersenyum berapron hijau pucat sedang bercakap di telefon sambil menulis dalam buku nota, dikelilingi bunga anthurium merah jambu dan bunga lain di kedainya",
+      },
+    },
+    contentImages: {
+      order: {
+        file: "serving-customers-on-whatsapp-order.webp",
+        mimeType: "image/webp",
+        alt: "A smiling woman in a blue shirt holding a phone to her ear while handling a small gift box in a kitchen with cupcakes and flowers on the counter",
+        altTranslations: {
+          zh: "一位身穿蓝色衬衫的微笑女士把手机夹在耳边，同时在放着杯子蛋糕和花朵的厨房里整理一个小礼盒",
+          ms: "Seorang wanita tersenyum berbaju biru menyepit telefon di telinga sambil mengendalikan kotak hadiah kecil di dapur dengan kek cawan dan bunga di atas kaunter",
+        },
+        after: "Reply quickly, even if the full answer takes longer.",
+        afterTranslations: {
+          zh: "请迅速回复，即使完整的答案需要更长的时间。",
+          ms: "Balas dengan cepat, walaupun jawapan penuh mengambil masa lebih lama.",
+        },
+      },
+    },
+    excerpt:
+      "For many Malaysian customers, sending a WhatsApp message is the easiest way to ask a question, book a service, or place an order. This guide helps SMEs set up a clear business profile, use catalogues and quick replies, take orders and payments in chat, handle complaints well, respect consent and privacy, and avoid spam and scams.",
+    body: `Many Malaysian customers would rather send a message than make a phone call or fill in a form. For a small business, a chat app can be a shopfront, a booking desk, and a customer service counter in one.
+
+But chat also has its risks. Messages pile up, replies get missed, personal and business life blur, and careless broadcasts annoy people or break the rules. A few simple habits make chat a reliable channel instead of a source of stress.
+
+This is general information, not legal or technical advice. App features, limits, policies, and data protection rules change over time, and some details in this guide may be out of date. Check the app's own help pages and the relevant authority for the latest rules.
+
+## 1. Decide how chat fits your business
+
+### Know why customers use chat
+Chat is quick, familiar, and informal. Customers use it to ask about availability, prices, delivery, and bookings, and to send photos or voice notes.
+
+### Choose what you will handle on chat
+Decide whether chat is for enquiries only, for orders and bookings, or for after-sales support too. Tell customers clearly what to expect.
+
+### Match the channel to the job
+Quick questions suit chat, but complex quotes, contracts, and formal complaints may need email or a call. Our guide on contracts and terms for small businesses explains what to put in writing.
+
+### Plan who answers
+If you are the only person answering, decide set hours. If you have a team, agree who responds and how tasks are handed over.
+
+## 2. Use a business account and set up a clear profile
+
+### Separate business from personal
+A dedicated business number or a business account keeps customer messages apart from family and friends, and lets you manage them properly. Our guide on running a home-based business explains why separation helps.
+
+### Business app versus regular app
+Many small businesses use the business version of the app, which has tools such as a business profile, a product catalogue, quick replies, away messages, and labels. Features and limits change, so check the app's current help pages to see what is available to you.
+
+### Complete your profile
+Add your business name, a short description, address or service area, opening hours, website or social page, and a clear logo or photo. A complete profile builds trust.
+
+### Show opening hours honestly
+State when you reply, and set an away message for outside those hours. Customers forgive a delay when they were told to expect it.
+
+### Link from your other pages
+Add your chat link or QR code to your website, social pages, receipts, and packaging. Our guide on getting your business found online explains how to link everything together.
+
+## 3. Save time with catalogues, quick replies, and labels
+
+### Build a simple catalogue
+List your main products or services with a photo, a short description, and a price where suitable. Keep it current, because outdated prices cause disputes.
+
+### Save quick replies
+Write short, friendly templates for common questions, such as opening hours, price list, delivery details, and how to pay. Insert them with a shortcut, then add a personal line. Save time without sounding robotic.
+
+### Use labels to organise chats
+Labels such as new enquiry, awaiting payment, paid, shipped, and follow-up make it easy to see where each customer stands.
+
+### Set a greeting and away message
+A short welcome that explains how you can help, and an away message that gives your hours, set expectations from the first moment.
+
+### Review your templates
+Check them every few months for outdated prices, offers, or contact details.
+
+## 4. Reply well and set the right tone
+
+### Respond promptly
+Reply quickly, even if the full answer takes longer. A short message such as "Thanks, I will check the stock and reply within the hour" keeps the customer waiting patiently.
+
+### Be clear and polite
+Use plain language, greet people by name where you can, and avoid slang that may confuse. Use the language the customer uses, whether English, Chinese, or Malay.
+
+### Keep messages short and structured
+Break long details into short lines or bullet points, and confirm the key facts: item, price, quantity, delivery, and date.
+
+### Use voice notes and photos wisely
+A photo can answer a question faster than a paragraph, but voice notes can be hard to follow. Offer a written summary for important details.
+
+### Respect customers' time
+Avoid messaging late at night or on rest days unless the customer started the conversation. Our guide on delegating and avoiding owner burnout explains why boundaries matter.
+
+### Take care with personal accounts
+If staff use their own phones, agree rules on keeping customer details safe and handing over chats when they leave.
+
+## 5. Take orders and payments in chat
+
+### Confirm the order in writing
+Repeat the order back in one message with items, prices, delivery fee, total, and delivery details, and ask the customer to confirm.
+
+### Give clear payment instructions
+Share your payment method, such as bank transfer or a QR code, and ask for proof of payment. Our guide on accepting digital payments in Malaysia explains how to set up simple options.
+
+### Check payments before you ship
+Confirm that money has arrived in your account, rather than relying only on a screenshot. Screenshots can be edited.
+
+### Be careful with cash on delivery
+Agree clearly who collects the money and what happens if the customer refuses the parcel. Our guide on running deliveries explains how to handle shipping.
+
+### Keep a simple order record
+Log each order with date, items, amount, and status in a sheet or app, so that you do not lose orders in a long chat. Our guide on bookkeeping and accounting basics explains how to keep records.
+
+### Explain returns and refunds upfront
+State your policy in the catalogue or in a pinned message. Our guide on customer complaints, refunds, and consumer rights explains the basics.
+
+## 6. Handle complaints and difficult chats
+
+### Respond calmly and quickly
+Thank the customer for telling you, apologise where appropriate, and say what you will do and by when.
+
+### Move sensitive matters to private chat
+If a complaint appears in a group or a public comment, reply briefly and invite the customer to continue privately.
+
+### Do not argue in writing
+Even when you are right, an angry reply can be screenshotted and shared. Stay factual and courteous. Our guide on handling difficult customers and online reviews explains how to reply well.
+
+### Keep evidence
+Save chats, photos, and proof of delivery in case of a dispute.
+
+### Know when to escalate
+For serious issues such as safety, large amounts, or legal threats, pause and get advice before you reply.
+
+## 7. Respect consent, privacy, and the rules
+
+### Ask before adding people to groups or lists
+Adding customers to a group or broadcast without permission annoys them and may breach data protection rules. Malaysia's Personal Data Protection Act applies to personal data in commercial use, so check the current rules. Our guide on PDPA compliance explains the basics.
+
+### Give an easy way to opt out
+If you send promotions, include a simple way to stop receiving them, and respect the request quickly.
+
+### Limit what you send
+A few useful updates are welcome, but daily promotions drive people away. Mix helpful information with offers.
+
+### Do not share customer details
+Do not post screenshots that show other customers' names, numbers, or addresses.
+
+### Follow the platform's rules
+Apps limit spam and bulk messaging, and may restrict accounts that break their rules. Read the current terms before you send bulk messages.
+
+> Treat chat like a shop counter: be quick, be clear, and never forget that a real person is on the other side.
+
+## 8. Avoid scams, protect your account, and review
+
+### Beware of fake payment proofs and requests
+Be cautious about edited screenshots, urgent requests to change bank details, and unknown links. Verify with a call or by checking your account.
+
+### Secure your account
+Turn on two-step verification, do not share verification codes, and be careful with linked devices. Our guide on cybersecurity for small businesses explains practical steps.
+
+### Back up important chats
+Keep important orders and agreements in your records, in case you lose your phone or account.
+
+### Review your chat performance
+Note how many enquiries turn into orders, how fast you reply, and common questions that you can answer on your page. Our guide on tracking business performance explains how to follow simple numbers.
+
+### Improve as you learn
+Update templates, catalogue, and opening hours as you learn what customers ask. Our guide on understanding your customers explains how to collect feedback.
+
+If you want help from a designer, a social media helper, or an adviser to set up your chat presence, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so that customers can find your business and contact you easily.
+
+## Common mistakes Malaysian SMEs make on chat
+
+- **Mixing personal and business chats.** Messages get lost and privacy suffers, so use a business account or number.
+- **Adding customers to groups or lists without asking.** It annoys people and may break data protection rules, so ask first and offer an easy opt-out.
+- **Trusting payment screenshots.** Screenshots can be faked, so confirm that the money has reached your account before shipping.
+
+## Where to start
+
+- **This week:** Set up a business profile with your hours, description, and address, and add a greeting and away message.
+- **Next:** Write five quick replies for your most common questions, and build a simple catalogue.
+- **Then:** Add labels, an order log, and clear payment and returns messages.
+- **Every month:** Review response times and common questions, and update your templates.
+
+Chat gives small businesses a direct line to customers. With a clear profile, quick and polite replies, and respect for consent, it can become one of your most reliable ways to sell and serve.`,
+    faqs: [
+      {
+        question: "Should I use a business account or my personal account for customers?",
+        answer:
+          "Use a dedicated business number or business account so that customer messages stay separate from personal chats. The business version of the app offers tools such as a profile, catalogue, quick replies, and labels, but features change, so check the app's current help pages.",
+      },
+      {
+        question: "What should my business profile include?",
+        answer:
+          "Your business name, a short description, address or service area, opening hours, website or social page, and a clear logo or photo. Add a greeting and an away message so that customers know when to expect a reply.",
+      },
+      {
+        question: "How quickly should I reply to customers?",
+        answer:
+          "As quickly as you reasonably can. If a full answer takes time, send a short message saying when you will reply. Setting opening hours and an away message helps customers accept a delay.",
+      },
+      {
+        question: "How do I take orders safely on chat?",
+        answer:
+          "Repeat the order with items, prices, delivery fee, and total, and ask for confirmation. Give clear payment instructions, and confirm that the money has reached your account before shipping instead of relying on a screenshot.",
+      },
+      {
+        question: "Can I add customers to groups or broadcast lists?",
+        answer:
+          "Ask permission first. Adding people without consent annoys them and may breach data protection rules, and Malaysia's Personal Data Protection Act applies to personal data used commercially. Offer an easy opt-out and limit how often you send promotions.",
+      },
+      {
+        question: "How should I handle a complaint in chat?",
+        answer:
+          "Respond calmly and quickly, apologise where appropriate, and say what you will do and by when. Move sensitive matters to private chat, avoid arguing in writing, and keep evidence such as chats, photos, and proof of delivery.",
+      },
+      {
+        question: "How do I protect my account from scams?",
+        answer:
+          "Turn on two-step verification, never share verification codes, be careful with linked devices and unknown links, and verify urgent requests to change bank details by calling the person. Beware of edited payment screenshots.",
+      },
+      {
+        question: "How do I know whether chat selling is working?",
+        answer:
+          "Track the number of enquiries, how many become orders, your reply times, and the questions customers ask most. Use what you learn to improve your templates, catalogue, and opening hours.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "在WhatsApp上服务顾客：马来西亚中小企业的聊天销售、自动回复与礼仪",
+        excerpt:
+          "对许多马来西亚顾客来说，发一则WhatsApp讯息是询问问题、预约服务或下订单最容易的方式。本指南帮助中小企业设立清楚的商家资料，使用商品目录和快捷回复，在聊天中接受订单和付款，妥善处理投诉，尊重同意和隐私，并避免垃圾讯息和骗局。",
+        body: `许多马来西亚顾客宁愿发讯息，也不愿打电话或填表格。对小企业来说，聊天应用可以同时是店面、预约柜台和客户服务台。
+
+但聊天也有风险。讯息堆积、回复被漏掉、个人与工作生活的界线变得模糊，而不小心的群发会惹人厌烦或违反规定。几个简单的习惯，可以让聊天成为可靠的渠道，而不是压力的来源。
+
+本文仅提供一般信息，并非法律或技术建议。应用程序的功能、限制、政策和数据保护规定会随时间变化，本指南的部分细节可能已经过时。请查看应用程序自己的帮助页面和相关主管单位，了解最新的规定。
+
+## 1. 决定聊天如何融入您的业务
+
+### 了解顾客为什么用聊天
+聊天快速、熟悉且不拘形式。顾客用它来询问供货、价格、送货和预约，并发送照片或语音讯息。
+
+### 选择您将在聊天中处理什么
+决定聊天只用于询问、用于订单和预约，还是也用于售后支持。请清楚告诉顾客该期待什么。
+
+### 让渠道配合工作
+简单的问题适合用聊天，但复杂的报价、合约和正式的投诉可能需要电邮或电话。我们关于小企业合约与条款的指南说明了哪些应该写成书面。
+
+### 规划谁来回复
+如果只有您一个人回复，请决定固定的时间。如果有团队，请商定谁来回复以及如何交接任务。
+
+## 2. 使用商家账号并设立清楚的资料
+
+### 把工作和个人分开
+专用的商家号码或商家账号，让顾客的讯息与家人朋友的讯息分开，并让您能妥善管理。我们关于经营居家企业的指南说明了为什么分开有帮助。
+
+### 商家版应用与一般版应用
+许多小企业使用应用程序的商家版，它有商家资料、商品目录、快捷回复、离开讯息和标签等工具。功能和限制会改变，所以请查看应用程序目前的帮助页面，了解您能使用什么。
+
+### 完善您的资料
+加入您的企业名称、简短的描述、地址或服务范围、营业时间、网站或社交页面，以及清楚的标志或照片。完整的资料建立信任。
+
+### 如实显示营业时间
+说明您何时回复，并为这些时间之外设定离开讯息。当顾客被告知会有延迟时，他们会谅解。
+
+### 从您的其他页面连结过来
+把您的聊天连结或二维码加到网站、社交页面、收据和包装上。我们关于让您的企业在网上被找到的指南说明了如何把一切连结起来。
+
+## 3. 用商品目录、快捷回复和标签节省时间
+
+### 建立简单的商品目录
+列出您的主要产品或服务，附上照片、简短的描述，并在适合时附上价格。请保持更新，因为过时的价格会引起纠纷。
+
+### 保存快捷回复
+为常见的问题写下简短友善的模板，例如营业时间、价目表、送货详情和付款方式。用快捷方式插入，再加上一句个人的话。节省时间，又不显得像机器人。
+
+### 用标签整理聊天
+新询问、等待付款、已付款、已发货和跟进等标签，让您容易看到每位顾客处于哪个阶段。
+
+### 设定问候语和离开讯息
+简短的欢迎词说明您能如何帮忙，离开讯息提供您的时间，从一开始就设定期望。
+
+### 检视您的模板
+每隔几个月检查它们是否有过时的价格、优惠或联络资料。
+
+## 4. 好好回复并设定合适的语气
+
+### 及时回应
+请迅速回复，即使完整的答案需要更长的时间。一则简短的讯息，例如“谢谢，我会查一下库存，一小时内回复您”，能让顾客耐心等待。
+
+### 清楚而有礼貌
+使用平实的语言，尽可能称呼对方的名字，并避免可能造成困惑的俚语。使用顾客使用的语言，无论是英文、华文还是马来文。
+
+### 保持讯息简短而有条理
+把冗长的细节分成短行或要点，并确认关键事实：商品、价格、数量、送货和日期。
+
+### 明智使用语音讯息和照片
+一张照片可能比一段文字更快回答问题，但语音讯息可能难以听清。对重要的细节，请提供书面摘要。
+
+### 尊重顾客的时间
+避免在深夜或休息日发讯息，除非是顾客先开始的对话。我们关于授权与避免企业主过劳的指南说明了为什么界线很重要。
+
+### 小心个人账号
+如果员工使用自己的手机，请商定如何保护顾客资料的安全，以及离职时如何交接聊天。
+
+## 5. 在聊天中接受订单和付款
+
+### 以书面确认订单
+用一则讯息复述订单，包括商品、价格、运费、总额和送货详情，并请顾客确认。
+
+### 给出清楚的付款说明
+分享您的付款方式，例如银行转账或二维码，并要求提供付款证明。我们关于在马来西亚接受数码付款的指南说明了如何设立简单的选项。
+
+### 发货前先查核付款
+确认款项已到您的账户，而不是只依赖截图。截图可以被修改。
+
+### 小心货到付款
+清楚商定由谁收钱，以及顾客拒收包裹时会怎样。我们关于经营配送的指南说明了如何处理运送。
+
+### 保留简单的订单记录
+用表格或应用记录每张订单的日期、商品、金额和状态，这样您就不会在冗长的聊天中遗失订单。我们关于簿记和会计基础的指南说明了如何保持记录。
+
+### 事先说明退货和退款
+在商品目录或置顶讯息中写明您的政策。我们关于顾客投诉、退款与消费者权益的指南说明了基础知识。
+
+## 6. 处理投诉和棘手的聊天
+
+### 冷静而迅速地回应
+感谢顾客告诉您，在适当时道歉，并说明您将做什么以及何时完成。
+
+### 把敏感的事转到私人聊天
+如果投诉出现在群组或公开的评论中，请简短回复，并邀请顾客私下继续。
+
+### 不要在文字中争论
+即使您是对的，愤怒的回复也可能被截图并分享。请保持就事论事和礼貌。我们关于应对难缠顾客与网络评论的指南说明了如何好好回复。
+
+### 保留证据
+保存聊天、照片和送达证明，以防发生纠纷。
+
+### 知道何时上报
+对于涉及安全、大金额或法律威胁等严重问题，请先暂停并征求意见再回复。
+
+## 7. 尊重同意、隐私和规则
+
+### 在把人加入群组或名单前先询问
+未经许可把顾客加入群组或群发名单会惹恼他们，也可能违反数据保护规定。马来西亚的个人资料保护法令适用于商业用途的个人资料，所以请查看现行规定。我们关于个人资料保护法令合规的指南说明了基础知识。
+
+### 提供简便的退出方式
+如果您发送促销，请附上简单的停止接收的方式，并迅速尊重对方的要求。
+
+### 限制您发送的内容
+几则有用的更新受欢迎，但每天的促销会把人赶走。请把有用的信息与优惠混合。
+
+### 不要分享顾客资料
+不要发布显示其他顾客姓名、号码或地址的截图。
+
+### 遵守平台的规则
+应用程序会限制垃圾讯息和大量群发，并可能限制违规的账号。在群发之前，请阅读现行条款。
+
+> 把聊天当作店里的柜台：要快、要清楚，并且永远记得对方是一个真实的人。
+
+## 8. 避免骗局、保护您的账号并检视
+
+### 提防伪造的付款证明和要求
+对被修改的截图、紧急要求更改银行资料和不明连结要保持警惕。请通过打电话或检查您的账户来核实。
+
+### 保护您的账号
+开启两步验证，不要分享验证码，并小心已连结的设备。我们关于小企业网络安全的指南说明了实用的步骤。
+
+### 备份重要的聊天
+把重要的订单和协议保存在您的记录中，以防遗失手机或账号。
+
+### 检视您的聊天成效
+记下有多少询问变成订单、您回复得有多快，以及您能在页面上回答的常见问题。我们关于追踪企业绩效的指南说明了如何追踪简单的数字。
+
+### 边学边改进
+当您了解顾客问什么时，更新模板、商品目录和营业时间。我们关于了解您的顾客的指南说明了如何收集反馈。
+
+如果您想请设计师、社交媒体帮手或顾问协助设立您的聊天形象，可以[浏览目录](/zh)寻找您附近的专业人士，并[创建免费商家列表](/zh/signup)，让顾客能轻易找到并联络您的企业。
+
+## 马来西亚中小企业在聊天中的常见错误
+
+- **混用个人和工作的聊天。** 讯息会遗失，隐私也会受损，所以请使用商家账号或号码。
+- **未经询问就把顾客加入群组或名单。** 这会惹恼人，也可能违反数据保护规定，所以请先询问并提供简便的退出方式。
+- **轻信付款截图。** 截图可以伪造，所以请在发货前确认款项已到您的账户。
+
+## 从哪里开始
+
+- **本周：** 设立带有营业时间、描述和地址的商家资料，并加入问候语和离开讯息。
+- **接下来：** 为您最常见的问题写五个快捷回复，并建立简单的商品目录。
+- **然后：** 加入标签、订单记录，以及清楚的付款和退货讯息。
+- **每个月：** 检视回复时间和常见的问题，并更新您的模板。
+
+聊天让小企业有一条直通顾客的线路。有了清楚的资料、迅速而礼貌的回复，以及对同意的尊重，它可以成为您最可靠的销售和服务方式之一。`,
+        faqs: [
+          {
+            question: "我应该用商家账号还是个人账号联系顾客？",
+            answer:
+              "请使用专用的商家号码或商家账号，让顾客的讯息与个人聊天分开。应用程序的商家版提供资料、商品目录、快捷回复和标签等工具，但功能会改变，所以请查看应用程序目前的帮助页面。",
+          },
+          {
+            question: "我的商家资料应该包含什么？",
+            answer:
+              "您的企业名称、简短的描述、地址或服务范围、营业时间、网站或社交页面，以及清楚的标志或照片。加入问候语和离开讯息，让顾客知道何时能期待回复。",
+          },
+          {
+            question: "我应该多快回复顾客？",
+            answer:
+              "在合理范围内尽快。如果完整的答案需要时间，请发一则简短的讯息说明何时回复。设定营业时间和离开讯息有助于顾客接受延迟。",
+          },
+          {
+            question: "我如何在聊天中安全地接受订单？",
+            answer:
+              "复述订单，包括商品、价格、运费和总额，并请对方确认。给出清楚的付款说明，并在发货前确认款项已到您的账户，而不是依赖截图。",
+          },
+          {
+            question: "我可以把顾客加入群组或群发名单吗？",
+            answer:
+              "请先征求许可。未经同意添加人会惹恼他们，也可能违反数据保护规定，而马来西亚的个人资料保护法令适用于商业使用的个人资料。请提供简便的退出方式，并限制发送促销的频率。",
+          },
+          {
+            question: "我应该如何处理聊天中的投诉？",
+            answer:
+              "冷静而迅速地回应，在适当时道歉，并说明您将做什么以及何时完成。把敏感的事转到私人聊天，避免在文字中争论，并保留聊天、照片和送达证明等证据。",
+          },
+          {
+            question: "我如何保护账号免受骗局？",
+            answer:
+              "开启两步验证，绝不分享验证码，小心已连结的设备和不明连结，并通过打电话向对方核实更改银行资料的紧急要求。提防被修改的付款截图。",
+          },
+          {
+            question: "我如何知道聊天销售是否有效？",
+            answer:
+              "追踪询问的数量、有多少变成订单、您的回复时间，以及顾客最常问的问题。利用您学到的来改进模板、商品目录和营业时间。",
+          },
+        ],
+      },
+      ms: {
+        title: "Melayan Pelanggan di WhatsApp: Jualan Sembang, Balasan Automatik dan Etika untuk PKS Malaysia",
+        excerpt:
+          "Bagi ramai pelanggan Malaysia, menghantar mesej WhatsApp ialah cara paling mudah untuk bertanya, menempah perkhidmatan atau membuat pesanan. Panduan ini membantu PKS menyediakan profil perniagaan yang jelas, menggunakan katalog dan balasan pantas, menerima pesanan dan pembayaran dalam sembang, menangani aduan dengan baik, menghormati persetujuan dan privasi, dan mengelak spam dan penipuan.",
+        body: `Ramai pelanggan Malaysia lebih suka menghantar mesej daripada membuat panggilan telefon atau mengisi borang. Bagi perniagaan kecil, aplikasi sembang boleh menjadi kedai, kaunter tempahan dan kaunter khidmat pelanggan sekali gus.
+
+Tetapi sembang juga ada risikonya. Mesej bertimbun, balasan terlepas, kehidupan peribadi dan perniagaan menjadi kabur, dan siaran yang cuai mengganggu orang atau melanggar peraturan. Beberapa tabiat mudah menjadikan sembang saluran yang boleh dipercayai dan bukannya punca tekanan.
+
+Ini maklumat umum, bukan nasihat undang-undang atau teknikal. Ciri aplikasi, had, dasar dan peraturan perlindungan data berubah dari semasa ke semasa, dan sebahagian butiran dalam panduan ini mungkin sudah lapuk. Semak laman bantuan aplikasi sendiri dan pihak berkuasa berkaitan untuk peraturan terkini.
+
+## 1. Tentukan bagaimana sembang sesuai dengan perniagaan anda
+
+### Ketahui mengapa pelanggan menggunakan sembang
+Sembang pantas, biasa dan tidak formal. Pelanggan menggunakannya untuk bertanya tentang stok, harga, penghantaran dan tempahan, dan menghantar gambar atau nota suara.
+
+### Pilih apa yang akan anda kendalikan dalam sembang
+Tentukan sama ada sembang hanya untuk pertanyaan, untuk pesanan dan tempahan, atau juga untuk sokongan selepas jualan. Beritahu pelanggan dengan jelas apa yang dijangkakan.
+
+### Padankan saluran dengan tugas
+Soalan pantas sesuai untuk sembang, tetapi sebut harga yang rumit, kontrak dan aduan rasmi mungkin memerlukan e-mel atau panggilan. Panduan kami tentang kontrak dan terma untuk perniagaan kecil menerangkan apa yang patut ditulis.
+
+### Rancang siapa yang menjawab
+Jika anda seorang sahaja yang menjawab, tentukan waktu tetap. Jika anda mempunyai pasukan, persetujui siapa yang membalas dan bagaimana tugas diserahkan.
+
+## 2. Gunakan akaun perniagaan dan sediakan profil yang jelas
+
+### Asingkan perniagaan daripada peribadi
+Nombor perniagaan khusus atau akaun perniagaan memisahkan mesej pelanggan daripada keluarga dan rakan, dan membolehkan anda menguruskannya dengan betul. Panduan kami tentang menjalankan perniagaan di rumah menerangkan mengapa pengasingan membantu.
+
+### Aplikasi perniagaan berbanding aplikasi biasa
+Ramai perniagaan kecil menggunakan versi perniagaan aplikasi, yang mempunyai alat seperti profil perniagaan, katalog produk, balasan pantas, mesej tiada dan label. Ciri dan had berubah, jadi semak laman bantuan semasa aplikasi untuk melihat apa yang tersedia kepada anda.
+
+### Lengkapkan profil anda
+Tambah nama perniagaan, penerangan ringkas, alamat atau kawasan perkhidmatan, waktu operasi, laman web atau halaman sosial, dan logo atau gambar yang jelas. Profil yang lengkap membina kepercayaan.
+
+### Tunjukkan waktu operasi dengan jujur
+Nyatakan bila anda membalas, dan tetapkan mesej tiada untuk waktu di luar itu. Pelanggan memaafkan kelewatan apabila mereka diberitahu untuk menjangkakannya.
+
+### Pautkan dari halaman anda yang lain
+Tambah pautan sembang atau kod QR anda pada laman web, halaman sosial, resit dan pembungkusan. Panduan kami tentang membolehkan perniagaan anda ditemui dalam talian menerangkan cara memautkan semuanya.
+
+## 3. Jimatkan masa dengan katalog, balasan pantas dan label
+
+### Bina katalog yang mudah
+Senaraikan produk atau perkhidmatan utama anda dengan gambar, penerangan ringkas dan harga jika sesuai. Pastikan ia terkini, kerana harga yang lapuk menyebabkan pertikaian.
+
+### Simpan balasan pantas
+Tulis templat ringkas dan mesra untuk soalan lazim, seperti waktu operasi, senarai harga, butiran penghantaran dan cara membayar. Masukkannya dengan pintasan, kemudian tambah satu baris peribadi. Jimatkan masa tanpa kedengaran seperti robot.
+
+### Gunakan label untuk mengatur sembang
+Label seperti pertanyaan baharu, menunggu bayaran, telah dibayar, dihantar dan susulan memudahkan anda melihat kedudukan setiap pelanggan.
+
+### Tetapkan ucapan dan mesej tiada
+Sambutan ringkas yang menerangkan bagaimana anda boleh membantu, dan mesej tiada yang memberikan waktu anda, menetapkan jangkaan sejak awal.
+
+### Semak templat anda
+Semaknya setiap beberapa bulan untuk harga, tawaran atau butiran hubungan yang lapuk.
+
+## 4. Balas dengan baik dan tetapkan nada yang betul
+
+### Balas dengan segera
+Balas dengan cepat, walaupun jawapan penuh mengambil masa lebih lama. Mesej ringkas seperti "Terima kasih, saya akan semak stok dan balas dalam sejam" membuat pelanggan menunggu dengan sabar.
+
+### Jelas dan sopan
+Gunakan bahasa mudah, sebut nama orang jika boleh, dan elakkan slanga yang mungkin mengelirukan. Gunakan bahasa yang pelanggan gunakan, sama ada Inggeris, Cina atau Melayu.
+
+### Pastikan mesej ringkas dan berstruktur
+Pecahkan butiran panjang kepada baris pendek atau perkara utama, dan sahkan fakta utama: item, harga, kuantiti, penghantaran dan tarikh.
+
+### Gunakan nota suara dan gambar dengan bijak
+Gambar boleh menjawab soalan lebih pantas daripada perenggan, tetapi nota suara boleh sukar diikuti. Tawarkan ringkasan bertulis untuk butiran penting.
+
+### Hormati masa pelanggan
+Elakkan menghantar mesej lewat malam atau pada hari rehat melainkan pelanggan yang memulakan perbualan. Panduan kami tentang mendelegasikan dan mengelak keletihan pemilik menerangkan mengapa sempadan penting.
+
+### Berhati-hati dengan akaun peribadi
+Jika pekerja menggunakan telefon sendiri, persetujui peraturan tentang menjaga butiran pelanggan dengan selamat dan menyerahkan sembang apabila mereka berhenti.
+
+## 5. Terima pesanan dan pembayaran dalam sembang
+
+### Sahkan pesanan secara bertulis
+Ulang pesanan dalam satu mesej dengan item, harga, yuran penghantaran, jumlah dan butiran penghantaran, dan minta pelanggan mengesahkan.
+
+### Beri arahan pembayaran yang jelas
+Kongsi kaedah pembayaran anda, seperti pindahan bank atau kod QR, dan minta bukti pembayaran. Panduan kami tentang menerima pembayaran digital di Malaysia menerangkan cara menyediakan pilihan yang mudah.
+
+### Semak pembayaran sebelum menghantar
+Sahkan wang telah sampai ke akaun anda, bukannya bergantung pada tangkap layar semata-mata. Tangkap layar boleh disunting.
+
+### Berhati-hati dengan bayaran semasa penghantaran
+Persetujui dengan jelas siapa yang mengutip wang dan apa yang berlaku jika pelanggan menolak bungkusan. Panduan kami tentang menjalankan penghantaran menerangkan cara mengendalikan penghantaran.
+
+### Simpan rekod pesanan yang mudah
+Catat setiap pesanan dengan tarikh, item, jumlah dan status dalam helaian atau aplikasi, supaya anda tidak kehilangan pesanan dalam sembang yang panjang. Panduan kami tentang asas simpan kira dan perakaunan menerangkan cara menyimpan rekod.
+
+### Terangkan pemulangan dan bayaran balik lebih awal
+Nyatakan dasar anda dalam katalog atau mesej yang disematkan. Panduan kami tentang aduan pelanggan, bayaran balik dan hak pengguna menerangkan asasnya.
+
+## 6. Tangani aduan dan sembang yang sukar
+
+### Balas dengan tenang dan cepat
+Berterima kasih kepada pelanggan kerana memberitahu anda, minta maaf jika sesuai, dan nyatakan apa yang akan anda lakukan dan bila.
+
+### Alihkan perkara sensitif ke sembang peribadi
+Jika aduan muncul dalam kumpulan atau komen awam, balas dengan ringkas dan jemput pelanggan menyambung secara peribadi.
+
+### Jangan bertengkar secara bertulis
+Walaupun anda betul, balasan yang marah boleh ditangkap layar dan dikongsi. Kekal berfakta dan sopan. Panduan kami tentang menangani pelanggan sukar dan ulasan dalam talian menerangkan cara membalas dengan baik.
+
+### Simpan bukti
+Simpan sembang, gambar dan bukti penghantaran sekiranya berlaku pertikaian.
+
+### Ketahui bila hendak membawa ke peringkat lebih tinggi
+Untuk isu serius seperti keselamatan, jumlah besar atau ancaman undang-undang, berhenti sebentar dan dapatkan nasihat sebelum anda membalas.
+
+## 7. Hormati persetujuan, privasi dan peraturan
+
+### Minta kebenaran sebelum menambah orang ke kumpulan atau senarai
+Menambah pelanggan ke kumpulan atau siaran tanpa kebenaran mengganggu mereka dan mungkin melanggar peraturan perlindungan data. Akta Perlindungan Data Peribadi Malaysia terpakai kepada data peribadi dalam kegunaan komersial, jadi semak peraturan semasa. Panduan kami tentang pematuhan PDPA menerangkan asasnya.
+
+### Beri cara mudah untuk menarik diri
+Jika anda menghantar promosi, sertakan cara mudah untuk berhenti menerimanya, dan hormati permintaan itu dengan cepat.
+
+### Hadkan apa yang anda hantar
+Beberapa kemas kini berguna dialu-alukan, tetapi promosi harian menjauhkan orang. Campurkan maklumat berguna dengan tawaran.
+
+### Jangan kongsi butiran pelanggan
+Jangan siarkan tangkap layar yang menunjukkan nama, nombor atau alamat pelanggan lain.
+
+### Patuhi peraturan platform
+Aplikasi menghadkan spam dan mesej pukal, dan mungkin menyekat akaun yang melanggar peraturan mereka. Baca terma semasa sebelum anda menghantar mesej pukal.
+
+> Layan sembang seperti kaunter kedai: cepat, jelas, dan jangan lupa bahawa ada orang sebenar di sebelah sana.
+
+## 8. Elakkan penipuan, lindungi akaun anda dan semak
+
+### Berwaspada dengan bukti bayaran dan permintaan palsu
+Berhati-hati dengan tangkap layar yang disunting, permintaan segera untuk menukar butiran bank dan pautan yang tidak dikenali. Sahkan dengan panggilan atau dengan menyemak akaun anda.
+
+### Lindungi akaun anda
+Hidupkan pengesahan dua langkah, jangan kongsi kod pengesahan, dan berhati-hati dengan peranti yang dipautkan. Panduan kami tentang keselamatan siber untuk perniagaan kecil menerangkan langkah praktikal.
+
+### Sandarkan sembang penting
+Simpan pesanan dan perjanjian penting dalam rekod anda, sekiranya anda kehilangan telefon atau akaun.
+
+### Semak prestasi sembang anda
+Catat berapa banyak pertanyaan menjadi pesanan, seberapa pantas anda membalas, dan soalan lazim yang boleh anda jawab pada halaman anda. Panduan kami tentang menjejak prestasi perniagaan menerangkan cara mengikuti angka yang mudah.
+
+### Perbaiki semasa anda belajar
+Kemas kini templat, katalog dan waktu operasi apabila anda belajar apa yang pelanggan tanya. Panduan kami tentang memahami pelanggan anda menerangkan cara mengumpul maklum balas.
+
+Jika anda mahu bantuan pereka, pembantu media sosial atau penasihat untuk menyediakan kehadiran sembang anda, anda boleh [menyemak imbas direktori](/ms) untuk profesional berhampiran anda, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan dapat menemui perniagaan anda dan menghubungi anda dengan mudah.
+
+## Kesilapan lazim PKS Malaysia dalam sembang
+
+- **Mencampurkan sembang peribadi dan perniagaan.** Mesej hilang dan privasi terjejas, jadi gunakan akaun atau nombor perniagaan.
+- **Menambah pelanggan ke kumpulan atau senarai tanpa bertanya.** Ia mengganggu orang dan mungkin melanggar peraturan perlindungan data, jadi tanya dahulu dan tawarkan cara mudah untuk menarik diri.
+- **Mempercayai tangkap layar pembayaran.** Tangkap layar boleh dipalsukan, jadi sahkan wang telah sampai ke akaun anda sebelum menghantar.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Sediakan profil perniagaan dengan waktu, penerangan dan alamat anda, dan tambah ucapan dan mesej tiada.
+- **Seterusnya:** Tulis lima balasan pantas untuk soalan paling lazim, dan bina katalog yang mudah.
+- **Kemudian:** Tambah label, log pesanan, dan mesej pembayaran dan pemulangan yang jelas.
+- **Setiap bulan:** Semak masa balasan dan soalan lazim, dan kemas kini templat anda.
+
+Sembang memberi perniagaan kecil talian terus kepada pelanggan. Dengan profil yang jelas, balasan pantas dan sopan, dan penghormatan terhadap persetujuan, ia boleh menjadi salah satu cara paling boleh dipercayai untuk menjual dan berkhidmat.`,
+        faqs: [
+          {
+            question: "Patutkah saya menggunakan akaun perniagaan atau akaun peribadi untuk pelanggan?",
+            answer:
+              "Gunakan nombor atau akaun perniagaan khusus supaya mesej pelanggan kekal berasingan daripada sembang peribadi. Versi perniagaan aplikasi menawarkan alat seperti profil, katalog, balasan pantas dan label, tetapi ciri berubah, jadi semak laman bantuan semasa aplikasi.",
+          },
+          {
+            question: "Apakah yang patut ada dalam profil perniagaan saya?",
+            answer:
+              "Nama perniagaan anda, penerangan ringkas, alamat atau kawasan perkhidmatan, waktu operasi, laman web atau halaman sosial, dan logo atau gambar yang jelas. Tambah ucapan dan mesej tiada supaya pelanggan tahu bila hendak menjangkakan balasan.",
+          },
+          {
+            question: "Seberapa cepat saya patut membalas pelanggan?",
+            answer:
+              "Secepat yang munasabah. Jika jawapan penuh mengambil masa, hantar mesej ringkas menyatakan bila anda akan membalas. Menetapkan waktu operasi dan mesej tiada membantu pelanggan menerima kelewatan.",
+          },
+          {
+            question: "Bagaimanakah saya menerima pesanan dengan selamat dalam sembang?",
+            answer:
+              "Ulang pesanan dengan item, harga, yuran penghantaran dan jumlah, dan minta pengesahan. Beri arahan pembayaran yang jelas, dan sahkan wang telah sampai ke akaun anda sebelum menghantar dan bukannya bergantung pada tangkap layar.",
+          },
+          {
+            question: "Bolehkah saya menambah pelanggan ke kumpulan atau senarai siaran?",
+            answer:
+              "Minta kebenaran dahulu. Menambah orang tanpa persetujuan mengganggu mereka dan mungkin melanggar peraturan perlindungan data, dan Akta Perlindungan Data Peribadi Malaysia terpakai kepada data peribadi yang digunakan secara komersial. Tawarkan cara mudah untuk menarik diri dan hadkan kekerapan promosi.",
+          },
+          {
+            question: "Bagaimanakah saya patut menangani aduan dalam sembang?",
+            answer:
+              "Balas dengan tenang dan cepat, minta maaf jika sesuai, dan nyatakan apa yang akan anda lakukan dan bila. Alihkan perkara sensitif ke sembang peribadi, elakkan bertengkar secara bertulis, dan simpan bukti seperti sembang, gambar dan bukti penghantaran.",
+          },
+          {
+            question: "Bagaimanakah saya melindungi akaun saya daripada penipuan?",
+            answer:
+              "Hidupkan pengesahan dua langkah, jangan sekali-kali kongsi kod pengesahan, berhati-hati dengan peranti yang dipautkan dan pautan tidak dikenali, dan sahkan permintaan segera untuk menukar butiran bank dengan menelefon orang itu. Awasi tangkap layar pembayaran yang disunting.",
+          },
+          {
+            question: "Bagaimanakah saya tahu sama ada jualan sembang berjaya?",
+            answer:
+              "Jejak bilangan pertanyaan, berapa banyak menjadi pesanan, masa balasan anda, dan soalan yang paling kerap ditanya pelanggan. Gunakan apa yang anda pelajari untuk memperbaiki templat, katalog dan waktu operasi anda.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "running-deliveries-for-malaysian-smes",
+    title: "Running Deliveries: Couriers, Own Vehicles, and Last-Mile Logistics for Malaysian SMEs",
+    seoTitle: "Running Deliveries: Couriers and Logistics for SMEs",
+    seoDescription:
+      "How Malaysian SMEs can run deliveries well: compare couriers, pack for transit, set delivery fees, track parcels and handle lost or damaged orders.",
+    coverImage: {
+      file: "running-deliveries-cover.webp",
+      mimeType: "image/webp",
+      alt: "A courier in a yellow rain suit and helmet riding a silver scooter with a blue delivery box on the back, with the street blurred by motion",
+      altTranslations: {
+        zh: "一位身穿黄色雨衣、戴头盔的送货员骑着银色踏板摩托车，后面载着蓝色送货箱，街道因移动而模糊",
+        ms: "Seorang kurier berpakaian hujan kuning dan bertopi keledar menunggang skuter perak dengan kotak penghantaran biru di belakang, dengan jalan kabur kerana gerakan",
+      },
+    },
+    contentImages: {
+      packing: {
+        file: "running-deliveries-packing.webp",
+        mimeType: "image/webp",
+        alt: "Two women leaning over a table packing cardboard boxes beside an open laptop, with a rack of colourful clothes behind them",
+        altTranslations: {
+          zh: "两位女士俯身在桌旁打包纸箱，旁边放着一台打开的笔记本电脑，身后是挂着色彩缤纷衣服的衣架",
+          ms: "Dua wanita membongkok di atas meja membungkus kotak kadbod bersebelahan komputer riba terbuka, dengan rak pakaian berwarna-warni di belakang mereka",
+        },
+        after: "Work out the true cost of delivery before you promise free shipping.",
+        afterTranslations: {
+          zh: "在承诺免运费之前，先算出送货的真实成本。",
+          ms: "Kira kos sebenar penghantaran sebelum anda menjanjikan penghantaran percuma.",
+        },
+      },
+    },
+    excerpt:
+      "Delivery can win customers or lose them: late parcels, damaged goods, and surprise fees quickly turn into bad reviews. This guide helps Malaysian SMEs choose between couriers and their own riders, compare rates, pack for transit, set sensible delivery fees, track and prove delivery, and handle lost or damaged parcels fairly.",
+    body: `For many small businesses, the sale is only half the job. A cake that arrives crushed, a parcel that goes missing, or a rider who cannot find the address can undo a good sale and trigger a bad review.
+
+Delivery also costs money and time. Unless you plan it, shipping can quietly eat your margin. A little structure helps you choose the right method, price it fairly, and keep customers informed.
+
+This is general information, not legal or financial advice. Courier rates, services, claim terms, and licensing or insurance rules change over time and differ between providers, so some details in this guide may be out of date. Always check each provider's current terms and the relevant authority.
+
+## 1. Choose the right delivery method
+
+### Know your options
+Common choices are courier companies, same-day or e-hailing delivery services, delivery platforms or aggregators that compare several couriers, customer self-pickup, and your own riders or vehicles.
+
+### Match the method to the product
+Dry goods and clothes suit standard couriers. Food, flowers, and fragile or high-value items may need same-day delivery, special packaging, or your own control.
+
+### Match the method to the distance
+Nearby customers may suit local riders or your own deliveries. Customers across the country or abroad suit couriers with a wide network. Our guide on importing and exporting for Malaysian SMEs explains cross-border shipping.
+
+### Consider volume and consistency
+A few parcels a week suit pay-as-you-go. Higher volumes may justify negotiating rates or a regular pickup.
+
+### Offer self-pickup too
+Pickup saves delivery cost and can bring customers into your shop, where they may buy more.
+
+## 2. Compare couriers and rates
+
+### Compare more than price
+Look at coverage, delivery speed, pickup options, tracking quality, handling of fragile items, customer service, and how claims are processed. The cheapest rate is not always the cheapest outcome.
+
+### Use a comparison platform
+Some platforms let you compare several couriers and book through one account, which can be convenient for small sellers. Check fees and terms for yourself.
+
+### Understand weight and size charges
+Rates often depend on actual or volumetric weight, so a large light box can cost more than a small heavy one. Measure and weigh before you quote customers.
+
+### Ask about extras
+Check charges for remote areas, fuel or peak-season surcharges, returns, cash-on-delivery handling, and insurance.
+
+### Test before you commit
+Send a few parcels with each candidate and note delays, damage, and communication. Our guide on managing supplier relationships explains how to negotiate and review service partners.
+
+### Review regularly
+Rates and service levels change, so compare again every few months.
+
+## 3. Pack for the journey
+
+### Use the right box
+Choose a strong box that fits the product with little empty space, and avoid reusing worn boxes that have lost strength.
+
+### Protect fragile items
+Wrap items individually, fill gaps with padding, and keep goods away from the walls of the box. Insufficient packing is a leading cause of damage.
+
+### Seal and label clearly
+Use strong tape on all seams, and attach the waybill firmly in a clear pouch. A label that peels off can lead to a "lost" parcel. Check names, phone numbers, and addresses before sending.
+
+### Mark and photograph
+Take photos of the packed parcel before sending, as evidence if a claim is needed. Mark fragile items clearly, but do not rely on markings alone.
+
+### Handle food and perishables with care
+Food needs hygienic, leak-proof, and temperature-appropriate packaging and quick delivery. Our guide on starting a food business explains hygiene rules to keep in mind.
+
+### Keep packaging reasonable
+Right-sized boxes reduce material and shipping cost. Our guide on cutting costs the smart way explains how to cut waste.
+
+## 4. Price delivery and set a shipping policy
+
+### Know your true cost
+Work out the true cost of delivery before you promise free shipping. Include courier fees, packaging, labels, your time, failed deliveries, and returns. Then decide how much to charge, absorb, or build into your product price.
+
+### Choose a simple fee structure
+Options include a flat fee, fees by region or weight, free delivery above a minimum spend, or free delivery for members. Simple rules are easy for customers to understand.
+
+### Set a free-shipping threshold with care
+A threshold can lift average order size, but make sure that the extra margin covers the shipping you give away. Our guide on pricing products and services explains how to protect your margin.
+
+### Be clear about timing
+State your processing time, courier delivery time, and cut-off for same-day dispatch. Customers accept a stated timeline more readily than a vague one.
+
+### Explain your policy upfront
+Put delivery fees, timings, areas covered, and what happens when a delivery fails on your page, checkout, or chat. Our guide on serving customers on WhatsApp explains how to share these clearly.
+
+### Review your numbers
+Track your shipping cost as a share of sales, and adjust fees when courier rates change. Our guide on tracking business performance explains how.
+
+## 5. Use your own riders or vehicles carefully
+
+### Count the full cost
+Include wages or rider fees, fuel, maintenance, parking, insurance, and time lost in traffic. Own delivery can be worth it for dense, nearby orders, but is costly for scattered ones.
+
+### Check licences and insurance
+Vehicles used for business may need proper licences and suitable insurance, and rules differ by vehicle type and use. Check current requirements with the relevant authority and your insurer. Our guide on business insurance for Malaysian SMEs explains the basics.
+
+### Decide how riders are engaged
+Whether a rider is an employee, a freelancer, or a platform partner affects your duties on pay, contributions, and safety. Our guide on part-time staff and interns and our guide on freelancers and gig workers explain the differences.
+
+### Plan routes and batches
+Group deliveries by area and time window. Simple route planning saves fuel and time.
+
+### Look after safety
+Riders face traffic and weather risks. Provide helmets, safe loading rules, and realistic time promises. Our guide on workplace safety explains how to think about risk.
+
+### Handle cash carefully
+If riders collect cash, set clear procedures for counting, handing over, and recording it.
+
+## 6. Track and prove delivery
+
+### Give customers tracking
+Share the tracking number or a rider's contact as soon as you ship, and tell customers what to expect.
+
+### Update proactively
+If a delay occurs, message the customer before they ask. A short honest note builds trust.
+
+### Keep proof of delivery
+Save delivery confirmations, signatures, or photos. They protect you in disputes about whether a parcel arrived.
+
+### Confirm addresses and contact details
+Check the address, unit number, and phone number at order time. Wrong details cause many failed deliveries.
+
+### Plan for failed deliveries
+Decide who pays for redelivery and how long you hold returned parcels. State this in your policy.
+
+### Be careful with cash on delivery
+Cash-on-delivery orders can lead to refused parcels and return costs. Consider asking for a deposit or prepayment for high-value or repeat-risk orders, and check each courier's current terms for this service.
+
+## 7. Handle lost, delayed, and damaged parcels
+
+### Check tracking first
+Many "lost" parcels turn out to be a missed scan or an unattached label. Check tracking and contact the courier before assuming the worst.
+
+### Keep the damaged item and packaging
+Do not throw away the item or the box. Couriers may need to inspect them, and photos help your claim.
+
+### Know who claims
+Compensation is usually governed by the courier's terms and conditions, and the sender who booked the shipment generally files the claim, with documents such as proof of payment and delivery receipt. Check each courier's current terms and time limits.
+
+### Consider insurance
+Some couriers and platforms offer optional cover for higher-value parcels, with conditions and exclusions, such as limits on fragile items or poor packing. Read what is covered before you rely on it.
+
+### Look after the customer first
+Apologise, and send a replacement or refund promptly if the fault is clear, then pursue the courier claim. Customers care about being made whole, not about who is to blame. Our guide on customer complaints, refunds, and consumer rights explains your duties.
+
+> Customers forgive a late parcel more easily than silence, so tell them early and fix it quickly.
+
+### Know where disputes may go
+Unresolved disputes between consumers and businesses may be taken to the Tribunal for Consumer Claims, and some courier disputes have gone that way. Check the current rules, and settle fairly with customers where you can.
+
+## 8. Keep improving your delivery
+
+### Track simple numbers
+Record on-time rate, damaged or lost parcels, failed deliveries, shipping cost per order, and delivery complaints.
+
+### Look for patterns
+If one courier, area, or product causes most problems, change the courier, the packaging, or the policy.
+
+### Ask customers
+A short follow-up question after delivery can reveal problems you would not see. Our guide on understanding your customers explains simple feedback methods.
+
+### Prepare for peaks
+Festive seasons and sale days bring delays and extra volume. Order packaging early, warn customers of longer times, and set order cut-offs. Our guide on planning for festive peaks and slow seasons explains how.
+
+### Keep a backup
+Have a second courier or rider ready in case one fails. Our guide on business continuity planning explains how to prepare.
+
+If you need a packaging supplier, a courier partner, or a rider service near you, you can [browse the directory](/en) for local businesses, and [create a free business listing](/en/signup) so that customers can find your business and order from you.
+
+## Common mistakes Malaysian SMEs make with deliveries
+
+- **Promising free shipping without counting the cost.** Delivery can quietly erase your margin, so work out the true cost before you set fees.
+- **Under-packing fragile goods.** Weak boxes and too little padding cause most damage, so pack for the journey and photograph the parcel.
+- **Going silent when something goes wrong.** Customers accept delays when they are told early, so update them and make things right quickly.
+
+## Where to start
+
+- **This week:** List your delivery options, and compare two or three couriers on price, coverage, and claim terms.
+- **Next:** Work out the true shipping cost per order, and set a simple fee or free-shipping rule.
+- **Then:** Improve your packing and labelling, and write a short delivery and returns policy.
+- **Every month:** Review delays, damage, and complaints, and adjust your couriers or packaging.
+
+Good delivery is mostly good habits: careful packing, honest timelines, clear communication, and quick fixes. Get those right, and delivery becomes a reason customers come back.`,
+    faqs: [
+      {
+        question: "Should I use a courier or my own riders?",
+        answer:
+          "Couriers suit scattered or distant customers and low volumes. Your own riders can suit dense, nearby orders and fragile or time-sensitive goods, but you must count wages or fees, fuel, insurance, licences, and time. Compare the full cost of each.",
+      },
+      {
+        question: "How do I compare couriers properly?",
+        answer:
+          "Compare price along with coverage, speed, tracking, handling of fragile goods, customer service, and claim processes. Check weight and size charges and extra fees, test a few parcels, and review again every few months.",
+      },
+      {
+        question: "How should I pack fragile items?",
+        answer:
+          "Use a strong box that fits, wrap items individually, fill gaps with padding, keep goods away from the box walls, seal all seams with strong tape, and attach the label firmly. Photograph the packed parcel before sending.",
+      },
+      {
+        question: "Should I offer free shipping?",
+        answer:
+          "Only after working out the true cost, including courier fees, packaging, your time, and failed deliveries or returns. A free-shipping threshold can lift order sizes, but make sure that the extra margin covers the shipping you give away.",
+      },
+      {
+        question: "What if a parcel is lost or damaged?",
+        answer:
+          "Check tracking first, keep the item and packaging, and gather proof such as photos and receipts. The sender usually files the claim under the courier's terms. Look after the customer first with a replacement or refund, then pursue the claim.",
+      },
+      {
+        question: "Is cash on delivery a good idea?",
+        answer:
+          "It can lead to refused parcels and return costs. Consider deposits or prepayment for high-value or risky orders, and check each courier's current terms and handling for this service.",
+      },
+      {
+        question: "Do I need special licences or insurance for delivery vehicles?",
+        answer:
+          "Vehicles used for business may need proper licences and suitable insurance, and rules differ by vehicle type and use. Check current requirements with the relevant authority and your insurer, and decide whether riders are employees, freelancers, or platform partners.",
+      },
+      {
+        question: "How can I reduce delivery complaints?",
+        answer:
+          "Confirm addresses and phone numbers, pack well, share tracking, update customers early about delays, keep proof of delivery, and explain fees and timelines upfront. Track problems and change couriers or packaging when patterns appear.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "经营配送：马来西亚中小企业的快递公司、自家车辆与最后一公里物流",
+        excerpt:
+          "配送可以赢得顾客，也可能失去顾客：迟到的包裹、损坏的货品和意外的费用，很快就会变成差评。本指南帮助马来西亚中小企业在快递公司和自家骑手之间做选择，比较费率，为运输做好包装，订立合理的运费，追踪并证明送达，并公平地处理遗失或损坏的包裹。",
+        body: `对许多小企业来说，成交只是工作的一半。一个被压坏的蛋糕、一个失踪的包裹，或一位找不到地址的骑手，都可能毁掉一笔好生意并引来差评。
+
+配送也要花钱和时间。如果不规划，运费会悄悄吞噬您的利润。一点结构能帮助您选择合适的方法、公平地定价，并让顾客随时了解情况。
+
+本文仅提供一般信息，并非法律或财务建议。快递费率、服务、索赔条款，以及执照或保险规定会随时间变化，各提供者之间也不同，所以本指南的部分细节可能已经过时。请务必查看每个提供者目前的条款和相关主管单位。
+
+## 1. 选择合适的配送方式
+
+### 了解您的选项
+常见的选择有快递公司、当天送达或叫车式的配送服务、比较多家快递的配送平台或聚合平台、顾客自取，以及您自己的骑手或车辆。
+
+### 让方式配合产品
+干货和衣服适合标准的快递。食品、鲜花，以及易碎或高价值的物品，可能需要当天送达、特殊包装或由您自己掌控。
+
+### 让方式配合距离
+附近的顾客可能适合本地骑手或您自己送货。全国各地或海外的顾客适合网络广泛的快递公司。我们关于马来西亚中小企业进出口的指南说明了跨境运送。
+
+### 考虑数量和稳定性
+每星期几个包裹适合按次付费。较大的数量可能值得谈判费率或安排定期上门取件。
+
+### 也提供自取
+自取节省送货成本，并能把顾客带进您的店里，他们可能会买得更多。
+
+## 2. 比较快递公司和费率
+
+### 比较的不只是价格
+查看覆盖范围、送达速度、取件选项、追踪品质、对易碎品的处理、客户服务，以及索赔如何处理。最便宜的费率不一定是成本最低的结果。
+
+### 使用比较平台
+一些平台让您比较多家快递并通过一个账户下单，对小卖家来说可能很方便。请自己查看费用和条款。
+
+### 了解重量和尺寸的收费
+费率往往取决于实际重量或体积重量，所以一个大而轻的箱子可能比小而重的更贵。在向顾客报价之前先量和称。
+
+### 询问额外费用
+查看偏远地区、燃油或旺季附加费、退货、货到付款手续费和保险的收费。
+
+### 承诺之前先测试
+向每个候选者寄几个包裹，并记下延误、损坏和沟通情况。我们关于管理供应商关系的指南说明了如何谈判和检视服务伙伴。
+
+### 定期检视
+费率和服务水平会变化，所以每隔几个月再比较一次。
+
+## 3. 为旅程做好包装
+
+### 使用合适的箱子
+选择牢固且贴合产品、空隙很少的箱子，并避免重复使用已经失去强度的旧箱子。
+
+### 保护易碎品
+把物品逐个包好，用填充物填满空隙，并让货品远离箱壁。包装不足是造成损坏的主要原因。
+
+### 清楚地封箱和贴标签
+所有接缝使用强力胶带，并把运单牢固地贴在透明袋中。会脱落的标签可能导致“遗失”的包裹。在寄出前检查姓名、电话和地址。
+
+### 标记并拍照
+在寄出前为包好的包裹拍照，以便需要索赔时作为证据。清楚标明易碎品，但不要只依赖标记。
+
+### 小心处理食品和易腐品
+食品需要卫生、防漏、温度合适的包装和快速送达。我们关于开办食品生意的指南说明了要注意的卫生规定。
+
+### 保持合理的包装
+大小合适的箱子减少材料和运费。我们关于聪明地削减成本的指南说明了如何减少浪费。
+
+## 4. 为配送定价并订立运送政策
+
+### 了解您的真实成本
+在承诺免运费之前，先算出送货的真实成本。包括快递费、包装、标签、您的时间、送货失败和退货。然后决定要收取、吸收，或把多少计入产品价格。
+
+### 选择简单的收费结构
+选项包括固定费用、按地区或重量收费、满额免运费，或会员免运费。简单的规则容易让顾客理解。
+
+### 谨慎设定免运费门槛
+门槛可以提高平均订单金额，但要确保额外的利润足以抵销您免掉的运费。我们关于产品与服务定价的指南说明了如何保护您的利润。
+
+### 对时间要清楚
+说明您的处理时间、快递送达时间，以及当天发货的截止时间。顾客比较容易接受明确的时间表，而不是含糊的。
+
+### 事先说明您的政策
+把运费、时间、涵盖地区，以及送货失败时会怎样，写在您的页面、结账页或聊天中。我们关于在WhatsApp上服务顾客的指南说明了如何清楚分享这些。
+
+### 检视您的数字
+追踪运费占销售额的比例，并在快递费率变化时调整收费。我们关于追踪企业绩效的指南说明了如何做。
+
+## 5. 谨慎使用自家骑手或车辆
+
+### 计算完整的成本
+包括工资或骑手费用、燃油、保养、停车、保险，以及在交通中浪费的时间。自己配送对密集、附近的订单可能值得，但对分散的订单成本很高。
+
+### 查核执照和保险
+用于业务的车辆可能需要适当的执照和合适的保险，规定因车辆类型和用途而异。请向相关主管单位和您的保险公司确认现行要求。我们关于马来西亚中小企业商业保险的指南说明了基础知识。
+
+### 决定如何聘用骑手
+骑手是员工、自由职业者还是平台伙伴，会影响您在薪酬、缴款和安全方面的责任。我们关于兼职员工与实习生的指南和关于自由职业者与零工工作者的指南说明了区别。
+
+### 规划路线和批次
+按地区和时间段把送货分组。简单的路线规划节省燃油和时间。
+
+### 照顾安全
+骑手面对交通和天气的风险。请提供头盔、安全的装载规则和切合实际的时间承诺。我们关于工作场所安全的指南说明了如何思考风险。
+
+### 小心处理现金
+如果骑手收取现金，请订立清楚的点算、交接和记录程序。
+
+## 6. 追踪并证明送达
+
+### 给顾客提供追踪
+一发货就分享追踪号码或骑手的联络方式，并告诉顾客该期待什么。
+
+### 主动更新
+如果发生延误，请在顾客询问之前先发讯息。一则简短而诚实的说明能建立信任。
+
+### 保留送达证明
+保存送达确认、签收或照片。它们在关于包裹是否送达的纠纷中保护您。
+
+### 确认地址和联络资料
+在下单时检查地址、单位号码和电话号码。错误的资料导致许多送货失败。
+
+### 为送货失败做好计划
+决定谁支付重新配送的费用，以及您保留退回的包裹多久。请在您的政策中说明。
+
+### 小心货到付款
+货到付款的订单可能导致包裹被拒收和退回的费用。对于高价值或有风险的订单，请考虑要求订金或预付款，并查看每家快递公司目前对这项服务的条款。
+
+## 7. 处理遗失、延误和损坏的包裹
+
+### 先查看追踪
+许多“遗失”的包裹其实是漏扫或标签没贴好。在往最坏处想之前，先查看追踪并联络快递公司。
+
+### 保留损坏的物品和包装
+不要丢掉物品或箱子。快递公司可能需要检查它们，照片也有助于您的索赔。
+
+### 知道谁来索赔
+赔偿通常由快递公司的条款和条件规定，预订运送的寄件人一般负责提出索赔，并附上付款证明和送货收据等文件。请查看每家快递公司目前的条款和时限。
+
+### 考虑保险
+一些快递公司和平台为较高价值的包裹提供选择性的保障，附有条件和排除项，例如对易碎品或包装不佳的限制。在依赖它之前，请阅读涵盖什么。
+
+### 先照顾顾客
+道歉，并在过失明确时迅速寄出替换品或退款，然后再向快递公司索赔。顾客在意的是得到补偿，而不是谁该负责。我们关于顾客投诉、退款与消费者权益的指南说明了您的责任。
+
+> 顾客比较容易原谅迟到的包裹，而不是沉默，所以请及早告诉他们并迅速解决。
+
+### 知道纠纷可能去哪里
+消费者与企业之间未解决的纠纷可以提交给消费者索赔审裁处，一些快递纠纷也曾走这条路。请查看现行规定，并在可能时与顾客公平地解决。
+
+## 8. 持续改进您的配送
+
+### 追踪简单的数字
+记录准时率、损坏或遗失的包裹、送货失败、每张订单的运费，以及配送投诉。
+
+### 寻找规律
+如果某家快递、某个地区或某项产品造成大部分问题，请更换快递、包装或政策。
+
+### 询问顾客
+送达后一个简短的跟进问题，可以揭示您看不到的问题。我们关于了解您的顾客的指南说明了简单的反馈方法。
+
+### 为高峰做准备
+节庆季和促销日会带来延误和额外的数量。请及早订购包装，提醒顾客需要更长的时间，并设定订单截止时间。我们关于规划节庆旺季与淡季的指南说明了如何做。
+
+### 准备备用方案
+准备第二家快递或骑手，以防其中一个出问题。我们关于营运持续计划的指南说明了如何准备。
+
+如果您需要包装供应商、快递伙伴或您附近的骑手服务，可以[浏览目录](/zh)寻找本地企业，并[创建免费商家列表](/zh/signup)，让顾客能找到您的企业并向您下单。
+
+## 马来西亚中小企业在配送方面的常见错误
+
+- **没算成本就承诺免运费。** 配送可能悄悄抹掉您的利润，所以请在订立收费之前算出真实成本。
+- **易碎品包装不足。** 脆弱的箱子和太少的填充物造成大部分损坏，所以请为旅程做好包装并为包裹拍照。
+- **出问题时保持沉默。** 当顾客及早被告知时，他们会接受延误，所以请更新他们并迅速弥补。
+
+## 从哪里开始
+
+- **本周：** 列出您的配送选项，并就价格、覆盖范围和索赔条款比较两三家快递公司。
+- **接下来：** 算出每张订单的真实运费，并订立简单的收费或免运费规则。
+- **然后：** 改进您的包装和标签，并撰写简短的配送与退货政策。
+- **每个月：** 检视延误、损坏和投诉，并调整您的快递或包装。
+
+好的配送主要是好的习惯：仔细包装、诚实的时间表、清楚的沟通和迅速的补救。把这些做好，配送就会成为顾客回头的理由。`,
+        faqs: [
+          {
+            question: "我应该用快递公司还是自己的骑手？",
+            answer:
+              "快递公司适合分散或遥远的顾客和较少的数量。您自己的骑手可能适合密集、附近的订单以及易碎或讲求时效的货品，但您必须计算工资或费用、燃油、保险、执照和时间。请比较每种的完整成本。",
+          },
+          {
+            question: "我如何妥善比较快递公司？",
+            answer:
+              "比较价格，同时比较覆盖范围、速度、追踪、对易碎品的处理、客户服务和索赔流程。查看重量和尺寸的收费以及额外费用，测试几个包裹，并每隔几个月再检视。",
+          },
+          {
+            question: "我应该如何包装易碎品？",
+            answer:
+              "使用牢固且合适的箱子，把物品逐个包好，用填充物填满空隙，让货品远离箱壁，用强力胶带封好所有接缝，并牢固地贴上标签。在寄出前为包好的包裹拍照。",
+          },
+          {
+            question: "我应该提供免运费吗？",
+            answer:
+              "只有在算出真实成本之后，包括快递费、包装、您的时间，以及送货失败或退货。免运费门槛可以提高订单金额，但要确保额外的利润足以抵销您免掉的运费。",
+          },
+          {
+            question: "如果包裹遗失或损坏怎么办？",
+            answer:
+              "先查看追踪，保留物品和包装，并收集照片和收据等证明。寄件人通常根据快递公司的条款提出索赔。先以替换品或退款照顾顾客，然后再追索赔偿。",
+          },
+          {
+            question: "货到付款是个好主意吗？",
+            answer:
+              "它可能导致包裹被拒收和退回的费用。对于高价值或有风险的订单，请考虑订金或预付款，并查看每家快递公司目前对这项服务的条款和处理方式。",
+          },
+          {
+            question: "配送车辆需要特别的执照或保险吗？",
+            answer:
+              "用于业务的车辆可能需要适当的执照和合适的保险，规定因车辆类型和用途而异。请向相关主管单位和您的保险公司确认现行要求，并决定骑手是员工、自由职业者还是平台伙伴。",
+          },
+          {
+            question: "我如何减少配送投诉？",
+            answer:
+              "确认地址和电话号码，妥善包装，分享追踪，及早向顾客更新延误，保留送达证明，并事先说明费用和时间表。追踪问题，并在出现规律时更换快递或包装。",
+          },
+        ],
+      },
+      ms: {
+        title: "Menjalankan Penghantaran: Kurier, Kenderaan Sendiri dan Logistik Batu Terakhir untuk PKS Malaysia",
+        excerpt:
+          "Penghantaran boleh memenangi pelanggan atau kehilangan mereka: bungkusan lewat, barangan rosak dan yuran mengejut cepat menjadi ulasan buruk. Panduan ini membantu PKS Malaysia memilih antara kurier dan penunggang sendiri, membandingkan kadar, membungkus untuk perjalanan, menetapkan yuran penghantaran yang munasabah, menjejak dan membuktikan penghantaran, dan mengendalikan bungkusan hilang atau rosak dengan adil.",
+        body: `Bagi ramai perniagaan kecil, jualan hanyalah separuh daripada kerja. Kek yang tiba hancur, bungkusan yang hilang, atau penunggang yang tidak menjumpai alamat boleh membatalkan jualan yang baik dan mencetuskan ulasan buruk.
+
+Penghantaran juga memerlukan wang dan masa. Melainkan anda merancangnya, kos penghantaran boleh memakan margin anda dengan senyap. Sedikit struktur membantu anda memilih kaedah yang betul, menetapkan harga dengan adil, dan memaklumkan pelanggan.
+
+Ini maklumat umum, bukan nasihat undang-undang atau kewangan. Kadar kurier, perkhidmatan, terma tuntutan, dan peraturan pelesenan atau insurans berubah dari semasa ke semasa dan berbeza antara pembekal, jadi sebahagian butiran dalam panduan ini mungkin sudah lapuk. Sentiasa semak terma semasa setiap pembekal dan pihak berkuasa berkaitan.
+
+## 1. Pilih kaedah penghantaran yang betul
+
+### Ketahui pilihan anda
+Pilihan biasa ialah syarikat kurier, perkhidmatan penghantaran hari yang sama atau e-panggilan, platform penghantaran atau pengagregat yang membandingkan beberapa kurier, pengambilan sendiri oleh pelanggan, dan penunggang atau kenderaan anda sendiri.
+
+### Padankan kaedah dengan produk
+Barangan kering dan pakaian sesuai dengan kurier standard. Makanan, bunga, dan barangan mudah pecah atau bernilai tinggi mungkin memerlukan penghantaran hari yang sama, pembungkusan khas atau kawalan anda sendiri.
+
+### Padankan kaedah dengan jarak
+Pelanggan berdekatan mungkin sesuai dengan penunggang tempatan atau penghantaran anda sendiri. Pelanggan di seluruh negara atau luar negara sesuai dengan kurier berangkaian luas. Panduan kami tentang import dan eksport untuk PKS Malaysia menerangkan penghantaran rentas sempadan.
+
+### Pertimbangkan jumlah dan konsistensi
+Beberapa bungkusan seminggu sesuai dengan bayar mengikut guna. Jumlah lebih tinggi mungkin wajar untuk merundingkan kadar atau pengambilan tetap.
+
+### Tawarkan juga pengambilan sendiri
+Pengambilan sendiri menjimatkan kos penghantaran dan boleh membawa pelanggan ke kedai anda, di mana mereka mungkin membeli lebih banyak.
+
+## 2. Bandingkan kurier dan kadar
+
+### Bandingkan lebih daripada harga
+Lihat liputan, kelajuan penghantaran, pilihan pengambilan, kualiti penjejakan, pengendalian barangan mudah pecah, khidmat pelanggan dan bagaimana tuntutan diproses. Kadar termurah tidak selalunya hasil termurah.
+
+### Gunakan platform perbandingan
+Sesetengah platform membolehkan anda membandingkan beberapa kurier dan membuat tempahan melalui satu akaun, yang boleh memudahkan penjual kecil. Semak yuran dan terma sendiri.
+
+### Fahami caj berat dan saiz
+Kadar selalunya bergantung pada berat sebenar atau berat isi padu, jadi kotak besar yang ringan boleh lebih mahal daripada yang kecil dan berat. Ukur dan timbang sebelum anda memberi sebut harga kepada pelanggan.
+
+### Tanya tentang tambahan
+Semak caj untuk kawasan terpencil, surcaj bahan api atau musim puncak, pemulangan, pengendalian bayaran semasa penghantaran dan insurans.
+
+### Uji sebelum membuat komitmen
+Hantar beberapa bungkusan dengan setiap calon dan catat kelewatan, kerosakan dan komunikasi. Panduan kami tentang menguruskan hubungan pembekal menerangkan cara berunding dan menyemak rakan perkhidmatan.
+
+### Semak dengan kerap
+Kadar dan tahap perkhidmatan berubah, jadi bandingkan semula setiap beberapa bulan.
+
+## 3. Bungkus untuk perjalanan
+
+### Gunakan kotak yang betul
+Pilih kotak yang kukuh yang muat dengan produk dengan sedikit ruang kosong, dan elakkan menggunakan semula kotak lusuh yang telah hilang kekuatan.
+
+### Lindungi barangan mudah pecah
+Bungkus item secara individu, isi ruang kosong dengan pelapik, dan jauhkan barangan daripada dinding kotak. Pembungkusan yang tidak mencukupi ialah punca utama kerosakan.
+
+### Tutup dan labelkan dengan jelas
+Gunakan pita pelekat yang kuat pada semua kelim, dan lekatkan bil muatan dengan kukuh dalam pouch yang jelas. Label yang tertanggal boleh menyebabkan bungkusan "hilang". Semak nama, nombor telefon dan alamat sebelum menghantar.
+
+### Tanda dan ambil gambar
+Ambil gambar bungkusan yang telah dibungkus sebelum menghantar, sebagai bukti jika tuntutan diperlukan. Tandakan barangan mudah pecah dengan jelas, tetapi jangan bergantung pada tanda semata-mata.
+
+### Kendalikan makanan dan barang mudah rosak dengan berhati-hati
+Makanan memerlukan pembungkusan yang bersih, kalis bocor dan sesuai suhu serta penghantaran yang pantas. Panduan kami tentang memulakan perniagaan makanan menerangkan peraturan kebersihan yang perlu diingat.
+
+### Pastikan pembungkusan munasabah
+Kotak bersaiz sesuai mengurangkan bahan dan kos penghantaran. Panduan kami tentang memotong kos dengan bijak menerangkan cara mengurangkan pembaziran.
+
+## 4. Tetapkan harga penghantaran dan dasar penghantaran
+
+### Ketahui kos sebenar anda
+Kira kos sebenar penghantaran sebelum anda menjanjikan penghantaran percuma. Sertakan yuran kurier, pembungkusan, label, masa anda, penghantaran yang gagal dan pemulangan. Kemudian tentukan berapa hendak dicaj, ditanggung atau dimasukkan dalam harga produk.
+
+### Pilih struktur yuran yang mudah
+Pilihan termasuk yuran tetap, yuran mengikut kawasan atau berat, penghantaran percuma melebihi perbelanjaan minimum, atau penghantaran percuma untuk ahli. Peraturan mudah senang difahami pelanggan.
+
+### Tetapkan ambang penghantaran percuma dengan berhati-hati
+Ambang boleh menaikkan saiz pesanan purata, tetapi pastikan margin tambahan menampung penghantaran yang anda berikan percuma. Panduan kami tentang penetapan harga produk dan perkhidmatan menerangkan cara melindungi margin anda.
+
+### Jelas tentang masa
+Nyatakan masa pemprosesan anda, masa penghantaran kurier dan had masa untuk penghantaran hari yang sama. Pelanggan lebih mudah menerima garis masa yang dinyatakan berbanding yang kabur.
+
+### Terangkan dasar anda lebih awal
+Letakkan yuran penghantaran, masa, kawasan yang dilindungi dan apa yang berlaku apabila penghantaran gagal pada halaman, daftar keluar atau sembang anda. Panduan kami tentang melayan pelanggan di WhatsApp menerangkan cara berkongsi ini dengan jelas.
+
+### Semak angka anda
+Jejak kos penghantaran sebagai bahagian jualan, dan laraskan yuran apabila kadar kurier berubah. Panduan kami tentang menjejak prestasi perniagaan menerangkan caranya.
+
+## 5. Gunakan penunggang atau kenderaan sendiri dengan berhati-hati
+
+### Kira kos penuh
+Sertakan gaji atau yuran penunggang, bahan api, penyelenggaraan, tempat letak kereta, insurans dan masa yang hilang dalam trafik. Penghantaran sendiri boleh berbaloi untuk pesanan padat dan berdekatan, tetapi mahal untuk yang bertaburan.
+
+### Semak lesen dan insurans
+Kenderaan yang digunakan untuk perniagaan mungkin memerlukan lesen yang betul dan insurans yang sesuai, dan peraturan berbeza mengikut jenis dan kegunaan kenderaan. Semak keperluan semasa dengan pihak berkuasa berkaitan dan penanggung insurans anda. Panduan kami tentang insurans perniagaan untuk PKS Malaysia menerangkan asasnya.
+
+### Tentukan bagaimana penunggang diambil
+Sama ada penunggang ialah pekerja, pekerja bebas atau rakan platform mempengaruhi tugas anda tentang gaji, caruman dan keselamatan. Panduan kami tentang pekerja separuh masa dan pelatih dan panduan kami tentang pekerja bebas dan pekerja gig menerangkan perbezaannya.
+
+### Rancang laluan dan kelompok
+Kumpulkan penghantaran mengikut kawasan dan tempoh masa. Perancangan laluan yang mudah menjimatkan bahan api dan masa.
+
+### Jaga keselamatan
+Penunggang menghadapi risiko trafik dan cuaca. Sediakan topi keledar, peraturan memuat yang selamat dan janji masa yang realistik. Panduan kami tentang keselamatan tempat kerja menerangkan cara memikirkan risiko.
+
+### Kendalikan tunai dengan berhati-hati
+Jika penunggang mengutip tunai, tetapkan prosedur yang jelas untuk mengira, menyerahkan dan merekodkannya.
+
+## 6. Jejak dan buktikan penghantaran
+
+### Beri pelanggan penjejakan
+Kongsi nombor penjejakan atau hubungan penunggang sebaik sahaja anda menghantar, dan beritahu pelanggan apa yang dijangkakan.
+
+### Kemas kini secara proaktif
+Jika kelewatan berlaku, hantar mesej kepada pelanggan sebelum mereka bertanya. Nota ringkas yang jujur membina kepercayaan.
+
+### Simpan bukti penghantaran
+Simpan pengesahan penghantaran, tandatangan atau gambar. Ia melindungi anda dalam pertikaian tentang sama ada bungkusan tiba.
+
+### Sahkan alamat dan butiran hubungan
+Semak alamat, nombor unit dan nombor telefon semasa pesanan. Butiran yang salah menyebabkan banyak penghantaran gagal.
+
+### Rancang untuk penghantaran yang gagal
+Tentukan siapa yang membayar untuk penghantaran semula dan berapa lama anda menyimpan bungkusan yang dipulangkan. Nyatakan ini dalam dasar anda.
+
+### Berhati-hati dengan bayaran semasa penghantaran
+Pesanan bayaran semasa penghantaran boleh membawa kepada bungkusan ditolak dan kos pemulangan. Pertimbangkan meminta deposit atau bayaran awal untuk pesanan bernilai tinggi atau berisiko, dan semak terma semasa setiap kurier untuk perkhidmatan ini.
+
+## 7. Kendalikan bungkusan hilang, lewat dan rosak
+
+### Semak penjejakan dahulu
+Banyak bungkusan "hilang" ternyata imbasan yang terlepas atau label yang tidak dilekatkan. Semak penjejakan dan hubungi kurier sebelum menganggap yang terburuk.
+
+### Simpan item yang rosak dan pembungkusan
+Jangan buang item atau kotak. Kurier mungkin perlu memeriksanya, dan gambar membantu tuntutan anda.
+
+### Ketahui siapa yang menuntut
+Pampasan biasanya dikawal oleh terma dan syarat kurier, dan penghantar yang menempah penghantaran pada amnya memfailkan tuntutan, dengan dokumen seperti bukti pembayaran dan resit penghantaran. Semak terma dan had masa semasa setiap kurier.
+
+### Pertimbangkan insurans
+Sesetengah kurier dan platform menawarkan perlindungan pilihan untuk bungkusan bernilai lebih tinggi, dengan syarat dan pengecualian, seperti had untuk barangan mudah pecah atau pembungkusan yang lemah. Baca apa yang dilindungi sebelum anda bergantung padanya.
+
+### Jaga pelanggan dahulu
+Minta maaf, dan hantar penggantian atau bayaran balik dengan segera jika kesalahan jelas, kemudian teruskan tuntutan kurier. Pelanggan mengambil berat tentang dipulihkan, bukan tentang siapa yang bersalah. Panduan kami tentang aduan pelanggan, bayaran balik dan hak pengguna menerangkan tugas anda.
+
+> Pelanggan lebih mudah memaafkan bungkusan yang lewat berbanding kesenyapan, jadi beritahu mereka lebih awal dan baiki dengan cepat.
+
+### Ketahui ke mana pertikaian mungkin pergi
+Pertikaian yang tidak diselesaikan antara pengguna dan perniagaan boleh dibawa ke Tribunal Tuntutan Pengguna, dan sesetengah pertikaian kurier telah menempuh jalan itu. Semak peraturan semasa, dan selesaikan dengan adil bersama pelanggan jika boleh.
+
+## 8. Teruskan memperbaiki penghantaran anda
+
+### Jejak angka yang mudah
+Rekod kadar tepat masa, bungkusan rosak atau hilang, penghantaran gagal, kos penghantaran setiap pesanan dan aduan penghantaran.
+
+### Cari corak
+Jika satu kurier, kawasan atau produk menyebabkan kebanyakan masalah, tukar kurier, pembungkusan atau dasar.
+
+### Tanya pelanggan
+Soalan susulan ringkas selepas penghantaran boleh mendedahkan masalah yang anda tidak nampak. Panduan kami tentang memahami pelanggan anda menerangkan kaedah maklum balas yang mudah.
+
+### Bersedia untuk puncak
+Musim perayaan dan hari jualan membawa kelewatan dan jumlah tambahan. Tempah pembungkusan lebih awal, beri amaran kepada pelanggan tentang masa yang lebih lama, dan tetapkan had masa pesanan. Panduan kami tentang merancang puncak perayaan dan musim perlahan menerangkan caranya.
+
+### Simpan sandaran
+Sediakan kurier atau penunggang kedua sekiranya satu gagal. Panduan kami tentang perancangan kesinambungan perniagaan menerangkan cara bersedia.
+
+Jika anda memerlukan pembekal pembungkusan, rakan kurier atau perkhidmatan penunggang berhampiran anda, anda boleh [menyemak imbas direktori](/ms) untuk perniagaan tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan dapat menemui perniagaan anda dan membuat pesanan daripada anda.
+
+## Kesilapan lazim PKS Malaysia dengan penghantaran
+
+- **Menjanjikan penghantaran percuma tanpa mengira kos.** Penghantaran boleh memadamkan margin anda dengan senyap, jadi kira kos sebenar sebelum menetapkan yuran.
+- **Pembungkusan tidak mencukupi untuk barangan mudah pecah.** Kotak lemah dan terlalu sedikit pelapik menyebabkan kebanyakan kerosakan, jadi bungkus untuk perjalanan dan ambil gambar bungkusan.
+- **Berdiam diri apabila sesuatu tidak kena.** Pelanggan menerima kelewatan apabila diberitahu lebih awal, jadi kemas kini mereka dan baiki dengan cepat.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Senaraikan pilihan penghantaran anda, dan bandingkan dua atau tiga kurier dari segi harga, liputan dan terma tuntutan.
+- **Seterusnya:** Kira kos penghantaran sebenar setiap pesanan, dan tetapkan yuran atau peraturan penghantaran percuma yang mudah.
+- **Kemudian:** Perbaiki pembungkusan dan pelabelan anda, dan tulis dasar penghantaran dan pemulangan yang ringkas.
+- **Setiap bulan:** Semak kelewatan, kerosakan dan aduan, dan laraskan kurier atau pembungkusan anda.
+
+Penghantaran yang baik kebanyakannya ialah tabiat yang baik: pembungkusan yang teliti, garis masa yang jujur, komunikasi yang jelas dan pembetulan yang pantas. Dapatkan semua itu betul, dan penghantaran menjadi sebab pelanggan kembali.`,
+        faqs: [
+          {
+            question: "Patutkah saya menggunakan kurier atau penunggang sendiri?",
+            answer:
+              "Kurier sesuai untuk pelanggan yang bertaburan atau jauh dan jumlah yang rendah. Penunggang sendiri mungkin sesuai untuk pesanan padat dan berdekatan serta barangan mudah pecah atau sensitif masa, tetapi anda mesti mengira gaji atau yuran, bahan api, insurans, lesen dan masa. Bandingkan kos penuh setiap satu.",
+          },
+          {
+            question: "Bagaimanakah saya membandingkan kurier dengan betul?",
+            answer:
+              "Bandingkan harga bersama liputan, kelajuan, penjejakan, pengendalian barangan mudah pecah, khidmat pelanggan dan proses tuntutan. Semak caj berat dan saiz serta yuran tambahan, uji beberapa bungkusan, dan semak semula setiap beberapa bulan.",
+          },
+          {
+            question: "Bagaimanakah saya patut membungkus barangan mudah pecah?",
+            answer:
+              "Gunakan kotak kukuh yang muat, bungkus item secara individu, isi ruang kosong dengan pelapik, jauhkan barangan daripada dinding kotak, tutup semua kelim dengan pita pelekat yang kuat, dan lekatkan label dengan kukuh. Ambil gambar bungkusan yang telah dibungkus sebelum menghantar.",
+          },
+          {
+            question: "Patutkah saya menawarkan penghantaran percuma?",
+            answer:
+              "Hanya selepas mengira kos sebenar, termasuk yuran kurier, pembungkusan, masa anda, dan penghantaran gagal atau pemulangan. Ambang penghantaran percuma boleh menaikkan saiz pesanan, tetapi pastikan margin tambahan menampung penghantaran yang anda berikan percuma.",
+          },
+          {
+            question: "Bagaimana jika bungkusan hilang atau rosak?",
+            answer:
+              "Semak penjejakan dahulu, simpan item dan pembungkusan, dan kumpulkan bukti seperti gambar dan resit. Penghantar biasanya memfailkan tuntutan di bawah terma kurier. Jaga pelanggan dahulu dengan penggantian atau bayaran balik, kemudian teruskan tuntutan.",
+          },
+          {
+            question: "Adakah bayaran semasa penghantaran idea yang baik?",
+            answer:
+              "Ia boleh membawa kepada bungkusan ditolak dan kos pemulangan. Pertimbangkan deposit atau bayaran awal untuk pesanan bernilai tinggi atau berisiko, dan semak terma dan pengendalian semasa setiap kurier untuk perkhidmatan ini.",
+          },
+          {
+            question: "Adakah saya memerlukan lesen atau insurans khas untuk kenderaan penghantaran?",
+            answer:
+              "Kenderaan yang digunakan untuk perniagaan mungkin memerlukan lesen yang betul dan insurans yang sesuai, dan peraturan berbeza mengikut jenis dan kegunaan kenderaan. Semak keperluan semasa dengan pihak berkuasa berkaitan dan penanggung insurans anda, dan tentukan sama ada penunggang ialah pekerja, pekerja bebas atau rakan platform.",
+          },
+          {
+            question: "Bagaimanakah saya boleh mengurangkan aduan penghantaran?",
+            answer:
+              "Sahkan alamat dan nombor telefon, bungkus dengan baik, kongsi penjejakan, kemas kini pelanggan lebih awal tentang kelewatan, simpan bukti penghantaran, dan terangkan yuran dan garis masa lebih awal. Jejak masalah dan tukar kurier atau pembungkusan apabila corak muncul.",
+          },
+        ],
+      },
+    },
+  },
 ];

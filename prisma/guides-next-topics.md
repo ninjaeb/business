@@ -15,18 +15,17 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Serving Customers on WhatsApp: Chat Sales, Auto-Replies and Etiquette for Malaysian SMEs**
-   — Why many Malaysian customers prefer chat, WhatsApp Business versus the
-   regular app (features to hedge), setting up a profile, catalogue and
-   quick replies, response times and opening hours, taking orders and
-   payments in chat, handling complaints privately, group and broadcast
-   rules and consent (PDPA, to hedge), avoiding spam and scams, and
-   keeping records.
+1. **Anti-Bribery and Business Ethics: What Corporate Liability Rules Mean for Malaysian SMEs**
+   — Why ethics matters for small firms, the corporate liability provision
+   in Malaysia's anti-corruption law and what it asks of companies (to
+   hedge, confirm with MACC), common risk situations (licences, tenders,
+   gifts, facilitation payments), simple policies and adequate procedures
+   for a small team, gifts and hospitality rules, dealing with suppliers
+   and agents, whistleblowing, record keeping, and training staff.
 
-2. **Running Deliveries: Couriers, Own Vehicles, and Last-Mile Logistics for Malaysian SMEs**
-   — Choosing between couriers, e-hailing delivery and your own riders or
-   vehicles, comparing rates and service levels, packaging for transit,
-   delivery pricing and free-shipping thresholds, tracking and proof of
-   delivery, handling lost or damaged parcels, vehicle licences and
-   insurance (to hedge), cash-on-delivery risks, and customer
-   communication.
+2. **Subscription and Membership Models: Building Recurring Revenue for Malaysian SMEs**
+   — Which businesses suit subscriptions or memberships, pricing and
+   tiers, trials and cancellation terms, fair billing and auto-renewal
+   consent (to hedge on consumer rules), collecting recurring payments,
+   reducing churn, onboarding members, measuring recurring revenue, and
+   when a subscription is the wrong fit.
