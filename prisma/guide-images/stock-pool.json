@@ -103,13 +103,13 @@
     {
       "id": 7643734,
       "tags": [
+        "ethics",
+        "signing",
         "contract",
-        "documents",
-        "legal",
-        "signing"
+        "asian"
       ],
-      "description": "Asian businessman in formal wear signing paperwork at a desk",
-      "usedBy": "contracts-and-terms-for-small-businesses-in-malaysia-cover.webp"
+      "description": "Asian businessman in glasses and a black blazer signing a document on a clipboard at a wooden desk",
+      "usedBy": "anti-bribery-and-business-ethics-signing.webp"
     },
     {
       "id": 7964411,
@@ -1317,6 +1317,39 @@
       ],
       "description": "Two women packing boxes at a table with a laptop beside a clothes rack in a boutique",
       "usedBy": "running-deliveries-packing.webp"
+    },
+    {
+      "id": 7643738,
+      "tags": [
+        "ethics",
+        "handshake",
+        "office",
+        "asian"
+      ],
+      "description": "Two Asian professionals in dark blazers shaking hands across a conference table beside tall blinded windows",
+      "usedBy": "anti-bribery-and-business-ethics-cover.webp"
+    },
+    {
+      "id": 3757941,
+      "tags": [
+        "membership",
+        "gym",
+        "reception",
+        "fitness"
+      ],
+      "description": "Woman in sportswear with a gym bag leaning on a fitness-centre reception desk beside a computer",
+      "usedBy": "subscription-and-membership-models-reception.webp"
+    },
+    {
+      "id": 6969689,
+      "tags": [
+        "subscription",
+        "unboxing",
+        "box",
+        "woman"
+      ],
+      "description": "Smiling woman with braids opening a plain cardboard box on a sofa",
+      "usedBy": "subscription-and-membership-models-cover.webp"
     }
   ]
 }
