@@ -38478,4 +38478,1335 @@ Penghantaran yang baik kebanyakannya ialah tabiat yang baik: pembungkusan yang t
       },
     },
   },
+  {
+    slug: "anti-bribery-and-business-ethics-for-malaysian-smes",
+    title: "Anti-Bribery and Business Ethics: What Corporate Liability Rules Mean for Malaysian SMEs",
+    seoTitle: "Anti-Bribery and Business Ethics for Malaysian SMEs",
+    seoDescription:
+      "What Malaysia's corporate liability rule on corruption means for SMEs: know the risk, write simple policies, handle gifts and agents, and train staff.",
+    coverImage: {
+      file: "anti-bribery-and-business-ethics-cover.webp",
+      mimeType: "image/webp",
+      alt: "A woman in a black blazer and a man in a dark jacket shaking hands across a conference table beside tall windows with blinds",
+      altTranslations: {
+        zh: "一位身穿黑色西装外套的女士和一位身穿深色外套的男士在会议桌旁握手，旁边是装有百叶窗的落地窗",
+        ms: "Seorang wanita berblazer hitam dan seorang lelaki berjaket gelap berjabat tangan di seberang meja persidangan bersebelahan tingkap tinggi berbidai",
+      },
+    },
+    contentImages: {
+      signing: {
+        file: "anti-bribery-and-business-ethics-signing.webp",
+        mimeType: "image/webp",
+        alt: "A man in glasses and a black blazer lifting the pages of a document on a clipboard while holding a pen at a wooden table in front of blinded windows",
+        altTranslations: {
+          zh: "一位戴眼镜、穿黑色西装外套的男士在百叶窗前的木桌旁，手握笔并翻看写字板上的文件",
+          ms: "Seorang lelaki berkaca mata dan berblazer hitam mengangkat halaman dokumen pada papan klip sambil memegang pen di meja kayu di hadapan tingkap berbidai",
+        },
+        after: "Start with a plain statement that your business does not give or take bribes.",
+        afterTranslations: {
+          zh: "先从一句平实的声明开始：您的企业不行贿，也不受贿。",
+          ms: "Mulakan dengan kenyataan mudah bahawa perniagaan anda tidak memberi atau menerima rasuah.",
+        },
+      },
+    },
+    excerpt:
+      "Many small business owners assume that anti-corruption rules are only for big companies, but Malaysia's corporate liability provision can apply to any commercial organisation. This guide helps SMEs understand the risk, write simple policies, handle gifts, hospitality, suppliers, and agents, create a safe way to raise concerns, keep records, and train their team.",
+    body: `Most small business owners would never dream of bribing an official. Yet pressure can creep in: a licence that is taking too long, a tender that seems to need a favour, a supplier who expects a gift, or an agent who promises to make things happen.
+
+Since June 2020, Malaysia's anti-corruption law has included a corporate liability provision that can put a commercial organisation at risk when someone acting for it gives a bribe. That can include a small company. The good news is that sensible, proportionate steps can lower the risk.
+
+This is general information, not legal advice. Anti-corruption law, official guidelines, and enforcement practice change over time, and some details here may be out of date. Confirm the current position with the Malaysian Anti-Corruption Commission (MACC) and a qualified lawyer, especially if you face a specific situation.
+
+## 1. Understand why ethics matters for a small business
+
+### Reputation is your main asset
+Customers, suppliers, and banks prefer to deal with businesses they trust. One corruption scandal can end a small firm's name overnight.
+
+### The law can reach small firms
+The corporate liability provision applies to commercial organisations, which is a broad term. Being small does not exempt you, and not knowing what an employee or agent did is not a safe position.
+
+### Bribes are risky, not clever
+A payment to speed things up can lead to demands for more, expose you to blackmail, and lead to serious consequences for the business and the individuals involved.
+
+### Ethics also saves money
+Clear rules reduce leakage, fraud, and disputes, and they make it easier to win customers who require ethical suppliers. Our guide on winning corporate customers explains why larger buyers care.
+
+## 2. Know what the corporate liability rule says
+
+### The basic idea
+Under Section 17A of the Malaysian Anti-Corruption Commission Act 2009, a commercial organisation may be liable if a person associated with it gives, promises, or offers gratification to obtain or keep business or an advantage for the organisation. Check the exact wording and current position with the MACC and a lawyer.
+
+### Who counts as an associated person
+This can include directors, employees, and people who perform services for the organisation, such as agents, contractors, and suppliers, depending on the circumstances.
+
+### What counts as gratification
+Gratification is wider than cash. It can include gifts, favours, jobs, discounts, hospitality, and other benefits. Do not assume that a small amount or a cultural custom is safe.
+
+### The defence of adequate procedures
+An organisation may have a defence if it can show that it had adequate procedures in place to prevent such conduct. The Government has issued guidelines on adequate procedures, built around five principles often remembered as TRUST: top-level commitment, risk assessment, undertaking control measures, systematic review, monitoring and enforcement, and training and communication.
+
+### Scale the response to your size
+Procedures should be proportionate. A five-person firm does not need a large compliance department, but it does need clear rules, records, and a leader who means it. Confirm what is expected of you in the current guidelines.
+
+### Individuals can also be exposed
+Managers and staff involved in corruption may face personal consequences. Penalties can be severe, so check the Act itself for the details.
+
+## 3. Show leadership and set a simple policy
+
+### Set the tone from the top
+Start with a plain statement that your business does not give or take bribes. Write it in one short paragraph, sign it as the owner, and share it with staff, suppliers, and agents. Leadership that is visible matters more than a long document.
+
+### Write a short policy
+Cover bribes and facilitation payments, gifts and hospitality, political or charitable donations, conflicts of interest, dealing with agents and suppliers, record keeping, and how to raise concerns. Plain language is better than legal jargon. Our guide on the employee handbook and HR policies explains how to set out rules.
+
+### Make it part of your contracts
+Add an anti-bribery clause to supplier, agent, and partner agreements, with a right to end the contract if it is breached. Our guide on contracts and terms for small businesses explains how to write clear terms.
+
+### Live by it
+If you break your own rules when it is convenient, nobody will follow them. Decisions made under pressure show whether the policy is real.
+
+## 4. Find where your risks are
+
+### Map your contacts with officials
+List when your business deals with government or public bodies, such as licences, permits, inspections, tenders, customs, and tax. Our guide on business licences and permits and our guide on selling to the government explain common touchpoints.
+
+### Map private-sector risks
+Bribery can also happen between businesses, for example a purchasing officer asking for a favour for an order. Look at your sales, buying, and hiring.
+
+### Rate the risks
+Ask which situations are most likely and most serious, such as using agents, working in high-pressure approvals, or handling large contracts. Focus effort there.
+
+### Watch for warning signs
+Be careful if a person asks for cash, an unusual commission, payment to a third party, vague "consulting" fees, or insists on avoiding records.
+
+### Review regularly
+Risks change when you enter new markets, take on agents, or bid for bigger contracts. Review at least once a year.
+
+## 5. Handle gifts, hospitality, and facilitation payments
+
+### Set clear limits
+Decide what gifts and hospitality are acceptable to give and receive, such as modest festive tokens, and what is not, such as cash, lavish trips, or anything offered while a decision is pending.
+
+### Think about timing and purpose
+A gift offered during a tender, licence application, or contract negotiation looks very different from a small thank-you after a job is done.
+
+### Record it
+Keep a simple log of gifts and hospitality above a small value, with date, giver, receiver, and reason. Our guide on bookkeeping and accounting basics explains how to keep records tidy.
+
+### No facilitation payments
+Do not make small payments to speed up routine official actions. If you are asked, politely decline, ask for an official receipt or procedure, and report it where appropriate.
+
+### Respect local custom without crossing the line
+Festive gifts are common, but keep them modest, open, and not tied to decisions. When in doubt, ask before you give.
+
+## 6. Deal with suppliers, agents, and partners carefully
+
+### Know who you deal with
+Check the background, reputation, and ownership of agents and partners before engaging them. Our guide on managing supplier relationships explains how to review suppliers.
+
+### Pay for real work
+Fees and commissions should match real services at a reasonable rate. Be wary of large payments with little explanation, or payments to accounts in another name or country.
+
+### Put the rules in writing
+Include anti-bribery terms in contracts, ask partners to follow your standards, and keep copies of agreements.
+
+### Keep records of what was done
+Ask agents for reports and invoices that describe the work. Records help you show that you acted properly.
+
+### Be careful with joint ventures
+Partners' conduct can reflect on you. Our guide on business partners and shareholder agreements explains how to set expectations.
+
+## 7. Create a safe way to raise concerns
+
+### Make it easy to speak up
+Tell staff who they can approach if they are pressured or see something wrong, such as the owner or a trusted senior person, and promise that good-faith reports will not be punished.
+
+### Take every report seriously
+Listen, note the facts, and look into them fairly. Do not retaliate against the person who raised it.
+
+### Know where to report
+Serious matters may need to be reported to the authorities. Seek advice from a lawyer and check the current reporting channels with the MACC.
+
+### Protect confidentiality
+Keep reports and personal details private as far as possible. Our guide on PDPA compliance explains how to handle personal data.
+
+### Act on the outcome
+If a breach is found, respond fairly and consistently, including discipline where appropriate. Our guide on terminating an employee in Malaysia explains how to do it properly.
+
+> A short policy that the owner actually follows is worth more than a long one that nobody reads.
+
+## 8. Train your team and keep records
+
+### Train in plain language
+Give new staff a short briefing and repeat it every year, using real examples from your industry, such as inspections, tenders, and festive gifts. Our guide on training your team with HRD Corp explains one way to fund training.
+
+### Role-play the hard moments
+Practise what to say when someone asks for a payment or a favour. A prepared sentence is easier to say under pressure.
+
+### Keep proof that you acted
+Save the policy, training attendance, risk notes, gift logs, and due diligence on agents. These records show that you took reasonable steps.
+
+### Review and improve
+Look at near misses and questions staff ask, and update your policy. Our guide on business continuity planning explains how to build review into routine.
+
+### Get help when needed
+For complex or high-value matters, such as large tenders or overseas dealings, speak to a lawyer or an adviser who knows the current rules.
+
+If you want to find a lawyer, an adviser, or a trainer to help with your policies, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so that customers who value ethical suppliers can find your business.
+
+## Common mistakes Malaysian SMEs make about corruption risk
+
+- **Assuming the rules are only for big companies.** The corporate liability provision applies to commercial organisations of all sizes, so take simple steps even if you are small.
+- **Treating "facilitation" payments as normal.** Small payments to speed things up can still be bribes, so decline them and ask for the official process.
+- **Using agents without checking or writing anything down.** You can be at risk for what others do for you, so check them, write the rules into contracts, and keep records.
+
+## Where to start
+
+- **This week:** Write a one-paragraph statement that your business does not give or take bribes, and share it with your team.
+- **Next:** List the situations where you deal with officials, agents, or large buyers, and mark the riskiest.
+- **Then:** Write a short policy on gifts, agents, records, and raising concerns, and add a clause to key contracts.
+- **Every year:** Train your team, review risks, and check the current MACC guidance with a lawyer if your business changes.
+
+Doing business the right way protects your reputation, your team, and your future. Simple, honest rules that you actually follow are the best defence.`,
+    faqs: [
+      {
+        question: "Does Malaysia's corporate liability rule apply to small businesses?",
+        answer:
+          "It applies to commercial organisations, which is a broad term, and being small does not exempt you. Check the exact wording and the current position with the MACC and a lawyer, and take proportionate steps to prevent corruption.",
+      },
+      {
+        question: "What are adequate procedures?",
+        answer:
+          "Adequate procedures are the steps an organisation takes to prevent corruption by people associated with it, and they can form a defence. Official guidelines describe five principles often remembered as TRUST: top-level commitment, risk assessment, control measures, systematic review, monitoring and enforcement, and training and communication.",
+      },
+      {
+        question: "Who counts as an associated person?",
+        answer:
+          "Depending on the circumstances, it can include directors, employees, and people who perform services for the organisation, such as agents, contractors, and suppliers. Not knowing what they did is not a safe position.",
+      },
+      {
+        question: "Are gifts and hospitality allowed?",
+        answer:
+          "Modest, open gifts and hospitality that are not tied to a decision are usually treated differently from cash, lavish trips, or anything offered during a tender, licence application, or negotiation. Set limits in a written policy, keep a simple log, and ask before you give when in doubt.",
+      },
+      {
+        question: "What should I do if an official asks for a small payment to speed things up?",
+        answer:
+          "Do not pay. Politely decline, ask for the official process or receipt, and report it where appropriate. Small facilitation payments can still be bribes.",
+      },
+      {
+        question: "How should I deal with agents and suppliers?",
+        answer:
+          "Check their background and reputation, pay only for real work at reasonable rates, put anti-bribery terms in the contract, and keep reports and invoices that describe what was done. Be wary of vague fees or payments to third parties.",
+      },
+      {
+        question: "How can staff raise concerns safely?",
+        answer:
+          "Tell staff who they can approach, promise that good-faith reports will not be punished, take every report seriously, and protect confidentiality. For serious matters, seek legal advice and check the current reporting channels with the MACC.",
+      },
+      {
+        question: "What records should I keep?",
+        answer:
+          "Keep your policy, training attendance, risk notes, gift and hospitality logs, and due diligence on agents and partners. These show that you took reasonable steps.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "反贿赂与商业道德：企业责任规定对马来西亚中小企业的意义",
+        excerpt:
+          "许多小企业主以为反贪污规定只针对大公司，但马来西亚的企业责任条文可能适用于任何商业机构。本指南帮助中小企业了解风险，订立简单的政策，处理礼品、款待、供应商和代理，建立安全的举报渠道，保留记录，并培训团队。",
+        body: `大多数小企业主从没想过要贿赂官员。然而压力可能悄悄出现：一张迟迟未批的执照、一个似乎需要人情的标案、一位期待礼物的供应商，或一位承诺能把事情办成的代理。
+
+自2020年6月起，马来西亚的反贪污法令包含一项企业责任条文，当代表某商业机构行事的人行贿时，该机构可能面临风险。这可以包括小公司。好消息是，合理且相称的措施可以降低风险。
+
+本文仅提供一般信息，并非法律建议。反贪污法律、官方指南和执法做法会随时间变化，此处的部分细节可能已经过时。请向马来西亚反贪污委员会（MACC）和合格的律师确认现行立场，尤其是当您面对具体的情况时。
+
+## 1. 了解为什么商业道德对小企业重要
+
+### 声誉是您的主要资产
+顾客、供应商和银行都愿意与他们信任的企业往来。一次贪污丑闻可能让小公司的名声一夜之间毁掉。
+
+### 法律可以触及小公司
+企业责任条文适用于商业机构，这是一个宽泛的用语。规模小并不能豁免，而不知道员工或代理做了什么也不是安全的立场。
+
+### 贿赂是冒险，不是聪明
+为了加快事情而付的款项，可能招来更多的索求，让您受到勒索，并给企业和相关个人带来严重的后果。
+
+### 道德也能省钱
+清楚的规则减少流失、欺诈和纠纷，也让您更容易赢得要求供应商讲道德的客户。我们关于赢得企业客户的指南说明了为什么较大的买家在意这点。
+
+## 2. 了解企业责任规定说了什么
+
+### 基本概念
+根据《2009年马来西亚反贪污委员会法令》第17A条，如果与某商业机构有关联的人为了替该机构取得或保住生意或好处而给予、承诺或提出酬谢，该机构可能须负责。请向MACC和律师确认确切的措辞和现行立场。
+
+### 谁算关联人
+视情况而定，这可以包括董事、员工，以及为该机构提供服务的人，例如代理、承包人和供应商。
+
+### 什么算酬谢
+酬谢的范围比现金更广。它可以包括礼品、人情、职位、折扣、款待和其他好处。不要以为少量金额或文化习俗就是安全的。
+
+### 适当程序的抗辩
+如果机构能证明已有适当的程序来防止这类行为，可能有抗辩的理由。政府已发出关于适当程序的指南，围绕五项原则展开，常被记为TRUST：高层承诺、风险评估、采取控制措施、系统化检视、监督和执行，以及培训和沟通。
+
+### 让回应与您的规模相称
+程序应该相称。一家五个人的公司不需要庞大的合规部门，但需要清楚的规则、记录，以及一位说到做到的领导者。请在现行指南中确认对您的期望。
+
+### 个人也可能受牵连
+涉及贪污的经理和员工可能面临个人的后果。惩罚可能很严厉，所以请查看法令本身了解细节。
+
+## 3. 展现领导力并订立简单的政策
+
+### 从上层定下基调
+先从一句平实的声明开始：您的企业不行贿，也不受贿。用一小段话写下来，以企业主的名义签署，并与员工、供应商和代理分享。看得见的领导力比冗长的文件更重要。
+
+### 撰写简短的政策
+涵盖贿赂和疏通费、礼品和款待、政治或慈善捐款、利益冲突、与代理和供应商的往来、记录保存，以及如何提出疑虑。平实的语言胜过法律术语。我们关于员工手册与人力资源政策的指南说明了如何订立规则。
+
+### 把它写进您的合约
+在供应商、代理和合作伙伴协议中加入反贿赂条款，并在违反时有权终止合约。我们关于小企业合约与条款的指南说明了如何写清楚条款。
+
+### 身体力行
+如果您在方便时违反自己的规则，没有人会遵守。在压力下做出的决定显示政策是否真实。
+
+## 4. 找出您的风险在哪里
+
+### 绘出您与官员的接触点
+列出您的企业何时与政府或公共机构往来，例如执照、许可证、检查、标案、海关和税务。我们关于营业执照与许可证的指南和关于向政府销售的指南说明了常见的接触点。
+
+### 绘出私营领域的风险
+贿赂也可能发生在企业之间，例如采购人员为了一张订单而索取人情。请检视您的销售、采购和聘用。
+
+### 评估风险
+问问哪些情况最可能发生也最严重，例如使用代理、在高压的审批中工作，或处理大型合约。把力气集中在那里。
+
+### 留意警讯
+如果有人要求现金、不寻常的佣金、付款给第三方、含糊的“咨询”费用，或坚持避免留下记录，请格外小心。
+
+### 定期检视
+当您进入新的市场、聘用代理或竞投较大的合约时，风险会改变。请至少每年检视一次。
+
+## 5. 处理礼品、款待和疏通费
+
+### 订立清楚的限度
+决定哪些礼品和款待可以接受和赠送，例如适度的节庆心意，哪些不可以，例如现金、奢华的旅行，或在决定悬而未决时提供的任何东西。
+
+### 想想时机和目的
+在标案、执照申请或合约谈判期间提供的礼品，与工作完成后的小小感谢看起来非常不同。
+
+### 记录下来
+为超过小额价值的礼品和款待保存简单的记录，注明日期、赠送者、接受者和原因。我们关于簿记和会计基础的指南说明了如何保持记录整洁。
+
+### 不付疏通费
+不要为了加快例行的官方程序而支付小额款项。如果被要求，请礼貌地拒绝，索取官方的收据或程序，并在适当时举报。
+
+### 尊重本地习俗而不越界
+节庆礼品很常见，但请保持适度、公开，并且不与决定挂钩。如有疑问，送礼之前先询问。
+
+## 6. 谨慎处理供应商、代理和合作伙伴
+
+### 了解您往来的对象
+在聘用代理和合作伙伴之前，先查核其背景、声誉和所有权。我们关于管理供应商关系的指南说明了如何检视供应商。
+
+### 为真正的工作付费
+费用和佣金应该与真实的服务相称，并按合理的费率。对金额庞大却缺乏说明的付款，或付款到他人名下或他国的账户，要保持警惕。
+
+### 把规则写成书面
+在合约中加入反贿赂条款，要求合作伙伴遵守您的标准，并保留协议的副本。
+
+### 保留所做之事的记录
+向代理索取描述工作内容的报告和发票。记录帮助您证明自己行事得当。
+
+### 对合资企业要小心
+合作伙伴的行为可能影响到您。我们关于商业伙伴与股东协议的指南说明了如何订立期望。
+
+## 7. 建立安全的举报渠道
+
+### 让发声变得容易
+告诉员工在受到压力或看到不对劲的事时可以找谁，例如企业主或值得信赖的资深人士，并承诺善意的举报不会受到惩罚。
+
+### 认真对待每一项举报
+倾听、记下事实，并公平地调查。不要报复提出的人。
+
+### 知道向哪里举报
+严重的事情可能需要向主管当局举报。请向律师征求意见，并向MACC确认现行的举报渠道。
+
+### 保护机密
+尽可能保持举报和个人资料的私密。我们关于个人资料保护法令合规的指南说明了如何处理个人资料。
+
+### 根据结果采取行动
+如果发现违规，请公平而一致地回应，必要时包括纪律处分。我们关于在马来西亚终止雇佣员工的指南说明了如何妥善处理。
+
+> 一份企业主真正遵守的简短政策，胜过一份没人读的冗长政策。
+
+## 8. 培训团队并保留记录
+
+### 用平实的语言培训
+给新员工简短的说明，并每年重复，使用您行业中的真实例子，例如检查、标案和节庆礼品。我们关于通过人力资源发展局培训团队的指南说明了一种为培训出资的方式。
+
+### 演练艰难的时刻
+练习当有人要求付款或人情时该说什么。事先准备好的一句话，在压力下更容易说出口。
+
+### 保留您已采取行动的证明
+保存政策、培训出席记录、风险笔记、礼品记录，以及对代理的尽职调查。这些记录显示您已采取合理的步骤。
+
+### 检视并改进
+查看险些出事的情况和员工提出的问题，并更新您的政策。我们关于营运持续计划的指南说明了如何把检视纳入日常。
+
+### 需要时寻求协助
+对于复杂或高价值的事务，例如大型标案或海外往来，请与了解现行规定的律师或顾问交谈。
+
+如果您想找律师、顾问或培训师协助您的政策，可以[浏览目录](/zh)寻找您附近的专业人士，并[创建免费商家列表](/zh/signup)，让重视讲道德的供应商的顾客能找到您的企业。
+
+## 马来西亚中小企业在贪污风险方面的常见错误
+
+- **以为规定只针对大公司。** 企业责任条文适用于各种规模的商业机构，所以即使您很小，也请采取简单的措施。
+- **把“疏通费”当作正常。** 为了加快事情而付的小额款项仍然可能是贿赂，所以请拒绝并要求官方程序。
+- **使用代理却不查核、不写下任何东西。** 您可能要为他人替您做的事承担风险，所以请查核他们、把规则写进合约，并保留记录。
+
+## 从哪里开始
+
+- **本周：** 写下一段话，声明您的企业不行贿也不受贿，并与团队分享。
+- **接下来：** 列出您与官员、代理或大型买家往来的情况，并标出风险最高的。
+- **然后：** 就礼品、代理、记录和提出疑虑撰写简短的政策，并在关键合约中加入条款。
+- **每年：** 培训您的团队、检视风险，如果您的业务有变，请与律师一起查核MACC现行的指引。
+
+以正确的方式做生意，保护您的声誉、您的团队和您的未来。您真正遵守的简单而诚实的规则，是最好的防御。`,
+        faqs: [
+          {
+            question: "马来西亚的企业责任规定适用于小企业吗？",
+            answer:
+              "它适用于商业机构，这是一个宽泛的用语，规模小并不能豁免。请向MACC和律师确认确切的措辞和现行立场，并采取相称的措施来防止贪污。",
+          },
+          {
+            question: "什么是适当程序？",
+            answer:
+              "适当程序是机构为防止与其有关联的人贪污而采取的步骤，可以构成抗辩。官方指南描述了五项常被记为TRUST的原则：高层承诺、风险评估、控制措施、系统化检视、监督和执行，以及培训和沟通。",
+          },
+          {
+            question: "谁算关联人？",
+            answer:
+              "视情况而定，可以包括董事、员工，以及为该机构提供服务的人，例如代理、承包人和供应商。不知道他们做了什么并不是安全的立场。",
+          },
+          {
+            question: "允许礼品和款待吗？",
+            answer:
+              "适度、公开且与决定无关的礼品和款待，通常与现金、奢华旅行，或在标案、执照申请或谈判期间提供的任何东西被区别对待。请在书面政策中订立限度，保存简单的记录，有疑问时先询问再赠送。",
+          },
+          {
+            question: "如果官员要求付一笔小额款项来加快事情，我该怎么办？",
+            answer:
+              "不要付。礼貌地拒绝，索取官方程序或收据，并在适当时举报。小额的疏通费仍然可能是贿赂。",
+          },
+          {
+            question: "我应该如何与代理和供应商往来？",
+            answer:
+              "查核他们的背景和声誉，只为真正的工作按合理的费率付费，在合约中加入反贿赂条款，并保留描述所做之事的报告和发票。对含糊的费用或付款给第三方要保持警惕。",
+          },
+          {
+            question: "员工如何安全地提出疑虑？",
+            answer:
+              "告诉员工可以找谁，承诺善意的举报不会受到惩罚，认真对待每一项举报，并保护机密。对于严重的事情，请征求法律意见，并向MACC确认现行的举报渠道。",
+          },
+          {
+            question: "我应该保留哪些记录？",
+            answer:
+              "保留您的政策、培训出席记录、风险笔记、礼品和款待记录，以及对代理和合作伙伴的尽职调查。这些显示您已采取合理的步骤。",
+          },
+        ],
+      },
+      ms: {
+        title: "Anti-Rasuah dan Etika Perniagaan: Apa Maksud Peraturan Liabiliti Korporat untuk PKS Malaysia",
+        excerpt:
+          "Ramai pemilik perniagaan kecil menganggap peraturan anti-rasuah hanya untuk syarikat besar, tetapi peruntukan liabiliti korporat Malaysia boleh terpakai kepada mana-mana organisasi komersial. Panduan ini membantu PKS memahami risiko, menulis dasar yang mudah, mengendalikan hadiah, layanan, pembekal dan ejen, mewujudkan cara selamat untuk membangkitkan kebimbangan, menyimpan rekod, dan melatih pasukan mereka.",
+        body: `Kebanyakan pemilik perniagaan kecil tidak pernah terfikir untuk merasuah pegawai. Namun tekanan boleh menyelinap masuk: lesen yang mengambil masa terlalu lama, tender yang seolah-olah memerlukan budi, pembekal yang mengharapkan hadiah, atau ejen yang berjanji untuk menyelesaikan perkara.
+
+Sejak Jun 2020, undang-undang anti-rasuah Malaysia termasuk peruntukan liabiliti korporat yang boleh meletakkan organisasi komersial dalam risiko apabila seseorang yang bertindak bagi pihaknya memberi rasuah. Ini boleh termasuk syarikat kecil. Berita baiknya, langkah yang munasabah dan berpadanan boleh merendahkan risiko.
+
+Ini maklumat umum, bukan nasihat undang-undang. Undang-undang anti-rasuah, garis panduan rasmi dan amalan penguatkuasaan berubah dari semasa ke semasa, dan sebahagian butiran di sini mungkin sudah lapuk. Sahkan kedudukan semasa dengan Suruhanjaya Pencegahan Rasuah Malaysia (SPRM) dan peguam yang berkelayakan, terutamanya jika anda menghadapi situasi tertentu.
+
+## 1. Fahami mengapa etika penting untuk perniagaan kecil
+
+### Reputasi ialah aset utama anda
+Pelanggan, pembekal dan bank lebih suka berurusan dengan perniagaan yang mereka percayai. Satu skandal rasuah boleh menamatkan nama firma kecil dalam semalam.
+
+### Undang-undang boleh menjangkau firma kecil
+Peruntukan liabiliti korporat terpakai kepada organisasi komersial, iaitu istilah yang luas. Menjadi kecil tidak mengecualikan anda, dan tidak mengetahui apa yang dilakukan oleh pekerja atau ejen bukanlah pendirian yang selamat.
+
+### Rasuah berisiko, bukan bijak
+Bayaran untuk mempercepatkan sesuatu boleh membawa kepada tuntutan lebih banyak, mendedahkan anda kepada peras ugut, dan membawa akibat serius kepada perniagaan dan individu yang terlibat.
+
+### Etika juga menjimatkan wang
+Peraturan yang jelas mengurangkan kebocoran, penipuan dan pertikaian, dan ia memudahkan anda memenangi pelanggan yang menghendaki pembekal beretika. Panduan kami tentang memenangi pelanggan korporat menerangkan mengapa pembeli lebih besar mengambil berat.
+
+## 2. Ketahui apa yang dikatakan oleh peraturan liabiliti korporat
+
+### Idea asas
+Di bawah Seksyen 17A Akta Suruhanjaya Pencegahan Rasuah Malaysia 2009, sesebuah organisasi komersial mungkin bertanggungjawab jika seseorang yang bersekutu dengannya memberi, menjanjikan atau menawarkan suapan untuk mendapatkan atau mengekalkan perniagaan atau kelebihan bagi organisasi itu. Semak perkataan tepat dan kedudukan semasa dengan SPRM dan peguam.
+
+### Siapa yang dikira orang bersekutu
+Bergantung pada keadaan, ini boleh termasuk pengarah, pekerja, dan orang yang melaksanakan perkhidmatan untuk organisasi, seperti ejen, kontraktor dan pembekal.
+
+### Apa yang dikira suapan
+Suapan lebih luas daripada wang tunai. Ia boleh termasuk hadiah, budi, pekerjaan, diskaun, layanan dan faedah lain. Jangan anggap jumlah kecil atau adat budaya adalah selamat.
+
+### Pembelaan prosedur yang mencukupi
+Sesebuah organisasi mungkin mempunyai pembelaan jika ia dapat menunjukkan bahawa ia mempunyai prosedur yang mencukupi untuk mencegah perlakuan sedemikian. Kerajaan telah mengeluarkan garis panduan tentang prosedur yang mencukupi, dibina sekitar lima prinsip yang sering diingati sebagai TRUST: komitmen peringkat tertinggi, penilaian risiko, melaksanakan langkah kawalan, semakan sistematik, pemantauan dan penguatkuasaan, serta latihan dan komunikasi.
+
+### Sesuaikan tindak balas dengan saiz anda
+Prosedur patut berpadanan. Firma lima orang tidak memerlukan jabatan pematuhan yang besar, tetapi ia memerlukan peraturan yang jelas, rekod, dan pemimpin yang bersungguh-sungguh. Sahkan apa yang dijangkakan daripada anda dalam garis panduan semasa.
+
+### Individu juga boleh terdedah
+Pengurus dan kakitangan yang terlibat dalam rasuah mungkin menghadapi akibat peribadi. Hukuman boleh berat, jadi semak Akta itu sendiri untuk butirannya.
+
+## 3. Tunjukkan kepimpinan dan tetapkan dasar yang mudah
+
+### Tetapkan nada dari atas
+Mulakan dengan kenyataan mudah bahawa perniagaan anda tidak memberi atau menerima rasuah. Tulis dalam satu perenggan pendek, tandatangani sebagai pemilik, dan kongsikan dengan pekerja, pembekal dan ejen. Kepimpinan yang kelihatan lebih penting daripada dokumen yang panjang.
+
+### Tulis dasar yang ringkas
+Liputi rasuah dan bayaran pelincir, hadiah dan layanan, derma politik atau amal, konflik kepentingan, urusan dengan ejen dan pembekal, penyimpanan rekod, dan cara membangkitkan kebimbangan. Bahasa mudah lebih baik daripada jargon undang-undang. Panduan kami tentang buku panduan pekerja dan dasar HR menerangkan cara menyusun peraturan.
+
+### Jadikan sebahagian daripada kontrak anda
+Tambah klausa anti-rasuah pada perjanjian pembekal, ejen dan rakan kongsi, dengan hak untuk menamatkan kontrak jika ia dilanggar. Panduan kami tentang kontrak dan terma untuk perniagaan kecil menerangkan cara menulis terma yang jelas.
+
+### Hidup mengikutnya
+Jika anda melanggar peraturan sendiri apabila ia mudah, tiada siapa akan mengikutinya. Keputusan yang dibuat di bawah tekanan menunjukkan sama ada dasar itu benar.
+
+## 4. Cari di mana risiko anda
+
+### Petakan hubungan anda dengan pegawai
+Senaraikan bila perniagaan anda berurusan dengan kerajaan atau badan awam, seperti lesen, permit, pemeriksaan, tender, kastam dan cukai. Panduan kami tentang lesen dan permit perniagaan dan panduan kami tentang menjual kepada kerajaan menerangkan titik sentuh lazim.
+
+### Petakan risiko sektor swasta
+Rasuah juga boleh berlaku antara perniagaan, contohnya pegawai pembelian meminta budi untuk pesanan. Lihat jualan, pembelian dan pengambilan pekerja anda.
+
+### Nilai risiko
+Tanya situasi mana yang paling mungkin dan paling serius, seperti menggunakan ejen, bekerja dalam kelulusan bertekanan tinggi, atau mengendalikan kontrak besar. Tumpukan usaha di situ.
+
+### Perhatikan tanda amaran
+Berhati-hati jika seseorang meminta wang tunai, komisen luar biasa, bayaran kepada pihak ketiga, yuran "perundingan" yang kabur, atau berkeras mengelak rekod.
+
+### Semak dengan kerap
+Risiko berubah apabila anda memasuki pasaran baharu, mengambil ejen, atau membida kontrak lebih besar. Semak sekurang-kurangnya setahun sekali.
+
+## 5. Kendalikan hadiah, layanan dan bayaran pelincir
+
+### Tetapkan had yang jelas
+Tentukan hadiah dan layanan yang boleh diterima untuk diberi dan diterima, seperti buah tangan perayaan yang sederhana, dan yang tidak, seperti wang tunai, perjalanan mewah, atau apa-apa yang ditawarkan semasa keputusan belum dibuat.
+
+### Fikirkan tentang masa dan tujuan
+Hadiah yang ditawarkan semasa tender, permohonan lesen atau rundingan kontrak kelihatan sangat berbeza daripada ucapan terima kasih kecil selepas kerja selesai.
+
+### Rekodkannya
+Simpan log mudah hadiah dan layanan melebihi nilai kecil, dengan tarikh, pemberi, penerima dan sebab. Panduan kami tentang asas simpan kira dan perakaunan menerangkan cara menyimpan rekod dengan kemas.
+
+### Tiada bayaran pelincir
+Jangan membuat bayaran kecil untuk mempercepatkan tindakan rasmi yang rutin. Jika diminta, tolak dengan sopan, minta resit atau prosedur rasmi, dan laporkan di mana sesuai.
+
+### Hormati adat tempatan tanpa melampaui batas
+Hadiah perayaan adalah biasa, tetapi pastikan ia sederhana, terbuka dan tidak dikaitkan dengan keputusan. Apabila ragu, tanya sebelum memberi.
+
+## 6. Berurusan dengan pembekal, ejen dan rakan kongsi dengan berhati-hati
+
+### Kenali siapa yang anda berurusan
+Semak latar belakang, reputasi dan pemilikan ejen dan rakan kongsi sebelum mengambil mereka. Panduan kami tentang menguruskan hubungan pembekal menerangkan cara menyemak pembekal.
+
+### Bayar untuk kerja sebenar
+Yuran dan komisen patut sepadan dengan perkhidmatan sebenar pada kadar yang munasabah. Berwaspada dengan bayaran besar dengan sedikit penjelasan, atau bayaran ke akaun atas nama lain atau di negara lain.
+
+### Letakkan peraturan secara bertulis
+Sertakan terma anti-rasuah dalam kontrak, minta rakan kongsi mengikut piawaian anda, dan simpan salinan perjanjian.
+
+### Simpan rekod apa yang dilakukan
+Minta ejen memberi laporan dan invois yang menerangkan kerja. Rekod membantu anda menunjukkan bahawa anda bertindak dengan betul.
+
+### Berhati-hati dengan usaha sama
+Tingkah laku rakan kongsi boleh menjejaskan anda. Panduan kami tentang rakan kongsi perniagaan dan perjanjian pemegang saham menerangkan cara menetapkan jangkaan.
+
+## 7. Wujudkan cara selamat untuk membangkitkan kebimbangan
+
+### Permudahkan untuk bersuara
+Beritahu pekerja siapa yang boleh mereka dekati jika ditekan atau melihat sesuatu yang salah, seperti pemilik atau orang kanan yang dipercayai, dan janjikan bahawa laporan suci hati tidak akan dihukum.
+
+### Ambil serius setiap laporan
+Dengar, catat fakta, dan siasat dengan adil. Jangan membalas dendam terhadap orang yang membangkitkannya.
+
+### Ketahui di mana hendak melapor
+Perkara serius mungkin perlu dilaporkan kepada pihak berkuasa. Dapatkan nasihat daripada peguam dan semak saluran pelaporan semasa dengan SPRM.
+
+### Lindungi kerahsiaan
+Pastikan laporan dan butiran peribadi kekal persendirian sejauh mungkin. Panduan kami tentang pematuhan PDPA menerangkan cara mengendalikan data peribadi.
+
+### Bertindak berdasarkan hasilnya
+Jika pelanggaran ditemui, balas dengan adil dan konsisten, termasuk tindakan disiplin jika sesuai. Panduan kami tentang menamatkan perkhidmatan pekerja di Malaysia menerangkan cara melakukannya dengan betul.
+
+> Dasar ringkas yang benar-benar dipatuhi oleh pemilik lebih bernilai daripada yang panjang yang tiada siapa baca.
+
+## 8. Latih pasukan anda dan simpan rekod
+
+### Latih dalam bahasa yang mudah
+Beri pekerja baharu taklimat ringkas dan ulang setiap tahun, menggunakan contoh sebenar daripada industri anda, seperti pemeriksaan, tender dan hadiah perayaan. Panduan kami tentang melatih pasukan anda dengan HRD Corp menerangkan satu cara untuk membiayai latihan.
+
+### Lakonkan saat-saat sukar
+Berlatih apa yang hendak dikatakan apabila seseorang meminta bayaran atau budi. Ayat yang sudah disediakan lebih mudah diucapkan di bawah tekanan.
+
+### Simpan bukti bahawa anda bertindak
+Simpan dasar, kehadiran latihan, nota risiko, log hadiah dan usaha wajar terhadap ejen. Rekod ini menunjukkan bahawa anda mengambil langkah yang munasabah.
+
+### Semak dan perbaiki
+Lihat kes hampir terlepas dan soalan yang ditanya pekerja, dan kemas kini dasar anda. Panduan kami tentang perancangan kesinambungan perniagaan menerangkan cara membina semakan ke dalam rutin.
+
+### Dapatkan bantuan apabila perlu
+Untuk perkara yang rumit atau bernilai tinggi, seperti tender besar atau urusan luar negara, bercakap dengan peguam atau penasihat yang mengetahui peraturan semasa.
+
+Jika anda mahu mencari peguam, penasihat atau jurulatih untuk membantu dasar anda, anda boleh [menyemak imbas direktori](/ms) untuk profesional berhampiran anda, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan yang menghargai pembekal beretika dapat menemui perniagaan anda.
+
+## Kesilapan lazim PKS Malaysia tentang risiko rasuah
+
+- **Menganggap peraturan hanya untuk syarikat besar.** Peruntukan liabiliti korporat terpakai kepada organisasi komersial semua saiz, jadi ambil langkah mudah walaupun anda kecil.
+- **Menganggap bayaran "pelincir" sebagai biasa.** Bayaran kecil untuk mempercepatkan sesuatu masih boleh menjadi rasuah, jadi tolaknya dan minta proses rasmi.
+- **Menggunakan ejen tanpa menyemak atau menulis apa-apa.** Anda boleh berisiko atas apa yang orang lain lakukan untuk anda, jadi semak mereka, tulis peraturan dalam kontrak, dan simpan rekod.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Tulis kenyataan satu perenggan bahawa perniagaan anda tidak memberi atau menerima rasuah, dan kongsikan dengan pasukan anda.
+- **Seterusnya:** Senaraikan situasi di mana anda berurusan dengan pegawai, ejen atau pembeli besar, dan tandakan yang paling berisiko.
+- **Kemudian:** Tulis dasar ringkas tentang hadiah, ejen, rekod dan membangkitkan kebimbangan, dan tambah klausa pada kontrak utama.
+- **Setiap tahun:** Latih pasukan anda, semak risiko, dan semak panduan SPRM semasa dengan peguam jika perniagaan anda berubah.
+
+Berniaga dengan cara yang betul melindungi reputasi, pasukan dan masa depan anda. Peraturan mudah dan jujur yang benar-benar anda patuhi ialah pertahanan terbaik.`,
+        faqs: [
+          {
+            question: "Adakah peraturan liabiliti korporat Malaysia terpakai kepada perniagaan kecil?",
+            answer:
+              "Ia terpakai kepada organisasi komersial, iaitu istilah yang luas, dan menjadi kecil tidak mengecualikan anda. Semak perkataan tepat dan kedudukan semasa dengan SPRM dan peguam, dan ambil langkah berpadanan untuk mencegah rasuah.",
+          },
+          {
+            question: "Apakah prosedur yang mencukupi?",
+            answer:
+              "Prosedur yang mencukupi ialah langkah yang diambil organisasi untuk mencegah rasuah oleh orang yang bersekutu dengannya, dan ia boleh menjadi pembelaan. Garis panduan rasmi menerangkan lima prinsip yang sering diingati sebagai TRUST: komitmen peringkat tertinggi, penilaian risiko, langkah kawalan, semakan sistematik, pemantauan dan penguatkuasaan, serta latihan dan komunikasi.",
+          },
+          {
+            question: "Siapa yang dikira orang bersekutu?",
+            answer:
+              "Bergantung pada keadaan, ia boleh termasuk pengarah, pekerja, dan orang yang melaksanakan perkhidmatan untuk organisasi, seperti ejen, kontraktor dan pembekal. Tidak mengetahui apa yang mereka lakukan bukanlah pendirian yang selamat.",
+          },
+          {
+            question: "Adakah hadiah dan layanan dibenarkan?",
+            answer:
+              "Hadiah dan layanan yang sederhana, terbuka dan tidak dikaitkan dengan keputusan biasanya dilayan secara berbeza daripada wang tunai, perjalanan mewah, atau apa-apa yang ditawarkan semasa tender, permohonan lesen atau rundingan. Tetapkan had dalam dasar bertulis, simpan log mudah, dan tanya sebelum memberi apabila ragu.",
+          },
+          {
+            question: "Apa yang patut saya lakukan jika pegawai meminta bayaran kecil untuk mempercepatkan sesuatu?",
+            answer:
+              "Jangan bayar. Tolak dengan sopan, minta proses atau resit rasmi, dan laporkan di mana sesuai. Bayaran pelincir kecil masih boleh menjadi rasuah.",
+          },
+          {
+            question: "Bagaimanakah saya patut berurusan dengan ejen dan pembekal?",
+            answer:
+              "Semak latar belakang dan reputasi mereka, bayar hanya untuk kerja sebenar pada kadar yang munasabah, letakkan terma anti-rasuah dalam kontrak, dan simpan laporan dan invois yang menerangkan apa yang dilakukan. Berwaspada dengan yuran yang kabur atau bayaran kepada pihak ketiga.",
+          },
+          {
+            question: "Bagaimanakah pekerja boleh membangkitkan kebimbangan dengan selamat?",
+            answer:
+              "Beritahu pekerja siapa yang boleh mereka dekati, janjikan bahawa laporan suci hati tidak akan dihukum, ambil serius setiap laporan, dan lindungi kerahsiaan. Untuk perkara serius, dapatkan nasihat undang-undang dan semak saluran pelaporan semasa dengan SPRM.",
+          },
+          {
+            question: "Rekod apa yang patut saya simpan?",
+            answer:
+              "Simpan dasar anda, kehadiran latihan, nota risiko, log hadiah dan layanan, dan usaha wajar terhadap ejen dan rakan kongsi. Ini menunjukkan bahawa anda mengambil langkah yang munasabah.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "subscription-and-membership-models-for-malaysian-smes",
+    title: "Subscription and Membership Models: Building Recurring Revenue for Malaysian SMEs",
+    seoTitle: "Subscription and Membership Models for Malaysian SMEs",
+    seoDescription:
+      "How Malaysian SMEs can build recurring revenue: pick a model, set tiers and prices, bill fairly, collect payments, cut churn and know when to stop.",
+    coverImage: {
+      file: "subscription-and-membership-models-cover.webp",
+      mimeType: "image/webp",
+      alt: "A smiling woman with long braids and a white top lifting the lid off a plain cardboard box while sitting on a sofa",
+      altTranslations: {
+        zh: "一位梳着长辫、身穿白色上衣的微笑女士坐在沙发上，掀开一个朴素纸箱的盖子",
+        ms: "Seorang wanita tersenyum berkepang panjang dan berbaju putih mengangkat penutup kotak kadbod biasa sambil duduk di atas sofa",
+      },
+    },
+    contentImages: {
+      reception: {
+        file: "subscription-and-membership-models-reception.webp",
+        mimeType: "image/webp",
+        alt: "A woman in sportswear with a gym bag on her shoulder leaning on a reception counter beside a computer monitor in a fitness centre",
+        altTranslations: {
+          zh: "一位身穿运动服、肩挎健身包的女士在健身中心的接待柜台旁，靠着柜台，旁边放着电脑显示器",
+          ms: "Seorang wanita berpakaian sukan dengan beg gim di bahu bersandar pada kaunter penyambut tetamu bersebelahan monitor komputer di pusat kecergasan",
+        },
+        after: "Sell a subscription only when customers genuinely need the same thing again and again.",
+        afterTranslations: {
+          zh: "只有当顾客真正一再需要同样的东西时，才推出订阅。",
+          ms: "Jual langganan hanya apabila pelanggan benar-benar memerlukan perkara yang sama berulang kali.",
+        },
+      },
+    },
+    excerpt:
+      "Subscriptions and memberships can turn one-off sales into steady, predictable income, but they only work when customers keep getting value. This guide helps Malaysian SMEs choose a suitable model, set tiers and prices, write fair terms, collect recurring payments, onboard and keep members, and know when a subscription is the wrong fit.",
+    body: `Most small businesses live from sale to sale. A subscription or membership changes that: customers pay regularly in return for ongoing products, services, or access, and you gain income that is easier to plan around.
+
+But recurring revenue is a promise as well as a business model. Customers who feel trapped, overcharged, or ignored cancel quickly, complain publicly, and may not return. Done well, a subscription builds loyalty. Done badly, it destroys trust.
+
+This is general information, not legal or financial advice. Consumer rules, payment options, and tax treatment of recurring income change over time, and some details in this guide may be out of date. Confirm current requirements with the relevant authority, your payment provider, and your accountant.
+
+## 1. Decide whether a subscription suits your business
+
+### Start with real repeat need
+Sell a subscription only when customers genuinely need the same thing again and again. Good fits include regular supplies, such as coffee, meal boxes, or cleaning services, ongoing access, such as gyms, classes, or software, and continuing care, such as maintenance or support plans.
+
+### Check the customer's real need
+Ask whether customers would honestly want this every week or month. A product that people buy twice a year is a poor subscription, however clever the packaging. Our guide on understanding your customers explains how to test demand.
+
+### Look at your own capacity
+You must deliver reliably month after month. Make sure that your supply, staff, and systems can handle regular commitments, not just a launch rush.
+
+### Count the economics
+Work out what each subscriber costs you to serve, and how long they need to stay for you to earn a fair profit. Our guide on pricing products and services explains how to protect your margin.
+
+### Consider alternatives
+Packages, prepaid bundles, and loyalty schemes can give some of the benefit with less commitment. Our guide on building customer loyalty and repeat business explains them.
+
+## 2. Choose the model
+
+### Replenishment subscriptions
+Customers receive a regular delivery of goods they use up, such as groceries, coffee, or pet food. These suit consumable products and need reliable logistics. Our guide on running deliveries explains how to handle shipping.
+
+### Curated or surprise boxes
+Customers pay for a selection chosen by you. These need strong sourcing and consistent quality, and customers may leave if the surprises disappoint.
+
+### Membership with access
+Customers pay for access to a place, community, or content, such as a gym, studio, club, or online learning. Value comes from use, so engagement matters.
+
+### Service plans
+Regular cleaning, maintenance, bookkeeping, or support for a fixed fee. These build long relationships if the service is dependable.
+
+### Prepaid packages
+Customers buy a bundle of sessions or visits in advance. This brings cash early but creates an obligation to deliver, so record it carefully. Our guide on bookkeeping and accounting basics explains how.
+
+### Pick one model to start
+A simple offer is easier to explain, deliver, and fix than a complicated mix.
+
+## 3. Set tiers and prices
+
+### Start with a clear core offer
+Describe exactly what members get, how often, and what is not included.
+
+### Offer a few simple tiers
+Two or three levels, such as basic, standard, and premium, let customers choose without confusion. Make the differences clear and meaningful.
+
+### Price for the long run
+Include your costs, delivery, payment fees, support, and a margin. Do not set a low price just to attract sign-ups and hope to raise it later.
+
+### Consider annual options
+An annual plan at a modest discount brings cash upfront and reduces churn, but it also means refunds and obligations over a longer period. Think through how you will handle early cancellation.
+
+### Be transparent about price changes
+If you must raise prices, give members clear notice and a reasonable reason. Surprise increases cause cancellations and complaints.
+
+### Test small
+Start with a limited number of founding members, learn from them, and adjust before you scale.
+
+## 4. Write fair terms and respect consumer rules
+
+### Put the terms in plain language
+State the price, billing date, what is included, the minimum term if any, how to pause or cancel, refund rules, and what happens if payment fails. Our guide on contracts and terms for small businesses explains how to write clear terms.
+
+### Get clear consent for recurring charges
+Make it obvious that the customer is signing up for repeated payments, and show the amount and frequency before they pay. Hidden or confusing auto-renewals cause complaints and may attract legal trouble.
+
+### Make cancelling as easy as joining
+If customers can sign up in two taps, they should not need to make three phone calls to leave. Easy exits build trust and often bring people back.
+
+### Be careful with unfair terms
+Malaysian consumer law deals with unfair contract terms, and rules specific to subscriptions and auto-renewal may be limited or may change. Check the current position with the relevant authority or a lawyer, and avoid terms that a fair-minded person would find harsh. Our guide on customer complaints, refunds, and consumer rights explains the basics.
+
+### Explain refunds and pauses
+Decide what happens if someone cancels mid-month, moves away, or falls ill. A fair, simple rule is better than arguments on a case-by-case basis.
+
+### Protect personal and payment data
+Only collect what you need, and keep it secure. Our guide on PDPA compliance and our guide on cybersecurity for small businesses explain the basics.
+
+## 5. Collect recurring payments reliably
+
+### Choose a payment method that supports repeat charges
+Options may include card payments on file, bank direct debit services, or invoicing for business members. What is available depends on your bank or payment provider, so ask them about eligibility, fees, and consent requirements. Our guide on accepting digital payments in Malaysia explains how to compare options.
+
+### Make payment dates clear
+Tell members when they will be charged, and send a reminder or receipt each time.
+
+### Plan for failed payments
+Cards expire and accounts run short. Notify the member politely, allow a short grace period, and make it easy to update details, rather than cancelling at the first failure.
+
+### Keep clean records
+Record each charge, refund, and credit, and reconcile regularly. Our guide on choosing accounting software for your Malaysian SME explains tools that help.
+
+### Understand the tax side
+Recurring income is still income, and prepaid amounts may need careful treatment. Check how to record and report it with your accountant. Our guide on the small business tax calendar explains key dates.
+
+## 6. Onboard members well
+
+### Make the first experience great
+The first week decides whether a member stays. Send a warm welcome, explain how to get the most from the service, and deliver something valuable quickly.
+
+### Set expectations
+Tell members what to expect, when, and how to reach you. Our guide on serving customers on WhatsApp explains simple ways to stay in touch.
+
+### Collect preferences
+Ask what the member wants, such as sizes, flavours, goals, or schedules, so that the service feels personal.
+
+### Give a simple way to get help
+A clear contact point and a quick reply to the first problem build confidence.
+
+### Check in early
+A short message after the first delivery or visit shows that you care and catches problems before they become cancellations.
+
+## 7. Reduce churn and keep members
+
+### Track why people leave
+Ask departing members for the reason, and record it. Patterns show what to fix.
+
+### Watch for early warning signs
+Members who stop using the service, skip deliveries, or complain are at risk. Reach out before they cancel.
+
+### Keep adding value
+Fresh content, new products, occasional surprises, and member-only offers remind people why they pay.
+
+### Offer a pause instead of a cancel
+Some members will stay if they can pause for a month or two, or switch to a smaller plan.
+
+### Reward loyalty
+Small thank-yous for long-term members, such as a free month or a gift, cost little and keep people.
+
+### Listen and improve
+Use feedback to fix the issues that matter most. Our guide on handling difficult customers and online reviews explains how to respond to criticism.
+
+> A subscription is a promise to keep delivering value, and customers stay only as long as they feel that the promise is kept.
+
+## 8. Measure the numbers and know when to stop
+
+### Track a few key numbers
+Useful measures include the number of active members, new sign-ups, cancellations, monthly recurring revenue, average revenue per member, and the cost of winning each member. Our guide on tracking business performance explains how to set up a simple dashboard.
+
+### Watch cash flow
+Recurring income helps planning, but costs also recur. Make sure that income covers delivery, staff, and payment fees. Our guide on managing cash flow explains how to keep a buffer.
+
+### Plan for growth
+More members mean more deliveries, support, and capacity. Add them in steps you can serve well.
+
+### Know when it is the wrong fit
+If sign-ups are weak, churn is high, or delivery costs eat the margin, a subscription may not suit your product. It is better to stop or reshape the offer than to keep a model that harms your reputation.
+
+### Review at least every quarter
+Check numbers, feedback, and costs, and adjust tiers, prices, or terms.
+
+If you want help from a designer, a payment adviser, or an accountant to set up your subscription, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so that new members can find your business easily.
+
+## Common mistakes Malaysian SMEs make with subscriptions
+
+- **Launching a subscription for something people do not need regularly.** If customers do not want it every month, they will cancel quickly, so test real demand first.
+- **Making cancellation hard or auto-renewal unclear.** Customers who feel trapped complain and may take the issue further, so be clear on consent and make leaving easy.
+- **Ignoring churn and delivery costs.** A growing member list can hide a shrinking margin, so track cancellations and the true cost of serving each member.
+
+## Where to start
+
+- **This week:** Ask ten customers whether they would pay regularly for a defined product or service, and what they would expect.
+- **Next:** Design one simple offer with a clear price, terms, and cancellation rule, and check payment options with your provider.
+- **Then:** Launch to a small group of founding members, onboard them well, and collect feedback.
+- **Every quarter:** Review sign-ups, cancellations, and costs, and adjust before you scale.
+
+Recurring revenue is valuable because it rests on trust. Offer something customers truly want, be fair in your terms, and keep delivering, and a subscription can become a steady foundation for your business.`,
+    faqs: [
+      {
+        question: "What kinds of businesses suit subscriptions or memberships?",
+        answer:
+          "Businesses where customers need the same thing repeatedly, such as regular supplies, ongoing access like gyms and classes, and continuing services like maintenance or support. Products that people buy only occasionally are usually a poor fit.",
+      },
+      {
+        question: "How many pricing tiers should I offer?",
+        answer:
+          "Two or three simple tiers are usually enough, with clear and meaningful differences. Start with a clear core offer, price for the long run including costs and payment fees, and test with a small group of founding members first.",
+      },
+      {
+        question: "Do I need to get consent for automatic renewals?",
+        answer:
+          "Make it obvious that customers are signing up for repeated payments, and show the amount and frequency before they pay. Specific rules on subscriptions and auto-renewal may be limited or may change, so check the current position with the relevant authority or a lawyer.",
+      },
+      {
+        question: "How should cancellations and refunds work?",
+        answer:
+          "Make cancelling as easy as joining, explain refund and pause rules in plain language, and decide in advance what happens if someone cancels mid-month. A fair, simple rule is better than case-by-case arguments.",
+      },
+      {
+        question: "How do I collect recurring payments?",
+        answer:
+          "Options may include cards on file, bank direct debit services, or invoicing for business members, depending on your bank or payment provider. Ask about eligibility, fees, and consent requirements, and plan for failed payments with reminders and a short grace period.",
+      },
+      {
+        question: "How can I reduce members cancelling?",
+        answer:
+          "Onboard members well, check in early, watch for warning signs such as low use or skipped deliveries, keep adding value, offer a pause or a smaller plan instead of a cancellation, and ask departing members why they left.",
+      },
+      {
+        question: "Which numbers should I track?",
+        answer:
+          "Active members, new sign-ups, cancellations, monthly recurring revenue, average revenue per member, and the cost of winning and serving each member. Watch cash flow as well, because costs recur too.",
+      },
+      {
+        question: "When is a subscription the wrong choice?",
+        answer:
+          "When customers do not need the product regularly, sign-ups are weak, churn is high, or delivery costs eat the margin. It is better to stop or reshape the offer than to keep a model that damages your reputation.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "订阅与会员模式：为马来西亚中小企业建立经常性收入",
+        excerpt:
+          "订阅和会员制可以把一次性的销售变成稳定、可预测的收入，但前提是顾客持续得到价值。本指南帮助马来西亚中小企业选择合适的模式，订立等级和价格，撰写公平的条款，收取定期付款，做好新会员的引导并留住会员，并了解何时订阅并不合适。",
+        body: `大多数小企业靠一笔笔的销售过日子。订阅或会员制改变了这一点：顾客定期付款，换取持续的产品、服务或使用权，而您获得更容易规划的收入。
+
+但经常性收入既是商业模式，也是一种承诺。觉得被困住、被多收费或被忽视的顾客会很快取消、公开投诉，也可能不再回来。做得好，订阅建立忠诚度；做得不好，它会摧毁信任。
+
+本文仅提供一般信息，并非法律或财务建议。消费者规定、付款选项，以及经常性收入的税务处理会随时间变化，本指南的部分细节可能已经过时。请向相关主管单位、您的付款服务商和会计师确认现行要求。
+
+## 1. 判断订阅是否适合您的业务
+
+### 从真正的重复需求开始
+只有当顾客真正一再需要同样的东西时，才推出订阅。适合的包括定期的用品，例如咖啡、餐盒或清洁服务；持续的使用权，例如健身房、课程或软件；以及持续的照顾，例如维修或支持计划。
+
+### 查核顾客的真实需求
+问问顾客是否真的每星期或每月都想要这个。一年只买两次的产品，无论包装多巧妙，都是糟糕的订阅。我们关于了解您的顾客的指南说明了如何测试需求。
+
+### 看看您自己的能力
+您必须一个月接一个月可靠地交付。请确保您的供应、员工和系统能应付定期的承诺，而不只是开张时的热潮。
+
+### 算清经济账
+算出服务每位订阅者让您花费多少，以及他们需要留多久您才能赚到合理的利润。我们关于产品与服务定价的指南说明了如何保护您的利润。
+
+### 考虑替代方案
+套餐、预付组合和忠诚计划能以较少的承诺带来部分好处。我们关于建立顾客忠诚度与回头客的指南对此有说明。
+
+## 2. 选择模式
+
+### 补给式订阅
+顾客定期收到他们会用完的货品，例如杂货、咖啡或宠物食品。这些适合消耗品，并需要可靠的物流。我们关于经营配送的指南说明了如何处理运送。
+
+### 精选或惊喜盒
+顾客为您挑选的组合付费。这需要强大的采购和稳定的品质，如果惊喜令人失望，顾客可能会离开。
+
+### 带使用权的会员
+顾客为进入某个场所、社群或内容付费，例如健身房、工作室、俱乐部或线上学习。价值来自使用，所以参与度很重要。
+
+### 服务计划
+以固定的费用提供定期的清洁、维修、簿记或支持。如果服务可靠，这些会建立长期的关系。
+
+### 预付套餐
+顾客预先购买一组课时或到访次数。这会提前带来现金，但也产生交付的义务，所以请仔细记录。我们关于簿记和会计基础的指南说明了如何做。
+
+### 先选一种模式开始
+简单的方案比复杂的组合更容易解释、交付和修正。
+
+## 3. 订立等级和价格
+
+### 从清楚的核心方案开始
+准确说明会员得到什么、多久一次，以及不包括什么。
+
+### 提供几个简单的等级
+两三个级别，例如基本、标准和高级，让顾客不会困惑地选择。让差别清楚而有意义。
+
+### 为长远定价
+包括您的成本、送货、付款费用、支持和利润。不要只为了吸引注册就订低价，指望以后再涨。
+
+### 考虑年度选项
+以适度折扣提供的年度计划能提前带来现金并减少流失，但也意味着更长时间的退款和义务。请想清楚如何处理提早取消。
+
+### 对价格变动要透明
+如果您必须涨价，请给会员清楚的通知和合理的理由。意外的涨价会引起取消和投诉。
+
+### 小规模测试
+从有限数量的创始会员开始，从他们身上学习，并在扩大规模之前调整。
+
+## 4. 撰写公平的条款并尊重消费者规定
+
+### 用平实的语言写条款
+说明价格、扣款日期、包括什么、最短期限（如有）、如何暂停或取消、退款规定，以及付款失败时会怎样。我们关于小企业合约与条款的指南说明了如何写清楚条款。
+
+### 为经常性收费取得清楚的同意
+让顾客明显知道他们是在登记重复的付款，并在付款前显示金额和频率。隐藏或令人困惑的自动续订会引起投诉，也可能招来法律麻烦。
+
+### 让取消和加入一样容易
+如果顾客两下点击就能登记，他们不应该需要打三通电话才能退出。轻松的退出建立信任，也常常把人带回来。
+
+### 小心不公平的条款
+马来西亚的消费者法律处理不公平的合约条款，而专门针对订阅和自动续订的规定可能有限或会改变。请向相关主管单位或律师确认现行立场，并避免讲理的人会觉得苛刻的条款。我们关于顾客投诉、退款与消费者权益的指南说明了基础知识。
+
+### 说明退款和暂停
+决定如果有人在月中取消、搬走或生病会怎样。一条公平而简单的规则，胜过逐案争论。
+
+### 保护个人和付款资料
+只收集您需要的，并确保安全。我们关于个人资料保护法令合规的指南和关于小企业网络安全的指南说明了基础知识。
+
+## 5. 可靠地收取定期付款
+
+### 选择支持重复收费的付款方式
+选项可能包括已存档的卡付款、银行直接扣款服务，或对企业会员开发票。可用的选项取决于您的银行或付款服务商，所以请向他们询问资格、费用和同意要求。我们关于在马来西亚接受数码付款的指南说明了如何比较选项。
+
+### 让付款日期清楚
+告诉会员何时会被扣款，并每次都发提醒或收据。
+
+### 为付款失败做好计划
+卡会过期，账户会不够钱。请礼貌地通知会员，给予短暂的宽限期，并让更新资料变得容易，而不是在第一次失败时就取消。
+
+### 保持清晰的记录
+记录每一笔收费、退款和抵免，并定期核对。我们关于为您的马来西亚中小企业选择会计软件的指南说明了有帮助的工具。
+
+### 了解税务方面
+经常性收入仍然是收入，预收的金额可能需要仔细处理。请与您的会计师确认如何记录和申报。我们关于小企业税务日历的指南说明了关键日期。
+
+## 6. 做好会员的引导
+
+### 让第一次的体验很棒
+第一个星期决定会员是否留下。发送温暖的欢迎，说明如何充分利用服务，并迅速交付有价值的东西。
+
+### 设定期望
+告诉会员该期待什么、何时，以及如何联络您。我们关于在WhatsApp上服务顾客的指南说明了保持联系的简单方法。
+
+### 收集偏好
+询问会员想要什么，例如尺寸、口味、目标或时间表，让服务感觉有个人色彩。
+
+### 提供简单的求助方式
+清楚的联络点和对第一个问题的迅速回复，能建立信心。
+
+### 及早关心
+第一次送货或到访之后的一则简短讯息，显示您在乎，并在问题变成取消之前发现它们。
+
+## 7. 减少流失并留住会员
+
+### 追踪人们为什么离开
+询问离开的会员原因，并记录下来。规律会显示该修正什么。
+
+### 留意早期的警讯
+停止使用服务、跳过送货或投诉的会员有风险。请在他们取消之前主动联络。
+
+### 持续增加价值
+新鲜的内容、新产品、偶尔的惊喜和会员专享的优惠，提醒人们为什么付费。
+
+### 提供暂停而不是取消
+一些会员如果能暂停一两个月，或换成较小的计划，就会留下。
+
+### 奖励忠诚
+对长期会员的小小感谢，例如一个月免费或一份礼物，成本很低却能留住人。
+
+### 倾听并改进
+利用反馈来解决最重要的问题。我们关于应对难缠顾客与网络评论的指南说明了如何回应批评。
+
+> 订阅是持续交付价值的承诺，顾客只有在觉得这个承诺被遵守时才会留下。
+
+## 8. 衡量数字并知道何时停止
+
+### 追踪几个关键数字
+有用的指标包括活跃会员数、新注册、取消数、每月经常性收入、每位会员的平均收入，以及赢得每位会员的成本。我们关于追踪企业绩效的指南说明了如何建立简单的仪表板。
+
+### 留意现金流
+经常性收入有助于规划，但成本也是经常性的。请确保收入能覆盖送货、员工和付款费用。我们关于管理现金流的指南说明了如何保留缓冲。
+
+### 为成长做规划
+更多的会员意味着更多的送货、支持和产能。请分阶段增加，以您能够妥善服务为限。
+
+### 知道何时不合适
+如果注册疲弱、流失率高，或送货成本吞噬了利润，订阅可能不适合您的产品。停止或重塑方案，胜过保留一个损害声誉的模式。
+
+### 至少每季检视
+检查数字、反馈和成本，并调整等级、价格或条款。
+
+如果您想请设计师、付款顾问或会计师协助设立您的订阅，可以[浏览目录](/zh)寻找您附近的专业人士，并[创建免费商家列表](/zh/signup)，让新会员能轻易找到您的企业。
+
+## 马来西亚中小企业在订阅方面的常见错误
+
+- **为人们不需要定期购买的东西推出订阅。** 如果顾客不是每个月都想要，他们会很快取消，所以请先测试真实的需求。
+- **让取消变困难或自动续订不清楚。** 觉得被困住的顾客会投诉，也可能把事情闹大，所以请对同意保持清楚并让离开变容易。
+- **忽视流失和送货成本。** 不断增长的会员名单可能掩盖正在缩小的利润，所以请追踪取消数和服务每位会员的真实成本。
+
+## 从哪里开始
+
+- **本周：** 问十位顾客是否愿意为一项明确的产品或服务定期付费，以及他们的期望。
+- **接下来：** 设计一个简单的方案，附有清楚的价格、条款和取消规则，并向您的服务商确认付款选项。
+- **然后：** 向一小群创始会员推出，做好引导，并收集反馈。
+- **每个季度：** 检视注册、取消和成本，并在扩大规模之前调整。
+
+经常性收入之所以宝贵，是因为它建立在信任之上。提供顾客真正想要的东西，条款公平，并持续交付，订阅就可以成为您企业稳定的基础。`,
+        faqs: [
+          {
+            question: "哪些类型的企业适合订阅或会员制？",
+            answer:
+              "顾客一再需要同样东西的企业，例如定期的用品、像健身房和课程那样的持续使用权，以及像维修或支持那样的持续服务。人们只是偶尔购买的产品通常不适合。",
+          },
+          {
+            question: "我应该提供多少个价格等级？",
+            answer:
+              "通常两三个简单的等级就够了，差别要清楚而有意义。从清楚的核心方案开始，为长远定价（包括成本和付款费用），并先与一小群创始会员测试。",
+          },
+          {
+            question: "自动续订需要取得同意吗？",
+            answer:
+              "让顾客明显知道他们是在登记重复的付款，并在付款前显示金额和频率。专门针对订阅和自动续订的规定可能有限或会改变，所以请向相关主管单位或律师确认现行立场。",
+          },
+          {
+            question: "取消和退款应该如何运作？",
+            answer:
+              "让取消和加入一样容易，用平实的语言说明退款和暂停的规定，并事先决定如果有人在月中取消会怎样。一条公平而简单的规则，胜过逐案争论。",
+          },
+          {
+            question: "我如何收取定期付款？",
+            answer:
+              "选项可能包括已存档的卡、银行直接扣款服务，或对企业会员开发票，取决于您的银行或付款服务商。请询问资格、费用和同意要求，并通过提醒和短暂的宽限期为付款失败做好计划。",
+          },
+          {
+            question: "我如何减少会员取消？",
+            answer:
+              "做好会员的引导，及早关心，留意使用率低或跳过送货等警讯，持续增加价值，提供暂停或较小的计划而不是取消，并询问离开的会员为什么离开。",
+          },
+          {
+            question: "我应该追踪哪些数字？",
+            answer:
+              "活跃会员数、新注册、取消数、每月经常性收入、每位会员的平均收入，以及赢得和服务每位会员的成本。也要留意现金流，因为成本也是经常性的。",
+          },
+          {
+            question: "什么时候订阅是错误的选择？",
+            answer:
+              "当顾客不定期需要该产品、注册疲弱、流失率高，或送货成本吞噬了利润时。停止或重塑方案，胜过保留一个损害声誉的模式。",
+          },
+        ],
+      },
+      ms: {
+        title: "Model Langganan dan Keahlian: Membina Hasil Berulang untuk PKS Malaysia",
+        excerpt:
+          "Langganan dan keahlian boleh menukar jualan sekali sahaja kepada pendapatan yang stabil dan boleh diramal, tetapi ia hanya berjaya apabila pelanggan terus mendapat nilai. Panduan ini membantu PKS Malaysia memilih model yang sesuai, menetapkan peringkat dan harga, menulis terma yang adil, mengutip bayaran berulang, membimbing dan mengekalkan ahli, dan mengetahui bila langganan bukan pilihan yang sesuai.",
+        body: `Kebanyakan perniagaan kecil hidup daripada jualan ke jualan. Langganan atau keahlian mengubah itu: pelanggan membayar secara tetap sebagai balasan produk, perkhidmatan atau akses yang berterusan, dan anda mendapat pendapatan yang lebih mudah dirancang.
+
+Tetapi hasil berulang ialah janji di samping model perniagaan. Pelanggan yang berasa terperangkap, dicaj lebih atau diabaikan membatalkan dengan cepat, mengadu secara terbuka, dan mungkin tidak kembali. Jika dilakukan dengan baik, langganan membina kesetiaan. Jika dilakukan dengan buruk, ia memusnahkan kepercayaan.
+
+Ini maklumat umum, bukan nasihat undang-undang atau kewangan. Peraturan pengguna, pilihan pembayaran dan layanan cukai pendapatan berulang berubah dari semasa ke semasa, dan sebahagian butiran dalam panduan ini mungkin sudah lapuk. Sahkan keperluan semasa dengan pihak berkuasa berkaitan, pembekal pembayaran dan akauntan anda.
+
+## 1. Tentukan sama ada langganan sesuai untuk perniagaan anda
+
+### Mulakan dengan keperluan berulang yang sebenar
+Jual langganan hanya apabila pelanggan benar-benar memerlukan perkara yang sama berulang kali. Yang sesuai termasuk bekalan tetap, seperti kopi, kotak makanan atau perkhidmatan pembersihan, akses berterusan, seperti gim, kelas atau perisian, dan penjagaan berterusan, seperti pelan penyelenggaraan atau sokongan.
+
+### Semak keperluan sebenar pelanggan
+Tanya sama ada pelanggan benar-benar mahukan ini setiap minggu atau bulan. Produk yang dibeli orang dua kali setahun ialah langganan yang lemah, walau bijak mana pun pembungkusannya. Panduan kami tentang memahami pelanggan anda menerangkan cara menguji permintaan.
+
+### Lihat kapasiti anda sendiri
+Anda mesti menyampaikan dengan boleh dipercayai bulan demi bulan. Pastikan bekalan, pekerja dan sistem anda boleh mengendalikan komitmen tetap, bukan sekadar kesibukan pelancaran.
+
+### Kira ekonominya
+Kira berapa kos untuk melayan setiap pelanggan, dan berapa lama mereka perlu kekal supaya anda memperoleh keuntungan yang adil. Panduan kami tentang penetapan harga produk dan perkhidmatan menerangkan cara melindungi margin anda.
+
+### Pertimbangkan alternatif
+Pakej, bungkusan prabayar dan skim kesetiaan boleh memberi sebahagian faedah dengan komitmen yang kurang. Panduan kami tentang membina kesetiaan pelanggan dan perniagaan berulang menerangkannya.
+
+## 2. Pilih model
+
+### Langganan pengisian semula
+Pelanggan menerima penghantaran tetap barangan yang mereka habiskan, seperti barangan runcit, kopi atau makanan haiwan peliharaan. Ini sesuai untuk produk guna habis dan memerlukan logistik yang boleh dipercayai. Panduan kami tentang menjalankan penghantaran menerangkan cara mengendalikan penghantaran.
+
+### Kotak terpilih atau kejutan
+Pelanggan membayar untuk pilihan yang anda pilih. Ini memerlukan sumber yang kukuh dan kualiti yang konsisten, dan pelanggan mungkin pergi jika kejutan mengecewakan.
+
+### Keahlian dengan akses
+Pelanggan membayar untuk akses ke tempat, komuniti atau kandungan, seperti gim, studio, kelab atau pembelajaran dalam talian. Nilai datang daripada penggunaan, jadi penglibatan penting.
+
+### Pelan perkhidmatan
+Pembersihan, penyelenggaraan, simpan kira atau sokongan tetap dengan yuran tetap. Ini membina hubungan panjang jika perkhidmatan boleh dipercayai.
+
+### Pakej prabayar
+Pelanggan membeli sekumpulan sesi atau lawatan lebih awal. Ini membawa tunai awal tetapi mewujudkan kewajipan untuk menyampaikan, jadi rekod dengan teliti. Panduan kami tentang asas simpan kira dan perakaunan menerangkan caranya.
+
+### Pilih satu model untuk bermula
+Tawaran yang mudah lebih senang diterangkan, disampaikan dan dibaiki daripada campuran yang rumit.
+
+## 3. Tetapkan peringkat dan harga
+
+### Mulakan dengan tawaran teras yang jelas
+Terangkan dengan tepat apa yang diperoleh ahli, berapa kerap, dan apa yang tidak termasuk.
+
+### Tawarkan beberapa peringkat yang mudah
+Dua atau tiga tahap, seperti asas, standard dan premium, membolehkan pelanggan memilih tanpa kekeliruan. Jadikan perbezaan jelas dan bermakna.
+
+### Tetapkan harga untuk jangka panjang
+Sertakan kos, penghantaran, yuran pembayaran, sokongan dan margin anda. Jangan tetapkan harga rendah semata-mata untuk menarik pendaftaran dan berharap menaikkannya kemudian.
+
+### Pertimbangkan pilihan tahunan
+Pelan tahunan dengan diskaun sederhana membawa tunai awal dan mengurangkan pusing ganti, tetapi ia juga bermakna bayaran balik dan kewajipan dalam tempoh lebih panjang. Fikirkan bagaimana anda akan mengendalikan pembatalan awal.
+
+### Telus tentang perubahan harga
+Jika anda mesti menaikkan harga, beri ahli notis yang jelas dan sebab yang munasabah. Kenaikan mengejut menyebabkan pembatalan dan aduan.
+
+### Uji secara kecil-kecilan
+Mulakan dengan bilangan terhad ahli pengasas, belajar daripada mereka, dan laraskan sebelum anda meningkatkan skala.
+
+## 4. Tulis terma yang adil dan hormati peraturan pengguna
+
+### Letakkan terma dalam bahasa yang mudah
+Nyatakan harga, tarikh pengebilan, apa yang termasuk, tempoh minimum jika ada, cara menjeda atau membatalkan, peraturan bayaran balik, dan apa yang berlaku jika pembayaran gagal. Panduan kami tentang kontrak dan terma untuk perniagaan kecil menerangkan cara menulis terma yang jelas.
+
+### Dapatkan persetujuan yang jelas untuk caj berulang
+Jadikan jelas bahawa pelanggan mendaftar untuk bayaran berulang, dan tunjukkan jumlah dan kekerapan sebelum mereka membayar. Pembaharuan automatik yang tersembunyi atau mengelirukan menyebabkan aduan dan mungkin mengundang masalah undang-undang.
+
+### Jadikan pembatalan semudah menyertai
+Jika pelanggan boleh mendaftar dalam dua sentuhan, mereka tidak patut perlu membuat tiga panggilan telefon untuk keluar. Keluar yang mudah membina kepercayaan dan selalunya membawa orang kembali.
+
+### Berhati-hati dengan terma yang tidak adil
+Undang-undang pengguna Malaysia menangani terma kontrak yang tidak adil, dan peraturan khusus untuk langganan dan pembaharuan automatik mungkin terhad atau mungkin berubah. Semak kedudukan semasa dengan pihak berkuasa berkaitan atau peguam, dan elakkan terma yang orang yang adil akan anggap keras. Panduan kami tentang aduan pelanggan, bayaran balik dan hak pengguna menerangkan asasnya.
+
+### Terangkan bayaran balik dan penjedaan
+Tentukan apa yang berlaku jika seseorang membatalkan pada pertengahan bulan, berpindah atau jatuh sakit. Peraturan yang adil dan mudah lebih baik daripada pertengkaran kes demi kes.
+
+### Lindungi data peribadi dan pembayaran
+Kumpul hanya apa yang anda perlukan, dan pastikan ia selamat. Panduan kami tentang pematuhan PDPA dan panduan kami tentang keselamatan siber untuk perniagaan kecil menerangkan asasnya.
+
+## 5. Kutip bayaran berulang dengan boleh dipercayai
+
+### Pilih kaedah pembayaran yang menyokong caj berulang
+Pilihan mungkin termasuk pembayaran kad yang disimpan, perkhidmatan debit langsung bank, atau pengeluaran invois untuk ahli perniagaan. Apa yang tersedia bergantung pada bank atau pembekal pembayaran anda, jadi tanya mereka tentang kelayakan, yuran dan keperluan persetujuan. Panduan kami tentang menerima pembayaran digital di Malaysia menerangkan cara membandingkan pilihan.
+
+### Jelaskan tarikh pembayaran
+Beritahu ahli bila mereka akan dicaj, dan hantar peringatan atau resit setiap kali.
+
+### Rancang untuk pembayaran yang gagal
+Kad tamat tempoh dan akaun kekurangan wang. Beritahu ahli dengan sopan, benarkan tempoh bertolak ansur yang singkat, dan permudahkan mengemas kini butiran, bukannya membatalkan pada kegagalan pertama.
+
+### Simpan rekod yang bersih
+Rekod setiap caj, bayaran balik dan kredit, dan selaraskan dengan kerap. Panduan kami tentang memilih perisian perakaunan untuk PKS Malaysia anda menerangkan alat yang membantu.
+
+### Fahami sebelah cukai
+Pendapatan berulang masih pendapatan, dan jumlah prabayar mungkin memerlukan layanan yang teliti. Sahkan cara merekod dan melaporkannya dengan akauntan anda. Panduan kami tentang kalendar cukai perniagaan kecil menerangkan tarikh penting.
+
+## 6. Bimbing ahli dengan baik
+
+### Jadikan pengalaman pertama hebat
+Minggu pertama menentukan sama ada ahli kekal. Hantar sambutan mesra, terangkan cara mendapat manfaat maksimum daripada perkhidmatan, dan sampaikan sesuatu yang bernilai dengan cepat.
+
+### Tetapkan jangkaan
+Beritahu ahli apa yang dijangka, bila, dan cara menghubungi anda. Panduan kami tentang melayan pelanggan di WhatsApp menerangkan cara mudah untuk kekal berhubung.
+
+### Kumpulkan pilihan
+Tanya apa yang ahli mahu, seperti saiz, perisa, matlamat atau jadual, supaya perkhidmatan terasa peribadi.
+
+### Beri cara mudah untuk mendapatkan bantuan
+Titik hubungan yang jelas dan balasan pantas kepada masalah pertama membina keyakinan.
+
+### Semak lebih awal
+Mesej ringkas selepas penghantaran atau lawatan pertama menunjukkan anda ambil berat dan menangkap masalah sebelum ia menjadi pembatalan.
+
+## 7. Kurangkan pusing ganti dan kekalkan ahli
+
+### Jejak mengapa orang pergi
+Tanya ahli yang pergi sebabnya, dan rekodkannya. Corak menunjukkan apa yang patut dibaiki.
+
+### Perhatikan tanda amaran awal
+Ahli yang berhenti menggunakan perkhidmatan, melangkau penghantaran atau mengadu berisiko. Hubungi sebelum mereka membatalkan.
+
+### Teruskan menambah nilai
+Kandungan segar, produk baharu, kejutan sesekali dan tawaran khas ahli mengingatkan orang mengapa mereka membayar.
+
+### Tawarkan jeda dan bukannya pembatalan
+Sesetengah ahli akan kekal jika mereka boleh menjeda selama sebulan atau dua, atau bertukar kepada pelan lebih kecil.
+
+### Ganjari kesetiaan
+Ucapan terima kasih kecil untuk ahli jangka panjang, seperti sebulan percuma atau hadiah, kosnya rendah dan mengekalkan orang.
+
+### Dengar dan perbaiki
+Gunakan maklum balas untuk membaiki isu yang paling penting. Panduan kami tentang menangani pelanggan sukar dan ulasan dalam talian menerangkan cara membalas kritikan.
+
+> Langganan ialah janji untuk terus menyampaikan nilai, dan pelanggan kekal hanya selagi mereka merasakan janji itu ditepati.
+
+## 8. Ukur angka dan ketahui bila hendak berhenti
+
+### Jejak beberapa angka utama
+Ukuran berguna termasuk bilangan ahli aktif, pendaftaran baharu, pembatalan, hasil berulang bulanan, purata hasil bagi setiap ahli, dan kos memenangi setiap ahli. Panduan kami tentang menjejak prestasi perniagaan menerangkan cara menyediakan papan pemuka yang mudah.
+
+### Perhatikan aliran tunai
+Pendapatan berulang membantu perancangan, tetapi kos juga berulang. Pastikan pendapatan menampung penghantaran, pekerja dan yuran pembayaran. Panduan kami tentang menguruskan aliran tunai menerangkan cara menyimpan penampan.
+
+### Rancang untuk pertumbuhan
+Lebih ramai ahli bermakna lebih banyak penghantaran, sokongan dan kapasiti. Tambahkannya dalam langkah yang boleh anda layani dengan baik.
+
+### Ketahui bila ia tidak sesuai
+Jika pendaftaran lemah, pusing ganti tinggi, atau kos penghantaran memakan margin, langganan mungkin tidak sesuai dengan produk anda. Lebih baik berhenti atau membentuk semula tawaran daripada mengekalkan model yang memudaratkan reputasi anda.
+
+### Semak sekurang-kurangnya setiap suku tahun
+Semak angka, maklum balas dan kos, dan laraskan peringkat, harga atau terma.
+
+Jika anda mahu bantuan pereka, penasihat pembayaran atau akauntan untuk menyediakan langganan anda, anda boleh [menyemak imbas direktori](/ms) untuk profesional berhampiran anda, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya ahli baharu dapat menemui perniagaan anda dengan mudah.
+
+## Kesilapan lazim PKS Malaysia dengan langganan
+
+- **Melancarkan langganan untuk sesuatu yang orang tidak perlukan secara tetap.** Jika pelanggan tidak mahukannya setiap bulan, mereka akan membatalkan dengan cepat, jadi uji permintaan sebenar dahulu.
+- **Menyukarkan pembatalan atau pembaharuan automatik yang tidak jelas.** Pelanggan yang berasa terperangkap mengadu dan mungkin membawa isu itu lebih jauh, jadi jelas tentang persetujuan dan permudahkan keluar.
+- **Mengabaikan pusing ganti dan kos penghantaran.** Senarai ahli yang berkembang boleh menyembunyikan margin yang mengecil, jadi jejak pembatalan dan kos sebenar melayan setiap ahli.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Tanya sepuluh pelanggan sama ada mereka akan membayar secara tetap untuk produk atau perkhidmatan yang ditakrifkan, dan apa yang mereka jangkakan.
+- **Seterusnya:** Reka satu tawaran mudah dengan harga, terma dan peraturan pembatalan yang jelas, dan semak pilihan pembayaran dengan pembekal anda.
+- **Kemudian:** Lancarkan kepada kumpulan kecil ahli pengasas, bimbing mereka dengan baik, dan kumpulkan maklum balas.
+- **Setiap suku tahun:** Semak pendaftaran, pembatalan dan kos, dan laraskan sebelum anda meningkatkan skala.
+
+Hasil berulang bernilai kerana ia bergantung pada kepercayaan. Tawarkan sesuatu yang benar-benar pelanggan mahu, adil dalam terma anda, dan terus menyampaikan, dan langganan boleh menjadi asas yang stabil untuk perniagaan anda.`,
+        faqs: [
+          {
+            question: "Perniagaan jenis apa yang sesuai untuk langganan atau keahlian?",
+            answer:
+              "Perniagaan di mana pelanggan memerlukan perkara yang sama berulang kali, seperti bekalan tetap, akses berterusan seperti gim dan kelas, dan perkhidmatan berterusan seperti penyelenggaraan atau sokongan. Produk yang dibeli orang hanya sekali-sekala biasanya tidak sesuai.",
+          },
+          {
+            question: "Berapa banyak peringkat harga yang patut saya tawarkan?",
+            answer:
+              "Dua atau tiga peringkat yang mudah biasanya mencukupi, dengan perbezaan yang jelas dan bermakna. Mulakan dengan tawaran teras yang jelas, tetapkan harga untuk jangka panjang termasuk kos dan yuran pembayaran, dan uji dengan kumpulan kecil ahli pengasas dahulu.",
+          },
+          {
+            question: "Adakah saya perlu mendapatkan persetujuan untuk pembaharuan automatik?",
+            answer:
+              "Jadikan jelas bahawa pelanggan mendaftar untuk bayaran berulang, dan tunjukkan jumlah dan kekerapan sebelum mereka membayar. Peraturan khusus tentang langganan dan pembaharuan automatik mungkin terhad atau mungkin berubah, jadi semak kedudukan semasa dengan pihak berkuasa berkaitan atau peguam.",
+          },
+          {
+            question: "Bagaimanakah pembatalan dan bayaran balik patut berfungsi?",
+            answer:
+              "Jadikan pembatalan semudah menyertai, terangkan peraturan bayaran balik dan penjedaan dalam bahasa mudah, dan tentukan lebih awal apa yang berlaku jika seseorang membatalkan pada pertengahan bulan. Peraturan yang adil dan mudah lebih baik daripada pertengkaran kes demi kes.",
+          },
+          {
+            question: "Bagaimanakah saya mengutip bayaran berulang?",
+            answer:
+              "Pilihan mungkin termasuk kad yang disimpan, perkhidmatan debit langsung bank, atau pengeluaran invois untuk ahli perniagaan, bergantung pada bank atau pembekal pembayaran anda. Tanya tentang kelayakan, yuran dan keperluan persetujuan, dan rancang untuk pembayaran gagal dengan peringatan dan tempoh bertolak ansur yang singkat.",
+          },
+          {
+            question: "Bagaimanakah saya boleh mengurangkan ahli yang membatalkan?",
+            answer:
+              "Bimbing ahli dengan baik, semak lebih awal, perhatikan tanda amaran seperti penggunaan rendah atau penghantaran dilangkau, teruskan menambah nilai, tawarkan jeda atau pelan lebih kecil dan bukannya pembatalan, dan tanya ahli yang pergi mengapa mereka pergi.",
+          },
+          {
+            question: "Angka mana yang patut saya jejak?",
+            answer:
+              "Ahli aktif, pendaftaran baharu, pembatalan, hasil berulang bulanan, purata hasil bagi setiap ahli, dan kos memenangi dan melayan setiap ahli. Perhatikan juga aliran tunai, kerana kos juga berulang.",
+          },
+          {
+            question: "Bila langganan ialah pilihan yang salah?",
+            answer:
+              "Apabila pelanggan tidak memerlukan produk secara tetap, pendaftaran lemah, pusing ganti tinggi, atau kos penghantaran memakan margin. Lebih baik berhenti atau membentuk semula tawaran daripada mengekalkan model yang merosakkan reputasi anda.",
+          },
+        ],
+      },
+    },
+  },
 ];

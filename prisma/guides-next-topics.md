@@ -15,17 +15,16 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Anti-Bribery and Business Ethics: What Corporate Liability Rules Mean for Malaysian SMEs**
-   — Why ethics matters for small firms, the corporate liability provision
-   in Malaysia's anti-corruption law and what it asks of companies (to
-   hedge, confirm with MACC), common risk situations (licences, tenders,
-   gifts, facilitation payments), simple policies and adequate procedures
-   for a small team, gifts and hospitality rules, dealing with suppliers
-   and agents, whistleblowing, record keeping, and training staff.
+1. **Starting a Side Business While Employed: Contracts, Conflicts of Interest, and Tax in Malaysia**
+   — Checking your employment contract and company policy, conflict of
+   interest and confidentiality, using your employer's time and resources,
+   when to register a business (to hedge), income tax on extra income and
+   keeping records (to hedge), managing time and energy, testing the idea
+   cheaply, telling your employer, and when to make the leap to full time.
 
-2. **Subscription and Membership Models: Building Recurring Revenue for Malaysian SMEs**
-   — Which businesses suit subscriptions or memberships, pricing and
-   tiers, trials and cancellation terms, fair billing and auto-renewal
-   consent (to hedge on consumer rules), collecting recurring payments,
-   reducing churn, onboarding members, measuring recurring revenue, and
-   when a subscription is the wrong fit.
+2. **Choosing and Using a Simple CRM: Keeping Track of Customers and Leads for Malaysian SMEs**
+   — Why a spreadsheet stops working, what a CRM does, choosing between a
+   spreadsheet, a free tool and a paid system (features to hedge), what
+   customer information to record, tracking leads and follow-ups, using
+   notes and reminders, personal data and consent (PDPA, to hedge), keeping
+   data clean, and getting the team to use it.
