@@ -1350,6 +1350,50 @@
       ],
       "description": "Smiling woman with braids opening a plain cardboard box on a sofa",
       "usedBy": "subscription-and-membership-models-cover.webp"
+    },
+    {
+      "id": 9052126,
+      "tags": [
+        "side",
+        "laptop",
+        "home",
+        "asian"
+      ],
+      "description": "Asian woman in a white tee drinking water from a green glass while working at a laptop beside a lamp and plant",
+      "usedBy": "side-business-while-employed-cover.webp"
+    },
+    {
+      "id": 6857208,
+      "tags": [
+        "side",
+        "laptop",
+        "evening",
+        "home"
+      ],
+      "description": "Man in a mustard sweater typing on a laptop at a round white table in a lamplit living room",
+      "usedBy": "side-business-while-employed-evening.webp"
+    },
+    {
+      "id": 3932812,
+      "tags": [
+        "crm",
+        "tablet",
+        "florist",
+        "asian"
+      ],
+      "description": "Asian florist in an apron tapping a tablet on a worktable covered with flowers and ribbons",
+      "usedBy": "simple-crm-for-malaysian-smes-tablet.webp"
+    },
+    {
+      "id": 3932817,
+      "tags": [
+        "crm",
+        "tablet",
+        "florist",
+        "asian"
+      ],
+      "description": "Smiling Asian florist in an apron resting her chin on her hand beside a tablet and ribbons at a worktable",
+      "usedBy": "simple-crm-for-malaysian-smes-cover.webp"
     }
   ]
 }

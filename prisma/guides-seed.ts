@@ -39809,4 +39809,1389 @@ Hasil berulang bernilai kerana ia bergantung pada kepercayaan. Tawarkan sesuatu 
       },
     },
   },
+  {
+    slug: "side-business-while-employed-in-malaysia",
+    title: "Starting a Side Business While Employed: Contracts, Conflicts of Interest, and Tax in Malaysia",
+    seoTitle: "Starting a Side Business While Employed in Malaysia",
+    seoDescription:
+      "Starting a side business while employed in Malaysia: check your contract, avoid conflicts of interest, handle tax and registration, and manage your time.",
+    coverImage: {
+      file: "side-business-while-employed-cover.webp",
+      mimeType: "image/webp",
+      alt: "A woman with long dark hair in a white t-shirt drinking from a green glass while working at a laptop, with a lamp and a leafy plant beside her",
+      altTranslations: {
+        zh: "一位留着黑色长发、身穿白色T恤的女士一边喝着绿色玻璃杯里的水，一边使用笔记本电脑，旁边有灯和绿叶植物",
+        ms: "Seorang wanita berambut hitam panjang berbaju-T putih minum dari gelas hijau sambil bekerja di komputer riba, dengan lampu dan tumbuhan berdaun di sebelahnya",
+      },
+    },
+    contentImages: {
+      evening: {
+        file: "side-business-while-employed-evening.webp",
+        mimeType: "image/webp",
+        alt: "A man in a mustard sweater typing on a laptop at a round white table in a softly lit room with floor lamps",
+        altTranslations: {
+          zh: "一位身穿芥末黄毛衣的男士在灯光柔和、摆着落地灯的房间里，坐在白色圆桌旁敲打笔记本电脑",
+          ms: "Seorang lelaki berbaju sweater kuning mustard menaip pada komputer riba di meja bulat putih di bilik yang diterangi lembut dengan lampu lantai",
+        },
+        after: "Read your employment contract before you spend a single ringgit on the idea.",
+        afterTranslations: {
+          zh: "在您为这个构想花一分钱之前，先读您的雇佣合约。",
+          ms: "Baca kontrak pekerjaan anda sebelum anda membelanjakan walau seringgit pun untuk idea itu.",
+        },
+      },
+    },
+    excerpt:
+      "Many Malaysians test a business idea in the evenings and on weekends while keeping a steady job. This guide helps you check your employment contract and conflict-of-interest risks, decide when to register, understand how side income is taxed, keep records, manage your time and energy, and know when to make the leap.",
+    body: `A salary gives you a safety net, and a side business gives you room to try. For many people, the safest way to test an idea is to keep the job and build the business in the evenings and on weekends.
+
+But a side business is not free of risk. A badly handled one can breach your contract, upset your employer, create a tax problem, or leave you exhausted. A little care at the start can save a lot of trouble later.
+
+This is general information, not legal, tax, or financial advice. Employment contracts differ, and tax rules, forms, and thresholds change over time and may be described differently in different sources, so some details here may be out of date. Confirm your own situation with your employer, the Inland Revenue Board (LHDN), and a lawyer or accountant where needed.
+
+## 1. Start with your employment situation
+
+### Start with the contract
+Read your employment contract before you spend a single ringgit on the idea. Look for clauses on other employment, outside business activities, exclusivity, conflict of interest, confidentiality, and intellectual property. The contract usually decides what you may do.
+
+### There is generally no blanket ban
+Malaysian law does not generally ban a person from having another source of income, so the contract and your employer's policies matter most. Where a clause requires approval, get it in writing before you start.
+
+### Check the staff handbook and policies
+Policies on side work, use of company equipment, social media, and gifts can add rules beyond the contract. Our guide on the employee handbook and HR policies explains what such rules usually cover.
+
+### Consider your industry
+Some roles, such as those in regulated sectors, public service, or sensitive positions, have stricter rules about outside business. Check carefully.
+
+### If unsure, ask
+A short, honest conversation with HR or your manager is better than a surprise later. If you are worried about the answer, take advice from an employment lawyer first.
+
+## 2. Avoid conflicts of interest
+
+### Do not compete with your employer
+Selling to the same customers, in the same field, or using the same suppliers can be a clear conflict. Choose a business in a different area if you can.
+
+### Keep your employer's information to yourself
+Never use client lists, prices, plans, or other confidential information from your job. This can breach your duties even without a written clause.
+
+### Keep your work and your side business separate
+Do not use company time, laptops, email, phones, premises, or contacts for your side business. Make your side work happen outside working hours and on your own equipment.
+
+### Be careful with ideas created at work
+Inventions, designs, and content made as part of your job may belong to your employer. Check your contract on intellectual property. Our guide on trademark registration explains how to protect what is genuinely yours.
+
+### Watch for hidden overlaps
+Selling to colleagues, suppliers of your employer, or customers you met through your job can create awkward situations. Disclose where appropriate.
+
+### Know the risks
+Doing a side business in secret, against a clear rule or in conflict with the employer's interests, can lead to disciplinary action, including dismissal in serious cases. Take it seriously.
+
+## 3. Test the idea cheaply
+
+### Start small
+Use what you already have, such as a spare room, a laptop, and existing skills. Avoid big loans or large stock purchases before you know that customers will pay. Our guide on writing a business plan explains how to think the idea through.
+
+### Check real demand first
+Talk to potential customers, take pre-orders, or run a small trial. Our guide on understanding your customers explains simple, low-cost research.
+
+### Set a small budget and a deadline
+Decide how much you can afford to lose and how long you will test before deciding what to do next.
+
+### Choose a model that fits spare hours
+Services you can do in set slots, products with easy fulfilment, and online selling suit limited time. Our guide on selling online in Malaysia and our guide on running a home-based business explain options.
+
+### Keep your day job performing
+Your salary funds the experiment. Do not let the side business damage your work.
+
+## 4. Decide when and how to register
+
+### Selling regularly usually means registering
+If you trade under a business name or sell on a regular basis, you will likely need to register your business. Our guide on how to register a business explains the options, such as sole proprietorship, partnership, or company.
+
+### Tax and registration are separate questions
+Reports differ on whether business registration is needed for tax purposes, but registering can make your business look more credible, help with banking, and give a clear structure. Confirm what is required for your situation.
+
+### Check licences and permits
+Some activities need licences, such as food or certain services. Our guide on business licences and permits and our guide on starting a food business explain common requirements.
+
+### Open a separate account
+Keep business money apart from personal money from the beginning. Our guide on opening a business bank account explains why this matters.
+
+### Consider your name and brand
+Check that the name you choose is available and not too close to someone else's. Our guide on trademark registration explains how to protect it.
+
+## 5. Understand tax on your side income
+
+### Side income is generally taxable
+Income from a side business or freelance work is generally still income, even if you also earn a salary. Plan to declare it, and do not assume that a small amount is safe to ignore.
+
+### Know which form applies
+The right tax form can depend on whether the income counts as business income, and sources differ in how they describe this. Check the current position with LHDN or a tax adviser.
+
+### Check the filing rules
+Filing thresholds and deadlines change, so confirm the current figures on the official LHDN website. Our guide on the small business tax calendar explains key dates.
+
+### Keep good records
+Record every sale and expense, and keep invoices and receipts for several years in case of questions. Check how long you are expected to keep them. Our guide on bookkeeping and accounting basics explains how.
+
+### Claim only what is allowed
+Business expenses may be deductible if they meet the rules, but personal costs are not. Our guide on tax deductions and incentives for Malaysian SMEs explains the basics.
+
+### Remember other obligations
+Depending on your sales and activities, other rules may apply, such as sales tax once you reach certain levels. Our guide on SST registration explains how thresholds work, and our guide on freelancers and gig workers explains related contributions.
+
+### Be aware that income can be visible
+Payment platforms and clients may report payments, so undeclared income can surface later. Our guide on handling a tax audit explains what to expect.
+
+## 6. Manage your time, energy, and money
+
+### Protect your health
+Working a full day and then another shift is tiring. Set limits, protect sleep, and take rest days, because burnout hurts both jobs. Our guide on delegating and avoiding owner burnout explains how to avoid it.
+
+### Time-block your side work
+Schedule fixed slots, such as two evenings and a weekend morning, and protect them. Short, regular sessions beat sporadic marathons.
+
+### Say no to the wrong tasks
+You cannot do everything. Focus on the few actions that bring customers and income, and automate or drop the rest.
+
+### Keep personal and business money apart
+Do not use your salary account for business, and avoid taking on debt for an unproven idea. Our guide on managing cash flow and our guide on managing business debt explain why.
+
+### Keep a cash buffer
+Side income can be uneven. Keep savings so that a slow month does not force bad decisions.
+
+> Treat your side business as a real business from day one: separate money, clear records, and honest dealings with your employer.
+
+## 7. Talk to your employer when it is right
+
+### Disclose when your contract requires it
+If approval or notice is required, ask early and in writing, and explain that the business is separate and not competing.
+
+### Offer reassurance
+Make clear that you will not use company time or resources, will not compete, and will keep your work performance up.
+
+### Get any approval in writing
+A written reply protects both sides. Keep a copy.
+
+### Prepare for a no
+If your employer refuses, you can decide whether to change the idea, wait, or consider other options. Seek advice before you act against a clear instruction.
+
+### Keep communication honest
+Honesty builds trust, and surprises damage it.
+
+## 8. Know when to make the leap
+
+### Look at the numbers
+Compare your side income and profit with your salary and living costs over several months. Our guide on tracking business performance explains which numbers to follow.
+
+### Check demand and workload
+If you are turning away customers or cannot grow without more hours, that may signal readiness.
+
+### Build a runway
+Many people aim to save several months of living costs before leaving a job. Decide your own safety margin.
+
+### Plan the handover
+Give proper notice, follow your contract on resignation and any restrictions, and leave on good terms. Our guide on business partners and shareholder agreements and our guide on hiring your first employee explain the next steps when you grow.
+
+### Do not rush
+It is fine to stay part-time for as long as it suits you. A business that grows steadily is better than one that is forced.
+
+If you need help from a lawyer, an accountant, or a business adviser to set up your side business properly, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so that customers can find your business.
+
+## Common mistakes Malaysians make with side businesses
+
+- **Starting without reading the employment contract.** A clause on outside work or conflict of interest can cause serious trouble, so read it and ask for approval where needed.
+- **Using company time, tools, or contacts.** This can breach your duties and risk your job, so keep your side business fully separate.
+- **Not declaring the income or keeping records.** Side income is generally taxable, so record everything and check the current rules with LHDN.
+
+## Where to start
+
+- **This week:** Read your employment contract and staff handbook for clauses on outside work, and note anything that needs approval.
+- **Next:** Test the idea cheaply with a few real customers, using your own time and equipment.
+- **Then:** Open a separate account, keep records, and confirm registration and tax steps with LHDN or an adviser.
+- **Every quarter:** Review your income, your energy, and your employer relationship, and decide whether to continue, grow, or pause.
+
+A side business can be a safe way to try your idea. Respect your contract, keep things separate, and handle your tax properly, and you can build something real without risking your job.`,
+    faqs: [
+      {
+        question: "Can I run a side business while employed in Malaysia?",
+        answer:
+          "There is generally no blanket legal ban, but your employment contract and company policies matter most. Look for clauses on outside work, conflict of interest, and confidentiality, and get any required approval in writing before you start.",
+      },
+      {
+        question: "What counts as a conflict of interest?",
+        answer:
+          "Competing with your employer, selling to the same customers, using confidential information, or using company time, equipment, or contacts. Choose a business in a different area and keep it fully separate from your job.",
+      },
+      {
+        question: "Do I have to tell my employer?",
+        answer:
+          "If your contract or policies require approval or notice, yes, and it is best to ask early and in writing. If you are unsure, ask HR or take advice from an employment lawyer before you start.",
+      },
+      {
+        question: "Is side income taxable?",
+        answer:
+          "Income from a side business or freelance work is generally taxable even if you also earn a salary. The right form and filing thresholds can change and are described differently in different sources, so confirm with LHDN or a tax adviser.",
+      },
+      {
+        question: "Do I need to register my business?",
+        answer:
+          "If you trade under a business name or sell regularly, you will likely need to register, and some activities need licences. Registration can also help with credibility and banking. Confirm what applies to your situation.",
+      },
+      {
+        question: "What records should I keep?",
+        answer:
+          "Record every sale and expense, and keep invoices and receipts for several years in case of questions. Check how long you are expected to keep them. Keep business money in a separate account.",
+      },
+      {
+        question: "How do I avoid burning out?",
+        answer:
+          "Time-block fixed slots for your side work, protect sleep and rest days, say no to low-value tasks, and keep a cash buffer. Burnout hurts both your job and your business.",
+      },
+      {
+        question: "When should I quit my job to run the business full-time?",
+        answer:
+          "When your side income and profit have been steady over several months, demand exceeds your spare hours, and you have a savings runway. Give proper notice, follow your contract, and do not rush.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "在职时创办副业：马来西亚的合约、利益冲突与税务",
+        excerpt:
+          "许多马来西亚人在保住稳定工作的同时，利用晚上和周末测试一个创业构想。本指南帮助您查核雇佣合约和利益冲突的风险，决定何时注册，了解副业收入如何课税，保留记录，管理时间和精力，并知道何时该跃进。",
+        body: `薪水给您一张安全网，而副业给您尝试的空间。对许多人来说，测试一个构想最安全的方式，是保住工作，并利用晚上和周末建立企业。
+
+但副业并非没有风险。处理不当的副业可能违反您的合约、惹恼雇主、造成税务问题，或让您筋疲力尽。一开始多留意一点，可以省下日后许多麻烦。
+
+本文仅提供一般信息，并非法律、税务或财务建议。雇佣合约各不相同，税务规定、表格和门槛会随时间变化，各个来源的描述也可能不同，所以此处的部分细节可能已经过时。请就您自己的情况向雇主、内陆税收局（LHDN），并在需要时向律师或会计师确认。
+
+## 1. 从您的雇佣情况开始
+
+### 从合约开始
+在您为这个构想花一分钱之前，先读您的雇佣合约。寻找关于其他雇佣、外部业务活动、排他性、利益冲突、保密和知识产权的条款。合约通常决定您可以做什么。
+
+### 一般没有一刀切的禁令
+马来西亚法律一般不禁止一个人拥有另一项收入来源，所以合约和雇主的政策最重要。如果某项条款要求批准，请在开始之前以书面取得。
+
+### 查看员工手册和政策
+关于副业、使用公司设备、社交媒体和礼品的政策，可能在合约之外增加规则。我们关于员工手册与人力资源政策的指南说明了这类规则通常涵盖什么。
+
+### 考虑您的行业
+某些职位，例如受规管的行业、公共服务或敏感的职位，对外部业务有更严格的规定。请仔细查核。
+
+### 如有疑问，就问
+与人力资源或您的经理进行简短而诚实的交谈，胜过日后的意外。如果您担心答案，请先向雇佣律师征求意见。
+
+## 2. 避免利益冲突
+
+### 不要与您的雇主竞争
+向相同的顾客销售、在相同的领域，或使用相同的供应商，可能是明显的冲突。如果可以，请选择不同领域的业务。
+
+### 保护雇主的信息
+绝不要使用您工作中的客户名单、价格、计划或其他机密信息。即使没有书面条款，这也可能违反您的职责。
+
+### 让工作和副业分开
+不要把公司的时间、笔记本电脑、电邮、手机、场所或人脉用于您的副业。让您的副业在工作时间之外，并使用您自己的设备。
+
+### 小心在工作中产生的构想
+作为工作一部分而创作的发明、设计和内容，可能属于您的雇主。请查看您合约中关于知识产权的部分。我们关于商标注册的指南说明了如何保护真正属于您的东西。
+
+### 留意隐藏的重叠
+向同事、雇主的供应商，或通过工作认识的顾客销售，可能造成尴尬的局面。适当时请披露。
+
+### 了解风险
+暗中经营副业、违反明确的规定，或与雇主的利益冲突，可能导致纪律处分，严重时包括解雇。请认真对待。
+
+## 3. 低成本地测试构想
+
+### 从小规模开始
+使用您已经拥有的东西，例如一个空房间、一台笔记本电脑和现有的技能。在知道顾客会付钱之前，避免大额贷款或大量进货。我们关于撰写商业计划书的指南说明了如何把构想想清楚。
+
+### 先查核真实的需求
+与潜在的顾客交谈、接受预订，或进行小规模的试验。我们关于了解您的顾客的指南说明了简单、低成本的调查。
+
+### 设定小额预算和期限
+决定您能承受损失多少，以及在决定下一步之前您将测试多久。
+
+### 选择适合零碎时间的模式
+能在固定时段完成的服务、容易履行的产品，以及网上销售，适合有限的时间。我们关于在马来西亚网上销售的指南和关于经营居家企业的指南说明了选项。
+
+### 让您的正职保持表现
+您的薪水为这次试验出资。不要让副业损害您的工作。
+
+## 4. 决定何时以及如何注册
+
+### 经常销售通常意味着需要注册
+如果您以某个企业名称交易，或经常销售，您很可能需要注册您的企业。我们关于如何注册企业的指南说明了选项，例如独资、合伙或公司。
+
+### 税务和注册是两个不同的问题
+关于税务用途是否需要企业注册，各方说法不一，但注册可以让您的企业看起来更可信，有助于银行往来，并提供清楚的架构。请确认您的情况需要什么。
+
+### 查核执照和许可证
+某些活动需要执照，例如食品或某些服务。我们关于营业执照与许可证的指南和关于开办食品生意的指南说明了常见的要求。
+
+### 开设独立的户口
+从一开始就把企业的钱与个人的钱分开。我们关于开设企业银行户口的指南说明了为什么这很重要。
+
+### 考虑您的名称和品牌
+查看您选择的名称是否可用，并且与别人的不太相近。我们关于商标注册的指南说明了如何保护它。
+
+## 5. 了解副业收入的税务
+
+### 副业收入一般须课税
+来自副业或自由职业的收入，即使您同时领薪水，一般仍然是收入。请计划申报，不要以为少量的金额可以安全地忽略。
+
+### 知道适用哪种表格
+正确的税表可能取决于该收入是否算作业务收入，而各个来源的描述不同。请向LHDN或税务顾问确认现行立场。
+
+### 查核申报规定
+申报门槛和截止日期会变，所以请在LHDN官方网站上确认现行的数字。我们关于小企业税务日历的指南说明了关键日期。
+
+### 保持良好的记录
+记录每一笔销售和开支，并保留发票和收据数年，以防被询问。请查明您被期望保留多久。我们关于簿记和会计基础的指南说明了如何做。
+
+### 只申报被允许的扣除
+符合规定的业务开支可能可以扣除，但个人开销不可以。我们关于马来西亚中小企业税务扣除与奖励的指南说明了基础知识。
+
+### 记得其他义务
+视您的销售和活动而定，可能适用其他规定，例如达到某些水平后的销售税。我们关于销售与服务税注册的指南说明了门槛如何运作，关于自由职业者与零工工作者的指南说明了相关的缴款。
+
+### 注意收入可能被看见
+付款平台和客户可能会申报付款，所以未申报的收入日后可能浮现。我们关于应对税务审计的指南说明了该期待什么。
+
+## 6. 管理您的时间、精力和金钱
+
+### 保护您的健康
+工作一整天再加另一班很累人。请设定限度，保护睡眠，并安排休息日，因为过劳会损害两份工作。我们关于授权与避免企业主过劳的指南说明了如何避免。
+
+### 为副业划出时间区块
+安排固定的时段，例如两个晚上和一个周末早上，并保护它们。短而规律的时段胜过零星的马拉松。
+
+### 对不对的任务说不
+您无法做所有的事。请专注于能带来顾客和收入的几项行动，并把其余的自动化或舍弃。
+
+### 把个人和企业的钱分开
+不要把您的薪水户口用于业务，并避免为一个未经验证的构想负债。我们关于管理现金流的指南和关于管理企业债务的指南说明了原因。
+
+### 保留现金缓冲
+副业收入可能不均匀。请保留储蓄，让淡月不会迫使您做出错误的决定。
+
+> 从第一天起就把您的副业当作真正的企业：分开的资金、清楚的记录，以及与雇主诚实的往来。
+
+## 7. 在适当时与雇主沟通
+
+### 当合约要求时披露
+如果需要批准或通知，请及早以书面询问，并说明该业务是独立的且不构成竞争。
+
+### 给予保证
+说清楚您不会使用公司的时间或资源，不会竞争，并会保持工作表现。
+
+### 以书面取得任何批准
+书面的答复保护双方。请保留一份副本。
+
+### 为被拒绝做好准备
+如果雇主拒绝，您可以决定是改变构想、等待，还是考虑其他选项。在违背明确的指示之前，请先征求意见。
+
+### 保持沟通诚实
+诚实建立信任，而意外会损害它。
+
+## 8. 知道何时该跃进
+
+### 看数字
+比较几个月来您的副业收入和利润，与您的薪水和生活费。我们关于追踪企业绩效的指南说明了应该追踪哪些数字。
+
+### 查核需求和工作量
+如果您正在婉拒顾客，或没有更多时间就无法成长，那可能表示您已准备好了。
+
+### 建立缓冲期
+许多人的目标是在离职前存下数个月的生活费。请决定您自己的安全余地。
+
+### 规划交接
+给予适当的通知，遵守您合约中关于辞职和任何限制的规定，并和平离开。我们关于商业伙伴与股东协议的指南和关于聘请第一位员工的指南说明了成长时的下一步。
+
+### 不要急
+只要合适，维持兼职也没问题。稳步成长的企业胜过被迫起步的企业。
+
+如果您需要律师、会计师或商业顾问协助您妥善设立副业，可以[浏览目录](/zh)寻找您附近的专业人士，并[创建免费商家列表](/zh/signup)，让顾客能找到您的企业。
+
+## 马来西亚人在副业方面的常见错误
+
+- **没读雇佣合约就开始。** 关于外部工作或利益冲突的条款可能造成严重的麻烦，所以请阅读它，并在需要时请求批准。
+- **使用公司的时间、工具或人脉。** 这可能违反您的职责并危及您的工作，所以请让您的副业完全分开。
+- **不申报收入或不保留记录。** 副业收入一般须课税，所以请记录一切，并向LHDN确认现行规定。
+
+## 从哪里开始
+
+- **本周：** 阅读您的雇佣合约和员工手册中关于外部工作的条款，并记下任何需要批准的事项。
+- **接下来：** 用您自己的时间和设备，通过几位真实的顾客低成本地测试构想。
+- **然后：** 开设独立的户口，保留记录，并向LHDN或顾问确认注册和税务步骤。
+- **每个季度：** 检视您的收入、精力和与雇主的关系，并决定是继续、扩大还是暂停。
+
+副业可以是尝试您构想的安全方式。尊重您的合约，让事情分开，妥善处理您的税务，您就能在不冒失去工作风险的情况下建立真正的事业。`,
+        faqs: [
+          {
+            question: "在马来西亚，我可以在受雇期间经营副业吗？",
+            answer:
+              "一般没有一刀切的法律禁令，但您的雇佣合约和公司政策最重要。寻找关于外部工作、利益冲突和保密的条款，并在开始之前以书面取得任何需要的批准。",
+          },
+          {
+            question: "什么算利益冲突？",
+            answer:
+              "与您的雇主竞争、向相同的顾客销售、使用机密信息，或使用公司的时间、设备或人脉。请选择不同领域的业务，并让它与您的工作完全分开。",
+          },
+          {
+            question: "我必须告诉雇主吗？",
+            answer:
+              "如果您的合约或政策要求批准或通知，就必须，最好是及早以书面询问。如果不确定，请在开始之前询问人力资源，或向雇佣律师征求意见。",
+          },
+          {
+            question: "副业收入要课税吗？",
+            answer:
+              "来自副业或自由职业的收入，即使您同时领薪水，一般也须课税。正确的表格和申报门槛可能会变，各个来源的描述也不同，所以请向LHDN或税务顾问确认。",
+          },
+          {
+            question: "我需要注册我的企业吗？",
+            answer:
+              "如果您以某个企业名称交易或经常销售，您很可能需要注册，某些活动也需要执照。注册也有助于可信度和银行往来。请确认适用于您情况的规定。",
+          },
+          {
+            question: "我应该保留哪些记录？",
+            answer:
+              "记录每一笔销售和开支，并保留发票和收据数年，以防被询问。请查明您被期望保留多久。把企业的钱放在独立的户口里。",
+          },
+          {
+            question: "我如何避免过劳？",
+            answer:
+              "为副业划出固定的时间区块，保护睡眠和休息日，对低价值的任务说不，并保留现金缓冲。过劳会同时损害您的工作和企业。",
+          },
+          {
+            question: "我应该什么时候辞职全职经营企业？",
+            answer:
+              "当您的副业收入和利润几个月来稳定、需求超过您的空闲时间，并且您有储蓄缓冲期时。给予适当的通知，遵守您的合约，不要急。",
+          },
+        ],
+      },
+      ms: {
+        title: "Memulakan Perniagaan Sampingan Semasa Bekerja: Kontrak, Konflik Kepentingan dan Cukai di Malaysia",
+        excerpt:
+          "Ramai rakyat Malaysia menguji idea perniagaan pada waktu malam dan hujung minggu sambil mengekalkan pekerjaan tetap. Panduan ini membantu anda menyemak kontrak pekerjaan dan risiko konflik kepentingan, memutuskan bila hendak mendaftar, memahami bagaimana pendapatan sampingan dicukai, menyimpan rekod, menguruskan masa dan tenaga, dan mengetahui bila hendak melangkah.",
+        body: `Gaji memberi anda jaring keselamatan, dan perniagaan sampingan memberi anda ruang untuk mencuba. Bagi ramai orang, cara paling selamat untuk menguji idea ialah mengekalkan pekerjaan dan membina perniagaan pada waktu malam dan hujung minggu.
+
+Tetapi perniagaan sampingan bukan bebas risiko. Yang dikendalikan dengan buruk boleh melanggar kontrak anda, menyakitkan hati majikan, mewujudkan masalah cukai, atau membuat anda keletihan. Sedikit penjagaan pada awalnya boleh menjimatkan banyak masalah kemudian.
+
+Ini maklumat umum, bukan nasihat undang-undang, cukai atau kewangan. Kontrak pekerjaan berbeza, dan peraturan cukai, borang dan ambang berubah dari semasa ke semasa dan mungkin diterangkan secara berbeza dalam sumber berbeza, jadi sebahagian butiran di sini mungkin sudah lapuk. Sahkan situasi anda sendiri dengan majikan, Lembaga Hasil Dalam Negeri (LHDN), dan peguam atau akauntan jika perlu.
+
+## 1. Mulakan dengan keadaan pekerjaan anda
+
+### Mulakan dengan kontrak
+Baca kontrak pekerjaan anda sebelum anda membelanjakan walau seringgit pun untuk idea itu. Cari klausa tentang pekerjaan lain, aktiviti perniagaan luar, eksklusiviti, konflik kepentingan, kerahsiaan dan harta intelek. Kontrak biasanya menentukan apa yang boleh anda lakukan.
+
+### Pada amnya tiada larangan menyeluruh
+Undang-undang Malaysia pada amnya tidak melarang seseorang mempunyai sumber pendapatan lain, jadi kontrak dan dasar majikan paling penting. Jika sesuatu klausa memerlukan kelulusan, dapatkan secara bertulis sebelum anda bermula.
+
+### Semak buku panduan pekerja dan dasar
+Dasar tentang kerja sampingan, penggunaan peralatan syarikat, media sosial dan hadiah boleh menambah peraturan di luar kontrak. Panduan kami tentang buku panduan pekerja dan dasar HR menerangkan apa yang biasanya dilindungi oleh peraturan sebegini.
+
+### Pertimbangkan industri anda
+Sesetengah peranan, seperti dalam sektor terkawal, perkhidmatan awam atau jawatan sensitif, mempunyai peraturan lebih ketat tentang perniagaan luar. Semak dengan teliti.
+
+### Jika tidak pasti, tanya
+Perbualan ringkas dan jujur dengan HR atau pengurus anda lebih baik daripada kejutan kemudian. Jika anda bimbang tentang jawapannya, dapatkan nasihat peguam pekerjaan dahulu.
+
+## 2. Elakkan konflik kepentingan
+
+### Jangan bersaing dengan majikan anda
+Menjual kepada pelanggan yang sama, dalam bidang yang sama, atau menggunakan pembekal yang sama boleh menjadi konflik yang jelas. Pilih perniagaan dalam bidang berbeza jika boleh.
+
+### Simpan maklumat majikan anda untuk diri sendiri
+Jangan sekali-kali menggunakan senarai pelanggan, harga, pelan atau maklumat sulit lain daripada kerja anda. Ini boleh melanggar tugas anda walaupun tanpa klausa bertulis.
+
+### Pastikan kerja dan perniagaan sampingan anda berasingan
+Jangan gunakan masa syarikat, komputer riba, e-mel, telefon, premis atau kenalan untuk perniagaan sampingan anda. Lakukan kerja sampingan di luar waktu bekerja dan menggunakan peralatan sendiri.
+
+### Berhati-hati dengan idea yang dicipta di tempat kerja
+Ciptaan, reka bentuk dan kandungan yang dibuat sebagai sebahagian daripada kerja anda mungkin milik majikan. Semak kontrak anda tentang harta intelek. Panduan kami tentang pendaftaran tanda dagangan menerangkan cara melindungi apa yang benar-benar milik anda.
+
+### Perhatikan pertindihan tersembunyi
+Menjual kepada rakan sekerja, pembekal majikan anda atau pelanggan yang anda temui melalui kerja boleh mewujudkan situasi yang canggung. Nyatakan jika sesuai.
+
+### Ketahui risikonya
+Menjalankan perniagaan sampingan secara rahsia, bertentangan dengan peraturan yang jelas atau bercanggah dengan kepentingan majikan boleh membawa kepada tindakan disiplin, termasuk pemberhentian dalam kes serius. Ambil serius.
+
+## 3. Uji idea dengan murah
+
+### Mulakan kecil
+Gunakan apa yang sudah anda ada, seperti bilik kosong, komputer riba dan kemahiran sedia ada. Elakkan pinjaman besar atau pembelian stok yang banyak sebelum anda tahu pelanggan akan membayar. Panduan kami tentang menulis pelan perniagaan menerangkan cara memikirkan idea itu sepenuhnya.
+
+### Semak permintaan sebenar dahulu
+Bercakap dengan bakal pelanggan, terima tempahan awal, atau jalankan percubaan kecil. Panduan kami tentang memahami pelanggan anda menerangkan kajian yang mudah dan berkos rendah.
+
+### Tetapkan bajet kecil dan tarikh akhir
+Tentukan berapa banyak anda mampu rugi dan berapa lama anda akan menguji sebelum memutuskan apa yang seterusnya.
+
+### Pilih model yang sesuai dengan jam terluang
+Perkhidmatan yang boleh dilakukan dalam slot tertentu, produk dengan pemenuhan yang mudah, dan jualan dalam talian sesuai dengan masa yang terhad. Panduan kami tentang menjual dalam talian di Malaysia dan panduan kami tentang menjalankan perniagaan di rumah menerangkan pilihan.
+
+### Pastikan kerja siang anda berprestasi
+Gaji anda membiayai percubaan ini. Jangan biarkan perniagaan sampingan merosakkan kerja anda.
+
+## 4. Tentukan bila dan bagaimana hendak mendaftar
+
+### Menjual secara tetap biasanya bermakna mendaftar
+Jika anda berniaga di bawah nama perniagaan atau menjual secara tetap, anda berkemungkinan perlu mendaftarkan perniagaan anda. Panduan kami tentang cara mendaftar perniagaan menerangkan pilihan, seperti pemilikan tunggal, perkongsian atau syarikat.
+
+### Cukai dan pendaftaran ialah soalan berasingan
+Laporan berbeza tentang sama ada pendaftaran perniagaan diperlukan untuk tujuan cukai, tetapi mendaftar boleh menjadikan perniagaan anda kelihatan lebih boleh dipercayai, membantu dengan perbankan, dan memberi struktur yang jelas. Sahkan apa yang diperlukan untuk situasi anda.
+
+### Semak lesen dan permit
+Sesetengah aktiviti memerlukan lesen, seperti makanan atau perkhidmatan tertentu. Panduan kami tentang lesen dan permit perniagaan dan panduan kami tentang memulakan perniagaan makanan menerangkan keperluan lazim.
+
+### Buka akaun berasingan
+Pastikan wang perniagaan berasingan daripada wang peribadi sejak awal. Panduan kami tentang membuka akaun bank perniagaan menerangkan mengapa ini penting.
+
+### Pertimbangkan nama dan jenama anda
+Semak bahawa nama yang anda pilih tersedia dan tidak terlalu hampir dengan milik orang lain. Panduan kami tentang pendaftaran tanda dagangan menerangkan cara melindunginya.
+
+## 5. Fahami cukai ke atas pendapatan sampingan anda
+
+### Pendapatan sampingan pada amnya boleh dicukai
+Pendapatan daripada perniagaan sampingan atau kerja bebas pada amnya masih pendapatan, walaupun anda juga mendapat gaji. Rancang untuk mengisytiharkannya, dan jangan anggap jumlah kecil selamat untuk diabaikan.
+
+### Ketahui borang mana yang terpakai
+Borang cukai yang betul mungkin bergantung pada sama ada pendapatan itu dikira pendapatan perniagaan, dan sumber berbeza dalam cara menerangkannya. Semak kedudukan semasa dengan LHDN atau penasihat cukai.
+
+### Semak peraturan pemfailan
+Ambang dan tarikh akhir pemfailan berubah, jadi sahkan angka semasa di laman web rasmi LHDN. Panduan kami tentang kalendar cukai perniagaan kecil menerangkan tarikh penting.
+
+### Simpan rekod yang baik
+Rekod setiap jualan dan perbelanjaan, dan simpan invois dan resit selama beberapa tahun sekiranya ada soalan. Semak berapa lama anda dijangka menyimpannya. Panduan kami tentang asas simpan kira dan perakaunan menerangkan caranya.
+
+### Tuntut hanya apa yang dibenarkan
+Perbelanjaan perniagaan mungkin boleh ditolak jika memenuhi peraturan, tetapi kos peribadi tidak. Panduan kami tentang potongan cukai dan insentif untuk PKS Malaysia menerangkan asasnya.
+
+### Ingat kewajipan lain
+Bergantung pada jualan dan aktiviti anda, peraturan lain mungkin terpakai, seperti cukai jualan apabila anda mencapai tahap tertentu. Panduan kami tentang pendaftaran SST menerangkan bagaimana ambang berfungsi, dan panduan kami tentang pekerja bebas dan pekerja gig menerangkan caruman berkaitan.
+
+### Sedar bahawa pendapatan boleh kelihatan
+Platform pembayaran dan pelanggan mungkin melaporkan pembayaran, jadi pendapatan yang tidak diisytiharkan boleh muncul kemudian. Panduan kami tentang menangani audit cukai menerangkan apa yang perlu dijangka.
+
+## 6. Uruskan masa, tenaga dan wang anda
+
+### Lindungi kesihatan anda
+Bekerja sehari penuh dan kemudian satu syif lagi memenatkan. Tetapkan had, lindungi tidur, dan ambil hari rehat, kerana keletihan merosakkan kedua-dua kerja. Panduan kami tentang mendelegasikan dan mengelak keletihan pemilik menerangkan cara mengelaknya.
+
+### Blok masa untuk kerja sampingan anda
+Jadualkan slot tetap, seperti dua malam dan satu pagi hujung minggu, dan lindunginya. Sesi pendek yang tetap mengalahkan maraton yang sporadik.
+
+### Katakan tidak kepada tugas yang salah
+Anda tidak dapat melakukan segalanya. Fokus pada beberapa tindakan yang membawa pelanggan dan pendapatan, dan automasikan atau tinggalkan yang lain.
+
+### Pastikan wang peribadi dan perniagaan berasingan
+Jangan gunakan akaun gaji anda untuk perniagaan, dan elakkan berhutang untuk idea yang belum terbukti. Panduan kami tentang menguruskan aliran tunai dan panduan kami tentang menguruskan hutang perniagaan menerangkan sebabnya.
+
+### Simpan penampan tunai
+Pendapatan sampingan boleh tidak sekata. Simpan wang supaya bulan yang perlahan tidak memaksa anda membuat keputusan buruk.
+
+> Layan perniagaan sampingan anda sebagai perniagaan sebenar sejak hari pertama: wang berasingan, rekod yang jelas, dan urusan jujur dengan majikan anda.
+
+## 7. Bercakap dengan majikan apabila sesuai
+
+### Nyatakan apabila kontrak anda memerlukannya
+Jika kelulusan atau notis diperlukan, tanya lebih awal dan secara bertulis, dan terangkan bahawa perniagaan itu berasingan dan tidak bersaing.
+
+### Beri jaminan
+Jelaskan bahawa anda tidak akan menggunakan masa atau sumber syarikat, tidak akan bersaing, dan akan mengekalkan prestasi kerja anda.
+
+### Dapatkan sebarang kelulusan secara bertulis
+Balasan bertulis melindungi kedua-dua pihak. Simpan satu salinan.
+
+### Bersedia untuk ditolak
+Jika majikan anda menolak, anda boleh memutuskan sama ada hendak mengubah idea, menunggu, atau mempertimbangkan pilihan lain. Dapatkan nasihat sebelum anda bertindak bertentangan dengan arahan yang jelas.
+
+### Pastikan komunikasi jujur
+Kejujuran membina kepercayaan, dan kejutan merosakkannya.
+
+## 8. Ketahui bila hendak melangkah
+
+### Lihat angka
+Bandingkan pendapatan dan keuntungan sampingan anda dengan gaji dan kos sara hidup anda selama beberapa bulan. Panduan kami tentang menjejak prestasi perniagaan menerangkan angka mana yang perlu diikuti.
+
+### Semak permintaan dan beban kerja
+Jika anda menolak pelanggan atau tidak dapat berkembang tanpa lebih banyak jam, itu mungkin menandakan kesediaan.
+
+### Bina tempoh perlindungan
+Ramai orang mensasarkan untuk menyimpan kos sara hidup beberapa bulan sebelum meninggalkan pekerjaan. Tentukan margin keselamatan anda sendiri.
+
+### Rancang penyerahan
+Beri notis yang sewajarnya, patuhi kontrak anda tentang peletakan jawatan dan sebarang sekatan, dan pergi dengan baik. Panduan kami tentang rakan kongsi perniagaan dan perjanjian pemegang saham dan panduan kami tentang mengupah pekerja pertama anda menerangkan langkah seterusnya apabila anda berkembang.
+
+### Jangan tergesa-gesa
+Tidak mengapa kekal separuh masa selagi ia sesuai dengan anda. Perniagaan yang berkembang secara stabil lebih baik daripada yang dipaksa.
+
+Jika anda memerlukan bantuan peguam, akauntan atau penasihat perniagaan untuk menyediakan perniagaan sampingan anda dengan betul, anda boleh [menyemak imbas direktori](/ms) untuk profesional berhampiran anda, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan dapat menemui perniagaan anda.
+
+## Kesilapan lazim rakyat Malaysia dengan perniagaan sampingan
+
+- **Bermula tanpa membaca kontrak pekerjaan.** Klausa tentang kerja luar atau konflik kepentingan boleh menyebabkan masalah serius, jadi bacalah dan minta kelulusan jika perlu.
+- **Menggunakan masa, alat atau kenalan syarikat.** Ini boleh melanggar tugas anda dan membahayakan pekerjaan anda, jadi pastikan perniagaan sampingan anda sepenuhnya berasingan.
+- **Tidak mengisytiharkan pendapatan atau menyimpan rekod.** Pendapatan sampingan pada amnya boleh dicukai, jadi rekod segalanya dan semak peraturan semasa dengan LHDN.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Baca kontrak pekerjaan dan buku panduan pekerja anda untuk klausa tentang kerja luar, dan catat apa-apa yang memerlukan kelulusan.
+- **Seterusnya:** Uji idea dengan murah bersama beberapa pelanggan sebenar, menggunakan masa dan peralatan anda sendiri.
+- **Kemudian:** Buka akaun berasingan, simpan rekod, dan sahkan langkah pendaftaran dan cukai dengan LHDN atau penasihat.
+- **Setiap suku tahun:** Semak pendapatan, tenaga dan hubungan anda dengan majikan, dan tentukan sama ada hendak meneruskan, berkembang atau menjeda.
+
+Perniagaan sampingan boleh menjadi cara selamat untuk mencuba idea anda. Hormati kontrak anda, pastikan perkara berasingan, dan uruskan cukai anda dengan betul, dan anda boleh membina sesuatu yang nyata tanpa mempertaruhkan pekerjaan anda.`,
+        faqs: [
+          {
+            question: "Bolehkah saya menjalankan perniagaan sampingan semasa bekerja di Malaysia?",
+            answer:
+              "Pada amnya tiada larangan undang-undang menyeluruh, tetapi kontrak pekerjaan dan dasar syarikat anda paling penting. Cari klausa tentang kerja luar, konflik kepentingan dan kerahsiaan, dan dapatkan sebarang kelulusan yang diperlukan secara bertulis sebelum anda bermula.",
+          },
+          {
+            question: "Apakah yang dikira konflik kepentingan?",
+            answer:
+              "Bersaing dengan majikan anda, menjual kepada pelanggan yang sama, menggunakan maklumat sulit, atau menggunakan masa, peralatan atau kenalan syarikat. Pilih perniagaan dalam bidang berbeza dan pastikan ia sepenuhnya berasingan daripada kerja anda.",
+          },
+          {
+            question: "Adakah saya perlu memberitahu majikan saya?",
+            answer:
+              "Jika kontrak atau dasar anda memerlukan kelulusan atau notis, ya, dan sebaiknya tanya lebih awal dan secara bertulis. Jika tidak pasti, tanya HR atau dapatkan nasihat peguam pekerjaan sebelum anda bermula.",
+          },
+          {
+            question: "Adakah pendapatan sampingan boleh dicukai?",
+            answer:
+              "Pendapatan daripada perniagaan sampingan atau kerja bebas pada amnya boleh dicukai walaupun anda juga mendapat gaji. Borang yang betul dan ambang pemfailan boleh berubah dan diterangkan secara berbeza dalam sumber berbeza, jadi sahkan dengan LHDN atau penasihat cukai.",
+          },
+          {
+            question: "Adakah saya perlu mendaftarkan perniagaan saya?",
+            answer:
+              "Jika anda berniaga di bawah nama perniagaan atau menjual secara tetap, anda berkemungkinan perlu mendaftar, dan sesetengah aktiviti memerlukan lesen. Pendaftaran juga boleh membantu kebolehpercayaan dan perbankan. Sahkan apa yang terpakai untuk situasi anda.",
+          },
+          {
+            question: "Rekod apa yang patut saya simpan?",
+            answer:
+              "Rekod setiap jualan dan perbelanjaan, dan simpan invois dan resit selama beberapa tahun sekiranya ada soalan. Semak berapa lama anda dijangka menyimpannya. Simpan wang perniagaan dalam akaun berasingan.",
+          },
+          {
+            question: "Bagaimanakah saya mengelak keletihan?",
+            answer:
+              "Blok masa slot tetap untuk kerja sampingan anda, lindungi tidur dan hari rehat, katakan tidak kepada tugas bernilai rendah, dan simpan penampan tunai. Keletihan merosakkan kedua-dua pekerjaan dan perniagaan anda.",
+          },
+          {
+            question: "Bila patut saya berhenti kerja untuk menjalankan perniagaan sepenuh masa?",
+            answer:
+              "Apabila pendapatan dan keuntungan sampingan anda stabil selama beberapa bulan, permintaan melebihi jam terluang anda, dan anda mempunyai tempoh perlindungan simpanan. Beri notis yang sewajarnya, patuhi kontrak anda, dan jangan tergesa-gesa.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "simple-crm-for-malaysian-smes",
+    title: "Choosing and Using a Simple CRM: Keeping Track of Customers and Leads for Malaysian SMEs",
+    seoTitle: "Choosing and Using a Simple CRM for Malaysian SMEs",
+    seoDescription:
+      "How Malaysian SMEs can choose and use a simple CRM: decide what to track, pick a tool, follow up leads, protect personal data and keep records clean.",
+    coverImage: {
+      file: "simple-crm-for-malaysian-smes-cover.webp",
+      mimeType: "image/webp",
+      alt: "A smiling florist in a white t-shirt and black apron resting her chin on her hand beside a tablet, ribbons, and flowers on a worktable",
+      altTranslations: {
+        zh: "一位身穿白色T恤和黑色围裙的微笑花店店员单手托腮，旁边的工作台上放着平板电脑、丝带和花朵",
+        ms: "Seorang penjual bunga yang tersenyum berbaju-T putih dan apron hitam menongkat dagu di sebelah tablet, reben dan bunga di atas meja kerja",
+      },
+    },
+    contentImages: {
+      tablet: {
+        file: "simple-crm-for-malaysian-smes-tablet.webp",
+        mimeType: "image/webp",
+        alt: "A florist in an apron tapping a tablet on a worktable covered with tulips, eucalyptus, and coloured ribbons",
+        altTranslations: {
+          zh: "一位穿着围裙的花店店员在摆满郁金香、桉树叶和彩色丝带的工作台上点按平板电脑",
+          ms: "Seorang penjual bunga berapron menyentuh tablet di atas meja kerja yang dipenuhi tulip, daun ekaliptus dan reben berwarna",
+        },
+        after: "Write down who you want to remember, and why, before you pick a tool.",
+        afterTranslations: {
+          zh: "在挑选工具之前，先写下您想记住谁，以及为什么。",
+          ms: "Tulis siapa yang anda mahu ingat, dan sebabnya, sebelum anda memilih alat.",
+        },
+      },
+    },
+    excerpt:
+      "Customer details scattered across chats, notebooks, and memory cause missed follow-ups and lost sales. This guide helps Malaysian SMEs decide what to record, choose between a spreadsheet and a CRM tool, track leads and follow-ups, protect personal data, keep records clean, and get the team to actually use the system.",
+    body: `In a small business, customer information lives everywhere: in WhatsApp chats, scraps of paper, a few phone contacts, an old spreadsheet, and the owner's memory. It works until it does not: a hot lead goes unanswered, a regular is offered the wrong price, or a staff member leaves with the customer list in their head.
+
+A customer relationship management system, or CRM, is simply a place to keep customer details and the history of your dealings with them. It can be as simple as a well-kept spreadsheet. The goal is not software, but never dropping the ball.
+
+This is general information, not legal or technical advice. Software features, prices, and data protection rules change over time, and some details in this guide may be out of date. Check each tool's current terms and the relevant authority for the latest rules.
+
+## 1. Know why a CRM helps
+
+### Memory does not scale
+You can remember fifty customers. You cannot remember five hundred, or what you promised each of them last month.
+
+### Follow-ups win sales
+Many sales are lost because nobody followed up. A simple system that reminds you who to contact, and when, directly adds revenue.
+
+### Records survive staff changes
+When customer details live in one shared place, a resignation or a lost phone does not wipe out your relationships.
+
+### History improves service
+Knowing what a customer bought, asked, or complained about lets you serve them like a regular, even when a different person answers.
+
+### It supports better decisions
+A clear list of customers and leads lets you see who buys most, who has gone quiet, and where new customers come from. Our guide on tracking business performance explains how to use such numbers.
+
+## 2. Decide what to track before choosing a tool
+
+### Start with people, not software
+Write down who you want to remember, and why, before you pick a tool. Customers, enquiries, repeat buyers, corporate clients, suppliers, and referral partners may all deserve a place, but each needs different information.
+
+### List the questions you need answered
+Examples: Who enquired last week and has not bought? Who has not ordered in three months? Which customers are due for a renewal? Let these questions decide the fields you record.
+
+### Keep the fields few
+Start with name, contact details, source, status, last contact, next step, and notes. Add more only when you actually use them.
+
+### Define simple stages
+For leads, you might use new, contacted, quoted, won, and lost. Clear stages make it obvious what needs attention.
+
+### Decide who updates what
+Agree who enters new contacts, who updates notes, and who owns follow-ups, so that the system stays accurate.
+
+## 3. Choose between a spreadsheet, a free tool, and a paid CRM
+
+### Start with a spreadsheet if you are small
+A shared spreadsheet with a few columns, a status filter, and a follow-up date can serve a business with a modest customer list for a long time. It is cheap and flexible.
+
+### Know when a spreadsheet stops working
+Warning signs include duplicate entries, nobody knowing which version is current, missed follow-ups, several people editing at once, and no history of past conversations.
+
+### Consider free or low-cost CRM tools
+Many tools offer free or entry-level plans with contact records, deal stages, reminders, and simple reports. Features, limits, and prices change, so check current plans and what happens to your data if you stop using the tool.
+
+### Consider paid systems when you grow
+Larger teams may need user permissions, automation, integration with email or messaging, and reporting. Weigh the cost against the sales it will help you win.
+
+### Check these points before you commit
+Ask whether it works well on a phone, supports the languages you use, lets you export your data, offers sensible user access controls, and where the data is stored. Our guide on choosing accounting software for your Malaysian SME explains a similar checklist.
+
+### Try before you buy
+Use a trial with real data and one or two staff members for a few weeks before you commit.
+
+## 4. Record the right customer information
+
+### Contact basics
+Name, phone number, email, business name, and preferred language or channel. Check spellings and use consistent formats.
+
+### Source
+Note how the customer found you, such as referral, social media, walk-in, or an event. This shows which efforts bring customers. Our guide on getting your business found online explains channels to consider.
+
+### History
+Record purchases, quotes, appointments, and important conversations with dates. Short notes are enough.
+
+### Preferences and useful details
+Sizes, favourite products, special dates, or delivery preferences can make service feel personal, if the customer has shared them with you.
+
+### Status and next step
+For every lead or customer, record where they are and what happens next, with a date.
+
+### Leave out what you do not need
+Do not collect sensitive details such as identity numbers or health information unless you have a clear reason and proper protection.
+
+## 5. Track leads and follow-ups
+
+### Capture every enquiry in one place
+Whether it arrives by chat, phone, email, or in person, add it to the system the same day. Our guide on serving customers on WhatsApp explains how to manage chat enquiries.
+
+### Move leads through stages
+Update the status as you contact, quote, and close. A weekly look at each stage shows where leads get stuck.
+
+### Always set the next step
+A lead without a next action date is a lead you will forget. Make it a habit to schedule a follow-up every time you update a record.
+
+### Use reminders
+Calendar reminders or the tool's own alerts help you contact people on time. Review "due today" and "overdue" each morning.
+
+### Record lost reasons
+When you lose a sale, note why, such as price, timing, or competitor. Patterns help you improve your offer. Our guide on understanding your customers explains how to learn from feedback.
+
+### Follow up politely and usefully
+Add something helpful to each follow-up, such as an answer, a sample, or a useful tip, rather than only asking whether they have decided.
+
+> A CRM is only as good as the habit of using it, so keep it simple enough that your team will.
+
+## 6. Protect personal data and respect consent
+
+### Know that customer details are personal data
+Malaysia's Personal Data Protection Act applies to personal data used in commercial transactions, and the rules and guidance can change. Check the current requirements with the official authority. Our guide on PDPA compliance explains the basics.
+
+### Say why you collect it
+Tell customers what you collect, why, and how you will use it, for example in a short notice on your form or page.
+
+### Collect only what you need
+Less data means less risk. Avoid collecting details that you will not use.
+
+### Ask before marketing
+Get permission before adding someone to promotional messages, and give an easy way to opt out. Our guide on social media marketing for Malaysian SMEs explains how to market without annoying people.
+
+### Control who can see it
+Give staff access only to what they need, remove access when they leave, and avoid sharing customer lists by chat or personal email. Our guide on cybersecurity for small businesses explains practical protection.
+
+### Choose tools with care
+Check where a tool stores data, whether it offers security features such as strong passwords and two-step verification, and how you can delete or export records.
+
+### Delete what you no longer need
+Review old records from time to time and remove those you have no reason to keep, while respecting any legal record-keeping requirements.
+
+## 7. Keep your data clean
+
+### Avoid duplicates
+Search before you add a new contact. Merge or delete duplicates regularly.
+
+### Use consistent formats
+Use one format for phone numbers, names, and statuses. Drop-down lists help in a tool, and data validation helps in a spreadsheet.
+
+### Update when things change
+Fix wrong numbers, record new addresses, and mark customers who ask not to be contacted.
+
+### Do a monthly tidy
+Spend thirty minutes each month removing dead leads, fixing errors, and checking that next steps are still current.
+
+### Back it up
+Keep a regular backup or export of your customer data, stored securely. Our guide on business continuity planning explains how to protect important information.
+
+## 8. Get your team to use it
+
+### Keep it simple
+If entering a contact takes five minutes, people will skip it. Cut fields and steps until it takes seconds.
+
+### Make it the single source of truth
+Agree that if it is not in the system, it did not happen. Stop keeping side lists.
+
+### Train for an hour, not a day
+Show the basic steps, such as adding a contact, updating a status, and setting a reminder, and let people practise.
+
+### Show what is in it for them
+Explain that the system saves them from hunting through chats, helps them hit targets, and makes handovers easier. Our guide on delegating and avoiding owner burnout explains why good systems help you step back.
+
+### Review together
+Spend ten minutes in a weekly meeting looking at overdue follow-ups and stuck leads. Use what you see to coach, not to blame.
+
+### Lead by example
+If the owner uses the system, the team will follow. If the owner keeps the real information in their head, nobody will bother.
+
+If you need help from an IT adviser, a freelancer, or a trainer to set up your system, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so that new customers can find your business and start the first record.
+
+## Common mistakes Malaysian SMEs make with customer records
+
+- **Buying a complicated system before knowing what to track.** Decide your questions and fields first, and start with a simple spreadsheet if you are small.
+- **Not setting a next step and date.** Leads without follow-up dates are forgotten, so schedule the next contact every time you update a record.
+- **Collecting personal data carelessly.** Keep only what you need, ask permission before marketing, and control who can see it.
+
+## Where to start
+
+- **This week:** List the questions you want your customer records to answer, and choose five to seven fields.
+- **Next:** Set up a shared spreadsheet or a free tool, and move your active leads and best customers into it.
+- **Then:** Add follow-up dates, a weekly review, and a short consent notice on your forms.
+- **Every month:** Tidy duplicates, check next steps, and back up your data.
+
+A good customer record system does not need to be fancy. It needs to be simple, accurate, and used every day, so that no customer is forgotten and no opportunity slips away.`,
+    faqs: [
+      {
+        question: "Do I need a CRM, or is a spreadsheet enough?",
+        answer:
+          "A well-kept shared spreadsheet can serve a small business with a modest customer list. Consider a CRM when you see duplicates, missed follow-ups, confusion about which version is current, several people editing at once, or no history of past conversations.",
+      },
+      {
+        question: "What information should I record about customers?",
+        answer:
+          "Start with name, contact details, source, status, last contact, next step, and notes. Add purchase history and preferences if customers have shared them, and leave out sensitive details that you do not need.",
+      },
+      {
+        question: "How do I choose a CRM tool?",
+        answer:
+          "Define your questions and fields first, then compare tools on ease of use, mobile support, languages, data export, access controls, where data is stored, and price. Try a trial with real data and a couple of staff members before committing.",
+      },
+      {
+        question: "How do I track leads properly?",
+        answer:
+          "Capture every enquiry in one place the same day, move leads through simple stages, always set a next step and date, use reminders, and record why a sale was lost so that you can improve.",
+      },
+      {
+        question: "What data protection rules apply to customer records?",
+        answer:
+          "Malaysia's Personal Data Protection Act applies to personal data used in commercial transactions. Tell customers why you collect their data, collect only what you need, ask before marketing, control access, and check the current requirements with the official authority.",
+      },
+      {
+        question: "How do I keep my customer data clean?",
+        answer:
+          "Search before adding to avoid duplicates, use consistent formats, update details when they change, tidy up monthly, and keep a secure backup or export of your data.",
+      },
+      {
+        question: "How do I get my team to use the system?",
+        answer:
+          "Keep it simple, make it the single source of truth, train briefly, show what is in it for them, review overdue follow-ups together each week, and use the system yourself.",
+      },
+      {
+        question: "Is it safe to store customer data in a free tool?",
+        answer:
+          "It depends on the tool. Check where it stores data, what security features it offers such as strong passwords and two-step verification, what its terms say, and how you can export or delete your records.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "选择并使用简单的客户关系管理系统：马来西亚中小企业追踪客户与潜在客户",
+        excerpt:
+          "散落在聊天记录、笔记本和记忆中的客户资料，会造成漏掉的跟进和流失的销售。本指南帮助马来西亚中小企业决定记录什么，在电子表格和客户关系管理工具之间做选择，追踪潜在客户和跟进，保护个人资料，保持记录整洁，并让团队真正使用这套系统。",
+        body: `在小企业里，客户资料无处不在：在WhatsApp聊天里、小纸条上、几个手机联络人、一份旧的电子表格，以及企业主的记忆中。它能运作，直到它不能：一位热切的潜在客户没有得到回复，一位常客被报了错误的价格，或一位员工把客户名单装在脑子里离职了。
+
+客户关系管理系统（CRM）其实只是一个存放客户资料以及您与他们往来历史的地方。它可以简单得像一份保存良好的电子表格。目标不是软件，而是不掉球。
+
+本文仅提供一般信息，并非法律或技术建议。软件功能、价格和数据保护规定会随时间变化，本指南的部分细节可能已经过时。请查看每个工具目前的条款和相关主管单位，了解最新的规定。
+
+## 1. 了解为什么CRM有帮助
+
+### 记忆无法扩展
+您可以记住五十位顾客。您无法记住五百位，或您上个月对每一位承诺了什么。
+
+### 跟进赢得销售
+许多销售是因为没人跟进而流失的。一个简单的系统提醒您该联络谁、何时联络，直接增加营收。
+
+### 记录能经受员工的更替
+当客户资料存放在一个共享的地方，辞职或遗失手机不会抹去您的关系。
+
+### 历史改善服务
+知道顾客买过什么、问过什么或投诉过什么，让您即使是由另一个人接听，也能像对待常客一样服务他们。
+
+### 它支持更好的决定
+一份清楚的客户和潜在客户名单，让您看到谁买得最多、谁沉寂了，以及新顾客从哪里来。我们关于追踪企业绩效的指南说明了如何使用这类数字。
+
+## 2. 在选择工具之前先决定追踪什么
+
+### 先从人开始，而不是软件
+在挑选工具之前，先写下您想记住谁，以及为什么。顾客、询问者、回头客、企业客户、供应商和引荐伙伴都可能值得有一席之地，但每一类需要不同的信息。
+
+### 列出您需要回答的问题
+例如：上星期谁询问过但还没买？谁已经三个月没有下订单？哪些顾客快到续约了？让这些问题决定您记录的栏位。
+
+### 让栏位保持精简
+从姓名、联络方式、来源、状态、上次联络、下一步和备注开始。只有在您真正使用时才再增加。
+
+### 定义简单的阶段
+对于潜在客户，您可以使用新、已联络、已报价、成交和失败。清楚的阶段让人一目了然什么需要关注。
+
+### 决定谁更新什么
+商定谁输入新的联络人、谁更新备注，以及谁负责跟进，让系统保持准确。
+
+## 3. 在电子表格、免费工具和付费CRM之间做选择
+
+### 如果规模小，就从电子表格开始
+一份共享的电子表格，有几个栏位、一个状态筛选和一个跟进日期，可以为客户名单不多的企业服务很长时间。它便宜又灵活。
+
+### 知道电子表格何时不再管用
+警讯包括重复的条目、没人知道哪个版本是最新的、漏掉的跟进、好几个人同时编辑，以及没有过去对话的历史。
+
+### 考虑免费或低成本的CRM工具
+许多工具提供免费或入门级的方案，有联络人记录、交易阶段、提醒和简单的报告。功能、限制和价格会变，所以请查看目前的方案，以及如果您停止使用该工具，您的数据会怎样。
+
+### 在成长时考虑付费系统
+较大的团队可能需要用户权限、自动化、与电邮或通讯的整合，以及报告。请权衡成本与它能帮您赢得的销售。
+
+### 在承诺之前查核这些要点
+询问它在手机上是否好用、是否支持您使用的语言、是否能导出您的数据、是否提供合理的用户访问控制，以及数据存放在哪里。我们关于为您的马来西亚中小企业选择会计软件的指南说明了类似的清单。
+
+### 先试后买
+在承诺之前，用真实的数据和一两位员工试用几个星期。
+
+## 4. 记录正确的客户信息
+
+### 联络基本资料
+姓名、电话号码、电邮、企业名称，以及偏好的语言或渠道。检查拼写并使用一致的格式。
+
+### 来源
+记下顾客如何找到您，例如引荐、社交媒体、上门或某个活动。这显示哪些努力带来顾客。我们关于让您的企业在网上被找到的指南说明了可以考虑的渠道。
+
+### 历史
+记录购买、报价、预约和重要的对话，并注明日期。简短的备注就够了。
+
+### 偏好和有用的细节
+尺寸、喜爱的产品、特别的日子或送货的偏好，可以让服务感觉有个人色彩，前提是顾客与您分享过。
+
+### 状态和下一步
+对每一位潜在客户或顾客，记录他们处于哪个阶段，以及接下来会发生什么，并附上日期。
+
+### 省略您不需要的
+除非您有明确的理由和适当的保护，否则不要收集身份证号码或健康信息等敏感资料。
+
+## 5. 追踪潜在客户和跟进
+
+### 把每一项询问集中在一个地方
+无论是通过聊天、电话、电邮还是当面，当天就把它加进系统。我们关于在WhatsApp上服务顾客的指南说明了如何管理聊天的询问。
+
+### 让潜在客户经过各个阶段
+在您联络、报价和成交时更新状态。每星期看一眼每个阶段，就能看到潜在客户卡在哪里。
+
+### 永远设定下一步
+没有下一步日期的潜在客户，就是您会忘记的潜在客户。养成每次更新记录时都安排一次跟进的习惯。
+
+### 使用提醒
+日历提醒或工具自己的警示，帮助您准时联络人。每天早上检视“今天到期”和“已逾期”。
+
+### 记录失败的原因
+当您失去一笔销售时，记下原因，例如价格、时机或竞争对手。规律帮助您改进方案。我们关于了解您的顾客的指南说明了如何从反馈中学习。
+
+### 礼貌而有用地跟进
+在每次跟进中加入有帮助的东西，例如一个答案、一份样品或一个有用的小贴士，而不是只问他们是否决定了。
+
+> CRM的价值取决于使用它的习惯，所以请让它简单到您的团队愿意用。
+
+## 6. 保护个人资料并尊重同意
+
+### 知道客户资料是个人资料
+马来西亚的个人资料保护法令适用于商业交易中使用的个人资料，规定和指引也可能改变。请向官方主管单位确认现行的要求。我们关于个人资料保护法令合规的指南说明了基础知识。
+
+### 说明为什么收集
+告诉顾客您收集什么、为什么，以及您将如何使用，例如在您的表格或页面上附上简短的通知。
+
+### 只收集您需要的
+数据越少风险越小。避免收集您不会用到的资料。
+
+### 营销前先询问
+在把某人加入促销讯息之前先取得许可，并提供简便的退出方式。我们关于马来西亚中小企业社交媒体营销的指南说明了如何在不惹人厌烦的情况下营销。
+
+### 控制谁能看到
+只让员工访问他们需要的，在他们离职时移除访问权限，并避免通过聊天或个人电邮分享客户名单。我们关于小企业网络安全的指南说明了实用的保护措施。
+
+### 谨慎选择工具
+查看工具把数据存放在哪里、是否提供强密码和两步验证等安全功能，以及您如何删除或导出记录。
+
+### 删除您不再需要的
+不时检视旧的记录，并移除没有理由保留的，同时遵守任何法律上的记录保存要求。
+
+## 7. 保持数据整洁
+
+### 避免重复
+在新增联络人之前先搜索。定期合并或删除重复项。
+
+### 使用一致的格式
+对电话号码、姓名和状态使用同一种格式。下拉选单在工具中有帮助，数据验证在电子表格中有帮助。
+
+### 在情况改变时更新
+修正错误的号码，记录新的地址，并标记要求不被联络的顾客。
+
+### 每月整理一次
+每月花三十分钟移除失效的潜在客户、修正错误，并检查下一步是否仍然是最新的。
+
+### 做好备份
+定期备份或导出您的客户数据，并安全保存。我们关于营运持续计划的指南说明了如何保护重要信息。
+
+## 8. 让您的团队使用它
+
+### 保持简单
+如果输入一位联络人需要五分钟，人们就会跳过。请削减栏位和步骤，直到只需几秒钟。
+
+### 让它成为唯一的真实来源
+商定如果不在系统里，就当作没发生。停止保留私下的名单。
+
+### 培训一个小时，而不是一天
+示范基本的步骤，例如新增联络人、更新状态和设定提醒，并让人们练习。
+
+### 说明这对他们有什么好处
+解释该系统让他们不必在聊天中翻找、帮助他们达成目标，并让交接更容易。我们关于授权与避免企业主过劳的指南说明了为什么好的系统能帮您退后一步。
+
+### 一起检视
+在每周会议中花十分钟查看逾期的跟进和卡住的潜在客户。用您所看到的来指导，而不是责备。
+
+### 以身作则
+如果企业主使用该系统，团队就会跟随。如果企业主把真正的信息放在脑子里，就没人会费心。
+
+如果您需要信息技术顾问、自由职业者或培训师协助设立您的系统，可以[浏览目录](/zh)寻找您附近的专业人士，并[创建免费商家列表](/zh/signup)，让新顾客能找到您的企业并开启第一笔记录。
+
+## 马来西亚中小企业在客户记录方面的常见错误
+
+- **在知道要追踪什么之前就买了复杂的系统。** 请先决定您的问题和栏位，如果规模小就从简单的电子表格开始。
+- **没有设定下一步和日期。** 没有跟进日期的潜在客户会被遗忘，所以每次更新记录时都请安排下一次联络。
+- **随意收集个人资料。** 只保留您需要的，在营销前先询问许可，并控制谁能看到。
+
+## 从哪里开始
+
+- **本周：** 列出您希望客户记录回答的问题，并选择五到七个栏位。
+- **接下来：** 设立共享的电子表格或免费工具，并把您活跃的潜在客户和最好的顾客移进去。
+- **然后：** 加入跟进日期、每周检视，以及您表格上的简短同意通知。
+- **每个月：** 整理重复项、检查下一步，并备份您的数据。
+
+好的客户记录系统不需要花哨。它需要简单、准确，并且每天使用，这样就没有顾客被遗忘，也没有机会溜走。`,
+        faqs: [
+          {
+            question: "我需要CRM，还是电子表格就够了？",
+            answer:
+              "一份保存良好的共享电子表格，可以为客户名单不多的小企业服务。当您看到重复项、漏掉的跟进、不知道哪个版本是最新的、好几个人同时编辑，或没有过去对话的历史时，请考虑CRM。",
+          },
+          {
+            question: "我应该记录哪些顾客信息？",
+            answer:
+              "从姓名、联络方式、来源、状态、上次联络、下一步和备注开始。如果顾客分享过，再加入购买历史和偏好，并省略您不需要的敏感资料。",
+          },
+          {
+            question: "我如何选择CRM工具？",
+            answer:
+              "先界定您的问题和栏位，然后就易用性、手机支持、语言、数据导出、访问控制、数据存放位置和价格比较工具。在承诺之前，用真实的数据和几位员工试用。",
+          },
+          {
+            question: "我如何妥善追踪潜在客户？",
+            answer:
+              "当天就把每一项询问集中在一个地方，让潜在客户经过简单的阶段，永远设定下一步和日期，使用提醒，并记录销售失败的原因以便改进。",
+          },
+          {
+            question: "客户记录适用哪些数据保护规定？",
+            answer:
+              "马来西亚的个人资料保护法令适用于商业交易中使用的个人资料。告诉顾客您为什么收集他们的资料，只收集您需要的，在营销前先询问，控制访问，并向官方主管单位确认现行的要求。",
+          },
+          {
+            question: "我如何保持客户数据整洁？",
+            answer:
+              "新增前先搜索以避免重复，使用一致的格式，在资料改变时更新，每月整理一次，并保留安全的数据备份或导出。",
+          },
+          {
+            question: "我如何让团队使用这套系统？",
+            answer:
+              "保持简单，让它成为唯一的真实来源，简短培训，说明这对他们有什么好处，每星期一起检视逾期的跟进，并且自己也使用该系统。",
+          },
+          {
+            question: "把客户数据存放在免费工具里安全吗？",
+            answer:
+              "这取决于工具。查看它把数据存放在哪里、提供强密码和两步验证等什么安全功能、条款怎么说，以及您如何导出或删除记录。",
+          },
+        ],
+      },
+      ms: {
+        title: "Memilih dan Menggunakan CRM Mudah: Menjejak Pelanggan dan Prospek untuk PKS Malaysia",
+        excerpt:
+          "Butiran pelanggan yang bertaburan dalam sembang, buku nota dan ingatan menyebabkan susulan terlepas dan jualan hilang. Panduan ini membantu PKS Malaysia memutuskan apa yang hendak direkod, memilih antara hamparan dan alat CRM, menjejak prospek dan susulan, melindungi data peribadi, menyimpan rekod yang bersih, dan membuat pasukan benar-benar menggunakan sistem itu.",
+        body: `Dalam perniagaan kecil, maklumat pelanggan ada di mana-mana: dalam sembang WhatsApp, kepingan kertas, beberapa kenalan telefon, hamparan lama, dan ingatan pemilik. Ia berfungsi sehingga ia tidak lagi berfungsi: prospek yang berminat tidak dijawab, pelanggan tetap ditawarkan harga yang salah, atau seorang pekerja berhenti dengan senarai pelanggan di dalam kepalanya.
+
+Sistem pengurusan perhubungan pelanggan, atau CRM, hanyalah tempat untuk menyimpan butiran pelanggan dan sejarah urusan anda dengan mereka. Ia boleh semudah hamparan yang dijaga dengan baik. Matlamatnya bukan perisian, tetapi tidak sekali-kali menjatuhkan bola.
+
+Ini maklumat umum, bukan nasihat undang-undang atau teknikal. Ciri perisian, harga dan peraturan perlindungan data berubah dari semasa ke semasa, dan sebahagian butiran dalam panduan ini mungkin sudah lapuk. Semak terma semasa setiap alat dan pihak berkuasa berkaitan untuk peraturan terkini.
+
+## 1. Ketahui mengapa CRM membantu
+
+### Ingatan tidak boleh diskalakan
+Anda boleh mengingati lima puluh pelanggan. Anda tidak boleh mengingati lima ratus, atau apa yang anda janjikan kepada setiap seorang bulan lepas.
+
+### Susulan memenangi jualan
+Banyak jualan hilang kerana tiada siapa yang menyusuli. Sistem mudah yang mengingatkan anda siapa untuk dihubungi, dan bila, secara langsung menambah hasil.
+
+### Rekod bertahan apabila pekerja bertukar
+Apabila butiran pelanggan berada di satu tempat bersama, peletakan jawatan atau telefon yang hilang tidak memadamkan hubungan anda.
+
+### Sejarah memperbaiki perkhidmatan
+Mengetahui apa yang pelanggan beli, tanya atau adukan membolehkan anda melayan mereka seperti pelanggan tetap, walaupun orang berbeza yang menjawab.
+
+### Ia menyokong keputusan yang lebih baik
+Senarai pelanggan dan prospek yang jelas membolehkan anda melihat siapa yang paling banyak membeli, siapa yang menyepi, dan dari mana pelanggan baharu datang. Panduan kami tentang menjejak prestasi perniagaan menerangkan cara menggunakan angka sebegitu.
+
+## 2. Tentukan apa yang hendak dijejak sebelum memilih alat
+
+### Mulakan dengan orang, bukan perisian
+Tulis siapa yang anda mahu ingat, dan sebabnya, sebelum anda memilih alat. Pelanggan, penanya, pembeli berulang, klien korporat, pembekal dan rakan rujukan mungkin semuanya wajar mendapat tempat, tetapi setiap satu memerlukan maklumat berbeza.
+
+### Senaraikan soalan yang anda perlu jawab
+Contoh: Siapa yang bertanya minggu lepas dan belum membeli? Siapa yang tidak membuat pesanan selama tiga bulan? Pelanggan mana yang hampir tiba masa pembaharuan? Biarkan soalan ini menentukan medan yang anda rekod.
+
+### Pastikan medan sedikit
+Mulakan dengan nama, butiran hubungan, sumber, status, hubungan terakhir, langkah seterusnya dan nota. Tambah lebih hanya apabila anda benar-benar menggunakannya.
+
+### Takrifkan peringkat yang mudah
+Untuk prospek, anda mungkin menggunakan baharu, dihubungi, disebut harga, berjaya dan gagal. Peringkat yang jelas menjadikan nyata apa yang memerlukan perhatian.
+
+### Tentukan siapa mengemas kini apa
+Persetujui siapa yang memasukkan kenalan baharu, siapa yang mengemas kini nota, dan siapa yang memiliki susulan, supaya sistem kekal tepat.
+
+## 3. Pilih antara hamparan, alat percuma dan CRM berbayar
+
+### Mulakan dengan hamparan jika anda kecil
+Hamparan dikongsi dengan beberapa lajur, penapis status dan tarikh susulan boleh berkhidmat untuk perniagaan dengan senarai pelanggan sederhana untuk masa yang lama. Ia murah dan fleksibel.
+
+### Ketahui bila hamparan tidak lagi berfungsi
+Tanda amaran termasuk entri bertindih, tiada siapa tahu versi mana yang terkini, susulan terlepas, beberapa orang menyunting serentak, dan tiada sejarah perbualan lalu.
+
+### Pertimbangkan alat CRM percuma atau berkos rendah
+Banyak alat menawarkan pelan percuma atau peringkat permulaan dengan rekod kenalan, peringkat urusan, peringatan dan laporan mudah. Ciri, had dan harga berubah, jadi semak pelan semasa dan apa yang berlaku kepada data anda jika anda berhenti menggunakan alat itu.
+
+### Pertimbangkan sistem berbayar apabila anda berkembang
+Pasukan lebih besar mungkin memerlukan kebenaran pengguna, automasi, integrasi dengan e-mel atau pemesejan, dan pelaporan. Timbang kos berbanding jualan yang akan dibantunya anda menangi.
+
+### Semak perkara ini sebelum anda membuat komitmen
+Tanya sama ada ia berfungsi baik pada telefon, menyokong bahasa yang anda gunakan, membolehkan anda mengeksport data anda, menawarkan kawalan akses pengguna yang munasabah, dan di mana data disimpan. Panduan kami tentang memilih perisian perakaunan untuk PKS Malaysia anda menerangkan senarai semak yang serupa.
+
+### Cuba sebelum membeli
+Gunakan percubaan dengan data sebenar dan seorang atau dua pekerja selama beberapa minggu sebelum anda membuat komitmen.
+
+## 4. Rekod maklumat pelanggan yang betul
+
+### Asas hubungan
+Nama, nombor telefon, e-mel, nama perniagaan, dan bahasa atau saluran pilihan. Semak ejaan dan gunakan format yang konsisten.
+
+### Sumber
+Catat bagaimana pelanggan menemui anda, seperti rujukan, media sosial, datang ke kedai atau acara. Ini menunjukkan usaha mana yang membawa pelanggan. Panduan kami tentang membolehkan perniagaan anda ditemui dalam talian menerangkan saluran yang boleh dipertimbangkan.
+
+### Sejarah
+Rekod pembelian, sebut harga, temu janji dan perbualan penting dengan tarikh. Nota ringkas sudah cukup.
+
+### Pilihan dan butiran berguna
+Saiz, produk kegemaran, tarikh istimewa atau pilihan penghantaran boleh menjadikan perkhidmatan terasa peribadi, jika pelanggan telah berkongsinya dengan anda.
+
+### Status dan langkah seterusnya
+Untuk setiap prospek atau pelanggan, rekod di mana mereka berada dan apa yang berlaku seterusnya, dengan tarikh.
+
+### Tinggalkan apa yang anda tidak perlukan
+Jangan kumpul butiran sensitif seperti nombor pengenalan atau maklumat kesihatan melainkan anda mempunyai sebab yang jelas dan perlindungan yang betul.
+
+## 5. Jejak prospek dan susulan
+
+### Rakam setiap pertanyaan di satu tempat
+Sama ada ia tiba melalui sembang, telefon, e-mel atau secara bersemuka, tambahkannya ke sistem pada hari yang sama. Panduan kami tentang melayan pelanggan di WhatsApp menerangkan cara menguruskan pertanyaan sembang.
+
+### Gerakkan prospek melalui peringkat
+Kemas kini status semasa anda menghubungi, memberi sebut harga dan menutup. Pandangan mingguan pada setiap peringkat menunjukkan di mana prospek tersangkut.
+
+### Sentiasa tetapkan langkah seterusnya
+Prospek tanpa tarikh tindakan seterusnya ialah prospek yang akan anda lupakan. Jadikan tabiat untuk menjadualkan susulan setiap kali anda mengemas kini rekod.
+
+### Gunakan peringatan
+Peringatan kalendar atau amaran alat sendiri membantu anda menghubungi orang tepat masa. Semak "tamat hari ini" dan "tertunggak" setiap pagi.
+
+### Rekod sebab kehilangan
+Apabila anda kehilangan jualan, catat sebabnya, seperti harga, masa atau pesaing. Corak membantu anda memperbaiki tawaran anda. Panduan kami tentang memahami pelanggan anda menerangkan cara belajar daripada maklum balas.
+
+### Susuli dengan sopan dan berguna
+Tambah sesuatu yang membantu pada setiap susulan, seperti jawapan, sampel atau petua berguna, dan bukannya sekadar bertanya sama ada mereka sudah memutuskan.
+
+> CRM hanya sebaik tabiat menggunakannya, jadi pastikan ia cukup mudah supaya pasukan anda mahu menggunakannya.
+
+## 6. Lindungi data peribadi dan hormati persetujuan
+
+### Ketahui bahawa butiran pelanggan ialah data peribadi
+Akta Perlindungan Data Peribadi Malaysia terpakai kepada data peribadi yang digunakan dalam transaksi komersial, dan peraturan serta panduan boleh berubah. Semak keperluan semasa dengan pihak berkuasa rasmi. Panduan kami tentang pematuhan PDPA menerangkan asasnya.
+
+### Nyatakan mengapa anda mengumpulnya
+Beritahu pelanggan apa yang anda kumpul, mengapa, dan bagaimana anda akan menggunakannya, contohnya dalam notis ringkas pada borang atau halaman anda.
+
+### Kumpul hanya apa yang anda perlukan
+Data lebih sedikit bermakna risiko lebih rendah. Elakkan mengumpul butiran yang tidak akan anda gunakan.
+
+### Tanya sebelum membuat pemasaran
+Dapatkan kebenaran sebelum menambah seseorang ke mesej promosi, dan beri cara mudah untuk menarik diri. Panduan kami tentang pemasaran media sosial untuk PKS Malaysia menerangkan cara memasarkan tanpa mengganggu orang.
+
+### Kawal siapa yang boleh melihatnya
+Beri pekerja akses hanya kepada apa yang mereka perlukan, tarik balik akses apabila mereka berhenti, dan elakkan berkongsi senarai pelanggan melalui sembang atau e-mel peribadi. Panduan kami tentang keselamatan siber untuk perniagaan kecil menerangkan perlindungan praktikal.
+
+### Pilih alat dengan berhati-hati
+Semak di mana alat menyimpan data, sama ada ia menawarkan ciri keselamatan seperti kata laluan kukuh dan pengesahan dua langkah, dan bagaimana anda boleh memadam atau mengeksport rekod.
+
+### Padam apa yang tidak lagi diperlukan
+Semak rekod lama dari semasa ke semasa dan buang yang anda tiada sebab untuk simpan, sambil menghormati sebarang keperluan penyimpanan rekod yang sah.
+
+## 7. Pastikan data anda bersih
+
+### Elakkan pertindihan
+Cari sebelum anda menambah kenalan baharu. Gabung atau padam pertindihan dengan kerap.
+
+### Gunakan format yang konsisten
+Gunakan satu format untuk nombor telefon, nama dan status. Senarai juntai bawah membantu dalam alat, dan pengesahan data membantu dalam hamparan.
+
+### Kemas kini apabila keadaan berubah
+Baiki nombor yang salah, rekod alamat baharu, dan tandakan pelanggan yang meminta tidak dihubungi.
+
+### Kemas setiap bulan
+Luangkan tiga puluh minit setiap bulan membuang prospek mati, membetulkan kesilapan, dan menyemak bahawa langkah seterusnya masih terkini.
+
+### Sandarkannya
+Simpan sandaran atau eksport tetap data pelanggan anda, disimpan dengan selamat. Panduan kami tentang perancangan kesinambungan perniagaan menerangkan cara melindungi maklumat penting.
+
+## 8. Buat pasukan anda menggunakannya
+
+### Pastikan mudah
+Jika memasukkan satu kenalan mengambil lima minit, orang akan melangkaunya. Kurangkan medan dan langkah sehingga ia mengambil beberapa saat.
+
+### Jadikan ia satu-satunya sumber kebenaran
+Persetujui bahawa jika ia tiada dalam sistem, ia tidak berlaku. Berhenti menyimpan senarai sampingan.
+
+### Latih selama sejam, bukan sehari
+Tunjukkan langkah asas, seperti menambah kenalan, mengemas kini status dan menetapkan peringatan, dan biarkan orang berlatih.
+
+### Tunjukkan apa untungnya bagi mereka
+Terangkan bahawa sistem itu menyelamatkan mereka daripada mencari dalam sembang, membantu mereka mencapai sasaran, dan memudahkan penyerahan. Panduan kami tentang mendelegasikan dan mengelak keletihan pemilik menerangkan mengapa sistem yang baik membantu anda berundur.
+
+### Semak bersama
+Luangkan sepuluh minit dalam mesyuarat mingguan melihat susulan tertunggak dan prospek yang tersangkut. Gunakan apa yang anda lihat untuk membimbing, bukan menyalahkan.
+
+### Beri teladan
+Jika pemilik menggunakan sistem, pasukan akan mengikut. Jika pemilik menyimpan maklumat sebenar dalam kepala, tiada siapa akan peduli.
+
+Jika anda memerlukan bantuan penasihat IT, pekerja bebas atau jurulatih untuk menyediakan sistem anda, anda boleh [menyemak imbas direktori](/ms) untuk profesional berhampiran anda, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan baharu dapat menemui perniagaan anda dan memulakan rekod pertama.
+
+## Kesilapan lazim PKS Malaysia dengan rekod pelanggan
+
+- **Membeli sistem yang rumit sebelum mengetahui apa yang hendak dijejak.** Tentukan soalan dan medan anda dahulu, dan mulakan dengan hamparan mudah jika anda kecil.
+- **Tidak menetapkan langkah seterusnya dan tarikh.** Prospek tanpa tarikh susulan dilupakan, jadi jadualkan hubungan seterusnya setiap kali anda mengemas kini rekod.
+- **Mengumpul data peribadi dengan cuai.** Simpan hanya apa yang anda perlukan, minta kebenaran sebelum membuat pemasaran, dan kawal siapa yang boleh melihatnya.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Senaraikan soalan yang anda mahu dijawab oleh rekod pelanggan anda, dan pilih lima hingga tujuh medan.
+- **Seterusnya:** Sediakan hamparan dikongsi atau alat percuma, dan pindahkan prospek aktif dan pelanggan terbaik anda ke dalamnya.
+- **Kemudian:** Tambah tarikh susulan, semakan mingguan, dan notis persetujuan ringkas pada borang anda.
+- **Setiap bulan:** Kemas pertindihan, semak langkah seterusnya, dan sandarkan data anda.
+
+Sistem rekod pelanggan yang baik tidak perlu mewah. Ia perlu mudah, tepat, dan digunakan setiap hari, supaya tiada pelanggan dilupakan dan tiada peluang terlepas.`,
+        faqs: [
+          {
+            question: "Adakah saya memerlukan CRM, atau hamparan sudah cukup?",
+            answer:
+              "Hamparan dikongsi yang dijaga dengan baik boleh berkhidmat untuk perniagaan kecil dengan senarai pelanggan sederhana. Pertimbangkan CRM apabila anda melihat pertindihan, susulan terlepas, kekeliruan tentang versi mana yang terkini, beberapa orang menyunting serentak, atau tiada sejarah perbualan lalu.",
+          },
+          {
+            question: "Maklumat apa yang patut saya rekod tentang pelanggan?",
+            answer:
+              "Mulakan dengan nama, butiran hubungan, sumber, status, hubungan terakhir, langkah seterusnya dan nota. Tambah sejarah pembelian dan pilihan jika pelanggan telah berkongsinya, dan tinggalkan butiran sensitif yang anda tidak perlukan.",
+          },
+          {
+            question: "Bagaimanakah saya memilih alat CRM?",
+            answer:
+              "Takrifkan soalan dan medan anda dahulu, kemudian bandingkan alat dari segi kemudahan penggunaan, sokongan mudah alih, bahasa, eksport data, kawalan akses, tempat data disimpan dan harga. Cuba percubaan dengan data sebenar dan beberapa pekerja sebelum membuat komitmen.",
+          },
+          {
+            question: "Bagaimanakah saya menjejak prospek dengan betul?",
+            answer:
+              "Rakam setiap pertanyaan di satu tempat pada hari yang sama, gerakkan prospek melalui peringkat yang mudah, sentiasa tetapkan langkah seterusnya dan tarikh, gunakan peringatan, dan rekod sebab jualan hilang supaya anda boleh memperbaiki.",
+          },
+          {
+            question: "Apakah peraturan perlindungan data yang terpakai untuk rekod pelanggan?",
+            answer:
+              "Akta Perlindungan Data Peribadi Malaysia terpakai kepada data peribadi yang digunakan dalam transaksi komersial. Beritahu pelanggan mengapa anda mengumpul data mereka, kumpul hanya apa yang anda perlukan, tanya sebelum membuat pemasaran, kawal akses, dan semak keperluan semasa dengan pihak berkuasa rasmi.",
+          },
+          {
+            question: "Bagaimanakah saya memastikan data pelanggan saya bersih?",
+            answer:
+              "Cari sebelum menambah untuk mengelak pertindihan, gunakan format yang konsisten, kemas kini butiran apabila ia berubah, kemas setiap bulan, dan simpan sandaran atau eksport data anda yang selamat.",
+          },
+          {
+            question: "Bagaimanakah saya membuat pasukan menggunakan sistem?",
+            answer:
+              "Pastikan mudah, jadikan ia satu-satunya sumber kebenaran, latih secara ringkas, tunjukkan apa untungnya bagi mereka, semak susulan tertunggak bersama setiap minggu, dan gunakan sistem itu sendiri.",
+          },
+          {
+            question: "Adakah selamat menyimpan data pelanggan dalam alat percuma?",
+            answer:
+              "Ia bergantung pada alat itu. Semak di mana ia menyimpan data, apa ciri keselamatan yang ditawarkan seperti kata laluan kukuh dan pengesahan dua langkah, apa kata terma, dan bagaimana anda boleh mengeksport atau memadam rekod anda.",
+          },
+        ],
+      },
+    },
+  },
 ];
