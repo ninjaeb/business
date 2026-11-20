@@ -15,16 +15,18 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Starting a Side Business While Employed: Contracts, Conflicts of Interest, and Tax in Malaysia**
-   — Checking your employment contract and company policy, conflict of
-   interest and confidentiality, using your employer's time and resources,
-   when to register a business (to hedge), income tax on extra income and
-   keeping records (to hedge), managing time and energy, testing the idea
-   cheaply, telling your employer, and when to make the leap to full time.
+1. **Building a Brand on a Small Budget: Name, Logo, Packaging, and a Consistent Look for Malaysian SMEs**
+   — What a brand is beyond a logo, choosing a name and checking it (to
+   hedge, point to trademark search), simple logo and colour choices,
+   working with a freelance designer or using templates, packaging and
+   labels (to hedge on labelling rules), consistent tone across chat,
+   social media and signage, photography on a phone, protecting your brand,
+   and measuring whether it helps.
 
-2. **Choosing and Using a Simple CRM: Keeping Track of Customers and Leads for Malaysian SMEs**
-   — Why a spreadsheet stops working, what a CRM does, choosing between a
-   spreadsheet, a free tool and a paid system (features to hedge), what
-   customer information to record, tracking leads and follow-ups, using
-   notes and reminders, personal data and consent (PDPA, to hedge), keeping
-   data clean, and getting the team to use it.
+2. **Serving a Multicultural Market and Tourists: Language, Culture, and Payments for Malaysian SMEs**
+   — Understanding Malaysia's mix of customers, offering information in
+   English, Chinese and Malay, respecting festive and dietary customs
+   (halal, to hedge), tourist-friendly signage and menus, accepting
+   foreign visitors' payments (to hedge), simple phrases for staff,
+   handling cultural misunderstandings politely, online listings for
+   tourists, and avoiding stereotypes in marketing.
