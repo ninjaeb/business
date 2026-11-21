@@ -41194,4 +41194,1353 @@ Sistem rekod pelanggan yang baik tidak perlu mewah. Ia perlu mudah, tepat, dan d
       },
     },
   },
+  {
+    slug: "building-a-brand-on-a-small-budget-for-malaysian-smes",
+    title: "Building a Brand on a Small Budget: Name, Logo, Packaging, and a Consistent Look for Malaysian SMEs",
+    seoTitle: "Building a Brand on a Small Budget for Malaysian SMEs",
+    seoDescription:
+      "How Malaysian SMEs can build a brand on a small budget: choose a name, design a simple logo, handle packaging and labels and stay consistent.",
+    coverImage: {
+      file: "building-a-brand-on-a-small-budget-cover.webp",
+      mimeType: "image/webp",
+      alt: "A designer in a striped top and light cardigan with a tape measure around her neck sketching a fashion design on paper at a white studio table",
+      altTranslations: {
+        zh: "一位身穿条纹上衣和浅色开襟衫、脖子上挂着卷尺的设计师，在白色工作室桌上的纸上绘制服装设计草图",
+        ms: "Seorang pereka berbaju belang dan kardigan cerah dengan pita pengukur di leher melakar reka bentuk fesyen di atas kertas di meja studio putih",
+      },
+    },
+    contentImages: {
+      sketches: {
+        file: "building-a-brand-on-a-small-budget-sketches.webp",
+        mimeType: "image/webp",
+        alt: "A person in a mustard shirt drawing small icon and logo ideas in a spiral notebook beside a computer monitor",
+        altTranslations: {
+          zh: "一位身穿芥末黄衬衫的人在电脑显示器旁的螺旋装订笔记本上绘制小图标和标志的构想",
+          ms: "Seseorang berkemeja kuning mustard melukis idea ikon dan logo kecil dalam buku nota lingkaran bersebelahan monitor komputer",
+        },
+        after: "Decide what your business stands for before you design a single thing.",
+        afterTranslations: {
+          zh: "在设计任何东西之前，先决定您的企业代表什么。",
+          ms: "Tentukan apa yang diwakili oleh perniagaan anda sebelum anda mereka bentuk apa-apa.",
+        },
+      },
+    },
+    excerpt:
+      "A brand is more than a logo: it is how customers recognise, remember, and trust your business. This guide helps Malaysian SMEs define what they stand for, choose and check a name, create a simple logo and look, handle packaging and labels, keep everything consistent across chat, social media, and signage, and protect what they build.",
+    body: `Small businesses often think of branding as something for big companies with big budgets. But every business already has a brand, whether it planned one or not. It is the impression that customers carry about you: how you look, sound, behave, and deliver.
+
+The good news is that a clear, consistent brand does not need an expensive agency. A few good decisions, made early and kept steady, can make a small business look and feel professional.
+
+This is general information, not legal or design advice. Labelling rules, trademark processes, and fees change over time, and some details in this guide may be out of date. Confirm current requirements with the relevant authority before you print, register, or launch.
+
+## 1. Understand what a brand really is
+
+### More than a logo
+A logo is one small part. Your brand also includes your name, colours, packaging, tone of voice, service, prices, and reputation.
+
+### Consistency builds trust
+When customers see the same look and feel everywhere, they recognise you faster and trust you more. Mixed signals make a business seem unreliable.
+
+### A brand is a promise
+It tells customers what to expect, such as friendly service, honest prices, or premium quality, and every interaction either keeps or breaks that promise.
+
+### Small does not mean forgettable
+A clear niche, a distinct voice, and care in the details can make a small business stand out from larger competitors.
+
+## 2. Define what you stand for
+
+### Start with purpose
+Decide what your business stands for before you design a single thing. Write a few plain sentences on who you serve, what you do better than others, and what you want people to feel when they deal with you. Our guide on writing a business plan explains how to describe your customers and offer.
+
+### Choose three words
+Pick three words that describe your brand, such as warm, reliable, and modern. Use them to judge every choice, from colours to captions.
+
+### Know your customers
+Look at their age, tastes, languages, and habits. A brand for young online shoppers will look different from one for office caterers. Our guide on understanding your customers explains simple research.
+
+### Look at your competitors
+Note how nearby businesses present themselves, and find a space where you can look different, not just similar.
+
+### Write a one-line promise
+For example, "fresh home-style food, delivered on time". This short line can guide your name, tagline, and messages.
+
+## 3. Choose and check your name
+
+### Make it easy to say and remember
+Short names that are easy to spell and pronounce work well in speech and online. Test it with a few people in the languages your customers use.
+
+### Check the meaning in other languages
+Malaysia has many languages and cultures. Make sure that your name does not mean something unfortunate or awkward in Malay, Chinese, Tamil, or English.
+
+### Check it is available
+Search business registers, social media handles, and domain names for conflicts. A name that is already taken online causes confusion later. Our guide on how to register a business explains registering your business name.
+
+### Look at trademarks
+If a similar name is already protected for similar goods or services, you could face problems. Search the official trademark records and consider advice before investing in a name. Our guide on trademark registration explains the process.
+
+### Avoid names that limit you
+A name tied to one product, place, or fashion may box you in when you grow. Think ahead.
+
+## 4. Create a simple logo and look
+
+### Keep the logo simple
+Simple shapes and clear lettering work better on a phone screen, a sticker, a signboard, and a receipt. Avoid fine detail that disappears when small.
+
+### Choose a small colour palette
+Pick one or two main colours and one or two supporting ones. Use them everywhere. Check that text stays readable on your colours.
+
+### Pick one or two fonts
+Use a clear font for headings and a plain one for body text. Too many fonts look messy.
+
+### Create versions you will actually need
+A square version for social media profiles, a horizontal version for banners and invoices, and a one-colour version for stamps or labels.
+
+### Options for getting a logo
+You can work with a freelance designer, use a design tool with templates, or ask a design student. Whatever you choose, agree in writing who owns the final artwork and that you receive the files you need. Our guide on freelancers and gig workers and our guide on contracts and terms for small businesses explain how to set clear terms.
+
+### Avoid copying
+Do not copy another brand's logo or style, or use images and fonts that you have no right to use. Check licences for stock images and fonts.
+
+## 5. Handle packaging and labels
+
+### Packaging is your silent salesperson
+Customers often judge quality by how a product arrives. Simple, tidy packaging in your brand colours with your logo and contact details leaves a strong impression.
+
+### Keep costs under control
+Stickers, stamps, tissue paper, and printed cards on plain boxes can look polished without custom-printed boxes. Order small runs first, and check prices from a few suppliers. Our guide on cutting costs the smart way explains how to avoid waste.
+
+### Protect the product first
+Good looks do not help if the product arrives damaged. Our guide on running deliveries explains how to pack for transit.
+
+### Check labelling rules
+Some products must carry specific information on the label, and there may be language requirements. For example, food labels are generally expected to use Bahasa Malaysia or English, with local rules for locally packaged food. Rules differ by product, so check the current requirements with the relevant authority before you print. Our guide on starting a food business and our guide on halal certification explain related requirements.
+
+### Do not make claims you cannot support
+Words such as "organic", "natural", "halal", or "eco-friendly" can attract legal and reputation problems if they are not accurate. Make claims only when you can prove them.
+
+### Add a contact and a thank-you
+A small card with your social media handle, a thank-you, and a simple way to reorder turns a delivery into a relationship.
+
+## 6. Keep your tone and look consistent everywhere
+
+### Write the way you want to sound
+Decide whether you are friendly and casual or polished and formal, and use the same style in captions, replies, and invoices.
+
+### Use the same details everywhere
+Keep your name, address, phone number, opening hours, and profile photo identical across your page, listings, and signage. Our guide on getting your business found online explains why this matters.
+
+### Make chat feel on-brand
+Quick replies and greetings should sound like you. Our guide on serving customers on WhatsApp explains how to set them up.
+
+### Style your social media
+Use your colours and logo, and keep photos in a consistent style. Our guide on social media marketing for Malaysian SMEs explains how to plan simple content.
+
+### Create a mini style guide
+One page with your logo, colours, fonts, and tone, plus examples, helps staff and freelancers keep things consistent.
+
+> Consistency beats cleverness: the same simple look, used everywhere, builds recognition faster than a brilliant design used once.
+
+## 7. Take good photos and show your story
+
+### Use natural light and a tidy background
+A modern phone can produce good product photos if you use daylight, a plain surface, and a steady hand.
+
+### Show real people and real work
+Customers like to see who is behind the business. A few honest photos of your team and process build trust.
+
+### Respect people and rights
+Ask permission before photographing customers or staff, and do not use photos that you do not have the right to use. Our guide on PDPA compliance explains handling personal data.
+
+### Tell your story briefly
+A short, honest account of why you started and what you care about gives customers a reason to choose you.
+
+### Keep it truthful
+Do not invent awards, reviews, or claims. Our guide on handling difficult customers and online reviews explains why honest feedback matters.
+
+## 8. Protect your brand and check that it works
+
+### Protect what you have built
+Consider registering your trademark when your name or logo becomes valuable, and register your business and domain names. Our guide on trademark registration explains the steps.
+
+### Keep your files safe
+Store your logo files, fonts, and style guide in a shared, backed-up folder so that you never lose them.
+
+### Watch for copycats
+If someone imitates your brand, keep evidence and seek advice on what you can do.
+
+### Measure what matters
+Track whether more people find you, recognise you, and come back. Our guide on tracking business performance explains simple numbers to follow.
+
+### Refresh slowly
+Update your look when it truly feels outdated, and do it in steps so that customers still recognise you.
+
+If you need a designer, a printer, or a packaging supplier, you can [browse the directory](/en) for local businesses and professionals, and [create a free business listing](/en/signup) so that customers who recognise your brand can find you easily.
+
+## Common mistakes Malaysian SMEs make when branding
+
+- **Designing before deciding what the business stands for.** A logo without a clear purpose looks generic, so define your customers and promise first.
+- **Using a different look in every place.** Mixed colours, fonts, and styles weaken recognition, so write down a simple style guide and stick to it.
+- **Ignoring name checks and labelling rules.** A clashing name or a non-compliant label can force costly changes, so check trademarks and labelling requirements before you print.
+
+## Where to start
+
+- **This week:** Write a one-line promise and three words that describe your brand.
+- **Next:** Check your name against business, trademark, social media, and domain records.
+- **Then:** Create a simple logo, a small colour palette, and one or two fonts, and put them on a one-page style guide.
+- **Every quarter:** Review whether your packaging, chat, and social media still look and sound like one business.
+
+A strong small brand is mostly about clarity and consistency. Know who you serve, say it simply, and show up the same way every time, and customers will start to remember you.`,
+    faqs: [
+      {
+        question: "Do I need a professional designer to build a brand?",
+        answer:
+          "Not necessarily. A freelance designer can help, but you can also use a design tool with templates or ask a design student. Whichever you choose, keep the logo simple, agree in writing who owns the final artwork, and make sure that you receive the files you need.",
+      },
+      {
+        question: "How do I choose a good business name?",
+        answer:
+          "Pick something short, easy to say and spell, and test it with people in the languages your customers use. Check that it has no awkward meaning in other languages, and search business, trademark, social media, and domain records for conflicts.",
+      },
+      {
+        question: "What is a style guide and why do I need one?",
+        answer:
+          "A one-page guide with your logo, colours, fonts, and tone of voice. It helps you, your staff, and freelancers keep everything consistent across packaging, chat, social media, and signage.",
+      },
+      {
+        question: "Are there rules for product labels?",
+        answer:
+          "Some products must carry specific information, and there may be language requirements. For example, food labels are generally expected to use Bahasa Malaysia or English. Rules differ by product, so check the current requirements with the relevant authority before you print.",
+      },
+      {
+        question: "Can I make claims such as organic or eco-friendly on my packaging?",
+        answer:
+          "Only if the claims are accurate and you can support them. Misleading claims can cause legal and reputation problems, so check the rules that apply to your product and keep evidence.",
+      },
+      {
+        question: "How do I keep my brand consistent online?",
+        answer:
+          "Use the same name, logo, colours, contact details, and tone across your page, listings, chat replies, and invoices, and keep photos in a consistent style. A simple style guide makes this easier.",
+      },
+      {
+        question: "When should I register a trademark?",
+        answer:
+          "Consider it when your name or logo has become valuable or is at risk of being copied. Search the official trademark records before you invest in a name, and seek advice where needed.",
+      },
+      {
+        question: "How do I know whether my branding is working?",
+        answer:
+          "Look at whether more people find you, recognise you, mention you, and come back, and track simple numbers such as repeat customers and enquiries. Update your look gradually, not all at once.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "小预算打造品牌：马来西亚中小企业的名称、标志、包装与一致的形象",
+        excerpt:
+          "品牌不只是一个标志：它是顾客认出、记住并信任您企业的方式。本指南帮助马来西亚中小企业界定自己的立场，选择并查核名称，创造简单的标志和形象，处理包装和标签，在聊天、社交媒体和招牌上保持一致，并保护自己所建立的一切。",
+        body: `小企业常常以为品牌是大公司和大预算的事。但每家企业都已经有一个品牌，无论您有没有刻意规划。它是顾客对您的印象：您的外观、声音、行为和交付。
+
+好消息是，清晰而一致的品牌不需要昂贵的广告公司。几个好的决定，及早做出并保持稳定，就能让小企业看起来、感觉起来很专业。
+
+本文仅提供一般信息，并非法律或设计建议。标签规定、商标程序和费用会随时间变化，本指南的部分细节可能已经过时。在印刷、注册或推出之前，请向相关主管单位确认现行要求。
+
+## 1. 了解品牌真正是什么
+
+### 不只是标志
+标志只是小小的一部分。您的品牌还包括名称、颜色、包装、语气、服务、价格和声誉。
+
+### 一致建立信任
+当顾客到处看到相同的外观和感觉，他们更快认出您，也更信任您。混乱的信号让企业显得不可靠。
+
+### 品牌是一种承诺
+它告诉顾客该期待什么，例如友善的服务、诚实的价格或高端的品质，而每一次互动不是信守就是违背这个承诺。
+
+### 小不代表容易被遗忘
+清晰的利基市场、独特的声音和对细节的用心，可以让小企业在较大的竞争对手中脱颖而出。
+
+## 2. 界定您的立场
+
+### 从目的开始
+在设计任何东西之前，先决定您的企业代表什么。用几句平实的话写下您服务谁、您在哪方面比别人做得更好，以及您希望人们与您往来时有什么感受。我们关于撰写商业计划书的指南说明了如何描述您的顾客和产品。
+
+### 选择三个词
+选三个描述您品牌的词，例如温暖、可靠和现代。用它们来评判每一个选择，从颜色到说明文字。
+
+### 了解您的顾客
+看看他们的年龄、品味、语言和习惯。针对年轻网购者的品牌，看起来会与针对办公室订餐的不同。我们关于了解您的顾客的指南说明了简单的调查。
+
+### 看看您的竞争对手
+留意附近的企业如何呈现自己，并找到一个您可以显得不同、而不只是相似的空间。
+
+### 写下一句话的承诺
+例如“新鲜的家常菜，准时送达”。这句简短的话可以指引您的名称、口号和讯息。
+
+## 3. 选择并查核您的名称
+
+### 让它容易说、容易记
+简短、容易拼写和发音的名称，在口头和网上都很好用。请与使用您顾客所用语言的几个人一起测试。
+
+### 查核在其他语言中的含义
+马来西亚有许多语言和文化。请确保您的名称在马来文、华文、淡米尔文或英文中没有不幸或尴尬的含义。
+
+### 查核是否可用
+搜索商业注册、社交媒体账号和域名是否有冲突。网上已被占用的名称，日后会造成混淆。我们关于如何注册企业的指南说明了注册您的企业名称。
+
+### 查看商标
+如果类似的名称已被保护用于类似的货品或服务，您可能面临问题。请在投入一个名称之前，搜索官方的商标记录并考虑征求意见。我们关于商标注册的指南说明了程序。
+
+### 避免限制自己的名称
+与某一产品、地点或潮流绑定的名称，可能在您成长时把您框住。请想远一点。
+
+## 4. 创造简单的标志和形象
+
+### 让标志保持简单
+简单的形状和清晰的字体，在手机屏幕、贴纸、招牌和收据上效果更好。避免缩小后会消失的细节。
+
+### 选择小范围的调色盘
+选一两个主色和一两个辅色，到处使用。检查文字在您的颜色上仍然清晰可读。
+
+### 选一两种字体
+标题用清晰的字体，正文用朴素的字体。太多字体看起来很凌乱。
+
+### 创建您真正会用到的版本
+适合社交媒体头像的方形版本、适合横幅和发票的横式版本，以及适合印章或标签的单色版本。
+
+### 取得标志的选项
+您可以与自由职业设计师合作、使用带模板的设计工具，或请设计系学生帮忙。无论选哪一种，请以书面商定最终设计稿归谁所有，以及您会收到所需的文件。我们关于自由职业者与零工工作者的指南和关于小企业合约与条款的指南说明了如何订立清楚的条款。
+
+### 避免抄袭
+不要抄袭别的品牌的标志或风格，也不要使用您无权使用的图片和字体。请查看图库图片和字体的许可。
+
+## 5. 处理包装和标签
+
+### 包装是您无声的销售员
+顾客常常凭产品如何送达来判断品质。以您的品牌颜色、附上标志和联络方式的简单整洁包装，会留下深刻的印象。
+
+### 控制成本
+在素色盒子上使用贴纸、印章、包装纸和印刷卡片，不必定制印刷的盒子也能显得精致。先少量订购，并比较几家供应商的价格。我们关于聪明地削减成本的指南说明了如何避免浪费。
+
+### 先保护产品
+如果产品送达时已损坏，好看也没用。我们关于经营配送的指南说明了如何为运输包装。
+
+### 查核标签规定
+某些产品的标签必须载明特定的信息，也可能有语言要求。例如，食品标签一般被期望使用马来文或英文，本地包装的食品另有本地规定。规定因产品而异，所以请在印刷之前向相关主管单位确认现行要求。我们关于开办食品生意的指南和关于清真认证的指南说明了相关的要求。
+
+### 不要作出您无法支持的宣称
+“有机”“天然”“清真”或“环保”等字眼，如果不准确，可能招来法律和声誉问题。只有在您能证明时才作出宣称。
+
+### 附上联络方式和感谢
+一张附有您社交媒体账号、一句感谢和简便再订方式的小卡片，把一次送货变成一段关系。
+
+## 6. 让您的语气和形象处处一致
+
+### 以您希望的声音书写
+决定您是友善随和还是正式得体，并在说明文字、回复和发票中使用同样的风格。
+
+### 处处使用相同的资料
+让您的名称、地址、电话号码、营业时间和头像，在您的页面、列表和招牌上保持一致。我们关于让您的企业在网上被找到的指南说明了为什么这很重要。
+
+### 让聊天符合品牌
+快捷回复和问候语应该听起来像您。我们关于在WhatsApp上服务顾客的指南说明了如何设定。
+
+### 为您的社交媒体定风格
+使用您的颜色和标志，并让照片保持一致的风格。我们关于马来西亚中小企业社交媒体营销的指南说明了如何规划简单的内容。
+
+### 制作迷你风格指南
+一页纸写上您的标志、颜色、字体和语气，再附上例子，帮助员工和自由职业者保持一致。
+
+> 一致胜过聪明：到处使用同样简单的外观，比只用一次的出色设计更快建立辨识度。
+
+## 7. 拍好照片并讲述您的故事
+
+### 使用自然光和整洁的背景
+如果您使用日光、素色的表面和稳定的手，现代手机就能拍出好的产品照片。
+
+### 展示真实的人和真实的工作
+顾客喜欢看到企业背后是谁。几张关于您团队和过程的真实照片，能建立信任。
+
+### 尊重人和权利
+在拍摄顾客或员工之前先征求许可，也不要使用您无权使用的照片。我们关于个人资料保护法令合规的指南说明了如何处理个人资料。
+
+### 简短地讲述您的故事
+一段简短而诚实的叙述，说明您为什么创业以及您在乎什么，给顾客一个选择您的理由。
+
+### 保持真实
+不要捏造奖项、评论或宣称。我们关于应对难缠顾客与网络评论的指南说明了为什么诚实的反馈很重要。
+
+## 8. 保护您的品牌并检查它是否有效
+
+### 保护您所建立的
+当您的名称或标志变得有价值时，考虑注册您的商标，并注册您的企业和域名。我们关于商标注册的指南说明了步骤。
+
+### 妥善保管您的文件
+把您的标志文件、字体和风格指南存放在共享且有备份的文件夹中，这样您就不会遗失它们。
+
+### 留意仿冒者
+如果有人模仿您的品牌，请保留证据并就您能做什么征求意见。
+
+### 衡量重要的东西
+追踪是否有更多人找到您、认出您并回头。我们关于追踪企业绩效的指南说明了可以追踪的简单数字。
+
+### 缓慢地更新
+只有在它真的显得过时时才更新您的形象，并分步骤进行，让顾客仍然认得出您。
+
+如果您需要设计师、印刷商或包装供应商，可以[浏览目录](/zh)寻找本地企业和专业人士，并[创建免费商家列表](/zh/signup)，让认得您品牌的顾客能轻易找到您。
+
+## 马来西亚中小企业在品牌方面的常见错误
+
+- **在决定企业代表什么之前就开始设计。** 没有明确目的的标志看起来很普通，所以请先界定您的顾客和承诺。
+- **每个地方用不同的外观。** 混杂的颜色、字体和风格会削弱辨识度，所以请写下简单的风格指南并坚持使用。
+- **忽视名称查核和标签规定。** 冲突的名称或不合规的标签可能迫使您做出代价高昂的更改，所以请在印刷之前查核商标和标签要求。
+
+## 从哪里开始
+
+- **本周：** 写下一句话的承诺和三个描述您品牌的词。
+- **接下来：** 对照商业、商标、社交媒体和域名记录查核您的名称。
+- **然后：** 创造简单的标志、小范围的调色盘和一两种字体，并把它们放在一页纸的风格指南上。
+- **每个季度：** 检视您的包装、聊天和社交媒体是否仍然看起来、听起来像同一家企业。
+
+强大的小品牌主要在于清晰和一致。知道您服务谁，简单地说出来，并每一次都以同样的方式出现，顾客就会开始记住您。`,
+        faqs: [
+          {
+            question: "建立品牌需要专业设计师吗？",
+            answer:
+              "不一定。自由职业设计师可以帮忙，但您也可以使用带模板的设计工具，或请设计系学生帮忙。无论选哪一种，请让标志保持简单，以书面商定最终设计稿归谁所有，并确保您收到所需的文件。",
+          },
+          {
+            question: "我如何选择好的企业名称？",
+            answer:
+              "选择简短、容易说和拼写的名称，并与使用您顾客所用语言的人一起测试。检查它在其他语言中没有尴尬的含义，并搜索商业、商标、社交媒体和域名记录是否有冲突。",
+          },
+          {
+            question: "什么是风格指南，为什么我需要一份？",
+            answer:
+              "一页纸的指南，写上您的标志、颜色、字体和语气。它帮助您、员工和自由职业者在包装、聊天、社交媒体和招牌上保持一致。",
+          },
+          {
+            question: "产品标签有规定吗？",
+            answer:
+              "某些产品必须载明特定的信息，也可能有语言要求。例如，食品标签一般被期望使用马来文或英文。规定因产品而异，所以请在印刷之前向相关主管单位确认现行要求。",
+          },
+          {
+            question: "我可以在包装上宣称有机或环保等吗？",
+            answer:
+              "只有在宣称准确且您能支持的情况下。误导的宣称可能造成法律和声誉问题，所以请查看适用于您产品的规定并保留证据。",
+          },
+          {
+            question: "我如何在网上保持品牌一致？",
+            answer:
+              "在您的页面、列表、聊天回复和发票上使用相同的名称、标志、颜色、联络资料和语气，并让照片保持一致的风格。简单的风格指南让这更容易。",
+          },
+          {
+            question: "我应该什么时候注册商标？",
+            answer:
+              "当您的名称或标志已变得有价值，或有被抄袭的风险时，可以考虑。在投入一个名称之前，请搜索官方的商标记录，并在需要时征求意见。",
+          },
+          {
+            question: "我如何知道品牌建设是否有效？",
+            answer:
+              "看是否有更多人找到您、认出您、提到您并回头，并追踪回头客和询问等简单的数字。逐步更新您的形象，而不是一次全改。",
+          },
+        ],
+      },
+      ms: {
+        title: "Membina Jenama dengan Bajet Kecil: Nama, Logo, Pembungkusan dan Rupa yang Konsisten untuk PKS Malaysia",
+        excerpt:
+          "Jenama lebih daripada logo: ia ialah cara pelanggan mengenali, mengingati dan mempercayai perniagaan anda. Panduan ini membantu PKS Malaysia menentukan pendirian mereka, memilih dan menyemak nama, mencipta logo dan rupa yang mudah, mengendalikan pembungkusan dan label, mengekalkan konsistensi merentas sembang, media sosial dan papan tanda, dan melindungi apa yang mereka bina.",
+        body: `Perniagaan kecil selalunya menganggap penjenamaan sebagai sesuatu untuk syarikat besar dengan bajet besar. Tetapi setiap perniagaan sudah mempunyai jenama, sama ada ia merancangnya atau tidak. Ia ialah kesan yang dibawa pelanggan tentang anda: bagaimana anda kelihatan, kedengaran, berkelakuan dan menyampaikan.
+
+Berita baiknya, jenama yang jelas dan konsisten tidak memerlukan agensi yang mahal. Beberapa keputusan yang baik, dibuat awal dan dikekalkan, boleh menjadikan perniagaan kecil kelihatan dan terasa profesional.
+
+Ini maklumat umum, bukan nasihat undang-undang atau reka bentuk. Peraturan pelabelan, proses tanda dagangan dan yuran berubah dari semasa ke semasa, dan sebahagian butiran dalam panduan ini mungkin sudah lapuk. Sahkan keperluan semasa dengan pihak berkuasa berkaitan sebelum anda mencetak, mendaftar atau melancarkan.
+
+## 1. Fahami apa sebenarnya jenama
+
+### Lebih daripada logo
+Logo hanyalah sebahagian kecil. Jenama anda juga termasuk nama, warna, pembungkusan, nada suara, perkhidmatan, harga dan reputasi.
+
+### Konsistensi membina kepercayaan
+Apabila pelanggan melihat rupa dan rasa yang sama di mana-mana, mereka mengenali anda lebih cepat dan lebih mempercayai anda. Isyarat bercampur menjadikan perniagaan kelihatan tidak boleh dipercayai.
+
+### Jenama ialah janji
+Ia memberitahu pelanggan apa yang dijangkakan, seperti perkhidmatan mesra, harga jujur atau kualiti premium, dan setiap interaksi sama ada menepati atau memungkiri janji itu.
+
+### Kecil tidak bermakna mudah dilupakan
+Niche yang jelas, suara yang tersendiri dan penjagaan pada butiran boleh membuat perniagaan kecil menonjol daripada pesaing lebih besar.
+
+## 2. Tentukan pendirian anda
+
+### Mulakan dengan tujuan
+Tentukan apa yang diwakili oleh perniagaan anda sebelum anda mereka bentuk apa-apa. Tulis beberapa ayat mudah tentang siapa yang anda layan, apa yang anda lakukan lebih baik daripada orang lain, dan apa yang anda mahu orang rasa apabila berurusan dengan anda. Panduan kami tentang menulis pelan perniagaan menerangkan cara menerangkan pelanggan dan tawaran anda.
+
+### Pilih tiga perkataan
+Pilih tiga perkataan yang menggambarkan jenama anda, seperti mesra, boleh dipercayai dan moden. Gunakannya untuk menilai setiap pilihan, daripada warna hingga kapsyen.
+
+### Kenali pelanggan anda
+Lihat umur, citarasa, bahasa dan tabiat mereka. Jenama untuk pembeli dalam talian muda akan kelihatan berbeza daripada yang untuk katering pejabat. Panduan kami tentang memahami pelanggan anda menerangkan kajian yang mudah.
+
+### Lihat pesaing anda
+Catat bagaimana perniagaan berhampiran mempersembahkan diri, dan cari ruang di mana anda boleh kelihatan berbeza, bukan sekadar serupa.
+
+### Tulis janji satu baris
+Contohnya, "makanan gaya rumah yang segar, dihantar tepat masa". Baris pendek ini boleh membimbing nama, slogan dan mesej anda.
+
+## 3. Pilih dan semak nama anda
+
+### Jadikan mudah disebut dan diingati
+Nama pendek yang mudah dieja dan disebut berfungsi baik dalam pertuturan dan dalam talian. Uji dengan beberapa orang dalam bahasa yang digunakan pelanggan anda.
+
+### Semak maksud dalam bahasa lain
+Malaysia mempunyai banyak bahasa dan budaya. Pastikan nama anda tidak bermaksud sesuatu yang malang atau janggal dalam bahasa Melayu, Cina, Tamil atau Inggeris.
+
+### Semak ia tersedia
+Cari daftar perniagaan, nama pengguna media sosial dan nama domain untuk pertembungan. Nama yang sudah diambil dalam talian menyebabkan kekeliruan kemudian. Panduan kami tentang cara mendaftar perniagaan menerangkan pendaftaran nama perniagaan anda.
+
+### Lihat tanda dagangan
+Jika nama yang serupa sudah dilindungi untuk barangan atau perkhidmatan yang serupa, anda mungkin menghadapi masalah. Cari rekod tanda dagangan rasmi dan pertimbangkan nasihat sebelum melabur dalam sesuatu nama. Panduan kami tentang pendaftaran tanda dagangan menerangkan prosesnya.
+
+### Elakkan nama yang mengehadkan anda
+Nama yang dikaitkan dengan satu produk, tempat atau fesyen mungkin mengurung anda apabila anda berkembang. Fikir ke hadapan.
+
+## 4. Cipta logo dan rupa yang mudah
+
+### Pastikan logo mudah
+Bentuk mudah dan tulisan yang jelas berfungsi lebih baik pada skrin telefon, pelekat, papan tanda dan resit. Elakkan butiran halus yang hilang apabila dikecilkan.
+
+### Pilih palet warna yang kecil
+Pilih satu atau dua warna utama dan satu atau dua warna sokongan. Gunakannya di mana-mana. Semak bahawa teks kekal boleh dibaca pada warna anda.
+
+### Pilih satu atau dua fon
+Gunakan fon yang jelas untuk tajuk dan yang biasa untuk teks badan. Terlalu banyak fon kelihatan berselerak.
+
+### Cipta versi yang benar-benar anda perlukan
+Versi segi empat sama untuk profil media sosial, versi mendatar untuk sepanduk dan invois, dan versi satu warna untuk cop atau label.
+
+### Pilihan untuk mendapatkan logo
+Anda boleh bekerja dengan pereka bebas, menggunakan alat reka bentuk dengan templat, atau meminta pelajar reka bentuk. Apa pun pilihan anda, persetujui secara bertulis siapa yang memiliki karya seni akhir dan bahawa anda menerima fail yang diperlukan. Panduan kami tentang pekerja bebas dan pekerja gig dan panduan kami tentang kontrak dan terma untuk perniagaan kecil menerangkan cara menetapkan terma yang jelas.
+
+### Elakkan meniru
+Jangan tiru logo atau gaya jenama lain, atau gunakan gambar dan fon yang anda tiada hak menggunakannya. Semak lesen untuk gambar stok dan fon.
+
+## 5. Kendalikan pembungkusan dan label
+
+### Pembungkusan ialah jurujual senyap anda
+Pelanggan selalunya menilai kualiti mengikut cara produk tiba. Pembungkusan yang mudah dan kemas dalam warna jenama anda dengan logo dan butiran hubungan meninggalkan kesan yang kuat.
+
+### Kawal kos
+Pelekat, cop, kertas tisu dan kad bercetak pada kotak biasa boleh kelihatan kemas tanpa kotak bercetak khas. Tempah kuantiti kecil dahulu, dan semak harga daripada beberapa pembekal. Panduan kami tentang memotong kos dengan bijak menerangkan cara mengelak pembaziran.
+
+### Lindungi produk dahulu
+Rupa yang baik tidak membantu jika produk tiba rosak. Panduan kami tentang menjalankan penghantaran menerangkan cara membungkus untuk perjalanan.
+
+### Semak peraturan pelabelan
+Sesetengah produk mesti membawa maklumat tertentu pada label, dan mungkin ada keperluan bahasa. Contohnya, label makanan pada amnya dijangka menggunakan Bahasa Malaysia atau Inggeris, dengan peraturan tempatan untuk makanan yang dibungkus di dalam negara. Peraturan berbeza mengikut produk, jadi semak keperluan semasa dengan pihak berkuasa berkaitan sebelum anda mencetak. Panduan kami tentang memulakan perniagaan makanan dan panduan kami tentang pensijilan halal menerangkan keperluan berkaitan.
+
+### Jangan membuat dakwaan yang tidak dapat anda sokong
+Perkataan seperti "organik", "semula jadi", "halal" atau "mesra alam" boleh mengundang masalah undang-undang dan reputasi jika tidak tepat. Buat dakwaan hanya apabila anda boleh membuktikannya.
+
+### Tambah hubungan dan ucapan terima kasih
+Kad kecil dengan nama pengguna media sosial anda, ucapan terima kasih dan cara mudah untuk menempah semula menukar penghantaran menjadi hubungan.
+
+## 6. Pastikan nada dan rupa anda konsisten di mana-mana
+
+### Tulis seperti yang anda mahu kedengaran
+Tentukan sama ada anda mesra dan santai atau kemas dan formal, dan gunakan gaya yang sama dalam kapsyen, balasan dan invois.
+
+### Gunakan butiran yang sama di mana-mana
+Pastikan nama, alamat, nombor telefon, waktu operasi dan gambar profil anda sama pada halaman, penyenaraian dan papan tanda anda. Panduan kami tentang membolehkan perniagaan anda ditemui dalam talian menerangkan mengapa ini penting.
+
+### Jadikan sembang sepadan dengan jenama
+Balasan pantas dan ucapan patut kedengaran seperti anda. Panduan kami tentang melayan pelanggan di WhatsApp menerangkan cara menyediakannya.
+
+### Gayakan media sosial anda
+Gunakan warna dan logo anda, dan pastikan gambar dalam gaya yang konsisten. Panduan kami tentang pemasaran media sosial untuk PKS Malaysia menerangkan cara merancang kandungan yang mudah.
+
+### Cipta panduan gaya mini
+Satu muka surat dengan logo, warna, fon dan nada anda, serta contoh, membantu pekerja dan pekerja bebas mengekalkan konsistensi.
+
+> Konsistensi mengalahkan kepintaran: rupa mudah yang sama, digunakan di mana-mana, membina pengiktirafan lebih cepat daripada reka bentuk cemerlang yang digunakan sekali.
+
+## 7. Ambil gambar yang baik dan tunjukkan kisah anda
+
+### Gunakan cahaya semula jadi dan latar belakang yang kemas
+Telefon moden boleh menghasilkan gambar produk yang baik jika anda menggunakan cahaya siang, permukaan biasa dan tangan yang mantap.
+
+### Tunjukkan orang sebenar dan kerja sebenar
+Pelanggan suka melihat siapa di sebalik perniagaan. Beberapa gambar jujur pasukan dan proses anda membina kepercayaan.
+
+### Hormati orang dan hak
+Minta kebenaran sebelum merakam gambar pelanggan atau pekerja, dan jangan gunakan gambar yang anda tiada hak menggunakannya. Panduan kami tentang pematuhan PDPA menerangkan cara mengendalikan data peribadi.
+
+### Ceritakan kisah anda dengan ringkas
+Penerangan ringkas dan jujur tentang mengapa anda bermula dan apa yang anda ambil berat memberi pelanggan sebab untuk memilih anda.
+
+### Pastikan ia benar
+Jangan reka anugerah, ulasan atau dakwaan. Panduan kami tentang menangani pelanggan sukar dan ulasan dalam talian menerangkan mengapa maklum balas jujur penting.
+
+## 8. Lindungi jenama anda dan semak sama ada ia berfungsi
+
+### Lindungi apa yang telah anda bina
+Pertimbangkan mendaftarkan tanda dagangan anda apabila nama atau logo anda menjadi bernilai, dan daftarkan perniagaan dan nama domain anda. Panduan kami tentang pendaftaran tanda dagangan menerangkan langkahnya.
+
+### Pastikan fail anda selamat
+Simpan fail logo, fon dan panduan gaya anda dalam folder yang dikongsi dan disandarkan supaya anda tidak pernah kehilangannya.
+
+### Awasi peniru
+Jika seseorang meniru jenama anda, simpan bukti dan dapatkan nasihat tentang apa yang boleh anda lakukan.
+
+### Ukur apa yang penting
+Jejak sama ada lebih ramai orang menemui anda, mengenali anda dan kembali. Panduan kami tentang menjejak prestasi perniagaan menerangkan angka mudah untuk diikuti.
+
+### Segarkan perlahan-lahan
+Kemas kini rupa anda apabila ia benar-benar terasa lapuk, dan lakukannya secara berperingkat supaya pelanggan masih mengenali anda.
+
+Jika anda memerlukan pereka, pencetak atau pembekal pembungkusan, anda boleh [menyemak imbas direktori](/ms) untuk perniagaan dan profesional tempatan, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan yang mengenali jenama anda dapat menemui anda dengan mudah.
+
+## Kesilapan lazim PKS Malaysia semasa penjenamaan
+
+- **Mereka bentuk sebelum menentukan apa yang diwakili oleh perniagaan.** Logo tanpa tujuan yang jelas kelihatan generik, jadi tentukan pelanggan dan janji anda dahulu.
+- **Menggunakan rupa berbeza di setiap tempat.** Warna, fon dan gaya yang bercampur melemahkan pengiktirafan, jadi tulis panduan gaya yang mudah dan patuhinya.
+- **Mengabaikan semakan nama dan peraturan pelabelan.** Nama yang bertembung atau label yang tidak patuh boleh memaksa perubahan yang mahal, jadi semak tanda dagangan dan keperluan pelabelan sebelum anda mencetak.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Tulis janji satu baris dan tiga perkataan yang menggambarkan jenama anda.
+- **Seterusnya:** Semak nama anda berbanding rekod perniagaan, tanda dagangan, media sosial dan domain.
+- **Kemudian:** Cipta logo yang mudah, palet warna kecil dan satu atau dua fon, dan letakkan pada panduan gaya satu muka surat.
+- **Setiap suku tahun:** Semak sama ada pembungkusan, sembang dan media sosial anda masih kelihatan dan kedengaran seperti satu perniagaan.
+
+Jenama kecil yang kukuh kebanyakannya tentang kejelasan dan konsistensi. Ketahui siapa yang anda layan, katakannya dengan mudah, dan muncul dengan cara yang sama setiap kali, dan pelanggan akan mula mengingati anda.`,
+        faqs: [
+          {
+            question: "Adakah saya memerlukan pereka profesional untuk membina jenama?",
+            answer:
+              "Tidak semestinya. Pereka bebas boleh membantu, tetapi anda juga boleh menggunakan alat reka bentuk dengan templat atau meminta pelajar reka bentuk. Apa pun pilihan anda, pastikan logo mudah, persetujui secara bertulis siapa yang memiliki karya seni akhir, dan pastikan anda menerima fail yang diperlukan.",
+          },
+          {
+            question: "Bagaimanakah saya memilih nama perniagaan yang baik?",
+            answer:
+              "Pilih yang pendek, mudah disebut dan dieja, dan uji dengan orang dalam bahasa yang digunakan pelanggan anda. Semak bahawa ia tiada maksud janggal dalam bahasa lain, dan cari rekod perniagaan, tanda dagangan, media sosial dan domain untuk pertembungan.",
+          },
+          {
+            question: "Apakah panduan gaya dan mengapa saya memerlukannya?",
+            answer:
+              "Panduan satu muka surat dengan logo, warna, fon dan nada suara anda. Ia membantu anda, pekerja dan pekerja bebas mengekalkan konsistensi merentas pembungkusan, sembang, media sosial dan papan tanda.",
+          },
+          {
+            question: "Adakah terdapat peraturan untuk label produk?",
+            answer:
+              "Sesetengah produk mesti membawa maklumat tertentu, dan mungkin ada keperluan bahasa. Contohnya, label makanan pada amnya dijangka menggunakan Bahasa Malaysia atau Inggeris. Peraturan berbeza mengikut produk, jadi semak keperluan semasa dengan pihak berkuasa berkaitan sebelum anda mencetak.",
+          },
+          {
+            question: "Bolehkah saya membuat dakwaan seperti organik atau mesra alam pada pembungkusan saya?",
+            answer:
+              "Hanya jika dakwaan itu tepat dan anda boleh menyokongnya. Dakwaan mengelirukan boleh menyebabkan masalah undang-undang dan reputasi, jadi semak peraturan yang terpakai untuk produk anda dan simpan bukti.",
+          },
+          {
+            question: "Bagaimanakah saya mengekalkan jenama saya konsisten dalam talian?",
+            answer:
+              "Gunakan nama, logo, warna, butiran hubungan dan nada yang sama merentas halaman, penyenaraian, balasan sembang dan invois anda, dan pastikan gambar dalam gaya yang konsisten. Panduan gaya yang mudah menjadikan ini lebih senang.",
+          },
+          {
+            question: "Bila patut saya mendaftarkan tanda dagangan?",
+            answer:
+              "Pertimbangkannya apabila nama atau logo anda telah menjadi bernilai atau berisiko ditiru. Cari rekod tanda dagangan rasmi sebelum anda melabur dalam sesuatu nama, dan dapatkan nasihat jika perlu.",
+          },
+          {
+            question: "Bagaimanakah saya tahu sama ada penjenamaan saya berfungsi?",
+            answer:
+              "Lihat sama ada lebih ramai orang menemui, mengenali, menyebut dan kembali kepada anda, dan jejak angka mudah seperti pelanggan berulang dan pertanyaan. Kemas kini rupa anda secara beransur-ansur, bukan sekali gus.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "serving-a-multicultural-market-and-tourists-in-malaysia",
+    title: "Serving a Multicultural Market and Tourists: Language, Culture, and Payments for Malaysian SMEs",
+    seoTitle: "Serving a Multicultural Market and Tourists in Malaysia",
+    seoDescription:
+      "How Malaysian SMEs can serve a multicultural market and tourists: use the right languages, respect customs, welcome visitors and accept their payments.",
+    coverImage: {
+      file: "serving-a-multicultural-market-and-tourists-cover.webp",
+      mimeType: "image/webp",
+      alt: "Two smiling visitors with backpacks, one holding a bag of cut fruit, buying from a glass-fronted street food stall on a sunny street",
+      altTranslations: {
+        zh: "两位背着背包的微笑游客，其中一位拿着一袋切好的水果，在阳光下的街边玻璃柜小吃摊购买食物",
+        ms: "Dua pelawat tersenyum membawa beg galas, seorang memegang bungkusan buah dipotong, membeli dari gerai makanan jalanan berkaca di jalan yang cerah",
+      },
+    },
+    contentImages: {
+      street: {
+        file: "serving-a-multicultural-market-and-tourists-street.webp",
+        mimeType: "image/webp",
+        alt: "A smiling woman in a pink dress holding her palms open in a market street under rows of colourful hanging umbrellas, with shops and passers-by behind her",
+        altTranslations: {
+          zh: "一位身穿粉红连衣裙的微笑女士在悬挂着一排排彩色雨伞的市集街道上摊开双手，身后是店铺和路人",
+          ms: "Seorang wanita tersenyum berbaju merah jambu membuka tapak tangan di jalan pasar di bawah barisan payung berwarna-warni yang tergantung, dengan kedai dan pejalan kaki di belakangnya",
+        },
+        after: "Assume that your customers read different languages, and let them choose.",
+        afterTranslations: {
+          zh: "假设您的顾客阅读不同的语言，并让他们自己选择。",
+          ms: "Anggap bahawa pelanggan anda membaca bahasa yang berbeza, dan biarkan mereka memilih.",
+        },
+      },
+    },
+    excerpt:
+      "Malaysia's customers speak different languages, celebrate different festivals, and follow different customs, and many businesses also welcome visitors from abroad. This guide helps SMEs offer information in English, Chinese, and Malay, respect festive and dietary customs, make signs and menus tourist-friendly, accept foreign visitors' payments, and handle cultural misunderstandings politely.",
+    body: `Few places do business across as many languages and cultures as Malaysia. A single shop may serve Malay, Chinese, Indian, and indigenous customers, workers from other countries, and tourists from around the world, all in the same afternoon.
+
+That diversity is a strength. Businesses that make everyone feel welcome gain loyal customers and good word of mouth. Businesses that stumble, even innocently, can offend people, lose sales, and attract bad reviews.
+
+This is general information, not legal or financial advice. Payment options, religious and dietary rules, and tourism trends change over time, and some details in this guide may be out of date. Confirm current requirements with the relevant authorities and your payment provider.
+
+## 1. Understand your customers
+
+### Look at who actually comes to you
+Watch who walks in, who messages you, and who buys. Your area, products, and prices decide your mix, so base your choices on real customers, not assumptions.
+
+### Do not assume from appearance
+Do not guess a person's language, religion, or preferences from how they look. Ask politely, or let them choose.
+
+### Think beyond ethnicity
+Age, income, family size, and lifestyle shape what people buy as much as background does. A student, a retiree, and an office worker may all want different things from the same shop.
+
+### Notice visitors and workers
+Tourists, business travellers, and migrant workers may need clearer information, different payment methods, or simple help finding what they need.
+
+### Ask and listen
+Short conversations and feedback show what customers need. Our guide on understanding your customers explains simple ways to learn.
+
+## 2. Use the right languages
+
+### Offer a choice
+Assume that your customers read different languages, and let them choose. Offer your key information in Malay, English, and Chinese, and consider other languages where your customers need them, such as Tamil or the languages of regular visitors.
+
+### Start with what matters most
+Translate the essentials first: your name, what you sell, prices, opening hours, how to order or pay, and contact details.
+
+### Get translations checked
+Poor translations look careless and can change the meaning. Ask a fluent speaker to review signs, menus, and web pages, and avoid relying only on machine translation for anything important.
+
+### Keep it simple
+Short sentences and plain words are easier to understand, especially for visitors who read English as a second language. Our guide on getting your business found online explains how to present clear information.
+
+### Use pictures and symbols
+Photos of dishes or products, clear icons, and numbers help people who cannot read the language.
+
+### Reply in the customer's language when you can
+If a customer writes in Malay, Chinese, or English, reply in the same language where possible. Our guide on serving customers on WhatsApp explains how to manage chat in several languages.
+
+## 3. Respect festivals, customs, and beliefs
+
+### Know the main celebrations
+Malaysia celebrates festivals such as Hari Raya Aidilfitri, Chinese New Year, Deepavali, Christmas, Wesak, Gawai, and Kaamatan, along with many others. Customers may plan their buying around them. Our guide on planning for festive peaks and slow seasons explains how to prepare.
+
+### Greet people thoughtfully
+A simple festive greeting in the right language is appreciated, as long as it is accurate and respectful. If you are unsure, ask someone from that community.
+
+### Be careful with symbols and colours
+Colours, numbers, and images carry different meanings in different cultures. Check before you use them in decorations, gifts, or packaging.
+
+### Respect prayer times and rest days
+Customers and staff may observe prayer times, fasting, or religious holidays. Plan opening hours, deliveries, and meetings with this in mind.
+
+### Be fair in your marketing
+Do not stereotype groups or use cultural symbols carelessly. Our guide on social media marketing for Malaysian SMEs explains how to keep content respectful.
+
+### Treat everyone equally
+Serve all customers with the same courtesy and quality. Unfair treatment, or even the appearance of it, spreads quickly.
+
+## 4. Handle dietary rules and product claims carefully
+
+### Understand halal and other dietary needs
+Many customers follow halal rules, and others are vegetarian, avoid certain foods, or have allergies. Be clear about what your food contains. Our guide on halal certification in Malaysia explains what certification involves.
+
+### Do not use halal claims loosely
+Using halal wording or logos without proper certification can cause serious problems. Make only claims that you can support, and check the current rules with the relevant authority.
+
+### Keep ingredients separate and labelled
+If you serve mixed customers, label ingredients clearly and prevent cross-contact where it matters. Our guide on starting a food business explains hygiene and safety basics.
+
+### Be honest about allergens
+Customers with allergies rely on your honesty. Tell them what you know, and never guess.
+
+### Offer options
+A vegetarian dish, a no-pork menu, or a clearly marked option can bring in more customers and make groups easier to serve.
+
+## 5. Make your shop tourist-friendly
+
+### Make your location easy to find
+Keep your map listing, opening hours, and photos accurate, and add directions in more than one language. Our guide on getting your business found online explains how to manage listings.
+
+### Use clear signs and menus
+Put prices on items, show photos, and use short descriptions. Visitors often decide fast and leave when they are confused.
+
+### Be transparent about prices
+Show prices clearly, state any service charge or tax, and avoid surprises at the till. Tourists who feel cheated leave harsh reviews. Our guide on pricing products and services explains how to set fair prices.
+
+### Offer something local
+Visitors often look for authentic local products and experiences. Make it easy to understand what is special about yours.
+
+### Help with the practical needs
+Information about nearby transport, toilets, parking, and ways to ship purchases home can make your business the one they remember.
+
+### Welcome questions
+A friendly greeting and a willingness to help, even with gestures, builds goodwill. Train staff on simple phrases and basic directions.
+
+## 6. Accept visitors' payments
+
+### Offer more than cash
+Visitors may not carry much local cash. Accepting cards and QR payments makes buying easy. Our guide on accepting digital payments in Malaysia explains the main options.
+
+### Check cross-border QR options
+Payment networks in Malaysia have linked with partners abroad so that visitors can scan local QR codes using their home e-wallets, and these arrangements have grown in recent years. What is available to your business depends on your payment provider and the codes you display, so ask them what visitors can use at your shop.
+
+### Display payment signs clearly
+Show which payment methods you accept at the door and the counter, so that visitors do not need to ask.
+
+### Be clear about currencies
+Most shops price in ringgit. Show the price in ringgit, and avoid ad hoc conversions unless you have a clear, fair rate. Be careful about accepting foreign cash.
+
+### Keep records
+Record card and QR sales as well as cash, and reconcile them. Our guide on bookkeeping and accounting basics explains how.
+
+### Protect yourself from fraud
+Check payment confirmations on your own device, and be careful with unusual requests. Our guide on cybersecurity for small businesses explains practical protection.
+
+> Welcome is a skill: clear information, fair prices, and easy payment tell every customer that they are wanted, whatever language they speak.
+
+## 7. Prepare your team
+
+### Train on simple phrases
+Teach staff greetings, thanks, prices, and polite phrases in the main languages of your customers. A few well-chosen words go a long way.
+
+### Build a team that reflects your customers
+Staff who speak your customers' languages make service smoother. Our guide on hiring your first employee explains the basics of hiring and our guide on keeping your best people explains how to retain good staff.
+
+### Agree on how to handle difficult moments
+Decide how to respond to complaints, misunderstandings, and rude behaviour, and keep calm and courteous. Our guide on handling difficult customers and online reviews explains how.
+
+### Share cultural know-how
+Encourage staff to share what they know about festivals, customs, and preferences, and to ask when unsure.
+
+### Provide a safe workplace for everyone
+Respect staff's religious and cultural practices and treat everyone fairly. Our guide on the employee handbook and HR policies explains how to set clear, fair rules.
+
+## 8. Handle misunderstandings and keep improving
+
+### Assume good intent
+Many misunderstandings come from language or custom differences, not bad intent. Stay polite and patient.
+
+### Apologise and fix quickly
+If you cause offence, even by accident, apologise sincerely, correct the issue, and learn from it.
+
+### Listen to feedback
+Read reviews in all languages, and ask regular customers what could be better. Our guide on customer complaints, refunds, and consumer rights explains your duties.
+
+### Check your marketing
+Ask people from different communities to look at your posts, menus, and signs before you publish them.
+
+### Track what works
+Note which languages, offers, and payment methods bring customers. Our guide on tracking business performance explains simple numbers to follow.
+
+If you want help from a translator, a designer, or a payment adviser to serve more customers, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so that local customers and visitors can find your business.
+
+## Common mistakes Malaysian SMEs make with a multicultural market
+
+- **Assuming one language fits everyone.** Customers read different languages, so offer key information in several and get translations checked.
+- **Using cultural or religious symbols and claims carelessly.** Wrong colours, greetings, or halal claims can offend or cause legal trouble, so check before you use them.
+- **Making visitors guess about prices and payment.** Confusion drives tourists away and leads to bad reviews, so show clear prices and the payment methods you accept.
+
+## Where to start
+
+- **This week:** Look at who really buys from you, and list the languages and customs that matter most.
+- **Next:** Translate your key information, check it with a fluent speaker, and put clear prices and payment signs in place.
+- **Then:** Ask your payment provider what visitors can use at your shop, and train staff on simple phrases.
+- **Every quarter:** Read reviews in all languages and update your signs, menus, and festive plans.
+
+A business that welcomes everyone does not need to be perfect. It needs to be curious, respectful, and clear, and to keep learning from the customers it serves.`,
+    faqs: [
+      {
+        question: "Which languages should I offer information in?",
+        answer:
+          "Start with Malay, English, and Chinese, and add others where your customers need them, such as Tamil or languages of regular visitors. Translate the essentials first, such as your name, products, prices, opening hours, payment methods, and contact details.",
+      },
+      {
+        question: "Can I rely on machine translation?",
+        answer:
+          "It can help as a first draft, but errors can change the meaning or look careless. Have a fluent speaker review anything important, such as menus, signs, and web pages.",
+      },
+      {
+        question: "How do I respect different festivals and customs?",
+        answer:
+          "Learn the main celebrations your customers observe, use accurate and respectful greetings, check symbols and colours before using them, and plan opening hours around prayer times and holidays. When unsure, ask someone from that community.",
+      },
+      {
+        question: "What should I know about halal claims?",
+        answer:
+          "Do not use halal wording or logos without proper certification, and be clear about what your food contains. Check the current rules with the relevant authority, and see our guide on halal certification for what it involves.",
+      },
+      {
+        question: "How can I make my business tourist-friendly?",
+        answer:
+          "Keep your map listing and opening hours accurate, use clear signs and menus with prices and photos, be transparent about charges, show payment methods at the door, offer something local, and help with practical questions such as directions and transport.",
+      },
+      {
+        question: "Can foreign visitors pay with their own e-wallets?",
+        answer:
+          "Payment networks in Malaysia have linked with partners abroad so that visitors can scan local QR codes with some home e-wallets, and this has grown in recent years. What works at your shop depends on your payment provider and the codes you display, so ask them.",
+      },
+      {
+        question: "How should I handle a cultural misunderstanding with a customer?",
+        answer:
+          "Assume good intent, stay polite and patient, apologise sincerely if you caused offence, fix the issue quickly, and learn from it. Training staff on simple phrases and cultural know-how helps prevent problems.",
+      },
+      {
+        question: "How do I avoid stereotypes in my marketing?",
+        answer:
+          "Avoid generalising about groups, use cultural symbols carefully, and ask people from different communities to review your posts, menus, and signs before you publish them.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "服务多元文化市场与游客：马来西亚中小企业的语言、文化与付款",
+        excerpt:
+          "马来西亚的顾客说不同的语言，庆祝不同的节日，遵循不同的习俗，许多企业还要迎接来自国外的访客。本指南帮助中小企业以英文、华文和马来文提供信息，尊重节庆和饮食习俗，让招牌和菜单对游客友善，接受外国访客的付款，并礼貌地处理文化上的误会。",
+        body: `很少有地方像马来西亚这样，在这么多语言和文化之间做生意。同一家商店可能在同一个下午里，同时服务马来、华人、印度和原住民顾客、来自其他国家的工人，以及来自世界各地的游客。
+
+这种多元是一种优势。让每个人都感到受欢迎的企业，赢得忠实的顾客和良好的口碑。即使是无心地失误的企业，也可能冒犯人、失去销售并招来差评。
+
+本文仅提供一般信息，并非法律或财务建议。付款选项、宗教和饮食规定，以及旅游趋势会随时间变化，本指南的部分细节可能已经过时。请向相关主管单位和您的付款服务商确认现行要求。
+
+## 1. 了解您的顾客
+
+### 看看实际上是谁来找您
+留意谁走进来、谁发讯息给您，以及谁购买。您的地区、产品和价格决定了您的顾客组合，所以请把选择建立在真实的顾客上，而不是假设上。
+
+### 不要凭外表假设
+不要凭一个人的外貌猜测他的语言、宗教或偏好。请礼貌地询问，或让他们自己选择。
+
+### 想得比族群更广
+年龄、收入、家庭人数和生活方式，与背景一样影响人们买什么。学生、退休人士和上班族，可能对同一家店有不同的需求。
+
+### 留意访客和工人
+游客、商务旅客和外籍工人可能需要更清楚的信息、不同的付款方式，或在找东西时的简单协助。
+
+### 询问并倾听
+简短的交谈和反馈显示顾客需要什么。我们关于了解您的顾客的指南说明了简单的学习方法。
+
+## 2. 使用合适的语言
+
+### 提供选择
+假设您的顾客阅读不同的语言，并让他们自己选择。以马来文、英文和华文提供您的关键信息，并在您的顾客需要时考虑其他语言，例如淡米尔文或常客的语言。
+
+### 从最重要的开始
+先翻译最基本的：您的名称、您卖什么、价格、营业时间、如何订购或付款，以及联络方式。
+
+### 请人检查翻译
+糟糕的翻译看起来草率，也可能改变意思。请流利的使用者检视招牌、菜单和网页，并避免对任何重要的东西只依赖机器翻译。
+
+### 保持简单
+简短的句子和平实的字词更容易理解，尤其是对把英文当作第二语言的访客。我们关于让您的企业在网上被找到的指南说明了如何呈现清楚的信息。
+
+### 使用图片和符号
+菜肴或产品的照片、清楚的图标和数字，帮助看不懂该语言的人。
+
+### 尽可能用顾客的语言回复
+如果顾客用马来文、华文或英文写信给您，请尽可能用同样的语言回复。我们关于在WhatsApp上服务顾客的指南说明了如何以多种语言管理聊天。
+
+## 3. 尊重节日、习俗和信仰
+
+### 了解主要的庆典
+马来西亚庆祝开斋节、农历新年、屠妖节、圣诞节、卫塞节、丰收节和卡达山节等许多节日。顾客可能围绕这些节日规划购物。我们关于规划节庆旺季与淡季的指南说明了如何准备。
+
+### 周到地问候
+以合适的语言发出一句简单的节日问候会受到欣赏，只要它准确且尊重。如果不确定，请询问该社群的人。
+
+### 小心符号和颜色
+颜色、数字和图像在不同文化中有不同的含义。在用于装饰、礼品或包装之前，请先查核。
+
+### 尊重祷告时间和休息日
+顾客和员工可能遵守祷告时间、斋戒或宗教假期。规划营业时间、送货和会议时请考虑这一点。
+
+### 营销要公平
+不要对群体刻板印象，也不要随意使用文化符号。我们关于马来西亚中小企业社交媒体营销的指南说明了如何让内容保持尊重。
+
+### 平等对待每个人
+以同样的礼貌和品质服务所有顾客。不公平的对待，甚至是看起来不公平，都会迅速传开。
+
+## 4. 谨慎处理饮食规定和产品宣称
+
+### 了解清真和其他饮食需求
+许多顾客遵守清真规定，另一些则吃素、避开某些食物或有过敏。请清楚说明您的食物含什么。我们关于马来西亚清真认证的指南说明了认证涉及什么。
+
+### 不要随意使用清真宣称
+在没有适当认证的情况下使用清真字眼或标志，可能造成严重的问题。只作出您能支持的宣称，并向相关主管单位确认现行规定。
+
+### 让食材分开并贴上标签
+如果您服务不同的顾客，请清楚标示食材，并在重要之处防止交叉接触。我们关于开办食品生意的指南说明了卫生和安全的基础知识。
+
+### 对过敏原要诚实
+有过敏的顾客依赖您的诚实。告诉他们您所知道的，绝不要猜测。
+
+### 提供选择
+一道素食、一份无猪肉的菜单，或一个清楚标明的选项，可以带来更多顾客，并让团体更容易服务。
+
+## 5. 让您的店对游客友善
+
+### 让您的位置容易找到
+保持您的地图列表、营业时间和照片准确，并以多种语言加上路线说明。我们关于让您的企业在网上被找到的指南说明了如何管理列表。
+
+### 使用清楚的招牌和菜单
+在商品上标明价格，展示照片，并使用简短的说明。访客往往很快做决定，困惑时就会离开。
+
+### 价格要透明
+清楚显示价格，说明任何服务费或税，并避免在收银台出现意外。感觉被骗的游客会留下严厉的评论。我们关于产品与服务定价的指南说明了如何订立公平的价格。
+
+### 提供本地的东西
+访客常常寻找道地的本地产品和体验。请让人容易了解您的特别之处。
+
+### 协助实际的需要
+关于附近的交通、洗手间、停车和把购买的东西寄回家的方式的信息，可以让您的企业成为他们记得的那一家。
+
+### 欢迎提问
+友善的问候和乐于帮忙的态度，即使靠手势，也能建立好感。请培训员工使用简单的短语和基本的指路。
+
+## 6. 接受访客的付款
+
+### 提供现金以外的选择
+访客可能没带太多本地现金。接受刷卡和二维码付款让购买变得容易。我们关于在马来西亚接受数码付款的指南说明了主要的选项。
+
+### 查核跨境二维码的选项
+马来西亚的付款网络已与海外的伙伴连结，让访客可以用自己国家的电子钱包扫描本地的二维码，这些安排近年来有所增加。您的企业能用什么，取决于您的付款服务商和您展示的二维码，所以请询问他们访客在您的店里可以使用什么。
+
+### 清楚展示付款标示
+在门口和柜台显示您接受的付款方式，让访客不必询问。
+
+### 对货币要清楚
+大多数商店以令吉定价。请以令吉显示价格，除非您有清楚而公平的汇率，否则避免临时的换算。对接受外币现金要小心。
+
+### 保留记录
+记录刷卡和二维码的销售以及现金，并加以核对。我们关于簿记和会计基础的指南说明了如何做。
+
+### 保护自己免受欺诈
+在您自己的设备上检查付款确认，并对不寻常的要求保持小心。我们关于小企业网络安全的指南说明了实用的保护措施。
+
+> 欢迎是一种技能：清楚的信息、公平的价格和便捷的付款，告诉每位顾客他们受欢迎，无论他们说什么语言。
+
+## 7. 为您的团队做好准备
+
+### 培训简单的短语
+教员工以您顾客的主要语言说问候、感谢、价格和礼貌用语。几句精心挑选的话就能走很远。
+
+### 建立能反映您顾客的团队
+会说您顾客语言的员工让服务更顺畅。我们关于聘请第一位员工的指南说明了聘用的基础知识，关于留住最优秀员工的指南说明了如何留住好员工。
+
+### 商定如何处理困难的时刻
+决定如何回应投诉、误会和无礼的行为，并保持冷静和礼貌。我们关于应对难缠顾客与网络评论的指南说明了如何做。
+
+### 分享文化知识
+鼓励员工分享他们对节日、习俗和偏好的了解，并在不确定时询问。
+
+### 为每个人提供安全的工作场所
+尊重员工的宗教和文化习惯，并公平对待每个人。我们关于员工手册与人力资源政策的指南说明了如何订立清楚而公平的规则。
+
+## 8. 处理误会并持续改进
+
+### 假设对方没有恶意
+许多误会来自语言或习俗的差异，而不是恶意。请保持礼貌和耐心。
+
+### 迅速道歉并改正
+如果您造成冒犯，即使是无意的，请真诚道歉、纠正问题，并从中学习。
+
+### 倾听反馈
+阅读所有语言的评论，并询问常客有什么可以改进。我们关于顾客投诉、退款与消费者权益的指南说明了您的责任。
+
+### 检查您的营销
+在发布之前，请不同社群的人看看您的帖子、菜单和招牌。
+
+### 追踪什么有效
+记下哪些语言、优惠和付款方式带来顾客。我们关于追踪企业绩效的指南说明了可以追踪的简单数字。
+
+如果您想请翻译员、设计师或付款顾问协助您服务更多顾客，可以[浏览目录](/zh)寻找您附近的专业人士，并[创建免费商家列表](/zh/signup)，让本地顾客和访客能找到您的企业。
+
+## 马来西亚中小企业在多元文化市场方面的常见错误
+
+- **以为一种语言适合所有人。** 顾客阅读不同的语言，所以请以几种语言提供关键信息，并请人检查翻译。
+- **随意使用文化或宗教的符号和宣称。** 错误的颜色、问候或清真宣称可能冒犯人或招来法律麻烦，所以请在使用前查核。
+- **让访客猜测价格和付款。** 困惑会把游客赶走并导致差评，所以请显示清楚的价格和您接受的付款方式。
+
+## 从哪里开始
+
+- **本周：** 看看实际上是谁向您购买，并列出最重要的语言和习俗。
+- **接下来：** 翻译您的关键信息，请流利的使用者检查，并放上清楚的价格和付款标示。
+- **然后：** 询问您的付款服务商访客在您的店里可以使用什么，并培训员工使用简单的短语。
+- **每个季度：** 阅读所有语言的评论，并更新您的招牌、菜单和节庆计划。
+
+欢迎每个人的企业不需要完美。它需要好奇、尊重和清晰，并不断向它所服务的顾客学习。`,
+        faqs: [
+          {
+            question: "我应该以哪些语言提供信息？",
+            answer:
+              "从马来文、英文和华文开始，并在您的顾客需要时加上其他语言，例如淡米尔文或常客的语言。先翻译最基本的，例如您的名称、产品、价格、营业时间、付款方式和联络方式。",
+          },
+          {
+            question: "我可以依赖机器翻译吗？",
+            answer:
+              "它可以当作初稿，但错误可能改变意思或显得草率。任何重要的东西，例如菜单、招牌和网页，请让流利的使用者检视。",
+          },
+          {
+            question: "我如何尊重不同的节日和习俗？",
+            answer:
+              "了解您的顾客所庆祝的主要节日，使用准确而尊重的问候，在使用符号和颜色之前先查核，并围绕祷告时间和假期规划营业时间。不确定时，请询问该社群的人。",
+          },
+          {
+            question: "关于清真宣称我应该知道什么？",
+            answer:
+              "在没有适当认证的情况下，不要使用清真字眼或标志，并清楚说明您的食物含什么。请向相关主管单位确认现行规定，并参阅我们关于清真认证的指南了解它涉及什么。",
+          },
+          {
+            question: "我如何让我的企业对游客友善？",
+            answer:
+              "保持您的地图列表和营业时间准确，使用附有价格和照片的清楚招牌和菜单，对收费保持透明，在门口显示付款方式，提供本地的东西，并协助指路和交通等实际问题。",
+          },
+          {
+            question: "外国访客可以用自己的电子钱包付款吗？",
+            answer:
+              "马来西亚的付款网络已与海外的伙伴连结，让访客可以用某些本国的电子钱包扫描本地的二维码，近年来也有所增加。您的店里能用什么，取决于您的付款服务商和您展示的二维码，所以请询问他们。",
+          },
+          {
+            question: "我应该如何处理与顾客的文化误会？",
+            answer:
+              "假设对方没有恶意，保持礼貌和耐心，如果造成冒犯就真诚道歉，迅速解决问题，并从中学习。培训员工使用简单的短语和文化知识有助于预防问题。",
+          },
+          {
+            question: "我如何在营销中避免刻板印象？",
+            answer:
+              "避免对群体做概括，谨慎使用文化符号，并在发布之前请不同社群的人检视您的帖子、菜单和招牌。",
+          },
+        ],
+      },
+      ms: {
+        title: "Melayani Pasaran Pelbagai Budaya dan Pelancong: Bahasa, Budaya dan Pembayaran untuk PKS Malaysia",
+        excerpt:
+          "Pelanggan Malaysia bertutur dalam bahasa berbeza, menyambut perayaan berbeza, dan mengikut adat berbeza, dan banyak perniagaan juga menyambut pelawat dari luar negara. Panduan ini membantu PKS menyediakan maklumat dalam bahasa Inggeris, Cina dan Melayu, menghormati adat perayaan dan pemakanan, menjadikan papan tanda dan menu mesra pelancong, menerima pembayaran pelawat asing, dan menangani salah faham budaya dengan sopan.",
+        body: `Hanya sedikit tempat yang berniaga merentas sebanyak bahasa dan budaya seperti Malaysia. Sebuah kedai boleh melayan pelanggan Melayu, Cina, India dan orang asli, pekerja dari negara lain, dan pelancong dari seluruh dunia, semuanya pada petang yang sama.
+
+Kepelbagaian itu ialah kekuatan. Perniagaan yang membuat semua orang berasa dialu-alukan memperoleh pelanggan setia dan cerita baik dari mulut ke mulut. Perniagaan yang tersilap, walaupun tanpa niat, boleh menyinggung orang, kehilangan jualan, dan mengundang ulasan buruk.
+
+Ini maklumat umum, bukan nasihat undang-undang atau kewangan. Pilihan pembayaran, peraturan agama dan pemakanan, dan trend pelancongan berubah dari semasa ke semasa, dan sebahagian butiran dalam panduan ini mungkin sudah lapuk. Sahkan keperluan semasa dengan pihak berkuasa berkaitan dan pembekal pembayaran anda.
+
+## 1. Fahami pelanggan anda
+
+### Lihat siapa yang sebenarnya datang kepada anda
+Perhatikan siapa yang masuk, siapa yang menghantar mesej kepada anda, dan siapa yang membeli. Kawasan, produk dan harga anda menentukan campuran anda, jadi asaskan pilihan anda pada pelanggan sebenar, bukan andaian.
+
+### Jangan membuat andaian daripada penampilan
+Jangan meneka bahasa, agama atau pilihan seseorang daripada rupa mereka. Tanya dengan sopan, atau biarkan mereka memilih.
+
+### Fikir melangkaui etnik
+Umur, pendapatan, saiz keluarga dan gaya hidup membentuk apa yang orang beli sama seperti latar belakang. Seorang pelajar, seorang pesara dan seorang pekerja pejabat mungkin mahukan perkara berbeza daripada kedai yang sama.
+
+### Perhatikan pelawat dan pekerja
+Pelancong, pengembara perniagaan dan pekerja asing mungkin memerlukan maklumat yang lebih jelas, kaedah pembayaran berbeza, atau bantuan mudah mencari apa yang mereka perlukan.
+
+### Tanya dan dengar
+Perbualan ringkas dan maklum balas menunjukkan apa yang pelanggan perlukan. Panduan kami tentang memahami pelanggan anda menerangkan cara mudah untuk belajar.
+
+## 2. Gunakan bahasa yang betul
+
+### Tawarkan pilihan
+Anggap bahawa pelanggan anda membaca bahasa yang berbeza, dan biarkan mereka memilih. Tawarkan maklumat utama anda dalam bahasa Melayu, Inggeris dan Cina, dan pertimbangkan bahasa lain jika pelanggan anda memerlukannya, seperti Tamil atau bahasa pelawat tetap.
+
+### Mulakan dengan yang paling penting
+Terjemahkan perkara asas dahulu: nama anda, apa yang anda jual, harga, waktu operasi, cara memesan atau membayar, dan butiran hubungan.
+
+### Minta terjemahan disemak
+Terjemahan yang lemah kelihatan cuai dan boleh mengubah maksud. Minta penutur yang fasih menyemak papan tanda, menu dan halaman web, dan elakkan bergantung semata-mata pada terjemahan mesin untuk apa-apa yang penting.
+
+### Pastikan mudah
+Ayat pendek dan perkataan mudah lebih senang difahami, terutamanya oleh pelawat yang membaca bahasa Inggeris sebagai bahasa kedua. Panduan kami tentang membolehkan perniagaan anda ditemui dalam talian menerangkan cara mempersembahkan maklumat yang jelas.
+
+### Gunakan gambar dan simbol
+Gambar hidangan atau produk, ikon yang jelas dan nombor membantu orang yang tidak dapat membaca bahasa itu.
+
+### Balas dalam bahasa pelanggan apabila boleh
+Jika pelanggan menulis dalam bahasa Melayu, Cina atau Inggeris, balas dalam bahasa yang sama jika boleh. Panduan kami tentang melayan pelanggan di WhatsApp menerangkan cara menguruskan sembang dalam beberapa bahasa.
+
+## 3. Hormati perayaan, adat dan kepercayaan
+
+### Kenali perayaan utama
+Malaysia menyambut perayaan seperti Hari Raya Aidilfitri, Tahun Baharu Cina, Deepavali, Krismas, Wesak, Gawai dan Kaamatan, bersama banyak lagi. Pelanggan mungkin merancang pembelian mereka sekitar perayaan itu. Panduan kami tentang merancang puncak perayaan dan musim perlahan menerangkan cara bersedia.
+
+### Beri ucapan dengan teliti
+Ucapan perayaan yang mudah dalam bahasa yang betul dihargai, selagi ia tepat dan menghormati. Jika tidak pasti, tanya seseorang daripada komuniti itu.
+
+### Berhati-hati dengan simbol dan warna
+Warna, nombor dan imej membawa maksud berbeza dalam budaya berbeza. Semak sebelum anda menggunakannya dalam hiasan, hadiah atau pembungkusan.
+
+### Hormati waktu solat dan hari rehat
+Pelanggan dan pekerja mungkin mengikuti waktu solat, berpuasa atau cuti keagamaan. Rancang waktu operasi, penghantaran dan mesyuarat dengan mengambil kira perkara ini.
+
+### Bersikap adil dalam pemasaran anda
+Jangan menstereotaipkan kumpulan atau menggunakan simbol budaya secara sambil lewa. Panduan kami tentang pemasaran media sosial untuk PKS Malaysia menerangkan cara memastikan kandungan menghormati.
+
+### Layan semua orang sama rata
+Layan semua pelanggan dengan kesopanan dan kualiti yang sama. Layanan yang tidak adil, atau walaupun nampak begitu, tersebar dengan cepat.
+
+## 4. Kendalikan peraturan pemakanan dan dakwaan produk dengan berhati-hati
+
+### Fahami halal dan keperluan pemakanan lain
+Ramai pelanggan mengikut peraturan halal, dan yang lain vegetarian, mengelak makanan tertentu atau mempunyai alahan. Jelas tentang apa yang terkandung dalam makanan anda. Panduan kami tentang pensijilan halal di Malaysia menerangkan apa yang terlibat dalam pensijilan.
+
+### Jangan menggunakan dakwaan halal secara longgar
+Menggunakan perkataan atau logo halal tanpa pensijilan yang betul boleh menyebabkan masalah serius. Buat dakwaan hanya yang anda boleh sokong, dan semak peraturan semasa dengan pihak berkuasa berkaitan.
+
+### Pisahkan bahan dan labelkan
+Jika anda melayan pelanggan campuran, labelkan bahan dengan jelas dan elakkan sentuhan silang di mana ia penting. Panduan kami tentang memulakan perniagaan makanan menerangkan asas kebersihan dan keselamatan.
+
+### Jujur tentang alergen
+Pelanggan yang mempunyai alahan bergantung pada kejujuran anda. Beritahu mereka apa yang anda tahu, dan jangan sekali-kali meneka.
+
+### Tawarkan pilihan
+Hidangan vegetarian, menu tanpa babi, atau pilihan yang ditanda dengan jelas boleh membawa lebih ramai pelanggan dan memudahkan melayan kumpulan.
+
+## 5. Jadikan kedai anda mesra pelancong
+
+### Permudahkan lokasi anda ditemui
+Pastikan penyenaraian peta, waktu operasi dan gambar anda tepat, dan tambah arah dalam lebih daripada satu bahasa. Panduan kami tentang membolehkan perniagaan anda ditemui dalam talian menerangkan cara menguruskan penyenaraian.
+
+### Gunakan papan tanda dan menu yang jelas
+Letakkan harga pada item, tunjukkan gambar, dan gunakan penerangan pendek. Pelawat selalunya membuat keputusan dengan cepat dan pergi apabila keliru.
+
+### Telus tentang harga
+Tunjukkan harga dengan jelas, nyatakan sebarang caj perkhidmatan atau cukai, dan elakkan kejutan di kaunter. Pelancong yang berasa ditipu meninggalkan ulasan keras. Panduan kami tentang penetapan harga produk dan perkhidmatan menerangkan cara menetapkan harga yang adil.
+
+### Tawarkan sesuatu yang tempatan
+Pelawat selalunya mencari produk dan pengalaman tempatan yang tulen. Permudahkan orang memahami apa yang istimewa tentang anda.
+
+### Bantu dengan keperluan praktikal
+Maklumat tentang pengangkutan berdekatan, tandas, tempat letak kereta dan cara menghantar pembelian pulang boleh menjadikan perniagaan anda yang mereka ingat.
+
+### Alu-alukan soalan
+Sapaan mesra dan kesediaan membantu, walaupun dengan isyarat, membina muhibah. Latih pekerja tentang frasa mudah dan arah asas.
+
+## 6. Terima pembayaran pelawat
+
+### Tawarkan lebih daripada tunai
+Pelawat mungkin tidak membawa banyak tunai tempatan. Menerima kad dan pembayaran QR memudahkan pembelian. Panduan kami tentang menerima pembayaran digital di Malaysia menerangkan pilihan utama.
+
+### Semak pilihan QR rentas sempadan
+Rangkaian pembayaran di Malaysia telah dipautkan dengan rakan kongsi di luar negara supaya pelawat boleh mengimbas kod QR tempatan menggunakan e-dompet negara mereka, dan susunan ini telah berkembang sejak beberapa tahun kebelakangan ini. Apa yang tersedia kepada perniagaan anda bergantung pada pembekal pembayaran anda dan kod yang anda paparkan, jadi tanya mereka apa yang boleh digunakan pelawat di kedai anda.
+
+### Paparkan tanda pembayaran dengan jelas
+Tunjukkan kaedah pembayaran yang anda terima di pintu dan kaunter, supaya pelawat tidak perlu bertanya.
+
+### Jelas tentang mata wang
+Kebanyakan kedai meletakkan harga dalam ringgit. Tunjukkan harga dalam ringgit, dan elakkan penukaran ad hoc melainkan anda mempunyai kadar yang jelas dan adil. Berhati-hati tentang menerima tunai asing.
+
+### Simpan rekod
+Rekod jualan kad dan QR serta tunai, dan selaraskannya. Panduan kami tentang asas simpan kira dan perakaunan menerangkan caranya.
+
+### Lindungi diri anda daripada penipuan
+Semak pengesahan pembayaran pada peranti anda sendiri, dan berhati-hati dengan permintaan luar biasa. Panduan kami tentang keselamatan siber untuk perniagaan kecil menerangkan perlindungan praktikal.
+
+> Sambutan ialah kemahiran: maklumat yang jelas, harga yang adil dan pembayaran yang mudah memberitahu setiap pelanggan bahawa mereka dikehendaki, apa pun bahasa yang mereka tuturkan.
+
+## 7. Sediakan pasukan anda
+
+### Latih frasa mudah
+Ajar pekerja ucapan, terima kasih, harga dan frasa sopan dalam bahasa utama pelanggan anda. Beberapa perkataan yang dipilih dengan baik membawa jauh.
+
+### Bina pasukan yang mencerminkan pelanggan anda
+Pekerja yang bertutur dalam bahasa pelanggan anda menjadikan perkhidmatan lebih lancar. Panduan kami tentang mengupah pekerja pertama anda menerangkan asas pengambilan dan panduan kami tentang mengekalkan pekerja terbaik anda menerangkan cara mengekalkan staf yang baik.
+
+### Persetujui cara menangani saat sukar
+Tentukan cara membalas aduan, salah faham dan kelakuan kurang sopan, dan kekal tenang dan sopan. Panduan kami tentang menangani pelanggan sukar dan ulasan dalam talian menerangkan caranya.
+
+### Kongsi pengetahuan budaya
+Galakkan pekerja berkongsi apa yang mereka tahu tentang perayaan, adat dan pilihan, dan bertanya apabila tidak pasti.
+
+### Sediakan tempat kerja yang selamat untuk semua orang
+Hormati amalan agama dan budaya pekerja dan layan semua orang dengan adil. Panduan kami tentang buku panduan pekerja dan dasar HR menerangkan cara menetapkan peraturan yang jelas dan adil.
+
+## 8. Tangani salah faham dan teruskan memperbaiki
+
+### Anggap niat baik
+Banyak salah faham datang daripada perbezaan bahasa atau adat, bukan niat buruk. Kekal sopan dan sabar.
+
+### Minta maaf dan baiki dengan cepat
+Jika anda menyebabkan kesinggungan, walaupun tanpa sengaja, minta maaf dengan ikhlas, betulkan isu itu, dan belajar daripadanya.
+
+### Dengar maklum balas
+Baca ulasan dalam semua bahasa, dan tanya pelanggan tetap apa yang boleh diperbaiki. Panduan kami tentang aduan pelanggan, bayaran balik dan hak pengguna menerangkan tugas anda.
+
+### Semak pemasaran anda
+Minta orang daripada komuniti berbeza melihat siaran, menu dan papan tanda anda sebelum anda menerbitkannya.
+
+### Jejak apa yang berjaya
+Catat bahasa, tawaran dan kaedah pembayaran mana yang membawa pelanggan. Panduan kami tentang menjejak prestasi perniagaan menerangkan angka mudah untuk diikuti.
+
+Jika anda mahu bantuan penterjemah, pereka atau penasihat pembayaran untuk melayan lebih ramai pelanggan, anda boleh [menyemak imbas direktori](/ms) untuk profesional berhampiran anda, dan [membuat penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan tempatan dan pelawat dapat menemui perniagaan anda.
+
+## Kesilapan lazim PKS Malaysia dengan pasaran pelbagai budaya
+
+- **Menganggap satu bahasa sesuai untuk semua orang.** Pelanggan membaca bahasa berbeza, jadi tawarkan maklumat utama dalam beberapa bahasa dan minta terjemahan disemak.
+- **Menggunakan simbol dan dakwaan budaya atau agama secara sambil lewa.** Warna, ucapan atau dakwaan halal yang salah boleh menyinggung atau menyebabkan masalah undang-undang, jadi semak sebelum anda menggunakannya.
+- **Membuat pelawat meneka tentang harga dan pembayaran.** Kekeliruan menjauhkan pelancong dan membawa kepada ulasan buruk, jadi tunjukkan harga yang jelas dan kaedah pembayaran yang anda terima.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Lihat siapa yang benar-benar membeli daripada anda, dan senaraikan bahasa dan adat yang paling penting.
+- **Seterusnya:** Terjemahkan maklumat utama anda, semak dengan penutur yang fasih, dan letakkan harga yang jelas dan tanda pembayaran.
+- **Kemudian:** Tanya pembekal pembayaran anda apa yang boleh digunakan pelawat di kedai anda, dan latih pekerja tentang frasa mudah.
+- **Setiap suku tahun:** Baca ulasan dalam semua bahasa dan kemas kini papan tanda, menu dan rancangan perayaan anda.
+
+Perniagaan yang mengalu-alukan semua orang tidak perlu sempurna. Ia perlu ingin tahu, menghormati dan jelas, dan terus belajar daripada pelanggan yang dilayaninya.`,
+        faqs: [
+          {
+            question: "Dalam bahasa apakah patut saya menawarkan maklumat?",
+            answer:
+              "Mulakan dengan bahasa Melayu, Inggeris dan Cina, dan tambah yang lain jika pelanggan anda memerlukannya, seperti Tamil atau bahasa pelawat tetap. Terjemahkan perkara asas dahulu, seperti nama, produk, harga, waktu operasi, kaedah pembayaran dan butiran hubungan anda.",
+          },
+          {
+            question: "Bolehkah saya bergantung pada terjemahan mesin?",
+            answer:
+              "Ia boleh membantu sebagai draf pertama, tetapi kesilapan boleh mengubah maksud atau kelihatan cuai. Minta penutur yang fasih menyemak apa-apa yang penting, seperti menu, papan tanda dan halaman web.",
+          },
+          {
+            question: "Bagaimanakah saya menghormati perayaan dan adat yang berbeza?",
+            answer:
+              "Pelajari perayaan utama yang disambut pelanggan anda, gunakan ucapan yang tepat dan menghormati, semak simbol dan warna sebelum menggunakannya, dan rancang waktu operasi sekitar waktu solat dan cuti. Apabila tidak pasti, tanya seseorang daripada komuniti itu.",
+          },
+          {
+            question: "Apa yang patut saya tahu tentang dakwaan halal?",
+            answer:
+              "Jangan gunakan perkataan atau logo halal tanpa pensijilan yang betul, dan jelas tentang apa yang terkandung dalam makanan anda. Semak peraturan semasa dengan pihak berkuasa berkaitan, dan lihat panduan kami tentang pensijilan halal untuk apa yang terlibat.",
+          },
+          {
+            question: "Bagaimanakah saya boleh menjadikan perniagaan saya mesra pelancong?",
+            answer:
+              "Pastikan penyenaraian peta dan waktu operasi anda tepat, gunakan papan tanda dan menu yang jelas dengan harga dan gambar, telus tentang caj, tunjukkan kaedah pembayaran di pintu, tawarkan sesuatu yang tempatan, dan bantu dengan soalan praktikal seperti arah dan pengangkutan.",
+          },
+          {
+            question: "Bolehkah pelawat asing membayar dengan e-dompet mereka sendiri?",
+            answer:
+              "Rangkaian pembayaran di Malaysia telah dipautkan dengan rakan kongsi di luar negara supaya pelawat boleh mengimbas kod QR tempatan dengan beberapa e-dompet negara mereka, dan ini telah berkembang sejak beberapa tahun kebelakangan ini. Apa yang berfungsi di kedai anda bergantung pada pembekal pembayaran anda dan kod yang anda paparkan, jadi tanya mereka.",
+          },
+          {
+            question: "Bagaimanakah saya patut menangani salah faham budaya dengan pelanggan?",
+            answer:
+              "Anggap niat baik, kekal sopan dan sabar, minta maaf dengan ikhlas jika anda menyebabkan kesinggungan, baiki isu itu dengan cepat, dan belajar daripadanya. Melatih pekerja tentang frasa mudah dan pengetahuan budaya membantu mencegah masalah.",
+          },
+          {
+            question: "Bagaimanakah saya mengelak stereotaip dalam pemasaran saya?",
+            answer:
+              "Elakkan membuat generalisasi tentang kumpulan, gunakan simbol budaya dengan berhati-hati, dan minta orang daripada komuniti berbeza menyemak siaran, menu dan papan tanda anda sebelum anda menerbitkannya.",
+          },
+        ],
+      },
+    },
+  },
 ];
