@@ -15,18 +15,18 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Building a Brand on a Small Budget: Name, Logo, Packaging, and a Consistent Look for Malaysian SMEs**
-   — What a brand is beyond a logo, choosing a name and checking it (to
-   hedge, point to trademark search), simple logo and colour choices,
-   working with a freelance designer or using templates, packaging and
-   labels (to hedge on labelling rules), consistent tone across chat,
-   social media and signage, photography on a phone, protecting your brand,
-   and measuring whether it helps.
+1. **Working With Local Councils and Neighbours: Signage, Noise, Waste, and Community Goodwill for Malaysian SMEs**
+   — Why local relationships matter, who the local council (PBT) is and what
+   it regulates (to hedge, confirm with your council), signboard and
+   advertising permits (to hedge), noise, odour and opening-hour
+   complaints, waste and grease handling, parking and obstruction, dealing
+   with inspections and compound notices, being a good neighbour, and
+   building goodwill in the community.
 
-2. **Serving a Multicultural Market and Tourists: Language, Culture, and Payments for Malaysian SMEs**
-   — Understanding Malaysia's mix of customers, offering information in
-   English, Chinese and Malay, respecting festive and dietary customs
-   (halal, to hedge), tourist-friendly signage and menus, accepting
-   foreign visitors' payments (to hedge), simple phrases for staff,
-   handling cultural misunderstandings politely, online listings for
-   tourists, and avoiding stereotypes in marketing.
+2. **Selling Digital Products and Online Courses: Ebooks, Templates, and Classes for Malaysian SMEs**
+   — Which knowledge and skills can become digital products, validating
+   demand, formats and platforms (features to hedge), pricing and
+   delivery, protecting your content and copyright (to hedge), taking
+   payments and refunds, tax and sales-tax considerations for digital
+   sales (to hedge), marketing without overpromising, and supporting
+   buyers.
