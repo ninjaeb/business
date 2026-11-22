@@ -15,18 +15,17 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Working With Local Councils and Neighbours: Signage, Noise, Waste, and Community Goodwill for Malaysian SMEs**
-   — Why local relationships matter, who the local council (PBT) is and what
-   it regulates (to hedge, confirm with your council), signboard and
-   advertising permits (to hedge), noise, odour and opening-hour
-   complaints, waste and grease handling, parking and obstruction, dealing
-   with inspections and compound notices, being a good neighbour, and
-   building goodwill in the community.
+1. **Product Photography and Content Creation on a Budget: Photos, Short Videos, and Listings for Malaysian SMEs**
+   — Why good visuals sell, planning shots and a simple setup with a phone
+   and natural light, styling and backgrounds, short-form video basics,
+   writing captions and product listings, editing and consistency, using
+   customer photos with permission, respecting music and image copyright
+   (to hedge), and building a content calendar you can keep up.
 
-2. **Selling Digital Products and Online Courses: Ebooks, Templates, and Classes for Malaysian SMEs**
-   — Which knowledge and skills can become digital products, validating
-   demand, formats and platforms (features to hedge), pricing and
-   delivery, protecting your content and copyright (to hedge), taking
-   payments and refunds, tax and sales-tax considerations for digital
-   sales (to hedge), marketing without overpromising, and supporting
-   buyers.
+2. **Choosing Packaging and Going Greener: Practical, Cost-Aware Packaging and Sustainability for Malaysian SMEs**
+   — Why packaging matters for protection and brand, choosing materials and
+   sizes, balancing cost against damage and returns, labelling basics
+   (to hedge, confirm current rules), reducing waste and plastic, local
+   rules and customer expectations on single-use items (to hedge), working
+   with packaging suppliers, communicating green efforts honestly without
+   exaggerated claims, and measuring what you save.
