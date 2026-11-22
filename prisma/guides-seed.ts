@@ -42543,4 +42543,1299 @@ Perniagaan yang mengalu-alukan semua orang tidak perlu sempurna. Ia perlu ingin 
       },
     },
   },
+  {
+    slug: "working-with-local-councils-and-neighbours-for-malaysian-smes",
+    title: "Working With Local Councils and Neighbours: Signage, Noise, Waste, and Community Goodwill for Malaysian SMEs",
+    seoTitle: "Local Councils and Neighbours: A Guide for Malaysian SMEs",
+    seoDescription:
+      "How Malaysian SMEs can work with their local council and neighbours: signboard approval, noise, waste, parking, inspections and building goodwill.",
+    coverImage: {
+      file: "working-with-local-councils-and-neighbours-cover.webp",
+      mimeType: "image/webp",
+      alt: "A man in an apron holding a yellow cup and a woman in a white t-shirt laughing together as they sit on a low wall outside a cafe with plants behind them",
+      altTranslations: {
+        zh: "一位围着围裙、手拿黄色杯子的男士和一位身穿白色T恤的女士，坐在咖啡店外的矮墙上一起欢笑，身后是植物",
+        ms: "Seorang lelaki berapron memegang cawan kuning dan seorang wanita berbaju-T putih ketawa bersama sambil duduk di atas tembok rendah di luar kafe dengan tumbuhan di belakang mereka",
+      },
+    },
+    contentImages: {
+      waste: {
+        file: "working-with-local-councils-and-neighbours-waste.webp",
+        mimeType: "image/webp",
+        alt: "A smiling woman in a white striped blouse holding up a tied blue bag of sorted rubbish against a plain white wall",
+        altTranslations: {
+          zh: "一位身穿白色条纹上衣的微笑女士，在素白的墙前举起一个扎好的蓝色分类垃圾袋",
+          ms: "Seorang wanita tersenyum berblaus belang putih mengangkat beg biru berikat berisi sampah yang telah diasingkan di hadapan dinding putih biasa",
+        },
+        after: "Plan for your rubbish before it turns into a complaint.",
+        afterTranslations: {
+          zh: "在垃圾变成投诉之前，先把它安排好。",
+          ms: "Rancang sampah anda sebelum ia bertukar menjadi aduan.",
+        },
+      },
+    },
+    excerpt:
+      "A shop that ignores its council and its neighbours can lose weeks to notices, fines, and complaints. This guide helps SMEs understand what their local council usually regulates, handle signboards and advertising, manage noise, smells, waste, and parking, respond calmly to inspections and compound notices, and earn goodwill that protects the business over time.",
+    body: `Opening your doors is only the start. Once customers arrive, you share a street, a drain, a pavement, and a rubbish truck with everyone around you. Your local council and your neighbours quietly decide whether that sharing is easy or expensive.
+
+Most problems here are small at first: a signboard hung without approval, a grease smell drifting next door, bins left on the five-foot way. Left alone, they become notices, fines, and bad feeling. Handled early, they cost almost nothing.
+
+This is general information, not legal advice. Local councils (often called PBT) set many of their own by-laws, fees, and procedures, and these differ between councils and change over time. Always confirm the current rules with your own council before you spend money or act.
+
+## 1. Know who regulates your premises
+
+### Find your local council
+Every business address falls under a local authority, such as a city hall or a municipal or district council. MIDA's advertising booklet notes that there are roughly 155 local authorities in Malaysia, so the council next door may not follow the same process as yours. Check your business licence or ask your landlord which council covers your premises.
+
+### Learn what it usually covers
+Councils commonly deal with business premises licences, signboards and advertising, hawking and trading spaces, waste collection, drains, parking, and building use. Noise, smells, and operating hours may sit with the council or with other agencies, depending on the issue and the state.
+
+### Collect the rules in one place
+Visit the council's website or counter and ask for the licence conditions, the signboard guidelines, and the fee schedule. Keep copies together with your licence so that anyone on your team can answer an officer's question.
+
+### Name one person who handles it
+Decide who in your business owns council matters, whether that is you or a manager. A single contact avoids missed letters and contradictory answers.
+
+## 2. Handle signboards and advertising properly
+
+### Treat a signboard as a separate approval
+A business licence does not automatically approve your signboard. Enforcement reports from Kuala Lumpur describe premises that held a business licence but had no signboard approval being given compound notices and told to remove the signs. Other councils have their own application forms, and some use a separate advertisement licence for permanent signs.
+
+### Check language and content rules
+Some councils require signboards to use the national language and may require specific details to be shown. Reports from Kuala Lumpur have described notices over language rules and a compound over a missing registration number on a signboard. Confirm what your council requires before you order a design.
+
+### Get approval before you print
+Apply first, then fabricate. Signs that must be taken down after installation waste the cost of design, printing, and fitting. Ask the council how long approval usually takes, because commercial signage companies quote very different timelines.
+
+### Ask about banners, flags, and promotions
+Temporary banners, flags, and roadside promotions often need their own permission. Ask before a launch or sale, not afterwards.
+
+### Keep records and renew on time
+Store the approval, the plan, and the receipt. Permits can lapse or carry conditions, so diarise renewal dates.
+
+## 3. Manage noise, smells, and operating hours
+
+### Know the complaint triggers
+Most complaints come from the same sources: loud music, kitchen exhausts, deliveries at dawn, late-night crowds, and machines running next to someone's bedroom. Think about these when you choose a layout, not after the first complaint.
+
+### Check your hours and conditions
+Your licence or the premises' use may carry conditions about trading hours or activities. Confirm them with your council, and do not assume your neighbour's hours apply to you.
+
+### Reduce noise at the source
+Place speakers away from shared walls, add soft materials, keep doors closed during loud work, and schedule deliveries and cleaning at sensible hours. Remind staff to keep their voices down outside at closing time.
+
+### Control smells and smoke
+Clean exhaust filters on a schedule, point vents away from neighbours' windows, and keep bins closed. Ask a licensed professional about ventilation upgrades if smells keep travelling.
+
+### Talk before it escalates
+If a neighbour raises a concern, listen, thank them, and propose a specific fix and a date. A friendly conversation is cheaper than a visit from an officer.
+
+## 4. Deal with waste, grease, and drains
+
+### Start with what you throw away
+Plan for your rubbish before it turns into a complaint. List what your business throws away, such as food waste, packaging, cooking oil, and broken equipment, and decide how each will leave the premises. Our guide on environmental compliance and waste management explains the wider rules.
+
+### Separate and store waste tidily
+Use lidded bins, keep them off the walkway, and clean the bin area daily. Pests and smells from untidy waste upset neighbours quickly.
+
+### Keep grease out of drains
+Use grease traps where required, wipe pans before washing, and collect used cooking oil in sealed containers for a proper collector. Ask your council what it requires for food premises, because rules and enforcement differ.
+
+### Know your collection schedule
+Ask the council or your waste contractor when collections happen, and put bins out as late as the schedule allows. Commercial premises often need arrangements different from households.
+
+### Never dump or burn waste
+Dumping behind a shop or burning rubbish creates health and legal risks and almost always ends in a complaint.
+
+> A tidy back lane is the cheapest advertising you will ever buy: neighbours who see you looking after the shared space are far less likely to call the council.
+
+## 5. Handle parking and obstruction
+
+### Do not take over the pavement
+Tables, display racks, and signs on walkways and five-foot ways can be treated as obstruction. Ask your council whether any outdoor space is permitted, and what conditions apply.
+
+### Plan for customer parking
+Customers who block driveways or double-park will be blamed on you. Consider signage inside your own premises, a polite word with problem drivers, and a map or note about where to park.
+
+### Manage delivery vehicles
+Ask suppliers to deliver at quiet times and to avoid blocking neighbours' entrances. A short written instruction to drivers saves arguments.
+
+### Respect neighbours' access
+Keep fire exits, driveways, and shared corridors clear. Our guide on workplace safety explains why exits matter.
+
+### Know who to ask for a parking arrangement
+If you need loading space or temporary road use for an event, ask the council well in advance, and check whether a separate permission applies.
+
+## 6. Respond calmly to inspections and notices
+
+### Be ready for visits
+Keep your licence, signboard approval, and any other permits where staff can find them. A prepared team makes a good first impression.
+
+### Be polite and cooperative
+Ask the officer for identification, listen carefully, and ask what the issue is and what is needed to fix it. Arguing rarely helps.
+
+### Read every notice the day it arrives
+Notices usually say what the problem is and give a deadline, which can be short. Some enforcement notices reported in the news have given about 14 days to act, but your notice may differ, so read yours carefully.
+
+### Fix it, then document it
+Correct the problem, take dated photos, and keep a copy of the approval or receipt. Reply to the council in writing if the notice asks for it.
+
+### Ask about compounds and appeals
+A compound is generally an offer to settle an offence by paying a set amount, but the details depend on the law and the council. Ask the council or a lawyer how it works, what deadline applies, and what happens if you disagree. Do not ignore a notice.
+
+## 7. Be a good neighbour
+
+### Introduce yourself
+Before you open, say hello to the businesses and residents closest to you, and give them a contact number. People are far more patient with someone they know.
+
+### Share your plans for noisy work
+Tell neighbours before renovations, big deliveries, or events, and tell them when the work will stop.
+
+### Fix small things quickly
+A leaking pipe, a broken light, or a bin that has tipped over takes minutes to fix. Done promptly, small gestures stop small issues from becoming complaints.
+
+### Keep the frontage clean
+Sweep the entrance each morning, wipe the drain cover, and remove cigarette butts. A clean front says that you care about the street.
+
+### Respect different customs
+Malaysia's neighbourhoods are mixed. Be thoughtful around prayer times, festivals, and quiet hours, and ask when unsure. Our guide on serving a multicultural market and tourists explains more.
+
+## 8. Build community goodwill
+
+### Support local causes
+Sponsor a small event, donate a prize, or offer a venue for a community meeting. Choose causes that match your means and keep your promises.
+
+### Buy locally when you can
+Using nearby suppliers and services builds relationships and sometimes leads to referrals. Our guide on building business networks and partnerships explains how.
+
+### Join your area's traders
+Residents' groups and traders' associations often give early warning of road works and council changes, and a collective voice carries weight.
+
+### Listen to feedback
+Ask neighbours how you are doing, and act on what they say. Our guide on handling difficult customers and online reviews explains how to respond gracefully.
+
+### Measure whether it works
+Track complaints, notices, and compliments over time. A quiet year is a sign that your effort is paying off.
+
+If you want help from a signage maker, a waste collector, or a licensing adviser, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so that neighbours and local customers can find your business.
+
+## Common mistakes Malaysian SMEs make with councils and neighbours
+
+- **Assuming a business licence covers the signboard.** Signboards often need separate approval, so apply before you build and keep the paperwork.
+- **Ignoring a notice because it looks minor.** Deadlines can be short and penalties grow, so read every notice immediately and reply in writing.
+- **Treating the five-foot way and back lane as free space.** Obstruction, rubbish, and grease are among the fastest ways to attract complaints, so keep shared spaces tidy.
+
+## Where to start
+
+- **This week:** Confirm which council covers your premises, and find your licence conditions and signboard rules.
+- **Next:** Check that your signboard and any banners are approved, and tidy your waste and bin area.
+- **Then:** Introduce yourself to your closest neighbours and agree how they can reach you.
+- **Every quarter:** Review complaints and notices, renew permits in time, and fix anything that is drifting.
+
+A business that is easy to work with earns patience when something goes wrong. Treat the council and your neighbours as partners in the street you share, and the street will look after you.`,
+    faqs: [
+      {
+        question: "Which council or authority regulates my business?",
+        answer:
+          "Every business address falls under a local authority, such as a city hall or a municipal or district council. Check your business licence or ask your landlord, and confirm the current rules and procedures with that council, because they differ from one council to another.",
+      },
+      {
+        question: "Do I need approval for my signboard?",
+        answer:
+          "Often yes. A business licence does not automatically approve a signboard, and enforcement reports describe compound notices for signs without approval. Ask your council about its application process, language rules, and any fees before you order the sign.",
+      },
+      {
+        question: "How do I avoid noise complaints?",
+        answer:
+          "Place speakers away from shared walls, keep doors closed during loud work, schedule deliveries and cleaning at sensible hours, and keep staff quiet at closing time. If a neighbour complains, listen, offer a specific fix and a date, and follow through.",
+      },
+      {
+        question: "How should I handle waste and cooking oil?",
+        answer:
+          "Use lidded bins kept off the walkway, clean the bin area daily, collect used cooking oil in sealed containers for a proper collector, and use grease traps where required. Ask your council and waste contractor for the current requirements and schedules.",
+      },
+      {
+        question: "Can I put tables or display racks on the pavement or five-foot way?",
+        answer:
+          "Not without checking. Items on walkways can be treated as obstruction, and some councils allow limited outdoor space under conditions. Ask your council what is permitted and whether you need a permit before you put anything outside.",
+      },
+      {
+        question: "What should I do if I receive a notice or compound?",
+        answer:
+          "Read it the day it arrives, note the deadline, and ask the council what is needed to fix the issue. Correct the problem, keep dated photos and receipts, and reply in writing if asked. A compound is generally an offer to settle an offence by paying a set amount, so ask the council or a lawyer how it works in your case, and never ignore it.",
+      },
+      {
+        question: "How can I stay on good terms with neighbouring businesses and residents?",
+        answer:
+          "Introduce yourself, share a contact number, warn them before noisy work, fix small problems quickly, and keep your frontage clean. Respect prayer times, festivals, and quiet hours, and ask when you are unsure.",
+      },
+      {
+        question: "Does community goodwill really help a business?",
+        answer:
+          "It can. Neighbours who know and like you are more patient, may refer customers, and are less likely to complain. Supporting local causes, buying nearby, and listening to feedback build that goodwill over time.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "与地方政府和邻居相处：马来西亚中小企业的招牌、噪音、垃圾与社区好感",
+        excerpt:
+          "无视地方政府和邻居的商店，可能因通知、罚款和投诉而失去好几个星期。本指南帮助中小企业了解地方政府通常管理什么，处理招牌和广告，管理噪音、气味、垃圾和停车，冷静应对检查和罚单通知，并赢得能长期保护业务的好感。",
+        body: `开门营业只是开始。顾客上门之后，您就和周围的每个人共用一条街、一条水沟、一段人行道和一辆垃圾车。您的地方政府和邻居，默默地决定了这种共用是轻松还是昂贵。
+
+这里的大多数问题一开始都很小：未经批准就挂起的招牌、飘到隔壁的油烟味、摆在五脚基上的垃圾桶。放着不管，它们就会变成通知、罚款和恶感。及早处理，几乎不花什么钱。
+
+本文仅提供一般信息，并非法律意见。地方政府（常称为PBT）会自行订定许多附则、收费和程序，这些因地方政府而异，也会随时间变化。在花钱或采取行动之前，请务必向您自己的地方政府确认现行规定。
+
+## 1. 了解谁管理您的营业场所
+
+### 找出您的地方政府
+每个营业地址都隶属于某个地方政府，例如市政厅、市议会或县议会。大马投资发展局（MIDA）的广告小册子指出，马来西亚大约有155个地方政府，所以隔壁的地方政府未必和您的采用相同的程序。请查看您的营业执照，或询问房东您的场所属于哪个地方政府。
+
+### 了解它通常管些什么
+地方政府通常处理营业场所执照、招牌和广告、小贩和摆卖地点、垃圾收集、水沟、停车以及建筑物用途。噪音、气味和营业时间，视问题和州属而定，可能由地方政府或其他机构负责。
+
+### 把规定集中在一起
+请到地方政府的网站或柜台，索取执照条件、招牌指南和收费表。把副本和执照放在一起，让团队里的任何人都能回答官员的提问。
+
+### 指定一位负责人
+决定由谁来负责地方政府的事务，是您自己还是经理。只有一个联系人，就能避免漏掉信件和给出互相矛盾的答复。
+
+## 2. 妥善处理招牌和广告
+
+### 把招牌当作独立的批准
+营业执照并不会自动批准您的招牌。吉隆坡的执法报道提到，持有营业执照但没有招牌批准的场所，被开出罚单通知并被要求拆除招牌。其他地方政府有自己的申请表格，有些还为永久招牌设有单独的广告执照。
+
+### 检查语言和内容的规定
+有些地方政府要求招牌使用国语，也可能要求显示特定的资料。吉隆坡的报道提到过因语言规定而发出的通知，以及因招牌上缺少注册号码而开出的罚单。在订购设计之前，请先确认您的地方政府有何要求。
+
+### 印刷之前先取得批准
+先申请，再制作。安装后又必须拆下的招牌，会白白浪费设计、印刷和安装的费用。请询问地方政府批准通常需要多久，因为商业招牌公司给出的时间差别很大。
+
+### 询问横幅、旗帜和促销
+临时横幅、旗帜和路边促销往往需要单独的许可。请在开业或促销之前询问，而不是事后。
+
+### 保存记录并按时续期
+请保存批准文件、图则和收据。许可证可能过期或附有条件，所以请把续期日期记在日程里。
+
+## 3. 管理噪音、气味和营业时间
+
+### 了解投诉的起因
+大多数投诉来自相同的源头：大声的音乐、厨房排气、清晨送货、深夜人群，以及在别人卧室旁运转的机器。选择布局时就要想到这些，而不是等收到第一个投诉之后。
+
+### 检查您的营业时间和条件
+您的执照或场所的用途可能附有关于营业时间或活动的条件。请向地方政府确认，不要以为邻居的营业时间也适用于您。
+
+### 从源头降低噪音
+把扬声器放在远离共用墙壁的地方，加装软性材料，在进行吵闹的工作时关上门，并把送货和清洁安排在合理的时间。提醒员工打烊时在外面压低声音。
+
+### 控制气味和烟雾
+按计划清洗排气滤网，把排气口对着远离邻居窗户的方向，并保持垃圾桶盖好。如果气味持续飘散，请向持牌专业人士咨询通风升级。
+
+### 在事态升级前沟通
+如果邻居提出担忧，请倾听、道谢，并提出具体的解决办法和日期。友善的交谈比官员上门便宜得多。
+
+## 4. 处理垃圾、油脂和水沟
+
+### 从您丢弃的东西开始
+在垃圾变成投诉之前，先把它安排好。列出您的业务丢弃的东西，例如食物残渣、包装、食用油和损坏的设备，并决定每一种如何离开场所。我们关于环保合规与废物管理的指南解释了更广泛的规定。
+
+### 分类并整齐存放垃圾
+使用有盖的垃圾桶，不要放在通道上，并每天清洁垃圾桶区。不整齐的垃圾所带来的害虫和气味，很快就会让邻居不满。
+
+### 不让油脂进入水沟
+在需要的地方使用隔油池，洗锅前先擦去油脂，并把用过的食用油装在密封容器里交给合适的收集者。请询问地方政府对食品场所有什么要求，因为规定和执法各不相同。
+
+### 了解收集时间表
+请向地方政府或您的垃圾承包商询问收集的时间，并在时间表允许的范围内尽量晚一点把垃圾桶放出去。商业场所往往需要与住家不同的安排。
+
+### 绝不倾倒或焚烧垃圾
+在店后倾倒或焚烧垃圾，会带来健康和法律风险，而且几乎都会招来投诉。
+
+> 整洁的后巷是您能买到最便宜的广告：邻居看到您爱护共用的空间，就不太可能向地方政府投诉。
+
+## 5. 处理停车和阻塞
+
+### 不要占用人行道
+放在通道和五脚基上的桌子、陈列架和招牌，可能被视为阻塞。请询问地方政府是否允许使用户外空间，以及有什么条件。
+
+### 规划顾客的停车
+堵住车道或双排停车的顾客，会被怪到您头上。请考虑在自己的场所内设置指示牌，礼貌地劝告有问题的司机，并提供停车地点的地图或说明。
+
+### 管理送货车辆
+请供应商在安静的时段送货，并避免堵住邻居的入口。给司机一份简短的书面指示，可以省去争吵。
+
+### 尊重邻居的出入
+保持安全门、车道和共用走廊畅通。我们关于职场安全的指南解释了出口为什么重要。
+
+### 知道该向谁申请停车安排
+如果您因活动需要装卸空间或临时使用道路，请提前很久向地方政府申请，并查明是否适用单独的许可。
+
+## 6. 冷静应对检查和通知
+
+### 为来访做好准备
+把您的执照、招牌批准文件和其他许可证放在员工找得到的地方。准备充分的团队会留下好的第一印象。
+
+### 保持礼貌和合作
+请官员出示证件，仔细倾听，并询问问题是什么，以及需要怎么改正。争吵很少有帮助。
+
+### 通知到达当天就阅读
+通知通常会说明问题所在并给出期限，期限可能很短。新闻中报道过的一些执法通知给了大约14天的时间处理，但您的通知可能不同，所以请仔细阅读您的通知。
+
+### 先改正，再记录
+改正问题，拍下标注日期的照片，并保存批准文件或收据的副本。如果通知要求，请以书面回复地方政府。
+
+### 询问罚单与申诉
+罚单通常是以缴付固定款项来和解一项违例的提议，但细节取决于法律和地方政府。请向地方政府或律师询问它如何运作、适用什么期限，以及如果您不同意会怎样。不要忽视通知。
+
+## 7. 做个好邻居
+
+### 自我介绍
+开业之前，向离您最近的商家和居民打个招呼，并留下联络电话。人们对认识的人要有耐心得多。
+
+### 分享吵闹工程的计划
+在装修、大型送货或活动之前告诉邻居，并告诉他们工作何时结束。
+
+### 迅速处理小事
+漏水的水管、坏掉的灯，或翻倒的垃圾桶，几分钟就能处理好。及时做到，小小的举动就能避免小问题变成投诉。
+
+### 保持店面整洁
+每天早上扫净入口，擦拭水沟盖，并清除烟蒂。整洁的店面说明您在乎这条街。
+
+### 尊重不同的习俗
+马来西亚的社区是混居的。在祈祷时间、节日和安静时段要体贴，不确定时就询问。我们关于服务多元文化市场与游客的指南有更多说明。
+
+## 8. 建立社区好感
+
+### 支持本地的公益
+赞助一个小型活动，捐出一份奖品，或提供场地给社区聚会。选择符合您能力的事业，并信守承诺。
+
+### 尽量在本地采购
+使用附近的供应商和服务可以建立关系，有时还会带来转介。我们关于建立商业人脉与合作伙伴关系的指南解释了怎么做。
+
+### 加入您所在地区的商家
+居民团体和商家公会往往能提早预警道路工程和地方政府的变动，集体的声音也更有分量。
+
+### 倾听反馈
+询问邻居您做得如何，并根据他们的意见行动。我们关于处理难缠顾客和网络评价的指南解释了如何得体地回应。
+
+### 衡量是否有效
+长期追踪投诉、通知和赞扬。平静的一年，说明您的努力有了回报。
+
+如果您需要招牌制作商、废物收集者或执照顾问的协助，您可以[浏览名录](/zh)寻找附近的专业人士，并[创建免费商家列表](/zh/signup)，让邻居和本地顾客找到您的业务。
+
+## 马来西亚中小企业在地方政府和邻居方面常犯的错误
+
+- **以为营业执照涵盖招牌。** 招牌往往需要单独批准，所以请在制作之前申请，并保存文件。
+- **因为看起来不严重就忽视通知。** 期限可能很短，罚款也会增加，所以请立即阅读每一份通知并以书面回复。
+- **把五脚基和后巷当作免费空间。** 阻塞、垃圾和油脂是招来投诉最快的方式之一，所以请保持共用空间整洁。
+
+## 从哪里开始
+
+- **本周：** 确认哪个地方政府管辖您的场所，并找出您的执照条件和招牌规定。
+- **接着：** 检查您的招牌和任何横幅是否获得批准，并整理您的垃圾和垃圾桶区。
+- **然后：** 向离您最近的邻居自我介绍，并约定他们如何联系您。
+- **每季度：** 检讨投诉和通知，按时续期许可证，并修正任何出现偏差的地方。
+
+容易合作的企业，在出事时会得到耐心。把地方政府和邻居当作您共用的这条街上的伙伴，这条街也会照顾您。`,
+        faqs: [
+          {
+            question: "哪个地方政府或主管单位管理我的业务？",
+            answer:
+              "每个营业地址都隶属于某个地方政府，例如市政厅、市议会或县议会。请查看您的营业执照或询问房东，并向该地方政府确认现行的规定和程序，因为它们因地方政府而异。",
+          },
+          {
+            question: "我的招牌需要批准吗？",
+            answer:
+              "往往需要。营业执照并不会自动批准招牌，执法报道提到未经批准的招牌被开出罚单通知。在订购招牌之前，请向您的地方政府询问其申请程序、语言规定和任何费用。",
+          },
+          {
+            question: "我如何避免噪音投诉？",
+            answer:
+              "把扬声器放在远离共用墙壁的地方，在进行吵闹的工作时关上门，把送货和清洁安排在合理的时间，并让员工在打烊时保持安静。如果邻居投诉，请倾听、提出具体的解决办法和日期，并且说到做到。",
+          },
+          {
+            question: "我应该如何处理垃圾和食用油？",
+            answer:
+              "使用有盖、不放在通道上的垃圾桶，每天清洁垃圾桶区，把用过的食用油装在密封容器里交给合适的收集者，并在需要的地方使用隔油池。请向您的地方政府和垃圾承包商询问现行的要求和时间表。",
+          },
+          {
+            question: "我可以把桌子或陈列架放在人行道或五脚基上吗？",
+            answer:
+              "不要不查就放。放在通道上的物品可能被视为阻塞，有些地方政府在条件下允许有限的户外空间。在把任何东西放到外面之前，请向您的地方政府询问允许什么，以及是否需要许可证。",
+          },
+          {
+            question: "如果我收到通知或罚单应该怎么办？",
+            answer:
+              "通知到达当天就阅读，记下期限，并询问地方政府需要怎么改正。改正问题，保存标注日期的照片和收据，并在被要求时以书面回复。罚单通常是以缴付固定款项来和解一项违例的提议，所以请向地方政府或律师询问它在您的个案中如何运作，并且绝不要忽视它。",
+          },
+          {
+            question: "我如何与邻近的商家和居民保持良好关系？",
+            answer:
+              "自我介绍，留下联络电话，在进行吵闹的工作前先告知他们，迅速处理小问题，并保持店面整洁。尊重祈祷时间、节日和安静时段，不确定时就询问。",
+          },
+          {
+            question: "社区好感真的对业务有帮助吗？",
+            answer:
+              "可以有帮助。认识并喜欢您的邻居更有耐心，可能会转介顾客，也比较不会投诉。支持本地公益、在附近采购并倾听反馈，会随着时间建立起这种好感。",
+          },
+        ],
+      },
+      ms: {
+        title: "Bekerjasama dengan Pihak Berkuasa Tempatan dan Jiran: Papan Tanda, Bunyi Bising, Sisa dan Muhibah Komuniti untuk PKS Malaysia",
+        excerpt:
+          "Kedai yang mengabaikan pihak berkuasa tempatan dan jirannya boleh kehilangan berminggu-minggu kerana notis, denda dan aduan. Panduan ini membantu PKS memahami perkara yang biasanya dikawal selia oleh pihak berkuasa tempatan, mengendalikan papan tanda dan pengiklanan, menguruskan bunyi bising, bau, sisa dan tempat letak kereta, bertindak tenang terhadap pemeriksaan dan notis kompaun, dan memperoleh muhibah yang melindungi perniagaan dari semasa ke semasa.",
+        body: `Membuka pintu kedai hanyalah permulaan. Apabila pelanggan tiba, anda berkongsi jalan, longkang, kaki lima dan lori sampah dengan semua orang di sekeliling anda. Pihak berkuasa tempatan dan jiran anda secara senyap menentukan sama ada perkongsian itu mudah atau mahal.
+
+Kebanyakan masalah di sini kecil pada mulanya: papan tanda yang digantung tanpa kelulusan, bau gris yang terbawa ke sebelah, tong sampah yang dibiarkan di kaki lima. Jika dibiarkan, ia menjadi notis, denda dan perasaan tidak senang. Jika ditangani awal, kosnya hampir tiada.
+
+Ini maklumat umum, bukan nasihat undang-undang. Pihak berkuasa tempatan (sering dipanggil PBT) menetapkan banyak undang-undang kecil, fi dan prosedur sendiri, dan ini berbeza antara pihak berkuasa tempatan dan berubah dari semasa ke semasa. Sentiasa sahkan peraturan semasa dengan pihak berkuasa tempatan anda sendiri sebelum anda berbelanja atau bertindak.
+
+## 1. Ketahui siapa yang mengawal selia premis anda
+
+### Cari pihak berkuasa tempatan anda
+Setiap alamat perniagaan berada di bawah sebuah pihak berkuasa tempatan, seperti dewan bandaraya atau majlis perbandaran atau daerah. Buku kecil pengiklanan MIDA menyatakan bahawa terdapat kira-kira 155 pihak berkuasa tempatan di Malaysia, jadi pihak berkuasa tempatan di sebelah mungkin tidak mengikut proses yang sama seperti anda. Semak lesen perniagaan anda atau tanya tuan tanah anda pihak berkuasa tempatan mana yang meliputi premis anda.
+
+### Pelajari perkara yang biasanya diliputinya
+Pihak berkuasa tempatan lazimnya menangani lesen premis perniagaan, papan tanda dan pengiklanan, penjaja dan ruang berniaga, kutipan sampah, longkang, tempat letak kereta dan penggunaan bangunan. Bunyi bising, bau dan waktu operasi mungkin di bawah pihak berkuasa tempatan atau agensi lain, bergantung pada isu dan negeri.
+
+### Kumpulkan peraturan di satu tempat
+Lawati laman web atau kaunter pihak berkuasa tempatan dan minta syarat lesen, garis panduan papan tanda dan jadual fi. Simpan salinan bersama lesen anda supaya sesiapa dalam pasukan anda boleh menjawab soalan pegawai.
+
+### Namakan seorang yang mengendalikannya
+Tentukan siapa dalam perniagaan anda yang memiliki urusan pihak berkuasa tempatan, sama ada anda atau seorang pengurus. Satu orang untuk dihubungi mengelakkan surat terlepas pandang dan jawapan yang bercanggah.
+
+## 2. Kendalikan papan tanda dan pengiklanan dengan betul
+
+### Anggap papan tanda sebagai kelulusan yang berasingan
+Lesen perniagaan tidak secara automatik meluluskan papan tanda anda. Laporan penguatkuasaan dari Kuala Lumpur menceritakan premis yang memegang lesen perniagaan tetapi tiada kelulusan papan tanda diberikan notis kompaun dan diarah menanggalkan papan tanda. Pihak berkuasa tempatan lain mempunyai borang permohonan sendiri, dan ada yang menggunakan lesen iklan berasingan untuk papan tanda kekal.
+
+### Semak peraturan bahasa dan kandungan
+Sesetengah pihak berkuasa tempatan menghendaki papan tanda menggunakan bahasa kebangsaan dan mungkin menghendaki butiran tertentu dipaparkan. Laporan dari Kuala Lumpur menceritakan notis kerana peraturan bahasa dan kompaun kerana nombor pendaftaran yang tiada pada papan tanda. Sahkan apa yang dikehendaki oleh pihak berkuasa tempatan anda sebelum anda menempah reka bentuk.
+
+### Dapatkan kelulusan sebelum mencetak
+Mohon dahulu, kemudian buat. Papan tanda yang perlu diturunkan selepas dipasang membazirkan kos reka bentuk, percetakan dan pemasangan. Tanya pihak berkuasa tempatan berapa lama kelulusan biasanya mengambil masa, kerana syarikat papan tanda komersial memberi tempoh yang sangat berbeza.
+
+### Tanya tentang sepanduk, bendera dan promosi
+Sepanduk sementara, bendera dan promosi tepi jalan sering memerlukan kebenaran tersendiri. Tanya sebelum pelancaran atau jualan, bukan selepasnya.
+
+### Simpan rekod dan baharui tepat pada masanya
+Simpan kelulusan, pelan dan resit. Permit boleh luput atau mempunyai syarat, jadi catat tarikh pembaharuan dalam diari.
+
+## 3. Uruskan bunyi bising, bau dan waktu operasi
+
+### Kenali punca aduan
+Kebanyakan aduan datang daripada punca yang sama: muzik kuat, ekzos dapur, penghantaran waktu subuh, orang ramai lewat malam, dan mesin yang berjalan di sebelah bilik tidur seseorang. Fikirkan perkara ini apabila anda memilih susun atur, bukan selepas aduan pertama.
+
+### Semak waktu dan syarat anda
+Lesen anda atau penggunaan premis mungkin mempunyai syarat tentang waktu berniaga atau aktiviti. Sahkan dengan pihak berkuasa tempatan anda, dan jangan anggap waktu jiran anda terpakai kepada anda.
+
+### Kurangkan bunyi bising di puncanya
+Letakkan pembesar suara jauh dari dinding bersama, tambah bahan lembut, tutup pintu semasa kerja yang bising, dan jadualkan penghantaran dan pembersihan pada waktu yang munasabah. Ingatkan pekerja supaya memperlahankan suara di luar semasa waktu tutup.
+
+### Kawal bau dan asap
+Bersihkan penapis ekzos mengikut jadual, halakan bukaan angin jauh dari tingkap jiran, dan pastikan tong sampah ditutup. Tanya profesional berlesen tentang naik taraf pengudaraan jika bau terus merebak.
+
+### Berbincang sebelum ia memuncak
+Jika jiran membangkitkan kebimbangan, dengar, ucap terima kasih, dan cadangkan pembaikan yang khusus dan tarikhnya. Perbualan mesra lebih murah daripada lawatan seorang pegawai.
+
+## 4. Uruskan sisa, gris dan longkang
+
+### Mulakan dengan apa yang anda buang
+Rancang sampah anda sebelum ia bertukar menjadi aduan. Senaraikan apa yang dibuang oleh perniagaan anda, seperti sisa makanan, bungkusan, minyak masak dan peralatan rosak, dan tentukan bagaimana setiap satu akan meninggalkan premis. Panduan kami tentang pematuhan alam sekitar dan pengurusan sisa menerangkan peraturan yang lebih luas.
+
+### Asingkan dan simpan sisa dengan kemas
+Gunakan tong bertutup, jauhkan dari laluan pejalan kaki, dan bersihkan kawasan tong setiap hari. Perosak dan bau daripada sisa yang tidak kemas cepat menyinggung jiran.
+
+### Jauhkan gris dari longkang
+Gunakan perangkap gris jika dikehendaki, lap kuali sebelum dibasuh, dan kumpulkan minyak masak terpakai dalam bekas tertutup untuk pengutip yang sewajarnya. Tanya pihak berkuasa tempatan anda apa yang dikehendaki untuk premis makanan, kerana peraturan dan penguatkuasaan berbeza.
+
+### Ketahui jadual kutipan anda
+Tanya pihak berkuasa tempatan atau kontraktor sisa anda bila kutipan dibuat, dan letakkan tong keluar sebelum lewat sejauh jadual membenarkan. Premis komersial sering memerlukan pengaturan yang berbeza daripada rumah.
+
+### Jangan sekali-kali membuang atau membakar sisa
+Membuang di belakang kedai atau membakar sampah mewujudkan risiko kesihatan dan undang-undang dan hampir selalu berakhir dengan aduan.
+
+> Lorong belakang yang kemas ialah pengiklanan paling murah yang akan anda beli: jiran yang melihat anda menjaga ruang bersama jauh lebih kecil kemungkinan untuk menghubungi pihak berkuasa tempatan.
+
+## 5. Uruskan tempat letak kereta dan halangan
+
+### Jangan ambil alih kaki lima
+Meja, rak paparan dan papan tanda di laluan pejalan kaki dan kaki lima boleh dianggap sebagai halangan. Tanya pihak berkuasa tempatan anda sama ada mana-mana ruang luar dibenarkan, dan apa syaratnya.
+
+### Rancang tempat letak kereta pelanggan
+Pelanggan yang menghalang laluan masuk atau meletak kereta berganda akan disalahkan kepada anda. Pertimbangkan papan tanda di dalam premis anda sendiri, teguran sopan kepada pemandu bermasalah, dan peta atau nota tentang tempat meletak kereta.
+
+### Urus kenderaan penghantaran
+Minta pembekal menghantar pada waktu yang tenang dan mengelak menghalang pintu masuk jiran. Arahan bertulis ringkas kepada pemandu menjimatkan pertengkaran.
+
+### Hormati akses jiran
+Pastikan pintu keluar kecemasan, laluan masuk dan koridor bersama sentiasa lapang. Panduan kami tentang keselamatan tempat kerja menerangkan mengapa pintu keluar penting.
+
+### Ketahui siapa yang perlu ditanya untuk pengaturan tempat letak kereta
+Jika anda memerlukan ruang memunggah atau penggunaan jalan sementara untuk acara, tanya pihak berkuasa tempatan jauh lebih awal, dan semak sama ada kebenaran berasingan terpakai.
+
+## 6. Bertindak tenang terhadap pemeriksaan dan notis
+
+### Bersedia untuk lawatan
+Simpan lesen, kelulusan papan tanda dan mana-mana permit lain di tempat yang boleh dijumpai oleh pekerja. Pasukan yang bersedia memberi tanggapan pertama yang baik.
+
+### Bersopan dan bekerjasama
+Minta pegawai menunjukkan pengenalan, dengar dengan teliti, dan tanya apakah isunya dan apa yang diperlukan untuk membetulkannya. Bertengkar jarang membantu.
+
+### Baca setiap notis pada hari ia tiba
+Notis biasanya menyatakan masalahnya dan memberi tarikh akhir, yang mungkin singkat. Sesetengah notis penguatkuasaan yang dilaporkan dalam berita memberi kira-kira 14 hari untuk bertindak, tetapi notis anda mungkin berbeza, jadi baca notis anda dengan teliti.
+
+### Betulkan, kemudian dokumenkan
+Betulkan masalah itu, ambil gambar bertarikh, dan simpan salinan kelulusan atau resit. Balas kepada pihak berkuasa tempatan secara bertulis jika notis meminta begitu.
+
+### Tanya tentang kompaun dan rayuan
+Kompaun umumnya ialah tawaran untuk menyelesaikan sesuatu kesalahan dengan membayar jumlah tetap, tetapi butirannya bergantung pada undang-undang dan pihak berkuasa tempatan. Tanya pihak berkuasa tempatan atau peguam bagaimana ia berfungsi, tarikh akhir apa yang terpakai, dan apa yang berlaku jika anda tidak bersetuju. Jangan abaikan notis.
+
+## 7. Jadilah jiran yang baik
+
+### Perkenalkan diri anda
+Sebelum anda membuka kedai, bertegur sapa dengan perniagaan dan penduduk yang paling hampir dengan anda, dan beri mereka nombor untuk dihubungi. Orang jauh lebih sabar dengan seseorang yang mereka kenali.
+
+### Kongsi rancangan kerja yang bising
+Beritahu jiran sebelum pengubahsuaian, penghantaran besar atau acara, dan beritahu mereka bila kerja itu akan berhenti.
+
+### Betulkan perkara kecil dengan cepat
+Paip yang bocor, lampu yang rosak, atau tong yang terbalik mengambil masa beberapa minit untuk dibetulkan. Apabila dilakukan segera, tindakan kecil menghalang isu kecil daripada menjadi aduan.
+
+### Pastikan bahagian hadapan bersih
+Sapu pintu masuk setiap pagi, lap penutup longkang, dan buang puntung rokok. Bahagian hadapan yang bersih menunjukkan bahawa anda mengambil berat tentang jalan itu.
+
+### Hormati adat yang berbeza
+Kejiranan Malaysia bercampur. Berbaik-baiklah sekitar waktu solat, perayaan dan waktu tenang, dan tanya apabila tidak pasti. Panduan kami tentang melayani pasaran pelbagai budaya dan pelancong menerangkan lebih lanjut.
+
+## 8. Bina muhibah komuniti
+
+### Sokong tujuan tempatan
+Taja acara kecil, dermakan hadiah, atau tawarkan tempat untuk mesyuarat komuniti. Pilih tujuan yang sepadan dengan kemampuan anda dan tunaikan janji anda.
+
+### Beli secara tempatan apabila boleh
+Menggunakan pembekal dan perkhidmatan berhampiran membina hubungan dan kadangkala membawa kepada rujukan. Panduan kami tentang membina rangkaian perniagaan dan perkongsian menerangkan caranya.
+
+### Sertai peniaga kawasan anda
+Kumpulan penduduk dan persatuan peniaga sering memberi amaran awal tentang kerja jalan dan perubahan pihak berkuasa tempatan, dan suara bersama lebih berpengaruh.
+
+### Dengar maklum balas
+Tanya jiran bagaimana keadaan anda, dan bertindak berdasarkan apa yang mereka katakan. Panduan kami tentang menangani pelanggan sukar dan ulasan dalam talian menerangkan cara membalas dengan baik.
+
+### Ukur sama ada ia berkesan
+Jejaki aduan, notis dan pujian dari semasa ke semasa. Setahun yang tenang ialah tanda usaha anda membuahkan hasil.
+
+Jika anda mahukan bantuan daripada pembuat papan tanda, pengutip sisa atau penasihat pelesenan, anda boleh [layari direktori](/ms) untuk profesional berhampiran anda, dan [cipta penyenaraian perniagaan percuma](/ms/signup) supaya jiran dan pelanggan tempatan dapat menemui perniagaan anda.
+
+## Kesilapan biasa PKS Malaysia dengan pihak berkuasa tempatan dan jiran
+
+- **Menganggap lesen perniagaan meliputi papan tanda.** Papan tanda sering memerlukan kelulusan berasingan, jadi mohon sebelum anda membina dan simpan dokumen.
+- **Mengabaikan notis kerana ia kelihatan kecil.** Tarikh akhir boleh singkat dan penalti bertambah, jadi baca setiap notis segera dan balas secara bertulis.
+- **Menganggap kaki lima dan lorong belakang sebagai ruang percuma.** Halangan, sampah dan gris antara cara paling cepat mengundang aduan, jadi pastikan ruang bersama kemas.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Sahkan pihak berkuasa tempatan mana yang meliputi premis anda, dan cari syarat lesen dan peraturan papan tanda anda.
+- **Seterusnya:** Semak bahawa papan tanda dan mana-mana sepanduk anda telah diluluskan, dan kemaskan sisa serta kawasan tong anda.
+- **Kemudian:** Perkenalkan diri kepada jiran terdekat anda dan persetujui bagaimana mereka boleh menghubungi anda.
+- **Setiap suku tahun:** Semak aduan dan notis, baharui permit tepat pada masanya, dan betulkan apa-apa yang mula tersasar.
+
+Perniagaan yang mudah diajak bekerjasama memperoleh kesabaran apabila sesuatu tidak kena. Anggap pihak berkuasa tempatan dan jiran anda sebagai rakan kongsi dalam jalan yang anda kongsi, dan jalan itu akan menjaga anda.`,
+        faqs: [
+          {
+            question: "Pihak berkuasa tempatan atau agensi mana yang mengawal selia perniagaan saya?",
+            answer:
+              "Setiap alamat perniagaan berada di bawah sebuah pihak berkuasa tempatan, seperti dewan bandaraya atau majlis perbandaran atau daerah. Semak lesen perniagaan anda atau tanya tuan tanah anda, dan sahkan peraturan dan prosedur semasa dengan pihak berkuasa tempatan itu, kerana ia berbeza antara satu pihak berkuasa tempatan dengan yang lain.",
+          },
+          {
+            question: "Adakah saya memerlukan kelulusan untuk papan tanda saya?",
+            answer:
+              "Selalunya ya. Lesen perniagaan tidak secara automatik meluluskan papan tanda, dan laporan penguatkuasaan menceritakan notis kompaun untuk papan tanda tanpa kelulusan. Tanya pihak berkuasa tempatan anda tentang proses permohonan, peraturan bahasa dan apa-apa fi sebelum anda menempah papan tanda.",
+          },
+          {
+            question: "Bagaimanakah saya mengelak aduan bunyi bising?",
+            answer:
+              "Letakkan pembesar suara jauh dari dinding bersama, tutup pintu semasa kerja yang bising, jadualkan penghantaran dan pembersihan pada waktu yang munasabah, dan pastikan pekerja senyap semasa waktu tutup. Jika jiran mengadu, dengar, tawarkan pembaikan yang khusus dan tarikhnya, dan tunaikannya.",
+          },
+          {
+            question: "Bagaimanakah saya patut mengendalikan sisa dan minyak masak?",
+            answer:
+              "Gunakan tong bertutup yang dijauhkan dari laluan pejalan kaki, bersihkan kawasan tong setiap hari, kumpulkan minyak masak terpakai dalam bekas tertutup untuk pengutip yang sewajarnya, dan gunakan perangkap gris jika dikehendaki. Tanya pihak berkuasa tempatan dan kontraktor sisa anda tentang keperluan dan jadual semasa.",
+          },
+          {
+            question: "Bolehkah saya meletakkan meja atau rak paparan di kaki lima?",
+            answer:
+              "Jangan tanpa menyemak. Barang di laluan pejalan kaki boleh dianggap sebagai halangan, dan sesetengah pihak berkuasa tempatan membenarkan ruang luar yang terhad dengan syarat. Tanya pihak berkuasa tempatan anda apa yang dibenarkan dan sama ada anda memerlukan permit sebelum anda meletakkan apa-apa di luar.",
+          },
+          {
+            question: "Apakah yang patut saya lakukan jika saya menerima notis atau kompaun?",
+            answer:
+              "Baca pada hari ia tiba, catat tarikh akhir, dan tanya pihak berkuasa tempatan apa yang diperlukan untuk membetulkan isu itu. Betulkan masalah, simpan gambar bertarikh dan resit, dan balas secara bertulis jika diminta. Kompaun umumnya ialah tawaran untuk menyelesaikan sesuatu kesalahan dengan membayar jumlah tetap, jadi tanya pihak berkuasa tempatan atau peguam bagaimana ia berfungsi dalam kes anda, dan jangan sekali-kali mengabaikannya.",
+          },
+          {
+            question: "Bagaimanakah saya boleh kekal berhubungan baik dengan perniagaan dan penduduk berjiran?",
+            answer:
+              "Perkenalkan diri anda, kongsi nombor untuk dihubungi, beri amaran sebelum kerja yang bising, betulkan masalah kecil dengan cepat, dan pastikan bahagian hadapan bersih. Hormati waktu solat, perayaan dan waktu tenang, dan tanya apabila anda tidak pasti.",
+          },
+          {
+            question: "Adakah muhibah komuniti benar-benar membantu perniagaan?",
+            answer:
+              "Ia boleh. Jiran yang mengenali dan menyukai anda lebih bersabar, mungkin merujuk pelanggan, dan kurang cenderung mengadu. Menyokong tujuan tempatan, membeli berhampiran dan mendengar maklum balas membina muhibah itu dari semasa ke semasa.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "selling-digital-products-and-online-courses-in-malaysia",
+    title: "Selling Digital Products and Online Courses: Ebooks, Templates, and Classes for Malaysian SMEs",
+    seoTitle: "Selling Digital Products and Online Courses in Malaysia",
+    seoDescription:
+      "How Malaysian SMEs can turn what they know into ebooks, templates and online courses: validate demand, price, deliver, protect content and handle tax.",
+    coverImage: {
+      file: "digital-products-and-online-courses-cover.webp",
+      mimeType: "image/webp",
+      alt: "A smiling woman in glasses and a white shirt holding a notebook and gesturing toward a camera on a tripod, with a laptop on a long wooden table in a bright kitchen studio",
+      altTranslations: {
+        zh: "一位戴眼镜、身穿白衬衫的微笑女士手拿笔记本，对着三脚架上的相机做手势，明亮的厨房摄影棚里，长木桌上放着一台笔记本电脑",
+        ms: "Seorang wanita tersenyum berkaca mata dan berbaju putih memegang buku nota dan menggamit ke arah kamera di atas tripod, dengan komputer riba di atas meja kayu panjang di studio dapur yang terang",
+      },
+    },
+    contentImages: {
+      recording: {
+        file: "digital-products-and-online-courses-recording.webp",
+        mimeType: "image/webp",
+        alt: "A young woman in a white blouse writing notes on paper at a round wooden table while looking at a smartphone mounted on a small tripod",
+        altTranslations: {
+          zh: "一位身穿白色上衣的年轻女士坐在圆形木桌前，一边在纸上写笔记，一边看着架在小三脚架上的智能手机",
+          ms: "Seorang wanita muda berblaus putih menulis nota di atas kertas di meja kayu bulat sambil memandang telefon pintar yang dipasang pada tripod kecil",
+        },
+        after: "Record one short pilot lesson before you build a full course.",
+        afterTranslations: {
+          zh: "在制作完整课程之前，先录制一节简短的试讲课。",
+          ms: "Rakam satu pelajaran perintis yang pendek sebelum anda membina kursus penuh.",
+        },
+      },
+    },
+    excerpt:
+      "What you know can be worth more than what you stock on a shelf. This guide helps Malaysian SMEs decide which knowledge can become an ebook, template, or online class, test demand before building, choose formats and platforms, price and deliver fairly, protect their content, handle payments and refunds, and check tax rules before they sell.",
+    body: `Many Malaysian business owners know something other people would happily pay to learn: how to cost a menu, run a stall, manage a clinic's bookings, bake a tricky pastry, or file paperwork without panic. A digital product turns that know-how into something you can sell many times without restocking.
+
+It is not a shortcut to easy money. Making something people value takes work, and selling it takes steady marketing and support. But for the right idea, a small ebook, a set of templates, or a short class can add income and strengthen your reputation.
+
+This is general information, not legal, tax, or financial advice. Platform features and fees, copyright practice, and tax rules change over time, and some details in this guide may be out of date. Confirm current requirements with the relevant authorities and professionals before you act.
+
+## 1. Decide what knowledge can become a product
+
+### List what you do better than most
+Write down what customers and friends keep asking you about, the problems you solve quickly, and the tasks you have turned into a routine. Repeated questions are strong hints.
+
+### Prefer a narrow, practical promise
+"How to price your homemade snacks and stop undercharging" sells better than "business success". Aim for one clear result that a beginner can reach.
+
+### Separate teaching from your core service
+Ask whether sharing your method would hurt your main business or support it. Many service providers find that a guide attracts clients who then want help.
+
+### Check that you can actually teach it
+Doing something well is different from explaining it step by step. Try writing the steps for a friend and see where they get lost.
+
+### Respect other people's work and data
+Do not use material, images, or customer information that you do not own or have permission to share. Our guide on protecting your business data explains why.
+
+## 2. Test demand before you build
+
+### Look for proof that people want it
+Check whether people already search for, ask about, or pay for similar help. Competitors are a sign that a market exists. Our guide on understanding your customers explains simple ways to learn.
+
+### Ask real people
+Talk to ten potential buyers, or run a short poll in a group or on your page. Ask what they struggle with and what they have already tried.
+
+### Start with a pilot
+Record one short pilot lesson before you build a full course. Share it with a few people, and ask what was clear, what was confusing, and what they would pay for.
+
+### Pre-sell a small version
+Offer a simple version, such as a workshop or draft guide, at an early price to your first buyers. Real payment is a stronger signal than polite interest.
+
+### Decide what "good enough" looks like
+Set a minimum standard and a launch date. Perfectionism delays most digital products far more than technology does.
+
+## 3. Choose the format and the platform
+
+### Match the format to the result
+Use an ebook or checklist for knowledge, a template or spreadsheet for work people want to copy, a recorded course for skills that need demonstration, and a live class or webinar for interaction.
+
+### Start small
+A short guide or a handful of templates is quicker to make than a long course, and it lets you learn what buyers value.
+
+### Compare ways to sell
+You can sell through your own website, a marketplace, a course platform, or social media with manual delivery. Each has different fees, features, payout methods, and rules about who owns the customer relationship, and these change often. Compare current terms before committing.
+
+### Keep your customer list
+Where you can, collect the contact details of people who buy, with their consent, so that you can tell them about updates and new products. Our guide on email marketing for small businesses explains how.
+
+### Make it usable on a phone
+Many Malaysian buyers will open your product on a mobile. Check that files download easily, videos play on a mobile connection, and text is readable.
+
+## 4. Price and deliver fairly
+
+### Price for the result, not the hours
+Think about the problem you solve and what it is worth to the buyer. Check what similar products cost, and avoid racing to the bottom.
+
+### Offer clear options
+A simple structure, such as a basic guide and a version with templates, helps buyers choose. Too many tiers confuse people.
+
+### Explain what is included
+State the format, length, number of lessons, how long access lasts, and what support is included, so that buyers know what they are paying for. Our guide on pricing your products and services explains the thinking behind price.
+
+### Deliver smoothly and quickly
+Send the file or access link automatically after payment where possible, and tell buyers what to do if it does not arrive. Delays create refund requests.
+
+### Test the whole purchase
+Buy your own product on a phone and a laptop, from payment to download. Fix anything that confuses you, because it will confuse customers.
+
+## 5. Protect your content and copyright
+
+### Understand that copyright usually protects your original work
+In general, original written and recorded work is protected by copyright, which gives you some control over copying and sharing. The details depend on the law, so ask a lawyer or the relevant authority about what applies to you.
+
+### Use only content you have the right to use
+Licence photos, music, fonts, and templates properly. A stock image or song used without permission can lead to takedown demands or claims.
+
+### State your terms clearly
+Say what buyers may and may not do, such as personal use only and no resale or sharing. Put it on the sales page and inside the product.
+
+### Use sensible protection
+Watermarks, personalised files, and platforms with access controls make casual copying harder, though none stop determined copying. Do not make the product so difficult to open that honest buyers give up.
+
+### Know what to do if it is copied
+Keep dated drafts and records of publication. If you find unauthorised copies, you can usually report them to the platform and, where needed, ask a lawyer about your options. Our guide on trademark registration in Malaysia explains how to protect your brand name.
+
+> A digital product is only as strong as the trust behind it: honest promises, clear terms, and fast help when something goes wrong matter more than any clever lock.
+
+## 6. Handle payments and refunds
+
+### Offer familiar payment methods
+Buyers in Malaysia commonly use online banking, cards, and e-wallets. Check which methods your platform or payment provider supports and what each one costs. Our guide on accepting digital payments explains the options.
+
+### Understand the fees and payout timing
+Platforms and payment providers charge fees, and payouts can take days. Work out your real take-home amount before you set the price.
+
+### Write a clear refund policy
+Say whether you offer refunds, for how long, and under what conditions. Consumers may have rights that a policy cannot remove, so check the rules rather than assuming. Our guide on customer complaints, refunds, and consumer rights explains your duties.
+
+### Issue proper receipts and records
+Keep a record of each sale, the buyer, the amount, and the date. Good records help with refunds, disputes, and your accounts.
+
+### Guard against fraud
+Be wary of chargebacks, stolen cards, and fake payment screenshots, and confirm payments on your own account before you release anything. Our guide on cybersecurity for small businesses explains practical protection.
+
+## 7. Check tax and compliance before you sell
+
+### Keep your income records from day one
+Digital income is still income. Record every sale and expense so that you can report it properly. Our guide on bookkeeping and accounting basics explains simple systems.
+
+### Check how the tax rules apply to digital services
+In Malaysia, digital services such as online courses and e-books have been covered by service tax rules, and the registration threshold has been reported at RM500,000 over twelve months. Most published guidance focuses on overseas providers, and rates have been reported inconsistently, so do not rely on any single figure. Ask the Royal Malaysian Customs Department or a tax adviser whether and how the rules apply to you.
+
+### Separate your business and personal money
+Use a dedicated account where possible, so that it is easy to see what the product earns. Our guide on separating personal and business finances explains why.
+
+### Consider registration and licences
+If you sell under a business name, make sure the business is properly registered. Our guide on choosing a business structure explains the options.
+
+### Check platform rules and advertising claims
+Platforms have their own rules about what you can sell and how you describe it. Keep your promises accurate, and do not claim guaranteed results or income.
+
+## 8. Market honestly and support your buyers
+
+### Show the result and a sample
+Offer a free chapter, a sample template, or a short lesson. A small preview builds trust faster than a long sales pitch.
+
+### Tell real stories
+Use honest examples and, with permission, testimonials from real buyers. Do not exaggerate results or promise that anyone will get rich. Our guide on advertising claims and consumer protection explains what to avoid.
+
+### Reach people where they already are
+Share useful tips on the platforms your buyers use, and answer questions generously. Our guide on social media marketing explains the basics.
+
+### Support after the sale
+Reply to questions quickly, fix errors, and update the product when things change. Buyers who feel looked after leave good reviews and buy again.
+
+### Review and improve
+Track sales, refunds, questions, and feedback, then improve the product or the sales page. Our guide on tracking business performance explains simple numbers to follow.
+
+If you want help from a designer, a video editor, or a tax adviser to launch your product, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so that buyers and partners can find your business.
+
+## Common mistakes Malaysian SMEs make with digital products
+
+- **Building a full course before testing demand.** A big build can sell to nobody, so validate with real people and a pilot lesson first.
+- **Using images, music, or text you do not have the right to use.** Claims and takedowns can follow, so licence what you use and credit where required.
+- **Ignoring tax and refund rules until after launch.** Surprises hurt profit and trust, so check the rules, keep records, and write a clear refund policy before the first sale.
+
+## Where to start
+
+- **This week:** List the knowledge people ask you for, and talk to ten potential buyers.
+- **Next:** Record a pilot lesson or draft a short guide, and share it with a few people for feedback.
+- **Then:** Choose a format and platform, set a clear price and refund policy, and test the whole purchase on your phone.
+- **Every quarter:** Review sales, refunds, and feedback, update the product, and re-check tax and platform rules.
+
+You do not need a studio or a large audience to begin. A useful, honest product that solves one real problem is enough to start, and you can improve it with every buyer you help.`,
+    faqs: [
+      {
+        question: "What kind of knowledge can I turn into a digital product?",
+        answer:
+          "Look for practical skills and questions people keep asking you, such as costing, scheduling, recipes, or paperwork. A narrow, practical promise that a beginner can achieve usually sells better than a broad topic.",
+      },
+      {
+        question: "How do I know whether people will buy before I build it?",
+        answer:
+          "Talk to potential buyers, run a short poll, share a pilot lesson, and pre-sell a small version. Real payment from early buyers is a stronger signal than polite interest.",
+      },
+      {
+        question: "Which format should I start with?",
+        answer:
+          "Start small. A short ebook, checklist, or set of templates is quicker to make than a full course, and it shows you what buyers value. Move to recorded lessons or live classes when you know what they need.",
+      },
+      {
+        question: "How should I price an online course or ebook?",
+        answer:
+          "Price for the result it delivers, not the hours it took. Check what similar products cost, keep your options simple, explain what is included, and work out your take-home amount after platform and payment fees.",
+      },
+      {
+        question: "How can I protect my content from being copied?",
+        answer:
+          "Original work is generally protected by copyright, though the details depend on the law, so ask a lawyer or the relevant authority. State your terms clearly, use watermarks, personalised files, or platform access controls, and keep dated drafts. No method stops determined copying, so also build trust with fast support.",
+      },
+      {
+        question: "Do I need a refund policy?",
+        answer:
+          "Yes. State whether you offer refunds, for how long, and under what conditions. Consumers may have rights that a policy cannot remove, so check the rules rather than assuming, and deliver the product smoothly to avoid avoidable requests.",
+      },
+      {
+        question: "Do I have to charge tax on online courses and ebooks?",
+        answer:
+          "It depends. Digital services such as online courses and e-books have been covered by Malaysia's service tax rules, but published guidance focuses on overseas providers and the figures are reported inconsistently. Ask the Royal Malaysian Customs Department or a tax adviser whether and how the rules apply to you, and record all income from day one.",
+      },
+      {
+        question: "How can I market a digital product without overpromising?",
+        answer:
+          "Offer a free sample, share honest examples, use real testimonials with permission, and avoid guaranteeing results or income. Answer questions generously and support buyers after the sale so that they leave good reviews.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "销售数字产品与在线课程：马来西亚中小企业的电子书、模板与课堂",
+        excerpt:
+          "您所知道的，可能比货架上的存货更有价值。本指南帮助马来西亚中小企业决定哪些知识可以变成电子书、模板或在线课程，在制作之前测试需求，选择格式和平台，公平定价和交付，保护内容，处理付款和退款，并在销售之前查清税务规定。",
+        body: `许多马来西亚的企业主懂得一些别人乐意付费学习的东西：如何为菜单计算成本、如何经营摊位、如何管理诊所的预约、如何烘焙一款有难度的糕点，或如何不慌不忙地处理文书。数字产品把这些专长变成一样您不必补货就能多次销售的东西。
+
+这并不是轻松赚钱的捷径。做出人们重视的东西需要付出努力，销售它需要持续的营销和支援。但对于合适的构想，一本小电子书、一套模板或一个短课程，可以增加收入并巩固您的声誉。
+
+本文仅提供一般信息，并非法律、税务或财务建议。平台的功能和费用、版权实务以及税务规定会随时间变化，本指南的部分细节可能已经过时。在采取行动之前，请向相关主管单位和专业人士确认现行要求。
+
+## 1. 决定哪些知识可以变成产品
+
+### 列出您比大多数人做得更好的事
+写下顾客和朋友不断向您询问的事、您很快就能解决的问题，以及您已经变成例行程序的工作。反复被问到的问题是很强的提示。
+
+### 偏好狭窄而实用的承诺
+“如何为自制小吃定价并停止少收钱”比“事业成功”更好卖。以初学者能够达到的一个清楚的成果为目标。
+
+### 把教学与您的核心服务区分开
+问问自己，分享您的方法会损害主业还是支持主业。许多服务提供者发现，一份指南会吸引之后需要协助的客户。
+
+### 确认您真的能教
+做得好和一步一步解释清楚是两回事。试着为朋友写下步骤，看看他们在哪里迷路。
+
+### 尊重他人的作品和资料
+不要使用您不拥有或没有获准分享的素材、图片或顾客资料。我们关于保护企业数据的指南解释了原因。
+
+## 2. 在制作之前测试需求
+
+### 寻找人们想要它的证据
+查看人们是否已经在搜索、询问或购买类似的协助。竞争对手是市场存在的迹象。我们关于了解您的顾客的指南解释了简单的了解方法。
+
+### 询问真实的人
+与十位潜在买家交谈，或在群组或页面上做个简短的投票。问问他们遇到什么困难，以及已经试过什么。
+
+### 从试点开始
+在制作完整课程之前，先录制一节简短的试讲课。把它分享给几个人，问问哪里清楚、哪里令人困惑，以及他们愿意为什么付费。
+
+### 预售一个小版本
+以早鸟价格向最初的买家提供一个简单的版本，例如工作坊或指南草稿。真正的付款比礼貌的兴趣是更强的信号。
+
+### 决定什么叫“够好”
+设定一个最低标准和一个推出日期。完美主义让大多数数字产品延误的程度，远远超过技术。
+
+## 3. 选择格式和平台
+
+### 让格式配合成果
+知识用电子书或清单，人们想直接复制的工作用模板或电子表格，需要示范的技能用录播课程，需要互动则用直播课堂或网络研讨会。
+
+### 从小处开始
+一份简短的指南或几份模板，比一门长课程更快做好，也让您了解买家看重什么。
+
+### 比较销售方式
+您可以通过自己的网站、市集平台、课程平台，或以人手交付的社交媒体来销售。每一种都有不同的费用、功能、付款方式，以及关于谁拥有顾客关系的规则，而且经常变动。在做决定之前，请比较现行条款。
+
+### 保存您的顾客名单
+在可能的情况下，经购买者同意后收集他们的联系方式，以便告知他们更新和新产品。我们关于小企业电邮营销的指南解释了如何做。
+
+### 让它在手机上好用
+许多马来西亚的买家会在手机上打开您的产品。请检查文件容易下载、视频在手机网络上能播放，以及文字清晰可读。
+
+## 4. 公平地定价和交付
+
+### 为成果定价，而不是为工时
+想想您解决的问题对买家值多少。查看类似产品的价格，并避免陷入价格战。
+
+### 提供清楚的选项
+简单的结构，例如基本指南和附有模板的版本，有助于买家选择。太多等级会让人困惑。
+
+### 说明包含什么
+说明格式、篇幅、课时数量、使用权限多久，以及包含什么支援，让买家知道自己为什么付费。我们关于产品和服务定价的指南解释了定价背后的想法。
+
+### 顺畅而迅速地交付
+尽可能在付款后自动发送文件或访问链接，并告诉买家如果没有收到该怎么办。延误会引来退款要求。
+
+### 测试整个购买过程
+在手机和笔记本电脑上购买自己的产品，从付款到下载。修正任何让您困惑的地方，因为它也会让顾客困惑。
+
+## 5. 保护您的内容和版权
+
+### 了解版权通常保护您的原创作品
+一般而言，原创的文字和录制作品受版权保护，让您对复制和分享有一定的控制权。细节取决于法律，所以请向律师或相关主管单位询问什么适用于您。
+
+### 只使用您有权使用的内容
+为照片、音乐、字体和模板取得适当的授权。未经许可使用图库图片或歌曲，可能招来下架要求或索偿。
+
+### 清楚说明您的条款
+说明买家可以做什么和不可以做什么，例如仅供个人使用、不得转售或分享。把它放在销售页面和产品里面。
+
+### 使用合理的保护
+水印、个人化文件和有访问控制的平台，让随意复制更困难，尽管没有一样能阻止蓄意的复制。不要把产品弄得难以打开，让诚实的买家放弃。
+
+### 知道被复制时该怎么办
+保存标注日期的草稿和发布记录。如果发现未经授权的副本，您通常可以向平台举报，必要时向律师询问您的选择。我们关于马来西亚商标注册的指南解释了如何保护您的品牌名称。
+
+> 数字产品的强度取决于背后的信任：诚实的承诺、清楚的条款，以及出问题时迅速的协助，比任何巧妙的锁都更重要。
+
+## 6. 处理付款和退款
+
+### 提供熟悉的付款方式
+马来西亚的买家通常使用网上银行、信用卡和电子钱包。请查看您的平台或付款服务商支持哪些方式，以及每一种的成本。我们关于接受数字付款的指南解释了各种选择。
+
+### 了解费用和结算时间
+平台和付款服务商会收费，款项结算可能需要几天。在定价之前，先算出您真正到手的金额。
+
+### 写一份清楚的退款政策
+说明您是否提供退款、期限多久，以及在什么条件下。消费者可能拥有政策无法剥夺的权利，所以请查看规定，不要想当然。我们关于顾客投诉、退款和消费者权益的指南解释了您的责任。
+
+### 开具妥善的收据和记录
+记录每一笔销售、买家、金额和日期。良好的记录有助于处理退款、纠纷和您的账目。
+
+### 防范欺诈
+提防退单、被盗用的信用卡和假的付款截图，并在放行任何东西之前，在自己的账户上确认付款。我们关于小企业网络安全的指南解释了实用的保护措施。
+
+## 7. 销售之前查清税务和合规
+
+### 从第一天起就保存收入记录
+数字收入仍然是收入。请记录每一笔销售和开销，以便妥善申报。我们关于簿记与会计基础的指南解释了简单的系统。
+
+### 查明税务规定如何适用于数字服务
+在马来西亚，在线课程和电子书等数字服务曾被纳入服务税的规定，据报道登记门槛是十二个月内RM500,000。大部分已发布的指引集中于海外的服务提供者，税率的报道也不一致，所以不要依赖任何单一的数字。请向皇家马来西亚关税局或税务顾问询问规定是否以及如何适用于您。
+
+### 把业务和个人的钱分开
+尽可能使用专用的账户，让您容易看出产品赚了多少。我们关于分开个人和业务财务的指南解释了原因。
+
+### 考虑注册和执照
+如果您以商号销售，请确保业务已妥善注册。我们关于选择业务结构的指南解释了各种选择。
+
+### 查看平台规定和广告宣称
+平台对您可以销售什么以及如何描述有自己的规定。请保持承诺准确，不要宣称保证成果或收入。
+
+## 8. 诚实营销并支持您的买家
+
+### 展示成果和样本
+提供免费的一章、一份样本模板或一节短课。小小的预览比冗长的推销更快建立信任。
+
+### 讲真实的故事
+使用诚实的例子，并在获得许可的情况下，使用真实买家的见证。不要夸大成果，也不要承诺任何人都能致富。我们关于广告宣称和消费者保护的指南解释了应该避免什么。
+
+### 到人们已经在的地方
+在您的买家使用的平台上分享有用的小贴士，并慷慨地回答问题。我们关于社交媒体营销的指南解释了基础知识。
+
+### 售后支持
+迅速回复问题、修正错误，并在情况改变时更新产品。感觉受到照顾的买家会留下好评并再次购买。
+
+### 检讨并改进
+追踪销售、退款、问题和反馈，然后改进产品或销售页面。我们关于追踪业务表现的指南解释了要跟踪的简单数字。
+
+如果您需要设计师、视频剪辑师或税务顾问协助推出产品，您可以[浏览名录](/zh)寻找附近的专业人士，并[创建免费商家列表](/zh/signup)，让买家和合作伙伴找到您的业务。
+
+## 马来西亚中小企业在数字产品方面常犯的错误
+
+- **在测试需求之前就制作完整课程。** 大型制作可能一个买家也没有，所以请先以真实的人和试讲课来验证。
+- **使用您无权使用的图片、音乐或文字。** 可能招来索偿和下架，所以请为您使用的内容取得授权，并在需要时注明出处。
+- **直到推出后才理会税务和退款规定。** 意外会伤害利润和信任，所以请在第一笔销售之前查清规定、保存记录并写好清楚的退款政策。
+
+## 从哪里开始
+
+- **本周：** 列出人们向您请教的知识，并与十位潜在买家交谈。
+- **接着：** 录制一节试讲课或起草一份简短的指南，并分享给几个人征求反馈。
+- **然后：** 选择格式和平台，设定清楚的价格和退款政策，并在手机上测试整个购买过程。
+- **每季度：** 检讨销售、退款和反馈，更新产品，并重新查看税务和平台规定。
+
+您不需要摄影棚或庞大的受众才能开始。一件有用而诚实、解决一个真实问题的产品就足以起步，并且您可以随着每一位您帮助过的买家不断改进。`,
+        faqs: [
+          {
+            question: "哪种知识可以变成数字产品？",
+            answer:
+              "寻找实用的技能和人们不断向您询问的问题，例如成本计算、排班、食谱或文书工作。初学者能够达到的狭窄而实用的承诺，通常比宽泛的主题更好卖。",
+          },
+          {
+            question: "在制作之前，我如何知道人们会不会购买？",
+            answer:
+              "与潜在买家交谈，做个简短的投票，分享一节试讲课，并预售一个小版本。早期买家的真实付款，比礼貌的兴趣是更强的信号。",
+          },
+          {
+            question: "我应该从哪种格式开始？",
+            answer:
+              "从小处开始。一本简短的电子书、清单或一套模板，比完整课程更快做好，也让您看出买家看重什么。等您知道他们需要什么之后，再转向录播课程或直播课堂。",
+          },
+          {
+            question: "我应该如何为在线课程或电子书定价？",
+            answer:
+              "为它带来的成果定价，而不是为所花的工时。查看类似产品的价格，保持选项简单，说明包含什么，并算出扣除平台和付款费用后您实际到手的金额。",
+          },
+          {
+            question: "我如何保护内容不被复制？",
+            answer:
+              "原创作品通常受版权保护，细节取决于法律，所以请询问律师或相关主管单位。清楚说明您的条款，使用水印、个人化文件或平台的访问控制，并保存标注日期的草稿。没有一种方法能阻止蓄意的复制，所以也要以迅速的支援建立信任。",
+          },
+          {
+            question: "我需要退款政策吗？",
+            answer:
+              "需要。说明您是否提供退款、期限多久，以及在什么条件下。消费者可能拥有政策无法剥夺的权利，所以请查看规定，不要想当然，并顺畅地交付产品，以避免可避免的要求。",
+          },
+          {
+            question: "我必须为在线课程和电子书收税吗？",
+            answer:
+              "视情况而定。在线课程和电子书等数字服务曾被纳入马来西亚服务税的规定，但已发布的指引集中于海外的服务提供者，数字的报道也不一致。请向皇家马来西亚关税局或税务顾问询问规定是否以及如何适用于您，并从第一天起记录所有收入。",
+          },
+          {
+            question: "我如何在不夸大的情况下营销数字产品？",
+            answer:
+              "提供免费样本，分享诚实的例子，在获得许可的情况下使用真实的见证，并避免保证成果或收入。慷慨地回答问题，并在售后支持买家，让他们留下好评。",
+          },
+        ],
+      },
+      ms: {
+        title: "Menjual Produk Digital dan Kursus Dalam Talian: E-buku, Templat dan Kelas untuk PKS Malaysia",
+        excerpt:
+          "Apa yang anda tahu mungkin lebih bernilai daripada stok di rak. Panduan ini membantu PKS Malaysia memutuskan pengetahuan mana yang boleh menjadi e-buku, templat atau kelas dalam talian, menguji permintaan sebelum membina, memilih format dan platform, menetapkan harga dan menghantar dengan adil, melindungi kandungan, mengendalikan pembayaran dan bayaran balik, dan menyemak peraturan cukai sebelum menjual.",
+        body: `Ramai pemilik perniagaan Malaysia tahu sesuatu yang orang lain sanggup bayar untuk belajar: cara mengira kos menu, mengendalikan gerai, menguruskan tempahan klinik, membakar pastri yang sukar, atau menguruskan kertas kerja tanpa panik. Produk digital menukar kepakaran itu menjadi sesuatu yang boleh anda jual berkali-kali tanpa mengisi semula stok.
+
+Ia bukan jalan pintas untuk wang mudah. Menghasilkan sesuatu yang dihargai orang memerlukan usaha, dan menjualnya memerlukan pemasaran dan sokongan yang berterusan. Tetapi untuk idea yang betul, e-buku kecil, set templat atau kelas pendek boleh menambah pendapatan dan mengukuhkan reputasi anda.
+
+Ini maklumat umum, bukan nasihat undang-undang, cukai atau kewangan. Ciri dan fi platform, amalan hak cipta dan peraturan cukai berubah dari semasa ke semasa, dan sebahagian butiran dalam panduan ini mungkin sudah lapuk. Sahkan keperluan semasa dengan pihak berkuasa dan profesional berkaitan sebelum anda bertindak.
+
+## 1. Tentukan pengetahuan mana yang boleh menjadi produk
+
+### Senaraikan apa yang anda lakukan lebih baik daripada kebanyakan orang
+Tuliskan apa yang pelanggan dan rakan terus tanya anda, masalah yang anda selesaikan dengan cepat, dan tugas yang telah anda jadikan rutin. Soalan yang berulang ialah petunjuk yang kuat.
+
+### Pilih janji yang sempit dan praktikal
+"Cara menetapkan harga snek buatan sendiri dan berhenti mengenakan terlalu murah" lebih laku daripada "kejayaan perniagaan". Sasarkan satu hasil yang jelas yang boleh dicapai oleh pemula.
+
+### Asingkan pengajaran daripada perkhidmatan teras anda
+Tanya sama ada berkongsi kaedah anda akan merosakkan perniagaan utama anda atau menyokongnya. Ramai pembekal perkhidmatan mendapati panduan menarik klien yang kemudian mahukan bantuan.
+
+### Pastikan anda sebenarnya boleh mengajarnya
+Melakukan sesuatu dengan baik berbeza daripada menerangkannya langkah demi langkah. Cuba tulis langkah-langkahnya untuk seorang rakan dan lihat di mana mereka sesat.
+
+### Hormati hasil kerja dan data orang lain
+Jangan gunakan bahan, imej atau maklumat pelanggan yang bukan milik anda atau yang anda tiada kebenaran untuk dikongsi. Panduan kami tentang melindungi data perniagaan anda menerangkan sebabnya.
+
+## 2. Uji permintaan sebelum anda membina
+
+### Cari bukti bahawa orang mahukannya
+Semak sama ada orang sudah mencari, bertanya atau membayar untuk bantuan yang serupa. Pesaing ialah tanda bahawa pasaran wujud. Panduan kami tentang memahami pelanggan anda menerangkan cara mudah untuk belajar.
+
+### Tanya orang sebenar
+Berbual dengan sepuluh bakal pembeli, atau jalankan tinjauan pendek dalam kumpulan atau di halaman anda. Tanya apa yang mereka sukar lakukan dan apa yang telah mereka cuba.
+
+### Mulakan dengan perintis
+Rakam satu pelajaran perintis yang pendek sebelum anda membina kursus penuh. Kongsikan dengan beberapa orang, dan tanya apa yang jelas, apa yang mengelirukan, dan apa yang mereka sanggup bayar.
+
+### Jual awal versi kecil
+Tawarkan versi ringkas, seperti bengkel atau draf panduan, pada harga awal kepada pembeli pertama anda. Bayaran sebenar ialah isyarat yang lebih kuat daripada minat yang sopan.
+
+### Tentukan apa itu "cukup baik"
+Tetapkan standard minimum dan tarikh pelancaran. Kesempurnaan melewatkan kebanyakan produk digital jauh lebih banyak daripada teknologi.
+
+## 3. Pilih format dan platform
+
+### Padankan format dengan hasil
+Gunakan e-buku atau senarai semak untuk pengetahuan, templat atau hamparan untuk kerja yang orang mahu salin, kursus rakaman untuk kemahiran yang memerlukan demonstrasi, dan kelas langsung atau webinar untuk interaksi.
+
+### Mulakan dari kecil
+Panduan pendek atau beberapa templat lebih cepat disiapkan daripada kursus panjang, dan ia membolehkan anda belajar apa yang dihargai pembeli.
+
+### Bandingkan cara menjual
+Anda boleh menjual melalui laman web anda sendiri, pasar, platform kursus, atau media sosial dengan penghantaran manual. Setiap satu mempunyai fi, ciri, kaedah pembayaran dan peraturan yang berbeza tentang siapa yang memiliki hubungan pelanggan, dan ini sering berubah. Bandingkan terma semasa sebelum anda komited.
+
+### Simpan senarai pelanggan anda
+Jika boleh, kumpulkan butiran hubungan pembeli, dengan persetujuan mereka, supaya anda boleh memberitahu mereka tentang kemas kini dan produk baharu. Panduan kami tentang pemasaran e-mel untuk perniagaan kecil menerangkan caranya.
+
+### Jadikan ia boleh digunakan pada telefon
+Ramai pembeli Malaysia akan membuka produk anda pada telefon bimbit. Semak bahawa fail mudah dimuat turun, video dimainkan pada sambungan mudah alih, dan teks mudah dibaca.
+
+## 4. Tetapkan harga dan hantar dengan adil
+
+### Tetapkan harga untuk hasil, bukan jam
+Fikirkan tentang masalah yang anda selesaikan dan nilainya kepada pembeli. Semak harga produk yang serupa, dan elakkan berlumba ke bawah.
+
+### Tawarkan pilihan yang jelas
+Struktur yang mudah, seperti panduan asas dan versi dengan templat, membantu pembeli memilih. Terlalu banyak peringkat mengelirukan orang.
+
+### Terangkan apa yang disertakan
+Nyatakan format, panjang, bilangan pelajaran, berapa lama akses berlangsung, dan sokongan apa yang disertakan, supaya pembeli tahu apa yang mereka bayar. Panduan kami tentang menetapkan harga produk dan perkhidmatan anda menerangkan pemikiran di sebalik harga.
+
+### Hantar dengan lancar dan cepat
+Hantar fail atau pautan akses secara automatik selepas pembayaran jika boleh, dan beritahu pembeli apa yang perlu dilakukan jika ia tidak tiba. Kelewatan mencetuskan permintaan bayaran balik.
+
+### Uji keseluruhan pembelian
+Beli produk anda sendiri pada telefon dan komputer riba, dari pembayaran hingga muat turun. Betulkan apa-apa yang mengelirukan anda, kerana ia akan mengelirukan pelanggan.
+
+## 5. Lindungi kandungan dan hak cipta anda
+
+### Fahami bahawa hak cipta biasanya melindungi karya asli anda
+Secara amnya, karya bertulis dan rakaman yang asli dilindungi oleh hak cipta, yang memberi anda sedikit kawalan ke atas penyalinan dan perkongsian. Butirannya bergantung pada undang-undang, jadi tanya peguam atau pihak berkuasa berkaitan tentang apa yang terpakai kepada anda.
+
+### Gunakan hanya kandungan yang anda berhak gunakan
+Lesenkan foto, muzik, fon dan templat dengan betul. Imej stok atau lagu yang digunakan tanpa kebenaran boleh membawa kepada tuntutan penurunan atau tuntutan ganti rugi.
+
+### Nyatakan terma anda dengan jelas
+Nyatakan apa yang boleh dan tidak boleh dilakukan pembeli, seperti kegunaan peribadi sahaja dan tiada penjualan semula atau perkongsian. Letakkannya pada halaman jualan dan di dalam produk.
+
+### Gunakan perlindungan yang munasabah
+Tera air, fail peribadi dan platform dengan kawalan akses menyukarkan penyalinan sambil lewa, walaupun tiada satu pun yang menghentikan penyalinan yang bertekad. Jangan jadikan produk begitu sukar dibuka sehingga pembeli yang jujur berputus asa.
+
+### Ketahui apa yang perlu dilakukan jika ia disalin
+Simpan draf bertarikh dan rekod penerbitan. Jika anda menemui salinan tanpa kebenaran, anda biasanya boleh melaporkannya kepada platform dan, jika perlu, tanya peguam tentang pilihan anda. Panduan kami tentang pendaftaran tanda dagangan di Malaysia menerangkan cara melindungi nama jenama anda.
+
+> Produk digital hanya sekuat kepercayaan di belakangnya: janji yang jujur, terma yang jelas dan bantuan pantas apabila sesuatu tidak kena lebih penting daripada sebarang kunci yang bijak.
+
+## 6. Kendalikan pembayaran dan bayaran balik
+
+### Tawarkan kaedah pembayaran yang biasa
+Pembeli di Malaysia lazimnya menggunakan perbankan dalam talian, kad dan e-dompet. Semak kaedah mana yang disokong platform atau pembekal pembayaran anda dan kos setiap satu. Panduan kami tentang menerima pembayaran digital menerangkan pilihan yang ada.
+
+### Fahami fi dan masa pembayaran
+Platform dan pembekal pembayaran mengenakan fi, dan pembayaran boleh mengambil masa beberapa hari. Kira jumlah sebenar yang anda bawa pulang sebelum anda menetapkan harga.
+
+### Tulis dasar bayaran balik yang jelas
+Nyatakan sama ada anda menawarkan bayaran balik, untuk berapa lama, dan di bawah syarat apa. Pengguna mungkin mempunyai hak yang tidak boleh dihapuskan oleh dasar, jadi semak peraturan dan jangan sekadar menganggap. Panduan kami tentang aduan pelanggan, bayaran balik dan hak pengguna menerangkan tanggungjawab anda.
+
+### Keluarkan resit dan rekod yang betul
+Simpan rekod setiap jualan, pembeli, jumlah dan tarikh. Rekod yang baik membantu dengan bayaran balik, pertikaian dan akaun anda.
+
+### Berjaga-jaga terhadap penipuan
+Berwaspada terhadap pembayaran balik kad, kad curi dan tangkapan skrin pembayaran palsu, dan sahkan pembayaran dalam akaun anda sendiri sebelum anda melepaskan apa-apa. Panduan kami tentang keselamatan siber untuk perniagaan kecil menerangkan perlindungan praktikal.
+
+## 7. Semak cukai dan pematuhan sebelum anda menjual
+
+### Simpan rekod pendapatan dari hari pertama
+Pendapatan digital tetap pendapatan. Rekodkan setiap jualan dan perbelanjaan supaya anda boleh melaporkannya dengan betul. Panduan kami tentang asas simpan kira dan perakaunan menerangkan sistem yang mudah.
+
+### Semak bagaimana peraturan cukai terpakai kepada perkhidmatan digital
+Di Malaysia, perkhidmatan digital seperti kursus dalam talian dan e-buku telah diliputi oleh peraturan cukai perkhidmatan, dan ambang pendaftaran dilaporkan sebanyak RM500,000 dalam tempoh dua belas bulan. Kebanyakan panduan yang diterbitkan menumpukan pada pembekal luar negara, dan kadar telah dilaporkan secara tidak konsisten, jadi jangan bergantung pada satu angka. Tanya Jabatan Kastam Diraja Malaysia atau penasihat cukai sama ada dan bagaimana peraturan terpakai kepada anda.
+
+### Asingkan wang perniagaan dan peribadi
+Gunakan akaun khusus jika boleh, supaya mudah melihat berapa banyak yang diperoleh produk itu. Panduan kami tentang mengasingkan kewangan peribadi dan perniagaan menerangkan sebabnya.
+
+### Pertimbangkan pendaftaran dan lesen
+Jika anda menjual di bawah nama perniagaan, pastikan perniagaan itu didaftarkan dengan betul. Panduan kami tentang memilih struktur perniagaan menerangkan pilihan yang ada.
+
+### Semak peraturan platform dan dakwaan pengiklanan
+Platform mempunyai peraturan sendiri tentang apa yang boleh anda jual dan bagaimana anda menerangkannya. Pastikan janji anda tepat, dan jangan mendakwa hasil atau pendapatan yang dijamin.
+
+## 8. Pasarkan dengan jujur dan sokong pembeli anda
+
+### Tunjukkan hasil dan sampel
+Tawarkan satu bab percuma, templat sampel atau pelajaran pendek. Pratonton kecil membina kepercayaan lebih cepat daripada promosi yang panjang.
+
+### Ceritakan kisah sebenar
+Gunakan contoh yang jujur dan, dengan kebenaran, testimoni daripada pembeli sebenar. Jangan melebih-lebihkan hasil atau menjanjikan sesiapa akan menjadi kaya. Panduan kami tentang dakwaan pengiklanan dan perlindungan pengguna menerangkan apa yang perlu dielakkan.
+
+### Capai orang di tempat mereka sudah berada
+Kongsikan petua berguna di platform yang digunakan pembeli anda, dan jawab soalan dengan murah hati. Panduan kami tentang pemasaran media sosial menerangkan asasnya.
+
+### Sokongan selepas jualan
+Balas soalan dengan cepat, betulkan kesilapan, dan kemas kini produk apabila keadaan berubah. Pembeli yang berasa dijaga meninggalkan ulasan baik dan membeli lagi.
+
+### Semak dan perbaiki
+Jejaki jualan, bayaran balik, soalan dan maklum balas, kemudian perbaiki produk atau halaman jualan. Panduan kami tentang menjejaki prestasi perniagaan menerangkan angka mudah untuk diikuti.
+
+Jika anda mahukan bantuan daripada pereka, penyunting video atau penasihat cukai untuk melancarkan produk anda, anda boleh [layari direktori](/ms) untuk profesional berhampiran anda, dan [cipta penyenaraian perniagaan percuma](/ms/signup) supaya pembeli dan rakan kongsi dapat menemui perniagaan anda.
+
+## Kesilapan biasa PKS Malaysia dengan produk digital
+
+- **Membina kursus penuh sebelum menguji permintaan.** Binaan besar boleh tidak laku kepada sesiapa, jadi sahkan dahulu dengan orang sebenar dan pelajaran perintis.
+- **Menggunakan imej, muzik atau teks yang anda tiada hak untuk menggunakannya.** Tuntutan dan penurunan boleh menyusul, jadi lesenkan apa yang anda gunakan dan beri kredit jika dikehendaki.
+- **Mengabaikan peraturan cukai dan bayaran balik sehingga selepas pelancaran.** Kejutan merosakkan keuntungan dan kepercayaan, jadi semak peraturan, simpan rekod dan tulis dasar bayaran balik yang jelas sebelum jualan pertama.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Senaraikan pengetahuan yang orang minta daripada anda, dan berbual dengan sepuluh bakal pembeli.
+- **Seterusnya:** Rakam pelajaran perintis atau draf panduan pendek, dan kongsikan dengan beberapa orang untuk maklum balas.
+- **Kemudian:** Pilih format dan platform, tetapkan harga dan dasar bayaran balik yang jelas, dan uji keseluruhan pembelian pada telefon anda.
+- **Setiap suku tahun:** Semak jualan, bayaran balik dan maklum balas, kemas kini produk, dan semak semula peraturan cukai dan platform.
+
+Anda tidak memerlukan studio atau khalayak besar untuk bermula. Produk yang berguna dan jujur yang menyelesaikan satu masalah sebenar sudah memadai untuk bermula, dan anda boleh memperbaikinya dengan setiap pembeli yang anda bantu.`,
+        faqs: [
+          {
+            question: "Apakah jenis pengetahuan yang boleh saya jadikan produk digital?",
+            answer:
+              "Cari kemahiran praktikal dan soalan yang orang terus tanya anda, seperti pengiraan kos, penjadualan, resipi atau kertas kerja. Janji yang sempit dan praktikal yang boleh dicapai oleh pemula biasanya lebih laku daripada topik yang luas.",
+          },
+          {
+            question: "Bagaimanakah saya tahu sama ada orang akan membeli sebelum saya membinanya?",
+            answer:
+              "Berbual dengan bakal pembeli, jalankan tinjauan pendek, kongsikan pelajaran perintis, dan jual awal versi kecil. Bayaran sebenar daripada pembeli awal ialah isyarat yang lebih kuat daripada minat yang sopan.",
+          },
+          {
+            question: "Format mana yang patut saya mulakan?",
+            answer:
+              "Mulakan dari kecil. E-buku pendek, senarai semak atau set templat lebih cepat disiapkan daripada kursus penuh, dan ia menunjukkan kepada anda apa yang dihargai pembeli. Beralih kepada pelajaran rakaman atau kelas langsung apabila anda tahu apa yang mereka perlukan.",
+          },
+          {
+            question: "Bagaimanakah saya patut menetapkan harga kursus dalam talian atau e-buku?",
+            answer:
+              "Tetapkan harga untuk hasil yang disampaikannya, bukan jam yang diambil. Semak harga produk yang serupa, pastikan pilihan anda mudah, terangkan apa yang disertakan, dan kira jumlah yang anda bawa pulang selepas fi platform dan pembayaran.",
+          },
+          {
+            question: "Bagaimanakah saya boleh melindungi kandungan saya daripada disalin?",
+            answer:
+              "Karya asli umumnya dilindungi oleh hak cipta, walaupun butirannya bergantung pada undang-undang, jadi tanya peguam atau pihak berkuasa berkaitan. Nyatakan terma anda dengan jelas, gunakan tera air, fail peribadi atau kawalan akses platform, dan simpan draf bertarikh. Tiada kaedah yang menghentikan penyalinan yang bertekad, jadi bina juga kepercayaan dengan sokongan yang pantas.",
+          },
+          {
+            question: "Adakah saya memerlukan dasar bayaran balik?",
+            answer:
+              "Ya. Nyatakan sama ada anda menawarkan bayaran balik, untuk berapa lama, dan di bawah syarat apa. Pengguna mungkin mempunyai hak yang tidak boleh dihapuskan oleh dasar, jadi semak peraturan dan jangan sekadar menganggap, dan hantar produk dengan lancar untuk mengelak permintaan yang boleh dielakkan.",
+          },
+          {
+            question: "Adakah saya perlu mengenakan cukai ke atas kursus dalam talian dan e-buku?",
+            answer:
+              "Bergantung. Perkhidmatan digital seperti kursus dalam talian dan e-buku telah diliputi oleh peraturan cukai perkhidmatan Malaysia, tetapi panduan yang diterbitkan menumpukan pada pembekal luar negara dan angka dilaporkan secara tidak konsisten. Tanya Jabatan Kastam Diraja Malaysia atau penasihat cukai sama ada dan bagaimana peraturan terpakai kepada anda, dan rekodkan semua pendapatan dari hari pertama.",
+          },
+          {
+            question: "Bagaimanakah saya boleh memasarkan produk digital tanpa berlebih-lebihan?",
+            answer:
+              "Tawarkan sampel percuma, kongsikan contoh yang jujur, gunakan testimoni sebenar dengan kebenaran, dan elakkan menjamin hasil atau pendapatan. Jawab soalan dengan murah hati dan sokong pembeli selepas jualan supaya mereka meninggalkan ulasan baik.",
+          },
+        ],
+      },
+    },
+  },
 ];

@@ -340,7 +340,8 @@
         "tablet",
         "small-business"
       ],
-      "description": "Asian woman holding a tablet beside a rustic blue shop door"
+      "description": "Asian woman holding a tablet beside a rustic blue shop door",
+      "usedBy": "cand-q1.webp"
     },
     {
       "id": 12935042,
@@ -1192,9 +1193,11 @@
         "savings",
         "recycling",
         "bags",
-        "asian"
+        "asian",
+        "waste"
       ],
-      "description": "Smiling Asian woman holding recycled bags"
+      "description": "Smiling Asian woman holding a bag of sorted waste",
+      "usedBy": "working-with-local-councils-and-neighbours-waste.webp"
     },
     {
       "id": 3946159,
@@ -1438,6 +1441,39 @@
       ],
       "description": "Two smiling foreign visitors with backpacks buying cut fruit from a glass-fronted street stall",
       "usedBy": "serving-a-multicultural-market-and-tourists-cover.webp"
+    },
+    {
+      "id": 9040544,
+      "tags": [
+        "digital",
+        "course",
+        "video",
+        "laptop"
+      ],
+      "description": "Woman presenting to a camera on a tripod beside a laptop and notebook",
+      "usedBy": "digital-products-and-online-courses-cover.webp"
+    },
+    {
+      "id": 7777117,
+      "tags": [
+        "digital",
+        "course",
+        "video",
+        "tripod"
+      ],
+      "description": "Young Asian woman writing notes while recording on a phone tripod",
+      "usedBy": "digital-products-and-online-courses-recording.webp"
+    },
+    {
+      "id": 6205453,
+      "tags": [
+        "neighbours",
+        "cafe",
+        "community",
+        "street"
+      ],
+      "description": "Two cafe workers chatting on a kerb outside a cafe",
+      "usedBy": "working-with-local-councils-and-neighbours-cover.webp"
     }
   ]
 }
