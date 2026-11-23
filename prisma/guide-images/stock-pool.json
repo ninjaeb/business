@@ -1474,6 +1474,53 @@
       ],
       "description": "Two cafe workers chatting on a kerb outside a cafe",
       "usedBy": "working-with-local-councils-and-neighbours-cover.webp"
+    },
+    {
+      "id": 6358867,
+      "tags": [
+        "content",
+        "photography",
+        "phone",
+        "retail",
+        "asian"
+      ],
+      "description": "Woman with a measuring tape photographing fabric samples in a box with her phone",
+      "usedBy": "product-photography-and-content-on-a-budget-cover.webp"
+    },
+    {
+      "id": 9218693,
+      "tags": [
+        "content",
+        "photography",
+        "studio",
+        "tripod",
+        "ring-light"
+      ],
+      "description": "Woman in a headscarf arranging wooden toys on a kraft paper backdrop beside a tripod and ring light",
+      "usedBy": "product-photography-and-content-on-a-budget-setup.webp"
+    },
+    {
+      "id": 9594502,
+      "tags": [
+        "packaging",
+        "shipping",
+        "paper",
+        "eco"
+      ],
+      "description": "Overhead view of hands smoothing paper wrapping inside an open cardboard box",
+      "usedBy": "packaging-and-going-greener-tissue.webp"
+    },
+    {
+      "id": 9853458,
+      "tags": [
+        "packaging",
+        "shipping",
+        "retail",
+        "asian",
+        "clothing"
+      ],
+      "description": "Woman in glasses and a rust kimono jacket folding a garment into a cardboard box with tissue paper",
+      "usedBy": "packaging-and-going-greener-cover.webp"
     }
   ]
 }
