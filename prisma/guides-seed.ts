@@ -43838,4 +43838,1296 @@ Anda tidak memerlukan studio atau khalayak besar untuk bermula. Produk yang berg
       },
     },
   },
+  {
+    slug: "product-photography-and-content-creation-for-malaysian-smes",
+    title: "Product Photography and Content Creation on a Budget: Photos, Short Videos, and Listings for Malaysian SMEs",
+    seoTitle: "Product Photos and Content on a Budget for Malaysian SMEs",
+    seoDescription:
+      "How Malaysian SMEs can make good product photos, short videos and listings with a phone: set up, style, edit, respect copyright and plan content.",
+    coverImage: {
+      file: "product-photography-and-content-on-a-budget-cover.webp",
+      mimeType: "image/webp",
+      alt: "A woman with a pink and yellow measuring tape around her neck photographing fabric samples in a black box with her phone in a bright sewing studio",
+      altTranslations: {
+        zh: "一位脖子上挂着粉色和黄色卷尺的女士，在明亮的缝纫工作室里用手机拍摄黑色盒子里的布料样品",
+        ms: "Seorang wanita dengan pita pengukur merah jambu dan kuning di lehernya memotret sampel kain dalam kotak hitam menggunakan telefonnya di studio jahitan yang terang",
+      },
+    },
+    contentImages: {
+      setup: {
+        file: "product-photography-and-content-on-a-budget-setup.webp",
+        mimeType: "image/webp",
+        alt: "A woman in a headscarf and white dress arranging small wooden toys on a kraft paper backdrop beside a window, with a ring light and a phone on a tripod nearby",
+        altTranslations: {
+          zh: "一位戴头巾、身穿白色连衣裙的女士在窗边的牛皮纸背景上摆放小木制玩具，旁边有环形灯和架在三脚架上的手机",
+          ms: "Seorang wanita bertudung dan berbaju putih menyusun mainan kayu kecil di atas latar kertas kraf di tepi tingkap, dengan lampu cincin dan telefon pada tripod berhampiran",
+        },
+        after: "Set up a simple photo corner before you buy any equipment.",
+        afterTranslations: {
+          zh: "在购买任何器材之前，先搭一个简单的拍照角落。",
+          ms: "Sediakan sudut foto yang ringkas sebelum anda membeli sebarang peralatan.",
+        },
+      },
+    },
+    excerpt:
+      "Customers judge a product by how it looks before they ever touch it. This guide helps Malaysian SMEs plan photos and short videos, build a simple phone-and-window-light setup, style and edit consistently, write clear captions and listings, respect music and image copyright, and keep a content calendar they can actually follow.",
+    body: `Most customers meet your product on a screen before they meet it in person. A dark, blurry photo makes good food look stale, good clothes look cheap, and a good service look careless. A clear, honest photo does the opposite, and it costs far less than most owners expect.
+
+You do not need a studio or a professional camera. A recent phone, a window, and a few habits are enough to produce content that sells, as long as you are consistent and honest about what you show.
+
+This is general information, not legal advice. Platform rules, music licensing, and copyright practice change over time, and some details in this guide may be out of date. Confirm current requirements with the platform you use and the relevant licensing bodies before you publish.
+
+## 1. Understand why visuals sell
+
+### Photos carry the first impression
+On marketplaces, social media, and your own page, the picture is often all a buyer sees before deciding to scroll on or tap. A strong picture earns the next three seconds of attention.
+
+### Honest beats polished
+Photos that look nothing like the real product lead to complaints and returns. Show true colour, size, and condition, and use styling to help, not to mislead.
+
+### Match the content to the decision
+A buyer choosing a cake wants to see the cut slice. A buyer choosing a sofa wants to see the size in a room. Think about the question each picture should answer.
+
+### Content is more than product shots
+Behind-the-scenes clips, short how-to videos, and customer moments build trust. Our guide on building a brand on a small budget explains how a consistent look supports it.
+
+### Start with what you already have
+Look at your best-selling items and the questions customers ask most. These tell you what to photograph first.
+
+## 2. Plan your shots
+
+### List the shots every product needs
+For most products, aim for a clear front view, a close-up of the detail, a size reference, and one picture in use. Services can show the team, the workspace, and finished results.
+
+### Write a simple shot list
+A short list kept on your phone saves time and keeps your content consistent across products.
+
+### Batch your work
+Photograph several items in one session instead of one at a time. Setup is the slow part, so make it count.
+
+### Choose the right time of day
+Soft daylight from a window, away from harsh midday sun, makes most products look better than a camera flash.
+
+### Plan for the platforms you use
+Square, vertical, and wide pictures suit different places. Check the sizes your platform recommends, and leave space around the product so that it can be cropped.
+
+## 3. Build a simple setup
+
+### Build a photo corner
+Set up a simple photo corner before you buy any equipment. Place a table next to a window, add a plain background such as paper or fabric, and keep clutter out of the frame. This costs almost nothing and often beats expensive gear used badly.
+
+### Use your phone well
+Clean the lens, switch on the grid, and tap to focus on the product. Hold the phone steady or use a small tripod, and avoid digital zoom because it lowers quality.
+
+### Control the light
+Place the product so that the window light falls from the side. Use a white card or sheet to bounce light into the shadows, and turn off mixed indoor lights that tint the colour.
+
+### Pick backgrounds that suit the product
+White or neutral backgrounds are clean and work for listings. Textured surfaces, such as wood or cloth, suit lifestyle pictures. Avoid anything that competes with the product.
+
+### Add equipment only when it solves a problem
+A tripod, a small ring light, or a lightbox can help later, but buy them when you know what is missing.
+
+## 4. Style your product honestly
+
+### Keep the product the hero
+Use a few simple props that make sense, such as a cup beside a pastry, and remove anything that distracts.
+
+### Show scale and context
+Place a hand, a coin, or a common object near the product, and show it in use, so that buyers understand size.
+
+### Prepare the product
+Clean it, iron it, and fix small flaws before shooting. For food, shoot quickly while it looks fresh.
+
+### Show true colour
+Check that the photo matches the real colour, especially for clothing and cosmetics. Colour mismatches are a common cause of returns.
+
+### Be careful with people and places
+Ask permission before showing customers, staff, or other people's property, and avoid showing private information in the background.
+
+## 5. Shoot short videos
+
+### Keep it short and clear
+A ten- to thirty-second clip that shows one idea, such as packing an order or showing a finished item from several angles, is easier to make and to watch.
+
+### Hold the phone vertically for mobile platforms
+Many short-video platforms favour vertical footage, so check what your platform recommends.
+
+### Capture clear sound
+Record in a quiet place, speak close to the phone, and avoid background noise. Captions help viewers who watch without sound.
+
+### Show the process
+Behind-the-scenes clips, such as preparing, packing, or repairing, show care and skill, and build trust more than polished adverts.
+
+### Think about the first few seconds
+Start with the most interesting moment, then explain. Avoid long intros.
+
+## 6. Write captions and listings that sell
+
+### Write for the buyer's questions
+Answer what customers ask: size, material, price, how to order, delivery, and opening hours. Our guide on writing a product description and listing explains the structure.
+
+### Use clear, simple language
+Write in the language your customers use, and consider offering key details in more than one. Our guide on serving a multicultural market and tourists explains how.
+
+### Add a clear next step
+Tell the reader what to do: message you, tap to buy, or visit the shop. Include your contact details and location.
+
+### Be accurate about claims
+Do not exaggerate or promise results you cannot prove. Our guide on advertising claims and consumer protection explains what to avoid.
+
+### Use hashtags and keywords sensibly
+A few relevant terms help people find you, but long lists of unrelated tags look careless.
+
+## 7. Edit, stay consistent, and respect copyright
+
+### Edit lightly
+Crop, straighten, and adjust brightness. Heavy filters can change the product's colour, so compare the edit with the real item.
+
+### Keep a consistent look
+Use similar backgrounds, lighting, and tones, so that your page looks like one brand. Our guide on building a brand on a small budget explains how.
+
+### Use only music and images you may use
+Popular songs, stock photos, and other people's pictures are usually protected by copyright. In Malaysia, several licensing bodies, including MACP, PPM, RPM, and PRISM, handle music rights, and using music in business videos may need permission or a licence depending on how and where it is used. Fees and categories change, so ask the licensing bodies or a lawyer about your case. Where possible, use music and images you have created or have the right to use.
+
+### Ask before using customer photos
+Get clear permission before sharing a customer's picture or review, and give credit if they ask.
+
+### Keep your originals
+Store the original files and edits in an organised folder, and back them up. Our guide on protecting your business data explains simple backups.
+
+> A photo is a promise: if the product that arrives matches the picture, you earn the next order, and if it does not, no filter will rescue the review.
+
+## 8. Build a content calendar you can keep
+
+### Pick a realistic rhythm
+Two or three good posts a week that you can keep up beat a daily schedule that collapses after two weeks.
+
+### Plan around your selling seasons
+Schedule content for festive periods, sales, and new product launches. Our guide on planning for festive peaks and slow seasons explains how to prepare.
+
+### Reuse and repurpose
+Turn one photo session into product shots, a short video, and a few captions. Reuse your best content with new captions.
+
+### Track what works
+Note which posts bring messages, orders, and visits, and make more of those. Our guide on tracking business performance explains simple numbers to follow.
+
+### Know when to ask for help
+If photography is not your strength, a freelance photographer or editor can create a batch of images for you to reuse. You can [browse the directory](/en) for photographers and designers near you, and [create a free business listing](/en/signup) so that customers can find your business.
+
+## Common mistakes Malaysian SMEs make with photos and content
+
+- **Using dark, cluttered, or misleading photos.** Customers cannot judge what they cannot see, so use window light, a clean background, and true colour.
+- **Using music or images you have no right to use.** Takedowns and claims can follow, so use content you created or have permission to use, and check licensing for business videos.
+- **Posting in bursts and then disappearing.** Inconsistent content loses attention, so choose a rhythm you can keep and plan ahead.
+
+## Where to start
+
+- **This week:** Set up a photo corner by a window and photograph your five best-selling items.
+- **Next:** Write a short shot list and update your listings with clear photos and honest captions.
+- **Then:** Record a few short videos of your process, and check that any music you use is allowed.
+- **Every quarter:** Review which content brought orders, refresh old photos, and plan content for the coming season.
+
+Good content does not require expensive tools. It requires clear light, honest pictures, and the habit of showing up regularly, and every one of those is within reach of a small business.`,
+    faqs: [
+      {
+        question: "Do I need a professional camera to take good product photos?",
+        answer:
+          "No. A recent phone, a window for soft daylight, a plain background, and a steady hand are enough. Clean the lens, avoid digital zoom, and add equipment only when you know what problem it solves.",
+      },
+      {
+        question: "How do I make my photos look consistent?",
+        answer:
+          "Use similar backgrounds, lighting, and tones, and edit lightly in the same way each time. A simple shot list kept on your phone helps keep every product photographed in the same style.",
+      },
+      {
+        question: "What shots should I take of each product?",
+        answer:
+          "Aim for a clear front view, a close-up of the detail, a size reference, and one picture of the product in use. Services can show the team, the workspace, and finished results.",
+      },
+      {
+        question: "How long should my short videos be?",
+        answer:
+          "Ten to thirty seconds is a good starting point, showing one idea such as packing an order or a finished item from several angles. Start with the most interesting moment, record clear sound, and add captions.",
+      },
+      {
+        question: "Can I use popular music in my business videos?",
+        answer:
+          "Be careful. Music is usually protected by copyright, and in Malaysia several licensing bodies, including MACP, PPM, RPM, and PRISM, handle different rights. Using music in business videos may need permission or a licence depending on how and where it is used, and fees and categories change, so ask the licensing bodies or a lawyer. Where possible, use music you have the right to use.",
+      },
+      {
+        question: "Can I post photos of customers or their reviews?",
+        answer:
+          "Ask for clear permission first, give credit if they ask, and avoid showing private information in the background. It protects both your customers and your reputation.",
+      },
+      {
+        question: "What should I write in a caption or listing?",
+        answer:
+          "Answer the questions buyers ask: size, material, price, how to order, delivery, and opening hours. Use clear language, be accurate about claims, add a clear next step, and include your contact details.",
+      },
+      {
+        question: "How often should I post?",
+        answer:
+          "Choose a rhythm you can keep, such as two or three good posts a week. Plan around festive periods and launches, reuse your best content, and track which posts bring messages and orders.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "低预算的产品摄影与内容创作：马来西亚中小企业的照片、短视频与商品列表",
+        excerpt:
+          "顾客在触摸产品之前，就已经凭外观来评判它。本指南帮助马来西亚中小企业规划照片和短视频，用手机和窗边自然光搭建简单的拍摄环境，保持一致的造型和后期风格，写出清楚的文案和商品列表，尊重音乐和图片的版权，并维持一份真正做得到的内容日历。",
+        body: `大多数顾客是先在屏幕上遇见您的产品，然后才在现实中遇见它。一张昏暗模糊的照片，会让好食物看起来不新鲜，让好衣服看起来廉价，让好服务看起来马虎。一张清楚而诚实的照片则恰恰相反，而且成本远低于大多数企业主的预期。
+
+您不需要摄影棚或专业相机。一部较新的手机、一扇窗和几个习惯，就足以制作出能促进销售的内容，只要您保持一致并诚实地展示所拍摄的东西。
+
+本文仅提供一般信息，并非法律意见。平台规则、音乐授权和版权实务会随时间变化，本指南的部分细节可能已经过时。在发布之前，请向您使用的平台和相关授权机构确认现行要求。
+
+## 1. 了解视觉为什么能促进销售
+
+### 照片承载第一印象
+在市集平台、社交媒体和您自己的页面上，买家在决定继续滑动还是点击之前，往往只看到那张图片。一张出色的图片能赢得接下来的三秒钟注意力。
+
+### 诚实胜过精美
+与真实产品毫不相像的照片会导致投诉和退货。请展示真实的颜色、尺寸和状态，并用造型来帮助，而不是误导。
+
+### 让内容配合决策
+挑选蛋糕的买家想看到切开的一块。挑选沙发的买家想看到它在房间里的大小。想想每一张图片应该回答什么问题。
+
+### 内容不只是产品照
+幕后花絮、简短的教学视频和顾客的瞬间可以建立信任。我们关于以小预算打造品牌的指南解释了一致的外观如何支持这一点。
+
+### 从您已有的东西开始
+看看您最畅销的商品和顾客最常问的问题。这些会告诉您应该先拍什么。
+
+## 2. 规划您的镜头
+
+### 列出每件产品都需要的镜头
+对大多数产品，目标是一张清楚的正面图、一张细节特写、一张尺寸参照，以及一张使用中的照片。服务业可以展示团队、工作空间和完成的成果。
+
+### 写一份简单的拍摄清单
+手机里保存一份简短的清单可以节省时间，并让各产品的内容保持一致。
+
+### 分批进行
+一次拍摄好几件商品，而不是一件一件地拍。布置是最耗时的部分，所以要让它值得。
+
+### 选择合适的时间
+避开正午的强烈阳光、来自窗户的柔和日光，会让大多数产品比相机闪光灯下更好看。
+
+### 为您使用的平台做规划
+正方形、竖幅和横幅的图片适合不同的地方。请查看您的平台建议的尺寸，并在产品周围留出空间，以便裁剪。
+
+## 3. 搭建简单的拍摄环境
+
+### 搭一个拍照角落
+在购买任何器材之前，先搭一个简单的拍照角落。把桌子放在窗边，加上纸张或布料之类的素色背景，并让杂物不入镜。这几乎不花钱，而且往往胜过使用不当的昂贵器材。
+
+### 善用您的手机
+擦净镜头，打开网格线，点按以对焦在产品上。把手机拿稳或使用小三脚架，并避免使用数码变焦，因为它会降低画质。
+
+### 控制光线
+摆放产品，让窗光从侧面照来。用白卡纸或床单把光反射进阴影处，并关掉会让颜色偏色的室内混合灯光。
+
+### 选择适合产品的背景
+白色或中性色的背景干净，适合商品列表。木头或布料等有质感的表面适合生活风格的图片。避免任何与产品争夺注意力的东西。
+
+### 只有在解决问题时才添置器材
+三脚架、小型环形灯或灯箱日后会有帮助，但请在您知道缺什么时再买。
+
+## 4. 诚实地为产品造型
+
+### 让产品当主角
+使用几件合理的简单道具，例如糕点旁的一个杯子，并移除任何会分散注意力的东西。
+
+### 展示比例和情境
+在产品旁放一只手、一枚硬币或一件常见的物品，并展示使用中的样子，让买家了解尺寸。
+
+### 准备好产品
+拍摄前先清洁、熨平并修复小瑕疵。食物则要趁看起来新鲜时快速拍摄。
+
+### 展示真实的颜色
+检查照片是否与真实颜色相符，尤其是衣服和化妆品。颜色不符是退货的常见原因。
+
+### 对人和场所要小心
+在拍摄顾客、员工或他人的财物之前先征得许可，并避免在背景中露出私人资料。
+
+## 5. 拍摄短视频
+
+### 保持简短清楚
+十到三十秒的短片只展示一个想法，例如打包订单或从多个角度展示成品，更容易制作，也更容易观看。
+
+### 为手机平台竖着拿手机
+许多短视频平台偏好竖屏画面，所以请查看您的平台建议。
+
+### 收录清晰的声音
+在安静的地方录制，靠近手机说话，并避免背景噪音。字幕对不开声音观看的人很有帮助。
+
+### 展示过程
+准备、打包或修理等幕后花絮展现用心和技艺，比精致的广告更能建立信任。
+
+### 想想最初的几秒钟
+从最有趣的时刻开始，然后再解释。避免冗长的开场。
+
+## 6. 写出能促进销售的文案和商品列表
+
+### 为买家的问题而写
+回答顾客会问的问题：尺寸、材质、价格、如何订购、送货和营业时间。我们关于撰写产品描述和商品列表的指南解释了结构。
+
+### 使用清楚简单的语言
+用您的顾客使用的语言书写，并考虑以多种语言提供关键细节。我们关于服务多元文化市场与游客的指南解释了如何做。
+
+### 加上清楚的下一步
+告诉读者该做什么：发讯息给您、点击购买，或到店里来。请附上您的联络方式和地点。
+
+### 对宣称保持准确
+不要夸大，也不要承诺您无法证明的成果。我们关于广告宣称和消费者保护的指南解释了应该避免什么。
+
+### 合理使用标签和关键字
+几个相关的词有助于别人找到您，但一长串不相关的标签看起来很马虎。
+
+## 7. 后期、保持一致并尊重版权
+
+### 轻度后期
+裁剪、校正水平并调整亮度。过重的滤镜可能改变产品的颜色，所以请把后期结果与真实物品比对。
+
+### 保持一致的外观
+使用相似的背景、光线和色调，让您的页面看起来像一个品牌。我们关于以小预算打造品牌的指南解释了如何做。
+
+### 只使用您可以使用的音乐和图片
+流行歌曲、图库照片和他人的图片通常受版权保护。在马来西亚，包括MACP、PPM、RPM和PRISM在内的数个授权机构处理音乐权利，在商业视频中使用音乐，视使用的方式和地点，可能需要许可或授权。费用和类别会变化，所以请向授权机构或律师询问您的情况。在可能的情况下，请使用您自己创作或有权使用的音乐和图片。
+
+### 使用顾客照片前先询问
+在分享顾客的照片或评价之前先取得明确的许可，并在他们要求时注明出处。
+
+### 保存您的原始文件
+把原始文件和后期版本存放在有条理的文件夹里，并做好备份。我们关于保护企业数据的指南解释了简单的备份方法。
+
+> 一张照片就是一个承诺：如果收到的产品与图片相符，您就赢得下一张订单；如果不符，再多的滤镜也挽救不了评价。
+
+## 8. 建立您能坚持的内容日历
+
+### 选择现实的节奏
+每星期两三篇您能坚持的好帖子，胜过两个星期后就崩溃的每日计划。
+
+### 配合您的销售季节规划
+为节庆期间、促销和新产品推出安排内容。我们关于规划节庆旺季与淡季的指南解释了如何准备。
+
+### 重复利用和改编
+把一次拍摄变成产品照、一段短视频和几则文案。以新的文案重复使用您最好的内容。
+
+### 追踪什么有效
+记下哪些帖子带来讯息、订单和到访，并多做那些。我们关于追踪业务表现的指南解释了要跟踪的简单数字。
+
+### 知道何时求助
+如果摄影不是您的强项，自由摄影师或剪辑师可以为您制作一批可重复使用的图片。您可以[浏览名录](/zh)寻找附近的摄影师和设计师，并[创建免费商家列表](/zh/signup)，让顾客找到您的业务。
+
+## 马来西亚中小企业在照片和内容方面常犯的错误
+
+- **使用昏暗、杂乱或有误导性的照片。** 顾客无法判断他们看不见的东西，所以请使用窗光、干净的背景和真实的颜色。
+- **使用您无权使用的音乐或图片。** 可能招来下架和索偿，所以请使用您自己创作或获准使用的内容，并查明商业视频的授权。
+- **一阵猛发然后消失。** 不一致的内容会失去关注，所以请选择您能坚持的节奏并提前规划。
+
+## 从哪里开始
+
+- **本周：** 在窗边搭一个拍照角落，并拍摄您最畅销的五件商品。
+- **接着：** 写一份简短的拍摄清单，并以清楚的照片和诚实的文案更新您的商品列表。
+- **然后：** 录制几段展示您工作过程的短视频，并确认您使用的任何音乐是被允许的。
+- **每季度：** 检讨哪些内容带来订单，更新旧照片，并为即将到来的季节规划内容。
+
+好的内容不需要昂贵的工具。它需要清晰的光线、诚实的图片和定期出现的习惯，而这些小企业都做得到。`,
+        faqs: [
+          {
+            question: "我需要专业相机才能拍出好的产品照吗？",
+            answer:
+              "不需要。一部较新的手机、一扇提供柔和日光的窗、素色背景和一双稳定的手就足够了。擦净镜头，避免数码变焦，并且只有在知道器材能解决什么问题时才添置。",
+          },
+          {
+            question: "我如何让我的照片看起来一致？",
+            answer:
+              "使用相似的背景、光线和色调，并每次以相同的方式轻度后期。手机里保存一份简单的拍摄清单，有助于让每件产品都以相同的风格拍摄。",
+          },
+          {
+            question: "每件产品应该拍哪些镜头？",
+            answer:
+              "目标是一张清楚的正面图、一张细节特写、一张尺寸参照，以及一张使用中的照片。服务业可以展示团队、工作空间和完成的成果。",
+          },
+          {
+            question: "我的短视频应该多长？",
+            answer:
+              "十到三十秒是不错的起点，展示一个想法，例如打包订单或从多个角度展示成品。从最有趣的时刻开始，录下清晰的声音，并加上字幕。",
+          },
+          {
+            question: "我可以在商业视频中使用流行音乐吗？",
+            answer:
+              "要小心。音乐通常受版权保护，在马来西亚，包括MACP、PPM、RPM和PRISM在内的数个授权机构处理不同的权利。在商业视频中使用音乐，视使用的方式和地点，可能需要许可或授权，费用和类别也会变化，所以请询问授权机构或律师。在可能的情况下，请使用您有权使用的音乐。",
+          },
+          {
+            question: "我可以发布顾客的照片或评价吗？",
+            answer:
+              "请先征得明确的许可，在他们要求时注明出处，并避免在背景中露出私人资料。这既保护您的顾客，也保护您的声誉。",
+          },
+          {
+            question: "我在文案或商品列表中应该写什么？",
+            answer:
+              "回答买家会问的问题：尺寸、材质、价格、如何订购、送货和营业时间。使用清楚的语言，对宣称保持准确，加上清楚的下一步，并附上您的联络方式。",
+          },
+          {
+            question: "我应该多常发帖？",
+            answer:
+              "选择您能坚持的节奏，例如每星期两三篇好帖子。围绕节庆期间和新产品推出来规划，重复利用您最好的内容，并追踪哪些帖子带来讯息和订单。",
+          },
+        ],
+      },
+      ms: {
+        title: "Fotografi Produk dan Penciptaan Kandungan dengan Bajet Rendah: Foto, Video Pendek dan Penyenaraian untuk PKS Malaysia",
+        excerpt:
+          "Pelanggan menilai produk daripada rupanya sebelum mereka menyentuhnya. Panduan ini membantu PKS Malaysia merancang foto dan video pendek, membina persediaan ringkas dengan telefon dan cahaya tingkap, menggayakan dan menyunting secara konsisten, menulis kapsyen dan penyenaraian yang jelas, menghormati hak cipta muzik dan imej, dan mengekalkan kalendar kandungan yang benar-benar boleh diikuti.",
+        body: `Kebanyakan pelanggan bertemu produk anda di skrin sebelum bertemu dengannya secara bersemuka. Foto yang gelap dan kabur membuat makanan yang baik kelihatan basi, pakaian yang baik kelihatan murah, dan perkhidmatan yang baik kelihatan cuai. Foto yang jelas dan jujur melakukan sebaliknya, dan kosnya jauh lebih rendah daripada yang dijangka kebanyakan pemilik.
+
+Anda tidak memerlukan studio atau kamera profesional. Telefon yang agak baharu, sebuah tingkap dan beberapa tabiat sudah memadai untuk menghasilkan kandungan yang menjual, selagi anda konsisten dan jujur tentang apa yang anda tunjukkan.
+
+Ini maklumat umum, bukan nasihat undang-undang. Peraturan platform, pelesenan muzik dan amalan hak cipta berubah dari semasa ke semasa, dan sebahagian butiran dalam panduan ini mungkin sudah lapuk. Sahkan keperluan semasa dengan platform yang anda gunakan dan badan pelesenan berkaitan sebelum anda menerbitkan.
+
+## 1. Fahami mengapa visual menjual
+
+### Foto membawa kesan pertama
+Di pasar, media sosial dan halaman anda sendiri, gambar sering menjadi satu-satunya perkara yang dilihat pembeli sebelum memutuskan untuk menggulung atau mengetik. Gambar yang kuat memenangi tiga saat perhatian seterusnya.
+
+### Jujur mengatasi bergaya
+Foto yang tidak serupa langsung dengan produk sebenar membawa kepada aduan dan pemulangan. Tunjukkan warna, saiz dan keadaan yang sebenar, dan gunakan penggayaan untuk membantu, bukan untuk mengelirukan.
+
+### Padankan kandungan dengan keputusan
+Pembeli yang memilih kek mahu melihat sepotong yang dipotong. Pembeli yang memilih sofa mahu melihat saiznya dalam bilik. Fikirkan soalan yang patut dijawab oleh setiap gambar.
+
+### Kandungan lebih daripada foto produk
+Klip di sebalik tabir, video cara-cara pendek dan detik pelanggan membina kepercayaan. Panduan kami tentang membina jenama dengan bajet kecil menerangkan bagaimana rupa yang konsisten menyokongnya.
+
+### Mulakan dengan apa yang anda sudah ada
+Lihat barang yang paling laris dan soalan yang paling kerap ditanya pelanggan. Ini memberitahu anda apa yang perlu difoto dahulu.
+
+## 2. Rancang bidikan anda
+
+### Senaraikan bidikan yang diperlukan setiap produk
+Untuk kebanyakan produk, sasarkan pandangan depan yang jelas, gambar dekat butiran, rujukan saiz dan satu gambar semasa digunakan. Perkhidmatan boleh menunjukkan pasukan, ruang kerja dan hasil siap.
+
+### Tulis senarai bidikan yang ringkas
+Senarai pendek yang disimpan pada telefon menjimatkan masa dan memastikan kandungan anda konsisten merentas produk.
+
+### Lakukan secara berkelompok
+Foto beberapa barang dalam satu sesi dan bukan satu demi satu. Persediaan ialah bahagian yang paling lambat, jadi pastikan ia berbaloi.
+
+### Pilih waktu yang sesuai
+Cahaya siang yang lembut dari tingkap, jauh dari matahari tengah hari yang terik, menjadikan kebanyakan produk kelihatan lebih baik daripada denyar kamera.
+
+### Rancang untuk platform yang anda gunakan
+Gambar segi empat sama, menegak dan lebar sesuai di tempat berbeza. Semak saiz yang disyorkan platform anda, dan tinggalkan ruang di sekeliling produk supaya ia boleh dipangkas.
+
+## 3. Bina persediaan yang ringkas
+
+### Bina sudut foto
+Sediakan sudut foto yang ringkas sebelum anda membeli sebarang peralatan. Letakkan meja di sebelah tingkap, tambah latar biasa seperti kertas atau kain, dan jauhkan kekusutan daripada bingkai. Ini hampir tidak berkos dan sering mengatasi peralatan mahal yang digunakan dengan buruk.
+
+### Gunakan telefon anda dengan baik
+Bersihkan kanta, hidupkan grid, dan ketik untuk memfokus pada produk. Pegang telefon dengan mantap atau gunakan tripod kecil, dan elakkan zum digital kerana ia menurunkan kualiti.
+
+### Kawal cahaya
+Letakkan produk supaya cahaya tingkap jatuh dari sisi. Gunakan kad atau kain putih untuk memantulkan cahaya ke dalam bayang, dan matikan lampu dalaman campuran yang mewarnakan imej.
+
+### Pilih latar yang sesuai dengan produk
+Latar putih atau neutral bersih dan sesuai untuk penyenaraian. Permukaan bertekstur, seperti kayu atau kain, sesuai untuk gambar gaya hidup. Elakkan apa-apa yang bersaing dengan produk.
+
+### Tambah peralatan hanya apabila ia menyelesaikan masalah
+Tripod, lampu cincin kecil atau kotak cahaya boleh membantu kemudian, tetapi beli apabila anda tahu apa yang kurang.
+
+## 4. Gayakan produk anda dengan jujur
+
+### Jadikan produk sebagai wira
+Gunakan beberapa prop ringkas yang bersesuaian, seperti cawan di sebelah pastri, dan buang apa-apa yang mengalih perhatian.
+
+### Tunjukkan skala dan konteks
+Letakkan tangan, syiling atau barang biasa berhampiran produk, dan tunjukkannya semasa digunakan, supaya pembeli memahami saiz.
+
+### Sediakan produk
+Bersihkan, seterika dan betulkan kecacatan kecil sebelum merakam. Untuk makanan, rakam dengan cepat semasa ia kelihatan segar.
+
+### Tunjukkan warna sebenar
+Semak bahawa foto sepadan dengan warna sebenar, terutamanya untuk pakaian dan kosmetik. Warna yang tidak sepadan ialah punca pemulangan yang biasa.
+
+### Berhati-hati dengan orang dan tempat
+Minta kebenaran sebelum menunjukkan pelanggan, pekerja atau harta orang lain, dan elakkan menunjukkan maklumat peribadi di latar belakang.
+
+## 5. Rakam video pendek
+
+### Pastikan ia pendek dan jelas
+Klip sepuluh hingga tiga puluh saat yang menunjukkan satu idea, seperti membungkus pesanan atau menunjukkan barang siap dari beberapa sudut, lebih mudah dibuat dan ditonton.
+
+### Pegang telefon secara menegak untuk platform mudah alih
+Banyak platform video pendek mengutamakan rakaman menegak, jadi semak apa yang disyorkan platform anda.
+
+### Rakam bunyi yang jelas
+Rakam di tempat yang senyap, bercakap dekat dengan telefon, dan elakkan bunyi latar. Sari kata membantu penonton yang menonton tanpa bunyi.
+
+### Tunjukkan proses
+Klip di sebalik tabir, seperti menyediakan, membungkus atau membaiki, menunjukkan ketelitian dan kemahiran, dan membina kepercayaan lebih daripada iklan yang digilap.
+
+### Fikirkan beberapa saat pertama
+Mulakan dengan detik yang paling menarik, kemudian terangkan. Elakkan pengenalan yang panjang.
+
+## 6. Tulis kapsyen dan penyenaraian yang menjual
+
+### Tulis untuk soalan pembeli
+Jawab apa yang ditanya pelanggan: saiz, bahan, harga, cara memesan, penghantaran dan waktu operasi. Panduan kami tentang menulis penerangan produk dan penyenaraian menerangkan strukturnya.
+
+### Gunakan bahasa yang jelas dan mudah
+Tulis dalam bahasa yang digunakan pelanggan anda, dan pertimbangkan menawarkan butiran utama dalam lebih daripada satu bahasa. Panduan kami tentang melayani pasaran pelbagai budaya dan pelancong menerangkan caranya.
+
+### Tambah langkah seterusnya yang jelas
+Beritahu pembaca apa yang perlu dilakukan: menghubungi anda, mengetik untuk membeli, atau melawat kedai. Sertakan butiran hubungan dan lokasi anda.
+
+### Tepat tentang dakwaan
+Jangan melebih-lebihkan atau menjanjikan hasil yang tidak dapat anda buktikan. Panduan kami tentang dakwaan pengiklanan dan perlindungan pengguna menerangkan apa yang perlu dielakkan.
+
+### Gunakan tanda pagar dan kata kunci dengan bijak
+Beberapa istilah berkaitan membantu orang menemui anda, tetapi senarai panjang teg yang tidak berkaitan kelihatan cuai.
+
+## 7. Sunting, kekal konsisten dan hormati hak cipta
+
+### Sunting dengan ringan
+Pangkas, luruskan dan laraskan kecerahan. Penapis yang berat boleh mengubah warna produk, jadi bandingkan suntingan dengan barang sebenar.
+
+### Kekalkan rupa yang konsisten
+Gunakan latar, pencahayaan dan warna yang serupa, supaya halaman anda kelihatan seperti satu jenama. Panduan kami tentang membina jenama dengan bajet kecil menerangkan caranya.
+
+### Gunakan hanya muzik dan imej yang boleh anda gunakan
+Lagu popular, foto stok dan gambar orang lain biasanya dilindungi hak cipta. Di Malaysia, beberapa badan pelesenan, termasuk MACP, PPM, RPM dan PRISM, mengendalikan hak muzik, dan menggunakan muzik dalam video perniagaan mungkin memerlukan kebenaran atau lesen bergantung pada cara dan tempat ia digunakan. Fi dan kategori berubah, jadi tanya badan pelesenan atau peguam tentang kes anda. Jika boleh, gunakan muzik dan imej yang anda cipta sendiri atau berhak menggunakannya.
+
+### Minta kebenaran sebelum menggunakan foto pelanggan
+Dapatkan kebenaran yang jelas sebelum berkongsi gambar atau ulasan pelanggan, dan beri kredit jika mereka meminta.
+
+### Simpan fail asal anda
+Simpan fail asal dan suntingan dalam folder yang tersusun, dan buat sandaran. Panduan kami tentang melindungi data perniagaan anda menerangkan sandaran yang mudah.
+
+> Foto ialah janji: jika produk yang tiba sepadan dengan gambar, anda memenangi pesanan seterusnya, dan jika tidak, tiada penapis yang dapat menyelamatkan ulasan itu.
+
+## 8. Bina kalendar kandungan yang boleh anda kekalkan
+
+### Pilih rentak yang realistik
+Dua atau tiga siaran yang baik seminggu yang boleh anda teruskan mengatasi jadual harian yang runtuh selepas dua minggu.
+
+### Rancang sekitar musim jualan anda
+Jadualkan kandungan untuk tempoh perayaan, jualan dan pelancaran produk baharu. Panduan kami tentang merancang untuk puncak perayaan dan musim perlahan menerangkan cara bersedia.
+
+### Guna semula dan ubah suai
+Jadikan satu sesi foto sebagai foto produk, video pendek dan beberapa kapsyen. Guna semula kandungan terbaik anda dengan kapsyen baharu.
+
+### Jejaki apa yang berkesan
+Catat siaran mana yang membawa mesej, pesanan dan lawatan, dan buat lebih banyak yang sebegitu. Panduan kami tentang menjejaki prestasi perniagaan menerangkan angka mudah untuk diikuti.
+
+### Ketahui bila hendak meminta bantuan
+Jika fotografi bukan kekuatan anda, jurugambar atau penyunting bebas boleh menghasilkan sekumpulan imej untuk anda guna semula. Anda boleh [layari direktori](/ms) untuk jurugambar dan pereka berhampiran anda, dan [cipta penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan dapat menemui perniagaan anda.
+
+## Kesilapan biasa PKS Malaysia dengan foto dan kandungan
+
+- **Menggunakan foto yang gelap, bersepah atau mengelirukan.** Pelanggan tidak dapat menilai apa yang tidak dapat mereka lihat, jadi gunakan cahaya tingkap, latar bersih dan warna sebenar.
+- **Menggunakan muzik atau imej yang anda tiada hak untuk menggunakannya.** Penurunan dan tuntutan boleh menyusul, jadi gunakan kandungan yang anda cipta atau ada kebenaran menggunakannya, dan semak pelesenan untuk video perniagaan.
+- **Menyiar secara bertubi-tubi kemudian menghilang.** Kandungan yang tidak konsisten kehilangan perhatian, jadi pilih rentak yang boleh anda kekalkan dan rancang lebih awal.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Sediakan sudut foto di tepi tingkap dan foto lima barang paling laris anda.
+- **Seterusnya:** Tulis senarai bidikan yang pendek dan kemas kini penyenaraian anda dengan foto yang jelas dan kapsyen yang jujur.
+- **Kemudian:** Rakam beberapa video pendek proses anda, dan semak bahawa mana-mana muzik yang anda gunakan dibenarkan.
+- **Setiap suku tahun:** Semak kandungan mana yang membawa pesanan, segarkan foto lama, dan rancang kandungan untuk musim yang akan datang.
+
+Kandungan yang baik tidak memerlukan alat yang mahal. Ia memerlukan cahaya yang jelas, gambar yang jujur dan tabiat muncul secara tetap, dan semuanya dalam jangkauan perniagaan kecil.`,
+        faqs: [
+          {
+            question: "Adakah saya memerlukan kamera profesional untuk mengambil foto produk yang baik?",
+            answer:
+              "Tidak. Telefon yang agak baharu, sebuah tingkap untuk cahaya siang yang lembut, latar biasa dan tangan yang mantap sudah memadai. Bersihkan kanta, elakkan zum digital, dan tambah peralatan hanya apabila anda tahu masalah apa yang diselesaikannya.",
+          },
+          {
+            question: "Bagaimanakah saya menjadikan foto saya kelihatan konsisten?",
+            answer:
+              "Gunakan latar, pencahayaan dan warna yang serupa, dan sunting dengan ringan dengan cara yang sama setiap kali. Senarai bidikan yang ringkas pada telefon anda membantu memastikan setiap produk difoto dengan gaya yang sama.",
+          },
+          {
+            question: "Bidikan apa yang patut saya ambil untuk setiap produk?",
+            answer:
+              "Sasarkan pandangan depan yang jelas, gambar dekat butiran, rujukan saiz dan satu gambar produk semasa digunakan. Perkhidmatan boleh menunjukkan pasukan, ruang kerja dan hasil siap.",
+          },
+          {
+            question: "Berapa panjang video pendek saya patut?",
+            answer:
+              "Sepuluh hingga tiga puluh saat ialah permulaan yang baik, menunjukkan satu idea seperti membungkus pesanan atau barang siap dari beberapa sudut. Mulakan dengan detik yang paling menarik, rakam bunyi yang jelas, dan tambah sari kata.",
+          },
+          {
+            question: "Bolehkah saya menggunakan muzik popular dalam video perniagaan saya?",
+            answer:
+              "Berhati-hati. Muzik biasanya dilindungi hak cipta, dan di Malaysia beberapa badan pelesenan, termasuk MACP, PPM, RPM dan PRISM, mengendalikan hak yang berbeza. Menggunakan muzik dalam video perniagaan mungkin memerlukan kebenaran atau lesen bergantung pada cara dan tempat ia digunakan, dan fi serta kategori berubah, jadi tanya badan pelesenan atau peguam. Jika boleh, gunakan muzik yang anda berhak gunakan.",
+          },
+          {
+            question: "Bolehkah saya menyiarkan foto pelanggan atau ulasan mereka?",
+            answer:
+              "Minta kebenaran yang jelas dahulu, beri kredit jika mereka meminta, dan elakkan menunjukkan maklumat peribadi di latar belakang. Ia melindungi pelanggan dan reputasi anda.",
+          },
+          {
+            question: "Apakah yang patut saya tulis dalam kapsyen atau penyenaraian?",
+            answer:
+              "Jawab soalan yang ditanya pembeli: saiz, bahan, harga, cara memesan, penghantaran dan waktu operasi. Gunakan bahasa yang jelas, tepat tentang dakwaan, tambah langkah seterusnya yang jelas, dan sertakan butiran hubungan anda.",
+          },
+          {
+            question: "Berapa kerap saya patut menyiar?",
+            answer:
+              "Pilih rentak yang boleh anda kekalkan, seperti dua atau tiga siaran yang baik seminggu. Rancang sekitar tempoh perayaan dan pelancaran, guna semula kandungan terbaik anda, dan jejaki siaran mana yang membawa mesej dan pesanan.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "packaging-and-going-greener-for-malaysian-smes",
+    title: "Choosing Packaging and Going Greener: Practical, Cost-Aware Packaging and Sustainability for Malaysian SMEs",
+    seoTitle: "Packaging and Going Greener for Malaysian SMEs",
+    seoDescription:
+      "How Malaysian SMEs can choose packaging that protects, fits the budget and cuts waste: sizing, labelling, plastic rules, suppliers and honest green claims.",
+    coverImage: {
+      file: "packaging-and-going-greener-cover.webp",
+      mimeType: "image/webp",
+      alt: "A woman in glasses and a rust-coloured kimono jacket folding a peach garment into a cardboard box lined with white tissue paper, with a clothes rail behind her",
+      altTranslations: {
+        zh: "一位戴眼镜、身穿铁锈色和服外套的女士，把一件桃色衣物折好放进铺着白色薄纸的纸箱里，身后是一排衣架",
+        ms: "Seorang wanita berkaca mata dan berjaket kimono warna karat melipat pakaian warna pic ke dalam kotak kadbod yang dialas kertas tisu putih, dengan rak pakaian di belakangnya",
+      },
+    },
+    contentImages: {
+      tissue: {
+        file: "packaging-and-going-greener-tissue.webp",
+        mimeType: "image/webp",
+        alt: "An overhead view of two hands smoothing paper wrapping inside an open brown cardboard box on a pale yellow surface",
+        altTranslations: {
+          zh: "俯视画面：一双手在浅黄色桌面上一个打开的棕色纸箱里抚平纸质包裹",
+          ms: "Pandangan dari atas dua tangan meratakan bungkusan kertas di dalam kotak kadbod perang yang terbuka di atas permukaan kuning pucat",
+        },
+        after: "Protect the product first, and only then think about the look.",
+        afterTranslations: {
+          zh: "先保护好产品，然后才考虑外观。",
+          ms: "Lindungi produk dahulu, dan hanya kemudian fikirkan rupanya.",
+        },
+      },
+    },
+    excerpt:
+      "Packaging protects your product, shapes the first impression, and increasingly affects customers' choices and local rules. This guide helps Malaysian SMEs choose materials and sizes, balance cost against damage and returns, handle labelling basics, cut plastic and waste, work with suppliers, and talk about green efforts without exaggeration.",
+    body: `Packaging is the last thing your business does for a customer and the first thing the customer touches. A box that arrives crushed, a container that leaks, or a bag that tears can undo everything you did right.
+
+At the same time, customers and local authorities are paying more attention to plastic and waste. Getting packaging right means protecting the product, keeping costs under control, and avoiding waste that you will later have to explain.
+
+This is general information, not legal advice. Packaging, labelling, and plastic rules vary by product, state, and local authority and change over time, and some details in this guide may be out of date. Confirm current requirements with the relevant authority and your supplier before you order.
+
+## 1. Understand what packaging does
+
+### Protection comes first
+Packaging exists to get the product to the customer intact, clean, and safe. A damaged item costs you the product, the postage, the replacement, and often the customer.
+
+### Packaging shapes the first impression
+The unboxing moment tells customers whether you care. Tidy, right-sized packaging suggests quality and attention to detail.
+
+### Packaging carries information
+It can show your name, contact details, instructions, and, where required, the label information for your product.
+
+### Packaging affects cost
+Materials, weight, and size change the packaging bill, the shipping charge, and the storage space you need. Our guide on running deliveries explains how size and weight affect shipping.
+
+### Packaging is part of your brand
+Consistent colours, simple stickers, or a handwritten note can build recognition at low cost. Our guide on building a brand on a small budget explains how.
+
+## 2. Start with protection
+
+### Know the risks
+Protect the product first, and only then think about the look. List how your product can be damaged: crushing, moisture, heat, spills, shaking, or contamination. Then choose packaging that deals with each risk before you think about style.
+
+### Test with a real delivery
+Pack a sample, send it to a friend across town or in another state, and see how it arrives. A cheap test beats an expensive complaint.
+
+### Think about heat, humidity, and handling
+Malaysia's climate can soften cardboard, melt coatings, and spoil food. Choose materials that cope with the weather in your area and the time the product will be in transit.
+
+### Pay special attention to fragile and food items
+Fragile goods need cushioning and snug fit. Food needs clean, suitable containers that keep it safe. Our guide on food safety explains basic hygiene.
+
+### Keep a simple damage record
+Note what breaks, leaks, or arrives late. Patterns show which packaging to fix first.
+
+## 3. Choose materials and sizes
+
+### Compare common options
+Cardboard boxes, paper bags, corrugated mailers, glass and plastic containers, and cushioning such as paper or air pillows each suit different products. Compare weight, strength, price, and how easily customers can dispose of or reuse them.
+
+### Match the size to the product
+A box that is too big wastes material, increases shipping charges, and lets the product move. A box that is too small can crush it. Measure your products and choose a small set of standard sizes.
+
+### Standardise to save money
+Using a few sizes lets you buy in bulk, speeds up packing, and reduces storage space.
+
+### Think about reuse and recycling
+Packaging that customers can reuse or easily recycle is more welcome. Avoid mixing materials that cannot be separated, such as paper laminated with plastic.
+
+### Check that it works with your process
+Test how fast your team can pack, how much space the packaging takes, and whether it stacks. Our guide on managing inventory and stock explains how storage affects costs.
+
+## 4. Balance cost, damage, and returns
+
+### Count the true cost of packaging
+Add the price of the material, the time to pack, the shipping charge, and the cost of damage and replacements. The cheapest box is not always the cheapest option overall.
+
+### Spend where it prevents loss
+A little extra cushioning for a fragile, high-value item often costs less than one replacement. Spend less on items that are robust and low-value.
+
+### Avoid over-packaging
+Several layers, large voids, and excess filler cost money and annoy customers. Pack to protect, not to impress.
+
+### Track returns and complaints
+Record how many orders are damaged and why. Use the pattern to decide where better packaging will pay for itself.
+
+### Review prices regularly
+Ask your supplier about volume discounts and compare quotes. Our guide on negotiating with suppliers explains how.
+
+## 5. Handle labelling basics
+
+### Know that labelling depends on the product
+Rules differ for food, cosmetics, medicines, chemicals, and general goods. Ask the relevant authority or your supplier what your product must show before you print.
+
+### Check language and information requirements
+Food labels in Malaysia have been reported to need Bahasa Malaysia or English, but other products and requirements vary, so confirm the current rules for your product. Our guide on halal certification in Malaysia explains how halal claims work.
+
+### Never claim what you cannot support
+Do not print health, halal, or natural claims without the required approvals or evidence. Wrong claims can lead to penalties and lost trust.
+
+### Include useful information
+Put your business name, contact details, product name, and any needed instructions or warnings where customers can see them. Our guide on contracts and terms for small businesses explains why clear terms help.
+
+### Keep records of what you printed
+Store the approved label versions and the date. If a rule changes, you will know what to update.
+
+## 6. Reduce plastic and waste
+
+### Start by reducing, not replacing
+The best packaging is often less packaging. Remove layers you do not need before you switch materials.
+
+### Check the rules where you operate
+Reports in 2025 described a national ban on single-use plastic carrier bags at certain premises and public sites, and some states, such as Perak and Penang, have set their own timelines and exemptions, which have been reported as changing. Rules differ by location, product, and business type, so confirm the current position with your state and local authority.
+
+### Compare alternatives carefully
+Paper, cardboard, reusable containers, and compostable products each have trade-offs in cost, strength, and disposal. A material labelled biodegradable or compostable is not always accepted by local waste systems, so ask your supplier what it means in practice.
+
+### Offer reuse and refill options
+A discount for customers who bring their own container, a return scheme for jars or boxes, or refills can reduce waste and build loyalty. Our guide on building customer loyalty and repeat business explains rewards that work.
+
+### Handle your own waste properly
+Flatten cardboard, separate recyclables, and keep waste tidy. Our guide on environmental compliance and waste management explains wider rules.
+
+> The greenest package is the one you did not need to make, and the cheapest one is usually the same: right-sizing and removing extras saves money and waste together.
+
+## 7. Work with packaging suppliers
+
+### Ask for samples
+Test samples with your own products before ordering, and compare at least two suppliers.
+
+### Be clear about your needs
+Give size, weight, quantity, strength, food-safety needs, and delivery dates. Ask about minimum order quantities and lead times.
+
+### Check claims and certificates
+If a supplier says a product is recyclable, compostable, or food-safe, ask what that means and what evidence supports it.
+
+### Start small before a big order
+Order a small batch first, especially for printed packaging. Mistakes in a large print run are expensive.
+
+### Keep a backup supplier
+Supply problems can stop your orders. Know a second source for your key items. Our guide on supplier relationships explains how to build a reliable network.
+
+## 8. Talk about green efforts honestly and measure results
+
+### Say what you actually did
+Describe specific changes, such as using recycled-content boxes or removing plastic fillers. Avoid vague words that sound good but mean little.
+
+### Avoid exaggerated claims
+Do not call a product "eco-friendly" or "zero waste" unless you can explain and support it. Overstated green claims can mislead customers and damage trust. Our guide on advertising claims and consumer protection explains what to avoid.
+
+### Tell the customer how to dispose of it
+A short note on how to recycle or reuse the packaging helps customers act on your efforts.
+
+### Measure what you save
+Track packaging cost per order, damage rates, and the weight of waste. Our guide on tracking business performance explains simple numbers to follow.
+
+### Improve one change at a time
+Make one change, measure it, and keep what works. If you need help from a packaging supplier or a designer, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so that customers can find your business.
+
+## Common mistakes Malaysian SMEs make with packaging
+
+- **Choosing packaging for looks before protection.** A damaged product costs more than a plain box, so test with a real delivery first.
+- **Making green claims you cannot support.** Vague or inflated claims mislead customers, so describe specific changes and check what labels like biodegradable really mean.
+- **Ignoring local plastic and labelling rules until they apply to you.** Rules differ by state and product and change over time, so check with your local authority before you order.
+
+## Where to start
+
+- **This week:** List how each product can be damaged, and count how many orders arrive damaged.
+- **Next:** Measure your products, choose a few standard sizes, and test a sample delivery.
+- **Then:** Check labelling and plastic rules for your product and state, and compare two suppliers' samples.
+- **Every quarter:** Review damage, cost per order, and waste, and make one improvement.
+
+Good packaging protects the customer's experience and your margin at the same time. Start with protection, cut what you do not need, and tell customers honestly what you have done.`,
+    faqs: [
+      {
+        question: "How do I choose the right packaging for my product?",
+        answer:
+          "List how the product can be damaged, such as crushing, moisture, heat, or spills, then choose materials that deal with each risk. Test a sample delivery before you order in bulk, and match the size to the product.",
+      },
+      {
+        question: "How can I reduce packaging costs without more damage?",
+        answer:
+          "Standardise a few sizes, buy in bulk, remove layers you do not need, and spend extra only where it prevents loss, such as fragile or high-value items. Track damage and returns so that you know where better packaging pays for itself.",
+      },
+      {
+        question: "What do I need to know about labelling?",
+        answer:
+          "Labelling rules depend on the product, such as food, cosmetics, or medicines. Food labels have been reported to need Bahasa Malaysia or English, but other requirements vary, so ask the relevant authority or your supplier before you print, and never claim what you cannot support.",
+      },
+      {
+        question: "Are single-use plastics banned for businesses in Malaysia?",
+        answer:
+          "It depends on where you operate. Reports in 2025 described a national ban on single-use plastic carrier bags at certain premises and public sites, and states such as Perak and Penang have set their own timelines and exemptions that have been reported as changing. Confirm the current position with your state and local authority.",
+      },
+      {
+        question: "Is biodegradable or compostable packaging always better?",
+        answer:
+          "Not always. Local waste systems may not accept such products, and the cost and strength vary. Ask your supplier what the label means in practice, and consider reducing and reusing packaging before replacing it.",
+      },
+      {
+        question: "How do I avoid over-packaging?",
+        answer:
+          "Right-size boxes, remove unnecessary layers and large voids, and pack to protect, not to impress. Standard sizes and a sample delivery test help you find the minimum that works.",
+      },
+      {
+        question: "How should I choose a packaging supplier?",
+        answer:
+          "Ask for samples and test them with your own products, compare at least two suppliers, be clear about size, strength, and quantities, ask what claims such as recyclable or food-safe are based on, and start with a small order. Keep a backup source for your key items.",
+      },
+      {
+        question: "How can I talk about green packaging without exaggerating?",
+        answer:
+          "Describe specific changes, such as using recycled-content boxes or removing plastic fillers, and avoid vague terms like eco-friendly unless you can support them. Tell customers how to recycle or reuse the packaging, and measure what you save.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "选择包装与迈向环保：马来西亚中小企业务实且注重成本的包装与可持续做法",
+        excerpt:
+          "包装保护您的产品，塑造第一印象，并且越来越影响顾客的选择和地方规定。本指南帮助马来西亚中小企业选择材料和尺寸，在成本与破损、退货之间取得平衡，处理标签的基本事项，减少塑料和垃圾，与供应商合作，并在谈论环保努力时不夸大其词。",
+        body: `包装是您的企业为顾客做的最后一件事，也是顾客接触到的第一样东西。一个被压坏的箱子、一个漏水的容器或一个撕破的袋子，可能抵消您所做的一切正确的事。
+
+与此同时，顾客和地方政府越来越关注塑料和垃圾。把包装做好，意味着保护产品、控制成本，并避免日后必须解释的浪费。
+
+本文仅提供一般信息，并非法律意见。包装、标签和塑料的规定因产品、州属和地方政府而异，也会随时间变化，本指南的部分细节可能已经过时。在订货之前，请向相关主管单位和您的供应商确认现行要求。
+
+## 1. 了解包装的作用
+
+### 保护是第一位
+包装的存在是为了让产品完好、干净、安全地送到顾客手中。一件损坏的商品会让您损失产品、邮费、替换品，往往还有顾客。
+
+### 包装塑造第一印象
+开箱的那一刻告诉顾客您是否用心。整洁、尺寸合适的包装暗示着品质和对细节的关注。
+
+### 包装承载信息
+它可以显示您的名称、联络方式、说明，以及在需要时，您产品的标签信息。
+
+### 包装影响成本
+材料、重量和尺寸会改变包装费用、运费和您需要的存放空间。我们关于经营送货的指南解释了尺寸和重量如何影响运费。
+
+### 包装是品牌的一部分
+一致的颜色、简单的贴纸或一张手写的便条，可以以低成本建立辨识度。我们关于以小预算打造品牌的指南解释了如何做。
+
+## 2. 从保护开始
+
+### 了解风险
+先保护好产品，然后才考虑外观。列出您的产品可能如何受损：挤压、潮湿、高温、溢漏、摇晃或污染。然后在考虑风格之前，先选择能应对每一种风险的包装。
+
+### 以真实的送货来测试
+包装一份样品，寄给住在城市另一头或另一个州的朋友，看看它如何送达。便宜的测试胜过昂贵的投诉。
+
+### 考虑高温、湿度和搬运
+马来西亚的气候会让纸板变软、让涂层融化、让食物变质。请选择能应对您所在地区天气和产品运送时间的材料。
+
+### 特别留意易碎品和食品
+易碎品需要缓冲和贴合的包装。食品需要干净、合适的容器来保持安全。我们关于食品安全的指南解释了基本卫生。
+
+### 保存简单的破损记录
+记下什么东西破裂、漏出或延迟送达。规律会显示应该先改善哪种包装。
+
+## 3. 选择材料和尺寸
+
+### 比较常见的选择
+纸箱、纸袋、瓦楞邮寄包装、玻璃和塑料容器，以及纸张或气垫等缓冲材料，各自适合不同的产品。比较重量、强度、价格，以及顾客处置或重复使用的难易程度。
+
+### 让尺寸配合产品
+太大的箱子浪费材料、增加运费，也让产品晃动。太小的箱子可能压坏产品。请测量您的产品，并选择少数几种标准尺寸。
+
+### 标准化以节省开支
+使用少数几种尺寸，可以大量采购、加快打包并减少存放空间。
+
+### 考虑重复使用和回收
+顾客可以重复使用或容易回收的包装更受欢迎。避免混用无法分开的材料，例如覆有塑料膜的纸张。
+
+### 确认它适合您的流程
+测试您的团队打包有多快、包装占多少空间，以及能否堆叠。我们关于管理存货的指南解释了存放如何影响成本。
+
+## 4. 在成本、破损和退货之间取得平衡
+
+### 计算包装的真正成本
+把材料的价格、打包的时间、运费，以及破损和替换的成本加起来。最便宜的箱子并不总是整体上最便宜的选择。
+
+### 把钱花在能防止损失的地方
+为易碎、高价值的物品多加一点缓冲，往往比换一次货便宜。对坚固、低价值的物品则少花一点。
+
+### 避免过度包装
+多层包装、大块空隙和过多的填充物既花钱又惹恼顾客。打包是为了保护，而不是为了炫耀。
+
+### 追踪退货和投诉
+记录有多少订单受损以及原因。利用这个规律来决定在哪里改善包装会物有所值。
+
+### 定期检讨价格
+向您的供应商询问批量折扣，并比较报价。我们关于与供应商谈判的指南解释了如何做。
+
+## 5. 处理标签的基本事项
+
+### 知道标签取决于产品
+食品、化妆品、药品、化学品和一般商品的规定各不相同。在印刷之前，请向相关主管单位或您的供应商询问您的产品必须显示什么。
+
+### 检查语言和信息的要求
+据报道，马来西亚的食品标签需要使用马来文或英文，但其他产品和要求各不相同，所以请确认您产品的现行规定。我们关于马来西亚清真认证的指南解释了清真宣称如何运作。
+
+### 绝不宣称您无法证明的事
+在没有所需的批准或证据的情况下，不要印上健康、清真或天然的宣称。错误的宣称可能招致处罚并失去信任。
+
+### 附上有用的信息
+把您的企业名称、联络方式、产品名称，以及任何必要的说明或警告，放在顾客看得到的地方。我们关于小企业合约与条款的指南解释了清楚的条款为什么有帮助。
+
+### 保存您所印刷的记录
+保存获批的标签版本和日期。如果规定改变，您就知道该更新什么。
+
+## 6. 减少塑料和垃圾
+
+### 从减少开始，而不是替换
+最好的包装往往是更少的包装。在更换材料之前，先去掉您不需要的层数。
+
+### 查明您所在地的规定
+2025年的报道提到，全国对某些场所和公共场地的一次性塑料手提袋实施禁令，一些州属，例如霹雳和槟城，订有自己的时间表和豁免，据报道也有变动。规定因地点、产品和业务类型而异，所以请向您的州政府和地方政府确认现行情况。
+
+### 仔细比较替代品
+纸张、纸板、可重复使用的容器和可堆肥产品，在成本、强度和处置方面各有取舍。标示为可生物降解或可堆肥的材料，并不总是被本地的废物系统接受，所以请询问您的供应商这在实际上意味着什么。
+
+### 提供重复使用和补充的选择
+给自带容器的顾客折扣、为罐子或箱子设置回收计划，或提供补充装，可以减少浪费并建立忠诚度。我们关于建立顾客忠诚度与回头客的指南解释了有效的奖励。
+
+### 妥善处理自己的垃圾
+压平纸板、分开可回收物，并保持垃圾整齐。我们关于环保合规与废物管理的指南解释了更广泛的规定。
+
+> 最环保的包装，是您不需要制作的那一个，而最便宜的通常也是同一个：调整到合适的尺寸并去掉多余的东西，既省钱又减少浪费。
+
+## 7. 与包装供应商合作
+
+### 索取样品
+在订货之前，以您自己的产品测试样品，并至少比较两家供应商。
+
+### 清楚说明您的需求
+提供尺寸、重量、数量、强度、食品安全需求和交货日期。询问最低订购量和交货期。
+
+### 查验宣称和证书
+如果供应商说某产品可回收、可堆肥或符合食品安全，请询问这代表什么，以及有什么证据支持。
+
+### 在大订单之前先小批量试订
+先订一小批，尤其是印刷的包装。大批量印刷出错的代价很高。
+
+### 保留备用供应商
+供应问题可能让您的订单停摆。请为您的关键物品知道第二个来源。我们关于供应商关系的指南解释了如何建立可靠的网络。
+
+## 8. 诚实地谈论环保努力并衡量成果
+
+### 说出您实际做了什么
+描述具体的改变，例如使用含再生成分的箱子或去掉塑料填充物。避免听起来不错但意义不大的含糊字眼。
+
+### 避免夸大的宣称
+除非您能解释并证明，否则不要称产品为“环保”或“零废物”。夸大的环保宣称可能误导顾客并损害信任。我们关于广告宣称和消费者保护的指南解释了应该避免什么。
+
+### 告诉顾客如何处置
+一张说明如何回收或重复使用包装的简短便条，可以帮助顾客响应您的努力。
+
+### 衡量您省下了什么
+追踪每笔订单的包装成本、破损率和垃圾的重量。我们关于追踪业务表现的指南解释了要跟踪的简单数字。
+
+### 一次改善一个地方
+做一项改变，衡量它，并保留有效的做法。如果您需要包装供应商或设计师的协助，您可以[浏览名录](/zh)寻找附近的专业人士，并[创建免费商家列表](/zh/signup)，让顾客找到您的业务。
+
+## 马来西亚中小企业在包装方面常犯的错误
+
+- **先考虑外观再考虑保护。** 受损的产品比一个朴素的箱子花费更多，所以请先以真实的送货来测试。
+- **做出您无法证明的环保宣称。** 含糊或夸大的宣称会误导顾客，所以请描述具体的改变，并查明“可生物降解”之类的标示实际上是什么意思。
+- **直到规定适用于您时才理会本地的塑料和标签规定。** 规定因州属和产品而异，也会随时间变化，所以请在订货之前向您的地方政府查询。
+
+## 从哪里开始
+
+- **本周：** 列出每件产品可能如何受损，并统计有多少订单送达时受损。
+- **接着：** 测量您的产品，选择几种标准尺寸，并测试一次样品送货。
+- **然后：** 查明您的产品和所在州属的标签和塑料规定，并比较两家供应商的样品。
+- **每季度：** 检讨破损、每笔订单的成本和垃圾，并做出一项改善。
+
+好的包装同时保护顾客的体验和您的利润。从保护开始，去掉您不需要的东西，并诚实地告诉顾客您做了什么。`,
+        faqs: [
+          {
+            question: "我如何为产品选择合适的包装？",
+            answer:
+              "列出产品可能如何受损，例如挤压、潮湿、高温或溢漏，然后选择能应对每一种风险的材料。在大量订货之前先测试一次样品送货，并让尺寸配合产品。",
+          },
+          {
+            question: "我如何在不增加破损的情况下降低包装成本？",
+            answer:
+              "标准化少数几种尺寸，批量采购，去掉不需要的层数，并且只在能防止损失的地方多花钱，例如易碎或高价值的物品。追踪破损和退货，让您知道在哪里改善包装会物有所值。",
+          },
+          {
+            question: "关于标签我需要知道什么？",
+            answer:
+              "标签规定取决于产品，例如食品、化妆品或药品。据报道食品标签需要使用马来文或英文，但其他要求各不相同，所以请在印刷之前询问相关主管单位或您的供应商，并且绝不宣称您无法证明的事。",
+          },
+          {
+            question: "马来西亚的企业被禁止使用一次性塑料吗？",
+            answer:
+              "视您的营业地点而定。2025年的报道提到，全国对某些场所和公共场地的一次性塑料手提袋实施禁令，霹雳和槟城等州属订有自己的时间表和豁免，据报道也有变动。请向您的州政府和地方政府确认现行情况。",
+          },
+          {
+            question: "可生物降解或可堆肥的包装一定更好吗？",
+            answer:
+              "不一定。本地的废物系统可能不接受这类产品，成本和强度也各不相同。请询问您的供应商这个标示在实际上意味着什么，并在替换包装之前先考虑减少和重复使用。",
+          },
+          {
+            question: "我如何避免过度包装？",
+            answer:
+              "调整箱子的尺寸，去掉不必要的层数和大块空隙，打包是为了保护，而不是为了炫耀。标准尺寸和样品送货测试有助于找出行得通的最低限度。",
+          },
+          {
+            question: "我应该如何选择包装供应商？",
+            answer:
+              "索取样品并以您自己的产品测试，至少比较两家供应商，清楚说明尺寸、强度和数量，询问“可回收”或“符合食品安全”等宣称的依据，并从小订单开始。为您的关键物品保留备用来源。",
+          },
+          {
+            question: "我如何在谈论环保包装时不夸大？",
+            answer:
+              "描述具体的改变，例如使用含再生成分的箱子或去掉塑料填充物，除非您能证明，否则避免“环保”之类的含糊字眼。告诉顾客如何回收或重复使用包装，并衡量您省下了什么。",
+          },
+        ],
+      },
+      ms: {
+        title: "Memilih Pembungkusan dan Beralih ke Arah Lebih Hijau: Pembungkusan Praktikal dan Mampan yang Peka Kos untuk PKS Malaysia",
+        excerpt:
+          "Pembungkusan melindungi produk anda, membentuk kesan pertama, dan semakin mempengaruhi pilihan pelanggan serta peraturan tempatan. Panduan ini membantu PKS Malaysia memilih bahan dan saiz, mengimbangi kos dengan kerosakan dan pemulangan, mengendalikan asas pelabelan, mengurangkan plastik dan sisa, bekerjasama dengan pembekal, dan bercakap tentang usaha hijau tanpa berlebih-lebihan.",
+        body: `Pembungkusan ialah perkara terakhir yang dilakukan perniagaan anda untuk pelanggan dan perkara pertama yang disentuh pelanggan. Kotak yang tiba remuk, bekas yang bocor, atau beg yang koyak boleh membatalkan segala yang anda lakukan dengan betul.
+
+Pada masa yang sama, pelanggan dan pihak berkuasa tempatan memberi lebih perhatian kepada plastik dan sisa. Membuat pembungkusan dengan betul bermakna melindungi produk, mengawal kos, dan mengelak pembaziran yang kemudian perlu anda jelaskan.
+
+Ini maklumat umum, bukan nasihat undang-undang. Peraturan pembungkusan, pelabelan dan plastik berbeza mengikut produk, negeri dan pihak berkuasa tempatan dan berubah dari semasa ke semasa, dan sebahagian butiran dalam panduan ini mungkin sudah lapuk. Sahkan keperluan semasa dengan pihak berkuasa berkaitan dan pembekal anda sebelum anda membuat tempahan.
+
+## 1. Fahami fungsi pembungkusan
+
+### Perlindungan diutamakan
+Pembungkusan wujud untuk menghantar produk kepada pelanggan dalam keadaan utuh, bersih dan selamat. Barang yang rosak merugikan anda produk, pos, penggantian dan sering juga pelanggan.
+
+### Pembungkusan membentuk kesan pertama
+Detik membuka kotak memberitahu pelanggan sama ada anda mengambil berat. Pembungkusan yang kemas dan bersaiz betul mencadangkan kualiti dan perhatian kepada butiran.
+
+### Pembungkusan membawa maklumat
+Ia boleh menunjukkan nama, butiran hubungan, arahan anda, dan, jika dikehendaki, maklumat label untuk produk anda.
+
+### Pembungkusan mempengaruhi kos
+Bahan, berat dan saiz mengubah bil pembungkusan, caj penghantaran dan ruang simpanan yang anda perlukan. Panduan kami tentang menjalankan penghantaran menerangkan bagaimana saiz dan berat mempengaruhi penghantaran.
+
+### Pembungkusan ialah sebahagian daripada jenama anda
+Warna yang konsisten, pelekat ringkas atau nota tulisan tangan boleh membina pengiktirafan dengan kos rendah. Panduan kami tentang membina jenama dengan bajet kecil menerangkan caranya.
+
+## 2. Mulakan dengan perlindungan
+
+### Kenali risikonya
+Lindungi produk dahulu, dan hanya kemudian fikirkan rupanya. Senaraikan bagaimana produk anda boleh rosak: dihimpit, kelembapan, haba, tumpahan, goncangan atau pencemaran. Kemudian pilih pembungkusan yang menangani setiap risiko sebelum anda memikirkan gaya.
+
+### Uji dengan penghantaran sebenar
+Bungkus sampel, hantar kepada rakan di seberang bandar atau di negeri lain, dan lihat bagaimana ia tiba. Ujian murah mengatasi aduan yang mahal.
+
+### Fikirkan haba, kelembapan dan pengendalian
+Iklim Malaysia boleh melembutkan kadbod, mencairkan salutan dan merosakkan makanan. Pilih bahan yang tahan cuaca di kawasan anda dan masa produk dalam perjalanan.
+
+### Beri perhatian khusus kepada barang mudah pecah dan makanan
+Barang mudah pecah memerlukan pelapik dan muat yang ketat. Makanan memerlukan bekas yang bersih dan sesuai yang memastikannya selamat. Panduan kami tentang keselamatan makanan menerangkan kebersihan asas.
+
+### Simpan rekod kerosakan yang ringkas
+Catat apa yang pecah, bocor atau tiba lewat. Corak menunjukkan pembungkusan mana yang perlu dibaiki dahulu.
+
+## 3. Pilih bahan dan saiz
+
+### Bandingkan pilihan biasa
+Kotak kadbod, beg kertas, pembungkus pos beralun, bekas kaca dan plastik, dan pelapik seperti kertas atau bantal udara masing-masing sesuai untuk produk berbeza. Bandingkan berat, kekuatan, harga, dan betapa mudahnya pelanggan membuang atau menggunakannya semula.
+
+### Padankan saiz dengan produk
+Kotak yang terlalu besar membazirkan bahan, menaikkan caj penghantaran dan membiarkan produk bergerak. Kotak yang terlalu kecil boleh menghimpitnya. Ukur produk anda dan pilih set kecil saiz piawai.
+
+### Piawaikan untuk menjimatkan wang
+Menggunakan beberapa saiz membolehkan anda membeli secara pukal, mempercepat pembungkusan dan mengurangkan ruang simpanan.
+
+### Fikirkan penggunaan semula dan kitar semula
+Pembungkusan yang boleh digunakan semula atau dikitar semula dengan mudah oleh pelanggan lebih dialu-alukan. Elakkan mencampurkan bahan yang tidak dapat diasingkan, seperti kertas yang dilaminasi dengan plastik.
+
+### Pastikan ia sesuai dengan proses anda
+Uji betapa pantasnya pasukan anda membungkus, berapa banyak ruang pembungkusan itu menggunakan, dan sama ada ia boleh disusun. Panduan kami tentang menguruskan inventori dan stok menerangkan bagaimana penyimpanan mempengaruhi kos.
+
+## 4. Imbangi kos, kerosakan dan pemulangan
+
+### Kira kos sebenar pembungkusan
+Tambah harga bahan, masa untuk membungkus, caj penghantaran, dan kos kerosakan dan penggantian. Kotak termurah tidak semestinya pilihan termurah secara keseluruhan.
+
+### Berbelanja di tempat yang mencegah kerugian
+Sedikit pelapik tambahan untuk barang yang mudah pecah dan bernilai tinggi sering berharga kurang daripada satu penggantian. Berbelanja kurang untuk barang yang tahan lasak dan bernilai rendah.
+
+### Elakkan pembungkusan berlebihan
+Beberapa lapisan, ruang kosong yang besar dan pengisi berlebihan menelan belanja dan menjengkelkan pelanggan. Bungkus untuk melindungi, bukan untuk menarik perhatian.
+
+### Jejaki pemulangan dan aduan
+Rekodkan berapa banyak pesanan yang rosak dan sebabnya. Gunakan corak itu untuk memutuskan di mana pembungkusan yang lebih baik akan membayar balik dirinya.
+
+### Semak harga secara berkala
+Tanya pembekal anda tentang diskaun volum dan bandingkan sebut harga. Panduan kami tentang berunding dengan pembekal menerangkan caranya.
+
+## 5. Kendalikan asas pelabelan
+
+### Ketahui bahawa pelabelan bergantung pada produk
+Peraturan berbeza untuk makanan, kosmetik, ubat, bahan kimia dan barang am. Tanya pihak berkuasa berkaitan atau pembekal anda apa yang mesti ditunjukkan oleh produk anda sebelum anda mencetak.
+
+### Semak keperluan bahasa dan maklumat
+Label makanan di Malaysia dilaporkan perlu menggunakan Bahasa Malaysia atau bahasa Inggeris, tetapi produk dan keperluan lain berbeza, jadi sahkan peraturan semasa untuk produk anda. Panduan kami tentang pensijilan halal di Malaysia menerangkan bagaimana dakwaan halal berfungsi.
+
+### Jangan sekali-kali mendakwa apa yang tidak dapat anda sokong
+Jangan mencetak dakwaan kesihatan, halal atau semula jadi tanpa kelulusan atau bukti yang diperlukan. Dakwaan yang salah boleh membawa kepada penalti dan hilang kepercayaan.
+
+### Sertakan maklumat yang berguna
+Letakkan nama perniagaan, butiran hubungan, nama produk, dan apa-apa arahan atau amaran yang diperlukan di tempat yang boleh dilihat pelanggan. Panduan kami tentang kontrak dan terma untuk perniagaan kecil menerangkan mengapa terma yang jelas membantu.
+
+### Simpan rekod apa yang anda cetak
+Simpan versi label yang diluluskan dan tarikhnya. Jika peraturan berubah, anda akan tahu apa yang perlu dikemas kini.
+
+## 6. Kurangkan plastik dan sisa
+
+### Mulakan dengan mengurangkan, bukan menggantikan
+Pembungkusan terbaik sering kali pembungkusan yang lebih sedikit. Buang lapisan yang anda tidak perlukan sebelum anda menukar bahan.
+
+### Semak peraturan di tempat anda beroperasi
+Laporan pada 2025 menceritakan larangan kebangsaan ke atas beg plastik pakai buang di premis dan tapak awam tertentu, dan beberapa negeri, seperti Perak dan Pulau Pinang, telah menetapkan garis masa dan pengecualian sendiri, yang dilaporkan berubah-ubah. Peraturan berbeza mengikut lokasi, produk dan jenis perniagaan, jadi sahkan kedudukan semasa dengan kerajaan negeri dan pihak berkuasa tempatan anda.
+
+### Bandingkan alternatif dengan teliti
+Kertas, kadbod, bekas boleh guna semula dan produk boleh kompos masing-masing mempunyai pertukaran dari segi kos, kekuatan dan pelupusan. Bahan yang berlabel terbiodegradasi atau boleh kompos tidak selalu diterima oleh sistem sisa tempatan, jadi tanya pembekal anda apa maksudnya dalam praktik.
+
+### Tawarkan pilihan guna semula dan isi semula
+Diskaun untuk pelanggan yang membawa bekas sendiri, skim pemulangan untuk balang atau kotak, atau isi semula boleh mengurangkan sisa dan membina kesetiaan. Panduan kami tentang membina kesetiaan pelanggan dan perniagaan berulang menerangkan ganjaran yang berkesan.
+
+### Kendalikan sisa anda sendiri dengan betul
+Ratakan kadbod, asingkan bahan kitar semula, dan pastikan sisa kemas. Panduan kami tentang pematuhan alam sekitar dan pengurusan sisa menerangkan peraturan yang lebih luas.
+
+> Bungkusan paling hijau ialah yang anda tidak perlu buat, dan yang paling murah biasanya sama: menyesuaikan saiz dan membuang tambahan menjimatkan wang dan sisa bersama-sama.
+
+## 7. Bekerjasama dengan pembekal pembungkusan
+
+### Minta sampel
+Uji sampel dengan produk anda sendiri sebelum menempah, dan bandingkan sekurang-kurangnya dua pembekal.
+
+### Jelas tentang keperluan anda
+Berikan saiz, berat, kuantiti, kekuatan, keperluan keselamatan makanan dan tarikh penghantaran. Tanya tentang kuantiti pesanan minimum dan masa pendahuluan.
+
+### Semak dakwaan dan sijil
+Jika pembekal berkata sesuatu produk boleh dikitar semula, boleh kompos atau selamat untuk makanan, tanya apa maksudnya dan apa bukti yang menyokongnya.
+
+### Mulakan dari kecil sebelum pesanan besar
+Pesan kumpulan kecil dahulu, terutamanya untuk pembungkusan bercetak. Kesilapan dalam cetakan besar adalah mahal.
+
+### Simpan pembekal sandaran
+Masalah bekalan boleh menghentikan pesanan anda. Ketahui sumber kedua untuk barang utama anda. Panduan kami tentang hubungan pembekal menerangkan cara membina rangkaian yang boleh dipercayai.
+
+## 8. Bercakap tentang usaha hijau dengan jujur dan ukur hasilnya
+
+### Katakan apa yang sebenarnya anda lakukan
+Terangkan perubahan yang khusus, seperti menggunakan kotak berkandungan kitar semula atau membuang pengisi plastik. Elakkan perkataan kabur yang kedengaran baik tetapi bermakna sedikit.
+
+### Elakkan dakwaan yang dibesar-besarkan
+Jangan menggelar produk "mesra alam" atau "sifar sisa" melainkan anda boleh menerangkan dan menyokongnya. Dakwaan hijau yang dilebih-lebihkan boleh mengelirukan pelanggan dan merosakkan kepercayaan. Panduan kami tentang dakwaan pengiklanan dan perlindungan pengguna menerangkan apa yang perlu dielakkan.
+
+### Beritahu pelanggan cara melupuskannya
+Nota ringkas tentang cara mengitar semula atau menggunakan semula pembungkusan membantu pelanggan bertindak atas usaha anda.
+
+### Ukur apa yang anda jimatkan
+Jejaki kos pembungkusan setiap pesanan, kadar kerosakan dan berat sisa. Panduan kami tentang menjejaki prestasi perniagaan menerangkan angka mudah untuk diikuti.
+
+### Perbaiki satu perubahan pada satu masa
+Buat satu perubahan, ukurnya, dan kekalkan apa yang berkesan. Jika anda mahukan bantuan daripada pembekal pembungkusan atau pereka, anda boleh [layari direktori](/ms) untuk profesional berhampiran anda, dan [cipta penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan dapat menemui perniagaan anda.
+
+## Kesilapan biasa PKS Malaysia dengan pembungkusan
+
+- **Memilih pembungkusan untuk rupa sebelum perlindungan.** Produk yang rosak lebih mahal daripada kotak biasa, jadi uji dengan penghantaran sebenar dahulu.
+- **Membuat dakwaan hijau yang tidak dapat anda sokong.** Dakwaan kabur atau dibesar-besarkan mengelirukan pelanggan, jadi terangkan perubahan yang khusus dan semak apa maksud sebenar label seperti terbiodegradasi.
+- **Mengabaikan peraturan plastik dan pelabelan tempatan sehingga ia terpakai kepada anda.** Peraturan berbeza mengikut negeri dan produk dan berubah dari semasa ke semasa, jadi semak dengan pihak berkuasa tempatan anda sebelum anda menempah.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Senaraikan bagaimana setiap produk boleh rosak, dan kira berapa banyak pesanan yang tiba rosak.
+- **Seterusnya:** Ukur produk anda, pilih beberapa saiz piawai, dan uji satu penghantaran sampel.
+- **Kemudian:** Semak peraturan pelabelan dan plastik untuk produk dan negeri anda, dan bandingkan sampel daripada dua pembekal.
+- **Setiap suku tahun:** Semak kerosakan, kos setiap pesanan dan sisa, dan buat satu penambahbaikan.
+
+Pembungkusan yang baik melindungi pengalaman pelanggan dan margin anda pada masa yang sama. Mulakan dengan perlindungan, buang apa yang anda tidak perlukan, dan beritahu pelanggan dengan jujur apa yang telah anda lakukan.`,
+        faqs: [
+          {
+            question: "Bagaimanakah saya memilih pembungkusan yang sesuai untuk produk saya?",
+            answer:
+              "Senaraikan bagaimana produk boleh rosak, seperti dihimpit, kelembapan, haba atau tumpahan, kemudian pilih bahan yang menangani setiap risiko. Uji satu penghantaran sampel sebelum menempah secara pukal, dan padankan saiz dengan produk.",
+          },
+          {
+            question: "Bagaimanakah saya boleh mengurangkan kos pembungkusan tanpa lebih banyak kerosakan?",
+            answer:
+              "Piawaikan beberapa saiz, beli secara pukal, buang lapisan yang tidak diperlukan, dan berbelanja lebih hanya di tempat yang mencegah kerugian, seperti barang yang mudah pecah atau bernilai tinggi. Jejaki kerosakan dan pemulangan supaya anda tahu di mana pembungkusan yang lebih baik membayar balik dirinya.",
+          },
+          {
+            question: "Apakah yang perlu saya tahu tentang pelabelan?",
+            answer:
+              "Peraturan pelabelan bergantung pada produk, seperti makanan, kosmetik atau ubat. Label makanan dilaporkan perlu menggunakan Bahasa Malaysia atau bahasa Inggeris, tetapi keperluan lain berbeza, jadi tanya pihak berkuasa berkaitan atau pembekal anda sebelum mencetak, dan jangan sekali-kali mendakwa apa yang tidak dapat anda sokong.",
+          },
+          {
+            question: "Adakah plastik pakai buang diharamkan untuk perniagaan di Malaysia?",
+            answer:
+              "Bergantung pada tempat anda beroperasi. Laporan pada 2025 menceritakan larangan kebangsaan ke atas beg plastik pakai buang di premis dan tapak awam tertentu, dan negeri seperti Perak dan Pulau Pinang telah menetapkan garis masa dan pengecualian sendiri yang dilaporkan berubah-ubah. Sahkan kedudukan semasa dengan kerajaan negeri dan pihak berkuasa tempatan anda.",
+          },
+          {
+            question: "Adakah pembungkusan terbiodegradasi atau boleh kompos sentiasa lebih baik?",
+            answer:
+              "Tidak semestinya. Sistem sisa tempatan mungkin tidak menerima produk sedemikian, dan kos serta kekuatannya berbeza. Tanya pembekal anda apa maksud label itu dalam praktik, dan pertimbangkan mengurangkan dan menggunakan semula pembungkusan sebelum menggantikannya.",
+          },
+          {
+            question: "Bagaimanakah saya mengelak pembungkusan berlebihan?",
+            answer:
+              "Sesuaikan saiz kotak, buang lapisan yang tidak perlu dan ruang kosong yang besar, dan bungkus untuk melindungi, bukan untuk menarik perhatian. Saiz piawai dan ujian penghantaran sampel membantu anda mencari minimum yang berkesan.",
+          },
+          {
+            question: "Bagaimanakah saya patut memilih pembekal pembungkusan?",
+            answer:
+              "Minta sampel dan uji dengan produk anda sendiri, bandingkan sekurang-kurangnya dua pembekal, jelas tentang saiz, kekuatan dan kuantiti, tanya apa asas dakwaan seperti boleh dikitar semula atau selamat untuk makanan, dan mulakan dengan pesanan kecil. Simpan sumber sandaran untuk barang utama anda.",
+          },
+          {
+            question: "Bagaimanakah saya boleh bercakap tentang pembungkusan hijau tanpa berlebih-lebihan?",
+            answer:
+              "Terangkan perubahan yang khusus, seperti menggunakan kotak berkandungan kitar semula atau membuang pengisi plastik, dan elakkan istilah kabur seperti mesra alam melainkan anda boleh menyokongnya. Beritahu pelanggan cara mengitar semula atau menggunakan semula pembungkusan, dan ukur apa yang anda jimatkan.",
+          },
+        ],
+      },
+    },
+  },
 ];

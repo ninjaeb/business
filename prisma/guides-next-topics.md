@@ -15,17 +15,17 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Product Photography and Content Creation on a Budget: Photos, Short Videos, and Listings for Malaysian SMEs**
-   — Why good visuals sell, planning shots and a simple setup with a phone
-   and natural light, styling and backgrounds, short-form video basics,
-   writing captions and product listings, editing and consistency, using
-   customer photos with permission, respecting music and image copyright
-   (to hedge), and building a content calendar you can keep up.
+1. **Customer Service Standards and Training: Building Consistent, Friendly Service in Your Malaysian SME**
+   — Why service consistency drives repeat business, defining what good
+   service looks like for your business, scripts and flexible guidelines,
+   training new and part-time staff, empowering staff to solve problems,
+   handling peak times and queues, collecting and acting on feedback,
+   service recovery when things go wrong, recognising and rewarding good
+   service, and measuring it with simple numbers.
 
-2. **Choosing Packaging and Going Greener: Practical, Cost-Aware Packaging and Sustainability for Malaysian SMEs**
-   — Why packaging matters for protection and brand, choosing materials and
-   sizes, balancing cost against damage and returns, labelling basics
-   (to hedge, confirm current rules), reducing waste and plastic, local
-   rules and customer expectations on single-use items (to hedge), working
-   with packaging suppliers, communicating green efforts honestly without
-   exaggerated claims, and measuring what you save.
+2. **Using Quotations, Proposals, and Written Estimates: Winning Jobs and Avoiding Disputes for Malaysian SMEs**
+   — When to quote and when to propose, costing a job honestly, what a
+   clear quotation includes, scope, exclusions and change requests,
+   validity periods and deposits (to hedge), following up without
+   pressure, turning an accepted quote into a simple agreement, handling
+   disagreements over scope, and keeping records for repeat clients.
