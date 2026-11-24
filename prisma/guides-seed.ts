@@ -45130,4 +45130,1296 @@ Pembungkusan yang baik melindungi pengalaman pelanggan dan margin anda pada masa
       },
     },
   },
+  {
+    slug: "customer-service-standards-and-training-for-malaysian-smes",
+    title: "Customer Service Standards and Training: Building Consistent, Friendly Service in Your Malaysian SME",
+    seoTitle: "Customer Service Standards and Training for Malaysian SMEs",
+    seoDescription:
+      "How Malaysian SMEs can build consistent, friendly service: set standards, train new and part-time staff, handle peak times and measure results.",
+    coverImage: {
+      file: "customer-service-standards-and-training-cover.webp",
+      mimeType: "image/webp",
+      alt: "A smiling vendor in round glasses and a patterned knitted vest handing a small paper bag of fresh green chillies to a customer across a market counter",
+      altTranslations: {
+        zh: "一位戴圆框眼镜、穿着图案针织背心的微笑摊贩，隔着市集柜台把一小纸袋新鲜青辣椒递给顾客",
+        ms: "Seorang penjual tersenyum berkaca mata bulat dan berbaju rajut bercorak menghulurkan beg kertas kecil berisi cili hijau segar kepada pelanggan di seberang kaunter pasar",
+      },
+    },
+    contentImages: {
+      help: {
+        file: "customer-service-standards-and-training-help.webp",
+        mimeType: "image/webp",
+        alt: "A shop assistant in a brown apron and blue shirt helping an elderly man in a green cardigan, with a red basket of lettuce between them in a small grocery shop",
+        altTranslations: {
+          zh: "一位身穿咖啡色围裙和蓝色衬衫的店员在一家小杂货店里帮助一位身穿绿色开襟毛衣的老先生，两人之间是一个装着生菜的红色篮子",
+          ms: "Seorang pembantu kedai berapron coklat dan berbaju biru membantu seorang lelaki tua berkardigan hijau, dengan bakul merah berisi salad di antara mereka di sebuah kedai runcit kecil",
+        },
+        after: "Teach staff to notice when a customer needs help before the customer has to ask.",
+        afterTranslations: {
+          zh: "教导员工在顾客开口之前，就留意到顾客需要帮助。",
+          ms: "Ajar pekerja untuk perasan apabila pelanggan memerlukan bantuan sebelum pelanggan perlu meminta.",
+        },
+      },
+    },
+    excerpt:
+      "Customers return to businesses that treat them well every time, not just when the owner is on duty. This guide helps Malaysian SMEs define what good service looks like, train new and part-time staff, give them room to solve problems, handle peak times, recover from mistakes, and measure service with simple numbers.",
+    body: `Most customers do not leave because a product was bad. They leave because someone was rude, slow, careless, or simply indifferent. The opposite is also true: a warm greeting and a problem solved on the spot can turn a first-time buyer into a regular for years.
+
+The hard part is consistency. When the owner serves, service is usually good. When a new hire, a part-timer, or a tired colleague serves, it can be very different. Standards and training are how you make good service repeatable.
+
+This is general information, not legal or HR advice. Employment rules, consumer rights, and practices change over time, and some details in this guide may be out of date. Confirm current requirements with the relevant authorities before you act.
+
+## 1. Understand why consistent service matters
+
+### Service is part of the product
+Customers judge the whole experience: how they were greeted, how long they waited, and how problems were handled. Two shops can sell the same item and win very different loyalty.
+
+### Repeat customers cost less than new ones
+Keeping a customer is usually cheaper than finding a new one. Our guide on building customer loyalty and repeat business explains how.
+
+### Word of mouth travels both ways
+Happy customers recommend you in chats and groups. Unhappy customers post reviews and warn friends, and the second group is often louder.
+
+### Inconsistency confuses customers
+If service depends on who is on shift, customers learn to avoid certain times or people. Predictability builds trust.
+
+### Service affects your team too
+Clear standards reduce stress and arguments, because staff know what is expected and are less afraid of getting it wrong.
+
+## 2. Define what good service looks like
+
+### Describe it in plain words
+Write down five or six behaviours that matter in your business, such as greeting within a few seconds, using the customer's name when you know it, and offering a clear next step. Keep the list short enough to remember.
+
+### Notice who needs help
+Teach staff to notice when a customer needs help before the customer has to ask. Watching body language, such as a customer who looks lost, holds up an item, or glances around for someone, is a skill. Show it in action and practise it.
+
+### Match standards to your customers
+A fast food counter, a clinic, and a repair workshop need different tones and speeds. Think about what your own customers value most.
+
+### Cover the moments that matter
+Decide how you handle the greeting, the order, the wait, the payment, the goodbye, and the follow-up. Each is a chance to leave a good impression.
+
+### Respect language and culture
+Serve customers in the languages they prefer where you can, and be respectful of customs and festive periods. Our guide on serving a multicultural market and tourists explains more.
+
+## 3. Use scripts and guidelines wisely
+
+### Give staff useful phrases, not robotic scripts
+A few ready phrases for greeting, apologising, and closing help new staff feel confident. Encourage them to say it in their own natural voice.
+
+### Make a short service guide
+One page with your standards, common questions, prices, and what to do when something goes wrong is more useful than a long manual. Keep it where staff can see it.
+
+### Prepare answers to common questions
+List the ten questions customers ask most, with clear answers. This helps everyone give the same correct information.
+
+### Explain the why
+Staff follow standards better when they understand the reason. A rule such as "confirm the order back to the customer" makes more sense when you share the cost of mistakes.
+
+### Keep guidelines flexible
+Standards should guide judgment, not replace it. Customers can tell when staff are reading from a card.
+
+## 4. Train new and part-time staff
+
+### Start on day one
+Do not leave new hires to learn by watching. Spend the first hours on your standards, your products, and how you want customers to feel.
+
+### Show, then let them practise
+Demonstrate a good interaction, then let the new person try it with you watching. Give friendly feedback straight away. Our guide on training your team explains how to build a simple programme.
+
+### Pair new staff with a good example
+Let new staff shadow a colleague who serves well, and tell the colleague what you want them to pass on.
+
+### Cover part-time and seasonal staff too
+Short-term staff meet as many customers as anyone. Give them a short, clear briefing before their first shift. Our guide on part-time staff and interns explains the basics.
+
+### Check understanding and follow up
+After a few days, ask what is confusing and which situations felt hard, then coach on the specifics.
+
+## 5. Give staff room to solve problems
+
+### Decide what staff can fix on the spot
+Set a simple limit, such as replacing a faulty item or offering a small discount up to a set amount, so staff do not need to find you for every issue.
+
+### Trust and support their judgment
+If a decision was reasonable, back it, even if you would have chosen differently. Public criticism teaches staff to avoid taking responsibility.
+
+### Teach a simple approach to complaints
+Listen without interrupting, apologise for the experience, ask what would help, fix it or explain the next step, and thank the customer. Our guide on handling difficult customers and online reviews explains this in more detail.
+
+### Know when to escalate
+Agree on situations that need you, such as safety concerns, large refunds, or abusive behaviour. Make it easy for staff to ask for help.
+
+### Protect staff from abuse
+Customers are not always right. Set a clear policy on how staff may respond to abusive behaviour, and support them when they use it.
+
+## 6. Handle peak times and queues
+
+### Plan staffing around your busy hours
+Look at the times when customers wait longest, and arrange breaks, shifts, and preparation around them. Our guide on staff scheduling and attendance explains how.
+
+### Acknowledge waiting customers
+A quick smile and "I will be with you shortly" makes a wait feel shorter than silence. Tell people if the wait is long.
+
+### Make the wait easier
+Seats, clear menus, and a visible order status reduce frustration. Prepare popular items in advance during peak times.
+
+### Keep quality when it is busy
+Rushing creates mistakes. Decide what can be simplified at peak times, such as a shorter menu, rather than letting standards slip.
+
+### Review after busy days
+Ask the team what slowed things down and what helped, then change one thing at a time.
+
+## 7. Collect feedback and recover from mistakes
+
+### Ask for feedback in simple ways
+A short question at the counter, a QR code for a quick survey, or a message after a purchase gives you honest information. Our guide on understanding your customers explains simple ways to learn.
+
+### Read reviews and messages regularly
+Look for patterns, not just single complaints. Share praise with the team as well as problems.
+
+> Customers rarely expect perfection, but they remember how you behaved when something went wrong: a quick apology and a real fix can leave a stronger impression than a flawless visit.
+
+### Recover quickly and sincerely
+When something goes wrong, apologise, fix it, and tell the customer what you did. Follow up if the fix takes time.
+
+### Keep a simple log
+Note recurring problems and what solved them. A short log helps you spot weaknesses in training or process.
+
+### Know your customers' rights
+Customers have rights around refunds and faulty goods, and these can change, so check the current rules. Our guide on customer complaints, refunds, and consumer rights explains your duties.
+
+## 8. Recognise good service and measure it
+
+### Praise specific behaviour
+"You noticed that customer was struggling and helped without being asked" teaches more than general praise. Say it soon after it happens.
+
+### Reward in small, fair ways
+Recognition can be a mention in a team chat, a small bonus, or first pick of shifts. Make the criteria clear and fair.
+
+### Track a few simple numbers
+Useful measures include review scores, complaints, repeat customers, waiting times, and refunds. Our guide on tracking business performance explains simple numbers to follow.
+
+### Review standards every quarter
+Check whether your standards still match your customers, and update them when you add products or change hours.
+
+### Look for help when you need it
+If you need a trainer or a coach to build a service programme, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so that customers can find your business.
+
+## Common mistakes Malaysian SMEs make with customer service
+
+- **Relying on the owner to deliver good service.** Quality drops when the owner is away, so write standards and train every person, including part-timers.
+- **Giving staff rules but no authority.** Customers lose patience when staff must keep asking, so set clear limits for what staff can fix on the spot.
+- **Only reacting to complaints.** Silent customers simply leave, so ask for feedback regularly and look for patterns.
+
+## Where to start
+
+- **This week:** Write five or six service behaviours that matter, and list the ten most common customer questions with answers.
+- **Next:** Run a short briefing for every team member, including part-timers, and agree what staff may fix on the spot.
+- **Then:** Add a simple feedback question at the counter or after purchase, and share the results with the team.
+- **Every quarter:** Review complaints, praise, and key numbers, and update your standards.
+
+Good service is not a talent that some businesses are born with. It is a set of habits that you can write down, teach, and practise, and every customer you serve well is a reason for the next one to return.`,
+    faqs: [
+      {
+        question: "What are customer service standards?",
+        answer:
+          "They are a short list of behaviours you expect from everyone, such as how quickly customers are greeted, how problems are handled, and how orders are confirmed. Write them in plain words so that every member of the team, including part-timers, knows what good service looks like in your business.",
+      },
+      {
+        question: "How do I train a new employee in customer service?",
+        answer:
+          "Start on day one with your standards and products, demonstrate a good interaction, let them practise with you watching, and give friendly feedback straight away. Pair them with a colleague who serves well and follow up after a few days.",
+      },
+      {
+        question: "Should I use scripts for staff?",
+        answer:
+          "Use ready phrases for greeting, apologising, and closing so new staff feel confident, but let them say it in their own voice. Rigid scripts sound robotic, and customers notice when staff are reading from a card.",
+      },
+      {
+        question: "How much freedom should staff have to solve problems?",
+        answer:
+          "Set a clear limit, such as replacing a faulty item or giving a small discount up to a set amount, so staff can fix common issues without finding you. Back reasonable decisions, and agree which situations must be escalated.",
+      },
+      {
+        question: "How do I handle busy periods without service dropping?",
+        answer:
+          "Plan staffing around your peak hours, acknowledge waiting customers, prepare popular items in advance, simplify the menu or process at peak times, and review what slowed things down after busy days.",
+      },
+      {
+        question: "What should staff do when a customer complains?",
+        answer:
+          "Listen without interrupting, apologise for the experience, ask what would help, fix it or explain the next step, and thank the customer. Agree in advance when to escalate to you, such as safety concerns, large refunds, or abusive behaviour.",
+      },
+      {
+        question: "How can I measure customer service in a small business?",
+        answer:
+          "Track a few simple numbers, such as review scores, complaints, repeat customers, waiting times, and refunds, and ask customers a short question at the counter or after a purchase. Review the results with your team every quarter.",
+      },
+      {
+        question: "How do I recognise good service among staff?",
+        answer:
+          "Praise specific behaviour soon after it happens, and reward in small, fair ways, such as a team mention, a small bonus, or first pick of shifts. Make the criteria clear so that recognition feels fair.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "客户服务标准与培训：在您的马来西亚中小企业打造一致而友善的服务",
+        excerpt:
+          "顾客会回到每一次都善待他们的企业，而不只是在老板当班的时候。本指南帮助马来西亚中小企业界定什么是好服务，培训新员工和兼职员工，给他们解决问题的空间，应对繁忙时段，从失误中补救，并用简单的数字衡量服务。",
+        body: `大多数顾客离开，并不是因为产品不好。他们离开，是因为有人无礼、缓慢、马虎，或者只是漠不关心。反过来也成立：一句温暖的问候和当场解决的问题，可以把初次购买的顾客变成多年的常客。
+
+难处在于一致性。老板亲自服务时，服务通常很好。新员工、兼职员工或疲惫的同事服务时，可能大不相同。标准和培训，就是让好服务能够重复的方法。
+
+本文仅提供一般信息，并非法律或人力资源建议。雇佣规定、消费者权益和做法会随时间变化，本指南的部分细节可能已经过时。在采取行动之前，请向相关主管单位确认现行要求。
+
+## 1. 了解一致的服务为什么重要
+
+### 服务是产品的一部分
+顾客评判的是整个体验：他们如何被问候、等了多久，以及问题如何被处理。两家商店可以卖相同的东西，却赢得截然不同的忠诚度。
+
+### 回头客的成本比新顾客低
+留住一位顾客通常比找到新顾客便宜。我们关于建立顾客忠诚度与回头客的指南解释了如何做。
+
+### 口碑是双向的
+满意的顾客会在聊天和群组里推荐您。不满的顾客会发表评价并警告朋友，而后者往往声音更大。
+
+### 不一致会让顾客困惑
+如果服务取决于谁当班，顾客就会学会避开某些时间或某些人。可预期性建立信任。
+
+### 服务也影响您的团队
+清楚的标准减少压力和争吵，因为员工知道被期望什么，也不那么害怕做错。
+
+## 2. 界定什么是好服务
+
+### 用平实的话描述
+写下对您的业务重要的五六种行为，例如在几秒钟内问候、知道顾客名字时使用名字，以及提供清楚的下一步。让清单短到记得住。
+
+### 留意谁需要帮助
+教导员工在顾客开口之前，就留意到顾客需要帮助。观察肢体语言，例如一位看起来迷路、举起商品或四处张望找人的顾客，是一种技能。请示范并练习。
+
+### 让标准配合您的顾客
+快餐柜台、诊所和维修工场需要不同的语气和速度。想想您自己的顾客最看重什么。
+
+### 涵盖关键时刻
+决定您如何处理问候、点单、等候、付款、道别和跟进。每一个都是留下好印象的机会。
+
+### 尊重语言和文化
+在可能的情况下，以顾客偏好的语言服务，并尊重习俗和节庆期间。我们关于服务多元文化市场与游客的指南有更多说明。
+
+## 3. 明智地使用话术和指引
+
+### 给员工有用的短语，而不是机械的台词
+几句现成的问候、道歉和结束语，可以让新员工感到有信心。鼓励他们以自己自然的声音说出来。
+
+### 做一份简短的服务指南
+一页纸，写上您的标准、常见问题、价格，以及出问题时该怎么办，比一本冗长的手册更有用。把它放在员工看得到的地方。
+
+### 准备常见问题的答案
+列出顾客最常问的十个问题和清楚的答案。这有助于每个人提供相同而正确的信息。
+
+### 解释原因
+当员工理解原因时，会更好地遵守标准。像“向顾客复述订单”这样的规则，在您分享了失误的代价之后，会更说得通。
+
+### 保持指引的弹性
+标准应该引导判断，而不是取代判断。顾客看得出员工是在照着卡片念。
+
+## 4. 培训新员工和兼职员工
+
+### 从第一天开始
+不要让新员工靠观察来学习。把最初的几个小时用在您的标准、您的产品，以及您希望顾客有什么感受上。
+
+### 先示范，再让他们练习
+示范一次良好的互动，然后让新人在您的注视下尝试。立即给出友善的反馈。我们关于培训团队的指南解释了如何建立简单的计划。
+
+### 让新员工跟着好榜样
+让新员工跟随一位服务出色的同事，并告诉那位同事您希望他们传授什么。
+
+### 兼职和季节性员工也要涵盖
+短期员工接触的顾客和任何人一样多。请在他们第一次当班前给予简短而清楚的说明。我们关于兼职员工与实习生的指南解释了基础知识。
+
+### 检查理解并跟进
+几天之后，问问有什么令人困惑、哪些情况感觉困难，然后针对具体问题辅导。
+
+## 5. 给员工解决问题的空间
+
+### 决定员工可以当场解决什么
+设定一个简单的上限，例如更换有问题的商品，或提供不超过某个金额的小折扣，让员工不必为每件事都来找您。
+
+### 信任并支持他们的判断
+如果一个决定是合理的，就支持它，即使您会做不同的选择。公开的批评会教员工回避承担责任。
+
+### 教导处理投诉的简单方法
+不打断地倾听，为这次的体验道歉，询问什么能帮上忙，解决它或说明下一步，并感谢顾客。我们关于处理难缠顾客和网络评价的指南更详细地解释了这一点。
+
+### 知道何时上报
+约定哪些情况需要您出面，例如安全问题、大额退款或辱骂行为。让员工容易开口求助。
+
+### 保护员工免受辱骂
+顾客并不总是对的。请订立清楚的政策，说明员工可以如何应对辱骂行为，并在他们使用时支持他们。
+
+## 6. 应对繁忙时段和排队
+
+### 围绕您的繁忙时段规划人手
+查看顾客等候最久的时间，并围绕它们安排休息、轮班和准备工作。我们关于员工排班与出勤的指南解释了如何做。
+
+### 向等候的顾客示意
+一个快速的微笑和一句“我马上为您服务”，比沉默更能让等候感觉短一些。如果要等很久，请告诉大家。
+
+### 让等候更轻松
+座位、清楚的菜单和可见的订单状态可以减少烦躁。在繁忙时段提前准备热门的物品。
+
+### 繁忙时也保持品质
+匆忙会造成失误。决定在繁忙时段可以简化什么，例如缩短菜单，而不是让标准滑落。
+
+### 繁忙的日子过后检讨
+问问团队是什么拖慢了速度、什么有帮助，然后一次改变一件事。
+
+## 7. 收集反馈并从失误中补救
+
+### 以简单的方式征求反馈
+在柜台问一个简短的问题、用二维码做个快速调查，或在购买后发一则讯息，都能给您诚实的信息。我们关于了解您的顾客的指南解释了简单的了解方法。
+
+### 定期阅读评价和讯息
+寻找规律，而不只是单一的投诉。把赞扬和问题一起与团队分享。
+
+> 顾客很少期望完美，但他们会记得出问题时您的表现：一句迅速的道歉和真正的解决，可以比一次毫无瑕疵的光顾留下更深的印象。
+
+### 迅速而真诚地补救
+出问题时，道歉、解决，并告诉顾客您做了什么。如果解决需要时间，请跟进。
+
+### 保存简单的记录
+记下反复出现的问题以及什么解决了它们。一份简短的记录有助于您发现培训或流程中的弱点。
+
+### 了解顾客的权益
+顾客在退款和有缺陷的商品方面享有权益，这些可能会变化，所以请查看现行规定。我们关于顾客投诉、退款和消费者权益的指南解释了您的责任。
+
+## 8. 表扬好服务并加以衡量
+
+### 表扬具体的行为
+“您注意到那位顾客遇到困难，并且不等开口就去帮忙”，比泛泛的赞扬教得更多。事情发生后尽快说。
+
+### 以小而公平的方式奖励
+认可可以是在团队群组里提及、小额奖金，或优先选择班次。让标准清楚而公平。
+
+### 追踪几个简单的数字
+有用的指标包括评价分数、投诉、回头客、等候时间和退款。我们关于追踪业务表现的指南解释了要跟踪的简单数字。
+
+### 每季度检讨标准
+检查您的标准是否仍然符合您的顾客，并在增加产品或改变营业时间时更新它们。
+
+### 需要时寻求协助
+如果您需要培训师或教练来建立服务计划，您可以[浏览名录](/zh)寻找附近的专业人士，并[创建免费商家列表](/zh/signup)，让顾客找到您的业务。
+
+## 马来西亚中小企业在客户服务方面常犯的错误
+
+- **依赖老板来提供好服务。** 老板不在时品质就会下降，所以请写下标准并培训每一个人，包括兼职员工。
+- **给员工规则却没有权限。** 员工必须不断请示时，顾客会失去耐心，所以请为员工可以当场解决的事设定清楚的上限。
+- **只在被投诉时才反应。** 沉默的顾客只是默默离开，所以请定期征求反馈并寻找规律。
+
+## 从哪里开始
+
+- **本周：** 写下五六种重要的服务行为，并列出十个最常见的顾客问题和答案。
+- **接着：** 为每位团队成员，包括兼职员工，举行简短的说明会，并约定员工可以当场解决什么。
+- **然后：** 在柜台或购买后加入一个简单的反馈问题，并与团队分享结果。
+- **每季度：** 检讨投诉、赞扬和关键数字，并更新您的标准。
+
+好服务不是某些企业与生俱来的天赋。它是一套您可以写下来、教导和练习的习惯，而您每一位服务得好的顾客，都是下一位愿意回头的理由。`,
+        faqs: [
+          {
+            question: "什么是客户服务标准？",
+            answer:
+              "它们是一份简短的行为清单，是您对每个人的期望，例如多快问候顾客、如何处理问题，以及如何确认订单。请用平实的话写下来，让团队的每位成员，包括兼职员工，都知道在您的业务里好服务是什么样子。",
+          },
+          {
+            question: "我如何培训新员工的客户服务？",
+            answer:
+              "从第一天开始，讲解您的标准和产品，示范一次良好的互动，让他们在您的注视下练习，并立即给出友善的反馈。让他们跟随服务出色的同事，并在几天后跟进。",
+          },
+          {
+            question: "我应该给员工使用话术吗？",
+            answer:
+              "为问候、道歉和结束语准备现成的短语，让新员工感到有信心，但让他们以自己的声音说出来。僵硬的话术听起来很机械，顾客看得出员工是在照着卡片念。",
+          },
+          {
+            question: "员工应该有多大的自由来解决问题？",
+            answer:
+              "设定清楚的上限，例如更换有问题的商品或提供不超过某个金额的小折扣，让员工不必找您就能解决常见的问题。支持合理的决定，并约定哪些情况必须上报。",
+          },
+          {
+            question: "我如何在繁忙时段不让服务下滑？",
+            answer:
+              "围绕您的高峰时段规划人手，向等候的顾客示意，提前准备热门物品，在高峰时段简化菜单或流程，并在繁忙的日子过后检讨是什么拖慢了速度。",
+          },
+          {
+            question: "顾客投诉时员工应该怎么做？",
+            answer:
+              "不打断地倾听，为这次的体验道歉，询问什么能帮上忙，解决它或说明下一步，并感谢顾客。事先约定何时上报给您，例如安全问题、大额退款或辱骂行为。",
+          },
+          {
+            question: "我如何在小企业里衡量客户服务？",
+            answer:
+              "追踪几个简单的数字，例如评价分数、投诉、回头客、等候时间和退款，并在柜台或购买后向顾客问一个简短的问题。每季度与您的团队检讨结果。",
+          },
+          {
+            question: "我如何认可员工的好服务？",
+            answer:
+              "在行为发生后尽快表扬具体的行为，并以小而公平的方式奖励，例如在团队里提及、小额奖金，或优先选择班次。让标准清楚，让认可感觉公平。",
+          },
+        ],
+      },
+      ms: {
+        title: "Standard dan Latihan Perkhidmatan Pelanggan: Membina Perkhidmatan yang Konsisten dan Mesra dalam PKS Malaysia Anda",
+        excerpt:
+          "Pelanggan kembali kepada perniagaan yang melayan mereka dengan baik setiap kali, bukan hanya apabila pemilik bertugas. Panduan ini membantu PKS Malaysia menentukan rupa perkhidmatan yang baik, melatih pekerja baharu dan sambilan, memberi mereka ruang untuk menyelesaikan masalah, mengendalikan waktu sibuk, pulih daripada kesilapan, dan mengukur perkhidmatan dengan angka mudah.",
+        body: `Kebanyakan pelanggan tidak pergi kerana produk itu buruk. Mereka pergi kerana seseorang bersikap kasar, lambat, cuai, atau sekadar tidak ambil peduli. Sebaliknya juga benar: sapaan mesra dan masalah yang diselesaikan di tempat boleh menjadikan pembeli kali pertama pelanggan tetap selama bertahun-tahun.
+
+Bahagian yang sukar ialah konsistensi. Apabila pemilik melayan, perkhidmatan biasanya baik. Apabila pekerja baharu, pekerja sambilan atau rakan sekerja yang letih melayan, ia boleh jadi sangat berbeza. Standard dan latihan ialah cara anda menjadikan perkhidmatan yang baik boleh diulang.
+
+Ini maklumat umum, bukan nasihat undang-undang atau HR. Peraturan pekerjaan, hak pengguna dan amalan berubah dari semasa ke semasa, dan sebahagian butiran dalam panduan ini mungkin sudah lapuk. Sahkan keperluan semasa dengan pihak berkuasa berkaitan sebelum anda bertindak.
+
+## 1. Fahami mengapa perkhidmatan yang konsisten penting
+
+### Perkhidmatan ialah sebahagian daripada produk
+Pelanggan menilai keseluruhan pengalaman: bagaimana mereka disambut, berapa lama mereka menunggu, dan bagaimana masalah dikendalikan. Dua kedai boleh menjual barang yang sama dan memenangi kesetiaan yang sangat berbeza.
+
+### Pelanggan berulang kurang berkos daripada yang baharu
+Mengekalkan pelanggan biasanya lebih murah daripada mencari yang baharu. Panduan kami tentang membina kesetiaan pelanggan dan perniagaan berulang menerangkan caranya.
+
+### Dari mulut ke mulut bergerak dua hala
+Pelanggan yang gembira mengesyorkan anda dalam sembang dan kumpulan. Pelanggan yang tidak puas hati menyiarkan ulasan dan memberi amaran kepada rakan, dan kumpulan kedua sering lebih lantang.
+
+### Ketidakkonsistenan mengelirukan pelanggan
+Jika perkhidmatan bergantung pada siapa yang bertugas, pelanggan belajar mengelak waktu atau orang tertentu. Kebolehramalan membina kepercayaan.
+
+### Perkhidmatan juga mempengaruhi pasukan anda
+Standard yang jelas mengurangkan tekanan dan pertengkaran, kerana pekerja tahu apa yang dijangka dan kurang takut melakukan kesilapan.
+
+## 2. Tentukan rupa perkhidmatan yang baik
+
+### Terangkannya dengan kata-kata mudah
+Tuliskan lima atau enam tingkah laku yang penting dalam perniagaan anda, seperti menyambut dalam beberapa saat, menggunakan nama pelanggan apabila anda tahu, dan menawarkan langkah seterusnya yang jelas. Pastikan senarai itu cukup pendek untuk diingati.
+
+### Perasan siapa yang perlukan bantuan
+Ajar pekerja untuk perasan apabila pelanggan memerlukan bantuan sebelum pelanggan perlu meminta. Memerhati bahasa badan, seperti pelanggan yang kelihatan sesat, mengangkat barang atau memandang sekeliling mencari seseorang, ialah satu kemahiran. Tunjukkannya dalam tindakan dan amalkan.
+
+### Padankan standard dengan pelanggan anda
+Kaunter makanan segera, klinik dan bengkel pembaikan memerlukan nada dan kelajuan yang berbeza. Fikirkan apa yang paling dihargai oleh pelanggan anda sendiri.
+
+### Liputi detik-detik yang penting
+Tentukan bagaimana anda mengendalikan sambutan, pesanan, penantian, pembayaran, ucapan selamat tinggal dan susulan. Setiap satu ialah peluang untuk meninggalkan kesan yang baik.
+
+### Hormati bahasa dan budaya
+Layan pelanggan dalam bahasa pilihan mereka jika boleh, dan hormati adat dan tempoh perayaan. Panduan kami tentang melayani pasaran pelbagai budaya dan pelancong menerangkan lebih lanjut.
+
+## 3. Gunakan skrip dan garis panduan dengan bijak
+
+### Beri pekerja frasa yang berguna, bukan skrip seperti robot
+Beberapa frasa siap untuk menyambut, memohon maaf dan menutup membantu pekerja baharu berasa yakin. Galakkan mereka menyebutnya dengan suara semula jadi mereka sendiri.
+
+### Buat panduan perkhidmatan yang ringkas
+Satu muka surat dengan standard anda, soalan lazim, harga, dan apa yang perlu dilakukan apabila sesuatu tidak kena lebih berguna daripada manual yang panjang. Letakkannya di tempat pekerja boleh melihatnya.
+
+### Sediakan jawapan kepada soalan lazim
+Senaraikan sepuluh soalan yang paling kerap ditanya pelanggan, dengan jawapan yang jelas. Ini membantu semua orang memberikan maklumat yang sama dan betul.
+
+### Terangkan sebabnya
+Pekerja mengikuti standard dengan lebih baik apabila mereka memahami sebabnya. Peraturan seperti "sahkan semula pesanan kepada pelanggan" lebih bermakna apabila anda berkongsi kos kesilapan.
+
+### Pastikan garis panduan fleksibel
+Standard sepatutnya membimbing pertimbangan, bukan menggantikannya. Pelanggan dapat tahu apabila pekerja membaca daripada kad.
+
+## 4. Latih pekerja baharu dan sambilan
+
+### Mulakan pada hari pertama
+Jangan biarkan pekerja baharu belajar dengan memerhati. Luangkan jam pertama untuk standard anda, produk anda, dan bagaimana anda mahu pelanggan berasa.
+
+### Tunjukkan, kemudian biarkan mereka berlatih
+Tunjukkan interaksi yang baik, kemudian biarkan orang baharu mencubanya dengan anda memerhati. Beri maklum balas yang mesra serta-merta. Panduan kami tentang melatih pasukan anda menerangkan cara membina program yang ringkas.
+
+### Pasangkan pekerja baharu dengan contoh yang baik
+Biarkan pekerja baharu mengekori rakan sekerja yang melayan dengan baik, dan beritahu rakan sekerja itu apa yang anda mahu mereka wariskan.
+
+### Liputi pekerja sambilan dan bermusim juga
+Pekerja jangka pendek bertemu sebanyak pelanggan seperti sesiapa jua. Beri mereka taklimat yang ringkas dan jelas sebelum syif pertama mereka. Panduan kami tentang pekerja sambilan dan pelatih menerangkan asasnya.
+
+### Semak kefahaman dan buat susulan
+Selepas beberapa hari, tanya apa yang mengelirukan dan situasi mana yang terasa sukar, kemudian bimbing tentang perkara yang khusus.
+
+## 5. Beri pekerja ruang untuk menyelesaikan masalah
+
+### Tentukan apa yang boleh dibaiki pekerja di tempat
+Tetapkan had yang mudah, seperti menggantikan barang yang rosak atau menawarkan diskaun kecil sehingga jumlah tertentu, supaya pekerja tidak perlu mencari anda untuk setiap isu.
+
+### Percaya dan sokong pertimbangan mereka
+Jika sesuatu keputusan munasabah, sokonglah, walaupun anda akan memilih secara berbeza. Kritikan di khalayak mengajar pekerja mengelak mengambil tanggungjawab.
+
+### Ajar pendekatan mudah terhadap aduan
+Dengar tanpa mencelah, mohon maaf atas pengalaman itu, tanya apa yang boleh membantu, baikinya atau terangkan langkah seterusnya, dan berterima kasih kepada pelanggan. Panduan kami tentang menangani pelanggan sukar dan ulasan dalam talian menerangkan ini dengan lebih terperinci.
+
+### Ketahui bila hendak merujuk ke atas
+Persetujui situasi yang memerlukan anda, seperti kebimbangan keselamatan, bayaran balik besar atau tingkah laku kasar. Permudahkan pekerja meminta bantuan.
+
+### Lindungi pekerja daripada penderaan
+Pelanggan tidak selalu betul. Tetapkan dasar yang jelas tentang bagaimana pekerja boleh bertindak balas terhadap tingkah laku kasar, dan sokong mereka apabila mereka menggunakannya.
+
+## 6. Kendalikan waktu sibuk dan barisan
+
+### Rancang tenaga kerja sekitar waktu sibuk anda
+Lihat waktu apabila pelanggan menunggu paling lama, dan atur rehat, syif dan persediaan sekitarnya. Panduan kami tentang penjadualan dan kehadiran pekerja menerangkan caranya.
+
+### Beri isyarat kepada pelanggan yang menunggu
+Senyuman cepat dan "saya akan layan anda sebentar lagi" menjadikan penantian terasa lebih singkat daripada senyap. Beritahu orang jika penantian itu lama.
+
+### Permudahkan penantian
+Tempat duduk, menu yang jelas dan status pesanan yang kelihatan mengurangkan kekecewaan. Sediakan barang popular lebih awal semasa waktu sibuk.
+
+### Kekalkan kualiti apabila sibuk
+Tergesa-gesa mewujudkan kesilapan. Tentukan apa yang boleh dipermudah pada waktu sibuk, seperti menu yang lebih pendek, dan bukan membiarkan standard merosot.
+
+### Semak selepas hari yang sibuk
+Tanya pasukan apa yang melambatkan keadaan dan apa yang membantu, kemudian ubah satu perkara pada satu masa.
+
+## 7. Kumpul maklum balas dan pulih daripada kesilapan
+
+### Minta maklum balas dengan cara yang mudah
+Soalan pendek di kaunter, kod QR untuk tinjauan pantas, atau mesej selepas pembelian memberi anda maklumat yang jujur. Panduan kami tentang memahami pelanggan anda menerangkan cara mudah untuk belajar.
+
+### Baca ulasan dan mesej secara berkala
+Cari corak, bukan sekadar aduan tunggal. Kongsikan pujian kepada pasukan dan juga masalah.
+
+> Pelanggan jarang mengharapkan kesempurnaan, tetapi mereka mengingati bagaimana anda bertindak apabila sesuatu tidak kena: permohonan maaf yang cepat dan pembaikan yang sebenar boleh meninggalkan kesan yang lebih kuat daripada lawatan yang tanpa cela.
+
+### Pulih dengan cepat dan ikhlas
+Apabila sesuatu tidak kena, mohon maaf, baikinya, dan beritahu pelanggan apa yang anda lakukan. Buat susulan jika pembaikan mengambil masa.
+
+### Simpan log yang ringkas
+Catat masalah berulang dan apa yang menyelesaikannya. Log pendek membantu anda mengesan kelemahan dalam latihan atau proses.
+
+### Ketahui hak pelanggan anda
+Pelanggan mempunyai hak berkaitan bayaran balik dan barang rosak, dan ini boleh berubah, jadi semak peraturan semasa. Panduan kami tentang aduan pelanggan, bayaran balik dan hak pengguna menerangkan tanggungjawab anda.
+
+## 8. Iktiraf perkhidmatan yang baik dan ukurnya
+
+### Puji tingkah laku yang khusus
+"Anda perasan pelanggan itu bersusah payah dan membantu tanpa diminta" mengajar lebih banyak daripada pujian umum. Katakan tidak lama selepas ia berlaku.
+
+### Beri ganjaran dengan cara yang kecil dan adil
+Pengiktirafan boleh berupa sebutan dalam sembang pasukan, bonus kecil atau pilihan pertama syif. Jadikan kriteria jelas dan adil.
+
+### Jejaki beberapa angka mudah
+Ukuran yang berguna termasuk skor ulasan, aduan, pelanggan berulang, masa menunggu dan bayaran balik. Panduan kami tentang menjejaki prestasi perniagaan menerangkan angka mudah untuk diikuti.
+
+### Semak standard setiap suku tahun
+Semak sama ada standard anda masih sepadan dengan pelanggan anda, dan kemas kini apabila anda menambah produk atau mengubah waktu operasi.
+
+### Cari bantuan apabila perlu
+Jika anda memerlukan jurulatih atau pembimbing untuk membina program perkhidmatan, anda boleh [layari direktori](/ms) untuk profesional berhampiran anda, dan [cipta penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan dapat menemui perniagaan anda.
+
+## Kesilapan biasa PKS Malaysia dengan perkhidmatan pelanggan
+
+- **Bergantung pada pemilik untuk memberikan perkhidmatan yang baik.** Kualiti merosot apabila pemilik tiada, jadi tulis standard dan latih setiap orang, termasuk pekerja sambilan.
+- **Memberi pekerja peraturan tetapi tiada kuasa.** Pelanggan hilang sabar apabila pekerja perlu terus bertanya, jadi tetapkan had yang jelas untuk apa yang boleh dibaiki pekerja di tempat.
+- **Hanya bertindak balas terhadap aduan.** Pelanggan yang senyap hanya pergi, jadi minta maklum balas secara berkala dan cari corak.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Tulis lima atau enam tingkah laku perkhidmatan yang penting, dan senaraikan sepuluh soalan pelanggan yang paling lazim beserta jawapan.
+- **Seterusnya:** Adakan taklimat ringkas untuk setiap ahli pasukan, termasuk pekerja sambilan, dan persetujui apa yang boleh dibaiki pekerja di tempat.
+- **Kemudian:** Tambah soalan maklum balas yang mudah di kaunter atau selepas pembelian, dan kongsikan keputusan dengan pasukan.
+- **Setiap suku tahun:** Semak aduan, pujian dan angka utama, dan kemas kini standard anda.
+
+Perkhidmatan yang baik bukan bakat yang dilahirkan bersama sesetengah perniagaan. Ia ialah satu set tabiat yang boleh anda tuliskan, ajar dan amalkan, dan setiap pelanggan yang anda layan dengan baik ialah sebab untuk yang seterusnya kembali.`,
+        faqs: [
+          {
+            question: "Apakah standard perkhidmatan pelanggan?",
+            answer:
+              "Ia ialah senarai ringkas tingkah laku yang anda harapkan daripada setiap orang, seperti betapa cepat pelanggan disambut, bagaimana masalah dikendalikan, dan bagaimana pesanan disahkan. Tulis dalam kata-kata mudah supaya setiap ahli pasukan, termasuk pekerja sambilan, tahu rupa perkhidmatan yang baik dalam perniagaan anda.",
+          },
+          {
+            question: "Bagaimanakah saya melatih pekerja baharu dalam perkhidmatan pelanggan?",
+            answer:
+              "Mulakan pada hari pertama dengan standard dan produk anda, tunjukkan interaksi yang baik, biarkan mereka berlatih dengan anda memerhati, dan beri maklum balas yang mesra serta-merta. Pasangkan mereka dengan rakan sekerja yang melayan dengan baik dan buat susulan selepas beberapa hari.",
+          },
+          {
+            question: "Patutkah saya menggunakan skrip untuk pekerja?",
+            answer:
+              "Gunakan frasa siap untuk menyambut, memohon maaf dan menutup supaya pekerja baharu berasa yakin, tetapi biarkan mereka menyebutnya dengan suara sendiri. Skrip yang kaku kedengaran seperti robot, dan pelanggan perasan apabila pekerja membaca daripada kad.",
+          },
+          {
+            question: "Berapa banyak kebebasan yang patut diberikan kepada pekerja untuk menyelesaikan masalah?",
+            answer:
+              "Tetapkan had yang jelas, seperti menggantikan barang yang rosak atau memberi diskaun kecil sehingga jumlah tertentu, supaya pekerja boleh menyelesaikan isu biasa tanpa mencari anda. Sokong keputusan yang munasabah, dan persetujui situasi mana yang mesti dirujuk ke atas.",
+          },
+          {
+            question: "Bagaimanakah saya mengendalikan waktu sibuk tanpa perkhidmatan merosot?",
+            answer:
+              "Rancang tenaga kerja sekitar waktu puncak anda, beri isyarat kepada pelanggan yang menunggu, sediakan barang popular lebih awal, permudahkan menu atau proses pada waktu puncak, dan semak apa yang melambatkan keadaan selepas hari yang sibuk.",
+          },
+          {
+            question: "Apakah yang patut dilakukan pekerja apabila pelanggan mengadu?",
+            answer:
+              "Dengar tanpa mencelah, mohon maaf atas pengalaman itu, tanya apa yang boleh membantu, baikinya atau terangkan langkah seterusnya, dan berterima kasih kepada pelanggan. Persetujui lebih awal bila hendak merujuk kepada anda, seperti kebimbangan keselamatan, bayaran balik besar atau tingkah laku kasar.",
+          },
+          {
+            question: "Bagaimanakah saya boleh mengukur perkhidmatan pelanggan dalam perniagaan kecil?",
+            answer:
+              "Jejaki beberapa angka mudah, seperti skor ulasan, aduan, pelanggan berulang, masa menunggu dan bayaran balik, dan tanya pelanggan soalan pendek di kaunter atau selepas pembelian. Semak keputusan bersama pasukan anda setiap suku tahun.",
+          },
+          {
+            question: "Bagaimanakah saya mengiktiraf perkhidmatan yang baik dalam kalangan pekerja?",
+            answer:
+              "Puji tingkah laku yang khusus tidak lama selepas ia berlaku, dan beri ganjaran dengan cara yang kecil dan adil, seperti sebutan dalam pasukan, bonus kecil atau pilihan pertama syif. Jadikan kriteria jelas supaya pengiktirafan terasa adil.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "quotations-proposals-and-written-estimates-for-malaysian-smes",
+    title: "Using Quotations, Proposals, and Written Estimates: Winning Jobs and Avoiding Disputes for Malaysian SMEs",
+    seoTitle: "Quotations, Proposals and Written Estimates in Malaysia",
+    seoDescription:
+      "How Malaysian SMEs can write clear quotations and proposals: cost jobs honestly, define scope, handle changes and deposits, follow up and avoid disputes.",
+    coverImage: {
+      file: "quotations-and-written-estimates-cover.webp",
+      mimeType: "image/webp",
+      alt: "A man in a black shirt writing notes in an open notebook at a dark table in a meeting room, with a whiteboard and white chairs behind him",
+      altTranslations: {
+        zh: "一位身穿黑衬衫的男士在会议室的深色桌子前，在打开的笔记本上做记录，身后是白板和白色椅子",
+        ms: "Seorang lelaki berbaju hitam menulis nota dalam buku nota yang terbuka di meja gelap di bilik mesyuarat, dengan papan putih dan kerusi putih di belakangnya",
+      },
+    },
+    contentImages: {
+      signing: {
+        file: "quotations-and-written-estimates-signing.webp",
+        mimeType: "image/webp",
+        alt: "A man in glasses, a black blazer and a pink shirt signing a paper on a clipboard at a wooden desk beside a window with blinds",
+        altTranslations: {
+          zh: "一位戴眼镜、身穿黑色西装外套和粉红色衬衫的男士，在靠近百叶窗的木桌前，在写字板上的纸上签名",
+          ms: "Seorang lelaki berkaca mata, berblazer hitam dan berbaju merah jambu menandatangani kertas pada papan klip di meja kayu di tepi tingkap berlangsir bidai",
+        },
+        after: "Turn an accepted quotation into a short written agreement before work begins.",
+        afterTranslations: {
+          zh: "在工作开始之前，把已接受的报价单变成一份简短的书面协议。",
+          ms: "Jadikan sebut harga yang diterima sebagai perjanjian bertulis yang ringkas sebelum kerja bermula.",
+        },
+      },
+    },
+    excerpt:
+      "A clear written quotation wins jobs, sets expectations, and protects both sides when plans change. This guide helps Malaysian SMEs decide when to quote and when to propose, cost jobs honestly, include scope, exclusions, and change rules, handle deposits and validity, follow up without pressure, and settle disagreements calmly.",
+    body: `Many disputes between small businesses and their customers begin with a few words: "I thought that was included." A phone call, a chat message, or a figure on the back of an envelope leaves too much room for each side to remember something different.
+
+A good written quotation does two jobs. It helps you win the work by showing that you are organised and honest, and it protects you and the customer when the job changes, costs rise, or someone forgets what was agreed.
+
+This is general information, not legal or tax advice. Consumer, contract, and tax rules change over time, and some details in this guide may be out of date. Confirm current requirements with the relevant authorities or a professional before you rely on them.
+
+## 1. Know when to quote and when to propose
+
+### Use a quotation for clear, defined jobs
+When the customer knows what they want, such as printing, repairs, catering for a set number of guests, or a standard installation, a short quotation with a price and scope is enough.
+
+### Use a proposal for open or complex jobs
+When the customer has a problem but not a solution, such as a website, a renovation, or a training programme, write a proposal that explains your understanding, your approach, the steps, the timeline, and the price.
+
+### Use an estimate when the cost cannot be fixed yet
+Some jobs, such as repairs, cannot be priced exactly until you open them up. Say clearly that it is an estimate, explain what could change it, and agree how you will confirm any increase.
+
+### Decide whether to charge for quoting
+Simple quotes are usually free. Detailed designs, surveys, or tests can take real time, so consider a fee that you credit if the customer proceeds.
+
+### Match the effort to the size of the job
+A small order needs a short quote. A large or risky job deserves more detail. Spending a day on a quote that has little chance of winning is a poor trade.
+
+## 2. Cost the job honestly
+
+### List every cost
+Include materials, labour, transport, equipment, subcontractors, permits, and your own time for planning and follow-up. Our guide on pricing products and services explains how to build up a price.
+
+### Add a margin for the unexpected
+Jobs rarely go exactly as planned. Build in a sensible allowance, and be honest about it rather than hiding it in vague wording.
+
+### Check your real hours
+Look at how long similar jobs took in the past, not how long you hope this one will take. Our guide on tracking business performance explains how to learn from your numbers.
+
+### Keep your profit in the price
+Winning a job at a price that loses money is not winning. If you cannot do the work profitably, it is better to say no politely.
+
+### Think about tax and charges
+If you are registered for tax, make clear whether the price includes it, and confirm current requirements with the Royal Malaysian Customs Department or a tax adviser. Be transparent about every extra charge.
+
+## 3. Write a clear quotation
+
+### Put the basics at the top
+Show your business name and contact details, the customer's name, the date, a reference number, and the job title. Our guide on invoicing and getting paid explains how consistent numbering helps.
+
+### Describe the work in plain words
+List what you will do, what you will supply, quantities, sizes, and standards, so that the customer can picture the result. Avoid vague words such as "etc." and "as needed".
+
+### Show prices clearly
+Break down the price into items where it helps, or give a clear total for simple jobs. State the currency, whether tax is included, and what the total covers. In Malaysia, a misleading impression that a price covers everything when extra charges are imposed separately can cause trouble, so list extras openly.
+
+### State the timeline
+Give a start date, a finish date or duration, and what the customer must provide on time, such as access, approvals, or materials.
+
+### Add the terms
+Include payment terms, validity, deposits, change rules, and how to accept. Keep wording short and plain. Our guide on contracts and terms for small businesses explains what to include.
+
+## 4. Define scope, exclusions, and changes
+
+### Write down what is included
+Be specific about deliverables, such as the number of design drafts, the areas to be painted, or the days of training.
+
+### Write down what is not included
+List the items that are commonly assumed but not part of the price, such as removal of old materials, permits, or travel outside a certain area.
+
+### Set a simple change process
+Agree that any change in scope will be confirmed in writing, with the effect on price and time, before work begins. This one habit prevents many disputes.
+
+### Name your assumptions
+State what you have assumed, such as the condition of the site or the customer supplying files, and say what happens if the assumption proves wrong.
+
+### Be clear about approvals and revisions
+If the customer needs to approve stages or can request revisions, say how many and how long approvals take.
+
+## 5. Handle validity and deposits
+
+### Set a validity period
+Prices change with materials and demand. State how long the quote is valid, such as fourteen or thirty days, and what happens after that.
+
+### Ask for a deposit where it makes sense
+A deposit covers costs, such as materials or reserved time, and shows commitment. Explain what it covers and when the balance is due. Our guide on collecting late payments explains how clear payment terms help.
+
+### Be careful with deposit and cancellation terms
+Consumers have rights, and terms that are unfair or unclear can be challenged. Rules and practice can change, so confirm what applies to your type of job with the relevant authority or a lawyer rather than relying on assumptions.
+
+### Plan stage payments for bigger jobs
+Link payments to clear milestones, so that both sides share the risk. Describe each milestone in plain terms.
+
+### Give receipts for every payment
+Issue a receipt for deposits and payments, and keep copies. Our guide on bookkeeping and accounting basics explains simple record keeping.
+
+## 6. Present and follow up without pressure
+
+### Send it promptly
+A clear quote sent within a day often beats a better quote that arrives a week later.
+
+### Walk through it when you can
+For larger jobs, call or meet the customer to explain the quote and answer questions. It builds trust and reveals misunderstandings.
+
+### Explain your value
+Briefly say why your price is what it is, such as quality materials, experience, or warranty. Our guide on quality control and warranties explains how to back your work.
+
+### Follow up politely
+Check in after a few days with a short message. Offer to answer questions rather than pushing for a decision.
+
+### Learn from lost quotes
+When you lose a job, ask politely why. The answers show whether the problem is price, timing, trust, or fit.
+
+## 7. Turn an accepted quote into an agreement
+
+### Put it in writing
+Turn an accepted quotation into a short written agreement before work begins. A signed or confirmed quote, with the scope, price, timeline, and terms, is often enough for a simple job. For larger jobs, ask a lawyer to help with a fuller contract.
+
+### Record the acceptance
+Ask the customer to confirm in writing, whether by signature, email, or a clear chat reply. Keep a copy of the message.
+
+### Check stamping and formal requirements
+Some written agreements may need stamping or other formalities, depending on their type and value. Ask a lawyer or the relevant authority whether this applies to you.
+
+### Confirm the details before starting
+Restate the start date, the access arrangements, the contact person, and the payment schedule.
+
+### Keep one version
+Version confusion causes disputes. Make sure both sides refer to the same final document.
+
+> A quotation is not paperwork for its own sake: it is a conversation put in writing, and the clearer it is, the less room there is for an argument later.
+
+## 8. Handle disagreements and keep good records
+
+### Go back to the document
+When there is a disagreement, start by reading the quote and any written changes together. Most issues are settled by looking at what was agreed.
+
+### Listen and look for a fair fix
+Ask what the customer expected, and consider a partial solution, such as a small adjustment or an agreed change order.
+
+### Document what you did
+Keep photos, messages, and records of work done. Our guide on handling difficult customers and online reviews explains how to respond calmly.
+
+### Know your options
+If a dispute cannot be settled, ask a lawyer about mediation or other routes. For consumer disputes, the Tribunal for Consumer Claims is one option, though its limits and rules should be checked.
+
+### Keep templates and records for repeat clients
+Save your quotation template and past quotes, and refine them after each job. If you want help from a lawyer, an accountant, or a business adviser, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so that customers can find your business.
+
+## Common mistakes Malaysian SMEs make with quotations
+
+- **Quoting by phone or chat with no written scope.** Each side remembers something different, so put the price, scope, and exclusions in writing.
+- **Leaving out exclusions and a change process.** Extras become arguments, so list what is not included and confirm every change in writing before work begins.
+- **Pricing without checking real costs.** A won job that loses money is a loss, so list every cost and add a sensible margin.
+
+## Where to start
+
+- **This week:** Create a one-page quotation template with your details, scope, exclusions, validity, and payment terms.
+- **Next:** Review the last three jobs and note which costs and extras you missed.
+- **Then:** Add a simple change process and a short acceptance line to every quote.
+- **Every quarter:** Review won and lost quotes, update your prices, and refine your template.
+
+A clear quotation takes a little more time up front and saves a great deal of trouble later. It shows customers that you are organised and fair, and it gives you something solid to point to when memories differ.`,
+    faqs: [
+      {
+        question: "What is the difference between a quotation, an estimate, and a proposal?",
+        answer:
+          "A quotation gives a fixed price for a clearly defined job. An estimate is an approximate price when the final cost cannot be known yet, so say what could change it. A proposal explains your understanding of the problem, your approach, the timeline, and the price for an open or complex job.",
+      },
+      {
+        question: "What should a quotation include?",
+        answer:
+          "Your business details, the customer's name, the date and a reference number, a plain description of the work, clear prices and what they cover, the timeline, payment terms, validity, deposits, change rules, and how to accept. Keep the wording short and simple.",
+      },
+      {
+        question: "How long should a quotation stay valid?",
+        answer:
+          "It depends on how fast your costs change. Fourteen or thirty days is common. State the validity period on the quote and say what happens afterwards, such as the price being reviewed.",
+      },
+      {
+        question: "Can I ask for a deposit?",
+        answer:
+          "Yes, a deposit is common and covers early costs such as materials or reserved time. Explain what it covers and when the balance is due, give a receipt, and check the rules on deposits and cancellation for your type of job with the relevant authority or a lawyer, because unclear or unfair terms can be challenged.",
+      },
+      {
+        question: "How do I handle changes after the customer accepts the quote?",
+        answer:
+          "Agree a simple change process in the quote: any change in scope is confirmed in writing, with the effect on price and time, before the extra work begins. This one habit prevents many disputes.",
+      },
+      {
+        question: "Should I include tax in my quotation?",
+        answer:
+          "If you are registered for tax, state clearly whether your prices include it, and be open about every extra charge. Rules change, so confirm current requirements with the Royal Malaysian Customs Department or a tax adviser.",
+      },
+      {
+        question: "How do I follow up on a quotation without being pushy?",
+        answer:
+          "Send it promptly, walk through it with the customer if the job is large, and check in after a few days with a short, polite message offering to answer questions. If you lose the job, ask politely why so that you can learn.",
+      },
+      {
+        question: "What if the customer disputes the price or the work later?",
+        answer:
+          "Go back to the written quote and any confirmed changes, listen to what the customer expected, and look for a fair fix such as a small adjustment. Keep photos and records of the work, and if you cannot agree, ask a lawyer about mediation or other options.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "使用报价单、提案和书面估价：马来西亚中小企业如何赢得工作并避免纠纷",
+        excerpt:
+          "一份清楚的书面报价单能赢得工作、设定期望，并在计划改变时保护双方。本指南帮助马来西亚中小企业决定何时报价、何时提案，诚实地估算工作成本，写明范围、不包括的项目和变更规则，处理订金和有效期，不施压地跟进，并冷静地解决分歧。",
+        body: `小企业与顾客之间的许多纠纷，始于几个字：“我以为那是包括在内的。”一通电话、一则聊天讯息，或信封背面的一个数字，让双方有太多空间各自记住不同的东西。
+
+一份好的书面报价单有两个作用。它通过展示您有条理而诚实来帮助您赢得工作，并在工作改变、成本上升或有人忘记约定内容时，保护您和顾客。
+
+本文仅提供一般信息，并非法律或税务建议。消费者、合约和税务的规定会随时间变化，本指南的部分细节可能已经过时。在依赖它们之前，请向相关主管单位或专业人士确认现行要求。
+
+## 1. 知道何时报价、何时提案
+
+### 对明确界定的工作使用报价单
+当顾客知道自己想要什么，例如印刷、维修、为固定人数的宾客提供餐饮，或标准安装，一份附有价格和范围的简短报价单就足够了。
+
+### 对开放或复杂的工作使用提案
+当顾客有问题却没有解决方案，例如网站、装修或培训计划，请写一份提案，说明您的理解、您的做法、步骤、时间表和价格。
+
+### 当成本无法固定时使用估价
+有些工作，例如维修，在打开检查之前无法准确定价。请清楚说明这是估价，解释什么可能改变它，并约定您将如何确认任何增加。
+
+### 决定是否收取报价费用
+简单的报价通常免费。详细的设计、勘察或测试可能需要花很多时间，所以可以考虑收取一笔费用，如果顾客继续进行就抵扣。
+
+### 让投入配合工作的大小
+小订单需要简短的报价。大型或有风险的工作值得更多的细节。花一天时间做一份几乎没有机会赢的报价，是不划算的交易。
+
+## 2. 诚实地估算工作成本
+
+### 列出每一项成本
+包括材料、人工、运输、设备、分包商、许可证，以及您自己用于规划和跟进的时间。我们关于产品和服务定价的指南解释了如何构建价格。
+
+### 为意外情况加一笔利润空间
+工作很少完全按计划进行。请预留合理的余地，并坦诚说明，而不是藏在含糊的措辞里。
+
+### 核对您的实际工时
+看看过去类似的工作花了多长时间，而不是您希望这次花多长时间。我们关于追踪业务表现的指南解释了如何从数字中学习。
+
+### 把利润留在价格里
+以亏本的价格赢得一份工作并不算赢。如果您无法以有利润的方式完成工作，礼貌地说不会更好。
+
+### 考虑税务和收费
+如果您已登记税务，请说明价格是否含税，并向皇家马来西亚关税局或税务顾问确认现行要求。对每一项额外收费保持透明。
+
+## 3. 写一份清楚的报价单
+
+### 把基本资料放在最上面
+写上您的企业名称和联络方式、顾客的名字、日期、参考编号和工作标题。我们关于开发票与收款的指南解释了一致的编号如何有帮助。
+
+### 用平实的话描述工作
+列出您将做什么、将提供什么、数量、尺寸和标准，让顾客能想象出结果。避免“等等”和“视需要而定”之类含糊的字眼。
+
+### 清楚地显示价格
+在有帮助时把价格分成项目，或对简单的工作给出一个清楚的总数。说明货币、是否含税，以及总数涵盖什么。在马来西亚，如果让人误以为价格已包括一切，而额外费用另行收取，可能惹上麻烦，所以请公开列出额外项目。
+
+### 说明时间表
+给出开始日期、完成日期或工期，以及顾客必须按时提供的东西，例如进场、批准或材料。
+
+### 加上条款
+包括付款条件、有效期、订金、变更规则和接受的方式。让措辞简短平实。我们关于小企业合约与条款的指南解释了应包括什么。
+
+## 4. 界定范围、不包括的项目和变更
+
+### 写下包括什么
+对交付成果要具体，例如设计草稿的数量、要油漆的区域，或培训的天数。
+
+### 写下不包括什么
+列出常被假设但不在价格之内的项目，例如拆除旧材料、许可证，或超出某个区域的交通。
+
+### 订立简单的变更流程
+约定任何范围的变更，都要在工作开始之前以书面确认，并写明对价格和时间的影响。光是这一个习惯，就能防止许多纠纷。
+
+### 说出您的假设
+说明您做了哪些假设，例如现场的状况或顾客提供文件，并说明假设不成立时会怎样。
+
+### 对批准和修改要清楚
+如果顾客需要批准各个阶段或可以要求修改，请说明有几次，以及批准需要多长时间。
+
+## 5. 处理有效期和订金
+
+### 设定有效期
+价格会随材料和需求而变。请说明报价的有效期，例如十四天或三十天，以及期限之后会怎样。
+
+### 在合适的时候收取订金
+订金用来支付成本，例如材料或预留的时间，也显示承诺。请说明它涵盖什么，以及余款何时到期。我们关于追收逾期付款的指南解释了清楚的付款条件如何有帮助。
+
+### 对订金和取消的条款要谨慎
+消费者享有权益，不公平或不清楚的条款可能被质疑。规定和做法可能变化，所以请向相关主管单位或律师确认适用于您这类工作的规定，而不要想当然。
+
+### 为较大的工作规划分阶段付款
+把付款与清楚的里程碑挂钩，让双方分担风险。用平实的话描述每个里程碑。
+
+### 每笔付款都开具收据
+为订金和付款开具收据，并保存副本。我们关于簿记与会计基础的指南解释了简单的记录方法。
+
+## 6. 不施压地提交和跟进
+
+### 及时发送
+一天之内发出的清楚报价，往往胜过一星期后才到的更好的报价。
+
+### 可能时当面讲解
+对较大的工作，请致电或会见顾客，解释报价并回答问题。这能建立信任并揭露误解。
+
+### 解释您的价值
+简要说明您的价格为何如此，例如优质材料、经验或保修。我们关于质量控制与保修的指南解释了如何为您的工作做后盾。
+
+### 礼貌地跟进
+几天之后以简短的讯息问候。主动提出回答问题，而不是催促做决定。
+
+### 从失去的报价中学习
+当您失去一份工作时，礼貌地问问原因。答案会显示问题出在价格、时机、信任还是适配。
+
+## 7. 把已接受的报价变成协议
+
+### 白纸黑字写下来
+在工作开始之前，把已接受的报价单变成一份简短的书面协议。一份已签署或已确认的报价单，写明范围、价格、时间表和条款，对简单的工作往往就足够了。对较大的工作，请律师协助拟订更完整的合约。
+
+### 记录接受的凭据
+请顾客以书面确认，无论是签名、电邮还是清楚的聊天回复。保存讯息的副本。
+
+### 查明印花税和正式要求
+有些书面协议可能需要盖印花或其他手续，视其类型和价值而定。请向律师或相关主管单位询问这是否适用于您。
+
+### 开工前确认细节
+重申开始日期、进场安排、联络人和付款时间表。
+
+### 只保留一个版本
+版本混乱会引起纠纷。请确保双方参照同一份最终文件。
+
+> 报价单不是为文书而文书：它是把一次谈话写成文字，而它越清楚，日后争吵的空间就越小。
+
+## 8. 处理分歧并保存良好的记录
+
+### 回到文件上
+出现分歧时，先一起阅读报价单和任何书面变更。大多数问题通过查看约定的内容就能解决。
+
+### 倾听并寻找公平的解决办法
+问问顾客期望什么，并考虑部分解决的办法，例如小幅调整或约定的变更单。
+
+### 记录您所做的事
+保存照片、讯息和已完成工作的记录。我们关于处理难缠顾客和网络评价的指南解释了如何冷静地回应。
+
+### 知道您的选择
+如果纠纷无法解决，请向律师询问调解或其他途径。对于消费者纠纷，消费者索赔仲裁庭是一个选择，不过应查明它的限额和规则。
+
+### 为回头客保存模板和记录
+保存您的报价单模板和过去的报价，并在每次工作后加以改进。如果您需要律师、会计师或商业顾问的协助，您可以[浏览名录](/zh)寻找附近的专业人士，并[创建免费商家列表](/zh/signup)，让顾客找到您的业务。
+
+## 马来西亚中小企业在报价方面常犯的错误
+
+- **通过电话或聊天报价而没有书面范围。** 双方各自记住不同的东西，所以请把价格、范围和不包括的项目写下来。
+- **漏掉不包括的项目和变更流程。** 额外的东西会变成争吵，所以请列出不包括什么，并在工作开始之前以书面确认每一项变更。
+- **没有核对真实成本就定价。** 赢得一份亏本的工作是一种损失，所以请列出每一项成本并加上合理的利润空间。
+
+## 从哪里开始
+
+- **本周：** 制作一份一页的报价单模板，包括您的资料、范围、不包括的项目、有效期和付款条件。
+- **接着：** 回顾最近的三份工作，记下您漏掉的成本和额外项目。
+- **然后：** 在每份报价单中加入简单的变更流程和一句简短的接受声明。
+- **每季度：** 检讨赢得和失去的报价，更新您的价格，并改进您的模板。
+
+一份清楚的报价单在前期多花一点时间，却能在日后省下许多麻烦。它向顾客显示您有条理而公平，也在记忆各不相同时，给您一样实在的东西可以指出来。`,
+        faqs: [
+          {
+            question: "报价单、估价和提案有什么区别？",
+            answer:
+              "报价单为明确界定的工作给出固定价格。估价是在最终成本尚未知晓时的大约价格，所以请说明什么可能改变它。提案则针对开放或复杂的工作，说明您对问题的理解、您的做法、时间表和价格。",
+          },
+          {
+            question: "报价单应该包括什么？",
+            answer:
+              "您的企业资料、顾客的名字、日期和参考编号、对工作的平实描述、清楚的价格及其涵盖的内容、时间表、付款条件、有效期、订金、变更规则，以及如何接受。让措辞简短而简单。",
+          },
+          {
+            question: "报价单应该有效多久？",
+            answer:
+              "视您的成本变化有多快而定。十四天或三十天很常见。请在报价单上说明有效期，并说明之后会怎样，例如重新检视价格。",
+          },
+          {
+            question: "我可以要求订金吗？",
+            answer:
+              "可以，订金很常见，用来支付材料或预留时间等前期成本。请说明它涵盖什么以及余款何时到期，开具收据，并向相关主管单位或律师确认适用于您这类工作的订金和取消规定，因为不清楚或不公平的条款可能被质疑。",
+          },
+          {
+            question: "顾客接受报价后，我如何处理变更？",
+            answer:
+              "在报价单中约定一个简单的变更流程：任何范围的变更，都要在额外工作开始之前以书面确认，并写明对价格和时间的影响。光是这一个习惯，就能防止许多纠纷。",
+          },
+          {
+            question: "我的报价单应该包括税吗？",
+            answer:
+              "如果您已登记税务，请清楚说明您的价格是否含税，并对每一项额外收费保持公开。规定会变化，所以请向皇家马来西亚关税局或税务顾问确认现行要求。",
+          },
+          {
+            question: "我如何跟进报价而不显得咄咄逼人？",
+            answer:
+              "及时发送，如果工作较大就与顾客一起讲解，几天后以简短而礼貌的讯息问候，并主动提出回答问题。如果失去了这份工作，请礼貌地问问原因，以便学习。",
+          },
+          {
+            question: "如果顾客日后对价格或工作有异议怎么办？",
+            answer:
+              "回到书面报价单和任何已确认的变更，倾听顾客的期望，并寻找公平的解决办法，例如小幅调整。保存工作的照片和记录，如果无法达成一致，请向律师询问调解或其他选择。",
+          },
+        ],
+      },
+      ms: {
+        title: "Menggunakan Sebut Harga, Cadangan dan Anggaran Bertulis: Memenangi Kerja dan Mengelak Pertikaian untuk PKS Malaysia",
+        excerpt:
+          "Sebut harga bertulis yang jelas memenangi kerja, menetapkan jangkaan, dan melindungi kedua-dua pihak apabila rancangan berubah. Panduan ini membantu PKS Malaysia memutuskan bila hendak memberi sebut harga dan bila hendak mencadangkan, mengira kos kerja dengan jujur, memasukkan skop, pengecualian dan peraturan perubahan, mengendalikan deposit dan tempoh sah, membuat susulan tanpa tekanan, dan menyelesaikan perselisihan dengan tenang.",
+        body: `Banyak pertikaian antara perniagaan kecil dan pelanggan mereka bermula dengan beberapa patah kata: "Saya ingat itu sudah termasuk." Panggilan telefon, mesej sembang atau angka di belakang sampul surat meninggalkan terlalu banyak ruang untuk setiap pihak mengingati sesuatu yang berbeza.
+
+Sebut harga bertulis yang baik melakukan dua tugas. Ia membantu anda memenangi kerja dengan menunjukkan bahawa anda teratur dan jujur, dan ia melindungi anda serta pelanggan apabila kerja berubah, kos meningkat atau seseorang lupa apa yang dipersetujui.
+
+Ini maklumat umum, bukan nasihat undang-undang atau cukai. Peraturan pengguna, kontrak dan cukai berubah dari semasa ke semasa, dan sebahagian butiran dalam panduan ini mungkin sudah lapuk. Sahkan keperluan semasa dengan pihak berkuasa berkaitan atau seorang profesional sebelum anda bergantung padanya.
+
+## 1. Ketahui bila hendak memberi sebut harga dan bila hendak mencadangkan
+
+### Gunakan sebut harga untuk kerja yang jelas dan tertakrif
+Apabila pelanggan tahu apa yang mereka mahu, seperti percetakan, pembaikan, katering untuk bilangan tetamu tertentu, atau pemasangan piawai, sebut harga ringkas dengan harga dan skop sudah memadai.
+
+### Gunakan cadangan untuk kerja yang terbuka atau kompleks
+Apabila pelanggan mempunyai masalah tetapi tiada penyelesaian, seperti laman web, pengubahsuaian atau program latihan, tulis cadangan yang menerangkan pemahaman anda, pendekatan anda, langkah, garis masa dan harga.
+
+### Gunakan anggaran apabila kos belum dapat ditetapkan
+Sesetengah kerja, seperti pembaikan, tidak dapat dihargakan dengan tepat sehingga anda membukanya. Nyatakan dengan jelas bahawa ia anggaran, terangkan apa yang boleh mengubahnya, dan persetujui bagaimana anda akan mengesahkan sebarang kenaikan.
+
+### Tentukan sama ada hendak mengenakan bayaran untuk memberi sebut harga
+Sebut harga mudah biasanya percuma. Reka bentuk terperinci, tinjauan atau ujian boleh mengambil masa yang sebenar, jadi pertimbangkan bayaran yang anda kreditkan jika pelanggan meneruskan.
+
+### Padankan usaha dengan saiz kerja
+Pesanan kecil memerlukan sebut harga ringkas. Kerja yang besar atau berisiko wajar mendapat lebih banyak butiran. Menghabiskan sehari untuk sebut harga yang kecil peluang menang ialah pertukaran yang lemah.
+
+## 2. Kira kos kerja dengan jujur
+
+### Senaraikan setiap kos
+Sertakan bahan, buruh, pengangkutan, peralatan, subkontraktor, permit, dan masa anda sendiri untuk perancangan dan susulan. Panduan kami tentang menetapkan harga produk dan perkhidmatan menerangkan cara membina harga.
+
+### Tambah margin untuk perkara yang tidak dijangka
+Kerja jarang berjalan tepat seperti yang dirancang. Masukkan peruntukan yang munasabah, dan berterus terang tentangnya dan bukan menyembunyikannya dalam kata-kata yang kabur.
+
+### Semak jam sebenar anda
+Lihat berapa lama kerja serupa mengambil masa pada masa lalu, bukan berapa lama anda harap yang ini akan mengambil masa. Panduan kami tentang menjejaki prestasi perniagaan menerangkan cara belajar daripada angka anda.
+
+### Kekalkan keuntungan anda dalam harga
+Memenangi kerja pada harga yang rugi bukanlah menang. Jika anda tidak boleh melakukan kerja itu dengan menguntungkan, lebih baik menolak dengan sopan.
+
+### Fikirkan tentang cukai dan caj
+Jika anda berdaftar untuk cukai, jelaskan sama ada harga termasuk cukai, dan sahkan keperluan semasa dengan Jabatan Kastam Diraja Malaysia atau penasihat cukai. Telus tentang setiap caj tambahan.
+
+## 3. Tulis sebut harga yang jelas
+
+### Letakkan asasnya di atas
+Tunjukkan nama perniagaan dan butiran hubungan anda, nama pelanggan, tarikh, nombor rujukan dan tajuk kerja. Panduan kami tentang membuat invois dan mendapat bayaran menerangkan bagaimana penomboran yang konsisten membantu.
+
+### Terangkan kerja dengan kata-kata mudah
+Senaraikan apa yang akan anda lakukan, apa yang akan anda bekalkan, kuantiti, saiz dan standard, supaya pelanggan dapat membayangkan hasilnya. Elakkan perkataan kabur seperti "dan sebagainya" dan "mengikut keperluan".
+
+### Tunjukkan harga dengan jelas
+Pecahkan harga kepada item jika ia membantu, atau berikan jumlah yang jelas untuk kerja mudah. Nyatakan mata wang, sama ada cukai termasuk, dan apa yang diliputi oleh jumlah itu. Di Malaysia, tanggapan mengelirukan bahawa harga meliputi segala-galanya apabila caj tambahan dikenakan secara berasingan boleh menimbulkan masalah, jadi senaraikan tambahan secara terbuka.
+
+### Nyatakan garis masa
+Berikan tarikh mula, tarikh siap atau tempoh, dan apa yang mesti disediakan pelanggan tepat pada masanya, seperti akses, kelulusan atau bahan.
+
+### Tambah terma
+Sertakan syarat pembayaran, tempoh sah, deposit, peraturan perubahan dan cara menerima. Pastikan kata-katanya pendek dan mudah. Panduan kami tentang kontrak dan terma untuk perniagaan kecil menerangkan apa yang perlu disertakan.
+
+## 4. Tentukan skop, pengecualian dan perubahan
+
+### Tuliskan apa yang termasuk
+Jelas tentang hasil serahan, seperti bilangan draf reka bentuk, kawasan yang akan dicat, atau hari latihan.
+
+### Tuliskan apa yang tidak termasuk
+Senaraikan item yang lazimnya dianggap tetapi bukan sebahagian daripada harga, seperti pembuangan bahan lama, permit, atau perjalanan di luar kawasan tertentu.
+
+### Tetapkan proses perubahan yang mudah
+Persetujui bahawa sebarang perubahan skop akan disahkan secara bertulis, dengan kesan terhadap harga dan masa, sebelum kerja bermula. Satu tabiat ini menghalang banyak pertikaian.
+
+### Namakan andaian anda
+Nyatakan apa yang anda andaikan, seperti keadaan tapak atau pelanggan membekalkan fail, dan katakan apa yang berlaku jika andaian itu ternyata salah.
+
+### Jelas tentang kelulusan dan semakan
+Jika pelanggan perlu meluluskan peringkat atau boleh meminta semakan, katakan berapa banyak dan berapa lama kelulusan mengambil masa.
+
+## 5. Kendalikan tempoh sah dan deposit
+
+### Tetapkan tempoh sah
+Harga berubah mengikut bahan dan permintaan. Nyatakan berapa lama sebut harga itu sah, seperti empat belas atau tiga puluh hari, dan apa yang berlaku selepas itu.
+
+### Minta deposit jika munasabah
+Deposit menampung kos, seperti bahan atau masa yang ditempah, dan menunjukkan komitmen. Terangkan apa yang diliputinya dan bila baki perlu dibayar. Panduan kami tentang mengutip bayaran lewat menerangkan bagaimana syarat pembayaran yang jelas membantu.
+
+### Berhati-hati dengan terma deposit dan pembatalan
+Pengguna mempunyai hak, dan terma yang tidak adil atau tidak jelas boleh dicabar. Peraturan dan amalan boleh berubah, jadi sahkan apa yang terpakai untuk jenis kerja anda dengan pihak berkuasa berkaitan atau peguam dan bukan bergantung pada andaian.
+
+### Rancang bayaran peringkat untuk kerja yang lebih besar
+Kaitkan bayaran dengan pencapaian yang jelas, supaya kedua-dua pihak berkongsi risiko. Terangkan setiap pencapaian dengan istilah mudah.
+
+### Beri resit untuk setiap bayaran
+Keluarkan resit untuk deposit dan bayaran, dan simpan salinan. Panduan kami tentang asas simpan kira dan perakaunan menerangkan penyimpanan rekod yang mudah.
+
+## 6. Kemukakan dan buat susulan tanpa tekanan
+
+### Hantar dengan segera
+Sebut harga yang jelas yang dihantar dalam masa sehari sering mengalahkan sebut harga yang lebih baik yang tiba seminggu kemudian.
+
+### Terangkan bersama apabila boleh
+Untuk kerja yang lebih besar, hubungi atau jumpa pelanggan untuk menerangkan sebut harga dan menjawab soalan. Ia membina kepercayaan dan mendedahkan salah faham.
+
+### Terangkan nilai anda
+Katakan secara ringkas mengapa harga anda sebegitu, seperti bahan berkualiti, pengalaman atau waranti. Panduan kami tentang kawalan kualiti dan waranti menerangkan cara menyokong kerja anda.
+
+### Buat susulan dengan sopan
+Hubungi selepas beberapa hari dengan mesej pendek. Tawarkan untuk menjawab soalan dan bukan mendesak untuk keputusan.
+
+### Belajar daripada sebut harga yang hilang
+Apabila anda kehilangan kerja, tanya dengan sopan mengapa. Jawapannya menunjukkan sama ada masalahnya harga, masa, kepercayaan atau kesesuaian.
+
+## 7. Jadikan sebut harga yang diterima sebagai perjanjian
+
+### Tuliskan di atas kertas
+Jadikan sebut harga yang diterima sebagai perjanjian bertulis yang ringkas sebelum kerja bermula. Sebut harga yang ditandatangani atau disahkan, dengan skop, harga, garis masa dan terma, sering memadai untuk kerja yang mudah. Untuk kerja yang lebih besar, minta peguam membantu dengan kontrak yang lebih lengkap.
+
+### Rekodkan penerimaan
+Minta pelanggan mengesahkan secara bertulis, sama ada dengan tandatangan, e-mel atau balasan sembang yang jelas. Simpan salinan mesej itu.
+
+### Semak duti setem dan keperluan rasmi
+Sesetengah perjanjian bertulis mungkin memerlukan penyetemen atau urusan rasmi lain, bergantung pada jenis dan nilainya. Tanya peguam atau pihak berkuasa berkaitan sama ada ini terpakai kepada anda.
+
+### Sahkan butiran sebelum bermula
+Nyatakan semula tarikh mula, pengaturan akses, orang untuk dihubungi dan jadual pembayaran.
+
+### Simpan satu versi sahaja
+Kekeliruan versi menyebabkan pertikaian. Pastikan kedua-dua pihak merujuk dokumen akhir yang sama.
+
+> Sebut harga bukan kertas kerja demi kertas kerja: ia ialah perbualan yang dituliskan, dan semakin jelas ia, semakin kurang ruang untuk pertengkaran kemudian.
+
+## 8. Kendalikan perselisihan dan simpan rekod yang baik
+
+### Kembali kepada dokumen
+Apabila berlaku perselisihan, mulakan dengan membaca sebut harga dan sebarang perubahan bertulis bersama-sama. Kebanyakan isu diselesaikan dengan melihat apa yang dipersetujui.
+
+### Dengar dan cari penyelesaian yang adil
+Tanya apa yang dijangka pelanggan, dan pertimbangkan penyelesaian separa, seperti pelarasan kecil atau pesanan perubahan yang dipersetujui.
+
+### Dokumenkan apa yang anda lakukan
+Simpan gambar, mesej dan rekod kerja yang dilakukan. Panduan kami tentang menangani pelanggan sukar dan ulasan dalam talian menerangkan cara membalas dengan tenang.
+
+### Ketahui pilihan anda
+Jika pertikaian tidak dapat diselesaikan, tanya peguam tentang pengantaraan atau laluan lain. Untuk pertikaian pengguna, Tribunal Tuntutan Pengguna ialah satu pilihan, walaupun had dan peraturannya perlu disemak.
+
+### Simpan templat dan rekod untuk pelanggan berulang
+Simpan templat sebut harga anda dan sebut harga lepas, dan perbaikinya selepas setiap kerja. Jika anda mahukan bantuan daripada peguam, akauntan atau penasihat perniagaan, anda boleh [layari direktori](/ms) untuk profesional berhampiran anda, dan [cipta penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan dapat menemui perniagaan anda.
+
+## Kesilapan biasa PKS Malaysia dengan sebut harga
+
+- **Memberi sebut harga melalui telefon atau sembang tanpa skop bertulis.** Setiap pihak mengingati sesuatu yang berbeza, jadi tuliskan harga, skop dan pengecualian.
+- **Meninggalkan pengecualian dan proses perubahan.** Tambahan menjadi pertengkaran, jadi senaraikan apa yang tidak termasuk dan sahkan setiap perubahan secara bertulis sebelum kerja bermula.
+- **Menetapkan harga tanpa menyemak kos sebenar.** Kerja yang dimenangi tetapi rugi ialah kerugian, jadi senaraikan setiap kos dan tambah margin yang munasabah.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Cipta templat sebut harga satu muka surat dengan butiran, skop, pengecualian, tempoh sah dan syarat pembayaran anda.
+- **Seterusnya:** Semak tiga kerja terakhir dan catat kos serta tambahan yang anda terlepas.
+- **Kemudian:** Tambah proses perubahan yang mudah dan baris penerimaan yang pendek pada setiap sebut harga.
+- **Setiap suku tahun:** Semak sebut harga yang dimenangi dan yang hilang, kemas kini harga anda, dan perbaiki templat anda.
+
+Sebut harga yang jelas mengambil sedikit lebih masa pada awalnya dan menjimatkan banyak masalah kemudian. Ia menunjukkan kepada pelanggan bahawa anda teratur dan adil, dan ia memberi anda sesuatu yang kukuh untuk ditunjukkan apabila ingatan berbeza.`,
+        faqs: [
+          {
+            question: "Apakah perbezaan antara sebut harga, anggaran dan cadangan?",
+            answer:
+              "Sebut harga memberi harga tetap untuk kerja yang jelas tertakrif. Anggaran ialah harga kasar apabila kos akhir belum dapat diketahui, jadi nyatakan apa yang boleh mengubahnya. Cadangan menerangkan pemahaman anda tentang masalah, pendekatan anda, garis masa dan harga untuk kerja yang terbuka atau kompleks.",
+          },
+          {
+            question: "Apakah yang patut disertakan dalam sebut harga?",
+            answer:
+              "Butiran perniagaan anda, nama pelanggan, tarikh dan nombor rujukan, penerangan ringkas tentang kerja, harga yang jelas dan apa yang diliputinya, garis masa, syarat pembayaran, tempoh sah, deposit, peraturan perubahan dan cara menerima. Pastikan kata-katanya pendek dan mudah.",
+          },
+          {
+            question: "Berapa lama sebut harga patut kekal sah?",
+            answer:
+              "Bergantung pada betapa pantas kos anda berubah. Empat belas atau tiga puluh hari adalah biasa. Nyatakan tempoh sah pada sebut harga dan katakan apa yang berlaku selepas itu, seperti harga disemak semula.",
+          },
+          {
+            question: "Bolehkah saya meminta deposit?",
+            answer:
+              "Ya, deposit adalah biasa dan menampung kos awal seperti bahan atau masa yang ditempah. Terangkan apa yang diliputinya dan bila baki perlu dibayar, beri resit, dan semak peraturan tentang deposit dan pembatalan untuk jenis kerja anda dengan pihak berkuasa berkaitan atau peguam, kerana terma yang tidak jelas atau tidak adil boleh dicabar.",
+          },
+          {
+            question: "Bagaimanakah saya mengendalikan perubahan selepas pelanggan menerima sebut harga?",
+            answer:
+              "Persetujui proses perubahan yang mudah dalam sebut harga: sebarang perubahan skop disahkan secara bertulis, dengan kesan terhadap harga dan masa, sebelum kerja tambahan bermula. Satu tabiat ini menghalang banyak pertikaian.",
+          },
+          {
+            question: "Patutkah saya memasukkan cukai dalam sebut harga saya?",
+            answer:
+              "Jika anda berdaftar untuk cukai, nyatakan dengan jelas sama ada harga anda termasuk cukai, dan berterus terang tentang setiap caj tambahan. Peraturan berubah, jadi sahkan keperluan semasa dengan Jabatan Kastam Diraja Malaysia atau penasihat cukai.",
+          },
+          {
+            question: "Bagaimanakah saya membuat susulan sebut harga tanpa kelihatan mendesak?",
+            answer:
+              "Hantar dengan segera, terangkan bersama pelanggan jika kerjanya besar, dan hubungi selepas beberapa hari dengan mesej pendek dan sopan yang menawarkan untuk menjawab soalan. Jika anda kehilangan kerja itu, tanya dengan sopan mengapa supaya anda boleh belajar.",
+          },
+          {
+            question: "Bagaimana jika pelanggan mempertikaikan harga atau kerja kemudian?",
+            answer:
+              "Kembali kepada sebut harga bertulis dan sebarang perubahan yang disahkan, dengar apa yang dijangka pelanggan, dan cari penyelesaian yang adil seperti pelarasan kecil. Simpan gambar dan rekod kerja, dan jika anda tidak dapat bersetuju, tanya peguam tentang pengantaraan atau pilihan lain.",
+          },
+        ],
+      },
+    },
+  },
 ];

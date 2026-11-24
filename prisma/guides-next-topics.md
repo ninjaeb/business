@@ -15,17 +15,17 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Customer Service Standards and Training: Building Consistent, Friendly Service in Your Malaysian SME**
-   — Why service consistency drives repeat business, defining what good
-   service looks like for your business, scripts and flexible guidelines,
-   training new and part-time staff, empowering staff to solve problems,
-   handling peak times and queues, collecting and acting on feedback,
-   service recovery when things go wrong, recognising and rewarding good
-   service, and measuring it with simple numbers.
+1. **Raising Prices Without Losing Customers: Handling Inflation and Rising Costs in Your Malaysian SME**
+   — Why prices need regular review, tracking cost increases, deciding when
+   and how much to raise, small versus large increases, communicating the
+   change honestly, protecting value with bundles and sizes, grandfathering
+   loyal customers, price display rules for businesses (to hedge, confirm
+   current rules), handling pushback, and monitoring sales after a change.
 
-2. **Using Quotations, Proposals, and Written Estimates: Winning Jobs and Avoiding Disputes for Malaysian SMEs**
-   — When to quote and when to propose, costing a job honestly, what a
-   clear quotation includes, scope, exclusions and change requests,
-   validity periods and deposits (to hedge), following up without
-   pressure, turning an accepted quote into a simple agreement, handling
-   disagreements over scope, and keeping records for repeat clients.
+2. **Running Promotions, Discounts, and Bundles Without Hurting Your Margins: A Practical Guide for Malaysian SMEs**
+   — Setting a goal for each promotion, working out the real cost of a
+   discount, bundles and loyalty offers versus price cuts, timing around
+   festive periods and slow seasons, clear terms and limits, honest
+   advertising of "sale" prices (to hedge, confirm current rules), avoiding
+   training customers to wait for discounts, measuring results, and
+   learning for the next campaign.

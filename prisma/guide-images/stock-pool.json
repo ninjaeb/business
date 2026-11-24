@@ -1521,6 +1521,53 @@
       ],
       "description": "Woman in glasses and a rust kimono jacket folding a garment into a cardboard box with tissue paper",
       "usedBy": "packaging-and-going-greener-cover.webp"
+    },
+    {
+      "id": 39449724,
+      "tags": [
+        "service",
+        "market",
+        "vendor",
+        "customer",
+        "asian"
+      ],
+      "description": "Smiling vendor in glasses handing a paper bag of fresh chillies to a customer at a market stall",
+      "usedBy": "customer-service-standards-and-training-cover.webp"
+    },
+    {
+      "id": 8422706,
+      "tags": [
+        "service",
+        "grocery",
+        "customer",
+        "help"
+      ],
+      "description": "Shop assistant in an apron helping an elderly customer fill a red basket in a grocery store",
+      "usedBy": "customer-service-standards-and-training-help.webp"
+    },
+    {
+      "id": 8101724,
+      "tags": [
+        "quotation",
+        "meeting",
+        "notes",
+        "asian",
+        "office"
+      ],
+      "description": "Asian man in a black shirt writing notes in a notebook at a table in a meeting room",
+      "usedBy": "quotations-and-written-estimates-cover.webp"
+    },
+    {
+      "id": 7644145,
+      "tags": [
+        "quotation",
+        "contract",
+        "signing",
+        "asian",
+        "office"
+      ],
+      "description": "Asian man in glasses and a black blazer signing a paper on a clipboard at a wooden desk",
+      "usedBy": "quotations-and-written-estimates-signing.webp"
     }
   ]
 }
