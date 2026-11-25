@@ -663,7 +663,7 @@
         "succession"
       ],
       "description": "Smiling older woman running a market stall",
-      "usedBy": "selling-a-business-or-succession-planning-in-malaysia-cover.webp"
+      "usedBy": "cand-34594418.webp"
     },
     {
       "id": 8834107,
@@ -977,7 +977,8 @@
         "wrapping",
         "festive"
       ],
-      "description": "Cheerful young Asian woman wrapping a gift box near a Christmas tree"
+      "description": "Cheerful young woman wrapping a gift in kraft paper beside a decorated Christmas tree",
+      "usedBy": "running-promotions-and-discounts-festive.webp"
     },
     {
       "id": 7674982,
@@ -1087,7 +1088,7 @@
         "service"
       ],
       "description": "Barista and customer in a friendly exchange at a cafe counter",
-      "usedBy": "understanding-your-customers-cover.webp"
+      "usedBy": "cand-13735971.webp"
     },
     {
       "id": 4350094,
@@ -1568,6 +1569,41 @@
       ],
       "description": "Asian man in glasses and a black blazer signing a paper on a clipboard at a wooden desk",
       "usedBy": "quotations-and-written-estimates-signing.webp"
+    },
+    {
+      "id": 37682130,
+      "tags": [
+        "pricing",
+        "market",
+        "stall",
+        "calculator",
+        "asian"
+      ],
+      "description": "Woman in a pink headscarf writing in a small notepad at a grain stall with a calculator and scale",
+      "usedBy": "raising-prices-without-losing-customers-cover.webp"
+    },
+    {
+      "id": 7309213,
+      "tags": [
+        "promotion",
+        "bundle",
+        "gift",
+        "packing",
+        "mugs"
+      ],
+      "description": "Woman wrapping a blue mug in yellow tissue paper with more mugs and a paper bag nearby",
+      "usedBy": "running-promotions-and-discounts-cover.webp"
+    },
+    {
+      "id": 9594145,
+      "tags": [
+        "pricing",
+        "bundle",
+        "packaging",
+        "socks"
+      ],
+      "description": "Open cardboard box holding rolled socks with plain paper bands on a pale yellow surface",
+      "usedBy": "raising-prices-without-losing-customers-bundle.webp"
     }
   ]
 }

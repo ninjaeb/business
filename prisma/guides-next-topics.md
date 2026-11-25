@@ -15,17 +15,18 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Raising Prices Without Losing Customers: Handling Inflation and Rising Costs in Your Malaysian SME**
-   — Why prices need regular review, tracking cost increases, deciding when
-   and how much to raise, small versus large increases, communicating the
-   change honestly, protecting value with bundles and sizes, grandfathering
-   loyal customers, price display rules for businesses (to hedge, confirm
-   current rules), handling pushback, and monitoring sales after a change.
+1. **Building a Simple Employee Onboarding and First-Week Plan: Helping New Hires Settle In at Your Malaysian SME**
+   — Why the first weeks decide whether new hires stay, preparing before day
+   one (paperwork, access, equipment), a first-day welcome, a first-week
+   schedule, assigning a buddy, setting clear expectations and goals,
+   explaining pay, hours, and leave in plain words (to hedge, confirm current
+   rules), safety and conduct basics, collecting early feedback, and a
+   30-60-90-day check-in rhythm.
 
-2. **Running Promotions, Discounts, and Bundles Without Hurting Your Margins: A Practical Guide for Malaysian SMEs**
-   — Setting a goal for each promotion, working out the real cost of a
-   discount, bundles and loyalty offers versus price cuts, timing around
-   festive periods and slow seasons, clear terms and limits, honest
-   advertising of "sale" prices (to hedge, confirm current rules), avoiding
-   training customers to wait for discounts, measuring results, and
-   learning for the next campaign.
+2. **Selling Through Marketplaces and Social Commerce: Choosing Platforms, Listings, and Fees for Malaysian SMEs**
+   — Marketplace versus your own shop versus social selling, choosing
+   platforms (features and fees to hedge), setting up trustworthy listings,
+   pricing after platform and payment fees, handling orders and ratings,
+   chat and customer response times, rules on prohibited goods and claims (to
+   hedge), protecting your account, and growing without depending on one
+   platform.
