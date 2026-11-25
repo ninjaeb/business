@@ -46422,4 +46422,1296 @@ Sebut harga yang jelas mengambil sedikit lebih masa pada awalnya dan menjimatkan
       },
     },
   },
+  {
+    slug: "raising-prices-without-losing-customers-for-malaysian-smes",
+    title: "Raising Prices Without Losing Customers: Handling Inflation and Rising Costs in Your Malaysian SME",
+    seoTitle: "Raising Prices Without Losing Customers in Malaysia",
+    seoDescription:
+      "How Malaysian SMEs can raise prices when costs rise: track costs, decide when and how much, communicate honestly, protect value and watch the results.",
+    coverImage: {
+      file: "raising-prices-without-losing-customers-cover.webp",
+      mimeType: "image/webp",
+      alt: "A woman in a pink headscarf and floral blouse writing in a small notepad at a market stall with tubs of grain, a scale and a calculator in front of her",
+      altTranslations: {
+        zh: "一位戴粉红头巾、身穿碎花上衣的女士在市集摊位前的小记事本上写字，面前是几桶谷物、一台秤和一部计算器",
+        ms: "Seorang wanita bertudung merah jambu dan berblaus bunga menulis dalam buku nota kecil di gerai pasar dengan bekas bijirin, penimbang dan kalkulator di hadapannya",
+      },
+    },
+    contentImages: {
+      bundle: {
+        file: "raising-prices-without-losing-customers-bundle.webp",
+        mimeType: "image/webp",
+        alt: "An open cardboard shipping box holding rolled pairs of socks wrapped in plain cream paper bands, on a pale yellow background",
+        altTranslations: {
+          zh: "一个打开的纸质运送盒，里面放着用素色米白纸带捆好的卷起的袜子，背景是浅黄色",
+          ms: "Sebuah kotak penghantaran kadbod yang terbuka berisi pasangan stokin bergulung yang diikat dengan jalur kertas krim biasa, di atas latar kuning pucat",
+        },
+        after: "Protect perceived value by changing the offer, not only the price.",
+        afterTranslations: {
+          zh: "不要只改价格，也要改变产品组合，以守住顾客感受到的价值。",
+          ms: "Lindungi nilai yang dirasai dengan mengubah tawaran, bukan hanya harga.",
+        },
+      },
+    },
+    excerpt:
+      "When flour, rent, wages, and delivery all cost more, holding your prices is a decision, not a neutral choice. This guide helps Malaysian SMEs track their costs, decide when and how much to raise prices, communicate honestly, protect perceived value, handle pushback, and watch the results after a change.",
+    body: `Few owners enjoy raising prices. You know your regulars, you remember when a customer was kind to you, and you worry that one extra ringgit will send someone to a competitor. So you wait, absorb the rising costs, and tell yourself it is temporary.
+
+The trouble is that costs rarely go back down by themselves. Each month of unchanged prices after your costs rise is a month in which you earn less on every sale. Small businesses with thin margins can go from comfortable to struggling without ever having a bad month of sales.
+
+This is general information, not legal or financial advice. Price rules, controlled-price items, and consumer protection requirements change over time, and some details in this guide may be out of date. Confirm current requirements with the relevant authorities before you act.
+
+## 1. Understand why prices need regular review
+
+### Costs move whether you notice or not
+Ingredients, packaging, rent, wages, utilities, and delivery charges change over the year. Even small changes add up across hundreds of sales.
+
+### Holding your price is a price cut
+If your cost per item rises and your price stays the same, you are giving every customer a discount without announcing it.
+
+### Customers expect some change
+Most customers see rising prices everywhere. A modest, well-explained increase is usually less surprising than owners fear.
+
+### Waiting makes the later jump bigger
+A series of small, regular adjustments is easier on customers than one large increase after years of no change.
+
+### Price is also a signal
+Prices that are too low can suggest low quality, and they leave no room to invest in service and improvement. Our guide on pricing products and services explains how to set a sound price in the first place.
+
+## 2. Track your cost increases
+
+### Keep a simple cost sheet
+List the main inputs for each product or service and what you paid last month, three months ago, and a year ago. A spreadsheet or notebook is enough.
+
+### Include every cost
+Add materials, packaging, labour, rent share, utilities, delivery, platform fees, and payment charges. Our guide on bookkeeping and accounting basics explains how to keep reliable records.
+
+### Calculate your real margin per item
+Work out how much you actually keep after all costs. Many owners are surprised to find that popular items earn the least.
+
+### Watch supplier notices
+When a supplier announces an increase, record the date and the amount. Our guide on negotiating with suppliers explains how to ask for better terms before passing the cost on.
+
+### Set a trigger
+Decide in advance what cost change will prompt a review, such as a margin falling below a target or a key input rising by a set percentage.
+
+## 3. Decide when and how much to raise
+
+### Start with the items that matter most
+Look at your best sellers and your lowest-margin items. A small increase on a high-volume item can matter more than a large increase on a rarely bought one.
+
+### Compare with the market
+Check what similar businesses charge, taking quality, location, and service into account. Being a little cheaper or dearer is fine if you can explain the difference.
+
+### Consider small, regular increases
+Raising prices by a small amount, such as a few percent, more often is usually easier on customers than one big jump.
+
+### Think about price points
+Customers notice some prices more than others, such as a round number or a long-standing price. Choose new prices that are easy to pay and easy to remember.
+
+### Check any rules that apply to your goods
+Some goods and services are subject to controlled or ceiling prices, and misleading price displays can cause trouble. Confirm what applies to you with the Ministry of Domestic Trade and Cost of Living or the relevant authority.
+
+## 4. Protect perceived value
+
+### Change the offer, not only the price
+Protect perceived value by changing the offer, not only the price. A slightly different pack size, a bundle, or an added service can make an increase feel fairer.
+
+### Show what customers get for the money
+Remind customers about quality ingredients, fast delivery, warranties, or friendly service. Our guide on quality control and warranties explains how to back your work.
+
+### Add value that costs you little
+A small free extra, faster service, or a loyalty reward can offset the sting of a new price at low cost.
+
+### Offer choices
+A basic option and a premium option let customers choose what suits them. Some will trade up, and others will pick the lower tier and still buy.
+
+### Avoid shrinking quietly
+Reducing quantity or quality without telling customers can feel dishonest. If you change the size, say so clearly.
+
+## 5. Communicate the change honestly
+
+### Give notice where you can
+Tell regular customers and repeat buyers before the new prices start, such as a week or two ahead, and give a clear date.
+
+### Explain simply and briefly
+A short note that costs have risen, and that you are adjusting to keep quality, is usually enough. Avoid long justifications or blaming customers.
+
+### Update every place that shows prices
+Check menus, shelf labels, your website, social media, marketplace listings, and quotations so that prices match everywhere. Misleading price displays can cause trouble, so keep them consistent.
+
+### Prepare your team
+Make sure everyone knows the new prices and can answer questions politely. Our guide on customer service standards and training explains how to prepare staff.
+
+### Respect existing commitments
+Honour quotes, deposits, and orders already agreed at the earlier price, unless your terms clearly say otherwise. Our guide on quotations, proposals, and written estimates explains how to set validity periods.
+
+> Customers rarely mind a fair price they were told about; what they remember is feeling surprised, so tell them first, explain briefly, and keep the quality they came for.
+
+## 6. Look after loyal customers
+
+### Think about who you want to keep
+Regulars who buy often and refer others are worth more than a one-time bargain hunter. Decide how much goodwill is worth.
+
+### Consider a short grace period
+Giving long-standing customers a few extra weeks at the old price, or a small loyalty discount, can soften the change.
+
+### Say thank you
+A short personal message from you, rather than a notice at the till, goes a long way. Our guide on building customer loyalty and repeat business explains simple ways to show appreciation.
+
+### Keep the experience steady
+Do not let service slip around the time of an increase. If anything, make it a little better.
+
+### Offer something for price-sensitive customers
+A smaller size, a value bundle, or a simple option can keep price-conscious customers without cutting your main prices.
+
+## 7. Handle pushback
+
+### Expect some questions
+A few customers will complain or ask for a discount. That is normal, and it does not mean the increase was wrong.
+
+### Listen and stay polite
+Acknowledge the concern, explain briefly, and avoid arguing. Our guide on handling difficult customers and online reviews explains how to respond calmly.
+
+### Decide when to flex
+A small concession for a long-standing customer can be worth it. Make it a conscious choice, not a habit of caving in to every request.
+
+### Do not apologise for charging fairly
+You can be sympathetic without apologising for covering your costs.
+
+### Learn from objections
+If many customers raise the same point, such as a price that feels out of line with a particular item, consider adjusting that item.
+
+## 8. Monitor results and adjust
+
+### Watch sales, not only complaints
+Compare weekly sales, order sizes, and the number of customers before and after the change. A few vocal complaints may not show the full picture.
+
+### Check your margin
+Confirm that the increase actually improved your profit per sale. Our guide on tracking business performance explains simple numbers to follow.
+
+### Give it a fair time
+Look at results over several weeks, because a quick dip or jump may not last.
+
+### Adjust if you must
+If a specific item loses too many customers, consider a different pack size, a bundle, or a small reduction on that item alone.
+
+### Plan the next review
+Put a date in your calendar to review costs and prices again. If you want help with costing, bookkeeping, or pricing strategy, you can [browse the directory](/en) for accountants and business advisers near you, and [create a free business listing](/en/signup) so that customers can find your business.
+
+## Common mistakes Malaysian SMEs make when raising prices
+
+- **Waiting until costs have crushed the margin.** Late, large increases shock customers, so review costs regularly and make small adjustments.
+- **Changing the price without changing how it is explained.** Surprise causes more anger than the amount, so give notice and a short, honest reason.
+- **Cutting quantity or quality quietly.** Customers notice, and trust suffers, so tell them about any change in size or quality.
+
+## Where to start
+
+- **This week:** List your top five products and their current costs, and calculate the margin on each.
+- **Next:** Decide which items need an increase and by how much, and check any rules that apply to your goods.
+- **Then:** Tell regular customers in advance, update every price display, and brief your team.
+- **Every quarter:** Review costs, margins, and sales, and adjust before the pressure builds.
+
+A fair price lets you pay your people, keep your quality, and stay in business for the customers who depend on you. Raising it thoughtfully is part of looking after them.`,
+    faqs: [
+      {
+        question: "How often should I review my prices?",
+        answer:
+          "Review costs and margins at least every quarter, and whenever a key supplier or cost changes. Small, regular adjustments are easier on customers than one large increase after years of no change.",
+      },
+      {
+        question: "How much should I raise my prices?",
+        answer:
+          "It depends on your costs, your margins, and what similar businesses charge. Work out the margin on each item, start with your best sellers and lowest-margin items, and consider small increases of a few percent, rather than guessing a round figure.",
+      },
+      {
+        question: "Will I lose customers if I raise prices?",
+        answer:
+          "You may lose a few price-sensitive customers, but many regular customers understand rising costs, especially when you give notice and keep quality high. Watch sales and margins for several weeks, and adjust if one item loses too many buyers.",
+      },
+      {
+        question: "How should I tell customers about a price increase?",
+        answer:
+          "Give notice, such as a week or two ahead, with a clear date, and explain briefly that costs have risen and you are adjusting to keep quality. Update every place that shows prices, and make sure staff can answer questions politely.",
+      },
+      {
+        question: "Can I change pack sizes instead of raising the price?",
+        answer:
+          "Yes, changing the offer through a different pack size, a bundle, or an added service can make an increase feel fairer. Be honest about it, because quietly reducing quantity or quality can damage trust.",
+      },
+      {
+        question: "Are there rules about changing prices in Malaysia?",
+        answer:
+          "Some goods and services are subject to controlled or ceiling prices, and misleading price displays can cause trouble, for example giving the impression that a price covers everything when extra charges are imposed separately. Rules change, so confirm what applies to you with the Ministry of Domestic Trade and Cost of Living or the relevant authority.",
+      },
+      {
+        question: "How do I handle customers who complain about the new price?",
+        answer:
+          "Listen, stay polite, explain briefly that your costs have risen, and avoid arguing or apologising for charging fairly. A small concession for a long-standing customer can be worth it, as long as it is a conscious choice rather than a habit.",
+      },
+      {
+        question: "How do I know whether the increase worked?",
+        answer:
+          "Compare weekly sales, order sizes, customer numbers, and your margin per sale before and after the change over several weeks. If profit per sale improved without losing too many customers, the increase worked.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "涨价而不流失顾客：在您的马来西亚中小企业应对通胀与成本上升",
+        excerpt:
+          "当面粉、租金、工资和送货都变贵时，维持原价是一项决定，而不是中立的选择。本指南帮助马来西亚中小企业追踪成本，决定何时涨价以及涨多少，诚实地沟通，守住顾客感受到的价值，应对不满，并在改变之后观察结果。",
+        body: `很少有企业主喜欢涨价。您认识您的常客，记得顾客曾经对您的友善，也担心多收一令吉就会把人送到竞争对手那里。于是您等待、自己吸收上涨的成本，并告诉自己这只是暂时的。
+
+问题是，成本很少会自己降下来。成本上升后，价格不变的每一个月，都是您每笔销售赚得更少的一个月。利润微薄的小企业，即使从没有过销售不佳的月份，也可能从宽裕变得吃紧。
+
+本文仅提供一般信息，并非法律或财务建议。价格规定、管制价格的商品和消费者保护的要求会随时间变化，本指南的部分细节可能已经过时。在采取行动之前，请向相关主管单位确认现行要求。
+
+## 1. 了解价格为什么需要定期检讨
+
+### 无论您有没有留意，成本都在变动
+食材、包装、租金、工资、水电和送货费用在一年中都会变化。即使是小幅变动，在数百笔销售中也会累积起来。
+
+### 维持原价就是降价
+如果您每件商品的成本上升而价格不变，您就是在不声张的情况下给每位顾客打折。
+
+### 顾客预期会有些变化
+大多数顾客看到到处都在涨价。一次适度、解释清楚的涨价，通常没有企业主担心的那么令人意外。
+
+### 等待会让之后的跳涨更大
+一连串小幅、定期的调整，对顾客来说比多年不变之后的一次大幅涨价更容易接受。
+
+### 价格也是一种信号
+过低的价格可能暗示低品质，也让您没有空间投资于服务和改进。我们关于产品和服务定价的指南解释了一开始如何订出合理的价格。
+
+## 2. 追踪您的成本上涨
+
+### 做一份简单的成本表
+列出每件产品或服务的主要投入，以及上个月、三个月前和一年前您付的价钱。电子表格或笔记本就足够了。
+
+### 包括每一项成本
+加上材料、包装、人工、分摊的租金、水电、送货、平台费用和付款手续费。我们关于簿记与会计基础的指南解释了如何保存可靠的记录。
+
+### 计算每件商品的真实利润率
+算出扣除所有成本后您实际留下多少。许多企业主惊讶地发现，热门商品赚得最少。
+
+### 留意供应商的通知
+当供应商宣布涨价时，记录日期和金额。我们关于与供应商谈判的指南解释了如何在把成本转嫁出去之前，先争取更好的条件。
+
+### 设定触发点
+事先决定什么样的成本变动会促使您检讨，例如利润率跌破目标，或某项关键投入上涨了设定的百分比。
+
+## 3. 决定何时涨价以及涨多少
+
+### 从最重要的项目开始
+看看您的畅销品和利润最低的项目。对高销量商品的小幅涨价，可能比对很少人买的商品的大幅涨价更重要。
+
+### 与市场比较
+查看类似企业的收费，并考虑品质、地点和服务。只要您能解释差别，稍微便宜或稍微贵一点都没有问题。
+
+### 考虑小幅、定期的涨价
+以较小的幅度，例如几个百分点，更频繁地涨价，通常比一次大幅跳涨更容易让顾客接受。
+
+### 想想价格点
+顾客对某些价格比对其他价格更敏感，例如整数或长期不变的价格。请选择容易支付、容易记住的新价格。
+
+### 查明适用于您商品的规定
+有些商品和服务受到管制价格或最高价格的约束，误导性的价格标示也可能惹上麻烦。请向国内贸易及生活成本部或相关主管单位确认适用于您的规定。
+
+## 4. 守住顾客感受到的价值
+
+### 改变产品组合，而不只是价格
+不要只改价格，也要改变产品组合，以守住顾客感受到的价值。稍微不同的包装规格、一个组合套装或额外的服务，可以让涨价感觉更公平。
+
+### 展示顾客物有所值之处
+提醒顾客优质的食材、快速的送货、保修或友善的服务。我们关于质量控制与保修的指南解释了如何为您的工作做后盾。
+
+### 增加您成本很低的价值
+一个小小的免费赠品、更快的服务或忠诚奖励，可以以低成本抵消新价格带来的刺痛。
+
+### 提供选择
+基本款和高级款让顾客选择适合自己的。有些人会升级，另一些人会选择较低的等级，仍然会购买。
+
+### 避免悄悄缩水
+在不告诉顾客的情况下减少分量或品质，可能让人觉得不诚实。如果您改变了规格，请清楚地说明。
+
+## 5. 诚实地沟通这项改变
+
+### 尽可能提前通知
+在新价格开始之前，例如提前一两个星期，告诉常客和回头客，并给出明确的日期。
+
+### 简单而简短地解释
+一则简短的说明，说明成本上升了，您正在调整以保持品质，通常就足够了。避免冗长的辩解或责怪顾客。
+
+### 更新每一个显示价格的地方
+检查菜单、货架标签、网站、社交媒体、市集平台上的商品列表和报价单，让价格处处一致。误导性的价格标示可能惹上麻烦，所以请保持一致。
+
+### 让您的团队做好准备
+确保每个人都知道新价格，并能礼貌地回答问题。我们关于客户服务标准与培训的指南解释了如何让员工做好准备。
+
+### 尊重现有的承诺
+对已经按先前价格约定的报价、订金和订单予以兑现，除非您的条款清楚另有规定。我们关于使用报价单、提案和书面估价的指南解释了如何设定有效期。
+
+> 顾客很少介意一个他们事先被告知的公平价格；他们记住的是感到意外，所以请先告诉他们，简短地解释，并保持他们当初来的品质。
+
+## 6. 照顾忠诚的顾客
+
+### 想想您想留住谁
+经常购买并介绍他人的常客，比只图一次便宜的人更有价值。决定好感值多少。
+
+### 考虑短暂的宽限期
+让长期的顾客再享受几个星期的旧价格，或给予小额忠诚折扣，可以缓和这项改变。
+
+### 说声谢谢
+由您发出的简短个人讯息，比收银台前的通知更有分量。我们关于建立顾客忠诚度与回头客的指南解释了表达感谢的简单方法。
+
+### 保持体验稳定
+不要在涨价前后让服务下滑。如果有的话，让它更好一点。
+
+### 为对价格敏感的顾客提供一些东西
+较小的规格、超值组合或简单的选项，可以在不降低主要价格的情况下留住注重价格的顾客。
+
+## 7. 应对不满
+
+### 预期会有一些疑问
+会有少数顾客抱怨或要求折扣。这很正常，并不表示涨价是错的。
+
+### 倾听并保持礼貌
+认可对方的顾虑，简短地解释，并避免争论。我们关于处理难缠顾客和网络评价的指南解释了如何冷静地回应。
+
+### 决定何时变通
+对长期顾客的小小让步可能是值得的。让它成为一个有意识的选择，而不是对每个要求都让步的习惯。
+
+### 不要为合理收费而道歉
+您可以表示同情，而不必为了弥补成本而道歉。
+
+### 从异议中学习
+如果许多顾客提出同一点，例如某件商品的价格感觉不合理，请考虑调整那件商品。
+
+## 8. 监测结果并调整
+
+### 看销售，而不只是投诉
+比较改变前后每周的销售、订单大小和顾客人数。少数大声的投诉可能无法呈现全貌。
+
+### 检查您的利润率
+确认涨价确实改善了您每笔销售的利润。我们关于追踪业务表现的指南解释了要跟踪的简单数字。
+
+### 给它合理的时间
+观察数个星期的结果，因为短暂的下跌或上升未必持续。
+
+### 必要时调整
+如果某个特定项目流失太多顾客，请考虑不同的包装规格、组合套装，或只对那个项目小幅降价。
+
+### 规划下一次检讨
+在日历上定一个日期，再次检讨成本和价格。如果您需要成本核算、簿记或定价策略方面的协助，您可以[浏览名录](/zh)寻找附近的会计师和商业顾问，并[创建免费商家列表](/zh/signup)，让顾客找到您的业务。
+
+## 马来西亚中小企业在涨价时常犯的错误
+
+- **等到成本已经压垮利润才行动。** 迟来的大幅涨价会让顾客震惊，所以请定期检讨成本并做小幅调整。
+- **改变价格却不改变解释的方式。** 意外引起的愤怒多过金额本身，所以请提前通知并给出简短而诚实的理由。
+- **悄悄减少分量或品质。** 顾客会注意到，信任也会受损，所以请告诉他们任何规格或品质的改变。
+
+## 从哪里开始
+
+- **本周：** 列出您的前五项产品及其当前成本，并计算每一项的利润率。
+- **接着：** 决定哪些项目需要涨价以及涨多少，并查明适用于您商品的规定。
+- **然后：** 提前告诉常客，更新每一个价格标示，并向您的团队说明。
+- **每季度：** 检讨成本、利润率和销售，并在压力累积之前调整。
+
+合理的价格让您能够支付员工的薪水、保持品质，并为依赖您的顾客继续经营下去。深思熟虑地涨价，也是照顾他们的一部分。`,
+        faqs: [
+          {
+            question: "我应该多久检讨一次价格？",
+            answer:
+              "至少每季度检讨一次成本和利润率，并在关键的供应商或成本变动时检讨。小幅、定期的调整，对顾客来说比多年不变之后的一次大幅涨价更容易接受。",
+          },
+          {
+            question: "我应该涨多少？",
+            answer:
+              "取决于您的成本、利润率，以及类似企业的收费。算出每件商品的利润率，从畅销品和利润最低的项目开始，并考虑几个百分点的小幅涨价，而不是随便猜一个整数。",
+          },
+          {
+            question: "涨价会让我失去顾客吗？",
+            answer:
+              "您可能会失去一些对价格敏感的顾客，但许多常客理解成本上升，尤其是当您提前通知并保持高品质时。观察数个星期的销售和利润率，如果某件商品流失太多买家，就加以调整。",
+          },
+          {
+            question: "我应该如何告诉顾客涨价？",
+            answer:
+              "提前通知，例如提前一两个星期，并给出明确的日期，简短说明成本上升了，您正在调整以保持品质。更新每一个显示价格的地方，并确保员工能礼貌地回答问题。",
+          },
+          {
+            question: "我可以改变包装规格来代替涨价吗？",
+            answer:
+              "可以，通过不同的包装规格、组合套装或额外的服务来改变产品组合，可以让涨价感觉更公平。请诚实地做，因为悄悄减少分量或品质会损害信任。",
+          },
+          {
+            question: "在马来西亚改变价格有什么规定吗？",
+            answer:
+              "有些商品和服务受到管制价格或最高价格的约束，误导性的价格标示也可能惹上麻烦，例如让人误以为价格已包括一切，而额外费用另行收取。规定会变化，所以请向国内贸易及生活成本部或相关主管单位确认适用于您的规定。",
+          },
+          {
+            question: "顾客对新价格抱怨时我该怎么办？",
+            answer:
+              "倾听，保持礼貌，简短地解释您的成本上升了，并避免争论或为合理收费而道歉。对长期顾客的小小让步可能是值得的，只要它是有意识的选择，而不是一种习惯。",
+          },
+          {
+            question: "我怎么知道涨价是否奏效？",
+            answer:
+              "比较改变前后数个星期的每周销售、订单大小、顾客人数和每笔销售的利润率。如果每笔销售的利润改善了，又没有流失太多顾客，涨价就奏效了。",
+          },
+        ],
+      },
+      ms: {
+        title: "Menaikkan Harga Tanpa Kehilangan Pelanggan: Menangani Inflasi dan Kos yang Meningkat dalam PKS Malaysia Anda",
+        excerpt:
+          "Apabila tepung, sewa, gaji dan penghantaran semuanya lebih mahal, mengekalkan harga ialah keputusan, bukan pilihan neutral. Panduan ini membantu PKS Malaysia menjejaki kos, memutuskan bila dan berapa banyak hendak menaikkan harga, berkomunikasi dengan jujur, melindungi nilai yang dirasai, menangani bantahan, dan memerhati hasil selepas perubahan.",
+        body: `Sedikit pemilik yang suka menaikkan harga. Anda kenal pelanggan tetap anda, anda ingat bila seorang pelanggan pernah berbaik dengan anda, dan anda bimbang satu ringgit tambahan akan menghantar seseorang kepada pesaing. Jadi anda menunggu, menanggung kos yang meningkat, dan memberitahu diri sendiri ia hanya sementara.
+
+Masalahnya ialah kos jarang turun semula dengan sendirinya. Setiap bulan harga tidak berubah selepas kos anda naik ialah bulan di mana anda memperoleh kurang pada setiap jualan. Perniagaan kecil dengan margin nipis boleh beralih daripada selesa kepada bersusah payah tanpa pernah mengalami satu bulan jualan yang buruk.
+
+Ini maklumat umum, bukan nasihat undang-undang atau kewangan. Peraturan harga, barang berharga terkawal dan keperluan perlindungan pengguna berubah dari semasa ke semasa, dan sebahagian butiran dalam panduan ini mungkin sudah lapuk. Sahkan keperluan semasa dengan pihak berkuasa berkaitan sebelum anda bertindak.
+
+## 1. Fahami mengapa harga perlu disemak secara berkala
+
+### Kos bergerak sama ada anda perasan atau tidak
+Bahan, pembungkusan, sewa, gaji, utiliti dan caj penghantaran berubah sepanjang tahun. Walaupun perubahan kecil bertambah merentas ratusan jualan.
+
+### Mengekalkan harga ialah pemotongan harga
+Jika kos setiap barang anda meningkat dan harga kekal sama, anda memberi setiap pelanggan diskaun tanpa mengumumkannya.
+
+### Pelanggan menjangkakan sedikit perubahan
+Kebanyakan pelanggan melihat harga naik di mana-mana. Kenaikan yang sederhana dan diterangkan dengan baik biasanya kurang mengejutkan daripada yang ditakuti pemilik.
+
+### Menunggu menjadikan lonjakan kemudian lebih besar
+Siri pelarasan yang kecil dan berkala lebih mudah bagi pelanggan daripada satu kenaikan besar selepas bertahun-tahun tiada perubahan.
+
+### Harga juga isyarat
+Harga yang terlalu rendah boleh mencadangkan kualiti rendah, dan ia tidak meninggalkan ruang untuk melabur dalam perkhidmatan dan penambahbaikan. Panduan kami tentang menetapkan harga produk dan perkhidmatan menerangkan cara menetapkan harga yang baik pada mulanya.
+
+## 2. Jejaki kenaikan kos anda
+
+### Simpan helaian kos yang ringkas
+Senaraikan input utama untuk setiap produk atau perkhidmatan dan apa yang anda bayar bulan lepas, tiga bulan lalu dan setahun lalu. Hamparan atau buku nota sudah memadai.
+
+### Sertakan setiap kos
+Tambah bahan, pembungkusan, buruh, bahagian sewa, utiliti, penghantaran, fi platform dan caj pembayaran. Panduan kami tentang asas simpan kira dan perakaunan menerangkan cara menyimpan rekod yang boleh dipercayai.
+
+### Kira margin sebenar anda bagi setiap barang
+Kira berapa banyak yang sebenarnya anda simpan selepas semua kos. Ramai pemilik terkejut apabila mendapati barang popular memperoleh paling sedikit.
+
+### Perhatikan notis pembekal
+Apabila pembekal mengumumkan kenaikan, catat tarikh dan jumlahnya. Panduan kami tentang berunding dengan pembekal menerangkan cara meminta terma yang lebih baik sebelum menyalurkan kos itu.
+
+### Tetapkan pencetus
+Tentukan lebih awal perubahan kos apa yang akan mencetuskan semakan, seperti margin jatuh di bawah sasaran atau input utama naik sebanyak peratusan tertentu.
+
+## 3. Tentukan bila dan berapa banyak hendak menaikkan
+
+### Mulakan dengan item yang paling penting
+Lihat barang paling laris dan item bermargin terendah anda. Kenaikan kecil pada item volum tinggi boleh lebih penting daripada kenaikan besar pada item yang jarang dibeli.
+
+### Bandingkan dengan pasaran
+Semak apa yang dicaj oleh perniagaan serupa, dengan mengambil kira kualiti, lokasi dan perkhidmatan. Sedikit lebih murah atau lebih mahal tidak mengapa jika anda boleh menerangkan perbezaannya.
+
+### Pertimbangkan kenaikan kecil dan berkala
+Menaikkan harga dengan jumlah kecil, seperti beberapa peratus, lebih kerap biasanya lebih mudah bagi pelanggan daripada satu lonjakan besar.
+
+### Fikirkan tentang titik harga
+Pelanggan lebih perasan sesetengah harga berbanding yang lain, seperti nombor bulat atau harga yang sudah lama. Pilih harga baharu yang mudah dibayar dan mudah diingat.
+
+### Semak sebarang peraturan yang terpakai kepada barang anda
+Sesetengah barang dan perkhidmatan tertakluk kepada harga terkawal atau harga siling, dan paparan harga yang mengelirukan boleh menimbulkan masalah. Sahkan apa yang terpakai kepada anda dengan Kementerian Perdagangan Dalam Negeri dan Kos Sara Hidup atau pihak berkuasa berkaitan.
+
+## 4. Lindungi nilai yang dirasai
+
+### Ubah tawaran, bukan hanya harga
+Lindungi nilai yang dirasai dengan mengubah tawaran, bukan hanya harga. Saiz bungkusan yang sedikit berbeza, set pakej atau perkhidmatan tambahan boleh menjadikan kenaikan terasa lebih adil.
+
+### Tunjukkan apa yang pelanggan peroleh untuk wang mereka
+Ingatkan pelanggan tentang bahan berkualiti, penghantaran pantas, waranti atau perkhidmatan mesra. Panduan kami tentang kawalan kualiti dan waranti menerangkan cara menyokong kerja anda.
+
+### Tambah nilai yang kurang berkos kepada anda
+Sedikit tambahan percuma, perkhidmatan lebih pantas atau ganjaran kesetiaan boleh mengimbangi kejutan harga baharu dengan kos rendah.
+
+### Tawarkan pilihan
+Pilihan asas dan pilihan premium membolehkan pelanggan memilih yang sesuai dengan mereka. Ada yang akan naik taraf, dan yang lain akan memilih peringkat lebih rendah dan masih membeli.
+
+### Elakkan mengecilkan secara senyap
+Mengurangkan kuantiti atau kualiti tanpa memberitahu pelanggan boleh terasa tidak jujur. Jika anda mengubah saiz, katakan dengan jelas.
+
+## 5. Sampaikan perubahan dengan jujur
+
+### Beri notis jika boleh
+Beritahu pelanggan tetap dan pembeli berulang sebelum harga baharu bermula, seperti seminggu atau dua minggu lebih awal, dan berikan tarikh yang jelas.
+
+### Terangkan dengan mudah dan ringkas
+Nota pendek bahawa kos telah meningkat, dan anda melaras untuk mengekalkan kualiti, biasanya memadai. Elakkan justifikasi yang panjang atau menyalahkan pelanggan.
+
+### Kemas kini setiap tempat yang menunjukkan harga
+Semak menu, label rak, laman web, media sosial, penyenaraian pasar dan sebut harga supaya harga sepadan di mana-mana. Paparan harga yang mengelirukan boleh menimbulkan masalah, jadi pastikan ia konsisten.
+
+### Sediakan pasukan anda
+Pastikan semua orang tahu harga baharu dan boleh menjawab soalan dengan sopan. Panduan kami tentang standard dan latihan perkhidmatan pelanggan menerangkan cara menyediakan pekerja.
+
+### Hormati komitmen sedia ada
+Tunaikan sebut harga, deposit dan pesanan yang sudah dipersetujui pada harga terdahulu, melainkan terma anda dengan jelas menyatakan sebaliknya. Panduan kami tentang menggunakan sebut harga, cadangan dan anggaran bertulis menerangkan cara menetapkan tempoh sah.
+
+> Pelanggan jarang mengambil kisah harga yang adil yang telah diberitahu kepada mereka; apa yang mereka ingat ialah berasa terkejut, jadi beritahu mereka dahulu, terangkan dengan ringkas, dan kekalkan kualiti yang mereka datang untuknya.
+
+## 6. Jaga pelanggan setia
+
+### Fikirkan siapa yang anda mahu kekalkan
+Pelanggan tetap yang kerap membeli dan merujuk orang lain bernilai lebih daripada pemburu murah sekali sahaja. Tentukan berapa nilai muhibah itu.
+
+### Pertimbangkan tempoh bertenang yang singkat
+Memberi pelanggan lama beberapa minggu tambahan pada harga lama, atau diskaun kesetiaan kecil, boleh melembutkan perubahan itu.
+
+### Ucapkan terima kasih
+Mesej peribadi pendek daripada anda, bukan notis di kaunter, sangat bermakna. Panduan kami tentang membina kesetiaan pelanggan dan perniagaan berulang menerangkan cara mudah untuk menunjukkan penghargaan.
+
+### Pastikan pengalaman stabil
+Jangan biarkan perkhidmatan merosot sekitar masa kenaikan. Jika ada, jadikannya sedikit lebih baik.
+
+### Tawarkan sesuatu untuk pelanggan yang sensitif harga
+Saiz lebih kecil, pakej nilai atau pilihan mudah boleh mengekalkan pelanggan yang mementingkan harga tanpa memotong harga utama anda.
+
+## 7. Tangani bantahan
+
+### Jangkakan beberapa soalan
+Beberapa pelanggan akan mengadu atau meminta diskaun. Itu perkara biasa, dan ia tidak bermakna kenaikan itu salah.
+
+### Dengar dan kekal sopan
+Akui kebimbangan itu, terangkan dengan ringkas, dan elakkan bertengkar. Panduan kami tentang menangani pelanggan sukar dan ulasan dalam talian menerangkan cara membalas dengan tenang.
+
+### Tentukan bila hendak bertolak ansur
+Konsesi kecil untuk pelanggan lama mungkin berbaloi. Jadikan ia pilihan yang disedari, bukan tabiat mengalah kepada setiap permintaan.
+
+### Jangan memohon maaf kerana mengenakan caj yang adil
+Anda boleh bersimpati tanpa memohon maaf kerana menampung kos anda.
+
+### Belajar daripada bantahan
+Jika ramai pelanggan membangkitkan perkara yang sama, seperti harga yang terasa tidak seimbang untuk sesuatu item, pertimbangkan melaras item itu.
+
+## 8. Pantau hasil dan laras
+
+### Perhatikan jualan, bukan hanya aduan
+Bandingkan jualan mingguan, saiz pesanan dan bilangan pelanggan sebelum dan selepas perubahan. Beberapa aduan yang lantang mungkin tidak menunjukkan gambaran penuh.
+
+### Semak margin anda
+Sahkan bahawa kenaikan itu benar-benar memperbaik keuntungan anda bagi setiap jualan. Panduan kami tentang menjejaki prestasi perniagaan menerangkan angka mudah untuk diikuti.
+
+### Beri masa yang adil
+Lihat hasil dalam tempoh beberapa minggu, kerana penurunan atau lonjakan pantas mungkin tidak kekal.
+
+### Laras jika perlu
+Jika sesuatu item khusus kehilangan terlalu ramai pelanggan, pertimbangkan saiz bungkusan yang berbeza, pakej, atau pengurangan kecil pada item itu sahaja.
+
+### Rancang semakan seterusnya
+Letakkan tarikh dalam kalendar anda untuk menyemak semula kos dan harga. Jika anda mahukan bantuan dengan pengiraan kos, simpan kira atau strategi harga, anda boleh [layari direktori](/ms) untuk akauntan dan penasihat perniagaan berhampiran anda, dan [cipta penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan dapat menemui perniagaan anda.
+
+## Kesilapan biasa PKS Malaysia apabila menaikkan harga
+
+- **Menunggu sehingga kos telah menghimpit margin.** Kenaikan besar yang lewat mengejutkan pelanggan, jadi semak kos secara berkala dan buat pelarasan kecil.
+- **Mengubah harga tanpa mengubah cara ia diterangkan.** Kejutan menyebabkan lebih banyak kemarahan daripada jumlahnya, jadi beri notis dan sebab yang ringkas dan jujur.
+- **Mengurangkan kuantiti atau kualiti secara senyap.** Pelanggan perasan, dan kepercayaan terjejas, jadi beritahu mereka tentang sebarang perubahan saiz atau kualiti.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Senaraikan lima produk teratas anda dan kos semasanya, dan kira margin bagi setiap satu.
+- **Seterusnya:** Tentukan item mana yang memerlukan kenaikan dan berapa banyak, dan semak sebarang peraturan yang terpakai kepada barang anda.
+- **Kemudian:** Beritahu pelanggan tetap lebih awal, kemas kini setiap paparan harga, dan beri taklimat kepada pasukan anda.
+- **Setiap suku tahun:** Semak kos, margin dan jualan, dan laras sebelum tekanan menimbun.
+
+Harga yang adil membolehkan anda membayar pekerja anda, mengekalkan kualiti, dan terus berniaga untuk pelanggan yang bergantung kepada anda. Menaikkannya dengan bijak ialah sebahagian daripada menjaga mereka.`,
+        faqs: [
+          {
+            question: "Berapa kerap saya patut menyemak harga saya?",
+            answer:
+              "Semak kos dan margin sekurang-kurangnya setiap suku tahun, dan apabila pembekal atau kos utama berubah. Pelarasan kecil dan berkala lebih mudah bagi pelanggan daripada satu kenaikan besar selepas bertahun-tahun tiada perubahan.",
+          },
+          {
+            question: "Berapa banyak saya patut menaikkan harga?",
+            answer:
+              "Bergantung pada kos, margin anda, dan apa yang dicaj oleh perniagaan serupa. Kira margin bagi setiap barang, mulakan dengan barang paling laris dan item bermargin terendah, dan pertimbangkan kenaikan kecil beberapa peratus dan bukan meneka angka bulat.",
+          },
+          {
+            question: "Adakah saya akan kehilangan pelanggan jika menaikkan harga?",
+            answer:
+              "Anda mungkin kehilangan beberapa pelanggan yang sensitif harga, tetapi ramai pelanggan tetap memahami kos yang meningkat, terutamanya apabila anda memberi notis dan mengekalkan kualiti tinggi. Perhatikan jualan dan margin selama beberapa minggu, dan laras jika satu item kehilangan terlalu ramai pembeli.",
+          },
+          {
+            question: "Bagaimanakah saya patut memberitahu pelanggan tentang kenaikan harga?",
+            answer:
+              "Beri notis, seperti seminggu atau dua minggu lebih awal, dengan tarikh yang jelas, dan terangkan dengan ringkas bahawa kos telah meningkat dan anda melaras untuk mengekalkan kualiti. Kemas kini setiap tempat yang menunjukkan harga, dan pastikan pekerja boleh menjawab soalan dengan sopan.",
+          },
+          {
+            question: "Bolehkah saya mengubah saiz bungkusan dan bukan menaikkan harga?",
+            answer:
+              "Ya, mengubah tawaran melalui saiz bungkusan yang berbeza, pakej atau perkhidmatan tambahan boleh menjadikan kenaikan terasa lebih adil. Berterus teranglah tentangnya, kerana mengurangkan kuantiti atau kualiti secara senyap boleh merosakkan kepercayaan.",
+          },
+          {
+            question: "Adakah terdapat peraturan tentang mengubah harga di Malaysia?",
+            answer:
+              "Sesetengah barang dan perkhidmatan tertakluk kepada harga terkawal atau harga siling, dan paparan harga yang mengelirukan boleh menimbulkan masalah, contohnya memberi tanggapan bahawa harga meliputi segala-galanya apabila caj tambahan dikenakan secara berasingan. Peraturan berubah, jadi sahkan apa yang terpakai kepada anda dengan Kementerian Perdagangan Dalam Negeri dan Kos Sara Hidup atau pihak berkuasa berkaitan.",
+          },
+          {
+            question: "Bagaimanakah saya menangani pelanggan yang mengadu tentang harga baharu?",
+            answer:
+              "Dengar, kekal sopan, terangkan dengan ringkas bahawa kos anda telah meningkat, dan elakkan bertengkar atau memohon maaf kerana mengenakan caj yang adil. Konsesi kecil untuk pelanggan lama mungkin berbaloi, selagi ia pilihan yang disedari dan bukan tabiat.",
+          },
+          {
+            question: "Bagaimanakah saya tahu sama ada kenaikan itu berjaya?",
+            answer:
+              "Bandingkan jualan mingguan, saiz pesanan, bilangan pelanggan dan margin anda bagi setiap jualan sebelum dan selepas perubahan dalam tempoh beberapa minggu. Jika keuntungan bagi setiap jualan bertambah baik tanpa kehilangan terlalu ramai pelanggan, kenaikan itu berjaya.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "running-promotions-and-discounts-for-malaysian-smes",
+    title: "Running Promotions, Discounts, and Bundles Without Hurting Your Margins: A Practical Guide for Malaysian SMEs",
+    seoTitle: "Promotions, Discounts and Bundles for Malaysian SMEs",
+    seoDescription:
+      "How Malaysian SMEs can run promotions that protect margins: set goals, cost each discount, use bundles, time festive campaigns and advertise honestly.",
+    coverImage: {
+      file: "running-promotions-and-discounts-cover.webp",
+      mimeType: "image/webp",
+      alt: "A woman in an olive shirt and bead bracelets lifting a large sheet of yellow tissue paper around a teal mug, with more teal mugs lined up in the foreground and a paper bag behind",
+      altTranslations: {
+        zh: "一位身穿橄榄绿衬衫、戴着珠串手链的女士掀起一大张黄色薄纸，包住一只蓝绿色马克杯，前景排着更多蓝绿色马克杯，身后是一个纸袋",
+        ms: "Seorang wanita berbaju hijau zaitun dan bergelang manik mengangkat helaian besar kertas tisu kuning di sekeliling cawan hijau kebiruan, dengan lebih banyak cawan sedemikian tersusun di hadapan dan beg kertas di belakang",
+      },
+    },
+    contentImages: {
+      festive: {
+        file: "running-promotions-and-discounts-festive.webp",
+        mimeType: "image/webp",
+        alt: "A smiling young woman in a pale blue knit sweater kneeling on a wooden floor to wrap a gift in kraft paper beside a decorated tree and other wrapped presents",
+        altTranslations: {
+          zh: "一位身穿浅蓝色针织毛衣的微笑年轻女士跪在木地板上，用牛皮纸包装礼物，旁边是装饰好的圣诞树和其他包好的礼物",
+          ms: "Seorang wanita muda tersenyum berswater rajut biru pucat melutut di atas lantai kayu membungkus hadiah dengan kertas kraf di sebelah pokok berhias dan hadiah berbalut lain",
+        },
+        after: "Plan festive promotions weeks ahead, not days ahead.",
+        afterTranslations: {
+          zh: "节庆促销要提前几个星期规划，而不是只提前几天。",
+          ms: "Rancang promosi perayaan beberapa minggu lebih awal, bukan beberapa hari.",
+        },
+      },
+    },
+    excerpt:
+      "A good promotion brings in the right customers without giving away your profit, while a bad one trains people to wait for the next discount. This guide helps Malaysian SMEs set a goal for each promotion, work out the real cost of a discount, compare bundles with price cuts, time campaigns around festive periods, advertise sale prices honestly, and measure what worked.",
+    body: `Almost every business runs a promotion at some point: a festive sale, a buy-one-get-one, a free gift with purchase, a voucher for new customers. Done well, a promotion fills a quiet week, clears old stock, or introduces your product to people who would not otherwise try it.
+
+Done badly, it brings in bargain hunters who never come back, cuts into margins you cannot spare, and teaches regular customers to wait for the next discount before they buy. The difference usually comes down to planning and arithmetic, not luck.
+
+This is general information, not legal or financial advice. Rules on sale pricing and advertising, platform terms, and tax change over time, and some details in this guide may be out of date. Confirm current requirements with the relevant authorities before you advertise.
+
+## 1. Start with a goal for each promotion
+
+### Decide what you want
+Common goals include attracting new customers, bringing back lapsed ones, increasing the average order, clearing stock, or filling slow periods. Each goal suggests a different kind of offer.
+
+### Choose one main goal
+Trying to do everything at once muddles the offer. A promotion for new customers looks different from one designed to clear old stock.
+
+### Set a number you can check
+Aim for something measurable, such as twenty new customers, a ten percent rise in average order, or clearing a set number of items. Our guide on tracking business performance explains simple numbers to follow.
+
+### Know who you are speaking to
+Think about who you want to reach and where they will see the offer. Our guide on understanding your customers explains simple ways to learn what they want.
+
+### Decide what you will not discount
+Protect items with thin margins, or products that define your quality, from deep cuts.
+
+## 2. Work out the real cost of a discount
+
+### Start from your margin
+If your margin on an item is thirty percent, a twenty percent discount leaves you with a fraction of your normal profit. Check the arithmetic before you promise anything.
+
+### Calculate the extra sales you need
+A discount only pays if the extra volume outweighs the lost margin. Work out how many more units you must sell just to earn the same profit as before.
+
+### Count the hidden costs
+Include extra staff time, packaging, delivery, platform and payment fees, advertising, and any free gifts. Our guide on pricing products and services explains how to build up costs.
+
+### Set a floor price
+Decide the lowest price at which a promotion still makes sense, and stick to it, even when a customer pushes.
+
+### Cap your exposure
+Limit the number of items, the time, or the budget so that a promotion that goes better than expected does not become a loss.
+
+## 3. Choose the right type of promotion
+
+### Compare bundles with price cuts
+A bundle, such as a set of related items at a combined price, raises the average order without lowering the price of any single item. A straight price cut lowers the margin on everything sold.
+
+### Use loyalty offers to reward repeat customers
+Stamp cards, points, or a free item after a number of purchases reward the customers you most want to keep. Our guide on building customer loyalty and repeat business explains options.
+
+### Offer value-adds instead of cuts
+A free upgrade, a small gift, or a faster delivery can feel generous while costing you less than a discount.
+
+### Use targeted offers
+A voucher for new customers or a thank-you for regulars reaches the people you want without discounting everyone.
+
+### Be careful with free-shipping and minimum-spend offers
+A minimum spend can raise the average order, but check that the delivery cost does not eat the gain. Our guide on running deliveries explains the costs.
+
+## 4. Time your promotions well
+
+### Plan the calendar
+Plan festive promotions weeks ahead, not days ahead. Decide your offers, stock, packaging, and staffing early, and tell your customers before the rush begins. Our guide on planning for festive peaks and slow seasons explains how to prepare.
+
+### Use slow periods deliberately
+Quiet weekdays and off-peak seasons are good times for promotions that fill capacity at low extra cost.
+
+### Avoid promoting when you are already busy
+Discounting at a peak time may only give away margin to customers who would have paid full price.
+
+### Check stock and capacity first
+A promotion that sells out or overloads your team disappoints customers and damages trust. Our guide on managing inventory and stock explains how to plan.
+
+### Keep a promotion calendar
+A simple year plan, with the offers, dates, and goals, helps you avoid last-minute discounts and spacing them too close together.
+
+## 5. Set clear terms and limits
+
+### State the offer in plain words
+Say what the discount is, what it applies to, and what the customer must do, such as the dates, items, minimum spend, and how to claim.
+
+### Say what is excluded
+Be upfront about exclusions, such as certain products, other promotions, or delivery charges, so that customers are not surprised at checkout.
+
+### Set an end date and quantity limits
+A clear end date and any stock limits create honest urgency. Avoid fake countdowns, which damage trust.
+
+### Train your team
+Make sure everyone knows the terms and can explain them. Our guide on customer service standards and training explains how to prepare staff.
+
+### Keep records
+Save the offer wording, dates, and the numbers behind it. If a customer disputes a term later, you will have something to point to.
+
+## 6. Advertise sale prices honestly
+
+### Be careful with the word "sale"
+In Malaysia, words such as "sale", "discount", and "special price" have been treated as cheap-sale expressions under trade descriptions rules, and the rules about showing the earlier price have been reported to be specific. Confirm what applies to your business with the Ministry of Domestic Trade and Cost of Living before you advertise.
+
+### Show the earlier price truthfully
+If you advertise a reduction, the comparison price should be a genuine price you charged, not an inflated one made up for the occasion. Reports describe rules on how the earlier price is measured, and these can change, so check the current position.
+
+### Do not mislead about what the price covers
+A price display that suggests everything is included when extra charges are added separately can cause trouble. List extras openly.
+
+### Keep claims to what you can support
+Avoid words such as "lowest price" or "best deal" unless you can prove them. Our guide on advertising claims and consumer protection explains what to avoid.
+
+### Check platform rules
+Marketplaces and social platforms often have their own rules for promotions and discount claims. Read them before you launch.
+
+> A promotion is a promise: customers will forgive a small offer, but they will not forgive one that turns out to be unclear, limited in ways they were not told, or priced against a number that was never real.
+
+## 7. Avoid training customers to wait for discounts
+
+### Do not discount all the time
+When something is always on sale, the discounted price becomes the real price. Keep promotions occasional and purposeful.
+
+### Keep your regular price credible
+Customers should believe that the normal price is fair. If it is always cut, they will stop paying it.
+
+### Reward behaviour, not waiting
+Offers tied to something the customer does, such as joining a loyalty scheme, referring a friend, or buying a bundle, build habits better than blanket discounts.
+
+### Protect your brand
+Heavy discounting can suggest low quality. Our guide on building a brand on a small budget explains how to keep a consistent image.
+
+### Mix in non-price promotions
+Events, workshops, early access for regulars, and useful content can create excitement without cutting prices.
+
+## 8. Measure results and learn
+
+### Compare against your goal
+Check whether you reached the number you set, such as new customers, average order, or stock cleared.
+
+### Calculate the profit, not just the revenue
+A promotion that raised sales but lowered profit is not a success. Include all costs when you review.
+
+### Look at what happened afterwards
+Did customers come back, or did sales dip once the offer ended? A dip after a promotion is a sign that you pulled sales forward.
+
+### Ask customers and staff
+Find out what drew people in, what confused them, and what they said at the counter. Our guide on understanding your customers explains simple ways to learn.
+
+### Write down the lessons
+Keep a short note after each promotion on what worked, what did not, and what you would change. If you want help with design, advertising, or bookkeeping for your next campaign, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so that customers can find your business.
+
+## Common mistakes Malaysian SMEs make with promotions
+
+- **Offering a discount without checking the margin.** A promotion can raise sales and still lose money, so work out the real cost and set a floor price first.
+- **Discounting too often.** Customers learn to wait, so keep promotions occasional, targeted, and tied to a clear goal.
+- **Advertising a sale price you cannot support.** Misleading comparison prices and unclear terms can cause legal and trust problems, so check the rules and state the terms plainly.
+
+## Where to start
+
+- **This week:** List your products with their margins, and decide the lowest price you would accept for each.
+- **Next:** Choose one goal for your next promotion, and design an offer, such as a bundle or loyalty reward, that fits it.
+- **Then:** Check the advertising rules for sale prices, write the terms in plain words, and brief your team.
+- **Every quarter:** Review results, update your promotion calendar, and drop any offer that lost money.
+
+A good promotion is a small, well-planned experiment with a clear goal and a floor price. Run it, measure it, and keep what works, and your discounts will build your business instead of draining it.`,
+    faqs: [
+      {
+        question: "How do I know whether a discount is worth it?",
+        answer:
+          "Start from your margin and work out how many extra units you must sell to earn the same profit as before, including hidden costs such as staff time, delivery, and platform fees. If the extra sales you can realistically expect do not cover the lost margin, the discount is not worth it.",
+      },
+      {
+        question: "Are bundles better than price cuts?",
+        answer:
+          "Often, yes. A bundle raises the average order without lowering the price of any single item, while a straight price cut lowers the margin on everything sold. Bundles work best when the items belong together and you have checked the combined margin.",
+      },
+      {
+        question: "When is the best time to run a promotion?",
+        answer:
+          "Use slow periods deliberately, and plan festive promotions weeks ahead so that stock, packaging, and staffing are ready. Avoid discounting when you are already busy, because you may only give margin away to customers who would have paid full price.",
+      },
+      {
+        question: "Can I use the word \"sale\" in my advertising?",
+        answer:
+          "Be careful. Words such as sale, discount, and special price have been treated as cheap-sale expressions under Malaysian trade descriptions rules, and the rules on showing the earlier price have been reported to be specific and can change. Confirm what applies to you with the Ministry of Domestic Trade and Cost of Living before you advertise.",
+      },
+      {
+        question: "How do I avoid customers waiting for discounts?",
+        answer:
+          "Keep promotions occasional and purposeful, keep your regular price credible, and tie offers to something the customer does, such as joining a loyalty scheme or buying a bundle. Mix in non-price promotions such as events and early access for regulars.",
+      },
+      {
+        question: "What terms should I state in a promotion?",
+        answer:
+          "State what the discount is and what it applies to, the dates, any minimum spend, what is excluded, quantity limits, and how to claim. Use plain words, brief your staff, and keep a record of the offer wording and dates.",
+      },
+      {
+        question: "How do I limit the risk of a promotion going wrong?",
+        answer:
+          "Set a floor price, cap the number of items, the budget, or the time, check your stock and staffing before launch, and avoid fake countdowns. A cap stops a promotion that goes better than expected from becoming a loss.",
+      },
+      {
+        question: "How should I measure the results of a promotion?",
+        answer:
+          "Compare against the goal you set, such as new customers or average order, and calculate profit rather than just revenue. Also look at what happened afterwards, such as whether customers came back or sales dipped, and write down the lessons for next time.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "举办促销、折扣与组合套装而不损害利润：马来西亚中小企业实用指南",
+        excerpt:
+          "好的促销能带来合适的顾客而不白送利润，坏的促销则会教顾客等下一次折扣。本指南帮助马来西亚中小企业为每次促销设定目标，算出折扣的真实成本，比较组合套装与直接降价，围绕节庆期间安排活动，诚实地宣传特价，并衡量什么有效。",
+        body: `几乎每家企业都会在某个时候举办促销：节庆大特价、买一送一、购物送赠品、给新顾客的优惠券。做得好的话，促销能填补冷清的一周、清掉旧库存，或把您的产品介绍给原本不会尝试的人。
+
+做得不好的话，它会引来再也不会回头的捡便宜者，吞掉您承受不起的利润，并教常客在购买之前等下一次折扣。差别通常在于规划和算术，而不是运气。
+
+本文仅提供一般信息，并非法律或财务建议。关于特价和广告的规定、平台条款和税务会随时间变化，本指南的部分细节可能已经过时。在做广告之前，请向相关主管单位确认现行要求。
+
+## 1. 为每次促销设定目标
+
+### 决定您想要什么
+常见的目标包括吸引新顾客、唤回流失的顾客、提高平均订单金额、清理库存或填补淡季。每个目标都暗示着不同类型的优惠。
+
+### 选择一个主要目标
+同时想做到所有事会让优惠变得混乱。针对新顾客的促销，和为了清理旧库存而设计的促销，看起来是不同的。
+
+### 设定一个可以核对的数字
+以可衡量的为目标，例如二十位新顾客、平均订单金额增加百分之十，或清掉设定数量的商品。我们关于追踪业务表现的指南解释了要跟踪的简单数字。
+
+### 知道您在对谁说话
+想想您想接触谁，以及他们会在哪里看到这项优惠。我们关于了解您的顾客的指南解释了了解他们想要什么的简单方法。
+
+### 决定您不打折的东西
+保护利润微薄的商品，或定义您品质的产品，避免大幅折扣。
+
+## 2. 算出折扣的真实成本
+
+### 从您的利润率开始
+如果某件商品的利润率是百分之三十，二十的折扣会让您只剩下平常利润的一小部分。在承诺任何事之前，先核对算术。
+
+### 计算您需要的额外销售
+折扣只有在额外的销量超过损失的利润时才划算。算出您必须多卖多少件，才能赚到与以前相同的利润。
+
+### 计入隐藏的成本
+包括额外的员工时间、包装、送货、平台和付款费用、广告，以及任何免费赠品。我们关于产品和服务定价的指南解释了如何构建成本。
+
+### 设定底价
+决定促销仍然说得通的最低价格，并坚持下去，即使顾客施压。
+
+### 限制您的风险敞口
+限制商品数量、时间或预算，让一次比预期更成功的促销不会变成亏损。
+
+## 3. 选择合适类型的促销
+
+### 比较组合套装与直接降价
+组合套装，例如一组相关商品以组合价出售，能在不降低任何单品价格的情况下提高平均订单金额。直接降价则会降低所有售出商品的利润率。
+
+### 用忠诚优惠奖励回头客
+集点卡、积分，或购买若干次后送一件商品，奖励您最想留住的顾客。我们关于建立顾客忠诚度与回头客的指南解释了各种选择。
+
+### 提供附加价值而不是降价
+免费升级、小赠品或更快的送货，可以让人感觉慷慨，而您的成本比折扣更低。
+
+### 使用有针对性的优惠
+给新顾客的优惠券或给常客的感谢，能接触到您想要的人，而不必给所有人打折。
+
+### 对免运费和最低消费优惠要小心
+最低消费可以提高平均订单金额，但请检查送货成本是否吃掉了收益。我们关于经营送货的指南解释了成本。
+
+## 4. 把握促销的时机
+
+### 规划日历
+节庆促销要提前几个星期规划，而不是只提前几天。提早决定您的优惠、库存、包装和人手，并在高峰来临之前告诉您的顾客。我们关于规划节庆旺季与淡季的指南解释了如何准备。
+
+### 有意识地利用淡季
+冷清的平日和淡季，是举办促销以较低的额外成本填补产能的好时机。
+
+### 已经很忙时避免促销
+在高峰时段打折，可能只是把利润送给本来就会付全价的顾客。
+
+### 先检查库存和产能
+一场卖断货或让团队不堪负荷的促销，会让顾客失望并损害信任。我们关于管理存货的指南解释了如何规划。
+
+### 保存一份促销日历
+一份简单的全年计划，写上优惠、日期和目标，有助于避免临时打折，以及把促销排得太近。
+
+## 5. 订立清楚的条款和限制
+
+### 用平实的话说明优惠
+说明折扣是什么、适用于什么，以及顾客必须做什么，例如日期、商品、最低消费和如何领取。
+
+### 说明排除的项目
+对排除的项目要坦白，例如某些产品、其他促销或送货费用，让顾客在结账时不会感到意外。
+
+### 设定结束日期和数量限制
+清楚的结束日期和任何库存限制，能营造诚实的紧迫感。避免假的倒数计时，它们会损害信任。
+
+### 培训您的团队
+确保每个人都知道条款并能解释。我们关于客户服务标准与培训的指南解释了如何让员工做好准备。
+
+### 保存记录
+保存优惠的措辞、日期和背后的数字。如果顾客日后对某项条款有异议，您就有东西可以指出来。
+
+## 6. 诚实地宣传特价
+
+### 对“特价”一词要小心
+在马来西亚，“sale”“discount”和“special price”等字眼曾被视为贸易说明规定下的廉价出售用语，关于显示先前价格的规定据报道相当具体。在做广告之前，请向国内贸易及生活成本部确认适用于您业务的规定。
+
+### 如实显示先前的价格
+如果您宣传降价，用来比较的价格应该是您确实收过的价格，而不是为这个场合而抬高的价格。报道提到关于如何计算先前价格的规定，这些可能会变化，所以请查明现行情况。
+
+### 不要误导价格涵盖什么
+让人误以为一切都已包括，而额外费用另行加收的价格标示，可能惹上麻烦。请公开列出额外项目。
+
+### 让宣称保持在您能证明的范围内
+除非您能证明，否则避免使用“最低价”或“最划算”之类的字眼。我们关于广告宣称和消费者保护的指南解释了应该避免什么。
+
+### 查看平台规定
+市集和社交平台对促销和折扣宣称往往有自己的规定。请在推出之前阅读。
+
+> 促销是一个承诺：顾客会原谅一个小小的优惠，却不会原谅一个结果模糊不清、带有他们没被告知的限制，或对照着从未真实存在的数字定价的优惠。
+
+## 7. 避免教顾客等折扣
+
+### 不要一直打折
+当东西总是在特价时，折扣价就变成了真实的价格。让促销偶尔举行且有目的。
+
+### 让您的正常价格保持可信
+顾客应该相信正常价格是公平的。如果它总是被削减，他们就不再付这个价格了。
+
+### 奖励行为，而不是等待
+与顾客的行动挂钩的优惠，例如加入忠诚计划、介绍朋友或购买组合套装，比全面折扣更能养成习惯。
+
+### 保护您的品牌
+大幅折扣可能暗示低品质。我们关于以小预算打造品牌的指南解释了如何保持一致的形象。
+
+### 掺入非价格的促销
+活动、工作坊、给常客的优先体验和有用的内容，可以在不降价的情况下制造兴奋感。
+
+## 8. 衡量结果并学习
+
+### 对照您的目标比较
+检查您是否达到了设定的数字，例如新顾客、平均订单金额或清掉的库存。
+
+### 计算利润，而不只是营业额
+一场提高了销售却降低了利润的促销并不算成功。检讨时请计入所有成本。
+
+### 看看之后发生了什么
+顾客回头了吗，还是优惠结束后销售下滑？促销后的下滑是您把销售提前拉动了的迹象。
+
+### 询问顾客和员工
+了解是什么吸引了人们、什么让他们困惑，以及他们在柜台说了什么。我们关于了解您的顾客的指南解释了简单的了解方法。
+
+### 写下所学到的
+每次促销之后，简短记下什么有效、什么无效，以及您会改变什么。如果您在下一次活动的设计、广告或簿记方面需要协助，您可以[浏览名录](/zh)寻找附近的专业人士，并[创建免费商家列表](/zh/signup)，让顾客找到您的业务。
+
+## 马来西亚中小企业在促销方面常犯的错误
+
+- **没有核对利润率就提供折扣。** 促销可能提高销售却仍然亏钱，所以请先算出真实成本并设定底价。
+- **打折太频繁。** 顾客会学会等待，所以请让促销偶尔举行、有针对性，并与清楚的目标挂钩。
+- **宣传您无法证明的特价。** 误导性的比较价格和不清楚的条款可能引发法律和信任问题，所以请查明规定并平实地说明条款。
+
+## 从哪里开始
+
+- **本周：** 列出您的产品及其利润率，并决定每一项您愿意接受的最低价格。
+- **接着：** 为下一次促销选择一个目标，并设计一个与之相配的优惠，例如组合套装或忠诚奖励。
+- **然后：** 查明特价的广告规定，用平实的话写下条款，并向您的团队说明。
+- **每季度：** 检讨结果，更新您的促销日历，并放弃任何亏钱的优惠。
+
+好的促销是一次小而精心规划的实验，有清楚的目标和底价。运行它、衡量它，并保留有效的做法，您的折扣就会建立您的业务，而不是消耗它。`,
+        faqs: [
+          {
+            question: "我怎么知道折扣是否值得？",
+            answer:
+              "从您的利润率开始，算出您必须多卖多少件才能赚到与以前相同的利润，并计入员工时间、送货和平台费用等隐藏成本。如果您可以合理预期的额外销售无法弥补损失的利润，折扣就不值得。",
+          },
+          {
+            question: "组合套装比降价更好吗？",
+            answer:
+              "往往是的。组合套装能在不降低任何单品价格的情况下提高平均订单金额，而直接降价会降低所有售出商品的利润率。当商品本来就属于一起，并且您已检查组合后的利润率时，组合套装效果最好。",
+          },
+          {
+            question: "什么时候是举办促销的最佳时机？",
+            answer:
+              "有意识地利用淡季，并提前几个星期规划节庆促销，让库存、包装和人手都准备好。已经很忙时避免打折，因为您可能只是把利润送给本来就会付全价的顾客。",
+          },
+          {
+            question: "我可以在广告中使用“特价”一词吗？",
+            answer:
+              "要小心。“sale”“discount”和“special price”等字眼曾被视为马来西亚贸易说明规定下的廉价出售用语，关于显示先前价格的规定据报道相当具体，也可能变化。在做广告之前，请向国内贸易及生活成本部确认适用于您的规定。",
+          },
+          {
+            question: "我如何避免顾客等折扣？",
+            answer:
+              "让促销偶尔举行且有目的，让您的正常价格保持可信，并把优惠与顾客的行动挂钩，例如加入忠诚计划或购买组合套装。掺入活动和给常客的优先体验等非价格的促销。",
+          },
+          {
+            question: "我在促销中应该说明哪些条款？",
+            answer:
+              "说明折扣是什么及适用于什么、日期、任何最低消费、排除的项目、数量限制，以及如何领取。使用平实的话，向员工说明，并保存优惠措辞和日期的记录。",
+          },
+          {
+            question: "我如何限制促销出错的风险？",
+            answer:
+              "设定底价，限制商品数量、预算或时间，在推出前检查库存和人手，并避免假的倒数计时。设定上限，能避免一场比预期更成功的促销变成亏损。",
+          },
+          {
+            question: "我应该如何衡量促销的结果？",
+            answer:
+              "对照您设定的目标比较，例如新顾客或平均订单金额，并计算利润而不只是营业额。也要看之后发生了什么，例如顾客是否回头或销售是否下滑，并写下下次的经验。",
+          },
+        ],
+      },
+      ms: {
+        title: "Menjalankan Promosi, Diskaun dan Pakej Tanpa Menjejaskan Margin Anda: Panduan Praktikal untuk PKS Malaysia",
+        excerpt:
+          "Promosi yang baik membawa pelanggan yang sesuai tanpa menyerahkan keuntungan anda, sementara yang buruk melatih orang menunggu diskaun seterusnya. Panduan ini membantu PKS Malaysia menetapkan matlamat bagi setiap promosi, mengira kos sebenar diskaun, membandingkan pakej dengan potongan harga, menentukan masa kempen sekitar tempoh perayaan, mengiklankan harga jualan dengan jujur, dan mengukur apa yang berkesan.",
+        body: `Hampir setiap perniagaan menjalankan promosi pada satu ketika: jualan perayaan, beli satu percuma satu, hadiah percuma dengan pembelian, baucar untuk pelanggan baharu. Jika dilakukan dengan baik, promosi mengisi minggu yang sunyi, melupuskan stok lama, atau memperkenalkan produk anda kepada orang yang sebaliknya tidak akan mencuba.
+
+Jika dilakukan dengan buruk, ia membawa pemburu murah yang tidak pernah kembali, memotong margin yang tidak mampu anda lepaskan, dan mengajar pelanggan tetap menunggu diskaun seterusnya sebelum mereka membeli. Perbezaannya biasanya terletak pada perancangan dan aritmetik, bukan nasib.
+
+Ini maklumat umum, bukan nasihat undang-undang atau kewangan. Peraturan tentang harga jualan dan pengiklanan, terma platform dan cukai berubah dari semasa ke semasa, dan sebahagian butiran dalam panduan ini mungkin sudah lapuk. Sahkan keperluan semasa dengan pihak berkuasa berkaitan sebelum anda mengiklankan.
+
+## 1. Mulakan dengan matlamat bagi setiap promosi
+
+### Tentukan apa yang anda mahu
+Matlamat biasa termasuk menarik pelanggan baharu, membawa balik yang telah lama tidak datang, meningkatkan purata pesanan, melupuskan stok, atau mengisi tempoh perlahan. Setiap matlamat mencadangkan jenis tawaran yang berbeza.
+
+### Pilih satu matlamat utama
+Cuba melakukan segala-galanya serentak mengelirukan tawaran. Promosi untuk pelanggan baharu kelihatan berbeza daripada yang direka untuk melupuskan stok lama.
+
+### Tetapkan angka yang boleh anda semak
+Sasarkan sesuatu yang boleh diukur, seperti dua puluh pelanggan baharu, kenaikan sepuluh peratus dalam purata pesanan, atau melupuskan bilangan item tertentu. Panduan kami tentang menjejaki prestasi perniagaan menerangkan angka mudah untuk diikuti.
+
+### Ketahui siapa yang anda bicarakan
+Fikirkan siapa yang anda mahu capai dan di mana mereka akan melihat tawaran itu. Panduan kami tentang memahami pelanggan anda menerangkan cara mudah untuk mengetahui apa yang mereka mahu.
+
+### Tentukan apa yang tidak akan anda diskaunkan
+Lindungi item bermargin nipis, atau produk yang menentukan kualiti anda, daripada potongan yang dalam.
+
+## 2. Kira kos sebenar diskaun
+
+### Mulakan daripada margin anda
+Jika margin anda pada sesuatu item ialah tiga puluh peratus, diskaun dua puluh peratus meninggalkan anda sebahagian kecil daripada keuntungan biasa. Semak aritmetik sebelum anda menjanjikan apa-apa.
+
+### Kira jualan tambahan yang anda perlukan
+Diskaun hanya berbaloi jika volum tambahan melebihi margin yang hilang. Kira berapa banyak unit lagi yang mesti anda jual hanya untuk memperoleh keuntungan yang sama seperti sebelumnya.
+
+### Kira kos tersembunyi
+Sertakan masa pekerja tambahan, pembungkusan, penghantaran, fi platform dan pembayaran, pengiklanan, dan sebarang hadiah percuma. Panduan kami tentang menetapkan harga produk dan perkhidmatan menerangkan cara membina kos.
+
+### Tetapkan harga lantai
+Tentukan harga terendah di mana promosi masih bermakna, dan berpegang padanya, walaupun pelanggan mendesak.
+
+### Hadkan pendedahan anda
+Hadkan bilangan item, masa atau bajet supaya promosi yang berjalan lebih baik daripada dijangka tidak menjadi kerugian.
+
+## 3. Pilih jenis promosi yang sesuai
+
+### Bandingkan pakej dengan potongan harga
+Pakej, seperti set item berkaitan pada harga gabungan, menaikkan purata pesanan tanpa menurunkan harga mana-mana item tunggal. Potongan harga terus menurunkan margin pada semua yang dijual.
+
+### Gunakan tawaran kesetiaan untuk memberi ganjaran kepada pelanggan berulang
+Kad cop, mata atau item percuma selepas beberapa pembelian memberi ganjaran kepada pelanggan yang paling anda mahu kekalkan. Panduan kami tentang membina kesetiaan pelanggan dan perniagaan berulang menerangkan pilihan yang ada.
+
+### Tawarkan nilai tambah dan bukan potongan
+Naik taraf percuma, hadiah kecil atau penghantaran lebih pantas boleh terasa murah hati sambil berkos kurang kepada anda daripada diskaun.
+
+### Gunakan tawaran yang disasarkan
+Baucar untuk pelanggan baharu atau ucapan terima kasih untuk pelanggan tetap mencapai orang yang anda mahu tanpa mendiskaunkan semua orang.
+
+### Berhati-hati dengan tawaran penghantaran percuma dan perbelanjaan minimum
+Perbelanjaan minimum boleh menaikkan purata pesanan, tetapi semak bahawa kos penghantaran tidak memakan keuntungan itu. Panduan kami tentang menjalankan penghantaran menerangkan kosnya.
+
+## 4. Tentukan masa promosi anda dengan baik
+
+### Rancang kalendar
+Rancang promosi perayaan beberapa minggu lebih awal, bukan beberapa hari. Tentukan tawaran, stok, pembungkusan dan tenaga kerja anda lebih awal, dan beritahu pelanggan anda sebelum kesibukan bermula. Panduan kami tentang merancang untuk puncak perayaan dan musim perlahan menerangkan cara bersedia.
+
+### Gunakan tempoh perlahan dengan sengaja
+Hari biasa yang sunyi dan musim luar puncak ialah masa yang baik untuk promosi yang mengisi kapasiti dengan kos tambahan yang rendah.
+
+### Elakkan berpromosi apabila anda sudah sibuk
+Memberi diskaun pada waktu puncak mungkin hanya menyerahkan margin kepada pelanggan yang akan membayar harga penuh.
+
+### Semak stok dan kapasiti dahulu
+Promosi yang habis dijual atau membebankan pasukan anda mengecewakan pelanggan dan merosakkan kepercayaan. Panduan kami tentang menguruskan inventori dan stok menerangkan cara merancang.
+
+### Simpan kalendar promosi
+Pelan tahunan yang mudah, dengan tawaran, tarikh dan matlamat, membantu anda mengelak diskaun saat akhir dan jarak yang terlalu dekat antara satu sama lain.
+
+## 5. Tetapkan terma dan had yang jelas
+
+### Nyatakan tawaran dengan kata-kata mudah
+Katakan apa diskaun itu, apa yang dikenakannya, dan apa yang mesti dilakukan pelanggan, seperti tarikh, item, perbelanjaan minimum dan cara menuntut.
+
+### Katakan apa yang dikecualikan
+Berterus teranglah tentang pengecualian, seperti produk tertentu, promosi lain atau caj penghantaran, supaya pelanggan tidak terkejut semasa pembayaran.
+
+### Tetapkan tarikh tamat dan had kuantiti
+Tarikh tamat yang jelas dan sebarang had stok mewujudkan rasa segera yang jujur. Elakkan kiraan detik palsu, yang merosakkan kepercayaan.
+
+### Latih pasukan anda
+Pastikan semua orang tahu terma dan boleh menerangkannya. Panduan kami tentang standard dan latihan perkhidmatan pelanggan menerangkan cara menyediakan pekerja.
+
+### Simpan rekod
+Simpan kata-kata tawaran, tarikh, dan angka di belakangnya. Jika pelanggan mempertikaikan sesuatu terma kemudian, anda akan mempunyai sesuatu untuk ditunjukkan.
+
+## 6. Iklankan harga jualan dengan jujur
+
+### Berhati-hati dengan perkataan "jualan"
+Di Malaysia, perkataan seperti "sale", "discount" dan "special price" telah dianggap sebagai ungkapan jualan murah di bawah peraturan Perihal Dagangan, dan peraturan tentang menunjukkan harga terdahulu dilaporkan khusus. Sahkan apa yang terpakai kepada perniagaan anda dengan Kementerian Perdagangan Dalam Negeri dan Kos Sara Hidup sebelum anda mengiklankan.
+
+### Tunjukkan harga terdahulu dengan benar
+Jika anda mengiklankan pengurangan, harga perbandingan hendaklah harga sebenar yang pernah anda caj, bukan harga yang dinaikkan untuk majlis itu. Laporan menceritakan peraturan tentang cara harga terdahulu diukur, dan ini boleh berubah, jadi semak kedudukan semasa.
+
+### Jangan mengelirukan tentang apa yang diliputi harga
+Paparan harga yang mencadangkan segala-galanya termasuk apabila caj tambahan ditambah secara berasingan boleh menimbulkan masalah. Senaraikan tambahan secara terbuka.
+
+### Pastikan dakwaan setakat yang boleh anda sokong
+Elakkan perkataan seperti "harga terendah" atau "tawaran terbaik" melainkan anda boleh membuktikannya. Panduan kami tentang dakwaan pengiklanan dan perlindungan pengguna menerangkan apa yang perlu dielakkan.
+
+### Semak peraturan platform
+Pasar dan platform sosial sering mempunyai peraturan sendiri untuk promosi dan dakwaan diskaun. Bacalah sebelum anda melancarkan.
+
+> Promosi ialah janji: pelanggan akan memaafkan tawaran yang kecil, tetapi mereka tidak akan memaafkan yang ternyata tidak jelas, terhad dengan cara yang tidak diberitahu kepada mereka, atau berharga berbanding nombor yang tidak pernah benar.
+
+## 7. Elakkan melatih pelanggan menunggu diskaun
+
+### Jangan memberi diskaun sepanjang masa
+Apabila sesuatu sentiasa dijual dengan harga jualan, harga diskaun menjadi harga sebenar. Pastikan promosi sekali-sekala dan bertujuan.
+
+### Pastikan harga biasa anda boleh dipercayai
+Pelanggan harus percaya bahawa harga biasa itu adil. Jika ia sentiasa dipotong, mereka akan berhenti membayarnya.
+
+### Beri ganjaran kepada tingkah laku, bukan menunggu
+Tawaran yang dikaitkan dengan sesuatu yang dilakukan pelanggan, seperti menyertai skim kesetiaan, merujuk rakan atau membeli pakej, membina tabiat lebih baik daripada diskaun menyeluruh.
+
+### Lindungi jenama anda
+Diskaun yang berat boleh mencadangkan kualiti rendah. Panduan kami tentang membina jenama dengan bajet kecil menerangkan cara mengekalkan imej yang konsisten.
+
+### Campurkan promosi bukan harga
+Acara, bengkel, akses awal untuk pelanggan tetap dan kandungan berguna boleh mewujudkan keterujaan tanpa memotong harga.
+
+## 8. Ukur hasil dan belajar
+
+### Bandingkan dengan matlamat anda
+Semak sama ada anda mencapai angka yang ditetapkan, seperti pelanggan baharu, purata pesanan atau stok yang dilupuskan.
+
+### Kira keuntungan, bukan hanya hasil
+Promosi yang menaikkan jualan tetapi menurunkan keuntungan bukanlah kejayaan. Sertakan semua kos apabila anda menyemak.
+
+### Lihat apa yang berlaku selepas itu
+Adakah pelanggan kembali, atau adakah jualan merosot sebaik sahaja tawaran tamat? Kemerosotan selepas promosi ialah tanda anda menarik jualan ke hadapan.
+
+### Tanya pelanggan dan pekerja
+Ketahui apa yang menarik orang, apa yang mengelirukan mereka, dan apa yang mereka katakan di kaunter. Panduan kami tentang memahami pelanggan anda menerangkan cara mudah untuk belajar.
+
+### Tuliskan pengajarannya
+Simpan nota ringkas selepas setiap promosi tentang apa yang berkesan, apa yang tidak, dan apa yang akan anda ubah. Jika anda mahukan bantuan dengan reka bentuk, pengiklanan atau simpan kira untuk kempen seterusnya, anda boleh [layari direktori](/ms) untuk profesional berhampiran anda, dan [cipta penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan dapat menemui perniagaan anda.
+
+## Kesilapan biasa PKS Malaysia dengan promosi
+
+- **Menawarkan diskaun tanpa menyemak margin.** Promosi boleh menaikkan jualan dan masih rugi, jadi kira kos sebenar dan tetapkan harga lantai dahulu.
+- **Memberi diskaun terlalu kerap.** Pelanggan belajar menunggu, jadi pastikan promosi sekali-sekala, disasarkan dan dikaitkan dengan matlamat yang jelas.
+- **Mengiklankan harga jualan yang tidak dapat anda sokong.** Harga perbandingan yang mengelirukan dan terma yang tidak jelas boleh menyebabkan masalah undang-undang dan kepercayaan, jadi semak peraturan dan nyatakan terma dengan jelas.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Senaraikan produk anda dengan margin, dan tentukan harga terendah yang akan anda terima bagi setiap satu.
+- **Seterusnya:** Pilih satu matlamat untuk promosi anda yang seterusnya, dan reka tawaran, seperti pakej atau ganjaran kesetiaan, yang sesuai dengannya.
+- **Kemudian:** Semak peraturan pengiklanan untuk harga jualan, tulis terma dengan kata-kata mudah, dan beri taklimat kepada pasukan anda.
+- **Setiap suku tahun:** Semak hasil, kemas kini kalendar promosi anda, dan gugurkan sebarang tawaran yang rugi.
+
+Promosi yang baik ialah eksperimen kecil yang dirancang dengan baik dengan matlamat yang jelas dan harga lantai. Jalankannya, ukurnya, dan kekalkan apa yang berkesan, dan diskaun anda akan membina perniagaan anda dan bukan menyedutnya.`,
+        faqs: [
+          {
+            question: "Bagaimanakah saya tahu sama ada diskaun berbaloi?",
+            answer:
+              "Mulakan daripada margin anda dan kira berapa banyak unit tambahan yang mesti anda jual untuk memperoleh keuntungan yang sama seperti sebelumnya, termasuk kos tersembunyi seperti masa pekerja, penghantaran dan fi platform. Jika jualan tambahan yang boleh anda jangka secara realistik tidak menampung margin yang hilang, diskaun itu tidak berbaloi.",
+          },
+          {
+            question: "Adakah pakej lebih baik daripada potongan harga?",
+            answer:
+              "Selalunya, ya. Pakej menaikkan purata pesanan tanpa menurunkan harga mana-mana item tunggal, sementara potongan harga terus menurunkan margin pada semua yang dijual. Pakej berkesan paling baik apabila item itu memang bersama dan anda telah menyemak margin gabungan.",
+          },
+          {
+            question: "Bilakah masa terbaik untuk menjalankan promosi?",
+            answer:
+              "Gunakan tempoh perlahan dengan sengaja, dan rancang promosi perayaan beberapa minggu lebih awal supaya stok, pembungkusan dan tenaga kerja sedia. Elakkan memberi diskaun apabila anda sudah sibuk, kerana anda mungkin hanya menyerahkan margin kepada pelanggan yang akan membayar harga penuh.",
+          },
+          {
+            question: "Bolehkah saya menggunakan perkataan \"jualan\" dalam pengiklanan saya?",
+            answer:
+              "Berhati-hati. Perkataan seperti sale, discount dan special price telah dianggap sebagai ungkapan jualan murah di bawah peraturan Perihal Dagangan Malaysia, dan peraturan tentang menunjukkan harga terdahulu dilaporkan khusus dan boleh berubah. Sahkan apa yang terpakai kepada anda dengan Kementerian Perdagangan Dalam Negeri dan Kos Sara Hidup sebelum anda mengiklankan.",
+          },
+          {
+            question: "Bagaimanakah saya mengelak pelanggan menunggu diskaun?",
+            answer:
+              "Pastikan promosi sekali-sekala dan bertujuan, pastikan harga biasa anda boleh dipercayai, dan kaitkan tawaran dengan sesuatu yang dilakukan pelanggan, seperti menyertai skim kesetiaan atau membeli pakej. Campurkan promosi bukan harga seperti acara dan akses awal untuk pelanggan tetap.",
+          },
+          {
+            question: "Apakah terma yang patut saya nyatakan dalam promosi?",
+            answer:
+              "Nyatakan apa diskaun itu dan apa yang dikenakannya, tarikh, sebarang perbelanjaan minimum, apa yang dikecualikan, had kuantiti, dan cara menuntut. Gunakan kata-kata mudah, beri taklimat kepada pekerja, dan simpan rekod kata-kata tawaran dan tarikh.",
+          },
+          {
+            question: "Bagaimanakah saya mengehadkan risiko promosi menjadi salah?",
+            answer:
+              "Tetapkan harga lantai, hadkan bilangan item, bajet atau masa, semak stok dan tenaga kerja sebelum pelancaran, dan elakkan kiraan detik palsu. Had mengelakkan promosi yang berjalan lebih baik daripada dijangka daripada menjadi kerugian.",
+          },
+          {
+            question: "Bagaimanakah saya patut mengukur hasil promosi?",
+            answer:
+              "Bandingkan dengan matlamat yang anda tetapkan, seperti pelanggan baharu atau purata pesanan, dan kira keuntungan dan bukan hanya hasil. Lihat juga apa yang berlaku selepas itu, seperti sama ada pelanggan kembali atau jualan merosot, dan tuliskan pengajaran untuk kali seterusnya.",
+          },
+        ],
+      },
+    },
+  },
 ];
