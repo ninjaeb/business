@@ -47714,4 +47714,1296 @@ Promosi yang baik ialah eksperimen kecil yang dirancang dengan baik dengan matla
       },
     },
   },
+  {
+    slug: "employee-onboarding-and-first-week-plan-for-malaysian-smes",
+    title: "Building a Simple Employee Onboarding and First-Week Plan: Helping New Hires Settle In at Your Malaysian SME",
+    seoTitle: "Employee Onboarding and First-Week Plan for Malaysian SMEs",
+    seoDescription:
+      "How Malaysian SMEs can onboard new hires well: prepare before day one, plan the first week, assign a buddy, set clear goals and run 30-60-90 day check-ins.",
+    coverImage: {
+      file: "employee-onboarding-and-first-week-plan-cover.webp",
+      mimeType: "image/webp",
+      alt: "Two smiling colleagues in grey-green aprons, one holding a white cup, looking together at a laptop on a counter beside an espresso machine",
+      altTranslations: {
+        zh: "两位身穿灰绿色围裙的微笑同事，其中一位手拿白色杯子，一起看着咖啡机旁柜台上的笔记本电脑",
+        ms: "Dua rakan sekerja tersenyum berapron hijau kelabu, seorang memegang cawan putih, memandang bersama komputer riba di atas kaunter di sebelah mesin espreso",
+      },
+    },
+    contentImages: {
+      team: {
+        file: "employee-onboarding-and-first-week-plan-team.webp",
+        mimeType: "image/webp",
+        alt: "Four colleagues in business clothes talking across white cubicle walls in a bright open office with pink walls and a framed black-and-white print",
+        altTranslations: {
+          zh: "四位身穿商务服装的同事隔着白色隔间墙交谈，身处粉红色墙壁的明亮开放式办公室，墙上挂着黑白画框",
+          ms: "Empat rakan sekerja berpakaian formal berbual merentasi dinding kubikel putih di pejabat terbuka yang terang berdinding merah jambu dengan cetakan hitam putih berbingkai",
+        },
+        after: "Introduce the new hire to the whole team on day one.",
+        afterTranslations: {
+          zh: "第一天就把新员工介绍给整个团队。",
+          ms: "Perkenalkan pekerja baharu kepada seluruh pasukan pada hari pertama.",
+        },
+      },
+    },
+    excerpt:
+      "The first weeks decide whether a new hire stays, performs, and speaks well of your business. This guide helps Malaysian SMEs prepare before day one, plan a simple first day and first week, assign a buddy, set clear expectations, explain pay and leave in plain words, and run friendly check-ins at 30, 60, and 90 days.",
+    body: `A new hire usually arrives excited and a little nervous. Within a few days, they have formed a view: does this place know what it is doing, do people care that I am here, and can I succeed? In a small business, where there may be no HR team and everyone is busy, that first impression is easy to get wrong.
+
+Many early resignations are not about pay. They come from confusion, feeling ignored, or being thrown into the work with no guidance. A simple onboarding plan costs a few hours of preparation and can save weeks of rehiring.
+
+This is general information, not legal or HR advice. Employment rules, statutory contributions, and registration steps change over time, and some details in this guide may be out of date. Confirm current requirements with the relevant authorities or a qualified adviser before you act.
+
+## 1. Understand why onboarding matters
+
+### The first weeks shape the whole relationship
+People form lasting impressions early. A warm, organised start builds loyalty, and a chaotic one plants doubts that are hard to remove.
+
+### Onboarding is more than paperwork
+Forms matter, but so do belonging, clarity, and confidence. A new hire needs to know where things are, who to ask, and what good looks like.
+
+### Good onboarding saves money
+Replacing someone costs time for advertising, interviewing, and training again. Our guide on keeping your best people explains why retention begins on day one.
+
+### It helps the whole team
+A clear process stops colleagues being interrupted constantly, and it makes it easier to bring on part-time and seasonal staff as well.
+
+### Keep it simple
+You do not need software or a long manual. A one-page checklist and a few conversations are enough to start.
+
+## 2. Prepare before day one
+
+### Confirm the basics in writing
+Make sure the employment terms, start date, working hours, and pay arrangements are written down and agreed. Our guide on hiring your first employee in Malaysia explains the common steps, including statutory contributions and registrations, and it is wise to confirm current rules with the relevant authorities.
+
+### Gather the paperwork
+Collect the details you need, such as identity documents, bank details for salary, and any forms for statutory schemes, so that the first day is not spent chasing papers.
+
+### Prepare the workspace and tools
+Set up a desk or station, uniform, tools, logins, and access to systems before the person arrives. Nothing signals disorganisation like a new hire waiting for a chair.
+
+### Brief the team
+Tell colleagues who is joining, what they will do, and how you want them to help. Surprise arrivals make people feel awkward.
+
+### Write a simple first-week plan
+Plan each day in outline, including who they will shadow, what they will learn, and when you will check in.
+
+## 3. Plan a welcoming first day
+
+### Greet them yourself
+Be there to welcome the new hire, offer a drink, and show them around. Your presence tells them they matter.
+
+### Make the introductions
+Introduce the new hire to the whole team on day one. Share each person's role in a sentence, and mention one thing the newcomer can ask them about. Names are easier to remember with context.
+
+### Show where everything is
+Walk through the toilets, prayer room if you have one, kitchen, storage, emergency exits, and where to put personal belongings. Practical details reduce anxiety.
+
+### Explain how the day works
+Share working hours, breaks, how to clock in, who to call if sick, and how to ask for help. Our guide on staff scheduling and attendance explains how to set a clear routine.
+
+### Share lunch or a coffee
+A relaxed meal with the team helps the new hire feel part of it. Keep it light, and take dietary and religious needs into account.
+
+## 4. Design the first week
+
+### Start with a short overview
+Explain what your business does, who your customers are, and how the new hire's role fits in. People work better when they understand the purpose.
+
+### Alternate watching and doing
+Let them shadow a colleague on day one or two, then try small tasks with support. Giving them real work early builds confidence.
+
+### Teach the essentials first
+List the five or six things a new hire must master in the first week, and start there. Leave the rare exceptions for later.
+
+### Cover safety and conduct
+Explain the workplace rules, safety basics, and standards of behaviour in plain language. Our guide on workplace safety and the employee handbook and HR policies explain what to include.
+
+### Plan a mid-week and end-of-week chat
+Ten minutes to ask how things are going, what is confusing, and what they need keeps small problems small.
+
+## 5. Assign a buddy
+
+### Pick someone who is patient and knows the work
+A buddy does not have to be a manager. Choose a colleague who explains well, is welcoming, and has time.
+
+### Define the buddy's role
+Tell the buddy what you expect, such as answering questions, sharing tips, and having lunch together in the first weeks. Free up some of their time for it.
+
+### Encourage questions
+New hires often hesitate to ask. Let them know that questions are welcome, and that you prefer a question to a mistake.
+
+### Respect your buddy's workload
+Do not simply add the extra duty on top of a full day. Recognise the effort and thank them.
+
+### Check in with both
+After a week or two, ask the new hire and the buddy how it is going, and adjust.
+
+## 6. Set clear expectations and goals
+
+### Describe the role and what success looks like
+Say what the person is responsible for, how their work will be judged, and what a good week looks like. Clarity lowers stress.
+
+### Set small early goals
+Give two or three simple goals for the first month, such as learning the opening routine or serving customers unaided. Achieving them builds momentum.
+
+### Explain pay, hours, and leave in plain words
+Walk through when and how salary is paid, how overtime and public holidays are handled, and how to apply for leave. Our guide on employee leave and public holidays in Malaysia explains the basics. Check the current rules and your contract rather than relying on memory.
+
+### Be clear about probation, if you use it
+If the role has a probation period, explain what it means, how it will be reviewed, and what the next steps are. Our guide on terminating an employee in Malaysia explains why fair, documented processes matter.
+
+> A new hire's first week tells them what working for you will be like: if it feels organised, friendly, and clear, they will give you their best, and if it feels chaotic, they are already looking elsewhere.
+
+### Share how you give feedback
+Explain how you prefer to give and receive feedback, and encourage honest conversation. Our guide on giving employee feedback explains the habit.
+
+## 7. Cover culture and ways of working
+
+### Explain how the business really works
+Share the unwritten rules, such as how you handle customers, who approves what, and how the team communicates. Newcomers cannot guess these.
+
+### Respect different customs
+Malaysian workplaces are diverse, so explain festival arrangements, prayer times, and how colleagues celebrate. Our guide on serving a multicultural market and tourists explains more.
+
+### Explain the tools they will use
+Show them the messaging groups, scheduling method, and any software they need, and explain the etiquette for each.
+
+### Set the tone on service and quality
+Share what good service looks like in your business. Our guide on customer service standards and training explains how to set simple standards.
+
+### Make speaking up easy
+Let new hires know how to raise problems, including who to speak to if something feels wrong.
+
+## 8. Check in at 30, 60, and 90 days
+
+### Hold a 30-day conversation
+Ask what is going well, what is hard, and what support is needed. Share your own feedback honestly and kindly.
+
+### Hold a 60-day review of progress
+Look at the early goals, adjust the plan, and talk about what skills to develop next. Our guide on training your team with HRD Corp in Malaysia explains training options you may be able to use.
+
+### Hold a 90-day conversation on fit
+Discuss whether the role is working for both sides, and agree next steps, such as new responsibilities or further training.
+
+### Ask the new hire how onboarding went
+Their view is the best source of improvements. Ask what was missing and what helped most.
+
+### Improve the plan each time
+Update your checklist after every hire. If you want help with HR documents, payroll, or training, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so that candidates and customers can find your business.
+
+## Common mistakes Malaysian SMEs make with onboarding
+
+- **Treating day one as paperwork and a pointer to the work.** New hires feel lost, so plan a welcome, introductions, and a first-week schedule.
+- **Leaving pay, hours, and leave unclear.** Confusion causes disputes, so explain them plainly and check them against your contract and the current rules.
+- **Never checking in after the first few days.** Small problems grow in silence, so hold friendly check-ins at the end of week one and at 30, 60, and 90 days.
+
+## Where to start
+
+- **This week:** Write a one-page onboarding checklist covering paperwork, workspace, introductions, and the first-week plan.
+- **Next:** Choose and brief a buddy, and prepare the desk, tools, and access before the next hire arrives.
+- **Then:** Run the first-day welcome and the end-of-week chat, and note what you would change.
+- **Every quarter:** Update the checklist from feedback, and check that your terms still match the current rules.
+
+A new hire who feels welcomed, informed, and trusted in the first week is far more likely to stay, learn quickly, and speak well of your business. The effort is small, and the return lasts for years.`,
+    faqs: [
+      {
+        question: "What should I do before a new employee's first day?",
+        answer:
+          "Confirm the employment terms in writing, gather the paperwork you need, set up the workspace, tools, and access, brief the team, and write a simple first-week plan. Check current requirements for statutory contributions and registrations with the relevant authorities.",
+      },
+      {
+        question: "What should a good first day look like?",
+        answer:
+          "Greet the new hire yourself, introduce them to the team, show where everything is, explain how the day works, and share a relaxed meal or coffee. Keep the day welcoming rather than overloaded with information.",
+      },
+      {
+        question: "How long should onboarding last?",
+        answer:
+          "Plan a structured first week, then check in at the end of week one and at 30, 60, and 90 days. Full confidence in a new role can take a few months, so keep supporting them beyond the first week.",
+      },
+      {
+        question: "Do I need a buddy system in a small business?",
+        answer:
+          "It is not required, but it helps. Pick a patient colleague who knows the work, explain what you expect, free up some of their time, and encourage the new hire to ask questions freely.",
+      },
+      {
+        question: "What should I explain about pay, hours, and leave?",
+        answer:
+          "Explain when and how salary is paid, working hours and breaks, how overtime and public holidays are handled, and how to apply for leave. Check the current rules and your contract rather than relying on memory, and put the key points in writing.",
+      },
+      {
+        question: "How do I onboard part-time or seasonal staff?",
+        answer:
+          "Give them a shorter version of the same plan: a welcome, a tour, a short briefing on essentials, a buddy for the first shifts, and a quick check-in after the first week. They meet customers too, so they need the basics from the start.",
+      },
+      {
+        question: "How do I set clear expectations without overwhelming a new hire?",
+        answer:
+          "Describe the role and what success looks like, then set two or three small goals for the first month. Teach the five or six essentials first and leave rare exceptions for later.",
+      },
+      {
+        question: "How do I know whether my onboarding works?",
+        answer:
+          "Ask new hires what helped and what was missing, watch how quickly they become confident, and track whether they stay past the first few months. Update your checklist after every hire.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "打造简单的员工入职与第一周计划：帮助新员工在您的马来西亚中小企业安顿下来",
+        excerpt:
+          "最初几个星期决定新员工是否留下、是否表现出色，以及是否称赞您的企业。本指南帮助马来西亚中小企业在第一天之前做好准备，规划简单的第一天和第一周，指派一位伙伴，设定清楚的期望，用平实的话说明薪资和假期，并在30、60和90天举行友善的面谈。",
+        body: `新员工到来时通常既兴奋又有点紧张。几天之内，他们就形成了看法：这个地方知道自己在做什么吗？有人在乎我在这里吗？我能成功吗？在小企业里，可能没有人力资源团队，每个人都很忙，这第一印象很容易搞砸。
+
+许多早期的离职与薪资无关。它们来自困惑、被忽视，或被丢进工作里却没有指引。一份简单的入职计划只需要几个小时的准备，却能省下数个星期的重新招聘。
+
+本文仅提供一般信息，并非法律或人力资源建议。雇佣规定、法定供款和登记步骤会随时间变化，本指南的部分细节可能已经过时。在采取行动之前，请向相关主管单位或合格的顾问确认现行要求。
+
+## 1. 了解入职为什么重要
+
+### 最初的几个星期塑造整段关系
+人们很早就形成持久的印象。温暖而有条理的开始建立忠诚度，混乱的开始则埋下难以消除的疑虑。
+
+### 入职不只是文书
+表格很重要，归属感、清晰度和信心同样重要。新员工需要知道东西在哪里、该问谁，以及什么是好的表现。
+
+### 良好的入职能省钱
+替换一个人需要花时间登广告、面试和重新培训。我们关于留住您最好的人才的指南解释了为什么留任从第一天就开始。
+
+### 它对整个团队都有帮助
+清楚的流程让同事不会不断被打扰，也让接纳兼职和季节性员工更容易。
+
+### 保持简单
+您不需要软件或冗长的手册。一页纸的清单和几次谈话就足以开始。
+
+## 2. 在第一天之前做好准备
+
+### 以书面确认基本事项
+确保雇佣条款、开始日期、工作时间和薪资安排已写下并获同意。我们关于在马来西亚聘请第一位员工的指南解释了常见的步骤，包括法定供款和登记，并且明智的做法是向相关主管单位确认现行规定。
+
+### 收集文书
+收集您需要的资料，例如身份证件、发薪用的银行资料，以及法定计划的表格，让第一天不必花在追着要文件上。
+
+### 准备工作空间和工具
+在对方到来之前，准备好办公桌或工作站、制服、工具、登入账号和系统的访问权限。没有什么比新员工在等一张椅子更能显示杂乱无章。
+
+### 向团队说明
+告诉同事谁要加入、他们将做什么，以及您希望他们如何帮忙。突然到来的人会让大家觉得尴尬。
+
+### 写一份简单的第一周计划
+概要地规划每一天，包括他们将跟随谁、学习什么，以及您何时与他们面谈。
+
+## 3. 规划一个温暖的第一天
+
+### 亲自迎接
+亲自到场欢迎新员工，递上饮料，带他们四处看看。您的在场告诉他们他们很重要。
+
+### 做好介绍
+第一天就把新员工介绍给整个团队。用一句话介绍每个人的职责，并提到新人可以向他们请教的一件事。有了情境，名字更容易记住。
+
+### 展示一切在哪里
+带他们看洗手间、祈祷室（如果有的话）、厨房、储物处、紧急出口，以及个人物品放哪里。实用的细节能减少焦虑。
+
+### 说明一天如何运作
+说明工作时间、休息、如何打卡、生病时该打给谁，以及如何求助。我们关于员工排班与出勤的指南解释了如何订立清楚的日常安排。
+
+### 分享午餐或咖啡
+与团队一起轻松地用餐，有助于新员工感觉自己是其中一员。保持轻松，并考虑饮食和宗教的需要。
+
+## 4. 设计第一周
+
+### 从简短的概览开始
+说明您的企业做什么、顾客是谁，以及新员工的角色如何配合。人们在理解目的时工作得更好。
+
+### 交替观看和动手
+第一两天让他们跟随一位同事，然后在支援下尝试小任务。早早给他们真正的工作，能建立信心。
+
+### 先教最基本的
+列出新员工第一周必须掌握的五六件事，并从那里开始。把罕见的例外留到以后。
+
+### 涵盖安全和行为规范
+用平实的语言说明职场规则、安全基础和行为标准。我们关于职场安全和员工手册与人力资源政策的指南解释了应包括什么。
+
+### 规划周中和周末的交谈
+花十分钟问问进展如何、什么令人困惑、他们需要什么，能让小问题保持小。
+
+## 5. 指派一位伙伴
+
+### 选择有耐心且懂工作的人
+伙伴不一定是经理。请选择善于解释、友善并有时间的同事。
+
+### 界定伙伴的角色
+告诉伙伴您的期望，例如回答问题、分享窍门，以及头几个星期一起吃午餐。为此腾出他们一些时间。
+
+### 鼓励发问
+新员工常常不敢问。让他们知道欢迎提问，并且您宁可他们问也不要出错。
+
+### 尊重伙伴的工作量
+不要只是在满满的一天之上再加一项额外职责。认可他们的付出并向他们道谢。
+
+### 与双方都面谈
+一两个星期后，问问新员工和伙伴进展如何，并加以调整。
+
+## 6. 设定清楚的期望和目标
+
+### 描述角色以及成功是什么样子
+说明这个人负责什么、工作如何被评判，以及好的一周是什么样子。清晰能减轻压力。
+
+### 设定小的早期目标
+为第一个月订下两三个简单的目标，例如学会开店流程或独立服务顾客。达成它们能积累动力。
+
+### 用平实的话说明薪资、工时和假期
+讲解薪资何时以及如何发放、加班和公共假期如何处理，以及如何申请假期。我们关于马来西亚员工假期与公共假期的指南解释了基础知识。请查看现行规定和您的合约，而不要凭记忆。
+
+### 如果采用试用期，请说清楚
+如果这个职位有试用期，请说明它的意思、将如何评估，以及接下来的步骤。我们关于在马来西亚终止雇佣的指南解释了为什么公平且有记录的流程很重要。
+
+> 新员工的第一周告诉他们为您工作会是什么样子：如果感觉有条理、友善而清晰，他们会把最好的给您；如果感觉混乱，他们已经在看别处了。
+
+### 分享您如何给予反馈
+说明您喜欢如何给予和接受反馈，并鼓励坦诚的交谈。我们关于给予员工反馈的指南解释了这个习惯。
+
+## 7. 涵盖文化和工作方式
+
+### 说明企业真正的运作方式
+分享不成文的规则，例如您如何对待顾客、谁批准什么，以及团队如何沟通。新人猜不到这些。
+
+### 尊重不同的习俗
+马来西亚的职场是多元的，所以请说明节庆安排、祈祷时间，以及同事如何庆祝。我们关于服务多元文化市场与游客的指南有更多说明。
+
+### 说明他们将使用的工具
+向他们展示讯息群组、排班方式和任何需要的软件，并说明各自的礼仪。
+
+### 确立服务和品质的基调
+分享在您的业务里好服务是什么样子。我们关于客户服务标准与培训的指南解释了如何订立简单的标准。
+
+### 让发声变得容易
+让新员工知道如何提出问题，包括感觉不对劲时该找谁谈。
+
+## 8. 在30、60和90天面谈
+
+### 举行30天的面谈
+问问什么进展顺利、什么困难，以及需要什么支援。诚实而友善地分享您自己的反馈。
+
+### 举行60天的进度检讨
+查看早期的目标，调整计划，并谈谈接下来要培养什么技能。我们关于通过HRD Corp培训团队的指南解释了您或许可以使用的培训选择。
+
+### 举行90天的契合度面谈
+讨论这个职位是否对双方都行得通，并约定接下来的步骤，例如新的职责或进一步的培训。
+
+### 询问新员工入职过程如何
+他们的看法是改进的最佳来源。问问缺少了什么、什么最有帮助。
+
+### 每次都改进计划
+每聘请一位新人之后就更新您的清单。如果您在人力资源文件、薪资或培训方面需要协助，您可以[浏览名录](/zh)寻找附近的专业人士，并[创建免费商家列表](/zh/signup)，让求职者和顾客找到您的业务。
+
+## 马来西亚中小企业在入职方面常犯的错误
+
+- **把第一天当成文书和指一指工作。** 新员工会觉得迷失，所以请规划欢迎、介绍和第一周的日程。
+- **薪资、工时和假期不清楚。** 困惑会引起纠纷，所以请平实地说明，并对照您的合约和现行规定核对。
+- **头几天之后就再也没有跟进。** 小问题会在沉默中长大，所以请在第一周结束时以及30、60和90天举行友善的面谈。
+
+## 从哪里开始
+
+- **本周：** 写一份一页的入职清单，涵盖文书、工作空间、介绍和第一周计划。
+- **接着：** 选择并向一位伙伴说明，并在下一位新人到来之前准备好办公桌、工具和访问权限。
+- **然后：** 举行第一天的欢迎和周末的交谈，并记下您会改变什么。
+- **每季度：** 根据反馈更新清单，并检查您的条款是否仍符合现行规定。
+
+在第一周感到受欢迎、被告知并受到信任的新员工，更有可能留下、快速学习并称赞您的企业。付出很小，回报却持续多年。`,
+        faqs: [
+          {
+            question: "在新员工第一天之前我应该做什么？",
+            answer:
+              "以书面确认雇佣条款，收集您需要的文书，准备工作空间、工具和访问权限，向团队说明，并写一份简单的第一周计划。请向相关主管单位确认法定供款和登记的现行要求。",
+          },
+          {
+            question: "一个好的第一天应该是什么样子？",
+            answer:
+              "亲自迎接新员工，把他们介绍给团队，展示一切在哪里，说明一天如何运作，并分享轻松的用餐或咖啡。让这一天温暖而不是塞满信息。",
+          },
+          {
+            question: "入职应该持续多久？",
+            answer:
+              "规划一个有结构的第一周，然后在第一周结束时以及30、60和90天面谈。对新职位完全有信心可能需要几个月，所以在第一周之后也要继续支持他们。",
+          },
+          {
+            question: "小企业需要伙伴制度吗？",
+            answer:
+              "不是必需的，但很有帮助。选一位有耐心且懂工作的同事，说明您的期望，腾出他们一些时间，并鼓励新员工自由发问。",
+          },
+          {
+            question: "关于薪资、工时和假期我应该说明什么？",
+            answer:
+              "说明薪资何时以及如何发放、工作时间和休息、加班和公共假期如何处理，以及如何申请假期。请查看现行规定和您的合约而不要凭记忆，并把要点写下来。",
+          },
+          {
+            question: "我如何让兼职或季节性员工入职？",
+            answer:
+              "给他们同一个计划的精简版：欢迎、参观、对基本事项的简短说明、头几个班的伙伴，以及第一周之后的快速面谈。他们同样接触顾客，所以从一开始就需要基础知识。",
+          },
+          {
+            question: "我如何设定清楚的期望而不让新员工不堪负荷？",
+            answer:
+              "描述角色以及成功是什么样子，然后为第一个月设定两三个小目标。先教五六件最基本的，把罕见的例外留到以后。",
+          },
+          {
+            question: "我怎么知道我的入职是否有效？",
+            answer:
+              "问问新员工什么有帮助、缺少了什么，观察他们多快建立信心，并追踪他们是否在头几个月之后留下。每聘请一位新人之后就更新您的清单。",
+          },
+        ],
+      },
+      ms: {
+        title: "Membina Pelan Orientasi Pekerja dan Minggu Pertama yang Mudah: Membantu Pekerja Baharu Menyesuaikan Diri di PKS Malaysia Anda",
+        excerpt:
+          "Minggu-minggu pertama menentukan sama ada pekerja baharu kekal, berprestasi dan bercakap baik tentang perniagaan anda. Panduan ini membantu PKS Malaysia bersedia sebelum hari pertama, merancang hari pertama dan minggu pertama yang mudah, menugaskan rakan pembimbing, menetapkan jangkaan yang jelas, menerangkan gaji dan cuti dengan kata-kata mudah, dan mengadakan semakan mesra pada hari ke-30, 60 dan 90.",
+        body: `Pekerja baharu biasanya tiba dengan teruja dan sedikit gementar. Dalam beberapa hari, mereka sudah membentuk pandangan: adakah tempat ini tahu apa yang dilakukannya, adakah orang peduli bahawa saya di sini, dan bolehkah saya berjaya? Dalam perniagaan kecil, di mana mungkin tiada pasukan HR dan semua orang sibuk, kesan pertama itu mudah dilakukan dengan salah.
+
+Banyak peletakan jawatan awal bukan tentang gaji. Ia datang daripada kekeliruan, berasa diabaikan, atau dilemparkan ke dalam kerja tanpa bimbingan. Pelan orientasi yang mudah memerlukan beberapa jam persediaan dan boleh menjimatkan berminggu-minggu pengambilan semula.
+
+Ini maklumat umum, bukan nasihat undang-undang atau HR. Peraturan pekerjaan, caruman berkanun dan langkah pendaftaran berubah dari semasa ke semasa, dan sebahagian butiran dalam panduan ini mungkin sudah lapuk. Sahkan keperluan semasa dengan pihak berkuasa berkaitan atau penasihat yang layak sebelum anda bertindak.
+
+## 1. Fahami mengapa orientasi penting
+
+### Minggu-minggu pertama membentuk keseluruhan hubungan
+Orang membentuk tanggapan yang kekal lebih awal. Permulaan yang mesra dan teratur membina kesetiaan, dan yang kucar-kacir menanam keraguan yang sukar dihilangkan.
+
+### Orientasi lebih daripada kertas kerja
+Borang penting, tetapi begitu juga rasa kekitaan, kejelasan dan keyakinan. Pekerja baharu perlu tahu di mana sesuatu berada, siapa yang perlu ditanya, dan apa itu prestasi yang baik.
+
+### Orientasi yang baik menjimatkan wang
+Menggantikan seseorang memerlukan masa untuk mengiklan, menemu duga dan melatih semula. Panduan kami tentang mengekalkan pekerja terbaik anda menerangkan mengapa pengekalan bermula pada hari pertama.
+
+### Ia membantu seluruh pasukan
+Proses yang jelas menghentikan rakan sekerja daripada diganggu secara berterusan, dan ia memudahkan pengambilan pekerja sambilan dan bermusim juga.
+
+### Pastikan ia mudah
+Anda tidak memerlukan perisian atau manual yang panjang. Senarai semak satu muka surat dan beberapa perbualan sudah memadai untuk bermula.
+
+## 2. Bersedia sebelum hari pertama
+
+### Sahkan perkara asas secara bertulis
+Pastikan terma pekerjaan, tarikh mula, waktu bekerja dan pengaturan gaji ditulis dan dipersetujui. Panduan kami tentang mengambil pekerja pertama anda di Malaysia menerangkan langkah biasa, termasuk caruman berkanun dan pendaftaran, dan adalah bijak untuk mengesahkan peraturan semasa dengan pihak berkuasa berkaitan.
+
+### Kumpulkan kertas kerja
+Kumpulkan butiran yang anda perlukan, seperti dokumen pengenalan, butiran bank untuk gaji, dan sebarang borang untuk skim berkanun, supaya hari pertama tidak dihabiskan untuk mengejar dokumen.
+
+### Sediakan ruang kerja dan peralatan
+Sediakan meja atau stesen, pakaian seragam, peralatan, log masuk dan akses kepada sistem sebelum orang itu tiba. Tiada yang menunjukkan ketidakteraturan seperti pekerja baharu menunggu kerusi.
+
+### Beri taklimat kepada pasukan
+Beritahu rakan sekerja siapa yang akan menyertai, apa yang akan mereka lakukan, dan bagaimana anda mahu mereka membantu. Ketibaan yang mengejut membuat orang berasa janggal.
+
+### Tulis pelan minggu pertama yang mudah
+Rancang setiap hari secara ringkas, termasuk siapa yang akan mereka ekori, apa yang akan mereka pelajari, dan bila anda akan menyemak.
+
+## 3. Rancang hari pertama yang mesra
+
+### Sambut mereka sendiri
+Hadir untuk mengalu-alukan pekerja baharu, tawarkan minuman, dan tunjukkan sekeliling. Kehadiran anda memberitahu mereka bahawa mereka penting.
+
+### Buat perkenalan
+Perkenalkan pekerja baharu kepada seluruh pasukan pada hari pertama. Kongsikan peranan setiap orang dalam satu ayat, dan sebut satu perkara yang boleh ditanya oleh orang baharu kepada mereka. Nama lebih mudah diingat dengan konteks.
+
+### Tunjukkan di mana semuanya berada
+Bawa mereka melihat tandas, bilik solat jika ada, dapur, stor, pintu keluar kecemasan, dan tempat meletak barang peribadi. Butiran praktikal mengurangkan kebimbangan.
+
+### Terangkan bagaimana hari berfungsi
+Kongsikan waktu bekerja, rehat, cara mengimbas kehadiran, siapa yang perlu dihubungi jika sakit, dan cara meminta bantuan. Panduan kami tentang penjadualan dan kehadiran pekerja menerangkan cara menetapkan rutin yang jelas.
+
+### Kongsi makan tengah hari atau kopi
+Hidangan yang santai bersama pasukan membantu pekerja baharu berasa sebahagian daripadanya. Pastikan ringan, dan ambil kira keperluan pemakanan dan agama.
+
+## 4. Reka minggu pertama
+
+### Mulakan dengan gambaran ringkas
+Terangkan apa yang perniagaan anda lakukan, siapa pelanggan anda, dan bagaimana peranan pekerja baharu itu sesuai. Orang bekerja lebih baik apabila mereka memahami tujuannya.
+
+### Gilirkan memerhati dan melakukan
+Biarkan mereka mengekori seorang rakan sekerja pada hari pertama atau kedua, kemudian mencuba tugas kecil dengan sokongan. Memberi mereka kerja sebenar awal membina keyakinan.
+
+### Ajar perkara penting dahulu
+Senaraikan lima atau enam perkara yang mesti dikuasai pekerja baharu pada minggu pertama, dan mulakan di situ. Tinggalkan pengecualian yang jarang untuk kemudian.
+
+### Liputi keselamatan dan tatakelakuan
+Terangkan peraturan tempat kerja, asas keselamatan dan standard tingkah laku dalam bahasa mudah. Panduan kami tentang keselamatan tempat kerja dan buku panduan pekerja serta dasar HR menerangkan apa yang perlu disertakan.
+
+### Rancang perbualan pertengahan dan hujung minggu
+Sepuluh minit untuk bertanya bagaimana keadaan, apa yang mengelirukan, dan apa yang mereka perlukan memastikan masalah kecil kekal kecil.
+
+## 5. Tugaskan rakan pembimbing
+
+### Pilih seseorang yang sabar dan tahu kerja
+Rakan pembimbing tidak semestinya pengurus. Pilih rakan sekerja yang pandai menerangkan, mesra dan mempunyai masa.
+
+### Tentukan peranan rakan pembimbing
+Beritahu rakan pembimbing apa yang anda harapkan, seperti menjawab soalan, berkongsi petua, dan makan tengah hari bersama pada minggu-minggu pertama. Lapangkan sedikit masa mereka untuknya.
+
+### Galakkan soalan
+Pekerja baharu sering teragak-agak untuk bertanya. Beritahu mereka bahawa soalan dialu-alukan, dan anda lebih suka soalan daripada kesilapan.
+
+### Hormati beban kerja rakan pembimbing
+Jangan sekadar menambah tugas tambahan di atas hari yang penuh. Iktiraf usaha itu dan ucapkan terima kasih.
+
+### Semak dengan kedua-duanya
+Selepas seminggu atau dua, tanya pekerja baharu dan rakan pembimbing bagaimana keadaan, dan laraskan.
+
+## 6. Tetapkan jangkaan dan matlamat yang jelas
+
+### Terangkan peranan dan rupa kejayaan
+Katakan apa yang menjadi tanggungjawab orang itu, bagaimana kerja mereka akan dinilai, dan rupa minggu yang baik. Kejelasan mengurangkan tekanan.
+
+### Tetapkan matlamat awal yang kecil
+Berikan dua atau tiga matlamat mudah untuk bulan pertama, seperti mempelajari rutin pembukaan atau melayan pelanggan tanpa bantuan. Mencapainya membina momentum.
+
+### Terangkan gaji, waktu dan cuti dengan kata-kata mudah
+Terangkan bila dan bagaimana gaji dibayar, bagaimana kerja lebih masa dan cuti umum dikendalikan, dan cara memohon cuti. Panduan kami tentang cuti pekerja dan cuti umum di Malaysia menerangkan asasnya. Semak peraturan semasa dan kontrak anda dan bukan bergantung pada ingatan.
+
+### Jelas tentang percubaan, jika anda menggunakannya
+Jika peranan itu mempunyai tempoh percubaan, terangkan maknanya, bagaimana ia akan disemak, dan langkah seterusnya. Panduan kami tentang menamatkan perkhidmatan pekerja di Malaysia menerangkan mengapa proses yang adil dan didokumenkan penting.
+
+> Minggu pertama pekerja baharu memberitahu mereka bagaimana rasanya bekerja untuk anda: jika ia terasa teratur, mesra dan jelas, mereka akan memberikan yang terbaik, dan jika ia terasa kucar-kacir, mereka sudah mencari di tempat lain.
+
+### Kongsi cara anda memberi maklum balas
+Terangkan bagaimana anda suka memberi dan menerima maklum balas, dan galakkan perbualan yang jujur. Panduan kami tentang memberi maklum balas kepada pekerja menerangkan tabiat itu.
+
+## 7. Liputi budaya dan cara bekerja
+
+### Terangkan bagaimana perniagaan sebenarnya berfungsi
+Kongsikan peraturan tidak bertulis, seperti bagaimana anda melayan pelanggan, siapa yang meluluskan apa, dan bagaimana pasukan berkomunikasi. Orang baharu tidak dapat meneka ini.
+
+### Hormati adat yang berbeza
+Tempat kerja di Malaysia pelbagai, jadi terangkan pengaturan perayaan, waktu solat, dan bagaimana rakan sekerja meraikan. Panduan kami tentang melayani pasaran pelbagai budaya dan pelancong menerangkan lebih lanjut.
+
+### Terangkan alat yang akan mereka gunakan
+Tunjukkan kumpulan mesej, kaedah penjadualan dan sebarang perisian yang diperlukan, dan terangkan etika bagi setiap satu.
+
+### Tetapkan nada tentang perkhidmatan dan kualiti
+Kongsikan rupa perkhidmatan yang baik dalam perniagaan anda. Panduan kami tentang standard dan latihan perkhidmatan pelanggan menerangkan cara menetapkan standard yang mudah.
+
+### Permudahkan bersuara
+Beritahu pekerja baharu cara membangkitkan masalah, termasuk siapa yang perlu dihubungi jika sesuatu terasa tidak kena.
+
+## 8. Semak pada hari ke-30, 60 dan 90
+
+### Adakan perbualan 30 hari
+Tanya apa yang berjalan lancar, apa yang sukar, dan sokongan apa yang diperlukan. Kongsikan maklum balas anda sendiri dengan jujur dan baik.
+
+### Adakan semakan kemajuan 60 hari
+Lihat matlamat awal, laraskan pelan, dan bincangkan kemahiran apa yang hendak dibangunkan seterusnya. Panduan kami tentang melatih pasukan anda dengan HRD Corp di Malaysia menerangkan pilihan latihan yang mungkin boleh anda gunakan.
+
+### Adakan perbualan 90 hari tentang kesesuaian
+Bincangkan sama ada peranan itu sesuai untuk kedua-dua pihak, dan persetujui langkah seterusnya, seperti tanggungjawab baharu atau latihan lanjut.
+
+### Tanya pekerja baharu bagaimana orientasi berjalan
+Pandangan mereka ialah sumber penambahbaikan terbaik. Tanya apa yang kurang dan apa yang paling membantu.
+
+### Perbaiki pelan setiap kali
+Kemas kini senarai semak anda selepas setiap pengambilan. Jika anda mahukan bantuan dengan dokumen HR, gaji atau latihan, anda boleh [layari direktori](/ms) untuk profesional berhampiran anda, dan [cipta penyenaraian perniagaan percuma](/ms/signup) supaya calon dan pelanggan dapat menemui perniagaan anda.
+
+## Kesilapan biasa PKS Malaysia dengan orientasi
+
+- **Menganggap hari pertama sebagai kertas kerja dan menunjuk ke arah kerja.** Pekerja baharu berasa sesat, jadi rancang sambutan, perkenalan dan jadual minggu pertama.
+- **Membiarkan gaji, waktu dan cuti tidak jelas.** Kekeliruan menyebabkan pertikaian, jadi terangkan dengan jelas dan semak dengan kontrak anda dan peraturan semasa.
+- **Tidak pernah menyemak selepas beberapa hari pertama.** Masalah kecil membesar dalam kesunyian, jadi adakan semakan mesra pada hujung minggu pertama dan pada hari ke-30, 60 dan 90.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Tulis senarai semak orientasi satu muka surat yang meliputi kertas kerja, ruang kerja, perkenalan dan pelan minggu pertama.
+- **Seterusnya:** Pilih dan beri taklimat kepada seorang rakan pembimbing, dan sediakan meja, peralatan dan akses sebelum pengambilan seterusnya tiba.
+- **Kemudian:** Jalankan sambutan hari pertama dan perbualan hujung minggu, dan catat apa yang akan anda ubah.
+- **Setiap suku tahun:** Kemas kini senarai semak daripada maklum balas, dan semak bahawa terma anda masih sepadan dengan peraturan semasa.
+
+Pekerja baharu yang berasa dialu-alukan, dimaklumkan dan dipercayai pada minggu pertama jauh lebih berkemungkinan untuk kekal, belajar dengan pantas dan bercakap baik tentang perniagaan anda. Usahanya kecil, dan pulangannya bertahan bertahun-tahun.`,
+        faqs: [
+          {
+            question: "Apakah yang patut saya lakukan sebelum hari pertama pekerja baharu?",
+            answer:
+              "Sahkan terma pekerjaan secara bertulis, kumpulkan kertas kerja yang anda perlukan, sediakan ruang kerja, peralatan dan akses, beri taklimat kepada pasukan, dan tulis pelan minggu pertama yang mudah. Semak keperluan semasa untuk caruman berkanun dan pendaftaran dengan pihak berkuasa berkaitan.",
+          },
+          {
+            question: "Bagaimanakah rupa hari pertama yang baik?",
+            answer:
+              "Sambut pekerja baharu sendiri, perkenalkan mereka kepada pasukan, tunjukkan di mana semuanya berada, terangkan bagaimana hari berfungsi, dan kongsi hidangan atau kopi yang santai. Pastikan hari itu mesra dan bukan dipenuhi maklumat.",
+          },
+          {
+            question: "Berapa lama orientasi patut berlangsung?",
+            answer:
+              "Rancang minggu pertama yang berstruktur, kemudian semak pada hujung minggu pertama dan pada hari ke-30, 60 dan 90. Keyakinan penuh dalam peranan baharu boleh mengambil masa beberapa bulan, jadi terus sokong mereka selepas minggu pertama.",
+          },
+          {
+            question: "Adakah saya memerlukan sistem rakan pembimbing dalam perniagaan kecil?",
+            answer:
+              "Ia tidak diwajibkan, tetapi ia membantu. Pilih rakan sekerja yang sabar dan tahu kerja, terangkan apa yang anda harapkan, lapangkan sedikit masa mereka, dan galakkan pekerja baharu bertanya dengan bebas.",
+          },
+          {
+            question: "Apakah yang patut saya terangkan tentang gaji, waktu dan cuti?",
+            answer:
+              "Terangkan bila dan bagaimana gaji dibayar, waktu bekerja dan rehat, bagaimana kerja lebih masa dan cuti umum dikendalikan, dan cara memohon cuti. Semak peraturan semasa dan kontrak anda dan bukan bergantung pada ingatan, dan tulis perkara utama.",
+          },
+          {
+            question: "Bagaimanakah saya melaksanakan orientasi untuk pekerja sambilan atau bermusim?",
+            answer:
+              "Beri mereka versi ringkas pelan yang sama: sambutan, lawatan, taklimat pendek tentang perkara penting, rakan pembimbing untuk syif pertama, dan semakan pantas selepas minggu pertama. Mereka juga bertemu pelanggan, jadi mereka memerlukan asasnya dari awal.",
+          },
+          {
+            question: "Bagaimanakah saya menetapkan jangkaan yang jelas tanpa membebankan pekerja baharu?",
+            answer:
+              "Terangkan peranan dan rupa kejayaan, kemudian tetapkan dua atau tiga matlamat kecil untuk bulan pertama. Ajar lima atau enam perkara penting dahulu dan tinggalkan pengecualian yang jarang untuk kemudian.",
+          },
+          {
+            question: "Bagaimanakah saya tahu sama ada orientasi saya berkesan?",
+            answer:
+              "Tanya pekerja baharu apa yang membantu dan apa yang kurang, perhatikan betapa cepat mereka menjadi yakin, dan jejaki sama ada mereka kekal melepasi beberapa bulan pertama. Kemas kini senarai semak anda selepas setiap pengambilan.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "selling-through-marketplaces-and-social-commerce-in-malaysia",
+    title: "Selling Through Marketplaces and Social Commerce: Choosing Platforms, Listings, and Fees for Malaysian SMEs",
+    seoTitle: "Selling on Marketplaces and Social Commerce in Malaysia",
+    seoDescription:
+      "How Malaysian SMEs can sell on marketplaces and social media: choose platforms, build trusted listings, price after fees and protect your account.",
+    coverImage: {
+      file: "selling-through-marketplaces-and-social-commerce-cover.webp",
+      mimeType: "image/webp",
+      alt: "A woman in a cream headscarf and light blue blouse holding a small product card toward a smartphone mounted on a large ring light, with a vase of baby's breath beside her",
+      altTranslations: {
+        zh: "一位戴米色头巾、身穿浅蓝色上衣的女士把一张小产品卡举向架在大型环形灯上的智能手机，身旁是一瓶满天星",
+        ms: "Seorang wanita bertudung krim dan berblaus biru muda menghalakan kad produk kecil ke arah telefon pintar yang dipasang pada lampu cincin besar, dengan pasu bunga kecil di sebelahnya",
+      },
+    },
+    contentImages: {
+      packing: {
+        file: "selling-through-marketplaces-and-social-commerce-packing.webp",
+        mimeType: "image/webp",
+        alt: "Two women packing items into cardboard boxes with pink paper shred, one holding a white round ornament and the other pulling shred apart",
+        altTranslations: {
+          zh: "两位女士把物品放进纸箱并填入粉红色碎纸丝，其中一位拿着白色圆形饰品，另一位正在拨开碎纸丝",
+          ms: "Dua wanita membungkus barang ke dalam kotak kadbod dengan carikan kertas merah jambu, seorang memegang perhiasan bulat putih dan seorang lagi menguraikan carikan kertas",
+        },
+        after: "Pack every order as if it will be photographed for a review.",
+        afterTranslations: {
+          zh: "打包每一份订单时，都当作它会被拍下来写进评价。",
+          ms: "Bungkus setiap pesanan seolah-olah ia akan difoto untuk ulasan.",
+        },
+      },
+    },
+    excerpt:
+      "Marketplaces and social media put your products in front of millions of Malaysian shoppers, but they also bring fees, rules, and rating pressure. This guide helps SMEs compare selling channels, choose platforms, build trustworthy listings, price after fees, handle orders and chats, protect their accounts, and avoid depending on a single platform.",
+    body: `Most Malaysian shoppers now start their search on a marketplace, a video feed, or a chat group. For a small business, that is a huge opportunity: you can reach customers in other states without renting a shop, and you can start with a phone and a few products.
+
+It is also a crowded, fast-changing space. Fees move, rules tighten, ratings can make or break a listing, and an account can be restricted overnight. Selling well here is less about a single clever trick and more about steady basics: honest listings, quick replies, careful packing, and a clear view of what each sale really earns.
+
+This is general information, not legal, tax, or financial advice. Platform fees, features, and rules change often, and e-commerce regulations in Malaysia have also been changing, so some details in this guide may be out of date. Always confirm the current position on each platform's seller centre and with the relevant authorities.
+
+## 1. Understand your selling channels
+
+### Marketplaces
+Marketplaces bring ready-made traffic, payment handling, and logistics tools. The trade-off is fees, tough competition on price, and rules you do not control.
+
+### Social commerce
+Selling through video, live streams, and social posts lets you build a personality and a following. It takes content and time, and sales can depend heavily on your posting rhythm. Our guide on social media marketing for Malaysian SMEs explains the basics.
+
+### Chat-based selling
+Many customers still order through messaging apps. It is personal and flexible, but it needs careful order tracking. Our guide on serving customers on WhatsApp explains how to run it well.
+
+### Your own online shop
+A website gives you control over branding, prices, and customer data. You must bring your own traffic. Our guide on selling online and setting up an online shop explains how to start.
+
+### A mix is common
+Many small sellers use a marketplace for reach, social media for brand and engagement, and chat or a website for loyal customers.
+
+## 2. Choose platforms wisely
+
+### Start with where your customers already shop
+Ask your customers and look at where similar products sell. Being on the right one or two platforms beats being on six badly.
+
+### Compare the real costs
+Look at commissions, transaction and payment fees, shipping charges, voucher programmes, and any per-order fees. Platforms have reportedly changed several of these in recent years, and tax may apply to some charges, so read the current fee schedule rather than relying on old figures.
+
+### Check the rules for your products
+Platforms restrict some categories and claims, and Malaysia's consumer rules for online sellers have also been changing. Confirm what applies to your goods before you list.
+
+### Look at logistics and support
+Check delivery options, return handling, payout timing, and how easy it is to reach seller support. Our guide on running deliveries explains courier choices.
+
+### Start small and test
+List a handful of products on one platform, learn how it works, and measure results before expanding.
+
+## 3. Build listings that earn trust
+
+### Write clear titles and descriptions
+Say what the product is, the size, material, and what is included. Use the words shoppers search for, without stuffing in unrelated terms.
+
+### Use honest, clear photos
+Show the real product from several angles, with true colour and a size reference. Our guide on product photography and content creation explains how to shoot well on a phone.
+
+### Show the price and what it covers
+Make clear what is included and which costs are extra, so there are no surprises at checkout. Misleading price displays can cause trouble, so keep them straightforward.
+
+### Choose the language of your customers
+Offer key details in the languages your buyers use. Rules on the language of online listings have been discussed and reportedly postponed, so confirm the current position, and keep listings clear in any case.
+
+### Add policies and contact details
+State delivery times, returns, and how to reach you, in line with the platform's rules and consumer law.
+
+## 4. Price after fees
+
+### Work out your true cost per order
+Add the product cost, packaging, platform commission, payment and per-order fees, shipping you subsidise, vouchers, and returns. Our guide on pricing products and services explains how to build up a price.
+
+### Calculate your margin on each platform
+The same item can earn very different profit depending on the channel and the fees. Check the numbers per platform.
+
+### Plan for fee changes
+If a platform raises fees, review your prices, bundles, and free-shipping thresholds. Our guide on raising prices without losing customers explains how to adjust fairly.
+
+### Use promotions carefully
+Platform vouchers and campaigns can bring volume but cut margins. Our guide on running promotions and discounts explains how to cost a discount before you join.
+
+### Track what you keep
+Check payouts against orders, so that you know what you actually earn after deductions. Our guide on bookkeeping and accounting basics explains simple records.
+
+## 5. Handle orders and chats well
+
+### Reply quickly and politely
+Fast replies improve conversion and are often part of how platforms rate sellers. Use saved replies for common questions, but keep them human.
+
+### Set realistic handling times
+Promise a dispatch time you can keep, and keep it. Late shipping is one of the most common causes of bad ratings.
+
+### Pack with care
+Pack every order as if it will be photographed for a review. Choose sturdy packaging, protect fragile items, and include a short thank-you note. Our guide on packaging and going greener explains how to pack well without wasting money.
+
+### Keep stock accurate
+Update stock levels across every channel so that you do not sell items you do not have. Our guide on managing inventory and stock explains simple tracking.
+
+### Keep records of every order
+Save order details, messages, and proof of dispatch. They help if there is a dispute.
+
+## 6. Manage ratings, returns, and disputes
+
+### Ask for reviews politely
+A short message after delivery, within platform rules, helps. Do not pay for or fake reviews, because platforms and consumers take that seriously.
+
+### Respond to negative reviews calmly
+Reply politely, offer a fix, and move the conversation to a private channel if the platform allows. Our guide on handling difficult customers and online reviews explains how to respond.
+
+### Handle returns and refunds fairly
+Follow the platform's process and consumer rules, and communicate clearly. Our guide on customer complaints, refunds, and consumer rights explains your duties.
+
+### Watch for fraud
+Be careful with fake payment confirmations, unusual delivery requests, and phishing messages pretending to be the platform. Our guide on cybersecurity for small businesses explains protection.
+
+### Learn from patterns
+If many customers complain about the same thing, such as sizing or late delivery, fix the cause rather than only the symptoms.
+
+## 7. Protect your account and your business
+
+### Follow the rules of each platform
+Read the seller policies on prohibited items, claims, and conduct. Breaking them can lead to restrictions or a suspended account.
+
+### Secure your logins
+Use strong, unique passwords and two-step verification, and limit who has access. Keep a record of who can post and edit.
+
+### Keep your own customer list
+Where the rules allow, and with consent, collect contact details so that you are not entirely dependent on a platform for access to customers. Our guide on email marketing for small businesses explains how.
+
+> A platform is a market stall you rent, not a shop you own: use its crowd, follow its rules, and keep building something of your own on the side.
+
+### Keep your tax and business records in order
+Sales through platforms are still business income, and fees may carry tax. Keep clear records and confirm current requirements with the relevant authorities or an accountant. Our guide on SST registration in Malaysia explains one of the rules to check.
+
+### Prepare for sudden changes
+Keep a copy of your product data and photos, and have a backup plan if a listing, a campaign, or an account is restricted.
+
+## 8. Grow without depending on one platform
+
+### Build your brand
+A consistent name, look, and voice make customers remember you across platforms. Our guide on building a brand on a small budget explains how.
+
+### Encourage repeat purchases
+Include a thank-you note, a loyalty offer, or a reorder reminder, within the platform's rules. Our guide on building customer loyalty and repeat business explains options.
+
+### Test one new channel at a time
+Add a platform or format only when the current one runs smoothly. Compare results before you commit.
+
+### Review your numbers every month
+Check sales, margin, ratings, and returns for each channel, and put effort where the profit is. Our guide on tracking business performance explains simple numbers to follow.
+
+### Know when to ask for help
+If you want help with product photos, listings, or bookkeeping, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so that customers can find your business beyond any one platform.
+
+## Common mistakes Malaysian SMEs make when selling online
+
+- **Pricing from the sticker price without counting fees.** Commissions, per-order charges, and vouchers can erase your margin, so calculate profit per order for each platform.
+- **Putting everything on one platform.** A rule change or restriction can stop your sales overnight, so build your own customer list and brand as well.
+- **Replying slowly and shipping late.** Ratings suffer and visibility falls, so set realistic handling times and answer messages promptly.
+
+## Where to start
+
+- **This week:** Pick one platform that your customers already use, and list your best three products with clear photos.
+- **Next:** Work out the true cost and margin per order after all fees, and set your prices.
+- **Then:** Set up saved replies, a packing routine, and stock tracking, and read the platform's seller rules.
+- **Every quarter:** Review fees, ratings, and profit per channel, and decide whether to add or drop a channel.
+
+Selling online rewards the businesses that are honest in their listings, quick in their replies, and careful with their numbers. Start with one channel, do the basics well, and grow from there.`,
+    faqs: [
+      {
+        question: "Should I sell on a marketplace, on social media, or on my own website?",
+        answer:
+          "Many small sellers use a mix: a marketplace for reach, social media for brand and engagement, and chat or a website for loyal customers. Start with one or two channels where your customers already shop, and expand once they run smoothly.",
+      },
+      {
+        question: "How do I choose a platform to sell on?",
+        answer:
+          "Look at where your customers already shop, compare the real costs, including commissions, payment and per-order fees, shipping charges, and voucher programmes, check the rules for your products, and review logistics and support. Test with a few products first.",
+      },
+      {
+        question: "How do marketplace fees affect my pricing?",
+        answer:
+          "Add the product cost, packaging, commission, payment and per-order fees, subsidised shipping, vouchers, and returns to find your true cost per order. Platforms have reportedly changed fees in recent years, so check the current fee schedule on each platform's seller centre, and review your prices when fees change.",
+      },
+      {
+        question: "What makes a good product listing?",
+        answer:
+          "Clear titles and descriptions, honest photos from several angles with true colour, the price and what it covers, key details in your customers' languages, and clear delivery and returns information. Keep it accurate and avoid misleading claims.",
+      },
+      {
+        question: "Are there rules for online sellers in Malaysia?",
+        answer:
+          "Yes. Consumer protection rules for online sellers, including requirements on information shown to buyers, have been developing, and some requirements, such as on listing language, have been reported as postponed. Platforms also have their own seller policies. Confirm current requirements with the relevant authorities and each platform.",
+      },
+      {
+        question: "How do I get good ratings?",
+        answer:
+          "Reply quickly, promise a dispatch time you can keep, pack carefully, describe products accurately, and handle problems politely. Ask for reviews within platform rules, and never buy or fake them.",
+      },
+      {
+        question: "How can I protect my seller account?",
+        answer:
+          "Follow each platform's seller policies, avoid prohibited items and claims, use strong unique passwords with two-step verification, limit who has access, and keep copies of your product data and photos in case of restrictions.",
+      },
+      {
+        question: "How do I avoid depending on one platform?",
+        answer:
+          "Build your own brand and customer list, with consent and within the rules, encourage repeat purchases, and test one new channel at a time. Review profit per channel every month and put effort where the margin is.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "通过电商平台与社交电商销售：马来西亚中小企业如何选择平台、商品页和费用",
+        excerpt:
+          "电商平台和社交媒体把您的产品摆在数百万马来西亚消费者面前，但也带来费用、规则和评分的压力。本指南帮助中小企业比较销售渠道，选择平台，建立值得信赖的商品页，在扣除费用后定价，处理订单和聊天，保护账号，并避免依赖单一平台。",
+        body: `如今大多数马来西亚消费者从电商平台、短视频或聊天群组开始搜索。对小企业来说，这是巨大的机会：您不必租店面就能接触到其他州的顾客，并且可以用一部手机和几样产品起步。
+
+这也是一个拥挤而变化迅速的领域。费用在变动，规则在收紧，评分可以成就或毁掉一个商品页，账号可能一夜之间被限制。在这里卖得好，与其说是靠某个聪明的窍门，不如说是靠稳定的基本功：诚实的商品页、迅速的回复、细心的打包，以及清楚知道每笔销售真正赚多少。
+
+本文仅提供一般信息，并非法律、税务或财务建议。平台的费用、功能和规则经常变化，马来西亚的电子商务规定也在变化，所以本指南的部分细节可能已经过时。请务必在每个平台的卖家中心以及向相关主管单位确认现行情况。
+
+## 1. 了解您的销售渠道
+
+### 电商平台
+电商平台带来现成的流量、付款处理和物流工具。代价是费用、激烈的价格竞争，以及您无法掌控的规则。
+
+### 社交电商
+通过视频、直播和社交帖子销售，让您建立个性和粉丝群。这需要内容和时间，销售可能很依赖您发帖的节奏。我们关于马来西亚中小企业社交媒体营销的指南解释了基础知识。
+
+### 聊天式销售
+许多顾客仍然通过即时通讯应用下单。它个人化而灵活，但需要仔细追踪订单。我们关于通过WhatsApp服务顾客的指南解释了如何做好。
+
+### 您自己的网店
+网站让您掌控品牌、价格和顾客资料。您必须自己带来流量。我们关于网上销售与建立网店的指南解释了如何开始。
+
+### 混合使用很常见
+许多小卖家用电商平台来扩大覆盖面，用社交媒体来建立品牌和互动，用聊天或网站来服务忠实顾客。
+
+## 2. 明智地选择平台
+
+### 从您的顾客已经购物的地方开始
+问问您的顾客，并看看类似产品在哪里销售。把一两个合适的平台做好，胜过把六个平台做得很糟。
+
+### 比较真实的成本
+查看佣金、交易和付款费用、运费、优惠券计划，以及任何每单费用。据报道平台近年来更改了其中几项，部分收费也可能须缴税，所以请阅读现行的收费表，而不要依赖旧的数字。
+
+### 查明您的产品适用的规则
+平台限制某些类别和宣称，马来西亚对网络卖家的消费者规定也在变化。在上架之前，请确认适用于您商品的规定。
+
+### 查看物流和支援
+查看送货选择、退货处理、款项结算时间，以及联系卖家支援有多容易。我们关于经营送货的指南解释了快递的选择。
+
+### 从小处开始并测试
+在一个平台上架少数几样产品，了解它如何运作，并在扩大之前衡量结果。
+
+## 3. 建立赢得信任的商品页
+
+### 写清楚的标题和描述
+说明产品是什么、尺寸、材质和包含什么。使用买家搜索的词，而不要塞入不相关的词。
+
+### 使用诚实而清晰的照片
+从多个角度展示真实的产品，颜色真实并附上尺寸参照。我们关于产品摄影与内容创作的指南解释了如何用手机拍好照片。
+
+### 显示价格以及它涵盖什么
+说明包括什么、哪些费用是额外的，让结账时没有意外。误导性的价格标示可能惹上麻烦，所以请保持直截了当。
+
+### 选择顾客的语言
+以您的买家使用的语言提供关键细节。关于网上商品页语言的规定已被讨论，据报道已延后，所以请确认现行情况，无论如何都要让商品页清楚易懂。
+
+### 加上政策和联络方式
+依照平台规定和消费者法律，说明送货时间、退货，以及如何联系您。
+
+## 4. 扣除费用后再定价
+
+### 算出每单的真实成本
+加上产品成本、包装、平台佣金、付款和每单费用、您补贴的运费、优惠券和退货。我们关于产品和服务定价的指南解释了如何构建价格。
+
+### 计算每个平台上的利润率
+同一件商品，视渠道和费用而定，赚到的利润可能差别很大。请按平台核对数字。
+
+### 为费用变动做好计划
+如果平台提高费用，请检讨您的价格、组合套装和免运费门槛。我们关于涨价而不流失顾客的指南解释了如何公平地调整。
+
+### 谨慎使用促销
+平台的优惠券和活动可以带来销量，却会削减利润率。我们关于举办促销与折扣的指南解释了如何在参加之前算出折扣的成本。
+
+### 追踪您实际留下的钱
+把结算款项与订单对照，让您知道扣除之后真正赚到多少。我们关于簿记与会计基础的指南解释了简单的记录方法。
+
+## 5. 妥善处理订单和聊天
+
+### 迅速而礼貌地回复
+快速的回复能提高成交率，也往往是平台评价卖家的一部分。对常见问题使用预存的回复，但要保持人情味。
+
+### 设定现实的处理时间
+承诺您能做到的发货时间，并且做到。延迟发货是差评最常见的原因之一。
+
+### 细心打包
+打包每一份订单时，都当作它会被拍下来写进评价。选择坚固的包装，保护易碎品，并附上一张简短的感谢卡。我们关于包装与迈向环保的指南解释了如何在不浪费钱的情况下打包得好。
+
+### 保持库存准确
+在每个渠道更新库存数量，避免卖出您没有的商品。我们关于管理存货的指南解释了简单的追踪方法。
+
+### 保存每份订单的记录
+保存订单详情、讯息和发货证明。出现纠纷时它们会有帮助。
+
+## 6. 管理评分、退货和纠纷
+
+### 礼貌地请求评价
+在送货之后，在平台规定的范围内发一则简短的讯息会有帮助。不要付钱购买或伪造评价，因为平台和消费者对此非常重视。
+
+### 冷静地回应负面评价
+礼貌地回复，提供解决办法，如果平台允许，把对话转到私下的渠道。我们关于处理难缠顾客和网络评价的指南解释了如何回应。
+
+### 公平地处理退货和退款
+遵循平台的流程和消费者规定，并清楚沟通。我们关于顾客投诉、退款和消费者权益的指南解释了您的责任。
+
+### 提防欺诈
+对假的付款确认、不寻常的送货要求，以及冒充平台的钓鱼讯息要小心。我们关于小企业网络安全的指南解释了防护措施。
+
+### 从规律中学习
+如果许多顾客抱怨同一件事，例如尺码或延迟送货，请解决根本原因，而不只是症状。
+
+## 7. 保护您的账号和业务
+
+### 遵守每个平台的规则
+阅读卖家政策中关于违禁品、宣称和行为的规定。违反它们可能导致限制或账号被暂停。
+
+### 保护您的登入
+使用强而独特的密码和两步验证，并限制谁有访问权限。记录谁可以发帖和编辑。
+
+### 保留您自己的顾客名单
+在规则允许并经同意的情况下，收集联系方式，让您不必完全依赖平台才能接触到顾客。我们关于小企业电邮营销的指南解释了如何做。
+
+> 平台是您租来的市集摊位，而不是您拥有的店铺：利用它的人潮，遵守它的规则，并在一旁持续建立属于自己的东西。
+
+### 保持税务和业务记录井然有序
+通过平台的销售仍然是业务收入，费用也可能涉及税务。请保存清楚的记录，并向相关主管单位或会计师确认现行要求。我们关于马来西亚SST登记的指南解释了需要查看的规定之一。
+
+### 为突然的变化做好准备
+保存产品资料和照片的副本，并在商品页、活动或账号被限制时有备用计划。
+
+## 8. 不依赖单一平台而成长
+
+### 建立您的品牌
+一致的名称、外观和语气，让顾客在各个平台上都记得您。我们关于以小预算打造品牌的指南解释了如何做。
+
+### 鼓励回购
+在平台规定的范围内，附上感谢卡、忠诚优惠或再次订购的提醒。我们关于建立顾客忠诚度与回头客的指南解释了各种选择。
+
+### 一次测试一个新渠道
+只有在目前的渠道运作顺畅时，才增加一个平台或形式。在投入之前比较结果。
+
+### 每个月检讨您的数字
+查看每个渠道的销售、利润率、评分和退货，并把精力放在有利润的地方。我们关于追踪业务表现的指南解释了要跟踪的简单数字。
+
+### 知道何时求助
+如果您在产品照片、商品页或簿记方面需要协助，您可以[浏览名录](/zh)寻找附近的专业人士，并[创建免费商家列表](/zh/signup)，让顾客在任何单一平台之外也能找到您的业务。
+
+## 马来西亚中小企业在网上销售时常犯的错误
+
+- **按标价定价而不计算费用。** 佣金、每单收费和优惠券可能抹掉您的利润率，所以请为每个平台计算每单利润。
+- **把一切都放在一个平台上。** 规则变动或限制可能让您的销售一夜之间停摆，所以也要建立您自己的顾客名单和品牌。
+- **回复缓慢、延迟发货。** 评分会受损、曝光会下降，所以请设定现实的处理时间并及时回复讯息。
+
+## 从哪里开始
+
+- **本周：** 选择一个您的顾客已经在使用的平台，并以清晰的照片上架您最好的三样产品。
+- **接着：** 算出扣除所有费用后每单的真实成本和利润率，并订出您的价格。
+- **然后：** 设置预存回复、打包流程和库存追踪，并阅读平台的卖家规则。
+- **每季度：** 检讨每个渠道的费用、评分和利润，并决定要增加还是放弃某个渠道。
+
+网上销售奖励那些商品页诚实、回复迅速、对数字细心的企业。从一个渠道开始，把基本功做好，然后再成长。`,
+        faqs: [
+          {
+            question: "我应该在电商平台、社交媒体还是自己的网站上销售？",
+            answer:
+              "许多小卖家混合使用：电商平台用来扩大覆盖面，社交媒体用来建立品牌和互动，聊天或网站用来服务忠实顾客。从您的顾客已经购物的一两个渠道开始，运作顺畅后再扩展。",
+          },
+          {
+            question: "我如何选择要在哪个平台销售？",
+            answer:
+              "看您的顾客已经在哪里购物，比较真实的成本，包括佣金、付款和每单费用、运费和优惠券计划，查看您产品适用的规则，并检视物流和支援。先以少数几样产品测试。",
+          },
+          {
+            question: "电商平台的费用如何影响我的定价？",
+            answer:
+              "把产品成本、包装、佣金、付款和每单费用、补贴的运费、优惠券和退货加起来，得出每单的真实成本。据报道平台近年来更改了费用，所以请查看每个平台卖家中心的现行收费表，并在费用变动时检讨您的价格。",
+          },
+          {
+            question: "什么样的商品页才算好？",
+            answer:
+              "清楚的标题和描述，从多个角度拍摄且颜色真实的诚实照片，价格及其涵盖的内容，以顾客的语言提供的关键细节，以及清楚的送货和退货信息。保持准确，避免误导性的宣称。",
+          },
+          {
+            question: "马来西亚对网络卖家有规定吗？",
+            answer:
+              "有。针对网络卖家的消费者保护规定，包括对向买家显示的信息的要求，一直在发展，部分要求，例如商品页的语言，据报道已延后。平台也有自己的卖家政策。请向相关主管单位和各平台确认现行要求。",
+          },
+          {
+            question: "我如何获得好评分？",
+            answer:
+              "迅速回复，承诺您能做到的发货时间，细心打包，准确描述产品，并礼貌地处理问题。在平台规定的范围内请求评价，并且绝不购买或伪造评价。",
+          },
+          {
+            question: "我如何保护我的卖家账号？",
+            answer:
+              "遵守每个平台的卖家政策，避免违禁品和宣称，使用强而独特的密码并启用两步验证，限制谁有访问权限，并保存产品资料和照片的副本以防被限制。",
+          },
+          {
+            question: "我如何避免依赖单一平台？",
+            answer:
+              "建立您自己的品牌和顾客名单（经同意并在规则范围内），鼓励回购，并一次测试一个新渠道。每个月检讨每个渠道的利润，并把精力放在有利润的地方。",
+          },
+        ],
+      },
+      ms: {
+        title: "Menjual Melalui Pasar Dalam Talian dan Perdagangan Sosial: Memilih Platform, Penyenaraian dan Fi untuk PKS Malaysia",
+        excerpt:
+          "Pasar dalam talian dan media sosial meletakkan produk anda di hadapan berjuta pembeli Malaysia, tetapi ia juga membawa fi, peraturan dan tekanan penilaian. Panduan ini membantu PKS membandingkan saluran jualan, memilih platform, membina penyenaraian yang boleh dipercayai, menetapkan harga selepas fi, mengendalikan pesanan dan sembang, melindungi akaun, dan mengelak bergantung pada satu platform.",
+        body: `Kebanyakan pembeli Malaysia kini memulakan carian mereka di pasar dalam talian, suapan video atau kumpulan sembang. Bagi perniagaan kecil, itu peluang yang besar: anda boleh mencapai pelanggan di negeri lain tanpa menyewa kedai, dan anda boleh bermula dengan telefon dan beberapa produk.
+
+Ia juga ruang yang sesak dan berubah pantas. Fi bergerak, peraturan diketatkan, penilaian boleh membuat atau memusnahkan penyenaraian, dan akaun boleh disekat dalam semalaman. Menjual dengan baik di sini kurang tentang satu helah bijak dan lebih tentang asas yang mantap: penyenaraian yang jujur, balasan pantas, pembungkusan yang teliti, dan pandangan yang jelas tentang apa yang sebenarnya diperoleh setiap jualan.
+
+Ini maklumat umum, bukan nasihat undang-undang, cukai atau kewangan. Fi, ciri dan peraturan platform sering berubah, dan peraturan e-dagang di Malaysia juga telah berubah, jadi sebahagian butiran dalam panduan ini mungkin sudah lapuk. Sentiasa sahkan kedudukan semasa di pusat penjual setiap platform dan dengan pihak berkuasa berkaitan.
+
+## 1. Fahami saluran jualan anda
+
+### Pasar dalam talian
+Pasar dalam talian membawa trafik siap sedia, pengendalian pembayaran dan alat logistik. Pertukarannya ialah fi, persaingan harga yang sengit, dan peraturan yang tidak anda kawal.
+
+### Perdagangan sosial
+Menjual melalui video, siaran langsung dan siaran sosial membolehkan anda membina personaliti dan pengikut. Ia memerlukan kandungan dan masa, dan jualan boleh bergantung banyak pada rentak penyiaran anda. Panduan kami tentang pemasaran media sosial untuk PKS Malaysia menerangkan asasnya.
+
+### Jualan berasaskan sembang
+Ramai pelanggan masih memesan melalui aplikasi pemesejan. Ia peribadi dan fleksibel, tetapi memerlukan penjejakan pesanan yang teliti. Panduan kami tentang melayani pelanggan di WhatsApp menerangkan cara menjalankannya dengan baik.
+
+### Kedai dalam talian anda sendiri
+Laman web memberi anda kawalan ke atas penjenamaan, harga dan data pelanggan. Anda mesti membawa trafik sendiri. Panduan kami tentang menjual dalam talian dan menyediakan kedai dalam talian menerangkan cara bermula.
+
+### Gabungan adalah biasa
+Ramai penjual kecil menggunakan pasar dalam talian untuk capaian, media sosial untuk jenama dan penglibatan, dan sembang atau laman web untuk pelanggan setia.
+
+## 2. Pilih platform dengan bijak
+
+### Mulakan di tempat pelanggan anda sudah membeli-belah
+Tanya pelanggan anda dan lihat di mana produk serupa dijual. Berada di satu atau dua platform yang betul mengatasi berada di enam platform dengan teruk.
+
+### Bandingkan kos sebenar
+Lihat komisen, fi transaksi dan pembayaran, caj penghantaran, program baucar dan sebarang fi bagi setiap pesanan. Platform dilaporkan telah mengubah beberapa daripada ini dalam beberapa tahun kebelakangan ini, dan cukai mungkin terpakai kepada sesetengah caj, jadi baca jadual fi semasa dan bukan bergantung pada angka lama.
+
+### Semak peraturan untuk produk anda
+Platform menyekat sesetengah kategori dan dakwaan, dan peraturan pengguna Malaysia untuk penjual dalam talian juga telah berubah. Sahkan apa yang terpakai kepada barang anda sebelum anda menyenaraikannya.
+
+### Lihat logistik dan sokongan
+Semak pilihan penghantaran, pengendalian pemulangan, masa pembayaran, dan betapa mudahnya menghubungi sokongan penjual. Panduan kami tentang menjalankan penghantaran menerangkan pilihan kurier.
+
+### Mulakan kecil dan uji
+Senaraikan beberapa produk di satu platform, pelajari cara ia berfungsi, dan ukur hasil sebelum berkembang.
+
+## 3. Bina penyenaraian yang memenangi kepercayaan
+
+### Tulis tajuk dan penerangan yang jelas
+Katakan apa produk itu, saiz, bahan dan apa yang disertakan. Gunakan perkataan yang dicari pembeli, tanpa menyumbat istilah yang tidak berkaitan.
+
+### Gunakan foto yang jujur dan jelas
+Tunjukkan produk sebenar dari beberapa sudut, dengan warna sebenar dan rujukan saiz. Panduan kami tentang fotografi produk dan penciptaan kandungan menerangkan cara merakam dengan baik pada telefon.
+
+### Tunjukkan harga dan apa yang diliputinya
+Jelaskan apa yang termasuk dan kos mana yang tambahan, supaya tiada kejutan semasa pembayaran. Paparan harga yang mengelirukan boleh menimbulkan masalah, jadi pastikan ia mudah difahami.
+
+### Pilih bahasa pelanggan anda
+Tawarkan butiran utama dalam bahasa yang digunakan pembeli anda. Peraturan tentang bahasa penyenaraian dalam talian telah dibincangkan dan dilaporkan ditangguhkan, jadi sahkan kedudukan semasa, dan pastikan penyenaraian jelas dalam apa jua keadaan.
+
+### Tambah dasar dan butiran hubungan
+Nyatakan masa penghantaran, pemulangan dan cara menghubungi anda, selaras dengan peraturan platform dan undang-undang pengguna.
+
+## 4. Tetapkan harga selepas fi
+
+### Kira kos sebenar anda bagi setiap pesanan
+Tambah kos produk, pembungkusan, komisen platform, fi pembayaran dan setiap pesanan, penghantaran yang anda subsidi, baucar dan pemulangan. Panduan kami tentang menetapkan harga produk dan perkhidmatan menerangkan cara membina harga.
+
+### Kira margin anda pada setiap platform
+Item yang sama boleh memperoleh keuntungan yang sangat berbeza bergantung pada saluran dan fi. Semak angka bagi setiap platform.
+
+### Rancang untuk perubahan fi
+Jika platform menaikkan fi, semak harga, pakej dan ambang penghantaran percuma anda. Panduan kami tentang menaikkan harga tanpa kehilangan pelanggan menerangkan cara melaras dengan adil.
+
+### Gunakan promosi dengan berhati-hati
+Baucar dan kempen platform boleh membawa volum tetapi memotong margin. Panduan kami tentang menjalankan promosi dan diskaun menerangkan cara mengira kos diskaun sebelum anda menyertai.
+
+### Jejaki apa yang anda simpan
+Semak pembayaran berbanding pesanan, supaya anda tahu apa yang sebenarnya anda peroleh selepas potongan. Panduan kami tentang asas simpan kira dan perakaunan menerangkan rekod yang mudah.
+
+## 5. Kendalikan pesanan dan sembang dengan baik
+
+### Balas dengan pantas dan sopan
+Balasan pantas meningkatkan penukaran dan sering menjadi sebahagian daripada cara platform menilai penjual. Gunakan balasan tersimpan untuk soalan lazim, tetapi pastikan ia kedengaran manusiawi.
+
+### Tetapkan masa pengendalian yang realistik
+Janjikan masa penghantaran yang boleh anda kekalkan, dan kekalkannya. Penghantaran lewat ialah antara punca penilaian buruk yang paling biasa.
+
+### Bungkus dengan teliti
+Bungkus setiap pesanan seolah-olah ia akan difoto untuk ulasan. Pilih pembungkusan yang kukuh, lindungi barang mudah pecah, dan sertakan nota terima kasih ringkas. Panduan kami tentang memilih pembungkusan dan beralih ke arah lebih hijau menerangkan cara membungkus dengan baik tanpa membazir wang.
+
+### Pastikan stok tepat
+Kemas kini paras stok merentas setiap saluran supaya anda tidak menjual barang yang tidak anda ada. Panduan kami tentang menguruskan inventori dan stok menerangkan penjejakan yang mudah.
+
+### Simpan rekod setiap pesanan
+Simpan butiran pesanan, mesej dan bukti penghantaran. Ia membantu jika berlaku pertikaian.
+
+## 6. Urus penilaian, pemulangan dan pertikaian
+
+### Minta ulasan dengan sopan
+Mesej pendek selepas penghantaran, dalam peraturan platform, membantu. Jangan membayar atau memalsukan ulasan, kerana platform dan pengguna mengambilnya dengan serius.
+
+### Balas ulasan negatif dengan tenang
+Balas dengan sopan, tawarkan pembaikan, dan alihkan perbualan ke saluran peribadi jika platform membenarkan. Panduan kami tentang menangani pelanggan sukar dan ulasan dalam talian menerangkan cara membalas.
+
+### Kendalikan pemulangan dan bayaran balik dengan adil
+Ikut proses platform dan peraturan pengguna, dan berkomunikasi dengan jelas. Panduan kami tentang aduan pelanggan, bayaran balik dan hak pengguna menerangkan tanggungjawab anda.
+
+### Berwaspada terhadap penipuan
+Berhati-hati dengan pengesahan pembayaran palsu, permintaan penghantaran yang luar biasa, dan mesej pancingan data yang menyamar sebagai platform. Panduan kami tentang keselamatan siber untuk perniagaan kecil menerangkan perlindungan.
+
+### Belajar daripada corak
+Jika ramai pelanggan mengadu tentang perkara yang sama, seperti saiz atau penghantaran lewat, betulkan puncanya dan bukan hanya gejalanya.
+
+## 7. Lindungi akaun dan perniagaan anda
+
+### Ikut peraturan setiap platform
+Baca dasar penjual tentang barang larangan, dakwaan dan kelakuan. Melanggarnya boleh membawa kepada sekatan atau akaun digantung.
+
+### Selamatkan log masuk anda
+Gunakan kata laluan yang kuat dan unik serta pengesahan dua langkah, dan hadkan siapa yang mempunyai akses. Simpan rekod siapa yang boleh menyiar dan menyunting.
+
+### Simpan senarai pelanggan anda sendiri
+Jika peraturan membenarkan, dan dengan persetujuan, kumpulkan butiran hubungan supaya anda tidak bergantung sepenuhnya pada platform untuk akses kepada pelanggan. Panduan kami tentang pemasaran e-mel untuk perniagaan kecil menerangkan caranya.
+
+> Platform ialah gerai pasar yang anda sewa, bukan kedai yang anda miliki: gunakan orang ramainya, ikut peraturannya, dan teruskan membina sesuatu milik anda sendiri di sebelah.
+
+### Kemaskan rekod cukai dan perniagaan anda
+Jualan melalui platform masih pendapatan perniagaan, dan fi mungkin dikenakan cukai. Simpan rekod yang jelas dan sahkan keperluan semasa dengan pihak berkuasa berkaitan atau akauntan. Panduan kami tentang pendaftaran SST di Malaysia menerangkan salah satu peraturan yang perlu disemak.
+
+### Bersedia untuk perubahan mendadak
+Simpan salinan data produk dan foto anda, dan ada pelan sandaran jika penyenaraian, kempen atau akaun disekat.
+
+## 8. Berkembang tanpa bergantung pada satu platform
+
+### Bina jenama anda
+Nama, rupa dan suara yang konsisten membuat pelanggan mengingati anda merentas platform. Panduan kami tentang membina jenama dengan bajet kecil menerangkan caranya.
+
+### Galakkan pembelian berulang
+Sertakan nota terima kasih, tawaran kesetiaan atau peringatan pesanan semula, dalam peraturan platform. Panduan kami tentang membina kesetiaan pelanggan dan perniagaan berulang menerangkan pilihan yang ada.
+
+### Uji satu saluran baharu pada satu masa
+Tambah platform atau format hanya apabila yang semasa berjalan lancar. Bandingkan hasil sebelum anda komited.
+
+### Semak angka anda setiap bulan
+Semak jualan, margin, penilaian dan pemulangan bagi setiap saluran, dan letakkan usaha di mana keuntungannya. Panduan kami tentang menjejaki prestasi perniagaan menerangkan angka mudah untuk diikuti.
+
+### Ketahui bila hendak meminta bantuan
+Jika anda mahukan bantuan dengan foto produk, penyenaraian atau simpan kira, anda boleh [layari direktori](/ms) untuk profesional berhampiran anda, dan [cipta penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan dapat menemui perniagaan anda di luar mana-mana satu platform.
+
+## Kesilapan biasa PKS Malaysia apabila menjual dalam talian
+
+- **Menetapkan harga daripada harga tertera tanpa mengira fi.** Komisen, caj setiap pesanan dan baucar boleh menghapuskan margin anda, jadi kira keuntungan setiap pesanan bagi setiap platform.
+- **Meletakkan segala-galanya pada satu platform.** Perubahan peraturan atau sekatan boleh menghentikan jualan anda dalam semalaman, jadi bina juga senarai pelanggan dan jenama anda sendiri.
+- **Membalas lambat dan menghantar lewat.** Penilaian terjejas dan keterlihatan jatuh, jadi tetapkan masa pengendalian yang realistik dan jawab mesej dengan segera.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Pilih satu platform yang sudah digunakan pelanggan anda, dan senaraikan tiga produk terbaik anda dengan foto yang jelas.
+- **Seterusnya:** Kira kos sebenar dan margin bagi setiap pesanan selepas semua fi, dan tetapkan harga anda.
+- **Kemudian:** Sediakan balasan tersimpan, rutin pembungkusan dan penjejakan stok, dan baca peraturan penjual platform.
+- **Setiap suku tahun:** Semak fi, penilaian dan keuntungan bagi setiap saluran, dan tentukan sama ada hendak menambah atau menggugurkan saluran.
+
+Menjual dalam talian memberi ganjaran kepada perniagaan yang jujur dalam penyenaraian, pantas dalam balasan dan teliti dengan angka. Mulakan dengan satu saluran, lakukan asasnya dengan baik, dan berkembang dari situ.`,
+        faqs: [
+          {
+            question: "Patutkah saya menjual di pasar dalam talian, di media sosial atau di laman web saya sendiri?",
+            answer:
+              "Ramai penjual kecil menggunakan gabungan: pasar dalam talian untuk capaian, media sosial untuk jenama dan penglibatan, serta sembang atau laman web untuk pelanggan setia. Mulakan dengan satu atau dua saluran di tempat pelanggan anda sudah membeli-belah, dan kembangkan apabila ia berjalan lancar.",
+          },
+          {
+            question: "Bagaimanakah saya memilih platform untuk menjual?",
+            answer:
+              "Lihat di mana pelanggan anda sudah membeli-belah, bandingkan kos sebenar, termasuk komisen, fi pembayaran dan setiap pesanan, caj penghantaran dan program baucar, semak peraturan untuk produk anda, dan nilai logistik serta sokongan. Uji dengan beberapa produk dahulu.",
+          },
+          {
+            question: "Bagaimanakah fi pasar dalam talian mempengaruhi harga saya?",
+            answer:
+              "Tambah kos produk, pembungkusan, komisen, fi pembayaran dan setiap pesanan, penghantaran bersubsidi, baucar dan pemulangan untuk mendapatkan kos sebenar anda bagi setiap pesanan. Platform dilaporkan telah mengubah fi dalam beberapa tahun kebelakangan ini, jadi semak jadual fi semasa di pusat penjual setiap platform, dan semak harga anda apabila fi berubah.",
+          },
+          {
+            question: "Apakah yang menjadikan penyenaraian produk yang baik?",
+            answer:
+              "Tajuk dan penerangan yang jelas, foto yang jujur dari beberapa sudut dengan warna sebenar, harga dan apa yang diliputinya, butiran utama dalam bahasa pelanggan anda, dan maklumat penghantaran serta pemulangan yang jelas. Pastikan ia tepat dan elakkan dakwaan yang mengelirukan.",
+          },
+          {
+            question: "Adakah terdapat peraturan untuk penjual dalam talian di Malaysia?",
+            answer:
+              "Ya. Peraturan perlindungan pengguna untuk penjual dalam talian, termasuk keperluan tentang maklumat yang ditunjukkan kepada pembeli, telah berkembang, dan sesetengah keperluan, seperti bahasa penyenaraian, dilaporkan ditangguhkan. Platform juga mempunyai dasar penjual sendiri. Sahkan keperluan semasa dengan pihak berkuasa berkaitan dan setiap platform.",
+          },
+          {
+            question: "Bagaimanakah saya mendapat penilaian yang baik?",
+            answer:
+              "Balas dengan pantas, janjikan masa penghantaran yang boleh anda kekalkan, bungkus dengan teliti, terangkan produk dengan tepat, dan kendalikan masalah dengan sopan. Minta ulasan dalam peraturan platform, dan jangan sekali-kali membeli atau memalsukannya.",
+          },
+          {
+            question: "Bagaimanakah saya boleh melindungi akaun penjual saya?",
+            answer:
+              "Ikut dasar penjual setiap platform, elakkan barang dan dakwaan larangan, gunakan kata laluan yang kuat dan unik dengan pengesahan dua langkah, hadkan siapa yang mempunyai akses, dan simpan salinan data produk dan foto anda sekiranya ada sekatan.",
+          },
+          {
+            question: "Bagaimanakah saya mengelak bergantung pada satu platform?",
+            answer:
+              "Bina jenama dan senarai pelanggan anda sendiri, dengan persetujuan dan dalam peraturan, galakkan pembelian berulang, dan uji satu saluran baharu pada satu masa. Semak keuntungan bagi setiap saluran setiap bulan dan letakkan usaha di mana marginnya.",
+          },
+        ],
+      },
+    },
+  },
 ];
