@@ -15,18 +15,18 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Building a Simple Employee Onboarding and First-Week Plan: Helping New Hires Settle In at Your Malaysian SME**
-   — Why the first weeks decide whether new hires stay, preparing before day
-   one (paperwork, access, equipment), a first-day welcome, a first-week
-   schedule, assigning a buddy, setting clear expectations and goals,
-   explaining pay, hours, and leave in plain words (to hedge, confirm current
-   rules), safety and conduct basics, collecting early feedback, and a
-   30-60-90-day check-in rhythm.
+1. **Budgeting and Forecasting for Small Businesses: Simple Monthly Budgets and Cash Forecasts for Malaysian SMEs**
+   — Why a budget beats guesswork, building a simple monthly budget from past
+   numbers, forecasting sales with ranges rather than one figure, fixed
+   versus variable costs, setting aside money for tax and statutory
+   contributions (to hedge, confirm current rules), seasonal swings, comparing
+   budget with actuals each month, adjusting when things change, and when to
+   ask an accountant for help.
 
-2. **Selling Through Marketplaces and Social Commerce: Choosing Platforms, Listings, and Fees for Malaysian SMEs**
-   — Marketplace versus your own shop versus social selling, choosing
-   platforms (features and fees to hedge), setting up trustworthy listings,
-   pricing after platform and payment fees, handling orders and ratings,
-   chat and customer response times, rules on prohibited goods and claims (to
-   hedge), protecting your account, and growing without depending on one
-   platform.
+2. **Becoming a Reseller, Agent, or Dropshipper: Sourcing and Selling Other People's Products Safely in Malaysia**
+   — How reseller, agent, and dropship models differ, choosing and checking
+   suppliers, agreements and margins, stock and delivery responsibilities,
+   product claims and consumer duties as the seller (to hedge, confirm
+   current rules), handling returns and quality problems, avoiding scams and
+   pyramid-style offers, registering the business, and growing a trusted
+   range.
