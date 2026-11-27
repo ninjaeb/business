@@ -49006,4 +49006,1296 @@ Menjual dalam talian memberi ganjaran kepada perniagaan yang jujur dalam penyena
       },
     },
   },
+  {
+    slug: "budgeting-and-forecasting-for-small-businesses-in-malaysia",
+    title: "Budgeting and Forecasting for Small Businesses: Simple Monthly Budgets and Cash Forecasts for Malaysian SMEs",
+    seoTitle: "Budgeting and Forecasting for Malaysian Small Businesses",
+    seoDescription:
+      "How Malaysian SMEs can build a simple monthly budget and cash forecast: use past numbers, plan for tax and seasons, compare with actuals and adjust.",
+    coverImage: {
+      file: "budgeting-and-forecasting-for-small-businesses-cover.webp",
+      mimeType: "image/webp",
+      alt: "A young woman in glasses and a grey blazer pressing a calculator beside a clipboard of printed forms and a laptop at a wooden desk",
+      altTranslations: {
+        zh: "一位戴眼镜、身穿灰色西装外套的年轻女士在木桌前按着计算器，旁边是夹着打印表格的写字板和一台笔记本电脑",
+        ms: "Seorang wanita muda berkaca mata dan berblazer kelabu menekan kalkulator di sebelah papan klip berisi borang bercetak dan komputer riba di meja kayu",
+      },
+    },
+    contentImages: {
+      review: {
+        file: "budgeting-and-forecasting-for-small-businesses-review.webp",
+        mimeType: "image/webp",
+        alt: "A woman in black glasses and a polka-dot blouse writing in a notebook while holding a loose sheet, with a calculator and papers of technical drawings on a wooden desk",
+        altTranslations: {
+          zh: "一位戴黑框眼镜、身穿圆点上衣的女士一边在笔记本上写字，一边拿着一张散页，木桌上放着计算器和印有技术图纸的纸张",
+          ms: "Seorang wanita berkaca mata hitam dan berblaus bertompok-tompok menulis dalam buku nota sambil memegang helaian kertas, dengan kalkulator dan kertas lukisan teknikal di atas meja kayu",
+        },
+        after: "Compare your budget with what actually happened at the end of every month.",
+        afterTranslations: {
+          zh: "每个月月底，把您的预算与实际发生的情况做比较。",
+          ms: "Bandingkan bajet anda dengan apa yang sebenarnya berlaku pada hujung setiap bulan.",
+        },
+      },
+    },
+    excerpt:
+      "A business can look busy and profitable on paper and still run out of cash in the middle of the month. This guide helps Malaysian SMEs build a simple monthly budget from past numbers, forecast sales with ranges, separate fixed and variable costs, plan for tax and seasons, and compare plans with actual results.",
+    body: `Most small business owners carry a rough budget in their heads: rent is about this much, supplies about that, and sales should cover it. That works until a slow month, a big repair, or a tax bill arrives, and the rough budget turns out to have gaps.
+
+A written budget does not need to be fancy. It is a page that says what you expect to earn, what you expect to spend, and what is left, month by month. A forecast looks ahead and asks whether you will have enough cash when the bills fall due.
+
+This is general information, not financial, tax, or legal advice. Tax rates, statutory contribution rules, and filing dates change over time, and some details in this guide may be out of date. Confirm current requirements with the relevant authorities or a qualified accountant before you rely on them.
+
+## 1. Understand why a budget beats guesswork
+
+### Profit is not the same as cash
+A sale on credit counts as profit but brings no cash until the customer pays. A budget and cash forecast show the difference. Our guide on managing cash flow explains why timing matters.
+
+### A budget turns surprises into plans
+When you know a large bill is coming in three months, you can set money aside instead of scrambling.
+
+### It improves decisions
+Before you hire, buy equipment, or run a promotion, a budget tells you whether you can afford it. Our guide on running promotions and discounts explains how to cost an offer.
+
+### It shows where money leaks
+Writing every cost down often reveals subscriptions, waste, or unprofitable items that nobody noticed.
+
+### It makes borrowing easier
+Lenders and partners take you more seriously when you can show a clear plan. Our guide on SME grants and funding in Malaysia explains why records and plans help.
+
+## 2. Gather your past numbers
+
+### Collect three to twelve months of records
+Bank statements, sales records, supplier invoices, payroll, and receipts give you a real starting point. If your records are incomplete, start with what you have. Our guide on bookkeeping and accounting basics explains simple systems.
+
+### Separate business and personal money
+Mixed accounts make numbers unreliable. Our guide on separating personal and business finances explains how to fix it.
+
+### Group income and costs into categories
+Use a handful of clear categories, such as sales, cost of goods, rent, wages, utilities, marketing, delivery, and loan repayments. Too many categories make the budget hard to keep.
+
+### Note one-off and seasonal items
+Mark unusual items, such as a big repair or a festive peak, so that they do not distort the normal month.
+
+### Find your average month
+Add up the months and divide to find a typical month, and note the best and worst. These ranges matter more than a single figure.
+
+## 3. Build a simple monthly budget
+
+### Start with expected income
+Estimate sales from past months, adjusted for known changes, such as a new product, a price change, or a lost customer. Be modest rather than hopeful.
+
+### List fixed costs
+Fixed costs stay the same however much you sell, such as rent, salaries, insurance, loan repayments, and subscriptions.
+
+### List variable costs
+Variable costs rise and fall with sales, such as ingredients, packaging, delivery, commissions, and payment fees. Express them as a percentage of sales where you can.
+
+### Calculate what is left
+Income minus fixed and variable costs gives your expected surplus or shortfall for the month. Check whether it is enough to cover your own pay and your plans.
+
+### Keep it on one page
+A simple table with a row per item and a column per month is usually enough. A budget you can read in a minute is a budget you will use.
+
+## 4. Forecast sales with ranges
+
+### Use three scenarios
+Estimate a cautious, a likely, and a strong case for sales. Plan your costs around the cautious case and treat the rest as a bonus.
+
+### Think about what drives your sales
+Opening hours, number of staff, customer visits, orders per day, or marketing activity may all affect results. Our guide on tracking business performance explains simple numbers to follow.
+
+### Adjust for seasons and events
+Many Malaysian businesses see peaks around festive periods and dips at other times. Our guide on planning for festive peaks and slow seasons explains how to prepare.
+
+### Account for new customers and lost ones
+If a big customer might leave or a new contract might start, show both outcomes in your scenarios.
+
+### Update as real numbers come in
+A forecast is a working document. Revise it each month with the latest actuals rather than keeping an old guess.
+
+## 5. Plan your cash, not just your profit
+
+### Build a simple cash forecast
+List the cash you expect to receive and pay each week or month, including the timing of customer payments and supplier bills. Our guide on collecting late payments explains how to speed up receipts.
+
+### Add the lumpy items
+Include annual insurance, licence renewals, equipment replacement, and loan balloon payments in the months they fall due.
+
+### Set a cash buffer
+Aim to keep a reserve that covers a few weeks or months of fixed costs, depending on how volatile your business is. Even a small buffer reduces stress.
+
+### Spot gaps early
+If the forecast shows that cash will run short in two months, you have time to act, such as chasing payments, trimming costs, or arranging financing. Our guide on managing business debt and loan repayments explains how to handle borrowing.
+
+### Watch stock and credit terms
+Buying more stock than you can sell, or giving long credit terms, ties up cash. Our guide on managing inventory and stock explains how to avoid it.
+
+## 6. Set aside money for tax and statutory costs
+
+### Treat tax as a cost
+Put aside a share of profit regularly so that tax bills do not come as a shock. Our guide on small business tax calendar in Malaysia explains the main dates to track. Confirm current rates and deadlines with the Inland Revenue Board or an accountant.
+
+### Plan for staff contributions
+If you employ staff, budget for statutory contributions such as EPF, SOCSO, and EIS, which are paid on top of salary at rates and due dates that can change. Our guide on hiring your first employee explains the basics, and you should confirm current rules with the relevant authorities.
+
+### Include SST or other indirect taxes if they apply
+If you are registered for sales and service tax, remember that collected tax is not your income. Our guide on SST registration in Malaysia explains how it works.
+
+### Budget for licences and renewals
+Business licences, permits, and renewals often fall in specific months. Add them to your calendar.
+
+### Ask an accountant to check your assumptions
+An hour of professional help can catch missing items and wrong rates.
+
+## 7. Review, compare, and adjust
+
+### Close the monthly loop
+Compare your budget with what actually happened at the end of every month. Look at income, each major cost, and the surplus, and note the differences.
+
+### Ask why, not just how much
+A cost that is over budget may be a one-off, a price rise, or a sign of waste. Understanding the reason tells you whether to act.
+
+> A budget is not a promise you make once; it is a conversation you have with your numbers every month, and the businesses that keep having it are the ones that are rarely surprised.
+
+### Adjust the plan and your actions
+If sales are lower than planned, cut or delay costs and revise the forecast. If they are higher, decide whether to save, invest, or pay down debt.
+
+### Keep a simple record of changes
+Note what you changed and why. Over a year, the notes become a useful guide for the next budget.
+
+### Share the numbers with those who need them
+If you have a partner or a manager, share the monthly comparison so that everyone works from the same facts. Our guide on business partners and shareholder agreements explains why open numbers help.
+
+## 8. Know when to ask for help
+
+### Use tools that fit your size
+A spreadsheet is enough for many small businesses. Our guide on choosing accounting software for your Malaysian SME explains when software helps.
+
+### Keep your records tidy
+A budget is only as good as the data behind it. Record sales and costs regularly, not once a quarter.
+
+### Ask an accountant when things get complex
+If you have several revenue streams, loans, staff, or tax questions, professional advice can save more than it costs. You can [browse the directory](/en) for accountants and business advisers near you, and [create a free business listing](/en/signup) so that customers can find your business.
+
+### Build the habit
+Block an hour on the same day each month for your review. Habit matters more than perfection.
+
+### Start small
+If a full budget feels like too much, start with a one-page cash forecast for the next three months and build from there.
+
+## Common mistakes Malaysian SMEs make with budgets
+
+- **Budgeting profit but ignoring cash timing.** Late customer payments can leave you short even in a profitable month, so forecast when money actually moves.
+- **Forecasting one hopeful number.** Reality rarely matches a single guess, so use cautious, likely, and strong scenarios and plan around the cautious one.
+- **Forgetting tax, statutory contributions, and renewals.** Lumpy bills hurt cash, so put money aside regularly and check current rules with the authorities or an accountant.
+
+## Where to start
+
+- **This week:** Gather three months of sales and cost records, and sort them into a handful of categories.
+- **Next:** Build a one-page monthly budget with fixed and variable costs, and a cautious, likely, and strong sales case.
+- **Then:** Add a three-month cash forecast with tax and statutory payments, and set a small cash buffer.
+- **Every month:** Compare the budget with actuals, ask why the gaps occurred, and adjust.
+
+You do not need to be an accountant to run a budget. You need a page, regular numbers, and the habit of looking at them, and that habit gives you time to act before problems arrive.`,
+    faqs: [
+      {
+        question: "Why do I need a budget if my business is making sales?",
+        answer:
+          "Sales are not the same as cash or profit. A budget shows whether sales cover your costs, and a cash forecast shows whether you will have enough money when bills fall due, so you can plan instead of being surprised.",
+      },
+      {
+        question: "How do I start a monthly budget?",
+        answer:
+          "Gather three to twelve months of records, group income and costs into a handful of categories, estimate expected income, list fixed and variable costs, and calculate what is left. Keep it on one page so that you will actually use it.",
+      },
+      {
+        question: "What is the difference between a budget and a cash forecast?",
+        answer:
+          "A budget plans income and costs for a period, usually on an accrual basis. A cash forecast plans when money actually comes in and goes out, including the timing of customer payments and supplier bills, so it shows whether you may run short.",
+      },
+      {
+        question: "How do I forecast sales when they change every month?",
+        answer:
+          "Use ranges rather than one figure: a cautious, a likely, and a strong case. Plan your costs around the cautious case, adjust for seasons and events, and update the forecast each month with actual results.",
+      },
+      {
+        question: "How much cash should I keep as a buffer?",
+        answer:
+          "It depends on how volatile your business is, but a reserve that covers a few weeks or months of fixed costs is a common aim. Even a small buffer reduces stress, and you can build it gradually.",
+      },
+      {
+        question: "Should I budget for tax and staff contributions?",
+        answer:
+          "Yes. Treat tax as a cost and set money aside regularly, and if you employ staff, budget for statutory contributions such as EPF, SOCSO, and EIS. Rates and due dates can change, so confirm current requirements with the relevant authorities or an accountant.",
+      },
+      {
+        question: "How often should I compare my budget with actual results?",
+        answer:
+          "At least monthly. Compare income, each major cost, and the surplus, ask why differences occurred, and adjust your plan and your actions. Regular review is what makes a budget useful.",
+      },
+      {
+        question: "When should I ask an accountant for help?",
+        answer:
+          "When you have several revenue streams, loans, staff, or tax questions, or when you are unsure about rates and deadlines. An hour of professional help can catch missing items and wrong assumptions.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "小企业的预算与预测：马来西亚中小企业的简单月度预算与现金预测",
+        excerpt:
+          "一家企业在纸面上看起来很忙、也有盈利，却仍可能在月中耗尽现金。本指南帮助马来西亚中小企业根据过去的数字建立简单的月度预算，以区间预测销售，区分固定和变动成本，为税务和季节做好规划，并把计划与实际结果做比较。",
+        body: `大多数小企业主脑子里有一份粗略的预算：租金大约是这么多，供应品大约是那么多，销售应该能弥补。这在遇到淡月、一次大维修或一张税单之前都行得通，然后才发现粗略的预算有漏洞。
+
+书面预算不需要花哨。它是一页纸，逐月写明您预期赚多少、预期花多少，以及还剩多少。预测则向前看，问问账单到期时您是否有足够的现金。
+
+本文仅提供一般信息，并非财务、税务或法律建议。税率、法定供款规定和申报日期会随时间变化，本指南的部分细节可能已经过时。在依赖它们之前，请向相关主管单位或合格的会计师确认现行要求。
+
+## 1. 了解为什么预算胜过猜测
+
+### 利润不等于现金
+赊账的销售算作利润，却要到顾客付款才带来现金。预算和现金预测会显示差别。我们关于管理现金流的指南解释了为什么时机很重要。
+
+### 预算把意外变成计划
+当您知道三个月后有一笔大账单时，就可以预先留出资金，而不是手忙脚乱。
+
+### 它改善决策
+在聘请员工、购买设备或举办促销之前，预算告诉您负担不负担得起。我们关于举办促销与折扣的指南解释了如何计算优惠的成本。
+
+### 它显示钱从哪里漏掉
+把每一项成本写下来，往往会发现没人留意的订阅、浪费或不赚钱的商品。
+
+### 它让借贷更容易
+当您能展示清楚的计划时，贷款方和合作伙伴会更认真地看待您。我们关于马来西亚中小企业补助与资金的指南解释了为什么记录和计划有帮助。
+
+## 2. 收集您过去的数字
+
+### 收集三到十二个月的记录
+银行结单、销售记录、供应商发票、薪资和收据，给您一个真实的起点。如果您的记录不完整，就从现有的开始。我们关于簿记与会计基础的指南解释了简单的系统。
+
+### 把业务和个人的钱分开
+混用的账户会让数字不可靠。我们关于分开个人和业务财务的指南解释了如何改正。
+
+### 把收入和成本归入类别
+使用少数几个清楚的类别，例如销售、货品成本、租金、工资、水电、营销、送货和贷款还款。类别太多会让预算难以维持。
+
+### 记下一次性和季节性的项目
+标出不寻常的项目，例如一次大维修或节庆旺季，以免扭曲正常的月份。
+
+### 找出您的平均月份
+把各月加起来再除，得出典型的一个月，并记下最好和最差的。这些区间比单一数字更重要。
+
+## 3. 建立简单的月度预算
+
+### 从预期收入开始
+根据过去几个月估算销售，并针对已知的变化做调整，例如新产品、价格变动或流失的顾客。要保守而不是乐观。
+
+### 列出固定成本
+固定成本无论您卖多少都不变，例如租金、薪水、保险、贷款还款和订阅费。
+
+### 列出变动成本
+变动成本随销售起伏，例如食材、包装、送货、佣金和付款手续费。尽可能以占销售的百分比来表示。
+
+### 算出还剩多少
+收入减去固定和变动成本，就是您当月预期的盈余或亏损。检查它是否足以支付您自己的薪酬和您的计划。
+
+### 保持在一页之内
+一张简单的表格，每个项目一行、每个月一列，通常就足够了。您能在一分钟内读完的预算，才是您会使用的预算。
+
+## 4. 以区间预测销售
+
+### 使用三种情境
+为销售估算保守、可能和乐观三种情况。围绕保守的情况规划您的成本，把其余的当作额外收获。
+
+### 想想什么在驱动您的销售
+营业时间、员工人数、顾客来访、每日订单或营销活动，都可能影响结果。我们关于追踪业务表现的指南解释了要跟踪的简单数字。
+
+### 针对季节和活动调整
+许多马来西亚企业在节庆期间出现高峰，在其他时候出现低谷。我们关于规划节庆旺季与淡季的指南解释了如何准备。
+
+### 考虑新顾客和流失的顾客
+如果某位大客户可能离开，或某份新合约可能开始，请在您的情境里显示两种结果。
+
+### 随着实际数字出现而更新
+预测是一份工作文件。每个月用最新的实际数字修订，而不是保留旧的猜测。
+
+## 5. 规划您的现金，而不只是利润
+
+### 建立简单的现金预测
+列出您预期每周或每月收到和支付的现金，包括顾客付款和供应商账单的时间。我们关于追收逾期付款的指南解释了如何加快收款。
+
+### 加入不均匀的项目
+把年度保险、执照续期、设备更换和贷款的大额还款，放入它们到期的月份。
+
+### 设定现金缓冲
+目标是保留一笔储备，视您业务的波动程度，涵盖几个星期或几个月的固定成本。即使是小小的缓冲也能减轻压力。
+
+### 及早发现缺口
+如果预测显示两个月后现金会不足，您还有时间采取行动，例如追收款项、削减成本或安排融资。我们关于管理企业债务与贷款还款的指南解释了如何处理借贷。
+
+### 留意存货和信用条件
+买进多于您能卖掉的存货，或给予很长的信用期，都会占用现金。我们关于管理存货的指南解释了如何避免。
+
+## 6. 为税务和法定费用预留资金
+
+### 把税务当作成本
+定期留出一部分利润，让税单不会让您措手不及。我们关于马来西亚小企业税务日历的指南解释了需要追踪的主要日期。请向内陆税收局或会计师确认现行的税率和期限。
+
+### 为员工供款做规划
+如果您雇有员工，请为EPF、SOCSO和EIS等法定供款做预算，它们在薪水之外缴付，税率和到期日可能变化。我们关于聘请第一位员工的指南解释了基础知识，您也应向相关主管单位确认现行规定。
+
+### 如适用，计入SST或其他间接税
+如果您已登记销售与服务税，请记住收来的税不是您的收入。我们关于马来西亚SST登记的指南解释了如何运作。
+
+### 为执照和续期做预算
+营业执照、许可证和续期往往落在特定的月份。请把它们加入您的日历。
+
+### 请会计师检查您的假设
+一小时的专业协助，可以发现遗漏的项目和错误的税率。
+
+## 7. 检讨、比较和调整
+
+### 完成每月的闭环
+每个月月底，把您的预算与实际发生的情况做比较。查看收入、每一项主要成本和盈余，并记下差异。
+
+### 问为什么，而不只是多少
+超出预算的成本可能是一次性的、价格上涨，或是浪费的迹象。了解原因能告诉您是否需要行动。
+
+> 预算不是您只做一次的承诺；它是您每个月与自己的数字进行的一场对话，而坚持进行这场对话的企业，很少会被意外打个措手不及。
+
+### 调整计划和行动
+如果销售低于计划，就削减或推迟成本并修订预测。如果高于计划，就决定是储蓄、投资还是偿还债务。
+
+### 保存简单的变更记录
+记下您改变了什么以及为什么。一年下来，这些笔记会成为下一份预算的有用指南。
+
+### 与需要的人分享数字
+如果您有合伙人或经理，请分享每月的比较，让每个人都根据同样的事实工作。我们关于商业伙伴与股东协议的指南解释了为什么公开的数字有帮助。
+
+## 8. 知道何时求助
+
+### 使用适合您规模的工具
+许多小企业用电子表格就够了。我们关于为您的马来西亚中小企业选择会计软件的指南解释了软件何时有帮助。
+
+### 保持记录整齐
+预算的好坏取决于背后的数据。请定期记录销售和成本，而不是每季度才记一次。
+
+### 当事情变复杂时请教会计师
+如果您有多种收入来源、贷款、员工或税务问题，专业意见省下的可能多于花费。您可以[浏览名录](/zh)寻找附近的会计师和商业顾问，并[创建免费商家列表](/zh/signup)，让顾客找到您的业务。
+
+### 养成习惯
+每个月在同一天预留一小时做检讨。习惯比完美更重要。
+
+### 从小处开始
+如果完整的预算感觉太多，就从未来三个月的一页现金预测开始，再逐步建立。
+
+## 马来西亚中小企业在预算方面常犯的错误
+
+- **只预算利润而忽略现金的时机。** 顾客延迟付款即使在有盈利的月份也可能让您短缺，所以请预测钱实际流动的时间。
+- **预测单一的乐观数字。** 现实很少与单一的猜测相符，所以请使用保守、可能和乐观的情境，并围绕保守的情境规划。
+- **忘记税务、法定供款和续期。** 不均匀的账单会伤害现金，所以请定期留出资金，并向主管单位或会计师确认现行规定。
+
+## 从哪里开始
+
+- **本周：** 收集三个月的销售和成本记录，并把它们整理成少数几个类别。
+- **接着：** 建立一页的月度预算，包括固定和变动成本，以及保守、可能和乐观的销售情境。
+- **然后：** 加入含税务和法定付款的三个月现金预测，并设定一笔小额的现金缓冲。
+- **每个月：** 把预算与实际比较，问问差距为何出现，并加以调整。
+
+您不需要是会计师才能运用预算。您需要的是一页纸、定期的数字，以及查看它们的习惯，而这个习惯会在问题到来之前给您采取行动的时间。`,
+        faqs: [
+          {
+            question: "如果我的企业有销售，为什么还需要预算？",
+            answer:
+              "销售不等于现金或利润。预算显示销售是否足以弥补成本，现金预测显示账单到期时您是否有足够的钱，让您能够规划而不是被意外打个措手不及。",
+          },
+          {
+            question: "我如何开始做月度预算？",
+            answer:
+              "收集三到十二个月的记录，把收入和成本归入少数几个类别，估算预期收入，列出固定和变动成本，并算出还剩多少。保持在一页之内，这样您才会真的使用它。",
+          },
+          {
+            question: "预算和现金预测有什么区别？",
+            answer:
+              "预算规划一段期间的收入和成本，通常采用应计基础。现金预测规划钱实际何时进出，包括顾客付款和供应商账单的时间，所以它显示您是否可能短缺。",
+          },
+          {
+            question: "当销售每个月都在变时，我如何预测？",
+            answer:
+              "使用区间而不是单一数字：保守、可能和乐观三种情况。围绕保守的情况规划成本，针对季节和活动调整，并每个月用实际结果更新预测。",
+          },
+          {
+            question: "我应该保留多少现金作为缓冲？",
+            answer:
+              "视您业务的波动程度而定，但一笔涵盖几个星期或几个月固定成本的储备是常见的目标。即使是小小的缓冲也能减轻压力，您可以逐步建立。",
+          },
+          {
+            question: "我应该为税务和员工供款做预算吗？",
+            answer:
+              "应该。把税务当作成本并定期留出资金，如果您雇有员工，请为EPF、SOCSO和EIS等法定供款做预算。税率和到期日可能变化，所以请向相关主管单位或会计师确认现行要求。",
+          },
+          {
+            question: "我应该多久把预算与实际结果比较一次？",
+            answer:
+              "至少每月一次。比较收入、每一项主要成本和盈余，问问差异为何出现，并调整您的计划和行动。定期检讨才让预算变得有用。",
+          },
+          {
+            question: "我什么时候应该请会计师协助？",
+            answer:
+              "当您有多种收入来源、贷款、员工或税务问题时，或当您不确定税率和期限时。一小时的专业协助可以发现遗漏的项目和错误的假设。",
+          },
+        ],
+      },
+      ms: {
+        title: "Bajet dan Ramalan untuk Perniagaan Kecil: Bajet Bulanan dan Ramalan Tunai yang Mudah untuk PKS Malaysia",
+        excerpt:
+          "Sesebuah perniagaan boleh kelihatan sibuk dan menguntungkan di atas kertas tetapi masih kehabisan wang tunai pada pertengahan bulan. Panduan ini membantu PKS Malaysia membina bajet bulanan yang mudah daripada angka lepas, meramal jualan dengan julat, mengasingkan kos tetap dan berubah, merancang untuk cukai dan musim, dan membandingkan pelan dengan hasil sebenar.",
+        body: `Kebanyakan pemilik perniagaan kecil membawa bajet kasar dalam kepala mereka: sewa lebih kurang sekian, bekalan lebih kurang sekian, dan jualan sepatutnya menampung. Itu berjaya sehingga tiba bulan yang perlahan, pembaikan besar atau bil cukai, dan bajet kasar itu ternyata ada jurang.
+
+Bajet bertulis tidak perlu canggih. Ia ialah satu muka surat yang menyatakan apa yang anda jangka untuk diperoleh, apa yang anda jangka untuk dibelanjakan, dan apa yang tinggal, bulan demi bulan. Ramalan melihat ke hadapan dan bertanya sama ada anda akan mempunyai wang tunai yang cukup apabila bil tiba tempoh.
+
+Ini maklumat umum, bukan nasihat kewangan, cukai atau undang-undang. Kadar cukai, peraturan caruman berkanun dan tarikh pemfailan berubah dari semasa ke semasa, dan sebahagian butiran dalam panduan ini mungkin sudah lapuk. Sahkan keperluan semasa dengan pihak berkuasa berkaitan atau akauntan yang layak sebelum anda bergantung padanya.
+
+## 1. Fahami mengapa bajet mengatasi andaian
+
+### Keuntungan tidak sama dengan wang tunai
+Jualan secara kredit dikira sebagai keuntungan tetapi tidak membawa wang tunai sehingga pelanggan membayar. Bajet dan ramalan tunai menunjukkan perbezaannya. Panduan kami tentang menguruskan aliran tunai menerangkan mengapa masa penting.
+
+### Bajet menukar kejutan kepada pelan
+Apabila anda tahu bil besar akan tiba dalam tiga bulan, anda boleh mengetepikan wang dan bukan bergegas.
+
+### Ia memperbaik keputusan
+Sebelum anda mengambil pekerja, membeli peralatan atau menjalankan promosi, bajet memberitahu anda sama ada anda mampu. Panduan kami tentang menjalankan promosi dan diskaun menerangkan cara mengira kos tawaran.
+
+### Ia menunjukkan di mana wang bocor
+Menuliskan setiap kos sering mendedahkan langganan, pembaziran atau item tidak menguntungkan yang tidak disedari sesiapa.
+
+### Ia memudahkan pinjaman
+Pemberi pinjaman dan rakan kongsi mengambil anda dengan lebih serius apabila anda boleh menunjukkan pelan yang jelas. Panduan kami tentang geran dan pembiayaan PKS di Malaysia menerangkan mengapa rekod dan pelan membantu.
+
+## 2. Kumpulkan angka lepas anda
+
+### Kumpulkan rekod tiga hingga dua belas bulan
+Penyata bank, rekod jualan, invois pembekal, gaji dan resit memberi anda titik permulaan yang sebenar. Jika rekod anda tidak lengkap, mulakan dengan apa yang ada. Panduan kami tentang asas simpan kira dan perakaunan menerangkan sistem yang mudah.
+
+### Asingkan wang perniagaan dan peribadi
+Akaun bercampur menjadikan angka tidak boleh dipercayai. Panduan kami tentang mengasingkan kewangan peribadi dan perniagaan menerangkan cara membetulkannya.
+
+### Kumpulkan pendapatan dan kos ke dalam kategori
+Gunakan beberapa kategori yang jelas, seperti jualan, kos barangan, sewa, gaji, utiliti, pemasaran, penghantaran dan bayaran balik pinjaman. Terlalu banyak kategori menyukarkan bajet untuk dikekalkan.
+
+### Catat item sekali sahaja dan bermusim
+Tandakan item luar biasa, seperti pembaikan besar atau puncak perayaan, supaya ia tidak memesongkan bulan biasa.
+
+### Cari bulan purata anda
+Jumlahkan bulan-bulan itu dan bahagikan untuk mencari bulan biasa, dan catat yang terbaik dan terburuk. Julat ini lebih penting daripada satu angka.
+
+## 3. Bina bajet bulanan yang mudah
+
+### Mulakan dengan pendapatan yang dijangka
+Anggarkan jualan daripada bulan-bulan lepas, dilaraskan untuk perubahan yang diketahui, seperti produk baharu, perubahan harga atau pelanggan yang hilang. Bersikap sederhana dan bukan berharap.
+
+### Senaraikan kos tetap
+Kos tetap kekal sama walau berapa banyak yang anda jual, seperti sewa, gaji, insurans, bayaran balik pinjaman dan langganan.
+
+### Senaraikan kos berubah
+Kos berubah naik dan turun mengikut jualan, seperti bahan, pembungkusan, penghantaran, komisen dan fi pembayaran. Nyatakan sebagai peratusan jualan jika boleh.
+
+### Kira apa yang tinggal
+Pendapatan tolak kos tetap dan berubah memberi lebihan atau kekurangan yang dijangka bagi bulan itu. Semak sama ada ia cukup untuk menampung gaji anda sendiri dan rancangan anda.
+
+### Pastikan dalam satu muka surat
+Jadual yang mudah dengan satu baris bagi setiap item dan satu lajur bagi setiap bulan biasanya memadai. Bajet yang boleh anda baca dalam seminit ialah bajet yang akan anda gunakan.
+
+## 4. Ramal jualan dengan julat
+
+### Gunakan tiga senario
+Anggarkan kes berhati-hati, berkemungkinan dan kukuh untuk jualan. Rancang kos anda sekitar kes berhati-hati dan anggap selebihnya sebagai bonus.
+
+### Fikirkan apa yang mendorong jualan anda
+Waktu operasi, bilangan pekerja, lawatan pelanggan, pesanan sehari atau aktiviti pemasaran mungkin semuanya mempengaruhi hasil. Panduan kami tentang menjejaki prestasi perniagaan menerangkan angka mudah untuk diikuti.
+
+### Laraskan untuk musim dan acara
+Banyak perniagaan Malaysia melihat puncak sekitar tempoh perayaan dan kejatuhan pada waktu lain. Panduan kami tentang merancang untuk puncak perayaan dan musim perlahan menerangkan cara bersedia.
+
+### Ambil kira pelanggan baharu dan yang hilang
+Jika pelanggan besar mungkin pergi atau kontrak baharu mungkin bermula, tunjukkan kedua-dua hasil dalam senario anda.
+
+### Kemas kini apabila angka sebenar masuk
+Ramalan ialah dokumen kerja. Semak semula setiap bulan dengan angka sebenar terkini dan bukan mengekalkan andaian lama.
+
+## 5. Rancang wang tunai anda, bukan hanya keuntungan
+
+### Bina ramalan tunai yang mudah
+Senaraikan wang tunai yang anda jangka untuk diterima dan dibayar setiap minggu atau bulan, termasuk masa pembayaran pelanggan dan bil pembekal. Panduan kami tentang mengutip bayaran lewat menerangkan cara mempercepatkan penerimaan.
+
+### Tambah item yang tidak sekata
+Sertakan insurans tahunan, pembaharuan lesen, penggantian peralatan dan bayaran pinjaman yang besar dalam bulan ia tiba tempoh.
+
+### Tetapkan penampan tunai
+Sasarkan untuk menyimpan rizab yang meliputi beberapa minggu atau bulan kos tetap, bergantung pada betapa tidak menentunya perniagaan anda. Walaupun penampan kecil mengurangkan tekanan.
+
+### Kesan jurang lebih awal
+Jika ramalan menunjukkan wang tunai akan kekurangan dalam dua bulan, anda ada masa untuk bertindak, seperti mengejar bayaran, memangkas kos atau mengatur pembiayaan. Panduan kami tentang menguruskan hutang perniagaan dan bayaran balik pinjaman menerangkan cara mengendalikan pinjaman.
+
+### Perhatikan stok dan terma kredit
+Membeli lebih banyak stok daripada yang boleh anda jual, atau memberi terma kredit yang panjang, mengikat wang tunai. Panduan kami tentang menguruskan inventori dan stok menerangkan cara mengelaknya.
+
+## 6. Ketepikan wang untuk cukai dan kos berkanun
+
+### Anggap cukai sebagai kos
+Ketepikan sebahagian keuntungan secara berkala supaya bil cukai tidak datang sebagai kejutan. Panduan kami tentang kalendar cukai perniagaan kecil di Malaysia menerangkan tarikh utama untuk dijejaki. Sahkan kadar dan tarikh akhir semasa dengan Lembaga Hasil Dalam Negeri atau akauntan.
+
+### Rancang untuk caruman pekerja
+Jika anda mengambil pekerja, bajetkan caruman berkanun seperti KWSP, PERKESO dan SIP, yang dibayar di atas gaji pada kadar dan tarikh akhir yang boleh berubah. Panduan kami tentang mengambil pekerja pertama anda menerangkan asasnya, dan anda patut mengesahkan peraturan semasa dengan pihak berkuasa berkaitan.
+
+### Sertakan SST atau cukai tidak langsung lain jika terpakai
+Jika anda berdaftar untuk cukai jualan dan perkhidmatan, ingat bahawa cukai yang dikutip bukan pendapatan anda. Panduan kami tentang pendaftaran SST di Malaysia menerangkan cara ia berfungsi.
+
+### Bajetkan lesen dan pembaharuan
+Lesen perniagaan, permit dan pembaharuan sering jatuh pada bulan tertentu. Tambahkannya ke dalam kalendar anda.
+
+### Minta akauntan menyemak andaian anda
+Satu jam bantuan profesional boleh menangkap item yang tertinggal dan kadar yang salah.
+
+## 7. Semak, bandingkan dan laraskan
+
+### Lengkapkan gelung bulanan
+Bandingkan bajet anda dengan apa yang sebenarnya berlaku pada hujung setiap bulan. Lihat pendapatan, setiap kos utama dan lebihan, dan catat perbezaannya.
+
+### Tanya mengapa, bukan hanya berapa banyak
+Kos yang melebihi bajet mungkin sekali sahaja, kenaikan harga atau tanda pembaziran. Memahami sebabnya memberitahu anda sama ada hendak bertindak.
+
+> Bajet bukan janji yang anda buat sekali; ia ialah perbualan yang anda lakukan dengan angka anda setiap bulan, dan perniagaan yang terus berbual ialah yang jarang terkejut.
+
+### Laraskan pelan dan tindakan anda
+Jika jualan lebih rendah daripada dirancang, potong atau tangguhkan kos dan semak semula ramalan. Jika lebih tinggi, tentukan sama ada hendak menyimpan, melabur atau melunaskan hutang.
+
+### Simpan rekod perubahan yang mudah
+Catat apa yang anda ubah dan mengapa. Dalam setahun, nota itu menjadi panduan berguna untuk bajet seterusnya.
+
+### Kongsi angka dengan mereka yang memerlukannya
+Jika anda mempunyai rakan kongsi atau pengurus, kongsi perbandingan bulanan supaya semua orang bekerja berdasarkan fakta yang sama. Panduan kami tentang rakan kongsi perniagaan dan perjanjian pemegang saham menerangkan mengapa angka yang terbuka membantu.
+
+## 8. Ketahui bila hendak meminta bantuan
+
+### Gunakan alat yang sesuai dengan saiz anda
+Hamparan sudah memadai untuk banyak perniagaan kecil. Panduan kami tentang memilih perisian perakaunan untuk PKS Malaysia anda menerangkan bila perisian membantu.
+
+### Pastikan rekod anda kemas
+Bajet hanya sebaik data di belakangnya. Rekodkan jualan dan kos secara berkala, bukan sekali sesuku tahun.
+
+### Tanya akauntan apabila keadaan menjadi rumit
+Jika anda mempunyai beberapa sumber hasil, pinjaman, pekerja atau soalan cukai, nasihat profesional boleh menjimatkan lebih daripada kosnya. Anda boleh [layari direktori](/ms) untuk akauntan dan penasihat perniagaan berhampiran anda, dan [cipta penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan dapat menemui perniagaan anda.
+
+### Bina tabiat
+Sediakan satu jam pada hari yang sama setiap bulan untuk semakan anda. Tabiat lebih penting daripada kesempurnaan.
+
+### Mulakan kecil
+Jika bajet penuh terasa terlalu banyak, mulakan dengan ramalan tunai satu muka surat untuk tiga bulan akan datang dan bina dari situ.
+
+## Kesilapan biasa PKS Malaysia dengan bajet
+
+- **Membajetkan keuntungan tetapi mengabaikan masa wang tunai.** Bayaran pelanggan yang lewat boleh menjadikan anda kekurangan walaupun dalam bulan yang menguntungkan, jadi ramal bila wang sebenarnya bergerak.
+- **Meramal satu angka yang diharapkan.** Realiti jarang sepadan dengan satu andaian, jadi gunakan senario berhati-hati, berkemungkinan dan kukuh dan rancang sekitar yang berhati-hati.
+- **Melupakan cukai, caruman berkanun dan pembaharuan.** Bil yang tidak sekata mencederakan wang tunai, jadi ketepikan wang secara berkala dan semak peraturan semasa dengan pihak berkuasa atau akauntan.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Kumpulkan rekod jualan dan kos tiga bulan, dan susun ke dalam beberapa kategori.
+- **Seterusnya:** Bina bajet bulanan satu muka surat dengan kos tetap dan berubah, serta kes jualan berhati-hati, berkemungkinan dan kukuh.
+- **Kemudian:** Tambah ramalan tunai tiga bulan dengan pembayaran cukai dan berkanun, dan tetapkan penampan tunai yang kecil.
+- **Setiap bulan:** Bandingkan bajet dengan angka sebenar, tanya mengapa jurang berlaku, dan laraskan.
+
+Anda tidak perlu menjadi akauntan untuk menjalankan bajet. Anda memerlukan satu muka surat, angka yang berkala, dan tabiat melihatnya, dan tabiat itu memberi anda masa untuk bertindak sebelum masalah tiba.`,
+        faqs: [
+          {
+            question: "Mengapa saya memerlukan bajet jika perniagaan saya membuat jualan?",
+            answer:
+              "Jualan tidak sama dengan wang tunai atau keuntungan. Bajet menunjukkan sama ada jualan menampung kos anda, dan ramalan tunai menunjukkan sama ada anda akan mempunyai wang yang cukup apabila bil tiba tempoh, supaya anda boleh merancang dan bukan terkejut.",
+          },
+          {
+            question: "Bagaimanakah saya memulakan bajet bulanan?",
+            answer:
+              "Kumpulkan rekod tiga hingga dua belas bulan, kumpulkan pendapatan dan kos ke dalam beberapa kategori, anggarkan pendapatan yang dijangka, senaraikan kos tetap dan berubah, dan kira apa yang tinggal. Pastikan dalam satu muka surat supaya anda benar-benar menggunakannya.",
+          },
+          {
+            question: "Apakah perbezaan antara bajet dan ramalan tunai?",
+            answer:
+              "Bajet merancang pendapatan dan kos untuk sesuatu tempoh, biasanya berasaskan akruan. Ramalan tunai merancang bila wang sebenarnya masuk dan keluar, termasuk masa pembayaran pelanggan dan bil pembekal, jadi ia menunjukkan sama ada anda mungkin kekurangan.",
+          },
+          {
+            question: "Bagaimanakah saya meramal jualan apabila ia berubah setiap bulan?",
+            answer:
+              "Gunakan julat dan bukan satu angka: kes berhati-hati, berkemungkinan dan kukuh. Rancang kos anda sekitar kes berhati-hati, laraskan untuk musim dan acara, dan kemas kini ramalan setiap bulan dengan hasil sebenar.",
+          },
+          {
+            question: "Berapa banyak wang tunai yang patut saya simpan sebagai penampan?",
+            answer:
+              "Bergantung pada betapa tidak menentunya perniagaan anda, tetapi rizab yang meliputi beberapa minggu atau bulan kos tetap ialah sasaran biasa. Walaupun penampan kecil mengurangkan tekanan, dan anda boleh membinanya secara beransur-ansur.",
+          },
+          {
+            question: "Patutkah saya membajetkan untuk cukai dan caruman pekerja?",
+            answer:
+              "Ya. Anggap cukai sebagai kos dan ketepikan wang secara berkala, dan jika anda mengambil pekerja, bajetkan caruman berkanun seperti KWSP, PERKESO dan SIP. Kadar dan tarikh akhir boleh berubah, jadi sahkan keperluan semasa dengan pihak berkuasa berkaitan atau akauntan.",
+          },
+          {
+            question: "Berapa kerap saya patut membandingkan bajet dengan hasil sebenar?",
+            answer:
+              "Sekurang-kurangnya sebulan sekali. Bandingkan pendapatan, setiap kos utama dan lebihan, tanya mengapa perbezaan berlaku, dan laraskan pelan dan tindakan anda. Semakan berkala menjadikan bajet berguna.",
+          },
+          {
+            question: "Bilakah saya patut meminta bantuan akauntan?",
+            answer:
+              "Apabila anda mempunyai beberapa sumber hasil, pinjaman, pekerja atau soalan cukai, atau apabila anda tidak pasti tentang kadar dan tarikh akhir. Satu jam bantuan profesional boleh menangkap item yang tertinggal dan andaian yang salah.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "becoming-a-reseller-agent-or-dropshipper-in-malaysia",
+    title: "Becoming a Reseller, Agent, or Dropshipper: Sourcing and Selling Other People's Products Safely in Malaysia",
+    seoTitle: "Becoming a Reseller, Agent or Dropshipper in Malaysia",
+    seoDescription:
+      "How to sell other people's products safely in Malaysia: compare reseller, agent and dropship models, vet suppliers and avoid pyramid schemes.",
+    coverImage: {
+      file: "becoming-a-reseller-agent-or-dropshipper-cover.webp",
+      mimeType: "image/webp",
+      alt: "A woman in an olive shirt and beaded bracelets lifting a folded white t-shirt into an open cardboard box beside a dark window, with small gift boxes behind her",
+      altTranslations: {
+        zh: "一位身穿橄榄绿衬衫、戴着珠串手链的女士，在漆黑的窗边把一件折好的白色T恤放进打开的纸箱，身后是小礼盒",
+        ms: "Seorang wanita berbaju hijau zaitun dan bergelang manik mengangkat baju-T putih terlipat ke dalam kotak kadbod terbuka di tepi tingkap gelap, dengan kotak hadiah kecil di belakangnya",
+      },
+    },
+    contentImages: {
+      stock: {
+        file: "becoming-a-reseller-agent-or-dropshipper-stock.webp",
+        mimeType: "image/webp",
+        alt: "A woman in a grey tank top and white trousers packing a small cardboard box on a table beside a larger open box, with a rack of colourful clothes behind her",
+        altTranslations: {
+          zh: "一位身穿灰色背心和白色长裤的女士在桌前包装一个小纸箱，旁边是一个较大的打开的纸箱，身后是一排色彩缤纷的衣服",
+          ms: "Seorang wanita berbaju tanpa lengan kelabu dan berseluar putih membungkus kotak kadbod kecil di atas meja bersebelahan kotak besar yang terbuka, dengan rak pakaian berwarna-warni di belakangnya",
+        },
+        after: "Never promise stock you have not confirmed with your supplier.",
+        afterTranslations: {
+          zh: "绝不要承诺您没有向供应商确认过的库存。",
+          ms: "Jangan sekali-kali menjanjikan stok yang belum anda sahkan dengan pembekal anda.",
+        },
+      },
+    },
+    excerpt:
+      "Selling products made by someone else can be a low-cost way to start, but it comes with real risks around quality, stock, scams, and your own legal duties as the seller. This guide helps Malaysians compare reseller, agent, and dropshipping models, check suppliers, agree margins and terms, handle returns, and avoid pyramid-style offers.",
+    body: `Many people start a business by selling something they did not make: a supplier's skincare line, a wholesaler's clothing, a factory's gadgets shipped directly to the customer. It needs less money than making a product, and you can start with a phone and a few photos.
+
+The catch is that you are putting your name, and your customers' trust, on something you do not control. If the stock is late, the quality is poor, or the supplier disappears, the customer blames you. Done carefully, reselling can be a good way to learn about selling. Done carelessly, it is an easy way to lose money and reputation.
+
+This is general information, not legal, tax, or financial advice. Licensing rules, consumer duties, and direct-selling regulations can change, and some details in this guide may be out of date. Confirm current requirements with the relevant authorities before you act.
+
+## 1. Understand how the models differ
+
+### Reseller
+A reseller buys stock at a wholesale price, holds it, and sells it at a higher price. You carry the stock risk but control packing, delivery, and customer experience.
+
+### Agent or distributor
+An agent sells on behalf of a brand or supplier, often with a defined territory, targets, and sometimes a commission instead of buying stock. The terms are set in an agreement, so read it carefully.
+
+### Dropshipper
+A dropshipper lists products and passes each order to a supplier who ships directly to the customer. You hold no stock, but you depend entirely on the supplier's speed and quality.
+
+### Direct-selling or network schemes
+Some companies recruit people to sell and to recruit others. Legitimate direct selling exists, but pyramid schemes are illegal, and later sections explain how to spot the difference.
+
+### Choose by risk and control
+Holding stock needs capital and storage. Dropshipping needs less capital but gives you less control. Pick the model that matches your money, time, and tolerance for risk.
+
+## 2. Pick products and suppliers carefully
+
+### Start with demand you can see
+Look for products that customers already search for and buy. Our guide on understanding your customers explains simple ways to check demand.
+
+### Check who the supplier really is
+Ask for the company name, registration details, address, and references, and look for reviews from other sellers. Be cautious of suppliers who only use anonymous chat accounts.
+
+### Order samples
+Buy samples before you list anything. Check quality, packaging, delivery time, and whether the product matches the photos.
+
+### Compare several suppliers
+Request quotes from more than one, and compare price, minimum order, delivery, returns, and support. Our guide on managing supplier relationships explains how to negotiate better terms.
+
+### Check the product is allowed
+Some goods need approvals, licences, or labelling, such as food, cosmetics, medicines, electrical goods, and health products. Confirm the current rules for your product with the relevant authority before you sell.
+
+## 3. Agree margins and terms in writing
+
+### Work out your true margin
+Start with the supplier price and add shipping, packaging, platform and payment fees, returns, advertising, and your time. Our guide on pricing products and services explains how to build up a price.
+
+### Know the minimum price rules
+Some suppliers set a minimum advertised price or forbid certain channels. Make sure you understand and can follow them.
+
+### Put the agreement in writing
+Record prices, minimum orders, delivery times, returns, payment terms, exclusivity, and how either side can end the arrangement. Our guide on contracts and terms for small businesses explains what to include.
+
+### Be clear about who bears which risk
+Decide who pays for damaged goods, wrong items, delays, and returns. Unclear terms are a common source of disputes.
+
+### Check payment terms and protect your deposit
+Avoid paying large sums upfront to a supplier you have not tested. Start with small orders and increase as trust builds.
+
+## 4. Handle stock and orders
+
+### Confirm availability
+Never promise stock you have not confirmed with your supplier. Check availability before you list a product and again before you confirm each order, because out-of-stock products create cancellations and bad reviews.
+
+### Track what you hold
+If you hold stock, keep a simple record of what comes in and goes out. Our guide on managing inventory and stock explains how.
+
+### Set honest delivery times
+Add the supplier's handling time and the courier's time, and tell customers the real total. Our guide on running deliveries explains courier choices.
+
+### Test the whole order flow
+Place an order yourself, from payment through to delivery and unboxing, so that you see what your customers see.
+
+### Keep records of every order
+Save order details, supplier confirmations, tracking numbers, and customer messages. They protect you if there is a dispute.
+
+## 5. Know your duties as the seller
+
+### The customer buys from you
+In the customer's eyes, you are the seller. If a product is faulty or not as described, you are the first person they will come to, whatever your supplier says.
+
+### Do not make claims you cannot support
+Do not repeat a supplier's health or performance claims unless you can back them up. Our guide on advertising claims and consumer protection explains what to avoid.
+
+### Show clear prices and information
+Make clear what the price covers and what is extra, and give accurate product details. Misleading price displays can cause trouble.
+
+### Understand refunds and returns
+Consumers have rights around faulty goods, and these can change, so check the current rules. Our guide on customer complaints, refunds, and consumer rights explains your duties.
+
+### Register your business properly
+Selling regularly for profit generally means you should register a business, and the right structure depends on your situation. Our guide on choosing a business structure explains the options, and you should confirm requirements with the Companies Commission of Malaysia (SSM).
+
+## 6. Avoid scams and pyramid-style offers
+
+### Be suspicious of easy money
+Promises of guaranteed income, fast riches, or "no work needed" are warning signs. Real businesses take effort.
+
+### Recognise pyramid features
+Be wary when the main reward comes from recruiting others rather than from selling real products to real customers, or when you must pay a large fee or buy a lot of stock to join. Pyramid schemes are prohibited under Malaysian law, and legitimate direct selling may need a licence, so check the details with the Ministry of Domestic Trade and Cost of Living.
+
+### Verify the company
+Check that the company is registered, ask for the relevant licence where one is required, and search for news and reviews. Our guide on cybersecurity for small businesses explains how to spot scams.
+
+### Protect yourself from advance-fee tricks
+Be careful with suppliers who demand repeated fees, insist on payments to personal accounts, or refuse to put terms in writing.
+
+### Walk away when the pressure rises
+A good supplier will let you take time to decide. Pressure to pay immediately is a reason to stop.
+
+## 7. Handle returns and quality problems
+
+### Agree a returns process with your supplier
+Know in advance who accepts returns, how long it takes, and who pays shipping. Write it into your agreement.
+
+### Keep customers informed
+Reply quickly when there is a problem, apologise, explain the next step, and follow through. Our guide on handling difficult customers and online reviews explains how to respond calmly.
+
+### Inspect when you can
+If you hold stock, check incoming goods before they go to customers. Catching a defect early costs less than a refund.
+
+### Track problem patterns
+If one product or supplier causes many complaints, drop it. Protecting your reputation matters more than one line of products.
+
+> When you resell, you are lending your name to someone else's product: choose suppliers as carefully as you would choose a business partner, because your customers will treat them as one.
+
+### Keep a backup supplier
+If one supplier runs out or closes, you need an alternative so that orders do not stop.
+
+## 8. Build a range customers trust
+
+### Start with a few products and learn
+A small, well-tested range is easier to manage than a long list of unknowns. Add new products only after the first ones run smoothly.
+
+### Build your own brand
+Your name, packaging, service, and content can set you apart from other sellers of the same item. Our guide on building a brand on a small budget explains how.
+
+### Collect honest reviews
+Ask satisfied customers for reviews within platform rules, and use feedback to improve. Our guide on selling through marketplaces and social commerce explains how to run your listings.
+
+### Keep good financial records
+Track your sales, costs, and profit per product, and set aside money for tax. Our guide on bookkeeping and accounting basics explains simple systems.
+
+### Know when to ask for help
+If you need help with registration, contracts, or accounts, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so that customers can find your business.
+
+## Common mistakes Malaysians make when reselling
+
+- **Trusting a supplier you have not tested.** Poor quality or late delivery lands on you, so order samples, start small, and put terms in writing.
+- **Promising stock you have not confirmed.** Cancellations and bad reviews follow, so check availability before listing and before confirming each order.
+- **Mistaking a pyramid-style offer for a business.** Recruiting-based schemes can be illegal and costly, so check the licence and the product, and walk away from pressure.
+
+## Where to start
+
+- **This week:** Choose the model you can manage, and shortlist three suppliers with their registration details.
+- **Next:** Order samples, compare quality and delivery, and work out your margin after all costs.
+- **Then:** Agree terms in writing, check any rules for your product, and register your business properly.
+- **Every quarter:** Review supplier performance, returns, and profit per product, and keep a backup supplier ready.
+
+Selling other people's products can be a sensible first step into business, as long as you choose partners carefully, protect your customers, and stay honest about what you are selling.`,
+    faqs: [
+      {
+        question: "What is the difference between a reseller, an agent, and a dropshipper?",
+        answer:
+          "A reseller buys stock and sells it at a higher price, so you hold the stock. An agent sells on behalf of a brand under an agreement, often for a commission. A dropshipper lists products and passes each order to a supplier who ships directly to the customer, so you hold no stock but depend on the supplier.",
+      },
+      {
+        question: "How do I check whether a supplier is trustworthy?",
+        answer:
+          "Ask for the company name, registration details, address, and references, look for reviews from other sellers, order samples, compare several suppliers, and start with small orders. Be cautious of suppliers who only use anonymous chat accounts or refuse to put terms in writing.",
+      },
+      {
+        question: "Do I need to register a business to resell products?",
+        answer:
+          "Selling regularly for profit generally means you should register a business, and the right structure depends on your situation. Confirm the current requirements with the Companies Commission of Malaysia (SSM) and ask an accountant if you are unsure.",
+      },
+      {
+        question: "Am I responsible if the supplier's product is faulty?",
+        answer:
+          "In the customer's eyes you are the seller, so they will come to you first. Consumers have rights around faulty goods, and these can change, so check the current rules, agree a returns process with your supplier, and do not repeat claims you cannot support.",
+      },
+      {
+        question: "How do I tell a legitimate direct-selling business from a pyramid scheme?",
+        answer:
+          "Be wary when the main reward comes from recruiting others rather than selling real products to real customers, or when you must pay a large fee or buy lots of stock to join. Pyramid schemes are prohibited under Malaysian law, and legitimate direct selling may need a licence, so check with the Ministry of Domestic Trade and Cost of Living.",
+      },
+      {
+        question: "Do I need approvals to sell certain products?",
+        answer:
+          "Some goods, such as food, cosmetics, medicines, electrical goods, and health products, may need approvals, licences, or specific labelling. Confirm the current rules for your product with the relevant authority before you sell.",
+      },
+      {
+        question: "How do I price products I resell?",
+        answer:
+          "Start with the supplier price and add shipping, packaging, platform and payment fees, returns, advertising, and your time to find your true cost. Then check any minimum advertised price rules from the supplier, and compare with the market.",
+      },
+      {
+        question: "What should I do if my supplier runs out of stock or disappears?",
+        answer:
+          "Check availability before listing and before confirming each order, keep a backup supplier, tell affected customers quickly, and offer a refund or alternative. Keeping records of orders and supplier messages protects you in a dispute.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "成为经销商、代理或一件代发卖家：在马来西亚安全地销售他人的产品",
+        excerpt:
+          "销售他人制造的产品可以是低成本的起步方式，但在品质、库存、骗局以及您作为卖家的法律责任方面都有实在的风险。本指南帮助马来西亚人比较经销商、代理和一件代发模式，查验供应商，约定利润和条款，处理退货，并避开金字塔式的提议。",
+        body: `许多人创业是从销售自己没有制造的东西开始的：供应商的护肤系列、批发商的服装、工厂直接寄给顾客的小玩意。它所需的资金比制造产品少，您可以用一部手机和几张照片起步。
+
+问题在于，您把自己的名字和顾客的信任放在一样您无法掌控的东西上。如果库存延迟、品质不佳或供应商消失，顾客会怪您。谨慎地做，转售可以是学习销售的好方法。草率地做，则是轻易亏钱和损害声誉的方式。
+
+本文仅提供一般信息，并非法律、税务或财务建议。执照规定、消费者责任和直销规定可能变化，本指南的部分细节可能已经过时。在采取行动之前，请向相关主管单位确认现行要求。
+
+## 1. 了解各种模式的差别
+
+### 经销商
+经销商以批发价买入库存、持有，并以较高价格出售。您承担库存风险，但掌控打包、送货和顾客体验。
+
+### 代理或分销商
+代理代表品牌或供应商销售，往往有指定的区域、目标，有时以佣金代替买入库存。条款订在协议里，所以请仔细阅读。
+
+### 一件代发卖家
+一件代发卖家列出产品，并把每份订单交给直接寄给顾客的供应商。您不持有库存，但完全依赖供应商的速度和品质。
+
+### 直销或网络式计划
+有些公司招募人来销售并招募他人。合法的直销是存在的，但金字塔式骗局是违法的，后面的章节解释如何辨别差别。
+
+### 按风险和掌控程度选择
+持有库存需要资金和存放空间。一件代发需要的资金较少，却让您的掌控较少。选择与您的资金、时间和风险承受力相配的模式。
+
+## 2. 谨慎挑选产品和供应商
+
+### 从您看得到的需求开始
+寻找顾客已经在搜索和购买的产品。我们关于了解您的顾客的指南解释了查验需求的简单方法。
+
+### 查清供应商究竟是谁
+索取公司名称、注册资料、地址和推荐人，并查看其他卖家的评价。对只使用匿名聊天账号的供应商要小心。
+
+### 订购样品
+在上架任何东西之前先买样品。检查品质、包装、送货时间，以及产品是否与照片相符。
+
+### 比较多家供应商
+向不止一家索取报价，并比较价格、最低订购量、送货、退货和支援。我们关于管理供应商关系的指南解释了如何谈到更好的条件。
+
+### 查明产品是否被允许
+有些商品需要批准、执照或标签，例如食品、化妆品、药品、电器和保健品。在销售之前，请向相关主管单位确认您产品的现行规定。
+
+## 3. 以书面约定利润和条款
+
+### 算出您的真实利润率
+从供应商价格开始，加上运费、包装、平台和付款费用、退货、广告和您的时间。我们关于产品和服务定价的指南解释了如何构建价格。
+
+### 了解最低价格的规定
+有些供应商订有最低广告价格，或禁止某些渠道。确保您理解并能够遵守。
+
+### 把协议写下来
+记录价格、最低订购量、送货时间、退货、付款条件、独家权利，以及任何一方如何终止这项安排。我们关于小企业合约与条款的指南解释了应包括什么。
+
+### 说清楚谁承担哪些风险
+决定谁为损坏的货品、错误的商品、延误和退货付款。不清楚的条款是纠纷的常见来源。
+
+### 查看付款条件并保护您的订金
+避免向您没有测试过的供应商预付大笔款项。从小订单开始，随着信任建立再增加。
+
+## 4. 处理库存和订单
+
+### 确认供货情况
+绝不要承诺您没有向供应商确认过的库存。在上架产品之前以及确认每份订单之前，都要检查供货情况，因为缺货的产品会造成取消订单和差评。
+
+### 追踪您持有的东西
+如果您持有库存，请简单记录进出的东西。我们关于管理存货的指南解释了如何做。
+
+### 设定诚实的送货时间
+把供应商的处理时间和快递的时间加起来，并告诉顾客真实的总时间。我们关于经营送货的指南解释了快递的选择。
+
+### 测试整个订单流程
+亲自下一份订单，从付款到送货和开箱，让您看到顾客所看到的。
+
+### 保存每份订单的记录
+保存订单详情、供应商确认、追踪号码和顾客讯息。出现纠纷时它们会保护您。
+
+## 5. 了解您作为卖家的责任
+
+### 顾客是向您购买
+在顾客眼中，您就是卖家。如果产品有缺陷或与描述不符，无论您的供应商怎么说，您都是他们第一个找的人。
+
+### 不要做出您无法证明的宣称
+除非您能证明，否则不要重复供应商的健康或效能宣称。我们关于广告宣称和消费者保护的指南解释了应该避免什么。
+
+### 显示清楚的价格和信息
+说明价格涵盖什么、哪些是额外的，并提供准确的产品详情。误导性的价格标示可能惹上麻烦。
+
+### 了解退款和退货
+消费者在有缺陷的商品方面享有权益，这些可能会变化，所以请查看现行规定。我们关于顾客投诉、退款和消费者权益的指南解释了您的责任。
+
+### 妥善注册您的业务
+经常为牟利而销售，通常意味着您应该注册业务，合适的结构取决于您的情况。我们关于选择业务结构的指南解释了各种选择，您也应向马来西亚公司委员会（SSM）确认要求。
+
+## 6. 避开骗局和金字塔式的提议
+
+### 对轻松赚钱保持怀疑
+对保证收入、快速致富或“不用工作”的承诺，都是警讯。真正的生意需要付出努力。
+
+### 认出金字塔式的特征
+当主要的回报来自招募他人，而不是向真实的顾客销售真实的产品，或您必须缴付大笔费用或买入大量库存才能加入时，要提高警觉。金字塔式骗局在马来西亚法律下是被禁止的，合法的直销可能需要执照，所以请向国内贸易及生活成本部查明细节。
+
+### 查验公司
+检查公司是否已注册，在需要时索取相关执照，并搜索新闻和评价。我们关于小企业网络安全的指南解释了如何识别骗局。
+
+### 保护自己免受预付费用的伎俩
+对要求重复缴费、坚持把款项汇入个人账户或拒绝把条款写下来的供应商要小心。
+
+### 压力上升时就走开
+好的供应商会让您花时间决定。要求您立即付款的压力，就是该停下来的理由。
+
+## 7. 处理退货和品质问题
+
+### 与供应商约定退货流程
+事先知道谁接受退货、需要多久，以及谁支付运费。把它写进您的协议。
+
+### 让顾客随时了解情况
+出问题时迅速回复，道歉，说明下一步，并且做到。我们关于处理难缠顾客和网络评价的指南解释了如何冷静地回应。
+
+### 可能时进行检查
+如果您持有库存，请在货品送到顾客手中之前检查到货。及早发现缺陷的成本比退款低。
+
+### 追踪问题的规律
+如果某个产品或供应商造成许多投诉，就放弃它。保护您的声誉比某一条产品线更重要。
+
+> 当您转售时，您是把自己的名字借给别人的产品：选择供应商要像选择商业伙伴一样谨慎，因为您的顾客会把他们当作一体。
+
+### 保留备用供应商
+如果某个供应商缺货或结业，您需要有替代方案，让订单不会中断。
+
+## 8. 建立顾客信任的产品系列
+
+### 从少数几样产品开始并学习
+一个小而经过充分测试的系列，比一长串未知的产品更容易管理。只有在最初的产品运作顺畅之后，才增加新产品。
+
+### 建立您自己的品牌
+您的名称、包装、服务和内容，可以让您与销售同一件商品的其他卖家区别开来。我们关于以小预算打造品牌的指南解释了如何做。
+
+### 收集诚实的评价
+在平台规定的范围内向满意的顾客请求评价，并利用反馈改进。我们关于通过电商平台与社交电商销售的指南解释了如何经营您的商品页。
+
+### 保持良好的财务记录
+追踪每件产品的销售、成本和利润，并为税务预留资金。我们关于簿记与会计基础的指南解释了简单的系统。
+
+### 知道何时求助
+如果您在注册、合约或账目方面需要协助，您可以[浏览名录](/zh)寻找附近的专业人士，并[创建免费商家列表](/zh/signup)，让顾客找到您的业务。
+
+## 马来西亚人在转售时常犯的错误
+
+- **信任没有测试过的供应商。** 品质差或延迟送货会落到您头上，所以请订购样品、从小处开始，并把条款写下来。
+- **承诺没有确认过的库存。** 随之而来的是取消订单和差评，所以请在上架之前以及确认每份订单之前检查供货情况。
+- **把金字塔式的提议误认为生意。** 以招募为基础的计划可能违法且代价高昂，所以请查看执照和产品，并在压力面前走开。
+
+## 从哪里开始
+
+- **本周：** 选择您能管理的模式，并列出三家供应商及其注册资料。
+- **接着：** 订购样品，比较品质和送货，并算出扣除所有成本后的利润率。
+- **然后：** 以书面约定条款，查明您产品适用的规定，并妥善注册您的业务。
+- **每季度：** 检讨供应商的表现、退货和每件产品的利润，并随时备有一家备用供应商。
+
+销售他人的产品可以是踏入商业的明智第一步，只要您谨慎选择伙伴、保护您的顾客，并对您所销售的东西保持诚实。`,
+        faqs: [
+          {
+            question: "经销商、代理和一件代发卖家有什么区别？",
+            answer:
+              "经销商买入库存并以较高价格出售，所以您持有库存。代理依协议代表品牌销售，往往赚取佣金。一件代发卖家列出产品，并把每份订单交给直接寄给顾客的供应商，所以您不持有库存，但依赖供应商。",
+          },
+          {
+            question: "我如何查验供应商是否值得信赖？",
+            answer:
+              "索取公司名称、注册资料、地址和推荐人，查看其他卖家的评价，订购样品，比较多家供应商，并从小订单开始。对只使用匿名聊天账号或拒绝把条款写下来的供应商要小心。",
+          },
+          {
+            question: "转售产品需要注册业务吗？",
+            answer:
+              "经常为牟利而销售，通常意味着您应该注册业务，合适的结构取决于您的情况。请向马来西亚公司委员会（SSM）确认现行要求，如不确定，请教会计师。",
+          },
+          {
+            question: "如果供应商的产品有缺陷，我要负责吗？",
+            answer:
+              "在顾客眼中您就是卖家，所以他们会先找您。消费者在有缺陷的商品方面享有权益，这些可能会变化，所以请查看现行规定，与供应商约定退货流程，并且不要重复您无法证明的宣称。",
+          },
+          {
+            question: "我如何区分合法的直销业务和金字塔式骗局？",
+            answer:
+              "当主要的回报来自招募他人，而不是向真实的顾客销售真实的产品，或您必须缴付大笔费用或买入大量库存才能加入时，要提高警觉。金字塔式骗局在马来西亚法律下是被禁止的，合法的直销可能需要执照，所以请向国内贸易及生活成本部查询。",
+          },
+          {
+            question: "销售某些产品需要批准吗？",
+            answer:
+              "有些商品，例如食品、化妆品、药品、电器和保健品，可能需要批准、执照或特定的标签。在销售之前，请向相关主管单位确认您产品的现行规定。",
+          },
+          {
+            question: "我如何为转售的产品定价？",
+            answer:
+              "从供应商价格开始，加上运费、包装、平台和付款费用、退货、广告和您的时间，得出您的真实成本。然后查看供应商订下的任何最低广告价格规定，并与市场比较。",
+          },
+          {
+            question: "如果供应商缺货或消失了，我该怎么办？",
+            answer:
+              "在上架之前以及确认每份订单之前检查供货情况，保留一家备用供应商，迅速告知受影响的顾客，并提供退款或替代品。保存订单和供应商讯息的记录，在纠纷中会保护您。",
+          },
+        ],
+      },
+      ms: {
+        title: "Menjadi Penjual Semula, Ejen atau Dropshipper: Mencari dan Menjual Produk Orang Lain dengan Selamat di Malaysia",
+        excerpt:
+          "Menjual produk yang dibuat oleh orang lain boleh menjadi cara permulaan yang murah, tetapi ia membawa risiko sebenar tentang kualiti, stok, penipuan dan tanggungjawab undang-undang anda sendiri sebagai penjual. Panduan ini membantu rakyat Malaysia membandingkan model penjual semula, ejen dan dropship, menyemak pembekal, bersetuju tentang margin dan terma, mengendalikan pemulangan, dan mengelak tawaran bergaya piramid.",
+        body: `Ramai orang memulakan perniagaan dengan menjual sesuatu yang mereka tidak buat: barisan penjagaan kulit pembekal, pakaian pemborong, gajet kilang yang dihantar terus kepada pelanggan. Ia memerlukan kurang wang daripada membuat produk, dan anda boleh bermula dengan telefon dan beberapa foto.
+
+Tangkapnya ialah anda meletakkan nama anda, dan kepercayaan pelanggan anda, pada sesuatu yang anda tidak kawal. Jika stok lewat, kualiti buruk atau pembekal hilang, pelanggan menyalahkan anda. Jika dilakukan dengan teliti, penjualan semula boleh menjadi cara yang baik untuk belajar tentang jualan. Jika dilakukan dengan cuai, ia cara mudah untuk kehilangan wang dan reputasi.
+
+Ini maklumat umum, bukan nasihat undang-undang, cukai atau kewangan. Peraturan pelesenan, tanggungjawab pengguna dan peraturan jualan langsung boleh berubah, dan sebahagian butiran dalam panduan ini mungkin sudah lapuk. Sahkan keperluan semasa dengan pihak berkuasa berkaitan sebelum anda bertindak.
+
+## 1. Fahami bagaimana model-model itu berbeza
+
+### Penjual semula
+Penjual semula membeli stok pada harga borong, menyimpannya, dan menjualnya pada harga lebih tinggi. Anda menanggung risiko stok tetapi mengawal pembungkusan, penghantaran dan pengalaman pelanggan.
+
+### Ejen atau pengedar
+Ejen menjual bagi pihak jenama atau pembekal, sering dengan wilayah tertentu, sasaran, dan kadangkala komisen dan bukan membeli stok. Terma ditetapkan dalam perjanjian, jadi bacalah dengan teliti.
+
+### Dropshipper
+Dropshipper menyenaraikan produk dan menyerahkan setiap pesanan kepada pembekal yang menghantar terus kepada pelanggan. Anda tidak menyimpan stok, tetapi anda bergantung sepenuhnya pada kelajuan dan kualiti pembekal.
+
+### Jualan langsung atau skim rangkaian
+Sesetengah syarikat merekrut orang untuk menjual dan merekrut orang lain. Jualan langsung yang sah wujud, tetapi skim piramid adalah haram, dan bahagian kemudian menerangkan cara mengesan perbezaannya.
+
+### Pilih mengikut risiko dan kawalan
+Menyimpan stok memerlukan modal dan ruang simpanan. Dropshipping memerlukan kurang modal tetapi memberi anda kurang kawalan. Pilih model yang sepadan dengan wang, masa dan toleransi risiko anda.
+
+## 2. Pilih produk dan pembekal dengan teliti
+
+### Mulakan dengan permintaan yang boleh anda lihat
+Cari produk yang sudah dicari dan dibeli pelanggan. Panduan kami tentang memahami pelanggan anda menerangkan cara mudah untuk menyemak permintaan.
+
+### Semak siapa pembekal sebenarnya
+Minta nama syarikat, butiran pendaftaran, alamat dan rujukan, dan cari ulasan daripada penjual lain. Berhati-hati dengan pembekal yang hanya menggunakan akaun sembang tanpa nama.
+
+### Pesan sampel
+Beli sampel sebelum anda menyenaraikan apa-apa. Semak kualiti, pembungkusan, masa penghantaran, dan sama ada produk sepadan dengan foto.
+
+### Bandingkan beberapa pembekal
+Minta sebut harga daripada lebih daripada satu, dan bandingkan harga, pesanan minimum, penghantaran, pemulangan dan sokongan. Panduan kami tentang menguruskan hubungan pembekal menerangkan cara berunding untuk terma yang lebih baik.
+
+### Semak sama ada produk dibenarkan
+Sesetengah barangan memerlukan kelulusan, lesen atau pelabelan, seperti makanan, kosmetik, ubat, barangan elektrik dan produk kesihatan. Sahkan peraturan semasa untuk produk anda dengan pihak berkuasa berkaitan sebelum anda menjual.
+
+## 3. Persetujui margin dan terma secara bertulis
+
+### Kira margin sebenar anda
+Mulakan dengan harga pembekal dan tambah penghantaran, pembungkusan, fi platform dan pembayaran, pemulangan, pengiklanan dan masa anda. Panduan kami tentang menetapkan harga produk dan perkhidmatan menerangkan cara membina harga.
+
+### Ketahui peraturan harga minimum
+Sesetengah pembekal menetapkan harga iklan minimum atau melarang saluran tertentu. Pastikan anda memahami dan boleh mematuhinya.
+
+### Letakkan perjanjian secara bertulis
+Rekodkan harga, pesanan minimum, masa penghantaran, pemulangan, syarat pembayaran, eksklusiviti, dan bagaimana mana-mana pihak boleh menamatkan pengaturan itu. Panduan kami tentang kontrak dan terma untuk perniagaan kecil menerangkan apa yang perlu disertakan.
+
+### Jelas tentang siapa menanggung risiko yang mana
+Tentukan siapa membayar untuk barang rosak, item salah, kelewatan dan pemulangan. Terma yang tidak jelas ialah punca pertikaian yang biasa.
+
+### Semak syarat pembayaran dan lindungi deposit anda
+Elakkan membayar jumlah besar terlebih dahulu kepada pembekal yang belum anda uji. Mulakan dengan pesanan kecil dan tingkatkan apabila kepercayaan terbina.
+
+## 4. Kendalikan stok dan pesanan
+
+### Sahkan ketersediaan
+Jangan sekali-kali menjanjikan stok yang belum anda sahkan dengan pembekal anda. Semak ketersediaan sebelum anda menyenaraikan produk dan sekali lagi sebelum anda mengesahkan setiap pesanan, kerana produk kehabisan stok mewujudkan pembatalan dan ulasan buruk.
+
+### Jejaki apa yang anda simpan
+Jika anda menyimpan stok, simpan rekod mudah tentang apa yang masuk dan keluar. Panduan kami tentang menguruskan inventori dan stok menerangkan caranya.
+
+### Tetapkan masa penghantaran yang jujur
+Tambah masa pengendalian pembekal dan masa kurier, dan beritahu pelanggan jumlah sebenar. Panduan kami tentang menjalankan penghantaran menerangkan pilihan kurier.
+
+### Uji keseluruhan aliran pesanan
+Buat pesanan sendiri, dari pembayaran hingga penghantaran dan membuka bungkusan, supaya anda melihat apa yang dilihat pelanggan anda.
+
+### Simpan rekod setiap pesanan
+Simpan butiran pesanan, pengesahan pembekal, nombor penjejakan dan mesej pelanggan. Ia melindungi anda jika berlaku pertikaian.
+
+## 5. Ketahui tanggungjawab anda sebagai penjual
+
+### Pelanggan membeli daripada anda
+Pada pandangan pelanggan, anda ialah penjual. Jika produk rosak atau tidak seperti yang diterangkan, anda orang pertama yang akan mereka datangi, apa pun kata pembekal anda.
+
+### Jangan membuat dakwaan yang tidak dapat anda sokong
+Jangan ulang dakwaan kesihatan atau prestasi pembekal melainkan anda boleh menyokongnya. Panduan kami tentang dakwaan pengiklanan dan perlindungan pengguna menerangkan apa yang perlu dielakkan.
+
+### Tunjukkan harga dan maklumat yang jelas
+Jelaskan apa yang diliputi harga dan apa yang tambahan, dan berikan butiran produk yang tepat. Paparan harga yang mengelirukan boleh menimbulkan masalah.
+
+### Fahami bayaran balik dan pemulangan
+Pengguna mempunyai hak berkaitan barang rosak, dan ini boleh berubah, jadi semak peraturan semasa. Panduan kami tentang aduan pelanggan, bayaran balik dan hak pengguna menerangkan tanggungjawab anda.
+
+### Daftarkan perniagaan anda dengan betul
+Menjual secara berkala untuk keuntungan umumnya bermakna anda patut mendaftarkan perniagaan, dan struktur yang betul bergantung pada keadaan anda. Panduan kami tentang memilih struktur perniagaan menerangkan pilihan yang ada, dan anda patut mengesahkan keperluan dengan Suruhanjaya Syarikat Malaysia (SSM).
+
+## 6. Elakkan penipuan dan tawaran bergaya piramid
+
+### Curigai wang mudah
+Janji pendapatan terjamin, kaya cepat atau "tidak perlu kerja" ialah tanda amaran. Perniagaan sebenar memerlukan usaha.
+
+### Kenali ciri piramid
+Berwaspada apabila ganjaran utama datang daripada merekrut orang lain dan bukan daripada menjual produk sebenar kepada pelanggan sebenar, atau apabila anda mesti membayar fi besar atau membeli banyak stok untuk menyertai. Skim piramid dilarang di bawah undang-undang Malaysia, dan jualan langsung yang sah mungkin memerlukan lesen, jadi semak butirannya dengan Kementerian Perdagangan Dalam Negeri dan Kos Sara Hidup.
+
+### Sahkan syarikat itu
+Semak bahawa syarikat itu berdaftar, minta lesen berkaitan jika ia dikehendaki, dan cari berita serta ulasan. Panduan kami tentang keselamatan siber untuk perniagaan kecil menerangkan cara mengesan penipuan.
+
+### Lindungi diri daripada helah bayaran pendahuluan
+Berhati-hati dengan pembekal yang menuntut fi berulang, mendesak pembayaran ke akaun peribadi atau enggan meletakkan terma secara bertulis.
+
+### Berundur apabila tekanan meningkat
+Pembekal yang baik akan membenarkan anda mengambil masa untuk membuat keputusan. Tekanan untuk membayar serta-merta ialah sebab untuk berhenti.
+
+## 7. Kendalikan pemulangan dan masalah kualiti
+
+### Persetujui proses pemulangan dengan pembekal anda
+Ketahui lebih awal siapa menerima pemulangan, berapa lama ia mengambil masa, dan siapa membayar penghantaran. Tuliskannya dalam perjanjian anda.
+
+### Maklumkan pelanggan
+Balas dengan cepat apabila ada masalah, mohon maaf, terangkan langkah seterusnya, dan teruskan. Panduan kami tentang menangani pelanggan sukar dan ulasan dalam talian menerangkan cara membalas dengan tenang.
+
+### Periksa apabila boleh
+Jika anda menyimpan stok, semak barang yang masuk sebelum ia pergi kepada pelanggan. Menangkap kecacatan awal lebih murah daripada bayaran balik.
+
+### Jejaki corak masalah
+Jika satu produk atau pembekal menyebabkan banyak aduan, gugurkannya. Melindungi reputasi anda lebih penting daripada satu barisan produk.
+
+> Apabila anda menjual semula, anda meminjamkan nama anda kepada produk orang lain: pilih pembekal dengan teliti seperti anda memilih rakan kongsi perniagaan, kerana pelanggan anda akan menganggap mereka sebagai satu.
+
+### Simpan pembekal sandaran
+Jika satu pembekal kehabisan atau menutup, anda memerlukan alternatif supaya pesanan tidak berhenti.
+
+## 8. Bina julat yang dipercayai pelanggan
+
+### Mulakan dengan beberapa produk dan belajar
+Julat kecil yang diuji dengan baik lebih mudah diuruskan daripada senarai panjang yang tidak diketahui. Tambah produk baharu hanya selepas yang pertama berjalan lancar.
+
+### Bina jenama anda sendiri
+Nama, pembungkusan, perkhidmatan dan kandungan anda boleh membezakan anda daripada penjual lain bagi item yang sama. Panduan kami tentang membina jenama dengan bajet kecil menerangkan caranya.
+
+### Kumpulkan ulasan yang jujur
+Minta ulasan daripada pelanggan yang berpuas hati dalam peraturan platform, dan gunakan maklum balas untuk memperbaiki. Panduan kami tentang menjual melalui pasar dalam talian dan perdagangan sosial menerangkan cara menjalankan penyenaraian anda.
+
+### Simpan rekod kewangan yang baik
+Jejaki jualan, kos dan keuntungan anda bagi setiap produk, dan ketepikan wang untuk cukai. Panduan kami tentang asas simpan kira dan perakaunan menerangkan sistem yang mudah.
+
+### Ketahui bila hendak meminta bantuan
+Jika anda memerlukan bantuan dengan pendaftaran, kontrak atau akaun, anda boleh [layari direktori](/ms) untuk profesional berhampiran anda, dan [cipta penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan dapat menemui perniagaan anda.
+
+## Kesilapan biasa rakyat Malaysia apabila menjual semula
+
+- **Mempercayai pembekal yang belum diuji.** Kualiti buruk atau penghantaran lewat jatuh ke atas anda, jadi pesan sampel, mulakan kecil dan tuliskan terma.
+- **Menjanjikan stok yang belum disahkan.** Pembatalan dan ulasan buruk menyusul, jadi semak ketersediaan sebelum menyenaraikan dan sebelum mengesahkan setiap pesanan.
+- **Tersalah anggap tawaran bergaya piramid sebagai perniagaan.** Skim berasaskan perekrutan boleh menjadi haram dan mahal, jadi semak lesen dan produk, dan berundur daripada tekanan.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Pilih model yang boleh anda uruskan, dan senarai pendek tiga pembekal dengan butiran pendaftaran mereka.
+- **Seterusnya:** Pesan sampel, bandingkan kualiti dan penghantaran, dan kira margin anda selepas semua kos.
+- **Kemudian:** Persetujui terma secara bertulis, semak sebarang peraturan untuk produk anda, dan daftarkan perniagaan anda dengan betul.
+- **Setiap suku tahun:** Semak prestasi pembekal, pemulangan dan keuntungan bagi setiap produk, dan sediakan pembekal sandaran.
+
+Menjual produk orang lain boleh menjadi langkah pertama yang bijak ke dalam perniagaan, selagi anda memilih rakan dengan teliti, melindungi pelanggan anda, dan kekal jujur tentang apa yang anda jual.`,
+        faqs: [
+          {
+            question: "Apakah perbezaan antara penjual semula, ejen dan dropshipper?",
+            answer:
+              "Penjual semula membeli stok dan menjualnya pada harga lebih tinggi, jadi anda menyimpan stok. Ejen menjual bagi pihak jenama di bawah perjanjian, sering untuk komisen. Dropshipper menyenaraikan produk dan menyerahkan setiap pesanan kepada pembekal yang menghantar terus kepada pelanggan, jadi anda tidak menyimpan stok tetapi bergantung pada pembekal.",
+          },
+          {
+            question: "Bagaimanakah saya menyemak sama ada pembekal boleh dipercayai?",
+            answer:
+              "Minta nama syarikat, butiran pendaftaran, alamat dan rujukan, cari ulasan daripada penjual lain, pesan sampel, bandingkan beberapa pembekal, dan mulakan dengan pesanan kecil. Berhati-hati dengan pembekal yang hanya menggunakan akaun sembang tanpa nama atau enggan meletakkan terma secara bertulis.",
+          },
+          {
+            question: "Adakah saya perlu mendaftarkan perniagaan untuk menjual semula produk?",
+            answer:
+              "Menjual secara berkala untuk keuntungan umumnya bermakna anda patut mendaftarkan perniagaan, dan struktur yang betul bergantung pada keadaan anda. Sahkan keperluan semasa dengan Suruhanjaya Syarikat Malaysia (SSM) dan tanya akauntan jika anda tidak pasti.",
+          },
+          {
+            question: "Adakah saya bertanggungjawab jika produk pembekal rosak?",
+            answer:
+              "Pada pandangan pelanggan anda ialah penjual, jadi mereka akan datang kepada anda dahulu. Pengguna mempunyai hak berkaitan barang rosak, dan ini boleh berubah, jadi semak peraturan semasa, persetujui proses pemulangan dengan pembekal anda, dan jangan ulang dakwaan yang tidak dapat anda sokong.",
+          },
+          {
+            question: "Bagaimanakah saya membezakan perniagaan jualan langsung yang sah daripada skim piramid?",
+            answer:
+              "Berwaspada apabila ganjaran utama datang daripada merekrut orang lain dan bukan menjual produk sebenar kepada pelanggan sebenar, atau apabila anda mesti membayar fi besar atau membeli banyak stok untuk menyertai. Skim piramid dilarang di bawah undang-undang Malaysia, dan jualan langsung yang sah mungkin memerlukan lesen, jadi semak dengan Kementerian Perdagangan Dalam Negeri dan Kos Sara Hidup.",
+          },
+          {
+            question: "Adakah saya memerlukan kelulusan untuk menjual produk tertentu?",
+            answer:
+              "Sesetengah barangan, seperti makanan, kosmetik, ubat, barangan elektrik dan produk kesihatan, mungkin memerlukan kelulusan, lesen atau pelabelan khusus. Sahkan peraturan semasa untuk produk anda dengan pihak berkuasa berkaitan sebelum anda menjual.",
+          },
+          {
+            question: "Bagaimanakah saya menetapkan harga produk yang saya jual semula?",
+            answer:
+              "Mulakan dengan harga pembekal dan tambah penghantaran, pembungkusan, fi platform dan pembayaran, pemulangan, pengiklanan dan masa anda untuk mendapatkan kos sebenar. Kemudian semak sebarang peraturan harga iklan minimum daripada pembekal, dan bandingkan dengan pasaran.",
+          },
+          {
+            question: "Apakah yang patut saya lakukan jika pembekal saya kehabisan stok atau hilang?",
+            answer:
+              "Semak ketersediaan sebelum menyenaraikan dan sebelum mengesahkan setiap pesanan, simpan pembekal sandaran, maklumkan pelanggan yang terjejas dengan segera, dan tawarkan bayaran balik atau alternatif. Menyimpan rekod pesanan dan mesej pembekal melindungi anda dalam pertikaian.",
+          },
+        ],
+      },
+    },
+  },
 ];
