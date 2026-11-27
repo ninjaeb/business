@@ -15,18 +15,16 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Budgeting and Forecasting for Small Businesses: Simple Monthly Budgets and Cash Forecasts for Malaysian SMEs**
-   — Why a budget beats guesswork, building a simple monthly budget from past
-   numbers, forecasting sales with ranges rather than one figure, fixed
-   versus variable costs, setting aside money for tax and statutory
-   contributions (to hedge, confirm current rules), seasonal swings, comparing
-   budget with actuals each month, adjusting when things change, and when to
-   ask an accountant for help.
+1. **Giving Employee Feedback and Running Simple Performance Reviews: Keeping Your Team Motivated at Your Malaysian SME**
+   — Why regular feedback beats an annual surprise, setting clear
+   expectations, everyday praise and correction, a short one-to-one rhythm,
+   a simple written review, handling underperformance fairly and keeping
+   records (to hedge, confirm current employment rules), linking feedback to
+   training and growth, recognising good work, and avoiding bias.
 
-2. **Becoming a Reseller, Agent, or Dropshipper: Sourcing and Selling Other People's Products Safely in Malaysia**
-   — How reseller, agent, and dropship models differ, choosing and checking
-   suppliers, agreements and margins, stock and delivery responsibilities,
-   product claims and consumer duties as the seller (to hedge, confirm
-   current rules), handling returns and quality problems, avoiding scams and
-   pyramid-style offers, registering the business, and growing a trusted
-   range.
+2. **Payroll Basics and Staff Scheduling: Paying People Correctly and Planning Shifts for Malaysian SMEs**
+   — Setting up a simple payroll routine, pay slips and records, overtime,
+   public holidays and rest days (to hedge, confirm current rules),
+   statutory deductions and their due dates (to hedge), building a fair shift
+   roster, handling leave and absences, avoiding common payroll errors, and
+   when to use software or an outsourced payroll service.

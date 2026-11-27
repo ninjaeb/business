@@ -929,23 +929,25 @@
       "id": 5915144,
       "tags": [
         "finance",
-        "debt",
-        "calculator",
-        "documents"
+        "budget",
+        "planning",
+        "notebook",
+        "asian"
       ],
-      "description": "Asian businesswoman in glasses reviewing documents with a calculator",
-      "usedBy": "business-debt-cover.webp"
+      "description": "Woman in glasses and a polka-dot blouse writing notes beside a calculator and loose sheets of drawings",
+      "usedBy": "budgeting-and-forecasting-for-small-businesses-review.webp"
     },
     {
       "id": 7654445,
       "tags": [
         "finance",
-        "debt",
+        "budget",
         "calculator",
+        "asian",
         "desk"
       ],
-      "description": "Professional Asian woman in a blazer using a calculator at a desk",
-      "usedBy": "business-debt-calculator.webp"
+      "description": "Young woman in glasses and a blazer using a calculator beside a clipboard of forms at a wooden desk",
+      "usedBy": "budgeting-and-forecasting-for-small-businesses-cover.webp"
     },
     {
       "id": 6650011,
@@ -1650,6 +1652,28 @@
       ],
       "description": "Woman in a cream headscarf presenting a product card to a phone on a ring light stand",
       "usedBy": "selling-through-marketplaces-and-social-commerce-cover.webp"
+    },
+    {
+      "id": 7857535,
+      "tags": [
+        "reseller",
+        "stock",
+        "packing",
+        "clothing-rack"
+      ],
+      "description": "Woman packing a small cardboard box beside an open larger box and a rack of colourful clothes",
+      "usedBy": "becoming-a-reseller-agent-or-dropshipper-stock.webp"
+    },
+    {
+      "id": 7310094,
+      "tags": [
+        "reseller",
+        "packing",
+        "clothing",
+        "shipping"
+      ],
+      "description": "Woman placing a folded white t-shirt into an open cardboard box by a window",
+      "usedBy": "becoming-a-reseller-agent-or-dropshipper-cover.webp"
     }
   ]
 }
