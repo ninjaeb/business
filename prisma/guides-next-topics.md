@@ -15,16 +15,17 @@ Routine prompt for the full process). Each daily cycle:
 
 ## Queued for the next cycle
 
-1. **Giving Employee Feedback and Running Simple Performance Reviews: Keeping Your Team Motivated at Your Malaysian SME**
-   — Why regular feedback beats an annual surprise, setting clear
-   expectations, everyday praise and correction, a short one-to-one rhythm,
-   a simple written review, handling underperformance fairly and keeping
-   records (to hedge, confirm current employment rules), linking feedback to
-   training and growth, recognising good work, and avoiding bias.
+1. **Email and Messaging Marketing: Building a Consent-Based List and Sending Campaigns That Work for Malaysian SMEs**
+   — Why owning your contact list matters, collecting contacts with clear
+   consent and PDPA awareness (to hedge, confirm current rules), choosing
+   email versus chat broadcasts, simple welcome and promotion sequences,
+   writing subject lines and calls to action, timing and frequency, unsub-
+   scribe handling, measuring opens and sales honestly, and avoiding spam
+   complaints.
 
-2. **Payroll Basics and Staff Scheduling: Paying People Correctly and Planning Shifts for Malaysian SMEs**
-   — Setting up a simple payroll routine, pay slips and records, overtime,
-   public holidays and rest days (to hedge, confirm current rules),
-   statutory deductions and their due dates (to hedge), building a fair shift
-   roster, handling leave and absences, avoiding common payroll errors, and
-   when to use software or an outsourced payroll service.
+2. **Invoicing Basics for Small Businesses: Clear Invoices, Receipts, and Payment Terms for Malaysian SMEs**
+   — What a clear invoice contains, quotation to invoice to receipt flow,
+   numbering and records, setting and stating payment terms, deposits and
+   progress billing, including tax details when registered (to hedge,
+   confirm current rules), sending on time, reminders without friction,
+   handling disputes, and when to move to e-invoicing software.

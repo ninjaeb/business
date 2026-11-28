@@ -1013,7 +1013,7 @@
         "owners"
       ],
       "description": "Two young cafe owners smiling proudly in aprons in their cafe",
-      "usedBy": "keeping-your-best-people-owners.webp"
+      "usedBy": "cand-36729740.webp"
     },
     {
       "id": 7681758,
@@ -1674,6 +1674,54 @@
       ],
       "description": "Woman placing a folded white t-shirt into an open cardboard box by a window",
       "usedBy": "becoming-a-reseller-agent-or-dropshipper-cover.webp"
+    },
+    {
+      "id": 18955789,
+      "tags": [
+        "hr",
+        "feedback",
+        "conversation",
+        "office",
+        "asian"
+      ],
+      "description": "Two women chatting cheerfully across a table with a laptop in a bright office",
+      "usedBy": "giving-employee-feedback-and-simple-performance-reviews-cover.webp"
+    },
+    {
+      "id": 8101753,
+      "tags": [
+        "hr",
+        "feedback",
+        "one-on-one",
+        "meeting",
+        "asian"
+      ],
+      "description": "Asian man in a black shirt speaking to a colleague across a table with a laptop in front of a whiteboard",
+      "usedBy": "giving-employee-feedback-and-simple-performance-reviews-oneonone.webp"
+    },
+    {
+      "id": 7643894,
+      "tags": [
+        "hr",
+        "payroll",
+        "meeting",
+        "clipboard",
+        "office"
+      ],
+      "description": "Man in glasses holding a clipboard while talking with a colleague across a wooden table",
+      "usedBy": "payroll-basics-and-staff-scheduling-discussion.webp"
+    },
+    {
+      "id": 6205497,
+      "tags": [
+        "hr",
+        "schedule",
+        "team",
+        "cafe",
+        "laptop"
+      ],
+      "description": "Cafe team in aprons gathered around a laptop and a phone at a round wooden table",
+      "usedBy": "payroll-basics-and-staff-scheduling-cover.webp"
     }
   ]
 }
