@@ -50298,4 +50298,1296 @@ Menjual produk orang lain boleh menjadi langkah pertama yang bijak ke dalam pern
       },
     },
   },
+  {
+    slug: "giving-employee-feedback-and-performance-reviews-for-malaysian-smes",
+    title: "Giving Employee Feedback and Running Simple Performance Reviews: Keeping Your Team Motivated at Your Malaysian SME",
+    seoTitle: "Employee Feedback and Simple Performance Reviews in Malaysia",
+    seoDescription:
+      "How Malaysian SMEs can give useful employee feedback and run simple reviews: set expectations, hold one-to-ones and handle weak performance fairly.",
+    coverImage: {
+      file: "giving-employee-feedback-and-simple-performance-reviews-cover.webp",
+      mimeType: "image/webp",
+      alt: "A smiling woman with long auburn hair and a light blue shirt raising both hands in conversation across a table, with a laptop and wooden shelves behind her",
+      altTranslations: {
+        zh: "一位留着红棕色长发、身穿浅蓝色衬衫的微笑女士隔着桌子一边交谈一边举起双手，身后是笔记本电脑和木制书架",
+        ms: "Seorang wanita tersenyum berambut panjang keperangan dan berbaju biru muda mengangkat kedua-dua tangan sambil berbual merentasi meja, dengan komputer riba dan rak kayu di belakangnya",
+      },
+    },
+    contentImages: {
+      oneonone: {
+        file: "giving-employee-feedback-and-simple-performance-reviews-oneonone.webp",
+        mimeType: "image/webp",
+        alt: "A man in a black shirt speaking to a colleague across a dark table with a laptop and papers, with a blank whiteboard on the wall behind him",
+        altTranslations: {
+          zh: "一位身穿黑衬衫的男士隔着深色桌子与同事交谈，桌上有笔记本电脑和纸张，身后墙上是一块空白的白板",
+          ms: "Seorang lelaki berbaju hitam bercakap dengan rakan sekerja merentasi meja gelap yang berisi komputer riba dan kertas, dengan papan putih kosong di dinding di belakangnya",
+        },
+        after: "Hold a short one-to-one with each person on a regular rhythm.",
+        afterTranslations: {
+          zh: "按固定的节奏，与每个人进行简短的一对一谈话。",
+          ms: "Adakan perbualan empat mata yang ringkas dengan setiap orang mengikut rentak yang tetap.",
+        },
+      },
+    },
+    excerpt:
+      "Most people want to know how they are doing long before an annual review arrives. This guide helps Malaysian SMEs set clear expectations, give praise and correction in everyday moments, hold short regular one-to-ones, run a simple written review, handle weak performance fairly with records, and link feedback to growth.",
+    body: `Ask a team member how they are doing, and many will say they do not really know. Nobody has told them, apart from the occasional correction when something goes wrong. In a small business where everyone is busy, feedback is easy to postpone, and then it arrives all at once, as an unpleasant surprise.
+
+Good feedback is not a speech or a form. It is a habit of telling people, regularly and specifically, what they are doing well, what to change, and where they can grow. Done well, it improves work, builds trust, and keeps good people.
+
+This is general information, not legal or HR advice. Employment rules and dispute procedures change over time, and some details in this guide may be out of date. Confirm current requirements with the relevant authorities or a qualified adviser before you take any formal action.
+
+## 1. Understand why regular feedback beats a yearly surprise
+
+### People cannot fix what they do not know
+A mistake repeated for months costs more than one corrected in the first week. Early feedback is kinder and cheaper.
+
+### Silence is read as approval or disapproval
+When you say nothing, staff guess. Some assume everything is fine, and others assume you are unhappy. Clear feedback replaces guessing.
+
+### Feedback is part of retention
+People stay where they feel seen and are growing. Our guide on keeping your best people explains why.
+
+### Small businesses have an advantage
+You work alongside your team, so you can give feedback quickly and personally, without layers of forms.
+
+### Praise is feedback too
+Telling someone what they did well helps them repeat it. Do not save every comment for problems, because a team that only hears from you when something goes wrong soon learns to hide mistakes instead of fixing them.
+
+## 2. Set clear expectations first
+
+### Describe the job and what good looks like
+Write a short list of the main responsibilities and what success looks like for each. Feedback is hard to give fairly if expectations were never clear.
+
+### Agree a few priorities
+Choose three to five priorities for the next period, such as customer service, accuracy, punctuality, or sales. Too many goals blur the message.
+
+### Use simple, observable standards
+"Greet customers within a few seconds" is clearer than "be friendly". Our guide on customer service standards and training explains how to write them.
+
+### Put the basics in writing
+Rules on attendance, conduct, and safety belong in your handbook or contract. Our guide on the employee handbook and HR policies explains what to include.
+
+### Check understanding
+Ask the person to say the expectations back in their own words. It shows whether the message arrived.
+
+## 3. Give everyday feedback well
+
+### Do it soon and in the right place
+Give feedback close to the event, and in private for anything critical. Praise can be public if the person is comfortable with it.
+
+### Be specific about what you saw
+"The way you calmed that customer and offered a replacement was excellent" teaches more than "good job". For correction, describe the behaviour and its effect, not the person's character.
+
+### Keep it balanced and honest
+Recognise strengths and name problems plainly. Avoid wrapping a real problem in so much praise that it disappears.
+
+### Offer a way forward
+Say what you would like to see next time, and ask whether they need help, training, or a clearer process. Our guide on training your team with HRD Corp in Malaysia explains training options.
+
+### Listen to their view
+There may be a reason you cannot see, such as a broken tool or unclear instructions. Ask before you conclude.
+
+## 4. Build a short, regular one-to-one rhythm
+
+### Set a regular rhythm
+Hold a short one-to-one with each person on a regular rhythm. Fifteen minutes every two weeks or a month is often enough, and the habit matters more than the length.
+
+### Use a simple agenda
+Ask what went well, what was hard, what they need from you, and what the priorities are for the next period. Keep a few notes.
+
+### Let them lead part of the talk
+Invite the person to raise concerns, ideas, and goals. People are more committed to changes they helped shape.
+
+### Follow through on what you promise
+If you say you will fix a problem or arrange training, do it, and report back. Broken promises damage trust faster than silence.
+
+### Protect the time
+Do not cancel one-to-ones whenever the shop gets busy. Keeping them shows that people matter.
+
+## 5. Run a simple written review
+
+### Keep it to one or two pages
+List the main responsibilities and priorities, a few lines on strengths, a few on areas to improve, and the goals for the next period. A simple form is better than a long one that nobody finishes.
+
+### Base it on evidence and examples
+Draw on real events, numbers, customer comments, and your notes from one-to-ones. Our guide on tracking business performance explains simple measures.
+
+### Avoid surprises
+Nothing in the review should be new. If a concern appears for the first time on paper, the feedback process failed earlier.
+
+### Invite a self-assessment
+Ask the person to note what they think went well and what they want to learn. The differences between your views and theirs make useful conversation.
+
+### Agree actions and a date
+End with two or three clear actions, who does what, and when you will check progress. Give the person a copy.
+
+## 6. Handle underperformance fairly
+
+### Start with a conversation, not a warning
+Describe the gap between expectations and results, listen, and agree on what will change. Many issues are solved at this stage.
+
+### Check for causes
+Unclear instructions, poor tools, too much work, health or personal difficulties may all play a part. Be supportive where you can.
+
+### Set specific targets and a review date
+Say what must improve, by when, and what support you will provide. Vague warnings are hard to follow and hard to prove.
+
+### Keep factual records
+Note dates, what was discussed, and what was agreed. Records protect both you and the employee. Treat staff information with care. Our guide on PDPA compliance for Malaysian SMEs explains why.
+
+### Know when to get advice
+If performance does not improve, or you are considering formal warnings or ending employment, follow a fair process and confirm the current rules with the relevant authorities or a lawyer. Our guide on terminating an employee in Malaysia explains why a documented, fair process matters.
+
+> Feedback is a gift only if it arrives in time to use: a quiet word this week is kinder than a formal warning in six months.
+
+## 7. Link feedback to growth and recognition
+
+### Ask where they want to grow
+Ask what skills they want to learn and what role they see for themselves. People who see a path stay longer.
+
+### Match feedback with training
+Turn recurring gaps into short training, coaching, or shadowing. Our guide on employee onboarding explains simple ways to teach new skills.
+
+### Recognise good work visibly
+Thank people specifically, share wins with the team, and consider small rewards. Our guide on customer service standards and training explains simple recognition ideas.
+
+### Be fair about pay and promotion
+Explain how decisions are made, as far as you can, and treat people consistently. Our guide on payroll basics and staff scheduling explains how to keep pay clear.
+
+### Build feedback into the culture
+When managers receive feedback too, staff learn that it is normal and safe. Ask your team what you could do better.
+
+## 8. Avoid bias and common traps
+
+### Beware of recency
+A recent mistake or success can overshadow months of work. Check your notes across the whole period.
+
+### Do not compare people unfairly
+Judge each person against their role's expectations, not against a colleague's personality.
+
+### Watch for favouritism and unconscious bias
+Check whether you give similar feedback and opportunities to everyone, regardless of age, gender, race, religion, or background. Our guide on serving a multicultural market and tourists explains why respect for differences matters.
+
+### Separate the person from the problem
+Criticise the behaviour or result, not the individual. Respect keeps people open to change.
+
+### Review your own habits
+Ask a trusted colleague or adviser how your feedback comes across. If you want help with HR documents, training, or coaching, you can [browse the directory](/en) for professionals near you, and [create a free business listing](/en/signup) so that customers and candidates can find your business.
+
+## Common mistakes Malaysian SMEs make with feedback
+
+- **Saving everything for the annual review.** People are surprised and defensive, so give short feedback regularly and keep the review free of news.
+- **Giving vague comments such as "be more proactive".** Nobody knows what to change, so describe specific behaviours and examples.
+- **Failing to keep notes before a formal step.** Disputes need evidence, so record dates, discussions, and agreements, and confirm the current rules before you act.
+
+## Where to start
+
+- **This week:** Write down the main responsibilities and three priorities for each team member.
+- **Next:** Book a fifteen-minute one-to-one with each person, using a simple four-question agenda.
+- **Then:** Create a one-page review form, and record short notes after each conversation.
+- **Every quarter:** Review the form and the notes, ask the team for feedback on you, and adjust.
+
+Feedback does not need to be formal to be effective. It needs to be regular, specific, fair, and kind, and the effort pays back in better work, fewer surprises, and people who want to stay.`,
+    faqs: [
+      {
+        question: "How often should I give employees feedback?",
+        answer:
+          "Give small pieces of feedback as things happen, and hold a short one-to-one every two weeks or month. Regular, brief conversations work better than one long review a year.",
+      },
+      {
+        question: "What makes feedback effective?",
+        answer:
+          "It is timely, specific, balanced, and delivered with respect. Describe what you saw and its effect, say what you would like next time, offer help, and listen to the person's side.",
+      },
+      {
+        question: "Do I need a formal performance review in a small business?",
+        answer:
+          "Not necessarily a long one, but a simple written review once or twice a year is useful. Keep it to a page or two, base it on examples, and make sure nothing in it is a surprise.",
+      },
+      {
+        question: "How do I run a one-to-one meeting?",
+        answer:
+          "Keep it short and regular, ask what went well, what was hard, what they need from you, and what the priorities are, let the person lead part of the discussion, keep brief notes, and follow through on what you promise.",
+      },
+      {
+        question: "How should I handle an employee who is underperforming?",
+        answer:
+          "Start with a private conversation about the gap between expectations and results, check for causes such as unclear instructions or lack of training, agree specific targets and a review date, and keep factual records. If performance does not improve, follow a fair process.",
+      },
+      {
+        question: "What records should I keep?",
+        answer:
+          "Note dates, what was discussed, what was agreed, and any support offered. Keep records factual and store them securely, since they contain personal information. Confirm current rules on formal steps with the relevant authorities or a lawyer.",
+      },
+      {
+        question: "How do I avoid bias in reviews?",
+        answer:
+          "Use your notes from the whole period, not just recent events, judge each person against their role's expectations, check that you treat people consistently regardless of background, and criticise behaviour rather than character.",
+      },
+      {
+        question: "How can feedback support staff growth?",
+        answer:
+          "Ask what skills the person wants to learn, turn recurring gaps into training or coaching, recognise good work visibly, and explain how decisions about pay and promotion are made. People who see a path are more likely to stay.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "给予员工反馈并进行简单的绩效评估：让您马来西亚中小企业的团队保持积极",
+        excerpt:
+          "大多数人早在年度评估到来之前，就想知道自己做得如何。本指南帮助马来西亚中小企业设定清楚的期望，在日常时刻给予赞扬和纠正，进行简短而定期的一对一谈话，做一份简单的书面评估，公平地处理表现欠佳的情况并保存记录，并把反馈与成长联系起来。",
+        body: `问问团队成员他们做得如何，许多人会说他们其实不知道。除了在出事时偶尔被纠正，没有人告诉过他们。在每个人都很忙的小企业里，反馈很容易被推迟，然后一下子全部到来，成为令人不快的意外。
+
+好的反馈不是一场演讲或一张表格。它是一种习惯：定期而具体地告诉人们他们哪里做得好、哪里要改变，以及在哪里可以成长。做得好的话，它能改善工作、建立信任，并留住优秀的人。
+
+本文仅提供一般信息，并非法律或人力资源建议。雇佣规定和纠纷程序会随时间变化，本指南的部分细节可能已经过时。在采取任何正式行动之前，请向相关主管单位或合格的顾问确认现行要求。
+
+## 1. 了解为什么定期反馈胜过每年一次的意外
+
+### 人们无法改正自己不知道的事
+一个错误重复几个月，比在第一个星期就被纠正代价更大。早期的反馈更友善也更便宜。
+
+### 沉默会被解读为赞同或不满
+当您什么也不说，员工就会猜测。有些人以为一切都好，另一些人以为您不高兴。清楚的反馈取代了猜测。
+
+### 反馈是留任的一部分
+人们会留在感觉被看见并且在成长的地方。我们关于留住您最好的人才的指南解释了原因。
+
+### 小企业有优势
+您与团队并肩工作，所以可以快速而个人化地给予反馈，不必经过层层表格。
+
+### 赞扬也是反馈
+告诉某人他们哪里做得好，有助于他们重复。不要把所有的评论都留给问题。
+
+## 2. 先设定清楚的期望
+
+### 描述工作以及好的表现是什么样子
+写下一份主要职责的简短清单，以及每一项成功的样子。如果期望从未清楚过，就很难公平地给予反馈。
+
+### 约定几项优先事项
+为下一个时期选择三到五项优先事项，例如客户服务、准确度、守时或销售。目标太多会模糊信息。
+
+### 使用简单、可观察的标准
+“在几秒钟内问候顾客”比“要友善”更清楚。我们关于客户服务标准与培训的指南解释了如何撰写。
+
+### 把基本规则写下来
+关于出勤、行为和安全的规则，应放在您的手册或合约里。我们关于员工手册与人力资源政策的指南解释了应包括什么。
+
+### 检查理解
+请对方用自己的话复述期望。这能显示信息是否到达。
+
+## 3. 做好日常的反馈
+
+### 尽快并在合适的地点进行
+在事情发生后不久给予反馈，任何批评性的内容都私下进行。如果对方自在，赞扬可以公开。
+
+### 对您所见到的要具体
+“您安抚那位顾客并提供替换品的方式非常出色”，比“做得好”教得更多。对于纠正，请描述行为及其影响，而不是对方的性格。
+
+### 保持平衡和诚实
+认可优点，并直截了当地指出问题。避免用太多赞扬把真正的问题包起来，让它消失。
+
+### 提供前进的方向
+说出您下次希望看到什么，并问问他们是否需要协助、培训或更清楚的流程。我们关于通过HRD Corp培训团队的指南解释了培训选择。
+
+### 倾听他们的看法
+可能有一个您看不到的原因，例如工具坏了或指示不清。在下结论之前先问。
+
+## 4. 建立简短而定期的一对一节奏
+
+### 设定固定的节奏
+按固定的节奏，与每个人进行简短的一对一谈话。每两个星期或每个月十五分钟往往就够了，习惯比长度更重要。
+
+### 使用简单的议程
+问问什么进展顺利、什么困难、他们需要您做什么，以及下一个时期的优先事项是什么。做几点笔记。
+
+### 让他们主导部分谈话
+邀请对方提出顾虑、想法和目标。人们对自己参与塑造的改变更有承诺。
+
+### 兑现您的承诺
+如果您说会解决某个问题或安排培训，就去做，并回报。违背承诺比沉默更快损害信任。
+
+### 保护这段时间
+不要每当店里忙起来就取消一对一谈话。坚持下去显示人们很重要。
+
+## 5. 做一份简单的书面评估
+
+### 保持在一两页之内
+列出主要职责和优先事项，几行优点，几行需要改进的地方，以及下一个时期的目标。简单的表格胜过没有人填完的冗长表格。
+
+### 以证据和例子为基础
+引用真实的事件、数字、顾客的评论，以及您在一对一谈话中的笔记。我们关于追踪业务表现的指南解释了简单的衡量方法。
+
+### 避免意外
+评估中不应有任何新的内容。如果某个顾虑第一次出现在纸面上，说明反馈的过程更早就失败了。
+
+### 邀请自我评估
+请对方记下他们认为什么进展顺利，以及他们想学什么。您的看法与他们的看法之间的差异会成为有用的谈话。
+
+### 约定行动和日期
+以两三项清楚的行动结束，谁做什么，以及您何时检查进展。给对方一份副本。
+
+## 6. 公平地处理表现欠佳
+
+### 从谈话开始，而不是警告
+描述期望与结果之间的差距，倾听，并约定将改变什么。许多问题在这个阶段就能解决。
+
+### 检查原因
+指示不清、工具不佳、工作太多、健康或个人的困难，都可能起作用。在可以的地方给予支持。
+
+### 设定具体的目标和检讨日期
+说明必须改进什么、在何时之前，以及您将提供什么支持。含糊的警告很难遵循，也很难证明。
+
+### 保存事实的记录
+记下日期、讨论了什么，以及约定了什么。记录保护您和员工双方。请谨慎对待员工的资料。我们关于马来西亚中小企业PDPA合规的指南解释了原因。
+
+### 知道何时寻求意见
+如果表现没有改善，或您正考虑发出正式警告或终止雇佣，请遵循公平的程序，并向相关主管单位或律师确认现行规定。我们关于在马来西亚终止雇佣的指南解释了为什么有记录的公平程序很重要。
+
+> 反馈只有在及时到达、来得及使用时才是礼物：本星期私下说一句话，比六个月后发一封正式警告信更友善。
+
+## 7. 把反馈与成长和认可联系起来
+
+### 问他们想在哪里成长
+问问他们想学什么技能，以及他们为自己设想了什么角色。看得到一条路的人会留得更久。
+
+### 让反馈与培训配合
+把反复出现的差距变成简短的培训、辅导或跟班学习。我们关于员工入职的指南解释了教导新技能的简单方法。
+
+### 公开地认可好的工作
+具体地道谢，与团队分享成绩，并考虑小小的奖励。我们关于客户服务标准与培训的指南解释了简单的认可点子。
+
+### 在薪资和晋升上保持公平
+在可能的范围内说明决定是如何做出的，并一视同仁。我们关于薪资基础与员工排班的指南解释了如何让薪资清楚明白。
+
+### 把反馈融入文化
+当管理者也接受反馈时，员工就会明白这是正常而安全的。问问您的团队，您可以做得更好的地方。
+
+## 8. 避免偏见和常见陷阱
+
+### 提防近因效应
+最近的一次错误或成功，可能盖过数个月的工作。请查看整个期间的笔记。
+
+### 不要不公平地比较人
+以每个人职位的期望来衡量他们，而不是拿同事的个性来比。
+
+### 留意偏袒和无意识的偏见
+检查您是否对每个人给予相似的反馈和机会，不论年龄、性别、种族、宗教或背景。我们关于服务多元文化市场与游客的指南解释了为什么尊重差异很重要。
+
+### 把人和问题分开
+批评行为或结果，而不是个人。尊重让人保持对改变的开放。
+
+### 检视您自己的习惯
+问问一位信任的同事或顾问，您的反馈听起来如何。如果您在人力资源文件、培训或辅导方面需要协助，您可以[浏览名录](/zh)寻找附近的专业人士，并[创建免费商家列表](/zh/signup)，让顾客和求职者找到您的业务。
+
+## 马来西亚中小企业在反馈方面常犯的错误
+
+- **把一切留到年度评估。** 人们会感到意外并产生防御心理，所以请定期给予简短的反馈，并让评估不出现新消息。
+- **给出含糊的评论，例如“要更主动”。** 没有人知道要改变什么，所以请描述具体的行为和例子。
+- **在采取正式步骤之前没有做笔记。** 纠纷需要证据，所以请记录日期、讨论和约定，并在行动之前确认现行规定。
+
+## 从哪里开始
+
+- **本周：** 写下每位团队成员的主要职责和三项优先事项。
+- **接着：** 为每个人安排十五分钟的一对一谈话，使用简单的四个问题的议程。
+- **然后：** 制作一页的评估表，并在每次谈话之后记下简短的笔记。
+- **每季度：** 检讨表格和笔记，请团队对您提出反馈，并加以调整。
+
+反馈不需要正式才有效。它需要定期、具体、公平而友善，付出的努力会回报为更好的工作、更少的意外，以及想要留下的人。`,
+        faqs: [
+          {
+            question: "我应该多久给员工一次反馈？",
+            answer:
+              "在事情发生时给予小的反馈，并每两个星期或每个月举行一次简短的一对一谈话。定期而简短的谈话，比每年一次冗长的评估更有效。",
+          },
+          {
+            question: "什么让反馈有效？",
+            answer:
+              "它及时、具体、平衡，并带着尊重给出。描述您所见到的及其影响，说出您下次希望的是什么，提供协助，并倾听对方的看法。",
+          },
+          {
+            question: "小企业需要正式的绩效评估吗？",
+            answer:
+              "不一定需要冗长的，但每年做一两次简单的书面评估很有用。保持在一两页之内，以例子为基础，并确保其中没有任何意外。",
+          },
+          {
+            question: "我如何进行一对一的会面？",
+            answer:
+              "保持简短而定期，问问什么进展顺利、什么困难、他们需要您做什么，以及优先事项是什么，让对方主导部分讨论，做简短的笔记，并兑现您的承诺。",
+          },
+          {
+            question: "我应该如何处理表现欠佳的员工？",
+            answer:
+              "从私下谈谈期望与结果之间的差距开始，检查原因，例如指示不清或缺乏培训，约定具体的目标和检讨日期，并保存事实的记录。如果表现没有改善，请遵循公平的程序。",
+          },
+          {
+            question: "我应该保存哪些记录？",
+            answer:
+              "记下日期、讨论了什么、约定了什么，以及提供的任何支持。保持记录属实并安全存放，因为它们包含个人资料。请向相关主管单位或律师确认正式步骤的现行规定。",
+          },
+          {
+            question: "我如何避免评估中的偏见？",
+            answer:
+              "使用整个期间的笔记，而不只是最近的事件，以每个人职位的期望来衡量他们，检查您是否一视同仁而不论背景，并批评行为而不是性格。",
+          },
+          {
+            question: "反馈如何支持员工的成长？",
+            answer:
+              "问问对方想学什么技能，把反复出现的差距变成培训或辅导，公开地认可好的工作，并说明关于薪资和晋升的决定是如何做出的。看得到一条路的人更有可能留下。",
+          },
+        ],
+      },
+      ms: {
+        title: "Memberi Maklum Balas kepada Pekerja dan Menjalankan Penilaian Prestasi yang Mudah: Memastikan Pasukan Anda Bermotivasi di PKS Malaysia Anda",
+        excerpt:
+          "Kebanyakan orang mahu tahu bagaimana prestasi mereka jauh sebelum penilaian tahunan tiba. Panduan ini membantu PKS Malaysia menetapkan jangkaan yang jelas, memberi pujian dan pembetulan dalam detik harian, mengadakan perbualan empat mata yang ringkas dan berkala, menjalankan penilaian bertulis yang mudah, menangani prestasi lemah dengan adil serta rekod, dan mengaitkan maklum balas dengan pertumbuhan.",
+        body: `Tanya ahli pasukan bagaimana prestasi mereka, dan ramai akan berkata mereka sebenarnya tidak tahu. Tiada siapa memberitahu mereka, selain teguran sekali-sekala apabila sesuatu tidak kena. Dalam perniagaan kecil di mana semua orang sibuk, maklum balas mudah ditangguhkan, dan kemudian ia tiba sekali gus, sebagai kejutan yang tidak menyenangkan.
+
+Maklum balas yang baik bukan ucapan atau borang. Ia ialah tabiat memberitahu orang, secara berkala dan khusus, apa yang mereka lakukan dengan baik, apa yang perlu diubah, dan di mana mereka boleh berkembang. Jika dilakukan dengan baik, ia memperbaik kerja, membina kepercayaan dan mengekalkan orang yang baik.
+
+Ini maklumat umum, bukan nasihat undang-undang atau HR. Peraturan pekerjaan dan prosedur pertikaian berubah dari semasa ke semasa, dan sebahagian butiran dalam panduan ini mungkin sudah lapuk. Sahkan keperluan semasa dengan pihak berkuasa berkaitan atau penasihat yang layak sebelum anda mengambil sebarang tindakan rasmi.
+
+## 1. Fahami mengapa maklum balas berkala mengatasi kejutan tahunan
+
+### Orang tidak dapat membetulkan apa yang mereka tidak tahu
+Kesilapan yang berulang selama berbulan-bulan lebih mahal daripada yang dibetulkan pada minggu pertama. Maklum balas awal lebih baik dan lebih murah.
+
+### Kesenyapan dibaca sebagai persetujuan atau ketidaksetujuan
+Apabila anda tidak berkata apa-apa, pekerja meneka. Ada yang menganggap semuanya baik, dan yang lain menganggap anda tidak puas hati. Maklum balas yang jelas menggantikan tekaan.
+
+### Maklum balas ialah sebahagian daripada pengekalan
+Orang kekal di tempat mereka berasa dilihat dan berkembang. Panduan kami tentang mengekalkan pekerja terbaik anda menerangkan sebabnya.
+
+### Perniagaan kecil mempunyai kelebihan
+Anda bekerja bersama pasukan anda, jadi anda boleh memberi maklum balas dengan cepat dan secara peribadi, tanpa lapisan borang.
+
+### Pujian juga maklum balas
+Memberitahu seseorang apa yang mereka lakukan dengan baik membantu mereka mengulanginya. Jangan simpan setiap komen untuk masalah.
+
+## 2. Tetapkan jangkaan yang jelas dahulu
+
+### Terangkan tugas dan rupa yang baik
+Tulis senarai pendek tanggungjawab utama dan rupa kejayaan bagi setiap satu. Maklum balas sukar diberikan dengan adil jika jangkaan tidak pernah jelas.
+
+### Persetujui beberapa keutamaan
+Pilih tiga hingga lima keutamaan untuk tempoh seterusnya, seperti perkhidmatan pelanggan, ketepatan, menepati masa atau jualan. Terlalu banyak matlamat mengaburkan mesej.
+
+### Gunakan standard yang mudah dan boleh diperhatikan
+"Sambut pelanggan dalam beberapa saat" lebih jelas daripada "bersikap mesra". Panduan kami tentang standard dan latihan perkhidmatan pelanggan menerangkan cara menulisnya.
+
+### Tuliskan perkara asas
+Peraturan tentang kehadiran, tatakelakuan dan keselamatan tergolong dalam buku panduan atau kontrak anda. Panduan kami tentang buku panduan pekerja dan dasar HR menerangkan apa yang perlu disertakan.
+
+### Semak kefahaman
+Minta orang itu menyebut semula jangkaan dengan kata-kata mereka sendiri. Ia menunjukkan sama ada mesej itu sampai.
+
+## 3. Beri maklum balas harian dengan baik
+
+### Lakukan dengan segera dan di tempat yang betul
+Beri maklum balas dekat dengan kejadian, dan secara peribadi untuk apa-apa yang kritikal. Pujian boleh dibuat di khalayak jika orang itu selesa dengannya.
+
+### Jadilah khusus tentang apa yang anda lihat
+"Cara anda menenangkan pelanggan itu dan menawarkan gantian sangat cemerlang" mengajar lebih banyak daripada "kerja baik". Untuk pembetulan, terangkan tingkah laku dan kesannya, bukan peribadi orang itu.
+
+### Pastikan seimbang dan jujur
+Iktiraf kekuatan dan namakan masalah dengan jelas. Elakkan membalut masalah sebenar dengan begitu banyak pujian sehingga ia hilang.
+
+### Tawarkan jalan ke hadapan
+Katakan apa yang anda mahu lihat pada kali seterusnya, dan tanya sama ada mereka memerlukan bantuan, latihan atau proses yang lebih jelas. Panduan kami tentang melatih pasukan anda dengan HRD Corp di Malaysia menerangkan pilihan latihan.
+
+### Dengar pandangan mereka
+Mungkin ada sebab yang anda tidak nampak, seperti alat yang rosak atau arahan yang tidak jelas. Tanya sebelum anda membuat kesimpulan.
+
+## 4. Bina rentak perbualan empat mata yang ringkas dan berkala
+
+### Tetapkan rentak yang tetap
+Adakan perbualan empat mata yang ringkas dengan setiap orang mengikut rentak yang tetap. Lima belas minit setiap dua minggu atau sebulan sering memadai, dan tabiat lebih penting daripada tempoh.
+
+### Gunakan agenda yang mudah
+Tanya apa yang berjalan lancar, apa yang sukar, apa yang mereka perlukan daripada anda, dan apa keutamaan untuk tempoh seterusnya. Simpan beberapa nota.
+
+### Biarkan mereka memimpin sebahagian perbualan
+Jemput orang itu membangkitkan kebimbangan, idea dan matlamat. Orang lebih komited kepada perubahan yang mereka bantu bentuk.
+
+### Tunaikan apa yang anda janjikan
+Jika anda berkata anda akan membetulkan masalah atau mengatur latihan, lakukannya, dan laporkan semula. Janji yang dimungkiri merosakkan kepercayaan lebih cepat daripada kesenyapan.
+
+### Lindungi masa itu
+Jangan batalkan perbualan empat mata setiap kali kedai menjadi sibuk. Mengekalkannya menunjukkan orang itu penting.
+
+## 5. Jalankan penilaian bertulis yang mudah
+
+### Pastikan dalam satu atau dua muka surat
+Senaraikan tanggungjawab dan keutamaan utama, beberapa baris tentang kekuatan, beberapa tentang bahagian yang perlu diperbaiki, dan matlamat untuk tempoh seterusnya. Borang yang mudah lebih baik daripada yang panjang yang tiada siapa menyiapkannya.
+
+### Asaskan pada bukti dan contoh
+Rujuk peristiwa sebenar, angka, komen pelanggan dan nota anda daripada perbualan empat mata. Panduan kami tentang menjejaki prestasi perniagaan menerangkan ukuran yang mudah.
+
+### Elakkan kejutan
+Tiada apa-apa dalam penilaian itu patut baharu. Jika kebimbangan muncul buat kali pertama di atas kertas, proses maklum balas telah gagal lebih awal.
+
+### Jemput penilaian kendiri
+Minta orang itu mencatat apa yang mereka fikir berjalan lancar dan apa yang mereka mahu pelajari. Perbezaan antara pandangan anda dengan mereka menjadi perbualan yang berguna.
+
+### Persetujui tindakan dan tarikh
+Akhiri dengan dua atau tiga tindakan yang jelas, siapa membuat apa, dan bila anda akan menyemak kemajuan. Beri orang itu satu salinan.
+
+## 6. Kendalikan prestasi yang lemah dengan adil
+
+### Mulakan dengan perbualan, bukan amaran
+Terangkan jurang antara jangkaan dan hasil, dengar, dan persetujui apa yang akan berubah. Banyak isu diselesaikan pada peringkat ini.
+
+### Semak punca
+Arahan yang tidak jelas, alat yang lemah, kerja yang terlalu banyak, kesukaran kesihatan atau peribadi semuanya mungkin memainkan peranan. Bersikap menyokong jika boleh.
+
+### Tetapkan sasaran khusus dan tarikh semakan
+Katakan apa yang mesti diperbaiki, menjelang bila, dan sokongan apa yang akan anda sediakan. Amaran yang kabur sukar diikuti dan sukar dibuktikan.
+
+### Simpan rekod fakta
+Catat tarikh, apa yang dibincangkan, dan apa yang dipersetujui. Rekod melindungi anda dan pekerja. Kendalikan maklumat pekerja dengan berhati-hati. Panduan kami tentang pematuhan PDPA untuk PKS Malaysia menerangkan sebabnya.
+
+### Ketahui bila hendak mendapatkan nasihat
+Jika prestasi tidak bertambah baik, atau anda mempertimbangkan amaran rasmi atau menamatkan pekerjaan, ikut proses yang adil dan sahkan peraturan semasa dengan pihak berkuasa berkaitan atau peguam. Panduan kami tentang menamatkan perkhidmatan pekerja di Malaysia menerangkan mengapa proses yang adil dan didokumenkan penting.
+
+> Maklum balas ialah hadiah hanya jika ia tiba tepat pada masanya untuk digunakan: kata-kata ringkas minggu ini lebih baik daripada amaran rasmi enam bulan kemudian.
+
+## 7. Kaitkan maklum balas dengan pertumbuhan dan pengiktirafan
+
+### Tanya di mana mereka mahu berkembang
+Tanya kemahiran apa yang mereka mahu pelajari dan peranan apa yang mereka bayangkan untuk diri sendiri. Orang yang nampak jalan kekal lebih lama.
+
+### Padankan maklum balas dengan latihan
+Tukarkan jurang yang berulang kepada latihan ringkas, bimbingan atau mengekori. Panduan kami tentang orientasi pekerja menerangkan cara mudah mengajar kemahiran baharu.
+
+### Iktiraf kerja yang baik secara terang-terangan
+Ucapkan terima kasih dengan khusus, kongsi kejayaan dengan pasukan, dan pertimbangkan ganjaran kecil. Panduan kami tentang standard dan latihan perkhidmatan pelanggan menerangkan idea pengiktirafan yang mudah.
+
+### Bersikap adil tentang gaji dan kenaikan pangkat
+Terangkan bagaimana keputusan dibuat, setakat yang boleh, dan layan orang secara konsisten. Panduan kami tentang asas gaji dan penjadualan pekerja menerangkan cara menjelaskan gaji.
+
+### Terapkan maklum balas dalam budaya
+Apabila pengurus juga menerima maklum balas, pekerja belajar bahawa ia biasa dan selamat. Tanya pasukan anda apa yang boleh anda lakukan dengan lebih baik.
+
+## 8. Elakkan bias dan perangkap biasa
+
+### Berwaspada terhadap kesan terkini
+Kesilapan atau kejayaan baru-baru ini boleh mengatasi kerja berbulan-bulan. Semak nota anda merentas keseluruhan tempoh.
+
+### Jangan bandingkan orang dengan tidak adil
+Nilai setiap orang berdasarkan jangkaan peranan mereka, bukan berdasarkan personaliti rakan sekerja.
+
+### Perhatikan pilih kasih dan bias tidak sedar
+Semak sama ada anda memberi maklum balas dan peluang yang serupa kepada semua orang, tanpa mengira umur, jantina, bangsa, agama atau latar belakang. Panduan kami tentang melayani pasaran pelbagai budaya dan pelancong menerangkan mengapa menghormati perbezaan penting.
+
+### Pisahkan orang daripada masalah
+Kritik tingkah laku atau hasil, bukan individu. Penghormatan memastikan orang terbuka kepada perubahan.
+
+### Semak tabiat anda sendiri
+Tanya rakan sekerja atau penasihat yang dipercayai bagaimana maklum balas anda diterima. Jika anda mahukan bantuan dengan dokumen HR, latihan atau bimbingan, anda boleh [layari direktori](/ms) untuk profesional berhampiran anda, dan [cipta penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan dan calon dapat menemui perniagaan anda.
+
+## Kesilapan biasa PKS Malaysia dengan maklum balas
+
+- **Menyimpan segala-galanya untuk penilaian tahunan.** Orang terkejut dan bertahan, jadi beri maklum balas ringkas secara berkala dan pastikan penilaian bebas daripada berita baharu.
+- **Memberi komen kabur seperti "lebih proaktif".** Tiada siapa tahu apa yang hendak diubah, jadi terangkan tingkah laku dan contoh yang khusus.
+- **Gagal menyimpan nota sebelum langkah rasmi.** Pertikaian memerlukan bukti, jadi rekodkan tarikh, perbincangan dan persetujuan, dan sahkan peraturan semasa sebelum anda bertindak.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Tuliskan tanggungjawab utama dan tiga keutamaan bagi setiap ahli pasukan.
+- **Seterusnya:** Tempah perbualan empat mata lima belas minit dengan setiap orang, menggunakan agenda empat soalan yang mudah.
+- **Kemudian:** Cipta borang penilaian satu muka surat, dan rekodkan nota ringkas selepas setiap perbualan.
+- **Setiap suku tahun:** Semak borang dan nota, minta maklum balas pasukan tentang anda, dan laraskan.
+
+Maklum balas tidak perlu rasmi untuk berkesan. Ia perlu berkala, khusus, adil dan baik, dan usaha itu membuahkan kerja yang lebih baik, kurang kejutan, dan orang yang mahu kekal.`,
+        faqs: [
+          {
+            question: "Berapa kerap saya patut memberi maklum balas kepada pekerja?",
+            answer:
+              "Beri maklum balas kecil apabila sesuatu berlaku, dan adakan perbualan empat mata ringkas setiap dua minggu atau sebulan. Perbualan yang berkala dan ringkas lebih berkesan daripada satu penilaian panjang setahun.",
+          },
+          {
+            question: "Apakah yang menjadikan maklum balas berkesan?",
+            answer:
+              "Ia tepat pada masanya, khusus, seimbang dan disampaikan dengan hormat. Terangkan apa yang anda lihat dan kesannya, katakan apa yang anda mahu pada kali seterusnya, tawarkan bantuan, dan dengar pihak orang itu.",
+          },
+          {
+            question: "Adakah saya memerlukan penilaian prestasi rasmi dalam perniagaan kecil?",
+            answer:
+              "Tidak semestinya yang panjang, tetapi penilaian bertulis yang mudah sekali atau dua kali setahun berguna. Pastikan dalam satu atau dua muka surat, asaskan pada contoh, dan pastikan tiada apa-apa di dalamnya yang mengejutkan.",
+          },
+          {
+            question: "Bagaimanakah saya menjalankan mesyuarat empat mata?",
+            answer:
+              "Pastikan ringkas dan berkala, tanya apa yang berjalan lancar, apa yang sukar, apa yang mereka perlukan daripada anda, dan apa keutamaannya, biarkan orang itu memimpin sebahagian perbincangan, simpan nota ringkas, dan tunaikan apa yang anda janjikan.",
+          },
+          {
+            question: "Bagaimanakah saya patut mengendalikan pekerja yang berprestasi lemah?",
+            answer:
+              "Mulakan dengan perbualan peribadi tentang jurang antara jangkaan dan hasil, semak punca seperti arahan yang tidak jelas atau kekurangan latihan, persetujui sasaran khusus dan tarikh semakan, dan simpan rekod fakta. Jika prestasi tidak bertambah baik, ikut proses yang adil.",
+          },
+          {
+            question: "Apakah rekod yang patut saya simpan?",
+            answer:
+              "Catat tarikh, apa yang dibincangkan, apa yang dipersetujui, dan sebarang sokongan yang ditawarkan. Pastikan rekod berdasarkan fakta dan simpan dengan selamat, kerana ia mengandungi maklumat peribadi. Sahkan peraturan semasa tentang langkah rasmi dengan pihak berkuasa berkaitan atau peguam.",
+          },
+          {
+            question: "Bagaimanakah saya mengelak bias dalam penilaian?",
+            answer:
+              "Gunakan nota anda daripada keseluruhan tempoh, bukan hanya peristiwa terkini, nilai setiap orang berdasarkan jangkaan peranan mereka, semak bahawa anda melayan orang secara konsisten tanpa mengira latar belakang, dan kritik tingkah laku dan bukan perwatakan.",
+          },
+          {
+            question: "Bagaimanakah maklum balas boleh menyokong pertumbuhan pekerja?",
+            answer:
+              "Tanya kemahiran apa yang orang itu mahu pelajari, tukarkan jurang yang berulang kepada latihan atau bimbingan, iktiraf kerja yang baik secara terang-terangan, dan terangkan bagaimana keputusan tentang gaji dan kenaikan pangkat dibuat. Orang yang nampak jalan lebih berkemungkinan kekal.",
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "payroll-basics-and-staff-scheduling-for-malaysian-smes",
+    title: "Payroll Basics and Staff Scheduling: Paying People Correctly and Planning Shifts for Malaysian SMEs",
+    seoTitle: "Payroll Basics and Staff Scheduling for Malaysian SMEs",
+    seoDescription:
+      "How Malaysian SMEs can run simple payroll and fair staff schedules: pay slips, overtime, statutory deductions, shift rosters and common errors.",
+    coverImage: {
+      file: "payroll-basics-and-staff-scheduling-cover.webp",
+      mimeType: "image/webp",
+      alt: "Three cafe colleagues in aprons gathered around a round wooden table, one pointing at a phone and another resting a chin on a hand, with a laptop and a yellow cup in front of them",
+      altTranslations: {
+        zh: "三位身穿围裙的咖啡店同事围坐在圆形木桌旁，一位指着手机，另一位托着下巴，面前是一台笔记本电脑和一只黄色杯子",
+        ms: "Tiga rakan sekerja kafe berapron berkumpul di sekeliling meja kayu bulat, seorang menunjuk ke telefon dan seorang lagi menongkat dagu, dengan komputer riba dan cawan kuning di hadapan mereka",
+      },
+    },
+    contentImages: {
+      discussion: {
+        file: "payroll-basics-and-staff-scheduling-discussion.webp",
+        mimeType: "image/webp",
+        alt: "A man in glasses and a black blazer holding a clipboard and talking with a colleague across a polished wooden table beside a window with blinds",
+        altTranslations: {
+          zh: "一位戴眼镜、身穿黑色西装外套的男士拿着写字板，隔着靠近百叶窗的光亮木桌与同事交谈",
+          ms: "Seorang lelaki berkaca mata dan berblazer hitam memegang papan klip dan berbual dengan rakan sekerja merentasi meja kayu berkilat di tepi tingkap berlangsir bidai",
+        },
+        after: "Explain the pay slip to every new employee in plain words.",
+        afterTranslations: {
+          zh: "用平实的话，向每位新员工讲解薪资单。",
+          ms: "Terangkan slip gaji kepada setiap pekerja baharu dengan kata-kata mudah.",
+        },
+      },
+    },
+    excerpt:
+      "Paying people correctly and on time is the quickest way to earn their trust, and getting it wrong is the quickest way to lose it. This guide helps Malaysian SMEs set up a simple payroll routine, handle overtime and holidays, track statutory deductions and due dates, build a fair shift roster, and avoid common errors.",
+    body: `Few things matter more to an employee than being paid the right amount on the right day. Late or incorrect pay does not just cause a bad week; it makes people wonder whether the business is stable and whether they are valued.
+
+In a small business, payroll often lives in the owner's head or a spreadsheet that only one person understands. A simple routine, a clear schedule, and good records turn it from a monthly worry into a quiet habit.
+
+This is general information, not legal, tax, or HR advice. Wage rules, overtime rates, statutory contribution rates, and due dates change over time, and sources sometimes disagree, so some details in this guide may be out of date. Confirm current requirements with the relevant authorities or a qualified payroll adviser before you rely on them.
+
+## 1. Understand what payroll involves
+
+### Payroll is more than paying salaries
+It covers calculating pay, deducting what must be deducted, paying the employee, paying contributions to the right bodies, and keeping records.
+
+### Start from the contract
+The employment contract or offer letter sets the salary, working hours, allowances, and leave. Our guide on hiring your first employee in Malaysia explains the common steps.
+
+### Know the main components
+Basic pay, allowances, overtime, commissions, bonuses, and unpaid leave deductions usually make up gross pay. Statutory and agreed deductions bring it down to net pay.
+
+### Separate business and personal money
+Pay staff from the business account, not from personal funds. Our guide on separating personal and business finances explains why.
+
+### Plan for the cost of employing someone
+Employer contributions and other costs sit on top of salary. Our guide on budgeting and forecasting explains how to allow for them.
+
+## 2. Set up a simple monthly routine
+
+### Choose fixed dates
+Fix a cut-off date for hours and changes, a date to calculate pay, a date to check, and a pay date. The same dates each month remove confusion.
+
+### Collect attendance and changes early
+Gather timesheets, leave, overtime, new joiners, and leavers before you calculate. Our guide on staff scheduling and attendance below explains how to record them.
+
+### Calculate, then check
+Use a template or software, and have a second person or a second look check totals and any unusual amounts before paying.
+
+### Pay on time, every time
+The law has rules about when wages must be paid. One secondary source suggests wages are generally due within a set number of days after the end of the wage period, but this is not confirmed here, so check the Employment Act and your contract with the relevant authority.
+
+### Keep a monthly checklist
+List the steps in order: attendance, calculation, checking, payment, statutory payments, and filing records. Tick them off each month.
+
+## 3. Give clear pay slips and records
+
+### Issue a pay slip every month
+A pay slip shows the pay period, basic pay, allowances, overtime, deductions, and net pay. It helps staff check their pay and avoids disputes.
+
+### Walk through the first pay slip
+Explain the pay slip to every new employee in plain words. Walk through each line, such as what the deductions are and why, so that nobody opens their first pay slip with confusion.
+
+### Keep payroll records safely
+Store payroll and attendance records securely and for as long as the rules require. Confirm the retention period with the relevant authorities. Our guide on PDPA compliance for Malaysian SMEs explains how to protect personal data.
+
+### Pay by traceable methods
+Bank transfer leaves a record for both sides. If you pay cash for any reason, record it and get a signed acknowledgement.
+
+### Correct mistakes openly
+If you make an error, tell the employee, correct it quickly, and note what you changed.
+
+## 4. Handle overtime, rest days, and public holidays
+
+### Know that rates depend on the rules and the employee
+Commonly cited rates are 1.5 times the hourly rate for overtime on a normal working day, at least twice on a rest day, and higher on public holidays, with sources describing public holiday rates differently. Whether these apply depends on the employee's wage level and job, so check the Employment Act and the current rules with the relevant authority.
+
+### Record the hours properly
+Keep time records that show when each person started and finished, including breaks. Our guide on employee leave and public holidays in Malaysia explains holidays in more detail.
+
+### Get overtime approved
+Agree in advance who may work overtime and who approves it, so that costs do not surprise you.
+
+### Calculate hourly rates consistently
+Use the same method each time, based on the contract and the rules, and write it down.
+
+### Watch total hours and rest
+Long hours raise safety risks and costs. Our guide on workplace safety for Malaysian SMEs explains why rest matters.
+
+## 5. Track statutory deductions and due dates
+
+### Know which contributions apply
+Depending on the employee and the pay, employers may need to deduct and pay contributions such as EPF, SOCSO, and EIS, and may need to handle monthly tax deductions. Rates and coverage can change, so confirm them with the relevant authorities.
+
+### Calendar the due dates
+Several sources describe payments for the previous month's wages as due around the 15th of the following month, with some exceptions and late payment charges, but these come mostly from payroll vendors, so verify with the official bodies. Our guide on the small business tax calendar in Malaysia explains how to track dates.
+
+### Check registrations
+Make sure your business and each employee are registered with the right schemes. Our guide on hiring your first employee explains the registrations.
+
+### Keep proof of payment
+Save statements and receipts for every statutory payment, and match them against your payroll.
+
+### Review changes each year
+Rates, ceilings, and rules are adjusted from time to time. Set a reminder to check them at the start of each year.
+
+## 6. Build a fair staff schedule
+
+### Start with demand
+Look at when customers come and when work needs doing, then match the number of staff to the busy and quiet periods. Our guide on planning for festive peaks and slow seasons explains how demand changes.
+
+### Respect limits and rest
+Plan shifts within the working hours your contract and the rules allow, with proper breaks and days off.
+
+### Publish the roster early
+Share the schedule at least a week in advance, so that staff can plan their lives. Late changes cause absences and resentment.
+
+### Be fair about difficult shifts
+Rotate weekends, late nights, and public holidays where you can, and consider requests such as prayer times, family needs, and studies. Our guide on serving a multicultural market and tourists explains why respect for different needs matters.
+
+### Keep a simple template
+A weekly grid with names, shifts, and roles in a spreadsheet or shared document is enough for most small businesses.
+
+> A schedule and a pay slip are promises in writing: when both are clear, early, and correct, people can trust you, and trust is cheaper than every system you could buy.
+
+## 7. Manage leave and absences
+
+### Set a clear process
+Say how to apply for leave, who approves it, and how much notice is needed. Our guide on employee leave and public holidays in Malaysia explains the basics.
+
+### Track balances
+Record leave taken and remaining for each person, and update it with each pay run.
+
+### Plan for sickness and emergencies
+Agree how staff report sickness and who covers shifts. Keep a short list of people who can step in. Our guide on part-time staff and interns explains how flexible staff can help.
+
+### Handle unpaid leave and deductions correctly
+Calculate any deduction using the method in your contract and the rules, and show it on the pay slip.
+
+### Review patterns
+Frequent absences or late arrivals may signal problems with workload, schedules, or morale, so talk to the person early.
+
+## 8. Avoid common errors and choose the right tools
+
+### Common errors to watch
+Missing a new hire or leaver, using the wrong rate, forgetting overtime, mixing up deadlines, and not updating changes are frequent causes of mistakes. A checklist and a second check prevent most of them.
+
+### Reconcile every month
+Compare payroll totals with bank payments and statutory payments. Differences show errors early.
+
+### Choose tools that fit your size
+A good spreadsheet can serve a very small team. As your team grows, payroll software can reduce errors and keep up with rule changes. Our guide on choosing accounting software for your Malaysian SME explains what to look for.
+
+### Consider outsourcing
+An outsourced payroll service or an accountant can run the process for a fee, especially if you have many staff or complex pay. You can [browse the directory](/en) for payroll providers and accountants near you, and [create a free business listing](/en/signup) so that customers and candidates can find your business.
+
+### Ask for help when rules change
+If you are unsure about a rate, a deadline, or a case, check with the relevant authority or an adviser before paying. A short question costs far less than a correction.
+
+## Common mistakes Malaysian SMEs make with payroll and scheduling
+
+- **Paying late or inconsistently.** Staff lose trust quickly, so fix a pay date and stick to it.
+- **Guessing overtime and statutory amounts.** Rates and coverage vary and change, so use the current rules and keep a second check.
+- **Changing shifts at the last minute.** Late changes cause absences and bad feeling, so publish the roster early and keep changes rare.
+
+## Where to start
+
+- **This week:** Write your monthly payroll checklist and fix your cut-off and pay dates.
+- **Next:** Create a standard pay slip and explain it to each team member.
+- **Then:** Calendar your statutory payment dates, and confirm current rates with the relevant authorities or an adviser.
+- **Every quarter:** Reconcile payroll with bank and statutory payments, review the roster for fairness, and update your checklist.
+
+Getting pay and schedules right is not glamorous work, but it is the foundation of a team that stays, trusts you, and does good work. A simple, reliable routine is worth far more than a clever system you cannot maintain.`,
+    faqs: [
+      {
+        question: "What steps are involved in running payroll each month?",
+        answer:
+          "Collect attendance and changes, calculate gross pay, apply deductions to reach net pay, check the totals, pay employees on the fixed date, make statutory payments by their due dates, issue pay slips, and file your records. A checklist keeps the order consistent.",
+      },
+      {
+        question: "What should a pay slip show?",
+        answer:
+          "The pay period, basic pay, allowances, overtime, deductions, and net pay. A clear pay slip helps staff check their pay, so explain it to every new employee in plain words.",
+      },
+      {
+        question: "How is overtime calculated in Malaysia?",
+        answer:
+          "Commonly cited rates are 1.5 times the hourly rate on a normal working day, at least twice on a rest day, and higher on public holidays, but sources describe the public holiday rate differently and coverage depends on the employee's wage level and job. Check the Employment Act and the current rules with the relevant authority.",
+      },
+      {
+        question: "When must salaries be paid?",
+        answer:
+          "The law sets time limits for paying wages after the wage period ends, and a secondary source suggests a number of days, but this is not confirmed here. Check the Employment Act and your contract with the relevant authority, and pay on a fixed, reliable date.",
+      },
+      {
+        question: "Which statutory contributions do employers handle?",
+        answer:
+          "Depending on the employee and pay, employers may need to deduct and pay contributions such as EPF, SOCSO, and EIS, and handle monthly tax deductions. Rates, ceilings, and due dates change, so confirm them with the relevant authorities. Several sources say payments for the previous month's wages are due around the 15th, but verify with the official bodies.",
+      },
+      {
+        question: "How do I build a fair shift schedule?",
+        answer:
+          "Start from customer demand, plan within the allowed hours with proper breaks and days off, publish the roster at least a week ahead, rotate difficult shifts, and consider needs such as prayer times, family, and studies.",
+      },
+      {
+        question: "How should I handle staff leave and absences?",
+        answer:
+          "Set a clear process for applying and approving leave, track balances, agree how staff report sickness and who covers shifts, calculate deductions for unpaid leave as your contract and the rules say, and talk early about patterns of absence.",
+      },
+      {
+        question: "Should I use payroll software or outsource payroll?",
+        answer:
+          "A well-made spreadsheet can serve a very small team, while software or an outsourced service helps as you grow, especially with many staff or complex pay. Choose what you can maintain accurately, and reconcile payroll with bank and statutory payments every month.",
+      },
+    ],
+    translations: {
+      zh: {
+        title: "薪资基础与员工排班：马来西亚中小企业如何正确发薪并规划班次",
+        excerpt:
+          "正确而准时地发薪，是赢得员工信任最快的方式，而出错则是失去信任最快的方式。本指南帮助马来西亚中小企业建立简单的薪资流程，处理加班和假期，追踪法定扣款和到期日，建立公平的班次表，并避免常见的错误。",
+        body: `对员工来说，很少有什么比在正确的日子领到正确的金额更重要。延迟或错误的薪资不只造成糟糕的一周；它还让人们怀疑企业是否稳定，以及自己是否受到重视。
+
+在小企业里，薪资往往存在于老板的脑子里，或只有一个人看得懂的电子表格里。一个简单的流程、清楚的日程和良好的记录，能把它从每月的担忧变成安静的习惯。
+
+本文仅提供一般信息，并非法律、税务或人力资源建议。工资规定、加班费率、法定供款率和到期日会随时间变化，各来源有时也不一致，所以本指南的部分细节可能已经过时。在依赖它们之前，请向相关主管单位或合格的薪资顾问确认现行要求。
+
+## 1. 了解薪资涉及什么
+
+### 薪资不只是发薪水
+它涵盖计算薪资、扣除必须扣除的款项、支付给员工、向正确的机构缴付供款，以及保存记录。
+
+### 从合约开始
+雇佣合约或聘书订明薪水、工作时间、津贴和假期。我们关于在马来西亚聘请第一位员工的指南解释了常见的步骤。
+
+### 了解主要的组成部分
+基本薪资、津贴、加班费、佣金、花红和无薪假扣款，通常构成总薪资。法定和约定的扣款再把它降为净薪资。
+
+### 把业务和个人的钱分开
+从业务账户发薪，而不是用个人资金。我们关于分开个人和业务财务的指南解释了原因。
+
+### 为雇用一个人的成本做规划
+雇主的供款和其他成本是在薪水之外的。我们关于预算与预测的指南解释了如何预留。
+
+## 2. 建立简单的月度流程
+
+### 选择固定的日期
+订下工时和变动的截止日、计算薪资的日期、检查的日期，以及发薪日。每个月日期相同，能消除混乱。
+
+### 及早收集出勤和变动
+在计算之前，收集工时表、假期、加班、新入职者和离职者。我们下面关于员工排班与出勤的部分解释了如何记录。
+
+### 先计算，再检查
+使用模板或软件，并让第二个人或第二次审视，在发薪之前检查总数和任何不寻常的金额。
+
+### 每次都准时发薪
+法律对工资何时必须支付有规定。有一个二手来源提到，工资通常须在工资期结束后的若干天内支付，但这里并未证实，所以请向相关主管单位查对《雇佣法令》和您的合约。
+
+### 保存一份每月清单
+按顺序列出步骤：出勤、计算、检查、付款、法定付款和归档记录。每个月逐项打勾。
+
+## 3. 提供清楚的薪资单和记录
+
+### 每个月发出薪资单
+薪资单显示薪资期间、基本薪资、津贴、加班费、扣款和净薪资。它帮助员工核对薪资，避免纠纷。
+
+### 讲解第一张薪资单
+用平实的话，向每位新员工讲解薪资单。逐行讲解，例如扣款是什么以及为什么，让没有人在打开第一张薪资单时感到困惑。
+
+### 安全地保存薪资记录
+把薪资和出勤记录安全存放，并保留规定要求的期限。请向相关主管单位确认保存期限。我们关于马来西亚中小企业PDPA合规的指南解释了如何保护个人资料。
+
+### 用可追溯的方式付款
+银行转账为双方留下记录。如果您因故以现金支付，请记录并取得签名确认。
+
+### 公开地纠正错误
+如果您出错，请告诉员工，迅速纠正，并记下您改了什么。
+
+## 4. 处理加班、休息日和公共假期
+
+### 知道费率取决于规定和员工
+常被引用的费率是：正常工作日加班为每小时薪资的1.5倍，休息日至少两倍，公共假期则更高，各来源对公共假期的费率描述不一。这些是否适用取决于员工的工资水平和工作，所以请向相关主管单位查对《雇佣法令》和现行规定。
+
+### 妥善记录工时
+保存工时记录，显示每个人何时开始和结束，包括休息。我们关于马来西亚员工假期与公共假期的指南更详细地解释了假期。
+
+### 让加班获得批准
+事先约定谁可以加班以及由谁批准，让成本不会让您措手不及。
+
+### 一致地计算时薪
+每次都使用同一种方法，依据合约和规定，并把它写下来。
+
+### 留意总工时和休息
+长时间工作增加安全风险和成本。我们关于马来西亚中小企业职场安全的指南解释了休息为何重要。
+
+## 5. 追踪法定扣款和到期日
+
+### 知道哪些供款适用
+视员工和薪资而定，雇主可能需要扣除并缴付EPF、SOCSO和EIS等供款，也可能需要处理每月的税务扣款。税率和涵盖范围可能变化，所以请向相关主管单位确认。
+
+### 把到期日记在日历上
+有几个来源提到，上个月工资的付款在下个月15日前后到期，另有一些例外和逾期的罚款，但这些大多来自薪资供应商，所以请向官方机构核实。我们关于马来西亚小企业税务日历的指南解释了如何追踪日期。
+
+### 检查登记
+确保您的企业和每位员工都已登记于正确的计划。我们关于聘请第一位员工的指南解释了登记。
+
+### 保存付款的证明
+保存每一笔法定付款的结单和收据，并与您的薪资核对。
+
+### 每年检讨变动
+税率、上限和规定会不时调整。请设定提醒，在每年年初检查它们。
+
+## 6. 建立公平的员工班次表
+
+### 从需求开始
+看看顾客何时来、工作何时需要完成，然后让员工人数配合繁忙和清闲的时段。我们关于规划节庆旺季与淡季的指南解释了需求如何变化。
+
+### 尊重限制和休息
+在您的合约和规定允许的工作时间内规划班次，并有适当的休息和休假日。
+
+### 提早公布班次表
+至少提前一个星期分享日程，让员工能规划自己的生活。临时的变动会造成缺勤和怨气。
+
+### 对困难的班次要公平
+在可以的地方轮换周末、深夜和公共假期，并考虑祈祷时间、家庭需要和学业等请求。我们关于服务多元文化市场与游客的指南解释了为什么尊重不同的需要很重要。
+
+### 保留简单的模板
+在电子表格或共享文件里做一张每周的表格，列出姓名、班次和职责，对大多数小企业就足够了。
+
+> 日程和薪资单是白纸黑字的承诺：当两者都清楚、提早而正确时，人们就能信任您，而信任比您能买到的任何系统都便宜。
+
+## 7. 管理假期和缺勤
+
+### 订立清楚的流程
+说明如何申请假期、由谁批准，以及需要提前多久通知。我们关于马来西亚员工假期与公共假期的指南解释了基础知识。
+
+### 追踪余额
+记录每个人已休和剩余的假期，并在每次发薪时更新。
+
+### 为生病和紧急情况做规划
+约定员工如何通报生病以及谁来顶班。保留一份可以顶替的人的短名单。我们关于兼职员工与实习生的指南解释了弹性员工如何有帮助。
+
+### 正确处理无薪假和扣款
+按您合约中的方法和规定计算任何扣款，并显示在薪资单上。
+
+### 检视规律
+频繁的缺勤或迟到可能显示工作量、班次或士气方面的问题，所以请及早与对方谈谈。
+
+## 8. 避免常见的错误并选择合适的工具
+
+### 需要留意的常见错误
+漏掉新入职者或离职者、使用错误的费率、忘记加班、弄混期限，以及没有更新变动，都是常见的出错原因。清单和第二次检查可以防止大部分。
+
+### 每个月核对
+把薪资总数与银行付款和法定付款比较。差异能及早显示错误。
+
+### 选择适合您规模的工具
+一份做得好的电子表格可以服务很小的团队。随着团队成长，薪资软件可以减少错误并跟上规定的变化。我们关于为您的马来西亚中小企业选择会计软件的指南解释了该看什么。
+
+### 考虑外包
+外包的薪资服务或会计师可以收费代为运行流程，尤其是在员工很多或薪资复杂时。您可以[浏览名录](/zh)寻找附近的薪资服务商和会计师，并[创建免费商家列表](/zh/signup)，让顾客和求职者找到您的业务。
+
+### 规定改变时求助
+如果您对某个费率、期限或个案不确定，请在付款之前向相关主管单位或顾问查询。一个简短的问题，成本远低于一次更正。
+
+## 马来西亚中小企业在薪资和排班方面常犯的错误
+
+- **延迟或不一致地发薪。** 员工很快就会失去信任，所以请订下发薪日并坚持下去。
+- **猜测加班和法定的金额。** 费率和涵盖范围各异且会变化，所以请使用现行规定并保持第二次检查。
+- **在最后一刻更改班次。** 临时的变动会造成缺勤和不快，所以请提早公布班次表，并让变动保持罕见。
+
+## 从哪里开始
+
+- **本周：** 写下您的每月薪资清单，并订下截止日和发薪日。
+- **接着：** 制作标准的薪资单，并向每位团队成员讲解。
+- **然后：** 把您的法定付款日期记在日历上，并向相关主管单位或顾问确认现行税率。
+- **每季度：** 把薪资与银行和法定付款核对，检视班次表是否公平，并更新您的清单。
+
+把薪资和班次做对并不光鲜，却是一个会留下来、信任您并做好工作的团队的基础。一个简单可靠的流程，远比一个您无法维持的巧妙系统更有价值。`,
+        faqs: [
+          {
+            question: "每个月运行薪资涉及哪些步骤？",
+            answer:
+              "收集出勤和变动，计算总薪资，扣除款项得出净薪资，检查总数，在固定日期向员工发薪，按到期日缴付法定款项，发出薪资单，并归档您的记录。清单能让顺序保持一致。",
+          },
+          {
+            question: "薪资单应该显示什么？",
+            answer:
+              "薪资期间、基本薪资、津贴、加班费、扣款和净薪资。清楚的薪资单帮助员工核对薪资，所以请用平实的话向每位新员工讲解。",
+          },
+          {
+            question: "在马来西亚加班费如何计算？",
+            answer:
+              "常被引用的费率是：正常工作日为每小时薪资的1.5倍，休息日至少两倍，公共假期则更高，但各来源对公共假期的费率描述不一，涵盖范围也取决于员工的工资水平和工作。请向相关主管单位查对《雇佣法令》和现行规定。",
+          },
+          {
+            question: "薪水必须在什么时候支付？",
+            answer:
+              "法律订有工资期结束后支付工资的时限，有一个二手来源提到若干天，但这里并未证实。请向相关主管单位查对《雇佣法令》和您的合约，并在固定而可靠的日期发薪。",
+          },
+          {
+            question: "雇主需要处理哪些法定供款？",
+            answer:
+              "视员工和薪资而定，雇主可能需要扣除并缴付EPF、SOCSO和EIS等供款，并处理每月的税务扣款。税率、上限和到期日会变化，所以请向相关主管单位确认。有几个来源提到上个月工资的付款在15日前后到期，但请向官方机构核实。",
+          },
+          {
+            question: "我如何建立公平的班次表？",
+            answer:
+              "从顾客需求开始，在允许的工作时间内规划并安排适当的休息和休假日，至少提前一个星期公布班次表，轮换困难的班次，并考虑祈祷时间、家庭和学业等需要。",
+          },
+          {
+            question: "我应该如何处理员工的假期和缺勤？",
+            answer:
+              "订立申请和批准假期的清楚流程，追踪余额，约定员工如何通报生病以及谁来顶班，按合约和规定计算无薪假的扣款，并及早谈谈缺勤的规律。",
+          },
+          {
+            question: "我应该使用薪资软件还是外包薪资？",
+            answer:
+              "一份做得好的电子表格可以服务很小的团队，而随着成长，软件或外包服务会有帮助，尤其是员工很多或薪资复杂时。请选择您能准确维持的方式，并每个月把薪资与银行和法定付款核对。",
+          },
+        ],
+      },
+      ms: {
+        title: "Asas Gaji dan Penjadualan Pekerja: Membayar Orang dengan Betul dan Merancang Syif untuk PKS Malaysia",
+        excerpt:
+          "Membayar orang dengan betul dan tepat pada masanya ialah cara paling pantas untuk memperoleh kepercayaan mereka, dan melakukannya dengan salah ialah cara paling pantas untuk kehilangannya. Panduan ini membantu PKS Malaysia menyediakan rutin gaji yang mudah, mengendalikan kerja lebih masa dan cuti, menjejaki potongan berkanun serta tarikh akhir, membina jadual syif yang adil, dan mengelak kesilapan biasa.",
+        body: `Hanya sedikit perkara yang lebih penting bagi seorang pekerja daripada dibayar jumlah yang betul pada hari yang betul. Gaji yang lewat atau salah bukan sahaja menyebabkan minggu yang buruk; ia membuat orang tertanya-tanya sama ada perniagaan itu stabil dan sama ada mereka dihargai.
+
+Dalam perniagaan kecil, gaji sering berada dalam kepala pemilik atau hamparan yang hanya difahami oleh seorang. Rutin yang mudah, jadual yang jelas dan rekod yang baik menukarkannya daripada kebimbangan bulanan kepada tabiat yang tenang.
+
+Ini maklumat umum, bukan nasihat undang-undang, cukai atau HR. Peraturan gaji, kadar kerja lebih masa, kadar caruman berkanun dan tarikh akhir berubah dari semasa ke semasa, dan sumber kadangkala tidak sepakat, jadi sebahagian butiran dalam panduan ini mungkin sudah lapuk. Sahkan keperluan semasa dengan pihak berkuasa berkaitan atau penasihat gaji yang layak sebelum anda bergantung padanya.
+
+## 1. Fahami apa yang terlibat dalam gaji
+
+### Gaji lebih daripada membayar gaji
+Ia meliputi mengira bayaran, memotong apa yang mesti dipotong, membayar pekerja, membayar caruman kepada badan yang betul, dan menyimpan rekod.
+
+### Mulakan daripada kontrak
+Kontrak pekerjaan atau surat tawaran menetapkan gaji, waktu bekerja, elaun dan cuti. Panduan kami tentang mengambil pekerja pertama anda di Malaysia menerangkan langkah biasa.
+
+### Ketahui komponen utama
+Gaji asas, elaun, kerja lebih masa, komisen, bonus dan potongan cuti tanpa gaji biasanya membentuk gaji kasar. Potongan berkanun dan yang dipersetujui menurunkannya kepada gaji bersih.
+
+### Asingkan wang perniagaan dan peribadi
+Bayar pekerja daripada akaun perniagaan, bukan daripada dana peribadi. Panduan kami tentang mengasingkan kewangan peribadi dan perniagaan menerangkan sebabnya.
+
+### Rancang untuk kos mengambil seseorang
+Caruman majikan dan kos lain terletak di atas gaji. Panduan kami tentang bajet dan ramalan menerangkan cara mengambil kira ia.
+
+## 2. Sediakan rutin bulanan yang mudah
+
+### Pilih tarikh tetap
+Tetapkan tarikh akhir untuk jam dan perubahan, tarikh untuk mengira gaji, tarikh untuk menyemak, dan tarikh gaji. Tarikh yang sama setiap bulan menghapuskan kekeliruan.
+
+### Kumpulkan kehadiran dan perubahan lebih awal
+Kumpulkan lembaran waktu, cuti, kerja lebih masa, pekerja baharu dan yang berhenti sebelum anda mengira. Bahagian kami di bawah tentang penjadualan dan kehadiran pekerja menerangkan cara merekodkannya.
+
+### Kira, kemudian semak
+Gunakan templat atau perisian, dan minta orang kedua atau pandangan kedua menyemak jumlah dan sebarang amaun luar biasa sebelum membayar.
+
+### Bayar tepat pada masanya, setiap kali
+Undang-undang mempunyai peraturan tentang bila gaji mesti dibayar. Satu sumber sekunder mencadangkan gaji umumnya perlu dibayar dalam beberapa hari tertentu selepas tamat tempoh gaji, tetapi ini tidak disahkan di sini, jadi semak Akta Kerja dan kontrak anda dengan pihak berkuasa berkaitan.
+
+### Simpan senarai semak bulanan
+Senaraikan langkah mengikut tertib: kehadiran, pengiraan, semakan, pembayaran, bayaran berkanun dan memfailkan rekod. Tandakannya setiap bulan.
+
+## 3. Beri slip gaji dan rekod yang jelas
+
+### Keluarkan slip gaji setiap bulan
+Slip gaji menunjukkan tempoh gaji, gaji asas, elaun, kerja lebih masa, potongan dan gaji bersih. Ia membantu pekerja menyemak gaji mereka dan mengelak pertikaian.
+
+### Terangkan slip gaji pertama
+Terangkan slip gaji kepada setiap pekerja baharu dengan kata-kata mudah. Terangkan setiap baris, seperti apa potongan itu dan mengapa, supaya tiada siapa membuka slip gaji pertama mereka dalam keadaan keliru.
+
+### Simpan rekod gaji dengan selamat
+Simpan rekod gaji dan kehadiran dengan selamat dan selama yang dikehendaki peraturan. Sahkan tempoh penyimpanan dengan pihak berkuasa berkaitan. Panduan kami tentang pematuhan PDPA untuk PKS Malaysia menerangkan cara melindungi data peribadi.
+
+### Bayar melalui kaedah yang boleh dijejaki
+Pindahan bank meninggalkan rekod untuk kedua-dua pihak. Jika anda membayar tunai atas apa-apa sebab, rekodkannya dan dapatkan akuan bertandatangan.
+
+### Betulkan kesilapan secara terbuka
+Jika anda membuat kesilapan, beritahu pekerja, betulkan dengan cepat, dan catat apa yang anda ubah.
+
+## 4. Kendalikan kerja lebih masa, hari rehat dan cuti umum
+
+### Ketahui kadar bergantung pada peraturan dan pekerja
+Kadar yang lazim disebut ialah 1.5 kali kadar sejam untuk kerja lebih masa pada hari bekerja biasa, sekurang-kurangnya dua kali pada hari rehat, dan lebih tinggi pada cuti umum, dengan sumber menerangkan kadar cuti umum secara berbeza. Sama ada ini terpakai bergantung pada tahap gaji dan kerja pekerja, jadi semak Akta Kerja dan peraturan semasa dengan pihak berkuasa berkaitan.
+
+### Rekodkan jam dengan betul
+Simpan rekod waktu yang menunjukkan bila setiap orang bermula dan berhenti, termasuk rehat. Panduan kami tentang cuti pekerja dan cuti umum di Malaysia menerangkan cuti dengan lebih terperinci.
+
+### Dapatkan kelulusan kerja lebih masa
+Persetujui lebih awal siapa yang boleh bekerja lebih masa dan siapa yang meluluskannya, supaya kos tidak mengejutkan anda.
+
+### Kira kadar sejam secara konsisten
+Gunakan kaedah yang sama setiap kali, berdasarkan kontrak dan peraturan, dan tuliskannya.
+
+### Perhatikan jumlah jam dan rehat
+Jam yang panjang meningkatkan risiko keselamatan dan kos. Panduan kami tentang keselamatan tempat kerja untuk PKS Malaysia menerangkan mengapa rehat penting.
+
+## 5. Jejaki potongan berkanun dan tarikh akhir
+
+### Ketahui caruman mana yang terpakai
+Bergantung pada pekerja dan gaji, majikan mungkin perlu memotong dan membayar caruman seperti KWSP, PERKESO dan SIP, dan mungkin perlu mengendalikan potongan cukai bulanan. Kadar dan liputan boleh berubah, jadi sahkan dengan pihak berkuasa berkaitan.
+
+### Catat tarikh akhir dalam kalendar
+Beberapa sumber menerangkan bayaran untuk gaji bulan sebelumnya tiba tempoh sekitar 15hb bulan berikutnya, dengan beberapa pengecualian dan caj bayaran lewat, tetapi ini kebanyakannya datang daripada pembekal gaji, jadi sahkan dengan badan rasmi. Panduan kami tentang kalendar cukai perniagaan kecil di Malaysia menerangkan cara menjejaki tarikh.
+
+### Semak pendaftaran
+Pastikan perniagaan anda dan setiap pekerja didaftarkan dengan skim yang betul. Panduan kami tentang mengambil pekerja pertama anda menerangkan pendaftaran itu.
+
+### Simpan bukti bayaran
+Simpan penyata dan resit untuk setiap bayaran berkanun, dan padankan dengan gaji anda.
+
+### Semak perubahan setiap tahun
+Kadar, siling dan peraturan dilaraskan dari semasa ke semasa. Tetapkan peringatan untuk menyemaknya pada awal setiap tahun.
+
+## 6. Bina jadual pekerja yang adil
+
+### Mulakan dengan permintaan
+Lihat bila pelanggan datang dan bila kerja perlu dilakukan, kemudian padankan bilangan pekerja dengan tempoh sibuk dan tenang. Panduan kami tentang merancang untuk puncak perayaan dan musim perlahan menerangkan bagaimana permintaan berubah.
+
+### Hormati had dan rehat
+Rancang syif dalam waktu bekerja yang dibenarkan kontrak dan peraturan anda, dengan rehat dan hari cuti yang sewajarnya.
+
+### Umumkan jadual lebih awal
+Kongsi jadual sekurang-kurangnya seminggu lebih awal, supaya pekerja boleh merancang kehidupan mereka. Perubahan lewat menyebabkan ketidakhadiran dan rasa tidak puas hati.
+
+### Bersikap adil tentang syif yang sukar
+Giliran hujung minggu, lewat malam dan cuti umum jika boleh, dan pertimbangkan permintaan seperti waktu solat, keperluan keluarga dan pengajian. Panduan kami tentang melayani pasaran pelbagai budaya dan pelancong menerangkan mengapa menghormati keperluan berbeza penting.
+
+### Simpan templat yang mudah
+Grid mingguan dengan nama, syif dan peranan dalam hamparan atau dokumen kongsi sudah memadai untuk kebanyakan perniagaan kecil.
+
+> Jadual dan slip gaji ialah janji bertulis: apabila kedua-duanya jelas, awal dan betul, orang boleh mempercayai anda, dan kepercayaan lebih murah daripada setiap sistem yang boleh anda beli.
+
+## 7. Urus cuti dan ketidakhadiran
+
+### Tetapkan proses yang jelas
+Katakan cara memohon cuti, siapa yang meluluskan, dan berapa lama notis diperlukan. Panduan kami tentang cuti pekerja dan cuti umum di Malaysia menerangkan asasnya.
+
+### Jejaki baki
+Rekodkan cuti yang diambil dan yang tinggal bagi setiap orang, dan kemas kini dengan setiap proses gaji.
+
+### Rancang untuk sakit dan kecemasan
+Persetujui cara pekerja melaporkan sakit dan siapa yang menggantikan syif. Simpan senarai pendek orang yang boleh menggantikan. Panduan kami tentang pekerja sambilan dan pelatih menerangkan bagaimana pekerja fleksibel boleh membantu.
+
+### Kendalikan cuti tanpa gaji dan potongan dengan betul
+Kira sebarang potongan menggunakan kaedah dalam kontrak anda dan peraturan, dan tunjukkan pada slip gaji.
+
+### Semak corak
+Ketidakhadiran atau kelewatan yang kerap mungkin menandakan masalah beban kerja, jadual atau semangat, jadi berbual dengan orang itu lebih awal.
+
+## 8. Elakkan kesilapan biasa dan pilih alat yang sesuai
+
+### Kesilapan biasa yang perlu diperhatikan
+Tertinggal pekerja baharu atau yang berhenti, menggunakan kadar yang salah, terlupa kerja lebih masa, mengelirukan tarikh akhir, dan tidak mengemas kini perubahan ialah punca kesilapan yang kerap. Senarai semak dan semakan kedua mencegah kebanyakannya.
+
+### Padankan setiap bulan
+Bandingkan jumlah gaji dengan bayaran bank dan bayaran berkanun. Perbezaan menunjukkan kesilapan lebih awal.
+
+### Pilih alat yang sesuai dengan saiz anda
+Hamparan yang baik boleh melayani pasukan yang sangat kecil. Apabila pasukan anda berkembang, perisian gaji boleh mengurangkan kesilapan dan mengikuti perubahan peraturan. Panduan kami tentang memilih perisian perakaunan untuk PKS Malaysia anda menerangkan apa yang perlu dicari.
+
+### Pertimbangkan penyumberan luar
+Perkhidmatan gaji luar atau akauntan boleh menjalankan proses itu dengan bayaran, terutamanya jika anda mempunyai ramai pekerja atau gaji yang kompleks. Anda boleh [layari direktori](/ms) untuk pembekal gaji dan akauntan berhampiran anda, dan [cipta penyenaraian perniagaan percuma](/ms/signup) supaya pelanggan dan calon dapat menemui perniagaan anda.
+
+### Minta bantuan apabila peraturan berubah
+Jika anda tidak pasti tentang kadar, tarikh akhir atau sesuatu kes, semak dengan pihak berkuasa berkaitan atau penasihat sebelum membayar. Soalan ringkas berkos jauh lebih rendah daripada pembetulan.
+
+## Kesilapan biasa PKS Malaysia dengan gaji dan penjadualan
+
+- **Membayar lewat atau tidak konsisten.** Pekerja cepat kehilangan kepercayaan, jadi tetapkan tarikh gaji dan berpegang padanya.
+- **Meneka amaun kerja lebih masa dan berkanun.** Kadar dan liputan berbeza dan berubah, jadi gunakan peraturan semasa dan simpan semakan kedua.
+- **Menukar syif pada saat akhir.** Perubahan lewat menyebabkan ketidakhadiran dan perasaan buruk, jadi umumkan jadual awal dan pastikan perubahan jarang berlaku.
+
+## Di mana hendak bermula
+
+- **Minggu ini:** Tulis senarai semak gaji bulanan anda dan tetapkan tarikh akhir dan tarikh gaji anda.
+- **Seterusnya:** Cipta slip gaji piawai dan terangkannya kepada setiap ahli pasukan.
+- **Kemudian:** Catat tarikh bayaran berkanun anda dalam kalendar, dan sahkan kadar semasa dengan pihak berkuasa berkaitan atau penasihat.
+- **Setiap suku tahun:** Padankan gaji dengan bayaran bank dan berkanun, semak jadual untuk keadilan, dan kemas kini senarai semak anda.
+
+Membetulkan gaji dan jadual bukan kerja yang gemilang, tetapi ia asas pasukan yang kekal, mempercayai anda dan melakukan kerja yang baik. Rutin yang mudah dan boleh dipercayai bernilai jauh lebih tinggi daripada sistem bijak yang tidak dapat anda kekalkan.`,
+        faqs: [
+          {
+            question: "Apakah langkah yang terlibat dalam menjalankan gaji setiap bulan?",
+            answer:
+              "Kumpulkan kehadiran dan perubahan, kira gaji kasar, kenakan potongan untuk mencapai gaji bersih, semak jumlah, bayar pekerja pada tarikh tetap, buat bayaran berkanun mengikut tarikh akhir, keluarkan slip gaji, dan failkan rekod anda. Senarai semak memastikan tertib yang konsisten.",
+          },
+          {
+            question: "Apakah yang patut ditunjukkan oleh slip gaji?",
+            answer:
+              "Tempoh gaji, gaji asas, elaun, kerja lebih masa, potongan dan gaji bersih. Slip gaji yang jelas membantu pekerja menyemak gaji mereka, jadi terangkan kepada setiap pekerja baharu dengan kata-kata mudah.",
+          },
+          {
+            question: "Bagaimanakah kerja lebih masa dikira di Malaysia?",
+            answer:
+              "Kadar yang lazim disebut ialah 1.5 kali kadar sejam pada hari bekerja biasa, sekurang-kurangnya dua kali pada hari rehat, dan lebih tinggi pada cuti umum, tetapi sumber menerangkan kadar cuti umum secara berbeza dan liputan bergantung pada tahap gaji dan kerja pekerja. Semak Akta Kerja dan peraturan semasa dengan pihak berkuasa berkaitan.",
+          },
+          {
+            question: "Bilakah gaji mesti dibayar?",
+            answer:
+              "Undang-undang menetapkan had masa untuk membayar gaji selepas tempoh gaji tamat, dan satu sumber sekunder mencadangkan sebilangan hari, tetapi ini tidak disahkan di sini. Semak Akta Kerja dan kontrak anda dengan pihak berkuasa berkaitan, dan bayar pada tarikh yang tetap dan boleh dipercayai.",
+          },
+          {
+            question: "Caruman berkanun mana yang dikendalikan majikan?",
+            answer:
+              "Bergantung pada pekerja dan gaji, majikan mungkin perlu memotong dan membayar caruman seperti KWSP, PERKESO dan SIP, dan mengendalikan potongan cukai bulanan. Kadar, siling dan tarikh akhir berubah, jadi sahkan dengan pihak berkuasa berkaitan. Beberapa sumber menyatakan bayaran untuk gaji bulan sebelumnya tiba tempoh sekitar 15hb, tetapi sahkan dengan badan rasmi.",
+          },
+          {
+            question: "Bagaimanakah saya membina jadual syif yang adil?",
+            answer:
+              "Mulakan daripada permintaan pelanggan, rancang dalam waktu yang dibenarkan dengan rehat dan hari cuti yang sewajarnya, umumkan jadual sekurang-kurangnya seminggu lebih awal, giliran syif yang sukar, dan pertimbangkan keperluan seperti waktu solat, keluarga dan pengajian.",
+          },
+          {
+            question: "Bagaimanakah saya patut mengendalikan cuti dan ketidakhadiran pekerja?",
+            answer:
+              "Tetapkan proses yang jelas untuk memohon dan meluluskan cuti, jejaki baki, persetujui cara pekerja melaporkan sakit dan siapa yang menggantikan syif, kira potongan untuk cuti tanpa gaji seperti kata kontrak dan peraturan anda, dan berbual lebih awal tentang corak ketidakhadiran.",
+          },
+          {
+            question: "Patutkah saya menggunakan perisian gaji atau menyumber luar gaji?",
+            answer:
+              "Hamparan yang dibuat dengan baik boleh melayani pasukan yang sangat kecil, sementara perisian atau perkhidmatan luar membantu apabila anda berkembang, terutamanya dengan ramai pekerja atau gaji yang kompleks. Pilih apa yang boleh anda kekalkan dengan tepat, dan padankan gaji dengan bayaran bank dan berkanun setiap bulan.",
+          },
+        ],
+      },
+    },
+  },
 ];
